@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------
+# Copyrighted literature and supplementary material — NEVER commit.
+# The papers in this folder belong to their publishers. See
+# REFERENCES.md for links to the open-access versions instead.
+# ---------------------------------------------------------------
+*.pdf
+*.xlsx
+*.xls
+*.gsheet
+Lv-2024-Alveolar-regeneration-by-airway-sec/
+
+# Sequencing data and derived objects
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.h5
+*.h5ad
+*.loom
+*.rds
+*.RData
+*.mtx
+*.mtx.gz
+barcodes.tsv*
+features.tsv*
+genes.tsv*
+data/
+raw/
+counts/
+results/
+
+# R
+.Rhistory
+.Rapp.history
+.Rproj.user/
+*.Rproj
+.Renviron
+renv/library/
+renv/staging/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*~
