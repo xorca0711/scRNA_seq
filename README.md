@@ -4,14 +4,41 @@ Notes and working documents for a single-cell RNA-seq analysis of lung regenerat
 
 The reference point is **Niethamer et al., *Cell Stem Cell* 2025** — a longitudinal atlas of 123,189 cells spanning uninjured lung through one year post-infection, which identifies transient injury states in the myeloid and epithelial compartments and one endothelial state (iCAP) that never resolves.
 
-## Contents
+- **[`WORKFLOW.md`](WORKFLOW.md)** — end-to-end operational sequence, ordering
+  constraints, subset-and-recluster loop, lineage-trace calling, and QC
+  acceptance order.
+- **[`docs/`](docs/README.md)** — one workflow schematic per tool: SoupX,
+  Scrublet, scds, Slingshot, tradeSeq.
+- **[`scRNAseq_workflow_Niethamer2025.md`](scRNAseq_workflow_Niethamer2025.md)** —
+  the annotated pipeline reference: study design, stage-by-stage parameters,
+  marker-gene annotation tables, and the twelve parameters the reference study
+  leaves unspecified.
+- **[`REFERENCES.md`](REFERENCES.md)** — all six papers with DOIs, PMC links,
+  and software repositories.
 
-| File | What it is |
-|---|---|
-| [`scRNAseq_workflow_Niethamer2025.md`](scRNAseq_workflow_Niethamer2025.md) | The analysis pipeline organised stage by stage — parameters, ordering constraints, downstream modules, marker-gene annotation reference, and the parameters the paper leaves unspecified |
-| [`REFERENCES.md`](REFERENCES.md) | The target paper and the five method papers, with DOIs, PMC links and software repositories |
+---
 
-## The pipeline in brief
+## 1. Toolbox
+
+Six tools, each owning one decision the others cannot make.
+
+| Stage | Tool | Owns | Schematic |
+|---|---|---|---|
+| Alignment | STARsolo 2.7.9a | Barcode, UMI, and gene assignment against mm39 | — |
+| Ambient RNA | SoupX 1.6.0 | How much of each count is cell-free background | [`docs/SOUPX.md`](docs/SOUPX.md) |
+| Doublets | Scrublet | Whether a barcode looks like a simulated cell pair | [`docs/SCRUBLET.md`](docs/SCRUBLET.md) |
+| Doublets | scds | Whether a barcode co-expresses genes that rarely co-occur | [`docs/SCDS.md`](docs/SCDS.md) |
+| Cell state | Seurat 4.9 | Normalization, clustering, annotation, marker DE | — |
+| Trajectory | Slingshot | Lineage topology and pseudotime ordering | [`docs/SLINGSHOT.md`](docs/SLINGSHOT.md) |
+| Trajectory DE | tradeSeq | Which genes change, and in what sense | [`docs/TRADESEQ.md`](docs/TRADESEQ.md) |
+
+Neither doublet caller supersedes the other. They fail differently, which is
+the reason for running both — and in the reference study, doublet score alone
+decided neither of the two ambiguous populations.
+
+---
+
+## 2. The pipeline in brief
 
 ```
 FASTQ
@@ -35,13 +62,13 @@ FASTQ
 
 Three orderings matter and are easy to get wrong: ambient correction runs **before** doublet calling, both run **per library before merging**, and doublet calling runs **before** count-based filtering — doublets sit in the high-`nFeature` tail you would otherwise cut.
 
-## Data
+## 3. Data
 
 Public data for the target paper: GEO [GSE262927](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262927).
 
 No sequencing data, count matrices or PDFs are stored in this repository.
 
-## Environment
+## 4. Environment
 
 The pipeline is bilingual — Scrublet is Python, everything else is R.
 
@@ -50,6 +77,6 @@ The pipeline is bilingual — Scrublet is Python, everything else is R.
 
 Seurat v4.9 is a pre-release snapshot and is not on CRAN. Pin `Seurat 4.4.0` (last stable v4) or move to v5 and document the change — the Assay5 object model alters `SCTransform` and `FindMarkers` behaviour around layers.
 
-## Licence
+## 5. Licence
 
 Written material in this repository is © the author. The papers it describes are the property of their respective publishers; see [`REFERENCES.md`](REFERENCES.md) for links to the open-access versions.
