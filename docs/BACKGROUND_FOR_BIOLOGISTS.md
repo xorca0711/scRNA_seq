@@ -11,7 +11,10 @@ those decisions. Sources are listed at the end of each section.
 
 1. [Batch effects and Harmony](#1-batch-effects-and-harmony) — why samples separate, what correction does, and when it destroys your experiment
 2. [Doublets and Scrublet](#2-doublets-and-scrublet) — what a doublet is, how it is detected, and why the method can delete real cell types
-3. [UMAP and the standard figures](#3-umap-and-the-standard-figures) — *(pending)*
+3. **[UMAP and the standard figures](UMAP_AND_FIGURES.md)** — separate file: how
+   the picture is built from counts, what it does and does not mean, how to read
+   dot plots and feature plots, and why cluster-marker p-values are a ranking
+   device rather than a hypothesis test
 
 ---
 
@@ -212,4 +215,4 @@ weakest correction that fixes your problem.**
 
 # 3. UMAP and the standard figures
 
-*(pending — research in progress)*
+Moved to its own file: **[`UMAP_AND_FIGURES.md`](UMAP_AND_FIGURES.md)**.
