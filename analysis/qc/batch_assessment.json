@@ -1,0 +1,10 @@
+{
+  "knn_same_sample_enrichment": 4.181,
+  "mean_same_sample_neighbour_fraction": 0.1272,
+  "expected_by_chance": 0.0319,
+  "within_group_replicate_enrichment": 1.374,
+  "replicate_structure_available": true,
+  "decision_rule": "Integrate only if biological replicates within the SAME experimental group fail to mix (within-group replicate kNN enrichment > 2.0). Sample identity alone is not evidence of a technical batch effect here, because every sample belongs to exactly one experimental group - correcting on sample would also remove the experimental effect.",
+  "integration_recommended": false,
+  "supplementary_harmony_warranted": true
+}

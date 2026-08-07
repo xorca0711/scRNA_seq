@@ -1,0 +1,1191 @@
+==============================================================================
+RAW DATA INVENTORY
+==============================================================================
+Root scanned : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data
+Files found  : 51
+Total size   : 7.8 GB
+
+------------------------------------------------------------------------------
+DIRECTORY STRUCTURE
+------------------------------------------------------------------------------
+raw_data/
+|-- GSE178360/
+|   |-- Compressed/
+|   |   |-- GSE178360_RAW.tar  [338.0 MB]
+|   |   |-- GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS.gz  [387.7 MB]
+|   |   |-- GSE178360_epi.sub_SAE10x3.integrated_v2.RDS.gz  [1.0 GB]
+|   |   |-- GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS.gz  [1.0 GB]
+|   |   `-- GSE178360_mes.sub_SAE10x3.integrated_v2.RDS.gz  [248.4 MB]
+|   |-- GSE178360_RAW/
+|   |   |-- GSM5388411_DD046Q_filtered_feature_bc_matrix.h5  [30.9 MB]
+|   |   |-- GSM5388411_DD046Q_raw_feature_bc_matrix.h5  [77.6 MB]
+|   |   |-- GSM5388412_DD047Q_filtered_feature_bc_matrix.h5  [38.9 MB]
+|   |   |-- GSM5388412_DD047Q_raw_feature_bc_matrix.h5  [82.7 MB]
+|   |   |-- GSM5388413_DD073R_raw_feature_bc_matrix.h5  [73.0 MB]
+|   |   `-- GSM5388413_DD073Rfiltered_feature_bc_matrix.h5  [34.9 MB]
+|   |-- GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS/
+|   |   `-- GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS  [631.9 MB]
+|   |-- GSE178360_epi.sub_SAE10x3.integrated_v2.RDS  [1.0 GB]
+|   |-- GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS  [1.0 GB]
+|   `-- GSE178360_mes.sub_SAE10x3.integrated_v2.RDS  [248.9 MB]
+`-- GSE262927/
+    |-- Compressed/
+    |   |-- GSE262927_CellMetaData.csv.gz  [3.1 MB]
+    |   `-- GSE262927_RAW.tar  [779.1 MB]
+    |-- GSE262927_RAW/
+    |   |-- GSM8181583_EEM-scRNA-113.h5  [13.6 MB]
+    |   |-- GSM8181584_EEM-scRNA-116.h5  [27.1 MB]
+    |   |-- GSM8181585_EEM-scRNA-117.h5  [28.1 MB]
+    |   |-- GSM8181586_EEM-scRNA-118.h5  [23.1 MB]
+    |   |-- GSM8181587_EEM-scRNA-124.h5  [16.1 MB]
+    |   |-- GSM8181588_EEM-scRNA-125.h5  [19.7 MB]
+    |   |-- GSM8181589_EEM-scRNA-126.h5  [21.0 MB]
+    |   |-- GSM8181590_EEM-scRNA-127.h5  [21.9 MB]
+    |   `-- ... and 25 more file(s) of the same kind
+    `-- GSE262927_CellMetaData.csv  [15.7 MB]
+
+------------------------------------------------------------------------------
+DATASET: GSE178360
+------------------------------------------------------------------------------
+  files: 15   size: 6.2 GB
+      6 x 10x CellRanger HDF5 (v3 layout)
+      4 x gzip-compressed RDS
+      3 x RDS (gzip-compressed R serialization)
+      1 x tar archive
+      1 x RDS (uncompressed XDR R serialization)
+  species evidence: HUMAN (12/12 upper-case markers, 13 'MT-' genes)
+  samples inferred from filenames (3): DD046Q, DD047Q, DD073R
+
+------------------------------------------------------------------------------
+DATASET: GSE262927
+------------------------------------------------------------------------------
+  files: 36   size: 1.5 GB
+     33 x 10x CellRanger HDF5 (v3 layout)
+      2 x delimited text (comma)
+      1 x tar archive
+  species evidence: MOUSE (12/12 title-case markers, 37 'mt-' genes)
+  samples inferred from filenames (33): EEM-scRNA-113, EEM-scRNA-116, EEM-scRNA-117, EEM-scRNA-118, EEM-scRNA-124, EEM-scRNA-125, EEM-scRNA-126, EEM-scRNA-127, EEM-scRNA-158, EEM-scRNA-162, EEM-scRNA-166, EEM-scRNA-167, EEM-scRNA-170, EEM-scRNA-172, EEM-scRNA-179, EEM-scRNA-180, EEM-scRNA-181, EEM-scRNA-182, EEM-scRNA-236, EEM-scRNA-237, EEM-scRNA-238, EEM-scRNA-239, EEM-scRNA-249, EEM-scRNA-250, EEM-scRNA-251, EEM-scRNA-288, EEM-scRNA-289, EEM-scRNA-290, EEM-scRNA-291, EEM-scRNA-292, EEM-scRNA-310, EEM-scRNA-311, EEM-scRNA-312
+
+------------------------------------------------------------------------------
+PER-FILE DETAIL
+------------------------------------------------------------------------------
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\Compressed\GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS.gz
+  file type       : gzip-compressed RDS
+  inferred role   : compressed copy of a pre-processed Seurat object
+  dataset/sample  : GSE178360 / -
+  size            : 387.7 MB
+  dimensions      : -
+  raw counts?     : unknown
+  metadata?       : no
+  processed?      : yes
+  notes           : duplicate of the extracted .RDS in the parent folder
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\Compressed\GSE178360_epi.sub_SAE10x3.integrated_v2.RDS.gz
+  file type       : gzip-compressed RDS
+  inferred role   : compressed copy of a pre-processed Seurat object
+  dataset/sample  : GSE178360 / -
+  size            : 1.0 GB
+  dimensions      : -
+  raw counts?     : unknown
+  metadata?       : no
+  processed?      : yes
+  notes           : duplicate of the extracted .RDS in the parent folder
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\Compressed\GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS.gz
+  file type       : gzip-compressed RDS
+  inferred role   : compressed copy of a pre-processed Seurat object
+  dataset/sample  : GSE178360 / -
+  size            : 1.0 GB
+  dimensions      : -
+  raw counts?     : unknown
+  metadata?       : no
+  processed?      : yes
+  notes           : duplicate of the extracted .RDS in the parent folder
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\Compressed\GSE178360_mes.sub_SAE10x3.integrated_v2.RDS.gz
+  file type       : gzip-compressed RDS
+  inferred role   : compressed copy of a pre-processed Seurat object
+  dataset/sample  : GSE178360 / -
+  size            : 248.4 MB
+  dimensions      : -
+  raw counts?     : unknown
+  metadata?       : no
+  processed?      : yes
+  notes           : duplicate of the extracted .RDS in the parent folder
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\Compressed\GSE178360_RAW.tar
+  file type       : tar archive
+  inferred role   : GEO supplementary archive (already extracted)
+  dataset/sample  : GSE178360 / -
+  size            : 338.0 MB
+  dimensions      : 6 members
+  raw counts?     : see extracted members
+  metadata?       : no
+  processed?      : unknown
+    - n_members: 6
+    - members: ["GSM5388411_DD046Q_filtered_feature_bc_matrix.h5", "GSM5388411_DD046Q_raw_feature_bc_matrix.h5", "GSM5388412_DD047Q_filtered_feature_bc_matrix.h5", "GSM5388412_DD047Q_raw_feature_bc_matrix.h5", "GSM5388413_DD073R_raw_feature_bc_matrix.h5", "GSM5388413_DD073Rfiltered_feature_bc_matrix.h5"]
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS\GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS
+  file type       : RDS (uncompressed XDR R serialization)
+  inferred role   : pre-processed Seurat object (author-supplied)
+  dataset/sample  : GSE178360 / -
+  size            : 631.9 MB
+  dimensions      : -
+  raw counts?     : unknown without R
+  metadata?       : likely (Seurat meta.data)
+  processed?      : yes
+  notes           : requires R/Seurat to read; R is not installed in this environment
+    - magic_bytes: "580a000000030003"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_epi.sub_SAE10x3.integrated_v2.RDS
+  file type       : RDS (gzip-compressed R serialization)
+  inferred role   : pre-processed Seurat object (author-supplied)
+  dataset/sample  : GSE178360 / -
+  size            : 1.0 GB
+  dimensions      : -
+  raw counts?     : unknown without R
+  metadata?       : likely (Seurat meta.data)
+  processed?      : yes
+  notes           : requires R/Seurat to read; R is not installed in this environment
+    - magic_bytes: "1f8b080000000000"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS
+  file type       : RDS (gzip-compressed R serialization)
+  inferred role   : pre-processed Seurat object (author-supplied)
+  dataset/sample  : GSE178360 / -
+  size            : 1.0 GB
+  dimensions      : -
+  raw counts?     : unknown without R
+  metadata?       : likely (Seurat meta.data)
+  processed?      : yes
+  notes           : requires R/Seurat to read; R is not installed in this environment
+    - magic_bytes: "1f8b080000000000"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_mes.sub_SAE10x3.integrated_v2.RDS
+  file type       : RDS (gzip-compressed R serialization)
+  inferred role   : pre-processed Seurat object (author-supplied)
+  dataset/sample  : GSE178360 / -
+  size            : 248.9 MB
+  dimensions      : -
+  raw counts?     : unknown without R
+  metadata?       : likely (Seurat meta.data)
+  processed?      : yes
+  notes           : requires R/Seurat to read; R is not installed in this environment
+    - magic_bytes: "1f8b080000000000"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_RAW\GSM5388411_DD046Q_filtered_feature_bc_matrix.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x FILTERED (cell-called) count matrix
+  dataset/sample  : GSE178360 / DD046Q
+  size            : 30.9 MB
+  dimensions      : 33538 genes x 12185 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : HUMAN (12/12 upper-case markers, 13 'MT-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 33538
+    - n_barcodes: 12185
+    - data_dtype: "int32"
+    - min_value: 1.0
+    - max_value_in_probe: 21025.0
+    - genome: ["GRCh38"]
+    - feature_types: {"Gene Expression": 33538}
+    - mouse_probe_hits: []
+    - human_probe_hits: ["SFTPC", "KRT8", "TP63", "AGER", "SCGB1A1", "FOXJ1", "CD3D", "LYZ", "COL1A1", "PECAM1", "ACTB", "EPCAM"]
+    - n_mt_mouse_style: 0
+    - n_mt_human_style: 13
+    - n_duplicate_gene_symbols: 24
+    - gsm: "GSM5388411"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_RAW\GSM5388411_DD046Q_raw_feature_bc_matrix.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x RAW (unfiltered droplet) count matrix
+  dataset/sample  : GSE178360 / DD046Q
+  size            : 77.6 MB
+  dimensions      : 33538 genes x 6794880 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : HUMAN (12/12 upper-case markers, 13 'MT-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 33538
+    - n_barcodes: 6794880
+    - data_dtype: "int32"
+    - min_value: 1.0
+    - max_value_in_probe: 6107.0
+    - genome: ["GRCh38"]
+    - feature_types: {"Gene Expression": 33538}
+    - mouse_probe_hits: []
+    - human_probe_hits: ["SFTPC", "KRT8", "TP63", "AGER", "SCGB1A1", "FOXJ1", "CD3D", "LYZ", "COL1A1", "PECAM1", "ACTB", "EPCAM"]
+    - n_mt_mouse_style: 0
+    - n_mt_human_style: 13
+    - n_duplicate_gene_symbols: 24
+    - gsm: "GSM5388411"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_RAW\GSM5388412_DD047Q_filtered_feature_bc_matrix.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x FILTERED (cell-called) count matrix
+  dataset/sample  : GSE178360 / DD047Q
+  size            : 38.9 MB
+  dimensions      : 33538 genes x 13330 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : HUMAN (12/12 upper-case markers, 13 'MT-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 33538
+    - n_barcodes: 13330
+    - data_dtype: "int32"
+    - min_value: 1.0
+    - max_value_in_probe: 20013.0
+    - genome: ["GRCh38"]
+    - feature_types: {"Gene Expression": 33538}
+    - mouse_probe_hits: []
+    - human_probe_hits: ["SFTPC", "KRT8", "TP63", "AGER", "SCGB1A1", "FOXJ1", "CD3D", "LYZ", "COL1A1", "PECAM1", "ACTB", "EPCAM"]
+    - n_mt_mouse_style: 0
+    - n_mt_human_style: 13
+    - n_duplicate_gene_symbols: 24
+    - gsm: "GSM5388412"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_RAW\GSM5388412_DD047Q_raw_feature_bc_matrix.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x RAW (unfiltered droplet) count matrix
+  dataset/sample  : GSE178360 / DD047Q
+  size            : 82.7 MB
+  dimensions      : 33538 genes x 6794880 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : HUMAN (12/12 upper-case markers, 13 'MT-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 33538
+    - n_barcodes: 6794880
+    - data_dtype: "int32"
+    - min_value: 1.0
+    - max_value_in_probe: 20013.0
+    - genome: ["GRCh38"]
+    - feature_types: {"Gene Expression": 33538}
+    - mouse_probe_hits: []
+    - human_probe_hits: ["SFTPC", "KRT8", "TP63", "AGER", "SCGB1A1", "FOXJ1", "CD3D", "LYZ", "COL1A1", "PECAM1", "ACTB", "EPCAM"]
+    - n_mt_mouse_style: 0
+    - n_mt_human_style: 13
+    - n_duplicate_gene_symbols: 24
+    - gsm: "GSM5388412"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_RAW\GSM5388413_DD073R_raw_feature_bc_matrix.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x RAW (unfiltered droplet) count matrix
+  dataset/sample  : GSE178360 / DD073R
+  size            : 73.0 MB
+  dimensions      : 36601 genes x 6794880 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : HUMAN (12/12 upper-case markers, 13 'MT-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 36601
+    - n_barcodes: 6794880
+    - data_dtype: "int32"
+    - min_value: 1.0
+    - max_value_in_probe: 3466.0
+    - genome: ["GRCh38"]
+    - feature_types: {"Gene Expression": 36601}
+    - mouse_probe_hits: []
+    - human_probe_hits: ["SFTPC", "KRT8", "TP63", "AGER", "SCGB1A1", "FOXJ1", "CD3D", "LYZ", "COL1A1", "PECAM1", "ACTB", "EPCAM"]
+    - n_mt_mouse_style: 0
+    - n_mt_human_style: 13
+    - n_duplicate_gene_symbols: 10
+    - gsm: "GSM5388413"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_RAW\GSM5388413_DD073Rfiltered_feature_bc_matrix.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x FILTERED (cell-called) count matrix
+  dataset/sample  : GSE178360 / DD073R
+  size            : 34.9 MB
+  dimensions      : 36601 genes x 10949 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : HUMAN (12/12 upper-case markers, 13 'MT-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 36601
+    - n_barcodes: 10949
+    - data_dtype: "int32"
+    - min_value: 1.0
+    - max_value_in_probe: 3466.0
+    - genome: ["GRCh38"]
+    - feature_types: {"Gene Expression": 36601}
+    - mouse_probe_hits: []
+    - human_probe_hits: ["SFTPC", "KRT8", "TP63", "AGER", "SCGB1A1", "FOXJ1", "CD3D", "LYZ", "COL1A1", "PECAM1", "ACTB", "EPCAM"]
+    - n_mt_mouse_style: 0
+    - n_mt_human_style: 13
+    - n_duplicate_gene_symbols: 10
+    - gsm: "GSM5388413"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\Compressed\GSE262927_CellMetaData.csv.gz
+  file type       : delimited text (comma)
+  inferred role   : metadata / annotation table
+  dataset/sample  : GSE262927 / -
+  size            : 3.1 MB
+  dimensions      : 123189 rows x 15 columns
+  raw counts?     : no
+  metadata?       : yes
+  processed?      : yes (derived annotation)
+    - n_columns: 15
+    - columns_preview: ["cellbarcode", "orig.ident", "nCount_RNA", "nFeature_RNA", "percent.mito", "phase", "tamoxifen_start_day", "sacrifice_day", "sex", "experimental_group", "trace_call", "lineage", "celltype", "subtype", "cb"]
+    - delimiter: "comma"
+    - n_data_rows: 123189
+    - fraction_numeric_in_first_row: 0.357
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\Compressed\GSE262927_RAW.tar
+  file type       : tar archive
+  inferred role   : GEO supplementary archive (already extracted)
+  dataset/sample  : GSE262927 / -
+  size            : 779.1 MB
+  dimensions      : 33 members
+  raw counts?     : see extracted members
+  metadata?       : no
+  processed?      : unknown
+    - n_members: 33
+    - members: ["GSM8181583_EEM-scRNA-113.h5", "GSM8181584_EEM-scRNA-116.h5", "GSM8181585_EEM-scRNA-117.h5", "GSM8181586_EEM-scRNA-118.h5", "GSM8181587_EEM-scRNA-124.h5", "GSM8181588_EEM-scRNA-125.h5", "GSM8181589_EEM-scRNA-126.h5", "GSM8181590_EEM-scRNA-127.h5", "GSM8181591_EEM-scRNA-158.h5", "GSM8181592_EEM-scRNA-162.h5", "GSM8181593_EEM-scRNA-166.h5", "GSM8181594_EEM-scRNA-167.h5", "GSM8181595_EEM-scRNA-170.h ...(truncated)
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_CellMetaData.csv
+  file type       : delimited text (comma)
+  inferred role   : metadata / annotation table
+  dataset/sample  : GSE262927 / -
+  size            : 15.7 MB
+  dimensions      : 123189 rows x 15 columns
+  raw counts?     : no
+  metadata?       : yes
+  processed?      : yes (derived annotation)
+    - n_columns: 15
+    - columns_preview: ["cellbarcode", "orig.ident", "nCount_RNA", "nFeature_RNA", "percent.mito", "phase", "tamoxifen_start_day", "sacrifice_day", "sex", "experimental_group", "trace_call", "lineage", "celltype", "subtype", "cb"]
+    - delimiter: "comma"
+    - n_data_rows: 123189
+    - fraction_numeric_in_first_row: 0.357
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181583_EEM-scRNA-113.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-113
+  size            : 13.6 MB
+  dimensions      : 55361 genes x 3956 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 3956
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 10033.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181583"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181584_EEM-scRNA-116.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-116
+  size            : 27.1 MB
+  dimensions      : 55361 genes x 5686 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 5686
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 2240.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181584"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181585_EEM-scRNA-117.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-117
+  size            : 28.1 MB
+  dimensions      : 55361 genes x 6172 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 6172
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 3751.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181585"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181586_EEM-scRNA-118.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-118
+  size            : 23.1 MB
+  dimensions      : 55361 genes x 6317 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 6317
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 4006.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181586"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181587_EEM-scRNA-124.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-124
+  size            : 16.1 MB
+  dimensions      : 55361 genes x 5572 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 5572
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 9206.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181587"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181588_EEM-scRNA-125.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-125
+  size            : 19.7 MB
+  dimensions      : 55361 genes x 6114 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 6114
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 2748.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181588"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181589_EEM-scRNA-126.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-126
+  size            : 21.0 MB
+  dimensions      : 55361 genes x 6046 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 6046
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 13375.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181589"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181590_EEM-scRNA-127.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-127
+  size            : 21.9 MB
+  dimensions      : 55361 genes x 6374 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 6374
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 9679.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181590"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181591_EEM-scRNA-158.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-158
+  size            : 22.4 MB
+  dimensions      : 55361 genes x 7693 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 7693
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 19991.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181591"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181592_EEM-scRNA-162.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-162
+  size            : 20.1 MB
+  dimensions      : 55361 genes x 7129 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 7129
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 2175.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181592"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181593_EEM-scRNA-166.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-166
+  size            : 26.4 MB
+  dimensions      : 55361 genes x 7227 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 7227
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 888.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181593"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181594_EEM-scRNA-167.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-167
+  size            : 27.6 MB
+  dimensions      : 55361 genes x 7078 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 7078
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 4190.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181594"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181595_EEM-scRNA-170.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-170
+  size            : 26.7 MB
+  dimensions      : 55361 genes x 5770 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 5770
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 2453.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181595"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181596_EEM-scRNA-172.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-172
+  size            : 26.8 MB
+  dimensions      : 55361 genes x 6429 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 6429
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 3121.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181596"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181597_EEM-scRNA-179.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-179
+  size            : 28.3 MB
+  dimensions      : 55361 genes x 7674 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 7674
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 40792.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181597"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181598_EEM-scRNA-180.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-180
+  size            : 26.2 MB
+  dimensions      : 55361 genes x 7501 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 7501
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 1846.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181598"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181599_EEM-scRNA-181.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-181
+  size            : 30.5 MB
+  dimensions      : 55361 genes x 8322 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 8322
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 2133.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181599"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181600_EEM-scRNA-182.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-182
+  size            : 30.9 MB
+  dimensions      : 55361 genes x 7162 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 7162
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 3670.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181600"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181601_EEM-scRNA-236.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-236
+  size            : 18.7 MB
+  dimensions      : 55361 genes x 5526 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 5526
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 3770.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181601"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181602_EEM-scRNA-237.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-237
+  size            : 28.5 MB
+  dimensions      : 55361 genes x 7531 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 7531
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 12460.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181602"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181603_EEM-scRNA-238.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-238
+  size            : 22.9 MB
+  dimensions      : 55361 genes x 7254 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 7254
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 4459.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181603"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181604_EEM-scRNA-239.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-239
+  size            : 32.5 MB
+  dimensions      : 55361 genes x 8925 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 8925
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 3035.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181604"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181605_EEM-scRNA-249.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-249
+  size            : 25.7 MB
+  dimensions      : 55361 genes x 7405 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 7405
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 4902.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181605"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181606_EEM-scRNA-250.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-250
+  size            : 33.3 MB
+  dimensions      : 55361 genes x 10737 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 10737
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 7292.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181606"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181607_EEM-scRNA-251.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-251
+  size            : 23.9 MB
+  dimensions      : 55361 genes x 7765 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 7765
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 2088.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181607"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181608_EEM-scRNA-288.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-288
+  size            : 17.3 MB
+  dimensions      : 55361 genes x 3760 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 3760
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 4565.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181608"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181609_EEM-scRNA-289.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-289
+  size            : 19.3 MB
+  dimensions      : 55361 genes x 5219 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 5219
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 3126.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181609"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181610_EEM-scRNA-290.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-290
+  size            : 20.6 MB
+  dimensions      : 55361 genes x 4399 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 4399
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 2412.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181610"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181611_EEM-scRNA-291.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-291
+  size            : 21.9 MB
+  dimensions      : 55361 genes x 5268 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 5268
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 17769.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181611"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181612_EEM-scRNA-292.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-292
+  size            : 18.6 MB
+  dimensions      : 55361 genes x 3908 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 3908
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 30316.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181612"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181613_EEM-scRNA-310.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-310
+  size            : 21.3 MB
+  dimensions      : 55361 genes x 6479 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 6479
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 30045.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181613"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181614_EEM-scRNA-311.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-311
+  size            : 20.5 MB
+  dimensions      : 55361 genes x 5955 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 5955
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 7700.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181614"
+
+path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181615_EEM-scRNA-312.h5
+  file type       : 10x CellRanger HDF5 (v3 layout)
+  inferred role   : 10x count matrix, cell-called by barcode count
+  dataset/sample  : GSE262927 / EEM-scRNA-312
+  size            : 17.8 MB
+  dimensions      : 55361 genes x 4348 barcodes
+  raw counts?     : yes (integer values)
+  metadata?       : no
+  processed?      : no (looks like raw counts)
+  species         : MOUSE (12/12 title-case markers, 37 'mt-' genes)
+    - hdf5_top_level_keys: ["matrix"]
+    - n_genes: 55361
+    - n_barcodes: 4348
+    - data_dtype: "float64"
+    - min_value: 0.0
+    - max_value_in_probe: 4582.0
+    - genome: ["unknown"]
+    - feature_types: {"Gene Expression": 55361}
+    - mouse_probe_hits: ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1", "Cd3d", "Lyz2", "Col1a1", "Pecam1", "Actb", "Epcam"]
+    - human_probe_hits: []
+    - n_mt_mouse_style: 37
+    - n_mt_human_style: 0
+    - n_duplicate_gene_symbols: 0
+    - gsm: "GSM8181615"

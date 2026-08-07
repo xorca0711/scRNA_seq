@@ -1,0 +1,5 @@
+resolution,n_clusters,smallest_cluster,largest_cluster,min_cluster_size_threshold,clusters_below_min_size,marker_supported_clusters,pct_clusters_marker_supported,pct_cells_in_largest
+0.3,23,184,3219,20,0,23,100.0,11.61
+0.5,30,184,3220,20,0,30,100.0,11.61
+0.8,39,30,2053,20,0,39,100.0,7.4
+1.0,41,21,2052,20,0,41,100.0,7.4

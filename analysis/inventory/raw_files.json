@@ -1,0 +1,2400 @@
+{
+  "raw_root": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data",
+  "n_files": 51,
+  "files": [
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\Compressed\\GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS.gz",
+      "filename": "GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS.gz",
+      "parent": "GSE178360\\Compressed",
+      "ext": ".RDS.gz",
+      "size_bytes": 406538944,
+      "size_human": "387.7 MB",
+      "file_type": "gzip-compressed RDS",
+      "inferred_role": "compressed copy of a pre-processed Seurat object",
+      "dataset": "GSE178360",
+      "sample": "",
+      "dimensions": "",
+      "contains_raw_counts": "unknown",
+      "contains_metadata": "no",
+      "appears_processed": "yes",
+      "species_evidence": "",
+      "notes": "duplicate of the extracted .RDS in the parent folder",
+      "extra": {}
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\Compressed\\GSE178360_epi.sub_SAE10x3.integrated_v2.RDS.gz",
+      "filename": "GSE178360_epi.sub_SAE10x3.integrated_v2.RDS.gz",
+      "parent": "GSE178360\\Compressed",
+      "ext": ".RDS.gz",
+      "size_bytes": 1078010572,
+      "size_human": "1.0 GB",
+      "file_type": "gzip-compressed RDS",
+      "inferred_role": "compressed copy of a pre-processed Seurat object",
+      "dataset": "GSE178360",
+      "sample": "",
+      "dimensions": "",
+      "contains_raw_counts": "unknown",
+      "contains_metadata": "no",
+      "appears_processed": "yes",
+      "species_evidence": "",
+      "notes": "duplicate of the extracted .RDS in the parent folder",
+      "extra": {}
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\Compressed\\GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS.gz",
+      "filename": "GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS.gz",
+      "parent": "GSE178360\\Compressed",
+      "ext": ".RDS.gz",
+      "size_bytes": 1114035561,
+      "size_human": "1.0 GB",
+      "file_type": "gzip-compressed RDS",
+      "inferred_role": "compressed copy of a pre-processed Seurat object",
+      "dataset": "GSE178360",
+      "sample": "",
+      "dimensions": "",
+      "contains_raw_counts": "unknown",
+      "contains_metadata": "no",
+      "appears_processed": "yes",
+      "species_evidence": "",
+      "notes": "duplicate of the extracted .RDS in the parent folder",
+      "extra": {}
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\Compressed\\GSE178360_mes.sub_SAE10x3.integrated_v2.RDS.gz",
+      "filename": "GSE178360_mes.sub_SAE10x3.integrated_v2.RDS.gz",
+      "parent": "GSE178360\\Compressed",
+      "ext": ".RDS.gz",
+      "size_bytes": 260516864,
+      "size_human": "248.4 MB",
+      "file_type": "gzip-compressed RDS",
+      "inferred_role": "compressed copy of a pre-processed Seurat object",
+      "dataset": "GSE178360",
+      "sample": "",
+      "dimensions": "",
+      "contains_raw_counts": "unknown",
+      "contains_metadata": "no",
+      "appears_processed": "yes",
+      "species_evidence": "",
+      "notes": "duplicate of the extracted .RDS in the parent folder",
+      "extra": {}
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\Compressed\\GSE178360_RAW.tar",
+      "filename": "GSE178360_RAW.tar",
+      "parent": "GSE178360\\Compressed",
+      "ext": ".tar",
+      "size_bytes": 354467840,
+      "size_human": "338.0 MB",
+      "file_type": "tar archive",
+      "inferred_role": "GEO supplementary archive (already extracted)",
+      "dataset": "GSE178360",
+      "sample": "",
+      "dimensions": "6 members",
+      "contains_raw_counts": "see extracted members",
+      "contains_metadata": "no",
+      "appears_processed": "unknown",
+      "species_evidence": "",
+      "notes": "",
+      "extra": {
+        "n_members": 6,
+        "members": [
+          "GSM5388411_DD046Q_filtered_feature_bc_matrix.h5",
+          "GSM5388411_DD046Q_raw_feature_bc_matrix.h5",
+          "GSM5388412_DD047Q_filtered_feature_bc_matrix.h5",
+          "GSM5388412_DD047Q_raw_feature_bc_matrix.h5",
+          "GSM5388413_DD073R_raw_feature_bc_matrix.h5",
+          "GSM5388413_DD073Rfiltered_feature_bc_matrix.h5"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS\\GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS",
+      "filename": "GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS",
+      "parent": "GSE178360\\GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS",
+      "ext": ".RDS",
+      "size_bytes": 662559593,
+      "size_human": "631.9 MB",
+      "file_type": "RDS (uncompressed XDR R serialization)",
+      "inferred_role": "pre-processed Seurat object (author-supplied)",
+      "dataset": "GSE178360",
+      "sample": "",
+      "dimensions": "",
+      "contains_raw_counts": "unknown without R",
+      "contains_metadata": "likely (Seurat meta.data)",
+      "appears_processed": "yes",
+      "species_evidence": "",
+      "notes": "requires R/Seurat to read; R is not installed in this environment",
+      "extra": {
+        "magic_bytes": "580a000000030003"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_epi.sub_SAE10x3.integrated_v2.RDS",
+      "filename": "GSE178360_epi.sub_SAE10x3.integrated_v2.RDS",
+      "parent": "GSE178360",
+      "ext": ".RDS",
+      "size_bytes": 1079895895,
+      "size_human": "1.0 GB",
+      "file_type": "RDS (gzip-compressed R serialization)",
+      "inferred_role": "pre-processed Seurat object (author-supplied)",
+      "dataset": "GSE178360",
+      "sample": "",
+      "dimensions": "",
+      "contains_raw_counts": "unknown without R",
+      "contains_metadata": "likely (Seurat meta.data)",
+      "appears_processed": "yes",
+      "species_evidence": "",
+      "notes": "requires R/Seurat to read; R is not installed in this environment",
+      "extra": {
+        "magic_bytes": "1f8b080000000000"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS",
+      "filename": "GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS",
+      "parent": "GSE178360",
+      "ext": ".RDS",
+      "size_bytes": 1115874314,
+      "size_human": "1.0 GB",
+      "file_type": "RDS (gzip-compressed R serialization)",
+      "inferred_role": "pre-processed Seurat object (author-supplied)",
+      "dataset": "GSE178360",
+      "sample": "",
+      "dimensions": "",
+      "contains_raw_counts": "unknown without R",
+      "contains_metadata": "likely (Seurat meta.data)",
+      "appears_processed": "yes",
+      "species_evidence": "",
+      "notes": "requires R/Seurat to read; R is not installed in this environment",
+      "extra": {
+        "magic_bytes": "1f8b080000000000"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_mes.sub_SAE10x3.integrated_v2.RDS",
+      "filename": "GSE178360_mes.sub_SAE10x3.integrated_v2.RDS",
+      "parent": "GSE178360",
+      "ext": ".RDS",
+      "size_bytes": 260980825,
+      "size_human": "248.9 MB",
+      "file_type": "RDS (gzip-compressed R serialization)",
+      "inferred_role": "pre-processed Seurat object (author-supplied)",
+      "dataset": "GSE178360",
+      "sample": "",
+      "dimensions": "",
+      "contains_raw_counts": "unknown without R",
+      "contains_metadata": "likely (Seurat meta.data)",
+      "appears_processed": "yes",
+      "species_evidence": "",
+      "notes": "requires R/Seurat to read; R is not installed in this environment",
+      "extra": {
+        "magic_bytes": "1f8b080000000000"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_RAW\\GSM5388411_DD046Q_filtered_feature_bc_matrix.h5",
+      "filename": "GSM5388411_DD046Q_filtered_feature_bc_matrix.h5",
+      "parent": "GSE178360\\GSE178360_RAW",
+      "ext": ".h5",
+      "size_bytes": 32359860,
+      "size_human": "30.9 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x FILTERED (cell-called) count matrix",
+      "dataset": "GSE178360",
+      "sample": "DD046Q",
+      "dimensions": "33538 genes x 12185 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "HUMAN (12/12 upper-case markers, 13 'MT-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 33538,
+        "n_barcodes": 12185,
+        "data_dtype": "int32",
+        "min_value": 1.0,
+        "max_value_in_probe": 21025.0,
+        "genome": [
+          "GRCh38"
+        ],
+        "feature_types": {
+          "Gene Expression": 33538
+        },
+        "mouse_probe_hits": [],
+        "human_probe_hits": [
+          "SFTPC",
+          "KRT8",
+          "TP63",
+          "AGER",
+          "SCGB1A1",
+          "FOXJ1",
+          "CD3D",
+          "LYZ",
+          "COL1A1",
+          "PECAM1",
+          "ACTB",
+          "EPCAM"
+        ],
+        "n_mt_mouse_style": 0,
+        "n_mt_human_style": 13,
+        "n_duplicate_gene_symbols": 24,
+        "gsm": "GSM5388411"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_RAW\\GSM5388411_DD046Q_raw_feature_bc_matrix.h5",
+      "filename": "GSM5388411_DD046Q_raw_feature_bc_matrix.h5",
+      "parent": "GSE178360\\GSE178360_RAW",
+      "ext": ".h5",
+      "size_bytes": 81396128,
+      "size_human": "77.6 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x RAW (unfiltered droplet) count matrix",
+      "dataset": "GSE178360",
+      "sample": "DD046Q",
+      "dimensions": "33538 genes x 6794880 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "HUMAN (12/12 upper-case markers, 13 'MT-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 33538,
+        "n_barcodes": 6794880,
+        "data_dtype": "int32",
+        "min_value": 1.0,
+        "max_value_in_probe": 6107.0,
+        "genome": [
+          "GRCh38"
+        ],
+        "feature_types": {
+          "Gene Expression": 33538
+        },
+        "mouse_probe_hits": [],
+        "human_probe_hits": [
+          "SFTPC",
+          "KRT8",
+          "TP63",
+          "AGER",
+          "SCGB1A1",
+          "FOXJ1",
+          "CD3D",
+          "LYZ",
+          "COL1A1",
+          "PECAM1",
+          "ACTB",
+          "EPCAM"
+        ],
+        "n_mt_mouse_style": 0,
+        "n_mt_human_style": 13,
+        "n_duplicate_gene_symbols": 24,
+        "gsm": "GSM5388411"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_RAW\\GSM5388412_DD047Q_filtered_feature_bc_matrix.h5",
+      "filename": "GSM5388412_DD047Q_filtered_feature_bc_matrix.h5",
+      "parent": "GSE178360\\GSE178360_RAW",
+      "ext": ".h5",
+      "size_bytes": 40754721,
+      "size_human": "38.9 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x FILTERED (cell-called) count matrix",
+      "dataset": "GSE178360",
+      "sample": "DD047Q",
+      "dimensions": "33538 genes x 13330 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "HUMAN (12/12 upper-case markers, 13 'MT-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 33538,
+        "n_barcodes": 13330,
+        "data_dtype": "int32",
+        "min_value": 1.0,
+        "max_value_in_probe": 20013.0,
+        "genome": [
+          "GRCh38"
+        ],
+        "feature_types": {
+          "Gene Expression": 33538
+        },
+        "mouse_probe_hits": [],
+        "human_probe_hits": [
+          "SFTPC",
+          "KRT8",
+          "TP63",
+          "AGER",
+          "SCGB1A1",
+          "FOXJ1",
+          "CD3D",
+          "LYZ",
+          "COL1A1",
+          "PECAM1",
+          "ACTB",
+          "EPCAM"
+        ],
+        "n_mt_mouse_style": 0,
+        "n_mt_human_style": 13,
+        "n_duplicate_gene_symbols": 24,
+        "gsm": "GSM5388412"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_RAW\\GSM5388412_DD047Q_raw_feature_bc_matrix.h5",
+      "filename": "GSM5388412_DD047Q_raw_feature_bc_matrix.h5",
+      "parent": "GSE178360\\GSE178360_RAW",
+      "ext": ".h5",
+      "size_bytes": 86736653,
+      "size_human": "82.7 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x RAW (unfiltered droplet) count matrix",
+      "dataset": "GSE178360",
+      "sample": "DD047Q",
+      "dimensions": "33538 genes x 6794880 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "HUMAN (12/12 upper-case markers, 13 'MT-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 33538,
+        "n_barcodes": 6794880,
+        "data_dtype": "int32",
+        "min_value": 1.0,
+        "max_value_in_probe": 20013.0,
+        "genome": [
+          "GRCh38"
+        ],
+        "feature_types": {
+          "Gene Expression": 33538
+        },
+        "mouse_probe_hits": [],
+        "human_probe_hits": [
+          "SFTPC",
+          "KRT8",
+          "TP63",
+          "AGER",
+          "SCGB1A1",
+          "FOXJ1",
+          "CD3D",
+          "LYZ",
+          "COL1A1",
+          "PECAM1",
+          "ACTB",
+          "EPCAM"
+        ],
+        "n_mt_mouse_style": 0,
+        "n_mt_human_style": 13,
+        "n_duplicate_gene_symbols": 24,
+        "gsm": "GSM5388412"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_RAW\\GSM5388413_DD073R_raw_feature_bc_matrix.h5",
+      "filename": "GSM5388413_DD073R_raw_feature_bc_matrix.h5",
+      "parent": "GSE178360\\GSE178360_RAW",
+      "ext": ".h5",
+      "size_bytes": 76592770,
+      "size_human": "73.0 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x RAW (unfiltered droplet) count matrix",
+      "dataset": "GSE178360",
+      "sample": "DD073R",
+      "dimensions": "36601 genes x 6794880 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "HUMAN (12/12 upper-case markers, 13 'MT-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 36601,
+        "n_barcodes": 6794880,
+        "data_dtype": "int32",
+        "min_value": 1.0,
+        "max_value_in_probe": 3466.0,
+        "genome": [
+          "GRCh38"
+        ],
+        "feature_types": {
+          "Gene Expression": 36601
+        },
+        "mouse_probe_hits": [],
+        "human_probe_hits": [
+          "SFTPC",
+          "KRT8",
+          "TP63",
+          "AGER",
+          "SCGB1A1",
+          "FOXJ1",
+          "CD3D",
+          "LYZ",
+          "COL1A1",
+          "PECAM1",
+          "ACTB",
+          "EPCAM"
+        ],
+        "n_mt_mouse_style": 0,
+        "n_mt_human_style": 13,
+        "n_duplicate_gene_symbols": 10,
+        "gsm": "GSM5388413"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_RAW\\GSM5388413_DD073Rfiltered_feature_bc_matrix.h5",
+      "filename": "GSM5388413_DD073Rfiltered_feature_bc_matrix.h5",
+      "parent": "GSE178360\\GSE178360_RAW",
+      "ext": ".h5",
+      "size_bytes": 36616710,
+      "size_human": "34.9 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x FILTERED (cell-called) count matrix",
+      "dataset": "GSE178360",
+      "sample": "DD073R",
+      "dimensions": "36601 genes x 10949 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "HUMAN (12/12 upper-case markers, 13 'MT-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 36601,
+        "n_barcodes": 10949,
+        "data_dtype": "int32",
+        "min_value": 1.0,
+        "max_value_in_probe": 3466.0,
+        "genome": [
+          "GRCh38"
+        ],
+        "feature_types": {
+          "Gene Expression": 36601
+        },
+        "mouse_probe_hits": [],
+        "human_probe_hits": [
+          "SFTPC",
+          "KRT8",
+          "TP63",
+          "AGER",
+          "SCGB1A1",
+          "FOXJ1",
+          "CD3D",
+          "LYZ",
+          "COL1A1",
+          "PECAM1",
+          "ACTB",
+          "EPCAM"
+        ],
+        "n_mt_mouse_style": 0,
+        "n_mt_human_style": 13,
+        "n_duplicate_gene_symbols": 10,
+        "gsm": "GSM5388413"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\Compressed\\GSE262927_CellMetaData.csv.gz",
+      "filename": "GSE262927_CellMetaData.csv.gz",
+      "parent": "GSE262927\\Compressed",
+      "ext": ".csv.gz",
+      "size_bytes": 3200606,
+      "size_human": "3.1 MB",
+      "file_type": "delimited text (comma)",
+      "inferred_role": "metadata / annotation table",
+      "dataset": "GSE262927",
+      "sample": "",
+      "dimensions": "123189 rows x 15 columns",
+      "contains_raw_counts": "no",
+      "contains_metadata": "yes",
+      "appears_processed": "yes (derived annotation)",
+      "species_evidence": "",
+      "notes": "",
+      "extra": {
+        "n_columns": 15,
+        "columns_preview": [
+          "cellbarcode",
+          "orig.ident",
+          "nCount_RNA",
+          "nFeature_RNA",
+          "percent.mito",
+          "phase",
+          "tamoxifen_start_day",
+          "sacrifice_day",
+          "sex",
+          "experimental_group",
+          "trace_call",
+          "lineage",
+          "celltype",
+          "subtype",
+          "cb"
+        ],
+        "delimiter": "comma",
+        "n_data_rows": 123189,
+        "fraction_numeric_in_first_row": 0.357
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\Compressed\\GSE262927_RAW.tar",
+      "filename": "GSE262927_RAW.tar",
+      "parent": "GSE262927\\Compressed",
+      "ext": ".tar",
+      "size_bytes": 816967680,
+      "size_human": "779.1 MB",
+      "file_type": "tar archive",
+      "inferred_role": "GEO supplementary archive (already extracted)",
+      "dataset": "GSE262927",
+      "sample": "",
+      "dimensions": "33 members",
+      "contains_raw_counts": "see extracted members",
+      "contains_metadata": "no",
+      "appears_processed": "unknown",
+      "species_evidence": "",
+      "notes": "",
+      "extra": {
+        "n_members": 33,
+        "members": [
+          "GSM8181583_EEM-scRNA-113.h5",
+          "GSM8181584_EEM-scRNA-116.h5",
+          "GSM8181585_EEM-scRNA-117.h5",
+          "GSM8181586_EEM-scRNA-118.h5",
+          "GSM8181587_EEM-scRNA-124.h5",
+          "GSM8181588_EEM-scRNA-125.h5",
+          "GSM8181589_EEM-scRNA-126.h5",
+          "GSM8181590_EEM-scRNA-127.h5",
+          "GSM8181591_EEM-scRNA-158.h5",
+          "GSM8181592_EEM-scRNA-162.h5",
+          "GSM8181593_EEM-scRNA-166.h5",
+          "GSM8181594_EEM-scRNA-167.h5",
+          "GSM8181595_EEM-scRNA-170.h5",
+          "GSM8181596_EEM-scRNA-172.h5",
+          "GSM8181597_EEM-scRNA-179.h5",
+          "GSM8181598_EEM-scRNA-180.h5",
+          "GSM8181599_EEM-scRNA-181.h5",
+          "GSM8181600_EEM-scRNA-182.h5",
+          "GSM8181601_EEM-scRNA-236.h5",
+          "GSM8181602_EEM-scRNA-237.h5",
+          "GSM8181603_EEM-scRNA-238.h5",
+          "GSM8181604_EEM-scRNA-239.h5",
+          "GSM8181605_EEM-scRNA-249.h5",
+          "GSM8181606_EEM-scRNA-250.h5",
+          "GSM8181607_EEM-scRNA-251.h5",
+          "GSM8181608_EEM-scRNA-288.h5",
+          "GSM8181609_EEM-scRNA-289.h5",
+          "GSM8181610_EEM-scRNA-290.h5",
+          "GSM8181611_EEM-scRNA-291.h5",
+          "GSM8181612_EEM-scRNA-292.h5",
+          "GSM8181613_EEM-scRNA-310.h5",
+          "GSM8181614_EEM-scRNA-311.h5",
+          "GSM8181615_EEM-scRNA-312.h5"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_CellMetaData.csv",
+      "filename": "GSE262927_CellMetaData.csv",
+      "parent": "GSE262927",
+      "ext": ".csv",
+      "size_bytes": 16433533,
+      "size_human": "15.7 MB",
+      "file_type": "delimited text (comma)",
+      "inferred_role": "metadata / annotation table",
+      "dataset": "GSE262927",
+      "sample": "",
+      "dimensions": "123189 rows x 15 columns",
+      "contains_raw_counts": "no",
+      "contains_metadata": "yes",
+      "appears_processed": "yes (derived annotation)",
+      "species_evidence": "",
+      "notes": "",
+      "extra": {
+        "n_columns": 15,
+        "columns_preview": [
+          "cellbarcode",
+          "orig.ident",
+          "nCount_RNA",
+          "nFeature_RNA",
+          "percent.mito",
+          "phase",
+          "tamoxifen_start_day",
+          "sacrifice_day",
+          "sex",
+          "experimental_group",
+          "trace_call",
+          "lineage",
+          "celltype",
+          "subtype",
+          "cb"
+        ],
+        "delimiter": "comma",
+        "n_data_rows": 123189,
+        "fraction_numeric_in_first_row": 0.357
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181583_EEM-scRNA-113.h5",
+      "filename": "GSM8181583_EEM-scRNA-113.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 14224562,
+      "size_human": "13.6 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-113",
+      "dimensions": "55361 genes x 3956 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 3956,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 10033.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181583"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181584_EEM-scRNA-116.h5",
+      "filename": "GSM8181584_EEM-scRNA-116.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 28439042,
+      "size_human": "27.1 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-116",
+      "dimensions": "55361 genes x 5686 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 5686,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 2240.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181584"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181585_EEM-scRNA-117.h5",
+      "filename": "GSM8181585_EEM-scRNA-117.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 29460759,
+      "size_human": "28.1 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-117",
+      "dimensions": "55361 genes x 6172 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 6172,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 3751.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181585"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181586_EEM-scRNA-118.h5",
+      "filename": "GSM8181586_EEM-scRNA-118.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 24228688,
+      "size_human": "23.1 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-118",
+      "dimensions": "55361 genes x 6317 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 6317,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 4006.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181586"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181587_EEM-scRNA-124.h5",
+      "filename": "GSM8181587_EEM-scRNA-124.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 16928559,
+      "size_human": "16.1 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-124",
+      "dimensions": "55361 genes x 5572 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 5572,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 9206.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181587"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181588_EEM-scRNA-125.h5",
+      "filename": "GSM8181588_EEM-scRNA-125.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 20609960,
+      "size_human": "19.7 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-125",
+      "dimensions": "55361 genes x 6114 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 6114,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 2748.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181588"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181589_EEM-scRNA-126.h5",
+      "filename": "GSM8181589_EEM-scRNA-126.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 22024124,
+      "size_human": "21.0 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-126",
+      "dimensions": "55361 genes x 6046 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 6046,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 13375.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181589"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181590_EEM-scRNA-127.h5",
+      "filename": "GSM8181590_EEM-scRNA-127.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 22912060,
+      "size_human": "21.9 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-127",
+      "dimensions": "55361 genes x 6374 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 6374,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 9679.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181590"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181591_EEM-scRNA-158.h5",
+      "filename": "GSM8181591_EEM-scRNA-158.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 23497515,
+      "size_human": "22.4 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-158",
+      "dimensions": "55361 genes x 7693 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 7693,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 19991.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181591"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181592_EEM-scRNA-162.h5",
+      "filename": "GSM8181592_EEM-scRNA-162.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 21118645,
+      "size_human": "20.1 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-162",
+      "dimensions": "55361 genes x 7129 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 7129,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 2175.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181592"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181593_EEM-scRNA-166.h5",
+      "filename": "GSM8181593_EEM-scRNA-166.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 27676517,
+      "size_human": "26.4 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-166",
+      "dimensions": "55361 genes x 7227 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 7227,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 888.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181593"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181594_EEM-scRNA-167.h5",
+      "filename": "GSM8181594_EEM-scRNA-167.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 28893525,
+      "size_human": "27.6 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-167",
+      "dimensions": "55361 genes x 7078 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 7078,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 4190.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181594"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181595_EEM-scRNA-170.h5",
+      "filename": "GSM8181595_EEM-scRNA-170.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 27962859,
+      "size_human": "26.7 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-170",
+      "dimensions": "55361 genes x 5770 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 5770,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 2453.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181595"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181596_EEM-scRNA-172.h5",
+      "filename": "GSM8181596_EEM-scRNA-172.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 28089833,
+      "size_human": "26.8 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-172",
+      "dimensions": "55361 genes x 6429 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 6429,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 3121.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181596"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181597_EEM-scRNA-179.h5",
+      "filename": "GSM8181597_EEM-scRNA-179.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 29671744,
+      "size_human": "28.3 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-179",
+      "dimensions": "55361 genes x 7674 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 7674,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 40792.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181597"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181598_EEM-scRNA-180.h5",
+      "filename": "GSM8181598_EEM-scRNA-180.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 27498569,
+      "size_human": "26.2 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-180",
+      "dimensions": "55361 genes x 7501 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 7501,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 1846.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181598"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181599_EEM-scRNA-181.h5",
+      "filename": "GSM8181599_EEM-scRNA-181.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 31968562,
+      "size_human": "30.5 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-181",
+      "dimensions": "55361 genes x 8322 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 8322,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 2133.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181599"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181600_EEM-scRNA-182.h5",
+      "filename": "GSM8181600_EEM-scRNA-182.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 32442045,
+      "size_human": "30.9 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-182",
+      "dimensions": "55361 genes x 7162 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 7162,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 3670.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181600"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181601_EEM-scRNA-236.h5",
+      "filename": "GSM8181601_EEM-scRNA-236.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 19565673,
+      "size_human": "18.7 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-236",
+      "dimensions": "55361 genes x 5526 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 5526,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 3770.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181601"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181602_EEM-scRNA-237.h5",
+      "filename": "GSM8181602_EEM-scRNA-237.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 29882410,
+      "size_human": "28.5 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-237",
+      "dimensions": "55361 genes x 7531 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 7531,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 12460.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181602"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181603_EEM-scRNA-238.h5",
+      "filename": "GSM8181603_EEM-scRNA-238.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 23967041,
+      "size_human": "22.9 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-238",
+      "dimensions": "55361 genes x 7254 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 7254,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 4459.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181603"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181604_EEM-scRNA-239.h5",
+      "filename": "GSM8181604_EEM-scRNA-239.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 34127842,
+      "size_human": "32.5 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-239",
+      "dimensions": "55361 genes x 8925 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 8925,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 3035.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181604"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181605_EEM-scRNA-249.h5",
+      "filename": "GSM8181605_EEM-scRNA-249.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 26932855,
+      "size_human": "25.7 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-249",
+      "dimensions": "55361 genes x 7405 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 7405,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 4902.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181605"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181606_EEM-scRNA-250.h5",
+      "filename": "GSM8181606_EEM-scRNA-250.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 34935727,
+      "size_human": "33.3 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-250",
+      "dimensions": "55361 genes x 10737 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 10737,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 7292.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181606"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181607_EEM-scRNA-251.h5",
+      "filename": "GSM8181607_EEM-scRNA-251.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 25031145,
+      "size_human": "23.9 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-251",
+      "dimensions": "55361 genes x 7765 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 7765,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 2088.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181607"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181608_EEM-scRNA-288.h5",
+      "filename": "GSM8181608_EEM-scRNA-288.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 18154747,
+      "size_human": "17.3 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-288",
+      "dimensions": "55361 genes x 3760 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 3760,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 4565.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181608"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181609_EEM-scRNA-289.h5",
+      "filename": "GSM8181609_EEM-scRNA-289.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 20244122,
+      "size_human": "19.3 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-289",
+      "dimensions": "55361 genes x 5219 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 5219,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 3126.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181609"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181610_EEM-scRNA-290.h5",
+      "filename": "GSM8181610_EEM-scRNA-290.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 21562882,
+      "size_human": "20.6 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-290",
+      "dimensions": "55361 genes x 4399 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 4399,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 2412.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181610"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181611_EEM-scRNA-291.h5",
+      "filename": "GSM8181611_EEM-scRNA-291.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 22923031,
+      "size_human": "21.9 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-291",
+      "dimensions": "55361 genes x 5268 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 5268,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 17769.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181611"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181612_EEM-scRNA-292.h5",
+      "filename": "GSM8181612_EEM-scRNA-292.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 19502294,
+      "size_human": "18.6 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-292",
+      "dimensions": "55361 genes x 3908 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 3908,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 30316.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181612"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181613_EEM-scRNA-310.h5",
+      "filename": "GSM8181613_EEM-scRNA-310.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 22379416,
+      "size_human": "21.3 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-310",
+      "dimensions": "55361 genes x 6479 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 6479,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 30045.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181613"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181614_EEM-scRNA-311.h5",
+      "filename": "GSM8181614_EEM-scRNA-311.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 21444205,
+      "size_human": "20.5 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-311",
+      "dimensions": "55361 genes x 5955 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 5955,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 7700.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181614"
+      }
+    },
+    {
+      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181615_EEM-scRNA-312.h5",
+      "filename": "GSM8181615_EEM-scRNA-312.h5",
+      "parent": "GSE262927\\GSE262927_RAW",
+      "ext": ".h5",
+      "size_bytes": 18637756,
+      "size_human": "17.8 MB",
+      "file_type": "10x CellRanger HDF5 (v3 layout)",
+      "inferred_role": "10x count matrix, cell-called by barcode count",
+      "dataset": "GSE262927",
+      "sample": "EEM-scRNA-312",
+      "dimensions": "55361 genes x 4348 barcodes",
+      "contains_raw_counts": "yes (integer values)",
+      "contains_metadata": "no",
+      "appears_processed": "no (looks like raw counts)",
+      "species_evidence": "MOUSE (12/12 title-case markers, 37 'mt-' genes)",
+      "notes": "",
+      "extra": {
+        "hdf5_top_level_keys": [
+          "matrix"
+        ],
+        "n_genes": 55361,
+        "n_barcodes": 4348,
+        "data_dtype": "float64",
+        "min_value": 0.0,
+        "max_value_in_probe": 4582.0,
+        "genome": [
+          "unknown"
+        ],
+        "feature_types": {
+          "Gene Expression": 55361
+        },
+        "mouse_probe_hits": [
+          "Sftpc",
+          "Krt8",
+          "Trp63",
+          "Ager",
+          "Scgb1a1",
+          "Foxj1",
+          "Cd3d",
+          "Lyz2",
+          "Col1a1",
+          "Pecam1",
+          "Actb",
+          "Epcam"
+        ],
+        "human_probe_hits": [],
+        "n_mt_mouse_style": 37,
+        "n_mt_human_style": 0,
+        "n_duplicate_gene_symbols": 0,
+        "gsm": "GSM8181615"
+      }
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+======================================================================
+ANALYSIS LOG - GSE178360
+======================================================================
+
+=== DATA DISCOVERY ===
+Raw data directory: C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_RAW
+Input format: 10x CellRanger HDF5 (v3 /matrix layout)
+Species: human
+Number of samples: 3
+Samples detected: ['DD046Q', 'DD047Q', 'DD073R']
+Metadata detected: none present in this series
+Counts appear raw/normalized/processed: raw integer UMI counts
+Non-gene features removed: []
+Gene space identical across samples: False
+Gene space join: inner join: 33538-36601 per sample -> 32732 shared
+
+=== QC ===
+Initial cells: 36464
+Initial genes: 32732
+Per-sample cell counts: qc/qc_before_after.csv
+QC thresholds: qc/qc_thresholds.csv (per sample, MAD-derived)
+Cells removed by QC: 6859
+Cells retained after QC: 29605
+Doublets removed: 1876 cells called by Scrublet run independently per capture; scores retained in the metadata for every cell
+Genes retained after min_cells filter: 24701
+
+=== NORMALIZATION ===
+Method: normalize_total(target_sum=1e4) + log1p; the raw counts are preserved in processed/postQC.h5ad and re-attached as layers['counts'] of the final object
+HVG method: seurat_v3 on raw counts, n_top_genes=2500, batch_key=sample_id
+Number of HVGs: 2500
+Scaling: sc.pp.scale(max_value=10) on the HVG subset
+
+=== DIMENSION REDUCTION ===
+Number of PCs: 50 (variance-ratio elbow at 6, 90% cumulative variance at 51, bracketed to [20,50])
+Neighbor parameters: n_neighbors=15, n_pcs=50, use_rep=X_pca, metric=euclidean
+UMAP parameters: scanpy defaults min_dist=0.5, spread=1.0, random_state=0
+
+=== BATCH HANDLING ===
+Batch variable considered: sample_id
+Assessment: {
+  "knn_same_sample_enrichment": 2.658,
+  "mean_same_sample_neighbour_fraction": 0.8861,
+  "expected_by_chance": 0.3367,
+  "within_group_replicate_enrichment": null,
+  "replicate_structure_available": false,
+  "decision_rule": "No condition or group metadata exists for this series, so donor, batch and biology are completely confounded and no correction can be justified as purely technical. The unintegrated embedding is kept as primary; a Harmony embedding is computed alongside it, clearly labelled as supplementary, if samples separate strongly.",
+  "integration_recommended": false,
+  "supplementary_harmony_warranted": true
+}
+Correction applied: NOT applied to the primary embedding. This series has no condition metadata, so donor, batch and biology cannot be separated and no correction can be justified as purely technical. A Harmony embedding on sample_id is nevertheless provided as a clearly labelled SUPPLEMENTARY representation (X_pca_harmony, X_umap_harmony) because samples do separate in PCA space (kNN same-sample enrichment 2.658). It must not be used for condition comparisons.
+
+=== CLUSTERING ===
+Algorithm: Leiden (igraph flavour, 2 iterations) scanned at resolutions [0.3, 0.5, 0.8, 1.0]; primary resolution 1.0 selected because it was the finest resolution with no cluster below 20 cells and >=90% of clusters supported by at least 5 specific marker genes. All resolutions are retained as leiden_res* columns.
+Resolution: 1.0
+Number of clusters: 41
+
+=== ANNOTATION ===
+Strategy: candidate identities scored per cluster from z-scored mean expression of curated panels, down-weighted by the fraction of cells expressing each marker; numeric Leiden labels are preserved and no candidate is promoted to a definitive label
+Author-label agreement: None
+Epithelial sub-analysis: performed on 6968 cells from clusters ['11', '12', '16', '17', '26', '27', '28', '35', '36', '39', '40']; 20 epithelial subclusters at Leiden resolution 0.6
+
+=== OUTPUT ===
+Main UMAP: figures/umap/UMAP_leiden_clusters.{png,pdf}
+Sample UMAP: figures/umap/UMAP_sample.{png,pdf}
+Dot plots: figures/dotplots/canonical_marker_dotplot.{png,pdf}, figures/dotplots/cluster_marker_dotplot.{png,pdf}
+Marker tables: tables/cluster_markers_all.csv, tables/cluster_markers_top20.csv
+Cell metadata: tables/cell_metadata.csv
+Processed object: processed/final_clustered.h5ad
+
+=== AUTOMATIC QC REVIEW ===
+  - cluster 1: 97% of its cells come from a single sample (DD046Q) - may be sample-specific rather than a shared population
+  - cluster 10: median depth 1294 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 10: 100% of its cells come from a single sample (DD046Q) - may be sample-specific rather than a shared population
+  - cluster 12: 98% of its cells come from a single sample (DD046Q) - may be sample-specific rather than a shared population
+  - cluster 13: median depth 898 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 14: median depth 800 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 15: median depth 933 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 15: 75% of its cells come from a single sample (DD046Q) - may be sample-specific rather than a shared population
+  - cluster 17: 98% of its cells come from a single sample (DD046Q) - may be sample-specific rather than a shared population
+  - cluster 18: median depth 1456 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 2: 95% of its cells come from a single sample (DD073R) - may be sample-specific rather than a shared population
+  - cluster 24: median depth 837 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 25: 85% of its cells come from a single sample (DD073R) - may be sample-specific rather than a shared population
+  - cluster 26: 97% of its cells come from a single sample (DD047Q) - may be sample-specific rather than a shared population
+  - cluster 27: 86% of its cells come from a single sample (DD073R) - may be sample-specific rather than a shared population
+  - cluster 28: median depth 1818 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 29: 76% of its cells come from a single sample (DD073R) - may be sample-specific rather than a shared population
+  - cluster 3: median depth 1122 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 3: 99% of its cells come from a single sample (DD046Q) - may be sample-specific rather than a shared population
+  - cluster 30: median depth 957 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 31: 83% of its cells come from a single sample (DD073R) - may be sample-specific rather than a shared population
+  - cluster 32: 99% of its cells come from a single sample (DD047Q) - may be sample-specific rather than a shared population
+  - cluster 34: median depth 1881 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 36: 100% of its cells come from a single sample (DD047Q) - may be sample-specific rather than a shared population
+  - cluster 37: median depth 1605 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 38: 97% of its cells come from a single sample (DD073R) - may be sample-specific rather than a shared population
+  - cluster 39: 98% of its cells come from a single sample (DD047Q) - may be sample-specific rather than a shared population
+  - cluster 6: 83% of its cells come from a single sample (DD047Q) - may be sample-specific rather than a shared population
+  - cluster 7: median depth 762 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 8: 81% of its cells come from a single sample (DD073R) - may be sample-specific rather than a shared population
+  - cluster 9: 100% of its cells come from a single sample (DD046Q) - may be sample-specific rather than a shared population
+
+=== ALL RECORDED DECISIONS ===
+{
+  "input_format": "10x CellRanger HDF5 (v3 /matrix layout)",
+  "species": "human",
+  "counts_are_raw_integers": "True",
+  "samples_detected": "['DD046Q', 'DD047Q', 'DD073R']",
+  "gene_space_identical_across_samples": "False",
+  "gene_space_join": "inner join: 33538-36601 per sample -> 32732 shared",
+  "var_index": "samples were intersected on Ensembl gene ID (the references differ between samples), then the index was switched to make.unique'd gene symbols for marker lookup",
+  "cells_loaded": "36464",
+  "genes_loaded": "32732",
+  "cells_after_qc": "29605",
+  "cells_removed_qc": "6859",
+  "doublets_removed": "1876 cells called by Scrublet run independently per capture; scores retained in the metadata for every cell",
+  "genes_after_filter": "24701",
+  "metadata_table": "none present in this series",
+  "hvg_method": "seurat_v3 on raw counts, n_top_genes=2500, batch_key=sample_id",
+  "n_hvg": "2500",
+  "normalization": "normalize_total(target_sum=1e4) + log1p; the raw counts are preserved in processed/postQC.h5ad and re-attached as layers['counts'] of the final object",
+  "scaling": "sc.pp.scale(max_value=10) on the HVG subset",
+  "n_pcs": "50 (variance-ratio elbow at 6, 90% cumulative variance at 51, bracketed to [20,50])",
+  "batch_assessment": "{'knn_same_sample_enrichment': 2.658, 'mean_same_sample_neighbour_fraction': 0.8861, 'expected_by_chance': 0.3367, 'within_group_replicate_enrichment': None, 'replicate_structure_available': False, 'decision_rule': 'No condition or group metadata exists for this series, so donor, batch and biology are completely confounded and no correction can be justified as purely technical. The unintegrated embedding is kept as primary; a Harmony embedding is computed alongside it, clearly labelled as supplementary, if samples separate strongly.', 'integration_recommended': False, 'supplementary_harmony_warranted': True}",
+  "batch_correction": "NOT applied to the primary embedding. This series has no condition metadata, so donor, batch and biology cannot be separated and no correction can be justified as purely technical. A Harmony embedding on sample_id is nevertheless provided as a clearly labelled SUPPLEMENTARY representation (X_pca_harmony, X_umap_harmony) because samples do separate in PCA space (kNN same-sample enrichment 2.658). It must not be used for condition comparisons.",
+  "neighbors": "n_neighbors=15, n_pcs=50, use_rep=X_pca, metric=euclidean",
+  "umap": "scanpy defaults min_dist=0.5, spread=1.0, random_state=0",
+  "clustering": "Leiden (igraph flavour, 2 iterations) scanned at resolutions [0.3, 0.5, 0.8, 1.0]; primary resolution 1.0 selected because it was the finest resolution with no cluster below 20 cells and >=90% of clusters supported by at least 5 specific marker genes. All resolutions are retained as leiden_res* columns.",
+  "leiden_resolution": "1.0",
+  "n_clusters": "41",
+  "marker_test": "Wilcoxon rank-sum (scanpy rank_genes_groups, one cluster vs all remaining cells) on log1p(CP10K) values, with expressing fractions",
+  "annotation_strategy": "candidate identities scored per cluster from z-scored mean expression of curated panels, down-weighted by the fraction of cells expressing each marker; numeric Leiden labels are preserved and no candidate is promoted to a definitive label",
+  "epithelial_subanalysis_selection": "clusters ['11', '12', '16', '17', '26', '27', '28', '35', '36', '39', '40'] selected on combined evidence (mean z of ['EPCAM', 'CDH1', 'KRT8', 'KRT18', 'SFTPC', 'SCGB1A1', 'FOXJ1', 'AGER', 'KRT5'] minus mean z of ['PTPRC', 'PECAM1', 'COL1A1', 'DCN', 'CDH5'] > 0.5 AND >25% of cells expressing a pan-epithelial marker) - not on any single gene",
+  "epithelial_subanalysis": "performed on 6968 cells from clusters ['11', '12', '16', '17', '26', '27', '28', '35', '36', '39', '40']; 20 epithelial subclusters at Leiden resolution 0.6"
+}

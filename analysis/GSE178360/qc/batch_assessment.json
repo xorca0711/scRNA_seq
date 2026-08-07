@@ -1,0 +1,10 @@
+{
+  "knn_same_sample_enrichment": 2.658,
+  "mean_same_sample_neighbour_fraction": 0.8861,
+  "expected_by_chance": 0.3367,
+  "within_group_replicate_enrichment": null,
+  "replicate_structure_available": false,
+  "decision_rule": "No condition or group metadata exists for this series, so donor, batch and biology are completely confounded and no correction can be justified as purely technical. The unintegrated embedding is kept as primary; a Harmony embedding is computed alongside it, clearly labelled as supplementary, if samples separate strongly.",
+  "integration_recommended": false,
+  "supplementary_harmony_warranted": true
+}
