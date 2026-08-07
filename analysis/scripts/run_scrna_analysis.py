@@ -875,9 +875,16 @@ def _marker_support(adata: ad.AnnData, key: str, species: str,
     are only mitochondrial / ribosomal / heat-shock / haemoglobin do not count
     as support, so a cluster of stressed cells cannot look well-supported.
     """
+    # Restricted to the HVGs.  This is ~13x less work than the full gene space
+    # at no cost to the criterion: a cluster whose only distinguishing genes
+    # are non-variable ones is not a cluster the embedding could have found,
+    # and restricting the candidate pool makes the test stricter, not looser.
+    # It also makes this consistent with _pairwise_separation, which already
+    # works in HVG space.
     tmp = f"_scan_{key}"
+    mask = ("highly_variable" if "highly_variable" in adata.var else None)
     sc.tl.rank_genes_groups(adata, groupby=key, method="t-test", pts=True,
-                            key_added=tmp)
+                            key_added=tmp, mask_var=mask)
     df = sc.get.rank_genes_groups_df(adata, group=None, key=tmp)
     df = df[(df["pvals_adj"] < 0.05) & (df["logfoldchanges"] > 1.0)
             & (df["pct_nz_group"] > 0.25)]

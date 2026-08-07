@@ -15,6 +15,16 @@ from the same 10x capture.
 
 from __future__ import annotations
 
+import os
+
+# Cap BLAS threads BEFORE numpy is imported.  Each worker process otherwise
+# grabs every core for its linear algebra, so N workers oversubscribe the
+# machine N-fold and spend their time in contention rather than arithmetic.
+# Must be set at import time; numpy reads these once.
+for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS",
+           "NUMEXPR_NUM_THREADS", "VECLIB_MAXIMUM_THREADS"):
+    os.environ.setdefault(_v, "2")
+
 import json
 import re
 import warnings
