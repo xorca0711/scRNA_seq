@@ -1,0 +1,24 @@
+{
+  "n_sample_files": 33,
+  "hdf5_top_level": [
+    "matrix"
+  ],
+  "format": "10x CellRanger HDF5 (v3 /matrix layout)",
+  "shape_genes_x_cells": [
+    55361,
+    3956
+  ],
+  "data_dtype": "float64",
+  "values_are_integers": true,
+  "explicit_zeros_in_probe": 2688,
+  "n_features": 55361,
+  "species_detected": "mouse",
+  "n_mt_genes": 37,
+  "feature_types": {
+    "Gene Expression": 55361
+  },
+  "non_gene_features_present": [
+    "SiteA",
+    "SiteB"
+  ]
+}

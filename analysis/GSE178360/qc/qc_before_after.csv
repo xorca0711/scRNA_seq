@@ -1,0 +1,5 @@
+Sample,GSM,Cells before QC,Cells after QC,Cells removed,% retained,removed_low_counts,removed_high_counts,removed_low_genes,removed_high_genes,removed_high_mito,removed_high_top20
+DD046Q,GSM5388411,12185,9741,2444,79.94,0,0,128,0,1610,1315
+DD047Q,GSM5388412,13330,10937,2393,82.05,0,0,46,0,1926,694
+DD073R,GSM5388413,10949,8927,2022,81.53,0,0,203,0,1782,994
+TOTAL,,36464,29605,6859,81.19,0,0,377,0,5318,3003

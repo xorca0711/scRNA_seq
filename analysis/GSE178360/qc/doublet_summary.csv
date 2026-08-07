@@ -1,0 +1,4 @@
+sample,cells_after_qc,predicted_doublets,doublet_rate_pct,expected_doublet_rate_pct,scrublet_threshold,call_method,status
+DD046Q,9741,784,8.048,7.79,0.1544131487607956,top 7.79% of Scrublet scores (10x multiplet-rate prior),ok (automatic threshold rejected: it called 1.53% vs an expected 7.79%)
+DD047Q,10937,444,4.06,8.75,0.2923059565127935,scrublet automatic threshold,ok (automatic threshold)
+DD073R,8927,648,7.259,7.14,0.10974985361099243,top 7.14% of Scrublet scores (10x multiplet-rate prior),ok (automatic threshold rejected: it called 1.39% vs an expected 7.14%)

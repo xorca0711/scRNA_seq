@@ -1,0 +1,21 @@
+{
+  "n_sample_files": 3,
+  "hdf5_top_level": [
+    "matrix"
+  ],
+  "format": "10x CellRanger HDF5 (v3 /matrix layout)",
+  "shape_genes_x_cells": [
+    33538,
+    12185
+  ],
+  "data_dtype": "int32",
+  "values_are_integers": true,
+  "explicit_zeros_in_probe": 0,
+  "n_features": 33538,
+  "species_detected": "human",
+  "n_mt_genes": 13,
+  "feature_types": {
+    "Gene Expression": 33538
+  },
+  "non_gene_features_present": []
+}

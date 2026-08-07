@@ -9,6 +9,10 @@
 *.gsheet
 Lv-2024-Alveolar-regeneration-by-airway-sec/
 
+# Downloaded GEO series (multi-GB). Never commit; see REFERENCES.md for
+# accessions and analysis/raw_data_inventory.txt for exactly what was used.
+raw_data/
+
 # Sequencing data and derived objects
 *.fastq
 *.fastq.gz
@@ -56,3 +60,13 @@ desktop.ini
 .vscode/
 .idea/
 *~
+.venv-x64/
+
+# Derived analysis outputs that are large and fully regenerable by
+# analysis/scripts/run_scrna_analysis.py (figures and small tables ARE tracked)
+analysis/**/processed/
+analysis/**/sample_shards/
+analysis/**/cluster_markers_all.csv
+analysis/**/epithelial_cluster_markers_all.csv
+analysis/**/*.csv.gz
+analysis/**/epithelial_clustered.h5ad

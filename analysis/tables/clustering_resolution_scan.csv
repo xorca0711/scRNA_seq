@@ -1,0 +1,5 @@
+resolution,n_clusters,smallest_cluster,largest_cluster,min_cluster_size_threshold,clusters_below_min_size,marker_supported_clusters,pct_clusters_marker_supported,min_DE_genes_between_nearest_clusters,nearest_cluster_pairs_under_threshold,pct_cells_in_largest
+0.3,29,16,31808,81,2,29,100.0,9,1,19.61
+0.5,32,16,27771,81,2,32,100.0,8,1,17.12
+0.8,40,16,24180,81,3,40,100.0,0,3,14.91
+1.0,43,16,14867,81,3,43,100.0,0,3,9.17
