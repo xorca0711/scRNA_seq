@@ -21,7 +21,7 @@ Last updated: 2026-08-08.
 | `docs/ANALYSIS_RATIONALE.md` (decisions, before vs after papers) | **DONE** |
 | `docs/BACKGROUND_FOR_BIOLOGISTS.md` — Harmony | **DONE** |
 | `docs/UMAP_AND_FIGURES.md` | **DONE** |
-| Background — Scrublet section | **PENDING** — research agent was running; if lost, re-dispatch |
+| `docs/DOUBLETS_AND_SCRUBLET.md` | **DONE** |
 
 Branch: `scrna-adaptive-pipeline` → see `git log`. PR #1 merged; **PR #2 open**:
 https://github.com/xorca0711/scRNA_seq/pull/2
@@ -118,20 +118,12 @@ clusters fell 20/41 → 4/31 and `donor_driven_clustering_check` now reports fal
 
 ## Pending work
 
-1. **Finish the Scrublet section** of `docs/BACKGROUND_FOR_BIOLOGISTS.md` —
-   section 2 is still a placeholder. Everything else in the background set is
-   written. It should cover: what a doublet physically is, homotypic vs
-   heterotypic, how Scrublet simulates doublets and scores neighbourhoods, why
-   the threshold needs a bimodal histogram (and what to do when it is not —
-   which happened in 32/33 mouse samples), why it must run per capture, and
-   above all the failure mode measured in known issue 3 above: real
-   lineage-co-expressing cell types look exactly like heterotypic doublets.
-2. **Optional analysis follow-ups**, in value order:
+1. **Optional analysis follow-ups**, in value order:
    - Split the 8 non-atlas mouse samples into their own object (known issue 1).
    - Endothelial sub-analysis to recover Niethamer's iCAP state (known issue 7).
    - Re-run GSE178360 without doublet filtering to check AT0 recovery
      (known issue 3), ideally with ambient correction (known issue 4).
-3. `WORKFLOW.md` has a scope banner, but its QC "acceptance order" section still
+2. `WORKFLOW.md` has a scope banner, but its QC "acceptance order" section still
    reads as an imperative checklist for this repo. Low priority.
 
 ---

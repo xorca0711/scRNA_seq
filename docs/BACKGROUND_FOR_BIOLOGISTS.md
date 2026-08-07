@@ -10,7 +10,10 @@ those decisions. Sources are listed at the end of each section.
 **Contents**
 
 1. [Batch effects and Harmony](#1-batch-effects-and-harmony) — why samples separate, what correction does, and when it destroys your experiment
-2. [Doublets and Scrublet](#2-doublets-and-scrublet) — what a doublet is, how it is detected, and why the method can delete real cell types
+2. **[Doublets and Scrublet](DOUBLETS_AND_SCRUBLET.md)** — separate file: what a
+   doublet is, how Scrublet detects it, why the threshold needs a bimodal
+   histogram, and the measured bias by which it removed this project's own
+   populations of interest at up to twice the background rate
 3. **[UMAP and the standard figures](UMAP_AND_FIGURES.md)** — separate file: how
    the picture is built from counts, what it does and does not mean, how to read
    dot plots and feature plots, and why cluster-marker p-values are a ranking
@@ -209,7 +212,10 @@ weakest correction that fixes your problem.**
 
 # 2. Doublets and Scrublet
 
-*(pending — research in progress)*
+Moved to its own file: **[`DOUBLETS_AND_SCRUBLET.md`](DOUBLETS_AND_SCRUBLET.md)**.
+
+That section matters more than the others for this project: it quantifies how
+Scrublet removed the very cell types the human source paper is about.
 
 ---
 
