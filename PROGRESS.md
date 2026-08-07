@@ -23,7 +23,7 @@ Last updated: 2026-08-08.
 | `docs/UMAP_AND_FIGURES.md` | **DONE** |
 | Background — Scrublet section | **PENDING** — research agent was running; if lost, re-dispatch |
 
-Branch: `scrana-adaptive-pipeline` → see `git log`. PR #1 merged; **PR #2 open**:
+Branch: `scrna-adaptive-pipeline` → see `git log`. PR #1 merged; **PR #2 open**:
 https://github.com/xorca0711/scRNA_seq/pull/2
 
 ---
@@ -118,22 +118,21 @@ clusters fell 20/41 → 4/31 and `donor_driven_clustering_check` now reports fal
 
 ## Pending work
 
-1. **Finish doc scope labels.** A doc audit (30 agents) found the front door
-   still misleads. Highest priority:
-   - `README.md` §1 Toolbox, §2 ASCII pipeline and §4 ("the pipeline is
-     bilingual — Scrublet is Python, everything else is R") still read as
-     declarations about *this* repo. Retitle to "the reference study's" and add
-     a "Used here?" column.
-   - Add a 4-line status banner to the top of `docs/SOUPX.md`, `docs/SCDS.md`,
-     `docs/SLINGSHOT.md`, `docs/TRADESEQ.md` — these protect a reader who lands
-     on the page directly and never sees the index.
-   - `WORKFLOW.md` banner is added, but its QC "acceptance order" still reads as
-     this repo's gates.
-   - Full audit output:
-     `%TEMP%\claude\...\tasks\wlr3uxgh5.output` (may be purged; re-run the
-     workflow script under `.claude/.../workflows/scripts/` if needed).
-2. **Finish the Scrublet section** of `docs/BACKGROUND_FOR_BIOLOGISTS.md` (section 2 is still a placeholder). Everything else in the background set is written.
-   endothelial sub-analysis to recover the iCAP state.
+1. **Finish the Scrublet section** of `docs/BACKGROUND_FOR_BIOLOGISTS.md` —
+   section 2 is still a placeholder. Everything else in the background set is
+   written. It should cover: what a doublet physically is, homotypic vs
+   heterotypic, how Scrublet simulates doublets and scores neighbourhoods, why
+   the threshold needs a bimodal histogram (and what to do when it is not —
+   which happened in 32/33 mouse samples), why it must run per capture, and
+   above all the failure mode measured in known issue 3 above: real
+   lineage-co-expressing cell types look exactly like heterotypic doublets.
+2. **Optional analysis follow-ups**, in value order:
+   - Split the 8 non-atlas mouse samples into their own object (known issue 1).
+   - Endothelial sub-analysis to recover Niethamer's iCAP state (known issue 7).
+   - Re-run GSE178360 without doublet filtering to check AT0 recovery
+     (known issue 3), ideally with ambient correction (known issue 4).
+3. `WORKFLOW.md` has a scope banner, but its QC "acceptance order" section still
+   reads as an imperative checklist for this repo. Low priority.
 
 ---
 
