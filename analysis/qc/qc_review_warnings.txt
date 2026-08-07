@@ -1,0 +1,6 @@
+cluster 12: median depth 1212 UMI is well below the dataset median (6657) - check whether this cluster is driven by depth
+cluster 23: median depth 1868 UMI is well below the dataset median (6657) - check whether this cluster is driven by depth
+cluster 23: 78% of its cells come from a single sample (EEM-scRNA-289) - may be sample-specific rather than a shared population
+cluster 24: median depth 2504 UMI is well below the dataset median (6657) - check whether this cluster is driven by depth
+cluster 27: median depth 1808 UMI is well below the dataset median (6657) - check whether this cluster is driven by depth
+cluster 4: median depth 855 UMI is well below the dataset median (6657) - check whether this cluster is driven by depth

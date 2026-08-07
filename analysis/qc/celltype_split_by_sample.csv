@@ -1,0 +1,5 @@
+proposed_identity,n_clusters,clusters,n_sample_private_clusters,max_donor_purity
+Endothelial (candidate),6,"1, 21, 3, 4, 8, 9",0,0.102
+Fibroblast (candidate),3,"12, 14, 15",0,0.095
+AT2 (candidate),2,"10, 11",1,0.875
+SMC_pericyte (candidate),2,"22, 25",0,0.071

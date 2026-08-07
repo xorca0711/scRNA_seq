@@ -424,6 +424,12 @@ QC WARNINGS:
 
 
 def main() -> int:
+    # The Windows console here is on a legacy codepage that cannot encode the
+    # punctuation used in the report; the files themselves are always UTF-8.
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:  # noqa: BLE001
+        pass
     ap = argparse.ArgumentParser()
     ap.add_argument("--dataset", required=True, choices=sorted(DATASETS))
     args = ap.parse_args()
