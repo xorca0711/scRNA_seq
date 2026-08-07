@@ -1,5 +1,13 @@
 # Scrublet — simulation-based doublet detection
 
+> **Scrublet WAS used in this repository's analysis** — run per 10x capture
+> before merging. Note two deviations from this page: the automatic threshold
+> was rejected in 32 of 33 mouse samples (non-bimodal score histograms) in
+> favour of the 10x expected-rate quantile, and the calls are measurably biased
+> against lineage-co-expressing cell types. See
+> [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md).
+
+
 Wolock SL, Lopez R, Klein AM. *Cell Systems* 2019;8(4):281–291.e9.
 [doi:10.1016/j.cels.2018.11.005](https://doi.org/10.1016/j.cels.2018.11.005) ·
 [github.com/AllonKleinLab/scrublet](https://github.com/AllonKleinLab/scrublet)

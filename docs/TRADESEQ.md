@@ -1,5 +1,11 @@
 # tradeSeq — trajectory-based differential expression
 
+> **Reference only — tradeSeq was NOT used in this repository's analysis.**
+> This page documents trajectory-based differential expression as published. The analysis in
+> [`analysis/`](../analysis/) performed **no trajectory-based differential expression**. See
+> [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md) for what was actually executed.
+
+
 Van den Berge K, Roux de Bézieux H, Street K, Saelens W, Cannoodt R, Saeys Y,
 Dudoit S, Clement L. *Nature Communications* 2020;11(1):1201.
 [doi:10.1038/s41467-020-14766-3](https://doi.org/10.1038/s41467-020-14766-3) ·

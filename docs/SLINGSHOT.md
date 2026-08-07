@@ -1,5 +1,11 @@
 # Slingshot — lineage topology and pseudotime
 
+> **Reference only — Slingshot was NOT used in this repository's analysis.**
+> This page documents trajectory inference as published. The analysis in
+> [`analysis/`](../analysis/) performed **no trajectory inference**. See
+> [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md) for what was actually executed.
+
+
 Street K, Risso D, Fletcher RB, Das D, Ngai J, Yosef N, Purdom E, Dudoit S.
 *BMC Genomics* 2018;19(1):477.
 [doi:10.1186/s12864-018-4772-0](https://doi.org/10.1186/s12864-018-4772-0) ·

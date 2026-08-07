@@ -43,9 +43,12 @@ executed, and it does **not** use every tool listed here.
 
 ---
 
-## 1. Toolbox
+## 1. Toolbox of the *reference study*
 
-Six tools, each owning one decision the others cannot make.
+Six tools, each owning one decision the others cannot make. **This is the
+published method, not this repository's pipeline** — only Scrublet was used
+here. See [`docs/PIPELINE_AS_RUN.md`](docs/PIPELINE_AS_RUN.md) for the
+per-tool used/not-used table.
 
 | Stage | Tool | Owns | Schematic |
 |---|---|---|---|
@@ -63,7 +66,11 @@ decided neither of the two ambiguous populations.
 
 ---
 
-## 2. The pipeline in brief
+## 2. The *reference study's* pipeline in brief
+
+> Published method. **Not** what ran in [`analysis/`](analysis/) — no alignment
+> was performed (deposited count matrices were used directly), and no SoupX,
+> scds, SCTransform, Slingshot or tradeSeq.
 
 ```
 FASTQ
@@ -95,7 +102,7 @@ No sequencing data, count matrices or PDFs are stored in this repository.
 
 ## 4. Environment
 
-The pipeline is bilingual — Scrublet is Python, everything else is R.
+The *reference* pipeline is bilingual — Scrublet is Python, everything else is R. **The pipeline actually run here is Python only**; R is not installed on this machine.
 
 - R ≥ 4.3, Bioconductor: `scds`, `slingshot`, `tradeSeq`, `ComplexHeatmap`, `clusterProfiler`, `enrichplot`, `DOSE`; CRAN: `Seurat`, `SoupX`, `CellChat`, `MetBrewer`
 - Python: `scrublet`, `scanpy` (for I/O)
