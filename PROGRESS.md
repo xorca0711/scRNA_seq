@@ -17,8 +17,11 @@ Last updated: 2026-08-08.
 | Reports (`README.md` per dataset, analysis logs) | **DONE** |
 | `docs/PIPELINE_AS_RUN.md` (what actually ran) | **DONE** |
 | Source papers read and divergences documented | **DONE** |
-| Doc scope labels (README/WORKFLOW/docs) | **PARTIAL** — see Pending |
-| Rationale/teaching doc (before vs after papers) | **PENDING** — see Pending |
+| Doc scope labels (README/WORKFLOW/docs) | **DONE** — banners on all 5 tool pages, README/WORKFLOW relabelled |
+| `docs/ANALYSIS_RATIONALE.md` (decisions, before vs after papers) | **DONE** |
+| `docs/BACKGROUND_FOR_BIOLOGISTS.md` — Harmony | **DONE** |
+| `docs/UMAP_AND_FIGURES.md` | **DONE** |
+| Background — Scrublet section | **PENDING** — research agent was running; if lost, re-dispatch |
 
 Branch: `scrana-adaptive-pipeline` → see `git log`. PR #1 merged; **PR #2 open**:
 https://github.com/xorca0711/scRNA_seq/pull/2
@@ -129,13 +132,7 @@ clusters fell 20/41 → 4/31 and `donor_driven_clustering_check` now reports fal
    - Full audit output:
      `%TEMP%\claude\...\tasks\wlr3uxgh5.output` (may be purged; re-run the
      workflow script under `.claude/.../workflows/scripts/` if needed).
-2. **Write `docs/ANALYSIS_RATIONALE.md`** — the decisions made during the
-   data-only first pass, then the corrected rationale after reading the two
-   source papers, plus plain-language background on UMAP, Harmony and Scrublet
-   for a reader without a computational background. Three research agents were
-   dispatched for the background material (Harmony, Scrublet, UMAP/figures);
-   if their output is lost, re-dispatch.
-3. Optional: split the 8 non-atlas mouse samples into their own object;
+2. **Finish the Scrublet section** of `docs/BACKGROUND_FOR_BIOLOGISTS.md` (section 2 is still a placeholder). Everything else in the background set is written.
    endothelial sub-analysis to recover the iCAP state.
 
 ---
