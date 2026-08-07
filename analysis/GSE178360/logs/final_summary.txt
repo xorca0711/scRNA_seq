@@ -1,0 +1,51 @@
+
+=====================================================
+scRNA-seq ANALYSIS COMPLETE — GSE178360
+=====================================================
+
+RAW DATA
+Directory:        C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_RAW
+Detected format:  10x CellRanger HDF5 (v3 /matrix layout)
+Species:          human
+Samples:          3
+Metadata:         none present in this series
+
+QC
+Cells loaded:     36,464
+Cells after QC:   29,605
+Cells removed:    6,859
+Doublets removed: 1,876
+
+ANALYSIS
+HVGs:             2500
+PCs used:         50 (variance-ratio elbow at 6, 90% cumulative variance at 51, bracketed to [20,50])
+Batch correction: Harmony (harmonypy) on sample_id used as the PRIMARY embedding, requested explicitly (--integration harmony). 
+Leiden resolution:1.0
+Final clusters:   31
+
+MAIN OUTPUTS
+Cluster UMAP:               C:\Users\dream\Documents\GitHub\scRNA_seq\analysis\GSE178360/figures/umap/UMAP_leiden_clusters.pdf
+Sample UMAP:                C:\Users\dream\Documents\GitHub\scRNA_seq\analysis\GSE178360/figures/umap/UMAP_sample.pdf
+Canonical marker dot plot:  C:\Users\dream\Documents\GitHub\scRNA_seq\analysis\GSE178360/figures/dotplots/canonical_marker_dotplot.pdf
+Cluster-marker dot plot:    C:\Users\dream\Documents\GitHub\scRNA_seq\analysis\GSE178360/figures/dotplots/cluster_marker_dotplot.pdf
+Cluster marker table:       C:\Users\dream\Documents\GitHub\scRNA_seq\analysis\GSE178360/tables/cluster_markers_all.csv
+Cell metadata:              C:\Users\dream\Documents\GitHub\scRNA_seq\analysis\GSE178360/tables/cell_metadata.csv
+Final processed object:     C:\Users\dream\Documents\GitHub\scRNA_seq\analysis\GSE178360/processed/final_clustered.h5ad
+Analysis script:            C:\Users\dream\Documents\GitHub\scRNA_seq\analysis/scripts/run_scrna_analysis.py
+README:                     C:\Users\dream\Documents\GitHub\scRNA_seq\analysis\GSE178360/README.md
+
+EPITHELIAL SUBANALYSIS:
+performed on 7446 cells from clusters ['11', '12', '16', '18', '24', '25', '26', '29', '30']; 20 epithelial subclusters at Leiden resolution 0.6
+
+QC WARNINGS:
+  - cluster 10: median depth 1501 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 13: median depth 947 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 14: median depth 923 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 15: median depth 800 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 24: 87% of its cells come from a single sample (DD047Q) - may be sample-specific rather than a shared population
+  - cluster 25: median depth 971 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 26: median depth 1840 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+  - cluster 27: 80% of its cells come from a single sample (DD073R) - may be sample-specific rather than a shared population
+  - cluster 30: 99% of its cells come from a single sample (DD047Q) - may be sample-specific rather than a shared population
+  - cluster 9: median depth 737 UMI is well below the dataset median (4811) - check whether this cluster is driven by depth
+=====================================================

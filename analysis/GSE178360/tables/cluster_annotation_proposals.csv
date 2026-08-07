@@ -1,42 +1,32 @@
-Cluster,n_cells,Proposed identity,Runner-up,Panel score,Runner-up score,Supporting markers,Conflicting markers,Top data-derived genes,Confidence,Notes
-0,681,DC (candidate),CD4_T,3.099,2.933,"CD1C, ITGAX, HLA-DRA, FLT3",CD4,"HLA-DRA, CD74, HLA-DPB1, MS4A6A, HLA-DPA1, HLA-DQB1, GPR183, HLA-DRB1, HLA-DMA, C1QA",Moderate,co-expresses markers of more than one lineage - check for doublets
-1,597,Pan_immune (candidate),CD4_T,1.962,1.852,PTPRC,CD4,"COTL1, LYZ, AIF1, CTSS, SH3BGRL3, OAZ1, THBS1, FCER1G, FCN1, S100A4",Low,co-expresses markers of more than one lineage - check for doublets
-2,1074,Mono_Mac (candidate),CD4_T,2.563,2.481,"LYZ, CD68, CSF1R, ITGAM, C1QA","CD4, MARCO, PPARG, MCEMP1","IFI30, FTL, CD163, CD68, PSAP, CTSB, FTH1, ATP6V0C, VSIG4, LYZ",Moderate,co-expresses markers of more than one lineage - check for doublets
-3,1210,Erythroid (candidate),Endothelial,1.829,1.568,"HBB, HBA1","PECAM1, CDH5, CLDN5","IFI27, CLDN5, FCN3, IFITM3, HLA-B, MT2A, RGCC, HYAL2, HLA-C, TMSB10",Moderate,co-expresses markers of more than one lineage - check for doublets
-4,1420,CD8_T (candidate),T_cell,6.069,4.61,"CD8A, CD8B",,"CCL5, CD3D, IL32, CCL4, CXCR4, CD69, CD3E, HCST, BTG1, DUSP2",High,
-5,1854,T_cell (candidate),Treg,3.45,2.338,"CD3D, CD3E, CD3G, TRBC2",,"ZFP36L2, IL7R, CXCR4, CD69, BTG1, TSC22D3, JUNB, CD3E, CD2, TPT1",High,
-6,1661,NK (candidate),Pan_immune,5.185,1.959,"NKG7, KLRD1, GNLY",,"NKG7, GNLY, CD247, KLRD1, GZMB, PRF1, CTSW, HCST, GZMA, PFN1",High,
-7,681,Fibroblast (candidate),Erythroid,1.249,1.076,"COL1A1, COL1A2, DCN, COL3A1",HBB,"DCN, A2M, LUM, CFD, FBLN1, RARRES2, ADH1B, MT2A, LGALS1, MGP",Moderate,co-expresses markers of more than one lineage - check for doublets
-8,555,Fibroblast (candidate),Fibro_activated,3.349,1.397,"COL1A1, COL1A2, DCN, PDGFRA, COL3A1",,"RARRES2, C7, FN1, LUM, DCN, SELENOP, COL1A2, CFD, ADH1B, COL6A1",High,
-9,336,Fibroblast (candidate),Fibro_activated,3.209,1.567,"COL1A1, COL1A2, DCN, PDGFRA, COL3A1",,"LUM, COL6A3, COL1A2, C1R, MFAP4, C1S, FBLN1, A2M, COL1A1, COL6A2",High,
-10,576,Endothelial_cap (candidate),Endothelial,2.143,2.09,"CA4, EDNRB","PECAM1, CDH5, EMCN, CLDN5, HBB, HBA1","CLDN5, IFI27, HPGD, B2M, HLA-B, HLA-C, IL1RL1, IFITM3, HLA-E, HLA-A",Moderate,co-expresses markers of more than one lineage - check for doublets
-11,477,AT2 (candidate),Pan_epithelial,5.105,1.378,"SFTPC, SFTPB, ABCA3, LAMP3, SLC34A2, NAPSA",,"NAPSA, SFTPC, SFTPA1, SFTPD, SFTPA2, LAMP3, SLC34A2, PGC, CTSH, ABCA3",High,
-12,759,Basal (candidate),Transitional,3.148,2.283,"KRT5, TP63, DAPL1",,"S100A2, KRT17, KRT15, AQP3, SFN, KRT19, KRT5, SERPINF1, MPZL2, DUSP23",High,
-13,728,Neutrophil (candidate),Pan_immune,4.4,1.72,"S100A8, S100A9, FCGR3B",,"S100A9, S100A8, NAMPT, IFITM2, SRGN, NEAT1, CSF3R, S100A12, SOD2, ACTB",High,
-14,496,Mono_Mac (candidate),Erythroid,1.172,0.944,"LYZ, CD68, C1QA",HBB,"FTL, TMSB4X, HLA-DRA, FTH1, C1QA, AIF1, CD74, C1QB, TYROBP, HLA-DPA1",Moderate,co-expresses markers of more than one lineage - check for doublets
-15,739,Club (candidate),Erythroid,1.569,1.502,"SCGB1A1, SCGB3A2, SCGB3A1, MGP","HBB, HBA1","SLPI, SCGB3A2, SCGB3A1, SFTPB, CYB5A, WFDC2, MGST1, TPT1, EEF1A1, SCGB1A1",Moderate,co-expresses markers of more than one lineage - check for doublets
-16,255,Plasma (candidate),Club,3.207,1.737,"JCHAIN, XBP1",,"LCN2, BPIFB1, WFDC2, SLPI, AGR2, CXCL17, SCGB1A1, MDK, PIGR, KRT19",High,
-17,651,Pan_epithelial (candidate),Club,1.947,1.764,"EPCAM, CDH1, KRT7","SCGB3A2, SCGB3A1, MGP","SFTPB, CYB5A, SCGB3A2, KLK11, CXCL17, CP, MGST1, PIGR, WFDC2, C16orf89",Moderate,co-expresses markers of more than one lineage - check for doublets
-18,131,Neutrophil (candidate),Alveolar_Mac,2.601,1.065,"S100A8, S100A9",,"S100A8, S100A9, RETN, ACTB, LCN2, LYZ, TSPO, MNDA, LTF, GCA",High,
-19,432,B_cell (candidate),Plasma,4.779,1.777,"CD79A, CD79B, MS4A1, CD37, CD74",,"CD37, CD79A, MS4A1, CD74, HLA-DRA, BTG1, CD83, HLA-DQA1, CD52, CXCR4",High,
-20,310,Proliferating (candidate),NK,6.079,1.763,"MKI67, TOP2A, CCNB1",,"STMN1, PCLAF, TYMS, H2AFZ, HMGB1, TUBA1B, HMGN2, TUBB, HMGB2, NUSAP1",High,
-21,297,Endothelial (candidate),Endothelial_cap,1.555,0.947,"PECAM1, CDH5, CLDN5",,"PTPRB, EPAS1, TFPI, EFNB2, DKK2, CALCRL, GJA5, CLEC14A, FAM107A, CLDN5",High,
-22,512,Pan_immune (candidate),B_cell,0.526,0.326,PTPRC,,"TPSB2, TPSAB1, CPA3, HPGDS, KIT, RHEX, ALOX5AP, MS4A2, CD69, AREG",Low,
-23,205,Lymphatic_EC (candidate),Endothelial,5.663,1.65,"MMRN1, PROX1, CCL21",,"CCL21, IGFBP7, MMRN1, GNG11, TFF3, PPFIBP1, TFPI, AKAP12, NRP2, APP",High,
-24,289,Platelet (candidate),Erythroid,5.775,0.688,,,"TMSB4X, ACKR1, ACTG1, TMSB10, IGFBP7, CLU, IFITM3, PRSS23, SPARCL1, IFI27",Low,
-25,1169,Endothelial (candidate),Fibro_activated,1.906,1.746,"PECAM1, CDH5, KDR, EMCN, CLDN5",POSTN,"VWF, LIFR, NUAK1, ACKR1, PRSS23, MKL2, SPARCL1, ENG, CLEC14A, NPDC1",Moderate,co-expresses markers of more than one lineage - check for doublets
-26,2052,Ciliated (candidate),CD4_T,3.378,1.653,"FOXJ1, TPPP3, DNAH5, CAPS",,"DNAAF1, LRRIQ1, TPPP3, CAPS, CETN2, RSPH1, DNAH12, PIFO, TSPAN1, AKAP9",High,
-27,214,Ciliated (candidate),Pan_epithelial,3.629,1.02,"FOXJ1, TPPP3, DNAH5, CAPS",,"CAPS, GSTA1, TSPAN1, C1orf194, TMEM190, AL357093.2, TSPAN19, PRDX5, C20orf85, RSPH1",High,
-28,658,Mesothelium (candidate),AT1,5.986,3.354,"MSLN, UPK3B",,"AGER, EMP2, HOPX, CAV1, S100A10, GPRC5A, KRT7, CD55, ANXA2, LMO7",High,
-29,472,SMC_pericyte (candidate),CD4_T,3.622,1.185,"ACTA2, MYH11, TAGLN, PDGFRB, NOTCH3",,"CALD1, TPM2, MYL9, PPP1R14A, IGFBP7, TAGLN, ACTA2, BGN, GPX3, TPM1",High,
-30,471,Ciliated (candidate),Transitional,2.036,0.393,"FOXJ1, TPPP3, CAPS",,"CAPS, C20orf85, GSTP1, C9orf24, PRDX5, DYNLL1, TPPP3, RSPH1, C11orf88, FAM183A",High,
-31,235,SMC_pericyte (candidate),Fibro_activated,3.104,1.87,"ACTA2, MYH11, TAGLN",,"TAGLN, TPM2, ACTA2, DES, MYL9, ACTG2, TPM1, DSTN, MYL6, MYLK",High,
-32,1251,Mono_Mac (candidate),Pan_immune,2.111,1.921,"LYZ, CD68, CSF1R, ITGAM, C1QA",PTPRC,"CTSS, CYBB, COTL1, FCN1, C5AR1, LYZ, THBS1, LST1, PLAUR, PSAP",Moderate,co-expresses markers of more than one lineage - check for doublets
-33,111,DC (candidate),Alveolar_Mac,2.651,2.603,"ITGAX, HLA-DRA, FLT3","MARCO, PPARG, FABP4, LYZ, CD68, CSF1R, ITGAM, C1QA","FABP5, LIPA, SH3BGRL3, CTSB, CD68, LGALS9, FTH1, LPL, CXCL16, FTL",Moderate,co-expresses markers of more than one lineage - check for doublets
-34,873,Endothelial_cap (candidate),Endothelial,2.735,1.925,"CA4, GPIHBP1, APLNR",,"EPAS1, FCN3, CALCRL, SLC6A4, TMEM100, IL7R, PECAM1, HLA-E, IFI27, TNFSF10",High,
-35,21,Neuroendocrine (candidate),Pan_epithelial,6.247,1.653,"ASCL1, CALCA, CHGA",,"SCGN, SCG2, BEX1, SEC11C, PCSK1N, CPE, CHGA, SCG3, TFF3, PEG10",High,
-36,517,Ciliated (candidate),Club,2.016,1.98,"FOXJ1, TPPP3, DNAH5, CAPS","SCGB1A1, SCGB3A2, SCGB3A1, EPCAM, CDH1, KRT7","NCOA7, SCGB3A2, ELF3, SOX4, STEAP4, TACSTD2, PIGR, GDF15, GPRC5A, EGR1",Moderate,co-expresses markers of more than one lineage - check for doublets
-37,392,Endothelial (candidate),Endothelial_cap,2.808,1.975,"PECAM1, CDH5, KDR, EMCN, CLDN5",,"HLA-E, HPGD, EMCN, AQP1, EDNRB, GNG11, EGFL7, RAMP2, IFI27, EPAS1",High,
-38,1003,Fibroblast (candidate),SMC_pericyte,3.14,0.637,"COL1A1, COL1A2, DCN, PDGFRA, COL3A1",,"DCN, FBLN1, CFH, APOD, ADH1B, LAMA2, PDGFRA, NBL1, PODN, C1S",High,
-39,865,Club (candidate),Pan_epithelial,1.98,1.705,"SCGB1A1, SCGB3A2, SCGB3A1, MGP","EPCAM, CDH1, KRT7","SFTPB, GPRC5A, PIGR, SCGB3A2, SLPI, MUC1, MET, C16orf89, ELF3, TACSTD2",Moderate,co-expresses markers of more than one lineage - check for doublets
-40,499,Basal (candidate),Transitional,2.508,1.874,"KRT5, TP63",,"KRT17, IGFBP2, S100A2, CYB5A, PERP, ERRFI1, KRT19, SERPINF1, CLU, AQP3",High,
+Cluster,n_cells,Proposed identity,Runner-up,Panel score,Runner-up score,DE corroboration,Supporting markers,Conflicting markers,Top data-derived genes,Confidence,Notes
+0,1000,Mono_Mac (candidate),CD4_T,5.455,3.045,1.0,"LYZ, CD68, CSF1R, ITGAM, C1QA",,"CTSB, CD68, MRC1, FTL, CD163, C1QA, C1QC, VSIG4, CTSZ, C1QB",High,
+1,377,Mono_Mac (candidate),DC,4.649,3.966,1.0,"LYZ, CD68, CSF1R, ITGAM, C1QA","CD1C, ITGAX, HLA-DRA, FLT3","HLA-DPB1, HLA-DRA, HLA-DPA1, CD74, HLA-DQB1, MS4A6A, RGS1, HLA-DQA1, HLA-DRB1, GPR183",High,co-expresses markers of more than one lineage - check for doublets
+2,1173,Endothelial (candidate),Endothelial_cap,4.122,2.486,0.75,"PECAM1, CDH5, KDR, EMCN, CLDN5",,"EPAS1, FCN3, PECAM1, TMEM100, IFI27, CLDN5, CALCRL, BTNL9, SPARC, CD93",High,
+3,314,Endothelial (candidate),Endothelial_cap,3.254,0.876,0.75,"PECAM1, CDH5, CLDN5",,"EPAS1, PTPRB, CLDN5, TFPI, DKK2, GJA5, EFNB2, FAM107A, TMEM100, CALCRL",High,
+4,1118,CD8_T (candidate),T_cell,7.714,6.342,1.0,"CD8A, CD8B","CD3D, CD3E, CD3G, TRBC2","CCL5, CD69, CD3D, CXCR4, IL32, BTG1, ZFP36L2, CD2, CD3E, HCST",High,co-expresses markers of more than one lineage - check for doublets
+5,1326,Fibroblast (candidate),Fibro_activated,6.013,1.268,1.25,"COL1A1, COL1A2, DCN, PDGFRA, COL3A1",,"DCN, A2M, LUM, CFD, RARRES2, ADH1B, FBLN1, COL1A2, FN1, SELENOP",High,
+6,1231,Fibroblast (candidate),SMC_pericyte,6.819,1.621,1.25,"COL1A1, COL1A2, DCN, PDGFRA, COL3A1",,"FBLN1, DCN, CFH, C1S, NBL1, LTBP2, MMP2, PDGFRA, LAMA2, ADH1B",High,
+7,2096,NK (candidate),Pan_immune,7.178,4.557,1.0,"NKG7, KLRD1, GNLY",,"NKG7, KLRD1, GZMB, CD247, HCST, PRF1, CTSW, GNLY, CST7, GZMA",High,
+8,1738,T_cell (candidate),Pan_immune,5.446,4.029,1.0,"CD3D, CD3E, CD3G, TRBC2",,"ZFP36L2, IL7R, CD69, CXCR4, BTG1, JUNB, TSC22D3, TPT1, TNFAIP3, CD3E",High,
+9,1086,Endothelial (candidate),Erythroid,2.752,1.598,0.75,"PECAM1, CDH5, CLDN5",,"IFI27, TMSB10, FCN3, IFITM3, CLDN5, EPAS1, MT2A, HLA-B, SLC9A3R2, B2M",High,
+10,961,Endothelial (candidate),Endothelial_cap,4.963,3.733,1.0,"PECAM1, CDH5, KDR, EMCN, CLDN5",,"HPGD, HLA-E, CLDN5, IFI27, HLA-B, AQP1, EDNRB, HLA-C, B2M, ITM2B",High,
+11,807,AT2 (candidate),Pan_epithelial,8.15,3.152,1.5,"SFTPC, SFTPB, ABCA3, LAMP3, SLC34A2, NAPSA",,"SFTPB, SLC34A2, NAPSA, MUC1, SFTA2, SFTPD, S100A14, SFTA3, SLPI, SFTPA2",High,
+12,1292,Transitional (candidate),Basal,5.402,4.944,1.25,"KRT8, KRT18, KRT19, CLDN4, KRT17, SFN","KRT5, TP63","KRT17, S100A2, IGFBP2, KRT19, AQP3, SERPINF1, KRT15, PERP, MPZL2, SFN",Moderate,co-expresses markers of more than one lineage - check for doublets
+13,730,Club (candidate),Erythroid,3.987,1.819,1.0,"SCGB1A1, SCGB3A2, SCGB3A1, MGP",,"SLPI, SCGB3A1, SCGB3A2, SFTPB, CYB5A, WFDC2, MGST1, TPT1, EEF1A1, SCGB1A1",High,
+14,893,Neutrophil (candidate),Pan_immune,7.259,4.055,1.0,"S100A8, S100A9, FCGR3B",,"S100A9, S100A8, NAMPT, SRGN, IFITM2, ACTB, CSF3R, S100A12, NEAT1, ALOX5AP",High,
+15,446,Platelet (candidate),Mono_Mac,3.275,3.102,0.0,,"LYZ, CD68, C1QA","FTL, TMSB4X, FTH1, HLA-DRA, C1QA, AIF1, CD74, C1QB, HLA-DPA1, TYROBP",Low,co-expresses markers of more than one lineage - check for doublets
+16,1198,Club (candidate),Pan_epithelial,3.339,3.325,0.5,"SCGB1A1, SCGB3A2, SCGB3A1, MGP","EPCAM, CDH1, KRT7","SCGB3A2, PIGR, SFTPB, KLK11, CXCL17, C16orf89, SLPI, CP, WFDC2, CYB5A",Moderate,co-expresses markers of more than one lineage - check for doublets
+17,23,Plasma (candidate),Fibroblast,5.796,4.859,0.667,"JCHAIN, MZB1, XBP1","COL1A1, COL1A2, DCN, PDGFRA, COL3A1","IGLC3, IGHA1, JCHAIN, MSMB, BPIFB1, LCN2, APOC1, TFF3, AGR2, IGLC2",High,co-expresses markers of more than one lineage - check for doublets
+18,486,Pan_epithelial (candidate),Transitional,4.156,3.984,1.0,"EPCAM, CDH1, KRT7","KRT8, KRT18, KRT19, CLDN4, KRT17, CDKN1A, SFN","SLPI, PIGR, CXCL17, KLK11, WFDC2, SCGB1A1, CP, STEAP4, MUC1, TACSTD2",Moderate,co-expresses markers of more than one lineage - check for doublets
+19,2359,Pan_immune (candidate),Mono_Mac,4.367,3.459,1.0,PTPRC,,"CTSS, LYZ, THBS1, AIF1, COTL1, C5AR1, FTL, LST1, CYBB, TYROBP",Low,
+20,437,B_cell (candidate),DC,7.319,1.188,1.25,"CD79A, CD79B, MS4A1, CD37, CD74",,"CD37, CD79A, MS4A1, CD74, HLA-DRA, BTG1, CD83, CD52, HLA-DQA1, CXCR4",High,
+21,281,Proliferating (candidate),NK,6.844,1.71,0.667,"MKI67, TOP2A, CCNB1",,"STMN1, H2AFZ, TYMS, PCLAF, TUBA1B, HMGB1, HMGN2, TUBB, HMGB2, NUSAP1",High,
+22,513,B_cell (candidate),Pan_immune,0.866,0.524,0.25,CD37,,"TPSB2, TPSAB1, CPA3, HPGDS, KIT, RHEX, ALOX5AP, MS4A2, CD69, AREG",Low,
+23,205,Lymphatic_EC (candidate),Endothelial,7.496,2.892,1.0,"MMRN1, PROX1, CCL21",,"CCL21, IGFBP7, MMRN1, GNG11, TFF3, PPFIBP1, TFPI, AKAP12, NRP2, APP",High,
+24,2266,Ciliated (candidate),Transitional,6.04,2.459,1.0,"FOXJ1, TPPP3, DNAH5, CAPS",,"DNAAF1, CAPS, LRRIQ1, TPPP3, RSPH1, CETN2, PIFO, TSPAN1, DNAH12, C20orf85",High,
+25,481,Ciliated (candidate),Transitional,3.324,1.649,0.5,"FOXJ1, TPPP3, CAPS",,"CAPS, C20orf85, GSTP1, C9orf24, PRDX5, TPPP3, DYNLL1, RSPH1, C11orf88, FAM183A",High,
+26,663,AT1 (candidate),Mesothelium,5.538,5.199,1.0,"AGER, PDPN, HOPX, CAV1, RTKN2","MSLN, UPK3B","AGER, EMP2, CAV1, HOPX, S100A10, GPRC5A, KRT7, CD55, MYL9, LMO7",Moderate,co-expresses markers of more than one lineage - check for doublets
+27,1234,Endothelial (candidate),Fibro_activated,4.435,2.042,1.0,"PECAM1, CDH5, KDR, EMCN, CLDN5",,"VWF, LIFR, NUAK1, PRSS23, ACKR1, SPARCL1, ENG, MKL2, CLEC14A, GSN",High,
+28,742,SMC_pericyte (candidate),Fibro_activated,7.105,2.516,1.0,"ACTA2, MYH11, TAGLN, PDGFRB, NOTCH3",,"TPM2, MYL9, TAGLN, PPP1R14A, ACTA2, CALD1, IGFBP7, TPM1, LGALS1, MYL6",High,
+29,31,Neuroendocrine (candidate),Pan_epithelial,7.055,3.281,0.667,"ASCL1, CALCA, CHGA",,"SEC11C, PCSK1N, TFF3, EPCAM, CD24, BEX2, SPINT2, SCG2, TMEM61, BEX1",High,
+30,222,Ciliated (candidate),Club,4.392,2.259,0.75,"FOXJ1, TPPP3, DNAH5, CAPS",,"NCOA7, ELF3, ZMYND10, SOX4, CCDC170, FABP6, SCGB3A2, C11orf97, TPPP3, EGR1",High,

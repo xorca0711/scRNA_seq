@@ -1,5 +1,5 @@
-resolution,n_clusters,smallest_cluster,largest_cluster,min_cluster_size_threshold,clusters_below_min_size,marker_supported_clusters,pct_clusters_marker_supported,pct_cells_in_largest
-0.3,23,184,3219,20,0,23,100.0,11.61
-0.5,30,184,3220,20,0,30,100.0,11.61
-0.8,39,30,2053,20,0,39,100.0,7.4
-1.0,41,21,2052,20,0,41,100.0,7.4
+resolution,n_clusters,smallest_cluster,largest_cluster,min_cluster_size_threshold,clusters_below_min_size,marker_supported_clusters,pct_clusters_marker_supported,min_DE_genes_between_nearest_clusters,nearest_cluster_pairs_under_threshold,pct_cells_in_largest
+0.3,21,23,3336,20,0,21,100.0,27,0,12.03
+0.5,25,23,3222,20,0,25,100.0,28,0,11.62
+0.8,29,23,2451,20,0,29,100.0,12,0,8.84
+1.0,31,23,2359,20,0,31,100.0,12,0,8.51
