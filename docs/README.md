@@ -31,6 +31,21 @@ sources, and records the failure modes that are silent rather than loud.
   AIC, the mapping from biological question to statistical test, and the
   pseudotime-comparability caveat that applies directly to the reference study.
 
+Rationale and background (written after the analysis ran):
+
+- [`ANALYSIS_RATIONALE.md`](ANALYSIS_RATIONALE.md): every major decision in two
+  passes — what was decided from the data alone, and what changed after reading
+  the two source papers, including where the first pass was wrong.
+- [`BACKGROUND_FOR_BIOLOGISTS.md`](BACKGROUND_FOR_BIOLOGISTS.md): batch effects
+  and Harmony from first principles, for a reader without a computational
+  background — including when correction destroys the experiment.
+- [`DOUBLETS_AND_SCRUBLET.md`](DOUBLETS_AND_SCRUBLET.md): what a doublet is, how
+  Scrublet works, and the measured bias by which it removed this project's own
+  populations of interest at up to twice the background rate.
+- [`UMAP_AND_FIGURES.md`](UMAP_AND_FIGURES.md): how the UMAP is built from
+  counts, what it does and does not mean, how to read dot plots and feature
+  plots, and why cluster-marker p-values are a ranking device, not a test.
+
 Supporting documents:
 
 - [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md): **what was actually executed** —
