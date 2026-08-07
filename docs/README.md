@@ -1,5 +1,16 @@
 # Documentation Index
 
+> **Reference material, not a record of what was run.** The pages below
+> describe tools and the reference study's design. They do **not** imply that
+> every tool described here was used in the analysis in `analysis/` — most were
+> not. For what was actually executed, with real parameters and cell counts,
+> see **[`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md)**, which is generated from
+> the pipeline's own outputs and states tool-by-tool which were used.
+>
+> Short version: of the five tools documented here, only **Scrublet** was used.
+> SoupX, scds, Slingshot and tradeSeq were **not**. `PIPELINE_AS_RUN.md` also
+> records where the executed analysis departs from the two source publications.
+
 One schematic per tool. Each file states what the tool consumes and returns,
 gives a `flowchart` of its internal decisions, lists its parameters and their
 sources, and records the failure modes that are silent rather than loud.
@@ -22,6 +33,13 @@ sources, and records the failure modes that are silent rather than loud.
 
 Supporting documents:
 
+- [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md): **what was actually executed** —
+  per-dataset parameters, cell counts, batch decisions, which of the tools
+  above were used, and how the analysis diverges from the source papers.
+  Generated from the pipeline's artefacts; regenerate with
+  `analysis/scripts/05_write_pipeline_as_run.py`.
+- [`../analysis/README.md`](../analysis/README.md): the full analysis report
+  for the primary (mouse) dataset, including QC tables and output locations.
 - [`../WORKFLOW.md`](../WORKFLOW.md): the end-to-end sequence, ordering
   constraints, subset-and-recluster loop, lineage-trace calling, and quality
   control acceptance order.

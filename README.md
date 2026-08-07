@@ -18,6 +18,31 @@ The reference point is **Niethamer et al., *Cell Stem Cell* 2025** — a longitu
 
 ---
 
+## What has actually been run
+
+The documents above are **notes and a plan**. An analysis has since been
+executed, and it does **not** use every tool listed here.
+
+- **[`docs/PIPELINE_AS_RUN.md`](docs/PIPELINE_AS_RUN.md)** — the authoritative
+  record of what was executed: real parameters, cell counts, batch decisions,
+  which tools were used, and how it diverges from the source papers. Generated
+  from the pipeline's own outputs.
+- **[`analysis/README.md`](analysis/README.md)** — full report for the primary
+  dataset. **[`analysis/GSE178360/README.md`](analysis/GSE178360/README.md)** —
+  the second dataset.
+- **[`analysis/scripts/`](analysis/scripts/)** — the pipeline itself.
+
+| | Executed |
+|---|---|
+| Framework | **Python / scanpy** (no R, no Seurat — R is unavailable in this environment) |
+| Datasets | **GSE262927** mouse, 33 samples, 162,175 cells, 29 clusters · **GSE178360** human, 3 samples, 27,729 cells, 31 clusters |
+| Of the six tools below | only **Scrublet** was used. SoupX, scds, Slingshot and tradeSeq were **not**. |
+| Not done | ambient-RNA correction, trajectory/pseudotime, trajectory DE, cell-cycle regression |
+
+`raw_data/` is never modified and is not committed.
+
+---
+
 ## 1. Toolbox
 
 Six tools, each owning one decision the others cannot make.
