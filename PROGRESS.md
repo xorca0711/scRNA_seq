@@ -33,8 +33,9 @@ leads, `README.md` is a landing page for the executed analysis, and
 | Pipeline speedups (PCA, scan, threads) | **DONE** — verified output-identical |
 | Portfolio restructure (`FINDINGS.md`, README rewrite, root tidy-up) | **DONE** |
 
-Branch: `scrna-adaptive-pipeline` → see `git log`. PR #1 merged; **PR #2 open**:
-https://github.com/xorca0711/scRNA_seq/pull/2
+Branch: `main` — everything is merged. PR #1 and PR #2
+(https://github.com/xorca0711/scRNA_seq/pull/2) are both merged; the
+`scrna-adaptive-pipeline` branch has no unmerged work.
 
 ---
 
