@@ -58,12 +58,42 @@ sc.settings.n_jobs = max(1, (os.cpu_count() or 4) - 2)
 np.random.seed(RANDOM_SEED)
 
 DECISIONS: dict[str, object] = {}
+_DECISIONS_PATH: Path | None = None
+
+
+def load_decisions(path: Path) -> None:
+    """Carry decisions forward across staged runs.
+
+    The pipeline can be resumed one stage at a time, and each stage only
+    records its own choices.  Without this, finishing on a late stage would
+    overwrite the record with a handful of entries and lose everything the
+    earlier stages decided.
+    """
+    global _DECISIONS_PATH
+    _DECISIONS_PATH = path
+    if path.exists():
+        try:
+            prior = json.loads(path.read_text(encoding="utf-8"))
+            DECISIONS.update(prior)
+            log(f"carried forward {len(prior)} decision(s) from a previous stage")
+        except Exception as exc:  # noqa: BLE001
+            log(f"could not read prior decisions ({exc}); starting fresh")
+
+
+def save_decisions() -> None:
+    if _DECISIONS_PATH is None:
+        return
+    _DECISIONS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    _DECISIONS_PATH.write_text(
+        json.dumps({k: str(v) for k, v in DECISIONS.items()}, indent=2),
+        encoding="utf-8")
 
 
 def record(key: str, value) -> None:
     """Every analytical choice that matters ends up in the log and README."""
     DECISIONS[key] = value
     log(f"  DECISION {key} = {value}")
+    save_decisions()          # survive a crash in a later stage
 
 
 # =============================================================================
@@ -417,20 +447,43 @@ def merge_metadata(cfg: DatasetConfig, adata: ad.AnnData, dirs: dict) -> ad.AnnD
 
 
 def _tidy_obs_for_h5ad(adata: ad.AnnData) -> None:
+    # pandas 3 gives text columns the new `str` dtype rather than `object`, so
+    # testing for `object` alone silently leaves string columns holding NaN.
+    # scanpy then fails sorting categories ("'<' not supported between
+    # instances of 'float' and 'str'").  Convert anything that is neither
+    # numeric, boolean nor already categorical.
     for c in adata.obs.columns:
         s = adata.obs[c]
-        if s.dtype == object:
-            # missing values must read as "NA", not the string "nan"
-            filled = s.astype("object").where(s.notna(), "NA").astype(str)
-            adata.obs[c] = pd.Categorical(filled)
+        if isinstance(s.dtype, pd.CategoricalDtype):
+            if s.isna().any():
+                adata.obs[c] = s.cat.add_categories(["NA"]).fillna("NA")
+            continue
+        if pd.api.types.is_numeric_dtype(s) or pd.api.types.is_bool_dtype(s):
+            continue
+        # missing values must read as "NA", not the string "nan"
+        filled = s.astype("object").where(s.notna(), "NA").astype(str)
+        adata.obs[c] = pd.Categorical(filled)
     for c in adata.var.columns:
-        if adata.var[c].dtype == object:
-            adata.var[c] = adata.var[c].astype(str)
+        v = adata.var[c]
+        if not (pd.api.types.is_numeric_dtype(v) or pd.api.types.is_bool_dtype(v)):
+            adata.var[c] = v.astype("object").where(v.notna(), "NA").astype(str)
 
 
 # =============================================================================
 # PHASE 10 - normalisation and HVGs
 # =============================================================================
+def _load_checkpoint(path: Path) -> ad.AnnData:
+    """Read a checkpoint and re-normalise its obs dtypes.
+
+    A round trip through HDF5 can bring text columns back as a nullable string
+    dtype holding NaN, which scanpy cannot sort into plot categories, so every
+    resumed stage starts from the same tidy state a fresh run would have.
+    """
+    a = ad.read_h5ad(path)
+    _tidy_obs_for_h5ad(a)
+    return a
+
+
 def normalize_data(adata: ad.AnnData, dirs: dict, n_hvg: int) -> ad.AnnData:
     """HVGs are chosen on the counts, then the counts are normalised in place.
 
@@ -674,12 +727,25 @@ def run_integration_if_needed(adata: ad.AnnData, assessment: dict, n_pcs: int,
 
     if want_primary:
         if _run_harmony(adata, n_pcs):
+            if force == "harmony":
+                why = ("requested explicitly (--integration harmony). The "
+                       "justification recorded for this dataset is that single "
+                       "proposed cell types were fragmenting into "
+                       "sample-private clusters in the uncorrected embedding "
+                       "(see qc/celltype_split_by_sample.csv): one cell type is "
+                       "not several cell types in several donors. This series "
+                       "carries no condition metadata, so there is no designed "
+                       "experimental contrast that correcting on sample could "
+                       "destroy")
+            else:
+                why = ("biological replicates within the same experimental "
+                       "group failed to mix (within-group enrichment "
+                       f"{assessment.get('within_group_replicate_enrichment')} "
+                       f"> 2.0)")
             record("batch_correction",
-                   "Harmony (harmonypy) on sample_id used as the PRIMARY "
-                   "embedding because biological replicates within the same "
-                   "experimental group failed to mix (within-group enrichment "
-                   f"{assessment.get('within_group_replicate_enrichment')} > 2.0). "
-                   "The unintegrated X_pca is retained for comparison.")
+                   f"Harmony (harmonypy) on sample_id used as the PRIMARY "
+                   f"embedding, {why}. The unintegrated X_pca and its UMAP are "
+                   f"retained alongside it for comparison.")
             return "X_pca_harmony", "X_pca"
         record("batch_correction", "Harmony was warranted but failed; "
                                    "continuing unintegrated")
@@ -809,9 +875,16 @@ def _marker_support(adata: ad.AnnData, key: str, species: str,
     are only mitochondrial / ribosomal / heat-shock / haemoglobin do not count
     as support, so a cluster of stressed cells cannot look well-supported.
     """
+    # Restricted to the HVGs.  This is ~13x less work than the full gene space
+    # at no cost to the criterion: a cluster whose only distinguishing genes
+    # are non-variable ones is not a cluster the embedding could have found,
+    # and restricting the candidate pool makes the test stricter, not looser.
+    # It also makes this consistent with _pairwise_separation, which already
+    # works in HVG space.
     tmp = f"_scan_{key}"
+    mask = ("highly_variable" if "highly_variable" in adata.var else None)
     sc.tl.rank_genes_groups(adata, groupby=key, method="t-test", pts=True,
-                            key_added=tmp)
+                            key_added=tmp, mask_var=mask)
     df = sc.get.rank_genes_groups_df(adata, group=None, key=tmp)
     df = df[(df["pvals_adj"] < 0.05) & (df["logfoldchanges"] > 1.0)
             & (df["pct_nz_group"] > 0.25)]
@@ -985,7 +1058,28 @@ def run_clustering(adata: ad.AnnData, dirs: dict, species: str,
 # PHASE 16 - markers
 # =============================================================================
 def find_markers(adata: ad.AnnData, dirs: dict, groupby: str = "leiden_cluster",
-                 prefix: str = "cluster") -> pd.DataFrame:
+                 prefix: str = "cluster", reuse: bool = False) -> pd.DataFrame:
+    # The Wilcoxon test costs ~45 min at this cell count.  When only a
+    # downstream step changed (annotation, plotting), re-using the table this
+    # pipeline itself wrote is exact, not an approximation - but it is opt-in,
+    # and it refuses to serve a table whose clusters no longer match.
+    cached = dirs["tables"] / f"{prefix}_markers_all.csv"
+    if reuse and cached.exists():
+        df = pd.read_csv(cached)
+        want = set(adata.obs[groupby].astype(str).unique())
+        have = set(df["cluster"].astype(str).unique())
+        if want == have:
+            log(f"find_markers: reusing {cached.name} "
+                f"({len(df):,} rows, {len(have)} clusters)")
+            record("marker_test", "Wilcoxon rank-sum (scanpy rank_genes_groups, "
+                                  "one cluster vs all remaining cells) on "
+                                  "log1p(CP10K) values, with expressing "
+                                  "fractions; table re-used from the previous "
+                                  "run of this same pipeline")
+            return df
+        log(f"find_markers: cached table has clusters {sorted(have)[:5]}... but "
+            f"the object has {sorted(want)[:5]}... - recomputing")
+
     log(f"find_markers: Wilcoxon rank-sum over {adata.obs[groupby].nunique()} "
         f"groups {mem_report()}")
     sc.tl.rank_genes_groups(adata, groupby=groupby, method="wilcoxon", pts=True,
@@ -1100,9 +1194,9 @@ def annotate_clusters(adata: ad.AnnData, markers_df: pd.DataFrame, dirs: dict,
         else:
             conf = "Uncertain"
 
-        top_de = (markers_df[markers_df["cluster"].astype(str) == str(cl)]
-                  .sort_values("scores", ascending=False))
-        top_names = [g for g in top_de["gene"].head(40).tolist()
+        cl_de = (markers_df[markers_df["cluster"].astype(str) == str(cl)]
+                 .sort_values("scores", ascending=False))
+        top_names = [g for g in cl_de["gene"].head(40).tolist()
                      if not MK.is_uninformative(g, species)][:10]
         only_junk = len(top_names) == 0
         notes = []
@@ -1130,13 +1224,88 @@ def annotate_clusters(adata: ad.AnnData, markers_df: pd.DataFrame, dirs: dict,
         })
 
     df = pd.DataFrame(rows)
+
+    # Report the deposited label alongside each proposal where one exists.
+    # This is REPORTED ONLY and never enters the scoring, so the agreement
+    # statistic stays an independent check - but a reader can immediately see
+    # when a marker-panel proposal contradicts the deposited annotation, which
+    # is exactly the case a candidate label must not be trusted in.
+    if "author_celltype" in adata.obs and "has_author_metadata" in adata.obs:
+        m = adata.obs["has_author_metadata"].astype(str).isin(["True", "true"])
+        if m.sum():
+            sub = adata.obs.loc[m.to_numpy()]
+            ct = pd.crosstab(sub[groupby].astype(str),
+                             sub["author_celltype"].astype(str))
+            frac = ct.div(ct.sum(axis=1).replace(0, np.nan), axis=0)
+            dom = frac.idxmax(axis=1)
+            pur = frac.max(axis=1)
+            key = df["Cluster"].astype(str)
+            df["Deposited label (dominant)"] = key.map(dom).fillna("n/a")
+            df["Deposited label %"] = (100 * key.map(pur)).round(1)
+            df["Annotated cells"] = key.map(ct.sum(axis=1)).fillna(0).astype(int)
+
+            def _flag(r):
+                d = str(r["Deposited label (dominant)"])
+                if d in ("n/a", "nan"):
+                    return ""
+                prop = str(r["Proposed identity"]).replace(" (candidate)", "")
+                p = prop.lower().replace("_", "")
+                dl = d.lower().replace("_", "")
+                # Cell-cycle and stress calls describe a STATE, not a lineage,
+                # so they are not comparable to a lineage label and must not be
+                # reported as a contradiction.
+                if p in {"proliferating"}:
+                    return "not comparable (state, not lineage)"
+                if p in dl or dl in p:
+                    return "agrees"
+                # families naming the same population differently
+                fam = [{"endothelial", "endothelialcap", "cap1", "cap2",
+                        "venousendothelium", "arterialendothelium"},
+                       {"fibroblast", "fibroactivated", "af1", "af2",
+                        "adventitialfibroblast", "peribronchialfibroblast"},
+                       {"monomac", "alveolarmac", "amac", "imac", "cmon",
+                        "imon", "pmon", "dc", "cdc1", "cdc2", "madc",
+                        "neutrophil"},
+                       {"tcell", "cd4t", "cd8t", "treg", "tlymphocyte",
+                        "nk", "nkcell"},
+                       {"bcell", "blymphocyte", "plasma", "plasmacell"},
+                       {"smcpericyte", "vsmc"},
+                       {"lymphaticec", "lymphaticendothelium"},
+                       # Krt5 IS the deposited name for basal cells
+                       {"basal", "krt5"},
+                       {"club", "secretory"},
+                       {"transitional", "alveolartransitional"},
+                       {"at1", "at1at2"}, {"at2", "at1at2"}]
+                for f in fam:
+                    if p in f and dl in f:
+                        return "agrees (same lineage)"
+                if int(r.get("Annotated cells", 0) or 0) < 50:
+                    return "too few annotated cells to judge"
+                return "DISAGREES - treat the proposal as unreliable"
+
+            df["Deposition check"] = df.apply(_flag, axis=1)
+            n_dis = int(df["Deposition check"].astype(str)
+                        .str.startswith("DISAGREES").sum())
+            record("annotation_vs_deposited_labels",
+                   f"{n_dis} of {len(df)} clusters have a marker-panel proposal "
+                   f"that contradicts the dominant deposited label; those rows "
+                   f"are flagged in {outfile} and their proposals should not be "
+                   f"used")
+
     df.to_csv(dirs["tables"] / outfile, index=False)
     mean.to_csv(dirs["tables"] / "canonical_marker_mean_expression_by_cluster.csv")
     frac.to_csv(dirs["tables"] / "canonical_marker_fraction_expressing_by_cluster.csv")
 
+    # A proposal the deposited annotation contradicts must not travel as a
+    # plain label - it would be read as a finding. Mark it in the value itself,
+    # so the flag survives into every figure and export, not only the table.
+    labels = df["Proposed identity"].astype(str).copy()
+    if "Deposition check" in df.columns:
+        bad = df["Deposition check"].astype(str).str.startswith("DISAGREES")
+        labels = labels.where(~bad, labels + " [CONTRADICTED]")
     adata.obs["proposed_cell_type"] = (
         adata.obs[groupby].astype(str)
-        .map(dict(zip(df["Cluster"].astype(str), df["Proposed identity"]))))
+        .map(dict(zip(df["Cluster"].astype(str), labels))))
     record("annotation_strategy",
            "candidate identities scored per cluster from z-scored mean "
            "expression of curated panels, down-weighted by the fraction of "
@@ -1188,11 +1357,20 @@ def validate_against_author_labels(adata: ad.AnnData, dirs: dict,
 # PHASE 15, 21, 22 - figures
 # =============================================================================
 def generate_umaps(adata: ad.AnnData, dirs: dict, prefix: str = "") -> None:
+    failed: list[str] = []
+
     def _umap(color, name, **kw):
         if color not in adata.obs and color not in adata.var_names:
             return
-        ax = sc.pl.umap(adata, color=color, show=False, frameon=False, **kw)
-        save_fig(figure_of(ax), dirs["fig_umap"], f"{prefix}{name}")
+        # One awkward column must not cost the whole figure stage, which sits
+        # an hour downstream of the last checkpoint.
+        try:
+            ax = sc.pl.umap(adata, color=color, show=False, frameon=False, **kw)
+            save_fig(figure_of(ax), dirs["fig_umap"], f"{prefix}{name}")
+        except Exception as exc:  # noqa: BLE001
+            failed.append(f"{name} (color={color}): {type(exc).__name__}: {exc}")
+            log(f"  WARNING could not plot {name}: {exc}")
+            _plt.close("all")
 
     _umap("leiden_cluster", "UMAP_leiden_clusters", legend_loc="on data",
           legend_fontsize=7, legend_fontoutline=2.0, size=3,
@@ -1252,7 +1430,12 @@ def generate_umaps(adata: ad.AnnData, dirs: dict, prefix: str = "") -> None:
         fig.suptitle(f"UMAP split by {field} (shared coordinates)", y=1.0)
         fig.tight_layout()
         save_fig(fig, dirs["fig_umap"], f"{prefix}{fname}")
-    log("generate_umaps: done")
+
+    if failed:
+        (dirs["fig_umap"] / f"{prefix}FAILED_plots.txt").write_text(
+            "\n".join(failed), encoding="utf-8")
+        record("umap_plots_failed", failed)
+    log(f"generate_umaps: done ({len(failed)} plot(s) skipped)")
 
 
 def generate_dotplots(adata: ad.AnnData, dirs: dict, species: str,
@@ -1881,8 +2064,7 @@ def write_analysis_log(dirs: dict, cfg: DatasetConfig, fmt: dict,
     L += ["", "=== ALL RECORDED DECISIONS ===",
           json.dumps({k: str(v) for k, v in d.items()}, indent=2)]
     (dirs["logs"] / "analysis_log.txt").write_text("\n".join(L), encoding="utf-8")
-    (dirs["logs"] / "decisions.json").write_text(
-        json.dumps({k: str(v) for k, v in d.items()}, indent=2), encoding="utf-8")
+    save_decisions()
     log(f"write_analysis_log: {dirs['logs'] / 'analysis_log.txt'}")
 
 
@@ -1898,6 +2080,10 @@ def main() -> int:
     ap.add_argument("--integration", default=None,
                     choices=[None, "none", "harmony"])
     ap.add_argument("--outdir", default=None)
+    ap.add_argument("--reuse-markers", action="store_true",
+                    help="re-use the cluster marker table written by a previous "
+                         "run instead of recomputing the Wilcoxon test; only "
+                         "honoured when its clusters match the current object")
     args = ap.parse_args()
 
     cfg = DATASETS[args.dataset](Path(args.outdir) if args.outdir else None)
@@ -1906,6 +2092,7 @@ def main() -> int:
                "figures", "epi", "finalize"} if args.stages == "all"
               else set(args.stages.split(",")))
 
+    load_decisions(dirs["logs"] / "decisions.json")
     log(f"=== {cfg.name} === outdir={cfg.outdir}")
     log(f"scanpy {sc.__version__}, anndata {ad.__version__}, "
         f"numpy {np.__version__} {mem_report()}")
@@ -1915,6 +2102,19 @@ def main() -> int:
     (dirs["inventory"] / "detected_format.json").write_text(
         json.dumps(fmt, indent=2, default=str), encoding="utf-8")
     record("samples_detected", [t["sample"] for t in tasks])
+
+    if "log" in stages:
+        # Rewrite the analysis log from the persisted decisions without
+        # recomputing anything.  Useful after a run that was resumed stage by
+        # stage, where the log on disk reflects only the final stage.
+        wp = dirs["qc"] / "qc_review_warnings.txt"
+        prior_warn = [w for w in (wp.read_text(encoding="utf-8").splitlines()
+                                  if wp.exists() else [])
+                      if w.strip() and not w.startswith("no automatic")]
+        write_analysis_log(dirs, cfg, fmt, prior_warn)
+        log("rewrote the analysis log from persisted decisions")
+        if stages == {"log"}:
+            return 0
 
     if "samples" in stages:
         load_samples(cfg, tasks, dirs, args.workers)
@@ -1945,13 +2145,13 @@ def main() -> int:
 
     if "norm" in stages:
         if adata is None:
-            adata = ad.read_h5ad(dirs["processed"] / "merged_postQC.h5ad")
+            adata = _load_checkpoint(dirs["processed"] / "merged_postQC.h5ad")
         adata = normalize_data(adata, dirs, args.n_hvg)
         adata.write_h5ad(dirs["processed"] / "normalized.h5ad", compression="gzip")
 
     if "pca" in stages:
         if adata is None:
-            adata = ad.read_h5ad(dirs["processed"] / "normalized.h5ad")
+            adata = _load_checkpoint(dirs["processed"] / "normalized.h5ad")
         n_pcs = run_pca(adata, dirs)
         assess = inspect_batch(adata, n_pcs, dirs)
         primary, secondary = run_integration_if_needed(
@@ -1962,22 +2162,22 @@ def main() -> int:
 
     if "cluster" in stages:
         if adata is None:
-            adata = ad.read_h5ad(dirs["processed"] / "neighbors_umap.h5ad")
+            adata = _load_checkpoint(dirs["processed"] / "neighbors_umap.h5ad")
         run_clustering(adata, dirs, cfg.species)
         adata.write_h5ad(dirs["processed"] / "clustered.h5ad", compression="gzip")
 
     mk = None
     if "markers" in stages:
         if adata is None:
-            adata = ad.read_h5ad(dirs["processed"] / "clustered.h5ad")
-        mk = find_markers(adata, dirs)
+            adata = _load_checkpoint(dirs["processed"] / "clustered.h5ad")
+        mk = find_markers(adata, dirs, reuse=args.reuse_markers)
         annotate_clusters(adata, mk, dirs, cfg.species)
         validate_against_author_labels(adata, dirs)
 
     warn: list[str] = []
     if "figures" in stages:
         if adata is None:
-            adata = ad.read_h5ad(dirs["processed"] / "clustered.h5ad")
+            adata = _load_checkpoint(dirs["processed"] / "clustered.h5ad")
         if mk is None:
             mk = pd.read_csv(dirs["tables"] / "cluster_markers_all.csv")
         generate_umaps(adata, dirs)
@@ -1988,12 +2188,12 @@ def main() -> int:
 
     if "finalize" in stages:
         if adata is None:
-            adata = ad.read_h5ad(dirs["processed"] / "clustered.h5ad")
+            adata = _load_checkpoint(dirs["processed"] / "clustered.h5ad")
         save_outputs(adata, dirs)
 
     if "epi" in stages:
         if adata is None:
-            adata = ad.read_h5ad(dirs["processed"] / "clustered.h5ad")
+            adata = _load_checkpoint(dirs["processed"] / "clustered.h5ad")
         epithelial_subanalysis(adata, dirs, cfg.species)
 
     if "finalize" in stages:

@@ -50,7 +50,11 @@ def gse262927(outdir: Path | None = None) -> DatasetConfig:
         raw_dir=RAW / "GSE262927" / "GSE262927_RAW",
         h5_glob="GSM*.h5",
         species="mouse",
-        outdir=outdir or ANALYSIS,
+        # Each series owns a subdirectory, so the two are symmetric and nothing
+        # at the top level of analysis/ is series-specific. This departs from
+        # the canonical paths in the original brief (analysis/figures/...,
+        # analysis/processed/final_clustered.h5ad); see analysis/LAYOUT.md.
+        outdir=outdir or (ANALYSIS / "GSE262927"),
         sample_regex=r"^GSM\d+_(.+)\.h5$",
         metadata_csv=RAW / "GSE262927" / "GSE262927_CellMetaData.csv",
         non_gene_features=["SiteA", "SiteB"],

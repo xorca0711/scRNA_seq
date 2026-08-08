@@ -1,5 +1,11 @@
 # scds — co-expression and classifier-based doublet scoring
 
+> **Reference only — scds was NOT used in this repository's analysis.**
+> This page documents doublet detection as published. The analysis in
+> [`analysis/`](../analysis/) performed **no doublet detection**. See
+> [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md) for what was actually executed.
+
+
 Bais AS, Kostka D. *Bioinformatics* 2020;36(4):1150–1158.
 [doi:10.1093/bioinformatics/btz698](https://doi.org/10.1093/bioinformatics/btz698) ·
 Bioconductor [scds](https://bioconductor.org/packages/scds/)

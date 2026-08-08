@@ -1,0 +1,17 @@
+Cluster,n_cells,Proposed identity,Runner-up,Panel score,Runner-up score,DE corroboration,Supporting markers,Conflicting markers,Top data-derived genes,Confidence,Notes
+0,890,Endothelial (candidate),Endothelial_cap,5.446,3.843,1.0,"Pecam1, Cdh5, Kdr, Emcn, Cldn5",,"Calcrl, Cdh5, Ramp2, Ctla2a, Cldn5, Ptprb, Pecam1, Tspan7, Egfl7, Epas1",High,
+1,334,Club (candidate),Mesothelium,5.247,1.807,1.0,"Scgb1a1, Scgb3a2, Scgb3a1, Cyp2f2",,"Scgb1a1, Pigr, Cldn10, Pglyrp1, Elapor1, Cyp2f2, Gabrp, Cp, Tent5c, Scgb3a2",High,
+2,919,AT1 (candidate),Pan_epithelial,5.845,1.743,1.5,"Ager, Pdpn, Hopx, Cav1, Aqp5, Rtkn2",,"Vegfa, Pmp22, Spock2, Abca5, Ndnf, Col4a3, Scd2, Sema3e, Col4a4, Ndst1",High,
+3,1455,AT1 (candidate),Pan_epithelial,5.352,1.644,1.5,"Ager, Pdpn, Hopx, Cav1, Aqp5, Rtkn2",,"Col4a4, Akap5, Lmo7, Rtkn2, Col4a3, Hs2st1, Emp2, Ager, Cldn18, Qk",High,
+4,392,AT2 (candidate),B_cell,5.066,1.354,1.5,"Sftpc, Sftpb, Abca3, Lamp3, Slc34a2, Cxcl15",,"Ifi27l2a, Isg15, Ly6e, Bst2, Irf7, Ctsh, Npc2, Lcn2, H2-K1, Xaf1",High,
+5,1500,Ciliated (candidate),Pan_epithelial,4.948,0.714,1.0,"Foxj1, Tppp3, Dynlrb2, Ccdc153",,"Ccdc153, Tmem212, Fam183b, Cfap126, 1110017D15Rik, Dynlrb2, 1700016K19Rik, Foxj1, Rsph1, Elof1",High,
+6,37,Ciliated (candidate),Endothelial,4.093,3.311,0.75,"Foxj1, Tppp3, Dynlrb2, Ccdc153","Pecam1, Cdh5, Kdr, Emcn, Cldn5","Pltp, Clic6, Dnah12, 3300002A11Rik, Pecam1, Hydin, Mns1, Efcab10, Smim5, Gm1673",High,co-expresses markers of more than one lineage - check for doublets
+7,1462,AT1 (candidate),Ciliated,4.71,0.668,1.5,"Ager, Pdpn, Hopx, Cav1, Aqp5, Rtkn2",,"Hopx, Tmsb4x, S100a6, Cryab, Sparc, Ager, Myl6, Cldn18, Prdx6, Vamp8",High,
+8,174,Pan_immune (candidate),T_cell,6.239,3.351,1.0,Ptprc,,"Cd52, Laptm5, Ptprc, Coro1a, Arhgdib, Srgn, Fxyd5, Cbr2, Mt1, Ccdc153",Low,
+9,3208,AT2 (candidate),B_cell,5.828,1.229,1.5,"Sftpc, Sftpb, Abca3, Lamp3, Slc34a2, Cxcl15",,"Lamp3, Slc34a2, Cxcl15, Lyz2, Chil1, Sftpc, Scd1, Hc, Sftpb, Dram1",High,
+10,208,AT2 (candidate),Mono_Mac,4.633,0.748,1.5,"Sftpc, Sftpb, Abca3, Lamp3, Slc34a2, Cxcl15",,"Hc, Malat1, Sftpc, Snhg11, Ank3, Scgb1a1, Neat1, Slc34a2, Atp8a1, Sftpa1",High,
+11,829,AT2 (candidate),B_cell,4.49,1.152,1.25,"Sftpc, Sftpb, Abca3, Lamp3, Slc34a2, Cxcl15",,"Ctsh, Slc12a2, Cd74, Sftpd, Ctsc, Clu, Muc1, H2-Aa, H2-Ab1, H2-Eb1",High,
+12,303,Proliferating (candidate),Transitional,3.732,3.527,0.0,"Mki67, Top2a, Ccnb1","Krt8, Krt18, Krt19, Cldn4, Sfn","Clu, Gapdh, Tubb5, Ran, Jpt1, Krt8, Krt18, Pfn1, Rbm3, Tceal9",Low,co-expresses markers of more than one lineage - check for doublets
+13,1426,Basal (candidate),Transitional,4.847,2.405,0.75,"Krt5, Krt14, Trp63, Dapl1",,"Fxyd3, Aqp3, Cyp2f2, Tpt1, Perp, Dapl1, Aqp4, Gstm2, Rack1, Eef1b2",High,
+14,123,Fibroblast (candidate),SMC_pericyte,5.482,3.59,1.0,"Col1a1, Col1a2, Dcn, Pdgfra, Col3a1",,"Bgn, Sparcl1, Col3a1, Cst3, Ppp1r14a, Gpx3, Col1a2, Plac9a, Mgp, Serping1",High,
+15,73,Basal (candidate),Club,3.827,2.829,0.75,"Krt5, Krt14, Dapl1",,"Tpt1, Cyp2f2, Fxyd3, Rack1",High,

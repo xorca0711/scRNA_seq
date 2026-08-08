@@ -17,7 +17,22 @@ from pathlib import Path
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from pipeline_utils import ANALYSIS, DATASETS  # noqa: E402
+from pipeline_utils import ANALYSIS, DATASETS, REPO  # noqa: E402
+
+
+def _repo_rel(p) -> str:
+    """Render a path relative to the repo so reports carry no machine paths."""
+    s = str(p)
+    try:
+        return Path(s).relative_to(REPO).as_posix()
+    except ValueError:
+        # Recorded on a machine where the repo lived elsewhere: rebase at the
+        # first repo-level directory name found in the path.
+        parts = Path(s).parts
+        for anchor in ("raw_data", "analysis", "docs"):
+            if anchor in parts:
+                return Path(*parts[parts.index(anchor):]).as_posix()
+        return s
 
 
 def _read_json(p: Path) -> dict:
@@ -141,7 +156,7 @@ The raw data under `raw_data/` was opened read-only and never modified.
 `analysis/raw_data_inventory.txt` and `.csv` hold the full recursive scan of
 `raw_data/`. For this dataset:
 
-- Directory: `{cfg.raw_dir}`
+- Directory: `{_repo_rel(cfg.raw_dir)}`
 - Input format: **{d.get('input_format', '?')}**
 - Sample files: **{fmt.get('n_sample_files', '?')}**
 - Features per file: {fmt.get('n_features', '?')}
@@ -180,7 +195,7 @@ at any point.
 
 ## 4. Metadata structure
 
-{d.get('metadata_table', 'none')}
+{_repo_rel(d.get('metadata_table', 'none'))}
 
 - Join key: {d.get('metadata_join_key', 'n/a')}
 - Cells carrying author metadata: {d.get('cells_with_author_metadata', 'n/a')}
@@ -383,11 +398,11 @@ scRNA-seq ANALYSIS COMPLETE — {dataset}
 =====================================================
 
 RAW DATA
-Directory:        {cfg.raw_dir}
+Directory:        {_repo_rel(cfg.raw_dir)}
 Detected format:  {d.get('input_format', '?')}
 Species:          {d.get('species', '?')}
 Samples:          {fmt.get('n_sample_files', '?')}
-Metadata:         {d.get('metadata_table', 'none')}
+Metadata:         {_repo_rel(d.get('metadata_table', 'none'))}
 
 QC
 Cells loaded:     {n_before:,}
@@ -424,6 +439,12 @@ QC WARNINGS:
 
 
 def main() -> int:
+    # The Windows console here is on a legacy codepage that cannot encode the
+    # punctuation used in the report; the files themselves are always UTF-8.
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:  # noqa: BLE001
+        pass
     ap = argparse.ArgumentParser()
     ap.add_argument("--dataset", required=True, choices=sorted(DATASETS))
     args = ap.parse_args()

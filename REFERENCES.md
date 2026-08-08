@@ -1,6 +1,6 @@
 # References
 
-The primary paper, followed by the five method papers that make up the non-Seurat components of its pipeline. Metadata verified against PubMed.
+The primary paper, the second-dataset paper, and the five method papers that make up the non-Seurat components of the primary paper's pipeline. Metadata verified against PubMed.
 
 ---
 
@@ -15,6 +15,17 @@ Preprint: *A longitudinal atlas of post-viral lung regeneration reveals persiste
 
 **Data:** GEO [GSE262927](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262927)
 **Mouse lines:** MMRRC 72089 (Car4<sup>CreERT2</sup>), 72090 (Ednrb<sup>CreERT2</sup>)
+
+---
+
+## Second dataset
+
+**Kadur Lakshminarasimha Murthy P, Sontake V, Tata A, et al.**
+*Human distal lung maps and lineage hierarchies reveal a bipotent progenitor.*
+**Nature** 2022;604(7904):111–119.
+DOI: [10.1038/s41586-022-04541-3](https://doi.org/10.1038/s41586-022-04541-3) · PMID [35355018](https://pubmed.ncbi.nlm.nih.gov/35355018/)
+
+**Data:** GEO [GSE178360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178360) — the three healthy-donor distal-lung samples analysed in [`analysis/GSE178360/`](analysis/GSE178360/README.md)
 
 ---
 

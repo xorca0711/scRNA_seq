@@ -6,7 +6,14 @@ influenza injury, following Niethamer et al., *Cell Stem Cell* 2025
 
 Per-tool schematics live in [`docs/`](docs/README.md). The annotated pipeline
 reference, including parameters the paper leaves unspecified, is
-[`scRNAseq_workflow_Niethamer2025.md`](scRNAseq_workflow_Niethamer2025.md).
+[`docs/scRNAseq_workflow_Niethamer2025.md`](docs/scRNAseq_workflow_Niethamer2025.md).
+
+> **This document describes the reference study's workflow, not the analysis in
+> this repository.** The analysis that was actually executed is a Python/scanpy
+> pipeline that follows this sequence only in part — it performs no ambient-RNA
+> correction, uses one doublet caller rather than two, and does no trajectory
+> analysis. See **[`docs/PIPELINE_AS_RUN.md`](docs/PIPELINE_AS_RUN.md)** for
+> what was really run, stage by stage, and where it diverges from the paper.
 
 ---
 

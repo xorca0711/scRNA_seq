@@ -1,0 +1,1 @@
+EXPLORATORY ONLY. Sample-level pseudobulk with n=2 homeostasis and n=23 infected samples. The homeostasis arm is not replicated within a group and is confounded with sex, so this is not a confirmatory differential-expression result.

@@ -6,6 +6,16 @@ PMID 39818203 · PMC11805657 · Preprint: bioRxiv 2024.05.24.595801
 
 **Data.** GEO **GSE262927**. Interactive browser and code links are given in the paper as shortened URLs (bit.ly/49kMFJa and bit.ly/3vqeXUZ respectively); resolve them from the published Data & Code Availability section.
 
+> **This is an annotated reference to the published method — not a record of
+> the analysis in this repository.** GSE262927 *was* analysed here, but with a
+> Python/scanpy pipeline that differs from the paper in several respects
+> (no SoupX, Scrublet only rather than scds + Scrublet, log-normalisation
+> rather than SCTransform, Leiden 0.3 rather than Louvain 1.0, and no
+> Slingshot/tradeSeq). It does agree with the paper on the most consequential
+> choice: no batch correction. See
+> [`docs/PIPELINE_AS_RUN.md`](docs/PIPELINE_AS_RUN.md) for the executed
+> parameters and a full divergence table.
+
 > ### ⚠ Filing correction
 > The paper is **already in this folder, under the wrong name.**
 > `Lv-2024-Alveolar-regeneration-by-airway-sec/Lv-2024-Alveolar-regeneration-by-airway-sec+Suppl.pdf` is not a Lv 2024 paper — it is **Niethamer et al. 2025**, main text plus supplement, 42 pages. The three spreadsheets beside it are that paper's supplementary tables, not Lv's:

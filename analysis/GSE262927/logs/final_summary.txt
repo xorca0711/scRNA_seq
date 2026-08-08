@@ -1,0 +1,47 @@
+
+=====================================================
+scRNA-seq ANALYSIS COMPLETE — GSE262927
+=====================================================
+
+RAW DATA
+Directory:        raw_data/GSE262927/GSE262927_RAW
+Detected format:  10x CellRanger HDF5 (v3 /matrix layout)
+Species:          mouse
+Samples:          33
+Metadata:         raw_data/GSE262927/GSE262927_CellMetaData.csv
+
+QC
+Cells loaded:     212,701
+Cells after QC:   169,807
+Cells removed:    42,894
+Doublets removed: 7,632
+
+ANALYSIS
+HVGs:             2500
+PCs used:         50 (variance-ratio elbow at 11, 90% cumulative variance at 51, bracketed to [20,50])
+Batch correction: not applied, and the optional supplementary Harmony embedding was skipped: correction is not warranted here (w
+Leiden resolution:0.3
+Final clusters:   29
+
+MAIN OUTPUTS
+Cluster UMAP:               X:\GitHub\scRNA_seq\analysis\GSE262927/figures/umap/UMAP_leiden_clusters.pdf
+Sample UMAP:                X:\GitHub\scRNA_seq\analysis\GSE262927/figures/umap/UMAP_sample.pdf
+Canonical marker dot plot:  X:\GitHub\scRNA_seq\analysis\GSE262927/figures/dotplots/canonical_marker_dotplot.pdf
+Cluster-marker dot plot:    X:\GitHub\scRNA_seq\analysis\GSE262927/figures/dotplots/cluster_marker_dotplot.pdf
+Cluster marker table:       X:\GitHub\scRNA_seq\analysis\GSE262927/tables/cluster_markers_all.csv
+Cell metadata:              X:\GitHub\scRNA_seq\analysis\GSE262927/tables/cell_metadata.csv
+Final processed object:     X:\GitHub\scRNA_seq\analysis\GSE262927/processed/final_clustered.h5ad
+Analysis script:            X:\GitHub\scRNA_seq\analysis/scripts/run_scrna_analysis.py
+README:                     X:\GitHub\scRNA_seq\analysis\GSE262927/README.md
+
+EPITHELIAL SUBANALYSIS:
+performed on 13333 cells from clusters ['10', '16', '18', '19']; 16 epithelial subclusters at Leiden resolution 0.6
+
+QC WARNINGS:
+  - cluster 12: median depth 1212 UMI is well below the dataset median (6657) - check whether this cluster is driven by depth
+  - cluster 23: median depth 1868 UMI is well below the dataset median (6657) - check whether this cluster is driven by depth
+  - cluster 23: 78% of its cells come from a single sample (EEM-scRNA-289) - may be sample-specific rather than a shared population
+  - cluster 24: median depth 2504 UMI is well below the dataset median (6657) - check whether this cluster is driven by depth
+  - cluster 27: median depth 1808 UMI is well below the dataset median (6657) - check whether this cluster is driven by depth
+  - cluster 4: median depth 855 UMI is well below the dataset median (6657) - check whether this cluster is driven by depth
+=====================================================

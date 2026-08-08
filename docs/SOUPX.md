@@ -1,5 +1,11 @@
 # SoupX — ambient RNA removal
 
+> **Reference only — SoupX was NOT used in this repository's analysis.**
+> This page documents ambient-RNA correction as published. The analysis in
+> [`analysis/`](../analysis/) performed **no ambient-RNA correction**. See
+> [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md) for what was actually executed.
+
+
 Young MD, Behjati S. *GigaScience* 2020;9(12):giaa151.
 [doi:10.1093/gigascience/giaa151](https://doi.org/10.1093/gigascience/giaa151) ·
 [github.com/constantAmateur/SoupX](https://github.com/constantAmateur/SoupX)
