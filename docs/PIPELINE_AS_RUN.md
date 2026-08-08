@@ -17,8 +17,8 @@ Re-generate it after any analysis run; do not hand-edit it.
 | [Scrublet](SCRUBLET.md) | **USED** | run per capture via `sc.pp.scrublet`, before merging |
 | [SoupX](SOUPX.md) | **NOT USED** | no ambient-RNA correction was applied to either dataset |
 | [scds](SCDS.md) | **NOT USED** | Scrublet was the only doublet caller; scds is R-only and R is unavailable here |
-| [Slingshot](SLINGSHOT.md) | **NOT USED** | no trajectory or pseudotime analysis was performed |
-| [tradeSeq](TRADESEQ.md) | **NOT USED** | follows from Slingshot not being run; no trajectory-based DE |
+| [Slingshot](SLINGSHOT.md) | **NOT USED** | not run in the main pipeline; the focused alveolar re-analysis (analysis/scripts/06_regeneration_focus.py) instead uses scanpy's PAGA + diffusion pseudotime for the AT2 -> AT1 trajectory |
+| [tradeSeq](TRADESEQ.md) | **NOT USED** | no trajectory-based DE was performed with any tool |
 
 ## What was NOT done
 
@@ -35,13 +35,13 @@ The raw (unfiltered) droplet matrices needed for SoupX are present for GSE178360
 
 *Reference tools: Slingshot, PAGA, DPT, Monocle*
 
-Not run. The AT2 -> transitional -> AT1 ordering discussed in the literature is NOT quantified anywhere in these outputs; the epithelial sub-analysis resolves the states as clusters only.
+Not run in the MAIN pipeline: the whole-atlas and epithelial sub-analysis outputs resolve the transitional states as clusters only. It WAS run in the focused re-analysis (analysis/scripts/06_regeneration_focus.py): PAGA topology plus diffusion pseudotime rooted in AT2, on the 25-sample annotated cohort. See analysis/GSE262927/regeneration_focus/.
 
 ### Trajectory-based differential expression
 
 *Reference tools: tradeSeq*
 
-Not run; depends on a trajectory that was not fitted.
+Not run; marker programmes are summarised along pseudotime bins in the focused re-analysis, but no formal trajectory-DE model was fitted.
 
 ### RNA velocity
 
@@ -98,7 +98,7 @@ where it departs from, the published work.
 | Normalisation | **SCTransform**, regressing mito/nFeature/nCount | normalize_total(1e4) + log1p, no regression |
 | Clustering | **Louvain, resolution 1.0** | **Leiden, resolution 0.3** |
 | Batch correction | **none - libraries merged directly** | **none** - same conclusion |
-| Trajectory | **Slingshot + tradeSeq** | **none** |
+| Trajectory | **Slingshot + tradeSeq** | **PAGA + diffusion pseudotime**, in the focused alveolar re-analysis only |
 | Cell filtering | thresholds **plus manual cluster curation** | thresholds only |
 
 **Agreement on the decision that mattered.** The authors performed no

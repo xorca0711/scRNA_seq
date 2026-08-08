@@ -29,7 +29,7 @@ The raw data under `raw_data/` was opened read-only and never modified.
 `analysis/raw_data_inventory.txt` and `.csv` hold the full recursive scan of
 `raw_data/`. For this dataset:
 
-- Directory: `C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW`
+- Directory: `raw_data/GSE262927/GSE262927_RAW`
 - Input format: **10x CellRanger HDF5 (v3 /matrix layout)**
 - Sample files: **33**
 - Features per file: 55361
@@ -67,7 +67,7 @@ at any point.
 
 ## 4. Metadata structure
 
-C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_CellMetaData.csv
+raw_data/GSE262927/GSE262927_CellMetaData.csv
 
 - Join key: (sample number parsed from orig.ident, bare 16nt barcode) - barcodes are not globally unique
 - Cells carrying author metadata: 107626 / 162175 (66.4%)

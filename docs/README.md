@@ -40,8 +40,9 @@ Rationale and background (written after the analysis ran):
   and Harmony from first principles, for a reader without a computational
   background — including when correction destroys the experiment.
 - [`DOUBLETS_AND_SCRUBLET.md`](DOUBLETS_AND_SCRUBLET.md): what a doublet is, how
-  Scrublet works, and the measured bias by which it removed this project's own
-  populations of interest at up to twice the background rate.
+  Scrublet works, and the two-round audit of whether it removed this project's
+  populations of interest — a crude gate said yes, a stricter gate overturned
+  it (AT0 flagged at 3.9% vs a 6.3% baseline).
 - [`UMAP_AND_FIGURES.md`](UMAP_AND_FIGURES.md): how the UMAP is built from
   counts, what it does and does not mean, how to read dot plots and feature
   plots, and why cluster-marker p-values are a ranking device, not a test.
@@ -58,7 +59,7 @@ Supporting documents:
 - [`../WORKFLOW.md`](../WORKFLOW.md): the end-to-end sequence, ordering
   constraints, subset-and-recluster loop, lineage-trace calling, and quality
   control acceptance order.
-- [`../scRNAseq_workflow_Niethamer2025.md`](../scRNAseq_workflow_Niethamer2025.md):
+- [`scRNAseq_workflow_Niethamer2025.md`](scRNAseq_workflow_Niethamer2025.md):
   the annotated pipeline reference — study design, stage-by-stage parameters,
   marker-gene annotation tables, and the twelve parameters the reference study
   leaves unspecified.

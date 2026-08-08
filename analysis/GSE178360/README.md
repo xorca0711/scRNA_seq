@@ -13,7 +13,7 @@ The raw data under `raw_data/` was opened read-only and never modified.
 `analysis/raw_data_inventory.txt` and `.csv` hold the full recursive scan of
 `raw_data/`. For this dataset:
 
-- Directory: `C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_RAW`
+- Directory: `raw_data/GSE178360/GSE178360_RAW`
 - Input format: **10x CellRanger HDF5 (v3 /matrix layout)**
 - Sample files: **3**
 - Features per file: 33538
@@ -181,7 +181,7 @@ stored as `obs['leiden_cluster']`. The other resolutions are retained as
 
 ## 16. Marker DE method
 
-Wilcoxon rank-sum (scanpy rank_genes_groups, one cluster vs all remaining cells) on log1p(CP10K) values, with expressing fractions
+Wilcoxon rank-sum (scanpy rank_genes_groups, one cluster vs all remaining cells) on log1p(CP10K) values, with expressing fractions; table re-used from the previous run of this same pipeline
 
 - `tables/cluster_markers_all.csv` — every gene, every cluster
 - `tables/cluster_markers_top20.csv` — top 20 per cluster by score

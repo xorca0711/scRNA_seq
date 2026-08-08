@@ -3,8 +3,10 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-08-08. **All planned work is complete.** Session paused at
-the user's request; nothing is running.
+Last updated: 2026-08-08. **All planned work is complete**, and the repository
+has been restructured as a portfolio: `FINDINGS.md` (results with figures) now
+leads, `README.md` is a landing page for the executed analysis, and
+`scRNAseq_workflow_Niethamer2025.md` moved to `docs/`. Nothing is running.
 
 ---
 
@@ -29,7 +31,7 @@ the user's request; nothing is running.
 | Lineage-tracing cohort (8 non-atlas samples) | **DONE** — CAP1 origin supported; CAP2 lines uninformative |
 | `analysis/` reorganised into two series subdirectories | **DONE** |
 | Pipeline speedups (PCA, scan, threads) | **DONE** — verified output-identical |
-| `docs/DOUBLETS_AND_SCRUBLET.md` | **DONE** |
+| Portfolio restructure (`FINDINGS.md`, README rewrite, root tidy-up) | **DONE** |
 
 Branch: `scrna-adaptive-pipeline` → see `git log`. PR #1 merged; **PR #2 open**:
 https://github.com/xorca0711/scRNA_seq/pull/2
