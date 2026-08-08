@@ -145,6 +145,45 @@ now reads as a deliberate choice rather than an omission.
 are generous upper-bound sets. The enrichment ratio is the meaningful number,
 not the absolute counts.)*
 
+### Follow-up: was the AT0 population actually lost? **No.**
+
+The enrichment above was measured with a deliberately crude gate - *any*
+non-zero `SFTPC` and `SCGB3A2`. That gate does not distinguish a real AT0 cell
+from an actual AT2 + club-cell doublet, which is precisely the thing it was
+being used to worry about. Re-measured with a definition that can tell them
+apart - `SFTPC+ SCGB3A2+ EPCAM+` **and** negative for `PTPRC`, `PECAM1` and
+`COL1A1` - the picture reverses:
+
+| AT0 definition | cells | called doublet | vs. 6.3% baseline |
+|---|---:|---:|---:|
+| crude (`SFTPC+ SCGB3A2+`) | 5,680 | 8.0% | 1.26x |
+| **strict (+EPCAM+, lineage-negative)** | **1,676** | **3.9%** | **0.62x - below baseline** |
+
+And the cells Scrublet flagged inside the crude gate look exactly like
+doublets rather than like AT0:
+
+| | flagged | kept |
+|---|---:|---:|
+| median UMI | 13,705 | 7,691 |
+| median genes | 3,860 | 2,610 |
+| co-expressing another lineage | 73.5% | 53.3% |
+
+Nearly twice the library size and substantially more cross-lineage
+co-expression. **Scrublet was mostly right.** The strict AT0 population is
+*under*-flagged relative to background, i.e. it survived the filter intact.
+
+**The correction that matters, and it is a general one:** the apparent 2x bias
+was an artefact of the marker gate used to measure it, not of the doublet
+caller. A co-expression gate cannot be used to audit a tool whose whole job is
+detecting co-expression - you have to add a discriminating criterion (here,
+lineage-negativity and library size) before the question is answerable. The
+concern was worth testing; the first test was the wrong test.
+
+The general guidance in the sections above still stands - automated doublet
+callers *can* remove real intermediate states, the original authors did use
+manual curation, and flagged cells should be inspected before deletion. What
+changed is the verdict for this specific dataset.
+
 ### How the field handles this
 
 1. **Orthogonal validation is the standard of proof.** Strunz et al. confirmed

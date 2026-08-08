@@ -23,7 +23,8 @@ Last updated: 2026-08-08 (focused regeneration re-analysis complete).
 | `docs/UMAP_AND_FIGURES.md` | **DONE** |
 | `docs/DOUBLETS_AND_SCRUBLET.md` | **DONE** |
 | **Focused alveolar regeneration re-analysis** | **DONE** — AT2→transitional→AT1 trajectory recovered |
-| Capillary endothelial (iCAP) sub-analysis | running / see `analysis/regeneration_focus/` |
+| Capillary endothelial (iCAP) sub-analysis | **DONE** — persistent injury state recovered |
+| AT0 doublet-loss follow-up | **DONE** — tested, not lost |
 | `docs/DOUBLETS_AND_SCRUBLET.md` | **DONE** |
 
 Branch: `scrna-adaptive-pipeline` → see `git log`. PR #1 merged; **PR #2 open**:
@@ -99,10 +100,15 @@ clusters fell 20/41 → 4/31 and `donor_driven_clustering_check` now reports fal
 2. **Mouse composition outputs describe a sort ratio, not the lung.** Cells were
    MACS-fractionated and recombined at 85–90% CD45⁻ : 10–15% CD45⁺. Compare
    composition only *within* a compartment.
-3. **Scrublet is biased against the human paper's discoveries.** Measured:
-   distal-BC 12.9%, SCGB3A2-CC 10.5%, AT0 8.0% called doublet vs 6.3% baseline
-   (up to 2×). Not erased (87–92% survived) but systematic. Kadur et al. used
-   **no** automated doublet caller.
+3. **Scrublet bias — TESTED AND LARGELY EXONERATED.** A crude co-expression
+   gate suggested up to 2× over-removal of the human paper's novel populations.
+   Re-measured with a gate that can separate real AT0 from AT2+club doublets
+   (`SFTPC+ SCGB3A2+ EPCAM+`, lineage-negative), AT0 is flagged at **3.9% vs a
+   6.3% baseline** — below background. The cells flagged inside the crude gate
+   have 1.8× the UMIs and more cross-lineage co-expression, i.e. they are
+   doublets. Lesson: a co-expression gate cannot audit a co-expression
+   detector. General caution still applies; the verdict for this dataset does
+   not.
 4. **No ambient-RNA correction anywhere.** Both papers used SoupX. Matters most
    for AT0 (defined partly by SFTPC, a classic soup contaminant) and for
    GSE178360 DD046Q (heavy haemoglobin).
@@ -123,10 +129,7 @@ clusters fell 20/41 → 4/31 and `donor_driven_clustering_check` now reports fal
 
 ## Pending work
 
-1. **Re-run GSE178360 without doublet filtering** to check AT0 recovery
-   (known issue 3), ideally with ambient correction (known issue 4). This is the
-   one substantive follow-up still outstanding.
-2. Optionally analyse the 8 non-atlas mouse samples as their own object to
+1. Optionally analyse the 8 non-atlas mouse samples as their own object to
    reproduce the CAP1-vs-CAP2 origin result (known issue 1). They are now
    *excluded* from the focused analysis rather than silently merged.
 3. `WORKFLOW.md` has a scope banner, but its QC "acceptance order" section still
