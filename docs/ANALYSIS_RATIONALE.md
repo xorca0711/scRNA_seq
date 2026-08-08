@@ -248,3 +248,99 @@ Recorded because they change interpretation, not computation:
 
 *(See the sections below for plain-language explanations of UMAP, Harmony and
 Scrublet, written for a reader without a computational background.)*
+
+---
+
+## Part 4 - The focused re-analysis (the big goal, finally addressed)
+
+Everything above describes the whole-atlas run. That run produced the required
+UMAPs, dot plots and marker tables, but it **did not deliver the biology this
+repository is about**. The evidence was unambiguous once looked for: the
+deposited `Alveolar_transitional` (233 cells) and `AT1_AT2` (429 cells) both sat
+*inside* the AT2 cluster, and no trajectory was fitted - so the
+AT2 -> Krt8+ transitional -> AT1 **ordering**, which is the entire biological
+claim, was nowhere quantified.
+
+`analysis/scripts/06_regeneration_focus.py` fixes that. It does **not** redo QC,
+merging or normalisation - those checkpoints are sound and cost hours. It reuses
+`final_clustered.h5ad` and adds the four things that were missing.
+
+### What changed, and why each mattered
+
+**1. Restricted to the 25-sample Ki67 atlas.** The other 8 samples are a
+different experiment. Without this filter the AT1 arm nearly doubles with cells
+from Kit/Car4/Ednrb-driver mice - cluster 16 is only 41.8% cohort.
+
+**2. A clean alveolar subset: clusters [10, 16] only.** Cluster 16 is *not*
+optional - 30 transitional cells sit at the AT1 end, and cluster 10 alone
+captures only 85% of them. Clusters 18 (ciliated) and 19 (Krt5+ dysplastic) are
+excluded exactly as the source study did; including them would import >1,200
+airway cells to gain 3 transitional ones. Result: **5,694 cells** capturing
+229/233 transitional (98.3%) and 429/429 AT1_AT2 (100%).
+
+*Implementation detail that matters:* the 180 Secretory cells hiding inside
+cluster 10 are removed **by author label, not by dropping their subcluster** -
+that subcluster also contains 24 transitional cells, 10% of the entire
+transitional population.
+
+**3. A data-derived transitional score, benchmarked rather than assumed.**
+The canonical panel performs *worse* on this data than a score derived from it:
+
+| score | genes | AUROC vs AT2 | vs AT1 | vs all |
+|---|---:|---:|---:|---:|
+| **core (data-derived)** | 8 | 0.988 | **0.984** | **0.987** |
+| canonical panel | 11 | 0.980 | 0.883 | 0.947 |
+
+The canonical panel loses 10 AUROC points against AT1 specifically. Measured
+per gene, `Tnc` (0.510), `Hbegf` (0.574) and `Cdkn1a` (0.651) do not
+discriminate here at all and were dropped; `Cldn4` is the near-binary gate
+(70.8% expressing in transitional vs 2.4% in AT2). Final set: **Krt8, Krt18,
+Cldn4, Sfn, Clu, S100a14, Gpx2, Tnip3**.
+
+**4. PAGA + diffusion pseudotime**, rooted deliberately in the AT2 subcluster
+with the highest AT2 score, because AT2 is the known progenitor.
+
+### The result, and why it is trustworthy
+
+Pseudotime orders the deposited labels correctly - **and those labels were never
+used to fit it**, so this is a genuine independent check rather than a
+restatement:
+
+| deposited label | median pseudotime | n |
+|---|---:|---:|
+| AT2 | 0.013 | 3,277 |
+| Alveolar_transitional | 0.179 | 229 |
+| AT1_AT2 | 0.237 | 429 |
+| AT1 | 0.327 | 1,759 |
+
+The transitional state is now **resolved as its own subcluster** (subcluster 1
+holds 168 of 229 transitional cells) where the whole-atlas run had it invisible
+inside AT2.
+
+And the timecourse independently reproduces the source paper's stated finding
+that transitional cells peak at 11 dpi and are rare after 25 dpi:
+
+| dpi | 0 | 6 | **11** | 19 | 25 | 42 | 90 | 366 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| median % transitional | 0.9 | 4.1 | **27.4** | 4.7 | 2.1 | 1.0 | 0.5 | 0.3 |
+
+Three independent lines - pseudotime ordering, marker-score specificity, and the
+injury timecourse - agree. None of them was available from the whole-atlas run.
+
+### Caveats that must travel with these figures
+
+- **Pseudotime is a rank ordering with no units.** It is not time, not
+  comparable between runs, and depends on the root choice. The root here is an
+  assumption (AT2 is the progenitor), stated rather than discovered.
+- **PAGA edges are connectivity, not flux.** They do not indicate direction or
+  rate of differentiation.
+- **A trajectory can be fitted to data that is not a continuum.** The support
+  here is that it independently recovers the correct label ordering and the
+  correct injury timecourse - not the fit itself.
+- The transitional cluster is a useful anchor, but the state is better treated
+  as a **score along a continuum**: the cells the cluster misses sit at the AT2
+  and AT1 ends, which is what a real continuum forced through a discrete
+  boundary looks like.
+- Composition percentages are still subject to the MACS sort caveat in
+  `PIPELINE_AS_RUN.md`; they are comparable *within* the alveolar compartment,
+  which is how they are used here.

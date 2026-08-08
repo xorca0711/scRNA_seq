@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-08-08.
+Last updated: 2026-08-08 (focused regeneration re-analysis complete).
 
 ---
 
@@ -21,6 +21,9 @@ Last updated: 2026-08-08.
 | `docs/ANALYSIS_RATIONALE.md` (decisions, before vs after papers) | **DONE** |
 | `docs/BACKGROUND_FOR_BIOLOGISTS.md` — Harmony | **DONE** |
 | `docs/UMAP_AND_FIGURES.md` | **DONE** |
+| `docs/DOUBLETS_AND_SCRUBLET.md` | **DONE** |
+| **Focused alveolar regeneration re-analysis** | **DONE** — AT2→transitional→AT1 trajectory recovered |
+| Capillary endothelial (iCAP) sub-analysis | running / see `analysis/regeneration_focus/` |
 | `docs/DOUBLETS_AND_SCRUBLET.md` | **DONE** |
 
 Branch: `scrna-adaptive-pipeline` → see `git log`. PR #1 merged; **PR #2 open**:
@@ -85,7 +88,9 @@ clusters fell 20/41 → 4/31 and `donor_driven_clustering_check` now reports fal
 
 ## Known issues carried forward (IMPORTANT)
 
-1. **The mouse object merges two different experiments.** The 8 samples with no
+1. **The mouse object merges two different experiments.** *(ADDRESSED in the
+   focused re-analysis, which restricts to the annotated 25-sample cohort; still
+   true of `processed/final_clustered.h5ad` itself.)* The 8 samples with no
    metadata (`EEM-scRNA-249/250/251/288/289/290/291/292`) use different Cre
    drivers (Kit-MerCreMer, Car4-CreERT2, Ednrb-CreERT2), a pre-labelling design
    and a single 19 dpi timepoint. Niethamer et al. analysed them **separately**
@@ -104,9 +109,9 @@ clusters fell 20/41 → 4/31 and `donor_driven_clustering_check` now reports fal
 5. **Doublet calls are a ranking cut, not a detected threshold** in 32/33 mouse
    samples (non-bimodal Scrublet histograms → expected-rate quantile fallback).
 6. **MAD upper bounds never bind** — zero cells removed for excess counts/genes.
-7. **The papers' headline findings need subsetting.** Niethamer's iCAP state is
-   invisible at top-level clustering; only the epithelium was subset here, not
-   the endothelium.
+7. **The papers' headline findings need subsetting.** *(ADDRESSED —
+   `analysis/scripts/06_regeneration_focus.py` subsets both the alveolar
+   epithelium and the capillary endothelium.)*
 8. **The deposited `.RDS` objects contain the authors' labels** (donor IDs and
    published cell types per barcode). Unreadable here for want of R, but they
    are the route to ground-truth labels.
@@ -118,12 +123,13 @@ clusters fell 20/41 → 4/31 and `donor_driven_clustering_check` now reports fal
 
 ## Pending work
 
-1. **Optional analysis follow-ups**, in value order:
-   - Split the 8 non-atlas mouse samples into their own object (known issue 1).
-   - Endothelial sub-analysis to recover Niethamer's iCAP state (known issue 7).
-   - Re-run GSE178360 without doublet filtering to check AT0 recovery
-     (known issue 3), ideally with ambient correction (known issue 4).
-2. `WORKFLOW.md` has a scope banner, but its QC "acceptance order" section still
+1. **Re-run GSE178360 without doublet filtering** to check AT0 recovery
+   (known issue 3), ideally with ambient correction (known issue 4). This is the
+   one substantive follow-up still outstanding.
+2. Optionally analyse the 8 non-atlas mouse samples as their own object to
+   reproduce the CAP1-vs-CAP2 origin result (known issue 1). They are now
+   *excluded* from the focused analysis rather than silently merged.
+3. `WORKFLOW.md` has a scope banner, but its QC "acceptance order" section still
    reads as an imperative checklist for this repo. Low priority.
 
 ---
