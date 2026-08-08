@@ -59,6 +59,8 @@ raises `UnicodeEncodeError`.
 python analysis/scripts/01_scan_raw_data.py
 python analysis/scripts/run_scrna_analysis.py --dataset GSE262927
 python analysis/scripts/run_scrna_analysis.py --dataset GSE178360 --integration harmony
+python analysis/scripts/06_regeneration_focus.py
+python analysis/scripts/07_lineage_tracing_cohort.py
 python analysis/scripts/03_write_report.py --dataset GSE262927
 python analysis/scripts/05_write_pipeline_as_run.py
 ```
@@ -144,6 +146,16 @@ clusters fell 20/41 → 4/31 and `donor_driven_clustering_check` now reports fal
    reads as an imperative checklist for this repo. Low priority.
 
 ---
+
+## Directory layout
+
+`analysis/` is split by series: `analysis/GSE262927/` (mouse) and
+`analysis/GSE178360/` (human), with `scripts/`, `requirements.txt` and
+`raw_data_inventory.*` shared at the top level. This departs from the canonical
+paths in the original brief, which put the mouse outputs at the top level - see
+`analysis/LAYOUT.md` for the mapping and for why the three mouse analyses
+(whole atlas / regeneration_focus / lineage_tracing_cohort) use different
+cohorts.
 
 ## Repository conventions
 

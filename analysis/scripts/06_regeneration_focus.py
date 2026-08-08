@@ -58,7 +58,7 @@ import scanpy as sc  # noqa: E402
 sc.settings.verbosity = 1
 np.random.seed(RANDOM_SEED)
 
-OUT = ANALYSIS / "regeneration_focus"
+OUT = ANALYSIS / "GSE262927" / "regeneration_focus"
 FIG = OUT / "figures"
 TAB = OUT / "tables"
 
@@ -541,7 +541,7 @@ def capillary_analysis(src: Path) -> dict:
 # ---------------------------------------------------------------------------
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--src", default=str(ANALYSIS / "processed" / "final_clustered.h5ad"))
+    ap.add_argument("--src", default=str(ANALYSIS / "GSE262927" / "processed" / "final_clustered.h5ad"))
     ap.add_argument("--skip-capillary", action="store_true")
     ap.add_argument("--skip-alveolar", action="store_true")
     args = ap.parse_args()

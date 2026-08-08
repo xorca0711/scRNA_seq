@@ -27,7 +27,7 @@ executed, and it does **not** use every tool listed here.
   record of what was executed: real parameters, cell counts, batch decisions,
   which tools were used, and how it diverges from the source papers. Generated
   from the pipeline's own outputs.
-- **[`analysis/README.md`](analysis/README.md)** — full report for the primary
+- **[`analysis/GSE262927/README.md`](analysis/GSE262927/README.md)** — full report for the primary
   dataset. **[`analysis/GSE178360/README.md`](analysis/GSE178360/README.md)** —
   the second dataset.
 - **[`analysis/scripts/`](analysis/scripts/)** — the pipeline itself.

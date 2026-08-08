@@ -55,7 +55,7 @@ import scanpy as sc  # noqa: E402
 sc.settings.verbosity = 1
 np.random.seed(RANDOM_SEED)
 
-OUT = ANALYSIS / "lineage_tracing_cohort"
+OUT = ANALYSIS / "GSE262927" / "lineage_tracing_cohort"
 FIG = OUT / "figures"
 TAB = OUT / "tables"
 
@@ -95,7 +95,7 @@ def trace_call(site_a: np.ndarray, site_b: np.ndarray) -> np.ndarray:
 
 def validate_trace_rule(src: Path) -> dict:
     """Re-derive the authors' trace_call and confirm the rule before using it."""
-    meta = ANALYSIS / "tables" / "cell_metadata.csv"
+    meta = ANALYSIS / "GSE262927" / "tables" / "cell_metadata.csv"
     if not meta.exists():
         return {"validated": False, "reason": "cell_metadata.csv missing"}
     m = pd.read_csv(meta, low_memory=False)
@@ -181,7 +181,7 @@ def score(a, genes, name):
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--src", default=str(ANALYSIS / "processed" / "final_clustered.h5ad"))
+    ap.add_argument("--src", default=str(ANALYSIS / "GSE262927" / "processed" / "final_clustered.h5ad"))
     args = ap.parse_args()
     for d in (OUT, FIG, TAB):
         d.mkdir(parents=True, exist_ok=True)

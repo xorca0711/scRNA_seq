@@ -197,7 +197,7 @@ if R becomes available.
 | Non-gene features removed | ['SiteA', 'SiteB'] |
 | Gene space | inner join: 55359-55359 per sample -> 55359 shared |
 | Metadata | raw_data/GSE262927/GSE262927_CellMetaData.csv |
-| QC thresholds | per sample, MAD-derived (see `analysis/qc/qc_thresholds.csv`) |
+| QC thresholds | per sample, MAD-derived (see `analysis/GSE262927/qc/qc_thresholds.csv`) |
 | Cells | 212,701 in -> 169,807 after QC -> 162,175 after doublet removal |
 | Doublets | Scrublet per capture, 7,632 removed |
 | Normalisation | normalize_total(target_sum=1e4) + log1p; the raw counts are preserved in processed/postQC.h5ad and re-attached as layers['counts'] of the final object |
@@ -238,8 +238,8 @@ Batch mixing statistics actually measured:
 }
 ```
 
-Full record: `analysis/logs/analysis_log.txt`, `analysis/logs/decisions.json`,
-`analysis/README.md`.
+Full record: `analysis/GSE262927/logs/analysis_log.txt`, `analysis/GSE262927/logs/decisions.json`,
+`analysis/GSE262927/README.md`.
 
 
 ### GSE178360 (human, 3 samples)

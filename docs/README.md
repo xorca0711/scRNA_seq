@@ -53,7 +53,7 @@ Supporting documents:
   above were used, and how the analysis diverges from the source papers.
   Generated from the pipeline's artefacts; regenerate with
   `analysis/scripts/05_write_pipeline_as_run.py`.
-- [`../analysis/README.md`](../analysis/README.md): the full analysis report
+- [`../analysis/GSE262927/README.md`](../analysis/GSE262927/README.md): the full analysis report
   for the primary (mouse) dataset, including QC tables and output locations.
 - [`../WORKFLOW.md`](../WORKFLOW.md): the end-to-end sequence, ordering
   constraints, subset-and-recluster loop, lineage-trace calling, and quality

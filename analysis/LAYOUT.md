@@ -1,56 +1,75 @@
 # What lives where in `analysis/`
 
-Two GEO series were analysed. The primary one (mouse) writes to the **top level**
-of this directory, because the task specified those canonical paths; the second
-(human) writes to a subdirectory. That means the top level mixes
-mouse-specific output with a few genuinely shared files, which is easy to
-misread. This file removes the ambiguity.
+Two GEO series were analysed. **Each owns a subdirectory**, so the two are
+symmetric and nothing at the top level is series-specific.
 
-## Ownership
+```
+analysis/
+├── GSE262927/        mouse  — 33 samples, H1N1 lineage-tracing time course
+├── GSE178360/        human  — 3 samples, distal airway
+├── scripts/          shared — one pipeline; --dataset selects the series
+├── requirements.txt  shared — one environment for both
+├── raw_data_inventory.txt / .csv   shared — the scan covers both series
+└── LAYOUT.md         this file
+```
 
-| Path | Belongs to |
-|---|---|
-| `figures/` | **GSE262927** (mouse) |
-| `tables/` | **GSE262927** (mouse) |
-| `qc/` | **GSE262927** (mouse) |
-| `logs/` | **GSE262927** (mouse) |
-| `processed/` | **GSE262927** (mouse) |
-| `inventory/` | **GSE262927** (mouse) |
-| `epithelial_subanalysis/` | **GSE262927** (mouse) |
-| `regeneration_focus/` | **GSE262927** (mouse) |
-| `lineage_tracing_cohort/` | **GSE262927** (mouse) |
-| `README.md` | **GSE262927** (mouse) — the report for the mouse series |
-| `GSE178360/` | **human** — complete parallel structure inside |
-| `scripts/` | **shared** — one pipeline, `--dataset` selects the series |
-| `requirements.txt` | **shared** — one environment for both |
-| `raw_data_inventory.txt` / `.csv` | **shared** — the scan covers both series |
+> **Note on paths.** The original brief specified canonical output paths at the
+> top level (`analysis/figures/umap/...`, `analysis/processed/final_clustered.h5ad`).
+> Those now live under `analysis/GSE262927/`. The move was deliberate: with two
+> series in one repository, putting one of them at the top level and the other in
+> a subdirectory made it impossible to tell shared files from mouse-specific ones
+> at a glance. Every required output still exists, one level deeper.
 
-Rule of thumb: **anything at the top level that is not `scripts/`,
-`requirements.txt`, `raw_data_inventory.*` or `GSE178360/` is mouse.**
+## Inside each series directory
 
-## The three mouse analyses, and how they differ
+Both have the same structure:
 
-The mouse series was analysed three times, for three different questions. They
-are not redundant.
+```
+<SERIES>/
+├── README.md              the report for this series
+├── figures/               umap/ dotplots/ featureplots/ composition/ qc/
+├── tables/                markers, annotations, composition, cell metadata
+├── qc/                    thresholds, before/after, doublets, batch assessment
+├── logs/                  analysis_log.txt, decisions.json
+├── inventory/             detected format, per-sample results
+├── processed/             .h5ad checkpoints  (gitignored — regenerable)
+└── epithelial_subanalysis/
+```
 
-| Directory | Cells | Question |
-|---|---|---|
-| top level (`figures/`, `tables/`, …) | 162,175 | The whole-atlas survey: all 33 samples, 29 clusters, marker tables, composition. The general-purpose object. |
-| `regeneration_focus/` | 5,694 alveolar + 43,359 capillary | **The biology.** AT2 → Krt8⁺ transitional → AT1 trajectory, and the persistent injury-induced capillary state. Restricted to the 25-sample annotated cohort. |
-| `lineage_tracing_cohort/` | 36,958 | The **8 non-atlas samples**, which are a separate experiment (Kit / Car4 / Ednrb Cre drivers, pre-labelled, 19 dpi). Asks where the injury state comes from. |
+`GSE262927/` additionally contains two focused analyses (see below).
 
-**Important:** the whole-atlas object at the top level contains all 33 samples,
-i.e. it merges the 25-sample Ki67 atlas with the 8-sample tracing experiment.
-That is fine for surveying cell types but wrong for anything condition- or
-trace-related. The two focused directories each restrict to the correct cohort.
-See `docs/ANALYSIS_RATIONALE.md`.
+## The three mouse analyses differ by cohort — this matters
+
+| Directory | Cells | Cohort | Purpose |
+|---|---:|---|---|
+| `GSE262927/` (top level) | 162,175 | **all 33 samples** | Whole-atlas survey: 29 clusters, marker tables, composition. General-purpose object. |
+| `GSE262927/regeneration_focus/` | 5,694 alveolar<br>43,359 capillary | 25-sample annotated atlas | **The biology.** AT2 → Krt8⁺ transitional → AT1 trajectory, and the persistent injury-induced capillary state. |
+| `GSE262927/lineage_tracing_cohort/` | 36,958 | **the 8 non-atlas samples** | A separate experiment (Kit / Car4 / Ednrb Cre, pre-labelled, 19 dpi). Where does the injury state come from? |
+
+**The whole-atlas object merges two experiments.** All 33 samples are in it,
+which is fine for surveying cell types but wrong for anything condition- or
+trace-related, because the 8 tracing samples use different Cre drivers and an
+inverted labelling design. Both focused directories restrict to the correct
+cohort. See [`../docs/ANALYSIS_RATIONALE.md`](../docs/ANALYSIS_RATIONALE.md).
 
 ## Where to start
 
-- **What was actually run, with parameters:** [`../docs/PIPELINE_AS_RUN.md`](../docs/PIPELINE_AS_RUN.md)
-- **Why each decision was made:** [`../docs/ANALYSIS_RATIONALE.md`](../docs/ANALYSIS_RATIONALE.md)
-- **Background if you are not a computational biologist:**
-  [`../docs/UMAP_AND_FIGURES.md`](../docs/UMAP_AND_FIGURES.md),
-  [`../docs/BACKGROUND_FOR_BIOLOGISTS.md`](../docs/BACKGROUND_FOR_BIOLOGISTS.md),
-  [`../docs/DOUBLETS_AND_SCRUBLET.md`](../docs/DOUBLETS_AND_SCRUBLET.md)
-- **Mouse report:** [`README.md`](README.md) · **Human report:** [`GSE178360/README.md`](GSE178360/README.md)
+| I want… | Read |
+|---|---|
+| what was actually run, with parameters | [`../docs/PIPELINE_AS_RUN.md`](../docs/PIPELINE_AS_RUN.md) |
+| why each decision was made | [`../docs/ANALYSIS_RATIONALE.md`](../docs/ANALYSIS_RATIONALE.md) |
+| background (non-computational reader) | [`../docs/UMAP_AND_FIGURES.md`](../docs/UMAP_AND_FIGURES.md), [`../docs/BACKGROUND_FOR_BIOLOGISTS.md`](../docs/BACKGROUND_FOR_BIOLOGISTS.md), [`../docs/DOUBLETS_AND_SCRUBLET.md`](../docs/DOUBLETS_AND_SCRUBLET.md) |
+| the mouse report | [`GSE262927/README.md`](GSE262927/README.md) |
+| the human report | [`GSE178360/README.md`](GSE178360/README.md) |
+
+## Re-running
+
+```bash
+python analysis/scripts/01_scan_raw_data.py
+python analysis/scripts/run_scrna_analysis.py --dataset GSE262927
+python analysis/scripts/run_scrna_analysis.py --dataset GSE178360 --integration harmony
+python analysis/scripts/06_regeneration_focus.py
+python analysis/scripts/07_lineage_tracing_cohort.py
+python analysis/scripts/03_write_report.py --dataset GSE262927
+python analysis/scripts/05_write_pipeline_as_run.py
+```
