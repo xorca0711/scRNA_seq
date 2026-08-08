@@ -209,7 +209,7 @@ if R becomes available.
 | UMAP | scanpy defaults min_dist=0.5, spread=1.0, random_state=0 |
 | Clustering | Leiden (igraph flavour, 2 iterations) scanned at resolutions [0.3, 0.5, 0.8, 1.0]. Primary resolution: 0.3. No resolution satisfied all three criteria, so the resolution with the fewest under-separated neighbouring cluster pairs (1) and the fewest undersized clusters (2) was taken. Every finer resolution produced neighbouring clusters that no gene separates, which is the signature of over-clustering. All resolutions are retained as leiden_res* columns. |
 | Final clusters | **29** at resolution 0.3 |
-| Marker test | Wilcoxon rank-sum (scanpy rank_genes_groups, one cluster vs all remaining cells) on log1p(CP10K) values, with expressing fractions |
+| Marker test | Wilcoxon rank-sum (scanpy rank_genes_groups, one cluster vs all remaining cells) on log1p(CP10K) values, with expressing fractions; table re-used from the previous run of this same pipeline |
 | Annotation | candidate identities scored per cluster from z-scored mean expression of curated panels, down-weighted by the fraction of cells expressing each marker; numeric Leiden labels are preserved and no candidate is promoted to a definitive label |
 | Epithelial sub-analysis | performed on 13333 cells from clusters ['10', '16', '18', '19']; 16 epithelial subclusters at Leiden resolution 0.6 |
 | Condition DE | EXPLORATORY ONLY. Sample-level pseudobulk with n=2 homeostasis and n=23 infected samples. The homeostasis arm is not replicated within a group and is confounded with sex, so this is not a confirmatory differential-expression result. |
@@ -264,7 +264,7 @@ Full record: `analysis/logs/analysis_log.txt`, `analysis/logs/decisions.json`,
 | UMAP | scanpy defaults min_dist=0.5, spread=1.0, random_state=0 |
 | Clustering | Leiden (igraph flavour, 2 iterations) scanned at resolutions [0.3, 0.5, 0.8, 1.0]. Primary resolution: 1.0. It was the finest resolution at which no cluster falls below 20 cells, at least 90% of clusters carry >=5 specific marker genes against the rest of the data, and every cluster is also separated from its NEAREST neighbouring cluster by at least 10 genes (adj. p<0.05, |log2FC|>1, >25% expressing) - the last condition is what prevents simply picking whichever resolution yields the most clusters All resolutions are retained as leiden_res* columns. |
 | Final clusters | **31** at resolution 1.0 |
-| Marker test | Wilcoxon rank-sum (scanpy rank_genes_groups, one cluster vs all remaining cells) on log1p(CP10K) values, with expressing fractions |
+| Marker test | Wilcoxon rank-sum (scanpy rank_genes_groups, one cluster vs all remaining cells) on log1p(CP10K) values, with expressing fractions; table re-used from the previous run of this same pipeline |
 | Annotation | candidate identities scored per cluster from z-scored mean expression of curated panels, down-weighted by the fraction of cells expressing each marker; numeric Leiden labels are preserved and no candidate is promoted to a definitive label |
 | Epithelial sub-analysis | performed on 7446 cells from clusters ['11', '12', '16', '18', '24', '25', '26', '29', '30']; 20 epithelial subclusters at Leiden resolution 0.6 |
 | Condition DE | not performed |

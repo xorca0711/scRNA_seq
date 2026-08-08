@@ -125,6 +125,14 @@ clusters fell 20/41 → 4/31 and `donor_driven_clustering_check` now reports fal
    `04_recover_decisions.py` (decision persistence was added mid-session). Fresh
    runs do not need this.
 
+10. **Candidate annotations are contradicted by the deposited labels for 3 of
+   29 mouse clusters** (0, 22, 25) and are flagged `[CONTRADICTED]` in
+   `tables/cluster_annotation_proposals.csv` and in the annotation UMAP.
+   Cluster 0 is the important one: the marker panel called it "Transitional"
+   but it is 89.2% CAP1 capillary endothelium (its top genes are
+   interferon-stimulated). 21 of 29 agree. Trust the deposited label where the
+   two conflict.
+
 ---
 
 ## Pending work

@@ -1224,13 +1224,88 @@ def annotate_clusters(adata: ad.AnnData, markers_df: pd.DataFrame, dirs: dict,
         })
 
     df = pd.DataFrame(rows)
+
+    # Report the deposited label alongside each proposal where one exists.
+    # This is REPORTED ONLY and never enters the scoring, so the agreement
+    # statistic stays an independent check - but a reader can immediately see
+    # when a marker-panel proposal contradicts the deposited annotation, which
+    # is exactly the case a candidate label must not be trusted in.
+    if "author_celltype" in adata.obs and "has_author_metadata" in adata.obs:
+        m = adata.obs["has_author_metadata"].astype(str).isin(["True", "true"])
+        if m.sum():
+            sub = adata.obs.loc[m.to_numpy()]
+            ct = pd.crosstab(sub[groupby].astype(str),
+                             sub["author_celltype"].astype(str))
+            frac = ct.div(ct.sum(axis=1).replace(0, np.nan), axis=0)
+            dom = frac.idxmax(axis=1)
+            pur = frac.max(axis=1)
+            key = df["Cluster"].astype(str)
+            df["Deposited label (dominant)"] = key.map(dom).fillna("n/a")
+            df["Deposited label %"] = (100 * key.map(pur)).round(1)
+            df["Annotated cells"] = key.map(ct.sum(axis=1)).fillna(0).astype(int)
+
+            def _flag(r):
+                d = str(r["Deposited label (dominant)"])
+                if d in ("n/a", "nan"):
+                    return ""
+                prop = str(r["Proposed identity"]).replace(" (candidate)", "")
+                p = prop.lower().replace("_", "")
+                dl = d.lower().replace("_", "")
+                # Cell-cycle and stress calls describe a STATE, not a lineage,
+                # so they are not comparable to a lineage label and must not be
+                # reported as a contradiction.
+                if p in {"proliferating"}:
+                    return "not comparable (state, not lineage)"
+                if p in dl or dl in p:
+                    return "agrees"
+                # families naming the same population differently
+                fam = [{"endothelial", "endothelialcap", "cap1", "cap2",
+                        "venousendothelium", "arterialendothelium"},
+                       {"fibroblast", "fibroactivated", "af1", "af2",
+                        "adventitialfibroblast", "peribronchialfibroblast"},
+                       {"monomac", "alveolarmac", "amac", "imac", "cmon",
+                        "imon", "pmon", "dc", "cdc1", "cdc2", "madc",
+                        "neutrophil"},
+                       {"tcell", "cd4t", "cd8t", "treg", "tlymphocyte",
+                        "nk", "nkcell"},
+                       {"bcell", "blymphocyte", "plasma", "plasmacell"},
+                       {"smcpericyte", "vsmc"},
+                       {"lymphaticec", "lymphaticendothelium"},
+                       # Krt5 IS the deposited name for basal cells
+                       {"basal", "krt5"},
+                       {"club", "secretory"},
+                       {"transitional", "alveolartransitional"},
+                       {"at1", "at1at2"}, {"at2", "at1at2"}]
+                for f in fam:
+                    if p in f and dl in f:
+                        return "agrees (same lineage)"
+                if int(r.get("Annotated cells", 0) or 0) < 50:
+                    return "too few annotated cells to judge"
+                return "DISAGREES - treat the proposal as unreliable"
+
+            df["Deposition check"] = df.apply(_flag, axis=1)
+            n_dis = int(df["Deposition check"].astype(str)
+                        .str.startswith("DISAGREES").sum())
+            record("annotation_vs_deposited_labels",
+                   f"{n_dis} of {len(df)} clusters have a marker-panel proposal "
+                   f"that contradicts the dominant deposited label; those rows "
+                   f"are flagged in {outfile} and their proposals should not be "
+                   f"used")
+
     df.to_csv(dirs["tables"] / outfile, index=False)
     mean.to_csv(dirs["tables"] / "canonical_marker_mean_expression_by_cluster.csv")
     frac.to_csv(dirs["tables"] / "canonical_marker_fraction_expressing_by_cluster.csv")
 
+    # A proposal the deposited annotation contradicts must not travel as a
+    # plain label - it would be read as a finding. Mark it in the value itself,
+    # so the flag survives into every figure and export, not only the table.
+    labels = df["Proposed identity"].astype(str).copy()
+    if "Deposition check" in df.columns:
+        bad = df["Deposition check"].astype(str).str.startswith("DISAGREES")
+        labels = labels.where(~bad, labels + " [CONTRADICTED]")
     adata.obs["proposed_cell_type"] = (
         adata.obs[groupby].astype(str)
-        .map(dict(zip(df["Cluster"].astype(str), df["Proposed identity"]))))
+        .map(dict(zip(df["Cluster"].astype(str), labels))))
     record("annotation_strategy",
            "candidate identities scored per cluster from z-scored mean "
            "expression of curated panels, down-weighted by the fraction of "
