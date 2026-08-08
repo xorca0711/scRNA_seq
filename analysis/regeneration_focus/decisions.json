@@ -1,8 +1,5 @@
 {
-  "alveolar_selection": "clusters ['10', '16'] of the whole-atlas clustering, restricted to the 25-sample annotated cohort, then filtered to author_lineage=='Epithelium' excluding ['Secretory', 'Krt5', 'Ciliated']. 5694 cells. Ciliated and Krt5+ dysplastic compartments are excluded deliberately, as in the source study.",
-  "alveolar_composition": "{'AT2': 3277, 'AT1': 1759, 'AT1_AT2': 429, 'Alveolar_transitional': 229}",
-  "alveolar_embedding": "2000 HVGs recomputed within the compartment (batch_key=sample_id), z-scored, randomized PCA, 30 PCs, n_neighbors=15, Leiden resolution 0.5 -> 12 subclusters",
-  "transitional_score_benchmark": "[{'score': 'core (data-derived)', 'genes_used': 8, 'AUROC_vs_AT2': 0.9882, 'AUROC_vs_AT1': 0.9835, 'AUROC_vs_all': 0.9871}, {'score': 'canonical panel', 'genes_used': 11, 'AUROC_vs_AT2': 0.9803, 'AUROC_vs_AT1': 0.883, 'AUROC_vs_all': 0.9473}]",
-  "trajectory": "PAGA on 12 subclusters, then diffusion pseudotime rooted in subcluster 6 (highest mean AT2 score, AT2 being the known progenitor). Pseudotime is a rank ordering with no units and is not comparable between runs; PAGA edges are connectivity, not flux or rate.",
-  "transitional_enriched_subclusters": "{'1': 168, '10': 18, '9': 16, '0': 14}"
+  "capillary_selection": "clusters ['0', '1', '3', '21'] (cluster ['4'] dropped as ambient-dominated), annotated cohort only. 43359 cells. The source study reports this state is resolvable only after subsetting capillary endothelium - it does not appear at top-level clustering.",
+  "capillary_embedding": "2000 HVGs recomputed within the compartment (batch_key=sample_id), z-scored, randomized PCA, 30 PCs, n_neighbors=15, Leiden resolution 0.4 -> 9 subclusters",
+  "icap_subcluster": "subcluster 5 has the highest mean injury-state score (0.696); abundance per sample and timepoint in tables/icap_abundance_per_sample.csv"
 }
