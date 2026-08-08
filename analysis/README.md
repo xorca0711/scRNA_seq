@@ -1,5 +1,11 @@
 # scRNA-seq analysis — GSE262927
 
+> **This is the report for GSE262927 (mouse).** It sits at the top level of
+> `analysis/` because the task specified those canonical output paths. The
+> human series is in `GSE178360/`. For which files belong to which series,
+> and how the three mouse analyses differ, see [`LAYOUT.md`](LAYOUT.md).
+
+
 > **This repository's `raw_data/` holds two independent GEO series.** They are
 > different species and are analysed separately — they are never merged, and no
 > gene symbol is case-converted between them.

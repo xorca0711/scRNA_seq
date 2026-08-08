@@ -1,0 +1,8 @@
+{
+  "trace_rule_validation": "the rule 'Traced iff SiteB/(SiteA+SiteB) > 0.5, Not_detected iff neither present' reproduces the deposited trace_call on 107,626 annotated cells with 100.0000% agreement - which is what licenses applying it to the 8 samples that carry no metadata",
+  "cohort": "36958 cells from 8 samples, all harvested at 19 dpi with tamoxifen given BEFORE infection. Cre lines: Kit-MerCreMer=19237, Ednrb-CreERT2=10638, Car4-CreERT2=7083",
+  "trace_call_distribution": "{'Untraced': 28692, 'Traced': 4934, 'Not_detected': 3332}",
+  "endothelial_subclusters": "['0', '1', '2', '3', '4', '19', '21', '22', '26', '27'] selected on mean pan-endothelial score exceeding both an absolute floor and the non-endothelial score; these samples carry no deposited labels, so selection is by marker evidence only",
+  "icap_subcluster": "subcluster 2 has the highest mean injury-state score (1.106) among 18706 endothelial cells",
+  "icap_tracing_by_line": "{'Car4-CreERT2': 0.95, 'Ednrb-CreERT2': 0.75, 'Kit-MerCreMer': 42.27}"
+}
