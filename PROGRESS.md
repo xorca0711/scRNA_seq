@@ -3,7 +3,8 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-08-08 (focused regeneration re-analysis complete).
+Last updated: 2026-08-08. **All planned work is complete.** Session paused at
+the user's request; nothing is running.
 
 ---
 
@@ -25,6 +26,9 @@ Last updated: 2026-08-08 (focused regeneration re-analysis complete).
 | **Focused alveolar regeneration re-analysis** | **DONE** — AT2→transitional→AT1 trajectory recovered |
 | Capillary endothelial (iCAP) sub-analysis | **DONE** — persistent injury state recovered |
 | AT0 doublet-loss follow-up | **DONE** — tested, not lost |
+| Lineage-tracing cohort (8 non-atlas samples) | **DONE** — CAP1 origin supported; CAP2 lines uninformative |
+| `analysis/` reorganised into two series subdirectories | **DONE** |
+| Pipeline speedups (PCA, scan, threads) | **DONE** — verified output-identical |
 | `docs/DOUBLETS_AND_SCRUBLET.md` | **DONE** |
 
 Branch: `scrna-adaptive-pipeline` → see `git log`. PR #1 merged; **PR #2 open**:
@@ -86,6 +90,19 @@ clustering). Epithelial sub-analysis: 13,333 cells → 16 subclusters.
 **GSE178360 (human).** 36,464 → 29,605 after QC → 27,729 after Scrublet.
 **Harmony primary** (justified in `qc/celltype_split_by_sample.csv`); donor-private
 clusters fell 20/41 → 4/31 and `donor_driven_clustering_check` now reports false.
+
+**Focused analyses (mouse).** `regeneration_focus/`: the AT2 -> Krt8+
+transitional -> AT1 axis, recovered. Pseudotime orders the deposited labels
+correctly (AT2 0.013, transitional 0.179, AT1_AT2 0.237, AT1 0.327) with those
+labels held out; transitional abundance peaks at 27.4% at 11 dpi and falls to
+0.3% by 366 dpi. The capillary injury state behaves oppositely - it emerges
+after infection and persists (2.0% -> 37.5% at 25 dpi -> 21.7% at 366 dpi).
+`lineage_tracing_cohort/`: the trace-call rule reproduces the authors' own
+labels at 100.0000% over 107,626 cells, and in the Kit line (labels CAP1) the
+injury state is traced at 33-53% per animal, consistent with a CAP1 origin. The
+CAP2-specific lines are **uninformative, not negative** - they label only 2-8%
+of total endothelium, so a near-zero rate cannot be distinguished from too few
+labelled cells.
 
 ---
 
