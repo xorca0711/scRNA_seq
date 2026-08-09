@@ -3,12 +3,12 @@ ANALYSIS LOG - GSE262927
 ======================================================================
 
 === DATA DISCOVERY ===
-Raw data directory: C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW
+Raw data directory: raw_data/GSE262927/GSE262927_RAW
 Input format: 10x CellRanger HDF5 (v3 /matrix layout)
 Species: mouse
 Number of samples: 33
 Samples detected: ['EEM-scRNA-113', 'EEM-scRNA-116', 'EEM-scRNA-117', 'EEM-scRNA-118', 'EEM-scRNA-124', 'EEM-scRNA-125', 'EEM-scRNA-126', 'EEM-scRNA-127', 'EEM-scRNA-158', 'EEM-scRNA-162', 'EEM-scRNA-166', 'EEM-scRNA-167', 'EEM-scRNA-170', 'EEM-scRNA-172', 'EEM-scRNA-179', 'EEM-scRNA-180', 'EEM-scRNA-181', 'EEM-scRNA-182', 'EEM-scRNA-236', 'EEM-scRNA-237', 'EEM-scRNA-238', 'EEM-scRNA-239', 'EEM-scRNA-249', 'EEM-scRNA-250', 'EEM-scRNA-251', 'EEM-scRNA-288', 'EEM-scRNA-289', 'EEM-scRNA-290', 'EEM-scRNA-291', 'EEM-scRNA-292', 'EEM-scRNA-310', 'EEM-scRNA-311', 'EEM-scRNA-312']
-Metadata detected: C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_CellMetaData.csv
+Metadata detected: raw_data/GSE262927/GSE262927_CellMetaData.csv
 Counts appear raw/normalized/processed: raw integer UMI counts
 Non-gene features removed: ['SiteA', 'SiteB']
 Gene space identical across samples: True

@@ -13,7 +13,7 @@ Outputs
 -------
 analysis/raw_data_inventory.txt   human-readable report + directory tree
 analysis/raw_data_inventory.csv   one row per file
-analysis/inventory/datasets.json  machine-readable description consumed by 02_*
+analysis/raw_data_inventory.json  machine-readable version of the same scan
 """
 
 from __future__ import annotations
@@ -32,7 +32,6 @@ import pandas as pd
 REPO = Path(__file__).resolve().parents[2]
 RAW = REPO / "raw_data"
 ANALYSIS = REPO / "analysis"
-INVENTORY_DIR = ANALYSIS / "inventory"
 
 # Marker panels used only to *test* species, never to convert symbols.
 MOUSE_PROBES = ["Sftpc", "Krt8", "Trp63", "Ager", "Scgb1a1", "Foxj1",
@@ -293,9 +292,11 @@ def probe_tar(p: Path, rec: FileRecord) -> None:
 def classify(p: Path) -> FileRecord:
     st = p.stat()
     rec = FileRecord(
-        path=str(p),
+        # Persist repository-relative paths so the tracked inventory is
+        # portable and does not disclose the analyst's local checkout path.
+        path=p.relative_to(REPO).as_posix(),
         filename=p.name,
-        parent=str(p.parent.relative_to(RAW)) if p.parent != RAW else ".",
+        parent=p.parent.relative_to(RAW).as_posix() if p.parent != RAW else ".",
         ext="".join(p.suffixes[-2:]) if p.name.endswith(".gz") else p.suffix,
         size_bytes=st.st_size,
         size_human=human(st.st_size),
@@ -387,8 +388,6 @@ def main() -> int:
         print(f"ERROR: raw data directory not found: {RAW}", file=sys.stderr)
         return 1
 
-    INVENTORY_DIR.mkdir(parents=True, exist_ok=True)
-
     all_files = sorted(p for p in RAW.rglob("*") if p.is_file())
     print(f"Scanning {len(all_files)} files under {RAW} ...")
 
@@ -412,7 +411,7 @@ def main() -> int:
     A("=" * 78)
     A("RAW DATA INVENTORY")
     A("=" * 78)
-    A(f"Root scanned : {RAW}")
+    A("Root scanned : raw_data/")
     A(f"Files found  : {len(records)}")
     A(f"Total size   : {human(sum(r.size_bytes for r in records))}")
     A("")
@@ -470,16 +469,17 @@ def main() -> int:
 
     # ---- machine readable ------------------------------------------------
     payload = {
-        "raw_root": str(RAW),
+        "raw_root": "raw_data/",
         "n_files": len(records),
         "files": [asdict(r) for r in records],
     }
-    (INVENTORY_DIR / "raw_files.json").write_text(
+    json_path = ANALYSIS / "raw_data_inventory.json"
+    json_path.write_text(
         json.dumps(payload, indent=2, default=str), encoding="utf-8")
 
     print(f"\nWrote {txt_path}")
     print(f"Wrote {csv_path}")
-    print(f"Wrote {INVENTORY_DIR / 'raw_files.json'}")
+    print(f"Wrote {json_path}")
     return 0
 
 

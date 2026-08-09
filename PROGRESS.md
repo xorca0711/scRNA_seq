@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-08-08. **All planned work is complete**, and the repository
+Last updated: 2026-08-09. **All planned work is complete**, and the repository
 has been restructured as a portfolio: `FINDINGS.md` (results with figures) now
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` moved to `docs/`. Nothing is running.
@@ -33,9 +33,9 @@ leads, `README.md` is a landing page for the executed analysis, and
 | Pipeline speedups (PCA, scan, threads) | **DONE** — verified output-identical |
 | Portfolio restructure (`FINDINGS.md`, README rewrite, root tidy-up) | **DONE** |
 
-Branch: `main` — everything is merged. PR #1 and PR #2
-(https://github.com/xorca0711/scRNA_seq/pull/2) are both merged; the
-`scrna-adaptive-pipeline` branch has no unmerged work.
+Repository state: the scientific analysis and portfolio curation are complete;
+no analysis process is running. Branch-specific state belongs in Git/GitHub,
+not in this durable handoff document.
 
 ---
 
@@ -69,6 +69,7 @@ python analysis/scripts/run_scrna_analysis.py --dataset GSE178360 --integration 
 python analysis/scripts/06_regeneration_focus.py
 python analysis/scripts/07_lineage_tracing_cohort.py
 python analysis/scripts/03_write_report.py --dataset GSE262927
+python analysis/scripts/03_write_report.py --dataset GSE178360
 python analysis/scripts/05_write_pipeline_as_run.py
 ```
 
@@ -99,9 +100,10 @@ not preserved in current artefacts, so only the after-state is citable.)
 **Focused analyses (mouse).** `regeneration_focus/`: the AT2 -> Krt8+
 transitional -> AT1 axis, recovered. Pseudotime orders the deposited labels
 correctly (AT2 0.013, transitional 0.179, AT1_AT2 0.237, AT1 0.327) with those
-labels held out; transitional abundance peaks at 27.4% at 11 dpi and falls to
-0.3% by 366 dpi. The capillary injury state behaves oppositely - it emerges
-after infection and persists (2.0% -> 37.5% at 25 dpi -> 21.7% at 366 dpi).
+labels held out; the median per-animal transitional proportion peaks at 27.4%
+at 11 dpi and falls to 0.3% by 366 dpi. The capillary injury state behaves
+oppositely - its median per-animal proportion persists (2.0% -> 37.5% at 25
+dpi -> 21.7% at 366 dpi).
 `lineage_tracing_cohort/`: the trace-call rule reproduces the authors' own
 labels at 100.0000% over 107,626 cells, and in the Kit line (labels CAP1) the
 injury state is traced at 33-53% per animal, consistent with a CAP1 origin. The
@@ -159,13 +161,13 @@ labelled cells.
 
 ---
 
-## Pending work
+## Optional extensions (not completion gaps)
 
-1. Optionally analyse the 8 non-atlas mouse samples as their own object to
-   reproduce the CAP1-vs-CAP2 origin result (known issue 1). They are now
-   *excluded* from the focused analysis rather than silently merged.
-3. `WORKFLOW.md` has a scope banner, but its QC "acceptance order" section still
-   reads as an imperative checklist for this repo. Low priority.
+1. Add ambient-RNA correction if compatible unfiltered mouse droplet matrices
+   become available; the current GEO deposit does not provide them.
+2. Fit a formal trajectory-DE model if gene-level inference along pseudotime
+   becomes a project goal; the current analysis intentionally stops at binned
+   programme summaries.
 
 ---
 

@@ -32,8 +32,9 @@ rooted in AT2:
 With the deposited labels held out, pseudotime orders them exactly as the
 model predicts: **AT2 0.013 → transitional 0.179 → AT1/AT2 0.237 → AT1
 0.327** (median diffusion pseudotime per label). The transitional state behaves
-like a true intermediate in time as well: its abundance **peaks at 27.4% of
-alveolar epithelium at 11 dpi and collapses to 0.3% by 366 dpi**.
+like a true intermediate in time as well: the **median per-animal proportion**
+peaks at **27.4% of alveolar epithelium at 11 dpi** and collapses to **0.3% by
+366 dpi**.
 
 ![Transitional state time course](analysis/GSE262927/regeneration_focus/figures/transitional_timecourse.png)
 
@@ -45,9 +46,9 @@ script [`06_regeneration_focus.py`](analysis/scripts/06_regeneration_focus.py)
 The paper's second headline is an injury-associated capillary endothelial
 state (iCAP) that, unlike the transitional epithelium, persists. The
 sub-analysis of 43,359 capillary cells reproduces exactly that shape: the
-state is nearly absent in homeostasis (**2.0%**), surges to **37.5% at
-25 dpi**, and is still at **21.7% one year after infection** — the
-transitional state's mirror image.
+median per-animal proportion is nearly absent in homeostasis (**2.0%**),
+surges to **37.5% at 25 dpi**, and is still **21.7% one year after infection**
+— the transitional state's mirror image.
 
 ![iCAP time course](analysis/GSE262927/regeneration_focus/figures/icap_timecourse.png)
 

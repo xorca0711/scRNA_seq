@@ -24,15 +24,15 @@ Leiden resolution:0.3
 Final clusters:   29
 
 MAIN OUTPUTS
-Cluster UMAP:               X:\GitHub\scRNA_seq\analysis\GSE262927/figures/umap/UMAP_leiden_clusters.pdf
-Sample UMAP:                X:\GitHub\scRNA_seq\analysis\GSE262927/figures/umap/UMAP_sample.pdf
-Canonical marker dot plot:  X:\GitHub\scRNA_seq\analysis\GSE262927/figures/dotplots/canonical_marker_dotplot.pdf
-Cluster-marker dot plot:    X:\GitHub\scRNA_seq\analysis\GSE262927/figures/dotplots/cluster_marker_dotplot.pdf
-Cluster marker table:       X:\GitHub\scRNA_seq\analysis\GSE262927/tables/cluster_markers_all.csv
-Cell metadata:              X:\GitHub\scRNA_seq\analysis\GSE262927/tables/cell_metadata.csv
-Final processed object:     X:\GitHub\scRNA_seq\analysis\GSE262927/processed/final_clustered.h5ad
-Analysis script:            X:\GitHub\scRNA_seq\analysis/scripts/run_scrna_analysis.py
-README:                     X:\GitHub\scRNA_seq\analysis\GSE262927/README.md
+Cluster UMAP:               analysis/GSE262927/figures/umap/UMAP_leiden_clusters.pdf
+Sample UMAP:                analysis/GSE262927/figures/umap/UMAP_sample.pdf
+Canonical marker dot plot:  analysis/GSE262927/figures/dotplots/canonical_marker_dotplot.pdf
+Cluster-marker dot plot:    analysis/GSE262927/figures/dotplots/cluster_marker_dotplot.pdf
+Cluster marker table:       analysis/GSE262927/tables/cluster_markers_all.csv
+Cell metadata:              analysis/GSE262927/tables/cell_metadata.csv
+Final processed object:     analysis/GSE262927/processed/final_clustered.h5ad
+Analysis script:            analysis/scripts/run_scrna_analysis.py
+README:                     analysis/GSE262927/README.md
 
 EPITHELIAL SUBANALYSIS:
 performed on 13333 cells from clusters ['10', '16', '18', '19']; 16 epithelial subclusters at Leiden resolution 0.6

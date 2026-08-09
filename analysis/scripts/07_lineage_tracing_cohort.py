@@ -180,8 +180,12 @@ def score(a, genes, name):
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--src", default=str(ANALYSIS / "GSE262927" / "processed" / "final_clustered.h5ad"))
+    ap = argparse.ArgumentParser(
+        description="Analyse the eight-sample lineage-tracing cohort separately.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
+    ap.add_argument("--src", default=str(ANALYSIS / "GSE262927" / "processed" / "final_clustered.h5ad"),
+                    help="clustered mouse AnnData object")
     args = ap.parse_args()
     for d in (OUT, FIG, TAB):
         d.mkdir(parents=True, exist_ok=True)

@@ -63,8 +63,8 @@ key_results:
   trajectory:
     method: PAGA + diffusion pseudotime rooted in AT2 (25-sample cohort, 5,694 alveolar cells)
     label_ordering_heldout: {AT2: 0.013, transitional: 0.179, AT1_AT2: 0.237, AT1: 0.327}  # median dpt per author label
-    transitional_abundance: {peak: "27.4% at 11 dpi", resolved: "0.3% at 366 dpi"}
-  icap_persistence: {homeostasis: "2.0%", peak: "37.5% at 25 dpi", one_year: "21.7%"}
+    transitional_abundance_median_per_animal: {peak: "27.4% at 11 dpi", resolved: "0.3% at 366 dpi"}
+    icap_persistence_median_per_animal: {homeostasis: "2.0%", peak: "37.5% at 25 dpi", one_year: "21.7%"}
   lineage_tracing:
     trace_call_reproduction: "100.0000% agreement with author labels over 107,626 cells"
     kit_line_icap_traced: "33-53% per animal -> supports CAP1 origin"

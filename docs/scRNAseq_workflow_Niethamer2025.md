@@ -13,7 +13,7 @@ PMID 39818203 · PMC11805657 · Preprint: bioRxiv 2024.05.24.595801
 > rather than SCTransform, Leiden 0.3 rather than Louvain 1.0, and no
 > Slingshot/tradeSeq). It does agree with the paper on the most consequential
 > choice: no batch correction. See
-> [`docs/PIPELINE_AS_RUN.md`](docs/PIPELINE_AS_RUN.md) for the executed
+> [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md) for the executed
 > parameters and a full divergence table.
 
 > ### ⚠ Filing correction

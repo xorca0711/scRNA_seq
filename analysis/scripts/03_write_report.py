@@ -22,17 +22,17 @@ from pipeline_utils import ANALYSIS, DATASETS, REPO  # noqa: E402
 
 def _repo_rel(p) -> str:
     """Render a path relative to the repo so reports carry no machine paths."""
-    s = str(p)
-    try:
-        return Path(s).relative_to(REPO).as_posix()
-    except ValueError:
-        # Recorded on a machine where the repo lived elsewhere: rebase at the
-        # first repo-level directory name found in the path.
-        parts = Path(s).parts
-        for anchor in ("raw_data", "analysis", "docs"):
-            if anchor in parts:
-                return Path(*parts[parts.index(anchor):]).as_posix()
-        return s
+    value = str(p).replace("\\", "/")
+    repo_prefix = REPO.as_posix().rstrip("/") + "/"
+    if value.lower().startswith(repo_prefix.lower()):
+        return value[len(repo_prefix):]
+    # Recorded on another OS or checkout: rebase at the first repo-level
+    # directory name, independent of the path separator in the old record.
+    parts = [part for part in value.split("/") if part]
+    for anchor in ("raw_data", "analysis", "docs"):
+        if anchor in parts:
+            return "/".join(parts[parts.index(anchor):])
+    return value
 
 
 def _read_json(p: Path) -> dict:
@@ -418,15 +418,15 @@ Leiden resolution:{d.get('leiden_resolution', '?')}
 Final clusters:   {d.get('n_clusters', '?')}
 
 MAIN OUTPUTS
-Cluster UMAP:               {o}/figures/umap/UMAP_leiden_clusters.pdf
-Sample UMAP:                {o}/figures/umap/UMAP_sample.pdf
-Canonical marker dot plot:  {o}/figures/dotplots/canonical_marker_dotplot.pdf
-Cluster-marker dot plot:    {o}/figures/dotplots/cluster_marker_dotplot.pdf
-Cluster marker table:       {o}/tables/cluster_markers_all.csv
-Cell metadata:              {o}/tables/cell_metadata.csv
-Final processed object:     {o}/processed/final_clustered.h5ad
-Analysis script:            {ANALYSIS}/scripts/run_scrna_analysis.py
-README:                     {o}/README.md
+Cluster UMAP:               {_repo_rel(o)}/figures/umap/UMAP_leiden_clusters.pdf
+Sample UMAP:                {_repo_rel(o)}/figures/umap/UMAP_sample.pdf
+Canonical marker dot plot:  {_repo_rel(o)}/figures/dotplots/canonical_marker_dotplot.pdf
+Cluster-marker dot plot:    {_repo_rel(o)}/figures/dotplots/cluster_marker_dotplot.pdf
+Cluster marker table:       {_repo_rel(o)}/tables/cluster_markers_all.csv
+Cell metadata:              {_repo_rel(o)}/tables/cell_metadata.csv
+Final processed object:     {_repo_rel(o)}/processed/final_clustered.h5ad
+Analysis script:            {_repo_rel(ANALYSIS / 'scripts' / 'run_scrna_analysis.py')}
+README:                     {_repo_rel(o)}/README.md
 
 EPITHELIAL SUBANALYSIS:
 {epi}

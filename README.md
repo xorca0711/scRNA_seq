@@ -1,5 +1,8 @@
 # Single-cell RNA-seq: lung regeneration after influenza injury
 
+[![Portfolio checks](https://github.com/xorca0711/scRNA_seq/actions/workflows/portfolio-checks.yml/badge.svg)](https://github.com/xorca0711/scRNA_seq/actions/workflows/portfolio-checks.yml)
+[![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+
 An independent **Python/scanpy reanalysis of two public lung scRNA-seq
 datasets, built from the raw deposited count matrices** — the authors'
 processed objects and annotations were never used during model fitting. The
@@ -12,10 +15,11 @@ figures in [`FINDINGS.md`](FINDINGS.md)):
 - The **AT2 → Krt8⁺ transitional → AT1** trajectory is recovered; held-out
   author labels are ordered correctly by pseudotime (median 0.013 → 0.179 →
   0.237 → 0.327).
-- The transitional state behaves as a true intermediate in time: **27.4% of
-  alveolar epithelium at 11 dpi, 0.3% by 366 dpi**.
-- The capillary injury state (iCAP) is its mirror image: **2.0% → 37.5% at
-  25 dpi → still 21.7% at one year** — it never resolves.
+- The transitional state behaves as a true intermediate in time: its median
+  per-animal proportion is **27.4% at 11 dpi and 0.3% by 366 dpi**.
+- The capillary injury state (iCAP) is its mirror image: median per-animal
+  proportions are **2.0% → 37.5% at 25 dpi → still 21.7% at one year** — it
+  never resolves.
 - Lineage tracing supports a **CAP1 origin** for the injury state (traced at
   33–53% per animal in the Kit line); the CAP2 lines are reported as
   **uninformative, not negative**.
@@ -37,6 +41,7 @@ figures in [`FINDINGS.md`](FINDINGS.md)):
 | Stack | Python 3.12, scanpy/AnnData, Scrublet, harmonypy, PAGA + diffusion pseudotime |
 | Validation | Deposited author labels held out of all model fitting; used only post hoc as an answer key |
 | Provenance | Decisions machine-logged; reports **generated from artefacts**, never hand-entered |
+| Reproducibility | Dependency-free artefact validator + pinned full environment + CI |
 
 ## What this repository demonstrates
 
@@ -54,6 +59,7 @@ on display.
 |---|---|
 | What was found? | [`FINDINGS.md`](FINDINGS.md) |
 | What exactly ran, with parameters? | [`docs/PIPELINE_AS_RUN.md`](docs/PIPELINE_AS_RUN.md) (generated) |
+| How can I validate or reproduce it? | [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) |
 | Why each analytical decision? | [`docs/ANALYSIS_RATIONALE.md`](docs/ANALYSIS_RATIONALE.md) |
 | Who did what — AI-assisted development and scientific ownership? | [`DEVELOPMENT.md`](DEVELOPMENT.md) |
 | Machine/session context for AI assistants | [`AI_CONTEXT.md`](AI_CONTEXT.md) |
@@ -66,6 +72,7 @@ on display.
 ├── FINDINGS.md                  results, with figures — start here
 ├── DEVELOPMENT.md               AI-assisted development disclosure + scientific ownership
 ├── AI_CONTEXT.md                machine-oriented context for AI sessions
+├── REPRODUCIBILITY.md           input layout, validation tiers, full re-run guide
 ├── analysis/
 │   ├── GSE262927/               mouse: report, figures, tables, QC, logs
 │   │   ├── regeneration_focus/      AT2→AT1 trajectory + iCAP persistence
@@ -90,22 +97,38 @@ matrices or paper PDFs are committed.
 
 ## Reproducing
 
+The tracked portfolio can be checked without downloading data or installing
+scanpy:
+
 ```bash
-pip install -r analysis/requirements.txt
+python analysis/scripts/validate_portfolio.py
+python -m compileall -q analysis/scripts
+```
+
+For a complete re-run, create a Python 3.12 environment, install the pinned
+dependencies, and place the GEO downloads under `raw_data/<accession>/`:
+
+```bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+python -m pip install -r analysis/requirements.txt
+
 python analysis/scripts/01_scan_raw_data.py
 python analysis/scripts/run_scrna_analysis.py --dataset GSE262927
 python analysis/scripts/run_scrna_analysis.py --dataset GSE178360 --integration harmony
 python analysis/scripts/06_regeneration_focus.py
 python analysis/scripts/07_lineage_tracing_cohort.py
 python analysis/scripts/03_write_report.py --dataset GSE262927
+python analysis/scripts/03_write_report.py --dataset GSE178360
 python analysis/scripts/05_write_pipeline_as_run.py
 ```
 
-Inputs are the two GEO series downloaded into `raw_data/<accession>/`
-(exact files used: `analysis/raw_data_inventory.txt`). Seeds are fixed at 0
-throughout; `--stages` resumes from checkpoints. Environment constraints
-(Windows ARM64, emulated x86-64 interpreter) are documented in
-[`AI_CONTEXT.md`](AI_CONTEXT.md) and [`PROGRESS.md`](PROGRESS.md).
+Exact inputs, expected directory layout, validation tiers, resource notes, and
+the output contract are in [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md). Seeds
+are fixed at 0 throughout; `--stages` resumes from checkpoints. The original
+Windows ARM64 execution constraints are documented in [`AI_CONTEXT.md`](AI_CONTEXT.md)
+and [`PROGRESS.md`](PROGRESS.md).
 
 ## Relationship to the published pipeline
 
@@ -121,6 +144,7 @@ the fact. The tool-by-tool used/not-used table and every divergence are in
 
 ## Licence
 
-Written material in this repository is © the author. The papers it describes
-are the property of their respective publishers; see
-[`REFERENCES.md`](REFERENCES.md) for links to the open-access versions.
+Code and original written material are © 2026 Xorca; no reuse licence is
+granted. See [`LICENSE`](LICENSE). The source papers and public datasets remain
+the property of their respective authors and publishers; citations and
+open-access links are in [`REFERENCES.md`](REFERENCES.md).
