@@ -31,7 +31,7 @@ rooted in AT2:
 
 With the deposited labels held out, pseudotime orders them exactly as the
 model predicts: **AT2 0.013 → transitional 0.179 → AT1/AT2 0.237 → AT1
-0.327** (mean diffusion pseudotime per label). The transitional state behaves
+0.327** (median diffusion pseudotime per label). The transitional state behaves
 like a true intermediate in time as well: its abundance **peaks at 27.4% of
 alveolar epithelium at 11 dpi and collapses to 0.3% by 366 dpi**.
 
@@ -100,9 +100,16 @@ correction was applied. Reading the paper afterwards confirmed the call: the
 authors integrated nothing.
 
 **Human: Harmony.** The three donors are healthy biological replicates of the
-same tissue, so donor separation *is* technical. Uncorrected, **20 of 41
-clusters were donor-private; with Harmony, 4 of 31** — and the automated
-donor-driven-clustering check flips to pass.
+same tissue, so donor separation *is* technical. In the uncorrected embedding,
+single proposed cell types fragmented into donor-private clusters
+(`qc/celltype_split_by_sample.csv`) — one cell type is not several cell types
+in several donors. With Harmony as the primary embedding, **4 of 31 clusters
+are >75% single-donor** and the automated donor-driven-clustering check
+reports **false**. Notably, the pipeline's own automated rule did *not*
+recommend integration here (donor, batch and biology are confounded with no
+condition metadata); Harmony was an explicit, recorded override on the
+fragmentation evidence, with the unintegrated embedding retained for
+comparison.
 
 ![Integration before and after](analysis/GSE178360/figures/umap/UMAP_integration_before_after.png)
 
