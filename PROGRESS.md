@@ -91,8 +91,10 @@ cell-type labels **0.947** across 107,626 cells (labels held out from the
 clustering). Epithelial sub-analysis: 13,333 cells → 16 subclusters.
 
 **GSE178360 (human).** 36,464 → 29,605 after QC → 27,729 after Scrublet.
-**Harmony primary** (justified in `qc/celltype_split_by_sample.csv`); donor-private
-clusters fell 20/41 → 4/31 and `donor_driven_clustering_check` now reports false.
+**Harmony primary** (justified in `qc/celltype_split_by_sample.csv`); 4/31
+clusters are >75% one donor and `donor_driven_clustering_check` reports false.
+(An earlier session quoted "20/41 → 4/31"; the uncorrected baseline count is
+not preserved in current artefacts, so only the after-state is citable.)
 
 **Focused analyses (mouse).** `regeneration_focus/`: the AT2 -> Krt8+
 transitional -> AT1 axis, recovered. Pseudotime orders the deposited labels

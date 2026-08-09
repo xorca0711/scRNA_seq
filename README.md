@@ -1,13 +1,30 @@
 # Single-cell RNA-seq: lung regeneration after influenza injury
 
-An end-to-end, from-scratch **Python/scanpy reanalysis of two public GEO
-datasets** — a 162,175-cell mouse influenza time course and a 27,729-cell
-human distal-lung atlas — that recovers the source papers' headline biology
-from the raw deposited count matrices, validates every unsupervised step
-against the authors' held-out annotations, and documents its own failures as
-carefully as its successes.
+An independent **Python/scanpy reanalysis of two public lung scRNA-seq
+datasets, built from the raw deposited count matrices** — the authors'
+processed objects and annotations were never used during model fitting. The
+question: **can the published injury-and-regeneration biology be recovered by
+an independent pipeline — and where it can't, why not?**
 
-**→ [`FINDINGS.md`](FINDINGS.md) — the results, with figures.**
+**Headline findings** (all numbers from tracked artefacts; details and
+figures in [`FINDINGS.md`](FINDINGS.md)):
+
+- The **AT2 → Krt8⁺ transitional → AT1** trajectory is recovered; held-out
+  author labels are ordered correctly by pseudotime (median 0.013 → 0.179 →
+  0.237 → 0.327).
+- The transitional state behaves as a true intermediate in time: **27.4% of
+  alveolar epithelium at 11 dpi, 0.3% by 366 dpi**.
+- The capillary injury state (iCAP) is its mirror image: **2.0% → 37.5% at
+  25 dpi → still 21.7% at one year** — it never resolves.
+- Lineage tracing supports a **CAP1 origin** for the injury state (traced at
+  33–53% per animal in the Kit line); the CAP2 lines are reported as
+  **uninformative, not negative**.
+- Blind clustering scores **median purity 0.947** against the held-out author
+  labels — with 3 of 29 candidate annotations contradicted and flagged, not
+  hidden.
+- The two datasets get **opposite integration decisions** (mouse: none;
+  human: Harmony), each from measured evidence — the experimental design
+  decides, not a default.
 
 ![Mouse atlas UMAP](analysis/GSE262927/figures/umap/UMAP_leiden_clusters_sidelegend.png)
 
@@ -15,40 +32,40 @@ carefully as its successes.
 
 | | |
 |---|---|
-| Primary dataset | [GSE262927](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262927) — mouse, H1N1 injury, 33 samples, uninjured → 1 year post-infection (Niethamer et al., *Cell Stem Cell* 2025) |
-| Second dataset | [GSE178360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178360) — human distal lung, 3 donors (Kadur Lakshminarasimha Murthy et al., *Nature* 2022) |
-| Stack | Python 3.12, scanpy, Scrublet, harmonypy, PAGA + diffusion pseudotime |
-| Validation | Deposited author labels held out of all clustering/trajectory steps, used only as an answer key — median cluster purity **0.947** |
-| Headline results | AT2 → Krt8⁺ transitional → AT1 trajectory recovered; the persistent capillary injury state (iCAP) recovered; lineage-tracing cohort supports a CAP1 origin |
-| Provenance | Every threshold, decision and substitution is machine-logged (`decisions.json`); the reports and [`docs/PIPELINE_AS_RUN.md`](docs/PIPELINE_AS_RUN.md) are **generated from those artefacts**, never hand-entered |
+| Primary dataset | [GSE262927](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262927) — mouse, H1N1 injury time course, 33 samples, 162,175 cells (Niethamer et al., *Cell Stem Cell* 2025) |
+| Second dataset | [GSE178360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178360) — human distal lung, 3 donors, 27,729 cells (Kadur Lakshminarasimha Murthy et al., *Nature* 2022) |
+| Stack | Python 3.12, scanpy/AnnData, Scrublet, harmonypy, PAGA + diffusion pseudotime |
+| Validation | Deposited author labels held out of all model fitting; used only post hoc as an answer key |
+| Provenance | Decisions machine-logged; reports **generated from artefacts**, never hand-entered |
 
 ## What this repository demonstrates
 
-- **Adaptive pipeline design.** The pipeline starts by scanning `raw_data/`
-  and letting the files determine the workflow — format detection, species
-  detection from gene symbols, per-sample QC thresholds derived from each
-  sample's own distributions (median ± MAD, with a rationale string attached
-  to every threshold).
-- **Defensible statistical decisions.** Batch correction is treated as a
-  hypothesis test, not a default — and the two datasets resolve it in
-  opposite directions, each for a stated, measured reason
-  ([`docs/ANALYSIS_RATIONALE.md`](docs/ANALYSIS_RATIONALE.md)).
-- **Blind validation.** Clustering and annotation were done from marker
-  panels alone; the deposited labels grade the result afterwards. Agreements
-  and the three contradicted clusters are reported with equal prominence.
-- **Honest negative results.** A suspected doublet-caller bias against a rare
-  population was chased down and overturned by a better-designed test;
-  thresholds that never bind are labelled as such
-  ([`FINDINGS.md` § 6](FINDINGS.md#6--negative-results-and-self-audits)).
-- **Reproducibility under constraints.** Fixed seeds throughout, a pinned
-  lockfile, checkpointed stages with resume flags — all running on Windows
-  ARM64 via an emulated x86-64 interpreter because key wheels don't exist
-  natively ([`PROGRESS.md`](PROGRESS.md)).
+Experimental-design-aware scRNA-seq analysis · scanpy/AnnData and sparse
+count workflows · per-sample QC with recorded rationales · per-capture
+doublet handling with a prior-based fallback · batch-effect diagnosis (and
+the discipline to not correct) · clustering, blind annotation, and external
+grading · PAGA/diffusion pseudotime · lineage-trace calling · reproducible,
+generated reporting · critical self-audit, including a refuted finding kept
+on display.
+
+## Where to go
+
+| Question | Read |
+|---|---|
+| What was found? | [`FINDINGS.md`](FINDINGS.md) |
+| What exactly ran, with parameters? | [`docs/PIPELINE_AS_RUN.md`](docs/PIPELINE_AS_RUN.md) (generated) |
+| Why each analytical decision? | [`docs/ANALYSIS_RATIONALE.md`](docs/ANALYSIS_RATIONALE.md) |
+| Who did what — AI-assisted development and scientific ownership? | [`DEVELOPMENT.md`](DEVELOPMENT.md) |
+| Machine/session context for AI assistants | [`AI_CONTEXT.md`](AI_CONTEXT.md) |
+| Full per-dataset reports, figures, QC | [`analysis/GSE262927/`](analysis/GSE262927/README.md) · [`analysis/GSE178360/`](analysis/GSE178360/README.md) |
+| Current state and known issues | [`PROGRESS.md`](PROGRESS.md) |
 
 ## Repository map
 
 ```
-├── FINDINGS.md                  the results — start here
+├── FINDINGS.md                  results, with figures — start here
+├── DEVELOPMENT.md               AI-assisted development disclosure + scientific ownership
+├── AI_CONTEXT.md                machine-oriented context for AI sessions
 ├── analysis/
 │   ├── GSE262927/               mouse: report, figures, tables, QC, logs
 │   │   ├── regeneration_focus/      AT2→AT1 trajectory + iCAP persistence
@@ -85,9 +102,10 @@ python analysis/scripts/05_write_pipeline_as_run.py
 ```
 
 Inputs are the two GEO series downloaded into `raw_data/<accession>/`
-(accessions and exact files used: `analysis/raw_data_inventory.txt`). Seeds
-are fixed at 0 throughout; `--stages` resumes from checkpoints. End-to-end
-wall time on the development machine was roughly 3 hours per full mouse run.
+(exact files used: `analysis/raw_data_inventory.txt`). Seeds are fixed at 0
+throughout; `--stages` resumes from checkpoints. Environment constraints
+(Windows ARM64, emulated x86-64 interpreter) are documented in
+[`AI_CONTEXT.md`](AI_CONTEXT.md) and [`PROGRESS.md`](PROGRESS.md).
 
 ## Relationship to the published pipeline
 
