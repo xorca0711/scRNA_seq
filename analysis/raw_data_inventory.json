@@ -1,11 +1,11 @@
 {
-  "raw_root": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data",
+  "raw_root": "raw_data/",
   "n_files": 51,
   "files": [
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\Compressed\\GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS.gz",
+      "path": "raw_data/GSE178360/Compressed/GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS.gz",
       "filename": "GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS.gz",
-      "parent": "GSE178360\\Compressed",
+      "parent": "GSE178360/Compressed",
       "ext": ".RDS.gz",
       "size_bytes": 406538944,
       "size_human": "387.7 MB",
@@ -22,9 +22,9 @@
       "extra": {}
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\Compressed\\GSE178360_epi.sub_SAE10x3.integrated_v2.RDS.gz",
+      "path": "raw_data/GSE178360/Compressed/GSE178360_epi.sub_SAE10x3.integrated_v2.RDS.gz",
       "filename": "GSE178360_epi.sub_SAE10x3.integrated_v2.RDS.gz",
-      "parent": "GSE178360\\Compressed",
+      "parent": "GSE178360/Compressed",
       "ext": ".RDS.gz",
       "size_bytes": 1078010572,
       "size_human": "1.0 GB",
@@ -41,9 +41,9 @@
       "extra": {}
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\Compressed\\GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS.gz",
+      "path": "raw_data/GSE178360/Compressed/GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS.gz",
       "filename": "GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS.gz",
-      "parent": "GSE178360\\Compressed",
+      "parent": "GSE178360/Compressed",
       "ext": ".RDS.gz",
       "size_bytes": 1114035561,
       "size_human": "1.0 GB",
@@ -60,9 +60,9 @@
       "extra": {}
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\Compressed\\GSE178360_mes.sub_SAE10x3.integrated_v2.RDS.gz",
+      "path": "raw_data/GSE178360/Compressed/GSE178360_mes.sub_SAE10x3.integrated_v2.RDS.gz",
       "filename": "GSE178360_mes.sub_SAE10x3.integrated_v2.RDS.gz",
-      "parent": "GSE178360\\Compressed",
+      "parent": "GSE178360/Compressed",
       "ext": ".RDS.gz",
       "size_bytes": 260516864,
       "size_human": "248.4 MB",
@@ -79,9 +79,9 @@
       "extra": {}
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\Compressed\\GSE178360_RAW.tar",
+      "path": "raw_data/GSE178360/Compressed/GSE178360_RAW.tar",
       "filename": "GSE178360_RAW.tar",
-      "parent": "GSE178360\\Compressed",
+      "parent": "GSE178360/Compressed",
       "ext": ".tar",
       "size_bytes": 354467840,
       "size_human": "338.0 MB",
@@ -108,9 +108,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS\\GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS",
+      "path": "raw_data/GSE178360/GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS/GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS",
       "filename": "GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS",
-      "parent": "GSE178360\\GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS",
+      "parent": "GSE178360/GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS",
       "ext": ".RDS",
       "size_bytes": 662559593,
       "size_human": "631.9 MB",
@@ -129,7 +129,7 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_epi.sub_SAE10x3.integrated_v2.RDS",
+      "path": "raw_data/GSE178360/GSE178360_epi.sub_SAE10x3.integrated_v2.RDS",
       "filename": "GSE178360_epi.sub_SAE10x3.integrated_v2.RDS",
       "parent": "GSE178360",
       "ext": ".RDS",
@@ -150,7 +150,7 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS",
+      "path": "raw_data/GSE178360/GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS",
       "filename": "GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS",
       "parent": "GSE178360",
       "ext": ".RDS",
@@ -171,7 +171,7 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_mes.sub_SAE10x3.integrated_v2.RDS",
+      "path": "raw_data/GSE178360/GSE178360_mes.sub_SAE10x3.integrated_v2.RDS",
       "filename": "GSE178360_mes.sub_SAE10x3.integrated_v2.RDS",
       "parent": "GSE178360",
       "ext": ".RDS",
@@ -192,9 +192,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_RAW\\GSM5388411_DD046Q_filtered_feature_bc_matrix.h5",
+      "path": "raw_data/GSE178360/GSE178360_RAW/GSM5388411_DD046Q_filtered_feature_bc_matrix.h5",
       "filename": "GSM5388411_DD046Q_filtered_feature_bc_matrix.h5",
-      "parent": "GSE178360\\GSE178360_RAW",
+      "parent": "GSE178360/GSE178360_RAW",
       "ext": ".h5",
       "size_bytes": 32359860,
       "size_human": "30.9 MB",
@@ -245,9 +245,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_RAW\\GSM5388411_DD046Q_raw_feature_bc_matrix.h5",
+      "path": "raw_data/GSE178360/GSE178360_RAW/GSM5388411_DD046Q_raw_feature_bc_matrix.h5",
       "filename": "GSM5388411_DD046Q_raw_feature_bc_matrix.h5",
-      "parent": "GSE178360\\GSE178360_RAW",
+      "parent": "GSE178360/GSE178360_RAW",
       "ext": ".h5",
       "size_bytes": 81396128,
       "size_human": "77.6 MB",
@@ -298,9 +298,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_RAW\\GSM5388412_DD047Q_filtered_feature_bc_matrix.h5",
+      "path": "raw_data/GSE178360/GSE178360_RAW/GSM5388412_DD047Q_filtered_feature_bc_matrix.h5",
       "filename": "GSM5388412_DD047Q_filtered_feature_bc_matrix.h5",
-      "parent": "GSE178360\\GSE178360_RAW",
+      "parent": "GSE178360/GSE178360_RAW",
       "ext": ".h5",
       "size_bytes": 40754721,
       "size_human": "38.9 MB",
@@ -351,9 +351,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_RAW\\GSM5388412_DD047Q_raw_feature_bc_matrix.h5",
+      "path": "raw_data/GSE178360/GSE178360_RAW/GSM5388412_DD047Q_raw_feature_bc_matrix.h5",
       "filename": "GSM5388412_DD047Q_raw_feature_bc_matrix.h5",
-      "parent": "GSE178360\\GSE178360_RAW",
+      "parent": "GSE178360/GSE178360_RAW",
       "ext": ".h5",
       "size_bytes": 86736653,
       "size_human": "82.7 MB",
@@ -404,9 +404,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_RAW\\GSM5388413_DD073R_raw_feature_bc_matrix.h5",
+      "path": "raw_data/GSE178360/GSE178360_RAW/GSM5388413_DD073R_raw_feature_bc_matrix.h5",
       "filename": "GSM5388413_DD073R_raw_feature_bc_matrix.h5",
-      "parent": "GSE178360\\GSE178360_RAW",
+      "parent": "GSE178360/GSE178360_RAW",
       "ext": ".h5",
       "size_bytes": 76592770,
       "size_human": "73.0 MB",
@@ -457,9 +457,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE178360\\GSE178360_RAW\\GSM5388413_DD073Rfiltered_feature_bc_matrix.h5",
+      "path": "raw_data/GSE178360/GSE178360_RAW/GSM5388413_DD073Rfiltered_feature_bc_matrix.h5",
       "filename": "GSM5388413_DD073Rfiltered_feature_bc_matrix.h5",
-      "parent": "GSE178360\\GSE178360_RAW",
+      "parent": "GSE178360/GSE178360_RAW",
       "ext": ".h5",
       "size_bytes": 36616710,
       "size_human": "34.9 MB",
@@ -510,9 +510,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\Compressed\\GSE262927_CellMetaData.csv.gz",
+      "path": "raw_data/GSE262927/Compressed/GSE262927_CellMetaData.csv.gz",
       "filename": "GSE262927_CellMetaData.csv.gz",
-      "parent": "GSE262927\\Compressed",
+      "parent": "GSE262927/Compressed",
       "ext": ".csv.gz",
       "size_bytes": 3200606,
       "size_human": "3.1 MB",
@@ -551,9 +551,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\Compressed\\GSE262927_RAW.tar",
+      "path": "raw_data/GSE262927/Compressed/GSE262927_RAW.tar",
       "filename": "GSE262927_RAW.tar",
-      "parent": "GSE262927\\Compressed",
+      "parent": "GSE262927/Compressed",
       "ext": ".tar",
       "size_bytes": 816967680,
       "size_human": "779.1 MB",
@@ -607,7 +607,7 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_CellMetaData.csv",
+      "path": "raw_data/GSE262927/GSE262927_CellMetaData.csv",
       "filename": "GSE262927_CellMetaData.csv",
       "parent": "GSE262927",
       "ext": ".csv",
@@ -648,9 +648,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181583_EEM-scRNA-113.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181583_EEM-scRNA-113.h5",
       "filename": "GSM8181583_EEM-scRNA-113.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 14224562,
       "size_human": "13.6 MB",
@@ -701,9 +701,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181584_EEM-scRNA-116.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181584_EEM-scRNA-116.h5",
       "filename": "GSM8181584_EEM-scRNA-116.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 28439042,
       "size_human": "27.1 MB",
@@ -754,9 +754,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181585_EEM-scRNA-117.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181585_EEM-scRNA-117.h5",
       "filename": "GSM8181585_EEM-scRNA-117.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 29460759,
       "size_human": "28.1 MB",
@@ -807,9 +807,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181586_EEM-scRNA-118.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181586_EEM-scRNA-118.h5",
       "filename": "GSM8181586_EEM-scRNA-118.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 24228688,
       "size_human": "23.1 MB",
@@ -860,9 +860,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181587_EEM-scRNA-124.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181587_EEM-scRNA-124.h5",
       "filename": "GSM8181587_EEM-scRNA-124.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 16928559,
       "size_human": "16.1 MB",
@@ -913,9 +913,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181588_EEM-scRNA-125.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181588_EEM-scRNA-125.h5",
       "filename": "GSM8181588_EEM-scRNA-125.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 20609960,
       "size_human": "19.7 MB",
@@ -966,9 +966,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181589_EEM-scRNA-126.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181589_EEM-scRNA-126.h5",
       "filename": "GSM8181589_EEM-scRNA-126.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 22024124,
       "size_human": "21.0 MB",
@@ -1019,9 +1019,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181590_EEM-scRNA-127.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181590_EEM-scRNA-127.h5",
       "filename": "GSM8181590_EEM-scRNA-127.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 22912060,
       "size_human": "21.9 MB",
@@ -1072,9 +1072,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181591_EEM-scRNA-158.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181591_EEM-scRNA-158.h5",
       "filename": "GSM8181591_EEM-scRNA-158.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 23497515,
       "size_human": "22.4 MB",
@@ -1125,9 +1125,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181592_EEM-scRNA-162.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181592_EEM-scRNA-162.h5",
       "filename": "GSM8181592_EEM-scRNA-162.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 21118645,
       "size_human": "20.1 MB",
@@ -1178,9 +1178,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181593_EEM-scRNA-166.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181593_EEM-scRNA-166.h5",
       "filename": "GSM8181593_EEM-scRNA-166.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 27676517,
       "size_human": "26.4 MB",
@@ -1231,9 +1231,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181594_EEM-scRNA-167.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181594_EEM-scRNA-167.h5",
       "filename": "GSM8181594_EEM-scRNA-167.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 28893525,
       "size_human": "27.6 MB",
@@ -1284,9 +1284,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181595_EEM-scRNA-170.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181595_EEM-scRNA-170.h5",
       "filename": "GSM8181595_EEM-scRNA-170.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 27962859,
       "size_human": "26.7 MB",
@@ -1337,9 +1337,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181596_EEM-scRNA-172.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181596_EEM-scRNA-172.h5",
       "filename": "GSM8181596_EEM-scRNA-172.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 28089833,
       "size_human": "26.8 MB",
@@ -1390,9 +1390,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181597_EEM-scRNA-179.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181597_EEM-scRNA-179.h5",
       "filename": "GSM8181597_EEM-scRNA-179.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 29671744,
       "size_human": "28.3 MB",
@@ -1443,9 +1443,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181598_EEM-scRNA-180.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181598_EEM-scRNA-180.h5",
       "filename": "GSM8181598_EEM-scRNA-180.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 27498569,
       "size_human": "26.2 MB",
@@ -1496,9 +1496,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181599_EEM-scRNA-181.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181599_EEM-scRNA-181.h5",
       "filename": "GSM8181599_EEM-scRNA-181.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 31968562,
       "size_human": "30.5 MB",
@@ -1549,9 +1549,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181600_EEM-scRNA-182.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181600_EEM-scRNA-182.h5",
       "filename": "GSM8181600_EEM-scRNA-182.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 32442045,
       "size_human": "30.9 MB",
@@ -1602,9 +1602,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181601_EEM-scRNA-236.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181601_EEM-scRNA-236.h5",
       "filename": "GSM8181601_EEM-scRNA-236.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 19565673,
       "size_human": "18.7 MB",
@@ -1655,9 +1655,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181602_EEM-scRNA-237.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181602_EEM-scRNA-237.h5",
       "filename": "GSM8181602_EEM-scRNA-237.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 29882410,
       "size_human": "28.5 MB",
@@ -1708,9 +1708,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181603_EEM-scRNA-238.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181603_EEM-scRNA-238.h5",
       "filename": "GSM8181603_EEM-scRNA-238.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 23967041,
       "size_human": "22.9 MB",
@@ -1761,9 +1761,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181604_EEM-scRNA-239.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181604_EEM-scRNA-239.h5",
       "filename": "GSM8181604_EEM-scRNA-239.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 34127842,
       "size_human": "32.5 MB",
@@ -1814,9 +1814,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181605_EEM-scRNA-249.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181605_EEM-scRNA-249.h5",
       "filename": "GSM8181605_EEM-scRNA-249.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 26932855,
       "size_human": "25.7 MB",
@@ -1867,9 +1867,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181606_EEM-scRNA-250.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181606_EEM-scRNA-250.h5",
       "filename": "GSM8181606_EEM-scRNA-250.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 34935727,
       "size_human": "33.3 MB",
@@ -1920,9 +1920,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181607_EEM-scRNA-251.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181607_EEM-scRNA-251.h5",
       "filename": "GSM8181607_EEM-scRNA-251.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 25031145,
       "size_human": "23.9 MB",
@@ -1973,9 +1973,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181608_EEM-scRNA-288.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181608_EEM-scRNA-288.h5",
       "filename": "GSM8181608_EEM-scRNA-288.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 18154747,
       "size_human": "17.3 MB",
@@ -2026,9 +2026,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181609_EEM-scRNA-289.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181609_EEM-scRNA-289.h5",
       "filename": "GSM8181609_EEM-scRNA-289.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 20244122,
       "size_human": "19.3 MB",
@@ -2079,9 +2079,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181610_EEM-scRNA-290.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181610_EEM-scRNA-290.h5",
       "filename": "GSM8181610_EEM-scRNA-290.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 21562882,
       "size_human": "20.6 MB",
@@ -2132,9 +2132,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181611_EEM-scRNA-291.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181611_EEM-scRNA-291.h5",
       "filename": "GSM8181611_EEM-scRNA-291.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 22923031,
       "size_human": "21.9 MB",
@@ -2185,9 +2185,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181612_EEM-scRNA-292.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181612_EEM-scRNA-292.h5",
       "filename": "GSM8181612_EEM-scRNA-292.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 19502294,
       "size_human": "18.6 MB",
@@ -2238,9 +2238,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181613_EEM-scRNA-310.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181613_EEM-scRNA-310.h5",
       "filename": "GSM8181613_EEM-scRNA-310.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 22379416,
       "size_human": "21.3 MB",
@@ -2291,9 +2291,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181614_EEM-scRNA-311.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181614_EEM-scRNA-311.h5",
       "filename": "GSM8181614_EEM-scRNA-311.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 21444205,
       "size_human": "20.5 MB",
@@ -2344,9 +2344,9 @@
       }
     },
     {
-      "path": "C:\\Users\\dream\\Documents\\GitHub\\scRNA_seq\\raw_data\\GSE262927\\GSE262927_RAW\\GSM8181615_EEM-scRNA-312.h5",
+      "path": "raw_data/GSE262927/GSE262927_RAW/GSM8181615_EEM-scRNA-312.h5",
       "filename": "GSM8181615_EEM-scRNA-312.h5",
-      "parent": "GSE262927\\GSE262927_RAW",
+      "parent": "GSE262927/GSE262927_RAW",
       "ext": ".h5",
       "size_bytes": 18637756,
       "size_human": "17.8 MB",

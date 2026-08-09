@@ -1,7 +1,7 @@
 ==============================================================================
 RAW DATA INVENTORY
 ==============================================================================
-Root scanned : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data
+Root scanned : raw_data/
 Files found  : 51
 Total size   : 7.8 GB
 
@@ -69,7 +69,7 @@ DATASET: GSE262927
 ------------------------------------------------------------------------------
 PER-FILE DETAIL
 ------------------------------------------------------------------------------
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\Compressed\GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS.gz
+path              : raw_data/GSE178360/Compressed/GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS.gz
   file type       : gzip-compressed RDS
   inferred role   : compressed copy of a pre-processed Seurat object
   dataset/sample  : GSE178360 / -
@@ -80,7 +80,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360
   processed?      : yes
   notes           : duplicate of the extracted .RDS in the parent folder
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\Compressed\GSE178360_epi.sub_SAE10x3.integrated_v2.RDS.gz
+path              : raw_data/GSE178360/Compressed/GSE178360_epi.sub_SAE10x3.integrated_v2.RDS.gz
   file type       : gzip-compressed RDS
   inferred role   : compressed copy of a pre-processed Seurat object
   dataset/sample  : GSE178360 / -
@@ -91,7 +91,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360
   processed?      : yes
   notes           : duplicate of the extracted .RDS in the parent folder
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\Compressed\GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS.gz
+path              : raw_data/GSE178360/Compressed/GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS.gz
   file type       : gzip-compressed RDS
   inferred role   : compressed copy of a pre-processed Seurat object
   dataset/sample  : GSE178360 / -
@@ -102,7 +102,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360
   processed?      : yes
   notes           : duplicate of the extracted .RDS in the parent folder
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\Compressed\GSE178360_mes.sub_SAE10x3.integrated_v2.RDS.gz
+path              : raw_data/GSE178360/Compressed/GSE178360_mes.sub_SAE10x3.integrated_v2.RDS.gz
   file type       : gzip-compressed RDS
   inferred role   : compressed copy of a pre-processed Seurat object
   dataset/sample  : GSE178360 / -
@@ -113,7 +113,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360
   processed?      : yes
   notes           : duplicate of the extracted .RDS in the parent folder
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\Compressed\GSE178360_RAW.tar
+path              : raw_data/GSE178360/Compressed/GSE178360_RAW.tar
   file type       : tar archive
   inferred role   : GEO supplementary archive (already extracted)
   dataset/sample  : GSE178360 / -
@@ -125,7 +125,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360
     - n_members: 6
     - members: ["GSM5388411_DD046Q_filtered_feature_bc_matrix.h5", "GSM5388411_DD046Q_raw_feature_bc_matrix.h5", "GSM5388412_DD047Q_filtered_feature_bc_matrix.h5", "GSM5388412_DD047Q_raw_feature_bc_matrix.h5", "GSM5388413_DD073R_raw_feature_bc_matrix.h5", "GSM5388413_DD073Rfiltered_feature_bc_matrix.h5"]
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS\GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS
+path              : raw_data/GSE178360/GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS/GSE178360_endo.sub_SAE10x3.integrated_temp_v2.RDS
   file type       : RDS (uncompressed XDR R serialization)
   inferred role   : pre-processed Seurat object (author-supplied)
   dataset/sample  : GSE178360 / -
@@ -137,7 +137,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360
   notes           : requires R/Seurat to read; R is not installed in this environment
     - magic_bytes: "580a000000030003"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_epi.sub_SAE10x3.integrated_v2.RDS
+path              : raw_data/GSE178360/GSE178360_epi.sub_SAE10x3.integrated_v2.RDS
   file type       : RDS (gzip-compressed R serialization)
   inferred role   : pre-processed Seurat object (author-supplied)
   dataset/sample  : GSE178360 / -
@@ -149,7 +149,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360
   notes           : requires R/Seurat to read; R is not installed in this environment
     - magic_bytes: "1f8b080000000000"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS
+path              : raw_data/GSE178360/GSE178360_immune_platelet.sub_SAE10x3.integrated_temp.RDS
   file type       : RDS (gzip-compressed R serialization)
   inferred role   : pre-processed Seurat object (author-supplied)
   dataset/sample  : GSE178360 / -
@@ -161,7 +161,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360
   notes           : requires R/Seurat to read; R is not installed in this environment
     - magic_bytes: "1f8b080000000000"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_mes.sub_SAE10x3.integrated_v2.RDS
+path              : raw_data/GSE178360/GSE178360_mes.sub_SAE10x3.integrated_v2.RDS
   file type       : RDS (gzip-compressed R serialization)
   inferred role   : pre-processed Seurat object (author-supplied)
   dataset/sample  : GSE178360 / -
@@ -173,7 +173,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360
   notes           : requires R/Seurat to read; R is not installed in this environment
     - magic_bytes: "1f8b080000000000"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_RAW\GSM5388411_DD046Q_filtered_feature_bc_matrix.h5
+path              : raw_data/GSE178360/GSE178360_RAW/GSM5388411_DD046Q_filtered_feature_bc_matrix.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x FILTERED (cell-called) count matrix
   dataset/sample  : GSE178360 / DD046Q
@@ -198,7 +198,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360
     - n_duplicate_gene_symbols: 24
     - gsm: "GSM5388411"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_RAW\GSM5388411_DD046Q_raw_feature_bc_matrix.h5
+path              : raw_data/GSE178360/GSE178360_RAW/GSM5388411_DD046Q_raw_feature_bc_matrix.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x RAW (unfiltered droplet) count matrix
   dataset/sample  : GSE178360 / DD046Q
@@ -223,7 +223,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360
     - n_duplicate_gene_symbols: 24
     - gsm: "GSM5388411"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_RAW\GSM5388412_DD047Q_filtered_feature_bc_matrix.h5
+path              : raw_data/GSE178360/GSE178360_RAW/GSM5388412_DD047Q_filtered_feature_bc_matrix.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x FILTERED (cell-called) count matrix
   dataset/sample  : GSE178360 / DD047Q
@@ -248,7 +248,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360
     - n_duplicate_gene_symbols: 24
     - gsm: "GSM5388412"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_RAW\GSM5388412_DD047Q_raw_feature_bc_matrix.h5
+path              : raw_data/GSE178360/GSE178360_RAW/GSM5388412_DD047Q_raw_feature_bc_matrix.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x RAW (unfiltered droplet) count matrix
   dataset/sample  : GSE178360 / DD047Q
@@ -273,7 +273,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360
     - n_duplicate_gene_symbols: 24
     - gsm: "GSM5388412"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_RAW\GSM5388413_DD073R_raw_feature_bc_matrix.h5
+path              : raw_data/GSE178360/GSE178360_RAW/GSM5388413_DD073R_raw_feature_bc_matrix.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x RAW (unfiltered droplet) count matrix
   dataset/sample  : GSE178360 / DD073R
@@ -298,7 +298,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360
     - n_duplicate_gene_symbols: 10
     - gsm: "GSM5388413"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360\GSE178360_RAW\GSM5388413_DD073Rfiltered_feature_bc_matrix.h5
+path              : raw_data/GSE178360/GSE178360_RAW/GSM5388413_DD073Rfiltered_feature_bc_matrix.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x FILTERED (cell-called) count matrix
   dataset/sample  : GSE178360 / DD073R
@@ -323,7 +323,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE178360
     - n_duplicate_gene_symbols: 10
     - gsm: "GSM5388413"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\Compressed\GSE262927_CellMetaData.csv.gz
+path              : raw_data/GSE262927/Compressed/GSE262927_CellMetaData.csv.gz
   file type       : delimited text (comma)
   inferred role   : metadata / annotation table
   dataset/sample  : GSE262927 / -
@@ -338,7 +338,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_data_rows: 123189
     - fraction_numeric_in_first_row: 0.357
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\Compressed\GSE262927_RAW.tar
+path              : raw_data/GSE262927/Compressed/GSE262927_RAW.tar
   file type       : tar archive
   inferred role   : GEO supplementary archive (already extracted)
   dataset/sample  : GSE262927 / -
@@ -350,7 +350,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_members: 33
     - members: ["GSM8181583_EEM-scRNA-113.h5", "GSM8181584_EEM-scRNA-116.h5", "GSM8181585_EEM-scRNA-117.h5", "GSM8181586_EEM-scRNA-118.h5", "GSM8181587_EEM-scRNA-124.h5", "GSM8181588_EEM-scRNA-125.h5", "GSM8181589_EEM-scRNA-126.h5", "GSM8181590_EEM-scRNA-127.h5", "GSM8181591_EEM-scRNA-158.h5", "GSM8181592_EEM-scRNA-162.h5", "GSM8181593_EEM-scRNA-166.h5", "GSM8181594_EEM-scRNA-167.h5", "GSM8181595_EEM-scRNA-170.h ...(truncated)
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_CellMetaData.csv
+path              : raw_data/GSE262927/GSE262927_CellMetaData.csv
   file type       : delimited text (comma)
   inferred role   : metadata / annotation table
   dataset/sample  : GSE262927 / -
@@ -365,7 +365,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_data_rows: 123189
     - fraction_numeric_in_first_row: 0.357
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181583_EEM-scRNA-113.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181583_EEM-scRNA-113.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-113
@@ -390,7 +390,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181583"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181584_EEM-scRNA-116.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181584_EEM-scRNA-116.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-116
@@ -415,7 +415,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181584"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181585_EEM-scRNA-117.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181585_EEM-scRNA-117.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-117
@@ -440,7 +440,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181585"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181586_EEM-scRNA-118.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181586_EEM-scRNA-118.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-118
@@ -465,7 +465,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181586"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181587_EEM-scRNA-124.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181587_EEM-scRNA-124.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-124
@@ -490,7 +490,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181587"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181588_EEM-scRNA-125.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181588_EEM-scRNA-125.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-125
@@ -515,7 +515,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181588"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181589_EEM-scRNA-126.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181589_EEM-scRNA-126.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-126
@@ -540,7 +540,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181589"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181590_EEM-scRNA-127.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181590_EEM-scRNA-127.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-127
@@ -565,7 +565,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181590"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181591_EEM-scRNA-158.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181591_EEM-scRNA-158.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-158
@@ -590,7 +590,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181591"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181592_EEM-scRNA-162.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181592_EEM-scRNA-162.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-162
@@ -615,7 +615,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181592"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181593_EEM-scRNA-166.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181593_EEM-scRNA-166.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-166
@@ -640,7 +640,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181593"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181594_EEM-scRNA-167.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181594_EEM-scRNA-167.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-167
@@ -665,7 +665,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181594"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181595_EEM-scRNA-170.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181595_EEM-scRNA-170.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-170
@@ -690,7 +690,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181595"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181596_EEM-scRNA-172.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181596_EEM-scRNA-172.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-172
@@ -715,7 +715,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181596"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181597_EEM-scRNA-179.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181597_EEM-scRNA-179.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-179
@@ -740,7 +740,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181597"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181598_EEM-scRNA-180.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181598_EEM-scRNA-180.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-180
@@ -765,7 +765,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181598"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181599_EEM-scRNA-181.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181599_EEM-scRNA-181.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-181
@@ -790,7 +790,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181599"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181600_EEM-scRNA-182.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181600_EEM-scRNA-182.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-182
@@ -815,7 +815,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181600"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181601_EEM-scRNA-236.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181601_EEM-scRNA-236.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-236
@@ -840,7 +840,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181601"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181602_EEM-scRNA-237.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181602_EEM-scRNA-237.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-237
@@ -865,7 +865,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181602"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181603_EEM-scRNA-238.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181603_EEM-scRNA-238.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-238
@@ -890,7 +890,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181603"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181604_EEM-scRNA-239.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181604_EEM-scRNA-239.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-239
@@ -915,7 +915,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181604"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181605_EEM-scRNA-249.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181605_EEM-scRNA-249.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-249
@@ -940,7 +940,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181605"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181606_EEM-scRNA-250.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181606_EEM-scRNA-250.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-250
@@ -965,7 +965,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181606"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181607_EEM-scRNA-251.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181607_EEM-scRNA-251.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-251
@@ -990,7 +990,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181607"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181608_EEM-scRNA-288.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181608_EEM-scRNA-288.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-288
@@ -1015,7 +1015,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181608"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181609_EEM-scRNA-289.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181609_EEM-scRNA-289.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-289
@@ -1040,7 +1040,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181609"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181610_EEM-scRNA-290.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181610_EEM-scRNA-290.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-290
@@ -1065,7 +1065,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181610"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181611_EEM-scRNA-291.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181611_EEM-scRNA-291.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-291
@@ -1090,7 +1090,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181611"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181612_EEM-scRNA-292.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181612_EEM-scRNA-292.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-292
@@ -1115,7 +1115,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181612"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181613_EEM-scRNA-310.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181613_EEM-scRNA-310.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-310
@@ -1140,7 +1140,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181613"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181614_EEM-scRNA-311.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181614_EEM-scRNA-311.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-311
@@ -1165,7 +1165,7 @@ path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927
     - n_duplicate_gene_symbols: 0
     - gsm: "GSM8181614"
 
-path              : C:\Users\dream\Documents\GitHub\scRNA_seq\raw_data\GSE262927\GSE262927_RAW\GSM8181615_EEM-scRNA-312.h5
+path              : raw_data/GSE262927/GSE262927_RAW/GSM8181615_EEM-scRNA-312.h5
   file type       : 10x CellRanger HDF5 (v3 layout)
   inferred role   : 10x count matrix, cell-called by barcode count
   dataset/sample  : GSE262927 / EEM-scRNA-312

@@ -41,7 +41,7 @@ import scipy.sparse as sp
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import markers as MK  # noqa: E402
-from pipeline_utils import (ANALYSIS, DATASETS, RANDOM_SEED, DatasetConfig,  # noqa: E402
+from pipeline_utils import (ANALYSIS, DATASETS, RANDOM_SEED, REPO, DatasetConfig,  # noqa: E402
                             ensure_dirs, figure_of, free_mem, log, mem_report,
                             sample_number, save_fig, setup_matplotlib)
 
@@ -59,6 +59,19 @@ np.random.seed(RANDOM_SEED)
 
 DECISIONS: dict[str, object] = {}
 _DECISIONS_PATH: Path | None = None
+
+
+def _repo_rel(path) -> str:
+    """Render current or previously recorded paths without checkout details."""
+    value = str(path).replace("\\", "/")
+    repo_prefix = REPO.as_posix().rstrip("/") + "/"
+    if value.lower().startswith(repo_prefix.lower()):
+        return value[len(repo_prefix):]
+    parts = [part for part in value.split("/") if part]
+    for anchor in ("raw_data", "analysis", "docs"):
+        if anchor in parts:
+            return "/".join(parts[parts.index(anchor):])
+    return value
 
 
 def load_decisions(path: Path) -> None:
@@ -2007,12 +2020,12 @@ def write_analysis_log(dirs: dict, cfg: DatasetConfig, fmt: dict,
     L = [
         "=" * 70, f"ANALYSIS LOG - {cfg.name}", "=" * 70, "",
         "=== DATA DISCOVERY ===",
-        f"Raw data directory: {cfg.raw_dir}",
+        f"Raw data directory: {_repo_rel(cfg.raw_dir)}",
         f"Input format: {d.get('input_format')}",
         f"Species: {d.get('species')}",
         f"Number of samples: {fmt.get('n_sample_files')}",
         f"Samples detected: {d.get('samples_detected')}",
-        f"Metadata detected: {d.get('metadata_table')}",
+        f"Metadata detected: {_repo_rel(d.get('metadata_table'))}",
         f"Counts appear raw/normalized/processed: "
         f"{'raw integer UMI counts' if d.get('counts_are_raw_integers') else 'not integer'}",
         f"Non-gene features removed: {fmt.get('non_gene_features_present')}",
@@ -2072,14 +2085,28 @@ def write_analysis_log(dirs: dict, cfg: DatasetConfig, fmt: dict,
 # driver
 # =============================================================================
 def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--dataset", required=True, choices=sorted(DATASETS))
-    ap.add_argument("--stages", default="all")
-    ap.add_argument("--workers", type=int, default=3)
-    ap.add_argument("--n-hvg", type=int, default=2500)
+    valid_stages = {"samples", "merge", "norm", "pca", "cluster", "markers",
+                    "figures", "epi", "finalize", "log"}
+    ap = argparse.ArgumentParser(
+        description="Run the reproducible scanpy workflow for one GEO series.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
+    ap.add_argument("--dataset", required=True, choices=sorted(DATASETS),
+                    help="GEO series to analyse")
+    ap.add_argument(
+        "--stages", default="all",
+        help="comma-separated stages, or 'all'; valid stages: "
+             + ", ".join(sorted(valid_stages)),
+    )
+    ap.add_argument("--workers", type=int, default=3,
+                    help="parallel workers for per-sample processing")
+    ap.add_argument("--n-hvg", type=int, default=2500,
+                    help="number of highly variable genes")
     ap.add_argument("--integration", default=None,
-                    choices=[None, "none", "harmony"])
-    ap.add_argument("--outdir", default=None)
+                    choices=["none", "harmony"],
+                    help="override the evidence-based integration decision")
+    ap.add_argument("--outdir", default=None,
+                    help="output directory (defaults to analysis/<dataset>)")
     ap.add_argument("--reuse-markers", action="store_true",
                     help="re-use the cluster marker table written by a previous "
                          "run instead of recomputing the Wilcoxon test; only "
@@ -2088,9 +2115,15 @@ def main() -> int:
 
     cfg = DATASETS[args.dataset](Path(args.outdir) if args.outdir else None)
     dirs = ensure_dirs(cfg)
-    stages = ({"samples", "merge", "norm", "pca", "cluster", "markers",
-               "figures", "epi", "finalize"} if args.stages == "all"
-              else set(args.stages.split(",")))
+    stages = (valid_stages - {"log"} if args.stages == "all"
+              else {stage.strip() for stage in args.stages.split(",")
+                    if stage.strip()})
+    unknown_stages = stages - valid_stages
+    if not stages:
+        ap.error("--stages must name at least one stage")
+    if unknown_stages:
+        ap.error("unknown --stages value(s): "
+                 + ", ".join(sorted(unknown_stages)))
 
     load_decisions(dirs["logs"] / "decisions.json")
     log(f"=== {cfg.name} === outdir={cfg.outdir}")

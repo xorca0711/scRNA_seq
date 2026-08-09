@@ -11,8 +11,9 @@ reference, including parameters the paper leaves unspecified, is
 > **This document describes the reference study's workflow, not the analysis in
 > this repository.** The analysis that was actually executed is a Python/scanpy
 > pipeline that follows this sequence only in part — it performs no ambient-RNA
-> correction, uses one doublet caller rather than two, and does no trajectory
-> analysis. See **[`docs/PIPELINE_AS_RUN.md`](docs/PIPELINE_AS_RUN.md)** for
+> correction, uses one doublet caller rather than two, and uses PAGA plus
+> diffusion pseudotime instead of Slingshot; no formal trajectory-DE model was
+> fitted. See **[`docs/PIPELINE_AS_RUN.md`](docs/PIPELINE_AS_RUN.md)** for
 > what was really run, stage by stage, and where it diverges from the paper.
 
 ---
@@ -155,7 +156,9 @@ Ednrb<sup>CreERT2</sup> 50.1 percent and 91.2 percent.
 
 ## Quality control acceptance order
 
-Apply in this order. Each gate assumes the previous one has run.
+In the reference study's workflow, these gates are applied in this order; each
+assumes the previous one has run. This is not a checklist of steps completed by
+the independent scanpy analysis in this repository.
 
 1. Ambient RNA corrected per channel, with the estimated contamination fraction
    recorded for every library.
