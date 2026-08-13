@@ -30,6 +30,8 @@ figures in [`FINDINGS.md`](FINDINGS.md)):
   human: Harmony), each from measured evidence — the experimental design
   decides, not a default.
 
+**Portfolio report:** [thesis-aware lung scRNA-seq synthesis](output/pdf/lung_scrna_portfolio_thesis_context.pdf) — human distal-lung and AT0 results first, with complementary regeneration, lineage-tracing, validation and limitation sections.
+
 ![Mouse atlas UMAP](analysis/GSE262927/figures/umap/UMAP_leiden_clusters_sidelegend.png)
 
 ## At a glance
@@ -122,6 +124,7 @@ python analysis/scripts/07_lineage_tracing_cohort.py
 python analysis/scripts/03_write_report.py --dataset GSE262927
 python analysis/scripts/03_write_report.py --dataset GSE178360
 python analysis/scripts/08_reference_aligned_epithelial_umap.py
+python analysis/scripts/09_write_portfolio_pdf.py
 python analysis/scripts/05_write_pipeline_as_run.py
 ```
 
