@@ -141,6 +141,25 @@ def build(dataset: str) -> tuple[str, str]:
 > the full unprocessed count matrices.
 """
 
+    reference_section = ""
+    reference_command = ""
+    if dataset == "GSE178360":
+        reference_command = "\npython analysis/scripts/08_reference_aligned_epithelial_umap.py"
+        reference_section = """
+### Reference-oriented epithelial figure set
+
+`analysis/scripts/08_reference_aligned_epithelial_umap.py` reads the saved
+epithelial object, retains 6,386 epithelial candidates, and applies a
+presentation-only 165.51-degree rotation to orient the major regions like
+Murthy et al. Fig. 1c. It does not recalculate neighbours or UMAP coordinates.
+
+Outputs under `epithelial_subanalysis/figures/reference_aligned/` include a
+distinct `SFTPC+SCGB3A2+ (AT0)` candidate, the primary
+`KRT8`/`CLDN4`/`KRT17`/`SFN` panel, supporting markers and transform metadata.
+Literal reference names are used only where marker-supported; unresolved
+states are listed rather than assigned by appearance.
+"""
+
     md = f"""# scRNA-seq analysis — {dataset}
 {sibling}
 
@@ -362,6 +381,8 @@ Markers requested by the analysis brief but absent from this matrix are listed
 in `tables/absent_markers.txt`{' (present)' if absent_p.exists() else ''} — no
 empty panels were plotted.
 
+{reference_section}
+
 ## Automatic QC review
 
 {chr(10).join('- ' + w for w in warns) if warns else '_No warnings raised._'}
@@ -371,7 +392,7 @@ empty panels were plotted.
 ```bash
 python analysis/scripts/01_scan_raw_data.py
 python analysis/scripts/run_scrna_analysis.py --dataset {dataset}
-python analysis/scripts/03_write_report.py --dataset {dataset}
+python analysis/scripts/03_write_report.py --dataset {dataset}{reference_command}
 ```
 
 Environment: `analysis/requirements.txt`. Random seed fixed at 0 throughout

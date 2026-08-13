@@ -1,0 +1,89 @@
+{
+  "dataset": "GSE178360",
+  "source_object": "analysis\\GSE178360\\epithelial_subanalysis\\epithelial_clustered.h5ad",
+  "source_n_cells": 7446,
+  "retained_n_cells": 6386,
+  "excluded_n_cells": 1060,
+  "subset_rule": "retain cells whose proposed_cell_type is one of the seven epithelial candidate identities",
+  "excluded_carryover_compartments": [
+    "immune",
+    "endothelial",
+    "plasma",
+    "mesothelial"
+  ],
+  "reference": {
+    "citation": "Murthy et al., Human distal lung maps and lineage hierarchies reveal a bipotent progenitor, Nature (2022)",
+    "doi": "10.1038/s41586-022-04541-3",
+    "figure": "Fig. 1c",
+    "pdf_page": 2
+  },
+  "display_transform": {
+    "operation_order": [
+      "mean-center retained subset",
+      "rotate"
+    ],
+    "centering_vector_original_umap": [
+      5.415210303524378,
+      4.157305333237159
+    ],
+    "rotation_degrees_counterclockwise": 165.510271,
+    "reflection": false,
+    "scaling": false,
+    "recomputed_umap": false,
+    "recomputed_neighbors": false
+  },
+  "primary_feature_genes": [
+    "KRT8",
+    "CLDN4",
+    "KRT17",
+    "SFN"
+  ],
+  "epithelial_reference_marker_genes": [
+    "SFTPC",
+    "SCGB3A2",
+    "SFTPB",
+    "SCGB1A1",
+    "KRT5",
+    "TP63",
+    "FOXJ1",
+    "AGER",
+    "KRT19"
+  ],
+  "off_compartment_control_genes": [
+    "CD3D",
+    "CD4",
+    "CD8A",
+    "FOXP3",
+    "LYZ",
+    "COL1A1",
+    "CTHRC1",
+    "PECAM1"
+  ],
+  "cluster_level_candidate_analogues": {
+    "6": "Ciliated cells (CC) | FOXJ1+ CAPS+ (candidate; L6)",
+    "9": "Ciliated-low state | CAPS+ TPPP3+; FOXJ1low (candidate; L9)",
+    "11": "Motile ciliated | FOXJ1+ DNAH+ (candidate; L11)",
+    "12": "FOXJ1+SCGB3A2+ (SCGB3A2-CC) | (candidate analogue; L12)",
+    "13": "Neuroendocrine cells | ASCL1+ CALCA+ CHGA+ (candidate; L13)",
+    "1": "SFTPB+KRT5+ basal cells (BC) | (candidate analogue; L1)",
+    "5": "SFTPB+KRT5low (Distal-BC-1) | (candidate analogue; L5)",
+    "15": "Differentiating basal cells | KRT17+ TP63+ KRT5low (candidate; L15)",
+    "3": "SFTPB+SCGB3A2+SCGB1A1low | (TRB-SC-like candidate; L3)",
+    "16": "SFTPB+SCGB3A2+SCGB1A1+ | (pre-TRB-SC analogue; L16)",
+    "17": "SCGB1A1+ secretory cells | SCGB3A2+ SFTPB+ (candidate; L17)",
+    "4": "SFTPC+SCGB3A2+ (AT0) | (candidate analogue; L4)",
+    "0": "AT2 | SFTPC+ SFTPB+ NAPSA+ (candidate; L0)",
+    "18": "AT1 | AGER+ CAV1+ HOPX+ (candidate; L18)"
+  },
+  "reference_states_not_separately_resolved": [
+    "Deuterosomal cells",
+    "Proliferating airway cells",
+    "SFTPB+KRT5- (Distal-BC-2)",
+    "SCGB1A1+MUC5B+",
+    "MUC5AC+MUC5B+",
+    "SFTPB+SCGB3A2+SCGB1A1- (TRB-SC)",
+    "Proliferating AT2",
+    "Immature AT1"
+  ],
+  "interpretation_guardrail": "Candidate identities are independently inferred and are not asserted to reproduce the authors' 18 clusters one-to-one."
+}

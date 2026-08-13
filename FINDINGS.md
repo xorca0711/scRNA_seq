@@ -114,6 +114,31 @@ comparison.
 
 ![Integration before and after](analysis/GSE178360/figures/umap/UMAP_integration_before_after.png)
 
+### Human epithelial states in the reference orientation
+
+To make the independently derived human epithelial embedding visually
+comparable with Murthy et al. Fig. 1c, the epithelial-only object is restricted
+to 6,386 epithelial candidates and given a single 165.51-degree display
+rotation. No neighbours, UMAP coordinates, distances or cluster memberships
+are recomputed. The 1,060 immune, endothelial, plasma and mesothelial
+carryover cells are excluded from this figure.
+
+All 14 retained Leiden regions are annotated. Published names are used only
+as marker-supported **candidate analogues**, never as transferred author
+labels. In particular, Leiden 4 is separated as the thesis-relevant
+`SFTPC+SCGB3A2+ (AT0)` candidate, while Leiden 0 is the conventional AT2
+candidate. Reference states not separately resolved by this embedding are
+listed on the figure rather than invented.
+
+![Reference-oriented human epithelial UMAP](analysis/GSE178360/epithelial_subanalysis/figures/reference_aligned/epithelial_UMAP_proposed_reference_aligned.png)
+
+The primary feature panel uses the identical cells and display transform for
+`KRT8`, `CLDN4`, `KRT17` and `SFN`. Separate epithelial reference-marker and
+off-compartment control panels are provided alongside individual high-resolution
+plots under `epithelial_subanalysis/figures/reference_aligned/`.
+
+![Reference-oriented primary epithelial markers](analysis/GSE178360/epithelial_subanalysis/figures/reference_aligned/epithelial_featureplots_KRT8_CLDN4_KRT17_SFN_reference_aligned.png)
+
 Reasoning in full, including what the papers changed:
 [`docs/ANALYSIS_RATIONALE.md`](docs/ANALYSIS_RATIONALE.md)
 
