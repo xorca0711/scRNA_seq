@@ -3,10 +3,15 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-08-09. **All planned work is complete**, and the repository
-has been restructured as a portfolio: `FINDINGS.md` (results with figures) now
+Last updated: 2026-09-09. The scientific analysis of the two series is
+complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
-`scRNAseq_workflow_Niethamer2025.md` moved to `docs/`. Nothing is running.
+`scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
+paper-by-paper roadmap directory was added (`Thesis/`, order taken from the
+owner's Notion PI Target Map) with the Sikkema 2023 HLCA study note, its
+decision criteria as reviewable JSON, a pipeline-framing proposal, and a
+first criteria trial on tracked tables. **Owner retain/reject review of that
+material is pending.** Nothing is running.
 
 ---
 
@@ -32,6 +37,13 @@ leads, `README.md` is a landing page for the executed analysis, and
 | `analysis/` reorganised into two series subdirectories | **DONE** |
 | Pipeline speedups (PCA, scan, threads) | **DONE** — verified output-identical |
 | Portfolio restructure (`FINDINGS.md`, README rewrite, root tidy-up) | **DONE** |
+| `Thesis/` roadmap index (11 papers, Notion order, PubMed-verified IDs) | **DONE** |
+| Sikkema 2023 (HLCA) study note, `integration_benchmark.json`, `PIPELINE_FRAMING.md` | **DONE, owner review pending** |
+| Trial S1: HLCA cluster-entropy criteria on the tracked tables | **DONE (2026-09-09); artefacts in Thesis/gate1_04_sikkema_2023_hlca/trials/** |
+| Trial S2: scArches mapping of GSE178360 to the HLCA core | **PLANNED**; environment Not established |
+| Trial S3: HLCA consensus-marker annotation of GSE178360 | **DONE (2026-09-09)**; 17 to 19 of 31 clusters agree with the blind proposals; AT0 by marker transfer Not established (scheme-dependent) |
+| Trial S4: mouse cluster 23 explained | **DONE (2026-09-09)**; low-count, ambient-like; 78% from EEM-scRNA-289 |
+| Trial S5: mouse cluster 5 subclustered and re-graded | **DONE (2026-09-09)**; resolved at Leiden 0.5 (94% of labelled cells in pure subclusters), not at 0.2 |
 
 Repository state: the scientific analysis and portfolio curation are complete;
 no analysis process is running. Branch-specific state belongs in Git/GitHub,
@@ -159,6 +171,30 @@ labelled cells.
    interferon-stimulated). 21 of 29 agree. Trust the deposited label where the
    two conflict.
 
+11. **`Thesis/` is now a tracked directory** (2026-09-09). Its Markdown is
+   link-checked by `validate_portfolio.py` like everything else. PDFs and
+   spreadsheets inside it remain gitignored; only notes, JSON and small
+   trial tables are tracked. Each new paper gets its own folder in the
+   roadmap order (`Thesis/README.md`), one at a time.
+12. **Mouse cluster 23 is a low-count, ambient-like barcode population, not a
+   cell type** (trial S4, 2026-09-09): median 1,868 counts against 6,790
+   atlas-wide, 84% of its cells detect three or more lineage markers, 78% of
+   it comes from EEM-scRNA-289 (a Car4-CreERT2 tracing animal) where it is
+   55% of the sample, and only 2% of its annotated-cohort cells carry an
+   author label. Exclude it from composition and state claims and flag
+   sample 289 in the lineage-tracing cohort. Adding this to the generated
+   mouse report is pending the owner's decision.
+13. **Human cluster 22 is mast cells, not B cells** (trial S3): both HLCA
+   marker schemes call Mast cells and the cluster's own top genes are TPSB2,
+   TPSAB1, CPA3 and KIT; the blind panel had no mast set. Correction of the
+   human annotation table is pending the owner's decision.
+14. **AT0 by HLCA marker transfer is scheme-dependent** (trial S3): the flat
+   argmax calls AT0 in most distal secretory and AT2 clusters and passes the
+   factor-of-two concordance with the strict gate; the hierarchical scheme
+   collapses AT0 to a few percent of the gate and relabels the AT0 candidate
+   analogue as AT2. Not established by this route; trial S2 (reference
+   mapping) is the route that can settle it.
+
 ---
 
 ## Optional extensions (not completion gaps)
@@ -170,6 +206,15 @@ labelled cells.
    programme summaries.
 
 ---
+
+3. Run trial S2 (map GSE178360 to the HLCA core with scArches, transfer
+   labels with the 0.2 uncertainty cutoff, compare with the blind and
+   deposited annotations, AT0 check). Blocked on environment work
+   (PyTorch and scArches in the emulated interpreter); the plan and the
+   pre-registered success criteria are in
+   `Thesis/gate1_04_sikkema_2023_hlca/ANALYSIS_TRIAL_PLAN.md`.
+4. Add the next roadmap papers (Choi 2020, Nabhan 2018) as folders under
+   `Thesis/` in order, each with its five-question note.
 
 ## Directory layout
 

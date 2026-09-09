@@ -1,0 +1,4127 @@
+{
+  "trial": "S1 entropy criteria from Sikkema et al. 2023 applied to tracked cluster tables",
+  "run_date": "2026-09-09",
+  "rules_frozen_before_reading_tables": {
+    "label_entropy_high": 0.56,
+    "min_labelled_fraction": 0.2,
+    "donor_private_fraction": 0.95,
+    "min_cells_per_stratum": 50,
+    "log_base": "natural",
+    "source": "Sikkema et al. 2023, Methods: Thresholds for high label/donor entropy and doublet clusters; multidisease analysis (50-cell rule)"
+  },
+  "hlca_reference_thresholds": {
+    "label_entropy_high": 0.56,
+    "donor_entropy_low_107_donors": 0.43,
+    "donor_threshold_recomputed_here": true
+  },
+  "inputs": [
+    "analysis/GSE262927/tables/cluster_vs_author_celltype_counts.csv",
+    "analysis/GSE262927/tables/cluster_by_sample_counts.csv",
+    "analysis/GSE262927/tables/cluster_annotation_proposals.csv",
+    "analysis/GSE262927/regeneration_focus/tables/transitional_abundance_per_sample.csv",
+    "analysis/GSE262927/lineage_tracing_cohort/tables/icap_tracing_by_cre_line.csv",
+    "analysis/GSE178360/tables/cluster_by_sample_counts.csv"
+  ],
+  "datasets": {
+    "GSE262927": {
+      "n_clusters": 29,
+      "n_samples": 33,
+      "strata": {
+        "day_000": [
+          "EEM-scRNA-158",
+          "EEM-scRNA-166"
+        ],
+        "day_006": [
+          "EEM-scRNA-113",
+          "EEM-scRNA-162"
+        ],
+        "day_011": [
+          "EEM-scRNA-116",
+          "EEM-scRNA-167"
+        ],
+        "day_019": [
+          "EEM-scRNA-117",
+          "EEM-scRNA-170"
+        ],
+        "day_025": [
+          "EEM-scRNA-118",
+          "EEM-scRNA-172"
+        ],
+        "day_042": [
+          "EEM-scRNA-124",
+          "EEM-scRNA-125",
+          "EEM-scRNA-126",
+          "EEM-scRNA-127",
+          "EEM-scRNA-179",
+          "EEM-scRNA-180",
+          "EEM-scRNA-181",
+          "EEM-scRNA-182"
+        ],
+        "day_090": [
+          "EEM-scRNA-236",
+          "EEM-scRNA-237",
+          "EEM-scRNA-238",
+          "EEM-scRNA-239"
+        ],
+        "day_366": [
+          "EEM-scRNA-310",
+          "EEM-scRNA-311",
+          "EEM-scRNA-312"
+        ],
+        "tracing_Car4-CreERT2": [
+          "EEM-scRNA-288",
+          "EEM-scRNA-289"
+        ],
+        "tracing_Ednrb-CreERT2": [
+          "EEM-scRNA-290",
+          "EEM-scRNA-291",
+          "EEM-scRNA-292"
+        ],
+        "tracing_Kit-MerCreMer": [
+          "EEM-scRNA-249",
+          "EEM-scRNA-250",
+          "EEM-scRNA-251"
+        ]
+      },
+      "label_entropy": [
+        {
+          "cluster": "0",
+          "n_cells": 4130,
+          "labelled_fraction": 0.8518,
+          "label_entropy": 0.4264,
+          "flag": "low",
+          "top_label": "CAP1",
+          "top_label_fraction": 0.8917
+        },
+        {
+          "cluster": "1",
+          "n_cells": 31808,
+          "labelled_fraction": 0.7541,
+          "label_entropy": 0.1247,
+          "flag": "low",
+          "top_label": "CAP1",
+          "top_label_fraction": 0.9777
+        },
+        {
+          "cluster": "2",
+          "n_cells": 1047,
+          "labelled_fraction": 0.1232,
+          "label_entropy": null,
+          "flag": "NA (< 20% labelled)",
+          "top_label": "AF1",
+          "top_label_fraction": null
+        },
+        {
+          "cluster": "3",
+          "n_cells": 14467,
+          "labelled_fraction": 0.7812,
+          "label_entropy": 0.0649,
+          "flag": "low",
+          "top_label": "CAP1",
+          "top_label_fraction": 0.9901
+        },
+        {
+          "cluster": "4",
+          "n_cells": 5728,
+          "labelled_fraction": 0.4275,
+          "label_entropy": 0.1479,
+          "flag": "low",
+          "top_label": "CAP1",
+          "top_label_fraction": 0.9763
+        },
+        {
+          "cluster": "5",
+          "n_cells": 6462,
+          "labelled_fraction": 0.7331,
+          "label_entropy": 1.8496,
+          "flag": "HIGH",
+          "top_label": "cMON",
+          "top_label_fraction": 0.2187
+        },
+        {
+          "cluster": "6",
+          "n_cells": 3301,
+          "labelled_fraction": 0.7498,
+          "label_entropy": 0.2186,
+          "flag": "low",
+          "top_label": "B_lymphocyte",
+          "top_label_fraction": 0.9471
+        },
+        {
+          "cluster": "7",
+          "n_cells": 2038,
+          "labelled_fraction": 0.2267,
+          "label_entropy": 1.1402,
+          "flag": "HIGH",
+          "top_label": "CAP1",
+          "top_label_fraction": 0.6515
+        },
+        {
+          "cluster": "8",
+          "n_cells": 1584,
+          "labelled_fraction": 0.7538,
+          "label_entropy": 0.269,
+          "flag": "low",
+          "top_label": "Arterial_endothelium",
+          "top_label_fraction": 0.9271
+        },
+        {
+          "cluster": "9",
+          "n_cells": 3705,
+          "labelled_fraction": 0.7771,
+          "label_entropy": 0.2255,
+          "flag": "low",
+          "top_label": "Venous_endothelium",
+          "top_label_fraction": 0.9413
+        },
+        {
+          "cluster": "10",
+          "n_cells": 5763,
+          "labelled_fraction": 0.713,
+          "label_entropy": 0.7519,
+          "flag": "HIGH",
+          "top_label": "AT2",
+          "top_label_fraction": 0.7973
+        },
+        {
+          "cluster": "11",
+          "n_cells": 16,
+          "labelled_fraction": 0.0625,
+          "label_entropy": null,
+          "flag": "NA (< 20% labelled)",
+          "top_label": "Adventitial_fibroblast",
+          "top_label_fraction": null
+        },
+        {
+          "cluster": "12",
+          "n_cells": 6357,
+          "labelled_fraction": 0.2018,
+          "label_entropy": 0.3252,
+          "flag": "low",
+          "top_label": "AF1",
+          "top_label_fraction": 0.9275
+        },
+        {
+          "cluster": "13",
+          "n_cells": 5543,
+          "labelled_fraction": 0.656,
+          "label_entropy": 0.3797,
+          "flag": "low",
+          "top_label": "T_lymphocyte",
+          "top_label_fraction": 0.8765
+        },
+        {
+          "cluster": "14",
+          "n_cells": 24886,
+          "labelled_fraction": 0.7722,
+          "label_entropy": 0.189,
+          "flag": "low",
+          "top_label": "AF1",
+          "top_label_fraction": 0.957
+        },
+        {
+          "cluster": "15",
+          "n_cells": 6440,
+          "labelled_fraction": 0.7843,
+          "label_entropy": 0.1257,
+          "flag": "low",
+          "top_label": "Adventitial_fibroblast",
+          "top_label_fraction": 0.9762
+        },
+        {
+          "cluster": "16",
+          "n_cells": 4284,
+          "labelled_fraction": 0.4176,
+          "label_entropy": 0.132,
+          "flag": "low",
+          "top_label": "AT1",
+          "top_label_fraction": 0.976
+        },
+        {
+          "cluster": "17",
+          "n_cells": 5679,
+          "labelled_fraction": 0.71,
+          "label_entropy": 0.2144,
+          "flag": "low",
+          "top_label": "aMAC",
+          "top_label_fraction": 0.9462
+        },
+        {
+          "cluster": "18",
+          "n_cells": 1674,
+          "labelled_fraction": 0.7646,
+          "label_entropy": 0.1145,
+          "flag": "low",
+          "top_label": "Ciliated",
+          "top_label_fraction": 0.9836
+        },
+        {
+          "cluster": "19",
+          "n_cells": 1612,
+          "labelled_fraction": 0.7854,
+          "label_entropy": 0.3656,
+          "flag": "low",
+          "top_label": "Krt5",
+          "top_label_fraction": 0.8989
+        },
+        {
+          "cluster": "20",
+          "n_cells": 2364,
+          "labelled_fraction": 0.7255,
+          "label_entropy": 0.0148,
+          "flag": "low",
+          "top_label": "Lymphatic_endothelium",
+          "top_label_fraction": 0.9983
+        },
+        {
+          "cluster": "21",
+          "n_cells": 11006,
+          "labelled_fraction": 0.4138,
+          "label_entropy": 0.5022,
+          "flag": "low",
+          "top_label": "CAP2",
+          "top_label_fraction": 0.8173
+        },
+        {
+          "cluster": "22",
+          "n_cells": 5152,
+          "labelled_fraction": 0.6621,
+          "label_entropy": 0.6455,
+          "flag": "HIGH",
+          "top_label": "AF2",
+          "top_label_fraction": 0.6995
+        },
+        {
+          "cluster": "23",
+          "n_cells": 2912,
+          "labelled_fraction": 0.0048,
+          "label_entropy": null,
+          "flag": "NA (< 20% labelled)",
+          "top_label": "CAP1",
+          "top_label_fraction": null
+        },
+        {
+          "cluster": "24",
+          "n_cells": 1500,
+          "labelled_fraction": 0.8187,
+          "label_entropy": 0.0187,
+          "flag": "low",
+          "top_label": "Neutrophil",
+          "top_label_fraction": 0.9976
+        },
+        {
+          "cluster": "25",
+          "n_cells": 1367,
+          "labelled_fraction": 0.7352,
+          "label_entropy": 0.0878,
+          "flag": "low",
+          "top_label": "Peribronchial_fibroblast",
+          "top_label_fraction": 0.9861
+        },
+        {
+          "cluster": "26",
+          "n_cells": 1120,
+          "labelled_fraction": 0.8045,
+          "label_entropy": 0.0173,
+          "flag": "low",
+          "top_label": "Mesothelium",
+          "top_label_fraction": 0.9978
+        },
+        {
+          "cluster": "27",
+          "n_cells": 54,
+          "labelled_fraction": 0.0,
+          "label_entropy": null,
+          "flag": "NA (< 20% labelled)",
+          "top_label": null,
+          "top_label_fraction": null
+        },
+        {
+          "cluster": "28",
+          "n_cells": 176,
+          "labelled_fraction": 0.0227,
+          "label_entropy": null,
+          "flag": "NA (< 20% labelled)",
+          "top_label": "CAP1",
+          "top_label_fraction": null
+        }
+      ],
+      "label_entropy_summary": {
+        "clusters_high": [
+          "5",
+          "7",
+          "10",
+          "22"
+        ],
+        "clusters_na": [
+          "2",
+          "11",
+          "23",
+          "27",
+          "28"
+        ],
+        "contradicted_by_deposited_labels_in_annotation_table": [
+          "0",
+          "22",
+          "25"
+        ],
+        "overlap_high_and_contradicted": [
+          "22"
+        ]
+      },
+      "donor_entropy_stratified": [
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "0",
+          "n_cells": 57,
+          "donor_entropy": 0.6856,
+          "max_donor_fraction": 0.5614,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "1",
+          "n_cells": 2807,
+          "donor_entropy": 0.678,
+          "max_donor_fraction": 0.5867,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "2",
+          "n_cells": 12,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "3",
+          "n_cells": 100,
+          "donor_entropy": 0.6931,
+          "max_donor_fraction": 0.5,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "4",
+          "n_cells": 702,
+          "donor_entropy": 0.4506,
+          "max_donor_fraction": 0.8333,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "5",
+          "n_cells": 662,
+          "donor_entropy": 0.6743,
+          "max_donor_fraction": 0.5967,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "6",
+          "n_cells": 407,
+          "donor_entropy": 0.6931,
+          "max_donor_fraction": 0.5061,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "7",
+          "n_cells": 162,
+          "donor_entropy": 0.687,
+          "max_donor_fraction": 0.5556,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "8",
+          "n_cells": 137,
+          "donor_entropy": 0.6706,
+          "max_donor_fraction": 0.6058,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "9",
+          "n_cells": 236,
+          "donor_entropy": 0.6839,
+          "max_donor_fraction": 0.5678,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "10",
+          "n_cells": 364,
+          "donor_entropy": 0.4476,
+          "max_donor_fraction": 0.8352,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "11",
+          "n_cells": 0,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "12",
+          "n_cells": 433,
+          "donor_entropy": 0.5741,
+          "max_donor_fraction": 0.739,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "13",
+          "n_cells": 392,
+          "donor_entropy": 0.6902,
+          "max_donor_fraction": 0.5383,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "14",
+          "n_cells": 1593,
+          "donor_entropy": 0.6931,
+          "max_donor_fraction": 0.5047,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "15",
+          "n_cells": 453,
+          "donor_entropy": 0.6786,
+          "max_donor_fraction": 0.585,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "16",
+          "n_cells": 461,
+          "donor_entropy": 0.6909,
+          "max_donor_fraction": 0.5336,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "17",
+          "n_cells": 358,
+          "donor_entropy": 0.6826,
+          "max_donor_fraction": 0.5726,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "18",
+          "n_cells": 78,
+          "donor_entropy": 0.6918,
+          "max_donor_fraction": 0.5256,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "19",
+          "n_cells": 18,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "20",
+          "n_cells": 72,
+          "donor_entropy": 0.6541,
+          "max_donor_fraction": 0.6389,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "21",
+          "n_cells": 1082,
+          "donor_entropy": 0.6913,
+          "max_donor_fraction": 0.5305,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "22",
+          "n_cells": 547,
+          "donor_entropy": 0.6837,
+          "max_donor_fraction": 0.5686,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "23",
+          "n_cells": 0,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "24",
+          "n_cells": 143,
+          "donor_entropy": 0.6861,
+          "max_donor_fraction": 0.5594,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "25",
+          "n_cells": 97,
+          "donor_entropy": 0.6009,
+          "max_donor_fraction": 0.7113,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "26",
+          "n_cells": 80,
+          "donor_entropy": 0.6616,
+          "max_donor_fraction": 0.625,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "27",
+          "n_cells": 4,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_000",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "28",
+          "n_cells": 19,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "0",
+          "n_cells": 3567,
+          "donor_entropy": 0.6194,
+          "max_donor_fraction": 0.6897,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "1",
+          "n_cells": 208,
+          "donor_entropy": 0.6591,
+          "max_donor_fraction": 0.6298,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "2",
+          "n_cells": 25,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "3",
+          "n_cells": 51,
+          "donor_entropy": 0.5214,
+          "max_donor_fraction": 0.7843,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "4",
+          "n_cells": 196,
+          "donor_entropy": 0.6653,
+          "max_donor_fraction": 0.6173,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "5",
+          "n_cells": 877,
+          "donor_entropy": 0.5045,
+          "max_donor_fraction": 0.797,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "6",
+          "n_cells": 176,
+          "donor_entropy": 0.5217,
+          "max_donor_fraction": 0.7841,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "7",
+          "n_cells": 36,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "8",
+          "n_cells": 95,
+          "donor_entropy": 0.6635,
+          "max_donor_fraction": 0.6211,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "9",
+          "n_cells": 132,
+          "donor_entropy": 0.6511,
+          "max_donor_fraction": 0.6439,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "10",
+          "n_cells": 331,
+          "donor_entropy": 0.6903,
+          "max_donor_fraction": 0.5378,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "11",
+          "n_cells": 0,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "12",
+          "n_cells": 1052,
+          "donor_entropy": 0.6812,
+          "max_donor_fraction": 0.577,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "13",
+          "n_cells": 245,
+          "donor_entropy": 0.6193,
+          "max_donor_fraction": 0.6898,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "14",
+          "n_cells": 454,
+          "donor_entropy": 0.6884,
+          "max_donor_fraction": 0.5485,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "15",
+          "n_cells": 178,
+          "donor_entropy": 0.6702,
+          "max_donor_fraction": 0.6067,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "16",
+          "n_cells": 152,
+          "donor_entropy": 0.6928,
+          "max_donor_fraction": 0.5132,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "17",
+          "n_cells": 27,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "18",
+          "n_cells": 93,
+          "donor_entropy": 0.6206,
+          "max_donor_fraction": 0.6882,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "19",
+          "n_cells": 3,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "20",
+          "n_cells": 94,
+          "donor_entropy": 0.6931,
+          "max_donor_fraction": 0.5,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "21",
+          "n_cells": 113,
+          "donor_entropy": 0.69,
+          "max_donor_fraction": 0.5398,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "22",
+          "n_cells": 502,
+          "donor_entropy": 0.6732,
+          "max_donor_fraction": 0.5996,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "23",
+          "n_cells": 4,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "24",
+          "n_cells": 102,
+          "donor_entropy": 0.6883,
+          "max_donor_fraction": 0.549,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "25",
+          "n_cells": 55,
+          "donor_entropy": 0.689,
+          "max_donor_fraction": 0.5455,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "26",
+          "n_cells": 33,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "27",
+          "n_cells": 3,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_006",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "28",
+          "n_cells": 1,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "0",
+          "n_cells": 199,
+          "donor_entropy": 0.4326,
+          "max_donor_fraction": 0.8442,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "1",
+          "n_cells": 1486,
+          "donor_entropy": 0.6345,
+          "max_donor_fraction": 0.6696,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "2",
+          "n_cells": 310,
+          "donor_entropy": 0.6821,
+          "max_donor_fraction": 0.5742,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "3",
+          "n_cells": 1301,
+          "donor_entropy": 0.6463,
+          "max_donor_fraction": 0.6518,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "4",
+          "n_cells": 188,
+          "donor_entropy": 0.6135,
+          "max_donor_fraction": 0.6968,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "5",
+          "n_cells": 650,
+          "donor_entropy": 0.5682,
+          "max_donor_fraction": 0.7446,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "6",
+          "n_cells": 183,
+          "donor_entropy": 0.3215,
+          "max_donor_fraction": 0.9016,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "7",
+          "n_cells": 141,
+          "donor_entropy": 0.6931,
+          "max_donor_fraction": 0.5035,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "8",
+          "n_cells": 146,
+          "donor_entropy": 0.6898,
+          "max_donor_fraction": 0.5411,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "9",
+          "n_cells": 200,
+          "donor_entropy": 0.6931,
+          "max_donor_fraction": 0.5,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "10",
+          "n_cells": 353,
+          "donor_entropy": 0.498,
+          "max_donor_fraction": 0.8017,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "11",
+          "n_cells": 0,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "12",
+          "n_cells": 275,
+          "donor_entropy": 0.6841,
+          "max_donor_fraction": 0.5673,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "13",
+          "n_cells": 515,
+          "donor_entropy": 0.5907,
+          "max_donor_fraction": 0.7223,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "14",
+          "n_cells": 1508,
+          "donor_entropy": 0.6926,
+          "max_donor_fraction": 0.5159,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "15",
+          "n_cells": 480,
+          "donor_entropy": 0.6487,
+          "max_donor_fraction": 0.6479,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "16",
+          "n_cells": 251,
+          "donor_entropy": 0.559,
+          "max_donor_fraction": 0.753,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "17",
+          "n_cells": 161,
+          "donor_entropy": 0.3372,
+          "max_donor_fraction": 0.8944,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "18",
+          "n_cells": 97,
+          "donor_entropy": 0.6918,
+          "max_donor_fraction": 0.5258,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "19",
+          "n_cells": 6,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "20",
+          "n_cells": 163,
+          "donor_entropy": 0.6307,
+          "max_donor_fraction": 0.6748,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "21",
+          "n_cells": 699,
+          "donor_entropy": 0.6727,
+          "max_donor_fraction": 0.6009,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "22",
+          "n_cells": 293,
+          "donor_entropy": 0.6915,
+          "max_donor_fraction": 0.529,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "23",
+          "n_cells": 2,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "24",
+          "n_cells": 146,
+          "donor_entropy": 0.6916,
+          "max_donor_fraction": 0.5274,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "25",
+          "n_cells": 141,
+          "donor_entropy": 0.6747,
+          "max_donor_fraction": 0.5957,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "26",
+          "n_cells": 102,
+          "donor_entropy": 0.6058,
+          "max_donor_fraction": 0.7059,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "27",
+          "n_cells": 7,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_011",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "28",
+          "n_cells": 28,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "0",
+          "n_cells": 32,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "1",
+          "n_cells": 1861,
+          "donor_entropy": 0.6931,
+          "max_donor_fraction": 0.5008,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "2",
+          "n_cells": 135,
+          "donor_entropy": 0.6508,
+          "max_donor_fraction": 0.6444,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "3",
+          "n_cells": 1099,
+          "donor_entropy": 0.6807,
+          "max_donor_fraction": 0.5787,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "4",
+          "n_cells": 56,
+          "donor_entropy": 0.5811,
+          "max_donor_fraction": 0.7321,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "5",
+          "n_cells": 370,
+          "donor_entropy": 0.5548,
+          "max_donor_fraction": 0.7568,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "6",
+          "n_cells": 162,
+          "donor_entropy": 0.497,
+          "max_donor_fraction": 0.8025,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "7",
+          "n_cells": 172,
+          "donor_entropy": 0.6467,
+          "max_donor_fraction": 0.6512,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "8",
+          "n_cells": 109,
+          "donor_entropy": 0.6911,
+          "max_donor_fraction": 0.5321,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "9",
+          "n_cells": 209,
+          "donor_entropy": 0.6835,
+          "max_donor_fraction": 0.5694,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "10",
+          "n_cells": 338,
+          "donor_entropy": 0.6854,
+          "max_donor_fraction": 0.5621,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "11",
+          "n_cells": 15,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "12",
+          "n_cells": 100,
+          "donor_entropy": 0.6109,
+          "max_donor_fraction": 0.7,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "13",
+          "n_cells": 322,
+          "donor_entropy": 0.6314,
+          "max_donor_fraction": 0.6739,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "14",
+          "n_cells": 1612,
+          "donor_entropy": 0.6537,
+          "max_donor_fraction": 0.6396,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "15",
+          "n_cells": 513,
+          "donor_entropy": 0.6787,
+          "max_donor_fraction": 0.5848,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "16",
+          "n_cells": 183,
+          "donor_entropy": 0.6245,
+          "max_donor_fraction": 0.6831,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "17",
+          "n_cells": 473,
+          "donor_entropy": 0.6612,
+          "max_donor_fraction": 0.6258,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "18",
+          "n_cells": 123,
+          "donor_entropy": 0.6689,
+          "max_donor_fraction": 0.6098,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "19",
+          "n_cells": 57,
+          "donor_entropy": 0.4056,
+          "max_donor_fraction": 0.8596,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "20",
+          "n_cells": 179,
+          "donor_entropy": 0.6692,
+          "max_donor_fraction": 0.6089,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "21",
+          "n_cells": 672,
+          "donor_entropy": 0.676,
+          "max_donor_fraction": 0.5923,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "22",
+          "n_cells": 257,
+          "donor_entropy": 0.6588,
+          "max_donor_fraction": 0.6304,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "23",
+          "n_cells": 1,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "24",
+          "n_cells": 117,
+          "donor_entropy": 0.56,
+          "max_donor_fraction": 0.7521,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "25",
+          "n_cells": 88,
+          "donor_entropy": 0.6804,
+          "max_donor_fraction": 0.5795,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "26",
+          "n_cells": 73,
+          "donor_entropy": 0.6719,
+          "max_donor_fraction": 0.6027,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "27",
+          "n_cells": 0,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_019",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "28",
+          "n_cells": 14,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "0",
+          "n_cells": 44,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "1",
+          "n_cells": 1478,
+          "donor_entropy": 0.6883,
+          "max_donor_fraction": 0.5494,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "2",
+          "n_cells": 47,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "3",
+          "n_cells": 1168,
+          "donor_entropy": 0.5961,
+          "max_donor_fraction": 0.7166,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "4",
+          "n_cells": 421,
+          "donor_entropy": 0.6513,
+          "max_donor_fraction": 0.6437,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "5",
+          "n_cells": 320,
+          "donor_entropy": 0.6717,
+          "max_donor_fraction": 0.6031,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "6",
+          "n_cells": 340,
+          "donor_entropy": 0.5004,
+          "max_donor_fraction": 0.8,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "7",
+          "n_cells": 144,
+          "donor_entropy": 0.6264,
+          "max_donor_fraction": 0.6806,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "8",
+          "n_cells": 97,
+          "donor_entropy": 0.6841,
+          "max_donor_fraction": 0.567,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "9",
+          "n_cells": 189,
+          "donor_entropy": 0.6857,
+          "max_donor_fraction": 0.5608,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "10",
+          "n_cells": 418,
+          "donor_entropy": 0.636,
+          "max_donor_fraction": 0.6675,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "11",
+          "n_cells": 1,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "12",
+          "n_cells": 317,
+          "donor_entropy": 0.6456,
+          "max_donor_fraction": 0.653,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "13",
+          "n_cells": 339,
+          "donor_entropy": 0.5987,
+          "max_donor_fraction": 0.7139,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "14",
+          "n_cells": 1372,
+          "donor_entropy": 0.6924,
+          "max_donor_fraction": 0.5197,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "15",
+          "n_cells": 422,
+          "donor_entropy": 0.6872,
+          "max_donor_fraction": 0.5545,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "16",
+          "n_cells": 282,
+          "donor_entropy": 0.6747,
+          "max_donor_fraction": 0.5957,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "17",
+          "n_cells": 280,
+          "donor_entropy": 0.5916,
+          "max_donor_fraction": 0.7214,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "18",
+          "n_cells": 127,
+          "donor_entropy": 0.6924,
+          "max_donor_fraction": 0.5197,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "19",
+          "n_cells": 32,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "20",
+          "n_cells": 294,
+          "donor_entropy": 0.5642,
+          "max_donor_fraction": 0.7483,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "21",
+          "n_cells": 530,
+          "donor_entropy": 0.6186,
+          "max_donor_fraction": 0.6906,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "22",
+          "n_cells": 334,
+          "donor_entropy": 0.6399,
+          "max_donor_fraction": 0.6617,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "23",
+          "n_cells": 230,
+          "donor_entropy": 0.3438,
+          "max_donor_fraction": 0.8913,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "24",
+          "n_cells": 76,
+          "donor_entropy": 0.6424,
+          "max_donor_fraction": 0.6579,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "25",
+          "n_cells": 88,
+          "donor_entropy": 0.6804,
+          "max_donor_fraction": 0.5795,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "26",
+          "n_cells": 106,
+          "donor_entropy": 0.6673,
+          "max_donor_fraction": 0.6132,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "27",
+          "n_cells": 7,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_025",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "28",
+          "n_cells": 10,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "0",
+          "n_cells": 121,
+          "donor_entropy": 1.7573,
+          "max_donor_fraction": 0.3554,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "1",
+          "n_cells": 9960,
+          "donor_entropy": 2.002,
+          "max_donor_fraction": 0.1941,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "2",
+          "n_cells": 39,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "3",
+          "n_cells": 4338,
+          "donor_entropy": 1.9869,
+          "max_donor_fraction": 0.2098,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "4",
+          "n_cells": 1338,
+          "donor_entropy": 1.9373,
+          "max_donor_fraction": 0.2414,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "5",
+          "n_cells": 1263,
+          "donor_entropy": 1.9423,
+          "max_donor_fraction": 0.2272,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "6",
+          "n_cells": 818,
+          "donor_entropy": 1.9104,
+          "max_donor_fraction": 0.3032,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "7",
+          "n_cells": 447,
+          "donor_entropy": 1.7968,
+          "max_donor_fraction": 0.2886,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "8",
+          "n_cells": 298,
+          "donor_entropy": 2.0014,
+          "max_donor_fraction": 0.2215,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "9",
+          "n_cells": 865,
+          "donor_entropy": 2.0325,
+          "max_donor_fraction": 0.178,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "10",
+          "n_cells": 850,
+          "donor_entropy": 2.0279,
+          "max_donor_fraction": 0.1929,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "11",
+          "n_cells": 0,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "12",
+          "n_cells": 1572,
+          "donor_entropy": 2.0565,
+          "max_donor_fraction": 0.1603,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "13",
+          "n_cells": 1138,
+          "donor_entropy": 1.9337,
+          "max_donor_fraction": 0.2557,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "14",
+          "n_cells": 6887,
+          "donor_entropy": 2.051,
+          "max_donor_fraction": 0.1832,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "15",
+          "n_cells": 1329,
+          "donor_entropy": 2.051,
+          "max_donor_fraction": 0.1603,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "16",
+          "n_cells": 658,
+          "donor_entropy": 2.0249,
+          "max_donor_fraction": 0.1976,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "17",
+          "n_cells": 1866,
+          "donor_entropy": 1.8715,
+          "max_donor_fraction": 0.2213,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "18",
+          "n_cells": 249,
+          "donor_entropy": 1.968,
+          "max_donor_fraction": 0.2008,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "19",
+          "n_cells": 602,
+          "donor_entropy": 1.2838,
+          "max_donor_fraction": 0.6179,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "20",
+          "n_cells": 508,
+          "donor_entropy": 2.0493,
+          "max_donor_fraction": 0.1614,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "21",
+          "n_cells": 3673,
+          "donor_entropy": 1.999,
+          "max_donor_fraction": 0.2211,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "22",
+          "n_cells": 763,
+          "donor_entropy": 2.038,
+          "max_donor_fraction": 0.1887,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "23",
+          "n_cells": 389,
+          "donor_entropy": -0.0,
+          "max_donor_fraction": 1.0,
+          "flag": "LOW (donor-private)"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "24",
+          "n_cells": 413,
+          "donor_entropy": 2.026,
+          "max_donor_fraction": 0.1743,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "25",
+          "n_cells": 290,
+          "donor_entropy": 1.9976,
+          "max_donor_fraction": 0.2103,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "26",
+          "n_cells": 242,
+          "donor_entropy": 1.7568,
+          "max_donor_fraction": 0.2893,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "27",
+          "n_cells": 7,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_042",
+          "n_donors": 8,
+          "threshold": 0.2958,
+          "cluster": "28",
+          "n_cells": 42,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "0",
+          "n_cells": 48,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "1",
+          "n_cells": 3966,
+          "donor_entropy": 1.3412,
+          "max_donor_fraction": 0.3346,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "2",
+          "n_cells": 69,
+          "donor_entropy": 1.1039,
+          "max_donor_fraction": 0.4348,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "3",
+          "n_cells": 2455,
+          "donor_entropy": 1.2834,
+          "max_donor_fraction": 0.3992,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "4",
+          "n_cells": 770,
+          "donor_entropy": 1.1338,
+          "max_donor_fraction": 0.5455,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "5",
+          "n_cells": 688,
+          "donor_entropy": 1.36,
+          "max_donor_fraction": 0.3125,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "6",
+          "n_cells": 251,
+          "donor_entropy": 1.3679,
+          "max_donor_fraction": 0.2829,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "7",
+          "n_cells": 390,
+          "donor_entropy": 1.2223,
+          "max_donor_fraction": 0.5128,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "8",
+          "n_cells": 202,
+          "donor_entropy": 1.348,
+          "max_donor_fraction": 0.3416,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "9",
+          "n_cells": 651,
+          "donor_entropy": 1.3036,
+          "max_donor_fraction": 0.3441,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "10",
+          "n_cells": 832,
+          "donor_entropy": 1.3138,
+          "max_donor_fraction": 0.3642,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "11",
+          "n_cells": 0,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "12",
+          "n_cells": 915,
+          "donor_entropy": 1.3473,
+          "max_donor_fraction": 0.365,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "13",
+          "n_cells": 607,
+          "donor_entropy": 1.3269,
+          "max_donor_fraction": 0.3394,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "14",
+          "n_cells": 4487,
+          "donor_entropy": 1.3192,
+          "max_donor_fraction": 0.3615,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "15",
+          "n_cells": 1292,
+          "donor_entropy": 1.1786,
+          "max_donor_fraction": 0.4528,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "16",
+          "n_cells": 638,
+          "donor_entropy": 1.1654,
+          "max_donor_fraction": 0.5392,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "17",
+          "n_cells": 668,
+          "donor_entropy": 1.3026,
+          "max_donor_fraction": 0.4012,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "18",
+          "n_cells": 206,
+          "donor_entropy": 1.3168,
+          "max_donor_fraction": 0.4175,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "19",
+          "n_cells": 370,
+          "donor_entropy": 1.3386,
+          "max_donor_fraction": 0.3757,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "20",
+          "n_cells": 294,
+          "donor_entropy": 1.2953,
+          "max_donor_fraction": 0.3435,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "21",
+          "n_cells": 1432,
+          "donor_entropy": 1.3271,
+          "max_donor_fraction": 0.3659,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "22",
+          "n_cells": 585,
+          "donor_entropy": 1.381,
+          "max_donor_fraction": 0.2855,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "23",
+          "n_cells": 6,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "24",
+          "n_cells": 185,
+          "donor_entropy": 1.1448,
+          "max_donor_fraction": 0.5297,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "25",
+          "n_cells": 196,
+          "donor_entropy": 1.188,
+          "max_donor_fraction": 0.4949,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "26",
+          "n_cells": 215,
+          "donor_entropy": 1.3765,
+          "max_donor_fraction": 0.3116,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "27",
+          "n_cells": 11,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_090",
+          "n_donors": 4,
+          "threshold": 0.2534,
+          "cluster": "28",
+          "n_cells": 15,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "0",
+          "n_cells": 15,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "1",
+          "n_cells": 2713,
+          "donor_entropy": 1.063,
+          "max_donor_fraction": 0.4497,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "2",
+          "n_cells": 19,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "3",
+          "n_cells": 943,
+          "donor_entropy": 1.0407,
+          "max_donor_fraction": 0.4984,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "4",
+          "n_cells": 680,
+          "donor_entropy": 0.9908,
+          "max_donor_fraction": 0.5426,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "5",
+          "n_cells": 301,
+          "donor_entropy": 1.0932,
+          "max_donor_fraction": 0.3821,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "6",
+          "n_cells": 230,
+          "donor_entropy": 0.9996,
+          "max_donor_fraction": 0.4913,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "7",
+          "n_cells": 162,
+          "donor_entropy": 1.0896,
+          "max_donor_fraction": 0.3704,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "8",
+          "n_cells": 119,
+          "donor_entropy": 1.0817,
+          "max_donor_fraction": 0.4202,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "9",
+          "n_cells": 459,
+          "donor_entropy": 1.0879,
+          "max_donor_fraction": 0.3878,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "10",
+          "n_cells": 714,
+          "donor_entropy": 1.073,
+          "max_donor_fraction": 0.4244,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "11",
+          "n_cells": 0,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "12",
+          "n_cells": 647,
+          "donor_entropy": 1.0622,
+          "max_donor_fraction": 0.4637,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "13",
+          "n_cells": 326,
+          "donor_entropy": 1.0526,
+          "max_donor_fraction": 0.4693,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "14",
+          "n_cells": 1750,
+          "donor_entropy": 1.0985,
+          "max_donor_fraction": 0.3406,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "15",
+          "n_cells": 456,
+          "donor_entropy": 1.0817,
+          "max_donor_fraction": 0.3882,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "16",
+          "n_cells": 719,
+          "donor_entropy": 1.0103,
+          "max_donor_fraction": 0.5174,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "17",
+          "n_cells": 388,
+          "donor_entropy": 1.0954,
+          "max_donor_fraction": 0.3582,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "18",
+          "n_cells": 337,
+          "donor_entropy": 1.0895,
+          "max_donor_fraction": 0.3976,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "19",
+          "n_cells": 194,
+          "donor_entropy": 1.0588,
+          "max_donor_fraction": 0.4072,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "20",
+          "n_cells": 168,
+          "donor_entropy": 1.0344,
+          "max_donor_fraction": 0.4524,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "21",
+          "n_cells": 718,
+          "donor_entropy": 0.9962,
+          "max_donor_fraction": 0.5432,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "22",
+          "n_cells": 378,
+          "donor_entropy": 1.0846,
+          "max_donor_fraction": 0.3968,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "23",
+          "n_cells": 0,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "24",
+          "n_cells": 72,
+          "donor_entropy": 1.0767,
+          "max_donor_fraction": 0.4306,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "25",
+          "n_cells": 57,
+          "donor_entropy": 1.0923,
+          "max_donor_fraction": 0.386,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "26",
+          "n_cells": 65,
+          "donor_entropy": 0.8527,
+          "max_donor_fraction": 0.6769,
+          "flag": "ok"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "27",
+          "n_cells": 2,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "day_366",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "28",
+          "n_cells": 9,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "0",
+          "n_cells": 9,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "1",
+          "n_cells": 687,
+          "donor_entropy": 0.6931,
+          "max_donor_fraction": 0.5022,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "2",
+          "n_cells": 118,
+          "donor_entropy": 0.6687,
+          "max_donor_fraction": 0.6102,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "3",
+          "n_cells": 533,
+          "donor_entropy": 0.6837,
+          "max_donor_fraction": 0.5685,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "4",
+          "n_cells": 107,
+          "donor_entropy": 0.691,
+          "max_donor_fraction": 0.5327,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "5",
+          "n_cells": 158,
+          "donor_entropy": 0.6903,
+          "max_donor_fraction": 0.538,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "6",
+          "n_cells": 102,
+          "donor_entropy": 0.6365,
+          "max_donor_fraction": 0.6667,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "7",
+          "n_cells": 58,
+          "donor_entropy": 0.6637,
+          "max_donor_fraction": 0.6207,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "8",
+          "n_cells": 55,
+          "donor_entropy": 0.6649,
+          "max_donor_fraction": 0.6182,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "9",
+          "n_cells": 92,
+          "donor_entropy": 0.6314,
+          "max_donor_fraction": 0.6739,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "10",
+          "n_cells": 150,
+          "donor_entropy": 0.2788,
+          "max_donor_fraction": 0.92,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "11",
+          "n_cells": 0,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "12",
+          "n_cells": 93,
+          "donor_entropy": 0.4756,
+          "max_donor_fraction": 0.8172,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "13",
+          "n_cells": 382,
+          "donor_entropy": 0.6639,
+          "max_donor_fraction": 0.6204,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "14",
+          "n_cells": 951,
+          "donor_entropy": 0.6429,
+          "max_donor_fraction": 0.6572,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "15",
+          "n_cells": 247,
+          "donor_entropy": 0.6643,
+          "max_donor_fraction": 0.6194,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "16",
+          "n_cells": 116,
+          "donor_entropy": 0.6716,
+          "max_donor_fraction": 0.6034,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "17",
+          "n_cells": 178,
+          "donor_entropy": 0.6702,
+          "max_donor_fraction": 0.6067,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "18",
+          "n_cells": 61,
+          "donor_entropy": 0.6203,
+          "max_donor_fraction": 0.6885,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "19",
+          "n_cells": 58,
+          "donor_entropy": 0.6546,
+          "max_donor_fraction": 0.6379,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "20",
+          "n_cells": 109,
+          "donor_entropy": 0.6809,
+          "max_donor_fraction": 0.578,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "21",
+          "n_cells": 205,
+          "donor_entropy": 0.6905,
+          "max_donor_fraction": 0.5366,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "22",
+          "n_cells": 214,
+          "donor_entropy": 0.6321,
+          "max_donor_fraction": 0.6729,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "23",
+          "n_cells": 2278,
+          "donor_entropy": -0.0,
+          "max_donor_fraction": 1.0,
+          "flag": "LOW (donor-private)"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "24",
+          "n_cells": 38,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "25",
+          "n_cells": 57,
+          "donor_entropy": 0.6094,
+          "max_donor_fraction": 0.7018,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "26",
+          "n_cells": 23,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "27",
+          "n_cells": 2,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Car4-CreERT2",
+          "n_donors": 2,
+          "threshold": 0.1985,
+          "cluster": "28",
+          "n_cells": 2,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "0",
+          "n_cells": 18,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "1",
+          "n_cells": 1641,
+          "donor_entropy": 1.0743,
+          "max_donor_fraction": 0.4345,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "2",
+          "n_cells": 160,
+          "donor_entropy": 1.0534,
+          "max_donor_fraction": 0.425,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "3",
+          "n_cells": 747,
+          "donor_entropy": 1.0107,
+          "max_donor_fraction": 0.5368,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "4",
+          "n_cells": 388,
+          "donor_entropy": 1.0806,
+          "max_donor_fraction": 0.4201,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "5",
+          "n_cells": 416,
+          "donor_entropy": 1.0691,
+          "max_donor_fraction": 0.4135,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "6",
+          "n_cells": 149,
+          "donor_entropy": 1.0471,
+          "max_donor_fraction": 0.443,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "7",
+          "n_cells": 179,
+          "donor_entropy": 1.0724,
+          "max_donor_fraction": 0.3911,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "8",
+          "n_cells": 123,
+          "donor_entropy": 1.0624,
+          "max_donor_fraction": 0.4634,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "9",
+          "n_cells": 208,
+          "donor_entropy": 1.0945,
+          "max_donor_fraction": 0.3654,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "10",
+          "n_cells": 664,
+          "donor_entropy": 1.0782,
+          "max_donor_fraction": 0.387,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "11",
+          "n_cells": 0,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "12",
+          "n_cells": 483,
+          "donor_entropy": 1.0354,
+          "max_donor_fraction": 0.4327,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "13",
+          "n_cells": 528,
+          "donor_entropy": 1.0334,
+          "max_donor_fraction": 0.4735,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "14",
+          "n_cells": 1660,
+          "donor_entropy": 1.0793,
+          "max_donor_fraction": 0.4277,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "15",
+          "n_cells": 473,
+          "donor_entropy": 1.0775,
+          "max_donor_fraction": 0.4228,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "16",
+          "n_cells": 341,
+          "donor_entropy": 1.0914,
+          "max_donor_fraction": 0.3783,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "17",
+          "n_cells": 523,
+          "donor_entropy": 1.086,
+          "max_donor_fraction": 0.3728,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "18",
+          "n_cells": 153,
+          "donor_entropy": 1.0674,
+          "max_donor_fraction": 0.4444,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "19",
+          "n_cells": 234,
+          "donor_entropy": 0.8275,
+          "max_donor_fraction": 0.6923,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "20",
+          "n_cells": 210,
+          "donor_entropy": 1.0895,
+          "max_donor_fraction": 0.3857,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "21",
+          "n_cells": 605,
+          "donor_entropy": 1.0551,
+          "max_donor_fraction": 0.4711,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "22",
+          "n_cells": 495,
+          "donor_entropy": 1.094,
+          "max_donor_fraction": 0.3778,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "23",
+          "n_cells": 1,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "24",
+          "n_cells": 72,
+          "donor_entropy": 1.0609,
+          "max_donor_fraction": 0.4444,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "25",
+          "n_cells": 117,
+          "donor_entropy": 1.0862,
+          "max_donor_fraction": 0.4017,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "26",
+          "n_cells": 33,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "27",
+          "n_cells": 3,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Ednrb-CreERT2",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "28",
+          "n_cells": 14,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "0",
+          "n_cells": 20,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "1",
+          "n_cells": 5001,
+          "donor_entropy": 1.0685,
+          "max_donor_fraction": 0.4501,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "2",
+          "n_cells": 113,
+          "donor_entropy": 1.0712,
+          "max_donor_fraction": 0.4425,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "3",
+          "n_cells": 1732,
+          "donor_entropy": 1.0934,
+          "max_donor_fraction": 0.3666,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "4",
+          "n_cells": 882,
+          "donor_entropy": 1.0628,
+          "max_donor_fraction": 0.4104,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "5",
+          "n_cells": 757,
+          "donor_entropy": 1.0763,
+          "max_donor_fraction": 0.4346,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "6",
+          "n_cells": 483,
+          "donor_entropy": 1.0699,
+          "max_donor_fraction": 0.4472,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "7",
+          "n_cells": 147,
+          "donor_entropy": 0.9225,
+          "max_donor_fraction": 0.619,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "8",
+          "n_cells": 203,
+          "donor_entropy": 1.0876,
+          "max_donor_fraction": 0.3793,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "9",
+          "n_cells": 464,
+          "donor_entropy": 1.0808,
+          "max_donor_fraction": 0.4203,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "10",
+          "n_cells": 749,
+          "donor_entropy": 1.0764,
+          "max_donor_fraction": 0.4326,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "11",
+          "n_cells": 0,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "12",
+          "n_cells": 470,
+          "donor_entropy": 1.0877,
+          "max_donor_fraction": 0.3894,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "13",
+          "n_cells": 749,
+          "donor_entropy": 1.0873,
+          "max_donor_fraction": 0.3965,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "14",
+          "n_cells": 2612,
+          "donor_entropy": 1.0855,
+          "max_donor_fraction": 0.4104,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "15",
+          "n_cells": 597,
+          "donor_entropy": 1.0774,
+          "max_donor_fraction": 0.4322,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "16",
+          "n_cells": 483,
+          "donor_entropy": 1.0937,
+          "max_donor_fraction": 0.3623,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "17",
+          "n_cells": 757,
+          "donor_entropy": 1.0894,
+          "max_donor_fraction": 0.3699,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "18",
+          "n_cells": 150,
+          "donor_entropy": 1.0455,
+          "max_donor_fraction": 0.4467,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "19",
+          "n_cells": 38,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "20",
+          "n_cells": 273,
+          "donor_entropy": 1.0925,
+          "max_donor_fraction": 0.359,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "21",
+          "n_cells": 1277,
+          "donor_entropy": 1.0124,
+          "max_donor_fraction": 0.5356,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "22",
+          "n_cells": 784,
+          "donor_entropy": 1.0982,
+          "max_donor_fraction": 0.3469,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "23",
+          "n_cells": 1,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "24",
+          "n_cells": 136,
+          "donor_entropy": 1.0721,
+          "max_donor_fraction": 0.4191,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "25",
+          "n_cells": 181,
+          "donor_entropy": 1.0494,
+          "max_donor_fraction": 0.4807,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "26",
+          "n_cells": 148,
+          "donor_entropy": 1.0928,
+          "max_donor_fraction": 0.3649,
+          "flag": "ok"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "27",
+          "n_cells": 8,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "tracing_Kit-MerCreMer",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "28",
+          "n_cells": 22,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        }
+      ],
+      "donor_entropy_unstratified_negative_control": [
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "0",
+          "n_cells": 4130,
+          "donor_entropy": 1.3135,
+          "max_donor_fraction": 0.5956,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "1",
+          "n_cells": 31808,
+          "donor_entropy": 3.3482,
+          "max_donor_fraction": 0.0708,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "2",
+          "n_cells": 1047,
+          "donor_entropy": 2.8997,
+          "max_donor_fraction": 0.17,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "3",
+          "n_cells": 14467,
+          "donor_entropy": 3.2931,
+          "max_donor_fraction": 0.0677,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "4",
+          "n_cells": 5728,
+          "donor_entropy": 3.2532,
+          "max_donor_fraction": 0.1021,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "5",
+          "n_cells": 6462,
+          "donor_entropy": 3.3139,
+          "max_donor_fraction": 0.1082,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "6",
+          "n_cells": 3301,
+          "donor_entropy": 3.2901,
+          "max_donor_fraction": 0.0824,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "7",
+          "n_cells": 2038,
+          "donor_entropy": 3.309,
+          "max_donor_fraction": 0.0981,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "8",
+          "n_cells": 1584,
+          "donor_entropy": 3.4307,
+          "max_donor_fraction": 0.0524,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "9",
+          "n_cells": 3705,
+          "donor_entropy": 3.4118,
+          "max_donor_fraction": 0.0605,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "10",
+          "n_cells": 5763,
+          "donor_entropy": 3.3737,
+          "max_donor_fraction": 0.0562,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "11",
+          "n_cells": 16,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "12",
+          "n_cells": 6357,
+          "donor_entropy": 3.3385,
+          "max_donor_fraction": 0.0955,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "13",
+          "n_cells": 5543,
+          "donor_entropy": 3.3945,
+          "max_donor_fraction": 0.0671,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "14",
+          "n_cells": 24886,
+          "donor_entropy": 3.4216,
+          "max_donor_fraction": 0.0652,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "15",
+          "n_cells": 6440,
+          "donor_entropy": 3.3868,
+          "max_donor_fraction": 0.0908,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "16",
+          "n_cells": 4284,
+          "donor_entropy": 3.3398,
+          "max_donor_fraction": 0.0868,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "17",
+          "n_cells": 5679,
+          "donor_entropy": 3.303,
+          "max_donor_fraction": 0.0727,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "18",
+          "n_cells": 1674,
+          "donor_entropy": 3.3719,
+          "max_donor_fraction": 0.08,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "19",
+          "n_cells": 1612,
+          "donor_entropy": 2.8336,
+          "max_donor_fraction": 0.2308,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "20",
+          "n_cells": 2364,
+          "donor_entropy": 3.3985,
+          "max_donor_fraction": 0.0931,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "21",
+          "n_cells": 11006,
+          "donor_entropy": 3.3421,
+          "max_donor_fraction": 0.0738,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "22",
+          "n_cells": 5152,
+          "donor_entropy": 3.4088,
+          "max_donor_fraction": 0.0604,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "23",
+          "n_cells": 2912,
+          "donor_entropy": 0.7257,
+          "max_donor_fraction": 0.7823,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "24",
+          "n_cells": 1500,
+          "donor_entropy": 3.3677,
+          "max_donor_fraction": 0.0653,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "25",
+          "n_cells": 1367,
+          "donor_entropy": 3.3795,
+          "max_donor_fraction": 0.071,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "26",
+          "n_cells": 1120,
+          "donor_entropy": 3.2777,
+          "max_donor_fraction": 0.0643,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "27",
+          "n_cells": 54,
+          "donor_entropy": 2.9637,
+          "max_donor_fraction": 0.1111,
+          "flag": "ok"
+        },
+        {
+          "stratum": "all_33_samples_unstratified",
+          "n_donors": 33,
+          "threshold": 0.3718,
+          "cluster": "28",
+          "n_cells": 176,
+          "donor_entropy": 2.8711,
+          "max_donor_fraction": 0.1534,
+          "flag": "ok"
+        }
+      ],
+      "donor_entropy_summary": {
+        "clusters_low_within_stratum": [
+          "23"
+        ],
+        "clusters_low_unstratified": [],
+        "note": "unstratified flags are expected to include time-point-specific states because animal identity and time point coincide by design"
+      }
+    },
+    "GSE178360": {
+      "n_clusters": 31,
+      "n_samples": 3,
+      "label_entropy": null,
+      "label_entropy_status": "Not established: deposited author labels for GSE178360 are inside .RDS objects that cannot be read here (no R)",
+      "donor_entropy": [
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "0",
+          "n_cells": 1000,
+          "donor_entropy": 1.05,
+          "max_donor_fraction": 0.449,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "1",
+          "n_cells": 377,
+          "donor_entropy": 1.0748,
+          "max_donor_fraction": 0.4244,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "2",
+          "n_cells": 1173,
+          "donor_entropy": 1.0221,
+          "max_donor_fraction": 0.5064,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "3",
+          "n_cells": 314,
+          "donor_entropy": 1.0595,
+          "max_donor_fraction": 0.4045,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "4",
+          "n_cells": 1118,
+          "donor_entropy": 1.0734,
+          "max_donor_fraction": 0.4374,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "5",
+          "n_cells": 1326,
+          "donor_entropy": 0.9883,
+          "max_donor_fraction": 0.5045,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "6",
+          "n_cells": 1231,
+          "donor_entropy": 0.7593,
+          "max_donor_fraction": 0.7262,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "7",
+          "n_cells": 2096,
+          "donor_entropy": 0.9012,
+          "max_donor_fraction": 0.6302,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "8",
+          "n_cells": 1738,
+          "donor_entropy": 1.0974,
+          "max_donor_fraction": 0.3516,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "9",
+          "n_cells": 1086,
+          "donor_entropy": 0.9376,
+          "max_donor_fraction": 0.6087,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "10",
+          "n_cells": 961,
+          "donor_entropy": 0.9613,
+          "max_donor_fraction": 0.589,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "11",
+          "n_cells": 807,
+          "donor_entropy": 1.0656,
+          "max_donor_fraction": 0.4374,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "12",
+          "n_cells": 1292,
+          "donor_entropy": 0.9643,
+          "max_donor_fraction": 0.582,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "13",
+          "n_cells": 730,
+          "donor_entropy": 0.7607,
+          "max_donor_fraction": 0.7288,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "14",
+          "n_cells": 893,
+          "donor_entropy": 0.8421,
+          "max_donor_fraction": 0.598,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "15",
+          "n_cells": 446,
+          "donor_entropy": 0.9331,
+          "max_donor_fraction": 0.5874,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "16",
+          "n_cells": 1198,
+          "donor_entropy": 0.8162,
+          "max_donor_fraction": 0.4908,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "17",
+          "n_cells": 23,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "18",
+          "n_cells": 486,
+          "donor_entropy": 0.9535,
+          "max_donor_fraction": 0.5823,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "19",
+          "n_cells": 2359,
+          "donor_entropy": 1.036,
+          "max_donor_fraction": 0.5053,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "20",
+          "n_cells": 437,
+          "donor_entropy": 1.0235,
+          "max_donor_fraction": 0.4622,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "21",
+          "n_cells": 281,
+          "donor_entropy": 0.9456,
+          "max_donor_fraction": 0.5694,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "22",
+          "n_cells": 513,
+          "donor_entropy": 0.7908,
+          "max_donor_fraction": 0.6706,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "23",
+          "n_cells": 205,
+          "donor_entropy": 1.0811,
+          "max_donor_fraction": 0.3902,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "24",
+          "n_cells": 2266,
+          "donor_entropy": 0.4563,
+          "max_donor_fraction": 0.8738,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "25",
+          "n_cells": 481,
+          "donor_entropy": 0.9374,
+          "max_donor_fraction": 0.5114,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "26",
+          "n_cells": 663,
+          "donor_entropy": 1.0375,
+          "max_donor_fraction": 0.5008,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "27",
+          "n_cells": 1234,
+          "donor_entropy": 0.6391,
+          "max_donor_fraction": 0.7982,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "28",
+          "n_cells": 742,
+          "donor_entropy": 0.736,
+          "max_donor_fraction": 0.7345,
+          "flag": "ok"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "29",
+          "n_cells": 31,
+          "donor_entropy": null,
+          "flag": "NA (< 50 cells)"
+        },
+        {
+          "stratum": "three_healthy_donors",
+          "n_donors": 3,
+          "threshold": 0.2332,
+          "cluster": "30",
+          "n_cells": 222,
+          "donor_entropy": 0.0716,
+          "max_donor_fraction": 0.9865,
+          "flag": "LOW (donor-private)"
+        }
+      ],
+      "donor_entropy_summary": {
+        "threshold_for_3_donors": 0.2332,
+        "clusters_low": [
+          "30"
+        ],
+        "clusters_na": [
+          "17",
+          "29"
+        ],
+        "comparison": "the existing check counts clusters with > 75% of cells from one donor (4 of 31 after Harmony)"
+      }
+    }
+  }
+}

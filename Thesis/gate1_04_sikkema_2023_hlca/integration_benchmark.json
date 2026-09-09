@@ -1,0 +1,274 @@
+{
+  "schema": "thesis-extracted-config/v1",
+  "paper": {
+    "citation": "Sikkema L et al. An integrated cell atlas of the lung in health and disease. Nat Med 2023;29(6):1563-1577.",
+    "doi": "10.1038/s41591-023-02327-2",
+    "pmid": "37291214",
+    "licence": "CC BY 4.0",
+    "benchmark_framework": {
+      "name": "scIB",
+      "citation": "Luecken MD et al. Benchmarking atlas-level data integration in single-cell genomics. Nat Methods 2022;19:41-50.",
+      "doi": "10.1038/s41592-021-01336-8",
+      "pmid": "34949812",
+      "pmcid": "PMC8748196",
+      "version_used": "0.1.1"
+    }
+  },
+  "provenance": {
+    "extracted_on": "2026-09-09",
+    "extracted_by": "AI session (Claude Fable 5.1); transcription from the paper text, Supplementary Fig. 1 image and Supplementary Tables 1-16 (MOESM3)",
+    "review_status": "pending owner retain/reject",
+    "sources": {
+      "methods_sections": [
+        "General data preprocessing for the HLCA core",
+        "Total count normalization with SCRAN",
+        "Data integration benchmarking",
+        "Splitting of studies into datasets",
+        "Integration of HLCA core datasets with scANVI",
+        "UMAP embedding and clustering",
+        "Calculating cluster entropy of cell type labels and donors",
+        "Thresholds for high label/donor entropy and doublet clusters",
+        "Rare cell type analysis",
+        "Marker gene selection",
+        "Finding the minimum number of samples for variance modeling",
+        "Cell type filtering covariate encoding for gene-level modeling",
+        "Modeling gene-level interindividual variation and GSEA",
+        "Extension of the HLCA core by mapping of new data",
+        "Cell type label transfer from the HLCA core to new datasets",
+        "Calibration of uncertainty cutoff for classifying as unknown",
+        "Disease signature score calculation",
+        "Cross-dataset analysis of IPF-associated cell states",
+        "Multidisease analysis",
+        "Version information"
+      ],
+      "supplementary": [
+        "Supplementary Fig. 1 (benchmark ranking; read from the image, no numeric scores printed)",
+        "Supplementary Fig. 3b (rare-cell recall/precision for scANVI, Harmony, Seurat RPCA)",
+        "Supplementary Fig. 10a (uncertainty ROC calibration)",
+        "Supplementary Table 1 (dataset overview), 3 (CCF), 4 (label harmonisation), 5 (annotation levels), 6 (markers), 7 (batch genes), 16 (marker filtering rounds)"
+      ]
+    },
+    "known_internal_inconsistencies": [
+      "Results text: 12 methods on 12 datasets; Methods: 10 studies split into 13 datasets; Supplementary Fig. 1: 10 tools, 35 runs (Scanorama and fastMNN scored on two outputs each, giving 12 method-output combinations).",
+      "Fig. 1 caption: 35 additional datasets mapped; Results text: 37 datasets mapped (1,797,714 cells)."
+    ]
+  },
+  "core_preprocessing": {
+    "gene_filter": "Cell Ranger Ensembl 84 gene-type filter (33,694 gene IDs)",
+    "min_genes_per_cell": 200,
+    "min_cells_per_gene": 10,
+    "normalisation": {
+      "method": "SCRAN size factors within clusters",
+      "pre_clustering": {"total_count_target": 10000, "log": "ln(x+1)", "n_pcs": 50, "knn_k": 15, "clustering": "Louvain", "resolution": 0.5},
+      "scran_min_mean": 0.1,
+      "post_filters": {"min_size_factor": 0.01, "max_normalised_total_counts": 1000000, "cells_removed": 267}
+    },
+    "batch_unit_decision": {
+      "method": "principal component regression (PCexpl) on 50 PCs per study, per candidate covariate",
+      "candidate_covariates": ["10x chemistry version", "processing institute"],
+      "null": "10 random shufflings of the covariate across samples",
+      "split_rule": "PCexpl(observed) > mean(PCexpl(random)) + 1.5 * SD(PCexpl(random))",
+      "outcome": "Jain_Misharin_2021 and Barbry_Leroy_2020 split by 10x v1/v2; Seibold_2020 split by 10x v2/v3; Banovich_Kropski_2020 not split"
+    },
+    "hvg": {
+      "per_dataset_flavour": "cell_ranger",
+      "per_dataset_params": {"min_disp": 0.5, "min_mean": 0.0125, "max_mean": 3, "span": 0.3, "n_bins": 20},
+      "consensus_rule": "genes highly variable in all datasets first, then in all but one, and so on, until the target count is reached",
+      "targets": {"HVG": 2000, "FULL": 6000}
+    }
+  },
+  "benchmark": {
+    "data_subset": {"studies": 10, "datasets_after_split": 13, "donors": 72, "samples": 124, "cells": 372111, "cell_filter_min_umi": 500, "gene_filter_min_cells": 5},
+    "batch_variable": "dataset",
+    "memory_cap_gb": 376,
+    "tools": ["BBKNN", "ComBat", "Conos", "fastMNN", "Harmony", "Scanorama", "scANVI", "scVI", "Seurat v3 RPCA", "scGen"],
+    "grid": {
+      "features": ["HVG (2000)", "FULL (6000)"],
+      "scaling": ["unscaled", "scaled (mean 0, SD 1)"],
+      "exceptions": [
+        "scVI and scANVI: raw counts only, never scaled",
+        "scGen: 2,000 unscaled HVGs only",
+        "fastMNN: FULL feature set exceeded memory; HVG only",
+        "Scanorama and fastMNN: scored on both gene-matrix and embedding outputs"
+      ],
+      "total_runs": 35
+    },
+    "supervision": {
+      "label_aware_methods": ["scANVI", "scGen"],
+      "labels_used": "level 3 harmonised labels; level 2 for blood-vessel endothelial, fibroblast lineage, mesothelial and smooth muscle cells",
+      "unlabelled_cells_dropped_for_benchmark": 4499
+    },
+    "metrics": {
+      "batch_removal": ["PCR batch", "batch ASW", "graph iLISI", "graph connectivity"],
+      "bio_conservation": ["NMI cluster/label", "ARI cluster/label", "cell-type ASW", "isolated label F1", "isolated label silhouette", "graph cLISI", "cell-cycle conservation", "HVG conservation"],
+      "scaling": "each metric min-max scaled to [0,1] across runs",
+      "category_score": "mean of metrics in the category",
+      "overall_score": "0.4 * batch_removal + 0.6 * bio_conservation",
+      "weights": {"batch_removal": 0.4, "bio_conservation": 0.6}
+    },
+    "ranking_supplementary_fig1": [
+      {"rank": 1, "method": "scANVI", "labels": true, "features": "HVG", "scaled": false, "output": "embed"},
+      {"rank": 2, "method": "scGen", "labels": true, "features": "HVG", "scaled": false, "output": "gene"},
+      {"rank": 3, "method": "fastMNN", "features": "HVG", "scaled": false, "output": "gene"},
+      {"rank": 4, "method": "scANVI", "labels": true, "features": "FULL", "scaled": false, "output": "embed"},
+      {"rank": 5, "method": "BBKNN", "features": "HVG", "scaled": false, "output": "graph"},
+      {"rank": 6, "method": "Seurat v3 RPCA", "features": "HVG", "scaled": false, "output": "gene"},
+      {"rank": 7, "method": "Scanorama", "features": "HVG", "scaled": true, "output": "embed"},
+      {"rank": 8, "method": "BBKNN", "features": "FULL", "scaled": false, "output": "graph"},
+      {"rank": 9, "method": "fastMNN", "features": "HVG", "scaled": false, "output": "embed"},
+      {"rank": 10, "method": "ComBat", "features": "FULL", "scaled": false, "output": "gene"},
+      {"rank": 11, "method": "ComBat", "features": "HVG", "scaled": false, "output": "gene"},
+      {"rank": 12, "method": "Seurat v3 RPCA", "features": "FULL", "scaled": false, "output": "gene"},
+      {"rank": 13, "method": "scVI", "features": "HVG", "scaled": false, "output": "embed"},
+      {"rank": 14, "method": "scVI", "features": "FULL", "scaled": false, "output": "embed"},
+      {"rank": 15, "method": "ComBat", "features": "HVG", "scaled": true, "output": "gene"},
+      {"rank": 16, "method": "Scanorama", "features": "HVG", "scaled": false, "output": "embed"},
+      {"rank": 17, "method": "Scanorama", "features": "FULL", "scaled": false, "output": "embed"},
+      {"rank": 18, "method": "Harmony", "features": "HVG", "scaled": true, "output": "embed"},
+      {"rank": 19, "method": "Conos", "features": "HVG", "scaled": false, "output": "graph"},
+      {"rank": 20, "method": "ComBat", "features": "FULL", "scaled": true, "output": "gene"},
+      {"rank": 21, "method": "Harmony", "features": "FULL", "scaled": false, "output": "embed"},
+      {"rank": 22, "method": "Harmony", "features": "HVG", "scaled": false, "output": "embed"},
+      {"rank": 23, "method": "BBKNN", "features": "HVG", "scaled": true, "output": "graph"},
+      {"rank": 24, "method": "Scanorama", "features": "HVG", "scaled": true, "output": "gene"},
+      {"rank": 25, "method": "fastMNN", "features": "HVG", "scaled": true, "output": "embed"},
+      {"rank": 26, "method": "Scanorama", "features": "FULL", "scaled": true, "output": "embed"},
+      {"rank": 27, "method": "fastMNN", "features": "HVG", "scaled": true, "output": "gene"},
+      {"rank": 28, "method": "Scanorama", "features": "HVG", "scaled": false, "output": "gene"},
+      {"rank": 29, "method": "BBKNN", "features": "FULL", "scaled": true, "output": "graph"},
+      {"rank": 30, "method": "Conos", "features": "FULL", "scaled": false, "output": "graph"},
+      {"rank": 31, "method": "Harmony", "features": "FULL", "scaled": true, "output": "embed"},
+      {"rank": 32, "method": "Scanorama", "features": "FULL", "scaled": false, "output": "gene"},
+      {"rank": 33, "method": "Scanorama", "features": "FULL", "scaled": true, "output": "gene"},
+      {"rank": 34, "method": "Conos", "features": "HVG", "scaled": true, "output": "graph"},
+      {"rank": 35, "method": "Conos", "features": "FULL", "scaled": true, "output": "graph"}
+    ],
+    "ranking_caveat": "Order transcribed from the rendered Supplementary Fig. 1; numeric scores are not printed in the paper and must be taken from the HLCA_reproducibility repository before being quoted.",
+    "secondary_criterion": {
+      "name": "rare cell type recall and precision per level-3 cluster",
+      "cell_types": ["ionocyte", "tuft", "neuroendocrine"],
+      "compared": ["scANVI", "Harmony", "Seurat v3 RPCA"],
+      "outcome": "Harmony and Seurat RPCA did not separate the rare cell types into distinct clusters (Supplementary Fig. 3b)"
+    }
+  },
+  "final_integration": {
+    "method": "scANVI",
+    "software": "scvi-tools 0.8.1",
+    "input": "raw counts of 2,000 consensus HVGs",
+    "batch_key": "dataset",
+    "labels": "coarse label set (28 classes listed in Methods) plus unlabeled kept as a class",
+    "params": {
+      "n_layers": 2, "n_latent": 30, "encode_covariates": true, "deeply_inject_covariates": false,
+      "use_layer_norm": "both", "use_batch_norm": "none", "gene_likelihood": "nb",
+      "n_epochs_unsupervised": 500, "n_epochs_semisupervised": 200, "frequency": 1,
+      "early_stopping_unsupervised": {"metric": "elbo", "save_best_state_metric": "elbo", "patience": 10, "threshold": 0, "reduce_lr_on_plateau": true, "lr_patience": 8, "lr_factor": 0.1},
+      "early_stopping_semisupervised": {"metric": "accuracy", "save_best_state_metric": "accuracy", "on": "full_dataset", "patience": 10, "threshold": 0.001, "reduce_lr_on_plateau": true, "lr_patience": 8, "lr_factor": 0.1}
+    },
+    "use_of_latent": "clustering and visualisation only; gene-level analyses use uncorrected counts"
+  },
+  "clustering": {
+    "graph": {"space": "scANVI 30-dim latent", "knn_k": 30},
+    "level_1": {"algorithm": "Leiden", "resolution": 0.01},
+    "nested_levels": [
+      {"level": 2, "knn_k": 30, "resolution": 0.2},
+      {"level": 3, "knn_k": 15, "resolution": 0.2},
+      {"level": 4, "knn_k": 10, "resolution": 0.2},
+      {"level": 5, "knn_k": 10, "resolution": 0.2}
+    ],
+    "naming": "parent.child, children ordered by size from 0",
+    "clusters_after_doublet_removal": 94
+  },
+  "decision_criteria": {
+    "label_entropy": {
+      "definition": "Shannon entropy, natural log, over cell-type label fractions in a cluster; unlabelled cells excluded; NA if < 20% of cells labelled at that level",
+      "high_threshold": 0.56,
+      "threshold_origin": "entropy of a hypothetical 75/25 two-label cluster",
+      "use": "flag cross-study disagreement (33 of 94 clusters) and doublet clusters (6 removed)"
+    },
+    "donor_entropy": {
+      "definition": "same formula over donor fractions",
+      "low_threshold": 0.43,
+      "threshold_origin": "entropy of a hypothetical cluster with 95% of cells from one donor and 5% spread over all other donors; depends on donor count and must be recomputed per dataset",
+      "use": "flag donor-private clusters (14 of 94; IPF fibroblast cluster 5 with donor entropy 0.17 excluded)"
+    },
+    "marker_selection": {
+      "unit": "per-sample, per-cell-type pseudo-bulk (mean log-normalised expression)",
+      "min_cells_per_pseudobulk": 10,
+      "min_cells_if_celltype_below_100_cells": 3,
+      "test": "t-test, one cell type vs all others",
+      "consistency_filters": {"min_fraction_pseudobulks_expressing": 0.8, "min_mean_fraction_cells_expressing": 0.5, "max_fraction_outgroup_pseudobulks_expressing": 0.2},
+      "hierarchy": ["cell type vs atlas", "compartment vs atlas", "cell type vs compartment", "level-2 group vs compartment", "cell type vs level-2 group", "loosened", "no extra filter"],
+      "supplementary_table_16_rounds": [
+        {"round": "1 (cell type vs atlas)", "scanpy_max_out_group": 0.2, "scanpy_min_in_group": 0.9, "min_n_markers": 2, "max_n_markers": 3, "max_out_ct_fraction": 0.2, "min_in_mean_pos_cell_fraction": 0.3},
+        {"round": "2a (compartment vs atlas)", "scanpy_max_out_group": 1, "scanpy_min_in_group": 0.8, "min_n_markers": 2, "max_n_markers": 3, "max_out_ct_fraction": 0.6, "min_in_mean_pos_cell_fraction": 0.5},
+        {"round": "2b (cell type vs compartment)", "scanpy_max_out_group": 0.8, "scanpy_min_in_group": 0.8, "min_n_markers": 1, "max_n_markers": 3, "max_out_ct_fraction": 0.7, "min_in_mean_pos_cell_fraction": 0.5},
+        {"round": "3a (level-2 group vs compartment)", "scanpy_max_out_group": 0.9, "scanpy_min_in_group": 0.8, "min_n_markers": 1, "max_n_markers": 3, "max_out_ct_fraction": 0.99, "min_in_mean_pos_cell_fraction": 0.5},
+        {"round": "3b (cell type vs level-2 group)", "scanpy_max_out_group": 0.9, "scanpy_min_in_group": 0.8, "min_n_markers": 2, "max_n_markers": 3, "max_out_ct_fraction": 0.99, "min_in_mean_pos_cell_fraction": 0.5},
+        {"round": "3c (as 3b, looser)", "scanpy_max_out_group": 0.85, "scanpy_min_in_group": 0.85, "min_n_markers": 2, "max_n_markers": 3, "max_out_ct_fraction": 1, "min_in_mean_pos_cell_fraction": 0.25, "scanpy_min_logfc": 2.5},
+        {"round": "3d (as 3b, no filtering beyond scanpy)", "scanpy_max_out_group": 0.85, "scanpy_min_in_group": 0.85, "min_n_markers": 2, "max_n_markers": 5, "scanpy_min_logfc": 2}
+      ]
+    },
+    "covariate_modelling": {
+      "min_samples_per_cell_type": 40,
+      "min_samples_origin": "below 40 samples, mean variance explained across covariates correlates negatively with sample count (spurious attribution)",
+      "min_cells_per_sample": 10,
+      "min_cells_per_gene": 50,
+      "min_donors_per_dataset": 2,
+      "min_donors_per_category": 3,
+      "vif_exclusion_threshold": 5,
+      "encodings": {"smoking": {"never": 0, "former": 0.5, "current": 1}, "age_years_to_unit": [25, 64], "bmi_to_unit": [21.32, 36.86], "nose": "binary", "ccf": "0 (inferior turbinate) to 1 (alveolus)"},
+      "model": "log(normcount) ~ 1 + age + sex + BMI + smoking + nose + CCF + (1 | dataset)",
+      "normalisation": "edgeR calcNormFactors, then voom with mixed effects",
+      "multiple_testing": "Benjamini-Hochberg within each covariate",
+      "gsea": {"method": "cameraPR (limma)", "gene_sets": "GO biological process, MSigDB 7.1"},
+      "ethnicity": "excluded from the model because it collapsed the usable sample set"
+    },
+    "reference_mapping": {
+      "method": "scArches surgery on the scANVI model",
+      "software": "scArches 0.3.5",
+      "query_gene_space": "same 2,000 HVGs; missing genes zero-filled",
+      "query_input": "raw counts",
+      "params": {"freeze_dropout": true, "surgery_epochs": 500, "train_base_model": false, "weight_decay": 0, "frequency": 1, "metrics_to_monitor": ["accuracy", "elbo"]},
+      "early_stopping": {"metric": "elbo", "on": "full_dataset", "patience": 10, "threshold": 0.001, "reduce_lr_on_plateau": true, "lr_patience": 8, "lr_factor": 0.1},
+      "label_transfer": {"algorithm": "scArches kNN, edge-weighted majority", "knn_k": 50, "uncertainty": "u = 1 - weighted proportion of neighbours carrying the transferred label"},
+      "uncertainty_cutoff": {"value": 0.2, "calibration": "ROC over 12 mapped datasets with level-3/4 labels; TPR 0.879, FPR 0.495; level-5 labels excluded", "alternative_used_in_demonstrations": 0.3},
+      "disease_signature": {"low_uncertainty": "< 0.2", "high_uncertainty": "> 0.4", "test": "Wilcoxon on SCRAN-normalised counts", "genes": "top 20 up by log fold change with FDR < 0.05 and mean expression >= 0.1 in the high group", "score": "mean expression minus a binned random reference set"},
+      "dataset_mapping_quality": "mean uncertainty per dataset; 27 of 37 datasets judged to map well"
+    },
+    "cross_dataset_state_clustering": {
+      "space": "joint scArches 30-dim embedding", "knn_k": 30, "algorithm": "Leiden", "resolution": 0.3,
+      "resolution_rule": "chosen so that no dataset is isolated in a single cluster",
+      "de_normalisation_target": 7666,
+      "de_filters": {"min_fraction_in_cluster": 0.3, "max_fraction_out_cluster": 0.2, "fdr": 0.05},
+      "min_cells_per_dataset_or_disease": 50
+    },
+    "spatial_celltype_cluster_search": {
+      "resolutions": [0.1, 0.2, 0.5, 1, 2, 3, 5, 10, 15, 20, 25, 30, 50, 80, 100],
+      "knn_k": {"below_resolution_25": 30, "at_or_above_25": 15},
+      "min_recall": 0.25, "min_precision": 0.25,
+      "selection": "highest recall unless precision drops > 33% vs the second-best; take the next cluster if its precision doubles and recall drops <= 20%"
+    },
+    "gwas_sc_ldsc": {"genes_per_cell_type": 1000, "window_bp": 100000, "ld_window_cM": 1, "snp_set": "HapMap 3", "excluded": ["chrX", "chrY", "HLA"], "negative_control": "depression GWAS", "multiple_testing": "BH per disease"},
+    "bulk_deconvolution": {"tool": "CIBERSORTx 1.0", "inclusion_min_fraction": 0.02, "cells_sampled_per_type": 200, "exclude_if_zero_fraction_above": 0.6, "validation": "pseudo-bulks from the core, correlation with truth"}
+  },
+  "annotation_hierarchy": {
+    "levels": 5,
+    "cell_identities": 61,
+    "min_datasets_per_identity": 4,
+    "cells_with_label_at_level": {"3": 0.94, "4": 0.66, "5": 0.07},
+    "level_1_composition": {"epithelial": 0.48, "immune": 0.38, "endothelial": 0.09, "stromal": 0.04},
+    "annotation_outcome": {"original_kept": 0.41, "refined": 0.28, "substantially_reannotated": 0.31},
+    "annotators": 6,
+    "identities_mostly_from_mislabelled_cells": 18,
+    "not_separable_in_core": ["regulatory T cells", "gamma-delta T cells", "ILCs", "NKT cells", "megakaryocytes"]
+  },
+  "atlas_size": {
+    "core": {"datasets": 14, "individuals": 107, "samples": 166, "cells": 584444},
+    "extended": {"datasets": 49, "individuals": 486, "cells": 2400000, "mapped_cells": 1797714, "mapped_individuals": 380}
+  },
+  "repository_relevant_datasets": {
+    "GSE178360": {"hlca_study_name": "Tata_unpubl", "in_core": false, "role": "extension", "subjects": 3, "samples": 3, "cells_in_hlca": 21700, "platform": "10X 3' v3", "note": "this repository analysed 27,729 cells after its own QC; the HLCA mapped 21,700"},
+    "GSE262927": {"in_hlca": false, "species": "mouse", "note": "cross-species mapping is not supported by the paper"}
+  },
+  "software_versions": {"scanpy": "1.9.1", "scvi-tools": "0.8.1", "scArches": "0.3.5", "scIB": "0.1.1", "scikit-learn": "0.24.1", "R": ["4.1.1 (covariate models)", "4.0.3 (GSEA)"], "edgeR": "3.28.1", "lme4": "1.1-27.1", "limma": "3.46.0", "LDSC": "1.0.1", "CIBERSORTx": "1.0"}
+}

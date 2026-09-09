@@ -21,7 +21,7 @@ from urllib.parse import unquote
 
 REPO = Path(__file__).resolve().parents[2]
 LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
-SKIP_DIRS = {".git", ".venv", ".venv-x64", ".claude", "raw_data", "Thesis"}
+SKIP_DIRS = {".git", ".venv", ".venv-x64", ".claude", "raw_data"}
 
 
 class Validation:

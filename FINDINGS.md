@@ -17,6 +17,9 @@ trajectory step** and used only afterwards, as an answer key. Full methods:
 [`analysis/GSE262927/`](analysis/GSE262927/README.md) ·
 [`analysis/GSE178360/`](analysis/GSE178360/README.md).
 
+For a curated thesis-aware narrative of these results, see the
+[portfolio PDF](output/pdf/lung_scrna_portfolio_thesis_context.pdf).
+
 ---
 
 ## 1 · The alveolar regeneration trajectory is recoverable from raw counts

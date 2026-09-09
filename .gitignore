@@ -70,3 +70,6 @@ analysis/**/cluster_markers_all.csv
 analysis/**/epithelial_cluster_markers_all.csv
 analysis/**/*.csv.gz
 analysis/**/epithelial_clustered.h5ad
+
+# Regenerable per-cell tables written by Thesis/ trials
+Thesis/**/*.csv.gz

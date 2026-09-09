@@ -91,6 +91,43 @@ Reference genome: mm39 / GRCm39.
 
 ---
 
+## Roadmap papers (`Thesis/`)
+
+The ordered paper roadmap followed in [`Thesis/README.md`](Thesis/README.md);
+DOIs and PMIDs verified against PubMed on 2026-09-09. Only papers with a
+study note in the repository get a full citation block; the rest are listed
+so the order is visible here too.
+
+### Gate 1, paper 4: the Human Lung Cell Atlas
+
+**Sikkema L, Ramirez-Suastegui C, Strobl DC, Gillett TE, Zappia L, Madissoon E, Markov NS, Zaragosi L-E, et al.; Lung Biological Network Consortium; Luecken MD, Theis FJ.**
+*An integrated cell atlas of the lung in health and disease.*
+**Nature Medicine** 2023;29(6):1563-1577.
+DOI: [10.1038/s41591-023-02327-2](https://doi.org/10.1038/s41591-023-02327-2) · PMID [37291214](https://pubmed.ncbi.nlm.nih.gov/37291214/) · Licence: CC BY 4.0
+Data: cellxgene collection `6f6d381a-7701-4781-935c-db10d30de293`; reference model Zenodo [10.5281/zenodo.7599104](https://doi.org/10.5281/zenodo.7599104)
+Code: [github.com/LungCellAtlas/HLCA](https://github.com/LungCellAtlas/HLCA) · [HLCA_reproducibility](https://github.com/LungCellAtlas/HLCA_reproducibility) · [mapping_data_to_the_HLCA](https://github.com/LungCellAtlas/mapping_data_to_the_HLCA)
+Study note: [`Thesis/gate1_04_sikkema_2023_hlca/README.md`](Thesis/gate1_04_sikkema_2023_hlca/README.md)
+
+Benchmark framework used by the HLCA:
+**Luecken MD, Buttner M, Chaichoompu K, et al.** *Benchmarking atlas-level data integration in single-cell genomics.*
+**Nature Methods** 2022;19(1):41-50. DOI: [10.1038/s41592-021-01336-8](https://doi.org/10.1038/s41592-021-01336-8) · PMID [34949812](https://pubmed.ncbi.nlm.nih.gov/34949812/) · PMC [PMC8748196](https://pmc.ncbi.nlm.nih.gov/articles/PMC8748196/)
+
+### The remaining roadmap papers (no study note yet)
+
+| Order | Gate | Paper | DOI | PMID |
+|--:|---|---|---|---|
+| 2 | 1 | Choi J, et al. Inflammatory signals induce AT2 cell-derived damage-associated transient progenitors that mediate alveolar regeneration. *Cell Stem Cell* 2020 | [10.1016/j.stem.2020.06.020](https://doi.org/10.1016/j.stem.2020.06.020) | 32750316 |
+| 3 | 1 | Nabhan AN, et al. Single-cell Wnt signaling niches maintain stemness of alveolar type 2 cells. *Science* 2018 | [10.1126/science.aam6603](https://doi.org/10.1126/science.aam6603) | 29420258 |
+| 5 | 2 | Cardoso, Lee, et al. Early fibrotic niches establish tumour-permissive microenvironments. *Nature* 2026 | [10.1038/s41586-026-10399-6](https://doi.org/10.1038/s41586-026-10399-6) | 42020743 |
+| 6 | 2 | Nabhan AN, et al. Targeted alveolar regeneration with Frizzled-specific agonists. *Cell* 2023 | [10.1016/j.cell.2023.05.022](https://doi.org/10.1016/j.cell.2023.05.022) | 37321220 |
+| 7 | 3A | Saxton RA, et al. Structure-based decoupling of the pro- and anti-inflammatory functions of interleukin-10. *Science* 2021 | [10.1126/science.abc8433](https://doi.org/10.1126/science.abc8433) | 33737461 |
+| 8 | 3A | Saxton RA, et al. The tissue protective functions of interleukin-22 can be decoupled from pro-inflammatory actions through structure-based design. *Immunity* 2021 | [10.1016/j.immuni.2021.03.008](https://doi.org/10.1016/j.immuni.2021.03.008) | 33852830 |
+| 9 | 3B | DuPage M, et al. The chromatin-modifying enzyme Ezh2 is critical for the maintenance of regulatory T cell identity after activation. *Immunity* 2015 | [10.1016/j.immuni.2015.01.007](https://doi.org/10.1016/j.immuni.2015.01.007) | 25680271 |
+| 10 | 3B | Wang D, et al. Targeting EZH2 reprograms intratumoral regulatory T cells to enhance cancer immunity. *Cell Reports* 2018 | [10.1016/j.celrep.2018.05.050](https://doi.org/10.1016/j.celrep.2018.05.050) | 29898397 |
+| 11 | 3B | Zhang, et al. Intratumoral Treg cell ablation elicits NK cell-mediated control of CD8 T cell-resistant tumors. *Science Immunology* 2026 | [10.1126/sciimmunol.adx4411](https://doi.org/10.1126/sciimmunol.adx4411) | 41961946 |
+
+---
+
 ## A note on the PDFs
 
 The PDFs of these papers are **not** included in this repository. SoupX, Slingshot and tradeSeq are CC BY 4.0 and freely redistributable; Scrublet, scds and the Cell Stem Cell paper are not. All six are open to read at the PMC links above.

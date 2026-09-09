@@ -30,6 +30,8 @@ figures in [`FINDINGS.md`](FINDINGS.md)):
   human: Harmony), each from measured evidence — the experimental design
   decides, not a default.
 
+**Portfolio report:** [thesis-aware lung scRNA-seq synthesis](output/pdf/lung_scrna_portfolio_thesis_context.pdf) — human distal-lung and AT0 results first, with complementary regeneration, lineage-tracing, validation and limitation sections.
+
 ![Mouse atlas UMAP](analysis/GSE262927/figures/umap/UMAP_leiden_clusters_sidelegend.png)
 
 ## At a glance
@@ -65,6 +67,7 @@ on display.
 | Machine/session context for AI assistants | [`AI_CONTEXT.md`](AI_CONTEXT.md) |
 | Full per-dataset reports, figures, QC | [`analysis/GSE262927/`](analysis/GSE262927/README.md) · [`analysis/GSE178360/`](analysis/GSE178360/README.md) |
 | Current state and known issues | [`PROGRESS.md`](PROGRESS.md) |
+| The paper roadmap: study notes, extracted decision criteria, per-paper analysis trials | [`Thesis/README.md`](Thesis/README.md) |
 
 ## Repository map
 
@@ -86,6 +89,7 @@ on display.
 │   ├── ANALYSIS_RATIONALE.md    each decision, before and after the papers
 │   ├── BACKGROUND_FOR_BIOLOGISTS.md · UMAP_AND_FIGURES.md · DOUBLETS_AND_SCRUBLET.md
 │   └── SOUPX/SCRUBLET/SCDS/SLINGSHOT/TRADESEQ.md   tool reference notes
+├── Thesis/                      paper roadmap: study notes, extracted decision criteria, per-paper analysis trials
 ├── WORKFLOW.md                  the reference study's published workflow
 ├── REFERENCES.md                all papers, DOIs, data accessions
 └── PROGRESS.md                  session/handoff state, known issues
@@ -122,6 +126,7 @@ python analysis/scripts/07_lineage_tracing_cohort.py
 python analysis/scripts/03_write_report.py --dataset GSE262927
 python analysis/scripts/03_write_report.py --dataset GSE178360
 python analysis/scripts/08_reference_aligned_epithelial_umap.py
+python analysis/scripts/09_write_portfolio_pdf.py
 python analysis/scripts/05_write_pipeline_as_run.py
 ```
 
