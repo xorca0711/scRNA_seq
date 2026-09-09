@@ -93,7 +93,7 @@ thesis_roadmap:
   local_pdfs: "C:/Users/dream/Documents/AC_document/External Thesis/SAP_Thesis study/Gate_1-2_Universal/ (per gate); older ones directly under Thesis/"
   done:
     - gate1_01_niethamer_2025 (pointer to docs/ and analysis/GSE262927)
-    - gate1_04_sikkema_2023_hlca (note, integration_benchmark.json, PIPELINE_FRAMING.md, trial S1; owner review pending)
+    - gate1_04_sikkema_2023_hlca (note, integration_benchmark.json, PIPELINE_FRAMING.md, trials S1 S3 S4 S5 with run records; owner review pending)
   next: gate1_02_choi_2020, gate1_03_nabhan_2018; trial S2 (scArches mapping of GSE178360 to the HLCA core) blocked on environment
 
 pitfalls_for_ai_assistants:
@@ -108,6 +108,8 @@ pitfalls_for_ai_assistants:
   - "Thesis/ is tracked and link-checked; never commit a PDF or XLSX there. Add papers one at a time in Thesis/README.md order."
   - "Thresholds taken from a paper are frozen in the trial plan BEFORE the trial reads any table; the HLCA donor-entropy threshold (0.43) must be recomputed per dataset and, for the mouse, within time point."
   - "Do not attempt scvi-tools, scArches or JAX installs on the native ARM64 interpreter; only the emulated .venv-x64 is a candidate, and only if no compilation is required."
+  - "Portfolio framing for the UC Berkeley PI targets: no interferon or influenza narrative (owner instruction 2026-09-09); describe results by cell state, niche, macrophage and monocyte states, annotation robustness, curation hygiene."
+  - "Trial scripts under Thesis/**/trials read the processed .h5ad objects row-wise (trial_utils.read_csr_rows); never load the 2.1 GB mouse object fully. Use absolute paths; the shell cwd can change between calls."
 
 reproduce:
   - python analysis/scripts/01_scan_raw_data.py

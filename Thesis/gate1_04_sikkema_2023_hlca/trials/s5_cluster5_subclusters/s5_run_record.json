@@ -1,0 +1,150 @@
+{
+  "trial": "S5 subcluster mouse cluster 5 and re-grade",
+  "rules_frozen_at": "2026-09-09T13:01:00+00:00",
+  "rules": {
+    "cluster": "5",
+    "hvg": {
+      "flavor": "seurat_v3",
+      "n_top_genes": 2000,
+      "layer": "counts",
+      "batch_key": null
+    },
+    "scale_max": 10,
+    "n_pcs": 30,
+    "knn_k": 30,
+    "leiden": {
+      "primary_resolution": 0.2,
+      "sensitivity_resolution": 0.5,
+      "flavor": "igraph",
+      "n_iterations": 2,
+      "random_state": 0
+    },
+    "batch_correction": "none",
+    "purity_threshold": 0.75,
+    "resolved_if_fraction_of_labelled_cells_in_pure_subclusters_ge": 0.75,
+    "label_entropy_high": 0.56,
+    "comparator_panel": {
+      "HLCA MDM SPP1-high": [
+        "Spp1",
+        "Lpl",
+        "Chil3",
+        "Mmp9",
+        "Fdx1"
+      ],
+      "HLCA MDM CCL2-high": [
+        "Ccl2",
+        "Il1rn",
+        "S100a8"
+      ],
+      "HLCA MDM C1QA-high": [
+        "C1qa",
+        "Il18",
+        "Trem2"
+      ],
+      "HLCA MARCO-high": [
+        "Marco",
+        "Mcemp1"
+      ],
+      "alveolar macrophage": [
+        "Siglecf",
+        "Ear2",
+        "Plet1",
+        "Fabp4"
+      ],
+      "interstitial macrophage": [
+        "Cd163",
+        "Mrc1",
+        "Folr2",
+        "Lyve1",
+        "C1qb"
+      ],
+      "classical monocyte": [
+        "Ly6c2",
+        "Ccr2",
+        "Plac8"
+      ],
+      "non-classical monocyte": [
+        "Cx3cr1",
+        "Ace",
+        "Nr4a1",
+        "Ear2"
+      ],
+      "cDC1": [
+        "Xcr1",
+        "Clec9a"
+      ],
+      "cDC2": [
+        "Cd209a",
+        "Itgax",
+        "H2-Ab1"
+      ],
+      "migratory DC": [
+        "Ccr7",
+        "Fscn1"
+      ],
+      "pDC": [
+        "Siglech",
+        "Bst2"
+      ],
+      "neutrophil": [
+        "S100a9",
+        "Retnlg",
+        "Csf3r"
+      ],
+      "proliferating": [
+        "Mki67",
+        "Top2a"
+      ]
+    },
+    "unit": "animal for composition"
+  },
+  "notes": "rules frozen before reading the object; deposited labels held out of clustering",
+  "inputs": [
+    {
+      "path": "analysis\\GSE262927\\processed\\final_clustered.h5ad",
+      "bytes": 2110304693,
+      "modified": "2026-08-07T14:13:16+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s5_cluster5_subclusters\\s5_grading_sub_r0.2.csv",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s5_cluster5_subclusters\\s5_subcluster_by_author_label_sub_r0.2.csv",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s5_cluster5_subclusters\\s5_grading_sub_r0.5.csv",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s5_cluster5_subclusters\\s5_subcluster_by_author_label_sub_r0.5.csv",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s5_cluster5_subclusters\\s5_top10_markers_primary.csv",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s5_cluster5_subclusters\\s5_comparator_panel_detection_fraction.csv",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s5_cluster5_subclusters\\s5_umap_subclusters_vs_labels.png",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s5_cluster5_subclusters\\s5_summary.md"
+  ],
+  "results": {
+    "n_cells": 6462,
+    "verdict": "not resolved by resolution",
+    "grading_summary": {
+      "sub_r0.2": {
+        "fraction_labelled_cells_in_pure_subclusters": 0.5957,
+        "cell_weighted_mean_entropy": 0.5527
+      },
+      "sub_r0.5": {
+        "fraction_labelled_cells_in_pure_subclusters": 0.9434,
+        "cell_weighted_mean_entropy": 0.3928
+      }
+    },
+    "atlas_cluster5_label_entropy_before": 1.8496,
+    "panel_genes_absent": []
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-09T13:04:42+00:00"
+}

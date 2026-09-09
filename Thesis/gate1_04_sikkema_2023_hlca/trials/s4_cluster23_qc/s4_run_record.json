@@ -1,0 +1,158 @@
+{
+  "trial": "S4 explain mouse cluster 23",
+  "rules_frozen_at": "2026-09-09T13:00:21+00:00",
+  "rules": {
+    "cluster": "23",
+    "low_count_rule": "median total_counts < 0.5 * atlas median AND median n_genes < 0.5 * atlas median",
+    "ambient_rule": "fraction of cells with >= 3 of 5 lineage markers detected >= 2 x the random comparator",
+    "lineage_markers": [
+      "Sftpc",
+      "Scgb1a1",
+      "Ptprc",
+      "Pecam1",
+      "Col1a1"
+    ],
+    "random_comparator": {
+      "size": "same as cluster",
+      "seed": 0
+    },
+    "tracing_samples": [
+      "EEM-scRNA-249",
+      "EEM-scRNA-250",
+      "EEM-scRNA-251",
+      "EEM-scRNA-288",
+      "EEM-scRNA-289",
+      "EEM-scRNA-290",
+      "EEM-scRNA-291",
+      "EEM-scRNA-292"
+    ],
+    "unit": "cell-level QC summarised per group; animal composition reported per sample"
+  },
+  "notes": "rules frozen after the cluster-level QC summary was seen, before per-cell data",
+  "inputs": [
+    {
+      "path": "analysis\\GSE262927\\processed\\final_clustered.h5ad",
+      "bytes": 2110304693,
+      "modified": "2026-08-07T14:13:16+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s4_cluster23_qc\\s4_qc_medians_by_group.csv",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s4_cluster23_qc\\s4_lineage_marker_detection.csv",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s4_cluster23_qc\\s4_sample_composition.csv",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s4_cluster23_qc\\s4_qc_boxplots.png",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s4_cluster23_qc\\s4_summary.md"
+  ],
+  "results": {
+    "atlas_median_total_counts": 6657.0,
+    "atlas_median_n_genes": 2453.0,
+    "dominant_sample": "EEM-scRNA-289",
+    "qc_medians": {
+      "total_counts": {
+        "cluster_23": 1867.5,
+        "all_other_cells": 6790.0,
+        "random_comparator": 6774.0,
+        "dominant_sample_EEM-scRNA-289_outside_23": 10563.0
+      },
+      "n_genes_by_counts": {
+        "cluster_23": 1095.5,
+        "all_other_cells": 2481.0,
+        "random_comparator": 2466.5,
+        "dominant_sample_EEM-scRNA-289_outside_23": 3454.5
+      },
+      "pct_counts_mt": {
+        "cluster_23": 2.964,
+        "all_other_cells": 2.835,
+        "random_comparator": 2.826,
+        "dominant_sample_EEM-scRNA-289_outside_23": 2.415
+      },
+      "pct_counts_ribo": {
+        "cluster_23": 16.723,
+        "all_other_cells": 9.146,
+        "random_comparator": 8.972,
+        "dominant_sample_EEM-scRNA-289_outside_23": 10.36
+      },
+      "pct_counts_in_top_20_genes": {
+        "cluster_23": 15.364,
+        "all_other_cells": 21.748,
+        "random_comparator": 21.652,
+        "dominant_sample_EEM-scRNA-289_outside_23": 17.601
+      },
+      "doublet_score": {
+        "cluster_23": 0.041,
+        "all_other_cells": 0.028,
+        "random_comparator": 0.028,
+        "dominant_sample_EEM-scRNA-289_outside_23": 0.034
+      },
+      "n_cells": {
+        "cluster_23": 2912,
+        "all_other_cells": 159263,
+        "random_comparator": 2912,
+        "dominant_sample_EEM-scRNA-289_outside_23": 1870
+      }
+    },
+    "lineage_detection": {
+      "Sftpc": {
+        "cluster_23": 0.989,
+        "random_comparator": 0.1442
+      },
+      "Scgb1a1": {
+        "cluster_23": 0.9948,
+        "random_comparator": 0.1724
+      },
+      "Ptprc": {
+        "cluster_23": 0.1387,
+        "random_comparator": 0.137
+      },
+      "Pecam1": {
+        "cluster_23": 0.6075,
+        "random_comparator": 0.4928
+      },
+      "Col1a1": {
+        "cluster_23": 0.7263,
+        "random_comparator": 0.2644
+      },
+      "ge3_of_5": {
+        "cluster_23": 0.8427,
+        "random_comparator": 0.0446
+      },
+      "ge2_of_5": {
+        "cluster_23": 0.9924,
+        "random_comparator": 0.2174
+      }
+    },
+    "cohort_split": {
+      "cluster23_cells": 2912,
+      "cluster23_from_tracing_samples": 2280,
+      "cluster23_from_annotated_samples": 632,
+      "cluster23_annotated_cohort_labelled": 14,
+      "cluster23_annotated_cohort_labelled_fraction": 0.0222,
+      "atlas_annotated_cohort_labelled_fraction": 0.8595,
+      "labels_of_the_labelled_cluster23_cells": {
+        "CAP1": 7,
+        "Plasma_cell": 3,
+        "B_lymphocyte": 2,
+        "AT2": 1,
+        "Adventitial_fibroblast": 1
+      }
+    },
+    "low_count_call": true,
+    "ambient_like_call": true,
+    "verdict": "low-count, ambient-like"
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-09T13:00:53+00:00"
+}

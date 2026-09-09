@@ -136,6 +136,23 @@ tracked cluster tables with the thresholds frozen from the paper before the
 tables were opened. My retain/reject decisions on the extracted material,
 and any rejected AI output, will be recorded here.
 
+**12 · Portfolio framing follows the target labs, not the source paper's
+injury narrative.** (Owner instruction, 2026-09-09.) For the UC Berkeley
+outreach portfolio the interferon and influenza context is not the point;
+results are framed by cell state, repair and niche biology, macrophage and
+monocyte states, annotation robustness and curation hygiene, matched to the
+target labs. The data do not change; the write-ups do. Trials S3 to S5 and
+their plan follow this rule.
+
+**13 · Rule revisions are disclosed, not silently applied.** Trial S3's
+first run used a two-marker minimum and a compartment set that the source
+sheet does not support; eight identities were lost and a spurious
+compartment appeared. The rules were corrected, the first-run outcome was
+kept in the run record, and a hierarchical assignment was added as a
+post hoc sensitivity rather than swapped in as the primary. The two schemes
+disagree on AT0, and that disagreement is the result, not a nuisance to be
+resolved by picking the scheme that flatters the earlier AT0 candidate.
+
 ## How outputs were reviewed
 
 Every run writes its decisions to machine logs (`decisions.json`,

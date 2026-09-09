@@ -370,3 +370,7 @@ scikit-learn 0.24.1; R 4.1.1 (covariate models) and 4.0.3 (GSEA); edgeR
 | "The entropy thresholds 0.56 and 0.43 apply unchanged to GSE262927 and GSE178360" | Not established (donor-entropy threshold depends on donor count; see `ANALYSIS_TRIAL_PLAN.md`) |
 | "GSE178360 can be mapped to the HLCA core without circularity" | Descriptive only (Supplementary Table 1 lists it as an extension dataset, not core) |
 | "HLCA labels can be transferred to the mouse series" | Not established, and the authors caution against it |
+| "AT0 in GSE178360 can be identified by transferring the HLCA marker sets" | Not established (trial S3: the flat and hierarchical schemes disagree; see `ANALYSIS_TRIAL_PLAN.md`) |
+| "Mouse cluster 23 is a cell population" | Descriptive only: it is a low-count, ambient-like barcode set (trial S4) |
+| "The label disagreement in mouse cluster 5 is a resolution artefact" | Descriptive only (trial S5: true for 94% of labelled cells at Leiden 0.5, not at 0.2) |
+| "Human cluster 22 is mast cells" | Descriptive only (trial S3; correction of the blind table pending owner decision) |

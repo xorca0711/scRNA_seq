@@ -1,0 +1,5 @@
+group,total_counts,n_genes_by_counts,pct_counts_mt,pct_counts_ribo,pct_counts_in_top_20_genes,doublet_score,n_cells
+cluster_23,1867.5,1095.5,2.964,16.723,15.364,0.041,2912
+all_other_cells,6790.0,2481.0,2.835,9.146,21.748,0.028,159263
+random_comparator,6774.0,2466.5,2.826,8.972,21.652,0.028,2912
+dominant_sample_EEM-scRNA-289_outside_23,10563.0,3454.5,2.415,10.36,17.601,0.034,1870
