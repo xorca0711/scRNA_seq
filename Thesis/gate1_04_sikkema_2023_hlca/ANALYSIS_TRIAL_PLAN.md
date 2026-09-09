@@ -1,9 +1,10 @@
 # Analysis trials motivated by Sikkema et al. 2023
 
-Five trials. **S1, S3, S4 and S5 have run** and their artefacts are under
-[`trials/`](trials/). **S2** is pre-registered here and not run. Status
-words follow the root README claims table (Validated, Descriptive only,
-Exploratory, Retracted-superseded, Not established). Every trial writes a
+Five trials. **All five have run** and their artefacts are under
+[`trials/`](trials/); S2 ran last, on 2026-09-09, after the owner authorised
+the environment change it needed. Status words follow the root README
+claims table (Validated, Descriptive only, Exploratory,
+Retracted-superseded, Not established). Every trial writes a
 run record (`*_run_record.json`) with the rules frozen before any data is
 read, the inputs with sizes and modification times, the package versions,
 and the outputs.
@@ -24,7 +25,7 @@ biology.
 | S3 | What does the HLCA consensus marker set call the human clusters, and does it recover AT0? | run; Descriptive only, AT0 Not established | [`trials/s3_hlca_marker_annotation/s3_summary.md`](trials/s3_hlca_marker_annotation/s3_summary.md) |
 | S4 | What is mouse cluster 23, flagged by S1 as animal-private and unlabelled? | run; Descriptive only | [`trials/s4_cluster23_qc/s4_summary.md`](trials/s4_cluster23_qc/s4_summary.md) |
 | S5 | Is the label disagreement in mouse cluster 5 a resolution artefact? | run; Descriptive only | [`trials/s5_cluster5_subclusters/s5_summary.md`](trials/s5_cluster5_subclusters/s5_summary.md) |
-| S2 | Does scArches mapping to the HLCA core agree with the blind human annotations and recover AT0? | planned; environment Not established | section S2 below |
+| S2 | Does scArches mapping to the HLCA core agree with the blind human annotations and recover AT0? | run; Descriptive only; AT0 is a minority and the candidate subcluster is not an AT0 population | [`trials/s2_reference_mapping/s2_summary.md`](trials/s2_reference_mapping/s2_summary.md) |
 
 ---
 
@@ -327,16 +328,51 @@ entropy screen and the resolution rule as gates G3 in
 
 ## S2. Reference mapping of GSE178360 to the HLCA core
 
-Status: **PLANNED, not run. Environment: Not established.** After S3, this
-is the only route that can settle the AT0 question, because it reproduces
-how the HLCA itself defined AT0 (position in the integrated embedding plus
-label transfer), rather than marker scoring.
+Run on 2026-09-09 after the owner authorised installing PyTorch and scArches
+into the emulated interpreter. Script:
+[`trials/s2_reference_mapping.py`](trials/s2_reference_mapping.py) (stages
+`surgery` and `transfer`). Artefacts in
+[`trials/s2_reference_mapping/`](trials/s2_reference_mapping/): run records
+for the timing test, the surgery and the transfer; training history;
+per-donor uncertainty; the cluster table; AT0 tables; the epithelial
+subcluster crosstab; the level-4 crosstab against the HLCA authors' own
+transfer; a UMAP and an uncertainty histogram; and
+`requirements_s2_env.txt`, the frozen environment. The downloaded reference
+(model, gene order, embedding) and the trained query model are local and
+gitignored.
+
+After S3, this was the only route that could settle the AT0 question,
+because it reproduces how the HLCA itself defined AT0 (position in the
+integrated embedding plus label transfer) rather than marker scoring.
 
 **Question.** Do the HLCA's transferred labels agree with this repository's
 blind annotations of the human distal-lung series, and is the AT0 population
 recovered by a route that uses neither this repository's marker gates nor
 Scrublet? GSE178360 is an HLCA *extension* dataset (Tata_unpubl), never seen
 by the core model, so the test is not circular.
+
+### Environment gate, outcome
+
+- uv resolved torch 2.14.0 (CPU), scvi-tools 1.5.0.post1 and scarches
+  0.6.1 to prebuilt win_amd64 wheels; nothing needed compilation.
+- The `scarches` package imports a function anndata 0.13 removed and could
+  not be loaded; it was uninstalled. The surgery therefore uses scvi-tools'
+  own scArches implementation (`SCANVI.load_query_data`) and the weighted
+  k-nearest-neighbour transfer is reimplemented from the scArches formula.
+- The 0.8.1-era HLCA model converted with `SCANVI.convert_legacy_save`;
+  its registry matches the paper (batch key `dataset`, 14 batches; labels
+  key `scanvi_label`, 28 classes plus `unlabeled`).
+- Timing test: 41.8 seconds per epoch for 27,729 cells under x86-64
+  emulation. Zenodo transfers dropped twice and were resumed with byte
+  ranges; the final file matches the record's size and MD5.
+- Gene space: 1,955 of the model's 2,000 Ensembl IDs are present in the
+  query; the 45 zero-filled genes are immunoglobulin and T-cell receptor
+  variable segments, salivary genes and clone-named loci. The 2,000 genes
+  carry 18.7% of the query's counts.
+- The v1.1 embedding file stores the 30-dimensional scANVI latent space in
+  `X`, not in `obsm`, and carries the authors' own transferred labels for
+  every extension dataset, Tata_unpubl included; the second fact enabled a
+  post hoc validation that was not pre-registered (below).
 
 **Pre-registered design.**
 
@@ -365,10 +401,114 @@ results: the Zenodo model may not load under current scArches or scvi-tools;
 training under x86-64 emulation may be too slow; zero-filling may remove a
 material fraction of the 2,000 HVGs.
 
-**Environment gate, before anything else.** Dry-run install of scvi-tools
-and scArches into the emulated interpreter with uv; refuse if any package
-would need compilation; record the outcome here. No install on the native
-ARM64 interpreter.
+**Deviations from the pre-registration, recorded.** Early stopping monitors
+the validation ELBO on a 90/10 split, because scvi-tools no longer offers
+the paper's full-dataset monitoring; the scarches package is replaced by
+the scvi-tools implementation as described above; the comparison with the
+HLCA authors' own transfer is post hoc.
+
+### Outcome
+
+**Surgery.** Early stopping at epoch 85 after 38.6 minutes; validation ELBO
+minimum 836.4. The model's own coarse classifier already places 528 cells in
+"Mast cells", the size of cluster 22.
+
+**Mapping quality per donor** (finest level, k = 50).
+
+| Donor | Cells | Mean u | Median u | Unknown at u > 0.2 | Unknown at u > 0.3 |
+|---|--:|--:|--:|--:|--:|
+| DD046Q | 8,957 | 0.162 | 0.080 | 33.5% | 23.6% |
+| DD047Q | 10,493 | 0.093 | 0.000 | 18.3% | 12.4% |
+| DD073R | 8,279 | 0.156 | 0.060 | 32.6% | 23.4% |
+
+The paper's healthy demonstration left 18% of cells unknown at 0.3; the
+three donors here sit at 12 to 24%, so the series maps as a healthy adult
+10x dataset should.
+
+**Cluster level.** Against the blind proposals: 23 of 31 clusters agree at
+type level, 4 agree at compartment level, 1 is compartment-free, 1
+disagrees (the 23-cell cluster 17, 96% unknown), and the 2 identities the
+reference lacks behave as predicted. Marker transfer (S3) had reached 17 to
+19 agreements on the same clusters.
+
+- **Cluster 22 is mast cells** (mode 0.998, mean uncertainty 0.003). Three
+  independent routes now agree: HLCA markers, the model's coarse classifier
+  and label transfer.
+- **Cluster 30 is a ciliated population** (Multiciliated, non-nasal, mode
+  0.98, uncertainty 0.02), private to one donor as S1 found. The blind
+  proposal was right and both S3 marker schemes were wrong about it.
+- **Cluster 29 is neuroendocrine** (mode 0.39), which the HLCA markers
+  failed to recover in S3.
+- **Neutrophils (cluster 14) are confidently mislabelled** as classical
+  monocytes (mode 0.94, mean uncertainty 0.056). The reference has no
+  neutrophil identity and the nearest present identity absorbs them with
+  low uncertainty. This is the paper's absent-identity failure mode, and
+  uncertainty does not catch it when the absent identity resembles a
+  present one. Any use of the HLCA on granulocyte-containing data needs an
+  independent neutrophil check.
+- The platelet-like cluster 15 is 61% unknown: the absent-identity case
+  where uncertainty does work.
+- Distal epithelium: cluster 11 is AT2 (0.65); cluster 26 is AT1 (0.95);
+  clusters 13 and 16, blind "Club", are pre-TB secretory (0.43 with 68%
+  unknown, and 0.83); cluster 18 is multiciliated (0.55).
+
+**AT0.** Strict gate per donor: 596, 880, 134 cells.
+
+| Donor | Transferred AT0, all | AT0 at u <= 0.2 | pre-TB secretory at u <= 0.2 | AT0 over gate | Within factor 2 |
+|---|--:|--:|--:|--:|---|
+| DD046Q | 206 | 26 | 354 | 0.044 | no |
+| DD047Q | 203 | 87 | 472 | 0.099 | no |
+| DD073R | 16 | 6 | 23 | 0.045 | no |
+
+Epithelial subcluster 4, the existing "AT0 candidate analogue" (328 cells):
+AT2 126, Unknown 117, AT0 75, AT1 6, multiciliated 2.
+
+By the HLCA's own definition and route, the strict SFTPC+ SCGB3A2+ EPCAM+
+gate population is mostly pre-TB secretory and AT2 cells; AT0 is a
+minority (119 confident cells, 0.4% of the series, against 0.25% in the
+HLCA core); and the candidate subcluster is a mixture, 38% AT2, 36%
+uncertain, 23% AT0. The pre-registered concordance rule fails for every
+donor. The repository's human headline that the reanalysis "supports an
+AT0-like population" needs re-wording to "an AT0-like minority exists; the
+candidate subcluster is not an AT0 population". That re-wording is a
+retain/reject decision for the owner; nothing has been edited.
+
+**Post hoc validation against the HLCA authors' own transfer.** The v1.1
+embedding file carries the authors' transferred labels for Tata_unpubl,
+which is this dataset. 19,796 of our cells match theirs by unique 16-mer
+barcode. Among cells that carry a label on both sides, agreement is 99.2%
+at level 3 (19,648 cells), 97.4% at level 4 (17,789 cells) and 97.8% at
+level 5 (5,172 cells), and 99.97 to 99.99% wherever both sides are
+confident (90%, 75% and 71% of those cells). Mean uncertainties are alike
+(0.046 versus 0.049 at level 3) and rank-correlated (0.69, 0.90 and 0.87 at
+levels 3 to 5). In the level-4 crosstab the only disagreements above 40
+cells are CD4 versus CD8 T cells (92) and basal resting versus suprabasal
+(77); the remaining off-diagonal mass is cells whose identity has no
+level-4 name in the core metadata on our side while the authors propagate
+the level-3 name. The surgery run here therefore reproduces the authors'
+own mapping of the same cells, so the AT0 result is not an artefact of this
+environment.
+
+### Claims from S2
+
+| Claim | Status |
+|---|---|
+| The blind annotations agree with HLCA label transfer at type level for 23 of 31 clusters | Descriptive only |
+| Cluster 22 is mast cells | Descriptive only; three routes agree; correction of the blind table pending owner decision |
+| Cluster 30 is a ciliated population private to one donor | Descriptive only |
+| Cluster 29 is neuroendocrine | Descriptive only |
+| Neutrophils are confidently mislabelled as classical monocytes by the reference | Descriptive only; the paper's absent-identity failure mode |
+| AT0 in GSE178360 is a minority population and the AT0 candidate analogue subcluster is mostly AT2 or uncertain | Descriptive only, supported by our transfer and by the authors' own transfer of the same cells; concordance with the strict gate failed |
+| This scArches surgery reproduces the HLCA authors' mapping of the same cells at levels 3 and 4 | Descriptive only (validates the environment, not the biology) |
+| The series maps as a healthy adult 10x dataset (unknown at 0.3 between 12 and 24%) | Descriptive only |
+
+### What S2 changes
+
+Proposed, pending owner decision: re-word the human AT0 headline in
+`FINDINGS.md`, the root README and the portfolio PDF as above; correct
+cluster 22 to mast cells; record the neutrophil caveat wherever HLCA label
+transfer is used; keep cluster 30 out of population claims because it is
+donor-private, even though its identity is now clear.
 
 ---
 

@@ -1,0 +1,161 @@
+{
+  "trial": "S2 reference mapping, stage surgery (timing test, not a result)",
+  "rules_frozen_at": "2026-09-09T13:56:01+00:00",
+  "rules": {
+    "query": {
+      "source": "analysis/GSE178360/processed/final_clustered.h5ad",
+      "layer": "counts",
+      "gene_match": "Ensembl ID, version stripped",
+      "missing_genes": "zero-filled and counted",
+      "batch_key": "dataset",
+      "batch_value": "Tata_unpubl_GSE178360",
+      "labels_key": "scanvi_label",
+      "labels_value": "unlabeled"
+    },
+    "surgery": {
+      "api": "scvi.model.SCANVI.load_query_data",
+      "freeze_dropout": true,
+      "max_epochs": 500,
+      "weight_decay": 0.0,
+      "reduce_lr_on_plateau": true,
+      "lr_patience": 8,
+      "lr_factor": 0.1,
+      "early_stopping": {
+        "monitor": "elbo_validation",
+        "patience": 10,
+        "min_delta": 0.001,
+        "mode": "min"
+      },
+      "train_size": 0.9,
+      "batch_size": 128,
+      "seed": 0
+    },
+    "transfer": {
+      "k": 50,
+      "metric": "euclidean",
+      "weights": "exp(-d / (2/std(d))^2), normalised per query cell (scArches weighted_knn_transfer)",
+      "uncertainty": "1 - weight of the transferred label",
+      "unknown_cutoff_primary": 0.2,
+      "unknown_cutoff_sensitivity": 0.3,
+      "reference_cells": "HLCA core only",
+      "labels": [
+        "ann_level_1",
+        "ann_level_2",
+        "ann_level_3",
+        "ann_level_4",
+        "ann_level_5",
+        "ann_finest_level"
+      ]
+    },
+    "at0_strict_gate": "SFTPC>0 & SCGB3A2>0 & EPCAM>0 & PTPRC==0 & PECAM1==0 & COL1A1==0 on raw counts",
+    "at0_concordance": "within a factor of 2 per donor",
+    "unit": "donor",
+    "deviations": [
+      "scarches 0.6.1 not importable with anndata 0.13; scvi-tools scArches implementation used; weighted kNN reimplemented",
+      "early stopping on validation ELBO with a 90/10 split instead of the paper's full-dataset monitoring"
+    ]
+  },
+  "notes": "rules frozen in ANALYSIS_TRIAL_PLAN.md before this script was written",
+  "inputs": [
+    {
+      "path": "analysis\\GSE178360\\processed\\final_clustered.h5ad",
+      "bytes": 365160547,
+      "modified": "2026-08-07T14:44:46+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s2_reference_mapping\\reference\\HLCA_reference_model\\var_names.csv",
+      "bytes": 32000,
+      "modified": "2023-05-12T15:44:44+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s2_reference_mapping\\reference\\HLCA_reference_model_gene_order_ids_and_symbols.csv",
+      "bytes": 45069,
+      "modified": "2026-09-09T13:50:40+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s2_reference_mapping\\reference\\HLCA_reference_model_converted\\model.pt",
+      "bytes": 5885223,
+      "modified": "2026-09-09T13:53:45+00:00"
+    }
+  ],
+  "outputs": [],
+  "results": {
+    "query_gene_space": {
+      "model_genes": 2000,
+      "present": 1955,
+      "missing": 45,
+      "missing_symbols": [
+        "STATH",
+        "CGA",
+        "IL21",
+        "CCDC39",
+        "KLK6",
+        "CRCT1",
+        "MUC7",
+        "FDCSP",
+        "TMPRSS11B",
+        "IGLV8-61",
+        "IGLV1-47",
+        "IGLV5-45",
+        "IGLV2-18",
+        "IGLV3-10",
+        "TRBV6-1",
+        "TRBV20-1",
+        "TRAV8-6",
+        "TRAV16",
+        "TRAV26-2",
+        "IGHV3-7",
+        "IGHV3-21",
+        "IGHV1-24",
+        "IGHV5-51",
+        "IGHV4-61",
+        "IGLV9-49",
+        "PRB4",
+        "IGHV4-31",
+        "LINC-PINT",
+        "BCYRN1",
+        "IGKV1D-8",
+        "IGKV1-16",
+        "IGKV2D-28",
+        "IGKV2-30",
+        "IGKV1-12",
+        "IGKV3-15",
+        "PRB1",
+        "AL928768.3",
+        "IGLL5",
+        "TRAV1-1",
+        "AC004791.2",
+        "RP11-394O4.5",
+        "RP3-492J12.2",
+        "AP000769.1",
+        "CH17-262H11.1",
+        "RP1-34B20.21"
+      ],
+      "duplicate_query_ids": 0,
+      "fraction_of_query_counts_retained": 0.1869708150625229
+    },
+    "query_model_summary": "",
+    "training": {
+      "epochs_run": 1,
+      "seconds": 41.8,
+      "elbo_train_last": 899.6409912109375,
+      "elbo_validation_last": 887.8641357421875,
+      "elbo_validation_min": 887.8641357421875
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-09T13:57:36+00:00"
+}

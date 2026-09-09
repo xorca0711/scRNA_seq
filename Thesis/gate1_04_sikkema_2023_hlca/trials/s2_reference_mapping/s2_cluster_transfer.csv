@@ -1,0 +1,32 @@
+cluster,n_cells,blind_proposal,hlca_level1,transferred_finest_mode,mode_fraction,mode_after_unknown_u0.2,mode_fraction_after_unknown,unknown_fraction_u0.2,mean_uncertainty,verdict_vs_blind,s3_flat_mode,s3_hier_mode,agrees_with_s3_flat,agrees_with_s3_hier
+0,1000,Mono_Mac,Immune,Interstitial Mph perivascular,0.354,Unknown,0.49,0.49,0.2234,agree,Interstitial Mph perivascular,Interstitial Mph perivascular,True,True
+1,377,Mono_Mac,Immune,DC2,0.782,DC2,0.584,0.371,0.1815,partial (same compartment),DC2,DC2,True,True
+2,1173,Endothelial,Endothelial,EC general capillary,0.975,EC general capillary,0.904,0.093,0.0609,agree,EC general capillary,EC general capillary,True,True
+3,314,Endothelial,Endothelial,EC arterial,0.975,EC arterial,0.908,0.092,0.048,agree,EC arterial,EC arterial,True,True
+4,1118,CD8_T,Immune,CD8 T cells,0.839,CD8 T cells,0.594,0.358,0.1708,agree,CD8 T cells,CD8 T cells,True,True
+5,1326,Fibroblast,Stroma,Alveolar fibroblasts,0.78,Alveolar fibroblasts,0.603,0.336,0.169,agree,Alveolar fibroblasts,Alveolar fibroblasts,True,True
+6,1231,Fibroblast,Stroma,Peribronchial fibroblasts,0.649,Unknown,0.552,0.552,0.2526,agree,Peribronchial fibroblasts,Peribronchial fibroblasts,True,True
+7,2096,NK,Immune,NK cells,0.775,NK cells,0.697,0.148,0.0841,agree,NK cells,NK cells,True,True
+8,1738,T_cell,Immune,CD4 T cells,0.851,CD4 T cells,0.697,0.253,0.1221,agree,CD4 T cells,CD4 T cells,True,True
+9,1086,Endothelial,Endothelial,EC general capillary,0.766,EC general capillary,0.617,0.302,0.157,agree,EC general capillary,EC general capillary,True,True
+10,961,Endothelial,Endothelial,EC aerocyte capillary,0.815,EC aerocyte capillary,0.685,0.267,0.1241,agree,EC aerocyte capillary,EC aerocyte capillary,True,True
+11,807,AT2,Epithelial,AT2,0.648,AT2,0.58,0.278,0.1258,agree,AT0,AT2,False,True
+12,1292,Transitional,Epithelial,Basal resting,0.682,Basal resting,0.502,0.332,0.1617,agree,Basal resting,Basal resting,True,True
+13,730,Club,Epithelial,pre-TB secretory,0.432,Unknown,0.677,0.677,0.3191,agree,AT0,EC aerocyte capillary,False,False
+14,893,Neutrophil,Immune,Classical monocytes,0.944,Classical monocytes,0.897,0.093,0.0559,reference lacks identity,Classical monocytes,Classical monocytes,True,True
+15,446,Platelet,Immune,DC2,0.269,Unknown,0.608,0.608,0.3064,reference lacks identity,EC aerocyte capillary,EC aerocyte capillary,False,False
+16,1198,Club,Epithelial,pre-TB secretory,0.831,pre-TB secretory,0.573,0.407,0.185,agree,AT0,AT2,False,False
+17,23,Plasma,Stroma,Adventitial fibroblasts,0.391,Unknown,0.957,0.957,0.5635,disagree,Subpleural fibroblasts,Subpleural fibroblasts,False,False
+18,486,Pan_epithelial,Epithelial,Multiciliated (non-nasal),0.545,Multiciliated (non-nasal),0.436,0.409,0.1925,partial (same compartment),AT0,AT2,False,False
+19,2359,Pan_immune,Immune,Classical monocytes,0.577,Classical monocytes,0.43,0.386,0.1848,partial (same compartment),Classical monocytes,Classical monocytes,True,True
+20,437,B_cell,Immune,B cells,0.961,B cells,0.947,0.037,0.0207,agree,B cells,B cells,True,True
+21,281,Proliferating,Immune,NK cells,0.384,Unknown,0.391,0.391,0.203,partial (blind label is compartment-free),NK cells,NK cells,True,True
+22,513,B_cell,Immune,Mast cells,0.998,Mast cells,0.994,0.006,0.0025,partial (same compartment),Mast cells,Mast cells,True,True
+23,205,Lymphatic_EC,Endothelial,Lymphatic EC mature,0.776,Lymphatic EC mature,0.58,0.278,0.1304,agree,Lymphatic EC mature,Lymphatic EC mature,True,True
+24,2266,Ciliated,Epithelial,Multiciliated (non-nasal),0.995,Multiciliated (non-nasal),0.992,0.005,0.0032,agree,Multiciliated (non-nasal),Multiciliated (non-nasal),True,True
+25,481,Ciliated,Epithelial,Multiciliated (non-nasal),0.96,Multiciliated (non-nasal),0.906,0.083,0.0466,agree,Multiciliated (non-nasal),Multiciliated (non-nasal),True,True
+26,663,AT1,Epithelial,AT1,0.949,AT1,0.902,0.09,0.0465,agree,pre-TB secretory,AT1,False,True
+27,1234,Endothelial,Endothelial,EC venous systemic,0.637,EC venous systemic,0.481,0.254,0.1253,agree,EC venous pulmonary,EC venous pulmonary,False,False
+28,742,SMC_pericyte,Stroma,Smooth muscle,0.589,Smooth muscle,0.423,0.329,0.163,agree,Smooth muscle,Smooth muscle,True,True
+29,31,Neuroendocrine,Epithelial,Neuroendocrine,0.387,Neuroendocrine,0.355,0.258,0.1303,agree,AT0,Ionocyte,False,False
+30,222,Ciliated,Epithelial,Multiciliated (non-nasal),0.982,Multiciliated (non-nasal),0.973,0.018,0.0206,agree,AT0,AT2,False,False

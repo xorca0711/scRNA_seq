@@ -153,6 +153,20 @@ post hoc sensitivity rather than swapped in as the primary. The two schemes
 disagree on AT0, and that disagreement is the result, not a nuisance to be
 resolved by picking the scheme that flatters the earlier AT0 candidate.
 
+**14 · A headline that the reference route does not support is flagged,
+not softened.** (2026-09-09.) With my authorisation the AI session
+installed PyTorch and scvi-tools into the emulated interpreter and mapped
+the human series onto the HLCA core by scArches surgery (trial S2). The
+mapping reproduces the HLCA authors' own transfer of the same cells at
+99.2% (level 3), so the environment is sound, and it says the "AT0
+candidate analogue" subcluster is mostly AT2 or uncertain, with AT0 a
+minority of the series. That contradicts the wording of the human headline
+in `FINDINGS.md` and the portfolio PDF. The contradiction is recorded in
+`PROGRESS.md` with a proposed re-wording; the decision to retain, re-word
+or reject is mine and is pending. The `scarches` package could not be
+imported with the pinned anndata and was removed; the surgery uses the
+scvi-tools implementation and the deviation is disclosed in the trial.
+
 ## How outputs were reviewed
 
 Every run writes its decisions to machine logs (`decisions.json`,

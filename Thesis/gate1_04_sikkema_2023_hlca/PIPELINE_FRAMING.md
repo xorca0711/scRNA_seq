@@ -131,9 +131,14 @@ Every gate writes its inputs, thresholds and outcome to decisions.json so
 that the per-dataset reports and the pipeline record can be regenerated from
 artefacts, as now.
 
-## 5. Environment feasibility: Not established
+## 5. Environment feasibility: established on 2026-09-09 by trial S2
 
-None of this has been installed or tested. Facts, not decisions:
+PyTorch 2.14.0 (CPU) and scvi-tools 1.5.0.post1 were installed into the
+emulated interpreter with the owner's authorisation, all as prebuilt
+wheels; the HLCA model converted and the mapping ran at about 40 seconds
+per epoch for 28k cells. The `scarches` package itself does not import
+with anndata 0.13 and is not needed. The facts below were written before
+that run and are kept for the record:
 
 - scVI, scANVI and scArches need PyTorch. The scib-metrics package needs JAX.
   Neither is in `analysis/requirements.txt`.
@@ -160,8 +165,9 @@ None of this has been installed or tested. Facts, not decisions:
    the final grade?
 2. Accept the per-dataset, per-stratum donor-entropy threshold as written in
    section 2.2?
-3. Authorise the environment work needed for the HLCA mapping trial
-   (PyTorch and scArches in the emulated interpreter)?
+3. (Answered 2026-09-09: the environment work was authorised and trial S2
+   ran.) Decide how the human AT0 headline is re-worded in the light of
+   S2, and whether cluster 22 is corrected to mast cells.
 4. If the panel prefers `none` for the human series, does the biological
    argument for Harmony (one cell type fragmenting into donor-private
    clusters) still override it, and on what recorded evidence?

@@ -43,7 +43,7 @@
      "datasets": ["GSE178360 (HLCA extension dataset Tata_unpubl)"],
      "folder": "gate1_04_sikkema_2023_hlca", "note_status": "done, owner review pending", "note_location": "Thesis/gate1_04_sikkema_2023_hlca/README.md",
      "config": "Thesis/gate1_04_sikkema_2023_hlca/integration_benchmark.json",
-     "trial_status": "S1, S3, S4, S5 run (Descriptive only); S2 planned", "trial_location": "Thesis/gate1_04_sikkema_2023_hlca/ANALYSIS_TRIAL_PLAN.md"},
+     "trial_status": "S1 to S5 run (Descriptive only)", "trial_location": "Thesis/gate1_04_sikkema_2023_hlca/ANALYSIS_TRIAL_PLAN.md"},
     {"order": 5, "gate": "2", "key": "cardoso_lee_2026", "first_author": "Cardoso", "year": 2026, "journal": "Nature",
      "title": "Early fibrotic niches establish tumour-permissive microenvironments",
      "doi": "10.1038/s41586-026-10399-6", "pmid": "42020743", "pmcid": "PMC13149335",

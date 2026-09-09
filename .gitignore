@@ -73,3 +73,9 @@ analysis/**/epithelial_clustered.h5ad
 
 # Regenerable per-cell tables written by Thesis/ trials
 Thesis/**/*.csv.gz
+
+# Downloaded HLCA reference model and embedding (Zenodo 10.5281/zenodo.7599104), regenerable
+Thesis/**/reference/
+
+# scvi-tools query model written by trial S2, regenerable
+Thesis/**/query_model/
