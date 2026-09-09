@@ -85,6 +85,17 @@ not_done:
   - cell-cycle regression
   - reading the GSE178360 .RDS objects (need R; they hold author annotations)
 
+thesis_roadmap:
+  directory: Thesis/
+  index: Thesis/README.md        # order from the owner's Notion PI Target Map; also Thesis/ROADMAP.json
+  rule: one folder per paper, added one at a time in roadmap order; study note + extracted JSON + pre-registered trial
+  tracked: notes, JSON, small trial tables; PDFs and XLSX in Thesis/ are gitignored
+  local_pdfs: "C:/Users/dream/Documents/AC_document/External Thesis/SAP_Thesis study/Gate_1-2_Universal/ (per gate); older ones directly under Thesis/"
+  done:
+    - gate1_01_niethamer_2025 (pointer to docs/ and analysis/GSE262927)
+    - gate1_04_sikkema_2023_hlca (note, integration_benchmark.json, PIPELINE_FRAMING.md, trial S1; owner review pending)
+  next: gate1_02_choi_2020, gate1_03_nabhan_2018; trial S2 (scArches mapping of GSE178360 to the HLCA core) blocked on environment
+
 pitfalls_for_ai_assistants:
   - "raw_data/ is read-only, 7.8 GB, gitignored. NEVER modify or commit it. Never grep/walk it recursively."
   - "docs/PIPELINE_AS_RUN.md and both analysis/*/README.md are GENERATED. Edit the generators (analysis/scripts/05_write_pipeline_as_run.py, 03_write_report.py) and re-run; never hand-edit."
@@ -94,6 +105,9 @@ pitfalls_for_ai_assistants:
   - "docs/ tool pages (SoupX, scds, Slingshot, tradeSeq) describe the PUBLISHED method, not this pipeline; only Scrublet was used."
   - "where marker-panel annotation and deposited labels conflict, trust the deposited label."
   - "*.h5ad, processed/, sample_shards/ are gitignored and regenerable; figures and small tables are tracked."
+  - "Thesis/ is tracked and link-checked; never commit a PDF or XLSX there. Add papers one at a time in Thesis/README.md order."
+  - "Thresholds taken from a paper are frozen in the trial plan BEFORE the trial reads any table; the HLCA donor-entropy threshold (0.43) must be recomputed per dataset and, for the mouse, within time point."
+  - "Do not attempt scvi-tools, scArches or JAX installs on the native ARM64 interpreter; only the emulated .venv-x64 is a candidate, and only if no compilation is required."
 
 reproduce:
   - python analysis/scripts/01_scan_raw_data.py

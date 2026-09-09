@@ -25,6 +25,7 @@ violate — is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Figures, tables, and report generation | AI-assisted |
 | Review of intermediate and final outputs | Me |
 | Retain / revise / reject decision on every result | Me |
+| Literature extraction into study notes and reviewable configs (`Thesis/`) | AI-assisted; my review pending |
 
 AI execution never meant automatic acceptance. Results were reviewed between
 sessions, and several were sent back: one finding was refuted and rewritten
@@ -119,6 +120,21 @@ material (the cell-type ratio is a sort ratio); and the tool-reference pages
 in `docs/` describe the published method, not what ran — the generated
 [`docs/PIPELINE_AS_RUN.md`](docs/PIPELINE_AS_RUN.md) is the authoritative
 used/not-used record.
+
+**11 · Reference criteria are adopted by pre-registration, not by copying.**
+(2026-09-09, under review.) The HLCA paper (Sikkema et al. 2023) was read as
+the roadmap's "reference framework". Its integration benchmark, entropy
+thresholds, marker filters, sample-count rule and label-transfer uncertainty
+cutoff were extracted into a reviewable JSON file, and the AI session then
+proposed, criterion by criterion, what this pipeline should adopt, adapt or
+decline (`Thesis/gate1_04_sikkema_2023_hlca/PIPELINE_FRAMING.md`). Two
+proposals are already fixed by earlier decisions: supervised scANVI on the
+deposited labels is declined because it would make decision 4 circular, and
+the HLCA donor-entropy threshold is not copied because it encodes 107 donors.
+A first trial applied the label-entropy and donor-entropy rules to the
+tracked cluster tables with the thresholds frozen from the paper before the
+tables were opened. My retain/reject decisions on the extracted material,
+and any rejected AI output, will be recorded here.
 
 ## How outputs were reviewed
 

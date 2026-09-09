@@ -67,6 +67,7 @@ on display.
 | Machine/session context for AI assistants | [`AI_CONTEXT.md`](AI_CONTEXT.md) |
 | Full per-dataset reports, figures, QC | [`analysis/GSE262927/`](analysis/GSE262927/README.md) · [`analysis/GSE178360/`](analysis/GSE178360/README.md) |
 | Current state and known issues | [`PROGRESS.md`](PROGRESS.md) |
+| The paper roadmap: study notes, extracted decision criteria, per-paper analysis trials | [`Thesis/README.md`](Thesis/README.md) |
 
 ## Repository map
 
@@ -88,6 +89,7 @@ on display.
 │   ├── ANALYSIS_RATIONALE.md    each decision, before and after the papers
 │   ├── BACKGROUND_FOR_BIOLOGISTS.md · UMAP_AND_FIGURES.md · DOUBLETS_AND_SCRUBLET.md
 │   └── SOUPX/SCRUBLET/SCDS/SLINGSHOT/TRADESEQ.md   tool reference notes
+├── Thesis/                      paper roadmap: study notes, extracted decision criteria, per-paper analysis trials
 ├── WORKFLOW.md                  the reference study's published workflow
 ├── REFERENCES.md                all papers, DOIs, data accessions
 └── PROGRESS.md                  session/handoff state, known issues
