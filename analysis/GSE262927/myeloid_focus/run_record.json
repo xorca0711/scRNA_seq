@@ -1,0 +1,339 @@
+{
+  "analysis": "myeloid compartment of the Ki67 atlas: blind subclusters, per-day UMAP and per-animal composition",
+  "rules_frozen_at": "2026-09-10T05:51:46+00:00",
+  "rules": {
+    "object": "analysis/GSE262927/processed/final_clustered.h5ad, read row-wise; never loaded fully",
+    "cohort": "has_author_metadata == True (the 25-sample Ki67 atlas)",
+    "cells": "atlas Leiden clusters 5, 17 and 24, chosen from the blind clustering and the cluster-level dominant-label table (tables/cluster_dominant_author_celltype.csv). Cluster 23 (ambient-like, PROGRESS item 12) is not included. Deposited labels are not used to select cells",
+    "hvg": {
+      "flavor": "seurat_v3",
+      "n_top_genes": 2000,
+      "layer": "counts",
+      "batch_key": null
+    },
+    "scale_max": 10,
+    "n_pcs": 30,
+    "knn_k": 30,
+    "batch_correction": "none (root decision 2: sample and time point are the same variable)",
+    "leiden": {
+      "primary_resolution": 0.5,
+      "sensitivity_resolutions": [
+        0.2,
+        1.0
+      ],
+      "flavor": "igraph",
+      "n_iterations": 2,
+      "random_state": 0,
+      "why_primary_0.5": "trial S5 (2026-09-09) found atlas cluster 5 unresolved at 0.2 and resolved at 0.5; fixed here before this run"
+    },
+    "umap": {
+      "random_state": 0
+    },
+    "grading": {
+      "purity_threshold": 0.75,
+      "resolved_if_fraction_of_labelled_cells_in_pure_subclusters_ge": 0.75,
+      "label_entropy_high": 0.56,
+      "labels": "deposited author_celltype, held out of the embedding"
+    },
+    "days": [
+      0,
+      6,
+      11,
+      19,
+      25,
+      42,
+      90,
+      366
+    ],
+    "phases": {
+      "0": "baseline",
+      "6": "active repair",
+      "11": "active repair",
+      "19": "active repair",
+      "25": "active repair",
+      "42": "injury resolution",
+      "90": "injury resolution",
+      "366": "long-term homeostasis"
+    },
+    "umap_panels": "shared subset coordinates; every panel draws all subset cells in grey and N cells of that day in colour, N = smallest per-day count, seed 0, shuffled draw order",
+    "composition": "per animal and day: percent of each deposited myeloid label among the animal's myeloid-labelled subset cells (descriptive, uses the answer key) and percent of each primary subcluster among the animal's subset cells (blind). Cells whose deposited lineage is not Myeloid are counted and excluded from the label composition",
+    "paper_expectation": {
+      "aMAC": "lost at 6 dpi, reconstituted over the following three weeks",
+      "iMON": "expanded at 6 dpi, then declining"
+    },
+    "check_rule": "median per-animal aMAC percent at 6 dpi below the 0 dpi median AND iMON percent at 6 dpi above the 0 dpi median; reconstitution if the aMAC median at 25 or 42 dpi exceeds the 6 dpi median. Two animals per active-repair day: a description, not a test",
+    "markers": "Wilcoxon one-vs-rest per primary subcluster, top 20 by score, a ranking device only",
+    "comparator_panel": {
+      "alveolar macrophage": [
+        "Siglecf",
+        "Ear2",
+        "Plet1",
+        "Fabp4",
+        "Krt79"
+      ],
+      "interstitial macrophage": [
+        "Cd163",
+        "Mrc1",
+        "Folr2",
+        "Lyve1",
+        "C1qa",
+        "C1qb"
+      ],
+      "HLCA MDM SPP1-high": [
+        "Spp1",
+        "Lpl",
+        "Chil3",
+        "Mmp9"
+      ],
+      "HLCA MDM CCL2-high": [
+        "Ccl2",
+        "Il1rn",
+        "S100a8"
+      ],
+      "HLCA MDM C1QA-high": [
+        "Il18",
+        "Trem2"
+      ],
+      "HLCA MARCO-high": [
+        "Marco",
+        "Mcemp1"
+      ],
+      "classical monocyte": [
+        "Ly6c2",
+        "Ccr2",
+        "Plac8"
+      ],
+      "non-classical monocyte": [
+        "Cx3cr1",
+        "Ace",
+        "Nr4a1"
+      ],
+      "cDC1": [
+        "Xcr1",
+        "Clec9a"
+      ],
+      "cDC2": [
+        "Cd209a",
+        "Itgax",
+        "H2-Ab1"
+      ],
+      "migratory DC": [
+        "Ccr7",
+        "Fscn1"
+      ],
+      "pDC": [
+        "Siglech",
+        "Bst2"
+      ],
+      "neutrophil": [
+        "S100a9",
+        "Retnlg",
+        "Csf3r"
+      ],
+      "interferon": [
+        "Isg15",
+        "Ifit3",
+        "Irf7"
+      ],
+      "proliferating": [
+        "Mki67",
+        "Top2a"
+      ]
+    },
+    "unit": "animal; medians; no P values",
+    "seed": 0
+  },
+  "notes": "rules frozen before the object was opened; deposited labels held out of the embedding and used afterwards for grading and descriptive composition",
+  "inputs": [
+    {
+      "path": "analysis\\GSE262927\\processed\\final_clustered.h5ad",
+      "bytes": 2110304693,
+      "modified": "2026-08-07T14:13:16+00:00"
+    }
+  ],
+  "outputs": [
+    "analysis\\GSE262927\\myeloid_focus\\run_record.json",
+    "analysis\\GSE262927\\myeloid_focus\\tables\\myeloid_grading_sub_r0.5.csv",
+    "analysis\\GSE262927\\myeloid_focus\\tables\\myeloid_subcluster_by_author_label_sub_r0.5.csv",
+    "analysis\\GSE262927\\myeloid_focus\\tables\\myeloid_grading_sub_r0.2.csv",
+    "analysis\\GSE262927\\myeloid_focus\\tables\\myeloid_subcluster_by_author_label_sub_r0.2.csv",
+    "analysis\\GSE262927\\myeloid_focus\\tables\\myeloid_grading_sub_r1.0.csv",
+    "analysis\\GSE262927\\myeloid_focus\\tables\\myeloid_subcluster_by_author_label_sub_r1.0.csv",
+    "analysis\\GSE262927\\myeloid_focus\\tables\\myeloid_label_composition_per_animal.csv",
+    "analysis\\GSE262927\\myeloid_focus\\tables\\myeloid_label_composition_median_by_dpi.csv",
+    "analysis\\GSE262927\\myeloid_focus\\tables\\myeloid_subcluster_composition_per_animal.csv",
+    "analysis\\GSE262927\\myeloid_focus\\figures\\myeloid_label_composition_by_dpi.png",
+    "analysis\\GSE262927\\myeloid_focus\\figures\\myeloid_label_composition_by_dpi.pdf",
+    "analysis\\GSE262927\\myeloid_focus\\figures\\myeloid_subcluster_composition_by_dpi.png",
+    "analysis\\GSE262927\\myeloid_focus\\figures\\myeloid_subcluster_composition_by_dpi.pdf",
+    "analysis\\GSE262927\\myeloid_focus\\figures\\UMAP_myeloid_subclusters_vs_labels.png",
+    "analysis\\GSE262927\\myeloid_focus\\figures\\UMAP_myeloid_subclusters_vs_labels.pdf",
+    "analysis\\GSE262927\\myeloid_focus\\figures\\UMAP_myeloid_by_dpi_label.png",
+    "analysis\\GSE262927\\myeloid_focus\\figures\\UMAP_myeloid_by_dpi_label.pdf",
+    "analysis\\GSE262927\\myeloid_focus\\figures\\UMAP_myeloid_by_dpi_subcluster.png",
+    "analysis\\GSE262927\\myeloid_focus\\figures\\UMAP_myeloid_by_dpi_subcluster.pdf",
+    "analysis\\GSE262927\\myeloid_focus\\tables\\myeloid_subcluster_markers_top20.csv",
+    "analysis\\GSE262927\\myeloid_focus\\tables\\myeloid_panel_detection_fraction.csv",
+    "analysis\\GSE262927\\myeloid_focus\\figures\\dotplot_myeloid_panel_by_subcluster.png",
+    "analysis\\GSE262927\\myeloid_focus\\tables\\myeloid_cell_metadata.csv",
+    "analysis\\GSE262927\\myeloid_focus\\README.md"
+  ],
+  "results": {
+    "n_cells_in_clusters_all_samples": 13641,
+    "n_cells": 9997,
+    "n_animals": 25,
+    "n_cells_other_lineage_label": 13,
+    "cells_per_cluster": {
+      "5": 4737,
+      "17": 4032,
+      "24": 1228
+    },
+    "cells_per_day": {
+      "0": 1084,
+      "6": 775,
+      "11": 925,
+      "19": 944,
+      "25": 646,
+      "42": 3429,
+      "90": 1490,
+      "366": 704
+    },
+    "n_subclusters": {
+      "sub_r0.5": 16,
+      "sub_r0.2": 9,
+      "sub_r1.0": 22
+    },
+    "grading": {
+      "sub_r0.5": {
+        "fraction_labelled_cells_in_pure_subclusters": 0.8723,
+        "cell_weighted_mean_entropy": 0.2972,
+        "n_subclusters": 16,
+        "top_label_by_subcluster": {
+          "0": "iMON",
+          "1": "iMON",
+          "2": "aMAC",
+          "3": "aMAC",
+          "4": "Neutrophil",
+          "5": "pMON",
+          "6": "cMON",
+          "7": "cDC2",
+          "8": "aMAC",
+          "9": "aMAC",
+          "10": "iMAC",
+          "11": "cDC1",
+          "12": "aMAC",
+          "13": "aMAC",
+          "14": "cDC2",
+          "15": "Neutrophil"
+        }
+      },
+      "sub_r0.2": {
+        "fraction_labelled_cells_in_pure_subclusters": 0.4837,
+        "cell_weighted_mean_entropy": 0.5853,
+        "n_subclusters": 9,
+        "top_label_by_subcluster": {
+          "0": "iMON",
+          "1": "cDC2",
+          "2": "aMAC",
+          "3": "aMAC",
+          "4": "Neutrophil",
+          "5": "Neutrophil",
+          "6": "cMON",
+          "7": "aMAC",
+          "8": "cDC2"
+        }
+      },
+      "sub_r1.0": {
+        "fraction_labelled_cells_in_pure_subclusters": 0.923,
+        "cell_weighted_mean_entropy": 0.2803,
+        "n_subclusters": 22,
+        "top_label_by_subcluster": {
+          "0": "iMON",
+          "1": "cMON",
+          "2": "cDC2",
+          "3": "iMON",
+          "4": "aMAC",
+          "5": "aMAC",
+          "6": "iMAC",
+          "7": "aMAC",
+          "8": "aMAC",
+          "9": "aMAC",
+          "10": "Neutrophil",
+          "11": "Neutrophil",
+          "12": "pMON",
+          "13": "aMAC",
+          "14": "aMAC",
+          "15": "aMAC",
+          "16": "cDC1",
+          "17": "maDC",
+          "18": "aMAC",
+          "19": "aMAC",
+          "20": "cDC2",
+          "21": "Neutrophil"
+        }
+      }
+    },
+    "verdict": "resolved by resolution",
+    "figure3_check": {
+      "median_pct_aMAC": {
+        "0": 30.84,
+        "6": 4.6,
+        "11": 9.97,
+        "19": 41.72,
+        "25": 32.07,
+        "42": 49.01,
+        "90": 43.73,
+        "366": 53.95
+      },
+      "median_pct_iMON": {
+        "0": 1.94,
+        "6": 55.97,
+        "11": 40.43,
+        "19": 13.97,
+        "25": 8.13,
+        "42": 1.79,
+        "90": 2.41,
+        "366": 2.13
+      },
+      "median_pct_cMON": {
+        "0": 25.74,
+        "6": 6.18,
+        "11": 11.31,
+        "19": 8.44,
+        "25": 13.73,
+        "42": 6.1,
+        "90": 9.92,
+        "366": 8.51
+      },
+      "median_pct_Neutrophil": {
+        "0": 12.87,
+        "6": 16.58,
+        "11": 19.86,
+        "19": 11.89,
+        "25": 11.94,
+        "42": 14.87,
+        "90": 11.42,
+        "366": 9.17
+      },
+      "aMAC_lost_at_6dpi": true,
+      "iMON_expanded_at_6dpi": true,
+      "aMAC_reconstituted_by_25_or_42dpi": true,
+      "verdict": "consistent with Figure 3"
+    },
+    "umap_cells_drawn_per_panel": 646,
+    "panel_genes_absent": []
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.1",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "igraph": "1.0.0"
+  },
+  "finished_at": "2026-09-10T06:03:16+00:00"
+}

@@ -80,6 +80,8 @@ on display.
 │   ├── GSE262927/               mouse: report, figures, tables, QC, logs
 │   │   ├── regeneration_focus/      AT2→AT1 trajectory + iCAP persistence
 │   │   ├── lineage_tracing_cohort/  the 8-sample Cre-driver experiment
+│   │   ├── phase_timecourse/        per-dpi UMAP, composition and proliferation by lineage (under review)
+│   │   ├── myeloid_focus/           the myeloid compartment by dpi (under review)
 │   │   └── epithelial_subanalysis/
 │   ├── GSE178360/               human: report, figures, tables, QC, logs
 │   ├── scripts/                 the pipeline (shared; --dataset selects series)
@@ -123,6 +125,8 @@ python analysis/scripts/run_scrna_analysis.py --dataset GSE262927
 python analysis/scripts/run_scrna_analysis.py --dataset GSE178360 --integration harmony
 python analysis/scripts/06_regeneration_focus.py
 python analysis/scripts/07_lineage_tracing_cohort.py
+python analysis/scripts/10_phase_timecourse.py
+python analysis/scripts/11_myeloid_focus.py
 python analysis/scripts/03_write_report.py --dataset GSE262927
 python analysis/scripts/03_write_report.py --dataset GSE178360
 python analysis/scripts/08_reference_aligned_epithelial_umap.py

@@ -36,7 +36,7 @@ Both have the same structure:
 └── epithelial_subanalysis/
 ```
 
-`GSE262927/` additionally contains two focused analyses (see below).
+`GSE262927/` additionally contains four focused analyses (see below).
 
 ## The three mouse analyses differ by cohort — this matters
 
@@ -45,6 +45,8 @@ Both have the same structure:
 | `GSE262927/` (top level) | 162,175 | **all 33 samples** | Whole-atlas survey: 29 clusters, marker tables, composition. General-purpose object. |
 | `GSE262927/regeneration_focus/` | 5,694 alveolar<br>43,359 capillary | 25-sample annotated atlas | **The biology.** AT2 → Krt8⁺ transitional → AT1 trajectory, and the persistent injury-induced capillary state. |
 | `GSE262927/lineage_tracing_cohort/` | 36,958 | **the 8 non-atlas samples** | A separate experiment (Kit / Car4 / Ednrb Cre, pre-labelled, 19 dpi). Where does the injury state come from? |
+| `GSE262927/phase_timecourse/` | 107,626 | 25-sample annotated atlas | Per-day UMAP, per-animal lineage composition and Ki67-trace proliferation by lineage: the paper's three-phase structure, computed from the tracked metadata table only (script 10). Owner review pending. |
+| `GSE262927/myeloid_focus/` | 9,997 | 25-sample annotated atlas | The myeloid compartment (atlas clusters 5, 17, 24) re-embedded with labels held out, graded against them, and read per animal and day (script 11). Owner review pending. |
 
 **The whole-atlas object merges two experiments.** All 33 samples are in it,
 which is fine for surveying cell types but wrong for anything condition- or
@@ -70,6 +72,8 @@ python analysis/scripts/run_scrna_analysis.py --dataset GSE262927
 python analysis/scripts/run_scrna_analysis.py --dataset GSE178360 --integration harmony
 python analysis/scripts/06_regeneration_focus.py
 python analysis/scripts/07_lineage_tracing_cohort.py
+python analysis/scripts/10_phase_timecourse.py
+python analysis/scripts/11_myeloid_focus.py
 python analysis/scripts/03_write_report.py --dataset GSE262927
 python analysis/scripts/05_write_pipeline_as_run.py
 ```

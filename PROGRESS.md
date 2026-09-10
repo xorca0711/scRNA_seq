@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-09. The scientific analysis of the two series is
+Last updated: 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -11,7 +11,10 @@ paper-by-paper roadmap directory was added (`Thesis/`, order taken from the
 owner's Notion PI Target Map) with the Sikkema 2023 HLCA study note, its
 decision criteria as reviewable JSON, a pipeline-framing proposal, and a
 first criteria trial on tracked tables. **Owner retain/reject review of that
-material is pending.** Nothing is running.
+material is pending.** On 2026-09-10 two focused analyses of the source
+paper's phase structure were added under `analysis/GSE262927/`
+(`phase_timecourse/` and `myeloid_focus/`, scripts 10 and 11; items 15 and
+16 below). **Owner review of those is pending too.** Nothing is running.
 
 ---
 
@@ -44,6 +47,8 @@ material is pending.** Nothing is running.
 | Trial S3: HLCA consensus-marker annotation of GSE178360 | **DONE (2026-09-09)**; 17 to 19 of 31 clusters agree with the blind proposals; AT0 by marker transfer Not established (scheme-dependent) |
 | Trial S4: mouse cluster 23 explained | **DONE (2026-09-09)**; low-count, ambient-like; 78% from EEM-scRNA-289 |
 | Trial S5: mouse cluster 5 subclustered and re-graded | **DONE (2026-09-09)**; resolved at Leiden 0.5 (94% of labelled cells in pure subclusters), not at 0.2 |
+| Phase-wise view of the Ki67 atlas (`analysis/GSE262927/phase_timecourse/`, script 10) | **DONE (2026-09-10), owner review pending**; per-dpi atlas UMAP, per-animal lineage composition, Ki67-trace proliferation by lineage; trace peaks fall in the paper's window for 4 of 5 lineages (Lymphoid peaks at 11 dpi, not 6); Descriptive only, from tracked metadata |
+| Myeloid compartment by dpi (`analysis/GSE262927/myeloid_focus/`, script 11) | **DONE (2026-09-10), owner review pending**; 9,997 cells from atlas clusters 5, 17, 24; 16 blind subclusters at Leiden 0.5 with 87% of labelled cells in pure subclusters; aMAC loss and iMON expansion at 6 dpi with reconstitution by 19 to 42 dpi, consistent with the paper's Figure 3; Descriptive only |
 
 Repository state: the scientific analysis and portfolio curation are complete;
 no analysis process is running. Branch-specific state belongs in Git/GitHub,
@@ -80,6 +85,8 @@ python analysis/scripts/run_scrna_analysis.py --dataset GSE262927
 python analysis/scripts/run_scrna_analysis.py --dataset GSE178360 --integration harmony
 python analysis/scripts/06_regeneration_focus.py
 python analysis/scripts/07_lineage_tracing_cohort.py
+python analysis/scripts/10_phase_timecourse.py
+python analysis/scripts/11_myeloid_focus.py
 python analysis/scripts/03_write_report.py --dataset GSE262927
 python analysis/scripts/03_write_report.py --dataset GSE178360
 python analysis/scripts/05_write_pipeline_as_run.py
@@ -194,6 +201,30 @@ labelled cells.
    collapses AT0 to a few percent of the gate and relabels the AT0 candidate
    analogue as AT2. Not established by this route; trial S2 (reference
    mapping) is the route that can settle it.
+15. **The paper's three proliferative phases are visible in the trace, not
+   in the deposited cell-cycle call** (`phase_timecourse/`, 2026-09-10).
+   With the expected peak windows frozen before the metadata table was
+   opened, the median per-animal Ki67-traced fraction in each cohort's
+   immediate window peaks at 6 dpi for myeloid cells, 11 dpi for epithelium
+   and mesenchyme, and 19 dpi for endothelium (4 of 5 lineages in the
+   paper's window; lymphoid cells peak at 11 dpi, one harvest later than
+   the paper's immune window). The deposited Seurat cell-cycle call, carried
+   as a cross-check, agrees for 1 of 5 lineages because it calls most
+   lymphocytes and about 40% of all cells cycling; it is reported, not used.
+   Two animals per active-repair day: a ranking, no test. Uses the deposited
+   lineage labels descriptively. Owner decision pending.
+16. **The myeloid compartment reproduces the paper's Figure 3 from a blind
+   embedding** (`myeloid_focus/`, 2026-09-10). Atlas clusters 5, 17 and 24
+   in the 25-sample cohort (9,997 cells, 13 with a non-myeloid label) were
+   re-embedded with the labels held out; at Leiden 0.5 (fixed from trial S5
+   before the run) 87% of labelled cells sit in subclusters of purity at
+   least 0.75 (0.2: 48%; 1.0: 92%). Median per-animal aMAC share of myeloid
+   cells falls from 30.8% at baseline to 4.6% at 6 dpi and returns to 41.7%
+   by 19 dpi and 49.0% by 42 dpi; iMON rises from 1.9% to 56.0% at 6 dpi and
+   is back to 1.8% by 42 dpi. Four subclusters remain label mixtures (7, 9,
+   12, 13; 1,286 cells). The MACS recombination fixes the myeloid share of
+   each library, so only within-myeloid fractions are read. Owner decision
+   pending.
 
 ---
 

@@ -1,0 +1,6 @@
+lineage,median_pct_traced_0dpi,median_pct_traced_6dpi,median_pct_traced_11dpi,median_pct_traced_19dpi,median_pct_traced_25dpi,observed_trace_peak_day,observed_cycling_peak_day,paper_expected_peak,trace_agrees_with_paper,cycling_agrees_with_paper
+Endothelium,1.72,4.62,3.37,14.16,4.93,19,19,14 to 22 dpi,True,True
+Mesenchyme,3.6,7.71,11.29,7.79,7.9,11,6,7 to 15 dpi,True,False
+Epithelium,5.9,7.7,28.35,8.22,9.83,11,25,7 to 15 dpi,True,False
+Myeloid,55.48,84.85,47.27,48.12,58.71,6,25,2 to 6 dpi (immune),True,False
+Lymphoid,31.77,43.45,54.7,30.27,23.38,11,19,2 to 6 dpi (immune),False,False

@@ -1,0 +1,247 @@
+{
+  "analysis": "phase timecourse of the Ki67 atlas from tracked metadata",
+  "rules_frozen_at": "2026-09-10T05:59:59+00:00",
+  "rules": {
+    "input": "analysis/GSE262927/tables/cell_metadata.csv (tracked per-cell metadata and atlas UMAP coordinates written by run_scrna_analysis.py); no expression data are read",
+    "cohort": "has_author_metadata == True: the 25-sample Ki67 atlas. The 8 pre-labelled tracing samples carry no day post infection and are excluded",
+    "lineage": "deposited author_lineage used as given (descriptive; not a blind validation)",
+    "compartments": {
+      "Endothelium": "CD45neg",
+      "Mesenchyme": "CD45neg",
+      "Epithelium": "CD45neg",
+      "Myeloid": "CD45pos",
+      "Lymphoid": "CD45pos"
+    },
+    "days": [
+      0,
+      6,
+      11,
+      19,
+      25,
+      42,
+      90,
+      366
+    ],
+    "phases": {
+      "0": "baseline",
+      "6": "active repair",
+      "11": "active repair",
+      "19": "active repair",
+      "25": "active repair",
+      "42": "injury resolution",
+      "90": "injury resolution",
+      "366": "long-term homeostasis"
+    },
+    "umap_panels": "shared atlas coordinates; every panel draws all cohort cells in grey and exactly N cells of that day in colour, N = the smallest per-day cell count, sampled with seed 0 and drawn in shuffled order",
+    "composition": "per animal: percent of each lineage among all cells (sort-engineered, descriptive only) and among its compartment (CD45neg = Endothelium + Mesenchyme + Epithelium; CD45pos = Myeloid + Lymphoid)",
+    "trace": "cells with trace_call in {Traced, Untraced}; Not_detected is reporter dropout and is excluded, the rule of 07_lineage_tracing_cohort.py; pct_traced = 100 * Traced / (Traced + Untraced) per animal and lineage",
+    "trace_immediate_windows": {
+      "tamoxifen 2 dpi": "harvest 6 dpi",
+      "tamoxifen 7 dpi": "harvest 11 dpi",
+      "tamoxifen 14 dpi": "harvest 19 dpi",
+      "tamoxifen 21 dpi": "harvest 25 dpi"
+    },
+    "trace_common_harvest": "42 dpi: four tamoxifen windows with two animals each; 90 dpi (one animal per window) and 366 dpi are shown as single points",
+    "cycling": "cell_cycle_phase in {S, G2M} as percent of a lineage's cells per animal and day; the column is the authors' Seurat CellCycleScoring call read from the deposited metadata (docs/PIPELINE_AS_RUN.md), never recalculated here",
+    "peak_rule": "for each lineage, the immediate-window day (6, 11, 19, 25) with the highest median per-animal pct_traced is the observed peak; it agrees with the paper if it falls in the expected set. The same rule is applied to pct_cycling over the same four days",
+    "paper_expected_peak": {
+      "Myeloid": "2 to 6 dpi (immune)",
+      "Lymphoid": "2 to 6 dpi (immune)",
+      "Epithelium": "7 to 15 dpi",
+      "Mesenchyme": "7 to 15 dpi",
+      "Endothelium": "14 to 22 dpi"
+    },
+    "paper_expected_peak_days": {
+      "Myeloid": [
+        6
+      ],
+      "Lymphoid": [
+        6
+      ],
+      "Epithelium": [
+        11,
+        19
+      ],
+      "Mesenchyme": [
+        11,
+        19
+      ],
+      "Endothelium": [
+        19,
+        25
+      ]
+    },
+    "unit": "animal; medians reported; no P values (two animals per active-repair day)",
+    "seed": 0
+  },
+  "notes": "rules frozen before the metadata table was opened; deposited lineage labels used descriptively; unit is the animal",
+  "inputs": [
+    {
+      "path": "analysis\\GSE262927\\tables\\cell_metadata.csv",
+      "bytes": 47225669,
+      "modified": "2026-08-08T14:22:11+00:00"
+    }
+  ],
+  "outputs": [
+    "analysis\\GSE262927\\phase_timecourse\\run_record.json",
+    "analysis\\GSE262927\\phase_timecourse\\figures\\UMAP_atlas_by_dpi_lineage.png",
+    "analysis\\GSE262927\\phase_timecourse\\figures\\UMAP_atlas_by_dpi_lineage.pdf",
+    "analysis\\GSE262927\\phase_timecourse\\tables\\lineage_composition_per_animal.csv",
+    "analysis\\GSE262927\\phase_timecourse\\tables\\lineage_composition_median_by_dpi.csv",
+    "analysis\\GSE262927\\phase_timecourse\\figures\\lineage_composition_by_dpi.png",
+    "analysis\\GSE262927\\phase_timecourse\\figures\\lineage_composition_by_dpi.pdf",
+    "analysis\\GSE262927\\phase_timecourse\\tables\\traced_fraction_per_animal.csv",
+    "analysis\\GSE262927\\phase_timecourse\\tables\\cycling_fraction_per_animal.csv",
+    "analysis\\GSE262927\\phase_timecourse\\tables\\proliferation_peak_by_lineage.csv",
+    "analysis\\GSE262927\\phase_timecourse\\figures\\proliferation_by_lineage.png",
+    "analysis\\GSE262927\\phase_timecourse\\figures\\proliferation_by_lineage.pdf",
+    "analysis\\GSE262927\\phase_timecourse\\figures\\traced_fraction_at_common_harvest_by_window.png",
+    "analysis\\GSE262927\\phase_timecourse\\figures\\traced_fraction_at_common_harvest_by_window.pdf",
+    "analysis\\GSE262927\\phase_timecourse\\README.md"
+  ],
+  "results": {
+    "n_cells_in_table": 162175,
+    "n_cells_cohort": 107626,
+    "n_animals_cohort": 25,
+    "per_day": {
+      "0": {
+        "n_animals": 2,
+        "n_cells": 9696
+      },
+      "6": {
+        "n_animals": 2,
+        "n_cells": 7249
+      },
+      "11": {
+        "n_animals": 2,
+        "n_cells": 8710
+      },
+      "19": {
+        "n_animals": 2,
+        "n_cells": 8450
+      },
+      "25": {
+        "n_animals": 2,
+        "n_cells": 8040
+      },
+      "42": {
+        "n_animals": 8,
+        "n_cells": 35558
+      },
+      "90": {
+        "n_animals": 4,
+        "n_cells": 19485
+      },
+      "366": {
+        "n_animals": 3,
+        "n_cells": 10438
+      }
+    },
+    "umap_cells_drawn_per_panel": 7249,
+    "pct_not_detected_per_animal": {
+      "EEM-scRNA-113 (6 dpi)": 21.97,
+      "EEM-scRNA-116 (11 dpi)": 14.56,
+      "EEM-scRNA-117 (19 dpi)": 5.85,
+      "EEM-scRNA-118 (25 dpi)": 9.17,
+      "EEM-scRNA-124 (42 dpi)": 10.68,
+      "EEM-scRNA-125 (42 dpi)": 10.8,
+      "EEM-scRNA-126 (42 dpi)": 8.2,
+      "EEM-scRNA-127 (42 dpi)": 9.83,
+      "EEM-scRNA-158 (0 dpi)": 17.57,
+      "EEM-scRNA-162 (6 dpi)": 30.9,
+      "EEM-scRNA-166 (0 dpi)": 11.67,
+      "EEM-scRNA-167 (11 dpi)": 10.24,
+      "EEM-scRNA-170 (19 dpi)": 6.73,
+      "EEM-scRNA-172 (25 dpi)": 8.04,
+      "EEM-scRNA-179 (42 dpi)": 6.91,
+      "EEM-scRNA-180 (42 dpi)": 7.27,
+      "EEM-scRNA-181 (42 dpi)": 9.88,
+      "EEM-scRNA-182 (42 dpi)": 7.8,
+      "EEM-scRNA-236 (90 dpi)": 5.26,
+      "EEM-scRNA-237 (90 dpi)": 7.53,
+      "EEM-scRNA-238 (90 dpi)": 7.68,
+      "EEM-scRNA-239 (90 dpi)": 8.75,
+      "EEM-scRNA-310 (366 dpi)": 7.05,
+      "EEM-scRNA-311 (366 dpi)": 10.49,
+      "EEM-scRNA-312 (366 dpi)": 7.74
+    },
+    "pct_not_detected_overall": 10.4,
+    "proliferation_peaks": {
+      "Endothelium": {
+        "median_pct_traced_0dpi": 1.72,
+        "median_pct_traced_6dpi": 4.62,
+        "median_pct_traced_11dpi": 3.37,
+        "median_pct_traced_19dpi": 14.16,
+        "median_pct_traced_25dpi": 4.93,
+        "observed_trace_peak_day": 19,
+        "observed_cycling_peak_day": 19,
+        "paper_expected_peak": "14 to 22 dpi",
+        "trace_agrees_with_paper": true,
+        "cycling_agrees_with_paper": true
+      },
+      "Mesenchyme": {
+        "median_pct_traced_0dpi": 3.6,
+        "median_pct_traced_6dpi": 7.71,
+        "median_pct_traced_11dpi": 11.29,
+        "median_pct_traced_19dpi": 7.79,
+        "median_pct_traced_25dpi": 7.9,
+        "observed_trace_peak_day": 11,
+        "observed_cycling_peak_day": 6,
+        "paper_expected_peak": "7 to 15 dpi",
+        "trace_agrees_with_paper": true,
+        "cycling_agrees_with_paper": false
+      },
+      "Epithelium": {
+        "median_pct_traced_0dpi": 5.9,
+        "median_pct_traced_6dpi": 7.7,
+        "median_pct_traced_11dpi": 28.35,
+        "median_pct_traced_19dpi": 8.22,
+        "median_pct_traced_25dpi": 9.83,
+        "observed_trace_peak_day": 11,
+        "observed_cycling_peak_day": 25,
+        "paper_expected_peak": "7 to 15 dpi",
+        "trace_agrees_with_paper": true,
+        "cycling_agrees_with_paper": false
+      },
+      "Myeloid": {
+        "median_pct_traced_0dpi": 55.48,
+        "median_pct_traced_6dpi": 84.85,
+        "median_pct_traced_11dpi": 47.27,
+        "median_pct_traced_19dpi": 48.12,
+        "median_pct_traced_25dpi": 58.71,
+        "observed_trace_peak_day": 6,
+        "observed_cycling_peak_day": 25,
+        "paper_expected_peak": "2 to 6 dpi (immune)",
+        "trace_agrees_with_paper": true,
+        "cycling_agrees_with_paper": false
+      },
+      "Lymphoid": {
+        "median_pct_traced_0dpi": 31.77,
+        "median_pct_traced_6dpi": 43.45,
+        "median_pct_traced_11dpi": 54.7,
+        "median_pct_traced_19dpi": 30.27,
+        "median_pct_traced_25dpi": 23.38,
+        "observed_trace_peak_day": 11,
+        "observed_cycling_peak_day": 19,
+        "paper_expected_peak": "2 to 6 dpi (immune)",
+        "trace_agrees_with_paper": false,
+        "cycling_agrees_with_paper": false
+      }
+    },
+    "n_lineages_trace_peak_agrees_with_paper": 4,
+    "n_lineages_cycling_peak_agrees_with_paper": 1
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.1",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "igraph": "1.0.0"
+  },
+  "finished_at": "2026-09-10T06:00:52+00:00"
+}
