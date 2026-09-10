@@ -56,7 +56,7 @@ Supporting documents:
   `analysis/scripts/05_write_pipeline_as_run.py`.
 - [`../analysis/GSE262927/README.md`](../analysis/GSE262927/README.md): the full analysis report
   for the primary (mouse) dataset, including QC tables and output locations.
-- [`../WORKFLOW.md`](../WORKFLOW.md): the end-to-end sequence, ordering
+- [`WORKFLOW_Niethamer2025.md`](WORKFLOW_Niethamer2025.md): the end-to-end sequence, ordering
   constraints, subset-and-recluster loop, lineage-trace calling, and quality
   control acceptance order.
 - [`scRNAseq_workflow_Niethamer2025.md`](scRNAseq_workflow_Niethamer2025.md):
@@ -71,7 +71,7 @@ Supporting documents:
   and software repositories.
 
 Alignment (STARsolo) and the Seurat stages have no separate schematic. Their
-steps are linear and fully covered in [`../WORKFLOW.md`](../WORKFLOW.md); a
+steps are linear and fully covered in [`WORKFLOW_Niethamer2025.md`](WORKFLOW_Niethamer2025.md); a
 per-tool diagram would only restate it.
 
 No PDFs are stored in this repository. Three of the five method papers are

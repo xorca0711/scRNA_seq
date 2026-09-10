@@ -505,7 +505,7 @@ environment.
 ### What S2 changes
 
 Proposed, pending owner decision: re-word the human AT0 headline in
-`FINDINGS.md`, the root README and the portfolio PDF as above; correct
+`FINDINGS.md` and the root README as above (the portfolio PDF is displaced to `archive/`); correct
 cluster 22 to mast cells; record the neutrophil caveat wherever HLCA label
 transfer is used; keep cluster 30 out of population claims because it is
 donor-private, even though its identity is now clear.

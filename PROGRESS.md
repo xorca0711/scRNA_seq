@@ -14,7 +14,12 @@ first criteria trial on tracked tables. **Owner retain/reject review of that
 material is pending.** On 2026-09-10 two focused analyses of the source
 paper's phase structure were added under `analysis/GSE262927/`
 (`phase_timecourse/` and `myeloid_focus/`, scripts 10 to 13; items 18 to
-21 below). **Owner review of those is pending too.** Nothing is running.
+21 below). **Owner review of those is pending too.** Later on 2026-09-10 the
+S2 trial was merged (PR #8) with the items renumbered chronologically, and
+the repository was reframed as an analysis log: portfolio material and the
+Krt8-high transitional narrative were displaced to `archive/`, the README
+now opens with the claims table, and the injury model is named once (item 22
+below). Nothing is running.
 
 ---
 
@@ -51,6 +56,8 @@ paper's phase structure were added under `analysis/GSE262927/`
 | Myeloid compartment by dpi (`analysis/GSE262927/myeloid_focus/`, script 11) | **DONE (2026-09-10), owner review pending**; 9,997 cells from atlas clusters 5, 17, 24; 16 blind subclusters at Leiden 0.5 with 87% of labelled cells in pure subclusters; aMAC loss and iMON expansion at 6 dpi with reconstitution by 19 to 42 dpi, consistent with the paper's Figure 3; Descriptive only |
 | Alveolar macrophage origin by Ki67 trace window (`myeloid_focus/amac_origin/`, script 12) | **DONE (2026-09-10), owner review pending**; the 2 to 3 dpi window labels most of the 42 dpi aMAC pool (median 79.7%); marrow-inheritance and two-source checks Not established under the 30-cell floor |
 | Batch sensitivity of the myeloid embedding, Harmony on infection round (`myeloid_focus/batch_sensitivity/`, script 13) | **DONE (2026-09-10), owner review pending**; rounds already mix within every tested day (enrichment 1.11 to 1.46, threshold 2); the 6 dpi iMON state survives correction as its own subcluster (92% of cells from 6 dpi, 77% and 74% of each animal's iMON cells); the frozen survival rule selected the wrong subcluster and the revision is disclosed |
+| Trial S2 merged into main; PROGRESS and DEVELOPMENT renumbered chronologically | **DONE (2026-09-10, PR #8)** |
+| Repository hygiene and reframing: `archive/` for displaced material, README opens with the claims table, injury model named once, checks renamed | **DONE (2026-09-10), owner review pending**; see item 22 |
 
 Repository state: the scientific analysis and portfolio curation are complete;
 no analysis process is running. Branch-specific state belongs in Git/GitHub,
@@ -183,7 +190,7 @@ labelled cells.
    two conflict.
 
 11. **`Thesis/` is now a tracked directory** (2026-09-09). Its Markdown is
-   link-checked by `validate_portfolio.py` like everything else. PDFs and
+   link-checked by `validate_repository.py` like everything else. PDFs and
    spreadsheets inside it remain gitignored; only notes, JSON and small
    trial tables are tracked. Each new paper gets its own folder in the
    roadmap order (`Thesis/README.md`), one at a time.
@@ -277,6 +284,22 @@ labelled cells.
    both embeddings; the first-run outcome is kept in the run record and a
    post hoc definition anchored on the 6 dpi cells is reported alongside
    (DEVELOPMENT decision 16). Owner decision pending.
+22. **Established material is displaced, not deleted** (2026-09-10, owner
+   instruction). The portfolio PDF and its generator moved to
+   `archive/portfolio_2026-08/`; the Krt8-high transitional narrative
+   (FINDINGS section 1, the human KRT8 reference-aligned panels) moved to
+   `archive/DISPLACED.md` because it is established elsewhere (the owner's
+   G-SURF submission). Their artefacts and scripts stay under `analysis/`
+   because the validator checks their numbers and the scripts regenerate
+   them; only the narrative moved. The CI workflow and validator were
+   renamed (`repository-checks.yml`, `validate_repository.py`), the paper's
+   own workflow document moved to `docs/WORKFLOW_Niethamer2025.md`, and the
+   README now opens with the claims table and names H1N1 once as the injury
+   model. Open decision for the owner: whether the alveolar-trajectory
+   artefacts (`regeneration_focus/` alveolar figures and tables, script 06's
+   alveolar branch, script 08 and its reference-aligned figures) should also
+   be relocated physically, which would require re-pointing the generated
+   human report and the validator's transitional-abundance checks.
 
 ---
 

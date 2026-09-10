@@ -12,19 +12,23 @@ violated. Human-readable counterparts: [`README.md`](README.md) (overview),
 ```yaml
 project:
   name: scRNA_seq
-  type: independent reanalysis of public single-cell RNA-seq data (portfolio)
+  type: analysis log of public single-cell RNA-seq reanalysis (not a portfolio)
   question: >
-    Can the published biology of lung regeneration after influenza injury be
-    recovered from the raw deposited count matrices by an independently built
-    pipeline — and where it cannot, why not?
+    Which epithelial and immune-state programmes distinguish productive lung
+    repair from persistent remodelling after injury? Stage 0 asked whether the
+    published biology of one injury series could be recovered from raw counts;
+    Stage 1 follows the target-lab modules (Thesis/gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md).
   repository: https://github.com/xorca0711/scRNA_seq
-  status: complete; all work merged to main (PR #1, PR #2)
+  status: >
+    Stage 0 complete (PR #1 to #4); Stage 1 follow-ups and trial S2 merged
+    (PR #6 to #8), owner review pending; repository hygiene 2026-09-10
+    (archive/ holds displaced material; README reframed as an analysis log)
 
 datasets:
   - accession: GSE262927
     role: primary
     species: mouse
-    design: H1N1 influenza injury time course, uninjured -> 366 dpi
+    design: lung injury time course (H1N1 as the injury model), uninjured -> 366 dpi
     samples: 33            # 25-sample annotated atlas + 8-sample lineage-tracing cohort
     cells_analysed: 162175 # 212,701 barcodes -> 169,807 post-QC -> 162,175 post-Scrublet
     source_paper: "Niethamer et al., Cell Stem Cell 2025, doi:10.1016/j.stem.2024.12.002"
@@ -110,7 +114,9 @@ pitfalls_for_ai_assistants:
   - "Thresholds taken from a paper are frozen in the trial plan BEFORE the trial reads any table; the HLCA donor-entropy threshold (0.43) must be recomputed per dataset and, for the mouse, within time point."
   - "scvi-tools and torch are installed in the emulated .venv-x64 only (owner-authorised 2026-09-09); never on the native ARM64 interpreter. The scarches package does not import with anndata 0.13; use scvi.model.SCANVI.load_query_data for surgery. Train in the background: about 40 s per epoch for 28k cells."
   - "HLCA label transfer confidently mislabels neutrophils as classical monocytes; uncertainty does not flag absent identities that resemble present ones."
-  - "Portfolio framing for the UC Berkeley PI targets: no interferon or influenza narrative (owner instruction 2026-09-09); describe results by cell state, niche, macrophage and monocyte states, annotation robustness, curation hygiene."
+  - "Framing (owner instruction 2026-09-09, tightened 2026-09-10): no influenza or interferon narrative; H1N1 is the injury model of one series, not the subject. Describe results by cell state, niche, macrophage and monocyte states, annotation robustness, curation hygiene. The repository is an analysis log, not a portfolio."
+  - "Displaced material (archive/DISPLACED.md, 2026-09-10): the Krt8-high transitional trajectory, the human KRT8 reference-aligned panels and the portfolio PDF are established elsewhere (the owner's G-SURF submission). Do not extend them here; their artefacts and scripts stay in place and are validated."
+  - "Repository checks: analysis/scripts/validate_repository.py (renamed from validate_portfolio.py on 2026-09-10) and .github/workflows/repository-checks.yml. The paper's own workflow document moved to docs/WORKFLOW_Niethamer2025.md."
   - "Trial scripts under Thesis/**/trials read the processed .h5ad objects row-wise (trial_utils.read_csr_rows); never load the 2.1 GB mouse object fully. Use absolute paths; the shell cwd can change between calls."
 
 reproduce:

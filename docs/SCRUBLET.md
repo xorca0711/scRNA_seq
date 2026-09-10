@@ -56,7 +56,7 @@ flowchart TD
 The two consistency checks are free and both should be reported. Note that the
 threshold is set on the distribution of **simulated** scores, not observed
 ones, and that the final node deliberately stops short of deletion — see
-[`../WORKFLOW.md`](../WORKFLOW.md) for the combination rule.
+[`WORKFLOW_Niethamer2025.md`](WORKFLOW_Niethamer2025.md) for the combination rule.
 
 ---
 

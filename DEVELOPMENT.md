@@ -27,6 +27,7 @@ violate — is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Retain / revise / reject decision on every result | Me |
 | Literature extraction into study notes and reviewable configs (`Thesis/`) | AI-assisted; my review pending |
 | Focused reproductions of the source paper's phase and myeloid claims (`phase_timecourse/`, `myeloid_focus/`) | AI-assisted, rules frozen before each run; my review pending |
+| Repository framing, and what is displaced as established elsewhere | Me (instruction 2026-09-10); AI-assisted execution |
 
 AI execution never meant automatic acceptance. Results were reviewed between
 sessions, and several were sent back: one finding was refuted and rewritten
@@ -208,6 +209,23 @@ let two of its three pre-registered checks fail closed on a 30-cell floor
 rather than lower the floor after seeing the tables. Retain or reject is
 mine and pending.
 
+**17 · The repository is an analysis log, and established material is
+displaced rather than deleted.** (Owner instruction, 2026-09-10.) Two
+kinds of content had accumulated that are not part of the ongoing analysis:
+portfolio-curation material (a thesis-aware PDF and its generator) and the
+Krt8-high transitional work (the alveolar trajectory, its time course, and
+the human KRT8 reference-aligned panels), which is established elsewhere in
+my G-SURF submission. Both were moved out of the main narrative into
+`archive/` with a note on what moved, when and why; their artefacts and
+scripts stay under `analysis/` because the validator checks their numbers
+and the scripts regenerate them. The README was rewritten to open with the
+claims table, to state the working question rather than a recovery
+exercise, and to name H1N1 once as the injury model of one series, because
+the roadmap ahead is not an influenza project. Claims were softened where
+they overreached ("never resolves" became "has not resolved by 366 dpi").
+The checks were renamed from portfolio to repository checks. Nothing was
+deleted and no number changed.
+
 ## How outputs were reviewed
 
 Every run writes its decisions to machine logs (`decisions.json`,
@@ -225,5 +243,5 @@ were carried forward in writing rather than dropped.
 - The three contradicted cluster annotations, flagged in
   `analysis/GSE262927/tables/cluster_annotation_proposals.csv`
 - Thresholds that never bound, doublet calls that are a ranking rather than a
-  detection, and every other caveat: [`FINDINGS.md § 6`](FINDINGS.md#6--negative-results-and-self-audits)
+  detection, and every other caveat: [`FINDINGS.md § 6`](FINDINGS.md#5--negative-results-and-self-audits)
   and the per-dataset reports
