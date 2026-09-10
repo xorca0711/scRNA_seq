@@ -59,7 +59,7 @@ grading and for descriptive composition.
   only. Per-day atlas UMAP with equal cell numbers per panel; per-animal
   composition within compartment.
 - **Artefacts.** [`analysis/GSE262927/phase_timecourse/`](../../analysis/GSE262927/phase_timecourse/README.md)
-- **Status.** Descriptive only; owner review pending (PROGRESS item 15).
+- **Status.** Descriptive only; owner review pending (PROGRESS item 18).
 
 ### N2. Myeloid compartment by day (script 11)
 
@@ -77,7 +77,7 @@ grading and for descriptive composition.
   49.0% at 42 dpi; iMON 1.9% to 56.0% to 1.8%. Consistent with Figure 3.
   Interstitial macrophages keep rising through 90 dpi (candidate only).
 - **Artefacts.** [`analysis/GSE262927/myeloid_focus/`](../../analysis/GSE262927/myeloid_focus/README.md)
-- **Status.** Descriptive only; owner review pending (PROGRESS item 16).
+- **Status.** Descriptive only; owner review pending (PROGRESS item 19).
 
 ### N3. Origin of the rebuilt alveolar macrophage pool, trace only (script 12)
 
@@ -101,7 +101,7 @@ grading and for descriptive composition.
   by 28 to 33 points, late windows the reverse) are reported descriptively.
 - **Artefacts.** [`analysis/GSE262927/myeloid_focus/amac_origin/`](../../analysis/GSE262927/myeloid_focus/amac_origin/README.md)
 - **Status.** Window contribution Descriptive only; the two checks Not
-  established; owner review pending (PROGRESS item 17).
+  established; owner review pending (PROGRESS item 20).
 
 ### N4. Batch sensitivity of the myeloid embedding (script 13)
 
@@ -121,10 +121,10 @@ grading and for descriptive composition.
   iMON cells); adjusted Rand index between the partitions 0.837. The frozen
   survival rule selected the 11 to 19 dpi monocyte state instead of the 6 dpi
   one; the first-run outcome is kept and a post hoc definition anchored on
-  the 6 dpi cells is reported alongside (DEVELOPMENT decision 15).
+  the 6 dpi cells is reported alongside (DEVELOPMENT decision 16).
 - **Artefacts.** [`analysis/GSE262927/myeloid_focus/batch_sensitivity/`](../../analysis/GSE262927/myeloid_focus/batch_sensitivity/README.md)
 - **Status.** Descriptive only (rule revision disclosed); owner review pending
-  (PROGRESS item 18).
+  (PROGRESS item 21).
 
 ### What each lab would see first
 

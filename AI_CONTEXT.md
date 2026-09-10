@@ -93,8 +93,9 @@ thesis_roadmap:
   local_pdfs: "C:/Users/dream/Documents/AC_document/External Thesis/SAP_Thesis study/Gate_1-2_Universal/ (per gate); older ones directly under Thesis/"
   done:
     - gate1_01_niethamer_2025 (pointer to docs/ and analysis/GSE262927)
-    - gate1_04_sikkema_2023_hlca (note, integration_benchmark.json, PIPELINE_FRAMING.md, trials S1 S3 S4 S5 with run records; owner review pending)
-  next: gate1_02_choi_2020, gate1_03_nabhan_2018; trial S2 (scArches mapping of GSE178360 to the HLCA core) blocked on environment
+    - gate1_04_sikkema_2023_hlca (note, integration_benchmark.json, PIPELINE_FRAMING.md, trials S1 to S5 with run records; owner review pending; S2 result contradicts the human AT0 headline, see PROGRESS item 15)
+  next: gate1_02_choi_2020, gate1_03_nabhan_2018; owner decisions on PROGRESS items 12 to 21
+  s2_environment: .venv-x64 also holds torch 2.14.0 (CPU) and scvi-tools 1.5.0.post1 (frozen in trials/s2_reference_mapping/requirements_s2_env.txt); scarches package removed (incompatible with anndata 0.13); HLCA reference files under trials/s2_reference_mapping/reference/ are gitignored (embedding 2.37 GB, MD5 4aa9167707141dd884ff0202b3ab1205)
 
 pitfalls_for_ai_assistants:
   - "raw_data/ is read-only, 7.8 GB, gitignored. NEVER modify or commit it. Never grep/walk it recursively."
@@ -107,7 +108,8 @@ pitfalls_for_ai_assistants:
   - "*.h5ad, processed/, sample_shards/ are gitignored and regenerable; figures and small tables are tracked."
   - "Thesis/ is tracked and link-checked; never commit a PDF or XLSX there. Add papers one at a time in Thesis/README.md order."
   - "Thresholds taken from a paper are frozen in the trial plan BEFORE the trial reads any table; the HLCA donor-entropy threshold (0.43) must be recomputed per dataset and, for the mouse, within time point."
-  - "Do not attempt scvi-tools, scArches or JAX installs on the native ARM64 interpreter; only the emulated .venv-x64 is a candidate, and only if no compilation is required."
+  - "scvi-tools and torch are installed in the emulated .venv-x64 only (owner-authorised 2026-09-09); never on the native ARM64 interpreter. The scarches package does not import with anndata 0.13; use scvi.model.SCANVI.load_query_data for surgery. Train in the background: about 40 s per epoch for 28k cells."
+  - "HLCA label transfer confidently mislabels neutrophils as classical monocytes; uncertainty does not flag absent identities that resemble present ones."
   - "Portfolio framing for the UC Berkeley PI targets: no interferon or influenza narrative (owner instruction 2026-09-09); describe results by cell state, niche, macrophage and monocyte states, annotation robustness, curation hygiene."
   - "Trial scripts under Thesis/**/trials read the processed .h5ad objects row-wise (trial_utils.read_csr_rows); never load the 2.1 GB mouse object fully. Use absolute paths; the shell cwd can change between calls."
 

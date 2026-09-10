@@ -13,8 +13,8 @@ decision criteria as reviewable JSON, a pipeline-framing proposal, and a
 first criteria trial on tracked tables. **Owner retain/reject review of that
 material is pending.** On 2026-09-10 two focused analyses of the source
 paper's phase structure were added under `analysis/GSE262927/`
-(`phase_timecourse/` and `myeloid_focus/`, scripts 10 and 11; items 15 and
-16 below). **Owner review of those is pending too.** Nothing is running.
+(`phase_timecourse/` and `myeloid_focus/`, scripts 10 to 13; items 18 to
+21 below). **Owner review of those is pending too.** Nothing is running.
 
 ---
 
@@ -43,7 +43,7 @@ paper's phase structure were added under `analysis/GSE262927/`
 | `Thesis/` roadmap index (11 papers, Notion order, PubMed-verified IDs) | **DONE** |
 | Sikkema 2023 (HLCA) study note, `integration_benchmark.json`, `PIPELINE_FRAMING.md` | **DONE, owner review pending** |
 | Trial S1: HLCA cluster-entropy criteria on the tracked tables | **DONE (2026-09-09); artefacts in Thesis/gate1_04_sikkema_2023_hlca/trials/** |
-| Trial S2: scArches mapping of GSE178360 to the HLCA core | **PLANNED**; environment Not established |
+| Trial S2: scArches mapping of GSE178360 to the HLCA core | **DONE (2026-09-09)**; 23 of 31 clusters agree with the blind proposals; AT0 is a minority and the AT0 candidate subcluster is mostly AT2 or uncertain; our mapping matches the HLCA authors' own transfer of the same cells at 99.2% (level 3) |
 | Trial S3: HLCA consensus-marker annotation of GSE178360 | **DONE (2026-09-09)**; 17 to 19 of 31 clusters agree with the blind proposals; AT0 by marker transfer Not established (scheme-dependent) |
 | Trial S4: mouse cluster 23 explained | **DONE (2026-09-09)**; low-count, ambient-like; 78% from EEM-scRNA-289 |
 | Trial S5: mouse cluster 5 subclustered and re-graded | **DONE (2026-09-09)**; resolved at Leiden 0.5 (94% of labelled cells in pure subclusters), not at 0.2 |
@@ -203,9 +203,27 @@ labelled cells.
    argmax calls AT0 in most distal secretory and AT2 clusters and passes the
    factor-of-two concordance with the strict gate; the hierarchical scheme
    collapses AT0 to a few percent of the gate and relabels the AT0 candidate
-   analogue as AT2. Not established by this route; trial S2 (reference
-   mapping) is the route that can settle it.
-15. **The paper's three proliferative phases are visible in the trace, not
+   analogue as AT2. Not established by this route; settled by trial S2
+   (next item).
+15. **The human AT0 headline needs re-wording** (trial S2, 2026-09-09).
+   scArches mapping to the HLCA core, which reproduces the HLCA authors'
+   own transfer of the same cells at 99.2% (level 3), labels 119 cells AT0
+   with low uncertainty (0.4% of the series; 0.25% in the HLCA core) and
+   calls the strict SFTPC+ SCGB3A2+ EPCAM+ gate population mostly pre-TB
+   secretory and AT2. Epithelial subcluster 4, the "AT0 candidate
+   analogue" (328 cells) in `FINDINGS.md` and the portfolio PDF, is 38%
+   AT2, 36% uncertain and 23% AT0. Proposed wording: "an AT0-like minority
+   exists; the candidate subcluster is not an AT0 population". Nothing has
+   been edited; owner decision.
+16. **HLCA label transfer confidently mislabels neutrophils** as classical
+   monocytes (cluster 14: mode 0.94, mean uncertainty 0.056) because the
+   reference has no neutrophil identity. Uncertainty does not catch an
+   absent identity that resembles a present one. Apply an independent
+   neutrophil check whenever HLCA labels are used.
+17. **Human cluster 30 is a ciliated population private to one donor**
+   (trial S2: Multiciliated, mode 0.98, uncertainty 0.02). Its identity is
+   settled; it stays out of population claims because it is donor-private.
+18. **The paper's three proliferative phases are visible in the trace, not
    in the deposited cell-cycle call** (`phase_timecourse/`, 2026-09-10).
    With the expected peak windows frozen before the metadata table was
    opened, the median per-animal Ki67-traced fraction in each cohort's
@@ -217,7 +235,7 @@ labelled cells.
    lymphocytes and about 40% of all cells cycling; it is reported, not used.
    Two animals per active-repair day: a ranking, no test. Uses the deposited
    lineage labels descriptively. Owner decision pending.
-16. **The myeloid compartment reproduces the paper's Figure 3 from a blind
+19. **The myeloid compartment reproduces the paper's Figure 3 from a blind
    embedding** (`myeloid_focus/`, 2026-09-10). Atlas clusters 5, 17 and 24
    in the 25-sample cohort (9,997 cells, 13 with a non-myeloid label) were
    re-embedded with the labels held out; at Leiden 0.5 (fixed from trial S5
@@ -229,7 +247,7 @@ labelled cells.
    12, 13; 1,286 cells). The MACS recombination fixes the myeloid share of
    each library, so only within-myeloid fractions are read. Owner decision
    pending.
-17. **The rebuilt alveolar macrophage pool is labelled mainly by the 2 to 3
+20. **The rebuilt alveolar macrophage pool is labelled mainly by the 2 to 3
    dpi window** (`myeloid_focus/amac_origin/`, 2026-09-10). At the common
    42 dpi harvest the median per-animal Ki67-traced fraction of
    aMAC-labelled cells is 79.7% for the 2 to 3 dpi window, 60.0% for 7 to 8,
@@ -242,7 +260,7 @@ labelled cells.
    subcluster 3 by 28 to 33 points and the late windows show the reverse).
    Both are Not established; the per-animal values are in the tables. Owner
    decision pending.
-18. **The 6 dpi inflammatory-monocyte state is not a batch island**
+21. **The 6 dpi inflammatory-monocyte state is not a batch island**
    (`myeloid_focus/batch_sensitivity/`, 2026-09-10). On every active-repair
    day and at 42 dpi the two animals come from different infection rounds
    (Table S3; the rounds also differ in Ki67-Cre dosage), so round is the
@@ -258,7 +276,7 @@ labelled cells.
    the most iMON-labelled cells) selected the 11 to 19 dpi monocyte state in
    both embeddings; the first-run outcome is kept in the run record and a
    post hoc definition anchored on the 6 dpi cells is reported alongside
-   (DEVELOPMENT decision 15). Owner decision pending.
+   (DEVELOPMENT decision 16). Owner decision pending.
 
 ---
 
@@ -272,12 +290,11 @@ labelled cells.
 
 ---
 
-3. Run trial S2 (map GSE178360 to the HLCA core with scArches, transfer
-   labels with the 0.2 uncertainty cutoff, compare with the blind and
-   deposited annotations, AT0 check). Blocked on environment work
-   (PyTorch and scArches in the emulated interpreter); the plan and the
-   pre-registered success criteria are in
-   `Thesis/gate1_04_sikkema_2023_hlca/ANALYSIS_TRIAL_PLAN.md`.
+3. Trial S2 has run (2026-09-09); its consequences (items 15 to 17 above)
+   await the owner's retain/reject decisions. The x64 environment now also
+   holds torch 2.14.0 (CPU) and scvi-tools 1.5.0.post1, frozen in
+   `Thesis/gate1_04_sikkema_2023_hlca/trials/s2_reference_mapping/requirements_s2_env.txt`;
+   `analysis/requirements.txt` is unchanged.
 4. Add the next roadmap papers (Choi 2020, Nabhan 2018) as folders under
    `Thesis/` in order, each with its five-question note.
 

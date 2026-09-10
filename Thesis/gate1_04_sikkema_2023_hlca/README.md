@@ -371,6 +371,8 @@ scikit-learn 0.24.1; R 4.1.1 (covariate models) and 4.0.3 (GSEA); edgeR
 | "GSE178360 can be mapped to the HLCA core without circularity" | Descriptive only (Supplementary Table 1 lists it as an extension dataset, not core) |
 | "HLCA labels can be transferred to the mouse series" | Not established, and the authors caution against it |
 | "AT0 in GSE178360 can be identified by transferring the HLCA marker sets" | Not established (trial S3: the flat and hierarchical schemes disagree; see `ANALYSIS_TRIAL_PLAN.md`) |
+| "AT0 in GSE178360 by HLCA reference mapping" | Descriptive only (trial S2): a minority of 119 confident cells; the AT0 candidate analogue subcluster is mostly AT2 or uncertain; our mapping matches the HLCA authors' own transfer of the same cells |
+| "GSE178360 maps well to the HLCA core" | Descriptive only (trial S2): unknown fraction at 0.3 between 12 and 24% per donor, inside the paper's healthy range |
 | "Mouse cluster 23 is a cell population" | Descriptive only: it is a low-count, ambient-like barcode set (trial S4) |
 | "The label disagreement in mouse cluster 5 is a resolution artefact" | Descriptive only (trial S5: true for 94% of labelled cells at Leiden 0.5, not at 0.2) |
-| "Human cluster 22 is mast cells" | Descriptive only (trial S3; correction of the blind table pending owner decision) |
+| "Human cluster 22 is mast cells" | Descriptive only (trials S2 and S3 and the model classifier agree; correction of the blind table pending owner decision) |
