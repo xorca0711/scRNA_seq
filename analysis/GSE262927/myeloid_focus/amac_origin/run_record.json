@@ -1,0 +1,258 @@
+{
+  "analysis": "origin of the rebuilt alveolar macrophage pool, read from the Ki67 trace by tamoxifen window",
+  "rules_frozen_at": "2026-09-10T07:04:18+00:00",
+  "rules": {
+    "input": "analysis/GSE262927/myeloid_focus/tables/myeloid_cell_metadata.csv (tracked; written by 11_myeloid_focus.py from atlas clusters 5, 17, 24 of the 25-sample Ki67 atlas)",
+    "cells": "cells with a deposited myeloid label in the frozen list and trace_call in {Traced, Untraced}; Not_detected is reporter dropout and is excluded (rule of 07_lineage_tracing_cohort.py)",
+    "labels_read": [
+      "aMAC",
+      "iMON",
+      "iMAC",
+      "cMON",
+      "Neutrophil"
+    ],
+    "marrow_reference_labels": [
+      "cMON",
+      "Neutrophil"
+    ],
+    "windows": {
+      "2": "2 to 3 dpi",
+      "7": "7 to 8 dpi",
+      "14": "14 to 15 dpi",
+      "21": "21 to 22 dpi"
+    },
+    "harvests": {
+      "common": "42 dpi, two animals per window",
+      "later": "90 dpi (one animal per window) and 366 dpi (7 dpi window: one animal; 14 dpi window: two)",
+      "immediate": {
+        "window 2 dpi": "harvest 6 dpi",
+        "window 7 dpi": "harvest 11 dpi",
+        "window 14 dpi": "harvest 19 dpi",
+        "window 21 dpi": "harvest 25 dpi"
+      }
+    },
+    "pct_traced": "100 * Traced / (Traced + Untraced) per animal and label; reported only when the animal has at least 30 scored cells of that label, otherwise left empty",
+    "question_1_window_contribution": "the window whose two 42 dpi animals give the highest median aMAC traced fraction is the main contributor; paper expectation: the 2 to 3 or 7 to 8 dpi window (immune proliferation peaks at 2 to 7 dpi and the aMAC pool is rebuilt over the following three weeks)",
+    "question_2_marrow_inheritance": "per 42 dpi animal, aMAC traced fraction minus the same animal's cMON and neutrophil traced fractions; a window's aMAC labelling 'exceeds the marrow reference' if aMAC exceeds both references by at least 10.0 percentage points in both animals of that window",
+    "question_3_within_amac_split": "per 42 dpi animal, traced fraction of aMAC-labelled cells per blind subcluster (sub_r0.5 from 11_myeloid_focus.py) with at least 30 scored cells; a subcluster pair whose traced fractions differ by at least 20.0 points in the same direction in both animals of a window is reported as a candidate two-source signature. Descriptive only",
+    "unit": "animal; medians; no P values (two animals per window at 42 dpi, one at 90 dpi)",
+    "seed": 0
+  },
+  "notes": "rules frozen before the table was opened; deposited labels used descriptively",
+  "inputs": [
+    {
+      "path": "analysis\\GSE262927\\myeloid_focus\\tables\\myeloid_cell_metadata.csv",
+      "bytes": 1103269,
+      "modified": "2026-09-10T06:21:44+00:00"
+    }
+  ],
+  "outputs": [
+    "analysis\\GSE262927\\myeloid_focus\\amac_origin\\run_record.json",
+    "analysis\\GSE262927\\myeloid_focus\\amac_origin\\tables\\traced_fraction_per_animal_label.csv",
+    "analysis\\GSE262927\\myeloid_focus\\amac_origin\\tables\\window_contribution_summary.csv",
+    "analysis\\GSE262927\\myeloid_focus\\amac_origin\\tables\\marrow_reference_check.csv",
+    "analysis\\GSE262927\\myeloid_focus\\amac_origin\\tables\\amac_subcluster_traced_fraction_42dpi.csv",
+    "analysis\\GSE262927\\myeloid_focus\\amac_origin\\figures\\trace_by_window_late_harvests.png",
+    "analysis\\GSE262927\\myeloid_focus\\amac_origin\\figures\\trace_by_window_late_harvests.pdf",
+    "analysis\\GSE262927\\myeloid_focus\\amac_origin\\figures\\trace_immediate_windows.png",
+    "analysis\\GSE262927\\myeloid_focus\\amac_origin\\figures\\trace_immediate_windows.pdf",
+    "analysis\\GSE262927\\myeloid_focus\\amac_origin\\figures\\amac_subcluster_trace_42dpi.png",
+    "analysis\\GSE262927\\myeloid_focus\\amac_origin\\figures\\amac_subcluster_trace_42dpi.pdf",
+    "analysis\\GSE262927\\myeloid_focus\\amac_origin\\README.md"
+  ],
+  "results": {
+    "n_cells_in_table": 9997,
+    "n_cells_scored_in_frozen_labels": 7492,
+    "n_animals": 25,
+    "question_1": {
+      "median_pct_traced_42dpi_by_window": {
+        "2": 79.715,
+        "7": 59.949999999999996,
+        "14": 29.310000000000002,
+        "21": 41.989999999999995
+      },
+      "main_contributing_window": 2,
+      "agrees_with_paper": true
+    },
+    "question_2": {
+      "2": {
+        "n_animals": 2,
+        "both_animals_exceed": false
+      },
+      "7": {
+        "n_animals": 2,
+        "both_animals_exceed": false
+      },
+      "14": {
+        "n_animals": 2,
+        "both_animals_exceed": false
+      },
+      "21": {
+        "n_animals": 2,
+        "both_animals_exceed": false
+      }
+    },
+    "question_3": {
+      "2": {
+        "animals": [
+          "EEM-scRNA-124",
+          "EEM-scRNA-179"
+        ],
+        "subclusters_with_enough_cells_in_both_animals": [
+          "2"
+        ],
+        "candidate_two_source_pairs": []
+      },
+      "7": {
+        "animals": [
+          "EEM-scRNA-125",
+          "EEM-scRNA-180"
+        ],
+        "subclusters_with_enough_cells_in_both_animals": [
+          "2"
+        ],
+        "candidate_two_source_pairs": []
+      },
+      "14": {
+        "animals": [
+          "EEM-scRNA-126",
+          "EEM-scRNA-181"
+        ],
+        "subclusters_with_enough_cells_in_both_animals": [
+          "2"
+        ],
+        "candidate_two_source_pairs": []
+      },
+      "21": {
+        "animals": [
+          "EEM-scRNA-127",
+          "EEM-scRNA-182"
+        ],
+        "subclusters_with_enough_cells_in_both_animals": [
+          "2"
+        ],
+        "candidate_two_source_pairs": []
+      }
+    },
+    "question_2_animals_with_both_references_evaluable": 3,
+    "question_3_per_animal_values": {
+      "2": [
+        {
+          "sample_id": "EEM-scRNA-124",
+          "tam": 2,
+          "subcluster": "2",
+          "n_scored": 35,
+          "n_traced": 33,
+          "pct_traced": 94.29
+        },
+        {
+          "sample_id": "EEM-scRNA-179",
+          "tam": 2,
+          "subcluster": "2",
+          "n_scored": 241,
+          "n_traced": 171,
+          "pct_traced": 70.95
+        },
+        {
+          "sample_id": "EEM-scRNA-179",
+          "tam": 2,
+          "subcluster": "3",
+          "n_scored": 80,
+          "n_traced": 34,
+          "pct_traced": 42.5
+        }
+      ],
+      "7": [
+        {
+          "sample_id": "EEM-scRNA-125",
+          "tam": 7,
+          "subcluster": "2",
+          "n_scored": 61,
+          "n_traced": 49,
+          "pct_traced": 80.33
+        },
+        {
+          "sample_id": "EEM-scRNA-180",
+          "tam": 7,
+          "subcluster": "2",
+          "n_scored": 154,
+          "n_traced": 83,
+          "pct_traced": 53.9
+        },
+        {
+          "sample_id": "EEM-scRNA-180",
+          "tam": 7,
+          "subcluster": "3",
+          "n_scored": 191,
+          "n_traced": 39,
+          "pct_traced": 20.42
+        }
+      ],
+      "14": [
+        {
+          "sample_id": "EEM-scRNA-126",
+          "tam": 14,
+          "subcluster": "2",
+          "n_scored": 59,
+          "n_traced": 14,
+          "pct_traced": 23.73
+        },
+        {
+          "sample_id": "EEM-scRNA-181",
+          "tam": 14,
+          "subcluster": "2",
+          "n_scored": 89,
+          "n_traced": 23,
+          "pct_traced": 25.84
+        },
+        {
+          "sample_id": "EEM-scRNA-181",
+          "tam": 14,
+          "subcluster": "3",
+          "n_scored": 128,
+          "n_traced": 47,
+          "pct_traced": 36.72
+        }
+      ],
+      "21": [
+        {
+          "sample_id": "EEM-scRNA-127",
+          "tam": 21,
+          "subcluster": "2",
+          "n_scored": 71,
+          "n_traced": 32,
+          "pct_traced": 45.07
+        },
+        {
+          "sample_id": "EEM-scRNA-182",
+          "tam": 21,
+          "subcluster": "2",
+          "n_scored": 203,
+          "n_traced": 68,
+          "pct_traced": 33.5
+        },
+        {
+          "sample_id": "EEM-scRNA-182",
+          "tam": 21,
+          "subcluster": "3",
+          "n_scored": 90,
+          "n_traced": 42,
+          "pct_traced": 46.67
+        }
+      ]
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.1",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "igraph": "1.0.0"
+  },
+  "finished_at": "2026-09-10T07:04:40+00:00"
+}

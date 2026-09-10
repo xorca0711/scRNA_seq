@@ -119,6 +119,8 @@ reproduce:
   - python analysis/scripts/07_lineage_tracing_cohort.py
   - python analysis/scripts/10_phase_timecourse.py   # tracked metadata only; no scanpy needed
   - python analysis/scripts/11_myeloid_focus.py      # reads the 2.1 GB object row-wise
+  - python analysis/scripts/12_amac_trace_by_window.py   # tracked myeloid metadata only
+  - python analysis/scripts/13_myeloid_batch_sensitivity.py   # row-wise object + Table S3 (or the tracked round table)
   - python analysis/scripts/03_write_report.py --dataset GSE262927
   - python analysis/scripts/05_write_pipeline_as_run.py
 ```

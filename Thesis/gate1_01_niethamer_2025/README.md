@@ -20,10 +20,15 @@ DOI 10.1016/j.stem.2024.12.002, PMID 39818203. Data: GEO GSE262927.
 | What actually ran, with the divergence table | [`../../docs/PIPELINE_AS_RUN.md`](../../docs/PIPELINE_AS_RUN.md) |
 | Results and negative results | [`../../FINDINGS.md`](../../FINDINGS.md) |
 | Full citation block | [`../../REFERENCES.md`](../../REFERENCES.md) |
+| The analysis in steps: initial run (Stage 0) versus PI-matched follow-ups (Stage 1) and proposals (Stage 2) | [`ANALYSIS_TRIAL_PLAN.md`](ANALYSIS_TRIAL_PLAN.md) |
 
 **Status.** Study note: done (in the docs above). Analysis trial: done; the
-validated claims are listed in the root README claims table. The five
-reading-workflow questions of the roadmap (question, evidence type, reusable
-variables, one limitation, one bridge) are answered in prose across the
-rationale document and are not yet collected in the roadmap format; that is
-the remaining item for this folder.
+validated claims are listed in the root README claims table. Four PI-matched
+follow-ups (per-day phase view, myeloid compartment, alveolar macrophage
+origin by trace window, batch sensitivity on infection round) were run on
+2026-09-10 with frozen rules; they are Descriptive only and await owner
+review; [`ANALYSIS_TRIAL_PLAN.md`](ANALYSIS_TRIAL_PLAN.md) lays them out
+step by step against the initial run. The five reading-workflow questions of
+the roadmap (question, evidence type, reusable variables, one limitation, one
+bridge) are answered in prose across the rationale document and are not yet
+collected in the roadmap format; that is the remaining item for this folder.

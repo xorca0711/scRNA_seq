@@ -88,6 +88,8 @@ python analysis/scripts/06_regeneration_focus.py
 python analysis/scripts/07_lineage_tracing_cohort.py
 python analysis/scripts/10_phase_timecourse.py
 python analysis/scripts/11_myeloid_focus.py
+python analysis/scripts/12_amac_trace_by_window.py
+python analysis/scripts/13_myeloid_batch_sensitivity.py
 python analysis/scripts/03_write_report.py --dataset GSE262927
 python analysis/scripts/03_write_report.py --dataset GSE178360
 python analysis/scripts/08_reference_aligned_epithelial_umap.py
