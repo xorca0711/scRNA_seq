@@ -46,7 +46,7 @@ Both have the same structure:
 | `GSE262927/regeneration_focus/` | 5,694 alveolar<br>43,359 capillary | 25-sample annotated atlas | **The biology.** AT2 → Krt8⁺ transitional → AT1 trajectory, and the persistent injury-induced capillary state. |
 | `GSE262927/lineage_tracing_cohort/` | 36,958 | **the 8 non-atlas samples** | A separate experiment (Kit / Car4 / Ednrb Cre, pre-labelled, 19 dpi). Where does the injury state come from? |
 | `GSE262927/phase_timecourse/` | 107,626 | 25-sample annotated atlas | Per-day UMAP, per-animal lineage composition and Ki67-trace proliferation by lineage: the paper's three-phase structure, computed from the tracked metadata table only (script 10). Owner review pending. |
-| `GSE262927/myeloid_focus/` | 9,997 | 25-sample annotated atlas | The myeloid compartment (atlas clusters 5, 17, 24) re-embedded with labels held out, graded against them, and read per animal and day (script 11). Owner review pending. |
+| `GSE262927/myeloid_focus/` | 9,997 | 25-sample annotated atlas | The myeloid compartment (atlas clusters 5, 17, 24) re-embedded with labels held out, graded against them, and read per animal and day (script 11). Two follow-ups live inside it: `amac_origin/` reads the Ki67 trace by tamoxifen window to ask which window populates the rebuilt alveolar macrophage pool (script 12, tracked metadata only); `batch_sensitivity/` re-embeds the days that carry both infection rounds with and without Harmony on round to ask whether the 6 dpi iMON state survives correction (script 13). Owner review pending. |
 
 **The whole-atlas object merges two experiments.** All 33 samples are in it,
 which is fine for surveying cell types but wrong for anything condition- or
@@ -74,6 +74,8 @@ python analysis/scripts/06_regeneration_focus.py
 python analysis/scripts/07_lineage_tracing_cohort.py
 python analysis/scripts/10_phase_timecourse.py
 python analysis/scripts/11_myeloid_focus.py
+python analysis/scripts/12_amac_trace_by_window.py
+python analysis/scripts/13_myeloid_batch_sensitivity.py
 python analysis/scripts/03_write_report.py --dataset GSE262927
 python analysis/scripts/05_write_pipeline_as_run.py
 ```

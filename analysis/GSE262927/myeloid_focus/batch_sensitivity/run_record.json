@@ -1,0 +1,331 @@
+{
+  "analysis": "myeloid compartment: sensitivity of the 6 dpi iMON state to Harmony on infection round",
+  "rules_frozen_at": "2026-09-10T07:17:49+00:00",
+  "rules": {
+    "object": "analysis/GSE262927/processed/final_clustered.h5ad, read row-wise; never loaded fully",
+    "cells": "atlas Leiden clusters 5, 17, 24 within the 25-sample Ki67 atlas (as 11_myeloid_focus.py), restricted to days where both infection rounds are present: [6, 11, 19, 25, 42] dpi. 0, 90 and 366 dpi are single-round and excluded",
+    "batch_key": "infection round = Date of Influenza Infection in the paper's Table S3 (mmc4.xlsx, local and gitignored; the sample-to-round map is written to tables/sample_infection_round.csv and tracked). The two rounds also differ in Ki67-Cre dosage (Cre/Cre in most 2021-10-21 animals, Cre/+ in all 2022-07-06 animals), so the key absorbs date and genotype together",
+    "why_not_sample": "sample = one animal at one day; correcting on it removes the time course (root decision 2)",
+    "embedding": {
+      "hvg": {
+        "flavor": "seurat_v3",
+        "n_top_genes": 2000,
+        "layer": "counts",
+        "batch_key": null
+      },
+      "scale_max": 10,
+      "n_pcs": 30,
+      "knn_k": 30,
+      "leiden": {
+        "resolution": 0.5,
+        "flavor": "igraph",
+        "n_iterations": 2,
+        "random_state": 0
+      },
+      "umap_random_state": 0,
+      "note": "identical to 11_myeloid_focus.py; computed on X_pca (uncorrected) and on X_pca_harmony"
+    },
+    "harmony": {
+      "package": "harmonypy 0.0.10 (pinned)",
+      "vars_use": [
+        "round"
+      ],
+      "random_state": 0,
+      "input": "the 30 uncorrected PCs"
+    },
+    "mixing_metric": "the pipeline's within-group replicate rule (run_scrna_analysis.py inspect_batch) with group = day and replicate = round: for each cell, among its 30 nearest neighbours that lie in the same day, the fraction sharing its round; averaged over the day's cells and divided by the expected value under mixing (sum of squared round frequencies within the day). 1.0 = mixed; the pipeline treats > 2.0 as failure to mix",
+    "imon_state_rule": "in each embedding, the Leiden subcluster holding the most iMON-labelled cells is the iMON state. It survives if its iMON purity among labelled cells is >= 0.75 AND it contains >= 20 percent of the iMON-labelled cells of EACH 6 dpi animal. Reported for both embeddings; the question is whether the Harmony embedding still passes",
+    "imon_state_rule_revision": "DISCLOSED after the first run (2026-09-10): the frozen definition 'subcluster holding the most iMON-labelled cells' selects the 11 to 19 dpi monocyte state in both embeddings (3.9% and 22.0% of its cells from 6 dpi), not the 6 dpi state the question is about. The first-run outcome is kept below (first_run_outcome). A second, post hoc definition anchored on the 6 dpi cells is reported alongside and labelled post hoc: the subcluster holding the most iMON-labelled cells FROM 6 dpi animals, judged by the same purity and per-animal criteria. Both definitions are reported for both embeddings",
+    "first_run_outcome": {
+      "frozen_rule_passes": {
+        "uncorrected": false,
+        "Harmony on infection round": true
+      },
+      "selected_subcluster_pct_cells_from_6dpi": {
+        "uncorrected": 3.9,
+        "Harmony on infection round": 22.0
+      },
+      "adjusted_rand_index": 0.837,
+      "n_subclusters": {
+        "uncorrected": 14,
+        "Harmony on infection round": 15
+      },
+      "same_round_knn_enrichment_overall": {
+        "uncorrected": 1.311,
+        "Harmony on infection round": 1.072
+      }
+    },
+    "agreement": "adjusted Rand index between the two Leiden partitions; grading (purity, label entropy, threshold 0.56) against the held-out deposited labels in both embeddings",
+    "unit": "animal; descriptive; no P values",
+    "seed": 0
+  },
+  "notes": "rules frozen before Table S3 and the object were opened; labels held out of both embeddings",
+  "inputs": [
+    {
+      "path": "Thesis\\Primary\\Longitudinal single-cell profiles of lung regeneration\\xlsx raw\\mmc4.xlsx",
+      "bytes": 13040,
+      "modified": "2026-08-06T03:10:04+00:00"
+    },
+    {
+      "path": "analysis\\GSE262927\\processed\\final_clustered.h5ad",
+      "bytes": 2110304693,
+      "modified": "2026-08-07T14:13:16+00:00"
+    }
+  ],
+  "outputs": [
+    "analysis\\GSE262927\\myeloid_focus\\batch_sensitivity\\run_record.json",
+    "analysis\\GSE262927\\myeloid_focus\\batch_sensitivity\\tables\\sample_infection_round.csv",
+    "analysis\\GSE262927\\myeloid_focus\\batch_sensitivity\\tables\\round_mixing_by_day.csv",
+    "analysis\\GSE262927\\myeloid_focus\\batch_sensitivity\\tables\\grading_X_pca.csv",
+    "analysis\\GSE262927\\myeloid_focus\\batch_sensitivity\\tables\\grading_X_pca_harmony.csv",
+    "analysis\\GSE262927\\myeloid_focus\\batch_sensitivity\\tables\\imon_state_check.csv",
+    "analysis\\GSE262927\\myeloid_focus\\batch_sensitivity\\tables\\batch_sensitivity_cell_metadata.csv",
+    "analysis\\GSE262927\\myeloid_focus\\batch_sensitivity\\tables\\subcluster_crosstab_uncorrected_vs_harmony.csv",
+    "analysis\\GSE262927\\myeloid_focus\\batch_sensitivity\\figures\\UMAP_uncorrected_vs_harmony_by_round.png",
+    "analysis\\GSE262927\\myeloid_focus\\batch_sensitivity\\figures\\UMAP_uncorrected_vs_harmony_by_round.pdf",
+    "analysis\\GSE262927\\myeloid_focus\\batch_sensitivity\\figures\\round_mixing_by_day.png",
+    "analysis\\GSE262927\\myeloid_focus\\batch_sensitivity\\figures\\round_mixing_by_day.pdf",
+    "analysis\\GSE262927\\myeloid_focus\\batch_sensitivity\\README.md"
+  ],
+  "results": {
+    "sample_round_source": "Table S3 (mmc4.xlsx), rewritten to tables/sample_infection_round.csv",
+    "n_cells": 6719,
+    "n_animals": 16,
+    "animals_by_day_and_round": {
+      "6": {
+        "2021-10-21": [
+          "EEM-scRNA-113"
+        ],
+        "2022-07-06": [
+          "EEM-scRNA-162"
+        ]
+      },
+      "11": {
+        "2021-10-21": [
+          "EEM-scRNA-116"
+        ],
+        "2022-07-06": [
+          "EEM-scRNA-167"
+        ]
+      },
+      "19": {
+        "2021-10-21": [
+          "EEM-scRNA-117"
+        ],
+        "2022-07-06": [
+          "EEM-scRNA-170"
+        ]
+      },
+      "25": {
+        "2021-10-21": [
+          "EEM-scRNA-118"
+        ],
+        "2022-07-06": [
+          "EEM-scRNA-172"
+        ]
+      },
+      "42": {
+        "2021-10-21": [
+          "EEM-scRNA-124",
+          "EEM-scRNA-125",
+          "EEM-scRNA-126",
+          "EEM-scRNA-127"
+        ],
+        "2022-07-06": [
+          "EEM-scRNA-179",
+          "EEM-scRNA-180",
+          "EEM-scRNA-181",
+          "EEM-scRNA-182"
+        ]
+      }
+    },
+    "cells_by_round": {
+      "2022-07-06": 4944,
+      "2021-10-21": 1775
+    },
+    "n_subclusters": {
+      "X_pca": 14,
+      "X_pca_harmony": 15
+    },
+    "round_mixing": {
+      "X_pca": {
+        "6": {
+          "n_cells": 775,
+          "cells_with_same_day_neighbours": 764,
+          "observed_same_round_fraction": 0.7021,
+          "expected_if_mixed": 0.6352,
+          "enrichment": 1.105
+        },
+        "11": {
+          "n_cells": 925,
+          "cells_with_same_day_neighbours": 913,
+          "observed_same_round_fraction": 0.8795,
+          "expected_if_mixed": 0.6026,
+          "enrichment": 1.459
+        },
+        "19": {
+          "n_cells": 944,
+          "cells_with_same_day_neighbours": 931,
+          "observed_same_round_fraction": 0.7407,
+          "expected_if_mixed": 0.576,
+          "enrichment": 1.286
+        },
+        "25": {
+          "n_cells": 646,
+          "cells_with_same_day_neighbours": 627,
+          "observed_same_round_fraction": 0.8011,
+          "expected_if_mixed": 0.5623,
+          "enrichment": 1.425
+        },
+        "42": {
+          "n_cells": 3429,
+          "cells_with_same_day_neighbours": 3427,
+          "observed_same_round_fraction": 0.7658,
+          "expected_if_mixed": 0.6304,
+          "enrichment": 1.215
+        },
+        "overall": {
+          "knn_same_round_enrichment": 1.311
+        }
+      },
+      "X_pca_harmony": {
+        "6": {
+          "n_cells": 775,
+          "cells_with_same_day_neighbours": 764,
+          "observed_same_round_fraction": 0.6951,
+          "expected_if_mixed": 0.6352,
+          "enrichment": 1.094
+        },
+        "11": {
+          "n_cells": 925,
+          "cells_with_same_day_neighbours": 914,
+          "observed_same_round_fraction": 0.7749,
+          "expected_if_mixed": 0.6026,
+          "enrichment": 1.286
+        },
+        "19": {
+          "n_cells": 944,
+          "cells_with_same_day_neighbours": 928,
+          "observed_same_round_fraction": 0.6762,
+          "expected_if_mixed": 0.576,
+          "enrichment": 1.174
+        },
+        "25": {
+          "n_cells": 646,
+          "cells_with_same_day_neighbours": 625,
+          "observed_same_round_fraction": 0.7083,
+          "expected_if_mixed": 0.5623,
+          "enrichment": 1.26
+        },
+        "42": {
+          "n_cells": 3429,
+          "cells_with_same_day_neighbours": 3427,
+          "observed_same_round_fraction": 0.6639,
+          "expected_if_mixed": 0.6304,
+          "enrichment": 1.053
+        },
+        "overall": {
+          "knn_same_round_enrichment": 1.072
+        }
+      }
+    },
+    "adjusted_rand_index_uncorrected_vs_harmony": 0.837,
+    "grading": {
+      "X_pca": {
+        "fraction_labelled_cells_in_pure_subclusters": 0.8799,
+        "cell_weighted_mean_entropy": 0.3085,
+        "n_subclusters": 14
+      },
+      "X_pca_harmony": {
+        "fraction_labelled_cells_in_pure_subclusters": 0.8934,
+        "cell_weighted_mean_entropy": 0.3373,
+        "n_subclusters": 15
+      }
+    },
+    "imon_state_check": {
+      "X_pca": {
+        "frozen_rule_most_iMON_cells": {
+          "definition": "frozen rule: subcluster with the most iMON-labelled cells",
+          "subcluster": "1",
+          "n_cells": 608,
+          "iMON_purity_among_labelled": 0.845,
+          "fraction_of_each_6dpi_animals_iMON_cells_in_subcluster": {
+            "EEM-scRNA-113": 0.071,
+            "EEM-scRNA-162": 0.023
+          },
+          "pct_cells_from_6dpi": 3.9,
+          "round_composition": {
+            "2022-07-06": 0.706,
+            "2021-10-21": 0.294
+          },
+          "survives": false
+        },
+        "post_hoc_most_6dpi_iMON_cells": {
+          "definition": "post hoc (disclosed): subcluster with the most iMON-labelled cells from 6 dpi animals",
+          "subcluster": "0",
+          "n_cells": 530,
+          "iMON_purity_among_labelled": 0.891,
+          "fraction_of_each_6dpi_animals_iMON_cells_in_subcluster": {
+            "EEM-scRNA-113": 0.898,
+            "EEM-scRNA-162": 0.968
+          },
+          "pct_cells_from_6dpi": 90.8,
+          "round_composition": {
+            "2022-07-06": 0.766,
+            "2021-10-21": 0.234
+          },
+          "survives": true
+        }
+      },
+      "X_pca_harmony": {
+        "frozen_rule_most_iMON_cells": {
+          "definition": "frozen rule: subcluster with the most iMON-labelled cells",
+          "subcluster": "1",
+          "n_cells": 605,
+          "iMON_purity_among_labelled": 0.858,
+          "fraction_of_each_6dpi_animals_iMON_cells_in_subcluster": {
+            "EEM-scRNA-113": 0.214,
+            "EEM-scRNA-162": 0.249
+          },
+          "pct_cells_from_6dpi": 22.0,
+          "round_composition": {
+            "2022-07-06": 0.767,
+            "2021-10-21": 0.233
+          },
+          "survives": true
+        },
+        "post_hoc_most_6dpi_iMON_cells": {
+          "definition": "post hoc (disclosed): subcluster with the most iMON-labelled cells from 6 dpi animals",
+          "subcluster": "0",
+          "n_cells": 411,
+          "iMON_purity_among_labelled": 0.859,
+          "fraction_of_each_6dpi_animals_iMON_cells_in_subcluster": {
+            "EEM-scRNA-113": 0.765,
+            "EEM-scRNA-162": 0.742
+          },
+          "pct_cells_from_6dpi": 92.0,
+          "round_composition": {
+            "2022-07-06": 0.749,
+            "2021-10-21": 0.251
+          },
+          "survives": true
+        }
+      }
+    },
+    "verdict_frozen_rule": "frozen rule (selects the 11 to 19 dpi monocyte state, see rule revision): uncorrected False, Harmony True",
+    "verdict": "the 6 dpi iMON state survives Harmony on infection round (post hoc definition, disclosed)"
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.1",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "igraph": "1.0.0"
+  },
+  "finished_at": "2026-09-10T07:27:52+00:00"
+}

@@ -1,0 +1,5 @@
+embedding,definition,subcluster,n_cells,iMON_purity_among_labelled,fraction_of_each_6dpi_animals_iMON_cells_in_subcluster,pct_cells_from_6dpi,round_composition,survives
+uncorrected,frozen_rule_most_iMON_cells,1,608,0.845,"{'EEM-scRNA-113': 0.071, 'EEM-scRNA-162': 0.023}",3.9,"{'2022-07-06': 0.706, '2021-10-21': 0.294}",False
+uncorrected,post_hoc_most_6dpi_iMON_cells,0,530,0.891,"{'EEM-scRNA-113': 0.898, 'EEM-scRNA-162': 0.968}",90.8,"{'2022-07-06': 0.766, '2021-10-21': 0.234}",True
+Harmony on infection round,frozen_rule_most_iMON_cells,1,605,0.858,"{'EEM-scRNA-113': 0.214, 'EEM-scRNA-162': 0.249}",22.0,"{'2022-07-06': 0.767, '2021-10-21': 0.233}",True
+Harmony on infection round,post_hoc_most_6dpi_iMON_cells,0,411,0.859,"{'EEM-scRNA-113': 0.765, 'EEM-scRNA-162': 0.742}",92.0,"{'2022-07-06': 0.749, '2021-10-21': 0.251}",True

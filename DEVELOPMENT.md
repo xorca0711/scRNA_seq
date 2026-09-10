@@ -172,6 +172,28 @@ use the deposited labels descriptively and say so, and neither computes a
 P value, because the active-repair days carry two animals each. Retain,
 re-word or reject is mine and pending.
 
+**15 · Batch is tested on a key that crosses time, never on the animal, and
+a rule that selected the wrong object is disclosed, not swapped.**
+(2026-09-10, under review.) The reviewer's question about the myeloid
+result is whether the 6 dpi inflammatory-monocyte state is a one-day batch
+island. Correcting on sample cannot answer it (one animal per sample and
+day). The paper's Table S3 shows that on every active-repair day and at 42
+dpi the two replicate animals came from different infection rounds, so
+round is a technical key that crosses time; it also carries Ki67-Cre
+dosage, which makes correcting on it the conservative direction. The
+compartment was embedded with and without Harmony on round, on the days
+that carry both rounds. The pre-registered survival rule defined "the iMON
+state" as the subcluster with the most iMON-labelled cells, and the first
+run showed that this picks the 11 to 19 dpi monocyte state in both
+embeddings (3.9% and 22.0% of its cells from 6 dpi), not the 6 dpi state
+the question is about. As in decision 13, the first-run outcome stays in
+the run record, the definition anchored on the 6 dpi cells is added as a
+labelled post hoc reading, and both are reported. The same session read the
+Ki67 trace by tamoxifen window for the rebuilt alveolar macrophage pool and
+let two of its three pre-registered checks fail closed on a 30-cell floor
+rather than lower the floor after seeing the tables. Retain or reject is
+mine and pending.
+
 ## How outputs were reviewed
 
 Every run writes its decisions to machine logs (`decisions.json`,

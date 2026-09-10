@@ -49,6 +49,8 @@ paper's phase structure were added under `analysis/GSE262927/`
 | Trial S5: mouse cluster 5 subclustered and re-graded | **DONE (2026-09-09)**; resolved at Leiden 0.5 (94% of labelled cells in pure subclusters), not at 0.2 |
 | Phase-wise view of the Ki67 atlas (`analysis/GSE262927/phase_timecourse/`, script 10) | **DONE (2026-09-10), owner review pending**; per-dpi atlas UMAP, per-animal lineage composition, Ki67-trace proliferation by lineage; trace peaks fall in the paper's window for 4 of 5 lineages (Lymphoid peaks at 11 dpi, not 6); Descriptive only, from tracked metadata |
 | Myeloid compartment by dpi (`analysis/GSE262927/myeloid_focus/`, script 11) | **DONE (2026-09-10), owner review pending**; 9,997 cells from atlas clusters 5, 17, 24; 16 blind subclusters at Leiden 0.5 with 87% of labelled cells in pure subclusters; aMAC loss and iMON expansion at 6 dpi with reconstitution by 19 to 42 dpi, consistent with the paper's Figure 3; Descriptive only |
+| Alveolar macrophage origin by Ki67 trace window (`myeloid_focus/amac_origin/`, script 12) | **DONE (2026-09-10), owner review pending**; the 2 to 3 dpi window labels most of the 42 dpi aMAC pool (median 79.7%); marrow-inheritance and two-source checks Not established under the 30-cell floor |
+| Batch sensitivity of the myeloid embedding, Harmony on infection round (`myeloid_focus/batch_sensitivity/`, script 13) | **DONE (2026-09-10), owner review pending**; rounds already mix within every tested day (enrichment 1.11 to 1.46, threshold 2); the 6 dpi iMON state survives correction as its own subcluster (92% of cells from 6 dpi, 77% and 74% of each animal's iMON cells); the frozen survival rule selected the wrong subcluster and the revision is disclosed |
 
 Repository state: the scientific analysis and portfolio curation are complete;
 no analysis process is running. Branch-specific state belongs in Git/GitHub,
@@ -87,6 +89,8 @@ python analysis/scripts/06_regeneration_focus.py
 python analysis/scripts/07_lineage_tracing_cohort.py
 python analysis/scripts/10_phase_timecourse.py
 python analysis/scripts/11_myeloid_focus.py
+python analysis/scripts/12_amac_trace_by_window.py
+python analysis/scripts/13_myeloid_batch_sensitivity.py
 python analysis/scripts/03_write_report.py --dataset GSE262927
 python analysis/scripts/03_write_report.py --dataset GSE178360
 python analysis/scripts/05_write_pipeline_as_run.py
@@ -225,6 +229,36 @@ labelled cells.
    12, 13; 1,286 cells). The MACS recombination fixes the myeloid share of
    each library, so only within-myeloid fractions are read. Owner decision
    pending.
+17. **The rebuilt alveolar macrophage pool is labelled mainly by the 2 to 3
+   dpi window** (`myeloid_focus/amac_origin/`, 2026-09-10). At the common
+   42 dpi harvest the median per-animal Ki67-traced fraction of
+   aMAC-labelled cells is 79.7% for the 2 to 3 dpi window, 60.0% for 7 to 8,
+   29.3% for 14 to 15 and 42.0% for 21 to 22, so the early window wins by the
+   frozen rule, as the paper's Figure 3 implies. The two pre-registered
+   checks fail closed: the marrow-inheritance reference (cMON and
+   neutrophils of the same animal) reached the 30-cell floor in only 3 of 8
+   animals, and the within-aMAC subcluster split is evaluable in one animal
+   per window (where the early windows label subcluster 2 more than
+   subcluster 3 by 28 to 33 points and the late windows show the reverse).
+   Both are Not established; the per-animal values are in the tables. Owner
+   decision pending.
+18. **The 6 dpi inflammatory-monocyte state is not a batch island**
+   (`myeloid_focus/batch_sensitivity/`, 2026-09-10). On every active-repair
+   day and at 42 dpi the two animals come from different infection rounds
+   (Table S3; the rounds also differ in Ki67-Cre dosage), so round is the
+   technical key that crosses time; 0, 90 and 366 dpi are single-round and
+   untestable. Within each tested day the rounds already mix in the
+   uncorrected embedding (same-round kNN enrichment 1.11 to 1.46 against
+   the pipeline's failure threshold of 2.0; 1.05 to 1.29 after Harmony).
+   After Harmony on round the 6 dpi iMON state remains its own subcluster
+   (411 cells, 92% from 6 dpi, iMON purity 0.86, holding 77% and 74% of the
+   two animals' iMON cells; uncorrected: 530 cells, 91%, 0.89, 90% and 97%).
+   Adjusted Rand index between the partitions 0.837. **Rule revision
+   disclosed:** the frozen definition of "the iMON state" (subcluster with
+   the most iMON-labelled cells) selected the 11 to 19 dpi monocyte state in
+   both embeddings; the first-run outcome is kept in the run record and a
+   post hoc definition anchored on the 6 dpi cells is reported alongside
+   (DEVELOPMENT decision 15). Owner decision pending.
 
 ---
 
