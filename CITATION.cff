@@ -1,19 +1,20 @@
 cff-version: 1.2.0
 message: "If this analysis helps your work, cite this repository and the source datasets listed in REFERENCES.md."
 type: software
-title: "Single-cell RNA-seq: lung regeneration after influenza injury"
+title: "Lung injury and repair states from public single-cell RNA-seq"
 authors:
   - family-names: "Xorca"
 repository-code: "https://github.com/xorca0711/scRNA_seq"
 url: "https://github.com/xorca0711/scRNA_seq"
 abstract: >-
-  An independent Python/scanpy reanalysis of two public lung single-cell RNA-seq
-  datasets, with evidence-based integration decisions, held-out annotation
-  validation, focused regeneration trajectories, and lineage tracing.
+  An analysis log of public lung single-cell RNA-seq reanalysis, built from the
+  deposited count matrices with the authors' annotations held out, toward the
+  question of which epithelial and immune-state programmes distinguish
+  productive lung repair from persistent remodelling after injury.
 keywords:
   - single-cell RNA-seq
   - scanpy
-  - lung regeneration
-  - influenza
+  - lung repair
+  - macrophage and monocyte states
   - lineage tracing
-date-released: 2026-08-09
+date-released: 2026-09-10

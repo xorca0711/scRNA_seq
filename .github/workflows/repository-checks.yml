@@ -1,4 +1,4 @@
-name: Portfolio checks
+name: Repository checks
 
 on:
   push:
@@ -18,4 +18,4 @@ jobs:
       - name: Compile Python sources
         run: python -m compileall -q analysis/scripts
       - name: Validate tracked artefacts and documentation
-        run: python analysis/scripts/validate_portfolio.py
+        run: python analysis/scripts/validate_repository.py

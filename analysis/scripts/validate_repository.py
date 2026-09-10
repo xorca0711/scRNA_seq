@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Validate the lightweight, tracked contract of the portfolio repository.
+"""Validate the lightweight, tracked contract of the repository.
 
 This check deliberately uses only the Python standard library. It verifies the
 published headline numbers against tracked tables, checks machine-readable
@@ -161,7 +161,7 @@ def main() -> int:
         "REPRODUCIBILITY.md",
         "LICENSE",
         "CITATION.cff",
-        ".github/workflows/portfolio-checks.yml",
+        ".github/workflows/repository-checks.yml",
         "analysis/requirements.txt",
         "analysis/raw_data_inventory.json",
         "docs/PIPELINE_AS_RUN.md",
@@ -174,12 +174,12 @@ def main() -> int:
     check_headline_results(result)
 
     if result.failures:
-        print(f"Portfolio validation FAILED ({len(result.failures)} of {result.checks} checks):")
+        print(f"Repository validation FAILED ({len(result.failures)} of {result.checks} checks):")
         for failure in result.failures:
             print(f"  - {failure}")
         return 1
 
-    print(f"Portfolio validation passed: {result.checks} checks")
+    print(f"Repository validation passed: {result.checks} checks")
     print("  local Markdown links resolve")
     print("  tracked JSON artefacts parse")
     print("  headline counts and biological results match tracked tables")

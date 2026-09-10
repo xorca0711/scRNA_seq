@@ -117,7 +117,7 @@ differs between methods is their false positives. A clean doublet score is
 therefore weak evidence that a population is genuine.
 
 That is precisely the situation the reference study faced. See
-[`../WORKFLOW.md`](../WORKFLOW.md) for how it was resolved: an `AT1_AT2`
+[`WORKFLOW_Niethamer2025.md`](WORKFLOW_Niethamer2025.md) for how it was resolved: an `AT1_AT2`
 population was retained because its UMI and feature counts sat in line with
 other epithelial cells and the state had been described previously, while a
 CAP1/CAP2 mixed endothelial cluster was discarded because its counts were

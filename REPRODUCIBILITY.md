@@ -11,12 +11,12 @@ table and generated per-dataset report. [`docs/PIPELINE_AS_RUN.md`](docs/PIPELIN
 is the authoritative record of what ran. It is generated from the decision
 logs rather than maintained as a second handwritten method description.
 
-## 2. Validate the tracked portfolio
+## 2. Validate the tracked repository
 
 Python 3.12 is recommended; no third-party package is needed:
 
 ```bash
-python analysis/scripts/validate_portfolio.py
+python analysis/scripts/validate_repository.py
 python -m compileall -q analysis/scripts
 ```
 
@@ -93,9 +93,8 @@ python analysis/scripts/13_myeloid_batch_sensitivity.py
 python analysis/scripts/03_write_report.py --dataset GSE262927
 python analysis/scripts/03_write_report.py --dataset GSE178360
 python analysis/scripts/08_reference_aligned_epithelial_umap.py
-python analysis/scripts/09_write_portfolio_pdf.py
 python analysis/scripts/05_write_pipeline_as_run.py
-python analysis/scripts/validate_portfolio.py
+python analysis/scripts/validate_repository.py
 ```
 
 All random seeds are fixed at 0. The human Harmony selection is an explicit,
@@ -111,7 +110,7 @@ Each dataset directory contains:
 - `logs/decisions.json` and `logs/analysis_log.txt` for provenance;
 - `qc/` for thresholds and automated review;
 - `tables/` for compact, inspectable evidence;
-- `figures/` for portfolio-ready results;
+- `figures/` for tracked figures;
 - `processed/` for regenerable AnnData checkpoints (gitignored).
 
 The large raw inputs and processed objects are intentionally excluded from

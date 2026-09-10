@@ -1,101 +1,102 @@
-# Single-cell RNA-seq: lung regeneration after influenza injury
+# Lung injury and repair states from public single-cell RNA-seq
 
-[![Portfolio checks](https://github.com/xorca0711/scRNA_seq/actions/workflows/portfolio-checks.yml/badge.svg)](https://github.com/xorca0711/scRNA_seq/actions/workflows/portfolio-checks.yml)
+[![Repository checks](https://github.com/xorca0711/scRNA_seq/actions/workflows/repository-checks.yml/badge.svg)](https://github.com/xorca0711/scRNA_seq/actions/workflows/repository-checks.yml)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
-An independent **Python/scanpy reanalysis of two public lung scRNA-seq
-datasets, built from the raw deposited count matrices** — the authors'
-processed objects and annotations were never used during model fitting. The
-question: **can the published injury-and-regeneration biology be recovered by
-an independent pipeline — and where it can't, why not?**
+This repository is an analysis log. Public lung single-cell RNA-seq series
+are re-analysed from the deposited count matrices, with the authors'
+annotations held out of every model-fitting step and used only afterwards as
+an answer key, to work on one question:
 
-**Headline findings** (all numbers from tracked artefacts; details and
-figures in [`FINDINGS.md`](FINDINGS.md)):
+> Which epithelial and immune-state programmes distinguish productive lung
+> repair from persistent remodelling after injury?
 
-- The **AT2 → Krt8⁺ transitional → AT1** trajectory is recovered; held-out
-  author labels are ordered correctly by pseudotime (median 0.013 → 0.179 →
-  0.237 → 0.327).
-- The transitional state behaves as a true intermediate in time: its median
-  per-animal proportion is **27.4% at 11 dpi and 0.3% by 366 dpi**.
-- The capillary injury state (iCAP) is its mirror image: median per-animal
-  proportions are **2.0% → 37.5% at 25 dpi → still 21.7% at one year** — it
-  never resolves.
-- Lineage tracing supports a **CAP1 origin** for the injury state (traced at
-  33–53% per animal in the Kit line); the CAP2 lines are reported as
-  **uninformative, not negative**.
-- Blind clustering scores **median purity 0.947** against the held-out author
-  labels — with 3 of 29 candidate annotations contradicted and flagged, not
-  hidden.
-- The two datasets get **opposite integration decisions** (mouse: none;
-  human: Harmony), each from measured evidence — the experimental design
-  decides, not a default.
+Two series are analysed so far: a mouse injury time course (H1N1 is the
+injury model; the analysis reads cell states, niches, and macrophage and
+monocyte states, not the infection) and a human distal-lung reference.
+Further series are added one paper at a time along the roadmap in
+[`Thesis/`](Thesis/README.md). Material that is established elsewhere is
+displaced to [`archive/`](archive/DISPLACED.md) rather than extended here.
 
-**Portfolio report:** [thesis-aware lung scRNA-seq synthesis](output/pdf/lung_scrna_portfolio_thesis_context.pdf) — human distal-lung and AT0 results first, with complementary regeneration, lineage-tracing, validation and limitation sections.
+## Claims
+
+Status vocabulary: Validated (held-out labels or artefact-checked numbers),
+Descriptive only, Exploratory, Retracted-superseded, Not established. Every
+number below is read from a tracked artefact; the full register with the
+analyses behind each claim, its artefact and its potential is
+[`CLAIMS.md`](CLAIMS.md). Rows marked pending await the owner's retain or
+reject decision in [`PROGRESS.md`](PROGRESS.md).
+
+| Status | Claim | Where |
+|---|---|---|
+| Validated | Blind clustering recovers the deposited mouse cell types: median purity 0.947 over 107,626 labelled cells, with 3 of 29 marker-panel annotations contradicted and kept on display | [`analysis/GSE262927/`](analysis/GSE262927/README.md) |
+| Validated | An injury-associated capillary state is still present at 366 dpi: median per-animal share 2.0% at baseline, 37.5% at 25 dpi, 21.7% at 366 dpi | [`regeneration_focus/`](analysis/GSE262927/regeneration_focus/) |
+| Validated | The Kit lineage traces that state at 33 to 53% per animal (CAP1 origin); the CAP2 lines are uninformative, not negative | [`lineage_tracing_cohort/`](analysis/GSE262927/lineage_tracing_cohort/) |
+| Validated (decision record) | Batch correction is decided per dataset from measured replicate mixing: none for the mouse series, Harmony for the human series | [`qc/batch_assessment.json`](analysis/GSE262927/qc/batch_assessment.json) |
+| Descriptive only, pending | Proliferation runs in three phases in the Ki67 trace: myeloid cells at 6 dpi, epithelium and mesenchyme at 11, endothelium at 19 (4 of 5 lineages in the source paper's window) | [`phase_timecourse/`](analysis/GSE262927/phase_timecourse/README.md) |
+| Descriptive only, pending | Alveolar macrophages fall from 30.8% to 4.6% of myeloid cells at 6 dpi and rebuild to 49.0% by 42 dpi while inflammatory monocytes rise from 1.9% to 56.0%; the 2 to 3 dpi window labels most of the rebuilt pool; the 6 dpi state survives Harmony on infection round | [`myeloid_focus/`](analysis/GSE262927/myeloid_focus/README.md) |
+| Descriptive only, re-wording pending | The human distal-lung series carries an AT0-like minority; the earlier candidate subcluster is mostly AT2 or uncertain | [`Thesis/gate1_04_sikkema_2023_hlca/`](Thesis/gate1_04_sikkema_2023_hlca/README.md) |
+| Exploratory | Interstitial macrophages keep rising through 90 dpi instead of resolving | [`myeloid_focus/`](analysis/GSE262927/myeloid_focus/README.md) |
+| Retracted-superseded | Scrublet over-removes AT0-like cells (refuted by a stricter gate; the refutation is kept) | [`docs/DOUBLETS_AND_SCRUBLET.md`](docs/DOUBLETS_AND_SCRUBLET.md) |
+| Not established | The marrow-inheritance and two-source checks on the rebuilt macrophage pool; the deposited cell-cycle call as a proliferation measure | [`amac_origin/`](analysis/GSE262927/myeloid_focus/amac_origin/README.md) |
+| Displaced | The Krt8-high transitional trajectory and the human KRT8 reference panels are established elsewhere; artefacts stay, the narrative is archived | [`archive/DISPLACED.md`](archive/DISPLACED.md) |
 
 ![Mouse atlas UMAP](analysis/GSE262927/figures/umap/UMAP_leiden_clusters_sidelegend.png)
 
-## At a glance
+## Datasets
+
+| Series | What it is | Cells analysed | Source study |
+|---|---|---|---|
+| [GSE262927](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262927) | mouse lung injury time course (H1N1 as the injury model), uninjured to 366 dpi, 33 samples: a 25-sample Ki67 lineage atlas and an 8-sample Cre cohort | 162,175 | Niethamer et al., *Cell Stem Cell* 2025 |
+| [GSE178360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178360) | human distal lung, 3 healthy donors | 27,729 | Kadur Lakshminarasimha Murthy et al., *Nature* 2022 |
 
 | | |
 |---|---|
-| Primary dataset | [GSE262927](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262927) — mouse, H1N1 injury time course, 33 samples, 162,175 cells (Niethamer et al., *Cell Stem Cell* 2025) |
-| Second dataset | [GSE178360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178360) — human distal lung, 3 donors, 27,729 cells (Kadur Lakshminarasimha Murthy et al., *Nature* 2022) |
-| Stack | Python 3.12, scanpy/AnnData, Scrublet, harmonypy, PAGA + diffusion pseudotime |
-| Validation | Deposited author labels held out of all model fitting; used only post hoc as an answer key |
-| Provenance | Decisions machine-logged; reports **generated from artefacts**, never hand-entered |
-| Reproducibility | Dependency-free artefact validator + pinned full environment + CI |
-
-## What this repository demonstrates
-
-Experimental-design-aware scRNA-seq analysis · scanpy/AnnData and sparse
-count workflows · per-sample QC with recorded rationales · per-capture
-doublet handling with a prior-based fallback · batch-effect diagnosis (and
-the discipline to not correct) · clustering, blind annotation, and external
-grading · PAGA/diffusion pseudotime · lineage-trace calling · reproducible,
-generated reporting · critical self-audit, including a refuted finding kept
-on display.
+| Stack | Python 3.12, scanpy/AnnData, Scrublet, harmonypy, PAGA and diffusion pseudotime, scvi-tools for reference mapping |
+| Unit and statistics | The animal or donor is the unit; medians per group; no P value where a group holds two animals |
+| Provenance | Rules frozen in run records before data are opened; reports generated from artefacts |
+| Checks | Dependency-free artefact validator, pinned environment, CI on every push |
 
 ## Where to go
 
 | Question | Read |
 |---|---|
-| What was found? | [`FINDINGS.md`](FINDINGS.md) |
 | What has been claimed, what stands behind each claim, and which results have potential? | [`CLAIMS.md`](CLAIMS.md) |
+| What was found, with figures? | [`FINDINGS.md`](FINDINGS.md) |
+| How do the analyses relate, from the initial run to the follow-ups? | [`Thesis/gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md`](Thesis/gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md) |
 | What exactly ran, with parameters? | [`docs/PIPELINE_AS_RUN.md`](docs/PIPELINE_AS_RUN.md) (generated) |
 | How can I validate or reproduce it? | [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) |
 | Why each analytical decision? | [`docs/ANALYSIS_RATIONALE.md`](docs/ANALYSIS_RATIONALE.md) |
-| Who did what — AI-assisted development and scientific ownership? | [`DEVELOPMENT.md`](DEVELOPMENT.md) |
-| Machine/session context for AI assistants | [`AI_CONTEXT.md`](AI_CONTEXT.md) |
-| Full per-dataset reports, figures, QC | [`analysis/GSE262927/`](analysis/GSE262927/README.md) · [`analysis/GSE178360/`](analysis/GSE178360/README.md) |
-| Current state and known issues | [`PROGRESS.md`](PROGRESS.md) |
-| The paper roadmap: study notes, extracted decision criteria, per-paper analysis trials | [`Thesis/README.md`](Thesis/README.md) |
+| Who decided what, and what was rejected? | [`DEVELOPMENT.md`](DEVELOPMENT.md) |
+| Machine context for AI sessions | [`AI_CONTEXT.md`](AI_CONTEXT.md) |
+| Per-dataset reports, figures, QC | [`analysis/GSE262927/`](analysis/GSE262927/README.md), [`analysis/GSE178360/`](analysis/GSE178360/README.md) |
+| Current state, known issues, pending decisions | [`PROGRESS.md`](PROGRESS.md) |
+| The paper roadmap: study notes, extracted criteria, per-paper trials | [`Thesis/README.md`](Thesis/README.md) |
+| What was displaced and why | [`archive/`](archive/DISPLACED.md) |
 
 ## Repository map
 
 ```
-├── FINDINGS.md                  results, with figures — start here
-├── DEVELOPMENT.md               AI-assisted development disclosure + scientific ownership
-├── AI_CONTEXT.md                machine-oriented context for AI sessions
-├── REPRODUCIBILITY.md           input layout, validation tiers, full re-run guide
-├── analysis/
-│   ├── GSE262927/               mouse: report, figures, tables, QC, logs
-│   │   ├── regeneration_focus/      AT2→AT1 trajectory + iCAP persistence
-│   │   ├── lineage_tracing_cohort/  the 8-sample Cre-driver experiment
-│   │   ├── phase_timecourse/        per-dpi UMAP, composition and proliferation by lineage (under review)
-│   │   ├── myeloid_focus/           the myeloid compartment by dpi (under review)
-│   │   └── epithelial_subanalysis/
-│   ├── GSE178360/               human: report, figures, tables, QC, logs
-│   ├── scripts/                 the pipeline (shared; --dataset selects series)
-│   └── LAYOUT.md                what lives where, and why the cohorts differ
-├── docs/
-│   ├── PIPELINE_AS_RUN.md       what was actually executed (generated)
-│   ├── ANALYSIS_RATIONALE.md    each decision, before and after the papers
-│   ├── BACKGROUND_FOR_BIOLOGISTS.md · UMAP_AND_FIGURES.md · DOUBLETS_AND_SCRUBLET.md
-│   └── SOUPX/SCRUBLET/SCDS/SLINGSHOT/TRADESEQ.md   tool reference notes
-├── Thesis/                      paper roadmap: study notes, extracted decision criteria, per-paper analysis trials
-├── WORKFLOW.md                  the reference study's published workflow
-├── REFERENCES.md                all papers, DOIs, data accessions
-└── PROGRESS.md                  session/handoff state, known issues
+CLAIMS.md                    claims register: evidence, status, potential
+FINDINGS.md                  findings with figures
+DEVELOPMENT.md               who decided what; rejected output stays visible
+PROGRESS.md                  living handoff: state, known issues, pending decisions
+AI_CONTEXT.md                machine-oriented context for AI sessions
+REPRODUCIBILITY.md           input layout, validation tiers, re-run guide
+REFERENCES.md                papers, DOIs, data accessions
+analysis/
+  GSE262927/                 mouse series: report, figures, tables, QC, logs
+    regeneration_focus/        capillary injury state (alveolar trajectory displaced)
+    lineage_tracing_cohort/    the 8-sample Cre cohort
+    phase_timecourse/          per-day atlas view, composition, proliferation (pending)
+    myeloid_focus/             myeloid compartment; amac_origin/ and batch_sensitivity/ (pending)
+    epithelial_subanalysis/
+  GSE178360/                 human series: report, figures, tables, QC, logs
+  scripts/                   the pipeline and the focused analyses
+  LAYOUT.md                  what lives where, and why the cohorts differ
+docs/                        rationale, background, generated pipeline record, source-study notes
+Thesis/                      paper roadmap: study notes, extracted criteria, per-paper trials
+archive/                     displaced material: what moved, when, and why
 ```
 
 `raw_data/` (7.8 GB of GEO downloads) and all regenerable `.h5ad` objects are
@@ -104,11 +105,11 @@ matrices or paper PDFs are committed.
 
 ## Reproducing
 
-The tracked portfolio can be checked without downloading data or installing
+The tracked artefacts can be checked without downloading data or installing
 scanpy:
 
 ```bash
-python analysis/scripts/validate_portfolio.py
+python analysis/scripts/validate_repository.py
 python -m compileall -q analysis/scripts
 ```
 
@@ -133,31 +134,28 @@ python analysis/scripts/13_myeloid_batch_sensitivity.py
 python analysis/scripts/03_write_report.py --dataset GSE262927
 python analysis/scripts/03_write_report.py --dataset GSE178360
 python analysis/scripts/08_reference_aligned_epithelial_umap.py
-python analysis/scripts/09_write_portfolio_pdf.py
 python analysis/scripts/05_write_pipeline_as_run.py
 ```
 
-Exact inputs, expected directory layout, validation tiers, resource notes, and
+Exact inputs, expected directory layout, validation tiers, resource notes and
 the output contract are in [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md). Seeds
-are fixed at 0 throughout; `--stages` resumes from checkpoints. The original
-Windows ARM64 execution constraints are documented in [`AI_CONTEXT.md`](AI_CONTEXT.md)
-and [`PROGRESS.md`](PROGRESS.md).
+are fixed at 0 throughout; `--stages` resumes from checkpoints. The Windows
+ARM64 execution constraints are documented in [`AI_CONTEXT.md`](AI_CONTEXT.md).
 
-## Relationship to the published pipeline
+## Source studies
 
-The reference study's own workflow (STARsolo → SoupX → scds+Scrublet →
-Seurat/SCTransform → Slingshot → tradeSeq, in R) is documented in
-[`WORKFLOW.md`](WORKFLOW.md), per-tool schematics in
-[`docs/`](docs/README.md), and an annotated parameter-level reference in
+The mouse series' own published workflow (STARsolo, SoupX, scds and Scrublet,
+Seurat, Slingshot, tradeSeq, in R) is documented as reference material in
+[`docs/WORKFLOW_Niethamer2025.md`](docs/WORKFLOW_Niethamer2025.md) and
 [`docs/scRNAseq_workflow_Niethamer2025.md`](docs/scRNAseq_workflow_Niethamer2025.md).
-**The analysis here is deliberately not a port of that pipeline** — it was
-built from the deposited data alone, then compared against the papers after
-the fact. The tool-by-tool used/not-used table and every divergence are in
+The analysis here is not a port of that workflow: it was built from the
+deposited data alone and compared with the papers afterwards. The
+tool-by-tool record of what was used and every divergence is
 [`docs/PIPELINE_AS_RUN.md`](docs/PIPELINE_AS_RUN.md).
 
 ## Licence
 
-Code and original written material are © 2026 Xorca; no reuse licence is
-granted. See [`LICENSE`](LICENSE). The source papers and public datasets remain
-the property of their respective authors and publishers; citations and
+Code and original written material are copyright 2026 Xorca; no reuse licence
+is granted. See [`LICENSE`](LICENSE). The source papers and public datasets
+remain the property of their respective authors and publishers; citations and
 open-access links are in [`REFERENCES.md`](REFERENCES.md).
