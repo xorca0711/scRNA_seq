@@ -1,0 +1,259 @@
+{
+  "trial": "S2 reference mapping, stage transfer",
+  "rules_frozen_at": "2026-09-09T14:59:28+00:00",
+  "rules": {
+    "query": {
+      "source": "analysis/GSE178360/processed/final_clustered.h5ad",
+      "layer": "counts",
+      "gene_match": "Ensembl ID, version stripped",
+      "missing_genes": "zero-filled and counted",
+      "batch_key": "dataset",
+      "batch_value": "Tata_unpubl_GSE178360",
+      "labels_key": "scanvi_label",
+      "labels_value": "unlabeled"
+    },
+    "surgery": {
+      "api": "scvi.model.SCANVI.load_query_data",
+      "freeze_dropout": true,
+      "max_epochs": 500,
+      "weight_decay": 0.0,
+      "reduce_lr_on_plateau": true,
+      "lr_patience": 8,
+      "lr_factor": 0.1,
+      "early_stopping": {
+        "monitor": "elbo_validation",
+        "patience": 10,
+        "min_delta": 0.001,
+        "mode": "min"
+      },
+      "train_size": 0.9,
+      "batch_size": 128,
+      "seed": 0
+    },
+    "transfer": {
+      "k": 50,
+      "metric": "euclidean",
+      "weights": "exp(-d / (2/std(d))^2), normalised per query cell (scArches weighted_knn_transfer)",
+      "uncertainty": "1 - weight of the transferred label",
+      "unknown_cutoff_primary": 0.2,
+      "unknown_cutoff_sensitivity": 0.3,
+      "reference_cells": "HLCA core only",
+      "labels": [
+        "ann_level_1",
+        "ann_level_2",
+        "ann_level_3",
+        "ann_level_4",
+        "ann_level_5",
+        "ann_finest_level"
+      ]
+    },
+    "at0_strict_gate": "SFTPC>0 & SCGB3A2>0 & EPCAM>0 & PTPRC==0 & PECAM1==0 & COL1A1==0 on raw counts",
+    "at0_concordance": "within a factor of 2 per donor",
+    "unit": "donor",
+    "deviations": [
+      "scarches 0.6.1 not importable with anndata 0.13; scvi-tools scArches implementation used; weighted kNN reimplemented",
+      "early stopping on validation ELBO with a 90/10 split instead of the paper's full-dataset monitoring"
+    ]
+  },
+  "notes": "rules frozen in ANALYSIS_TRIAL_PLAN.md before this script was written",
+  "inputs": [
+    {
+      "path": "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s2_reference_mapping\\reference\\HLCA_full_v1.1_emb.h5ad",
+      "bytes": 2369348547,
+      "modified": "2026-09-09T14:49:37+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s2_reference_mapping\\s2_query_latent.csv.gz",
+      "bytes": 4202423,
+      "modified": "2026-09-09T14:37:42+00:00"
+    },
+    {
+      "path": "analysis\\GSE178360\\processed\\final_clustered.h5ad",
+      "bytes": 365160547,
+      "modified": "2026-08-07T14:44:46+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s2_reference_mapping\\s2_uncertainty_per_donor.csv",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s2_reference_mapping\\s2_cluster_transfer.csv",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s2_reference_mapping\\s2_at0_check_per_donor.csv",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s2_reference_mapping\\s2_at0_cells_by_cluster_and_donor.csv",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s2_reference_mapping\\s2_epithelial_subcluster_by_transferred_label.csv",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s2_reference_mapping\\s2_ours_vs_hlca_own_transfer_level4_crosstab.csv",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s2_reference_mapping\\s2_umap_transfer_and_uncertainty.png",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s2_reference_mapping\\s2_uncertainty_hist_per_donor.png",
+    "Thesis\\gate1_04_sikkema_2023_hlca\\trials\\s2_reference_mapping\\s2_summary.md"
+  ],
+  "results": {
+    "reference": {
+      "embedding_key": "X (30-dim scANVI embedding stored as X in HLCA_full_v1.1_emb.h5ad)",
+      "core_column": "core_or_extension",
+      "n_core_cells": 584944,
+      "n_all_cells": 2282447,
+      "label_columns": [
+        "ann_level_1",
+        "ann_level_2",
+        "ann_level_3",
+        "ann_level_4",
+        "ann_level_5",
+        "ann_finest_level"
+      ],
+      "finest_label_classes": 61
+    },
+    "verdict_counts_vs_blind": {
+      "agree": 23,
+      "partial (same compartment)": 4,
+      "reference lacks identity": 2,
+      "disagree": 1,
+      "partial (blind label is compartment-free)": 1
+    },
+    "per_donor": [
+      {
+        "donor": "DD046Q",
+        "n_cells": 8957,
+        "mean_uncertainty": 0.1621,
+        "median_uncertainty": 0.08,
+        "unknown_fraction_u0.2": 0.3346,
+        "unknown_fraction_u0.3": 0.2356
+      },
+      {
+        "donor": "DD047Q",
+        "n_cells": 10493,
+        "mean_uncertainty": 0.0926,
+        "median_uncertainty": 0.0,
+        "unknown_fraction_u0.2": 0.183,
+        "unknown_fraction_u0.3": 0.1243
+      },
+      {
+        "donor": "DD073R",
+        "n_cells": 8279,
+        "mean_uncertainty": 0.156,
+        "median_uncertainty": 0.0601,
+        "unknown_fraction_u0.2": 0.3255,
+        "unknown_fraction_u0.3": 0.2341
+      }
+    ],
+    "at0_per_donor": [
+      {
+        "donor": "DD046Q",
+        "strict_gate": 596,
+        "transferred_AT0_all": 206,
+        "transferred_AT0_u_le_0.2": 26,
+        "transferred_preTB_all": 783,
+        "transferred_preTB_u_le_0.2": 354,
+        "gate_and_AT0": 10,
+        "AT0_over_gate": 0.044,
+        "within_factor_2": false,
+        "s3_flat_AT0": 1018,
+        "s3_hier_AT0": 106
+      },
+      {
+        "donor": "DD047Q",
+        "strict_gate": 880,
+        "transferred_AT0_all": 203,
+        "transferred_AT0_u_le_0.2": 87,
+        "transferred_preTB_all": 632,
+        "transferred_preTB_u_le_0.2": 472,
+        "gate_and_AT0": 48,
+        "AT0_over_gate": 0.099,
+        "within_factor_2": false,
+        "s3_flat_AT0": 1631,
+        "s3_hier_AT0": 167
+      },
+      {
+        "donor": "DD073R",
+        "strict_gate": 134,
+        "transferred_AT0_all": 16,
+        "transferred_AT0_u_le_0.2": 6,
+        "transferred_preTB_all": 44,
+        "transferred_preTB_u_le_0.2": 23,
+        "gate_and_AT0": 3,
+        "AT0_over_gate": 0.045,
+        "within_factor_2": false,
+        "s3_flat_AT0": 152,
+        "s3_hier_AT0": 8
+      }
+    ],
+    "epithelial_subcluster_4_transferred": {
+      "n": 328,
+      "AT0": 75,
+      "pre-TB secretory": 1,
+      "AT2": 126,
+      "Unknown": 117,
+      "top5": {
+        "AT2": 126,
+        "Unknown": 117,
+        "AT0": 75,
+        "AT1": 6,
+        "Multiciliated (non-nasal)": 2
+      }
+    },
+    "cluster_30": {
+      "cluster": "30",
+      "n_cells": 222,
+      "blind_proposal": "Ciliated",
+      "hlca_level1": "Epithelial",
+      "transferred_finest_mode": "Multiciliated (non-nasal)",
+      "mode_fraction": 0.982,
+      "mode_after_unknown_u0.2": "Multiciliated (non-nasal)",
+      "mode_fraction_after_unknown": 0.973,
+      "unknown_fraction_u0.2": 0.018,
+      "mean_uncertainty": 0.0206,
+      "verdict_vs_blind": "agree",
+      "s3_flat_mode": "AT0",
+      "s3_hier_mode": "AT2",
+      "agrees_with_s3_flat": false,
+      "agrees_with_s3_hier": false
+    },
+    "comparison_with_hlca_own_transfer_post_hoc": {
+      "hlca_tata_cells": 21700,
+      "hlca_unique_barcodes": 21634,
+      "our_unique_barcodes": 27607,
+      "matched_cells": 19796,
+      "levels": {
+        "level_3": {
+          "cells_with_label_on_both_sides": 19648,
+          "agreement_all_matched": 0.9924,
+          "agreement_when_both_confident_u_le_0.2": 0.9999,
+          "fraction_both_confident": 0.8989,
+          "our_mean_uncertainty": 0.046,
+          "hlca_mean_uncertainty": 0.0488,
+          "uncertainty_spearman": 0.6882
+        },
+        "level_4": {
+          "cells_with_label_on_both_sides": 17789,
+          "agreement_all_matched": 0.9744,
+          "agreement_when_both_confident_u_le_0.2": 0.9999,
+          "fraction_both_confident": 0.7487,
+          "our_mean_uncertainty": 0.1071,
+          "hlca_mean_uncertainty": 0.1115,
+          "uncertainty_spearman": 0.8953
+        },
+        "level_5": {
+          "cells_with_label_on_both_sides": 5172,
+          "agreement_all_matched": 0.9778,
+          "agreement_when_both_confident_u_le_0.2": 0.9997,
+          "fraction_both_confident": 0.7069,
+          "our_mean_uncertainty": 0.1215,
+          "hlca_mean_uncertainty": 0.1285,
+          "uncertainty_spearman": 0.8749
+        }
+      }
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-09T15:00:37+00:00"
+}
