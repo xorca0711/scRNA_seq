@@ -117,6 +117,8 @@ reproduce:
   - python analysis/scripts/run_scrna_analysis.py --dataset GSE178360 --integration harmony
   - python analysis/scripts/06_regeneration_focus.py
   - python analysis/scripts/07_lineage_tracing_cohort.py
+  - python analysis/scripts/10_phase_timecourse.py   # tracked metadata only; no scanpy needed
+  - python analysis/scripts/11_myeloid_focus.py      # reads the 2.1 GB object row-wise
   - python analysis/scripts/03_write_report.py --dataset GSE262927
   - python analysis/scripts/05_write_pipeline_as_run.py
 ```

@@ -1,0 +1,41 @@
+day,lineage,n_animals,median_pct_of_all_cells,median_pct_within_compartment,phase
+0,Endothelium,2,44.71,55.35,baseline
+0,Epithelium,2,7.39,9.15,baseline
+0,Lymphoid,2,8.06,41.95,baseline
+0,Mesenchyme,2,28.67,35.5,baseline
+0,Myeloid,2,11.16,58.05,baseline
+6,Endothelium,2,50.97,60.4,active repair
+6,Epithelium,2,6.82,7.96,active repair
+6,Lymphoid,2,5.29,35.24,active repair
+6,Mesenchyme,2,27.01,31.64,active repair
+6,Myeloid,2,9.91,64.76,active repair
+11,Endothelium,2,45.5,55.27,active repair
+11,Epithelium,2,6.73,8.52,active repair
+11,Lymphoid,2,7.49,41.15,active repair
+11,Mesenchyme,2,30.03,36.22,active repair
+11,Myeloid,2,10.24,58.85,active repair
+19,Endothelium,2,45.62,55.11,active repair
+19,Epithelium,2,7.79,9.44,active repair
+19,Lymphoid,2,5.74,33.16,active repair
+19,Mesenchyme,2,29.65,35.45,active repair
+19,Myeloid,2,11.2,66.84,active repair
+25,Endothelium,2,46.25,54.88,active repair
+25,Epithelium,2,8.96,10.97,active repair
+25,Lymphoid,2,8.22,48.68,active repair
+25,Mesenchyme,2,28.57,34.15,active repair
+25,Myeloid,2,7.99,51.32,active repair
+42,Endothelium,8,50.26,61.88,injury resolution
+42,Epithelium,8,4.79,5.56,injury resolution
+42,Lymphoid,8,4.08,36.22,injury resolution
+42,Mesenchyme,8,27.11,31.41,injury resolution
+42,Myeloid,8,8.33,63.78,injury resolution
+90,Endothelium,4,44.34,50.85,injury resolution
+90,Epithelium,4,9.44,10.82,injury resolution
+90,Lymphoid,4,4.34,34.02,injury resolution
+90,Mesenchyme,4,33.37,38.33,injury resolution
+90,Myeloid,4,7.11,65.98,injury resolution
+366,Endothelium,3,47.16,54.23,long-term homeostasis
+366,Epithelium,3,14.27,16.27,long-term homeostasis
+366,Lymphoid,3,6.08,42.57,long-term homeostasis
+366,Mesenchyme,3,25.54,29.36,long-term homeostasis
+366,Myeloid,3,6.3,57.43,long-term homeostasis

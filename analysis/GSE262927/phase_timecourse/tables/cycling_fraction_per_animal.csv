@@ -1,0 +1,126 @@
+sample_id,day,lineage,n_cells,n_cycling,pct_cycling,phase
+EEM-scRNA-158,0,Endothelium,2038,1015,49.804,baseline
+EEM-scRNA-158,0,Epithelium,470,96,20.426,baseline
+EEM-scRNA-158,0,Lymphoid,398,293,73.618,baseline
+EEM-scRNA-158,0,Mesenchyme,1320,362,27.424,baseline
+EEM-scRNA-158,0,Myeloid,510,218,42.745,baseline
+EEM-scRNA-166,0,Endothelium,2301,804,34.941,baseline
+EEM-scRNA-166,0,Epithelium,241,19,7.884,baseline
+EEM-scRNA-166,0,Lymphoid,383,291,75.979,baseline
+EEM-scRNA-166,0,Mesenchyme,1462,244,16.689,baseline
+EEM-scRNA-166,0,Myeloid,573,150,26.178,baseline
+EEM-scRNA-113,6,Endothelium,1240,596,48.065,active repair
+EEM-scRNA-113,6,Epithelium,227,61,26.872,active repair
+EEM-scRNA-113,6,Lymphoid,109,84,77.064,active repair
+EEM-scRNA-113,6,Mesenchyme,833,254,30.492,active repair
+EEM-scRNA-113,6,Myeloid,186,82,44.086,active repair
+EEM-scRNA-162,6,Endothelium,2520,807,32.024,active repair
+EEM-scRNA-162,6,Epithelium,228,29,12.719,active repair
+EEM-scRNA-162,6,Lymphoid,297,198,66.667,active repair
+EEM-scRNA-162,6,Mesenchyme,1020,356,34.902,active repair
+EEM-scRNA-162,6,Myeloid,589,144,24.448,active repair
+EEM-scRNA-116,11,Endothelium,1963,710,36.169,active repair
+EEM-scRNA-116,11,Epithelium,169,20,11.834,active repair
+EEM-scRNA-116,11,Lymphoid,158,130,82.278,active repair
+EEM-scRNA-116,11,Mesenchyme,1392,192,13.793,active repair
+EEM-scRNA-116,11,Myeloid,253,91,35.968,active repair
+EEM-scRNA-167,11,Endothelium,1963,616,31.381,active repair
+EEM-scRNA-167,11,Epithelium,438,109,24.886,active repair
+EEM-scRNA-167,11,Lymphoid,524,394,75.191,active repair
+EEM-scRNA-167,11,Mesenchyme,1179,122,10.348,active repair
+EEM-scRNA-167,11,Myeloid,671,208,30.999,active repair
+EEM-scRNA-117,19,Endothelium,2058,952,46.259,active repair
+EEM-scRNA-117,19,Epithelium,336,57,16.964,active repair
+EEM-scRNA-117,19,Lymphoid,132,104,78.788,active repair
+EEM-scRNA-117,19,Mesenchyme,1493,166,11.119,active repair
+EEM-scRNA-117,19,Myeloid,288,74,25.694,active repair
+EEM-scRNA-170,19,Endothelium,1800,794,44.111,active repair
+EEM-scRNA-170,19,Epithelium,322,44,13.665,active repair
+EEM-scRNA-170,19,Lymphoid,349,276,79.083,active repair
+EEM-scRNA-170,19,Mesenchyme,1021,101,9.892,active repair
+EEM-scRNA-170,19,Myeloid,651,223,34.255,active repair
+EEM-scRNA-118,25,Endothelium,2102,957,45.528,active repair
+EEM-scRNA-118,25,Epithelium,271,55,20.295,active repair
+EEM-scRNA-118,25,Lymphoid,163,121,74.233,active repair
+EEM-scRNA-118,25,Mesenchyme,1193,167,13.998,active repair
+EEM-scRNA-118,25,Myeloid,209,71,33.971,active repair
+EEM-scRNA-172,25,Endothelium,1605,704,43.863,active repair
+EEM-scRNA-172,25,Epithelium,453,89,19.647,active repair
+EEM-scRNA-172,25,Lymphoid,505,417,82.574,active repair
+EEM-scRNA-172,25,Mesenchyme,1101,150,13.624,active repair
+EEM-scRNA-172,25,Myeloid,438,184,42.009,active repair
+EEM-scRNA-124,42,Endothelium,1886,878,46.554,injury resolution
+EEM-scRNA-124,42,Epithelium,163,25,15.337,injury resolution
+EEM-scRNA-124,42,Lymphoid,82,60,73.171,injury resolution
+EEM-scRNA-124,42,Mesenchyme,947,164,17.318,injury resolution
+EEM-scRNA-124,42,Myeloid,143,50,34.965,injury resolution
+EEM-scRNA-125,42,Endothelium,1823,1007,55.239,injury resolution
+EEM-scRNA-125,42,Epithelium,346,120,34.682,injury resolution
+EEM-scRNA-125,42,Lymphoid,158,131,82.911,injury resolution
+EEM-scRNA-125,42,Mesenchyme,1649,477,28.927,injury resolution
+EEM-scRNA-125,42,Myeloid,217,103,47.465,injury resolution
+EEM-scRNA-126,42,Endothelium,1985,1072,54.005,injury resolution
+EEM-scRNA-126,42,Epithelium,552,228,41.304,injury resolution
+EEM-scRNA-126,42,Lymphoid,145,118,81.379,injury resolution
+EEM-scRNA-126,42,Mesenchyme,1151,250,21.72,injury resolution
+EEM-scRNA-126,42,Myeloid,263,134,50.951,injury resolution
+EEM-scRNA-127,42,Endothelium,2876,1148,39.917,injury resolution
+EEM-scRNA-127,42,Epithelium,174,26,14.943,injury resolution
+EEM-scRNA-127,42,Lymphoid,235,201,85.532,injury resolution
+EEM-scRNA-127,42,Mesenchyme,1025,100,9.756,injury resolution
+EEM-scRNA-127,42,Myeloid,215,68,31.628,injury resolution
+EEM-scRNA-179,42,Endothelium,2471,1104,44.678,injury resolution
+EEM-scRNA-179,42,Epithelium,226,57,25.221,injury resolution
+EEM-scRNA-179,42,Lymphoid,220,179,81.364,injury resolution
+EEM-scRNA-179,42,Mesenchyme,1366,252,18.448,injury resolution
+EEM-scRNA-179,42,Myeloid,725,325,44.828,injury resolution
+EEM-scRNA-180,42,Endothelium,2910,1426,49.003,injury resolution
+EEM-scRNA-180,42,Epithelium,116,21,18.103,injury resolution
+EEM-scRNA-180,42,Lymphoid,174,132,75.862,injury resolution
+EEM-scRNA-180,42,Mesenchyme,900,139,15.444,injury resolution
+EEM-scRNA-180,42,Myeloid,685,242,35.328,injury resolution
+EEM-scRNA-181,42,Endothelium,2578,1255,48.681,injury resolution
+EEM-scRNA-181,42,Epithelium,223,55,24.664,injury resolution
+EEM-scRNA-181,42,Lymphoid,515,412,80.0,injury resolution
+EEM-scRNA-181,42,Mesenchyme,1206,238,19.735,injury resolution
+EEM-scRNA-181,42,Myeloid,516,195,37.791,injury resolution
+EEM-scRNA-182,42,Endothelium,2078,1121,53.946,injury resolution
+EEM-scRNA-182,42,Epithelium,314,80,25.478,injury resolution
+EEM-scRNA-182,42,Lymphoid,373,329,88.204,injury resolution
+EEM-scRNA-182,42,Mesenchyme,1264,253,20.016,injury resolution
+EEM-scRNA-182,42,Myeloid,663,283,42.685,injury resolution
+EEM-scRNA-236,90,Endothelium,1621,720,44.417,injury resolution
+EEM-scRNA-236,90,Epithelium,364,70,19.231,injury resolution
+EEM-scRNA-236,90,Lymphoid,198,158,79.798,injury resolution
+EEM-scRNA-236,90,Mesenchyme,1019,188,18.449,injury resolution
+EEM-scRNA-236,90,Myeloid,218,82,37.615,injury resolution
+EEM-scRNA-237,90,Endothelium,2187,1220,55.784,injury resolution
+EEM-scRNA-237,90,Epithelium,333,106,31.832,injury resolution
+EEM-scRNA-237,90,Lymphoid,229,200,87.336,injury resolution
+EEM-scRNA-237,90,Mesenchyme,2269,561,24.725,injury resolution
+EEM-scRNA-237,90,Myeloid,424,197,46.462,injury resolution
+EEM-scRNA-238,90,Endothelium,2346,1368,58.312,injury resolution
+EEM-scRNA-238,90,Epithelium,479,133,27.766,injury resolution
+EEM-scRNA-238,90,Lymphoid,117,90,76.923,injury resolution
+EEM-scRNA-238,90,Mesenchyme,1128,261,23.138,injury resolution
+EEM-scRNA-238,90,Myeloid,280,119,42.5,injury resolution
+EEM-scRNA-239,90,Endothelium,2589,1304,50.367,injury resolution
+EEM-scRNA-239,90,Epithelium,517,121,23.404,injury resolution
+EEM-scRNA-239,90,Lymphoid,280,225,80.357,injury resolution
+EEM-scRNA-239,90,Mesenchyme,2318,533,22.994,injury resolution
+EEM-scRNA-239,90,Myeloid,569,253,44.464,injury resolution
+EEM-scRNA-310,366,Endothelium,2120,1190,56.132,long-term homeostasis
+EEM-scRNA-310,366,Epithelium,584,190,32.534,long-term homeostasis
+EEM-scRNA-310,366,Lymphoid,101,82,81.188,long-term homeostasis
+EEM-scRNA-310,366,Mesenchyme,886,203,22.912,long-term homeostasis
+EEM-scRNA-310,366,Myeloid,240,86,35.833,long-term homeostasis
+EEM-scRNA-311,366,Endothelium,1758,943,53.641,long-term homeostasis
+EEM-scRNA-311,366,Epithelium,532,183,34.398,long-term homeostasis
+EEM-scRNA-311,366,Lymphoid,251,212,84.462,long-term homeostasis
+EEM-scRNA-311,366,Mesenchyme,952,253,26.576,long-term homeostasis
+EEM-scRNA-311,366,Myeloid,235,111,47.234,long-term homeostasis
+EEM-scRNA-312,366,Endothelium,1174,501,42.675,long-term homeostasis
+EEM-scRNA-312,366,Epithelium,355,78,21.972,long-term homeostasis
+EEM-scRNA-312,366,Lymphoid,169,140,82.84,long-term homeostasis
+EEM-scRNA-312,366,Mesenchyme,853,120,14.068,long-term homeostasis
+EEM-scRNA-312,366,Myeloid,228,86,37.719,long-term homeostasis

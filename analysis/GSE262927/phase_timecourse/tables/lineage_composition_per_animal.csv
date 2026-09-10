@@ -1,0 +1,126 @@
+sample_id,day,phase,lineage,compartment,n_cells,n_cells_animal,n_cells_compartment,pct_of_all_cells,pct_within_compartment
+EEM-scRNA-158,0,baseline,Endothelium,CD45neg,2038,4736,3828,43.032,53.239
+EEM-scRNA-158,0,baseline,Epithelium,CD45neg,470,4736,3828,9.924,12.278
+EEM-scRNA-158,0,baseline,Lymphoid,CD45pos,398,4736,908,8.404,43.833
+EEM-scRNA-158,0,baseline,Mesenchyme,CD45neg,1320,4736,3828,27.872,34.483
+EEM-scRNA-158,0,baseline,Myeloid,CD45pos,510,4736,908,10.769,56.167
+EEM-scRNA-166,0,baseline,Endothelium,CD45neg,2301,4960,4004,46.391,57.468
+EEM-scRNA-166,0,baseline,Epithelium,CD45neg,241,4960,4004,4.859,6.019
+EEM-scRNA-166,0,baseline,Lymphoid,CD45pos,383,4960,956,7.722,40.063
+EEM-scRNA-166,0,baseline,Mesenchyme,CD45neg,1462,4960,4004,29.476,36.513
+EEM-scRNA-166,0,baseline,Myeloid,CD45pos,573,4960,956,11.552,59.937
+EEM-scRNA-113,6,active repair,Endothelium,CD45neg,1240,2595,2300,47.784,53.913
+EEM-scRNA-113,6,active repair,Epithelium,CD45neg,227,2595,2300,8.748,9.87
+EEM-scRNA-113,6,active repair,Lymphoid,CD45pos,109,2595,295,4.2,36.949
+EEM-scRNA-113,6,active repair,Mesenchyme,CD45neg,833,2595,2300,32.1,36.217
+EEM-scRNA-113,6,active repair,Myeloid,CD45pos,186,2595,295,7.168,63.051
+EEM-scRNA-162,6,active repair,Endothelium,CD45neg,2520,4654,3768,54.147,66.879
+EEM-scRNA-162,6,active repair,Epithelium,CD45neg,228,4654,3768,4.899,6.051
+EEM-scRNA-162,6,active repair,Lymphoid,CD45pos,297,4654,886,6.382,33.521
+EEM-scRNA-162,6,active repair,Mesenchyme,CD45neg,1020,4654,3768,21.917,27.07
+EEM-scRNA-162,6,active repair,Myeloid,CD45pos,589,4654,886,12.656,66.479
+EEM-scRNA-116,11,active repair,Endothelium,CD45neg,1963,3935,3524,49.886,55.704
+EEM-scRNA-116,11,active repair,Epithelium,CD45neg,169,3935,3524,4.295,4.796
+EEM-scRNA-116,11,active repair,Lymphoid,CD45pos,158,3935,411,4.015,38.443
+EEM-scRNA-116,11,active repair,Mesenchyme,CD45neg,1392,3935,3524,35.375,39.501
+EEM-scRNA-116,11,active repair,Myeloid,CD45pos,253,3935,411,6.429,61.557
+EEM-scRNA-167,11,active repair,Endothelium,CD45neg,1963,4775,3580,41.11,54.832
+EEM-scRNA-167,11,active repair,Epithelium,CD45neg,438,4775,3580,9.173,12.235
+EEM-scRNA-167,11,active repair,Lymphoid,CD45pos,524,4775,1195,10.974,43.849
+EEM-scRNA-167,11,active repair,Mesenchyme,CD45neg,1179,4775,3580,24.691,32.933
+EEM-scRNA-167,11,active repair,Myeloid,CD45pos,671,4775,1195,14.052,56.151
+EEM-scRNA-117,19,active repair,Endothelium,CD45neg,2058,4307,3887,47.783,52.946
+EEM-scRNA-117,19,active repair,Epithelium,CD45neg,336,4307,3887,7.801,8.644
+EEM-scRNA-117,19,active repair,Lymphoid,CD45pos,132,4307,420,3.065,31.429
+EEM-scRNA-117,19,active repair,Mesenchyme,CD45neg,1493,4307,3887,34.664,38.41
+EEM-scRNA-117,19,active repair,Myeloid,CD45pos,288,4307,420,6.687,68.571
+EEM-scRNA-170,19,active repair,Endothelium,CD45neg,1800,4143,3143,43.447,57.27
+EEM-scRNA-170,19,active repair,Epithelium,CD45neg,322,4143,3143,7.772,10.245
+EEM-scRNA-170,19,active repair,Lymphoid,CD45pos,349,4143,1000,8.424,34.9
+EEM-scRNA-170,19,active repair,Mesenchyme,CD45neg,1021,4143,3143,24.644,32.485
+EEM-scRNA-170,19,active repair,Myeloid,CD45pos,651,4143,1000,15.713,65.1
+EEM-scRNA-118,25,active repair,Endothelium,CD45neg,2102,3938,3566,53.377,58.946
+EEM-scRNA-118,25,active repair,Epithelium,CD45neg,271,3938,3566,6.882,7.6
+EEM-scRNA-118,25,active repair,Lymphoid,CD45pos,163,3938,372,4.139,43.817
+EEM-scRNA-118,25,active repair,Mesenchyme,CD45neg,1193,3938,3566,30.295,33.455
+EEM-scRNA-118,25,active repair,Myeloid,CD45pos,209,3938,372,5.307,56.183
+EEM-scRNA-172,25,active repair,Endothelium,CD45neg,1605,4102,3159,39.127,50.807
+EEM-scRNA-172,25,active repair,Epithelium,CD45neg,453,4102,3159,11.043,14.34
+EEM-scRNA-172,25,active repair,Lymphoid,CD45pos,505,4102,943,12.311,53.552
+EEM-scRNA-172,25,active repair,Mesenchyme,CD45neg,1101,4102,3159,26.841,34.853
+EEM-scRNA-172,25,active repair,Myeloid,CD45pos,438,4102,943,10.678,46.448
+EEM-scRNA-124,42,injury resolution,Endothelium,CD45neg,1886,3221,2996,58.553,62.951
+EEM-scRNA-124,42,injury resolution,Epithelium,CD45neg,163,3221,2996,5.061,5.441
+EEM-scRNA-124,42,injury resolution,Lymphoid,CD45pos,82,3221,225,2.546,36.444
+EEM-scRNA-124,42,injury resolution,Mesenchyme,CD45neg,947,3221,2996,29.401,31.609
+EEM-scRNA-124,42,injury resolution,Myeloid,CD45pos,143,3221,225,4.44,63.556
+EEM-scRNA-125,42,injury resolution,Endothelium,CD45neg,1823,4193,3818,43.477,47.748
+EEM-scRNA-125,42,injury resolution,Epithelium,CD45neg,346,4193,3818,8.252,9.062
+EEM-scRNA-125,42,injury resolution,Lymphoid,CD45pos,158,4193,375,3.768,42.133
+EEM-scRNA-125,42,injury resolution,Mesenchyme,CD45neg,1649,4193,3818,39.327,43.19
+EEM-scRNA-125,42,injury resolution,Myeloid,CD45pos,217,4193,375,5.175,57.867
+EEM-scRNA-126,42,injury resolution,Endothelium,CD45neg,1985,4096,3688,48.462,53.823
+EEM-scRNA-126,42,injury resolution,Epithelium,CD45neg,552,4096,3688,13.477,14.967
+EEM-scRNA-126,42,injury resolution,Lymphoid,CD45pos,145,4096,408,3.54,35.539
+EEM-scRNA-126,42,injury resolution,Mesenchyme,CD45neg,1151,4096,3688,28.101,31.209
+EEM-scRNA-126,42,injury resolution,Myeloid,CD45pos,263,4096,408,6.421,64.461
+EEM-scRNA-127,42,injury resolution,Endothelium,CD45neg,2876,4525,4075,63.558,70.577
+EEM-scRNA-127,42,injury resolution,Epithelium,CD45neg,174,4525,4075,3.845,4.27
+EEM-scRNA-127,42,injury resolution,Lymphoid,CD45pos,235,4525,450,5.193,52.222
+EEM-scRNA-127,42,injury resolution,Mesenchyme,CD45neg,1025,4525,4075,22.652,25.153
+EEM-scRNA-127,42,injury resolution,Myeloid,CD45pos,215,4525,450,4.751,47.778
+EEM-scRNA-179,42,injury resolution,Endothelium,CD45neg,2471,5008,4063,49.341,60.817
+EEM-scRNA-179,42,injury resolution,Epithelium,CD45neg,226,5008,4063,4.513,5.562
+EEM-scRNA-179,42,injury resolution,Lymphoid,CD45pos,220,5008,945,4.393,23.28
+EEM-scRNA-179,42,injury resolution,Mesenchyme,CD45neg,1366,5008,4063,27.276,33.62
+EEM-scRNA-179,42,injury resolution,Myeloid,CD45pos,725,5008,945,14.477,76.72
+EEM-scRNA-180,42,injury resolution,Endothelium,CD45neg,2910,4785,3926,60.815,74.121
+EEM-scRNA-180,42,injury resolution,Epithelium,CD45neg,116,4785,3926,2.424,2.955
+EEM-scRNA-180,42,injury resolution,Lymphoid,CD45pos,174,4785,859,3.636,20.256
+EEM-scRNA-180,42,injury resolution,Mesenchyme,CD45neg,900,4785,3926,18.809,22.924
+EEM-scRNA-180,42,injury resolution,Myeloid,CD45pos,685,4785,859,14.316,79.744
+EEM-scRNA-181,42,injury resolution,Endothelium,CD45neg,2578,5038,4007,51.171,64.337
+EEM-scRNA-181,42,injury resolution,Epithelium,CD45neg,223,5038,4007,4.426,5.565
+EEM-scRNA-181,42,injury resolution,Lymphoid,CD45pos,515,5038,1031,10.222,49.952
+EEM-scRNA-181,42,injury resolution,Mesenchyme,CD45neg,1206,5038,4007,23.938,30.097
+EEM-scRNA-181,42,injury resolution,Myeloid,CD45pos,516,5038,1031,10.242,50.048
+EEM-scRNA-182,42,injury resolution,Endothelium,CD45neg,2078,4692,3656,44.288,56.838
+EEM-scRNA-182,42,injury resolution,Epithelium,CD45neg,314,4692,3656,6.692,8.589
+EEM-scRNA-182,42,injury resolution,Lymphoid,CD45pos,373,4692,1036,7.95,36.004
+EEM-scRNA-182,42,injury resolution,Mesenchyme,CD45neg,1264,4692,3656,26.939,34.573
+EEM-scRNA-182,42,injury resolution,Myeloid,CD45pos,663,4692,1036,14.13,63.996
+EEM-scRNA-236,90,injury resolution,Endothelium,CD45neg,1621,3420,3004,47.398,53.961
+EEM-scRNA-236,90,injury resolution,Epithelium,CD45neg,364,3420,3004,10.643,12.117
+EEM-scRNA-236,90,injury resolution,Lymphoid,CD45pos,198,3420,416,5.789,47.596
+EEM-scRNA-236,90,injury resolution,Mesenchyme,CD45neg,1019,3420,3004,29.795,33.921
+EEM-scRNA-236,90,injury resolution,Myeloid,CD45pos,218,3420,416,6.374,52.404
+EEM-scRNA-237,90,injury resolution,Endothelium,CD45neg,2187,5442,4789,40.187,45.667
+EEM-scRNA-237,90,injury resolution,Epithelium,CD45neg,333,5442,4789,6.119,6.953
+EEM-scRNA-237,90,injury resolution,Lymphoid,CD45pos,229,5442,653,4.208,35.069
+EEM-scRNA-237,90,injury resolution,Mesenchyme,CD45neg,2269,5442,4789,41.694,47.379
+EEM-scRNA-237,90,injury resolution,Myeloid,CD45pos,424,5442,653,7.791,64.931
+EEM-scRNA-238,90,injury resolution,Endothelium,CD45neg,2346,4350,3953,53.931,59.347
+EEM-scRNA-238,90,injury resolution,Epithelium,CD45neg,479,4350,3953,11.011,12.117
+EEM-scRNA-238,90,injury resolution,Lymphoid,CD45pos,117,4350,397,2.69,29.471
+EEM-scRNA-238,90,injury resolution,Mesenchyme,CD45neg,1128,4350,3953,25.931,28.535
+EEM-scRNA-238,90,injury resolution,Myeloid,CD45pos,280,4350,397,6.437,70.529
+EEM-scRNA-239,90,injury resolution,Endothelium,CD45neg,2589,6273,5424,41.272,47.732
+EEM-scRNA-239,90,injury resolution,Epithelium,CD45neg,517,6273,5424,8.242,9.532
+EEM-scRNA-239,90,injury resolution,Lymphoid,CD45pos,280,6273,849,4.464,32.98
+EEM-scRNA-239,90,injury resolution,Mesenchyme,CD45neg,2318,6273,5424,36.952,42.736
+EEM-scRNA-239,90,injury resolution,Myeloid,CD45pos,569,6273,849,9.071,67.02
+EEM-scRNA-310,366,long-term homeostasis,Endothelium,CD45neg,2120,3931,3590,53.93,59.053
+EEM-scRNA-310,366,long-term homeostasis,Epithelium,CD45neg,584,3931,3590,14.856,16.267
+EEM-scRNA-310,366,long-term homeostasis,Lymphoid,CD45pos,101,3931,341,2.569,29.619
+EEM-scRNA-310,366,long-term homeostasis,Mesenchyme,CD45neg,886,3931,3590,22.539,24.68
+EEM-scRNA-310,366,long-term homeostasis,Myeloid,CD45pos,240,3931,341,6.105,70.381
+EEM-scRNA-311,366,long-term homeostasis,Endothelium,CD45neg,1758,3728,3242,47.157,54.226
+EEM-scRNA-311,366,long-term homeostasis,Epithelium,CD45neg,532,3728,3242,14.27,16.41
+EEM-scRNA-311,366,long-term homeostasis,Lymphoid,CD45pos,251,3728,486,6.733,51.646
+EEM-scRNA-311,366,long-term homeostasis,Mesenchyme,CD45neg,952,3728,3242,25.536,29.365
+EEM-scRNA-311,366,long-term homeostasis,Myeloid,CD45pos,235,3728,486,6.304,48.354
+EEM-scRNA-312,366,long-term homeostasis,Endothelium,CD45neg,1174,2779,2382,42.245,49.286
+EEM-scRNA-312,366,long-term homeostasis,Epithelium,CD45neg,355,2779,2382,12.774,14.903
+EEM-scRNA-312,366,long-term homeostasis,Lymphoid,CD45pos,169,2779,397,6.081,42.569
+EEM-scRNA-312,366,long-term homeostasis,Mesenchyme,CD45neg,853,2779,2382,30.694,35.81
+EEM-scRNA-312,366,long-term homeostasis,Myeloid,CD45pos,228,2779,397,8.204,57.431

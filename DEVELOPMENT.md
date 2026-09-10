@@ -26,6 +26,7 @@ violate — is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Review of intermediate and final outputs | Me |
 | Retain / revise / reject decision on every result | Me |
 | Literature extraction into study notes and reviewable configs (`Thesis/`) | AI-assisted; my review pending |
+| Focused reproductions of the source paper's phase and myeloid claims (`phase_timecourse/`, `myeloid_focus/`) | AI-assisted, rules frozen before each run; my review pending |
 
 AI execution never meant automatic acceptance. Results were reviewed between
 sessions, and several were sent back: one finding was refuted and rewritten
@@ -152,6 +153,24 @@ kept in the run record, and a hierarchical assignment was added as a
 post hoc sensitivity rather than swapped in as the primary. The two schemes
 disagree on AT0, and that disagreement is the result, not a nuisance to be
 resolved by picking the scheme that flatters the earlier AT0 candidate.
+
+**14 · The paper's phase structure is reproduced from the trace, not from
+the classifier.** (2026-09-10, under review.) The source paper's central
+descriptive claim, that proliferation after injury runs in phases (immune,
+then epithelium and mesenchyme, then endothelium), was reproduced from the
+tracked metadata alone, with the expected peak windows frozen in the run
+record before the table was opened. The Ki67-trace peak falls in the
+paper's window for four of five lineages; lymphoid cells peak one harvest
+later. The deposited cell-cycle call was carried as a cross-check and
+disagrees for four of five lineages because it calls most lymphocytes
+cycling; it is reported, not used. The myeloid compartment was then taken
+from the blind atlas clustering (clusters 5, 17, 24), re-embedded with the
+labels held out, and graded afterwards, at the resolution fixed from trial
+S5; its per-animal composition reproduces the paper's Figure 3 (aMAC loss
+and iMON expansion at 6 dpi, reconstitution by 19 to 42 dpi). Both analyses
+use the deposited labels descriptively and say so, and neither computes a
+P value, because the active-repair days carry two animals each. Retain,
+re-word or reject is mine and pending.
 
 ## How outputs were reviewed
 

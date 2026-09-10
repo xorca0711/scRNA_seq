@@ -1,0 +1,73 @@
+day,label,n_animals,median_pct_of_myeloid,phase
+0,Neutrophil,2,12.87,baseline
+0,aMAC,2,30.84,baseline
+0,cDC1,2,3.49,baseline
+0,cDC2,2,6.78,baseline
+0,cMON,2,25.74,baseline
+0,iMAC,2,2.76,baseline
+0,iMON,2,1.94,baseline
+0,maDC,2,0.84,baseline
+0,pMON,2,14.75,baseline
+6,Neutrophil,2,16.58,active repair
+6,aMAC,2,4.6,active repair
+6,cDC1,2,2.84,active repair
+6,cDC2,2,3.96,active repair
+6,cMON,2,6.18,active repair
+6,iMAC,2,2.84,active repair
+6,iMON,2,55.97,active repair
+6,maDC,2,2.31,active repair
+6,pMON,2,4.71,active repair
+11,Neutrophil,2,19.86,active repair
+11,aMAC,2,9.97,active repair
+11,cDC1,2,3.2,active repair
+11,cDC2,2,4.68,active repair
+11,cMON,2,11.31,active repair
+11,iMAC,2,6.75,active repair
+11,iMON,2,40.43,active repair
+11,maDC,2,0.45,active repair
+11,pMON,2,3.35,active repair
+19,Neutrophil,2,11.89,active repair
+19,aMAC,2,41.72,active repair
+19,cDC1,2,4.31,active repair
+19,cDC2,2,4.0,active repair
+19,cMON,2,8.44,active repair
+19,iMAC,2,5.87,active repair
+19,iMON,2,13.97,active repair
+19,maDC,2,0.46,active repair
+19,pMON,2,9.32,active repair
+25,Neutrophil,2,11.94,active repair
+25,aMAC,2,32.07,active repair
+25,cDC1,2,7.5,active repair
+25,cDC2,2,4.2,active repair
+25,cMON,2,13.73,active repair
+25,iMAC,2,9.56,active repair
+25,iMON,2,8.13,active repair
+25,maDC,2,1.3,active repair
+25,pMON,2,11.57,active repair
+42,Neutrophil,8,14.87,injury resolution
+42,aMAC,8,49.01,injury resolution
+42,cDC1,8,5.2,injury resolution
+42,cDC2,8,4.49,injury resolution
+42,cMON,8,6.1,injury resolution
+42,iMAC,8,10.28,injury resolution
+42,iMON,8,1.79,injury resolution
+42,maDC,8,0.85,injury resolution
+42,pMON,8,7.29,injury resolution
+90,Neutrophil,4,11.42,injury resolution
+90,aMAC,4,43.73,injury resolution
+90,cDC1,4,7.27,injury resolution
+90,cDC2,4,6.54,injury resolution
+90,cMON,4,9.92,injury resolution
+90,iMAC,4,13.97,injury resolution
+90,iMON,4,2.41,injury resolution
+90,maDC,4,0.71,injury resolution
+90,pMON,4,5.04,injury resolution
+366,Neutrophil,3,9.17,long-term homeostasis
+366,aMAC,3,53.95,long-term homeostasis
+366,cDC1,3,6.38,long-term homeostasis
+366,cDC2,3,6.38,long-term homeostasis
+366,cMON,3,8.51,long-term homeostasis
+366,iMAC,3,7.66,long-term homeostasis
+366,iMON,3,2.13,long-term homeostasis
+366,maDC,3,1.32,long-term homeostasis
+366,pMON,3,9.36,long-term homeostasis
