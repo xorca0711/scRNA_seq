@@ -23,15 +23,11 @@ which carries two replicate libraries per arm and three time points.
 | C0 | 0 | What is actually deposited, and what statistical unit can it carry? | run; Descriptive only | [`trials/c0_data_reality_check/`](trials/c0_data_reality_check/) |
 | C1 | 1 | Does the Pdgfrb+Runx1+Tnc+ fibrotic fibroblast subset reproduce, and does it separate cleanly? | run; **not recovered** by the frozen rule | [`trials/c1_fibroblast_compartment/c1_summary.md`](trials/c1_fibroblast_compartment/c1_summary.md) |
 | C1b | 1 | Then what is there instead? (stop-and-characterise, plus a disclosed corrected pass) | run | [`trials/c1b_characterise_red2kras_private/c1b_summary.md`](trials/c1b_characterise_red2kras_private/c1b_summary.md) |
-| C1c | 1 | Are the fibrotic and inflammatory programmes in the same cells at 2 weeks? | script written, **not yet run** | [`trials/c1c_fibrotic_inflammatory_overlap.py`](trials/c1c_fibrotic_inflammatory_overlap.py) |
-| C2 | 2b | Does removing Areg collapse the niche, and does anything survive it? | **running when the session paused** | [`trials/c2_areg_deletion_arm/`](trials/c2_areg_deletion_arm/) |
-| C3 | 2a | Is Areg a property of the DATP-like state under my own clustering, across the time course? | script written, **not yet started** | [`trials/c3_areg_state_specificity.py`](trials/c3_areg_state_specificity.py) |
+| C1c | 1 | Are the fibrotic and inflammatory programmes in the same cells at 2 weeks? | run | [`trials/c1c_fibrotic_inflammatory_overlap/c1c_summary.md`](trials/c1c_fibrotic_inflammatory_overlap/c1c_summary.md) |
+| C1d | 1 | What does the mesenchymal sort actually contain? | run | [`trials/c1d_sort_purity/c1d_summary.md`](trials/c1d_sort_purity/c1d_summary.md) |
+| C2 | 2b | Does removing Areg collapse the niche, and does anything survive it? | running | [`trials/c2_areg_deletion_arm/`](trials/c2_areg_deletion_arm/) |
+| C3 | 2a | Is Areg a property of the DATP-like state under my own clustering, across the time course? | queued | [`trials/c3_areg_state_specificity.py`](trials/c3_areg_state_specificity.py) |
 | C-d | 2d | Does the transcriptome agree that fibroblast reprogramming precedes macrophage change? | **closed by C0, not run** | see below |
-
-> **Session state, 2026-09-12.** C0, C1 and C1b are complete and their outcomes
-> are written below. C1c and C3 are written and not run; C2 was running when the
-> session paused. The handoff block in [`PROGRESS.md`](../../PROGRESS.md) says how
-> to resume each one.
 
 ---
 
@@ -188,3 +184,137 @@ correcting on library here would correct on genotype.
 | Scrublet's automatic threshold fails on both libraries and the calls are a ranking cut | Descriptive only |
 | The Red2Kras fibroblast score is two states rather than one gradient | Exploratory (one library, no replication) |
 | The frozen selection rule excluded the candidate clusters | Disclosed rule failure; corrected pass in C1b |
+
+---
+
+## C1b, C1c, C1d. Stop and characterise (Gate 1)
+
+Gate 1 says that when the published subset does not separate, the trial stops
+and characterises rather than pressing on. Three short trials do that. All
+three state in their own rules that they were fixed **after** the preceding
+trial's cluster tables had been seen, the same disclosure trial S4 made.
+
+### C1b: what is there instead
+
+Script [`trials/c1b_characterise_red2kras_private.py`](trials/c1b_characterise_red2kras_private.py);
+artefacts in [`trials/c1b_characterise_red2kras_private/`](trials/c1b_characterise_red2kras_private/).
+
+**Question A, does any cluster match the published signature** (at least 80%
+Red2Kras, with Tnc, Acta2 and either Pdgfrb or Runx1 each detected in at least
+40% of cells): **none qualifies**. The nearest is cluster 14, and it misses on
+one number:
+
+| | cluster 14 |
+|---|---|
+| cells | 937 |
+| fraction Red2Kras | 0.996 |
+| Tnc detected | **0.399** (floor 0.400) |
+| Acta2 detected | 0.574 |
+| Runx1 detected | 0.540 |
+| Pdgfrb detected | 0.326 |
+
+The floor was not moved after the fact. A rule that a result misses by one
+thousandth is a rule that was arbitrary at the margin, and saying so is more
+useful than either quietly relaxing it or reporting "not recovered" as though
+the population were absent.
+
+**Question B, the Red2Kras-private clusters** (at least 90% Red2Kras):
+clusters 4, 10, 11, 14 and 16. **None** is explained by the quality criteria
+that explained mouse cluster 23 of the GSE262927 series: none is low-count and
+ambient-like, and none is doublet-enriched. They are real structure.
+
+**Question C, the corrected selection, post hoc.** Replacing C1's
+confident-call selection with a compartment gate (Col1a1 detected; Ptprc,
+Pecam1 and Epcam not detected) keeps 8,431 of 11,690 cells and **still returns
+not recovered**, for a third reason the first pass hid: the subcluster with the
+highest reprogrammed-fibroblast score has Acta2 detected in 99.7% of its cells
+and Pdgfra in 2.2%. It is smooth muscle. Two of the six genes in the paper's
+own reprogrammed-fibroblast set, Acta2 and Pdgfrb, are mural markers, so a
+score over that set is maximised by mural cells unless they are excluded
+first. That is a property of the marker set, not of this data, and it is worth
+carrying into any future use of it.
+
+### C1c: are the fibrotic and inflammatory programmes in the same cells
+
+Script [`trials/c1c_fibrotic_inflammatory_overlap.py`](trials/c1c_fibrotic_inflammatory_overlap.py).
+The paper makes fibrotic and inflammatory fibroblasts distinct populations,
+with the inflammatory cells lacking Tnc. A cluster-level detection fraction
+cannot tell interleaved subsets from co-expression, so this asks per cell,
+against what independence predicts.
+
+| Group | cells | Tnc | Lcn2 or Saa3 | both | expected if independent | ratio |
+|---|--:|--:|--:|--:|--:|--:|
+| Red2Kras, private clusters | 1,854 | 27.8% | 29.5% | 9.7% | 8.2% | 1.18 |
+| Red2Kras, other clusters | 4,085 | 17.0% | 4.5% | 0.7% | 0.8% | 0.96 |
+| Confetti, all | 5,751 | 11.5% | 1.2% | 0.1% | 0.1% | 1.06 |
+
+All three sit below the frozen 1.25 threshold: **consistent with separate
+cells**, which supports the paper's claim by a route the paper did not use.
+Per cluster the separation is sharper than the pooled number suggests:
+clusters 4 and 11 are inflammatory-dominant with ratios of 0.74 and 0.43, so
+in those clusters the two programmes actively avoid each other, while clusters
+14 and 16 sit slightly above independence at 1.30 and 1.66.
+
+### C1d: what the mesenchymal sort actually contains
+
+Script [`trials/c1d_sort_purity.py`](trials/c1d_sort_purity.py). C1b's five
+private clusters were "not explained by quality", and their top genes
+suggested the explanation is composition rather than quality.
+
+**757 of 11,690 cells, 6.5%, sit in clusters that read as off-target for a
+CD45-CD31-EpCAM- sort.** Clusters 8, 10 and 15 read as immune; clusters 11 and
+12 read as epithelial. The one that matters:
+
+| cluster | cells | fraction Red2Kras | epithelial markers | Col1a1 | **Areg** |
+|---|--:|--:|--:|--:|--:|
+| 11 | 184 | 0.989 | 98.4% | 21.2% | **88.0%** |
+| 12 | 39 | 0.436 | 97.4% | 23.1% | 69.2% |
+
+An Areg-high mutant epithelial population is sitting inside a library sorted
+as mesenchyme, almost entirely in the Red2Kras arm. **The paper's own analysis
+is immune to this**, because it took its epithelial cells from the separate
+lineage-labelled series rather than from this library. A reanalysis that
+computed epithelium-to-fibroblast signalling inside this library alone would
+not be: it would be reading a sort contaminant as the signalling source. That
+is the single most practically useful thing Gate 1 produced.
+
+The same trial clears cluster 14: 95.3% mesenchymal, 89.9% Col1a1, 3.4%
+epithelial. It is a genuine fibroblast population, not a contaminant and not a
+doublet.
+
+### What Gate 1 concluded
+
+The published population **is present**, as clusters 14 and 16 together, 1,080
+cells at about 99% Red2Kras, carrying the fibrotic programme on a retained
+alveolar-fibroblast identity (cluster 14: Pdgfra 69.5%, Col13a1 44.4%, Tcf21
+58.0%, with Tnc 39.9%, Acta2 57.4%, Runx1 54.0%, Pdgfrb 32.6%, Sfrp1 55.3%;
+cluster 16 the same with Mki67 at 39.2%). This is consistent with the paper's
+own description of fibroblasts that gain Pdgfrb and Acta2 with *reduced*, not
+absent, Pdgfra.
+
+The pre-registered rule nonetheless returned "not recovered", for four
+separable reasons, all disclosed and none repaired in place:
+
+1. the selection step took only clusters with a confident fibroblast call, and
+   the candidates were not confident;
+2. Acta2 and Pdgfrb in the paper's marker set are mural markers, so the score
+   is maximised by smooth muscle;
+3. Runx1 is also a myeloid transcription factor, so the score additionally
+   flags the myeloid contaminant the sort carries;
+4. the Tnc floor was missed by one thousandth.
+
+**The owner's decision.** Whether to record this as "recovered, with a
+disclosed threshold miss and three disclosed rule defects" or to leave it as
+"not recovered" is a retain/reject call, not a computation. The artefacts
+support either wording and the numbers do not change.
+
+### Claims from C1b, C1c and C1d
+
+| Claim | Status |
+|---|---|
+| The published reprogrammed fibroblast population is present as clusters 14 and 16 (1,080 cells, about 99% Red2Kras) with the fibrotic programme on a retained alveolar identity | Descriptive only; owner decision pending on whether this supersedes C1's "not recovered" |
+| Cluster 14 misses the pre-registered Tnc floor by 0.001 | Descriptive only (disclosed near-miss; the floor was not moved) |
+| The paper's reprogrammed-fibroblast marker set scores highest on smooth muscle, because Acta2 and Pdgfrb are mural markers | Descriptive only, and a caution for any future use of that set |
+| Fibrotic and inflammatory markers mark separate cells at 2 weeks (ratio 1.18 against a 1.25 threshold) | Descriptive only; supports the paper's distinctness claim by a different route |
+| The GSE316241 mesenchymal sort carries 6.5% off-target cells, including 184 Areg-high mutant epithelial cells almost entirely in the Red2Kras arm | Descriptive only; a practical caution for ligand-receptor reanalysis within that library |
+| The five Red2Kras-private clusters are not explained by low counts or doublets | Descriptive only (negative result) |

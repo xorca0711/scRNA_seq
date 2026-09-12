@@ -1,0 +1,114 @@
+{
+  "trial": "C1d what the mesenchymal sort actually contains (Gate 1 addendum)",
+  "rules_frozen_at": "2026-09-12T13:30:00+00:00",
+  "rules": {
+    "object": "the one trial C1b wrote; backed mode, marker columns only",
+    "provenance_of_these_rules": "fixed after C1b's top-gene table was seen, before any compartment detection was computed",
+    "compartments": {
+      "epithelial": [
+        "Epcam",
+        "Cdh1",
+        "Krt8",
+        "Krt18"
+      ],
+      "immune": [
+        "Ptprc"
+      ],
+      "endothelial": [
+        "Pecam1",
+        "Cdh5"
+      ],
+      "mesenchymal": [
+        "Col1a1",
+        "Col1a2",
+        "Dcn"
+      ],
+      "mesothelial": [
+        "Wt1",
+        "Msln",
+        "Upk3b"
+      ]
+    },
+    "off_target_rule": "more than 50% of a cluster's cells detect at least one epithelial or immune marker AND fewer than 50% detect Col1a1",
+    "mesothelium_note": "reported separately; the paper reports mesothelial-like cells as a genuine Red2Kras-enriched population",
+    "areg_reported_per_cluster": "because the consequence of an epithelial contaminant is specific to Areg",
+    "sort_as_deposited": "CD45-CD31-EpCAM- (GEO characteristics: mesenchymal cells)",
+    "unit": "the library; no P value"
+  },
+  "notes": "reads the object C1b wrote; fits nothing",
+  "inputs": [
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c1b_characterise_red2kras_private\\c1b_mesenchyme.h5ad",
+      "bytes": 135178233,
+      "modified": "2026-09-12T13:17:15+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1d_sort_purity\\c1d_sort_purity_by_cluster.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1d_sort_purity\\c1d_summary.md"
+  ],
+  "results": {
+    "markers_absent_from_the_reference": [],
+    "off_target_clusters": [
+      "8",
+      "10",
+      "11",
+      "12",
+      "15"
+    ],
+    "off_target_cells": 757,
+    "off_target_fraction_of_object": 0.0648,
+    "off_target_detail": [
+      {
+        "cluster": "8",
+        "n_cells": 79,
+        "fraction_Red2Kras": 0.747,
+        "reads_as": "immune",
+        "pct_Areg": 8.9
+      },
+      {
+        "cluster": "10",
+        "n_cells": 288,
+        "fraction_Red2Kras": 0.951,
+        "reads_as": "immune",
+        "pct_Areg": 17.7
+      },
+      {
+        "cluster": "11",
+        "n_cells": 184,
+        "fraction_Red2Kras": 0.989,
+        "reads_as": "epithelial",
+        "pct_Areg": 88.0
+      },
+      {
+        "cluster": "12",
+        "n_cells": 39,
+        "fraction_Red2Kras": 0.436,
+        "reads_as": "epithelial",
+        "pct_Areg": 69.2
+      },
+      {
+        "cluster": "15",
+        "n_cells": 167,
+        "fraction_Red2Kras": 0.874,
+        "reads_as": "immune",
+        "pct_Areg": 7.8
+      }
+    ]
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-12T13:30:06+00:00"
+}
