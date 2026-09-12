@@ -1,0 +1,5 @@
+library,ranking,top,areg_is_top,mean_Areg,mean_Ereg,mean_Hbegf,mean_Tgfa
+Expt1_2wRFPr1,Areg > Hbegf > Ereg > Tgfa,Areg,True,2.9211,0.9357,1.3555,0.2448
+Expt1_2wRFPr2,Areg > Hbegf > Ereg > Tgfa,Areg,True,2.8343,0.4922,1.2782,0.1
+Expt1_4dRFPr1,Areg > Hbegf > Ereg > Tgfa,Areg,True,2.5535,0.4417,0.5697,0.1824
+Expt1_4dRFPr2,Areg > Hbegf > Ereg > Tgfa,Areg,True,2.1185,0.5099,0.6746,0.2398

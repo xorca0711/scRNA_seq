@@ -301,12 +301,11 @@ labelled cells.
    be relocated physically, which would require re-pointing the generated
    human report and the validator's transitional-abundance checks.
 
-23. **Cardoso 2026 (Gate 2, paper 5) entered out of order; Gate 0 and Gate 1
-   are done and Gate 1 returned a negative result** (`Thesis/gate2_05_cardoso_2026/`,
-   2026-09-12, owner instruction). Session state at the time of writing is in
-   the handoff block below. Study note, extracted JSON and trials C0, C1, C1b
-   are complete; C1c is written but not run; C2 was running when the session
-   paused; C3 is written and not started.
+23. **Cardoso 2026 (Gate 2, paper 5) entered out of order; all eight trials
+   run** (`Thesis/gate2_05_cardoso_2026/`, 2026-09-12, owner instruction).
+   Gate 1 returned a negative result and stopped to characterise, as the gate
+   design requires; Gate 2 branches (a) and (b) then ran and both returned
+   positive results, while branch (d) is closed by the data.
    - **C0, the data reality check.** All five accessions are public and
      readable: GSE316241, GSE316243, GSE316244, GSE310335, and GSE247505
      (England et al. 2025, the companion paper whose epithelial cells the
@@ -352,36 +351,72 @@ labelled cells.
      those distinct populations and says the inflammatory cells lack Tnc and
      appear only from 4 weeks. C1c asks the per-cell co-detection question a
      cluster-level fraction cannot answer.
-   - **C3 (Gate 2a) is deliberately not a CellChat rerun.** CellChat is R-only
-     and this machine has no R; the trial re-derives the expression fact the
-     communication claim rests on, with the state defined by this
-     repository's clustering, a within-animal control and a time course, and
-     states in its own output what it is not.
+   - **C1c and C1d answered the open question and found a better one.**
+     Fibrotic and inflammatory markers mark separate cells at 2 weeks (9.7%
+     double-positive against 8.2% expected under independence), which supports
+     the paper's distinctness claim. C1d then explained the tumour-private
+     clusters by composition rather than quality: 6.5% of the mesenchymal
+     library reads as off-target for its own sort, including 184 mutant
+     epithelial cells that are 88% Areg-positive. The paper is unaffected, but
+     a reanalysis computing signalling inside that library alone would be.
+   - **C2, Gate 2b: the paper's epithelial result reproduces blind.**
+     DATP-like cells fall from 46.6% to 22.0% of RFP+ cells on Areg deletion
+     and AT2 rises from 29.2% to 59.1%, against the paper's 50.1 to 25.9 and
+     21.3 to 54.6. Four of five pre-registered directions are met (the fifth
+     unscorable), the DATP-like cluster is depleted 15.4-fold and alveolar
+     macrophages 9.4-fold. **What fails to collapse:** of the six genes in the
+     paper's fibrotic set, Tnc, Acta2, Fst and Runx2 fall while Pdgfrb and
+     Runx1 do not. C2b recomputes the two shares the confidence floor hid,
+     the same defect C1 disclosed.
+   - **C3, Gate 2a: every frozen test holds.** Areg is higher in the DATP-like
+     state than in AT2 cells in all four mutant libraries with the state
+     defined by our own clustering; the ligand order Areg > Hbegf > Ereg >
+     Tgfa is identical in all four, so **Hbegf ranks second**, ahead of the
+     ligand the paper followed into culture; the state is nearly absent from
+     wild-type clones of the same animals (0.08% and 1.1%). Replicate
+     libraries mix within every arm (1.53 to 1.80 against a threshold of 2.0),
+     so no batch correction was applied, by the rule rather than by
+     preference. **It is deliberately not a CellChat rerun**: CellChat is
+     R-only and this machine has no R, so the trial re-derives the expression
+     fact the communication claim rests on and states what it is not.
    - Status of every row: Descriptive only or Exploratory at best, by the
      replication constraint. Owner retain/reject review pending on all of it.
+     The two decisions that matter: whether cluster 14 is the published
+     population (claim C22), and whether the Hbegf lead (C33) is worth
+     pursuing.
 
 ---
 
-## Handoff: session of 2026-09-12, paused mid-run
+## Handoff: session of 2026-09-12
 
-Branch `Claude/cardoso-2026-gate0-gate1`, not yet merged. Nothing in
-`analysis/` was touched; all new material is under
-`Thesis/gate2_05_cardoso_2026/`.
+Branch `Claude/cardoso-2026-gate0-gate1`, [PR #10](https://github.com/xorca0711/scRNA_seq/pull/10),
+not merged. Nothing in `analysis/` was touched; all new material is under
+`Thesis/gate2_05_cardoso_2026/`. **All eight trials have run**; the trial
+plan, the claims register (rows C19 to C36), the root README claims table and
+DEVELOPMENT decision 18 are written.
 
-| Trial | State | How to resume |
-|---|---|---|
-| C0 | complete, artefacts written | re-run is idempotent, about 4 minutes |
-| C1 | complete | `python Thesis/gate2_05_cardoso_2026/trials/c1_fibroblast_compartment.py` |
-| C1b | complete; wrote `c1b_mesenchyme.h5ad` (gitignored) which later trials reuse | re-run reuses the object if present |
-| C1c | **written, not run** | `python Thesis/gate2_05_cardoso_2026/trials/c1c_fibrotic_inflammatory_overlap.py` (needs C1b's object; about 1 minute) |
-| C2 | **was running when the session paused**; check `Thesis/gate2_05_cardoso_2026/trials/c2_areg_deletion_arm/` for a finished `c2_summary.md` | re-run from the start if incomplete; about 40 minutes |
-| C3 | **written, not started** | `python Thesis/gate2_05_cardoso_2026/trials/c3_areg_state_specificity.py`; about 45 minutes |
+| Trial | Gate | State | Re-run |
+|---|---|---|---|
+| C0 | 0 | complete | idempotent, about 4 minutes |
+| C1 | 1 | complete, verdict not recovered | about 20 minutes |
+| C1b | 1 | complete; wrote `c1b_mesenchyme.h5ad` (gitignored) that C1c and C1d reuse | reuses the object if present |
+| C1c | 1 | complete | about 1 minute, needs C1b's object |
+| C1d | 1 | complete | about 1 minute, needs C1b's object |
+| C2 | 2b | complete | about 45 minutes |
+| C2b | 2b | complete | seconds; reads only C2's tracked tables |
+| C3 | 2a | complete | about 50 minutes |
 
-Still to write once C2 and C3 land: their sections of
-`Thesis/gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md` (C0 and C1 are already
-written there), the claims rows in `CLAIMS.md`, the root README claims table
-rows, and a DEVELOPMENT decision recording the two disclosed rule failures in
-C1.
+What is left is yours, not a computation: the retain/reject decisions listed
+in item 23, chiefly whether cluster 14 is to be called the published
+population, and whether the Hbegf lead (claim C33) is worth pursuing.
+
+Two trials that were considered and not run, each for a stated reason. Gate 2
+branch (d), the transcriptomic ordering of fibroblast against macrophage
+change, is closed because the deposit has no time course in those
+compartments. A CellChat rerun is impossible here because CellChat is R-only
+and this machine has no R; trial C3 re-derives the expression fact the
+communication claim rests on instead and states in its own output what it is
+not.
 
 Downloads added to `raw_data/` this session (gitignored, about 1.1 GB):
 GSE316241, GSE316243, GSE316244, GSE310335, GSE247505, each with its GEO SOFT

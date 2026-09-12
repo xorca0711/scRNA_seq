@@ -53,6 +53,38 @@ with the most potential is C13, because it turns the repository's
 persistent-state theme toward the immune compartment the target labs work
 on; the one with the least is C16, which this series cannot settle.
 
+## Stage 3. Cardoso 2026, the Gate 2 paper (2026-09-12)
+
+A different deposit with a different ceiling. Every mouse library of this
+paper pools three mice and each genotype contributes one library per sort, so
+**no genotype contrast in it carries within-group replication**: nothing in
+this section is tested, no P value is computed, and the highest status any row
+can reach is Descriptive only. The companion series GSE247505 is the
+exception, with two libraries per arm and three time points. Trials and their
+frozen rules: [`Thesis/gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md`](Thesis/gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md).
+Owner review pending on every row.
+
+| # | Claim | Analyses behind it | Artefact | Status | Potential |
+|---|---|---|---|---|---|
+| C19 | All five accessions are public and complete: 30 libraries, 123,807 barcodes, three gene spaces, one non-gene feature | trial C0: every library opened, design parsed from the GEO SOFT files | `trials/c0_data_reality_check/c0_library_inventory.csv` | Descriptive only | The precondition for everything else; also the row that names GSE247505, which the paper's data-availability statement omits. |
+| C20 | No genotype contrast in the deposit has within-group biological replication | trial C0: deposited design, three mice pooled per library | `trials/c0_data_reality_check/c0_deposited_design.csv` | Descriptive only | High as a methods statement. It is the reason every row below is Descriptive only, and it is the kind of constraint a reviewer checks first. |
+| C21 | The fibroblast-before-macrophage ordering cannot be tested from this deposit: every mesenchymal and immune library is one time point | trial C0 | same | Not established, and not establishable from these data | The honest closure of a branch, which is worth more than a weak answer to it. |
+| C22 | The published reprogrammed fibroblast subset is not recovered by the pre-registered rule; the population is nonetheless present as clusters 14 and 16 (1,080 cells, about 99% Red2Kras) | trials C1 and C1b: blind clustering, the paper's marker sets as the caller | `trials/c1_fibroblast_compartment/`, `trials/c1b_characterise_red2kras_private/` | Descriptive only; the wording is an owner decision | Moderate. The interesting half is why the rule failed, not that it did. |
+| C23 | The paper's reprogrammed-fibroblast marker set is maximised by smooth muscle, because Acta2 and Pdgfrb are mural markers; Runx1 additionally flags myeloid cells | trial C1b Question C | `trials/c1b_characterise_red2kras_private/c1b_question_c_gated_fibroblast_subclusters.csv` | Descriptive only | Yes. A reusable caution about a published marker set, and the kind of finding a marker-based pipeline is built to produce. |
+| C24 | Cluster 14 misses the pre-registered Tnc floor by 0.001 and the floor was not moved | trial C1b Question A | `trials/c1b_characterise_red2kras_private/c1b_question_a_published_signature.csv` | Descriptive only (disclosed near-miss) | As a curation-hygiene example, the counterpart of C7. |
+| C25 | Fibrotic and inflammatory markers mark separate cells at 2 weeks (9.7% double-positive against 8.2% expected under independence) | trial C1c: per-cell co-detection | `trials/c1c_fibrotic_inflammatory_overlap/c1c_overlap_by_group.csv` | Descriptive only | Moderate. It supports a paper claim by a route the paper did not use. |
+| C26 | The mesenchymal sort carries 6.5% off-target cells, including 184 mutant epithelial cells that are 88% Areg-positive, almost entirely in the tumour arm | trial C1d: compartment-marker detection per cluster | `trials/c1d_sort_purity/c1d_sort_purity_by_cluster.csv` | Descriptive only | High, and practical. Anyone computing ligand-receptor signalling inside that library alone would read a contaminant as the source. |
+| C27 | The paper's epithelial composition reproduces blind: DATP-like 46.6% to 22.0% and AT2 29.2% to 59.1% on Areg deletion, against the paper's 50.1 to 25.9 and 21.3 to 54.6 | trial C2: blind clustering of the RFP+ sort, labels never used | `trials/c2_areg_deletion_arm/c2_epithelial_composition.csv` | Descriptive only | High. The closest thing to a validation this deposit allows, and the figure a reader will look at first. |
+| C28 | Four of five pre-registered directions are met; the fifth is unscorable because the Cd177-positive state is not resolved | trials C2 and C2b | `trials/c2b_composition_without_the_confidence_floor/c2b_summary.md` | Descriptive only (rule revision disclosed) | Moderate, as the record of a metric that failed the same way twice and was disclosed both times. |
+| C29 | On Areg deletion, Tnc, Acta2, Fst and Runx2 fall while Pdgfrb and Runx1 do not | trial C2 Part B: detection fractions within the same series | `trials/c2_areg_deletion_arm/c2_fibrotic_programme_survival.csv` | Exploratory | The best new lead in this stage: the reprogrammed state may have an Areg-dependent matrix half and an Areg-independent Pdgfrb/Runx1 half. Needs a depth-matched control before it is more. |
+| C31 | Areg is higher in the DATP-like state than in AT2 cells in all four mutant libraries, with the state defined by this repository's clustering | trial C3: blind clustering of 33,217 cells, ten libraries, two replicates per arm | `trials/c3_areg_state_specificity/c3_T1_state_specificity.csv` | Descriptive only | High, and the best-replicated row in this stage. It is the paper's central expression claim, re-derived without its labels, with a within-animal control. |
+| C32 | Areg is the top EGFR ligand in that state in every mutant library, and the order Areg > Hbegf > Ereg > Tgfa is identical in all four | trial C3 | `trials/c3_areg_state_specificity/c3_T2_ligand_ranking.csv` | Descriptive only | High. The paper's top hit survives a change in how the state is defined, which is the sensitivity the owner asked for. |
+| C33 | Hbegf ranks second, ahead of Ereg, which is the ligand the paper followed into culture | trial C3 | same | Exploratory | The most testable lead of the session: a second EGFR ligand the paper did not pursue. |
+| C34 | The DATP-like state is nearly absent from wild-type clones of the same animals (0.08% at 4 days, 1.1% at 2 weeks) | trial C3 T3, the Red2Onco within-animal control | `trials/c3_areg_state_specificity/c3_T3_internal_control.csv` | Descriptive only | Moderate. A cleaner control than any between-genotype comparison this deposit offers. |
+| C35 | Replicate libraries mix within every arm (1.53 to 1.80 against a threshold of 2.0), so no batch correction is applied | trial C3, the repository batch rule exercised where replicates exist | `trials/c3_areg_state_specificity/c3_run_record.json` | Descriptive only (decision record) | Moderate, as the counterpart of C5 in a third dataset. |
+| C36 | Whether fibroblasts receive the Areg signal | no analysis; CellChat is R-only and unavailable here | none | Not established | None until a communication analysis is possible; stated so that no reader takes C31 to C33 for a communication result. |
+| C30 | Mesothelial cells are depleted 10.4-fold on Areg deletion | trial C2b cluster depletion | `trials/c2b_composition_without_the_confidence_floor/c2b_cluster_depletion.csv` | Exploratory | Moderate. The paper reports mesothelial-like cells as tumour-enriched but does not test their Areg dependence. |
+
 ## How to keep this register honest
 
 - Add a row only when a run record or decisions log exists for it.

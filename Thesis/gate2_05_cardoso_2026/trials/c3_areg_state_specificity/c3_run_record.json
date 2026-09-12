@@ -154,10 +154,261 @@
       "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890829_Expt1_ConfettiRFP_barcodes.tsv.gz",
       "bytes": 28317,
       "modified": "2023-10-29T00:10:28+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890830_Expt1_ConfettiYFP_matrix.mtx.gz",
+      "bytes": 26973401,
+      "modified": "2023-10-28T16:59:03+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890830_Expt1_ConfettiYFP_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-29T00:10:30+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890830_Expt1_ConfettiYFP_barcodes.tsv.gz",
+      "bytes": 32512,
+      "modified": "2023-10-29T00:10:29+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890831_Expt1_4dRFPr1_matrix.mtx.gz",
+      "bytes": 26521999,
+      "modified": "2023-10-28T17:03:48+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890831_Expt1_4dRFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:04:00+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890831_Expt1_4dRFPr1_barcodes.tsv.gz",
+      "bytes": 25637,
+      "modified": "2023-10-28T16:59:19+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890832_Expt1_4dRFPr2_matrix.mtx.gz",
+      "bytes": 12102992,
+      "modified": "2023-10-28T16:59:18+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890832_Expt1_4dRFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:02:16+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890832_Expt1_4dRFPr2_barcodes.tsv.gz",
+      "bytes": 11935,
+      "modified": "2023-10-28T17:02:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890833_Expt1_4dYFPr1_matrix.mtx.gz",
+      "bytes": 15271934,
+      "modified": "2023-10-28T17:05:22+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890833_Expt1_4dYFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:02:53+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890833_Expt1_4dYFPr1_barcodes.tsv.gz",
+      "bytes": 14240,
+      "modified": "2023-10-28T17:02:14+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890834_Expt1_4dYFPr2_matrix.mtx.gz",
+      "bytes": 22365893,
+      "modified": "2023-10-28T17:02:11+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890834_Expt1_4dYFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T16:59:17+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890834_Expt1_4dYFPr2_barcodes.tsv.gz",
+      "bytes": 18872,
+      "modified": "2023-10-28T17:04:01+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890835_Expt1_2wRFPr1_matrix.mtx.gz",
+      "bytes": 57244058,
+      "modified": "2023-10-28T17:01:30+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890835_Expt1_2wRFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T16:59:16+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890835_Expt1_2wRFPr1_barcodes.tsv.gz",
+      "bytes": 25854,
+      "modified": "2023-10-29T00:10:27+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890836_Expt1_2wRFPr2_matrix.mtx.gz",
+      "bytes": 42170324,
+      "modified": "2023-10-28T17:05:02+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890836_Expt1_2wRFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:02:17+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890836_Expt1_2wRFPr2_barcodes.tsv.gz",
+      "bytes": 23675,
+      "modified": "2023-10-28T17:03:58+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890837_Expt1_2wYFPr1_matrix.mtx.gz",
+      "bytes": 34359732,
+      "modified": "2023-10-28T16:59:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890837_Expt1_2wYFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:02:14+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890837_Expt1_2wYFPr1_barcodes.tsv.gz",
+      "bytes": 29972,
+      "modified": "2023-10-28T17:05:22+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890838_Expt1_2wYFPr2_matrix.mtx.gz",
+      "bytes": 14243603,
+      "modified": "2023-10-28T17:03:10+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890838_Expt1_2wYFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:03:59+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890838_Expt1_2wYFPr2_barcodes.tsv.gz",
+      "bytes": 13536,
+      "modified": "2023-10-28T17:02:15+00:00"
     }
   ],
-  "outputs": [],
-  "results": {},
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_qc_per_library.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_clusters.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_state_composition.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_ligand_expression.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_T1_state_specificity.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_T2_ligand_ranking.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_T3_internal_control.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_umap_states_time_areg.png",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_summary.md"
+  ],
+  "results": {
+    "cells_analysed_total": 33217,
+    "batch_decision": {
+      "same_library_enrichment_by_arm": {
+        "2w_RFP": 1.7387,
+        "2w_YFP": 1.5314,
+        "4d_RFP": 1.6197,
+        "4d_YFP": 1.8029
+      },
+      "worst": 1.8029,
+      "threshold": 2.0,
+      "correction_applied": false
+    },
+    "tests": {
+      "T1_state_specificity": {
+        "per_library": [
+          {
+            "library": "Expt1_2wRFPr1",
+            "areg_DATP_like": 2.9211,
+            "areg_AT2": 1.1283,
+            "higher_in_DATP": true
+          },
+          {
+            "library": "Expt1_2wRFPr2",
+            "areg_DATP_like": 2.8343,
+            "areg_AT2": 0.6862,
+            "higher_in_DATP": true
+          },
+          {
+            "library": "Expt1_4dRFPr1",
+            "areg_DATP_like": 2.5535,
+            "areg_AT2": 0.5353,
+            "higher_in_DATP": true
+          },
+          {
+            "library": "Expt1_4dRFPr2",
+            "areg_DATP_like": 2.1185,
+            "areg_AT2": 0.4935,
+            "higher_in_DATP": true
+          }
+        ],
+        "holds_in_all": true
+      },
+      "T2_ligand_ranking": [
+        {
+          "library": "Expt1_2wRFPr1",
+          "ranking": "Areg > Hbegf > Ereg > Tgfa",
+          "top": "Areg",
+          "areg_is_top": true,
+          "mean_Areg": 2.9211,
+          "mean_Ereg": 0.9357,
+          "mean_Hbegf": 1.3555,
+          "mean_Tgfa": 0.2448
+        },
+        {
+          "library": "Expt1_2wRFPr2",
+          "ranking": "Areg > Hbegf > Ereg > Tgfa",
+          "top": "Areg",
+          "areg_is_top": true,
+          "mean_Areg": 2.8343,
+          "mean_Ereg": 0.4922,
+          "mean_Hbegf": 1.2782,
+          "mean_Tgfa": 0.1
+        },
+        {
+          "library": "Expt1_4dRFPr1",
+          "ranking": "Areg > Hbegf > Ereg > Tgfa",
+          "top": "Areg",
+          "areg_is_top": true,
+          "mean_Areg": 2.5535,
+          "mean_Ereg": 0.4417,
+          "mean_Hbegf": 0.5697,
+          "mean_Tgfa": 0.1824
+        },
+        {
+          "library": "Expt1_4dRFPr2",
+          "ranking": "Areg > Hbegf > Ereg > Tgfa",
+          "top": "Areg",
+          "areg_is_top": true,
+          "mean_Areg": 2.1185,
+          "mean_Ereg": 0.5099,
+          "mean_Hbegf": 0.6746,
+          "mean_Tgfa": 0.2398
+        }
+      ],
+      "T3_internal_control": [
+        {
+          "timepoint": "4 days",
+          "median_pct_DATP_RFP": 14.66,
+          "median_pct_DATP_YFP": 0.08,
+          "higher_in_RFP": true
+        },
+        {
+          "timepoint": "2 weeks",
+          "median_pct_DATP_RFP": 25.84,
+          "median_pct_DATP_YFP": 1.14,
+          "higher_in_RFP": true
+        }
+      ],
+      "T4_time": {
+        "median_DATP_like_mean_Areg_by_timepoint": {
+          "2 weeks": 2.8777,
+          "4 days": 2.336
+        }
+      }
+    }
+  },
   "software": {
     "python": "3.12.13",
     "platform": "Windows-11-10.0.26200-SP0",
@@ -171,5 +422,6 @@
     "leidenalg": "0.12.0",
     "igraph": "1.0.0",
     "openpyxl": "3.1.5"
-  }
+  },
+  "finished_at": "2026-09-12T14:24:54+00:00"
 }

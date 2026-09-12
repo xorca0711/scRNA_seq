@@ -20,13 +20,14 @@ which carries two replicate libraries per arm and three time points.
 
 | Trial | Gate | Question | Status | Where |
 |---|---|---|---|---|
-| C0 | 0 | What is actually deposited, and what statistical unit can it carry? | run; Descriptive only | [`trials/c0_data_reality_check/`](trials/c0_data_reality_check/) |
+| C0 | 0 | What is actually deposited, and what statistical unit can it carry? | run; Descriptive only | [`trials/c0_data_reality_check/c0_summary.md`](trials/c0_data_reality_check/c0_summary.md) |
 | C1 | 1 | Does the Pdgfrb+Runx1+Tnc+ fibrotic fibroblast subset reproduce, and does it separate cleanly? | run; **not recovered** by the frozen rule | [`trials/c1_fibroblast_compartment/c1_summary.md`](trials/c1_fibroblast_compartment/c1_summary.md) |
 | C1b | 1 | Then what is there instead? (stop-and-characterise, plus a disclosed corrected pass) | run | [`trials/c1b_characterise_red2kras_private/c1b_summary.md`](trials/c1b_characterise_red2kras_private/c1b_summary.md) |
 | C1c | 1 | Are the fibrotic and inflammatory programmes in the same cells at 2 weeks? | run | [`trials/c1c_fibrotic_inflammatory_overlap/c1c_summary.md`](trials/c1c_fibrotic_inflammatory_overlap/c1c_summary.md) |
 | C1d | 1 | What does the mesenchymal sort actually contain? | run | [`trials/c1d_sort_purity/c1d_summary.md`](trials/c1d_sort_purity/c1d_summary.md) |
-| C2 | 2b | Does removing Areg collapse the niche, and does anything survive it? | running | [`trials/c2_areg_deletion_arm/`](trials/c2_areg_deletion_arm/) |
-| C3 | 2a | Is Areg a property of the DATP-like state under my own clustering, across the time course? | queued | [`trials/c3_areg_state_specificity.py`](trials/c3_areg_state_specificity.py) |
+| C2 | 2b | Does removing Areg collapse the niche, and does anything survive it? | run; 4 of 5 directions met | [`trials/c2_areg_deletion_arm/c2_summary.md`](trials/c2_areg_deletion_arm/c2_summary.md) |
+| C2b | 2b | The same composition, without the confidence floor that hid two directions | run | [`trials/c2b_composition_without_the_confidence_floor/c2b_summary.md`](trials/c2b_composition_without_the_confidence_floor/c2b_summary.md) |
+| C3 | 2a | Is Areg a property of the DATP-like state under my own clustering, across the time course? | run; every frozen test holds | [`trials/c3_areg_state_specificity/c3_summary.md`](trials/c3_areg_state_specificity/c3_summary.md) |
 | C-d | 2d | Does the transcriptome agree that fibroblast reprogramming precedes macrophage change? | **closed by C0, not run** | see below |
 
 ---
@@ -34,7 +35,7 @@ which carries two replicate libraries per arm and three time points.
 ## C0. Data reality check (Gate 0)
 
 Run on 2026-09-12. Script [`trials/c0_data_reality_check.py`](trials/c0_data_reality_check.py);
-artefacts in [`trials/c0_data_reality_check/`](trials/c0_data_reality_check/).
+artefacts in [`trials/c0_data_reality_check/c0_summary.md`](trials/c0_data_reality_check/c0_summary.md).
 
 ### Pre-registration
 
@@ -425,3 +426,78 @@ as part of the fibrotic programme at all.
 | Alveolar macrophages are depleted 9.4-fold and shift away from the inflammatory and toward the MHC-II profile | Descriptive only; matches Extended Data Fig. 10e in direction |
 | Tnc, Acta2, Fst and Runx2 fall on Areg deletion while Pdgfrb and Runx1 do not | Exploratory. The best new lead here, and it needs a depth-matched control before it is more than that |
 | Mesothelial cells are depleted 10.4-fold on Areg deletion | Exploratory; the paper reports mesothelial-like cells as Red2Kras-enriched but does not test their Areg dependence |
+
+---
+
+## C3. Is Areg a property of the DATP-like state (Gate 2a)
+
+Run on 2026-09-12. Script
+[`trials/c3_areg_state_specificity.py`](trials/c3_areg_state_specificity.py);
+artefacts in [`trials/c3_areg_state_specificity/`](trials/c3_areg_state_specificity/).
+33,217 cells from the ten Experiment 1 libraries of GSE247505.
+
+### What this trial is, and what it is not
+
+The owner's branch (a) asked whether Areg stays top when the DATP-like cluster
+is defined by our own clustering, what ranks below it, and whether the
+ranking holds across the time course. **CellChat itself cannot be run here**:
+it is an R package and this machine has no R, and a Python reimplementation
+would use a different ligand-receptor resource, so calling its output a
+CellChat rerun would be false. What the paper's communication claim rests on
+is an expression fact, that Areg is induced specifically in the DATP-like
+mutant state and is the top EGFR ligand there, and that fact is re-derived
+directly here with three things the paper's own analysis did not use: the
+state defined by this repository's clustering, the within-animal wild-type
+control that the Red2Onco design provides, and the time course. **No
+ligand-receptor probability is computed and nothing here shows that a
+fibroblast receives the signal.**
+
+### The batch rule, exercised properly for the first time in this deposit
+
+This is the only part of the Cardoso material with replicate libraries, so it
+is the only place where this repository's rule, that batch correction is
+decided from measured replicate mixing rather than assumed, can actually run.
+Same-library enrichment among the 30 nearest neighbours, within each arm:
+1.53, 1.62, 1.74 and 1.80 against the pipeline's failure threshold of 2.0.
+**No correction applied**, by the rule and not by preference.
+
+### Outcome: every frozen test holds
+
+**T1, state specificity.** Mean log1p(CP10K) Areg is higher in DATP-like cells
+than in AT2 cells in **all four** mutant libraries, at both time points, with
+the state defined by our own clustering rather than by the authors' labels:
+
+| Library | Areg in DATP-like | Areg in AT2 |
+|---|--:|--:|
+| 4 days, replicate 1 | 2.55 | 0.54 |
+| 4 days, replicate 2 | 2.12 | 0.49 |
+| 2 weeks, replicate 1 | 2.92 | 1.13 |
+| 2 weeks, replicate 2 | 2.83 | 0.69 |
+
+**T2, the ranking, including what the paper does not show.** In all four
+libraries the order is identical: **Areg > Hbegf > Ereg > Tgfa**. Areg is top
+everywhere, so the paper's headline survives a change in how the state is
+defined. The second place is the new part: **Hbegf**, consistently, and ahead
+of Ereg, which is the ligand the paper went on to test in culture alongside
+Areg. Hbegf is also an EGFR ligand, so this is a concrete and checkable
+prediction rather than a curiosity.
+
+**T3, the within-animal control.** The DATP-like share of cells is far higher
+in the mutant RFP clones than in the wild-type YFP clones of the same animals:
+14.7% against 0.08% at 4 days, and 25.8% against 1.1% at 2 weeks. The state
+is essentially absent from wild-type clones in the same lung, which is a
+cleaner control than any between-genotype comparison in this deposit.
+
+**T4, time.** The DATP-like Areg mean rises from 2.34 at 4 days to 2.88 at 2
+weeks. Two libraries per arm: a ranking, not a trend, and no test is computed.
+
+### Claims from C3
+
+| Claim | Status |
+|---|---|
+| Areg is higher in the DATP-like state than in AT2 cells in all four mutant libraries, with the state defined by this repository's clustering | Descriptive only, and the best-replicated result in this stage (two libraries per arm, two time points, within-animal control) |
+| Areg is the top EGFR ligand in the DATP-like state in every mutant library, and the ranking Areg > Hbegf > Ereg > Tgfa is identical in all four | Descriptive only. The paper's top hit survives a change of state definition. |
+| Hbegf ranks second, ahead of Ereg | Exploratory, and the most testable thing this stage produced: a second EGFR ligand the paper did not follow. |
+| The DATP-like state is nearly absent from wild-type clones in the same animals (0.08% and 1.1%) | Descriptive only |
+| Replicate libraries mix within every arm (1.53 to 1.80 against a threshold of 2.0), so no batch correction is applied | Descriptive only (a decision record, the counterpart of C5) |
+| Anything about whether fibroblasts receive this signal | Not established, and not establishable without a communication analysis this machine cannot run |

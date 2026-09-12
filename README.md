@@ -11,11 +11,14 @@ an answer key, to work on one question:
 > Which epithelial and immune-state programmes distinguish productive lung
 > repair from persistent remodelling after injury?
 
-Two series are analysed so far: a mouse injury time course (H1N1 is the
-injury model; the analysis reads cell states, niches, and macrophage and
-monocyte states, not the infection) and a human distal-lung reference.
-Further series are added one paper at a time along the roadmap in
-[`Thesis/`](Thesis/README.md). Material that is established elsewhere is
+Two series are analysed in full under [`analysis/`](analysis/LAYOUT.md): a
+mouse injury time course (H1N1 is the injury model; the analysis reads cell
+states, niches, and macrophage and monocyte states, not the infection) and a
+human distal-lung reference. Further series are added one paper at a time
+along the roadmap in [`Thesis/`](Thesis/README.md), where each paper owns a
+folder and its analyses sit beneath it; the most recent is a five-accession
+deposit on early tumour niches, read in gates under
+[`Thesis/gate2_05_cardoso_2026/`](Thesis/gate2_05_cardoso_2026/README.md). Material that is established elsewhere is
 displaced to [`archive/`](archive/DISPLACED.md) rather than extended here.
 
 ## Claims
@@ -39,6 +42,10 @@ reject decision in [`PROGRESS.md`](PROGRESS.md).
 | Exploratory | Interstitial macrophages keep rising through 90 dpi instead of resolving | [`myeloid_focus/`](analysis/GSE262927/myeloid_focus/README.md) |
 | Retracted-superseded | Scrublet over-removes AT0-like cells (refuted by a stricter gate; the refutation is kept) | [`docs/DOUBLETS_AND_SCRUBLET.md`](docs/DOUBLETS_AND_SCRUBLET.md) |
 | Not established | The marrow-inheritance and two-source checks on the rebuilt macrophage pool; the deposited cell-cycle call as a proliferation measure | [`amac_origin/`](analysis/GSE262927/myeloid_focus/amac_origin/README.md) |
+| Descriptive only, pending | In a second paper's deposit, deleting the ligand Areg reproduces the published epithelial collapse from a blind pipeline: the regenerative-like state falls from 46.6% to 22.0% of lineage-labelled cells while AT2 rises from 29.2% to 59.1% | [`Thesis/gate2_05_cardoso_2026/`](Thesis/gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md) |
+| Descriptive only, pending | Areg is the top EGFR ligand of that state in all four mutant libraries, with the order Areg, Hbegf, Ereg, Tgfa identical in every one, and the state is nearly absent from wild-type clones of the same animals | [`gate2_05_cardoso_2026/`](Thesis/gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md) |
+| Exploratory, pending | Four of the six genes in that paper's fibrotic marker set fall when the ligand is deleted, but Pdgfrb and Runx1 do not | [`gate2_05_cardoso_2026/`](Thesis/gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md) |
+| Not established | A pre-registered rule did not recover that paper's fibrotic fibroblast subset; the population is present, and the rule failed in four disclosed ways | [`gate2_05_cardoso_2026/`](Thesis/gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md) |
 | Displaced | The Krt8-high transitional trajectory and the human KRT8 reference panels are established elsewhere; artefacts stay, the narrative is archived | [`archive/DISPLACED.md`](archive/DISPLACED.md) |
 
 ![Mouse atlas UMAP](analysis/GSE262927/figures/umap/UMAP_leiden_clusters_sidelegend.png)

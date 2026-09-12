@@ -1,6 +1,6 @@
 {
   "trial": "C0 Cardoso 2026 data reality check (Gate 0)",
-  "rules_frozen_at": "2026-09-12T12:44:41+00:00",
+  "rules_frozen_at": "2026-09-12T14:25:39+00:00",
   "rules": {
     "accessions": {
       "GSE316241": "mesenchymal cells, Confetti and Red2Kras lungs (paper Fig. 1b-e)",
@@ -642,7 +642,9 @@
     "Thesis\\gate2_05_cardoso_2026\\trials\\c0_data_reality_check\\c0_deposited_design.csv",
     "Thesis\\gate2_05_cardoso_2026\\trials\\c0_data_reality_check\\c0_library_inventory.csv",
     "Thesis\\gate2_05_cardoso_2026\\trials\\c0_data_reality_check\\c0_marker_presence.csv",
-    "Thesis\\gate2_05_cardoso_2026\\trials\\c0_data_reality_check\\c0_gene_spaces.csv"
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c0_data_reality_check\\c0_gene_spaces.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c0_data_reality_check\\c0_accession_summary.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c0_data_reality_check\\c0_summary.md"
   ],
   "results": {
     "series_metadata": {
@@ -761,5 +763,5 @@
     "igraph": "1.0.0",
     "openpyxl": "3.1.5"
   },
-  "finished_at": "2026-09-12T12:48:52+00:00"
+  "finished_at": "2026-09-12T14:28:10+00:00"
 }
