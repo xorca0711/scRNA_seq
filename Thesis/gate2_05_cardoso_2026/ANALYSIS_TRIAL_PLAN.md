@@ -318,3 +318,110 @@ support either wording and the numbers do not change.
 | Fibrotic and inflammatory markers mark separate cells at 2 weeks (ratio 1.18 against a 1.25 threshold) | Descriptive only; supports the paper's distinctness claim by a different route |
 | The GSE316241 mesenchymal sort carries 6.5% off-target cells, including 184 Areg-high mutant epithelial cells almost entirely in the Red2Kras arm | Descriptive only; a practical caution for ligand-receptor reanalysis within that library |
 | The five Red2Kras-private clusters are not explained by low counts or doublets | Descriptive only (negative result) |
+
+---
+
+## C2 and C2b. The Areg deletion arm (Gate 2b)
+
+Run on 2026-09-12. Scripts
+[`trials/c2_areg_deletion_arm.py`](trials/c2_areg_deletion_arm.py) and
+[`trials/c2b_composition_without_the_confidence_floor.py`](trials/c2b_composition_without_the_confidence_floor.py);
+artefacts in [`trials/c2_areg_deletion_arm/`](trials/c2_areg_deletion_arm/)
+and [`trials/c2b_composition_without_the_confidence_floor/`](trials/c2b_composition_without_the_confidence_floor/).
+
+The owner's branch (b): does removing the ligand reproduce the collapse at
+transcriptome level, **and does anything fail to collapse**. The second half
+is the part the paper does not ask.
+
+### Pre-registration
+
+Processing identical to C1. The two sorts are embedded separately, because a
+joint embedding would confound sort with genotype. Five directions were taken
+from the paper *before* these data were opened, and each is recorded as met or
+not met: in Areg-flox/flox relative to Areg-flox/+, the reprogrammed
+fibroblast share falls, the DATP-like share falls, the Cd177-positive share
+falls, the AT2 share rises, and in alveolar macrophages the inflammatory genes
+fall while MHC-II genes rise. Part B, frozen separately: a gene of the
+fibrotic set is **Areg-independent** if its detection in flox/flox fibroblasts
+stays at or above 80% of its flox/+ value while also exceeding its Confetti
+value by at least 5 points.
+
+### Outcome: the paper's epithelial result reproduces blind
+
+| Population | Areg-flox/+ | Areg-flox/flox | The paper (Fig. 4m) |
+|---|--:|--:|---|
+| DATP-like | 46.6% | 22.0% | 50.1% to 25.9% |
+| AT2 | 29.2% | 59.1% | 21.3% to 54.6% |
+
+This is an independent pipeline, with the authors' labels never used, landing
+within a few points of the published composition on both populations. The
+single largest cluster effect is sharper than the share: the confidently
+called DATP-like cluster 1 holds 1,712 flox/+ cells against 111 flox/flox, a
+15.4-fold depletion.
+
+**Directions met: four of five, with the fifth unscorable.** Three were met in
+C2 as frozen (DATP-like falls, AT2 rises, and in 343 alveolar macrophages
+Cxcl2 and Ccl9 fall while H2-Ab1 and H2-Eb1 rise). Two returned 0.0% against
+0.0%, and for the same reason C1's rule defeated itself: the composition
+metric counted only clusters whose modal call holds at least 50% of their
+cells, and neither the reprogrammed fibroblast nor the Cd177-positive call
+ever clears that floor. That is not a measurement of absence.
+
+C2b recomputes the same shares with the floor removed, carrying the weakest
+mode fraction beside every number. The reprogrammed fibroblast share then
+falls from **27.2% to 20.1%**, so the direction is met; the Cd177-positive
+call is still unscorable, because no cluster carries it as a modal call at
+all, which is a statement about resolution rather than about the population.
+The cluster-level depletions are the stronger statement, and they run right
+through the paper's cascade:
+
+| Compartment | Cluster | Call | flox/+ | flox/flox | ratio |
+|---|---|---|--:|--:|--:|
+| RFP+ epithelium | 1 | DATP-like | 1,712 | 111 | 15.4 |
+| niche | 14 | mesothelium | 353 | 34 | 10.4 |
+| niche | 19 | alveolar macrophage | 310 | 33 | 9.4 |
+| niche | 17 | reprogrammed fibroblast | 210 | 45 | 4.7 |
+
+### What fails to collapse
+
+Of the six genes in the paper's own reprogrammed-fibroblast marker set, four
+fall when Areg is deleted and two do not:
+
+| Gene | flox/+ | flox/flox | verdict |
+|---|--:|--:|---|
+| Fst | 0.336 | 0.143 | collapses |
+| Runx2 | 0.175 | 0.069 | collapses |
+| Tnc | 0.183 | 0.138 | collapses |
+| Acta2 | 0.279 | 0.215 | collapses |
+| **Pdgfrb** | 0.452 | 0.389 | **survives** |
+| **Runx1** | 0.560 | 0.543 | **survives** |
+
+The matrix and contractile half of the programme is Areg-dependent; the
+Pdgfrb and Runx1 induction is not, or is much less so. The paper treats the
+reprogrammed fibroblast as one state that the Areg-EGFR axis initiates, and
+this says the state has at least two separable parts. Runx1 is the
+transcription factor the paper itself highlights, which makes its survival the
+more interesting half.
+
+**Three limits on that result, all of which bite.** It is one library per
+genotype, so this is a difference between two libraries. The Confetti baseline
+comes from the other series, which is shallower (median 1,824 to 2,111 genes
+per cell against 2,615 to 2,750 here), and a detection fraction rises with
+depth, so every cross-series comparison in the survival table is
+depth-confounded and the Confetti column should not be read as a quantitative
+baseline. Only the within-series flox/+ against flox/flox comparison, where
+the two libraries are of similar depth, carries the claim. Two of the four
+"Areg-independent" calls in the artefact, Pdgfra and Col13a1, are
+alveolar-identity genes that were in the comparison set and should not be read
+as part of the fibrotic programme at all.
+
+### Claims from C2 and C2b
+
+| Claim | Status |
+|---|---|
+| The paper's epithelial composition reproduces from a blind pipeline: DATP-like 46.6% to 22.0%, AT2 29.2% to 59.1%, against the paper's 50.1 to 25.9 and 21.3 to 54.6 | Descriptive only (one library per genotype), and the closest thing to a validation this deposit allows |
+| Four of the five pre-registered directions are met; the fifth is unscorable because the Cd177-positive state is not resolved at this resolution | Descriptive only |
+| The confidently called DATP-like cluster is depleted 15.4-fold in the Areg-deleted library | Descriptive only |
+| Alveolar macrophages are depleted 9.4-fold and shift away from the inflammatory and toward the MHC-II profile | Descriptive only; matches Extended Data Fig. 10e in direction |
+| Tnc, Acta2, Fst and Runx2 fall on Areg deletion while Pdgfrb and Runx1 do not | Exploratory. The best new lead here, and it needs a depth-matched control before it is more than that |
+| Mesothelial cells are depleted 10.4-fold on Areg deletion | Exploratory; the paper reports mesothelial-like cells as Red2Kras-enriched but does not test their Areg dependence |

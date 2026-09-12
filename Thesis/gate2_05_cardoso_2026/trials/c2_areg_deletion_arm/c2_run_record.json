@@ -1,0 +1,317 @@
+{
+  "trial": "C2 Areg deletion arm: does the niche collapse, and what survives (Gate 2b)",
+  "rules_frozen_at": "2026-09-12T13:21:11+00:00",
+  "rules": {
+    "accessions": [
+      "GSE316244 (primary)",
+      "GSE316241 (Part B comparison only)"
+    ],
+    "design_constraint": "one library per genotype per sort, three mice pooled per library, one time point; directions are read, nothing is tested, no P value",
+    "processing": "identical to trial C1 (MAD QC, Scrublet, log1p CP10K, seurat_v3 2000 HVG, 30 PCs, k 30, Leiden igraph 0.5/0.2/1.0, seeds 0)",
+    "batch_correction": "none; library is genotype",
+    "non_gene_feature": "BSD removed from the matrix and carried per cell as a sort check",
+    "sorts_processed_separately": true,
+    "population_sets": {
+      "niche": {
+        "alveolar fibroblast": [
+          "Pdgfra",
+          "Col13a1",
+          "Tcf21",
+          "Npnt",
+          "Scube2"
+        ],
+        "adventitial fibroblast": [
+          "Col14a1",
+          "Pi16",
+          "Dcn"
+        ],
+        "reprogrammed fibroblast": [
+          "Tnc",
+          "Fst",
+          "Runx1",
+          "Runx2",
+          "Acta2",
+          "Pdgfrb"
+        ],
+        "peri-bronchial fibroblast": [
+          "Csmd1",
+          "Hhip",
+          "Fgf18"
+        ],
+        "smooth muscle": [
+          "Acta2",
+          "Myh11",
+          "Thsd4"
+        ],
+        "pericyte": [
+          "Pdgfrb",
+          "Cspg4",
+          "Postn"
+        ],
+        "mesothelium": [
+          "Wt1",
+          "Msln",
+          "Aqp1"
+        ],
+        "proliferating": [
+          "Mki67",
+          "Birc5"
+        ],
+        "alveolar macrophage": [
+          "Itgax",
+          "Siglecf",
+          "Pparg",
+          "Mertk",
+          "Car4"
+        ],
+        "reprogrammed alveolar macrophage": [
+          "Msr1",
+          "Cdh1",
+          "Ch25h",
+          "Ear6",
+          "Fstl1"
+        ],
+        "monocyte/interstitial macrophage": [
+          "Itgam",
+          "Ly6c2",
+          "Ccr2",
+          "Cx3cr1",
+          "Mmp19"
+        ]
+      },
+      "epithelium": {
+        "AT2": [
+          "Sftpc",
+          "Etv5",
+          "Lamp3"
+        ],
+        "Cd177_positive": [
+          "Cd177",
+          "Cd38",
+          "Dlk1"
+        ],
+        "DATP_like": [
+          "Cldn4",
+          "Itga2",
+          "Ndrg1",
+          "Sox9"
+        ],
+        "cycling": [
+          "Mki67",
+          "Birc5"
+        ],
+        "AT1_like": [
+          "Ager",
+          "Hopx",
+          "Clic5"
+        ]
+      }
+    },
+    "pre_registered_directions": {
+      "reprogrammed_fibroblast_share_falls_in_hom": {
+        "paper": "9.2% in flox/+, below the 5% display floor in flox/flox"
+      },
+      "DATP_like_share_falls_in_hom": {
+        "paper": "Fig. 4m"
+      },
+      "Cd177_positive_share_falls_in_hom": {
+        "paper": "Fig. 4m"
+      },
+      "AT2_share_rises_in_hom": {
+        "paper": "Fig. 4m"
+      },
+      "AM_inflammatory_falls_and_MHCII_rises_in_hom": {
+        "paper": "Extended Data Fig. 10e",
+        "inflammatory": [
+          "Cxcl2",
+          "Ccl6",
+          "Ccl9"
+        ],
+        "mhc_ii": [
+          "H2-Ab1",
+          "H2-Eb1",
+          "Cd74"
+        ]
+      }
+    },
+    "areg_independent_definition": {
+      "retains_at_least_fraction_of_het": 0.8,
+      "exceeds_confetti_by_at_least_points": 5.0
+    },
+    "part_b_confounds": [
+      "CellRanger 8.0.0 versus 7.2.0",
+      "mesenchyme-only versus 1:1 mesenchyme and immune sort",
+      "three versus two tamoxifen doses"
+    ],
+    "unit": "the library"
+  },
+  "notes": "rules frozen before any matrix was read",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_matrix.mtx.gz",
+      "bytes": 90730416,
+      "modified": "2026-01-11T03:33:45+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_barcodes.tsv.gz",
+      "bytes": 43844,
+      "modified": "2026-01-11T03:20:36+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447780_Expt3_Hom_niche_matrix.mtx.gz",
+      "bytes": 116617964,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447780_Expt3_Hom_niche_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T02:48:36+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447780_Expt3_Hom_niche_barcodes.tsv.gz",
+      "bytes": 55076,
+      "modified": "2026-01-11T03:20:36+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447781_Expt3_Het_RFP_matrix.mtx.gz",
+      "bytes": 105272210,
+      "modified": "2026-01-11T03:21:03+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447781_Expt3_Het_RFP_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:19:16+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447781_Expt3_Het_RFP_barcodes.tsv.gz",
+      "bytes": 38296,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447782_Expt3_Hom_RFP_matrix.mtx.gz",
+      "bytes": 87727125,
+      "modified": "2026-01-11T03:37:29+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447782_Expt3_Hom_RFP_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:33:21+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447782_Expt3_Hom_RFP_barcodes.tsv.gz",
+      "bytes": 36066,
+      "modified": "2026-01-11T02:47:28+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447763_Expt1_Confetti_mesenchyme_matrix.mtx.gz",
+      "bytes": 52860433,
+      "modified": "2026-01-11T02:17:34+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447763_Expt1_Confetti_mesenchyme_features.tsv.gz",
+      "bytes": 290896,
+      "modified": "2026-01-11T01:17:10+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447763_Expt1_Confetti_mesenchyme_barcodes.tsv.gz",
+      "bytes": 33630,
+      "modified": "2026-01-11T02:17:34+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447764_Expt1_Red2Kras_mesenchyme_matrix.mtx.gz",
+      "bytes": 53490101,
+      "modified": "2026-01-11T00:51:08+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447764_Expt1_Red2Kras_mesenchyme_features.tsv.gz",
+      "bytes": 290896,
+      "modified": "2026-01-11T01:18:50+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447764_Expt1_Red2Kras_mesenchyme_barcodes.tsv.gz",
+      "bytes": 35390,
+      "modified": "2026-01-11T01:17:10+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c2_areg_deletion_arm\\c2_qc_per_library.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c2_areg_deletion_arm\\c2_niche_clusters.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c2_areg_deletion_arm\\c2_fibroblast_subclusters.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c2_areg_deletion_arm\\c2_fibroblast_composition.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c2_areg_deletion_arm\\c2_epithelial_clusters.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c2_areg_deletion_arm\\c2_epithelial_composition.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c2_areg_deletion_arm\\c2_alveolar_macrophage_detection.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c2_areg_deletion_arm\\c2_fibrotic_programme_survival.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c2_areg_deletion_arm\\c2_umaps.png",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c2_areg_deletion_arm\\c2_summary.md"
+  ],
+  "results": {
+    "pre_registered_directions_outcome": {
+      "reprogrammed_fibroblast_share_falls_in_hom": {
+        "flox_plus_pct": 0.0,
+        "flox_flox_pct": 0.0,
+        "direction_met": false
+      },
+      "DATP_like_share_falls_in_hom": {
+        "flox_plus_pct": 46.62,
+        "flox_flox_pct": 21.99,
+        "direction_met": true
+      },
+      "Cd177_positive_share_falls_in_hom": {
+        "flox_plus_pct": 0.0,
+        "flox_flox_pct": 0.0,
+        "direction_met": false
+      },
+      "AT2_share_rises_in_hom": {
+        "flox_plus_pct": 29.24,
+        "flox_flox_pct": 59.08,
+        "direction_met": true
+      },
+      "AM_inflammatory_falls_and_MHCII_rises_in_hom": {
+        "evaluable": true,
+        "n_cells": 343,
+        "inflammatory_genes_falling_in_hom": [
+          "Cxcl2",
+          "Ccl9"
+        ],
+        "mhc_ii_genes_rising_in_hom": [
+          "H2-Ab1",
+          "H2-Eb1"
+        ],
+        "direction_met": true
+      }
+    },
+    "areg_independent_genes": [
+      "Col13a1",
+      "Pdgfra",
+      "Pdgfrb",
+      "Runx1"
+    ],
+    "collapsing_genes": [
+      "Acta2",
+      "Fst",
+      "Runx2",
+      "Tnc"
+    ]
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-12T13:39:37+00:00"
+}
