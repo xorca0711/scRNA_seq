@@ -1,0 +1,158 @@
+{
+  "trial": "C1b characterise the Red2Kras-private mesenchymal structure (Gate 1)",
+  "rules_frozen_at": "2026-09-12T13:08:12+00:00",
+  "rules": {
+    "accession": "GSE316241",
+    "provenance_of_these_rules": "fixed after C1's cluster-level table was seen and before any per-cell data was read in this trial; the same disclosure trial S4 made",
+    "c1_rule_that_defeated_itself": "C1 selected fibroblasts by confident call; every cluster called reprogrammed fibroblast fell below the 50% confidence floor, so the selection removed the candidates the test was about",
+    "rebuild": "identical code path to C1 (QC, Scrublet, features, seeds), so cluster numbering matches",
+    "question_A": {
+      "red2kras_fraction_min": 0.8,
+      "required_detection": 0.4,
+      "required_genes": [
+        "Tnc",
+        "Acta2"
+      ],
+      "either_of": [
+        "Pdgfrb",
+        "Runx1"
+      ]
+    },
+    "question_B": {
+      "private_if_red2kras_fraction_at_least": 0.9,
+      "low_count_ambient_like": "median counts and genes both below half the object medians",
+      "doublet_enriched": "median Scrublet score above the object's 90th percentile"
+    },
+    "question_C": {
+      "gate": {
+        "positive": [
+          "Col1a1"
+        ],
+        "negative": [
+          "Ptprc",
+          "Pecam1",
+          "Epcam"
+        ]
+      },
+      "then": "re-embed with C1 parameters and re-apply C1's recovery test unchanged",
+      "status": "post hoc, disclosed; does not replace C1's outcome"
+    },
+    "top_genes": "Wilcoxon, a ranking device for interpretation only",
+    "unit": "the library; no P value"
+  },
+  "notes": "rules fixed after C1's cluster table was seen; stated in the rules",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447763_Expt1_Confetti_mesenchyme_matrix.mtx.gz",
+      "bytes": 52860433,
+      "modified": "2026-01-11T02:17:34+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447763_Expt1_Confetti_mesenchyme_features.tsv.gz",
+      "bytes": 290896,
+      "modified": "2026-01-11T01:17:10+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447763_Expt1_Confetti_mesenchyme_barcodes.tsv.gz",
+      "bytes": 33630,
+      "modified": "2026-01-11T02:17:34+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447764_Expt1_Red2Kras_mesenchyme_matrix.mtx.gz",
+      "bytes": 53490101,
+      "modified": "2026-01-11T00:51:08+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447764_Expt1_Red2Kras_mesenchyme_features.tsv.gz",
+      "bytes": 290896,
+      "modified": "2026-01-11T01:18:50+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447764_Expt1_Red2Kras_mesenchyme_barcodes.tsv.gz",
+      "bytes": 35390,
+      "modified": "2026-01-11T01:17:10+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1b_characterise_red2kras_private\\c1b_marker_detection_by_cluster.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1b_characterise_red2kras_private\\c1b_question_a_published_signature.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1b_characterise_red2kras_private\\c1b_question_b_red2kras_private.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1b_characterise_red2kras_private\\c1b_top_genes_by_cluster.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1b_characterise_red2kras_private\\c1b_cluster_characterisation.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1b_characterise_red2kras_private\\c1b_question_c_gated_fibroblast_subclusters.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1b_characterise_red2kras_private\\c1b_umap_characterisation.png",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1b_characterise_red2kras_private\\c1b_summary.md"
+  ],
+  "results": {
+    "cells": 11690,
+    "question_A": {
+      "any_cluster_matches_published_signature": false,
+      "qualifying_clusters": []
+    },
+    "question_B": {
+      "object_median_counts": 4530.0,
+      "object_median_genes": 2076.0,
+      "doublet_p90": 0.0732,
+      "private_clusters": [
+        {
+          "cluster": "4",
+          "n_cells": 331,
+          "fraction_Red2Kras": 0.988,
+          "quality_verdict": "not explained by quality"
+        },
+        {
+          "cluster": "10",
+          "n_cells": 288,
+          "fraction_Red2Kras": 0.951,
+          "quality_verdict": "not explained by quality"
+        },
+        {
+          "cluster": "11",
+          "n_cells": 184,
+          "fraction_Red2Kras": 0.989,
+          "quality_verdict": "not explained by quality"
+        },
+        {
+          "cluster": "14",
+          "n_cells": 937,
+          "fraction_Red2Kras": 0.996,
+          "quality_verdict": "not explained by quality"
+        },
+        {
+          "cluster": "16",
+          "n_cells": 143,
+          "fraction_Red2Kras": 0.965,
+          "quality_verdict": "not explained by quality"
+        }
+      ]
+    },
+    "question_C_gate": {
+      "cells_passing": 8431,
+      "fraction_of_object": 0.7212
+    },
+    "question_C_retest": {
+      "subcluster": "7",
+      "red2kras_fraction": 0.521,
+      "red2kras_fraction_passes": false,
+      "tnc_detection": 0.264,
+      "tnc_detection_passes": false,
+      "has_highest_reprogrammed_score": true,
+      "recovered": false
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-12T13:20:42+00:00"
+}

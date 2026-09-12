@@ -112,13 +112,37 @@ Benchmark framework used by the HLCA:
 **Luecken MD, Buttner M, Chaichoompu K, et al.** *Benchmarking atlas-level data integration in single-cell genomics.*
 **Nature Methods** 2022;19(1):41-50. DOI: [10.1038/s41592-021-01336-8](https://doi.org/10.1038/s41592-021-01336-8) · PMID [34949812](https://pubmed.ncbi.nlm.nih.gov/34949812/) · PMC [PMC8748196](https://pmc.ncbi.nlm.nih.gov/articles/PMC8748196/)
 
+### Gate 2, paper 5: early fibrotic niches in lung tumour initiation
+
+**Cardoso EC, Lee H, England FJ, Cho H, Lu R, Varankar SS, Park MS, Rekhtman N, Koo B-K, Simons BD, Choi J, Lee J-H.**
+*Early fibrotic niches establish tumour-permissive microenvironments.*
+**Nature** 2026;653(8113):254-264.
+DOI: [10.1038/s41586-026-10399-6](https://doi.org/10.1038/s41586-026-10399-6) · PMID [42020743](https://pubmed.ncbi.nlm.nih.gov/42020743/) · PMC [PMC13149335](https://pmc.ncbi.nlm.nih.gov/articles/PMC13149335/) · Licence: CC BY 4.0
+Data: GEO [GSE316241](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316241) (mesenchyme) · [GSE316243](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316243) (immune and stroma) · [GSE316244](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316244) (Areg-flox arm) · [GSE310335](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310335) (human alveolar organoids)
+Study note: [`Thesis/gate2_05_cardoso_2026/README.md`](Thesis/gate2_05_cardoso_2026/README.md)
+
+**The companion paper its communication analysis depends on**, and the source of the
+lineage-labelled mutant epithelial cells that analysis uses. The Nature paper's data-availability
+statement does not name this accession; it is reached through reference 7.
+
+**England FJ, Bordeu I, Ng M-E, Bang J, Kim B, Choi J, Cardoso EC, Koo B-K, Simons BD, Lee J-H.**
+*Sustained NF-κB activation allows mutant alveolar stem cells to co-opt a regeneration program for tumor initiation.*
+**Cell Stem Cell** 2025;32(3):375-390.e9.
+DOI: [10.1016/j.stem.2025.01.011](https://doi.org/10.1016/j.stem.2025.01.011) · PMID [39978341](https://pubmed.ncbi.nlm.nih.gov/39978341/) · PMC [PMC13432921](https://pmc.ncbi.nlm.nih.gov/articles/PMC13432921/)
+Data: GEO [GSE247505](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247505)
+
+**Datasets the Nature paper re-analyses**, both public and both checked on 2026-09-12:
+Tsukui T, et al. *Collagen-producing lung cell atlas identifies multiple subsets with distinct localization and relevance to fibrosis.* **Nature Communications** 2020;11:1920.
+DOI: [10.1038/s41467-020-15647-5](https://doi.org/10.1038/s41467-020-15647-5) · GEO [GSE132771](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE132771) (the bleomycin-injury comparison).
+Kim N, et al. *Single-cell RNA sequencing demonstrates the molecular and cellular reprogramming of metastatic lung adenocarcinoma.* **Nature Communications** 2020;11:2285.
+DOI: [10.1038/s41467-020-16164-1](https://doi.org/10.1038/s41467-020-16164-1) · GEO [GSE131907](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131907) (the early-stage human LUAD comparison).
+
 ### The remaining roadmap papers (no study note yet)
 
 | Order | Gate | Paper | DOI | PMID |
 |--:|---|---|---|---|
 | 2 | 1 | Choi J, et al. Inflammatory signals induce AT2 cell-derived damage-associated transient progenitors that mediate alveolar regeneration. *Cell Stem Cell* 2020 | [10.1016/j.stem.2020.06.020](https://doi.org/10.1016/j.stem.2020.06.020) | 32750316 |
 | 3 | 1 | Nabhan AN, et al. Single-cell Wnt signaling niches maintain stemness of alveolar type 2 cells. *Science* 2018 | [10.1126/science.aam6603](https://doi.org/10.1126/science.aam6603) | 29420258 |
-| 5 | 2 | Cardoso, Lee, et al. Early fibrotic niches establish tumour-permissive microenvironments. *Nature* 2026 | [10.1038/s41586-026-10399-6](https://doi.org/10.1038/s41586-026-10399-6) | 42020743 |
 | 6 | 2 | Nabhan AN, et al. Targeted alveolar regeneration with Frizzled-specific agonists. *Cell* 2023 | [10.1016/j.cell.2023.05.022](https://doi.org/10.1016/j.cell.2023.05.022) | 37321220 |
 | 7 | 3A | Saxton RA, et al. Structure-based decoupling of the pro- and anti-inflammatory functions of interleukin-10. *Science* 2021 | [10.1126/science.abc8433](https://doi.org/10.1126/science.abc8433) | 33737461 |
 | 8 | 3A | Saxton RA, et al. The tissue protective functions of interleukin-22 can be decoupled from pro-inflammatory actions through structure-based design. *Immunity* 2021 | [10.1016/j.immuni.2021.03.008](https://doi.org/10.1016/j.immuni.2021.03.008) | 33852830 |

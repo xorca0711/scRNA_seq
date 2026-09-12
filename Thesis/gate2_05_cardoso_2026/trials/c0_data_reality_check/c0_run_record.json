@@ -1,0 +1,765 @@
+{
+  "trial": "C0 Cardoso 2026 data reality check (Gate 0)",
+  "rules_frozen_at": "2026-09-12T12:44:41+00:00",
+  "rules": {
+    "accessions": {
+      "GSE316241": "mesenchymal cells, Confetti and Red2Kras lungs (paper Fig. 1b-e)",
+      "GSE316243": "immune and stromal cells, Confetti and Red2Kras lungs (paper Fig. 1f-h)",
+      "GSE316244": "Areg-flox arm: niche and RFP+ mutant epithelium (paper Fig. 4d-m)",
+      "GSE310335": "human KRAS-G12D alveolar organoids (paper Fig. 5f-h)",
+      "GSE247505": "England 2025: RFP+ lineage-labelled mutant epithelium, the CellChat partner"
+    },
+    "non_gene_feature_rule": "identifier not matching ^ENS[A-Z]*G\\d+ is removed from the matrix and carried per cell",
+    "species_rule": "higher mean detection of the mouse or human probe panel; under 0.10 mean detection reported as unclear",
+    "qc": "measured only (total counts, genes, pct mito/ribo/haemoglobin), reported as per-library medians; no filtering",
+    "gene_space_rule": "identical ordered (ensembl_id, symbol) list",
+    "presence_rule": "fraction of cells with a non-zero count; a presence measure, not abundance, not a cell-type call",
+    "replicate_rule": "the mouse is the biological replicate; a library pooling several mice carries no within-group replication; independent animals behind a contrast are counted as libraries, never as pooled mice and never as cells",
+    "probe_panels": {
+      "mouse": [
+        "Sftpc",
+        "Epcam",
+        "Ptprc",
+        "Col1a1",
+        "Pecam1",
+        "Actb",
+        "Cd68",
+        "Krt8"
+      ],
+      "human": [
+        "SFTPC",
+        "EPCAM",
+        "PTPRC",
+        "COL1A1",
+        "PECAM1",
+        "ACTB",
+        "CD68",
+        "KRT8"
+      ]
+    },
+    "marker_panels": {
+      "mouse": {
+        "alveolar fibroblast (Fig. 1d)": [
+          "Pdgfra",
+          "Col13a1",
+          "Tcf21",
+          "Npnt",
+          "Scube2"
+        ],
+        "adventitial fibroblast (Fig. 1d)": [
+          "Col14a1",
+          "Pi16",
+          "Dcn"
+        ],
+        "reprogrammed/fibrotic fibroblast (Fig. 1d)": [
+          "Tnc",
+          "Fst",
+          "Runx1",
+          "Runx2",
+          "Acta2",
+          "Pdgfrb"
+        ],
+        "inflammatory fibroblast (ED Fig. 4l-m)": [
+          "Lcn2",
+          "Saa3",
+          "Sfrp1",
+          "Cxcl12"
+        ],
+        "alveolar macrophage (Fig. 1h)": [
+          "Itgax",
+          "Siglec5",
+          "Siglecf",
+          "Pparg",
+          "Mertk",
+          "Car4"
+        ],
+        "reprogrammed AM (Fig. 1h)": [
+          "Msr1",
+          "Cdh1",
+          "Ch25h",
+          "Ear6",
+          "Fstl1",
+          "Cxcl2"
+        ],
+        "monocyte/IM (Fig. 1h)": [
+          "Itgam",
+          "Ly6c2",
+          "Ccr2",
+          "Cx3cr1",
+          "Mmp19"
+        ],
+        "Tnc-TLR4 axis (ED Fig. 4d)": [
+          "Tnc",
+          "Tlr4"
+        ],
+        "EGF axis (ED Fig. 5f-h)": [
+          "Areg",
+          "Ereg",
+          "Hbegf",
+          "Tgfa",
+          "Egfr"
+        ],
+        "fibroblast-to-epithelium (ED Fig. 5i-j)": [
+          "Wnt5a",
+          "Igf1",
+          "Spp1"
+        ],
+        "mutant epithelial states (Fig. 4l)": [
+          "Sftpc",
+          "Etv5",
+          "Lamp3",
+          "Cd177",
+          "Cldn4",
+          "Itga2",
+          "Ndrg1",
+          "Sox9",
+          "Mki67",
+          "Ager",
+          "Hopx"
+        ],
+        "compartment": [
+          "Epcam",
+          "Ptprc",
+          "Col1a1",
+          "Pecam1"
+        ]
+      },
+      "human": {
+        "human organoid states (Fig. 5h)": [
+          "SFTPC",
+          "NAPSA",
+          "NKX2-1",
+          "SCGB1A1",
+          "SCGB3A2",
+          "SCGB3A1",
+          "SFTPB",
+          "KRT18",
+          "LAMP3",
+          "LPCAT1",
+          "KRAS",
+          "KRT8",
+          "ITGA2",
+          "ITGB4",
+          "HMGA2",
+          "SOX9",
+          "CDKN2A",
+          "CDKN2B",
+          "AREG",
+          "HBEGF",
+          "TIMP1",
+          "TGFB1",
+          "NFKB2",
+          "MKI67"
+        ],
+        "compartment": [
+          "EPCAM",
+          "PTPRC",
+          "COL1A1",
+          "PECAM1"
+        ]
+      }
+    }
+  },
+  "notes": "rules frozen before any matrix was read; the deposited design is parsed from the GEO SOFT family files, not transcribed",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_family.soft.gz",
+      "bytes": 3396,
+      "modified": "2026-09-12T12:42:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316243\\GSE316243_family.soft.gz",
+      "bytes": 3284,
+      "modified": "2026-09-12T12:42:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_family.soft.gz",
+      "bytes": 3697,
+      "modified": "2026-09-12T12:42:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310335\\GSE310335_family.soft.gz",
+      "bytes": 3582,
+      "modified": "2026-09-12T12:42:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_family.soft.gz",
+      "bytes": 3940,
+      "modified": "2026-09-12T12:42:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447763_Expt1_Confetti_mesenchyme_matrix.mtx.gz",
+      "bytes": 52860433,
+      "modified": "2026-01-11T02:17:34+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447763_Expt1_Confetti_mesenchyme_features.tsv.gz",
+      "bytes": 290896,
+      "modified": "2026-01-11T01:17:10+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447763_Expt1_Confetti_mesenchyme_barcodes.tsv.gz",
+      "bytes": 33630,
+      "modified": "2026-01-11T02:17:34+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447764_Expt1_Red2Kras_mesenchyme_matrix.mtx.gz",
+      "bytes": 53490101,
+      "modified": "2026-01-11T00:51:08+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447764_Expt1_Red2Kras_mesenchyme_features.tsv.gz",
+      "bytes": 290896,
+      "modified": "2026-01-11T01:18:50+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447764_Expt1_Red2Kras_mesenchyme_barcodes.tsv.gz",
+      "bytes": 35390,
+      "modified": "2026-01-11T01:17:10+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316243\\GSE316243_RAW\\GSM9447777_Expt2_Confetti_niche_matrix.mtx.gz",
+      "bytes": 14088863,
+      "modified": "2026-01-11T02:24:56+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316243\\GSE316243_RAW\\GSM9447777_Expt2_Confetti_niche_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2026-01-11T02:35:25+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316243\\GSE316243_RAW\\GSM9447777_Expt2_Confetti_niche_barcodes.tsv.gz",
+      "bytes": 24051,
+      "modified": "2026-01-11T02:47:27+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316243\\GSE316243_RAW\\GSM9447778_Expt2_Red2Kras_niche_matrix.mtx.gz",
+      "bytes": 16998725,
+      "modified": "2026-01-11T02:46:19+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316243\\GSE316243_RAW\\GSM9447778_Expt2_Red2Kras_niche_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2026-01-11T02:35:07+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316243\\GSE316243_RAW\\GSM9447778_Expt2_Red2Kras_niche_barcodes.tsv.gz",
+      "bytes": 18131,
+      "modified": "2026-01-11T02:47:28+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_matrix.mtx.gz",
+      "bytes": 90730416,
+      "modified": "2026-01-11T03:33:45+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_barcodes.tsv.gz",
+      "bytes": 43844,
+      "modified": "2026-01-11T03:20:36+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447780_Expt3_Hom_niche_matrix.mtx.gz",
+      "bytes": 116617964,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447780_Expt3_Hom_niche_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T02:48:36+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447780_Expt3_Hom_niche_barcodes.tsv.gz",
+      "bytes": 55076,
+      "modified": "2026-01-11T03:20:36+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447781_Expt3_Het_RFP_matrix.mtx.gz",
+      "bytes": 105272210,
+      "modified": "2026-01-11T03:21:03+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447781_Expt3_Het_RFP_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:19:16+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447781_Expt3_Het_RFP_barcodes.tsv.gz",
+      "bytes": 38296,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447782_Expt3_Hom_RFP_matrix.mtx.gz",
+      "bytes": 87727125,
+      "modified": "2026-01-11T03:37:29+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447782_Expt3_Hom_RFP_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:33:21+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447782_Expt3_Hom_RFP_barcodes.tsv.gz",
+      "bytes": 36066,
+      "modified": "2026-01-11T02:47:28+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310335\\GSE310335_SIGAE_matrix.mtx.gz",
+      "bytes": 86470563,
+      "modified": "2026-09-12T11:54:00+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310335\\GSE310335_SIGAE_features.tsv.gz",
+      "bytes": 333437,
+      "modified": "2026-09-12T11:53:50+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310335\\GSE310335_SIGAE_barcodes.tsv.gz",
+      "bytes": 32396,
+      "modified": "2026-09-12T11:53:48+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310335\\GSE310335_SIGAF_matrix.mtx.gz",
+      "bytes": 62610798,
+      "modified": "2026-09-12T11:54:09+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310335\\GSE310335_SIGAF_features.tsv.gz",
+      "bytes": 333437,
+      "modified": "2026-09-12T11:54:02+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310335\\GSE310335_SIGAF_barcodes.tsv.gz",
+      "bytes": 17539,
+      "modified": "2026-09-12T11:54:01+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890829_Expt1_ConfettiRFP_matrix.mtx.gz",
+      "bytes": 25829046,
+      "modified": "2023-10-28T17:02:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890829_Expt1_ConfettiRFP_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-29T00:10:29+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890829_Expt1_ConfettiRFP_barcodes.tsv.gz",
+      "bytes": 28317,
+      "modified": "2023-10-29T00:10:28+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890830_Expt1_ConfettiYFP_matrix.mtx.gz",
+      "bytes": 26973401,
+      "modified": "2023-10-28T16:59:03+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890830_Expt1_ConfettiYFP_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-29T00:10:30+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890830_Expt1_ConfettiYFP_barcodes.tsv.gz",
+      "bytes": 32512,
+      "modified": "2023-10-29T00:10:29+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890831_Expt1_4dRFPr1_matrix.mtx.gz",
+      "bytes": 26521999,
+      "modified": "2023-10-28T17:03:48+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890831_Expt1_4dRFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:04:00+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890831_Expt1_4dRFPr1_barcodes.tsv.gz",
+      "bytes": 25637,
+      "modified": "2023-10-28T16:59:19+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890832_Expt1_4dRFPr2_matrix.mtx.gz",
+      "bytes": 12102992,
+      "modified": "2023-10-28T16:59:18+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890832_Expt1_4dRFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:02:16+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890832_Expt1_4dRFPr2_barcodes.tsv.gz",
+      "bytes": 11935,
+      "modified": "2023-10-28T17:02:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890833_Expt1_4dYFPr1_matrix.mtx.gz",
+      "bytes": 15271934,
+      "modified": "2023-10-28T17:05:22+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890833_Expt1_4dYFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:02:53+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890833_Expt1_4dYFPr1_barcodes.tsv.gz",
+      "bytes": 14240,
+      "modified": "2023-10-28T17:02:14+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890834_Expt1_4dYFPr2_matrix.mtx.gz",
+      "bytes": 22365893,
+      "modified": "2023-10-28T17:02:11+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890834_Expt1_4dYFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T16:59:17+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890834_Expt1_4dYFPr2_barcodes.tsv.gz",
+      "bytes": 18872,
+      "modified": "2023-10-28T17:04:01+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890835_Expt1_2wRFPr1_matrix.mtx.gz",
+      "bytes": 57244058,
+      "modified": "2023-10-28T17:01:30+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890835_Expt1_2wRFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T16:59:16+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890835_Expt1_2wRFPr1_barcodes.tsv.gz",
+      "bytes": 25854,
+      "modified": "2023-10-29T00:10:27+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890836_Expt1_2wRFPr2_matrix.mtx.gz",
+      "bytes": 42170324,
+      "modified": "2023-10-28T17:05:02+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890836_Expt1_2wRFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:02:17+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890836_Expt1_2wRFPr2_barcodes.tsv.gz",
+      "bytes": 23675,
+      "modified": "2023-10-28T17:03:58+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890837_Expt1_2wYFPr1_matrix.mtx.gz",
+      "bytes": 34359732,
+      "modified": "2023-10-28T16:59:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890837_Expt1_2wYFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:02:14+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890837_Expt1_2wYFPr1_barcodes.tsv.gz",
+      "bytes": 29972,
+      "modified": "2023-10-28T17:05:22+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890838_Expt1_2wYFPr2_matrix.mtx.gz",
+      "bytes": 14243603,
+      "modified": "2023-10-28T17:03:10+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890838_Expt1_2wYFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:03:59+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890838_Expt1_2wYFPr2_barcodes.tsv.gz",
+      "bytes": 13536,
+      "modified": "2023-10-28T17:02:15+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890839_Expt2_ConfettiRFPr1_matrix.mtx.gz",
+      "bytes": 11603216,
+      "modified": "2023-10-28T10:52:53+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890839_Expt2_ConfettiRFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:41+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890839_Expt2_ConfettiRFPr1_barcodes.tsv.gz",
+      "bytes": 11154,
+      "modified": "2023-10-28T10:52:39+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890840_Expt2_ConfettiRFPr2_matrix.mtx.gz",
+      "bytes": 11599478,
+      "modified": "2023-10-28T10:53:09+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890840_Expt2_ConfettiRFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:55+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890840_Expt2_ConfettiRFPr2_barcodes.tsv.gz",
+      "bytes": 15246,
+      "modified": "2023-10-28T10:52:53+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890841_Expt2_2wRFP_hetr1_matrix.mtx.gz",
+      "bytes": 8131954,
+      "modified": "2023-10-28T10:52:30+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890841_Expt2_2wRFP_hetr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:19+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890841_Expt2_2wRFP_hetr1_barcodes.tsv.gz",
+      "bytes": 5731,
+      "modified": "2023-10-28T10:52:18+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890842_Expt2_2wRFP_hetr2_matrix.mtx.gz",
+      "bytes": 7662079,
+      "modified": "2023-10-28T10:52:17+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890842_Expt2_2wRFP_hetr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:08+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890842_Expt2_2wRFP_hetr2_barcodes.tsv.gz",
+      "bytes": 5661,
+      "modified": "2023-10-28T10:52:06+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890843_Expt2_2wRFP_homr1_matrix.mtx.gz",
+      "bytes": 7778365,
+      "modified": "2023-10-28T10:52:48+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890843_Expt2_2wRFP_homr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:38+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890843_Expt2_2wRFP_homr1_barcodes.tsv.gz",
+      "bytes": 5907,
+      "modified": "2023-10-28T10:52:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890844_Expt2_2wRFP_homr2_matrix.mtx.gz",
+      "bytes": 5509906,
+      "modified": "2023-10-28T10:52:38+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890844_Expt2_2wRFP_homr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:31+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890844_Expt2_2wRFP_homr2_barcodes.tsv.gz",
+      "bytes": 4609,
+      "modified": "2023-10-28T10:52:30+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890845_Expt2_12wRFP_hetr1_matrix.mtx.gz",
+      "bytes": 13654790,
+      "modified": "2023-10-28T10:51:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890845_Expt2_12wRFP_hetr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:50+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890845_Expt2_12wRFP_hetr1_barcodes.tsv.gz",
+      "bytes": 14600,
+      "modified": "2023-10-28T10:52:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890846_Expt2_12wRFP_hetr2_matrix.mtx.gz",
+      "bytes": 12347245,
+      "modified": "2023-10-28T10:51:34+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890846_Expt2_12wRFP_hetr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:51+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890846_Expt2_12wRFP_hetr2_barcodes.tsv.gz",
+      "bytes": 11971,
+      "modified": "2023-10-28T10:52:50+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890847_Expt2_12wRFP_homr1_matrix.mtx.gz",
+      "bytes": 13240161,
+      "modified": "2023-10-28T10:52:05+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890847_Expt2_12wRFP_homr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:57+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890847_Expt2_12wRFP_homr1_barcodes.tsv.gz",
+      "bytes": 12516,
+      "modified": "2023-10-28T10:52:56+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890848_Expt2_12wRFP_homr2_matrix.mtx.gz",
+      "bytes": 10400499,
+      "modified": "2023-10-28T10:51:50+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890848_Expt2_12wRFP_homr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:53+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890848_Expt2_12wRFP_homr2_barcodes.tsv.gz",
+      "bytes": 11162,
+      "modified": "2023-10-28T10:52:52+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c0_data_reality_check\\c0_deposited_design.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c0_data_reality_check\\c0_library_inventory.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c0_data_reality_check\\c0_marker_presence.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c0_data_reality_check\\c0_gene_spaces.csv"
+  ],
+  "results": {
+    "series_metadata": {
+      "GSE316241": {
+        "Series_title": [
+          "Early fibrotic niches establish tumour-permissive microenvironments [Experiment 1]"
+        ],
+        "Series_status": [
+          "Public on Feb 24 2026"
+        ],
+        "Series_pubmed_id": [
+          "42020743"
+        ],
+        "Series_overall_design": [
+          "At 2 weeks post three doses of tamoxifen induction (0.2 mg/gbw) every other day, lung tissues were collected and mesenchymal cells (CD45\u2013CD31\u2013EpCAM\u2013) were isolated from SftpcCreERT2; Confetti and Sftpc-CreERT2; Red2Kras mice. Cells from three mice of the same genotype were pooled into a single cell suspension to generate two separate libraries (1 x Confetti and 1 x Red2Kras), which were sequenced via 10x Genomics using Illumina Novaseq X 1.5B."
+        ],
+        "Series_platform_id": [
+          "GPL34328"
+        ]
+      },
+      "GSE316243": {
+        "Series_title": [
+          "Early fibrotic niches establish tumour-permissive microenvironments [Experiment 2]"
+        ],
+        "Series_status": [
+          "Public on Feb 24 2026"
+        ],
+        "Series_pubmed_id": [
+          "42020743"
+        ],
+        "Series_overall_design": [
+          "At 2 weeks post three doses of tamoxifen induction (0.2 mg/gbw) every other day, lung tissues were collected and stromal cells (1:1 mixture of immune cells (CD45+) and both endothelial and mesenchyme cells (CD45\u2013EpCAM\u2013)) were isolated from Sftpc-CreERT2; Confetti and Sftpc-CreERT2; Red2Kras mice. Cells from three mice of the same genotype were pooled into a single cell suspension to generate two separate libraries (1 x Confetti and 1 x Red2Kras). Libraries were generated as described above and sequenced using the Illumina NovaSeq 6000."
+        ],
+        "Series_platform_id": [
+          "GPL24247"
+        ]
+      },
+      "GSE316244": {
+        "Series_title": [
+          "Early fibrotic niches establish tumour-permissive microenvironments [Experiment 3]"
+        ],
+        "Series_status": [
+          "Public on Feb 24 2026"
+        ],
+        "Series_pubmed_id": [
+          "42020743"
+        ],
+        "Series_overall_design": [
+          "At 2 weeks post two doses of tamoxifen induction (0.2 mg/gbw) every other day, lung tissues were collected from Sftpc-CreERT2; Red2Kras; Aregflox/+ and Sftpc-CreERT2; Red2Kras; Aregflox/flox animals. Lungs from three mice of the same genotype were dissociated and pooled into a single-cell suspension. Lineage-labelled epithelial cells (EpCAM+RFP+) and a mixed population of mesenchymal and immune cells (1:1 ratio of mesenchymal cells (CD45\u2013CD31\u2013EpCAM\u2013) and immune cells (CD45+CD31\u2013EpCAM\u2013)) were then sorted. For each genotype, two separate libraries were generated, resulting in a total of four libraries (2 x Aregflox/+ and 2 x Aregflox/flox). Libraries were sequenced using Illumina Novaseq 6000."
+        ],
+        "Series_platform_id": [
+          "GPL24247"
+        ]
+      },
+      "GSE310335": {
+        "Series_title": [
+          "Early fibrotic niches establish tumour-permissive microenvironments"
+        ],
+        "Series_status": [
+          "Public on Feb 25 2026"
+        ],
+        "Series_pubmed_id": [
+          "42020743"
+        ],
+        "Series_overall_design": [
+          "Human AT2 cell\u2013derived lung organoids from healthy transplant donors were analysed under two conditions: SITTE11 (Control organoids) and SITTF11 (KRASG12D-transduced organoids). Single-cell RNA sequencing using the 10x Genomics Chromium platform was performed to compare gene expression profiles and identify early fibrotic niche formation and cross-compartmental remodelling induced by KRASG12D activation."
+        ],
+        "Series_platform_id": [
+          "GPL24676"
+        ]
+      },
+      "GSE247505": {
+        "Series_title": [
+          "Sustained NF-kB activation allows mutant alveolar stem cells to co-opt a regeneration program for tumor initiation"
+        ],
+        "Series_status": [
+          "Public on Feb 19 2025"
+        ],
+        "Series_pubmed_id": [
+          "39978341"
+        ],
+        "Series_overall_design": [
+          "Refer to individual Series"
+        ],
+        "Series_platform_id": [
+          "GPL24247"
+        ]
+      }
+    },
+    "libraries_total": 30,
+    "cells_total_deposited": 123807,
+    "species_calls_agree_with_expectation": true,
+    "distinct_gene_spaces": 3,
+    "non_gene_features_found": [
+      "BSD"
+    ],
+    "libraries_per_accession": {
+      "GSE247505": 20,
+      "GSE310335": 2,
+      "GSE316241": 2,
+      "GSE316243": 2,
+      "GSE316244": 4
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-12T12:48:52+00:00"
+}

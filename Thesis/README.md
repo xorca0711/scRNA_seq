@@ -6,7 +6,9 @@ folder holding (1) a study note in the roadmap's five-question format
 bridge), (2) any parameters or decision criteria extracted from the paper as
 reviewable JSON, and (3) the analysis trial that paper motivates, with its
 pre-registered plan, its logged outcome, and its negative results. Folders
-are added one at a time in the order below, which is the ordered paper
+are added one at a time in the order below, with one exception recorded in the
+table: paper 5 (Cardoso 2026) was entered on the owner's instruction of
+2026-09-12, ahead of papers 2, 3 and 6. The order below is the ordered paper
 roadmap of the owner's Notion page
 [UC Berkeley SAP PI Target Map](https://app.notion.com/p/3d1151616b44814c8697ff3af2f8f831)
 (gates 1, 2, 3A, 3B). The same table is machine-readable in
@@ -29,7 +31,7 @@ remodelling after inflammatory injury?
 | 2 | 1 | Choi et al. 2020, *Cell Stem Cell* | [10.1016/j.stem.2020.06.020](https://doi.org/10.1016/j.stem.2020.06.020) | 32750316 | biological spine: IL-1beta/HIF1alpha-driven AT2 to DATP to AT1 transition | not started | not started | not started |
 | 3 | 1 | Nabhan et al. 2018, *Science* | [10.1126/science.aam6603](https://doi.org/10.1126/science.aam6603) | 29420258 | fibroblast Wnt niches maintain AT2 stemness; niche exit permits AT1 differentiation | not started | not started | not started |
 | 4 | 1 | Sikkema et al. 2023, *Nature Medicine* (HLCA) | [10.1038/s41591-023-02327-2](https://doi.org/10.1038/s41591-023-02327-2) | 37291214 | reference framework: annotation hierarchy, reference mapping, uncertainty handling, donor coverage, shared profibrotic macrophage states | [`gate1_04_sikkema_2023_hlca/`](gate1_04_sikkema_2023_hlca/README.md) | done, owner review pending | S1 to S5 run (Descriptive only); see [`ANALYSIS_TRIAL_PLAN.md`](gate1_04_sikkema_2023_hlca/ANALYSIS_TRIAL_PLAN.md) |
-| 5 | 2 | Cardoso, Lee et al. 2026, *Nature* | [10.1038/s41586-026-10399-6](https://doi.org/10.1038/s41586-026-10399-6) | 42020743 | early fibrotic niches; regenerative-like mutant AT2 states coordinate fibroblast and immune remodelling through AREG-EGFR | not started | not started | not started |
+| 5 | 2 | Cardoso, Lee et al. 2026, *Nature* | [10.1038/s41586-026-10399-6](https://doi.org/10.1038/s41586-026-10399-6) | 42020743 | early fibrotic niches; regenerative-like mutant AT2 states coordinate fibroblast and immune remodelling through AREG-EGFR | [`gate2_05_cardoso_2026/`](gate2_05_cardoso_2026/README.md) | done, owner review pending | C0 to C3 run 2026-09-12; Gate 1 returned **not recovered** and stopped to characterise: [`ANALYSIS_TRIAL_PLAN.md`](gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md) |
 | 6 | 2 | Nabhan et al. 2023, *Cell* | [10.1016/j.cell.2023.05.022](https://doi.org/10.1016/j.cell.2023.05.022) | 37321220 | Frizzled-specific Wnt agonists separate regeneration from fibrotic risk; receptor-specific Wnt modules | not started | not started | not started |
 | 7 | 3A | Saxton et al. 2021, *Science* | [10.1126/science.abc8433](https://doi.org/10.1126/science.abc8433) | 33737461 | structure-based decoupling of IL-10 pro- and anti-inflammatory functions | not started | not started | not started |
 | 8 | 3A | Saxton et al. 2021, *Immunity* | [10.1016/j.immuni.2021.03.008](https://doi.org/10.1016/j.immuni.2021.03.008) | 33852830 | IL-22 tissue-protective vs pro-inflammatory functions decoupled | not started | not started | not started |
