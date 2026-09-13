@@ -1,0 +1,52 @@
+{
+  "trial": "E5 figure for the C29 refutation",
+  "rules_frozen_at": "2026-09-13T05:36:20+00:00",
+  "rules": {
+    "sources": "only the tracked tables of trials C5 and E4; nothing is refitted",
+    "left_panel": "detection kept after Areg deletion, per cent of Areg-flox/+, from C2 via C5",
+    "right_panel": "detection in bleomycin and untreated Col1a1-GFP mesenchyme, per animal, from E4",
+    "argument": "a gene retained after Areg deletion that also rises with injury alone is not evidence of a tumour-specific signal",
+    "fail_closed": "the figure is refused if the retained tier is no longer Runx1 and Pdgfrb",
+    "unit": "one library per genotype on the left; one animal per library, two per group, on the right"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c5_figures_for_the_three_findings\\c5_fibrotic_retention.csv",
+      "bytes": 402,
+      "modified": "2026-09-13T03:35:56+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\e4_bleomycin_fibrotic_genes\\e4_detection_by_library.csv",
+      "bytes": 606,
+      "modified": "2026-09-13T05:13:39+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e5_figure_for_the_refutation\\e5_retention_against_injury.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e5_figure_for_the_refutation\\e5_retention_against_injury.png",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e5_figure_for_the_refutation\\e5_summary.md"
+  ],
+  "results": {
+    "retained_and_injury_generic": [
+      "Runx1",
+      "Pdgfrb"
+    ],
+    "injury_generic_count": 5
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T05:36:24+00:00"
+}

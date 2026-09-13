@@ -480,6 +480,11 @@ and the reason is mundane: one untreated library reaches 0.423, which is what a
 smooth-muscle contribution to a Col1a1-GFP sort looks like, and is the same
 contamination pattern trial C1b found in the Cardoso sort.
 
+The figure for this is [`trials/e5_figure_for_the_refutation/e5_retention_against_injury.png`](trials/e5_figure_for_the_refutation/e5_retention_against_injury.png),
+and drawing it sharpened the point: five of the six genes are injury-generic,
+not only the retained pair, so the tiers carry no tumour-specific information
+rather than merely having an innocent explanation for their top two.
+
 Against that, Pdgfra and Col13a1 fall with bleomycin in both replicates, which
 is the loss of alveolar fibroblast identity Tsukui et al. describe and is a
 useful sign that the trial is reading real injury biology rather than noise.

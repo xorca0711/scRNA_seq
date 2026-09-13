@@ -749,6 +749,30 @@ of the cell types that carry them rather than of the injury.
 | EGFR sits in the mesenchyme in human fibrosis, as in the mouse, and in the epithelium in adenocarcinoma | Descriptive only; receptor placement tracks disease rather than species |
 | AREG or HBEGF is enriched in fibrotic lung relative to control | Not established; 24 of 37 cell types with median differences near 0.02, unpaired and not depth-matched |
 
+### E5: the one figure the E series earns
+
+Script [`trials/e5_figure_for_the_refutation.py`](trials/e5_figure_for_the_refutation.py);
+figure [`trials/e5_figure_for_the_refutation/e5_retention_against_injury.png`](trials/e5_figure_for_the_refutation/e5_retention_against_injury.png).
+Reads only the tracked tables of C5 and E4 and refuses to draw if the retained
+tier is no longer Runx1 and Pdgfrb.
+
+The refutation is a two-panel argument that a table hides. On the left, how
+much detection each of the six genes keeps after Areg deletion. On the right,
+what bleomycin alone does to the same genes in mesenchyme with no oncogene.
+Drawing it sharpened the claim in a way worth recording: five of the six genes
+are injury-generic, not only the retained pair, so the tiers carry no
+tumour-specific information at all rather than merely having an innocent
+explanation for their top two. The figure's first headline said the surviving
+genes are the ones injury turns on, which implied a correspondence the panels
+do not show, and was replaced.
+
+Acta2 is the instructive exception in both panels. It sits just under the
+frozen 80 per cent line on the left and is the one gene that fails the
+injury-generic rule on the right, because the two untreated animals disagree
+across a range of 0.297 to 0.423. That spread is a smooth-muscle contribution
+to a Col1a1-GFP sort, the same contamination trial C1b found in the Cardoso
+mesenchymal sort, and it is drawn rather than averaged away.
+
 ### Claims from E1, E1b and E4
 
 | Claim | Class |
