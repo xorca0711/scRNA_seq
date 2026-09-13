@@ -1,0 +1,7 @@
+series,library,group,n_gated,median_genes_per_cell,det_Fst,det_Runx2,double_positive_share,expected_if_independent,ratio,permutation_p,n_double_positive,ratio_shallow,ratio_deep,depth_shift,depth_control_passes
+GSE316244,Expt3_Het_niche,Areg-flox/+,2751,3637.0,0.3635,0.2185,0.1378,0.0794,1.7348,0.005,379,1.4906,1.4302,0.0605,True
+GSE316244,Expt3_Hom_niche,Areg-flox/flox,3700,3612.0,0.1324,0.06,0.0065,0.0079,0.8163,0.9453,24,0.6704,0.8419,0.1715,True
+GSE132771,Bleo1_GFPp,bleomycin,2443,1799.0,0.1375,0.0336,0.0131,0.0046,2.8374,0.005,32,1.1354,2.2363,1.1009,False
+GSE132771,Bleo2_GFPp,bleomycin,2056,1938.0,0.1717,0.0452,0.018,0.0078,2.3172,0.01,37,2.2377,1.7855,0.4521,False
+GSE132771,UT1_GFPp,untreated,2355,1563.0,0.0318,0.0025,0.0,0.0001,0.0,1.0,0,0.0,0.0,0.0,True
+GSE132771,UT2_GFPp,untreated,1913,1653.0,0.0314,0.0031,0.0,0.0001,0.0,1.0,0,0.0,0.0,0.0,True

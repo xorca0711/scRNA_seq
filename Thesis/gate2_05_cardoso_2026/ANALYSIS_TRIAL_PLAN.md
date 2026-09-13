@@ -947,3 +947,138 @@ claim.
 | Whole-profile rank correlation can name an epithelial state | Refuted by its own margin: 0.415 between compartments, 0.0056 between states |
 | The Areg-independent tier is a discrete subpopulation of fibroblasts | Not established; co-detection ratio 1.099 inside the independence band, and the mixture test that disagreed is uninformative on a zero-inflated score |
 | Areg deletion removes a co-expressing Fst and Runx2 set rather than reducing one programme evenly | Exploratory, post hoc, and resting on 24 double-positive cells in one library |
+
+---
+
+## C9. The Fst and Runx2 population, pre-registered (2026-09-13)
+
+Script [`trials/c9_the_fst_runx2_population.py`](trials/c9_the_fst_runx2_population.py);
+artefacts in [`trials/c9_the_fst_runx2_population/`](trials/c9_the_fst_runx2_population/).
+This is the pre-registered version of trial C8's one post hoc observation, run
+on the owner's instruction.
+
+The trial separated an answerable question from an unanswerable one up front.
+Answerable: does a co-expressing Fst and Runx2 fibroblast population exist in
+an independent injury dataset with more than one animal, and what else marks
+it. Unanswerable, and stated rather than approximated: whether Areg deletion
+depletes it, because the Cardoso deposit has one library per genotype and no
+other Areg-flox fibroblast dataset exists.
+
+Six libraries, all gated by the same compartment rule used in C6 and C8: the
+two GSE316244 niche libraries and the four GSE132771 Col1a1-GFP libraries.
+
+### The headline verdict, and why it cannot be taken at face value
+
+The script reports T1 as failing, and that verdict stands in the record. It is
+not, however, a fair description of what the data did, and the reason is a
+defect in how the rules were written rather than anything in the result.
+
+**T1 and T5 were not composable.** T1's criterion, as written in the
+pre-registration, is a co-detection ratio of at least 1.25 together with a
+permutation p below 0.05, in both bleomycin libraries. T5, written separately,
+says a ratio that moves by more than 0.25 across a median depth split is
+depth-driven and is not read. Both fired. The ratios are 2.84 and 2.32 with
+permutation p of 0.005 and 0.010, so T1's own criterion is met; the depth
+shifts are 1.10 and 0.45, so T5 says the ratio those criteria rest on must not
+be read. A rule whose test depends on a quantity another rule forbids reading
+cannot be evaluated, and the implementation resolved that by bundling the depth
+control into T1 and calling it a failure. That is the conservative branch, so
+it is the one that stands, but the pre-registered reading attached to it, "the
+observation does not replicate", is simply not what happened. The threshold was
+not moved and the verdict was not rewritten; what follows is what the numbers
+actually support.
+
+### What replicates, and what does not
+
+| Library | Group | Gated cells | Fst | Runx2 | Double positive | Ratio | Permutation p | Depth shift |
+|---|---|--:|--:|--:|--:|--:|--:|--:|
+| Expt3_Het_niche | Areg-flox/+ | 2,751 | 0.364 | 0.219 | 379 | 1.73 | 0.005 | 0.06 |
+| Expt3_Hom_niche | Areg-flox/flox | 3,700 | 0.132 | 0.060 | 24 | 0.82 | 0.945 | 0.17 |
+| Bleo1_GFPp | bleomycin | 2,443 | 0.138 | 0.034 | 32 | 2.84 | 0.005 | 1.10 |
+| Bleo2_GFPp | bleomycin | 2,056 | 0.172 | 0.045 | 37 | 2.32 | 0.010 | 0.45 |
+| UT1_GFPp | untreated | 2,355 | 0.032 | 0.003 | 0 | 0.00 | 1.000 | 0.00 |
+| UT2_GFPp | untreated | 1,913 | 0.031 | 0.003 | 0 | 0.00 | 1.000 | 0.00 |
+
+**Above-chance co-occurrence replicates across animals.** The permutation null
+permutes the Runx2 indicator within deciles of genes per cell, so it holds
+depth structure fixed by construction. It gives p = 0.005 and p = 0.010 in the
+two bleomycin animals, both below the frozen line, in a dataset with no
+oncogene anywhere. That is the part of the C8 observation that survives, and it
+survives in the injury comparison the paper itself used.
+
+**The size of the effect does not replicate and should not be quoted.** The
+ratios are 2.84 and 2.32, but they move by 1.10 and 0.45 across the median
+depth split, far outside the 0.25 limit. The cause is almost certainly not
+depth dependence: there are 32 and 37 double-positive cells in these
+libraries, so halving them leaves about sixteen cells per half and the ratio
+estimate is dominated by sampling noise. The depth control as specified cannot
+tell depth dependence from small-number noise when the double-positive count is
+around thirty, which is a limit on the control rather than a finding about the
+biology. The Cardoso reference library, with 379 double-positive cells, has a
+depth shift of 0.06 and passes comfortably.
+
+**T2 is met, and it says less than it looks.** There are zero double-positive
+cells in both untreated libraries against 32 and 37 in the bleomycin ones, so
+the frozen both-replicates rule calls the population injury-induced. But
+Runx2 detection in an untreated library is 0.003, so the expected number of
+double-positive cells under independence is about a quarter of one cell. Zero
+is what independence predicts there. T2 therefore restates the marginal rise of
+both genes with injury, which trial E4 had already established, and is not
+independent evidence that the two genes mark the same cells.
+
+### What marks those cells, and how far that travels
+
+In the Areg-flox/+ library, the 379 double-positive fibroblasts differ from the
+910 double-negative ones across a broad set of genes. The strongest by
+detection difference are Piezo2 (0.879 against 0.184), Kif26b, Ltbp2, Chst11,
+Rnf149, Basp1, Lhfpl2, Dock5, Bmper and Rftn1. This is one library and cells
+are not replicates, so it is a description and no P value was computed.
+
+The replication check across the two bleomycin animals is the informative part,
+and it has to be read in two pieces.
+
+| Reading | Result |
+|---|---|
+| Genes evaluable in both bleomycin libraries | 27 of 30 |
+| Same direction in both animals | 26 of 27 |
+| Same direction and at least half the magnitude | 9 of 27 |
+
+**The direction of the signature replicates almost completely**, 26 of 27
+evaluable genes in both animals independently. **The magnitude criterion is
+uninformative and should not be quoted as "9 of 30 replicate".** The median
+gene's bleomycin difference is 0.535 of its reference difference, and the
+threshold was set at 0.5, so the criterion is splitting the distribution
+essentially at its own centre. The attenuation has an obvious cause: the
+bleomycin libraries carry median 1,799 and 1,938 genes per cell against 3,637
+in the reference, so detection differences compress by roughly the same factor
+as the depth. A threshold set without reference to that is measuring library
+depth, not reproducibility. This is the third rule defect in this folder that
+drawing the numbers out exposed, after C7's missing margin requirement and C8's
+mixture test.
+
+The nine genes that clear it anyway are Piezo2, Ltbp2, Rnf149, Basp1, Sdc1,
+P4ha3, Prrx2, Megf11 and Cotl1. Taken with the broader direction-replicating
+set, that reads as a mechanically responsive, matrix-producing fibroblast
+programme rather than anything specific to the Areg axis: Piezo2 is a
+mechanosensitive channel, Ltbp2 sequesters latent TGF-beta, P4ha3 hydroxylates
+collagen prolines, Sdc1 is a matrix co-receptor, and Prrx2 is a mesenchymal
+transcription factor. That is a description of a cell state, offered as
+Exploratory and as a target for a future pre-registration, not as a mechanism.
+
+Three of the thirty genes could not be checked at all, because Cemip2, AI506816
+and 1110038B12Rik are absent from the older annotation GSE132771 was aligned
+against. Gene-symbol drift between deposits of different vintages costs a tenth
+of this comparison, and any future cross-deposit marker check should intersect
+symbol vocabularies before choosing its top set.
+
+### Claims from C9
+
+| Claim | Class |
+|---|---|
+| Fst and Runx2 co-occur above chance in fibroblasts of bleomycin-injured lung, with depth held fixed by the permutation null, in both animals (p = 0.005 and 0.010) | Descriptive only, and it replicates across animals in a dataset with no oncogene |
+| The magnitude of that co-occurrence (ratios 2.84 and 2.32) | Not established; the ratios move by 1.10 and 0.45 across the depth split, and about thirty double-positive cells cannot support a stable estimate |
+| The population is injury-induced | Descriptive only, and weaker than it looks: zero double-positive cells is what independence predicts when Runx2 sits at 0.003 |
+| The double-positive marker signature replicates in direction across two bleomycin animals, 26 of 27 evaluable genes | Descriptive only, and the strongest thing this trial produced |
+| Nine of thirty markers replicate in magnitude | Not established as a meaningful figure; median attenuation is 0.535 against a threshold of 0.5, and it tracks the twofold depth difference between deposits |
+| Areg deletion depletes this population | Not establishable; one library per genotype and no other Areg-flox fibroblast dataset exists |
+| The trial's own T1 verdict, read as "the observation does not replicate" | Retracted as a reading; T1 and T5 were not composable and the conservative branch was taken, but the permutation result replicates in both animals |

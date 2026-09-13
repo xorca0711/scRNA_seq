@@ -511,6 +511,39 @@ labelled cells.
    - Rows C58 to C64 in the claims register, a new Stage 4 section. Owner
      retain/reject review pending on all of it.
 
+27. **The Fst and Runx2 lead, pre-registered and run** (`c9_the_fst_runx2_population.py`,
+   2026-09-13, owner instruction). The trial separated an answerable question
+   from an unanswerable one before it ran, and the unanswerable one is stated
+   rather than approximated: whether Areg deletion depletes the population
+   cannot be tested, because the deposit has one library per genotype and no
+   other Areg-flox fibroblast dataset exists.
+   - **What replicates.** In both bleomycin animals of GSE132771, with no
+     oncogene anywhere, Fst and Runx2 co-occur above chance against a null that
+     permutes within deciles of genes per cell, p = 0.005 and 0.010. Depth is
+     held fixed by construction, so this is not a depth artefact.
+   - **What does not.** The size. Ratios of 2.84 and 2.32 move by 1.10 and 0.45
+     across a median depth split against a frozen limit of 0.25, on 32 and 37
+     double-positive cells. About thirty cells cannot support a stable ratio,
+     and the control cannot separate depth dependence from sampling noise there.
+   - **The marker signature replicates in direction**, 26 of the 27 genes that
+     could be checked, in both animals independently. Three could not be
+     checked at all, because Cemip2, AI506816 and 1110038B12Rik are missing
+     from the older annotation GSE132771 was aligned against.
+   - **The magnitude criterion was badly designed and its figure should not be
+     quoted.** Nine of 27 clear "at least half the reference magnitude", but
+     the median gene sits at 0.535 of its reference difference against a 0.5
+     threshold, and the bleomycin libraries carry half the genes per cell. The
+     criterion measured depth.
+   - **What the cells look like.** Piezo2, Ltbp2, P4ha3, Sdc1 and Prrx2, with
+     Bmper, Ror2 and Kif26b in the wider set: a mechanically responsive,
+     matrix-producing programme that points away from the Areg axis rather
+     than into it. Exploratory.
+   - **The third disclosed rule defect in this folder.** T1 tested a ratio that
+     T5 forbade reading, so the rules were not composable; the implementation
+     took the conservative branch and its verdict stands, but the reading
+     attached to it is wrong. Rows C54, C56 and now C72.
+   - Rows C65 to C72 in the claims register. Owner retain/reject review pending.
+
 ---
 
 ## Handoff: session of 2026-09-13, paper 2 and the repository chores

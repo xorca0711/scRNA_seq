@@ -672,3 +672,99 @@ the bench, or list C, which the data type cannot support. The one exception is
 the state-resolved version of E6, which is blocked by cell counts rather than
 by method, and which a cohort with more transitional cells per donor would
 unblock.
+
+---
+
+## 10. The Fst and Runx2 population, pre-registered (2026-09-13)
+
+Section 9.3 left one lead, labelled post hoc: the co-organisation in the
+fibrotic set sits on the tier that falls, with Fst and Runx2 marking the same
+fibroblasts at a ratio of 1.735 in the control arm and that structure gone
+after Areg deletion. Trial C9 is the pre-registered version. Full numbers are
+in the trial log; three things belong here.
+
+### 10.1 What survived, and it is the existence rather than the size
+
+The trial asked whether such a population exists at all in an independent
+injury dataset with more than one animal. It does. In both bleomycin animals of
+GSE132771, sorted Col1a1-GFP mesenchyme with no oncogene anywhere, Fst and
+Runx2 co-occur above chance against a null that permutes Runx2 within deciles
+of sequencing depth, at p = 0.005 and p = 0.010. Depth is held fixed by
+construction in that null, so this is not a depth artefact and it replicates
+across animals.
+
+The size of the effect is a different matter and should not be quoted. The
+ratios are 2.84 and 2.32, and they move by 1.10 and 0.45 across a median depth
+split, far outside the frozen 0.25 limit. With 32 and 37 double-positive cells
+per library, halving them leaves about sixteen per half, so the estimate is
+dominated by sampling noise rather than by depth. The control cannot tell those
+apart at this count, which is a limit on the control. The Cardoso reference
+library, with 379 double-positive cells, shifts by 0.06 and passes easily.
+
+So the honest position is narrower than the lead: **a co-expressing population
+exists in injury without an oncogene, and how much of it there is remains
+unmeasured.**
+
+### 10.2 The marker signature replicates in direction, and the magnitude test was badly designed
+
+In the Areg-flox/+ library the double-positive fibroblasts separate from the
+double-negative ones across a wide set of genes, led by Piezo2 at 0.879
+detection against 0.184. Checking those thirty genes in the two bleomycin
+animals gives the informative result, in two pieces.
+
+Twenty-six of the twenty-seven genes that could be checked point the same way
+in both animals independently. That is a real replication of a cell state, and
+it is the strongest thing this trial produced.
+
+Nine of twenty-seven also clear the frozen requirement of at least half the
+reference magnitude, and that figure should not be quoted. The median gene's
+bleomycin difference is 0.535 of its reference difference and the threshold sat
+at 0.5, so the criterion split the distribution at its own centre. The
+attenuation has a plain cause: the bleomycin libraries carry median 1,799 and
+1,938 genes per cell against 3,637 in the reference, so detection differences
+compress in step with depth. A magnitude threshold set without reference to
+that measures library depth, not reproducibility.
+
+Three genes could not be checked at all, because Cemip2, AI506816 and
+1110038B12Rik are missing from the older annotation GSE132771 was aligned
+against. Symbol drift between deposits of different vintages cost a tenth of
+the comparison, and any future cross-deposit marker check should intersect
+symbol vocabularies before picking its top set.
+
+### 10.3 What the signature looks like, and what it is not
+
+The genes that replicate read as a mechanically responsive, matrix-producing
+fibroblast programme rather than anything specific to the Areg axis. Piezo2 is
+a mechanosensitive channel; Ltbp2 sequesters latent TGF-beta; P4ha3
+hydroxylates collagen prolines; Sdc1 is a matrix co-receptor; Prrx2 is a
+mesenchymal transcription factor. Bmper, Ror2 and Kif26b sit in the wider
+direction-replicating set.
+
+That is worth knowing precisely because it points away from the axis this page
+has been about. Read with trial E4, which showed Fst and Runx2 both rise with
+bleomycin alone, the picture is of a fibroblast state defined by matrix and
+mechanics that injury induces with or without an oncogene. It is offered as
+Exploratory and as a target for a future pre-registration, not as a mechanism,
+and nothing here tests whether Areg deletion depletes it. That question needs
+an Areg-flox fibroblast dataset with replication, and none exists.
+
+### 10.4 The third rule defect this folder has disclosed
+
+Trial C9's own verdict line says T1 fails, and that verdict stands in the
+record, but it is not a fair description of the data. T1's criterion is a ratio
+above 1.25 with a permutation p below 0.05; T5, written separately, says a
+ratio that moves more than 0.25 across a depth split must not be read. Both
+fired, so T1's test depended on a quantity T5 forbade reading. The
+implementation took the conservative branch and called it a failure. The
+threshold was not moved and the verdict was not rewritten, but the reading
+attached to it, that the observation does not replicate, is wrong: the
+permutation result replicates in both animals.
+
+That is the third time in this folder that writing the numbers out exposed a
+defect in a rule rather than in a result, after C7's missing margin requirement
+and C8's mixture test on a zero-inflated score. The pattern is worth naming:
+each defect came from a rule that was specified as a single threshold when the
+quantity it tested needed a companion condition, and each was caught only
+because the trial was made to report the companion quantity too. Freezing a
+threshold is not enough; a frozen rule also has to say what would make its own
+answer unreadable.

@@ -16,11 +16,11 @@ the claim's potential.
 
 | Bucket | Rows |
 |---|--:|
-| Retracted or superseded, kept on display | 1 |
+| Retracted or superseded, kept on display | 2 |
 | Refuted | 7 |
-| Not establishable with the data that exists | 3 |
-| Not established | 12 |
-| **Total** | **23** |
+| Not establishable with the data that exists | 4 |
+| Not established | 14 |
+| **Total** | **27** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -38,6 +38,13 @@ what was refuted and what settled it.
 - **What settled it:** first co-expression gate, then a stricter lineage-negative gate
 - **Artefact:** `docs/DOUBLETS_AND_SCRUBLET.md`
 - **Where it came from:** Stage 0. Initial run (August 2026): recovering the published biology from raw counts
+
+### C72. Trial C9's own T1 verdict, read as "the observation does not replicate in an independent injury dataset"
+
+- **Status in the register:** Retracted-superseded as a reading, kept on display
+- **What settled it:** trial C9: T1 tested a ratio that T5 forbade reading, so the rules were not composable; the implementation took the conservative branch
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_run_record.json`
+- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
 
 ---
 
@@ -115,6 +122,13 @@ what was refuted and what settled it.
 - **Status in the register:** Not establishable with the data that exists
 - **What settled it:** trial D0: the ATAC-seq accession deposits bigwig coverage tracks only, with no peaks and no reads
 - **Artefact:** `Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_summary.md`
+- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+
+### C71. Areg deletion depletes the co-expressing Fst and Runx2 population
+
+- **Status in the register:** Not establishable with the data that exists
+- **What settled it:** no analysis; one library per genotype and no other Areg-flox fibroblast dataset exists
+- **Artefact:** `none`
 - **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
 
 ---
@@ -204,6 +218,20 @@ what was refuted and what settled it.
 - **What settled it:** trial C8 T1: Runx1 with Pdgfrb co-detected in 22.46% of flox/flox gated fibroblasts against 20.44% expected under independence, ratio 1.099 inside the frozen 0.80 to 1.25 band, and the depth control moves it by 0.043
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_codetection_ratios.csv`
 - **Where it came from:** Stage 3. Cardoso 2026, the Gate 2 paper (2026-09-12)
+
+### C66. The magnitude of that co-occurrence, reported as ratios of 2.84 and 2.32
+
+- **Status in the register:** Not established
+- **What settled it:** trial C9 T5: those ratios move by 1.10 and 0.45 across a median depth split against a frozen limit of 0.25, on 32 and 37 double-positive cells
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_per_library.csv`
+- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+
+### C69. Nine of thirty markers replicate in magnitude, as trial C9's frozen rule reports
+
+- **Status in the register:** Not established as a meaningful figure
+- **What settled it:** trial C9 T4: the median gene's bleomycin difference is 0.535 of its reference difference against a threshold of 0.5, and the bleomycin libraries carry half the genes per cell
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_marker_replication.csv`
+- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
 
 ---
 

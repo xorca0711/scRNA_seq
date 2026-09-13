@@ -1,0 +1,174 @@
+{
+  "trial": "C9 the co-expressing Fst and Runx2 fibroblast population",
+  "rules_frozen_at": "2026-09-13T10:41:04+00:00",
+  "rules": {
+    "question": "the pre-registered version of trial C8's post hoc observation",
+    "answerable": "does a co-expressing Fst and Runx2 fibroblast population exist in an independent injury dataset with animals, and what else marks it",
+    "not_answerable": "whether Areg deletion depletes it; one library per genotype and no other Areg-flox fibroblast dataset exists, so this is stated rather than approximated",
+    "fibroblast_gate": "Col1a1 detected, Ptprc and Pecam1 and Epcam not detected, as in C6 and C8",
+    "qc": "identical to trial C1",
+    "pair": [
+      "Fst",
+      "Runx2"
+    ],
+    "T1": "co-detection ratio against independence plus a permutation null within deciles of genes per cell (200 permutations, seed 0); the permutation unit is the CELL, so it is a statement inside one animal. GROUP RULE: co-organised only if ratio >= 1.25 and permutation p < 0.05 in BOTH bleomycin libraries",
+    "T2": "double-positive share higher in both bleomycin than both untreated libraries, as in E4",
+    "T3": "descriptive: top 30 genes by detection difference between double-positive and double-negative fibroblasts of the Areg-flox/+ library, floor 0.1, the pair itself excluded; one library and cells are not replicates, so no P value",
+    "T4": "a T3 gene replicates if its detection difference has the same sign and at least half the magnitude in both bleomycin libraries; the reported quantity is how many of the top genes replicate",
+    "T5": "depth control: the ratio must not move by more than 0.25 between the shallow and deep halves at the median genes per cell, or that library's ratio is not read",
+    "reading_fixed_in_advance": {
+      "T1_passes": "a co-expressing population exists in injury without an oncogene; the C8 observation is not a one-library artefact, and T3 with T4 says what marks it",
+      "T1_fails": "the C8 observation does not replicate in an independent injury dataset and the lead closes, whatever T3 shows",
+      "T2_met": "the population is injury-induced rather than resident",
+      "T5_fails": "that library's ratio is not read"
+    },
+    "unit": "the animal; two per group in GSE132771 and one library per genotype in GSE316244, so no P value on any group comparison"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_matrix.mtx.gz",
+      "bytes": 90730416,
+      "modified": "2026-01-11T03:33:45+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_barcodes.tsv.gz",
+      "bytes": 43844,
+      "modified": "2026-01-11T03:20:36+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447780_Expt3_Hom_niche_matrix.mtx.gz",
+      "bytes": 116617964,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447780_Expt3_Hom_niche_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T02:48:36+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447780_Expt3_Hom_niche_barcodes.tsv.gz",
+      "bytes": 55076,
+      "modified": "2026-01-11T03:20:36+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891612_Bleo1_GFPp_matrix.mtx.gz",
+      "bytes": 22396885,
+      "modified": "2019-06-14T21:19:47+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891612_Bleo1_GFPp_genes.tsv.gz",
+      "bytes": 217848,
+      "modified": "2019-06-14T21:19:33+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891612_Bleo1_GFPp_barcodes.tsv.gz",
+      "bytes": 17888,
+      "modified": "2019-06-14T21:19:33+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891613_Bleo2_GFPp_matrix.mtx.gz",
+      "bytes": 22336915,
+      "modified": "2019-06-14T21:19:59+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891613_Bleo2_GFPp_genes.tsv.gz",
+      "bytes": 217848,
+      "modified": "2019-06-14T21:19:52+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891613_Bleo2_GFPp_barcodes.tsv.gz",
+      "bytes": 16838,
+      "modified": "2019-06-14T21:19:50+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891616_UT1_GFPp_matrix.mtx.gz",
+      "bytes": 21158903,
+      "modified": "2019-06-14T21:20:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891616_UT1_GFPp_genes.tsv.gz",
+      "bytes": 217846,
+      "modified": "2019-06-14T21:20:06+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891616_UT1_GFPp_barcodes.tsv.gz",
+      "bytes": 19816,
+      "modified": "2019-06-14T21:20:06+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891617_UT2_GFPp_matrix.mtx.gz",
+      "bytes": 17601463,
+      "modified": "2019-06-14T21:20:18+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891617_UT2_GFPp_genes.tsv.gz",
+      "bytes": 217846,
+      "modified": "2019-06-14T21:20:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891617_UT2_GFPp_barcodes.tsv.gz",
+      "bytes": 15997,
+      "modified": "2019-06-14T21:20:13+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c9_the_fst_runx2_population\\c9_per_library.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c9_the_fst_runx2_population\\c9_marker_replication.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c9_the_fst_runx2_population\\c9_reference_markers.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c9_the_fst_runx2_population\\c9_summary.md"
+  ],
+  "results": {
+    "T1": {
+      "bleomycin_ratios": [
+        2.8374,
+        2.3172
+      ],
+      "bleomycin_permutation_p": [
+        0.005,
+        0.01
+      ],
+      "depth_controls_pass": [
+        false,
+        false
+      ],
+      "passes": false
+    },
+    "T2": {
+      "bleomycin_shares": [
+        0.0131,
+        0.018
+      ],
+      "untreated_shares": [
+        0.0,
+        0.0
+      ],
+      "injury_induced": true
+    },
+    "T4": {
+      "genes_checked": 30,
+      "genes_replicating": 9
+    },
+    "reading": "the C8 observation does not replicate in an independent injury dataset and the lead closes, whatever T3 shows the population is injury-induced rather than resident Depth control failed for Bleo1_GFPp, Bleo2_GFPp, whose ratio is not read."
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T10:54:04+00:00"
+}
