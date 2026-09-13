@@ -33,6 +33,7 @@ According to PubMed for all external citations, with DOIs given inline.
 | [9](#9-the-three-jobs-of-2026-09-13-and-what-they-leave-of-this-page-2026-09-13) | the axis tested for the first time, and not detected |
 | [10](#10-the-fst-and-runx2-population-pre-registered-2026-09-13) | the pre-registered lead |
 | [11](#11-the-lead-closes-and-the-figures-for-every-contradiction-2026-09-13) | the lead closing, and the four rule defects compared |
+| [12](#12-the-full-resource-and-what-a-whole-resource-scan-actually-measures-2026-09-13) | the full resource scan, and what such a scan measures |
 
 ---
 
@@ -868,3 +869,46 @@ fail-closed assertion on each. They are in
 [`trials/c11_figures_for_the_contradictions/`](trials/c11_figures_for_the_contradictions/)
 and listed in the trial log. Drawing them corrected three more overstatements,
 which is now the expected yield of making a figure in this folder.
+
+---
+
+## 12. The full resource, and what a whole-resource scan actually measures (2026-09-13)
+
+Section 11 closed the last lead. This section records the one analysis that
+remained on the list: scoring the authors' entire ligand-receptor resource
+instead of the four-ligand shortlist the paper named, to give an unconsidered
+pair a chance to appear.
+
+It did not produce a pair. It produced a measurement of the method. Eleven of
+the top fifteen epithelium-to-fibroblast pairs target CD44 alone, and the
+ligands are collagens, laminins and fibronectin. Those are the most abundant
+transcripts a fibroblast carries, and CD44 is promiscuous, so the ranking is
+sorting by abundance rather than by anything about signalling. The guard written
+for exactly this possibility fired, so the ranking is not read.
+
+That is worth more to this repository than a ranking would have been, because
+it explains something about the method the paper used. A whole-resource scan on
+dissociated tissue will always surface the matrix, and any such analysis that
+reports its top hits without a guard of this kind is reporting abundance. The
+paper avoided the problem by naming a shortlist in advance, which is a defensible
+choice and not the shortcut it can look like.
+
+The one clean comparison is within a receptor, where holding EGFR constant
+removes the promiscuity effect entirely. There, across 26 donors and by the
+authors' own scoring, AREG ranks first of the five EGFR ligands, with HBEGF
+second, then TGFA, EREG and BTC. The top two match what trial C3 found in
+mouse, and EREG and TGFA swap. So the paper's selection of AREG survives the
+only version of this test that can be read.
+
+Reporting that comparison required disclosing a fifth rule defect of the same
+shape as the four in section 11.3. The guard's own text scopes it to the two
+readings it names; the reading gloss in the same docstring says nothing else is
+read if the guard fires. Specific rule and general gloss disagree, so T4 is
+reported as provisional with the conflict stated. The fifth instance makes the
+pattern unambiguous: in this folder, every rule that specified a threshold
+without also specifying its own scope has needed a disclosure.
+
+And the thing this trial cannot do remains what it was before the trial ran.
+Co-expression is not contact. Nothing here says two cells communicate, no
+permutation P value was computed, and CellChat itself has still never run in
+this repository.

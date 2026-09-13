@@ -40,6 +40,7 @@ and C79 of the claims register carry the detail.
 | [C9](c9_the_fst_runx2_population.py) | Pre-registered: is there a co-expressing Fst and Runx2 population | **The existence replicates in two animals, the size does not.** The marker signature replicates in direction for 26 of 27 genes; its magnitude criterion measured library depth |
 | [C10](c10_published_state_or_not.py) | Are those cells the published pathological fibroblast | **Yes, and the lead closes.** Cthrc1 at 44.9 against 2.0 per cent; it had missed C9's top thirty by a ranking cutoff |
 | [C11](c11_figures_for_the_contradictions.py) | Draw every result that contradicts an earlier trial | Six figures, and three more overstatements corrected in the drawing |
+| [C12](c12_cellchatdb_full_resource_scan.py) | Does anything in the whole CellChatDB outrank the axis the paper followed | **The ranking is unreadable by its own guard**: 11 of the top 15 pairs target CD44. Holding the receptor constant, AREG is first of the five EGFR ligands across 26 donors |
 
 **Closed without running, and the reason is the result.** Gate 2 branch (d),
 the transcriptomic ordering of fibroblast against macrophage change, is closed
