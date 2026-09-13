@@ -27,6 +27,12 @@ import pandas as pd
 
 REFERENCE_DOI = "10.1038/s41586-022-04541-3"
 ROTATION_DEGREES_CCW = 165.510271
+PRIMARY_GENE_COLORS = {
+    "KRT8": "#31688e",
+    "CLDN4": "#1f9e89",
+    "KRT17": "#d95f0e",
+    "SFN": "#7b3294",
+}
 PRIMARY_GENES = ("KRT8", "CLDN4", "KRT17", "SFN")
 REFERENCE_MARKER_GENES = (
     "SFTPC", "SCGB3A2", "SFTPB", "SCGB1A1", "KRT5", "TP63",
@@ -505,6 +511,122 @@ def plot_marker_collection(
         save_figure(fig, output, f"epithelial_feature_{gene}_reference_aligned")
 
 
+def primary_expression_summary(epi: ad.AnnData) -> pd.DataFrame:
+    clusters = epi.obs['leiden_cluster'].astype(str).to_numpy()
+    order = ('6', '11', '12', '9', '13', '1', '5', '15', '16', '17', '3', '4', '0', '18')
+    labels = {
+        '6': 'L6  Ciliated (CC)', '11': 'L11  Motile ciliated',
+        '12': 'L12  SCGB3A2-CC-like', '9': 'L9  Ciliated-low',
+        '13': 'L13  Neuroendocrine', '1': 'L1  Basal (BC-like)',
+        '5': 'L5  Distal-BC-1-like', '15': 'L15  Differentiating basal',
+        '16': 'L16  pre-TRB-SC-like', '17': 'L17  Secretory',
+        '3': 'L3  TRB-SC-like', '4': 'L4  AT0 candidate',
+        '0': 'L0  AT2 candidate', '18': 'L18  AT1 candidate',
+    }
+    rows = []
+    for cluster in order:
+        mask = clusters == cluster
+        for gene in PRIMARY_GENES:
+            values = expression_vector(epi, gene)[mask]
+            rows.append({
+                'leiden_cluster': cluster,
+                'cluster_label': labels[cluster],
+                'n_cells': int(mask.sum()),
+                'gene': gene,
+                'mean_log1p_cp10k': float(values.mean()),
+                'median_log1p_cp10k': float(np.median(values)),
+                'q25_log1p_cp10k': float(np.quantile(values, 0.25)),
+                'q75_log1p_cp10k': float(np.quantile(values, 0.75)),
+                'q95_log1p_cp10k': float(np.quantile(values, 0.95)),
+                'pct_expressing': float(100 * np.mean(values > 0)),
+            })
+    return pd.DataFrame(rows)
+
+
+def plot_primary_dotplot(summary: pd.DataFrame, output: Path) -> None:
+    order = list(dict.fromkeys(summary['cluster_label']))
+    fig, ax = plt.subplots(figsize=(8.8, 8.2))
+    for gene_index, gene in enumerate(PRIMARY_GENES):
+        gene_data = summary[summary['gene'] == gene].set_index('cluster_label').loc[order]
+        scatter = ax.scatter(
+            np.full(len(order), gene_index), np.arange(len(order)),
+            s=18 + 4.6 * gene_data['pct_expressing'].to_numpy(),
+            c=gene_data['mean_log1p_cp10k'].to_numpy(), cmap='viridis',
+            vmin=0, vmax=float(summary['mean_log1p_cp10k'].max()),
+            edgecolors='#333333', linewidths=0.35,
+        )
+    ax.set_xticks(range(len(PRIMARY_GENES)), PRIMARY_GENES, fontsize=11, weight='bold')
+    ax.set_yticks(range(len(order)), order, fontsize=8.7)
+    ax.invert_yaxis()
+    ax.grid(color='#e4e8eb', linewidth=0.7)
+    ax.set_axisbelow(True)
+    ax.set_title('Primary marker expression by retained epithelial region', fontsize=15, weight='bold', pad=30)
+    ax.text(
+        0.5, 1.025, 'Dot colour: mean log1p(CP10K) | dot size: cells with expression > 0',
+        transform=ax.transAxes, ha='center', fontsize=9, color='#555555',
+    )
+    colorbar = fig.colorbar(scatter, ax=ax, pad=0.03, fraction=0.04)
+    colorbar.set_label('Mean log1p(CP10K)', fontsize=9)
+    handles = [
+        ax.scatter([], [], s=18 + 4.6 * pct, color='#6a6a6a', edgecolors='#333333', linewidths=0.35)
+        for pct in (25, 50, 75, 100)
+    ]
+    ax.legend(
+        handles, ['25%', '50%', '75%', '100%'], title='Cells expressing',
+        frameon=False, ncol=4, loc='lower center', bbox_to_anchor=(0.5, -0.12),
+        fontsize=8, title_fontsize=8,
+    )
+    fig.subplots_adjust(left=0.31, right=0.91, top=0.88, bottom=0.15)
+    save_figure(fig, output, 'epithelial_primary_markers_dotplot_reference_aligned')
+
+
+def plot_primary_violins(epi: ad.AnnData, output: Path) -> None:
+    order = ('6', '11', '12', '9', '13', '1', '5', '15', '16', '17', '3', '4', '0', '18')
+    labels = ('L6 Ciliated', 'L11 Motile cil.', 'L12 SCGB3A2-CC', 'L9 Ciliated-low',
+              'L13 Neuroendo.', 'L1 Basal', 'L5 Distal-BC-1', 'L15 Diff. basal',
+              'L16 pre-TRB-SC', 'L17 Secretory', 'L3 TRB-SC', 'L4 AT0',
+              'L0 AT2', 'L18 AT1')
+    clusters = epi.obs['leiden_cluster'].astype(str).to_numpy()
+    fig, axes = plt.subplots(2, 2, figsize=(15.2, 10.4), sharex=True)
+    for ax, gene in zip(axes.ravel(), PRIMARY_GENES, strict=True):
+        vector = expression_vector(epi, gene)
+        distributions = [vector[clusters == cluster] for cluster in order]
+        parts = ax.violinplot(
+            distributions, positions=np.arange(len(order)), widths=0.82,
+            showmeans=False, showmedians=True, showextrema=False, points=80,
+        )
+        for body in parts['bodies']:
+            body.set_facecolor(PRIMARY_GENE_COLORS[gene])
+            body.set_edgecolor('#333333')
+            body.set_alpha(0.8)
+            body.set_linewidth(0.5)
+        parts['cmedians'].set_color('#111111')
+        parts['cmedians'].set_linewidth(0.9)
+        ax.set_title(gene, color=PRIMARY_GENE_COLORS[gene], fontsize=14, weight='bold')
+        ax.set_ylabel('log1p(CP10K)', fontsize=9)
+        ax.set_ylim(0, max(0.25, float(np.quantile(vector, 0.995)) * 1.05))
+        ax.grid(axis='y', color='#e5e7eb', linewidth=0.7)
+        ax.set_axisbelow(True)
+    for ax in axes[1]:
+        ax.set_xticks(np.arange(len(order)), labels, rotation=52, ha='right', fontsize=7.4)
+    fig.suptitle('Primary marker distributions across epithelial Leiden regions', fontsize=16, weight='bold', y=0.985)
+    fig.text(
+        0.5, 0.942,
+        'All cells are included, including zeros; violin width is density and the dark bar is the median.',
+        ha='center', fontsize=9, color='#555555',
+    )
+    fig.subplots_adjust(left=0.06, right=0.985, top=0.90, bottom=0.17, wspace=0.14, hspace=0.17)
+    save_figure(fig, output, 'epithelial_primary_markers_violin_reference_aligned')
+
+
+def plot_primary_expression_summaries(epi: ad.AnnData, output: Path) -> None:
+    output.mkdir(parents=True, exist_ok=True)
+    summary = primary_expression_summary(epi)
+    summary.to_csv(output / 'epithelial_primary_markers_by_cluster.csv', index=False)
+    plot_primary_dotplot(summary, output)
+    plot_primary_violins(epi, output)
+
+
 def write_metadata(
     source: ad.AnnData,
     epi: ad.AnnData,
@@ -581,6 +703,7 @@ def main() -> None:
     epi = source[keep].copy()
     xy, center = reference_oriented_coordinates(epi.obsm["X_umap"])
 
+    plot_primary_expression_summaries(epi, args.output)
     plot_composition(epi, xy, args.output)
     plot_feature_panel(epi, xy, args.output)
     write_metadata(source, epi, center, args.output)
