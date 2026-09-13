@@ -257,3 +257,137 @@ in one of its two replicates.
 | "Hbegf may be a brake rather than a passenger" | Exploratory hypothesis, from published trafficking biology, untested here |
 | The 4-day replicates disagree about 24-fold | Descriptive only, and a caveat on every 4-day statement |
 | Everything in section 5 | Proposed, not run |
+
+---
+
+## 7. The Hbegf "brake" idea, checked against the literature (2026-09-13)
+
+Section 4 floated the idea that Hbegf could be a brake on the Areg axis. Checked
+against PubMed, **that idea is contradicted for lung**, and it is kept here as
+a refuted hypothesis rather than deleted.
+
+**What refutes it.** According to PubMed:
+
+**What refutes it.** According to PubMed, three lung studies make HB-EGF
+pro-fibrotic, and the closest one is almost this system:
+
+| Study | What it shows |
+|---|---|
+| Hult et al., *Am J Respir Cell Mol Biol* 2022, [DOI](https://doi.org/10.1165/rcmb.2022-0174OC) | HB-EGF is raised in IPF and in fibrotic mouse lung; **lung macrophages and transitional alveolar epithelial cells express it**; deleting Hbegf from the myeloid compartment protects mice from bleomycin fibrosis, through less monocyte migration and less fibroblast migration |
+| Lai et al., *Lab Invest* 2018, [DOI](https://doi.org/10.1038/s41374-018-0049-0) | HB-EGF drives collagen production in lung fibroblasts and tracks COPD severity |
+| Li et al., *BMC Pulm Med* 2021, [DOI](https://doi.org/10.1186/s12890-021-01726-w) | HB-EGF makes airway epithelium secrete IL-8, which drives fibroblast proliferation and migration |
+
+A fourth paper reports that HB-EGF raises collagen and alpha-smooth-muscle
+actin yet concludes that it suppresses fibrosis, which is internally
+inconsistent, so nothing here rests on it (An et al., *Regen Ther* 2024,
+[DOI](https://doi.org/10.1016/j.reth.2024.05.002)).
+
+**And on the cancer side, two findings matter:**
+
+| Study | What it shows |
+|---|---|
+| Van Hiep et al., *Front Oncol* 2022, [DOI](https://doi.org/10.3389/fonc.2022.963896), corrigendum [DOI](https://doi.org/10.3389/fonc.2022.1106553) | High HBEGF tracks poor survival in lung adenocarcinoma but not squamous carcinoma, and correlates with monocyte, macrophage, neutrophil and dendritic-cell infiltration; single-cell data put HBEGF in tumour cells and myeloid cells |
+| Robles-Oteiza et al., *Dis Model Mech* 2021, [DOI](https://doi.org/10.1242/dmm.049072) | EGFR-mutant mouse lung tumours **upregulate Hbegf**, which is the low-affinity diphtheria-toxin receptor in mice, and blocking HB-EGF with CRM197 partly abrogates the effect of diphtheria toxin |
+
+### The revised hypothesis, which is better than the one it replaces
+
+If HB-EGF is pro-fibrotic in lung, and if macrophages and transitional
+epithelium both make it, then the reading that fits my own tables is the
+opposite of a brake: **Hbegf is a second, Areg-independent driver of the same
+fibroblast programme.** That would explain the tier of the fibrotic signature
+that survives Areg deletion, since deleting Areg from AT2 cells cannot remove
+a ligand that macrophages also make.
+
+This is testable in the deposit with no new data, and trial C6 does it: gate
+every niche library by compartment, ask who makes each EGFR ligand, and ask
+whether any non-epithelial Hbegf source is still there in the Areg-deleted
+library.
+
+### A control the paper's own fibroblast-ablation experiment would benefit from
+
+The paper depletes Pdgfra-positive fibroblasts with intratracheal diphtheria
+toxin in Pdgfra-CreERT2;ZsGreen;iDTR mice carrying engrafted mutant organoids,
+and reads reduced tumour growth (Extended Data Fig. 8a to d). Mouse HBEGF is
+itself the low-affinity diphtheria-toxin receptor, and EGFR-mutant mouse lung
+tumours upregulate it enough to become toxin-sensitive without any transgenic
+receptor ([DOI](https://doi.org/10.1242/dmm.049072)). Hbegf is also the second
+most abundant EGFR ligand in the mutant epithelial state measured here.
+
+The differences from that report are real: this model is Kras-driven rather
+than EGFR-mutant, the dose is low, and the route is intratracheal rather than
+systemic. So this is not a claim that the result is confounded. It is a claim
+that the clean control, diphtheria toxin given to engrafted mice **without**
+the iDTR allele, would remove the ambiguity cheaply, and that the question is
+worth raising because the ligand in question is high in exactly those cells.
+
+### Extension with other public data, in order of value per unit of work
+
+All four accessions were verified public on 2026-09-13.
+
+| # | Dataset | Accession | The question it answers | Why it is worth it |
+|---|---|---|---|---|
+| E1 | Kim et al. 2020, human lung adenocarcinoma, the paper's own human comparison | [GSE131907](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131907) | in human LUAD, is HBEGF myeloid-dominant while AREG is epithelial, as the mouse data here suggest | the same split in human tissue would turn a mouse observation into a conserved one, and this dataset is already part of the paper |
+| E2 | IPF Cell Atlas, Adams et al. 2020 | [GSE136831](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE136831) | which cells carry HBEGF against AREG in human fibrosis, in particular aberrant basaloid cells, the human counterpart of the transitional state | tests Hult's mouse result in human disease and puts the tumour niche and the fibrotic niche on one axis |
+| E3 | Habermann et al. 2020, pulmonary fibrosis | [GSE135893](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE135893) | the same question in an independent fibrosis cohort | a second cohort is what separates a real split from one dataset's quirk |
+| E4 | Tsukui et al. 2020, bleomycin mouse and human IPF mesenchyme | [GSE132771](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE132771) | do Runx1 and Pdgfrb behave the same way in non-oncogenic injury fibroblasts | separates "Areg-independent" from "injury-generic", and the paper already used this dataset for the fibroblast comparison |
+
+### What trial C6 found, which refutes the revised hypothesis as well
+
+Artefacts: [`trials/c6_who_makes_egfr_ligands/`](trials/c6_who_makes_egfr_ligands/).
+Eight libraries, compartments assigned by marker gates, no clustering.
+
+**The receptor side supports the paper cleanly.** Egfr is a mesenchymal and
+endothelial transcript, not an epithelial one: detected in 73% of gated
+mesenchymal cells of the Areg-flox/+ niche library against 5% of the
+RFP-sorted mutant epithelium. The direction of the paper's axis, epithelium
+sends and fibroblast receives, is what the data look like.
+
+**Hbegf does have a non-epithelial source that survives Areg deletion, but it
+is not the macrophage.** Detection of Hbegf by compartment in the
+Areg-flox/+ niche library, and what is left of it after deletion:
+
+| Compartment | flox/+ | flox/flox | kept | survives the frozen 70% rule |
+|---|--:|--:|--:|---|
+| endothelial | 24.3% | 18.4% | 76% | yes |
+| epithelial | 33.2% | 22.6% | 68% | no |
+| mesenchymal | 11.4% | 9.3% | 82% | yes |
+| neutrophil | 17.8% | 6.2% | 35% | no |
+| alveolar macrophage-like | 8.5% | 2.6% | 31% | no |
+| other myeloid | 4.6% | 2.0% | 43% | no |
+
+So the prediction was half right in a way that changes the story. An
+Areg-independent Hbegf source exists, and it is the **endothelium** plus the
+fibroblasts themselves, which would make part of the axis autocrine. The
+myeloid source that Hult's bleomycin work would predict is small here and
+falls sharply with Areg deletion, so in this deposit macrophages are not the
+Hbegf reservoir.
+
+**The finding that matters more than either hypothesis.** Two things in the
+same table constrain every conclusion drawn from the Areg-deletion arm,
+including the paper's and mine.
+
+1. **Areg transcript is still detected in 59% of the Areg-flox/flox RFP+
+   cells**, against 89% in the haplodeficient control. Short 3-prime counts
+   cannot distinguish a floxed transcript from an intact one when the
+   remaining exons carry the 3-prime end, so this is not evidence that the
+   genetics failed; the paper's functional readouts show it works. It does
+   mean transcript detection is a poor proxy for the deletion, and that the
+   residual fibrotic tier in trial C2 could partly reflect residual ligand.
+   This was check A3 on the earlier list, and it comes back ambiguous rather
+   than clean.
+2. **Areg detection falls in every compartment of the Hom library, including
+   lymphoid cells**, from 4.9% to 0.3%. Sftpc-CreERT2 cannot delete Areg in
+   lymphocytes, so that fall is not deletion. The most likely cause is
+   ambient RNA from the Areg-high epithelium, which is abundant in the
+   control library and scarce once the tumour burden drops. Any per-compartment
+   ligand comparison between these two libraries therefore carries an ambient
+   term, which is the same warning trial C1d raised about sorted compartments
+   and is the reason the paper's decision to run SoupX-free analyses deserves
+   a second look in a reanalysis.
+
+**Status.** Both the brake hypothesis and the second-driver hypothesis are
+**Not established**, the first refuted by the literature and the second not
+supported in the compartment that literature nominated. The endothelial and
+autocrine Hbegf source is **Exploratory** and is the part worth carrying into
+E1 to E4. The two constraints above are **Descriptive only** and should be
+quoted whenever the Areg arm is used.
