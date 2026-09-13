@@ -1,0 +1,198 @@
+{
+  "trial": "D0 Choi-2020 data reality check",
+  "rules_frozen_at": "2026-09-13T10:18:54+00:00",
+  "rules": {
+    "question": "Gate 0: what the Choi-2020 deposit contains, before anything is fitted",
+    "scope": "GSE145031 (6 lineage-traced libraries) and GSE144468 (2 organoid libraries)",
+    "out_of_scope": {
+      "GSE144598": "ATAC-seq deposited as bigwig coverage tracks only; no peaks and no reads, so the epigenetic claim cannot be re-derived without going to SRA",
+      "GSE144553": "SuperSeries over the other three; holds no files of its own"
+    },
+    "design_source": "the deposited GEO SOFT family files, parsed rather than transcribed",
+    "feature_rule": "a feature whose identifier is not an Ensembl gene ID is not a gene; counted and reported separately",
+    "cell_calling_rule": "a matrix with 737280 columns is the raw droplet matrix, not called cells; reported as a fact, and cell calling is left to Gate 1 where a threshold can be frozen",
+    "gene_space_comparison": "exact ordered list of (Ensembl ID, symbol) pairs; identical or not",
+    "marker_presence": "every set in choi_2020_extracts.json, negative conditions included",
+    "replicate_rule": "a contrast has within-group replication only if at least two libraries share every experimental variable except the one being contrasted",
+    "memory": "MatrixMarket headers and one streaming pass; no library is loaded densely"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "Thesis\\gate1_02_choi_2020\\choi_2020_extracts.json",
+      "bytes": 8187,
+      "modified": "2026-09-13T08:40:43+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_family.soft.gz",
+      "bytes": 3672,
+      "modified": "2026-09-13T08:38:18+00:00"
+    },
+    {
+      "path": "raw_data\\GSE144468\\GSE144468_family.soft.gz",
+      "bytes": 3244,
+      "modified": "2026-09-13T08:38:19+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304609_PBS_AT2_Tomato.mtx.gz",
+      "bytes": 54411056,
+      "modified": "2020-02-10T15:11:25+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304609_PBS_AT2_Tomato_gene.tsv.gz",
+      "bytes": 217851,
+      "modified": "2020-02-10T15:11:26+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304609_PBS_AT2_Tomato_barcodes.tsv.gz",
+      "bytes": 2280358,
+      "modified": "2020-02-10T15:11:26+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304610_PBS_AT2_nonTomato.mtx.gz",
+      "bytes": 65887029,
+      "modified": "2020-02-10T15:11:43+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304610_PBS_AT2_nonTomato_gene.tsv.gz",
+      "bytes": 217854,
+      "modified": "2020-02-10T15:11:45+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304610_PBS_AT2_nonTomato_barcodes.tsv.gz",
+      "bytes": 2280361,
+      "modified": "2020-02-10T15:11:44+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304611_Day14_AT2_Tomato.mtx.gz",
+      "bytes": 49308225,
+      "modified": "2020-02-10T15:11:57+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304611_Day14_AT2_Tomato_gene.tsv.gz",
+      "bytes": 217853,
+      "modified": "2020-02-10T15:11:59+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304611_Day14_AT2_Tomato_barcodes.tsv.gz",
+      "bytes": 2280360,
+      "modified": "2020-02-10T15:11:59+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304612_Day14_AT2_nonTomato.mtx.gz",
+      "bytes": 51013566,
+      "modified": "2020-02-10T15:12:11+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304612_Day14_AT2_nonTomato_gene.tsv.gz",
+      "bytes": 217856,
+      "modified": "2020-02-10T15:12:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304612_Day14_AT2_nonTomato_barcodes.tsv.gz",
+      "bytes": 2280363,
+      "modified": "2020-02-10T15:12:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304613_Day28_AT2_Tomato.mtx.gz",
+      "bytes": 51261187,
+      "modified": "2020-02-10T15:12:27+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304613_Day28_AT2_Tomato_gene.tsv.gz",
+      "bytes": 217853,
+      "modified": "2020-02-10T15:12:28+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304613_Day28_AT2_Tomato_barcodes.tsv.gz",
+      "bytes": 2280360,
+      "modified": "2020-02-10T15:12:28+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304614_Day28_AT2_nonTomato.mtx.gz",
+      "bytes": 62314764,
+      "modified": "2020-02-10T15:12:44+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304614_Day28_AT2_nonTomato_gene.tsv.gz",
+      "bytes": 217856,
+      "modified": "2020-02-10T15:12:45+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304614_Day28_AT2_nonTomato_barcodes.tsv.gz",
+      "bytes": 2280363,
+      "modified": "2020-02-10T15:12:45+00:00"
+    },
+    {
+      "path": "raw_data\\GSE144468\\GSE144468_RAW\\GSM4288824_Control_Organoids.mtx.gz",
+      "bytes": 23390561,
+      "modified": "2020-01-29T16:05:07+00:00"
+    },
+    {
+      "path": "raw_data\\GSE144468\\GSE144468_RAW\\GSM4288824_Control_Organoids_gene.tsv.gz",
+      "bytes": 217854,
+      "modified": "2020-01-29T16:05:07+00:00"
+    },
+    {
+      "path": "raw_data\\GSE144468\\GSE144468_RAW\\GSM4288824_Control_Organoids_barcodes.tsv.gz",
+      "bytes": 9536,
+      "modified": "2020-01-29T16:05:07+00:00"
+    },
+    {
+      "path": "raw_data\\GSE144468\\GSE144468_RAW\\GSM4288825_Il1b_Organoids.mtx.gz",
+      "bytes": 30446545,
+      "modified": "2020-01-29T16:05:15+00:00"
+    },
+    {
+      "path": "raw_data\\GSE144468\\GSE144468_RAW\\GSM4288825_Il1b_Organoids_gene.tsv.gz",
+      "bytes": 217851,
+      "modified": "2020-01-29T16:05:15+00:00"
+    },
+    {
+      "path": "raw_data\\GSE144468\\GSE144468_RAW\\GSM4288825_Il1b_Organoids_barcodes.tsv.gz",
+      "bytes": 13381,
+      "modified": "2020-01-29T16:05:15+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\trials\\d0_data_reality_check\\d0_deposited_design.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d0_data_reality_check\\d0_library_inventory.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d0_data_reality_check\\d0_gene_spaces.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d0_data_reality_check\\d0_marker_presence.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d0_data_reality_check\\d0_replication.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d0_data_reality_check\\d0_summary.md"
+  ],
+  "results": {
+    "raw_whitelist_libraries": [
+      "PBS_AT2_Tomato",
+      "PBS_AT2_nonTomato",
+      "Day14_AT2_Tomato",
+      "Day14_AT2_nonTomato",
+      "Day28_AT2_Tomato",
+      "Day28_AT2_nonTomato"
+    ],
+    "already_filtered_libraries": [
+      "Control_Organoids",
+      "Il1b_Organoids"
+    ],
+    "non_gene_features_total": 0,
+    "distinct_gene_spaces": 1,
+    "marker_sets_with_absent_genes": [],
+    "any_contrast_with_within_group_replication": false
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T10:29:08+00:00"
+}

@@ -111,6 +111,28 @@ Owner review pending on every row.
 | C56 | A two-component Gaussian mixture on a raw two-gene mean tests for a subpopulation | trial C8 T3: two components beat one by 731 BIC, while 31.5% of the cells detect neither gene, so the score has a spike at zero and a continuum | `Thesis/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_run_record.json` | Refuted as a method, and recorded rather than repaired | Moderate as a method caution. Trial C1 used the same test on a centred score_genes output where the problem does not arise; the defect is the reuse, not the original. |
 | C57 | Areg deletion removes a co-expressing Fst and Runx2 population rather than lowering one programme evenly | trial C8 T2, post hoc: Fst with Runx2 at ratio 1.735 in Areg-flox/+ and 0.816 in Areg-flox/flox, where only 24 of 3,700 cells carry both; Runx1 with Pdgfrb inside the independence band in both arms | `Thesis/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_codetection_ratios.csv` | Exploratory, and explicitly post hoc | The best remaining lead from this deposit, and the shape a future pre-registration should target. It rests on 24 double-positive cells in one library, and the two arms are unusually well depth-matched at 3,637 against 3,612 median genes per cell. |
 
+## Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+
+Roadmap paper 2, read after papers 1, 4 and 5 because paper 5 was entered out
+of order on the owner's instruction. This is the paper that defines the DATP
+state the Cardoso rows lean on, and its first author leads one of the target
+labs. Gate 0 has run; Gate 1 has not. The deposit turns out to have the same
+ceiling as the Cardoso one, **one library per condition**, so no contrast in it
+is testable and the highest status a between-condition row can reach is
+Descriptive only. Trials and their frozen rules:
+[`Thesis/gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md`](Thesis/gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md).
+Owner review pending on every row.
+
+| # | Claim | Analyses behind it | Artefact | Status | Potential |
+|---|---|---|---|---|---|
+| C58 | The Choi-2020 deposit has one gene space across all eight single-cell libraries, 27,998 features with identical ordered identifier and symbol lists | trial D0: exact ordered (Ensembl ID, symbol) comparison | `Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_gene_spaces.csv` | Descriptive only | Moderate, and a better position than the Cardoso deposit, which needed a three-way gene-space intersection. |
+| C59 | No contrast in the Choi-2020 deposit carries within-group replication | trial D0: the frozen replicate rule applied to time point with sort held constant, sort with time point held constant, and organoid treatment; none passed | `Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_replication.csv` | Descriptive only | High, because it is the ceiling for every trial in that folder. The target lab's own key paper turns out to have the same limitation the Cardoso deposit does. |
+| C60 | Six of the eight Choi-2020 matrices are raw 10x barcode whitelists rather than called cells, so cell calling is this repository's job | trial D0: column count equals the 10x v2 whitelist of 737,280 in all six lineage-traced libraries; the two organoid libraries are filtered at 2,101 and 3,066 cells | `Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv` | Descriptive only | High and practical: the cell count will not match the paper's unless Cell Ranger 2.0.2's caller is reproduced, which it will not be, so Gate 1 needs a frozen calling threshold. |
+| C61 | The tdTomato lineage reporter is a counted feature in the Choi-2020 deposit, so the lineage split can be checked from the matrix | trial D0: no non-gene features in any library | `Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv` | Refuted | High as a limit. A reanalysis must trust the library labels for lineage, the opposite of the Cardoso deposit where the BSD marker gave an independent sort check (claim C21). |
+| C62 | Every marker gene in the Choi-2020 extract, including the negative-condition genes, is present in every library | trial D0: marker presence per library, including Sprr1a and AW112010 | `Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_marker_presence.csv` | Descriptive only | Moderate. It means the DATP definition can be scored in full rather than from its positive half, which matters because DATPs are defined partly by low Pdpn, Hopx and Cav1. |
+| C63 | The epigenetic half of the Il1r1-subset claim can be re-derived from the Choi-2020 deposit | trial D0: the ATAC-seq accession deposits bigwig coverage tracks only, with no peaks and no reads | `Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_summary.md` | Not establishable with the data that exists | Moderate. It names a structural limit up front rather than after someone tries. |
+| C64 | Median genes per barcode spans 891 to 1,825 across the six Choi-2020 lineage libraries that any cross-library comparison would use | trial D0 inventory, barcodes over a 500-count floor | `Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv` | Descriptive only | High for Gate 1: a twofold depth spread means a detection comparison across these libraries carries a depth term, and the depth control that trial E6 found load-bearing should be carried here by default. |
+
 ## How to keep this register honest
 
 - Add a row only when a run record or decisions log exists for it.

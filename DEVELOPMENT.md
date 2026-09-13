@@ -30,6 +30,8 @@ violate, is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Repository framing, and what is displaced as established elsewhere | Me (instruction 2026-09-10); AI-assisted execution |
 | Reading the Cardoso 2026 deposit in gates, and stopping Gate 1 when it failed (`Thesis/gate2_05_cardoso_2026/`) | Me (instruction and gate design 2026-09-12); AI-assisted execution, rules frozen before each run; my review pending |
 | Relaxing the displaced-material rule for the reference-aligned primary-marker panels (PR #12) | Me (decision 2026-09-13, against the agent's recommendation to hold them back); the agent had preserved them on a branch rather than reverting them, and flagged both the displaced-material rule and the non-validated palette; the palette is still unaddressed |
+| Returning to roadmap order with Choi 2020, and accepting that the target lab's own deposit has the same replication ceiling as the Cardoso one (study note, extract, trial D0) | Me (instruction 2026-09-13); AI-assisted execution, with the marker sets read from the Europe PMC XML after the agent found the PMC rendering strips gene symbols; my review pending on rows C58 to C64 |
+| Promoting the generic deposit readers out of the Cardoso helper module into the shared one | Agent proposal, my approval implied by the instruction to proceed; a gate1 folder importing from a gate2 folder was the wrong dependency direction. Verified by importing all 19 Cardoso trial modules and re-running two trials to identical results; cardoso_utils re-exports so nothing written against it changed |
 | Choosing the three follow-up questions off the agent's ranked list, and accepting three negative answers plus two disclosed rule defects (trials E6, C7, C8) | Me (selection 2026-09-13); AI-assisted execution with readings frozen before the data were opened; the agent reported the margin that refuses its own C7 answer and the zero-inflation that voids its own C8 mixture test; my review pending on rows C49 to C57 |
 | Extending the Hbegf lead into four public datasets once the deposit was exhausted, and accepting a frozen rule's refutation of my own agent's best lead (trials E1 to E4) | Me (instruction 2026-09-13, including the condition that the extensions run only if the first did not refute); AI-assisted execution, readings frozen before the matrices were opened; my review pending on rows C37 to C48 and on the weakening of C29 |
 
@@ -369,6 +371,46 @@ same sentence as the finding.
 
 Mine to retain or reject: rows C49 to C57, and whether the post hoc Fst and
 Runx2 lead is worth a pre-registered trial of its own.
+
+**21 · Return to roadmap order, and find the same ceiling in the target lab's
+own paper.** (2026-09-13, under review.) After the Cardoso extensions I
+directed a return to roadmap order, starting with paper 2, Choi 2020. It
+defines the DATP state the Cardoso rows lean on and its first author leads one
+of the target labs, so I expected it to be the firmer ground of the two.
+
+It is not, and the agent said so plainly. Gate 0 found one library per
+condition throughout both single-cell accessions, so no contrast in that
+deposit carries within-group replication either. The frozen replicate rule was
+applied to three contrasts and none passed. That is the second key paper in a
+row whose deposit cannot support a tested comparison, and it is worth recording
+as a pattern rather than as a surprise: these are deposits from labs whose
+conclusions rest on genetics and imaging, where the transcriptome is a map
+rather than the evidence, and the deposit reflects that.
+
+Three deposit facts change what Gate 1 can do, and the agent raised all three
+before proposing any analysis. Six of eight matrices are raw barcode
+whitelists, so cell calling is ours and the cell count will not match the
+paper's. The tdTomato reporter is not a counted feature, so the lineage split
+cannot be verified from the matrix at all, which is the opposite of the Cardoso
+deposit where the selection marker gave an independent sort check. And the
+ATAC-seq accession is bigwig coverage only, so the epigenetic half of the
+Il1r1-subset claim is not re-derivable without going to SRA.
+
+One thing I want noted about how the paper was read. The agent found that the
+PMC web rendering strips italicised gene symbols, which would have left every
+marker set in the study note empty, and switched to the Europe PMC XML instead.
+It flagged this rather than filling the gaps from memory, which is the correct
+instinct: a marker set assembled from recollection is exactly the kind of
+plausible number this repository refuses to emit.
+
+One reporting defect is disclosed rather than quietly fixed. The first Gate 0
+run collapsed the raw-versus-filtered question into a single boolean across
+eight libraries, which read as "none are raw" when six of them are. The table
+was right, no number changed, and the summary now names both groups.
+
+Mine to retain or reject: rows C58 to C64, and whether Gate 1 on this paper is
+worth running given that only the trajectory question is answerable without
+replication.
 
 ## How outputs were reviewed
 

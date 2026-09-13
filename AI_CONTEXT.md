@@ -61,6 +61,21 @@ datasets:
     species: human
     design: control vs KRASG12D, 2 libraries
     barcodes: 9408
+  - accession: GSE145031
+    role: "Choi et al. 2020 (roadmap paper 2), scRNA-seq of AT2 lineage-traced epithelium; trial D0"
+    species: mouse
+    design: 6 libraries, three time points (PBS, day 14, day 28 after bleomycin) by two sorts (Tomato-positive, Tomato-negative); ONE library per condition
+    why_it_matters: >
+      the paper that defines the DATP state the Cardoso rows lean on; its deposit has the same
+      replication ceiling, and six of its matrices are raw 10x barcode whitelists rather than called cells
+  - accession: GSE144468
+    role: "Choi et al. 2020, scRNA-seq of AT2 organoids, control against IL-1beta; trial D0"
+    species: mouse
+    design: 2 libraries, already filtered to 2,101 and 3,066 called cells
+  - accession: GSE144598
+    role: "Choi et al. 2020, ATAC-seq of AT2 subsets"
+    species: mouse
+    design: bigwig coverage tracks only; NOT reusable without going to SRA for raw reads
   - accession: GSE131907
     role: "Kim et al. 2020 human LUAD; trials E1 and E1b. The first dataset in the Cardoso work whose unit permits a test"
     species: human
@@ -175,6 +190,12 @@ pitfalls_for_ai_assistants:
   - "Framing (owner instruction 2026-09-09, tightened 2026-09-10): no influenza or interferon narrative; H1N1 is the injury model of one series, not the subject. Describe results by cell state, niche, macrophage and monocyte states, annotation robustness, curation hygiene. The repository is an analysis log, not a portfolio."
   - "Displaced material (archive/DISPLACED.md, 2026-09-10): the Krt8-high transitional trajectory, the human KRT8 reference-aligned panels and the portfolio PDF are established elsewhere (the owner's G-SURF submission). Do not extend them here; their artefacts and scripts stay in place and are validated. ONE EXCEPTION, by owner decision on 2026-09-13 (PR #12): the primary-marker dotplot, violin and per-cluster table for KRT8, CLDN4, KRT17 and SFN are on main under analysis/GSE178360/epithelial_subanalysis/figures/reference_aligned/. Treat that as a one-off the owner authorised, not as a general relaxation. Those panels were redrawn on the validated palette on the same day and their \"AT0 candidate\" label now reads \"SFTPC+SCGB3A2+ (mostly AT2)\", matching claim C6."
   - "The validated figure palette lives in analysis/config/palette.json and is the ONE source of truth; Thesis/gate2_05_cardoso_2026/trials/viz_style.py reads it. Never hard-code figure colours and never reach for viridis or another default ramp. Categorical slots 1 to 4 pass the dataviz validator on the light surface, with one contrast warning that obliges visible labels or a table view; the sequential ramp is for magnitude only."
+  - "Choi 2020 (Thesis/gate1_02_choi_2020/): ONE library per condition in both single-cell accessions, so no contrast there carries within-group replication either. Describe directions; never compute a P value on a between-condition comparison. The trajectory question is the exception, because an ordering inside one library needs no between-group replication."
+  - "Six of the eight Choi-2020 matrices are RAW 10x barcode whitelists (737,280 columns), not called cells. Cell calling is this repository's job and needs a frozen threshold; the cell count will not match the paper's, which used Cell Ranger 2.0.2. The two organoid libraries are already filtered."
+  - "The tdTomato reporter is NOT a counted feature in the Choi-2020 deposit, so the Tomato-positive and Tomato-negative split cannot be verified from the matrix; a reanalysis must trust the library labels. This is the opposite of the Cardoso deposit, where the BSD selection marker gave an independent sort check."
+  - "The Choi-2020 DATP definition includes a NEGATIVE condition (low Pdpn, Hopx, Cav1). A score built from the positive genes alone will not separate DATPs from mature AT1 cells. The primed AT2 state is defined by LOSS of Etv5, Abca3 and Cebpa rather than by a positive marker, so it cannot be scored the same way as the other states. Ndrg1 sits in both the DATP marker set and the hypoxia programme, so it is not independent evidence for both."
+  - "The PMC web rendering strips italicised gene symbols, which silently empties every marker set in a paper. Read full text from the Europe PMC XML instead: https://www.ebi.ac.uk/europepmc/webservices/rest/PMCID/fullTextXML. GEO accessions are often stripped too; recover them with eutils elink from the PMID to the gds database, since the GEO web pages return reCAPTCHA."
+  - "Generic deposit readers (read_mtx_triplet, parse_soft, qc_metrics, ENSEMBL_ID_RE) live in Thesis/gate1_04_sikkema_2023_hlca/trials/trial_utils.py beside RunRecord, as of 2026-09-13. Thesis/gate2_05_cardoso_2026/trials/cardoso_utils.py re-exports them for the trials already written against it. Do not add a second implementation, and do not import across paper folders."
   - "NEGATIVE_RESULTS.md is GENERATED from CLAIMS.md by analysis/scripts/14_write_negative_results.py. Never edit it by hand; change the register row and re-run the script. It collects every refuted, not-established, not-establishable and retracted row, and it deliberately gives no count of how many refute this repository's own claims, because that is a judgement the register does not encode."
   - "Repository checks: analysis/scripts/validate_repository.py (renamed from validate_portfolio.py on 2026-09-10) and .github/workflows/repository-checks.yml. The paper's own workflow document moved to docs/WORKFLOW_Niethamer2025.md."
   - "Trial scripts under Thesis/**/trials read the processed .h5ad objects row-wise (trial_utils.read_csr_rows); never load the 2.1 GB mouse object fully. Use absolute paths; the shell cwd can change between calls."

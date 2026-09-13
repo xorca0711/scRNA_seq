@@ -98,6 +98,19 @@ DOIs and PMIDs verified against PubMed on 2026-09-09. Only papers with a
 study note in the repository get a full citation block; the rest are listed
 so the order is visible here too.
 
+### Gate 1, paper 2: the DATP state and the inflammatory niche
+
+**Choi J, Park J-E, Tsagkogeorga G, Yanagita M, Koo B-K, Han N, Lee J-H.**
+*Inflammatory signals induce AT2 cell-derived damage-associated transient progenitors that mediate alveolar regeneration.*
+**Cell Stem Cell** 2020;27(3):366-382.e7.
+DOI: [10.1016/j.stem.2020.06.020](https://doi.org/10.1016/j.stem.2020.06.020) · PMID [32750316](https://pubmed.ncbi.nlm.nih.gov/32750316/) · PMC [PMC7487779](https://pmc.ncbi.nlm.nih.gov/articles/PMC7487779/)
+Data: GEO [GSE145031](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE145031) (scRNA-seq, AT2 lineage tracing), [GSE144468](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144468) (scRNA-seq, AT2 organoids), [GSE144598](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144598) (ATAC-seq, bigwig coverage only), [GSE144553](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144553) (SuperSeries)
+Study note: [`Thesis/gate1_02_choi_2020/README.md`](Thesis/gate1_02_choi_2020/README.md)
+
+A note on how this paper was read: the full text was taken from the Europe PMC
+XML rather than the PMC web rendering, because that rendering strips italicised
+gene symbols and would have left every marker set in the study note empty.
+
 ### Gate 1, paper 4: the Human Lung Cell Atlas
 
 **Sikkema L, Ramirez-Suastegui C, Strobl DC, Gillett TE, Zappia L, Madissoon E, Markov NS, Zaragosi L-E, et al.; Lung Biological Network Consortium; Luecken MD, Theis FJ.**
