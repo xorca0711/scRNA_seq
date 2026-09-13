@@ -430,7 +430,7 @@ labelled cells.
 ## Handoff: session of 2026-09-13 (the E series)
 
 Branch `Claude/cardoso-2026-public-extensions`, [PR #11](https://github.com/xorca0711/scRNA_seq/pull/11),
-not merged, CI green. [PR #10](https://github.com/xorca0711/scRNA_seq/pull/10) was merged on
+merged 2026-09-13 on the owner's instruction, CI green. [PR #10](https://github.com/xorca0711/scRNA_seq/pull/10) was merged on
 2026-09-13 before the last four commits of the previous session landed, so this pull request
 carries the C5 figures, trial C6 and the whole E series. Nothing in `analysis/` was touched. Six further trials ran,
 all outside the Cardoso deposit, because that deposit cannot test anything and
