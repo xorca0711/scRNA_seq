@@ -1,0 +1,93 @@
+{
+  "trial": "C1c fibrotic and inflammatory marker co-detection (Gate 1 addendum)",
+  "rules_frozen_at": "2026-09-12T13:28:03+00:00",
+  "rules": {
+    "object": "the one trial C1b wrote; read in backed mode, marker columns only",
+    "provenance_of_these_rules": "fixed after C1b's cluster tables were seen, before any per-cell co-detection was computed",
+    "fibrotic_positive": "Tnc detected (non-zero raw count)",
+    "inflammatory_positive": "Lcn2 or Saa3 detected (non-zero raw count)",
+    "groups": "Red2Kras cells of the C1b Red2Kras-private clusters; Red2Kras cells of all other clusters as comparator",
+    "test": {
+      "statistic": "observed double-positive fraction divided by the product of the marginals",
+      "consistent_with_separate_cells_if": "<= 1.25",
+      "co_expressed_if": "> 1.25"
+    },
+    "no_p_value": "one library, three pooled mice",
+    "timing_claim": "not checkable here: this object is a single 2-week time point"
+  },
+  "notes": "reads the object C1b wrote; fits nothing",
+  "inputs": [
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c1b_characterise_red2kras_private\\c1b_mesenchyme.h5ad",
+      "bytes": 135178233,
+      "modified": "2026-09-12T13:17:15+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c1b_characterise_red2kras_private\\c1b_question_b_red2kras_private.csv",
+      "bytes": 1038,
+      "modified": "2026-09-12T13:17:20+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1c_fibrotic_inflammatory_overlap\\c1c_overlap_by_group.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1c_fibrotic_inflammatory_overlap\\c1c_overlap_by_cluster.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1c_fibrotic_inflammatory_overlap\\c1c_summary.md"
+  ],
+  "results": {
+    "private_clusters_from_c1b": [
+      "4",
+      "10",
+      "11",
+      "14",
+      "16"
+    ],
+    "overlap_by_group": [
+      {
+        "group": "Red2Kras, C1b private clusters",
+        "n_cells": 1854,
+        "pct_Tnc": 27.78,
+        "pct_Lcn2_or_Saa3": 29.5,
+        "pct_double_positive": 9.65,
+        "pct_expected_if_independent": 8.2,
+        "observed_over_expected": 1.178,
+        "reading": "consistent with separate cells"
+      },
+      {
+        "group": "Red2Kras, all other clusters",
+        "n_cells": 4085,
+        "pct_Tnc": 17.01,
+        "pct_Lcn2_or_Saa3": 4.5,
+        "pct_double_positive": 0.73,
+        "pct_expected_if_independent": 0.77,
+        "observed_over_expected": 0.958,
+        "reading": "consistent with separate cells"
+      },
+      {
+        "group": "Confetti, all clusters",
+        "n_cells": 5751,
+        "pct_Tnc": 11.46,
+        "pct_Lcn2_or_Saa3": 1.15,
+        "pct_double_positive": 0.14,
+        "pct_expected_if_independent": 0.13,
+        "observed_over_expected": 1.058,
+        "reading": "consistent with separate cells"
+      }
+    ],
+    "timing_claim_checkable": false
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-12T13:28:11+00:00"
+}

@@ -1,0 +1,427 @@
+{
+  "trial": "C3 Areg state specificity across the mutant epithelial time course (Gate 2a)",
+  "rules_frozen_at": "2026-09-12T13:40:05+00:00",
+  "rules": {
+    "accession": "GSE247505 (England et al. 2025), Experiment 1 only",
+    "libraries": [
+      {
+        "gsm": "GSM7890829",
+        "library": "Expt1_ConfettiRFP",
+        "colour": "RFP",
+        "clone": "wild type",
+        "timepoint": "Confetti baseline",
+        "arm": "Confetti_RFP",
+        "replicate": 1
+      },
+      {
+        "gsm": "GSM7890830",
+        "library": "Expt1_ConfettiYFP",
+        "colour": "YFP",
+        "clone": "wild type",
+        "timepoint": "Confetti baseline",
+        "arm": "Confetti_YFP",
+        "replicate": 1
+      },
+      {
+        "gsm": "GSM7890831",
+        "library": "Expt1_4dRFPr1",
+        "colour": "RFP",
+        "clone": "KrasG12D",
+        "timepoint": "4 days",
+        "arm": "4d_RFP",
+        "replicate": 1
+      },
+      {
+        "gsm": "GSM7890832",
+        "library": "Expt1_4dRFPr2",
+        "colour": "RFP",
+        "clone": "KrasG12D",
+        "timepoint": "4 days",
+        "arm": "4d_RFP",
+        "replicate": 2
+      },
+      {
+        "gsm": "GSM7890833",
+        "library": "Expt1_4dYFPr1",
+        "colour": "YFP",
+        "clone": "wild type",
+        "timepoint": "4 days",
+        "arm": "4d_YFP",
+        "replicate": 1
+      },
+      {
+        "gsm": "GSM7890834",
+        "library": "Expt1_4dYFPr2",
+        "colour": "YFP",
+        "clone": "wild type",
+        "timepoint": "4 days",
+        "arm": "4d_YFP",
+        "replicate": 2
+      },
+      {
+        "gsm": "GSM7890835",
+        "library": "Expt1_2wRFPr1",
+        "colour": "RFP",
+        "clone": "KrasG12D",
+        "timepoint": "2 weeks",
+        "arm": "2w_RFP",
+        "replicate": 1
+      },
+      {
+        "gsm": "GSM7890836",
+        "library": "Expt1_2wRFPr2",
+        "colour": "RFP",
+        "clone": "KrasG12D",
+        "timepoint": "2 weeks",
+        "arm": "2w_RFP",
+        "replicate": 2
+      },
+      {
+        "gsm": "GSM7890837",
+        "library": "Expt1_2wYFPr1",
+        "colour": "YFP",
+        "clone": "wild type",
+        "timepoint": "2 weeks",
+        "arm": "2w_YFP",
+        "replicate": 1
+      },
+      {
+        "gsm": "GSM7890838",
+        "library": "Expt1_2wYFPr2",
+        "colour": "YFP",
+        "clone": "wild type",
+        "timepoint": "2 weeks",
+        "arm": "2w_YFP",
+        "replicate": 2
+      }
+    ],
+    "why_not_cellchat": "CellChat is R-only and this machine has no R; a Python reimplementation would use a different ligand-receptor resource and would not be the same method. This trial re-derives the expression fact the communication claim rests on and says so.",
+    "processing": "identical to trial C1 (MAD QC, Scrublet, log1p CP10K, seurat_v3 2000 HVG, 30 PCs, k 30, Leiden igraph 0.5/0.2/1.0, seeds 0)",
+    "batch_rule": {
+      "measure": "same-library enrichment among the 30 nearest neighbours, within arm",
+      "failure_threshold": 2.0,
+      "action": "correct only if the measured enrichment exceeds the threshold"
+    },
+    "state_sets": {
+      "AT2": [
+        "Sftpc",
+        "Etv5",
+        "Lamp3"
+      ],
+      "Cd177_positive": [
+        "Cd177",
+        "Cd38",
+        "Dlk1"
+      ],
+      "DATP_like": [
+        "Cldn4",
+        "Itga2",
+        "Ndrg1",
+        "Sox9"
+      ],
+      "cycling": [
+        "Mki67",
+        "Birc5"
+      ],
+      "AT1_like": [
+        "Ager",
+        "Hopx",
+        "Clic5"
+      ]
+    },
+    "tests": {
+      "T1_state_specificity": "mean log1p(CP10K) Areg higher in DATP-like than in AT2, in all four Red2Kras RFP libraries",
+      "T2_ligand_ranking": "rank ['Areg', 'Ereg', 'Hbegf', 'Tgfa'] by mean log1p(CP10K) within DATP-like cells of each Red2Kras RFP library",
+      "T3_internal_control": "DATP-like share higher in RFP than in YFP libraries at both time points",
+      "T4_time": "T1 and T2 reported per time point; direction of the DATP-like Areg mean between 4 days and 2 weeks recorded; no trend test"
+    },
+    "unit": "the library, two per arm; medians across replicates; no P value",
+    "what_this_is_not": "not a communication analysis; no ligand-receptor probability is computed and nothing establishes that a fibroblast receives the signal"
+  },
+  "notes": "rules frozen before any matrix was read",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890829_Expt1_ConfettiRFP_matrix.mtx.gz",
+      "bytes": 25829046,
+      "modified": "2023-10-28T17:02:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890829_Expt1_ConfettiRFP_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-29T00:10:29+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890829_Expt1_ConfettiRFP_barcodes.tsv.gz",
+      "bytes": 28317,
+      "modified": "2023-10-29T00:10:28+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890830_Expt1_ConfettiYFP_matrix.mtx.gz",
+      "bytes": 26973401,
+      "modified": "2023-10-28T16:59:03+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890830_Expt1_ConfettiYFP_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-29T00:10:30+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890830_Expt1_ConfettiYFP_barcodes.tsv.gz",
+      "bytes": 32512,
+      "modified": "2023-10-29T00:10:29+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890831_Expt1_4dRFPr1_matrix.mtx.gz",
+      "bytes": 26521999,
+      "modified": "2023-10-28T17:03:48+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890831_Expt1_4dRFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:04:00+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890831_Expt1_4dRFPr1_barcodes.tsv.gz",
+      "bytes": 25637,
+      "modified": "2023-10-28T16:59:19+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890832_Expt1_4dRFPr2_matrix.mtx.gz",
+      "bytes": 12102992,
+      "modified": "2023-10-28T16:59:18+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890832_Expt1_4dRFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:02:16+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890832_Expt1_4dRFPr2_barcodes.tsv.gz",
+      "bytes": 11935,
+      "modified": "2023-10-28T17:02:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890833_Expt1_4dYFPr1_matrix.mtx.gz",
+      "bytes": 15271934,
+      "modified": "2023-10-28T17:05:22+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890833_Expt1_4dYFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:02:53+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890833_Expt1_4dYFPr1_barcodes.tsv.gz",
+      "bytes": 14240,
+      "modified": "2023-10-28T17:02:14+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890834_Expt1_4dYFPr2_matrix.mtx.gz",
+      "bytes": 22365893,
+      "modified": "2023-10-28T17:02:11+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890834_Expt1_4dYFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T16:59:17+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890834_Expt1_4dYFPr2_barcodes.tsv.gz",
+      "bytes": 18872,
+      "modified": "2023-10-28T17:04:01+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890835_Expt1_2wRFPr1_matrix.mtx.gz",
+      "bytes": 57244058,
+      "modified": "2023-10-28T17:01:30+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890835_Expt1_2wRFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T16:59:16+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890835_Expt1_2wRFPr1_barcodes.tsv.gz",
+      "bytes": 25854,
+      "modified": "2023-10-29T00:10:27+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890836_Expt1_2wRFPr2_matrix.mtx.gz",
+      "bytes": 42170324,
+      "modified": "2023-10-28T17:05:02+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890836_Expt1_2wRFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:02:17+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890836_Expt1_2wRFPr2_barcodes.tsv.gz",
+      "bytes": 23675,
+      "modified": "2023-10-28T17:03:58+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890837_Expt1_2wYFPr1_matrix.mtx.gz",
+      "bytes": 34359732,
+      "modified": "2023-10-28T16:59:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890837_Expt1_2wYFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:02:14+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890837_Expt1_2wYFPr1_barcodes.tsv.gz",
+      "bytes": 29972,
+      "modified": "2023-10-28T17:05:22+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890838_Expt1_2wYFPr2_matrix.mtx.gz",
+      "bytes": 14243603,
+      "modified": "2023-10-28T17:03:10+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890838_Expt1_2wYFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:03:59+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890838_Expt1_2wYFPr2_barcodes.tsv.gz",
+      "bytes": 13536,
+      "modified": "2023-10-28T17:02:15+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_qc_per_library.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_clusters.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_state_composition.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_ligand_expression.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_T1_state_specificity.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_T2_ligand_ranking.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_T3_internal_control.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_umap_states_time_areg.png",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_summary.md"
+  ],
+  "results": {
+    "cells_analysed_total": 33217,
+    "batch_decision": {
+      "same_library_enrichment_by_arm": {
+        "2w_RFP": 1.7387,
+        "2w_YFP": 1.5314,
+        "4d_RFP": 1.6197,
+        "4d_YFP": 1.8029
+      },
+      "worst": 1.8029,
+      "threshold": 2.0,
+      "correction_applied": false
+    },
+    "tests": {
+      "T1_state_specificity": {
+        "per_library": [
+          {
+            "library": "Expt1_2wRFPr1",
+            "areg_DATP_like": 2.9211,
+            "areg_AT2": 1.1283,
+            "higher_in_DATP": true
+          },
+          {
+            "library": "Expt1_2wRFPr2",
+            "areg_DATP_like": 2.8343,
+            "areg_AT2": 0.6862,
+            "higher_in_DATP": true
+          },
+          {
+            "library": "Expt1_4dRFPr1",
+            "areg_DATP_like": 2.5535,
+            "areg_AT2": 0.5353,
+            "higher_in_DATP": true
+          },
+          {
+            "library": "Expt1_4dRFPr2",
+            "areg_DATP_like": 2.1185,
+            "areg_AT2": 0.4935,
+            "higher_in_DATP": true
+          }
+        ],
+        "holds_in_all": true
+      },
+      "T2_ligand_ranking": [
+        {
+          "library": "Expt1_2wRFPr1",
+          "ranking": "Areg > Hbegf > Ereg > Tgfa",
+          "top": "Areg",
+          "areg_is_top": true,
+          "mean_Areg": 2.9211,
+          "mean_Ereg": 0.9357,
+          "mean_Hbegf": 1.3555,
+          "mean_Tgfa": 0.2448
+        },
+        {
+          "library": "Expt1_2wRFPr2",
+          "ranking": "Areg > Hbegf > Ereg > Tgfa",
+          "top": "Areg",
+          "areg_is_top": true,
+          "mean_Areg": 2.8343,
+          "mean_Ereg": 0.4922,
+          "mean_Hbegf": 1.2782,
+          "mean_Tgfa": 0.1
+        },
+        {
+          "library": "Expt1_4dRFPr1",
+          "ranking": "Areg > Hbegf > Ereg > Tgfa",
+          "top": "Areg",
+          "areg_is_top": true,
+          "mean_Areg": 2.5535,
+          "mean_Ereg": 0.4417,
+          "mean_Hbegf": 0.5697,
+          "mean_Tgfa": 0.1824
+        },
+        {
+          "library": "Expt1_4dRFPr2",
+          "ranking": "Areg > Hbegf > Ereg > Tgfa",
+          "top": "Areg",
+          "areg_is_top": true,
+          "mean_Areg": 2.1185,
+          "mean_Ereg": 0.5099,
+          "mean_Hbegf": 0.6746,
+          "mean_Tgfa": 0.2398
+        }
+      ],
+      "T3_internal_control": [
+        {
+          "timepoint": "4 days",
+          "median_pct_DATP_RFP": 14.66,
+          "median_pct_DATP_YFP": 0.08,
+          "higher_in_RFP": true
+        },
+        {
+          "timepoint": "2 weeks",
+          "median_pct_DATP_RFP": 25.84,
+          "median_pct_DATP_YFP": 1.14,
+          "higher_in_RFP": true
+        }
+      ],
+      "T4_time": {
+        "median_DATP_like_mean_Areg_by_timepoint": {
+          "2 weeks": 2.8777,
+          "4 days": 2.336
+        }
+      }
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-12T14:24:54+00:00"
+}

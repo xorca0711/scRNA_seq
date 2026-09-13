@@ -1,0 +1,11 @@
+library,arm,replicate,clone,timepoint,barcodes,kept_after_qc,median_genes,doublet_call_method,doublets_removed,cells_analysed
+Expt1_ConfettiRFP,Confetti_RFP,1,wild type,Confetti baseline,5366,4309,1286,top 3.45% of scores (automatic rejected: it called 0.00%),203,4106
+Expt1_ConfettiYFP,Confetti_YFP,1,wild type,Confetti baseline,6213,5174,1143,top 4.14% of scores (automatic rejected: it called 0.00%),294,4880
+Expt1_4dRFPr1,4d_RFP,1,KrasG12D,4 days,4811,3968,1408,top 3.17% of scores (automatic rejected: it called 0.00%),171,3797
+Expt1_4dRFPr2,4d_RFP,2,KrasG12D,4 days,2144,1931,1456,scrublet automatic threshold,10,1921
+Expt1_4dYFPr1,4d_YFP,1,wild type,4 days,2584,1984,1633,top 1.59% of scores (automatic rejected: it called 0.25%),58,1926
+Expt1_4dYFPr2,4d_YFP,2,wild type,4 days,3480,3070,1705,top 2.46% of scores (automatic rejected: it called 0.03%),122,2948
+Expt1_2wRFPr1,2w_RFP,1,KrasG12D,2 weeks,4859,4087,3212,top 3.27% of scores (automatic rejected: it called 0.05%),135,3952
+Expt1_2wRFPr2,2w_RFP,2,KrasG12D,2 weeks,4429,3534,2793,top 2.83% of scores (automatic rejected: it called 0.25%),119,3415
+Expt1_2wYFPr1,2w_YFP,1,wild type,2 weeks,5687,4498,1639,top 3.60% of scores (automatic rejected: it called 0.00%),234,4264
+Expt1_2wYFPr2,2w_YFP,2,wild type,2 weeks,2439,2019,1642,scrublet automatic threshold,11,2008

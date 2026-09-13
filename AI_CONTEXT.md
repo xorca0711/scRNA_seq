@@ -39,6 +39,37 @@ datasets:
     cells_analysed: 27729  # 36,464 -> 29,605 post-QC -> 27,729 post-Scrublet
     integration: Harmony (primary embedding)
     source_paper: "Kadur Lakshminarasimha Murthy et al., Nature 2022, doi:10.1038/s41586-022-04541-3"
+  # Added 2026-09-12 for the Gate 2 paper. Downloaded, inventoried by trial C0,
+  # analysed under Thesis/gate2_05_cardoso_2026/, NOT under analysis/.
+  - accession: GSE316241
+    role: Cardoso 2026 mesenchyme (Gate 1 target)
+    species: mouse
+    design: Confetti vs Red2Kras, 2 weeks post-induction, 2 libraries, 3 mice pooled each
+    barcodes: 13226
+  - accession: GSE316243
+    role: Cardoso 2026 niche (immune plus stroma)
+    species: mouse
+    design: Confetti vs Red2Kras, 2 libraries, 3 mice pooled each
+    barcodes: 7836
+  - accession: GSE316244
+    role: Cardoso 2026 Areg-flox arm (niche and RFP+ epithelium)
+    species: mouse
+    design: Areg-flox/+ vs Areg-flox/flox, 4 libraries, 3 mice pooled each
+    barcodes: 33756
+  - accession: GSE310335
+    role: Cardoso 2026 human KRASG12D alveolar organoids
+    species: human
+    design: control vs KRASG12D, 2 libraries
+    barcodes: 9408
+  - accession: GSE247505
+    role: "England et al. 2025 (companion paper, ref 7): RFP+ and YFP+ lineage-labelled epithelium"
+    species: mouse
+    design: 20 libraries; 4 days, 2 weeks, 12 weeks; two replicate libraries per arm
+    barcodes: 59581
+    why_it_matters: >
+      the only biological replication and the only time course in the reusable set, and the
+      epithelial half of the paper's CellChat object; the Cardoso data-availability statement
+      does not name it
 
 stack:
   language: Python 3.12 only   # no R, no Seurat — R unavailable on this machine
@@ -98,7 +129,8 @@ thesis_roadmap:
   done:
     - gate1_01_niethamer_2025 (pointer to docs/ and analysis/GSE262927)
     - gate1_04_sikkema_2023_hlca (note, integration_benchmark.json, PIPELINE_FRAMING.md, trials S1 to S5 with run records; owner review pending; S2 result contradicts the human AT0 headline, see PROGRESS item 15)
-  next: gate1_02_choi_2020, gate1_03_nabhan_2018; owner decisions on PROGRESS items 12 to 21
+    - gate2_05_cardoso_2026 (note, cardoso_2026_extracts.json, trials C0 to C3 with run records; entered out of order on the owner's instruction 2026-09-12; Gate 1 returned "not recovered" and stopped to characterise, see PROGRESS item 23)
+  next: gate1_02_choi_2020, gate1_03_nabhan_2018; owner decisions on PROGRESS items 12 to 23
   s2_environment: .venv-x64 also holds torch 2.14.0 (CPU) and scvi-tools 1.5.0.post1 (frozen in trials/s2_reference_mapping/requirements_s2_env.txt); scarches package removed (incompatible with anndata 0.13); HLCA reference files under trials/s2_reference_mapping/reference/ are gitignored (embedding 2.37 GB, MD5 4aa9167707141dd884ff0202b3ab1205)
 
 pitfalls_for_ai_assistants:
@@ -118,6 +150,12 @@ pitfalls_for_ai_assistants:
   - "Displaced material (archive/DISPLACED.md, 2026-09-10): the Krt8-high transitional trajectory, the human KRT8 reference-aligned panels and the portfolio PDF are established elsewhere (the owner's G-SURF submission). Do not extend them here; their artefacts and scripts stay in place and are validated."
   - "Repository checks: analysis/scripts/validate_repository.py (renamed from validate_portfolio.py on 2026-09-10) and .github/workflows/repository-checks.yml. The paper's own workflow document moved to docs/WORKFLOW_Niethamer2025.md."
   - "Trial scripts under Thesis/**/trials read the processed .h5ad objects row-wise (trial_utils.read_csr_rows); never load the 2.1 GB mouse object fully. Use absolute paths; the shell cwd can change between calls."
+  - "Cardoso 2026 (Thesis/gate2_05_cardoso_2026/): EVERY deposited mouse library pools three mice and each genotype contributes one library per sort, so no genotype contrast in that deposit has within-group replication. Describe directions; never compute a P value on a genotype contrast there. The exception is GSE247505 (England 2025), which has two replicate libraries per arm."
+  - "Cardoso 2026: the mesenchymal and immune libraries are all a single time point (2 weeks). The paper's claim that fibroblast reprogramming precedes macrophage remodelling is imaging-only and CANNOT be tested from the deposit. Do not attempt a transcriptomic ordering there."
+  - "Cardoso 2026 deposits carry three distinct gene spaces (CellRanger 3.0.2 to 8.0.0 against GRCm38, plus GRCh38 for the organoids). GSE316241 and GSE316244 share one; GSE316243 and GSE247505 share another; integration across them needs an explicit Ensembl-ID intersection (30,406 genes)."
+  - "GSE316244 carries one non-gene feature, BSD (the reporter construct's selection marker). The C0 rule removes any feature whose ID is not an Ensembl gene ID and carries it per cell; BSD is detected in about 39% of RFP-sorted cells and 3 to 5% of niche cells, so it is a sort check, never a cell-type call."
+  - "CellChat cannot be run in this repository (R-only, no R on this machine). Do not describe any Python ligand-receptor computation as a CellChat rerun; trial C3 re-derives the expression fact the claim rests on instead, and says what it is not."
+  - "The tracked analysis/raw_data_inventory.* files describe the Stage 0 downloads (51 files) and the validator checks that count. The Cardoso downloads were added to raw_data/ afterwards and are inventoried by trial C0, not by that file. Do not re-run 01_scan_raw_data.py without also updating the validator."
 
 reproduce:
   - python analysis/scripts/01_scan_raw_data.py

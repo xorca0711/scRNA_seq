@@ -1,0 +1,610 @@
+{
+  "trial": "C1 fibroblast compartment of GSE316241 (Gate 1)",
+  "rules_frozen_at": "2026-09-12T12:52:19+00:00",
+  "rules": {
+    "accession": "GSE316241",
+    "libraries": [
+      {
+        "library": "Expt1_Confetti_mesenchyme",
+        "gsm": "GSM9447763",
+        "genotype": "Confetti",
+        "condition": "homeostasis"
+      },
+      {
+        "library": "Expt1_Red2Kras_mesenchyme",
+        "gsm": "GSM9447764",
+        "genotype": "Red2Kras",
+        "condition": "oncogenesis"
+      }
+    ],
+    "design_constraint": "one library per genotype, three mice pooled per library, single time point (2 weeks); library, genotype and batch are one variable; no P value for a genotype contrast",
+    "qc": {
+      "primary": "repository per-sample MAD rule (pipeline_utils.derive_thresholds)",
+      "reported_comparison": {
+        "min_genes": 1000,
+        "min_counts": 2000,
+        "max_counts": 50000,
+        "max_pct_mt": 10
+      }
+    },
+    "doublets": {
+      "caller": "scanpy Scrublet per library before merging",
+      "prior": "0.008 per 1000 cells recovered, clipped to [0.01, 0.15]",
+      "automatic_threshold_rejected_if": "called rate < 0.2x or > 3x the prior",
+      "action": "predicted doublets removed"
+    },
+    "batch_correction": {
+      "primary": "none (library is genotype)",
+      "sensitivity": "Harmony on library"
+    },
+    "embedding": {
+      "normalisation": "log1p(CP10K)",
+      "hvg": "seurat_v3 on counts, 2000",
+      "scale_max": 10,
+      "n_pcs": 30,
+      "knn_k": 30,
+      "seed": 0
+    },
+    "clustering": {
+      "primary_resolution": 0.5,
+      "sensitivity_resolutions": [
+        0.2,
+        1.0
+      ],
+      "flavor": "igraph",
+      "n_iterations": 2,
+      "seed": 0,
+      "origin_of_primary": "fixed from repository trial S5, not chosen here"
+    },
+    "population_calls": {
+      "method": "scanpy score_genes on the paper's marker sets",
+      "ctrl_size": 50,
+      "n_bins": 25,
+      "seed": 0,
+      "cluster_call": "modal per-cell argmax; confident if the mode holds >= 50% of cells",
+      "marker_sets": {
+        "alveolar fibroblast": [
+          "Pdgfra",
+          "Col13a1",
+          "Tcf21",
+          "Npnt",
+          "Scube2"
+        ],
+        "adventitial fibroblast": [
+          "Col14a1",
+          "Pi16",
+          "Dcn"
+        ],
+        "reprogrammed fibroblast": [
+          "Tnc",
+          "Fst",
+          "Runx1",
+          "Runx2",
+          "Acta2",
+          "Pdgfrb"
+        ],
+        "peri-bronchial fibroblast": [
+          "Csmd1",
+          "Hhip",
+          "Fgf18"
+        ],
+        "smooth muscle": [
+          "Acta2",
+          "Myh11",
+          "Thsd4"
+        ],
+        "pericyte": [
+          "Pdgfrb",
+          "Cspg4",
+          "Postn"
+        ],
+        "mesothelium": [
+          "Wt1",
+          "Msln",
+          "Aqp1"
+        ],
+        "mesothelial-like": [
+          "Celf4",
+          "Lgals7",
+          "Npl",
+          "Wt1os"
+        ],
+        "proliferating": [
+          "Mki67",
+          "Birc5"
+        ]
+      }
+    },
+    "fibroblast_subset": "clusters whose confident call is alveolar, adventitial or reprogrammed fibroblast; re-embedded from raw counts with the same parameters",
+    "recovery_test": {
+      "red2kras_fraction_min": 0.8,
+      "must_have_highest_mean_reprogrammed_score": true,
+      "tnc_detection_min": 0.4
+    },
+    "clean_separation": {
+      "rule": "fraction of the subcluster's cells whose 30 nearest neighbours are mostly in the same subcluster",
+      "threshold": 0.75
+    },
+    "over_clustering_guard": {
+      "marker_rule": "detected in >= 30% in-group and <= 20% out-group",
+      "unsupported_subcluster": "no gene satisfies the rule"
+    },
+    "doublet_guard": {
+      "scrublet_rule": "median score above the subset's 90th percentile",
+      "marker_rule": "pericyte or smooth-muscle markers detected in > 50% of cells",
+      "panels": {
+        "pericyte": [
+          "Cspg4",
+          "Notch3",
+          "Postn"
+        ],
+        "smooth muscle": [
+          "Myh11",
+          "Tagln"
+        ]
+      }
+    },
+    "state_or_gradient": {
+      "method": "Gaussian mixture on the reprogrammed-fibroblast score within Red2Kras fibroblasts, seed 0",
+      "two_states_if": "BIC(2) < BIC(1) - 10",
+      "gradient_if": "BIC(1) < BIC(2)",
+      "companion": "diffusion pseudotime rooted at the alveolar-fibroblast centroid"
+    },
+    "unit": "the library; there is no animal-level unit in this deposit"
+  },
+  "notes": "rules frozen before any matrix was read",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447763_Expt1_Confetti_mesenchyme_matrix.mtx.gz",
+      "bytes": 52860433,
+      "modified": "2026-01-11T02:17:34+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447763_Expt1_Confetti_mesenchyme_features.tsv.gz",
+      "bytes": 290896,
+      "modified": "2026-01-11T01:17:10+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447763_Expt1_Confetti_mesenchyme_barcodes.tsv.gz",
+      "bytes": 33630,
+      "modified": "2026-01-11T02:17:34+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447764_Expt1_Red2Kras_mesenchyme_matrix.mtx.gz",
+      "bytes": 53490101,
+      "modified": "2026-01-11T00:51:08+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447764_Expt1_Red2Kras_mesenchyme_features.tsv.gz",
+      "bytes": 290896,
+      "modified": "2026-01-11T01:18:50+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447764_Expt1_Red2Kras_mesenchyme_barcodes.tsv.gz",
+      "bytes": 35390,
+      "modified": "2026-01-11T01:17:10+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1_fibroblast_compartment\\c1_qc_per_library.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1_fibroblast_compartment\\c1_mesenchymal_clusters.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1_fibroblast_compartment\\c1_fibroblast_subclusters.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1_fibroblast_compartment\\c1_subcluster_support.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1_fibroblast_compartment\\c1_harmony_sensitivity_crosstab.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1_fibroblast_compartment\\c1_umap_mesenchyme_and_fibroblasts.png",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c1_fibroblast_compartment\\c1_summary.md"
+  ],
+  "results": {
+    "cells_analysed_total": 11690,
+    "genes_shared": 32285,
+    "fibroblast_clusters_selected": [
+      "0",
+      "1",
+      "2",
+      "9"
+    ],
+    "fibroblast_cells": 6281,
+    "recovery_verdict": {
+      "recovered": false,
+      "highest_reprogrammed_score_subcluster": "2",
+      "criteria": {
+        "red2kras_fraction": 0.559,
+        "red2kras_fraction_passes": false,
+        "has_highest_reprogrammed_score": true,
+        "tnc_detection": 0.077,
+        "tnc_detection_passes": false
+      }
+    },
+    "over_clustering_guard": {
+      "0.2": {
+        "0": {
+          "n_cells": 1732,
+          "n_supporting_genes": 92,
+          "supported": true,
+          "examples": [
+            "Dnm3",
+            "Sde2",
+            "Lamc3",
+            "Slc25a25",
+            "Nr4a2",
+            "D430041D05Rik",
+            "B4galt5",
+            "Ptpn1"
+          ]
+        },
+        "1": {
+          "n_cells": 3068,
+          "n_supporting_genes": 135,
+          "supported": true,
+          "examples": [
+            "Ankrd44",
+            "Rftn2",
+            "Ralb",
+            "Nckap5",
+            "Ralgps2",
+            "Mpzl1",
+            "Usp6nl",
+            "Adamtsl2"
+          ]
+        },
+        "2": {
+          "n_cells": 1403,
+          "n_supporting_genes": 69,
+          "supported": true,
+          "examples": [
+            "Hecw2",
+            "Plcl1",
+            "Igfbp5",
+            "Ackr3",
+            "Kcnt2",
+            "Pla2g4a",
+            "Ptgs2",
+            "Olfml2b"
+          ]
+        },
+        "3": {
+          "n_cells": 78,
+          "n_supporting_genes": 2,
+          "supported": true,
+          "examples": [
+            "Lxn",
+            "Ccdc42"
+          ]
+        }
+      },
+      "0.5": {
+        "0": {
+          "n_cells": 858,
+          "n_supporting_genes": 40,
+          "supported": true,
+          "examples": [
+            "Slc25a25",
+            "Nr4a2",
+            "Hps3",
+            "Nup210l",
+            "Nr4a3",
+            "Rnf19b",
+            "Il6",
+            "Serpine1"
+          ]
+        },
+        "1": {
+          "n_cells": 1443,
+          "n_supporting_genes": 73,
+          "supported": true,
+          "examples": [
+            "Hecw2",
+            "Plcl1",
+            "Igfbp5",
+            "Ackr3",
+            "Kcnt2",
+            "Pla2g4a",
+            "Ptgs2",
+            "Olfml2b"
+          ]
+        },
+        "2": {
+          "n_cells": 777,
+          "n_supporting_genes": 141,
+          "supported": true,
+          "examples": [
+            "Tram2",
+            "Arid5a",
+            "Dner",
+            "Ube2f",
+            "Ptgs2",
+            "Suco",
+            "Adss",
+            "Hmcn2"
+          ]
+        },
+        "3": {
+          "n_cells": 1802,
+          "n_supporting_genes": 75,
+          "supported": true,
+          "examples": [
+            "Ralgps2",
+            "Usp6nl",
+            "Fign",
+            "Lnpk",
+            "Ccdc141",
+            "Prr5l",
+            "Mertk",
+            "Bcl2l1"
+          ]
+        },
+        "4": {
+          "n_cells": 448,
+          "n_supporting_genes": 72,
+          "supported": true,
+          "examples": [
+            "Tram2",
+            "Hecw2",
+            "Plcl1",
+            "Adam23",
+            "Dner",
+            "Entpd2",
+            "Hmcn2",
+            "Lamc3"
+          ]
+        },
+        "5": {
+          "n_cells": 875,
+          "n_supporting_genes": 11,
+          "supported": true,
+          "examples": [
+            "Spats2l",
+            "Mdk",
+            "Rem1",
+            "Nkain4",
+            "Brinp1",
+            "St8sia2",
+            "Adamts15",
+            "Gm48742"
+          ]
+        },
+        "6": {
+          "n_cells": 78,
+          "n_supporting_genes": 2,
+          "supported": true,
+          "examples": [
+            "Lxn",
+            "Ccdc42"
+          ]
+        }
+      },
+      "1.0": {
+        "0": {
+          "n_cells": 526,
+          "n_supporting_genes": 66,
+          "supported": true,
+          "examples": [
+            "Arid5a",
+            "Adamts4",
+            "Slc25a25",
+            "Stxbp1",
+            "Nr4a2",
+            "Mdk",
+            "Gabpb1",
+            "B4galt5"
+          ]
+        },
+        "1": {
+          "n_cells": 480,
+          "n_supporting_genes": 37,
+          "supported": true,
+          "examples": [
+            "Phyhd1",
+            "Rem1",
+            "Hps3",
+            "Lxn",
+            "Gipc2",
+            "Lyn",
+            "Smu1",
+            "Slc31a1"
+          ]
+        },
+        "2": {
+          "n_cells": 477,
+          "n_supporting_genes": 136,
+          "supported": true,
+          "examples": [
+            "Il1rl2",
+            "Tmeff2",
+            "Hecw2",
+            "Plcl1",
+            "Igfbp5",
+            "Ackr3",
+            "Cd55",
+            "Kcnt2"
+          ]
+        },
+        "3": {
+          "n_cells": 439,
+          "n_supporting_genes": 5,
+          "supported": true,
+          "examples": [
+            "Ptgs2",
+            "Lum",
+            "Ebf1",
+            "Ccl11",
+            "Has1"
+          ]
+        },
+        "4": {
+          "n_cells": 327,
+          "n_supporting_genes": 164,
+          "supported": true,
+          "examples": [
+            "Tram2",
+            "Il1rl2",
+            "Hecw2",
+            "Plcl1",
+            "Igfbp5",
+            "Kcne4",
+            "Ackr3",
+            "Gpr39"
+          ]
+        },
+        "5": {
+          "n_cells": 819,
+          "n_supporting_genes": 191,
+          "supported": true,
+          "examples": [
+            "Fam126b",
+            "Plekhm3",
+            "Cyp27a1",
+            "Des",
+            "Dgkd",
+            "Plekha6",
+            "Rgs2",
+            "Swt1"
+          ]
+        },
+        "6": {
+          "n_cells": 470,
+          "n_supporting_genes": 1,
+          "supported": true,
+          "examples": [
+            "B530045E10Rik"
+          ]
+        },
+        "7": {
+          "n_cells": 635,
+          "n_supporting_genes": 151,
+          "supported": true,
+          "examples": [
+            "Tram2",
+            "Arid5a",
+            "Dner",
+            "Ube2f",
+            "Ptgs2",
+            "Suco",
+            "Adss",
+            "Hmcn2"
+          ]
+        },
+        "8": {
+          "n_cells": 431,
+          "n_supporting_genes": 86,
+          "supported": true,
+          "examples": [
+            "Tram2",
+            "Kcnq5",
+            "Hecw2",
+            "Plcl1",
+            "Adam23",
+            "Dner",
+            "Plekha6",
+            "Pla2g4a"
+          ]
+        },
+        "9": {
+          "n_cells": 342,
+          "n_supporting_genes": 71,
+          "supported": true,
+          "examples": [
+            "Hecw2",
+            "Plcl1",
+            "Kcnt2",
+            "Olfml2b",
+            "Entpd2",
+            "B3galt1",
+            "Mdk",
+            "Nkain4"
+          ]
+        },
+        "10": {
+          "n_cells": 292,
+          "n_supporting_genes": 146,
+          "supported": true,
+          "examples": [
+            "Ndufs1",
+            "Cyp27a1",
+            "Plekha6",
+            "Rgs2",
+            "Colgalt2",
+            "Sdhc",
+            "Usp6nl",
+            "Pfkfb3"
+          ]
+        },
+        "11": {
+          "n_cells": 687,
+          "n_supporting_genes": 12,
+          "supported": true,
+          "examples": [
+            "Mdk",
+            "Rem1",
+            "Nkain4",
+            "Brinp1",
+            "St8sia2",
+            "Adcy7",
+            "Adamts15",
+            "Gm48742"
+          ]
+        },
+        "12": {
+          "n_cells": 278,
+          "n_supporting_genes": 40,
+          "supported": true,
+          "examples": [
+            "Kcnb2",
+            "Fign",
+            "Ccdc141",
+            "Prr5l",
+            "Mertk",
+            "Ralgapb",
+            "Pag1",
+            "Hltf"
+          ]
+        },
+        "13": {
+          "n_cells": 78,
+          "n_supporting_genes": 2,
+          "supported": true,
+          "examples": [
+            "Lxn",
+            "Ccdc42"
+          ]
+        }
+      }
+    },
+    "dpt_median_by_subcluster": {
+      "0": 0.29089999198913574,
+      "1": 0.5683000087738037,
+      "2": 0.47920000553131104,
+      "3": 0.20489999651908875,
+      "4": 0.36800000071525574,
+      "5": 0.15129999816417694,
+      "6": 0.6068999767303467
+    },
+    "state_or_gradient": {
+      "bic_1": 8.88,
+      "bic_2": -495.19,
+      "verdict": "two states",
+      "n_red2kras_fibroblasts": 2211
+    },
+    "harmony_sensitivity": {
+      "adjusted_rand_index_primary_vs_harmony": 0.6847,
+      "n_subclusters_primary": 7,
+      "n_subclusters_harmony": 8,
+      "note": "reported as a sensitivity only; library and genotype are one variable"
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-12T13:05:23+00:00"
+}

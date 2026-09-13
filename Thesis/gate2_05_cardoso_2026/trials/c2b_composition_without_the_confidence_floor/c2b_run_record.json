@@ -1,0 +1,119 @@
+{
+  "trial": "C2b composition without the confidence floor",
+  "rules_frozen_at": "2026-09-12T13:41:30+00:00",
+  "rules": {
+    "inputs": [
+      "c2_areg_deletion_arm/c2_niche_clusters.csv",
+      "c2_areg_deletion_arm/c2_epithelial_clusters.csv"
+    ],
+    "provenance_of_these_rules": "fixed after C2's cluster tables were seen; post hoc and disclosed",
+    "change_from_c2": "every cluster is assigned its modal call whatever the mode's size; C2 required the mode to hold at least 50%",
+    "what_is_unchanged": "shares are within a library and within a compartment, as C2 computed them",
+    "directions_rescored": [
+      "reprogrammed fibroblast share of fibroblasts falls in flox/flox",
+      "Cd177-positive share of RFP+ cells falls in flox/flox"
+    ],
+    "also_reported": "the single most depleted cluster of each call, because a share over weakly called clusters is a weaker statement than one cluster's count",
+    "unit": "the library; one per genotype per sort; no P value"
+  },
+  "notes": "reads only C2's tracked cluster tables; loads no matrix",
+  "inputs": [
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c2_areg_deletion_arm\\c2_niche_clusters.csv",
+      "bytes": 1294,
+      "modified": "2026-09-12T13:30:35+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c2_areg_deletion_arm\\c2_epithelial_clusters.csv",
+      "bytes": 532,
+      "modified": "2026-09-12T13:33:57+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c2b_composition_without_the_confidence_floor\\c2b_fibroblast_composition.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c2b_composition_without_the_confidence_floor\\c2b_epithelial_composition.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c2b_composition_without_the_confidence_floor\\c2b_cluster_depletion.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c2b_composition_without_the_confidence_floor\\c2b_summary.md"
+  ],
+  "results": {
+    "directions_rescored": {
+      "reprogrammed_fibroblast_share_falls_in_hom": {
+        "flox_plus_pct": 27.17,
+        "flox_flox_pct": 20.12,
+        "direction_met": true,
+        "scorable": true
+      },
+      "Cd177_positive_share_falls_in_hom": {
+        "flox_plus_pct": 0.0,
+        "flox_flox_pct": 0.0,
+        "direction_met": null,
+        "scorable": false
+      }
+    },
+    "most_depleted_clusters": [
+      {
+        "compartment": "RFP+ epithelium",
+        "cluster": 1,
+        "call": "DATP_like",
+        "n_flox_plus": 1712,
+        "n_flox_flox": 111,
+        "ratio_flox_plus_over_flox_flox": 15.42
+      },
+      {
+        "compartment": "niche",
+        "cluster": 14,
+        "call": "mesothelium",
+        "n_flox_plus": 353,
+        "n_flox_flox": 34,
+        "ratio_flox_plus_over_flox_flox": 10.38
+      },
+      {
+        "compartment": "niche",
+        "cluster": 19,
+        "call": "alveolar macrophage",
+        "n_flox_plus": 310,
+        "n_flox_flox": 33,
+        "ratio_flox_plus_over_flox_flox": 9.39
+      },
+      {
+        "compartment": "niche",
+        "cluster": 13,
+        "call": "smooth muscle",
+        "n_flox_plus": 99,
+        "n_flox_flox": 19,
+        "ratio_flox_plus_over_flox_flox": 5.21
+      },
+      {
+        "compartment": "RFP+ epithelium",
+        "cluster": 8,
+        "call": "cycling",
+        "n_flox_plus": 54,
+        "n_flox_flox": 11,
+        "ratio_flox_plus_over_flox_flox": 4.91
+      },
+      {
+        "compartment": "RFP+ epithelium",
+        "cluster": 7,
+        "call": "DATP_like",
+        "n_flox_plus": 675,
+        "n_flox_flox": 139,
+        "ratio_flox_plus_over_flox_flox": 4.86
+      }
+    ]
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-12T13:41:41+00:00"
+}

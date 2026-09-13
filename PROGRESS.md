@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-12 (paused mid-run; see the handoff block). Previously 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -300,6 +300,133 @@ labelled cells.
    alveolar branch, script 08 and its reference-aligned figures) should also
    be relocated physically, which would require re-pointing the generated
    human report and the validator's transitional-abundance checks.
+
+23. **Cardoso 2026 (Gate 2, paper 5) entered out of order; all eight trials
+   run** (`Thesis/gate2_05_cardoso_2026/`, 2026-09-12, owner instruction).
+   Gate 1 returned a negative result and stopped to characterise, as the gate
+   design requires; Gate 2 branches (a) and (b) then ran and both returned
+   positive results, while branch (d) is closed by the data.
+   - **C0, the data reality check.** All five accessions are public and
+     readable: GSE316241, GSE316243, GSE316244, GSE310335, and GSE247505
+     (England et al. 2025, the companion paper whose epithelial cells the
+     paper's CellChat analysis uses and which the Cardoso data-availability
+     statement does not name). Thirty libraries, 123,807 barcodes, three
+     distinct gene spaces, one non-gene feature (BSD, the reporter
+     construct's selection marker, detected in about 39% of RFP-sorted cells
+     against 3 to 5% of niche cells).
+   - **The binding constraint.** Every deposited mouse library of this paper
+     pools three mice and each genotype contributes one library per sort, so
+     **no genotype contrast in the deposit has within-group replication**.
+     Directions are describable; nothing is testable; no P value is
+     admissible. The exception is GSE247505, with two libraries per arm at
+     three time points and a within-animal wild-type control (YFP).
+   - **Gate 2 branch (d) is closed by the data, not by choice.** Every
+     mesenchymal and immune library is a single time point (2 weeks), so the
+     paper's imaging claim that fibroblast reprogramming precedes macrophage
+     change cannot be tested transcriptomically. Not run; the reason is the
+     result.
+   - **C1, Gate 1: the fibrotic fibroblast subset is NOT recovered** by the
+     pre-registered three-part rule (at least 80% Red2Kras, highest
+     reprogrammed score, Tnc detected in at least 40% of cells). Two
+     disclosed reasons, both recorded rather than repaired in place: the
+     frozen selection step took only clusters with a *confident* fibroblast
+     call, which excluded every cluster the caller labelled reprogrammed
+     fibroblast and also cluster 14 (99.6% Red2Kras); and the score criterion
+     is dominated by Acta2 and Pdgfrb, which mural cells express, so the
+     highest-scoring subcluster is smooth muscle. Also recorded: the paper's
+     own quality thresholds would remove 29% of the Red2Kras library against
+     16% of the Confetti library, and Scrublet's automatic threshold failed
+     on both libraries (0.07% and 0.00% called against a 5% prior).
+   - **C1b, stop-and-characterise.** No cluster matches the published
+     signature under the frozen criteria, but **cluster 14 misses the Tnc
+     floor by one thousandth** (0.399 against 0.400) while carrying 937
+     cells, 99.6% Red2Kras, Acta2 0.574, Runx1 0.540, Pdgfrb 0.326. The
+     threshold was not moved after the fact. Five Red2Kras-private clusters
+     (4, 10, 11, 14, 16) are **not** explained by low counts or doublets,
+     unlike mouse cluster 23 of the GSE262927 series. Owner decision needed
+     on whether cluster 14 is to be called the published population.
+   - **Open question raised by C1b, addressed by C1c (written, not run).**
+     The Red2Kras-private clusters carry fibrotic markers (Tnc, Runx1, Acta2)
+     and inflammatory markers (Lcn2, Saa3) together, whereas the paper makes
+     those distinct populations and says the inflammatory cells lack Tnc and
+     appear only from 4 weeks. C1c asks the per-cell co-detection question a
+     cluster-level fraction cannot answer.
+   - **C1c and C1d answered the open question and found a better one.**
+     Fibrotic and inflammatory markers mark separate cells at 2 weeks (9.7%
+     double-positive against 8.2% expected under independence), which supports
+     the paper's distinctness claim. C1d then explained the tumour-private
+     clusters by composition rather than quality: 6.5% of the mesenchymal
+     library reads as off-target for its own sort, including 184 mutant
+     epithelial cells that are 88% Areg-positive. The paper is unaffected, but
+     a reanalysis computing signalling inside that library alone would be.
+   - **C2, Gate 2b: the paper's epithelial result reproduces blind.**
+     DATP-like cells fall from 46.6% to 22.0% of RFP+ cells on Areg deletion
+     and AT2 rises from 29.2% to 59.1%, against the paper's 50.1 to 25.9 and
+     21.3 to 54.6. Four of five pre-registered directions are met (the fifth
+     unscorable), the DATP-like cluster is depleted 15.4-fold and alveolar
+     macrophages 9.4-fold. **What fails to collapse:** of the six genes in the
+     paper's fibrotic set, Tnc, Acta2, Fst and Runx2 fall while Pdgfrb and
+     Runx1 do not. C2b recomputes the two shares the confidence floor hid,
+     the same defect C1 disclosed.
+   - **C3, Gate 2a: every frozen test holds.** Areg is higher in the DATP-like
+     state than in AT2 cells in all four mutant libraries with the state
+     defined by our own clustering; the ligand order Areg > Hbegf > Ereg >
+     Tgfa is identical in all four, so **Hbegf ranks second**, ahead of the
+     ligand the paper followed into culture; the state is nearly absent from
+     wild-type clones of the same animals (0.08% and 1.1%). Replicate
+     libraries mix within every arm (1.53 to 1.80 against a threshold of 2.0),
+     so no batch correction was applied, by the rule rather than by
+     preference. **It is deliberately not a CellChat rerun**: CellChat is
+     R-only and this machine has no R, so the trial re-derives the expression
+     fact the communication claim rests on and states what it is not.
+   - Status of every row: Descriptive only or Exploratory at best, by the
+     replication constraint. Owner retain/reject review pending on all of it.
+     The two decisions that matter: whether cluster 14 is the published
+     population (claim C22), and whether the Hbegf lead (C33) is worth
+     pursuing.
+
+---
+
+## Handoff: session of 2026-09-12
+
+Branch `Claude/cardoso-2026-gate0-gate1`, [PR #10](https://github.com/xorca0711/scRNA_seq/pull/10),
+not merged. Nothing in `analysis/` was touched; all new material is under
+`Thesis/gate2_05_cardoso_2026/`. **All eight trials have run**; the trial
+plan, the claims register (rows C19 to C36), the root README claims table and
+DEVELOPMENT decision 18 are written.
+
+| Trial | Gate | State | Re-run |
+|---|---|---|---|
+| C0 | 0 | complete | idempotent, about 4 minutes |
+| C1 | 1 | complete, verdict not recovered | about 20 minutes |
+| C1b | 1 | complete; wrote `c1b_mesenchyme.h5ad` (gitignored) that C1c and C1d reuse | reuses the object if present |
+| C1c | 1 | complete | about 1 minute, needs C1b's object |
+| C1d | 1 | complete | about 1 minute, needs C1b's object |
+| C2 | 2b | complete | about 45 minutes |
+| C2b | 2b | complete | seconds; reads only C2's tracked tables |
+| C3 | 2a | complete | about 50 minutes |
+
+What is left is yours, not a computation: the retain/reject decisions listed
+in item 23, chiefly whether cluster 14 is to be called the published
+population, and whether the Hbegf lead (claim C33) is worth pursuing.
+
+Two trials that were considered and not run, each for a stated reason. Gate 2
+branch (d), the transcriptomic ordering of fibroblast against macrophage
+change, is closed because the deposit has no time course in those
+compartments. A CellChat rerun is impossible here because CellChat is R-only
+and this machine has no R; trial C3 re-derives the expression fact the
+communication claim rests on instead and states in its own output what it is
+not.
+
+Downloads added to `raw_data/` this session (gitignored, about 1.1 GB):
+GSE316241, GSE316243, GSE316244, GSE310335, GSE247505, each with its GEO SOFT
+family file. The tracked `analysis/raw_data_inventory.*` still describes the
+Stage 0 downloads only, and the validator checks that count; do not re-run
+`01_scan_raw_data.py` without updating the validator.
+
+**Memory constraint learned this session:** the machine has 15.6 GB and each
+trial peaks near 3 GB under x86-64 emulation, so these trials must be run one
+at a time.
 
 ---
 

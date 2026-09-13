@@ -28,6 +28,7 @@ violate — is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Literature extraction into study notes and reviewable configs (`Thesis/`) | AI-assisted; my review pending |
 | Focused reproductions of the source paper's phase and myeloid claims (`phase_timecourse/`, `myeloid_focus/`) | AI-assisted, rules frozen before each run; my review pending |
 | Repository framing, and what is displaced as established elsewhere | Me (instruction 2026-09-10); AI-assisted execution |
+| Reading the Cardoso 2026 deposit in gates, and stopping Gate 1 when it failed (`Thesis/gate2_05_cardoso_2026/`) | Me (instruction and gate design 2026-09-12); AI-assisted execution, rules frozen before each run; my review pending |
 
 AI execution never meant automatic acceptance. Results were reviewed between
 sessions, and several were sent back: one finding was refuted and rewritten
@@ -225,6 +226,42 @@ the roadmap ahead is not an influenza project. Claims were softened where
 they overreached ("never resolves" became "has not resolved by 366 dpi").
 The checks were renamed from portfolio to repository checks. Nothing was
 deleted and no number changed.
+
+**18 · A gate that fails is a result, and a rule that fails is disclosed
+three times rather than repaired once.** (2026-09-12, under review.) I
+instructed that the Cardoso 2026 paper be entered out of roadmap order and
+analysed in gates, with the standing condition that an unexpected result be
+reported and acted on rather than finished around. Gate 0 read the deposit
+before anything was fitted and found the constraint that governs everything
+after it: every deposited mouse library pools three mice and each genotype
+contributes one library per sort, so no genotype contrast in that deposit
+carries within-group replication. The same trial closed one of my own
+proposed branches: the mesenchymal and immune libraries are a single time
+point, so the paper's fibroblast-before-macrophage ordering cannot be tested
+transcriptomically, and that was reported as the answer rather than
+approximated with something weaker.
+
+Gate 1 then returned "not recovered" against its own pre-registered rule, and
+the rule turned out to be at fault in four separable ways: it selected
+fibroblasts by a confidence floor that excluded the candidates; two genes of
+the paper's marker set are mural markers, so the score peaked on smooth
+muscle; a third is a myeloid transcription factor, so it also flagged a sort
+contaminant; and the population it was hunting missed the Tnc floor by one
+thousandth. None of these was fixed in place. The first-run outcome stands in
+the record, the corrected passes sit beside it as C1b to C1d, and the
+threshold was not moved after the fact, because a rule moved to fit the
+result it just failed is not a rule. The same defect recurred in Gate 2b and
+was handled the same way, in C2b.
+
+Two findings came out of that stopping rather than out of the original plan.
+The mesenchymal sort carries 6.5% off-target cells, among them 184 mutant
+epithelial cells that are 88% Areg-positive, almost entirely in the tumour
+arm; the paper is unaffected because it took its epithelium from a separate
+series, but a reanalysis computing signalling inside that one library would
+have been reading a contaminant as the source. And on the Areg-deletion arm,
+four of the six genes in the paper's fibrotic set fall with the ligand while
+Pdgfrb and Runx1 do not, which suggests the state has separable parts. Both
+are mine to retain or reject, and both are recorded as Exploratory until I do.
 
 ## How outputs were reviewed
 
