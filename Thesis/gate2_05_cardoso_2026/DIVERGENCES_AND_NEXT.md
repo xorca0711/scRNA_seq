@@ -733,11 +733,13 @@ symbol vocabularies before picking its top set.
 
 ### 10.3 What the signature looks like, and what it is not
 
-The genes that replicate read as a mechanically responsive, matrix-producing
-fibroblast programme rather than anything specific to the Areg axis. Piezo2 is
-a mechanosensitive channel; Ltbp2 sequesters latent TGF-beta; P4ha3
-hydroxylates collagen prolines; Sdc1 is a matrix co-receptor; Prrx2 is a
-mesenchymal transcription factor. Bmper, Ror2 and Kif26b sit in the wider
+The genes that replicate read as a matrix and mechanosensor-gene signature
+rather than anything specific to the Areg axis. Piezo2 encodes a
+mechanosensitive channel; Ltbp2 sequesters latent TGF-beta; P4ha3 hydroxylates
+collagen prolines; Sdc1 is a matrix co-receptor; Prrx2 is a mesenchymal
+transcription factor.
+
+Calling that a mechanics programme would claim more than the data support: transcript detection is not channel activity, dissociated tissue carries no mechanical context, and dissociation is itself a mechanical and enzymatic insult, so a Piezo2-led signature has a protocol confound that no reanalysis of dissociated data can remove. Bmper, Ror2 and Kif26b sit in the wider
 direction-replicating set.
 
 That is worth knowing precisely because it points away from the axis this page
