@@ -28,7 +28,10 @@ Descriptive only, Exploratory, Retracted-superseded, Not established. Every
 number below is read from a tracked artefact; the full register with the
 analyses behind each claim, its artefact and its potential is
 [`CLAIMS.md`](CLAIMS.md). Rows marked pending await the owner's retain or
-reject decision in [`PROGRESS.md`](PROGRESS.md).
+reject decision in [`PROGRESS.md`](PROGRESS.md). Everything this repository has
+refuted, could not establish, or has retracted is collected in
+[`NEGATIVE_RESULTS.md`](NEGATIVE_RESULTS.md), which is generated from the
+register so it cannot drift from it.
 
 | Status | Claim | Where |
 |---|---|---|

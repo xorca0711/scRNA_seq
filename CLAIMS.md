@@ -114,6 +114,9 @@ Owner review pending on every row.
 ## How to keep this register honest
 
 - Add a row only when a run record or decisions log exists for it.
+- After changing a row's status, re-run `analysis/scripts/14_write_negative_results.py`;
+  [`NEGATIVE_RESULTS.md`](NEGATIVE_RESULTS.md) is generated from this file and is
+  never edited by hand.
 - Quote numbers from the artefact in the row, never from memory.
 - When the owner rejects a row, change its status to Retracted-superseded and
   leave it in place; record the rejection in DEVELOPMENT.md.
