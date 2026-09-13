@@ -1,0 +1,25 @@
+library,clone,timepoint,n_DATP_like,n_AT2,ligand,mean_DATP_like,mean_AT2,enrichment_log1p_diff,detection_ratio,plotted,flag
+Expt1_4dRFPr1,KrasG12D,4 days,44,3641,Areg,2.5535,0.5353,2.0182,2.67,True,
+Expt1_4dRFPr1,KrasG12D,4 days,44,3641,Hbegf,0.5697,0.2541,0.3156,2.07,True,
+Expt1_4dRFPr1,KrasG12D,4 days,44,3641,Ereg,0.4417,0.0214,0.4203,21.35,True,
+Expt1_4dRFPr1,KrasG12D,4 days,44,3641,Tgfa,0.1824,0.053,0.1294,3.58,True,
+Expt1_4dRFPr2,KrasG12D,4 days,541,1008,Areg,2.1185,0.4935,1.625,2.73,True,
+Expt1_4dRFPr2,KrasG12D,4 days,541,1008,Hbegf,0.6746,0.3038,0.3708,1.88,True,
+Expt1_4dRFPr2,KrasG12D,4 days,541,1008,Ereg,0.5099,0.0306,0.4793,13.83,True,
+Expt1_4dRFPr2,KrasG12D,4 days,541,1008,Tgfa,0.2398,0.0658,0.174,3.61,True,
+Expt1_2wRFPr1,KrasG12D,2 weeks,818,3003,Areg,2.9211,1.1283,1.7928,1.35,True,
+Expt1_2wRFPr1,KrasG12D,2 weeks,818,3003,Hbegf,1.3555,0.6817,0.6738,1.29,True,
+Expt1_2wRFPr1,KrasG12D,2 weeks,818,3003,Ereg,0.9357,0.1613,0.7744,3.95,True,
+Expt1_2wRFPr1,KrasG12D,2 weeks,818,3003,Tgfa,0.2448,0.0635,0.1813,3.09,True,
+Expt1_2wRFPr2,KrasG12D,2 weeks,1058,1678,Areg,2.8343,0.6862,2.1481,1.81,True,
+Expt1_2wRFPr2,KrasG12D,2 weeks,1058,1678,Hbegf,1.2782,0.4994,0.7788,1.61,True,
+Expt1_2wRFPr2,KrasG12D,2 weeks,1058,1678,Ereg,0.4922,0.1337,0.3585,2.55,True,
+Expt1_2wRFPr2,KrasG12D,2 weeks,1058,1678,Tgfa,0.1,0.0581,0.0419,1.55,True,
+Expt1_2wYFPr1,wild type,2 weeks,21,4047,Areg,2.7558,0.7754,1.9804,2.12,False,"wild-type clone, fewer than 50 DATP-like cells"
+Expt1_2wYFPr1,wild type,2 weeks,21,4047,Hbegf,1.4529,0.3522,1.1007,3.18,False,"wild-type clone, fewer than 50 DATP-like cells"
+Expt1_2wYFPr1,wild type,2 weeks,21,4047,Ereg,1.197,0.0026,1.1944,266.68,False,"wild-type clone, fewer than 50 DATP-like cells"
+Expt1_2wYFPr1,wild type,2 weeks,21,4047,Tgfa,0.3178,0.0321,0.2857,13.88,False,"wild-type clone, fewer than 50 DATP-like cells"
+Expt1_2wYFPr2,wild type,2 weeks,36,1217,Areg,2.3767,0.271,2.1057,4.52,False,"wild-type clone, fewer than 50 DATP-like cells"
+Expt1_2wYFPr2,wild type,2 weeks,36,1217,Hbegf,0.9445,0.1292,0.8153,4.99,False,"wild-type clone, fewer than 50 DATP-like cells"
+Expt1_2wYFPr2,wild type,2 weeks,36,1217,Ereg,0.3482,0.0108,0.3374,25.44,False,"wild-type clone, fewer than 50 DATP-like cells"
+Expt1_2wYFPr2,wild type,2 weeks,36,1217,Tgfa,0.1608,0.0178,0.143,13.77,False,"wild-type clone, fewer than 50 DATP-like cells"

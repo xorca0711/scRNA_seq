@@ -1,0 +1,73 @@
+{
+  "trial": "E2b T4 disease against control",
+  "rules_frozen_at": "2026-09-13T05:24:18+00:00",
+  "rules": {
+    "source": "only the tracked per-donor table written by trial E2; nothing is refitted",
+    "why_this_exists": "T4 was frozen in E2's rules and never computed; this supplies it without changing any rule",
+    "T4": "median per-donor detection in IPF and control side by side, no test",
+    "reporting_floor": "at least 3 donors on both sides of a cohort and cell type",
+    "genes": [
+      "AREG",
+      "HBEGF",
+      "EREG",
+      "EGFR"
+    ],
+    "unit": "the donor",
+    "caveats": [
+      "donors are not paired, because a donor is either a case or a control",
+      "disease-restricted states cannot enter this comparison at all",
+      "detection depends on depth, and IPF and control libraries were not depth-matched here"
+    ]
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\e2_human_fibrosis_ligand_sources\\e2_per_donor_celltype.csv",
+      "bytes": 211325,
+      "modified": "2026-09-13T05:22:32+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e2b_t4_disease_against_control\\e2b_t4_disease_against_control.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e2b_t4_disease_against_control\\e2b_summary.md"
+  ],
+  "results": {
+    "direction_counts": {
+      "AREG": {
+        "cell_types_compared": 37,
+        "higher_in_ipf": 24,
+        "median_delta": 0.0269
+      },
+      "HBEGF": {
+        "cell_types_compared": 37,
+        "higher_in_ipf": 24,
+        "median_delta": 0.0193
+      },
+      "EREG": {
+        "cell_types_compared": 37,
+        "higher_in_ipf": 12,
+        "median_delta": -0.0022
+      },
+      "EGFR": {
+        "cell_types_compared": 37,
+        "higher_in_ipf": 9,
+        "median_delta": 0.0
+      }
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T05:24:23+00:00"
+}

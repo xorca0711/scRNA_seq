@@ -1,0 +1,404 @@
+{
+  "trial": "C6 who makes EGFR ligands",
+  "rules_frozen_at": "2026-09-13T04:26:43+00:00",
+  "rules": {
+    "provenance_of_these_rules": "fixed after the C5 tables and the literature check, before any matrix was read here",
+    "hypothesis_tested": "Hbegf is a second, Areg-independent driver rather than a brake; the refuted brake idea and the literature that refutes it are in the module docstring",
+    "libraries": [
+      {
+        "accession": "GSE316243",
+        "gsm": "GSM9447777",
+        "library": "Expt2_Confetti_niche",
+        "arm": "Confetti",
+        "sort": "niche (immune, stroma, endothelium)"
+      },
+      {
+        "accession": "GSE316243",
+        "gsm": "GSM9447778",
+        "library": "Expt2_Red2Kras_niche",
+        "arm": "Red2Kras",
+        "sort": "niche (immune, stroma, endothelium)"
+      },
+      {
+        "accession": "GSE316244",
+        "gsm": "GSM9447779",
+        "library": "Expt3_Het_niche",
+        "arm": "Areg-flox/+",
+        "sort": "niche (mesenchyme, immune)"
+      },
+      {
+        "accession": "GSE316244",
+        "gsm": "GSM9447780",
+        "library": "Expt3_Hom_niche",
+        "arm": "Areg-flox/flox",
+        "sort": "niche (mesenchyme, immune)"
+      },
+      {
+        "accession": "GSE316244",
+        "gsm": "GSM9447781",
+        "library": "Expt3_Het_RFP",
+        "arm": "Areg-flox/+",
+        "sort": "RFP+ epithelium"
+      },
+      {
+        "accession": "GSE316244",
+        "gsm": "GSM9447782",
+        "library": "Expt3_Hom_RFP",
+        "arm": "Areg-flox/flox",
+        "sort": "RFP+ epithelium"
+      },
+      {
+        "accession": "GSE316241",
+        "gsm": "GSM9447763",
+        "library": "Expt1_Confetti_mesenchyme",
+        "arm": "Confetti",
+        "sort": "mesenchyme"
+      },
+      {
+        "accession": "GSE316241",
+        "gsm": "GSM9447764",
+        "library": "Expt1_Red2Kras_mesenchyme",
+        "arm": "Red2Kras",
+        "sort": "mesenchyme"
+      }
+    ],
+    "qc": "identical to trial C1 (per-library MAD, Scrublet with the 10x prior and the sanity check)",
+    "compartment_gates": {
+      "immune": [
+        "Ptprc"
+      ],
+      "endothelial": [
+        "Pecam1",
+        "Cdh5"
+      ],
+      "epithelial": [
+        "Epcam",
+        "Krt8",
+        "Krt18"
+      ],
+      "mesenchymal": [
+        "Col1a1",
+        "Col1a2"
+      ]
+    },
+    "gate_priority": [
+      "immune",
+      "endothelial",
+      "epithelial",
+      "mesenchymal",
+      "unassigned"
+    ],
+    "immune_split": {
+      "neutrophil": [
+        "S100a8",
+        "S100a9",
+        "Retnlg"
+      ],
+      "alveolar macrophage-like": [
+        "Siglecf",
+        "Car4",
+        "Itgax"
+      ],
+      "other myeloid": [
+        "Lyz2",
+        "Cd68",
+        "Adgre1",
+        "Itgam"
+      ],
+      "lymphoid": [
+        "Cd3e",
+        "Cd79a",
+        "Ncr1"
+      ]
+    },
+    "immune_split_priority": [
+      "neutrophil",
+      "alveolar macrophage-like",
+      "other myeloid",
+      "lymphoid",
+      "other immune"
+    ],
+    "myeloid_markers_for_the_am_gate": [
+      "Lyz2",
+      "Cd68",
+      "Adgre1",
+      "Itgam",
+      "Fcgr3",
+      "Csf1r"
+    ],
+    "min_cells_to_evaluate": 100,
+    "non_epithelial_source_if_detection_at_least": 0.1,
+    "survives_areg_deletion_if_retains_at_least": 0.7,
+    "genes": [
+      "Areg",
+      "Ereg",
+      "Hbegf",
+      "Tgfa",
+      "Egfr"
+    ],
+    "caveats": [
+      "marker gates are not cell-type calls",
+      "depth differs between libraries",
+      "the unit is the library; no P value"
+    ]
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE316243\\GSE316243_RAW\\GSM9447777_Expt2_Confetti_niche_matrix.mtx.gz",
+      "bytes": 14088863,
+      "modified": "2026-01-11T02:24:56+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316243\\GSE316243_RAW\\GSM9447777_Expt2_Confetti_niche_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2026-01-11T02:35:25+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316243\\GSE316243_RAW\\GSM9447777_Expt2_Confetti_niche_barcodes.tsv.gz",
+      "bytes": 24051,
+      "modified": "2026-01-11T02:47:27+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316243\\GSE316243_RAW\\GSM9447778_Expt2_Red2Kras_niche_matrix.mtx.gz",
+      "bytes": 16998725,
+      "modified": "2026-01-11T02:46:19+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316243\\GSE316243_RAW\\GSM9447778_Expt2_Red2Kras_niche_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2026-01-11T02:35:07+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316243\\GSE316243_RAW\\GSM9447778_Expt2_Red2Kras_niche_barcodes.tsv.gz",
+      "bytes": 18131,
+      "modified": "2026-01-11T02:47:28+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_matrix.mtx.gz",
+      "bytes": 90730416,
+      "modified": "2026-01-11T03:33:45+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_barcodes.tsv.gz",
+      "bytes": 43844,
+      "modified": "2026-01-11T03:20:36+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447780_Expt3_Hom_niche_matrix.mtx.gz",
+      "bytes": 116617964,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447780_Expt3_Hom_niche_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T02:48:36+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447780_Expt3_Hom_niche_barcodes.tsv.gz",
+      "bytes": 55076,
+      "modified": "2026-01-11T03:20:36+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447781_Expt3_Het_RFP_matrix.mtx.gz",
+      "bytes": 105272210,
+      "modified": "2026-01-11T03:21:03+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447781_Expt3_Het_RFP_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:19:16+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447781_Expt3_Het_RFP_barcodes.tsv.gz",
+      "bytes": 38296,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447782_Expt3_Hom_RFP_matrix.mtx.gz",
+      "bytes": 87727125,
+      "modified": "2026-01-11T03:37:29+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447782_Expt3_Hom_RFP_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:33:21+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447782_Expt3_Hom_RFP_barcodes.tsv.gz",
+      "bytes": 36066,
+      "modified": "2026-01-11T02:47:28+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447763_Expt1_Confetti_mesenchyme_matrix.mtx.gz",
+      "bytes": 52860433,
+      "modified": "2026-01-11T02:17:34+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447763_Expt1_Confetti_mesenchyme_features.tsv.gz",
+      "bytes": 290896,
+      "modified": "2026-01-11T01:17:10+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447763_Expt1_Confetti_mesenchyme_barcodes.tsv.gz",
+      "bytes": 33630,
+      "modified": "2026-01-11T02:17:34+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447764_Expt1_Red2Kras_mesenchyme_matrix.mtx.gz",
+      "bytes": 53490101,
+      "modified": "2026-01-11T00:51:08+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447764_Expt1_Red2Kras_mesenchyme_features.tsv.gz",
+      "bytes": 290896,
+      "modified": "2026-01-11T01:18:50+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316241\\GSE316241_RAW\\GSM9447764_Expt1_Red2Kras_mesenchyme_barcodes.tsv.gz",
+      "bytes": 35390,
+      "modified": "2026-01-11T01:17:10+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c6_who_makes_egfr_ligands\\c6_ligands_by_compartment.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c6_who_makes_egfr_ligands\\c6_hbegf_survival.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c6_who_makes_egfr_ligands\\c6_summary.md"
+  ],
+  "results": {
+    "non_epithelial_hbegf_sources": [
+      {
+        "library": "Expt2_Red2Kras_niche",
+        "compartment": "endothelial",
+        "n_cells": 234,
+        "det_Hbegf": 0.2137
+      },
+      {
+        "library": "Expt2_Red2Kras_niche",
+        "compartment": "mesenchymal",
+        "n_cells": 105,
+        "det_Hbegf": 0.1143
+      },
+      {
+        "library": "Expt3_Het_niche",
+        "compartment": "endothelial",
+        "n_cells": 440,
+        "det_Hbegf": 0.2432
+      },
+      {
+        "library": "Expt3_Het_niche",
+        "compartment": "mesenchymal",
+        "n_cells": 2511,
+        "det_Hbegf": 0.1135
+      },
+      {
+        "library": "Expt3_Het_niche",
+        "compartment": "neutrophil",
+        "n_cells": 830,
+        "det_Hbegf": 0.1783
+      },
+      {
+        "library": "Expt3_Hom_niche",
+        "compartment": "endothelial",
+        "n_cells": 657,
+        "det_Hbegf": 0.1842
+      },
+      {
+        "library": "Expt3_Het_RFP",
+        "compartment": "endothelial",
+        "n_cells": 1846,
+        "det_Hbegf": 0.89
+      },
+      {
+        "library": "Expt3_Hom_RFP",
+        "compartment": "endothelial",
+        "n_cells": 1949,
+        "det_Hbegf": 0.7517
+      },
+      {
+        "library": "Expt1_Red2Kras_mesenchyme",
+        "compartment": "endothelial",
+        "n_cells": 483,
+        "det_Hbegf": 0.1573
+      }
+    ],
+    "hbegf_survival": [
+      {
+        "compartment": "alveolar macrophage-like",
+        "det_Hbegf_flox_plus": 0.0847,
+        "det_Hbegf_flox_flox": 0.0259,
+        "retained_fraction": 0.306,
+        "survives": false
+      },
+      {
+        "compartment": "endothelial",
+        "det_Hbegf_flox_plus": 0.2432,
+        "det_Hbegf_flox_flox": 0.1842,
+        "retained_fraction": 0.757,
+        "survives": true
+      },
+      {
+        "compartment": "epithelial",
+        "det_Hbegf_flox_plus": 0.3321,
+        "det_Hbegf_flox_flox": 0.2263,
+        "retained_fraction": 0.681,
+        "survives": false
+      },
+      {
+        "compartment": "lymphoid",
+        "det_Hbegf_flox_plus": 0.0159,
+        "det_Hbegf_flox_flox": 0.0186,
+        "retained_fraction": 1.17,
+        "survives": true
+      },
+      {
+        "compartment": "mesenchymal",
+        "det_Hbegf_flox_plus": 0.1135,
+        "det_Hbegf_flox_flox": 0.0928,
+        "retained_fraction": 0.818,
+        "survives": true
+      },
+      {
+        "compartment": "neutrophil",
+        "det_Hbegf_flox_plus": 0.1783,
+        "det_Hbegf_flox_flox": 0.0624,
+        "retained_fraction": 0.35,
+        "survives": false
+      },
+      {
+        "compartment": "other immune",
+        "det_Hbegf_flox_plus": 0.0258,
+        "det_Hbegf_flox_flox": 0.0391,
+        "retained_fraction": 1.516,
+        "survives": true
+      },
+      {
+        "compartment": "other myeloid",
+        "det_Hbegf_flox_plus": 0.0457,
+        "det_Hbegf_flox_flox": 0.0196,
+        "retained_fraction": 0.429,
+        "survives": false
+      }
+    ]
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T04:34:06+00:00"
+}

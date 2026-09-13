@@ -1,0 +1,16 @@
+# Trial E1: EGFR ligand sources in human LUAD
+
+Refutation rule triggered: False
+
+## Tumour lung, median per-donor detection
+
+| compartment | det_AREG | det_EREG | det_HBEGF | det_TGFA | det_EGF | det_BTC | det_EPGN | det_EGFR | n_donors |
+|---|---|---|---|---|---|---|---|---|---|
+| endothelial | 0.2366 | 0.1333 | 0.3569 | 0.0296 | 0.0 | 0.0085 | 0.0 | 0.0619 | 11.0 |
+| epithelial | 0.3363 | 0.0447 | 0.2251 | 0.0727 | 0.011 | 0.0646 | 0.0004 | 0.2864 | 11.0 |
+| lymphoid | 0.152 | 0.0058 | 0.0136 | 0.0023 | 0.0 | 0.0 | 0.0 | 0.0056 | 11.0 |
+| mesenchymal | 0.0831 | 0.0354 | 0.0809 | 0.0 | 0.0 | 0.0038 | 0.0 | 0.094 | 8.0 |
+| myeloid | 0.2147 | 0.039 | 0.09 | 0.0123 | 0.0 | 0.0 | 0.0 | 0.009 | 11.0 |
+| neutrophil | 0.2532 | 0.2323 | 0.3979 | 0.0419 | 0.0008 | 0.0028 | 0.0 | 0.0303 | 11.0 |
+| other immune | 0.1642 | 0.0 | 0.0071 | 0.0052 | 0.0 | 0.0 | 0.0 | 0.0052 | 11.0 |
+| unassigned | 0.1733 | 0.0375 | 0.0422 | 0.0052 | 0.0 | 0.0 | 0.0 | 0.0028 | 11.0 |

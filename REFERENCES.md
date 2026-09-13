@@ -25,13 +25,13 @@ Preprint: *A longitudinal atlas of post-viral lung regeneration reveals persiste
 **Nature** 2022;604(7904):111–119.
 DOI: [10.1038/s41586-022-04541-3](https://doi.org/10.1038/s41586-022-04541-3) · PMID [35355018](https://pubmed.ncbi.nlm.nih.gov/35355018/)
 
-**Data:** GEO [GSE178360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178360) — the three healthy-donor distal-lung samples analysed in [`analysis/GSE178360/`](analysis/GSE178360/README.md)
+**Data:** GEO [GSE178360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178360), the three healthy-donor distal-lung samples analysed in [`analysis/GSE178360/`](analysis/GSE178360/README.md)
 
 ---
 
 ## Method papers, in pipeline order
 
-### 1 · Ambient RNA removal — SoupX
+### 1 · Ambient RNA removal, SoupX
 
 **Young MD, Behjati S.**
 *SoupX removes ambient RNA contamination from droplet-based single-cell RNA sequencing data.*
@@ -39,7 +39,7 @@ DOI: [10.1038/s41586-022-04541-3](https://doi.org/10.1038/s41586-022-04541-3) ·
 DOI: [10.1093/gigascience/giaa151](https://doi.org/10.1093/gigascience/giaa151) · PMID [33367645](https://pubmed.ncbi.nlm.nih.gov/33367645/) · PMC [PMC7763177](https://pmc.ncbi.nlm.nih.gov/articles/PMC7763177/)
 Software: [github.com/constantAmateur/SoupX](https://github.com/constantAmateur/SoupX) · Licence: CC BY 4.0
 
-### 2 · Doublet detection — Scrublet
+### 2 · Doublet detection, Scrublet
 
 **Wolock SL, Lopez R, Klein AM.**
 *Scrublet: computational identification of cell doublets in single-cell transcriptomic data.*
@@ -47,7 +47,7 @@ Software: [github.com/constantAmateur/SoupX](https://github.com/constantAmateur/
 DOI: [10.1016/j.cels.2018.11.005](https://doi.org/10.1016/j.cels.2018.11.005) · PMID [30954476](https://pubmed.ncbi.nlm.nih.gov/30954476/) · PMC [PMC6625319](https://pmc.ncbi.nlm.nih.gov/articles/PMC6625319/)
 Software: [github.com/AllonKleinLab/scrublet](https://github.com/AllonKleinLab/scrublet)
 
-### 3 · Doublet detection — scds
+### 3 · Doublet detection, scds
 
 **Bais AS, Kostka D.**
 *scds: computational annotation of doublets in single-cell RNA sequencing data.*
@@ -55,7 +55,7 @@ Software: [github.com/AllonKleinLab/scrublet](https://github.com/AllonKleinLab/s
 DOI: [10.1093/bioinformatics/btz698](https://doi.org/10.1093/bioinformatics/btz698) · PMID [31501871](https://pubmed.ncbi.nlm.nih.gov/31501871/) · PMC [PMC7703774](https://pmc.ncbi.nlm.nih.gov/articles/PMC7703774/)
 Software: Bioconductor [scds](https://bioconductor.org/packages/scds/) (doi:10.18129/B9.bioc.scds)
 
-### 4 · Trajectory inference — Slingshot
+### 4 · Trajectory inference, Slingshot
 
 **Street K, Risso D, Fletcher RB, Das D, Ngai J, Yosef N, Purdom E, Dudoit S.**
 *Slingshot: cell lineage and pseudotime inference for single-cell transcriptomics.*
@@ -63,7 +63,7 @@ Software: Bioconductor [scds](https://bioconductor.org/packages/scds/) (doi:10.1
 DOI: [10.1186/s12864-018-4772-0](https://doi.org/10.1186/s12864-018-4772-0) · PMID [29914354](https://pubmed.ncbi.nlm.nih.gov/29914354/) · PMC [PMC6007078](https://pmc.ncbi.nlm.nih.gov/articles/PMC6007078/)
 Software: Bioconductor [slingshot](https://bioconductor.org/packages/slingshot/) · Licence: CC BY 4.0
 
-### 5 · Trajectory-based DE — tradeSeq
+### 5 · Trajectory-based DE, tradeSeq
 
 **Van den Berge K, Roux de Bézieux H, Street K, Saelens W, Cannoodt R, Saeys Y, Dudoit S, Clement L.**
 *Trajectory-based differential expression analysis for single-cell sequencing data.*
@@ -85,7 +85,7 @@ Software: Bioconductor [tradeSeq](https://bioconductor.org/packages/tradeSeq/) �
 | [ComplexHeatmap](https://bioconductor.org/packages/ComplexHeatmap/) · viridis · [MetBrewer](https://github.com/BlakeRMills/MetBrewer) | figures | not stated |
 | [deepTools](https://deeptools.readthedocs.io/) | *Ntrk2* coverage tracks | not stated |
 | [AnimalTFDB](https://guolab.wchscu.cn/AnimalTFDB4/) | transcription factor list | not stated |
-| [LungDamage](https://github.com/WALIII/LungDamage) | MATLAB histology damage scoring | — |
+| [LungDamage](https://github.com/WALIII/LungDamage) | MATLAB histology damage scoring | not stated |
 
 Reference genome: mm39 / GRCm39.
 
@@ -136,6 +136,14 @@ Tsukui T, et al. *Collagen-producing lung cell atlas identifies multiple subsets
 DOI: [10.1038/s41467-020-15647-5](https://doi.org/10.1038/s41467-020-15647-5) · GEO [GSE132771](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE132771) (the bleomycin-injury comparison).
 Kim N, et al. *Single-cell RNA sequencing demonstrates the molecular and cellular reprogramming of metastatic lung adenocarcinoma.* **Nature Communications** 2020;11:2285.
 DOI: [10.1038/s41467-020-16164-1](https://doi.org/10.1038/s41467-020-16164-1) · GEO [GSE131907](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131907) (the early-stage human LUAD comparison).
+
+**Datasets this repository added for the E-series extensions** (2026-09-13),
+both human idiopathic pulmonary fibrosis atlases published in the same issue,
+metadata verified against PubMed:
+Adams TS, Schupp JC, Poli S, et al. *Single-cell RNA-seq reveals ectopic and aberrant lung-resident cell populations in idiopathic pulmonary fibrosis.* **Science Advances** 2020;6(28):eaba1983.
+DOI: [10.1126/sciadv.aba1983](https://doi.org/10.1126/sciadv.aba1983) · PMID [32832599](https://pubmed.ncbi.nlm.nih.gov/32832599/) · PMC [PMC7439502](https://pmc.ncbi.nlm.nih.gov/articles/PMC7439502/) · GEO [GSE136831](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE136831) (312,928 cells; the aberrant basaloid state used as the transitional population in trial E2).
+Habermann AC, Gutierrez AJ, Bui LT, et al. *Single-cell RNA sequencing reveals profibrotic roles of distinct epithelial and mesenchymal lineages in pulmonary fibrosis.* **Science Advances** 2020;6(28):eaba1972.
+DOI: [10.1126/sciadv.aba1972](https://doi.org/10.1126/sciadv.aba1972) · PMID [32832598](https://pubmed.ncbi.nlm.nih.gov/32832598/) · PMC [PMC7439444](https://pmc.ncbi.nlm.nih.gov/articles/PMC7439444/) · GEO [GSE135893](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE135893) (114,396 cells; the KRT5-negative KRT17-positive and transitional AT2 states used in trial E3).
 
 ### The remaining roadmap papers (no study note yet)
 
