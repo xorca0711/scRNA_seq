@@ -18,9 +18,9 @@ the claim's potential.
 |---|--:|
 | Retracted or superseded, kept on display | 2 |
 | Refuted | 10 |
-| Not establishable with the data that exists | 4 |
-| Not established | 15 |
-| **Total** | **31** |
+| Not establishable with the data that exists | 5 |
+| Not established | 16 |
+| **Total** | **33** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -152,6 +152,13 @@ what was refuted and what settled it.
 - **Artefact:** `none`
 - **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
 
+### C84. Any result in trial C12 is evidence that two cells communicate
+
+- **Status in the register:** Not establishable with the data that exists
+- **What settled it:** no analysis can show this from dissociated data; co-expression carries no proximity, and no permutation P value was computed
+- **Artefact:** `none`
+- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+
 ---
 
 ## Not established
@@ -259,6 +266,13 @@ what was refuted and what settled it.
 - **Status in the register:** Not established
 - **What settled it:** trial C10 T3: blind clustering of the reference library does not concentrate them in one cluster at the frozen thresholds
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_reference_clusters.csv`
+- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+
+### C81. Some pair in CellChatDB outranks the AREG to EGFR axis from epithelium to fibroblast
+
+- **Status in the register:** Not established
+- **What settled it:** trial C12: the ranking that would answer this failed its own pre-registered abundance guard, 11 of the top 15
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan/c12_run_record.json`
 - **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
 
 ---

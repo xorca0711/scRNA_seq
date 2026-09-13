@@ -579,6 +579,34 @@ labelled cells.
      when neutrophils rank third.
    - Rows C73 to C79 in the claims register. Owner retain/reject review pending.
 
+29. **The CellChatDB scan, and the guard that made it readable by refusing to
+   read it** (`c12_cellchatdb_full_resource_scan.py`, 2026-09-13, owner
+   instruction, as the substitute for installing R).
+   - **What it is.** CellChat's own curated resource and scoring logic through
+     liana, on GSE136831, 26 donors and 313 pairs, with the permutation test
+     switched off because its unit is the cell. Not a CellChat rerun, and
+     CellChat itself has still never run here.
+   - **Why not the mouse deposit**, stated before the run: different gene
+     spaces between the series the paper integrates, ligand and receptor from
+     different libraries at different depths, one library of three pooled mice
+     per genotype, and the 184 Areg-high contaminants of C1d would have formed
+     the epithelial side.
+   - **The guard fired.** Eleven of the top fifteen pairs target CD44, with
+     collagen, laminin and fibronectin ligands, so the full-resource ranking
+     reports transcript abundance and T1 and T2 are not read. That is the
+     methods result the trial produced, and it explains why naming a shortlist
+     in advance, as the paper did, is defensible.
+   - **The one clean comparison.** Holding the receptor constant removes the
+     promiscuity effect. Among the five EGFR ligands, AREG is first at median
+     rank 15.5 of 313 across 26 donors, HBEGF second at 48.5, then TGFA, EREG
+     and BTC. The top two match the mouse order from C3; EREG and TGFA swap.
+   - **A fifth rule defect, disclosed.** The guard's own text scopes it to the
+     two readings it names, while the reading gloss in the same docstring says
+     nothing else is read if the guard fires. T4 is reported as provisional
+     with the conflict stated. Reading it vindicates the paper rather than any
+     hypothesis of ours, which is worth noting given the conflict.
+   - Rows C80 to C84 in the claims register. Owner retain/reject review pending.
+
 ---
 
 ## Handoff: session of 2026-09-13, paper 2 and the repository chores

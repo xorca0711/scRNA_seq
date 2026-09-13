@@ -1,0 +1,100 @@
+{
+  "trial": "C12 CellChatDB full-resource scan",
+  "rules_frozen_at": "2026-09-13T12:10:19+00:00",
+  "rules": {
+    "question": "does any pair in the whole CellChatDB outrank the axis the paper followed",
+    "what_this_is_not": "not a CellChat rerun of the paper's analysis; CellChat's resource and scoring logic through LIANA, on different data, read as rankings not significance",
+    "permutations": "switched off (n_perms=None); a cell-level P value beside a group question is the number this repository refuses to emit",
+    "why_not_the_mouse_deposit": [
+      "the paper's configuration integrates GSE247505 epithelium with the niche, and C0 found those sit in different gene spaces",
+      "ligand and receptor would come from different libraries at different depths, confounding every product-based score",
+      "one library of three pooled mice per genotype, so no statistic has a unit",
+      "the mesenchymal library alone carries 184 Areg-high epithelial contaminants (C1d), which would make the epithelial side of the scan the artefact this repository characterised"
+    ],
+    "dataset": "GSE136831, IPF and Control; COPD out of scope as in E2 and E6",
+    "cells": "CellType_Category Epithelial or Stromal, grouped by Manuscript_Identity",
+    "sources": "every epithelial type",
+    "targets": [
+      "Fibroblast",
+      "Myofibroblast"
+    ],
+    "excluded_targets": "Pericyte and SMC, as mural, following E6",
+    "normalisation": "counts to 10,000 per cell then log1p",
+    "method": "LIANA implementation of CellChat, resource cellchatdb",
+    "unit": "the donor; run per donor, floor of 50 cells in both compartments, ranks aggregated by median with the interquartile range reported",
+    "T1": "where AREG to EGFR sits among all epithelium-to-fibroblast pairs, and what outranks it",
+    "T2": "the top 15 pairs with the number of donors each appears in",
+    "T3": "GUARD: if more than half the top 15 are collagen or laminin ligands against integrin or syndecan receptors, the ranking reports abundance and nothing is read",
+    "T4": "the same rank reported against the other ligands of the same receptor, the comparison C3 made",
+    "not_tested": [
+      "whether any pair is an actual interaction, which needs proximity",
+      "anything about the mouse model, for the four reasons above"
+    ]
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE136831\\GSE136831_RawCounts_Sparse.mtx.gz",
+      "bytes": 2150633813,
+      "modified": "2026-09-13T04:57:12+00:00"
+    },
+    {
+      "path": "raw_data\\GSE136831\\GSE136831_AllCells.GeneIDs.txt.gz",
+      "bytes": 323848,
+      "modified": "2026-09-13T04:55:22+00:00"
+    },
+    {
+      "path": "raw_data\\GSE136831\\GSE136831_AllCells.cellBarcodes.txt.gz",
+      "bytes": 1392307,
+      "modified": "2026-09-13T04:55:26+00:00"
+    },
+    {
+      "path": "raw_data\\GSE136831\\GSE136831_AllCells.Samples.CellType.MetadataTable.txt.gz",
+      "bytes": 4308752,
+      "modified": "2026-09-13T04:55:24+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c12_cellchatdb_full_resource_scan\\c12_per_donor_pairs.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c12_cellchatdb_full_resource_scan\\c12_aggregated_ranking.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c12_cellchatdb_full_resource_scan\\c12_same_receptor.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c12_cellchatdb_full_resource_scan\\c12_summary.md"
+  ],
+  "results": {
+    "cells_in_scope": 24637,
+    "donors_usable": 26,
+    "T3": {
+      "top_n": 15,
+      "abundance_pairs": 11,
+      "share": 0.733,
+      "ranking_readable": false
+    },
+    "T1": {
+      "pair": "AREG to EGFR",
+      "overall_rank": 13,
+      "of_pairs": 313,
+      "top_decile_boundary": 31,
+      "note": "median rank 15.5 across 26 donors"
+    },
+    "T4": {
+      "rank_among_ligands_of_EGFR": 1,
+      "n_ligands_of_that_receptor": 5
+    },
+    "reading": "the ranking reports transcript abundance, because 11 of the top 15 pairs are collagen or laminin against integrin or syndecan; neither T1 nor T2 is read"
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T12:52:31+00:00"
+}

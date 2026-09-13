@@ -51,6 +51,7 @@ one-line outcomes is [`trials/README.md`](trials/README.md).
 | [C9](#c9-the-fst-and-runx2-population-pre-registered-2026-09-13) | the pre-registered lead | existence replicates, size does not |
 | [C10](#c10-the-published-pathological-fibroblast-or-not-2026-09-13) | published state or not | the lead closes |
 | [C11](#c11-figures-for-the-contradictions-2026-09-13) | contradiction figures | six drawn |
+| [C12](#c12-the-whole-cellchatdb-ranked-2026-09-13) | the full resource scan | the ranking reports abundance; AREG still first among EGFR ligands |
 
 ---
 
@@ -1245,3 +1246,118 @@ naming the two compartments that do and the exception that does not, since
 mouse neutrophils rank third. And two animals of one group had been given one
 colour while appearing as separate legend entries, which the palette rule
 forbids.
+
+---
+
+## C12. The whole CellChatDB, ranked (2026-09-13)
+
+Script [`trials/c12_cellchatdb_full_resource_scan.py`](trials/c12_cellchatdb_full_resource_scan.py);
+artefacts in [`trials/c12_cellchatdb_full_resource_scan/`](trials/c12_cellchatdb_full_resource_scan/).
+Run on the owner's instruction, as the cheap substitute for installing R.
+
+### What this is, and what it is not
+
+Trial C3 scored four EGFR ligands because those are the ones the paper named.
+This trial scores the authors' entire curated resource, so a pair nobody here
+thought to look at had a chance to appear. It uses CellChat's own resource and
+CellChat's own scoring logic through LIANA's implementation, on human data, and
+reads rankings rather than significance. **The permutation test was switched off
+deliberately**: its unit is the cell, and a cell-level P value beside a group
+question is the number this repository refuses to emit. It is not a CellChat
+rerun of the paper's analysis, and CellChat itself has still never run here.
+
+The mouse deposit was not used, for four reasons stated before the run rather
+than discovered during it. The paper's own configuration integrates GSE247505
+epithelium with the niche, and trial C0 found those sit in different gene
+spaces. Ligand and receptor would then come from different libraries at
+different depths, which confounds every product-based score the method
+computes. Each genotype contributes one library of three pooled mice, so no
+statistic has a unit. And running it on the mesenchymal library alone would put
+the 184 Areg-high epithelial contaminants of trial C1d on the epithelial side
+of the scan, which is the artefact this repository spent three trials
+characterising.
+
+GSE136831 avoids all four: epithelium and fibroblasts come from the same donor
+at the same depth, and 26 donors cleared the 50-cell floor in both
+compartments. 313 pairs survived the donor floor.
+
+### Outcome: the guard fired, and that is the result
+
+The pre-registered guard asked what fraction of the top fifteen pairs are
+collagen or laminin ligands against integrin or syndecan receptors, because
+those are abundant in every fibroblast rather than informative about
+signalling. Eleven of fifteen qualified, and eleven of the top fifteen target
+CD44 alone.
+
+| Rank | Pair | Donors | Median rank |
+|--:|---|--:|--:|
+| 1 | COL4A2 to CD44 | 25 | 3.0 |
+| 2 | COL6A2 to CD44 | 21 | 4.0 |
+| 3 | FN1 to CD44 | 26 | 6.5 |
+| 4 | COL4A1 to CD44 | 25 | 9.0 |
+| 5 | LAMB3 to CD44 | 26 | 9.0 |
+| 6 | APP to CD74 | 26 | 9.5 |
+| 7 | MDK to LRP1 | 26 | 10.5 |
+
+So **the full-resource ranking reports transcript abundance, and T1 and T2 are
+not read.** That is the honest primary outcome, and it is a methods result
+worth more than the ranking would have been: a whole-resource ligand-receptor
+scan on dissociated data puts matrix proteins against a promiscuous receptor at
+the top, because those ligands are the most abundant transcripts a fibroblast
+has. The guard caught the known failure mode exactly as written.
+
+One note on the guard's own arithmetic. It undercounts slightly, because it
+tests for a collagen or laminin ligand or an integrin or syndecan receptor, and
+FN1 to CD44 is plainly an abundance pair that matches neither clause. The
+undercount is in the conservative direction, since the guard fired anyway.
+
+### The one comparison that survives, with its rule conflict disclosed
+
+T4 asked where the axis sits among the ligands of its own receptor, which is
+the comparison trial C3 made in mouse.
+
+| Rank | Pair | Donors | Median rank of 313 | Interquartile range |
+|--:|---|--:|--:|---|
+| 1 | AREG to EGFR | 26 | 15.5 | 10.2 to 40.0 |
+| 2 | HBEGF to EGFR | 26 | 48.5 | 29.2 to 81.5 |
+| 3 | TGFA to EGFR | 24 | 115.5 | 65.5 to 175.2 |
+| 4 | EREG to EGFR | 22 | 131.5 | 83.5 to 192.2 |
+| 5 | BTC to EGFR | 22 | 201.5 | 155.8 to 244.0 |
+
+**AREG is first among the five, across 26 donors, by the authors' own resource
+and scoring, with the donor as the unit.** The top two match the mouse order
+trial C3 found; EREG and TGFA swap places between the species.
+
+The rule conflict, which is the fifth of its shape in this folder and is
+disclosed rather than resolved quietly. T3's own text scopes the guard to T1
+and T2. The reading section, written in the same docstring, says that if T3
+fails then "nothing else is read", which would include T4. The specific rule
+and the general gloss disagree.
+
+T4 is reported here for two reasons, and the reader should weigh them. The
+specific rule names T1 and T2 and not T4. And comparing five ligands of one
+receptor is structurally immune to what the guard detects, since the
+promiscuity of CD44 cannot affect a ranking in which the receptor is held
+constant. Against that, the conflict means T4 was not unambiguously
+pre-registered as readable, so it should be treated as provisional until a
+trial scopes the guard properly. It is worth saying that reading it does not
+flatter any hypothesis of this repository's: it vindicates the paper's choice
+of shortlist, which is not a conclusion anything here was pushing for.
+
+### What it settles
+
+Nothing in the resource outranks the paper's axis in a way that survives the
+guard. Where the comparison is clean, the paper's selection of AREG from among
+the EGFR ligands is the right one in human fibrosis too. The discovery
+affordance that justified this trial, the chance that an unconsidered pair
+would appear, produced matrix-to-CD44 pairs and nothing more.
+
+### Claims from C12
+
+| Claim | Class |
+|---|---|
+| A whole-resource ligand-receptor ranking on dissociated lung reports transcript abundance: 11 of the top 15 pairs target CD44 | Descriptive only, and the methods result the trial actually produced |
+| Some pair in CellChatDB outranks the AREG to EGFR axis | Not established; the ranking that would answer it is unreadable by its own pre-registered guard |
+| Among the five EGFR ligands, AREG ranks first in human fibrosis by CellChat's resource and scoring across 26 donors | Descriptive only, and provisional because of a disclosed conflict between the guard's scope and the reading gloss |
+| The mouse ligand order transfers to human | Partly: the top two match, and EREG and TGFA swap |
+| Any of this is evidence that two cells communicate | Not established, and not establishable without proximity |
