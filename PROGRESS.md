@@ -545,6 +545,40 @@ labelled cells.
      attached to it is wrong. Rows C54, C56 and now C72.
    - Rows C65 to C72 in the claims register. Owner retain/reject review pending.
 
+28. **The lead closes, and every contradiction now has a figure**
+   (`c10_published_state_or_not.py`, `c11_figures_for_the_contradictions.py`,
+   2026-09-13, owner instruction).
+   - **C10 settles what C9 could not.** The Fst and Runx2 double-positive
+     fibroblasts are the published Cthrc1-positive pathological fibroblast of
+     Tsukui et al. 2020. Standardised difference on that set is 1.81 in the
+     reference library and 1.49 and 1.46 in two independent bleomycin animals,
+     and it is the largest of the four sets scored everywhere. Alveolar
+     identity is strongly negative and smooth muscle is flat.
+   - **Cthrc1 was hidden by a ranking cutoff.** It is detected in 44.9 per cent
+     of double-positive against 2.0 per cent of double-negative cells, a
+     difference of 0.428 that fell below C9's top-thirty cutoff of 0.510.
+     Col3a1 is formally unrankable at 1.000 against 0.987.
+   - **So the lead stops here.** This repository re-derived a known fibroblast
+     state from a tumour deposit by an unusual route, which is a method note
+     rather than a finding, and it explains E4: a pathological fibroblast is by
+     definition an injury state. Claim C70's reading is superseded.
+   - **One caveat that does not rescue it.** The double-positive call is partly
+     a depth call, since 342 of 379 such cells sit in the deep half. Depth
+     cannot raise the pathological score while lowering the alveolar score, so
+     the opposite signs rule it out.
+   - **The fourth disclosed rule defect.** T5 covered a computed half that
+     moves and said nothing about a half that cannot be computed; the bleomycin
+     shallow halves hold one and four double-positive cells. The first run
+     treated not computable as failed and suppressed a reading the reference
+     library supports. Code corrected to match the written rule, threshold
+     unmoved. Rows C54, C56, C72 and now C79.
+   - **C11 draws the six contradiction results** from tracked tables only, each
+     with a fail-closed assertion. Drawing them corrected three more
+     overstatements, including a panel title claiming every epithelial state
+     scored the same and a subtitle putting mouse myeloid cells at the bottom
+     when neutrophils rank third.
+   - Rows C73 to C79 in the claims register. Owner retain/reject review pending.
+
 ---
 
 ## Handoff: session of 2026-09-13, paper 2 and the repository chores

@@ -1,0 +1,120 @@
+{
+  "trial": "C11 figures for the contradictions",
+  "rules_frozen_at": "2026-09-13T11:33:53+00:00",
+  "rules": {
+    "purpose": "draw the six results that contradict or refute an earlier trial, a method, or a lead",
+    "inputs": "only tracked tables written by the trial each figure depicts",
+    "computes": "nothing scientific; every number is read from a table",
+    "fail_closed": "each figure asserts the table still says what its title claims, and refuses to draw otherwise"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\e6_donor_level_axis_coupling\\e6_per_donor.csv",
+      "bytes": 4211,
+      "modified": "2026-09-13T08:08:26+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\e6_donor_level_axis_coupling\\e6_correlations.csv",
+      "bytes": 711,
+      "modified": "2026-09-13T08:08:26+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c7_what_the_sort_contaminant_is\\c7_profile_correlations.csv",
+      "bytes": 1154,
+      "modified": "2026-09-13T08:08:26+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c8_subpopulation_or_gradient\\c8_codetection_ratios.csv",
+      "bytes": 742,
+      "modified": "2026-09-13T08:08:26+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c6_who_makes_egfr_ligands\\c6_hbegf_survival.csv",
+      "bytes": 397,
+      "modified": "2026-09-13T05:44:12+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\e2_human_fibrosis_ligand_sources\\e2_ipf_ranking_by_celltype.csv",
+      "bytes": 3241,
+      "modified": "2026-09-13T05:44:12+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c9_the_fst_runx2_population\\c9_per_library.csv",
+      "bytes": 873,
+      "modified": "2026-09-13T11:00:46+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c9_the_fst_runx2_population\\c9_marker_replication.csv",
+      "bytes": 1048,
+      "modified": "2026-09-13T11:00:46+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c9_the_fst_runx2_population\\c9_reference_markers.csv",
+      "bytes": 899,
+      "modified": "2026-09-13T11:00:46+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c10_published_state_or_not\\c10_effect_sizes.csv",
+      "bytes": 541,
+      "modified": "2026-09-13T11:29:28+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c10_published_state_or_not\\c10_saturation_audit.csv",
+      "bytes": 8525,
+      "modified": "2026-09-13T11:29:28+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c11_figures_for_the_contradictions\\c11_fig1_e6_depth_control.png",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c11_figures_for_the_contradictions\\c11_fig2_c7_resolution.png",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c11_figures_for_the_contradictions\\c11_fig3_c8_amplitudes.png",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c11_figures_for_the_contradictions\\c11_fig4_species_divergence.png",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c11_figures_for_the_contradictions\\c11_fig5_c9_existence_vs_size.png",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c11_figures_for_the_contradictions\\c11_fig6_c10_lead_closes.png",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c11_figures_for_the_contradictions\\c11_summary.md"
+  ],
+  "results": {
+    "figures": [
+      {
+        "figure": "E6 depth control",
+        "file": "c11_fig1_e6_depth_control.png"
+      },
+      {
+        "figure": "C7 resolution",
+        "file": "c11_fig2_c7_resolution.png"
+      },
+      {
+        "figure": "C8 amplitudes",
+        "file": "c11_fig3_c8_amplitudes.png"
+      },
+      {
+        "figure": "species divergence",
+        "file": "c11_fig4_species_divergence.png"
+      },
+      {
+        "figure": "C9 existence against size",
+        "file": "c11_fig5_c9_existence_vs_size.png"
+      },
+      {
+        "figure": "C10 the lead closes",
+        "file": "c11_fig6_c10_lead_closes.png"
+      }
+    ]
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T11:34:20+00:00"
+}

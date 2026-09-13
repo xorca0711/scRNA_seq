@@ -1,0 +1,151 @@
+library,gene,set,det_double_positive,det_double_negative,difference,unrankable
+Expt3_Het_niche,1110038B12Rik,C9 top 30,0.7388,0.2289,0.5099,False
+Expt3_Het_niche,AI506816,C9 top 30,0.7625,0.2511,0.5114,False
+Expt3_Het_niche,Acta2,smooth_muscle,0.7441,0.3643,0.3798,False
+Expt3_Het_niche,Basp1,C9 top 30,0.7757,0.1844,0.5913,False
+Expt3_Het_niche,Bmp1,C9 top 30,0.8074,0.2806,0.5268,False
+Expt3_Het_niche,Bmper,C9 top 30,0.8443,0.2649,0.5794,False
+Expt3_Het_niche,Cemip2,C9 top 30,0.723,0.1799,0.5431,False
+Expt3_Het_niche,Chst11,C9 top 30,0.7731,0.1642,0.6089,False
+Expt3_Het_niche,Col13a1,alveolar,0.3272,0.4303,-0.1032,False
+Expt3_Het_niche,Col14a1,adventitial,0.4697,0.62,-0.1504,False
+Expt3_Het_niche,Col1a1,group definition,1.0,1.0,0.0,True
+Expt3_Het_niche,Col3a1,pathological,1.0,0.9869,0.0131,True
+Expt3_Het_niche,Cotl1,C9 top 30,0.6148,0.1007,0.5141,False
+Expt3_Het_niche,Cthrc1,pathological,0.4485,0.0203,0.4283,False
+Expt3_Het_niche,Ctsc,C9 top 30,0.905,0.3427,0.5623,False
+Expt3_Het_niche,Dcn,adventitial,0.81,0.6553,0.1547,False
+Expt3_Het_niche,Dock5,C9 top 30,0.7784,0.1988,0.5795,False
+Expt3_Het_niche,Elk3,C9 top 30,0.81,0.2368,0.5733,False
+Expt3_Het_niche,Enc1,C9 top 30,0.6675,0.1452,0.5224,False
+Expt3_Het_niche,Fam78b,C9 top 30,0.6939,0.1615,0.5324,False
+Expt3_Het_niche,Fkbp5,C9 top 30,0.81,0.2727,0.5373,False
+Expt3_Het_niche,Fn1,pathological,0.9763,0.7305,0.2457,False
+Expt3_Het_niche,Fst,group definition,1.0,0.0,1.0,False
+Expt3_Het_niche,Gtf2ird1,C9 top 30,0.752,0.1975,0.5545,False
+Expt3_Het_niche,Kif26b,C9 top 30,0.7916,0.0974,0.6941,False
+Expt3_Het_niche,Lhfpl2,C9 top 30,0.7573,0.1668,0.5905,False
+Expt3_Het_niche,Lrrc4,C9 top 30,0.6702,0.1504,0.5198,False
+Expt3_Het_niche,Ltbp2,C9 top 30,0.876,0.2112,0.6647,False
+Expt3_Het_niche,Megf11,C9 top 30,0.5541,0.0386,0.5155,False
+Expt3_Het_niche,Myh11,smooth_muscle,0.1108,0.1929,-0.0821,False
+Expt3_Het_niche,Npnt,alveolar,0.6385,0.6089,0.0296,False
+Expt3_Het_niche,P4ha3,C9 top 30,0.6332,0.0929,0.5404,False
+Expt3_Het_niche,Pdgfra,alveolar,0.8602,0.7037,0.1564,False
+Expt3_Het_niche,Pi16,adventitial,0.1187,0.2727,-0.154,False
+Expt3_Het_niche,Piezo2,C9 top 30,0.8786,0.1844,0.6942,False
+Expt3_Het_niche,Postn,pathological,0.3061,0.1805,0.1256,False
+Expt3_Het_niche,Prrx2,C9 top 30,0.686,0.1465,0.5395,False
+Expt3_Het_niche,Rab31,C9 top 30,0.8364,0.2838,0.5526,False
+Expt3_Het_niche,Rai14,C9 top 30,0.6939,0.1419,0.552,False
+Expt3_Het_niche,Rftn1,C9 top 30,0.847,0.2734,0.5736,False
+Expt3_Het_niche,Rnf149,C9 top 30,0.6913,0.0994,0.5919,False
+Expt3_Het_niche,Ror2,C9 top 30,0.8153,0.278,0.5373,False
+Expt3_Het_niche,Runx2,group definition,1.0,0.0,1.0,False
+Expt3_Het_niche,Scube2,alveolar,0.1979,0.3172,-0.1193,False
+Expt3_Het_niche,Sdc1,C9 top 30,0.6438,0.0746,0.5692,False
+Expt3_Het_niche,Sept9,C9 top 30,0.715,0.2041,0.511,False
+Expt3_Het_niche,Spp1,pathological,0.6623,0.191,0.4713,False
+Expt3_Het_niche,Tcf21,alveolar,0.2533,0.4061,-0.1528,False
+Expt3_Het_niche,Thsd4,smooth_muscle,0.5831,0.2387,0.3444,False
+Expt3_Het_niche,Tnc,pathological,0.6702,0.2191,0.4511,False
+Bleo1_GFPp,1110038B12Rik,C9 top 30,,,,False
+Bleo1_GFPp,AI506816,C9 top 30,,,,False
+Bleo1_GFPp,Acta2,smooth_muscle,0.75,0.3734,0.3766,False
+Bleo1_GFPp,Basp1,C9 top 30,0.8125,0.1074,0.7051,False
+Bleo1_GFPp,Bmp1,C9 top 30,0.375,0.1687,0.2063,False
+Bleo1_GFPp,Bmper,C9 top 30,0.3438,0.1322,0.2115,False
+Bleo1_GFPp,Cemip2,C9 top 30,,,,False
+Bleo1_GFPp,Chst11,C9 top 30,0.125,0.0272,0.0978,False
+Bleo1_GFPp,Col13a1,alveolar,0.1562,0.3996,-0.2434,False
+Bleo1_GFPp,Col14a1,adventitial,0.1875,0.3476,-0.1601,False
+Bleo1_GFPp,Col1a1,group definition,1.0,1.0,0.0,True
+Bleo1_GFPp,Col3a1,pathological,1.0,0.9703,0.0297,True
+Bleo1_GFPp,Cotl1,C9 top 30,0.625,0.0846,0.5404,False
+Bleo1_GFPp,Cthrc1,pathological,0.6875,0.1327,0.5548,False
+Bleo1_GFPp,Ctsc,C9 top 30,0.875,0.3904,0.4846,False
+Bleo1_GFPp,Dcn,adventitial,0.8125,0.5469,0.2656,False
+Bleo1_GFPp,Dock5,C9 top 30,0.25,0.0131,0.2369,False
+Bleo1_GFPp,Elk3,C9 top 30,0.4688,0.1094,0.3594,False
+Bleo1_GFPp,Enc1,C9 top 30,0.3125,0.0749,0.2376,False
+Bleo1_GFPp,Fam78b,C9 top 30,0.0625,0.0175,0.045,False
+Bleo1_GFPp,Fkbp5,C9 top 30,0.25,0.0413,0.2087,False
+Bleo1_GFPp,Fn1,pathological,0.9688,0.7428,0.2259,False
+Bleo1_GFPp,Fst,group definition,1.0,0.0,1.0,False
+Bleo1_GFPp,Gtf2ird1,C9 top 30,0.2812,0.0603,0.221,False
+Bleo1_GFPp,Kif26b,C9 top 30,0.5625,0.0535,0.509,False
+Bleo1_GFPp,Lhfpl2,C9 top 30,0.3125,0.0895,0.223,False
+Bleo1_GFPp,Lrrc4,C9 top 30,0.0,0.0019,-0.0019,True
+Bleo1_GFPp,Ltbp2,C9 top 30,0.875,0.3709,0.5041,False
+Bleo1_GFPp,Megf11,C9 top 30,0.3438,0.0243,0.3194,False
+Bleo1_GFPp,Myh11,smooth_muscle,0.0625,0.0788,-0.0163,False
+Bleo1_GFPp,Npnt,alveolar,0.5,0.5999,-0.0999,False
+Bleo1_GFPp,P4ha3,C9 top 30,0.6562,0.1293,0.5269,False
+Bleo1_GFPp,Pdgfra,alveolar,0.5938,0.4895,0.1042,False
+Bleo1_GFPp,Pi16,adventitial,0.0938,0.1347,-0.0409,False
+Bleo1_GFPp,Piezo2,C9 top 30,0.5312,0.0812,0.4501,False
+Bleo1_GFPp,Postn,pathological,0.6562,0.1721,0.4842,False
+Bleo1_GFPp,Prrx2,C9 top 30,0.5312,0.1672,0.364,False
+Bleo1_GFPp,Rab31,C9 top 30,0.4062,0.1084,0.2978,False
+Bleo1_GFPp,Rai14,C9 top 30,0.125,0.0267,0.0983,False
+Bleo1_GFPp,Rftn1,C9 top 30,0.2812,0.123,0.1583,False
+Bleo1_GFPp,Rnf149,C9 top 30,0.5938,0.1512,0.4426,False
+Bleo1_GFPp,Ror2,C9 top 30,0.25,0.0423,0.2077,False
+Bleo1_GFPp,Runx2,group definition,1.0,0.0,1.0,False
+Bleo1_GFPp,Scube2,alveolar,0.0312,0.2509,-0.2196,False
+Bleo1_GFPp,Sdc1,C9 top 30,0.625,0.087,0.538,False
+Bleo1_GFPp,Sept9,C9 top 30,0.4688,0.0895,0.3793,False
+Bleo1_GFPp,Spp1,pathological,0.4688,0.1736,0.2952,False
+Bleo1_GFPp,Tcf21,alveolar,0.4062,0.5134,-0.1071,False
+Bleo1_GFPp,Thsd4,smooth_muscle,0.125,0.0219,0.1031,False
+Bleo1_GFPp,Tnc,pathological,0.75,0.227,0.523,False
+Bleo2_GFPp,1110038B12Rik,C9 top 30,,,,False
+Bleo2_GFPp,AI506816,C9 top 30,,,,False
+Bleo2_GFPp,Acta2,smooth_muscle,0.5946,0.3989,0.1957,False
+Bleo2_GFPp,Basp1,C9 top 30,0.5135,0.0984,0.4152,False
+Bleo2_GFPp,Bmp1,C9 top 30,0.4054,0.1627,0.2427,False
+Bleo2_GFPp,Bmper,C9 top 30,0.5405,0.1324,0.4082,False
+Bleo2_GFPp,Cemip2,C9 top 30,,,,False
+Bleo2_GFPp,Chst11,C9 top 30,0.0541,0.0291,0.0249,False
+Bleo2_GFPp,Col13a1,alveolar,0.1892,0.4396,-0.2504,False
+Bleo2_GFPp,Col14a1,adventitial,0.1081,0.2957,-0.1876,False
+Bleo2_GFPp,Col1a1,group definition,1.0,1.0,0.0,True
+Bleo2_GFPp,Col3a1,pathological,0.973,0.9672,0.0058,True
+Bleo2_GFPp,Cotl1,C9 top 30,0.5135,0.099,0.4145,False
+Bleo2_GFPp,Cthrc1,pathological,0.6216,0.0577,0.5639,False
+Bleo2_GFPp,Ctsc,C9 top 30,0.7568,0.5282,0.2285,False
+Bleo2_GFPp,Dcn,adventitial,0.6486,0.4985,0.1502,False
+Bleo2_GFPp,Dock5,C9 top 30,0.027,0.017,0.01,True
+Bleo2_GFPp,Elk3,C9 top 30,0.3784,0.1081,0.2703,False
+Bleo2_GFPp,Enc1,C9 top 30,0.3243,0.0801,0.2442,False
+Bleo2_GFPp,Fam78b,C9 top 30,0.0541,0.0182,0.0358,False
+Bleo2_GFPp,Fkbp5,C9 top 30,0.2162,0.0589,0.1573,False
+Bleo2_GFPp,Fn1,pathological,0.9459,0.7377,0.2082,False
+Bleo2_GFPp,Fst,group definition,1.0,0.0,1.0,False
+Bleo2_GFPp,Gtf2ird1,C9 top 30,0.2973,0.0571,0.2402,False
+Bleo2_GFPp,Kif26b,C9 top 30,0.3514,0.0443,0.307,False
+Bleo2_GFPp,Lhfpl2,C9 top 30,0.2162,0.082,0.1342,False
+Bleo2_GFPp,Lrrc4,C9 top 30,0.027,0.0049,0.0222,True
+Bleo2_GFPp,Ltbp2,C9 top 30,0.8649,0.4353,0.4295,False
+Bleo2_GFPp,Megf11,C9 top 30,0.3514,0.034,0.3174,False
+Bleo2_GFPp,Myh11,smooth_muscle,0.1081,0.1154,-0.0073,False
+Bleo2_GFPp,Npnt,alveolar,0.4595,0.6424,-0.1829,False
+Bleo2_GFPp,P4ha3,C9 top 30,0.5946,0.1396,0.4549,False
+Bleo2_GFPp,Pdgfra,alveolar,0.4054,0.4511,-0.0457,False
+Bleo2_GFPp,Pi16,adventitial,0.0541,0.0929,-0.0388,False
+Bleo2_GFPp,Piezo2,C9 top 30,0.5405,0.0765,0.464,False
+Bleo2_GFPp,Postn,pathological,0.5946,0.1724,0.4222,False
+Bleo2_GFPp,Prrx2,C9 top 30,0.5946,0.1433,0.4513,False
+Bleo2_GFPp,Rab31,C9 top 30,0.2432,0.1184,0.1248,False
+Bleo2_GFPp,Rai14,C9 top 30,0.0811,0.0255,0.0556,False
+Bleo2_GFPp,Rftn1,C9 top 30,0.3514,0.1014,0.25,False
+Bleo2_GFPp,Rnf149,C9 top 30,0.6486,0.1615,0.4871,False
+Bleo2_GFPp,Ror2,C9 top 30,0.1622,0.0504,0.1118,False
+Bleo2_GFPp,Runx2,group definition,1.0,0.0,1.0,False
+Bleo2_GFPp,Scube2,alveolar,0.027,0.2708,-0.2438,False
+Bleo2_GFPp,Sdc1,C9 top 30,0.4324,0.0929,0.3395,False
+Bleo2_GFPp,Sept9,C9 top 30,0.3243,0.0844,0.2399,False
+Bleo2_GFPp,Spp1,pathological,0.6757,0.3388,0.3369,False
+Bleo2_GFPp,Tcf21,alveolar,0.2703,0.5513,-0.281,False
+Bleo2_GFPp,Thsd4,smooth_muscle,0.2432,0.031,0.2123,False
+Bleo2_GFPp,Tnc,pathological,0.7027,0.2617,0.441,False

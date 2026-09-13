@@ -17,10 +17,10 @@ the claim's potential.
 | Bucket | Rows |
 |---|--:|
 | Retracted or superseded, kept on display | 2 |
-| Refuted | 7 |
+| Refuted | 10 |
 | Not establishable with the data that exists | 4 |
-| Not established | 14 |
-| **Total** | **27** |
+| Not established | 15 |
+| **Total** | **31** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -97,6 +97,27 @@ what was refuted and what settled it.
 - **Status in the register:** Refuted
 - **What settled it:** trial D0: no non-gene features in any library
 - **Artefact:** `Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv`
+- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+
+### C75. Cthrc1 was absent from trial C9's top thirty because it fails to discriminate
+
+- **Status in the register:** Refuted
+- **What settled it:** trial C10 T2: Cthrc1 detected in 44.9% of double-positive against 2.0% of double-negative cells in the reference library, a difference of 0.428 against that list's cutoff of 0.510
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_saturation_audit.csv`
+- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+
+### C76. Trial C9's marker signature is a new fibroblast programme
+
+- **Status in the register:** Refuted; supersedes the reading of C70
+- **What settled it:** trial C10: the same cells score highest on the published pathological set of the four tested
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_summary.md`
+- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+
+### C79. Trial C10's depth rule covered a half that cannot be computed
+
+- **Status in the register:** Refuted as written, and disclosed
+- **What settled it:** trial C10 T5: the bleomycin shallow halves hold one and four double-positive cells; the first run treated not computable as failed and suppressed a reading the reference library supports
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_run_record.json`
 - **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
 
 ---
@@ -231,6 +252,13 @@ what was refuted and what settled it.
 - **Status in the register:** Not established as a meaningful figure
 - **What settled it:** trial C9 T4: the median gene's bleomycin difference is 0.535 of its reference difference against a threshold of 0.5, and the bleomycin libraries carry half the genes per cell
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_marker_replication.csv`
+- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+
+### C77. The double-positives form a distinct population rather than a graded state
+
+- **Status in the register:** Not established
+- **What settled it:** trial C10 T3: blind clustering of the reference library does not concentrate them in one cluster at the frozen thresholds
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_reference_clusters.csv`
 - **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
 
 ---
