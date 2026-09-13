@@ -379,6 +379,7 @@ labelled cells.
      preference. **It is deliberately not a CellChat rerun**: CellChat is
      R-only and this machine has no R, so the trial re-derives the expression
      fact the communication claim rests on and states what it is not.
+   - **C5, 2026-09-13: three corrections.** Hbegf is second by abundance but third by enrichment over AT2 in three of four libraries; the 4-day replicates disagree 24-fold on the DATP-like share; the fibrotic response is three graded tiers, not a split. Rationale and next steps: `Thesis/gate2_05_cardoso_2026/DIVERGENCES_AND_NEXT.md`.
    - Status of every row: Descriptive only or Exploratory at best, by the
      replication constraint. Owner retain/reject review pending on all of it.
      The two decisions that matter: whether cluster 14 is the published

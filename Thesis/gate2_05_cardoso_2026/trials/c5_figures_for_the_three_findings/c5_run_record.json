@@ -1,0 +1,234 @@
+{
+  "trial": "C5 figures for the three findings",
+  "rules_frozen_at": "2026-09-13T03:35:50+00:00",
+  "rules": {
+    "provenance_of_these_rules": "fixed after the C1d, C2 and C3 tables had been seen; post hoc and disclosed",
+    "enrichment": "mean log1p(CP10K) DATP-like minus AT2, same library; detection ratio tabulated, not plotted",
+    "ligand_libraries_plotted": [
+      "Expt1_4dRFPr1",
+      "Expt1_4dRFPr2",
+      "Expt1_2wRFPr1",
+      "Expt1_2wRFPr2"
+    ],
+    "retention": "Areg-flox/flox over Areg-flox/+ detection; Confetti column not plotted (depth-confounded)",
+    "cluster11_check_genes": [
+      "Epcam",
+      "Cdh1",
+      "Krt8",
+      "Krt18",
+      "Sftpc",
+      "Lamp3",
+      "Cldn4",
+      "Sox9",
+      "Itga2",
+      "Ager",
+      "Hopx",
+      "Areg",
+      "Col1a1",
+      "Pdgfra"
+    ],
+    "palette": {
+      "surface": "#fcfcfb",
+      "grouped_bars_adjacent": [
+        "#2a78d6",
+        "#eb6834",
+        "#1baf7a",
+        "#eda100"
+      ],
+      "scatter_all_pairs": [
+        "#2a78d6",
+        "#eb6834"
+      ],
+      "dumbbell_all_pairs": [
+        "#5598e7",
+        "#184f95"
+      ],
+      "validation": "all hard checks pass (light); contrast WARN on aqua, yellow and the lighter blue, relieved by the tables"
+    },
+    "unit": "the library; no P value"
+  },
+  "notes": "plots and derives from tracked tables; fits nothing",
+  "inputs": [
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c1d_sort_purity\\c1d_sort_purity_by_cluster.csv",
+      "bytes": 1213,
+      "modified": "2026-09-12T13:30:06+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c2_areg_deletion_arm\\c2_fibrotic_programme_survival.csv",
+      "bytes": 697,
+      "modified": "2026-09-12T13:39:32+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_ligand_expression.csv",
+      "bytes": 3876,
+      "modified": "2026-09-12T14:24:53+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_state_composition.csv",
+      "bytes": 2542,
+      "modified": "2026-09-12T14:24:53+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c1b_characterise_red2kras_private\\c1b_mesenchyme.h5ad",
+      "bytes": 135178233,
+      "modified": "2026-09-12T13:17:15+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c5_figures_for_the_three_findings\\c5_ligand_abundance_and_enrichment.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c5_figures_for_the_three_findings\\c5_ligand_rankings.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c5_figures_for_the_three_findings\\c5_datp_like_share_per_library.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c5_figures_for_the_three_findings\\c5_fibrotic_retention.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c5_figures_for_the_three_findings\\c5_cluster11_discriminating_check.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c5_figures_for_the_three_findings\\c5_fig1_sort_contaminant.png",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c5_figures_for_the_three_findings\\c5_fig2_fibrotic_programme_split.png",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c5_figures_for_the_three_findings\\c5_fig3_egfr_ligands_abundance_vs_enrichment.png",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c5_figures_for_the_three_findings\\c5_summary.md"
+  ],
+  "results": {
+    "hbegf_second_by_abundance_in_libraries": 4,
+    "hbegf_second_by_enrichment_in_libraries": 1,
+    "datp_like_share_4d_replicates": [
+      {
+        "library": "Expt1_4dRFPr1",
+        "n_cells": 44,
+        "pct_of_library": 1.16
+      },
+      {
+        "library": "Expt1_4dRFPr2",
+        "n_cells": 541,
+        "pct_of_library": 28.16
+      }
+    ],
+    "retention": [
+      {
+        "gene": "Runx1",
+        "retention_pct": 97.1,
+        "reading": "retained"
+      },
+      {
+        "gene": "Pdgfrb",
+        "retention_pct": 86.0,
+        "reading": "retained"
+      },
+      {
+        "gene": "Acta2",
+        "retention_pct": 77.1,
+        "reading": "falls by about a quarter"
+      },
+      {
+        "gene": "Tnc",
+        "retention_pct": 75.5,
+        "reading": "falls by about a quarter"
+      },
+      {
+        "gene": "Fst",
+        "retention_pct": 42.4,
+        "reading": "falls by more than half"
+      },
+      {
+        "gene": "Runx2",
+        "retention_pct": 39.4,
+        "reading": "falls by more than half"
+      }
+    ],
+    "cluster11_check": [
+      {
+        "group": "cluster 11",
+        "n_cells": 184,
+        "pct_Epcam": 78.3,
+        "pct_Cdh1": 71.2,
+        "pct_Krt8": 90.8,
+        "pct_Krt18": 92.9,
+        "pct_Sftpc": 56.5,
+        "pct_Lamp3": 43.5,
+        "pct_Cldn4": 60.3,
+        "pct_Sox9": 47.8,
+        "pct_Itga2": 62.5,
+        "pct_Ager": 54.9,
+        "pct_Hopx": 45.7,
+        "pct_Areg": 88.0,
+        "pct_Col1a1": 21.2,
+        "pct_Pdgfra": 10.9,
+        "pct_Krt8_and_Col1a1": 19.0,
+        "median_doublet_score": 0.0615
+      },
+      {
+        "group": "cluster 12",
+        "n_cells": 39,
+        "pct_Epcam": 84.6,
+        "pct_Cdh1": 79.5,
+        "pct_Krt8": 89.7,
+        "pct_Krt18": 92.3,
+        "pct_Sftpc": 23.1,
+        "pct_Lamp3": 0.0,
+        "pct_Cldn4": 25.6,
+        "pct_Sox9": 7.7,
+        "pct_Itga2": 0.0,
+        "pct_Ager": 0.0,
+        "pct_Hopx": 82.1,
+        "pct_Areg": 69.2,
+        "pct_Col1a1": 23.1,
+        "pct_Pdgfra": 10.3,
+        "pct_Krt8_and_Col1a1": 23.1,
+        "median_doublet_score": 0.069
+      },
+      {
+        "group": "cluster 14",
+        "n_cells": 937,
+        "pct_Epcam": 0.7,
+        "pct_Cdh1": 0.0,
+        "pct_Krt8": 0.3,
+        "pct_Krt18": 2.6,
+        "pct_Sftpc": 8.5,
+        "pct_Lamp3": 0.4,
+        "pct_Cldn4": 0.6,
+        "pct_Sox9": 4.2,
+        "pct_Itga2": 3.7,
+        "pct_Ager": 1.0,
+        "pct_Hopx": 4.7,
+        "pct_Areg": 3.8,
+        "pct_Col1a1": 89.9,
+        "pct_Pdgfra": 69.5,
+        "pct_Krt8_and_Col1a1": 0.3,
+        "median_doublet_score": 0.0366
+      },
+      {
+        "group": "whole object",
+        "n_cells": 11690,
+        "pct_Epcam": 2.5,
+        "pct_Cdh1": 2.3,
+        "pct_Krt8": 6.5,
+        "pct_Krt18": 8.9,
+        "pct_Sftpc": 6.3,
+        "pct_Lamp3": 0.8,
+        "pct_Cldn4": 1.3,
+        "pct_Sox9": 4.9,
+        "pct_Itga2": 4.3,
+        "pct_Ager": 1.3,
+        "pct_Hopx": 10.6,
+        "pct_Areg": 3.6,
+        "pct_Col1a1": 80.7,
+        "pct_Pdgfra": 51.5,
+        "pct_Krt8_and_Col1a1": 3.8,
+        "median_doublet_score": 0.0351
+      }
+    ]
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T03:35:59+00:00"
+}

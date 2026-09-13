@@ -501,3 +501,32 @@ weeks. Two libraries per arm: a ranking, not a trend, and no test is computed.
 | The DATP-like state is nearly absent from wild-type clones in the same animals (0.08% and 1.1%) | Descriptive only |
 | Replicate libraries mix within every arm (1.53 to 1.80 against a threshold of 2.0), so no batch correction is applied | Descriptive only (a decision record, the counterpart of C5) |
 | Anything about whether fibroblasts receive this signal | Not established, and not establishable without a communication analysis this machine cannot run |
+
+---
+
+## C5. Figures for the three findings, and three corrections (2026-09-13)
+
+Script [`trials/c5_figures_for_the_three_findings.py`](trials/c5_figures_for_the_three_findings.py);
+artefacts in [`trials/c5_figures_for_the_three_findings/`](trials/c5_figures_for_the_three_findings/).
+The rationale, biology and next steps for all three findings are in
+[`DIVERGENCES_AND_NEXT.md`](DIVERGENCES_AND_NEXT.md).
+
+None of the earlier trial figures showed the three findings. Drawing them
+forced three corrections to wording used above and in the session summary.
+The rows above are left as written; these supersede them.
+
+1. **C3, T2 and claim C33.** Hbegf is second by abundance in every mutant
+   library, but third by enrichment over AT2 cells of the same library in three
+   of four, where Ereg is second. The sentence "Hbegf ranks ahead of the ligand
+   the paper followed into culture" was true of abundance only.
+2. **C3, T3 and T4.** The 4-day replicates disagree about 24-fold on the
+   DATP-like share (1.2%, 44 cells; 28.2%, 541 cells). The 14.7% median
+   describes neither library.
+3. **C2, Part B and claim C29.** The fibrotic response is graded in three tiers,
+   not split in two: Runx1 97% and Pdgfrb 86% retained, Tnc 76% and Acta2 77%,
+   Fst 42% and Runx2 39%. The frozen 80% line made it binary.
+
+A discriminating check on cluster 11 also narrows the contaminant: Epcam mRNA
+is present in 78% of its cells, so the RNA does not support mutant cells
+escaping the sort by losing Epcam; about one in five cells co-detects Krt8 and
+Col1a1, a doublet minority.
