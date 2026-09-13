@@ -30,6 +30,7 @@ violate, is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Repository framing, and what is displaced as established elsewhere | Me (instruction 2026-09-10); AI-assisted execution |
 | Reading the Cardoso 2026 deposit in gates, and stopping Gate 1 when it failed (`Thesis/gate2_05_cardoso_2026/`) | Me (instruction and gate design 2026-09-12); AI-assisted execution, rules frozen before each run; my review pending |
 | Relaxing the displaced-material rule for the reference-aligned primary-marker panels (PR #12) | Me (decision 2026-09-13, against the agent's recommendation to hold them back); the agent had preserved them on a branch rather than reverting them, and flagged both the displaced-material rule and the non-validated palette; the palette is still unaddressed |
+| Pre-registering the post hoc Fst and Runx2 lead and running it (trial C9) | Me (instruction 2026-09-13); AI-assisted execution. The agent named the untestable half before running, reported that the effect size its own trial computed is not usable, and disclosed that T1 and T5 were not composable; my review pending on rows C65 to C72 |
 | Returning to roadmap order with Choi 2020, and accepting that the target lab's own deposit has the same replication ceiling as the Cardoso one (study note, extract, trial D0) | Me (instruction 2026-09-13); AI-assisted execution, with the marker sets read from the Europe PMC XML after the agent found the PMC rendering strips gene symbols; my review pending on rows C58 to C64 |
 | Promoting the generic deposit readers out of the Cardoso helper module into the shared one | Agent proposal, my approval implied by the instruction to proceed; a gate1 folder importing from a gate2 folder was the wrong dependency direction. Verified by importing all 19 Cardoso trial modules and re-running two trials to identical results; cardoso_utils re-exports so nothing written against it changed |
 | Choosing the three follow-up questions off the agent's ranked list, and accepting three negative answers plus two disclosed rule defects (trials E6, C7, C8) | Me (selection 2026-09-13); AI-assisted execution with readings frozen before the data were opened; the agent reported the margin that refuses its own C7 answer and the zero-inflation that voids its own C8 mixture test; my review pending on rows C49 to C57 |
@@ -411,6 +412,46 @@ was right, no number changed, and the summary now names both groups.
 Mine to retain or reject: rows C58 to C64, and whether Gate 1 on this paper is
 worth running given that only the trajectory question is answerable without
 replication.
+
+**22 · A frozen rule has to say what would make its own answer unreadable.**
+(2026-09-13, under review.) I asked for the post hoc Fst and Runx2 lead from
+trial C8 to be given a pre-registration of its own. It was, and the trial did
+three things I want on the record.
+
+It named what it could not do before it ran. Whether Areg deletion depletes
+that population is not testable with anything on disk, one library per genotype
+and no other Areg-flox fibroblast dataset, and the trial said so in its own
+docstring rather than producing a number that looked like an answer.
+
+It separated existence from magnitude, and only one of them survived. Above
+chance co-occurrence replicates in both bleomycin animals against a null that
+holds sequencing depth fixed by construction, p = 0.005 and 0.010, in a dataset
+with no oncogene. The size of the effect does not: about thirty double-positive
+cells per library cannot support a stable ratio, and the agent said that rather
+than quoting the ratios it had computed.
+
+And for the third time in this folder, writing the numbers out exposed a defect
+in a rule rather than in a result. T1's criterion rested on a ratio that T5
+forbade reading, so the two rules were not composable; the implementation took
+the conservative branch, its verdict stands, and the agent flagged that the
+pre-registered reading attached to that verdict is not what the data did. The
+same shape appeared in C7, where the profile test named a winner without
+requiring a margin, and in C8, where a mixture test was applied to a
+zero-inflated score. The lesson I am taking from the three together is the one
+the agent stated: freezing a threshold is not enough, and a rule also has to
+say in advance what would make its own answer unreadable.
+
+The magnitude criterion in T4 is a fourth instance of the same thing, caught
+the same way. Nine of twenty-seven markers cleared "at least half the reference
+magnitude", and the median marker sits at 0.535 against that 0.5 line while the
+comparison libraries carry half the genes per cell. The criterion was measuring
+depth. What does survive is stronger and simpler: twenty-six of twenty-seven
+markers point the same way in both animals.
+
+Mine to retain or reject: rows C65 to C72, and whether the matrix and mechanics
+programme those cells carry (Piezo2, Ltbp2, P4ha3, Sdc1, Prrx2) is worth a
+pre-registration of its own, given that it points away from the Areg axis
+rather than into it.
 
 ## How outputs were reviewed
 
