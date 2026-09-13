@@ -1,0 +1,111 @@
+{
+  "trial": "E6 donor-level coupling of the AREG to EGFR axis in human fibrosis",
+  "rules_frozen_at": "2026-09-13T07:56:49+00:00",
+  "rules": {
+    "dataset": "GSE136831 (Adams et al. 2020), deposited raw counts and metadata",
+    "donors": "Subject_Identity, Disease_Identity in IPF or Control; COPD out of scope as in E2",
+    "epithelium": "CellType_Category == \"Epithelial\", pooled",
+    "fibroblasts": "Manuscript_Identity in Fibroblast or Myofibroblast; pericytes and smooth muscle excluded as mural",
+    "measure": "fraction of cells with a non-zero count",
+    "depth": "median deposited nGene per cell, per donor and compartment",
+    "activation_score": "mean detection of COL1A1, ACTA2, POSTN, CTHRC1, TNC",
+    "floors": {
+      "cells_per_donor_compartment": 50,
+      "donors_per_correlation": 10
+    },
+    "T8": "primary: Spearman, epithelial AREG detection against fibroblast EGFR detection, two-sided alpha 0.05",
+    "T9": "Spearman, epithelial AREG detection against the fibroblast activation score",
+    "T10": "ligand control: T8 and T9 recomputed with epithelial TGFA in place of AREG",
+    "T11": "depth control: if both members of a pair correlate with depth at |rho| >= 0.4, the pair is confounded and is not read",
+    "T12": "disease-severity control: T8 and T9 within IPF donors only",
+    "reading_fixed_in_advance": {
+      "significant_not_confounded_and_holds_within_ipf": "the axis shows donor-level coupling in human fibrotic lung; correlational, no proximity",
+      "significant_pooled_but_not_within_ipf": "consistent with both variables tracking disease severity; no coupling claim",
+      "not_significant": "no donor-level coupling detectable at this sample size; report the detectable effect size",
+      "tgfa_matches_areg": "any coupling is a general EGFR-ligand pattern, not specific to AREG"
+    },
+    "unit": "the donor",
+    "caveats": [
+      "a correlation carries no direction and no proximity",
+      "the epithelial pool mixes states, so a null could be dilution as in E1b",
+      "detection fractions depend on depth",
+      "the IPF donor count bounds the smallest detectable effect"
+    ]
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE136831\\GSE136831_AllCells.Samples.CellType.MetadataTable.txt.gz",
+      "bytes": 4308752,
+      "modified": "2026-09-13T04:55:24+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e6_donor_level_axis_coupling\\e6_per_donor.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e6_donor_level_axis_coupling\\e6_correlations.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e6_donor_level_axis_coupling\\e6_summary.md"
+  ],
+  "results": {
+    "cells_in_scope": 243472,
+    "epithelial_cells": 18030,
+    "fibroblast_cells": 5380,
+    "donors_with_both_compartments": 22,
+    "donors_by_disease": {
+      "IPF": 18,
+      "Control": 4
+    },
+    "smallest_detectable_rho": {
+      "pooled": 0.428,
+      "ipf_only": 0.475
+    },
+    "verdicts": [
+      {
+        "test": "T8 primary",
+        "stratum": "pooled",
+        "rho": 0.3484,
+        "p_value": 0.11207,
+        "depth_confounded": false,
+        "reading": "no donor-level coupling detectable at this sample size; report the detectable effect size"
+      },
+      {
+        "test": "T9",
+        "stratum": "pooled",
+        "rho": -0.1496,
+        "p_value": 0.506287,
+        "depth_confounded": false,
+        "reading": "no donor-level coupling detectable at this sample size; report the detectable effect size"
+      },
+      {
+        "test": "T10 ligand control",
+        "stratum": "pooled",
+        "rho": 0.2434,
+        "p_value": 0.275112,
+        "depth_confounded": true,
+        "reading": "both variables correlate with depth at or above the frozen line; not read"
+      },
+      {
+        "test": "T10 ligand control",
+        "stratum": "pooled",
+        "rho": 0.432,
+        "p_value": 0.044692,
+        "depth_confounded": true,
+        "reading": "both variables correlate with depth at or above the frozen line; not read"
+      }
+    ]
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T07:57:00+00:00"
+}

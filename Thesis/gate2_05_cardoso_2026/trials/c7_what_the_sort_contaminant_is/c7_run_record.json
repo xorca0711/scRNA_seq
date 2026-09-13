@@ -1,0 +1,151 @@
+{
+  "trial": "C7 identity of the mesenchymal-sort contaminant",
+  "rules_frozen_at": "2026-09-13T07:43:38+00:00",
+  "rules": {
+    "question": "item A1: which mutant epithelial state is the contaminant of the mesenchymal sort",
+    "query": "cluster 11 at leiden_0.5 in the C1b mesenchyme object",
+    "control": "cluster 14, the cleanest fibroblast cluster in the same object",
+    "reference": "RFP-sorted epithelium of GSE316244, both genotypes, processed as in trial C2",
+    "gene_space": "GSE316241 and GSE316244 share a gene space exactly (C0), so no intersection is needed",
+    "state_markers": {
+      "AT2": [
+        "Sftpc",
+        "Etv5",
+        "Lamp3"
+      ],
+      "DATP_like": [
+        "Cldn4",
+        "Itga2",
+        "Ndrg1",
+        "Sox9"
+      ],
+      "AT1_like": [
+        "Ager",
+        "Hopx",
+        "Clic5"
+      ],
+      "Cd177_positive": [
+        "Cd177",
+        "Cd38",
+        "Dlk1"
+      ],
+      "cycling": [
+        "Mki67",
+        "Birc5"
+      ]
+    },
+    "confidence_floor": "reported, never used to exclude a cluster; C1 and C2 showed that floor discarding the populations under test",
+    "comparison_genes": "detected in at least 10% of the query or of one reference cluster; mt, ribo and hb genes excluded",
+    "T1": "Spearman of the query mean profile against each reference cluster mean profile; highest names the state",
+    "T2": "the query cells scored directly with the same marker sets, modal call",
+    "T3": "control: cluster 11 must beat cluster 14 by at least 0.1 rho, or T1 and T2 get no reading",
+    "reading_fixed_in_advance": {
+      "DATP_like": "the contaminant is the paper's own signalling population; the finding-one caution is sharper",
+      "AT2_or_AT1_like": "the leak is ordinary alveolar epithelium; the caution is milder",
+      "Cd177_positive_or_cycling": "an unexpected state, reported with no further reading",
+      "control_failed": "the measure reads depth or ambient signal, not identity; no reading"
+    },
+    "caveats": [
+      "184 query cells; a profile comparison, not a test between groups",
+      "about one query cell in five co-detects Krt8 and Col1a1 (C5), a doublet minority"
+    ]
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c1b_characterise_red2kras_private\\c1b_mesenchyme.h5ad",
+      "bytes": 135178233,
+      "modified": "2026-09-12T13:17:15+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447781_Expt3_Het_RFP_matrix.mtx.gz",
+      "bytes": 105272210,
+      "modified": "2026-01-11T03:21:03+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447781_Expt3_Het_RFP_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:19:16+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447781_Expt3_Het_RFP_barcodes.tsv.gz",
+      "bytes": 38296,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447782_Expt3_Hom_RFP_matrix.mtx.gz",
+      "bytes": 87727125,
+      "modified": "2026-01-11T03:37:29+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447782_Expt3_Hom_RFP_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:33:21+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447782_Expt3_Hom_RFP_barcodes.tsv.gz",
+      "bytes": 36066,
+      "modified": "2026-01-11T02:47:28+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c7_what_the_sort_contaminant_is\\c7_reference_clusters.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c7_what_the_sort_contaminant_is\\c7_profile_correlations.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c7_what_the_sort_contaminant_is\\c7_summary.md"
+  ],
+  "results": {
+    "reference_cells": 11350,
+    "reference_clusters": 11,
+    "shared_genes_considered": 32163,
+    "T1_best_match": {
+      "control cluster 14": {
+        "top_call": "cycling",
+        "top_cluster": "2",
+        "top_rho": 0.4628,
+        "second_call": "cycling",
+        "margin_to_second": 0.0061
+      },
+      "query cluster 11": {
+        "top_call": "AT1_like",
+        "top_cluster": "5",
+        "top_rho": 0.8778,
+        "second_call": "DATP_like",
+        "margin_to_second": 0.0056
+      }
+    },
+    "T2_direct_scoring": {
+      "counts": {
+        "AT2": 70,
+        "DATP_like": 77,
+        "AT1_like": 13,
+        "Cd177_positive": 4,
+        "cycling": 20
+      },
+      "modal_call": "DATP_like",
+      "mode_fraction": 0.418
+    },
+    "T3_control": {
+      "query_best_rho": 0.8778,
+      "control_best_rho": 0.4628,
+      "margin": 0.415,
+      "required": 0.1,
+      "passes": true
+    },
+    "reading": "the leak is ordinary alveolar epithelium; the caution is milder The two routes disagree: profile correlation says AT1_like and direct scoring says DATP_like, so neither is read as settled."
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T07:59:01+00:00"
+}
