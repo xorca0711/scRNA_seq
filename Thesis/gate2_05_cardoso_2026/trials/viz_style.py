@@ -8,16 +8,27 @@ tokens, never a series colour.
 
 from __future__ import annotations
 
-SURFACE = "#fcfcfb"
-INK = "#0b0b0b"
-INK_2 = "#52514e"
-MUTED = "#898781"
-GRID = "#e1e0d9"
-AXIS = "#c3c2b7"
-DEEMPH = "#cfcec8"
-SLOT = {1: "#2a78d6", 2: "#eb6834", 3: "#1baf7a", 4: "#eda100"}
-FLOX_PLUS, FLOX_FLOX = "#5598e7", "#184f95"
-RAMP = ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"]
+import json
+from pathlib import Path
+
+# One source of truth, so a figure anywhere in the tree cannot drift from the
+# validated set. Externalised on 2026-09-13 with values unchanged, which is why
+# no existing figure changes appearance.
+PALETTE_FILE = Path(__file__).resolve().parents[3] / "analysis" / "config" / "palette.json"
+if not PALETTE_FILE.exists():
+    raise SystemExit(f"the validated palette is missing at {PALETTE_FILE}; refusing to guess colours")
+_P = json.loads(PALETTE_FILE.read_text(encoding="utf-8"))
+
+SURFACE = _P["surface"]
+INK = _P["ink"]
+INK_2 = _P["ink_2"]
+MUTED = _P["muted"]
+GRID = _P["grid"]
+AXIS = _P["axis"]
+DEEMPH = _P["deemph"]
+SLOT = {int(k): v for k, v in _P["categorical"].items()}
+FLOX_PLUS, FLOX_FLOX = _P["paired"]["flox_plus"], _P["paired"]["flox_flox"]
+RAMP = list(_P["sequential_ramp"])
 
 
 def apply(plt) -> None:

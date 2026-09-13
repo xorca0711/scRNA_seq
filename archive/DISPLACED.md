@@ -12,12 +12,13 @@ CLDN4, KRT17 and SFN by retained epithelial cluster were landed on main
 ([PR #12](https://github.com/xorca0711/scRNA_seq/pull/12)), adding a dotplot, a
 violin panel and a per-cluster table to
 `analysis/GSE178360/epithelial_subanalysis/figures/reference_aligned/`. That is
-a descriptive extension of displaced material by owner decision. One thing about
-it is still open: those figures use ad hoc viridis values rather than the
-validated palette in
-`Thesis/gate2_05_cardoso_2026/trials/viz_style.py`, and one of their cluster
-labels reads "AT0 candidate", which is the wording claim C6 is being demoted
-away from. Numbers are quoted exactly as they stood in `FINDINGS.md` on the day
+a descriptive extension of displaced material by owner decision. The two things
+that were open when it landed are now closed. The figures were redrawn on the
+repository's one validated palette, which moved to
+`analysis/config/palette.json` so a figure anywhere in the tree reads the same
+values, and the cluster label that read "AT0 candidate" now reads
+"SFTPC+SCGB3A2+ (mostly AT2)", which is what trial S2 found and what claim C6
+says. Numbers are quoted exactly as they stood in `FINDINGS.md` on the day
 of displacement. Links are relative to this `archive/` directory.
 
 ## 1. The alveolar regeneration trajectory is recoverable from raw counts

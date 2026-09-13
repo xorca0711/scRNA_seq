@@ -1,0 +1,36 @@
+{
+  "_comment": "The one validated figure palette for this repository. Values were checked with the dataviz reference validator on the light surface before first use; the check is recorded in Thesis/gate2_05_cardoso_2026/trials/c5_figures_for_the_three_findings/c5_run_record.json. Read this file rather than hard-coding colours, so a figure anywhere in the tree cannot drift from the validated set. Colour follows the entity, never its rank; text uses the ink tokens, never a series colour.",
+  "_history": "Externalised from Thesis/gate2_05_cardoso_2026/trials/viz_style.py on 2026-09-13, when the reference-aligned epithelial panels turned out to use ad hoc viridis values. Values are unchanged from that module, so no existing figure changes appearance.",
+  "surface": "#fcfcfb",
+  "ink": "#0b0b0b",
+  "ink_2": "#52514e",
+  "muted": "#898781",
+  "grid": "#e1e0d9",
+  "axis": "#c3c2b7",
+  "deemph": "#cfcec8",
+  "categorical": {
+    "1": "#2a78d6",
+    "2": "#eb6834",
+    "3": "#1baf7a",
+    "4": "#eda100"
+  },
+  "paired": {
+    "flox_plus": "#5598e7",
+    "flox_flox": "#184f95"
+  },
+  "sequential_ramp": [
+    "#cde2fb",
+    "#9ec5f4",
+    "#6da7ec",
+    "#3987e5",
+    "#256abf",
+    "#184f95",
+    "#0d366b"
+  ],
+  "_validation": {
+    "checked": "2026-09-13, dataviz validate_palette.js, categorical slots 1 to 4 on the light surface",
+    "result": "all checks pass: lightness band, chroma floor, CVD separation (worst adjacent pair delta E 9.1 protan), normal-vision floor (22.9)",
+    "warning_and_its_relief": "contrast against the surface is below 3:1 for the green and amber slots, which obliges visible labels or a table view rather than colour alone. Every figure using these slots carries direct labels, and the reference-aligned panels also ship epithelial_primary_markers_by_cluster.csv as the table view.",
+    "sequential_ramp_note": "one hue, light to dark, monotonic; use it for magnitude only, never for identity"
+  }
+}
