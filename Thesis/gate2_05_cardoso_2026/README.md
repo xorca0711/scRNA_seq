@@ -265,4 +265,4 @@ because there are no replicates to measure mixing between.
 | The evidence classification in section 2 | Descriptive only (an AI session's reading of the figure captions; owner review pending) |
 | "The deposited mouse libraries carry no within-genotype biological replication" | see [`ANALYSIS_TRIAL_PLAN.md`](ANALYSIS_TRIAL_PLAN.md), trial C0 |
 | "The deposit cannot test the fibroblast-before-macrophage ordering" | see trial C0 |
-| Any statement about what this repository's own clustering finds | Not established until the Gate 1 trial has run |
+| Any statement about what this repository's own clustering finds | Twenty-four trials have now run; see [`trials/README.md`](trials/README.md) for the index and [`ANALYSIS_TRIAL_PLAN.md`](ANALYSIS_TRIAL_PLAN.md) for each pre-registration and outcome. Gate 1 returned **not recovered**, and the claims register carries every row |
