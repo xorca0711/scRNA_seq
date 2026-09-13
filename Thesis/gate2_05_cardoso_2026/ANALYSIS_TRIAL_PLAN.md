@@ -32,6 +32,28 @@ which carries two replicate libraries per arm and three time points.
 
 ---
 
+## Contents
+
+Trials run in the order below, not in numerical order, because the E series was
+opened when the deposit turned out to carry no testable contrast. The index with
+one-line outcomes is [`trials/README.md`](trials/README.md).
+
+| Section | Trial | In one line |
+|---|---|---|
+| [C0](#c0-data-reality-check-gate-0) | data reality check | the deposit cannot test anything |
+| [C1](#c1-the-fibroblast-compartment-gate-1) | fibroblast compartment | not recovered, and the rule was at fault |
+| [C1b, C1c, C1d](#c1b-c1c-c1d-stop-and-characterise-gate-1) | stop and characterise | found the sort contaminant |
+| [C2, C2b](#c2-and-c2b-the-areg-deletion-arm-gate-2b) | the ligand deletion arm | the paper's epithelial result reproduces blind |
+| [C3](#c3-is-areg-a-property-of-the-datp-like-state-gate-2a) | state specificity | holds in all four mutant libraries |
+| [C5](#c5-figures-for-the-three-findings-and-three-corrections-2026-09-13) | figures | three findings drawn, three corrections forced |
+| [E series](#e-series-public-data-extensions-of-the-hbegf-lead-2026-09-13) | E1 to E5 | the first admissible test, and E4 refuting claim C29's reading |
+| [E6, C7, C8](#e6-c7-and-c8-three-questions-asked-properly-and-three-rules-that-showed-their-own-limits-2026-09-13) | three chosen follow-ups | three negatives and two disclosed rule defects |
+| [C9](#c9-the-fst-and-runx2-population-pre-registered-2026-09-13) | the pre-registered lead | existence replicates, size does not |
+| [C10](#c10-the-published-pathological-fibroblast-or-not-2026-09-13) | published state or not | the lead closes |
+| [C11](#c11-figures-for-the-contradictions-2026-09-13) | contradiction figures | six drawn |
+
+---
+
 ## C0. Data reality check (Gate 0)
 
 Run on 2026-09-12. Script [`trials/c0_data_reality_check.py`](trials/c0_data_reality_check.py);

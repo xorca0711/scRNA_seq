@@ -62,13 +62,59 @@ def markdown_files() -> list[Path]:
     ]
 
 
+def heading_slugs(text: str) -> set[str]:
+    """GitHub-flavoured anchor slugs for every heading in a document.
+
+    Lowercase, drop anything that is not a word character, space or hyphen,
+    then hyphenate the spaces. Duplicate headings get a numeric suffix on
+    GitHub, so every slug is also accepted with one.
+    """
+    slugs: set[str] = set()
+    for line in text.splitlines():
+        if not line.startswith("#"):
+            continue
+        heading = line.lstrip("#").strip()
+        if not heading:
+            continue
+        slug = re.sub(r"[^\w\s-]", "", heading.lower())
+        # Each whitespace character becomes one hyphen; runs are NOT collapsed,
+        # which is what GitHub does and why "5 · Negative results" anchors as
+        # "5--negative-results".
+        slug = re.sub(r"\s", "-", slug).strip("-")
+        if slug:
+            slugs.add(slug)
+            slugs.update(f"{slug}-{n}" for n in range(1, 6))
+    return slugs
+
+
 def check_markdown_links(result: Validation) -> None:
+    slug_cache: dict[Path, set[str]] = {}
+
+    def slugs_for(path: Path) -> set[str]:
+        if path not in slug_cache:
+            try:
+                slug_cache[path] = heading_slugs(path.read_text(encoding="utf-8"))
+            except OSError:
+                slug_cache[path] = set()
+        return slug_cache[path]
+
     for document in markdown_files():
-        for match in LINK_RE.finditer(document.read_text(encoding="utf-8")):
+        body = document.read_text(encoding="utf-8")
+        for match in LINK_RE.finditer(body):
             raw_target = match.group(1).strip().strip("<>")
-            if raw_target.startswith(("http://", "https://", "mailto:", "#")):
+            if raw_target.startswith(("http://", "https://", "mailto:")):
+                continue
+            # A same-document anchor: check it against this document's headings.
+            if raw_target.startswith("#"):
+                fragment = unquote(raw_target[1:]).split(' "', 1)[0]
+                if fragment:
+                    result.require(
+                        fragment in slugs_for(document),
+                        f"broken anchor in {document.relative_to(REPO)}: {raw_target}",
+                    )
                 continue
             target = unquote(raw_target.split("#", 1)[0])
+            fragment = unquote(raw_target.split("#", 1)[1]) if "#" in raw_target else ""
             if not target:
                 continue
             # A Markdown title after the URL is not used in this repository,
@@ -79,6 +125,13 @@ def check_markdown_links(result: Validation) -> None:
                 resolved.exists(),
                 f"broken link in {document.relative_to(REPO)}: {raw_target}",
             )
+            # A fragment on another Markdown file is checked too, so a table of
+            # contents cannot drift from the headings it points at.
+            if fragment and resolved.exists() and resolved.suffix == ".md":
+                result.require(
+                    fragment.split(' "', 1)[0] in slugs_for(resolved),
+                    f"broken anchor in {document.relative_to(REPO)}: {raw_target}",
+                )
 
 
 def check_machine_readable_files(result: Validation) -> None:

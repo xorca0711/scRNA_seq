@@ -18,6 +18,24 @@ According to PubMed for all external citations, with DOIs given inline.
 
 ---
 
+## Contents
+
+| Section | Subject |
+|---|---|
+| [1](#1-the-seven-mechanical-reasons-a-reanalysis-moves) | why a reanalysis moves at all: six bookkeeping reasons and one that is not |
+| [2](#2-finding-one-an-areg-high-epithelial-population-inside-the-mesenchymal-sort) | finding one, the sort contaminant, and what settled its three explanations |
+| [3](#3-finding-two-the-fibrotic-programme-does-not-fall-as-one-unit) | finding two, the graded fibrotic response |
+| [4](#4-finding-three-hbegf-is-second-by-abundance-and-that-is-not-the-same-as-second-in-importance) | finding three, abundance against enrichment |
+| [5](#5-what-to-do-next-in-the-order-the-cost-to-value-ratio-suggests) | the next-step lists; list A is now empty |
+| [6](#6-status-of-the-claims-on-this-page) | status of everything above |
+| [7](#7-the-hbegf-brake-idea-checked-against-the-literature-2026-09-13) | the brake hypothesis, refuted by the literature |
+| [8](#8-what-the-public-data-extensions-returned-2026-09-13) | the extensions, and the species divergence |
+| [9](#9-the-three-jobs-of-2026-09-13-and-what-they-leave-of-this-page-2026-09-13) | the axis tested for the first time, and not detected |
+| [10](#10-the-fst-and-runx2-population-pre-registered-2026-09-13) | the pre-registered lead |
+| [11](#11-the-lead-closes-and-the-figures-for-every-contradiction-2026-09-13) | the lead closing, and the four rule defects compared |
+
+---
+
 ## 1. The seven mechanical reasons a reanalysis moves
 
 None of these is a disagreement with the authors. Each is a place where a
