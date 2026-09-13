@@ -6,7 +6,18 @@ G-SURF submission, which is weighted toward the Krt8-high transitional
 epithelial state, and it is kept here as a record of what this repository found
 and how. The artefacts and scripts behind it remain in place under `analysis/`
 and are still checked by the validator; the narrative is not extended in this
-repository. Numbers are quoted exactly as they stood in `FINDINGS.md` on the day
+repository, with one exception the owner made on 2026-09-13 and which is
+recorded here so this page stays true: the primary-marker panels for KRT8,
+CLDN4, KRT17 and SFN by retained epithelial cluster were landed on main
+([PR #12](https://github.com/xorca0711/scRNA_seq/pull/12)), adding a dotplot, a
+violin panel and a per-cluster table to
+`analysis/GSE178360/epithelial_subanalysis/figures/reference_aligned/`. That is
+a descriptive extension of displaced material by owner decision. One thing about
+it is still open: those figures use ad hoc viridis values rather than the
+validated palette in
+`Thesis/gate2_05_cardoso_2026/trials/viz_style.py`, and one of their cluster
+labels reads "AT0 candidate", which is the wording claim C6 is being demoted
+away from. Numbers are quoted exactly as they stood in `FINDINGS.md` on the day
 of displacement. Links are relative to this `archive/` directory.
 
 ## 1. The alveolar regeneration trajectory is recoverable from raw counts
