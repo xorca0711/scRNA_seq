@@ -535,9 +535,10 @@ labelled cells.
      threshold, and the bleomycin libraries carry half the genes per cell. The
      criterion measured depth.
    - **What the cells look like.** Piezo2, Ltbp2, P4ha3, Sdc1 and Prrx2, with
-     Bmper, Ror2 and Kif26b in the wider set: a mechanically responsive,
-     matrix-producing programme that points away from the Areg axis rather
-     than into it. Exploratory.
+     Bmper, Ror2 and Kif26b in the wider set: a matrix and mechanosensor-gene
+     signature that points away from the Areg axis rather than into it.
+     Exploratory. The wording was tightened on 2026-09-13 from
+     "mechanically responsive", which transcript detection cannot support.
    - **The third disclosed rule defect in this folder.** T1 tested a ratio that
      T5 forbade reading, so the rules were not composable; the implementation
      took the conservative branch and its verdict stands, but the reading

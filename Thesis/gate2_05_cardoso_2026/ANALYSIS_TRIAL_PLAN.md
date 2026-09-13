@@ -1058,11 +1058,10 @@ mixture test.
 
 The nine genes that clear it anyway are Piezo2, Ltbp2, Rnf149, Basp1, Sdc1,
 P4ha3, Prrx2, Megf11 and Cotl1. Taken with the broader direction-replicating
-set, that reads as a mechanically responsive, matrix-producing fibroblast
-programme rather than anything specific to the Areg axis: Piezo2 is a
-mechanosensitive channel, Ltbp2 sequesters latent TGF-beta, P4ha3 hydroxylates
-collagen prolines, Sdc1 is a matrix co-receptor, and Prrx2 is a mesenchymal
-transcription factor. That is a description of a cell state, offered as
+set, that reads as a matrix and mechanosensor-gene signature rather than
+anything specific to the Areg axis: Piezo2 encodes a mechanosensitive channel,
+Ltbp2 sequesters latent TGF-beta, P4ha3 hydroxylates collagen prolines, Sdc1 is
+a matrix co-receptor, and Prrx2 is a mesenchymal transcription factor. Calling that a mechanics programme would claim more than the data support: transcript detection is not channel activity, dissociated tissue carries no mechanical context, and dissociation is itself a mechanical and enzymatic insult, so a Piezo2-led signature has a protocol confound that no reanalysis of dissociated data can remove. That is a description of a cell state, offered as
 Exploratory and as a target for a future pre-registration, not as a mechanism.
 
 Three of the thirty genes could not be checked at all, because Cemip2, AI506816
