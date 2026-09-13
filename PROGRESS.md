@@ -429,8 +429,10 @@ labelled cells.
 
 ## Handoff: session of 2026-09-13 (the E series)
 
-Same branch `Claude/cardoso-2026-gate0-gate1`, [PR #10](https://github.com/xorca0711/scRNA_seq/pull/10),
-still not merged. Nothing in `analysis/` was touched. Six further trials ran,
+Branch `Claude/cardoso-2026-public-extensions`, [PR #11](https://github.com/xorca0711/scRNA_seq/pull/11),
+not merged, CI green. [PR #10](https://github.com/xorca0711/scRNA_seq/pull/10) was merged on
+2026-09-13 before the last four commits of the previous session landed, so this pull request
+carries the C5 figures, trial C6 and the whole E series. Nothing in `analysis/` was touched. Six further trials ran,
 all outside the Cardoso deposit, because that deposit cannot test anything and
 the standing instruction was to extend the Hbegf lead into public data only if
 the first extension did not refute the working picture. It did not, so the rest
@@ -504,7 +506,7 @@ caught the neutrophil error.
 ## Handoff: session of 2026-09-12
 
 Branch `Claude/cardoso-2026-gate0-gate1`, [PR #10](https://github.com/xorca0711/scRNA_seq/pull/10),
-not merged. Nothing in `analysis/` was touched; all new material is under
+merged 2026-09-13, but only up to trial C3; the later commits moved to PR #11. Nothing in `analysis/` was touched; all new material is under
 `Thesis/gate2_05_cardoso_2026/`. **All eight trials have run**; the trial
 plan, the claims register (rows C19 to C36), the root README claims table and
 DEVELOPMENT decision 18 are written.
