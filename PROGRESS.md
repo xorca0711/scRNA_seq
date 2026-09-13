@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-13 (the three chosen follow-ups, E6, C7 and C8; see the newest handoff block). Previously 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-13 (roadmap paper 2 entered, plus repository chores; see the newest handoff block). Previously 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -475,6 +475,74 @@ labelled cells.
      pre-registration and not a claim.
    - Rows C49 to C57 in the claims register; DEVELOPMENT decision 20. Owner
      retain/reject review pending on all of it.
+
+26. **Roadmap paper 2 (Choi 2020) entered, study note written, Gate 0 run**
+   (`Thesis/gate1_02_choi_2020/`, 2026-09-13, owner instruction to return to
+   roadmap order). This is the paper that defines the DATP state the Cardoso
+   rows lean on, and its first author leads one of the target labs.
+   - **The study note and extract are written**, in the roadmap's five-question
+     format, with every marker set read from the Europe PMC full-text XML
+     rather than the PMC web rendering. That rendering strips italicised gene
+     symbols, so a note built from it would have had empty marker lists. The
+     DATP set is Cldn4, Krt8, Ndrg1, Sprr1a and AW112010, with the negative
+     condition of low Pdpn, Hopx and Cav1.
+   - **D0, the data reality check, found the same ceiling as the Cardoso
+     deposit.** One library per condition throughout, so no contrast carries
+     within-group replication: the frozen replicate rule was applied to three
+     contrasts and none passed.
+   - **Six of the eight matrices are raw 10x barcode whitelists**, not called
+     cells. Cell calling for the in vivo half is this repository's job, and the
+     cell count will not match the paper's, because Cell Ranger 2.0.2's caller
+     will not be reproduced. Gate 0 deliberately did not call cells.
+   - **The tdTomato reporter is not a counted feature**, so the lineage split
+     cannot be checked from the matrix and a reanalysis has to trust the
+     library labels. That is the opposite of the Cardoso deposit, where the BSD
+     selection marker gave an independent sort check.
+   - **One gene space across all eight libraries** (27,998 features), and every
+     marker gene including the negative conditions is present in all of them.
+   - **The ATAC-seq accession is bigwig coverage only**, so the epigenetic half
+     of the Il1r1-subset claim cannot be re-derived from the deposit at all.
+   - **A depth warning for Gate 1:** median genes per barcode spans 891 to
+     1,825 across the six libraries any cross-library comparison would use.
+   - One reporting defect is disclosed: the first run's headline collapsed the
+     raw-versus-filtered question into a single boolean across eight
+     libraries, which read as "none are raw" when six of them are. The table
+     was correct and no number changed; the summary now names both groups.
+   - Rows C58 to C64 in the claims register, a new Stage 4 section. Owner
+     retain/reject review pending on all of it.
+
+---
+
+## Handoff: session of 2026-09-13, paper 2 and the repository chores
+
+Branch `Claude/choi-2020-gate0-and-chores`. Four things landed after the
+Cardoso follow-ups, in this order.
+
+| What | Where | State |
+|---|---|---|
+| The two items left open by PR #12 | `analysis/config/palette.json`, `analysis/scripts/08_*` | closed; one validated palette, and the "AT0 candidate" label corrected |
+| A generated negative-results page | `NEGATIVE_RESULTS.md`, `analysis/scripts/14_*` | complete; 23 rows, regenerate after any status change |
+| Generic deposit readers promoted to the shared module | `Thesis/gate1_04_sikkema_2023_hlca/trials/trial_utils.py` | complete; `cardoso_utils` re-exports, all 19 Cardoso trial modules still import and two were re-run to prove it |
+| Roadmap paper 2, study note and Gate 0 | `Thesis/gate1_02_choi_2020/` | note and D0 complete; D1 not started |
+
+**Why the helper module moved.** The Choi folder needed the MatrixMarket
+triplet reader, the SOFT parser and the non-Ensembl feature rule, and a gate1
+folder importing them from a gate2 folder is the wrong dependency direction.
+They now sit in the shared module beside RunRecord, and `cardoso_utils` is a
+re-export so no Cardoso trial changed. Verified by importing all 19 trial
+modules and by re-running E2b and E5, which reproduced identical results.
+
+**What Gate 1 on paper 2 has to decide before it runs.** Cell calling needs a
+frozen threshold, because six libraries are raw droplet matrices. The primed
+AT2 state is defined by the loss of Etv5, Abca3 and Cebpa rather than by a
+positive marker, so the scoring rule must say what it does about that in
+advance. And the trajectory question is the one part of this paper a deposit
+without replication can genuinely address, because an ordering inside a library
+needs no between-group comparison.
+
+**Owner decisions now open**, in addition to those in items 23 to 25: rows C58
+to C64, and whether the post hoc Fst with Runx2 lead from trial C8 deserves a
+pre-registered trial of its own.
 
 ---
 

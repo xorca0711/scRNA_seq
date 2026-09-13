@@ -66,10 +66,19 @@
         "macrophage signal",
         "which claims required lineage tracing rather than RNA alone"
       ],
-      "datasets": [],
-      "folder": null,
-      "note_status": "not started",
-      "trial_status": "not started"
+      "datasets": [
+        "GSE145031 (scRNA-seq, AT2 lineage tracing, 6 libraries)",
+        "GSE144468 (scRNA-seq, AT2 organoids, 2 libraries)",
+        "GSE144598 (ATAC-seq, bigwig coverage only, not reusable)",
+        "GSE144553 (SuperSeries)"
+      ],
+      "folder": "gate1_02_choi_2020",
+      "note_status": "done, owner review pending",
+      "trial_status": "D0 run 2026-09-13: one gene space over 8 libraries, no non-gene features, six of eight matrices are raw barcode whitelists, and no contrast carries within-group replication. D1 (state recovery and the AT2 to DATP to AT1 ordering) not started",
+      "pmcid": "PMC7487779",
+      "note_location": "Thesis/gate1_02_choi_2020/README.md",
+      "config": "Thesis/gate1_02_choi_2020/choi_2020_extracts.json",
+      "trial_location": "Thesis/gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md"
     },
     {
       "order": 3,

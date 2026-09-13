@@ -17,10 +17,10 @@ the claim's potential.
 | Bucket | Rows |
 |---|--:|
 | Retracted or superseded, kept on display | 1 |
-| Refuted | 6 |
-| Not establishable with the data that exists | 2 |
+| Refuted | 7 |
+| Not establishable with the data that exists | 3 |
 | Not established | 12 |
-| **Total** | **21** |
+| **Total** | **23** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -85,6 +85,13 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_run_record.json`
 - **Where it came from:** Stage 3. Cardoso 2026, the Gate 2 paper (2026-09-12)
 
+### C61. The tdTomato lineage reporter is a counted feature in the Choi-2020 deposit, so the lineage split can be checked from the matrix
+
+- **Status in the register:** Refuted
+- **What settled it:** trial D0: no non-gene features in any library
+- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv`
+- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+
 ---
 
 ## Not establishable with the data that exists
@@ -102,6 +109,13 @@ what was refuted and what settled it.
 - **What settled it:** trial E1b T5: the deposited annotation assigns AT2 only in normal lung and tS1 to tS3 only in tumour lung, so zero donors pair
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/e1b_human_luad_by_subtype/e1b_paired_comparisons.csv`
 - **Where it came from:** Stage 3. Cardoso 2026, the Gate 2 paper (2026-09-12)
+
+### C63. The epigenetic half of the Il1r1-subset claim can be re-derived from the Choi-2020 deposit
+
+- **Status in the register:** Not establishable with the data that exists
+- **What settled it:** trial D0: the ATAC-seq accession deposits bigwig coverage tracks only, with no peaks and no reads
+- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_summary.md`
+- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
 
 ---
 
