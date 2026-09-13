@@ -1,0 +1,4 @@
+test,gene,group_a,group_b,n_donors,p_value,a_higher,median_a,median_b,a_higher_in_donors
+T5,AREG,tumour states tS1-tS3,AT2,0,,,,,
+T7,EGFR,COL13A1+ matrix FBs,tumour states tS1-tS3,3,,,0.2258,0.4062,0.0
+T5 extra,HBEGF,tumour states tS1-tS3,AT2,0,,,,,

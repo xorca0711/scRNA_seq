@@ -530,3 +530,233 @@ A discriminating check on cluster 11 also narrows the contaminant: Epcam mRNA
 is present in 78% of its cells, so the RNA does not support mutant cells
 escaping the sort by losing Epcam; about one in five cells co-detects Krt8 and
 Col1a1, a doublet minority.
+
+---
+
+## E series. Public-data extensions of the Hbegf lead (2026-09-13)
+
+Plan and literature grounding in [`DIVERGENCES_AND_NEXT.md`](DIVERGENCES_AND_NEXT.md)
+section 7. The reason for leaving this deposit is stated there and is worth
+repeating here: the Cardoso deposit pools mice and gives one library per
+genotype, so no trial in the C series could test anything. These datasets have
+donors or animals as the unit, which is what makes a test admissible.
+
+Order of operations was set by the owner: run E1 first, and continue only if
+E1's pre-registered refutation rule did not fire. It did not.
+
+### E1: which human cells make which EGFR ligand in lung adenocarcinoma
+
+Script [`trials/e1_human_luad_ligand_sources.py`](trials/e1_human_luad_ligand_sources.py);
+artefacts in [`trials/e1_human_luad_ligand_sources/`](trials/e1_human_luad_ligand_sources/).
+Dataset GSE131907 (Kim et al. 2020, doi:10.1038/s41467-020-16164-1), the human
+comparison the paper itself used. 88,144 cells in scope across 11 donors with
+paired tumour and normal lung.
+
+**T1, the first admissible test in this folder.** In tumour lung, AREG
+detection is higher in epithelial than in myeloid cells, paired within donor.
+Median 0.3363 against 0.2147 across 11 donors, Wilcoxon signed-rank
+p = 0.001953. The frozen refutation rule did not fire, so E2 to E4 proceeded.
+
+**T2, corrected after the fact.** The run record names the "neutrophil" gate
+as the top HBEGF compartment. That label is wrong, and the correction matters
+because it changes which pre-named outcome was hit. This deposit annotates no
+neutrophils at all, dissociation and 10x capture lose them, and the gate's
+crosstab against the deposited cell types shows it is 83.3 per cent deposited
+myeloid cells and 12.5 per cent T or NK cells. Read properly, T2's outcome is
+the pre-named **myeloid-dominant** one. That supports the published human
+emphasis (Hult et al. 2022, doi:10.1165/rcmb.2022-0174OC; Van Hiep et al. 2022,
+doi:10.3389/fonc.2022.963896) and does not match what trial C6 found in mouse,
+where the Areg-independent share of Hbegf sat in endothelium and mesenchyme and
+the myeloid compartments were the ones that collapsed.
+
+**T3.** EGFR detection is highest in epithelium, 0.286. In the mouse deposit
+Egfr is mesenchymal, 73 per cent, against 4.7 per cent in RFP-positive
+epithelium. The receptor is not in the same place in the two datasets.
+
+**A caveat found after the fact, which motivated E1b.** AREG in epithelium is
+not tumour-enriched at compartment level, 0.336 in tumour lung against 0.356 in
+matched normal lung, and HBEGF is actually higher in normal lung. Broad
+epithelial gating pools malignant states with normal AT2, club and ciliated
+cells, so it dilutes exactly the transitional state the paper's claim is about.
+Compartment gating answers a coarser question than the one asked.
+
+### E1b: the same question at the resolution the claim lives at
+
+Script [`trials/e1b_human_luad_by_subtype.py`](trials/e1b_human_luad_by_subtype.py);
+artefacts in [`trials/e1b_human_luad_by_subtype/`](trials/e1b_human_luad_by_subtype/).
+Same dataset, regrouped by the deposited `Cell_subtype` annotation, reading the
+gene vectors E1 had already cached. Rules fixed after E1's compartment table was
+seen and before any subtype value was computed; post hoc and disclosed as such.
+
+**T5 is not computable with these labels, and was not repaired.** The deposited
+annotation is tissue-exclusive. AT2 is assigned only in normal lung, 11 donors
+and 2,020 cells, and the tumour states tS1 to tS3 only in tumour lung. No donor
+has both, so the paired within-tumour comparison has zero pairs. Lowering the
+50-cell floor cannot help, because the count of AT2-labelled cells in tumour
+samples is zero, not small. The deposit named malignant epithelium by tissue of
+origin, which forecloses the within-tumour contrast.
+
+**T6 confirms the myeloid reading with the deposited labels**, independently of
+the marker gates that mislabelled it in E1. Median per-donor HBEGF detection in
+tumour lung: alveolar macrophages 0.712, CD163+CD14+ dendritic cells 0.655,
+CD1c+ dendritic cells 0.552, monocyte-derived macrophages 0.423, then the
+tumour state tS2 at 0.420 and tS1 at 0.244. COL13A1-positive matrix
+fibroblasts, the alveolar fibroblast counterpart, sit at 0.087.
+
+**T7 falls below its own floor.** Three donors clear 50 cells in both
+populations against a floor of five, so no test was run. The direction is
+opposite to the mouse: EGFR 0.406 in the tumour states against 0.226 in
+COL13A1-positive matrix fibroblasts, with the fibroblast value lower in all
+three donors.
+
+**A qualification of E1's T1, recorded because it cuts against my own result.**
+At subtype resolution CD1c+ dendritic cells detect AREG in 0.618 of cells,
+above tS1 at 0.555 and tS2 at 0.532. T1 stands exactly as written, epithelium
+above the myeloid average, because the myeloid compartment pools those
+dendritic cells with monocyte-derived macrophages at 0.159 and alveolar
+macrophages at 0.298. What T1 does not license is the sentence "epithelium is
+the AREG source in human lung adenocarcinoma". Specific dendritic-cell subsets
+match or exceed the tumour states.
+
+### E4: is the Areg-independent tier tumour-specific, or does injury alone make it
+
+Script [`trials/e4_bleomycin_fibrotic_genes.py`](trials/e4_bleomycin_fibrotic_genes.py);
+artefacts in [`trials/e4_bleomycin_fibrotic_genes/`](trials/e4_bleomycin_fibrotic_genes/).
+Dataset GSE132771 (Tsukui et al. 2020, doi:10.1038/s41467-020-15647-5), the
+injury comparison the paper itself used, restricted to the four mouse
+Col1a1-GFP-positive libraries. Bleomycin 3,631 and 3,387 cells; untreated 4,063
+and 3,271 cells after the C1 quality control and doublet removal.
+
+**The frozen rule fired against my own claim.** Runx1 and Pdgfrb are both
+injury-generic, higher in both bleomycin libraries than in both untreated
+libraries: Runx1 0.225 and 0.237 against 0.078 and 0.088, Pdgfrb 0.225 and
+0.208 against 0.117 and 0.126. The reading fixed in advance for that outcome
+therefore applies. Their survival of Areg deletion in trial C2 is what an
+activated lung fibroblast does after any injury, not evidence of a second
+tumour-specific signal. **Claim C29 weakens accordingly**, and the
+second-signal hypothesis loses the observation that motivated it.
+
+Tnc, Fst and Runx2 are injury-generic too, so the graded tiers of C2 do not map
+onto an injury-generic and a tumour-specific half. Acta2 is not injury-generic,
+because untreated library UT2 reaches 0.423 above both bleomycin values, which
+is what a smooth-muscle contribution to a Col1a1-GFP sort looks like. Hbegf and
+Egfr are also injury-generic, 0.118 and 0.135 against 0.072 and 0.062 for
+Hbegf, so neither is tumour-specific either. Pdgfra and Col13a1 fall with
+injury in both replicates, consistent with the loss of alveolar fibroblast
+identity that Tsukui et al. describe.
+
+Two animals per group. The frozen rule deliberately required both replicates to
+agree rather than averaging them, so these are directions with no P value.
+
+### E2 and E3: the same question in human pulmonary fibrosis
+
+One script, [`trials/e2_human_fibrosis_ligand_sources.py`](trials/e2_human_fibrosis_ligand_sources.py),
+two cohorts, artefacts in [`trials/e2_human_fibrosis_ligand_sources/`](trials/e2_human_fibrosis_ligand_sources/).
+E2 is GSE136831 (Adams et al. 2020, doi:10.1126/sciadv.aba1983), 60 donors in
+scope, with the aberrant basaloid population as the transitional state. E3 is
+GSE135893 (Habermann et al. 2020, doi:10.1126/sciadv.aba1972), 22 donors, with
+the KRT5-negative KRT17-positive population as the transitional state and
+transitional AT2 as a second candidate. Both use the deposited cell-type
+grouping; neither is reclustered.
+
+**T1, the one comparison that cleared its floor, does not support the
+prediction it was built on.** In the E2 cohort, HBEGF detection in pooled
+myeloid cells is 0.366 against 0.390 in aberrant basaloid cells across seven
+donors, Wilcoxon signed-rank p = 0.297. The frozen expectation from Hult et al.
+2022 was myeloid dominance over the transitional state, and that is not what
+seven donors show: the two populations are indistinguishable here. The
+direction is not even internally consistent, since myeloid cells are higher in
+five of seven donors while the median is lower, which is what a null result
+with an outlier looks like. Seven donors is also the fewest this comparison
+could have had, because the aberrant basaloid state is rare, so this is a
+failure to detect a difference rather than a demonstration of equality.
+
+In the E3 cohort the same comparison has three donors against a floor of five,
+so no test was run. Its direction favours myeloid cells, 0.709 against 0.418.
+
+**T3, the Zhao prediction, is not testable in either cohort and its directions
+disagree.** Zhao et al. 2024 (doi:10.1016/j.stem.2024.07.004) predicts AREG in
+the transitional state above AT2. Aberrant basaloid cells sit at 0.485 against
+0.767 in ATII cells, which is the opposite direction, on three donors.
+KRT5-negative KRT17-positive cells sit at 0.700 against 0.672 in AT2, and
+transitional AT2 at 0.781 against 0.574, both in the predicted direction, on
+three and two donors. No comparison clears the five-donor floor, so all three
+are reported and none is read. The prediction is neither supported nor refuted
+by these deposits.
+
+**The rankings agree with each other and with E1b.** HBEGF is topped by
+myeloid populations in both cohorts: cDC2 at 0.444, alveolar macrophages at
+0.437 and classical monocytes at 0.404 in E2; macrophages at 0.508 and
+monocytes at 0.497 in E3. The transitional state is close behind rather than
+absent, aberrant basaloid fourth at 0.390. AREG is topped by dendritic cells
+and monocytes in both: plasmacytoid dendritic cells at 0.925, cDC2 at 0.874 and
+classical monocytes at 0.782 in E2; cDCs at 0.650 and monocytes at 0.528 in E3,
+against ATII at 0.755 and AT2 at 0.711.
+
+That last pattern is the most consistent thing the extensions produced, because
+E1b found it independently in lung adenocarcinoma, where CD1c-positive
+dendritic cells topped AREG above both tumour epithelial states. Three human
+datasets, two diseases and two annotation vocabularies agree that dendritic
+cells and monocytes are a major source of both ligands in human lung.
+
+It is not a new fact about biology and should not be written up as one.
+Leukocyte-derived AREG is established: Zaiss et al. 2015
+(doi:10.1016/j.immuni.2015.01.020) reviews mast cells, basophils, ILC2s and
+tissue-resident regulatory T cells as AREG sources alongside epithelium and
+mesenchyme. The nearest thing to news here is which leukocytes, since the
+dendritic-cell and monocyte emphasis is not the one that review foregrounds,
+and in E1b the regulatory T cells that review nominates sit near the bottom at
+0.07. What it does do is constrain a reading rather than add a finding: an
+epithelium-to-fibroblast account of the AREG axis in human lung leaves out the
+compartment with the highest detection, and a mouse sort of RFP-positive
+epithelium cannot see it.
+
+**EGFR sits in the mesenchyme here, unlike in adenocarcinoma.** Fibroblasts
+reach 0.650 and basal cells 0.774 in E2, with myofibroblasts at 0.449 and
+PLIN2-positive fibroblasts at 0.512 in E3. That matches the mouse, where Egfr
+is mesenchymal at 73 per cent, and differs from E1 and E1b, where the tumour
+epithelial states topped the receptor. Receptor placement therefore looks
+disease-dependent rather than species-dependent, which is the opposite of what
+the ligand comparison suggested.
+
+### E2b: the T4 reading that E2 declared and did not compute
+
+Script [`trials/e2b_t4_disease_against_control.py`](trials/e2b_t4_disease_against_control.py);
+artefacts in [`trials/e2b_t4_disease_against_control/`](trials/e2b_t4_disease_against_control/).
+E2 froze four readings and wrote three. T4, disease against control for the
+same cell types, was in the rules and never reached a table. E2b supplies it by
+reading only E2's tracked per-donor table, which is the same remedy trial C2b
+applied to C2, and no rule is altered after the fact.
+
+Thirty-seven cohort and cell-type combinations clear the three-donor floor on
+both sides. AREG detection is higher in IPF in 24 of them, median difference
+0.027; HBEGF in 24 of 37, median difference 0.019; EREG in 12 of 37 and EGFR in
+9 of 37. Twenty-four of thirty-seven is a weak majority, the differences are a
+couple of percentage points of detection, the donors are not paired and the
+libraries are not depth-matched. The honest reading is that neither ligand
+shows clear disease enrichment in these cohorts, which is the same answer E1
+gave for tumour against matched normal lung. Both ligands look like properties
+of the cell types that carry them rather than of the injury.
+
+### Claims from E2, E3 and E2b
+
+| Claim | Class |
+|---|---|
+| HBEGF detection in myeloid cells exceeds that of the aberrant basaloid transitional state in IPF | Not established; 7 donors, p = 0.297, and the direction is internally inconsistent |
+| Dendritic cells and monocytes are a major source of AREG and HBEGF in human lung, at or above the epithelial states | Descriptive only, and consistent across three datasets and two diseases |
+| That leukocyte AREG source is a new finding | No; established in the immunology literature, and recorded here only because it constrains an epithelium-centric reading |
+| AREG is higher in the transitional state than in AT2 cells in human fibrosis (the Zhao prediction) | Not established; no cohort clears the donor floor and the two cohorts disagree in direction |
+| EGFR sits in the mesenchyme in human fibrosis, as in the mouse, and in the epithelium in adenocarcinoma | Descriptive only; receptor placement tracks disease rather than species |
+| AREG or HBEGF is enriched in fibrotic lung relative to control | Not established; 24 of 37 cell types with median differences near 0.02, unpaired and not depth-matched |
+
+### Claims from E1, E1b and E4
+
+| Claim | Class |
+|---|---|
+| In human lung adenocarcinoma, AREG detection is higher in epithelial than in myeloid cells within the same donor (11 donors, paired p = 0.0020) | Validated, the only tested claim in this folder |
+| HBEGF in human lung adenocarcinoma is myeloid-dominant, by marker gate and by deposited subtype label alike | Descriptive only, and it contradicts the mouse pattern in C6 |
+| Epithelium is the AREG source in human lung adenocarcinoma | Not established; CD1c+ dendritic cells match or exceed the tumour states |
+| AREG or HBEGF is tumour-enriched in human lung relative to matched normal | Refuted at compartment level; not computable at subtype level |
+| Runx1 and Pdgfrb persistence after Areg deletion reflects a second tumour signal | Refuted by E4; both genes rise with bleomycin alone |
+| Hbegf or Egfr is specific to the tumour mesenchyme | Refuted by E4; both are injury-generic |
+| A within-tumour comparison of tumour epithelial states against AT2 in GSE131907 | Not establishable; the deposited labels are tissue-exclusive |

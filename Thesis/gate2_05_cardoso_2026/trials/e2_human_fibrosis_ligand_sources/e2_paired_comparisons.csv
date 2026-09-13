@@ -1,0 +1,6 @@
+group_a,group_b,n_donors,median_a,median_b,a_higher_in_donors,p_value,a_higher,cohort,gene,test,note
+myeloid (pooled),Aberrant_Basaloid,7,0.3656,0.3902,5,0.296875,False,E2_GSE136831,HBEGF,T1,
+Aberrant_Basaloid,ATII,3,0.4848,0.7674,2,,,E2_GSE136831,AREG,T3,fewer donors than the frozen floor; no test
+myeloid (pooled),KRT5-/KRT17+,3,0.7086,0.4182,2,,,E3_GSE135893,HBEGF,T1,fewer donors than the frozen floor; no test
+KRT5-/KRT17+,AT2,3,0.7,0.6715,2,,,E3_GSE135893,AREG,T3,fewer donors than the frozen floor; no test
+Transitional AT2,AT2,2,0.781,0.574,2,,,E3_GSE135893,AREG,T3 extra,fewer donors than the frozen floor; no test

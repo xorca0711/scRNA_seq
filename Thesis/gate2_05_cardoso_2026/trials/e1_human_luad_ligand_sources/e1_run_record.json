@@ -1,0 +1,142 @@
+{
+  "trial": "E1 human LUAD EGFR ligand sources",
+  "rules_frozen_at": "2026-09-13T04:54:31+00:00",
+  "rules": {
+    "dataset": "GSE131907 (Kim et al. 2020), the human comparison the paper itself used",
+    "cells": "deposited annotation, Sample_Origin in tLung or nLung",
+    "compartment_primary": {
+      "immune": [
+        "PTPRC"
+      ],
+      "endothelial": [
+        "PECAM1",
+        "CDH5"
+      ],
+      "epithelial": [
+        "EPCAM",
+        "KRT8",
+        "KRT18"
+      ],
+      "mesenchymal": [
+        "COL1A1",
+        "COL1A2"
+      ]
+    },
+    "gate_priority": [
+      "immune",
+      "endothelial",
+      "epithelial",
+      "mesenchymal",
+      "unassigned"
+    ],
+    "immune_split": {
+      "neutrophil": [
+        "S100A8",
+        "S100A9",
+        "FCGR3B"
+      ],
+      "myeloid": [
+        "LYZ",
+        "CD68",
+        "ITGAM",
+        "MARCO",
+        "CD14"
+      ],
+      "lymphoid": [
+        "CD3E",
+        "CD79A",
+        "NKG7"
+      ]
+    },
+    "compartment_crosscheck": "deposited Cell_type.refined, reported only",
+    "genes": [
+      "AREG",
+      "BTC",
+      "CD14",
+      "CD3E",
+      "CD68",
+      "CD79A",
+      "CDH5",
+      "COL1A1",
+      "COL1A2",
+      "EGF",
+      "EGFR",
+      "EPCAM",
+      "EPGN",
+      "EREG",
+      "FCGR3B",
+      "HBEGF",
+      "ITGAM",
+      "KRT18",
+      "KRT8",
+      "LYZ",
+      "MARCO",
+      "NKG7",
+      "PECAM1",
+      "PTPRC",
+      "S100A8",
+      "S100A9",
+      "TGFA"
+    ],
+    "measures": "detection fraction and mean deposited log2 TPM, per donor, tissue and compartment",
+    "min_cells_per_donor_compartment": 50,
+    "T1": "tumour lung, AREG detection higher in epithelial than myeloid cells, paired within donor, Wilcoxon signed-rank two-sided alpha 0.05",
+    "T2": "tumour lung, which compartment has the highest median per-donor HBEGF detection",
+    "T3": "the same table for EGFR",
+    "refutation_rule": "T1 fails, or AREG detected in under 1% of tumour epithelial cells; either stops E2 to E4",
+    "unit": "the donor; this is the first trial in this folder where a test is admissible",
+    "caveats": [
+      "marker gates are not cell-type calls",
+      "detection depends on depth",
+      "tumour epithelium is malignant tissue, not the earliest mutant state"
+    ]
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE131907\\GSE131907_Lung_Cancer_cell_annotation.txt.gz",
+      "bytes": 1886187,
+      "modified": "2026-09-13T04:43:42+00:00"
+    },
+    {
+      "path": "raw_data\\GSE131907\\GSE131907_Lung_Cancer_normalized_log2TPM_matrix.txt.gz",
+      "bytes": 3065932358,
+      "modified": "2026-09-13T04:47:43+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e1_human_luad_ligand_sources\\e1_per_donor_compartment.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e1_human_luad_ligand_sources\\e1_tumour_median_by_compartment.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e1_human_luad_ligand_sources\\e1_gate_vs_deposited_celltype.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e1_human_luad_ligand_sources\\e1_summary.md"
+  ],
+  "results": {
+    "cells_in_scope": 88144,
+    "T1": {
+      "n_donors": 11,
+      "median_epithelial": 0.3363,
+      "median_myeloid": 0.2147,
+      "p_value": 0.001953125,
+      "passes": true
+    },
+    "refutation_rule_triggered": false,
+    "areg_floor_median_epithelial_detection": 0.3363,
+    "T2_hbegf_top_compartment": "neutrophil",
+    "T3_egfr_top_compartment": "epithelial"
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T04:56:16+00:00"
+}

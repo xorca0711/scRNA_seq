@@ -1,0 +1,757 @@
+donor,tissue,subtype,n_cells,det_AREG,det_EREG,det_HBEGF,det_TGFA,det_EGFR,evaluable
+LUNG_N01,nLung,AT1,9,0.1111,0.0,0.4444,0.1111,0.5556,False
+LUNG_N01,nLung,AT2,145,0.9103,0.0414,0.5724,0.0276,0.5034,True
+LUNG_N01,nLung,Activated DCs,11,0.1818,0.0909,0.1818,0.0,0.0,False
+LUNG_N01,nLung,Alveolar Mac,608,0.2467,0.2089,0.8586,0.0164,0.0115,True
+LUNG_N01,nLung,CD141+ DCs,11,0.5455,0.0,0.3636,0.0,0.0,False
+LUNG_N01,nLung,CD163+CD14+ DCs,58,0.7069,0.431,0.6207,0.0345,0.0,True
+LUNG_N01,nLung,CD1c+ DCs,76,0.8158,0.3553,0.5921,0.0,0.0,True
+LUNG_N01,nLung,CD4+ Th,216,0.1944,0.0093,0.0741,0.0,0.0,True
+LUNG_N01,nLung,CD8 low T,101,0.1188,0.0198,0.0198,0.0,0.0,True
+LUNG_N01,nLung,COL13A1+ matrix FBs,13,0.0,0.0,0.2308,0.0,0.2308,False
+LUNG_N01,nLung,Ciliated,24,0.625,0.0417,0.3333,0.0417,0.375,False
+LUNG_N01,nLung,Club,17,0.4118,0.0588,0.5294,0.0588,0.5294,False
+LUNG_N01,nLung,Cytotoxic CD8+ T,294,0.1054,0.0102,0.0306,0.0,0.0,True
+LUNG_N01,nLung,Exhausted CD8+ T,16,0.125,0.0,0.0625,0.0,0.0,False
+LUNG_N01,nLung,Follicular B cells,40,0.125,0.0,0.0,0.0,0.0,False
+LUNG_N01,nLung,GrB-secreting B cells,31,0.7097,0.0323,0.0968,0.0,0.0,False
+LUNG_N01,nLung,Lymphatic ECs,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N01,nLung,MALT B cells,11,0.5455,0.0909,0.0,0.0,0.0,False
+LUNG_N01,nLung,MAST,230,0.6913,0.0043,0.0217,0.0087,0.0,True
+LUNG_N01,nLung,Monocytes,471,0.4416,0.5456,0.3928,0.0,0.0021,True
+LUNG_N01,nLung,NK,299,0.3913,0.0067,0.0167,0.0,0.0,True
+LUNG_N01,nLung,Naive CD4+ T,10,0.5,0.0,0.0,0.0,0.0,False
+LUNG_N01,nLung,Naive CD8+ T,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N01,nLung,Pleural Mac,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N01,nLung,Smooth muscle cells,3,0.0,0.0,0.3333,0.0,0.0,False
+LUNG_N01,nLung,Stalk-like ECs,14,0.1429,0.0,0.5,0.0,0.0,False
+LUNG_N01,nLung,Tip-like ECs,16,0.125,0.0,0.125,0.0,0.1875,False
+LUNG_N01,nLung,Treg,11,0.0,0.0,0.0909,0.0,0.0,False
+LUNG_N01,nLung,mo-Mac,68,0.0882,0.1618,0.4118,0.0441,0.0,True
+LUNG_N01,nLung,pDCs,1,1.0,0.0,0.0,0.0,0.0,False
+LUNG_N06,nLung,AT1,19,0.1053,0.0526,0.2105,0.1579,0.2105,False
+LUNG_N06,nLung,AT2,91,0.4725,0.022,0.1209,0.022,0.1978,True
+LUNG_N06,nLung,Activated DCs,8,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N06,nLung,Alveolar Mac,1146,0.1134,0.1963,0.7635,0.0035,0.0017,True
+LUNG_N06,nLung,CD141+ DCs,6,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N06,nLung,CD163+CD14+ DCs,1,0.0,1.0,0.0,0.0,0.0,False
+LUNG_N06,nLung,CD1c+ DCs,25,0.48,0.24,0.2,0.04,0.0,False
+LUNG_N06,nLung,CD4+ Th,180,0.1167,0.0111,0.0,0.0056,0.0,True
+LUNG_N06,nLung,CD8 low T,60,0.0333,0.0,0.0,0.0,0.0,True
+LUNG_N06,nLung,COL13A1+ matrix FBs,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N06,nLung,COL14A1+ matrix FBs,8,0.0,0.0,0.125,0.0,0.25,False
+LUNG_N06,nLung,Ciliated,48,0.3542,0.0208,0.0417,0.1042,0.2083,False
+LUNG_N06,nLung,Club,18,0.2222,0.0,0.1667,0.0,0.0556,False
+LUNG_N06,nLung,Cytotoxic CD8+ T,350,0.04,0.0057,0.02,0.0029,0.0,True
+LUNG_N06,nLung,Exhausted CD8+ T,7,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N06,nLung,Follicular B cells,21,0.0476,0.0,0.0,0.0476,0.0,False
+LUNG_N06,nLung,GrB-secreting B cells,5,0.2,0.0,0.0,0.0,0.0,False
+LUNG_N06,nLung,Lymphatic ECs,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N06,nLung,MALT B cells,1,1.0,0.0,0.0,0.0,0.0,False
+LUNG_N06,nLung,MAST,30,0.2333,0.0333,0.0,0.1,0.0,False
+LUNG_N06,nLung,Mesothelial cells,1,0.0,0.0,0.0,0.0,1.0,False
+LUNG_N06,nLung,Monocytes,94,0.2447,0.6596,0.2447,0.0213,0.0,True
+LUNG_N06,nLung,NK,176,0.2045,0.0057,0.0284,0.0,0.0,True
+LUNG_N06,nLung,Naive CD4+ T,17,0.1765,0.0,0.0,0.0,0.0,False
+LUNG_N06,nLung,Plasma cells,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N06,nLung,Pleural Mac,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N06,nLung,Stalk-like ECs,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N06,nLung,Tip-like ECs,5,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N06,nLung,Treg,9,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N06,nLung,mo-Mac,26,0.0,0.1154,0.0769,0.0,0.0,False
+LUNG_N08,nLung,AT1,66,0.0303,0.0,0.3333,0.0,0.197,True
+LUNG_N08,nLung,AT2,137,0.4526,0.0073,0.1971,0.0219,0.2847,True
+LUNG_N08,nLung,Activated DCs,5,0.2,0.2,0.2,0.4,0.0,False
+LUNG_N08,nLung,Alveolar Mac,1110,0.0991,0.2423,0.7712,0.0081,0.0045,True
+LUNG_N08,nLung,CD141+ DCs,2,0.0,0.0,0.5,0.0,0.0,False
+LUNG_N08,nLung,CD163+CD14+ DCs,8,0.5,0.375,0.75,0.0,0.0,False
+LUNG_N08,nLung,CD1c+ DCs,29,0.4828,0.4138,0.5862,0.0,0.0,False
+LUNG_N08,nLung,CD4+ Th,257,0.0856,0.0195,0.0272,0.0,0.0,True
+LUNG_N08,nLung,CD8 low T,41,0.122,0.0,0.0732,0.0244,0.0,False
+LUNG_N08,nLung,COL13A1+ matrix FBs,1,0.0,0.0,0.0,0.0,1.0,False
+LUNG_N08,nLung,COL14A1+ matrix FBs,8,0.0,0.0,0.125,0.0,0.375,False
+LUNG_N08,nLung,Ciliated,66,0.3182,0.0152,0.0758,0.0909,0.2576,True
+LUNG_N08,nLung,Club,26,0.3077,0.0,0.3077,0.0385,0.3077,False
+LUNG_N08,nLung,Cytotoxic CD8+ T,111,0.0811,0.027,0.009,0.0,0.0,True
+LUNG_N08,nLung,EPCs,3,0.0,0.3333,0.6667,0.0,0.0,False
+LUNG_N08,nLung,Exhausted CD8+ T,7,0.2857,0.1429,0.0,0.0,0.0,False
+LUNG_N08,nLung,Exhausted Tfh,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N08,nLung,Follicular B cells,46,0.1304,0.0,0.0435,0.0,0.0,False
+LUNG_N08,nLung,GrB-secreting B cells,7,0.7143,0.0,0.1429,0.0,0.0,False
+LUNG_N08,nLung,Lymphatic ECs,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N08,nLung,MALT B cells,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N08,nLung,MAST,84,0.2143,0.0119,0.0119,0.0119,0.0,True
+LUNG_N08,nLung,Monocytes,154,0.4026,0.5974,0.4481,0.0,0.0,True
+LUNG_N08,nLung,NK,390,0.1333,0.0077,0.0256,0.0026,0.0,True
+LUNG_N08,nLung,Naive CD4+ T,41,0.122,0.0,0.0244,0.0,0.0,False
+LUNG_N08,nLung,Naive CD8+ T,6,0.3333,0.0,0.0,0.0,0.0,False
+LUNG_N08,nLung,Pericytes,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N08,nLung,Plasma cells,4,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N08,nLung,Pleural Mac,4,0.25,0.0,0.25,0.0,0.0,False
+LUNG_N08,nLung,Smooth muscle cells,3,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N08,nLung,Stalk-like ECs,16,0.0,0.0,0.25,0.0,0.0625,False
+LUNG_N08,nLung,Tip-like ECs,90,0.0333,0.0111,0.0111,0.0,0.0333,True
+LUNG_N08,nLung,Treg,17,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N08,nLung,Tumor ECs,1,0.0,0.0,1.0,0.0,0.0,False
+LUNG_N08,nLung,mo-Mac,32,0.125,0.1562,0.4375,0.0312,0.0,False
+LUNG_N09,nLung,AT1,20,0.2,0.05,0.3,0.1,0.35,False
+LUNG_N09,nLung,AT2,330,0.7455,0.0121,0.3758,0.0424,0.503,True
+LUNG_N09,nLung,Activated DCs,2,0.5,0.0,0.0,0.0,0.0,False
+LUNG_N09,nLung,Alveolar Mac,938,0.1599,0.2495,0.8998,0.0128,0.0021,True
+LUNG_N09,nLung,CD141+ DCs,6,0.3333,0.0,0.3333,0.0,0.0,False
+LUNG_N09,nLung,CD163+CD14+ DCs,15,0.8,0.4,0.8667,0.0,0.0,False
+LUNG_N09,nLung,CD1c+ DCs,47,0.7872,0.234,0.8511,0.0638,0.0,False
+LUNG_N09,nLung,CD4+ Th,156,0.1538,0.0,0.0192,0.0064,0.0,True
+LUNG_N09,nLung,CD8 low T,33,0.1515,0.0,0.0,0.0,0.0,False
+LUNG_N09,nLung,COL13A1+ matrix FBs,26,0.0,0.0,0.1154,0.0,0.3462,False
+LUNG_N09,nLung,COL14A1+ matrix FBs,10,0.0,0.0,0.0,0.0,0.2,False
+LUNG_N09,nLung,Ciliated,17,0.2941,0.0,0.1176,0.0,0.1765,False
+LUNG_N09,nLung,Club,12,0.1667,0.0,0.5,0.0,0.4167,False
+LUNG_N09,nLung,Cytotoxic CD8+ T,65,0.0769,0.0,0.0308,0.0,0.0,True
+LUNG_N09,nLung,EPCs,6,0.1667,0.1667,0.5,0.0,0.1667,False
+LUNG_N09,nLung,Exhausted CD8+ T,25,0.16,0.0,0.0,0.0,0.0,False
+LUNG_N09,nLung,Follicular B cells,42,0.1667,0.0,0.0,0.0,0.0238,False
+LUNG_N09,nLung,GrB-secreting B cells,9,0.7778,0.0,0.0,0.0,0.0,False
+LUNG_N09,nLung,Lymphatic ECs,5,0.0,0.0,0.2,0.0,0.0,False
+LUNG_N09,nLung,MALT B cells,24,0.1667,0.0417,0.0,0.0,0.0,False
+LUNG_N09,nLung,MAST,103,0.835,0.0194,0.0583,0.0194,0.0097,True
+LUNG_N09,nLung,Monocytes,80,0.3875,0.55,0.425,0.0,0.0,True
+LUNG_N09,nLung,Myofibroblasts,3,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N09,nLung,NK,115,0.2609,0.0,0.0348,0.0,0.0087,True
+LUNG_N09,nLung,Naive CD4+ T,31,0.0968,0.0,0.0,0.0,0.0,False
+LUNG_N09,nLung,Naive CD8+ T,14,0.0714,0.0,0.0,0.0,0.0,False
+LUNG_N09,nLung,Pericytes,3,0.0,0.0,0.3333,0.0,0.0,False
+LUNG_N09,nLung,Plasma cells,8,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N09,nLung,Smooth muscle cells,7,0.1429,0.0,0.0,0.0,0.0,False
+LUNG_N09,nLung,Stalk-like ECs,14,0.1429,0.0,0.3571,0.0,0.0714,False
+LUNG_N09,nLung,Tip-like ECs,28,0.0357,0.0,0.2143,0.0,0.0357,False
+LUNG_N09,nLung,Treg,17,0.0588,0.0,0.0588,0.0,0.0,False
+LUNG_N09,nLung,Tumor ECs,4,0.0,0.0,0.25,0.0,0.0,False
+LUNG_N09,nLung,mo-Mac,82,0.0488,0.061,0.3415,0.0244,0.0,True
+LUNG_N18,nLung,AT1,90,0.0333,0.0333,0.2778,0.0222,0.2111,True
+LUNG_N18,nLung,AT2,76,0.8026,0.0789,0.4342,0.0132,0.2368,True
+LUNG_N18,nLung,Activated DCs,8,0.375,0.0,0.0,0.0,0.0,False
+LUNG_N18,nLung,Alveolar Mac,1487,0.3961,0.4217,0.8265,0.0054,0.0013,True
+LUNG_N18,nLung,CD141+ DCs,32,0.1875,0.0,0.0625,0.0312,0.0,False
+LUNG_N18,nLung,CD163+CD14+ DCs,8,0.625,0.625,0.75,0.0,0.0,False
+LUNG_N18,nLung,CD1c+ DCs,133,0.7218,0.3083,0.609,0.0376,0.0,True
+LUNG_N18,nLung,CD4+ Th,408,0.1201,0.0074,0.0319,0.0,0.0,True
+LUNG_N18,nLung,CD8 low T,41,0.0976,0.0,0.0,0.0,0.0,False
+LUNG_N18,nLung,CD8+/CD4+ Mixed Th,4,0.75,0.0,0.25,0.0,0.0,False
+LUNG_N18,nLung,COL13A1+ matrix FBs,25,0.0,0.0,0.12,0.0,0.08,False
+LUNG_N18,nLung,COL14A1+ matrix FBs,96,0.0417,0.0,0.1979,0.0,0.2292,True
+LUNG_N18,nLung,Ciliated,151,0.6159,0.0331,0.1921,0.0927,0.1391,True
+LUNG_N18,nLung,Club,76,0.4605,0.0395,0.3158,0.0263,0.1711,True
+LUNG_N18,nLung,Cytotoxic CD8+ T,224,0.1786,0.0045,0.0268,0.0,0.0,True
+LUNG_N18,nLung,EPCs,5,0.4,0.4,0.8,0.0,0.0,False
+LUNG_N18,nLung,Exhausted CD8+ T,18,0.1111,0.0,0.1111,0.0,0.0,False
+LUNG_N18,nLung,Exhausted Tfh,7,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N18,nLung,Follicular B cells,56,0.1429,0.0179,0.0357,0.0,0.0,True
+LUNG_N18,nLung,GrB-secreting B cells,22,0.5909,0.0,0.0,0.0,0.0,False
+LUNG_N18,nLung,Lymphatic ECs,37,0.0,0.0,0.1892,0.0,0.0,False
+LUNG_N18,nLung,MALT B cells,6,0.3333,0.0,0.0,0.0,0.0,False
+LUNG_N18,nLung,MAST,82,0.5854,0.0244,0.0366,0.0122,0.0,True
+LUNG_N18,nLung,Mesothelial cells,3,0.6667,0.3333,0.3333,0.0,0.0,False
+LUNG_N18,nLung,Monocytes,226,0.5354,0.6549,0.5531,0.0044,0.0,True
+LUNG_N18,nLung,NK,294,0.3503,0.0068,0.017,0.0,0.0,True
+LUNG_N18,nLung,Naive CD4+ T,27,0.3333,0.0,0.037,0.0,0.0,False
+LUNG_N18,nLung,Naive CD8+ T,12,0.0833,0.0,0.0,0.0,0.0,False
+LUNG_N18,nLung,Pericytes,2,0.0,0.0,0.5,0.0,0.5,False
+LUNG_N18,nLung,Plasma cells,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N18,nLung,Pleural Mac,25,0.16,0.08,0.16,0.04,0.0,False
+LUNG_N18,nLung,Smooth muscle cells,6,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N18,nLung,Stalk-like ECs,81,0.0617,0.0,0.3951,0.0,0.0494,True
+LUNG_N18,nLung,Tip-like ECs,40,0.025,0.0,0.15,0.025,0.025,False
+LUNG_N18,nLung,Treg,34,0.0588,0.0294,0.0588,0.0,0.0294,False
+LUNG_N18,nLung,Tumor ECs,10,0.0,0.0,0.2,0.0,0.0,False
+LUNG_N18,nLung,mo-Mac,101,0.2871,0.1683,0.495,0.0198,0.0,True
+LUNG_N19,nLung,AT1,8,0.0,0.0,0.25,0.0,0.25,False
+LUNG_N19,nLung,AT2,151,0.3974,0.0066,0.1258,0.0199,0.3113,True
+LUNG_N19,nLung,Activated DCs,12,0.0833,0.0833,0.0,0.0,0.0833,False
+LUNG_N19,nLung,Alveolar Mac,770,0.1104,0.2403,0.6429,0.0052,0.0,True
+LUNG_N19,nLung,CD141+ DCs,10,0.2,0.0,0.1,0.0,0.0,False
+LUNG_N19,nLung,CD163+CD14+ DCs,15,0.3333,0.4667,0.6667,0.0667,0.0,False
+LUNG_N19,nLung,CD1c+ DCs,72,0.3472,0.2222,0.4722,0.0972,0.0139,True
+LUNG_N19,nLung,CD4+ Th,389,0.0771,0.0051,0.0206,0.0,0.0026,True
+LUNG_N19,nLung,CD8 low T,30,0.0333,0.0,0.0,0.0333,0.0,False
+LUNG_N19,nLung,COL13A1+ matrix FBs,39,0.0256,0.0,0.1282,0.0,0.1538,False
+LUNG_N19,nLung,COL14A1+ matrix FBs,1,0.0,0.0,0.0,0.0,1.0,False
+LUNG_N19,nLung,Ciliated,8,0.375,0.0,0.0,0.0,0.125,False
+LUNG_N19,nLung,Club,5,0.6,0.0,0.0,0.0,0.2,False
+LUNG_N19,nLung,Cytotoxic CD8+ T,107,0.1121,0.0093,0.0,0.0,0.0,True
+LUNG_N19,nLung,EPCs,23,0.0435,0.087,0.1304,0.0,0.087,False
+LUNG_N19,nLung,Exhausted CD8+ T,16,0.0625,0.0,0.0,0.0,0.0,False
+LUNG_N19,nLung,Follicular B cells,17,0.2941,0.0,0.0,0.0,0.0,False
+LUNG_N19,nLung,GrB-secreting B cells,19,0.5789,0.0,0.1053,0.0,0.0,False
+LUNG_N19,nLung,Lymphatic ECs,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N19,nLung,MALT B cells,9,0.2222,0.1111,0.0,0.0,0.0,False
+LUNG_N19,nLung,MAST,187,0.1658,0.0053,0.0267,0.0107,0.0,True
+LUNG_N19,nLung,Monocytes,195,0.3641,0.5641,0.3231,0.0103,0.0,True
+LUNG_N19,nLung,NK,418,0.1866,0.0024,0.0048,0.0144,0.0,True
+LUNG_N19,nLung,Naive CD4+ T,35,0.2857,0.0,0.0286,0.0,0.0,False
+LUNG_N19,nLung,Naive CD8+ T,10,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N19,nLung,Pericytes,16,0.0625,0.0,0.0,0.0,0.125,False
+LUNG_N19,nLung,Plasma cells,3,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N19,nLung,Pleural Mac,2,1.0,0.0,0.0,0.0,0.0,False
+LUNG_N19,nLung,Smooth muscle cells,15,0.0667,0.0,0.0667,0.0,0.0667,False
+LUNG_N19,nLung,Stalk-like ECs,83,0.0361,0.0,0.2048,0.0,0.0843,True
+LUNG_N19,nLung,Tip-like ECs,274,0.0073,0.0,0.1095,0.0,0.0365,True
+LUNG_N19,nLung,Treg,15,0.0,0.0,0.0667,0.0,0.0,False
+LUNG_N19,nLung,Tumor ECs,13,0.0,0.0,0.3077,0.0,0.0769,False
+LUNG_N19,nLung,mo-Mac,52,0.0385,0.1731,0.3654,0.0385,0.0,True
+LUNG_N19,nLung,pDCs,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N20,nLung,AT1,45,0.0444,0.0,0.1111,0.0667,0.3111,False
+LUNG_N20,nLung,AT2,191,0.2618,0.0157,0.0942,0.0052,0.2513,True
+LUNG_N20,nLung,Activated DCs,4,0.25,0.0,0.0,0.0,0.0,False
+LUNG_N20,nLung,Alveolar Mac,3238,0.0522,0.1665,0.533,0.0077,0.0015,True
+LUNG_N20,nLung,CD141+ DCs,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N20,nLung,CD163+CD14+ DCs,18,0.2222,0.5556,0.5,0.0556,0.0,False
+LUNG_N20,nLung,CD1c+ DCs,157,0.2357,0.1274,0.3248,0.0382,0.0,True
+LUNG_N20,nLung,CD207+CD1a+ LCs,4,0.25,0.0,0.25,0.0,0.0,False
+LUNG_N20,nLung,CD4+ Th,289,0.1488,0.0035,0.0,0.0,0.0,True
+LUNG_N20,nLung,CD8 low T,59,0.0339,0.0,0.0,0.0,0.0,True
+LUNG_N20,nLung,COL13A1+ matrix FBs,5,0.0,0.0,0.0,0.0,0.2,False
+LUNG_N20,nLung,COL14A1+ matrix FBs,4,0.0,0.0,0.0,0.0,0.25,False
+LUNG_N20,nLung,Ciliated,23,0.1739,0.0435,0.0435,0.0435,0.0435,False
+LUNG_N20,nLung,Club,34,0.1176,0.0,0.1471,0.0588,0.1765,False
+LUNG_N20,nLung,Cytotoxic CD8+ T,88,0.0795,0.0,0.0114,0.0,0.0,True
+LUNG_N20,nLung,EPCs,7,0.0,0.0,0.2857,0.0,0.0,False
+LUNG_N20,nLung,Exhausted CD8+ T,5,0.4,0.0,0.0,0.0,0.0,False
+LUNG_N20,nLung,Exhausted Tfh,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N20,nLung,Follicular B cells,21,0.2381,0.0,0.0,0.0,0.0,False
+LUNG_N20,nLung,GrB-secreting B cells,13,0.3846,0.0,0.0769,0.0,0.0,False
+LUNG_N20,nLung,Lymphatic ECs,7,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N20,nLung,MALT B cells,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N20,nLung,MAST,157,0.0573,0.0064,0.0318,0.0064,0.0,True
+LUNG_N20,nLung,Monocytes,93,0.1183,0.4946,0.3118,0.0,0.0,True
+LUNG_N20,nLung,NK,430,0.1093,0.0023,0.0023,0.0,0.0,True
+LUNG_N20,nLung,Naive CD4+ T,52,0.0192,0.0,0.0192,0.0,0.0,True
+LUNG_N20,nLung,Naive CD8+ T,8,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N20,nLung,Pericytes,3,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N20,nLung,Pleural Mac,5,0.0,0.0,0.4,0.0,0.0,False
+LUNG_N20,nLung,Smooth muscle cells,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N20,nLung,Stalk-like ECs,39,0.0,0.0,0.1538,0.0,0.0513,False
+LUNG_N20,nLung,Tip-like ECs,17,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N20,nLung,Treg,12,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N20,nLung,Tumor ECs,5,0.0,0.0,0.2,0.0,0.0,False
+LUNG_N20,nLung,mo-Mac,21,0.1905,0.2857,0.2381,0.0476,0.0,False
+LUNG_N28,nLung,AT1,19,0.0526,0.0,0.2105,0.1053,0.1579,False
+LUNG_N28,nLung,AT2,208,0.3269,0.0144,0.2067,0.0192,0.2356,True
+LUNG_N28,nLung,Alveolar Mac,728,0.0591,0.103,0.6387,0.011,0.0,True
+LUNG_N28,nLung,CD141+ DCs,1,1.0,0.0,0.0,0.0,0.0,False
+LUNG_N28,nLung,CD163+CD14+ DCs,3,0.0,0.3333,0.0,0.3333,0.0,False
+LUNG_N28,nLung,CD1c+ DCs,10,0.3,0.0,0.5,0.0,0.0,False
+LUNG_N28,nLung,CD4+ Th,476,0.0882,0.0063,0.0105,0.0021,0.0,True
+LUNG_N28,nLung,CD8 low T,81,0.037,0.0123,0.0123,0.0,0.0,True
+LUNG_N28,nLung,CD8+/CD4+ Mixed Th,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N28,nLung,COL14A1+ matrix FBs,9,0.0,0.0,0.0,0.0,0.1111,False
+LUNG_N28,nLung,Club,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N28,nLung,Cytotoxic CD8+ T,418,0.0191,0.0024,0.0072,0.0,0.0,True
+LUNG_N28,nLung,Exhausted CD8+ T,45,0.0444,0.0222,0.0,0.0222,0.0,False
+LUNG_N28,nLung,Exhausted Tfh,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N28,nLung,Follicular B cells,17,0.0588,0.0,0.0,0.0,0.0,False
+LUNG_N28,nLung,GC B cells in the DZ,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N28,nLung,GrB-secreting B cells,9,0.2222,0.0,0.1111,0.0,0.0,False
+LUNG_N28,nLung,Lymphatic ECs,5,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N28,nLung,MALT B cells,4,0.0,0.0,0.25,0.0,0.0,False
+LUNG_N28,nLung,MAST,57,0.1228,0.0175,0.0175,0.0351,0.0,True
+LUNG_N28,nLung,Monocytes,29,0.1034,0.5862,0.3448,0.0,0.0,False
+LUNG_N28,nLung,NK,316,0.1361,0.0,0.0063,0.0095,0.0,True
+LUNG_N28,nLung,Naive CD4+ T,41,0.0976,0.0,0.0244,0.0,0.0,False
+LUNG_N28,nLung,Naive CD8+ T,6,0.3333,0.0,0.0,0.0,0.0,False
+LUNG_N28,nLung,Pericytes,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N28,nLung,Plasma cells,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N28,nLung,Pleural Mac,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N28,nLung,Smooth muscle cells,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N28,nLung,Stalk-like ECs,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N28,nLung,Tip-like ECs,5,0.0,0.0,0.2,0.0,0.0,False
+LUNG_N28,nLung,Treg,20,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N28,nLung,mo-Mac,7,0.1429,0.1429,0.1429,0.0,0.0,False
+LUNG_N30,nLung,AT1,34,0.0,0.0,0.1176,0.0294,0.0588,False
+LUNG_N30,nLung,AT2,72,0.5833,0.0278,0.3472,0.0278,0.1806,True
+LUNG_N30,nLung,Activated DCs,3,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N30,nLung,Alveolar Mac,329,0.1185,0.076,0.7477,0.0122,0.003,True
+LUNG_N30,nLung,CD141+ DCs,9,0.2222,0.0,0.1111,0.0,0.0,False
+LUNG_N30,nLung,CD163+CD14+ DCs,4,0.0,0.0,0.75,0.0,0.0,False
+LUNG_N30,nLung,CD1c+ DCs,80,0.525,0.25,0.475,0.025,0.0125,True
+LUNG_N30,nLung,CD4+ Th,367,0.1253,0.0054,0.0163,0.0082,0.0,True
+LUNG_N30,nLung,CD8 low T,108,0.1111,0.0185,0.0,0.0,0.0,True
+LUNG_N30,nLung,COL13A1+ matrix FBs,72,0.0139,0.0,0.0694,0.0,0.125,True
+LUNG_N30,nLung,COL14A1+ matrix FBs,123,0.0081,0.0,0.0894,0.0,0.1789,True
+LUNG_N30,nLung,Ciliated,119,0.4286,0.0084,0.1345,0.042,0.084,True
+LUNG_N30,nLung,Club,104,0.1346,0.0096,0.1923,0.0577,0.1635,True
+LUNG_N30,nLung,Cytotoxic CD8+ T,146,0.1507,0.0205,0.0,0.0,0.0,True
+LUNG_N30,nLung,EPCs,8,0.0,0.125,0.375,0.0,0.0,False
+LUNG_N30,nLung,Exhausted CD8+ T,15,0.0667,0.0,0.0,0.0,0.0,False
+LUNG_N30,nLung,Exhausted Tfh,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N30,nLung,Follicular B cells,21,0.2381,0.0,0.0,0.0,0.0,False
+LUNG_N30,nLung,GrB-secreting B cells,26,0.5769,0.0,0.0,0.0,0.0,False
+LUNG_N30,nLung,Lymphatic ECs,65,0.0,0.0154,0.0769,0.0308,0.0,True
+LUNG_N30,nLung,MALT B cells,4,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N30,nLung,MAST,56,0.1964,0.0,0.0536,0.0,0.0,True
+LUNG_N30,nLung,Monocytes,388,0.482,0.5438,0.4897,0.0026,0.0,True
+LUNG_N30,nLung,NK,674,0.3086,0.0045,0.0074,0.0045,0.0015,True
+LUNG_N30,nLung,Naive CD4+ T,14,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N30,nLung,Naive CD8+ T,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N30,nLung,Plasma cells,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N30,nLung,Pleural Mac,3,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N30,nLung,Smooth muscle cells,7,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N30,nLung,Stalk-like ECs,26,0.0,0.0,0.3462,0.0,0.1538,False
+LUNG_N30,nLung,Tip-like ECs,76,0.0,0.0,0.1184,0.0,0.0263,True
+LUNG_N30,nLung,Treg,26,0.0,0.0,0.0385,0.0,0.0,False
+LUNG_N30,nLung,Tumor ECs,5,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N30,nLung,mo-Mac,107,0.0467,0.0187,0.271,0.0187,0.0,True
+LUNG_N31,nLung,AT1,82,0.0732,0.0,0.1707,0.0732,0.3293,True
+LUNG_N31,nLung,AT2,250,0.832,0.096,0.424,0.016,0.244,True
+LUNG_N31,nLung,Activated DCs,7,0.2857,0.2857,0.0,0.0,0.0,False
+LUNG_N31,nLung,Alveolar Mac,718,0.3008,0.3997,0.7869,0.007,0.0042,True
+LUNG_N31,nLung,CD141+ DCs,14,0.4286,0.0,0.4286,0.0,0.0,False
+LUNG_N31,nLung,CD163+CD14+ DCs,7,0.4286,0.7143,0.4286,0.0,0.0,False
+LUNG_N31,nLung,CD1c+ DCs,169,0.8462,0.3846,0.5207,0.0414,0.0,True
+LUNG_N31,nLung,CD207+CD1a+ LCs,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N31,nLung,CD4+ Th,155,0.2129,0.0065,0.0323,0.0,0.0,True
+LUNG_N31,nLung,CD8 low T,45,0.0444,0.0,0.0,0.0,0.0,False
+LUNG_N31,nLung,CD8+/CD4+ Mixed Th,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N31,nLung,COL13A1+ matrix FBs,43,0.0233,0.0,0.093,0.0,0.1395,False
+LUNG_N31,nLung,COL14A1+ matrix FBs,719,0.0431,0.0056,0.1711,0.0,0.3102,True
+LUNG_N31,nLung,Ciliated,137,0.3723,0.0073,0.0584,0.073,0.0876,True
+LUNG_N31,nLung,Club,73,0.2466,0.0137,0.137,0.0274,0.1233,True
+LUNG_N31,nLung,Cytotoxic CD8+ T,97,0.0309,0.0206,0.0103,0.0,0.0,True
+LUNG_N31,nLung,EPCs,5,0.6,0.2,0.4,0.0,0.0,False
+LUNG_N31,nLung,Exhausted CD8+ T,18,0.1111,0.0,0.0,0.0,0.0,False
+LUNG_N31,nLung,FB-like cells,1,0.0,0.0,1.0,0.0,1.0,False
+LUNG_N31,nLung,Follicular B cells,13,0.3846,0.0,0.0,0.0,0.0,False
+LUNG_N31,nLung,GrB-secreting B cells,27,0.8519,0.037,0.1111,0.0,0.0,False
+LUNG_N31,nLung,Lymphatic ECs,59,0.0678,0.0169,0.2203,0.0508,0.0,True
+LUNG_N31,nLung,MALT B cells,7,0.4286,0.0,0.0,0.0,0.0,False
+LUNG_N31,nLung,MAST,28,0.7143,0.0,0.0,0.0,0.0,False
+LUNG_N31,nLung,Mesothelial cells,8,0.375,0.0,0.25,0.0,0.125,False
+LUNG_N31,nLung,Monocytes,211,0.6351,0.5403,0.4171,0.0047,0.0,True
+LUNG_N31,nLung,Myofibroblasts,12,0.0,0.0,0.1667,0.0,0.0,False
+LUNG_N31,nLung,NK,519,0.183,0.0058,0.0077,0.0019,0.0019,True
+LUNG_N31,nLung,Naive CD4+ T,9,0.2222,0.1111,0.0,0.0,0.0,False
+LUNG_N31,nLung,Naive CD8+ T,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N31,nLung,Plasma cells,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N31,nLung,Pleural Mac,16,0.0625,0.0625,0.3125,0.0,0.0,False
+LUNG_N31,nLung,Smooth muscle cells,12,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N31,nLung,Stalk-like ECs,29,0.1379,0.0,0.3448,0.0,0.0,False
+LUNG_N31,nLung,Tip-like ECs,63,0.0635,0.0,0.0952,0.0,0.0159,True
+LUNG_N31,nLung,Treg,22,0.0909,0.0,0.0,0.0,0.0,False
+LUNG_N31,nLung,Tumor ECs,8,0.0,0.0,0.25,0.0,0.0,False
+LUNG_N31,nLung,mo-Mac,189,0.1376,0.0847,0.2751,0.0053,0.0,True
+LUNG_N34,nLung,AT1,138,0.0362,0.0145,0.1304,0.029,0.0942,True
+LUNG_N34,nLung,AT2,369,0.6667,0.019,0.3659,0.0136,0.2547,True
+LUNG_N34,nLung,Activated DCs,6,0.0,0.0,0.0,0.1667,0.0,False
+LUNG_N34,nLung,Alveolar Mac,1139,0.1967,0.3661,0.7612,0.0035,0.0061,True
+LUNG_N34,nLung,CD141+ DCs,9,0.2222,0.0,0.0,0.0,0.0,False
+LUNG_N34,nLung,CD163+CD14+ DCs,6,0.5,0.5,0.5,0.3333,0.0,False
+LUNG_N34,nLung,CD1c+ DCs,82,0.6341,0.2927,0.2927,0.0244,0.0,True
+LUNG_N34,nLung,CD4+ Th,208,0.1106,0.024,0.0096,0.0,0.0,True
+LUNG_N34,nLung,CD8 low T,81,0.0494,0.0,0.037,0.0,0.0,True
+LUNG_N34,nLung,COL13A1+ matrix FBs,34,0.0294,0.0588,0.0,0.0,0.1471,False
+LUNG_N34,nLung,COL14A1+ matrix FBs,100,0.02,0.02,0.15,0.0,0.24,True
+LUNG_N34,nLung,Ciliated,61,0.4754,0.0492,0.0984,0.0656,0.1639,True
+LUNG_N34,nLung,Club,73,0.5068,0.1096,0.2466,0.0411,0.2329,True
+LUNG_N34,nLung,Cytotoxic CD8+ T,141,0.0567,0.0142,0.0,0.0,0.0,True
+LUNG_N34,nLung,EPCs,8,0.125,0.0,0.0,0.0,0.0,False
+LUNG_N34,nLung,Exhausted CD8+ T,5,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N34,nLung,Follicular B cells,38,0.2895,0.0263,0.0526,0.0,0.0,False
+LUNG_N34,nLung,GrB-secreting B cells,18,0.5,0.0,0.0,0.0,0.0,False
+LUNG_N34,nLung,Lymphatic ECs,21,0.1429,0.0476,0.0476,0.0476,0.0,False
+LUNG_N34,nLung,MALT B cells,7,0.4286,0.0,0.1429,0.0,0.0,False
+LUNG_N34,nLung,MAST,65,0.3538,0.0,0.0,0.0154,0.0,True
+LUNG_N34,nLung,Mesothelial cells,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N34,nLung,Monocytes,378,0.6508,0.7407,0.3624,0.0026,0.0026,True
+LUNG_N34,nLung,NK,1121,0.2186,0.0089,0.0125,0.0045,0.0,True
+LUNG_N34,nLung,Naive CD4+ T,3,0.3333,0.0,0.0,0.0,0.0,False
+LUNG_N34,nLung,Naive CD8+ T,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N34,nLung,Pericytes,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N34,nLung,Pleural Mac,8,0.0,0.125,0.0,0.0,0.0,False
+LUNG_N34,nLung,Smooth muscle cells,13,0.0769,0.0,0.0,0.0,0.0769,False
+LUNG_N34,nLung,Stalk-like ECs,18,0.0,0.0,0.2778,0.0,0.1111,False
+LUNG_N34,nLung,Tip-like ECs,40,0.05,0.025,0.1,0.0,0.025,False
+LUNG_N34,nLung,Treg,13,0.0769,0.0,0.0,0.0,0.0,False
+LUNG_N34,nLung,Tumor ECs,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_N34,nLung,mo-Mac,123,0.0894,0.0488,0.187,0.0244,0.0,True
+LUNG_T06,tLung,Activated DCs,11,0.0,0.0909,0.0,0.0,0.0,False
+LUNG_T06,tLung,Alveolar Mac,10,0.2,0.5,0.7,0.0,0.0,False
+LUNG_T06,tLung,CD141+ DCs,10,0.1,0.0,0.0,0.0,0.0,False
+LUNG_T06,tLung,CD163+CD14+ DCs,218,0.344,0.3119,0.6055,0.0413,0.0092,True
+LUNG_T06,tLung,CD1c+ DCs,56,0.5,0.3036,0.5,0.0179,0.0179,True
+LUNG_T06,tLung,CD207+CD1a+ LCs,3,0.3333,0.0,0.0,0.0,0.0,False
+LUNG_T06,tLung,CD4+ Th,563,0.1279,0.0089,0.0107,0.0071,0.0071,True
+LUNG_T06,tLung,CD8 low T,88,0.0909,0.0,0.0114,0.0,0.0,True
+LUNG_T06,tLung,CD8+/CD4+ Mixed Th,4,0.25,0.0,0.0,0.0,0.0,False
+LUNG_T06,tLung,COL13A1+ matrix FBs,331,0.0181,0.0121,0.0423,0.003,0.2417,True
+LUNG_T06,tLung,COL14A1+ matrix FBs,3,0.0,0.0,0.0,0.0,0.3333,False
+LUNG_T06,tLung,Cytotoxic CD8+ T,84,0.0357,0.0,0.0119,0.0119,0.0,True
+LUNG_T06,tLung,Exhausted CD8+ T,86,0.1744,0.0,0.0116,0.0,0.0,True
+LUNG_T06,tLung,Exhausted Tfh,10,0.1,0.0,0.0,0.0,0.0,False
+LUNG_T06,tLung,Follicular B cells,472,0.1441,0.0042,0.0042,0.0021,0.0,True
+LUNG_T06,tLung,GC B cells in the DZ,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T06,tLung,Lymphatic ECs,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T06,tLung,MALT B cells,27,0.1481,0.0,0.037,0.0,0.0,False
+LUNG_T06,tLung,MAST,94,0.4468,0.0,0.0319,0.0213,0.0,True
+LUNG_T06,tLung,Monocytes,24,0.4583,0.75,0.625,0.0,0.0,False
+LUNG_T06,tLung,Myofibroblasts,62,0.0645,0.0323,0.1452,0.0,0.129,True
+LUNG_T06,tLung,NK,30,0.3667,0.0,0.0,0.0,0.0,False
+LUNG_T06,tLung,Naive CD4+ T,130,0.1462,0.0077,0.0154,0.0077,0.0,True
+LUNG_T06,tLung,Naive CD8+ T,9,0.3333,0.0,0.0,0.0,0.0,False
+LUNG_T06,tLung,Pericytes,4,0.0,0.0,0.0,0.0,0.25,False
+LUNG_T06,tLung,Plasma cells,5,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T06,tLung,Pleural Mac,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T06,tLung,Smooth muscle cells,32,0.0625,0.0312,0.0312,0.0,0.1562,False
+LUNG_T06,tLung,Tip-like ECs,13,0.0,0.0,0.2308,0.0,0.0,False
+LUNG_T06,tLung,Treg,137,0.0219,0.0,0.0219,0.0073,0.0073,True
+LUNG_T06,tLung,Tumor ECs,37,0.0541,0.0,0.5405,0.0,0.0541,False
+LUNG_T06,tLung,mo-Mac,214,0.0327,0.1495,0.4159,0.0467,0.0047,True
+LUNG_T06,tLung,pDCs,5,0.8,0.0,0.0,0.0,0.0,False
+LUNG_T06,tLung,tS1,40,0.3,0.0,0.175,0.05,0.375,False
+LUNG_T06,tLung,tS2,55,0.5455,0.1455,0.4364,0.0909,0.5273,True
+LUNG_T06,tLung,tS3,5,0.4,0.0,0.0,0.2,0.2,False
+LUNG_T08,tLung,Activated DCs,16,0.375,0.0625,0.125,0.0,0.0,False
+LUNG_T08,tLung,CD141+ DCs,3,0.3333,0.0,0.3333,0.0,0.0,False
+LUNG_T08,tLung,CD163+CD14+ DCs,48,0.375,0.2917,0.625,0.0208,0.0,False
+LUNG_T08,tLung,CD1c+ DCs,5,1.0,1.0,0.4,0.0,0.0,False
+LUNG_T08,tLung,CD207+CD1a+ LCs,6,0.1667,0.0,0.0,0.0,0.0,False
+LUNG_T08,tLung,CD4+ Th,42,0.1667,0.0,0.0,0.0,0.0238,False
+LUNG_T08,tLung,CD8 low T,65,0.1538,0.0,0.0,0.0,0.0,True
+LUNG_T08,tLung,CD8+/CD4+ Mixed Th,734,0.1935,0.0027,0.0041,0.0027,0.0014,True
+LUNG_T08,tLung,COL13A1+ matrix FBs,175,0.04,0.0057,0.1257,0.0057,0.2057,True
+LUNG_T08,tLung,COL14A1+ matrix FBs,3,0.0,0.0,0.3333,0.0,0.0,False
+LUNG_T08,tLung,Cytotoxic CD8+ T,4,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T08,tLung,Exhausted CD8+ T,60,0.2167,0.0,0.0,0.0,0.0167,True
+LUNG_T08,tLung,Exhausted Tfh,2,0.5,0.0,0.0,0.0,0.0,False
+LUNG_T08,tLung,Follicular B cells,730,0.1863,0.0,0.0055,0.0014,0.0,True
+LUNG_T08,tLung,GC B cells in the DZ,3,0.0,0.0,0.3333,0.0,0.0,False
+LUNG_T08,tLung,GC B cells in the LZ,2,0.0,0.0,0.5,0.0,0.0,False
+LUNG_T08,tLung,Lymphatic ECs,4,0.0,0.0,0.0,0.25,0.0,False
+LUNG_T08,tLung,MALT B cells,216,0.3009,0.0046,0.0231,0.0,0.0,True
+LUNG_T08,tLung,MAST,91,0.1429,0.022,0.0,0.022,0.0,True
+LUNG_T08,tLung,Monocytes,13,0.6154,1.0,0.5385,0.0769,0.0,False
+LUNG_T08,tLung,NK,14,0.3571,0.0,0.0,0.0,0.0,False
+LUNG_T08,tLung,Naive CD4+ T,482,0.1037,0.0021,0.0041,0.0021,0.0,True
+LUNG_T08,tLung,Naive CD8+ T,33,0.1818,0.0303,0.0,0.0,0.0,False
+LUNG_T08,tLung,Pericytes,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T08,tLung,Plasma cells,29,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T08,tLung,Smooth muscle cells,10,0.0,0.0,0.0,0.0,0.1,False
+LUNG_T08,tLung,Stalk-like ECs,1,0.0,0.0,1.0,0.0,0.0,False
+LUNG_T08,tLung,Treg,202,0.0693,0.0,0.0149,0.0,0.0,True
+LUNG_T08,tLung,Tumor ECs,7,0.1429,0.0,0.2857,0.0,0.0,False
+LUNG_T08,tLung,mo-Mac,142,0.1268,0.2183,0.4859,0.0845,0.007,True
+LUNG_T08,tLung,pDCs,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T08,tLung,tS1,33,0.303,0.0303,0.0,0.1818,0.3333,False
+LUNG_T08,tLung,tS2,8,0.375,0.0,0.5,0.125,0.75,False
+LUNG_T08,tLung,tS3,1,0.0,0.0,1.0,0.0,0.0,False
+LUNG_T09,tLung,Activated DCs,15,0.5333,0.1333,0.0,0.0,0.0,False
+LUNG_T09,tLung,Alveolar Mac,34,0.3529,0.4706,0.6765,0.0294,0.0,False
+LUNG_T09,tLung,CD141+ DCs,18,0.3333,0.0,0.0556,0.0556,0.0,False
+LUNG_T09,tLung,CD163+CD14+ DCs,62,0.629,0.7097,0.8065,0.0161,0.0,True
+LUNG_T09,tLung,CD1c+ DCs,46,0.8478,0.3261,0.7826,0.0435,0.0,False
+LUNG_T09,tLung,CD207+CD1a+ LCs,1,1.0,0.0,0.0,0.0,0.0,False
+LUNG_T09,tLung,CD4+ Th,435,0.1563,0.0023,0.0253,0.0023,0.0023,True
+LUNG_T09,tLung,CD8 low T,127,0.1339,0.0,0.0,0.0,0.0,True
+LUNG_T09,tLung,CD8+/CD4+ Mixed Th,3,0.3333,0.0,0.0,0.0,0.0,False
+LUNG_T09,tLung,COL13A1+ matrix FBs,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T09,tLung,Cytotoxic CD8+ T,93,0.0968,0.0,0.0,0.0,0.0,True
+LUNG_T09,tLung,EPCs,2,0.5,0.5,1.0,0.5,0.0,False
+LUNG_T09,tLung,Exhausted CD8+ T,640,0.0953,0.0047,0.0078,0.0,0.0,True
+LUNG_T09,tLung,Exhausted Tfh,19,0.2632,0.0,0.1053,0.0,0.0,False
+LUNG_T09,tLung,Follicular B cells,71,0.2394,0.0141,0.0141,0.0,0.0,True
+LUNG_T09,tLung,GC B cells in the DZ,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T09,tLung,Lymphatic ECs,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T09,tLung,MALT B cells,49,0.1224,0.0,0.0408,0.0,0.0,False
+LUNG_T09,tLung,MAST,56,0.5714,0.0,0.0,0.0357,0.0,True
+LUNG_T09,tLung,Monocytes,95,0.5158,0.5789,0.4211,0.0211,0.0,True
+LUNG_T09,tLung,Myofibroblasts,6,0.0,0.0,0.0,0.0,0.1667,False
+LUNG_T09,tLung,NK,78,0.4487,0.0128,0.0,0.0,0.0,True
+LUNG_T09,tLung,Naive CD4+ T,62,0.1613,0.0,0.0,0.0,0.0,True
+LUNG_T09,tLung,Naive CD8+ T,26,0.0385,0.0,0.0,0.0,0.0,False
+LUNG_T09,tLung,Pericytes,10,0.1,0.0,0.0,0.0,0.1,False
+LUNG_T09,tLung,Plasma cells,20,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T09,tLung,Pleural Mac,4,0.25,0.0,0.25,0.0,0.0,False
+LUNG_T09,tLung,Smooth muscle cells,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T09,tLung,Tip-like ECs,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T09,tLung,Treg,99,0.0707,0.0101,0.0202,0.0,0.0101,True
+LUNG_T09,tLung,Tumor ECs,23,0.0,0.0,0.4783,0.0,0.0435,False
+LUNG_T09,tLung,mo-Mac,1115,0.1587,0.2117,0.4233,0.0709,0.0,True
+LUNG_T09,tLung,pDCs,21,0.5714,0.0,0.0952,0.0,0.0,False
+LUNG_T09,tLung,tS1,5,0.2,0.0,0.4,0.0,0.2,False
+LUNG_T18,tLung,Activated DCs,7,0.1429,0.0,0.1429,0.0,0.0,False
+LUNG_T18,tLung,Alveolar Mac,12,0.0,0.3333,0.4167,0.0,0.0,False
+LUNG_T18,tLung,CD141+ DCs,6,0.0,0.0,0.1667,0.0,0.0,False
+LUNG_T18,tLung,CD163+CD14+ DCs,51,0.4314,0.549,0.7843,0.0784,0.0196,True
+LUNG_T18,tLung,CD1c+ DCs,18,0.1667,0.0556,0.5,0.0,0.0,False
+LUNG_T18,tLung,CD207+CD1a+ LCs,5,0.2,0.0,0.0,0.0,0.0,False
+LUNG_T18,tLung,CD4+ Th,228,0.114,0.0,0.0263,0.0,0.0044,True
+LUNG_T18,tLung,CD8 low T,59,0.0847,0.0,0.0,0.0,0.0,True
+LUNG_T18,tLung,COL13A1+ matrix FBs,16,0.0625,0.0,0.0,0.0,0.1875,False
+LUNG_T18,tLung,Cytotoxic CD8+ T,33,0.1212,0.0,0.0303,0.0,0.0,False
+LUNG_T18,tLung,Exhausted CD8+ T,127,0.0709,0.0,0.0157,0.0,0.0079,True
+LUNG_T18,tLung,Exhausted Tfh,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T18,tLung,Follicular B cells,243,0.3128,0.0,0.0041,0.0,0.0041,True
+LUNG_T18,tLung,Lymphatic ECs,3,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T18,tLung,MALT B cells,22,0.0909,0.0455,0.0909,0.0,0.0909,False
+LUNG_T18,tLung,MAST,87,0.4943,0.023,0.0115,0.023,0.0,True
+LUNG_T18,tLung,Monocytes,21,0.3333,0.5238,0.5714,0.0,0.0,False
+LUNG_T18,tLung,Myofibroblasts,123,0.065,0.0163,0.0488,0.0,0.1138,True
+LUNG_T18,tLung,NK,29,0.2069,0.0345,0.0,0.0,0.0,False
+LUNG_T18,tLung,Naive CD4+ T,112,0.0625,0.0,0.0089,0.0,0.0089,True
+LUNG_T18,tLung,Naive CD8+ T,25,0.04,0.0,0.0,0.0,0.04,False
+LUNG_T18,tLung,Pericytes,7,0.0,0.0,0.0,0.0,0.1429,False
+LUNG_T18,tLung,Plasma cells,5,0.0,0.0,0.0,0.0,0.2,False
+LUNG_T18,tLung,Pleural Mac,6,0.0,0.3333,0.1667,0.1667,0.0,False
+LUNG_T18,tLung,Smooth muscle cells,19,0.0,0.0,0.0526,0.0,0.0526,False
+LUNG_T18,tLung,Stalk-like ECs,1,0.0,0.0,1.0,0.0,0.0,False
+LUNG_T18,tLung,Treg,214,0.0234,0.0,0.014,0.0,0.0187,True
+LUNG_T18,tLung,Tumor ECs,13,0.0,0.0,0.1538,0.0,0.0,False
+LUNG_T18,tLung,mo-Mac,761,0.1156,0.1866,0.5046,0.0355,0.021,True
+LUNG_T18,tLung,pDCs,7,0.2857,0.0,0.0,0.0,0.0,False
+LUNG_T18,tLung,tS1,47,0.0213,0.0213,0.0213,0.0,0.0,False
+LUNG_T18,tLung,tS2,953,0.3725,0.1878,0.2812,0.1249,0.68,True
+LUNG_T18,tLung,tS3,2,0.0,0.5,0.0,0.0,1.0,False
+LUNG_T19,tLung,Activated DCs,36,0.1111,0.0278,0.0278,0.0278,0.0,False
+LUNG_T19,tLung,Alveolar Mac,405,0.2198,0.3086,0.7062,0.0123,0.0,True
+LUNG_T19,tLung,CD141+ DCs,15,0.3333,0.0,0.0,0.0,0.0,False
+LUNG_T19,tLung,CD163+CD14+ DCs,53,0.3962,0.4906,0.566,0.0755,0.0189,True
+LUNG_T19,tLung,CD1c+ DCs,105,0.4476,0.3143,0.5524,0.0381,0.0,True
+LUNG_T19,tLung,CD207+CD1a+ LCs,36,0.0556,0.0278,0.1111,0.0278,0.0556,False
+LUNG_T19,tLung,CD4+ Th,570,0.1298,0.007,0.014,0.0105,0.0018,True
+LUNG_T19,tLung,CD8 low T,50,0.08,0.0,0.04,0.0,0.0,True
+LUNG_T19,tLung,COL13A1+ matrix FBs,62,0.0,0.0,0.0484,0.0,0.2258,True
+LUNG_T19,tLung,COL14A1+ matrix FBs,3,0.0,0.0,0.3333,0.0,0.0,False
+LUNG_T19,tLung,Cytotoxic CD8+ T,38,0.0526,0.0,0.0,0.0,0.0,False
+LUNG_T19,tLung,EPCs,3,0.3333,0.0,0.0,0.0,0.0,False
+LUNG_T19,tLung,Exhausted CD8+ T,36,0.1667,0.0,0.0,0.0,0.0,False
+LUNG_T19,tLung,Exhausted Tfh,6,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T19,tLung,Follicular B cells,373,0.1957,0.0054,0.0054,0.0,0.0,True
+LUNG_T19,tLung,GC B cells in the DZ,8,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T19,tLung,GC B cells in the LZ,6,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T19,tLung,Lymphatic ECs,8,0.0,0.0,0.125,0.0,0.0,False
+LUNG_T19,tLung,MALT B cells,24,0.2917,0.0,0.0417,0.0,0.0,False
+LUNG_T19,tLung,MAST,424,0.1981,0.0,0.0071,0.0142,0.0,True
+LUNG_T19,tLung,Monocytes,167,0.4671,0.7066,0.4132,0.012,0.0,True
+LUNG_T19,tLung,Myofibroblasts,10,0.1,0.0,0.0,0.0,0.1,False
+LUNG_T19,tLung,NK,70,0.2,0.0143,0.0,0.0143,0.0,True
+LUNG_T19,tLung,Naive CD4+ T,219,0.1963,0.0091,0.0091,0.0046,0.0,True
+LUNG_T19,tLung,Naive CD8+ T,26,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T19,tLung,Pericytes,6,0.1667,0.0,0.0,0.0,0.1667,False
+LUNG_T19,tLung,Plasma cells,6,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T19,tLung,Pleural Mac,9,0.1111,0.1111,0.3333,0.1111,0.0,False
+LUNG_T19,tLung,Smooth muscle cells,26,0.0385,0.0385,0.0,0.0,0.2692,False
+LUNG_T19,tLung,Stalk-like ECs,30,0.0333,0.0333,0.4333,0.0,0.0,False
+LUNG_T19,tLung,Tip-like ECs,74,0.027,0.027,0.2162,0.0,0.0946,True
+LUNG_T19,tLung,Treg,192,0.0573,0.0,0.0156,0.0052,0.0,True
+LUNG_T19,tLung,Tumor ECs,44,0.0227,0.0,0.3182,0.0,0.0455,False
+LUNG_T19,tLung,mo-Mac,327,0.107,0.159,0.3119,0.0948,0.0031,True
+LUNG_T19,tLung,pDCs,10,0.7,0.0,0.1,0.0,0.0,False
+LUNG_T19,tLung,tS1,160,0.3563,0.025,0.1437,0.025,0.4062,True
+LUNG_T19,tLung,tS2,25,0.44,0.0,0.36,0.0,0.6,False
+LUNG_T19,tLung,tS3,37,0.4865,0.0541,0.1892,0.027,0.5135,False
+LUNG_T20,tLung,Activated DCs,20,0.35,0.05,0.1,0.0,0.0,False
+LUNG_T20,tLung,Alveolar Mac,77,0.3636,0.3377,0.4805,0.0,0.013,True
+LUNG_T20,tLung,CD141+ DCs,6,0.5,0.0,0.1667,0.1667,0.0,False
+LUNG_T20,tLung,CD163+CD14+ DCs,113,0.5487,0.8053,0.6549,0.0177,0.0177,True
+LUNG_T20,tLung,CD1c+ DCs,50,0.64,0.42,0.56,0.04,0.0,True
+LUNG_T20,tLung,CD207+CD1a+ LCs,3,0.0,0.0,0.3333,0.0,0.0,False
+LUNG_T20,tLung,CD4+ Th,461,0.2993,0.0304,0.013,0.0022,0.0065,True
+LUNG_T20,tLung,CD8 low T,132,0.3258,0.0227,0.0076,0.0,0.0,True
+LUNG_T20,tLung,Cytotoxic CD8+ T,27,0.2963,0.0741,0.0,0.0,0.0,False
+LUNG_T20,tLung,Exhausted CD8+ T,357,0.2689,0.0308,0.0056,0.0028,0.0084,True
+LUNG_T20,tLung,Exhausted Tfh,320,0.2281,0.0563,0.0125,0.0063,0.0063,True
+LUNG_T20,tLung,Follicular B cells,46,0.3478,0.0435,0.0217,0.0,0.0,False
+LUNG_T20,tLung,MAST,83,0.2048,0.0361,0.012,0.0241,0.0,True
+LUNG_T20,tLung,Monocytes,25,0.4,0.6,0.4,0.0,0.0,False
+LUNG_T20,tLung,Myofibroblasts,13,0.1538,0.0,0.1538,0.0,0.2308,False
+LUNG_T20,tLung,NK,39,0.3846,0.0,0.0,0.0,0.0256,False
+LUNG_T20,tLung,Naive CD4+ T,62,0.1774,0.0323,0.0323,0.0,0.0,True
+LUNG_T20,tLung,Naive CD8+ T,9,0.2222,0.1111,0.0,0.0,0.0,False
+LUNG_T20,tLung,Plasma cells,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T20,tLung,Pleural Mac,2,0.5,0.0,0.0,0.0,0.0,False
+LUNG_T20,tLung,Smooth muscle cells,4,0.5,0.0,0.0,0.0,0.0,False
+LUNG_T20,tLung,Treg,133,0.218,0.0301,0.0075,0.0,0.0075,True
+LUNG_T20,tLung,Tumor ECs,2,0.5,0.0,0.5,0.0,0.0,False
+LUNG_T20,tLung,mo-Mac,557,0.3788,0.5117,0.5691,0.0215,0.0018,True
+LUNG_T20,tLung,pDCs,23,0.7391,0.0,0.087,0.0,0.0,False
+LUNG_T20,tLung,tS1,47,0.6383,0.1277,0.0426,0.0,0.0638,False
+LUNG_T20,tLung,tS2,387,0.9767,0.8811,0.5866,0.2636,0.6615,True
+LUNG_T25,tLung,Activated DCs,17,0.1765,0.0588,0.0588,0.0588,0.0,False
+LUNG_T25,tLung,Alveolar Mac,6,0.1667,0.1667,0.5,0.1667,0.0,False
+LUNG_T25,tLung,CD141+ DCs,4,0.5,0.0,0.5,0.0,0.0,False
+LUNG_T25,tLung,CD163+CD14+ DCs,9,0.7778,0.6667,0.8889,0.0,0.0,False
+LUNG_T25,tLung,CD1c+ DCs,40,0.725,0.625,0.625,0.1,0.0,False
+LUNG_T25,tLung,CD207+CD1a+ LCs,3,0.6667,0.0,0.0,0.0,0.0,False
+LUNG_T25,tLung,CD4+ Th,165,0.1394,0.0182,0.0121,0.0121,0.0061,True
+LUNG_T25,tLung,CD8 low T,56,0.0536,0.0,0.0,0.0,0.0,True
+LUNG_T25,tLung,CD8+/CD4+ Mixed Th,75,0.1733,0.0,0.0,0.0,0.0,True
+LUNG_T25,tLung,COL13A1+ matrix FBs,14,0.1429,0.0,0.0714,0.0,0.2857,False
+LUNG_T25,tLung,COL14A1+ matrix FBs,4,0.5,0.0,0.0,0.0,0.5,False
+LUNG_T25,tLung,Cytotoxic CD8+ T,16,0.1875,0.0,0.0625,0.0625,0.0,False
+LUNG_T25,tLung,Exhausted CD8+ T,31,0.0645,0.0,0.0,0.0,0.0,False
+LUNG_T25,tLung,Exhausted Tfh,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T25,tLung,Follicular B cells,1312,0.2271,0.003,0.0046,0.0,0.0015,True
+LUNG_T25,tLung,GC B cells in the DZ,51,0.1176,0.0392,0.0196,0.0196,0.0,True
+LUNG_T25,tLung,GC B cells in the LZ,82,0.1098,0.0,0.0,0.0,0.0,True
+LUNG_T25,tLung,Lymphatic ECs,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T25,tLung,MALT B cells,205,0.2829,0.039,0.039,0.0,0.0,True
+LUNG_T25,tLung,MAST,185,0.6649,0.0108,0.0,0.027,0.0,True
+LUNG_T25,tLung,Monocytes,119,0.5882,0.8739,0.4958,0.0252,0.0084,True
+LUNG_T25,tLung,Myofibroblasts,1,1.0,0.0,0.0,0.0,0.0,False
+LUNG_T25,tLung,NK,19,0.6316,0.0526,0.0,0.0,0.0,False
+LUNG_T25,tLung,Naive CD4+ T,532,0.1071,0.0038,0.0094,0.0038,0.0,True
+LUNG_T25,tLung,Naive CD8+ T,62,0.0323,0.0161,0.0,0.0,0.0,True
+LUNG_T25,tLung,Plasma cells,29,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T25,tLung,Pleural Mac,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T25,tLung,Stalk-like ECs,3,0.0,0.0,0.3333,0.0,0.0,False
+LUNG_T25,tLung,Tip-like ECs,7,0.1429,0.0,0.1429,0.0,0.1429,False
+LUNG_T25,tLung,Treg,226,0.0796,0.0044,0.0,0.0,0.0,True
+LUNG_T25,tLung,Tumor ECs,19,0.1579,0.0,0.4211,0.0,0.1579,False
+LUNG_T25,tLung,mo-Mac,378,0.2063,0.2328,0.5476,0.0529,0.0,True
+LUNG_T25,tLung,pDCs,6,0.5,0.0,0.0,0.0,0.0,False
+LUNG_T25,tLung,tS1,190,0.3158,0.0158,0.1105,0.0263,0.2526,True
+LUNG_T25,tLung,tS2,25,0.76,0.0,0.2,0.04,0.44,False
+LUNG_T25,tLung,tS3,8,0.25,0.0,0.0,0.0,0.125,False
+LUNG_T28,tLung,Activated DCs,2,0.5,0.0,0.0,0.0,0.5,False
+LUNG_T28,tLung,Alveolar Mac,28,0.1071,0.25,0.5357,0.0357,0.0,False
+LUNG_T28,tLung,CD141+ DCs,5,0.0,0.2,0.0,0.0,0.0,False
+LUNG_T28,tLung,CD163+CD14+ DCs,33,0.5455,0.6364,0.4848,0.0303,0.0,False
+LUNG_T28,tLung,CD1c+ DCs,13,0.5385,0.2308,0.3846,0.0,0.0,False
+LUNG_T28,tLung,CD4+ Th,333,0.1201,0.003,0.003,0.0,0.0,True
+LUNG_T28,tLung,CD8 low T,104,0.1442,0.0,0.0096,0.0,0.0096,True
+LUNG_T28,tLung,CD8+/CD4+ Mixed Th,31,0.0645,0.0,0.0323,0.0,0.0,False
+LUNG_T28,tLung,COL13A1+ matrix FBs,7,0.0,0.0,0.0,0.1429,0.0,False
+LUNG_T28,tLung,COL14A1+ matrix FBs,7,0.0,0.0,0.1429,0.0,0.4286,False
+LUNG_T28,tLung,Cytotoxic CD8+ T,56,0.0536,0.0,0.0,0.0,0.0,True
+LUNG_T28,tLung,EPCs,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T28,tLung,Exhausted CD8+ T,305,0.0918,0.0066,0.0066,0.0,0.0098,True
+LUNG_T28,tLung,Exhausted Tfh,10,0.2,0.0,0.0,0.0,0.0,False
+LUNG_T28,tLung,Follicular B cells,236,0.2034,0.0,0.0,0.0042,0.0,True
+LUNG_T28,tLung,GC B cells in the DZ,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T28,tLung,GC B cells in the LZ,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T28,tLung,Lymphatic ECs,8,0.0,0.0,0.125,0.0,0.125,False
+LUNG_T28,tLung,MALT B cells,269,0.1227,0.0112,0.0112,0.0074,0.0074,True
+LUNG_T28,tLung,MAST,155,0.4774,0.0323,0.0065,0.0323,0.0065,True
+LUNG_T28,tLung,Mesothelial cells,14,0.0714,0.0,0.0,0.0,0.5714,False
+LUNG_T28,tLung,Monocytes,80,0.425,0.6875,0.275,0.025,0.0,True
+LUNG_T28,tLung,Myofibroblasts,16,0.25,0.0625,0.0,0.0,0.125,False
+LUNG_T28,tLung,NK,59,0.1525,0.0169,0.0,0.0,0.0,True
+LUNG_T28,tLung,Naive CD4+ T,96,0.125,0.0,0.0,0.0,0.0,True
+LUNG_T28,tLung,Naive CD8+ T,3,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T28,tLung,Pericytes,5,0.2,0.0,0.0,0.0,0.2,False
+LUNG_T28,tLung,Plasma cells,63,0.0,0.0317,0.0,0.0,0.0,True
+LUNG_T28,tLung,Smooth muscle cells,7,0.1429,0.0,0.0,0.0,0.0,False
+LUNG_T28,tLung,Stalk-like ECs,1,0.0,0.0,1.0,0.0,0.0,False
+LUNG_T28,tLung,Tip-like ECs,5,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T28,tLung,Treg,140,0.0786,0.0,0.0143,0.0,0.0,True
+LUNG_T28,tLung,Tumor ECs,14,0.0,0.0,0.1429,0.0,0.0714,False
+LUNG_T28,tLung,mo-Mac,815,0.1239,0.3374,0.2147,0.0135,0.0049,True
+LUNG_T28,tLung,pDCs,10,0.3,0.0,0.0,0.0,0.0,False
+LUNG_T28,tLung,tS1,44,0.1818,0.0682,0.0227,0.0,0.1136,False
+LUNG_T28,tLung,tS2,940,0.5181,0.2851,0.0681,0.1468,0.4202,True
+LUNG_T30,tLung,Activated DCs,19,0.1579,0.0,0.0526,0.0526,0.0,False
+LUNG_T30,tLung,Alveolar Mac,644,0.2314,0.104,0.7174,0.0155,0.0062,True
+LUNG_T30,tLung,CD141+ DCs,16,0.375,0.0,0.25,0.0,0.0,False
+LUNG_T30,tLung,CD163+CD14+ DCs,18,0.4444,0.1667,0.4444,0.0,0.0,False
+LUNG_T30,tLung,CD1c+ DCs,131,0.6183,0.3588,0.5649,0.0382,0.0,True
+LUNG_T30,tLung,CD207+CD1a+ LCs,10,0.3,0.0,0.1,0.2,0.0,False
+LUNG_T30,tLung,CD4+ Th,475,0.1874,0.0021,0.0168,0.0,0.0021,True
+LUNG_T30,tLung,CD8 low T,50,0.06,0.0,0.0,0.0,0.02,True
+LUNG_T30,tLung,CD8+/CD4+ Mixed Th,10,0.4,0.0,0.0,0.0,0.0,False
+LUNG_T30,tLung,COL13A1+ matrix FBs,59,0.0508,0.0,0.2373,0.0,0.0847,True
+LUNG_T30,tLung,COL14A1+ matrix FBs,6,0.0,0.0,0.0,0.0,0.3333,False
+LUNG_T30,tLung,Cytotoxic CD8+ T,35,0.1714,0.0,0.0571,0.0,0.0,False
+LUNG_T30,tLung,EPCs,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T30,tLung,Exhausted CD8+ T,35,0.1429,0.0,0.0286,0.0,0.0,False
+LUNG_T30,tLung,Exhausted Tfh,3,0.3333,0.0,0.0,0.0,0.0,False
+LUNG_T30,tLung,Follicular B cells,48,0.1042,0.0,0.0208,0.0,0.0,False
+LUNG_T30,tLung,Lymphatic ECs,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T30,tLung,MALT B cells,55,0.2,0.0182,0.0909,0.0,0.0,True
+LUNG_T30,tLung,MAST,478,0.0732,0.0021,0.0063,0.0146,0.0,True
+LUNG_T30,tLung,Monocytes,47,0.4255,0.4681,0.5532,0.0851,0.0,False
+LUNG_T30,tLung,NK,145,0.3517,0.0069,0.0069,0.0,0.0,True
+LUNG_T30,tLung,Naive CD4+ T,19,0.2105,0.0,0.0,0.0,0.0,False
+LUNG_T30,tLung,Naive CD8+ T,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T30,tLung,Pericytes,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T30,tLung,Plasma cells,13,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T30,tLung,Pleural Mac,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T30,tLung,Smooth muscle cells,3,0.3333,0.0,0.0,0.0,0.0,False
+LUNG_T30,tLung,Stalk-like ECs,55,0.1091,0.0,0.2364,0.0,0.0364,True
+LUNG_T30,tLung,Tip-like ECs,60,0.1333,0.0,0.3,0.0,0.0,True
+LUNG_T30,tLung,Treg,114,0.1228,0.0,0.0526,0.0,0.0,True
+LUNG_T30,tLung,Tumor ECs,27,0.037,0.0,0.1852,0.037,0.0,False
+LUNG_T30,tLung,mo-Mac,50,0.16,0.02,0.1,0.02,0.0,True
+LUNG_T30,tLung,pDCs,22,0.7727,0.0,0.0,0.0,0.0,False
+LUNG_T30,tLung,tS1,766,0.7546,0.0091,0.3734,0.0326,0.2167,True
+LUNG_T30,tLung,tS2,8,0.75,0.0,0.875,0.125,0.125,False
+LUNG_T30,tLung,tS3,10,0.5,0.0,0.2,0.0,0.1,False
+LUNG_T31,tLung,Activated DCs,8,0.25,0.0,0.0,0.0,0.0,False
+LUNG_T31,tLung,Alveolar Mac,16,0.0625,0.25,1.0,0.0625,0.0625,False
+LUNG_T31,tLung,CD141+ DCs,11,0.2727,0.0,0.0909,0.0,0.0,False
+LUNG_T31,tLung,CD163+CD14+ DCs,17,0.1765,0.4118,0.5294,0.0588,0.0,False
+LUNG_T31,tLung,CD1c+ DCs,50,0.66,0.36,0.5,0.06,0.0,True
+LUNG_T31,tLung,CD4+ Th,181,0.116,0.0,0.0166,0.0,0.0,True
+LUNG_T31,tLung,CD8 low T,40,0.075,0.0,0.025,0.0,0.025,False
+LUNG_T31,tLung,CD8+/CD4+ Mixed Th,1607,0.1238,0.0025,0.0118,0.0031,0.0031,True
+LUNG_T31,tLung,COL13A1+ matrix FBs,27,0.0,0.0,0.0741,0.0,0.1111,False
+LUNG_T31,tLung,COL14A1+ matrix FBs,361,0.0416,0.0083,0.2188,0.0,0.2078,True
+LUNG_T31,tLung,Cytotoxic CD8+ T,24,0.0833,0.0,0.0,0.0,0.0,False
+LUNG_T31,tLung,EPCs,2,0.0,0.0,0.5,0.0,0.0,False
+LUNG_T31,tLung,Exhausted CD8+ T,70,0.0857,0.0,0.0,0.0,0.0,True
+LUNG_T31,tLung,Exhausted Tfh,8,0.125,0.0,0.0,0.0,0.0,False
+LUNG_T31,tLung,Follicular B cells,28,0.1071,0.0357,0.0,0.0,0.0,False
+LUNG_T31,tLung,GC B cells in the DZ,2,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T31,tLung,Lymphatic ECs,42,0.0238,0.0,0.1429,0.0476,0.0,False
+LUNG_T31,tLung,MALT B cells,244,0.2418,0.0041,0.0533,0.0123,0.0164,True
+LUNG_T31,tLung,MAST,117,0.3419,0.0,0.0171,0.0085,0.0,True
+LUNG_T31,tLung,Mesothelial cells,7,0.2857,0.0,0.5714,0.0,0.7143,False
+LUNG_T31,tLung,Monocytes,32,0.6562,0.8125,0.4688,0.0,0.0,False
+LUNG_T31,tLung,Myofibroblasts,10,0.2,0.0,0.2,0.2,0.2,False
+LUNG_T31,tLung,NK,209,0.244,0.0,0.0144,0.0048,0.0,True
+LUNG_T31,tLung,Naive CD4+ T,29,0.1379,0.0345,0.0345,0.0,0.0345,False
+LUNG_T31,tLung,Naive CD8+ T,8,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T31,tLung,Pericytes,7,0.0,0.0,0.0,0.0,0.2857,False
+LUNG_T31,tLung,Plasma cells,142,0.0352,0.0,0.0,0.0,0.0,True
+LUNG_T31,tLung,Pleural Mac,2,0.0,0.0,0.0,0.0,0.5,False
+LUNG_T31,tLung,Smooth muscle cells,34,0.1765,0.0294,0.0882,0.0,0.0882,False
+LUNG_T31,tLung,Stalk-like ECs,6,0.0,0.0,0.8333,0.0,0.0,False
+LUNG_T31,tLung,Tip-like ECs,5,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T31,tLung,Treg,129,0.0543,0.0,0.0388,0.0,0.0,True
+LUNG_T31,tLung,Tumor ECs,80,0.0125,0.0,0.3125,0.0,0.025,True
+LUNG_T31,tLung,mo-Mac,213,0.2535,0.1878,0.5352,0.0423,0.0,True
+LUNG_T31,tLung,pDCs,10,0.8,0.0,0.0,0.0,0.0,False
+LUNG_T31,tLung,tS1,45,0.3556,0.0,0.1778,0.0,0.0667,False
+LUNG_T31,tLung,tS2,136,0.4853,0.0368,0.4044,0.5221,0.625,True
+LUNG_T31,tLung,tS3,1,1.0,0.0,1.0,1.0,1.0,False
+LUNG_T34,tLung,Activated DCs,3,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T34,tLung,Alveolar Mac,92,0.4022,0.3913,0.8043,0.0217,0.0435,True
+LUNG_T34,tLung,CD141+ DCs,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T34,tLung,CD163+CD14+ DCs,38,0.5789,0.3421,0.6053,0.0526,0.0263,False
+LUNG_T34,tLung,CD1c+ DCs,14,0.7143,0.4286,0.6429,0.0714,0.0,False
+LUNG_T34,tLung,CD207+CD1a+ LCs,20,0.25,0.0,0.0,0.0,0.0,False
+LUNG_T34,tLung,CD4+ Th,119,0.2521,0.0252,0.0084,0.0,0.0168,True
+LUNG_T34,tLung,CD8 low T,14,0.2143,0.0714,0.0,0.0,0.0,False
+LUNG_T34,tLung,COL13A1+ matrix FBs,11,0.0909,0.0,0.0909,0.0,0.0909,False
+LUNG_T34,tLung,COL14A1+ matrix FBs,3,0.3333,0.0,0.0,0.0,0.0,False
+LUNG_T34,tLung,Cytotoxic CD8+ T,8,0.125,0.0,0.0,0.0,0.0,False
+LUNG_T34,tLung,Exhausted CD8+ T,15,0.2,0.0,0.0,0.0,0.0,False
+LUNG_T34,tLung,Exhausted Tfh,4,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T34,tLung,Follicular B cells,21,0.2381,0.0,0.0,0.0,0.0,False
+LUNG_T34,tLung,Lymphatic ECs,3,0.0,0.0,0.3333,0.0,0.0,False
+LUNG_T34,tLung,MALT B cells,15,0.3333,0.0,0.0,0.0,0.0,False
+LUNG_T34,tLung,MAST,39,0.3846,0.0513,0.0256,0.0,0.0,False
+LUNG_T34,tLung,Monocytes,16,0.375,0.8125,0.125,0.0,0.0,False
+LUNG_T34,tLung,Myofibroblasts,4,0.0,0.0,0.75,0.0,0.0,False
+LUNG_T34,tLung,NK,47,0.3617,0.0,0.0,0.0,0.0213,False
+LUNG_T34,tLung,Naive CD8+ T,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T34,tLung,Pericytes,4,0.5,0.0,0.0,0.0,0.5,False
+LUNG_T34,tLung,Plasma cells,1,1.0,0.0,0.0,0.0,0.0,False
+LUNG_T34,tLung,Pleural Mac,1,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T34,tLung,Smooth muscle cells,3,0.0,0.0,0.0,0.0,0.0,False
+LUNG_T34,tLung,Stalk-like ECs,6,0.1667,0.0,0.6667,0.0,0.0,False
+LUNG_T34,tLung,Tip-like ECs,2,0.5,0.0,0.0,0.0,0.0,False
+LUNG_T34,tLung,Treg,22,0.1364,0.0455,0.0,0.0,0.0,False
+LUNG_T34,tLung,Tumor ECs,8,0.25,0.0,0.25,0.0,0.0,False
+LUNG_T34,tLung,mo-Mac,106,0.3868,0.2547,0.3774,0.0189,0.0,True
+LUNG_T34,tLung,pDCs,1,1.0,0.0,0.0,0.0,0.0,False
+LUNG_T34,tLung,tS1,1893,0.8891,0.4828,0.3434,0.0856,0.3582,True
+LUNG_T34,tLung,tS2,481,0.9647,0.7152,0.5489,0.2869,0.5655,True

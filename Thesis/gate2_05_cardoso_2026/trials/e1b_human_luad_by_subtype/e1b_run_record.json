@@ -1,0 +1,118 @@
+{
+  "trial": "E1b human LUAD EGFR ligands by deposited subtype",
+  "rules_frozen_at": "2026-09-13T05:15:35+00:00",
+  "rules": {
+    "source": "gene vectors cached by trial E1; deposited Cell_subtype as the grouping",
+    "provenance_of_these_rules": "fixed after E1's compartment table was seen, before any subtype value was computed",
+    "cells": "Sample_Origin in tLung or nLung; subtypes NA and Undetermined dropped",
+    "tumour_epithelial_states": [
+      "tS1",
+      "tS2",
+      "tS3"
+    ],
+    "comparison_population": "AT2",
+    "receiving_population": "COL13A1+ matrix FBs",
+    "genes": [
+      "AREG",
+      "EREG",
+      "HBEGF",
+      "TGFA",
+      "EGFR"
+    ],
+    "floors": {
+      "cells_per_donor_subtype": 50,
+      "donors_for_a_test": 5
+    },
+    "T5": "tumour lung, AREG higher in pooled tumour epithelial states than in AT2, paired within donor",
+    "T6": "tumour lung, subtypes ranked by median per-donor HBEGF detection",
+    "T7": "EGFR in COL13A1+ matrix fibroblasts against the tumour epithelial states, paired within donor",
+    "unit": "the donor",
+    "caveats": [
+      "detection depends on depth",
+      "these tumour states are established adenocarcinoma, not the earliest mutant state"
+    ]
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE131907\\e1_extracted_rows.npz",
+      "bytes": 5581568,
+      "modified": "2026-09-13T04:56:16+00:00"
+    },
+    {
+      "path": "raw_data\\GSE131907\\GSE131907_Lung_Cancer_cell_annotation.txt.gz",
+      "bytes": 1886187,
+      "modified": "2026-09-13T04:43:42+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e1b_human_luad_by_subtype\\e1b_per_donor_subtype.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e1b_human_luad_by_subtype\\e1b_paired_comparisons.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e1b_human_luad_by_subtype\\e1b_tumour_ranking_by_subtype.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e1b_human_luad_by_subtype\\e1b_summary.md"
+  ],
+  "results": {
+    "cells_in_scope": 86784,
+    "comparisons": [
+      {
+        "test": "T5",
+        "gene": "AREG",
+        "group_a": "tumour states tS1-tS3",
+        "group_b": "AT2",
+        "n_donors": 0,
+        "p_value": null,
+        "a_higher": null
+      },
+      {
+        "test": "T7",
+        "gene": "EGFR",
+        "group_a": "COL13A1+ matrix FBs",
+        "group_b": "tumour states tS1-tS3",
+        "n_donors": 3,
+        "median_a": 0.2258,
+        "median_b": 0.4062,
+        "a_higher_in_donors": 0,
+        "p_value": null,
+        "a_higher": null
+      },
+      {
+        "test": "T5 extra",
+        "gene": "HBEGF",
+        "group_a": "tumour states tS1-tS3",
+        "group_b": "AT2",
+        "n_donors": 0,
+        "p_value": null,
+        "a_higher": null
+      }
+    ],
+    "hbegf_top_subtypes": [
+      "Alveolar Mac",
+      "CD163+CD14+ DCs",
+      "CD1c+ DCs",
+      "mo-Mac",
+      "tS2"
+    ],
+    "areg_top_subtypes": [
+      "CD1c+ DCs",
+      "tS1",
+      "tS2",
+      "Monocytes",
+      "CD163+CD14+ DCs"
+    ]
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T05:15:40+00:00"
+}

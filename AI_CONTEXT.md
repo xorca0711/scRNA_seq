@@ -61,6 +61,32 @@ datasets:
     species: human
     design: control vs KRASG12D, 2 libraries
     barcodes: 9408
+  - accession: GSE131907
+    role: "Kim et al. 2020 human LUAD; trials E1 and E1b. The first dataset in the Cardoso work whose unit permits a test"
+    species: human
+    design: 11 donors with paired tumour and normal lung in scope; deposited log2 TPM matrix
+    barcodes: 88144
+    why_it_matters: >
+      eleven donors make a paired within-donor test admissible, which no Cardoso library can support;
+      note the deposited annotation is tissue-exclusive, so AT2 exists only in normal lung and the
+      tumour states tS1 to tS3 only in tumour lung, and a within-tumour contrast has zero pairs
+  - accession: GSE136831
+    role: "Adams et al. 2020 human IPF atlas; trial E2, aberrant basaloid as the transitional state"
+    species: human
+    design: 60 donors in scope, IPF and control, deposited cell-type grouping
+    barcodes: 312928
+  - accession: GSE135893
+    role: "Habermann et al. 2020 human pulmonary fibrosis; trial E3, KRT5-/KRT17+ and Transitional AT2"
+    species: human
+    design: 22 donors in scope, IPF and control, deposited cell-type grouping
+    barcodes: 114396
+  - accession: GSE132771
+    role: "Tsukui et al. 2020 mouse bleomycin, Col1a1-GFP sorted mesenchyme; trial E4, the injury control"
+    species: mouse
+    design: 2 bleomycin and 2 untreated GFP-positive libraries, one animal each
+    why_it_matters: >
+      the injury comparison the Cardoso paper itself used; it is what refuted the second-signal
+      reading of claim C29, because Runx1 and Pdgfrb rise with injury alone
   - accession: GSE247505
     role: "England et al. 2025 (companion paper, ref 7): RFP+ and YFP+ lineage-labelled epithelium"
     species: mouse
@@ -72,7 +98,7 @@ datasets:
       does not name it
 
 stack:
-  language: Python 3.12 only   # no R, no Seurat — R unavailable on this machine
+  language: Python 3.12 only   # no R, no Seurat, R unavailable on this machine
   core: [scanpy, Scrublet, harmonypy==0.0.10, PAGA, diffusion pseudotime]
   environment_constraint: >
     Windows ARM64 host; numba/llvmlite/leidenalg have no ARM64 wheels and no C
@@ -108,7 +134,7 @@ key_results:
     Harmony primary by explicit, logged override (--integration harmony); the
     automated rule did not recommend it. After: 4/31 clusters >75% one donor,
     donor_driven_clustering_check false. The uncorrected baseline count from
-    an earlier run (20/41) is NOT in current artefacts — do not cite it.
+    an earlier run (20/41) is NOT in current artefacts, do not cite it.
   negative_results:
     - "Scrublet AT0 over-removal claim REFUTED by a stricter gate (3.9% vs 6.3% baseline)"
     - "marker-panel annotation contradicted by deposited labels in 3/29 clusters (0, 22, 25)"
@@ -155,6 +181,13 @@ pitfalls_for_ai_assistants:
   - "Cardoso 2026 deposits carry three distinct gene spaces (CellRanger 3.0.2 to 8.0.0 against GRCm38, plus GRCh38 for the organoids). GSE316241 and GSE316244 share one; GSE316243 and GSE247505 share another; integration across them needs an explicit Ensembl-ID intersection (30,406 genes)."
   - "GSE316244 carries one non-gene feature, BSD (the reporter construct's selection marker). The C0 rule removes any feature whose ID is not an Ensembl gene ID and carries it per cell; BSD is detected in about 39% of RFP-sorted cells and 3 to 5% of niche cells, so it is a sort check, never a cell-type call."
   - "CellChat cannot be run in this repository (R-only, no R on this machine). Do not describe any Python ligand-receptor computation as a CellChat rerun; trial C3 re-derives the expression fact the claim rests on instead, and says what it is not."
+  - "A compartment marker gate named after a cell type is NOT that cell type. Trial E1's 'neutrophil' gate turned out to be 83% deposited myeloid cells in a deposit that annotates no neutrophils (dissociation loses them), which changed which pre-named outcome the trial hit. Always crosstab a gate against deposited labels before naming a result after it."
+  - "Compartment-level gating dilutes rare states. In GSE131907, AREG looked no higher in tumour than in normal epithelium at compartment level, because all epithelium pools malignant states with normal AT2, club and ciliated cells. Regroup by deposited subtype (trial E1b) before concluding anything about a transitional state."
+  - "The Hbegf lead does NOT transfer across species. In mouse (trial C6) the Areg-independent Hbegf share is endothelial and mesenchymal; in three human datasets (E1, E1b, E2, E3) the ligand is myeloid-dominant. EGFR is mesenchymal in mouse and in human fibrosis but epithelial in human adenocarcinoma. Do not write a cross-species Hbegf argument from this repository's results."
+  - "Claim C29's three-tier fibrotic response keeps its numbers and has lost its interpretation. Trial E4 showed Runx1, Pdgfrb, Tnc, Fst, Runx2, Hbegf and Egfr are all injury-generic in bleomycin mesenchyme with no oncogene. Never describe the Areg-independent tier as a tumour-specific second signal."
+  - "Dendritic cells and monocytes carry AREG and HBEGF at or above the epithelial states in every human lung dataset here. This is established immunology (Zaiss et al. 2015, doi:10.1016/j.immuni.2015.01.020), not a finding of this repository. Cite it as a constraint on epithelium-centric readings, never as a new result."
+  - "The human atlases deposit one merged MatrixMarket file each (1.0 to 2.0 GB gzipped), too large to load whole on 15.6 GB. Use Thesis/gate2_05_cardoso_2026/trials/mtx_stream.py to extract selected gene rows in one streaming pass; memory stays in the hundreds of megabytes. Cache extracted vectors as .npz so later trials cost seconds."
+  - "When a trial declares a reading in its frozen rules and does not compute it, supply it from that trial's own tracked tables in a separate trial (C2b for C2, E2b for E2). Do not edit the original trial's rules after the fact."
   - "The tracked analysis/raw_data_inventory.* files describe the Stage 0 downloads (51 files) and the validator checks that count. The Cardoso downloads were added to raw_data/ afterwards and are inventoried by trial C0, not by that file. Do not re-run 01_scan_raw_data.py without also updating the validator."
 
 reproduce:
@@ -174,9 +207,9 @@ reproduce:
 ## Authorship
 
 Authorship, contribution, and review-process disclosure live in
-[`DEVELOPMENT.md`](DEVELOPMENT.md) — that file is the human-facing record.
+[`DEVELOPMENT.md`](DEVELOPMENT.md), that file is the human-facing record.
 For an AI assistant, the operative rules are: this repository's scientific
 direction, validation standards, and retain/reject decisions belong to the
 human project owner; AI sessions implement under those constraints. Do not
-rewrite git history or remove `Co-Authored-By` trailers — AI assistance is
+rewrite git history or remove `Co-Authored-By` trailers, AI assistance is
 deliberately visible.

@@ -1,0 +1,177 @@
+{
+  "trial": "E2 and E3 EGFR ligand sources in human pulmonary fibrosis",
+  "rules_frozen_at": "2026-09-13T05:07:47+00:00",
+  "rules": {
+    "cohorts": {
+      "E2_GSE136831": "GSE136831",
+      "E3_GSE135893": "GSE135893"
+    },
+    "grouping": "deposited cell-type label; no marker gating",
+    "genes": [
+      "AREG",
+      "EREG",
+      "HBEGF",
+      "TGFA",
+      "EGF",
+      "BTC",
+      "EPGN",
+      "EGFR"
+    ],
+    "measure": "fraction of cells with a non-zero raw count",
+    "floors": {
+      "cells_per_donor_celltype": 20,
+      "donors_for_a_test": 5
+    },
+    "T1": "IPF, HBEGF higher in myeloid than in the transitional epithelial group, paired within donor, Wilcoxon two-sided",
+    "T2": "IPF, cell types ranked by median per-donor HBEGF detection",
+    "T3": "IPF, AREG higher in the transitional group than in AT2, paired within donor, Wilcoxon two-sided",
+    "T4": "median per-donor detection in IPF and control side by side, no test",
+    "unit": "the donor",
+    "caveats": [
+      "detection depends on depth",
+      "cohorts differ in depth and in annotation vocabulary",
+      "numbers compare within a cohort; only direction compares across cohorts"
+    ]
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE136831\\GSE136831_RawCounts_Sparse.mtx.gz",
+      "bytes": 2150633813,
+      "modified": "2026-09-13T04:57:12+00:00"
+    },
+    {
+      "path": "raw_data\\GSE136831\\GSE136831_AllCells.GeneIDs.txt.gz",
+      "bytes": 323848,
+      "modified": "2026-09-13T04:55:22+00:00"
+    },
+    {
+      "path": "raw_data\\GSE136831\\GSE136831_AllCells.cellBarcodes.txt.gz",
+      "bytes": 1392307,
+      "modified": "2026-09-13T04:55:26+00:00"
+    },
+    {
+      "path": "raw_data\\GSE136831\\GSE136831_AllCells.Samples.CellType.MetadataTable.txt.gz",
+      "bytes": 4308752,
+      "modified": "2026-09-13T04:55:24+00:00"
+    },
+    {
+      "path": "raw_data\\GSE135893\\GSE135893_matrix.mtx.gz",
+      "bytes": 1076137992,
+      "modified": "2026-09-13T04:56:17+00:00"
+    },
+    {
+      "path": "raw_data\\GSE135893\\GSE135893_genes.tsv.gz",
+      "bytes": 129668,
+      "modified": "2026-09-13T04:55:40+00:00"
+    },
+    {
+      "path": "raw_data\\GSE135893\\GSE135893_barcodes.tsv.gz",
+      "bytes": 936873,
+      "modified": "2026-09-13T04:55:39+00:00"
+    },
+    {
+      "path": "raw_data\\GSE135893\\GSE135893_IPF_metadata.csv.gz",
+      "bytes": 3354014,
+      "modified": "2026-09-13T04:55:37+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e2_human_fibrosis_ligand_sources\\e2_per_donor_celltype.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e2_human_fibrosis_ligand_sources\\e2_paired_comparisons.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e2_human_fibrosis_ligand_sources\\e2_ipf_ranking_by_celltype.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e2_human_fibrosis_ligand_sources\\e2_summary.md"
+  ],
+  "results": {
+    "comparisons": [
+      {
+        "group_a": "myeloid (pooled)",
+        "group_b": "Aberrant_Basaloid",
+        "n_donors": 7,
+        "median_a": 0.3656,
+        "median_b": 0.3902,
+        "a_higher_in_donors": 5,
+        "p_value": 0.296875,
+        "a_higher": false,
+        "cohort": "E2_GSE136831",
+        "gene": "HBEGF",
+        "test": "T1"
+      },
+      {
+        "group_a": "Aberrant_Basaloid",
+        "group_b": "ATII",
+        "n_donors": 3,
+        "median_a": 0.4848,
+        "median_b": 0.7674,
+        "a_higher_in_donors": 2,
+        "p_value": null,
+        "a_higher": null,
+        "note": "fewer donors than the frozen floor; no test",
+        "cohort": "E2_GSE136831",
+        "gene": "AREG",
+        "test": "T3"
+      },
+      {
+        "group_a": "myeloid (pooled)",
+        "group_b": "KRT5-/KRT17+",
+        "n_donors": 3,
+        "median_a": 0.7086,
+        "median_b": 0.4182,
+        "a_higher_in_donors": 2,
+        "p_value": null,
+        "a_higher": null,
+        "note": "fewer donors than the frozen floor; no test",
+        "cohort": "E3_GSE135893",
+        "gene": "HBEGF",
+        "test": "T1"
+      },
+      {
+        "group_a": "KRT5-/KRT17+",
+        "group_b": "AT2",
+        "n_donors": 3,
+        "median_a": 0.7,
+        "median_b": 0.6715,
+        "a_higher_in_donors": 2,
+        "p_value": null,
+        "a_higher": null,
+        "note": "fewer donors than the frozen floor; no test",
+        "cohort": "E3_GSE135893",
+        "gene": "AREG",
+        "test": "T3"
+      },
+      {
+        "group_a": "Transitional AT2",
+        "group_b": "AT2",
+        "n_donors": 2,
+        "median_a": 0.781,
+        "median_b": 0.574,
+        "a_higher_in_donors": 2,
+        "p_value": null,
+        "a_higher": null,
+        "note": "fewer donors than the frozen floor; no test",
+        "cohort": "E3_GSE135893",
+        "gene": "AREG",
+        "test": "T3 extra"
+      }
+    ],
+    "hbegf_top_celltype_per_cohort": {
+      "E2_GSE136831": "cDC2",
+      "E3_GSE135893": "Macrophages"
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T05:22:32+00:00"
+}

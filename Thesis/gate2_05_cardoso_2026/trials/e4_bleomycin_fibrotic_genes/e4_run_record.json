@@ -1,0 +1,151 @@
+{
+  "trial": "E4 bleomycin injury and the fibrotic gene set",
+  "rules_frozen_at": "2026-09-13T05:10:48+00:00",
+  "rules": {
+    "dataset": "GSE132771 (Tsukui et al. 2020), the injury comparison the paper itself used",
+    "libraries": [
+      {
+        "gsm": "GSM3891612",
+        "library": "Bleo1_GFPp",
+        "group": "bleomycin"
+      },
+      {
+        "gsm": "GSM3891613",
+        "library": "Bleo2_GFPp",
+        "group": "bleomycin"
+      },
+      {
+        "gsm": "GSM3891616",
+        "library": "UT1_GFPp",
+        "group": "untreated"
+      },
+      {
+        "gsm": "GSM3891617",
+        "library": "UT2_GFPp",
+        "group": "untreated"
+      }
+    ],
+    "scope": "mouse Col1a1-GFP-positive samples only; GFP-negative and human samples out of scope",
+    "qc": "identical to trial C1",
+    "genes": [
+      "Tnc",
+      "Fst",
+      "Runx1",
+      "Runx2",
+      "Acta2",
+      "Pdgfrb",
+      "Areg",
+      "Ereg",
+      "Hbegf",
+      "Tgfa",
+      "Egfr",
+      "Pdgfra",
+      "Col13a1"
+    ],
+    "measure": "fraction of cells with a non-zero count, per library",
+    "test": "a gene is injury-generic if detection is higher in both bleomycin libraries than in both untreated libraries",
+    "reading_fixed_in_advance": {
+      "runx1_pdgfrb_injury_generic": "their survival of Areg deletion in C2 is what an activated fibroblast does; claim C29 weakens",
+      "runx1_pdgfrb_not_generic_while_fst_runx2_are": "the tumour reading survives and the second-signal hypothesis stays open"
+    },
+    "unit": "the animal; two per group; directions only, no P value"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891612_Bleo1_GFPp_matrix.mtx.gz",
+      "bytes": 22396885,
+      "modified": "2019-06-14T21:19:47+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891612_Bleo1_GFPp_genes.tsv.gz",
+      "bytes": 217848,
+      "modified": "2019-06-14T21:19:33+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891612_Bleo1_GFPp_barcodes.tsv.gz",
+      "bytes": 17888,
+      "modified": "2019-06-14T21:19:33+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891613_Bleo2_GFPp_matrix.mtx.gz",
+      "bytes": 22336915,
+      "modified": "2019-06-14T21:19:59+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891613_Bleo2_GFPp_genes.tsv.gz",
+      "bytes": 217848,
+      "modified": "2019-06-14T21:19:52+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891613_Bleo2_GFPp_barcodes.tsv.gz",
+      "bytes": 16838,
+      "modified": "2019-06-14T21:19:50+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891616_UT1_GFPp_matrix.mtx.gz",
+      "bytes": 21158903,
+      "modified": "2019-06-14T21:20:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891616_UT1_GFPp_genes.tsv.gz",
+      "bytes": 217846,
+      "modified": "2019-06-14T21:20:06+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891616_UT1_GFPp_barcodes.tsv.gz",
+      "bytes": 19816,
+      "modified": "2019-06-14T21:20:06+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891617_UT2_GFPp_matrix.mtx.gz",
+      "bytes": 17601463,
+      "modified": "2019-06-14T21:20:18+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891617_UT2_GFPp_genes.tsv.gz",
+      "bytes": 217846,
+      "modified": "2019-06-14T21:20:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891617_UT2_GFPp_barcodes.tsv.gz",
+      "bytes": 15997,
+      "modified": "2019-06-14T21:20:13+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e4_bleomycin_fibrotic_genes\\e4_detection_by_library.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e4_bleomycin_fibrotic_genes\\e4_injury_generic_verdicts.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\e4_bleomycin_fibrotic_genes\\e4_summary.md"
+  ],
+  "results": {
+    "injury_generic_genes": [
+      "Tnc",
+      "Fst",
+      "Runx1",
+      "Runx2",
+      "Pdgfrb",
+      "Areg",
+      "Ereg",
+      "Hbegf",
+      "Egfr"
+    ],
+    "runx1_and_pdgfrb_injury_generic": true,
+    "reading": "their survival of Areg deletion in C2 is what an activated fibroblast does; claim C29 weakens"
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T05:13:39+00:00"
+}

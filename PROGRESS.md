@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-12 (paused mid-run; see the handoff block). Previously 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-13 (the E-series extensions; see the newest handoff block). Previously 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -28,22 +28,22 @@ below). Nothing is running.
 | Item | State |
 |---|---|
 | Raw-data scan + inventory | **DONE** |
-| GSE262927 (mouse) full analysis | **DONE** — 162,175 cells, 33 samples, 29 clusters |
-| GSE178360 (human) full analysis | **DONE** — 27,729 cells, 3 samples, 31 clusters, Harmony primary |
+| GSE262927 (mouse) full analysis | **DONE**, 162,175 cells, 33 samples, 29 clusters |
+| GSE178360 (human) full analysis | **DONE**, 27,729 cells, 3 samples, 31 clusters, Harmony primary |
 | Reports (`README.md` per dataset, analysis logs) | **DONE** |
 | `docs/PIPELINE_AS_RUN.md` (what actually ran) | **DONE** |
 | Source papers read and divergences documented | **DONE** |
-| Doc scope labels (README/WORKFLOW/docs) | **DONE** — banners on all 5 tool pages, README/WORKFLOW relabelled |
+| Doc scope labels (README/WORKFLOW/docs) | **DONE**, banners on all 5 tool pages, README/WORKFLOW relabelled |
 | `docs/ANALYSIS_RATIONALE.md` (decisions, before vs after papers) | **DONE** |
-| `docs/BACKGROUND_FOR_BIOLOGISTS.md` — Harmony | **DONE** |
+| `docs/BACKGROUND_FOR_BIOLOGISTS.md`, Harmony | **DONE** |
 | `docs/UMAP_AND_FIGURES.md` | **DONE** |
 | `docs/DOUBLETS_AND_SCRUBLET.md` | **DONE** |
-| **Focused alveolar regeneration re-analysis** | **DONE** — AT2→transitional→AT1 trajectory recovered |
-| Capillary endothelial (iCAP) sub-analysis | **DONE** — persistent injury state recovered |
-| AT0 doublet-loss follow-up | **DONE** — tested, not lost |
-| Lineage-tracing cohort (8 non-atlas samples) | **DONE** — CAP1 origin supported; CAP2 lines uninformative |
+| **Focused alveolar regeneration re-analysis** | **DONE**, AT2→transitional→AT1 trajectory recovered |
+| Capillary endothelial (iCAP) sub-analysis | **DONE**, persistent injury state recovered |
+| AT0 doublet-loss follow-up | **DONE**, tested, not lost |
+| Lineage-tracing cohort (8 non-atlas samples) | **DONE**, CAP1 origin supported; CAP2 lines uninformative |
 | `analysis/` reorganised into two series subdirectories | **DONE** |
-| Pipeline speedups (PCA, scan, threads) | **DONE** — verified output-identical |
+| Pipeline speedups (PCA, scan, threads) | **DONE**, verified output-identical |
 | Portfolio restructure (`FINDINGS.md`, README rewrite, root tidy-up) | **DONE** |
 | `Thesis/` roadmap index (11 papers, Notion order, PubMed-verified IDs) | **DONE** |
 | Sikkema 2023 (HLCA) study note, `integration_benchmark.json`, `PIPELINE_FRAMING.md` | **DONE, owner review pending** |
@@ -81,7 +81,7 @@ releases need a C++ toolchain). **No R, no Seurat, no Bioconductor.**
 Lockfile: `analysis/requirements.txt`.
 
 The console is on a legacy codepage; scripts call
-`sys.stdout.reconfigure(encoding="utf-8")` because printing `—` otherwise
+`sys.stdout.reconfigure(encoding="utf-8")` because printing `, ` otherwise
 raises `UnicodeEncodeError`.
 
 ---
@@ -156,11 +156,11 @@ labelled cells.
 2. **Mouse composition outputs describe a sort ratio, not the lung.** Cells were
    MACS-fractionated and recombined at 85–90% CD45⁻ : 10–15% CD45⁺. Compare
    composition only *within* a compartment.
-3. **Scrublet bias — TESTED AND LARGELY EXONERATED.** A crude co-expression
+3. **Scrublet bias, TESTED AND LARGELY EXONERATED.** A crude co-expression
    gate suggested up to 2× over-removal of the human paper's novel populations.
    Re-measured with a gate that can separate real AT0 from AT2+club doublets
    (`SFTPC+ SCGB3A2+ EPCAM+`, lineage-negative), AT0 is flagged at **3.9% vs a
-   6.3% baseline** — below background. The cells flagged inside the crude gate
+   6.3% baseline**, below background. The cells flagged inside the crude gate
    have 1.8× the UMIs and more cross-lineage co-expression, i.e. they are
    doublets. Lesson: a co-expression gate cannot audit a co-expression
    detector. General caution still applies; the verdict for this dataset does
@@ -170,8 +170,8 @@ labelled cells.
    GSE178360 DD046Q (heavy haemoglobin).
 5. **Doublet calls are a ranking cut, not a detected threshold** in 32/33 mouse
    samples (non-bimodal Scrublet histograms → expected-rate quantile fallback).
-6. **MAD upper bounds never bind** — zero cells removed for excess counts/genes.
-7. **The papers' headline findings need subsetting.** *(ADDRESSED —
+6. **MAD upper bounds never bind**, zero cells removed for excess counts/genes.
+7. **The papers' headline findings need subsetting.** *(ADDRESSED:
    `analysis/scripts/06_regeneration_focus.py` subsets both the alveolar
    epithelium and the capillary endothelium.)*
 8. **The deposited `.RDS` objects contain the authors' labels** (donor IDs and
@@ -386,6 +386,119 @@ labelled cells.
      population (claim C22), and whether the Hbegf lead (C33) is worth
      pursuing.
 
+24. **The Hbegf lead was extended into four public datasets, and one of the
+   repository's own leads was refuted in the process**
+   (`Thesis/gate2_05_cardoso_2026/trials/e*.py`, 2026-09-13, owner
+   instruction). Six trials, E1 to E4 plus E1b and E2b, all outside the
+   Cardoso deposit. Full account in the newest handoff block below.
+   - **Why leave the deposit.** Item 23's binding constraint means no Cardoso
+     genotype contrast can be tested. GSE131907 has eleven donors with paired
+     tumour and normal lung, so the unit becomes the donor and a test becomes
+     admissible. AREG detection is higher in epithelium than in myeloid cells
+     within donor, 0.336 against 0.215, paired Wilcoxon p = 0.0020. That is
+     claim C37, and the only Validated row the Cardoso work has produced.
+   - **A frozen rule refuted the repository's best lead.** Trial E4 found
+     Runx1 and Pdgfrb both rise with bleomycin alone in sorted Col1a1-GFP
+     mesenchyme with no oncogene present. The reading fixed before the
+     matrices were opened therefore applies: the Areg-independent tier of
+     claim C29 is what an activated lung fibroblast does after injury, not a
+     second tumour signal. C29 keeps its numbers and loses its
+     interpretation; Hbegf and Egfr are injury-generic as well.
+   - **The Hbegf lead does not transfer across species.** In human lung the
+     ligand is myeloid-dominant, alveolar macrophages 0.712 and two
+     dendritic-cell subsets above 0.55, agreeing with the published human work
+     and disagreeing with what trial C6 found in mouse. The receptor behaves
+     differently again: mesenchymal in fibrosis as in the mouse, epithelial in
+     adenocarcinoma. Placement tracks the disease, the ligand source tracked
+     the species, and neither direction is clean enough for a cross-species
+     argument.
+   - **Three things that could not be computed, reported rather than
+     approximated.** E1b's within-tumour comparison has zero donor pairs,
+     because the GSE131907 annotation assigns AT2 only in normal lung; the
+     Zhao prediction clears no donor floor in either fibrosis cohort and the
+     cohorts disagree in direction; and E2's only testable comparison failed
+     to detect its difference at seven donors, p = 0.297.
+   - **One correction to an earlier output.** E1's top HBEGF compartment is
+     recorded as "neutrophil" and that gate is 83 per cent deposited myeloid
+     cells in a deposit annotating no neutrophils, so the outcome is the
+     pre-named myeloid-dominant one. Both readings are in the trial log.
+   - Rows C37 to C48 in the claims register; DEVELOPMENT decision 19. Owner
+     retain/reject review pending on all of it.
+
+---
+
+## Handoff: session of 2026-09-13 (the E series)
+
+Same branch `Claude/cardoso-2026-gate0-gate1`, [PR #10](https://github.com/xorca0711/scRNA_seq/pull/10),
+still not merged. Nothing in `analysis/` was touched. Six further trials ran,
+all outside the Cardoso deposit, because that deposit cannot test anything and
+the standing instruction was to extend the Hbegf lead into public data only if
+the first extension did not refute the working picture. It did not, so the rest
+ran.
+
+| Trial | Dataset | State | Re-run |
+|---|---|---|---|
+| E1 | GSE131907 human LUAD | complete; refutation rule did not fire | about 25 minutes first time, then seconds from the cached gene vectors |
+| E1b | GSE131907, deposited subtypes | complete | seconds; reads E1's cached `e1_extracted_rows.npz` |
+| E2 | GSE136831 human IPF | complete | about 35 minutes; streams a 2.0 GB MatrixMarket file |
+| E3 | GSE135893 human PF | complete; same script as E2 | about 20 minutes; streams a 1.0 GB file |
+| E2b | E2's own tracked table | complete | seconds; supplies the T4 reading E2 declared and did not compute |
+| E4 | GSE132771 mouse bleomycin | complete | about 12 minutes |
+
+**The result that changes a previous conclusion.** E4 refuted the reading of
+claim C29. Runx1 and Pdgfrb both rise with bleomycin alone in sorted
+Col1a1-GFP mesenchyme with no oncogene present, clearing a rule frozen before
+the matrices were opened, so the pre-specified reading applies: their survival
+of Areg deletion is what an activated lung fibroblast does after injury, not a
+second tumour-specific signal. C29 keeps its numbers and loses its
+interpretation. Hbegf and Egfr are injury-generic too, so neither is a
+tumour-specific feature of the mesenchyme.
+
+**The one row that is now Validated.** E1 is the first trial in this section
+whose unit permits a test, because GSE131907 has eleven donors with paired
+tumour and normal lung. AREG detection is higher in epithelium than in myeloid
+cells within donor, 0.336 against 0.215, paired Wilcoxon p = 0.0020.
+
+**Two self-corrections to read alongside it.** E1's top HBEGF compartment is
+recorded as "neutrophil"; that gate is 83 per cent deposited myeloid cells in
+a deposit that annotates no neutrophils, so the outcome is the pre-named
+myeloid-dominant one. And at subtype resolution CD1c-positive dendritic cells
+detect AREG in 0.618 of cells, above both tumour epithelial states, so the
+test supports epithelium over the myeloid average and not epithelium as the
+source.
+
+**What did not work, on the record.** E2's only comparison to clear its donor
+floor failed to detect the difference it was built on, HBEGF myeloid 0.366
+against aberrant basaloid 0.390 over seven donors, p = 0.297. The Zhao
+prediction (AREG higher in the transitional state than AT2) is not testable in
+either fibrosis cohort, since no comparison clears the five-donor floor and the
+two cohorts disagree in direction. E1b's T5 is not computable at all, because
+the GSE131907 annotation assigns AT2 only in normal lung and the tumour states
+only in tumour lung, so zero donors pair; the floor was not lowered, because
+the count is zero rather than small.
+
+Owner decisions now open, in addition to those in item 23: the weakening of
+C29, rows C37 to C48, and whether the dendritic-cell and monocyte ligand
+source deserves a paragraph in the writeup. It replicates across three
+datasets and two diseases, and it is established immunology rather than a
+finding of this repository (Zaiss et al. 2015,
+doi:10.1016/j.immuni.2015.01.020), so its value is that it constrains an
+epithelium-to-fibroblast reading rather than that it is new.
+
+Downloads added to `raw_data/` this session (gitignored, about 6.5 GB):
+GSE131907, GSE136831, GSE135893, GSE132771. As before, the tracked
+`analysis/raw_data_inventory.*` describes the Stage 0 downloads only and the
+validator checks that count; do not re-run `01_scan_raw_data.py` without
+updating the validator.
+
+**Two things learned about running these.** The human atlases deposit one
+merged MatrixMarket file each, too large to load whole on this machine, so
+`trials/mtx_stream.py` extracts selected gene rows in a single streaming pass
+and memory stays at a few hundred megabytes. And a compartment marker gate
+named after a cell type is not that cell type: always crosstab the gate
+against the deposited labels before naming an outcome after it, which is what
+caught the neutrophil error.
+
 ---
 
 ## Handoff: session of 2026-09-12
@@ -465,7 +578,7 @@ cohorts.
 - Large regenerable outputs are gitignored: `*.h5ad`, `processed/`,
   `sample_shards/`, `cluster_markers_all.csv`, `*.csv.gz`. Figures and small
   tables **are** tracked.
-- `docs/PIPELINE_AS_RUN.md` is **generated** — edit
+- `docs/PIPELINE_AS_RUN.md` is **generated**, edit
   `analysis/scripts/05_write_pipeline_as_run.py` and re-run, never the `.md`.
 - The tool reference pages under `docs/` are deliberately preserved; they
   describe the published method, not what ran here.
