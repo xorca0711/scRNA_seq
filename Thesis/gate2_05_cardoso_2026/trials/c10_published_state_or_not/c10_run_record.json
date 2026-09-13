@@ -1,0 +1,171 @@
+{
+  "trial": "C10 published pathological fibroblast or not",
+  "rules_frozen_at": "2026-09-13T11:21:54+00:00",
+  "rules": {
+    "question": "are the Fst and Runx2 double-positive fibroblasts the published Cthrc1-positive pathological fibroblast, or separable from it",
+    "why_it_is_open": "Tsukui et al. 2020 list Fst among the markers of their pathological cluster, and Fang et al. 2025 show RUNX2 drives the alveolar-to-pathological transition, so the published expectation is that these cells ARE that state",
+    "why_C9_could_not_answer_it": "ranking by detection difference is biased against saturated genes (Col1a1 is 100 per cent in both groups by gate construction) and against sparse ones, so the absence of canonical markers from C9's top thirty is not evidence",
+    "scored_sets": {
+      "pathological": [
+        "Cthrc1",
+        "Postn",
+        "Spp1",
+        "Fn1",
+        "Tnc",
+        "Col3a1"
+      ],
+      "alveolar": [
+        "Pdgfra",
+        "Tcf21",
+        "Col13a1",
+        "Npnt",
+        "Scube2"
+      ],
+      "adventitial": [
+        "Col14a1",
+        "Pi16",
+        "Dcn"
+      ],
+      "smooth_muscle": [
+        "Acta2",
+        "Myh11",
+        "Thsd4"
+      ]
+    },
+    "excluded_from_pathological": {
+      "Fst": "defines the double-positive group, so scoring it would be circular",
+      "Col1a1": "a condition of the fibroblast gate, so it is 100 per cent in both groups and cannot discriminate"
+    },
+    "sources": {
+      "pathological": "Tsukui et al. 2020, doi:10.1038/s41467-020-15647-5, cluster 8 markers read from the paper text",
+      "runx2_expectation": "Fang et al. 2025, doi:10.1038/s41586-024-08542-2"
+    },
+    "fibroblast_gate": "Col1a1 detected, Ptprc and Pecam1 and Epcam not detected, as in C6, C8 and C9",
+    "T1": "standardised mean difference of the pathological score between groups; the published state only if >= 0.5 in the reference AND >= 0.5 with the same sign in BOTH bleomycin libraries; absolute criterion, not relative to C9's selected signature",
+    "T2": "saturation audit: a gene is unrankable if detection is >= 0.9 in both groups or <= 0.05 in both",
+    "T3": "blind Leiden clustering of the reference library; a distinct population only if >= 50% of double-positives land in one cluster with >= 2.0-fold enrichment",
+    "T4": "specificity: the same difference for the alveolar, adventitial and smooth-muscle sets",
+    "T5": "depth control: T1 recomputed on shallow and deep halves; sign change or a fall below half the full value means T1 is not read for that library",
+    "unit": "the library for the reference arm; two animals for the bleomycin comparison, so directions only and no P value on a group comparison",
+    "not_tested": [
+      "anything mechanical: transcript detection is not channel activity, and dissociation is itself a mechanical and enzymatic insult",
+      "anything spatial",
+      "whether Areg deletion depletes the population"
+    ]
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c9_the_fst_runx2_population\\c9_reference_markers.csv",
+      "bytes": 899,
+      "modified": "2026-09-13T11:00:46+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_matrix.mtx.gz",
+      "bytes": 90730416,
+      "modified": "2026-01-11T03:33:45+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_barcodes.tsv.gz",
+      "bytes": 43844,
+      "modified": "2026-01-11T03:20:36+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891612_Bleo1_GFPp_matrix.mtx.gz",
+      "bytes": 22396885,
+      "modified": "2019-06-14T21:19:47+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891612_Bleo1_GFPp_genes.tsv.gz",
+      "bytes": 217848,
+      "modified": "2019-06-14T21:19:33+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891612_Bleo1_GFPp_barcodes.tsv.gz",
+      "bytes": 17888,
+      "modified": "2019-06-14T21:19:33+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891613_Bleo2_GFPp_matrix.mtx.gz",
+      "bytes": 22336915,
+      "modified": "2019-06-14T21:19:59+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891613_Bleo2_GFPp_genes.tsv.gz",
+      "bytes": 217848,
+      "modified": "2019-06-14T21:19:52+00:00"
+    },
+    {
+      "path": "raw_data\\GSE132771\\GSE132771_RAW\\GSM3891613_Bleo2_GFPp_barcodes.tsv.gz",
+      "bytes": 16838,
+      "modified": "2019-06-14T21:19:50+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c10_published_state_or_not\\c10_effect_sizes.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c10_published_state_or_not\\c10_saturation_audit.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c10_published_state_or_not\\c10_reference_clusters.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c10_published_state_or_not\\c10_summary.md"
+  ],
+  "results": {
+    "T1": {
+      "reference_d": 1.8127,
+      "bleomycin_d": [
+        1.4926,
+        1.4613
+      ],
+      "floor": 0.5,
+      "passes": true
+    },
+    "T4": {
+      "reference_effects": {
+        "pathological": 1.8127,
+        "alveolar": -0.756,
+        "adventitial": -0.5937,
+        "smooth_muscle": 0.062
+      },
+      "largest": "pathological"
+    },
+    "T2_unrankable_pathological_genes": [
+      "Col3a1"
+    ],
+    "T3": {
+      "top_cluster": "4",
+      "share_of_double_positives": 0.4195,
+      "enrichment": 5.888,
+      "distinct_population": false
+    },
+    "T5": {
+      "passes": [
+        "Expt3_Het_niche"
+      ],
+      "fails": [],
+      "not_evaluable": [
+        "Bleo1_GFPp",
+        "Bleo2_GFPp"
+      ],
+      "note": "a half holding fewer than ten double-positive cells cannot support the statistic; the written rule covers a computed half that moves, not one that cannot be computed, so those are recorded separately"
+    },
+    "reading": "these are the published pathological fibroblast; trial C9's signature is that state reached by an unusual route, and the lead closes to a method note The depth control is not evaluable for Bleo1_GFPp, Bleo2_GFPp, where the shallow half holds fewer than ten double-positive cells; that is a limit of the control at this cell count, not evidence against the effect. They are a graded state rather than a distinct cluster."
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T11:29:29+00:00"
+}

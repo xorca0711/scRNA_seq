@@ -1081,3 +1081,145 @@ symbol vocabularies before choosing its top set.
 | Nine of thirty markers replicate in magnitude | Not established as a meaningful figure; median attenuation is 0.535 against a threshold of 0.5, and it tracks the twofold depth difference between deposits |
 | Areg deletion depletes this population | Not establishable; one library per genotype and no other Areg-flox fibroblast dataset exists |
 | The trial's own T1 verdict, read as "the observation does not replicate" | Retracted as a reading; T1 and T5 were not composable and the conservative branch was taken, but the permutation result replicates in both animals |
+
+---
+
+## C10. The published pathological fibroblast, or not (2026-09-13)
+
+Script [`trials/c10_published_state_or_not.py`](trials/c10_published_state_or_not.py);
+artefacts in [`trials/c10_published_state_or_not/`](trials/c10_published_state_or_not/).
+Run on the owner's instruction, to settle the question trial C9 raised and
+could not answer.
+
+### Why C9 could not answer it
+
+None of the canonical pathological-fibroblast markers appeared in C9's top
+thirty discriminating genes, which looked like novelty. It was not evidence.
+Ranking by detection difference is biased twice over: Col1a1 is a condition of
+the fibroblast gate, so it sits at 100 per cent in both groups and cannot rank
+at all, and any gene that saturates or is very sparse is suppressed the same
+way. This trial scores the published definitions directly instead.
+
+The null was deliberately strong. Tsukui et al. 2020
+(doi:10.1038/s41467-020-15647-5) define their pathological fibroblast by Cthrc1
+with Postn, Spp1, Fn1 and Tnc, and their own text lists **Fst** among that
+cluster's markers. Fst is one half of C9's group definition, which is why it
+was excluded from the scored set here, and why the comparison was worth making.
+Fang et al. 2025 (doi:10.1038/s41586-024-08542-2) then showed RUNX2 drives the
+alveolar-to-pathological transition, so a Runx2-positive fibroblast being a
+pathological fibroblast was the published expectation.
+
+### Outcome: the lead closes
+
+| Library | Group | Double positive | pathological | alveolar | adventitial | smooth muscle |
+|---|---|--:|--:|--:|--:|--:|
+| Expt3_Het_niche | Areg-flox/+ | 379 | **1.81** | -0.76 | -0.59 | 0.06 |
+| Bleo1_GFPp | bleomycin | 32 | **1.49** | -1.03 | -0.17 | 0.28 |
+| Bleo2_GFPp | bleomycin | 37 | **1.46** | -1.26 | -0.23 | 0.05 |
+
+Standardised differences between double-positive and double-negative gated
+fibroblasts. T1 clears its 0.5 floor in all three libraries, and T4 puts the
+pathological set first everywhere. The pre-registered reading therefore
+applies: **these are the published pathological fibroblast, and trial C9's
+signature is that state reached by an unusual route.**
+
+Two things make the pattern hard to explain any other way. Alveolar identity is
+strongly *negative* in the double-positives, which is exactly what Tsukui
+describe for a state arising from alveolar fibroblasts that lose their
+identity. And the smooth-muscle score is flat at 0.06, 0.28 and 0.05, so this
+is not the mural contamination that trials C1b and E4 found distorting other
+measures.
+
+### Cthrc1 was there the whole time
+
+| Library | Cthrc1, double positive | Cthrc1, double negative |
+|---|--:|--:|
+| Expt3_Het_niche | 0.449 | 0.020 |
+| Bleo1_GFPp | 0.688 | 0.133 |
+| Bleo2_GFPp | 0.622 | 0.058 |
+
+A twenty-two-fold difference in the reference library. It missed C9's top
+thirty because its detection difference, 0.428, fell below that list's cutoff
+of 0.510. The saturation audit also confirms the bias directly: Col3a1 is
+formally unrankable, at 1.000 against 0.987.
+
+### Two honest caveats, and the fourth disclosed rule defect
+
+**The double-positive call is partly a depth call.** Detecting two sparse genes
+in the same cell needs depth, and the double-positives concentrate in the deep
+half: 342 of 379 in the reference, 31 of 32 and 33 of 37 in the bleomycin
+libraries. That does not explain the result, though, and the reason is the
+opposite signs. Depth cannot push the pathological score up while pushing the
+alveolar score down by a similar amount, and `score_genes` subtracts a matched
+control set besides. The direction disagreement between the two sets is what
+rules depth out.
+
+**T3 says graded, not discrete.** Blind clustering of the reference library
+does not put the double-positives in one cluster at the frozen thresholds, so
+they are a graded state, consistent with what C8 found for the retained tier.
+
+**The rule defect.** T5 as written triggers on a computed half that changes
+sign or falls below half the full value. In the bleomycin libraries the shallow
+half holds one and four double-positive cells, so the statistic cannot be
+computed there at all, which the written rule does not cover. The first run
+treated "not computable" as "failed" and therefore suppressed a reading that
+the reference library supports cleanly, with its own depth control passing at
+1.345 against 1.813. The code was corrected to match the written rule and the
+three outcomes are now recorded separately. The threshold was not moved. This
+is the fourth rule defect this folder has disclosed, after C7's missing margin
+requirement, C8's mixture test on a zero-inflated score, and C9's
+non-composable T1 and T5.
+
+### What this settles elsewhere
+
+It explains trial E4. The pathological fibroblast is by definition an injury
+state, so of course Fst, Runx2, Tnc and the rest are injury-generic; that
+result and this one are the same fact seen twice.
+
+It also supersedes claim C70. The signature is not a new programme, so the
+question of what to call it is moot, and the matrix and mechanosensor genes are
+simply part of a known state's transcriptome.
+
+### Claims from C10
+
+| Claim | Class |
+|---|---|
+| The Fst and Runx2 double-positive fibroblasts are the published Cthrc1-positive pathological fibroblast | Descriptive only, and agreed by three libraries including two independent animals |
+| They have lost alveolar identity, matching the published account of that state's origin | Descriptive only |
+| Cthrc1 was absent from C9's top thirty because of a ranking cutoff, not because it fails to discriminate | Descriptive only, and the method caution the trial existed to produce |
+| Trial C9's signature is a new fibroblast programme | Refuted; it is a known state reached by an unusual route |
+| The double-positives form a distinct population | Not established; graded at the frozen thresholds |
+| The result is a depth artefact | Refuted by the opposite signs: depth cannot raise one score while lowering another |
+
+---
+
+## C11. Figures for the contradictions (2026-09-13)
+
+Script [`trials/c11_figures_for_the_contradictions.py`](trials/c11_figures_for_the_contradictions.py);
+figures in [`trials/c11_figures_for_the_contradictions/`](trials/c11_figures_for_the_contradictions/).
+Reads only tracked tables, computes nothing scientific, and each figure carries
+a fail-closed assertion that refuses to draw if its source table stops saying
+what the title claims.
+
+Trials C5 and E5 drew the findings and the one refutation that existed then.
+Six results since then refute an earlier trial, refute one of this repository's
+own methods, or close a lead, and each lived only as a number in a table.
+
+| Figure | What it shows |
+|---|---|
+| `c11_fig1_e6_depth_control.png` | The only significant correlation in trial E6 was a control pair, and both of its variables track sequencing depth |
+| `c11_fig2_c7_resolution.png` | Profile correlation separates compartments by 0.415 of rho and states by 0.0056, and the sort contaminant is a mixture |
+| `c11_fig3_c8_amplitudes.png` | The retained pair sits inside the independence band, and 31.5 per cent of cells detect neither gene |
+| `c11_fig4_species_divergence.png` | HBEGF is topped by dendritic cells and macrophages in human and by epithelium and endothelium in mouse |
+| `c11_fig5_c9_existence_vs_size.png` | Co-occurrence replicates in both animals; the ratio is unstable across the depth split, and the magnitude threshold sits at the median attenuation |
+| `c11_fig6_c10_lead_closes.png` | The pathological set is the largest effect while alveolar identity is lost, and Cthrc1 sat just under C9's ranking cutoff |
+
+Three wordings were corrected because drawing them exposed an overstatement, a
+pattern this folder has now seen at every figure stage. A panel titled "every
+epithelial state scores the same" became "the top four matches span three
+different state calls", because the lower-scoring clusters genuinely differ. A
+subtitle saying myeloid cells "sit at the bottom in mouse" became a statement
+naming the two compartments that do and the exception that does not, since
+mouse neutrophils rank third. And two animals of one group had been given one
+colour while appearing as separate legend entries, which the palette rule
+forbids.

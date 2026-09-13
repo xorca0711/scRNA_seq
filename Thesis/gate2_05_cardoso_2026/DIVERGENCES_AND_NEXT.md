@@ -770,3 +770,83 @@ quantity it tested needed a companion condition, and each was caught only
 because the trial was made to report the companion quantity too. Freezing a
 threshold is not enough; a frozen rule also has to say what would make its own
 answer unreadable.
+
+---
+
+## 11. The lead closes, and the figures for every contradiction (2026-09-13)
+
+### 11.1 What trial C10 settled
+
+Section 10.3 offered the matrix and mechanosensor signature as the best
+remaining lead and said it pointed away from the Areg axis. Trial C10 asked the
+only question that mattered about it, and the answer closes the lead.
+
+The double-positive fibroblasts are the published Cthrc1-positive pathological
+fibroblast of Tsukui et al. 2020. The standardised difference on that set is
+1.81 in the reference library and 1.49 and 1.46 in two independent bleomycin
+animals, all above the frozen floor, and the pathological set is the largest of
+the four scored everywhere. Alveolar identity is strongly negative, which is
+what the published account of that state's origin predicts, and smooth muscle
+is flat, so this is not the mural contamination that distorted other measures
+in this folder.
+
+The clincher is Cthrc1 itself: detected in 44.9 per cent of double-positive
+cells against 2.0 per cent of double-negative ones in the reference library. It
+never appeared in trial C9's top thirty because its detection difference,
+0.428, fell below that list's cutoff of 0.510. The marker that settles the
+question was excluded by a ranking cutoff, which is exactly the bias section
+10 flagged and could not quantify.
+
+So the honest position is that this repository re-derived a known fibroblast
+state from a tumour deposit by an unusual route. That is a method note, not a
+finding, and it is where the lead stops. Claim C70 is superseded: the matrix
+and mechanosensor genes are part of a known state's transcriptome rather than a
+new programme.
+
+It also explains trial E4 rather than sitting beside it. The pathological
+fibroblast is by definition an injury state, so Fst, Runx2 and Tnc being
+injury-generic is the same fact seen from another angle.
+
+### 11.2 The caveat that does not rescue it
+
+The double-positive call is partly a depth call, because detecting two sparse
+genes in one cell needs depth: 342 of 379 double-positives sit in the deep half
+of the reference library, and 31 of 32 and 33 of 37 in the bleomycin ones. That
+is worth knowing for anything built on this definition. It does not explain the
+result, because depth cannot raise the pathological score while lowering the
+alveolar score by a similar amount, and the opposite signs are what rule it
+out.
+
+### 11.3 The fourth rule defect, and what the four have in common
+
+T5 as written triggers on a computed half that moves. In the bleomycin
+libraries the shallow half holds one and four double-positive cells, so the
+statistic cannot be computed there, which the written rule does not cover. The
+first run treated "not computable" as "failed" and suppressed a reading the
+reference library supports with its own depth control passing. The code was
+corrected to match the written rule, the threshold was not moved, and the three
+outcomes are recorded separately now.
+
+Four defects, all disclosed, all caught the same way:
+
+| Trial | The rule | What it missed |
+|---|---|---|
+| C7 | name the best-correlating state | no margin requirement, so it named a state it separated by 0.0056 |
+| C8 | a mixture test for a subpopulation | zero inflation guarantees two components on a two-gene mean |
+| C9 | a ratio floor plus a depth rule | the two were not composable, since one forbade reading what the other tested |
+| C10 | a depth control on computed halves | said nothing about a half that cannot be computed |
+
+The common shape is that each rule specified a threshold and left unsaid what
+would make its own answer unreadable, and each was caught only because the
+trial was made to report the companion quantity as well as the verdict. That is
+the practice worth carrying forward, and it is cheaper than it sounds: every one
+of these was caught by printing a number nobody had asked for.
+
+### 11.4 The figures
+
+Trial C11 draws the six results that refute an earlier trial, refute one of this
+repository's own methods, or close a lead, from tracked tables only and with a
+fail-closed assertion on each. They are in
+[`trials/c11_figures_for_the_contradictions/`](trials/c11_figures_for_the_contradictions/)
+and listed in the trial log. Drawing them corrected three more overstatements,
+which is now the expected yield of making a figure in this folder.

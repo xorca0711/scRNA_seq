@@ -1,0 +1,4 @@
+library,group,n_gated,n_double_positive,n_double_negative,d_pathological,d_alveolar,d_adventitial,d_smooth_muscle,d_pathological_shallow,d_pathological_deep,depth_control,depth_control_passes,n_double_positive_shallow,n_double_positive_deep
+Expt3_Het_niche,Areg-flox/+,2751,379,1529,1.8127,-0.756,-0.5937,0.062,1.3451,1.8188,passes,True,37,342
+Bleo1_GFPp,bleomycin,2443,32,2057,1.4926,-1.0349,-0.1707,0.2772,,1.5169,not evaluable,False,1,31
+Bleo2_GFPp,bleomycin,2056,37,1647,1.4613,-1.2634,-0.225,0.0462,,1.5199,not evaluable,False,4,33
