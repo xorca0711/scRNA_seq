@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-13 (the E-series extensions; see the newest handoff block). Previously 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-13 (the three chosen follow-ups, E6, C7 and C8; see the newest handoff block). Previously 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -424,6 +424,110 @@ labelled cells.
      pre-named myeloid-dominant one. Both readings are in the trial log.
    - Rows C37 to C48 in the claims register; DEVELOPMENT decision 19. Owner
      retain/reject review pending on all of it.
+
+25. **Three chosen follow-ups run; list A is now empty and every answer is
+   negative or a correction** (`Thesis/gate2_05_cardoso_2026/trials/e6_*.py`,
+   `c7_*.py`, `c8_*.py`, 2026-09-13, owner selection). Full account in the
+   newest handoff block below.
+   - **E6, the first direct test of the paper's axis.** Across 22 donors of
+     GSE136831, epithelial AREG against fibroblast EGFR gives Spearman rho
+     0.348 at p = 0.112, and against a fibroblast activation score rho -0.150.
+     Within the 18 fibrosis donors, 0.276 and -0.013. No donor-level coupling
+     at any strength this cohort could detect, which is about rho 0.43 and no
+     smaller. It does not contradict the paper: pooling all epithelium dilutes
+     the state the claim is about, the same limit E1b measured, and a
+     state-resolved version is blocked because that state clears the cell
+     floor in only seven donors (E2).
+   - **The depth control is the result worth reusing.** E6's only significant
+     correlation was a control pair, epithelial TGFA against fibroblast
+     activation at p = 0.045, and both members track sequencing depth, so the
+     frozen rule refused to read it. The same number on AREG would have looked
+     like confirmation. Epithelial AREG itself is clean against depth at 0.124.
+   - **C7 closes item A1: the sort contaminant is a mixture, not a state.** Of
+     its 184 cells, 77 score DATP-like, 70 AT2, 20 cycling, 13 AT1-like and 4
+     Cd177-positive, a modal call of 41.8 per cent that sits below this
+     repository's own 50 per cent floor. So about four in ten of the
+     contaminating cells are the paper's own signalling population and about
+     four in ten are ordinary AT2. Claim C26's caution holds in that exact
+     form; the contaminant cannot be called the DATP-like state.
+   - **C7 also refuted its own primary measure.** Whole-profile rank
+     correlation separated the epithelial query from a fibroblast control by
+     0.415 of rho and separated epithelial states from each other by 0.0056,
+     with the top four matches spanning three different calls inside 0.015. It
+     has compartment resolution and no state resolution. The rule named a
+     winner because it was written without a margin requirement; the margin it
+     did report is what refuses the answer, and the threshold was not moved.
+   - **C8 closes item A2: the tiers are amplitudes.** In the deletion arm Runx1
+     and Pdgfrb co-occur in 22.46 per cent of gated fibroblasts against 20.44
+     expected under independence, ratio 1.099 inside the frozen band, with the
+     depth control moving it by 0.043. The mixture test that disagreed is
+     uninformative here, because 31.5 per cent of the cells detect neither gene
+     so the score has a spike at zero; trial C1 used the same test on a centred
+     score where that does not arise, so the defect is the reuse. Recorded, not
+     repaired.
+   - **The one surviving lead, post hoc and labelled.** The co-organisation
+     sits on the falling tier: Fst with Runx2 at ratio 1.735 in Areg-flox/+ and
+     0.816 after deletion, where only 24 of 3,700 cells carry both. Runx1 with
+     Pdgfrb is inside the independence band in both arms. Read with E4, Areg
+     deletion looks like it removes a co-expressing Fst and Runx2 population
+     while the injury-generic genes stay spread across the compartment. One
+     library per genotype, 24 cells, so this is a target for a future
+     pre-registration and not a claim.
+   - Rows C49 to C57 in the claims register; DEVELOPMENT decision 20. Owner
+     retain/reject review pending on all of it.
+
+---
+
+## Handoff: session of 2026-09-13, the three chosen follow-ups
+
+Branch `Claude/cardoso-2026-three-followups`, opened after
+[PR #11](https://github.com/xorca0711/scRNA_seq/pull/11) was merged. Nothing in
+`analysis/` was touched.
+
+| Trial | Question | State | Re-run |
+|---|---|---|---|
+| E6 | donor-level coupling of AREG to EGFR in human fibrosis | complete, null | about 30 minutes first time, then seconds from the cached vectors |
+| C7 | which epithelial state the mesenchymal-sort contaminant is | complete, mixture | about 25 minutes; reprocesses the GSE316244 RFP libraries |
+| C8 | subpopulation or gradient in the Areg-independent tier | complete, gradient | about 12 minutes; reprocesses the GSE316244 niche libraries |
+
+**Where the work stands.** List A of
+[`DIVERGENCES_AND_NEXT.md`](Thesis/gate2_05_cardoso_2026/DIVERGENCES_AND_NEXT.md)
+is empty. Every question answerable from data already on disk has been asked,
+and five of the six answered negatively or forced a correction. What remains on
+that page is list B, which needs the bench, and list C, which the data type
+cannot support.
+
+**The three results in one line each.** The paper's axis shows no donor-level
+coupling that 22 donors could detect, and the smallest effect the test could
+have seen is about rho 0.43. The mesenchymal-sort contaminant is a mixture,
+roughly four parts DATP-like to four parts AT2, so it cannot be named as a
+single state. The Areg-independent tier is a gradient rather than a
+subpopulation, confirming the C5 correction from a second direction.
+
+**Two rule defects are on the record and neither threshold was moved.** C7's
+profile-correlation test was written without a margin requirement, so it named
+a state it separated by 0.0056 while separating compartments by 0.415; the
+margin it reported is what refuses the answer. C8's mixture test prefers two
+components because 31.5 per cent of the cells detect neither gene in the score,
+which guarantees a spike at zero; trial C1 applied the same test to a centred
+score where that does not arise, so the defect is the reuse. One implementation
+bug was fixed: E6's depth rule covered any pair in its text but only the
+primary tests in code, and the code was corrected to match the text.
+
+**The thing to carry into any future correlational trial here.** E6's only
+significant correlation was a control pair whose two members both track
+sequencing depth, at p = 0.045. Without that pre-registered control it would
+have read as a discovery. Carry the depth control by default.
+
+**Owner decisions now open**, in addition to those in items 23 and 24: rows C49
+to C57, and whether the post hoc Fst with Runx2 lead from C8 deserves a
+pre-registered trial. That lead rests on 24 double-positive cells in one
+library, though the two arms are the best depth-matched pair in this deposit at
+3,637 against 3,612 median genes per cell.
+
+**Caches added under `raw_data/` this session** (gitignored, regenerable):
+`GSE136831/e6_extracted_rows.npz`. The GSE131907 cache from E1 is still there
+and still used by E1b.
 
 ---
 

@@ -212,6 +212,9 @@ in one of its two replicates.
 
 ### A. Answerable from data already on disk, no new experiment
 
+**All six items are now answered. Section 9.4 carries the outcomes; the table
+below is left as written so the questions and their costs stay visible.**
+
 | # | Question | Method | Cost | What a result would mean |
 |---|---|---|---|---|
 | A1 | Is the mesenchymal-sort contaminant the same state as the RFP-sorted mutant epithelium? | score cluster 11 against the GSE316244 RFP+ states; the two share a gene space exactly, so no intersection is needed | one short trial | if it matches DATP-like, the contaminant is the paper's own signalling population and the sort caution is sharper; if it does not, the leak is something else |
@@ -563,3 +566,109 @@ difference of 0.027, HBEGF in 24 of 37 with 0.019, unpaired and not
 depth-matched. Neither ligand rises clearly with the injury, which is the same
 answer E1 gave for tumour against matched normal lung. Both look like
 properties of the cell types that carry them rather than of the disease.
+
+---
+
+## 9. The three jobs of 2026-09-13, and what they leave of this page (2026-09-13)
+
+Trials E6, C7 and C8 are logged in [`ANALYSIS_TRIAL_PLAN.md`](ANALYSIS_TRIAL_PLAN.md).
+They closed the two remaining items of list A above and added the first direct
+test of the paper's axis that any dataset here could support. All three came
+back negative or unresolved, so this section is mostly about what can no longer
+be said.
+
+### 9.1 The axis itself, tested for the first time and not detected
+
+Sections 2 to 4 of this page describe where each molecule sits. None of them
+tests the link. Trial E6 does, in the weakest form that is still a test: across
+22 donors of the Adams fibrosis cohort, do donors with more epithelial AREG
+carry more fibroblast EGFR or more activated fibroblasts.
+
+They do not, at any strength this cohort could detect. Epithelial AREG against
+fibroblast EGFR gives rho 0.348 at p = 0.112, and against a fibroblast
+activation score rho -0.150. Within the 18 fibrosis donors alone, 0.276 and
+-0.013. The pre-registered reading obliges reporting the detectable effect
+rather than declaring the axis absent: at this sample size a two-sided test
+calls rho of about 0.43 and nothing smaller.
+
+Two things follow, and the second matters more than the first. This is a null
+for strong donor-level coupling, and it is silent about weak coupling. And it
+is not evidence against the paper, because the paper's claim is about a state
+inside the epithelium while E6 pools all of it, which is exactly the dilution
+trial E1b measured. A version of E6 restricted to the aberrant basaloid state
+would be the right follow-up, and trial E2 already showed why it cannot run:
+that state clears the cell floor in only seven donors.
+
+The control that fired is worth carrying forward. The only correlation reaching
+significance was a control pair, epithelial TGFA against fibroblast activation
+at rho 0.432, p = 0.045, and both of its members correlate with their own
+compartment's sequencing depth, so the frozen depth rule refuses to read it.
+The same number on AREG would have looked like a discovery. Any future
+correlational work in this repository should carry that control by default.
+
+### 9.2 Finding one survives, in a weaker and more exact form
+
+Section 2 called cluster 11 an Areg-high epithelial population and left open
+which state it is. Trial C7 answers: it is a mixture, not a state. Direct
+marker scoring of its 184 cells gives DATP-like 77, AT2 70, cycling 20,
+AT1-like 13 and Cd177-positive 4, a modal call of 41.8 per cent that sits below
+the 50 per cent floor used elsewhere in this repository.
+
+So the sentence to use is that about four in ten of the contaminating cells
+score as the paper's own signalling population, and about four in ten are
+ordinary AT2. The practical caution in section 2 holds: a ligand-receptor
+analysis run inside GSE316241 alone would read part of the paper's sending
+population as a mesenchymal source. What cannot be said is that the contaminant
+is the DATP-like state.
+
+The trial also produced a method result worth more than its biology. Rank
+correlation of whole mean profiles separated the epithelial query from a
+fibroblast control by 0.415 of rho, and separated the epithelial states from
+each other by 0.0056. It has compartment resolution and no state resolution,
+because 32,163 shared genes are dominated by what all epithelium has in common.
+Marker scoring did the job that correlation could not.
+
+### 9.3 The tiers are amplitudes, and the structure is on the other tier
+
+Section 3 asked whether the Areg-independent half is a real subpopulation or a
+wording artefact. Trial C8 answers with the gradient: in the deletion arm,
+Runx1 and Pdgfrb co-occur in 22.46 per cent of gated fibroblasts against 20.44
+per cent expected under independence, a ratio of 1.099 inside the frozen
+independence band, and the depth control moves it by only 0.043. The
+description trial C5 corrected this page to, a graded response rather than a
+split, is the right one.
+
+The mixture test that disagreed is not a second opinion. It prefers two
+components because 31.5 per cent of these cells detect neither gene, so the
+score has a spike at zero and a continuum, and a two-component fit wins on that
+shape regardless of biology. Trial C1 applied the same test to a centred
+`score_genes` output where this does not arise; reusing it on a raw two-gene
+mean was a poor choice, and it is recorded rather than quietly replaced.
+
+The lead this opens was not pre-registered and is labelled accordingly. The
+co-organisation sits on the falling tier, not the retained one. In the control
+arm Fst and Runx2 co-occur at 13.78 per cent against 7.94 expected, a ratio of
+1.735, so they genuinely mark the same fibroblasts. After deletion that is gone,
+ratio 0.816 on 24 double-positive cells of 3,700. Runx1 with Pdgfrb sits inside
+the independence band in both arms. Read with trial E4, which showed Runx1 and
+Pdgfrb rise with bleomycin alone, the picture is that Areg deletion removes a
+co-expressing Fst and Runx2 population while the injury-generic genes stay
+spread independently across the compartment. That is the shape a future
+pre-registration should target, and it rests on 24 cells in one library today.
+
+### 9.4 What list A now looks like
+
+| # | Question | State |
+|---|---|---|
+| A1 | Is the contaminant the same state as the RFP-sorted mutant epithelium? | Answered by C7: it is a mixture, about four parts DATP-like to four parts AT2 |
+| A2 | Is the fibrotic gradient one programme at lower amplitude, or two? | Answered by C8: one programme at lower amplitude; the co-organisation is on the falling tier |
+| A3 | How much residual Areg is there in the flox/flox arm? | Answered by C6: detected in 58.7% of Hom RFP-positive epithelium, with an ambient term |
+| A4 | Does the retention result survive depth matching? | Partly answered as a side effect: C8's gate gives 3,637 against 3,612 median genes per cell, the best-matched arms in this deposit, and the ratios hold |
+| A5 | Is the Hbegf abundance pattern present in human LUAD? | Answered by E1 and E1b: the ligand is myeloid-dominant in human, so the mouse pattern does not carry over |
+| A6 | Does non-oncogenic injury show the same Runx1 and Pdgfrb retention? | Answered by E4: yes, which refuted the second-signal reading |
+
+List A is now empty. Everything left on this page is either list B, which needs
+the bench, or list C, which the data type cannot support. The one exception is
+the state-resolved version of E6, which is blocked by cell counts rather than
+by method, and which a cohort with more transitional cells per donor would
+unblock.

@@ -1,0 +1,7 @@
+pair,n_cells,detection_a,detection_b,observed_both,expected_if_independent,ratio,half,tier,median_genes_per_cell
+Runx1 with Pdgfrb,1851,0.3652,0.3425,0.1356,0.1251,1.084,shallow,retained,3035.0
+Fst with Runx2,1851,0.1264,0.0319,0.0027,0.004,0.6704,shallow,falling,3035.0
+Runx1 with Fst,1851,0.3652,0.1264,0.0378,0.0462,0.8191,shallow,mixed,3035.0
+Runx1 with Pdgfrb,1849,0.6468,0.4657,0.3137,0.3012,1.0414,deep,retained,4134.0
+Fst with Runx2,1849,0.1385,0.0882,0.0103,0.0122,0.8419,deep,falling,4134.0
+Runx1 with Fst,1849,0.6468,0.1385,0.0719,0.0896,0.8032,deep,mixed,4134.0

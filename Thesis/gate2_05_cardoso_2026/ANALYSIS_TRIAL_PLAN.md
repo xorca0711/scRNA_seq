@@ -784,3 +784,166 @@ mesenchymal sort, and it is drawn rather than averaged away.
 | Runx1 and Pdgfrb persistence after Areg deletion reflects a second tumour signal | Refuted by E4; both genes rise with bleomycin alone |
 | Hbegf or Egfr is specific to the tumour mesenchyme | Refuted by E4; both are injury-generic |
 | A within-tumour comparison of tumour epithelial states against AT2 in GSE131907 | Not establishable; the deposited labels are tissue-exclusive |
+
+---
+
+## E6, C7 and C8: three questions asked properly, and three rules that showed their own limits (2026-09-13)
+
+These are the three jobs the owner chose from the next-step list: a donor-level
+test of the paper's axis in human fibrosis, the identity of the mesenchymal-sort
+contaminant (item A1), and whether the Areg-independent tier is a subpopulation
+or a gradient (item A2, re-aimed after E4 removed its original motivation).
+
+All three returned a negative or an unresolved result, and in two of them the
+frozen rule turned out to be the thing that failed rather than the biology.
+Both defects are disclosed here and neither threshold was moved.
+
+### E6: the axis shows no donor-level coupling that this cohort could detect
+
+Script [`trials/e6_donor_level_axis_coupling.py`](trials/e6_donor_level_axis_coupling.py);
+artefacts in [`trials/e6_donor_level_axis_coupling/`](trials/e6_donor_level_axis_coupling/).
+GSE136831, 22 donors clearing the 50-cell floor in both compartments, 18 with
+fibrosis and 4 control.
+
+The question was the weakest one that still tests the link rather than
+describing the parts: if epithelial AREG drives fibroblast EGFR in human
+fibrotic lung, donors with more of the first should carry more of the second.
+
+| Test | rho | p | Reading |
+|---|--:|--:|---|
+| T8, epithelial AREG against fibroblast EGFR | 0.348 | 0.112 | not significant |
+| T9, epithelial AREG against fibroblast activation | -0.150 | 0.506 | not significant |
+| T12, T8 within fibrosis donors only | 0.276 | 0.268 | not significant |
+| T12, T9 within fibrosis donors only | -0.013 | 0.958 | not significant |
+
+The pre-registered reading for that outcome requires reporting what the test
+could have seen rather than implying the axis is absent. At 22 donors a
+two-sided Spearman calls |rho| of about 0.43 and no less; within the 18
+fibrosis donors, about 0.48. So this is a genuine null for strong coupling and
+says nothing about weak coupling. It is also not evidence against the paper,
+whose claim is about a state inside the epithelium: pooling all epithelium
+dilutes it, which is the same limit trial E1b documented.
+
+**The depth control earned its place.** The one correlation that reached
+significance was a control, not the primary: epithelial TGFA against fibroblast
+activation, rho 0.432, p 0.045. Both of those variables correlate with their
+own compartment's sequencing depth, TGFA at 0.507 and activation at 0.412, so
+the frozen rule marks the pair confounded and refuses to read it. Had the same
+number appeared on AREG it would have looked like the result the trial was
+hunting. Epithelial AREG, by contrast, is clean against depth at 0.124, so the
+primary null is not a depth artefact either.
+
+**A defect in the implementation, not the rule.** The rule said any pair whose
+two members both correlate with depth is not read. The first version of the
+script applied that only to the primary tests, so the significant control pair
+came out unmarked. The rule was not changed; the code was corrected to apply it
+to the control pairs as the text already required, and the trial was re-run
+from the cached gene vectors.
+
+### C7: the sort contaminant is a mixture, and whole-profile correlation cannot name a state
+
+Script [`trials/c7_what_the_sort_contaminant_is.py`](trials/c7_what_the_sort_contaminant_is.py);
+artefacts in [`trials/c7_what_the_sort_contaminant_is/`](trials/c7_what_the_sort_contaminant_is/).
+Reference: the RFP-sorted epithelium of GSE316244, 11,350 cells in 11 clusters
+after the C2 pipeline, named by the paper's own Figure 4l marker sets. Query:
+the 184 cells of cluster 11 in the cached C1b mesenchyme object.
+
+**T3, the control, passed and is the reason anything here is readable.**
+Cluster 11's best correlation against an epithelial cluster is 0.878, while
+cluster 14, the cleanest fibroblast cluster in the same object, reaches only
+0.463. A gap of 0.415 says the measure separates compartments.
+
+**T1 named a winner it cannot defend, which is a defect in how T1 was
+written.** The top match is an AT1-like cluster at 0.8778, and the margin to
+second is 0.0056. The top four matches span three different state calls inside
+0.015 of rho:
+
+| Reference cluster | Call | rho |
+|---|---|--:|
+| 5 | AT1_like | 0.8778 |
+| 7 | DATP_like | 0.8722 |
+| 0 | DATP_like | 0.8657 |
+| 8 | AT2 | 0.8631 |
+
+The rule required the margin to be reported and did not require it to be large
+before a state could be named, so the script named one. The margin is what
+should be read, and it says the measure has compartment resolution and no state
+resolution: a rank correlation over 32,163 shared genes is dominated by what
+all epithelium shares. The threshold was not moved after the fact, and the
+sentence "the top state is AT1-like" is not a result of this trial.
+
+**T2, which does have state resolution, says mixture.** Scoring the 184 query
+cells directly with the same marker sets gives DATP-like 77, AT2 70, cycling
+20, AT1-like 13 and Cd177-positive 4. The modal call is DATP-like at 41.8 per
+cent of cells, below the 50 per cent floor this repository uses elsewhere, with
+AT2 at 38 per cent right behind it.
+
+So the answer to item A1 is that the leak is not state-selective. Cluster 11 is
+roughly four parts DATP-like to four parts AT2, with a cycling minority. The
+caution from finding one survives in a weaker and more precise form: about four
+in ten of the contaminating cells score as the paper's own signalling
+population, so a ligand-receptor analysis run inside GSE316241 alone would
+indeed be reading some of that population as a mesenchymal source, but it would
+also be reading ordinary AT2 cells, and the contaminant cannot be described as
+the DATP-like state.
+
+### C8: the retained tier is not a subpopulation, and what deletion removes is a co-expressing pair
+
+Script [`trials/c8_subpopulation_or_gradient.py`](trials/c8_subpopulation_or_gradient.py);
+artefacts in [`trials/c8_subpopulation_or_gradient/`](trials/c8_subpopulation_or_gradient/).
+Fibroblasts defined by the C6 compartment gate rather than by C2's clustering,
+a difference disclosed in the script: 2,751 gated cells in Areg-flox/+ and
+3,700 in Areg-flox/flox, at 3,637 and 3,612 median genes per cell, so the two
+arms are unusually well depth-matched for this deposit.
+
+**T1 says independence.** In the flox/flox fibroblasts, Runx1 and Pdgfrb
+co-occur in 22.46 per cent of cells against 20.44 per cent expected if they
+were independent, a ratio of 1.099 against a frozen band of 0.80 to 1.25. The
+retained genes do not mark a shared set of cells. T4, the depth control, moves
+that ratio by 0.043 across the median split, well inside the 0.25 limit, so the
+number is not depth-driven.
+
+**T3 favoured two components and should not have been believed.** The mixture
+fit prefers two Gaussians over one by 731 units of BIC, which the frozen
+reading treats as a discrete subpopulation, so the two tests disagreed and the
+pre-registered outcome for disagreement is "unresolved". That is the honest
+outcome of the rule as written, but the rule was poorly chosen and the reason is
+arithmetic rather than biological. The score is the mean of log1p Runx1 and
+log1p Pdgfrb, and 31.5 per cent of these cells detect neither gene, so the
+distribution has a spike at exactly zero plus a continuum. A two-component
+mixture will win on that shape whatever the biology is. Trial C1 used the same
+test on a `score_genes` output, which is centred and continuous and not exposed
+to this; reusing it on a raw two-gene mean is the error, and it is recorded
+rather than repaired, because repairing it after seeing the result is what the
+frozen-rule discipline exists to prevent. **T3 carries no information here**, so
+T1 is the only readable answer: a gradient, not a subpopulation, which is how
+trial C5 had already corrected the description of claim C29.
+
+**The post hoc observation, which is the interesting part and is labelled as
+post hoc.** T2 was included only to give T1 something to compare against, and
+it shows the structure sits on the other tier. In the control arm the two genes
+that fall hardest, Fst and Runx2, co-occur at 13.78 per cent against 7.94 per
+cent expected, a ratio of 1.735: they mark the same cells. In the deletion arm
+that co-organisation is gone, ratio 0.816, and only 24 of 3,700 cells carry
+both. The retained pair, Runx1 with Pdgfrb, sits at 1.196 in the control arm
+and 1.099 after deletion, inside the independence band in both.
+
+Read together with E4, that suggests what Areg deletion removes is a
+co-expressing Fst and Runx2 set of fibroblasts, while Runx1 and Pdgfrb are
+spread independently across the compartment whether Areg is present or not, and
+E4 already showed those two rise with injury alone. None of this was
+pre-registered, the deletion-arm ratio rests on 24 cells, and there is one
+library per genotype, so it is a lead for a future pre-registration and not a
+claim.
+
+### Claims from E6, C7 and C8
+
+| Claim | Class |
+|---|---|
+| Epithelial AREG and fibroblast EGFR are correlated across donors in human fibrotic lung | Not established; 22 donors, rho 0.348, p = 0.112, and the test could only have detected rho of about 0.43 |
+| Epithelial AREG and fibroblast activation are correlated across donors | Not established; rho -0.150, and within fibrosis donors -0.013 |
+| The mesenchymal-sort contaminant is a single epithelial state | Refuted; 41.8% score DATP-like and 38% AT2, below this repository's own confidence floor |
+| About four in ten contaminating cells score as the paper's DATP-like state | Descriptive only, and it is the surviving form of the finding-one caution |
+| Whole-profile rank correlation can name an epithelial state | Refuted by its own margin: 0.415 between compartments, 0.0056 between states |
+| The Areg-independent tier is a discrete subpopulation of fibroblasts | Not established; co-detection ratio 1.099 inside the independence band, and the mixture test that disagreed is uninformative on a zero-inflated score |
+| Areg deletion removes a co-expressing Fst and Runx2 set rather than reducing one programme evenly | Exploratory, post hoc, and resting on 24 double-positive cells in one library |

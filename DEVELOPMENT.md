@@ -29,6 +29,7 @@ violate, is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Focused reproductions of the source paper's phase and myeloid claims (`phase_timecourse/`, `myeloid_focus/`) | AI-assisted, rules frozen before each run; my review pending |
 | Repository framing, and what is displaced as established elsewhere | Me (instruction 2026-09-10); AI-assisted execution |
 | Reading the Cardoso 2026 deposit in gates, and stopping Gate 1 when it failed (`Thesis/gate2_05_cardoso_2026/`) | Me (instruction and gate design 2026-09-12); AI-assisted execution, rules frozen before each run; my review pending |
+| Choosing the three follow-up questions off the agent's ranked list, and accepting three negative answers plus two disclosed rule defects (trials E6, C7, C8) | Me (selection 2026-09-13); AI-assisted execution with readings frozen before the data were opened; the agent reported the margin that refuses its own C7 answer and the zero-inflation that voids its own C8 mixture test; my review pending on rows C49 to C57 |
 | Extending the Hbegf lead into four public datasets once the deposit was exhausted, and accepting a frozen rule's refutation of my own agent's best lead (trials E1 to E4) | Me (instruction 2026-09-13, including the condition that the extensions run only if the first did not refute); AI-assisted execution, readings frozen before the matrices were opened; my review pending on rows C37 to C48 and on the weakening of C29 |
 
 AI execution never meant automatic acceptance. Results were reviewed between
@@ -315,6 +316,58 @@ kept because it constrains a reading, not because it is new.
 
 Mine to retain or reject: the weakening of C29, rows C37 to C48, and whether
 the myeloid ligand source is worth a paragraph in the eventual writeup.
+
+**20 · Three chosen questions, three negative answers, and two rules that
+failed instead of the biology.** (2026-09-13, under review.) I picked three
+jobs off the agent's ranked list: a donor-level test of the paper's axis, the
+identity of the mesenchymal-sort contaminant, and whether the Areg-independent
+tier is a population or a gradient. None returned a positive result, which is
+the ordinary outcome of asking precise questions, and two of them failed
+because the pre-registered rule was badly chosen rather than because the data
+were silent. That distinction is the reason this entry exists.
+
+**What the agent got right about its own rules.** In trial C7 the rule said to
+name the best-correlating reference state and to report the margin. It did
+both. The margin was 0.0056 while the same measure separated epithelium from
+fibroblasts by 0.415, so the measure has compartment resolution and no state
+resolution, and the named winner is meaningless. The agent reported the winner
+as the rule demanded, then refused to read it, and left the threshold alone. In
+trial C8 the mixture test preferred two components, which the frozen reading
+calls a subpopulation, and the agent showed why that is arithmetic: 31.5 per
+cent of the cells detect neither of the two genes in the score, so a spike at
+zero guarantees the second component. It noted that trial C1 had used the same
+test on a centred score where the problem does not arise, so the defect is the
+reuse and not the original. Neither rule was edited after the fact.
+
+**The one thing that was edited, and why that was correct.** Trial E6's depth
+rule said any pair whose two members both correlate with sequencing depth is
+not read. The first implementation applied it only to the primary tests, so a
+significant control pair came through unmarked. The agent changed the code to
+match the rule text, not the rule text to match the result, and re-ran from
+cached values. I am satisfied that is a bug fix rather than a threshold move.
+
+**The result I want kept visible.** E6's only significant correlation was a
+control: epithelial TGFA against fibroblast activation, p = 0.045. Both of its
+variables track sequencing depth, so the rule threw it out. Had that number
+landed on AREG instead of TGFA it would have read as confirmation of the
+paper's axis, and nothing but the pre-registered control would have caught it.
+The primary test itself is a null, rho 0.348 at p = 0.112 over 22 donors, and
+the agent reported the smallest effect the test could have seen, about rho
+0.43, rather than implying the axis is absent. It also said plainly that
+pooling all epithelium dilutes the state the paper's claim is about, so the
+null does not contradict the paper.
+
+**What the three jobs bought.** List A of the next-step document is now empty:
+every question answerable from data on disk has been answered, five of the six
+negatively or with a correction. The surviving lead is post hoc and labelled as
+such: the co-organisation in the fibrotic set sits on the tier that falls, Fst
+with Runx2 at a ratio of 1.735 in the control arm and gone after deletion,
+while the retained genes are independently distributed in both arms. It rests
+on 24 double-positive cells in a single library, and the agent said so in the
+same sentence as the finding.
+
+Mine to retain or reject: rows C49 to C57, and whether the post hoc Fst and
+Runx2 lead is worth a pre-registered trial of its own.
 
 ## How outputs were reviewed
 

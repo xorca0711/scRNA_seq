@@ -1,0 +1,139 @@
+{
+  "trial": "C8 is the Areg-independent tier a subpopulation or a gradient",
+  "rules_frozen_at": "2026-09-13T07:45:13+00:00",
+  "rules": {
+    "question": "item A2, re-aimed after E4: is the Areg-independent tier a subpopulation or a gradient",
+    "libraries": [
+      {
+        "gsm": "GSM9447779",
+        "library": "Expt3_Het_niche",
+        "genotype": "Areg-flox/+"
+      },
+      {
+        "gsm": "GSM9447780",
+        "library": "Expt3_Hom_niche",
+        "genotype": "Areg-flox/flox"
+      }
+    ],
+    "qc": "identical to trial C1",
+    "fibroblast_definition": "marker gate, Col1a1 positive and Ptprc, Pecam1, Epcam negative, as in C1b Question C and C6",
+    "disclosed_difference": "C2 defined fibroblasts by clustering; the cell set here is not identical and detection fractions are recomputed, not quoted from C2",
+    "genes": [
+      "Tnc",
+      "Fst",
+      "Runx1",
+      "Runx2",
+      "Acta2",
+      "Pdgfrb"
+    ],
+    "tiers": {
+      "retained": [
+        "Runx1",
+        "Pdgfrb"
+      ],
+      "falling": [
+        "Fst",
+        "Runx2"
+      ],
+      "mixed": [
+        "Runx1",
+        "Fst"
+      ]
+    },
+    "T1": "flox/flox co-detection of Runx1 and Pdgfrb against independence; >= 1.25 same cells, <= 0.8 different cells, between is independence",
+    "T2": "the same ratio for the falling pair and one mixed pair, both genotypes",
+    "T3": "one against two Gaussian components on the retained-tier score by BIC, as in C1",
+    "T4": "depth control: split flox/flox fibroblasts at the median genes per cell; a ratio moving more than 0.25 between halves is depth-driven and is not read",
+    "reading_fixed_in_advance": {
+      "subpopulation": "the Areg-independent tier is a distinct subpopulation; C29 is a population difference",
+      "gradient": "the tiers are amplitudes of one programme; C29 is a gradient, as C5 already corrected",
+      "disagreement": "unresolved; both numbers reported",
+      "depth_failed": "the ratio is depth-driven; no reading"
+    },
+    "unit": "the library; one per genotype with three mice pooled, so nothing is tested between genotypes"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_matrix.mtx.gz",
+      "bytes": 90730416,
+      "modified": "2026-01-11T03:33:45+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447779_Expt3_Het_niche_barcodes.tsv.gz",
+      "bytes": 43844,
+      "modified": "2026-01-11T03:20:36+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447780_Expt3_Hom_niche_matrix.mtx.gz",
+      "bytes": 116617964,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447780_Expt3_Hom_niche_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T02:48:36+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447780_Expt3_Hom_niche_barcodes.tsv.gz",
+      "bytes": 55076,
+      "modified": "2026-01-11T03:20:36+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c8_subpopulation_or_gradient\\c8_gated_cells.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c8_subpopulation_or_gradient\\c8_codetection_ratios.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c8_subpopulation_or_gradient\\c8_depth_control.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c8_subpopulation_or_gradient\\c8_summary.md"
+  ],
+  "results": {
+    "gated_cells": {
+      "Areg-flox/+": 2751,
+      "Areg-flox/flox": 3700
+    },
+    "median_genes_per_cell": {
+      "Areg-flox/+": 3637.0,
+      "Areg-flox/flox": 3612.0
+    },
+    "T1": {
+      "ratio": 1.0986,
+      "verdict": "consistent with independence",
+      "observed": 0.2246,
+      "expected": 0.2044
+    },
+    "T3": {
+      "bic": {
+        "1": 5173.42,
+        "2": 4442.64
+      },
+      "components_favoured": 2,
+      "delta_bic": 730.78
+    },
+    "T4_depth_shifts": {
+      "retained": 0.0426,
+      "falling": 0.1715,
+      "mixed": 0.0159
+    },
+    "reading": "unresolved; both numbers reported"
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-13T07:49:38+00:00"
+}
