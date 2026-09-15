@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-15 (reading order revised with Gate 2 branches and methods references; the Choi 2020 folder withdrawn and its deposit check relocated under the Cardoso folder; decision 21 corrected; see items 30 and 31 and the newest handoff blocks). Previously 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-15 (reading order revised with Gate 2 branches and methods references; the Choi 2020 folder withdrawn and its deposit check relocated under the Cardoso folder; decision 21 corrected; branch labels carried into every document that names a gate or a lab; see items 30 to 32 and the newest handoff blocks). Previously 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -659,6 +659,19 @@ labelled cells.
      2026-09-15. Gate labels used by folders stay 1, 2, 3A, 3B; the branch
      letter lives in the table and the JSON.
    - No analysis ran. No claim status changed.
+32. **Branch labels carried across every document (2026-09-15).** After
+   item 31 the branch letters lived only in `Thesis/README.md` and
+   `ROADMAP.json`. They are now in the Niethamer plan's lab table and Stage
+   2 proposals (W1 is 2W, Nb1 is 2N, S1 is 3A, D1 is 3B), in the Cardoso
+   study note and trials index (branch 2C), in the Stage 3 header of
+   `CLAIMS.md` and the Cardoso section of `REFERENCES.md`, and in
+   `AI_CONTEXT.md`. One thing this exposed: the Cardoso folder uses its own
+   trial gates (0, 1, 2a, 2b, 2d), which are the owner's analysis gates for
+   that paper and share the word with the reading-order gates. Both
+   documents and the machine context now say the two are different things,
+   and no trial gate was renamed. The Notion pages (PI Target Map, PI match,
+   Thesis_Reading_Order, the review digest and the study-note index) carry
+   the same labels as of the same day. Documentation only.
 
 ---
 

@@ -125,7 +125,7 @@ Benchmark framework used by the HLCA:
 **Luecken MD, Buttner M, Chaichoompu K, et al.** *Benchmarking atlas-level data integration in single-cell genomics.*
 **Nature Methods** 2022;19(1):41-50. DOI: [10.1038/s41592-021-01336-8](https://doi.org/10.1038/s41592-021-01336-8) · PMID [34949812](https://pubmed.ncbi.nlm.nih.gov/34949812/) · PMC [PMC8748196](https://pmc.ncbi.nlm.nih.gov/articles/PMC8748196/)
 
-### Gate 2, paper 5: early fibrotic niches in lung tumour initiation
+### Gate 2, branch 2C, paper 5: early fibrotic niches in lung tumour initiation
 
 **Cardoso EC, Lee H, England FJ, Cho H, Lu R, Varankar SS, Park MS, Rekhtman N, Koo B-K, Simons BD, Choi J, Lee J-H.**
 *Early fibrotic niches establish tumour-permissive microenvironments.*

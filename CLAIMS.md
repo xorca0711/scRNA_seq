@@ -55,6 +55,11 @@ on; the one with the least is C16, which this series cannot settle.
 
 ## Stage 3. Cardoso 2026, the Gate 2 paper (2026-09-12)
 
+Branch 2C (the Choi axis) of the reading order since 2026-09-15; see
+[`Thesis/README.md`](Thesis/README.md). The trial gates named in this
+section (0, 1, 2a, 2b, 2d) are the owner's analysis gates for this paper,
+not reading-order gates.
+
 A different deposit with a different ceiling. Every mouse library of this
 paper pools three mice and each genotype contributes one library per sort, so
 **no genotype contrast in it carries within-group replication**: no row drawn
