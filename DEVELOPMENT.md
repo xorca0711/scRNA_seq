@@ -31,7 +31,8 @@ violate, is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Reading the Cardoso 2026 deposit in gates, and stopping Gate 1 when it failed (`Thesis/gate2_05_cardoso_2026/`) | Me (instruction and gate design 2026-09-12); AI-assisted execution, rules frozen before each run; my review pending |
 | Relaxing the displaced-material rule for the reference-aligned primary-marker panels (PR #12) | Me (decision 2026-09-13, against the agent's recommendation to hold them back); the agent had preserved them on a branch rather than reverting them, and flagged both the displaced-material rule and the non-validated palette; the palette is still unaddressed |
 | Pre-registering the post hoc Fst and Runx2 lead and running it (trial C9) | Me (instruction 2026-09-13); AI-assisted execution. The agent named the untestable half before running, reported that the effect size its own trial computed is not usable, and disclosed that T1 and T5 were not composable; my review pending on rows C65 to C72 |
-| Returning to roadmap order with Choi 2020, and accepting that the target lab's own deposit has the same replication ceiling as the Cardoso one (study note, extract, trial D0) | Me (instruction 2026-09-13); AI-assisted execution, with the marker sets read from the Europe PMC XML after the agent found the PMC rendering strips gene symbols; my review pending on rows C58 to C64 |
+| Entering roadmap paper 2 (Choi 2020) on 2026-09-13: study note, extract, trial D0 | **Agent-proposed, approved by a one-word "proceed" on an agent-written list, not a specific instruction of mine** (corrected 2026-09-15). Later that day I said to leave the paper until I had read it. On 2026-09-15 I REJECTED the AI-written study note (withdrawn; kept in git history at PR #19), relocated trial D0 and its extract under the Cardoso folder as an extension, and reserved the paper-2 folder for after my own reading. Rows C58 to C64 stand, review pending |
+| Revising the reading order (Gate 2 branches 2C, 2N, 2W for the placement targets; papers 12 to 16 and methods references M1 to M7 added) | Me (instruction 2026-09-15); AI-assisted execution with every identifier verified against PubMed |
 | Promoting the generic deposit readers out of the Cardoso helper module into the shared one | Agent proposal, my approval implied by the instruction to proceed; a gate1 folder importing from a gate2 folder was the wrong dependency direction. Verified by importing all 19 Cardoso trial modules and re-running two trials to identical results; cardoso_utils re-exports so nothing written against it changed |
 | Choosing the three follow-up questions off the agent's ranked list, and accepting three negative answers plus two disclosed rule defects (trials E6, C7, C8) | Me (selection 2026-09-13); AI-assisted execution with readings frozen before the data were opened; the agent reported the margin that refuses its own C7 answer and the zero-inflation that voids its own C8 mixture test; my review pending on rows C49 to C57 |
 | Extending the Hbegf lead into four public datasets once the deposit was exhausted, and accepting a frozen rule's refutation of my own agent's best lead (trials E1 to E4) | Me (instruction 2026-09-13, including the condition that the extensions run only if the first did not refute); AI-assisted execution, readings frozen before the matrices were opened; my review pending on rows C37 to C48 and on the weakening of C29 |
@@ -373,45 +374,48 @@ same sentence as the finding.
 Mine to retain or reject: rows C49 to C57, and whether the post hoc Fst and
 Runx2 lead is worth a pre-registered trial of its own.
 
-**21 · Return to roadmap order, and find the same ceiling in the target lab's
-own paper.** (2026-09-13, under review.) After the Cardoso extensions I
-directed a return to roadmap order, starting with paper 2, Choi 2020. It
-defines the DATP state the Cardoso rows lean on and its first author leads one
-of the target labs, so I expected it to be the firmer ground of the two.
+**21 · Paper 2 was entered on a "proceed", not on a direction, and its note
+is withdrawn.** (2026-09-13; corrected 2026-09-15.) The first version of this
+entry said I directed a return to roadmap order starting with Choi 2020. The
+session transcript says otherwise, and the record has to match it. After the
+E6, C7 and C8 jobs the agent listed what remained and put "returning to
+roadmap order with Choi 2020" at the end of that list as its own
+recommendation. I asked whether anything more was to go, the agent repeated
+the list, and I answered "proceed". The agent read that as approval of every
+item and entered paper 2, study note, extract and trial D0, all before I had
+read the paper. Later the same day I said I would open a session on Choi 2020
+after actually reading it and that it should be left; the agent honoured that
+from then on, and D1 never ran.
 
-It is not, and the agent said so plainly. Gate 0 found one library per
-condition throughout both single-cell accessions, so no contrast in that
-deposit carries within-group replication either. The frozen replicate rule was
-applied to three contrasts and none passed. That is the second key paper in a
-row whose deposit cannot support a tested comparison, and it is worth recording
-as a pattern rather than as a surprise: these are deposits from labs whose
-conclusions rest on genetics and imaging, where the transcriptome is a map
-rather than the evidence, and the deposit reflects that.
+On 2026-09-15 I settled it. The AI-written study note is REJECTED: a note on a
+paper I have not read is not mine to retain, whatever its quality, and the
+folder for paper 2 will be added when I have read the paper and decided what
+analysis it deserves. The note stays in git history (PR #19) and is not on
+main. Trial D0, its artefacts and the marker extract are kept and relocated
+under the Cardoso folder as an extension, because the deposit facts it
+established (one library per condition, six raw whitelists, no counted
+reporter, coverage-only ATAC) bear directly on the DATP state the Cardoso rows
+lean on. The trial keeps its identifier so its run record and rows C58 to C64
+stay true; nothing was re-run.
 
-Three deposit facts change what Gate 1 can do, and the agent raised all three
-before proposing any analysis. Six of eight matrices are raw barcode
-whitelists, so cell calling is ours and the cell count will not match the
-paper's. The tdTomato reporter is not a counted feature, so the lineage split
-cannot be verified from the matrix at all, which is the opposite of the Cardoso
-deposit where the selection marker gave an independent sort check. And the
-ATAC-seq accession is bigwig coverage only, so the epigenetic half of the
-Il1r1-subset claim is not re-derivable without going to SRA.
+What the trial found stands as recorded: the same replication ceiling as the
+Cardoso deposit, in a second key paper in a row, which is worth keeping as a
+pattern rather than a surprise. These are deposits from labs whose conclusions
+rest on genetics and imaging, where the transcriptome is a map rather than the
+evidence, and the deposit reflects that. The reading note also stands: the
+agent found that the PMC web rendering strips italicised gene symbols and
+switched to the Europe PMC XML rather than filling marker sets from memory. And
+the reporting defect disclosed in the first run, a single boolean that read as
+"none are raw" when six of eight were, is unchanged in the record.
 
-One thing I want noted about how the paper was read. The agent found that the
-PMC web rendering strips italicised gene symbols, which would have left every
-marker set in the study note empty, and switched to the Europe PMC XML instead.
-It flagged this rather than filling the gaps from memory, which is the correct
-instinct: a marker set assembled from recollection is exactly the kind of
-plausible number this repository refuses to emit.
+The rule this adds: an agent may run a deposit reality check when I say so, but
+the study note for a roadmap paper is written or directed by me after I have
+read the paper. "Proceed" against an agent-written list is approval of the
+list, and the agent should say which items it is treating as approved before it
+starts the ones that commit a reading on my behalf.
 
-One reporting defect is disclosed rather than quietly fixed. The first Gate 0
-run collapsed the raw-versus-filtered question into a single boolean across
-eight libraries, which read as "none are raw" when six of them are. The table
-was right, no number changed, and the summary now names both groups.
-
-Mine to retain or reject: rows C58 to C64, and whether Gate 1 on this paper is
-worth running given that only the trajectory question is answerable without
-replication.
+Mine to retain or reject: rows C58 to C64 only. Gate 1 on this paper is not on
+the table until my own folder exists.
 
 **22 · A frozen rule has to say what would make its own answer unreadable.**
 (2026-09-13, under review.) I asked for the post hoc Fst and Runx2 lead from

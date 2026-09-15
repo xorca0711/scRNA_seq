@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-15 (roadmap re-ranked against the SAP constraints: Nabhan papers next, Gate 3 paused; see item 30 and the newest handoff block). Previously 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-15 (reading order revised with Gate 2 branches and methods references; the Choi 2020 folder withdrawn and its deposit check relocated under the Cardoso folder; decision 21 corrected; see items 30 and 31 and the newest handoff blocks). Previously 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -59,7 +59,8 @@ below). Nothing is running.
 | Trial S2 merged into main; PROGRESS and DEVELOPMENT renumbered chronologically | **DONE (2026-09-10, PR #8)** |
 | Repository hygiene and reframing: `archive/` for displaced material, README opens with the claims table, injury model named once, checks renamed | **DONE (2026-09-10), owner review pending**; see item 22 |
 | Cardoso 2026 (Gate 2, paper 5): study note, extracts, trials C0 to C12 and E1 to E6 (`Thesis/gate2_05_cardoso_2026/`) | **DONE (2026-09-12 to 2026-09-13), owner review pending**; Gate 1 not recovered; list A exhausted; rows C19 to C57 and C65 to C84; items 23 to 25 and 27 to 29 |
-| Choi 2020 (Gate 1, paper 2): study note, extracts, trial D0 (`Thesis/gate1_02_choi_2020/`) | **DONE (2026-09-13), owner review pending**; D1 not started; rows C58 to C64; item 26 |
+| Choi 2020 (roadmap paper 2): AI-written study note withdrawn 2026-09-15 at the owner's instruction; trial D0 and its extract relocated to `Thesis/gate2_05_cardoso_2026/` as an extension | **RELOCATED (2026-09-15)**; rows C58 to C64 unchanged, review pending; the owner adds the paper-2 folder after reading; items 26 and 31 |
+| Reading order revised: Gate 2 branches 2C, 2N, 2W; papers 12 to 16 and methods references M1 to M7 added (`Thesis/README.md`, `ROADMAP.json`, `REFERENCES.md`) | **DONE (2026-09-15)**; documentation only; item 31 |
 | Generated `NEGATIVE_RESULTS.md`, one validated palette, shared deposit readers | **DONE (2026-09-13)** |
 | Roadmap re-ranked against the SAP constraints: Nabhan papers next, Gate 3 paused (`Thesis/README.md`, `ROADMAP.json`) | **DONE (2026-09-15)**; documentation only; see item 30 |
 
@@ -481,8 +482,8 @@ labelled cells.
      retain/reject review pending on all of it.
 
 26. **Roadmap paper 2 (Choi 2020) entered, study note written, Gate 0 run**
-   (`Thesis/gate1_02_choi_2020/`, 2026-09-13, owner instruction to return to
-   roadmap order). This is the paper that defines the DATP state the Cardoso
+   (2026-09-13; the attribution is corrected and the folder withdrawn on
+   2026-09-15, see item 31 and DEVELOPMENT decision 21). This is the paper that defines the DATP state the Cardoso
    rows lean on, and its first author leads one of the target labs.
    - **The study note and extract are written**, in the roadmap's five-question
      format, with every marker set read from the Europe PMC full-text XML
@@ -630,6 +631,53 @@ labelled cells.
      for Spring 2024, which improves the outreach signal without changing
      the 18-week feasibility argument. The Notion page proposes a third,
      lower-effort email; the roadmap keeps Gate 3A paused either way.
+31. **Reading order revised, the Choi 2020 folder withdrawn, decision 21
+   corrected (2026-09-15, owner instruction).** Three things in one change.
+   - **Decision 21 corrected.** The record had said the owner directed a
+     return to roadmap order on 2026-09-13. The session transcript shows a
+     one-word "proceed" against an agent-written list that carried Choi 2020
+     as the agent's own recommendation, and later that day an explicit
+     instruction to leave the paper until the owner had read it. DEVELOPMENT
+     decision 21 and its responsibility row now say so, and the AI-written
+     study note is recorded as REJECTED.
+   - **The Choi 2020 folder is withdrawn.** `Thesis/gate1_02_choi_2020/` no
+     longer exists on main. The study note and the D-series plan stay in git
+     history (PR #19, commit 0cd45b6). Trial D0, its artefacts and the marker
+     extract moved unchanged to `Thesis/gate2_05_cardoso_2026/` as an
+     extension, with the D0 identifier kept so the run record and rows C58 to
+     C64 stay true; the Cardoso plan, its trials index, `CLAIMS.md`,
+     `README.md`, `REFERENCES.md` and `AI_CONTEXT.md` point there now, and
+     `NEGATIVE_RESULTS.md` was regenerated. The owner adds the paper-2 folder
+     after reading the paper. Roadmap row 2 says "withdrawn".
+   - **The reading order has Gate 2 branches.** 2C is the Choi axis (paper 5
+     done; papers 12 England 2025 and 13 the 2026 IL-1beta review added), 2N
+     is Nabhan (paper 6; paper 14 the 2026 PNAS platform added), and 2W is
+     Wagner (papers 15 Compass and 16 the JCI 2025 lung-fibrosis circuit
+     added), because Wagner is a placement target and had no paper in the
+     order. Seven methods references (M1 to M7) are listed with the backbone
+     step that uses each. Every identifier was verified against PubMed on
+     2026-09-15. Gate labels used by folders stay 1, 2, 3A, 3B; the branch
+     letter lives in the table and the JSON.
+   - No analysis ran. No claim status changed.
+
+---
+
+## Handoff: session of 2026-09-15, reading order and the Choi relocation
+
+Branch `Claude/reading-order-and-choi-relocation`. Documentation, git moves
+and one regenerated page; no script ran on data.
+
+| What | Where | State |
+|---|---|---|
+| D0 trial, artefacts, `choi_utils.py`, `choi_2020_extracts.json` | moved with `git mv` into `Thesis/gate2_05_cardoso_2026/` (trials and folder root) | complete; history preserved |
+| Choi study note and D-series plan | removed from main; recoverable from PR #19 | complete |
+| D0 section, TOC row, trial-table row | `Thesis/gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md`; index row in `trials/README.md` | complete |
+| Decision 21 and its responsibility row | `DEVELOPMENT.md` | complete |
+| Gate 2 branches, papers 12 to 16, methods M1 to M7 | `Thesis/README.md`, `Thesis/ROADMAP.json`, `REFERENCES.md` | complete; validator passes |
+| Notion Thesis_Reading_Order page | owner's workspace | revised the same day, outside git |
+
+**Next.** Paper 3 (Nabhan 2018) remains next, and paper 2 is the owner's to
+re-enter. Nothing in Gate 3 until S1 or D1 has a result.
 
 ---
 

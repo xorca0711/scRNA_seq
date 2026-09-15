@@ -44,7 +44,7 @@ what was refuted and what settled it.
 - **Status in the register:** Retracted-superseded as a reading, kept on display
 - **What settled it:** trial C9: T1 tested a ratio that T5 forbade reading, so the rules were not composable; the implementation took the conservative branch
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_run_record.json`
-- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
 
 ---
 
@@ -96,29 +96,29 @@ what was refuted and what settled it.
 
 - **Status in the register:** Refuted
 - **What settled it:** trial D0: no non-gene features in any library
-- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv`
-- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/d0_data_reality_check/d0_library_inventory.csv`
+- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
 
 ### C75. Cthrc1 was absent from trial C9's top thirty because it fails to discriminate
 
 - **Status in the register:** Refuted
 - **What settled it:** trial C10 T2: Cthrc1 detected in 44.9% of double-positive against 2.0% of double-negative cells in the reference library, a difference of 0.428 against that list's cutoff of 0.510
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_saturation_audit.csv`
-- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
 
 ### C76. Trial C9's marker signature is a new fibroblast programme
 
 - **Status in the register:** Refuted; supersedes the reading of C70
 - **What settled it:** trial C10: the same cells score highest on the published pathological set of the four tested
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_summary.md`
-- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
 
 ### C79. Trial C10's depth rule covered a half that cannot be computed
 
 - **Status in the register:** Refuted as written, and disclosed
 - **What settled it:** trial C10 T5: the bleomycin shallow halves hold one and four double-positive cells; the first run treated not computable as failed and suppressed a reading the reference library supports
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_run_record.json`
-- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
 
 ---
 
@@ -142,22 +142,22 @@ what was refuted and what settled it.
 
 - **Status in the register:** Not establishable with the data that exists
 - **What settled it:** trial D0: the ATAC-seq accession deposits bigwig coverage tracks only, with no peaks and no reads
-- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_summary.md`
-- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/d0_data_reality_check/d0_summary.md`
+- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
 
 ### C71. Areg deletion depletes the co-expressing Fst and Runx2 population
 
 - **Status in the register:** Not establishable with the data that exists
 - **What settled it:** no analysis; one library per genotype and no other Areg-flox fibroblast dataset exists
 - **Artefact:** `none`
-- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
 
 ### C84. Any result in trial C12 is evidence that two cells communicate
 
 - **Status in the register:** Not establishable with the data that exists
 - **What settled it:** no analysis can show this from dissociated data; co-expression carries no proximity, and no permutation P value was computed
 - **Artefact:** `none`
-- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
 
 ---
 
@@ -252,28 +252,28 @@ what was refuted and what settled it.
 - **Status in the register:** Not established
 - **What settled it:** trial C9 T5: those ratios move by 1.10 and 0.45 across a median depth split against a frozen limit of 0.25, on 32 and 37 double-positive cells
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_per_library.csv`
-- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
 
 ### C69. Nine of thirty markers replicate in magnitude, as trial C9's frozen rule reports
 
 - **Status in the register:** Not established as a meaningful figure
 - **What settled it:** trial C9 T4: the median gene's bleomycin difference is 0.535 of its reference difference against a threshold of 0.5, and the bleomycin libraries carry half the genes per cell
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_marker_replication.csv`
-- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
 
 ### C77. The double-positives form a distinct population rather than a graded state
 
 - **Status in the register:** Not established
 - **What settled it:** trial C10 T3: blind clustering of the reference library does not concentrate them in one cluster at the frozen thresholds
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_reference_clusters.csv`
-- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
 
 ### C81. Some pair in CellChatDB outranks the AREG to EGFR axis from epithelium to fibroblast
 
 - **Status in the register:** Not established
 - **What settled it:** trial C12: the ranking that would answer this failed its own pre-registered abundance guard, 11 of the top 15
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan/c12_run_record.json`
-- **Where it came from:** Stage 4. Choi 2020, the Gate 1 paper entered after paper 5 (2026-09-13)
+- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
 
 ---
 
