@@ -127,13 +127,13 @@
         "GSE144598 (ATAC-seq, bigwig coverage only, not reusable)",
         "GSE144553 (SuperSeries)"
       ],
-      "folder": null,
-      "note_status": "withdrawn 2026-09-15: an AI-written note of 2026-09-13 was rejected by the owner (kept in git history, PR #19); the owner writes the note after reading the paper",
-      "trial_status": "deposit check D0 ran 2026-09-13 and was relocated on 2026-09-15 to Thesis/gate2_05_cardoso_2026/trials/d0_data_reality_check/ as a Cardoso extension; no Gate 1 trial until the owner's folder exists",
+      "folder": "Thesis/gate1_02_choi_2020/",
+      "note_status": "written 2026-09-15 at the owner's direction after reading (DEVELOPMENT decision 23); the AI-written note of 2026-09-13 was withdrawn first (decision 21) and stays in git history at PR #19",
+      "trial_status": "trials D0 to D7 run 2026-09-15 plus a corrected annotation pass D2b beside D2 (no threshold moved); Gate 1 not fully recovered from the deposit (four of five states; primed AT2 never assigned as a cluster); Descriptive only, owner review pending",
       "pmcid": "PMC7487779",
-      "config": "Thesis/gate2_05_cardoso_2026/choi_2020_extracts.json",
-      "trial_location": "Thesis/gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md",
-      "entered_and_withdrawn": "entered by the agent on 2026-09-13 on a general 'proceed'; withdrawn 2026-09-15 (DEVELOPMENT decision 21)"
+      "config": "Thesis/gate1_02_choi_2020/choi_2020_extracts.json",
+      "trial_location": "Thesis/gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md",
+      "entered_and_withdrawn": "entered by the agent on 2026-09-13 on a general 'proceed'; withdrawn 2026-09-15 (DEVELOPMENT decision 21); re-entered 2026-09-15 at the owner's direction after reading (decision 23)"
     },
     {
       "order": 3,
@@ -557,6 +557,17 @@
       "pmid": "25533958",
       "backbone_step": 4,
       "used_in": "not used; the owner's G-SURF interest"
+    },
+    {
+      "ref": "M8",
+      "first_author": "van den Brink",
+      "year": 2017,
+      "journal": "Nature Methods",
+      "title": "Single-cell sequencing reveals dissociation-induced gene expression in tissue subpopulations",
+      "doi": "10.1038/nmeth.4437",
+      "pmid": "28960196",
+      "backbone_step": 2,
+      "used_in": "named by Choi 2020 attack A3 (trial D7); the list is not on disk and the attack was not attempted"
     }
   ]
 }

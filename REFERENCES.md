@@ -105,7 +105,7 @@ so the order is visible here too.
 **Cell Stem Cell** 2020;27(3):366-382.e7.
 DOI: [10.1016/j.stem.2020.06.020](https://doi.org/10.1016/j.stem.2020.06.020) · PMID [32750316](https://pubmed.ncbi.nlm.nih.gov/32750316/) · PMC [PMC7487779](https://pmc.ncbi.nlm.nih.gov/articles/PMC7487779/)
 Data: GEO [GSE145031](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE145031) (scRNA-seq, AT2 lineage tracing), [GSE144468](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144468) (scRNA-seq, AT2 organoids), [GSE144598](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144598) (ATAC-seq, bigwig coverage only), [GSE144553](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144553) (SuperSeries)
-Study note: none on main. An AI-written note of 2026-09-13 was withdrawn on 2026-09-15 at the owner's instruction and stays in git history (PR #19); the owner writes the note after reading the paper. The deposit check that ran on 2026-09-13 is trial D0 under [`Thesis/gate2_05_cardoso_2026/`](Thesis/gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md), with the marker extract [`choi_2020_extracts.json`](Thesis/gate2_05_cardoso_2026/choi_2020_extracts.json).
+Study note: [`Thesis/gate1_02_choi_2020/README.md`](Thesis/gate1_02_choi_2020/README.md), written 2026-09-15 at the owner's direction after reading (the AI-written note of 2026-09-13 was withdrawn, DEVELOPMENT decision 21, and stays in git history at PR #19). Trials D0 to D7 with corrected passes D2b and D5b: [`Thesis/gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md`](Thesis/gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md), indexed in [`Thesis/gate1_02_choi_2020/trials/README.md`](Thesis/gate1_02_choi_2020/trials/README.md); extract [`choi_2020_extracts.json`](Thesis/gate1_02_choi_2020/choi_2020_extracts.json).
 
 A note on how this paper was read: the full text was taken from the Europe PMC
 XML rather than the PMC web rendering, because that rendering strips italicised
@@ -158,11 +158,10 @@ DOI: [10.1126/sciadv.aba1983](https://doi.org/10.1126/sciadv.aba1983) · PMID [3
 Habermann AC, Gutierrez AJ, Bui LT, et al. *Single-cell RNA sequencing reveals profibrotic roles of distinct epithelial and mesenchymal lineages in pulmonary fibrosis.* **Science Advances** 2020;6(28):eaba1972.
 DOI: [10.1126/sciadv.aba1972](https://doi.org/10.1126/sciadv.aba1972) · PMID [32832598](https://pubmed.ncbi.nlm.nih.gov/32832598/) · PMC [PMC7439444](https://pmc.ncbi.nlm.nih.gov/articles/PMC7439444/) · GEO [GSE135893](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE135893) (114,396 cells; the KRT5-negative KRT17-positive and transitional AT2 states used in trial E3).
 
-### The remaining roadmap papers (no study note yet)
+### The remaining roadmap papers (no study note yet; paper 2 now has one)
 
 | Order | Gate | Paper | DOI | PMID |
 |--:|---|---|---|---|
-| 2 | 1 | Choi J, et al. Inflammatory signals induce AT2 cell-derived damage-associated transient progenitors that mediate alveolar regeneration. *Cell Stem Cell* 2020 | [10.1016/j.stem.2020.06.020](https://doi.org/10.1016/j.stem.2020.06.020) | 32750316 |
 | 3 | 1 | Nabhan AN, et al. Single-cell Wnt signaling niches maintain stemness of alveolar type 2 cells. *Science* 2018 | [10.1126/science.aam6603](https://doi.org/10.1126/science.aam6603) | 29420258 |
 | 6 | 2 | Nabhan AN, et al. Targeted alveolar regeneration with Frizzled-specific agonists. *Cell* 2023 | [10.1016/j.cell.2023.05.022](https://doi.org/10.1016/j.cell.2023.05.022) | 37321220 |
 | 7 | 3A | Saxton RA, et al. Structure-based decoupling of the pro- and anti-inflammatory functions of interleukin-10. *Science* 2021 | [10.1126/science.abc8433](https://doi.org/10.1126/science.abc8433) | 33737461 |
@@ -191,6 +190,7 @@ Read at the backbone step that uses them, not as a gate. Metadata verified again
 | M5b | Strunz M, et al. Alveolar regeneration through a Krt8+ transitional stem cell state that persists in human lung fibrosis. *Nature Communications* 2020 | [10.1038/s41467-020-17358-3](https://doi.org/10.1038/s41467-020-17358-3) | 32678092 | 4, the Krt8 transitional state |
 | M6 | Tsukui T, et al. Collagen-producing lung cell atlas identifies multiple subsets with distinct localization and relevance to fibrosis. *Nature Communications* 2020 | [10.1038/s41467-020-15647-5](https://doi.org/10.1038/s41467-020-15647-5) | 32317643 | 4, fibroblast states (trials E4, C9, C10) |
 | M7 | Vaughan AE, et al. Lineage-negative progenitors mobilize to regenerate lung epithelium after major injury. *Nature* 2015 | [10.1038/nature14112](https://doi.org/10.1038/nature14112) | 25533958 | 4, the KRT5 dysplastic programme |
+| M8 | van den Brink SC, et al. Single-cell sequencing reveals dissociation-induced gene expression in tissue subpopulations. *Nature Methods* 2017 | [10.1038/nmeth.4437](https://doi.org/10.1038/nmeth.4437) | 28960196 | 2, the dissociation-stress gene list; named by Choi 2020 attack A3, not on disk, not attempted (added 2026-09-15) |
 
 ---
 

@@ -59,7 +59,7 @@ below). Nothing is running.
 | Trial S2 merged into main; PROGRESS and DEVELOPMENT renumbered chronologically | **DONE (2026-09-10, PR #8)** |
 | Repository hygiene and reframing: `archive/` for displaced material, README opens with the claims table, injury model named once, checks renamed | **DONE (2026-09-10), owner review pending**; see item 22 |
 | Cardoso 2026 (Gate 2, paper 5): study note, extracts, trials C0 to C12 and E1 to E6 (`Thesis/gate2_05_cardoso_2026/`) | **DONE (2026-09-12 to 2026-09-13), owner review pending**; Gate 1 not recovered; list A exhausted; rows C19 to C57 and C65 to C84; items 23 to 25 and 27 to 29 |
-| Choi 2020 (roadmap paper 2): AI-written study note withdrawn 2026-09-15 at the owner's instruction; trial D0 and its extract relocated to `Thesis/gate2_05_cardoso_2026/` as an extension | **RELOCATED (2026-09-15)**; rows C58 to C64 unchanged, review pending; the owner adds the paper-2 folder after reading; items 26 and 31 |
+| Choi 2020 (roadmap paper 2): study note, extracts, trials D0 to D7 with corrected passes D2b and D5b (`Thesis/gate1_02_choi_2020/`) | **DONE (2026-09-15), owner review pending**; entered at the owner's direction after reading (the AI-written note of 2026-09-13 was withdrawn first, items 26 and 31); four of five states, time course, ordering, programmes and the organoid shift reproduce as descriptions; primed AT2 never a cluster; rows C58 to C64 and C85 to C104; item 33 |
 | Reading order revised: Gate 2 branches 2C, 2N, 2W; papers 12 to 16 and methods references M1 to M7 added (`Thesis/README.md`, `ROADMAP.json`, `REFERENCES.md`) | **DONE (2026-09-15)**; documentation only; item 31 |
 | Generated `NEGATIVE_RESULTS.md`, one validated palette, shared deposit readers | **DONE (2026-09-13)** |
 | Roadmap re-ranked against the SAP constraints: Nabhan papers next, Gate 3 paused (`Thesis/README.md`, `ROADMAP.json`) | **DONE (2026-09-15, PR #26)**; documentation only; see item 30 |
@@ -673,6 +673,51 @@ labelled cells.
    and no trial gate was renamed. The Notion pages (PI Target Map, PI match,
    Thesis_Reading_Order, the review digest and the study-note index) carry
    the same labels as of the same day. Documentation only.
+
+33. **Paper 2 entered and run (2026-09-15).** After reading Choi 2020 the
+   owner directed the folder: study note, extract, trials D1 to D7 with
+   every rule frozen before its object was opened, and the backbone checked
+   trial by trial against the plan. What reproduces from the deposit, as
+   descriptions: four of five states, the DATP time course (0.3, 18.2, 6.3
+   percent), the hAT2 to DATP to AT1 ordering inside one library, DATP's
+   programmes in vivo, and IL-1beta's shift of the organoid epithelium with
+   cell counts within 8 percent of the paper's. What does not: primed AT2
+   never separates as a cluster, in vivo or in organoids (rows C88, C96).
+   The annotation rule missed AT1 and the organoid stromal cluster because
+   every cluster of a sorted AT2 library detects Sftpc; both outcomes stand
+   and corrected passes D2b and D5b sit beside them, no threshold moved
+   (rows C86, C95; decision 23). Rows C85 to C104; regenerable objects under
+   `raw_data/GSE145031/choi_trials/` and `raw_data/GSE144468/choi_trials/`.
+   Proposals E1 to E6 listed, not run; E6 (primed AT2 as a graded state) is
+   the one the results make pressing and needs the owner's pre-registration.
+
+---
+
+## Handoff: session of 2026-09-15, paper 2 entered and run
+
+This supersedes item 1 of the close-of-session handoff below ("nothing on
+paper 2"): the owner read Choi 2020 later the same day and directed the
+entry. One pull request on top of PR #29: the paper-2 folder with study
+note, extract, trials D1 to D7, corrected passes D2b and D5b, rows C85 to
+C104, decision 23, and the pointers that PR #27 had moved to the Cardoso
+folder moved back. No other analysis changed.
+
+**Owner decisions open:** retain or reject on rows C85 to C104 (item 33), on
+top of the rows listed below; whether to pre-register proposal E6; whether to
+download the van den Brink 2017 list (M8) for attack A3.
+
+**What the next session should do, in order.**
+
+1. Paper 3, Nabhan 2018, as the previous handoff says: the study note is the
+   owner's to write or direct after reading; an agent may run a Gate 0
+   deposit check when asked; the accession is not yet in `ROADMAP.json`.
+2. Nothing further on paper 2 unless the owner pre-registers E6 or asks for
+   A3.
+3. Items 3 to 5 of the previous handoff stand.
+
+The run order for paper 2, if anything is re-run: D1, D2, D2b, D3, D4, D5,
+D5b, D6, D7 in the x86-64 environment (D1 about 15 minutes, the rest under
+5 each), one at a time.
 
 ---
 

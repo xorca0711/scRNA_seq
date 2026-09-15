@@ -1,0 +1,163 @@
+{
+  "trial": "D2b Choi-2020 corrected annotation",
+  "rules_frozen_at": "2026-09-15T10:38:59+00:00",
+  "rules": {
+    "question": "D2's readings under the corrected annotation rule (Sftpc clauses applied only where Sftpc separates clusters); thresholds unchanged",
+    "first_pass": "trials/d2_state_recovery/, outcome kept",
+    "rule": "choi_utils.annotate_clusters_b",
+    "thresholds": {
+      "contaminant_min": 0.5,
+      "sftpc_low": 0.5,
+      "cAT2_min": 0.35,
+      "AT1_min": 0.5,
+      "DATP_min": 0.4,
+      "DATP_negative_ratio": 0.5,
+      "sftpc_high": 0.7,
+      "pAT2_identity_ratio": 0.7,
+      "pAT2_inflammatory_ratio": 1.5,
+      "dispersed_present_fraction": 0.02,
+      "dispersed_markers": 3
+    },
+    "additions": {
+      "R2_day14": "reported beside the pooled R2",
+      "subcluster_DATP_if_no_pAT2": "Leiden 0.5, seed 0, rule re-applied",
+      "cell_level_pAT2_check": "hAT2-labelled cells with 0 of 3 identity genes and >=2 of 5 inflammatory genes"
+    },
+    "readings": "R1 to R7 as D2"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE145031\\choi_trials\\tomato_annotated.h5ad",
+      "bytes": 385563103,
+      "modified": "2026-09-15T10:32:32+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\trials\\d2b_corrected_annotation\\d2b_cluster_annotation_res0.3.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2b_corrected_annotation\\d2b_cluster_annotation_res0.5.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2b_corrected_annotation\\d2b_cluster_annotation_res1.0.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2b_corrected_annotation\\d2b_datp_subclusters.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2b_corrected_annotation\\d2b_composition.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2b_corrected_annotation\\d2b_contaminants.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2b_corrected_annotation\\d2b_readings.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2b_corrected_annotation\\d2b_umap_states.png",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2b_corrected_annotation\\d2b_summary.md"
+  ],
+  "results": {
+    "states_assigned_per_resolution": {
+      "0.3": [
+        "cAT2",
+        "hAT2"
+      ],
+      "0.5": [
+        "cAT2",
+        "hAT2"
+      ],
+      "1.0": [
+        "AT1",
+        "DATP",
+        "cAT2",
+        "hAT2"
+      ]
+    },
+    "primary_resolution": 1.0,
+    "datp_subclustering": {
+      "n": 880,
+      "sub_states": {
+        "0": "DATP",
+        "1": "DATP",
+        "2": "hAT2",
+        "3": "DATP"
+      }
+    },
+    "cell_level_pAT2_like_among_hAT2": {
+      "n": 18,
+      "fraction": 0.0018856065367693275
+    },
+    "readings": {
+      "R1": {
+        "value": [
+          "AT1",
+          "DATP",
+          "cAT2",
+          "hAT2"
+        ],
+        "met": false
+      },
+      "R2": {
+        "value": 0.02825929938605995,
+        "met": false
+      },
+      "R2_day14_reported": {
+        "value": 0.07129199672220704,
+        "met": true
+      },
+      "R3": {
+        "value": 0.9835487661574618,
+        "met": true
+      },
+      "R4": {
+        "value": {
+          "hAT2_d14": 0.7172903578257307,
+          "hAT2_pbs": 0.9835487661574618,
+          "pAT2_d14": 0.0,
+          "DATP_d14": 0.18246380770281345
+        },
+        "met": false
+      },
+      "R5": {
+        "value": {
+          "hAT2": {
+            "d14": 0.7172903578257307,
+            "d28": 0.865506329113924
+          },
+          "cAT2": {
+            "d14": 0.07129199672220704,
+            "d28": 0.014873417721518987
+          },
+          "pAT2": {
+            "d14": 0.0,
+            "d28": 0.0
+          },
+          "DATP": {
+            "d14": 0.18246380770281345,
+            "d28": 0.0629746835443038
+          },
+          "AT1": {
+            "d14": 0.02895383774924884,
+            "d28": 0.05664556962025316
+          }
+        },
+        "met": false
+      },
+      "R7": {
+        "value": 2.078970940446989,
+        "met": "unchanged from D2 (same embedding)"
+      },
+      "R6": {
+        "value": {
+          "DATP": 0.2871212121212117,
+          "AT1": 0.7032640949554881
+        },
+        "met": true
+      }
+    },
+    "annotated_object": "X:\\GitHub\\scRNA_seq\\raw_data\\GSE145031\\choi_trials\\tomato_annotated_d2b.h5ad"
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-15T10:39:41+00:00"
+}

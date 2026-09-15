@@ -65,11 +65,9 @@ test it.
 | [E5](e5_figure_for_the_refutation.py) | C5 and E4 tables | One figure for that refutation |
 | [E6](e6_donor_level_axis_coupling.py) | GSE136831, 22 donors | **No donor-level coupling detectable**, and the only significant correlation was a control pair whose variables both track depth |
 
-## The D0 trial, relocated from the withdrawn paper-2 folder (2026-09-15)
+## The D0 trial: in the paper-2 folder
 
-| Trial | Dataset | What it returned |
-|---|---|---|
-| [D0](d0_data_reality_check.py) | GSE145031, GSE144468 (Choi 2020) | **One library per condition**, the same ceiling as this deposit; six of eight matrices are raw barcode whitelists; the tdTomato reporter is not a counted feature; the ATAC accession is coverage only. Ran 2026-09-13 as roadmap paper 2's Gate 0 and moved here when that folder was withdrawn pending the owner's reading. Keeps its identifier so its run record and claims rows C58 to C64 stay true |
+The Choi 2020 deposit check (trial D0) belongs to roadmap paper 2 and lives at [`../../gate1_02_choi_2020/trials/`](../../gate1_02_choi_2020/trials/README.md) with trials D1 to D7 and the corrected passes D2b and D5b. It sat here for part of 2026-09-15 while that folder was withdrawn.
 
 ## Shared code
 
@@ -77,7 +75,6 @@ test it.
 |---|---|
 | [`cardoso_utils.py`](cardoso_utils.py) | re-export of the repository's shared helpers; the generic readers moved to `gate1_04_sikkema_2023_hlca/trials/trial_utils.py` on 2026-09-13 |
 | [`mtx_stream.py`](mtx_stream.py) | one streaming pass over a MatrixMarket file, for matrices too large to load |
-| [`choi_utils.py`](choi_utils.py) | the Choi 2020 deposit's library map and its raw-whitelist rule, used by D0 only; moved here with it on 2026-09-15 |
 | [`viz_style.py`](viz_style.py) | reads the validated palette from `analysis/config/palette.json` |
 
 ## Conventions every trial in this folder follows

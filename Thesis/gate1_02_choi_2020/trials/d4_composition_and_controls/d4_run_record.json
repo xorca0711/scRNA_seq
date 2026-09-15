@@ -1,0 +1,140 @@
+{
+  "trial": "D4 Choi-2020 composition and its controls",
+  "rules_frozen_at": "2026-09-15T10:42:18+00:00",
+  "rules": {
+    "question": "Do the D2b composition readings survive the calling rule, a depth window, and the lineage label",
+    "C1_calling_sensitivity": {
+      "floor": {
+        "min_counts": 500,
+        "min_genes": 200
+      },
+      "paper": {
+        "min_genes_exclusive": 500,
+        "max_genes_exclusive": 7000,
+        "min_counts_exclusive": 2000
+      },
+      "datp_markers_min": 3,
+      "move_threshold_abs": 0.02
+    },
+    "C2_depth_window_genes": [
+      1000,
+      2000
+    ],
+    "C3_nontomato": {
+      "embedding": "as D2, per library, Leiden 0.5",
+      "alveolar_gate": "Sftpc>=0.5 or AT1_canonical>=0.5 or DATP>=0.4, and no contaminant set >=0.5",
+      "dispersed": {
+        "markers": 3,
+        "fraction": 0.02
+      }
+    },
+    "no_p_values": true
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE145031\\choi_trials\\tomato_annotated_d2b.h5ad",
+      "bytes": 385618603,
+      "modified": "2026-09-15T10:39:41+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_02_choi_2020\\trials\\d2b_corrected_annotation\\d2b_composition.csv",
+      "bytes": 472,
+      "modified": "2026-09-15T10:39:40+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304609_PBS_AT2_Tomato.mtx.gz",
+      "bytes": 54411056,
+      "modified": "2020-02-10T15:11:25+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304609_PBS_AT2_Tomato_gene.tsv.gz",
+      "bytes": 217851,
+      "modified": "2020-02-10T15:11:26+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304609_PBS_AT2_Tomato_barcodes.tsv.gz",
+      "bytes": 2280358,
+      "modified": "2020-02-10T15:11:26+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304611_Day14_AT2_Tomato.mtx.gz",
+      "bytes": 49308225,
+      "modified": "2020-02-10T15:11:57+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304611_Day14_AT2_Tomato_gene.tsv.gz",
+      "bytes": 217853,
+      "modified": "2020-02-10T15:11:59+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304611_Day14_AT2_Tomato_barcodes.tsv.gz",
+      "bytes": 2280360,
+      "modified": "2020-02-10T15:11:59+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304613_Day28_AT2_Tomato.mtx.gz",
+      "bytes": 51261187,
+      "modified": "2020-02-10T15:12:27+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304613_Day28_AT2_Tomato_gene.tsv.gz",
+      "bytes": 217853,
+      "modified": "2020-02-10T15:12:28+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304613_Day28_AT2_Tomato_barcodes.tsv.gz",
+      "bytes": 2280360,
+      "modified": "2020-02-10T15:12:28+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\choi_trials\\PBS_AT2_nonTomato.h5ad",
+      "bytes": 212656732,
+      "modified": "2026-09-15T10:27:06+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\choi_trials\\Day14_AT2_nonTomato.h5ad",
+      "bytes": 153318286,
+      "modified": "2026-09-15T10:27:52+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\choi_trials\\Day28_AT2_nonTomato.h5ad",
+      "bytes": 181434296,
+      "modified": "2026-09-15T10:28:44+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\trials\\d4_composition_and_controls\\d4_calling_sensitivity.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d4_composition_and_controls\\d4_depth_window_composition.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d4_composition_and_controls\\d4_nontomato_composition.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d4_composition_and_controls\\d4_nontomato_cluster_annotation.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d4_composition_and_controls\\d4_summary.md"
+  ],
+  "results": {
+    "readings": {
+      "C1_calling_sensitive": {
+        "PBS_AT2_Tomato": false,
+        "Day14_AT2_Tomato": true,
+        "Day28_AT2_Tomato": false
+      },
+      "C2_R4_in_window": false,
+      "C2_R5_in_window": false,
+      "C3_datp_in_day14_nontomato": "False"
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-15T10:43:33+00:00"
+}

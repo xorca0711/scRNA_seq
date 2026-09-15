@@ -17,10 +17,10 @@ the claim's potential.
 | Bucket | Rows |
 |---|--:|
 | Retracted or superseded, kept on display | 2 |
-| Refuted | 10 |
+| Refuted | 14 |
 | Not establishable with the data that exists | 5 |
-| Not established | 16 |
-| **Total** | **33** |
+| Not established | 22 |
+| **Total** | **43** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -44,7 +44,7 @@ what was refuted and what settled it.
 - **Status in the register:** Retracted-superseded as a reading, kept on display
 - **What settled it:** trial C9: T1 tested a ratio that T5 forbade reading, so the rules were not composable; the implementation took the conservative branch
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_run_record.json`
-- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ---
 
@@ -96,29 +96,57 @@ what was refuted and what settled it.
 
 - **Status in the register:** Refuted
 - **What settled it:** trial D0: no non-gene features in any library
-- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/d0_data_reality_check/d0_library_inventory.csv`
-- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
+- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ### C75. Cthrc1 was absent from trial C9's top thirty because it fails to discriminate
 
 - **Status in the register:** Refuted
 - **What settled it:** trial C10 T2: Cthrc1 detected in 44.9% of double-positive against 2.0% of double-negative cells in the reference library, a difference of 0.428 against that list's cutoff of 0.510
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_saturation_audit.csv`
-- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ### C76. Trial C9's marker signature is a new fibroblast programme
 
 - **Status in the register:** Refuted; supersedes the reading of C70
 - **What settled it:** trial C10: the same cells score highest on the published pathological set of the four tested
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_summary.md`
-- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ### C79. Trial C10's depth rule covered a half that cannot be computed
 
 - **Status in the register:** Refuted as written, and disclosed
 - **What settled it:** trial C10 T5: the bleomycin shallow halves hold one and four double-positive cells; the first run treated not computable as failed and suppressed a reading the reference library supports
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_run_record.json`
-- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C86. A cluster-level rule with Sftpc-low clauses can call AT1 and contaminant clusters in a lineage-sorted AT2 library
+
+- **Status in the register:** Refuted as written, and disclosed
+- **What settled it:** trial D2 first pass: every one of fourteen clusters detects Sftpc in 100 percent of cells, so the clauses never fired; a 337-cell cluster with AT1 canonical detection 0.70 was labelled hAT2 and a ciliated cluster took the primed-AT2 label
+- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d2_state_recovery/d2_cluster_annotation_res1.0.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C92. The day-14 DATP fraction is calling-sensitive: adding the barcodes that pass a plain floor but not the paper's filter moves it from 0.183 to 0.150 against a 0.02 limit
+
+- **Status in the register:** Refuted as a sensitivity finding, and disclosed
+- **What settled it:** trial D4 C1: 844 such barcodes, 7 of them DATP-like; the move comes from the denominator
+- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d4_composition_and_controls/d4_calling_sensitivity.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C95. The first organoid pass recovers the paper's epithelial cell counts
+
+- **Status in the register:** Refuted as written, and disclosed
+- **What settled it:** trial D5: 1,868 and 2,699 against the paper's 1,286 and 2,584, because a 586-cell cluster with mesenchyme detection 0.70 (the size of the stromal cluster the paper removed) and a 365-cell cluster at 0.64 were kept as hAT2, and a 481-cell AT1 cluster (detection 0.79) was labelled hAT2, all by the C86 defect
+- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d5_organoids/d5_cluster_annotation_res0.3.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C102. DATP is a doublet cluster of AT2 and AT1 cells
+
+- **Status in the register:** Refuted
+- **What settled it:** trial D7 A2: mean Scrublet score 0.052 against the paper's cut of 0.6, no cell above 0.7; Sftpc-plus-two-AT1-gene co-detection 0.24 in DATP against 0.74 in AT1 and 0.01 in hAT2
+- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d7_attack_claims/d7_a2_doublet_by_state.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ---
 
@@ -142,22 +170,22 @@ what was refuted and what settled it.
 
 - **Status in the register:** Not establishable with the data that exists
 - **What settled it:** trial D0: the ATAC-seq accession deposits bigwig coverage tracks only, with no peaks and no reads
-- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/d0_data_reality_check/d0_summary.md`
-- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
+- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_summary.md`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ### C71. Areg deletion depletes the co-expressing Fst and Runx2 population
 
 - **Status in the register:** Not establishable with the data that exists
 - **What settled it:** no analysis; one library per genotype and no other Areg-flox fibroblast dataset exists
 - **Artefact:** `none`
-- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ### C84. Any result in trial C12 is evidence that two cells communicate
 
 - **Status in the register:** Not establishable with the data that exists
 - **What settled it:** no analysis can show this from dissociated data; co-expression carries no proximity, and no permutation P value was computed
 - **Artefact:** `none`
-- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ---
 
@@ -252,28 +280,70 @@ what was refuted and what settled it.
 - **Status in the register:** Not established
 - **What settled it:** trial C9 T5: those ratios move by 1.10 and 0.45 across a median depth split against a frozen limit of 0.25, on 32 and 37 double-positive cells
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_per_library.csv`
-- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ### C69. Nine of thirty markers replicate in magnitude, as trial C9's frozen rule reports
 
 - **Status in the register:** Not established as a meaningful figure
 - **What settled it:** trial C9 T4: the median gene's bleomycin difference is 0.535 of its reference difference against a threshold of 0.5, and the bleomycin libraries carry half the genes per cell
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_marker_replication.csv`
-- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ### C77. The double-positives form a distinct population rather than a graded state
 
 - **Status in the register:** Not established
 - **What settled it:** trial C10 T3: blind clustering of the reference library does not concentrate them in one cluster at the frozen thresholds
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_reference_clusters.csv`
-- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ### C81. Some pair in CellChatDB outranks the AREG to EGFR axis from epithelium to fibroblast
 
 - **Status in the register:** Not established
 - **What settled it:** trial C12: the ranking that would answer this failed its own pre-registered abundance guard, 11 of the top 15
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan/c12_run_record.json`
-- **Where it came from:** Stage 4. The Choi 2020 deposit check (run 2026-09-13; relocated 2026-09-15 as a Cardoso extension)
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C88. Primed AT2, the paper's state of lost Etv5, Abca3 and Cebpa with inflammatory genes gained, is a distinct cluster recoverable blind from the deposit
+
+- **Status in the register:** Not established
+- **What settled it:** trial D2b: assigned at none of three resolutions, in none of four DATP sub-clusters, and at the cell level in 18 of 9,546 hAT2-labelled cells; trial D5b: the organoid cluster the paper calls 77 percent primed under IL-1beta keeps its identity genes (detection 0.76) and carries the DATP markers
+- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_datp_subclusters.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C90. Readings R4 and R5 of the paper's time course, as pre-registered
+
+- **Status in the register:** Not established as written
+- **What settled it:** trial D2b: R4 fails because day-14 hAT2 (0.717) does not halve against PBS (0.984) and pAT2 is absent; R5 fails on pAT2 alone, every other direction holding
+- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_readings.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C94. DATP-like cells arise outside the labelled AT2 lineage at day 14
+
+- **Status in the register:** Not established
+- **What settled it:** trial D4 C3: the day-14 Tomato-negative library carries no alveolar cluster under the frozen gate (4,138 cells), which the plan named in advance as unreadable; day 28 carries 708 unlabelled alveolar cells with 9 DATP-like
+- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d4_composition_and_controls/d4_nontomato_composition.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C99. Hif1a is detected most often in DATP cells, and the hypoxia programme's edge in DATP survives removing Ndrg1 at every depth
+
+- **Status in the register:** Not established
+- **What settled it:** trial D6: Hif1a detection is highest in cycling AT2 (0.476 against 0.386); the Ndrg1-free hypoxia edge holds in the full object by 0.004 and not inside the depth window (-0.178 against -0.055)
+- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d6_programmes/d6_scores_invivo_window.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C103. Krt8 and Cldn4 mark a discrete co-expressing population in day-14 alveolar cells
+
+- **Status in the register:** Not established (the test is uninformative at this detection level)
+- **What settled it:** trial D7 A4: 578 double-positive of 3,661 against 551 expected, ratio 1.05, permutation p 0.005 within depth deciles; Krt8 is detected in 90 percent of the cells
+- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d7_attack_claims/d7_a4_codetection.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C104. Primed AT2 is a depth artefact (attack A1), and the DATP programme is a dissociation-stress signature (attack A3)
+
+- **Status in the register:** Not established
+- **What settled it:** A1 not computable (no primed-AT2 state in the object); A3 not attempted (the van den Brink 2017 list, M8, is not on disk and the repository does not take gene lists from memory)
+- **Artefact:** `Thesis/gate1_02_choi_2020/trials/d7_attack_claims/d7_run_record.json`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ---
 
