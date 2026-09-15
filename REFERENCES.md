@@ -105,11 +105,11 @@ so the order is visible here too.
 **Cell Stem Cell** 2020;27(3):366-382.e7.
 DOI: [10.1016/j.stem.2020.06.020](https://doi.org/10.1016/j.stem.2020.06.020) · PMID [32750316](https://pubmed.ncbi.nlm.nih.gov/32750316/) · PMC [PMC7487779](https://pmc.ncbi.nlm.nih.gov/articles/PMC7487779/)
 Data: GEO [GSE145031](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE145031) (scRNA-seq, AT2 lineage tracing), [GSE144468](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144468) (scRNA-seq, AT2 organoids), [GSE144598](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144598) (ATAC-seq, bigwig coverage only), [GSE144553](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144553) (SuperSeries)
-Study note: [`Thesis/gate1_02_choi_2020/README.md`](Thesis/gate1_02_choi_2020/README.md)
+Study note: none on main. An AI-written note of 2026-09-13 was withdrawn on 2026-09-15 at the owner's instruction and stays in git history (PR #19); the owner writes the note after reading the paper. The deposit check that ran on 2026-09-13 is trial D0 under [`Thesis/gate2_05_cardoso_2026/`](Thesis/gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md), with the marker extract [`choi_2020_extracts.json`](Thesis/gate2_05_cardoso_2026/choi_2020_extracts.json).
 
 A note on how this paper was read: the full text was taken from the Europe PMC
 XML rather than the PMC web rendering, because that rendering strips italicised
-gene symbols and would have left every marker set in the study note empty.
+gene symbols and would have left every marker set in the extract empty.
 
 ### Gate 1, paper 4: the Human Lung Cell Atlas
 
@@ -170,6 +170,27 @@ DOI: [10.1126/sciadv.aba1972](https://doi.org/10.1126/sciadv.aba1972) · PMID [3
 | 9 | 3B | DuPage M, et al. The chromatin-modifying enzyme Ezh2 is critical for the maintenance of regulatory T cell identity after activation. *Immunity* 2015 | [10.1016/j.immuni.2015.01.007](https://doi.org/10.1016/j.immuni.2015.01.007) | 25680271 |
 | 10 | 3B | Wang D, et al. Targeting EZH2 reprograms intratumoral regulatory T cells to enhance cancer immunity. *Cell Reports* 2018 | [10.1016/j.celrep.2018.05.050](https://doi.org/10.1016/j.celrep.2018.05.050) | 29898397 |
 | 11 | 3B | Zhang, et al. Intratumoral Treg cell ablation elicits NK cell-mediated control of CD8 T cell-resistant tumors. *Science Immunology* 2026 | [10.1126/sciimmunol.adx4411](https://doi.org/10.1126/sciimmunol.adx4411) | 41961946 |
+| 12 | 2C | England FJ, et al. Sustained NF-kappaB activation allows mutant alveolar stem cells to co-opt a regeneration program for tumor initiation. *Cell Stem Cell* 2025 | [10.1016/j.stem.2025.01.011](https://doi.org/10.1016/j.stem.2025.01.011) | 39978341 |
+| 13 | 2C | Yu S, Lee SH, Choi MS, Choi J. IL-1beta signaling as a molecular arbiter of stem cell plasticity: orchestrating the niches of repair, fibrosis, and cancer (review). *Seminars in Immunology* 2026 | [10.1016/j.smim.2026.102050](https://doi.org/10.1016/j.smim.2026.102050) | 42497497 |
+| 14 | 2N | Nabhan AN, et al. Mapping the dialogue: decoding alveolar stem-niche interactions. *PNAS* 2026 | [10.1073/pnas.2606113123](https://doi.org/10.1073/pnas.2606113123) | 42418498 |
+| 15 | 2W | Wagner A, et al. Metabolic modeling of single Th17 cells reveals regulators of autoimmunity. *Cell* 2021 | [10.1016/j.cell.2021.05.045](https://doi.org/10.1016/j.cell.2021.05.045) | 34216539 |
+| 16 | 2W | Yadav P, et al. Myeloid-mesenchymal crosstalk drives ARG1-dependent profibrotic metabolism via ornithine in lung fibrosis. *Journal of Clinical Investigation* 2025 | [10.1172/JCI188734](https://doi.org/10.1172/JCI188734) | 40875483 |
+
+### Methods references for the portfolio (added 2026-09-15)
+
+Read at the backbone step that uses them, not as a gate. Metadata verified against PubMed on 2026-09-15.
+
+| Ref | Paper | DOI | PMID | Backbone step |
+|---|---|---|---|---|
+| M1 | Squair JW, et al. Confronting false discoveries in single-cell differential expression. *Nature Communications* 2021 | [10.1038/s41467-021-25960-2](https://doi.org/10.1038/s41467-021-25960-2) | 34584091 | 3, sample-aware pseudobulk |
+| M2 | Lotfollahi M, et al. Mapping single-cell data to reference atlases by transfer learning. *Nature Biotechnology* 2022 | [10.1038/s41587-021-01001-7](https://doi.org/10.1038/s41587-021-01001-7) | 34462589 | 2, reference mapping (trial S2) |
+| M3a | Dimitrov D, et al. LIANA+ provides an all-in-one framework for cell-cell communication inference. *Nature Cell Biology* 2024 | [10.1038/s41556-024-01469-w](https://doi.org/10.1038/s41556-024-01469-w) | 39223377 | 5, communication (trial C12) |
+| M3b | Jin S, et al. Inference and analysis of cell-cell communication using CellChat. *Nature Communications* 2021 | [10.1038/s41467-021-21246-9](https://doi.org/10.1038/s41467-021-21246-9) | 33597522 | 5, the tool the Cardoso paper used; R-only, never run here |
+| M4 | Zaiss DMW, et al. Emerging functions of amphiregulin in orchestrating immunity, inflammation, and tissue repair. *Immunity* 2015 | [10.1016/j.immuni.2015.01.020](https://doi.org/10.1016/j.immuni.2015.01.020) | 25692699 | 5, the constraint on epithelium-centric AREG readings (claim C45) |
+| M5a | Kobayashi Y, et al. Persistence of a regeneration-associated, transitional alveolar epithelial cell state in pulmonary fibrosis. *Nature Cell Biology* 2020 | [10.1038/s41556-020-0542-8](https://doi.org/10.1038/s41556-020-0542-8) | 32661339 | 4, the Krt8 transitional state |
+| M5b | Strunz M, et al. Alveolar regeneration through a Krt8+ transitional stem cell state that persists in human lung fibrosis. *Nature Communications* 2020 | [10.1038/s41467-020-17358-3](https://doi.org/10.1038/s41467-020-17358-3) | 32678092 | 4, the Krt8 transitional state |
+| M6 | Tsukui T, et al. Collagen-producing lung cell atlas identifies multiple subsets with distinct localization and relevance to fibrosis. *Nature Communications* 2020 | [10.1038/s41467-020-15647-5](https://doi.org/10.1038/s41467-020-15647-5) | 32317643 | 4, fibroblast states (trials E4, C9, C10) |
+| M7 | Vaughan AE, et al. Lineage-negative progenitors mobilize to regenerate lung epithelium after major injury. *Nature* 2015 | [10.1038/nature14112](https://doi.org/10.1038/nature14112) | 25533958 | 4, the KRT5 dysplastic programme |
 
 ---
 

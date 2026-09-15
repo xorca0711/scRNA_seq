@@ -6,12 +6,15 @@ folder holding (1) a study note in the roadmap's five-question format
 bridge), (2) any parameters or decision criteria extracted from the paper as
 reviewable JSON, and (3) the analysis trial that paper motivates, with its
 pre-registered plan, its logged outcome, and its negative results. Folders
-are added one at a time in the order below, with one exception recorded in the
-table: paper 5 (Cardoso 2026) was entered on the owner's instruction of
-2026-09-12, ahead of papers 2, 3 and 6. The order below is the ordered paper
+are added one at a time in the order below, with two exceptions recorded in
+the table: paper 5 (Cardoso 2026) was entered on the owner's instruction of
+2026-09-12, ahead of papers 2, 3 and 6; and paper 2 (Choi 2020) was entered by
+the agent on 2026-09-13 on a general "proceed", then withdrawn on 2026-09-15
+until the owner has read it, with its deposit check kept under paper 5 as an
+extension (DEVELOPMENT decision 21). The order below is the ordered paper
 roadmap of the owner's Notion page
 [UC Berkeley SAP PI Target Map](https://app.notion.com/p/3d1151616b44814c8697ff3af2f8f831)
-(gates 1, 2, 3A, 3B). The same table is machine-readable in
+(gates 1, 2C, 2N, 2W, 3A, 3B; the Gate 2 branches were added on 2026-09-15). The same table is machine-readable in
 [`ROADMAP.json`](ROADMAP.json).
 
 Paper PDFs and supplementary spreadsheets stay on disk and are gitignored
@@ -28,16 +31,43 @@ remodelling after inflammatory injury?
 | # | Gate | Paper | DOI | PMID | Role in the roadmap | Folder | Study note | Analysis trial |
 |--:|---|---|---|---|---|---|---|---|
 | 1 | 1 | Niethamer et al. 2025, *Cell Stem Cell* | [10.1016/j.stem.2024.12.002](https://doi.org/10.1016/j.stem.2024.12.002) | 39818203 | source paper for GSE262927: animals, time points, annotations, known findings, limits | [`gate1_01_niethamer_2025/`](gate1_01_niethamer_2025/README.md) | done (in `docs/`) | done (`analysis/GSE262927/`); PI-matched follow-ups N1 to N4 run 2026-09-10, Descriptive only, owner review pending: [`ANALYSIS_TRIAL_PLAN.md`](gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md) |
-| 2 | 1 | Choi et al. 2020, *Cell Stem Cell* | [10.1016/j.stem.2020.06.020](https://doi.org/10.1016/j.stem.2020.06.020) | 32750316 | biological spine: IL-1beta/HIF1alpha-driven AT2 to DATP to AT1 transition | [`gate1_02_choi_2020/`](gate1_02_choi_2020/README.md) | done, owner review pending | D0 run 2026-09-13: one gene space, no non-gene features, six of eight matrices are raw barcode whitelists, and **no contrast carries within-group replication**: [`ANALYSIS_TRIAL_PLAN.md`](gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md) |
+| 2 | 1 | Choi et al. 2020, *Cell Stem Cell* | [10.1016/j.stem.2020.06.020](https://doi.org/10.1016/j.stem.2020.06.020) | 32750316 | biological spine: IL-1beta/HIF1alpha-driven AT2 to DATP to AT1 transition | withdrawn 2026-09-15; the owner adds the folder after reading the paper (an AI-written note of 2026-09-13 stays in git history, PR #19) | not started | deposit check D0 ran 2026-09-13 and now sits under [`gate2_05_cardoso_2026/`](gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md) as an extension; no Gate 1 trial until the owner's folder exists |
 | 3 | 1 | Nabhan et al. 2018, *Science* | [10.1126/science.aam6603](https://doi.org/10.1126/science.aam6603) | 29420258 | fibroblast Wnt niches maintain AT2 stemness; niche exit permits AT1 differentiation | **next** (re-ranking 2026-09-15: Nabhan is a placement target and the only one with no module built) | not started | proposal Nb1 in [`gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md`](gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md) (Stage 2) is the trial this paper motivates; not run |
 | 4 | 1 | Sikkema et al. 2023, *Nature Medicine* (HLCA) | [10.1038/s41591-023-02327-2](https://doi.org/10.1038/s41591-023-02327-2) | 37291214 | reference framework: annotation hierarchy, reference mapping, uncertainty handling, donor coverage, shared profibrotic macrophage states | [`gate1_04_sikkema_2023_hlca/`](gate1_04_sikkema_2023_hlca/README.md) | done, owner review pending | S1 to S5 run (Descriptive only); see [`ANALYSIS_TRIAL_PLAN.md`](gate1_04_sikkema_2023_hlca/ANALYSIS_TRIAL_PLAN.md) |
-| 5 | 2 | Cardoso, Lee et al. 2026, *Nature* | [10.1038/s41586-026-10399-6](https://doi.org/10.1038/s41586-026-10399-6) | 42020743 | early fibrotic niches; regenerative-like mutant AT2 states coordinate fibroblast and immune remodelling through AREG-EGFR | [`gate2_05_cardoso_2026/`](gate2_05_cardoso_2026/README.md) | done, owner review pending | C0 to C6 plus the E series run 2026-09-12 and 2026-09-13; Gate 1 returned **not recovered**, and six extension trials left this deposit for public data because it carries no within-group replication. E1 on GSE131907 is the only tested claim (p = 0.0020); E4 on GSE132771 refuted the second-signal reading of claim C29: [`ANALYSIS_TRIAL_PLAN.md`](gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md) |
-| 6 | 2 | Nabhan et al. 2023, *Cell* | [10.1016/j.cell.2023.05.022](https://doi.org/10.1016/j.cell.2023.05.022) | 37321220 | Frizzled-specific Wnt agonists separate regeneration from fibrotic risk; receptor-specific Wnt modules | queued after paper 3 (re-ranking 2026-09-15) | not started | not started |
+| 5 | 2C | Cardoso, Lee et al. 2026, *Nature* | [10.1038/s41586-026-10399-6](https://doi.org/10.1038/s41586-026-10399-6) | 42020743 | early fibrotic niches; regenerative-like mutant AT2 states coordinate fibroblast and immune remodelling through AREG-EGFR | [`gate2_05_cardoso_2026/`](gate2_05_cardoso_2026/README.md) | done, owner review pending | C0 to C6 plus the E series run 2026-09-12 and 2026-09-13; Gate 1 returned **not recovered**, and six extension trials left this deposit for public data because it carries no within-group replication. E1 on GSE131907 is the only tested claim (p = 0.0020); E4 on GSE132771 refuted the second-signal reading of claim C29: [`ANALYSIS_TRIAL_PLAN.md`](gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md) |
+| 12 | 2C | England et al. 2025, *Cell Stem Cell* | [10.1016/j.stem.2025.01.011](https://doi.org/10.1016/j.stem.2025.01.011) | 39978341 | companion of paper 5: NF-kappaB separates tumour initiation from regeneration; its deposit GSE247505 is the only replicated time course in the Cardoso set and is already used by trial C3 | not started | not started | none planned; its data are analysed under paper 5 |
+| 13 | 2C | Yu, Lee, Choi and Choi 2026, *Seminars in Immunology* (review) | [10.1016/j.smim.2026.102050](https://doi.org/10.1016/j.smim.2026.102050) | 42497497 | the local PI's framing of IL-1beta across repair, fibrosis and cancer; read before the analysis contract | not started | not started | none (review) |
+| 6 | 2N | Nabhan et al. 2023, *Cell* | [10.1016/j.cell.2023.05.022](https://doi.org/10.1016/j.cell.2023.05.022) | 37321220 | Frizzled-specific Wnt agonists separate regeneration from fibrotic risk; receptor-specific Wnt modules | queued after paper 3 (re-ranking 2026-09-15) | not started | not started |
+| 14 | 2N | Nabhan et al. 2026, *PNAS* | [10.1073/pnas.2606113123](https://doi.org/10.1073/pnas.2606113123) | 42418498 | the Nabhan lab's current platform: an alveolosphere screen of 201 genes with chimeric RNA-seq of stem-cell effects on the fibroblast niche | not started | not started | not started; the candidate for what an 18-week visitor could contribute |
+| 15 | 2W | Wagner et al. 2021, *Cell* | [10.1016/j.cell.2021.05.045](https://doi.org/10.1016/j.cell.2021.05.045) | 34216539 | Compass: immune-metabolic state inference from single-cell RNA, the method behind proposal W1 | not started | not started | proposal W1 (Stage 2 of paper 1's plan) |
+| 16 | 2W | Yadav et al. 2025, *JCI* | [10.1172/JCI188734](https://doi.org/10.1172/JCI188734) | 40875483 | the lung-fibrosis myeloid-to-mesenchymal ARG1 and ornithine circuit, with Wagner as co-author; the comparison proposal W1 names | not started | not started | proposal W1 (Stage 2 of paper 1's plan) |
 | 7 | 3A | Saxton et al. 2021, *Science* | [10.1126/science.abc8433](https://doi.org/10.1126/science.abc8433) | 33737461 | structure-based decoupling of IL-10 pro- and anti-inflammatory functions | paused (Gate 3A paused 2026-09-15; opens if proposal S1 separates repair phases at the animal level) | not started | not started |
 | 8 | 3A | Saxton et al. 2021, *Immunity* | [10.1016/j.immuni.2021.03.008](https://doi.org/10.1016/j.immuni.2021.03.008) | 33852830 | IL-22 tissue-protective vs pro-inflammatory functions decoupled | paused (Gate 3A paused 2026-09-15; opens if proposal S1 separates repair phases at the animal level) | not started | not started |
 | 9 | 3B | DuPage et al. 2015, *Immunity* | [10.1016/j.immuni.2015.01.007](https://doi.org/10.1016/j.immuni.2015.01.007) | 25680271 | Ezh2 maintains regulatory T cell identity after activation | paused (Gate 3B paused 2026-09-15; opens if proposal D1 finds Tregs separable in an external series) | not started | not started |
 | 10 | 3B | Wang et al. 2018, *Cell Reports* | [10.1016/j.celrep.2018.05.050](https://doi.org/10.1016/j.celrep.2018.05.050) | 29898397 | targeting EZH2 reprograms intratumoral Tregs | paused (Gate 3B paused 2026-09-15; opens if proposal D1 finds Tregs separable in an external series) | not started | not started |
 | 11 | 3B | Zhang et al. 2026, *Science Immunology* | [10.1126/sciimmunol.adx4411](https://doi.org/10.1126/sciimmunol.adx4411) | 41961946 | intratumoral Treg ablation elicits NK-mediated control | paused (Gate 3B paused 2026-09-15; opens if proposal D1 finds Tregs separable in an external series) | not started | not started |
+
+The `#` is a stable identifier assigned when a paper enters the roadmap, and
+folder names carry it; the row order above is the reading order. Papers 12 to
+16 were added on 2026-09-15 (see the re-ranking bullet below).
+
+### Methods references, read at the backbone step that uses them
+
+Not gated papers: each is read when the portfolio step it supports is built.
+Identifiers verified against PubMed on 2026-09-15.
+
+| Ref | Paper | DOI | PMID | Backbone step | Used in this repository |
+|---|---|---|---|---|---|
+| M1 | Squair et al. 2021, *Nature Communications*: confronting false discoveries in single-cell differential expression | [10.1038/s41467-021-25960-2](https://doi.org/10.1038/s41467-021-25960-2) | 34584091 | 3, sample-aware pseudobulk | the animal-as-unit rule throughout; no pseudobulk differential expression yet (proposal W1) |
+| M2 | Lotfollahi et al. 2022, *Nature Biotechnology*: scArches reference mapping | [10.1038/s41587-021-01001-7](https://doi.org/10.1038/s41587-021-01001-7) | 34462589 | 2, reference mapping | trial S2 |
+| M3a | Dimitrov et al. 2024, *Nature Cell Biology*: LIANA+ | [10.1038/s41556-024-01469-w](https://doi.org/10.1038/s41556-024-01469-w) | 39223377 | 5, communication | trial C12 (liana) |
+| M3b | Jin et al. 2021, *Nature Communications*: CellChat | [10.1038/s41467-021-21246-9](https://doi.org/10.1038/s41467-021-21246-9) | 33597522 | 5, communication | the Cardoso paper's tool; R-only, never run here |
+| M4 | Zaiss et al. 2015, *Immunity*: amphiregulin in immunity, inflammation and repair | [10.1016/j.immuni.2015.01.020](https://doi.org/10.1016/j.immuni.2015.01.020) | 25692699 | 5, the constraint on epithelium-centric AREG readings | claim C45 |
+| M5a | Kobayashi et al. 2020, *Nature Cell Biology*: the transitional (PATS) state | [10.1038/s41556-020-0542-8](https://doi.org/10.1038/s41556-020-0542-8) | 32661339 | 4, the Krt8 transitional programme | `docs/DOUBLETS_AND_SCRUBLET.md`; the displaced Krt8 trajectory |
+| M5b | Strunz et al. 2020, *Nature Communications*: the Krt8+ transitional state | [10.1038/s41467-020-17358-3](https://doi.org/10.1038/s41467-020-17358-3) | 32678092 | 4, the Krt8 transitional programme | same |
+| M6 | Tsukui et al. 2020, *Nature Communications*: collagen-producing lung cell atlas | [10.1038/s41467-020-15647-5](https://doi.org/10.1038/s41467-020-15647-5) | 32317643 | 4, fibroblast states | trials E4, C9, C10 |
+| M7 | Vaughan et al. 2015, *Nature*: lineage-negative progenitors after major injury | [10.1038/nature14112](https://doi.org/10.1038/nature14112) | 25533958 | 4, the KRT5 dysplastic programme | not used; the owner's G-SURF interest, with no lab on the target map working on it |
+
 
 Outside the roadmap but already in the repository: Kadur Lakshminarasimha
 Murthy et al. 2022, *Nature* (DOI
@@ -75,6 +105,13 @@ DOIs and PMIDs were verified against PubMed on 2026-09-09.
   analysis contract and the KRT8 pilot of the analysis gate are still
   unwritten and remain the stop rule's precondition. Paper 5 was completed
   out of order before this re-ranking and is not affected.
+- **Gate 2 branches (2026-09-15).** Gate 2 is split into 2C (the Choi
+  axis: paper 5 done, papers 12 and 13 added), 2N (Nabhan: papers 6 and
+  14) and 2W (Wagner: papers 15 and 16, added because Wagner is a placement
+  target and had no paper in the original order). Folder names keep the
+  plain gate label (`gate2_`); the branch letter lives in the table and in
+  `ROADMAP.json`. Papers in 2C and 2N are read while interpreting the pilot
+  figures, as before; 2W is read alongside proposal W1.
 
 ## Folder contract
 
@@ -82,7 +119,7 @@ DOIs and PMIDs were verified against PubMed on 2026-09-09.
 Thesis/
   README.md                       this index
   ROADMAP.json                    the same table, machine-readable
-  gateG_NN_firstauthor_year/
+  gateG_NN_firstauthor_year/       G is 1, 2 (any Gate 2 branch), 3A or 3B
     README.md                     study note: five questions, plus the extracts the roadmap names for that paper
     *.json                        parameters and decision criteria extracted from the paper, reviewable
     PIPELINE_FRAMING.md           (when a paper is a methods reference) what this repository adopts, adapts, declines

@@ -4,7 +4,7 @@
     "notion_page": "https://app.notion.com/p/3d1151616b44814c8697ff3af2f8f831",
     "notion_title": "UC Berkeley SAP PI Target Map",
     "notion_last_checked": "2026-09-15",
-    "ids_verified_against_pubmed_on": "2026-09-09"
+    "ids_verified_against_pubmed_on": "2026-09-09 (papers 1 to 11); 2026-09-15 (papers 12 to 16 and M1 to M7)"
   },
   "working_question": "Which epithelial and immune-state programmes distinguish productive lung repair from persistent dysplastic remodelling after inflammatory injury?",
   "gate_rules": {
@@ -13,6 +13,38 @@
     "gate_3A_condition": "cytokine or inflammation-resolution signal is strong",
     "gate_3B_condition": "regulatory T cells are sufficiently represented"
   },
+  "gates": {
+    "1": "read before opening the count matrix: papers 1 to 4",
+    "2C": "the Choi axis, read while interpreting the pilot figures: papers 5, 12, 13",
+    "2N": "Nabhan, placement target: papers 6, 14",
+    "2W": "Wagner, placement target, branch added 2026-09-15: papers 15, 16",
+    "3A": "Saxton, conversation target, paused 2026-09-15: papers 7, 8",
+    "3B": "DuPage, conversation target, paused 2026-09-15: papers 9, 10, 11"
+  },
+  "reading_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    12,
+    13,
+    6,
+    14,
+    15,
+    16,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "folder_gate_labels": [
+    "1",
+    "2",
+    "3A",
+    "3B"
+  ],
   "reranking_2026_09_15": {
     "source": "the owner's Notion PI match page, child of the PI Target Map",
     "constraints": "Spring 2027 SAP: 2027-01-12 to 2027-05-14 (about 18 weeks); non-matriculated BGA visiting status; 12 to 16 letter-graded units; URAP closed to visiting students",
@@ -28,7 +60,8 @@
       "papers 3 and 6 (Nabhan 2018, 2023) move to the front of the queue; proposal Nb1 is their trial",
       "Gate 3A and 3B are paused, not closed; their opening conditions are tested by proposals S1 and D1",
       "the analysis contract and the KRT8 pilot remain unwritten and stay the stop rule's precondition",
-      "paper 5 (Cardoso 2026) was completed out of order before the re-ranking and is unaffected"
+      "paper 5 (Cardoso 2026) was completed out of order before the re-ranking and is unaffected",
+      "Gate 2 gains a Wagner branch (2W, papers 15 and 16), because Wagner is a placement target and had no paper in the original order; 2C and 2N name the Choi and Nabhan branches"
     ]
   },
   "status_vocabulary": [
@@ -36,6 +69,7 @@
     "next",
     "queued",
     "paused",
+    "withdrawn",
     "in progress",
     "done",
     "done, owner review pending"
@@ -93,13 +127,13 @@
         "GSE144598 (ATAC-seq, bigwig coverage only, not reusable)",
         "GSE144553 (SuperSeries)"
       ],
-      "folder": "gate1_02_choi_2020",
-      "note_status": "done, owner review pending",
-      "trial_status": "D0 run 2026-09-13: one gene space over 8 libraries, no non-gene features, six of eight matrices are raw barcode whitelists, and no contrast carries within-group replication. D1 (state recovery and the AT2 to DATP to AT1 ordering) not started",
+      "folder": null,
+      "note_status": "withdrawn 2026-09-15: an AI-written note of 2026-09-13 was rejected by the owner (kept in git history, PR #19); the owner writes the note after reading the paper",
+      "trial_status": "deposit check D0 ran 2026-09-13 and was relocated on 2026-09-15 to Thesis/gate2_05_cardoso_2026/trials/d0_data_reality_check/ as a Cardoso extension; no Gate 1 trial until the owner's folder exists",
       "pmcid": "PMC7487779",
-      "note_location": "Thesis/gate1_02_choi_2020/README.md",
-      "config": "Thesis/gate1_02_choi_2020/choi_2020_extracts.json",
-      "trial_location": "Thesis/gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md"
+      "config": "Thesis/gate2_05_cardoso_2026/choi_2020_extracts.json",
+      "trial_location": "Thesis/gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md",
+      "entered_and_withdrawn": "entered by the agent on 2026-09-13 on a general 'proceed'; withdrawn 2026-09-15 (DEVELOPMENT decision 21)"
     },
     {
       "order": 3,
@@ -153,7 +187,7 @@
     },
     {
       "order": 5,
-      "gate": "2",
+      "gate": "2C",
       "key": "cardoso_lee_2026",
       "first_author": "Cardoso",
       "year": 2026,
@@ -187,7 +221,7 @@
     },
     {
       "order": 6,
-      "gate": "2",
+      "gate": "2N",
       "key": "nabhan_2023",
       "first_author": "Nabhan",
       "year": 2023,
@@ -290,6 +324,122 @@
       "folder": null,
       "note_status": "paused (Gate 3B paused 2026-09-15; opens if proposal D1 finds Tregs separable in an external series)",
       "trial_status": "not started"
+    },
+    {
+      "order": 12,
+      "gate": "2C",
+      "key": "england_2025",
+      "first_author": "England",
+      "year": 2025,
+      "journal": "Cell Stem Cell",
+      "title": "Sustained NF-kappaB activation allows mutant alveolar stem cells to co-opt a regeneration program for tumor initiation",
+      "doi": "10.1016/j.stem.2025.01.011",
+      "pmid": "39978341",
+      "pmcid": "PMC13432921",
+      "role": "companion of paper 5: NF-kappaB separates tumour initiation from regeneration; GSE247505 is the only replicated time course in the Cardoso set, already used by trial C3",
+      "extract": [
+        "the two AT2 subpopulations",
+        "Il1r1 as the shared activator with Choi 2020",
+        "the 4-day, 2-week, 12-week design"
+      ],
+      "datasets": [
+        "GSE247505"
+      ],
+      "folder": null,
+      "note_status": "not started",
+      "trial_status": "none planned; its data are analysed under paper 5",
+      "added": "2026-09-15"
+    },
+    {
+      "order": 13,
+      "gate": "2C",
+      "key": "yu_2026_il1b_review",
+      "first_author": "Yu",
+      "year": 2026,
+      "journal": "Seminars in Immunology",
+      "title": "IL-1beta signaling as a molecular arbiter of stem cell plasticity: orchestrating the niches of repair, fibrosis, and cancer",
+      "doi": "10.1016/j.smim.2026.102050",
+      "pmid": "42497497",
+      "role": "the local PI's framing of IL-1beta across repair, fibrosis and cancer; read before writing the analysis contract",
+      "extract": [
+        "thresholds, contexts and timing of IL-1beta activity",
+        "which transitional states it stabilises pathologically"
+      ],
+      "datasets": [],
+      "folder": null,
+      "note_status": "not started",
+      "trial_status": "none (review)",
+      "added": "2026-09-15"
+    },
+    {
+      "order": 14,
+      "gate": "2N",
+      "key": "nabhan_2026",
+      "first_author": "Nabhan",
+      "year": 2026,
+      "journal": "PNAS",
+      "title": "Mapping the dialogue: decoding alveolar stem-niche interactions",
+      "doi": "10.1073/pnas.2606113123",
+      "pmid": "42418498",
+      "pmcid": "PMC13367804",
+      "role": "the Nabhan lab's current platform: an alveolosphere screen of 201 genes with chimeric RNA-seq of stem-cell effects on the fibroblast niche",
+      "extract": [
+        "the screening design",
+        "how niche effects are read from chimeric RNA-seq",
+        "the Nkx2.1 result",
+        "what an 18-week visitor could contribute"
+      ],
+      "datasets": [],
+      "folder": null,
+      "note_status": "not started",
+      "trial_status": "not started",
+      "added": "2026-09-15"
+    },
+    {
+      "order": 15,
+      "gate": "2W",
+      "key": "wagner_2021_compass",
+      "first_author": "Wagner",
+      "year": 2021,
+      "journal": "Cell",
+      "title": "Metabolic modeling of single Th17 cells reveals regulators of autoimmunity",
+      "doi": "10.1016/j.cell.2021.05.045",
+      "pmid": "34216539",
+      "pmcid": "PMC8621950",
+      "role": "Compass: immune-metabolic state inference from single-cell RNA; the method behind proposal W1",
+      "extract": [
+        "how metabolic states are scored from single-cell RNA",
+        "what validation the paper required",
+        "the Th17 to Treg metabolic axis"
+      ],
+      "datasets": [],
+      "folder": null,
+      "note_status": "not started",
+      "trial_status": "proposal W1 (Stage 2 of paper 1's plan)",
+      "added": "2026-09-15"
+    },
+    {
+      "order": 16,
+      "gate": "2W",
+      "key": "yadav_2025",
+      "first_author": "Yadav",
+      "year": 2025,
+      "journal": "Journal of Clinical Investigation",
+      "title": "Myeloid-mesenchymal crosstalk drives ARG1-dependent profibrotic metabolism via ornithine in lung fibrosis",
+      "doi": "10.1172/JCI188734",
+      "pmid": "40875483",
+      "pmcid": "PMC12578403",
+      "role": "lung-fibrosis myeloid-to-mesenchymal ARG1 and ornithine circuit with Wagner as co-author; the comparison proposal W1 names",
+      "extract": [
+        "the P2RX4, IL-6, ARG1 chain",
+        "which cells carry ARG1 in mouse versus human",
+        "the precision-cut slice validation"
+      ],
+      "datasets": [],
+      "folder": null,
+      "note_status": "not started",
+      "trial_status": "proposal W1 (Stage 2 of paper 1's plan)",
+      "added": "2026-09-15"
     }
   ],
   "outside_roadmap_already_in_repository": [
@@ -306,6 +456,107 @@
       ],
       "trial_status": "done",
       "trial_location": "analysis/GSE178360"
+    }
+  ],
+  "methods_references": [
+    {
+      "ref": "M1",
+      "first_author": "Squair",
+      "year": 2021,
+      "journal": "Nature Communications",
+      "title": "Confronting false discoveries in single-cell differential expression",
+      "doi": "10.1038/s41467-021-25960-2",
+      "pmid": "34584091",
+      "backbone_step": 3,
+      "used_in": "the animal-as-unit rule throughout; no pseudobulk differential expression yet (proposal W1)"
+    },
+    {
+      "ref": "M2",
+      "first_author": "Lotfollahi",
+      "year": 2022,
+      "journal": "Nature Biotechnology",
+      "title": "Mapping single-cell data to reference atlases by transfer learning",
+      "doi": "10.1038/s41587-021-01001-7",
+      "pmid": "34462589",
+      "backbone_step": 2,
+      "used_in": "trial S2"
+    },
+    {
+      "ref": "M3a",
+      "first_author": "Dimitrov",
+      "year": 2024,
+      "journal": "Nature Cell Biology",
+      "title": "LIANA+ provides an all-in-one framework for cell-cell communication inference",
+      "doi": "10.1038/s41556-024-01469-w",
+      "pmid": "39223377",
+      "backbone_step": 5,
+      "used_in": "trial C12"
+    },
+    {
+      "ref": "M3b",
+      "first_author": "Jin",
+      "year": 2021,
+      "journal": "Nature Communications",
+      "title": "Inference and analysis of cell-cell communication using CellChat",
+      "doi": "10.1038/s41467-021-21246-9",
+      "pmid": "33597522",
+      "backbone_step": 5,
+      "used_in": "the Cardoso paper's tool; R-only, never run here"
+    },
+    {
+      "ref": "M4",
+      "first_author": "Zaiss",
+      "year": 2015,
+      "journal": "Immunity",
+      "title": "Emerging functions of amphiregulin in orchestrating immunity, inflammation, and tissue repair",
+      "doi": "10.1016/j.immuni.2015.01.020",
+      "pmid": "25692699",
+      "backbone_step": 5,
+      "used_in": "claim C45"
+    },
+    {
+      "ref": "M5a",
+      "first_author": "Kobayashi",
+      "year": 2020,
+      "journal": "Nature Cell Biology",
+      "title": "Persistence of a regeneration-associated, transitional alveolar epithelial cell state in pulmonary fibrosis",
+      "doi": "10.1038/s41556-020-0542-8",
+      "pmid": "32661339",
+      "backbone_step": 4,
+      "used_in": "docs/DOUBLETS_AND_SCRUBLET.md; the displaced Krt8 trajectory"
+    },
+    {
+      "ref": "M5b",
+      "first_author": "Strunz",
+      "year": 2020,
+      "journal": "Nature Communications",
+      "title": "Alveolar regeneration through a Krt8+ transitional stem cell state that persists in human lung fibrosis",
+      "doi": "10.1038/s41467-020-17358-3",
+      "pmid": "32678092",
+      "backbone_step": 4,
+      "used_in": "same"
+    },
+    {
+      "ref": "M6",
+      "first_author": "Tsukui",
+      "year": 2020,
+      "journal": "Nature Communications",
+      "title": "Collagen-producing lung cell atlas identifies multiple subsets with distinct localization and relevance to fibrosis",
+      "doi": "10.1038/s41467-020-15647-5",
+      "pmid": "32317643",
+      "backbone_step": 4,
+      "used_in": "trials E4, C9, C10"
+    },
+    {
+      "ref": "M7",
+      "first_author": "Vaughan",
+      "year": 2015,
+      "journal": "Nature",
+      "title": "Lineage-negative progenitors mobilize to regenerate lung epithelium after major injury",
+      "doi": "10.1038/nature14112",
+      "pmid": "25533958",
+      "backbone_step": 4,
+      "used_in": "not used; the owner's G-SURF interest"
     }
   ]
 }
