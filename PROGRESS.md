@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-15 (reading order revised with Gate 2 branches and methods references; the Choi 2020 folder withdrawn and its deposit check relocated under the Cardoso folder; decision 21 corrected; branch labels carried into every document that names a gate or a lab; see items 30 to 32 and the newest handoff blocks). Previously 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-15, session closed (three documentation pull requests merged: roadmap re-ranked, reading order given Gate 2 branches, Choi 2020 folder withdrawn with its deposit check kept as Cardoso trial D0, decision 21 corrected, branch labels carried everywhere; see items 30 to 32 and the closing handoff block). Previously 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -62,7 +62,8 @@ below). Nothing is running.
 | Choi 2020 (roadmap paper 2): AI-written study note withdrawn 2026-09-15 at the owner's instruction; trial D0 and its extract relocated to `Thesis/gate2_05_cardoso_2026/` as an extension | **RELOCATED (2026-09-15)**; rows C58 to C64 unchanged, review pending; the owner adds the paper-2 folder after reading; items 26 and 31 |
 | Reading order revised: Gate 2 branches 2C, 2N, 2W; papers 12 to 16 and methods references M1 to M7 added (`Thesis/README.md`, `ROADMAP.json`, `REFERENCES.md`) | **DONE (2026-09-15)**; documentation only; item 31 |
 | Generated `NEGATIVE_RESULTS.md`, one validated palette, shared deposit readers | **DONE (2026-09-13)** |
-| Roadmap re-ranked against the SAP constraints: Nabhan papers next, Gate 3 paused (`Thesis/README.md`, `ROADMAP.json`) | **DONE (2026-09-15)**; documentation only; see item 30 |
+| Roadmap re-ranked against the SAP constraints: Nabhan papers next, Gate 3 paused (`Thesis/README.md`, `ROADMAP.json`) | **DONE (2026-09-15, PR #26)**; documentation only; see item 30 |
+| Branch labels (2C, 2N, 2W, 3A, 3B) carried into every document that names a gate or a lab; the two gate namespaces stated | **DONE (2026-09-15, PR #28)**; documentation only; item 32 |
 
 Repository state: the scientific analysis and portfolio curation are complete;
 no analysis process is running. Branch-specific state belongs in Git/GitHub,
@@ -672,6 +673,46 @@ labelled cells.
    and no trial gate was renamed. The Notion pages (PI Target Map, PI match,
    Thesis_Reading_Order, the review digest and the study-note index) carry
    the same labels as of the same day. Documentation only.
+
+---
+
+## Handoff: close of session 2026-09-15
+
+Main is at PR #28. Three pull requests landed today, all documentation, all
+merged with CI green and their branches deleted. No analysis ran, no artefact
+content changed, no claim status changed. The working tree is clean.
+
+| Pull request | What it did | Item |
+|---|---|---|
+| #26 | roadmap re-ranked against the SAP constraints: Nabhan papers next, Gate 3 paused; `AI_CONTEXT.md` and the status table above brought in line | 30 |
+| #27 | decision 21 corrected from the session transcript; the Choi 2020 folder withdrawn and its deposit check relocated as Cardoso trial D0; the reading order given Gate 2 branches 2C, 2N, 2W, papers 12 to 16 and methods references M1 to M7 | 31 |
+| #28 | branch labels carried into every document that names a gate or a lab; the reading-order gates and the Cardoso trial gates stated to be different namespaces | 32 |
+
+Outside git, on the same day, the owner's Notion pages (PI Target Map, PI
+match, Thesis_Reading_Order, the past-review digest and the study-note index)
+carry the same labels, and the PI match page holds the precedents read from
+the 28 past SAP reviews.
+
+**Owner decisions open**, unchanged in substance: retain or reject on rows C6,
+C9 to C18, C19 to C57, C58 to C64 and C65 to C84 (items 12 to 29); whether
+Saxton stays a conversation target (item 30).
+
+**What the next session should do, in order.**
+
+1. Nothing on paper 2. The owner reads Choi 2020 and re-enters its folder;
+   an agent does not write that note (decision 21).
+2. Paper 3, Nabhan 2018. The study note is the owner's to write or direct. An
+   agent may run a Gate 0 deposit check when asked; the accession is not yet
+   recorded in `ROADMAP.json`, so finding it is the first step.
+3. Proposal Nb1 needs a W1-style per-animal pseudobulk for epithelium and
+   mesenchyme before any ligand-receptor step (backbone step 5 after step 3).
+4. The Wagner packet needs no new analysis: the one-page summary and 3 to 5
+   figures from tracked artefacts.
+5. Nothing in Gate 3 until S1 or D1 has a result.
+
+Read the `AI_CONTEXT.md` pitfalls before starting, in particular the two added
+today: the owner reads a roadmap paper before any note is written, and the two
+gate namespaces are never conflated.
 
 ---
 
