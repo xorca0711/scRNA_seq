@@ -1,0 +1,339 @@
+{
+  "trial": "D1 Choi-2020 cell calling, quality and doublets",
+  "rules_frozen_at": "2026-09-15T10:24:34+00:00",
+  "rules": {
+    "question": "How many cells does each library carry under the paper's own filter, what is their quality, and which are doublets",
+    "calling": {
+      "min_genes_exclusive": 500,
+      "max_genes_exclusive": 7000,
+      "min_counts_exclusive": 2000
+    },
+    "calling_note": "the paper's post-Cell-Ranger filter applied to every raw barcode; Cell Ranger 2.0.2's caller is not reproduced",
+    "sensitivity_floor": {
+      "min_counts": 500,
+      "min_genes": 200
+    },
+    "qc": {
+      "nmads_counts_genes": 5,
+      "nmads_mt": 3,
+      "mt_cap_percent": 20,
+      "note": "per library; a bound that removes nothing is reported as not binding"
+    },
+    "doublets": {
+      "method": "scanpy scrublet per capture, seed 0",
+      "expected_rate": "0.008 per 1,000 called cells (10x table)",
+      "threshold": "automatic; fallback to the top expected-rate fraction if undefined, logged",
+      "paper_settings_recorded_not_used": {
+        "sim_doublet_ratio": 2,
+        "n_neighbors": 30,
+        "expected_doublet_rate": 0.1,
+        "score_cut": 0.7,
+        "cluster_mean_cut": 0.6
+      }
+    },
+    "unit": "the library; each in vivo library pools two mice (STAR Methods)",
+    "paper_reported_counts": {
+      "tomato_positive_captured_before_contaminant_removal": 12514,
+      "tomato_positive_in_figure_1B": 12086,
+      "contaminants_removed_by_paper": {
+        "ciliated": 214,
+        "mesenchyme": 16,
+        "immune": 25
+      },
+      "non_lineage_labelled_captured": 14017,
+      "non_lineage_labelled_doublet_cluster_removed": 1125,
+      "organoid_epithelial_control": 1286,
+      "organoid_epithelial_il1b": 2584
+    }
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304609_PBS_AT2_Tomato.mtx.gz",
+      "bytes": 54411056,
+      "modified": "2020-02-10T15:11:25+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304609_PBS_AT2_Tomato_gene.tsv.gz",
+      "bytes": 217851,
+      "modified": "2020-02-10T15:11:26+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304609_PBS_AT2_Tomato_barcodes.tsv.gz",
+      "bytes": 2280358,
+      "modified": "2020-02-10T15:11:26+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304610_PBS_AT2_nonTomato.mtx.gz",
+      "bytes": 65887029,
+      "modified": "2020-02-10T15:11:43+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304610_PBS_AT2_nonTomato_gene.tsv.gz",
+      "bytes": 217854,
+      "modified": "2020-02-10T15:11:45+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304610_PBS_AT2_nonTomato_barcodes.tsv.gz",
+      "bytes": 2280361,
+      "modified": "2020-02-10T15:11:44+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304611_Day14_AT2_Tomato.mtx.gz",
+      "bytes": 49308225,
+      "modified": "2020-02-10T15:11:57+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304611_Day14_AT2_Tomato_gene.tsv.gz",
+      "bytes": 217853,
+      "modified": "2020-02-10T15:11:59+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304611_Day14_AT2_Tomato_barcodes.tsv.gz",
+      "bytes": 2280360,
+      "modified": "2020-02-10T15:11:59+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304612_Day14_AT2_nonTomato.mtx.gz",
+      "bytes": 51013566,
+      "modified": "2020-02-10T15:12:11+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304612_Day14_AT2_nonTomato_gene.tsv.gz",
+      "bytes": 217856,
+      "modified": "2020-02-10T15:12:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304612_Day14_AT2_nonTomato_barcodes.tsv.gz",
+      "bytes": 2280363,
+      "modified": "2020-02-10T15:12:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304613_Day28_AT2_Tomato.mtx.gz",
+      "bytes": 51261187,
+      "modified": "2020-02-10T15:12:27+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304613_Day28_AT2_Tomato_gene.tsv.gz",
+      "bytes": 217853,
+      "modified": "2020-02-10T15:12:28+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304613_Day28_AT2_Tomato_barcodes.tsv.gz",
+      "bytes": 2280360,
+      "modified": "2020-02-10T15:12:28+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304614_Day28_AT2_nonTomato.mtx.gz",
+      "bytes": 62314764,
+      "modified": "2020-02-10T15:12:44+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304614_Day28_AT2_nonTomato_gene.tsv.gz",
+      "bytes": 217856,
+      "modified": "2020-02-10T15:12:45+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\GSE145031_RAW\\GSM4304614_Day28_AT2_nonTomato_barcodes.tsv.gz",
+      "bytes": 2280363,
+      "modified": "2020-02-10T15:12:45+00:00"
+    },
+    {
+      "path": "raw_data\\GSE144468\\GSE144468_RAW\\GSM4288824_Control_Organoids.mtx.gz",
+      "bytes": 23390561,
+      "modified": "2020-01-29T16:05:07+00:00"
+    },
+    {
+      "path": "raw_data\\GSE144468\\GSE144468_RAW\\GSM4288824_Control_Organoids_gene.tsv.gz",
+      "bytes": 217854,
+      "modified": "2020-01-29T16:05:07+00:00"
+    },
+    {
+      "path": "raw_data\\GSE144468\\GSE144468_RAW\\GSM4288824_Control_Organoids_barcodes.tsv.gz",
+      "bytes": 9536,
+      "modified": "2020-01-29T16:05:07+00:00"
+    },
+    {
+      "path": "raw_data\\GSE144468\\GSE144468_RAW\\GSM4288825_Il1b_Organoids.mtx.gz",
+      "bytes": 30446545,
+      "modified": "2020-01-29T16:05:15+00:00"
+    },
+    {
+      "path": "raw_data\\GSE144468\\GSE144468_RAW\\GSM4288825_Il1b_Organoids_gene.tsv.gz",
+      "bytes": 217851,
+      "modified": "2020-01-29T16:05:15+00:00"
+    },
+    {
+      "path": "raw_data\\GSE144468\\GSE144468_RAW\\GSM4288825_Il1b_Organoids_barcodes.tsv.gz",
+      "bytes": 13381,
+      "modified": "2020-01-29T16:05:15+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\trials\\d1_cells_and_qc\\d1_cell_calling.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d1_cells_and_qc\\d1_summary.md"
+  ],
+  "results": {
+    "bounds_PBS_AT2_Tomato": {
+      "total_counts": {
+        "low": 185.8826984814169,
+        "high": 116023.60889206444,
+        "removed_low": 0,
+        "removed_high": 0
+      },
+      "n_genes": {
+        "low": 200.359107721042,
+        "high": 11815.232336985877,
+        "removed_low": 0,
+        "removed_high": 0
+      },
+      "pct_mt": {
+        "high": 17.90679854715175,
+        "removed_high": 98
+      }
+    },
+    "bounds_PBS_AT2_nonTomato": {
+      "total_counts": {
+        "low": 610.0067545943012,
+        "high": 26698.411876112405,
+        "removed_low": 0,
+        "removed_high": 7
+      },
+      "n_genes": {
+        "low": 521.6774539180517,
+        "high": 7274.041177873679,
+        "removed_low": 0,
+        "removed_high": 0
+      },
+      "pct_mt": {
+        "high": 7.612320199302971,
+        "removed_high": 403
+      }
+    },
+    "bounds_Day14_AT2_Tomato": {
+      "total_counts": {
+        "low": 351.85283760149906,
+        "high": 152539.17047409277,
+        "removed_low": 0,
+        "removed_high": 0
+      },
+      "n_genes": {
+        "low": 265.4461702301094,
+        "high": 16803.35487638333,
+        "removed_low": 0,
+        "removed_high": 0
+      },
+      "pct_mt": {
+        "high": 8.45674519923994,
+        "removed_high": 436
+      }
+    },
+    "bounds_Day14_AT2_nonTomato": {
+      "total_counts": {
+        "low": 146.06116142633962,
+        "high": 158797.21547375096,
+        "removed_low": 0,
+        "removed_high": 0
+      },
+      "n_genes": {
+        "low": 149.23567962131486,
+        "high": 30410.590718772117,
+        "removed_low": 0,
+        "removed_high": 0
+      },
+      "pct_mt": {
+        "high": 8.083685859654532,
+        "removed_high": 446
+      }
+    },
+    "bounds_Day28_AT2_Tomato": {
+      "total_counts": {
+        "low": 467.7200063506079,
+        "high": 100340.70370961168,
+        "removed_low": 0,
+        "removed_high": 0
+      },
+      "n_genes": {
+        "low": 398.46265490354733,
+        "high": 9783.466587855979,
+        "removed_low": 0,
+        "removed_high": 0
+      },
+      "pct_mt": {
+        "high": 7.936109110100849,
+        "removed_high": 646
+      }
+    },
+    "bounds_Day28_AT2_nonTomato": {
+      "total_counts": {
+        "low": 255.09711656132856,
+        "high": 82390.56411957137,
+        "removed_low": 0,
+        "removed_high": 0
+      },
+      "n_genes": {
+        "low": 258.11673417530005,
+        "high": 16447.80255829609,
+        "removed_low": 0,
+        "removed_high": 0
+      },
+      "pct_mt": {
+        "high": 7.259169645425561,
+        "removed_high": 439
+      }
+    },
+    "bounds_Control_Organoids": {
+      "total_counts": {
+        "low": 1084.671665768167,
+        "high": 195049.41042972112,
+        "removed_low": 0,
+        "removed_high": 0
+      },
+      "n_genes": {
+        "low": 862.6409060307711,
+        "high": 14905.362019333637,
+        "removed_low": 3,
+        "removed_high": 0
+      },
+      "pct_mt": {
+        "high": 8.86197045214166,
+        "removed_high": 204
+      }
+    },
+    "bounds_Il1b_Organoids": {
+      "total_counts": {
+        "low": 1161.986351921253,
+        "high": 113378.91093547114,
+        "removed_low": 0,
+        "removed_high": 0
+      },
+      "n_genes": {
+        "low": 895.6709643241564,
+        "high": 11354.872337937031,
+        "removed_low": 1,
+        "removed_high": 0
+      },
+      "pct_mt": {
+        "high": 9.838727766611953,
+        "removed_high": 357
+      }
+    },
+    "tomato_positive_called": 12865,
+    "tomato_positive_final": 11683
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-15T10:29:01+00:00"
+}

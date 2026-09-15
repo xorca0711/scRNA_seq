@@ -32,6 +32,7 @@ violate, is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Relaxing the displaced-material rule for the reference-aligned primary-marker panels (PR #12) | Me (decision 2026-09-13, against the agent's recommendation to hold them back); the agent had preserved them on a branch rather than reverting them, and flagged both the displaced-material rule and the non-validated palette; the palette is still unaddressed |
 | Pre-registering the post hoc Fst and Runx2 lead and running it (trial C9) | Me (instruction 2026-09-13); AI-assisted execution. The agent named the untestable half before running, reported that the effect size its own trial computed is not usable, and disclosed that T1 and T5 were not composable; my review pending on rows C65 to C72 |
 | Entering roadmap paper 2 (Choi 2020) on 2026-09-13: study note, extract, trial D0 | **Agent-proposed, approved by a one-word "proceed" on an agent-written list, not a specific instruction of mine** (corrected 2026-09-15). Later that day I said to leave the paper until I had read it. On 2026-09-15 I REJECTED the AI-written study note (withdrawn; kept in git history at PR #19), relocated trial D0 and its extract under the Cardoso folder as an extension, and reserved the paper-2 folder for after my own reading. Rows C58 to C64 stand, review pending |
+| Re-entering roadmap paper 2 (Choi 2020) on 2026-09-15: study note, extract, trials D1 to D7 and the corrected passes D2b and D5b | Me (instruction 2026-09-15, after reading the paper: list the possible analyses, structure the pipeline, reproduce the paper's result first, then attack its claims, proceed until nothing remains; the backbone check trial by trial; the pull request and merge); AI-assisted execution with every rule frozen before its object was opened. The agent disclosed the Sftpc-clause defect in its own rule twice and left the thresholds where they were; my review pending on rows C85 to C104 |
 | Revising the reading order (Gate 2 branches 2C, 2N, 2W for the placement targets; papers 12 to 16 and methods references M1 to M7 added) | Me (instruction 2026-09-15); AI-assisted execution with every identifier verified against PubMed |
 | Promoting the generic deposit readers out of the Cardoso helper module into the shared one | Agent proposal, my approval implied by the instruction to proceed; a gate1 folder importing from a gate2 folder was the wrong dependency direction. Verified by importing all 19 Cardoso trial modules and re-running two trials to identical results; cardoso_utils re-exports so nothing written against it changed |
 | Choosing the three follow-up questions off the agent's ranked list, and accepting three negative answers plus two disclosed rule defects (trials E6, C7, C8) | Me (selection 2026-09-13); AI-assisted execution with readings frozen before the data were opened; the agent reported the margin that refuses its own C7 answer and the zero-inflation that voids its own C8 mixture test; my review pending on rows C49 to C57 |
@@ -456,6 +457,50 @@ Mine to retain or reject: rows C65 to C72, and whether the matrix and mechanics
 programme those cells carry (Piezo2, Ltbp2, P4ha3, Sdc1, Prrx2) is worth a
 pre-registration of its own, given that it points away from the Areg axis
 rather than into it.
+
+**23 · Paper 2 entered at my direction after reading; the same rule defect
+twice, and a state that does not separate.** (2026-09-15, under review.)
+Having read Choi 2020, I asked for the possible gene analyses to be listed, a
+separate folder with a structured pipeline, the paper's results reproduced
+first and its claims attacked after, until nothing remained; and, part way
+through, for the core logic backbone to be fetched from Notion and the
+repository and checked against the plan trial by trial. That backbone check
+is a table in the plan. Trials D1 to D7 ran the same day, every rule frozen in
+a run record before its object was opened, and I said to proceed to the pull
+request and merge when the write-up was done.
+
+Two things belong here. First, the annotation rule I approved froze two
+clauses on Sftpc detection below 0.5 (one for contaminants, one for AT1), and
+in a lineage-sorted AT2 library every cluster detects Sftpc in every cell, so
+the clauses could never fire. The first pass called a 337-cell AT1 cluster
+hAT2 and let a ciliated cluster wear the primed-AT2 label; the organoid pass
+kept a 586-cell stromal cluster, the size of the one the paper removed, and
+missed a 481-cell AT1 cluster, which made the paper's Figure 7 reading look
+not computable when it was. Both outcomes stand in their records, no
+threshold moved, and corrected passes D2b and D5b sit beside them with one
+added condition: the Sftpc clauses apply only where Sftpc separates clusters.
+This is the shape of decision 22 again, the fifth and sixth instances and the
+first outside the Cardoso folder: a threshold frozen on a variable that does
+not vary in the deposit. The rule I take from it: before a clause is frozen,
+check that the variable it tests spans the threshold somewhere in the data
+the rule will see. Trial D0's marker table had Sftpc present in every library
+and nobody read it that way.
+
+Second, what reproduces and what does not. Four of the paper's five states,
+the DATP time course, the hAT2 to DATP to AT1 ordering inside one library,
+DATP's programmes in vivo and IL-1beta's shift of the organoid epithelium all
+come back from the deposit as descriptions, and the organoid cell counts land
+within 8 percent of the paper's. The primed AT2 state does not: at three
+resolutions, in a sub-clustering of DATP and at the cell level, no group of
+cells loses Etv5, Abca3 and Cebpa while gaining the inflammatory genes, and
+the organoid cluster the paper calls 77 percent primed carries the DATP
+markers with its identity genes intact. Whether that is a graded state the
+paper's cluster averages made discrete, or an identity ratio my rule set too
+strictly, cannot be settled without a new pre-registration; the folder
+proposes one (E6) and does not run it.
+
+Mine to retain or reject: rows C85 to C104; whether to pre-register E6;
+whether to download the dissociation list (M8) and run attack A3.
 
 ## How outputs were reviewed
 

@@ -1,0 +1,74 @@
+{
+  "trial": "D3 Choi-2020 ordering by PAGA and DPT",
+  "rules_frozen_at": "2026-09-15T10:39:54+00:00",
+  "rules": {
+    "question": "Is the AT2 to pAT2 to DATP to AT1 ordering recoverable by PAGA and diffusion pseudotime, pooled and within day 14 alone",
+    "cells": "D2b corrected annotated Tomato+ object (tomato_annotated_d2b.h5ad), alveolar states; cAT2 excluded from DPT, kept in PAGA",
+    "graph": {
+      "pca": "from D2",
+      "k": [
+        15,
+        30
+      ],
+      "diffmap_comps": 15,
+      "dpt": "default"
+    },
+    "root": "hAT2 cell with the highest score_genes(hAT2_canonical + AT2_identity), seed 0",
+    "readings": {
+      "O1": "hAT2 strongest PAGA partner is pAT2",
+      "O2": "chain hAT2-pAT2-DATP-AT1 connected (each consecutive pair within the node's top two edges)",
+      "O3": "cAT2 strongest partner is pAT2",
+      "O4": "pooled DPT medians hAT2 < pAT2 < DATP < AT1",
+      "O5": "day-14-only DPT medians in the same order",
+      "O6": "O4 and O5 hold at k=15 and k=30"
+    },
+    "floor_cells_per_state": 30,
+    "no_p_values": true
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE145031\\choi_trials\\tomato_annotated_d2b.h5ad",
+      "bytes": 385618603,
+      "modified": "2026-09-15T10:39:41+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\trials\\d3_ordering\\d3_paga_pooled_k15.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d3_ordering\\d3_dpt_pooled_k15.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d3_ordering\\d3_paga_day14_k15.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d3_ordering\\d3_dpt_day14_k15.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d3_ordering\\d3_paga_pooled_k30.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d3_ordering\\d3_dpt_pooled_k30.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d3_ordering\\d3_paga_day14_k30.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d3_ordering\\d3_dpt_day14_k30.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d3_ordering\\d3_readings.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d3_ordering\\d3_dpt_by_state.png",
+    "Thesis\\gate1_02_choi_2020\\trials\\d3_ordering\\d3_summary.md"
+  ],
+  "results": {
+    "readings": {
+      "O1": null,
+      "O2": null,
+      "O3": null,
+      "O4": null,
+      "O5": null,
+      "O6": null
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-15T10:41:46+00:00"
+}

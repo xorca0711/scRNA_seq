@@ -1,0 +1,147 @@
+{
+  "trial": "D6 Choi-2020 programmes and the responder gene",
+  "rules_frozen_at": "2026-09-15T13:19:42+00:00",
+  "rules": {
+    "question": "Are the paper's DATP programmes (p53, arrest, hypoxia, interferon-gamma, glycolysis, Hif1a) highest in the DATP state, in vivo and in organoids",
+    "scores": {
+      "method": "score_genes ctrl_size 50, n_bins 25, seed 0",
+      "sets": {
+        "p53": [
+          "Trp53",
+          "Mdm2",
+          "Ccnd1",
+          "Gdf15"
+        ],
+        "arrest": [
+          "Cdkn1a",
+          "Cdkn2a"
+        ],
+        "hypoxia": [
+          "Hif1a",
+          "Ndrg1"
+        ],
+        "hypoxia_without_Ndrg1": [
+          "Hif1a"
+        ],
+        "ifng_response": [
+          "Ifngr1",
+          "Ly6a",
+          "Irf7",
+          "Cxcl16"
+        ],
+        "glycolysis": [
+          "Pgk1",
+          "Pkm",
+          "Slc16a3"
+        ]
+      }
+    },
+    "readings": {
+      "P1": "DATP highest mean score for p53, arrest, hypoxia, ifng_response",
+      "P2": "DATP highest glycolysis score and Hif1a detection",
+      "P3": "hypoxia reading holds without Ndrg1",
+      "P4": "Il1r1 detection by state, reported only; G2/M claim not attempted",
+      "P5": "P1 and P2 inside the 1,000 to 2,000 gene window"
+    },
+    "floor": 30,
+    "no_p_values": true
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE145031\\choi_trials\\tomato_annotated_d2b.h5ad",
+      "bytes": 385618603,
+      "modified": "2026-09-15T10:39:41+00:00"
+    },
+    {
+      "path": "raw_data\\GSE144468\\choi_trials\\organoid_annotated_d5b.h5ad",
+      "bytes": 262953177,
+      "modified": "2026-09-15T13:19:30+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\trials\\d6_programmes\\d6_scores_invivo.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d6_programmes\\d6_scores_invivo_window.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d6_programmes\\d6_scores_organoid.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d6_programmes\\d6_programme_scores.png",
+    "Thesis\\gate1_02_choi_2020\\trials\\d6_programmes\\d6_summary.md"
+  ],
+  "results": {
+    "readings": {
+      "invivo": {
+        "P1": {
+          "p53": true,
+          "arrest": true,
+          "hypoxia": true,
+          "ifng_response": true
+        },
+        "P1_all": true,
+        "P2": {
+          "glycolysis": true,
+          "Hif1a_detection": false
+        },
+        "P2_all": false,
+        "P3": true,
+        "P5": {
+          "P1": {
+            "p53": true,
+            "arrest": true,
+            "hypoxia": true,
+            "ifng_response": true
+          },
+          "P1_all": true,
+          "P2": {
+            "glycolysis": true,
+            "Hif1a_detection": false
+          },
+          "P2_all": false,
+          "P3": false
+        },
+        "P4_Il1r1_by_state": {
+          "hAT2": 0.0618,
+          "cAT2": 0.1182,
+          "DATP": 0.0614,
+          "AT1": 0.1039
+        },
+        "P4_G2M_claim": "not attempted (needs an external phase gene list)"
+      },
+      "organoid": {
+        "P1": {
+          "p53": false,
+          "arrest": false,
+          "hypoxia": true,
+          "ifng_response": false
+        },
+        "P1_all": false,
+        "P2": {
+          "glycolysis": false,
+          "Hif1a_detection": false
+        },
+        "P2_all": false,
+        "P3": true,
+        "P4_Il1r1_by_state": {
+          "hAT2": 0.0267,
+          "cAT2": 0.1013,
+          "DATP": 0.033,
+          "AT1": 0.1954
+        },
+        "P4_G2M_claim": "not attempted (needs an external phase gene list)"
+      }
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-15T13:19:57+00:00"
+}

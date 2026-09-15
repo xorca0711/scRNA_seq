@@ -1,0 +1,86 @@
+{
+  "trial": "D7 Choi-2020 attack claims",
+  "rules_frozen_at": "2026-09-15T10:45:19+00:00",
+  "rules": {
+    "A1": {
+      "identity_set": [
+        "Etv5",
+        "Abca3",
+        "Cebpa"
+      ],
+      "match": "20 quantile bins of n_genes, without replacement, seed 0",
+      "reading": "pAT2 / matched hAT2 identity detection ratio <= 0.7 means not a depth artefact"
+    },
+    "A2": {
+      "paper_cluster_cut": 0.6,
+      "double_marker": "Sftpc detected AND >=2 of Pdpn, Hopx, Cav1 detected"
+    },
+    "A3": "not attempted: needs the published dissociation gene list (van den Brink 2017, 10.1038/nmeth.4437), not on disk",
+    "A4": {
+      "genes": [
+        "Krt8",
+        "Cldn4"
+      ],
+      "library": "Day14_AT2_Tomato",
+      "permutations": 200,
+      "seed": 0,
+      "reading": "ratio > 1.25 and p < 0.05 co-organised; 0.8 to 1.25 no evidence; count < 30 magnitude unreadable"
+    },
+    "floor": 30
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE145031\\choi_trials\\tomato_annotated_d2b.h5ad",
+      "bytes": 385618603,
+      "modified": "2026-09-15T10:39:41+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\trials\\d7_attack_claims\\d7_a1_depth_by_state.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d7_attack_claims\\d7_a2_doublet_by_state.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d7_attack_claims\\d7_a4_codetection.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d7_attack_claims\\d7_summary.md"
+  ],
+  "results": {
+    "results": {
+      "A1": {
+        "not_computable": "pAT2 or hAT2 below floor",
+        "n_pAT2": 0,
+        "n_hAT2": 9546
+      },
+      "A2": {
+        "DATP_mean_scrublet": 0.05227589096976077,
+        "DATP_double_marker_fraction": 0.2375,
+        "doublet_like": false
+      },
+      "A3": "not attempted: needs the published dissociation gene list (van den Brink 2017, 10.1038/nmeth.4437), not on disk",
+      "A4": {
+        "n_cells": 3661,
+        "krt8_detected": 0.9008467631794591,
+        "cldn4_detected": 0.16716744059000274,
+        "double_positive": 578,
+        "expected_under_independence": 551.318219065829,
+        "ratio": 1.0483963344788088,
+        "permutation_p_within_depth_deciles": 0.004975124378109453,
+        "null_mean": 558.7,
+        "reading": "no evidence of a discrete co-expressing population"
+      }
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-15T10:45:23+00:00"
+}

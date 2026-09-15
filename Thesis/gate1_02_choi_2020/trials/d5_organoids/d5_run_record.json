@@ -1,0 +1,106 @@
+{
+  "trial": "D5 Choi-2020 organoids, control against IL-1beta",
+  "rules_frozen_at": "2026-09-15T10:43:39+00:00",
+  "rules": {
+    "question": "Do the organoid libraries carry the five states, and does IL-1beta move the composition, the pseudotime and the AT1 markers the way the paper reports",
+    "cells": "D1 organoid objects, doublets removed; merged without correction",
+    "embedding_and_annotation": "as D2; thresholds {'contaminant_min': 0.5, 'sftpc_low': 0.5, 'cAT2_min': 0.35, 'AT1_min': 0.5, 'DATP_min': 0.4, 'DATP_negative_ratio': 0.5, 'sftpc_high': 0.7, 'pAT2_identity_ratio': 0.7, 'pAT2_inflammatory_ratio': 1.5, 'dispersed_present_fraction': 0.02, 'dispersed_markers': 3}",
+    "readings": {
+      "G1": "five states present",
+      "G2": "control: hAT2+AT1 > 0.60, pAT2 < 0.20, DATP < 0.10",
+      "G3": "IL-1beta: pAT2 >= 0.50 and DATP > control",
+      "G4": "median DPT IL-1beta > control, root control hAT2",
+      "G5": "AT1 cells, IL-1beta/control detection: early 0.7 to 1.4, late < 0.7, DATP figure-7 genes > 1.4",
+      "G6": "G3 and G5 inside a 2,500 to 4,500 gene window"
+    },
+    "window_genes": [
+      2500,
+      4500
+    ],
+    "floor": 30,
+    "no_p_values": true
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE144468\\choi_trials\\Control_Organoids.h5ad",
+      "bytes": 115995178,
+      "modified": "2026-09-15T10:28:54+00:00"
+    },
+    {
+      "path": "raw_data\\GSE144468\\choi_trials\\Il1b_Organoids.h5ad",
+      "bytes": 150088775,
+      "modified": "2026-09-15T10:29:01+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\trials\\d5_organoids\\d5_cluster_annotation_res0.3.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5_organoids\\d5_cluster_annotation_res0.5.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5_organoids\\d5_cluster_annotation_res1.0.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5_organoids\\d5_contaminants.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5_organoids\\d5_composition.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5_organoids\\d5_composition_window.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5_organoids\\d5_dpt_median_by_treatment.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5_organoids\\d5_dpt_median_by_treatment_state.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5_organoids\\d5_at1_marker_ratios.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5_organoids\\d5_at1_marker_ratios_window.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5_organoids\\d5_umap_states_and_treatment.png",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5_organoids\\d5_summary.md"
+  ],
+  "results": {
+    "primary_resolution": 0.3,
+    "states_assigned": {
+      "0.3": [
+        "DATP",
+        "cAT2",
+        "hAT2"
+      ],
+      "0.5": [
+        "DATP",
+        "hAT2"
+      ],
+      "1.0": [
+        "DATP",
+        "cAT2",
+        "hAT2"
+      ]
+    },
+    "readings": {
+      "G1": false,
+      "G2": true,
+      "G3": false,
+      "G4": true,
+      "G5": {
+        "not_computable": "fewer than 30 AT1 cells in a treatment",
+        "n_at1": {}
+      },
+      "G6": {
+        "G3_in_window": false,
+        "G5_in_window": null
+      },
+      "paper_epithelial_counts": {
+        "control": 1286,
+        "IL-1beta": 2584
+      },
+      "this_run_epithelial_counts": {
+        "IL-1beta": 2699,
+        "control": 1868
+      }
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-15T10:45:03+00:00"
+}

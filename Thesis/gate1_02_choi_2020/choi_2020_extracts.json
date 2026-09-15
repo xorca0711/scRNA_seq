@@ -1,0 +1,137 @@
+{
+  "_comment": "Machine-readable extract of Choi, Lee et al. 2020 (Cell Stem Cell), roadmap paper 2, Gate 1. Marker sets and claims were first read from the Europe PMC full-text XML on 2026-09-13 (the PMC web rendering strips italicised gene symbols) and extended on 2026-09-15 from the PDF, at the owner's direction after the owner read the paper. Nothing here is a result of this repository.",
+  "citation": {
+    "authors": "Choi J, Park J-E, Tsagkogeorga G, Yanagita M, Koo B-K, Han N, Lee J-H",
+    "title": "Inflammatory signals induce AT2 cell-derived damage-associated transient progenitors that mediate alveolar regeneration",
+    "journal": "Cell Stem Cell",
+    "year": 2020,
+    "volume": "27",
+    "issue": "3",
+    "pages": "366-382.e7",
+    "doi": "10.1016/j.stem.2020.06.020",
+    "pmid": "32750316",
+    "pmcid": "PMC7487779",
+    "metadata_verified_against": "PubMed, 2026-09-13"
+  },
+  "roadmap": {
+    "order": 2,
+    "gate": "1",
+    "role": "biological spine: IL-1beta and HIF1alpha drive the AT2 to DATP to AT1 transition; chronic inflammation can stall regeneration",
+    "why_it_matters_here": "it defines the DATP state that roadmap paper 5 carries into tumour initiation, and its first author leads the owner's own laboratory"
+  },
+  "injury_model": {
+    "reporter": "SPC-CreERT2; R26R-tdTomato, tamoxifen-induced",
+    "injury": "bleomycin 1.25 U/kg intratracheal, against PBS as the homeostatic control",
+    "time_points_sequenced": ["PBS control", "day 14 (acute injury)", "day 28 (resolution)"],
+    "background": "C57BL/6, 6 to 10 weeks old",
+    "mice_per_library": 2,
+    "sort_for_lineage_libraries": "CD45-negative, CD31-negative, EpCAM-positive, Tomato-positive",
+    "sort_for_non_lineage_libraries": "EpCAM-positive Tomato-negative and EpCAM-negative cells combined 2:1, from the same experiments"
+  },
+  "states_resolved": {
+    "vocabulary": ["homeostatic AT2 (hAT2)", "cycling AT2 (cAT2)", "primed AT2 (pAT2)", "DATP", "AT1"],
+    "figure": "Figure 1B (in vivo, 12,086 cells) and Figure 2F (organoids, 1,286 control and 2,584 IL-1beta epithelial cells)",
+    "note": "the same five states are reported in the in vivo lineage-labelled data and in the organoid data"
+  },
+  "marker_sets": {
+    "hAT2_canonical": ["Sftpc", "Sftpa1", "Lyz2"],
+    "AT2_identity_DOWN_in_primed": ["Etv5", "Abca3", "Cebpa"],
+    "AT2_lipid_DOWN_in_primed": ["Acly", "Hmgcr", "Hmgcs1"],
+    "pAT2_inflammatory_UP": ["Ptges", "Lcn1 (as printed; Lcn2 is the plausible reading, both are reported and neither is used in the rule)", "Orm1", "Tmem173", "Ifitm2", "Ifitm3"],
+    "pAT2_discussion_genes": {"inflammation": ["Ptges", "Orm1", "Zbp1"], "angiogenesis": ["Lrg1", "Cxcl17", "Egfl6", "Egfl7"], "ROS_reduction": ["Glrx", "Prdx4", "Gstk1", "Gstk2"]},
+    "pAT2_qPCR_up": ["Itga7", "Lrg1", "Orm1"],
+    "pAT2_qPCR_down": ["Etv5", "Abca3", "Lpcat1", "Fgfr2", "Acly"],
+    "cAT2": ["Cdk1", "Mki67", "Cenpa"],
+    "DATP": ["Cldn4", "Krt8", "Ndrg1", "Sprr1a", "AW112010"],
+    "DATP_negative_condition": ["Pdpn", "Hopx", "Cav1"],
+    "DATP_negative_condition_note": "DATPs share the AT1-lineage signature but carry much lower canonical AT1 markers; the low condition is part of the definition, not an afterthought",
+    "AT1_early": ["Lmo7", "Pdpn", "Hopx"],
+    "AT1_late": ["Aqp5", "Vegfa", "Cav1", "Spock2"],
+    "DATP_genes_in_figure_7C": ["Cldn4", "AW112010", "Lhfp"],
+    "DATP_programmes_from_gene_ontology": {
+      "p53_signalling": ["Trp53", "Mdm2", "Ccnd1", "Gdf15"],
+      "proliferation_arrest": ["Cdkn1a", "Cdkn2a"],
+      "hypoxia": ["Hif1a", "Ndrg1"],
+      "interferon_gamma_response": ["Ifngr1", "Ly6a", "Irf7", "Cxcl16"]
+    },
+    "glycolysis_downstream_of_HIF1alpha": ["Pgk1", "Pkm", "Slc16a3"],
+    "responder_subset_marker": ["Il1r1"],
+    "contaminants_the_paper_removed": {
+      "ciliated": ["Foxj1", "Wnt7b", "Cd24a"],
+      "mesenchyme": ["Vcam1", "Acta2", "Des", "Pdgfra"],
+      "immune": ["Ptprc", "Tyrobp", "Il2rg", "Lck"]
+    }
+  },
+  "their_pipeline": {
+    "alignment_and_counting": "Cell Ranger 2.0.2, GRCm38 reference 1.2.0",
+    "cell_filter": "more than 500 and fewer than 7,000 detected genes, more than 2,000 UMI",
+    "clustering_and_markers": "scanpy 1.3.6 default normalisation, HVG, log, PCA, neighbourhood graph, Louvain; Seurat v2.0 also cited",
+    "contaminant_removal": "in vivo: 255 of 12,514 captured cells removed (214 ciliated, 16 mesenchyme, 25 immune) by an initial unsupervised round; organoids: the EpCAM-negative stromal cluster removed; non-lineage libraries: an EpCAM-positive CD45-positive doublet cluster of 1,125 of 14,017 cells removed",
+    "doublets": "Scrublet per sample, sim_doublet_ratio 2, n_neighbors 30, expected_doublet_rate 0.1, score above 0.7 flagged; over-clustering at Louvain resolution 20 with cluster mean above 0.6 flagged; remaining clusters checked by prior-knowledge marker conflicts and higher UMI",
+    "ambient_rna": "no correction described",
+    "trajectory": "k-nearest neighbours recomputed at k = 15, PAGA for topology, diffusion pseudotime with default parameters, cycling cells excluded from pseudotime",
+    "atac": "MACS2 callpeak, bdgdiff cutoff 10, HOMER motifs; 5 mice pooled for Il1r1-positive AT2, 1 mouse for bulk AT2, two biological samples",
+    "imaging": "ImageJ on Leica TCS SP5 confocal sections, at least five sections and ten alveolar regions from three mice per group; dots are sections",
+    "statistics": "two-tailed unpaired or paired Student's t test in Prism 7"
+  },
+  "reported_counts": {
+    "tomato_positive_captured": 12514,
+    "tomato_positive_after_contaminant_removal_figure_1B": 12086,
+    "cAT2_fraction_of_lineage_labelled": "approximately 0.06",
+    "organoid_epithelial_control": 1286,
+    "organoid_epithelial_il1b": 2584,
+    "il1b_organoid_primed_fraction": "approximately 0.77",
+    "krt8_positive_fraction_of_lineage_labelled_cells_day_14_imaging": "approximately 0.10",
+    "il1r1_lineage_labelled_AT2_fraction_uninjured": "approximately 0.15",
+    "il1r1_lineage_labelled_AT2_fraction_day_14": "up to approximately 0.60",
+    "datp_fraction_lineage_labelled_by_il1r1": "approximately 0.80",
+    "ndrg1_lineage_labelled_AT1_fraction_day_28": "approximately 0.30"
+  },
+  "cascade_as_stated": [
+    "bleomycin expands interstitial macrophages at day 7 while alveolar macrophages fall; both return to homeostatic levels by day 28",
+    "interstitial-macrophage-derived IL-1beta acts on the Il1r1-expressing subset of AT2 cells",
+    "those cells lose AT2 identity and become primed AT2 cells; the priming signature rises during the S to G2/M transition of cycling AT2 cells, where Il1r1 is also up",
+    "primed AT2 cells convert into DATPs",
+    "the conversion runs through HIF1alpha-driven glycolysis, and blocking it (digoxin, 2-DG, Hif1a deletion) blocks DATP generation and AT1 differentiation",
+    "DATPs differentiate into mature AT1 cells, established by lineage tracing (Ndrg1 and Krt8 drivers), and can also revert to AT2",
+    "persistent IL-1beta prevents AT1 maturation (late markers Aqp5, Vegfa, Cav1, Spock2 stay low), DATPs accumulate, and regeneration is impaired; withdrawal or 2-DG rescues maturation",
+    "KRT8-positive CLDN4-positive DATP-like cells are seen in IPF and lung adenocarcinoma tissue, and the IPF KRT17-positive population shares the DATP signature (Figure S7H)"
+  ],
+  "evidence_class_per_link": {
+    "the five states exist and are distinguishable": "scRNA-seq; reusable from the deposit (trial D2, D5)",
+    "DATPs sit between primed AT2 and AT1 in pseudotime": "PAGA plus diffusion pseudotime; reusable, and needs no replication because it is an ordering inside a library (trial D3)",
+    "composition changes across PBS, day 14, day 28": "scRNA-seq, one library per time point; direction only (trials D2, D4)",
+    "DATP programmes p53, arrest, hypoxia, interferon-gamma, glycolysis": "scRNA-seq gene ontology and heatmaps; reusable (trial D6)",
+    "IL-1beta raises primed and DATP fractions in organoids and stalls late AT1 markers": "organoid scRNA-seq, one library per treatment; direction only (trial D5)",
+    "DATPs derive from AT2 cells": "lineage tracing, about 10 percent of labelled cells Krt8-positive at day 14; NOT reusable from transcriptomes",
+    "DATPs become AT1 cells": "lineage tracing from Ndrg1 and Krt8 drivers; NOT reusable",
+    "IL-1beta is sufficient and required": "organoids, Il1r1 deletion, imaging and flow; the state change is re-derivable, sufficiency and necessity are not",
+    "only Il1r1-positive AT2 cells respond": "Il1r1 reporter mice, functional and epigenetic; NOT reusable, and the ATAC deposit cannot help",
+    "HIF1alpha glycolysis is required": "extracellular acidification, glucose uptake, digoxin, conditional deletion; the gene expression is re-derivable, the requirement is not",
+    "interstitial macrophages are the IL-1beta source": "flow cytometry and the non-lineage libraries; partly reusable from the Tomato-negative libraries, not attempted here",
+    "chronic IL-1beta stalls AT1 maturation": "prolonged exposure in vivo and in organoids; the marker pattern is re-derivable in the IL-1beta library (trial D5 G5), the causal claim is not",
+    "Il1r1 rises in G2/M-phase cycling AT2 cells": "scRNA-seq with a cell-cycle phase assignment (Figure S5G); not attempted, because phase assignment needs an external gene list this repository would take from memory"
+  },
+  "deposited_data": [
+    {"accession": "GSE145031", "content": "scRNA-seq of AT2 lineage-traced epithelium", "libraries": 6,
+     "design": "three time points (PBS, day 14, day 28) by two sorts (Tomato-positive lineage-labelled, Tomato-negative)",
+     "replication": "none; one library per condition, two mice pooled per library",
+     "supports": "state recovery and trajectory ordering", "does_not_support": "any tested contrast between time points"},
+    {"accession": "GSE144468", "content": "scRNA-seq of AT2 organoids", "libraries": 2, "design": "control against IL-1beta",
+     "replication": "none", "supports": "the direction of the state change under IL-1beta", "does_not_support": "a test of that change"},
+    {"accession": "GSE144598", "content": "ATAC-seq of AT2 subsets", "libraries": "2 files deposited as bigwig coverage tracks only",
+     "supports": "almost nothing; coverage carries neither peaks nor reads", "does_not_support": "re-derivation of the epigenetic claim without going to SRA for raw reads"},
+    {"accession": "GSE144553", "content": "SuperSeries over the three above", "libraries": 12, "supports": "bookkeeping only"}
+  ],
+  "constraints_carried_into_this_repository": [
+    "One library per condition in both single-cell accessions, so no transcriptomic contrast here carries within-group replication. Directions are describable; nothing between conditions is testable; no P value is admissible on a between-condition comparison.",
+    "Trajectory ordering is the exception: an ordering inside a single library does not need between-group replication, so the AT2 to primed AT2 to DATP to AT1 sequence is genuinely re-askable.",
+    "Six of the eight matrices are raw 10x barcode whitelists; cell calling is this repository's job. Trial D1 applies the paper's own post-Cell-Ranger filter to every barcode rather than reproducing Cell Ranger 2.0.2.",
+    "Several imaging quantifications plot one dot per histological section with three to six mice per group. Where the dot is a section the plotted unit is not the animal, and this repository treats sections from one animal as technical replicates.",
+    "The ATAC-seq supplementary files are bigwig coverage only, so the epigenetic half of the Il1r1-subset claim cannot be re-derived from the deposit at all.",
+    "The DATP definition includes a negative condition (low Pdpn, Hopx, Cav1). A marker score built from the positive genes alone will not separate DATPs from mature AT1 cells.",
+    "The primed AT2 state is defined by loss of Etv5, Abca3 and Cebpa rather than by a positive marker, so it cannot be scored the same way as the other states, and a loss can be a detection floor; trial D7 A1 tests that.",
+    "Ndrg1 appears in both the DATP marker set and the hypoxia programme, so it cannot be used as independent evidence for both the state and its mechanism; trial D6 P3 takes the hypoxia reading without it.",
+    "The Tomato-negative libraries are a within-experiment control worth using: they are the cells the AT2 lineage did not label, from the same experiments and the same dissociation, mixed 2:1 with EpCAM-negative cells."
+  ]
+}

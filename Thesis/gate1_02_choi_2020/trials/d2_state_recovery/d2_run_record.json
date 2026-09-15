@@ -1,0 +1,185 @@
+{
+  "trial": "D2 Choi-2020 state recovery (Gate 1)",
+  "rules_frozen_at": "2026-09-15T10:29:59+00:00",
+  "rules": {
+    "question": "Are hAT2, cAT2, pAT2, DATP and AT1 recoverable from the Tomato-positive libraries with the paper's markers, and does their composition follow the paper's time course",
+    "cells": "trial D1 objects, predicted doublets removed",
+    "embedding": {
+      "normalize_total": 10000.0,
+      "log1p": true,
+      "hvg": "seurat_v3, 2000, on counts",
+      "scale_max": 10,
+      "n_pcs": 30,
+      "n_neighbors": 30,
+      "leiden": [
+        0.3,
+        0.5,
+        1.0
+      ],
+      "seed": 0
+    },
+    "batch": "no correction: library equals condition; same-library kNN enrichment reported",
+    "annotation": {
+      "rule": "choi_utils.annotate_clusters",
+      "thresholds": {
+        "contaminant_min": 0.5,
+        "sftpc_low": 0.5,
+        "cAT2_min": 0.35,
+        "AT1_min": 0.5,
+        "DATP_min": 0.4,
+        "DATP_negative_ratio": 0.5,
+        "sftpc_high": 0.7,
+        "pAT2_identity_ratio": 0.7,
+        "pAT2_inflammatory_ratio": 1.5,
+        "dispersed_present_fraction": 0.02,
+        "dispersed_markers": 3
+      }
+    },
+    "primary_resolution_rule": "lowest resolution assigning all five states; else the one assigning most, with a dispersed-presence check for the missing state",
+    "readings": {
+      "R1": "five states present as clusters at the primary resolution",
+      "R2": "cAT2 between 0.03 and 0.09 of alveolar Tomato+ cells pooled",
+      "R3": "PBS: hAT2 largest and above 0.50",
+      "R4": "day 14: hAT2 below 0.5 x PBS; pAT2 and DATP each at least 0.05",
+      "R5": "day 28: AT1 and hAT2 above day 14; cAT2, pAT2, DATP below day 14",
+      "R6": "DATP AT1-canonical detection below 0.5 x AT1 cluster's",
+      "R7": "same-library kNN enrichment, description only"
+    },
+    "unreadable_if": "fewer than four states assigned at the primary resolution makes R2 to R5 not computable",
+    "no_p_values": "one library per condition, two mice pooled per library"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE145031\\choi_trials\\PBS_AT2_Tomato.h5ad",
+      "bytes": 113443690,
+      "modified": "2026-09-15T10:26:24+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\choi_trials\\Day14_AT2_Tomato.h5ad",
+      "bytes": 147510998,
+      "modified": "2026-09-15T10:27:27+00:00"
+    },
+    {
+      "path": "raw_data\\GSE145031\\choi_trials\\Day28_AT2_Tomato.h5ad",
+      "bytes": 126414936,
+      "modified": "2026-09-15T10:28:11+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\trials\\d2_state_recovery\\d2_cluster_annotation_res0.3.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2_state_recovery\\d2_cluster_annotation_res0.5.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2_state_recovery\\d2_cluster_annotation_res1.0.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2_state_recovery\\d2_composition.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2_state_recovery\\d2_contaminants.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2_state_recovery\\d2_readings.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2_state_recovery\\d2_lipocalin_detection_by_state.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2_state_recovery\\d2_umap_states_and_libraries.png",
+    "Thesis\\gate1_02_choi_2020\\trials\\d2_state_recovery\\d2_summary.md"
+  ],
+  "results": {
+    "same_library_knn_enrichment": 2.078970940446989,
+    "states_assigned_per_resolution": {
+      "0.3": [
+        "cAT2",
+        "hAT2"
+      ],
+      "0.5": [
+        "cAT2",
+        "hAT2",
+        "pAT2"
+      ],
+      "1.0": [
+        "DATP",
+        "cAT2",
+        "hAT2",
+        "pAT2"
+      ]
+    },
+    "primary_resolution": 1.0,
+    "missing_states_dispersed_check": {
+      "AT1": {
+        "fraction": 0.019001968672430026,
+        "n": 222,
+        "verdict": "not found"
+      }
+    },
+    "readings": {
+      "R1": {
+        "value": [
+          "DATP",
+          "cAT2",
+          "hAT2",
+          "pAT2"
+        ],
+        "met": false
+      },
+      "R2": {
+        "value": 0.02679106393905675,
+        "met": false
+      },
+      "R3": {
+        "value": 0.9847186848807594,
+        "met": true
+      },
+      "R4": {
+        "value": {
+          "hAT2_d14": 0.7361477572559367,
+          "hAT2_pbs": 0.9847186848807594,
+          "pAT2_d14": 0.018733509234828496,
+          "DATP_d14": 0.1762532981530343
+        },
+        "met": false
+      },
+      "R5": {
+        "value": {
+          "hAT2": {
+            "d14": 0.7361477572559367,
+            "d28": 0.9071068830442082
+          },
+          "cAT2": {
+            "d14": 0.06886543535620053,
+            "d28": 0.01315053161723559
+          },
+          "pAT2": {
+            "d14": 0.018733509234828496,
+            "d28": 0.024062674874090653
+          },
+          "DATP": {
+            "d14": 0.1762532981530343,
+            "d28": 0.05567991046446558
+          },
+          "AT1": {
+            "d14": 0.0,
+            "d28": 0.0
+          }
+        },
+        "met": false
+      },
+      "R7": {
+        "value": 2.078970940446989,
+        "met": null
+      },
+      "R6": {
+        "value": null,
+        "met": null
+      }
+    },
+    "annotated_object": "X:\\GitHub\\scRNA_seq\\raw_data\\GSE145031\\choi_trials\\tomato_annotated.h5ad"
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-15T10:32:32+00:00"
+}

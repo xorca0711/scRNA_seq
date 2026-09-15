@@ -1,0 +1,132 @@
+{
+  "trial": "D5b Choi-2020 organoids, corrected annotation",
+  "rules_frozen_at": "2026-09-15T13:17:55+00:00",
+  "rules": {
+    "question": "D5's readings under the corrected annotation rule (Sftpc clauses applied only where Sftpc separates clusters); thresholds unchanged",
+    "first_pass": "trials/d5_organoids/, outcome kept",
+    "rule": "choi_utils.annotate_clusters_b",
+    "thresholds": {
+      "contaminant_min": 0.5,
+      "sftpc_low": 0.5,
+      "cAT2_min": 0.35,
+      "AT1_min": 0.5,
+      "DATP_min": 0.4,
+      "DATP_negative_ratio": 0.5,
+      "sftpc_high": 0.7,
+      "pAT2_identity_ratio": 0.7,
+      "pAT2_inflammatory_ratio": 1.5,
+      "dispersed_present_fraction": 0.02,
+      "dispersed_markers": 3
+    },
+    "readings": "G1 to G6 as D5, computed with D5's functions",
+    "window_genes": [
+      2500,
+      4500
+    ],
+    "floor": 30,
+    "no_p_values": true
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE144468\\choi_trials\\organoid_annotated.h5ad",
+      "bytes": 262926093,
+      "modified": "2026-09-15T10:45:03+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\trials\\d5b_corrected_annotation\\d5b_cluster_annotation_res0.3.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5b_corrected_annotation\\d5b_cluster_annotation_res0.5.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5b_corrected_annotation\\d5b_cluster_annotation_res1.0.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5b_corrected_annotation\\d5b_contaminants.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5b_corrected_annotation\\d5b_composition.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5b_corrected_annotation\\d5b_composition_window.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5b_corrected_annotation\\d5b_dpt_median_by_treatment.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5b_corrected_annotation\\d5b_dpt_median_by_treatment_state.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5b_corrected_annotation\\d5b_at1_marker_ratios.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5b_corrected_annotation\\d5b_at1_marker_ratios_window.csv",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5b_corrected_annotation\\d5b_umap_states.png",
+    "Thesis\\gate1_02_choi_2020\\trials\\d5b_corrected_annotation\\d5b_summary.md"
+  ],
+  "results": {
+    "primary_resolution": 0.3,
+    "states_assigned": {
+      "0.3": [
+        "AT1",
+        "DATP",
+        "cAT2",
+        "hAT2"
+      ],
+      "0.5": [
+        "AT1",
+        "DATP",
+        "hAT2"
+      ],
+      "1.0": [
+        "AT1",
+        "DATP",
+        "cAT2",
+        "hAT2"
+      ]
+    },
+    "readings": {
+      "G1": false,
+      "G2": true,
+      "G3": false,
+      "G3_DATP_direction_only": true,
+      "G4": true,
+      "G5": {
+        "early": true,
+        "late": false,
+        "datp": true,
+        "set_mean_ratios": {
+          "AT1_early": 0.964,
+          "AT1_late": 0.723,
+          "DATP_figure7": 3.655
+        }
+      },
+      "G5_n_at1": {
+        "IL-1beta": 279,
+        "control": 202
+      },
+      "G6": {
+        "G3_in_window": false,
+        "G3_DATP_direction_in_window": true,
+        "G5_in_window": {
+          "early": true,
+          "late": true,
+          "datp": true,
+          "set_mean_ratios": {
+            "AT1_early": 0.94,
+            "AT1_late": 0.693,
+            "DATP_figure7": 3.544
+          }
+        }
+      },
+      "paper_epithelial_counts": {
+        "control": 1286,
+        "IL-1beta": 2584
+      },
+      "this_run_epithelial_counts": {
+        "IL-1beta": 2423,
+        "control": 1193
+      }
+    },
+    "annotated_object": "X:\\GitHub\\scRNA_seq\\raw_data\\GSE144468\\choi_trials\\organoid_annotated_d5b.h5ad"
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-15T13:19:30+00:00"
+}

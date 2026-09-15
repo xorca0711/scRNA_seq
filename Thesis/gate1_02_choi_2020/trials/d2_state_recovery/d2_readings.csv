@@ -1,0 +1,8 @@
+reading,description,value,met
+R1,five states present as clusters at the primary resolution,"['DATP', 'cAT2', 'hAT2', 'pAT2']",False
+R2,cAT2 between 0.03 and 0.09 of alveolar Tomato+ cells pooled,0.02679106393905675,False
+R3,PBS: hAT2 largest and above 0.50,0.9847186848807594,True
+R4,day 14: hAT2 below 0.5 x PBS; pAT2 and DATP each at least 0.05,"{'hAT2_d14': 0.7361477572559367, 'hAT2_pbs': 0.9847186848807594, 'pAT2_d14': 0.018733509234828496, 'DATP_d14': 0.1762532981530343}",False
+R5,"day 28: AT1 and hAT2 above day 14; cAT2, pAT2, DATP below day 14","{'hAT2': {'d14': 0.7361477572559367, 'd28': 0.9071068830442082}, 'cAT2': {'d14': 0.06886543535620053, 'd28': 0.01315053161723559}, 'pAT2': {'d14': 0.018733509234828496, 'd28': 0.024062674874090653}, 'DATP': {'d14': 0.1762532981530343, 'd28': 0.05567991046446558}, 'AT1': {'d14': 0.0, 'd28': 0.0}}",False
+R7,"same-library kNN enrichment, description only",2.078970940446989,
+R6,DATP AT1-canonical detection below 0.5 x AT1 cluster's,None,
