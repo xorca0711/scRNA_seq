@@ -20,9 +20,11 @@ project:
     Stage 1 follows the target-lab modules (Thesis/gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md).
   repository: https://github.com/xorca0711/scRNA_seq
   status: >
-    Stage 0 complete (PR #1 to #4); Stage 1 follow-ups and trial S2 merged
-    (PR #6 to #8), owner review pending; repository hygiene 2026-09-10
-    (archive/ holds displaced material; README reframed as an analysis log)
+    Stage 0 complete (PR #1 to #4); Stage 1 follow-ups and trials S1 to S5
+    merged (PR #5 to #8); Cardoso 2026 (Gate 2) and Choi 2020 (Gate 0) merged
+    (PR #10 to #24); roadmap re-ranked against the SAP constraints on
+    2026-09-15 (Nabhan papers next, Gate 3 paused); owner retain/reject
+    review pending on most register rows (PROGRESS items 12 to 29)
 
 datasets:
   - accession: GSE262927
@@ -168,10 +170,11 @@ thesis_roadmap:
   tracked: notes, JSON, small trial tables; PDFs and XLSX in Thesis/ are gitignored
   local_pdfs: "C:/Users/dream/Documents/AC_document/External Thesis/SAP_Thesis study/Gate_1-2_Universal/ (per gate); older ones directly under Thesis/"
   done:
-    - gate1_01_niethamer_2025 (pointer to docs/ and analysis/GSE262927)
+    - gate1_01_niethamer_2025 (pointer to docs/ and analysis/GSE262927; follow-ups N1 to N4 run 2026-09-10; Stage 2 proposals W1, S1, Nb1, D1, V1 written, not run)
+    - gate1_02_choi_2020 (note, choi_2020_extracts.json, trial D0 with run record; D1 not started; owner review pending on rows C58 to C64, see PROGRESS item 26)
     - gate1_04_sikkema_2023_hlca (note, integration_benchmark.json, PIPELINE_FRAMING.md, trials S1 to S5 with run records; owner review pending; S2 result contradicts the human AT0 headline, see PROGRESS item 15)
-    - gate2_05_cardoso_2026 (note, cardoso_2026_extracts.json, trials C0 to C3 with run records; entered out of order on the owner's instruction 2026-09-12; Gate 1 returned "not recovered" and stopped to characterise, see PROGRESS item 23)
-  next: gate1_02_choi_2020, gate1_03_nabhan_2018; owner decisions on PROGRESS items 12 to 23
+    - gate2_05_cardoso_2026 (note, cardoso_2026_extracts.json, trials C0 to C12 and E1 to E6 with run records; entered out of order on the owner's instruction 2026-09-12; Gate 1 returned "not recovered"; list A exhausted; owner review pending, see PROGRESS items 23 to 29)
+  next: gate1_03_nabhan_2018, then gate2_06_nabhan_2023, with proposal Nb1 as their trial (re-ranking of 2026-09-15, recorded in Thesis/README.md gate rules and ROADMAP.json); Gate 3A and 3B paused; owner decisions on PROGRESS items 12 to 29
   s2_environment: .venv-x64 also holds torch 2.14.0 (CPU) and scvi-tools 1.5.0.post1 (frozen in trials/s2_reference_mapping/requirements_s2_env.txt); scarches package removed (incompatible with anndata 0.13); HLCA reference files under trials/s2_reference_mapping/reference/ are gitignored (embedding 2.37 GB, MD5 4aa9167707141dd884ff0202b3ab1205)
 
 pitfalls_for_ai_assistants:
