@@ -3,7 +3,7 @@
   "source": {
     "notion_page": "https://app.notion.com/p/3d1151616b44814c8697ff3af2f8f831",
     "notion_title": "UC Berkeley SAP PI Target Map",
-    "notion_last_checked": "2026-09-09",
+    "notion_last_checked": "2026-09-15",
     "ids_verified_against_pubmed_on": "2026-09-09"
   },
   "working_question": "Which epithelial and immune-state programmes distinguish productive lung repair from persistent dysplastic remodelling after inflammatory injury?",
@@ -13,8 +13,29 @@
     "gate_3A_condition": "cytokine or inflammation-resolution signal is strong",
     "gate_3B_condition": "regulatory T cells are sufficiently represented"
   },
+  "reranking_2026_09_15": {
+    "source": "the owner's Notion PI match page, child of the PI Target Map",
+    "constraints": "Spring 2027 SAP: 2027-01-12 to 2027-05-14 (about 18 weeks); non-matriculated BGA visiting status; 12 to 16 letter-graded units; URAP closed to visiting students",
+    "placement_targets": [
+      "nabhan",
+      "wagner"
+    ],
+    "conversation_targets": [
+      "saxton",
+      "dupage"
+    ],
+    "consequences": [
+      "papers 3 and 6 (Nabhan 2018, 2023) move to the front of the queue; proposal Nb1 is their trial",
+      "Gate 3A and 3B are paused, not closed; their opening conditions are tested by proposals S1 and D1",
+      "the analysis contract and the KRT8 pilot remain unwritten and stay the stop rule's precondition",
+      "paper 5 (Cardoso 2026) was completed out of order before the re-ranking and is unaffected"
+    ]
+  },
   "status_vocabulary": [
     "not started",
+    "next",
+    "queued",
+    "paused",
     "in progress",
     "done",
     "done, owner review pending"
@@ -99,8 +120,8 @@
       ],
       "datasets": [],
       "folder": null,
-      "note_status": "not started",
-      "trial_status": "not started"
+      "note_status": "next (re-ranking 2026-09-15)",
+      "trial_status": "next: proposal Nb1 (Thesis/gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md, Stage 2) is the trial this paper motivates; not run"
     },
     {
       "order": 4,
@@ -180,7 +201,7 @@
       ],
       "datasets": [],
       "folder": null,
-      "note_status": "not started",
+      "note_status": "queued after paper 3 (re-ranking 2026-09-15)",
       "trial_status": "not started"
     },
     {
@@ -197,7 +218,7 @@
       "extract": [],
       "datasets": [],
       "folder": null,
-      "note_status": "not started",
+      "note_status": "paused (Gate 3A paused 2026-09-15; opens if proposal S1 separates repair phases at the animal level)",
       "trial_status": "not started"
     },
     {
@@ -215,7 +236,7 @@
       "extract": [],
       "datasets": [],
       "folder": null,
-      "note_status": "not started",
+      "note_status": "paused (Gate 3A paused 2026-09-15; opens if proposal S1 separates repair phases at the animal level)",
       "trial_status": "not started"
     },
     {
@@ -232,7 +253,7 @@
       "extract": [],
       "datasets": [],
       "folder": null,
-      "note_status": "not started",
+      "note_status": "paused (Gate 3B paused 2026-09-15; opens if proposal D1 finds Tregs separable in an external series)",
       "trial_status": "not started"
     },
     {
@@ -249,7 +270,7 @@
       "extract": [],
       "datasets": [],
       "folder": null,
-      "note_status": "not started",
+      "note_status": "paused (Gate 3B paused 2026-09-15; opens if proposal D1 finds Tregs separable in an external series)",
       "trial_status": "not started"
     },
     {
@@ -267,7 +288,7 @@
       "extract": [],
       "datasets": [],
       "folder": null,
-      "note_status": "not started",
+      "note_status": "paused (Gate 3B paused 2026-09-15; opens if proposal D1 finds Tregs separable in an external series)",
       "trial_status": "not started"
     }
   ],

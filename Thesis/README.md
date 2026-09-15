@@ -29,15 +29,15 @@ remodelling after inflammatory injury?
 |--:|---|---|---|---|---|---|---|---|
 | 1 | 1 | Niethamer et al. 2025, *Cell Stem Cell* | [10.1016/j.stem.2024.12.002](https://doi.org/10.1016/j.stem.2024.12.002) | 39818203 | source paper for GSE262927: animals, time points, annotations, known findings, limits | [`gate1_01_niethamer_2025/`](gate1_01_niethamer_2025/README.md) | done (in `docs/`) | done (`analysis/GSE262927/`); PI-matched follow-ups N1 to N4 run 2026-09-10, Descriptive only, owner review pending: [`ANALYSIS_TRIAL_PLAN.md`](gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md) |
 | 2 | 1 | Choi et al. 2020, *Cell Stem Cell* | [10.1016/j.stem.2020.06.020](https://doi.org/10.1016/j.stem.2020.06.020) | 32750316 | biological spine: IL-1beta/HIF1alpha-driven AT2 to DATP to AT1 transition | [`gate1_02_choi_2020/`](gate1_02_choi_2020/README.md) | done, owner review pending | D0 run 2026-09-13: one gene space, no non-gene features, six of eight matrices are raw barcode whitelists, and **no contrast carries within-group replication**: [`ANALYSIS_TRIAL_PLAN.md`](gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md) |
-| 3 | 1 | Nabhan et al. 2018, *Science* | [10.1126/science.aam6603](https://doi.org/10.1126/science.aam6603) | 29420258 | fibroblast Wnt niches maintain AT2 stemness; niche exit permits AT1 differentiation | not started | not started | not started |
+| 3 | 1 | Nabhan et al. 2018, *Science* | [10.1126/science.aam6603](https://doi.org/10.1126/science.aam6603) | 29420258 | fibroblast Wnt niches maintain AT2 stemness; niche exit permits AT1 differentiation | **next** (re-ranking 2026-09-15: Nabhan is a placement target and the only one with no module built) | not started | proposal Nb1 in [`gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md`](gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md) (Stage 2) is the trial this paper motivates; not run |
 | 4 | 1 | Sikkema et al. 2023, *Nature Medicine* (HLCA) | [10.1038/s41591-023-02327-2](https://doi.org/10.1038/s41591-023-02327-2) | 37291214 | reference framework: annotation hierarchy, reference mapping, uncertainty handling, donor coverage, shared profibrotic macrophage states | [`gate1_04_sikkema_2023_hlca/`](gate1_04_sikkema_2023_hlca/README.md) | done, owner review pending | S1 to S5 run (Descriptive only); see [`ANALYSIS_TRIAL_PLAN.md`](gate1_04_sikkema_2023_hlca/ANALYSIS_TRIAL_PLAN.md) |
 | 5 | 2 | Cardoso, Lee et al. 2026, *Nature* | [10.1038/s41586-026-10399-6](https://doi.org/10.1038/s41586-026-10399-6) | 42020743 | early fibrotic niches; regenerative-like mutant AT2 states coordinate fibroblast and immune remodelling through AREG-EGFR | [`gate2_05_cardoso_2026/`](gate2_05_cardoso_2026/README.md) | done, owner review pending | C0 to C6 plus the E series run 2026-09-12 and 2026-09-13; Gate 1 returned **not recovered**, and six extension trials left this deposit for public data because it carries no within-group replication. E1 on GSE131907 is the only tested claim (p = 0.0020); E4 on GSE132771 refuted the second-signal reading of claim C29: [`ANALYSIS_TRIAL_PLAN.md`](gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md) |
-| 6 | 2 | Nabhan et al. 2023, *Cell* | [10.1016/j.cell.2023.05.022](https://doi.org/10.1016/j.cell.2023.05.022) | 37321220 | Frizzled-specific Wnt agonists separate regeneration from fibrotic risk; receptor-specific Wnt modules | not started | not started | not started |
-| 7 | 3A | Saxton et al. 2021, *Science* | [10.1126/science.abc8433](https://doi.org/10.1126/science.abc8433) | 33737461 | structure-based decoupling of IL-10 pro- and anti-inflammatory functions | not started | not started | not started |
-| 8 | 3A | Saxton et al. 2021, *Immunity* | [10.1016/j.immuni.2021.03.008](https://doi.org/10.1016/j.immuni.2021.03.008) | 33852830 | IL-22 tissue-protective vs pro-inflammatory functions decoupled | not started | not started | not started |
-| 9 | 3B | DuPage et al. 2015, *Immunity* | [10.1016/j.immuni.2015.01.007](https://doi.org/10.1016/j.immuni.2015.01.007) | 25680271 | Ezh2 maintains regulatory T cell identity after activation | not started | not started | not started |
-| 10 | 3B | Wang et al. 2018, *Cell Reports* | [10.1016/j.celrep.2018.05.050](https://doi.org/10.1016/j.celrep.2018.05.050) | 29898397 | targeting EZH2 reprograms intratumoral Tregs | not started | not started | not started |
-| 11 | 3B | Zhang et al. 2026, *Science Immunology* | [10.1126/sciimmunol.adx4411](https://doi.org/10.1126/sciimmunol.adx4411) | 41961946 | intratumoral Treg ablation elicits NK-mediated control | not started | not started | not started |
+| 6 | 2 | Nabhan et al. 2023, *Cell* | [10.1016/j.cell.2023.05.022](https://doi.org/10.1016/j.cell.2023.05.022) | 37321220 | Frizzled-specific Wnt agonists separate regeneration from fibrotic risk; receptor-specific Wnt modules | queued after paper 3 (re-ranking 2026-09-15) | not started | not started |
+| 7 | 3A | Saxton et al. 2021, *Science* | [10.1126/science.abc8433](https://doi.org/10.1126/science.abc8433) | 33737461 | structure-based decoupling of IL-10 pro- and anti-inflammatory functions | paused (Gate 3A paused 2026-09-15; opens if proposal S1 separates repair phases at the animal level) | not started | not started |
+| 8 | 3A | Saxton et al. 2021, *Immunity* | [10.1016/j.immuni.2021.03.008](https://doi.org/10.1016/j.immuni.2021.03.008) | 33852830 | IL-22 tissue-protective vs pro-inflammatory functions decoupled | paused (Gate 3A paused 2026-09-15; opens if proposal S1 separates repair phases at the animal level) | not started | not started |
+| 9 | 3B | DuPage et al. 2015, *Immunity* | [10.1016/j.immuni.2015.01.007](https://doi.org/10.1016/j.immuni.2015.01.007) | 25680271 | Ezh2 maintains regulatory T cell identity after activation | paused (Gate 3B paused 2026-09-15; opens if proposal D1 finds Tregs separable in an external series) | not started | not started |
+| 10 | 3B | Wang et al. 2018, *Cell Reports* | [10.1016/j.celrep.2018.05.050](https://doi.org/10.1016/j.celrep.2018.05.050) | 29898397 | targeting EZH2 reprograms intratumoral Tregs | paused (Gate 3B paused 2026-09-15; opens if proposal D1 finds Tregs separable in an external series) | not started | not started |
+| 11 | 3B | Zhang et al. 2026, *Science Immunology* | [10.1126/sciimmunol.adx4411](https://doi.org/10.1126/sciimmunol.adx4411) | 41961946 | intratumoral Treg ablation elicits NK-mediated control | paused (Gate 3B paused 2026-09-15; opens if proposal D1 finds Tregs separable in an external series) | not started | not started |
 
 Outside the roadmap but already in the repository: Kadur Lakshminarasimha
 Murthy et al. 2022, *Nature* (DOI
@@ -63,6 +63,18 @@ DOIs and PMIDs were verified against PubMed on 2026-09-09.
   **Gate 3B** opens only if regulatory T cells are sufficiently represented;
   note that the HLCA core could not separate Tregs from other T cells, which
   is a known ceiling for any reference-based route to that branch.
+- **Re-ranking of 2026-09-15.** The owner's Notion PI match page (linked
+  from the PI Target Map above) re-ranked the target labs against the
+  Spring 2027 SAP constraints (12 Jan to 14 May, about 18 weeks;
+  non-matriculated visiting status; 12 to 16 letter-graded units): Nabhan
+  and Wagner are placement targets, Saxton and DuPage are conversation
+  targets. Consequences for this roadmap: papers 3 and 6 (Nabhan 2018 and
+  2023) move to the front of the queue, with proposal Nb1 as their trial;
+  Gate 3A and 3B are paused rather than closed, since their opening
+  conditions stand and are exactly what proposals S1 and D1 test; the
+  analysis contract and the KRT8 pilot of the analysis gate are still
+  unwritten and remain the stop rule's precondition. Paper 5 was completed
+  out of order before this re-ranking and is not affected.
 
 ## Folder contract
 

@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-13 (roadmap paper 2 entered, plus repository chores; see the newest handoff block). Previously 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-15 (roadmap re-ranked against the SAP constraints: Nabhan papers next, Gate 3 paused; see item 30 and the newest handoff block). Previously 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -58,6 +58,10 @@ below). Nothing is running.
 | Batch sensitivity of the myeloid embedding, Harmony on infection round (`myeloid_focus/batch_sensitivity/`, script 13) | **DONE (2026-09-10), owner review pending**; rounds already mix within every tested day (enrichment 1.11 to 1.46, threshold 2); the 6 dpi iMON state survives correction as its own subcluster (92% of cells from 6 dpi, 77% and 74% of each animal's iMON cells); the frozen survival rule selected the wrong subcluster and the revision is disclosed |
 | Trial S2 merged into main; PROGRESS and DEVELOPMENT renumbered chronologically | **DONE (2026-09-10, PR #8)** |
 | Repository hygiene and reframing: `archive/` for displaced material, README opens with the claims table, injury model named once, checks renamed | **DONE (2026-09-10), owner review pending**; see item 22 |
+| Cardoso 2026 (Gate 2, paper 5): study note, extracts, trials C0 to C12 and E1 to E6 (`Thesis/gate2_05_cardoso_2026/`) | **DONE (2026-09-12 to 2026-09-13), owner review pending**; Gate 1 not recovered; list A exhausted; rows C19 to C57 and C65 to C84; items 23 to 25 and 27 to 29 |
+| Choi 2020 (Gate 1, paper 2): study note, extracts, trial D0 (`Thesis/gate1_02_choi_2020/`) | **DONE (2026-09-13), owner review pending**; D1 not started; rows C58 to C64; item 26 |
+| Generated `NEGATIVE_RESULTS.md`, one validated palette, shared deposit readers | **DONE (2026-09-13)** |
+| Roadmap re-ranked against the SAP constraints: Nabhan papers next, Gate 3 paused (`Thesis/README.md`, `ROADMAP.json`) | **DONE (2026-09-15)**; documentation only; see item 30 |
 
 Repository state: the scientific analysis and portfolio curation are complete;
 no analysis process is running. Branch-specific state belongs in Git/GitHub,
@@ -606,6 +610,48 @@ labelled cells.
      with the conflict stated. Reading it vindicates the paper rather than any
      hypothesis of ours, which is worth noting given the conflict.
    - Rows C80 to C84 in the claims register. Owner retain/reject review pending.
+30. **Roadmap re-ranked against the SAP constraints (2026-09-15).** The
+   owner's Notion PI match page now splits the four target labs into
+   placement targets (Nabhan, Wagner) and conversation targets (Saxton,
+   DuPage), on the Spring 2027 dispatch window (12 Jan to 14 May, about
+   18 weeks), the non-matriculated visiting status, the 12 to 16 unit
+   course load, and what this repository has ready for each lab (most of it
+   for Wagner, nothing for Nabhan). Consequences recorded in
+   `Thesis/README.md` (gate rules and the status column) and
+   `Thesis/ROADMAP.json` (a `reranking_2026_09_15` block and per-paper
+   statuses): papers 3 and 6 (Nabhan 2018 and 2023) are next, with proposal
+   Nb1 as their trial; Gate 3A and 3B are paused, not closed; the analysis
+   contract and the KRT8 pilot remain unwritten. Two pieces of document
+   drift were fixed in the same change: `AI_CONTEXT.md` still listed Choi
+   2020 as next and Cardoso as trials C0 to C3, and the status table above
+   had no Cardoso or Choi row. No analysis ran and no claim status changed.
+   - Owner decision: whether Saxton stays a conversation target. The past
+     SAP reviews record that the Saxton lab accepted a GIST visiting student
+     for Spring 2024, which improves the outreach signal without changing
+     the 18-week feasibility argument. The Notion page proposes a third,
+     lower-effort email; the roadmap keeps Gate 3A paused either way.
+
+---
+
+## Handoff: session of 2026-09-15, roadmap re-ranking
+
+Branch `Claude/roadmap-reranking-2026-09-15`. Documentation only; no script
+ran and no artefact changed.
+
+| What | Where | State |
+|---|---|---|
+| Re-ranking recorded in the roadmap | `Thesis/README.md` gate rules and status column; `Thesis/ROADMAP.json` | complete; validator passes |
+| Machine context brought in line | `AI_CONTEXT.md` status and `thesis_roadmap` block | complete |
+| Status table and item 30 | this file | complete |
+| Notion: PI match page re-ranked, precedents from 28 past SAP reviews added; PI Target Map modules re-tiered and packet extended | owner's Notion workspace | complete, outside git |
+
+**What the next session should do, in order.** (1) Nabhan 2018 (roadmap
+paper 3): study note in the five-question format, extracts JSON, and a Gate 0
+data reality check; the deposit accession is not yet recorded (`datasets` is
+empty in `ROADMAP.json`), so finding it is the first step. (2) Proposal Nb1
+depends on a W1-style per-animal pseudobulk for epithelium and mesenchyme,
+which has not been built; build it before any ligand-receptor step, per
+backbone step 5. (3) Nothing in Gate 3 until S1 or D1 has a result.
 
 ---
 
