@@ -21,7 +21,7 @@ project:
   repository: https://github.com/xorca0711/scRNA_seq
   status: >
     Stage 0 complete (PR #1 to #4); Stage 1 follow-ups and trials S1 to S5
-    merged (PR #5 to #8); Cardoso 2026 (Gate 2) and Choi 2020 (Gate 0) merged
+    merged (PR #5 to #8); Cardoso 2026 (Gate 2, branch 2C) and the Choi 2020 deposit check merged
     (PR #10 to #24); roadmap re-ranked against the SAP constraints on
     2026-09-15 (Nabhan papers next, Gate 3 paused); owner retain/reject
     review pending on most register rows (PROGRESS items 12 to 29)
@@ -41,7 +41,7 @@ datasets:
     cells_analysed: 27729  # 36,464 -> 29,605 post-QC -> 27,729 post-Scrublet
     integration: Harmony (primary embedding)
     source_paper: "Kadur Lakshminarasimha Murthy et al., Nature 2022, doi:10.1038/s41586-022-04541-3"
-  # Added 2026-09-12 for the Gate 2 paper. Downloaded, inventoried by trial C0,
+  # Added 2026-09-12 for the Gate 2 paper (reading-order branch 2C since 2026-09-15). Downloaded, inventoried by trial C0,
   # analysed under Thesis/gate2_05_cardoso_2026/, NOT under analysis/.
   - accession: GSE316241
     role: Cardoso 2026 mesenchyme (Gate 1 target)
@@ -225,6 +225,7 @@ pitfalls_for_ai_assistants:
   - "Claim C29's tiers are amplitudes, not populations (trial C8: Runx1 with Pdgfrb co-detected at ratio 1.099, inside the 0.80 to 1.25 independence band). The co-organisation is on the FALLING tier instead: Fst with Runx2 at 1.735 in Areg-flox/+ and 0.816 after deletion. That last observation is post hoc and rests on 24 double-positive cells in one library; label it as such."
   - "The tracked analysis/raw_data_inventory.* files describe the Stage 0 downloads (51 files) and the validator checks that count. The Cardoso downloads were added to raw_data/ afterwards and are inventoried by trial C0, not by that file. Do not re-run 01_scan_raw_data.py without also updating the validator."
   - "Do not write a study note for a roadmap paper the owner has not read. The owner writes or directs the note after reading (DEVELOPMENT decision 21, 2026-09-15). A deposit reality check may run when instructed, but the paper's folder is the owner's. When the owner answers 'proceed' to an agent-written list, name which items are being treated as approved before starting any that commit a reading on the owner's behalf."
+  - "Two gate namespaces. Reading-order gates (1, 2C, 2N, 2W, 3A, 3B) say when a paper is read and live in Thesis/README.md and ROADMAP.json; the trial gates inside Thesis/gate2_05_cardoso_2026 (0, 1, 2a, 2b, 2d) are the owner's analysis gates for that paper alone. Never conflate them, and never rename a trial gate to match a reading-order branch."
 
 reproduce:
   - python analysis/scripts/01_scan_raw_data.py

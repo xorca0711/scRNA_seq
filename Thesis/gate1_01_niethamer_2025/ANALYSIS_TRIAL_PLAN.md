@@ -132,19 +132,24 @@ grading and for descriptive composition.
 
 | Lab | Figure | Sentence it supports |
 |---|---|---|
-| Nabhan | `phase_timecourse/figures/proliferation_by_lineage.png` | Epithelium and mesenchyme proliferate in the same window (11 dpi), which is when a stem-niche question should be asked. This entry rests on the proliferation trace only; the Krt8-high trajectory (step 0.5a) is displaced and is not used here. |
-| Wagner | `myeloid_focus/figures/myeloid_label_composition_by_dpi.png` and `amac_origin/figures/trace_by_window_late_harvests.png` | Monocyte and macrophage states turn over on a per-animal, trace-dated timeline. |
-| Saxton | `myeloid_focus/figures/myeloid_label_composition_by_dpi.png` | The myeloid response resolves between 11 and 42 dpi; a receptor layer is the next step. |
-| DuPage | none from this series | Tregs are not resolvable here (one 176-cell candidate cluster that the labels contradict); see Stage 2. |
+| Nabhan (branch 2N) | `phase_timecourse/figures/proliferation_by_lineage.png` | Epithelium and mesenchyme proliferate in the same window (11 dpi), which is when a stem-niche question should be asked. This entry rests on the proliferation trace only; the Krt8-high trajectory (step 0.5a) is displaced and is not used here. |
+| Wagner (branch 2W) | `myeloid_focus/figures/myeloid_label_composition_by_dpi.png` and `amac_origin/figures/trace_by_window_late_harvests.png` | Monocyte and macrophage states turn over on a per-animal, trace-dated timeline. |
+| Saxton (branch 3A, paused) | `myeloid_focus/figures/myeloid_label_composition_by_dpi.png` | The myeloid response resolves between 11 and 42 dpi; a receptor layer is the next step. |
+| DuPage (branch 3B, paused) | none from this series | Tregs are not resolvable here (one 176-cell candidate cluster that the labels contradict); see Stage 2. |
 
 ## Stage 2. Proposed and not run
 
+Branch labels follow the reading order of 2026-09-15
+([`Thesis/README.md`](../README.md)): 2N and 2W are the placement-target
+branches, 3A and 3B are paused until S1 or D1 returns a result. W1 is read
+with papers 15 and 16; Nb1 with papers 3, 6 and 14.
+
 | Id | Lab | Proposal | Needs | Stop condition |
 |---|---|---|---|---|
-| W1 | Wagner | Pseudobulk the myeloid subset per animal by phase and define the reconstituting aMAC programme (lipid and surfactant catabolism, Krt79); compare with the ARG1 and ornithine axis of Yadav et al. 2025 [DOI](https://doi.org/10.1172/JCI188734) | script 11 outputs; per-animal counts | fewer than 3 animals per pooled phase |
-| S1 | Saxton | Receptor expression (Csf2rb, Il10ra, Il10rb, Tgfbr1, Tgfbr2, Il4ra) on the reconstituting subclusters per phase; STAT3-like protective versus STAT1-like inflammatory programme scores in epithelium per animal and phase (gate 3A condition) | pseudobulk from W1 | no programme separates phases at the animal level |
-| Nb1 | Nabhan | Ligand and receptor candidates between AT2 (cluster 10) and the fibroblast niche (clusters 12, 14, 22) at 11 dpi, only after the pseudobulk step (backbone step 5) | W1-style pseudobulk for epithelium and mesenchyme | candidate pairs not expressed in both partners in at least 2 animals |
-| D1 | DuPage | Gate 3B check on external lung-Treg single-cell series: Loffredo et al. 2025 [DOI](https://doi.org/10.1172/jci.insight.187245) (GSE292440, GSE277256, GSE277226) and McCullough et al. 2026 [DOI](https://doi.org/10.1093/jimmun/vkag119) (GSE300399) | new raw-data inventory entries | Tregs not separable from other T cells in those series |
+| W1 | Wagner (2W) | Pseudobulk the myeloid subset per animal by phase and define the reconstituting aMAC programme (lipid and surfactant catabolism, Krt79); compare with the ARG1 and ornithine axis of Yadav et al. 2025 [DOI](https://doi.org/10.1172/JCI188734) | script 11 outputs; per-animal counts | fewer than 3 animals per pooled phase |
+| S1 | Saxton (3A) | Receptor expression (Csf2rb, Il10ra, Il10rb, Tgfbr1, Tgfbr2, Il4ra) on the reconstituting subclusters per phase; STAT3-like protective versus STAT1-like inflammatory programme scores in epithelium per animal and phase (gate 3A condition) | pseudobulk from W1 | no programme separates phases at the animal level |
+| Nb1 | Nabhan (2N) | Ligand and receptor candidates between AT2 (cluster 10) and the fibroblast niche (clusters 12, 14, 22) at 11 dpi, only after the pseudobulk step (backbone step 5) | W1-style pseudobulk for epithelium and mesenchyme | candidate pairs not expressed in both partners in at least 2 animals |
+| D1 | DuPage (3B) | Gate 3B check on external lung-Treg single-cell series: Loffredo et al. 2025 [DOI](https://doi.org/10.1172/jci.insight.187245) (GSE292440, GSE277256, GSE277226) and McCullough et al. 2026 [DOI](https://doi.org/10.1093/jimmun/vkag119) (GSE300399) | new raw-data inventory entries | Tregs not separable from other T cells in those series |
 | V1 | all | Held-out human validation of the myeloid states: Bailey et al. 2024 [DOI](https://doi.org/10.1038/s41590-024-01975-x) (GSE232628 and companions) and Li et al. 2024 [DOI](https://doi.org/10.1126/scitranslmed.adn0136) (GSE263817) | mouse-to-human ortholog panel; donor-aware pseudobulk | states do not map at the donor level |
 
 Papers above were identified through PubMed on 2026-09-10; GEO accessions

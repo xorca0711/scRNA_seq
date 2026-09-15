@@ -7,6 +7,11 @@ trial is the docstring at the top of its script; the narrative is
 [`../ANALYSIS_TRIAL_PLAN.md`](../ANALYSIS_TRIAL_PLAN.md) and the reasoning is
 [`../DIVERGENCES_AND_NEXT.md`](../DIVERGENCES_AND_NEXT.md).
 
+**Two gate namespaces.** The trial gates in this folder (0, 1, 2a, 2b, 2d)
+are the owner's analysis gates for this paper. The reading-order gates (1,
+2C, 2N, 2W, 3A, 3B) are a different thing and live in
+[`../../README.md`](../../README.md); this paper is branch 2C.
+
 **Three naming conventions.** The **C series** works on the Cardoso deposit
 itself. The **E series** leaves it for public datasets, because that deposit
 carries one library per genotype and cannot support a tested comparison. A
