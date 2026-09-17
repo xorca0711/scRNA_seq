@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-15, session closed (three documentation pull requests merged: roadmap re-ranked, reading order given Gate 2 branches, Choi 2020 folder withdrawn with its deposit check kept as Cardoso trial D0, decision 21 corrected, branch labels carried everywhere; see items 30 to 32 and the closing handoff block). Previously 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-17 (Cardoso trials C13 and C14: the transcriptional explanation for the sort contaminant refuted, and the generalisation this repository drew from C12 refuted by varying only the ligand-receptor database; eleven duplicated claim identifiers found and renumbered, with a validator check added; see item 34). Previously 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -690,6 +690,60 @@ labelled cells.
    `raw_data/GSE145031/choi_trials/` and `raw_data/GSE144468/choi_trials/`.
    Proposals E1 to E6 listed, not run; E6 (primed AT2 as a graded state) is
    the one the results make pressing and needs the owner's pre-registration.
+
+34. **Two more Cardoso trials, a self-correction, and a numbering collision the
+   register could not see** (`c13_epcam_transcript_in_the_transitional_state.py`,
+   `c14_does_the_ranking_depend_on_the_database.py`, 2026-09-17, owner
+   instruction).
+   - **C13 kills the simple explanation for the sort contaminant.** The owner
+     asked for a surface-EpCAM check, which three-prime counting cannot do, so
+     the trial tested the one thing the data type can settle. Across five
+     libraries of two deposits, Epcam transcript is equal or higher in the
+     transitional state, never lower, against a frozen rule wanting a ten-point
+     deficit everywhere. Transcriptional downregulation therefore does not
+     explain the escape, and any surface dimming has to be post-transcriptional,
+     which is consistent with the shared-sheddase account and is not evidence
+     for it. ADAM17 releases amphiregulin (doi:10.1083/jcb.200307137) and also
+     cleaves EpCAM with presenilin-2 (doi:10.1038/ncb1824).
+   - **Both cautions on that number, pointing opposite ways.** The positive
+     difference is not upregulation, because Epcam is near its detection ceiling
+     in both groups and transitional cells are deeper in all five libraries. The
+     absence of a deficit is robust for the same reason: a ten-point shortfall
+     cannot hide in a gene detected in nine cells out of ten, and the largest
+     deficit anywhere is 6.6 points, falling to 0.2 at depth.
+   - **Exploratory context, caveat attached.** ADAM17 transcript does not rise,
+     its only endogenous inhibitor Timp3 falls 40 points in every library, and
+     both iRhom partners rise. Two of those run against the depth gradient and
+     are conservative; the iRhom pair runs with it and is weakest; Timp3 loss is
+     generic to injured states.
+   - **C14 refutes a generalisation this repository had asserted.** After C12,
+     section 12 of the divergence document said a whole-resource ligand-receptor
+     scan on dissociated tissue always surfaces the matrix. Holding cells,
+     donors, compartments and scoring fixed and varying only the curated
+     resource, the abundance guard fires in one resource of five: CellChatDB at
+     0.80, then 0.40, 0.27, 0.20 and 0.20. The domination is CellChatDB's, not
+     the tissue's. Section 12 is corrected in place and points at the
+     refutation rather than being rewritten.
+   - **What survives better than before.** AREG ranks first among the EGFR
+     ligands in every resource that contains them, four of five, with the order
+     identical in three. Holding the receptor constant removes the curation
+     effect along with the promiscuity effect. The heads of the rankings barely
+     agree otherwise: CellChatDB shares zero of its top fifteen with italk.
+   - **A numbering collision, and the check that now prevents it.** The Choi
+     2020 folder took rows C85 to C104 on 2026-09-15; C13 and C14 numbered from
+     C85 again and collided across eleven identifiers. The Choi rows came first
+     and are cited by item 33 and decision 23, so they keep their numbers and
+     these moved to C105 to C115. Nothing caught it because the register had
+     only ever been read by people, so `validate_repository.py` now fails the
+     build on a duplicate claim identifier.
+   - **Three process failures, all mine.** Two runs were killed by the operating
+     system during the largest resource with no traceback, and a truncated
+     process listing was twice misread as evidence they had died, so duplicates
+     were launched that competed for memory; one run was orphaned by using a
+     shell background instead of the harness. C14 now checkpoints each resource
+     to its own file and skips it on rerun.
+   - Rows C105 to C115; sections 13 and 14 of the divergence document; trials
+     index updated. Owner retain/reject review pending.
 
 ---
 

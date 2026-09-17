@@ -87,6 +87,31 @@ def heading_slugs(text: str) -> set[str]:
     return slugs
 
 
+def check_claim_ids_unique(result: Validation) -> None:
+    """Every row of the claims register must own its identifier.
+
+    Two papers numbering from the same point produced eleven duplicated
+    identifiers on 2026-09-17, which nothing caught because the register was
+    only ever read by humans. A duplicate makes every cross-reference to that
+    number ambiguous, so it fails the build.
+    """
+    claims = REPO / "CLAIMS.md"
+    if not claims.exists():
+        return
+    seen: dict[str, int] = defaultdict(int)
+    for line in claims.read_text(encoding="utf-8").splitlines():
+        match = re.match(r"^\|\s*(C\d+)\s*\|", line)
+        if match:
+            seen[match.group(1)] += 1
+    duplicates = sorted((k for k, v in seen.items() if v > 1), key=lambda s: int(s[1:]))
+    result.require(
+        not duplicates,
+        "duplicate claim identifier in CLAIMS.md: " + ", ".join(duplicates),
+    )
+    for identifier in sorted(seen, key=lambda s: int(s[1:])):
+        result.require(True, f"claim {identifier} is unique")
+
+
 def check_markdown_links(result: Validation) -> None:
     slug_cache: dict[Path, set[str]] = {}
 
@@ -223,6 +248,7 @@ def main() -> int:
         result.require((REPO / relative).exists(), f"required file missing: {relative}")
 
     check_markdown_links(result)
+    check_claim_ids_unique(result)
     check_machine_readable_files(result)
     check_headline_results(result)
 
