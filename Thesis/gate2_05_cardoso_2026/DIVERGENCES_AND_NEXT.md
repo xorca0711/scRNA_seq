@@ -35,6 +35,7 @@ According to PubMed for all external citations, with DOIs given inline.
 | [11](#11-the-lead-closes-and-the-figures-for-every-contradiction-2026-09-13) | the lead closing, and the four rule defects compared |
 | [12](#12-the-full-resource-and-what-a-whole-resource-scan-actually-measures-2026-09-13) | the full resource scan, and what such a scan measures |
 | [13](#13-where-the-sort-contaminant-came-from-as-far-as-transcripts-can-say-2026-09-17) | why those cells escaped the gate, as far as transcripts can say |
+| [14](#14-the-database-not-the-tissue-2026-09-17) | the database comparison, and a self-correction |
 
 ---
 
@@ -888,11 +889,17 @@ sorting by abundance rather than by anything about signalling. The guard written
 for exactly this possibility fired, so the ranking is not read.
 
 That is worth more to this repository than a ranking would have been, because
-it explains something about the method the paper used. A whole-resource scan on
-dissociated tissue will always surface the matrix, and any such analysis that
-reports its top hits without a guard of this kind is reporting abundance. The
-paper avoided the problem by naming a shortlist in advance, which is a defensible
-choice and not the shortcut it can look like.
+it says something about the method the paper used. **The generalisation this
+paragraph originally drew was wrong, and section 14 records its refutation.** It
+said a whole-resource scan on dissociated tissue will always surface the matrix.
+Trial C14 held the cells, donors, compartments and scoring fixed, varied only the
+curated resource, and found the guard fires in one resource of five. The
+domination belongs to CellChatDB rather than to dissociated tissue in general.
+
+What stands is the narrow statement: CellChatDB's ranking on this tissue is
+dominated by matrix pairs and should not be read without a guard. The defence of
+the paper's shortlist also stands, but on a weaker footing than first written,
+because which resource a scan used would have decided how badly it was swamped.
 
 The one clean comparison is within a receptor, where holding EGFR constant
 removes the promiscuity effect entirely. There, across 26 donors and by the
@@ -967,3 +974,50 @@ does, every EpCAM-based epithelial sort in alveolar biology under-samples the
 state the field is studying, and the cells that are captured are biased toward
 the EpCAM-retaining end of it. If it does not, the contaminant is ordinary
 impurity and the only lesson stays the analytical one from section 2.
+
+---
+
+## 14. The database, not the tissue (2026-09-17)
+
+Section 12 drew a general lesson from trial C12: that a whole-resource
+ligand-receptor scan on dissociated tissue will always surface the matrix,
+because collagens and laminins are the most abundant transcripts a fibroblast
+carries and CD44 is promiscuous. It read as a methods insight and it was stated
+with more confidence than it had earned.
+
+Trial C14 refutes it. Holding the cells, the donors, the compartments and the
+scoring fixed and varying only the curated resource, the abundance guard fires
+in one resource of five. CellChatDB gives an abundance share of 0.80 in its top
+fifteen. The other four give 0.40, 0.27, 0.20 and 0.20. So the domination is
+substantially a property of how CellChatDB is assembled rather than a universal
+consequence of counting transcripts.
+
+The narrower statement survives: CellChatDB's ranking on this tissue is
+dominated by matrix pairs and should not be read, which is what C12's guard
+concluded and what C12's verdict recorded. Only the generalisation to any
+resource falls, and it was the part this page asserted rather than the part the
+trial tested.
+
+Two things this makes sharper. The head of a ligand-receptor ranking is a
+curation artefact to a degree that is easy to underestimate: CellChatDB shares
+zero of its top fifteen with italk, and three of fifteen with cellphonedb,
+while the three non-CellChat resources agree with each other at a Jaccard of
+0.43 to 0.58. And the defence of the paper's method offered in section 12, that
+naming a shortlist in advance was the right call, now rests on a weaker
+argument than stated, because the resource a scan would have used determines
+how badly it would have been swamped.
+
+What does hold, and holds better than before, is the ligand result. AREG ranks
+first among the EGFR ligands in every resource that contains them, with the
+full order identical in three of the four. Holding the receptor constant
+removes the curation effect along with the promiscuity effect, so the
+comparison that was readable in C12 is the one that reproduces across
+curations. The paper's choice of ligand survives a test of the database it was
+scored against.
+
+The trial also flags its own guard as incomplete. It was widened for C14 to
+catch fibronectin and CD44 after C12's version missed them, and it still fails
+to catch TIMP1 to CD63, which tops three of the five resources. The
+undercount is conservative, so the four resources called readable may be less
+readable than they appear. That is the seventh time in this folder that writing
+a rule out has exposed the rule rather than the result.

@@ -1,0 +1,119 @@
+{
+  "trial": "C14 does the ranking depend on the database",
+  "rules_frozen_at": "2026-09-17T06:21:51+00:00",
+  "rules": {
+    "question": "is C12's result a property of the data or of CellChat's database",
+    "held_constant": "object, donors, compartments, method (LIANA CellChat, n_perms=None)",
+    "varied": [
+      "cellchatdb",
+      "cellphonedb",
+      "consensus",
+      "connectomedb2020",
+      "italk"
+    ],
+    "resource_sizes_differ": "1,223 to 4,620 pairs, so curation decides what exists to be ranked",
+    "disclosed_guard_change": "C12's guard tested COL or LAM ligands and ITG or SDC receptors; applied to C12's own output it missed FN1 to CD44 and never named CD44, which eleven of its top fifteen targeted. This trial's guard adds FN1 and CD44, was defined before running, and is applied uniformly. C12's verdict is NOT restated under it.",
+    "sources": "every epithelial type",
+    "targets": [
+      "Fibroblast",
+      "Myofibroblast"
+    ],
+    "unit": "the donor; at least 50 cells in both compartments; median rank; a pair kept only if it appears in at least half the contributing donors",
+    "T1": "guard per resource: share of the top 15 that are abundance-type; above one half the ranking is not read",
+    "T2": "does the guard fire in every resource",
+    "T3": "where AREG ranks among the EGFR ligands each resource contains",
+    "T4": "pairwise Jaccard overlap of the top-15 lists across resources",
+    "not_tested": "whether any pair is a real interaction; co-expression carries no proximity",
+    "checkpointing": "each resource writes its own partial file and is skipped when rerun; the first run was killed by the operating system during the consensus resource, with no traceback"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE136831\\c12_epithelial_stromal.h5ad",
+      "bytes": 584225252,
+      "modified": "2026-09-13T12:45:11+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c14_does_the_ranking_depend_on_the_database\\c14_rankings_by_resource.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c14_does_the_ranking_depend_on_the_database\\c14_resource_summary.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c14_does_the_ranking_depend_on_the_database\\c14_top15_overlap.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c14_does_the_ranking_depend_on_the_database\\c14_summary.md"
+  ],
+  "results": {
+    "donors": 26,
+    "T2_guard_fires_everywhere": false,
+    "T1_per_resource": [
+      {
+        "resource": "cellchatdb",
+        "pairs": 313,
+        "abundance_share_top15": 0.8,
+        "guard_fires": true,
+        "n_egfr_ligands_present": 5,
+        "areg_rank_among_egfr_ligands": 1.0,
+        "egfr_ligand_order": "AREG, HBEGF, TGFA, EREG, BTC",
+        "top_pair": "COL4A2 to CD44"
+      },
+      {
+        "resource": "cellphonedb",
+        "pairs": 216,
+        "abundance_share_top15": 0.4,
+        "guard_fires": false,
+        "n_egfr_ligands_present": 3,
+        "areg_rank_among_egfr_ligands": 1.0,
+        "egfr_ligand_order": "AREG, EREG, BTC",
+        "top_pair": "APP to CD74"
+      },
+      {
+        "resource": "consensus",
+        "pairs": 790,
+        "abundance_share_top15": 0.267,
+        "guard_fires": false,
+        "n_egfr_ligands_present": 0,
+        "areg_rank_among_egfr_ligands": NaN,
+        "egfr_ligand_order": null,
+        "top_pair": "TIMP1 to CD63"
+      },
+      {
+        "resource": "connectomedb2020",
+        "pairs": 406,
+        "abundance_share_top15": 0.2,
+        "guard_fires": false,
+        "n_egfr_ligands_present": 5,
+        "areg_rank_among_egfr_ligands": 1.0,
+        "egfr_ligand_order": "AREG, HBEGF, TGFA, EREG, BTC",
+        "top_pair": "TIMP1 to CD63"
+      },
+      {
+        "resource": "italk",
+        "pairs": 539,
+        "abundance_share_top15": 0.2,
+        "guard_fires": false,
+        "n_egfr_ligands_present": 5,
+        "areg_rank_among_egfr_ligands": 1.0,
+        "egfr_ligand_order": "AREG, HBEGF, TGFA, EREG, BTC",
+        "top_pair": "TIMP1 to CD63"
+      }
+    ],
+    "T3_areg_rank_values": [
+      1.0
+    ],
+    "T4_median_jaccard": 0.034,
+    "reading": "the domination is partly a curation property: the guard fires in 1 of 5 resources, and the ones that stay readable are the finding. AREG is first among the EGFR ligands in every resource that contains them, so that result did not depend on CellChatDB."
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-17T06:57:05+00:00"
+}

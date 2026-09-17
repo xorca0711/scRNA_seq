@@ -17,10 +17,10 @@ the claim's potential.
 | Bucket | Rows |
 |---|--:|
 | Retracted or superseded, kept on display | 2 |
-| Refuted | 17 |
+| Refuted | 19 |
 | Not establishable with the data that exists | 5 |
-| Not established | 23 |
-| **Total** | **47** |
+| Not established | 24 |
+| **Total** | **50** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -148,11 +148,25 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_depth_split.csv`
 - **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
+### C91. A whole-resource ligand-receptor scan on dissociated tissue always surfaces matrix pairs against promiscuous receptors
+
+- **Status in the register:** Refuted
+- **What settled it:** trial C14: holding cells, donors, compartments and method fixed and varying only the resource, the abundance guard fires in 1 of 5, with shares of 0.80, 0.40, 0.27, 0.20 and 0.20
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c14_does_the_ranking_depend_on_the_database/c14_resource_summary.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
 ### C92. The day-14 DATP fraction is calling-sensitive: adding the barcodes that pass a plain floor but not the paper's filter moves it from 0.183 to 0.150 against a 0.02 limit
 
 - **Status in the register:** Refuted as a sensitivity finding, and disclosed
 - **What settled it:** trial D4 C1: 844 such barcodes, 7 of them DATP-like; the move comes from the denominator
 - **Artefact:** `Thesis/gate1_02_choi_2020/trials/d4_composition_and_controls/d4_calling_sensitivity.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C95. The widened abundance guard catches every abundance-type pair
+
+- **Status in the register:** Refuted by its own output, and disclosed
+- **What settled it:** trial C14: it still misses TIMP1 to CD63, which tops three of the five resources
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c14_does_the_ranking_depend_on_the_database/c14_rankings_by_resource.csv`
 - **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ### C95. The first organoid pass recovers the paper's epithelial cell counts
@@ -343,6 +357,13 @@ what was refuted and what settled it.
 - **Status in the register:** Not established as written
 - **What settled it:** trial D2b: R4 fails because day-14 hAT2 (0.717) does not halve against PBS (0.984) and pAT2 is absent; R5 fails on pAT2 alone, every other direction holding
 - **Artefact:** `Thesis/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_readings.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C94. The consensus resource lacks EGFR-targeting pairs
+
+- **Status in the register:** Not established
+- **What settled it:** trial C14: it returned none, but that resource names many receptors as complexes and a complex name will not match a plain string
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c14_does_the_ranking_depend_on_the_database/c14_resource_summary.csv`
 - **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ### C94. DATP-like cells arise outside the labelled AT2 lineage at day 14
