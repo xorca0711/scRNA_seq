@@ -53,6 +53,7 @@ one-line outcomes is [`trials/README.md`](trials/README.md).
 | [C10](#c10-the-published-pathological-fibroblast-or-not-2026-09-13) | published state or not | the lead closes |
 | [C11](#c11-figures-for-the-contradictions-2026-09-13) | contradiction figures | six drawn |
 | [C12](#c12-the-whole-cellchatdb-ranked-2026-09-13) | the full resource scan | the ranking reports abundance; AREG still first among EGFR ligands |
+| [C13](#c13-epcam-transcript-in-the-transitional-state-2026-09-17) | the contaminant's escape | the transcriptional explanation is refuted |
 | [D0](#d0-the-choi-2020-deposit-check-now-in-the-paper-2-folder) | the Choi 2020 deposit | one library per condition again; now with the rest of that paper's trials |
 
 ---
@@ -1375,3 +1376,129 @@ when the owner re-entered the paper the same day. Nothing in it changed; it
 keeps its identifier and its claims rows C58 to C64. What it established
 still governs this folder's reading of the DATP state: one library per
 condition, six raw whitelists, no counted reporter, coverage-only ATAC.
+
+---
+
+## C13. Epcam transcript in the transitional state (2026-09-17)
+
+Script [`trials/c13_epcam_transcript_in_the_transitional_state.py`](trials/c13_epcam_transcript_in_the_transitional_state.py);
+artefacts in [`trials/c13_epcam_transcript_in_the_transitional_state/`](trials/c13_epcam_transcript_in_the_transitional_state/).
+
+### The question, and the one thing this data type can settle
+
+Trial C1d found 184 epithelial cells inside an EpCAM-negative mesenchymal sort,
+88 per cent of them Areg-positive, and trial C7 showed they are a mixture of
+roughly four parts transitional state to four parts AT2. Two explanations for
+the escape compete, and they differ in where the loss of surface EpCAM happens.
+Either the transitional state expresses less Epcam and therefore stains dimly,
+or it carries the message and sheds the protein.
+
+The second is mechanistically attractive because the sheddase is shared.
+ADAM17 releases amphiregulin (Sahin et al. 2004, doi:10.1083/jcb.200307137)
+and also cleaves the EpCAM ectodomain with presenilin-2 (Maetzel et al. 2009,
+doi:10.1038/ncb1824), so a cell becoming an amphiregulin source would be the
+same cell going EpCAM-dim.
+
+**Three-prime counting cannot see surface protein and cannot see shedding.**
+What it can see is the transcript, and that settles the question in one
+direction only: a clear deficit would make the transcriptional account
+sufficient, while no deficit would mean any surface dimming has to be
+post-transcriptional. The trial was written that way and says so in its own
+docstring.
+
+Five libraries cleared the 50-cell floor in both states: three from the
+companion series and both RFP-sorted libraries of the Areg-flox arm. The 4-day
+replicate 1 library did not, which matches trial C3 finding only 44
+transitional cells there.
+
+### Outcome: the transcript does not explain the escape
+
+The sanity check passed first. Amphiregulin is higher in the transitional state
+than in AT2 in every library, by up to 43 points, which is what trial C3
+established and confirms the state calls are working.
+
+| Library | Epcam, transitional | Epcam, AT2 | Difference |
+|---|--:|--:|--:|
+| 2 weeks, replicate 1 | 0.966 | 0.927 | +0.039 |
+| 2 weeks, replicate 2 | 0.982 | 0.894 | +0.088 |
+| 4 days, replicate 2 | 0.667 | 0.646 | +0.022 |
+| Areg-flox/+ | 0.991 | 0.925 | +0.066 |
+| Areg-flox/flox | 0.990 | 0.911 | +0.079 |
+
+Epcam is not lower in the transitional state anywhere. The frozen rule required
+a deficit in every library with a median of at least 10 points, and the
+observed direction is the opposite. **So transcriptional downregulation does
+not explain the escape, and any surface dimming would have to be
+post-transcriptional.** That is consistent with the shedding account and is not
+evidence for it, because nothing here sees protein.
+
+### Two things that must be said about that number
+
+**The positive difference is not upregulation.** Epcam sits between 0.89 and
+1.00 in both groups in four of the five libraries, which is at or near the
+detection ceiling, and the transitional cells are systematically deeper: 4,529
+against 3,581 median genes per cell in the Areg-flox/flox library, and higher
+in all five. A deeper cell detects more of everything, so a small positive gap
+in a near-saturated gene is what depth and a ceiling produce together. The gap
+should not be read as the transitional state expressing more Epcam.
+
+**The absence of a deficit is robust, and for the same reason.** The depth
+split makes this visible. In the deep half of each library both groups sit at
+0.97 to 1.00 and the difference collapses to between 0.2 and 3 points. In the
+shallow half the gap is larger. At no point, in any library or either half, is
+Epcam lower in the transitional state by more than 6.6 points, and that single
+largest deficit is in the shallow half of the shallowest library and shrinks to
+0.2 points at depth. A 10-point deficit cannot hide inside a gene detected in
+nine cells out of ten.
+
+### The sixth disclosed rule defect
+
+The frozen depth control asked whether the direction survives both halves. It
+reported failure, because in the 4-day library the difference moves from +0.066
+to +0.002 and the sign of a quantity that small is meaningless. The rule
+specified what counts as a reversal without specifying what to do when the
+difference is near zero, which is the same shape as the five defects recorded
+in section 11.3 and section 12: a threshold with no statement of when its own
+answer becomes unreadable. The threshold was not moved and the verdict stands
+in the record; what is read here is the magnitude argument above.
+
+### The exploratory sheddase context, with its caveat attached
+
+ADAM17 is controlled overwhelmingly after translation, through iRhom-dependent
+trafficking, a protein-disulphide-isomerase conformational switch and
+phosphorylation, so its mRNA is a poor proxy for working enzyme. The trial
+carried these genes as context only and said so before running.
+
+| Gene | Predicted | Agrees in every library | Median difference |
+|---|---|---|--:|
+| Timp3, the only endogenous ADAM17 inhibitor | down | yes | -0.400 |
+| Rhbdf2, iRhom2 | up | yes | +0.143 |
+| Rhbdf1, iRhom1 | up | yes | +0.065 |
+| Adam17 itself | up | no | -0.082 |
+
+The pattern is coherent in a way worth noting and not worth leaning on. The
+sheddase transcript does not rise. Its only endogenous inhibitor falls hard and
+in every library. Its trafficking partners rise. That is what more surface
+ADAM17 activity without more ADAM17 message would look like, which is how the
+enzyme is actually regulated.
+
+Two of those four readings are robust to the depth confound in the conservative
+direction, which is worth separating. The transitional cells are deeper, so
+they should detect more of everything; Timp3 nevertheless falls by 40 points
+and Adam17 does not rise, both against the depth gradient. The two iRhom
+results run with the depth gradient and are therefore the weakest of the four.
+
+Timp3 loss is also a generic feature of activated and injured states rather
+than anything specific to this mechanism, so it raises the prior and tests
+nothing.
+
+### Claims from C13
+
+| Claim | Class |
+|---|---|
+| Transcriptional downregulation of Epcam explains why the transitional state escapes an EpCAM-negative gate | Refuted; Epcam is not lower in any library or either depth half |
+| The transitional state expresses more Epcam than AT2 | Not established; the gap is a ceiling and depth artefact, not upregulation |
+| Any surface EpCAM dimming in these cells is post-transcriptional | Descriptive only, and the negative space left by the refutation rather than a positive result |
+| The transitional state carries less TIMP3, the only endogenous ADAM17 inhibitor, in every library | Exploratory; robust against the depth gradient, and generic to injured states |
+| ADAM17 transcript rises in the transitional state | Refuted; it does not, which is unremarkable for a post-translationally controlled enzyme |
+| Any of this measures surface protein, shedding or enzyme activity | Not establishable with three-prime counts; flow cytometry on lineage-labelled cells is the test |

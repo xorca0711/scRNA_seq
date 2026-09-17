@@ -17,10 +17,10 @@ the claim's potential.
 | Bucket | Rows |
 |---|--:|
 | Retracted or superseded, kept on display | 2 |
-| Refuted | 14 |
+| Refuted | 17 |
 | Not establishable with the data that exists | 5 |
-| Not established | 22 |
-| **Total** | **43** |
+| Not established | 23 |
+| **Total** | **47** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -120,11 +120,32 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_run_record.json`
 - **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
+### C85. Transcriptional downregulation of Epcam explains why the transitional state escapes an EpCAM-negative gate
+
+- **Status in the register:** Refuted
+- **What settled it:** trial C13 T1 on five libraries of GSE247505 and GSE316244: Epcam detection is equal or higher in the transitional state everywhere, and no depth half shows a deficit above 6.6 points
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
 ### C86. A cluster-level rule with Sftpc-low clauses can call AT1 and contaminant clusters in a lineage-sorted AT2 library
 
 - **Status in the register:** Refuted as written, and disclosed
 - **What settled it:** trial D2 first pass: every one of fourteen clusters detects Sftpc in 100 percent of cells, so the clauses never fired; a 337-cell cluster with AT1 canonical detection 0.70 was labelled hAT2 and a ciliated cluster took the primed-AT2 label
 - **Artefact:** `Thesis/gate1_02_choi_2020/trials/d2_state_recovery/d2_cluster_annotation_res1.0.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C89. Adam17 transcript rises in the transitional state
+
+- **Status in the register:** Refuted
+- **What settled it:** trial C13 T2: it does not, median difference -0.08, and the direction disagrees across libraries
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C90. Trial C13's depth control identified a real reversal
+
+- **Status in the register:** Refuted as written, and disclosed
+- **What settled it:** trial C13 T3: the flagged library moves from +0.066 to +0.002 between halves, a sign flip around zero rather than a reversed effect; the rule said what counts as a reversal but not when a difference is too small to have a sign
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_depth_split.csv`
 - **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ### C92. The day-14 DATP fraction is calling-sensitive: adding the barcodes that pass a plain floor but not the paper's filter moves it from 0.183 to 0.150 against a 0.02 limit
@@ -301,6 +322,13 @@ what was refuted and what settled it.
 - **Status in the register:** Not established
 - **What settled it:** trial C12: the ranking that would answer this failed its own pre-registered abundance guard, 11 of the top 15
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan/c12_run_record.json`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C86. The transitional state expresses more Epcam than AT2 cells
+
+- **Status in the register:** Not established
+- **What settled it:** trial C13: the observed gap is +0.02 to +0.09 while Epcam sits between 0.89 and 1.00 in both groups, and transitional cells are deeper in all five libraries
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_by_library_and_state.csv`
 - **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ### C88. Primed AT2, the paper's state of lost Etv5, Abca3 and Cebpa with inflammatory genes gained, is a distinct cluster recoverable blind from the deposit
