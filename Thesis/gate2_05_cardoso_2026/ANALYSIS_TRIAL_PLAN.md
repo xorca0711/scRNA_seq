@@ -54,6 +54,7 @@ one-line outcomes is [`trials/README.md`](trials/README.md).
 | [C11](#c11-figures-for-the-contradictions-2026-09-13) | contradiction figures | six drawn |
 | [C12](#c12-the-whole-cellchatdb-ranked-2026-09-13) | the full resource scan | the ranking reports abundance; AREG still first among EGFR ligands |
 | [C13](#c13-epcam-transcript-in-the-transitional-state-2026-09-17) | the contaminant's escape | the transcriptional explanation is refuted |
+| [C14](#c14-does-the-ranking-depend-on-the-database-2026-09-17) | the database comparison | the abundance domination is CellChatDB's, not the tissue's |
 | [D0](#d0-the-choi-2020-deposit-check-now-in-the-paper-2-folder) | the Choi 2020 deposit | one library per condition again; now with the rest of that paper's trials |
 
 ---
@@ -1502,3 +1503,98 @@ nothing.
 | The transitional state carries less TIMP3, the only endogenous ADAM17 inhibitor, in every library | Exploratory; robust against the depth gradient, and generic to injured states |
 | ADAM17 transcript rises in the transitional state | Refuted; it does not, which is unremarkable for a post-translationally controlled enzyme |
 | Any of this measures surface protein, shedding or enzyme activity | Not establishable with three-prime counts; flow cytometry on lineage-labelled cells is the test |
+
+---
+
+## C14. Does the ranking depend on the database (2026-09-17)
+
+Script [`trials/c14_does_the_ranking_depend_on_the_database.py`](trials/c14_does_the_ranking_depend_on_the_database.py);
+artefacts in [`trials/c14_does_the_ranking_depend_on_the_database/`](trials/c14_does_the_ranking_depend_on_the_database/).
+
+Trial C12 found two things and this trial asks whether either belonged to
+CellChat's curated resource rather than to the tissue. Object, donors,
+compartments and method are held fixed; only the resource varies, across five
+curations holding between 1,223 and 4,620 pairs.
+
+### The headline: C12's generalisation was wrong, and it was mine
+
+| Resource | Pairs kept | Abundance share of top 15 | Guard fires | Top pair |
+|---|--:|--:|---|---|
+| cellchatdb | 313 | 0.800 | **yes** | COL4A2 to CD44 |
+| cellphonedb | 216 | 0.400 | no | APP to CD74 |
+| consensus | 790 | 0.267 | no | TIMP1 to CD63 |
+| connectomedb2020 | 406 | 0.200 | no | TIMP1 to CD63 |
+| italk | 539 | 0.200 | no | TIMP1 to CD63 |
+
+The guard fires in one resource of five, and that resource is CellChatDB. After
+trial C12 this repository stated that a whole-resource scan on dissociated
+tissue will always surface the matrix, because those ligands are the most
+abundant transcripts a fibroblast carries. **That statement is refuted by this
+trial.** The same cells, the same donors and the same scoring give an
+abundance share of 0.20 to 0.40 in four other curations. The domination C12
+found is substantially a property of how CellChatDB is built, not a universal
+consequence of counting transcripts in dissociated cells.
+
+What survives from C12 is narrower and still true: CellChatDB's own ranking on
+this tissue is dominated by matrix pairs and should not be read. What does not
+survive is the generalisation to any resource.
+
+### What is robust: the ligand result
+
+AREG ranks first among the EGFR ligands in every resource that contains them,
+which is four of the five, and the full order is identical in three:
+
+| Resource | EGFR ligands present | Order |
+|---|--:|---|
+| cellchatdb | 5 | AREG, HBEGF, TGFA, EREG, BTC |
+| connectomedb2020 | 5 | AREG, HBEGF, TGFA, EREG, BTC |
+| italk | 5 | AREG, HBEGF, TGFA, EREG, BTC |
+| cellphonedb | 3 | AREG, EREG, BTC |
+| consensus | 0 | none returned |
+
+So C12's within-receptor result did not depend on CellChatDB. Holding the
+receptor constant removes the curation effect along with the promiscuity
+effect, which is why that comparison was the readable one in C12 and is the
+reproducible one here.
+
+### Two cautions the trial raises about itself
+
+**Consensus returns no EGFR-targeting pairs at all**, which is more likely a
+naming problem than a real absence: that resource represents many receptors as
+complexes, and a complex-named receptor will not match a plain string. Whether
+EGFR pairs are truly absent from consensus is not established here, and the
+zero should not be read as a biological statement.
+
+**The widened guard is still incomplete.** It was widened for this trial to
+catch fibronectin and CD44, which C12's version missed. It still does not catch
+TIMP1 to CD63, which tops three of the five resources and is on any reasonable
+reading an abundance pair. The guard undercounts, in the conservative
+direction, and the four resources called readable might be less readable than
+the table suggests.
+
+### The heads of the rankings barely agree
+
+| Comparison | Shared of top 15 | Jaccard |
+|---|--:|--:|
+| consensus with italk | 11 | 0.579 |
+| connectomedb2020 with consensus | 9 | 0.429 |
+| connectomedb2020 with italk | 9 | 0.429 |
+| cellchatdb with cellphonedb | 3 | 0.111 |
+| cellchatdb with connectomedb2020 | 1 | 0.034 |
+| cellchatdb with italk | 0 | 0.000 |
+
+Three resources agree moderately with each other and CellChatDB agrees with
+almost nobody, sharing zero of fifteen with italk. Anyone reporting the top
+hits of a ligand-receptor scan is reporting a property of their curation at
+least as much as a property of their tissue.
+
+### Claims from C14
+
+| Claim | Class |
+|---|---|
+| A whole-resource ligand-receptor scan on dissociated tissue always surfaces matrix pairs | Refuted; the guard fires in 1 of 5 resources, and this repository asserted the generalisation after C12 |
+| CellChatDB's ranking on this tissue is dominated by matrix pairs | Descriptive only, and unchanged from C12 |
+| AREG ranks first among the EGFR ligands independently of the curation | Descriptive only, in the 4 resources that contain them, with the order identical in 3 |
+| The heads of these rankings are curation-dependent | Descriptive only; CellChatDB shares 0 of 15 with italk |
+| Consensus lacks EGFR-targeting pairs | Not established; complex naming is the likelier explanation |
+| The widened guard catches every abundance pair | Refuted by its own output: TIMP1 to CD63 tops three resources and is not caught |

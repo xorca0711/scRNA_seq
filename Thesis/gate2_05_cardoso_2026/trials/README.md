@@ -47,6 +47,7 @@ and C79 of the claims register carry the detail.
 | [C11](c11_figures_for_the_contradictions.py) | Draw every result that contradicts an earlier trial | Six figures, and three more overstatements corrected in the drawing |
 | [C12](c12_cellchatdb_full_resource_scan.py) | Does anything in the whole CellChatDB outrank the axis the paper followed | **The ranking is unreadable by its own guard**: 11 of the top 15 pairs target CD44. Holding the receptor constant, AREG is first of the five EGFR ligands across 26 donors |
 | [C13](c13_epcam_transcript_in_the_transitional_state.py) | Does Epcam transcript explain why the transitional state escapes an EpCAM gate | **No.** Epcam is equal or higher in the transitional state in all five libraries and both depth halves, so any surface dimming is post-transcriptional. Timp3, the only ADAM17 inhibitor, falls 40 points |
+| [C14](c14_does_the_ranking_depend_on_the_database.py) | Is C12's result a property of the data or of CellChat's database | **Of the database.** The abundance guard fires in 1 of 5 resources, refuting the generalisation this repository drew from C12. AREG stays first among EGFR ligands in every resource that has them |
 
 **Closed without running, and the reason is the result.** Gate 2 branch (d),
 the transcriptomic ordering of fibroblast against macrophage change, is closed
