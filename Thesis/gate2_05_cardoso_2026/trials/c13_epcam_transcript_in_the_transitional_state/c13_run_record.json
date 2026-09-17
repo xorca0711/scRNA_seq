@@ -1,0 +1,301 @@
+{
+  "trial": "C13 Epcam transcript in the transitional state",
+  "rules_frozen_at": "2026-09-17T05:52:54+00:00",
+  "rules": {
+    "question": "does Epcam transcript explain why the transitional state escapes an EpCAM-negative gate",
+    "competing_explanations": {
+      "transcriptional": "the state expresses less Epcam, stains dimly and falls out of the gate",
+      "post_transcriptional": "the message is present but the protein is shed; ADAM17 releases amphiregulin (doi:10.1083/jcb.200307137) and also cleaves EpCAM with presenilin-2 (doi:10.1038/ncb1824)"
+    },
+    "what_this_cannot_do": [
+      "measure surface protein",
+      "measure shedding",
+      "measure ADAM17 enzyme activity",
+      "establish causation for the escape"
+    ],
+    "why_the_sheddase_genes_are_exploratory_only": "ADAM17 is controlled after translation through iRhom trafficking, a PDI conformational switch and phosphorylation, so its mRNA is a poor proxy for working enzyme and a negative is near-uninformative",
+    "libraries": [
+      {
+        "gsm": "GSM7890831",
+        "library": "Expt1_4dRFPr1",
+        "series": "GSE247505",
+        "arm": "KrasG12D 4d",
+        "primary": true
+      },
+      {
+        "gsm": "GSM7890832",
+        "library": "Expt1_4dRFPr2",
+        "series": "GSE247505",
+        "arm": "KrasG12D 4d",
+        "primary": true
+      },
+      {
+        "gsm": "GSM7890835",
+        "library": "Expt1_2wRFPr1",
+        "series": "GSE247505",
+        "arm": "KrasG12D 2w",
+        "primary": true
+      },
+      {
+        "gsm": "GSM7890836",
+        "library": "Expt1_2wRFPr2",
+        "series": "GSE247505",
+        "arm": "KrasG12D 2w",
+        "primary": true
+      },
+      {
+        "gsm": "GSM9447781",
+        "library": "Expt3_Het_RFP",
+        "series": "GSE316244",
+        "arm": "Areg-flox/+",
+        "primary": false
+      },
+      {
+        "gsm": "GSM9447782",
+        "library": "Expt3_Hom_RFP",
+        "series": "GSE316244",
+        "arm": "Areg-flox/flox",
+        "primary": false
+      }
+    ],
+    "qc": "identical to trial C1",
+    "states": {
+      "AT2": [
+        "Sftpc",
+        "Etv5",
+        "Lamp3"
+      ],
+      "DATP_like": [
+        "Cldn4",
+        "Itga2",
+        "Ndrg1",
+        "Sox9"
+      ],
+      "AT1_like": [
+        "Ager",
+        "Hopx",
+        "Clic5"
+      ],
+      "Cd177_positive": [
+        "Cd177",
+        "Cd38",
+        "Dlk1"
+      ],
+      "cycling": [
+        "Mki67",
+        "Birc5"
+      ]
+    },
+    "state_assignment": "score_genes then per-cell argmax; differs from C3, which clustered first, and the difference is disclosed",
+    "groups": "DATP_like against AT2 within a library, both needing at least 50 cells",
+    "genes": [
+      "Epcam",
+      "Adam17",
+      "Rhbdf1",
+      "Rhbdf2",
+      "Timp3",
+      "Areg",
+      "Krt8",
+      "Cldn4"
+    ],
+    "T1": "PRIMARY: Epcam detection lower in DATP_like in EVERY evaluable library AND median drop at least 10% points",
+    "T2": "exploratory: Adam17, Rhbdf1, Rhbdf2, Timp3, called only if the direction agrees in every library, and never reported without the post-translational caveat",
+    "T3": "depth control: median genes per cell per group, and T1 recomputed on shallow and deep halves",
+    "T4": "sanity: Areg higher in DATP_like than AT2, as trial C3 established; if not, nothing is read",
+    "reading_fixed_in_advance": {
+      "T1_met": "transcriptional downregulation suffices to explain the escape; the shedding account is not needed to explain trial C1d",
+      "T1_not_met": "the transcript does not explain the escape, so any surface dimming would have to be post-transcriptional; consistent with the shedding account and NOT evidence for it",
+      "T4_failed": "the state calls are wrong and nothing is read"
+    },
+    "unit": "the library; direction consistency across libraries, no P value on a group comparison"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890831_Expt1_4dRFPr1_matrix.mtx.gz",
+      "bytes": 26521999,
+      "modified": "2023-10-28T17:03:48+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890831_Expt1_4dRFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:04:00+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890831_Expt1_4dRFPr1_barcodes.tsv.gz",
+      "bytes": 25637,
+      "modified": "2023-10-28T16:59:19+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890832_Expt1_4dRFPr2_matrix.mtx.gz",
+      "bytes": 12102992,
+      "modified": "2023-10-28T16:59:18+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890832_Expt1_4dRFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:02:16+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890832_Expt1_4dRFPr2_barcodes.tsv.gz",
+      "bytes": 11935,
+      "modified": "2023-10-28T17:02:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890835_Expt1_2wRFPr1_matrix.mtx.gz",
+      "bytes": 57244058,
+      "modified": "2023-10-28T17:01:30+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890835_Expt1_2wRFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T16:59:16+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890835_Expt1_2wRFPr1_barcodes.tsv.gz",
+      "bytes": 25854,
+      "modified": "2023-10-29T00:10:27+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890836_Expt1_2wRFPr2_matrix.mtx.gz",
+      "bytes": 42170324,
+      "modified": "2023-10-28T17:05:02+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890836_Expt1_2wRFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T17:02:17+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890836_Expt1_2wRFPr2_barcodes.tsv.gz",
+      "bytes": 23675,
+      "modified": "2023-10-28T17:03:58+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447781_Expt3_Het_RFP_matrix.mtx.gz",
+      "bytes": 105272210,
+      "modified": "2026-01-11T03:21:03+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447781_Expt3_Het_RFP_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:19:16+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447781_Expt3_Het_RFP_barcodes.tsv.gz",
+      "bytes": 38296,
+      "modified": "2026-01-11T03:19:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447782_Expt3_Hom_RFP_matrix.mtx.gz",
+      "bytes": 87727125,
+      "modified": "2026-01-11T03:37:29+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447782_Expt3_Hom_RFP_features.tsv.gz",
+      "bytes": 290908,
+      "modified": "2026-01-11T03:33:21+00:00"
+    },
+    {
+      "path": "raw_data\\GSE316244\\GSE316244_RAW\\GSM9447782_Expt3_Hom_RFP_barcodes.tsv.gz",
+      "bytes": 36066,
+      "modified": "2026-01-11T02:47:28+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c13_epcam_transcript_in_the_transitional_state\\c13_by_library_and_state.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c13_epcam_transcript_in_the_transitional_state\\c13_depth_split.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c13_epcam_transcript_in_the_transitional_state\\c13_contrasts.csv",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c13_epcam_transcript_in_the_transitional_state\\c13_summary.md"
+  ],
+  "results": {
+    "T4_sanity": {
+      "areg_higher_in_DATP_like_everywhere": true,
+      "per_library": [
+        0.2571,
+        0.4309,
+        0.5787,
+        0.2942,
+        0.6457
+      ]
+    },
+    "T1": {
+      "lower_in_every_library": false,
+      "median_drop_points": -0.0663,
+      "required": 0.1,
+      "met": false,
+      "per_library": [
+        {
+          "library": "Expt1_2wRFPr1",
+          "det_DATP_like": 0.9656,
+          "det_AT2": 0.9265,
+          "difference": 0.0391
+        },
+        {
+          "library": "Expt1_2wRFPr2",
+          "det_DATP_like": 0.982,
+          "det_AT2": 0.8943,
+          "difference": 0.0877
+        },
+        {
+          "library": "Expt1_4dRFPr2",
+          "det_DATP_like": 0.6674,
+          "det_AT2": 0.6456,
+          "difference": 0.0218
+        },
+        {
+          "library": "Expt3_Het_RFP",
+          "det_DATP_like": 0.9912,
+          "det_AT2": 0.9249,
+          "difference": 0.0663
+        },
+        {
+          "library": "Expt3_Hom_RFP",
+          "det_DATP_like": 0.9896,
+          "det_AT2": 0.9108,
+          "difference": 0.0788
+        }
+      ]
+    },
+    "T2_exploratory_sheddase": {
+      "Adam17": {
+        "predicted_direction": "up",
+        "agrees_in_every_library": false,
+        "median_difference": -0.0818
+      },
+      "Rhbdf1": {
+        "predicted_direction": "up",
+        "agrees_in_every_library": true,
+        "median_difference": 0.0649
+      },
+      "Rhbdf2": {
+        "predicted_direction": "up",
+        "agrees_in_every_library": true,
+        "median_difference": 0.1429
+      },
+      "Timp3": {
+        "predicted_direction": "down",
+        "agrees_in_every_library": true,
+        "median_difference": -0.4001
+      }
+    },
+    "T2_caveat": "ADAM17 is controlled after translation through iRhom trafficking, a PDI conformational switch and phosphorylation, so its mRNA is a poor proxy for working enzyme and a negative is near-uninformative",
+    "T3_depth_direction_survives_both_halves": false,
+    "reading": "the transcript does not explain the escape, so any surface dimming would have to be post-transcriptional; consistent with the shedding account and NOT evidence for it The depth control failed in at least one library, whose T1 is not read."
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-17T06:01:09+00:00"
+}

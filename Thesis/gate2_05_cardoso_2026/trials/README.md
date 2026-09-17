@@ -46,6 +46,7 @@ and C79 of the claims register carry the detail.
 | [C10](c10_published_state_or_not.py) | Are those cells the published pathological fibroblast | **Yes, and the lead closes.** Cthrc1 at 44.9 against 2.0 per cent; it had missed C9's top thirty by a ranking cutoff |
 | [C11](c11_figures_for_the_contradictions.py) | Draw every result that contradicts an earlier trial | Six figures, and three more overstatements corrected in the drawing |
 | [C12](c12_cellchatdb_full_resource_scan.py) | Does anything in the whole CellChatDB outrank the axis the paper followed | **The ranking is unreadable by its own guard**: 11 of the top 15 pairs target CD44. Holding the receptor constant, AREG is first of the five EGFR ligands across 26 donors |
+| [C13](c13_epcam_transcript_in_the_transitional_state.py) | Does Epcam transcript explain why the transitional state escapes an EpCAM gate | **No.** Epcam is equal or higher in the transitional state in all five libraries and both depth halves, so any surface dimming is post-transcriptional. Timp3, the only ADAM17 inhibitor, falls 40 points |
 
 **Closed without running, and the reason is the result.** Gate 2 branch (d),
 the transcriptomic ordering of fibroblast against macrophage change, is closed

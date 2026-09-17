@@ -34,6 +34,7 @@ According to PubMed for all external citations, with DOIs given inline.
 | [10](#10-the-fst-and-runx2-population-pre-registered-2026-09-13) | the pre-registered lead |
 | [11](#11-the-lead-closes-and-the-figures-for-every-contradiction-2026-09-13) | the lead closing, and the four rule defects compared |
 | [12](#12-the-full-resource-and-what-a-whole-resource-scan-actually-measures-2026-09-13) | the full resource scan, and what such a scan measures |
+| [13](#13-where-the-sort-contaminant-came-from-as-far-as-transcripts-can-say-2026-09-17) | why those cells escaped the gate, as far as transcripts can say |
 
 ---
 
@@ -912,3 +913,57 @@ And the thing this trial cannot do remains what it was before the trial ran.
 Co-expression is not contact. Nothing here says two cells communicate, no
 permutation P value was computed, and CellChat itself has still never run in
 this repository.
+
+---
+
+## 13. Where the sort contaminant came from, as far as transcripts can say (2026-09-17)
+
+Section 2 left the mesenchymal-sort contaminant as ordinary FACS impurity, and
+section 11 closed the last biological lead. One question about the contaminant
+remained open and turned out to be answerable in one direction: why those cells,
+rather than epithelium in general, ended up in the wrong tube.
+
+Two accounts compete. The transitional state might simply express less Epcam
+and stain dimly. Or it might carry the message and shed the protein, which is
+mechanistically attractive because ADAM17 releases amphiregulin
+(doi:10.1083/jcb.200307137) and also cleaves EpCAM with presenilin-2
+(doi:10.1038/ncb1824), making the act of becoming a ligand source the same act
+that dims the gate marker.
+
+Trial C13 can only see transcript, and that is enough to kill the first
+account. Epcam is not lower in the transitional state in any of five libraries,
+nor in either half of any library when split by sequencing depth. The largest
+deficit anywhere is 6.6 points, in the shallow half of the shallowest library,
+and it shrinks to 0.2 points at depth. A 10-point deficit cannot hide in a gene
+detected in nine cells out of ten.
+
+So the transcriptional explanation is out, and whatever dims these cells at the
+surface, if anything does, happens after transcription. That is the shape the
+shedding account predicts. It is not evidence for it, and the distinction
+matters: this is a negative result creating space, not a positive one filling
+it.
+
+Two cautions travel with the number. The small positive difference is not
+upregulation, because Epcam is near its detection ceiling in both groups and
+the transitional cells are systematically deeper in all five libraries. And the
+trial's depth control reported a failure that turns out to be a sign flip
+around zero rather than a reversed effect, which is the sixth rule in this
+folder to specify a threshold without specifying when its own answer stops
+being readable.
+
+The exploratory context is more coherent than the primary result and should be
+trusted less. The sheddase transcript does not rise, its only endogenous
+inhibitor TIMP3 falls by 40 points in every library, and both iRhom trafficking
+partners rise. That is what more ADAM17 activity without more ADAM17 message
+would look like, and ADAM17 is in fact regulated that way. Two of the four
+readings run against the depth gradient and are therefore conservative; the two
+iRhom results run with it and are the weakest. TIMP3 loss is generic to injured
+states besides.
+
+The experiment that would settle it is unchanged and is not ours to run: stain
+lineage-labelled cells for surface EpCAM, ask whether the transitional
+population sits below AT2, and ask whether an ADAM17 inhibitor moves it. If it
+does, every EpCAM-based epithelial sort in alveolar biology under-samples the
+state the field is studying, and the cells that are captured are biased toward
+the EpCAM-retaining end of it. If it does not, the contaminant is ordinary
+impurity and the only lesson stays the analytical one from section 2.
