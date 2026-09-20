@@ -119,8 +119,9 @@ def m1c() -> None:
                        else lab[["well", "injured", "transitional_pct"]]),
         "",
         f"The two neonatal P9 wells labelled {neo.transitional_pct.iloc[0]:.2f} and",
-        f"{neo.transitional_pct.iloc[1]:.2f} per cent, above every injured well, the",
-        f"largest of which reached {inj.transitional_pct.max():.2f} per cent. Enrichment by",
+        f"{neo.transitional_pct.iloc[1]:.2f} per cent; the larger of the two exceeds every",
+        f"injured well, the largest of which reached {inj.transitional_pct.max():.2f} per",
+        f"cent, and the smaller exceeds {int((inj.transitional_pct < neo.transitional_pct.min()).sum())} of the {len(inj)}. Enrichment by",
         f"injury came out at {rec['results']['U7_enrichment_by_injury']:.1f}-fold, below the threefold floor,",
         "so the whole-trial negative control fired and the trial refused.",
         "",
@@ -240,6 +241,8 @@ def m1e() -> None:
 def m2() -> None:
     t = "m2_robustness_of_the_m1e_reading"
     seeds = load(t, "m2_seeds.csv")
+    _at2 = seeds[(seeds.arm == "AT2_identity") & (seeds.well.isin(["wildtype_SeV", "SeV_Cebpa_mutant"]))]
+    rng = f"{100 * -_at2.rna_obs.max():.1f} to {100 * -_at2.rna_obs.min():.1f}"
     loo = load(t, "m2_leave_one_out.csv")
     offs = load(t, "m2_offsets.csv")
     genes = load(t, "m2_per_gene.csv")
@@ -268,8 +271,8 @@ def m2() -> None:
         "## What this says, front by front",
         "",
         "**1. The RNA half is solid.** The AT2 identity arm clears in every seed of",
-        "both injured wells, at z from -4.0 to -11.4, losing 12.6 to 17.1 detection",
-        "points. The transitional arm clears in every seed everywhere. The AT1 arm",
+        f"both injured wells, at z from -4.0 to -11.4, losing {rng} detection",
+        "points across the seeds (12.6 and 17.1 at the single M1e budget). The transitional arm clears in every seed everywhere. The AT1 arm",
         "clears in none, which is the negative arm behaving. Per gene the AT2 loss",
         "is carried by at least five genes, not one: in the two injured wells Etv5",
         "falls 0.227 and 0.239, Napsa 0.272 and 0.167, Slc34a2 0.271 and 0.189,",
@@ -353,7 +356,7 @@ def m2() -> None:
         "",
         "**What is established** is the RNA half, and it is worth stating on its",
         "own: in two deposits, the CLDN4-positive KRT8-positive alveolar group",
-        "loses the AT2 identity programme by 12.6 to 17.1 detection points against",
+        f"loses the AT2 identity programme by {rng} detection points against",
         "a sham band, across five or more genes, with the AT1 programme flat in the",
         "same cells. That is Descriptive only, because each well is one library",
         "pooling two mice.",

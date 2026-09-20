@@ -37,6 +37,9 @@ violate, is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Promoting the generic deposit readers out of the Cardoso helper module into the shared one | Agent proposal, my approval implied by the instruction to proceed; a gate1 folder importing from a gate2 folder was the wrong dependency direction. Verified by importing all 19 Cardoso trial modules and re-running two trials to identical results; cardoso_utils re-exports so nothing written against it changed |
 | Choosing the three follow-up questions off the agent's ranked list, and accepting three negative answers plus two disclosed rule defects (trials E6, C7, C8) | Me (selection 2026-09-13); AI-assisted execution with readings frozen before the data were opened; the agent reported the margin that refuses its own C7 answer and the zero-inflation that voids its own C8 mixture test; my review pending on rows C49 to C57 |
 | Extending the Hbegf lead into four public datasets once the deposit was exhausted, and accepting a frozen rule's refutation of my own agent's best lead (trials E1 to E4) | Me (instruction 2026-09-13, including the condition that the extensions run only if the first did not refute); AI-assisted execution, readings frozen before the matrices were opened; my review pending on rows C37 to C48 and on the weakening of C29 |
+| Opening two branches of paper 2 on other laboratories' multiome deposits (2026-09-20): the transitional state in chromatin, and the paper's own closing Axin2 and Il1r1 question | Me (instruction 2026-09-20); AI-assisted execution. The agent refused five times before producing a statistic and retracted the one reading it produced; I corrected Route C as out of focus and directed Route A to run. Rows C116 to C150, review pending |
+| Auditing rows C116 to C150 with eight adversaries and independent verifiers, and accepting all 45 confirmed findings | Me (instruction 2026-09-20: "launch a multi-agent attack workflow to testify all the claims made"); AI-assisted execution. The agent's own register prose was the thing found wrong; corrections read from tables, trial M4 added, rows C151 to C154; review pending |
+| Rewriting the root README around a ledger drawn from the register, listing all fifteen opened deposits, and writing RESEARCH_QUESTIONS.md as the question-first entry point for outreach | Me (instruction 2026-09-20, including the choice to drop the Leiden UMAP and to organise by question rather than by trial); AI-assisted execution. A first draft cited seven wrong register rows, caught by printing each cited row; a second adversarial workflow checked the landed text. My retain or reject on the outreach framing pending |
 
 AI execution never meant automatic acceptance. Results were reviewed between
 sessions, and several were sent back: one finding was refuted and rewritten
@@ -501,6 +504,42 @@ proposes one (E6) and does not run it.
 
 Mine to retain or reject: rows C85 to C104; whether to pre-register E6;
 whether to download the dissociation list (M8) and run attack A3.
+
+**24 · The register was audited by adversaries against its own artefacts,
+and the entry point for outreach was written question-first.** (2026-09-20,
+under review.) I asked for the two branches of paper 2 to be run, then for a
+multi-agent attack on every claim they made, then for the repository to be
+scanned and cleaned with the README updated first and a new document of core
+questions and remarkable phenotypes that could stand behind a cold email to a
+principal investigator, rather than the register's trial-by-trial alignment.
+
+The audit is the decision that matters. Eight adversaries and forty-seven
+verifiers found that the branches' trials were mostly honest and the register
+written from them was not: four numbers had been quoted that no run produced,
+including the Sox9 corroboration of the branch's one validated result, which
+was never in the frozen panel and existed only as a typed string; three
+magnitudes were wrong against their own tables; one row named the wrong
+laboratory; one was refuted by the branch's own artefacts. I accepted every
+confirmed finding. The corrections were made with figures read from the CSVs,
+a new trial (M4) logs the corroboration that had been asserted, frozen
+docstrings and run records were left untouched with a banner beside them, and
+the audit itself is rows C151 to C154. The rule I take from it is mechanical
+and now binding: no number enters a summary or the register except by
+formatting from the table that holds it.
+
+Two smaller decisions of mine on the same day. I withdrew Route C of the
+Axin2 branch as out of focus, because a bulk array cannot answer a
+co-occurrence question at any level of replication (row C146), and I directed
+that Route A run rather than wait for my reading of England 2025; it then
+turned out to rest on data never deposited (row C148). For the README I chose
+to replace the Leiden UMAP with a figure of the register's own shape, drawn
+from `CLAIMS.md` by a script, because that shape is what this repository is.
+`RESEARCH_QUESTIONS.md` went through a second adversarial fact-check before it
+landed (119 findings, 17 independently verified before the session limit, the
+rest checked by hand); its confirmed defects, chiefly register statuses quoted
+one grade too strong and a range typed from the wrong pass, and their fifty-eight
+fixes are listed in PROGRESS item 36. My retain or reject on the outreach
+framing is pending.
 
 ## How outputs were reviewed
 

@@ -1,6 +1,6 @@
 # References
 
-The primary paper, the second-dataset paper, and the five method papers that make up the non-Seurat components of the primary paper's pipeline. Metadata verified against PubMed.
+Every source study whose deposit this repository has opened, every roadmap paper, the method papers behind the original pipeline, and the methods references the portfolio reads at the step that uses them. Metadata verified against PubMed.
 
 ---
 
@@ -157,6 +157,34 @@ Adams TS, Schupp JC, Poli S, et al. *Single-cell RNA-seq reveals ectopic and abe
 DOI: [10.1126/sciadv.aba1983](https://doi.org/10.1126/sciadv.aba1983) · PMID [32832599](https://pubmed.ncbi.nlm.nih.gov/32832599/) · PMC [PMC7439502](https://pmc.ncbi.nlm.nih.gov/articles/PMC7439502/) · GEO [GSE136831](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE136831) (312,928 cells; the aberrant basaloid state used as the transitional population in trial E2).
 Habermann AC, Gutierrez AJ, Bui LT, et al. *Single-cell RNA sequencing reveals profibrotic roles of distinct epithelial and mesenchymal lineages in pulmonary fibrosis.* **Science Advances** 2020;6(28):eaba1972.
 DOI: [10.1126/sciadv.aba1972](https://doi.org/10.1126/sciadv.aba1972) · PMID [32832598](https://pubmed.ncbi.nlm.nih.gov/32832598/) · PMC [PMC7439444](https://pmc.ncbi.nlm.nih.gov/articles/PMC7439444/) · GEO [GSE135893](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE135893) (114,396 cells; the KRT5-negative KRT17-positive and transitional AT2 states used in trial E3).
+
+### Gate 1, paper 2, the two branches (added 2026-09-20)
+
+Both branches of the Choi 2020 folder run on other laboratories' deposits,
+because GSE144598 is coverage tracks only. Both deposits below come from the
+same laboratory (Jichao Chen), so agreement between them is consistency, not
+replication.
+
+**Lynch AM, Noun T, Yang S, Zhou T, Chen M, Evans SE, Kadara H, Chen J.**
+*AP-1 mediated chromatin changes govern alveolar type 2 cell transition in lung injury-repair.*
+**Am J Respir Cell Mol Biol** 2026.
+DOI: [10.1093/ajrcmb/aanag157](https://doi.org/10.1093/ajrcmb/aanag157) · PMID [42530358](https://pubmed.ncbi.nlm.nih.gov/42530358/) · preprint bioRxiv [10.1101/2025.10.25.684549](https://doi.org/10.1101/2025.10.25.684549)
+Data: GEO [GSE310539](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310539) (10x multiome, 4 wells; read by trials M0 to M4 and A1 to A1c) · [GSE309751](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309751) (bulk ATAC-seq, 14 samples, 2 to 3 mice per group; assessed, not opened: the only replicated chromatin contrast in reach) · [GSE308103](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308103) (human snRNA-seq; not used)
+
+**Hassan D, Chen J.**
+*CEBPA restricts alveolar type 2 cell plasticity during development and injury-repair.*
+**Nature Communications** 2024;15:4148.
+DOI: [10.1038/s41467-024-48632-3](https://doi.org/10.1038/s41467-024-48632-3) · PMID [38755149](https://pubmed.ncbi.nlm.nih.gov/38755149/) · PMC [PMC11099190](https://pmc.ncbi.nlm.nih.gov/articles/PMC11099190/)
+Data: GEO [GSE247130](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247130) (10x multiome, 6 wells in 3 aggregates; **the deposited barcode-suffix order is inverted**, claim C116) · [GSE247271](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247271) (CEBPA and NKX2-1 ChIP-seq; not used) · [GSE264098](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264098) (developmental scATAC; not used)
+
+Branch notes: [`Thesis/gate1_02_choi_2020/datp_epigenetics/README.md`](Thesis/gate1_02_choi_2020/datp_epigenetics/README.md) and [`Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`](Thesis/gate1_02_choi_2020/axin2_il1r1/README.md).
+
+**Primary literature the Axin2 and Il1r1 assessment rests on**, DOIs verified on 2026-09-20:
+Zacharias WJ, et al. *Regeneration of the lung alveolus by an evolutionarily conserved epithelial progenitor.* **Nature** 2018. DOI [10.1038/nature25786](https://doi.org/10.1038/nature25786) (the AEP subset, about 20 per cent).
+Frank DB, et al. *Emergence of a wave of Wnt signaling that regulates lung alveologenesis by controlling epithelial self-renewal and differentiation.* **Cell Reports** 2016. DOI [10.1016/j.celrep.2016.11.001](https://doi.org/10.1016/j.celrep.2016.11.001) (cells enter and leave the Axin2-positive state).
+Katsura H, et al. *IL-1 and TNFalpha contribute to the inflammatory niche to enhance alveolar regeneration.* **Stem Cell Reports** 2019. DOI [10.1016/j.stemcr.2019.02.013](https://doi.org/10.1016/j.stemcr.2019.02.013).
+Aumiller V, et al. *WNT/beta-catenin signaling induces IL-1beta expression by alveolar epithelial cells in pulmonary fibrosis.* **Am J Respir Cell Mol Biol** 2013. DOI [10.1165/rcmb.2012-0524OC](https://doi.org/10.1165/rcmb.2012-0524OC) (the one mechanistic bridge, Wnt to IL-1, almost never cited by the regeneration literature).
+Robson MJ, et al. *Generation and characterization of mice expressing a conditional allele of the interleukin-1 receptor type 1.* **PLoS One** 2016. DOI [10.1371/journal.pone.0150068](https://doi.org/10.1371/journal.pone.0150068) (Il1r1-tm1.1Rbl, floxed exons 3 and 4).
 
 ### The remaining roadmap papers (no study note yet; paper 2 now has one)
 

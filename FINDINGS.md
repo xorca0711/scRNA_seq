@@ -1,9 +1,13 @@
 # Findings
 
-An independent Python/scanpy reanalysis of two public single-cell RNA-seq
-datasets of lung biology, built from the deposited raw count matrices with no
-use of the authors' processed objects. This file is an analysis log. The
-working question it moves toward is: **which epithelial and immune-state
+The record of the repository's first two series, an independent Python and
+scanpy reanalysis of a mouse injury time course and a human distal-lung
+reference, built from the deposited raw count matrices with no use of the
+authors' processed objects. It is kept as written in August and September
+2026. The thirteen further deposits opened since are read under
+[`Thesis/`](Thesis/README.md), and the science across all of them is
+organised by question in [`RESEARCH_QUESTIONS.md`](RESEARCH_QUESTIONS.md).
+The working question this file moves toward is: **which epithelial and immune-state
 programmes distinguish productive lung repair from persistent remodelling
 after injury?** The Stage 0 question, asked first and answered in August 2026,
 was narrower: can the published biology be recovered from the raw data by an

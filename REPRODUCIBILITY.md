@@ -34,12 +34,26 @@ extract them to this layout:
 
 ```text
 raw_data/
-├── GSE262927/
-│   ├── GSE262927_RAW/                 # 33 GSM*.h5 matrices
+├── GSE262927/                         # the two original series, analysed under analysis/
+│   ├── GSE262927_RAW/                 #   33 GSM*.h5 matrices
 │   └── GSE262927_CellMetaData.csv
-└── GSE178360/
-    └── GSE178360_RAW/                 # 3 *filtered_feature_bc_matrix.h5 files
+├── GSE178360/
+│   └── GSE178360_RAW/                 #   3 *filtered_feature_bc_matrix.h5 files
+├── GSE145031/  GSE144468/             # Choi 2020: trials D0 to D7 (MatrixMarket triplets, SOFT)
+├── GSE316241/  GSE316243/  GSE316244/ # Cardoso 2026: trials C0 to C14 (h5 and SOFT)
+├── GSE310335/                         # Cardoso 2026 human organoids
+├── GSE247505/                         # England 2025: GSE247505_RAW (mtx triplets), SOFT
+├── GSE131907/  GSE136831/             # human LUAD and IPF: trials E1 to E6, C12, C14
+├── GSE135893/  GSE132771/             # human IPF; mouse bleomycin: trials E3, E4
+├── GSE310539/                         # Lynch 2026 multiome: *_filtered_feature_bc_matrix.h5,
+│                                      #   *_atac_peak_annotation.tsv.gz, SOFT
+└── GSE247130/                         # Hassan and Chen 2024 multiome: three Aggregate_* h5,
+                                       #   three peak annotations, SOFT
 ```
+
+The two original series need the files named below; every roadmap deposit is
+inventoried by its own reality-check trial (C0, D0, M0), whose run record lists
+the exact files, sizes and modification times it read.
 
 - [GSE262927](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262927):
   `GSE262927_RAW.tar` and `GSE262927_CellMetaData.csv.gz`
