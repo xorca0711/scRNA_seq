@@ -86,17 +86,59 @@ only.
 
 ---
 
-## Claims table
+## Claims, organised by what they license
 
-| Claim | Status | Where |
+Grouped by the decision each one governs rather than by the trial that produced
+it, because this table is for planning the next analysis. Every number sits in
+the trial summary the row links to, and the repository-wide row identifier is
+given so the register and this page cannot drift apart.
+
+**Read this table as four questions.** What do I have to accept about the data
+(A)? What is the state, at the level the data can speak (B)? What does the
+chromatin say (C)? And what may I no longer do (D)?
+
+---
+
+### A. Constraints any future use of these deposits inherits
+
+| # | Established | Status | What follows for planning |
+|---|---|---|---|
+| A1 | GSE247130's deposited barcode order is inverted: suffix 1 is the control, suffix 2 the Cebpa mutant ([C116](../../../CLAIMS.md)) | **Validated** | Invert the map before touching that deposit. Generally: never attach a condition name to a deposited sample order without corroborating it on a knockout's own target gene first. This cost nothing to check and would have inverted every genotype downstream |
+| A2 | Neither deposit carries within-group replication for any between-condition contrast ([C117](../../../CLAIMS.md)) | **Not establishable** | No genotype, treatment or stage claim can ever come from these files. Only within-library state comparisons are admissible and everything is Descriptive only. This is the fifth and sixth deposit in the project with that ceiling, so assume it of the next one until shown otherwise |
+| A3 | Both source papers are chromatin papers. The untouched gap is accessibility of the transitional state in GSE247130, and gene-anchored rather than motif-level accessibility in GSE310539 | **Descriptive only** | Any chromatin result on GSE310539 must be registered as a re-derivation of Lynch et al., not as confirmation. Only GSE247130 can yield something new in this layer |
+| A4 | The two deposits share a laboratory, lineage tools, injury model, kit, aligner and this analysis code | **Descriptive only** | Agreement between them is consistency, not replication. Nothing in this branch may be called replicated, and a genuinely independent deposit is worth more than a third well here |
+
+### B. What the transitional state is, at the level transcripts can speak
+
+| # | Established | Status | What follows for planning |
+|---|---|---|---|
+| B1 | The CLDN4-positive KRT8-positive group loses the AT2 identity programme in RNA: 12.6 to 17.1 detection points, five or more genes, with the AT1 arm flat in the same cells ([C118](../../../CLAIMS.md)) | **Descriptive only** | The state's defining transcriptional move is **loss of AT2 identity, not gain of AT1**. Design the next trial around the AT2 programme as the moving part; an AT1-anchored design would have measured nothing |
+| B2 | That transcript call cannot separate neonatal developmental immaturity from injury-induced transition ([C119](../../../CLAIMS.md)) | **Descriptive only** | **This answers the owner's Q1 and the answer is no.** Any future state definition must either add a marker that development does not use, or hold developmental stage fixed by design. Do not treat Krt8 and Cldn4 as damage-associated on their own |
+| B3 | The source papers define this state by immunostaining (KRT8-high by antibody); three-prime single-nucleus counting cannot reproduce that call ([C124](../../../CLAIMS.md)) | **Descriptive only** | Stop trying to rebuild an antibody-defined state from 3' counts. Name the transcript-level group as its own object and say what it is not. The same mismatch is the reason the Axin2 proposal needs care: Nabhan defines Axin2-positive by lineage reporter, not transcript |
+
+### C. What the chromatin says, and what it does not
+
+| # | Established | Status | What follows for planning |
+|---|---|---|---|
+| C1 | AT2 identity distal chromatin is lower in the labelled group than in 300 matched random gene sets, in all three computable wells: percentile 0.000, 0.007 and 0.000, at -37.8, -18.3 and -15.5 per cent of reference accessibility ([C131](../../../CLAIMS.md)) | **Exploratory** | The direction is **closing**, which favours an arrested state over a reversible one. Size the next design to detect a 10 to 15 per cent relative change, not the 45 per cent this one could see |
+| C2 | Whether the AT2 identity programme's chromatin actually closes ([C121](../../../CLAIMS.md), [C133](../../../CLAIMS.md)) | **Not established** | No well satisfies both gates: the well whose AT2 arm clears has a positive control that does not fire, and vice versa. Needs more labelled cells, or peaks re-called on the labelled cells from the fragments files, before it is worth re-asking |
+| C3 | "Silenced but not closed" ([C120](../../../CLAIMS.md)) | **Retracted, superseded** | Never write this sentence again. The positive control that licensed it was unstable, and its direction was an artefact of one gene carrying three peaks |
+| C4 | AP-1 dependence of anything above ([C128](../../../CLAIMS.md)) | **Not established** | The infected AP-1 mutant well held 44 labelled cells against a floor of 50. Six cells short of the branch's most interesting genotype, so a design that recovers a few hundred more labelled cells buys that arm outright |
+
+### D. Methodological constraints that now bind every trial in this repository
+
+These are the transferable results. Each was learned here at the cost of a
+refused trial, and each forbids a design that would otherwise look reasonable.
+
+| # | Refuted | What follows for planning |
 |---|---|---|
-| GSE247130's barcode-suffix map is inverted relative to the GEO sample order: suffix 1 is the control and suffix 2 is the Cebpa mutant | **Validated** | [M1](trials/m1_closed_or_merely_silenced/m1_summary.md) |
-| The CLDN4-positive KRT8-positive alveolar group loses the AT2 identity programme in RNA by 12.6 to 17.1 detection points, across five or more genes, with the AT1 programme flat in the same cells, in both deposits and at four resampling seeds. The deposits share a laboratory, so this is consistency, not replication | **Descriptive only** | [M1e](trials/m1e_per_well_budget/m1e_summary.md), [M2](trials/m2_robustness_of_the_m1e_reading/m2_summary.md) |
-| A CLDN4-positive KRT8-positive transcript call cannot separate neonatal developmental immaturity from injury-induced transition | **Descriptive only** | [M1c](trials/m1c_label_at_the_depth_available/m1c_summary.md) |
-| In the CLDN4-positive group the AT2 identity programme is silenced in RNA but its chromatin stays open | **Retracted, superseded** by M2 | [M1e](trials/m1e_per_well_budget/m1e_summary.md) |
-| The AT2 identity programme's distal chromatin is lower in the labelled group than in 300 matched random gene sets, in all three computable wells, at percentile 0.000, 0.007 and 0.000, and by -37.8, -18.3 and -15.5 per cent of reference accessibility | **Exploratory** | [M3](trials/m3_one_instrument_and_the_right_null/m3_summary.md) |
-| Whether the AT2 identity programme's chromatin closes in the transitional state. M3 gives the question a direction and a bound; no well satisfies both gates | **Not established** | [M2](trials/m2_robustness_of_the_m1e_reading/m2_summary.md), [M3](trials/m3_one_instrument_and_the_right_null/m3_summary.md) |
-| Anything about AP-1 dependence of the above | **Not established**; the infected AP-1 mutant well held 44 labelled cells, below the floor | [M1e](trials/m1e_per_well_budget/m1e_summary.md) |
+| D1 | That "do transitional cells differ from AT2 cells in accessibility" is a question ([C127](../../../CLAIMS.md)) | It cannot be false: labels and chromatin come from one nucleus. It returned p = 0/200 on a depth-matched contrast containing no transitional cell. **Before freezing any design, construct the contrast that contains no biology and check the design returns nothing on it** |
+| D2 | That a cell-permutation sham is a sufficient null for a gene-set claim ([C130](../../../CLAIMS.md)) | Permuting cells asks whether the SPLIT is special; it cannot ask whether the GENES are. Every gene-set arm needs a second null over gene sets matched on peak or transcript count |
+| D3 | That a positive control tested once licenses reading a null ([C126](../../../CLAIMS.md)) | Test it under resampling and leave-one-out first. A sensitivity control that is itself unstable licenses nothing |
+| D4 | That presence of an abundant secreted transcript is identity ([C123](../../../CLAIMS.md)) | In single-nucleus data it is ambient, and a presence rule built on one is a depth filter under another name. Use within-cell ratios |
+| D5 | That three sham standard deviations is a bound the data support ([C130](../../../CLAIMS.md), and see M2) | It is the 50-per-cent-power detection floor and it errs unsafely. Report a confidence interval on a relative scale the reader can interpret |
+| D6 | That two separately written rules are composable ([C125](../../../CLAIMS.md)) | Check the arithmetic of every rule pair before freezing. A budget retaining 60 per cent and a gate forbidding 20 per cent loss cannot both hold |
+| D7 | That one instrument was being used across deposits ([C129](../../../CLAIMS.md)) | A gene dropped in one arm and kept in another makes two arms that were never comparable, and here that one gene carried the sign. Freeze the gene list once, for every well |
 
 ---
 
