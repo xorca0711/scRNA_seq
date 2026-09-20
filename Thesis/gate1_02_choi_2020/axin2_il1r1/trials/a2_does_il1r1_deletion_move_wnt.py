@@ -96,7 +96,7 @@ import numpy as np
 import pandas as pd
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE.parent / "datp_epigenetics" / "trials"))
+sys.path.insert(0, str(HERE.parents[1] / "datp_epigenetics" / "trials"))
 from multiome_utils import REPO, RunRecord, df_to_markdown  # noqa: E402
 sys.path.insert(0, str(REPO / "Thesis" / "gate1_04_sikkema_2023_hlca" / "trials"))
 from trial_utils import read_mtx_triplet  # noqa: E402

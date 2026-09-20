@@ -49,7 +49,7 @@ import numpy as np
 import pandas as pd
 
 HERE = Path(__file__).resolve().parent
-TRIALS = HERE.parent / "datp_epigenetics" / "trials"
+TRIALS = HERE.parents[1] / "datp_epigenetics" / "trials"
 sys.path.insert(0, str(TRIALS))
 from multiome_utils import (ATAC, GSE247130, GSE310539, RNA, RunRecord,  # noqa: E402
                             df_to_markdown, peak_gene_table, read_features,

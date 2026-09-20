@@ -152,7 +152,7 @@ cells, so there is no classifier to port.
 ## 5. What can still be done, with costs
 
 **Route A. WITHDRAWN: the data does not exist. See
-[`a2_does_il1r1_deletion_move_wnt/a2_summary.md`](a2_does_il1r1_deletion_move_wnt/a2_summary.md).**
+[`a2_does_il1r1_deletion_move_wnt/a2_summary.md`](trials/a2_does_il1r1_deletion_move_wnt/a2_summary.md).**
 This page proposed re-asking England's Figure S2L to S2N on GSE247505, on the
 strength of that deposit being local. **The ZsGreen libraries behind that figure
 were never deposited**: the superseries and both subseries contain zero mentions
@@ -175,7 +175,7 @@ deposited metadata alone.
 this branch measured.** Accessibility aggregated over a gene's linked peaks is
 much less sparse than its transcript, which is exactly how this escapes the
 floor that kills Route A's RNA version. Measured in
-[`feasibility_of_the_joint_question/`](feasibility_of_the_joint_question/feasibility_summary.md):
+[`feasibility_of_the_joint_question/`](trials/feasibility_of_the_joint_question/feasibility_summary.md):
 
 | Gene | transcript detection | any linked peak | gain |
 |---|---|---|---|
@@ -222,7 +222,7 @@ question is worth very little.** Recorded as row C146 rather than deleted.
 **Route C prime, the replacement, and it is same-cell.** The assessment refused a
 transcript route because Axin2 is detected in 4 to 5 per cent of AT2-enriched
 cells at about one molecule each. A Wnt-target MODULE is not Axin2. Measured in
-[`module_detection_check/`](module_detection_check/module_summary.md) on
+[`module_detection_check/`](trials/module_detection_check/module_summary.md) on
 GSE262927, the one deposit in this project with genuine per-animal replication:
 
 | | detection across six samples |
