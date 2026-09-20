@@ -1,0 +1,267 @@
+{
+  "trial": "A1 Axin2 and Il1r1 locus co-accessibility",
+  "rules_frozen_at": "2026-09-20T07:36:01+00:00",
+  "rules": {
+    "question": "are the Axin2 and Il1r1 loci open in the same nuclei more or less often than comparable pairs of loci",
+    "not_asked": "whether they are correlated; at a fixed fragment budget every pair is positively correlated through the breadth of that nucleus's open chromatin, so that question cannot be false",
+    "scope_limit": "an accessible Axin2 locus is not a Wnt-responsive cell. Nothing here may be phrased as a statement about Wnt-responsive or IL-1-responsive cells, about AEPs, or about Choi's Il1r1-lineage population. The object is the pair of loci",
+    "R1_unit": "the GEM well, with GSE247130's inverted suffix map applied; Descriptive only",
+    "R2_cells": "non-airway by within-cell ratio; primary set is Sftpc-positive non-transitional; the transitional group is secondary",
+    "R3_depth": "every cell downsampled to the 20th percentile of in-peak fragments over the analysis set",
+    "R4_locus": "a locus is detected if at least one linked peak, promoter or distal, is detected after downsampling",
+    "R5_statistic": "observed co-detection over the product of the marginals, as a ratio",
+    "R6_null": "300 random gene pairs matched on linked peak count within a factor of 1.5, on different chromosomes from each other",
+    "R7_controls": "Krt8-Krt18 physical control must clear or the measurement is broken; Etv5-Abca3 biological control must clear or there is no demonstrated sensitivity and negatives are not computable",
+    "R8_module_form": "a Wnt-target set (Axin2, Nkd1, Notum, Lef1, Wif1, Lgr5) against Il1r1, reported beside the single-gene form",
+    "R9_reading": "above the null, below the null, or not distinguishable from comparable pairs; never 'independent'",
+    "U": {
+      "U1": "fewer than 500 cells",
+      "U2": "a locus outside 2 to 98 per cent detection",
+      "U3": "fewer than 200 usable null pairs",
+      "U4": "physical control fails, well unreadable",
+      "U5": "biological control fails, negatives not computable"
+    }
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_filtered_feature_bc_matrix.h5",
+      "bytes": 193819969,
+      "modified": "2026-09-20T05:31:54+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_filtered_feature_bc_matrix.h5",
+      "bytes": 193819969,
+      "modified": "2026-09-20T05:31:54+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_filtered_feature_bc_matrix.h5",
+      "bytes": 328167298,
+      "modified": "2026-09-20T05:31:08+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_filtered_feature_bc_matrix.h5",
+      "bytes": 328167298,
+      "modified": "2026-09-20T05:31:08+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\axin2_il1r1\\a1_locus_co_accessibility\\a1_readings.csv",
+    "Thesis\\gate1_02_choi_2020\\axin2_il1r1\\a1_locus_co_accessibility\\a1_pairs.csv"
+  ],
+  "results": {
+    "readings": [
+      {
+        "well": "wildtype_PBS",
+        "cell_set": "AT2",
+        "cells": 5748,
+        "B_atac": 1146.0,
+        "null_mean": 1.0438,
+        "null_sd": 0.2426,
+        "null_pairs": 268.0,
+        "reading": "unreadable",
+        "why": "U4, the physical control Krt8-Krt18 did not clear"
+      },
+      {
+        "well": "wildtype_PBS",
+        "cell_set": "transitional",
+        "cells": 48,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "wildtype_SeV",
+        "cell_set": "AT2",
+        "cells": 4446,
+        "B_atac": 837.0,
+        "null_mean": 1.0195,
+        "null_sd": 0.2582,
+        "null_pairs": 246.0,
+        "reading": "unreadable",
+        "why": "U4, the physical control Krt8-Krt18 did not clear"
+      },
+      {
+        "well": "wildtype_SeV",
+        "cell_set": "transitional",
+        "cells": 284,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "AP1mut_PBS",
+        "cell_set": "AT2",
+        "cells": 10822,
+        "B_atac": 945.0,
+        "null_mean": 1.0325,
+        "null_sd": 0.1438,
+        "null_pairs": 228.0,
+        "reading": "unreadable",
+        "why": "U4, the physical control Krt8-Krt18 did not clear"
+      },
+      {
+        "well": "AP1mut_PBS",
+        "cell_set": "transitional",
+        "cells": 46,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "AP1mut_SeV",
+        "cell_set": "AT2",
+        "cells": 8042,
+        "B_atac": 1052.0,
+        "null_mean": 1.0318,
+        "null_sd": 0.1779,
+        "null_pairs": 245.0,
+        "reading": "unreadable",
+        "why": "U4, the physical control Krt8-Krt18 did not clear"
+      },
+      {
+        "well": "AP1mut_SeV",
+        "cell_set": "transitional",
+        "cells": 195,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "7wk_control",
+        "cell_set": "AT2",
+        "cells": 5799,
+        "B_atac": 2200.0,
+        "null_mean": 1.0203,
+        "null_sd": 0.1002,
+        "null_pairs": 295.0,
+        "reading": "unreadable",
+        "why": "U4, the physical control Krt8-Krt18 did not clear"
+      },
+      {
+        "well": "7wk_control",
+        "cell_set": "transitional",
+        "cells": 131,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "7wk_Cebpa_mutant",
+        "cell_set": "AT2",
+        "cells": 8281,
+        "B_atac": 2060.0,
+        "null_mean": 1.0374,
+        "null_sd": 0.0876,
+        "null_pairs": 294.0,
+        "reading": "unreadable",
+        "why": "U4, the physical control Krt8-Krt18 did not clear"
+      },
+      {
+        "well": "7wk_Cebpa_mutant",
+        "cell_set": "transitional",
+        "cells": 344,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "SeV_control",
+        "cell_set": "AT2",
+        "cells": 8624,
+        "B_atac": 1939.0,
+        "null_mean": 1.0314,
+        "null_sd": 0.1131,
+        "null_pairs": 273.0,
+        "reading": "unreadable",
+        "why": "U4, the physical control Krt8-Krt18 did not clear"
+      },
+      {
+        "well": "SeV_control",
+        "cell_set": "transitional",
+        "cells": 121,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "SeV_Cebpa_mutant",
+        "cell_set": "AT2",
+        "cells": 7364,
+        "B_atac": 2964.0,
+        "null_mean": 1.0253,
+        "null_sd": 0.0937,
+        "null_pairs": 298.0,
+        "reading": "unreadable",
+        "why": "U4, the physical control Krt8-Krt18 did not clear"
+      },
+      {
+        "well": "SeV_Cebpa_mutant",
+        "cell_set": "transitional",
+        "cells": 773,
+        "B_atac": 5967.0,
+        "null_mean": 1.0131,
+        "null_sd": 0.0919,
+        "null_pairs": 299.0,
+        "reading": "unreadable",
+        "why": "U4, the physical control Krt8-Krt18 did not clear"
+      }
+    ]
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-20T07:43:40+00:00"
+}

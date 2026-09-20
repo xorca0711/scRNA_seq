@@ -1,0 +1,302 @@
+{
+  "trial": "A1b split-locus control",
+  "rules_frozen_at": "2026-09-20T07:45:18+00:00",
+  "rules": {
+    "question": "A1's question, with a positive control that cannot fail for biological reasons",
+    "why_A1_refused": "its physical control Krt8 against Krt18 assumed the two loci share peaks; the vendor annotation assigns each peak to its nearest gene, so they largely do not, and the control was a real biological question rather than an arithmetic identity",
+    "R7b_split_locus_control": "20 genes, each with its linked peak set split at random into two halves treated as two loci; the halves sit in one regulatory domain by construction, so the measurement must detect them; the median of their ratios is the gate",
+    "unchanged": "cells, depth budget, statistic, null, biological control, reading and section U are A1's",
+    "budget_not_raised": "A1 showed the null spread is wide in the shallower deposit, but raising the budget after seeing the direction of the Axin2 result would be choosing a parameter to suit an answer. If the split-locus control also fails, the approach is underpowered at this depth and this folder says so",
+    "what_A1_already_showed": "Axin2 against Il1r1 came out 0.917, 0.921 and 0.960, below the null mean in every computable AT2 well, at z of -1.01, -1.33 and -0.70, none of it readable"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_filtered_feature_bc_matrix.h5",
+      "bytes": 193819969,
+      "modified": "2026-09-20T05:31:54+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_filtered_feature_bc_matrix.h5",
+      "bytes": 193819969,
+      "modified": "2026-09-20T05:31:54+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_filtered_feature_bc_matrix.h5",
+      "bytes": 328167298,
+      "modified": "2026-09-20T05:31:08+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_filtered_feature_bc_matrix.h5",
+      "bytes": 328167298,
+      "modified": "2026-09-20T05:31:08+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\axin2_il1r1\\a1b_split_locus_control\\a1b_readings.csv",
+    "Thesis\\gate1_02_choi_2020\\axin2_il1r1\\a1b_split_locus_control\\a1b_pairs.csv"
+  ],
+  "results": {
+    "readings": [
+      {
+        "well": "wildtype_PBS",
+        "cell_set": "AT2",
+        "cells": 5748,
+        "B_atac": 1146.0,
+        "null_mean": 1.0476,
+        "null_sd": 0.2404,
+        "null_pairs": 262.0,
+        "split_control_ratio": 1.296,
+        "split_control_z": 1.03,
+        "krt8_krt18_ratio": 1.318,
+        "reading": "not computable",
+        "why": "R7b, the split-locus control did not clear, so the design has no demonstrated sensitivity to co-accessibility at this depth"
+      },
+      {
+        "well": "wildtype_PBS",
+        "cell_set": "transitional",
+        "cells": 48,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "split_control_ratio": NaN,
+        "split_control_z": NaN,
+        "krt8_krt18_ratio": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "wildtype_SeV",
+        "cell_set": "AT2",
+        "cells": 4446,
+        "B_atac": 837.0,
+        "null_mean": 1.0049,
+        "null_sd": 0.2551,
+        "null_pairs": 258.0,
+        "split_control_ratio": 1.305,
+        "split_control_z": 1.18,
+        "krt8_krt18_ratio": 0.977,
+        "reading": "not computable",
+        "why": "R7b, the split-locus control did not clear, so the design has no demonstrated sensitivity to co-accessibility at this depth"
+      },
+      {
+        "well": "wildtype_SeV",
+        "cell_set": "transitional",
+        "cells": 284,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "split_control_ratio": NaN,
+        "split_control_z": NaN,
+        "krt8_krt18_ratio": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "AP1mut_PBS",
+        "cell_set": "AT2",
+        "cells": 10822,
+        "B_atac": 945.0,
+        "null_mean": 1.0424,
+        "null_sd": 0.1421,
+        "null_pairs": 240.0,
+        "split_control_ratio": 1.117,
+        "split_control_z": 0.52,
+        "krt8_krt18_ratio": 1.086,
+        "reading": "not computable",
+        "why": "R7b, the split-locus control did not clear, so the design has no demonstrated sensitivity to co-accessibility at this depth"
+      },
+      {
+        "well": "AP1mut_PBS",
+        "cell_set": "transitional",
+        "cells": 46,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "split_control_ratio": NaN,
+        "split_control_z": NaN,
+        "krt8_krt18_ratio": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "AP1mut_SeV",
+        "cell_set": "AT2",
+        "cells": 8042,
+        "B_atac": 1052.0,
+        "null_mean": 1.0441,
+        "null_sd": 0.1604,
+        "null_pairs": 250.0,
+        "split_control_ratio": 1.137,
+        "split_control_z": 0.58,
+        "krt8_krt18_ratio": 1.028,
+        "reading": "not computable",
+        "why": "R7b, the split-locus control did not clear, so the design has no demonstrated sensitivity to co-accessibility at this depth"
+      },
+      {
+        "well": "AP1mut_SeV",
+        "cell_set": "transitional",
+        "cells": 195,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "split_control_ratio": NaN,
+        "split_control_z": NaN,
+        "krt8_krt18_ratio": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "7wk_control",
+        "cell_set": "AT2",
+        "cells": 5799,
+        "B_atac": 2200.0,
+        "null_mean": 1.0264,
+        "null_sd": 0.1004,
+        "null_pairs": 294.0,
+        "split_control_ratio": 1.125,
+        "split_control_z": 0.99,
+        "krt8_krt18_ratio": 1.101,
+        "reading": "not computable",
+        "why": "R7b, the split-locus control did not clear, so the design has no demonstrated sensitivity to co-accessibility at this depth"
+      },
+      {
+        "well": "7wk_control",
+        "cell_set": "transitional",
+        "cells": 131,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "split_control_ratio": NaN,
+        "split_control_z": NaN,
+        "krt8_krt18_ratio": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "7wk_Cebpa_mutant",
+        "cell_set": "AT2",
+        "cells": 8281,
+        "B_atac": 2060.0,
+        "null_mean": 1.032,
+        "null_sd": 0.0832,
+        "null_pairs": 294.0,
+        "split_control_ratio": 1.177,
+        "split_control_z": 1.75,
+        "krt8_krt18_ratio": 1.249,
+        "reading": "not computable",
+        "why": "R7b, the split-locus control did not clear, so the design has no demonstrated sensitivity to co-accessibility at this depth"
+      },
+      {
+        "well": "7wk_Cebpa_mutant",
+        "cell_set": "transitional",
+        "cells": 344,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "split_control_ratio": NaN,
+        "split_control_z": NaN,
+        "krt8_krt18_ratio": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "SeV_control",
+        "cell_set": "AT2",
+        "cells": 8624,
+        "B_atac": 1939.0,
+        "null_mean": 1.0312,
+        "null_sd": 0.1178,
+        "null_pairs": 272.0,
+        "split_control_ratio": 1.179,
+        "split_control_z": 1.25,
+        "krt8_krt18_ratio": 1.115,
+        "reading": "not computable",
+        "why": "R7b, the split-locus control did not clear, so the design has no demonstrated sensitivity to co-accessibility at this depth"
+      },
+      {
+        "well": "SeV_control",
+        "cell_set": "transitional",
+        "cells": 121,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "split_control_ratio": NaN,
+        "split_control_z": NaN,
+        "krt8_krt18_ratio": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "SeV_Cebpa_mutant",
+        "cell_set": "AT2",
+        "cells": 7364,
+        "B_atac": 2964.0,
+        "null_mean": 1.0251,
+        "null_sd": 0.0849,
+        "null_pairs": 295.0,
+        "split_control_ratio": 1.199,
+        "split_control_z": 2.05,
+        "krt8_krt18_ratio": 1.214,
+        "reading": "not computable",
+        "why": "R7b, the split-locus control did not clear, so the design has no demonstrated sensitivity to co-accessibility at this depth"
+      },
+      {
+        "well": "SeV_Cebpa_mutant",
+        "cell_set": "transitional",
+        "cells": 773,
+        "B_atac": 5967.0,
+        "null_mean": 1.0086,
+        "null_sd": 0.0902,
+        "null_pairs": 298.0,
+        "split_control_ratio": 1.054,
+        "split_control_z": 0.51,
+        "krt8_krt18_ratio": 1.146,
+        "reading": "not computable",
+        "why": "R7b, the split-locus control did not clear, so the design has no demonstrated sensitivity to co-accessibility at this depth"
+      }
+    ]
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-20T07:52:39+00:00"
+}

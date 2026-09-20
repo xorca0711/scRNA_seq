@@ -176,7 +176,16 @@ measurement trustworthy: chromatin helps exactly where the transcript is sparse
 and the gene carries many linked peaks, and it hurts where the transcript is
 already universal. The multiome deposits this repository already holds
 (GSE310539 and GSE247130) carry both loci in the same nuclei.
-*Cost: low, data local and the machinery is built. Caveat in the next section.*
+
+**RUN, AND CLOSED. See [`ROUTE_B_OUTCOME.md`](ROUTE_B_OUTCOME.md).** Three
+passes with three instruments (A1, A1b, A1c) all returned NOT COMPUTABLE,
+because the positive control that gates the reading never cleared. The gate is
+now known to have been mis-specified, so the closure is a decision taken under a
+rule frozen before the trial ran rather than a demonstration that the approach
+cannot work. What the passes did establish is that the graded form of the
+statistic has real sensitivity: Etv5 against Abca3 clears at z = +3.55 and Krt8
+against Krt18 at z = +3.59. The outcome page states what a correct gate would
+be. *Register status: Not established, never Refuted.*
 
 **Route C. GSE150957, the only paired design anywhere.** Wnt-high, Wnt-low and
 Wnt-negative distal lung epithelium sorted from the **same animal**, six
