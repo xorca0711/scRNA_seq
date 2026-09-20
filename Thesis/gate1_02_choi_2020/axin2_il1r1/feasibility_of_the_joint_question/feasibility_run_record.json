@@ -1,0 +1,72 @@
+{
+  "trial": "Axin2 and Il1r1: locus accessibility against transcript detection",
+  "rules_frozen_at": "2026-09-20T07:21:04+00:00",
+  "rules": {
+    "question": "is locus-level chromatin accessibility less sparse than the transcript for Axin2 and Il1r1, the two genes whose transcripts are too sparse to support a per-cell call",
+    "this_is_a_measurement_not_a_trial": "no state is compared, no threshold is set, no biology is reported",
+    "statistic": "per gene: transcript detection rate; the count of distal and promoter peaks the vendor annotation links to it; the fraction of cells detecting at least one of them; the ratio",
+    "controls": "Sftpc (near-universal transcript, 2 peaks) must show chromatin WORSE; Etv5 (moderate, many peaks) roughly even; Lgr5 (very sparse, 10 peaks) the largest gain. Wrong ordering means the measurement is wrong",
+    "does_not_establish": "an accessible Axin2 locus is not a Wnt-responsive cell. Accessibility reports that a locus permits expression, not that the cell is signalling now. It is chosen because the transcript does not work, not because it is better"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_atac_peak_annotation.tsv.gz",
+      "bytes": 2665415,
+      "modified": "2026-09-20T05:30:39+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_filtered_feature_bc_matrix.h5",
+      "bytes": 328167298,
+      "modified": "2026-09-20T05:31:08+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_atac_peak_annotation.tsv.gz",
+      "bytes": 3107650,
+      "modified": "2026-09-20T05:35:38+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\axin2_il1r1\\feasibility_of_the_joint_question\\locus_vs_transcript.csv",
+    "Thesis\\gate1_02_choi_2020\\axin2_il1r1\\feasibility_of_the_joint_question\\feasibility_summary.md"
+  ],
+  "results": {
+    "control_ordering": {
+      "GSE247130_SeV": {
+        "Sftpc_worse_than_rna": true,
+        "Etv5_roughly_even": true,
+        "Lgr5_largest_gain": true,
+        "Axin2_gain": 10.37,
+        "Il1r1_gain": 2.76
+      },
+      "GSE310539": {
+        "Sftpc_worse_than_rna": true,
+        "Etv5_roughly_even": true,
+        "Lgr5_largest_gain": true,
+        "Axin2_gain": 4.13,
+        "Il1r1_gain": 1.2
+      }
+    },
+    "controls_ordered_correctly": true
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-20T07:21:52+00:00"
+}
