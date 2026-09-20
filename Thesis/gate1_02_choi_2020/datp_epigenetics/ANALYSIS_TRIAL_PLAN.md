@@ -65,18 +65,34 @@ Rule R2 required the suffix-to-condition map, which is the GEO sample order and
 is not deposited, to be checked on an independent axis before any name was used.
 The check is that a knockout carries less of its own target gene.
 
-Cebpa is **11 to 14 times higher** in the suffix the GEO order calls the Cebpa
-knockout, in all three files. A conditional knockout cannot carry more of its
-own target than its control, so suffix 1 is the control and suffix 2 is the
-mutant, the reverse of the deposited order. Two further axes agree and neither
-was used to reach it: Cldn4 is 4.5-fold higher in suffix 2 of the infected file,
-which is the expansion of transitional cells the source paper reports for the
-mutant; and Sox9 is 7-fold higher in suffix 2 of the neonatal file, which is the
-SOX9 reactivation that paper reports for the neonatal mutant.
+Cebpa is higher in the suffix the GEO order calls the Cebpa knockout in all
+three files, by 14.5x at P9, 10.9x at seven weeks and
+4.5x in the infected file. A conditional knockout cannot carry more
+of its own target than its control, so suffix 1 is the control and suffix 2 is
+the mutant, the reverse of the deposited order. Two further axes agree: Cldn4 is
+4.2-fold higher in suffix 2 of the infected file, which is the
+expansion of transitional cells the source paper reports for the mutant, and
+Sox9 is 7.1x, 2.8x and 2.5x higher in
+suffix 2 across the three files, much the strongest in the neonatal one, which
+is the stage-specificity that paper reports.
 
-GSE310539 is corroborated as deposited. Note that only Fos discriminates its
-genotypes: Fosb and Junb are not lower in the mutant wells, so a check built on
-those two would have passed the wrong answer.
+**Those figures were wrong when this branch first wrote them, and the Sox9 axis
+was not measured at all.** Trial M1's frozen corroboration panel was Cldn4, Fos
+and Cebpa; its write loop iterated over a fourth gene behind a guard that
+dropped it silently, and the Sox9 figure existed only as a hard-coded string.
+The register said Cebpa was 11 to 14 times higher in all three files when the
+infected file is 4.5 times, and it said Cldn4 was 4.5-fold higher in that file
+when the logged table gives 4.2. All four are recomputed and logged in
+[trial M4](trials/m4_the_corroboration_the_register_claimed/m4_summary.md). The
+conclusion about the suffix map is unaffected; the account of how well it was
+shown was not. Rows C116 and C151.
+
+GSE310539 is corroborated as deposited: Fos is 3.7-fold
+higher in the wildtype wells than in the mutant ones, and Cldn4 rises
+10.5-fold with infection in the wildtype pair and 5.3-fold in
+the mutant pair. The observation that Fosb and Junb do not discriminate the
+genotypes, so that a check built on those two would have passed the wrong
+answer, is recorded in trial M1's own output and is not recomputed here.
 
 ### 3.2 The AT2 identity programme is silenced in RNA (Descriptive only)
 

@@ -1,0 +1,75 @@
+{
+  "trial": "M4 the corroboration the register claimed",
+  "rules_frozen_at": "2026-09-20T09:09:08+00:00",
+  "rules": {
+    "question": "compute the suffix corroboration the register has been quoting, including the Sox9 axis that was never measured",
+    "why_it_exists": "an eight-adversary audit with independent verification returned 45 confirmed defects in rows C116 to C150. The worst is that M1's frozen corroboration panel was Cldn4, Fos and Cebpa, the write loop guarded Sox9 behind `if s in counts` so it was dropped silently, and the Sox9 clause the register presents as an independent corroborating axis was never computed. Two further numbers in the same hand-typed paragraph are wrong",
+    "M1_is_not_re_run": "M1's frozen panel is not edited and its outcome stands with the rule that produced it",
+    "R1_panel": "Cldn4, Fos, Cebpa, Sox9, every well of both deposits, pseudobulk counts per ten thousand",
+    "R2_no_typed_numbers": "every number in this trial's summary is formatted from the frame, none is typed",
+    "R3_expected_directions": {
+      "Cebpa": "lower in the Cebpa knockout, all three GSE247130 files",
+      "Sox9": "higher in the neonatal Cebpa mutant; Hassan and Chen report SOX9 reactivation as neonatal-specific, so the adult files are expected to show a smaller effect and are not evidence either way",
+      "Cldn4": "higher after Sendai infection",
+      "Fos": "lower in the Fos, Fosb, Junb mutant of GSE310539"
+    },
+    "R4_direction_and_magnitude_separately": "the audit showed a magnitude range can be wrong while a direction holds; the register may quote a range only if computed here"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate.P9_filtered_feature_bc_matrix.h5",
+      "bytes": 353138466,
+      "modified": "2026-09-20T05:31:24+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_filtered_feature_bc_matrix.h5",
+      "bytes": 193819969,
+      "modified": "2026-09-20T05:31:54+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_filtered_feature_bc_matrix.h5",
+      "bytes": 328167298,
+      "modified": "2026-09-20T05:31:08+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m4_the_corroboration_the_register_claimed\\m4_corroboration.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m4_the_corroboration_the_register_claimed\\m4_ratios.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m4_the_corroboration_the_register_claimed\\m4_summary.md"
+  ],
+  "results": {
+    "cebpa_ratios": {
+      "P9": 14.521,
+      "7wk": 10.912,
+      "SeV": 4.49
+    },
+    "sox9_ratios": {
+      "P9": 7.053,
+      "7wk": 2.826,
+      "SeV": 2.484
+    },
+    "cebpa_direction_holds_in_all_three": true,
+    "sox9_direction_holds_in_all_three": true
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-20T09:10:44+00:00"
+}
