@@ -1,5 +1,21 @@
 # Trial M1: closed or merely silenced, as frozen
 
+> **CORRECTION, 2026-09-20.** An eight-adversary audit with independent
+> verification found that the R2 paragraph below was typed as string literals
+> while the dataframe holding the real values sat in scope, and that four of its
+> figures are wrong or unlogged. **The Sox9 clause was never computed at all**:
+> Sox9 was not in this trial's frozen corroboration panel and the write loop
+> dropped it silently. Recomputed and logged in
+> [trial M4](../m4_the_corroboration_the_register_claimed/m4_summary.md), the
+> true values are Cebpa 14.5x, 10.9x and 4.5x
+> rather than "11 to 14 in all three files"; Sox9 7.1x,
+> 2.8x and 2.5x; Cldn4 4.2x in the infected
+> file rather than 4.5; and Cldn4 rises 10.5-fold and 5.3-fold
+> with infection rather than 12-fold and 6-fold. **The suffix map of GSE247130 is
+> still inverted and that conclusion is unaffected.** This page is left otherwise
+> as it was written, because the point of the record is that the error is
+> visible. Rows C116 and C151.
+
 **Reading: NOT COMPUTABLE in every well.** Two of the frozen rules were
 wrong in ways that only reading the data could show. Under this
 repository's convention the thresholds were not moved, the first outcome

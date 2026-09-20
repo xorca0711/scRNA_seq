@@ -17,10 +17,10 @@ the claim's potential.
 | Bucket | Rows |
 |---|--:|
 | Retracted or superseded, kept on display | 3 |
-| Refuted | 37 |
-| Not establishable with the data that exists | 7 |
-| Not established | 32 |
-| **Total** | **79** |
+| Refuted | 39 |
+| Not establishable with the data that exists | 6 |
+| Not established | 33 |
+| **Total** | **81** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -190,13 +190,6 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c14_does_the_ranking_depend_on_the_database/c14_rankings_by_resource.csv`
 - **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
-### C116. GSE247130's deposited barcode-suffix order is correct
-
-- **Status in the register:** Refuted
-- **What settled it:** trial M1 rule R2: Cebpa is 11 to 14 times higher in the suffix the GEO sample order calls the Cebpa knockout, in all three files; Cldn4 is 4.5-fold higher in suffix 2 of the infected file and Sox9 7-fold higher in suffix 2 of the neonatal file, both agreeing and neither used to reach it
-- **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1_closed_or_merely_silenced/m1_suffix_corroboration.csv`
-- **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
-
 ### C119. A CLDN4-positive KRT8-positive transcript call identifies an injury-induced state
 
 - **Status in the register:** Refuted
@@ -207,43 +200,43 @@ what was refuted and what settled it.
 ### C122. Where the data lean at all, they lean toward the AT2 programme staying open
 
 - **Status in the register:** Refuted
-- **What settled it:** trial M2 and an adversarial recomputation: under every offset estimator other than the degenerate median the AT2 arm in the infected Cebpa-mutant well moves further toward closing, reaching z = -2.89 under an accessibility-matched background and z = -3.55 under a multiplicative correction, at which the positive control itself falls below its floor and the well would have been refused
+- **What settled it:** trial M2 and the M2 offsets table: under the mean and trimmed offsets the AT2 arm in the infected Cebpa-mutant well moves further toward closing, reaching z = -3.23 under the mean, where it clears, and z = -2.81 under the trimmed mean
 - **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_offsets.csv`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
 
 ### C123. Dropping any cell with a non-zero Scgb1a1, Scgb3a2, Foxj1 or Krt5 count removes airway cells
 
 - **Status in the register:** Refuted as written, and disclosed
-- **What settled it:** trial M1 rule R3: Scgb1a1 is detected in 73 to 100 per cent of nuclei at a median of 1 to 20 counts, the rule removed a median of 99.7 per cent of cells, and its severity tracked depth (Scgb3a2 detection 0.950 in the deepest well against 0.028 in the shallowest)
+- **What settled it:** trial M1 rule R3: the rule removed a median of 99.9 per cent of cells across the ten wells, keeping 25.5 per cent of the shallowest well and none of the deepest
 - **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1_closed_or_merely_silenced/m1_wells.csv`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
 
 ### C124. A label requiring Cldn4 detection and Krt8 above the uninjured 99th percentile can recover the published transitional fraction
 
 - **Status in the register:** Refuted
-- **What settled it:** trial M1b: a 99th-percentile cut passes one per cent of the control well by construction and Cldn4 is detected in five to nine per cent of an infected well, so the conjunction cannot exceed a few tenths of a per cent; it returned 0.03 to 0.66 against a published 12
+- **What settled it:** trial M1b: on RNA downsampled to 2,366 and 3,400 UMI the conjunction returned 0.03 to 0.66 per cent of filtered cells across the ten wells
 - **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1b_corrected_pass/m1b_labels.csv`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
 
 ### C125. Trial M1d's budget rule and its drop gate are jointly satisfiable
 
 - **Status in the register:** Refuted, and disclosed
-- **What settled it:** trial M1d: the budget retained 60 per cent of every well, which permits up to 40 per cent to fall below it, while the gate refused any well losing more than 20 per cent of a group; all eight mature wells refused at 27 to 47 per cent
+- **What settled it:** trial M1d: the budget retained 60 per cent of every well, which permits up to 40 per cent to fall below it, while the gate refused any well losing more than 20 per cent of a group. 5 of the eight mature wells reached the gate and all 5 refused there, at 27 to 47 per cent; the other 3 refused earlier at the fifty-cell floor and never reached the budget
 - **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1d_mature_wells_only/m1d_readings.csv`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
 
 ### C126. Testing a positive control once is enough to license reading a null beside it
 
 - **Status in the register:** Refuted, and disclosed
-- **What settled it:** trial M2 against trial M1e's rule R9: the control clears in five of eight seed-and-well combinations and fails leave-one-out on two of six genes in each injured well, with the arm carried by Sfn and Ndrg1
+- **What settled it:** trial M2 against trial M1e's rule R9: the control clears in five of eight seed-and-well combinations and fails leave-one-out on two of six genes in each injured well. The two carriers differ between wells: Ndrg1, Sfn in the wildtype infected well and Lgals3, Ndrg1 in the Cebpa-mutant infected well
 - **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_leave_one_out.csv`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
 
 ### C127. Counting peaks whose detection fraction differs by more than 0.10 between RNA-labelled groups measures chromatin rather than depth
 
 - **Status in the register:** Refuted
-- **What settled it:** the design abandoned before M1 ran, checked adversarially on the deposits: a pseudo-contrast built from reference cells only, depth-matched, containing no transitional cell at all, returned 3,393 peaks against a permuted null mean of 2,617 at p = 0/200 in GSE310539 and the same in two further files, with 100 per cent of crossing peaks pointing at the deeper group
-- **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/../ANALYSIS_TRIAL_PLAN.md`
+- **What settled it:** refused a priori, and the argument is what carries it: the labels and the chromatin come from one nucleus, both modalities share that nucleus's quality, and a per-peak detection fraction is monotone in depth, so the null is false by construction and the design has no state in which it reads no
+- **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/ANALYSIS_TRIAL_PLAN.md`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
 
 ### C129. Trial M2's reading rested on one instrument used consistently
@@ -267,6 +260,13 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
 
+### C137. No public dataset carries an Axin2 or Wnt readout and an Il1r1 readout in the same cells
+
+- **Status in the register:** Refuted by this branch's own artefacts
+- **What settled it:** the GEO DataSets keyword intersection of the two genes returns zero records across all organisms, and no Il1r1 reporter mouse has ever been deposited
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
 ### C138. Axin2 or Il1r1 transcript detection can stand in for the lineage reporters in droplet single-cell data
 
 - **Status in the register:** Refuted
@@ -274,10 +274,10 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
-### C141. The laboratory that proposed the comparison has advanced it since 2020
+### C141. The laboratory that proposed the comparison has not advanced it since 2020
 
-- **Status in the register:** Refuted on the reference-list evidence
-- **What settled it:** the 162-item reference list of Yu, Lee, Choi and Choi 2026 cites Choi 2020 and contains no Nabhan 2018, no Zacharias 2018, no Zepp 2017 and no Frank 2016, and neither Wnt nor Axin2 nor beta-catenin appears in its title, abstract, keywords or MeSH terms
+- **Status in the register:** Refuted
+- **What settled it:** examined the 2026 Seminars in Immunology review of Yu, Lee, Choi and Choi, whose 162-item reference list cites Choi 2020 and contains no primary Axin2 or AEP paper
 - **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
@@ -285,14 +285,14 @@ what was refuted and what settled it.
 
 - **Status in the register:** Refuted, and disclosed
 - **What settled it:** trial A1: the vendor annotation assigns each peak to its NEAREST gene, so the two loci largely do not share peaks; the control returned ratios of 1.11 to 1.25 against null means near 1.03, a real but modest effect rather than an identity
-- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/a1_locus_co_accessibility/a1_pairs.csv`
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a1_locus_co_accessibility/a1_pairs.csv`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
 ### C144. A split-locus control, two halves of one gene's peak set, cannot fail for biological reasons
 
 - **Status in the register:** Refuted, and disclosed
 - **What settled it:** trials A1b and A1c: it failed in every well at z +0.24 to +2.05, for two reasons found only afterwards. It is judged against a null built for a different peak-count profile, 15 against 38, while the control is 15 against 15; and peaks the vendor annotation links to one gene need not lie in one regulatory domain
-- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/a1c_graded_statistic/a1c_pairs.csv`
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
 ### C146. GSE150957, a bulk array of Wnt-sorted distal lung epithelium with a paired within-animal design and the mouse as the unit, can contribute to the Axin2 and Il1r1 joint question
@@ -302,18 +302,32 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
-### C148. England et al. 2025 Figure S2L-N data, the only direct measurement of Axin2 and Il1r1 overlap in the literature, is available for reanalysis in GSE247505
+### C147. A Wnt-target module clears the per-cell detection floor that Axin2 alone does not, in the one deposit here with per-animal replication
 
 - **Status in the register:** Refuted
-- **What settled it:** trial A2: the superseries and both subseries contain zero mentions of ZsGreen, and the NCBI link service returns exactly three GEO series for that paper, none holding the sorted libraries
-- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/a2_does_il1r1_deletion_move_wnt/a2_summary.md`
+- **What settled it:** feasibility measurement on six GSE262927 samples
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/trials/module_detection_check/module_detection.csv`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C148. England et al. 2025's Figure S2 measurement is available for reanalysis in GSE247505
+
+- **Status in the register:** Refuted
+- **What settled it:** trial A2: the superseries and both subseries contain zero mentions of ZsGreen, and the NCBI link service returns exactly three GEO series for that paper, none holding sorted Il1r1-lineage libraries
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_summary.md`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
 ### C149. The Il1r1 genotype labels of GSE247504 can be verified from the deposited matrices
 
 - **Status in the register:** Refuted
 - **What settled it:** trial A2 rule R2: Il1r1 per ten thousand is 0.202 and 0.162 in the two-week heterozygous libraries against 0.161 and 0.187 in the homozygous, and 0.199 and 0.095 against 0.200 and 0.122 at twelve weeks, interleaving at both timepoints
-- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/a2_does_il1r1_deletion_move_wnt/a2_libraries.csv`
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_libraries.csv`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C151. Rows C116 to C150 were written from the artefacts they cite
+
+- **Status in the register:** Refuted
+- **What settled it:** an eight-adversary audit of those rows, each finding sent to an independent verifier that defaulted to refuting it, returned 45 confirmed or partly confirmed defects across 14 rows. Four numbers were quoted that no run in this repository ever produced: the Sox9 corroboration axis of C116, two z values in C122, and all three figures in C127. Four more were wrong against the tables they cite. Two rows were internally inconsistent with their neighbours, one named the wrong laboratory, and one was refuted by this branch's own artefacts
+- **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m4_the_corroboration_the_register_claimed/m4_summary.md`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
 ---
@@ -361,13 +375,6 @@ what was refuted and what settled it.
 - **What settled it:** trial M0 under the replicate rule inherited from D0: ten libraries, 104,143 cells, one library per condition, each pooling two mice before loading
 - **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m0_deposit_reality_check/m0_replication.csv`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
-
-### C137. No public dataset carries an Axin2 or Wnt readout and an Il1r1 readout in the same cells
-
-- **Status in the register:** Not establishable with the data that exists
-- **What settled it:** GEO DataSets intersection of the two genes returns zero records across all organisms; no Il1r1 reporter mouse has ever been deposited in GEO; PubMed title and abstract co-occurrence returns one paper, on oligodendrocytes
-- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
-- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
 ---
 
@@ -594,7 +601,14 @@ what was refuted and what settled it.
 
 - **Status in the register:** Not established
 - **What settled it:** trial A2: not computable, because R2 refused the genotype labels. The unread values are recorded: at two weeks the Wnt module separates completely in the direction of more Wnt without Il1r1, at twelve weeks it does not, and with two libraries per group the smallest attainable permutation p is one in six
-- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/a2_does_il1r1_deletion_move_wnt/a2_readings.csv`
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_readings.csv`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C154. Route B's transitional cell set was reported
+
+- **Status in the register:** Not established
+- **What settled it:** trial A1c, produced and never registered until the audit found it missing: in the one transitional set large enough to compute, 773 cells of the infected Cebpa mutant, the Axin2 against Il1r1 correlation flips positive at r = +0.070 and the Wnt module at +0.092, percentile 0.94 and 0.977, against negative values in every AT2 set
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
 ---

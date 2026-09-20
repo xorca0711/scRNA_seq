@@ -1,0 +1,13 @@
+deposit,file,gene,axis,numerator,denominator,ratio
+GSE247130,P9,Cebpa,control over Cebpa mutant,0.9642,0.0664,14.521
+GSE247130,P9,Sox9,Cebpa mutant over control,2.2429,0.318,7.053
+GSE247130,P9,Cldn4,Cebpa mutant over control,0.4044,0.2422,1.67
+GSE247130,7wk,Cebpa,control over Cebpa mutant,0.646,0.0592,10.912
+GSE247130,7wk,Sox9,Cebpa mutant over control,0.0325,0.0115,2.826
+GSE247130,7wk,Cldn4,Cebpa mutant over control,0.086,0.0552,1.558
+GSE247130,SeV,Cebpa,control over Cebpa mutant,0.2043,0.0455,4.49
+GSE247130,SeV,Sox9,Cebpa mutant over control,0.0611,0.0246,2.484
+GSE247130,SeV,Cldn4,Cebpa mutant over control,0.2728,0.0647,4.216
+GSE310539,totalaggr,Fos,wildtype over AP-1 mutant,5.1199,1.3951,3.67
+GSE310539,totalaggr,Cldn4,"Sendai over PBS, wildtype",0.2363,0.0224,10.549
+GSE310539,totalaggr,Cldn4,"Sendai over PBS, AP-1 mutant",0.1199,0.0227,5.282
