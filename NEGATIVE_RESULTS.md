@@ -17,10 +17,10 @@ the claim's potential.
 | Bucket | Rows |
 |---|--:|
 | Retracted or superseded, kept on display | 3 |
-| Refuted | 30 |
-| Not establishable with the data that exists | 6 |
-| Not established | 27 |
-| **Total** | **66** |
+| Refuted | 32 |
+| Not establishable with the data that exists | 7 |
+| Not established | 30 |
+| **Total** | **72** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -267,6 +267,20 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
 
+### C138. Axin2 or Il1r1 transcript detection can stand in for the lineage reporters in droplet single-cell data
+
+- **Status in the register:** Refuted
+- **What settled it:** measured on Choi's own deposit GSE145031: Axin2 detected in 4.6, 4.3 and 5.6 per cent of AT2-lineage cells and Il1r1 in 5.8, 7.1 and 7.1 per cent, both at about one UMI per positive cell. Nabhan's own supplement also concedes the reporter does not label all Axin2-positive cells
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C141. The laboratory that proposed the comparison has advanced it since 2020
+
+- **Status in the register:** Refuted on the reference-list evidence
+- **What settled it:** the 162-item reference list of Yu, Lee, Choi and Choi 2026 cites Choi 2020 and contains no Nabhan 2018, no Zacharias 2018, no Zepp 2017 and no Frank 2016, and neither Wnt nor Axin2 nor beta-catenin appears in its title, abstract, keywords or MeSH terms
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
 ---
 
 ## Not establishable with the data that exists
@@ -312,6 +326,13 @@ what was refuted and what settled it.
 - **What settled it:** trial M0 under the replicate rule inherited from D0: ten libraries, 104,143 cells, one library per condition, each pooling two mice before loading
 - **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m0_deposit_reality_check/m0_replication.csv`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
+
+### C137. No public dataset carries an Axin2 or Wnt readout and an Il1r1 readout in the same cells
+
+- **Status in the register:** Not establishable with the data that exists
+- **What settled it:** GEO DataSets intersection of the two genes returns zero records across all organisms; no Il1r1 reporter mouse has ever been deposited in GEO; PubMed title and abstract co-occurrence returns one paper, on oligodendrocytes
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
 ---
 
@@ -505,6 +526,27 @@ what was refuted and what settled it.
 - **What settled it:** trial M3, reported but refused under rule R9 because that well's positive control did not fire
 - **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_readings.csv`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
+
+### C134. Axin2-positive AT2 cells are a distinct subset of AT2 cells
+
+- **Status in the register:** Not established
+- **What settled it:** the Axin2 fraction differs 20 to 30 fold between two knock-in alleles (1 per cent in Nabhan 2018, about 20 per cent in Zacharias 2018) and nobody has explained the gap; the stability argument cannot separate subset from state because a recombined cell stays labelled after it switches the gene off; and the same paper reports 73 per cent of AT2 turning Axin2 on after injury, marker status tracking distance to a Wnt5a-expressing fibroblast, and Wnt ligand switching it on in ordinary AT2 cells
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C135. Il1r1-positive AT2 cells are a distinct subset rather than an injury-inducible state
+
+- **Status in the register:** Not established
+- **What settled it:** the lineage-labelled fraction rises from 15 to 60 per cent after bleomycin, and Choi's own Limitations section says residual tamoxifen means expansion of a pre-existing pool cannot be separated from fresh Cre firing during repair
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C140. An accessible Axin2 locus identifies a Wnt-responsive cell
+
+- **Status in the register:** Not established
+- **What settled it:** not measured here and not claimed; accessibility reports that a locus permits expression, not that the cell is signalling, and it is slower and more permissive than transcription
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
 ---
 

@@ -25,6 +25,15 @@ AT2 cells), a mechanism (HIF1alpha-driven glycolysis) and a failure mode
 
 ---
 
+## Branches of this paper
+
+| Branch | Question | State |
+|---|---|---|
+| [`datp_epigenetics/`](datp_epigenetics/README.md) | What does the transitional state look like in chromatin, given that this paper's own ATAC deposit is coverage tracks only | Trials M0 to M3 run; one validated deposit error, one Descriptive-only RNA result, the chromatin question Not established |
+| [`axin2_il1r1/`](axin2_il1r1/README.md) | This paper's own closing Discussion question: are Il1r1-positive and Axin2-positive AT2 cells the same cells | Assessed, no trial run. The definitive comparison needs mice that do not exist in any deposit; one feasibility measurement opened a chromatin route |
+
+---
+
 ## 0. The five questions
 
 **Question tested.** During alveolar regeneration after bleomycin, what is
