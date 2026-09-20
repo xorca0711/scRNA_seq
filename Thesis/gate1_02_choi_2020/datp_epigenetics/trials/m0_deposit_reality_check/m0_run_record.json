@@ -1,0 +1,89 @@
+{
+  "trial": "M0 multiome deposit reality check",
+  "rules_frozen_at": "2026-09-20T05:39:35+00:00",
+  "rules": {
+    "question": "Gate 0 of the DATP epigenetics branch: what the two multiome deposits contain",
+    "why_this_branch_exists": "Choi 2020 supports its Il1r1-positive AT2 claim with ATAC-seq, but GSE144598 deposits two bigwig coverage tracks with no peaks, no reads and one pooled sample per group. Trial D0 recorded it as unusable. These two deposits are the nearest public data that can carry a chromatin question about the transitional state at single-cell resolution.",
+    "scope": "GSE310539 (4 libraries in 1 aggregate) and GSE247130 (6 libraries in 3 aggregates), both 10x multiome",
+    "design_source": "the deposited GEO SOFT family files, parsed rather than transcribed",
+    "replicate_rule": "a contrast has within-group replication only if at least two libraries share every experimental variable except the one being contrasted; inherited verbatim from trial D0",
+    "suffix_rule": "the map from barcode suffix to library is the GEO sample order, the cellranger-arc default, and is NOT deposited; recorded here as an assumption and corroborated in M1, not here, because every quantity that could corroborate it is a marker-level quantity",
+    "peak_set_rule": "peaks are called per aggregate, so a peak identifier is meaningful only inside its own file; peak identity is never compared across files",
+    "join_rule": "peak to gene comes from the vendor atac_peak_annotation.tsv.gz and is many to many; annotation rows that fail to match a matrix peak are counted, and a non-zero count stops the branch",
+    "memory": "one streaming pass per file, chunked over cells; no dense load and no full sparse load",
+    "not_reported": "no comparison between cell states and no comparison between libraries"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_atac_peak_annotation.tsv.gz",
+      "bytes": 2665415,
+      "modified": "2026-09-20T05:30:39+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate.P9_filtered_feature_bc_matrix.h5",
+      "bytes": 353138466,
+      "modified": "2026-09-20T05:31:24+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate.P9_atac_peak_annotation.tsv.gz",
+      "bytes": 2533924,
+      "modified": "2026-09-20T05:36:07+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_filtered_feature_bc_matrix.h5",
+      "bytes": 193819969,
+      "modified": "2026-09-20T05:31:54+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_atac_peak_annotation.tsv.gz",
+      "bytes": 2233195,
+      "modified": "2026-09-20T05:35:48+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_filtered_feature_bc_matrix.h5",
+      "bytes": 328167298,
+      "modified": "2026-09-20T05:31:08+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_atac_peak_annotation.tsv.gz",
+      "bytes": 3107650,
+      "modified": "2026-09-20T05:35:38+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m0_deposit_reality_check\\m0_libraries.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m0_deposit_reality_check\\m0_files.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m0_deposit_reality_check\\m0_peak_annotation_classes.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m0_deposit_reality_check\\m0_replication.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m0_deposit_reality_check\\m0_summary.md"
+  ],
+  "results": {
+    "peak_to_gene_join_clean": true,
+    "total_libraries": 10,
+    "total_cells": 104143,
+    "contrasts_with_within_group_replication": 0,
+    "peak_sets_are_per_file": true,
+    "suffix_map_is_assumed": true
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-20T05:39:55+00:00"
+}

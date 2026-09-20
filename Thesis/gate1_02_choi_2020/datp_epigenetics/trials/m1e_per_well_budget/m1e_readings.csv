@@ -1,0 +1,9 @@
+deposit,well,role,n_labelled_before_budget,reading,why,B_atac,n_labelled,n_reference_above_budget,dropped_labelled,dropped_reference,scope,q,atac_offset,cebpa_dropped_from_AT2_arm
+GSE310539,wildtype_PBS,negative control,18,not computable,fewer than 50 labelled cells,,,,,,,,,
+GSE310539,wildtype_SeV,test,80,AT2 programme SILENCED BUT NOT CLOSED,"R10a: clears in RNA and not in ATAC, behind a positive control that fired",2700.0,64.0,2644.0,0.2,0.0,the deeper 80 per cent of the labelled group,4.0,0.0,False
+GSE310539,AP1mut_PBS,negative control,18,not computable,fewer than 50 labelled cells,,,,,,,,,
+GSE310539,AP1mut_SeV,test,55,not computable,"fewer than 50 labelled cells above the budget, or too small a sham pool",2368.0,44.0,5119.0,0.2,0.0,the deeper 80 per cent of the labelled group,,,
+GSE247130,7wk_control,negative control,55,not computable,"fewer than 50 labelled cells above the budget, or too small a sham pool",2768.0,44.0,4922.0,0.2,0.0,the deeper 80 per cent of the labelled group,,,
+GSE247130,7wk_Cebpa_mutant,negative control,140,not computable,"R9: the transitional-marker arm did not clear, so the ATAC side has no demonstrated sensitivity here",2177.0,112.0,7020.0,0.2,0.0,the deeper 80 per cent of the labelled group,4.0,0.0,True
+GSE247130,SeV_control,test,44,not computable,fewer than 50 labelled cells,,,,,,,,,
+GSE247130,SeV_Cebpa_mutant,test,400,AT2 programme SILENCED BUT NOT CLOSED,"R10a: clears in RNA and not in ATAC, behind a positive control that fired",6985.0,320.0,4899.0,0.2,0.0,the deeper 80 per cent of the labelled group,4.0,0.0,True

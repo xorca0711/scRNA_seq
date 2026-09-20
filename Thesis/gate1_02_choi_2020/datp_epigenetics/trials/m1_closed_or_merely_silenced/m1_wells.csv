@@ -1,0 +1,11 @@
+deposit,file,suffix,well,injured,cells,after_compartment_filter,krt8_threshold_k,transitional,reference,cldn4_positive,U1_k_is_zero,U1_fraction_reclassified,U2_cldn4_umi_ratio,median_rna_umi,median_atac_in_peak
+GSE310539,totalaggr,1,wildtype_PBS,False,7340,33,3,0,33,0,False,,1.5604184457728438,4705.5,4820.0
+GSE247130,7wk,2,7wk_control,False,10838,24,7,0,21,1,False,1.0,1.2405024034734067,6504.0,6867.0
+GSE310539,totalaggr,2,wildtype_SeV,True,8093,1,3,0,1,0,False,,1.6219971540972629,6253.0,5129.0
+GSE310539,totalaggr,3,AP1mut_PBS,False,13622,3469,3,3,3464,15,False,0.8,1.6438775510204082,2953.0,4889.5
+GSE310539,totalaggr,4,AP1mut_SeV,True,10794,2,3,0,2,0,False,,1.7886198547215497,4206.5,4876.0
+GSE247130,P9,1,P9_mutant,False,12186,0,7,0,0,0,False,,1.2631765122037495,8724.0,12071.0
+GSE247130,P9,2,P9_control,False,11272,4,7,0,3,0,False,,1.2788585582331389,10242.5,11081.0
+GSE247130,7wk,1,7wk_mutant,False,7589,4,7,0,4,0,False,,1.3096985787911917,6433.0,7579.0
+GSE247130,SeV,1,SeV_mutant,True,11773,220,7,0,220,3,False,1.0,1.5138414865377323,3985.0,13162.0
+GSE247130,SeV,2,SeV_control,True,10636,1338,7,19,1317,117,False,0.8376068376068376,1.5045142650776453,5805.0,12221.5

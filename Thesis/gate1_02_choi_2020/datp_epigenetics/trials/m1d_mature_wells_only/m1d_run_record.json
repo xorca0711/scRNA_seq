@@ -1,0 +1,174 @@
+{
+  "trial": "M1d mature wells only",
+  "rules_frozen_at": "2026-09-20T06:14:16+00:00",
+  "rules": {
+    "question": "in the CLDN4-positive KRT8-positive alveolar group, is the AT2 identity programme closed at the chromatin level or merely silenced at the RNA level",
+    "relationship_to_M1c": "M1c refused under U7 because the neonatal P9 wells held more of the labelled group than any injured well; its threshold is not moved and its outcome stands",
+    "the_refusal_was_a_result": "Krt8 and Cldn4 are expressed across immature postnatal alveolar epithelium, so a CLDN4-positive KRT8-positive call cannot separate neonatal developmental immaturity from injury-induced transition. A marker set shared with normal development is not a damage-associated marker set",
+    "R11_stage_rule": "the two P9 neonatal wells leave both the test set and the negative-control set, declared in advance",
+    "R12_genotype_rule": "Cebpa is dropped from the AT2 arm in Cebpa-mutant wells and named; the arm must still reach four genes",
+    "R13_cell_floor": "50, not 100: the old floor was set for a per-peak 0.10 threshold this design does not contain, and the sham band computed at the same group sizes is the correct small-n guard",
+    "no_accessibility_computed_before_now": true,
+    "registration_GSE310539": "Lynch et al. already report chromVAR AP-1 motif accessibility in this substate and note qualitatively that AT2 chromatin features are lost less than AT2 RNA. Agreement here is a quantification of a published observation and is registered as a re-derivation, not independent confirmation",
+    "registration_GSE247130": "Hassan and Chen ran no accessibility analysis of their transitional cells; their Sendai figure has no ATAC panel and their Sendai ATAC samples deposit no peak files. A result here is new for that deposit",
+    "register_status": "Descriptive only. Every well is one library pooling two mice; the unit is the library and nothing here is a test",
+    "not_tested": "any contrast between conditions, genotypes, stages or deposits; any motif; any causation"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_atac_peak_annotation.tsv.gz",
+      "bytes": 2665415,
+      "modified": "2026-09-20T05:30:39+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate.P9_filtered_feature_bc_matrix.h5",
+      "bytes": 353138466,
+      "modified": "2026-09-20T05:31:24+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate.P9_atac_peak_annotation.tsv.gz",
+      "bytes": 2533924,
+      "modified": "2026-09-20T05:36:07+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_filtered_feature_bc_matrix.h5",
+      "bytes": 193819969,
+      "modified": "2026-09-20T05:31:54+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_atac_peak_annotation.tsv.gz",
+      "bytes": 2233195,
+      "modified": "2026-09-20T05:35:48+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_filtered_feature_bc_matrix.h5",
+      "bytes": 328167298,
+      "modified": "2026-09-20T05:31:08+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_atac_peak_annotation.tsv.gz",
+      "bytes": 3107650,
+      "modified": "2026-09-20T05:35:38+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m1d_mature_wells_only\\m1d_labels.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m1d_mature_wells_only\\m1d_readings.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m1d_mature_wells_only\\m1d_arms.csv"
+  ],
+  "results": {
+    "R5b_budgets": {
+      "GSE310539": {
+        "B_rna": 2366,
+        "B_atac": 3185
+      },
+      "GSE247130": {
+        "B_rna": 3400,
+        "B_atac": 4971
+      }
+    },
+    "U7_mature_uninjured_max_pct": 1.55,
+    "U7_injured_max_pct": 5.09,
+    "U7_enrichment": 3.2838709677419353,
+    "U7_satisfied": true,
+    "R11_neonatal_label_pct": [
+      3.69,
+      8.07
+    ],
+    "readings": [
+      {
+        "deposit": "GSE310539",
+        "well": "wildtype_PBS",
+        "role": "negative control",
+        "n_labelled": 18,
+        "n_reference": 5474,
+        "reading": "not computable",
+        "why": "fewer than 50 labelled cells or too small a sham pool"
+      },
+      {
+        "deposit": "GSE310539",
+        "well": "wildtype_SeV",
+        "role": "test",
+        "n_labelled": 80,
+        "n_reference": 4498,
+        "reading": "not computable",
+        "why": "R5b dropped 47% of a group at the ATAC budget"
+      },
+      {
+        "deposit": "GSE310539",
+        "well": "AP1mut_PBS",
+        "role": "negative control",
+        "n_labelled": 18,
+        "n_reference": 8116,
+        "reading": "not computable",
+        "why": "fewer than 50 labelled cells or too small a sham pool"
+      },
+      {
+        "deposit": "GSE310539",
+        "well": "AP1mut_SeV",
+        "role": "test",
+        "n_labelled": 55,
+        "n_reference": 7389,
+        "reading": "not computable",
+        "why": "R5b dropped 34% of a group at the ATAC budget"
+      },
+      {
+        "deposit": "GSE247130",
+        "well": "7wk_control",
+        "role": "negative control",
+        "n_labelled": 55,
+        "n_reference": 6428,
+        "reading": "not computable",
+        "why": "R5b dropped 36% of a group at the ATAC budget"
+      },
+      {
+        "deposit": "GSE247130",
+        "well": "7wk_Cebpa_mutant",
+        "role": "negative control",
+        "n_labelled": 140,
+        "n_reference": 8876,
+        "reading": "not computable",
+        "why": "R5b dropped 38% of a group at the ATAC budget"
+      },
+      {
+        "deposit": "GSE247130",
+        "well": "SeV_control",
+        "role": "test",
+        "n_labelled": 44,
+        "n_reference": 6297,
+        "reading": "not computable",
+        "why": "fewer than 50 labelled cells or too small a sham pool"
+      },
+      {
+        "deposit": "GSE247130",
+        "well": "SeV_Cebpa_mutant",
+        "role": "test",
+        "n_labelled": 400,
+        "n_reference": 7408,
+        "reading": "not computable",
+        "why": "R5b dropped 27% of a group at the ATAC budget"
+      }
+    ]
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-20T06:16:55+00:00"
+}

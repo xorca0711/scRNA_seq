@@ -1,0 +1,11 @@
+accession,file,barcode_suffix,assumed_library,genotype,treatment,cells,stage
+GSE310539,totalaggr,1,wildtype_PBS,wildtype,PBS,7340,
+GSE310539,totalaggr,2,wildtype_SeV,wildtype,SeV,8093,
+GSE310539,totalaggr,3,AP1mut_PBS,AP-1 mutant,PBS,13622,
+GSE310539,totalaggr,4,AP1mut_SeV,AP-1 mutant,SeV,10794,
+GSE247130,P9,1,P9_mutant,Cebpa mutant,,12186,P9
+GSE247130,P9,2,P9_control,control,,11272,P9
+GSE247130,7wk,1,7wk_mutant,Cebpa mutant,,7589,7 weeks
+GSE247130,7wk,2,7wk_control,control,,10838,7 weeks
+GSE247130,SeV,1,SeV_mutant,Cebpa mutant,,11773,SeV infected
+GSE247130,SeV,2,SeV_control,control,,10636,SeV infected

@@ -1,0 +1,11 @@
+deposit,well,injured,neonatal,role,cells,after_filter,labelled,reference,labelled_pct
+GSE310539,wildtype_PBS,False,False,negative control,7340,5492,18,5474,0.33
+GSE310539,wildtype_SeV,True,False,test,8093,4578,80,4498,1.75
+GSE310539,AP1mut_PBS,False,False,negative control,13622,8134,18,8116,0.22
+GSE310539,AP1mut_SeV,True,False,test,10794,7444,55,7389,0.74
+GSE247130,P9_control,False,True,excluded by R11,12186,10475,387,10088,3.69
+GSE247130,P9_Cebpa_mutant,False,True,excluded by R11,11272,10252,827,9425,8.07
+GSE247130,7wk_control,False,False,negative control,7589,6483,55,6428,0.85
+GSE247130,7wk_Cebpa_mutant,False,False,negative control,10838,9016,140,8876,1.55
+GSE247130,SeV_control,True,False,test,11773,6344,44,6297,0.69
+GSE247130,SeV_Cebpa_mutant,True,False,test,10636,7851,400,7408,5.09

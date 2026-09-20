@@ -1,0 +1,124 @@
+{
+  "trial": "M1 closed or merely silenced",
+  "rules_frozen_at": "2026-09-20T05:54:56+00:00",
+  "rules": {
+    "question": "in the CLDN4-positive transitional state, is the AT2 identity programme closed at the chromatin level or merely silenced at the RNA level",
+    "why_not_the_obvious_question": "whether the two states differ in accessibility cannot be false: the labels come from the transcriptome of the same nucleus, both modalities share that nucleus quality, and both source papers defined the state partly from its chromatin. a null that is false by construction has no state in which it reads no",
+    "R1_unit": "the GEM well by barcode suffix; ten wells; nothing pooled",
+    "R2_suffix_corroboration": "two independent axes per deposit (Cldn4 for injury, Fos or Cebpa for genotype); on failure the wells are named L1 to Ln with no condition names",
+    "R3_compartment_filter": "drop any cell with a non-zero Scgb1a1, Scgb3a2, Foxj1 or Krt5 count, from RNA only",
+    "R4_labels": "absolute counts, threshold frozen from an uninjured well: k = 99th percentile of Krt8 among Sftpc-positive filtered cells of the uninjured well; transitional = Cldn4 >= 1 and Krt8 >= k; reference = Sftpc >= 1 and not transitional; the reference is named Sftpc-positive non-transitional epithelium and never AT2",
+    "R5_matching": "1:1 greedy without replacement on log10 RNA UMI, caliper 0.041 (a 10 per cent ratio)",
+    "R6_features": "distal peaks only for the primary; promoters descriptive only; exclude by coordinate every peak within 100 kb of Cldn4, Krt8, Krt18, Krt7, Cldn3, Sftpc and every peak off a chr contig",
+    "R7_statistic": "per gene, transitional minus reference detection, for RNA and for the mean over linked distal peaks, each corrected by the genome-wide median distal difference on the same matched cells",
+    "R8_sham_band": "20 random splits of reference cells at the transitional group size; an arm clears only if |z| >= 3.0 and the value lies outside the full sham range",
+    "R9_sensitivity_control": "the transitional arm is the ATAC positive control; if it does not clear the band the AT2 arm is NOT COMPUTABLE, never 'chromatin retained'",
+    "R10_reading": {
+      "a": "AT2 arm clears in RNA, does not clear in ATAC, R9 satisfied: silenced but not closed",
+      "b": "AT2 arm clears in both with the same sign: closed",
+      "c": "AT2 arm does not clear in RNA: not computable",
+      "d": "R9 unsatisfied: not computable"
+    },
+    "U1": "k == 0 means the Krt8 term is a detection call not a magnitude cut; under 10 per cent reclassified means inert",
+    "U2": "median RNA UMI ratio of Cldn4-positive to Cldn4-negative above 1.25 makes the label a depth call; well unreadable",
+    "U3": "airway detection higher in transitional than reference by more than 0.10 makes it a compartment contrast; well unreadable",
+    "U4": "fewer than 100 matched pairs: not computable",
+    "U5": "post-match group medians of RNA UMI or in-peak fragments differing by more than 1.1: not computable",
+    "U6": "fewer than twice the transitional group size available as reference cells for the sham pool: well unreadable",
+    "U7": "if any uninjured well yields 100 or more transitional cells, R4 is not labelling the state and EVERY well in the trial is unreadable",
+    "U8": "a gene with no linked distal peak after exclusion is dropped and named; an arm below four genes is not computable",
+    "not_tested": "any contrast between conditions, genotypes, stages or deposits; any motif; any regulator; any direction of causation; whether the labelled group is the source papers' own substate"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_filtered_feature_bc_matrix.h5",
+      "bytes": 193819969,
+      "modified": "2026-09-20T05:31:54+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate.P9_filtered_feature_bc_matrix.h5",
+      "bytes": 353138466,
+      "modified": "2026-09-20T05:31:24+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_filtered_feature_bc_matrix.h5",
+      "bytes": 328167298,
+      "modified": "2026-09-20T05:31:08+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m1_closed_or_merely_silenced\\m1_wells.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m1_closed_or_merely_silenced\\m1_suffix_corroboration.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m1_closed_or_merely_silenced\\m1_summary.md"
+  ],
+  "results": {
+    "R2_suffix_corroboration": {
+      "GSE247130_P9": {
+        "axis": "Cebpa in the assumed Cebpa knockout",
+        "assumed_mutant_cpm10k": 0.964,
+        "assumed_control_cpm10k": 0.066,
+        "corroborated": false
+      },
+      "GSE247130_7wk": {
+        "axis": "Cebpa in the assumed Cebpa knockout",
+        "assumed_mutant_cpm10k": 0.646,
+        "assumed_control_cpm10k": 0.059,
+        "corroborated": false
+      },
+      "GSE247130_SeV": {
+        "axis": "Cebpa in the assumed Cebpa knockout",
+        "assumed_mutant_cpm10k": 0.204,
+        "assumed_control_cpm10k": 0.046,
+        "corroborated": false
+      },
+      "GSE310539": {
+        "axis": "Fos in the assumed Fos/Fosb/Junb knockout",
+        "assumed_mutant_cpm10k": [
+          1.395,
+          1.371
+        ],
+        "assumed_wildtype_cpm10k": [
+          5.12,
+          5.511
+        ],
+        "corroborated": true
+      }
+    },
+    "U7_max_transitional_in_an_uninjured_well": 3,
+    "U7_satisfied": true,
+    "U7_satisfied_vacuously": true,
+    "R3_median_fraction_of_cells_kept": 0.0013707546866317205,
+    "U4_wells_with_enough_transitional_cells": 0,
+    "reading": "NOT COMPUTABLE in every well; see the disclosed rule defects",
+    "disclosed_rule_defects": {
+      "R3": "a non-zero count of Scgb1a1, Scgb3a2, Foxj1 or Krt5 was frozen as the airway test. Scgb1a1 is detected in 73 to 100 per cent of cells in every well at a median of 1 to 20 counts, so presence is ambient rather than identity, and the rule removed a median of 99.9 per cent of cells. Its severity tracks library depth: the rule kept 25 per cent of the shallowest well and 0.01 per cent of the deepest, so as frozen it is a depth filter wearing the name of a compartment filter",
+      "R4": "the threshold k was frozen on RAW Krt8 counts. Median RNA UMI per cell varies 2.2-fold between the wells of GSE310539 and 2.6-fold across the ten wells, so a raw-count threshold frozen from one well under-calls in a shallower well and over-calls in a deeper one. It should have been frozen on a depth-normalised count",
+      "R4_reference": "Sftpc is detected in 99.9 to 100 per cent of cells in every well, so 'reference = Sftpc >= 1 and not transitional' is in practice 'everything that is not transitional'. The reference group is a wider mixture than the pre-registration warned"
+    },
+    "krt8_thresholds": {
+      "GSE310539": 3,
+      "GSE247130": 7
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-20T05:56:18+00:00"
+}
