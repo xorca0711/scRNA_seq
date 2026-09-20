@@ -1,0 +1,46 @@
+well,cell_set,pair,role,correlation,null_mean,null_sd,percentile,z,clears
+wildtype_PBS,AT2,Axin2|Il1r1,primary,0.01527,0.00288,0.01619,0.7833,0.765,False
+wildtype_PBS,AT2,WNT_MODULE|Il1r1,"primary, module form",0.00942,0.00288,0.01619,0.6633,0.404,False
+wildtype_PBS,AT2,Krt8|Krt18,"control, physical (24 kb apart)",0.02365,0.00288,0.01619,0.8967,1.283,False
+wildtype_PBS,AT2,Etv5|Abca3,"control, biological (AT2 identity, different chromosomes)",-0.00131,0.00288,0.01619,0.39,-0.259,False
+wildtype_PBS,AT2,split-locus median,"control, split locus",0.01965,0.00288,0.01619,,1.035,False
+wildtype_SeV,AT2,Axin2|Il1r1,primary,0.00093,0.00121,0.01585,0.4833,-0.018,False
+wildtype_SeV,AT2,WNT_MODULE|Il1r1,"primary, module form",0.02096,0.00121,0.01585,0.89,1.246,False
+wildtype_SeV,AT2,Krt8|Krt18,"control, physical (24 kb apart)",-0.00383,0.00121,0.01585,0.3867,-0.318,False
+wildtype_SeV,AT2,Etv5|Abca3,"control, biological (AT2 identity, different chromosomes)",0.03746,0.00121,0.01585,0.9933,2.287,False
+wildtype_SeV,AT2,split-locus median,"control, split locus",0.01272,0.00121,0.01585,,0.726,False
+AP1mut_PBS,AT2,Axin2|Il1r1,primary,-0.00644,0.00226,0.00998,0.1967,-0.872,False
+AP1mut_PBS,AT2,WNT_MODULE|Il1r1,"primary, module form",-0.01898,0.00226,0.00998,0.0267,-2.128,False
+AP1mut_PBS,AT2,Krt8|Krt18,"control, physical (24 kb apart)",0.00501,0.00226,0.00998,0.5933,0.276,False
+AP1mut_PBS,AT2,Etv5|Abca3,"control, biological (AT2 identity, different chromosomes)",0.02345,0.00226,0.00998,0.9933,2.124,False
+AP1mut_PBS,AT2,split-locus median,"control, split locus",0.00619,0.00226,0.00998,,0.394,False
+AP1mut_SeV,AT2,Axin2|Il1r1,primary,0.01129,0.00385,0.01285,0.72,0.579,False
+AP1mut_SeV,AT2,WNT_MODULE|Il1r1,"primary, module form",0.01286,0.00385,0.01285,0.7633,0.701,False
+AP1mut_SeV,AT2,Krt8|Krt18,"control, physical (24 kb apart)",0.00054,0.00385,0.01285,0.4067,-0.258,False
+AP1mut_SeV,AT2,Etv5|Abca3,"control, biological (AT2 identity, different chromosomes)",0.00669,0.00385,0.01285,0.59,0.221,False
+AP1mut_SeV,AT2,split-locus median,"control, split locus",0.0069,0.00385,0.01285,,0.237,False
+7wk_control,AT2,Axin2|Il1r1,primary,-0.01287,0.00507,0.01378,0.09,-1.302,False
+7wk_control,AT2,WNT_MODULE|Il1r1,"primary, module form",0.00195,0.00507,0.01378,0.44,-0.226,False
+7wk_control,AT2,Krt8|Krt18,"control, physical (24 kb apart)",0.02447,0.00507,0.01378,0.91,1.407,False
+7wk_control,AT2,Etv5|Abca3,"control, biological (AT2 identity, different chromosomes)",0.02891,0.00507,0.01378,0.95,1.729,False
+7wk_control,AT2,split-locus median,"control, split locus",0.02076,0.00507,0.01378,,1.138,False
+7wk_Cebpa_mutant,AT2,Axin2|Il1r1,primary,-0.01289,0.00534,0.01163,0.05,-1.567,False
+7wk_Cebpa_mutant,AT2,WNT_MODULE|Il1r1,"primary, module form",0.02129,0.00534,0.01163,0.9167,1.371,False
+7wk_Cebpa_mutant,AT2,Krt8|Krt18,"control, physical (24 kb apart)",0.0393,0.00534,0.01163,0.9933,2.919,False
+7wk_Cebpa_mutant,AT2,Etv5|Abca3,"control, biological (AT2 identity, different chromosomes)",0.03625,0.00534,0.01163,0.9933,2.657,False
+7wk_Cebpa_mutant,AT2,split-locus median,"control, split locus",0.02423,0.00534,0.01163,,1.624,False
+SeV_control,AT2,Axin2|Il1r1,primary,-0.01879,0.00503,0.01399,0.04,-1.703,False
+SeV_control,AT2,WNT_MODULE|Il1r1,"primary, module form",-0.0022,0.00503,0.01399,0.31,-0.517,False
+SeV_control,AT2,Krt8|Krt18,"control, physical (24 kb apart)",0.02501,0.00503,0.01399,0.93,1.428,False
+SeV_control,AT2,Etv5|Abca3,"control, biological (AT2 identity, different chromosomes)",0.05465,0.00503,0.01399,1.0,3.547,True
+SeV_control,AT2,split-locus median,"control, split locus",0.01566,0.00503,0.01399,,0.76,False
+SeV_Cebpa_mutant,AT2,Axin2|Il1r1,primary,-0.01284,0.00514,0.01555,0.1133,-1.156,False
+SeV_Cebpa_mutant,AT2,WNT_MODULE|Il1r1,"primary, module form",0.00147,0.00514,0.01555,0.3767,-0.236,False
+SeV_Cebpa_mutant,AT2,Krt8|Krt18,"control, physical (24 kb apart)",0.06095,0.00514,0.01555,1.0,3.589,True
+SeV_Cebpa_mutant,AT2,Etv5|Abca3,"control, biological (AT2 identity, different chromosomes)",0.04139,0.00514,0.01555,0.99,2.331,False
+SeV_Cebpa_mutant,AT2,split-locus median,"control, split locus",0.02985,0.00514,0.01555,,1.589,False
+SeV_Cebpa_mutant,transitional,Axin2|Il1r1,primary,0.06973,0.00765,0.03851,0.94,1.612,False
+SeV_Cebpa_mutant,transitional,WNT_MODULE|Il1r1,"primary, module form",0.09167,0.00765,0.03851,0.9767,2.182,False
+SeV_Cebpa_mutant,transitional,Krt8|Krt18,"control, physical (24 kb apart)",0.11773,0.00765,0.03851,0.9967,2.858,False
+SeV_Cebpa_mutant,transitional,Etv5|Abca3,"control, biological (AT2 identity, different chromosomes)",-0.03042,0.00765,0.03851,0.15,-0.989,False
+SeV_Cebpa_mutant,transitional,split-locus median,"control, split locus",0.02097,0.00765,0.03851,,0.346,False

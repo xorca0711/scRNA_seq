@@ -17,10 +17,10 @@ the claim's potential.
 | Bucket | Rows |
 |---|--:|
 | Retracted or superseded, kept on display | 3 |
-| Refuted | 32 |
+| Refuted | 34 |
 | Not establishable with the data that exists | 7 |
-| Not established | 30 |
-| **Total** | **72** |
+| Not established | 31 |
+| **Total** | **75** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -279,6 +279,20 @@ what was refuted and what settled it.
 - **Status in the register:** Refuted on the reference-list evidence
 - **What settled it:** the 162-item reference list of Yu, Lee, Choi and Choi 2026 cites Choi 2020 and contains no Nabhan 2018, no Zacharias 2018, no Zepp 2017 and no Frank 2016, and neither Wnt nor Axin2 nor beta-catenin appears in its title, abstract, keywords or MeSH terms
 - **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C143. Krt8 and Krt18, 24 kilobases apart, share enough linked peaks to serve as an arithmetic positive control for locus co-accessibility
+
+- **Status in the register:** Refuted, and disclosed
+- **What settled it:** trial A1: the vendor annotation assigns each peak to its NEAREST gene, so the two loci largely do not share peaks; the control returned ratios of 1.11 to 1.25 against null means near 1.03, a real but modest effect rather than an identity
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/a1_locus_co_accessibility/a1_pairs.csv`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C144. A split-locus control, two halves of one gene's peak set, cannot fail for biological reasons
+
+- **Status in the register:** Refuted, and disclosed
+- **What settled it:** trials A1b and A1c: it failed in every well at z +0.24 to +2.05, for two reasons found only afterwards. It is judged against a null built for a different peak-count profile, 15 against 38, while the control is 15 against 15; and peaks the vendor annotation links to one gene need not lie in one regulatory domain
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/a1c_graded_statistic/a1c_pairs.csv`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
 ---
@@ -546,6 +560,13 @@ what was refuted and what settled it.
 - **Status in the register:** Not established
 - **What settled it:** not measured here and not claimed; accessibility reports that a locus permits expression, not that the cell is signalling, and it is slower and more permissive than transcription
 - **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C142. The Axin2 and Il1r1 loci are more or less open together in the same nuclei than comparable pairs of loci are
+
+- **Status in the register:** Not established
+- **What settled it:** trials A1, A1b and A1c on the eight mature wells of both multiome deposits, with three instruments; every well returned NOT COMPUTABLE because the positive control gating the reading never cleared
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/ROUTE_B_OUTCOME.md`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
 ---

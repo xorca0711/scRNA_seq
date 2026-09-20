@@ -1,0 +1,287 @@
+{
+  "trial": "A1c graded statistic",
+  "rules_frozen_at": "2026-09-20T07:54:07+00:00",
+  "rules": {
+    "question": "A1's question with a graded statistic rather than one bit per locus",
+    "why_A1b_refused": "the split-locus control, two halves of one gene's peak set, did not clear: median ratios 1.05 to 1.31 against null spreads 0.083 to 0.255. A design that cannot see co-accessibility within one locus cannot see it between two",
+    "R5c_graded": "per cell and locus, the FRACTION of that locus's linked peaks detected; the statistic is the Pearson correlation of two such scores across cells; the null is the same for 300 matched random gene pairs",
+    "decision_rule_fixed_before_running": "if the split-locus control clears under the graded statistic the Axin2 reading may be taken; if it does not, Route B is CLOSED on these deposits, with no fourth pass and no further tuning",
+    "the_axin2_result_plays_no_part": "it has been seen twice at 0.917, 0.921 and 0.960, below the null mean in every computable AT2 well and never close to the floor",
+    "unchanged": "wells, cells, depth budget, null construction, biological control, section U, reading"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_filtered_feature_bc_matrix.h5",
+      "bytes": 193819969,
+      "modified": "2026-09-20T05:31:54+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_filtered_feature_bc_matrix.h5",
+      "bytes": 193819969,
+      "modified": "2026-09-20T05:31:54+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_filtered_feature_bc_matrix.h5",
+      "bytes": 328167298,
+      "modified": "2026-09-20T05:31:08+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_filtered_feature_bc_matrix.h5",
+      "bytes": 328167298,
+      "modified": "2026-09-20T05:31:08+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\axin2_il1r1\\a1c_graded_statistic\\a1c_readings.csv",
+    "Thesis\\gate1_02_choi_2020\\axin2_il1r1\\a1c_graded_statistic\\a1c_pairs.csv"
+  ],
+  "results": {
+    "readings": [
+      {
+        "well": "wildtype_PBS",
+        "cell_set": "AT2",
+        "cells": 5748,
+        "B_atac": 1146.0,
+        "null_mean": 0.00288,
+        "null_sd": 0.01619,
+        "null_pairs": 300.0,
+        "split_control_r": 0.0196,
+        "split_control_z": 1.04,
+        "reading": "not computable",
+        "why": "R5c decision rule: the split-locus control did not clear, so Route B is closed on these deposits"
+      },
+      {
+        "well": "wildtype_PBS",
+        "cell_set": "transitional",
+        "cells": 48,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "split_control_r": NaN,
+        "split_control_z": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "wildtype_SeV",
+        "cell_set": "AT2",
+        "cells": 4446,
+        "B_atac": 837.0,
+        "null_mean": 0.00121,
+        "null_sd": 0.01585,
+        "null_pairs": 300.0,
+        "split_control_r": 0.0127,
+        "split_control_z": 0.73,
+        "reading": "not computable",
+        "why": "R5c decision rule: the split-locus control did not clear, so Route B is closed on these deposits"
+      },
+      {
+        "well": "wildtype_SeV",
+        "cell_set": "transitional",
+        "cells": 284,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "split_control_r": NaN,
+        "split_control_z": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "AP1mut_PBS",
+        "cell_set": "AT2",
+        "cells": 10822,
+        "B_atac": 945.0,
+        "null_mean": 0.00226,
+        "null_sd": 0.00998,
+        "null_pairs": 300.0,
+        "split_control_r": 0.0062,
+        "split_control_z": 0.39,
+        "reading": "not computable",
+        "why": "R5c decision rule: the split-locus control did not clear, so Route B is closed on these deposits"
+      },
+      {
+        "well": "AP1mut_PBS",
+        "cell_set": "transitional",
+        "cells": 46,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "split_control_r": NaN,
+        "split_control_z": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "AP1mut_SeV",
+        "cell_set": "AT2",
+        "cells": 8042,
+        "B_atac": 1052.0,
+        "null_mean": 0.00385,
+        "null_sd": 0.01285,
+        "null_pairs": 300.0,
+        "split_control_r": 0.0069,
+        "split_control_z": 0.24,
+        "reading": "not computable",
+        "why": "R5c decision rule: the split-locus control did not clear, so Route B is closed on these deposits"
+      },
+      {
+        "well": "AP1mut_SeV",
+        "cell_set": "transitional",
+        "cells": 195,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "split_control_r": NaN,
+        "split_control_z": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "7wk_control",
+        "cell_set": "AT2",
+        "cells": 5799,
+        "B_atac": 2200.0,
+        "null_mean": 0.00507,
+        "null_sd": 0.01378,
+        "null_pairs": 300.0,
+        "split_control_r": 0.0208,
+        "split_control_z": 1.14,
+        "reading": "not computable",
+        "why": "R5c decision rule: the split-locus control did not clear, so Route B is closed on these deposits"
+      },
+      {
+        "well": "7wk_control",
+        "cell_set": "transitional",
+        "cells": 131,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "split_control_r": NaN,
+        "split_control_z": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "7wk_Cebpa_mutant",
+        "cell_set": "AT2",
+        "cells": 8281,
+        "B_atac": 2060.0,
+        "null_mean": 0.00534,
+        "null_sd": 0.01163,
+        "null_pairs": 300.0,
+        "split_control_r": 0.0242,
+        "split_control_z": 1.62,
+        "reading": "not computable",
+        "why": "R5c decision rule: the split-locus control did not clear, so Route B is closed on these deposits"
+      },
+      {
+        "well": "7wk_Cebpa_mutant",
+        "cell_set": "transitional",
+        "cells": 344,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "split_control_r": NaN,
+        "split_control_z": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "SeV_control",
+        "cell_set": "AT2",
+        "cells": 8624,
+        "B_atac": 1939.0,
+        "null_mean": 0.00503,
+        "null_sd": 0.01399,
+        "null_pairs": 300.0,
+        "split_control_r": 0.0157,
+        "split_control_z": 0.76,
+        "reading": "not computable",
+        "why": "R5c decision rule: the split-locus control did not clear, so Route B is closed on these deposits"
+      },
+      {
+        "well": "SeV_control",
+        "cell_set": "transitional",
+        "cells": 121,
+        "B_atac": NaN,
+        "null_mean": NaN,
+        "null_sd": NaN,
+        "null_pairs": NaN,
+        "split_control_r": NaN,
+        "split_control_z": NaN,
+        "reading": "not computable",
+        "why": "U1, fewer than 500 cells"
+      },
+      {
+        "well": "SeV_Cebpa_mutant",
+        "cell_set": "AT2",
+        "cells": 7364,
+        "B_atac": 2964.0,
+        "null_mean": 0.00514,
+        "null_sd": 0.01555,
+        "null_pairs": 300.0,
+        "split_control_r": 0.0299,
+        "split_control_z": 1.59,
+        "reading": "not computable",
+        "why": "R5c decision rule: the split-locus control did not clear, so Route B is closed on these deposits"
+      },
+      {
+        "well": "SeV_Cebpa_mutant",
+        "cell_set": "transitional",
+        "cells": 773,
+        "B_atac": 5967.0,
+        "null_mean": 0.00765,
+        "null_sd": 0.03851,
+        "null_pairs": 300.0,
+        "split_control_r": 0.021,
+        "split_control_z": 0.35,
+        "reading": "not computable",
+        "why": "R5c decision rule: the split-locus control did not clear, so Route B is closed on these deposits"
+      }
+    ],
+    "route_b_closed": true
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-20T08:01:53+00:00"
+}
