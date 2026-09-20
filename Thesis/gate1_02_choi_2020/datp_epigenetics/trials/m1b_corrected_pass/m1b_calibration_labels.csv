@@ -1,0 +1,11 @@
+deposit,file,suffix,well,injured,cells,passed_rna_budget,dropped_by_budget,airway_dropped,after_filter,transitional,reference,transitional_pct_of_filtered
+GSE310539,totalaggr,1,wildtype_PBS,False,7340,7013,0.045,610,6403,0,6303,0.0
+GSE310539,totalaggr,2,wildtype_SeV,True,8093,7912,0.022,3844,4068,2,3786,0.05
+GSE310539,totalaggr,3,AP1mut_PBS,False,13622,10950,0.196,169,10781,1,10690,0.01
+GSE310539,totalaggr,4,AP1mut_SeV,True,10794,9991,0.074,2501,7490,3,7350,0.04
+GSE247130,P9,1,P9_control,False,12186,11706,0.039,630,11076,28,11048,0.25
+GSE247130,P9,2,P9_Cebpa_mutant,False,11272,10934,0.03,290,10644,56,10588,0.53
+GSE247130,7wk,1,7wk_control,False,7589,7048,0.071,183,6865,8,6857,0.12
+GSE247130,7wk,2,7wk_Cebpa_mutant,False,10838,9838,0.092,124,9714,10,9704,0.1
+GSE247130,SeV,1,SeV_control,True,11773,9111,0.226,558,8553,3,8527,0.04
+GSE247130,SeV,2,SeV_Cebpa_mutant,True,10636,9230,0.132,389,8841,28,8644,0.32

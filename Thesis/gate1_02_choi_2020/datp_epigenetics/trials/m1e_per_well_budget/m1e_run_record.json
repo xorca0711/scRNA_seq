@@ -1,0 +1,225 @@
+{
+  "trial": "M1e per-well budget",
+  "rules_frozen_at": "2026-09-20T06:18:52+00:00",
+  "rules": {
+    "question": "in the CLDN4-positive KRT8-positive alveolar group, is the AT2 identity programme closed at the chromatin level or merely silenced at the RNA level",
+    "relationship_to_M1d": "M1d refused in all eight mature wells because its budget rule (retain 60 per cent of every well) and its drop gate (refuse above 20 per cent) were not composable. M1d's rules are not moved and its outcome stands",
+    "R14_per_well_budget": "B_atac is the 20th percentile of in-peak fragments among the well's labelled cells; labelled cells below it are dropped; the reference pool is drawn only from reference cells already at or above it, so differential drop is zero by construction",
+    "R15_drop_gate": "refuse only if the two groups differ in dropped fraction by more than 10%; the absolute drop is reported as a scope limit, not refused on",
+    "R16_rna_budget": "B_rna stays per-deposit because it must precede labelling; its retention is reported as a scope limit",
+    "inherited_unchanged": "R2 with GSE247130 inverted, R3b relative airway rule, R4c label, R6 distal peaks with coordinate exclusions, R7 offset-corrected statistic, R8b sham band, R9 sensitivity control, R10 reading, R11 neonatal exclusion, R12 Cebpa removal, R13 floor",
+    "no_accessibility_computed_before_now": true,
+    "registration_GSE310539": "a re-derivation: Lynch et al. already report chromVAR AP-1 motif accessibility in this substate and note qualitatively that AT2 chromatin features are lost less than AT2 RNA. Not independent confirmation",
+    "registration_GSE247130": "new for that deposit: Hassan and Chen ran no accessibility analysis of their transitional cells and their Sendai ATAC samples deposit no peak files",
+    "register_status": "Descriptive only; every well is one library pooling two mice"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_atac_peak_annotation.tsv.gz",
+      "bytes": 2665415,
+      "modified": "2026-09-20T05:30:39+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate.P9_filtered_feature_bc_matrix.h5",
+      "bytes": 353138466,
+      "modified": "2026-09-20T05:31:24+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate.P9_atac_peak_annotation.tsv.gz",
+      "bytes": 2533924,
+      "modified": "2026-09-20T05:36:07+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_filtered_feature_bc_matrix.h5",
+      "bytes": 193819969,
+      "modified": "2026-09-20T05:31:54+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_atac_peak_annotation.tsv.gz",
+      "bytes": 2233195,
+      "modified": "2026-09-20T05:35:48+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_filtered_feature_bc_matrix.h5",
+      "bytes": 328167298,
+      "modified": "2026-09-20T05:31:08+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_atac_peak_annotation.tsv.gz",
+      "bytes": 3107650,
+      "modified": "2026-09-20T05:35:38+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m1e_per_well_budget\\m1e_labels.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m1e_per_well_budget\\m1e_readings.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m1e_per_well_budget\\m1e_arms.csv"
+  ],
+  "results": {
+    "R16_rna_budgets": {
+      "GSE310539": 2366,
+      "GSE247130": 3400
+    },
+    "U7_enrichment": 3.2838709677419353,
+    "U7_satisfied": true,
+    "readings": [
+      {
+        "deposit": "GSE310539",
+        "well": "wildtype_PBS",
+        "role": "negative control",
+        "n_labelled_before_budget": 18,
+        "reading": "not computable",
+        "why": "fewer than 50 labelled cells",
+        "B_atac": NaN,
+        "n_labelled": NaN,
+        "n_reference_above_budget": NaN,
+        "dropped_labelled": NaN,
+        "dropped_reference": NaN,
+        "scope": NaN,
+        "q": NaN,
+        "atac_offset": NaN,
+        "cebpa_dropped_from_AT2_arm": NaN
+      },
+      {
+        "deposit": "GSE310539",
+        "well": "wildtype_SeV",
+        "role": "test",
+        "n_labelled_before_budget": 80,
+        "reading": "AT2 programme SILENCED BUT NOT CLOSED",
+        "why": "R10a: clears in RNA and not in ATAC, behind a positive control that fired",
+        "B_atac": 2700.0,
+        "n_labelled": 64.0,
+        "n_reference_above_budget": 2644.0,
+        "dropped_labelled": 0.2,
+        "dropped_reference": 0.0,
+        "scope": "the deeper 80 per cent of the labelled group",
+        "q": 4.0,
+        "atac_offset": 0.0,
+        "cebpa_dropped_from_AT2_arm": false
+      },
+      {
+        "deposit": "GSE310539",
+        "well": "AP1mut_PBS",
+        "role": "negative control",
+        "n_labelled_before_budget": 18,
+        "reading": "not computable",
+        "why": "fewer than 50 labelled cells",
+        "B_atac": NaN,
+        "n_labelled": NaN,
+        "n_reference_above_budget": NaN,
+        "dropped_labelled": NaN,
+        "dropped_reference": NaN,
+        "scope": NaN,
+        "q": NaN,
+        "atac_offset": NaN,
+        "cebpa_dropped_from_AT2_arm": NaN
+      },
+      {
+        "deposit": "GSE310539",
+        "well": "AP1mut_SeV",
+        "role": "test",
+        "n_labelled_before_budget": 55,
+        "reading": "not computable",
+        "why": "fewer than 50 labelled cells above the budget, or too small a sham pool",
+        "B_atac": 2368.0,
+        "n_labelled": 44.0,
+        "n_reference_above_budget": 5119.0,
+        "dropped_labelled": 0.2,
+        "dropped_reference": 0.0,
+        "scope": "the deeper 80 per cent of the labelled group",
+        "q": NaN,
+        "atac_offset": NaN,
+        "cebpa_dropped_from_AT2_arm": NaN
+      },
+      {
+        "deposit": "GSE247130",
+        "well": "7wk_control",
+        "role": "negative control",
+        "n_labelled_before_budget": 55,
+        "reading": "not computable",
+        "why": "fewer than 50 labelled cells above the budget, or too small a sham pool",
+        "B_atac": 2768.0,
+        "n_labelled": 44.0,
+        "n_reference_above_budget": 4922.0,
+        "dropped_labelled": 0.2,
+        "dropped_reference": 0.0,
+        "scope": "the deeper 80 per cent of the labelled group",
+        "q": NaN,
+        "atac_offset": NaN,
+        "cebpa_dropped_from_AT2_arm": NaN
+      },
+      {
+        "deposit": "GSE247130",
+        "well": "7wk_Cebpa_mutant",
+        "role": "negative control",
+        "n_labelled_before_budget": 140,
+        "reading": "not computable",
+        "why": "R9: the transitional-marker arm did not clear, so the ATAC side has no demonstrated sensitivity here",
+        "B_atac": 2177.0,
+        "n_labelled": 112.0,
+        "n_reference_above_budget": 7020.0,
+        "dropped_labelled": 0.2,
+        "dropped_reference": 0.0,
+        "scope": "the deeper 80 per cent of the labelled group",
+        "q": 4.0,
+        "atac_offset": 0.0,
+        "cebpa_dropped_from_AT2_arm": true
+      },
+      {
+        "deposit": "GSE247130",
+        "well": "SeV_control",
+        "role": "test",
+        "n_labelled_before_budget": 44,
+        "reading": "not computable",
+        "why": "fewer than 50 labelled cells",
+        "B_atac": NaN,
+        "n_labelled": NaN,
+        "n_reference_above_budget": NaN,
+        "dropped_labelled": NaN,
+        "dropped_reference": NaN,
+        "scope": NaN,
+        "q": NaN,
+        "atac_offset": NaN,
+        "cebpa_dropped_from_AT2_arm": NaN
+      },
+      {
+        "deposit": "GSE247130",
+        "well": "SeV_Cebpa_mutant",
+        "role": "test",
+        "n_labelled_before_budget": 400,
+        "reading": "AT2 programme SILENCED BUT NOT CLOSED",
+        "why": "R10a: clears in RNA and not in ATAC, behind a positive control that fired",
+        "B_atac": 6985.0,
+        "n_labelled": 320.0,
+        "n_reference_above_budget": 4899.0,
+        "dropped_labelled": 0.2,
+        "dropped_reference": 0.0,
+        "scope": "the deeper 80 per cent of the labelled group",
+        "q": 4.0,
+        "atac_offset": 0.0,
+        "cebpa_dropped_from_AT2_arm": true
+      }
+    ]
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-20T06:21:16+00:00"
+}

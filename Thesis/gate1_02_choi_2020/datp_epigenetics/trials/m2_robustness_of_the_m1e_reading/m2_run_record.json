@@ -1,0 +1,42 @@
+{
+  "trial": "M2 robustness of the M1e reading",
+  "rules_frozen_at": "2026-09-20T06:23:51+00:00",
+  "rules": {
+    "question": "does M1e's reading survive per-gene decomposition, leave-one-out, a non-degenerate offset and a change of seed",
+    "changes_no_rule": true,
+    "may_not_change_M1e": "if a diagnostic contradicts M1e, the contradiction is reported and M1e's reading stands beside it",
+    "equivalence": "the null on the AT2 ATAC arm is reported as the largest effect the frozen rule would have hidden, three sham standard deviations, not as an absence of movement",
+    "seeds": [
+      0,
+      7,
+      13,
+      29
+    ]
+  },
+  "notes": "",
+  "inputs": [],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m2_robustness_of_the_m1e_reading\\m2_per_gene.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m2_robustness_of_the_m1e_reading\\m2_leave_one_out.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m2_robustness_of_the_m1e_reading\\m2_offsets.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m2_robustness_of_the_m1e_reading\\m2_seeds.csv"
+  ],
+  "results": {
+    "n_seeds": 4
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-20T06:29:18+00:00"
+}

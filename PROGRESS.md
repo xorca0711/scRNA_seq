@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-17 (Cardoso trials C13 and C14: the transcriptional explanation for the sort contaminant refuted, and the generalisation this repository drew from C12 refuted by varying only the ligand-receptor database; eleven duplicated claim identifiers found and renumbered, with a validator check added; see item 34). Previously 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-20 (a branch of roadmap paper 2 into chromatin, on two multiome deposits: one validated deposit error, one Descriptive-only RNA result, one retracted chromatin reading and five disclosed refusals; see item 35). Previously 2026-09-17, 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -744,6 +744,70 @@ labelled cells.
      to its own file and skips it on rerun.
    - Rows C105 to C115; sections 13 and 14 of the divergence document; trials
      index updated. Owner retain/reject review pending.
+
+35. **A branch of paper 2 into another genomic layer, five refusals, one
+   retraction and one validated deposit error**
+   (`Thesis/gate1_02_choi_2020/datp_epigenetics/`, 2026-09-20, owner
+   instruction).
+   - **Why the branch is not on the Choi deposit.** Choi 2020 supports the
+     epigenetic half of its Il1r1 claim with ATAC-seq, and GSE144598 deposits
+     two bigwig coverage tracks with no peaks and no reads. Trial D0 called it
+     unusable and it stays unusable, so the branch runs on two 10x multiome
+     deposits, GSE310539 (Lynch 2026) and GSE247130 (Hassan and Chen 2024).
+     Both are from the Jichao Chen laboratory, which matters below.
+   - **The question, and why the obvious one was dropped before it ran.**
+     Whether transitional cells differ from AT2 cells in accessibility cannot
+     be false: the labels come from the same nucleus and both source papers
+     defined the state partly from its chromatin. An adversarial check settled
+     it empirically, returning 3,393 peaks at p = 0/200 on a depth-matched
+     pseudo-contrast containing no transitional cell at all. The replacement
+     asks whether the AT2 identity programme is closed at the chromatin level
+     or merely silenced at the RNA level, which has two possible outcomes and
+     speaks to a disagreement the source papers state and cannot settle.
+   - **The one validated result is a deposit error.** GSE247130's barcode
+     suffix map is inverted relative to its GEO sample order. Cebpa is 11 to
+     14 times higher in the suffix the order calls the Cebpa knockout, in all
+     three files, and Cldn4 and Sox9 agree independently. Anyone reusing that
+     deposit as documented has the genotypes backwards.
+   - **The substantive positive result, Descriptive only.** The
+     CLDN4-positive KRT8-positive alveolar group loses the AT2 identity
+     programme in RNA by 12.6 to 17.1 detection points against a sham band, in
+     both deposits and at all four downsampling seeds, carried by at least five
+     genes, with the AT1 arm flat throughout. The deposits share a laboratory,
+     the lineage tools, the injury model and this analysis code, so their
+     agreement is consistency and not replication.
+   - **One of the owner's two questions is answered, by a refusal.** The
+     neonatal wells carry more of the labelled group than any injured well, so
+     the whole-trial negative control fired. Krt8 and Cldn4 are expressed
+     across immature postnatal alveolar epithelium, so this marker set is
+     shared with normal development and is not by itself damage-associated.
+   - **The chromatin question is Not established, and the reading that said
+     otherwise is retracted.** Trial M1e read "silenced but not closed" and
+     trial M2 withdrew it: the positive control that licensed reading the null
+     clears in five of eight seed-and-well combinations and fails leave-one-out
+     on two of six genes. Three adversarial passes sharpened the withdrawal.
+     The offset was absent rather than inert, and the global shift it failed to
+     remove is positive in all three wells. The AT2 arm is bounded and the
+     control is not, so an unbounded statistic was certifying the power of a
+     bounded one. What was measured is that no change was detected at a bar
+     corresponding to a 45 per cent loss of distal accessibility at the AT2 loci
+     in one deposit and 12 per cent in the other. Where the data lean at all
+     they lean toward closing, never toward retention.
+   - **Five refusals, five different defects, and two of them are results.**
+     A presence rule on an ambient transcript that was a depth filter under
+     another name; a threshold whose own arithmetic forbade its answer; a
+     marker set that is not specific to the condition; two rules that were not
+     composable; and a positive control tested once. The last two are the
+     eighth and ninth instances of this repository's disclosed defect shape.
+   - **The lead worth acting on.** GSE309751, the bulk ATAC accompanying Lynch,
+     carries genuine biological replicates, two to three mice per group across
+     six arms including 49 days after infection. It is the first chromatin
+     contrast anywhere in this project with animal-level replication, so the
+     mouse can be the unit and reversibility, which is what "transient" in
+     damage-associated transient progenitor actually asserts, becomes testable.
+   - Rows C116 to C128; branch documents under
+     `Thesis/gate1_02_choi_2020/datp_epigenetics/`. Owner retain/reject review
+     pending.
 
 ---
 

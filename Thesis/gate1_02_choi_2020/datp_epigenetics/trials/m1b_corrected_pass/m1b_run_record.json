@@ -1,0 +1,202 @@
+{
+  "trial": "M1b corrected pass",
+  "rules_frozen_at": "2026-09-20T06:04:19+00:00",
+  "rules": {
+    "question": "M1's question, on corrected rules: in the CLDN4-positive transitional state, is the AT2 identity programme closed at the chromatin level or merely silenced at the RNA level",
+    "relationship_to_M1": "M1's thresholds were not moved; its outcome stands beside this one",
+    "inherited_R2_refutation": "GSE247130's barcode suffix map is inverted relative to the GEO sample order: suffix 1 is the control and suffix 2 is the Cebpa mutant, refuted on Cebpa in all three files and confirmed on Cldn4 and Sox9",
+    "C1_repairs_R3": "M1 dropped any cell with a non-zero airway marker count, which is ambient in single-nucleus data and removed a median of 99.7 per cent of cells with a severity that tracked depth",
+    "C2_repairs_R4": "M1 froze its threshold on raw counts while median UMI varies 2.6-fold across the ten wells",
+    "C3_depth": "the ancestor peak-counting design was measured to return p = 0/200 on a depth-matched pseudo-contrast containing no transitional cell, so depth is removed by downsampling rather than by stratifying, and the pseudo-contrast becomes the permanent sham band",
+    "R3b_compartment": "airway if a downsampled marker count reaches its 99th percentile among Sftpc-positive cells of the uninjured well",
+    "R4b_labels": "on downsampled RNA; k = 99th percentile of downsampled Krt8 among Sftpc-positive non-airway cells of the uninjured well",
+    "R5b_depth": "every cell downsampled to the deposit's 10th-percentile RNA UMI and in-peak fragment budget; cells below are dropped",
+    "R6_features": "distal peaks only for the primary; exclude every peak within 100 kb of Cldn4, Krt8, Krt18, Krt7, Cldn3, Sftpc and every peak off a chr contig",
+    "R7_statistic": "per gene, transitional minus reference detection, corrected by the genome-wide median distal difference",
+    "R8b_sham": "20 shams at matched group sizes; an arm clears only if |z| >= 3.0 and the value is outside the full sham range",
+    "R9_sensitivity": "the transitional arm is the ATAC positive control; if it does not clear, the AT2 arm is NOT COMPUTABLE",
+    "R10_reading": "a=silenced not closed, b=closed, c/d=not computable",
+    "not_tested": "any contrast between conditions, genotypes, stages or deposits; any motif; any causation"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "bytes": 304576505,
+      "modified": "2026-09-20T05:30:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_atac_peak_annotation.tsv.gz",
+      "bytes": 2665415,
+      "modified": "2026-09-20T05:30:39+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate.P9_filtered_feature_bc_matrix.h5",
+      "bytes": 353138466,
+      "modified": "2026-09-20T05:31:24+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate.P9_atac_peak_annotation.tsv.gz",
+      "bytes": 2533924,
+      "modified": "2026-09-20T05:36:07+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_filtered_feature_bc_matrix.h5",
+      "bytes": 193819969,
+      "modified": "2026-09-20T05:31:54+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_atac_peak_annotation.tsv.gz",
+      "bytes": 2233195,
+      "modified": "2026-09-20T05:35:48+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_filtered_feature_bc_matrix.h5",
+      "bytes": 328167298,
+      "modified": "2026-09-20T05:31:08+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_atac_peak_annotation.tsv.gz",
+      "bytes": 3107650,
+      "modified": "2026-09-20T05:35:38+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m1b_corrected_pass\\m1b_labels.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m1b_corrected_pass\\m1b_readings.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m1b_corrected_pass\\m1b_arms.csv"
+  ],
+  "results": {
+    "R5b_budgets": {
+      "GSE310539": {
+        "B_rna": 2366,
+        "B_atac": 3185
+      },
+      "GSE247130": {
+        "B_rna": 3400,
+        "B_atac": 4971
+      }
+    },
+    "thresholds_from_uninjured_wells": {
+      "GSE310539": {
+        "krt8_k": 4,
+        "n_clean": 5492,
+        "source_well": "wildtype_PBS"
+      },
+      "GSE247130": {
+        "krt8_k": 6,
+        "n_clean": 6483,
+        "source_well": "7wk_control"
+      }
+    },
+    "U7_max_transitional_uninjured": 68,
+    "U7_satisfied": true,
+    "readings": [
+      {
+        "deposit": "GSE310539",
+        "well": "wildtype_PBS",
+        "injured": false,
+        "n_transitional": 3,
+        "n_reference": 5489,
+        "reading": "not computable",
+        "why": "fewer than 100 transitional cells"
+      },
+      {
+        "deposit": "GSE310539",
+        "well": "wildtype_SeV",
+        "injured": true,
+        "n_transitional": 18,
+        "n_reference": 4559,
+        "reading": "not computable",
+        "why": "fewer than 100 transitional cells"
+      },
+      {
+        "deposit": "GSE310539",
+        "well": "AP1mut_PBS",
+        "injured": false,
+        "n_transitional": 4,
+        "n_reference": 8130,
+        "reading": "not computable",
+        "why": "fewer than 100 transitional cells"
+      },
+      {
+        "deposit": "GSE310539",
+        "well": "AP1mut_SeV",
+        "injured": true,
+        "n_transitional": 11,
+        "n_reference": 7433,
+        "reading": "not computable",
+        "why": "fewer than 100 transitional cells"
+      },
+      {
+        "deposit": "GSE247130",
+        "well": "P9_control",
+        "injured": false,
+        "n_transitional": 35,
+        "n_reference": 10440,
+        "reading": "not computable",
+        "why": "fewer than 100 transitional cells"
+      },
+      {
+        "deposit": "GSE247130",
+        "well": "P9_Cebpa_mutant",
+        "injured": false,
+        "n_transitional": 68,
+        "n_reference": 10184,
+        "reading": "not computable",
+        "why": "fewer than 100 transitional cells"
+      },
+      {
+        "deposit": "GSE247130",
+        "well": "7wk_control",
+        "injured": false,
+        "n_transitional": 8,
+        "n_reference": 6475,
+        "reading": "not computable",
+        "why": "fewer than 100 transitional cells"
+      },
+      {
+        "deposit": "GSE247130",
+        "well": "7wk_Cebpa_mutant",
+        "injured": false,
+        "n_transitional": 15,
+        "n_reference": 9001,
+        "reading": "not computable",
+        "why": "fewer than 100 transitional cells"
+      },
+      {
+        "deposit": "GSE247130",
+        "well": "SeV_control",
+        "injured": true,
+        "n_transitional": 2,
+        "n_reference": 6339,
+        "reading": "not computable",
+        "why": "fewer than 100 transitional cells"
+      },
+      {
+        "deposit": "GSE247130",
+        "well": "SeV_Cebpa_mutant",
+        "injured": true,
+        "n_transitional": 34,
+        "n_reference": 7773,
+        "reading": "not computable",
+        "why": "fewer than 100 transitional cells"
+      }
+    ]
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-20T06:05:42+00:00"
+}

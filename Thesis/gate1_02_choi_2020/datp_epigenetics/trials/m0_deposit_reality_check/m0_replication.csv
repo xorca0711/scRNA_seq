@@ -1,0 +1,6 @@
+accession,contrast,held_fixed,libraries_per_group,within_group_replication
+GSE310539,treatment,genotype,1,False
+GSE310539,genotype,treatment,1,False
+GSE247130,genotype,stage,1,False
+GSE247130,stage,genotype,1,False
+both,cell state inside one library,"library, animal, batch, peak set, sequencing run",not applicable,not required; the comparison is inside one library

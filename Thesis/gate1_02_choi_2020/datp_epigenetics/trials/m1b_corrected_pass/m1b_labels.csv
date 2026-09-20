@@ -1,0 +1,11 @@
+deposit,file,suffix,well,injured,cells,kept_by_budget,airway_dropped,after_filter,transitional,reference,transitional_pct,U3_max_airway_excess
+GSE310539,totalaggr,1,wildtype_PBS,False,7340,0.762,99,5492,3,5489,0.05,0.226
+GSE310539,totalaggr,2,wildtype_SeV,True,8093,0.793,1840,4578,18,4559,0.39,0.02
+GSE310539,totalaggr,3,AP1mut_PBS,False,13622,0.6,40,8134,4,8130,0.05,0.234
+GSE310539,totalaggr,4,AP1mut_SeV,True,10794,0.736,497,7444,11,7433,0.15,0.053
+GSE247130,P9,1,P9_control,False,12186,0.914,668,10475,35,10440,0.33,0.255
+GSE247130,P9,2,P9_Cebpa_mutant,False,11272,0.938,325,10252,68,10184,0.66,0.007
+GSE247130,7wk,1,7wk_control,False,7589,0.88,196,6483,8,6475,0.12,0.088
+GSE247130,7wk,2,7wk_Cebpa_mutant,False,10838,0.844,136,9016,15,9001,0.17,0.086
+GSE247130,SeV,1,SeV_control,True,11773,0.6,722,6344,2,6339,0.03,0.107
+GSE247130,SeV,2,SeV_Cebpa_mutant,True,10636,0.779,437,7851,34,7773,0.43,0.028

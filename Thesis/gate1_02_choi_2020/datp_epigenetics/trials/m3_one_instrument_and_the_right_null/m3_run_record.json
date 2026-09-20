@@ -1,0 +1,90 @@
+{
+  "trial": "M3 one instrument and the right null",
+  "rules_frozen_at": "2026-09-20T06:46:18+00:00",
+  "rules": {
+    "question": "does M2's Not established survive one common instrument and a gene-set null",
+    "found_by": "a five-lens adversarial review of M2, not by this repository",
+    "R17_one_instrument": "Cebpa leaves the AT2 arm in every well: Etv5, Abca3, Lamp3, Sftpb, Slc34a2, Lyz2, Napsa, Pon1",
+    "R18_geneset_null": "300 random gene sets matched gene by gene on distal peak count, evaluated on the real split; their mean replaces the genome-wide median offset",
+    "R19_two_nulls": "an arm must clear both the cell-permutation sham and the gene-set null at |z| >= 3",
+    "R20_shams": "500; the equivalence statement is a confidence interval on the relative scale",
+    "R21_no_p_values": "a z is a standardised distance; the percentile within each null is reported beside it",
+    "R22_predictions_preregistered": {
+      "at2_wildtype_no_cebpa": -0.0034,
+      "at2_wildtype_z_sham": -1.21,
+      "geneset_null_means": [
+        0.0009,
+        0.0021
+      ],
+      "at2_sev_mutant_z_geneset": -2.8,
+      "recentred_at2_z": [
+        -2.66,
+        0.14,
+        -1.11
+      ],
+      "transitional_recentred_z": [
+        3.93,
+        4.46
+      ]
+    },
+    "may_not_do": "resurrect M1e's reading; the arm is consistently negative under every weighting"
+  },
+  "notes": "",
+  "inputs": [],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m3_one_instrument_and_the_right_null\\m3_readings.csv",
+    "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m3_one_instrument_and_the_right_null\\m3_arms.csv"
+  ],
+  "results": {
+    "readings": [
+      {
+        "well": "wildtype_SeV",
+        "role": "test",
+        "n_labelled": 64,
+        "reading": "not established",
+        "why": "R19: the AT2 arm clears at most one null",
+        "at2_relative_pct": -37.82075377277168,
+        "at2_ci_lo": -72.15575444506126,
+        "at2_ci_hi": -3.485753100482098,
+        "at2_geneset_percentile": 0.0
+      },
+      {
+        "well": "7wk_Cebpa_mutant",
+        "role": "negative control",
+        "n_labelled": 112,
+        "reading": "not computable",
+        "why": "R9: the transitional arm does not clear both nulls",
+        "at2_relative_pct": -18.290013690200716,
+        "at2_ci_lo": -41.292550280577785,
+        "at2_ci_hi": 4.712522900176354,
+        "at2_geneset_percentile": 0.006666666666666667
+      },
+      {
+        "well": "SeV_Cebpa_mutant",
+        "role": "test",
+        "n_labelled": 320,
+        "reading": "not computable",
+        "why": "R9: the transitional arm does not clear both nulls",
+        "at2_relative_pct": -15.489753734015403,
+        "at2_ci_lo": -24.411395649198134,
+        "at2_ci_hi": -6.568111818832671,
+        "at2_geneset_percentile": 0.0
+      }
+    ]
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-20T06:52:46+00:00"
+}

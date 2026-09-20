@@ -1,0 +1,9 @@
+deposit,well,role,n_labelled,n_reference,reading,why
+GSE310539,wildtype_PBS,negative control,18,5474,not computable,fewer than 50 labelled cells or too small a sham pool
+GSE310539,wildtype_SeV,test,80,4498,not computable,R5b dropped 47% of a group at the ATAC budget
+GSE310539,AP1mut_PBS,negative control,18,8116,not computable,fewer than 50 labelled cells or too small a sham pool
+GSE310539,AP1mut_SeV,test,55,7389,not computable,R5b dropped 34% of a group at the ATAC budget
+GSE247130,7wk_control,negative control,55,6428,not computable,R5b dropped 36% of a group at the ATAC budget
+GSE247130,7wk_Cebpa_mutant,negative control,140,8876,not computable,R5b dropped 38% of a group at the ATAC budget
+GSE247130,SeV_control,test,44,6297,not computable,fewer than 50 labelled cells or too small a sham pool
+GSE247130,SeV_Cebpa_mutant,test,400,7408,not computable,R5b dropped 27% of a group at the ATAC budget
