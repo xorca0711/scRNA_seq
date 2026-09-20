@@ -180,6 +180,55 @@ not".
 
 ---
 
+## 4b. Trial M3, and the direction that will not go away
+
+A five-lens adversarial review of M2 found three defects in M2 itself. This
+repository did not find them, and the record says so.
+
+**The two deposits were never running the same instrument.** Rule R12 removed
+Cebpa from the AT2 arm where it is genetically deleted and kept it everywhere
+else. Cebpa carries three distal peaks but the largest positive per-gene value
+in wildtype_SeV, and it is the only reason that well's AT2 arm was positive at
+all. M2's own leave-one-out had already said so and nobody read it that way.
+
+**The sham band is the wrong null for a gene-set arm.** It permutes cells, so it
+asks whether this split is special; it cannot ask whether these genes are
+special. Three hundred gene sets matched gene by gene on distal peak count and
+evaluated on the real split have a mean of +0.00069 and +0.00205, not zero.
+That is also why the genome-wide median offset came out exactly 0.0: a fifth to
+a third of arm peaks are detected in no cell of either group.
+
+**The equivalence statistic erred unsafely.** Three sham standard deviations is
+the 50-per-cent-power detection floor, not a bound the data support.
+
+With one eight-gene instrument, a gene-set null, five hundred shams and
+confidence intervals on the relative scale, **the AT2 identity arm is negative
+in all three computable wells and sits at percentile 0.000, 0.007 and 0.000 of
+300 matched random gene sets**, at -37.8, -18.3 and -15.5 per cent of reference
+accessibility.
+
+**And it is still Not established, because the two wells fail different gates.**
+wildtype_SeV has a positive control that clears (z 3.46 and 3.05) and an AT2 arm
+that does not (z -2.16 and -2.73). SeV_Cebpa_mutant has an AT2 arm that clears
+both nulls at z -3.41 and -3.51 in the closing direction, behind a positive
+control that does not clear (z 1.96 and 1.68), so rule R9 refuses it. Each well
+holds half of what a reading needs.
+
+The reason the mutant well's positive control now fails is itself a result:
+re-centred on the gene-set null, its transitional arm falls from clearing to
+z = 1.96, so **most of what M1e counted as signal there was the uncorrected
+global shift.** Only wildtype_SeV has a transitional signal that survives proper
+centring, at +61.8 per cent of reference.
+
+The review's predictions were pre-registered under rule R22 and came out mixed:
+the gene-set null means were predicted almost exactly (+0.0009 and +0.0021
+against +0.00069 and +0.00205), the AT2 direction and the percentile-zero result
+were confirmed and stronger than predicted, and the transitional arm came out
+weaker than predicted, which is why a well the review expected to pass is now
+refused.
+
+---
+
 ## 5. What to do next, in this layer
 
 **Proposal A, and it is the only one here with a testable contrast.**

@@ -10,8 +10,8 @@ GSE247130. A trailing letter (M1b, M1c, M1d, M1e) marks a disclosed corrected
 pass over an earlier trial, never a replacement of it: the first outcome stays
 in the record with the rule that produced it.
 
-**A warning before the table.** Five of these seven trials returned NOT
-COMPUTABLE or UNREADABLE, and one had its reading withdrawn. That is the
+**A warning before the table.** Six of these eight trials returned NOT
+COMPUTABLE, UNREADABLE or Not established, and one had its reading withdrawn. That is the
 intended behaviour of the guards, not a failure of the branch: each refusal
 names a different defect, and two of them are among the branch's results.
 
@@ -24,6 +24,7 @@ names a different defect, and two of them are among the branch's results.
 | [M1d](m1d_mature_wells_only.py) | The same, with the neonatal wells out of the design | **NOT COMPUTABLE in all eight mature wells**: the budget rule retained 60 per cent of every well while the drop gate forbade losing more than 20 per cent. Two rules that were not composable |
 | [M1e](m1e_per_well_budget.py) | The same, with the budget set per well so differential drop is zero | The first pass to reach a statistic. Read **silenced but not closed** in two wells. **That reading is withdrawn by M2**; the RNA half stands |
 | [M2](m2_robustness_of_the_m1e_reading.py) | Does M1e's reading survive per-gene decomposition, leave-one-out, a non-degenerate offset and a change of seed | **The chromatin half does not.** The positive control clears in 5 of 8 seed-and-well combinations and fails leave-one-out on 2 of 6 genes. The RNA half clears in 8 of 8 |
+| [M3](m3_one_instrument_and_the_right_null.py) | Does M2's Not established survive one common instrument and a null over gene sets rather than over cells | **The direction stops being a lean.** Cebpa was the only reason one deposit's AT2 arm was positive and it was already dropped from the other, so the two were never comparable. With one instrument the AT2 arm is negative in all three wells at percentile 0.000, 0.007 and 0.000 of 300 matched gene sets. Still Not established: no well satisfies both gates |
 
 ## Shared code
 

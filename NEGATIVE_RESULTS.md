@@ -17,10 +17,10 @@ the claim's potential.
 | Bucket | Rows |
 |---|--:|
 | Retracted or superseded, kept on display | 3 |
-| Refuted | 27 |
+| Refuted | 30 |
 | Not establishable with the data that exists | 6 |
-| Not established | 26 |
-| **Total** | **62** |
+| Not established | 27 |
+| **Total** | **66** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -246,6 +246,27 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/../ANALYSIS_TRIAL_PLAN.md`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
 
+### C129. Trial M2's reading rested on one instrument used consistently
+
+- **Status in the register:** Refuted, and disclosed
+- **What settled it:** trial M3: rule R12 had removed Cebpa from the AT2 arm where it is genetically deleted and kept it everywhere else, and Cebpa carries three distal peaks but the largest positive per-gene value in wildtype_SeV. With Cebpa dropped everywhere the AT2 arm is negative in all three computable wells
+- **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv`
+- **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
+
+### C130. A cell-permutation sham band is a sufficient null for a gene-set arm
+
+- **Status in the register:** Refuted
+- **What settled it:** trial M3: the sham permutes cells, so it asks whether this split is special and cannot ask whether these genes are special. Against 300 gene sets matched gene by gene on distal peak count and evaluated on the real split, the mean is +0.00069 and +0.00205 rather than zero
+- **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv`
+- **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
+
+### C132. Most of what M1e counted as transitional-arm signal in the infected Cebpa-mutant well was chromatin rather than the uncorrected global shift
+
+- **Status in the register:** Refuted
+- **What settled it:** trial M3: re-centred on the gene-set null that arm falls from clearing to z = 1.96, and only wildtype_SeV retains a transitional signal after proper centring
+- **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv`
+- **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
+
 ---
 
 ## Not establishable with the data that exists
@@ -464,10 +485,10 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c14_does_the_ranking_depend_on_the_database/c14_resource_summary.csv`
 - **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
-### C121. Whether the AT2 identity programme's chromatin closes in the transitional state
+### C121. Whether the AT2 identity programme's chromatin closes in the transitional state; see C131 and C133, which give the question a direction and a bound without settling it
 
 - **Status in the register:** Not established
-- **What settled it:** trials M1e and M2; three sham standard deviations, the smallest value the frozen rule would have called real, is 0.0043 to 0.0120 in detection fraction, and the effects present are 0.004 to 0.012
+- **What settled it:** trials M1e, M2 and M3; three sham standard deviations, the smallest value the frozen rule would have called real, is 0.0043 to 0.0120 in detection fraction, and the effects present are 0.004 to 0.012
 - **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_summary.md`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
 
@@ -476,6 +497,13 @@ what was refuted and what settled it.
 - **Status in the register:** Not established
 - **What settled it:** trials M1e and M2: the infected Fos/Fosb/Junb mutant well held 44 labelled cells after the fragment budget, below the floor of 50, so it was never computed
 - **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1e_per_well_budget/m1e_readings.csv`
+- **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
+
+### C133. In the infected Cebpa-mutant well, AT2 distal accessibility in the labelled group is -15.5 per cent of reference accessibility with an interval of -24.4 to -6.6
+
+- **Status in the register:** Not established
+- **What settled it:** trial M3, reported but refused under rule R9 because that well's positive control did not fire
+- **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_readings.csv`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
 
 ---

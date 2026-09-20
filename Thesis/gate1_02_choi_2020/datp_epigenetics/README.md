@@ -94,7 +94,8 @@ only.
 | The CLDN4-positive KRT8-positive alveolar group loses the AT2 identity programme in RNA by 12.6 to 17.1 detection points, across five or more genes, with the AT1 programme flat in the same cells, in both deposits and at four resampling seeds. The deposits share a laboratory, so this is consistency, not replication | **Descriptive only** | [M1e](trials/m1e_per_well_budget/m1e_summary.md), [M2](trials/m2_robustness_of_the_m1e_reading/m2_summary.md) |
 | A CLDN4-positive KRT8-positive transcript call cannot separate neonatal developmental immaturity from injury-induced transition | **Descriptive only** | [M1c](trials/m1c_label_at_the_depth_available/m1c_summary.md) |
 | In the CLDN4-positive group the AT2 identity programme is silenced in RNA but its chromatin stays open | **Retracted, superseded** by M2 | [M1e](trials/m1e_per_well_budget/m1e_summary.md) |
-| Whether the AT2 identity programme's chromatin closes in the transitional state | **Not established** | [M2](trials/m2_robustness_of_the_m1e_reading/m2_summary.md) |
+| The AT2 identity programme's distal chromatin is lower in the labelled group than in 300 matched random gene sets, in all three computable wells, at percentile 0.000, 0.007 and 0.000, and by -37.8, -18.3 and -15.5 per cent of reference accessibility | **Exploratory** | [M3](trials/m3_one_instrument_and_the_right_null/m3_summary.md) |
+| Whether the AT2 identity programme's chromatin closes in the transitional state. M3 gives the question a direction and a bound; no well satisfies both gates | **Not established** | [M2](trials/m2_robustness_of_the_m1e_reading/m2_summary.md), [M3](trials/m3_one_instrument_and_the_right_null/m3_summary.md) |
 | Anything about AP-1 dependence of the above | **Not established**; the infected AP-1 mutant well held 44 labelled cells, below the floor | [M1e](trials/m1e_per_well_budget/m1e_summary.md) |
 
 ---
@@ -125,6 +126,17 @@ cent of reference accessibility, with a 95 per cent interval of roughly -10 to
 actually cleared, it detected no change at a level corresponding to a 45 per
 cent loss of distal accessibility at the AT2 loci in GSE310539 and a 12 per cent
 loss in GSE247130.
+
+Trial M3 then rebuilt the instrument and the null, at an adversarial review's
+direction, and the direction stopped being a lean. With Cebpa dropped from the
+AT2 arm in every well so that both deposits run one eight-gene instrument, and
+with the offset taken from 300 gene sets matched on distal peak count rather
+than from a median that was zero by construction, **the AT2 arm is negative in
+all three computable wells and sits at percentile 0.000, 0.007 and 0.000 of
+those 300 matched sets.** It is still Not established, because no well
+satisfies both gates: the well whose AT2 arm clears both nulls has a positive
+control that does not fire, and the well whose positive control fires has an
+AT2 arm short of the floor. But the question now has a direction and a bound.
 
 Where the data lean at all, they lean the opposite way from the withdrawn
 reading. Under every offset estimator other than the degenerate median, the AT2
