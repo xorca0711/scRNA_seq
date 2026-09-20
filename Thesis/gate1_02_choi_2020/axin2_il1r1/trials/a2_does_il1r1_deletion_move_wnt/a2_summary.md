@@ -41,10 +41,11 @@ by Aumiller 2013 and almost never cited.
 Il1r1 per ten thousand counts is 0.202 and 0.162 in the two-week heterozygous
 libraries against 0.161 and 0.187 in the homozygous ones, and 0.199 and 0.095
 against 0.200 and 0.122 at twelve weeks. The groups interleave at both
-timepoints. **The homozygous deletion is not visible in three-prime single-cell**
-**counting**, which is the expected behaviour of a conditional allele whose
-floxed exons do not sit at the three-prime end: the truncated transcript still
-yields reads where the assay looks.
+timepoints. **The homozygous deletion is not visible in the deposited count**
+**matrices.** Why is Not established: this page first offered a three-prime
+explanation the trial had not tested, and row C149 withdrew it, because the
+allele's floxed exons are 3 and 4 and its authors report that excising them
+eliminates downstream expression.
 
 A genotype contrast whose genotype cannot be verified from the data is not a
 contrast, so the trial refuses. The consequence for anyone else using this

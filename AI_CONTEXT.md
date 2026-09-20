@@ -23,8 +23,13 @@ project:
     Stage 0 complete (PR #1 to #4); Stage 1 follow-ups and trials S1 to S5
     merged (PR #5 to #8); Cardoso 2026 (Gate 2, branch 2C) and the Choi 2020 deposit check merged
     (PR #10 to #24); roadmap re-ranked against the SAP constraints on
-    2026-09-15 (Nabhan papers next, Gate 3 paused); owner retain/reject
-    review pending on most register rows (PROGRESS items 12 to 29)
+    2026-09-15 (Nabhan papers next, Gate 3 paused); Choi 2020 re-entered and
+    run as trials D0 to D7 (PR #25 to #33); two branches of Choi 2020 opened
+    on 2026-09-20 on multiome deposits (PR #35 to #41), their register rows
+    audited by eight adversaries and corrected (PR #42); README, references
+    and this file brought current on 2026-09-20 with RESEARCH_QUESTIONS.md
+    added as the question-first entry point. Owner retain/reject review
+    pending on most register rows (PROGRESS items 12 to 36)
 
 datasets:
   - accession: GSE262927
@@ -113,6 +118,19 @@ datasets:
       the only biological replication and the only time course in the reusable set, and the
       epithelial half of the paper's CellChat object; the Cardoso data-availability statement
       does not name it
+  # Added 2026-09-20 for the two branches of Choi 2020. Analysed under
+  # Thesis/gate1_02_choi_2020/datp_epigenetics/ and axin2_il1r1/, NOT under analysis/.
+  - accession: GSE310539
+    role: "Lynch et al. 2026 multiome; the transitional state in chromatin (trials M0 to M4, A1 to A1c)"
+    species: mouse
+    design: 10x multiome, one aggregate of 4 GEM wells (wildtype and AP-1 mutant by PBS and Sendai), 39,849 nuclei; ONE well per condition, two mice pooled
+    peaks: 178178
+    note: barcode-suffix map corroborated as deposited on Fos and Cldn4
+  - accession: GSE247130
+    role: "Hassan and Chen 2024 multiome; the same branches"
+    species: mouse
+    design: 10x multiome, three aggregates of 2 GEM wells (Cebpa mutant and control at P9, 7 weeks, Sendai), 64,294 nuclei; ONE well per condition
+    warning: "the deposited suffix order is INVERTED: suffix 1 is the control, suffix 2 the mutant (claim C116, trial M4); multiome_utils.py applies the inversion"
 
 stack:
   language: Python 3.12 only   # no R, no Seurat, R unavailable on this machine

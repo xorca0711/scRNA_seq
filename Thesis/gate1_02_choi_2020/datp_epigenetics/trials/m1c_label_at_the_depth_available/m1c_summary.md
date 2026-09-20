@@ -23,8 +23,9 @@ state to be absent or Cldn4-negative without injury. They did not:
 | 9 | SeV_Cebpa_mutant | True | 7851 | 400 | 5.09 |
 
 The two neonatal P9 wells labelled 3.69 and
-8.07 per cent, above every injured well, the
-largest of which reached 5.09 per cent. Enrichment by
+8.07 per cent; the larger of the two exceeds every
+injured well, the largest of which reached 5.09 per
+cent, and the smaller exceeds 3 of the 4. Enrichment by
 injury came out at 0.6-fold, below the threefold floor,
 so the whole-trial negative control fired and the trial refused.
 

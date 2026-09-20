@@ -67,13 +67,13 @@ Supporting documents:
   (Notion order), with per-paper study notes, extracted decision criteria and
   analysis trials; the HLCA note is at
   [`../Thesis/gate1_04_sikkema_2023_hlca/README.md`](../Thesis/gate1_04_sikkema_2023_hlca/README.md).
-- [`../REFERENCES.md`](../REFERENCES.md): all six papers with DOIs, PMC links,
-  and software repositories.
+- [`../REFERENCES.md`](../REFERENCES.md): every source study, roadmap paper and
+  method paper with DOIs, PMC links and data accessions.
 
 Alignment (STARsolo) and the Seurat stages have no separate schematic. Their
 steps are linear and fully covered in [`WORKFLOW_Niethamer2025.md`](WORKFLOW_Niethamer2025.md); a
 per-tool diagram would only restate it.
 
 No PDFs are stored in this repository. Three of the five method papers are
-CC BY 4.0 and three are not, so all six are linked to their open-access PMC
-versions in [`../REFERENCES.md`](../REFERENCES.md) instead.
+CC BY 4.0 and three are not, so every paper is linked to its open-access
+version in [`../REFERENCES.md`](../REFERENCES.md) instead.

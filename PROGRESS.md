@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-20 (a branch of roadmap paper 2 into chromatin, on two multiome deposits: one validated deposit error, one Descriptive-only RNA result, one retracted chromatin reading and five disclosed refusals; see item 35). Previously 2026-09-17, 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-20 (two branches of roadmap paper 2 on multiome deposits, an eight-adversary audit that corrected 14 register rows, the root README rewritten around a claims ledger drawn from the register, and RESEARCH_QUESTIONS.md added as the question-first entry point; see items 35 and 36). Previously 2026-09-17, 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -808,6 +808,63 @@ labelled cells.
    - Rows C116 to C128; branch documents under
      `Thesis/gate1_02_choi_2020/datp_epigenetics/`. Owner retain/reject review
      pending.
+
+36. **The second branch, an adversarial audit of both, and the repository
+   brought current for outreach** (2026-09-20, owner instruction).
+   - **The Axin2 and Il1r1 branch** (`Thesis/gate1_02_choi_2020/axin2_il1r1/`)
+     assessed the question Choi 2020's own Discussion proposes and ran no
+     definitive trial on it, because none is possible: both populations are
+     tamoxifen-inducible lineage reporters, no deposit carries both readouts in
+     the same cells, and both transcripts sit near five per cent detection at
+     about one molecule per positive cell. Four routes were costed. Route B
+     (locus co-accessibility) ran three passes and closed under a rule frozen
+     before the first, because its positive control never cleared; the gate was
+     itself mis-specified, so the closure is a decision, not a demonstration.
+     Route A rested on data that was never deposited (the England figure is a
+     bulk qPCR panel), and its replacement refused because the Il1r1 deletion
+     is invisible to three-prime counting. Route C, a bulk array, was withdrawn
+     at the owner's correction: bulk cannot answer a co-occurrence question.
+     Rows C134 to C150.
+   - **The audit.** Eight adversaries read every artefact behind rows C116 to
+     C150, each finding sent to an independent verifier that defaulted to
+     refuting it: 45 of 47 findings survived, across 14 rows. Four numbers had
+     been quoted that no run produced, including the Sox9 axis of the branch's
+     one validated result, which was never in the frozen panel. Three more were
+     wrong against the tables they cite. One row named the wrong laboratory;
+     one was refuted by the branch's own artefacts. The cause was mechanical:
+     summary prose typed as string literals while the dataframe sat in scope.
+     Trial M4 now logs the corroboration; thirteen rows corrected from CSVs;
+     rows C151 to C154 record the audit itself. Frozen docstrings and run
+     records were not edited; the summary beside them carries a banner.
+   - **Repository hygiene.** The axin2 branch moved into the `trials/` layout
+     its siblings use, with imports, links and eight register paths fixed and
+     verified. The root README was rewritten: the Leiden UMAP is replaced by a
+     claims ledger drawn from the register (`analysis/figures/claims_ledger.png`,
+     `15_claims_ledger_figure.py`), the dataset table now lists all fifteen
+     opened deposits with their source studies, and the claims table cites row
+     ids that were checked against the register after a first draft got seven
+     of them wrong. REFERENCES, REPRODUCIBILITY, AI_CONTEXT, the docs index and
+     the roadmap table were brought current.
+   - **`RESEARCH_QUESTIONS.md`**, new, is the question-first entry point for a
+     principal investigator reading cold: five questions with what the data say
+     and do not, nine bioinformatic phenotypes, and three deliverables sized to
+     a semester. Before it landed, six checkers read it and the new README
+     against the register and the tables and raised 119 findings; 17 reached
+     an independent verifier before the session limit stopped the rest (16
+     confirmed, 1 refuted because it had already been fixed), and the
+     remainder were checked by hand against the rows and CSVs they cite. The
+     confirmed defects fell into five classes: register statuses quoted one
+     grade too strong (C13, C16, C40, C48, C88, C119, C120, C136, among
+     others); the M2 seed range quoted from the single-budget pass (12.6 to
+     17.1) instead of the seeds (12.3 to 16.7); a three-prime mechanism that
+     row C149 had withdrawn but that still stood on the A2 page; row C116's
+     claim text stating the opposite of its finding (the suffix order is
+     inverted, not correct); and animal, donor and library counts typed
+     loosely. Fifty-eight edits fixed them across CLAIMS, README,
+     RESEARCH_QUESTIONS, the chromatin summary generator and the A2 page, and
+     the validator passes at 740 checks.
+   - Owner retain/reject review pending on rows C116 to C154 and on the
+     outreach framing of `RESEARCH_QUESTIONS.md`.
 
 ---
 

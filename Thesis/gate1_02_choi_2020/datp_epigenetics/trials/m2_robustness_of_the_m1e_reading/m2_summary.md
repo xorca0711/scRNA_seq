@@ -21,8 +21,8 @@ and comfortably.
 ## What this says, front by front
 
 **1. The RNA half is solid.** The AT2 identity arm clears in every seed of
-both injured wells, at z from -4.0 to -11.4, losing 12.6 to 17.1 detection
-points. The transitional arm clears in every seed everywhere. The AT1 arm
+both injured wells, at z from -4.0 to -11.4, losing 12.3 to 16.7 detection
+points across the seeds (12.6 and 17.1 at the single M1e budget). The transitional arm clears in every seed everywhere. The AT1 arm
 clears in none, which is the negative arm behaving. Per gene the AT2 loss
 is carried by at least five genes, not one: in the two injured wells Etv5
 falls 0.227 and 0.239, Napsa 0.272 and 0.167, Slc34a2 0.271 and 0.189,
@@ -135,7 +135,7 @@ only as the trial's own output.
 
 **What is established** is the RNA half, and it is worth stating on its
 own: in two deposits, the CLDN4-positive KRT8-positive alveolar group
-loses the AT2 identity programme by 12.6 to 17.1 detection points against
+loses the AT2 identity programme by 12.3 to 16.7 detection points against
 a sham band, across five or more genes, with the AT1 programme flat in the
 same cells. That is Descriptive only, because each well is one library
 pooling two mice.
