@@ -151,13 +151,25 @@ cells, so there is no classifier to port.
 
 ## 5. What can still be done, with costs
 
-**Route A. Re-ask England's Figure S2 properly, on data already on this machine.**
-GSE247505 is in `raw_data/`. The only direct evidence in the field is one hedged
-supplementary panel at homeostasis; this repository could ask whether Axin2 is
-higher in the Il1r1-lineage fraction with the **mouse** as the unit, and whether
-it survives the Kras and injury arms rather than homeostasis alone.
-*Cost: low, data local. Ceiling: two libraries per group, which is the ceiling on
-the Il1r1 side everywhere.*
+**Route A. WITHDRAWN: the data does not exist. See
+[`a2_does_il1r1_deletion_move_wnt/a2_summary.md`](a2_does_il1r1_deletion_move_wnt/a2_summary.md).**
+This page proposed re-asking England's Figure S2L to S2N on GSE247505, on the
+strength of that deposit being local. **The ZsGreen libraries behind that figure
+were never deposited**: the superseries and both subseries contain zero mentions
+of ZsGreen, and the NCBI link service returns exactly three GEO series for that
+paper, none holding them. The only direct evidence for the overlap in the field
+cannot be re-examined by anyone, and this page asserted otherwise without
+checking. Row C148.
+
+**Route A prime, run and refused.** What the deposit does hold is better: Kras
+clones on an Il1r1 heterozygous against homozygous background, two libraries per
+group at two and twelve weeks, which tests the direction Choi hypothesised and
+nobody has tested. Trial A2 ran it and refused at its own label-corroboration
+rule: **Il1r1 transcript does not distinguish the homozygous deletion from the
+heterozygous one at either timepoint**, so the genotype labels cannot be verified
+from the matrices and the contrast is not a contrast. Rows C149 and C150. The
+consequence for anyone reusing that deposit is that its Il1r1 genotypes rest on
+deposited metadata alone.
 
 **Route B. Ask it in chromatin rather than in transcript, and this is the one
 this branch measured.** Accessibility aggregated over a gene's linked peaks is

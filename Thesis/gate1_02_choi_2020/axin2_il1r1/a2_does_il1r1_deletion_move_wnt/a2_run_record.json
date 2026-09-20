@@ -1,0 +1,242 @@
+{
+  "trial": "A2 Il1r1 dosage against the Wnt programme",
+  "rules_frozen_at": "2026-09-20T08:13:48+00:00",
+  "rules": {
+    "question": "does deleting Il1r1 move the Wnt programme in Kras-mutant AT2-derived clones",
+    "why_route_A_was_impossible": "England 2025's Figure S2L-N, the only direct measurement of Axin2 and Il1r1 overlap in the literature, was never deposited: the superseries and both subseries contain zero mentions of ZsGreen and the NCBI link service returns three series for that paper, none holding the sorted libraries",
+    "what_is_asked_instead": "the untested half of the crosstalk Choi 2020 hypothesised. IL-1 to Wnt in AT2 is not established anywhere; the reverse, Wnt inducing IL-1beta, is established by Aumiller 2013 and almost never cited",
+    "the_ceiling": "two libraries per group; under a permutation of four labels into two groups of two there are six orderings, so the smallest attainable p is 1/6 and nothing here can be significant. The trial computes no p value and reports complete separation or its absence",
+    "R1_unit": "the library; mice per library are not reported in GEO so the mouse-level n is unknown and not assumed",
+    "R2_label_corroboration": "Il1r1 must be lower in both homozygous libraries than in both heterozygous ones, checked before any Wnt quantity",
+    "R3_readout": "pseudobulk Wnt target module (Axin2, Nkd1, Tcf7l2, Lef1, Notum, Wif1) as summed counts over summed totals per 10,000",
+    "R4_null": "300 random six-gene modules matched on total expression within a factor of two",
+    "R5_reading": "complete separation and clearing the null; complete separation only; neither; or R2 failing",
+    "register_status": "Descriptive only whatever it finds"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890839_Expt2_ConfettiRFPr1_matrix.mtx.gz",
+      "bytes": 11603216,
+      "modified": "2023-10-28T10:52:53+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890839_Expt2_ConfettiRFPr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:41+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890839_Expt2_ConfettiRFPr1_barcodes.tsv.gz",
+      "bytes": 11154,
+      "modified": "2023-10-28T10:52:39+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890840_Expt2_ConfettiRFPr2_matrix.mtx.gz",
+      "bytes": 11599478,
+      "modified": "2023-10-28T10:53:09+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890840_Expt2_ConfettiRFPr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:55+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890840_Expt2_ConfettiRFPr2_barcodes.tsv.gz",
+      "bytes": 15246,
+      "modified": "2023-10-28T10:52:53+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890841_Expt2_2wRFP_hetr1_matrix.mtx.gz",
+      "bytes": 8131954,
+      "modified": "2023-10-28T10:52:30+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890841_Expt2_2wRFP_hetr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:19+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890841_Expt2_2wRFP_hetr1_barcodes.tsv.gz",
+      "bytes": 5731,
+      "modified": "2023-10-28T10:52:18+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890842_Expt2_2wRFP_hetr2_matrix.mtx.gz",
+      "bytes": 7662079,
+      "modified": "2023-10-28T10:52:17+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890842_Expt2_2wRFP_hetr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:08+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890842_Expt2_2wRFP_hetr2_barcodes.tsv.gz",
+      "bytes": 5661,
+      "modified": "2023-10-28T10:52:06+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890843_Expt2_2wRFP_homr1_matrix.mtx.gz",
+      "bytes": 7778365,
+      "modified": "2023-10-28T10:52:48+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890843_Expt2_2wRFP_homr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:38+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890843_Expt2_2wRFP_homr1_barcodes.tsv.gz",
+      "bytes": 5907,
+      "modified": "2023-10-28T10:52:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890844_Expt2_2wRFP_homr2_matrix.mtx.gz",
+      "bytes": 5509906,
+      "modified": "2023-10-28T10:52:38+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890844_Expt2_2wRFP_homr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:31+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890844_Expt2_2wRFP_homr2_barcodes.tsv.gz",
+      "bytes": 4609,
+      "modified": "2023-10-28T10:52:30+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890845_Expt2_12wRFP_hetr1_matrix.mtx.gz",
+      "bytes": 13654790,
+      "modified": "2023-10-28T10:51:13+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890845_Expt2_12wRFP_hetr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:50+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890845_Expt2_12wRFP_hetr1_barcodes.tsv.gz",
+      "bytes": 14600,
+      "modified": "2023-10-28T10:52:49+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890846_Expt2_12wRFP_hetr2_matrix.mtx.gz",
+      "bytes": 12347245,
+      "modified": "2023-10-28T10:51:34+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890846_Expt2_12wRFP_hetr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:51+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890846_Expt2_12wRFP_hetr2_barcodes.tsv.gz",
+      "bytes": 11971,
+      "modified": "2023-10-28T10:52:50+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890847_Expt2_12wRFP_homr1_matrix.mtx.gz",
+      "bytes": 13240161,
+      "modified": "2023-10-28T10:52:05+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890847_Expt2_12wRFP_homr1_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:57+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890847_Expt2_12wRFP_homr1_barcodes.tsv.gz",
+      "bytes": 12516,
+      "modified": "2023-10-28T10:52:56+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890848_Expt2_12wRFP_homr2_matrix.mtx.gz",
+      "bytes": 10400499,
+      "modified": "2023-10-28T10:51:50+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890848_Expt2_12wRFP_homr2_features.tsv.gz",
+      "bytes": 279361,
+      "modified": "2023-10-28T10:52:53+00:00"
+    },
+    {
+      "path": "raw_data\\GSE247505\\GSE247505_RAW\\GSM7890848_Expt2_12wRFP_homr2_barcodes.tsv.gz",
+      "bytes": 11162,
+      "modified": "2023-10-28T10:52:52+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\axin2_il1r1\\a2_does_il1r1_deletion_move_wnt\\a2_libraries.csv",
+    "Thesis\\gate1_02_choi_2020\\axin2_il1r1\\a2_does_il1r1_deletion_move_wnt\\a2_readings.csv"
+  ],
+  "results": {
+    "readings": [
+      {
+        "timepoint": "2w",
+        "n_het": 2,
+        "n_hom": 2,
+        "il1r1_het": [
+          0.2017,
+          0.1619
+        ],
+        "il1r1_hom": [
+          0.1607,
+          0.1866
+        ],
+        "wnt_het": [
+          1.3143,
+          0.8846
+        ],
+        "wnt_hom": [
+          1.5417,
+          1.3463
+        ],
+        "R2_corroborated": false,
+        "reading": "not computable",
+        "why": "U2, Il1r1 is not lower in both homozygous libraries than in both heterozygous ones, so the genotype labels cannot be verified from three-prime counts and the contrast is refused"
+      },
+      {
+        "timepoint": "12w",
+        "n_het": 2,
+        "n_hom": 2,
+        "il1r1_het": [
+          0.199,
+          0.0947
+        ],
+        "il1r1_hom": [
+          0.2,
+          0.1222
+        ],
+        "wnt_het": [
+          1.5578,
+          1.4362
+        ],
+        "wnt_hom": [
+          1.7522,
+          1.4838
+        ],
+        "R2_corroborated": false,
+        "reading": "not computable",
+        "why": "U2, Il1r1 is not lower in both homozygous libraries than in both heterozygous ones, so the genotype labels cannot be verified from three-prime counts and the contrast is refused"
+      }
+    ],
+    "smallest_attainable_p": 0.16666666666666666,
+    "no_p_value_computed": true
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-20T08:13:59+00:00"
+}

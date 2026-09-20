@@ -17,10 +17,10 @@ the claim's potential.
 | Bucket | Rows |
 |---|--:|
 | Retracted or superseded, kept on display | 3 |
-| Refuted | 35 |
+| Refuted | 37 |
 | Not establishable with the data that exists | 7 |
-| Not established | 31 |
-| **Total** | **76** |
+| Not established | 32 |
+| **Total** | **79** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -302,6 +302,20 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
+### C148. England et al. 2025 Figure S2L-N data, the only direct measurement of Axin2 and Il1r1 overlap in the literature, is available for reanalysis in GSE247505
+
+- **Status in the register:** Refuted
+- **What settled it:** trial A2: the superseries and both subseries contain zero mentions of ZsGreen, and the NCBI link service returns exactly three GEO series for that paper, none holding the sorted libraries
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/a2_does_il1r1_deletion_move_wnt/a2_summary.md`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C149. The Il1r1 genotype labels of GSE247504 can be verified from the deposited matrices
+
+- **Status in the register:** Refuted
+- **What settled it:** trial A2 rule R2: Il1r1 per ten thousand is 0.202 and 0.162 in the two-week heterozygous libraries against 0.161 and 0.187 in the homozygous, and 0.199 and 0.095 against 0.200 and 0.122 at twelve weeks, interleaving at both timepoints
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/a2_does_il1r1_deletion_move_wnt/a2_libraries.csv`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
 ---
 
 ## Not establishable with the data that exists
@@ -574,6 +588,13 @@ what was refuted and what settled it.
 - **Status in the register:** Not established
 - **What settled it:** trials A1, A1b and A1c on the eight mature wells of both multiome deposits, with three instruments; every well returned NOT COMPUTABLE because the positive control gating the reading never cleared
 - **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/ROUTE_B_OUTCOME.md`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C150. Deleting Il1r1 moves the Wnt programme in Kras-mutant AT2-derived clones
+
+- **Status in the register:** Not established
+- **What settled it:** trial A2: not computable, because R2 refused the genotype labels. The unread values are recorded: at two weeks the Wnt module separates completely in the direction of more Wnt without Il1r1, at twelve weeks it does not, and with two libraries per group the smallest attainable permutation p is one in six
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/a2_does_il1r1_deletion_move_wnt/a2_readings.csv`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
 ---
