@@ -41,7 +41,7 @@ import numpy as np
 import pandas as pd
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE.parent / "datp_epigenetics" / "trials"))
+sys.path.insert(0, str(HERE.parents[1] / "datp_epigenetics" / "trials"))
 from multiome_utils import REPO, RunRecord, df_to_markdown  # noqa: E402
 
 OUT = HERE / "module_detection_check"

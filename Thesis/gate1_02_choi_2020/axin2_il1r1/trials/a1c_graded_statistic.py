@@ -56,7 +56,7 @@ import pandas as pd
 import scipy.sparse as sp
 
 HERE = Path(__file__).resolve().parent
-TRIALS = HERE.parent / "datp_epigenetics" / "trials"
+TRIALS = HERE.parents[1] / "datp_epigenetics" / "trials"
 sys.path.insert(0, str(TRIALS))
 from multiome_utils import (RunRecord, read_barcodes, read_features,  # noqa: E402
                             stream_downsampled_detection, stream_selected)

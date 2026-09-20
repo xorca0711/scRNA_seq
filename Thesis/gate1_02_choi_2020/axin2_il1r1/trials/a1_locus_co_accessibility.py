@@ -124,7 +124,7 @@ import pandas as pd
 import scipy.sparse as sp
 
 HERE = Path(__file__).resolve().parent
-TRIALS = HERE.parent / "datp_epigenetics" / "trials"
+TRIALS = HERE.parents[1] / "datp_epigenetics" / "trials"
 sys.path.insert(0, str(TRIALS))
 from multiome_utils import (ATAC, RNA, RunRecord, df_to_markdown,  # noqa: E402
                             peak_gene_table, read_barcodes, read_features,

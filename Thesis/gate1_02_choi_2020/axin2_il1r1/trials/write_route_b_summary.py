@@ -11,7 +11,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 import pandas as pd
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE.parent / "datp_epigenetics" / "trials"))
+sys.path.insert(0, str(HERE.parents[1] / "datp_epigenetics" / "trials"))
 from multiome_utils import df_to_markdown  # noqa: E402
 
 A1 = pd.read_csv(HERE / "a1_locus_co_accessibility" / "a1_pairs.csv")
@@ -119,5 +119,5 @@ lines = [
     "   not be tuned, and it should stay frozen for a fourth.",
 ]
 
-(HERE / "ROUTE_B_OUTCOME.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+(HERE.parent / "ROUTE_B_OUTCOME.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 print("wrote ROUTE_B_OUTCOME.md")

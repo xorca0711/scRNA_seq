@@ -12,6 +12,13 @@ analysis gates. The reading-order gates (1, 2C, 2N, 2W, 3A, 3B) live in
 [`../../README.md`](../../README.md); this paper is reading-order Gate 1,
 paper 2.
 
+**Two branches sit beside this folder** and use the same conventions:
+[`../datp_epigenetics/trials/`](../datp_epigenetics/trials/README.md) for the
+transitional state in chromatin, and
+[`../axin2_il1r1/trials/`](../axin2_il1r1/trials/README.md) for this paper's own
+closing Discussion question. Both are on other people's data, because this
+paper's ATAC deposit is coverage tracks only.
+
 **The D series** works on the paper's own deposit (GSE145031, GSE144468). A
 trailing letter (D2b, D5b) marks a disclosed corrected pass over an earlier
 trial, never a replacement of it: the first outcome stays in the record and

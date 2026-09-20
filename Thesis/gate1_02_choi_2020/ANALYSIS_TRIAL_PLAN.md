@@ -63,6 +63,57 @@ folder's trial gates and are not the reading-order gates of
 | [D7](#d7-attack-claims-gate-2) | attacks | depth, doublets, discreteness |
 | [Proposed](#proposed-not-run-gate-3) | E-type | cross-dataset checks |
 
+- The branches, and why each exists
+---
+
+## The branches, and why each exists
+
+Two branches of this paper were opened on 2026-09-20 at the owner's direction.
+Both are on other people's data, and in both cases the reason is a property of
+this paper's own deposit rather than a preference.
+
+### `datp_epigenetics/` : the transitional state in chromatin
+
+This paper supports the epigenetic half of its Il1r1 claim with ATAC-seq, and
+GSE144598 deposits two bigwig coverage tracks with no peaks and no reads, which
+trial D0 recorded as unusable. The branch therefore runs on two 10x multiome
+deposits and asks whether the AT2 identity programme is closed at the chromatin
+level or merely silenced at the RNA level in the CLDN4-positive transitional
+state.
+
+Trials M0 to M3. One validated result, and it is a deposit error: GSE247130's
+barcode suffix map is inverted relative to its GEO sample order. One
+Descriptive-only positive: the labelled group loses the AT2 identity programme
+in RNA by 12.6 to 17.1 detection points. One retraction. The chromatin question
+is Not established, with a direction. See
+[`datp_epigenetics/README.md`](datp_epigenetics/README.md).
+
+**It also answers one of the owner's two questions, by refusing.** A
+CLDN4-positive KRT8-positive transcript call cannot separate neonatal
+developmental immaturity from injury-induced transition, so that marker set is
+shared with normal development and is not by itself damage-associated.
+
+### `axin2_il1r1/` : this paper's own closing Discussion question
+
+Choi 2020 ends its Discussion by proposing a comparison of Il1r1-positive and
+Axin2-positive AT2 cells. Six years on nobody has made it, and the branch
+establishes why rather than pretending to make it: both populations are defined
+by tamoxifen-inducible lineage reporters, no public deposit carries both
+readouts in the same cells, and both transcripts sit near five per cent
+detection at about one molecule per positive cell.
+
+The branch assessed four routes and ran two of them. Route B, locus
+co-accessibility, closed after three passes under a rule frozen before the first.
+Route A turned out to rest on data that was never deposited, and its replacement
+refused because the Il1r1 genotype labels of that deposit cannot be verified from
+its own matrices. See [`axin2_il1r1/README.md`](axin2_il1r1/README.md).
+
+**The premise needed correcting too.** Neither Axin2-positive nor Il1r1-positive
+AT2 cells are established as a distinct subset; the field's own data lean toward
+an injury-inducible state in both cases, and the Axin2 fraction differs 20 to 30
+fold between two knock-in alleles with nobody having explained the gap in eight
+years. This paper cites the subset claim as settled.
+
 ---
 
 ## The core logic backbone, checked trial by trial
