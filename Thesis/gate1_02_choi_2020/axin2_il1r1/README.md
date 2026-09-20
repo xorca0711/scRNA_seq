@@ -28,7 +28,7 @@ rendering and the PMC full-text API strip the italic tags and lose them.
 | Are Il1r1-positive AT2 cells a distinct subset? | **Not established**, for the same reasons, and the authors say so |
 | Do the two populations overlap? | **Not established.** One hedged supplementary panel says they do |
 | Can the definitive comparison be made from public data? | **No.** No deposit carries both readouts in the same cells |
-| Can anything useful be done on data already here? | **Yes, three things**, and section 5 costs them |
+| Can anything useful be done on data already here? | **Yes**, and section 5 costs them. One of the three was withdrawn as out of focus and replaced |
 
 ---
 
@@ -187,12 +187,57 @@ statistic has real sensitivity: Etv5 against Abca3 clears at z = +3.55 and Krt8
 against Krt18 at z = +3.59. The outcome page states what a correct gate would
 be. *Register status: Not established, never Refuted.*
 
-**Route C. GSE150957, the only paired design anywhere.** Wnt-high, Wnt-low and
-Wnt-negative distal lung epithelium sorted from the **same animal**, six
-independent experiments, so the mouse is the unit with n = 6. Bulk array, not
-AT2-pure, and Il1r1 is a single probe, so one array probe cannot carry a
-cell-identity claim.
-*Cost: moderate, data not held. Ceiling: it is bulk and it is not AT2.*
+**Route C. WITHDRAWN, and the reason is worth more than the route was.** An
+earlier version of this page proposed GSE150957, a bulk array of Wnt-high,
+Wnt-low and Wnt-negative distal lung epithelium sorted from the same animal
+across six independent experiments, on the strength of its being the only paired
+design anywhere with the mouse as the unit.
+
+The owner pointed out that it is out of focus, and it is, decisively:
+**bulk cannot answer a co-occurrence question at any level of replication.** The
+question is whether two markers sit in the same cell; a sorted fraction reports
+an average over cells and is silent on that. Three further mismatches sit on top
+of the fatal one: it sorts on TCF/Lef:H2B-GFP, a Wnt activity reporter, which is
+not the Axin2 population Nabhan and Zacharias defined; it is whole distal
+epithelium rather than AT2; and it is elastase and emphysema, a fifth injury
+model in a literature already confounded by four.
+
+The route was ranked here partly because it had the mouse as its unit, in a
+project where almost nothing does. That is a virtue of its statistics and not of
+its relevance, and **replication of a measurement that cannot address the
+question is worth very little.** Recorded as row C146 rather than deleted.
+
+**Route C prime, the replacement, and it is same-cell.** The assessment refused a
+transcript route because Axin2 is detected in 4 to 5 per cent of AT2-enriched
+cells at about one molecule each. A Wnt-target MODULE is not Axin2. Measured in
+[`module_detection_check/`](module_detection_check/module_summary.md) on
+GSE262927, the one deposit in this project with genuine per-animal replication:
+
+| | detection across six samples |
+|---|---|
+| Axin2 alone | 11.1 to 18.0 per cent |
+| **two or more of six Wnt target genes** | **14.6 to 28.4 per cent** |
+| **Il1r1 or Il1rap** | **19.9 to 40.2 per cent** |
+
+Both sides clear the floor, per cell, in an atlas with replicate libraries per
+timepoint. Three cautions, all of them earned:
+
+1. **Clearing the floor is necessary and not sufficient.** Route B cleared its
+   own by a factor of 4.1 to 10.4 and still closed after three passes, because
+   the spread of the matched null swamped an effect its own control showed was
+   real.
+2. **It is a different question, and must be asked in its own words.** A
+   Wnt-target module reports current target expression; the reporter reports
+   transcription during a tamoxifen window plus everything descended from it.
+   This asks whether cells with active Wnt target expression also carry IL-1
+   receptor components. It does not ask whether Choi's Il1r1-lineage cells and
+   Nabhan's Axin2-lineage cells are the same cells.
+3. **Any trial needs a positive control that is demonstrated rather than
+   asserted**, which is what trials A1 and A1b paid for: one control was assumed
+   to be an arithmetic identity and was not, and its replacement was asserted to
+   be unable to fail and did.
+
+*Cost: low, data local, per-animal replication available. Not yet run.*
 
 **Route D. The experiment that would settle it.** Two CreERT2 drivers cannot be
 independently co-induced in one mouse, so a joint trace is not available. It

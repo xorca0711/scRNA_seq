@@ -1,0 +1,78 @@
+{
+  "trial": "Wnt-target module detection against Axin2 alone",
+  "rules_frozen_at": "2026-09-20T08:08:36+00:00",
+  "rules": {
+    "question": "does a Wnt-target module clear the detection floor where Axin2 alone does not",
+    "this_is_a_measurement_not_a_trial": "no state compared, no threshold set, no biology reported",
+    "why_it_exists": "the assessment's Route C was a bulk array, and bulk cannot answer a co-occurrence question at any level of replication because the question is whether two markers sit in the same cell and a sorted fraction reports an average",
+    "deposit": "GSE262927, the one deposit in this project with genuine per-animal replication",
+    "necessary_not_sufficient": "Route B cleared its detection floor at a 4.1 to 10.4 fold gain and still closed after three passes because the null spread swamped the effect",
+    "still_a_proxy": "a Wnt-target module is not the Axin2-lineage population. It reports current target expression; the reporter reports transcription during a tamoxifen window plus everything descended from it"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE262927\\GSE262927_RAW\\GSM8181583_EEM-scRNA-113.h5",
+      "bytes": 14224562,
+      "modified": "2024-03-20T18:25:59+00:00"
+    },
+    {
+      "path": "raw_data\\GSE262927\\GSE262927_RAW\\GSM8181584_EEM-scRNA-116.h5",
+      "bytes": 28439042,
+      "modified": "2024-03-20T18:26:00+00:00"
+    },
+    {
+      "path": "raw_data\\GSE262927\\GSE262927_RAW\\GSM8181585_EEM-scRNA-117.h5",
+      "bytes": 29460759,
+      "modified": "2024-03-20T18:26:02+00:00"
+    },
+    {
+      "path": "raw_data\\GSE262927\\GSE262927_RAW\\GSM8181586_EEM-scRNA-118.h5",
+      "bytes": 24228688,
+      "modified": "2024-03-20T18:26:03+00:00"
+    },
+    {
+      "path": "raw_data\\GSE262927\\GSE262927_RAW\\GSM8181587_EEM-scRNA-124.h5",
+      "bytes": 16928559,
+      "modified": "2024-03-20T18:26:04+00:00"
+    },
+    {
+      "path": "raw_data\\GSE262927\\GSE262927_RAW\\GSM8181588_EEM-scRNA-125.h5",
+      "bytes": 20609960,
+      "modified": "2024-03-20T18:26:05+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_02_choi_2020\\axin2_il1r1\\module_detection_check\\module_detection.csv",
+    "Thesis\\gate1_02_choi_2020\\axin2_il1r1\\module_detection_check\\module_summary.md"
+  ],
+  "results": {
+    "axin2_alone_range": [
+      0.1111,
+      0.1795
+    ],
+    "wnt_two_or_more_range": [
+      0.1455,
+      0.2837
+    ],
+    "il1_any_range": [
+      0.1992,
+      0.4015
+    ]
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-20T08:09:06+00:00"
+}

@@ -17,10 +17,10 @@ the claim's potential.
 | Bucket | Rows |
 |---|--:|
 | Retracted or superseded, kept on display | 3 |
-| Refuted | 34 |
+| Refuted | 35 |
 | Not establishable with the data that exists | 7 |
 | Not established | 31 |
-| **Total** | **75** |
+| **Total** | **76** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -293,6 +293,13 @@ what was refuted and what settled it.
 - **Status in the register:** Refuted, and disclosed
 - **What settled it:** trials A1b and A1c: it failed in every well at z +0.24 to +2.05, for two reasons found only afterwards. It is judged against a null built for a different peak-count profile, 15 against 38, while the control is 15 against 15; and peaks the vendor annotation links to one gene need not lie in one regulatory domain
 - **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/a1c_graded_statistic/a1c_pairs.csv`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C146. GSE150957, a bulk array of Wnt-sorted distal lung epithelium with a paired within-animal design and the mouse as the unit, can contribute to the Axin2 and Il1r1 joint question
+
+- **Status in the register:** Refuted
+- **What settled it:** this folder proposed it as Route C and the owner pointed out it is out of focus. Bulk cannot answer a co-occurrence question at any level of replication, because the question is whether two markers sit in the same cell and a sorted fraction reports an average; it also sorts on a Wnt activity reporter rather than Axin2, is whole distal epithelium rather than AT2, and uses a fifth injury model
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
 ---
