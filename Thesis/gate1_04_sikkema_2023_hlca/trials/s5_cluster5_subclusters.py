@@ -48,7 +48,7 @@ from trial_utils import REPO, RunRecord, df_to_markdown, read_csr_rows, shannon 
 
 OUT = HERE / "s5_cluster5_subclusters"
 OUT.mkdir(exist_ok=True)
-OBJ = REPO / "analysis" / "GSE262927" / "processed" / "final_clustered.h5ad"
+OBJ = REPO / "Thesis" / "gate1_01_niethamer_2025" / "GSE262927" / "processed" / "final_clustered.h5ad"
 CLUSTER = "5"
 PANEL = {
     "HLCA MDM SPP1-high": ["Spp1", "Lpl", "Chil3", "Mmp9", "Fdx1"],

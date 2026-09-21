@@ -384,28 +384,28 @@ what was refuted and what settled it.
 
 - **Status in the register:** Validated (Kit); Not established (CAP2)
 - **What settled it:** 8-sample Cre cohort; trace rule reproduces the deposited calls at 100%
-- **Artefact:** `analysis/GSE262927/lineage_tracing_cohort/`
+- **Artefact:** `Thesis/gate1_01_niethamer_2025/GSE262927/lineage_tracing_cohort/`
 - **Where it came from:** Stage 0. Initial run (August 2026): recovering the published biology from raw counts
 
 ### C11. The deposited cell-cycle call does not measure proliferation here (it calls about 40% of cells and most lymphocytes cycling; agrees with the trace for 1 of 5 lineages)
 
 - **Status in the register:** Not established as a measure
 - **What settled it:** same run as C9, cross-check
-- **Artefact:** `analysis/GSE262927/phase_timecourse/tables/cycling_fraction_per_animal.csv`
+- **Artefact:** `Thesis/gate1_01_niethamer_2025/GSE262927/phase_timecourse/tables/cycling_fraction_per_animal.csv`
 - **Where it came from:** Stage 1. PI-matched follow-ups (2026-09-10): the source paper's phase and myeloid claims
 
 ### C16. The aMAC labelling exceeds what marrow-progenitor inheritance would give
 
 - **Status in the register:** Not established (references evaluable in 3 of 8 animals)
 - **What settled it:** script 12: same-animal cMON and neutrophil reference, 30-cell floor
-- **Artefact:** `analysis/GSE262927/myeloid_focus/amac_origin/tables/marrow_reference_check.csv`
+- **Artefact:** `Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/marrow_reference_check.csv`
 - **Where it came from:** Stage 1. PI-matched follow-ups (2026-09-10): the source paper's phase and myeloid claims
 
 ### C17. The rebuilt pool has two sources visible as a within-aMAC split in traced fraction (subcluster 2 more traced than 3 in early windows, reverse in late windows)
 
 - **Status in the register:** Not established (evaluable in one animal per window)
 - **What settled it:** script 12: per-subcluster trace at 42 dpi
-- **Artefact:** `analysis/GSE262927/myeloid_focus/amac_origin/tables/amac_subcluster_traced_fraction_42dpi.csv`
+- **Artefact:** `Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/amac_subcluster_traced_fraction_42dpi.csv`
 - **Where it came from:** Stage 1. PI-matched follow-ups (2026-09-10): the source paper's phase and myeloid claims
 
 ### C36. Whether fibroblasts receive the Areg signal

@@ -68,7 +68,7 @@ from trial_utils import REPO, RunRecord  # noqa: E402
 
 OUT = HERE / "s3_hlca_marker_annotation"
 OUT.mkdir(exist_ok=True)
-HUMAN = REPO / "analysis" / "GSE178360"
+HUMAN = REPO / "Thesis" / "ungated_murthy_2022" / "GSE178360"
 OBJ = HUMAN / "processed" / "final_clustered.h5ad"
 EPI_OBJ = HUMAN / "epithelial_subanalysis" / "epithelial_clustered.h5ad"
 MARKERS = HERE / "hlca_supp_table6_markers.csv"

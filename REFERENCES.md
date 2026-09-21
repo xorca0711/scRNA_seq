@@ -25,7 +25,7 @@ Preprint: *A longitudinal atlas of post-viral lung regeneration reveals persiste
 **Nature** 2022;604(7904):111–119.
 DOI: [10.1038/s41586-022-04541-3](https://doi.org/10.1038/s41586-022-04541-3) · PMID [35355018](https://pubmed.ncbi.nlm.nih.gov/35355018/)
 
-**Data:** GEO [GSE178360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178360), the three healthy-donor distal-lung samples analysed in [`analysis/GSE178360/`](analysis/GSE178360/README.md)
+**Data:** GEO [GSE178360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178360), the three healthy-donor distal-lung samples analysed in [`Thesis/ungated_murthy_2022/GSE178360/`](Thesis/ungated_murthy_2022/GSE178360/README.md)
 
 ---
 

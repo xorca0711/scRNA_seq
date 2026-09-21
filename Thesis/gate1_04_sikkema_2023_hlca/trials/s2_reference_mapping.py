@@ -72,7 +72,7 @@ MODEL_LEGACY = REF / "HLCA_reference_model"
 MODEL = REF / "HLCA_reference_model_converted"
 EMB = REF / "HLCA_full_v1.1_emb.h5ad"
 GENE_ORDER = REF / "HLCA_reference_model_gene_order_ids_and_symbols.csv"
-HUMAN = REPO / "analysis" / "GSE178360"
+HUMAN = REPO / "Thesis" / "ungated_murthy_2022" / "GSE178360"
 OBJ = HUMAN / "processed" / "final_clustered.h5ad"
 EPI_OBJ = HUMAN / "epithelial_subanalysis" / "epithelial_clustered.h5ad"
 QUERY_MODEL = OUT / "query_model"
@@ -80,7 +80,7 @@ LATENT = OUT / "s2_query_latent.csv.gz"
 S3_CELLS = HERE / "s3_hlca_marker_annotation" / "s3_cell_assignment.csv.gz"
 
 RULES = {
-    "query": {"source": "analysis/GSE178360/processed/final_clustered.h5ad", "layer": "counts", "gene_match": "Ensembl ID, version stripped",
+    "query": {"source": "Thesis/ungated_murthy_2022/GSE178360/processed/final_clustered.h5ad", "layer": "counts", "gene_match": "Ensembl ID, version stripped",
               "missing_genes": "zero-filled and counted", "batch_key": "dataset", "batch_value": "Tata_unpubl_GSE178360", "labels_key": "scanvi_label", "labels_value": "unlabeled"},
     "surgery": {"api": "scvi.model.SCANVI.load_query_data", "freeze_dropout": True, "max_epochs": 500, "weight_decay": 0.0,
                 "reduce_lr_on_plateau": True, "lr_patience": 8, "lr_factor": 0.1,

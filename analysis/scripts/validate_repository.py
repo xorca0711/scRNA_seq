@@ -160,7 +160,7 @@ def check_markdown_links(result: Validation) -> None:
 
 
 def check_machine_readable_files(result: Validation) -> None:
-    for path in (REPO / "analysis").rglob("*.json"):
+    for path in [*(REPO / "analysis").rglob("*.json"), *(REPO / "Thesis").rglob("*.json")]:
         try:
             json.loads(path.read_text(encoding="utf-8"))
         except (OSError, UnicodeError, json.JSONDecodeError) as exc:
@@ -176,14 +176,14 @@ def check_machine_readable_files(result: Validation) -> None:
         "raw-data inventory contains a non-portable path",
     )
     result.require(
-        not (REPO / "analysis/GSE262927/inventory/raw_files.json").exists(),
+        not (REPO / "Thesis/gate1_01_niethamer_2025/GSE262927/inventory/raw_files.json").exists(),
         "obsolete dataset-specific raw-data inventory still exists",
     )
 
 
 def check_headline_results(result: Validation) -> None:
-    mouse = read_json("analysis/GSE262927/logs/decisions.json")
-    human = read_json("analysis/GSE178360/logs/decisions.json")
+    mouse = read_json("Thesis/gate1_01_niethamer_2025/GSE262927/logs/decisions.json")
+    human = read_json("Thesis/ungated_murthy_2022/GSE178360/logs/decisions.json")
     result.equal(int(mouse["cells_after_qc"]) - int(mouse["doublets_removed"].split()[0]),
                  162_175, "mouse cells analysed")
     result.equal(int(mouse["n_clusters"]), 29, "mouse cluster count")
@@ -191,12 +191,12 @@ def check_headline_results(result: Validation) -> None:
                  27_729, "human cells analysed")
     result.equal(int(human["n_clusters"]), 31, "human cluster count")
 
-    proposals = read_csv("analysis/GSE262927/tables/cluster_annotation_proposals.csv")
+    proposals = read_csv("Thesis/gate1_01_niethamer_2025/GSE262927/tables/cluster_annotation_proposals.csv")
     result.equal(len(proposals), 29, "mouse annotation proposals")
     contradicted = sum("DISAGREES" in row["Deposition check"] for row in proposals)
     result.equal(contradicted, 3, "contradicted mouse annotations")
 
-    fractions = read_csv("analysis/GSE262927/tables/cluster_vs_author_celltype_fraction.csv")
+    fractions = read_csv("Thesis/gate1_01_niethamer_2025/GSE262927/tables/cluster_vs_author_celltype_fraction.csv")
     purity = statistics.median(
         max(float(value) for key, value in row.items() if key != "leiden_cluster")
         for row in fractions
@@ -204,14 +204,14 @@ def check_headline_results(result: Validation) -> None:
     result.equal(round(purity, 3), 0.947, "median cluster purity")
 
     transitional = median_by(
-        read_csv("analysis/GSE262927/regeneration_focus/tables/transitional_abundance_per_sample.csv"),
+        read_csv("Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/tables/transitional_abundance_per_sample.csv"),
         "day", "pct_transitional",
     )
     result.equal(round(transitional[11.0], 1), 27.4, "11 dpi transitional median")
     result.equal(round(transitional[366.0], 1), 0.3, "366 dpi transitional median")
 
     icap = median_by(
-        read_csv("analysis/GSE262927/regeneration_focus/tables/icap_abundance_per_sample.csv"),
+        read_csv("Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/tables/icap_abundance_per_sample.csv"),
         "day", "pct",
     )
     result.equal(round(icap[0.0], 1), 2.0, "homeostatic iCAP median")
@@ -219,7 +219,7 @@ def check_headline_results(result: Validation) -> None:
     result.equal(round(icap[366.0], 1), 21.7, "366 dpi iCAP median")
 
     tracing = read_csv(
-        "analysis/GSE262927/lineage_tracing_cohort/tables/icap_tracing_by_cre_line.csv"
+        "Thesis/gate1_01_niethamer_2025/GSE262927/lineage_tracing_cohort/tables/icap_tracing_by_cre_line.csv"
     )
     kit_rates = [
         float(row["pct_traced_in_iCAP"])

@@ -1,13 +1,13 @@
-# scRNA-seq analysis — GSE262927
+# scRNA-seq analysis: GSE262927
 
 > **This repository's `raw_data/` holds two independent GEO series.** They are
-> different species and are analysed separately — they are never merged, and no
+> different species and are analysed separately; they are never merged, and no
 > gene symbol is case-converted between them.
 >
 > | Series | Species | Samples | Outputs |
 > |---|---|---|---|
-> | **GSE262927** (this report) | mouse | 33 | `analysis/` (primary) |
-> | GSE178360 | human | 3 | `analysis/GSE178360/` |
+> | **GSE262927** (this report) | mouse | 33 | `Thesis/gate1_01_niethamer_2025/GSE262927/` |
+> | GSE178360 | human | 3 | `Thesis/ungated_murthy_2022/GSE178360/` |
 >
 > GSE178360 also ships four pre-processed Seurat `.RDS` objects
 > (epithelial / endothelial / mesenchymal / immune subsets). They are valid
@@ -47,7 +47,7 @@ the GEO filename (`^GSM\d+_(.+)\.h5$`) and written to `obs['sample_id']`
 before anything else happens.
 
 Cell names are `sampleID_originalBarcode`. 10x barcodes are drawn from a shared
-whitelist and **do** recur between libraries, so prefixing is required — without
+whitelist and **do** recur between libraries, so prefixing is required; without
 it, cells would be silently lost to name collisions at merge time. The
 untouched barcode is kept in `obs['original_barcode']`.
 
@@ -59,7 +59,7 @@ Samples detected (561 chars):
 
 ## 3. Species
 
-**MOUSE** — determined from the gene symbols in the matrix
+**MOUSE**, determined from the gene symbols in the matrix
 itself, not assumed. Mitochondrial genes follow the
 `mt-` convention
 (37 genes). No symbol was case-converted between species
@@ -84,7 +84,7 @@ Gene space identical across samples: True
 
 ## 6. QC thresholds
 
-Thresholds are derived **per sample** from that sample's own distributions —
+Thresholds are derived **per sample** from that sample's own distributions;
 median ± *n*·MAD on `log1p(total_counts)` and `log1p(n_genes)`, an upper-only
 MAD bound on mitochondrial percentage bracketed into a sane window, and an
 upper MAD bound on the fraction of counts in the top 20 genes. Lower bounds are
@@ -134,7 +134,7 @@ floored at 500 counts / 200 genes as a sanity guard. Full table:
 
 **169,807** of 212,701 retained
 (79.8%). Per-sample counts and the
-reason each cell was dropped are in `qc/qc_before_after.csv` — no cell is
+reason each cell was dropped are in `qc/qc_before_after.csv`; no cell is
 removed without appearing in that table.
 
 | Sample | GSM | Cells before QC | Cells after QC | Cells removed | % retained | removed_low_counts | removed_high_counts | removed_low_genes | removed_high_genes | removed_high_mito | removed_high_top20 |
@@ -188,7 +188,7 @@ recorded in the `call_method` and `status` columns of `qc/doublet_summary.csv`.
 
 Doublets removed: **7,632**. 7632 cells called by Scrublet run independently per capture; scores retained in the metadata for every cell
 
-> **Scrublet's automatic threshold was accepted in only 1 of 33 samples.** In the rest the simulated-doublet score histogram was not bimodal and the automatic cut produced a call rate irreconcilable with the 10x multiplet prior, so the expected-rate quantile was used instead. That makes the doublet calls here a *ranking* cut rather than a detected threshold — treat borderline calls with corresponding caution. Per-sample detail is in the `call_method` and `status` columns.
+> **Scrublet's automatic threshold was accepted in only 1 of 33 samples.** In the rest the simulated-doublet score histogram was not bimodal and the automatic cut produced a call rate irreconcilable with the 10x multiplet prior, so the expected-rate quantile was used instead. That makes the doublet calls here a *ranking* cut rather than a detected threshold; treat borderline calls with corresponding caution. Per-sample detail is in the `call_method` and `status` columns.
 
 | sample | cells_after_qc | predicted_doublets | doublet_rate_pct | expected_doublet_rate_pct | scrublet_threshold | call_method | status |
 |---|---|---|---|---|---|---|---|
@@ -289,8 +289,8 @@ stored as `obs['leiden_cluster']`. The other resolutions are retained as
 
 Wilcoxon rank-sum (scanpy rank_genes_groups, one cluster vs all remaining cells) on log1p(CP10K) values, with expressing fractions; table re-used from the previous run of this same pipeline
 
-- `tables/cluster_markers_all.csv` — every gene, every cluster
-- `tables/cluster_markers_top20.csv` — top 20 per cluster by score
+- `tables/cluster_markers_all.csv`: every gene, every cluster
+- `tables/cluster_markers_top20.csv`: top 20 per cluster by score
 
 ## 17. Tentative annotation strategy
 
@@ -411,8 +411,10 @@ GSE262927/
 | Processed object | `processed/final_clustered.h5ad` |
 
 Markers requested by the analysis brief but absent from this matrix are listed
-in `tables/absent_markers.txt` (present) — no
+in `tables/absent_markers.txt` (present); no
 empty panels were plotted.
+
+
 
 ## Automatic QC review
 
@@ -441,7 +443,7 @@ publish no ARM64 wheels and there is no C compiler installed, so scanpy cannot
 be built against the native interpreter. The pipeline therefore runs on an
 **x86-64 CPython 3.12** interpreter under Windows emulation
 (`.venv-x64/`, created with `uv`), where every wheel resolves normally. This is
-an environment workaround only — it changes nothing about the analysis.
+an environment workaround only; it changes nothing about the analysis.
 
 `harmonypy` ≥ 0.0.11 now ships a C++ core that also cannot be built here; the
 pure-Python `harmonypy==0.0.10` is pinned instead.

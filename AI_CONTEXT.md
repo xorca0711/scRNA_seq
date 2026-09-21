@@ -28,8 +28,9 @@ project:
     on 2026-09-20 on multiome deposits (PR #35 to #41), their register rows
     audited by eight adversaries and corrected (PR #42); README, references
     and this file brought current on 2026-09-20 with RESEARCH_QUESTIONS.md
-    added as the question-first entry point. Owner retain/reject review
-    pending on most register rows (PROGRESS items 12 to 36)
+    added as the question-first entry point; the two original series moved
+    into Thesis/ beside their source papers on 2026-09-21. Owner retain/reject
+    review pending on most register rows (PROGRESS items 12 to 37)
 
 datasets:
   - accession: GSE262927
@@ -188,7 +189,7 @@ thesis_roadmap:
   tracked: notes, JSON, small trial tables; PDFs and XLSX in Thesis/ are gitignored
   local_pdfs: "C:/Users/dream/Documents/AC_document/External Thesis/SAP_Thesis study/Gate_1-2_Universal/ (per gate); older ones directly under Thesis/"
   done:
-    - gate1_01_niethamer_2025 (pointer to docs/ and analysis/GSE262927; follow-ups N1 to N4 run 2026-09-10; Stage 2 proposals W1, S1, Nb1, D1, V1 written, not run)
+    - gate1_01_niethamer_2025 (pointer to docs/ and Thesis/gate1_01_niethamer_2025/GSE262927; follow-ups N1 to N4 run 2026-09-10; Stage 2 proposals W1, S1, Nb1, D1, V1 written, not run)
     - gate1_02_choi_2020 (re-entered 2026-09-15 at the owner's direction after reading: study note, choi_2020_extracts.json, trials D0 to D7 and the corrected passes D2b and D5b with run records; the AI-written note of 2026-09-13 was withdrawn first, decision 21, and the re-entry is decision 23; owner review pending on rows C58 to C64 and C85 to C104)
     - gate1_04_sikkema_2023_hlca (note, integration_benchmark.json, PIPELINE_FRAMING.md, trials S1 to S5 with run records; owner review pending; S2 result contradicts the human AT0 headline, see PROGRESS item 15)
     - gate2_05_cardoso_2026 (note, cardoso_2026_extracts.json, trials C0 to C12 and E1 to E6 with run records; entered out of order on the owner's instruction 2026-09-12; Gate 1 returned "not recovered"; list A exhausted; owner review pending, see PROGRESS items 23 to 29)
@@ -197,7 +198,9 @@ thesis_roadmap:
 
 pitfalls_for_ai_assistants:
   - "raw_data/ is read-only, 7.8 GB, gitignored. NEVER modify or commit it. Never grep/walk it recursively."
-  - "docs/PIPELINE_AS_RUN.md and both analysis/*/README.md are GENERATED. Edit the generators (analysis/scripts/05_write_pipeline_as_run.py, 03_write_report.py) and re-run; never hand-edit."
+  - "docs/PIPELINE_AS_RUN.md and both series README.md files (Thesis/gate1_01_niethamer_2025/GSE262927/README.md, Thesis/ungated_murthy_2022/GSE178360/README.md) are GENERATED. Edit the generators (analysis/scripts/05_write_pipeline_as_run.py, 03_write_report.py) and re-run; never hand-edit."
+  - "Layout since 2026-09-21: each deposit lives beside its source paper under Thesis/ (GSE262927 under gate1_01_niethamer_2025/, GSE178360 under ungated_murthy_2022/, whose README is a pointer note because the paper is outside the roadmap and unread). analysis/ holds only the shared pipeline, config, repository-level figures and the raw-data inventory. pipeline_utils.SERIES_DIRS is the one place the two locations are written. Run records and logs written before the move keep their analysis/GSE... paths: they are artefacts, not pointers, and are not edited."
+  - "Owner instruction 2026-09-21 on multi-agent workflows: weigh the cost before launching one. Do the deterministic part (id checks, number checks, path rewrites) with a script; deploy agents only where a script cannot judge (wording, framing, a fresh-eyes critique), at most three lenses, never one verifier per finding. Spend tokens where they change the answer."
   - "use .venv-x64/Scripts/python.exe for all Python; the native interpreter cannot import scanpy."
   - "the whole-atlas mouse object merges two incompatible experiments; condition/trace claims must come from the focused analyses (regeneration_focus/, lineage_tracing_cohort/)."
   - "mouse composition reflects a MACS sort ratio (85-90% CD45-), not the lung; compare only within a compartment."
@@ -209,7 +212,7 @@ pitfalls_for_ai_assistants:
   - "scvi-tools and torch are installed in the emulated .venv-x64 only (owner-authorised 2026-09-09); never on the native ARM64 interpreter. The scarches package does not import with anndata 0.13; use scvi.model.SCANVI.load_query_data for surgery. Train in the background: about 40 s per epoch for 28k cells."
   - "HLCA label transfer confidently mislabels neutrophils as classical monocytes; uncertainty does not flag absent identities that resemble present ones."
   - "Framing (owner instruction 2026-09-09, tightened 2026-09-10): no influenza or interferon narrative; H1N1 is the injury model of one series, not the subject. Describe results by cell state, niche, macrophage and monocyte states, annotation robustness, curation hygiene. The repository is an analysis log, not a portfolio."
-  - "Displaced material (archive/DISPLACED.md, 2026-09-10): the Krt8-high transitional trajectory, the human KRT8 reference-aligned panels and the portfolio PDF are established elsewhere (the owner's G-SURF submission). Do not extend them here; their artefacts and scripts stay in place and are validated. ONE EXCEPTION, by owner decision on 2026-09-13 (PR #12): the primary-marker dotplot, violin and per-cluster table for KRT8, CLDN4, KRT17 and SFN are on main under analysis/GSE178360/epithelial_subanalysis/figures/reference_aligned/. Treat that as a one-off the owner authorised, not as a general relaxation. Those panels were redrawn on the validated palette on the same day and their \"AT0 candidate\" label now reads \"SFTPC+SCGB3A2+ (mostly AT2)\", matching claim C6."
+  - "Displaced material (archive/DISPLACED.md, 2026-09-10): the Krt8-high transitional trajectory, the human KRT8 reference-aligned panels and the portfolio PDF are established elsewhere (the owner's G-SURF submission). Do not extend them here; their artefacts and scripts stay in place and are validated. ONE EXCEPTION, by owner decision on 2026-09-13 (PR #12): the primary-marker dotplot, violin and per-cluster table for KRT8, CLDN4, KRT17 and SFN are on main under Thesis/ungated_murthy_2022/GSE178360/epithelial_subanalysis/figures/reference_aligned/. Treat that as a one-off the owner authorised, not as a general relaxation. Those panels were redrawn on the validated palette on the same day and their \"AT0 candidate\" label now reads \"SFTPC+SCGB3A2+ (mostly AT2)\", matching claim C6."
   - "liana 1.10.0 is installed in .venv-x64 for trial C12 (CellChat's resource and scoring logic in Python). Installing it DOWNGRADED pandas from 3.0.5 to 2.3.3. That was checked rather than assumed: the validator and three trials were re-run and reproduced identical results, with only the recorded version string changing. Older run records therefore name pandas 3.0.5, which is correct history, not drift."
   - "CellChat itself has never been run in this repository and cannot be: it is R-only and there is no R here. Trial C3 re-derives the expression fact the paper's communication claim rests on, and trial C12 scores CellChat's own resource through liana with permutations switched off. Neither is a CellChat rerun and both say so. Never describe a Python ligand-receptor computation in this repository as CellChat."
   - "The validated figure palette lives in analysis/config/palette.json and is the ONE source of truth; Thesis/gate2_05_cardoso_2026/trials/viz_style.py reads it. Never hard-code figure colours and never reach for viridis or another default ramp. Categorical slots 1 to 4 pass the dataviz validator on the light surface, with one contrast warning that obliges visible labels or a table view; the sequential ramp is for magnitude only."

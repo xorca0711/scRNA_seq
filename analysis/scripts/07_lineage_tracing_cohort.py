@@ -43,7 +43,7 @@ import pandas as pd
 import scipy.sparse as sp
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from pipeline_utils import (ANALYSIS, RANDOM_SEED, figure_of, free_mem, log,  # noqa: E402
+from pipeline_utils import (ANALYSIS, SERIES_DIRS, RANDOM_SEED, figure_of, free_mem, log,  # noqa: E402
                             mem_report, save_fig, setup_matplotlib)
 
 warnings.filterwarnings("ignore")
@@ -55,7 +55,7 @@ import scanpy as sc  # noqa: E402
 sc.settings.verbosity = 1
 np.random.seed(RANDOM_SEED)
 
-OUT = ANALYSIS / "GSE262927" / "lineage_tracing_cohort"
+OUT = SERIES_DIRS["GSE262927"] / "lineage_tracing_cohort"
 FIG = OUT / "figures"
 TAB = OUT / "tables"
 
@@ -95,7 +95,7 @@ def trace_call(site_a: np.ndarray, site_b: np.ndarray) -> np.ndarray:
 
 def validate_trace_rule(src: Path) -> dict:
     """Re-derive the authors' trace_call and confirm the rule before using it."""
-    meta = ANALYSIS / "GSE262927" / "tables" / "cell_metadata.csv"
+    meta = SERIES_DIRS["GSE262927"] / "tables" / "cell_metadata.csv"
     if not meta.exists():
         return {"validated": False, "reason": "cell_metadata.csv missing"}
     m = pd.read_csv(meta, low_memory=False)
@@ -184,7 +184,7 @@ def main() -> int:
         description="Analyse the eight-sample lineage-tracing cohort separately.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
-    ap.add_argument("--src", default=str(ANALYSIS / "GSE262927" / "processed" / "final_clustered.h5ad"),
+    ap.add_argument("--src", default=str(SERIES_DIRS["GSE262927"] / "processed" / "final_clustered.h5ad"),
                     help="clustered mouse AnnData object")
     args = ap.parse_args()
     for d in (OUT, FIG, TAB):

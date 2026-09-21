@@ -41,7 +41,7 @@ import pandas as pd  # noqa: E402
 sys.stdout.reconfigure(encoding="utf-8")
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from focus_utils import REPO, RunRecord, df_to_markdown, read_csr_rows, shannon  # noqa: E402
-from pipeline_utils import ANALYSIS, RANDOM_SEED, log, save_fig, setup_matplotlib  # noqa: E402
+from pipeline_utils import ANALYSIS, SERIES_DIRS, RANDOM_SEED, log, save_fig, setup_matplotlib  # noqa: E402
 
 warnings.filterwarnings("ignore")
 plt = setup_matplotlib()
@@ -52,7 +52,7 @@ from anndata.io import read_elem  # noqa: E402
 sc.settings.verbosity = 0
 np.random.seed(RANDOM_SEED)
 
-SERIES = ANALYSIS / "GSE262927"
+SERIES = SERIES_DIRS["GSE262927"]
 OBJ = SERIES / "processed" / "final_clustered.h5ad"
 MYELOID = SERIES / "myeloid_focus"
 OUT = MYELOID / "batch_sensitivity"
@@ -73,7 +73,7 @@ K = 30
 REPS = {"X_pca": "uncorrected", "X_pca_harmony": "Harmony on infection round"}
 
 RULES = {
-    "object": "analysis/GSE262927/processed/final_clustered.h5ad, read row-wise; never loaded fully",
+    "object": "Thesis/gate1_01_niethamer_2025/GSE262927/processed/final_clustered.h5ad, read row-wise; never loaded fully",
     "cells": "atlas Leiden clusters 5, 17, 24 within the 25-sample Ki67 atlas (as 11_myeloid_focus.py), restricted "
              f"to days where both infection rounds are present: {DAYS_TESTED} dpi. 0, 90 and 366 dpi are "
              "single-round and excluded",
