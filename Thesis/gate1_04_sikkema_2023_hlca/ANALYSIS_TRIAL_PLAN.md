@@ -9,10 +9,10 @@ run record (`*_run_record.json`) with the rules frozen before any data is
 read, the inputs with sizes and modification times, the package versions,
 and the outputs.
 
-Portfolio framing, on the owner's instruction of 2026-09-09: results are
+Framing, on the owner's instruction of 2026-09-09: results are
 described by cell state, repair and niche biology, macrophage and monocyte
-states, annotation robustness and curation hygiene, matched to the target
-labs (AT2 differentiation and stem-niche communication; donor-aware
+states, annotation robustness and curation hygiene, grouped by the
+reading-order themes (AT2 differentiation and stem-niche communication; donor-aware
 cross-cohort annotation; inflammation-resolution and immune-epithelial
 programmes; regulatory T cell representation). The mouse series is an
 injury time course, and that fact is stated where it constrains a
@@ -505,7 +505,7 @@ environment.
 ### What S2 changes
 
 Proposed, pending owner decision: re-word the human AT0 headline in
-`FINDINGS.md` and the root README as above (the portfolio PDF is displaced to `archive/`); correct
+`FINDINGS.md` and the root README as above (the August 2026 summary PDF is displaced to `archive/`); correct
 cluster 22 to mast cells; record the neutrophil caveat wherever HLCA label
 transfer is used; keep cluster 30 out of population claims because it is
 donor-private, even though its identity is now clear.

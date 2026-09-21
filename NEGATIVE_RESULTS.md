@@ -392,21 +392,21 @@ what was refuted and what settled it.
 - **Status in the register:** Not established as a measure
 - **What settled it:** same run as C9, cross-check
 - **Artefact:** `Thesis/gate1_01_niethamer_2025/GSE262927/phase_timecourse/tables/cycling_fraction_per_animal.csv`
-- **Where it came from:** Stage 1. PI-matched follow-ups (2026-09-10): the source paper's phase and myeloid claims
+- **Where it came from:** Stage 1. Follow-ups (2026-09-10): the source paper's phase and myeloid claims
 
 ### C16. The aMAC labelling exceeds what marrow-progenitor inheritance would give
 
 - **Status in the register:** Not established (references evaluable in 3 of 8 animals)
 - **What settled it:** script 12: same-animal cMON and neutrophil reference, 30-cell floor
 - **Artefact:** `Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/marrow_reference_check.csv`
-- **Where it came from:** Stage 1. PI-matched follow-ups (2026-09-10): the source paper's phase and myeloid claims
+- **Where it came from:** Stage 1. Follow-ups (2026-09-10): the source paper's phase and myeloid claims
 
 ### C17. The rebuilt pool has two sources visible as a within-aMAC split in traced fraction (subcluster 2 more traced than 3 in early windows, reverse in late windows)
 
 - **Status in the register:** Not established (evaluable in one animal per window)
 - **What settled it:** script 12: per-subcluster trace at 42 dpi
 - **Artefact:** `Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/amac_subcluster_traced_fraction_42dpi.csv`
-- **Where it came from:** Stage 1. PI-matched follow-ups (2026-09-10): the source paper's phase and myeloid claims
+- **Where it came from:** Stage 1. Follow-ups (2026-09-10): the source paper's phase and myeloid claims
 
 ### C36. Whether fibroblasts receive the Areg signal
 
@@ -616,7 +616,7 @@ what was refuted and what settled it.
 - **Status in the register:** Not established
 - **What settled it:** trial G1 TEST contrast, 12 against 3 animals: no hallmark and no GO biological process set at gseapy FDR < 0.05 in either direction, with the gate cleared
 - **Artefact:** `Thesis/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_hallmark_TEST_capillary.csv`
-- **Where it came from:** Stage 1. PI-matched follow-ups (2026-09-10): the source paper's phase and myeloid claims
+- **Where it came from:** Stage 1. Follow-ups (2026-09-10): the source paper's phase and myeloid claims
 
 ---
 

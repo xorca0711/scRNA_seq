@@ -12,17 +12,23 @@ violated. Human-readable counterparts: [`README.md`](README.md) (overview),
 ```yaml
 project:
   name: scRNA_seq
-  type: analysis log of public single-cell RNA-seq reanalysis (not a portfolio)
+  type: analysis log
+  purpose: >
+    Hypothesis generation from an integrative reanalysis of public lung
+    single-cell and multiome data, applying frameworks newer than the source
+    papers to surface phenotypes and data distributions (owner restatement,
+    2026-09-22).
   question: >
-    Which epithelial and immune-state programmes distinguish productive lung
-    repair from persistent remodelling after injury? Stage 0 asked whether the
-    published biology of one injury series could be recovered from raw counts;
-    Stage 1 follows the target-lab modules (Thesis/gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md).
+    The theme: which epithelial and immune-state programmes distinguish
+    productive lung repair from persistent remodelling after injury? Stage 0
+    asked whether the published biology of one injury series could be
+    recovered from raw counts; Stage 1 follows the paper's phase and myeloid
+    claims (Thesis/gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md).
   repository: https://github.com/xorca0711/scRNA_seq
   status: >
     Stage 0 complete (PR #1 to #4); Stage 1 follow-ups and trials S1 to S5
     merged (PR #5 to #8); Cardoso 2026 (Gate 2, branch 2C) and the Choi 2020 deposit check merged
-    (PR #10 to #24); roadmap re-ranked against the SAP constraints on
+    (PR #10 to #24); roadmap re-ranked on
     2026-09-15 (Nabhan papers next, Gate 3 paused); Choi 2020 re-entered and
     run as trials D0 to D7 (PR #25 to #33); two branches of Choi 2020 opened
     on 2026-09-20 on multiome deposits (PR #35 to #41), their register rows
@@ -184,7 +190,7 @@ not_done:
 
 thesis_roadmap:
   directory: Thesis/
-  index: Thesis/README.md        # order from the owner's Notion PI Target Map; also Thesis/ROADMAP.json
+  index: Thesis/README.md        # the owner's reading order; also Thesis/ROADMAP.json
   rule: one folder per paper, added one at a time in roadmap order; study note + extracted JSON + pre-registered trial
   tracked: notes, JSON, small trial tables; PDFs and XLSX in Thesis/ are gitignored
   local_pdfs: "C:/Users/dream/Documents/AC_document/External Thesis/SAP_Thesis study/Gate_1-2_Universal/ (per gate); older ones directly under Thesis/"
@@ -212,8 +218,9 @@ pitfalls_for_ai_assistants:
   - "Thresholds taken from a paper are frozen in the trial plan BEFORE the trial reads any table; the HLCA donor-entropy threshold (0.43) must be recomputed per dataset and, for the mouse, within time point."
   - "scvi-tools and torch are installed in the emulated .venv-x64 only (owner-authorised 2026-09-09); never on the native ARM64 interpreter. The scarches package does not import with anndata 0.13; use scvi.model.SCANVI.load_query_data for surgery. Train in the background: about 40 s per epoch for 28k cells."
   - "HLCA label transfer confidently mislabels neutrophils as classical monocytes; uncertainty does not flag absent identities that resemble present ones."
-  - "Framing (owner instruction 2026-09-09, tightened 2026-09-10): no influenza or interferon narrative; H1N1 is the injury model of one series, not the subject. Describe results by cell state, niche, macrophage and monocyte states, annotation robustness, curation hygiene. The repository is an analysis log, not a portfolio."
-  - "Displaced material (archive/DISPLACED.md, 2026-09-10): the Krt8-high transitional trajectory, the human KRT8 reference-aligned panels and the portfolio PDF are established elsewhere (the owner's G-SURF submission). Do not extend them here; their artefacts and scripts stay in place and are validated. ONE EXCEPTION, by owner decision on 2026-09-13 (PR #12): the primary-marker dotplot, violin and per-cluster table for KRT8, CLDN4, KRT17 and SFN are on main under Thesis/ungated_murthy_2022/GSE178360/epithelial_subanalysis/figures/reference_aligned/. Treat that as a one-off the owner authorised, not as a general relaxation. Those panels were redrawn on the validated palette on the same day and their \"AT0 candidate\" label now reads \"SFTPC+SCGB3A2+ (mostly AT2)\", matching claim C6."
+  - "Framing (owner instruction 2026-09-09, tightened 2026-09-10): no influenza or interferon narrative; H1N1 is the injury model of one series, not the subject. Describe results by cell state, niche, macrophage and monocyte states, annotation robustness, curation hygiene. The repository is an analysis log for hypothesis generation."
+  - "Purpose (owner restatement 2026-09-22, DEVELOPMENT decision 27): repository text describes one purpose only, hypothesis generation from an integrative reanalysis of public lung single-cell and multiome data. The owner's personal planning, including how the resulting questions are used, lives in private notes and never in a tracked file. Reading-order branches (2C, 2N, 2W, 3A, 3B) are named by theme, not by laboratory."
+  - "Displaced material (archive/DISPLACED.md, 2026-09-10): the Krt8-high transitional trajectory, the human KRT8 reference-aligned panels and the summary PDF under archive/portfolio_2026-08/ are established outside this repository. Do not extend them here; their artefacts and scripts stay in place and are validated. ONE EXCEPTION, by owner decision on 2026-09-13 (PR #12): the primary-marker dotplot, violin and per-cluster table for KRT8, CLDN4, KRT17 and SFN are on main under Thesis/ungated_murthy_2022/GSE178360/epithelial_subanalysis/figures/reference_aligned/. Treat that as a one-off the owner authorised, not as a general relaxation. Those panels were redrawn on the validated palette on the same day and their \"AT0 candidate\" label now reads \"SFTPC+SCGB3A2+ (mostly AT2)\", matching claim C6."
   - "liana 1.10.0 is installed in .venv-x64 for trial C12 (CellChat's resource and scoring logic in Python). Installing it DOWNGRADED pandas from 3.0.5 to 2.3.3. That was checked rather than assumed: the validator and three trials were re-run and reproduced identical results, with only the recorded version string changing. Older run records therefore name pandas 3.0.5, which is correct history, not drift."
   - "CellChat itself has never been run in this repository and cannot be: it is R-only and there is no R here. Trial C3 re-derives the expression fact the paper's communication claim rests on, and trial C12 scores CellChat's own resource through liana with permutations switched off. Neither is a CellChat rerun and both say so. Never describe a Python ligand-receptor computation in this repository as CellChat."
   - "The validated figure palette lives in analysis/config/palette.json and is the ONE source of truth; Thesis/gate2_05_cardoso_2026/trials/viz_style.py reads it. Never hard-code figure colours and never reach for viridis or another default ramp. Categorical slots 1 to 4 pass the dataviz validator on the light surface, with one contrast warning that obliges visible labels or a table view; the sequential ramp is for magnitude only."

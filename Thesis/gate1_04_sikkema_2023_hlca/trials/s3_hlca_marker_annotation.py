@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 """Trial S3: annotate the GSE178360 clusters with the HLCA consensus marker sets.
 
-Portfolio purpose. An annotation of the human distal-lung series that comes
+Purpose. An annotation of the human distal-lung series that comes
 from a cross-study consensus (61 identities, Sikkema et al. 2023,
 Supplementary Table 6) rather than from this repository's own marker panel.
-It serves the AT2-to-AT0 differentiation axis (Nabhan fit) and the
-reference-based, donor-aware annotation angle (Wagner fit). No infection or
+It serves the AT2-to-AT0 differentiation axis (theme 2N) and the
+reference-based, donor-aware annotation angle (theme 2W). No infection or
 interferon framing is used; the series is healthy adult distal lung.
 
 Frozen rules (written to the run record before any table is read):

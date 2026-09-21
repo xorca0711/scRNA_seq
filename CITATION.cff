@@ -1,16 +1,19 @@
 cff-version: 1.2.0
 message: "If this analysis helps your work, cite this repository and the source datasets listed in REFERENCES.md."
 type: software
-title: "Lung injury and repair states from public single-cell RNA-seq"
+title: "Hypothesis generation from public lung single-cell and multiome data"
 authors:
   - family-names: "Xorca"
 repository-code: "https://github.com/xorca0711/scRNA_seq"
 url: "https://github.com/xorca0711/scRNA_seq"
 abstract: >-
-  An analysis log of public lung single-cell RNA-seq reanalysis, built from the
-  deposited count matrices with the authors' annotations held out, toward the
-  question of which epithelial and immune-state programmes distinguish
-  productive lung repair from persistent remodelling after injury.
+  An analysis log whose purpose is hypothesis generation from an integrative
+  reanalysis of public lung single-cell and multiome data. Deposited count
+  matrices are re-analysed with frameworks newer than the source papers, with
+  the authors' annotations held out, to surface phenotypes and data
+  distributions, within the theme of which epithelial and immune-state
+  programmes distinguish productive lung repair from persistent remodelling
+  after injury.
 keywords:
   - single-cell RNA-seq
   - scanpy

@@ -64,7 +64,7 @@ Supporting documents:
   marker-gene annotation tables, and the twelve parameters the reference study
   leaves unspecified.
 - [`../Thesis/README.md`](../Thesis/README.md): the paper-by-paper roadmap
-  (Notion order), with per-paper study notes, extracted decision criteria and
+  (the owner's reading order), with per-paper study notes, extracted decision criteria and
   analysis trials; the HLCA note is at
   [`../Thesis/gate1_04_sikkema_2023_hlca/README.md`](../Thesis/gate1_04_sikkema_2023_hlca/README.md).
 - [`../REFERENCES.md`](../REFERENCES.md): every source study, roadmap paper and

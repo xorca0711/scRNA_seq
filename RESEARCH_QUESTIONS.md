@@ -1,15 +1,17 @@
 # Research questions and the phenotypes behind them
 
-This repository asks which epithelial and immune-state programmes distinguish
-productive lung repair from persistent remodelling after injury, by re-analysing
-fifteen public single-cell and multiome deposits from eleven studies of lung
-injury, repair, fibrosis and tumour initiation, in mouse and human, with the
-authors' annotations held out of every fitting step. Five questions below are
-ones it can now ask well. Each states what the data say, what they do not, and
-a piece of work sized to a semester that would move it.
+This repository generates hypotheses from an integrative reanalysis of fifteen
+public single-cell and multiome deposits from eleven studies of lung injury,
+repair, fibrosis and tumour initiation, in mouse and human. Frameworks newer
+than the source papers are applied to the deposited counts, with the authors'
+annotations held out of every fitting step, to surface phenotypes and data
+distributions. The theme is which epithelial and immune-state programmes
+distinguish productive lung repair from persistent remodelling after injury.
+Five questions below are ones it can now ask well. Each states what the data
+say, what they do not, and a follow-up analysis that would move it.
 
-This page is written for a principal investigator reading cold, organised by
-question rather than by trial. Every number is read from a tracked table and
+This page is written for a reader arriving cold, organised by question rather
+than by trial. Every number is read from a tracked table and
 carries its row in the claims register, [`CLAIMS.md`](CLAIMS.md); everything
 refuted or unestablished is in [`NEGATIVE_RESULTS.md`](NEGATIVE_RESULTS.md);
 the trial that produced each number is one link away.
@@ -25,8 +27,8 @@ calibrated evidence, and the negative results are load-bearing.
 
 ## Part A. Five questions the repository can now ask well
 
-The pieces of work named under A1 and A3 are Part D's deliverables 1 and 2; the A2 spatial
-survey and the A4 mouse design are not semester deliverables and are labelled as
+The follow-up analyses named under A1 and A3 are Part D's items 1 and 2; the A2 spatial
+survey and the A4 mouse design are outside Part D and are labelled as
 such; A5 names its own.
 
 ### A1. When an AT2 cell enters the transitional state, is its AT2 identity programme closed at the chromatin level, or only silenced?
@@ -58,7 +60,7 @@ laboratory, so agreement is consistency rather than replication. A first
 reading of "silenced but not closed" was retracted when its positive control
 turned out to fire in five of eight resampling combinations (C120, C126).
 
-*The semester piece (deliverable 1).* GSE309751, the bulk ATAC-seq accompanying one of
+*The follow-up analysis (Part D item 1).* GSE309751, the bulk ATAC-seq accompanying one of
 those papers (assessed and not opened; see REFERENCES.md), deposits per-sample
 peak calls for two to three mice per group at 14 and 49 days after injury. It
 is the only chromatin contrast in this project with animal-level replication.
@@ -104,7 +106,7 @@ p = 0.268 within the 18), a null that bounds nothing weaker than rho 0.43, so
 the axis is Not established rather than absent (C49). A communication inference
 without proximity evidence is a hypothesis.
 
-*Not a semester deliverable.* What would move this is spatial transcriptomics
+*Not a Part D item.* What would move this is spatial transcriptomics
 of injured or fibrotic mouse lung with more than one animal per condition, to
 ask the one question this axis has never been asked: whether the
 ligand-producing and receptor-bearing cells are near each other. The survey for
@@ -144,7 +146,7 @@ marrow-inheritance check on the rebuilt pool is Not established under a frozen
 30-cell floor, with references evaluable in 3 of 8 animals (C16). The injury model is a respiratory virus; the analysis reads
 cell states, niches and kinetics, not the infection.
 
-*The semester piece (deliverable 2).* Sample-aware pseudobulk of the myeloid compartment
+*The follow-up analysis (Part D item 2).* Sample-aware pseudobulk of the myeloid compartment
 per animal and phase (proposal W1), defining the reconstituting macrophage
 programme and comparing it with the published myeloid-to-mesenchymal ARG1 and
 ornithine circuit of lung fibrosis.
@@ -189,11 +191,11 @@ not visible in the deposited count matrices of the one deposit that has it, and
 why is Not established, so that deposit's genotype labels rest on metadata
 alone (C149).
 
-*Not a semester deliverable.* This one is honest about needing mice: one CreERT2
+*Not a Part D item.* This one is honest about needing mice: one CreERT2
 lineage plus a non-Cre Axin2 reporter, four quadrants within SPC-positive AT2
 at homeostasis and after injury, with the tamoxifen washout the DATP paper's
-own limitations section specifies. It fits an 18-week window only as a
-computational design and power calculation, which is offered as such.
+own limitations section specifies. From public data it can be taken only as
+far as a computational design and power calculation, which is offered as such.
 
 <!-- rq-figure:A4 -->
 ![A4: Axin2 and Il1r1 in AT2 nuclei](analysis/figures/rq/rq_a4_axin2_il1r1.png)
@@ -219,7 +221,7 @@ never states it as a limitation of the marker.
 has no character specific to regeneration. Whether a fuller module separates
 neonatal from injury-induced cells is untested.
 
-*The semester piece.* Score the published DATP, PATS and ADI gene sets, plus a
+*The follow-up analysis.* Score the published DATP, PATS and ADI gene sets, plus a
 frozen developmental AT2 maturation set, across the P9, seven-week and infected
 wells of GSE247130, asking which genes are injury-specific once development is
 held fixed. It stops if the developmental set does not separate the P9 well
@@ -235,9 +237,8 @@ from the seven-week control under a threshold frozen from the seven-week well.
 
 ## Part B. Remarkable bioinformatic phenotypes
 
-Things the data did that a computational biologist would want to know about,
-independent of the biology they were found in. Each is a general lesson with a
-number behind it.
+Things the data did that matter independent of the biology they were found
+in. Each is a general lesson with a number behind it.
 
 1. **A response state masquerading as a cell type.** Blind clustering recovered
    the deposited mouse cell types at median purity 0.947 over 107,626 labelled
@@ -318,9 +319,9 @@ number behind it.
 
 ---
 
-## Part C. What a visiting student brings to this
+## Part C. The frameworks applied
 
-The methods are the ones the questions above needed, demonstrated on the
+The frameworks are the ones the questions above needed, demonstrated on the
 deposits named:
 
 - **Pre-registration as code.** Rules frozen in a run record before data are
@@ -339,20 +340,20 @@ deposits named:
   that refuses an unreadable ranking.
 - **Single-nucleus multiome**: streaming readers for matrices too large to
   load, locus-level accessibility, depth-equalised co-detection.
-- Outside this repository: **imaging quantification** (multiplex
-  immunofluorescence, animal-level counts) from prior wet-lab work, which is where several of the questions
-  above will have to be settled.
+- Outside this repository: several of the questions above will have to be
+  settled by **imaging quantification** (multiplex immunofluorescence,
+  animal-level counts), which no public count matrix can supply.
 
 ---
 
-## Part D. Three deliverables that fit inside eighteen weeks
+## Part D. Three follow-up analyses on public data
 
 Each is on data already public, states its unit, and has a stop condition.
 They are numbered, not lettered, so that they cannot be confused with the
-Stage 2 proposals of the paper-1 plan (W1, S1, Nb1, D1, V1), which carry a
-laboratory's initial.
+Stage 2 proposals of the paper-1 plan (W1, S1, Nb1, D1, V1), which are
+lettered.
 
-| | Deliverable | Data | Unit | Stops if |
+| | Analysis | Data | Unit | Stops if |
 |---|---|---|---|---|
 | 1 | Reversibility of AT2 identity chromatin, 14 against 49 days after injury (answers A1) | GSE309751, per-sample bulk ATAC peak calls, 2 to 3 mice per group | mouse | the mock arms do not separate from injured at 14 days under a threshold frozen from mock |
 | 2 | The reconstituting alveolar macrophage programme by animal and phase, against the published ARG1 and ornithine circuit (answers A3) | GSE262927, 25 animals | animal | fewer than 3 animals in any tested phase; the two-animal active-repair days enter only as a ranking, never as a tested arm |

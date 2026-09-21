@@ -10,12 +10,12 @@ Two stages, selected with --stage:
             embedding with the paper's uncertainty score, then the
             pre-registered comparisons, figures and summary.
 
-Portfolio purpose. The reference-based annotation of the human distal-lung
+Purpose. The reference-based annotation of the human distal-lung
 series by the route the HLCA itself used (position in the integrated
 embedding plus label transfer), which is the only route that can settle the
 AT0 question after trial S3 showed marker transfer is scheme-dependent.
-Serves the AT2-to-AT0 axis (Nabhan fit) and donor-aware, reference-based
-annotation (Wagner fit). No infection or interferon framing.
+Serves the AT2-to-AT0 axis (theme 2N) and donor-aware, reference-based
+annotation (theme 2W). No infection or interferon framing.
 
 Frozen rules (from ANALYSIS_TRIAL_PLAN.md, section S2, written before this
 script ran):

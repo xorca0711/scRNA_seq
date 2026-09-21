@@ -1,10 +1,8 @@
 # Study note: Sikkema et al. 2023, An integrated cell atlas of the lung in health and disease (HLCA)
 
 Roadmap position: **Gate 1, paper 4 of 4 ("reference framework")** in the
-ordered paper roadmap of the
-[UC Berkeley SAP PI Target Map](https://app.notion.com/p/3d1151616b44814c8697ff3af2f8f831).
-The owner's own reading note is the Notion page
-[HLCA study note](https://app.notion.com/p/3d6151616b4480708b3ed6bd7fbb2949);
+ordered paper roadmap of [`Thesis/README.md`](../README.md).
+The owner's own reading note is kept privately;
 this file is the repository-side expansion of the two headings that note
 leaves sparse: *Integration method / benchmarking pipeline* and *list of
 scores / decision criteria*. The machine-readable version of every number
@@ -317,11 +315,11 @@ The IPF alveolar-fibroblast state was defined the same way (cluster 0 of the
 joint fibroblast clustering: CCL2, COL1A1, CTHRC1, MMP19, SERPINE1, HIF1A;
 Supplementary Table 14), after the donor-entropy rule removed a single-donor
 cluster. Both signatures are candidate "persistent dysplastic remodelling"
-programmes for the portfolio question, in human tissue only.
+programmes for the repository's question, in human tissue only.
 
 ---
 
-## 8. Biology extracted for the portfolio question
+## 8. Biology extracted for the repository's question
 
 - **AT0 and pre-TB secretory** are defined as two children of "Transitional
   Club-AT2", with SFTPC and SCGB3A1 levels as the discriminators. This is the
