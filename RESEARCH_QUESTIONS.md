@@ -69,15 +69,6 @@ sorted AT2 dilutes a state-specific effect roughly eightfold, and the 49-day
 groups hold two mice. A normalised differential test needs the reads from SRA
 and is out of scope; peak presence at frozen loci is not.
 
-*Where it goes.* Roadmap branch 2C, the Choi axis (papers 5, 12 and 13): the
-transitional state and what its chromatin does is that laboratory's own
-question. No Berkeley target works on AT2 chromatin directly; the nearest
-placement fit is Nabhan (2N), for whom the transitional state is the exit
-from the niche his 2018 paper describes. The groups that deposited
-GSE310539 and GSE309751 (Lynch et al. 2026) and GSE247130 (Hassan and Chen
-2024) are the natural readers of a reversibility result on their own data.
-Deliverable 1 in Part D.
-
 <!-- rq-figure:A1 -->
 ![A1: the AT2 identity programme in RNA and in chromatin](analysis/figures/rq/rq_a1_chromatin.png)
 
@@ -119,16 +110,6 @@ ask the one question this axis has never been asked: whether the
 ligand-producing and receptor-bearing cells are near each other. The survey for
 such a dataset is a week; the analysis depends on what it finds.
 
-*Where it goes.* Branches 2C and 2N together: the AREG-EGFR axis is paper
-5's claim (Cardoso, Lee et al. 2026), and the stem-niche ligand-receptor
-dialogue is the Nabhan laboratory's current platform (paper 14, an
-alveolosphere screen of 201 genes with chimeric RNA-seq of stem-cell effects
-on the fibroblast niche). Direct placement match: Nabhan; proposal Nb1 in
-the paper-1 plan is the mouse-side prerequisite and is deliverable 3. The
-resource-dependence phenotype (C113) is a curation question, and Wagner
-(2W), whose work is donor-aware cross-cohort integration, is its secondary
-reader.
-
 <!-- rq-figure:A2 -->
 ![A2: EGFR ligands by compartment and the resource overlap](analysis/figures/rq/rq_a2_ligands.png)
 
@@ -167,16 +148,6 @@ cell states, niches and kinetics, not the infection.
 per animal and phase (proposal W1), defining the reconstituting macrophage
 programme and comparing it with the published myeloid-to-mesenchymal ARG1 and
 ornithine circuit of lung fibrosis.
-
-*Where it goes.* Branch 2W (Wagner, placement target): the reconstituting
-macrophage programme read against the ARG1 and ornithine circuit of paper
-16 (Yadav et al. 2025, Wagner a co-author), with the immune-metabolic
-scoring of paper 15 (Compass) as the method; proposal W1 is deliverable 2.
-Whether the capillary and interstitial-macrophage states resolve is also the
-opening condition of branch 3A (Saxton, conversation target: cytokine
-programmes of inflammation resolution, papers 7 and 8), which proposal S1
-tests with receptor expression on the reconstituting subclusters per phase.
-Held-out human validation of the myeloid states is proposal V1.
 
 <!-- rq-figure:A3 -->
 ![A3: myeloid and capillary states by phase](analysis/figures/rq/rq_a3_persistence.png)
@@ -224,14 +195,6 @@ at homeostasis and after injury, with the tamoxifen washout the DATP paper's
 own limitations section specifies. It fits an 18-week window only as a
 computational design and power calculation, which is offered as such.
 
-*Where it goes.* Branches 2N and 2C at once: the Axin2-positive AT2 cell is
-the Nabhan 2018 finding (paper 3) and the Frizzled-specific agonists of paper
-6 are its translational extension; the Il1r1-positive AT2 cell is Choi
-2020's (paper 2). Direct match: Nabhan, as a conversation rather than a
-placement project, because the joint measurement needs mice; the design
-above is what a visiting student brings to that conversation. Nothing on
-the public record settles it.
-
 <!-- rq-figure:A4 -->
 ![A4: Axin2 and Il1r1 in AT2 nuclei](analysis/figures/rq/rq_a4_axin2_il1r1.png)
 
@@ -262,37 +225,11 @@ wells of GSE247130, asking which genes are injury-specific once development is
 held fixed. It stops if the developmental set does not separate the P9 well
 from the seven-week control under a threshold frozen from the seven-week well.
 
-*Where it goes.* Branch 2C (Choi 2020's marker set; the deposit that carries
-the P9 wells is Hassan and Chen 2024), with the HLCA (paper 4, gate 1) as
-the frame for whether a developmental programme reappears in adult atlases.
-The human counterpart to ask is the bipotent AT0 state that Kadur
-Lakshminarasimha Murthy et al. 2022 describe, whose deposit this repository
-already holds. No direct Berkeley match; Nabhan (AT2 differentiation) is the
-nearest reader. Branch 3B (DuPage, regulatory T cells, papers 9 to 11) is
-touched by none of the five questions; proposal D1 tests its opening
-condition on external lung-Treg series and stays paused.
-
 <!-- rq-figure:A5 -->
 ![A5: the transitional marker set in development and after injury](analysis/figures/rq/rq_a5_development.png)
 
 *Figure A5. GSE247130 control wells, one RNA-only embedding each: P9 (n = 12,186), seven weeks (n = 7,589) and SeV infected (n = 11,773). (a to c) nuclei with both Cldn4 and Krt8 detected at the depth available (12.47%, 2.08%, 1.27%), then Cldn4 and Krt8 on the same embeddings; (d, e) the two transcripts across wells. A visual aid for row C119; the registered comparison is trial M1c at one depth budget, where the P9 wells labelled more than any injured adult well. Numbers in `rq_a5_wells.csv`.*
 <!-- /rq-figure:A5 -->
-
-### Where each question sits on the roadmap
-
-Branches are those of [`Thesis/README.md`](Thesis/README.md): 2C the Choi
-axis, 2N Nabhan and 2W Wagner (placement targets), 3A Saxton and 3B DuPage
-(conversation targets, paused). The match column is this repository's reading
-of fit, not a contact that has been made.
-
-| Question | Branch and papers | Berkeley match | In this repository | Outside it |
-|---|---|---|---|---|
-| A1, closed or silenced | 2C (5, 12, 13) | none direct; Nabhan nearest | deliverable 1; the `datp_epigenetics` branch, M0 to M4 | the depositors of GSE310539 and GSE309751 (Lynch et al. 2026) and of GSE247130 (Hassan and Chen 2024) |
-| A2, AREG and the database | 2C and 2N (5, 14) | Nabhan, placement | deliverable 3, proposal Nb1; trials E1, E6, C12, C14 | Cardoso, Lee et al. 2026 |
-| A3, states a year later | 2W (15, 16); opens 3A (7, 8) | Wagner, placement; Saxton, conversation | deliverable 2, proposal W1; proposals S1 and V1; follow-ups N1 to N4 | Yadav et al. 2025 |
-| A4, Axin2 and Il1r1 | 2N and 2C (3, 6, 2) | Nabhan, conversation (needs mice) | the `axin2_il1r1` branch, assessed and closed | Choi et al. 2020; England et al. 2025 |
-| A5, development or damage | 2C with gate 1 paper 4 (HLCA) | none direct; Nabhan nearest | trial M1c; trials D0 to D7; the GSE178360 report | Hassan and Chen 2024; Kadur Lakshminarasimha Murthy et al. 2022 |
-| none | 3B (9, 10, 11) | DuPage, conversation, paused | proposal D1 on external lung-Treg series | Loffredo et al. 2025; McCullough et al. 2026 |
 
 ---
 
