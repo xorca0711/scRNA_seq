@@ -1,0 +1,128 @@
+{
+  "trial": "G0 GSEA feasibility scan of the imported deposits",
+  "rules_frozen_at": "2026-09-21T12:11:53+00:00",
+  "rules": {
+    "R1_unit_and_floor": "animal, donor or library as the unit; at least three units per arm after the cell floor",
+    "R2_raw_counts": "raw counts on disk; normalised-only matrices are not pseudobulked",
+    "R3_named_contrast": "the contrast is one RESEARCH_QUESTIONS.md asks or a Stage 2 proposal names",
+    "R4_frozen_gene_sets": "gene sets frozen and hashed in the run record before the ranking is opened; MSigDB is not on disk",
+    "R5_statistic": "pre-ranked GSEA on a per-unit pseudobulk ranking, with a matched-size random-gene-set null beside the implementation's permutation null",
+    "verdicts": [
+      "plausible",
+      "marginal",
+      "not admissible"
+    ],
+    "no_matrix_is_opened": true
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "Thesis\\gate1_01_niethamer_2025\\GSE262927\\tables\\cell_metadata.csv",
+      "bytes": 47225669,
+      "modified": "2026-08-08T14:22:11+00:00"
+    },
+    {
+      "path": "raw_data\\GSE136831\\GSE136831_AllCells.Samples.CellType.MetadataTable.txt.gz",
+      "bytes": 4308752,
+      "modified": "2026-09-13T04:55:24+00:00"
+    },
+    {
+      "path": "raw_data\\GSE135893\\GSE135893_IPF_metadata.csv.gz",
+      "bytes": 3354014,
+      "modified": "2026-09-13T04:55:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE131907\\GSE131907_Lung_Cancer_cell_annotation.txt.gz",
+      "bytes": 1886187,
+      "modified": "2026-09-13T04:43:42+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\e4_bleomycin_fibrotic_genes\\e4_run_record.json",
+      "bytes": 4854,
+      "modified": "2026-09-13T05:44:12+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c3_areg_state_specificity\\c3_run_record.json",
+      "bytes": 14178,
+      "modified": "2026-09-13T05:44:12+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_02_choi_2020\\trials\\d0_data_reality_check\\d0_run_record.json",
+      "bytes": 7694,
+      "modified": "2026-09-15T13:42:18+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_02_choi_2020\\trials\\d0_data_reality_check\\d0_run_record.json",
+      "bytes": 7694,
+      "modified": "2026-09-15T13:42:18+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c0_data_reality_check\\c0_run_record.json",
+      "bytes": 27416,
+      "modified": "2026-09-13T05:44:12+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c0_data_reality_check\\c0_run_record.json",
+      "bytes": 27416,
+      "modified": "2026-09-13T05:44:12+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c0_data_reality_check\\c0_run_record.json",
+      "bytes": 27416,
+      "modified": "2026-09-13T05:44:12+00:00"
+    },
+    {
+      "path": "Thesis\\gate2_05_cardoso_2026\\trials\\c0_data_reality_check\\c0_run_record.json",
+      "bytes": 27416,
+      "modified": "2026-09-13T05:44:12+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m0_deposit_reality_check\\m0_run_record.json",
+      "bytes": 4500,
+      "modified": "2026-09-20T07:00:32+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_02_choi_2020\\datp_epigenetics\\trials\\m0_deposit_reality_check\\m0_run_record.json",
+      "bytes": 4500,
+      "modified": "2026-09-20T07:00:32+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g0_gsea_feasibility\\g0_deposits.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g0_gsea_feasibility\\g0_summary.md"
+  ],
+  "results": {
+    "accessions_scanned": 16,
+    "verdicts": {
+      "not admissible": 11,
+      "plausible": 4,
+      "marginal": 1
+    },
+    "plausible": [
+      "GSE262927",
+      "GSE136831",
+      "GSE135893",
+      "GSE131907"
+    ],
+    "gene_set_collections_on_disk": [],
+    "gsea_tooling_installed": {
+      "gseapy": false,
+      "decoupler": false
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-21T12:11:59+00:00"
+}

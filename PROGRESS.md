@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-21 (the two original series moved into Thesis/ beside their source papers, the README left open-ended, the owner's rule on multi-agent cost recorded, the docs pages cleared of em-dashes, and a paper-style figure drawn for each research question; see items 37 and 38). Previously 2026-09-20 (two branches of roadmap paper 2 on multiome deposits, an eight-adversary audit that corrected 14 register rows, the root README rewritten around a claims ledger drawn from the register, and RESEARCH_QUESTIONS.md added as the question-first entry point; items 35 and 36), 2026-09-17, 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-21 (the two original series moved into Thesis/ beside their source papers, the README left open-ended, the owner's rule on multi-agent cost recorded, the docs pages cleared of em-dashes, a paper-style figure drawn for each research question, and a scan of where a gene set enrichment analysis is admissible; see items 37 to 39). Previously 2026-09-20 (two branches of roadmap paper 2 on multiome deposits, an eight-adversary audit that corrected 14 register rows, the root README rewritten around a claims ledger drawn from the register, and RESEARCH_QUESTIONS.md added as the question-first entry point; items 35 and 36), 2026-09-17, 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -932,6 +932,23 @@ labelled cells.
      Notion target map (the page `ROADMAP.json` cites), under a child page
      written from this repository's reading of fit. Part D's deliverables
      are numbered 1 to 3 so they no longer collide with proposal D1 (DuPage).
+
+39. **Where a gene set enrichment analysis is admissible** (2026-09-21, owner
+   question: is any GSEA established, and on which imported data would a
+   trial be plausible). None exists; the pipeline record says "not run" and
+   every "enrichment" in the scripts is a fold or kNN enrichment. Trial G0
+   (`Thesis/gate1_01_niethamer_2025/trials/g0_gsea_feasibility/`) scanned the
+   16 imported accessions from their metadata tables and this
+   repository's reality-check records, no matrix opened, under rules frozen
+   first (unit of animal, donor or library with at least three per arm; raw
+   counts on disk; a contrast a question asks; gene sets hashed before
+   ranking; a matched-random-set null beside the permutation null). Verdicts:
+   4 plausible (GSE262927, GSE136831, GSE135893, GSE131907), GSE309751 marginal,
+   11 not admissible. Row C155. Proposals G1 (GSE262927
+   by phase within compartment, the gene-set layer of W1) and G2 (GSE136831
+   IPF against control per donor, GSE135893 held out) are in the Stage 2
+   table, not run; MSigDB is not on disk and no GSEA package is installed,
+   so either trial begins by recording those as inputs.
 
 ---
 

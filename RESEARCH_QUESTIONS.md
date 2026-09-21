@@ -16,7 +16,7 @@ the trial that produced each number is one link away.
 
 **How to read the statuses.** Rules are pre-registered and frozen before data
 are opened; a refuted claim stays on display; the statistical unit is the animal
-or donor, never the cell. Of 154 register rows, 8 are validated, 65 descriptive
+or donor, never the cell. Of 155 register rows, 8 are validated, 66 descriptive
 or exploratory, 38 not established, 42 refuted or retracted and 1 displaced
 (established outside this repository). That ratio is the point: the product is
 calibrated evidence, and the negative results are load-bearing.
