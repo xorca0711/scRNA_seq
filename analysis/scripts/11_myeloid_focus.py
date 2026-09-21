@@ -38,7 +38,7 @@ import pandas as pd  # noqa: E402
 sys.stdout.reconfigure(encoding="utf-8")
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from focus_utils import RunRecord, df_to_markdown, read_csr_rows, shannon, strip_by_day  # noqa: E402
-from pipeline_utils import ANALYSIS, RANDOM_SEED, log, save_fig, setup_matplotlib  # noqa: E402
+from pipeline_utils import ANALYSIS, SERIES_DIRS, RANDOM_SEED, log, save_fig, setup_matplotlib  # noqa: E402
 
 warnings.filterwarnings("ignore")
 plt = setup_matplotlib()
@@ -49,7 +49,7 @@ from anndata.io import read_elem  # noqa: E402
 sc.settings.verbosity = 0
 np.random.seed(RANDOM_SEED)
 
-SERIES = ANALYSIS / "GSE262927"
+SERIES = SERIES_DIRS["GSE262927"]
 OBJ = SERIES / "processed" / "final_clustered.h5ad"
 OUT = SERIES / "myeloid_focus"
 FIG = OUT / "figures"
@@ -85,7 +85,7 @@ PRIMARY_RES = 0.5
 SENSITIVITY_RES = [0.2, 1.0]
 
 RULES = {
-    "object": "analysis/GSE262927/processed/final_clustered.h5ad, read row-wise; never loaded fully",
+    "object": "Thesis/gate1_01_niethamer_2025/GSE262927/processed/final_clustered.h5ad, read row-wise; never loaded fully",
     "cohort": "has_author_metadata == True (the 25-sample Ki67 atlas)",
     "cells": "atlas Leiden clusters 5, 17 and 24, chosen from the blind clustering and the cluster-level "
              "dominant-label table (tables/cluster_dominant_author_celltype.csv). Cluster 23 (ambient-like, "

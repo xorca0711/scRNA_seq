@@ -43,7 +43,7 @@ from trial_utils import REPO, RunRecord, df_to_markdown, read_csr_rows  # noqa: 
 
 OUT = HERE / "s4_cluster23_qc"
 OUT.mkdir(exist_ok=True)
-OBJ = REPO / "analysis" / "GSE262927" / "processed" / "final_clustered.h5ad"
+OBJ = REPO / "Thesis" / "gate1_01_niethamer_2025" / "GSE262927" / "processed" / "final_clustered.h5ad"
 CLUSTER = "23"
 LINEAGE = ["Sftpc", "Scgb1a1", "Ptprc", "Pecam1", "Col1a1"]
 RULES = {

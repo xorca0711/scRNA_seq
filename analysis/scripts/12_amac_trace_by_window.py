@@ -36,11 +36,11 @@ import pandas as pd
 sys.stdout.reconfigure(encoding="utf-8")
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from focus_utils import RunRecord, df_to_markdown, strip_by_day  # noqa: E402
-from pipeline_utils import ANALYSIS, RANDOM_SEED, save_fig, setup_matplotlib  # noqa: E402
+from pipeline_utils import ANALYSIS, SERIES_DIRS, RANDOM_SEED, save_fig, setup_matplotlib  # noqa: E402
 
 plt = setup_matplotlib()
 
-MYELOID = ANALYSIS / "GSE262927" / "myeloid_focus"
+MYELOID = SERIES_DIRS["GSE262927"] / "myeloid_focus"
 META = MYELOID / "tables" / "myeloid_cell_metadata.csv"
 OUT = MYELOID / "amac_origin"
 FIG = OUT / "figures"
@@ -59,7 +59,7 @@ MARROW_MARGIN = 10.0   # percentage points
 SPLIT_MARGIN = 20.0    # percentage points
 
 RULES = {
-    "input": "analysis/GSE262927/myeloid_focus/tables/myeloid_cell_metadata.csv (tracked; written by "
+    "input": "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_cell_metadata.csv (tracked; written by "
              "11_myeloid_focus.py from atlas clusters 5, 17, 24 of the 25-sample Ki67 atlas)",
     "cells": "cells with a deposited myeloid label in the frozen list and trace_call in {Traced, Untraced}; "
              "Not_detected is reporter dropout and is excluded (rule of 07_lineage_tracing_cohort.py)",

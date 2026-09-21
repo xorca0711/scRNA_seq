@@ -13,9 +13,9 @@ DOI 10.1016/j.stem.2024.12.002, PMID 39818203. Data: GEO GSE262927.
 |---|---|
 | Annotated reference to the published method (parameters, marker tables, open decisions) | [`../../docs/scRNAseq_workflow_Niethamer2025.md`](../../docs/scRNAseq_workflow_Niethamer2025.md) |
 | The published workflow, ordering constraints, statistical unit | [`../../docs/WORKFLOW_Niethamer2025.md`](../../docs/WORKFLOW_Niethamer2025.md) |
-| The executed reanalysis (generated report) | [`../../analysis/GSE262927/README.md`](../../analysis/GSE262927/README.md) |
-| Focused analyses: AT2 to Krt8-high transitional to AT1 trajectory; injury-associated capillary state | [`../../analysis/GSE262927/regeneration_focus/`](../../analysis/GSE262927/regeneration_focus/) |
-| Lineage-tracing cohort (8 non-atlas samples) | [`../../analysis/GSE262927/lineage_tracing_cohort/`](../../analysis/GSE262927/lineage_tracing_cohort/) |
+| The executed reanalysis (generated report) | [`Thesis/gate1_01_niethamer_2025/GSE262927/README.md`](GSE262927/README.md) |
+| Focused analyses: AT2 to Krt8-high transitional to AT1 trajectory; injury-associated capillary state | [`Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/`](GSE262927/regeneration_focus/) |
+| Lineage-tracing cohort (8 non-atlas samples) | [`Thesis/gate1_01_niethamer_2025/GSE262927/lineage_tracing_cohort/`](GSE262927/lineage_tracing_cohort/) |
 | Every decision, before and after reading the paper | [`../../docs/ANALYSIS_RATIONALE.md`](../../docs/ANALYSIS_RATIONALE.md) |
 | What actually ran, with the divergence table | [`../../docs/PIPELINE_AS_RUN.md`](../../docs/PIPELINE_AS_RUN.md) |
 | Results and negative results | [`../../FINDINGS.md`](../../FINDINGS.md) |

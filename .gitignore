@@ -63,13 +63,20 @@ desktop.ini
 .venv-x64/
 
 # Derived analysis outputs that are large and fully regenerable by
-# analysis/scripts/run_scrna_analysis.py (figures and small tables ARE tracked)
+# analysis/scripts/run_scrna_analysis.py (figures and small tables ARE tracked).
+# The two original series live under Thesis/ beside their source papers since
+# 2026-09-21; the analysis/ patterns stay so an --outdir run there is still safe.
 analysis/**/processed/
 analysis/**/sample_shards/
 analysis/**/cluster_markers_all.csv
 analysis/**/epithelial_cluster_markers_all.csv
 analysis/**/*.csv.gz
 analysis/**/epithelial_clustered.h5ad
+Thesis/**/processed/
+Thesis/**/sample_shards/
+Thesis/**/cluster_markers_all.csv
+Thesis/**/epithelial_cluster_markers_all.csv
+Thesis/**/epithelial_clustered.h5ad
 
 # Regenerable per-cell tables written by Thesis/ trials
 Thesis/**/*.csv.gz

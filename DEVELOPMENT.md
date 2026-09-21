@@ -229,8 +229,9 @@ Krt8-high transitional work (the alveolar trajectory, its time course, and
 the human KRT8 reference-aligned panels), which is established elsewhere in
 my G-SURF submission. Both were moved out of the main narrative into
 `archive/` with a note on what moved, when and why; their artefacts and
-scripts stay under `analysis/` because the validator checks their numbers
-and the scripts regenerate them. The README was rewritten to open with the
+scripts stay in place (then under `analysis/`; the artefacts moved with their
+series to `Thesis/` on 2026-09-21, decision 25) because the validator checks
+their numbers and the scripts regenerate them. The README was rewritten to open with the
 claims table, to state the working question rather than a recovery
 exercise, and to name H1N1 once as the injury model of one series, because
 the roadmap ahead is not an influenza project. Claims were softened where
@@ -541,6 +542,24 @@ one grade too strong and a range typed from the wrong pass, and their fifty-eigh
 fixes are listed in PROGRESS item 36. My retain or reject on the outreach
 framing is pending.
 
+**25 · The deposits moved beside their papers, the README was left open, and
+a cost rule for multi-agent work was set.** (2026-09-21.) I asked for the
+analysis folders to move into `Thesis/`, one folder per dataset, or into the
+paper folder when that paper produced the deposit. GSE262927 therefore sits
+under paper 1. GSE178360 sits under a folder for Murthy 2022, which is outside
+the roadmap, and that folder holds a pointer note only, because decision 23
+stands: no study note before I have read the paper. I asked for the README to
+stay open-ended, because there is more to go, and it now says what is not
+done rather than reading as a finished portfolio. And I set a rule for the
+assistant, recorded in `AI_CONTEXT.md` and in the cross-project harness file:
+before launching a multi-agent workflow, weigh its cost; do the deterministic
+part with a script; deploy agents only where a script cannot judge, and then
+with at most three lenses. The fact-check of the outreach documents the day
+before had used six checkers and forty-seven verifiers and hit the usage
+limit for what a script catches faster. The move itself was done and checked
+by script, with the validator, the compiler and a path-resolution check as
+the gates.
+
 ## How outputs were reviewed
 
 Every run writes its decisions to machine logs (`decisions.json`,
@@ -556,7 +575,7 @@ were carried forward in writing rather than dropped.
 - The refuted Scrublet/AT0 over-removal claim, with both rounds of the test:
   [`docs/DOUBLETS_AND_SCRUBLET.md`](docs/DOUBLETS_AND_SCRUBLET.md)
 - The three contradicted cluster annotations, flagged in
-  `analysis/GSE262927/tables/cluster_annotation_proposals.csv`
+  `Thesis/gate1_01_niethamer_2025/GSE262927/tables/cluster_annotation_proposals.csv`
 - Thresholds that never bound, doublet calls that are a ranking rather than a
   detection, and every other caveat: [`FINDINGS.md § 6`](FINDINGS.md#5--negative-results-and-self-audits)
   and the per-dataset reports

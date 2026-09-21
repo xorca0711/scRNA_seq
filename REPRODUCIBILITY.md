@@ -34,7 +34,7 @@ extract them to this layout:
 
 ```text
 raw_data/
-├── GSE262927/                         # the two original series, analysed under analysis/
+├── GSE262927/                         # the two original series; analysed under Thesis/, beside their papers
 │   ├── GSE262927_RAW/                 #   33 GSM*.h5 matrices
 │   └── GSE262927_CellMetaData.csv
 ├── GSE178360/

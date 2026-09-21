@@ -46,7 +46,7 @@ import pandas as pd
 import scipy.sparse as sp
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from pipeline_utils import (ANALYSIS, RANDOM_SEED, figure_of, free_mem, log,  # noqa: E402
+from pipeline_utils import (ANALYSIS, SERIES_DIRS, RANDOM_SEED, figure_of, free_mem, log,  # noqa: E402
                             mem_report, save_fig, setup_matplotlib)
 
 warnings.filterwarnings("ignore")
@@ -58,7 +58,7 @@ import scanpy as sc  # noqa: E402
 sc.settings.verbosity = 1
 np.random.seed(RANDOM_SEED)
 
-OUT = ANALYSIS / "GSE262927" / "regeneration_focus"
+OUT = SERIES_DIRS["GSE262927"] / "regeneration_focus"
 FIG = OUT / "figures"
 TAB = OUT / "tables"
 
@@ -544,7 +544,7 @@ def main() -> int:
         description="Run focused alveolar-trajectory and capillary-state analyses.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
-    ap.add_argument("--src", default=str(ANALYSIS / "GSE262927" / "processed" / "final_clustered.h5ad"),
+    ap.add_argument("--src", default=str(SERIES_DIRS["GSE262927"] / "processed" / "final_clustered.h5ad"),
                     help="clustered mouse AnnData object")
     ap.add_argument("--skip-capillary", action="store_true",
                     help="do not run the capillary endothelial analysis")

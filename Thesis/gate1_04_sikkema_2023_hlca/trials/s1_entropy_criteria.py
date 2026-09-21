@@ -40,8 +40,8 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[2]
-MOUSE = REPO / "analysis" / "GSE262927"
-HUMAN = REPO / "analysis" / "GSE178360"
+MOUSE = REPO / "Thesis" / "gate1_01_niethamer_2025" / "GSE262927"
+HUMAN = REPO / "Thesis" / "ungated_murthy_2022" / "GSE178360"
 
 RULES = {
     "label_entropy_high": 0.56,
@@ -173,11 +173,11 @@ def main() -> None:
     m_by_sample = read_matrix(MOUSE / "tables" / "cluster_by_sample_counts.csv", "sample_id")
     m_total = {c: sum(cols.values()) for c, cols in transpose(m_by_sample).items()}
     result["inputs"] += [
-        "analysis/GSE262927/tables/cluster_vs_author_celltype_counts.csv",
-        "analysis/GSE262927/tables/cluster_by_sample_counts.csv",
-        "analysis/GSE262927/tables/cluster_annotation_proposals.csv",
-        "analysis/GSE262927/regeneration_focus/tables/transitional_abundance_per_sample.csv",
-        "analysis/GSE262927/lineage_tracing_cohort/tables/icap_tracing_by_cre_line.csv",
+        "Thesis/gate1_01_niethamer_2025/GSE262927/tables/cluster_vs_author_celltype_counts.csv",
+        "Thesis/gate1_01_niethamer_2025/GSE262927/tables/cluster_by_sample_counts.csv",
+        "Thesis/gate1_01_niethamer_2025/GSE262927/tables/cluster_annotation_proposals.csv",
+        "Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/tables/transitional_abundance_per_sample.csv",
+        "Thesis/gate1_01_niethamer_2025/GSE262927/lineage_tracing_cohort/tables/icap_tracing_by_cre_line.csv",
     ]
     m_label = label_entropy_table(m_counts, m_total)
     strata = mouse_strata()
@@ -209,7 +209,7 @@ def main() -> None:
 
     # ---------------------------------------------------------------- human
     h_by_sample = read_matrix(HUMAN / "tables" / "cluster_by_sample_counts.csv", "sample_id")
-    result["inputs"].append("analysis/GSE178360/tables/cluster_by_sample_counts.csv")
+    result["inputs"].append("Thesis/ungated_murthy_2022/GSE178360/tables/cluster_by_sample_counts.csv")
     h_donor = donor_entropy_table(h_by_sample, {s: "three_healthy_donors" for s in h_by_sample})
     result["datasets"]["GSE178360"] = {
         "n_clusters": len({c for cols in h_by_sample.values() for c in cols}),

@@ -62,12 +62,14 @@ Rows marked pending await the owner's retain or reject decision recorded in
 
 Every deposit the log has opened, with the study it came from and where in
 this repository it was read. Deposits are analysed under the roadmap paper
-that motivated them; the two original series sit under `analysis/`.
+that motivated them. The two series that predate the roadmap sit beside their
+source papers too: GSE262927 under paper 1, and GSE178360 under a folder for
+its source paper, which is outside the reading list.
 
 | Accession | Species and design | Source study | Read under | Unit and ceiling |
 |---|---|---|---|---|
-| [GSE262927](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262927) | mouse, respiratory-virus (H1N1) injury time course, uninjured to 366 dpi, 33 samples, 162,175 cells | Niethamer et al., *Cell Stem Cell* 2025 | [`analysis/GSE262927/`](analysis/GSE262927/README.md), [Stage 1 follow-ups](Thesis/gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md), [HLCA trials S4, S5](Thesis/gate1_04_sikkema_2023_hlca/ANALYSIS_TRIAL_PLAN.md) | animal; 2 per active-repair day, 8 at 42 dpi |
-| [GSE178360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178360) | human, healthy distal lung, 3 donors, 27,729 cells | Kadur Lakshminarasimha Murthy et al., *Nature* 2022 | [`analysis/GSE178360/`](analysis/GSE178360/README.md), [HLCA trials S1 to S3](Thesis/gate1_04_sikkema_2023_hlca/ANALYSIS_TRIAL_PLAN.md) | donor; 3 |
+| [GSE262927](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262927) | mouse, respiratory-virus (H1N1) injury time course, uninjured to 366 dpi, 33 samples, 162,175 cells | Niethamer et al., *Cell Stem Cell* 2025 | [`Thesis/gate1_01_niethamer_2025/GSE262927/`](Thesis/gate1_01_niethamer_2025/GSE262927/README.md), [Stage 1 follow-ups](Thesis/gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md), [HLCA trials S4, S5](Thesis/gate1_04_sikkema_2023_hlca/ANALYSIS_TRIAL_PLAN.md) | animal; 2 per active-repair day, 8 at 42 dpi |
+| [GSE178360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178360) | human, healthy distal lung, 3 donors, 27,729 cells | Kadur Lakshminarasimha Murthy et al., *Nature* 2022 | [`Thesis/ungated_murthy_2022/GSE178360/`](Thesis/ungated_murthy_2022/GSE178360/README.md), [HLCA trials S1 to S3](Thesis/gate1_04_sikkema_2023_hlca/ANALYSIS_TRIAL_PLAN.md) | donor; 3 |
 | [GSE145031](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE145031) | mouse, AT2 lineage-traced epithelium, PBS and bleomycin day 14 and 28, 6 libraries | Choi et al., *Cell Stem Cell* 2020 | [trials D0 to D7](Thesis/gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md) | one library per condition; six matrices are raw barcode whitelists |
 | [GSE144468](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144468) | mouse, AT2 organoids with and without IL-1beta, 2 libraries | Choi et al., *Cell Stem Cell* 2020 | [trials D5, D5b](Thesis/gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md) | one library per arm |
 | [GSE316241](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316241), [GSE316243](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316243), [GSE316244](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316244) | mouse, Confetti against Red2Kras mesenchyme and niche, and the Areg-flox arm; 8 libraries, 3 mice pooled each | Cardoso, Lee et al., *Nature* 2026 | [trials C0 to C2b, C5 to C11, C13](Thesis/gate2_05_cardoso_2026/trials/README.md) | one library per genotype; nothing between genotypes is testable |
@@ -111,7 +113,7 @@ cannot answer a co-occurrence question. Every opened deposit's citation is in
 | Who decided what, and what was rejected? | [`DEVELOPMENT.md`](DEVELOPMENT.md) |
 | Current state, known issues, pending decisions | [`PROGRESS.md`](PROGRESS.md) |
 | Machine context for AI sessions | [`AI_CONTEXT.md`](AI_CONTEXT.md) |
-| Per-dataset reports, figures, QC for the two original series | [`analysis/GSE262927/`](analysis/GSE262927/README.md), [`analysis/GSE178360/`](analysis/GSE178360/README.md) |
+| Per-dataset reports, figures, QC for the two original series | [`Thesis/gate1_01_niethamer_2025/GSE262927/`](Thesis/gate1_01_niethamer_2025/GSE262927/README.md), [`Thesis/ungated_murthy_2022/GSE178360/`](Thesis/ungated_murthy_2022/GSE178360/README.md) |
 | What was displaced and why | [`archive/`](archive/DISPLACED.md) |
 
 ## Repository map
@@ -127,19 +129,20 @@ AI_CONTEXT.md                machine-oriented context for AI sessions
 REPRODUCIBILITY.md           input layout, validation tiers, re-run guide
 REFERENCES.md                every source and roadmap paper, DOIs, data accessions
 analysis/
-  GSE262927/                 mouse series: report, figures, tables, QC, focused analyses
-  GSE178360/                 human series: report, figures, tables, QC
-  figures/                   repository-level figures generated from the register
+  scripts/                   the pipeline, the focused analyses, the generators, the validator
   config/                    the one validated palette; the x86-64 environment lock
-  scripts/                   the pipeline, the focused analyses, the validator
-  LAYOUT.md                  what lives where, and why the cohorts differ
-Thesis/                      paper roadmap, one folder per paper, in reading order
-  gate1_01_niethamer_2025/     pointer to analysis/; PI-matched follow-ups and proposals
+  figures/                   repository-level figures generated from the register
+  LAYOUT.md                  what lives where, and why the mouse cohorts differ
+Thesis/                      paper roadmap, one folder per paper, in reading order; each deposit beside its paper
+  gate1_01_niethamer_2025/     PI-matched follow-ups and proposals
+    GSE262927/                   the mouse series: report, figures, tables, QC, focused analyses
   gate1_02_choi_2020/          trials D0 to D7; two branches:
     datp_epigenetics/            the transitional state in chromatin (M0 to M4)
     axin2_il1r1/                 the paper's own closing question (A1 to A2)
   gate1_04_sikkema_2023_hlca/  reference mapping to the HLCA (S1 to S5)
   gate2_05_cardoso_2026/       early fibrotic niches (C0 to C14, E1 to E6)
+  ungated_murthy_2022/         a source paper outside the roadmap; pointer note only
+    GSE178360/                   the human series: report, figures, tables, QC
 docs/                        rationale, background, generated pipeline record, source-study notes
 archive/                     displaced material: what moved, when, and why
 ```
@@ -193,6 +196,17 @@ multiome trials need the emulated x86-64 environment described in
 Exact inputs, expected directory layout, validation tiers and the output
 contract are in [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md). Seeds are fixed at 0
 throughout.
+
+## Still open
+
+This log is not finished, and the ledger above is a state, not a conclusion.
+Of the roadmap in [`Thesis/README.md`](Thesis/README.md), papers 1, 2, 4 and 5
+have been entered; Nabhan 2018 is next, the Wagner branch has not been opened,
+and Gate 3 is paused. The proposals written against paper 1 (W1, S1, Nb1, D1,
+V1) are not run, the three semester deliverables in
+[`RESEARCH_QUESTIONS.md`](RESEARCH_QUESTIONS.md) Part D are specified and not
+started, and rows C116 to C154 await the owner's retain-or-reject review. The
+date of the state is in [`PROGRESS.md`](PROGRESS.md).
 
 ## Source studies
 

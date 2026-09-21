@@ -1,6 +1,6 @@
 
 =====================================================
-scRNA-seq ANALYSIS COMPLETE — GSE262927
+scRNA-seq ANALYSIS COMPLETE: GSE262927
 =====================================================
 
 RAW DATA
@@ -24,15 +24,15 @@ Leiden resolution:0.3
 Final clusters:   29
 
 MAIN OUTPUTS
-Cluster UMAP:               analysis/GSE262927/figures/umap/UMAP_leiden_clusters.pdf
-Sample UMAP:                analysis/GSE262927/figures/umap/UMAP_sample.pdf
-Canonical marker dot plot:  analysis/GSE262927/figures/dotplots/canonical_marker_dotplot.pdf
-Cluster-marker dot plot:    analysis/GSE262927/figures/dotplots/cluster_marker_dotplot.pdf
-Cluster marker table:       analysis/GSE262927/tables/cluster_markers_all.csv
-Cell metadata:              analysis/GSE262927/tables/cell_metadata.csv
-Final processed object:     analysis/GSE262927/processed/final_clustered.h5ad
+Cluster UMAP:               Thesis/gate1_01_niethamer_2025/GSE262927/figures/umap/UMAP_leiden_clusters.pdf
+Sample UMAP:                Thesis/gate1_01_niethamer_2025/GSE262927/figures/umap/UMAP_sample.pdf
+Canonical marker dot plot:  Thesis/gate1_01_niethamer_2025/GSE262927/figures/dotplots/canonical_marker_dotplot.pdf
+Cluster-marker dot plot:    Thesis/gate1_01_niethamer_2025/GSE262927/figures/dotplots/cluster_marker_dotplot.pdf
+Cluster marker table:       Thesis/gate1_01_niethamer_2025/GSE262927/tables/cluster_markers_all.csv
+Cell metadata:              Thesis/gate1_01_niethamer_2025/GSE262927/tables/cell_metadata.csv
+Final processed object:     Thesis/gate1_01_niethamer_2025/GSE262927/processed/final_clustered.h5ad
 Analysis script:            analysis/scripts/run_scrna_analysis.py
-README:                     analysis/GSE262927/README.md
+README:                     Thesis/gate1_01_niethamer_2025/GSE262927/README.md
 
 EPITHELIAL SUBANALYSIS:
 performed on 13333 cells from clusters ['10', '16', '18', '19']; 16 epithelial subclusters at Leiden resolution 0.6

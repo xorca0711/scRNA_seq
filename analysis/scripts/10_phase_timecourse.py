@@ -8,7 +8,7 @@ first (2 to 6 dpi), epithelium and mesenchyme second (7 to 15 dpi), endothelium
 last (14 to 22 dpi), with every lineage back at baseline by 21 to 28 dpi (their
 Figures 1 and 2). This script asks whether that phase structure is visible in
 the reanalysed atlas using only the tracked per-cell metadata table
-(analysis/GSE262927/tables/cell_metadata.csv). No expression matrix is read
+(Thesis/gate1_01_niethamer_2025/GSE262927/tables/cell_metadata.csv). No expression matrix is read
 and nothing is re-embedded.
 
 Three readouts, all per animal:
@@ -45,11 +45,11 @@ import pandas as pd
 sys.stdout.reconfigure(encoding="utf-8")
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from focus_utils import RunRecord, df_to_markdown, strip_by_day  # noqa: E402
-from pipeline_utils import ANALYSIS, RANDOM_SEED, save_fig, setup_matplotlib  # noqa: E402
+from pipeline_utils import ANALYSIS, SERIES_DIRS, RANDOM_SEED, save_fig, setup_matplotlib  # noqa: E402
 
 plt = setup_matplotlib()
 
-SERIES = ANALYSIS / "GSE262927"
+SERIES = SERIES_DIRS["GSE262927"]
 META = SERIES / "tables" / "cell_metadata.csv"
 OUT = SERIES / "phase_timecourse"
 FIG = OUT / "figures"
@@ -73,7 +73,7 @@ PAPER_PEAK_DAYS = {"Myeloid": [6], "Lymphoid": [6], "Epithelium": [11, 19],
                    "Mesenchyme": [11, 19], "Endothelium": [19, 25]}
 
 RULES = {
-    "input": "analysis/GSE262927/tables/cell_metadata.csv (tracked per-cell metadata and atlas "
+    "input": "Thesis/gate1_01_niethamer_2025/GSE262927/tables/cell_metadata.csv (tracked per-cell metadata and atlas "
              "UMAP coordinates written by run_scrna_analysis.py); no expression data are read",
     "cohort": "has_author_metadata == True: the 25-sample Ki67 atlas. The 8 pre-labelled tracing "
               "samples carry no day post infection and are excluded",

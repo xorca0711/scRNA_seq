@@ -163,7 +163,7 @@ NOT_PERFORMED = [
      "It WAS run in the focused re-analysis "
      "(analysis/scripts/06_regeneration_focus.py): PAGA topology plus "
      "diffusion pseudotime rooted in AT2, on the 25-sample annotated cohort. "
-     "See analysis/GSE262927/regeneration_focus/."),
+     "See Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/."),
     ("Trajectory-based differential expression", "tradeSeq",
      "Not run; marker programmes are summarised along pseudotime bins in the "
      "focused re-analysis, but no formal trajectory-DE model was fitted."),

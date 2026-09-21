@@ -21,6 +21,13 @@ import pandas as pd
 REPO = Path(__file__).resolve().parents[2]
 RAW = REPO / "raw_data"
 ANALYSIS = REPO / "analysis"
+# Each series lives beside the paper that produced it, under Thesis/, since
+# 2026-09-21; analysis/ holds the shared pipeline, its config and the
+# repository-level figures only. See analysis/LAYOUT.md.
+SERIES_DIRS = {
+    "GSE262927": REPO / "Thesis" / "gate1_01_niethamer_2025" / "GSE262927",
+    "GSE178360": REPO / "Thesis" / "ungated_murthy_2022" / "GSE178360",
+}
 
 RANDOM_SEED = 0
 
@@ -50,11 +57,11 @@ def gse262927(outdir: Path | None = None) -> DatasetConfig:
         raw_dir=RAW / "GSE262927" / "GSE262927_RAW",
         h5_glob="GSM*.h5",
         species="mouse",
-        # Each series owns a subdirectory, so the two are symmetric and nothing
-        # at the top level of analysis/ is series-specific. This departs from
-        # the canonical paths in the original brief (analysis/figures/...,
-        # analysis/processed/final_clustered.h5ad); see analysis/LAYOUT.md.
-        outdir=outdir or (ANALYSIS / "GSE262927"),
+        # The series lives beside its source paper under Thesis/. The original
+        # brief put its outputs at analysis/figures/... and
+        # analysis/processed/final_clustered.h5ad; they moved once to
+        # Thesis/gate1_01_niethamer_2025/GSE262927/ and once more here. See analysis/LAYOUT.md.
+        outdir=outdir or SERIES_DIRS["GSE262927"],
         sample_regex=r"^GSM\d+_(.+)\.h5$",
         metadata_csv=RAW / "GSE262927" / "GSE262927_CellMetaData.csv",
         non_gene_features=["SiteA", "SiteB"],
@@ -76,7 +83,7 @@ def gse178360(outdir: Path | None = None) -> DatasetConfig:
         # note the missing underscore in GSM5388413_DD073Rfiltered_...
         h5_glob="GSM*filtered_feature_bc_matrix.h5",
         species="human",
-        outdir=outdir or (ANALYSIS / "GSE178360"),
+        outdir=outdir or SERIES_DIRS["GSE178360"],
         sample_regex=r"^GSM\d+_(.+?)_?filtered_feature_bc_matrix\.h5$",
         metadata_csv=None,
         non_gene_features=[],

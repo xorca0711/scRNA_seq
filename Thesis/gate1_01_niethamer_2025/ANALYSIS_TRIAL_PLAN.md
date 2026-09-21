@@ -23,13 +23,13 @@ epithelial repair), DuPage (Treg stability and plasticity).
 
 | Step | Question | Evidence and rule | Artefact | Status |
 |---|---|---|---|---|
-| 0.1 | What is in the deposit, and what QC does each library need | Raw-data scan; per-sample MAD thresholds with recorded rationales; Scrublet per capture | `analysis/raw_data_inventory.*`, `analysis/GSE262927/qc/` | Validated (counts checked by `validate_repository.py`) |
-| 0.2 | Does blind clustering recover the deposited cell types | 162,175 cells, 29 Leiden clusters, no batch correction (root decision 2); deposited labels held out and used only as an answer key | `analysis/GSE262927/figures/umap/`, `tables/cluster_vs_author_celltype_fraction.csv` | Validated (median purity 0.947) |
+| 0.1 | What is in the deposit, and what QC does each library need | Raw-data scan; per-sample MAD thresholds with recorded rationales; Scrublet per capture | `analysis/raw_data_inventory.*`, `Thesis/gate1_01_niethamer_2025/GSE262927/qc/` | Validated (counts checked by `validate_repository.py`) |
+| 0.2 | Does blind clustering recover the deposited cell types | 162,175 cells, 29 Leiden clusters, no batch correction (root decision 2); deposited labels held out and used only as an answer key | `Thesis/gate1_01_niethamer_2025/GSE262927/figures/umap/`, `tables/cluster_vs_author_celltype_fraction.csv` | Validated (median purity 0.947) |
 | 0.3 | Where does a marker-panel annotation fail | 3 of 29 candidate annotations contradicted by the labels and kept on display | `tables/cluster_annotation_proposals.csv` | Validated, negative result kept |
-| 0.4 | Which epithelial states are present | Epithelial sub-analysis, 16 subclusters | `analysis/GSE262927/epithelial_subanalysis/` | Descriptive only |
-| 0.5a | Is the AT2 to Krt8-high transitional to AT1 axis a real ordering | PAGA plus diffusion pseudotime rooted in AT2 on the 25-sample cohort; labels held out | `analysis/GSE262927/regeneration_focus/` | displaced to [`archive/DISPLACED.md`](../../archive/DISPLACED.md) (established elsewhere); artefacts unchanged |
-| 0.5b | Does the injury capillary state resolve | Capillary subset reclustered within compartment; per-animal abundance by day | `analysis/GSE262927/regeneration_focus/` | Validated (iCAP 2.0% at baseline to 37.5% at 25 dpi to 21.7% at 366 dpi; has not resolved by 366 dpi) |
-| 0.6 | Where does the injury capillary state come from | 8-sample Cre cohort; trace rule reproduces the deposited calls at 100% | `analysis/GSE262927/lineage_tracing_cohort/` | Validated for the Kit line (33 to 53% per animal); CAP2 lines uninformative |
+| 0.4 | Which epithelial states are present | Epithelial sub-analysis, 16 subclusters | `Thesis/gate1_01_niethamer_2025/GSE262927/epithelial_subanalysis/` | Descriptive only |
+| 0.5a | Is the AT2 to Krt8-high transitional to AT1 axis a real ordering | PAGA plus diffusion pseudotime rooted in AT2 on the 25-sample cohort; labels held out | `Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/` | displaced to [`archive/DISPLACED.md`](../../archive/DISPLACED.md) (established elsewhere); artefacts unchanged |
+| 0.5b | Does the injury capillary state resolve | Capillary subset reclustered within compartment; per-animal abundance by day | `Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/` | Validated (iCAP 2.0% at baseline to 37.5% at 25 dpi to 21.7% at 366 dpi; has not resolved by 366 dpi) |
+| 0.6 | Where does the injury capillary state come from | 8-sample Cre cohort; trace rule reproduces the deposited calls at 100% | `Thesis/gate1_01_niethamer_2025/GSE262927/lineage_tracing_cohort/` | Validated for the Kit line (33 to 53% per animal); CAP2 lines uninformative |
 | 0.7 | Can the whole thing be checked without data | Generated reports, pipeline record, validator, CI | `docs/PIPELINE_AS_RUN.md`, `REPRODUCIBILITY.md` | done |
 
 Stage 0 answered the paper's epithelial and endothelial claims (the epithelial
@@ -60,7 +60,7 @@ grading and for descriptive composition.
   deposited cell-cycle call agrees for 1 of 5 and is reported as a cross-check
   only. Per-day atlas UMAP with equal cell numbers per panel; per-animal
   composition within compartment.
-- **Artefacts.** [`analysis/GSE262927/phase_timecourse/`](../../analysis/GSE262927/phase_timecourse/README.md)
+- **Artefacts.** [`Thesis/gate1_01_niethamer_2025/GSE262927/phase_timecourse/`](GSE262927/phase_timecourse/README.md)
 - **Status.** Descriptive only; owner review pending (PROGRESS item 18).
 
 ### N2. Myeloid compartment by day (script 11)
@@ -78,7 +78,7 @@ grading and for descriptive composition.
   subclusters (48% at Leiden 0.2, 92% at 1.0). aMAC 30.8% to 4.6% at 6 dpi to
   49.0% at 42 dpi; iMON 1.9% to 56.0% to 1.8%. Consistent with Figure 3.
   Interstitial macrophages keep rising through 90 dpi (candidate only).
-- **Artefacts.** [`analysis/GSE262927/myeloid_focus/`](../../analysis/GSE262927/myeloid_focus/README.md)
+- **Artefacts.** [`Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/`](GSE262927/myeloid_focus/README.md)
 - **Status.** Descriptive only; owner review pending (PROGRESS item 19).
 
 ### N3. Origin of the rebuilt alveolar macrophage pool, trace only (script 12)
@@ -101,7 +101,7 @@ grading and for descriptive composition.
   window, so both checks are Not established under the frozen floor; the
   per-animal values (early windows label subcluster 2 more than subcluster 3
   by 28 to 33 points, late windows the reverse) are reported descriptively.
-- **Artefacts.** [`analysis/GSE262927/myeloid_focus/amac_origin/`](../../analysis/GSE262927/myeloid_focus/amac_origin/README.md)
+- **Artefacts.** [`Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/`](GSE262927/myeloid_focus/amac_origin/README.md)
 - **Status.** Window contribution Descriptive only; the two checks Not
   established; owner review pending (PROGRESS item 20).
 
@@ -124,7 +124,7 @@ grading and for descriptive composition.
   survival rule selected the 11 to 19 dpi monocyte state instead of the 6 dpi
   one; the first-run outcome is kept and a post hoc definition anchored on
   the 6 dpi cells is reported alongside (DEVELOPMENT decision 16).
-- **Artefacts.** [`analysis/GSE262927/myeloid_focus/batch_sensitivity/`](../../analysis/GSE262927/myeloid_focus/batch_sensitivity/README.md)
+- **Artefacts.** [`Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/batch_sensitivity/`](GSE262927/myeloid_focus/batch_sensitivity/README.md)
 - **Status.** Descriptive only (rule revision disclosed); owner review pending
   (PROGRESS item 21).
 

@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-20 (two branches of roadmap paper 2 on multiome deposits, an eight-adversary audit that corrected 14 register rows, the root README rewritten around a claims ledger drawn from the register, and RESEARCH_QUESTIONS.md added as the question-first entry point; see items 35 and 36). Previously 2026-09-17, 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-21 (the two original series moved into Thesis/ beside their source papers, the README left open-ended, and the owner's rule on multi-agent cost recorded; see item 37). Previously 2026-09-20 (two branches of roadmap paper 2 on multiome deposits, an eight-adversary audit that corrected 14 register rows, the root README rewritten around a claims ledger drawn from the register, and RESEARCH_QUESTIONS.md added as the question-first entry point; items 35 and 36), 2026-09-17, 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -12,7 +12,7 @@ owner's Notion PI Target Map) with the Sikkema 2023 HLCA study note, its
 decision criteria as reviewable JSON, a pipeline-framing proposal, and a
 first criteria trial on tracked tables. **Owner retain/reject review of that
 material is pending.** On 2026-09-10 two focused analyses of the source
-paper's phase structure were added under `analysis/GSE262927/`
+paper's phase structure were added under `Thesis/gate1_01_niethamer_2025/GSE262927/`
 (`phase_timecourse/` and `myeloid_focus/`, scripts 10 to 13; items 18 to
 21 below). **Owner review of those is pending too.** Later on 2026-09-10 the
 S2 trial was merged (PR #8) with the items renumbered chronologically, and
@@ -52,8 +52,8 @@ below). Nothing is running.
 | Trial S3: HLCA consensus-marker annotation of GSE178360 | **DONE (2026-09-09)**; 17 to 19 of 31 clusters agree with the blind proposals; AT0 by marker transfer Not established (scheme-dependent) |
 | Trial S4: mouse cluster 23 explained | **DONE (2026-09-09)**; low-count, ambient-like; 78% from EEM-scRNA-289 |
 | Trial S5: mouse cluster 5 subclustered and re-graded | **DONE (2026-09-09)**; resolved at Leiden 0.5 (94% of labelled cells in pure subclusters), not at 0.2 |
-| Phase-wise view of the Ki67 atlas (`analysis/GSE262927/phase_timecourse/`, script 10) | **DONE (2026-09-10), owner review pending**; per-dpi atlas UMAP, per-animal lineage composition, Ki67-trace proliferation by lineage; trace peaks fall in the paper's window for 4 of 5 lineages (Lymphoid peaks at 11 dpi, not 6); Descriptive only, from tracked metadata |
-| Myeloid compartment by dpi (`analysis/GSE262927/myeloid_focus/`, script 11) | **DONE (2026-09-10), owner review pending**; 9,997 cells from atlas clusters 5, 17, 24; 16 blind subclusters at Leiden 0.5 with 87% of labelled cells in pure subclusters; aMAC loss and iMON expansion at 6 dpi with reconstitution by 19 to 42 dpi, consistent with the paper's Figure 3; Descriptive only |
+| Phase-wise view of the Ki67 atlas (`Thesis/gate1_01_niethamer_2025/GSE262927/phase_timecourse/`, script 10) | **DONE (2026-09-10), owner review pending**; per-dpi atlas UMAP, per-animal lineage composition, Ki67-trace proliferation by lineage; trace peaks fall in the paper's window for 4 of 5 lineages (Lymphoid peaks at 11 dpi, not 6); Descriptive only, from tracked metadata |
+| Myeloid compartment by dpi (`Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/`, script 11) | **DONE (2026-09-10), owner review pending**; 9,997 cells from atlas clusters 5, 17, 24; 16 blind subclusters at Leiden 0.5 with 87% of labelled cells in pure subclusters; aMAC loss and iMON expansion at 6 dpi with reconstitution by 19 to 42 dpi, consistent with the paper's Figure 3; Descriptive only |
 | Alveolar macrophage origin by Ki67 trace window (`myeloid_focus/amac_origin/`, script 12) | **DONE (2026-09-10), owner review pending**; the 2 to 3 dpi window labels most of the 42 dpi aMAC pool (median 79.7%); marrow-inheritance and two-source checks Not established under the 30-cell floor |
 | Batch sensitivity of the myeloid embedding, Harmony on infection round (`myeloid_focus/batch_sensitivity/`, script 13) | **DONE (2026-09-10), owner review pending**; rounds already mix within every tested day (enrichment 1.11 to 1.46, threshold 2); the 6 dpi iMON state survives correction as its own subcluster (92% of cells from 6 dpi, 77% and 74% of each animal's iMON cells); the frozen survival rule selected the wrong subcluster and the revision is disclosed |
 | Trial S2 merged into main; PROGRESS and DEVELOPMENT renumbered chronologically | **DONE (2026-09-10, PR #8)** |
@@ -295,9 +295,10 @@ labelled cells.
    `archive/portfolio_2026-08/`; the Krt8-high transitional narrative
    (FINDINGS section 1, the human KRT8 reference-aligned panels) moved to
    `archive/DISPLACED.md` because it is established elsewhere (the owner's
-   G-SURF submission). Their artefacts and scripts stay under `analysis/`
-   because the validator checks their numbers and the scripts regenerate
-   them; only the narrative moved. The CI workflow and validator were
+   G-SURF submission). Their artefacts and scripts stay in place
+   (then under `analysis/`; the artefacts moved with their series to `Thesis/`
+   on 2026-09-21, item 37) because the validator checks their numbers and the
+   scripts regenerate them; only the narrative moved. The CI workflow and validator were
    renamed (`repository-checks.yml`, `validate_repository.py`), the paper's
    own workflow document moved to `docs/WORKFLOW_Niethamer2025.md`, and the
    README now opens with the claims table and names H1N1 once as the injury
@@ -866,6 +867,40 @@ labelled cells.
    - Owner retain/reject review pending on rows C116 to C154 and on the
      outreach framing of `RESEARCH_QUESTIONS.md`.
 
+37. **The two original series moved beside their source papers, and the
+   README left open** (2026-09-21, owner instruction).
+   - `analysis/GSE262927/` is now `Thesis/gate1_01_niethamer_2025/GSE262927/`
+     and `analysis/GSE178360/` is `Thesis/ungated_murthy_2022/GSE178360/`. The
+     rule is one folder per paper with each deposit beside the paper that
+     produced it. Murthy 2022 is outside the roadmap and unread, so its folder
+     carries a pointer note, not a study note (decision 23 still applies).
+     `analysis/` keeps the shared pipeline, config, repository-level figures
+     and the raw-data inventory; `pipeline_utils.SERIES_DIRS` is the one place
+     the two locations are written. 373 files renamed; the 25 figure PDFs of
+     the reference-aligned panels had to be force-added again at the new path
+     because `*.pdf` is ignored.
+   - Rewired by script, not by hand: every local Markdown link that crossed
+     the boundary re-relativised, every prose path and script constant
+     rewritten, `.gitignore` given the same regenerable-output rules under
+     `Thesis/`, the validator's JSON sweep extended to `Thesis/`, and the
+     report generator's path anchor taught the new root. Run records and logs
+     written before the move keep the paths of their day; they are artefacts,
+     not pointers. The archived portfolio script is not maintained and says
+     so at the top of `archive/DISPLACED.md`.
+   - The generated series reports and `docs/PIPELINE_AS_RUN.md` were
+     regenerated. In doing so the report generator's twelve em-dashes, in the
+     tracked reports since Stage 0 against the house rule, were replaced; the
+     reports differ from their previous versions in paths and those characters
+     only.
+   - The root README gained a "Still open" section so it reads as a log in
+     progress: papers 1, 2, 4 and 5 entered, Nabhan next, the Wagner branch
+     unopened, Gate 3 paused, the paper-1 proposals and the Part D
+     deliverables not run, rows C116 to C154 under review.
+   - Owner instruction recorded in `AI_CONTEXT.md` and in the cross-project
+     harness rules: weigh the cost before launching a multi-agent workflow;
+     scripts for the deterministic part, agents only where a script cannot
+     judge, at most three lenses. This move was done and checked by script.
+
 ---
 
 ## Handoff: session of 2026-09-15, paper 2 entered and run
@@ -1202,8 +1237,8 @@ at a time.
 
 ## Directory layout
 
-`analysis/` is split by series: `analysis/GSE262927/` (mouse) and
-`analysis/GSE178360/` (human), with `scripts/`, `requirements.txt` and
+`analysis/` is split by series: `Thesis/gate1_01_niethamer_2025/GSE262927/` (mouse) and
+`Thesis/ungated_murthy_2022/GSE178360/` (human), with `scripts/`, `requirements.txt` and
 `raw_data_inventory.*` shared at the top level. This departs from the canonical
 paths in the original brief, which put the mouse outputs at the top level - see
 `analysis/LAYOUT.md` for the mapping and for why the three mouse analyses

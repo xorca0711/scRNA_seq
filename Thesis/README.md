@@ -31,7 +31,7 @@ remodelling after inflammatory injury?
 
 | # | Gate | Paper | DOI | PMID | Role in the roadmap | Folder | Study note | Analysis trial |
 |--:|---|---|---|---|---|---|---|---|
-| 1 | 1 | Niethamer et al. 2025, *Cell Stem Cell* | [10.1016/j.stem.2024.12.002](https://doi.org/10.1016/j.stem.2024.12.002) | 39818203 | source paper for GSE262927: animals, time points, annotations, known findings, limits | [`gate1_01_niethamer_2025/`](gate1_01_niethamer_2025/README.md) | done (in `docs/`) | done (`analysis/GSE262927/`); PI-matched follow-ups N1 to N4 run 2026-09-10, Descriptive only, owner review pending: [`ANALYSIS_TRIAL_PLAN.md`](gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md) |
+| 1 | 1 | Niethamer et al. 2025, *Cell Stem Cell* | [10.1016/j.stem.2024.12.002](https://doi.org/10.1016/j.stem.2024.12.002) | 39818203 | source paper for GSE262927: animals, time points, annotations, known findings, limits | [`gate1_01_niethamer_2025/`](gate1_01_niethamer_2025/README.md) | done (in `docs/`) | done (`Thesis/gate1_01_niethamer_2025/GSE262927/`); PI-matched follow-ups N1 to N4 run 2026-09-10, Descriptive only, owner review pending: [`ANALYSIS_TRIAL_PLAN.md`](gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md) |
 | 2 | 1 | Choi et al. 2020, *Cell Stem Cell* | [10.1016/j.stem.2020.06.020](https://doi.org/10.1016/j.stem.2020.06.020) | 32750316 | biological spine: IL-1beta/HIF1alpha-driven AT2 to DATP to AT1 transition | [`gate1_02_choi_2020/`](gate1_02_choi_2020/README.md) (re-entered 2026-09-15 at the owner's direction after reading, decision 23; the AI-written note of 2026-09-13 was withdrawn first and stays in git history, PR #19) | done (2026-09-15, owner-directed) | trials D0 to D7 run 2026-09-15 with a corrected annotation pass D2b beside D2; Gate 1 not fully recovered from the deposit (four of five states; primed AT2 never assigned as a cluster); Descriptive only, owner review pending: [`ANALYSIS_TRIAL_PLAN.md`](gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md). Two branches opened 2026-09-20 on other laboratories' multiome deposits, because this paper's ATAC deposit is coverage tracks only: [`datp_epigenetics/`](gate1_02_choi_2020/datp_epigenetics/README.md) (M0 to M4; one validated deposit error, the chromatin question Not established with a direction) and [`axin2_il1r1/`](gate1_02_choi_2020/axin2_il1r1/README.md) (this paper's own closing Discussion question; assessed, two routes run and refused). Rows C116 to C154 |
 | 3 | 1 | Nabhan et al. 2018, *Science* | [10.1126/science.aam6603](https://doi.org/10.1126/science.aam6603) | 29420258 | fibroblast Wnt niches maintain AT2 stemness; niche exit permits AT1 differentiation | **next** (re-ranking 2026-09-15: Nabhan is a placement target and the only one with no module built) | not started | proposal Nb1 in [`gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md`](gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md) (Stage 2) is the trial this paper motivates; not run |
 | 4 | 1 | Sikkema et al. 2023, *Nature Medicine* (HLCA) | [10.1038/s41591-023-02327-2](https://doi.org/10.1038/s41591-023-02327-2) | 37291214 | reference framework: annotation hierarchy, reference mapping, uncertainty handling, donor coverage, shared profibrotic macrophage states | [`gate1_04_sikkema_2023_hlca/`](gate1_04_sikkema_2023_hlca/README.md) | done, owner review pending | S1 to S5 run (Descriptive only); see [`ANALYSIS_TRIAL_PLAN.md`](gate1_04_sikkema_2023_hlca/ANALYSIS_TRIAL_PLAN.md) |
@@ -75,7 +75,7 @@ Outside the roadmap but already in the repository: Kadur Lakshminarasimha
 Murthy et al. 2022, *Nature* (DOI
 [10.1038/s41586-022-04541-3](https://doi.org/10.1038/s41586-022-04541-3),
 PMID 35355018), the source paper for GSE178360, analysed in
-[`../analysis/GSE178360/`](../analysis/GSE178360/README.md). The HLCA lists
+[`Thesis/ungated_murthy_2022/GSE178360/`](ungated_murthy_2022/GSE178360/README.md). The HLCA lists
 that series as one of its extension datasets (Tata_unpubl), which is why the
 Sikkema trial S2 targets it.
 
@@ -127,6 +127,9 @@ Thesis/
     PIPELINE_FRAMING.md           (when a paper is a methods reference) what this repository adopts, adapts, declines
     ANALYSIS_TRIAL_PLAN.md        pre-registered trial(s): rule, threshold, dataset, success and failure criteria, outcome
     trials/                       trial scripts and their logged artefacts (small tables and JSON are tracked)
+    <accession>/                  the deposit itself, when this paper produced it (paper 1 holds GSE262927)
+  ungated_firstauthor_year/       a source paper outside the roadmap, made only to hold its deposit beside it
+    README.md                     a pointer note, not a study note; the study note waits for the reading (Murthy 2022 holds GSE178360)
 ```
 
 Status vocabulary is the one used in the root README claims table:

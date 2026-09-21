@@ -1,5 +1,12 @@
 # Displaced narrative: established elsewhere
 
+> Location note, 2026-09-21: the two series' artefacts moved from `analysis/`
+> to `Thesis/gate1_01_niethamer_2025/GSE262927/` and
+> `Thesis/ungated_murthy_2022/GSE178360/`, beside their source papers. The
+> links below were retargeted so they resolve; the prose and the archived
+> script `portfolio_2026-08/09_write_portfolio_pdf.py` keep the paths of
+> their day and are not maintained.
+
 The material below was part of the repository's main findings (`FINDINGS.md`)
 until 2026-09-10. It is established outside this repository, in the owner's
 G-SURF submission, which is weighted toward the Krt8-high transitional
@@ -11,7 +18,7 @@ recorded here so this page stays true: the primary-marker panels for KRT8,
 CLDN4, KRT17 and SFN by retained epithelial cluster were landed on main
 ([PR #12](https://github.com/xorca0711/scRNA_seq/pull/12)), adding a dotplot, a
 violin panel and a per-cluster table to
-`analysis/GSE178360/epithelial_subanalysis/figures/reference_aligned/`. That is
+`Thesis/ungated_murthy_2022/GSE178360/epithelial_subanalysis/figures/reference_aligned/`. That is
 a descriptive extension of displaced material by owner decision. The two things
 that were open when it landed are now closed. The figures were redrawn on the
 repository's one validated palette, which moved to
@@ -32,7 +39,7 @@ injury. Re-derived here on the 25-sample annotated cohort
 (5,694 alveolar epithelial cells) with PAGA topology and diffusion pseudotime
 rooted in AT2:
 
-![Alveolar pseudotime](../analysis/GSE262927/regeneration_focus/figures/UMAP_alveolar_pseudotime.png)
+![Alveolar pseudotime](../Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/figures/UMAP_alveolar_pseudotime.png)
 
 With the deposited labels held out, pseudotime orders them exactly as the
 model predicts: **AT2 0.013 → transitional 0.179 → AT1/AT2 0.237 → AT1
@@ -41,9 +48,9 @@ like a true intermediate in time as well: the **median per-animal proportion**
 peaks at **27.4% of alveolar epithelium at 11 dpi** and collapses to **0.3% by
 366 dpi**.
 
-![Transitional state time course](../analysis/GSE262927/regeneration_focus/figures/transitional_timecourse.png)
+![Transitional state time course](../Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/figures/transitional_timecourse.png)
 
-Detail: [`analysis/GSE262927/regeneration_focus/`](../analysis/GSE262927/regeneration_focus/) ·
+Detail: [`Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/`](../Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/) ·
 script [`06_regeneration_focus.py`](../analysis/scripts/06_regeneration_focus.py)
 
 ## 2. Human epithelial states in the reference orientation
@@ -66,14 +73,14 @@ labels. In particular, Leiden 4 is separated as the thesis-relevant
 candidate. Reference states not separately resolved by this embedding are
 listed on the figure rather than invented.
 
-![Reference-oriented human epithelial UMAP](../analysis/GSE178360/epithelial_subanalysis/figures/reference_aligned/epithelial_UMAP_proposed_reference_aligned.png)
+![Reference-oriented human epithelial UMAP](../Thesis/ungated_murthy_2022/GSE178360/epithelial_subanalysis/figures/reference_aligned/epithelial_UMAP_proposed_reference_aligned.png)
 
 The primary feature panel uses the identical cells and display transform for
 `KRT8`, `CLDN4`, `KRT17` and `SFN`. Separate epithelial reference-marker and
 off-compartment control panels are provided alongside individual high-resolution
 plots under `epithelial_subanalysis/figures/reference_aligned/`.
 
-![Reference-oriented primary epithelial markers](../analysis/GSE178360/epithelial_subanalysis/figures/reference_aligned/epithelial_featureplots_KRT8_CLDN4_KRT17_SFN_reference_aligned.png)
+![Reference-oriented primary epithelial markers](../Thesis/ungated_murthy_2022/GSE178360/epithelial_subanalysis/figures/reference_aligned/epithelial_featureplots_KRT8_CLDN4_KRT17_SFN_reference_aligned.png)
 
 ## 3. Portfolio PDF
 

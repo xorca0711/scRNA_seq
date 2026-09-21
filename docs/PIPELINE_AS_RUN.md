@@ -35,7 +35,7 @@ The raw (unfiltered) droplet matrices needed for SoupX are present for GSE178360
 
 *Reference tools: Slingshot, PAGA, DPT, Monocle*
 
-Not run in the MAIN pipeline: the whole-atlas and epithelial sub-analysis outputs resolve the transitional states as clusters only. It WAS run in the focused re-analysis (analysis/scripts/06_regeneration_focus.py): PAGA topology plus diffusion pseudotime rooted in AT2, on the 25-sample annotated cohort. See analysis/GSE262927/regeneration_focus/.
+Not run in the MAIN pipeline: the whole-atlas and epithelial sub-analysis outputs resolve the transitional states as clusters only. It WAS run in the focused re-analysis (analysis/scripts/06_regeneration_focus.py): PAGA topology plus diffusion pseudotime rooted in AT2, on the 25-sample annotated cohort. See Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/.
 
 ### Trajectory-based differential expression
 
@@ -197,7 +197,7 @@ if R becomes available.
 | Non-gene features removed | ['SiteA', 'SiteB'] |
 | Gene space | inner join: 55359-55359 per sample -> 55359 shared |
 | Metadata | raw_data/GSE262927/GSE262927_CellMetaData.csv |
-| QC thresholds | per sample, MAD-derived (see `analysis/GSE262927/qc/qc_thresholds.csv`) |
+| QC thresholds | per sample, MAD-derived (see `Thesis/gate1_01_niethamer_2025/GSE262927/qc/qc_thresholds.csv`) |
 | Cells | 212,701 in -> 169,807 after QC -> 162,175 after doublet removal |
 | Doublets | Scrublet per capture, 7,632 removed |
 | Normalisation | normalize_total(target_sum=1e4) + log1p; the raw counts are preserved in processed/postQC.h5ad and re-attached as layers['counts'] of the final object |
@@ -238,8 +238,8 @@ Batch mixing statistics actually measured:
 }
 ```
 
-Full record: `analysis/GSE262927/logs/analysis_log.txt`, `analysis/GSE262927/logs/decisions.json`,
-`analysis/GSE262927/README.md`.
+Full record: `Thesis/gate1_01_niethamer_2025/GSE262927/logs/analysis_log.txt`, `Thesis/gate1_01_niethamer_2025/GSE262927/logs/decisions.json`,
+`Thesis/gate1_01_niethamer_2025/GSE262927/README.md`.
 
 
 ### GSE178360 (human, 3 samples)
@@ -252,7 +252,7 @@ Full record: `analysis/GSE262927/logs/analysis_log.txt`, `analysis/GSE262927/log
 | Non-gene features removed | none |
 | Gene space | inner join: 33538-36601 per sample -> 32732 shared |
 | Metadata | none present in this series |
-| QC thresholds | per sample, MAD-derived (see `analysis/GSE178360/qc/qc_thresholds.csv`) |
+| QC thresholds | per sample, MAD-derived (see `Thesis/ungated_murthy_2022/GSE178360/qc/qc_thresholds.csv`) |
 | Cells | 36,464 in -> 29,605 after QC -> 27,729 after doublet removal |
 | Doublets | Scrublet per capture, 1,876 removed |
 | Normalisation | normalize_total(target_sum=1e4) + log1p; the raw counts are preserved in processed/postQC.h5ad and re-attached as layers['counts'] of the final object |
@@ -293,8 +293,8 @@ Batch mixing statistics actually measured:
 }
 ```
 
-Full record: `analysis/GSE178360/logs/analysis_log.txt`, `analysis/GSE178360/logs/decisions.json`,
-`analysis/GSE178360/README.md`.
+Full record: `Thesis/ungated_murthy_2022/GSE178360/logs/analysis_log.txt`, `Thesis/ungated_murthy_2022/GSE178360/logs/decisions.json`,
+`Thesis/ungated_murthy_2022/GSE178360/README.md`.
 
 ## Execution order
 

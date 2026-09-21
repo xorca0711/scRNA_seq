@@ -22,8 +22,8 @@ Stage 0 answer rather than repeating it.
 The deposited author annotations were **held out of every clustering and
 trajectory step** and used only afterwards, as an answer key. Full methods:
 [`docs/PIPELINE_AS_RUN.md`](docs/PIPELINE_AS_RUN.md). Full per-dataset reports:
-[`analysis/GSE262927/`](analysis/GSE262927/README.md) ·
-[`analysis/GSE178360/`](analysis/GSE178360/README.md).
+[`Thesis/gate1_01_niethamer_2025/GSE262927/`](Thesis/gate1_01_niethamer_2025/GSE262927/README.md) ·
+[`Thesis/ungated_murthy_2022/GSE178360/`](Thesis/ungated_murthy_2022/GSE178360/README.md).
 
 ---
 
@@ -34,8 +34,9 @@ with its transitional time course and score) and the reference-aligned human
 epithelial panels (KRT8, CLDN4, KRT17, SFN, with the AT0 candidate subcluster)
 were part of this file until 2026-09-10 and now live in
 [`archive/DISPLACED.md`](archive/DISPLACED.md), because they are established
-outside this repository. Their artefacts and scripts stay under `analysis/` and
-are still validated; the narrative is not extended here.
+outside this repository. Their artefacts stay in place (since 2026-09-21 under
+`Thesis/`, beside their source papers), their scripts under `analysis/scripts/`,
+and both are still validated; the narrative is not extended here.
 
 ## 1 · The capillary injury state has not resolved by 366 dpi
 
@@ -45,9 +46,9 @@ the same shape: the median per-animal proportion is nearly absent in
 homeostasis (**2.0%**), rises to **37.5% at 25 dpi**, and is **21.7% at
 366 dpi**.
 
-![iCAP time course](analysis/GSE262927/regeneration_focus/figures/icap_timecourse.png)
+![iCAP time course](Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/figures/icap_timecourse.png)
 
-Detail: [`analysis/GSE262927/regeneration_focus/`](analysis/GSE262927/regeneration_focus/) ·
+Detail: [`Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/`](Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/) ·
 script [`06_regeneration_focus.py`](analysis/scripts/06_regeneration_focus.py)
 
 ## 2 · Lineage tracing supports a CAP1 origin for the injury state
@@ -66,9 +67,9 @@ incompatible designs. Two results:
   are **uninformative rather than negative**, a distinction the numbers force
   and the report states explicitly.
 
-![iCAP origin by Cre line](analysis/GSE262927/lineage_tracing_cohort/figures/icap_origin_by_cre_line.png)
+![iCAP origin by Cre line](Thesis/gate1_01_niethamer_2025/GSE262927/lineage_tracing_cohort/figures/icap_origin_by_cre_line.png)
 
-Detail: [`analysis/GSE262927/lineage_tracing_cohort/`](analysis/GSE262927/lineage_tracing_cohort/) ·
+Detail: [`Thesis/gate1_01_niethamer_2025/GSE262927/lineage_tracing_cohort/`](Thesis/gate1_01_niethamer_2025/GSE262927/lineage_tracing_cohort/) ·
 script [`07_lineage_tracing_cohort.py`](analysis/scripts/07_lineage_tracing_cohort.py)
 
 ## 3 · Unsupervised clustering recovers the published cell types
@@ -78,7 +79,7 @@ clusters) was annotated blind, from curated marker panels only. Scored against
 the deposited author cell-type labels afterwards, **median cluster purity is
 0.947** across the 107,626 labelled cells.
 
-![Cluster vs author label](analysis/GSE262927/figures/composition/cluster_vs_author_celltype_heatmap.png)
+![Cluster vs author label](Thesis/gate1_01_niethamer_2025/GSE262927/figures/composition/cluster_vs_author_celltype_heatmap.png)
 
 The disagreements are reported as prominently as the agreements: the
 marker-panel annotation is **contradicted by the deposited labels for 3 of 29
@@ -110,7 +111,7 @@ condition metadata); Harmony was an explicit, recorded override on the
 fragmentation evidence, with the unintegrated embedding retained for
 comparison.
 
-![Integration before and after](analysis/GSE178360/figures/umap/UMAP_integration_before_after.png)
+![Integration before and after](Thesis/ungated_murthy_2022/GSE178360/figures/umap/UMAP_integration_before_after.png)
 
 Reasoning in full, including what the papers changed:
 [`docs/ANALYSIS_RATIONALE.md`](docs/ANALYSIS_RATIONALE.md)
@@ -128,20 +129,20 @@ carries the status of every claim drawn from them.
 cohort's immediate window, reproduces the paper's asynchronous phases
 descriptively; the deposited lineage labels are used as given.
 
-![Proliferation by lineage](analysis/GSE262927/phase_timecourse/figures/proliferation_by_lineage.png)
+![Proliferation by lineage](Thesis/gate1_01_niethamer_2025/GSE262927/phase_timecourse/figures/proliferation_by_lineage.png)
 
 Trace peaks fall at 6 dpi for myeloid cells (median per-animal 84.85% traced),
 at 11 dpi for epithelium (28.35%) and mesenchyme (11.29%), and at 19 dpi for
 endothelium (14.16%), agreeing with the paper's expected window for 4 of 5
 lineages; lymphoid cells peak at 11 dpi (54.7%) rather than 6, and the
 deposited cell-cycle call agrees for 1 of 5 lineages and is a cross-check only.
-Detail: [`analysis/GSE262927/phase_timecourse/`](analysis/GSE262927/phase_timecourse/README.md)
+Detail: [`Thesis/gate1_01_niethamer_2025/GSE262927/phase_timecourse/`](Thesis/gate1_01_niethamer_2025/GSE262927/phase_timecourse/README.md)
 
 **Myeloid compartment by day.** Atlas clusters 5, 17 and 24 were re-embedded
 without the deposited labels and graded against them afterwards; composition
 per animal is then read from the labels.
 
-![Myeloid label composition by dpi](analysis/GSE262927/myeloid_focus/figures/myeloid_label_composition_by_dpi.png)
+![Myeloid label composition by dpi](Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/figures/myeloid_label_composition_by_dpi.png)
 
 In 9,997 cells, 16 subclusters at Leiden 0.5 place a fraction of 0.8723 of the
 labelled cells in subclusters of purity at least 0.75 (0.4837 at Leiden 0.2,
@@ -150,14 +151,14 @@ myeloid cells at baseline to 4.6% at 6 dpi and rebuild to 49.01% by 42 dpi,
 inflammatory monocytes rise from 1.94% to 55.97% and return to 1.79%, and
 interstitial macrophages rise from 2.76% at baseline to 10.28% at 42 dpi and
 13.97% at 90 dpi before 7.66% at 366 dpi.
-Detail: [`analysis/GSE262927/myeloid_focus/`](analysis/GSE262927/myeloid_focus/README.md)
+Detail: [`Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/`](Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/README.md)
 
 **Origin of the rebuilt alveolar macrophage pool.** The Ki67 trace is read by
 tamoxifen window at the common 42 dpi harvest (two animals per window), with
 each animal's classical monocytes and neutrophils as the reference for
 labelling inherited from marrow progenitors.
 
-![Trace by window at late harvests](analysis/GSE262927/myeloid_focus/amac_origin/figures/trace_by_window_late_harvests.png)
+![Trace by window at late harvests](Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/figures/trace_by_window_late_harvests.png)
 
 The 2 to 3 dpi window labels the largest share of the 42 dpi alveolar
 macrophage pool (median per-animal traced fraction 79.72%, against 59.95%,
@@ -165,14 +166,14 @@ macrophage pool (median per-animal traced fraction 79.72%, against 59.95%,
 marrow-reference check was evaluable in 3 of 8 animals and the within-pool
 split criterion was met in no window, so both checks are Not established under
 the frozen 30-cell floor.
-Detail: [`analysis/GSE262927/myeloid_focus/amac_origin/`](analysis/GSE262927/myeloid_focus/amac_origin/README.md)
+Detail: [`Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/`](Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/README.md)
 
 **Batch sensitivity of the myeloid embedding.** The infection round (the
 paper's Table S3) crosses time within every tested day, so the compartment was
 embedded uncorrected and after Harmony on round and the two were compared; 0,
 90 and 366 dpi carry a single round and were not tested.
 
-![UMAP uncorrected versus Harmony by round](analysis/GSE262927/myeloid_focus/batch_sensitivity/figures/UMAP_uncorrected_vs_harmony_by_round.png)
+![UMAP uncorrected versus Harmony by round](Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/batch_sensitivity/figures/UMAP_uncorrected_vs_harmony_by_round.png)
 
 Across 6,719 cells from 16 animals, same-round kNN enrichment per day is 1.105
 to 1.459 uncorrected and 1.053 to 1.286 after Harmony (1 = mixed; failure
@@ -182,7 +183,7 @@ holding 0.765 and 0.742 of the two 6 dpi animals' iMON cells (adjusted Rand
 index between the partitions 0.837); the frozen definition of the state
 selected the 11 to 19 dpi monocyte state instead, and the post hoc definition
 anchored on the 6 dpi cells is disclosed alongside it.
-Detail: [`analysis/GSE262927/myeloid_focus/batch_sensitivity/`](analysis/GSE262927/myeloid_focus/batch_sensitivity/README.md)
+Detail: [`Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/batch_sensitivity/`](Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/batch_sensitivity/README.md)
 
 ## 5 · Negative results and self-audits
 
