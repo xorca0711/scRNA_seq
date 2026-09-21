@@ -572,9 +572,10 @@ panel was withdrawn by the assistant before I saw it: a per-nucleus promoter
 count by group, which is the depth-dominated reading rows C127 and C130 record
 as a mistake; it was replaced by the detection-at-budget form of the
 registered statistic. I have not yet reviewed the figures themselves. I
-also asked for each question to name its roadmap branch and its PI match;
-the mapping that landed is the assistant's reading of the roadmap and of my
-PI target map, and it awaits my review like the figures.
+also asked for each question to name its roadmap branch and its PI match,
+and then decided that mapping is outreach planning, not analysis, and does
+not belong in the repository: it sits on my Notion target map as a child
+page, as the assistant's reading of fit, awaiting my review.
 
 ## How outputs were reviewed
 
