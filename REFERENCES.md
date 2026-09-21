@@ -1,6 +1,6 @@
 # References
 
-Every source study whose deposit this repository has opened, every roadmap paper, the method papers behind the original pipeline, and the methods references the portfolio reads at the step that uses them. Metadata verified against PubMed.
+Every source study whose deposit this repository has opened, every roadmap paper, the method papers behind the original pipeline, and the methods references the analysis reads at the step that uses them. Metadata verified against PubMed.
 
 ---
 
@@ -203,7 +203,7 @@ Robson MJ, et al. *Generation and characterization of mice expressing a conditio
 | 15 | 2W | Wagner A, et al. Metabolic modeling of single Th17 cells reveals regulators of autoimmunity. *Cell* 2021 | [10.1016/j.cell.2021.05.045](https://doi.org/10.1016/j.cell.2021.05.045) | 34216539 |
 | 16 | 2W | Yadav P, et al. Myeloid-mesenchymal crosstalk drives ARG1-dependent profibrotic metabolism via ornithine in lung fibrosis. *Journal of Clinical Investigation* 2025 | [10.1172/JCI188734](https://doi.org/10.1172/JCI188734) | 40875483 |
 
-### Methods references for the portfolio (added 2026-09-15)
+### Methods references for the analysis (added 2026-09-15)
 
 Read at the backbone step that uses them, not as a gate. Metadata verified against PubMed on 2026-09-15.
 

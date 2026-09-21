@@ -8,8 +8,8 @@
 > their day and are not maintained.
 
 The material below was part of the repository's main findings (`FINDINGS.md`)
-until 2026-09-10. It is established outside this repository, in the owner's
-G-SURF submission, which is weighted toward the Krt8-high transitional
+until 2026-09-10. It is established outside this repository, in work
+weighted toward the Krt8-high transitional
 epithelial state, and it is kept here as a record of what this repository found
 and how. The artefacts and scripts behind it remain in place under `analysis/`
 and are still checked by the validator; the narrative is not extended in this

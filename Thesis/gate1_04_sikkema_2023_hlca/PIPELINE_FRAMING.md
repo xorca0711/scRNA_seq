@@ -108,7 +108,7 @@ rule. This applies to every mouse time-point contrast.
 | Mapping the mouse series to the HLCA | declined | human reference, adult only; the authors say cross-species mapping needs method development |
 | 6,000-gene FULL feature set | not needed | the winning configuration used 2,000 HVGs |
 | CCF anatomical score | not applicable | GSE178360 is distal parenchyma throughout (CCF about 0.97); no gradient was sampled |
-| sc-LDSC, CIBERSORTx | out of scope for now | need GWAS summary statistics or bulk cohorts; neither is part of the portfolio question |
+| sc-LDSC, CIBERSORTx | out of scope for now | need GWAS summary statistics or bulk cohorts; neither is part of the repository's question |
 | Fixed donor-entropy threshold 0.43 | adapted | depends on donor count; recomputed per dataset and per stratum |
 
 ## 4. The future pipeline skeleton with the HLCA gates inserted

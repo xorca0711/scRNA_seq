@@ -285,7 +285,7 @@ that pretends otherwise is measuring a different object under a borrowed name.
 ## 7. One thing worth knowing before the analysis contract is written
 
 Roadmap paper 13, Yu, Lee, Choi and Choi 2026 in *Seminars in Immunology*
-(doi:10.1016/j.smim.2026.102050), is the local PI's current framing of IL-1beta
+(doi:10.1016/j.smim.2026.102050), is the Choi group's current framing of IL-1beta
 and is flagged in the roadmap as read-before-the-contract. Its 162-item
 reference list cites Choi 2020 and contains **no Nabhan 2018, no Zacharias 2018,
 no Zepp 2017 and no Frank 2016**, and neither Wnt, Axin2 nor beta-catenin

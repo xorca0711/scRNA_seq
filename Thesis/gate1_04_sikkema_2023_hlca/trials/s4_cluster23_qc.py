@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 """Trial S4: what is mouse cluster 23, the cluster S1 flagged as animal-private and unlabelled?
 
-Portfolio purpose. Curation hygiene: before any cluster of the mouse atlas
+Purpose. Curation hygiene: before any cluster of the mouse atlas
 is cited as a population, a cluster that is 99.5% unlabelled by the authors
 and dominated by one animal must be explained. This is the kind of check a
-donor-aware, reproducibility-first portfolio (Wagner fit) has to show.
+donor-aware, reproducibility-first analysis has to show.
 
 Frozen rules (written to the run record before any data is read). Note:
 the cluster-level QC summary (median counts 1,868, 78% from one sample) had

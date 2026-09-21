@@ -1,7 +1,7 @@
 # Study note: Cardoso, Lee et al. 2026, Early fibrotic niches establish tumour-permissive microenvironments
 
-Roadmap position: **Gate 2, branch 2C (the Choi axis), paper 5** in the ordered paper roadmap of the
-[UC Berkeley SAP PI Target Map](https://app.notion.com/p/3d1151616b44814c8697ff3af2f8f831),
+Roadmap position: **Gate 2, branch 2C (the Choi axis), paper 5** in the ordered paper roadmap of
+[`Thesis/README.md`](../README.md),
 entered ahead of papers 2, 3 and 6 on the owner's instruction. The paper is a
 Choi-lab extension of the Gate 1 spine: the same damage-associated transient
 progenitor (DATP) state that mediates alveolar regeneration is co-opted by

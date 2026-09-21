@@ -1,10 +1,10 @@
-# Niethamer 2025: the analysis in steps, from the initial run to the PI-matched follow-ups
+# Niethamer 2025: the analysis in steps, from the initial run to the phase and myeloid follow-ups
 
 This page separates two kinds of work on GSE262927. **Stage 0** is the initial
 run (August 2026): an independent pipeline built from the raw count matrices,
 asked whether the published biology can be recovered. **Stage 1** is the set of
-follow-ups (September 2026) commissioned after the owner's Notion PI Target
-Map fixed the portfolio framing (DEVELOPMENT.md decision 12: cell state,
+follow-ups (September 2026) commissioned after the owner fixed the framing
+(DEVELOPMENT.md decision 12: cell state,
 niche, macrophage and monocyte states, annotation robustness, curation
 hygiene; no interferon or influenza narrative). **Stage 2** lists what is
 proposed and not run. Every Stage 1 step has a run record with its rules
@@ -13,11 +13,12 @@ README vocabulary (Validated, Descriptive only, Exploratory,
 Retracted-superseded, Not established). Owner retain/reject review of all
 Stage 1 material is pending.
 
-The lab modules referred to below are the ones on the PI Target Map:
-Nabhan (AT2 differentiation, stem-niche ligand and receptor candidates),
-Wagner (immune-metabolic state inference, robust cross-cohort integration),
-Saxton (cytokine and receptor programmes of inflammation resolution and
-epithelial repair), DuPage (Treg stability and plasticity).
+The themes referred to below follow the reading-order branches of
+[`Thesis/README.md`](../README.md):
+2N (AT2 differentiation, stem-niche ligand and receptor candidates),
+2W (immune-metabolic state inference, robust cross-cohort integration),
+3A (cytokine and receptor programmes of inflammation resolution and
+epithelial repair), 3B (Treg stability and plasticity).
 
 ## Stage 0. Initial run: can the published biology be recovered from raw counts
 
@@ -37,7 +38,7 @@ trajectory answer is displaced to `archive/DISPLACED.md`, step 0.5a). It did not
 touch the paper's phase structure or its myeloid compartment, and it drew no
 per-day pictures; those are the gaps Stage 1 fills.
 
-## Stage 1. PI-matched follow-ups: the paper's phase and myeloid claims
+## Stage 1. Follow-ups: the paper's phase and myeloid claims
 
 All four steps use the 25-sample Ki67 atlas only, treat the animal as the unit,
 report medians, and compute no P value (two animals per active-repair day).
@@ -49,8 +50,8 @@ grading and for descriptive composition.
 - **Question.** Is the paper's three-phase proliferation (immune first,
   epithelium and mesenchyme second, endothelium last; Figure 2F) visible in the
   reanalysed atlas?
-- **Serves.** The backbone figure for every reader. Wagner: the immune wave
-  comes first. Nabhan: epithelium and mesenchyme co-peak at 11 dpi, which
+- **Serves.** The backbone figure for every reader. Theme 2W: the immune wave
+  comes first. Theme 2N: epithelium and mesenchyme co-peak at 11 dpi, which
   fixes the time point for any stem-niche question.
 - **Rule, frozen.** For each lineage, the immediate-window harvest (6, 11, 19,
   25 dpi) with the highest median per-animal Ki67-traced fraction is the peak;
@@ -67,8 +68,8 @@ grading and for descriptive composition.
 
 - **Question.** Does the paper's Figure 3 (aMAC loss and iMON expansion at 6
   dpi, reconstitution over three weeks) reproduce from a blind embedding?
-- **Serves.** Wagner primary (macrophage and monocyte states as the
-  immune-metabolic object); Saxton secondary (the iMON to aMAC rebuild is the
+- **Serves.** Theme 2W primary (macrophage and monocyte states as the
+  immune-metabolic object); theme 3A secondary (the iMON to aMAC rebuild is the
   resolution of the myeloid response).
 - **Rule, frozen.** Cells = atlas clusters 5, 17, 24 in the 25-sample cohort;
   Leiden 0.5 fixed from trial S5; resolved if at least 75% of labelled cells
@@ -85,8 +86,8 @@ grading and for descriptive composition.
 
 - **Question.** Which tamoxifen window's proliferating cells populate the 42
   dpi aMAC pool, and can the labelling be explained by marrow inheritance?
-- **Serves.** Wagner primary (origin of a reconstituted macrophage pool
-  inferred from a design variable, not a fitted trajectory); Saxton secondary.
+- **Serves.** Theme 2W primary (origin of a reconstituted macrophage pool
+  inferred from a design variable, not a fitted trajectory); theme 3A secondary.
   Prior art: Aegerter et al. 2020 [DOI](https://doi.org/10.1038/s41590-019-0568-x)
   (GSE131252 and companions) and Iliakis et al. 2023
   [DOI](https://doi.org/10.1038/s41590-023-01602-1).
@@ -108,8 +109,8 @@ grading and for descriptive composition.
 ### N4. Batch sensitivity of the myeloid embedding (script 13)
 
 - **Question.** Is the 6 dpi iMON state biology or a one-day batch island?
-- **Serves.** Robustness for every reader; Wagner's stated interest in robust
-  integration. Belongs in the figure's limitation line for the other labs.
+- **Serves.** Robustness for every reader, and the robust-integration theme
+  (2W). Belongs in the figure's limitation line for the other themes.
 - **Rule, frozen.** Correct on infection round from Table S3 (the two rounds
   also differ in Ki67-Cre dosage), never on sample; test only the days that
   carry both rounds (6, 11, 19, 25, 42 dpi); compare uncorrected and Harmony
@@ -128,31 +129,31 @@ grading and for descriptive composition.
 - **Status.** Descriptive only (rule revision disclosed); owner review pending
   (PROGRESS item 21).
 
-### What each lab would see first
+### The figure each theme rests on
 
-| Lab | Figure | Sentence it supports |
+| Theme | Figure | Sentence it supports |
 |---|---|---|
-| Nabhan (branch 2N) | `phase_timecourse/figures/proliferation_by_lineage.png` | Epithelium and mesenchyme proliferate in the same window (11 dpi), which is when a stem-niche question should be asked. This entry rests on the proliferation trace only; the Krt8-high trajectory (step 0.5a) is displaced and is not used here. |
-| Wagner (branch 2W) | `myeloid_focus/figures/myeloid_label_composition_by_dpi.png` and `amac_origin/figures/trace_by_window_late_harvests.png` | Monocyte and macrophage states turn over on a per-animal, trace-dated timeline. |
-| Saxton (branch 3A, paused) | `myeloid_focus/figures/myeloid_label_composition_by_dpi.png` | The myeloid response resolves between 11 and 42 dpi; a receptor layer is the next step. |
-| DuPage (branch 3B, paused) | none from this series | Tregs are not resolvable here (one 176-cell candidate cluster that the labels contradict); see Stage 2. |
+| Stem niche (branch 2N) | `phase_timecourse/figures/proliferation_by_lineage.png` | Epithelium and mesenchyme proliferate in the same window (11 dpi), which is when a stem-niche question should be asked. This entry rests on the proliferation trace only; the Krt8-high trajectory (step 0.5a) is displaced and is not used here. |
+| Immune-metabolic states (branch 2W) | `myeloid_focus/figures/myeloid_label_composition_by_dpi.png` and `amac_origin/figures/trace_by_window_late_harvests.png` | Monocyte and macrophage states turn over on a per-animal, trace-dated timeline. |
+| Resolution programmes (branch 3A, paused) | `myeloid_focus/figures/myeloid_label_composition_by_dpi.png` | The myeloid response resolves between 11 and 42 dpi; a receptor layer is the next step. |
+| Treg stability (branch 3B, paused) | none from this series | Tregs are not resolvable here (one 176-cell candidate cluster that the labels contradict); see Stage 2. |
 
 ## Stage 2. Proposed and not run
 
 Branch labels follow the reading order of 2026-09-15
-([`Thesis/README.md`](../README.md)): 2N and 2W are the placement-target
+([`Thesis/README.md`](../README.md)): 2N and 2W are the active
 branches, 3A and 3B are paused until S1 or D1 returns a result. W1 is read
 with papers 15 and 16; Nb1 with papers 3, 6 and 14.
 
-| Id | Lab | Proposal | Needs | Stop condition |
+| Id | Branch | Proposal | Needs | Stop condition |
 |---|---|---|---|---|
-| W1 | Wagner (2W) | Pseudobulk the myeloid subset per animal by phase and define the reconstituting aMAC programme (lipid and surfactant catabolism, Krt79); compare with the ARG1 and ornithine axis of Yadav et al. 2025 [DOI](https://doi.org/10.1172/JCI188734) | script 11 outputs; per-animal counts | fewer than 3 animals per pooled phase |
-| S1 | Saxton (3A) | Receptor expression (Csf2rb, Il10ra, Il10rb, Tgfbr1, Tgfbr2, Il4ra) on the reconstituting subclusters per phase; STAT3-like protective versus STAT1-like inflammatory programme scores in epithelium per animal and phase (gate 3A condition) | pseudobulk from W1 | no programme separates phases at the animal level |
-| Nb1 | Nabhan (2N) | Ligand and receptor candidates between AT2 (cluster 10) and the fibroblast niche (clusters 12, 14, 22) at 11 dpi, only after the pseudobulk step (backbone step 5) | W1-style pseudobulk for epithelium and mesenchyme | candidate pairs not expressed in both partners in at least 2 animals |
-| D1 | DuPage (3B) | Gate 3B check on external lung-Treg single-cell series: Loffredo et al. 2025 [DOI](https://doi.org/10.1172/jci.insight.187245) (GSE292440, GSE277256, GSE277226) and McCullough et al. 2026 [DOI](https://doi.org/10.1093/jimmun/vkag119) (GSE300399) | new raw-data inventory entries | Tregs not separable from other T cells in those series |
+| W1 | 2W | Pseudobulk the myeloid subset per animal by phase and define the reconstituting aMAC programme (lipid and surfactant catabolism, Krt79); compare with the ARG1 and ornithine axis of Yadav et al. 2025 [DOI](https://doi.org/10.1172/JCI188734) | script 11 outputs; per-animal counts | fewer than 3 animals per pooled phase |
+| S1 | 3A | Receptor expression (Csf2rb, Il10ra, Il10rb, Tgfbr1, Tgfbr2, Il4ra) on the reconstituting subclusters per phase; STAT3-like protective versus STAT1-like inflammatory programme scores in epithelium per animal and phase (gate 3A condition) | pseudobulk from W1 | no programme separates phases at the animal level |
+| Nb1 | 2N | Ligand and receptor candidates between AT2 (cluster 10) and the fibroblast niche (clusters 12, 14, 22) at 11 dpi, only after the pseudobulk step (backbone step 5) | W1-style pseudobulk for epithelium and mesenchyme | candidate pairs not expressed in both partners in at least 2 animals |
+| D1 | 3B | Gate 3B check on external lung-Treg single-cell series: Loffredo et al. 2025 [DOI](https://doi.org/10.1172/jci.insight.187245) (GSE292440, GSE277256, GSE277226) and McCullough et al. 2026 [DOI](https://doi.org/10.1093/jimmun/vkag119) (GSE300399) | new raw-data inventory entries | Tregs not separable from other T cells in those series |
 | V1 | all | Held-out human validation of the myeloid states: Bailey et al. 2024 [DOI](https://doi.org/10.1038/s41590-024-01975-x) (GSE232628 and companions) and Li et al. 2024 [DOI](https://doi.org/10.1126/scitranslmed.adn0136) (GSE263817) | mouse-to-human ortholog panel; donor-aware pseudobulk | states do not map at the donor level |
-| G1 | Wagner (2W), Saxton (3A) | The gene-set layer of W1: per-animal pseudobulk of the myeloid and the capillary compartments by phase (42 dpi n = 8, 90 dpi n = 4, 366 dpi n = 3; active repair pooled across 6 to 25 dpi n = 8; baseline a reference band only), pre-ranked GSEA on the per-animal ranking against MSigDB mouse hallmark and GO biological process plus three repository sets (the aMAC reconstitution programme, the iCAP markers, the ARG1 and ornithine circuit of paper 16), all frozen and hashed before the ranking is opened; a matched-size random-gene-set null beside the permutation null | W1 pseudobulk; the MSigDB download recorded as an input with its hash; gseapy or an in-house pre-ranked implementation | fewer than 3 animals in any tested arm after the 50-cell floor; a gene set added after ranking; the positive control fails (the hallmark G2M checkpoint set must clear in active repair against injury resolution, which the Ki67 trace of trial N1 already shows at the animal level) | **Run 2026-09-21.** The G2M gate failed in both compartments (C156); trial G1b replaced it with repository injury-state marker sets at four against three animals, both clear (C157); read through that gate, the myeloid TEST contrast gives 2 DNA-replication GO programmes still higher at 42 and 90 dpi than at a year (C158) and the capillary contrast gives nothing (C159). [`trials/g1_gsea_by_phase/g1_summary.md`](trials/g1_gsea_by_phase/g1_summary.md), [`trials/g1b_corrected_positive_control/g1b_summary.md`](trials/g1b_corrected_positive_control/g1b_summary.md) |
-| G2 | Wagner (2W), Nabhan (2N) | IPF against control per donor within compartments (AT2 and transitional epithelium, fibroblasts, macrophages) in GSE136831 (32 against 28 donors; COPD out of scope as in E2), the same statistic as G1 with the human hallmark and GO collections plus the AREG-EGFR and niche sets of A2, replicated in GSE135893 (12 against 10 donors) as the held-out cohort | donor pseudobulk streamed from the raw sparse counts; the 50-cell floor per donor and compartment of E6 | a set that clears in GSE136831 and not in GSE135893 is Not established; the positive control fails (the fibrotic fibroblast set of Tsukui, reference M6, must clear in fibroblasts) | **Run 2026-09-21.** Positive control amended before the run to the EMT hallmark (the Tsukui set is not on disk as a list). G2 ran the same day: 254 discovery sets cleared both nulls and 62 replicated (rows C160, C161). [`trials/g2_gsea_ipf/g2_summary.md`](trials/g2_gsea_ipf/g2_summary.md) |
+| G1 | 2W, 3A | The gene-set layer of W1: per-animal pseudobulk of the myeloid and the capillary compartments by phase (42 dpi n = 8, 90 dpi n = 4, 366 dpi n = 3; active repair pooled across 6 to 25 dpi n = 8; baseline a reference band only), pre-ranked GSEA on the per-animal ranking against MSigDB mouse hallmark and GO biological process plus three repository sets (the aMAC reconstitution programme, the iCAP markers, the ARG1 and ornithine circuit of paper 16), all frozen and hashed before the ranking is opened; a matched-size random-gene-set null beside the permutation null | W1 pseudobulk; the MSigDB download recorded as an input with its hash; gseapy or an in-house pre-ranked implementation | fewer than 3 animals in any tested arm after the 50-cell floor; a gene set added after ranking; the positive control fails (the hallmark G2M checkpoint set must clear in active repair against injury resolution, which the Ki67 trace of trial N1 already shows at the animal level) | **Run 2026-09-21.** The G2M gate failed in both compartments (C156); trial G1b replaced it with repository injury-state marker sets at four against three animals, both clear (C157); read through that gate, the myeloid TEST contrast gives 2 DNA-replication GO programmes still higher at 42 and 90 dpi than at a year (C158) and the capillary contrast gives nothing (C159). [`trials/g1_gsea_by_phase/g1_summary.md`](trials/g1_gsea_by_phase/g1_summary.md), [`trials/g1b_corrected_positive_control/g1b_summary.md`](trials/g1b_corrected_positive_control/g1b_summary.md) |
+| G2 | 2W, 2N | IPF against control per donor within compartments (AT2 and transitional epithelium, fibroblasts, macrophages) in GSE136831 (32 against 28 donors; COPD out of scope as in E2), the same statistic as G1 with the human hallmark and GO collections plus the AREG-EGFR and niche sets of A2, replicated in GSE135893 (12 against 10 donors) as the held-out cohort | donor pseudobulk streamed from the raw sparse counts; the 50-cell floor per donor and compartment of E6 | a set that clears in GSE136831 and not in GSE135893 is Not established; the positive control fails (the fibrotic fibroblast set of Tsukui, reference M6, must clear in fibroblasts) | **Run 2026-09-21.** Positive control amended before the run to the EMT hallmark (the Tsukui set is not on disk as a list). G2 ran the same day: 254 discovery sets cleared both nulls and 62 replicated (rows C160, C161). [`trials/g2_gsea_ipf/g2_summary.md`](trials/g2_gsea_ipf/g2_summary.md) |
 
 **Trial G0 (run 2026-09-21)** asked, before any of this is attempted, on which of the
 16 imported deposits a ranked-list GSEA is admissible at all under the unit rule:

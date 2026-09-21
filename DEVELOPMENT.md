@@ -33,13 +33,14 @@ violate, is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Pre-registering the post hoc Fst and Runx2 lead and running it (trial C9) | Me (instruction 2026-09-13); AI-assisted execution. The agent named the untestable half before running, reported that the effect size its own trial computed is not usable, and disclosed that T1 and T5 were not composable; my review pending on rows C65 to C72 |
 | Entering roadmap paper 2 (Choi 2020) on 2026-09-13: study note, extract, trial D0 | **Agent-proposed, approved by a one-word "proceed" on an agent-written list, not a specific instruction of mine** (corrected 2026-09-15). Later that day I said to leave the paper until I had read it. On 2026-09-15 I REJECTED the AI-written study note (withdrawn; kept in git history at PR #19), relocated trial D0 and its extract under the Cardoso folder as an extension, and reserved the paper-2 folder for after my own reading. Rows C58 to C64 stand, review pending |
 | Re-entering roadmap paper 2 (Choi 2020) on 2026-09-15: study note, extract, trials D1 to D7 and the corrected passes D2b and D5b | Me (instruction 2026-09-15, after reading the paper: list the possible analyses, structure the pipeline, reproduce the paper's result first, then attack its claims, proceed until nothing remains; the backbone check trial by trial; the pull request and merge); AI-assisted execution with every rule frozen before its object was opened. The agent disclosed the Sftpc-clause defect in its own rule twice and left the thresholds where they were; my review pending on rows C85 to C104 |
-| Revising the reading order (Gate 2 branches 2C, 2N, 2W for the placement targets; papers 12 to 16 and methods references M1 to M7 added) | Me (instruction 2026-09-15); AI-assisted execution with every identifier verified against PubMed |
+| Revising the reading order (Gate 2 branches 2C, 2N, 2W; papers 12 to 16 and methods references M1 to M7 added) | Me (instruction 2026-09-15); AI-assisted execution with every identifier verified against PubMed |
 | Promoting the generic deposit readers out of the Cardoso helper module into the shared one | Agent proposal, my approval implied by the instruction to proceed; a gate1 folder importing from a gate2 folder was the wrong dependency direction. Verified by importing all 19 Cardoso trial modules and re-running two trials to identical results; cardoso_utils re-exports so nothing written against it changed |
 | Choosing the three follow-up questions off the agent's ranked list, and accepting three negative answers plus two disclosed rule defects (trials E6, C7, C8) | Me (selection 2026-09-13); AI-assisted execution with readings frozen before the data were opened; the agent reported the margin that refuses its own C7 answer and the zero-inflation that voids its own C8 mixture test; my review pending on rows C49 to C57 |
 | Extending the Hbegf lead into four public datasets once the deposit was exhausted, and accepting a frozen rule's refutation of my own agent's best lead (trials E1 to E4) | Me (instruction 2026-09-13, including the condition that the extensions run only if the first did not refute); AI-assisted execution, readings frozen before the matrices were opened; my review pending on rows C37 to C48 and on the weakening of C29 |
 | Opening two branches of paper 2 on other laboratories' multiome deposits (2026-09-20): the transitional state in chromatin, and the paper's own closing Axin2 and Il1r1 question | Me (instruction 2026-09-20); AI-assisted execution. The agent refused five times before producing a statistic and retracted the one reading it produced; I corrected Route C as out of focus and directed Route A to run. Rows C116 to C150, review pending |
 | Auditing rows C116 to C150 with eight adversaries and independent verifiers, and accepting all 45 confirmed findings | Me (instruction 2026-09-20: "launch a multi-agent attack workflow to testify all the claims made"); AI-assisted execution. The agent's own register prose was the thing found wrong; corrections read from tables, trial M4 added, rows C151 to C154; review pending |
-| Rewriting the root README around a ledger drawn from the register, listing all fifteen opened deposits, and writing RESEARCH_QUESTIONS.md as the question-first entry point for outreach | Me (instruction 2026-09-20, including the choice to drop the Leiden UMAP and to organise by question rather than by trial); AI-assisted execution. A first draft cited seven wrong register rows, caught by printing each cited row; a second adversarial workflow checked the landed text. My retain or reject on the outreach framing pending |
+| Rewriting the root README around a ledger drawn from the register, listing all fifteen opened deposits, and writing RESEARCH_QUESTIONS.md as the question-first entry point | Me (instruction 2026-09-20, including the choice to drop the Leiden UMAP and to organise by question rather than by trial); AI-assisted execution. A first draft cited seven wrong register rows, caught by printing each cited row; a second adversarial workflow checked the landed text. My retain or reject on the question-first framing pending |
+| Restating the repository's purpose as hypothesis generation and keeping personal planning out of every tracked file (decision 27) | Me (instruction 2026-09-22); AI-assisted rewording, file by file, with decisions, statuses and numbers unchanged |
 
 AI execution never meant automatic acceptance. Results were reviewed between
 sessions, and several were sent back: one finding was refuted and rewritten
@@ -150,12 +151,12 @@ tracked cluster tables with the thresholds frozen from the paper before the
 tables were opened. My retain/reject decisions on the extracted material,
 and any rejected AI output, will be recorded here.
 
-**12 · Portfolio framing follows the target labs, not the source paper's
-injury narrative.** (Owner instruction, 2026-09-09.) For the UC Berkeley
-outreach portfolio the interferon and influenza context is not the point;
+**12 · Framing follows cell state and niche biology, not the source paper's
+injury narrative.** (Owner instruction, 2026-09-09.) The interferon and
+influenza context is not the point;
 results are framed by cell state, repair and niche biology, macrophage and
-monocyte states, annotation robustness and curation hygiene, matched to the
-target labs. The data do not change; the write-ups do. Trials S3 to S5 and
+monocyte states, annotation robustness and curation hygiene, grouped by the
+reading-order themes. The data do not change; the write-ups do. Trials S3 to S5 and
 their plan follow this rule.
 
 **13 · Rule revisions are disclosed, not silently applied.** Trial S3's
@@ -175,7 +176,7 @@ mapping reproduces the HLCA authors' own transfer of the same cells at
 99.2% (level 3), so the environment is sound, and it says the "AT0
 candidate analogue" subcluster is mostly AT2 or uncertain, with AT0 a
 minority of the series. That contradicts the wording of the human headline
-in `FINDINGS.md` and the portfolio PDF. The contradiction is recorded in
+in `FINDINGS.md` and the August 2026 summary PDF. The contradiction is recorded in
 `PROGRESS.md` with a proposed re-wording; the decision to retain, re-word
 or reject is mine and is pending. The `scarches` package could not be
 imported with the pinned anndata and was removed; the surgery uses the
@@ -224,10 +225,10 @@ mine and pending.
 **17 · The repository is an analysis log, and established material is
 displaced rather than deleted.** (Owner instruction, 2026-09-10.) Two
 kinds of content had accumulated that are not part of the ongoing analysis:
-portfolio-curation material (a thesis-aware PDF and its generator) and the
+curation material (a summary PDF of August 2026 and its generator) and the
 Krt8-high transitional work (the alveolar trajectory, its time course, and
-the human KRT8 reference-aligned panels), which is established elsewhere in
-my G-SURF submission. Both were moved out of the main narrative into
+the human KRT8 reference-aligned panels), which is established elsewhere,
+outside this repository. Both were moved out of the main narrative into
 `archive/` with a note on what moved, when and why; their artefacts and
 scripts stay in place (then under `analysis/`; the artefacts moved with their
 series to `Thesis/` on 2026-09-21, decision 25) because the validator checks
@@ -467,7 +468,7 @@ twice, and a state that does not separate.** (2026-09-15, under review.)
 Having read Choi 2020, I asked for the possible gene analyses to be listed, a
 separate folder with a structured pipeline, the paper's results reproduced
 first and its claims attacked after, until nothing remained; and, part way
-through, for the core logic backbone to be fetched from Notion and the
+through, for the core logic backbone to be fetched from my notes and the
 repository and checked against the plan trial by trial. That backbone check
 is a table in the plan. Trials D1 to D7 ran the same day, every rule frozen in
 a run record before its object was opened, and I said to proceed to the pull
@@ -507,12 +508,12 @@ Mine to retain or reject: rows C85 to C104; whether to pre-register E6;
 whether to download the dissociation list (M8) and run attack A3.
 
 **24 · The register was audited by adversaries against its own artefacts,
-and the entry point for outreach was written question-first.** (2026-09-20,
+and the entry point was written question-first.** (2026-09-20,
 under review.) I asked for the two branches of paper 2 to be run, then for a
 multi-agent attack on every claim they made, then for the repository to be
 scanned and cleaned with the README updated first and a new document of core
-questions and remarkable phenotypes that could stand behind a cold email to a
-principal investigator, rather than the register's trial-by-trial alignment.
+questions and remarkable phenotypes that a reader could take in cold,
+rather than the register's trial-by-trial alignment.
 
 The audit is the decision that matters. Eight adversaries and forty-seven
 verifiers found that the branches' trials were mostly honest and the register
@@ -539,7 +540,7 @@ from `CLAIMS.md` by a script, because that shape is what this repository is.
 landed (119 findings, 17 independently verified before the session limit, the
 rest checked by hand); its confirmed defects, chiefly register statuses quoted
 one grade too strong and a range typed from the wrong pass, and their fifty-eight
-fixes are listed in PROGRESS item 36. My retain or reject on the outreach
+fixes are listed in PROGRESS item 36. My retain or reject on the question-first
 framing is pending.
 
 **25 · The deposits moved beside their papers, the README was left open, and
@@ -550,11 +551,11 @@ under paper 1. GSE178360 sits under a folder for Murthy 2022, which is outside
 the roadmap, and that folder holds a pointer note only, because decision 23
 stands: no study note before I have read the paper. I asked for the README to
 stay open-ended, because there is more to go, and it now says what is not
-done rather than reading as a finished portfolio. And I set a rule for the
+done rather than reading as finished work. And I set a rule for the
 assistant, recorded in `AI_CONTEXT.md` and in the cross-project harness file:
 before launching a multi-agent workflow, weigh its cost; do the deterministic
 part with a script; deploy agents only where a script cannot judge, and then
-with at most three lenses. The fact-check of the outreach documents the day
+with at most three lenses. The fact-check of the entry-point documents the day
 before had used six checkers and forty-seven verifiers and hit the usage
 limit for what a script catches faster. The move itself was done and checked
 by script, with the validator, the compiler and a path-resolution check as
@@ -572,10 +573,26 @@ panel was withdrawn by the assistant before I saw it: a per-nucleus promoter
 count by group, which is the depth-dominated reading rows C127 and C130 record
 as a mistake; it was replaced by the detection-at-budget form of the
 registered statistic. I have not yet reviewed the figures themselves. I
-also asked for each question to name its roadmap branch and its PI match,
-and then decided that mapping is outreach planning, not analysis, and does
-not belong in the repository: it sits on my Notion target map as a child
-page, as the assistant's reading of fit, awaiting my review.
+also asked for each question to name its roadmap branch and a further
+mapping, and then decided that mapping is personal planning, not analysis,
+and does not belong in the repository: it is kept in my private notes, as
+the assistant's reading of fit, awaiting my review.
+
+**27 · The purpose restated: hypothesis generation, and nothing else in
+the public text.** (Owner instruction, 2026-09-22.) I restated what this
+repository is for: hypothesis generation from an integrative reanalysis of
+public lung single-cell and multiome data, applying frameworks newer than the
+source papers to surface phenotypes and data distributions. How I use the
+resulting questions is personal planning; it lives in my private notes and
+does not appear in any tracked file. The wording of the README, the citation
+file, `RESEARCH_QUESTIONS.md`, the roadmap and its JSON, the trial plans, the
+register's preamble and Potential column, `AI_CONTEXT.md`, this file and
+`PROGRESS.md` was changed to match; reading-order branches are named by
+theme rather than by laboratory. No decision, status, number, threshold or
+frozen rule changed, and no register row was added or removed. The August
+2026 archive keeps its file names, because they are paths in a record. A
+first attempt at this, as one scripted bulk rewrite, was stopped by an
+automated check before it ran; this pass was made file by file.
 
 ## How outputs were reviewed
 

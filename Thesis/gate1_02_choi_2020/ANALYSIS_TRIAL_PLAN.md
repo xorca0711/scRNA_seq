@@ -118,11 +118,11 @@ years. This paper cites the subset claim as settled.
 
 ## The core logic backbone, checked trial by trial
 
-The owner asked that every trial be checked against the shared portfolio
-backbone (the six steps on the Notion PI Target Map), the repository's method
+The owner asked that every trial be checked against the shared analysis
+backbone (six steps, set by the owner), the repository's method
 principles (`AI_CONTEXT.md`), and the gate pattern set by the Cardoso folder
 (decisions 18 and 22). The table is the check. "Backbone step" numbers are
-the six steps of the Notion page: 1 manifest, 2 QC and annotation, 3
+those six steps: 1 manifest, 2 QC and annotation, 3
 sample-aware pseudobulk, 4 programme scoring, 5 communication only after
 evidence, 6 held-out validation and publication.
 

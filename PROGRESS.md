@@ -7,8 +7,8 @@ Last updated: 2026-09-21 (the two original series moved into Thesis/ beside thei
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
-paper-by-paper roadmap directory was added (`Thesis/`, order taken from the
-owner's Notion PI Target Map) with the Sikkema 2023 HLCA study note, its
+paper-by-paper roadmap directory was added (`Thesis/`, in the owner's
+reading order) with the Sikkema 2023 HLCA study note, its
 decision criteria as reviewable JSON, a pipeline-framing proposal, and a
 first criteria trial on tracked tables. **Owner retain/reject review of that
 material is pending.** On 2026-09-10 two focused analyses of the source
@@ -16,7 +16,7 @@ paper's phase structure were added under `Thesis/gate1_01_niethamer_2025/GSE2629
 (`phase_timecourse/` and `myeloid_focus/`, scripts 10 to 13; items 18 to
 21 below). **Owner review of those is pending too.** Later on 2026-09-10 the
 S2 trial was merged (PR #8) with the items renumbered chronologically, and
-the repository was reframed as an analysis log: portfolio material and the
+the repository was reframed as an analysis log: the August 2026 summary PDF and the
 Krt8-high transitional narrative were displaced to `archive/`, the README
 now opens with the claims table, and the injury model is named once (item 22
 below). Nothing is running.
@@ -44,8 +44,8 @@ below). Nothing is running.
 | Lineage-tracing cohort (8 non-atlas samples) | **DONE**, CAP1 origin supported; CAP2 lines uninformative |
 | `analysis/` reorganised into two series subdirectories | **DONE** |
 | Pipeline speedups (PCA, scan, threads) | **DONE**, verified output-identical |
-| Portfolio restructure (`FINDINGS.md`, README rewrite, root tidy-up) | **DONE** |
-| `Thesis/` roadmap index (11 papers, Notion order, PubMed-verified IDs) | **DONE** |
+| Repository restructure (`FINDINGS.md`, README rewrite, root tidy-up) | **DONE** |
+| `Thesis/` roadmap index (11 papers, the owner's reading order, PubMed-verified IDs) | **DONE** |
 | Sikkema 2023 (HLCA) study note, `integration_benchmark.json`, `PIPELINE_FRAMING.md` | **DONE, owner review pending** |
 | Trial S1: HLCA cluster-entropy criteria on the tracked tables | **DONE (2026-09-09); artefacts in Thesis/gate1_04_sikkema_2023_hlca/trials/** |
 | Trial S2: scArches mapping of GSE178360 to the HLCA core | **DONE (2026-09-09)**; 23 of 31 clusters agree with the blind proposals; AT0 is a minority and the AT0 candidate subcluster is mostly AT2 or uncertain; our mapping matches the HLCA authors' own transfer of the same cells at 99.2% (level 3) |
@@ -62,10 +62,10 @@ below). Nothing is running.
 | Choi 2020 (roadmap paper 2): study note, extracts, trials D0 to D7 with corrected passes D2b and D5b (`Thesis/gate1_02_choi_2020/`) | **DONE (2026-09-15), owner review pending**; entered at the owner's direction after reading (the AI-written note of 2026-09-13 was withdrawn first, items 26 and 31); four of five states, time course, ordering, programmes and the organoid shift reproduce as descriptions; primed AT2 never a cluster; rows C58 to C64 and C85 to C104; item 33 |
 | Reading order revised: Gate 2 branches 2C, 2N, 2W; papers 12 to 16 and methods references M1 to M7 added (`Thesis/README.md`, `ROADMAP.json`, `REFERENCES.md`) | **DONE (2026-09-15)**; documentation only; item 31 |
 | Generated `NEGATIVE_RESULTS.md`, one validated palette, shared deposit readers | **DONE (2026-09-13)** |
-| Roadmap re-ranked against the SAP constraints: Nabhan papers next, Gate 3 paused (`Thesis/README.md`, `ROADMAP.json`) | **DONE (2026-09-15, PR #26)**; documentation only; see item 30 |
-| Branch labels (2C, 2N, 2W, 3A, 3B) carried into every document that names a gate or a lab; the two gate namespaces stated | **DONE (2026-09-15, PR #28)**; documentation only; item 32 |
+| Roadmap re-ranked: Nabhan papers next, Gate 3 paused (`Thesis/README.md`, `ROADMAP.json`) | **DONE (2026-09-15, PR #26)**; documentation only; see item 30 |
+| Branch labels (2C, 2N, 2W, 3A, 3B) carried into every document that names a gate or a branch; the two gate namespaces stated | **DONE (2026-09-15, PR #28)**; documentation only; item 32 |
 
-Repository state: the scientific analysis and portfolio curation are complete;
+Repository state: the scientific analysis and its curation are complete;
 no analysis process is running. Branch-specific state belongs in Git/GitHub,
 not in this durable handoff document.
 
@@ -224,7 +224,7 @@ labelled cells.
    with low uncertainty (0.4% of the series; 0.25% in the HLCA core) and
    calls the strict SFTPC+ SCGB3A2+ EPCAM+ gate population mostly pre-TB
    secretory and AT2. Epithelial subcluster 4, the "AT0 candidate
-   analogue" (328 cells) in `FINDINGS.md` and the portfolio PDF, is 38%
+   analogue" (328 cells) in `FINDINGS.md` and the August 2026 summary PDF, is 38%
    AT2, 36% uncertain and 23% AT0. Proposed wording: "an AT0-like minority
    exists; the candidate subcluster is not an AT0 population". Nothing has
    been edited; owner decision.
@@ -291,11 +291,11 @@ labelled cells.
    post hoc definition anchored on the 6 dpi cells is reported alongside
    (DEVELOPMENT decision 16). Owner decision pending.
 22. **Established material is displaced, not deleted** (2026-09-10, owner
-   instruction). The portfolio PDF and its generator moved to
+   instruction). The August 2026 summary PDF and its generator moved to
    `archive/portfolio_2026-08/`; the Krt8-high transitional narrative
    (FINDINGS section 1, the human KRT8 reference-aligned panels) moved to
-   `archive/DISPLACED.md` because it is established elsewhere (the owner's
-   G-SURF submission). Their artefacts and scripts stay in place
+   `archive/DISPLACED.md` because it is established outside this
+   repository. Their artefacts and scripts stay in place
    (then under `analysis/`; the artefacts moved with their series to `Thesis/`
    on 2026-09-21, item 37) because the validator checks their numbers and the
    scripts regenerate them; only the narrative moved. The CI workflow and validator were
@@ -486,7 +486,7 @@ labelled cells.
 26. **Roadmap paper 2 (Choi 2020) entered, study note written, Gate 0 run**
    (2026-09-13; the attribution is corrected and the folder withdrawn on
    2026-09-15, see item 31 and DEVELOPMENT decision 21). This is the paper that defines the DATP state the Cardoso
-   rows lean on, and its first author leads one of the target labs.
+   rows lean on.
    - **The study note and extract are written**, in the roadmap's five-question
      format, with every marker set read from the Europe PMC full-text XML
      rather than the PMC web rendering. That rendering strips italicised gene
@@ -613,13 +613,9 @@ labelled cells.
      with the conflict stated. Reading it vindicates the paper rather than any
      hypothesis of ours, which is worth noting given the conflict.
    - Rows C80 to C84 in the claims register. Owner retain/reject review pending.
-30. **Roadmap re-ranked against the SAP constraints (2026-09-15).** The
-   owner's Notion PI match page now splits the four target labs into
-   placement targets (Nabhan, Wagner) and conversation targets (Saxton,
-   DuPage), on the Spring 2027 dispatch window (12 Jan to 14 May, about
-   18 weeks), the non-matriculated visiting status, the 12 to 16 unit
-   course load, and what this repository has ready for each lab (most of it
-   for Wagner, nothing for Nabhan). Consequences recorded in
+30. **Roadmap re-ranked (2026-09-15).** The owner re-ranked the reading
+   order; at the time this repository had trials built for branch 2W and
+   none for branch 2N. Consequences recorded in
    `Thesis/README.md` (gate rules and the status column) and
    `Thesis/ROADMAP.json` (a `reranking_2026_09_15` block and per-paper
    statuses): papers 3 and 6 (Nabhan 2018 and 2023) are next, with proposal
@@ -628,11 +624,9 @@ labelled cells.
    drift were fixed in the same change: `AI_CONTEXT.md` still listed Choi
    2020 as next and Cardoso as trials C0 to C3, and the status table above
    had no Cardoso or Choi row. No analysis ran and no claim status changed.
-   - Owner decision: whether Saxton stays a conversation target. The past
-     SAP reviews record that the Saxton lab accepted a GIST visiting student
-     for Spring 2024, which improves the outreach signal without changing
-     the 18-week feasibility argument. The Notion page proposes a third,
-     lower-effort email; the roadmap keeps Gate 3A paused either way.
+   - The one owner decision left open by the re-ranking concerns private
+     planning and is tracked in the owner's private notes; the roadmap keeps
+     Gate 3A paused either way.
 31. **Reading order revised, the Choi 2020 folder withdrawn, decision 21
    corrected (2026-09-15, owner instruction).** Three things in one change.
    - **Decision 21 corrected.** The record had said the owner directed a
@@ -655,7 +649,7 @@ labelled cells.
      done; papers 12 England 2025 and 13 the 2026 IL-1beta review added), 2N
      is Nabhan (paper 6; paper 14 the 2026 PNAS platform added), and 2W is
      Wagner (papers 15 Compass and 16 the JCI 2025 lung-fibrosis circuit
-     added), because Wagner is a placement target and had no paper in the
+     added), because the method behind proposal W1 had no paper in the
      order. Seven methods references (M1 to M7) are listed with the backbone
      step that uses each. Every identifier was verified against PubMed on
      2026-09-15. Gate labels used by folders stay 1, 2, 3A, 3B; the branch
@@ -663,7 +657,7 @@ labelled cells.
    - No analysis ran. No claim status changed.
 32. **Branch labels carried across every document (2026-09-15).** After
    item 31 the branch letters lived only in `Thesis/README.md` and
-   `ROADMAP.json`. They are now in the Niethamer plan's lab table and Stage
+   `ROADMAP.json`. They are now in the Niethamer plan's theme table and Stage
    2 proposals (W1 is 2W, Nb1 is 2N, S1 is 3A, D1 is 3B), in the Cardoso
    study note and trials index (branch 2C), in the Stage 3 header of
    `CLAIMS.md` and the Cardoso section of `REFERENCES.md`, and in
@@ -671,9 +665,8 @@ labelled cells.
    trial gates (0, 1, 2a, 2b, 2d), which are the owner's analysis gates for
    that paper and share the word with the reading-order gates. Both
    documents and the machine context now say the two are different things,
-   and no trial gate was renamed. The Notion pages (PI Target Map, PI match,
-   Thesis_Reading_Order, the review digest and the study-note index) carry
-   the same labels as of the same day. Documentation only.
+   and no trial gate was renamed. The owner's private notes carry the same
+   labels as of the same day. Documentation only.
 
 33. **Paper 2 entered and run (2026-09-15).** After reading Choi 2020 the
    owner directed the folder: study note, extract, trials D1 to D7 with
@@ -811,7 +804,7 @@ labelled cells.
      pending.
 
 36. **The second branch, an adversarial audit of both, and the repository
-   brought current for outreach** (2026-09-20, owner instruction).
+   brought current** (2026-09-20, owner instruction).
    - **The Axin2 and Il1r1 branch** (`Thesis/gate1_02_choi_2020/axin2_il1r1/`)
      assessed the question Choi 2020's own Discussion proposes and ran no
      definitive trial on it, because none is possible: both populations are
@@ -847,9 +840,9 @@ labelled cells.
      of them wrong. REFERENCES, REPRODUCIBILITY, AI_CONTEXT, the docs index and
      the roadmap table were brought current.
    - **`RESEARCH_QUESTIONS.md`**, new, is the question-first entry point for a
-     principal investigator reading cold: five questions with what the data say
-     and do not, nine bioinformatic phenotypes, and three deliverables sized to
-     a semester. Before it landed, six checkers read it and the new README
+     reader arriving cold: five questions with what the data say
+     and do not, nine bioinformatic phenotypes, and three follow-up analyses
+     on public data. Before it landed, six checkers read it and the new README
      against the register and the tables and raised 119 findings; 17 reached
      an independent verifier before the session limit stopped the rest (16
      confirmed, 1 refuted because it had already been fixed), and the
@@ -865,7 +858,7 @@ labelled cells.
      RESEARCH_QUESTIONS, the chromatin summary generator and the A2 page, and
      the validator passes at 740 checks.
    - Owner retain/reject review pending on rows C116 to C154 and on the
-     outreach framing of `RESEARCH_QUESTIONS.md`.
+     question-first framing of `RESEARCH_QUESTIONS.md`.
 
 37. **The two original series moved beside their source papers, and the
    README left open** (2026-09-21, owner instruction).
@@ -885,7 +878,7 @@ labelled cells.
      `Thesis/`, the validator's JSON sweep extended to `Thesis/`, and the
      report generator's path anchor taught the new root. Run records and logs
      written before the move keep the paths of their day; they are artefacts,
-     not pointers. The archived portfolio script is not maintained and says
+     not pointers. The archived August 2026 PDF script is not maintained and says
      so at the top of `archive/DISPLACED.md`.
    - The generated series reports and `docs/PIPELINE_AS_RUN.md` were
      regenerated. In doing so the report generator's twelve em-dashes, in the
@@ -927,11 +920,11 @@ labelled cells.
      lesson of rows C127 and C130); it was replaced by the detection-at-budget
      form before landing. Embeddings are cached under an ignored `processed/`
      folder; `run_record.json` holds parameters, seeds, versions and counts.
-   - The owner asked for each question's roadmap branch and PI match, then
-     decided that text does not belong in the repository: it lives on his
-     Notion target map (the page `ROADMAP.json` cites), under a child page
-     written from this repository's reading of fit. Part D's deliverables
-     are numbered 1 to 3 so they no longer collide with proposal D1 (DuPage).
+   - The owner asked for each question's roadmap branch and a further
+     mapping, then decided that mapping does not belong in the repository:
+     it lives in his private notes, written from this repository's reading
+     of fit. Part D's items are numbered 1 to 3 so they no longer collide
+     with proposal D1.
 
 39. **Where a gene set enrichment analysis is admissible** (2026-09-21, owner
    question: is any GSEA established, and on which imported data would a
@@ -1014,18 +1007,16 @@ content changed, no claim status changed. The working tree is clean.
 
 | Pull request | What it did | Item |
 |---|---|---|
-| #26 | roadmap re-ranked against the SAP constraints: Nabhan papers next, Gate 3 paused; `AI_CONTEXT.md` and the status table above brought in line | 30 |
+| #26 | roadmap re-ranked: Nabhan papers next, Gate 3 paused; `AI_CONTEXT.md` and the status table above brought in line | 30 |
 | #27 | decision 21 corrected from the session transcript; the Choi 2020 folder withdrawn and its deposit check relocated as Cardoso trial D0; the reading order given Gate 2 branches 2C, 2N, 2W, papers 12 to 16 and methods references M1 to M7 | 31 |
-| #28 | branch labels carried into every document that names a gate or a lab; the reading-order gates and the Cardoso trial gates stated to be different namespaces | 32 |
+| #28 | branch labels carried into every document that names a gate or a branch; the reading-order gates and the Cardoso trial gates stated to be different namespaces | 32 |
 
-Outside git, on the same day, the owner's Notion pages (PI Target Map, PI
-match, Thesis_Reading_Order, the past-review digest and the study-note index)
-carry the same labels, and the PI match page holds the precedents read from
-the 28 past SAP reviews.
+Outside git, on the same day, the owner's private notes carry the same
+labels.
 
 **Owner decisions open**, unchanged in substance: retain or reject on rows C6,
-C9 to C18, C19 to C57, C58 to C64 and C65 to C84 (items 12 to 29); whether
-Saxton stays a conversation target (item 30).
+C9 to C18, C19 to C57, C58 to C64 and C65 to C84 (items 12 to 29); one
+planning decision tracked in the owner's private notes (item 30).
 
 **What the next session should do, in order.**
 
@@ -1058,7 +1049,7 @@ and one regenerated page; no script ran on data.
 | D0 section, TOC row, trial-table row | `Thesis/gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md`; index row in `trials/README.md` | complete |
 | Decision 21 and its responsibility row | `DEVELOPMENT.md` | complete |
 | Gate 2 branches, papers 12 to 16, methods M1 to M7 | `Thesis/README.md`, `Thesis/ROADMAP.json`, `REFERENCES.md` | complete; validator passes |
-| Notion Thesis_Reading_Order page | owner's workspace | revised the same day, outside git |
+| The owner's private reading-order notes | outside git | revised the same day |
 
 **Next.** Paper 3 (Nabhan 2018) remains next, and paper 2 is the owner's to
 re-enter. Nothing in Gate 3 until S1 or D1 has a result.
@@ -1075,7 +1066,7 @@ ran and no artefact changed.
 | Re-ranking recorded in the roadmap | `Thesis/README.md` gate rules and status column; `Thesis/ROADMAP.json` | complete; validator passes |
 | Machine context brought in line | `AI_CONTEXT.md` status and `thesis_roadmap` block | complete |
 | Status table and item 30 | this file | complete |
-| Notion: PI match page re-ranked, precedents from 28 past SAP reviews added; PI Target Map modules re-tiered and packet extended | owner's Notion workspace | complete, outside git |
+| The owner's private notes updated to match | outside git | complete |
 
 **What the next session should do, in order.** (1) Nabhan 2018 (roadmap
 paper 3): study note in the five-question format, extracts JSON, and a Gate 0

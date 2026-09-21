@@ -1,9 +1,8 @@
 {
   "schema": "thesis-roadmap/v1",
   "source": {
-    "notion_page": "https://app.notion.com/p/3d1151616b44814c8697ff3af2f8f831",
-    "notion_title": "UC Berkeley SAP PI Target Map",
-    "notion_last_checked": "2026-09-15",
+    "origin": "the owner's reading order; the reading notes are kept privately",
+    "reading_order_last_checked": "2026-09-15",
     "ids_verified_against_pubmed_on": "2026-09-09 (papers 1 to 11); 2026-09-15 (papers 12 to 16 and M1 to M7)"
   },
   "working_question": "Which epithelial and immune-state programmes distinguish productive lung repair from persistent dysplastic remodelling after inflammatory injury?",
@@ -16,10 +15,10 @@
   "gates": {
     "1": "read before opening the count matrix: papers 1 to 4",
     "2C": "the Choi axis, read while interpreting the pilot figures: papers 5, 12, 13",
-    "2N": "Nabhan, placement target: papers 6, 14",
-    "2W": "Wagner, placement target, branch added 2026-09-15: papers 15, 16",
-    "3A": "Saxton, conversation target, paused 2026-09-15: papers 7, 8",
-    "3B": "DuPage, conversation target, paused 2026-09-15: papers 9, 10, 11"
+    "2N": "Nabhan: papers 6, 14",
+    "2W": "Wagner, branch added 2026-09-15: papers 15, 16",
+    "3A": "Saxton, paused 2026-09-15: papers 7, 8",
+    "3B": "DuPage, paused 2026-09-15: papers 9, 10, 11"
   },
   "reading_order": [
     1,
@@ -46,22 +45,13 @@
     "3B"
   ],
   "reranking_2026_09_15": {
-    "source": "the owner's Notion PI match page, child of the PI Target Map",
-    "constraints": "Spring 2027 SAP: 2027-01-12 to 2027-05-14 (about 18 weeks); non-matriculated BGA visiting status; 12 to 16 letter-graded units; URAP closed to visiting students",
-    "placement_targets": [
-      "nabhan",
-      "wagner"
-    ],
-    "conversation_targets": [
-      "saxton",
-      "dupage"
-    ],
+    "source": "the owner's re-ranking of the reading order",
     "consequences": [
       "papers 3 and 6 (Nabhan 2018, 2023) move to the front of the queue; proposal Nb1 is their trial",
       "Gate 3A and 3B are paused, not closed; their opening conditions are tested by proposals S1 and D1",
       "the analysis contract and the KRT8 pilot remain unwritten and stay the stop rule's precondition",
       "paper 5 (Cardoso 2026) was completed out of order before the re-ranking and is unaffected",
-      "Gate 2 gains a Wagner branch (2W, papers 15 and 16), because Wagner is a placement target and had no paper in the original order; 2C and 2N name the Choi and Nabhan branches"
+      "Gate 2 gains a Wagner branch (2W, papers 15 and 16), because the method behind proposal W1 had no paper in the original order; 2C and 2N name the Choi and Nabhan branches"
     ]
   },
   "status_vocabulary": [
@@ -100,7 +90,7 @@
       "folder": "gate1_01_niethamer_2025",
       "note_status": "done",
       "note_location": "docs/scRNAseq_workflow_Niethamer2025.md",
-      "trial_status": "done; PI-matched follow-ups N1 to N4 run 2026-09-10 (Descriptive only), owner review pending",
+      "trial_status": "done; phase and myeloid follow-ups N1 to N4 run 2026-09-10 (Descriptive only), owner review pending",
       "trial_location": "Thesis/gate1_01_niethamer_2025/GSE262927",
       "followups_plan": "Thesis/gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md"
     },
@@ -360,7 +350,7 @@
       "title": "IL-1beta signaling as a molecular arbiter of stem cell plasticity: orchestrating the niches of repair, fibrosis, and cancer",
       "doi": "10.1016/j.smim.2026.102050",
       "pmid": "42497497",
-      "role": "the local PI's framing of IL-1beta across repair, fibrosis and cancer; read before writing the analysis contract",
+      "role": "a review of IL-1beta across repair, fibrosis and cancer; read before writing the analysis contract",
       "extract": [
         "thresholds, contexts and timing of IL-1beta activity",
         "which transitional states it stabilises pathologically"
@@ -382,12 +372,11 @@
       "doi": "10.1073/pnas.2606113123",
       "pmid": "42418498",
       "pmcid": "PMC13367804",
-      "role": "the Nabhan lab's current platform: an alveolosphere screen of 201 genes with chimeric RNA-seq of stem-cell effects on the fibroblast niche",
+      "role": "an alveolosphere screen of 201 genes with chimeric RNA-seq of stem-cell effects on the fibroblast niche",
       "extract": [
         "the screening design",
         "how niche effects are read from chimeric RNA-seq",
-        "the Nkx2.1 result",
-        "what an 18-week visitor could contribute"
+        "the Nkx2.1 result"
       ],
       "datasets": [],
       "folder": null,
@@ -556,7 +545,7 @@
       "doi": "10.1038/nature14112",
       "pmid": "25533958",
       "backbone_step": 4,
-      "used_in": "not used; the owner's G-SURF interest"
+      "used_in": "not used"
     },
     {
       "ref": "M8",

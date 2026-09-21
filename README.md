@@ -1,13 +1,16 @@
-# Lung injury and repair states from public single-cell RNA-seq
+# Hypothesis generation from public lung single-cell and multiome data
 
 [![Repository checks](https://github.com/xorca0711/scRNA_seq/actions/workflows/repository-checks.yml/badge.svg)](https://github.com/xorca0711/scRNA_seq/actions/workflows/repository-checks.yml)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
-This repository is an analysis log. Fifteen public lung single-cell and
-multiome deposits from eleven studies, in mouse and human, are re-analysed from
-the deposited count matrices with the authors' annotations held out of every
-model-fitting step and used only afterwards as an answer key, to work on one
-question:
+This repository is an analysis log with one purpose: hypothesis generation
+from an integrative reanalysis of public lung data. Fifteen public lung
+single-cell and multiome deposits from eleven studies, in mouse and human, are
+re-analysed from the deposited count matrices with frameworks newer than the
+source papers, with the authors' annotations held out of every model-fitting
+step and used only afterwards as an answer key, to surface phenotypes and data
+distributions the original analyses did not report. The hypotheses sit inside
+one biological theme:
 
 > Which epithelial and immune-state programmes distinguish productive lung
 > repair from persistent remodelling after injury?
@@ -25,9 +28,9 @@ established, 42 refuted or retracted, 1 displaced. Drawn from `CLAIMS.md` by
 [`15_claims_ledger_figure.py`](analysis/scripts/15_claims_ledger_figure.py).*
 
 **Start with [`RESEARCH_QUESTIONS.md`](RESEARCH_QUESTIONS.md)**: the science
-organised by question rather than by trial, with the phenotypes worth a
-computational biologist's attention and three deliverables sized to a
-semester. The full register with every claim's evidence, artefact and status
+organised by question rather than by trial, with the phenotypes and data
+distributions the reanalysis surfaced and three follow-up analyses specified
+on public data. The full register with every claim's evidence, artefact and status
 is [`CLAIMS.md`](CLAIMS.md); everything refuted, retracted or unestablished is
 [`NEGATIVE_RESULTS.md`](NEGATIVE_RESULTS.md), generated from the register so it
 cannot drift.
@@ -119,7 +122,7 @@ cannot answer a co-occurrence question. Every opened deposit's citation is in
 ## Repository map
 
 ```
-RESEARCH_QUESTIONS.md        the science by question; phenotypes; semester-sized deliverables
+RESEARCH_QUESTIONS.md        the hypotheses by question; phenotypes; specified follow-up analyses
 CLAIMS.md                    claims register: evidence, status, potential (161 rows)
 NEGATIVE_RESULTS.md          generated from the register: refuted, retracted, unestablished
 FINDINGS.md                  the original two-series analysis with figures
@@ -135,7 +138,7 @@ analysis/
                              one paper-style figure per research question from the analysed objects
   LAYOUT.md                  what lives where, and why the mouse cohorts differ
 Thesis/                      paper roadmap, one folder per paper, in reading order; each deposit beside its paper
-  gate1_01_niethamer_2025/     PI-matched follow-ups and proposals
+  gate1_01_niethamer_2025/     phase and myeloid follow-ups (N1 to N4); Stage 2 proposals
     GSE262927/                   the mouse series: report, figures, tables, QC, focused analyses
   gate1_02_choi_2020/          trials D0 to D7; two branches:
     datp_epigenetics/            the transitional state in chromatin (M0 to M4)
@@ -205,7 +208,7 @@ This log is not finished, and the ledger above is a state, not a conclusion.
 Of the roadmap in [`Thesis/README.md`](Thesis/README.md), papers 1, 2, 4 and 5
 have been entered; Nabhan 2018 is next, the Wagner branch has not been opened,
 and Gate 3 is paused. The proposals written against paper 1 (W1, S1, Nb1, D1,
-V1) are not run, the three semester deliverables in
+V1) are not run, the three follow-up analyses in
 [`RESEARCH_QUESTIONS.md`](RESEARCH_QUESTIONS.md) Part D are specified and not
 started, and rows C116 to C154 await the owner's retain-or-reject review. The
 date of the state is in [`PROGRESS.md`](PROGRESS.md).

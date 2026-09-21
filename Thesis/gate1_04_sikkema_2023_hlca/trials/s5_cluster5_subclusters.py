@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 """Trial S5: subcluster mouse cluster 5 (the highest label-entropy cluster) and re-grade.
 
-Portfolio purpose. Cluster 5 is a myeloid mixture whose deposited labels
+Purpose. Cluster 5 is a myeloid mixture whose deposited labels
 disagree (monocytes, macrophages, dendritic cells), the same case the HLCA
 reports as its worst label-entropy cluster. Resolving it matters for the
-stem-niche communication angle (Nabhan fit) and the inflammation-resolution
-and immune-epithelial programme angle (Saxton fit), both of which need
+stem-niche communication angle (theme 2N) and the inflammation-resolution
+and immune-epithelial programme angle (theme 3A), both of which need
 macrophage and monocyte states that are real at the animal level. The
 HLCA's monocyte-derived macrophage subtypes (SPP1-high, CCL2-high,
 C1QA-high, MARCO-high) are used as human comparators through mouse
