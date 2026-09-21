@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-21 (the two original series moved into Thesis/ beside their source papers, the README left open-ended, the owner's rule on multi-agent cost recorded, the docs pages cleared of em-dashes, a paper-style figure drawn for each research question, and a scan of where a gene set enrichment analysis is admissible; see items 37 to 39). Previously 2026-09-20 (two branches of roadmap paper 2 on multiome deposits, an eight-adversary audit that corrected 14 register rows, the root README rewritten around a claims ledger drawn from the register, and RESEARCH_QUESTIONS.md added as the question-first entry point; items 35 and 36), 2026-09-17, 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-21 (the two original series moved into Thesis/ beside their source papers, the README left open-ended, the owner's rule on multi-agent cost recorded, the docs pages cleared of em-dashes, a paper-style figure drawn for each research question, a scan of where a gene set enrichment analysis is admissible, and the first three GSEA trials; see items 37 to 40). Previously 2026-09-20 (two branches of roadmap paper 2 on multiome deposits, an eight-adversary audit that corrected 14 register rows, the root README rewritten around a claims ledger drawn from the register, and RESEARCH_QUESTIONS.md added as the question-first entry point; items 35 and 36), 2026-09-17, 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -949,6 +949,32 @@ labelled cells.
    IPF against control per donor, GSE135893 held out) are in the Stage 2
    table, not run; MSigDB is not on disk and no GSEA package is installed,
    so either trial begins by recording those as inputs.
+
+40. **The first gene set enrichment analyses, G1, G1b and G2** (2026-09-21,
+   owner instruction to proceed where G0 found it plausible). Inputs recorded
+   first: MSigDB 2024.1 hallmark and GO biological process for mouse and human
+   (sha256 in each run record, files under `raw_data/msigdb/`) and gseapy 1.3.1
+   in `.venv-x64`. Engine: gseapy pre-ranked GSEA on per-unit pseudobulk
+   rankings, every hallmark enrichment score reproduced by an in-house running
+   sum to 1e-6, and an expression-matched random-set null beside the
+   permutation null; a set clears only when both agree.
+   - G1 (GSE262927, 8 active-repair, 12 resolution and 3 long-term
+     animals per compartment): the G2M positive control failed in both
+     compartments, and trial N1's cycling fractions show why (no early
+     proliferation peak in either lineage). Recorded, not moved (C156). Its
+     first run also died writing its record (tuple keys in a dictionary); the
+     script was corrected and rerun with the same seed and rules.
+   - G1b sits beside G1 with the gate replaced by repository injury-state
+     marker sets (iMON at 6 and 11 dpi, iCAP at 19 and 25 dpi, each against
+     366 dpi, four against three animals); both clear (C157). Its rule was
+     written after G1's tables were seen, and its record says so.
+   - Read through that gate: myeloid DNA-replication programmes still higher at
+     42 and 90 dpi than at a year, Exploratory (C158); nothing separates the
+     capillary compartment at three animals, Not established (C159).
+   - G2 (GSE136831 discovery, GSE135893 held out, donor as the unit): G2 ran the same day: 254 discovery sets cleared both nulls and 62 replicated (rows C160, C161).
+   - Under x86-64 emulation a 1000-permutation GO run takes about 35 minutes per
+     contrast; the held-out pass is asked only about the sets that cleared
+     discovery, which is what R8 reads anyway.
 
 ---
 
