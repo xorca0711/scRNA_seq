@@ -19,8 +19,8 @@ the claim's potential.
 | Retracted or superseded, kept on display | 3 |
 | Refuted | 39 |
 | Not establishable with the data that exists | 6 |
-| Not established | 33 |
-| **Total** | **81** |
+| Not established | 34 |
+| **Total** | **82** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -610,6 +610,13 @@ what was refuted and what settled it.
 - **What settled it:** trial A1c, produced and never registered until the audit found it missing: in the one transitional set large enough to compute, 773 cells of the infected Cebpa mutant, the Axin2 against Il1r1 correlation flips positive at r = +0.070 and the Wnt module at +0.092, percentile 0.94 and 0.977, against negative values in every AT2 set
 - **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C159. Whether any programme separates the capillary compartment at 42 and 90 dpi from a year
+
+- **Status in the register:** Not established
+- **What settled it:** trial G1 TEST contrast, 12 against 3 animals: no hallmark and no GO biological process set at gseapy FDR < 0.05 in either direction, with the gate cleared
+- **Artefact:** `Thesis/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_hallmark_TEST_capillary.csv`
+- **Where it came from:** Stage 1. PI-matched follow-ups (2026-09-10): the source paper's phase and myeloid claims
 
 ---
 

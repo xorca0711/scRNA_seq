@@ -1,0 +1,152 @@
+{
+  "trial": "G1 gene set enrichment by phase, per animal, myeloid and capillary",
+  "rules_frozen_at": "2026-09-21T13:23:58+00:00",
+  "rules": {
+    "R1_unit": "animal; at least 50 cells per animal per compartment",
+    "R2_compartments": "myeloid = trial 11 cells minus 'other lineage'; capillary = clusters 0,1,3,21 minus 4, annotated cohort",
+    "R3_arms": {
+      "active repair": [
+        6,
+        11,
+        19,
+        25
+      ],
+      "injury resolution": [
+        42,
+        90
+      ],
+      "long-term": [
+        366
+      ],
+      "baseline": "reference only",
+      "arm_floor": 3
+    },
+    "R4_contrasts": {
+      "PC": "active repair vs injury resolution; positive control HALLMARK_G2M_CHECKPOINT up in active repair, myeloid, FDR < 0.05",
+      "TEST": "injury resolution vs long-term, both compartments; unreadable if the PC fails in that compartment"
+    },
+    "R5_ranking": "genes with >= 10 counts in >= 3 animals; log2 CPM; Welch t first minus second; deterministic ties",
+    "R6_gene_sets": "MSigDB 2024.1.Mm hallmark and GO BP, 15 to 500 genes after intersection; repository sets dropped (amendment before the run: 2-gene iCAP set, ARG1 circuit not on disk, aMAC programme circular)",
+    "R7_statistic": "gseapy prerank, weight 1, 1000 permutations, seed 0; in-house ES agreement to 1e-6; expression-matched null of 500 draws for cleared sets, matched p < 0.05 required",
+    "R8_reading": "TEST long-term arm has 3 animals: nothing Validated; both nulls in one compartment Exploratory, in both Descriptive only; baseline untestable"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "Thesis\\gate1_01_niethamer_2025\\GSE262927\\processed\\final_clustered.h5ad",
+      "bytes": 2110304693,
+      "modified": "2026-08-07T14:13:16+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_01_niethamer_2025\\GSE262927\\myeloid_focus\\tables\\myeloid_cell_metadata.csv",
+      "bytes": 1103269,
+      "modified": "2026-09-10T06:21:44+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g1_gsea_by_phase\\g1_units.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g1_gsea_by_phase\\g1_hallmark_PC_myeloid.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g1_gsea_by_phase\\g1_hallmark_TEST_myeloid.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g1_gsea_by_phase\\g1_hallmark_PC_capillary.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g1_gsea_by_phase\\g1_hallmark_TEST_capillary.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g1_gsea_by_phase\\g1_positive_control.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g1_gsea_by_phase\\g1_matched_null.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g1_gsea_by_phase\\g1_gobp_cleared.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g1_gsea_by_phase\\g1_summary.md"
+  ],
+  "results": {
+    "gene_set_files": {
+      "hallmark": {
+        "file": "raw_data/msigdb/mh.all.v2024.1.Mm.symbols.gmt",
+        "sha256": "e5aa9acd833179d1d571b48bf91a28fb387722ce68ff53094d05847659d66460",
+        "n_sets": 50,
+        "bytes": 48007
+      },
+      "gobp": {
+        "file": "raw_data/msigdb/m5.go.bp.v2024.1.Mm.symbols.gmt",
+        "sha256": "07e91b5ee16372f5764649b2a8b358c03d82a910c4e832ca732d0d9379772886",
+        "n_sets": 7713,
+        "bytes": 5063472
+      }
+    },
+    "PC_myeloid_ranking": {
+      "genes_tested": 12831,
+      "genes_total": 32228,
+      "filter": "at least 10 counts in at least 3 units of the two arms",
+      "animals": [
+        8,
+        12
+      ]
+    },
+    "PC_myeloid_es_agreement_max_abs_diff": 7.183142969324763e-14,
+    "TEST_myeloid_ranking": {
+      "genes_tested": 12410,
+      "genes_total": 32228,
+      "filter": "at least 10 counts in at least 3 units of the two arms",
+      "animals": [
+        12,
+        3
+      ]
+    },
+    "TEST_myeloid_es_agreement_max_abs_diff": 1.3877787807814457e-13,
+    "PC_capillary_ranking": {
+      "genes_tested": 14680,
+      "genes_total": 32228,
+      "filter": "at least 10 counts in at least 3 units of the two arms",
+      "animals": [
+        8,
+        12
+      ]
+    },
+    "PC_capillary_es_agreement_max_abs_diff": 1.0652589921278377e-13,
+    "TEST_capillary_ranking": {
+      "genes_tested": 14178,
+      "genes_total": 32228,
+      "filter": "at least 10 counts in at least 3 units of the two arms",
+      "animals": [
+        12,
+        3
+      ]
+    },
+    "TEST_capillary_es_agreement_max_abs_diff": 1.6686652060116103e-13,
+    "positive_control": {
+      "myeloid": false,
+      "capillary": false
+    },
+    "contrast_verdicts": {
+      "TEST_myeloid": {
+        "hallmark_fdr05": 0,
+        "gobp_fdr05": 8
+      },
+      "TEST_capillary": {
+        "hallmark_fdr05": 0,
+        "gobp_fdr05": 0
+      }
+    },
+    "units_kept": {
+      "capillary/active repair": 8,
+      "capillary/baseline": 2,
+      "capillary/injury resolution": 12,
+      "capillary/long-term": 3,
+      "myeloid/active repair": 8,
+      "myeloid/baseline": 2,
+      "myeloid/injury resolution": 12,
+      "myeloid/long-term": 3
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-21T13:55:54+00:00"
+}

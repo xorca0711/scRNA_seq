@@ -1,0 +1,146 @@
+{
+  "trial": "G1b corrected positive-control gate for G1",
+  "rules_frozen_at": "2026-09-21T13:23:59+00:00",
+  "rules": {
+    "R0_contamination": "rule written after seeing G1's tables; gates justified by rows C3, C12, C18 and by clustering-trial marker tables, not by G1 enrichment results",
+    "R1_gates": {
+      "myeloid": {
+        "early_days": [
+          6,
+          11
+        ],
+        "late_days": [
+          366
+        ],
+        "source": "trial 11 iMON subcluster top-20 markers",
+        "rows": "C12, C18"
+      },
+      "capillary": {
+        "early_days": [
+          19,
+          25
+        ],
+        "late_days": [
+          366
+        ],
+        "source": "script 06 capillary subcluster 5 (iCAP) top-20 markers",
+        "rows": "C3"
+      }
+    },
+    "R1_clearing": "set up in the early arm at gseapy FDR < 0.05 among hallmark plus itself, and matched p < 0.05",
+    "R2_inherited": "G1 rules R1, R2, R5, R7 unchanged; GO BP not run",
+    "R3_reading": "gate clears: G1 TEST tables readable under G1 R8; gate fails: compartment stays unreadable"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "Thesis\\gate1_01_niethamer_2025\\GSE262927\\myeloid_focus\\tables\\myeloid_cell_metadata.csv",
+      "bytes": 1103269,
+      "modified": "2026-09-10T06:21:44+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_01_niethamer_2025\\GSE262927\\myeloid_focus\\tables\\myeloid_subcluster_markers_top20.csv",
+      "bytes": 32277,
+      "modified": "2026-09-10T06:21:44+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_01_niethamer_2025\\GSE262927\\regeneration_focus\\tables\\capillary_subcluster_markers_top20.csv",
+      "bytes": 16613,
+      "modified": "2026-08-08T14:22:11+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_01_niethamer_2025\\GSE262927\\processed\\final_clustered.h5ad",
+      "bytes": 2110304693,
+      "modified": "2026-08-07T14:13:16+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_01_niethamer_2025\\GSE262927\\myeloid_focus\\tables\\myeloid_cell_metadata.csv",
+      "bytes": 1103269,
+      "modified": "2026-09-10T06:21:44+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_01_niethamer_2025\\trials\\g1_gsea_by_phase\\g1_matched_null.csv",
+      "bytes": 314,
+      "modified": "2026-09-21T13:18:17+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_01_niethamer_2025\\trials\\g1_gsea_by_phase\\g1_gobp_cleared.csv",
+      "bytes": 948,
+      "modified": "2026-09-21T13:18:17+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g1b_corrected_positive_control\\g1b_pc_sets.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g1b_corrected_positive_control\\g1b_units.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g1b_corrected_positive_control\\g1b_hallmark_PC_myeloid.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g1b_corrected_positive_control\\g1b_hallmark_PC_capillary.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g1b_corrected_positive_control\\g1b_positive_control.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g1b_corrected_positive_control\\g1b_summary.md"
+  ],
+  "results": {
+    "gene_set_files": {
+      "hallmark": {
+        "file": "raw_data/msigdb/mh.all.v2024.1.Mm.symbols.gmt",
+        "sha256": "e5aa9acd833179d1d571b48bf91a28fb387722ce68ff53094d05847659d66460",
+        "n_sets": 50,
+        "bytes": 48007
+      }
+    },
+    "imon_subcluster": "1",
+    "imon_cells_in_that_subcluster": 580,
+    "PC_myeloid_ranking": {
+      "genes_tested": 11087,
+      "genes_total": 32228,
+      "filter": "at least 10 counts in at least 3 units of the two arms",
+      "animals": [
+        4,
+        3
+      ]
+    },
+    "PC_myeloid_es_agreement_max_abs_diff": 7.4495964952348e-14,
+    "PC_capillary_ranking": {
+      "genes_tested": 13706,
+      "genes_total": 32228,
+      "filter": "at least 10 counts in at least 3 units of the two arms",
+      "animals": [
+        4,
+        3
+      ]
+    },
+    "PC_capillary_es_agreement_max_abs_diff": 7.591149930874508e-14,
+    "gate": {
+      "myeloid": true,
+      "capillary": true
+    },
+    "test_reading": {
+      "myeloid": {
+        "hallmark_clearing_both": [],
+        "gobp_clearing_both": [
+          "GOBP_MITOTIC_DNA_REPLICATION",
+          "GOBP_CELL_CYCLE_DNA_REPLICATION"
+        ],
+        "gobp_fdr05": 8
+      },
+      "capillary": {
+        "hallmark_clearing_both": [],
+        "gobp_clearing_both": [],
+        "gobp_fdr05": 0
+      }
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-21T13:28:53+00:00"
+}

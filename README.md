@@ -20,7 +20,7 @@ the shape of the register below, not any single bar in it.
 
 ![Claims ledger](analysis/figures/claims_ledger.png)
 
-*154 register rows: 8 validated, 65 descriptive or exploratory, 38 not
+*161 register rows: 9 validated, 70 descriptive or exploratory, 39 not
 established, 42 refuted or retracted, 1 displaced. Drawn from `CLAIMS.md` by
 [`15_claims_ledger_figure.py`](analysis/scripts/15_claims_ledger_figure.py).*
 
@@ -120,7 +120,7 @@ cannot answer a co-occurrence question. Every opened deposit's citation is in
 
 ```
 RESEARCH_QUESTIONS.md        the science by question; phenotypes; semester-sized deliverables
-CLAIMS.md                    claims register: evidence, status, potential (154 rows)
+CLAIMS.md                    claims register: evidence, status, potential (161 rows)
 NEGATIVE_RESULTS.md          generated from the register: refuted, retracted, unestablished
 FINDINGS.md                  the original two-series analysis with figures
 DEVELOPMENT.md               who decided what; rejected output stays visible

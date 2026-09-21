@@ -1,0 +1,206 @@
+{
+  "trial": "G2 gene set enrichment, IPF against control per donor, held-out replication",
+  "rules_frozen_at": "2026-09-21T12:59:48+00:00",
+  "rules": {
+    "R1_unit": "donor; at least 50 cells per donor per compartment; at least 3 donors per arm",
+    "R2_cohorts": {
+      "discovery": "GSE136831 IPF vs Control (COPD out of scope)",
+      "held_out": "GSE135893 IPF vs Control (other diagnoses out of scope)"
+    },
+    "R3_compartments": {
+      "AT2": {
+        "GSE136831": [
+          "ATII"
+        ],
+        "GSE135893": [
+          "AT2"
+        ]
+      },
+      "fibroblasts": {
+        "GSE136831": [
+          "Fibroblast",
+          "Myofibroblast"
+        ],
+        "GSE135893": [
+          "Fibroblasts",
+          "HAS1 High Fibroblasts",
+          "Myofibroblasts",
+          "PLIN2+ Fibroblasts"
+        ]
+      },
+      "macrophages": {
+        "GSE136831": [
+          "Macrophage",
+          "Macrophage_Alveolar"
+        ],
+        "GSE135893": [
+          "Macrophages",
+          "Proliferating Macrophages"
+        ]
+      }
+    },
+    "R4_ranking": "genes with >= 10 counts in >= 3 donors; log2 CPM; Welch t IPF minus control; deterministic ties",
+    "R5_gene_sets": "MSigDB 2024.1.Hs hallmark and GO BP, 15 to 500 genes after intersection",
+    "R6_positive_control": "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION up in IPF fibroblasts, discovery cohort, FDR < 0.05 (amendment: the Tsukui set is not on disk as a list)",
+    "R7_statistic": "gseapy prerank, weight 1, 1000 permutations, seed 0; in-house ES agreement to 1e-6; matched null 500 draws for discovery sets at FDR < 0.05",
+    "R8_reading": "both nulls in discovery: Exploratory; plus same-direction FDR < 0.05 in the held-out compartment: Validated (held-out replication); discovery only: Not established"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE136831\\GSE136831_AllCells.Samples.CellType.MetadataTable.txt.gz",
+      "bytes": 4308752,
+      "modified": "2026-09-13T04:55:24+00:00"
+    },
+    {
+      "path": "raw_data\\GSE136831\\GSE136831_AllCells.GeneIDs.txt.gz",
+      "bytes": 323848,
+      "modified": "2026-09-13T04:55:22+00:00"
+    },
+    {
+      "path": "raw_data\\GSE136831\\GSE136831_RawCounts_Sparse.mtx.gz",
+      "bytes": 2150633813,
+      "modified": "2026-09-13T04:57:12+00:00"
+    },
+    {
+      "path": "raw_data\\GSE135893\\GSE135893_IPF_metadata.csv.gz",
+      "bytes": 3354014,
+      "modified": "2026-09-13T04:55:37+00:00"
+    },
+    {
+      "path": "raw_data\\GSE135893\\GSE135893_genes.tsv.gz",
+      "bytes": 129668,
+      "modified": "2026-09-13T04:55:40+00:00"
+    },
+    {
+      "path": "raw_data\\GSE135893\\GSE135893_barcodes.tsv.gz",
+      "bytes": 936873,
+      "modified": "2026-09-13T04:55:39+00:00"
+    },
+    {
+      "path": "raw_data\\GSE135893\\GSE135893_matrix.mtx.gz",
+      "bytes": 1076137992,
+      "modified": "2026-09-13T04:56:17+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g2_gsea_ipf\\g2_units.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g2_gsea_ipf\\g2_hallmark_GSE136831_AT2.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g2_gsea_ipf\\g2_hallmark_GSE136831_fibroblasts.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g2_gsea_ipf\\g2_hallmark_GSE136831_macrophages.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g2_gsea_ipf\\g2_hallmark_GSE135893_AT2.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g2_gsea_ipf\\g2_hallmark_GSE135893_fibroblasts.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g2_gsea_ipf\\g2_hallmark_GSE135893_macrophages.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g2_gsea_ipf\\g2_positive_control.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g2_gsea_ipf\\g2_replication.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\g2_gsea_ipf\\g2_summary.md"
+  ],
+  "results": {
+    "gene_set_files": {
+      "hallmark": {
+        "file": "raw_data/msigdb/h.all.v2024.1.Hs.symbols.gmt",
+        "sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772",
+        "n_sets": 50,
+        "bytes": 48690
+      },
+      "gobp": {
+        "file": "raw_data/msigdb/c5.go.bp.v2024.1.Hs.symbols.gmt",
+        "sha256": "71df041c352cc810c11847db328bb94925c5448a009f310d224f2e8baa60b792",
+        "n_sets": 7608,
+        "bytes": 4940222
+      }
+    },
+    "GSE136831_nonzero_entries_read": 692789348,
+    "GSE135893_nonzero_entries_read": 338061955,
+    "GSE136831_AT2_ranking": {
+      "genes_tested": 11555,
+      "genes_total": 45947,
+      "filter": "at least 10 counts in at least 3 units of the two arms",
+      "donors": [
+        3,
+        10
+      ]
+    },
+    "GSE136831_AT2_es_agreement_max_abs_diff": 4.6657122609872204e-14,
+    "GSE136831_fibroblasts_ranking": {
+      "genes_tested": 15656,
+      "genes_total": 45947,
+      "filter": "at least 10 counts in at least 3 units of the two arms",
+      "donors": [
+        18,
+        4
+      ]
+    },
+    "GSE136831_fibroblasts_es_agreement_max_abs_diff": 1.0241807402167069e-13,
+    "GSE136831_macrophages_ranking": {
+      "genes_tested": 24761,
+      "genes_total": 45947,
+      "filter": "at least 10 counts in at least 3 units of the two arms",
+      "donors": [
+        32,
+        27
+      ]
+    },
+    "GSE136831_macrophages_es_agreement_max_abs_diff": 1.7091883464104285e-13,
+    "GSE135893_AT2_ranking": {
+      "genes_tested": 12888,
+      "genes_total": 33694,
+      "filter": "at least 10 counts in at least 3 units of the two arms",
+      "donors": [
+        8,
+        6
+      ]
+    },
+    "GSE135893_AT2_sets_asked": {
+      "hallmark": 9,
+      "gobp": 0
+    },
+    "GSE135893_AT2_es_agreement_max_abs_diff": 5.156985949383852e-14,
+    "GSE135893_fibroblasts_ranking": {
+      "genes_tested": 10280,
+      "genes_total": 33694,
+      "filter": "at least 10 counts in at least 3 units of the two arms",
+      "donors": [
+        7,
+        3
+      ]
+    },
+    "GSE135893_fibroblasts_sets_asked": {
+      "hallmark": 6,
+      "gobp": 18
+    },
+    "GSE135893_fibroblasts_es_agreement_max_abs_diff": 1.9373391779708982e-14,
+    "GSE135893_macrophages_ranking": {
+      "genes_tested": 14203,
+      "genes_total": 33694,
+      "filter": "at least 10 counts in at least 3 units of the two arms",
+      "donors": [
+        12,
+        9
+      ]
+    },
+    "GSE135893_macrophages_sets_asked": {
+      "hallmark": 18,
+      "gobp": 203
+    },
+    "GSE135893_macrophages_es_agreement_max_abs_diff": 5.190292640122607e-14,
+    "positive_control_clears": true,
+    "discovery_sets_clearing_both_nulls": 254,
+    "replicated": 62
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-21T13:46:38+00:00"
+}
