@@ -1,0 +1,239 @@
+{
+  "script": "analysis/scripts/16_research_question_figures.py",
+  "purpose": "visual aids for RESEARCH_QUESTIONS.md; not evidence; nothing tested",
+  "seed": 0,
+  "embedding_recipe": {
+    "multiome": "RNA only; genes in >= 3 nuclei; normalize_total 1e4; log1p; 2000 HVGs (seurat flavour); scale, clip 10; PCA 30; neighbours 15; UMAP; per deposit and per well, no batch correction",
+    "capillary": "script 06 recipe (load_subset clusters 0,1,3,21 minus 4 within the annotated cohort; embed n_hvg 2000, resolution 0.4; iCAP score from Sparcl1, Ntrk2)",
+    "myeloid": "tracked coordinates from myeloid_focus/tables/myeloid_cell_metadata.csv"
+  },
+  "labels": {
+    "transitional_at_depth_available": "raw Cldn4 >= 1 and raw Krt8 >= 1 (the R4c form of trial M1c without downsampling); display only",
+    "at2_nucleus": "raw Sftpc >= 1 and not transitional (the A1 rule)"
+  },
+  "panels": {
+    "A1": {
+      "wells": {
+        "wildtype_PBS": 7340,
+        "wildtype_SeV": 8093
+      },
+      "transitional_pct": {
+        "wildtype_PBS": 0.7629427792915531,
+        "wildtype_SeV": 7.240825404670703
+      },
+      "promoter_peaks": 10,
+      "promoter_genes": 9,
+      "budget": {
+        "rna": 7013,
+        "atac": 3132
+      },
+      "groups": [
+        {
+          "group": "PBS reference",
+          "n_nuclei": 7284,
+          "median_rna_score": 1.1183721947669985,
+          "median_atac_promoter": 0.0
+        },
+        {
+          "group": "SeV reference",
+          "n_nuclei": 7507,
+          "median_rna_score": 1.093881918059455,
+          "median_atac_promoter": 0.3825409729351544
+        },
+        {
+          "group": "SeV transitional",
+          "n_nuclei": 586,
+          "median_rna_score": 0.31197950038645,
+          "median_atac_promoter": 0.9051508297356736
+        }
+      ],
+      "mean_detection": {
+        "PBS reference": {
+          "rna_detection_pct": 73.47097131521761,
+          "atac_detection_pct": 6.893140541834124
+        },
+        "SeV reference": {
+          "rna_detection_pct": 68.90143258069332,
+          "atac_detection_pct": 7.442506145672581
+        },
+        "SeV transitional": {
+          "rna_detection_pct": 56.65868034503116,
+          "atac_detection_pct": 6.229450588561947
+        }
+      }
+    },
+    "A4": {
+      "detection": [
+        {
+          "gene": "Axin2",
+          "well": "wildtype_PBS",
+          "n_at2_nuclei": 7284,
+          "pct_detected": 7.509610104338275,
+          "mean_count_in_positive": 1.193784277879342
+        },
+        {
+          "gene": "Axin2",
+          "well": "wildtype_SeV",
+          "n_at2_nuclei": 7506,
+          "pct_detected": 5.688782307487344,
+          "mean_count_in_positive": 1.1967213114754098
+        },
+        {
+          "gene": "Axin2",
+          "well": "AP1mut_PBS",
+          "n_at2_nuclei": 13568,
+          "pct_detected": 4.392688679245283,
+          "mean_count_in_positive": 1.0956375838926173
+        },
+        {
+          "gene": "Axin2",
+          "well": "AP1mut_SeV",
+          "n_at2_nuclei": 10538,
+          "pct_detected": 4.91554374644145,
+          "mean_count_in_positive": 1.111969111969112
+        },
+        {
+          "gene": "Il1r1",
+          "well": "wildtype_PBS",
+          "n_at2_nuclei": 7284,
+          "pct_detected": 26.290499725425594,
+          "mean_count_in_positive": 1.7566579634464752
+        },
+        {
+          "gene": "Il1r1",
+          "well": "wildtype_SeV",
+          "n_at2_nuclei": 7506,
+          "pct_detected": 29.816147082334133,
+          "mean_count_in_positive": 1.9213583556747096
+        },
+        {
+          "gene": "Il1r1",
+          "well": "AP1mut_PBS",
+          "n_at2_nuclei": 13568,
+          "pct_detected": 19.28066037735849,
+          "mean_count_in_positive": 1.5680428134556574
+        },
+        {
+          "gene": "Il1r1",
+          "well": "AP1mut_SeV",
+          "n_at2_nuclei": 10538,
+          "pct_detected": 25.612070601632187,
+          "mean_count_in_positive": 1.7061874768432752
+        }
+      ],
+      "codetection": [
+        {
+          "well": "wildtype_PBS",
+          "n_at2_nuclei": 7284,
+          "both_pct": 3.14387699066447,
+          "axin2_only_pct": 4.365733113673806,
+          "il1r1_only_pct": 23.14662273476112,
+          "neither_pct": 69.3437671609006
+        },
+        {
+          "well": "wildtype_SeV",
+          "n_at2_nuclei": 7506,
+          "both_pct": 2.3714361843858245,
+          "axin2_only_pct": 3.317346123101519,
+          "il1r1_only_pct": 27.44471089794831,
+          "neither_pct": 66.86650679456434
+        },
+        {
+          "well": "AP1mut_PBS",
+          "n_at2_nuclei": 13568,
+          "both_pct": 1.0318396226415094,
+          "axin2_only_pct": 3.3608490566037736,
+          "il1r1_only_pct": 18.24882075471698,
+          "neither_pct": 77.35849056603773
+        },
+        {
+          "well": "AP1mut_SeV",
+          "n_at2_nuclei": 10538,
+          "both_pct": 1.48984627063959,
+          "axin2_only_pct": 3.42569747580186,
+          "il1r1_only_pct": 24.122224330992598,
+          "neither_pct": 70.96223192256595
+        }
+      ]
+    },
+    "A5": {
+      "wells": [
+        {
+          "well": "P9_control",
+          "n_nuclei": 12186,
+          "transitional_pct": 12.473330050878056,
+          "cldn4_pct": 14.336123420318398,
+          "krt8_pct": 73.05104217955031
+        },
+        {
+          "well": "7wk_control",
+          "n_nuclei": 7589,
+          "transitional_pct": 2.0819607326393466,
+          "cldn4_pct": 2.6485702991171434,
+          "krt8_pct": 52.9055211490315
+        },
+        {
+          "well": "SeV_control",
+          "n_nuclei": 11773,
+          "transitional_pct": 1.2656077465386903,
+          "cldn4_pct": 2.2848891531470312,
+          "krt8_pct": 31.87802599167587
+        }
+      ]
+    },
+    "A3": {
+      "myeloid_cells": 9997,
+      "capillary_cells": 43359,
+      "icap_median_by_day": {
+        "0": 1.997,
+        "6": 0.522,
+        "11": 12.504,
+        "19": 29.1535,
+        "25": 37.540499999999994,
+        "42": 26.2825,
+        "90": 33.0335,
+        "366": 21.654
+      },
+      "animals_by_day": {
+        "0": 2,
+        "6": 2,
+        "11": 2,
+        "19": 2,
+        "25": 2,
+        "42": 8,
+        "90": 4,
+        "366": 3
+      }
+    },
+    "A2": {
+      "cells": 88144,
+      "donors_by_tissue": {
+        "nLung": 11,
+        "tLung": 11
+      },
+      "min_cells_per_donor_group": 20,
+      "areg_epithelial": {
+        "nLung": {
+          "fraction_expressing_donor_median": 0.39080459770114945,
+          "donors": 11
+        },
+        "tLung": {
+          "fraction_expressing_donor_median": 0.43037974683544306,
+          "donors": 11
+        }
+      },
+      "jaccard_min": 0.0,
+      "jaccard_max": 0.579
+    }
+  },
+  "started_utc": "2026-09-21T01:10:51Z",
+  "versions": {
+    "scanpy": "1.12.3",
+    "anndata": "0.13.2",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "matplotlib": "3.11.1",
+    "umap-learn": "0.5.12"
+  },
+  "finished_utc": "2026-09-21T01:11:36Z"
+}

@@ -69,6 +69,12 @@ sorted AT2 dilutes a state-specific effect roughly eightfold, and the 49-day
 groups hold two mice. A normalised differential test needs the reads from SRA
 and is out of scope; peak presence at frozen loci is not.
 
+<!-- rq-figure:A1 -->
+![A1: the AT2 identity programme in RNA and in chromatin](analysis/figures/rq/rq_a1_chromatin.png)
+
+*Figure A1. Wildtype nuclei of GSE310539 (PBS n = 7,340, SeV n = 8,093), RNA-only embedding for display. (a) by well; (b) nuclei with both Cldn4 and Krt8 detected at the depth available (0.8% of PBS, 7.2% of SeV nuclei); (c) the AT2 identity score in RNA; (d) accessibility of the 10 promoter peaks the vendor annotated to the same nine genes, per 10,000 ATAC counts, a per-nucleus view that depth dominates; (e) the RNA score by group, medians as bars (1.12 in PBS reference, 0.31 in SeV transitional); (f) the form the registered statistic takes: for each of the 9 genes with an annotated promoter peak, the fraction of nuclei in which the transcript, and separately the promoter peak, is detected once every nucleus is held to one depth budget (RNA 7,013 UMI, chromatin 3,132 fragments; the 20th percentile of the transitional group, trial M1e's rule). Averaged over the genes, RNA detection is 73% in PBS reference and 57% in SeV transitional nuclei; promoter detection 7% and 6%. A visual aid for rows C118 and C121: the registered test adds the matched-gene-set null and the per-well budgets of trials M1e and M2, and these panels do not replace it. Drawn by `analysis/scripts/16_research_question_figures.py`; numbers in `analysis/figures/rq/rq_a1_groups.csv` and `rq_a1_detection_at_budget.csv`.*
+<!-- /rq-figure:A1 -->
+
 ### A2. Where does amphiregulin come from in the human lung, and how much of a ligand-receptor ranking is the database rather than the tissue?
 
 *Why it matters.* Amphiregulin-to-EGFR is the axis a 2026 *Nature* paper places
@@ -104,6 +110,12 @@ ask the one question this axis has never been asked: whether the
 ligand-producing and receptor-bearing cells are near each other. The survey for
 such a dataset is a week; the analysis depends on what it finds.
 
+<!-- rq-figure:A2 -->
+![A2: EGFR ligands by compartment and the resource overlap](analysis/figures/rq/rq_a2_ligands.png)
+
+*Figure A2. (a, b) GSE131907, 11 normal-lung and 11 tumour-lung donors: for each donor, tissue and compartment with at least 20 cells, the fraction of cells expressing each EGFR ligand and the receptor and the mean log2 TPM; dots show the median across donors. AREG in epithelial cells: median fraction 39% in normal and 43% in tumour lung. (c) Jaccard overlap of the top fifteen ligand-receptor pairs between five resources on the IPF deposit (trial C14): connectomedb2020, consensus and italk agree at 0.43 to 0.58, cellphonedb shares at most 0.00 with any of them, and CellChatDB at most 0.11 with anything. A visual aid for rows C40, C48 and C113. Numbers in `rq_a2_dotplot.csv` and `rq_a2_jaccard.csv`.*
+<!-- /rq-figure:A2 -->
+
 ### A3. Which injury-associated states are still present a year after repair, and where did they come from?
 
 *Why it matters.* Persistence after apparent recovery is what separates repair
@@ -136,6 +148,12 @@ cell states, niches and kinetics, not the infection.
 per animal and phase (proposal W1), defining the reconstituting macrophage
 programme and comparing it with the published myeloid-to-mesenchymal ARG1 and
 ornithine circuit of lung fibrosis.
+
+<!-- rq-figure:A3 -->
+![A3: myeloid and capillary states by phase](analysis/figures/rq/rq_a3_persistence.png)
+
+*Figure A3. GSE262927 annotated cohort. (a to d) the myeloid embedding of trial 11 (9,997 cells, tracked coordinates) by phase, with alveolar macrophages, interstitial macrophages and inflammatory monocytes coloured and every other label in grey; (e to h) the capillary endothelium (43,359 cells, script 06 recipe) by phase, coloured by the injury-induced capillary score; (i) the iCAP fraction per animal with the median per day: 2.0% at baseline, 37.5% at 25 dpi, 21.7% at 366 dpi. A visual aid for rows C3, C12, C13 and C15; the per-animal numbers are the registered ones. Numbers in `rq_a3_myeloid_by_phase.csv` and `rq_a3_icap_by_day.csv`.*
+<!-- /rq-figure:A3 -->
 
 ### A4. Are the Wnt-responsive and the IL-1-responsive AT2 cells the same cells?
 
@@ -177,6 +195,12 @@ at homeostasis and after injury, with the tamoxifen washout the DATP paper's
 own limitations section specifies. It fits an 18-week window only as a
 computational design and power calculation, which is offered as such.
 
+<!-- rq-figure:A4 -->
+![A4: Axin2 and Il1r1 in AT2 nuclei](analysis/figures/rq/rq_a4_axin2_il1r1.png)
+
+*Figure A4. GSE310539. (a, b) Axin2 and Il1r1 on the wildtype embedding of Figure A1; (c) both transcripts in AT2 nuclei (Sftpc detected, not transitional) of all four wells, with the fraction detected above each violin (Axin2 4.4 to 7.5%, Il1r1 19.3 to 29.8%); (d) co-detection tiles per well: both detected in 1.0 to 3.1% of AT2 nuclei. A visual aid for rows C134 to C137 and C142: the question is whether the two mark distinct subsets, and at this detection depth the count matrices cannot say. Numbers in `rq_a4_detection.csv` and `rq_a4_codetection.csv`.*
+<!-- /rq-figure:A4 -->
+
 ### A5. Is the transitional-state marker set damage-associated, or a developmental programme re-used?
 
 *Why it matters.* "Damage-associated" is in the state's name. If its defining
@@ -200,6 +224,12 @@ frozen developmental AT2 maturation set, across the P9, seven-week and infected
 wells of GSE247130, asking which genes are injury-specific once development is
 held fixed. It stops if the developmental set does not separate the P9 well
 from the seven-week control under a threshold frozen from the seven-week well.
+
+<!-- rq-figure:A5 -->
+![A5: the transitional marker set in development and after injury](analysis/figures/rq/rq_a5_development.png)
+
+*Figure A5. GSE247130 control wells, one RNA-only embedding each: P9 (n = 12,186), seven weeks (n = 7,589) and SeV infected (n = 11,773). (a to c) nuclei with both Cldn4 and Krt8 detected at the depth available (12.47%, 2.08%, 1.27%), then Cldn4 and Krt8 on the same embeddings; (d, e) the two transcripts across wells. A visual aid for row C119; the registered comparison is trial M1c at one depth budget, where the P9 wells labelled more than any injured adult well. Numbers in `rq_a5_wells.csv`.*
+<!-- /rq-figure:A5 -->
 
 ---
 

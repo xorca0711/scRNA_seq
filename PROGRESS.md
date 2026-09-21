@@ -3,7 +3,7 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-Last updated: 2026-09-21 (the two original series moved into Thesis/ beside their source papers, the README left open-ended, and the owner's rule on multi-agent cost recorded; see item 37). Previously 2026-09-20 (two branches of roadmap paper 2 on multiome deposits, an eight-adversary audit that corrected 14 register rows, the root README rewritten around a claims ledger drawn from the register, and RESEARCH_QUESTIONS.md added as the question-first entry point; items 35 and 36), 2026-09-17, 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-21 (the two original series moved into Thesis/ beside their source papers, the README left open-ended, the owner's rule on multi-agent cost recorded, the docs pages cleared of em-dashes, and a paper-style figure drawn for each research question; see items 37 and 38). Previously 2026-09-20 (two branches of roadmap paper 2 on multiome deposits, an eight-adversary audit that corrected 14 register rows, the root README rewritten around a claims ledger drawn from the register, and RESEARCH_QUESTIONS.md added as the question-first entry point; items 35 and 36), 2026-09-17, 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
@@ -900,6 +900,33 @@ labelled cells.
      harness rules: weigh the cost before launching a multi-agent workflow;
      scripts for the deterministic part, agents only where a script cannot
      judge, at most three lenses. This move was done and checked by script.
+
+38. **A paper-style figure for each research question** (2026-09-21, owner
+   instruction: figures of the kind papers show, embeddings, feature and
+   violin panels, dotplots, not summary bars).
+   - `analysis/scripts/16_research_question_figures.py` draws one figure per
+     question in `RESEARCH_QUESTIONS.md` from the analysed objects and writes
+     the caption block for each between markers it owns, every caption number
+     formatted from a CSV beside the figure. A1: RNA-only embedding of the
+     GSE310539 wildtype nuclei with the transitional label, the AT2 identity
+     programme in RNA and at the vendor-annotated promoter peaks, and the
+     detection fraction of each identity gene at one depth budget (trial M1e's
+     rule) in RNA and chromatin side by side. A2: a donor-medianed dotplot of
+     the EGFR ligands and receptor by compartment and tissue in GSE131907,
+     beside the top-15 resource overlap of trial C14. A3: the myeloid
+     embedding by phase with the three states of the question coloured, the
+     capillary embedding by phase under the injury-induced score (script 06
+     recipe and seed, 43,359 cells reproduced), and the per-animal iCAP time
+     course. A4: Axin2 and Il1r1 on the A1 embedding, violins with the
+     positive nuclei drawn as points in AT2 nuclei of all four wells, and
+     co-detection tiles. A5: one embedding per GSE247130 control well with the
+     transitional label, Cldn4 and Krt8.
+   - What they are not: evidence. Nothing is tested, no threshold is set, the
+     multiome embeddings carry no batch correction, and the first draft of A1
+     showed a per-nucleus promoter count by group that depth dominates (the
+     lesson of rows C127 and C130); it was replaced by the detection-at-budget
+     form before landing. Embeddings are cached under an ignored `processed/`
+     folder; `run_record.json` holds parameters, seeds, versions and counts.
 
 ---
 
