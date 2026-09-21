@@ -927,6 +927,11 @@ labelled cells.
      lesson of rows C127 and C130); it was replaced by the detection-at-budget
      form before landing. Embeddings are cached under an ignored `processed/`
      folder; `run_record.json` holds parameters, seeds, versions and counts.
+   - At the owner's request each question now ends with where it sits on
+     the roadmap: branch, Berkeley match (placement or conversation), the
+     proposals and trials inside the repository, and the outside groups a
+     result would speak to; a table closes Part A. Part D's deliverables are
+     numbered 1 to 3 so they no longer collide with proposal D1 (DuPage).
 
 ---
 
