@@ -2,7 +2,7 @@
 
 > **Reference material, not a record of what was run.** The pages below
 > describe tools and the reference study's design. They do **not** imply that
-> every tool described here was used in the analysis in `analysis/` — most were
+> every tool described here was used in the analysis in `analysis/`, most were
 > not. For what was actually executed, with real parameters and cell counts,
 > see **[`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md)**, which is generated from
 > the pipeline's own outputs and states tool-by-tool which were used.
@@ -34,14 +34,14 @@ sources, and records the failure modes that are silent rather than loud.
 Rationale and background (written after the analysis ran):
 
 - [`ANALYSIS_RATIONALE.md`](ANALYSIS_RATIONALE.md): every major decision in two
-  passes — what was decided from the data alone, and what changed after reading
+  passes, what was decided from the data alone, and what changed after reading
   the two source papers, including where the first pass was wrong.
 - [`BACKGROUND_FOR_BIOLOGISTS.md`](BACKGROUND_FOR_BIOLOGISTS.md): batch effects
   and Harmony from first principles, for a reader without a computational
-  background — including when correction destroys the experiment.
+  background, including when correction destroys the experiment.
 - [`DOUBLETS_AND_SCRUBLET.md`](DOUBLETS_AND_SCRUBLET.md): what a doublet is, how
   Scrublet works, and the two-round audit of whether it removed this project's
-  populations of interest — a crude gate said yes, a stricter gate overturned
+  populations of interest, a crude gate said yes, a stricter gate overturned
   it (AT0 flagged at 3.9% vs a 6.3% baseline).
 - [`UMAP_AND_FIGURES.md`](UMAP_AND_FIGURES.md): how the UMAP is built from
   counts, what it does and does not mean, how to read dot plots and feature
@@ -49,7 +49,7 @@ Rationale and background (written after the analysis ran):
 
 Supporting documents:
 
-- [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md): **what was actually executed** —
+- [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md): **what was actually executed**,
   per-dataset parameters, cell counts, batch decisions, which of the tools
   above were used, and how the analysis diverges from the source papers.
   Generated from the pipeline's artefacts; regenerate with
@@ -60,7 +60,7 @@ Supporting documents:
   constraints, subset-and-recluster loop, lineage-trace calling, and quality
   control acceptance order.
 - [`scRNAseq_workflow_Niethamer2025.md`](scRNAseq_workflow_Niethamer2025.md):
-  the annotated pipeline reference — study design, stage-by-stage parameters,
+  the annotated pipeline reference, study design, stage-by-stage parameters,
   marker-gene annotation tables, and the twelve parameters the reference study
   leaves unspecified.
 - [`../Thesis/README.md`](../Thesis/README.md): the paper-by-paper roadmap

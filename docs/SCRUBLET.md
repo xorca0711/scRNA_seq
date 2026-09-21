@@ -1,6 +1,6 @@
-# Scrublet — simulation-based doublet detection
+# Scrublet: simulation-based doublet detection
 
-> **Scrublet WAS used in this repository's analysis** — run per 10x capture
+> **Scrublet WAS used in this repository's analysis**, run per 10x capture
 > before merging. Note two deviations from this page: the automatic threshold
 > was rejected in 32 of 33 mouse samples (non-bimodal score histograms) in
 > favour of the 10x expected-rate quantile, and the calls are measurably biased
@@ -55,7 +55,7 @@ flowchart TD
 
 The two consistency checks are free and both should be reported. Note that the
 threshold is set on the distribution of **simulated** scores, not observed
-ones, and that the final node deliberately stops short of deletion — see
+ones, and that the final node deliberately stops short of deletion, see
 [`WORKFLOW_Niethamer2025.md`](WORKFLOW_Niethamer2025.md) for the combination rule.
 
 ---
@@ -72,7 +72,7 @@ ones, and that the final node deliberately stops short of deletion — see
 | Threshold | Between the two peaks of the simulated-score histogram; `skimage.filters.threshold_minimum` automates it, but the authors still recommend visual inspection |
 
 The expected doublet rate rescales scores monotonically and preserves cell
-ordering, so it does not change AUC — it changes where the threshold lands.
+ordering, so it does not change AUC, it changes where the threshold lands.
 
 ---
 
@@ -97,7 +97,7 @@ fraction `f_D` predicts recall accurately and should be reported with every run.
 
 ## Relationship to scds
 
-Scrublet and [scds](SCDS.md) are run together because they fail differently —
+Scrublet and [scds](SCDS.md) are run together because they fail differently,
 Scrublet on neighbourhood composition, scds on gene co-expression. Both share
 the same two structural assumptions: doublets are rare, and every cell state
 contributing to a doublet is present as a singlet.

@@ -10,7 +10,7 @@ reference, including parameters the paper leaves unspecified, is
 
 > **This document describes the reference study's workflow, not the analysis in
 > this repository.** The analysis that was actually executed is a Python/scanpy
-> pipeline that follows this sequence only in part — it performs no ambient-RNA
+> pipeline that follows this sequence only in part, it performs no ambient-RNA
 > correction, uses one doublet caller rather than two, and uses PAGA plus
 > diffusion pseudotime instead of Slingshot; no formal trajectory-DE model was
 > fitted. See **[`docs/PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md)** for
@@ -24,11 +24,11 @@ Six tools, each owning one decision the others cannot make.
 
 | Stage | Tool | Owns | Schematic |
 |---|---|---|---|
-| Alignment | STARsolo 2.7.9a | Barcode, UMI, and gene assignment against mm39 | — |
+| Alignment | STARsolo 2.7.9a | Barcode, UMI, and gene assignment against mm39 |, |
 | Ambient RNA | SoupX 1.6.0 | How much of each count is cell-free background | [`docs/SOUPX.md`](SOUPX.md) |
 | Doublets | Scrublet | Whether a barcode looks like a simulated cell pair | [`docs/SCRUBLET.md`](SCRUBLET.md) |
 | Doublets | scds | Whether a barcode co-expresses genes that rarely co-occur | [`docs/SCDS.md`](SCDS.md) |
-| Cell state | Seurat 4.9 | Normalization, clustering, annotation, marker DE | — |
+| Cell state | Seurat 4.9 | Normalization, clustering, annotation, marker DE |, |
 | Trajectory | Slingshot | Lineage topology and pseudotime ordering | [`docs/SLINGSHOT.md`](SLINGSHOT.md) |
 | Trajectory DE | tradeSeq | Which genes change, and in what sense | [`docs/TRADESEQ.md`](TRADESEQ.md) |
 

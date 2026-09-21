@@ -1,6 +1,6 @@
-# SoupX — ambient RNA removal
+# SoupX: ambient RNA removal
 
-> **Reference only — SoupX was NOT used in this repository's analysis.**
+> **Reference only, SoupX was NOT used in this repository's analysis.**
 > This page documents ambient-RNA correction as published. The analysis in
 > [`analysis/`](../analysis/) performed **no ambient-RNA correction**. See
 > [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md) for what was actually executed.
@@ -27,7 +27,7 @@ returning corrected integer counts that drop into any downstream tool.
 | Does not return | Imputed values. SoupX subtracts; it does not fill in. |
 
 SoupX is the only tool in this pipeline that needs the unfiltered matrix. Keep
-STARsolo's raw output — empty droplets cannot be reconstructed after cell
+STARsolo's raw output, empty droplets cannot be reconstructed after cell
 calling.
 
 ---
@@ -79,8 +79,8 @@ species-mixing control, 5–6 percent in PBMC data.
 
 ## Why this step is load-bearing in lung tissue
 
-Dissociated AT2 cells release surfactant transcripts — *Sftpc*, *Sftpb*,
-*Scgb1a1* — at extreme abundance. These appear as low-level expression in
+Dissociated AT2 cells release surfactant transcripts, *Sftpc*, *Sftpb*,
+*Scgb1a1*, at extreme abundance. These appear as low-level expression in
 endothelial and immune cells that never transcribed them.
 
 The reference study's central claim is that capillary endothelial cells acquire
@@ -106,7 +106,7 @@ Two findings from the source paper sharpen the point:
 | Raw matrix discarded after cell calling | SoupX cannot run at all | Preserve STARsolo raw output per library |
 | Channels pooled before correction | Single ρ applied to channels with different soup | Correct per channel, always |
 | Marker gene not actually specific | ρ overestimated for that gene | Automated mode's modal estimate is robust to this; individual estimates are not |
-| ρ set too high | Genuine low-level expression trimmed | Comparatively safe — background is preferentially removed from genes closest to the soup, so true markers survive. Overcorrecting is the safer error |
+| ρ set too high | Genuine low-level expression trimmed | Comparatively safe, background is preferentially removed from genes closest to the soup, so true markers survive. Overcorrecting is the safer error |
 
 The method assumes relative gene abundance in the background does not differ
 between cells within a channel.

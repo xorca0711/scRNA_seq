@@ -1,6 +1,6 @@
-# Slingshot — lineage topology and pseudotime
+# Slingshot: lineage topology and pseudotime
 
-> **Reference only — Slingshot was NOT used in this repository's analysis.**
+> **Reference only, Slingshot was NOT used in this repository's analysis.**
 > This page documents trajectory inference as published. The analysis in
 > [`analysis/`](../analysis/) performed **no trajectory inference**. See
 > [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md) for what was actually executed.
@@ -73,7 +73,7 @@ decision in the diagram. See below.
 Neither is reported in the reference study. Both must be chosen and stated.
 
 **Number of clusters K.** In the source paper's own simulations, too few
-clusters made Slingshot **miss the branching event entirely** — at K = 3 the
+clusters made Slingshot **miss the branching event entirely**, at K = 3 the
 inferred pseudotimes matched neither true lineage. Too many produced spurious
 branches, with accuracy degrading slowly as the method began to overfit. The
 clustering *algorithm* mattered far less: hierarchical, k-means and
@@ -94,8 +94,8 @@ deliberately does not choose one for you.
 
 | Element | Choice |
 |---|---|
-| MST distance | Covariance-scaled, Mahalanobis-like — "essentially a multivariate t-statistic". Full covariance by default, diagonal fallback for small clusters |
-| Why not Euclidean | With plain Euclidean distance the olfactory epithelium lineage structure "could not have been recovered" — a spurious early branch appears |
+| MST distance | Covariance-scaled, Mahalanobis-like, "essentially a multivariate t-statistic". Full covariance by default, diagonal fallback for small clusters |
+| Why not Euclidean | With plain Euclidean distance the olfactory epithelium lineage structure "could not have been recovered", a spurious early branch appears |
 | Curve initialization | Piecewise-linear path through cluster centroids, not the first principal component |
 | Parameterization | Unit speed, so arc length equals pseudotime |
 | Shrinkage weight | Cosine kernel, bandwidth 1/6, with full shrinkage at the origin so all lineages share a start point. Final curves are "highly robust to the choice of kernel" |
@@ -111,7 +111,7 @@ follows a known or hypothesized axis of differentiation. Excluded cells are
 rendered grey in the published figures.
 
 This is legitimate and common, but it changes what the result means.
-**A supervised trajectory does not discover a lineage — it measures progression
+**A supervised trajectory does not discover a lineage, it measures progression
 along a lineage you have already asserted.** Every trajectory in the reference
 study is a hypothesis test of a pre-specified axis, not unbiased lineage
 inference. State this plainly in any methods section.
@@ -132,7 +132,7 @@ Trajectories built in the reference study:
 | Mode | Consequence |
 |---|---|
 | No start cluster | Will not run. The root is required, not inferred |
-| Interior node named as root | Produces two lineages, one per leaf — probably not what was intended |
+| Interior node named as root | Produces two lineages, one per leaf, probably not what was intended |
 | Disconnected biology | Outside the model. The MST is a single connected tree by construction |
 | Clusters of four cells or fewer | Removed in the source paper's own protocol before rerunning |
 | Sharp rather than smooth branching | Disadvantages Slingshot and other smoothness-assuming methods |
