@@ -1,14 +1,14 @@
-# Analysis rationale — what I decided, why, and what changed after reading the papers
+# Analysis rationale: what I decided, why, and what changed after reading the papers
 
 This document exists because the analysis was run in two distinct passes, and
 the second pass changed some of the reasoning behind the first.
 
-**Pass 1 — data only.** The brief was explicit: *"Do not begin by assuming what
+**Pass 1, data only.** The brief was explicit: *"Do not begin by assuming what
 kind of scRNA-seq data are present… let the structure and properties of the raw
 data determine the workflow."* So the pipeline was built by reading the
 deposited files and nothing else. No papers, no prior knowledge of the studies.
 
-**Pass 2 — after reading the source publications.** The two papers behind these
+**Pass 2, after reading the source publications.** The two papers behind these
 accessions live in `Thesis/Primary/`. They were read only after the analysis was
 complete. Some decisions were confirmed. One was right for the wrong reason.
 Several facts turned out to be unknowable from the deposited files alone.
@@ -18,7 +18,7 @@ For the parameters actually used, see [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md)
 
 ---
 
-## Part 1 — The decisions, before and after
+## Part 1: The decisions, before and after
 
 ### Decision 1: Should the samples be batch-corrected? (GSE262927, mouse)
 
@@ -26,11 +26,11 @@ For the parameters actually used, see [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md)
 them. But look at what `sample_id` actually is here: every sample belongs to
 exactly one `experimental_group` (`H1N1_tam02_sac06`, `H1N1_homeostasis_d03`,
 and so on). Sample identity and experimental condition are the *same variable*.
-Correcting on sample would therefore delete the influenza time course — the
+Correcting on sample would therefore delete the influenza time course, the
 entire point of the study.
 
-So the question was reframed. Not *"do samples separate?"* — they might separate
-for real biological reasons — but *"do samples that share an experimental group,
+So the question was reframed. Not *"do samples separate?"*, they might separate
+for real biological reasons, but *"do samples that share an experimental group,
 i.e. genuine replicate animals, fail to mix?"* That is a question about
 technical noise only, because replicates within a group differ by animal, not by
 treatment.
@@ -42,14 +42,14 @@ correction**.
 
 **Pass 2 verdict: CONFIRMED.** Niethamer et al. performed **no batch correction
 and no integration of any kind**. Their Methods contain no Harmony, no anchors,
-no CCA — libraries were merged and clustered directly. The only thing regressed
+no CCA, libraries were merged and clustered directly. The only thing regressed
 out is technical (mitochondrial %, nFeature, nCount) inside SCTransform. They
 also substituted a compositional sanity check across timepoints in place of
 correction, which is essentially what the mixing assessment did.
 
 **What pass 2 added.** There *is* a legitimate technical batch variable, and it
 is not in the deposited metadata: `rep1`/`rep2` are influenza infection waves
-about nine months apart, and they are balanced across the acute timepoints — so
+about nine months apart, and they are balanced across the acute timepoints, so
 they could be tested or corrected without harming the time signal. That variable
 lives in the paper's supplementary table `mmc4.xlsx`. The 90 and 366 dpi
 timepoints come exclusively from a third wave, where wave and timepoint are
@@ -61,13 +61,13 @@ perfectly confounded and correction is impossible.
 
 This one went the other way, and it is the more interesting story.
 
-**Pass 1, first attempt — declined.** The series ships **no metadata file at
+**Pass 1, first attempt, declined.** The series ships **no metadata file at
 all**. The reasoning recorded at the time: *"no condition metadata exists, so
 donor, batch and biology are completely confounded and no correction can be
 justified as purely technical."* Harmony was computed but kept as a clearly
 labelled *supplementary* embedding; the uncorrected version stayed primary.
 
-**Pass 1, second attempt — reversed, on evidence.** The QC review then flagged
+**Pass 1, second attempt, reversed, on evidence.** The QC review then flagged
 that most clusters were nearly private to one donor. Rather than trust an
 impression, the specific question was tested: *are single cell types fragmenting
 along donor lines?*
@@ -93,7 +93,7 @@ using Seurat CCA anchors with 10,000 features. Harmony substitutes for a
 correction the original study also performed.
 
 But the *stated reason* was a non-sequitur. "No metadata file exists, therefore
-no designed contrast exists" does not follow — missing metadata files are
+no designed contrast exists" does not follow, missing metadata files are
 routine even for designed experiments. The safe conclusion required checking the
 source, and it happens to hold for a reason pass 1 could not have known: the
 paper's scientific axis is **proximal-to-distal zonation, a gradient *within*
@@ -113,7 +113,7 @@ source publication before concluding that nothing is at risk.
 
 ### Decision 3: How aggressively to remove doublets
 
-**Pass 1 reasoning.** Scrublet, run independently per 10x capture — doublets can
+**Pass 1 reasoning.** Scrublet, run independently per 10x capture, doublets can
 only form between cells that shared a droplet, so simulating them across samples
 is meaningless. When Scrublet's automatic threshold disagreed wildly with the
 10x multiplet-rate prior (~0.8% per 1,000 cells recovered), it was replaced by
@@ -123,7 +123,7 @@ histograms were not bimodal.
 
 **Pass 2 verdict: A REAL LIMITATION, now measured.**
 
-Kadur et al. used **no automated doublet caller at all** — only manual
+Kadur et al. used **no automated doublet caller at all**, only manual
 inspection of clusters. That is not sloppiness. Every novel population in that
 paper is defined by co-expression of two lineages' markers:
 
@@ -142,11 +142,11 @@ measured directly on the data:
 | all cells | 29,605 | 6.3% | 1.00× |
 
 Scrublet removed these populations at up to twice the background rate. It did
-**not** erase them — 87–92% survived, so they remain in the object — but the
+**not** erase them (87–92% survived, so they remain in the object) but the
 bias is systematic and runs in the direction that loses the study's discoveries.
 
-*(Caveat: these marker definitions are crude — any non-zero expression of each
-gene — so they are generous upper-bound sets, not the real populations. The
+*(Caveat: these marker definitions are crude, any non-zero expression of each
+gene, so they are generous upper-bound sets, not the real populations. The
 enrichment is the meaningful number, not the absolute counts.)*
 
 ### Follow-up: was the AT0 population actually lost? **No.**
@@ -200,14 +200,14 @@ before normalisation precisely for this reason.
 
 ### Decision 4: Which clustering resolution
 
-**Pass 1 reasoning.** Four resolutions were scanned. The obvious criterion —
+**Pass 1 reasoning.** Four resolutions were scanned. The obvious criterion,
 "does every cluster have marker genes distinguishing it from the rest of the
-data?" — turned out to be useless: **all four resolutions scored 100%**. Judged
+data?", turned out to be useless: **all four resolutions scored 100%**. Judged
 against all other cells, even 43 clusters looked perfectly justified.
 
 So a second criterion was added: is each cluster distinguishable from its
 *nearest neighbouring cluster*? That is what over-clustering actually looks
-like — splitting one population in half, where each half still differs from the
+like, splitting one population in half, where each half still differs from the
 rest of the data but not from its own sibling.
 
 | resolution | clusters | marker-supported | min DE genes between nearest clusters |
@@ -223,7 +223,7 @@ Resolution 0.3 was chosen. All resolutions are retained in the object as
 
 **Pass 2 note.** Niethamer et al. used **Louvain at resolution 1.0** for the full
 atlas. That is a coarser-looking number than it sounds, because it follows
-SCTransform normalisation and a different neighbour graph — resolution values
+SCTransform normalisation and a different neighbour graph, resolution values
 are not comparable across pipelines. More importantly, they then **manually
 culled clusters** (removing ones without a marker signature, ones with
 multi-compartment markers, and deliberately dropping platelets, erythrocytes,
@@ -244,11 +244,11 @@ Those eight are a **different experiment**. They use different Cre driver lines
 (Kit-MerCreMer, Car4-CreERT2, Ednrb-CreERT2), a *pre*-labelling design with
 tamoxifen given 14–16 days **before** infection, and a single 19 dpi timepoint,
 with infections run months later. The paper states plainly that the Ki67 line
-was "analyzed separately" from those three lines — which is exactly why the
+was "analyzed separately" from those three lines, which is exactly why the
 metadata CSV covers 25 of 33 samples.
 
 So the final mouse object blends two experiments. Cell-type clustering is
-largely unaffected — a fibroblast is a fibroblast — but `trace_call` means
+largely unaffected (a fibroblast is a fibroblast) but `trace_call` means
 *proliferation history* in the 25 and *cell-type identity at homeostasis* in the
 eight, and the two must never be pooled. To reproduce the paper, split them.
 
@@ -258,7 +258,7 @@ right instinct; assuming the leftovers belonged to the same experiment was not.
 
 ---
 
-## Part 2 — Things the deposited files could not tell me
+## Part 2: Things the deposited files could not tell me
 
 Recorded because they change interpretation, not computation:
 
@@ -269,7 +269,7 @@ Recorded because they change interpretation, not computation:
 - **The mouse homeostasis controls were never infected.** The `H1N1_` prefix on
   `H1N1_homeostasis_d03` is a naming artefact.
 - **`SiteA`/`SiteB` are not two reporters.** They are two sub-regions of the
-  single Ai14 ROSA26 allele — the SV40-polyA STOP cassette and the bGH-polyA
+  single Ai14 ROSA26 allele, the SV40-polyA STOP cassette and the bGH-polyA
   after tdTomato. Removing them from the expression matrix was still correct.
   Pleasingly, the rule derived empirically from the data (`Traced` iff
   SiteB > SiteA) matches the published definition exactly, which independently
@@ -277,13 +277,13 @@ Recorded because they change interpretation, not computation:
 - **Both papers' headline findings require sub-clustering.** Niethamer's
   injury-induced capillary endothelial state is explicitly invisible at
   top-level clustering. Only the epithelium was subset here.
-- **The GSE178360 `.RDS` objects contain the authors' own annotations** — donor
+- **The GSE178360 `.RDS` objects contain the authors' own annotations**, donor
   IDs and published cell-type labels per barcode. They could not be read here
   (no R), but they are the route to ground-truth labels.
 
 ---
 
-## Part 3 — Background for reading these figures
+## Part 3: Background for reading these figures
 
 *(See the sections below for plain-language explanations of UMAP, Harmony and
 Scrublet, written for a reader without a computational background.)*

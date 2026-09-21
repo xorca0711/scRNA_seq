@@ -1,6 +1,6 @@
-# scds — co-expression and classifier-based doublet scoring
+# scds: co-expression and classifier-based doublet scoring
 
-> **Reference only — scds was NOT used in this repository's analysis.**
+> **Reference only, scds was NOT used in this repository's analysis.**
 > This page documents doublet detection as published. The analysis in
 > [`analysis/`](../analysis/) performed **no doublet detection**. See
 > [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md) for what was actually executed.
@@ -28,7 +28,7 @@ score. `cxds` asks whether a barcode co-expresses gene pairs that rarely co-occu
 | Does not return | **A doublet call, or a count.** scds ranks; it does not threshold |
 
 That last row is the defining property. The authors state plainly that they do
-not estimate the number of doublets in a dataset — they score and rank
+not estimate the number of doublets in a dataset, they score and rank
 barcodes. The threshold is yours to impose and yours to justify.
 
 ---

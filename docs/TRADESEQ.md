@@ -1,6 +1,6 @@
-# tradeSeq — trajectory-based differential expression
+# tradeSeq: trajectory-based differential expression
 
-> **Reference only — tradeSeq was NOT used in this repository's analysis.**
+> **Reference only, tradeSeq was NOT used in this repository's analysis.**
 > This page documents trajectory-based differential expression as published. The analysis in
 > [`analysis/`](../analysis/) performed **no trajectory-based differential expression**. See
 > [`PIPELINE_AS_RUN.md`](PIPELINE_AS_RUN.md) for what was actually executed.
@@ -25,7 +25,7 @@ same fitted smoothers.
 | | |
 |---|---|
 | Requires | **Raw counts**, per-cell pseudotime, and per-cell lineage weights. Exactly three things |
-| Optional | A matrix of known cell-level covariates — batch, age, sex — fitted as fixed effects |
+| Optional | A matrix of known cell-level covariates (batch, age, sex) fitted as fixed effects |
 | Returns | Fitted smoothers per gene per lineage, and Wald test statistics for the contrast you ask for |
 
 Do not pre-normalize. Sequencing depth enters the model as a `log(N_i)` offset,
@@ -92,7 +92,7 @@ number of knots", while `diffEndTest` is "somewhat sensitive" to it.
 
 The smoothing basis functions are **identical across all genes and all
 lineages**, and the smoothing parameter is shared across lineages. This is not
-an implementation detail — it is what makes between-lineage contrasts valid at
+an implementation detail, it is what makes between-lineage contrasts valid at
 all. The stated reason is "to ensure that the smoothers are comparable across
 lineages."
 
@@ -150,7 +150,7 @@ Adopt that framing.
 
 ## Multi-condition designs
 
-The 2020 paper has **no `conditionTest`** — it was added to the package after
+The 2020 paper has **no `conditionTest`**, it was added to the package after
 publication. Its only mechanism for conditions is the fixed-effect covariate
 matrix in `fitGAM`, explicitly named for batch, age, sex and treatment.
 
