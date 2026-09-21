@@ -131,7 +131,8 @@ REFERENCES.md                every source and roadmap paper, DOIs, data accessio
 analysis/
   scripts/                   the pipeline, the focused analyses, the generators, the validator
   config/                    the one validated palette; the x86-64 environment lock
-  figures/                   repository-level figures generated from the register
+  figures/                   repository-level figures: the claims ledger from the register, and rq/,
+                             one paper-style figure per research question from the analysed objects
   LAYOUT.md                  what lives where, and why the mouse cohorts differ
 Thesis/                      paper roadmap, one folder per paper, in reading order; each deposit beside its paper
   gate1_01_niethamer_2025/     PI-matched follow-ups and proposals
@@ -186,6 +187,7 @@ python analysis/scripts/08_reference_aligned_epithelial_umap.py
 python analysis/scripts/05_write_pipeline_as_run.py
 python analysis/scripts/14_write_negative_results.py
 python analysis/scripts/15_claims_ledger_figure.py
+python analysis/scripts/16_research_question_figures.py   # needs raw_data/ and the processed objects
 ```
 
 Each roadmap trial is a standalone script under its paper folder whose

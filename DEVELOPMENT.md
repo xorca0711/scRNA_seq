@@ -560,6 +560,19 @@ limit for what a script catches faster. The move itself was done and checked
 by script, with the validator, the compiler and a path-resolution check as
 the gates.
 
+**26 · Each research question gets a figure of the kind a paper shows.**
+(2026-09-21.) I asked for a figure per question in `RESEARCH_QUESTIONS.md`
+as a visual aid, and when the first proposal reached for summary plots I said
+what I meant: the figures that research papers actually use, embeddings,
+trajectory maps, violin plots, whatever fits. The five that landed are drawn
+from the analysed objects by one script, cite the register row each one
+illustrates, and carry no number that is not formatted from a table beside
+them. They are aids to reading, not evidence, and the captions say so. One
+panel was withdrawn by the assistant before I saw it: a per-nucleus promoter
+count by group, which is the depth-dominated reading rows C127 and C130 record
+as a mistake; it was replaced by the detection-at-budget form of the
+registered statistic. I have not yet reviewed the figures themselves.
+
 ## How outputs were reviewed
 
 Every run writes its decisions to machine logs (`decisions.json`,
