@@ -1,0 +1,221 @@
+#!/usr/bin/env python
+"""Generate an evidence index from CLAIMS.md and verify explicit numeric bindings.
+
+The register remains the editable scientific narrative. This generated manifest
+does not certify every claim: each row states exactly what CI verifies.
+"""
+from __future__ import annotations
+
+import argparse
+import collections
+import csv
+import hashlib
+import json
+import math
+import re
+import statistics
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parents[2]
+MANIFEST = Path("analysis/claims/manifest.json")
+SUMMARY = Path("docs/CLAIM_SUMMARY.md")
+BINDINGS = Path("analysis/claims/numeric_bindings.json")
+METADATA = Path("analysis/claims/metadata.json")
+FAMILIES = ["Niethamer: initial atlas", "Niethamer: follow-ups", "Cardoso and ligand extensions",
+            "Choi: epithelial states", "Epithelial chromatin", "Axin2 and Il1r1", "Cross-study epithelial specificity"]
+
+
+def status_group(status: str) -> str:
+    value = status.lower()
+    if value.startswith("validated"):
+        return "Validated"
+    if value.startswith(("descriptive", "exploratory")):
+        return "Descriptive or exploratory"
+    if value.startswith(("not established", "not establishable")):
+        return "Not established"
+    if value.startswith(("refuted", "retracted")):
+        return "Refuted or retracted"
+    if "displaced" in value:
+        return "Displaced"
+    raise ValueError(f"Unrecognized claim status: {status}")
+
+
+def claim_family(number: int) -> str:
+    # Explicit provenance grouping, independent of the ledger's historical headings.
+    if 165 <= number <= 168:
+        return FAMILIES[6]
+    if number > 168:
+        raise ValueError(f"New claim C{number} needs an explicit analysis-family assignment")
+    if number <= 8:
+        return FAMILIES[0]
+    if number <= 23 or number >= 155:
+        return FAMILIES[1]
+    if 24 <= number <= 84 or 105 <= number <= 115:
+        return FAMILIES[2]
+    if 85 <= number <= 104:
+        return FAMILIES[3]
+    if 116 <= number <= 133 or number in (151, 153):
+        return FAMILIES[4]
+    return FAMILIES[5]
+
+
+def parse_register(text: str, root: Path) -> list[dict]:
+    rows = []
+    section = ""
+    for line in text.splitlines():
+        if line.startswith("## "):
+            section = line[3:].strip()
+        if not re.match(r"^\|\s*C\d+\s*\|", line):
+            continue
+        parts = [value.strip() for value in line.split("|")[1:-1]]
+        if len(parts) != 6:
+            raise ValueError(f"Expected six fields: {line[:90]}")
+        identifier, claim, analysis, artifact_text, status, limitations = parts
+        artifacts = []
+        unresolved = []
+        for label in re.findall(r"`([^`]+)`", artifact_text):
+            if "/" in label or "\\" in label:
+                candidate = label.replace("\\", "/")
+                path = root / candidate
+                if path.exists():
+                    artifacts.append(candidate)
+                else:
+                    unresolved.append(label)
+            else:
+                unresolved.append(label)
+        # Also retain Markdown file targets when evidence uses links.
+        for target in re.findall(r"\]\(([^)]+)\)", artifact_text):
+            if not target.startswith(("http:", "https:")) and (root / target.split("#")[0]).exists():
+                artifacts.append(target.split("#")[0])
+        if "delegated reassessment" in status:
+            review = "assistant_reassessed_under_owner_authorization"
+        elif "as a block" in status:
+            review = "owner_retained_as_block_to_revisit"
+        elif "owner retained" in status:
+            review = "owner_retained_individually"
+        else:
+            review = "individual_owner_review_not_recorded_in_status"
+        displaced = section.lower().startswith("displaced") or "displaced" in status.lower()
+        rows.append({"id": identifier, "family": claim_family(int(identifier[1:])), "register_section": section,
+                     "estimand_or_proposition": claim, "design_and_observation": analysis,
+                     "datasets_explicit_in_row": sorted(set(re.findall(r"GSE\d+", line))),
+                     "artifacts": sorted(set(artifacts)), "artifact_text": artifact_text,
+                     "unresolved_artifact_labels": unresolved, "status": status,
+                     "status_group": "Displaced" if displaced else status_group(status), "review_state": review,
+                     "limitations_and_interpretation": limitations})
+    ids = [row["id"] for row in rows]
+    if len(ids) != len(set(ids)):
+        raise ValueError("Duplicate claim identifiers")
+    return sorted(rows, key=lambda row: int(row["id"][1:]))
+
+
+def evaluate_binding(binding: dict, root: Path):
+    path = root / binding["path"]
+    if binding["kind"] == "json":
+        value = json.loads(path.read_text(encoding="utf-8-sig"))
+        for key in binding["pointer"]:
+            value = value[key]
+        return value
+    if binding["kind"] != "csv":
+        raise ValueError(f"Unknown binding kind: {binding['kind']}")
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    for key, value in binding.get("where", {}).items():
+        rows = [row for row in rows if row[key] == str(value)]
+    operation = binding["operation"]
+    if operation == "count":
+        return len(rows)
+    values = [float(row[binding["field"]]) for row in rows]
+    if not values:
+        raise ValueError(f"Empty numeric selection for {binding['id']}")
+    operations = {"median": statistics.median, "sum": sum, "min": min, "max": max}
+    if operation == "single":
+        if len(values) != 1:
+            raise ValueError(f"Expected one row for {binding['id']}, got {len(values)}")
+        return values[0] * binding.get("scale", 1)
+    return operations[operation](values) * binding.get("scale", 1)
+
+
+def verify_bindings(bindings: list[dict], root: Path) -> list[str]:
+    errors = []
+    for binding in bindings:
+        try:
+            observed = evaluate_binding(binding, root)
+            expected = binding["expected"]
+            if isinstance(expected, (int, float)) and not isinstance(expected, bool):
+                match = math.isclose(observed, expected, rel_tol=0,
+                                     abs_tol=binding.get("absolute_tolerance", 1e-8))
+            else:
+                match = observed == expected
+            if not match:
+                errors.append(f"{binding['id']}: expected {expected!r}, observed {observed!r}")
+        except (OSError, ValueError, KeyError, TypeError, IndexError) as error:
+            errors.append(f"{binding.get('id', '?')}: {error}")
+    return errors
+
+
+def generated(root: Path) -> tuple[str, str]:
+    text = (root / "CLAIMS.md").read_text(encoding="utf-8")
+    rows = parse_register(text, root)
+    bindings = json.loads((root / BINDINGS).read_text(encoding="utf-8"))["bindings"]
+    metadata_path = root / METADATA
+    metadata = json.loads(metadata_path.read_text(encoding="utf-8"))["claims"] if metadata_path.exists() else {}
+    ids = {row["id"] for row in rows}
+    for binding in bindings:
+        if not set(binding["claims"]).issubset(ids):
+            raise ValueError(f"Binding references missing claim: {binding['id']}")
+        if "claim_text_template" in binding:
+            required = binding["claim_text_template"].format(value=evaluate_binding(binding, root))
+            for row in rows:
+                if row["id"] in binding["claims"]:
+                    narrative = row["estimand_or_proposition"] + " " + row["design_and_observation"]
+                    if required not in narrative:
+                        raise ValueError(f"{binding['id']}: narrative missing computed text {required!r}")
+    for row in rows:
+        details = metadata.get(row["id"], {})
+        row["claim_kind"] = details.get("kind", "not_yet_normalized")
+        row["sample_definition"] = details.get("sample_definition", "See design_and_observation; not yet normalized")
+        row["statistical_unit"] = details.get("unit", "not_yet_normalized")
+        row["shared_data_dependencies"] = details.get("datasets", row["datasets_explicit_in_row"])
+        row["numeric_bindings"] = [b["id"] for b in bindings if row["id"] in b["claims"]]
+        row["ci_coverage"] = "paths_and_selected_numeric_fields" if row["numeric_bindings"] else "resolved_paths_and_register_consistency_only"
+    manifest = {"schema_version": 1, "source": "CLAIMS.md",
+                "source_sha256": hashlib.sha256(text.encode()).hexdigest(),
+                "interpretation": "Generated index, not a certificate of biological validity. Numeric checks have explicitly bounded coverage.",
+                "claims": rows}
+    counts = collections.Counter(row["status_group"] for row in rows)
+    lines = ["# Claim summary", "", "Generated by `analysis/scripts/claim_contract.py`; edit the [register](../CLAIMS.md), not this summary.", "",
+             "Status counts include biological observations, method checks and decision records. They do not measure evidential calibration or independent discoveries.", "",
+             "| Status | Rows |", "|---|---:|"]
+    lines += [f"| {status} | {counts[status]} |" for status in ["Validated", "Descriptive or exploratory", "Not established", "Refuted or retracted", "Displaced"]]
+    lines += ["", f"Total: **{len(rows)}**. Rows with selected machine-checked numeric bindings: **{sum(bool(r['numeric_bindings']) for r in rows)}**.", "",
+              "The [manifest](../analysis/claims/manifest.json) retains each proposition, design, dataset IDs explicitly present in its row, evidence paths, full status, review authority and limitations. Sample units remain in the design prose; absence of normalized metadata is not interpreted as independence.", "",
+              "| ID | Analysis family | Status | Review state | Numeric bindings |", "|---|---|---|---|---|"]
+    lines += [f"| {r['id']} | {r['family']} | {'Displaced; historical status: ' if r['status_group']=='Displaced' else ''}{r['status']} | {r['review_state']} | {', '.join(r['numeric_bindings']) or 'None; not recomputed by CI'} |" for r in rows]
+    return json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", "\n".join(lines) + "\n"
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--check", action="store_true")
+    args = parser.parse_args()
+    bindings = json.loads((REPO / BINDINGS).read_text(encoding="utf-8"))["bindings"]
+    errors = verify_bindings(bindings, REPO)
+    outputs = zip((MANIFEST, SUMMARY), generated(REPO))
+    for relative, content in outputs:
+        path = REPO / relative
+        if args.check:
+            if not path.exists() or path.read_text(encoding="utf-8") != content:
+                errors.append(f"Stale generated file: {relative}; run claim_contract.py")
+        else:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(content, encoding="utf-8")
+    if errors:
+        print("\n".join(errors))
+        return 1
+    print(f"Claim contract {'verified' if args.check else 'generated'}; {len(bindings)} numeric bindings passed.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

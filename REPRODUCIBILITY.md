@@ -6,9 +6,9 @@ pinned scientific Python environment.
 
 ## 1. Review the result without computation
 
-Start with [`FINDINGS.md`](FINDINGS.md), then follow each figure to its tracked
+Start with [`docs/PORTFOLIO.md`](docs/PORTFOLIO.md) and [`RESEARCH_QUESTIONS.md`](RESEARCH_QUESTIONS.md), then follow each figure to its tracked
 table and generated per-dataset report. [`docs/PIPELINE_AS_RUN.md`](docs/PIPELINE_AS_RUN.md)
-is the authoritative record of what ran. It is generated from the decision
+is the record of the original atlas pipeline, not every later trial. It is generated from the decision
 logs rather than maintained as a second handwritten method description.
 
 ## 2. Validate the tracked repository
@@ -17,13 +17,77 @@ Python 3.12 is recommended; no third-party package is needed:
 
 ```bash
 python analysis/scripts/validate_repository.py
-python -m compileall -q analysis/scripts
+python analysis/scripts/claim_contract.py --check
+python -m unittest discover -s analysis/tests -q
+python -m compileall -q analysis Thesis
 ```
 
 The validator checks local documentation links, parses every tracked JSON
 artefact, and recomputes the headline counts, medians, cluster purity, and
 lineage-tracing range from the tracked CSV tables. GitHub Actions runs the same
-checks on every push and pull request.
+checks on every push and pull request. The generated claim manifest binds
+selected values to explicit artifacts, filters and aggregation rules. Its
+coverage is stated per row; CI does not reproduce all biological claims.
+
+## Scientific correction workflows (September 2026)
+
+Historical trials are preserved. Corrected results and their run specifications
+live in [ligand corrections](analysis/corrections/ligand/README.md),
+[statistical corrections](analysis/corrections/statistics/README.md), and
+[epithelial specificity](Thesis/epithelial_state_specificity/README.md). Those
+pages give the exact scripts, inputs, outputs and seeds for each pass. Review
+them before launching a large data stream. Large caches and the local R runtime
+are ignored by Git; compact results, plots, source definitions and provenance
+are retained.
+
+### Python environment and recovery
+
+The original atlas requirements are in `analysis/requirements.txt`; the later
+Windows x86-64 stack is pinned in
+[`analysis/config/requirements-x64.txt`](analysis/config/requirements-x64.txt).
+They serve different workflows. Use a stable installed CPython 3.12 interpreter
+of the same architecture as the binary packages. The lock file documents the
+rebuild commands; a temporary interpreter location should not be used as the
+base of a durable environment.
+
+In the reviewed checkout, both old venv launchers pointed to unavailable base
+interpreters. A compatible working CPython 3.12 x64 successfully reused the
+existing `.venv-x64/Lib/site-packages`, without reinstalling the analysis stack.
+The reusable launcher is explicit about this recovery:
+
+```bash
+python analysis/scripts/run_with_environment.py --site-packages .venv-x64/Lib/site-packages --check
+python analysis/scripts/run_with_environment.py --site-packages .venv-x64/Lib/site-packages analysis/scripts/15_claims_ledger_figure.py
+```
+
+Here `python` must be the working compatible interpreter, not the broken venv
+launcher. This verifies usable installed packages; it is not proof of a fresh
+environment rebuild on another machine. On other platforms create a native
+compatible environment and follow the workflow-specific dependencies.
+
+### Reference statistics and provenance
+
+The statistical corrections use official R packages rather than naming a
+custom approximation CAMERA. Runtime and package versions, commands and output
+tables are recorded with that correction. The original W1 output is unchanged.
+
+The shared run-record helper now content-hashes declared inputs, records code
+identity, writes atomically, and preserves previous record bytes in a
+content-addressed `.history/` directory before another run. This improves future
+runs; it cannot retroactively preregister historical analyses. Corrected passes
+are labelled as post-audit specifications on already inspected data.
+
+After an authorized claim edit, regenerate the evidence index and displays:
+
+```bash
+python analysis/scripts/claim_contract.py
+python analysis/scripts/14_write_negative_results.py
+python analysis/scripts/15_claims_ledger_figure.py
+```
+
+The ledger figure needs matplotlib; the first two commands use the standard
+library. Numeric bindings should change only with a documented evidence change,
+not merely to silence a failed check.
 
 ## 3. Re-run from deposited count matrices
 

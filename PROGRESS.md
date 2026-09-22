@@ -3,6 +3,17 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
+## Current state: delegated remediation, 22 September 2026
+
+The owner authorized claim reassessment, audit orders 1–4, necessary additional
+analyses and figures, then purpose-aware dataset selection using the supplied
+Notion target map. Current implementation and verification are recorded in
+[the remediation record](docs/remediation/2026-09-22/IMPLEMENTATION_STATUS.md).
+The older entries below are history, not the current execution queue. Decision
+32 records reassessment authority; prior owner retention does not prevent the
+new explicitly authorized reclassification. No original raw inputs are edited.
+
+
 Last updated: 2026-09-21 (the two original series moved into Thesis/ beside their source papers, the README left open-ended, the owner's rule on multi-agent cost recorded, the docs pages cleared of em-dashes, a paper-style figure drawn for each research question, a scan of where a gene set enrichment analysis is admissible, and the first three GSEA trials; see items 37 to 40). Previously 2026-09-20 (two branches of roadmap paper 2 on multiome deposits, an eight-adversary audit that corrected 14 register rows, the root README rewritten around a claims ledger drawn from the register, and RESEARCH_QUESTIONS.md added as the question-first entry point; items 35 and 36), 2026-09-17, 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and

@@ -696,12 +696,48 @@ readings are Descriptive only, and the resolution against long-term arm is
 confounded with age, harvest date and sex. Rows C162 to C164 await my
 review.
 
+**32 · Delegated scientific reassessment and portfolio remediation.**
+(2026-09-22.) After the repository audit, the owner explicitly authorized the
+assistant to apply priority fixes, reclassify claims that no longer warranted
+retention, close feasible structural gaps, and carry out improvement orders
+1–4. The owner also authorized relevant additional analyses and figures for
+portfolio use and requested new research questions arising from the corrected
+evidence. These are delegated assistant judgments; they are not represented as
+individual owner review of every changed row. Decisions 28–31 remain the
+historical record of the preceding retention choices.
+
+The corrected analyses preserve raw inputs and historical trials, using separate
+output locations for epithelial-only ligand rankings, annotation/depth source
+comparisons, reference gene-set inference and a unified epithelial specificity
+project. Specifications are retrospective corrections on known data, not new
+unseen-data preregistrations. The exact before/after claim text is recorded in
+[`claim_decisions.json`](docs/remediation/2026-09-22/claim_decisions.json).
+
+The reassessment distinguishes observed directions from calibrated biological
+inference, detection from abundance and surface mechanisms, accessibility from
+fate, and reference-cell split calibration from animal-level uncertainty.
+Bulk-sorted associations are not relabelled as same-cell overlap. C152's
+provenance contradiction and C154's bookkeeping proposition are corrected.
+Reference CAMERA and normalization sensitivities replace the custom-method
+interpretation of W1 while retaining its original outputs.
+
+The structured claim index and explicit numeric bindings record the coverage of
+machine checks. Previous run records are archived before replacement and new
+records include content hashes and code identity. CI now covers Python sources
+under both analysis and Thesis, contract tests, and generated-index consistency.
+The portfolio entry point emphasizes demonstrated analyses and remaining limits;
+status counts are not used as a measure of scientific calibration.
+
+Completion, numerical results, tests and the purpose-aware next-stage decision
+are in the [implementation record](docs/remediation/2026-09-22/IMPLEMENTATION_STATUS.md).
+
 ## How outputs were reviewed
 
 Every run writes its decisions to machine logs (`decisions.json`,
-`analysis_log.txt`), and the per-dataset reports and pipeline record are
-*generated* from those artefacts, numbers in the documentation cannot drift
-from what was computed, and a claim I couldn't trace to an artefact was
+`analysis_log.txt`), and the original per-dataset reports and pipeline record are
+*generated* from those artefacts. Later manually maintained narratives can
+drift; decision 32 adds explicit generated summaries and selected numeric
+bindings with stated coverage. A claim I could not trace to an artefact was
 treated as unverified and removed. Work was reviewed between sessions against
 [`PROGRESS.md`](PROGRESS.md), landed through pull requests, and known issues
 were carried forward in writing rather than dropped.

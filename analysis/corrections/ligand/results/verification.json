@@ -1,0 +1,92 @@
+{
+  "eligible_donors": 22,
+  "resources": {
+    "cellchatdb": {
+      "scored_subtype_pairs": 32444,
+      "donor_pair_winners": 7175,
+      "forbidden_senders": 0,
+      "forbidden_targets": 0,
+      "donor_count": 22
+    },
+    "cellphonedb": {
+      "scored_subtype_pairs": 18499,
+      "donor_pair_winners": 4525,
+      "forbidden_senders": 0,
+      "forbidden_targets": 0,
+      "donor_count": 22
+    },
+    "consensus": {
+      "scored_subtype_pairs": 90982,
+      "donor_pair_winners": 18296,
+      "forbidden_senders": 0,
+      "forbidden_targets": 0,
+      "donor_count": 22
+    },
+    "connectomedb2020": {
+      "scored_subtype_pairs": 48849,
+      "donor_pair_winners": 9368,
+      "forbidden_senders": 0,
+      "forbidden_targets": 0,
+      "donor_count": 22
+    },
+    "italk": {
+      "scored_subtype_pairs": 62932,
+      "donor_pair_winners": 12102,
+      "forbidden_senders": 0,
+      "forbidden_targets": 0,
+      "donor_count": 22
+    }
+  },
+  "warnings": [],
+  "minimum_scored_compartment_cells": {
+    "scored_epithelial": 65,
+    "scored_fibroblast": 52
+  },
+  "historical_shared_cellchat_winners": {
+    "n": 6505,
+    "max_score_absolute_difference": 0.012160202520335603,
+    "score_spearman": 0.9999754243606619,
+    "scope": "Only historical winners retaining the same allowed source and target; not proof of biological validity",
+    "max_within_donor_odds_scale_relative_range": 8.65648736152733e-13,
+    "scale_note": "Shared score changes are a common within-donor rescaling in probability-odds space; LIANA scales by the maximum expression of the scoped cells. This preserves their relative ordering."
+  },
+  "c37_summary_recomputed": true,
+  "c37_original_raw_detection_disagreements": 0,
+  "c37_cells_excluded_by_budget": {
+    "500": 0,
+    "1000": 0,
+    "2000": 1188
+  },
+  "artifacts_sha256": {
+    "analysis\\corrections\\ligand\\results\\lr\\cellchatdb_donor_pair_winners.csv": "a7c90c9b3cfd7c2d8dbc3495a20e3956868acddc5fee133d0a632099d97505c3",
+    "analysis\\corrections\\ligand\\results\\lr\\cellchatdb_all_source_target_scores.csv.gz": "7d2afc4dd1ec9954694110a85e8599d2f20cb9beafa5b07cf36e0e7c2b298250",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c14_does_the_ranking_depend_on_the_database\\c14_partial_cellchatdb.csv": "663f70827682c251620091f7fe1762a74d712feac7c6ce30e829e58f3131bb87",
+    "analysis\\corrections\\ligand\\results\\lr\\cellphonedb_donor_pair_winners.csv": "23cd0d4ea2a7be1c208bbac66d960eed420c00b9bf026ac6cf97acd72b318fbd",
+    "analysis\\corrections\\ligand\\results\\lr\\cellphonedb_all_source_target_scores.csv.gz": "f3343376d0a33ac51302c46f5616f7f3f4c25cafabc76197a9c3b2f1dadda85f",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c14_does_the_ranking_depend_on_the_database\\c14_partial_cellphonedb.csv": "59e1f97574dfa766731a8bd5d024c3382609a12ee1c3f3eb8ee97ba4466194f5",
+    "analysis\\corrections\\ligand\\results\\lr\\consensus_donor_pair_winners.csv": "fb57032881fcd51a3db55b907efae7ad9f60944b9a49f1e9a08a4677c6ecab65",
+    "analysis\\corrections\\ligand\\results\\lr\\consensus_all_source_target_scores.csv.gz": "c7dcdfb54c124bf2347f8eb5002463db7e4d323924038c6f0e188b14773b5af7",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c14_does_the_ranking_depend_on_the_database\\c14_partial_consensus.csv": "9f771c17b8b5594778939419c8a2157edc06eb4d4a6c482b78703935af911f3c",
+    "analysis\\corrections\\ligand\\results\\lr\\connectomedb2020_donor_pair_winners.csv": "a0aca92f12450d636ac60a472f796a301c41a60acbb2c851673b0c73c1ef1f2a",
+    "analysis\\corrections\\ligand\\results\\lr\\connectomedb2020_all_source_target_scores.csv.gz": "387a900a03492681393df2ed1fc9be06be9a5ad25f796a96b02321ce06ee4bba",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c14_does_the_ranking_depend_on_the_database\\c14_partial_connectomedb2020.csv": "c347c249567f596d908837d99b0614b6ef26b41ba95196d926e7bce3b8835b19",
+    "analysis\\corrections\\ligand\\results\\lr\\italk_donor_pair_winners.csv": "e4fd49ee05a5abce4879ad4efb3fde71125c567bfb9ad2678acf1ef746fbdbcd",
+    "analysis\\corrections\\ligand\\results\\lr\\italk_all_source_target_scores.csv.gz": "b71a06465d64ab41b2880060d3391f61fa0fa674111882bbc42046081545b577",
+    "Thesis\\gate2_05_cardoso_2026\\trials\\c14_does_the_ranking_depend_on_the_database\\c14_partial_italk.csv": "0bcca10877e3dd20a37aae7371b1352d61ac9ca2eda9f1787bf98d2aa07b8666",
+    "analysis\\corrections\\ligand\\results\\lr\\canonical_egfr_receptor_coverage.csv": "fcc4273828dccfa738674114aee453885a204a7ee60fd2a384df7f5aa70c76fc",
+    "analysis\\corrections\\ligand\\results\\lr\\donor_eligibility.csv": "98439230a169a2b1fa020d1f0efbf9c685bf0d4a090c437be8af941a54613984",
+    "analysis\\corrections\\ligand\\results\\lr\\egfr_component_pairs.csv": "39ca5d035afdc212df735378be7903213022230ce17d6a2185a0ea84b7ba8b6d",
+    "analysis\\corrections\\ligand\\results\\lr\\historical_rank_comparison.csv": "251e8d2029819369546b69d4ca8d79221aaa65b1873ae3e5b712ea976ea4340f",
+    "analysis\\corrections\\ligand\\results\\lr\\post_subtype_floor_counts.csv": "afc8c9e8e7036039567b3214632c5c3c762731de49749662c129a13445c3fb7f",
+    "analysis\\corrections\\ligand\\results\\lr\\rankings_by_resource.csv": "1eac9b702624acf78f772de8a8584f232d2f46700d4fbda62d812c870d3f59fe",
+    "analysis\\corrections\\ligand\\results\\lr\\resource_cellchatdb.csv": "d2b0d1b411fb03b45a32d6c366541319773d73f05b13d3dd5881316db381f2dc",
+    "analysis\\corrections\\ligand\\results\\lr\\resource_cellphonedb.csv": "8af9a57c8864345f83cf7f092a98a8c570c8f296d5be0342e0944330ffae089c",
+    "analysis\\corrections\\ligand\\results\\lr\\resource_connectomedb2020.csv": "2ea6cf6ebb3b9038e8de413bfc19ec05279bc797c391877dd3218cdd90ff36c4",
+    "analysis\\corrections\\ligand\\results\\lr\\resource_consensus.csv": "8ed134f6de7d2880a12a849ed5aec3f4d538ad6264f4b6178a1431f4c5df3a11",
+    "analysis\\corrections\\ligand\\results\\lr\\resource_italk.csv": "10495a16dcc23722910273d37a030840f895e8de981214fe81d656a33cf49a17",
+    "analysis\\corrections\\ligand\\results\\lr\\resource_summary.csv": "cf3c744c0cc4591faac119aa85ea3534182468faa0a0e1967cebd59585d01926",
+    "analysis\\corrections\\ligand\\results\\lr\\top15_overlap.csv": "b208cc5db35b8fc1105c96da03bede1a42d40745387460595c793f369d5b719e",
+    "analysis\\corrections\\ligand\\results\\c37\\per_donor.csv": "0a4d9920c716cda829e68b12a7bf6d54554c4593456a05cc0582b51d0a837136",
+    "analysis\\corrections\\ligand\\results\\c37\\summary.json": "a6e5a37bc66ec2374f0eecd0784c83f7cad71fb0b9669e5d111af2c4ef5f670d"
+  }
+}

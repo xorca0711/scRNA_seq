@@ -1,0 +1,6 @@
+resource,n_donors,pairs,top_pair,abundance_share_top15,historical_guard_fires,exact_egfr_ligand_order,areg_rank_among_exact_egfr,areg_median_rank,egfr_component_pairs,shared_historical_top15,note
+cellchatdb,22,312,FN1 to CD44,0.7333333333333333,True,"AREG, HBEGF, EREG, TGFA, BTC",1.0,10.5,5,13,"Guard is a composition flag, not a validity test for signalling"
+cellphonedb,22,208,APP to CD74,0.3333333333333333,False,"AREG, BTC, EREG",1.0,6.0,5,13,"Guard is a composition flag, not a validity test for signalling"
+consensus,22,768,FGF14 to FGFR1,0.13333333333333333,False,,,,25,11,"Guard is a composition flag, not a validity test for signalling"
+connectomedb2020,22,386,HSP90AA1 to EGFR,0.13333333333333333,False,"AREG, HBEGF, EREG, BTC, TGFA",1.0,35.5,15,11,"Guard is a composition flag, not a validity test for signalling"
+italk,22,518,FGF14 to FGFR1,0.13333333333333333,False,"AREG, HBEGF, EREG, BTC, TGFA",1.0,44.5,22,12,"Guard is a composition flag, not a validity test for signalling"

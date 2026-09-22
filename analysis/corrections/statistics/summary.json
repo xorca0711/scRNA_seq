@@ -1,0 +1,191 @@
+{
+  "frozen_discovery_candidates": 254,
+  "historical_replicated": 62,
+  "corrected_replicated": 0,
+  "fixed001_replicated": 30,
+  "fixed001_and_historical_replicated": 28,
+  "discovery_candidates_eligible": 254,
+  "validation_candidates_eligible": 244,
+  "discovery_candidates_global_FDR05": 0,
+  "validation_candidates_global_FDR05": 0,
+  "discovery_hits_under_original_multiplicity_families": 0,
+  "by_compartment": {
+    "AT2": {
+      "replicates": 8,
+      "corrected_replicated": 0,
+      "fixed001_replicated": 1
+    },
+    "fibroblasts": {
+      "replicates": 3,
+      "corrected_replicated": 0,
+      "fixed001_replicated": 1
+    },
+    "macrophages": {
+      "replicates": 51,
+      "corrected_replicated": 0,
+      "fixed001_replicated": 28
+    }
+  },
+  "w1": {
+    "historical_logCPM/A": {
+      "sets_tested": 5,
+      "hits": 0,
+      "min_FDR": 0.918917669557412,
+      "max_FDR": 0.918917669557412
+    },
+    "historical_logCPM/B": {
+      "sets_tested": 5,
+      "hits": 0,
+      "min_FDR": 0.454182228400692,
+      "max_FDR": 0.454182228400692
+    },
+    "voom_TMM/A": {
+      "sets_tested": 5,
+      "hits": 0,
+      "min_FDR": 0.46355577592199,
+      "max_FDR": 0.465460778590434
+    },
+    "voom_TMM/B": {
+      "sets_tested": 5,
+      "hits": 0,
+      "min_FDR": 0.427638578400064,
+      "max_FDR": 0.5654543171118
+    }
+  },
+  "g1_frozen_DNA_replication": [
+    {
+      "NGenes": 38,
+      "Correlation": 0.105825259466866,
+      "Direction": "Up",
+      "PValue": 0.0143504162343967,
+      "FDR": 0.926485900511208,
+      "set": "GOBP_CELL_CYCLE_DNA_REPLICATION",
+      "n_first": 12,
+      "n_second": 3,
+      "residual_df": 13,
+      "genes_tested": 12410,
+      "method": "voom_TMM",
+      "FDR_family": 0.926485900511208,
+      "specification": "all_unadjusted"
+    },
+    {
+      "NGenes": 16,
+      "Correlation": 0.2360815424209,
+      "Direction": "Up",
+      "PValue": 0.057828238330853,
+      "FDR": 0.926485900511208,
+      "set": "GOBP_MITOTIC_DNA_REPLICATION",
+      "n_first": 12,
+      "n_second": 3,
+      "residual_df": 13,
+      "genes_tested": 12410,
+      "method": "voom_TMM",
+      "FDR_family": 0.926485900511208,
+      "specification": "all_unadjusted"
+    },
+    {
+      "NGenes": 38,
+      "Correlation": 0.0889069988646185,
+      "Direction": "Up",
+      "PValue": 0.111508126971031,
+      "FDR": 0.998592224535951,
+      "set": "GOBP_CELL_CYCLE_DNA_REPLICATION",
+      "n_first": 12,
+      "n_second": 3,
+      "residual_df": 9,
+      "genes_tested": 12410,
+      "method": "voom_TMM",
+      "FDR_family": 0.998592224535951,
+      "specification": "all_adjusted"
+    },
+    {
+      "NGenes": 16,
+      "Correlation": 0.156241215613017,
+      "Direction": "Up",
+      "PValue": 0.296691508299667,
+      "FDR": 0.998592224535951,
+      "set": "GOBP_MITOTIC_DNA_REPLICATION",
+      "n_first": 12,
+      "n_second": 3,
+      "residual_df": 9,
+      "genes_tested": 12410,
+      "method": "voom_TMM",
+      "FDR_family": 0.998592224535951,
+      "specification": "all_adjusted"
+    },
+    {
+      "NGenes": 38,
+      "Correlation": 0.0945631558284736,
+      "Direction": "Up",
+      "PValue": 0.153101080307908,
+      "FDR": 0.999606327102418,
+      "set": "GOBP_CELL_CYCLE_DNA_REPLICATION",
+      "n_first": 8,
+      "n_second": 3,
+      "residual_df": 6,
+      "genes_tested": 12379,
+      "method": "voom_TMM",
+      "FDR_family": 0.999606327102418,
+      "specification": "heterozygote_adjusted"
+    },
+    {
+      "NGenes": 16,
+      "Correlation": 0.181869028845972,
+      "Direction": "Up",
+      "PValue": 0.347612981585768,
+      "FDR": 0.999606327102418,
+      "set": "GOBP_MITOTIC_DNA_REPLICATION",
+      "n_first": 8,
+      "n_second": 3,
+      "residual_df": 6,
+      "genes_tested": 12379,
+      "method": "voom_TMM",
+      "FDR_family": 0.999606327102418,
+      "specification": "heterozygote_adjusted"
+    },
+    {
+      "NGenes": 34,
+      "Correlation": 0.0957952252866708,
+      "Direction": "Up",
+      "PValue": 0.134370943795664,
+      "FDR": 0.996438544769172,
+      "set": "GOBP_CELL_CYCLE_DNA_REPLICATION",
+      "n_first": 3,
+      "n_second": 3,
+      "residual_df": 3,
+      "genes_tested": 11000,
+      "method": "voom_TMM",
+      "FDR_family": 0.996438544769172,
+      "specification": "december_heterozygote"
+    },
+    {
+      "NGenes": 16,
+      "Correlation": 0.207092690232704,
+      "Direction": "Up",
+      "PValue": 0.184378629908871,
+      "FDR": 0.996438544769172,
+      "set": "GOBP_MITOTIC_DNA_REPLICATION",
+      "n_first": 3,
+      "n_second": 3,
+      "residual_df": 3,
+      "genes_tested": 11000,
+      "method": "voom_TMM",
+      "FDR_family": 0.996438544769172,
+      "specification": "december_heterozygote"
+    }
+  ],
+  "lodo": {
+    "discovery": {
+      "sets_evaluated": 254,
+      "sets_with_any_direction_reversal": 0,
+      "historical_replicated_sets_with_reversal": 0,
+      "sets_with_below_floor_omissions": 9
+    },
+    "validation": {
+      "sets_evaluated": 244,
+      "sets_with_any_direction_reversal": 54,
+      "historical_replicated_sets_with_reversal": 1,
+      "sets_with_below_floor_omissions": 23
+    }
+  }
+}

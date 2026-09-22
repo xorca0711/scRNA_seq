@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 import re
 import statistics
 import sys
@@ -21,7 +22,7 @@ from urllib.parse import unquote
 
 REPO = Path(__file__).resolve().parents[2]
 LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
-SKIP_DIRS = {".git", ".venv", ".venv-x64", ".claude", "raw_data"}
+SKIP_DIRS = {".git", ".venv", ".venv-x64", ".venv-repro", ".tools", ".claude", "raw_data", "__pycache__", "cache"}
 
 
 class Validation:
@@ -54,12 +55,16 @@ def median_by(rows: list[dict[str, str]], group: str, value: str) -> dict[float,
     return {key: statistics.median(values) for key, values in grouped.items()}
 
 
+def source_files(root: Path, suffix: str) -> list[Path]:
+    files = []
+    for directory, subdirectories, names in os.walk(root):
+        subdirectories[:] = [name for name in subdirectories if name not in SKIP_DIRS]
+        files.extend(Path(directory) / name for name in names if name.endswith(suffix))
+    return files
+
+
 def markdown_files() -> list[Path]:
-    return [
-        path
-        for path in REPO.rglob("*.md")
-        if not any(part in SKIP_DIRS for part in path.relative_to(REPO).parts)
-    ]
+    return source_files(REPO, ".md")
 
 
 def heading_slugs(text: str) -> set[str]:
@@ -160,7 +165,7 @@ def check_markdown_links(result: Validation) -> None:
 
 
 def check_machine_readable_files(result: Validation) -> None:
-    for path in [*(REPO / "analysis").rglob("*.json"), *(REPO / "Thesis").rglob("*.json")]:
+    for path in source_files(REPO / "analysis", ".json") + source_files(REPO / "Thesis", ".json"):
         try:
             json.loads(path.read_text(encoding="utf-8"))
         except (OSError, UnicodeError, json.JSONDecodeError) as exc:
@@ -251,6 +256,14 @@ def main() -> int:
     check_claim_ids_unique(result)
     check_machine_readable_files(result)
     check_headline_results(result)
+    from claim_contract import generated, verify_bindings, MANIFEST, SUMMARY, BINDINGS
+    bindings = read_json(str(BINDINGS))["bindings"]
+    for error in verify_bindings(bindings, REPO):
+        result.require(False, error)
+    for relative, expected in zip((MANIFEST, SUMMARY), generated(REPO)):
+        path = REPO / relative
+        result.require(path.exists() and path.read_text(encoding="utf-8") == expected,
+                       f"stale generated evidence contract: {relative}")
 
     if result.failures:
         print(f"Repository validation FAILED ({len(result.failures)} of {result.checks} checks):")
@@ -261,7 +274,8 @@ def main() -> int:
     print(f"Repository validation passed: {result.checks} checks")
     print("  local Markdown links resolve")
     print("  tracked JSON artefacts parse")
-    print("  headline counts and biological results match tracked tables")
+    print("  selected headline values and explicit numeric bindings match tracked tables")
+    print("  claim index and summary match the register; this is not full scientific reproduction")
     return 0
 
 

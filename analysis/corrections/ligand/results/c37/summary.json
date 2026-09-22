@@ -1,0 +1,104 @@
+{
+  "original_detection": {
+    "n_donors": 10,
+    "median_epithelial": 0.459082381561044,
+    "median_myeloid": 0.2714569230350977,
+    "median_paired_difference": 0.21029200826078465,
+    "epithelial_higher": 10,
+    "p_two_sided": 0.001953125,
+    "donors": [
+      "LUNG_T06",
+      "LUNG_T09",
+      "LUNG_T18",
+      "LUNG_T19",
+      "LUNG_T20",
+      "LUNG_T25",
+      "LUNG_T28",
+      "LUNG_T30",
+      "LUNG_T31",
+      "LUNG_T34"
+    ]
+  },
+  "raw_detection": {
+    "n_donors": 10,
+    "median_epithelial": 0.459082381561044,
+    "median_myeloid": 0.2714569230350977,
+    "median_paired_difference": 0.21029200826078465,
+    "epithelial_higher": 10,
+    "p_two_sided": 0.001953125,
+    "donors": [
+      "LUNG_T06",
+      "LUNG_T09",
+      "LUNG_T18",
+      "LUNG_T19",
+      "LUNG_T20",
+      "LUNG_T25",
+      "LUNG_T28",
+      "LUNG_T30",
+      "LUNG_T31",
+      "LUNG_T34"
+    ]
+  },
+  "detection_at_500": {
+    "n_donors": 10,
+    "median_epithelial": 0.07249120977698736,
+    "median_myeloid": 0.06251555038903434,
+    "median_paired_difference": 0.013349093540274394,
+    "epithelial_higher": 6,
+    "p_two_sided": 0.322265625,
+    "donors": [
+      "LUNG_T06",
+      "LUNG_T09",
+      "LUNG_T18",
+      "LUNG_T19",
+      "LUNG_T20",
+      "LUNG_T25",
+      "LUNG_T28",
+      "LUNG_T30",
+      "LUNG_T31",
+      "LUNG_T34"
+    ]
+  },
+  "detection_at_1000": {
+    "n_donors": 10,
+    "median_epithelial": 0.12237356454587298,
+    "median_myeloid": 0.09994715909073833,
+    "median_paired_difference": 0.029325640391770436,
+    "epithelial_higher": 6,
+    "p_two_sided": 0.130859375,
+    "donors": [
+      "LUNG_T06",
+      "LUNG_T09",
+      "LUNG_T18",
+      "LUNG_T19",
+      "LUNG_T20",
+      "LUNG_T25",
+      "LUNG_T28",
+      "LUNG_T30",
+      "LUNG_T31",
+      "LUNG_T34"
+    ]
+  },
+  "detection_at_2000": {
+    "n_donors": 10,
+    "median_epithelial": 0.18855829680991548,
+    "median_myeloid": 0.14710988709395595,
+    "median_paired_difference": 0.0626642332054501,
+    "epithelial_higher": 8,
+    "p_two_sided": 0.01953125,
+    "donors": [
+      "LUNG_T06",
+      "LUNG_T09",
+      "LUNG_T18",
+      "LUNG_T19",
+      "LUNG_T20",
+      "LUNG_T25",
+      "LUNG_T28",
+      "LUNG_T30",
+      "LUNG_T31",
+      "LUNG_T34"
+    ]
+  },
+  "cache_raw_detection_disagreements": 0,
+  "selected_cells": 16064
+}

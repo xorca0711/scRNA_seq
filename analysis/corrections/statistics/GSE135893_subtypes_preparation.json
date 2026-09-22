@@ -1,0 +1,33 @@
+{
+  "inputs": [
+    {
+      "path": "raw_data/GSE135893/GSE135893_IPF_metadata.csv.gz",
+      "bytes": 3354014,
+      "mtime_ns": 1789275337587420900,
+      "sha256": "5c67b3717375859aafc4463024847cf30d7af7bb9d5f4ad9a5364ee6d7726bf5"
+    },
+    {
+      "path": "raw_data/GSE135893/GSE135893_genes.tsv.gz",
+      "bytes": 129668,
+      "mtime_ns": 1789275340233265900,
+      "sha256": "7e8612e72f033ef214de101bb782ab1cb60b8c887be2d3e8a0d637de067b0233"
+    },
+    {
+      "path": "raw_data/GSE135893/GSE135893_barcodes.tsv.gz",
+      "bytes": 936873,
+      "mtime_ns": 1789275339171726900,
+      "sha256": "37a9a98a95d59bb4333c8181c14bb2b384701e6fda1c409e79f3e41c681430d4"
+    },
+    {
+      "path": "raw_data/GSE135893/GSE135893_matrix.mtx.gz",
+      "bytes": 1076137992,
+      "mtime_ns": 1789275377661626800
+    }
+  ],
+  "nnz_read": 338061955,
+  "preparation_code_sha256": "01b44d4aa5dd977c1a997a49e03edd8a227860b7b18cb65bcdf2add66e83271c",
+  "n_units": 85,
+  "n_genes": 33694,
+  "total_counts": 396154020,
+  "completed_utc": "2026-09-22T01:35:25Z"
+}

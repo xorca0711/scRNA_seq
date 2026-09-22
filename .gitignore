@@ -61,6 +61,25 @@ desktop.ini
 .idea/
 *~
 .venv-x64/
+.tools/
+.venv-repro/
+analysis/corrections/**/cache/
+analysis/corrections/**/*.npz
+analysis/corrections/**/*.h5ad
+Thesis/epithelial_state_specificity/cache/
+
+# Compact, reproducible correction evidence is part of the portfolio.
+!analysis/corrections/ligand/results/
+!analysis/corrections/ligand/results/*.csv
+!analysis/corrections/ligand/results/*.json
+!analysis/corrections/ligand/results/*.md
+!analysis/corrections/ligand/results/*.png
+!Thesis/epithelial_state_specificity/results/
+!Thesis/epithelial_state_specificity/results/*.csv
+!Thesis/epithelial_state_specificity/results/*.json
+!Thesis/epithelial_state_specificity/results/*.md
+!Thesis/epithelial_state_specificity/results/*.png
+Thesis/epithelial_state_specificity/results/gene_detection.csv
 
 # Derived analysis outputs that are large and fully regenerable by
 # analysis/scripts/run_scrna_analysis.py (figures and small tables ARE tracked).
