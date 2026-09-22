@@ -1,18 +1,27 @@
 # Research questions
 
-This repository uses public lung single-cell and multiome data to generate
-hypotheses and test whether computational observations survive changes in
-annotation, measurement and sample composition. Deposited counts are used where
-available; E1 instead uses deposited normalized expression. Author labels were
-held out of the unsupervised atlas fits, but are explicitly used in
-later compartment pseudobulks and annotation sensitivity analyses.
+This repository reanalyses public lung single-cell RNA-seq and multiome
+(RNA + ATAC) data, applying and evaluating analysis frameworks to characterize
+molecular phenotypes, cell-state programmes and data distributions that can be
+framed as testable research questions about injury and repair.
+
+The organising biological question is:
+
+> Which epithelial and immune-state programmes distinguish productive lung
+> repair from persistent remodelling after injury?
+
+Embeddings, expression and accessibility distributions, programme scores and
+sample-level contrasts provide starting observations. Each question specifies
+the biological interpretation, plausible alternative explanations, and a
+measurement or experiment that could distinguish them. Reproducibility and
+sensitivity analysis establish how much weight an observation can carry.
 
 The computational question is:
 
 > Which epithelial and macrophage programme changes repeat across independent
 > samples after accounting for cell-state composition, genotype and measurement quality?
 
-The biological question is:
+The outcome-linked question is:
 
 > Which of those changes associate with mature AT1 contribution or persistent
 > pathological remodelling in cohorts with independently measured outcomes?
@@ -21,6 +30,10 @@ These questions have different evidence requirements. The current collections
 have no shared, independently measured repair outcome. A late time point is
 not proof of recovery, and a persistent transcriptional state is not proof of
 pathology. Fibrosis, tumour initiation and viral injury are separate contexts.
+
+Deposited counts are used where available; E1 instead uses deposited normalized
+expression. Author labels were held out of the unsupervised atlas fits, but are
+explicitly used in compartment pseudobulks and annotation sensitivity analyses.
 
 The [claim register](CLAIMS.md) records the evidence and limitations for each
 observation. The [methods and reproduction guide](REPRODUCIBILITY.md) describes
