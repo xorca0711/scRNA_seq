@@ -29,6 +29,33 @@ gives both a transcriptome and a chromatin accessibility profile.
 
 ---
 
+## Figure gallery
+
+These existing exploratory displays show why the branch separates transcript
+labels, accessibility measurements and cell-fate claims. The current assessment
+is in [C118–C133](../../../CLAIMS.md); no well passed both chromatin gates, and
+the earlier “silenced but not closed” interpretation was withdrawn.
+
+![RNA and promoter accessibility displays in GSE310539 wildtype nuclei](../../../analysis/figures/rq/rq_a1_chromatin.png)
+
+**RNA and chromatin measure different features.** This display uses a
+two-transcript label and promoter readouts in wildtype wells. Its “closed or
+silenced” title records the historical question, not an established verdict.
+It does not substitute for M3's common-instrument distal-accessibility analysis,
+and neither display can distinguish productive AT1 differentiation from arrest.
+
+![Cldn4 and Krt8 detection in neonatal, adult and injured control wells](../../../analysis/figures/rq/rq_a5_development.png)
+
+**Development is a necessary specificity check.** Cldn4/Krt8 co-detection also
+appears in the uninjured neonatal control. The plotted percentages use the
+available depth; the registered common-budget comparison is M1c/C119. These
+single-library displays do not estimate an independent developmental-stage
+effect or establish equivalence between neonatal and injury-associated states.
+
+See the [trial index](trials/README.md) for the successive controls and refusals,
+and the [epithelial-state specificity project](../../epithelial_state_specificity/README.md)
+for the current source-backed module comparison.
+
 ## What each source paper does and does not already answer
 
 This matters, because a reanalysis that re-derives a published result and calls

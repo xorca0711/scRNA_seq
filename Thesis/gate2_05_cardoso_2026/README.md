@@ -46,6 +46,46 @@ which the Nature paper's own data-availability statement does not name.
 
 ---
 
+## Figure gallery
+
+These are repository analyses of the deposited or extension datasets. The
+corrected ligand results below follow the 2026-09-22 reassessment in
+[CLAIMS.md](../../CLAIMS.md); historical trial outputs remain available in the
+[trial index](trials/README.md).
+
+![Off-target epithelial cells and Areg expression in a mesenchymal-sorted library](trials/c5_figures_for_the_three_findings/c5_fig1_sort_contaminant.png)
+
+**The sorted library contains off-target epithelial cells.** The display
+locates a strongly Areg-detecting epithelial cluster in the mesenchymal sort.
+With one pooled library per genotype, this is a descriptive observation. It
+does not explain how those cells passed the sort, measure surface EpCAM, or
+establish a post-transcriptional escape mechanism (C105/C107 remain Not established).
+
+![Corrected donor-paired AREG annotation and molecule-depth sensitivity](../../analysis/corrections/ligand/results/figures/c37_annotation_depth.png)
+
+**C37 depends on the measurement scale.** “Original” here means unstandardized
+detection under the corrected deposited labels, not the historical marker gate.
+All ten donors are epithelial-higher before standardization; at the primary
+1,000-UMI budget, six of ten are higher and the paired p is 0.130859. The figure
+does not establish a depth-independent source hierarchy, exclusive secretion
+or biological absence. The 2,000-UMI sensitivity excludes some cells and is not
+a replacement for the primary comparison.
+
+![Corrected epithelial-to-fibroblast ligand rankings across resources](../../analysis/corrections/ligand/results/figures/lr_scope_correction.png)
+
+**Sender scope and resource definitions change the ranking.** The corrected
+pass enforces epithelial senders and actual fibroblast cell floors in 22 donors.
+AREG remains first among the prespecified canonical exact-EGFR ligands in the
+four resources retaining such pairs, but broader rankings depend on the resource.
+“No exact AREG–EGFR pair” in consensus does not mean no EGFR-targeting entries:
+receptor complexes are present. These expression-based ranks are not functional
+communication or independent biological validation.
+
+Details: [ligand correction report](../../analysis/corrections/ligand/RESULTS.md).
+Also available: [injury-only comparison](trials/e5_figure_for_the_refutation/e5_retention_against_injury.png),
+which removes tumour specificity from the Runx1/Pdgfrb persistence observation;
+it does not identify the complete causal pathway behind that persistence.
+
 ## 0. Reading workflow (the five questions the roadmap requires)
 
 **Question tested.** During the window between oncogenic activation and

@@ -44,6 +44,13 @@ fired. The thresholds were left where they were, the defect is disclosed
 | [D6](d6_programmes.py) | Are the DATP programmes highest in DATP | In vivo yes for p53, arrest, hypoxia, interferon-gamma and glycolysis; Hif1a detection highest in cycling AT2; the Ndrg1-free hypoxia edge is a depth reading; organoids hypoxia only |
 | [D7](d7_attack_claims.py) | Is pAT2 a depth artefact (A1), DATP a doublet cluster (A2), a dissociation signature (A3), a discrete co-expressing population (A4) | A1 not computable; **A2 no** (Scrublet 0.05, co-detection intermediate); A3 not attempted (list not on disk); A4 saturated (Krt8 in 90 percent of cells, ratio 1.05) |
 
+## Figure gallery
+
+The [paper gallery](../README.md#figure-gallery) shows the corrected D2b and D5b
+annotations, with links to the existing D3 pseudotime figure and both branch
+galleries. It keeps the original D2/D5 outputs in their historical context;
+the maps do not recover primed AT2 or provide independent-animal treatment tests.
+
 ## Shared code
 
 [`choi_utils.py`](choi_utils.py) holds the library manifest, the paper's

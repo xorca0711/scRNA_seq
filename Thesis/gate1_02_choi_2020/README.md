@@ -34,6 +34,31 @@ AT2 cells), a mechanism (HIF1alpha-driven glycolysis) and a failure mode
 
 ---
 
+## Figure gallery
+
+These are this repository's corrected annotations of the deposited data, not
+figures copied from the paper. Each condition has one pooled library, so the
+maps describe the sampled cells rather than establish replicated treatment effects.
+
+![Corrected in vivo epithelial state annotation from trial D2b](trials/d2b_corrected_annotation/d2b_umap_states.png)
+
+**D2b, in vivo state recovery.** The corrected rule recovers hAT2, cycling AT2,
+DATP and AT1; primed AT2 remains unassigned. The map therefore does not recover
+the paper's full five-state sequence. The superseded D2 annotation remains in
+the trial record.
+
+![Corrected organoid annotation separating epithelial states and stromal cells](trials/d5b_corrected_annotation/d5b_umap_states.png)
+
+**D5b, organoid state recovery.** The corrected annotation identifies an AT1
+group and separates the stromal cluster missed by D5. Labels on a UMAP do not
+show lineage transitions or establish the causal effect of IL-1beta.
+
+More: [D3 pseudotime figure](trials/d3_ordering/d3_dpt_by_state.png)
+(descriptive ordering with hAT2 chosen as the root; no recovered pAT2 step),
+[trial index](trials/README.md),
+[chromatin branch gallery](datp_epigenetics/README.md#figure-gallery), and
+[Axin2–Il1r1 branch gallery](axin2_il1r1/README.md#figure-gallery).
+
 ## 0. The five questions
 
 **Question tested.** During alveolar regeneration after bleomycin, what is

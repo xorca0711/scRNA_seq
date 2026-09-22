@@ -47,6 +47,22 @@ remodelling after inflammatory injury?
 | 10 | 3B | Wang et al. 2018, *Cell Reports* | [10.1016/j.celrep.2018.05.050](https://doi.org/10.1016/j.celrep.2018.05.050) | 29898397 | targeting EZH2 reprograms intratumoral Tregs | paused (Gate 3B paused 2026-09-15; opens if proposal D1 finds Tregs separable in an external series) | not started | not started |
 | 11 | 3B | Zhang et al. 2026, *Science Immunology* | [10.1126/sciimmunol.adx4411](https://doi.org/10.1126/sciimmunol.adx4411) | 41961946 | intratumoral Treg ablation elicits NK-mediated control | paused (Gate 3B paused 2026-09-15; opens if proposal D1 finds Tregs separable in an external series) | not started | not started |
 
+## Figure galleries
+
+The paper pages now bring existing analysis figures together with their
+interpretive limits: [Niethamer](gate1_01_niethamer_2025/README.md#figure-gallery),
+[Choi](gate1_02_choi_2020/README.md#figure-gallery),
+[Nabhan](gate1_03_nabhan_2018/README.md#figure-gallery),
+[Sikkema](gate1_04_sikkema_2023_hlca/README.md#figure-gallery),
+[Cardoso](gate2_05_cardoso_2026/README.md#figure-gallery) and
+[Murthy](ungated_murthy_2022/README.md#figure-gallery).
+Choi's [chromatin](gate1_02_choi_2020/datp_epigenetics/README.md#figure-gallery)
+and [Axin2/Il1r1](gate1_02_choi_2020/axin2_il1r1/README.md#figure-gallery)
+branches have their own galleries; the
+[cross-study specificity report](epithelial_state_specificity/README.md)
+already embeds its evidence figure. Papers without an executed analysis have
+no result gallery.
+
 The `#` is a stable identifier assigned when a paper enters the roadmap, and
 folder names carry it; the row order above is the reading order. Papers 12 to
 16 were added on 2026-09-15 (see the re-ranking bullet below).

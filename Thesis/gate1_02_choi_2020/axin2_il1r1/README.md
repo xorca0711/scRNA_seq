@@ -20,6 +20,24 @@ rendering and the PMC full-text API strip the italic tags and lose them.
 
 ---
 
+## Figure gallery
+
+![Axin2 and Il1r1 transcript detection and co-detection in GSE310539](../../../analysis/figures/rq/rq_a4_axin2_il1r1.png)
+
+**Transcript co-detection is a measurable, narrower question.** The figure
+shows current Axin2 and Il1r1 transcripts under its stated Sftpc-positive,
+non-transitional AT2 display rule. It does not identify the overlap between
+historical lineage reporters or validate either transcript as a reporter
+substitute. The Il1r1 detection range here belongs to GSE310539 and must not be
+replaced by the lower range measured in GSE145031.
+
+The current [C138–C140 and C154 assessment](../../../CLAIMS.md) leaves reporter
+substitution, Wnt responsiveness inferred from locus accessibility, and a
+replicated state interaction **Not established**. More accessible linked peaks
+can improve detection without improving biological specificity. See the
+[trial index](trials/README.md) and [Route B outcome](ROUTE_B_OUTCOME.md) for why
+the attempted chromatin route did not resolve the original question.
+
 ## 1. The headline
 
 | Question | Status |
