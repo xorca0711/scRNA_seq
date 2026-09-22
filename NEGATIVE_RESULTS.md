@@ -613,7 +613,7 @@ what was refuted and what settled it.
 
 ### C159. Whether any programme separates the capillary compartment at 42 and 90 dpi from a year
 
-- **Status in the register:** Not established
+- **Status in the register:** Not established (owner retained 2026-09-22, decision 28)
 - **What settled it:** trial G1 TEST contrast, 12 against 3 animals: no hallmark and no GO biological process set at gseapy FDR < 0.05 in either direction, with the gate cleared
 - **Artefact:** `Thesis/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_hallmark_TEST_capillary.csv`
 - **Where it came from:** Stage 1. Follow-ups (2026-09-10): the source paper's phase and myeloid claims
