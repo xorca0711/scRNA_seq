@@ -42,6 +42,7 @@ violate, is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Rewriting the root README around a ledger drawn from the register, listing all fifteen opened deposits, and writing RESEARCH_QUESTIONS.md as the question-first entry point | Me (instruction 2026-09-20, including the choice to drop the Leiden UMAP and to organise by question rather than by trial); AI-assisted execution. A first draft cited seven wrong register rows, caught by printing each cited row; a second adversarial workflow checked the landed text. My retain or reject on the question-first framing pending |
 | Restating the repository's purpose as hypothesis generation and keeping personal planning out of every tracked file (decision 27) | Me (instruction 2026-09-22); AI-assisted rewording, file by file, with decisions, statuses and numbers unchanged |
 | Retain or reject on the gene set enrichment rows C155 to C161 (decision 28) | Me, row by row (2026-09-22); the assistant set out the evidence from the tracked artefacts and proposed wording |
+| The A1 figure: adding the per-nucleus promoter violin back beside the detection-at-budget heatmap, with the ATAC depth behind it (decision 29) | Me (2026-09-22), choosing among keep, add back beside, and restore; the assistant computed the depth from the cached object and redrew the figure with script 16 |
 
 AI execution never meant automatic acceptance. Results were reviewed between
 sessions, and several were sent back: one finding was refuted and rewritten
@@ -630,6 +631,24 @@ tracked artefacts and I decided.
 - **C159, retained as Not established.** An absence at three animals.
 - **C160, retained as Descriptive only, with a pointer to C161**, where its
   held-out replication is recorded.
+
+**29 · The A1 figure keeps both readings of promoter chromatin, side by
+side.** (2026-09-22.) Decision 26 records that the assistant replaced a
+per-nucleus promoter-count violin with the detection-at-budget heatmap before
+I saw it. Shown both, with the depth behind them, I chose to add the violin
+back beside the heatmap rather than keep the replacement alone or restore the
+violin in its place. The reason is in the numbers: by group, transitional
+nuclei have the highest promoter score (median 0.91 against 0.00 and 0.38)
+only because they carry about twice the ATAC fragments (9,435 against 4,799
+and 4,842); among nuclei with any signal they are the lowest (1.31 against
+1.54 and 1.60), and at one depth budget promoter detection is flat. Read
+alone, the violin would support the retracted "silenced but not closed"
+reading (C120); beside the depth and the heatmap it is the clearest picture
+in the repository of what row C127 records. The figure now has panels g to
+i, the numbers are written to `rq_a1_groups.csv` and formatted into the
+caption by script 16, and the replacement itself is retained. Offered and
+not chosen: keeping the heatmap alone, and restoring the violin in its
+place.
 
 ## How outputs were reviewed
 

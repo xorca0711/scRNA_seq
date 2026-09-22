@@ -925,6 +925,15 @@ labelled cells.
      it lives in his private notes, written from this repository's reading
      of fit. Part D's items are numbered 1 to 3 so they no longer collide
      with proposal D1.
+   - **Owner review of the A1 replacement, 2026-09-22 (DEVELOPMENT decision
+     29): add back beside, with depth.** The detection-at-budget heatmap
+     stays as panel f, the form the registered statistic takes. Panels g to
+     i put the per-nucleus promoter reading back beside it with the ATAC
+     depth that dominates it: by group, transitional nuclei score highest
+     (median 0.91 against 0.00 and 0.38) because they carry about twice the
+     fragments (9,435 against 4,799 and 4,842), and among nuclei with any
+     signal they are the lowest (1.31 against 1.54 and 1.60). The numbers
+     are in `rq_a1_groups.csv`; the other four figures are unchanged.
 
 39. **Where a gene set enrichment analysis is admissible** (2026-09-21, owner
    question: is any GSEA established, and on which imported data would a

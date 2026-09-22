@@ -12,7 +12,10 @@ correction, so that nothing is claimed about integration.
 Outputs, all under analysis/figures/rq/:
   rq_a1_chromatin.png        GSE310539 wildtype nuclei: UMAP by well and by the
                              transitional label; AT2 identity in RNA and at
-                             promoter chromatin on the same embedding; violins
+                             promoter chromatin on the same embedding; violins;
+                             detection at one depth budget; and, beside it,
+                             the per-nucleus promoter reading with the ATAC
+                             depth that dominates it (owner decision, 2026-09-22)
   rq_a2_ligands.png          GSE131907: donor-medianed dotplot of EGFR ligands
                              and receptor by compartment and tissue; the
                              top-15 overlap of five ligand-receptor resources
@@ -410,7 +413,7 @@ def figure_a1(a) -> dict:
     well = a.obs["well"].to_numpy()
     trans = a.obs["transitional_label"].to_numpy()
     colours = {"wildtype_PBS": vs.SLOT[1], "wildtype_SeV": vs.SLOT[2]}
-    fig, axes = plt.subplots(2, 3, figsize=(13.5, 8.2))
+    fig, axes = plt.subplots(3, 3, figsize=(15.0, 12.2), gridspec_kw={"width_ratios": [1, 1, 1.3]})
     ax = axes[0, 0]
     for w in ("wildtype_PBS", "wildtype_SeV"):
         m = well == w
@@ -434,15 +437,29 @@ def figure_a1(a) -> dict:
     axes[1, 1].set_title("e  RNA score, by group")
     # panel f: the form of the registered statistic, detection at one depth budget
     det, budget = detection_at_budget(a, [(n, m) for n, m, _ in groups])
+    spec_f = axes[1, 2].get_subplotspec()
     axes[1, 2].remove()
-    gsf = fig.add_gridspec(1, 2, left=0.70, right=0.99, bottom=0.07, top=0.42, wspace=0.55)
+    gsf = spec_f.subgridspec(1, 2, wspace=0.45)
     axf1, axf2 = fig.add_subplot(gsf[0, 0]), fig.add_subplot(gsf[0, 1])
     genes = list(dict.fromkeys(det["gene"]))
     cols = [n.replace("\n", " ").replace(" ", "\n") for n, _, _ in groups]
     M_r = det.pivot(index="gene", columns="group", values="rna_detection_pct").loc[genes, [c.replace("\n", " ") for c in cols]].to_numpy()
     M_a = det.pivot(index="gene", columns="group", values="atac_detection_pct").loc[genes, [c.replace("\n", " ") for c in cols]].to_numpy()
-    heat(axf1, M_r, genes, cols, f"f  RNA detected, % at {budget['rna']:,} UMI", vmax=100)
-    heat(axf2, M_a, genes, cols, f"promoter peak detected, % at {budget['atac']:,} fragments", vmax=100)
+    heat(axf1, M_r, genes, cols, f"f  RNA detected,\n% at {budget['rna']:,} UMI", vmax=100)
+    heat(axf2, M_a, genes, cols, f"promoter peak detected,\n% at {budget['atac']:,} fragments", vmax=100)
+    # panels g to i: the per-nucleus promoter reading the heatmap replaced, put
+    # back beside it on the owner's decision of 2026-09-22 (DEVELOPMENT decision
+    # 28), with the ATAC depth that dominates it. Not a test; the lesson of C127.
+    depth = a.obs["atac_counts"].to_numpy()
+    violins(axes[2, 0], [(n, atac[m], c) for n, m, c in groups],
+            "log1p promoter counts per 10,000 ATAC counts")
+    axes[2, 0].set_title("g  Promoter chromatin, per nucleus, by group")
+    violins(axes[2, 1], [(n, np.log10(np.maximum(depth[m], 1)), c) for n, m, c in groups],
+            "log10 ATAC counts per nucleus")
+    axes[2, 1].set_title("h  ATAC depth, by group")
+    violins(axes[2, 2], [(n, atac[m][atac[m] > 0], c) for n, m, c in groups],
+            "log1p promoter counts per 10,000 ATAC counts")
+    axes[2, 2].set_title("i  Promoter chromatin, nuclei with any signal")
     fig.suptitle("A1  Closed or silenced: the AT2 identity programme in RNA and in chromatin, "
                  "GSE310539 wildtype wells", x=0.01, ha="left", fontsize=12.5, fontweight="semibold")
     fig.tight_layout(w_pad=2.5, rect=(0, 0, 1, 1))
@@ -450,6 +467,9 @@ def figure_a1(a) -> dict:
     table = pd.DataFrame([{
         "group": n.replace("\n", " "), "n_nuclei": int(m.sum()),
         "median_rna_score": float(np.median(rna[m])), "median_atac_promoter": float(np.median(atac[m])),
+        "median_atac_counts": float(np.median(depth[m])),
+        "pct_no_promoter_fragment": float(100 * np.mean(atac[m] == 0)),
+        "median_atac_promoter_nonzero": float(np.median(atac[m][atac[m] > 0])),
     } for n, m, _ in groups])
     table.to_csv(OUT / "rq_a1_groups.csv", index=False)
     det.to_csv(OUT / "rq_a1_detection_at_budget.csv", index=False)
@@ -804,7 +824,20 @@ def caption_blocks(r: dict) -> dict[str, str]:
             f"Averaged over the genes, RNA detection is {a1['mean_det'].loc['PBS reference', 'rna_detection_pct']:.0f}% in PBS "
             f"reference and {a1['mean_det'].loc['SeV transitional', 'rna_detection_pct']:.0f}% in SeV transitional nuclei; promoter "
             f"detection {a1['mean_det'].loc['PBS reference', 'atac_detection_pct']:.0f}% and "
-            f"{a1['mean_det'].loc['SeV transitional', 'atac_detection_pct']:.0f}%. A visual aid for rows C118 and C121: the registered "
+            f"{a1['mean_det'].loc['SeV transitional', 'atac_detection_pct']:.0f}%. (g to i) the per-nucleus reading the heatmap replaced, "
+            "kept beside it because it shows how depth inverts the answer (row C127): by group, the promoter score is highest in "
+            f"transitional nuclei (median {g.loc['SeV transitional', 'median_atac_promoter']:.2f}, against "
+            f"{g.loc['PBS reference', 'median_atac_promoter']:.2f} in PBS and {g.loc['SeV reference', 'median_atac_promoter']:.2f} "
+            "in SeV reference), because those nuclei carry about twice the fragments (median "
+            f"{g.loc['SeV transitional', 'median_atac_counts']:,.0f} against {g.loc['PBS reference', 'median_atac_counts']:,.0f} and "
+            f"{g.loc['SeV reference', 'median_atac_counts']:,.0f}) and so fewer of them have no promoter fragment at all "
+            f"({g.loc['SeV transitional', 'pct_no_promoter_fragment']:.1f}% against "
+            f"{g.loc['PBS reference', 'pct_no_promoter_fragment']:.1f}% and {g.loc['SeV reference', 'pct_no_promoter_fragment']:.1f}%); "
+            "among nuclei with any signal the transitional group is the lowest "
+            f"({g.loc['SeV transitional', 'median_atac_promoter_nonzero']:.2f} against "
+            f"{g.loc['PBS reference', 'median_atac_promoter_nonzero']:.2f} and "
+            f"{g.loc['SeV reference', 'median_atac_promoter_nonzero']:.2f}). Read on its own, panel g would support the "
+            "retracted \"silenced but not closed\" reading (C120). A visual aid for rows C118 and C121: the registered "
             "test adds the matched-gene-set null and the per-well budgets of trials M1e and M2, and these panels do not replace it. "
             "Drawn by `analysis/scripts/16_research_question_figures.py`; numbers in `analysis/figures/rq/rq_a1_groups.csv` and "
             "`rq_a1_detection_at_budget.csv`.*\n"
