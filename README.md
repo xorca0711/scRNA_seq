@@ -210,8 +210,10 @@ have been entered; Nabhan 2018 is next, the Wagner branch has not been opened,
 and Gate 3 is paused. The proposals written against paper 1 (W1, S1, Nb1, D1,
 V1) are not run, the three follow-up analyses in
 [`RESEARCH_QUESTIONS.md`](RESEARCH_QUESTIONS.md) Part D are specified and not
-started, and rows C116 to C154 await the owner's retain-or-reject review. The
-date of the state is in [`PROGRESS.md`](PROGRESS.md).
+started. Rows C116 to C161 were reviewed by the owner on 2026-09-22, nineteen
+of them retained as a block to revisit; the earlier rows still await the
+owner's retain-or-reject review. The date of the state is in
+[`PROGRESS.md`](PROGRESS.md).
 
 ## Source studies
 

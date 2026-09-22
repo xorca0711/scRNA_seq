@@ -377,8 +377,11 @@ lettered.
 - Isoform-level questions cannot be asked of any data held here (all
   three-prime short-read). Protein-level questions (surface EpCAM, ADAM17
   activity) are open and need a different assay.
-- The Cardoso 2026 rows (C19 to C57, C65 to C84) and every row since await the
-  owner's retain-or-reject review, recorded in `DEVELOPMENT.md` when made.
+- Rows C116 to C161 were reviewed by the owner on 2026-09-22 (DEVELOPMENT
+  decisions 28 and 30; nineteen of them retained as a block, to revisit).
+  The Cardoso 2026 rows (C19 to C57, C65 to C84) and the rows up to C115
+  still await the owner's retain-or-reject review, recorded in
+  `DEVELOPMENT.md` when made.
 
 *Generated context: the ledger figure in the README is drawn from the register
 by `analysis/scripts/15_claims_ledger_figure.py`; nothing on this page is a
