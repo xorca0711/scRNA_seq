@@ -18,8 +18,8 @@ the trial that produced each number is one link away.
 
 **How to read the statuses.** Rules are pre-registered and frozen before data
 are opened; a refuted claim stays on display; the statistical unit is the animal
-or donor, never the cell. Of 161 register rows, 9 are validated, 70 descriptive
-or exploratory, 39 not established, 42 refuted or retracted and 1 displaced
+or donor, never the cell. Of 164 register rows, 9 are validated, 72 descriptive
+or exploratory, 40 not established, 42 refuted or retracted and 1 displaced
 (established outside this repository). That ratio is the point: the product is
 calibrated evidence, and the negative results are load-bearing.
 
@@ -356,7 +356,7 @@ lettered.
 | | Analysis | Data | Unit | Stops if |
 |---|---|---|---|---|
 | 1 | Reversibility of AT2 identity chromatin, 14 against 49 days after injury (answers A1) | GSE309751, per-sample bulk ATAC peak calls, 2 to 3 mice per group | mouse | the mock arms do not separate from injured at 14 days under a threshold frozen from mock |
-| 2 | The reconstituting alveolar macrophage programme by animal and phase, against the published ARG1 and ornithine circuit (answers A3) | GSE262927, 25 animals | animal | fewer than 3 animals in any tested phase; the two-animal active-repair days enter only as a ranking, never as a tested arm |
+| 2 | The reconstituting alveolar macrophage programme by animal and phase, against the published ARG1 and ornithine circuit (answers A3) | GSE262927, 25 animals | animal | fewer than 3 animals in any tested phase; the two-animal active-repair days enter only as a ranking, never as a tested arm. **Run 2026-09-22 as trial W1**, narrowed to alveolar macrophages (4, 8 and 3 animals): no pre-registered set separates phases (C163); the gene-level readings are C162 and C164, and the resolution against long-term arm is confounded with age |
 | 3 | Ligand-receptor candidates between AT2 cells and the fibroblast niche at 11 dpi, only after pseudobulk (the prerequisite for A2 on mouse data) | GSE262927 | animal | candidate pairs not expressed in both partners in at least 2 animals |
 
 ---

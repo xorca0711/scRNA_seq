@@ -1,0 +1,139 @@
+{
+  "trial": "W1 aMAC pseudobulk differential expression by phase, per animal",
+  "rules_frozen_at": "2026-09-22T00:34:53+00:00",
+  "rules": {
+    "R1_unit": "animal; deposited label aMAC among trial 11 myeloid cells; >= 50 aMAC cells; raw-count pseudobulk, duplicate symbols summed",
+    "R2_genotype": "Ki67Cre/Cre animals excluded; Mki67 removed from every set",
+    "R3_arms": {
+      "active": [
+        6,
+        11,
+        19,
+        25
+      ],
+      "resolution": [
+        42,
+        90
+      ],
+      "longterm": [
+        366
+      ],
+      "baseline": "no test",
+      "arm_floor": 3
+    },
+    "R4_contrasts": {
+      "A": "active vs resolution",
+      "B": "resolution vs longterm",
+      "genes": ">= 10 counts in >= 3 animals of the contrast"
+    },
+    "R5_gene_level": "pydeseq2 0.5.4, design ~ batch + sex + arm, Wald on arm, BH, 8 cpus; rank-deficient design stops the contrast",
+    "R6_gate": "same fit: Xist F > M and >= 1 of Ddx3y, Eif2s3y, Kdm5d, Uty M > F, padj < 0.05; failure makes the fit unreadable",
+    "R7_sets": {
+      "hallmark": [
+        "HALLMARK_E2F_TARGETS",
+        "HALLMARK_G2M_CHECKPOINT"
+      ],
+      "gobp": [
+        "GOBP_MITOTIC_DNA_REPLICATION",
+        "GOBP_CELL_CYCLE_DNA_REPLICATION",
+        "GOBP_ARGININE_METABOLIC_PROCESS",
+        "GOBP_ORNITHINE_METABOLIC_PROCESS"
+      ],
+      "size": "10 to 500 after intersection, Mki67 removed, else not tested"
+    },
+    "R8_set_statistic": "CAMERA on log2 CPM, OLS t, residual inter-gene correlation VIF, competitive two-sided, BH over the six sets per contrast",
+    "R9_reading": "nothing Validated; gene level Descriptive only; set FDR < 0.05 in A Exploratory, in B Descriptive only naming age and sex; only a positive B result is read; not independent of C158"
+  },
+  "notes": "",
+  "inputs": [
+    {
+      "path": "Thesis\\gate1_01_niethamer_2025\\GSE262927\\processed\\final_clustered.h5ad",
+      "bytes": 2110304693,
+      "modified": "2026-08-07T14:13:16+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_01_niethamer_2025\\GSE262927\\myeloid_focus\\tables\\myeloid_cell_metadata.csv",
+      "bytes": 1103269,
+      "modified": "2026-09-10T06:21:44+00:00"
+    },
+    {
+      "path": "Thesis\\gate1_01_niethamer_2025\\GSE262927\\myeloid_focus\\batch_sensitivity\\tables\\sample_infection_round.csv",
+      "bytes": 3202,
+      "modified": "2026-09-10T07:35:55+00:00"
+    }
+  ],
+  "outputs": [
+    "Thesis\\gate1_01_niethamer_2025\\trials\\w1_amac_pseudobulk_de\\w1_units.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\w1_amac_pseudobulk_de\\w1_de_top_A.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\w1_amac_pseudobulk_de\\w1_de_top_B.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\w1_amac_pseudobulk_de\\w1_gate.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\w1_amac_pseudobulk_de\\w1_sets.csv",
+    "Thesis\\gate1_01_niethamer_2025\\trials\\w1_amac_pseudobulk_de\\w1_summary.md"
+  ],
+  "results": {
+    "gene_set_files": {
+      "hallmark": {
+        "file": "raw_data/msigdb/mh.all.v2024.1.Mm.symbols.gmt",
+        "sha256": "e5aa9acd833179d1d571b48bf91a28fb387722ce68ff53094d05847659d66460",
+        "n_sets": 50,
+        "bytes": 48007
+      },
+      "gobp": {
+        "file": "raw_data/msigdb/m5.go.bp.v2024.1.Mm.symbols.gmt",
+        "sha256": "07e91b5ee16372f5764649b2a8b358c03d82a910c4e832ca732d0d9379772886",
+        "n_sets": 7713,
+        "bytes": 5063472
+      }
+    },
+    "versions": {
+      "pydeseq2": "0.5.4",
+      "formulaic": "1.2.2",
+      "anndata": "0.13.2",
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.18.0"
+    },
+    "animals_per_arm": {
+      "resolution": 8,
+      "active": 4,
+      "longterm": 3
+    },
+    "verdicts": {
+      "A": {
+        "animals": [
+          4,
+          8
+        ],
+        "genes_tested": 11191,
+        "genes_padj05": 310,
+        "gate": true,
+        "sets_fdr05": 0
+      },
+      "B": {
+        "animals": [
+          8,
+          3
+        ],
+        "genes_tested": 11048,
+        "genes_padj05": 100,
+        "gate": true,
+        "sets_fdr05": 0
+      }
+    }
+  },
+  "software": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.9.0",
+    "leidenalg": "0.12.0",
+    "igraph": "1.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "finished_at": "2026-09-22T00:36:19+00:00"
+}

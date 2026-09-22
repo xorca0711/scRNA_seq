@@ -44,6 +44,7 @@ violate, is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Retain or reject on the gene set enrichment rows C155 to C161 (decision 28) | Me, row by row (2026-09-22); the assistant set out the evidence from the tracked artefacts and proposed wording |
 | The A1 figure: adding the per-nucleus promoter violin back beside the detection-at-budget heatmap, with the ATAC depth behind it (decision 29) | Me (2026-09-22), choosing among keep, add back beside, and restore; the assistant computed the depth from the cached object and redrew the figure with script 16 |
 | Retain or reject on the Choi 2020 branch rows C116 to C154 (decision 30) | Me, row by row in four themed groups (2026-09-22); the assistant checked the cited artefacts by script and set out the evidence |
+| Choosing W1 as the next analysis, narrowing it to alveolar macrophages, and installing pydeseq2 (decision 31) | Me (2026-09-22); the assistant proposed the narrowing, wrote and committed the pre-registration before any count was read, and chose the genotype exclusion, the sex-gene gate and CAMERA, all pending my review |
 
 AI execution never meant automatic acceptance. Results were reviewed between
 sessions, and several were sent back: one finding was refuted and rewritten
@@ -680,6 +681,20 @@ themed groups.
   right (its Potential column states the real point, that such a number is
   Not established), and C154's claim ("Route B's transitional cell set was
   reported") describes the register rather than the result.
+
+**31 · W1 run first, narrowed to alveolar macrophages.** (2026-09-22,
+under review.) Offered W1, the GSE309751 chromatin analysis, or entering
+paper 3, I chose W1 and authorised installing pydeseq2 into the emulated
+environment. The narrowing to the aMAC population was the assistant's
+proposal, which I accepted, because it is the only myeloid population that
+clears the cell floor in every arm. Three further design choices were the
+assistant's and are mine to retain or reject: excluding the three
+Ki67Cre/Cre animals, a machinery gate on sex genes instead of a biological
+positive control, and CAMERA as the set test. The rules were committed
+before any count was read (commit c5b6e53). No set cleared; the gene-level
+readings are Descriptive only, and the resolution against long-term arm is
+confounded with age, harvest date and sex. Rows C162 to C164 await my
+review.
 
 ## How outputs were reviewed
 

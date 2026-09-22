@@ -1019,6 +1019,28 @@ labelled cells.
    - **Next:** choosing the next analysis among proposal W1, Part D item 1
      (needs the GSE309751 download, owner's call) and roadmap paper 3.
 
+42. **Trial W1 run, narrowed to alveolar macrophages** (2026-09-22, owner
+   choice; DEVELOPMENT decision 31). pydeseq2 0.5.4 installed in `.venv-x64`
+   and pinned (seven additions, nothing moved; gseapy 1.3.1 pinned late).
+   Pre-registration committed before any count was read (c5b6e53). Run time
+   about one minute from the streamed object.
+   - Design facts from metadata alone: aMAC clears 50 cells in 4 of 8
+     active-repair animals (11 to 25 dpi), 11 of 12 resolution and 3 of 3
+     long-term; three animals are Ki67Cre/Cre and were excluded; the
+     long-term arm shares only round 2022-12-06 with 90 dpi, so that
+     contrast is 90 against 366 dpi, confounded with age, harvest date and
+     sex.
+   - Outcome: machinery gate passed (Xist only just, padj 0.049); no
+     pre-registered set clears under CAMERA (C163); 310 genes separate late
+     active repair from resolution, led by C1q, Trem2 and response-state genes
+     (C162); 100 separate resolution from a year, an NF-kB and
+     immediate-early programme higher at a year (C164). All proposed,
+     awaiting owner review.
+   - Proposed next step, not run: a corrected pass beside G1 that tests
+     C158's proliferation sets on G1's own myeloid pseudobulk under CAMERA,
+     to see whether C158 survives a correlation-respecting null. Minutes of
+     compute, no download.
+
 ---
 
 ## Handoff: session of 2026-09-15, paper 2 entered and run
