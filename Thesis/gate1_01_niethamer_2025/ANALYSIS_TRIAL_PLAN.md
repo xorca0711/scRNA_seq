@@ -158,7 +158,7 @@ with papers 15 and 16; Nb1 with papers 3, 6 and 14.
 **Trial G0 (run 2026-09-21)** asked, before any of this is attempted, on which of the
 16 imported deposits a ranked-list GSEA is admissible at all under the unit rule:
 4 (GSE262927, GSE136831, GSE135893, GSE131907), with GSE309751 marginal and 11 not
-admissible, ten of them one library per condition. The scan, its frozen rules and the
+admissible, eight of them one library per condition. The scan, its frozen rules and the
 reading are in [`trials/g0_gsea_feasibility/g0_summary.md`](trials/g0_gsea_feasibility/g0_summary.md)
 (register row C155). G1 and G2 are the proposals it licenses; GSE131907, a paired
 epithelial contrast already answered at the gene level (C40), is a third option and not proposed.

@@ -41,6 +41,7 @@ violate, is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Auditing rows C116 to C150 with eight adversaries and independent verifiers, and accepting all 45 confirmed findings | Me (instruction 2026-09-20: "launch a multi-agent attack workflow to testify all the claims made"); AI-assisted execution. The agent's own register prose was the thing found wrong; corrections read from tables, trial M4 added, rows C151 to C154; review pending |
 | Rewriting the root README around a ledger drawn from the register, listing all fifteen opened deposits, and writing RESEARCH_QUESTIONS.md as the question-first entry point | Me (instruction 2026-09-20, including the choice to drop the Leiden UMAP and to organise by question rather than by trial); AI-assisted execution. A first draft cited seven wrong register rows, caught by printing each cited row; a second adversarial workflow checked the landed text. My retain or reject on the question-first framing pending |
 | Restating the repository's purpose as hypothesis generation and keeping personal planning out of every tracked file (decision 27) | Me (instruction 2026-09-22); AI-assisted rewording, file by file, with decisions, statuses and numbers unchanged |
+| Retain or reject on the gene set enrichment rows C155 to C161 (decision 28) | Me, row by row (2026-09-22); the assistant set out the evidence from the tracked artefacts and proposed wording |
 
 AI execution never meant automatic acceptance. Results were reviewed between
 sessions, and several were sent back: one finding was refuted and rewritten
@@ -593,6 +594,42 @@ frozen rule changed, and no register row was added or removed. The August
 2026 archive keeps its file names, because they are paths in a record. A
 first attempt at this, as one scripted bulk rewrite, was stopped by an
 automated check before it ran; this pass was made file by file.
+
+**28 · Owner review of the gene set enrichment trials, row by row.**
+(2026-09-22.) The assistant set out the evidence for each row from the
+tracked artefacts and I decided.
+
+- **C161, retained as Validated, narrowed and with a third limit.** What is
+  validated is the donor-level direction of each of the 62 sets, replicated
+  in a held-out cohort, not a biological reading of it. The row now also
+  says that both discovery nulls sample genes rather than donors, so the
+  discovery FDRs are optimistic and the replication carries the claim; that
+  replication does not exclude an artefact both cohorts share; and that the
+  eight AT2 sets are the weakest, because the programmes that replicate there
+  are ones ambient RNA from fibrotic tissue would also produce. Offered and
+  not chosen: keeping the row as proposed, splitting the AT2 sets out as
+  Exploratory, and rejecting the row to Descriptive only.
+- **C155, retained as Descriptive only.** A metadata scan that licenses G1
+  and G2 and establishes no biology. Checking it against G0's own table
+  found a slip in the paper-1 trial plan, which said ten of the eleven
+  inadmissible deposits are single-library; the table says eight, and the
+  plan now says eight.
+- **C156, retained as Descriptive only, with a timing sentence.** The failed
+  G2M gate and the phase claim C9 measure different moments: C9 reads the
+  Ki67 trace from the tamoxifen window (myeloid peak 6 dpi), the gate reads
+  cycling at sacrifice (myeloid cycling peak 25 dpi). The row now says so.
+- **C157, retained as Descriptive only.** The corrected gate was written
+  after G1's tables were seen and is disclosed as such (R0); the sets come
+  from the same deposit, so it checks the machinery, not the biology.
+  Offered and not chosen: downgrading it to Exploratory.
+- **C158, retained as Exploratory, with a caveat sentence.** Three animals at
+  366 dpi carry a direction only; the nulls sample genes, and a growing
+  proliferating subset would move the pseudobulk. The same direction in
+  human IPF macrophages (C161) is recorded as a cross-species lead, not as
+  evidence. Offered and not chosen: Not established, or rejection.
+- **C159, retained as Not established.** An absence at three animals.
+- **C160, retained as Descriptive only, with a pointer to C161**, where its
+  held-out replication is recorded.
 
 ## How outputs were reviewed
 

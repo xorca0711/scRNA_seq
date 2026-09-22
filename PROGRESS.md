@@ -968,6 +968,15 @@ labelled cells.
    - Under x86-64 emulation a 1000-permutation GO run takes about 35 minutes per
      contrast; the held-out pass is asked only about the sets that cleared
      discovery, which is what R8 reads anyway.
+   - **Owner review done 2026-09-22 (DEVELOPMENT decision 28).** Rows C155
+     to C161 are all retained at their proposed statuses. C161 stays
+     Validated, narrowed to the donor-level direction, with a third limit
+     (gene-sampling nulls; replication does not exclude a shared artefact;
+     the eight AT2 sets weakest). C156 gained the timing sentence (trace
+     window against cycling at sacrifice), C158 a caveat sentence and the
+     cross-species lead, C160 a pointer to C161. The paper-1 plan's count of
+     single-library deposits was corrected from ten to eight against G0's
+     table.
 
 ---
 
