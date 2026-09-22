@@ -1,0 +1,227 @@
+{
+  "status": "Descriptive source-data reproduction; exact published percentage not assumed",
+  "n_single_cells": 47,
+  "n_bulk_controls_excluded": 1,
+  "partial_housekeeping_qc_pass": 47,
+  "target_gene_status_not_OK": 0,
+  "pdgfra_given_wnt5a": [
+    {
+      "threshold": ">0",
+      "estimand": "Pdgfra_given_Wnt5a",
+      "numerator_gene": "Pdgfra",
+      "conditioning_expression": "Wnt5a",
+      "joint_n": 28,
+      "denominator_n": 31,
+      "fraction": 0.9032258064516129,
+      "n_cells": 47
+    },
+    {
+      "threshold": ">=0.1",
+      "estimand": "Pdgfra_given_Wnt5a",
+      "numerator_gene": "Pdgfra",
+      "conditioning_expression": "Wnt5a",
+      "joint_n": 28,
+      "denominator_n": 31,
+      "fraction": 0.9032258064516129,
+      "n_cells": 47
+    },
+    {
+      "threshold": ">=1",
+      "estimand": "Pdgfra_given_Wnt5a",
+      "numerator_gene": "Pdgfra",
+      "conditioning_expression": "Wnt5a",
+      "joint_n": 21,
+      "denominator_n": 26,
+      "fraction": 0.8076923076923077,
+      "n_cells": 47
+    },
+    {
+      "threshold": ">=5",
+      "estimand": "Pdgfra_given_Wnt5a",
+      "numerator_gene": "Pdgfra",
+      "conditioning_expression": "Wnt5a",
+      "joint_n": 13,
+      "denominator_n": 18,
+      "fraction": 0.7222222222222222,
+      "n_cells": 47
+    }
+  ],
+  "primary_threshold_counts": [
+    {
+      "gene": "Col1a2",
+      "n_detected": 47,
+      "n_cells": 47
+    },
+    {
+      "gene": "Pdgfra",
+      "n_detected": 33,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt1",
+      "n_detected": 0,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt2",
+      "n_detected": 3,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt2b",
+      "n_detected": 9,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt3",
+      "n_detected": 0,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt3a",
+      "n_detected": 0,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt4",
+      "n_detected": 2,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt5a",
+      "n_detected": 26,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt5b",
+      "n_detected": 1,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt6",
+      "n_detected": 1,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt7a",
+      "n_detected": 0,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt7b",
+      "n_detected": 0,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt8a",
+      "n_detected": 0,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt8b",
+      "n_detected": 0,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt9a",
+      "n_detected": 3,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt9b",
+      "n_detected": 0,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt10a",
+      "n_detected": 0,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt10b",
+      "n_detected": 1,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt11",
+      "n_detected": 7,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wnt16",
+      "n_detected": 0,
+      "n_cells": 47
+    },
+    {
+      "gene": "Axin2",
+      "n_detected": 6,
+      "n_cells": 47
+    },
+    {
+      "gene": "Ppia",
+      "n_detected": 47,
+      "n_cells": 47
+    },
+    {
+      "gene": "Actb",
+      "n_detected": 47,
+      "n_cells": 47
+    },
+    {
+      "gene": "Ubc",
+      "n_detected": 47,
+      "n_cells": 47
+    },
+    {
+      "gene": "Mgp",
+      "n_detected": 47,
+      "n_cells": 47
+    },
+    {
+      "gene": "Col1a1",
+      "n_detected": 47,
+      "n_cells": 47
+    },
+    {
+      "gene": "Gapdh",
+      "n_detected": 44,
+      "n_cells": 47
+    },
+    {
+      "gene": "Porcn",
+      "n_detected": 5,
+      "n_cells": 47
+    },
+    {
+      "gene": "Wls",
+      "n_detected": 36,
+      "n_cells": 47
+    },
+    {
+      "gene": "Epcam",
+      "n_detected": 4,
+      "n_cells": 47
+    },
+    {
+      "gene": "Pecam1",
+      "n_detected": 0,
+      "n_cells": 47
+    },
+    {
+      "gene": "Ptprc",
+      "n_detected": 0,
+      "n_cells": 47
+    },
+    {
+      "gene": "Sftpc",
+      "n_detected": 46,
+      "n_cells": 47
+    },
+    {
+      "gene": "Ager",
+      "n_detected": 0,
+      "n_cells": 47
+    }
+  ],
+  "independent_animal_mapping": "Not supplied in deposited sample metadata; no animal-level inference"
+}

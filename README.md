@@ -38,6 +38,7 @@ Exploratory findings and independent confirmation are distinguished explicitly.
 | Corrected analyses and remaining limitations | [Implementation record](docs/remediation/2026-09-22/IMPLEMENTATION_STATUS.md) |
 | Commands, dependencies and data requirements | [Reproducibility guide](REPRODUCIBILITY.md) |
 | Next outcome-linked analysis and eligibility gates | [Next dataset gate](docs/NEXT_DATASET_GATE.md) |
+| Nabhan 2018 source reproduction and animal-level Wnt analysis | [Wnt niche analysis](Thesis/gate1_03_nabhan_2018/README.md) |
 
 ![Claim status by analysis family](analysis/figures/claims_ledger.png)
 

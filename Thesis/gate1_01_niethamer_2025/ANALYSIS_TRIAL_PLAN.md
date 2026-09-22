@@ -140,6 +140,14 @@ grading and for descriptive composition.
 
 ## Stage 2. Proposed and not run
 
+**Nb1 execution, 2026-09-22:** the owner completed Nabhan 2018 and authorized
+[source reproduction and descriptive Nb1](../gate1_03_nabhan_2018/README.md).
+The proposal table below preserves the earlier design. The implemented
+protocol uses deposited AT2/AF1/AF2 and contextual fibroblast labels, not the
+old cluster list, and stops before ligand-receptor ranking because the local
+day-11 AT2 comparison lacks sufficient animal coverage. See the linked report
+for the independent-cohort gate.
+
 Branch labels follow the reading order of 2026-09-15
 ([`Thesis/README.md`](../README.md)): 2N and 2W are the active
 branches, 3A and 3B are paused until S1 or D1 returns a result. W1 is read

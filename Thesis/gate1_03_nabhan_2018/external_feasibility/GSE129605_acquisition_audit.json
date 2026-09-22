@@ -1,0 +1,19 @@
+{
+  "status": "HOLD_ANNOTATION_AND_ANIMAL_PROVENANCE",
+  "samples": 8,
+  "deposited_cells": 13673,
+  "download_bytes": 83692684,
+  "checks": [
+    "24 exact GEO file sizes and local SHA256 checksums",
+    "unique barcodes within each sample",
+    "gene/barcode dimensions match each matrix",
+    "all count entries positive integers in valid bounds",
+    "entry count matches MatrixMarket header"
+  ],
+  "not_done": [
+    "animal provenance beyond deposited identifiers",
+    "post-QC compartment annotation",
+    "AT2/fibroblast coverage gate",
+    "Wnt expression inference"
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "downloaded_on_utc_date": "2026-09-22",
+  "accession": "GSE109444",
+  "paper_doi": "10.1126/science.aam6603",
+  "paper_pmid": "29420258",
+  "series_metadata": {
+    "Series_title": [
+      "High throughput quantitative whole transcriptome analysis of adult mouse distal lung mesenchyme"
+    ],
+    "Series_geo_accession": [
+      "GSE109444"
+    ],
+    "Series_status": [
+      "Public on Feb 19 2018"
+    ],
+    "Series_submission_date": [
+      "Jan 19 2018"
+    ],
+    "Series_last_update_date": [
+      "Dec 09 2022"
+    ],
+    "Series_pubmed_id": [
+      "29420258",
+      "36414616"
+    ],
+    "Series_summary": [
+      "We used microfluidic single cell RNA-seq on 47 individual mouse lung mesenchymal cells at adulthood to measure the transcriptional state. We were able to classify these cells into distinct populations as well as map their signaling interactions with the distal lung epithelium and endothelium. In this manner, single cell RNA-seq can be used to unbiasedly determine the signals the dictate construction and maintenance of the alveolus."
+    ],
+    "Series_overall_design": [
+      "47 single-cell transcriptomes from adult mouse lung mesenchyme were analyzed in total and one 200-cell bulk control sample; All single cell and control samples contain 92 external RNA spike-ins; In a single adult timepoint, 47 transcriptomes were isolated; In addition, a 200-cell bulk control sample was prepared for this adult timepoint;All single cell samples were processed on the microfluidic platform, 200-cell-bulk control sample was processed in microliter volumes in PCR tubes."
+    ],
+    "Series_type": [
+      "Expression profiling by high throughput sequencing"
+    ],
+    "Series_contributor": [
+      "Douglas,G,Brownfield"
+    ],
+    "Series_contact_name": [
+      "Mark,,Krasnow"
+    ],
+    "Series_contact_institute": [
+      "Stanford University"
+    ],
+    "Series_contact_address": [
+      "Beckman Center, B400 279 W. Campus Dr."
+    ],
+    "Series_contact_city": [
+      "Stanford"
+    ],
+    "Series_contact_state": [
+      "Ca"
+    ],
+    "Series_contact_zip/postal_code": [
+      "94305"
+    ],
+    "Series_contact_country": [
+      "USA"
+    ],
+    "Series_supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE109nnn/GSE109444/suppl/GSE109444_RAW.tar"
+    ],
+    "Series_platform_id": [
+      "GPL13112"
+    ],
+    "Series_platform_taxid": [
+      "10090"
+    ],
+    "Series_sample_taxid": [
+      "10090"
+    ],
+    "Series_relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA430888",
+      "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRP131061"
+    ]
+  },
+  "input_files": [
+    {
+      "path": "raw_data/GSE109444/GSE109444_family.soft.gz",
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE109nnn/GSE109444/soft/GSE109444_family.soft.gz",
+      "bytes": 5737,
+      "sha256": "adcb600ff4ee296e672347e6c336de3be982608f14595133587a949c376b7d4e"
+    },
+    {
+      "path": "raw_data/GSE109444/GSE109444_RAW.tar",
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE109nnn/GSE109444/suppl/GSE109444_RAW.tar",
+      "bytes": 30044160,
+      "sha256": "09f2ad64a2a12904164aecd29566676119131ff0fb57f41d3ce18532dfbe531b"
+    },
+    {
+      "path": "raw_data/GSE109444/Nabhan_2018_paper_and_supplement.pdf",
+      "source_url": "https://desailab.stanford.edu/sites/g/files/sbiybj24296/files/media/file/sc1.pdf",
+      "bytes": 5094323,
+      "sha256": "c419b242236122963fecd094b8e9b8e2b5e79c268a7269aba5eb86da3fb67e5d"
+    }
+  ],
+  "archive_members": [
+    {
+      "accession": "GSM2943007",
+      "member": "GSM2943007_1_L28_C83_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 630565,
+      "sha256": "e5980a570fb5cbdaf2982f9527da35ec81feb6ed4d9749ae3daa851c38246455"
+    },
+    {
+      "accession": "GSM2943008",
+      "member": "GSM2943008_1_L28_C60_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 627024,
+      "sha256": "dc2ee9273f9882d49b5335d874075f51f286bb0bd3bb91b5da056955840810f1"
+    },
+    {
+      "accession": "GSM2943009",
+      "member": "GSM2943009_1_L28_C19_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 622244,
+      "sha256": "7ee33b312f7e301afc7ff124cbb352d6fa542bf6397f568b9052ad627a3e91ee"
+    },
+    {
+      "accession": "GSM2943010",
+      "member": "GSM2943010_1_L28_C73_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 627907,
+      "sha256": "ecf158d8154a245adbbfa0a8607b4bf3f2622e82e8fa1910093e5c5a4dc2dc24"
+    },
+    {
+      "accession": "GSM2943011",
+      "member": "GSM2943011_1_L28_C40_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 619775,
+      "sha256": "0d6f438e23c8a66504f2bc7727f67ada43221b67a63ca985ad53fee2dbe7f129"
+    },
+    {
+      "accession": "GSM2943012",
+      "member": "GSM2943012_1_L28_C01_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 633845,
+      "sha256": "c93c6c494334e2b8f6e8bda9b6a29b43c93c808c548c6ec0b34f0beecbe52b3a"
+    },
+    {
+      "accession": "GSM2943013",
+      "member": "GSM2943013_1_L28_C55_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 629083,
+      "sha256": "bce3000987d24bf6ccbff43c288bf0d18209084074676b7070e657a3d95e15fb"
+    },
+    {
+      "accession": "GSM2943014",
+      "member": "GSM2943014_1_L28_C58_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 624106,
+      "sha256": "1d1a62f33fb8a2e3fa0f8244d63f8a970267c789324b845aea6d7e2007db906b"
+    },
+    {
+      "accession": "GSM2943015",
+      "member": "GSM2943015_1_L28_C15_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 631301,
+      "sha256": "05d327f0652b346872591c849f2b11e8e26669e3bf35f154aeb5063453800bb3"
+    },
+    {
+      "accession": "GSM2943016",
+      "member": "GSM2943016_1_L28_C81_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 619765,
+      "sha256": "fb9d51a752622b0fe808aeb03d67dff7e07daf74a399a04b64b3358238b52c40"
+    },
+    {
+      "accession": "GSM2943017",
+      "member": "GSM2943017_1_L28_C72_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 610086,
+      "sha256": "097833729c99767f0d4ea03799d2ed2204472dae257397e982694d04b55821d2"
+    },
+    {
+      "accession": "GSM2943018",
+      "member": "GSM2943018_1_L28_C54_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 613342,
+      "sha256": "525b4076aef825206ec49261fdd7b8e76eb58309010ae4c9c142d29b1ea171c9"
+    },
+    {
+      "accession": "GSM2943019",
+      "member": "GSM2943019_1_L28_C87_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 614124,
+      "sha256": "4f919bd16572b672005d5a7da9f99611847ff844be1d411b7abbd2206cf9a733"
+    },
+    {
+      "accession": "GSM2943020",
+      "member": "GSM2943020_1_L28_C10_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 631078,
+      "sha256": "47fd0f0926c58aa1c9501992de080b1a2c9796e41d5636dcfd19f64630f38a8c"
+    },
+    {
+      "accession": "GSM2943021",
+      "member": "GSM2943021_1_L28_C18_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 623572,
+      "sha256": "9ea9854316495f94539ad5ad9a0bd15f054c0ccda621c2e58839331fee5c924d"
+    },
+    {
+      "accession": "GSM2943022",
+      "member": "GSM2943022_1_L28_C63_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 618085,
+      "sha256": "6cd135696a849368eef82c1ab1e5e084344470f79768ec26272ae97b6f485246"
+    },
+    {
+      "accession": "GSM2943023",
+      "member": "GSM2943023_1_L28_C36_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 610266,
+      "sha256": "1ccfcec6f3eb52c0d4f1a784527b4d6c2904e5d281920e4b827a240a2b6d2321"
+    },
+    {
+      "accession": "GSM2943024",
+      "member": "GSM2943024_1_L28_C68_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 619465,
+      "sha256": "0dd3c5eceb3350bbde6717b503eddc2abc6ea57d974bebc7ceb42cda4e44ce4f"
+    },
+    {
+      "accession": "GSM2943025",
+      "member": "GSM2943025_1p_L28_C51_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 628099,
+      "sha256": "016fc53aaafb0ab36294283534b0caa17a6e0136ec7bb143e872bf5b94fbc384"
+    },
+    {
+      "accession": "GSM2943026",
+      "member": "GSM2943026_1_L28_C61_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 629321,
+      "sha256": "379c5a8b876663b4a1343dfb713c89805d17bfb5b632175073c5bcc270cc5d7c"
+    },
+    {
+      "accession": "GSM2943027",
+      "member": "GSM2943027_1p_L28_C13_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 651051,
+      "sha256": "8347a68a26de49e4df8e124827d6f13ef75c9c44c938a0845f66e59fb56f2316"
+    },
+    {
+      "accession": "GSM2943028",
+      "member": "GSM2943028_1D_L28_C33_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 619575,
+      "sha256": "1554fd585db3125e7487d960d9d32179facaa1ee7db05d9a918fd75d0ac17058"
+    },
+    {
+      "accession": "GSM2943029",
+      "member": "GSM2943029_1_L28_C26_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 627361,
+      "sha256": "95f18099d73e6c9da80d3385d0a42a7c62bbfef493462c05560f0b6ccbc07b06"
+    },
+    {
+      "accession": "GSM2943030",
+      "member": "GSM2943030_1_L28_C39_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 624403,
+      "sha256": "16b6c0e017fa65c82773c8cad6aee726cb089ec1ffd7e9c584c5862a1a1c4bf9"
+    },
+    {
+      "accession": "GSM2943031",
+      "member": "GSM2943031_1_L28_C66_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 621048,
+      "sha256": "7a69626671b0ed4fdb82c10d9bd35589ddd7a3a21fdb80bfcc57a45f75e24d4d"
+    },
+    {
+      "accession": "GSM2943032",
+      "member": "GSM2943032_1_L28_C08_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 627281,
+      "sha256": "956abce95f61d14299030f47ee783af464af8968bcff4cebf8fef9ce6799acec"
+    },
+    {
+      "accession": "GSM2943033",
+      "member": "GSM2943033_1_L28_C69_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 626487,
+      "sha256": "f33275164bbde45c900a4330bd451c3853bc588ef4bdd450c971ddfd1714cc07"
+    },
+    {
+      "accession": "GSM2943034",
+      "member": "GSM2943034_1_L28_C31_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 624425,
+      "sha256": "9f178657f654a7878120f577597505a7b8253cee0927013157ecf55e1990525c"
+    },
+    {
+      "accession": "GSM2943035",
+      "member": "GSM2943035_1pp_L28_C49_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 627138,
+      "sha256": "acc6c6c5c956e4acbd05439f7492b9b083e8aaa3c411cd58a524554042c097c4"
+    },
+    {
+      "accession": "GSM2943036",
+      "member": "GSM2943036_1_L28_C62_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 628044,
+      "sha256": "9bb2dc47cd9fb7ab7748ebf5bcc6fcf906cc5fa690752f493e668b41b72ecc94"
+    },
+    {
+      "accession": "GSM2943037",
+      "member": "GSM2943037_1_L28_C17_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 629044,
+      "sha256": "00d412941a9807388002882a328ffe161eaf8d44023b9b5cd375536488b27c37"
+    },
+    {
+      "accession": "GSM2943038",
+      "member": "GSM2943038_1pp_L28_C43_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 631232,
+      "sha256": "6b847228eb72383ba527bedaf325996f417d20ca7e680998ef158f2d2eb7372a"
+    },
+    {
+      "accession": "GSM2943039",
+      "member": "GSM2943039_1pp_L28_C50_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 637648,
+      "sha256": "4095f2da9f59d91e965db7ac19af13274e24ad7b04f2a6b9f50aece217f42d2b"
+    },
+    {
+      "accession": "GSM2943040",
+      "member": "GSM2943040_1p_L28_C03_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 604880,
+      "sha256": "6e99f80164c523023c5c6aa9fd099bedcad60717f289358278e03c2996f68818"
+    },
+    {
+      "accession": "GSM2943041",
+      "member": "GSM2943041_1pp_L28_C25_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 616844,
+      "sha256": "efe9d5ea4768f8af9497baeb705888b2faf563b85fc68ebe8e200ed6968455d3"
+    },
+    {
+      "accession": "GSM2943042",
+      "member": "GSM2943042_1pp_L28_C79_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 612996,
+      "sha256": "7cda129f03da6a8cd24f8756be9e76f8464712ac49851ffde3675fe6456b550d"
+    },
+    {
+      "accession": "GSM2943043",
+      "member": "GSM2943043_1pp_L28_C65_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 607833,
+      "sha256": "8e2fa55dcee45fc5eb8162c0822c3041caad205d62f4bdbb4f7cb870082ab0f9"
+    },
+    {
+      "accession": "GSM2943044",
+      "member": "GSM2943044_1_L28_C64_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 623625,
+      "sha256": "3237a0ae78b2ab34ed2515e2ac10ab4f8f545fc077fc42c57580be0b95990e50"
+    },
+    {
+      "accession": "GSM2943045",
+      "member": "GSM2943045_1_L28_C14_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 622180,
+      "sha256": "5bde3be5376ca6e0cfb1a813db06381d99dd7f165d652a838d4cf752026f91d9"
+    },
+    {
+      "accession": "GSM2943046",
+      "member": "GSM2943046_1_L28_C82_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 635873,
+      "sha256": "340d8ab508c87d7a06fdff472cd10819f80f0594c5d6e33d0b155747c42fca9d"
+    },
+    {
+      "accession": "GSM2943047",
+      "member": "GSM2943047_1D_L28_C93_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 624165,
+      "sha256": "e220b0741c384878b415a2becbe00808d3819e500c6cf32d7d8d6772af54abdd"
+    },
+    {
+      "accession": "GSM2943048",
+      "member": "GSM2943048_1_L28_C88_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 629858,
+      "sha256": "5cf30eb79172fc4bbd6a9b3bb192b2f3ebef0bda71914e4806e06931c74bc298"
+    },
+    {
+      "accession": "GSM2943049",
+      "member": "GSM2943049_1_L28_C56_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 632840,
+      "sha256": "320190409f10810d83462c3be166e4e5b0ecbc8ba531e5a019646f1650b8eafb"
+    },
+    {
+      "accession": "GSM2943050",
+      "member": "GSM2943050_1_L28_C74_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 627040,
+      "sha256": "4829658821223a89e49614765341361f65e57a2cf0e15df45a4bcf914d8bf578"
+    },
+    {
+      "accession": "GSM2943051",
+      "member": "GSM2943051_1_L28_C45_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 620705,
+      "sha256": "ca46c68d19e4e3d794b2868a0d5f8fc0c1f482091b33fb29d7cf2d004c374b33"
+    },
+    {
+      "accession": "GSM2943052",
+      "member": "GSM2943052_1_L28_C16_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 616301,
+      "sha256": "3edc131bc6294a2b06dded731230a1dcfecc3bb4a75d1dfb330f2aef895b2585"
+    },
+    {
+      "accession": "GSM2943053",
+      "member": "GSM2943053_1_L28_C95_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 614753,
+      "sha256": "d79ccba0e30caabf6778261d4e9251da8cf0cd737e430bb807919f4ab0fd1111"
+    },
+    {
+      "accession": "GSM2943054",
+      "member": "GSM2943054_PTC1_BTL28_IL4898.sorted.genes.fpkm_tracking.gz",
+      "bytes": 670210,
+      "sha256": "f1104a96e9feb78b1a34db4a117134e6a6b7d342985d1be7632497050589dfcb"
+    }
+  ],
+  "code_sha256": "c7ba6c5fc5a0117337746ec93ff556e7a663b65af426b04bbfc023bf7cb76468",
+  "specification_sha256": "b20f1c9b22761e5432fc74b7e8ddb711a8a898b0b982b5030cb22c673dbac1a8",
+  "runtime": {
+    "python": "3.12.14",
+    "pandas": "2.3.3",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.1"
+  },
+  "raw_processing": "Deposited gene-level Cufflinks 2.0.2 FPKM (mm10); no raw-read remapping or re-normalization",
+  "gene_resolution": "Exact gene_short_name; one record required per target per sample; no duplicate summation",
+  "output_sha256": {
+    "tables/bulk_control_fpkm.csv": "dba0e018dd5729a7855917980f4640987893c1ff8ae3ea7871877c6e384587be",
+    "tables/conditional_codetection.csv": "6daf870928bde57cef958ca2590fc006ef804448b4d202f67c6daff4d54cd597",
+    "tables/detection_by_threshold.csv": "a578ff8270490053730569df0dcafc9342c0da777f671c639efa993f8c956862",
+    "tables/housekeeping_qc_diagnostic.csv": "6c575ae3707e940628163ebe825ad1e0c45dca67423fc07a54123d6af233ac45",
+    "tables/panel_gene_records.csv": "c4759fb9d74eb9a4bd457639e06d26292d1d01c9bb2288b9358bed42592d3a8c",
+    "tables/parse_validation.csv": "33043160d76b3cff33c82cc5cd9e390ddf30d4295b353841bb87a92d38b19311",
+    "tables/plot_cell_order.csv": "fbfaf79caec617962989c5b3e0c86d2cfa76b08e7d32e4a9a2955075c813c324",
+    "tables/sample_metadata.csv": "2eb934cd999abfca75186c219e1a2c2bd84d5448b8f4b131940423b434a27bf9",
+    "tables/single_cell_fpkm.csv": "e1b683dc64feed1627c4f70f3cce5ecb88da19a33edb2093541258bb166cb9b2",
+    "figures/detection_sensitivity.png": "ee46994975f4c764548c2c9a7187f747c8bfe466ef10865843d728d7dee02e19",
+    "figures/detection_sensitivity.svg": "e9ecba0426bc8b5aee5cd456e69c00de1049e2f4e822fb85d31ed4a5b23144f6",
+    "figures/source_expression_panel.png": "d0a979ce10651f778a607d651da156f5c33e087164a45645d255d11a5ffd3f63",
+    "figures/source_expression_panel.svg": "8669862eb851022190357983910566f6c9cdaed4f61d662277bdb07afa7d3368"
+  }
+}
