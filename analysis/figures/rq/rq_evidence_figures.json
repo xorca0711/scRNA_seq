@@ -1,0 +1,34 @@
+{
+  "scope": "Descriptive figures from saved tables; no new hypothesis tests or embeddings.",
+  "inputs_sha256": {
+    "analysis/corrections/ligand/results/c37/per_donor.csv": "0a4d9920c716cda829e68b12a7bf6d54554c4593456a05cc0582b51d0a837136",
+    "analysis/corrections/ligand/results/c37/summary.json": "a6e5a37bc66ec2374f0eecd0784c83f7cad71fb0b9669e5d111af2c4ef5f670d",
+    "analysis/corrections/ligand/results/lr/resource_summary.csv": "cf3c744c0cc4591faac119aa85ea3534182468faa0a0e1967cebd59585d01926",
+    "analysis/corrections/statistics/tables/subtype_cell_fractions.csv": "175b92852e2dbe179471d50a528e391fefbcd82b4d69f024d538c4cca8260b31",
+    "analysis/corrections/statistics/tables/subtype_transcript_contributions.csv": "5dff0f07f00437b905732d52c4491fb59007d9c3393329c280e42616f0d6e835",
+    "Thesis/epithelial_state_specificity/results/module_scores.csv": "8e12a64755f1d9973a65a71b75be0752cf34c395d2f8597fb6d938993f3da707",
+    "Thesis/epithelial_state_specificity/results/module_overlap.csv": "13c51dd5a63eac7c14f210f3da4cd7a3a6d343971ab898f2074382b49c84c9f1",
+    "Thesis/epithelial_state_specificity/results/within_unit_effects.csv": "d70607b73d7135c71acd419cccaf3ac9016322c09e4b4817b9942f5166017d23",
+    "analysis/corrections/ligand/results/lr/canonical_egfr_receptor_coverage.csv": "fcc4273828dccfa738674114aee453885a204a7ee60fd2a384df7f5aa70c76fc"
+  },
+  "script_sha256": "31d94a6b2c78e451a7d978ab9070c687432a3e9f874433c4382b8cb18dedbf5d",
+  "outputs_sha256": {
+    "analysis/figures/rq/rq_a2_source_rank.png": "121c900339273543581ea2b7b6d0d27ef64965a8b0b291d9c0ce4e6c869fbcad",
+    "analysis/figures/rq/rq_a2_source_rank.svg": "4b95add08bb7464af8b7b1e5932036fe82843b082d8ed074e1399c43c2c3f6bf",
+    "analysis/figures/rq/rq_a6_composition.png": "8715f7e34e073cb37d7cfc4b37ed2fa624e3ebebfcb99f253bfafd844bc39009",
+    "analysis/figures/rq/rq_a6_composition.svg": "63fd8768cf5b78280557a57f06351fc6cb772a5057a9241d327a357657ada315",
+    "analysis/figures/rq/rq_a7_genotype_reference.png": "c8a9604091dd8358e04f1a75c7af937ba8b0b53b7faba27c5b7a7d004a7ed47f",
+    "analysis/figures/rq/rq_a7_genotype_reference.svg": "46cbd30058318052afa2c7ce5e4ca449725105713450f2879c8d31240f4d2d98",
+    "analysis/figures/rq/rq_a8_signature_specificity.png": "fa45a49ece57d5681eb31f1e3a868a53d4cd6b323805f1edeef9e471aac8ebda",
+    "analysis/figures/rq/rq_a8_signature_specificity.svg": "80f84e2a499a8e9e7430b3d2565caa64c406ac5e58dbf93865cc39e26f5fa744",
+    "analysis/figures/rq/rq_a9_receptor_coverage.png": "94aa65cf0f523abc175327e4ee48f452add4871bfae4bc3e2ae4e9a752e91320",
+    "analysis/figures/rq/rq_a9_receptor_coverage.svg": "861e4f813c18e9b8e4cf5d194413985998e6e5195bc409aa1aefe6cd77a034af"
+  },
+  "checks": [
+    "10 donor pairs selected by primary-budget eligibility",
+    "Two deposited macrophage states per cohort",
+    "Two technical seeds per eligible ES1 comparison",
+    "119 ADI/AT1 shared holdout genes",
+    "Unique resource/receptor/ligand coverage rows"
+  ]
+}

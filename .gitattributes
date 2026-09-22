@@ -7,3 +7,7 @@ Thesis/epithelial_state_specificity/** -text whitespace=cr-at-eol
 # These generators emit harmless trailing spaces; keep their original output.
 analysis/corrections/ligand/results/figures/*.svg whitespace=cr-at-eol,-blank-at-eol
 analysis/corrections/statistics/R-session.txt whitespace=cr-at-eol,-blank-at-eol
+
+# RQ figure provenance also records exact source and vector-output hashes.
+analysis/scripts/18_rq_evidence_figures.py -text whitespace=cr-at-eol
+analysis/figures/rq/*.svg -text whitespace=cr-at-eol
