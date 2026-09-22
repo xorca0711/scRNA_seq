@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "scope": "Manually normalized metadata for reassessed and key portfolio claims. Other rows explicitly remain unnormalized; no independence is inferred from missing metadata.",
+  "claims": {
+    "C1": {
+      "kind": "annotation_validation",
+      "unit": "cluster; descriptive label agreement",
+      "sample_definition": "Original mouse atlas clusters; deposited labels used as evaluation",
+      "datasets": [
+        "GSE262927"
+      ]
+    },
+    "C3": {
+      "kind": "biological_description",
+      "unit": "animal",
+      "sample_definition": "Per-animal capillary composition by collection day",
+      "datasets": [
+        "GSE262927"
+      ]
+    },
+    "C4": {
+      "kind": "lineage_description",
+      "unit": "animal",
+      "sample_definition": "Cre-line tracing cohort, separate from annotated atlas",
+      "datasets": [
+        "GSE262927"
+      ]
+    },
+    "C5": {
+      "kind": "analysis_decision",
+      "unit": "dataset",
+      "sample_definition": "Integration choice for original mouse and human analyses",
+      "datasets": [
+        "GSE262927",
+        "GSE178360"
+      ]
+    },
+    "C8": {
+      "kind": "annotation_validation",
+      "unit": "cluster",
+      "sample_definition": "29 original mouse clusters; marker calls compared with deposited labels",
+      "datasets": [
+        "GSE262927"
+      ]
+    },
+    "C37": {
+      "kind": "source_expression_comparison",
+      "unit": "donor",
+      "sample_definition": "Paired epithelial and myeloid source measurements within tumour-lung donor; corrected annotation and molecule-depth eligibility",
+      "datasets": [
+        "GSE131907"
+      ]
+    },
+    "C49": {
+      "kind": "cross_donor_association",
+      "unit": "donor",
+      "sample_definition": "Eligible epithelial and fibroblast compartments; pooled and IPF-only contrasts",
+      "datasets": [
+        "GSE136831"
+      ]
+    },
+    "C80": {
+      "kind": "resource_ranking",
+      "unit": "donor",
+      "sample_definition": "Historical broad-sender scan and separate corrected epithelial-to-fibroblast ranking",
+      "datasets": [
+        "GSE136831"
+      ]
+    },
+    "C81": {
+      "kind": "resource_ranking",
+      "unit": "donor",
+      "sample_definition": "Eligible sender-target measurements within donor",
+      "datasets": [
+        "GSE136831"
+      ]
+    },
+    "C82": {
+      "kind": "resource_ranking",
+      "unit": "donor",
+      "sample_definition": "EGFR-ligand rankings with resource membership and receptor complexes explicit",
+      "datasets": [
+        "GSE136831"
+      ]
+    },
+    "C83": {
+      "kind": "cross_context_description",
+      "unit": "donor or pooled library as appropriate",
+      "sample_definition": "Mouse ligand order compared with human expression-derived ranking",
+      "datasets": [
+        "GSE136831",
+        "GSE316244"
+      ]
+    },
+    "C84": {
+      "kind": "measurement_limit",
+      "unit": "not applicable",
+      "sample_definition": "Expression-derived ligand-receptor scores do not establish signalling",
+      "datasets": [
+        "GSE136831"
+      ]
+    },
+    "C105": {
+      "kind": "mechanistic_hypothesis",
+      "unit": "library; pooled mice are not separate replicates",
+      "sample_definition": "Companion epithelial states, not surface-verified escaping sorted cells",
+      "datasets": [
+        "GSE247505",
+        "GSE316244"
+      ]
+    },
+    "C106": {
+      "kind": "expression_comparison",
+      "unit": "library",
+      "sample_definition": "Evaluable DATP-like and AT2 state contrasts within library",
+      "datasets": [
+        "GSE247505",
+        "GSE316244"
+      ]
+    },
+    "C107": {
+      "kind": "mechanistic_hypothesis",
+      "unit": "not established for actual sorted contaminants",
+      "sample_definition": "Surface-dimming mechanism unmeasured in actual escaping cells",
+      "datasets": [
+        "GSE247505",
+        "GSE316244"
+      ]
+    },
+    "C111": {
+      "kind": "resource_sensitivity",
+      "unit": "resource on shared donor data",
+      "sample_definition": "Same expression and scoring across curated ligand-receptor resources",
+      "datasets": [
+        "GSE136831"
+      ]
+    },
+    "C112": {
+      "kind": "resource_sensitivity",
+      "unit": "resource on shared donor data",
+      "sample_definition": "Canonical EGFR ligands; exact receptor and complexes distinguished",
+      "datasets": [
+        "GSE136831"
+      ]
+    },
+    "C113": {
+      "kind": "resource_sensitivity",
+      "unit": "resource on shared donor data",
+      "sample_definition": "Top-ranking overlap; resource comparisons are not independent biological replicates",
+      "datasets": [
+        "GSE136831"
+      ]
+    },
+    "C114": {
+      "kind": "resource_membership",
+      "unit": "resource entry",
+      "sample_definition": "Exported consensus resource before expression filtering",
+      "datasets": [
+        "GSE136831"
+      ]
+    },
+    "C115": {
+      "kind": "method_check",
+      "unit": "resource pair",
+      "sample_definition": "Coverage of the stated abundance guard",
+      "datasets": [
+        "GSE136831"
+      ]
+    },
+    "C118": {
+      "kind": "within_well_description",
+      "unit": "well; cell resampling is technical sensitivity",
+      "sample_definition": "Operational transitional labels at fixed molecule budgets",
+      "datasets": [
+        "GSE310539",
+        "GSE247130"
+      ]
+    },
+    "C119": {
+      "kind": "classifier_specificity",
+      "unit": "well",
+      "sample_definition": "P9 control and Cebpa mutant evaluated separately from adult injured wells",
+      "datasets": [
+        "GSE247130"
+      ]
+    },
+    "C131": {
+      "kind": "within_well_accessibility",
+      "unit": "well; gene-set null is not animal replication",
+      "sample_definition": "Three evaluable wells, including uninjured 7-week Cebpa mutant; background-centered contrast",
+      "datasets": [
+        "GSE310539",
+        "GSE247130"
+      ]
+    },
+    "C133": {
+      "kind": "uncertainty_calibration",
+      "unit": "reference-cell split; not animal",
+      "sample_definition": "Reference-only split calibration applied to transitional accessibility contrast",
+      "datasets": [
+        "GSE247130"
+      ]
+    },
+    "C152": {
+      "kind": "evidence_provenance",
+      "unit": "record",
+      "sample_definition": "Traceability of quoted computations",
+      "datasets": []
+    },
+    "C154": {
+      "kind": "state_association",
+      "unit": "well",
+      "sample_definition": "One sufficiently large transitional set in an infected Cebpa-mutant well; gate failed",
+      "datasets": [
+        "GSE247130"
+      ]
+    },
+    "C156": {
+      "kind": "positive_control_check",
+      "unit": "animal",
+      "sample_definition": "G1 phase contrasts in epithelial and whole-myeloid pseudobulks",
+      "datasets": [
+        "GSE262927"
+      ]
+    },
+    "C158": {
+      "kind": "programme_association",
+      "unit": "animal",
+      "sample_definition": "Resolution versus long-term whole-myeloid samples; age, round, genotype, sex and subtype mixture limitations",
+      "datasets": [
+        "GSE262927"
+      ]
+    },
+    "C161": {
+      "kind": "cross_cohort_programme_association",
+      "unit": "donor",
+      "sample_definition": "IPF-control contrasts in three compartments, discovery and separate cohort; deposited labels define compartments",
+      "datasets": [
+        "GSE136831",
+        "GSE135893"
+      ]
+    },
+    "C162": {
+      "kind": "gene_expression_description",
+      "unit": "animal",
+      "sample_definition": "W1 deposited aMAC pseudobulks, late active repair versus resolution",
+      "datasets": [
+        "GSE262927"
+      ]
+    },
+    "C163": {
+      "kind": "gene_set_hypothesis",
+      "unit": "animal",
+      "sample_definition": "W1 frozen sets and reference-method correction; undersized ornithine set not tested",
+      "datasets": [
+        "GSE262927"
+      ]
+    },
+    "C164": {
+      "kind": "gene_expression_description",
+      "unit": "animal",
+      "sample_definition": "W1 long-term versus pooled 42/90-dpi resolution; age and processing confounded",
+      "datasets": [
+        "GSE262927"
+      ]
+    },
+    "C165": {
+      "kind": "within_well_specificity",
+      "unit": "pooled library",
+      "sample_definition": "Control-genotype neonatal and injured adult wells, technical seeds17/29",
+      "datasets": [
+        "GSE247130",
+        "GSE310539",
+        "GSE262927"
+      ]
+    },
+    "C166": {
+      "kind": "external_confirmation_eligibility",
+      "unit": "animal",
+      "sample_definition": "Both30-cell group floors under both seeds in external GSE262927",
+      "datasets": [
+        "GSE247130",
+        "GSE310539",
+        "GSE262927"
+      ]
+    },
+    "C167": {
+      "kind": "genotype_state_description",
+      "unit": "pooled library",
+      "sample_definition": "Matched-stage genotype contrast, reference conditioned on Sftpc",
+      "datasets": [
+        "GSE247130",
+        "GSE310539",
+        "GSE262927"
+      ]
+    },
+    "C168": {
+      "kind": "gene_set_dependence",
+      "unit": "gene list and technical seed",
+      "sample_definition": "Full published ADI/AT1 holdout list overlap and late-marker seed stability",
+      "datasets": [
+        "GSE247130",
+        "GSE310539",
+        "GSE262927"
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Post-audit ligand correction, 2026-09-22",
+  "status": "Prospective specification for this corrected pass; original results already known, not independent preregistration",
+  "historical_outputs": "Read only; write all corrected outputs in this directory",
+  "C12_C14": {
+    "input": "raw_data/GSE136831/c12_epithelial_stromal.h5ad",
+    "senders": "Deposited category Epithelial; explicit source allowlist per donor",
+    "targets": ["Fibroblast", "Myofibroblast"],
+    "donor_floor": "At least 50 epithelial cells and 50 Fibroblast/Myofibroblast cells combined",
+    "subtype_floor": 10,
+    "method": "Installed LIANA CellChat, expr_prop=0.1, n_perms=None, normalize_total(1e4), log1p",
+    "resources": ["cellchatdb", "cellphonedb", "consensus", "connectomedb2020", "italk"],
+    "aggregation": "Maximum score across allowed source-target subtype pairs per donor and molecular pair; ordinal descending score ranks with deterministic pair/source/target tie breaks; median across donors; present in at least ceil(N/2) eligible donors",
+    "provenance": "Preserve every scored source-target pair and the winning source/target in separate per-resource tables",
+    "guard": "Historical C14 COL/LAM/FN1 or ITG/SDC/CD44 rule, descriptive only; passing does not establish communication or absence of abundance bias",
+    "EGFR": "Report historical exact EGFR pairs separately from complexes containing EGFR; no missing complex parsed as biological absence",
+    "limits": "No permutation significance, spatial evidence, functional interaction or disease contrast; same pooled IPF/control design as original"
+  },
+  "C37": {
+    "annotation": "Deposited major types, tumour lung only, donor Sample, >=50 cells in each compartment",
+    "baseline": "AREG >0 from original E1 cached deposited log2TPM values",
+    "depth": "Stream raw UMI matrix once for totals, detected genes and AREG counts in those same tumour epithelial/myeloid cells",
+    "primary_depth_sensitivity": "1000-UMI exact expected AREG detection under molecule sampling without replacement; retain cells with >=1000 UMIs; retain donor groups with >=50 retained cells",
+    "additional_budgets": [500, 2000],
+    "test": "Two-sided paired Wilcoxon on donor means, no cell-level p-values; budgets are sensitivity analyses, not independently confirmatory tests",
+    "limits": "Depth matching changes sampled cells; UMI depth can include biological RNA-content differences; annotation and residual composition remain unverified"
+  }
+}

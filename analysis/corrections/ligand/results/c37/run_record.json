@@ -1,0 +1,18 @@
+{
+  "analysis": "Post hoc annotation/depth sensitivity, not confirmation",
+  "inputs_sha256": {
+    "X:\\GitHub\\scRNA_seq\\raw_data\\GSE131907\\e1_extracted_rows.npz": "a2614eeaf63e22cb94b3ff7450afe53ba666b4736c2bfc6fabdc13904f96a812",
+    "X:\\GitHub\\scRNA_seq\\raw_data\\GSE131907\\GSE131907_Lung_Cancer_cell_annotation.txt.gz": "9d017652a31a489c1f62cacc436936d48a5b07bb554fc0dbe602da7474532205",
+    "X:\\GitHub\\scRNA_seq\\raw_data\\GSE131907\\GSE131907_Lung_Cancer_raw_UMI_matrix.txt.gz": "b44a9c6635d0b59ec66b5eb6b40b40e7292c3a75aaf8afc4f933eb0550a26372",
+    "X:\\GitHub\\scRNA_seq\\analysis\\corrections\\ligand\\specification.json": "39a031c6c5cd422e150349f3cf4e5a25120078a70eb7002e4656b108c9e15b45",
+    "X:\\GitHub\\scRNA_seq\\analysis\\corrections\\ligand\\common.py": "cf5de3cd216cd0bec842d319514d99db47a1578ddba3f383af14fea6d682222a",
+    "X:\\GitHub\\scRNA_seq\\analysis\\corrections\\ligand\\c37_annotation_depth.py": "585407b7167a4f618d534f8f9f80b299a69b90dd6d056451c92c43ac8a6c9e0c"
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.18.0"
+  },
+  "elapsed_seconds": 453.5,
+  "specification": "../../specification.json"
+}

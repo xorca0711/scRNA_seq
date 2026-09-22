@@ -1,0 +1,6 @@
+"cohort","compartment","label","n_IPF","n_control","tested"
+"GSE136831","AT2","ATII",3,10,TRUE
+"GSE136831","fibroblasts","Fibroblast",10,4,TRUE
+"GSE136831","fibroblasts","Myofibroblast",10,1,FALSE
+"GSE136831","macrophages","Macrophage",32,27,TRUE
+"GSE136831","macrophages","Macrophage_Alveolar",29,26,TRUE

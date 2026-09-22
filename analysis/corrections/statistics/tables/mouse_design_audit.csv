@@ -1,0 +1,9 @@
+"label","formula","n","columns","rank","residual_df","full_rank","n_first","n_second"
+"W1_A","~batch + sex + arm",12,5,5,7,TRUE,4,8
+"W1_B","~batch + sex + arm",11,5,5,6,TRUE,8,3
+"G1_all_unadjusted","~arm",15,2,2,13,TRUE,12,3
+"G1_all_adjusted","~batch + sex + homo + arm",15,6,6,9,TRUE,12,3
+"G1_heterozygote_adjusted","~batch + sex + arm",11,5,5,6,TRUE,8,3
+"G1_december_heterozygote","~sex + arm",6,3,3,3,TRUE,3,3
+"G1_age_time_not_identifiable","~batch + sex + homo + arm + day",15,7,6,9,FALSE,12,3
+"G1_same_round_male_only_below_arm_floor","~arm",4,2,2,2,TRUE,3,1

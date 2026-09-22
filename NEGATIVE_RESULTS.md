@@ -17,10 +17,10 @@ the claim's potential.
 | Bucket | Rows |
 |---|--:|
 | Retracted or superseded, kept on display | 3 |
-| Refuted | 39 |
+| Refuted | 38 |
 | Not establishable with the data that exists | 6 |
-| Not established | 35 |
-| **Total** | **83** |
+| Not established | 39 |
+| **Total** | **86** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -155,13 +155,6 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate1_02_choi_2020/trials/d7_attack_claims/d7_a2_doublet_by_state.csv`
 - **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
-### C105. Transcriptional downregulation of Epcam explains why the transitional state escapes an EpCAM-negative gate
-
-- **Status in the register:** Refuted
-- **What settled it:** trial C13 T1 on five libraries of GSE247505 and GSE316244: Epcam detection is equal or higher in the transitional state everywhere, and no depth half shows a deficit above 6.6 points
-- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv`
-- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
-
 ### C109. Adam17 transcript rises in the transitional state
 
 - **Status in the register:** Refuted
@@ -178,9 +171,16 @@ what was refuted and what settled it.
 
 ### C111. A whole-resource ligand-receptor scan on dissociated tissue always surfaces matrix pairs against promiscuous receptors
 
-- **Status in the register:** Refuted
-- **What settled it:** trial C14: holding cells, donors, compartments and method fixed and varying only the resource, the abundance guard fires in 1 of 5, with shares of 0.80, 0.40, 0.27, 0.20 and 0.20
-- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c14_does_the_ranking_depend_on_the_database/c14_resource_summary.csv`
+- **Status in the register:** Refuted (delegated reassessment 2026-09-22, decision 32)
+- **What settled it:** Corrected common 22-donor epithelial-to-fibroblast analysis: abundance-flag shares among top15 are 0.7333 CellChatDB, 0.3333 CellPhoneDB, and 0.1333 for consensus, ConnectomeDB2020 and iTALK. The universal assertion fails under the same frozen historical flag after source correction.
+- **Artefact:** `analysis/corrections/ligand/results/lr/resource_summary.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
+### C114. The consensus resource lacks EGFR-targeting pairs
+
+- **Status in the register:** Refuted (delegated reassessment 2026-09-22, decision 32)
+- **What settled it:** The exported consensus resource contains EGFR-targeting entries, including AREG to EGFR_ERBB2 and other canonical ligand complexes. AREG to EGFR_ERBB2 is scored in 7/22 eligible donors, below the 11-donor retention threshold; 25 other EGFR-component pairs survive. Absence from a retained exact-receptor list is not absence from the resource.
+- **Artefact:** `analysis/corrections/ligand/results/lr/egfr_component_pairs.csv; analysis/corrections/ligand/results/lr/consensus_donor_pair_winners.csv`
 - **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ### C115. The widened abundance guard catches every abundance-type pair
@@ -267,13 +267,6 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
-### C138. Axin2 or Il1r1 transcript detection can stand in for the lineage reporters in droplet single-cell data
-
-- **Status in the register:** Refuted (owner retained 2026-09-22, decision 30, as a block, to revisit)
-- **What settled it:** measured on Choi's own deposit GSE145031: Axin2 detected in 4.6, 4.3 and 5.6 per cent of AT2-lineage cells and Il1r1 in 5.8, 7.1 and 7.1 per cent, both at about one UMI per positive cell. Nabhan's own supplement also concedes the reporter does not label all Axin2-positive cells
-- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
-- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
-
 ### C141. The laboratory that proposed the comparison has not advanced it since 2020
 
 - **Status in the register:** Refuted (owner retained 2026-09-22, decision 30, as a block, to revisit)
@@ -295,9 +288,9 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
-### C146. GSE150957, a bulk array of Wnt-sorted distal lung epithelium with a paired within-animal design and the mouse as the unit, can contribute to the Axin2 and Il1r1 joint question
+### C146. Bulk Wnt-sorted GSE150957 measurements can directly resolve current Axin2/Il1r1 same-cell co-occurrence
 
-- **Status in the register:** Refuted (owner retained 2026-09-22, decision 30, as a block, to revisit)
+- **Status in the register:** Refuted (delegated reassessment 2026-09-22, decision 32)
 - **What settled it:** this folder proposed it as Route C and the owner pointed out it is out of focus. Bulk cannot answer a co-occurrence question at any level of replication, because the question is whether two markers sit in the same cell and a sorted fraction reports an average; it also sorts on a Wnt activity reporter rather than Axin2, is whole distal epithelium rather than AT2, and uses a fifth injury model
 - **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
@@ -485,13 +478,6 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_reference_clusters.csv`
 - **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
-### C81. Some pair in CellChatDB outranks the AREG to EGFR axis from epithelium to fibroblast
-
-- **Status in the register:** Not established
-- **What settled it:** trial C12: the ranking that would answer this failed its own pre-registered abundance guard, 11 of the top 15
-- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan/c12_run_record.json`
-- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
-
 ### C88. Primed AT2, the paper's state of lost Etv5, Abca3 and Cebpa with inflammatory genes gained, is a distinct cluster recoverable blind from the deposit
 
 - **Status in the register:** Not established
@@ -534,18 +520,25 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate1_02_choi_2020/trials/d7_attack_claims/d7_run_record.json`
 - **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
+### C105. Transcriptional downregulation of Epcam explains why the transitional state escapes an EpCAM-negative gate
+
+- **Status in the register:** Not established (delegated reassessment 2026-09-22, decision 32)
+- **What settled it:** trial C13 T1 on five libraries of GSE247505 and GSE316244: Epcam detection is equal or higher in the transitional state everywhere, and no depth half shows a deficit above 6.6 points
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv`
+- **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
+
 ### C106. The transitional state expresses more Epcam than AT2 cells
 
 - **Status in the register:** Not established
-- **What settled it:** trial C13: the observed gap is +0.02 to +0.09 while Epcam sits between 0.89 and 1.00 in both groups, and transitional cells are deeper in all five libraries
+- **What settled it:** trial C13: the observed detection gap is +0.02 to +0.09; Epcam detection spans 0.6456 to 0.9912 across the two groups in five evaluable libraries, and transitional cells are deeper in all five
 - **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_by_library_and_state.csv`
 - **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
-### C114. The consensus resource lacks EGFR-targeting pairs
+### C107. Any surface EpCAM dimming in these cells would have to be post-transcriptional
 
-- **Status in the register:** Not established
-- **What settled it:** trial C14: it returned none, but that resource names many receptors as complexes and a complex name will not match a plain string
-- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c14_does_the_ranking_depend_on_the_database/c14_resource_summary.csv`
+- **Status in the register:** Not established (delegated reassessment 2026-09-22, decision 32)
+- **What settled it:** trial C13, as the space left by C85 rather than a positive finding
+- **Artefact:** `Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_summary.md`
 - **Where it came from:** Stage 4. Choi 2020, roadmap paper 2, re-entered at the owner's direction (2026-09-15)
 
 ### C121. Whether the AT2 identity programme's chromatin closes in the transitional state; see C131 and C133, which give the question a direction and a bound without settling it
@@ -562,9 +555,9 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1e_per_well_budget/m1e_readings.csv`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
 
-### C133. In the infected Cebpa-mutant well, AT2 distal accessibility in the labelled group is -15.5 per cent of reference accessibility with an interval of -24.4 to -6.6
+### C133. A biological-sample-level reduction in AT2 distal accessibility is established in the infected Cebpa-mutant transitional group
 
-- **Status in the register:** Not established (owner retained 2026-09-22, decision 30)
+- **Status in the register:** Not established (delegated reassessment 2026-09-22, decision 32)
 - **What settled it:** trial M3, reported but refused under rule R9 because that well's positive control did not fire
 - **Artefact:** `Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_readings.csv`
 - **Where it came from:** Stage 5. The DATP epigenetics branch of roadmap paper 2 (2026-09-20)
@@ -580,6 +573,20 @@ what was refuted and what settled it.
 
 - **Status in the register:** Not established (owner retained 2026-09-22, decision 30, as a block, to revisit)
 - **What settled it:** the lineage-labelled fraction rises from 15 to 60 per cent after bleomycin, and Choi's own Limitations section says residual tamoxifen means expansion of a pre-existing pool cannot be separated from fresh Cre firing during repair
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C136. Axin2-positive and Il1r1-positive AT2 cells overlap
+
+- **Status in the register:** Not established (delegated reassessment 2026-09-22, decision 32)
+- **What settled it:** England et al. 2025 report Axin2 specifically upregulated in the Il1r1-lineage sorted fraction and write that this suggests enrichment; it is one supplementary panel, bulk-sorted, at homeostasis only, with no contingency table
+- **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
+- **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C138. Axin2 or Il1r1 transcript detection can stand in for the lineage reporters in droplet single-cell data
+
+- **Status in the register:** Not established (delegated reassessment 2026-09-22, decision 32)
+- **What settled it:** measured on Choi's own deposit GSE145031: Axin2 detected in 4.6, 4.3 and 5.6 per cent of AT2-lineage cells and Il1r1 in 5.8, 7.1 and 7.1 per cent, both at about one UMI per positive cell. Nabhan's own supplement also concedes the reporter does not label all Axin2-positive cells
 - **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
@@ -604,12 +611,19 @@ what was refuted and what settled it.
 - **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_readings.csv`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
 
-### C154. Route B's transitional cell set was reported
+### C154. The Axin2–Il1r1 and Wnt-module association differs between transitional cells and AT2 cells
 
-- **Status in the register:** Not established (owner retained 2026-09-22, decision 30, as a block, to revisit)
+- **Status in the register:** Not established (delegated reassessment 2026-09-22, decision 32)
 - **What settled it:** trial A1c, produced and never registered until the audit found it missing: in the one transitional set large enough to compute, 773 cells of the infected Cebpa mutant, the Axin2 against Il1r1 correlation flips positive at r = +0.070 and the Wnt module at +0.092, percentile 0.94 and 0.977, against negative values in every AT2 set
 - **Artefact:** `Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv`
 - **Where it came from:** Stage 6. The Axin2 and Il1r1 assessment, a branch of roadmap paper 2 (2026-09-20)
+
+### C158. DNA-replication programmes in the myeloid compartment are higher at 42 and 90 dpi than at a year
+
+- **Status in the register:** Not established (delegated reassessment 2026-09-22, decision 32)
+- **What settled it:** trial G1 TEST contrast, injury resolution (12 animals) against long-term (3): 8 GO biological process sets at gseapy FDR < 0.05, of which 2 also clear the expression-matched null (GOBP_MITOTIC_DNA_REPLICATION NES 2.98, FDR 0.000, matched p 0.000; GOBP_CELL_CYCLE_DNA_REPLICATION NES 2.67, FDR 0.000, matched p 0.004); no hallmark set clears Post-audit reference CAMERA: neither DNA-replication set passes confound-aware sensitivities under estimated correlation or fixed 0.01; fixed 0.01 supports the unadjusted contrast only.
+- **Artefact:** `Thesis/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_gobp_cleared.csv; analysis/corrections/statistics/tables/g1_confounded_sensitivity.csv`
+- **Where it came from:** Stage 1. Follow-ups (2026-09-10): the source paper's phase and myeloid claims
 
 ### C159. Whether any programme separates the capillary compartment at 42 and 90 dpi from a year
 
@@ -620,10 +634,17 @@ what was refuted and what settled it.
 
 ### C163. A pre-registered proliferation or arginine and ornithine gene set separates the alveolar macrophage population between repair phases
 
-- **Status in the register:** Not established
-- **What settled it:** trial W1 under CAMERA on the same design: no set at FDR < 0.05 in either contrast (0.95 in late active repair against resolution, 0.46 to 0.48 in resolution against long-term); the proliferation sets carry an inter-gene correlation of 0.30 to 0.45 across animals, and the two hallmark sets a variance inflation of 55 to 69, so a hallmark set of about 190 genes carries the independent information of about three; the ornithine set had 7 genes and was not tested
-- **Artefact:** `Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_sets.csv`
+- **Status in the register:** Not established (delegated reassessment 2026-09-22, decision 32)
+- **What settled it:** trial W1 under CAMERA on the same design: no set at FDR < 0.05 in either contrast (0.95 in late active repair against resolution, 0.46 to 0.48 in resolution against long-term); the proliferation sets carry an inter-gene correlation of 0.30 to 0.45 across animals, and the two hallmark sets a variance inflation of 55 to 69, so a hallmark set of about 190 genes carries the independent information of about three; the ornithine set had 7 genes and was not tested Official reference limma CAMERA reproduces the no-hit result under both historical logCPM and voom/TMM transformations with estimated correlation.
+- **Artefact:** `Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_sets.csv; analysis/corrections/statistics/tables/w1_reference_camera.csv`
 - **Where it came from:** Stage 1. Follow-ups (2026-09-10): the source paper's phase and myeloid claims
+
+### C166. ES1 has replicated external biological confirmation under the frozen two-group eligibility rule
+
+- **Status in the register:** Not established (delegated reassessment 2026-09-22, decision 32)
+- **What settled it:** GSE262927: 25 animals examined, only EEM-scRNA-167 qualifies in both seeds (40/193 and 35/197 labelled/reference cells); ADI contrasts +12.64/+11.58 detection points. The 7-week multiome control also crosses its floor between seeds (30 versus 26 labelled cells)
+- **Artefact:** `Thesis/epithelial_state_specificity/results/retention.csv; Thesis/epithelial_state_specificity/results/within_unit_effects.csv`
+- **Where it came from:** Cross-study epithelial specificity: ES1 correction, 2026-09-22
 
 ---
 

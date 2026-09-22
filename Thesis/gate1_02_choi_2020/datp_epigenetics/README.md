@@ -5,6 +5,13 @@ owner's direction. It asks what the transitional state looks like in a layer
 other than messenger RNA, and it is on other people's data for a reason that is
 itself a finding.
 
+**Current scope after the 2026-09-22 audit.** The next analysis is the
+[epithelial-state specificity project](../../epithelial_state_specificity/README.md),
+which joins the neonatal two-marker caveat to a source-backed RNA module
+comparison. Reduced AT2 accessibility alone cannot distinguish productive AT1
+differentiation from arrest. The historical trials below retain their outputs;
+the earlier closed-versus-reversible fate interpretation is not retained.
+
 **Why this branch is not on the Choi deposit.** Choi 2020 supports the
 epigenetic half of its Il1r1-positive AT2 claim with ATAC-seq (Figures 5 and 6),
 but GSE144598 deposits two bigwig coverage tracks and nothing else: no peaks, no
@@ -120,7 +127,7 @@ chromatin say (C)? And what may I no longer do (D)?
 
 | # | Established | Status | What follows for planning |
 |---|---|---|---|
-| C1 | AT2 identity distal chromatin is lower in the labelled group than in 300 matched random gene sets, in all three computable wells: percentile 0.000, 0.007 and 0.000, at -37.8, -18.3 and -15.5 per cent of reference accessibility ([C131](../../../CLAIMS.md)) | **Exploratory** | The direction is **closing**, which favours an arrested state over a reversible one. Size the next design to detect a 10 to 15 per cent relative change, not the 45 per cent this one could see |
+| C1 | The background-centered AT2 distal contrast is negative in all three wells reaching the statistic: percentile 0.000, 0.007 and 0.000 of 300 matched gene sets, at -37.8, -18.3 and -15.5 per cent of reference accessibility ([C131](../../../CLAIMS.md)); raw reductions are -31.8, -16.0 and -8.5 per cent | **Exploratory** | No well passes both gates. The uninjured comparator is Cebpa mutant, which can show genuine genetically induced identity change. Accessibility loss alone does not favour arrest over productive differentiation. The reference-cell sham interval is not an animal-level confidence interval or a biological power estimate |
 | C2 | Whether the AT2 identity programme's chromatin actually closes ([C121](../../../CLAIMS.md), [C133](../../../CLAIMS.md)) | **Not established** | No well satisfies both gates: the well whose AT2 arm clears has a positive control that does not fire, and vice versa. Needs more labelled cells, or peaks re-called on the labelled cells from the fragments files, before it is worth re-asking |
 | C3 | "Silenced but not closed" ([C120](../../../CLAIMS.md)) | **Retracted, superseded** | Never write this sentence again. The positive control that licensed it was unstable, and its direction was an artefact of one gene carrying three peaks |
 | C4 | AP-1 dependence of anything above ([C128](../../../CLAIMS.md)) | **Not established** | The infected AP-1 mutant well held 44 labelled cells against a floor of 50. Six cells short of the branch's most interesting genotype, so a design that recovers a few hundred more labelled cells buys that arm outright |

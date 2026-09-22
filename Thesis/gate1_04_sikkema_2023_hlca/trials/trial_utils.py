@@ -21,6 +21,8 @@ import pandas as pd
 import scipy.sparse as sp
 
 REPO = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(REPO / "analysis"))
+from lib.provenance import archive_existing_record, code_identity, sha256_file, write_json_atomic
 
 
 def utc_now() -> str:
@@ -30,7 +32,7 @@ def utc_now() -> str:
 def file_facts(path: Path) -> dict:
     st = path.stat()
     return {"path": str(path.relative_to(REPO)) if path.is_relative_to(REPO) else str(path),
-            "bytes": st.st_size,
+            "bytes": st.st_size, "sha256": sha256_file(path),
             "modified": dt.datetime.fromtimestamp(st.st_mtime, dt.timezone.utc).isoformat(timespec="seconds")}
 
 
@@ -50,6 +52,7 @@ class RunRecord:
 
     def __init__(self, path: Path, trial: str, rules: dict, notes: str = "") -> None:
         self.path = path
+        previous = archive_existing_record(path)
         self.record = {
             "trial": trial,
             "rules_frozen_at": utc_now(),
@@ -59,6 +62,9 @@ class RunRecord:
             "outputs": [],
             "results": {},
             "software": package_versions(),
+            "code": code_identity(REPO, sys.argv[0]),
+            "previous_record": str(previous.relative_to(REPO)) if previous and previous.is_relative_to(REPO) else str(previous) if previous else None,
+            "registration_scope": "Rules recorded before this run; this alone does not establish independent preregistration or unseen data.",
         }
         self.flush()
 
@@ -77,8 +83,7 @@ class RunRecord:
         self.flush()
 
     def flush(self) -> None:
-        self.path.parent.mkdir(parents=True, exist_ok=True)
-        self.path.write_text(json.dumps(self.record, indent=2, default=_json_default), encoding="utf-8")
+        write_json_atomic(self.path, self.record, default=_json_default)
 
 
 def _json_default(o):

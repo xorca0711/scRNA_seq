@@ -16,6 +16,10 @@ jobs:
         with:
           python-version: "3.12"
       - name: Compile Python sources
-        run: python -m compileall -q analysis/scripts
+        run: python -m compileall -q analysis Thesis
+      - name: Test evidence and provenance contracts
+        run: python -m unittest discover -s analysis/tests -q
+      - name: Check generated claim manifest and summaries
+        run: python analysis/scripts/claim_contract.py --check
       - name: Validate tracked artefacts and documentation
         run: python analysis/scripts/validate_repository.py

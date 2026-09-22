@@ -1,0 +1,11 @@
+resource_a,resource_b,shared_top15,jaccard
+cellchatdb,cellphonedb,3,0.1111111111111111
+cellchatdb,consensus,0,0.0
+cellchatdb,connectomedb2020,2,0.07142857142857142
+cellchatdb,italk,0,0.0
+cellphonedb,consensus,0,0.0
+cellphonedb,connectomedb2020,2,0.07142857142857142
+cellphonedb,italk,0,0.0
+consensus,connectomedb2020,10,0.5
+consensus,italk,11,0.5789473684210527
+connectomedb2020,italk,9,0.42857142857142855

@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "retrieved": "2026-09-22",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE242510&targ=all&form=text&view=full",
+  "raw_sha256": "afdcee35c33c8a623e5eb2ce947b30710def999c8433ebb91bf4864090793086",
+  "raw_path": "raw_data/dataset_gates/GSE242510.soft.txt",
+  "series": {
+    "accession": "GSE242510",
+    "title": [
+      "Myeloid-mesenchymal crosstalk drives ARG1-dependent profibrotic metabolism via ornithine in lung fibrosis"
+    ],
+    "summary": [
+      "Single-cell RNA sequencing (scRNA-seq) was performed to investigate fibroblast–myeloid cell crosstalk in lung fibrosis. The dataset includes murine lung macrophage–fibroblast cocultures or fibroblast monocultures, with macrophages derived from WT mice and fibroblasts from either WT or fibroblast-specific P2rx4 knockout (Pdgfrb-Cre: P2rx4 f/f) mice 7 days after bleomycin injury. Cells were captured using the Fluent Biosciences PIPseq platform. Data include gene–cell count matrices and support the study “Myeloid–mesenchymal crosstalk drives ARG1-dependent profibrotic metabolism via ornithine in lung fibrosis” (Yadav et al., 2025)."
+    ],
+    "overall_design": [
+      "Lungs were isolated after 7 days after bleomycin injury. Macrophages were obtained by positive selection by binding to CD11b microbeads and passing through MACS columns (130-049-601, Miltenyi Biotech). Isolated CD11b+ macrophages were cultured in DMEM supplemented with 10% FBS, 1% penicillin-streptomycin, and 20 ng/ml M-CSF (315-02, Peprotech) for 2 days. Primary mouse lung fibroblasts were freshly isolated after magnetic bead-based negative selection of epithelial cells (118204, Biotin anti-mouse CD326 Epcam, Clone: G8.8, BioLegend), endothelial cells (102404, Biotin anti-mouse CD31, clone: 390), immune cells (103104, Biotin anti-mouse CD45, clone: 30-F11, BioLegend), pericytes and smooth muscle cells (134716, Biotin anti-mouse CD146, clone: ME-9F1, BioLegend), and red blood cells (116204, Biotin anti-mouse Ter119, clone: TER-119, BioLegend) with biotinylated antibodies and Dynabeads (MyOne Streptavidin T1, 65601, Thermo Fisher Scientific). Fibroblasts were cultured for 5 days prior to trypsinization and addition to macrophages for coculture at a 1:1 ratio in DMEM complete media for 5 further days."
+    ],
+    "sample_id": [
+      "GSM7764752",
+      "GSM7764753",
+      "GSM7764754",
+      "GSM7764755",
+      "GSM7764756",
+      "GSM7764757"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE242nnn/GSE242510/suppl/GSE242510_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1013615"
+    ]
+  },
+  "samples": [
+    {
+      "accession": "GSM7764752",
+      "title": [
+        "Fib alone 1"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Fibroblasts",
+        "genotype: WT",
+        "treatment: Bleomycin"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37307453",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21653362"
+      ],
+      "data_processing_id": "9f86c76d8c942664"
+    },
+    {
+      "accession": "GSM7764753",
+      "title": [
+        "Fib + Mac 1"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Fibroblasts and Cd11b+ Macrophages",
+        "genotype: WT",
+        "treatment: Bleomycin"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37307452",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21653363"
+      ],
+      "data_processing_id": "9f86c76d8c942664"
+    },
+    {
+      "accession": "GSM7764754",
+      "title": [
+        "P2rx4KO Fib + Mac 1"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Fibroblasts and Cd11b+ Macrophages",
+        "genotype: WT Macrophages and P2rx4KO fibroblasts",
+        "treatment: Bleomycin"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37307451",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21653364"
+      ],
+      "data_processing_id": "9f86c76d8c942664"
+    },
+    {
+      "accession": "GSM7764755",
+      "title": [
+        "Fib alone 2"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Fibroblasts",
+        "genotype: WT",
+        "treatment: Bleomycin"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37307450",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21653365"
+      ],
+      "data_processing_id": "9f86c76d8c942664"
+    },
+    {
+      "accession": "GSM7764756",
+      "title": [
+        "Fib + Mac 2"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Fibroblasts and Cd11b+ Macrophages",
+        "genotype: WT",
+        "treatment: Bleomycin"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37307449",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21653366"
+      ],
+      "data_processing_id": "9f86c76d8c942664"
+    },
+    {
+      "accession": "GSM7764757",
+      "title": [
+        "P2rx4KO Fib + Mac 2"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Fibroblasts and Cd11b+ Macrophages",
+        "genotype: WT Macrophages and P2rx4KO fibroblasts",
+        "treatment: Bleomycin"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37307448",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21653367"
+      ],
+      "data_processing_id": "9f86c76d8c942664"
+    }
+  ],
+  "data_processing_definitions": {
+    "9f86c76d8c942664": [
+      "The demultiplexed FASTQ files were aligned to mouse genome (mm10) using PIPseeker 1.0.0 (Fluent Biosciences) indicating that the samples were obtained with a v4 chemistry kit. After sequence alignment, we observed around 50% of input cells being called when PIPseeker sensitivity level was set to 3, which was near the inflection point of the barcode rank plot.",
+      "Assembly: mm10"
+    ]
+  },
+  "scope": "Selected deposited metadata; sample accession counts are not biological replicate counts."
+}

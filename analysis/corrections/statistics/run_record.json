@@ -1,0 +1,442 @@
+{
+  "completed_utc": "2026-09-22T01:55:03.037549+00:00",
+  "analysis_type": "retrospective correction and sensitivity",
+  "python": {
+    "executable": "C:\\Users\\dream\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "version": "3.12.14",
+    "packages": {
+      "numpy": "2.4.6",
+      "scipy": "1.18.0",
+      "pandas": "2.3.3",
+      "anndata": "0.13.2",
+      "h5py": "3.16.0",
+      "matplotlib": "3.11.1"
+    }
+  },
+  "R_runtime": "official CRAN R 4.6.1, portable extraction; package versions in R-session.txt",
+  "runtime_sources": {
+    "R": "https://cran.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "R_official_md5": "7907f3a20ec8ec88cd0da279024b8e27",
+    "innoextract": "https://constexpr.org/innoextract/files/innoextract-1.9-windows.zip",
+    "innoextract_official_md5": "72d0d0dd874b6236eaa44411f4470ee1"
+  },
+  "method": "official limma CAMERA, estimated residual inter-gene correlation primary; fixed .01 sensitivity; voom/TMM primary; W1 historical-transform reference also retained",
+  "code_snapshot_scope": "Final saved sources, including secondary fixed-correlation option added after primary runs; primary numerical algorithm unchanged by that addition.",
+  "execution_recovery": [
+    {
+      "stage": "LODO",
+      "completed_refits": 139,
+      "issue": "After both cohort summaries had been written, the R interpreter encountered a trailing parse error because its open script was extended while the long loop ran.",
+      "resolution": "Final saved R source separately parsed successfully; official package session metadata refreshed; output completeness checked against every donor and candidate. Numerical refits were complete and not rerun."
+    }
+  ],
+  "prepared_inputs": [
+    {
+      "inputs": [
+        {
+          "path": "raw_data/GSE135893/GSE135893_IPF_metadata.csv.gz",
+          "bytes": 3354014,
+          "mtime_ns": 1789275337587420900,
+          "sha256": "5c67b3717375859aafc4463024847cf30d7af7bb9d5f4ad9a5364ee6d7726bf5"
+        },
+        {
+          "path": "raw_data/GSE135893/GSE135893_genes.tsv.gz",
+          "bytes": 129668,
+          "mtime_ns": 1789275340233265900,
+          "sha256": "7e8612e72f033ef214de101bb782ab1cb60b8c887be2d3e8a0d637de067b0233"
+        },
+        {
+          "path": "raw_data/GSE135893/GSE135893_barcodes.tsv.gz",
+          "bytes": 936873,
+          "mtime_ns": 1789275339171726900,
+          "sha256": "37a9a98a95d59bb4333c8181c14bb2b384701e6fda1c409e79f3e41c681430d4"
+        },
+        {
+          "path": "raw_data/GSE135893/GSE135893_matrix.mtx.gz",
+          "bytes": 1076137992,
+          "mtime_ns": 1789275377661626800
+        }
+      ],
+      "nnz_read": 338061955,
+      "preparation_code_sha256": "01b44d4aa5dd977c1a997a49e03edd8a227860b7b18cb65bcdf2add66e83271c",
+      "historical_cell_and_library_total_parity": true,
+      "n_units": 45,
+      "n_genes": 33694,
+      "total_counts": 396154020,
+      "completed_utc": "2026-09-22T01:35:29Z"
+    },
+    {
+      "inputs": [
+        {
+          "path": "raw_data/GSE135893/GSE135893_IPF_metadata.csv.gz",
+          "bytes": 3354014,
+          "mtime_ns": 1789275337587420900,
+          "sha256": "5c67b3717375859aafc4463024847cf30d7af7bb9d5f4ad9a5364ee6d7726bf5"
+        },
+        {
+          "path": "raw_data/GSE135893/GSE135893_genes.tsv.gz",
+          "bytes": 129668,
+          "mtime_ns": 1789275340233265900,
+          "sha256": "7e8612e72f033ef214de101bb782ab1cb60b8c887be2d3e8a0d637de067b0233"
+        },
+        {
+          "path": "raw_data/GSE135893/GSE135893_barcodes.tsv.gz",
+          "bytes": 936873,
+          "mtime_ns": 1789275339171726900,
+          "sha256": "37a9a98a95d59bb4333c8181c14bb2b384701e6fda1c409e79f3e41c681430d4"
+        },
+        {
+          "path": "raw_data/GSE135893/GSE135893_matrix.mtx.gz",
+          "bytes": 1076137992,
+          "mtime_ns": 1789275377661626800
+        }
+      ],
+      "nnz_read": 338061955,
+      "preparation_code_sha256": "01b44d4aa5dd977c1a997a49e03edd8a227860b7b18cb65bcdf2add66e83271c",
+      "n_units": 85,
+      "n_genes": 33694,
+      "total_counts": 396154020,
+      "completed_utc": "2026-09-22T01:35:25Z"
+    },
+    {
+      "inputs": [
+        {
+          "path": "raw_data/GSE136831/GSE136831_AllCells.Samples.CellType.MetadataTable.txt.gz",
+          "bytes": 4308752,
+          "mtime_ns": 1789275324665579100,
+          "sha256": "147bdd11d720ed30736a459ba62a3d8e2f3f9028a8430e0eb714484f0456049b"
+        },
+        {
+          "path": "raw_data/GSE136831/GSE136831_AllCells.GeneIDs.txt.gz",
+          "bytes": 323848,
+          "mtime_ns": 1789275322540132900,
+          "sha256": "e43b3008945c87a6875d4fb1a99a791fdaefeeb3c5a72a5d17589f621eb83af8"
+        },
+        {
+          "path": "raw_data/GSE136831/GSE136831_RawCounts_Sparse.mtx.gz",
+          "bytes": 2150633813,
+          "mtime_ns": 1789275432352698400
+        }
+      ],
+      "nnz_read": 692789348,
+      "preparation_code_sha256": "01b44d4aa5dd977c1a997a49e03edd8a227860b7b18cb65bcdf2add66e83271c",
+      "historical_cell_and_library_total_parity": true,
+      "n_units": 94,
+      "n_genes": 45947,
+      "total_counts": 1239639679,
+      "completed_utc": "2026-09-22T01:36:48Z"
+    },
+    {
+      "inputs": [
+        {
+          "path": "raw_data/GSE136831/GSE136831_AllCells.Samples.CellType.MetadataTable.txt.gz",
+          "bytes": 4308752,
+          "mtime_ns": 1789275324665579100,
+          "sha256": "147bdd11d720ed30736a459ba62a3d8e2f3f9028a8430e0eb714484f0456049b"
+        },
+        {
+          "path": "raw_data/GSE136831/GSE136831_AllCells.GeneIDs.txt.gz",
+          "bytes": 323848,
+          "mtime_ns": 1789275322540132900,
+          "sha256": "e43b3008945c87a6875d4fb1a99a791fdaefeeb3c5a72a5d17589f621eb83af8"
+        },
+        {
+          "path": "raw_data/GSE136831/GSE136831_RawCounts_Sparse.mtx.gz",
+          "bytes": 2150633813,
+          "mtime_ns": 1789275432352698400
+        }
+      ],
+      "nnz_read": 692789348,
+      "preparation_code_sha256": "01b44d4aa5dd977c1a997a49e03edd8a227860b7b18cb65bcdf2add66e83271c",
+      "n_units": 175,
+      "n_genes": 45947,
+      "total_counts": 1239639679,
+      "completed_utc": "2026-09-22T01:36:35Z"
+    },
+    {
+      "inputs": [
+        {
+          "path": "Thesis/gate1_01_niethamer_2025/GSE262927/processed/final_clustered.h5ad",
+          "bytes": 2110304693,
+          "mtime_ns": 1786111996357562100
+        },
+        {
+          "path": "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_cell_metadata.csv",
+          "bytes": 1103269,
+          "mtime_ns": 1789021304613247800,
+          "sha256": "1e3710318c900847c10ca35804afb42007df66d3c4b29e6d9a3b8e1f2950da23"
+        },
+        {
+          "path": "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/batch_sensitivity/tables/sample_infection_round.csv",
+          "bytes": 3202,
+          "mtime_ns": 1789025755127625400,
+          "sha256": "e6d0488e10524cc5fcd32448434120042559cfeffbfcb23364e6e62242c5cc81"
+        }
+      ],
+      "historical_cell_parity": true,
+      "n_units": 25,
+      "n_genes": 32228,
+      "total_counts": 62340466,
+      "completed_utc": "2026-09-22T01:31:40Z"
+    },
+    {
+      "inputs": [
+        {
+          "path": "Thesis/gate1_01_niethamer_2025/GSE262927/processed/final_clustered.h5ad",
+          "bytes": 2110304693,
+          "mtime_ns": 1786111996357562100
+        },
+        {
+          "path": "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_cell_metadata.csv",
+          "bytes": 1103269,
+          "mtime_ns": 1789021304613247800,
+          "sha256": "1e3710318c900847c10ca35804afb42007df66d3c4b29e6d9a3b8e1f2950da23"
+        },
+        {
+          "path": "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/batch_sensitivity/tables/sample_infection_round.csv",
+          "bytes": 3202,
+          "mtime_ns": 1789025755127625400,
+          "sha256": "e6d0488e10524cc5fcd32448434120042559cfeffbfcb23364e6e62242c5cc81"
+        }
+      ],
+      "preparation_code_sha256": "01b44d4aa5dd977c1a997a49e03edd8a227860b7b18cb65bcdf2add66e83271c",
+      "historical_cell_and_library_total_parity": true,
+      "n_units": 25,
+      "n_genes": 32228,
+      "total_counts": 115312272,
+      "completed_utc": "2026-09-22T01:31:37Z"
+    },
+    {
+      "inputs": [
+        {
+          "path": "Thesis/gate1_01_niethamer_2025/GSE262927/processed/final_clustered.h5ad",
+          "bytes": 2110304693,
+          "mtime_ns": 1786111996357562100
+        },
+        {
+          "path": "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_cell_metadata.csv",
+          "bytes": 1103269,
+          "mtime_ns": 1789021304613247800,
+          "sha256": "1e3710318c900847c10ca35804afb42007df66d3c4b29e6d9a3b8e1f2950da23"
+        },
+        {
+          "path": "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/batch_sensitivity/tables/sample_infection_round.csv",
+          "bytes": 3202,
+          "mtime_ns": 1789025755127625400,
+          "sha256": "e6d0488e10524cc5fcd32448434120042559cfeffbfcb23364e6e62242c5cc81"
+        }
+      ],
+      "preparation_code_sha256": "01b44d4aa5dd977c1a997a49e03edd8a227860b7b18cb65bcdf2add66e83271c",
+      "n_units": 223,
+      "n_genes": 32228,
+      "total_counts": 115312272,
+      "completed_utc": "2026-09-22T01:31:35Z"
+    }
+  ],
+  "gene_set_inputs": [
+    {
+      "path": "raw_data/msigdb/c5.go.bp.v2024.1.Hs.symbols.gmt",
+      "bytes": 4940222,
+      "sha256": "71df041c352cc810c11847db328bb94925c5448a009f310d224f2e8baa60b792"
+    },
+    {
+      "path": "raw_data/msigdb/h.all.v2024.1.Hs.symbols.gmt",
+      "bytes": 48690,
+      "sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772"
+    },
+    {
+      "path": "raw_data/msigdb/m5.go.bp.v2024.1.Mm.symbols.gmt",
+      "bytes": 5063472,
+      "sha256": "07e91b5ee16372f5764649b2a8b358c03d82a910c4e832ca732d0d9379772886"
+    },
+    {
+      "path": "raw_data/msigdb/mh.all.v2024.1.Mm.symbols.gmt",
+      "bytes": 48007,
+      "sha256": "e5aa9acd833179d1d571b48bf91a28fb387722ce68ff53094d05847659d66460"
+    }
+  ],
+  "historical_inputs": [
+    {
+      "path": "Thesis/gate1_01_niethamer_2025/trials/gsea_utils.py",
+      "bytes": 10120,
+      "sha256": "1cf96a4de589ad51f2eea308dfdae136ecc315cf0a26b0696c035792c79d1bf8"
+    },
+    {
+      "path": "Thesis/gate1_01_niethamer_2025/trials/g1_gsea_by_phase.py",
+      "bytes": 18146,
+      "sha256": "df3fcce11a9c72f2c305679a480267efaee94bd0f3177c8d4193de2bf04c3d0b"
+    },
+    {
+      "path": "Thesis/gate1_01_niethamer_2025/trials/g2_gsea_ipf.py",
+      "bytes": 18029,
+      "sha256": "35ab53229805459f58a73f7cd62bf9c6db286d0783d928e218bfe823ec470fc8"
+    },
+    {
+      "path": "Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de.py",
+      "bytes": 18181,
+      "sha256": "57980b90ec76c9e31bbae51e30062d443b26e02678b083b386ec3b7b94e184bb"
+    },
+    {
+      "path": "Thesis/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_replication.csv",
+      "bytes": 43214,
+      "sha256": "b4a935cd14ef5c765bf2cb3ab572598814ba3f042072c5efe4aa9a6cf1bfc18a"
+    }
+  ],
+  "code": [
+    {
+      "path": "analysis/corrections/statistics/check_statistics.py",
+      "bytes": 6395,
+      "sha256": "2182a1140f1fa3657af3fd3a87289f24dc5e8027de2ea6d2e5b7ea735b2eb857"
+    },
+    {
+      "path": "analysis/corrections/statistics/prepare_counts.py",
+      "bytes": 7943,
+      "sha256": "01b44d4aa5dd977c1a997a49e03edd8a227860b7b18cb65bcdf2add66e83271c"
+    },
+    {
+      "path": "analysis/corrections/statistics/summarize_statistics.py",
+      "bytes": 14572,
+      "sha256": "75ccc7ee00b61bc3b0f0c25f889f7f6c9429e1e976eb70b5368e8d796e93a1a1"
+    },
+    {
+      "path": "analysis/corrections/statistics/camera_corrected.R",
+      "bytes": 11154,
+      "sha256": "60db25f6678b1318c0bd9d6ce397865d55f2ef01301bc4bf7476ae4d16830e57"
+    },
+    {
+      "path": "analysis/corrections/statistics/install_dependencies.R",
+      "bytes": 1160,
+      "sha256": "6e9ba42a9bae7b74188ad5425cbb4905177df5e4bbe83077afdf973d26b61312"
+    },
+    {
+      "path": "analysis/corrections/statistics/setup_r.ps1",
+      "bytes": 1580,
+      "sha256": "acc3f1bd14a664d01b3e9366c3d6f9d5a327d286fe2667ccf3fefb1a1f0c8009"
+    },
+    {
+      "path": "analysis/corrections/statistics/PROTOCOL.md",
+      "bytes": 4094,
+      "sha256": "5722c337db6b35e5a609bd9493d6f3db6efd69a863adaedb3bf741182aff63b0"
+    },
+    {
+      "path": "analysis/corrections/statistics/README.md",
+      "bytes": 7420,
+      "sha256": "08e3f69c88601e79a9bb5b0ef109814e98807047506d2c7a6148af19ab831088"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "analysis/corrections/statistics/tables/g1_confounded_sensitivity.csv",
+      "bytes": 2611,
+      "sha256": "fbbd50d13e5376eb7a70ad603c1d2e3b04f8319c95d5bc93e746bdca0847c747"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/g1_confounded_sensitivity_fixed001.csv",
+      "bytes": 2692,
+      "sha256": "b119b9e37381c74ed7fc27321a98189f2573ac8624c3495aa4f179dd02fcc9f0"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/g2_corrected_replication.csv",
+      "bytes": 144953,
+      "sha256": "778d3d631411f0304b5619b1fbb9d56ed15ea0fd8ec3f1fb0e6987eb2e72392c"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/GSE135893_camera_candidates.csv",
+      "bytes": 51739,
+      "sha256": "87d2bd93091ebfabbff2923f75ce99f5477b74eba221f707a38cfb8d9a8c6443"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/GSE135893_fixed001_camera_candidates.csv",
+      "bytes": 52237,
+      "sha256": "879fb3db5c48f50c1297d5f0cf636ffdd358638eaf2130b3694f4f6f9f380f78"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/GSE135893_lodo_summary.csv",
+      "bytes": 34183,
+      "sha256": "13aa1cda5b55f8ceab345f1f764730009eacb493429d72a976ac06180aaa7e66"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/GSE135893_subtype_camera.csv",
+      "bytes": 45480,
+      "sha256": "8180f2bb18caa18b2ff0a72b2eb459fcece7d2f6fad448d8797660b293d3963d"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/GSE135893_subtype_eligibility.csv",
+      "bytes": 435,
+      "sha256": "0606f729821e95e3aac2e827308964f8d7a23956bf381d32e510e69a12acd401"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/GSE136831_camera_candidates.csv",
+      "bytes": 52772,
+      "sha256": "22797a4a2a3bb3f5b225e74e56959d732671acb502e7189e862b4015c8eea820"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/GSE136831_fixed001_camera_candidates.csv",
+      "bytes": 54804,
+      "sha256": "3371155747fa49b961d7d2670aafb32926c818a0844cf29337b307f19d586c88"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/GSE136831_lodo_summary.csv",
+      "bytes": 35439,
+      "sha256": "c95392fdf418f9b31d3cb0fe53a6405fb005553d77062e2c362e11c8f712df34"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/GSE136831_subtype_camera.csv",
+      "bytes": 100819,
+      "sha256": "fdba9eb43821ebd8d9afb18e289c8e4cc893c8dfe490a672bb70e4ac57fa6ee6"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/GSE136831_subtype_eligibility.csv",
+      "bytes": 312,
+      "sha256": "3bac4f3d03c0a152a2dbad72a781fff8fa3ea4a62d5f916d3e6c06366da93059"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/mouse_design_audit.csv",
+      "bytes": 573,
+      "sha256": "45c8841190aa170410a1276b07e653c9cf22db8f5ea840b35837ad925f297ffd"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/multiplicity_sensitivity.csv",
+      "bytes": 637,
+      "sha256": "36ba3b37b1f69152a086d646774e8edf3c3f2b1e9e30272f23933ff55b9ed315"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/subtype_cell_fractions.csv",
+      "bytes": 1204,
+      "sha256": "175b92852e2dbe179471d50a528e391fefbcd82b4d69f024d538c4cca8260b31"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/subtype_transcript_contributions.csv",
+      "bytes": 144928,
+      "sha256": "5dff0f07f00437b905732d52c4491fb59007d9c3393329c280e42616f0d6e835"
+    },
+    {
+      "path": "analysis/corrections/statistics/tables/w1_reference_camera.csv",
+      "bytes": 2979,
+      "sha256": "42ec44c96a94fcd502afba09c4421f69214819947e9b9338df17e1e99954e040"
+    },
+    {
+      "path": "analysis/corrections/statistics/summary.json",
+      "bytes": 5321,
+      "sha256": "ad8f6d636c879d8e2b07d04fba6907d53d5db1c4de41569397a75f5ad6d0dd4e"
+    },
+    {
+      "path": "analysis/corrections/statistics/statistical_corrections.png",
+      "bytes": 174003,
+      "sha256": "3399d6f21b577a4756f24d668930a53d5ec52480f3388149ab6771ab9534c7b7"
+    },
+    {
+      "path": "analysis/corrections/statistics/R-session.txt",
+      "bytes": 557,
+      "sha256": "524d5062b844d09af8d70fa01ed49952356c14e8bf196e60cd99215dcd0ba61a"
+    }
+  ],
+  "unresolved": [
+    "age vs injury time in mouse",
+    "unavailable human age/sex covariates",
+    "human subtype label harmonization",
+    "ambient RNA and doublets",
+    "selection from 50-cell floor",
+    "observational causality"
+  ]
+}

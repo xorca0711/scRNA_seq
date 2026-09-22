@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-22",
+  "scope": "Integrated repository checks, not complete re-execution of all historical scientific analyses.",
+  "checks": [
+    {
+      "command": "-m unittest discover -s analysis/tests -q",
+      "returncode": 0,
+      "output": "----------------------------------------------------------------------\nRan 7 tests in 0.044s\n\nOK"
+    },
+    {
+      "command": "analysis/scripts/claim_contract.py --check",
+      "returncode": 0,
+      "output": "Claim contract verified; 18 numeric bindings passed."
+    },
+    {
+      "command": "analysis/scripts/validate_repository.py",
+      "returncode": 0,
+      "output": "Repository validation passed: 1215 checks\n  local Markdown links resolve\n  tracked JSON artefacts parse\n  selected headline values and explicit numeric bindings match tracked tables\n  claim index and summary match the register; this is not full scientific reproduction"
+    },
+    {
+      "command": "git diff --check",
+      "returncode": 0,
+      "output": "warning: in the working copy of '.github/workflows/repository-checks.yml', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'REPRODUCIBILITY.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'RESEARCH_QUESTIONS.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'Thesis/gate1_02_choi_2020/datp_epigenetics/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'Thesis/gate1_04_sikkema_2023_hlca/trials/trial_utils.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'analysis/scripts/15_claims_ledger_figure.py', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'analysis/scripts/validate_repository.py', LF will be replaced by CRLF the next time Git touches it"
+    },
+    {
+      "command": "AST parse analysis and Thesis sources, excluding runtimes and data caches",
+      "returncode": 0,
+      "python_files": 109
+    },
+    {
+      "command": "Candidate metadata membership and library/plate counts",
+      "returncode": 0,
+      "note": "886 RNA libraries across 15 deposited plate labels; 4 spatial samples; 6 coculture libraries. Biological independence remains unresolved."
+    }
+  ],
+  "reused_agent_checks": {
+    "ligand_tests": 5,
+    "statistics_tests": 9,
+    "epithelial_tests": 4,
+    "epithelial_primary_scores_reconstructed": 1120
+  },
+  "status": "passed"
+}

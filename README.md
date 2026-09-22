@@ -1,65 +1,64 @@
-# Hypothesis generation from public lung single-cell and multiome data
+# Lung single-cell research: reproducible observations and tested limits
 
 [![Repository checks](https://github.com/xorca0711/scRNA_seq/actions/workflows/repository-checks.yml/badge.svg)](https://github.com/xorca0711/scRNA_seq/actions/workflows/repository-checks.yml)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
-This repository is an analysis log with one purpose: hypothesis generation
-from an integrative reanalysis of public lung data. Fifteen public lung
-single-cell and multiome deposits from eleven studies, in mouse and human, are
-re-analysed from the deposited count matrices with frameworks newer than the
-source papers, with the authors' annotations held out of every model-fitting
-step and used only afterwards as an answer key, to surface phenotypes and data
-distributions the original analyses did not report. The hypotheses sit inside
-one biological theme:
+A research portfolio and analysis log using public lung single-cell and
+multiome data to generate hypotheses about epithelial transitions, macrophage
+responses and tissue remodelling. It combines original atlas reanalysis,
+cross-study comparisons, and explicit checks of claims that fail or change
+when the measurement is corrected.
 
-> Which epithelial and immune-state programmes distinguish productive lung
-> repair from persistent remodelling after injury?
+> Which epithelial and macrophage programme changes repeat across independent
+> samples after accounting for cell-state composition, genotype and measurement quality?
 
-Rules are frozen in a run record before data are opened and never moved after
-a result is seen. Where a rule was wrong, its first outcome stays and a
-corrected pass sits beside it. The statistical unit is the animal or donor,
-never the cell. A refuted claim stays on display. The product of all this is
-the shape of the register below, not any single bar in it.
+Whether those changes distinguish productive repair from persistent pathology
+is a biological follow-up requiring independently measured outcomes. The
+current collection cannot establish that distinction on molecular states alone.
 
-![Claims ledger](analysis/figures/claims_ledger.png)
+Most analyses start from deposited counts; E1 uses deposited normalized
+expression. Author labels are held out of the original unsupervised atlas fits
+and deliberately used in later compartment and annotation-sensitivity analyses.
+Historical results remain available beside corrected passes. A recorded rule
+is not automatically an independent preregistration.
 
-*164 register rows: 9 validated, 72 descriptive or exploratory, 40 not
-established, 42 refuted or retracted, 1 displaced. Drawn from `CLAIMS.md` by
-[`15_claims_ledger_figure.py`](analysis/scripts/15_claims_ledger_figure.py).*
+## Start here
 
-**Start with [`RESEARCH_QUESTIONS.md`](RESEARCH_QUESTIONS.md)**: the science
-organised by question rather than by trial, with the phenotypes and data
-distributions the reanalysis surfaced and three follow-up analyses specified
-on public data. The full register with every claim's evidence, artefact and status
-is [`CLAIMS.md`](CLAIMS.md); everything refuted, retracted or unestablished is
-[`NEGATIVE_RESULTS.md`](NEGATIVE_RESULTS.md), generated from the register so it
-cannot drift.
+| To assess | Open |
+|---|---|
+| Scientific questions and measurement limits | [Research questions](RESEARCH_QUESTIONS.md) |
+| A short portfolio entry and four figures | [Portfolio summary](docs/PORTFOLIO_SUMMARY.md) |
+| Three portfolio case studies and what was actually demonstrated | [Portfolio guide](docs/PORTFOLIO.md) |
+| Every claim, decision authority and explicit numeric-check coverage | [Claim register](CLAIMS.md) and [generated summary](docs/CLAIM_SUMMARY.md) |
+| Corrected analyses and remaining limitations | [Implementation record](docs/remediation/2026-09-22/IMPLEMENTATION_STATUS.md) |
+| Commands, dependencies and data requirements | [Reproducibility guide](REPRODUCIBILITY.md) |
+| Next outcome-linked analysis and eligibility gates | [Next dataset gate](docs/NEXT_DATASET_GATE.md) |
 
-## What stands
+![Claim status by analysis family](analysis/figures/claims_ledger.png)
 
-Status vocabulary: Validated (held-out labels or artefact-checked numbers),
-Descriptive only, Exploratory, Retracted-superseded, Not established, Not establishable, Refuted.
-Rows marked pending await the owner's retain or reject decision recorded in
-[`DEVELOPMENT.md`](DEVELOPMENT.md).
+*Generated from the register using explicit analysis-family assignments.
+Rows include biological observations, method checks and decision records;
+status counts are not independent discoveries or a measure of calibration.
+Current counts and review states are in the [generated summary](docs/CLAIM_SUMMARY.md).*
 
-| Status | Claim | Row |
-|---|---|---|
-| Validated | Blind clustering recovers the deposited mouse cell types: median purity 0.947 over 107,626 labelled cells, with 3 of 29 annotations contradicted and kept on display | C1, C8 |
-| Validated | An injury-associated capillary state is still present at 366 dpi: median per-animal share 2.0% at baseline, 37.5% at 25 dpi, 21.7% at 366 dpi; the Kit lineage traces it at 33 to 53% per animal | C3, C4 |
-| Validated | In human lung adenocarcinoma, AREG is higher in epithelial than in myeloid cells within donor: 0.336 against 0.215, 11 donors, paired p = 0.0020 | C37 |
-| Validated | A multiome deposit's barcode-suffix order is inverted relative to its GEO sample order; the knockout carries 4.5 to 14.5 times more of its own target than its control in all three files | C116 |
-| Descriptive only, pending | Alveolar macrophages fall from 30.8% to 4.6% of myeloid cells at 6 dpi and rebuild to 49.0% by 42 dpi; the 2 to 3 dpi window labels most of the rebuilt pool | C12, C15 |
-| Exploratory, pending | Interstitial macrophages keep rising through 90 dpi (2.8% at baseline, 10.3% at 42, 14.0% at 90, 7.7% at 366; three to four animals) | C13 |
-| Descriptive only, pending | Deleting the ligand Areg reproduces a published epithelial collapse from a blind pipeline: the regenerative-like state falls from 46.6% to 22.0% while AT2 rises from 29.2% to 59.1%; Areg is the top EGFR ligand of that state in all four mutant libraries | C27, C32 |
-| Descriptive only, pending | Dendritic cells and monocytes carry AREG and HBEGF at or above the epithelial states in three human lung datasets, a source no sort of labelled epithelium can see | C45 |
-| Descriptive only | AREG ranks first among the EGFR ligands in every curated ligand-receptor resource that contains them; the head of the ranking is otherwise a property of the resource (CellChatDB shares 0 of its top 15 pairs with italk) | C112, C113 |
-| Descriptive only, pending | Four of the DATP paper's five states, the DATP time course (0.3, 18.2, 6.3% of alveolar lineage-labelled cells), and IL-1beta's shift of the organoid epithelium reproduce blind | C87, C89, C96 |
-| Descriptive only | The Cldn4-positive Krt8-positive alveolar group loses the AT2 identity programme in RNA by 12.3 to 16.7 detection points at every one of four downsampling seeds in both injured wells (12.6 and 17.1 at M1e's single budget), across five or more genes, with the AT1 programme flat, in two multiome deposits that share a laboratory | C118 |
-| Exploratory | The same group's AT2 distal chromatin sits at percentile 0.000, 0.007 and 0.000 of 300 matched random gene sets in the three wells that reached the statistic, one of them the uninjured control; a lean toward closing that the register does not settle, and no well is a clean positive | C131 |
-| Not established | Whether AT2 chromatin closes in the transitional state; whether the primed AT2 state exists as a discrete cluster; whether Wnt-responsive and IL-1-responsive AT2 cells are distinct subsets at all, and whether their loci are open together in the same nuclei; the epithelium-to-fibroblast axis in human fibrosis at the donor level | C121, C88, C134, C135, C142, C49 |
-| Refuted | A whole-resource ligand-receptor scan always surfaces matrix pairs on dissociated tissue (the domination is CellChatDB's, not the tissue's); the second-signal reading of a fibrotic marker signature (Runx1 and Pdgfrb rise with bleomycin alone); a Cldn4-positive Krt8-positive transcript call identifies an injury-induced state (two uninjured neonatal wells label 3.69% and 8.07% against at most 5.09% in any injured adult well, so the marker set is shared with normal development) | C111, C42, C119 |
-| Retracted-superseded | "Silenced but not closed": the reading that the AT2 identity programme is silenced in RNA while its chromatin stays open, withdrawn when its positive control cleared in only five of eight resampling combinations | C120 |
-| Refuted, and disclosed | Fourteen register rows were written from artefacts they did not match, found by an eight-adversary audit with independent verification and corrected with figures read from the tables | C151 |
+## What the portfolio demonstrates
+
+- **Recovering and auditing an atlas.** The original mouse analysis recovers
+  deposited cell types with median cluster purity 0.947, while retaining three
+  contradicted marker-based annotations as evidence of state/type confusion.
+- **Correcting a biological comparison.** Ligand-source and resource analyses
+  explicitly test annotation, molecule depth, sender populations, target-cell
+  floors and curation. Expression rankings remain candidate-generating evidence.
+- **Testing the statistical interpretation.** Sample-level pseudobulks, reference
+  gene-set methods and sensitivity analyses separate reproducible directions
+  from significance, mixture effects and design confounding.
+- **Defining epithelial-state specificity.** A unified injury/development/genotype
+  analysis distinguishes traceable gene programmes from two-marker labels and
+  keeps chromatin measurements separate from fate claims.
+
+The current evidence and caveats live in [CLAIMS.md](CLAIMS.md). Earlier owner
+retentions are preserved in [DEVELOPMENT.md](DEVELOPMENT.md); the subsequent
+reassessment was explicitly delegated by the owner and is identified as such.
 
 ## Datasets
 
@@ -157,64 +156,29 @@ tracked. No sequencing data, count matrices or paper PDFs are committed.
 
 ## Reproducing
 
-The tracked artefacts can be checked without downloading data or installing
-scanpy:
+The evidence-contract checks use only Python's standard library:
 
 ```bash
+python -m unittest discover -s analysis/tests -q
+python analysis/scripts/claim_contract.py --check
 python analysis/scripts/validate_repository.py
-python -m compileall -q analysis/scripts
+python -m compileall -q analysis Thesis
 ```
 
-For a complete re-run of the two original series, create a Python 3.12
-environment, install the pinned dependencies, and place the GEO downloads
-under `raw_data/<accession>/`:
-
-```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
-python -m pip install -r analysis/requirements.txt
-
-python analysis/scripts/01_scan_raw_data.py
-python analysis/scripts/run_scrna_analysis.py --dataset GSE262927
-python analysis/scripts/run_scrna_analysis.py --dataset GSE178360 --integration harmony
-python analysis/scripts/06_regeneration_focus.py
-python analysis/scripts/07_lineage_tracing_cohort.py
-python analysis/scripts/10_phase_timecourse.py
-python analysis/scripts/11_myeloid_focus.py
-python analysis/scripts/12_amac_trace_by_window.py
-python analysis/scripts/13_myeloid_batch_sensitivity.py
-python analysis/scripts/03_write_report.py --dataset GSE262927
-python analysis/scripts/03_write_report.py --dataset GSE178360
-python analysis/scripts/08_reference_aligned_epithelial_umap.py
-python analysis/scripts/05_write_pipeline_as_run.py
-python analysis/scripts/14_write_negative_results.py
-python analysis/scripts/15_claims_ledger_figure.py
-python analysis/scripts/16_research_question_figures.py   # needs raw_data/ and the processed objects
-```
-
-Each roadmap trial is a standalone script under its paper folder whose
-docstring is its pre-registration; run it from the repository root. The
-multiome trials need the emulated x86-64 environment described in
-[`AI_CONTEXT.md`](AI_CONTEXT.md) and locked in
-[`analysis/config/requirements-x64.txt`](analysis/config/requirements-x64.txt).
-Exact inputs, expected directory layout, validation tiers and the output
-contract are in [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md). Seeds are fixed at 0
-throughout.
+Scientific reruns require the inputs and dependencies listed in
+[REPRODUCIBILITY.md](REPRODUCIBILITY.md), including the separate correction
+workflows and their saved numerical outputs. The original atlas pipeline and
+historical paper-by-paper trials remain available; seeds and eligibility rules
+are specified per analysis rather than assumed to be universal.
 
 ## Still open
 
-This log is not finished, and the ledger above is a state, not a conclusion.
-Of the roadmap in [`Thesis/README.md`](Thesis/README.md), papers 1, 2, 4 and 5
-have been entered; Nabhan 2018 is next, the Wagner branch has not been opened,
-and Gate 3 is paused. Of the proposals written against paper 1, W1 ran on
-2026-09-22 narrowed to alveolar macrophages (C162 to C164) and S1, Nb1, D1 and
-V1 are not run; the three follow-up analyses in
-[`RESEARCH_QUESTIONS.md`](RESEARCH_QUESTIONS.md) Part D are specified and not
-started. Rows C116 to C161 were reviewed by the owner on 2026-09-22, nineteen
-of them retained as a block to revisit; the earlier rows still await the
-owner's retain-or-reject review. The date of the state is in
-[`PROGRESS.md`](PROGRESS.md).
+The collection lacks a common functional repair outcome and several comparisons
+lack biological replication. Age, genotype, processing and cell mixtures remain
+important alternative explanations. Independent confirmation and future dataset
+selection are governed by the [research questions](RESEARCH_QUESTIONS.md) and
+[implementation record](docs/remediation/2026-09-22/IMPLEMENTATION_STATUS.md).
+A polished figure does not close a design gap.
 
 ## Source studies
 

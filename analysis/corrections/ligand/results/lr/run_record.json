@@ -1,0 +1,61 @@
+{
+  "inputs_sha256": {
+    "raw_data\\GSE136831\\c12_epithelial_stromal.h5ad": "50b8ea96924bdbafb05ae5148f71ab5661d571ed0bb2b498fbb55289985242b1",
+    "analysis\\corrections\\ligand\\specification.json": "39a031c6c5cd422e150349f3cf4e5a25120078a70eb7002e4656b108c9e15b45",
+    "analysis\\corrections\\ligand\\common.py": "cf5de3cd216cd0bec842d319514d99db47a1578ddba3f383af14fea6d682222a",
+    "analysis\\corrections\\ligand\\c12_c14_corrected.py": "27a70d44e7544831b12c22e52fa19f51b947bf9589819e62c790083c8d5169f1"
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.18.0",
+    "anndata": "0.13.2",
+    "scanpy": "1.12.3",
+    "liana": "1.10.0"
+  },
+  "resources_completed": [
+    "cellchatdb",
+    "cellphonedb",
+    "consensus",
+    "connectomedb2020",
+    "italk"
+  ],
+  "resource_sha256": {
+    "cellchatdb": "d2b0d1b411fb03b45a32d6c366541319773d73f05b13d3dd5881316db381f2dc",
+    "cellphonedb": "8af9a57c8864345f83cf7f092a98a8c570c8f296d5be0342e0944330ffae089c",
+    "consensus": "8ed134f6de7d2880a12a849ed5aec3f4d538ad6264f4b6178a1431f4c5df3a11",
+    "connectomedb2020": "2ea6cf6ebb3b9038e8de413bfc19ec05279bc797c391877dd3218cdd90ff36c4",
+    "italk": "10495a16dcc23722910273d37a030840f895e8de981214fe81d656a33cf49a17"
+  },
+  "elapsed_seconds": 893.4,
+  "donors": [
+    "010I",
+    "021I",
+    "022I",
+    "034I",
+    "040I",
+    "041I",
+    "49I",
+    "051I",
+    "59I",
+    "063I",
+    "098C",
+    "123I",
+    "135I",
+    "138I",
+    "166I",
+    "174I",
+    "192C",
+    "222C",
+    "222I",
+    "225I",
+    "228I",
+    "1372C"
+  ],
+  "design": "Corrected post-audit sensitivity; same cohort, no independent validation",
+  "provenance_checks": {
+    "all_sources_epithelial": true,
+    "all_targets_fibroblast": true,
+    "actual_compartment_floor": 50
+  }
+}

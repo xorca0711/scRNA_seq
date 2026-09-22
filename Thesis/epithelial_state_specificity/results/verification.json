@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "primary_scores_reconstructed": 1120,
+  "source_modules_checked": 16,
+  "two_seed_evaluable": 128,
+  "same_direction_among_two_seed_evaluable": 124,
+  "checks": [
+    "scores reconstructed from gene detections",
+    "source file hashes",
+    "gene coverage",
+    "within-unit effect arithmetic",
+    "30-cell group floor",
+    "no duplicate unit/group/seed/module keys"
+  ]
+}

@@ -29,6 +29,7 @@ Regenerate with:  python analysis/scripts/15_claims_ledger_figure.py
 from __future__ import annotations
 
 import collections
+import json
 import re
 import sys
 from pathlib import Path
@@ -41,16 +42,10 @@ TABLE = OUT_DIR / "claims_ledger.csv"
 
 sys.path.insert(0, str(REPO / "Thesis" / "gate2_05_cardoso_2026" / "trials"))
 import viz_style as V  # noqa: E402
+from claim_contract import FAMILIES, claim_family, parse_register
 
 # Register stage heading -> short label on the figure, in reading order.
-STAGES = [
-    ("Stage 0.", "Niethamer 2025, initial run"),
-    ("Stage 1.", "Niethamer 2025, follow-ups"),
-    ("Stage 3.", "Cardoso 2026 and its extensions"),
-    ("Stage 4.", "Choi 2020"),
-    ("Stage 5.", "Choi 2020, chromatin branch"),
-    ("Stage 6.", "Choi 2020, Axin2 and Il1r1 branch"),
-]
+STAGES = [(label, label) for label in FAMILIES]
 BINS = ["Validated", "Descriptive or exploratory", "Not established", "Refuted or retracted"]
 BIN_COLOUR = {
     "Validated": V.SLOT[1],
@@ -77,22 +72,12 @@ def to_bin(status: str) -> str | None:
 
 def read_register() -> tuple[dict, int, int]:
     counts: dict[str, collections.Counter] = {label: collections.Counter() for _, label in STAGES}
-    label_of = {prefix: label for prefix, label in STAGES}
-    stage = None
     total = displaced = 0
-    for line in CLAIMS.read_text(encoding="utf-8").splitlines():
-        head = re.match(r"^## (Stage \d+\.|Displaced)", line)
-        if head:
-            key = head.group(1)
-            stage = label_of.get(key, "Displaced" if key == "Displaced" else None)
-            continue
-        row = re.match(r"^\| (C\d+) \|", line)
-        if not row or stage is None:
-            continue
-        cells = [c.strip() for c in line.split("|")]
-        status = cells[5] if len(cells) > 5 else ""
+    for row in parse_register(CLAIMS.read_text(encoding="utf-8"), REPO):
+        status = row["status"]
+        stage = row["family"]
         total += 1
-        b = to_bin(status)
+        b = None if row["status_group"] == "Displaced" else to_bin(status)
         if b is None or stage == "Displaced":
             displaced += 1
             continue
@@ -141,7 +126,7 @@ def main() -> None:
 
     drawn = sum(n_rows)
     ax.set_title(
-        f"{total} claims in the register, by what each is allowed to be called",
+        f"{total} register rows: observations, method checks and decisions",
         loc="left")
     fig.text(0.125, 0.905,
              f"{grand['Validated']} validated  ·  {grand['Descriptive or exploratory']} descriptive or exploratory  ·  "
@@ -150,8 +135,8 @@ def main() -> None:
              fontsize=9.5, color=V.INK_2, ha="left")
     ax.legend(loc="lower right", ncol=2, handlelength=1.2, columnspacing=1.4)
     fig.text(0.125, 0.015,
-             "Rules are frozen before data are opened and never moved after a result is seen; a refuted "
-             "claim stays on display. Generated from CLAIMS.md.",
+             "Status counts are not independent discoveries or a calibration metric. "
+             "Generated from the claim contract; historical results remain visible.",
              fontsize=8.5, color=V.MUTED, ha="left")
     fig.subplots_adjust(top=0.84, bottom=0.17, left=0.27, right=0.98)
     fig.savefig(OUT, dpi=170)

@@ -1,0 +1,243 @@
+{
+  "scope": "Repository audit; no claim statuses changed",
+  "head": "90285d74adf668c252e3954b1ed98c748bea787d",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "claims": {
+    "rows": 164,
+    "explicit_owner_retained": 46,
+    "block_to_revisit": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C152",
+      "C154"
+    ],
+    "missing_retained_artifacts": []
+  },
+  "python_sources_parsed": 90,
+  "E1_pooled_normal_and_tumour_myeloid_gate": {
+    "n": 7494,
+    "author_myeloid": 1858,
+    "author_myeloid_pct": 24.793167867627435,
+    "author_T_NK": 4528,
+    "author_T_NK_pct": 60.42167066986923
+  },
+  "C37_original_table_recomputed": {
+    "n": 11,
+    "median_epithelial": 0.3363,
+    "median_myeloid": 0.2147,
+    "epithelial_higher": 10,
+    "exact_p_two_sided": 0.001953125
+  },
+  "E1_tumour_only_original_myeloid_gate": {
+    "n": 4289,
+    "by_deposited_type": {
+      "Myeloid cells": 974,
+      "T/NK cells": 1898,
+      "B lymphocytes": 401,
+      "Fibroblasts": 38,
+      "Endothelial cells": 15,
+      "MAST cells": 215,
+      "Epithelial cells": 47,
+      "NA": 701
+    }
+  },
+  "E1_annotation_sensitivity": {
+    "scope": "Post hoc diagnostic; E1 cached AREG values, deposited major cell types; >=50 cells per donor/compartment; no depth adjustment",
+    "n": 10,
+    "median_epithelial": 0.459082381561044,
+    "median_myeloid": 0.2714569230350977,
+    "epithelial_higher": 10,
+    "exact_p_two_sided": 0.001953125,
+    "per_donor": {
+      "LUNG_T06": {
+        "myeloid": 0.2193877551020408,
+        "epithelial": 0.3724137931034483
+      },
+      "LUNG_T08": {
+        "myeloid": 0.2222222222222222
+      },
+      "LUNG_T09": {
+        "myeloid": 0.23362592842673868,
+        "epithelial": 0.40336134453781514
+      },
+      "LUNG_T18": {
+        "myeloid": 0.12266928361138371,
+        "epithelial": 0.34824902723735407
+      },
+      "LUNG_T19": {
+        "myeloid": 0.2396351575456053,
+        "epithelial": 0.43037974683544306
+      },
+      "LUNG_T20": {
+        "myeloid": 0.41259500542888167,
+        "epithelial": 0.8460076045627376
+      },
+      "LUNG_T25": {
+        "myeloid": 0.3228476821192053,
+        "epithelial": 0.3584070796460177
+      },
+      "LUNG_T28": {
+        "myeloid": 0.16600790513833993,
+        "epithelial": 0.48778501628664495
+      },
+      "LUNG_T30": {
+        "myeloid": 0.30327868852459017,
+        "epithelial": 0.7154195011337868
+      },
+      "LUNG_T31": {
+        "myeloid": 0.31234866828087166,
+        "epithelial": 0.5073529411764706
+      },
+      "LUNG_T34": {
+        "myeloid": 0.40789473684210525,
+        "epithelial": 0.8905872888173774
+      }
+    }
+  },
+  "C161": {
+    "discovery_passed": 254,
+    "replicated": 62,
+    "by_compartment": {
+      "AT2": {
+        "discovery": 9,
+        "replicated": 8
+      },
+      "fibroblasts": {
+        "discovery": 24,
+        "replicated": 3
+      },
+      "macrophages": {
+        "discovery": 221,
+        "replicated": 51
+      }
+    }
+  },
+  "W1_kept_animals": {
+    "active": 4,
+    "resolution": 8,
+    "longterm": 3
+  },
+  "W1_genotype_exclusions": 7,
+  "G1_myeloid_design": {
+    "injury resolution": {
+      "n": 12,
+      "sex": {
+        "F": 3,
+        "M": 9
+      },
+      "round": {
+        "2021-10-21": 4,
+        "2022-07-06": 4,
+        "2022-12-06": 4
+      },
+      "Ki67Cre_Cre": 4
+    },
+    "long-term": {
+      "n": 3,
+      "sex": {
+        "M": 1,
+        "F": 2
+      },
+      "round": {
+        "2022-12-06": 3
+      },
+      "Ki67Cre_Cre": 0
+    }
+  },
+  "W1_sets_passing_stored_fdr": 0,
+  "RQ_A4_figure_Il1r1_detection_range_pct": [
+    19.28066037735849,
+    29.816147082334133
+  ],
+  "M3_AT2_estimand": [
+    {
+      "well": "wildtype_SeV",
+      "role": "test",
+      "raw_difference_relative_pct": -31.803626922032173,
+      "null_centered_relative_pct": -37.82075377277168
+    },
+    {
+      "well": "7wk_Cebpa_mutant",
+      "role": "negative control",
+      "raw_difference_relative_pct": -16.026001123505335,
+      "null_centered_relative_pct": -18.290013690200716
+    },
+    {
+      "well": "SeV_Cebpa_mutant",
+      "role": "test",
+      "raw_difference_relative_pct": -8.455282767857316,
+      "null_centered_relative_pct": -15.489753734015403
+    }
+  ],
+  "C49_illustrative_not_formal_Spearman_bounds": {
+    "scope": "Fisher-z/Pearson approximations; not a replacement for donor-level Spearman bootstrap or power simulation",
+    "rho_observed": 0.3484,
+    "n": 22,
+    "approx_interval": [
+      -0.08582164670556398,
+      0.6713937145010198
+    ],
+    "approx_80pct_power_rho": 0.5667595784412177
+  },
+  "inputs": {
+    "CLAIMS.md": {
+      "bytes": 107578,
+      "sha256": "938962c09706b29acab03c756700d4f35d012d3203f5c42a25431b0723165841"
+    },
+    "Thesis/gate2_05_cardoso_2026/trials/e1_human_luad_ligand_sources/e1_gate_vs_deposited_celltype.csv": {
+      "bytes": 422,
+      "sha256": "79359eda8bfea9e456124ed96889f59ad773fc9db3b289688a2e0ca2d94769db"
+    },
+    "Thesis/gate2_05_cardoso_2026/trials/e1_human_luad_ligand_sources/e1_per_donor_compartment.csv": {
+      "bytes": 23184,
+      "sha256": "cb5e97a577f8410d808611e6ca5fa22b979ab2e8d8f7b336cc319a478c9badd7"
+    },
+    "raw_data/GSE131907/e1_extracted_rows.npz": {
+      "bytes": 5581568,
+      "sha256": "a2614eeaf63e22cb94b3ff7450afe53ba666b4736c2bfc6fabdc13904f96a812"
+    },
+    "raw_data/GSE131907/GSE131907_Lung_Cancer_cell_annotation.txt.gz": {
+      "bytes": 1886187,
+      "sha256": "9d017652a31a489c1f62cacc436936d48a5b07bb554fc0dbe602da7474532205"
+    },
+    "Thesis/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_replication.csv": {
+      "bytes": 43214,
+      "sha256": "b4a935cd14ef5c765bf2cb3ab572598814ba3f042072c5efe4aa9a6cf1bfc18a"
+    },
+    "Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_units.csv": {
+      "bytes": 2138,
+      "sha256": "4272aae8f1356fe242a1ad8d63455e4addd204d6b9c87830add56ef090083552"
+    },
+    "Thesis/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_units.csv": {
+      "bytes": 3042,
+      "sha256": "a85849967445b2c23e1ef470e0d6d12e4536a061afd0195c5356ede41a548e8a"
+    },
+    "Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_sets.csv": {
+      "bytes": 2094,
+      "sha256": "b12e859bf0a3b4b0c907f06ba1cbc30b0ae0ffce2a28b6b938f633d4c963237a"
+    },
+    "analysis/figures/rq/rq_a4_detection.csv": {
+      "bytes": 552,
+      "sha256": "bbca82b9cd02ea1b7b1176de9f006042ec56cfd7168ebbdab4a60cbe77f50d28"
+    },
+    "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv": {
+      "bytes": 2949,
+      "sha256": "5767bed7ed358c4cab908d22b3dea173f0c361c3fff51247c39a91ff804c1b42"
+    }
+  }
+}

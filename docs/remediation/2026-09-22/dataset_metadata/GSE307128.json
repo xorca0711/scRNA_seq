@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "retrieved": "2026-09-22",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307128&targ=all&form=text&view=full",
+  "raw_sha256": "9dbf8f863d561da350ee80813391849477be4d935cb37c40a5c4fcedad296273",
+  "raw_path": "raw_data/dataset_gates/GSE307128.soft.txt",
+  "series": {
+    "accession": "GSE307128",
+    "title": [
+      "Mapping the Dialogue: Decoding Alveolar Stem-Niche Interactions [II]"
+    ],
+    "summary": [
+      "Cellular atlases reveal diverse cellular phenotypes, but how cells traverse this phenotypic landscape to impact tissues requires systematic study. We present an alveolosphere screening platform for investigating interactions between lung epithelial stem cells and their fibroblast niche. We assessed the role of 201 candidate genes in stem cells via imaging, then used RNAseq analysis for a transcriptome-wide understanding of cell-autonomous effects on stem cells and non-cell-autonomous effects on the niche. This phenome-transcriptome map uncovered new cellular states and pathways regulating stem cell growth, metabolism, and immune signaling. Notably, stem cells influenced scar-forming and immune programs in fibroblasts. This injury response was dependent on stem cell identity; loss of Nkx2.1, the transcription factor conferring lung epithelial identity, disrupted stem cell-niche interactions and had a greater non-cell-autonomous effect than eliminating the cancer genes Trp53, Egfr, or Cdkn2b. Our study highlights how functional atlases complement the cellular diversity revealed by descriptive methods."
+    ],
+    "overall_design": [
+      "A CRISPR KO screen was conducted in lung alveolar type 2 (AT2) cells. Lung AT2 cells are the progenitors of AT1 cells, responsible for gas exchange in our lung alveoli. After nucleofection of these cells with RNP for our gene of interest, they are co-cultured in Matrigel with human normal lung fibroblasts for 2 weeks. During this time, AT2 cells proliferate, organize into organoid and differentiate. After 2 weeks, RNA is extracted for transcriptomics analysis. RNA was extracted from each well and prepared using SmartSeq3 pipeline. Each fastq file contains reads from both mouse AT2 cells and human fibroblasts."
+    ],
+    "sample_id": [
+      "GSM9216987",
+      "GSM9216988",
+      "GSM9216989",
+      "GSM9216990"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307128/suppl/GSE307128_RAW.tar"
+    ],
+    "relation": [
+      "SubSeries of: GSE307351",
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1314603"
+    ]
+  },
+  "samples": [],
+  "data_processing_definitions": {},
+  "scope": "Selected deposited metadata; sample accession counts are not biological replicate counts."
+}

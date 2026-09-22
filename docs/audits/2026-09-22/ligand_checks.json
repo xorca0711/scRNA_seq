@@ -1,0 +1,90 @@
+{
+  "scope": "Read-only audit of tracked C12 winner table and target cell floors. No original analyses or claim statuses changed.",
+  "sources": {
+    "e6": {
+      "path": "Thesis/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling/e6_per_donor.csv",
+      "sha256": "DD558FDD64DA1A8AB67B51BC35C9622ACEE5EE3C8E82D6AAC8F109D79CD59FC7"
+    },
+    "c12": {
+      "path": "Thesis/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan/c12_per_donor_pairs.csv",
+      "sha256": "E2405F6F6455BC76A99C85471CF3A9F49AA8006B6C08276199B977AFDD87536C"
+    }
+  },
+  "c12_source_counts": [
+    {
+      "Name": "Aberrant_Basaloid",
+      "Count": 1713
+    },
+    {
+      "Name": "Basal",
+      "Count": 1433
+    },
+    {
+      "Name": "ATI",
+      "Count": 1253
+    },
+    {
+      "Name": "ATII",
+      "Count": 1082
+    },
+    {
+      "Name": "Ciliated",
+      "Count": 881
+    },
+    {
+      "Name": "Pericyte",
+      "Count": 764
+    },
+    {
+      "Name": "Mesothelial",
+      "Count": 465
+    },
+    {
+      "Name": "Goblet",
+      "Count": 440
+    },
+    {
+      "Name": "Club",
+      "Count": 360
+    },
+    {
+      "Name": "SMC",
+      "Count": 318
+    }
+  ],
+  "c12_mural_summary": {
+    "pericyte_or_smc_within_donor_top15": 106,
+    "all_within_donor_top15": 390,
+    "all_donor_pair_winners": 8709,
+    "egfr_mural_winners": 0,
+    "pericyte_or_smc_winners": 1082,
+    "affected_donors": 13
+  },
+  "c12_donors_below_frozen_target_fibroblast_floor": [
+    {
+      "donor": "158I",
+      "disease": "IPF",
+      "n_epithelial": "505",
+      "n_fibroblast": "43"
+    },
+    {
+      "donor": "160C",
+      "disease": "Control",
+      "n_epithelial": "135",
+      "n_fibroblast": "47"
+    },
+    {
+      "donor": "209I",
+      "disease": "IPF",
+      "n_epithelial": "886",
+      "n_fibroblast": "33"
+    },
+    {
+      "donor": "388C",
+      "disease": "Control",
+      "n_epithelial": "89",
+      "n_fibroblast": "44"
+    }
+  ],
+  "c14_limitation": "C14 repeats the sender and donor-floor filters, but drops source/target provenance before aggregating; no heavy rerun was performed."
+}

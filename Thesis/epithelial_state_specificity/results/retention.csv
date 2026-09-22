@@ -1,0 +1,36 @@
+cohort,unit,unit_type,genotype,stage,injury,independence,n_input,n_depth,n_retained,retained_fraction,median_UMI
+GSE247130,P9_control,pooled_library,control,P9,uninjured,same-laboratory studies; not independent replication,12186,11795,11062,0.9077630067290333,8724.0
+GSE247130,P9_Cebpa_mutant,pooled_library,Cebpa_mutant,P9,uninjured,same-laboratory studies; not independent replication,11272,11005,10670,0.9465933286018453,10242.5
+GSE247130,7wk_control,pooled_library,control,7wk,uninjured,same-laboratory studies; not independent replication,7589,7095,6894,0.9084200816971933,6433.0
+GSE247130,7wk_Cebpa_mutant,pooled_library,Cebpa_mutant,7wk,uninjured,same-laboratory studies; not independent replication,10838,9942,9804,0.9045949437165529,6504.0
+GSE247130,SeV_control,pooled_library,control,adult_14dpi,SeV,same-laboratory studies; not independent replication,11773,9398,8575,0.7283615051388771,3985.0
+GSE247130,SeV_Cebpa_mutant,pooled_library,Cebpa_mutant,adult_14dpi,SeV,same-laboratory studies; not independent replication,10636,9373,8924,0.8390372320421211,5805.0
+GSE310539,wildtype_PBS,pooled_library,wildtype,adult,uninjured,same-laboratory studies; not independent replication,7340,5855,5756,0.7841961852861036,4705.5
+GSE310539,wildtype_SeV,pooled_library,wildtype,adult,SeV,same-laboratory studies; not independent replication,8093,6612,4721,0.5833436302977882,6253.0
+GSE310539,AP1mut_PBS,pooled_library,AP1mut,adult,uninjured,same-laboratory studies; not independent replication,13622,8903,8861,0.6504918514168258,2953.0
+GSE310539,AP1mut_SeV,pooled_library,AP1mut,adult,SeV,same-laboratory studies; not independent replication,10794,8389,7888,0.7307763572355012,4206.5
+GSE262927,EEM-scRNA-113,animal,Ki67Cre/Cre; ROSA26LSL-tdTm/+,6.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",154,147,139,0.9025974025974026,17490.0
+GSE262927,EEM-scRNA-116,animal,Ki67Cre/Cre; ROSA26LSL-tdTm/+,11.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",102,101,82,0.803921568627451,20889.5
+GSE262927,EEM-scRNA-117,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,19.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",230,229,224,0.9739130434782609,14883.0
+GSE262927,EEM-scRNA-118,animal,Ki67Cre/Cre; ROSA26LSL-tdTm/+,25.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",191,185,184,0.9633507853403142,17658.0
+GSE262927,EEM-scRNA-124,animal,Ki67Cre/Cre; ROSA26LSL-tdTm/+,42.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",90,90,80,0.8888888888888888,13476.5
+GSE262927,EEM-scRNA-125,animal,Ki67Cre/Cre; ROSA26LSL-tdTm/+,42.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",229,224,224,0.9781659388646288,11095.0
+GSE262927,EEM-scRNA-126,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,42.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",167,163,162,0.9700598802395209,11471.0
+GSE262927,EEM-scRNA-127,animal,Ki67Cre/Cre; ROSA26LSL-tdTm/+,42.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",130,129,128,0.9846153846153847,16153.0
+GSE262927,EEM-scRNA-158,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,0.0,homeostasis,"external-study, previously analyzed; no neonatal arm",377,360,351,0.9310344827586207,13077.0
+GSE262927,EEM-scRNA-162,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,6.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",200,196,194,0.97,12818.0
+GSE262927,EEM-scRNA-166,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,0.0,homeostasis,"external-study, previously analyzed; no neonatal arm",204,202,202,0.9901960784313726,9996.5
+GSE262927,EEM-scRNA-167,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,11.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",388,383,373,0.961340206185567,15165.5
+GSE262927,EEM-scRNA-170,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,19.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",241,241,238,0.9875518672199171,14376.0
+GSE262927,EEM-scRNA-172,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,25.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",367,366,363,0.989100817438692,14847.0
+GSE262927,EEM-scRNA-179,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,42.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",149,147,146,0.9798657718120806,12648.0
+GSE262927,EEM-scRNA-180,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,42.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",97,95,94,0.9690721649484536,11757.0
+GSE262927,EEM-scRNA-181,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,42.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",164,164,162,0.9878048780487805,11475.5
+GSE262927,EEM-scRNA-182,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,42.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",210,209,207,0.9857142857142858,12167.5
+GSE262927,EEM-scRNA-236,animal,Ki67Cre/Cre; ROSA26LSL-tdTm/+,90.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",210,207,203,0.9666666666666667,18621.0
+GSE262927,EEM-scRNA-237,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,90.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",151,149,149,0.9867549668874173,15657.0
+GSE262927,EEM-scRNA-238,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,90.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",366,352,344,0.9398907103825137,15146.0
+GSE262927,EEM-scRNA-239,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,90.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",352,350,350,0.9943181818181818,12878.5
+GSE262927,EEM-scRNA-310,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,366.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",412,400,387,0.9393203883495146,14716.5
+GSE262927,EEM-scRNA-311,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,366.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",322,310,297,0.922360248447205,13236.5
+GSE262927,EEM-scRNA-312,animal,Ki67Cre/+; ROSA26LSL-tdTm/+,366.0,H1N1_infected,"external-study, previously analyzed; no neonatal arm",218,211,208,0.9541284403669725,20156.0

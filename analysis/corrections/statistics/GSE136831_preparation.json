@@ -1,0 +1,28 @@
+{
+  "inputs": [
+    {
+      "path": "raw_data/GSE136831/GSE136831_AllCells.Samples.CellType.MetadataTable.txt.gz",
+      "bytes": 4308752,
+      "mtime_ns": 1789275324665579100,
+      "sha256": "147bdd11d720ed30736a459ba62a3d8e2f3f9028a8430e0eb714484f0456049b"
+    },
+    {
+      "path": "raw_data/GSE136831/GSE136831_AllCells.GeneIDs.txt.gz",
+      "bytes": 323848,
+      "mtime_ns": 1789275322540132900,
+      "sha256": "e43b3008945c87a6875d4fb1a99a791fdaefeeb3c5a72a5d17589f621eb83af8"
+    },
+    {
+      "path": "raw_data/GSE136831/GSE136831_RawCounts_Sparse.mtx.gz",
+      "bytes": 2150633813,
+      "mtime_ns": 1789275432352698400
+    }
+  ],
+  "nnz_read": 692789348,
+  "preparation_code_sha256": "01b44d4aa5dd977c1a997a49e03edd8a227860b7b18cb65bcdf2add66e83271c",
+  "historical_cell_and_library_total_parity": true,
+  "n_units": 94,
+  "n_genes": 45947,
+  "total_counts": 1239639679,
+  "completed_utc": "2026-09-22T01:36:48Z"
+}

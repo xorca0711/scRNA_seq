@@ -1,0 +1,26 @@
+{
+  "inputs": [
+    {
+      "path": "Thesis/gate1_01_niethamer_2025/GSE262927/processed/final_clustered.h5ad",
+      "bytes": 2110304693,
+      "mtime_ns": 1786111996357562100
+    },
+    {
+      "path": "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_cell_metadata.csv",
+      "bytes": 1103269,
+      "mtime_ns": 1789021304613247800,
+      "sha256": "1e3710318c900847c10ca35804afb42007df66d3c4b29e6d9a3b8e1f2950da23"
+    },
+    {
+      "path": "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/batch_sensitivity/tables/sample_infection_round.csv",
+      "bytes": 3202,
+      "mtime_ns": 1789025755127625400,
+      "sha256": "e6d0488e10524cc5fcd32448434120042559cfeffbfcb23364e6e62242c5cc81"
+    }
+  ],
+  "preparation_code_sha256": "01b44d4aa5dd977c1a997a49e03edd8a227860b7b18cb65bcdf2add66e83271c",
+  "n_units": 223,
+  "n_genes": 32228,
+  "total_counts": 115312272,
+  "completed_utc": "2026-09-22T01:31:35Z"
+}

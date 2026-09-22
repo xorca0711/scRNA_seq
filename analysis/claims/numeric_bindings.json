@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "scope": "Selected artifact fields, not full-pipeline reproduction. Every binding states its exact cohort filter and summary.",
+  "bindings": [
+    {
+      "id": "C3_day366_median",
+      "claims": [
+        "C3"
+      ],
+      "kind": "csv",
+      "path": "Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/tables/icap_abundance_per_sample.csv",
+      "where": {
+        "day": "366.0"
+      },
+      "field": "pct",
+      "operation": "median",
+      "expected": 21.7,
+      "absolute_tolerance": 0.05,
+      "claim_text_template": "{value:.1f}% at 366"
+    },
+    {
+      "id": "C165_ADI_P9_control_seed17",
+      "claims": [
+        "C165"
+      ],
+      "kind": "csv",
+      "path": "Thesis/epithelial_state_specificity/results/within_unit_effects.csv",
+      "where": {
+        "unit": "P9_control",
+        "seed": "17",
+        "module": "ADI_published_holdout"
+      },
+      "field": "difference",
+      "operation": "single",
+      "expected": 1.043479521986307,
+      "absolute_tolerance": 1e-10,
+      "scale": 100,
+      "claim_text_template": "+{value:.2f}/"
+    },
+    {
+      "id": "C165_ADI_P9_control_seed29",
+      "claims": [
+        "C165"
+      ],
+      "kind": "csv",
+      "path": "Thesis/epithelial_state_specificity/results/within_unit_effects.csv",
+      "where": {
+        "unit": "P9_control",
+        "seed": "29",
+        "module": "ADI_published_holdout"
+      },
+      "field": "difference",
+      "operation": "single",
+      "expected": 1.2108327609741287,
+      "absolute_tolerance": 1e-10,
+      "scale": 100,
+      "claim_text_template": "/+{value:.2f}"
+    },
+    {
+      "id": "C165_ADI_SeV_control_seed17",
+      "claims": [
+        "C165"
+      ],
+      "kind": "csv",
+      "path": "Thesis/epithelial_state_specificity/results/within_unit_effects.csv",
+      "where": {
+        "unit": "SeV_control",
+        "seed": "17",
+        "module": "ADI_published_holdout"
+      },
+      "field": "difference",
+      "operation": "single",
+      "expected": 7.609919267941042,
+      "absolute_tolerance": 1e-10,
+      "scale": 100,
+      "claim_text_template": "+{value:.2f}/"
+    },
+    {
+      "id": "C165_ADI_SeV_control_seed29",
+      "claims": [
+        "C165"
+      ],
+      "kind": "csv",
+      "path": "Thesis/epithelial_state_specificity/results/within_unit_effects.csv",
+      "where": {
+        "unit": "SeV_control",
+        "seed": "29",
+        "module": "ADI_published_holdout"
+      },
+      "field": "difference",
+      "operation": "single",
+      "expected": 6.53142936965603,
+      "absolute_tolerance": 1e-10,
+      "scale": 100,
+      "claim_text_template": "/+{value:.2f}"
+    },
+    {
+      "id": "C168_shared_ADI_AT1_genes",
+      "claims": [
+        "C168"
+      ],
+      "kind": "csv",
+      "path": "Thesis/epithelial_state_specificity/results/module_overlap.csv",
+      "where": {
+        "module_a": "ADI_published_holdout",
+        "module_b": "AT1_published_holdout"
+      },
+      "field": "intersection",
+      "operation": "single",
+      "expected": 119,
+      "claim_text_template": "share {value:.0f} genes"
+    },
+    {
+      "id": "C37_primary_donors",
+      "claims": [
+        "C37"
+      ],
+      "kind": "json",
+      "path": "analysis/corrections/ligand/results/c37/summary.json",
+      "pointer": [
+        "detection_at_1000",
+        "n_donors"
+      ],
+      "expected": 10
+    },
+    {
+      "id": "C37_primary_direction",
+      "claims": [
+        "C37"
+      ],
+      "kind": "json",
+      "path": "analysis/corrections/ligand/results/c37/summary.json",
+      "pointer": [
+        "detection_at_1000",
+        "epithelial_higher"
+      ],
+      "expected": 6
+    },
+    {
+      "id": "C37_primary_p",
+      "claims": [
+        "C37"
+      ],
+      "kind": "json",
+      "path": "analysis/corrections/ligand/results/c37/summary.json",
+      "pointer": [
+        "detection_at_1000",
+        "p_two_sided"
+      ],
+      "expected": 0.130859375,
+      "claim_text_template": "p = {value:.6f}"
+    },
+    {
+      "id": "C161_primary_replication",
+      "claims": [
+        "C161"
+      ],
+      "kind": "json",
+      "path": "analysis/corrections/statistics/summary.json",
+      "pointer": [
+        "corrected_replicated"
+      ],
+      "expected": 0
+    },
+    {
+      "id": "C161_fixed001_replication",
+      "claims": [
+        "C161"
+      ],
+      "kind": "json",
+      "path": "analysis/corrections/statistics/summary.json",
+      "pointer": [
+        "fixed001_replicated"
+      ],
+      "expected": 30
+    },
+    {
+      "id": "C161_legacy_replication",
+      "claims": [
+        "C161"
+      ],
+      "kind": "json",
+      "path": "analysis/corrections/statistics/summary.json",
+      "pointer": [
+        "historical_replicated"
+      ],
+      "expected": 62
+    },
+    {
+      "id": "C163_reference_W1_A",
+      "claims": [
+        "C163"
+      ],
+      "kind": "json",
+      "path": "analysis/corrections/statistics/summary.json",
+      "pointer": [
+        "w1",
+        "voom_TMM/A",
+        "hits"
+      ],
+      "expected": 0
+    },
+    {
+      "id": "C163_reference_W1_B",
+      "claims": [
+        "C163"
+      ],
+      "kind": "json",
+      "path": "analysis/corrections/statistics/summary.json",
+      "pointer": [
+        "w1",
+        "voom_TMM/B",
+        "hits"
+      ],
+      "expected": 0
+    },
+    {
+      "id": "C82_corrected_AREG_rank",
+      "claims": [
+        "C82"
+      ],
+      "kind": "csv",
+      "path": "analysis/corrections/ligand/results/lr/resource_summary.csv",
+      "where": {
+        "resource": "cellchatdb"
+      },
+      "field": "areg_median_rank",
+      "operation": "single",
+      "expected": 10.5,
+      "claim_text_template": "rank {value:.1f}"
+    },
+    {
+      "id": "C80_corrected_donors",
+      "claims": [
+        "C80",
+        "C82"
+      ],
+      "kind": "csv",
+      "path": "analysis/corrections/ligand/results/lr/resource_summary.csv",
+      "where": {
+        "resource": "cellchatdb"
+      },
+      "field": "n_donors",
+      "operation": "single",
+      "expected": 22
+    },
+    {
+      "id": "C82_corrected_pair_count",
+      "claims": [
+        "C82"
+      ],
+      "kind": "csv",
+      "path": "analysis/corrections/ligand/results/lr/resource_summary.csv",
+      "where": {
+        "resource": "cellchatdb"
+      },
+      "field": "pairs",
+      "operation": "single",
+      "expected": 312
+    },
+    {
+      "id": "C111_CellChat_abundance_flag",
+      "claims": [
+        "C111"
+      ],
+      "kind": "csv",
+      "path": "analysis/corrections/ligand/results/lr/resource_summary.csv",
+      "where": {
+        "resource": "cellchatdb"
+      },
+      "field": "abundance_share_top15",
+      "operation": "single",
+      "expected": 0.7333333333333333
+    }
+  ]
+}

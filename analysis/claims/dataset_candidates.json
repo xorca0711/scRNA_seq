@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "decision_date": "2026-09-22",
+  "scope": "Prospective candidates after correction; not a complete replacement for the existing raw-data inventory.",
+  "candidates": [
+    {
+      "accession": "GSE307112",
+      "parent": "GSE307351",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307112",
+      "metadata": "docs/remediation/2026-09-22/dataset_metadata/GSE307351.json",
+      "series_metadata": "docs/remediation/2026-09-22/dataset_metadata/GSE307112.json",
+      "assay": "Species-separated well-level RNA-seq from mixed-species alveolar organoids",
+      "organisms": ["Mus musculus", "Homo sapiens"],
+      "deposited_rna_libraries": 886,
+      "distinct_rna_plate_labels": 15,
+      "observational_unit": "Culture well; biological independence unresolved",
+      "biological_replicates": null,
+      "outcomes": ["Day-7 and day-14 organoid count", "Mean organoid area", "Well coverage"],
+      "primary_next_question": "Do fixed epithelial programme shifts predict imaging change and fibroblast responses across independent preparations?",
+      "decision": "Prioritize bounded identifier and replication pilot; inferential analysis conditional on design audit",
+      "unfilled_gates": ["Well/count/imaging/guide joins", "Biological isolation and donor IDs", "Guide versus technical repeat structure", "Species assignment and plate QC", "Independent batch validation"],
+      "forbidden_inferences": ["886 independent animals", "Organoid area establishes mature AT1 fate", "Mixed-species bulk reads are single-cell profiles"]
+    },
+    {
+      "accession": "GSE307128",
+      "parent": "GSE307351",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307128",
+      "metadata": "docs/remediation/2026-09-22/dataset_metadata/GSE307128.json",
+      "assay": "Visium HD spatial transcriptomics according to sample processing",
+      "organisms": ["Mus musculus"],
+      "deposited_samples": 4,
+      "group_labels": {"WT": 2, "Nkx2.1 KO": 2},
+      "observational_unit": "Tissue block; block-to-animal mapping unresolved",
+      "biological_replicates": null,
+      "decision": "Hold independent-validation interpretation",
+      "unfilled_gates": ["Block-to-animal mapping", "Spatial assay versus copied organoid series-design discrepancy", "Matched tissue regions and state coverage"],
+      "forbidden_inferences": ["Spatial bins are biological replicates", "Proximity establishes signalling"]
+    },
+    {
+      "accession": "GSE242510",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE242510",
+      "metadata": "docs/remediation/2026-09-22/dataset_metadata/GSE242510.json",
+      "assay": "PIPseq single-cell RNA-seq after mouse lung-cell culture",
+      "organisms": ["Mus musculus"],
+      "deposited_samples": 6,
+      "group_labels": {"WT fibroblasts alone": 2, "WT fibroblast-macrophage coculture": 2, "P2rx4-KO fibroblast-WT macrophage coculture": 2},
+      "observational_unit": "Library/preparation; animal pooling and independence unresolved",
+      "biological_replicates": null,
+      "decision": "Secondary descriptive pilot, not confirmation",
+      "unfilled_gates": ["Animal/preparation IDs and pooling", "Comparable cell states", "Two libraries per group below current inferential floor"],
+      "forbidden_inferences": ["An Arg1 knockout contrast", "RNA measures ornithine metabolic flux", "Cells replace missing independent preparations"]
+    }
+  ]
+}

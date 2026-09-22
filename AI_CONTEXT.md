@@ -7,6 +7,19 @@ violated. Human-readable counterparts: [`README.md`](README.md) (overview),
 (AI-assisted development disclosure and scientific ownership),
 [`PROGRESS.md`](PROGRESS.md) (session state).
 
+## Current correction authority and runtime
+
+On 2026-09-22 the owner explicitly delegated orders 1–4 of the audit improvement
+sequence, claim reclassification, relevant analyses and replots for portfolio
+use. Decision 32 and the remediation record supersede conflicting current-state
+summaries below; historical owner decisions remain preserved. New scientific
+runs live under `analysis/corrections/` and `Thesis/epithelial_state_specificity/`.
+Use `analysis/scripts/run_with_environment.py` with a compatible working
+Python and the existing x64 site-packages when the old venv launchers fail.
+See REPRODUCIBILITY.md. Do not confuse a successful structural check with
+full scientific reproduction, or a post-audit specification with unseen-data
+preregistration. Main and subagent costs should remain tied to decisions.
+
 ## Structured summary
 
 ```yaml
@@ -19,8 +32,10 @@ project:
     papers to surface phenotypes and data distributions (owner restatement,
     2026-09-22).
   question: >
-    The theme: which epithelial and immune-state programmes distinguish
-    productive lung repair from persistent remodelling after injury? Stage 0
+    Current question: which epithelial and macrophage programme changes repeat
+    across independent samples after accounting for composition, genotype and
+    measurement quality? Repair versus pathological remodelling requires
+    independently measured outcomes and is a follow-up question. Stage 0
     asked whether the published biology of one injury series could be
     recovered from raw counts; Stage 1 follows the paper's phase and myeloid
     claims (Thesis/gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md).
@@ -252,7 +267,7 @@ pitfalls_for_ai_assistants:
   - "Rank correlation of whole mean expression profiles has COMPARTMENT resolution and NO state resolution. Trial C7 separated an epithelial query from a fibroblast control by 0.415 of Spearman rho and separated epithelial states from each other by 0.0056, with the top four matches spanning three different state calls. Use marker scoring to name a state; use profile correlation only to confirm a compartment, and always report the margin to second place."
   - "Never fit a Gaussian mixture to a raw two-gene mean to test for a subpopulation. Trial C8's score had 31.5% of cells detecting neither gene, so a spike at zero guarantees a two-component win regardless of biology. Trial C1's use of the same test was sound because score_genes output is centred and continuous. If a state-versus-gradient test is needed on raw values, use co-detection against independence (C1c and C8 T1) with a depth-split control."
   - "Any donor-level or animal-level correlation in this repository must carry a sequencing-depth control on BOTH variables, and the rule must be applied to control pairs as well as to the primary test. In trial E6 the only significant correlation was a control pair (epithelial TGFA against fibroblast activation, p = 0.045) whose two members both track depth at 0.507 and 0.412; the frozen rule refused to read it. The same number on AREG would have read as confirmation of the paper's axis."
-  - "The paper's epithelium-to-fibroblast axis shows NO donor-level coupling in human fibrosis that 22 donors could detect (trial E6: rho 0.348, p = 0.112; rho 0.43 is the smallest the test could call). Do not describe this as evidence against the paper: pooling all epithelium dilutes the transitional state the claim is about, and the state-resolved version is blocked because that state clears the 50-cell floor in only 7 donors."
+  - "The paper's epithelium-to-fibroblast axis did not meet the donor-level correlation significance criterion in 22 human fibrosis/control donors (trial E6: rho 0.348, p = 0.112; the approximately 0.43 value is a significance threshold, not an exclusion bound or 80%-power calculation). Do not describe this as evidence against the paper: pooling all epithelium dilutes the transitional state the claim is about, and the state-resolved version is blocked because that state clears the 50-cell floor in only 7 donors."
   - "The mesenchymal-sort contaminant of GSE316241 (cluster 11, claim C26) is a MIXTURE, not a state: 41.8% DATP-like and 38% AT2 of 184 cells, below the 50% modal floor. Say 'about four in ten score as the paper's signalling population', never 'the contaminant is the DATP-like state'."
   - "Claim C29's tiers are amplitudes, not populations (trial C8: Runx1 with Pdgfrb co-detected at ratio 1.099, inside the 0.80 to 1.25 independence band). The co-organisation is on the FALLING tier instead: Fst with Runx2 at 1.735 in Areg-flox/+ and 0.816 after deletion. That last observation is post hoc and rests on 24 double-positive cells in one library; label it as such."
   - "The tracked analysis/raw_data_inventory.* files describe the Stage 0 downloads (51 files) and the validator checks that count. The Cardoso downloads were added to raw_data/ afterwards and are inventoried by trial C0, not by that file. Do not re-run 01_scan_raw_data.py without also updating the validator."
