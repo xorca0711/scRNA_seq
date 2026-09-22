@@ -26,6 +26,16 @@ was and the defect was disclosed rather than repaired. The column below gives
 the corrected reading; the run record gives the original. Rows C54, C56, C72
 and C79 of the claims register carry the detail.
 
+## Figure gallery
+
+The [paper gallery](../README.md#figure-gallery) shows the sort-composition
+finding and the corrected C37/C12/C14 figures, with a link to the injury-only
+comparison. Read its current captions before using the historical trial rows
+below: C37 is now Descriptive only, and the corrected ligand scan uses 22 donors,
+explicit epithelial senders and actual fibroblast floors. The
+[correction report](../../../analysis/corrections/ligand/RESULTS.md) preserves
+comparisons with the earlier outputs; its rankings do not establish signaling.
+
 ## The C series, on the Cardoso deposit
 
 | Trial | Question | What it returned |

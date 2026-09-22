@@ -5,6 +5,13 @@ to know to continue. Update this before stopping.
 
 ## Current state: Nabhan analysis, 22 September 2026
 
+README follow-up: existing figures are now embedded in the six executed paper
+overviews and both Choi subbranches, with a root gallery index. Nabhan's full
+seven-figure set and the programme-inference sensitivity plot are visible from
+the main README. Captions retain current claim limits; generated analysis
+outputs and their provenance hashes are unchanged. Documentation validation
+passed 1,408 checks before publication of this follow-up.
+
 The owner completed Nabhan 2018 and authorized source reproduction, Nb1 and an
 independent-cohort screen. The [analysis report](Thesis/gate1_03_nabhan_2018/README.md)
 records the completed source and local descriptive runs, five Nb1 figures,

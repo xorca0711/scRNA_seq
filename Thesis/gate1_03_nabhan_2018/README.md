@@ -32,11 +32,71 @@ identity and proliferation. See [Nabhan et al., *Science*, 2018](https://doi.org
   animal-level plots motivate a test of Wnt response, identity and cycling as
   distinct measurements, followed by a functional readout.
 
+## Figure gallery
+
+All seven figures generated for this analysis are shown below, with vector
+versions for export. They summarize expression, detection and sample coverage;
+no gene-set enrichment analysis was run. Source FPKM and viral-injury UMI data
+remain separate measurements.
+
+### Source expression and threshold sensitivity
+
+![Source expression heatmap for 47 deposited mesenchymal cells](source_reproduction/figures/source_expression_panel.png)
+
+*GSE109444, log2(1+FPKM), with the bulk control excluded. Wnt ligands,
+fibroblast markers and identity/QC context are shown together. The Sftpc signal
+requires the source-data caveat discussed below. [Vector SVG](source_reproduction/figures/source_expression_panel.svg).*
+
+![Detection and Wnt5a/Pdgfra overlap across fixed FPKM thresholds](source_reproduction/figures/detection_sensitivity.png)
+
+*Four fixed positivity rules yield 72.2–90.3% Pdgfra detection among
+Wnt5a-positive cells. The exact published 74% remains unresolved.
+[Vector SVG](source_reproduction/figures/detection_sensitivity.svg);
+[source tables and methods](source_reproduction/README.md#reproduction-and-evidence).*
+
+### Animal and compartment coverage
+
+![Nb1 cell counts by animal and deposited compartment](nb1/figures/01_animal_coverage.png)
+
+*Bold counts meet the primary 50-cell floor. Baseline and day 11 each retain
+only one eligible AT2 animal. [Vector SVG](nb1/figures/01_animal_coverage.svg);
+[coverage table](nb1/tables/animal_compartment_coverage.csv).*
+
+### Wnt source and response across compartments
+
+![Nb1 expression and depth-standardized detection heatmaps](nb1/figures/02_source_response.png)
+
+*Rows preserve compartment, day and eligible animal count. Left: mean
+animal-level log2(CPM+1); right: mean expected detection at 1,000 UMIs.
+Only units with at least 50 cells enter the heatmaps. These are descriptive
+expression measurements. [Vector SVG](nb1/figures/02_source_response.svg);
+[figure table](nb1/tables/figure_source_summary.csv).*
+
 ![Paper-defined ligands across paired fibroblast compartments](nb1/figures/05_fibroblast_pairs.png)
 
 *Each line is one animal, with at least 50 cells in both AF1 and AF2. Five
 paper-defined ligands are shown without selecting them by observed effect.
-This comparison does not establish proximity, secretion or an injury effect.*
+This comparison does not establish proximity, secretion or an injury effect.
+[Vector SVG](nb1/figures/05_fibroblast_pairs.svg);
+[paired measurements](nb1/tables/paired_fibroblast_ligands.csv).*
+
+### AT2 source, response, identity and proliferation
+
+![Individual-animal AT2 Wnt source and response transcripts](nb1/figures/03_at2_per_animal.png)
+
+*Each point is one animal; open points have fewer than 50 AT2 cells. Wnt7b is
+detected at baseline and after injury. Secretion-machinery RNA does not prove
+an autocrine loop. [Vector SVG](nb1/figures/03_at2_per_animal.svg);
+[per-gene measurements](nb1/tables/gene_expression_by_animal.csv).*
+
+![AT2 identity and proliferation compared with Wnt-response markers](nb1/figures/04_at2_dimensions.png)
+
+*Sample suffixes identify animals. The Axin2/Lef1 and Mki67/Top2a summaries
+are marker measurements, not validated activity scores. The published AT2
+holdout panel has 377/398 genes present. These plots motivate separable
+measurements without establishing biological independence.
+[Vector SVG](nb1/figures/04_at2_dimensions.svg);
+[animal marker summaries](nb1/tables/animal_marker_summaries.csv).*
 
 ## Limits that remain open
 
