@@ -32,19 +32,28 @@
           "group": "PBS reference",
           "n_nuclei": 7284,
           "median_rna_score": 1.1183721947669985,
-          "median_atac_promoter": 0.0
+          "median_atac_promoter": 0.0,
+          "median_atac_counts": 4799.0,
+          "pct_no_promoter_fragment": 51.11202635914333,
+          "median_atac_promoter_nonzero": 1.5385098432930757
         },
         {
           "group": "SeV reference",
           "n_nuclei": 7507,
           "median_rna_score": 1.093881918059455,
-          "median_atac_promoter": 0.3825409729351544
+          "median_atac_promoter": 0.3825409729351544,
+          "median_atac_counts": 4842.0,
+          "pct_no_promoter_fragment": 49.95337684827494,
+          "median_atac_promoter_nonzero": 1.6018651317611055
         },
         {
           "group": "SeV transitional",
           "n_nuclei": 586,
           "median_rna_score": 0.31197950038645,
-          "median_atac_promoter": 0.9051508297356736
+          "median_atac_promoter": 0.9051508297356736,
+          "median_atac_counts": 9435.0,
+          "pct_no_promoter_fragment": 39.07849829351536,
+          "median_atac_promoter_nonzero": 1.3090136959076046
         }
       ],
       "mean_detection": {
@@ -226,7 +235,7 @@
       "jaccard_max": 0.579
     }
   },
-  "started_utc": "2026-09-21T01:10:51Z",
+  "started_utc": "2026-09-22T00:11:59Z",
   "versions": {
     "scanpy": "1.12.3",
     "anndata": "0.13.2",
@@ -235,5 +244,5 @@
     "matplotlib": "3.11.1",
     "umap-learn": "0.5.12"
   },
-  "finished_utc": "2026-09-21T01:11:36Z"
+  "finished_utc": "2026-09-22T00:13:00Z"
 }
