@@ -1,26 +1,31 @@
-# Lung single-cell research: reproducible observations and tested limits
+# Integrative reanalysis of public lung single-cell and multiome data
 
 [![Repository checks](https://github.com/xorca0711/scRNA_seq/actions/workflows/repository-checks.yml/badge.svg)](https://github.com/xorca0711/scRNA_seq/actions/workflows/repository-checks.yml)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
-A research portfolio and analysis log using public lung single-cell and
-multiome data to generate hypotheses about epithelial transitions, macrophage
-responses and tissue remodelling. It combines original atlas reanalysis,
-cross-study comparisons, and explicit checks of claims that fail or change
-when the measurement is corrected.
+An ongoing research project that reanalyses public lung single-cell RNA-seq
+and multiome (RNA + ATAC) datasets, applying and evaluating analysis frameworks
+to characterize molecular phenotypes, cell-state programmes and data
+distributions. Its purpose is to turn these observations into testable research
+questions about lung injury, repair and tissue remodelling.
 
-> Which epithelial and macrophage programme changes repeat across independent
-> samples after accounting for cell-state composition, genotype and measurement quality?
+The organising biological question is:
 
-Whether those changes distinguish productive repair from persistent pathology
-is a biological follow-up requiring independently measured outcomes. The
-current collection cannot establish that distinction on molecular states alone.
+> Which epithelial and immune-state programmes distinguish productive lung
+> repair from persistent remodelling after injury?
+
+The practical work combines atlas reconstruction, programme scoring,
+sample-level comparisons and cross-study analysis. It examines which patterns
+repeat across independent samples, how distributions vary with cell-state
+composition and measurement quality, and which observations motivate a
+discriminating experiment. Distinguishing repair from pathology requires
+independently measured outcomes; molecular states alone do not establish it.
 
 Most analyses start from deposited counts; E1 uses deposited normalized
 expression. Author labels are held out of the original unsupervised atlas fits
 and deliberately used in later compartment and annotation-sensitivity analyses.
-Historical results remain available beside corrected passes. A recorded rule
-is not automatically an independent preregistration.
+The claim register links observations to their evidence and limitations.
+Exploratory findings and independent confirmation are distinguished explicitly.
 
 ## Start here
 
