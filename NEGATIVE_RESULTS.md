@@ -19,8 +19,8 @@ the claim's potential.
 | Retracted or superseded, kept on display | 3 |
 | Refuted | 39 |
 | Not establishable with the data that exists | 6 |
-| Not established | 34 |
-| **Total** | **82** |
+| Not established | 35 |
+| **Total** | **83** |
 
 Some of these rows refute a claim this repository itself had made, and some
 refute a method it had used. No count is given here, because deciding which is
@@ -616,6 +616,13 @@ what was refuted and what settled it.
 - **Status in the register:** Not established (owner retained 2026-09-22, decision 28)
 - **What settled it:** trial G1 TEST contrast, 12 against 3 animals: no hallmark and no GO biological process set at gseapy FDR < 0.05 in either direction, with the gate cleared
 - **Artefact:** `Thesis/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_hallmark_TEST_capillary.csv`
+- **Where it came from:** Stage 1. Follow-ups (2026-09-10): the source paper's phase and myeloid claims
+
+### C163. A pre-registered proliferation or arginine and ornithine gene set separates the alveolar macrophage population between repair phases
+
+- **Status in the register:** Not established
+- **What settled it:** trial W1 under CAMERA on the same design: no set at FDR < 0.05 in either contrast (0.95 in late active repair against resolution, 0.46 to 0.48 in resolution against long-term); the proliferation sets carry an inter-gene correlation of 0.30 to 0.45 across animals, and the two hallmark sets a variance inflation of 55 to 69, so a hallmark set of about 190 genes carries the independent information of about three; the ornithine set had 7 genes and was not tested
+- **Artefact:** `Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_sets.csv`
 - **Where it came from:** Stage 1. Follow-ups (2026-09-10): the source paper's phase and myeloid claims
 
 ---
