@@ -43,6 +43,7 @@ violate, is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Restating the repository's purpose as hypothesis generation and keeping personal planning out of every tracked file (decision 27) | Me (instruction 2026-09-22); AI-assisted rewording, file by file, with decisions, statuses and numbers unchanged |
 | Retain or reject on the gene set enrichment rows C155 to C161 (decision 28) | Me, row by row (2026-09-22); the assistant set out the evidence from the tracked artefacts and proposed wording |
 | The A1 figure: adding the per-nucleus promoter violin back beside the detection-at-budget heatmap, with the ATAC depth behind it (decision 29) | Me (2026-09-22), choosing among keep, add back beside, and restore; the assistant computed the depth from the cached object and redrew the figure with script 16 |
+| Retain or reject on the Choi 2020 branch rows C116 to C154 (decision 30) | Me, row by row in four themed groups (2026-09-22); the assistant checked the cited artefacts by script and set out the evidence |
 
 AI execution never meant automatic acceptance. Results were reviewed between
 sessions, and several were sent back: one finding was refuted and rewritten
@@ -649,6 +650,36 @@ i, the numbers are written to `rq_a1_groups.csv` and formatted into the
 caption by script 16, and the replacement itself is retained. Offered and
 not chosen: keeping the heatmap alone, and restoring the violin in its
 place.
+
+**30 · Owner review of the two Choi 2020 branches, rows C116 to C154.**
+(2026-09-22.) The assistant checked by script that every artefact these
+rows cite exists, then set out each row's evidence and I decided, in four
+themed groups.
+
+- *Deposit and label facts.* **C116** retained as Validated (the suffix
+  inversion); **C117** retained as Not establishable; **C119** retained as
+  Refuted (the label fires in uninjured neonatal wells); **C153** retained as
+  Descriptive only with its claim narrowed to the papers' reported
+  directions and one reported ratio, because the absolute fractions are not
+  recovered (C124).
+- *The chromatin question.* **C118** retained as Descriptive only (the RNA
+  loss, consistency between two deposits of one laboratory, not
+  replication); **C120** retained as Retracted-superseded; **C121**, **C133**
+  and **C128** retained as Not established; **C122** and **C132** retained as
+  Refuted; **C131** retained as Exploratory, with the uninjured-control
+  caution already in the row. Offered and not chosen: C131 to Not
+  established.
+- *Method lessons.* **C123 to C127, C129, C130** and **C151** retained at
+  their statuses (refutations of the branch's own rules, and the audit).
+- *Retained as a block, to revisit.* I kept the remaining nineteen rows,
+  **C134 to C150, C152** and **C154**, at their current statuses without
+  reviewing them row by row, and will come back to them; their status cells
+  say so. The assistant had proposed two claim-wording fixes that I have not
+  decided and that were not applied: C152's claim says an unlogged number
+  "is a wrong number" while its own evidence has an unlogged number that was
+  right (its Potential column states the real point, that such a number is
+  Not established), and C154's claim ("Route B's transitional cell set was
+  reported") describes the register rather than the result.
 
 ## How outputs were reviewed
 

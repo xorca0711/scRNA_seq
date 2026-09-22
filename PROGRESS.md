@@ -858,7 +858,8 @@ labelled cells.
      RESEARCH_QUESTIONS, the chromatin summary generator and the A2 page, and
      the validator passes at 740 checks.
    - Owner retain/reject review pending on rows C116 to C154 and on the
-     question-first framing of `RESEARCH_QUESTIONS.md`.
+     question-first framing of `RESEARCH_QUESTIONS.md`. (Rows C116 to C154
+     reviewed 2026-09-22, item 41; the framing review is still pending.)
 
 37. **The two original series moved beside their source papers, and the
    README left open** (2026-09-21, owner instruction).
@@ -986,6 +987,37 @@ labelled cells.
      cross-species lead, C160 a pointer to C161. The paper-1 plan's count of
      single-library deposits was corrected from ten to eight against G0's
      table.
+
+41. **Purpose restated and the review backlog worked** (2026-09-22, owner
+   instruction). Four pull requests.
+   - **PR #51, the purpose.** Public text now states one purpose,
+     hypothesis generation from an integrative reanalysis of public lung
+     single-cell and multiome data; personal planning is out of every tracked
+     file, and branches are named by theme (DEVELOPMENT decision 27). The
+     GitHub repository description matches.
+   - **PR #52, rows C155 to C161** (decision 28): all retained; C161
+     Validated for the donor-level direction only, with a third limit.
+   - **PR #53, the A1 figure** (decision 29): the per-nucleus promoter violin
+     is back beside the detection-at-budget heatmap as panels g to i, with the
+     ATAC depth that inverts it.
+   - **Rows C116 to C154** (decision 30): twenty reviewed row by row and
+     retained (C153's claim narrowed to the papers' directions and one
+     ratio); the other nineteen, C134 to C150, C152 and C154, retained as a
+     block at the owner's instruction, to revisit.
+   - **Open when the owner returns to that block:** two proposed claim
+     rewordings not yet decided. C152 says an unlogged number "is a wrong
+     number", which its own evidence contradicts (the Sox9 ratio was
+     unlogged and right); the proposed wording is "is Not established,
+     whether or not it happens to be right". C154's claim ("Route B's
+     transitional cell set was reported") describes the register, not the
+     result; the proposed wording states the result (Axin2 against Il1r1
+     r = +0.070 in 773 transitional nuclei of the infected Cebpa mutant, not
+     clearing, gate failed).
+   - **Still pending:** retain or reject on the rows before C116 (C6, C9 to
+     C18, C19 to C115), and on the question-first framing of
+     `RESEARCH_QUESTIONS.md`.
+   - **Next:** choosing the next analysis among proposal W1, Part D item 1
+     (needs the GSE309751 download, owner's call) and roadmap paper 3.
 
 ---
 
