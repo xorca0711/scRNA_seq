@@ -11,3 +11,7 @@ analysis/corrections/statistics/R-session.txt whitespace=cr-at-eol,-blank-at-eol
 # RQ figure provenance also records exact source and vector-output hashes.
 analysis/scripts/18_rq_evidence_figures.py -text whitespace=cr-at-eol
 analysis/figures/rq/*.svg -text whitespace=cr-at-eol
+Thesis/gate1_03_nabhan_2018/** -text whitespace=cr-at-eol
+# Preserve generated figure and downloaded source bytes used by provenance hashes.
+Thesis/gate1_03_nabhan_2018/**/figures/*.svg whitespace=cr-at-eol,-blank-at-eol
+Thesis/gate1_03_nabhan_2018/external_feasibility/GSE129605_supplementary_index.html whitespace=cr-at-eol,-blank-at-eol

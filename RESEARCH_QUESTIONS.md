@@ -174,6 +174,33 @@ first or only such comparison require a scoped literature review.
 *Figure A4. GSE310539. Panels a–b show Axin2 and Il1r1 on the wild-type embedding. Panel c shows detection in AT2 nuclei (Sftpc detected; outside the transitional group) across four wells: Axin2 4.4–7.5% and Il1r1 19.3–29.8%. Panel d shows co-detection in 1.0–3.1% of AT2 nuclei. Sparse transcript co-detection does not establish the overlap of pathway activity, reporter history or functional responsiveness (C134–C137/C142). Data in `analysis/figures/rq/rq_a4_detection.csv` and `rq_a4_codetection.csv`.*
 <!-- /rq-figure:A4 -->
 
+#### Wnt source, response and epithelial state after injury
+
+Which fibroblast states carry Wnt-ligand transcripts, and how do epithelial
+Wnt transcripts, Wnt-response markers, AT2 identity and proliferation vary
+across animals? These measurements separate candidate ligand sources from
+receiver responses and functional stemness. They also allow the possibility
+that identity maintenance and proliferation vary independently.
+
+[Nb1](Thesis/gate1_03_nabhan_2018/nb1/README.md) uses deposited cell labels and
+animal-level raw-count summaries in GSE262927. Its earliest injured samples
+are day 6; it cannot test the rapid induction described by Nabhan 2018. Only
+one baseline and one day-11 AT2 unit pass the primary 50-cell floor, so these
+plots support hypothesis generation, not a replicated injury-effect test.
+An [independent cohort screen](Thesis/gate1_03_nabhan_2018/external_feasibility/README.md)
+documents the conditions needed for a follow-up comparison.
+
+![Animal-level AT2 identity, proliferation and Wnt-response transcripts](Thesis/gate1_03_nabhan_2018/nb1/figures/04_at2_dimensions.png)
+
+*Figure A4b. GSE262927, one point per animal, identified by sample suffix.
+The two panels compare the Axin2/Lef1 transcript summary with a published AT2
+holdout panel and Mki67/Top2a. Filled points have at least 50 AT2 cells; open
+points fall below this eligibility floor. Day is confounded with cohort
+characteristics, and the two-gene summaries are not validated pathway or
+stemness scores. The [coverage figure](Thesis/gate1_03_nabhan_2018/nb1/figures/01_animal_coverage.png)
+and [per-gene results](Thesis/gate1_03_nabhan_2018/nb1/figures/03_at2_per_animal.png)
+show the sampling and transcript-level context.*
+
 ### A5. Which transitional signatures are specific to injury rather than development or genotype?
 
 This specificity question complements the RNA/chromatin measurements in A1. At

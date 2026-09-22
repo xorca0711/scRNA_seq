@@ -7,6 +7,16 @@ violated. Human-readable counterparts: [`README.md`](README.md) (overview),
 (AI-assisted development disclosure and scientific ownership),
 [`PROGRESS.md`](PROGRESS.md) (session state).
 
+## Current Nabhan analysis
+
+The owner completed Nabhan 2018 and authorized the analysis sequence on
+2026-09-22. [The Nabhan analysis](Thesis/gate1_03_nabhan_2018/README.md) contains
+the source FPKM reproduction, local Nb1 raw-count analysis and independent
+cohort eligibility screen. Use its frozen protocol and run records; older
+Stage 2 references saying Nb1 is unrun are historical. Deposited fibroblast
+labels replace the old proposed cluster list. Local sampling cannot support
+the acute source switch or a replicated baseline/day-11 AT2 contrast.
+
 ## Current correction authority and runtime
 
 On 2026-09-22 the owner explicitly delegated orders 1–4 of the audit improvement

@@ -18,6 +18,7 @@ Python 3.12 is recommended; no third-party package is needed:
 ```bash
 python analysis/scripts/validate_repository.py
 python analysis/scripts/claim_contract.py --check
+python Thesis/gate1_03_nabhan_2018/nb1/verify_outputs.py
 python -m unittest discover -s analysis/tests -q
 python -m compileall -q analysis Thesis
 ```
@@ -28,6 +29,22 @@ lineage-tracing range from the tracked CSV tables. GitHub Actions runs the same
 checks on every push and pull request. The generated claim manifest binds
 selected values to explicit artifacts, filters and aggregation rules. Its
 coverage is stated per row; CI does not reproduce all biological claims.
+
+Local portable runtimes may contain ignored third-party Python 2 files. In a
+workspace containing `analysis/corrections/statistics/.tools/`, compile the
+repository sources with `python -m compileall -q -x '[/\\]\.tools[/\\]' analysis Thesis`.
+Those ignored runtime files are absent from a clean checkout and CI.
+
+## Nabhan 2018 and Nb1
+
+The [Nabhan analysis](Thesis/gate1_03_nabhan_2018/README.md) has three separate
+reproduction paths: a 47-cell deposited FPKM panel, an animal-level raw-count
+analysis of GSE262927, and acquisition/eligibility checks for an external
+cohort. Each report supplies commands and input provenance. These paths do not
+pool FPKM with UMI counts. The local Nb1 run produces five PNG/SVG figures and
+seven compact tables; its standard-library verifier can check tracked results
+without the large input matrix. Full execution requires the scientific
+environment and source inputs listed in its run record.
 
 ## Scientific correction workflows (September 2026)
 

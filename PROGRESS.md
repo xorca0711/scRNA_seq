@@ -3,7 +3,35 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-## Current state: delegated remediation, 22 September 2026
+## Current state: Nabhan analysis, 22 September 2026
+
+The owner completed Nabhan 2018 and authorized source reproduction, Nb1 and an
+independent-cohort screen. The [analysis report](Thesis/gate1_03_nabhan_2018/README.md)
+records the completed source and local descriptive runs, five Nb1 figures,
+input/output hashes and mathematical checks. A focused independent audit found
+no blocking calculation error; the current raw-layer denominator and incomplete
+AT2-panel coverage are disclosed. The source reproduction separately records
+threshold dependence and an unresolved Sftpc signal in mesenchymal cells.
+
+The local run covers 34,503 cells and 25 animals. It supports descriptive Wnt
+source comparisons, not the acute source switch or a replicated baseline/day-11
+AT2 contrast. GSE129605's eight selected samples (83.7 MB; 13,673 cells) are
+downloaded and structurally checked. External expression inference remains
+HOLD pending independent-animal mapping, annotation and compartment coverage.
+No published or retained claim is promoted on the strength of cell counts alone.
+
+Next: resolve the external gate and specify a contrast if it passes. Do not
+repeat the source or local audits without a change that could invalidate them.
+This analysis is prepared for publication on `codex/nabhan-nb1-analysis`.
+Private Notion notes were not edited.
+
+Verification at delivery: seven repository tests, four source-reproduction
+tests and three Nb1 mathematical tests passed; the source verifier and Nb1
+input/output hash verifier passed; repository validation passed 1,285 checks.
+Compilation passed with the ignored portable R runtime excluded (its bundled
+Python 2 wrapper is not repository code). CI now verifies tracked Nb1 evidence.
+
+## Prior state: delegated remediation, 22 September 2026
 
 The owner authorized claim reassessment, audit orders 1–4, necessary additional
 analyses and figures, then purpose-aware dataset selection using the supplied

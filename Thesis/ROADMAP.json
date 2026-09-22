@@ -142,10 +142,11 @@
         "injury-dependent vs homeostatic logic",
         "experimentally supported directionality"
       ],
-      "datasets": [],
-      "folder": null,
-      "note_status": "next (re-ranking 2026-09-15)",
-      "trial_status": "next: proposal Nb1 (Thesis/gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md, Stage 2) is the trial this paper motivates; not run"
+      "datasets": ["GSE109444 (source mesenchymal FPKM)", "GSE262927 (Nb1 viral-injury counts)", "GSE129605 (external feasibility screen)"],
+      "folder": "gate1_03_nabhan_2018",
+      "note_status": "owner completed reading 2026-09-22; private notes retained by owner",
+      "trial_status": "source reproduction and descriptive Nb1 authorized 2026-09-22; see trial report for execution and external gate",
+      "trial_location": "Thesis/gate1_03_nabhan_2018/README.md"
     },
     {
       "order": 4,

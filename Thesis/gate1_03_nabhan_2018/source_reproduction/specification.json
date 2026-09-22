@@ -1,0 +1,20 @@
+{
+  "recorded_on": "2026-09-22",
+  "timing": "Written after source-method inspection and inspection of one file's schema and target gene values, before full-cohort summaries. This is a retrospective reproduction, not preregistration.",
+  "question": "What Wnt and fibroblast-marker expression is present in the 47 deposited adult mesenchymal single cells, and how sensitive is the reported Pdgfra fraction among Wnt5a-positive cells to an unstated positivity cutoff?",
+  "primary_cohort": "All 47 deposited single cells in GSE109444; exclude GSM2943054 (approximately 200-cell bulk control) from every cell fraction.",
+  "thresholds": [
+    {"label": ">0", "cutoff": 0, "operator": ">"},
+    {"label": ">=0.1", "cutoff": 0.1, "operator": ">="},
+    {"label": ">=1", "cutoff": 1, "operator": ">="},
+    {"label": ">=5", "cutoff": 5, "operator": ">="}
+  ],
+  "display_threshold": ">=1",
+  "display_threshold_rationale": "Transparent expression convention anchored to the paper's housekeeping QC threshold; the paper does not identify this as its Wnt/Pdgfra positivity threshold.",
+  "figure2d_genes": ["Col1a2", "Pdgfra", "Wnt1", "Wnt2", "Wnt2b", "Wnt3", "Wnt3a", "Wnt4", "Wnt5a", "Wnt5b", "Wnt6", "Wnt7a", "Wnt7b", "Wnt8a", "Wnt8b", "Wnt9a", "Wnt9b", "Wnt10a", "Wnt10b", "Wnt11", "Wnt16", "Axin2", "Ppia", "Actb", "Ubc"],
+  "additional_context_genes": ["Mgp", "Col1a1", "Gapdh", "Porcn", "Wls", "Epcam", "Pecam1", "Ptprc", "Sftpc", "Ager"],
+  "figure_transform": "log2(1+FPKM), explicitly differing from the paper's label log2 FPKM because zero handling is unspecified there",
+  "cell_order": "Descending Wnt5a, descending Pdgfra, then accession; same order in both expression panels. Original clustering/order is not reconstructed.",
+  "qc": "Report >=1 FPKM in at least 3/4 Actb, Gapdh, Ubc, Ppia as a diagnostic. Do not invent the paper's incompletely specified three-SD QC or remove cells from the primary deposited cohort.",
+  "inference": "Descriptive cell fractions only; no animal-level test, confidence interval or pseudoreplication. No spatial proximity, functional Wnt secretion, niche causality or modern subtype identification from this matrix."
+}

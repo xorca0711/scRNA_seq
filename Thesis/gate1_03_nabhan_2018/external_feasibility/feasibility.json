@@ -1,0 +1,113 @@
+{
+  "screen_date": "2026-09-22",
+  "scope": "Independent mouse AT2/fibroblast Wnt expression generalization; no functional autocrine inference",
+  "floors": {
+    "biological_units_per_arm": 3,
+    "cells_per_compartment_per_unit": 50,
+    "note": "Feasibility minima, not a power calculation. Must not lower after viewing Wnt effects."
+  },
+  "selected_candidate": {
+    "accession": "GSE129605",
+    "decision": "ACQUIRED_HOLD_ANNOTATION_AND_ANIMAL_PROVENANCE",
+    "contrast": "day11 bleomycin versus saline; exclude nintedanib",
+    "deposited_samples_per_arm": 4,
+    "selected_files": 24,
+    "selected_download_bytes": 83692684,
+    "complete_archive_bytes": 118149120,
+    "counts_downloaded": true,
+    "remaining_gates": [
+      "Confirm each separately indexed sample is one independent mouse, not a pooled or technical replicate",
+      "Freeze annotation independent of Wnt genes; count AT2 and fibroblasts per mouse after QC",
+      "Require at least 3 mice in each arm each meeting both 50-cell floors",
+      "Establish Wnt feature coverage/detection and batch metadata before effects"
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE129605",
+    "paper_doi": "10.1165/rcmb.2018-0313OC",
+    "limitation": "Day11 is outside the preferred acute1-3day window; bleomycin is not viral injury",
+    "acquisition_audit": {
+      "status": "HOLD_ANNOTATION_AND_ANIMAL_PROVENANCE",
+      "samples": 8,
+      "deposited_cells": 13673,
+      "download_bytes": 83692684,
+      "checks": [
+        "24 exact GEO file sizes and local SHA256 checksums",
+        "unique barcodes within each sample",
+        "gene/barcode dimensions match each matrix",
+        "all count entries positive integers in valid bounds",
+        "entry count matches MatrixMarket header"
+      ],
+      "not_done": [
+        "animal provenance beyond deposited identifiers",
+        "post-QC compartment annotation",
+        "AT2/fibroblast coverage gate",
+        "Wnt expression inference"
+      ]
+    }
+  },
+  "rejected_or_incomplete_alternatives": [
+    {
+      "accession": "GSE141259",
+      "decision": "HOLD_CELL_COVERAGE",
+      "reason": "Day3 three bleomycin samples have 4/16/3 fibroblasts including myofibroblasts; all seven PBS samples have <50; only one day3 PBS sample"
+    },
+    {
+      "accession": "GSE202325",
+      "decision": "HOLD_NO_UNINFECTED_CONTROL",
+      "reason": "3 young and3 aged per day3/day9; all infected PR8. Supports age contrasts, not injury versus uninjured"
+    },
+    {
+      "accession": "GSE292515",
+      "decision": "HOLD_CONTROL_REPLICATION",
+      "reason": "Day7 PR8: each age stratum has 3infected versus2PBS; do not pool ages to pass floor"
+    },
+    {
+      "accession": "GSE184854",
+      "decision": "HOLD_DEMULTIPLEXING_AND_CONTROL_UNVERIFIED",
+      "reason": "Two GEO records are WT/CCR2KO mixtures of days3/7/21; sample titles alone are not animal units. Hashtag map not inspected; no GO inferred"
+    }
+  ],
+  "source_files": [
+    {
+      "name": "GSE129605_family.soft.gz",
+      "bytes": 3067,
+      "sha256": "aab86dc92bb919ab52db4117217df20368dea28843be0b0bd31c72216164dfec",
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE129nnn/GSE129605/soft/GSE129605_family.soft.gz"
+    },
+    {
+      "name": "GSE129605_filelist.txt",
+      "bytes": 2646,
+      "sha256": "7bb8d1b92f453f8b45ba1996afbdb310139ebe63dd1c4c90491b521f7f36939c",
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE129nnn/GSE129605/suppl/filelist.txt"
+    },
+    {
+      "name": "GSE141259_family.soft.gz",
+      "bytes": 7438,
+      "sha256": "a90117b781e1803b30c3e42755e1184e8ae866054047c48f2e5d6284ae27c527",
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/soft/GSE141259_family.soft.gz"
+    },
+    {
+      "name": "GSE141259_WholeLung_cellinfo.csv.gz",
+      "bytes": 383214,
+      "sha256": "80fcf055a4a1447cafca60c2c6978b209359137fdc4ddf62ec38aac3f9facd31",
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_WholeLung_cellinfo.csv.gz"
+    },
+    {
+      "name": "GSE184854_family.soft.gz",
+      "bytes": 3728,
+      "sha256": "a37b6fea8e623a3b4882398772507ed5f8e5cc5834d028119eca1e2c0e4cddd0",
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE184nnn/GSE184854/soft/GSE184854_family.soft.gz"
+    },
+    {
+      "name": "GSE202325_family.soft.gz",
+      "bytes": 3395,
+      "sha256": "3fb8d48d0bfbf0a61450aa7aef60aecdbdc3997a606890c5c701b6e45fcf9ab5",
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE202nnn/GSE202325/soft/GSE202325_family.soft.gz"
+    },
+    {
+      "name": "GSE292515_family.soft.gz",
+      "bytes": 2773,
+      "sha256": "77ed64f075e6f233538ede784d22a36519756989683a7d1b824555acd46287a1",
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE292nnn/GSE292515/soft/GSE292515_family.soft.gz"
+    }
+  ]
+}
