@@ -1,0 +1,30 @@
+{
+  "frozen_utc": "2026-09-24T14:56:20.553547+00:00",
+  "scope": "Post-analysis display diagnostics; no new DE, enrichment or label fitting",
+  "cohort": "GSE308103",
+  "seed": 20260924,
+  "umap": {
+    "input": "Saved 30-dimensional frozen-reference query latent vectors",
+    "display_sampling": "At most 75 cells per patient, histology and existing source-profile broad label; repeated libraries pooled before sampling",
+    "n_neighbors": 30,
+    "min_dist": 0.35,
+    "metric": "euclidean",
+    "n_components": 2,
+    "n_epochs": 300,
+    "n_jobs": 1,
+    "interpretation": "Reference-conditioned display geometry; not abundance, lineage or independent annotation validation"
+  },
+  "pca": {
+    "unit": "patient-histology broad AT2-like pseudobulk",
+    "primary_uncertainty": 0.2,
+    "cell_floor": 50,
+    "normalization": "log2(CPM + 1), full assay library totals; diagnostic normalization, not the TMM inferential model",
+    "genes": "CPM >= 1 in at least 5 aggregates; top 2000 by variance without using histology labels",
+    "scaling": "Gene centering, no variance scaling, no batch correction",
+    "n_components": 5
+  },
+  "source_counts": "Existing all-QC per-patient source fractions; no display sampling used in quantitative summaries",
+  "program_contrast": "Existing primary uncertainty 0.2 / 50-cell / broad AT2 paired values; no new hypothesis tests",
+  "pathway_view": "All eligible broad-receiver LUAD-normal rows; primary and fixed001 sensitivity side by side",
+  "ligand_target_view": "All eligible focused_triad, broad AT2/fibroblast, LUAD-normal, up-target candidates; no top-hit selection"
+}

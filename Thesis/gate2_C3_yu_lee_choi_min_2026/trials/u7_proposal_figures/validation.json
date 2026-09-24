@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-09-24T15:15:03.864873+00:00",
+  "code": {
+    "commit": "3b5e1140d6ee5b311764201bfe29f10a0804a05c",
+    "tracked_diff_sha256": "8cdca0316e5641e7fee59e492aaf38d9ae346a158c059224c104bffbc6043001",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u7_validate_proposal_figures.py",
+    "entrypoint_sha256": "a76228d5d263db0aa764c676460b651836ed5401a376829ff3893a0c40b3c021"
+  },
+  "input_hashes_checked": 239,
+  "source_label_cell_count_parity": true,
+  "full_QC_cells": 555480,
+  "display_cells": 34178,
+  "patients": 23,
+  "PCA_units": 70,
+  "program_pairs_verified": true,
+  "pathway_rows": 42,
+  "target_candidates": 32,
+  "visually_reviewed_figures": 6,
+  "measured_figures": 5,
+  "proposal_schematics": 1,
+  "no_new_inferential_tests": true
+}
