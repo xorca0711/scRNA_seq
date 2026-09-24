@@ -43,23 +43,47 @@ GitHub Actions. AI-assisted development and scientific review are documented.
 
 Repository: https://github.com/xorca0711/scRNA_seq
 
-## Suggested media order and captions
+## Selected media order and captions
 
-Keep the GitHub repository link. These five figures provide an updated selection;
-each title and description below can be pasted into the corresponding media item.
+Reassessed 25 September 2026 against the displayed panels, sample units,
+underlying tables and recorded figure hashes. Use these four figures plus the
+GitHub repository link. Each contributes a different completed analysis;
+the selection is based on relevance, readable evidence and coverage of the
+project, not on statistical significance. Export the original full-resolution
+PNGs without cropping away labels or limitations.
 
-| Media title | Caption | Asset |
+| Order and media title | Caption to paste | Asset |
 |---|---|---|
-| Epithelial plasticity across lung-lesion contexts | Patient-level PCA and paired programme scores in GSE308103. Reduced-HPCS scores rise in 19 of 23 LUAD–normal pairs, but also rise in repair/fibrosis comparisons; this is a specificity question, not a malignant-cell classifier. | [PNG](../analysis/figures/rq/rq_a11_epithelial_programs.png) |
-| IL-1 source, receptor and regulatory context | Donor-weighted expression and paired contrasts for macrophage, fibroblast and AT2-like compartments. RNA compatibility is measured separately from cytokine secretion and functional signalling. | [PNG](../analysis/figures/rq/rq_a12_source_recipient_components.png) |
-| Recipient pathways and model sensitivity | Broad-recipient LUAD–normal CAMERA results under estimated and fixed inter-gene correlation. Primary and sensitivity analyses remain distinct; changing the correlation assumption changes retained leads. | [PNG](../analysis/figures/rq/rq_a12_recipient_enrichment.png) |
-| How annotation and molecule depth affect ligand-source comparisons | AREG source differences examined across annotation rules and molecule budgets. The primary matched-depth comparison does not establish a depth-independent source hierarchy. | [PNG](../analysis/corrections/ligand/results/figures/c37_annotation_depth.png) |
-| Epithelial signature specificity and validation coverage | Source-defined developmental, injury and genotype contrasts with an external eligibility audit. Limited biological replication prevents treating transcript overlap as confirmed shared cell identity. | [PNG](../Thesis/epithelial_state_specificity/results/es1_specificity.png) |
+| 1. Epithelial programmes across human lung-lesion contexts | GSE308103: PCA of 70 patient–histology AT2-like pseudobulks, programme scores in 23 paired normal/LUAD patients, and additional paired contrasts. These descriptive RNA patterns motivate specificity questions; histology and programme scores do not identify malignant cells or establish fate. | [PNG](../analysis/figures/rq/rq_a11_epithelial_programs.png) |
+| 2. Different Wnt profiles in paired alveolar fibroblast populations | GSE262927: five source-defined Wnt ligands in AF1 and AF2, paired within 21 animals with at least 50 cells in each compartment. Wnt2 is higher in AF1 and Wnt4 in AF2 in every pair. This describes compartment-specific RNA, without establishing secretion, cell contact or an injury effect. | [PNG](../Thesis/gate1_03_nabhan_2018/nb1/figures/05_fibroblast_pairs.png) |
+| 3. IL-1 source and recipient RNA in the human lung niche | GSE308103: donor-weighted ligand/receptor detection and paired LUAD–normal changes in reference-compatible macrophage, fibroblast and AT2-like populations. Pair counts vary by compartment. RNA compatibility does not establish functional signalling or the dominant tissue cytokine source. | [PNG](../analysis/figures/rq/rq_a12_source_recipient_components.png) |
+| 4. How sequencing depth and reference resources affect AREG inference | Ten tumour donors show how the epithelial–myeloid AREG detection contrast changes after matching RNA depth. A separate 22-donor IPF/control analysis shows resource-dependent AREG–EGFR ranks; rank universes differ. These are measurements of detection and ranking, not signalling strength. | [PNG](../analysis/figures/rq/rq_a2_source_rank.png) |
 
-Replace the old 161-entry claims-ledger image/caption if using this selection.
-The ledger remains useful as repository documentation, but the scientific plots
-make better use of the limited media space. Existing phase and multiome images
-can remain in their repository galleries; this selection is not a quality ranking.
+### Why the earlier selection changed
+
+- The CAMERA correlation-sensitivity panel is useful supporting evidence, but
+  a weak introductory image: the primary tests do not meet the declared FDR
+  threshold, and its filled symbols are sensitivity findings. It remains in
+  the repository with the primary result alongside it.
+- The full epithelial-specificity audit is dense and partly a coverage result
+  (only one external animal evaluable). It does not add an independently
+  validated epithelial result to the lead figure.
+- The AREG three-panel summary replaces the more detailed C37 correction plot.
+  It retains donor pairing and depth sensitivity while also showing resource
+  dependence. Its caption explicitly distinguishes the two cohorts.
+- The fibroblast Wnt panel adds a mouse study and a direct, paired biological
+  comparison. It is not described as a temporal injury effect or a proven niche circuit.
+- The older phase UMAP title implies a year “after repair”; age/harvest
+  confounding and absent recovery outcomes limit that wording. The large
+  multiome composite needs more explanatory space than this selection provides.
+  Both remain available with their full repository context.
+- Omit the claims-count graphic and the proposed withdrawal schematic from
+  project media: neither is a measured biological result. This does not hide
+  null findings or replace them with positive-only selections.
+
+The accompanying local export contains numbered PNGs, copy-ready captions,
+the project text and a source/hash manifest. Repository source figures remain
+in their canonical locations; export copies are byte-identical.
 
 ## Verification and wording changes
 
