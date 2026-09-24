@@ -1,0 +1,19 @@
+{
+  "frozen_utc": "2026-09-24T11:29:32.762130+00:00",
+  "seed": 20260924,
+  "training_cap_per_patient_histology": 2000,
+  "max_epochs": 500,
+  "early_stopping_patience": 10,
+  "early_stopping_min_delta": 0.001,
+  "train_size": 0.9,
+  "batch_size": 128,
+  "knn_k": 50,
+  "uncertainty_primary": 0.2,
+  "uncertainty_sensitivity": 0.3,
+  "scope": "HLCA candidate annotation for broad cell compartments, no KAC/malignancy inference",
+  "query_format": "Fixed-RNA FFPE nuclei; 1731/2000 model genes measured, missing model genes zero-filled",
+  "training": "uniform seeded nuclei per patient/histology; repeated libraries sampled proportionally inside their biological stratum; encode all QC nuclei after adaptation",
+  "input_sha256": "3c26a865f649bc24441b0edfb1ed1e216e70848b4326b8b0484253be9a15ba87",
+  "model_sha256": "6d830abe82164be387e8091aebe032e26c1c8e8edca1936754cba1a6b52a9489",
+  "gene_map_sha256": "4c88e4942f8f1fad9eb7cdb712d0588699918e136d87183d158ac0ebba1fef86"
+}

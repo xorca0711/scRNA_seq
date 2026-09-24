@@ -1,0 +1,456 @@
+"config","comp","label","cell_floor","case","reference","complete_patients","eligible"
+"unc20_pooled","AT2","AT2",50,"AAH","normal",8,TRUE
+"unc20_pooled","AT2","AT2",50,"AIS","normal",12,TRUE
+"unc20_pooled","AT2","AT2",50,"MIA","normal",4,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","normal",23,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AAH",8,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AIS",12,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","MIA",4,TRUE
+"unc20_pooled","AT2","AT2",30,"AAH","normal",8,TRUE
+"unc20_pooled","AT2","AT2",30,"AIS","normal",12,TRUE
+"unc20_pooled","AT2","AT2",30,"MIA","normal",4,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","normal",23,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AAH",8,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AIS",12,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","MIA",4,TRUE
+"unc20_pooled","AT2","AT2",100,"AAH","normal",8,TRUE
+"unc20_pooled","AT2","AT2",100,"AIS","normal",11,TRUE
+"unc20_pooled","AT2","AT2",100,"MIA","normal",3,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","normal",22,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AAH",8,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AIS",11,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","MIA",4,TRUE
+"unc20_pooled","AT2","AT2 proliferating",50,"AAH","normal",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",50,"AIS","normal",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",50,"MIA","normal",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",50,"LUAD","normal",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",50,"LUAD","AAH",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",50,"LUAD","AIS",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",50,"LUAD","MIA",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",30,"AAH","normal",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",30,"AIS","normal",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",30,"MIA","normal",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",30,"LUAD","normal",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",30,"LUAD","AAH",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",30,"LUAD","AIS",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",30,"LUAD","MIA",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",100,"AAH","normal",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",100,"AIS","normal",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",100,"MIA","normal",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",100,"LUAD","normal",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",100,"LUAD","AAH",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",100,"LUAD","AIS",0,FALSE
+"unc20_pooled","AT2","AT2 proliferating",100,"LUAD","MIA",0,FALSE
+"unc20_pooled","AT2","__broad__",50,"AAH","normal",8,TRUE
+"unc20_pooled","AT2","__broad__",50,"AIS","normal",12,TRUE
+"unc20_pooled","AT2","__broad__",50,"MIA","normal",4,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","normal",23,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AAH",8,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AIS",12,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","MIA",4,TRUE
+"unc20_pooled","AT2","__broad__",30,"AAH","normal",8,TRUE
+"unc20_pooled","AT2","__broad__",30,"AIS","normal",12,TRUE
+"unc20_pooled","AT2","__broad__",30,"MIA","normal",4,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","normal",23,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AAH",8,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AIS",12,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","MIA",4,TRUE
+"unc20_pooled","AT2","__broad__",100,"AAH","normal",8,TRUE
+"unc20_pooled","AT2","__broad__",100,"AIS","normal",11,TRUE
+"unc20_pooled","AT2","__broad__",100,"MIA","normal",3,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","normal",22,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AAH",8,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AIS",11,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","MIA",4,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",50,"AAH","normal",1,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",50,"AIS","normal",0,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",50,"MIA","normal",0,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","normal",2,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AAH",1,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS",3,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","MIA",0,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"AAH","normal",1,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"AIS","normal",3,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"MIA","normal",0,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","normal",4,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","AAH",1,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","AIS",4,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","MIA",1,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",100,"AAH","normal",0,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",100,"AIS","normal",0,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",100,"MIA","normal",0,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",100,"LUAD","normal",0,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",100,"LUAD","AAH",0,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",100,"LUAD","AIS",1,FALSE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",100,"LUAD","MIA",0,FALSE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"AAH","normal",8,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"AIS","normal",11,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"MIA","normal",4,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal",22,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH",8,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS",11,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA",4,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"AAH","normal",8,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"AIS","normal",11,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"MIA","normal",4,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","normal",22,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","AAH",8,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","AIS",11,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","MIA",4,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"AAH","normal",8,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"AIS","normal",10,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"MIA","normal",3,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","normal",18,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","AAH",8,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","AIS",9,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","MIA",4,TRUE
+"unc20_pooled","fibroblasts","Myofibroblasts",50,"AAH","normal",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",50,"AIS","normal",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",50,"MIA","normal",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",50,"LUAD","normal",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",50,"LUAD","AAH",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",50,"LUAD","AIS",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",50,"LUAD","MIA",1,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",30,"AAH","normal",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",30,"AIS","normal",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",30,"MIA","normal",1,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",30,"LUAD","normal",1,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",30,"LUAD","AAH",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",30,"LUAD","AIS",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",30,"LUAD","MIA",1,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",100,"AAH","normal",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",100,"AIS","normal",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",100,"MIA","normal",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",100,"LUAD","normal",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",100,"LUAD","AAH",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",100,"LUAD","AIS",0,FALSE
+"unc20_pooled","fibroblasts","Myofibroblasts",100,"LUAD","MIA",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",50,"AAH","normal",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",50,"AIS","normal",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",50,"MIA","normal",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",50,"LUAD","normal",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",50,"LUAD","AAH",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",50,"LUAD","AIS",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",50,"LUAD","MIA",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",30,"AAH","normal",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",30,"AIS","normal",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",30,"MIA","normal",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",30,"LUAD","normal",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",30,"LUAD","AAH",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",30,"LUAD","AIS",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",30,"LUAD","MIA",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",100,"AAH","normal",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",100,"AIS","normal",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",100,"MIA","normal",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",100,"LUAD","normal",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",100,"LUAD","AAH",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",100,"LUAD","AIS",0,FALSE
+"unc20_pooled","fibroblasts","Peribronchial fibroblasts",100,"LUAD","MIA",0,FALSE
+"unc20_pooled","fibroblasts","__broad__",50,"AAH","normal",8,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"AIS","normal",11,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"MIA","normal",4,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","normal",22,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","AAH",8,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","AIS",11,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","MIA",4,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"AAH","normal",8,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"AIS","normal",11,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"MIA","normal",4,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","normal",22,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","AAH",8,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","AIS",11,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","MIA",4,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"AAH","normal",8,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"AIS","normal",10,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"MIA","normal",3,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","normal",19,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","AAH",8,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","AIS",10,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","MIA",4,TRUE
+"unc20_pooled","macrophages","Monocyte-derived Mph",50,"AAH","normal",0,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",50,"AIS","normal",0,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",50,"MIA","normal",0,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","normal",2,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","AAH",0,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","AIS",1,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","MIA",0,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",30,"AAH","normal",2,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",30,"AIS","normal",0,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",30,"MIA","normal",0,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",30,"LUAD","normal",3,TRUE
+"unc20_pooled","macrophages","Monocyte-derived Mph",30,"LUAD","AAH",2,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",30,"LUAD","AIS",2,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",30,"LUAD","MIA",1,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",100,"AAH","normal",0,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",100,"AIS","normal",0,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",100,"MIA","normal",0,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",100,"LUAD","normal",0,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",100,"LUAD","AAH",0,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",100,"LUAD","AIS",1,FALSE
+"unc20_pooled","macrophages","Monocyte-derived Mph",100,"LUAD","MIA",0,FALSE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AAH","normal",3,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AIS","normal",5,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"MIA","normal",1,FALSE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal",9,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH",5,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS",5,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","MIA",2,FALSE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AAH","normal",5,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AIS","normal",9,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"MIA","normal",2,FALSE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","normal",13,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AAH",7,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AIS",8,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","MIA",3,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"AAH","normal",2,FALSE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"AIS","normal",3,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"MIA","normal",1,FALSE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","normal",5,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","AAH",3,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","AIS",2,FALSE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","MIA",1,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",50,"AAH","normal",1,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",50,"AIS","normal",1,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",50,"MIA","normal",0,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","normal",2,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AAH",1,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AIS",2,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","MIA",0,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"AAH","normal",2,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"AIS","normal",2,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"MIA","normal",0,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","normal",3,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AAH",3,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AIS",3,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","MIA",0,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",100,"AAH","normal",0,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",100,"AIS","normal",0,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",100,"MIA","normal",0,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",100,"LUAD","normal",1,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",100,"LUAD","AAH",0,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",100,"LUAD","AIS",0,FALSE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",100,"LUAD","MIA",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",50,"AAH","normal",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",50,"AIS","normal",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",50,"MIA","normal",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",50,"LUAD","normal",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",50,"LUAD","AAH",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",50,"LUAD","AIS",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",50,"LUAD","MIA",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",30,"AAH","normal",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",30,"AIS","normal",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",30,"MIA","normal",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",30,"LUAD","normal",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",30,"LUAD","AAH",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",30,"LUAD","AIS",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",30,"LUAD","MIA",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",100,"AAH","normal",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",100,"AIS","normal",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",100,"MIA","normal",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",100,"LUAD","normal",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",100,"LUAD","AAH",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",100,"LUAD","AIS",0,FALSE
+"unc20_pooled","macrophages","Alveolar Mph proliferating",100,"LUAD","MIA",0,FALSE
+"unc20_pooled","macrophages","__broad__",50,"AAH","normal",5,TRUE
+"unc20_pooled","macrophages","__broad__",50,"AIS","normal",5,TRUE
+"unc20_pooled","macrophages","__broad__",50,"MIA","normal",1,FALSE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","normal",12,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AAH",8,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AIS",7,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","MIA",3,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AAH","normal",7,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AIS","normal",10,TRUE
+"unc20_pooled","macrophages","__broad__",30,"MIA","normal",2,FALSE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","normal",18,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AAH",8,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AIS",10,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","MIA",4,TRUE
+"unc20_pooled","macrophages","__broad__",100,"AAH","normal",2,FALSE
+"unc20_pooled","macrophages","__broad__",100,"AIS","normal",5,TRUE
+"unc20_pooled","macrophages","__broad__",100,"MIA","normal",1,FALSE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","normal",7,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AAH",4,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AIS",4,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","MIA",2,FALSE
+"unc30_pooled","AT2","AT2",50,"AAH","normal",8,TRUE
+"unc30_pooled","AT2","AT2",50,"AIS","normal",12,TRUE
+"unc30_pooled","AT2","AT2",50,"MIA","normal",4,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","normal",23,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AAH",8,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AIS",12,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","MIA",4,TRUE
+"unc30_pooled","AT2","AT2 proliferating",50,"AAH","normal",0,FALSE
+"unc30_pooled","AT2","AT2 proliferating",50,"AIS","normal",0,FALSE
+"unc30_pooled","AT2","AT2 proliferating",50,"MIA","normal",0,FALSE
+"unc30_pooled","AT2","AT2 proliferating",50,"LUAD","normal",0,FALSE
+"unc30_pooled","AT2","AT2 proliferating",50,"LUAD","AAH",0,FALSE
+"unc30_pooled","AT2","AT2 proliferating",50,"LUAD","AIS",0,FALSE
+"unc30_pooled","AT2","AT2 proliferating",50,"LUAD","MIA",0,FALSE
+"unc30_pooled","AT2","__broad__",50,"AAH","normal",8,TRUE
+"unc30_pooled","AT2","__broad__",50,"AIS","normal",12,TRUE
+"unc30_pooled","AT2","__broad__",50,"MIA","normal",4,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","normal",23,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AAH",8,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AIS",12,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","MIA",4,TRUE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"AAH","normal",1,FALSE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"AIS","normal",2,FALSE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"MIA","normal",0,FALSE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","normal",3,TRUE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AAH",1,FALSE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS",4,TRUE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","MIA",1,FALSE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"AAH","normal",8,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"AIS","normal",11,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"MIA","normal",4,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal",22,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH",8,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS",11,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA",4,TRUE
+"unc30_pooled","fibroblasts","Myofibroblasts",50,"AAH","normal",0,FALSE
+"unc30_pooled","fibroblasts","Myofibroblasts",50,"AIS","normal",0,FALSE
+"unc30_pooled","fibroblasts","Myofibroblasts",50,"MIA","normal",1,FALSE
+"unc30_pooled","fibroblasts","Myofibroblasts",50,"LUAD","normal",1,FALSE
+"unc30_pooled","fibroblasts","Myofibroblasts",50,"LUAD","AAH",0,FALSE
+"unc30_pooled","fibroblasts","Myofibroblasts",50,"LUAD","AIS",0,FALSE
+"unc30_pooled","fibroblasts","Myofibroblasts",50,"LUAD","MIA",1,FALSE
+"unc30_pooled","fibroblasts","Peribronchial fibroblasts",50,"AAH","normal",0,FALSE
+"unc30_pooled","fibroblasts","Peribronchial fibroblasts",50,"AIS","normal",0,FALSE
+"unc30_pooled","fibroblasts","Peribronchial fibroblasts",50,"MIA","normal",0,FALSE
+"unc30_pooled","fibroblasts","Peribronchial fibroblasts",50,"LUAD","normal",0,FALSE
+"unc30_pooled","fibroblasts","Peribronchial fibroblasts",50,"LUAD","AAH",0,FALSE
+"unc30_pooled","fibroblasts","Peribronchial fibroblasts",50,"LUAD","AIS",0,FALSE
+"unc30_pooled","fibroblasts","Peribronchial fibroblasts",50,"LUAD","MIA",0,FALSE
+"unc30_pooled","fibroblasts","__broad__",50,"AAH","normal",8,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"AIS","normal",11,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"MIA","normal",4,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","normal",22,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","AAH",8,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","AIS",11,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","MIA",4,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AAH","normal",4,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AIS","normal",6,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"MIA","normal",1,FALSE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal",12,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH",6,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS",5,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","MIA",2,FALSE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"AAH","normal",2,FALSE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"AIS","normal",2,FALSE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"MIA","normal",0,FALSE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","normal",5,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","AAH",2,FALSE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","AIS",3,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","MIA",1,FALSE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"AAH","normal",2,FALSE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"AIS","normal",2,FALSE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"MIA","normal",0,FALSE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","normal",3,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AAH",3,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AIS",4,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","MIA",0,FALSE
+"unc30_pooled","macrophages","Alveolar Mph proliferating",50,"AAH","normal",0,FALSE
+"unc30_pooled","macrophages","Alveolar Mph proliferating",50,"AIS","normal",0,FALSE
+"unc30_pooled","macrophages","Alveolar Mph proliferating",50,"MIA","normal",0,FALSE
+"unc30_pooled","macrophages","Alveolar Mph proliferating",50,"LUAD","normal",0,FALSE
+"unc30_pooled","macrophages","Alveolar Mph proliferating",50,"LUAD","AAH",0,FALSE
+"unc30_pooled","macrophages","Alveolar Mph proliferating",50,"LUAD","AIS",0,FALSE
+"unc30_pooled","macrophages","Alveolar Mph proliferating",50,"LUAD","MIA",0,FALSE
+"unc30_pooled","macrophages","__broad__",50,"AAH","normal",5,TRUE
+"unc30_pooled","macrophages","__broad__",50,"AIS","normal",9,TRUE
+"unc30_pooled","macrophages","__broad__",50,"MIA","normal",2,FALSE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","normal",16,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AAH",8,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AIS",11,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","MIA",4,TRUE
+"unc20_largest_library","AT2","AT2",50,"AAH","normal",8,TRUE
+"unc20_largest_library","AT2","AT2",50,"AIS","normal",12,TRUE
+"unc20_largest_library","AT2","AT2",50,"MIA","normal",4,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","normal",23,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AAH",8,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AIS",12,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","MIA",4,TRUE
+"unc20_largest_library","AT2","AT2 proliferating",50,"AAH","normal",0,FALSE
+"unc20_largest_library","AT2","AT2 proliferating",50,"AIS","normal",0,FALSE
+"unc20_largest_library","AT2","AT2 proliferating",50,"MIA","normal",0,FALSE
+"unc20_largest_library","AT2","AT2 proliferating",50,"LUAD","normal",0,FALSE
+"unc20_largest_library","AT2","AT2 proliferating",50,"LUAD","AAH",0,FALSE
+"unc20_largest_library","AT2","AT2 proliferating",50,"LUAD","AIS",0,FALSE
+"unc20_largest_library","AT2","AT2 proliferating",50,"LUAD","MIA",0,FALSE
+"unc20_largest_library","AT2","__broad__",50,"AAH","normal",8,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AIS","normal",12,TRUE
+"unc20_largest_library","AT2","__broad__",50,"MIA","normal",4,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","normal",23,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AAH",8,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AIS",12,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","MIA",4,TRUE
+"unc20_largest_library","fibroblasts","Adventitial fibroblasts",50,"AAH","normal",0,FALSE
+"unc20_largest_library","fibroblasts","Adventitial fibroblasts",50,"AIS","normal",0,FALSE
+"unc20_largest_library","fibroblasts","Adventitial fibroblasts",50,"MIA","normal",0,FALSE
+"unc20_largest_library","fibroblasts","Adventitial fibroblasts",50,"LUAD","normal",2,FALSE
+"unc20_largest_library","fibroblasts","Adventitial fibroblasts",50,"LUAD","AAH",0,FALSE
+"unc20_largest_library","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS",3,TRUE
+"unc20_largest_library","fibroblasts","Adventitial fibroblasts",50,"LUAD","MIA",0,FALSE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"AAH","normal",8,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"AIS","normal",11,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"MIA","normal",4,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal",22,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH",8,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS",11,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA",4,TRUE
+"unc20_largest_library","fibroblasts","Myofibroblasts",50,"AAH","normal",0,FALSE
+"unc20_largest_library","fibroblasts","Myofibroblasts",50,"AIS","normal",0,FALSE
+"unc20_largest_library","fibroblasts","Myofibroblasts",50,"MIA","normal",0,FALSE
+"unc20_largest_library","fibroblasts","Myofibroblasts",50,"LUAD","normal",0,FALSE
+"unc20_largest_library","fibroblasts","Myofibroblasts",50,"LUAD","AAH",0,FALSE
+"unc20_largest_library","fibroblasts","Myofibroblasts",50,"LUAD","AIS",0,FALSE
+"unc20_largest_library","fibroblasts","Myofibroblasts",50,"LUAD","MIA",1,FALSE
+"unc20_largest_library","fibroblasts","Peribronchial fibroblasts",50,"AAH","normal",0,FALSE
+"unc20_largest_library","fibroblasts","Peribronchial fibroblasts",50,"AIS","normal",0,FALSE
+"unc20_largest_library","fibroblasts","Peribronchial fibroblasts",50,"MIA","normal",0,FALSE
+"unc20_largest_library","fibroblasts","Peribronchial fibroblasts",50,"LUAD","normal",0,FALSE
+"unc20_largest_library","fibroblasts","Peribronchial fibroblasts",50,"LUAD","AAH",0,FALSE
+"unc20_largest_library","fibroblasts","Peribronchial fibroblasts",50,"LUAD","AIS",0,FALSE
+"unc20_largest_library","fibroblasts","Peribronchial fibroblasts",50,"LUAD","MIA",0,FALSE
+"unc20_largest_library","fibroblasts","__broad__",50,"AAH","normal",8,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"AIS","normal",11,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"MIA","normal",4,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","normal",22,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","AAH",8,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","AIS",11,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","MIA",4,TRUE
+"unc20_largest_library","macrophages","Monocyte-derived Mph",50,"AAH","normal",0,FALSE
+"unc20_largest_library","macrophages","Monocyte-derived Mph",50,"AIS","normal",0,FALSE
+"unc20_largest_library","macrophages","Monocyte-derived Mph",50,"MIA","normal",0,FALSE
+"unc20_largest_library","macrophages","Monocyte-derived Mph",50,"LUAD","normal",2,FALSE
+"unc20_largest_library","macrophages","Monocyte-derived Mph",50,"LUAD","AAH",0,FALSE
+"unc20_largest_library","macrophages","Monocyte-derived Mph",50,"LUAD","AIS",1,FALSE
+"unc20_largest_library","macrophages","Monocyte-derived Mph",50,"LUAD","MIA",0,FALSE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AAH","normal",3,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AIS","normal",5,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"MIA","normal",1,FALSE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","normal",9,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AAH",5,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AIS",5,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","MIA",2,FALSE
+"unc20_largest_library","macrophages","Interstitial Mph perivascular",50,"AAH","normal",0,FALSE
+"unc20_largest_library","macrophages","Interstitial Mph perivascular",50,"AIS","normal",1,FALSE
+"unc20_largest_library","macrophages","Interstitial Mph perivascular",50,"MIA","normal",0,FALSE
+"unc20_largest_library","macrophages","Interstitial Mph perivascular",50,"LUAD","normal",2,FALSE
+"unc20_largest_library","macrophages","Interstitial Mph perivascular",50,"LUAD","AAH",0,FALSE
+"unc20_largest_library","macrophages","Interstitial Mph perivascular",50,"LUAD","AIS",2,FALSE
+"unc20_largest_library","macrophages","Interstitial Mph perivascular",50,"LUAD","MIA",0,FALSE
+"unc20_largest_library","macrophages","Alveolar Mph proliferating",50,"AAH","normal",0,FALSE
+"unc20_largest_library","macrophages","Alveolar Mph proliferating",50,"AIS","normal",0,FALSE
+"unc20_largest_library","macrophages","Alveolar Mph proliferating",50,"MIA","normal",0,FALSE
+"unc20_largest_library","macrophages","Alveolar Mph proliferating",50,"LUAD","normal",0,FALSE
+"unc20_largest_library","macrophages","Alveolar Mph proliferating",50,"LUAD","AAH",0,FALSE
+"unc20_largest_library","macrophages","Alveolar Mph proliferating",50,"LUAD","AIS",0,FALSE
+"unc20_largest_library","macrophages","Alveolar Mph proliferating",50,"LUAD","MIA",0,FALSE
+"unc20_largest_library","macrophages","__broad__",50,"AAH","normal",5,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"AIS","normal",5,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"MIA","normal",1,FALSE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","normal",12,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AAH",8,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AIS",7,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","MIA",3,TRUE

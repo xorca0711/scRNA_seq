@@ -1,0 +1,10 @@
+cohort,comp,case,reference,n_case,n_reference,eligible
+GSE136831,AT2,IPF,control,3,10,True
+GSE136831,fibroblasts,IPF,control,18,4,True
+GSE136831,macrophages,IPF,control,32,27,True
+GSE135893,AT2,IPF,control,8,6,True
+GSE135893,fibroblasts,IPF,control,7,3,True
+GSE135893,macrophages,IPF,control,12,9,True
+GSE300288,AT2,anti-IL1B,IgG,3,4,True
+GSE300288,fibroblasts,anti-IL1B,IgG,3,4,True
+GSE300288,macrophages,anti-IL1B,IgG,3,4,True

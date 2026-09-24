@@ -18,4 +18,5 @@ Thesis/gate1_03_nabhan_2018/external_feasibility/GSE129605_supplementary_index.h
 
 # Preserve the review branch's exact analysis inputs, scripts and evidence hashes.
 Thesis/gate2_C3_yu_lee_choi_min_2026/** -text whitespace=cr-at-eol
-Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/*_R_session.txt whitespace=cr-at-eol,-blank-at-eol
+Thesis/gate2_C3_yu_lee_choi_min_2026/figures/*.svg whitespace=cr-at-eol,-blank-at-eol
+Thesis/gate2_C3_yu_lee_choi_min_2026/trials/**/*R_session.txt whitespace=cr-at-eol,-blank-at-eol

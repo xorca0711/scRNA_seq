@@ -1,0 +1,35 @@
+{
+  "frozen_utc": "2026-09-24T10:48:20.361995+00:00",
+  "primary": {
+    "resource": "consensus",
+    "cell_floor": 50,
+    "prior_count": 1
+  },
+  "sensitivity": {
+    "resource": "cellchatdb",
+    "cell_floor": [
+      30,
+      100
+    ],
+    "prior_count": [
+      0.5,
+      2
+    ]
+  },
+  "units": "donor; broad and deposited-subtype views are separate, not independent replications",
+  "normalization": "edgeR TMM on all assayed genes within subtype/cohort/floor using all eligible IPF/control donors; log2 CPM with specified scaled prior count",
+  "score": "half sum of minimum ligand-subunit sender logCPM and minimum receptor-subunit receiver logCPM",
+  "contrast": "mean IPF minus mean control, with individual donor values and leave-one-donor-out range",
+  "inference": "descriptive only: disease-label exchangeability and sufficient covariate adjustment not established; no P values or FDR claims",
+  "minimum_donors_per_arm": 3,
+  "cell_floor_limit": "30-cell sensitivity conditional on original cache broad-compartment >=50 cells",
+  "selection": "resource-frozen families; intended source/receiver directions; no effect-based subtype selection",
+  "input_hashes": {
+    "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_ipf_liana\\resource_consensus.csv": "994db466f210f15ed36ee40b7f132cb85f3fa2f0a8def9f793b53f43222b96ab",
+    "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_ipf_liana\\resource_cellchatdb.csv": "6826b17c69c09c512c1f7838653f5992d0e6bd08e90c8f0d18c5b77f15200a80",
+    "analysis\\corrections\\statistics\\cache\\GSE136831_subtypes_counts.csv.gz": "156323f19f46db446fda0ff8bba5bb396093825e08141943a505826521f63951",
+    "analysis\\corrections\\statistics\\cache\\GSE136831_subtypes_units.csv": "2ef9248442d27e4fb1d246e91623798001f1f52653db6b10e856013e29f96a6c",
+    "analysis\\corrections\\statistics\\cache\\GSE135893_subtypes_counts.csv.gz": "b7a902ca81a5f5c3196bd8122dea703205ad5d9d26d86e7f53886e25b46d2f8f",
+    "analysis\\corrections\\statistics\\cache\\GSE135893_subtypes_units.csv": "e3d7f848a64c28dedd5710d6a89eb6c567bf079fec2de629338a593fa071a358"
+  }
+}

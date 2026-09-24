@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "96696b14289b3069242554a45fe0f13195df901179ff4f17577bee5624704017",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_human_compatibility.py",
+    "entrypoint_sha256": "9e0c4c87a0b21cc8dba1381a0dc1d21dfd3d49bacf2366b55289dccf7208ceb3"
+  },
+  "started_utc": "2026-09-24T14:01:16.583127+00:00",
+  "unit": "paired patient; all source/receiver/histology combinations must be present",
+  "inference": "descriptive mean paired change and leave-one-patient-out range; no cell-level P values",
+  "contrasts": 11750,
+  "primary_contrasts": 1080,
+  "validation": "each primary paired effect and omission range independently reconstructed",
+  "updated_utc": "2026-09-24T14:04:11.451341+00:00",
+  "elapsed_seconds": 174.9
+}

@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "stage": "exact_component_input_ready",
+  "pid": 27072,
+  "started_utc": "2026-09-24T11:15:07.520613+00:00",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracked_changes_present": false,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_full_source_panels.py",
+    "entrypoint_sha256": "5fd3aba5121bfea14b3c7f50fab9f19e3aa8844f3dab602003079c88c0738c3d"
+  },
+  "entries_read": 338061955,
+  "entries_total": 338061955,
+  "elapsed_seconds": 347.5,
+  "total_counts": 1167461082,
+  "cells": 220213,
+  "panel_genes": 147,
+  "count_parity": "passed",
+  "output_sha256": "d7c34d64a023b0640b7656c7a807007799ba1f443f0ad1feadf3f98b1d4545de",
+  "updated_utc": "2026-09-24T11:21:01.673488+00:00"
+}

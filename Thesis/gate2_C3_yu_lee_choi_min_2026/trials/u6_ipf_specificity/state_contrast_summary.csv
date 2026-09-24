@@ -1,0 +1,181 @@
+cohort,case,reference,scope,cell_floor,prior_count,module,n_paired_donors,eligible,mean_difference,positive_donors,loo_min,loo_max,reason
+GSE136831,Aberrant_Basaloid,ATII,primary,30,1.0,ADI_published_holdout,1,False,0.01388783266892002,1.0,,,measured_with_pair_count_gate
+GSE136831,Aberrant_Basaloid,ATII,primary,30,1.0,AT1_published_holdout,1,False,0.30478343343582015,1.0,,,measured_with_pair_count_gate
+GSE136831,Aberrant_Basaloid,ATII,primary,30,1.0,AT2_published_holdout,1,False,-0.5005397217885301,0.0,,,measured_with_pair_count_gate
+GSE136831,Aberrant_Basaloid,ATII,primary,30,1.0,HALLMARK_HYPOXIA,1,False,0.53176073976935,1.0,,,measured_with_pair_count_gate
+GSE136831,Aberrant_Basaloid,ATII,primary,30,1.0,HALLMARK_INFLAMMATORY_RESPONSE,1,False,0.3576557340513302,1.0,,,measured_with_pair_count_gate
+GSE136831,Aberrant_Basaloid,ATII,primary,30,1.0,HALLMARK_P53_PATHWAY,1,False,0.27069942036670014,1.0,,,measured_with_pair_count_gate
+GSE136831,Aberrant_Basaloid,ATII,primary,30,1.0,HPCS_author_top100,1,False,1.1303495037718703,1.0,,,measured_with_pair_count_gate
+GSE136831,Aberrant_Basaloid,ATII,primary,30,1.0,HPCS_excluding_operational_markers,1,False,1.0967781698813202,1.0,,,measured_with_pair_count_gate
+GSE136831,Aberrant_Basaloid,ATII,primary,30,1.0,HPCS_without_ADI_or_operational_markers,1,False,1.04181802307824,1.0,,,measured_with_pair_count_gate
+GSE136831,Aberrant_Basaloid,ATII,primary,30,1.0,Han_ISR_source_symbols,1,False,-0.22089480537980943,0.0,,,measured_with_pair_count_gate
+GSE136831,Aberrant_Basaloid,ATII,primary,30,1.0,Han_ISR_without_HPCS_ADI_or_operational_markers,1,False,-0.28760094262528035,0.0,,,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,30,1.0,ADI_published_holdout,3,True,0.12028580294122666,3.0,0.05004022894658,0.15750332011307977,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,30,1.0,AT1_published_holdout,3,True,0.42346231505969634,3.0,0.2876868065407798,0.5136075709103647,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,30,1.0,AT2_published_holdout,3,True,-0.6076554086450034,0.0,-0.7339953898761751,-0.53220884319287,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,30,1.0,HALLMARK_HYPOXIA,3,True,0.39726191840802344,3.0,0.22351561824131516,0.5114428175296502,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,30,1.0,HALLMARK_INFLAMMATORY_RESPONSE,3,True,0.23616582714884662,2.0,0.14756997083409495,0.38566662286168496,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,30,1.0,HALLMARK_P53_PATHWAY,3,True,0.34897084609763657,3.0,0.23023810994043004,0.4188863221026198,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,30,1.0,HPCS_author_top100,3,True,0.9733896238352332,3.0,0.8444847823074899,1.0871898900171648,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,30,1.0,HPCS_excluding_operational_markers,3,True,0.9417496241476102,3.0,0.8065666121211952,1.0605762467688402,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,30,1.0,HPCS_without_ADI_or_operational_markers,3,True,0.9151094512696333,3.0,0.783141932221235,1.0389895242390048,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,30,1.0,Han_ISR_source_symbols,3,True,-0.1113903367774333,0.0,-0.12442651607644484,-0.10333105049164981,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,30,1.0,Han_ISR_without_HPCS_ADI_or_operational_markers,3,True,-0.12011743954868666,0.0,-0.16431234856468513,-0.08635777207329487,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,0.5,ADI_published_holdout,3,True,0.12296700867702952,3.0,0.051642447465769514,0.1600401300183094,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,0.5,AT1_published_holdout,3,True,0.4497316352329497,3.0,0.3079254968894847,0.5426962375073447,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,0.5,AT2_published_holdout,3,True,-0.6293665084958168,0.0,-0.7805178860410402,-0.5381004923993351,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,0.5,HALLMARK_HYPOXIA,3,True,0.45981353630024674,3.0,0.24121590704864015,0.5917932979308351,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,0.5,HALLMARK_INFLAMMATORY_RESPONSE,3,True,0.27436496724671344,2.0,0.18093711006085522,0.45993727649515004,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,0.5,HALLMARK_P53_PATHWAY,3,True,0.38453618161586994,3.0,0.25042716667029996,0.46004807221155986,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,0.5,HPCS_author_top100,3,True,1.08057499160111,3.0,0.9284958769054399,1.2173570683875452,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,0.5,HPCS_excluding_operational_markers,3,True,1.0448284425319032,3.0,0.8853017283462199,1.1874625321234251,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,0.5,HPCS_without_ADI_or_operational_markers,3,True,1.0248470064296735,3.0,0.8668952913793202,1.17421087173626,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,0.5,Han_ISR_source_symbols,3,True,-0.1039145114588466,0.0,-0.11008360132280992,-0.09438395080488982,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,0.5,Han_ISR_without_HPCS_ADI_or_operational_markers,3,True,-0.11013920669907999,0.0,-0.14314955676860008,-0.09311037858998983,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,1.0,ADI_published_holdout,3,True,0.12140230070400963,3.0,0.05065667561720977,0.15872668344342467,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,1.0,AT1_published_holdout,3,True,0.43300667447380964,3.0,0.2952930644865046,0.5239220515542495,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,1.0,AT2_published_holdout,3,True,-0.6153360856804463,0.0,-0.7491299816716244,-0.5347601481879196,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,1.0,HALLMARK_HYPOXIA,3,True,0.4193897521571765,3.0,0.23192623634798482,0.5394603054276448,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,1.0,HALLMARK_INFLAMMATORY_RESPONSE,3,True,0.2505368930043133,2.0,0.15852685298463487,0.41146740929148007,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,1.0,HALLMARK_P53_PATHWAY,3,True,0.3616480549057132,3.0,0.23805640455399013,0.43352388009223475,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,1.0,HPCS_author_top100,3,True,1.0123893905494297,3.0,0.8762356255522898,1.1336422472196597,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,1.0,HPCS_excluding_operational_markers,3,True,0.9790039793028869,3.0,0.8361428432942601,1.1055835795886853,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,1.0,HPCS_without_ADI_or_operational_markers,3,True,0.9547342648627098,3.0,0.814574852877725,1.0869188747715197,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,1.0,Han_ISR_source_symbols,3,True,-0.10897711641329681,0.0,-0.11936302802081533,-0.10269983061135513,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,1.0,Han_ISR_without_HPCS_ADI_or_operational_markers,3,True,-0.11679540793399006,0.0,-0.15800573521802508,-0.0876113174546651,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,2.0,ADI_published_holdout,3,True,0.11885717218263991,3.0,0.049296232587644706,0.15578006152504997,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,2.0,AT1_published_holdout,3,True,0.41304436247597653,3.0,0.2792251134778647,0.5024998139227348,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,2.0,AT2_published_holdout,3,True,-0.5992309983242468,0.0,-0.7189542378881151,-0.5287105013206603,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,2.0,HALLMARK_HYPOXIA,3,True,0.3740042947098334,3.0,0.21274700317007023,0.4824367760949899,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,2.0,HALLMARK_INFLAMMATORY_RESPONSE,3,True,0.22042526428134682,2.0,0.13667066450608512,0.3593612898889602,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,2.0,HALLMARK_P53_PATHWAY,3,True,0.3355178806106001,3.0,0.22140610420099538,0.40340795436936006,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,2.0,HPCS_author_top100,3,True,0.9308798934095299,3.0,0.8088622134680348,1.037628319577945,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,2.0,HPCS_excluding_operational_markers,3,True,0.9013746447483099,3.0,0.7735342940237198,1.0128342089473699,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,2.0,HPCS_without_ADI_or_operational_markers,3,True,0.8722216823860731,3.0,0.7480828493317548,0.9882017076604397,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,2.0,Han_ISR_source_symbols,3,True,-0.11350942382012945,0.0,-0.12853184459223943,-0.10239965748075441,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,50,2.0,Han_ISR_without_HPCS_ADI_or_operational_markers,3,True,-0.1231964621943032,0.0,-0.16949854596386493,-0.08602044568602496,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,100,1.0,ADI_published_holdout,2,False,0.13690919942359026,2.0,0.06004769572006019,0.21377070312712032,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,100,1.0,AT1_published_holdout,2,False,0.5126668211097098,2.0,0.3563960941381703,0.6689375480812494,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,100,1.0,AT2_published_holdout,2,False,-0.5817811765846499,0.0,-0.7777025719856496,-0.38585978118365016,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,100,1.0,HALLMARK_HYPOXIA,2,False,0.4934597531061298,2.0,0.19617697874848972,0.7907425274637698,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,100,1.0,HALLMARK_INFLAMMATORY_RESPONSE,2,False,0.15500392578049504,1.0,-0.07055131412310978,0.38055916568409986,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,100,1.0,HALLMARK_P53_PATHWAY,2,False,0.40664884918987987,2.0,0.23542402167240972,0.57787367670735,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,100,1.0,HPCS_author_top100,2,False,1.0370783487407302,2.0,0.79579245907339,1.2783642384080705,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,100,1.0,HPCS_excluding_operational_markers,2,False,1.004162119671495,2.0,0.7503683650469504,1.2579558742960395,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,100,1.0,HPCS_without_ADI_or_operational_markers,2,False,0.9733767426918152,2.0,0.7155859171373002,1.2311675682463301,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,100,1.0,Han_ISR_source_symbols,2,False,-0.11638874186147019,0.0,-0.15295191748545012,-0.07982556623749026,measured_with_pair_count_gate
+GSE135893,KRT5-/KRT17+,AT2,primary,100,1.0,Han_ISR_without_HPCS_ADI_or_operational_markers,2,False,-0.11723010154367008,0.0,-0.2080887313817099,-0.026371471705630256,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,30,1.0,ADI_published_holdout,1,False,0.08199537159291914,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,30,1.0,AT1_published_holdout,1,False,0.4204245029062097,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,30,1.0,AT2_published_holdout,1,False,-0.2856068999625805,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,30,1.0,HALLMARK_HYPOXIA,1,False,0.0017950767447700855,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,30,1.0,HALLMARK_INFLAMMATORY_RESPONSE,1,False,-0.12705309597700998,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,30,1.0,HALLMARK_P53_PATHWAY,1,False,-0.011294574138540625,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,30,1.0,HPCS_author_top100,1,False,0.12104626105030025,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,30,1.0,HPCS_excluding_operational_markers,1,False,0.10402226144922011,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,30,1.0,HPCS_without_ADI_or_operational_markers,1,False,0.09876020330549018,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,30,1.0,Han_ISR_source_symbols,1,False,-0.29279362272251985,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,30,1.0,Han_ISR_without_HPCS_ADI_or_operational_markers,1,False,-0.28566515100125,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,0.5,ADI_published_holdout,1,False,0.08440919233150979,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,0.5,AT1_published_holdout,1,False,0.4341528187887702,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,0.5,AT2_published_holdout,1,False,-0.28942393309347025,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,0.5,HALLMARK_HYPOXIA,1,False,0.01694956287819016,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,0.5,HALLMARK_INFLAMMATORY_RESPONSE,1,False,-0.1666060411132,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,0.5,HALLMARK_P53_PATHWAY,1,False,0.0011637208974200064,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,0.5,HPCS_author_top100,1,False,0.13978810912326978,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,0.5,HPCS_excluding_operational_markers,1,False,0.11853957514230018,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,0.5,HPCS_without_ADI_or_operational_markers,1,False,0.11413625689147011,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,0.5,Han_ISR_source_symbols,1,False,-0.3100126262589904,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,0.5,Han_ISR_without_HPCS_ADI_or_operational_markers,1,False,-0.30536903212383004,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,1.0,ADI_published_holdout,1,False,0.08286696860038045,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,1.0,AT1_published_holdout,1,False,0.42615835041373007,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,1.0,AT2_published_holdout,1,False,-0.2866308778929598,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,1.0,HALLMARK_HYPOXIA,1,False,0.007854340736979992,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,1.0,HALLMARK_INFLAMMATORY_RESPONSE,1,False,-0.13854676221866002,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,1.0,HALLMARK_P53_PATHWAY,1,False,-0.006808618576890524,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,1.0,HPCS_author_top100,1,False,0.1279423210021,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,1.0,HPCS_excluding_operational_markers,1,False,0.10923934755889997,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,1.0,HPCS_without_ADI_or_operational_markers,1,False,0.1042733878113502,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,1.0,Han_ISR_source_symbols,1,False,-0.29977154814261997,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,1.0,Han_ISR_without_HPCS_ADI_or_operational_markers,1,False,-0.2936155697022702,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,2.0,ADI_published_holdout,1,False,0.08103729535417958,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,2.0,AT1_published_holdout,1,False,0.41343859270303973,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,2.0,AT2_published_holdout,1,False,-0.28479991958544026,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,2.0,HALLMARK_HYPOXIA,1,False,-0.004902212430149877,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,2.0,HALLMARK_INFLAMMATORY_RESPONSE,1,False,-0.11702995858123977,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,2.0,HALLMARK_P53_PATHWAY,1,False,-0.01593122394266011,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,2.0,HPCS_author_top100,1,False,0.11390440546103031,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,2.0,HPCS_excluding_operational_markers,1,False,0.09878374010053026,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,2.0,HPCS_without_ADI_or_operational_markers,1,False,0.09324832689553997,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,2.0,Han_ISR_source_symbols,1,False,-0.2846236608548298,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,50,2.0,Han_ISR_without_HPCS_ADI_or_operational_markers,1,False,-0.2764268153593701,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,100,1.0,ADI_published_holdout,1,False,0.12777574333717023,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,100,1.0,AT1_published_holdout,1,False,0.4725282687421499,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,100,1.0,AT2_published_holdout,1,False,-0.2462899446692397,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,100,1.0,HALLMARK_HYPOXIA,1,False,0.04873293980930038,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,100,1.0,HALLMARK_INFLAMMATORY_RESPONSE,1,False,-0.11690574714145008,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,100,1.0,HALLMARK_P53_PATHWAY,1,False,0.037591633648260014,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,100,1.0,HPCS_author_top100,1,False,0.1708079542762002,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,100,1.0,HPCS_excluding_operational_markers,1,False,0.15125825705023033,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,100,1.0,HPCS_without_ADI_or_operational_markers,1,False,0.14609436510010987,1.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,100,1.0,Han_ISR_source_symbols,1,False,-0.2635583815912299,0.0,,,measured_with_pair_count_gate
+GSE135893,Transitional AT2,AT2,secondary,100,1.0,Han_ISR_without_HPCS_ADI_or_operational_markers,1,False,-0.25874850912772995,0.0,,,measured_with_pair_count_gate
+GSE136831,Aberrant_Basaloid,ATII,primary,30,1.0,DATP_PATS_holdout_panel,1,False,,,,,insufficient_assayed_source_gene_fraction
+GSE136831,Aberrant_Basaloid,ATII,primary,50,0.5,ADI_published_holdout,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,0.5,AT1_published_holdout,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,0.5,AT2_published_holdout,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,0.5,DATP_PATS_holdout_panel,0,False,,,,,insufficient_assayed_source_gene_fraction
+GSE136831,Aberrant_Basaloid,ATII,primary,50,0.5,HALLMARK_HYPOXIA,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,0.5,HALLMARK_INFLAMMATORY_RESPONSE,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,0.5,HALLMARK_P53_PATHWAY,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,0.5,HPCS_author_top100,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,0.5,HPCS_excluding_operational_markers,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,0.5,HPCS_without_ADI_or_operational_markers,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,0.5,Han_ISR_source_symbols,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,0.5,Han_ISR_without_HPCS_ADI_or_operational_markers,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,1.0,ADI_published_holdout,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,1.0,AT1_published_holdout,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,1.0,AT2_published_holdout,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,1.0,DATP_PATS_holdout_panel,0,False,,,,,insufficient_assayed_source_gene_fraction
+GSE136831,Aberrant_Basaloid,ATII,primary,50,1.0,HALLMARK_HYPOXIA,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,1.0,HALLMARK_INFLAMMATORY_RESPONSE,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,1.0,HALLMARK_P53_PATHWAY,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,1.0,HPCS_author_top100,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,1.0,HPCS_excluding_operational_markers,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,1.0,HPCS_without_ADI_or_operational_markers,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,1.0,Han_ISR_source_symbols,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,1.0,Han_ISR_without_HPCS_ADI_or_operational_markers,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,2.0,ADI_published_holdout,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,2.0,AT1_published_holdout,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,2.0,AT2_published_holdout,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,2.0,DATP_PATS_holdout_panel,0,False,,,,,insufficient_assayed_source_gene_fraction
+GSE136831,Aberrant_Basaloid,ATII,primary,50,2.0,HALLMARK_HYPOXIA,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,2.0,HALLMARK_INFLAMMATORY_RESPONSE,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,2.0,HALLMARK_P53_PATHWAY,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,2.0,HPCS_author_top100,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,2.0,HPCS_excluding_operational_markers,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,2.0,HPCS_without_ADI_or_operational_markers,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,2.0,Han_ISR_source_symbols,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,50,2.0,Han_ISR_without_HPCS_ADI_or_operational_markers,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,100,1.0,ADI_published_holdout,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,100,1.0,AT1_published_holdout,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,100,1.0,AT2_published_holdout,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,100,1.0,DATP_PATS_holdout_panel,0,False,,,,,insufficient_assayed_source_gene_fraction
+GSE136831,Aberrant_Basaloid,ATII,primary,100,1.0,HALLMARK_HYPOXIA,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,100,1.0,HALLMARK_INFLAMMATORY_RESPONSE,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,100,1.0,HALLMARK_P53_PATHWAY,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,100,1.0,HPCS_author_top100,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,100,1.0,HPCS_excluding_operational_markers,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,100,1.0,HPCS_without_ADI_or_operational_markers,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,100,1.0,Han_ISR_source_symbols,0,False,,,,,no_complete_same_donor_state_pairs
+GSE136831,Aberrant_Basaloid,ATII,primary,100,1.0,Han_ISR_without_HPCS_ADI_or_operational_markers,0,False,,,,,no_complete_same_donor_state_pairs
+GSE135893,KRT5-/KRT17+,AT2,primary,30,1.0,DATP_PATS_holdout_panel,3,False,,,,,insufficient_assayed_source_gene_fraction
+GSE135893,KRT5-/KRT17+,AT2,primary,50,0.5,DATP_PATS_holdout_panel,3,False,,,,,insufficient_assayed_source_gene_fraction
+GSE135893,KRT5-/KRT17+,AT2,primary,50,1.0,DATP_PATS_holdout_panel,3,False,,,,,insufficient_assayed_source_gene_fraction
+GSE135893,KRT5-/KRT17+,AT2,primary,50,2.0,DATP_PATS_holdout_panel,3,False,,,,,insufficient_assayed_source_gene_fraction
+GSE135893,KRT5-/KRT17+,AT2,primary,100,1.0,DATP_PATS_holdout_panel,2,False,,,,,insufficient_assayed_source_gene_fraction
+GSE135893,Transitional AT2,AT2,secondary,30,1.0,DATP_PATS_holdout_panel,1,False,,,,,insufficient_assayed_source_gene_fraction
+GSE135893,Transitional AT2,AT2,secondary,50,0.5,DATP_PATS_holdout_panel,1,False,,,,,insufficient_assayed_source_gene_fraction
+GSE135893,Transitional AT2,AT2,secondary,50,1.0,DATP_PATS_holdout_panel,1,False,,,,,insufficient_assayed_source_gene_fraction
+GSE135893,Transitional AT2,AT2,secondary,50,2.0,DATP_PATS_holdout_panel,1,False,,,,,insufficient_assayed_source_gene_fraction
+GSE135893,Transitional AT2,AT2,secondary,100,1.0,DATP_PATS_holdout_panel,1,False,,,,,insufficient_assayed_source_gene_fraction

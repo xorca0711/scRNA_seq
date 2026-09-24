@@ -1,0 +1,28 @@
+{
+  "status": "completed_descriptive_contrasts",
+  "started_utc": "2026-09-24T10:48:20.361995+00:00",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracked_changes_present": false,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\w1_ipf_compatibility.py",
+    "entrypoint_sha256": "b9a5109e1030ad7abfa472d50b87090863bdcfcecdf71dfd64eec84ddea0ba60"
+  },
+  "completed_cohorts": [
+    "GSE136831",
+    "GSE135893"
+  ],
+  "elapsed_seconds": 612.22,
+  "primary_contrasts": 277,
+  "sensitivity_and_primary_contrasts": 3285,
+  "outputs": {
+    "contrasts.csv": "a5f4135c66744371ab603a84cef92aa9a21080c4bc9dba75c636e67e04db43a1",
+    "eligibility.csv": "da623481259fb3499be74fe520d47d6390363d262d1be7d1b3b7aef0b5c70acf",
+    "GSE135893_normalization.csv": "b373249d5c8255c91fbec419bc6b6935d60ad9142ff5cbde8ef538f45f8dd4c3",
+    "GSE136831_normalization.csv": "6914a1c8ab4f6e0ab41e83d7d941ec43f66b3a9d702b877f4942cdb32661c7c2",
+    "primary_contrasts.csv": "c7327438463bde7e1835e6cbb4e0e46c5015ce810f7d35187347bf6ecd57738c",
+    "resource_edges.csv": "f79375da173c23273e69e0158eb17d41716e6e13269f35631b6883988801b35b"
+  },
+  "updated_utc": "2026-09-24T10:58:32.797300+00:00"
+}

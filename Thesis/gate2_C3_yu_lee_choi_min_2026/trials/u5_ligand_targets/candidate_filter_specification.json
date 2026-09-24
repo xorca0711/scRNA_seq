@@ -1,0 +1,30 @@
+{
+  "frozen_utc": "2026-09-24T11:37:55.217299+00:00",
+  "script_sha256": "ce82bd11d592a6e91caded35390f56bb3fec2bda7f98f12dc0f0979be412af0d",
+  "scope": "planned ligand family panel; focused fixed triad and all annotated source labels separately",
+  "source_expression": "same IPF donor, >=50 cells in sender and receiver, each ligand/receptor subunit >=10% detection, >=3 donors for a fixed source label",
+  "canonical_requirements": {
+    "IL1A_IL1B": [
+      "IL1R1",
+      "IL1RAP"
+    ],
+    "TGFB1": [
+      "TGFBR1",
+      "TGFBR2"
+    ]
+  },
+  "decoy_receptors_excluded": [
+    "IL1R2",
+    "SIGIRR"
+  ],
+  "nonbiological_labels_excluded": [
+    "multiplet",
+    "doublet",
+    "unknown",
+    "unassigned"
+  ],
+  "target_statistics": "NicheNet v2 prior Pearson; up/down donor DE separately; q<.05 and >=10 mapped genes",
+  "stability": "full target-model refits with one donor removed, then source support rechecked; failed target/unit/source eligibility stays missing",
+  "not_retained_receptor": "unevaluable with targeted extraction, not evidence of biological absence",
+  "interpretation": "descriptive prioritization, not independent validation or causal mediation"
+}

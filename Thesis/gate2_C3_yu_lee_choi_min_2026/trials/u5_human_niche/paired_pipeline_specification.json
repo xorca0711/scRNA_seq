@@ -1,0 +1,23 @@
+{
+  "frozen_utc": "2026-09-24T12:50:58.916375+00:00",
+  "scripts": {
+    "u5_human_aggregate.py": "28e918c5a60423e4dc9746146ec2a196cd1977eec2a4ee53c475abd58a97c1c5",
+    "u5_human_paired_pathways.R": "69b55d6d5033f20271e7962b4dfcaf501cc6d8c663e798a7ccb03a42fcbb6ee1",
+    "u5_human_compatibility.py": "9e0c4c87a0b21cc8dba1381a0dc1d21dfd3d49bacf2366b55289dccf7208ceb3",
+    "u5_human_ligand_refits.R": "f175de49919622e5f51753b8bcb5b73ad731f59ad91253fa773f1cb478936a4e"
+  },
+  "stages": [
+    "all-library aggregation",
+    "paired-patient TMM/voom/CAMERA with global BH across eligible histology/view/set combinations per sensitivity family",
+    "paired descriptive RNA compatibility",
+    "conditional paired target refits"
+  ],
+  "primary": {
+    "uncertainty": 0.2,
+    "library_mode": "pooled",
+    "cell_floor": 50,
+    "correlation": "estimated"
+  },
+  "sensitivity": "one-at-a-time confidence .3, largest-library choice, cell floor 30/100, fixed correlation .01; compatibility prior .5/2",
+  "no_results_based_changes": true
+}

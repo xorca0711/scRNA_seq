@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "pid": 21720,
+  "started_utc": "2026-09-24T12:58:24.558729+00:00",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "88dccae159df7553c076b13aff012ac502747e918bac7a3f4e9b087403b67e27",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u6_ipf_epithelial_pseudobulks.py",
+    "entrypoint_sha256": "80fc5a35e6bcd89bc1a5ef1fbdfc2e7687adef4a9db968f62b7c684c92490d48"
+  },
+  "completed": [
+    "GSE136831",
+    "GSE135893"
+  ],
+  "cohort": "GSE135893",
+  "stage": "stream_full_raw_counts",
+  "elapsed_seconds": 447.0,
+  "updated_utc": "2026-09-24T13:05:51.849803+00:00"
+}

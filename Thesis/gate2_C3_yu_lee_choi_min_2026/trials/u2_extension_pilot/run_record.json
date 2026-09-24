@@ -1,0 +1,142 @@
+{
+  "status": "completed",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracked_changes_present": false,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u2_acquire_extensions.py",
+    "entrypoint_sha256": "503f67e0bc84b52d1dc5d0b798268de4d8ea3db6e2f6254e3904942998e544ce"
+  },
+  "files": [
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237904",
+      "patient": 4,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237904/suppl/GSM9237904_P4_Normal.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot",
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\extension_pilot\\GSM9237904_P4_Normal.raw_counts.mtx.txt.gz",
+      "bytes": 72334136,
+      "sha256": "3d61006c03786fed3dc1524ee5fb27836bddfac1374f39c763a3225e2919a59c",
+      "status": "retrieved"
+    },
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237905",
+      "patient": 4,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237905/suppl/GSM9237905_P4_Normal1.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot",
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\extension_pilot\\GSM9237905_P4_Normal1.raw_counts.mtx.txt.gz",
+      "bytes": 25846783,
+      "sha256": "5f372179fd195f07b964ce7a65beece1b0affd616ad555798430d09f7f0d10f7",
+      "status": "retrieved"
+    },
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237906",
+      "patient": 4,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237906/suppl/GSM9237906_P4_AAH.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot",
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\extension_pilot\\GSM9237906_P4_AAH.raw_counts.mtx.txt.gz",
+      "bytes": 12200113,
+      "sha256": "15216710884844b6223562218e654a4902393aed5ab9024130c95ec97e98b1bc",
+      "status": "retrieved"
+    },
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237907",
+      "patient": 4,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237907/suppl/GSM9237907_P4_AAH1.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot",
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\extension_pilot\\GSM9237907_P4_AAH1.raw_counts.mtx.txt.gz",
+      "bytes": 25202886,
+      "sha256": "d1f4c92746e446773100ec824c55c0ff198626c1fd6868009ae0a6bf840ace10",
+      "status": "retrieved"
+    },
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237912",
+      "patient": 6,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237912/suppl/GSM9237912_P6_Normal.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot",
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\extension_pilot\\GSM9237912_P6_Normal.raw_counts.mtx.txt.gz",
+      "bytes": 3270299,
+      "sha256": "e15fb5efdd42f6f88580d574f25be90432552abe3362cd429c476795e45b9817",
+      "status": "retrieved"
+    },
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237913",
+      "patient": 6,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237913/suppl/GSM9237913_P6_AAH.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot",
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\extension_pilot\\GSM9237913_P6_AAH.raw_counts.mtx.txt.gz",
+      "bytes": 6590555,
+      "sha256": "65e3ddb706ea78d027ff825c022d308ea5d6ee87f40eea70ab9bb753e203bedf",
+      "status": "retrieved"
+    },
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237921",
+      "patient": 9,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237921/suppl/GSM9237921_P9_Normal.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot",
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\extension_pilot\\GSM9237921_P9_Normal.raw_counts.mtx.txt.gz",
+      "bytes": 5561372,
+      "sha256": "7af5ccdd490254af2a1fc17652097ebe8065b89107f16213ce29ed75f3a000ca",
+      "status": "retrieved"
+    },
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237922",
+      "patient": 9,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237922/suppl/GSM9237922_P9_AAH.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot",
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\extension_pilot\\GSM9237922_P9_AAH.raw_counts.mtx.txt.gz",
+      "bytes": 3120256,
+      "sha256": "14cafcbb452b53efc1a16c6daf64fa7fb990fd746119bfe676388d5e2174ed2c",
+      "status": "retrieved"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226168",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226168/suppl/GSM9226168_P1_AAH.tar.gz",
+      "role": "spatial_pair_pilot",
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\extension_pilot\\GSM9226168_P1_AAH.tar.gz",
+      "bytes": 138021514,
+      "sha256": "dd02f883f71a6bf6bc24a47c56046468e55a156e61784d1937294e63dca02a33",
+      "status": "retrieved"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226169",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226169/suppl/GSM9226169_P1_LUAD.tar.gz",
+      "role": "spatial_pair_pilot",
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\extension_pilot\\GSM9226169_P1_LUAD.tar.gz",
+      "bytes": 105855699,
+      "sha256": "56f79bf1ac3f95b5bae32f82cfadd84385cf0578f76172a114958c118169cd84",
+      "status": "retrieved"
+    },
+    {
+      "series": "GSE277777",
+      "gsm": "GSM8529524",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529524/suppl/GSM8529524_IGO14143-slc4a11-traced.h5ad",
+      "role": "annotated_HPCS_feasibility",
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\extension_pilot\\GSM8529524_IGO14143-slc4a11-traced.h5ad",
+      "bytes": 182424090,
+      "sha256": "b94c3fa7c97ec6d51180e1129c292ef6e5c03275f9694ba737d31ceba74f7801",
+      "status": "retrieved"
+    }
+  ],
+  "new_bytes": 580427703,
+  "updated_utc": "2026-09-24T11:03:36.340278+00:00",
+  "elapsed_seconds": 327.3
+}

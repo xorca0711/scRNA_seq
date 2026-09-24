@@ -1,0 +1,17 @@
+{
+  "status": "completed_requires_report_and_checks",
+  "pid": 14144,
+  "started_utc": "2026-09-24T11:45:42.409683+00:00",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "192d4f600e86d182b8d5babdf6a1fa1568bd1fe1f1b8a1bd2876bd6f4d35d744",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u4_run_mouse_pseudobulk.py",
+    "entrypoint_sha256": "c68aa4e98cec8551bf7b8f1574730621095525e65d4dbf3c93b401e6391e21df"
+  },
+  "R_script_sha256": "49ccf9becd668b5512baeb3bcc09149a4a1b423651be003279edd7f49052918c",
+  "resource_spec_sha256": "586f8d051172d77f00302c6b988ab9858a805eeb871e25cd6db8102a5b06cc72",
+  "elapsed_seconds": 65.8,
+  "updated_utc": "2026-09-24T11:46:48.620598+00:00"
+}

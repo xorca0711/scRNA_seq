@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "started_utc": "2026-09-24T11:21:58.146097+00:00",
+  "pid": 26340,
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracked_changes_present": false,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_liana_robustness.py",
+    "entrypoint_sha256": "fb4e788cb086a351e1dfc75c9eec18d4269f1fb809f0f8393212844219211004"
+  },
+  "completed_calls": 19,
+  "config": "all_cells_primary",
+  "donor": "VUHD67",
+  "elapsed_seconds": 7.7,
+  "error": "IndexError: index 0 is out of bounds for axis 0 with size 0",
+  "updated_utc": "2026-09-24T11:22:06.223557+00:00"
+}

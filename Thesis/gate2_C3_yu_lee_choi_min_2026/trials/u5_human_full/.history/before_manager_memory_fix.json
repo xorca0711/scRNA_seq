@@ -1,0 +1,23 @@
+{
+  "status": "running",
+  "pid": 7240,
+  "started_utc": "2026-09-24T12:07:14.668304+00:00",
+  "stage": "stream_full_counts",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "12b2e6352766b57b5c41df3d183dfd67ac5aaa1a32f5ef3325c24a0b9a0a2c5c",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_human_full_run.py",
+    "entrypoint_sha256": "dd942f5ac22cafa9a3c7644e3dda72ff0ae8eb84334b559c32b2544f7f5e1335"
+  },
+  "completed_files": [
+    "GSM9237901",
+    "GSM9237902"
+  ],
+  "current_gsm": "GSM9237903",
+  "current_qc_cells": 3131,
+  "completed_libraries": 2,
+  "qc_cells_total": 4320,
+  "elapsed_seconds": 61.5
+}

@@ -1,0 +1,12 @@
+{
+  "cohort": "GSE135893",
+  "source_hashes": {
+    "raw_data\\GSE135893\\GSE135893_IPF_metadata.csv.gz": "5c67b3717375859aafc4463024847cf30d7af7bb9d5f4ad9a5364ee6d7726bf5",
+    "raw_data\\GSE135893\\GSE135893_genes.tsv.gz": "7e8612e72f033ef214de101bb782ab1cb60b8c887be2d3e8a0d637de067b0233",
+    "raw_data\\GSE135893\\GSE135893_barcodes.tsv.gz": "37a9a98a95d59bb4333c8181c14bb2b384701e6fda1c409e79f3e41c681430d4",
+    "raw_data\\GSE135893\\GSE135893_matrix.mtx.gz": "036987d06ed9625a71f5e5be0717c2598e914a6c9cad0628f61a8ebb66e695a6"
+  },
+  "matrix_entries": 338061955,
+  "units": 153,
+  "count_parity": "all epithelial donor/label full-library totals match independent prior stream"
+}

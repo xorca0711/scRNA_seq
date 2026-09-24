@@ -1,0 +1,417 @@
+patient,histology,label,uncertainty_cutoff,cells
+4,AAH,AT0,0.2,5
+4,AAH,AT1,0.2,894
+4,AAH,AT2,0.2,3036
+4,AAH,AT2 proliferating,0.2,12
+4,AAH,Adventitial fibroblasts,0.2,57
+4,AAH,Alveolar fibroblasts,0.2,1446
+4,AAH,Alveolar macrophages,0.2,502
+4,AAH,B cells,0.2,18
+4,AAH,Basal resting,0.2,7
+4,AAH,CD4 T cells,0.2,381
+4,AAH,CD8 T cells,0.2,353
+4,AAH,Classical monocytes,0.2,16
+4,AAH,Club (non-nasal),0.2,1
+4,AAH,EC aerocyte capillary,0.2,103
+4,AAH,EC arterial,0.2,100
+4,AAH,EC general capillary,0.2,48
+4,AAH,EC venous pulmonary,0.2,120
+4,AAH,EC venous systemic,0.2,2
+4,AAH,Goblet (bronchial),0.2,1
+4,AAH,Goblet (nasal),0.2,3
+4,AAH,Interstitial Mph perivascular,0.2,71
+4,AAH,Lymphatic EC differentiating,0.2,60
+4,AAH,Mast cells,0.2,246
+4,AAH,Mesothelium,0.2,1
+4,AAH,Migratory DCs,0.2,26
+4,AAH,Monocyte-derived Mph,0.2,46
+4,AAH,Multiciliated (non-nasal),0.2,53
+4,AAH,Myofibroblasts,0.2,4
+4,AAH,NK cells,0.2,61
+4,AAH,Non-classical monocytes,0.2,42
+4,AAH,Peribronchial fibroblasts,0.2,16
+4,AAH,Pericytes,0.2,37
+4,AAH,Plasma cells,0.2,139
+4,AAH,Plasmacytoid DCs,0.2,36
+4,AAH,Smooth muscle,0.2,36
+4,AAH,T cells proliferating,0.2,21
+4,AAH,pre-TB secretory,0.2,2
+4,normal,AT0,0.2,59
+4,normal,AT1,0.2,2362
+4,normal,AT2,0.2,7038
+4,normal,AT2 proliferating,0.2,12
+4,normal,Adventitial fibroblasts,0.2,164
+4,normal,Alveolar Mph proliferating,0.2,2
+4,normal,Alveolar fibroblasts,0.2,3706
+4,normal,Alveolar macrophages,0.2,1771
+4,normal,B cells,0.2,82
+4,normal,Basal resting,0.2,62
+4,normal,CD4 T cells,0.2,1222
+4,normal,CD8 T cells,0.2,1443
+4,normal,Classical monocytes,0.2,65
+4,normal,EC aerocyte capillary,0.2,389
+4,normal,EC arterial,0.2,243
+4,normal,EC general capillary,0.2,182
+4,normal,EC venous pulmonary,0.2,351
+4,normal,EC venous systemic,0.2,4
+4,normal,Goblet (nasal),0.2,6
+4,normal,Goblet (subsegmental),0.2,2
+4,normal,Interstitial Mph perivascular,0.2,139
+4,normal,Lymphatic EC differentiating,0.2,180
+4,normal,Mast cells,0.2,615
+4,normal,Migratory DCs,0.2,36
+4,normal,Monocyte-derived Mph,0.2,114
+4,normal,Multiciliated (non-nasal),0.2,286
+4,normal,Myofibroblasts,0.2,6
+4,normal,NK cells,0.2,179
+4,normal,Neuroendocrine,0.2,3
+4,normal,Non-classical monocytes,0.2,118
+4,normal,Peribronchial fibroblasts,0.2,10
+4,normal,Pericytes,0.2,144
+4,normal,Plasma cells,0.2,603
+4,normal,Plasmacytoid DCs,0.2,54
+4,normal,SM activated stress response,0.2,2
+4,normal,Smooth muscle,0.2,55
+4,normal,Suprabasal,0.2,1
+4,normal,T cells proliferating,0.2,24
+4,normal,pre-TB secretory,0.2,16
+6,AAH,AT0,0.2,1
+6,AAH,AT1,0.2,218
+6,AAH,AT2,0.2,414
+6,AAH,Adventitial fibroblasts,0.2,34
+6,AAH,Alveolar fibroblasts,0.2,247
+6,AAH,Alveolar macrophages,0.2,77
+6,AAH,B cells,0.2,1
+6,AAH,Basal resting,0.2,37
+6,AAH,CD4 T cells,0.2,20
+6,AAH,CD8 T cells,0.2,34
+6,AAH,Classical monocytes,0.2,10
+6,AAH,Club (non-nasal),0.2,3
+6,AAH,EC aerocyte capillary,0.2,62
+6,AAH,EC arterial,0.2,26
+6,AAH,EC general capillary,0.2,45
+6,AAH,EC venous pulmonary,0.2,13
+6,AAH,Goblet (bronchial),0.2,1
+6,AAH,Goblet (nasal),0.2,3
+6,AAH,Interstitial Mph perivascular,0.2,9
+6,AAH,Lymphatic EC differentiating,0.2,10
+6,AAH,Mast cells,0.2,13
+6,AAH,Multiciliated (non-nasal),0.2,174
+6,AAH,Myofibroblasts,0.2,1
+6,AAH,NK cells,0.2,17
+6,AAH,Neuroendocrine,0.2,1
+6,AAH,Non-classical monocytes,0.2,10
+6,AAH,Pericytes,0.2,17
+6,AAH,Plasma cells,0.2,26
+6,AAH,Plasmacytoid DCs,0.2,1
+6,AAH,SMG mucous,0.2,5
+6,AAH,SMG serous (bronchial),0.2,6
+6,AAH,Smooth muscle,0.2,30
+6,AAH,Suprabasal,0.2,2
+6,AAH,pre-TB secretory,0.2,10
+6,normal,AT0,0.2,1
+6,normal,AT1,0.2,92
+6,normal,AT2,0.2,142
+6,normal,Adventitial fibroblasts,0.2,19
+6,normal,Alveolar fibroblasts,0.2,117
+6,normal,Alveolar macrophages,0.2,77
+6,normal,B cells,0.2,7
+6,normal,Basal resting,0.2,15
+6,normal,CD4 T cells,0.2,21
+6,normal,CD8 T cells,0.2,17
+6,normal,Classical monocytes,0.2,7
+6,normal,EC aerocyte capillary,0.2,23
+6,normal,EC arterial,0.2,17
+6,normal,EC general capillary,0.2,15
+6,normal,EC venous pulmonary,0.2,14
+6,normal,Goblet (nasal),0.2,1
+6,normal,Interstitial Mph perivascular,0.2,13
+6,normal,Lymphatic EC differentiating,0.2,16
+6,normal,Mast cells,0.2,14
+6,normal,Monocyte-derived Mph,0.2,4
+6,normal,Multiciliated (non-nasal),0.2,36
+6,normal,NK cells,0.2,12
+6,normal,Non-classical monocytes,0.2,7
+6,normal,Pericytes,0.2,13
+6,normal,Plasma cells,0.2,13
+6,normal,Plasmacytoid DCs,0.2,1
+6,normal,SM activated stress response,0.2,2
+6,normal,SMG mucous,0.2,3
+6,normal,SMG serous (bronchial),0.2,2
+6,normal,Smooth muscle,0.2,12
+6,normal,Suprabasal,0.2,1
+6,normal,pre-TB secretory,0.2,2
+9,AAH,AT0,0.2,2
+9,AAH,AT1,0.2,123
+9,AAH,AT2,0.2,220
+9,AAH,Adventitial fibroblasts,0.2,1
+9,AAH,Alveolar fibroblasts,0.2,136
+9,AAH,Alveolar macrophages,0.2,55
+9,AAH,B cells,0.2,3
+9,AAH,Basal resting,0.2,1
+9,AAH,CD4 T cells,0.2,24
+9,AAH,CD8 T cells,0.2,31
+9,AAH,Classical monocytes,0.2,4
+9,AAH,EC aerocyte capillary,0.2,21
+9,AAH,EC arterial,0.2,50
+9,AAH,EC general capillary,0.2,14
+9,AAH,EC venous pulmonary,0.2,18
+9,AAH,Interstitial Mph perivascular,0.2,3
+9,AAH,Lymphatic EC differentiating,0.2,7
+9,AAH,Mast cells,0.2,12
+9,AAH,Monocyte-derived Mph,0.2,2
+9,AAH,Multiciliated (non-nasal),0.2,16
+9,AAH,Myofibroblasts,0.2,2
+9,AAH,NK cells,0.2,13
+9,AAH,Non-classical monocytes,0.2,5
+9,AAH,Pericytes,0.2,12
+9,AAH,Plasma cells,0.2,6
+9,AAH,Smooth muscle,0.2,5
+9,AAH,pre-TB secretory,0.2,1
+9,normal,AT1,0.2,131
+9,normal,AT2,0.2,279
+9,normal,Adventitial fibroblasts,0.2,22
+9,normal,Alveolar fibroblasts,0.2,221
+9,normal,Alveolar macrophages,0.2,33
+9,normal,B cells,0.2,26
+9,normal,Basal resting,0.2,25
+9,normal,CD4 T cells,0.2,65
+9,normal,CD8 T cells,0.2,56
+9,normal,Classical monocytes,0.2,15
+9,normal,EC aerocyte capillary,0.2,70
+9,normal,EC arterial,0.2,52
+9,normal,EC general capillary,0.2,33
+9,normal,EC venous pulmonary,0.2,29
+9,normal,Goblet (bronchial),0.2,2
+9,normal,Goblet (nasal),0.2,2
+9,normal,Interstitial Mph perivascular,0.2,6
+9,normal,Lymphatic EC differentiating,0.2,21
+9,normal,Mast cells,0.2,12
+9,normal,Monocyte-derived Mph,0.2,1
+9,normal,Multiciliated (non-nasal),0.2,200
+9,normal,Myofibroblasts,0.2,3
+9,normal,NK cells,0.2,54
+9,normal,Neuroendocrine,0.2,1
+9,normal,Non-classical monocytes,0.2,22
+9,normal,Pericytes,0.2,18
+9,normal,Plasma cells,0.2,17
+9,normal,Plasmacytoid DCs,0.2,3
+9,normal,SMG mucous,0.2,1
+9,normal,SMG serous (bronchial),0.2,7
+9,normal,Smooth muscle,0.2,11
+9,normal,pre-TB secretory,0.2,8
+4,AAH,AT0,0.3,10
+4,AAH,AT1,0.3,956
+4,AAH,AT2,0.3,3291
+4,AAH,AT2 proliferating,0.3,17
+4,AAH,Adventitial fibroblasts,0.3,129
+4,AAH,Alveolar fibroblasts,0.3,1593
+4,AAH,Alveolar macrophages,0.3,640
+4,AAH,B cells,0.3,21
+4,AAH,Basal resting,0.3,8
+4,AAH,CD4 T cells,0.3,563
+4,AAH,CD8 T cells,0.3,623
+4,AAH,Classical monocytes,0.3,24
+4,AAH,Club (non-nasal),0.3,1
+4,AAH,DC2,0.3,1
+4,AAH,EC aerocyte capillary,0.3,114
+4,AAH,EC arterial,0.3,116
+4,AAH,EC general capillary,0.3,61
+4,AAH,EC venous pulmonary,0.3,141
+4,AAH,EC venous systemic,0.3,3
+4,AAH,Goblet (bronchial),0.3,1
+4,AAH,Goblet (nasal),0.3,5
+4,AAH,Interstitial Mph perivascular,0.3,128
+4,AAH,Lymphatic EC differentiating,0.3,64
+4,AAH,Mast cells,0.3,252
+4,AAH,Mesothelium,0.3,2
+4,AAH,Migratory DCs,0.3,33
+4,AAH,Monocyte-derived Mph,0.3,89
+4,AAH,Multiciliated (non-nasal),0.3,56
+4,AAH,Myofibroblasts,0.3,9
+4,AAH,NK cells,0.3,91
+4,AAH,Non-classical monocytes,0.3,49
+4,AAH,Peribronchial fibroblasts,0.3,25
+4,AAH,Pericytes,0.3,45
+4,AAH,Plasma cells,0.3,148
+4,AAH,Plasmacytoid DCs,0.3,36
+4,AAH,SM activated stress response,0.3,1
+4,AAH,Smooth muscle,0.3,39
+4,AAH,T cells proliferating,0.3,35
+4,AAH,pre-TB secretory,0.3,4
+4,normal,AT0,0.3,104
+4,normal,AT1,0.3,2535
+4,normal,AT2,0.3,7552
+4,normal,AT2 proliferating,0.3,15
+4,normal,Adventitial fibroblasts,0.3,289
+4,normal,Alveolar Mph proliferating,0.3,2
+4,normal,Alveolar fibroblasts,0.3,4160
+4,normal,Alveolar macrophages,0.3,2188
+4,normal,B cells,0.3,91
+4,normal,Basal resting,0.3,81
+4,normal,CD4 T cells,0.3,1839
+4,normal,CD8 T cells,0.3,2215
+4,normal,Classical monocytes,0.3,88
+4,normal,DC2,0.3,2
+4,normal,Deuterosomal,0.3,1
+4,normal,EC aerocyte capillary,0.3,429
+4,normal,EC arterial,0.3,270
+4,normal,EC general capillary,0.3,239
+4,normal,EC venous pulmonary,0.3,411
+4,normal,EC venous systemic,0.3,6
+4,normal,Goblet (nasal),0.3,15
+4,normal,Goblet (subsegmental),0.3,2
+4,normal,Interstitial Mph perivascular,0.3,269
+4,normal,Lymphatic EC differentiating,0.3,193
+4,normal,Mast cells,0.3,636
+4,normal,Migratory DCs,0.3,50
+4,normal,Monocyte-derived Mph,0.3,259
+4,normal,Multiciliated (non-nasal),0.3,307
+4,normal,Myofibroblasts,0.3,23
+4,normal,NK cells,0.3,275
+4,normal,Neuroendocrine,0.3,4
+4,normal,Non-classical monocytes,0.3,134
+4,normal,Peribronchial fibroblasts,0.3,25
+4,normal,Pericytes,0.3,167
+4,normal,Plasma cells,0.3,630
+4,normal,Plasmacytoid DCs,0.3,59
+4,normal,SM activated stress response,0.3,3
+4,normal,Smooth muscle,0.3,71
+4,normal,Suprabasal,0.3,1
+4,normal,T cells proliferating,0.3,44
+4,normal,pre-TB secretory,0.3,31
+6,AAH,AT0,0.3,5
+6,AAH,AT1,0.3,230
+6,AAH,AT2,0.3,422
+6,AAH,Adventitial fibroblasts,0.3,40
+6,AAH,Alveolar fibroblasts,0.3,275
+6,AAH,Alveolar macrophages,0.3,83
+6,AAH,B cells,0.3,1
+6,AAH,Basal resting,0.3,41
+6,AAH,CD4 T cells,0.3,23
+6,AAH,CD8 T cells,0.3,49
+6,AAH,Classical monocytes,0.3,10
+6,AAH,Club (non-nasal),0.3,7
+6,AAH,EC aerocyte capillary,0.3,69
+6,AAH,EC arterial,0.3,30
+6,AAH,EC general capillary,0.3,51
+6,AAH,EC venous pulmonary,0.3,16
+6,AAH,Goblet (bronchial),0.3,1
+6,AAH,Goblet (nasal),0.3,5
+6,AAH,Interstitial Mph perivascular,0.3,12
+6,AAH,Lymphatic EC differentiating,0.3,10
+6,AAH,Mast cells,0.3,14
+6,AAH,Migratory DCs,0.3,1
+6,AAH,Monocyte-derived Mph,0.3,3
+6,AAH,Multiciliated (non-nasal),0.3,185
+6,AAH,Myofibroblasts,0.3,2
+6,AAH,NK cells,0.3,32
+6,AAH,Neuroendocrine,0.3,1
+6,AAH,Non-classical monocytes,0.3,13
+6,AAH,Pericytes,0.3,23
+6,AAH,Plasma cells,0.3,27
+6,AAH,Plasmacytoid DCs,0.3,1
+6,AAH,SMG mucous,0.3,6
+6,AAH,SMG serous (bronchial),0.3,6
+6,AAH,Smooth muscle,0.3,35
+6,AAH,Suprabasal,0.3,3
+6,AAH,pre-TB secretory,0.3,18
+6,normal,AT0,0.3,1
+6,normal,AT1,0.3,97
+6,normal,AT2,0.3,147
+6,normal,Adventitial fibroblasts,0.3,20
+6,normal,Alveolar fibroblasts,0.3,128
+6,normal,Alveolar macrophages,0.3,85
+6,normal,B cells,0.3,7
+6,normal,Basal resting,0.3,15
+6,normal,CD4 T cells,0.3,29
+6,normal,CD8 T cells,0.3,25
+6,normal,Classical monocytes,0.3,9
+6,normal,EC aerocyte capillary,0.3,25
+6,normal,EC arterial,0.3,19
+6,normal,EC general capillary,0.3,19
+6,normal,EC venous pulmonary,0.3,16
+6,normal,Goblet (nasal),0.3,1
+6,normal,Interstitial Mph perivascular,0.3,19
+6,normal,Lymphatic EC differentiating,0.3,17
+6,normal,Mast cells,0.3,14
+6,normal,Monocyte-derived Mph,0.3,13
+6,normal,Multiciliated (non-nasal),0.3,40
+6,normal,NK cells,0.3,20
+6,normal,Non-classical monocytes,0.3,8
+6,normal,Pericytes,0.3,13
+6,normal,Plasma cells,0.3,13
+6,normal,Plasmacytoid DCs,0.3,1
+6,normal,SM activated stress response,0.3,4
+6,normal,SMG mucous,0.3,3
+6,normal,SMG serous (bronchial),0.3,2
+6,normal,Smooth muscle,0.3,14
+6,normal,Smooth muscle FAM83D+,0.3,1
+6,normal,Suprabasal,0.3,1
+6,normal,pre-TB secretory,0.3,4
+9,AAH,AT0,0.3,3
+9,AAH,AT1,0.3,126
+9,AAH,AT2,0.3,225
+9,AAH,Adventitial fibroblasts,0.3,1
+9,AAH,Alveolar fibroblasts,0.3,144
+9,AAH,Alveolar macrophages,0.3,64
+9,AAH,B cells,0.3,3
+9,AAH,Basal resting,0.3,1
+9,AAH,CD4 T cells,0.3,28
+9,AAH,CD8 T cells,0.3,37
+9,AAH,Classical monocytes,0.3,7
+9,AAH,EC aerocyte capillary,0.3,23
+9,AAH,EC arterial,0.3,52
+9,AAH,EC general capillary,0.3,14
+9,AAH,EC venous pulmonary,0.3,19
+9,AAH,Interstitial Mph perivascular,0.3,5
+9,AAH,Lymphatic EC differentiating,0.3,7
+9,AAH,Lymphatic EC mature,0.3,1
+9,AAH,Mast cells,0.3,12
+9,AAH,Monocyte-derived Mph,0.3,6
+9,AAH,Multiciliated (non-nasal),0.3,16
+9,AAH,Myofibroblasts,0.3,2
+9,AAH,NK cells,0.3,18
+9,AAH,Non-classical monocytes,0.3,7
+9,AAH,Pericytes,0.3,13
+9,AAH,Plasma cells,0.3,6
+9,AAH,SM activated stress response,0.3,1
+9,AAH,Smooth muscle,0.3,5
+9,AAH,Suprabasal,0.3,1
+9,AAH,pre-TB secretory,0.3,1
+9,normal,AT0,0.3,1
+9,normal,AT1,0.3,134
+9,normal,AT2,0.3,283
+9,normal,Adventitial fibroblasts,0.3,27
+9,normal,Alveolar fibroblasts,0.3,236
+9,normal,Alveolar macrophages,0.3,35
+9,normal,B cells,0.3,30
+9,normal,Basal resting,0.3,25
+9,normal,CD4 T cells,0.3,70
+9,normal,CD8 T cells,0.3,76
+9,normal,Classical monocytes,0.3,16
+9,normal,Club (non-nasal),0.3,2
+9,normal,EC aerocyte capillary,0.3,73
+9,normal,EC arterial,0.3,54
+9,normal,EC general capillary,0.3,43
+9,normal,EC venous pulmonary,0.3,37
+9,normal,Goblet (bronchial),0.3,2
+9,normal,Goblet (nasal),0.3,3
+9,normal,Interstitial Mph perivascular,0.3,6
+9,normal,Lymphatic EC differentiating,0.3,22
+9,normal,Mast cells,0.3,12
+9,normal,Monocyte-derived Mph,0.3,3
+9,normal,Multiciliated (nasal),0.3,1
+9,normal,Multiciliated (non-nasal),0.3,211
+9,normal,Myofibroblasts,0.3,4
+9,normal,NK cells,0.3,75
+9,normal,Neuroendocrine,0.3,1
+9,normal,Non-classical monocytes,0.3,25
+9,normal,Pericytes,0.3,19
+9,normal,Plasma cells,0.3,17
+9,normal,Plasmacytoid DCs,0.3,4
+9,normal,SMG mucous,0.3,1
+9,normal,SMG serous (bronchial),0.3,8
+9,normal,Smooth muscle,0.3,15
+9,normal,Smooth muscle FAM83D+,0.3,1
+9,normal,pre-TB secretory,0.3,10

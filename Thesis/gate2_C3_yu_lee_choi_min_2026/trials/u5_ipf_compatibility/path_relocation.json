@@ -1,0 +1,19 @@
+{
+  "reason": "Avoid confusion with repository W-series; retain established U5 stage naming",
+  "run_record_preserved": true,
+  "original_sources": "trials\\u5_ipf_compatibility\\.history\\original_entrypoints",
+  "changes": [
+    {
+      "old": "w1_ipf_compatibility.py",
+      "new": "u5_ipf_compatibility.py",
+      "original_sha256": "b9a5109e1030ad7abfa472d50b87090863bdcfcecdf71dfd64eec84ddea0ba60",
+      "new_sha256": "c5edacf0f829901c13696086565d679cdf02a88ea9f798697e6f168e4bdcb6f6"
+    },
+    {
+      "old": "w1_normalize.R",
+      "new": "u5_compatibility_normalize.R",
+      "original_sha256": "ec3afd2d2d8d86b60dbe47d192b19523cf72821748fdf14136f415d4e8ab0e45",
+      "new_sha256": "f853f81d079ebec34dba6188ecffe026ada5e5c17129dada7b7f82ca2843deb5"
+    }
+  ]
+}

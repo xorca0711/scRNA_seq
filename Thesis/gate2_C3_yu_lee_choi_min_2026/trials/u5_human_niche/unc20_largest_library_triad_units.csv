@@ -1,0 +1,743 @@
+patient,histology,label,comp,view,cells,full_library_sum,libraries,n_libraries,uncertainty,library_mode,unit_id
+3,AIS,AT2,AT2,subtype,673,1491795,GSM9237902,1,0.2,largest_library,unc20_largest_library_0001
+3,AIS,Adventitial fibroblasts,fibroblasts,subtype,21,36629,GSM9237902,1,0.2,largest_library,unc20_largest_library_0002
+3,AIS,Alveolar fibroblasts,fibroblasts,subtype,102,151845,GSM9237902,1,0.2,largest_library,unc20_largest_library_0003
+3,AIS,Monocyte-derived Mph,macrophages,subtype,31,76794,GSM9237902,1,0.2,largest_library,unc20_largest_library_0019
+3,LUAD,AT2,AT2,subtype,310,934100,GSM9237903,1,0.2,largest_library,unc20_largest_library_0025
+3,LUAD,Adventitial fibroblasts,fibroblasts,subtype,3,7185,GSM9237903,1,0.2,largest_library,unc20_largest_library_0026
+3,LUAD,Alveolar fibroblasts,fibroblasts,subtype,77,120106,GSM9237903,1,0.2,largest_library,unc20_largest_library_0027
+3,LUAD,Monocyte-derived Mph,macrophages,subtype,23,57365,GSM9237903,1,0.2,largest_library,unc20_largest_library_0041
+3,normal,AT2,AT2,subtype,165,288778,GSM9237901,1,0.2,largest_library,unc20_largest_library_0053
+3,normal,Adventitial fibroblasts,fibroblasts,subtype,11,23464,GSM9237901,1,0.2,largest_library,unc20_largest_library_0054
+3,normal,Alveolar fibroblasts,fibroblasts,subtype,106,149829,GSM9237901,1,0.2,largest_library,unc20_largest_library_0055
+3,normal,Alveolar macrophages,macrophages,subtype,1,11440,GSM9237901,1,0.2,largest_library,unc20_largest_library_0056
+3,normal,Interstitial Mph perivascular,macrophages,subtype,1,1420,GSM9237901,1,0.2,largest_library,unc20_largest_library_0066
+3,normal,Monocyte-derived Mph,macrophages,subtype,21,41951,GSM9237901,1,0.2,largest_library,unc20_largest_library_0069
+4,AAH,AT2,AT2,subtype,2395,9405454,GSM9237907,1,0.2,largest_library,unc20_largest_library_0077
+4,AAH,AT2 proliferating,AT2,subtype,7,66506,GSM9237907,1,0.2,largest_library,unc20_largest_library_0078
+4,AAH,Adventitial fibroblasts,fibroblasts,subtype,23,82600,GSM9237907,1,0.2,largest_library,unc20_largest_library_0079
+4,AAH,Alveolar fibroblasts,fibroblasts,subtype,918,1785588,GSM9237907,1,0.2,largest_library,unc20_largest_library_0080
+4,AAH,Alveolar macrophages,macrophages,subtype,318,3524450,GSM9237907,1,0.2,largest_library,unc20_largest_library_0081
+4,AAH,Interstitial Mph perivascular,macrophages,subtype,49,102799,GSM9237907,1,0.2,largest_library,unc20_largest_library_0091
+4,AAH,Monocyte-derived Mph,macrophages,subtype,30,91816,GSM9237907,1,0.2,largest_library,unc20_largest_library_0095
+4,AAH,Myofibroblasts,fibroblasts,subtype,1,1873,GSM9237907,1,0.2,largest_library,unc20_largest_library_0097
+4,AAH,Peribronchial fibroblasts,fibroblasts,subtype,12,44548,GSM9237907,1,0.2,largest_library,unc20_largest_library_0100
+4,LUAD,AT2,AT2,subtype,5063,25675943,GSM9237908,1,0.2,largest_library,unc20_largest_library_0109
+4,LUAD,AT2 proliferating,AT2,subtype,33,573105,GSM9237908,1,0.2,largest_library,unc20_largest_library_0110
+4,LUAD,Adventitial fibroblasts,fibroblasts,subtype,91,299809,GSM9237908,1,0.2,largest_library,unc20_largest_library_0111
+4,LUAD,Alveolar fibroblasts,fibroblasts,subtype,2776,7873263,GSM9237908,1,0.2,largest_library,unc20_largest_library_0112
+4,LUAD,Alveolar macrophages,macrophages,subtype,935,13199652,GSM9237908,1,0.2,largest_library,unc20_largest_library_0113
+4,LUAD,Interstitial Mph perivascular,macrophages,subtype,122,297543,GSM9237908,1,0.2,largest_library,unc20_largest_library_0130
+4,LUAD,Monocyte-derived Mph,macrophages,subtype,94,490395,GSM9237908,1,0.2,largest_library,unc20_largest_library_0135
+4,LUAD,Myofibroblasts,fibroblasts,subtype,6,12705,GSM9237908,1,0.2,largest_library,unc20_largest_library_0138
+4,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,39,124616,GSM9237908,1,0.2,largest_library,unc20_largest_library_0142
+4,normal,AT2,AT2,subtype,4520,20532915,GSM9237904,1,0.2,largest_library,unc20_largest_library_0153
+4,normal,AT2 proliferating,AT2,subtype,8,65895,GSM9237904,1,0.2,largest_library,unc20_largest_library_0154
+4,normal,Adventitial fibroblasts,fibroblasts,subtype,89,286489,GSM9237904,1,0.2,largest_library,unc20_largest_library_0155
+4,normal,Alveolar Mph proliferating,macrophages,subtype,2,8422,GSM9237904,1,0.2,largest_library,unc20_largest_library_0156
+4,normal,Alveolar fibroblasts,fibroblasts,subtype,2286,5987712,GSM9237904,1,0.2,largest_library,unc20_largest_library_0157
+4,normal,Alveolar macrophages,macrophages,subtype,1281,16534639,GSM9237904,1,0.2,largest_library,unc20_largest_library_0158
+4,normal,Interstitial Mph perivascular,macrophages,subtype,71,167886,GSM9237904,1,0.2,largest_library,unc20_largest_library_0171
+4,normal,Monocyte-derived Mph,macrophages,subtype,99,441590,GSM9237904,1,0.2,largest_library,unc20_largest_library_0175
+4,normal,Myofibroblasts,fibroblasts,subtype,3,4310,GSM9237904,1,0.2,largest_library,unc20_largest_library_0177
+4,normal,Peribronchial fibroblasts,fibroblasts,subtype,9,34261,GSM9237904,1,0.2,largest_library,unc20_largest_library_0181
+5,AIS,AT2,AT2,subtype,224,869513,GSM9237910,1,0.2,largest_library,unc20_largest_library_0192
+5,AIS,Adventitial fibroblasts,fibroblasts,subtype,5,8761,GSM9237910,1,0.2,largest_library,unc20_largest_library_0193
+5,AIS,Alveolar fibroblasts,fibroblasts,subtype,228,391190,GSM9237910,1,0.2,largest_library,unc20_largest_library_0194
+5,AIS,Alveolar macrophages,macrophages,subtype,35,254905,GSM9237910,1,0.2,largest_library,unc20_largest_library_0195
+5,AIS,Interstitial Mph perivascular,macrophages,subtype,7,12059,GSM9237910,1,0.2,largest_library,unc20_largest_library_0207
+5,AIS,Monocyte-derived Mph,macrophages,subtype,3,11664,GSM9237910,1,0.2,largest_library,unc20_largest_library_0210
+5,AIS,Myofibroblasts,fibroblasts,subtype,1,1241,GSM9237910,1,0.2,largest_library,unc20_largest_library_0212
+5,LUAD,AT2,AT2,subtype,1071,4814870,GSM9237911,1,0.2,largest_library,unc20_largest_library_0221
+5,LUAD,AT2 proliferating,AT2,subtype,25,190310,GSM9237911,1,0.2,largest_library,unc20_largest_library_0222
+5,LUAD,Adventitial fibroblasts,fibroblasts,subtype,14,30961,GSM9237911,1,0.2,largest_library,unc20_largest_library_0223
+5,LUAD,Alveolar fibroblasts,fibroblasts,subtype,131,355698,GSM9237911,1,0.2,largest_library,unc20_largest_library_0224
+5,LUAD,Alveolar macrophages,macrophages,subtype,199,1384686,GSM9237911,1,0.2,largest_library,unc20_largest_library_0225
+5,LUAD,Interstitial Mph perivascular,macrophages,subtype,53,121576,GSM9237911,1,0.2,largest_library,unc20_largest_library_0239
+5,LUAD,Monocyte-derived Mph,macrophages,subtype,88,339544,GSM9237911,1,0.2,largest_library,unc20_largest_library_0245
+5,LUAD,Myofibroblasts,fibroblasts,subtype,2,3082,GSM9237911,1,0.2,largest_library,unc20_largest_library_0247
+5,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,427,1538625,GSM9237911,1,0.2,largest_library,unc20_largest_library_0250
+5,normal,AT2,AT2,subtype,1727,6111600,GSM9237909,1,0.2,largest_library,unc20_largest_library_0259
+5,normal,Adventitial fibroblasts,fibroblasts,subtype,2,2361,GSM9237909,1,0.2,largest_library,unc20_largest_library_0260
+5,normal,Alveolar fibroblasts,fibroblasts,subtype,2911,6435989,GSM9237909,1,0.2,largest_library,unc20_largest_library_0261
+5,normal,Alveolar macrophages,macrophages,subtype,435,4195129,GSM9237909,1,0.2,largest_library,unc20_largest_library_0262
+5,normal,Interstitial Mph perivascular,macrophages,subtype,14,24947,GSM9237909,1,0.2,largest_library,unc20_largest_library_0275
+5,normal,Monocyte-derived Mph,macrophages,subtype,20,76623,GSM9237909,1,0.2,largest_library,unc20_largest_library_0279
+5,normal,Myofibroblasts,fibroblasts,subtype,6,8659,GSM9237909,1,0.2,largest_library,unc20_largest_library_0282
+6,AAH,AT2,AT2,subtype,414,1136231,GSM9237913,1,0.2,largest_library,unc20_largest_library_0293
+6,AAH,Adventitial fibroblasts,fibroblasts,subtype,34,71383,GSM9237913,1,0.2,largest_library,unc20_largest_library_0294
+6,AAH,Alveolar fibroblasts,fibroblasts,subtype,247,535730,GSM9237913,1,0.2,largest_library,unc20_largest_library_0295
+6,AAH,Alveolar macrophages,macrophages,subtype,77,651619,GSM9237913,1,0.2,largest_library,unc20_largest_library_0296
+6,AAH,Interstitial Mph perivascular,macrophages,subtype,9,13816,GSM9237913,1,0.2,largest_library,unc20_largest_library_0309
+6,AAH,Myofibroblasts,fibroblasts,subtype,1,1999,GSM9237913,1,0.2,largest_library,unc20_largest_library_0313
+6,LUAD,AT2,AT2,subtype,474,1998913,GSM9237914,1,0.2,largest_library,unc20_largest_library_0327
+6,LUAD,AT2 proliferating,AT2,subtype,3,77376,GSM9237914,1,0.2,largest_library,unc20_largest_library_0328
+6,LUAD,Adventitial fibroblasts,fibroblasts,subtype,19,45306,GSM9237914,1,0.2,largest_library,unc20_largest_library_0329
+6,LUAD,Alveolar fibroblasts,fibroblasts,subtype,283,673823,GSM9237914,1,0.2,largest_library,unc20_largest_library_0330
+6,LUAD,Alveolar macrophages,macrophages,subtype,195,2037251,GSM9237914,1,0.2,largest_library,unc20_largest_library_0331
+6,LUAD,Interstitial Mph perivascular,macrophages,subtype,41,79799,GSM9237914,1,0.2,largest_library,unc20_largest_library_0347
+6,LUAD,Monocyte-derived Mph,macrophages,subtype,23,90358,GSM9237914,1,0.2,largest_library,unc20_largest_library_0351
+6,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,44,188164,GSM9237914,1,0.2,largest_library,unc20_largest_library_0355
+6,normal,AT2,AT2,subtype,142,421410,GSM9237912,1,0.2,largest_library,unc20_largest_library_0364
+6,normal,Adventitial fibroblasts,fibroblasts,subtype,19,59181,GSM9237912,1,0.2,largest_library,unc20_largest_library_0365
+6,normal,Alveolar fibroblasts,fibroblasts,subtype,117,235475,GSM9237912,1,0.2,largest_library,unc20_largest_library_0366
+6,normal,Alveolar macrophages,macrophages,subtype,77,738556,GSM9237912,1,0.2,largest_library,unc20_largest_library_0367
+6,normal,Interstitial Mph perivascular,macrophages,subtype,13,19647,GSM9237912,1,0.2,largest_library,unc20_largest_library_0378
+6,normal,Monocyte-derived Mph,macrophages,subtype,4,12316,GSM9237912,1,0.2,largest_library,unc20_largest_library_0381
+7,LUAD,AT2,AT2,subtype,550,1606278,GSM9237917,1,0.2,largest_library,unc20_largest_library_0396
+7,LUAD,AT2 proliferating,AT2,subtype,3,11304,GSM9237917,1,0.2,largest_library,unc20_largest_library_0397
+7,LUAD,Adventitial fibroblasts,fibroblasts,subtype,15,36301,GSM9237917,1,0.2,largest_library,unc20_largest_library_0398
+7,LUAD,Alveolar fibroblasts,fibroblasts,subtype,601,1203026,GSM9237917,1,0.2,largest_library,unc20_largest_library_0399
+7,LUAD,Alveolar macrophages,macrophages,subtype,185,1603556,GSM9237917,1,0.2,largest_library,unc20_largest_library_0400
+7,LUAD,Interstitial Mph perivascular,macrophages,subtype,13,25637,GSM9237917,1,0.2,largest_library,unc20_largest_library_0415
+7,LUAD,Monocyte-derived Mph,macrophages,subtype,30,151154,GSM9237917,1,0.2,largest_library,unc20_largest_library_0420
+7,LUAD,Myofibroblasts,fibroblasts,subtype,6,8748,GSM9237917,1,0.2,largest_library,unc20_largest_library_0422
+7,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,14,49029,GSM9237917,1,0.2,largest_library,unc20_largest_library_0426
+7,normal,AT2,AT2,subtype,1385,2781786,GSM9237915,1,0.2,largest_library,unc20_largest_library_0434
+7,normal,Adventitial fibroblasts,fibroblasts,subtype,17,28264,GSM9237915,1,0.2,largest_library,unc20_largest_library_0435
+7,normal,Alveolar fibroblasts,fibroblasts,subtype,788,1156902,GSM9237915,1,0.2,largest_library,unc20_largest_library_0436
+7,normal,Alveolar macrophages,macrophages,subtype,82,469398,GSM9237915,1,0.2,largest_library,unc20_largest_library_0437
+7,normal,Myofibroblasts,fibroblasts,subtype,4,5242,GSM9237915,1,0.2,largest_library,unc20_largest_library_0454
+8,AIS,AT2,AT2,subtype,73,169136,GSM9237919,1,0.2,largest_library,unc20_largest_library_0463
+8,AIS,Alveolar fibroblasts,fibroblasts,subtype,22,32216,GSM9237919,1,0.2,largest_library,unc20_largest_library_0464
+8,AIS,Alveolar macrophages,macrophages,subtype,5,15045,GSM9237919,1,0.2,largest_library,unc20_largest_library_0465
+8,LUAD,AT2,AT2,subtype,291,465848,GSM9237920,1,0.2,largest_library,unc20_largest_library_0478
+8,LUAD,AT2 proliferating,AT2,subtype,1,1489,GSM9237920,1,0.2,largest_library,unc20_largest_library_0479
+8,LUAD,Adventitial fibroblasts,fibroblasts,subtype,33,80633,GSM9237920,1,0.2,largest_library,unc20_largest_library_0480
+8,LUAD,Alveolar fibroblasts,fibroblasts,subtype,37,65394,GSM9237920,1,0.2,largest_library,unc20_largest_library_0481
+8,LUAD,Alveolar macrophages,macrophages,subtype,58,163472,GSM9237920,1,0.2,largest_library,unc20_largest_library_0482
+8,LUAD,Interstitial Mph perivascular,macrophages,subtype,3,3983,GSM9237920,1,0.2,largest_library,unc20_largest_library_0494
+8,LUAD,Monocyte-derived Mph,macrophages,subtype,44,87852,GSM9237920,1,0.2,largest_library,unc20_largest_library_0498
+8,LUAD,Myofibroblasts,fibroblasts,subtype,1,1808,GSM9237920,1,0.2,largest_library,unc20_largest_library_0501
+8,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,46,98730,GSM9237920,1,0.2,largest_library,unc20_largest_library_0504
+8,normal,AT2,AT2,subtype,211,292790,GSM9237918,1,0.2,largest_library,unc20_largest_library_0513
+8,normal,Alveolar fibroblasts,fibroblasts,subtype,22,42460,GSM9237918,1,0.2,largest_library,unc20_largest_library_0514
+8,normal,Alveolar macrophages,macrophages,subtype,2,2780,GSM9237918,1,0.2,largest_library,unc20_largest_library_0515
+9,AAH,AT2,AT2,subtype,220,690945,GSM9237922,1,0.2,largest_library,unc20_largest_library_0527
+9,AAH,Adventitial fibroblasts,fibroblasts,subtype,1,1408,GSM9237922,1,0.2,largest_library,unc20_largest_library_0528
+9,AAH,Alveolar fibroblasts,fibroblasts,subtype,136,254917,GSM9237922,1,0.2,largest_library,unc20_largest_library_0529
+9,AAH,Alveolar macrophages,macrophages,subtype,55,629497,GSM9237922,1,0.2,largest_library,unc20_largest_library_0530
+9,AAH,Interstitial Mph perivascular,macrophages,subtype,3,4556,GSM9237922,1,0.2,largest_library,unc20_largest_library_0540
+9,AAH,Monocyte-derived Mph,macrophages,subtype,2,2985,GSM9237922,1,0.2,largest_library,unc20_largest_library_0543
+9,AAH,Myofibroblasts,fibroblasts,subtype,2,3448,GSM9237922,1,0.2,largest_library,unc20_largest_library_0545
+9,AIS,AT2,AT2,subtype,657,2208389,GSM9237923,1,0.2,largest_library,unc20_largest_library_0554
+9,AIS,AT2 proliferating,AT2,subtype,1,5519,GSM9237923,1,0.2,largest_library,unc20_largest_library_0555
+9,AIS,Adventitial fibroblasts,fibroblasts,subtype,19,47700,GSM9237923,1,0.2,largest_library,unc20_largest_library_0556
+9,AIS,Alveolar fibroblasts,fibroblasts,subtype,445,851579,GSM9237923,1,0.2,largest_library,unc20_largest_library_0557
+9,AIS,Alveolar macrophages,macrophages,subtype,33,335113,GSM9237923,1,0.2,largest_library,unc20_largest_library_0558
+9,AIS,Interstitial Mph perivascular,macrophages,subtype,8,12762,GSM9237923,1,0.2,largest_library,unc20_largest_library_0572
+9,AIS,Monocyte-derived Mph,macrophages,subtype,14,30133,GSM9237923,1,0.2,largest_library,unc20_largest_library_0575
+9,AIS,Myofibroblasts,fibroblasts,subtype,1,1305,GSM9237923,1,0.2,largest_library,unc20_largest_library_0578
+9,AIS,Peribronchial fibroblasts,fibroblasts,subtype,1,2043,GSM9237923,1,0.2,largest_library,unc20_largest_library_0582
+9,LUAD,AT2,AT2,subtype,677,1942718,GSM9237924,1,0.2,largest_library,unc20_largest_library_0590
+9,LUAD,Adventitial fibroblasts,fibroblasts,subtype,138,296645,GSM9237924,1,0.2,largest_library,unc20_largest_library_0591
+9,LUAD,Alveolar fibroblasts,fibroblasts,subtype,207,330535,GSM9237924,1,0.2,largest_library,unc20_largest_library_0592
+9,LUAD,Alveolar macrophages,macrophages,subtype,34,257814,GSM9237924,1,0.2,largest_library,unc20_largest_library_0593
+9,LUAD,Interstitial Mph perivascular,macrophages,subtype,35,60233,GSM9237924,1,0.2,largest_library,unc20_largest_library_0610
+9,LUAD,Monocyte-derived Mph,macrophages,subtype,24,85120,GSM9237924,1,0.2,largest_library,unc20_largest_library_0616
+9,LUAD,Myofibroblasts,fibroblasts,subtype,7,8921,GSM9237924,1,0.2,largest_library,unc20_largest_library_0618
+9,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,4,7848,GSM9237924,1,0.2,largest_library,unc20_largest_library_0622
+9,normal,AT2,AT2,subtype,279,973207,GSM9237921,1,0.2,largest_library,unc20_largest_library_0635
+9,normal,Adventitial fibroblasts,fibroblasts,subtype,22,57414,GSM9237921,1,0.2,largest_library,unc20_largest_library_0636
+9,normal,Alveolar fibroblasts,fibroblasts,subtype,221,522819,GSM9237921,1,0.2,largest_library,unc20_largest_library_0637
+9,normal,Alveolar macrophages,macrophages,subtype,33,501719,GSM9237921,1,0.2,largest_library,unc20_largest_library_0638
+9,normal,Interstitial Mph perivascular,macrophages,subtype,6,11750,GSM9237921,1,0.2,largest_library,unc20_largest_library_0650
+9,normal,Monocyte-derived Mph,macrophages,subtype,1,1755,GSM9237921,1,0.2,largest_library,unc20_largest_library_0653
+9,normal,Myofibroblasts,fibroblasts,subtype,3,3253,GSM9237921,1,0.2,largest_library,unc20_largest_library_0655
+10,LUAD,AT2,AT2,subtype,774,2818939,GSM9237927,1,0.2,largest_library,unc20_largest_library_0668
+10,LUAD,AT2 proliferating,AT2,subtype,7,276945,GSM9237927,1,0.2,largest_library,unc20_largest_library_0669
+10,LUAD,Adventitial fibroblasts,fibroblasts,subtype,23,59739,GSM9237927,1,0.2,largest_library,unc20_largest_library_0670
+10,LUAD,Alveolar fibroblasts,fibroblasts,subtype,514,1228852,GSM9237927,1,0.2,largest_library,unc20_largest_library_0671
+10,LUAD,Alveolar macrophages,macrophages,subtype,138,1590772,GSM9237927,1,0.2,largest_library,unc20_largest_library_0672
+10,LUAD,Interstitial Mph perivascular,macrophages,subtype,34,66071,GSM9237927,1,0.2,largest_library,unc20_largest_library_0685
+10,LUAD,Monocyte-derived Mph,macrophages,subtype,19,132155,GSM9237927,1,0.2,largest_library,unc20_largest_library_0691
+10,LUAD,Myofibroblasts,fibroblasts,subtype,5,6532,GSM9237927,1,0.2,largest_library,unc20_largest_library_0694
+10,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,91,306013,GSM9237927,1,0.2,largest_library,unc20_largest_library_0698
+10,MIA,AT2,AT2,subtype,450,2033686,GSM9237926,1,0.2,largest_library,unc20_largest_library_0709
+10,MIA,AT2 proliferating,AT2,subtype,1,5398,GSM9237926,1,0.2,largest_library,unc20_largest_library_0710
+10,MIA,Adventitial fibroblasts,fibroblasts,subtype,1,1456,GSM9237926,1,0.2,largest_library,unc20_largest_library_0711
+10,MIA,Alveolar fibroblasts,fibroblasts,subtype,279,453193,GSM9237926,1,0.2,largest_library,unc20_largest_library_0712
+10,MIA,Alveolar macrophages,macrophages,subtype,27,181841,GSM9237926,1,0.2,largest_library,unc20_largest_library_0713
+10,MIA,Interstitial Mph perivascular,macrophages,subtype,7,11901,GSM9237926,1,0.2,largest_library,unc20_largest_library_0726
+10,MIA,Monocyte-derived Mph,macrophages,subtype,4,7675,GSM9237926,1,0.2,largest_library,unc20_largest_library_0730
+10,MIA,Myofibroblasts,fibroblasts,subtype,3,3836,GSM9237926,1,0.2,largest_library,unc20_largest_library_0732
+10,MIA,Peribronchial fibroblasts,fibroblasts,subtype,1,3402,GSM9237926,1,0.2,largest_library,unc20_largest_library_0735
+10,normal,AT2,AT2,subtype,176,410176,GSM9237925,1,0.2,largest_library,unc20_largest_library_0743
+10,normal,Adventitial fibroblasts,fibroblasts,subtype,2,6406,GSM9237925,1,0.2,largest_library,unc20_largest_library_0744
+10,normal,Alveolar fibroblasts,fibroblasts,subtype,100,189621,GSM9237925,1,0.2,largest_library,unc20_largest_library_0745
+10,normal,Alveolar macrophages,macrophages,subtype,5,34479,GSM9237925,1,0.2,largest_library,unc20_largest_library_0746
+10,normal,Interstitial Mph perivascular,macrophages,subtype,1,1452,GSM9237925,1,0.2,largest_library,unc20_largest_library_0756
+10,normal,Monocyte-derived Mph,macrophages,subtype,18,81549,GSM9237925,1,0.2,largest_library,unc20_largest_library_0760
+11,AAH,AT2,AT2,subtype,459,2366182,GSM9237929,1,0.2,largest_library,unc20_largest_library_0770
+11,AAH,AT2 proliferating,AT2,subtype,3,14675,GSM9237929,1,0.2,largest_library,unc20_largest_library_0771
+11,AAH,Adventitial fibroblasts,fibroblasts,subtype,44,79333,GSM9237929,1,0.2,largest_library,unc20_largest_library_0772
+11,AAH,Alveolar Mph proliferating,macrophages,subtype,2,17499,GSM9237929,1,0.2,largest_library,unc20_largest_library_0773
+11,AAH,Alveolar fibroblasts,fibroblasts,subtype,237,403154,GSM9237929,1,0.2,largest_library,unc20_largest_library_0774
+11,AAH,Alveolar macrophages,macrophages,subtype,72,567626,GSM9237929,1,0.2,largest_library,unc20_largest_library_0775
+11,AAH,Interstitial Mph perivascular,macrophages,subtype,13,20350,GSM9237929,1,0.2,largest_library,unc20_largest_library_0788
+11,AAH,Monocyte-derived Mph,macrophages,subtype,5,23051,GSM9237929,1,0.2,largest_library,unc20_largest_library_0792
+11,AAH,Myofibroblasts,fibroblasts,subtype,1,1123,GSM9237929,1,0.2,largest_library,unc20_largest_library_0794
+11,LUAD,AT2,AT2,subtype,569,2732660,GSM9237930,1,0.2,largest_library,unc20_largest_library_0808
+11,LUAD,AT2 proliferating,AT2,subtype,9,88840,GSM9237930,1,0.2,largest_library,unc20_largest_library_0809
+11,LUAD,Adventitial fibroblasts,fibroblasts,subtype,20,72339,GSM9237930,1,0.2,largest_library,unc20_largest_library_0810
+11,LUAD,Alveolar fibroblasts,fibroblasts,subtype,259,617213,GSM9237930,1,0.2,largest_library,unc20_largest_library_0811
+11,LUAD,Alveolar macrophages,macrophages,subtype,165,1455532,GSM9237930,1,0.2,largest_library,unc20_largest_library_0812
+11,LUAD,Interstitial Mph perivascular,macrophages,subtype,33,86087,GSM9237930,1,0.2,largest_library,unc20_largest_library_0827
+11,LUAD,Monocyte-derived Mph,macrophages,subtype,16,106272,GSM9237930,1,0.2,largest_library,unc20_largest_library_0833
+11,LUAD,Myofibroblasts,fibroblasts,subtype,1,1214,GSM9237930,1,0.2,largest_library,unc20_largest_library_0835
+11,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,370,1223717,GSM9237930,1,0.2,largest_library,unc20_largest_library_0838
+11,normal,AT2,AT2,subtype,143,425377,GSM9237928,1,0.2,largest_library,unc20_largest_library_0846
+11,normal,AT2 proliferating,AT2,subtype,1,2076,GSM9237928,1,0.2,largest_library,unc20_largest_library_0847
+11,normal,Adventitial fibroblasts,fibroblasts,subtype,20,29674,GSM9237928,1,0.2,largest_library,unc20_largest_library_0848
+11,normal,Alveolar fibroblasts,fibroblasts,subtype,121,185480,GSM9237928,1,0.2,largest_library,unc20_largest_library_0849
+11,normal,Alveolar macrophages,macrophages,subtype,17,85851,GSM9237928,1,0.2,largest_library,unc20_largest_library_0850
+11,normal,Interstitial Mph perivascular,macrophages,subtype,5,6781,GSM9237928,1,0.2,largest_library,unc20_largest_library_0861
+11,normal,Monocyte-derived Mph,macrophages,subtype,3,7855,GSM9237928,1,0.2,largest_library,unc20_largest_library_0865
+11,normal,Myofibroblasts,fibroblasts,subtype,2,2276,GSM9237928,1,0.2,largest_library,unc20_largest_library_0867
+12,AIS,AT2,AT2,subtype,463,3217237,GSM9237932,1,0.2,largest_library,unc20_largest_library_0878
+12,AIS,AT2 proliferating,AT2,subtype,2,32498,GSM9237932,1,0.2,largest_library,unc20_largest_library_0879
+12,AIS,Adventitial fibroblasts,fibroblasts,subtype,2,9397,GSM9237932,1,0.2,largest_library,unc20_largest_library_0880
+12,AIS,Alveolar fibroblasts,fibroblasts,subtype,256,475484,GSM9237932,1,0.2,largest_library,unc20_largest_library_0881
+12,AIS,Alveolar macrophages,macrophages,subtype,34,369601,GSM9237932,1,0.2,largest_library,unc20_largest_library_0882
+12,AIS,Interstitial Mph perivascular,macrophages,subtype,6,12694,GSM9237932,1,0.2,largest_library,unc20_largest_library_0894
+12,LUAD,AT2,AT2,subtype,547,3512631,GSM9237933,1,0.2,largest_library,unc20_largest_library_0908
+12,LUAD,Adventitial fibroblasts,fibroblasts,subtype,1,3078,GSM9237933,1,0.2,largest_library,unc20_largest_library_0909
+12,LUAD,Alveolar fibroblasts,fibroblasts,subtype,189,280199,GSM9237933,1,0.2,largest_library,unc20_largest_library_0910
+12,LUAD,Alveolar macrophages,macrophages,subtype,37,262056,GSM9237933,1,0.2,largest_library,unc20_largest_library_0911
+12,LUAD,Interstitial Mph perivascular,macrophages,subtype,10,18417,GSM9237933,1,0.2,largest_library,unc20_largest_library_0922
+12,LUAD,Monocyte-derived Mph,macrophages,subtype,9,21981,GSM9237933,1,0.2,largest_library,unc20_largest_library_0925
+12,LUAD,Myofibroblasts,fibroblasts,subtype,1,1079,GSM9237933,1,0.2,largest_library,unc20_largest_library_0927
+12,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,1,1246,GSM9237933,1,0.2,largest_library,unc20_largest_library_0930
+12,normal,AT2,AT2,subtype,196,784565,GSM9237931,1,0.2,largest_library,unc20_largest_library_0939
+12,normal,AT2 proliferating,AT2,subtype,1,12735,GSM9237931,1,0.2,largest_library,unc20_largest_library_0940
+12,normal,Adventitial fibroblasts,fibroblasts,subtype,1,3525,GSM9237931,1,0.2,largest_library,unc20_largest_library_0941
+12,normal,Alveolar fibroblasts,fibroblasts,subtype,179,352804,GSM9237931,1,0.2,largest_library,unc20_largest_library_0942
+12,normal,Alveolar macrophages,macrophages,subtype,33,471573,GSM9237931,1,0.2,largest_library,unc20_largest_library_0943
+12,normal,Interstitial Mph perivascular,macrophages,subtype,3,7063,GSM9237931,1,0.2,largest_library,unc20_largest_library_0953
+13,LUAD,AT2,AT2,subtype,181,975454,GSM9237936,1,0.2,largest_library,unc20_largest_library_0967
+13,LUAD,Adventitial fibroblasts,fibroblasts,subtype,8,24011,GSM9237936,1,0.2,largest_library,unc20_largest_library_0968
+13,LUAD,Alveolar fibroblasts,fibroblasts,subtype,188,437926,GSM9237936,1,0.2,largest_library,unc20_largest_library_0969
+13,LUAD,Alveolar macrophages,macrophages,subtype,32,331129,GSM9237936,1,0.2,largest_library,unc20_largest_library_0970
+13,LUAD,Interstitial Mph perivascular,macrophages,subtype,31,66176,GSM9237936,1,0.2,largest_library,unc20_largest_library_0980
+13,LUAD,Monocyte-derived Mph,macrophages,subtype,4,14048,GSM9237936,1,0.2,largest_library,unc20_largest_library_0984
+13,LUAD,Myofibroblasts,fibroblasts,subtype,1,1014,GSM9237936,1,0.2,largest_library,unc20_largest_library_0986
+13,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,31,94022,GSM9237936,1,0.2,largest_library,unc20_largest_library_0989
+13,MIA,AT2,AT2,subtype,319,1342302,GSM9237935,1,0.2,largest_library,unc20_largest_library_0995
+13,MIA,Adventitial fibroblasts,fibroblasts,subtype,9,21470,GSM9237935,1,0.2,largest_library,unc20_largest_library_0996
+13,MIA,Alveolar fibroblasts,fibroblasts,subtype,288,461024,GSM9237935,1,0.2,largest_library,unc20_largest_library_0997
+13,MIA,Alveolar macrophages,macrophages,subtype,80,638246,GSM9237935,1,0.2,largest_library,unc20_largest_library_0998
+13,MIA,Interstitial Mph perivascular,macrophages,subtype,18,25807,GSM9237935,1,0.2,largest_library,unc20_largest_library_1009
+13,MIA,Monocyte-derived Mph,macrophages,subtype,4,5116,GSM9237935,1,0.2,largest_library,unc20_largest_library_1013
+13,MIA,Peribronchial fibroblasts,fibroblasts,subtype,1,2045,GSM9237935,1,0.2,largest_library,unc20_largest_library_1017
+13,normal,AT2,AT2,subtype,97,345800,GSM9237934,1,0.2,largest_library,unc20_largest_library_1025
+13,normal,Alveolar fibroblasts,fibroblasts,subtype,89,165181,GSM9237934,1,0.2,largest_library,unc20_largest_library_1026
+13,normal,Alveolar macrophages,macrophages,subtype,7,76868,GSM9237934,1,0.2,largest_library,unc20_largest_library_1027
+13,normal,Interstitial Mph perivascular,macrophages,subtype,2,4234,GSM9237934,1,0.2,largest_library,unc20_largest_library_1037
+13,normal,Monocyte-derived Mph,macrophages,subtype,1,3832,GSM9237934,1,0.2,largest_library,unc20_largest_library_1040
+13,normal,Myofibroblasts,fibroblasts,subtype,1,1105,GSM9237934,1,0.2,largest_library,unc20_largest_library_1042
+14,AIS,AT2,AT2,subtype,646,1926988,GSM9237938,1,0.2,largest_library,unc20_largest_library_1053
+14,AIS,Adventitial fibroblasts,fibroblasts,subtype,11,28295,GSM9237938,1,0.2,largest_library,unc20_largest_library_1054
+14,AIS,Alveolar Mph proliferating,macrophages,subtype,1,9378,GSM9237938,1,0.2,largest_library,unc20_largest_library_1055
+14,AIS,Alveolar fibroblasts,fibroblasts,subtype,326,612158,GSM9237938,1,0.2,largest_library,unc20_largest_library_1056
+14,AIS,Alveolar macrophages,macrophages,subtype,302,2406164,GSM9237938,1,0.2,largest_library,unc20_largest_library_1057
+14,AIS,Interstitial Mph perivascular,macrophages,subtype,21,33119,GSM9237938,1,0.2,largest_library,unc20_largest_library_1071
+14,AIS,Monocyte-derived Mph,macrophages,subtype,11,21106,GSM9237938,1,0.2,largest_library,unc20_largest_library_1075
+14,AIS,Myofibroblasts,fibroblasts,subtype,2,2395,GSM9237938,1,0.2,largest_library,unc20_largest_library_1077
+14,LUAD,AT2,AT2,subtype,480,1649138,GSM9237939,1,0.2,largest_library,unc20_largest_library_1088
+14,LUAD,AT2 proliferating,AT2,subtype,3,32159,GSM9237939,1,0.2,largest_library,unc20_largest_library_1089
+14,LUAD,Adventitial fibroblasts,fibroblasts,subtype,9,18759,GSM9237939,1,0.2,largest_library,unc20_largest_library_1090
+14,LUAD,Alveolar fibroblasts,fibroblasts,subtype,241,367295,GSM9237939,1,0.2,largest_library,unc20_largest_library_1091
+14,LUAD,Alveolar macrophages,macrophages,subtype,51,344106,GSM9237939,1,0.2,largest_library,unc20_largest_library_1092
+14,LUAD,Interstitial Mph perivascular,macrophages,subtype,8,13777,GSM9237939,1,0.2,largest_library,unc20_largest_library_1104
+14,LUAD,Monocyte-derived Mph,macrophages,subtype,3,5909,GSM9237939,1,0.2,largest_library,unc20_largest_library_1108
+14,normal,AT2,AT2,subtype,142,398226,GSM9237937,1,0.2,largest_library,unc20_largest_library_1119
+14,normal,Adventitial fibroblasts,fibroblasts,subtype,5,8572,GSM9237937,1,0.2,largest_library,unc20_largest_library_1120
+14,normal,Alveolar fibroblasts,fibroblasts,subtype,65,242581,GSM9237937,1,0.2,largest_library,unc20_largest_library_1121
+14,normal,Alveolar macrophages,macrophages,subtype,97,660645,GSM9237937,1,0.2,largest_library,unc20_largest_library_1122
+14,normal,Interstitial Mph perivascular,macrophages,subtype,1,2049,GSM9237937,1,0.2,largest_library,unc20_largest_library_1133
+14,normal,Monocyte-derived Mph,macrophages,subtype,4,9553,GSM9237937,1,0.2,largest_library,unc20_largest_library_1137
+15,LUAD,AT2,AT2,subtype,288,768632,GSM9237942,1,0.2,largest_library,unc20_largest_library_1147
+15,LUAD,AT2 proliferating,AT2,subtype,1,5207,GSM9237942,1,0.2,largest_library,unc20_largest_library_1148
+15,LUAD,Adventitial fibroblasts,fibroblasts,subtype,36,75362,GSM9237942,1,0.2,largest_library,unc20_largest_library_1149
+15,LUAD,Alveolar fibroblasts,fibroblasts,subtype,142,224554,GSM9237942,1,0.2,largest_library,unc20_largest_library_1150
+15,LUAD,Alveolar macrophages,macrophages,subtype,52,363676,GSM9237942,1,0.2,largest_library,unc20_largest_library_1151
+15,LUAD,Interstitial Mph perivascular,macrophages,subtype,11,15782,GSM9237942,1,0.2,largest_library,unc20_largest_library_1166
+15,LUAD,Monocyte-derived Mph,macrophages,subtype,61,250618,GSM9237942,1,0.2,largest_library,unc20_largest_library_1171
+15,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,158,470675,GSM9237942,1,0.2,largest_library,unc20_largest_library_1175
+15,MIA,AT2,AT2,subtype,379,1382115,GSM9237941,1,0.2,largest_library,unc20_largest_library_1186
+15,MIA,Adventitial fibroblasts,fibroblasts,subtype,22,47117,GSM9237941,1,0.2,largest_library,unc20_largest_library_1187
+15,MIA,Alveolar Mph proliferating,macrophages,subtype,1,15875,GSM9237941,1,0.2,largest_library,unc20_largest_library_1188
+15,MIA,Alveolar fibroblasts,fibroblasts,subtype,499,845519,GSM9237941,1,0.2,largest_library,unc20_largest_library_1189
+15,MIA,Alveolar macrophages,macrophages,subtype,86,826439,GSM9237941,1,0.2,largest_library,unc20_largest_library_1190
+15,MIA,Interstitial Mph perivascular,macrophages,subtype,26,48687,GSM9237941,1,0.2,largest_library,unc20_largest_library_1204
+15,MIA,Monocyte-derived Mph,macrophages,subtype,2,3205,GSM9237941,1,0.2,largest_library,unc20_largest_library_1207
+15,MIA,Myofibroblasts,fibroblasts,subtype,4,5383,GSM9237941,1,0.2,largest_library,unc20_largest_library_1209
+15,MIA,Peribronchial fibroblasts,fibroblasts,subtype,2,6415,GSM9237941,1,0.2,largest_library,unc20_largest_library_1212
+15,normal,AT2,AT2,subtype,177,537285,GSM9237940,1,0.2,largest_library,unc20_largest_library_1219
+15,normal,Adventitial fibroblasts,fibroblasts,subtype,3,7058,GSM9237940,1,0.2,largest_library,unc20_largest_library_1220
+15,normal,Alveolar fibroblasts,fibroblasts,subtype,208,321388,GSM9237940,1,0.2,largest_library,unc20_largest_library_1221
+15,normal,Alveolar macrophages,macrophages,subtype,34,267520,GSM9237940,1,0.2,largest_library,unc20_largest_library_1222
+15,normal,Interstitial Mph perivascular,macrophages,subtype,3,4875,GSM9237940,1,0.2,largest_library,unc20_largest_library_1233
+15,normal,Monocyte-derived Mph,macrophages,subtype,2,3879,GSM9237940,1,0.2,largest_library,unc20_largest_library_1236
+15,normal,Myofibroblasts,fibroblasts,subtype,1,1187,GSM9237940,1,0.2,largest_library,unc20_largest_library_1238
+15,normal,Peribronchial fibroblasts,fibroblasts,subtype,1,4094,GSM9237940,1,0.2,largest_library,unc20_largest_library_1241
+16,AIS,AT2,AT2,subtype,424,1748885,GSM9237944,1,0.2,largest_library,unc20_largest_library_1247
+16,AIS,Adventitial fibroblasts,fibroblasts,subtype,3,5093,GSM9237944,1,0.2,largest_library,unc20_largest_library_1248
+16,AIS,Alveolar fibroblasts,fibroblasts,subtype,449,637846,GSM9237944,1,0.2,largest_library,unc20_largest_library_1249
+16,AIS,Alveolar macrophages,macrophages,subtype,40,206725,GSM9237944,1,0.2,largest_library,unc20_largest_library_1250
+16,AIS,Monocyte-derived Mph,macrophages,subtype,6,18920,GSM9237944,1,0.2,largest_library,unc20_largest_library_1264
+16,AIS,Myofibroblasts,fibroblasts,subtype,5,5732,GSM9237944,1,0.2,largest_library,unc20_largest_library_1266
+16,LUAD,AT2,AT2,subtype,390,1162896,GSM9237945,1,0.2,largest_library,unc20_largest_library_1275
+16,LUAD,Adventitial fibroblasts,fibroblasts,subtype,2,12548,GSM9237945,1,0.2,largest_library,unc20_largest_library_1276
+16,LUAD,Alveolar fibroblasts,fibroblasts,subtype,212,379707,GSM9237945,1,0.2,largest_library,unc20_largest_library_1277
+16,LUAD,Alveolar macrophages,macrophages,subtype,28,204745,GSM9237945,1,0.2,largest_library,unc20_largest_library_1278
+16,LUAD,Interstitial Mph perivascular,macrophages,subtype,3,9274,GSM9237945,1,0.2,largest_library,unc20_largest_library_1290
+16,LUAD,Monocyte-derived Mph,macrophages,subtype,28,87926,GSM9237945,1,0.2,largest_library,unc20_largest_library_1294
+16,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,10,58022,GSM9237945,1,0.2,largest_library,unc20_largest_library_1298
+16,normal,AT2,AT2,subtype,222,745218,GSM9237943,1,0.2,largest_library,unc20_largest_library_1304
+16,normal,Adventitial fibroblasts,fibroblasts,subtype,5,9851,GSM9237943,1,0.2,largest_library,unc20_largest_library_1305
+16,normal,Alveolar fibroblasts,fibroblasts,subtype,192,302686,GSM9237943,1,0.2,largest_library,unc20_largest_library_1306
+16,normal,Alveolar macrophages,macrophages,subtype,33,290846,GSM9237943,1,0.2,largest_library,unc20_largest_library_1307
+16,normal,Interstitial Mph perivascular,macrophages,subtype,2,3032,GSM9237943,1,0.2,largest_library,unc20_largest_library_1318
+16,normal,Monocyte-derived Mph,macrophages,subtype,5,9251,GSM9237943,1,0.2,largest_library,unc20_largest_library_1321
+17,AIS,AT2,AT2,subtype,1779,8998016,GSM9237947,1,0.2,largest_library,unc20_largest_library_1334
+17,AIS,AT2 proliferating,AT2,subtype,2,18464,GSM9237947,1,0.2,largest_library,unc20_largest_library_1335
+17,AIS,Adventitial fibroblasts,fibroblasts,subtype,46,105719,GSM9237947,1,0.2,largest_library,unc20_largest_library_1336
+17,AIS,Alveolar fibroblasts,fibroblasts,subtype,1087,2310638,GSM9237947,1,0.2,largest_library,unc20_largest_library_1337
+17,AIS,Alveolar macrophages,macrophages,subtype,119,1833261,GSM9237947,1,0.2,largest_library,unc20_largest_library_1338
+17,AIS,Interstitial Mph perivascular,macrophages,subtype,97,171687,GSM9237947,1,0.2,largest_library,unc20_largest_library_1351
+17,AIS,Monocyte-derived Mph,macrophages,subtype,8,39819,GSM9237947,1,0.2,largest_library,unc20_largest_library_1356
+17,AIS,Myofibroblasts,fibroblasts,subtype,4,5597,GSM9237947,1,0.2,largest_library,unc20_largest_library_1358
+17,AIS,Peribronchial fibroblasts,fibroblasts,subtype,4,14425,GSM9237947,1,0.2,largest_library,unc20_largest_library_1361
+17,LUAD,AT2,AT2,subtype,357,1276710,GSM9237948,1,0.2,largest_library,unc20_largest_library_1370
+17,LUAD,Adventitial fibroblasts,fibroblasts,subtype,141,383170,GSM9237948,1,0.2,largest_library,unc20_largest_library_1371
+17,LUAD,Alveolar Mph proliferating,macrophages,subtype,1,1953,GSM9237948,1,0.2,largest_library,unc20_largest_library_1372
+17,LUAD,Alveolar fibroblasts,fibroblasts,subtype,663,1507708,GSM9237948,1,0.2,largest_library,unc20_largest_library_1373
+17,LUAD,Alveolar macrophages,macrophages,subtype,63,442791,GSM9237948,1,0.2,largest_library,unc20_largest_library_1374
+17,LUAD,Interstitial Mph perivascular,macrophages,subtype,122,220058,GSM9237948,1,0.2,largest_library,unc20_largest_library_1390
+17,LUAD,Monocyte-derived Mph,macrophages,subtype,93,327358,GSM9237948,1,0.2,largest_library,unc20_largest_library_1395
+17,LUAD,Myofibroblasts,fibroblasts,subtype,2,3010,GSM9237948,1,0.2,largest_library,unc20_largest_library_1398
+17,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,31,74201,GSM9237948,1,0.2,largest_library,unc20_largest_library_1401
+17,normal,AT2,AT2,subtype,1154,4421306,GSM9237946,1,0.2,largest_library,unc20_largest_library_1415
+17,normal,AT2 proliferating,AT2,subtype,2,12376,GSM9237946,1,0.2,largest_library,unc20_largest_library_1416
+17,normal,Adventitial fibroblasts,fibroblasts,subtype,87,223758,GSM9237946,1,0.2,largest_library,unc20_largest_library_1417
+17,normal,Alveolar fibroblasts,fibroblasts,subtype,1132,2426983,GSM9237946,1,0.2,largest_library,unc20_largest_library_1418
+17,normal,Alveolar macrophages,macrophages,subtype,95,1063616,GSM9237946,1,0.2,largest_library,unc20_largest_library_1419
+17,normal,Interstitial Mph perivascular,macrophages,subtype,75,117827,GSM9237946,1,0.2,largest_library,unc20_largest_library_1434
+17,normal,Monocyte-derived Mph,macrophages,subtype,2,3608,GSM9237946,1,0.2,largest_library,unc20_largest_library_1439
+17,normal,Myofibroblasts,fibroblasts,subtype,1,1189,GSM9237946,1,0.2,largest_library,unc20_largest_library_1441
+17,normal,Peribronchial fibroblasts,fibroblasts,subtype,1,1064,GSM9237946,1,0.2,largest_library,unc20_largest_library_1444
+18,LUAD,AT2,AT2,subtype,1184,4504272,GSM9237951,1,0.2,largest_library,unc20_largest_library_1453
+18,LUAD,AT2 proliferating,AT2,subtype,3,13249,GSM9237951,1,0.2,largest_library,unc20_largest_library_1454
+18,LUAD,Adventitial fibroblasts,fibroblasts,subtype,140,323607,GSM9237951,1,0.2,largest_library,unc20_largest_library_1455
+18,LUAD,Alveolar fibroblasts,fibroblasts,subtype,1028,1980948,GSM9237951,1,0.2,largest_library,unc20_largest_library_1456
+18,LUAD,Alveolar macrophages,macrophages,subtype,142,1451638,GSM9237951,1,0.2,largest_library,unc20_largest_library_1457
+18,LUAD,Interstitial Mph perivascular,macrophages,subtype,9,12086,GSM9237951,1,0.2,largest_library,unc20_largest_library_1472
+18,LUAD,Monocyte-derived Mph,macrophages,subtype,55,183678,GSM9237951,1,0.2,largest_library,unc20_largest_library_1477
+18,LUAD,Myofibroblasts,fibroblasts,subtype,97,137540,GSM9237951,1,0.2,largest_library,unc20_largest_library_1479
+18,MIA,AT2,AT2,subtype,1231,5702457,GSM9237950,1,0.2,largest_library,unc20_largest_library_1492
+18,MIA,AT2 proliferating,AT2,subtype,1,3361,GSM9237950,1,0.2,largest_library,unc20_largest_library_1493
+18,MIA,Adventitial fibroblasts,fibroblasts,subtype,39,98337,GSM9237950,1,0.2,largest_library,unc20_largest_library_1494
+18,MIA,Alveolar fibroblasts,fibroblasts,subtype,1160,2311566,GSM9237950,1,0.2,largest_library,unc20_largest_library_1495
+18,MIA,Alveolar macrophages,macrophages,subtype,174,1676829,GSM9237950,1,0.2,largest_library,unc20_largest_library_1496
+18,MIA,Interstitial Mph perivascular,macrophages,subtype,11,20360,GSM9237950,1,0.2,largest_library,unc20_largest_library_1508
+18,MIA,Monocyte-derived Mph,macrophages,subtype,33,108748,GSM9237950,1,0.2,largest_library,unc20_largest_library_1513
+18,MIA,Myofibroblasts,fibroblasts,subtype,161,236417,GSM9237950,1,0.2,largest_library,unc20_largest_library_1515
+18,MIA,Peribronchial fibroblasts,fibroblasts,subtype,2,6150,GSM9237950,1,0.2,largest_library,unc20_largest_library_1518
+18,normal,AT2,AT2,subtype,1343,2523064,GSM9237949,1,0.2,largest_library,unc20_largest_library_1527
+18,normal,AT2 proliferating,AT2,subtype,1,2853,GSM9237949,1,0.2,largest_library,unc20_largest_library_1528
+18,normal,Adventitial fibroblasts,fibroblasts,subtype,24,51544,GSM9237949,1,0.2,largest_library,unc20_largest_library_1529
+18,normal,Alveolar fibroblasts,fibroblasts,subtype,1180,1882146,GSM9237949,1,0.2,largest_library,unc20_largest_library_1530
+18,normal,Alveolar macrophages,macrophages,subtype,254,1223016,GSM9237949,1,0.2,largest_library,unc20_largest_library_1531
+18,normal,Interstitial Mph perivascular,macrophages,subtype,2,2917,GSM9237949,1,0.2,largest_library,unc20_largest_library_1541
+18,normal,Monocyte-derived Mph,macrophages,subtype,10,21278,GSM9237949,1,0.2,largest_library,unc20_largest_library_1545
+18,normal,Myofibroblasts,fibroblasts,subtype,41,55095,GSM9237949,1,0.2,largest_library,unc20_largest_library_1548
+19,AIS,AT2,AT2,subtype,1591,6827303,GSM9237953,1,0.2,largest_library,unc20_largest_library_1559
+19,AIS,AT2 proliferating,AT2,subtype,4,69859,GSM9237953,1,0.2,largest_library,unc20_largest_library_1560
+19,AIS,Adventitial fibroblasts,fibroblasts,subtype,108,359453,GSM9237953,1,0.2,largest_library,unc20_largest_library_1561
+19,AIS,Alveolar fibroblasts,fibroblasts,subtype,1172,2431236,GSM9237953,1,0.2,largest_library,unc20_largest_library_1562
+19,AIS,Alveolar macrophages,macrophages,subtype,171,1802298,GSM9237953,1,0.2,largest_library,unc20_largest_library_1563
+19,AIS,Interstitial Mph perivascular,macrophages,subtype,64,131022,GSM9237953,1,0.2,largest_library,unc20_largest_library_1577
+19,AIS,Monocyte-derived Mph,macrophages,subtype,24,82464,GSM9237953,1,0.2,largest_library,unc20_largest_library_1581
+19,AIS,Myofibroblasts,fibroblasts,subtype,14,20034,GSM9237953,1,0.2,largest_library,unc20_largest_library_1583
+19,AIS,Peribronchial fibroblasts,fibroblasts,subtype,1,2027,GSM9237953,1,0.2,largest_library,unc20_largest_library_1587
+19,LUAD,AT2,AT2,subtype,2243,9773513,GSM9237954,1,0.2,largest_library,unc20_largest_library_1595
+19,LUAD,AT2 proliferating,AT2,subtype,4,64011,GSM9237954,1,0.2,largest_library,unc20_largest_library_1596
+19,LUAD,Adventitial fibroblasts,fibroblasts,subtype,123,423403,GSM9237954,1,0.2,largest_library,unc20_largest_library_1597
+19,LUAD,Alveolar fibroblasts,fibroblasts,subtype,1576,3435354,GSM9237954,1,0.2,largest_library,unc20_largest_library_1598
+19,LUAD,Alveolar macrophages,macrophages,subtype,255,3361860,GSM9237954,1,0.2,largest_library,unc20_largest_library_1599
+19,LUAD,Interstitial Mph perivascular,macrophages,subtype,92,189456,GSM9237954,1,0.2,largest_library,unc20_largest_library_1612
+19,LUAD,Monocyte-derived Mph,macrophages,subtype,25,122604,GSM9237954,1,0.2,largest_library,unc20_largest_library_1617
+19,LUAD,Myofibroblasts,fibroblasts,subtype,14,21732,GSM9237954,1,0.2,largest_library,unc20_largest_library_1619
+19,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,7,25029,GSM9237954,1,0.2,largest_library,unc20_largest_library_1622
+19,normal,AT2,AT2,subtype,603,3332055,GSM9237952,1,0.2,largest_library,unc20_largest_library_1632
+19,normal,AT2 proliferating,AT2,subtype,1,10465,GSM9237952,1,0.2,largest_library,unc20_largest_library_1633
+19,normal,Adventitial fibroblasts,fibroblasts,subtype,45,239072,GSM9237952,1,0.2,largest_library,unc20_largest_library_1634
+19,normal,Alveolar fibroblasts,fibroblasts,subtype,464,1302050,GSM9237952,1,0.2,largest_library,unc20_largest_library_1635
+19,normal,Alveolar macrophages,macrophages,subtype,118,2358433,GSM9237952,1,0.2,largest_library,unc20_largest_library_1636
+19,normal,Interstitial Mph perivascular,macrophages,subtype,24,86499,GSM9237952,1,0.2,largest_library,unc20_largest_library_1648
+19,normal,Monocyte-derived Mph,macrophages,subtype,19,50962,GSM9237952,1,0.2,largest_library,unc20_largest_library_1652
+19,normal,Myofibroblasts,fibroblasts,subtype,10,17842,GSM9237952,1,0.2,largest_library,unc20_largest_library_1654
+20,AAH,AT2,AT2,subtype,1252,4619637,GSM9237956,1,0.2,largest_library,unc20_largest_library_1665
+20,AAH,AT2 proliferating,AT2,subtype,2,26296,GSM9237956,1,0.2,largest_library,unc20_largest_library_1666
+20,AAH,Adventitial fibroblasts,fibroblasts,subtype,107,364789,GSM9237956,1,0.2,largest_library,unc20_largest_library_1667
+20,AAH,Alveolar fibroblasts,fibroblasts,subtype,977,2443934,GSM9237956,1,0.2,largest_library,unc20_largest_library_1668
+20,AAH,Alveolar macrophages,macrophages,subtype,177,2958319,GSM9237956,1,0.2,largest_library,unc20_largest_library_1669
+20,AAH,Interstitial Mph perivascular,macrophages,subtype,52,114789,GSM9237956,1,0.2,largest_library,unc20_largest_library_1684
+20,AAH,Monocyte-derived Mph,macrophages,subtype,11,38678,GSM9237956,1,0.2,largest_library,unc20_largest_library_1689
+20,AAH,Myofibroblasts,fibroblasts,subtype,5,7887,GSM9237956,1,0.2,largest_library,unc20_largest_library_1691
+20,AAH,Peribronchial fibroblasts,fibroblasts,subtype,7,23309,GSM9237956,1,0.2,largest_library,unc20_largest_library_1694
+20,LUAD,AT2,AT2,subtype,1033,3659680,GSM9237957,1,0.2,largest_library,unc20_largest_library_1702
+20,LUAD,AT2 proliferating,AT2,subtype,1,4177,GSM9237957,1,0.2,largest_library,unc20_largest_library_1703
+20,LUAD,Adventitial fibroblasts,fibroblasts,subtype,24,75094,GSM9237957,1,0.2,largest_library,unc20_largest_library_1704
+20,LUAD,Alveolar fibroblasts,fibroblasts,subtype,921,2001795,GSM9237957,1,0.2,largest_library,unc20_largest_library_1705
+20,LUAD,Alveolar macrophages,macrophages,subtype,125,1303382,GSM9237957,1,0.2,largest_library,unc20_largest_library_1706
+20,LUAD,Interstitial Mph perivascular,macrophages,subtype,38,72191,GSM9237957,1,0.2,largest_library,unc20_largest_library_1721
+20,LUAD,Monocyte-derived Mph,macrophages,subtype,9,22623,GSM9237957,1,0.2,largest_library,unc20_largest_library_1726
+20,LUAD,Myofibroblasts,fibroblasts,subtype,2,2293,GSM9237957,1,0.2,largest_library,unc20_largest_library_1728
+20,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,276,834159,GSM9237957,1,0.2,largest_library,unc20_largest_library_1732
+20,normal,AT2,AT2,subtype,192,489057,GSM9237955,1,0.2,largest_library,unc20_largest_library_1741
+20,normal,Adventitial fibroblasts,fibroblasts,subtype,5,8989,GSM9237955,1,0.2,largest_library,unc20_largest_library_1742
+20,normal,Alveolar fibroblasts,fibroblasts,subtype,160,326127,GSM9237955,1,0.2,largest_library,unc20_largest_library_1743
+20,normal,Alveolar macrophages,macrophages,subtype,25,270939,GSM9237955,1,0.2,largest_library,unc20_largest_library_1744
+20,normal,Interstitial Mph perivascular,macrophages,subtype,4,6982,GSM9237955,1,0.2,largest_library,unc20_largest_library_1754
+20,normal,Monocyte-derived Mph,macrophages,subtype,3,7401,GSM9237955,1,0.2,largest_library,unc20_largest_library_1757
+20,normal,Myofibroblasts,fibroblasts,subtype,3,3875,GSM9237955,1,0.2,largest_library,unc20_largest_library_1759
+21,AIS,AT2,AT2,subtype,1573,6051213,GSM9237959,1,0.2,largest_library,unc20_largest_library_1768
+21,AIS,AT2 proliferating,AT2,subtype,3,20471,GSM9237959,1,0.2,largest_library,unc20_largest_library_1769
+21,AIS,Adventitial fibroblasts,fibroblasts,subtype,49,182090,GSM9237959,1,0.2,largest_library,unc20_largest_library_1770
+21,AIS,Alveolar fibroblasts,fibroblasts,subtype,881,2140753,GSM9237959,1,0.2,largest_library,unc20_largest_library_1771
+21,AIS,Alveolar macrophages,macrophages,subtype,466,7340861,GSM9237959,1,0.2,largest_library,unc20_largest_library_1772
+21,AIS,Interstitial Mph perivascular,macrophages,subtype,25,47202,GSM9237959,1,0.2,largest_library,unc20_largest_library_1785
+21,AIS,Monocyte-derived Mph,macrophages,subtype,17,135178,GSM9237959,1,0.2,largest_library,unc20_largest_library_1789
+21,AIS,Myofibroblasts,fibroblasts,subtype,6,9897,GSM9237959,1,0.2,largest_library,unc20_largest_library_1791
+21,LUAD,AT2,AT2,subtype,191,509657,GSM9237961,1,0.2,largest_library,unc20_largest_library_1802
+21,LUAD,AT2 proliferating,AT2,subtype,4,26898,GSM9237961,1,0.2,largest_library,unc20_largest_library_1803
+21,LUAD,Adventitial fibroblasts,fibroblasts,subtype,7,17948,GSM9237961,1,0.2,largest_library,unc20_largest_library_1804
+21,LUAD,Alveolar fibroblasts,fibroblasts,subtype,62,120683,GSM9237961,1,0.2,largest_library,unc20_largest_library_1805
+21,LUAD,Alveolar macrophages,macrophages,subtype,19,140982,GSM9237961,1,0.2,largest_library,unc20_largest_library_1806
+21,LUAD,Interstitial Mph perivascular,macrophages,subtype,3,7145,GSM9237961,1,0.2,largest_library,unc20_largest_library_1819
+21,LUAD,Monocyte-derived Mph,macrophages,subtype,35,120801,GSM9237961,1,0.2,largest_library,unc20_largest_library_1823
+21,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,94,262433,GSM9237961,1,0.2,largest_library,unc20_largest_library_1827
+21,normal,AT2,AT2,subtype,337,1441902,GSM9237958,1,0.2,largest_library,unc20_largest_library_1835
+21,normal,Adventitial fibroblasts,fibroblasts,subtype,10,26053,GSM9237958,1,0.2,largest_library,unc20_largest_library_1836
+21,normal,Alveolar fibroblasts,fibroblasts,subtype,310,686995,GSM9237958,1,0.2,largest_library,unc20_largest_library_1837
+21,normal,Alveolar macrophages,macrophages,subtype,102,784096,GSM9237958,1,0.2,largest_library,unc20_largest_library_1838
+21,normal,Monocyte-derived Mph,macrophages,subtype,9,20738,GSM9237958,1,0.2,largest_library,unc20_largest_library_1853
+21,normal,Myofibroblasts,fibroblasts,subtype,1,1959,GSM9237958,1,0.2,largest_library,unc20_largest_library_1855
+21,normal,Peribronchial fibroblasts,fibroblasts,subtype,1,3146,GSM9237958,1,0.2,largest_library,unc20_largest_library_1857
+22,AAH,AT2,AT2,subtype,550,2034524,GSM9237963,1,0.2,largest_library,unc20_largest_library_1864
+22,AAH,Adventitial fibroblasts,fibroblasts,subtype,15,46007,GSM9237963,1,0.2,largest_library,unc20_largest_library_1865
+22,AAH,Alveolar Mph proliferating,macrophages,subtype,1,19109,GSM9237963,1,0.2,largest_library,unc20_largest_library_1866
+22,AAH,Alveolar fibroblasts,fibroblasts,subtype,570,1174704,GSM9237963,1,0.2,largest_library,unc20_largest_library_1867
+22,AAH,Alveolar macrophages,macrophages,subtype,334,4113870,GSM9237963,1,0.2,largest_library,unc20_largest_library_1868
+22,AAH,Interstitial Mph perivascular,macrophages,subtype,44,87758,GSM9237963,1,0.2,largest_library,unc20_largest_library_1880
+22,AAH,Monocyte-derived Mph,macrophages,subtype,5,10541,GSM9237963,1,0.2,largest_library,unc20_largest_library_1883
+22,AAH,Myofibroblasts,fibroblasts,subtype,9,12412,GSM9237963,1,0.2,largest_library,unc20_largest_library_1885
+22,AIS,AT2,AT2,subtype,795,3186648,GSM9237964,1,0.2,largest_library,unc20_largest_library_1897
+22,AIS,Adventitial fibroblasts,fibroblasts,subtype,52,172649,GSM9237964,1,0.2,largest_library,unc20_largest_library_1898
+22,AIS,Alveolar fibroblasts,fibroblasts,subtype,585,1406886,GSM9237964,1,0.2,largest_library,unc20_largest_library_1899
+22,AIS,Alveolar macrophages,macrophages,subtype,350,4517781,GSM9237964,1,0.2,largest_library,unc20_largest_library_1900
+22,AIS,Interstitial Mph perivascular,macrophages,subtype,45,93998,GSM9237964,1,0.2,largest_library,unc20_largest_library_1912
+22,AIS,Monocyte-derived Mph,macrophages,subtype,18,85829,GSM9237964,1,0.2,largest_library,unc20_largest_library_1915
+22,AIS,Myofibroblasts,fibroblasts,subtype,11,19970,GSM9237964,1,0.2,largest_library,unc20_largest_library_1917
+22,LUAD,AT2,AT2,subtype,1112,5603891,GSM9237965,1,0.2,largest_library,unc20_largest_library_1929
+22,LUAD,AT2 proliferating,AT2,subtype,1,17437,GSM9237965,1,0.2,largest_library,unc20_largest_library_1930
+22,LUAD,Adventitial fibroblasts,fibroblasts,subtype,54,136855,GSM9237965,1,0.2,largest_library,unc20_largest_library_1931
+22,LUAD,Alveolar fibroblasts,fibroblasts,subtype,758,1749429,GSM9237965,1,0.2,largest_library,unc20_largest_library_1932
+22,LUAD,Alveolar macrophages,macrophages,subtype,301,4023504,GSM9237965,1,0.2,largest_library,unc20_largest_library_1933
+22,LUAD,Interstitial Mph perivascular,macrophages,subtype,57,132510,GSM9237965,1,0.2,largest_library,unc20_largest_library_1947
+22,LUAD,Monocyte-derived Mph,macrophages,subtype,24,164747,GSM9237965,1,0.2,largest_library,unc20_largest_library_1951
+22,LUAD,Myofibroblasts,fibroblasts,subtype,9,17316,GSM9237965,1,0.2,largest_library,unc20_largest_library_1953
+22,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,1,1386,GSM9237965,1,0.2,largest_library,unc20_largest_library_1956
+22,normal,AT2,AT2,subtype,428,1676892,GSM9237962,1,0.2,largest_library,unc20_largest_library_1968
+22,normal,Adventitial fibroblasts,fibroblasts,subtype,16,44011,GSM9237962,1,0.2,largest_library,unc20_largest_library_1969
+22,normal,Alveolar fibroblasts,fibroblasts,subtype,413,950522,GSM9237962,1,0.2,largest_library,unc20_largest_library_1970
+22,normal,Alveolar macrophages,macrophages,subtype,181,2079350,GSM9237962,1,0.2,largest_library,unc20_largest_library_1971
+22,normal,Interstitial Mph perivascular,macrophages,subtype,41,87324,GSM9237962,1,0.2,largest_library,unc20_largest_library_1984
+22,normal,Monocyte-derived Mph,macrophages,subtype,2,5693,GSM9237962,1,0.2,largest_library,unc20_largest_library_1987
+22,normal,Myofibroblasts,fibroblasts,subtype,5,10803,GSM9237962,1,0.2,largest_library,unc20_largest_library_1989
+23,AIS,AT2,AT2,subtype,3469,14376347,GSM9237968,1,0.2,largest_library,unc20_largest_library_2000
+23,AIS,AT2 proliferating,AT2,subtype,2,19012,GSM9237968,1,0.2,largest_library,unc20_largest_library_2001
+23,AIS,Adventitial fibroblasts,fibroblasts,subtype,313,1235565,GSM9237968,1,0.2,largest_library,unc20_largest_library_2002
+23,AIS,Alveolar fibroblasts,fibroblasts,subtype,2980,8335865,GSM9237968,1,0.2,largest_library,unc20_largest_library_2003
+23,AIS,Alveolar macrophages,macrophages,subtype,137,1189805,GSM9237968,1,0.2,largest_library,unc20_largest_library_2004
+23,AIS,Interstitial Mph perivascular,macrophages,subtype,51,134832,GSM9237968,1,0.2,largest_library,unc20_largest_library_2018
+23,AIS,Monocyte-derived Mph,macrophages,subtype,242,915485,GSM9237968,1,0.2,largest_library,unc20_largest_library_2024
+23,AIS,Myofibroblasts,fibroblasts,subtype,9,12977,GSM9237968,1,0.2,largest_library,unc20_largest_library_2026
+23,AIS,Peribronchial fibroblasts,fibroblasts,subtype,18,40688,GSM9237968,1,0.2,largest_library,unc20_largest_library_2030
+23,LUAD,AT2,AT2,subtype,3221,12967849,GSM9237969,1,0.2,largest_library,unc20_largest_library_2046
+23,LUAD,AT2 proliferating,AT2,subtype,4,51329,GSM9237969,1,0.2,largest_library,unc20_largest_library_2047
+23,LUAD,Adventitial fibroblasts,fibroblasts,subtype,63,326045,GSM9237969,1,0.2,largest_library,unc20_largest_library_2048
+23,LUAD,Alveolar fibroblasts,fibroblasts,subtype,3630,9547624,GSM9237969,1,0.2,largest_library,unc20_largest_library_2049
+23,LUAD,Alveolar macrophages,macrophages,subtype,99,1011159,GSM9237969,1,0.2,largest_library,unc20_largest_library_2050
+23,LUAD,Interstitial Mph perivascular,macrophages,subtype,29,62842,GSM9237969,1,0.2,largest_library,unc20_largest_library_2062
+23,LUAD,Monocyte-derived Mph,macrophages,subtype,142,527828,GSM9237969,1,0.2,largest_library,unc20_largest_library_2067
+23,LUAD,Myofibroblasts,fibroblasts,subtype,17,25759,GSM9237969,1,0.2,largest_library,unc20_largest_library_2069
+23,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,26,108025,GSM9237969,1,0.2,largest_library,unc20_largest_library_2072
+23,normal,AT2,AT2,subtype,1005,3861175,GSM9237966,1,0.2,largest_library,unc20_largest_library_2082
+23,normal,Adventitial fibroblasts,fibroblasts,subtype,32,92028,GSM9237966,1,0.2,largest_library,unc20_largest_library_2083
+23,normal,Alveolar fibroblasts,fibroblasts,subtype,799,2362213,GSM9237966,1,0.2,largest_library,unc20_largest_library_2084
+23,normal,Alveolar macrophages,macrophages,subtype,22,194997,GSM9237966,1,0.2,largest_library,unc20_largest_library_2085
+23,normal,Monocyte-derived Mph,macrophages,subtype,27,72727,GSM9237966,1,0.2,largest_library,unc20_largest_library_2099
+24,AAH,AT2,AT2,subtype,2097,33172004,GSM9237971,1,0.2,largest_library,unc20_largest_library_2110
+24,AAH,AT2 proliferating,AT2,subtype,3,21810,GSM9237971,1,0.2,largest_library,unc20_largest_library_2111
+24,AAH,Adventitial fibroblasts,fibroblasts,subtype,52,384306,GSM9237971,1,0.2,largest_library,unc20_largest_library_2112
+24,AAH,Alveolar fibroblasts,fibroblasts,subtype,590,2820957,GSM9237971,1,0.2,largest_library,unc20_largest_library_2113
+24,AAH,Alveolar macrophages,macrophages,subtype,13,205541,GSM9237971,1,0.2,largest_library,unc20_largest_library_2114
+24,AAH,Interstitial Mph perivascular,macrophages,subtype,17,84353,GSM9237971,1,0.2,largest_library,unc20_largest_library_2126
+24,AAH,Monocyte-derived Mph,macrophages,subtype,98,933973,GSM9237971,1,0.2,largest_library,unc20_largest_library_2130
+24,AAH,Myofibroblasts,fibroblasts,subtype,2,10144,GSM9237971,1,0.2,largest_library,unc20_largest_library_2132
+24,AAH,Peribronchial fibroblasts,fibroblasts,subtype,1,1001,GSM9237971,1,0.2,largest_library,unc20_largest_library_2135
+24,LUAD,AT2,AT2,subtype,7302,101923749,GSM9237972,1,0.2,largest_library,unc20_largest_library_2144
+24,LUAD,AT2 proliferating,AT2,subtype,98,3922271,GSM9237972,1,0.2,largest_library,unc20_largest_library_2145
+24,LUAD,Adventitial fibroblasts,fibroblasts,subtype,6,15764,GSM9237972,1,0.2,largest_library,unc20_largest_library_2146
+24,LUAD,Alveolar fibroblasts,fibroblasts,subtype,1656,13060965,GSM9237972,1,0.2,largest_library,unc20_largest_library_2147
+24,LUAD,Alveolar macrophages,macrophages,subtype,888,17919821,GSM9237972,1,0.2,largest_library,unc20_largest_library_2148
+24,LUAD,Interstitial Mph perivascular,macrophages,subtype,8,16666,GSM9237972,1,0.2,largest_library,unc20_largest_library_2161
+24,LUAD,Monocyte-derived Mph,macrophages,subtype,45,371174,GSM9237972,1,0.2,largest_library,unc20_largest_library_2166
+24,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,872,8749565,GSM9237972,1,0.2,largest_library,unc20_largest_library_2170
+24,normal,AT2,AT2,subtype,1718,25405554,GSM9237970,1,0.2,largest_library,unc20_largest_library_2178
+24,normal,Adventitial fibroblasts,fibroblasts,subtype,21,146811,GSM9237970,1,0.2,largest_library,unc20_largest_library_2179
+24,normal,Alveolar fibroblasts,fibroblasts,subtype,489,2076677,GSM9237970,1,0.2,largest_library,unc20_largest_library_2180
+24,normal,Alveolar macrophages,macrophages,subtype,15,451930,GSM9237970,1,0.2,largest_library,unc20_largest_library_2181
+24,normal,Interstitial Mph perivascular,macrophages,subtype,17,54942,GSM9237970,1,0.2,largest_library,unc20_largest_library_2193
+24,normal,Monocyte-derived Mph,macrophages,subtype,32,163394,GSM9237970,1,0.2,largest_library,unc20_largest_library_2198
+24,normal,Myofibroblasts,fibroblasts,subtype,2,6661,GSM9237970,1,0.2,largest_library,unc20_largest_library_2200
+24,normal,Peribronchial fibroblasts,fibroblasts,subtype,3,11983,GSM9237970,1,0.2,largest_library,unc20_largest_library_2203
+25,AAH,AT2,AT2,subtype,428,1735458,GSM9237974,1,0.2,largest_library,unc20_largest_library_2210
+25,AAH,Adventitial fibroblasts,fibroblasts,subtype,1,2746,GSM9237974,1,0.2,largest_library,unc20_largest_library_2211
+25,AAH,Alveolar fibroblasts,fibroblasts,subtype,439,943532,GSM9237974,1,0.2,largest_library,unc20_largest_library_2212
+25,AAH,Alveolar macrophages,macrophages,subtype,32,138332,GSM9237974,1,0.2,largest_library,unc20_largest_library_2213
+25,AAH,Interstitial Mph perivascular,macrophages,subtype,10,21043,GSM9237974,1,0.2,largest_library,unc20_largest_library_2224
+25,AAH,Monocyte-derived Mph,macrophages,subtype,17,117662,GSM9237974,1,0.2,largest_library,unc20_largest_library_2228
+25,AAH,Myofibroblasts,fibroblasts,subtype,1,1987,GSM9237974,1,0.2,largest_library,unc20_largest_library_2230
+25,AAH,Peribronchial fibroblasts,fibroblasts,subtype,7,36817,GSM9237974,1,0.2,largest_library,unc20_largest_library_2233
+25,LUAD,AT2,AT2,subtype,366,1591110,GSM9237975,1,0.2,largest_library,unc20_largest_library_2239
+25,LUAD,AT2 proliferating,AT2,subtype,1,3389,GSM9237975,1,0.2,largest_library,unc20_largest_library_2240
+25,LUAD,Adventitial fibroblasts,fibroblasts,subtype,3,4374,GSM9237975,1,0.2,largest_library,unc20_largest_library_2241
+25,LUAD,Alveolar Mph proliferating,macrophages,subtype,2,31450,GSM9237975,1,0.2,largest_library,unc20_largest_library_2242
+25,LUAD,Alveolar fibroblasts,fibroblasts,subtype,306,930531,GSM9237975,1,0.2,largest_library,unc20_largest_library_2243
+25,LUAD,Alveolar macrophages,macrophages,subtype,112,671628,GSM9237975,1,0.2,largest_library,unc20_largest_library_2244
+25,LUAD,Interstitial Mph perivascular,macrophages,subtype,11,21307,GSM9237975,1,0.2,largest_library,unc20_largest_library_2258
+25,LUAD,Monocyte-derived Mph,macrophages,subtype,86,285614,GSM9237975,1,0.2,largest_library,unc20_largest_library_2264
+25,LUAD,Myofibroblasts,fibroblasts,subtype,6,9876,GSM9237975,1,0.2,largest_library,unc20_largest_library_2266
+25,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,910,3244597,GSM9237975,1,0.2,largest_library,unc20_largest_library_2269
+25,normal,AT2,AT2,subtype,1259,5738568,GSM9237973,1,0.2,largest_library,unc20_largest_library_2278
+25,normal,Adventitial fibroblasts,fibroblasts,subtype,26,47581,GSM9237973,1,0.2,largest_library,unc20_largest_library_2279
+25,normal,Alveolar fibroblasts,fibroblasts,subtype,1174,2451899,GSM9237973,1,0.2,largest_library,unc20_largest_library_2280
+25,normal,Alveolar macrophages,macrophages,subtype,39,261637,GSM9237973,1,0.2,largest_library,unc20_largest_library_2281
+25,normal,Interstitial Mph perivascular,macrophages,subtype,19,37125,GSM9237973,1,0.2,largest_library,unc20_largest_library_2296
+25,normal,Monocyte-derived Mph,macrophages,subtype,57,301131,GSM9237973,1,0.2,largest_library,unc20_largest_library_2301
+25,normal,Myofibroblasts,fibroblasts,subtype,12,21033,GSM9237973,1,0.2,largest_library,unc20_largest_library_2303
+25,normal,Peribronchial fibroblasts,fibroblasts,subtype,7,30849,GSM9237973,1,0.2,largest_library,unc20_largest_library_2307
+3,AIS,__broad__,AT2,broad,673,1491795,GSM9237902,1,0.2,largest_library,unc20_largest_library_2315
+3,AIS,__broad__,fibroblasts,broad,123,188474,GSM9237902,1,0.2,largest_library,unc20_largest_library_2316
+3,AIS,__broad__,macrophages,broad,31,76794,GSM9237902,1,0.2,largest_library,unc20_largest_library_2317
+3,LUAD,__broad__,AT2,broad,310,934100,GSM9237903,1,0.2,largest_library,unc20_largest_library_2318
+3,LUAD,__broad__,fibroblasts,broad,80,127291,GSM9237903,1,0.2,largest_library,unc20_largest_library_2319
+3,LUAD,__broad__,macrophages,broad,23,57365,GSM9237903,1,0.2,largest_library,unc20_largest_library_2320
+3,normal,__broad__,AT2,broad,165,288778,GSM9237901,1,0.2,largest_library,unc20_largest_library_2321
+3,normal,__broad__,fibroblasts,broad,117,173293,GSM9237901,1,0.2,largest_library,unc20_largest_library_2322
+3,normal,__broad__,macrophages,broad,23,54811,GSM9237901,1,0.2,largest_library,unc20_largest_library_2323
+4,AAH,__broad__,AT2,broad,2402,9471960,GSM9237907,1,0.2,largest_library,unc20_largest_library_2324
+4,AAH,__broad__,fibroblasts,broad,954,1914609,GSM9237907,1,0.2,largest_library,unc20_largest_library_2325
+4,AAH,__broad__,macrophages,broad,397,3719065,GSM9237907,1,0.2,largest_library,unc20_largest_library_2326
+4,LUAD,__broad__,AT2,broad,5096,26249048,GSM9237908,1,0.2,largest_library,unc20_largest_library_2327
+4,LUAD,__broad__,fibroblasts,broad,2912,8310393,GSM9237908,1,0.2,largest_library,unc20_largest_library_2328
+4,LUAD,__broad__,macrophages,broad,1151,13987590,GSM9237908,1,0.2,largest_library,unc20_largest_library_2329
+4,normal,__broad__,AT2,broad,4528,20598810,GSM9237904,1,0.2,largest_library,unc20_largest_library_2330
+4,normal,__broad__,fibroblasts,broad,2387,6312772,GSM9237904,1,0.2,largest_library,unc20_largest_library_2331
+4,normal,__broad__,macrophages,broad,1453,17152537,GSM9237904,1,0.2,largest_library,unc20_largest_library_2332
+5,AIS,__broad__,AT2,broad,224,869513,GSM9237910,1,0.2,largest_library,unc20_largest_library_2333
+5,AIS,__broad__,fibroblasts,broad,234,401192,GSM9237910,1,0.2,largest_library,unc20_largest_library_2334
+5,AIS,__broad__,macrophages,broad,45,278628,GSM9237910,1,0.2,largest_library,unc20_largest_library_2335
+5,LUAD,__broad__,AT2,broad,1096,5005180,GSM9237911,1,0.2,largest_library,unc20_largest_library_2336
+5,LUAD,__broad__,fibroblasts,broad,574,1928366,GSM9237911,1,0.2,largest_library,unc20_largest_library_2337
+5,LUAD,__broad__,macrophages,broad,340,1845806,GSM9237911,1,0.2,largest_library,unc20_largest_library_2338
+5,normal,__broad__,AT2,broad,1727,6111600,GSM9237909,1,0.2,largest_library,unc20_largest_library_2339
+5,normal,__broad__,fibroblasts,broad,2919,6447009,GSM9237909,1,0.2,largest_library,unc20_largest_library_2340
+5,normal,__broad__,macrophages,broad,469,4296699,GSM9237909,1,0.2,largest_library,unc20_largest_library_2341
+6,AAH,__broad__,AT2,broad,414,1136231,GSM9237913,1,0.2,largest_library,unc20_largest_library_2342
+6,AAH,__broad__,fibroblasts,broad,282,609112,GSM9237913,1,0.2,largest_library,unc20_largest_library_2343
+6,AAH,__broad__,macrophages,broad,86,665435,GSM9237913,1,0.2,largest_library,unc20_largest_library_2344
+6,LUAD,__broad__,AT2,broad,477,2076289,GSM9237914,1,0.2,largest_library,unc20_largest_library_2345
+6,LUAD,__broad__,fibroblasts,broad,346,907293,GSM9237914,1,0.2,largest_library,unc20_largest_library_2346
+6,LUAD,__broad__,macrophages,broad,259,2207408,GSM9237914,1,0.2,largest_library,unc20_largest_library_2347
+6,normal,__broad__,AT2,broad,142,421410,GSM9237912,1,0.2,largest_library,unc20_largest_library_2348
+6,normal,__broad__,fibroblasts,broad,136,294656,GSM9237912,1,0.2,largest_library,unc20_largest_library_2349
+6,normal,__broad__,macrophages,broad,94,770519,GSM9237912,1,0.2,largest_library,unc20_largest_library_2350
+7,LUAD,__broad__,AT2,broad,553,1617582,GSM9237917,1,0.2,largest_library,unc20_largest_library_2351
+7,LUAD,__broad__,fibroblasts,broad,636,1297104,GSM9237917,1,0.2,largest_library,unc20_largest_library_2352
+7,LUAD,__broad__,macrophages,broad,228,1780347,GSM9237917,1,0.2,largest_library,unc20_largest_library_2353
+7,normal,__broad__,AT2,broad,1385,2781786,GSM9237915,1,0.2,largest_library,unc20_largest_library_2354
+7,normal,__broad__,fibroblasts,broad,809,1190408,GSM9237915,1,0.2,largest_library,unc20_largest_library_2355
+7,normal,__broad__,macrophages,broad,82,469398,GSM9237915,1,0.2,largest_library,unc20_largest_library_2356
+8,AIS,__broad__,AT2,broad,73,169136,GSM9237919,1,0.2,largest_library,unc20_largest_library_2357
+8,AIS,__broad__,fibroblasts,broad,22,32216,GSM9237919,1,0.2,largest_library,unc20_largest_library_2358
+8,AIS,__broad__,macrophages,broad,5,15045,GSM9237919,1,0.2,largest_library,unc20_largest_library_2359
+8,LUAD,__broad__,AT2,broad,292,467337,GSM9237920,1,0.2,largest_library,unc20_largest_library_2360
+8,LUAD,__broad__,fibroblasts,broad,117,246565,GSM9237920,1,0.2,largest_library,unc20_largest_library_2361
+8,LUAD,__broad__,macrophages,broad,105,255307,GSM9237920,1,0.2,largest_library,unc20_largest_library_2362
+8,normal,__broad__,AT2,broad,211,292790,GSM9237918,1,0.2,largest_library,unc20_largest_library_2363
+8,normal,__broad__,fibroblasts,broad,22,42460,GSM9237918,1,0.2,largest_library,unc20_largest_library_2364
+8,normal,__broad__,macrophages,broad,2,2780,GSM9237918,1,0.2,largest_library,unc20_largest_library_2365
+9,AAH,__broad__,AT2,broad,220,690945,GSM9237922,1,0.2,largest_library,unc20_largest_library_2366
+9,AAH,__broad__,fibroblasts,broad,139,259773,GSM9237922,1,0.2,largest_library,unc20_largest_library_2367
+9,AAH,__broad__,macrophages,broad,60,637038,GSM9237922,1,0.2,largest_library,unc20_largest_library_2368
+9,AIS,__broad__,AT2,broad,658,2213908,GSM9237923,1,0.2,largest_library,unc20_largest_library_2369
+9,AIS,__broad__,fibroblasts,broad,466,902627,GSM9237923,1,0.2,largest_library,unc20_largest_library_2370
+9,AIS,__broad__,macrophages,broad,55,378008,GSM9237923,1,0.2,largest_library,unc20_largest_library_2371
+9,LUAD,__broad__,AT2,broad,677,1942718,GSM9237924,1,0.2,largest_library,unc20_largest_library_2372
+9,LUAD,__broad__,fibroblasts,broad,356,643949,GSM9237924,1,0.2,largest_library,unc20_largest_library_2373
+9,LUAD,__broad__,macrophages,broad,93,403167,GSM9237924,1,0.2,largest_library,unc20_largest_library_2374
+9,normal,__broad__,AT2,broad,279,973207,GSM9237921,1,0.2,largest_library,unc20_largest_library_2375
+9,normal,__broad__,fibroblasts,broad,246,583486,GSM9237921,1,0.2,largest_library,unc20_largest_library_2376
+9,normal,__broad__,macrophages,broad,40,515224,GSM9237921,1,0.2,largest_library,unc20_largest_library_2377
+10,LUAD,__broad__,AT2,broad,781,3095884,GSM9237927,1,0.2,largest_library,unc20_largest_library_2378
+10,LUAD,__broad__,fibroblasts,broad,633,1601136,GSM9237927,1,0.2,largest_library,unc20_largest_library_2379
+10,LUAD,__broad__,macrophages,broad,191,1788998,GSM9237927,1,0.2,largest_library,unc20_largest_library_2380
+10,MIA,__broad__,AT2,broad,451,2039084,GSM9237926,1,0.2,largest_library,unc20_largest_library_2381
+10,MIA,__broad__,fibroblasts,broad,284,461887,GSM9237926,1,0.2,largest_library,unc20_largest_library_2382
+10,MIA,__broad__,macrophages,broad,38,201417,GSM9237926,1,0.2,largest_library,unc20_largest_library_2383
+10,normal,__broad__,AT2,broad,176,410176,GSM9237925,1,0.2,largest_library,unc20_largest_library_2384
+10,normal,__broad__,fibroblasts,broad,102,196027,GSM9237925,1,0.2,largest_library,unc20_largest_library_2385
+10,normal,__broad__,macrophages,broad,24,117480,GSM9237925,1,0.2,largest_library,unc20_largest_library_2386
+11,AAH,__broad__,AT2,broad,462,2380857,GSM9237929,1,0.2,largest_library,unc20_largest_library_2387
+11,AAH,__broad__,fibroblasts,broad,282,483610,GSM9237929,1,0.2,largest_library,unc20_largest_library_2388
+11,AAH,__broad__,macrophages,broad,92,628526,GSM9237929,1,0.2,largest_library,unc20_largest_library_2389
+11,LUAD,__broad__,AT2,broad,578,2821500,GSM9237930,1,0.2,largest_library,unc20_largest_library_2390
+11,LUAD,__broad__,fibroblasts,broad,650,1914483,GSM9237930,1,0.2,largest_library,unc20_largest_library_2391
+11,LUAD,__broad__,macrophages,broad,214,1647891,GSM9237930,1,0.2,largest_library,unc20_largest_library_2392
+11,normal,__broad__,AT2,broad,144,427453,GSM9237928,1,0.2,largest_library,unc20_largest_library_2393
+11,normal,__broad__,fibroblasts,broad,143,217430,GSM9237928,1,0.2,largest_library,unc20_largest_library_2394
+11,normal,__broad__,macrophages,broad,25,100487,GSM9237928,1,0.2,largest_library,unc20_largest_library_2395
+12,AIS,__broad__,AT2,broad,465,3249735,GSM9237932,1,0.2,largest_library,unc20_largest_library_2396
+12,AIS,__broad__,fibroblasts,broad,258,484881,GSM9237932,1,0.2,largest_library,unc20_largest_library_2397
+12,AIS,__broad__,macrophages,broad,40,382295,GSM9237932,1,0.2,largest_library,unc20_largest_library_2398
+12,LUAD,__broad__,AT2,broad,547,3512631,GSM9237933,1,0.2,largest_library,unc20_largest_library_2399
+12,LUAD,__broad__,fibroblasts,broad,192,285602,GSM9237933,1,0.2,largest_library,unc20_largest_library_2400
+12,LUAD,__broad__,macrophages,broad,56,302454,GSM9237933,1,0.2,largest_library,unc20_largest_library_2401
+12,normal,__broad__,AT2,broad,197,797300,GSM9237931,1,0.2,largest_library,unc20_largest_library_2402
+12,normal,__broad__,fibroblasts,broad,180,356329,GSM9237931,1,0.2,largest_library,unc20_largest_library_2403
+12,normal,__broad__,macrophages,broad,36,478636,GSM9237931,1,0.2,largest_library,unc20_largest_library_2404
+13,LUAD,__broad__,AT2,broad,181,975454,GSM9237936,1,0.2,largest_library,unc20_largest_library_2405
+13,LUAD,__broad__,fibroblasts,broad,228,556973,GSM9237936,1,0.2,largest_library,unc20_largest_library_2406
+13,LUAD,__broad__,macrophages,broad,67,411353,GSM9237936,1,0.2,largest_library,unc20_largest_library_2407
+13,MIA,__broad__,AT2,broad,319,1342302,GSM9237935,1,0.2,largest_library,unc20_largest_library_2408
+13,MIA,__broad__,fibroblasts,broad,298,484539,GSM9237935,1,0.2,largest_library,unc20_largest_library_2409
+13,MIA,__broad__,macrophages,broad,102,669169,GSM9237935,1,0.2,largest_library,unc20_largest_library_2410
+13,normal,__broad__,AT2,broad,97,345800,GSM9237934,1,0.2,largest_library,unc20_largest_library_2411
+13,normal,__broad__,fibroblasts,broad,90,166286,GSM9237934,1,0.2,largest_library,unc20_largest_library_2412
+13,normal,__broad__,macrophages,broad,10,84934,GSM9237934,1,0.2,largest_library,unc20_largest_library_2413
+14,AIS,__broad__,AT2,broad,646,1926988,GSM9237938,1,0.2,largest_library,unc20_largest_library_2414
+14,AIS,__broad__,fibroblasts,broad,339,642848,GSM9237938,1,0.2,largest_library,unc20_largest_library_2415
+14,AIS,__broad__,macrophages,broad,335,2469767,GSM9237938,1,0.2,largest_library,unc20_largest_library_2416
+14,LUAD,__broad__,AT2,broad,483,1681297,GSM9237939,1,0.2,largest_library,unc20_largest_library_2417
+14,LUAD,__broad__,fibroblasts,broad,250,386054,GSM9237939,1,0.2,largest_library,unc20_largest_library_2418
+14,LUAD,__broad__,macrophages,broad,62,363792,GSM9237939,1,0.2,largest_library,unc20_largest_library_2419
+14,normal,__broad__,AT2,broad,142,398226,GSM9237937,1,0.2,largest_library,unc20_largest_library_2420
+14,normal,__broad__,fibroblasts,broad,70,251153,GSM9237937,1,0.2,largest_library,unc20_largest_library_2421
+14,normal,__broad__,macrophages,broad,102,672247,GSM9237937,1,0.2,largest_library,unc20_largest_library_2422
+15,LUAD,__broad__,AT2,broad,289,773839,GSM9237942,1,0.2,largest_library,unc20_largest_library_2423
+15,LUAD,__broad__,fibroblasts,broad,336,770591,GSM9237942,1,0.2,largest_library,unc20_largest_library_2424
+15,LUAD,__broad__,macrophages,broad,124,630076,GSM9237942,1,0.2,largest_library,unc20_largest_library_2425
+15,MIA,__broad__,AT2,broad,379,1382115,GSM9237941,1,0.2,largest_library,unc20_largest_library_2426
+15,MIA,__broad__,fibroblasts,broad,527,904434,GSM9237941,1,0.2,largest_library,unc20_largest_library_2427
+15,MIA,__broad__,macrophages,broad,115,894206,GSM9237941,1,0.2,largest_library,unc20_largest_library_2428
+15,normal,__broad__,AT2,broad,177,537285,GSM9237940,1,0.2,largest_library,unc20_largest_library_2429
+15,normal,__broad__,fibroblasts,broad,213,333727,GSM9237940,1,0.2,largest_library,unc20_largest_library_2430
+15,normal,__broad__,macrophages,broad,39,276274,GSM9237940,1,0.2,largest_library,unc20_largest_library_2431
+16,AIS,__broad__,AT2,broad,424,1748885,GSM9237944,1,0.2,largest_library,unc20_largest_library_2432
+16,AIS,__broad__,fibroblasts,broad,457,648671,GSM9237944,1,0.2,largest_library,unc20_largest_library_2433
+16,AIS,__broad__,macrophages,broad,46,225645,GSM9237944,1,0.2,largest_library,unc20_largest_library_2434
+16,LUAD,__broad__,AT2,broad,390,1162896,GSM9237945,1,0.2,largest_library,unc20_largest_library_2435
+16,LUAD,__broad__,fibroblasts,broad,224,450277,GSM9237945,1,0.2,largest_library,unc20_largest_library_2436
+16,LUAD,__broad__,macrophages,broad,59,301945,GSM9237945,1,0.2,largest_library,unc20_largest_library_2437
+16,normal,__broad__,AT2,broad,222,745218,GSM9237943,1,0.2,largest_library,unc20_largest_library_2438
+16,normal,__broad__,fibroblasts,broad,197,312537,GSM9237943,1,0.2,largest_library,unc20_largest_library_2439
+16,normal,__broad__,macrophages,broad,40,303129,GSM9237943,1,0.2,largest_library,unc20_largest_library_2440
+17,AIS,__broad__,AT2,broad,1781,9016480,GSM9237947,1,0.2,largest_library,unc20_largest_library_2441
+17,AIS,__broad__,fibroblasts,broad,1141,2436379,GSM9237947,1,0.2,largest_library,unc20_largest_library_2442
+17,AIS,__broad__,macrophages,broad,224,2044767,GSM9237947,1,0.2,largest_library,unc20_largest_library_2443
+17,LUAD,__broad__,AT2,broad,357,1276710,GSM9237948,1,0.2,largest_library,unc20_largest_library_2444
+17,LUAD,__broad__,fibroblasts,broad,837,1968089,GSM9237948,1,0.2,largest_library,unc20_largest_library_2445
+17,LUAD,__broad__,macrophages,broad,279,992160,GSM9237948,1,0.2,largest_library,unc20_largest_library_2446
+17,normal,__broad__,AT2,broad,1156,4433682,GSM9237946,1,0.2,largest_library,unc20_largest_library_2447
+17,normal,__broad__,fibroblasts,broad,1221,2652994,GSM9237946,1,0.2,largest_library,unc20_largest_library_2448
+17,normal,__broad__,macrophages,broad,172,1185051,GSM9237946,1,0.2,largest_library,unc20_largest_library_2449
+18,LUAD,__broad__,AT2,broad,1187,4517521,GSM9237951,1,0.2,largest_library,unc20_largest_library_2450
+18,LUAD,__broad__,fibroblasts,broad,1265,2442095,GSM9237951,1,0.2,largest_library,unc20_largest_library_2451
+18,LUAD,__broad__,macrophages,broad,206,1647402,GSM9237951,1,0.2,largest_library,unc20_largest_library_2452
+18,MIA,__broad__,AT2,broad,1232,5705818,GSM9237950,1,0.2,largest_library,unc20_largest_library_2453
+18,MIA,__broad__,fibroblasts,broad,1362,2652470,GSM9237950,1,0.2,largest_library,unc20_largest_library_2454
+18,MIA,__broad__,macrophages,broad,218,1805937,GSM9237950,1,0.2,largest_library,unc20_largest_library_2455
+18,normal,__broad__,AT2,broad,1344,2525917,GSM9237949,1,0.2,largest_library,unc20_largest_library_2456
+18,normal,__broad__,fibroblasts,broad,1245,1988785,GSM9237949,1,0.2,largest_library,unc20_largest_library_2457
+18,normal,__broad__,macrophages,broad,266,1247211,GSM9237949,1,0.2,largest_library,unc20_largest_library_2458
+19,AIS,__broad__,AT2,broad,1595,6897162,GSM9237953,1,0.2,largest_library,unc20_largest_library_2459
+19,AIS,__broad__,fibroblasts,broad,1295,2812750,GSM9237953,1,0.2,largest_library,unc20_largest_library_2460
+19,AIS,__broad__,macrophages,broad,259,2015784,GSM9237953,1,0.2,largest_library,unc20_largest_library_2461
+19,LUAD,__broad__,AT2,broad,2247,9837524,GSM9237954,1,0.2,largest_library,unc20_largest_library_2462
+19,LUAD,__broad__,fibroblasts,broad,1720,3905518,GSM9237954,1,0.2,largest_library,unc20_largest_library_2463
+19,LUAD,__broad__,macrophages,broad,372,3673920,GSM9237954,1,0.2,largest_library,unc20_largest_library_2464
+19,normal,__broad__,AT2,broad,604,3342520,GSM9237952,1,0.2,largest_library,unc20_largest_library_2465
+19,normal,__broad__,fibroblasts,broad,519,1558964,GSM9237952,1,0.2,largest_library,unc20_largest_library_2466
+19,normal,__broad__,macrophages,broad,161,2495894,GSM9237952,1,0.2,largest_library,unc20_largest_library_2467
+20,AAH,__broad__,AT2,broad,1254,4645933,GSM9237956,1,0.2,largest_library,unc20_largest_library_2468
+20,AAH,__broad__,fibroblasts,broad,1096,2839919,GSM9237956,1,0.2,largest_library,unc20_largest_library_2469
+20,AAH,__broad__,macrophages,broad,240,3111786,GSM9237956,1,0.2,largest_library,unc20_largest_library_2470
+20,LUAD,__broad__,AT2,broad,1034,3663857,GSM9237957,1,0.2,largest_library,unc20_largest_library_2471
+20,LUAD,__broad__,fibroblasts,broad,1223,2913341,GSM9237957,1,0.2,largest_library,unc20_largest_library_2472
+20,LUAD,__broad__,macrophages,broad,172,1398196,GSM9237957,1,0.2,largest_library,unc20_largest_library_2473
+20,normal,__broad__,AT2,broad,192,489057,GSM9237955,1,0.2,largest_library,unc20_largest_library_2474
+20,normal,__broad__,fibroblasts,broad,168,338991,GSM9237955,1,0.2,largest_library,unc20_largest_library_2475
+20,normal,__broad__,macrophages,broad,32,285322,GSM9237955,1,0.2,largest_library,unc20_largest_library_2476
+21,AIS,__broad__,AT2,broad,1576,6071684,GSM9237959,1,0.2,largest_library,unc20_largest_library_2477
+21,AIS,__broad__,fibroblasts,broad,936,2332740,GSM9237959,1,0.2,largest_library,unc20_largest_library_2478
+21,AIS,__broad__,macrophages,broad,508,7523241,GSM9237959,1,0.2,largest_library,unc20_largest_library_2479
+21,LUAD,__broad__,AT2,broad,195,536555,GSM9237961,1,0.2,largest_library,unc20_largest_library_2480
+21,LUAD,__broad__,fibroblasts,broad,163,401064,GSM9237961,1,0.2,largest_library,unc20_largest_library_2481
+21,LUAD,__broad__,macrophages,broad,57,268928,GSM9237961,1,0.2,largest_library,unc20_largest_library_2482
+21,normal,__broad__,AT2,broad,337,1441902,GSM9237958,1,0.2,largest_library,unc20_largest_library_2483
+21,normal,__broad__,fibroblasts,broad,322,718153,GSM9237958,1,0.2,largest_library,unc20_largest_library_2484
+21,normal,__broad__,macrophages,broad,111,804834,GSM9237958,1,0.2,largest_library,unc20_largest_library_2485
+22,AAH,__broad__,AT2,broad,550,2034524,GSM9237963,1,0.2,largest_library,unc20_largest_library_2486
+22,AAH,__broad__,fibroblasts,broad,594,1233123,GSM9237963,1,0.2,largest_library,unc20_largest_library_2487
+22,AAH,__broad__,macrophages,broad,384,4231278,GSM9237963,1,0.2,largest_library,unc20_largest_library_2488
+22,AIS,__broad__,AT2,broad,795,3186648,GSM9237964,1,0.2,largest_library,unc20_largest_library_2489
+22,AIS,__broad__,fibroblasts,broad,648,1599505,GSM9237964,1,0.2,largest_library,unc20_largest_library_2490
+22,AIS,__broad__,macrophages,broad,413,4697608,GSM9237964,1,0.2,largest_library,unc20_largest_library_2491
+22,LUAD,__broad__,AT2,broad,1113,5621328,GSM9237965,1,0.2,largest_library,unc20_largest_library_2492
+22,LUAD,__broad__,fibroblasts,broad,822,1904986,GSM9237965,1,0.2,largest_library,unc20_largest_library_2493
+22,LUAD,__broad__,macrophages,broad,382,4320761,GSM9237965,1,0.2,largest_library,unc20_largest_library_2494
+22,normal,__broad__,AT2,broad,428,1676892,GSM9237962,1,0.2,largest_library,unc20_largest_library_2495
+22,normal,__broad__,fibroblasts,broad,434,1005336,GSM9237962,1,0.2,largest_library,unc20_largest_library_2496
+22,normal,__broad__,macrophages,broad,224,2172367,GSM9237962,1,0.2,largest_library,unc20_largest_library_2497
+23,AIS,__broad__,AT2,broad,3471,14395359,GSM9237968,1,0.2,largest_library,unc20_largest_library_2498
+23,AIS,__broad__,fibroblasts,broad,3320,9625095,GSM9237968,1,0.2,largest_library,unc20_largest_library_2499
+23,AIS,__broad__,macrophages,broad,430,2240122,GSM9237968,1,0.2,largest_library,unc20_largest_library_2500
+23,LUAD,__broad__,AT2,broad,3225,13019178,GSM9237969,1,0.2,largest_library,unc20_largest_library_2501
+23,LUAD,__broad__,fibroblasts,broad,3736,10007453,GSM9237969,1,0.2,largest_library,unc20_largest_library_2502
+23,LUAD,__broad__,macrophages,broad,270,1601829,GSM9237969,1,0.2,largest_library,unc20_largest_library_2503
+23,normal,__broad__,AT2,broad,1005,3861175,GSM9237966,1,0.2,largest_library,unc20_largest_library_2504
+23,normal,__broad__,fibroblasts,broad,831,2454241,GSM9237966,1,0.2,largest_library,unc20_largest_library_2505
+23,normal,__broad__,macrophages,broad,49,267724,GSM9237966,1,0.2,largest_library,unc20_largest_library_2506
+24,AAH,__broad__,AT2,broad,2100,33193814,GSM9237971,1,0.2,largest_library,unc20_largest_library_2507
+24,AAH,__broad__,fibroblasts,broad,645,3216408,GSM9237971,1,0.2,largest_library,unc20_largest_library_2508
+24,AAH,__broad__,macrophages,broad,128,1223867,GSM9237971,1,0.2,largest_library,unc20_largest_library_2509
+24,LUAD,__broad__,AT2,broad,7400,105846020,GSM9237972,1,0.2,largest_library,unc20_largest_library_2510
+24,LUAD,__broad__,fibroblasts,broad,2534,21826294,GSM9237972,1,0.2,largest_library,unc20_largest_library_2511
+24,LUAD,__broad__,macrophages,broad,941,18307661,GSM9237972,1,0.2,largest_library,unc20_largest_library_2512
+24,normal,__broad__,AT2,broad,1718,25405554,GSM9237970,1,0.2,largest_library,unc20_largest_library_2513
+24,normal,__broad__,fibroblasts,broad,515,2242132,GSM9237970,1,0.2,largest_library,unc20_largest_library_2514
+24,normal,__broad__,macrophages,broad,64,670266,GSM9237970,1,0.2,largest_library,unc20_largest_library_2515
+25,AAH,__broad__,AT2,broad,428,1735458,GSM9237974,1,0.2,largest_library,unc20_largest_library_2516
+25,AAH,__broad__,fibroblasts,broad,448,985082,GSM9237974,1,0.2,largest_library,unc20_largest_library_2517
+25,AAH,__broad__,macrophages,broad,59,277037,GSM9237974,1,0.2,largest_library,unc20_largest_library_2518
+25,LUAD,__broad__,AT2,broad,367,1594499,GSM9237975,1,0.2,largest_library,unc20_largest_library_2519
+25,LUAD,__broad__,fibroblasts,broad,1225,4189378,GSM9237975,1,0.2,largest_library,unc20_largest_library_2520
+25,LUAD,__broad__,macrophages,broad,211,1009999,GSM9237975,1,0.2,largest_library,unc20_largest_library_2521
+25,normal,__broad__,AT2,broad,1259,5738568,GSM9237973,1,0.2,largest_library,unc20_largest_library_2522
+25,normal,__broad__,fibroblasts,broad,1219,2551362,GSM9237973,1,0.2,largest_library,unc20_largest_library_2523
+25,normal,__broad__,macrophages,broad,115,599893,GSM9237973,1,0.2,largest_library,unc20_largest_library_2524

@@ -1,0 +1,14 @@
+{
+  "frozen_utc": "2026-09-24T11:24:45.718179+00:00",
+  "cohort": "GSE136831",
+  "scope": "extension after observational DE inspection; descriptive ligand prioritization, no independent validation",
+  "metric": "NicheNet-prior Pearson statistic, base-R implementation; not full nichenetr package",
+  "prior_record_sha256": "7875980a81c711467cbf2688440c9b937c2030f96088081244a4221b997d188b",
+  "receiver_targets": "donor-level edgeR TMM / limma voom DE q<.05; up and down separate; minimum ten mapped genes",
+  "background": "all tested receiver genes intersect prior rows; mapping coverage reported",
+  "loo": "repeat expression filtering, TMM, voom, DE, BH and target selection after excluding each donor; minimum three units per arm retained",
+  "cell_floor": 50,
+  "duplicate_AT2_broad_view": "omitted because identical to sole subtype",
+  "candidate_ranking": "all prior ligands scored here; source-filtered planned ligand family rankings produced separately; unmeasured source/receptor genes remain unevaluable",
+  "refit_script_sha256": "b02876162341d1df54552105ce52fe7ea0e89a24f760875f7976398f010c19dd"
+}

@@ -1,0 +1,106 @@
+{
+  "status": "completed_bounded_access_audit",
+  "checked_utc": "2026-09-24T12:33:53.626584+00:00",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "380dac1763555a32a4ab53ad7c2b4c98a3eccfd5465cce51b56f3bf2363460f0",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u2_remaining_context_access.py",
+    "entrypoint_sha256": "5ab9479964b160071f2acc722676aeeaa2d5ab85fa73259f94af33338d60b05c"
+  },
+  "files": [
+    {
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/commits/main",
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\han_commit.json",
+      "status": 200,
+      "bytes": 6854,
+      "sha256": "bdbb02534755dd6aa4b70586fde6597133b1c3d3f855869eff79fa1bb69385d3"
+    },
+    {
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/trees/e1cbecd5dc0e36cc3b22f266804597b179096514?recursive=1",
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\han_tree.json",
+      "status": 200,
+      "bytes": 13760,
+      "sha256": "0b785157449860121a027e260145997e0c95492610e0d4000348c21ad8fdd95a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MinhoLee-DGU/2023.Han.et.al.Nature/e1cbecd5dc0e36cc3b22f266804597b179096514/README.md",
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\README.md",
+      "status": 200,
+      "bytes": 1902,
+      "sha256": "601a56abc81b2fc676684644cfd15bcf746f5da263015681e944cec164f3c8b0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MinhoLee-DGU/2023.Han.et.al.Nature/e1cbecd5dc0e36cc3b22f266804597b179096514/scRNA/Whole%20clusters.R",
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\scRNA_Whole_clusters.R",
+      "status": 200,
+      "bytes": 15604,
+      "sha256": "5d339455c489570522c854b2b2961fa03fd27575541838137d73d59e953e9cae"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MinhoLee-DGU/2023.Han.et.al.Nature/e1cbecd5dc0e36cc3b22f266804597b179096514/scRNA/Subset%20epithelial.R",
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\scRNA_Subset_epithelial.R",
+      "status": 200,
+      "bytes": 9841,
+      "sha256": "5731d620734cbc69dc54646301f677bc5b6fa12e65e14019a8139a0323b4a64c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MinhoLee-DGU/2023.Han.et.al.Nature/e1cbecd5dc0e36cc3b22f266804597b179096514/scRNA/AT1%20Pseudobulk.R",
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\scRNA_AT1_Pseudobulk.R",
+      "status": 200,
+      "bytes": 4085,
+      "sha256": "df51df1a0413826f44a4dcebc7768169f839ef47115e4007a1c1116c9452cf90"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MinhoLee-DGU/2023.Han.et.al.Nature/e1cbecd5dc0e36cc3b22f266804597b179096514/scRNA/Other%20models%20and%20NDUFS2%20cKO%20Epithelium.R",
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\scRNA_Other_models_and_NDUFS2_cKO_Epithelium.R",
+      "status": 200,
+      "bytes": 4741,
+      "sha256": "bf27f6e738ff61e8462f30ce13d04e970b0585331abe54574978b0a1534e0e8d"
+    },
+    {
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/issues?state=all&per_page=20",
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\han_issues.json",
+      "status": 200,
+      "bytes": 2888,
+      "sha256": "310736adef44fcebaa29b604054a5e2921bf81fa579a9119e7cfcf4286e893ca"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE267nnn/GSE267226/suppl/",
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\GSE267226_supplementary_directory.html",
+      "status": 200,
+      "bytes": 673,
+      "sha256": "0809c126b2d2c94120b72e6e378daad843236e85813e6e8d2a221fe4b42ec1e7"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE267nnn/GSE267228/suppl/",
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\GSE267228_supplementary_directory.html",
+      "status": 200,
+      "bytes": 673,
+      "sha256": "40c8c3eb3baa46b4b62afd9a14c44c33e2bda5d48b454ab699b29d0a6947828b"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE222nnn/GSE222901/suppl/",
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\GSE222901_supplementary_directory.html",
+      "status": 200,
+      "bytes": 673,
+      "sha256": "1d4fa6409901e03539b8f9f5913c891a255c72a47ecd18895a2e6d8a6b30ad07"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE300nnn/GSE300293/suppl/",
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\GSE300293_supplementary_directory.html",
+      "status": 200,
+      "bytes": 673,
+      "sha256": "30edbe9bfe30350aad3a7720efd9ebf4fa1fd1bc664269f2bdb629b0b61c2fa8"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307534/suppl/",
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\GSE307534_supplementary_directory.html",
+      "status": 200,
+      "bytes": 673,
+      "sha256": "fd15e26d8d9db020130a4a0d994041d0bb7fb7f42d02c8a1ca0e691aaece0881"
+    }
+  ],
+  "scope": "public code/directory inventory only; no raw FASTQ acquisition or expression-completion claim"
+}

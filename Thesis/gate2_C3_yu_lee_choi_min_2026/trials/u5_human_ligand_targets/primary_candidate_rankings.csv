@@ -1,0 +1,944 @@
+comp,label,case,reference,omitted_patient,direction,ligand,pearson,scope,rank,ranked_ligands,planned_omissions
+AT2,AT2,AIS,normal,__none__,up,CXCL12,0.0122086246451156,focused_triad,10.0,11,12
+AT2,AT2,AIS,normal,__none__,up,CXCL2,0.0144358659245902,focused_triad,9.0,11,12
+AT2,AT2,AIS,normal,__none__,up,FGF7,0.0160954275201006,focused_triad,8.0,11,12
+AT2,AT2,AIS,normal,__none__,up,HBEGF,0.0252152084545778,focused_triad,7.0,11,12
+AT2,AT2,AIS,normal,__none__,up,TGFB1,0.0252167910398236,focused_triad,6.0,11,12
+AT2,AT2,AIS,normal,__none__,up,VEGFA,0.0099384731403452,focused_triad,11.0,11,12
+AT2,AT2,AIS,normal,__none__,up,WNT10B,0.0329534973188313,focused_triad,4.0,11,12
+AT2,AT2,AIS,normal,__none__,up,WNT11,0.0331584004854101,focused_triad,3.0,11,12
+AT2,AT2,AIS,normal,__none__,up,WNT2,0.0350811662733522,focused_triad,2.0,11,12
+AT2,AT2,AIS,normal,__none__,up,WNT2B,0.0317058560676555,focused_triad,5.0,11,12
+AT2,AT2,AIS,normal,__none__,up,WNT5A,0.0387800556965084,focused_triad,1.0,11,12
+AT2,AT2,AIS,normal,__none__,up,AREG,0.0268228158720497,source_agnostic_planned_panel,12.0,19,12
+AT2,AT2,AIS,normal,__none__,up,CXCL12,0.0122086246451156,source_agnostic_planned_panel,18.0,19,12
+AT2,AT2,AIS,normal,__none__,up,CXCL2,0.0144358659245902,source_agnostic_planned_panel,17.0,19,12
+AT2,AT2,AIS,normal,__none__,up,FGF7,0.0160954275201006,source_agnostic_planned_panel,16.0,19,12
+AT2,AT2,AIS,normal,__none__,up,HBEGF,0.0252152084545778,source_agnostic_planned_panel,14.0,19,12
+AT2,AT2,AIS,normal,__none__,up,TGFB1,0.0252167910398236,source_agnostic_planned_panel,13.0,19,12
+AT2,AT2,AIS,normal,__none__,up,VEGFA,0.0099384731403452,source_agnostic_planned_panel,19.0,19,12
+AT2,AT2,AIS,normal,__none__,up,WNT10A,0.0348133554571089,source_agnostic_planned_panel,5.0,19,12
+AT2,AT2,AIS,normal,__none__,up,WNT10B,0.0329534973188313,source_agnostic_planned_panel,8.0,19,12
+AT2,AT2,AIS,normal,__none__,up,WNT11,0.0331584004854101,source_agnostic_planned_panel,7.0,19,12
+AT2,AT2,AIS,normal,__none__,up,WNT2,0.0350811662733522,source_agnostic_planned_panel,3.0,19,12
+AT2,AT2,AIS,normal,__none__,up,WNT2B,0.0317058560676555,source_agnostic_planned_panel,10.0,19,12
+AT2,AT2,AIS,normal,__none__,up,WNT3A,0.0212275023655868,source_agnostic_planned_panel,15.0,19,12
+AT2,AT2,AIS,normal,__none__,up,WNT4,0.0312311561470367,source_agnostic_planned_panel,11.0,19,12
+AT2,AT2,AIS,normal,__none__,up,WNT5A,0.0387800556965084,source_agnostic_planned_panel,1.0,19,12
+AT2,AT2,AIS,normal,__none__,up,WNT5B,0.0327728554471197,source_agnostic_planned_panel,9.0,19,12
+AT2,AT2,AIS,normal,__none__,up,WNT7A,0.0355206950818129,source_agnostic_planned_panel,2.0,19,12
+AT2,AT2,AIS,normal,__none__,up,WNT7B,0.0348808457147404,source_agnostic_planned_panel,4.0,19,12
+AT2,AT2,AIS,normal,__none__,up,WNT9A,0.0341099965485318,source_agnostic_planned_panel,6.0,19,12
+AT2,AT2,LUAD,AAH,__none__,up,CXCL12,0.0290490861644586,focused_triad,8.0,9,8
+AT2,AT2,LUAD,AAH,__none__,up,CXCL2,0.0454160939298003,focused_triad,6.0,9,8
+AT2,AT2,LUAD,AAH,__none__,up,FGF7,0.0808402939941806,focused_triad,2.0,9,8
+AT2,AT2,LUAD,AAH,__none__,up,HBEGF,0.029665019342667,focused_triad,7.0,9,8
+AT2,AT2,LUAD,AAH,__none__,up,TGFB1,0.0899138525549019,focused_triad,1.0,9,8
+AT2,AT2,LUAD,AAH,__none__,up,VEGFA,0.0253257486284621,focused_triad,9.0,9,8
+AT2,AT2,LUAD,AAH,__none__,up,WNT11,0.0533833269312936,focused_triad,5.0,9,8
+AT2,AT2,LUAD,AAH,__none__,up,WNT2,0.0575269087950298,focused_triad,3.0,9,8
+AT2,AT2,LUAD,AAH,__none__,up,WNT5A,0.0563962318453953,focused_triad,4.0,9,8
+AT2,AT2,LUAD,AAH,__none__,down,CXCL12,-0.0139152597350324,focused_triad,6.0,9,8
+AT2,AT2,LUAD,AAH,__none__,down,CXCL2,-0.0180384466187395,focused_triad,8.0,9,8
+AT2,AT2,LUAD,AAH,__none__,down,FGF7,-0.007484546255905,focused_triad,4.0,9,8
+AT2,AT2,LUAD,AAH,__none__,down,HBEGF,0.0125821275042383,focused_triad,1.0,9,8
+AT2,AT2,LUAD,AAH,__none__,down,TGFB1,-0.0055803313666103,focused_triad,2.0,9,8
+AT2,AT2,LUAD,AAH,__none__,down,VEGFA,-0.0119437120488609,focused_triad,5.0,9,8
+AT2,AT2,LUAD,AAH,__none__,down,WNT11,-0.0169794236474488,focused_triad,7.0,9,8
+AT2,AT2,LUAD,AAH,__none__,down,WNT2,-0.0181743581747132,focused_triad,9.0,9,8
+AT2,AT2,LUAD,AAH,__none__,down,WNT5A,-0.006393451118246,focused_triad,3.0,9,8
+AT2,AT2,LUAD,AAH,__none__,up,AREG,0.0331974907346649,source_agnostic_planned_panel,15.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,CXCL12,0.0290490861644586,source_agnostic_planned_panel,17.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,CXCL2,0.0454160939298003,source_agnostic_planned_panel,13.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,FGF7,0.0808402939941806,source_agnostic_planned_panel,2.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,HBEGF,0.029665019342667,source_agnostic_planned_panel,16.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,TGFB1,0.0899138525549019,source_agnostic_planned_panel,1.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,VEGFA,0.0253257486284621,source_agnostic_planned_panel,18.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,WNT10A,0.057001980137107,source_agnostic_planned_panel,7.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,WNT11,0.0533833269312936,source_agnostic_planned_panel,11.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,WNT2,0.0575269087950298,source_agnostic_planned_panel,6.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,WNT2B,0.0525690664469413,source_agnostic_planned_panel,12.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,WNT3A,0.0445045287294669,source_agnostic_planned_panel,14.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,WNT4,0.0689360519000853,source_agnostic_planned_panel,3.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,WNT5A,0.0563962318453953,source_agnostic_planned_panel,9.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,WNT5B,0.0545454074252001,source_agnostic_planned_panel,10.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,WNT7A,0.0612794946747487,source_agnostic_planned_panel,5.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,WNT7B,0.0615297715979475,source_agnostic_planned_panel,4.0,18,8
+AT2,AT2,LUAD,AAH,__none__,up,WNT9A,0.0568654148775097,source_agnostic_planned_panel,8.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,AREG,0.0003258295523309,source_agnostic_planned_panel,2.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,CXCL12,-0.0139152597350324,source_agnostic_planned_panel,9.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,CXCL2,-0.0180384466187395,source_agnostic_planned_panel,15.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,FGF7,-0.007484546255905,source_agnostic_planned_panel,5.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,HBEGF,0.0125821275042383,source_agnostic_planned_panel,1.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,TGFB1,-0.0055803313666103,source_agnostic_planned_panel,3.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,VEGFA,-0.0119437120488609,source_agnostic_planned_panel,8.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,WNT10A,-0.0164285058331801,source_agnostic_planned_panel,10.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,WNT11,-0.0169794236474488,source_agnostic_planned_panel,13.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,WNT2,-0.0181743581747132,source_agnostic_planned_panel,16.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,WNT2B,-0.0193780898630929,source_agnostic_planned_panel,18.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,WNT3A,-0.0082574018120172,source_agnostic_planned_panel,6.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,WNT4,-0.0189940644929841,source_agnostic_planned_panel,17.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,WNT5A,-0.006393451118246,source_agnostic_planned_panel,4.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,WNT5B,-0.0097955041362296,source_agnostic_planned_panel,7.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,WNT7A,-0.0179979915267394,source_agnostic_planned_panel,14.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,WNT7B,-0.0166436413097459,source_agnostic_planned_panel,11.0,18,8
+AT2,AT2,LUAD,AAH,__none__,down,WNT9A,-0.0167694165191945,source_agnostic_planned_panel,12.0,18,8
+AT2,AT2,LUAD,AIS,__none__,up,CXCL12,0.0428109103488167,focused_triad,6.0,9,12
+AT2,AT2,LUAD,AIS,__none__,up,CXCL2,0.0490055001488764,focused_triad,4.0,9,12
+AT2,AT2,LUAD,AIS,__none__,up,FGF7,0.0661214941744259,focused_triad,1.0,9,12
+AT2,AT2,LUAD,AIS,__none__,up,HBEGF,0.0079543240412645,focused_triad,9.0,9,12
+AT2,AT2,LUAD,AIS,__none__,up,TGFB1,0.061810395349515,focused_triad,2.0,9,12
+AT2,AT2,LUAD,AIS,__none__,up,VEGFA,0.0390212137433827,focused_triad,8.0,9,12
+AT2,AT2,LUAD,AIS,__none__,up,WNT11,0.0436571501012732,focused_triad,5.0,9,12
+AT2,AT2,LUAD,AIS,__none__,up,WNT2,0.0504722677311269,focused_triad,3.0,9,12
+AT2,AT2,LUAD,AIS,__none__,up,WNT2B,0.0418737544725705,focused_triad,7.0,9,12
+AT2,AT2,LUAD,AIS,__none__,up,AREG,0.0224460757415925,source_agnostic_planned_panel,18.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,CXCL12,0.0428109103488167,source_agnostic_planned_panel,11.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,CXCL2,0.0490055001488764,source_agnostic_planned_panel,5.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,FGF7,0.0661214941744259,source_agnostic_planned_panel,2.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,HBEGF,0.0079543240412645,source_agnostic_planned_panel,19.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,TGFB1,0.061810395349515,source_agnostic_planned_panel,3.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,VEGFA,0.0390212137433827,source_agnostic_planned_panel,16.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,WNT10A,0.0441418371903792,source_agnostic_planned_panel,8.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,WNT10B,0.0405549001324348,source_agnostic_planned_panel,15.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,WNT11,0.0436571501012732,source_agnostic_planned_panel,10.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,WNT2,0.0504722677311269,source_agnostic_planned_panel,4.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,WNT2B,0.0418737544725705,source_agnostic_planned_panel,12.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,WNT3A,0.0758404513678562,source_agnostic_planned_panel,1.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,WNT4,0.041271301815384,source_agnostic_planned_panel,14.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,WNT5A,0.0352961507067463,source_agnostic_planned_panel,17.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,WNT5B,0.0414605388154399,source_agnostic_planned_panel,13.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,WNT7A,0.04509264050469,source_agnostic_planned_panel,6.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,WNT7B,0.0443662430862637,source_agnostic_planned_panel,7.0,19,12
+AT2,AT2,LUAD,AIS,__none__,up,WNT9A,0.0439496542294253,source_agnostic_planned_panel,9.0,19,12
+AT2,AT2,LUAD,normal,__none__,up,CXCL12,0.0345813232970066,focused_triad,10.0,13,23
+AT2,AT2,LUAD,normal,__none__,up,CXCL2,0.0521375245016019,focused_triad,2.0,13,23
+AT2,AT2,LUAD,normal,__none__,up,FGF10,0.0365083620190549,focused_triad,9.0,13,23
+AT2,AT2,LUAD,normal,__none__,up,FGF7,0.0694539165934315,focused_triad,1.0,13,23
+AT2,AT2,LUAD,normal,__none__,up,HBEGF,0.0127413925237332,focused_triad,12.0,13,23
+AT2,AT2,LUAD,normal,__none__,up,TGFB1,0.0508949270295232,focused_triad,3.0,13,23
+AT2,AT2,LUAD,normal,__none__,up,VEGFA,0.0057022353206036,focused_triad,13.0,13,23
+AT2,AT2,LUAD,normal,__none__,up,WNT10B,0.0367498889256159,focused_triad,8.0,13,23
+AT2,AT2,LUAD,normal,__none__,up,WNT11,0.0371144253667933,focused_triad,7.0,13,23
+AT2,AT2,LUAD,normal,__none__,up,WNT2,0.0475851632271967,focused_triad,4.0,13,23
+AT2,AT2,LUAD,normal,__none__,up,WNT2B,0.0423187260873991,focused_triad,5.0,13,23
+AT2,AT2,LUAD,normal,__none__,up,WNT5A,0.0304149973102312,focused_triad,11.0,13,23
+AT2,AT2,LUAD,normal,__none__,up,WNT9A,0.0418851416541879,focused_triad,6.0,13,23
+AT2,AT2,LUAD,normal,__none__,down,CXCL12,-0.0358881322892735,focused_triad,11.0,13,23
+AT2,AT2,LUAD,normal,__none__,down,CXCL2,-0.0261617305388941,focused_triad,10.0,13,23
+AT2,AT2,LUAD,normal,__none__,down,FGF10,-0.024764979181045,focused_triad,9.0,13,23
+AT2,AT2,LUAD,normal,__none__,down,FGF7,-0.041408585467942,focused_triad,12.0,13,23
+AT2,AT2,LUAD,normal,__none__,down,HBEGF,0.0031802619025206,focused_triad,1.0,13,23
+AT2,AT2,LUAD,normal,__none__,down,TGFB1,-0.0470342790732821,focused_triad,13.0,13,23
+AT2,AT2,LUAD,normal,__none__,down,VEGFA,-0.0154483760221961,focused_triad,3.0,13,23
+AT2,AT2,LUAD,normal,__none__,down,WNT10B,-0.0226707051749096,focused_triad,8.0,13,23
+AT2,AT2,LUAD,normal,__none__,down,WNT11,-0.018906470232005,focused_triad,5.0,13,23
+AT2,AT2,LUAD,normal,__none__,down,WNT2,-0.0208414700418482,focused_triad,7.0,13,23
+AT2,AT2,LUAD,normal,__none__,down,WNT2B,-0.0182586374669609,focused_triad,4.0,13,23
+AT2,AT2,LUAD,normal,__none__,down,WNT5A,-0.0142313838771523,focused_triad,2.0,13,23
+AT2,AT2,LUAD,normal,__none__,down,WNT9A,-0.0196840631014986,focused_triad,6.0,13,23
+AT2,AT2,LUAD,normal,__none__,up,AREG,0.0477084834667488,source_agnostic_planned_panel,4.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,CXCL12,0.0345813232970066,source_agnostic_planned_panel,18.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,CXCL2,0.0521375245016019,source_agnostic_planned_panel,2.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,FGF10,0.0365083620190549,source_agnostic_planned_panel,17.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,FGF7,0.0694539165934315,source_agnostic_planned_panel,1.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,HBEGF,0.0127413925237332,source_agnostic_planned_panel,20.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,TGFB1,0.0508949270295232,source_agnostic_planned_panel,3.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,VEGFA,0.0057022353206036,source_agnostic_planned_panel,21.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,WNT10A,0.0421391000572744,source_agnostic_planned_panel,12.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,WNT10B,0.0367498889256159,source_agnostic_planned_panel,16.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,WNT11,0.0371144253667933,source_agnostic_planned_panel,15.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,WNT2,0.0475851632271967,source_agnostic_planned_panel,5.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,WNT2B,0.0423187260873991,source_agnostic_planned_panel,10.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,WNT3,0.0422222114003936,source_agnostic_planned_panel,11.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,WNT3A,0.0447559072910049,source_agnostic_planned_panel,6.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,WNT4,0.0434763248561293,source_agnostic_planned_panel,8.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,WNT5A,0.0304149973102312,source_agnostic_planned_panel,19.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,WNT5B,0.037789427363938,source_agnostic_planned_panel,14.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,WNT7A,0.043247470290135,source_agnostic_planned_panel,9.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,WNT7B,0.0436087460031042,source_agnostic_planned_panel,7.0,21,23
+AT2,AT2,LUAD,normal,__none__,up,WNT9A,0.0418851416541879,source_agnostic_planned_panel,13.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,AREG,-0.0396732545786815,source_agnostic_planned_panel,19.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,CXCL12,-0.0358881322892735,source_agnostic_planned_panel,18.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,CXCL2,-0.0261617305388941,source_agnostic_planned_panel,16.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,FGF10,-0.024764979181045,source_agnostic_planned_panel,14.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,FGF7,-0.041408585467942,source_agnostic_planned_panel,20.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,HBEGF,0.0031802619025206,source_agnostic_planned_panel,1.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,TGFB1,-0.0470342790732821,source_agnostic_planned_panel,21.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,VEGFA,-0.0154483760221961,source_agnostic_planned_panel,3.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,WNT10A,-0.0201580404979868,source_agnostic_planned_panel,10.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,WNT10B,-0.0226707051749096,source_agnostic_planned_panel,13.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,WNT11,-0.018906470232005,source_agnostic_planned_panel,7.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,WNT2,-0.0208414700418482,source_agnostic_planned_panel,12.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,WNT2B,-0.0182586374669609,source_agnostic_planned_panel,6.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,WNT3,-0.0204207484537724,source_agnostic_planned_panel,11.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,WNT3A,-0.0303725811067145,source_agnostic_planned_panel,17.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,WNT4,-0.0259633944867655,source_agnostic_planned_panel,15.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,WNT5A,-0.0142313838771523,source_agnostic_planned_panel,2.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,WNT5B,-0.0173860368284363,source_agnostic_planned_panel,5.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,WNT7A,-0.0172248133494649,source_agnostic_planned_panel,4.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,WNT7B,-0.0193556588412028,source_agnostic_planned_panel,8.0,21,23
+AT2,AT2,LUAD,normal,__none__,down,WNT9A,-0.0196840631014986,source_agnostic_planned_panel,9.0,21,23
+AT2,AT2,MIA,normal,__none__,up,CXCL12,0.0355992593670341,focused_triad,3.0,6,4
+AT2,AT2,MIA,normal,__none__,up,CXCL2,0.0313432670281937,focused_triad,4.0,6,4
+AT2,AT2,MIA,normal,__none__,up,FGF7,0.0923633798271656,focused_triad,1.0,6,4
+AT2,AT2,MIA,normal,__none__,up,HBEGF,0.0157693332085817,focused_triad,6.0,6,4
+AT2,AT2,MIA,normal,__none__,up,VEGFA,0.0279581327530673,focused_triad,5.0,6,4
+AT2,AT2,MIA,normal,__none__,up,WNT2,0.0415870607388613,focused_triad,2.0,6,4
+AT2,AT2,MIA,normal,__none__,down,CXCL12,0.0162980157625717,focused_triad,5.0,6,4
+AT2,AT2,MIA,normal,__none__,down,CXCL2,0.0188850239151676,focused_triad,3.0,6,4
+AT2,AT2,MIA,normal,__none__,down,FGF7,0.0165307217655815,focused_triad,4.0,6,4
+AT2,AT2,MIA,normal,__none__,down,HBEGF,0.0125924061553363,focused_triad,6.0,6,4
+AT2,AT2,MIA,normal,__none__,down,VEGFA,0.0428816656899349,focused_triad,1.0,6,4
+AT2,AT2,MIA,normal,__none__,down,WNT2,0.0279357526241479,focused_triad,2.0,6,4
+AT2,AT2,MIA,normal,__none__,up,AREG,0.0412218102506536,source_agnostic_planned_panel,4.0,12,4
+AT2,AT2,MIA,normal,__none__,up,CXCL12,0.0355992593670341,source_agnostic_planned_panel,9.0,12,4
+AT2,AT2,MIA,normal,__none__,up,CXCL2,0.0313432670281937,source_agnostic_planned_panel,10.0,12,4
+AT2,AT2,MIA,normal,__none__,up,FGF7,0.0923633798271656,source_agnostic_planned_panel,1.0,12,4
+AT2,AT2,MIA,normal,__none__,up,HBEGF,0.0157693332085817,source_agnostic_planned_panel,12.0,12,4
+AT2,AT2,MIA,normal,__none__,up,VEGFA,0.0279581327530673,source_agnostic_planned_panel,11.0,12,4
+AT2,AT2,MIA,normal,__none__,up,WNT2,0.0415870607388613,source_agnostic_planned_panel,3.0,12,4
+AT2,AT2,MIA,normal,__none__,up,WNT3A,0.0493085813047976,source_agnostic_planned_panel,2.0,12,4
+AT2,AT2,MIA,normal,__none__,up,WNT5B,0.0385224635741554,source_agnostic_planned_panel,8.0,12,4
+AT2,AT2,MIA,normal,__none__,up,WNT7A,0.0401552135096532,source_agnostic_planned_panel,5.0,12,4
+AT2,AT2,MIA,normal,__none__,up,WNT7B,0.0401426677346683,source_agnostic_planned_panel,6.0,12,4
+AT2,AT2,MIA,normal,__none__,up,WNT9A,0.039941803967576,source_agnostic_planned_panel,7.0,12,4
+AT2,AT2,MIA,normal,__none__,down,AREG,0.0068599455473012,source_agnostic_planned_panel,12.0,12,4
+AT2,AT2,MIA,normal,__none__,down,CXCL12,0.0162980157625717,source_agnostic_planned_panel,9.0,12,4
+AT2,AT2,MIA,normal,__none__,down,CXCL2,0.0188850239151676,source_agnostic_planned_panel,7.0,12,4
+AT2,AT2,MIA,normal,__none__,down,FGF7,0.0165307217655815,source_agnostic_planned_panel,8.0,12,4
+AT2,AT2,MIA,normal,__none__,down,HBEGF,0.0125924061553363,source_agnostic_planned_panel,11.0,12,4
+AT2,AT2,MIA,normal,__none__,down,VEGFA,0.0428816656899349,source_agnostic_planned_panel,1.0,12,4
+AT2,AT2,MIA,normal,__none__,down,WNT2,0.0279357526241479,source_agnostic_planned_panel,2.0,12,4
+AT2,AT2,MIA,normal,__none__,down,WNT3A,0.0160516154899023,source_agnostic_planned_panel,10.0,12,4
+AT2,AT2,MIA,normal,__none__,down,WNT5B,0.0252938485945144,source_agnostic_planned_panel,6.0,12,4
+AT2,AT2,MIA,normal,__none__,down,WNT7A,0.0268180607273986,source_agnostic_planned_panel,3.0,12,4
+AT2,AT2,MIA,normal,__none__,down,WNT7B,0.0261319426557803,source_agnostic_planned_panel,5.0,12,4
+AT2,AT2,MIA,normal,__none__,down,WNT9A,0.026240094663145,source_agnostic_planned_panel,4.0,12,4
+AT2,__broad__,AIS,normal,__none__,up,CXCL12,0.0121168174508254,focused_triad,10.0,11,12
+AT2,__broad__,AIS,normal,__none__,up,CXCL2,0.0143532181110351,focused_triad,9.0,11,12
+AT2,__broad__,AIS,normal,__none__,up,FGF7,0.0160571553398688,focused_triad,8.0,11,12
+AT2,__broad__,AIS,normal,__none__,up,HBEGF,0.0252080683227482,focused_triad,7.0,11,12
+AT2,__broad__,AIS,normal,__none__,up,TGFB1,0.0252317190069312,focused_triad,6.0,11,12
+AT2,__broad__,AIS,normal,__none__,up,VEGFA,0.009891587085962,focused_triad,11.0,11,12
+AT2,__broad__,AIS,normal,__none__,up,WNT10B,0.0328356484961746,focused_triad,4.0,11,12
+AT2,__broad__,AIS,normal,__none__,up,WNT11,0.0330347037696473,focused_triad,3.0,11,12
+AT2,__broad__,AIS,normal,__none__,up,WNT2,0.0349302669530136,focused_triad,2.0,11,12
+AT2,__broad__,AIS,normal,__none__,up,WNT2B,0.0315806816830023,focused_triad,5.0,11,12
+AT2,__broad__,AIS,normal,__none__,up,WNT5A,0.0387493436478278,focused_triad,1.0,11,12
+AT2,__broad__,AIS,normal,__none__,up,AREG,0.0262352500598491,source_agnostic_planned_panel,12.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,CXCL12,0.0121168174508254,source_agnostic_planned_panel,18.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,CXCL2,0.0143532181110351,source_agnostic_planned_panel,17.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,FGF7,0.0160571553398688,source_agnostic_planned_panel,16.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,HBEGF,0.0252080683227482,source_agnostic_planned_panel,14.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,TGFB1,0.0252317190069312,source_agnostic_planned_panel,13.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,VEGFA,0.009891587085962,source_agnostic_planned_panel,19.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,WNT10A,0.034675246050025,source_agnostic_planned_panel,5.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,WNT10B,0.0328356484961746,source_agnostic_planned_panel,8.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,WNT11,0.0330347037696473,source_agnostic_planned_panel,7.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,WNT2,0.0349302669530136,source_agnostic_planned_panel,3.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,WNT2B,0.0315806816830023,source_agnostic_planned_panel,10.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,WNT3A,0.0212264480891535,source_agnostic_planned_panel,15.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,WNT4,0.0311191787519102,source_agnostic_planned_panel,11.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,WNT5A,0.0387493436478278,source_agnostic_planned_panel,1.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,WNT5B,0.0326499471170077,source_agnostic_planned_panel,9.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,WNT7A,0.0353967780404595,source_agnostic_planned_panel,2.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,WNT7B,0.0347500590331566,source_agnostic_planned_panel,4.0,19,12
+AT2,__broad__,AIS,normal,__none__,up,WNT9A,0.0339742953472511,source_agnostic_planned_panel,6.0,19,12
+AT2,__broad__,LUAD,AAH,__none__,up,CXCL12,0.0311517841721199,focused_triad,9.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,up,CXCL2,0.0536195399625281,focused_triad,5.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,up,FGF7,0.0858131970895243,focused_triad,1.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,up,HBEGF,0.0316200609303118,focused_triad,8.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,up,TGFB1,0.081318938295505,focused_triad,2.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,up,VEGFA,0.0377486215899471,focused_triad,7.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,up,WNT11,0.0519949138002062,focused_triad,6.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,up,WNT2,0.0595163605852911,focused_triad,3.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,up,WNT5A,0.0576172639892513,focused_triad,4.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,down,CXCL12,-0.023202476669107,focused_triad,9.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,down,CXCL2,-0.0213624783841424,focused_triad,8.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,down,FGF7,-0.0058517414790891,focused_triad,2.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,down,HBEGF,0.0135508308440851,focused_triad,1.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,down,TGFB1,-0.0069035145346261,focused_triad,3.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,down,VEGFA,-0.0168428082441127,focused_triad,6.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,down,WNT11,-0.0154548250901168,focused_triad,5.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,down,WNT2,-0.0178602843571845,focused_triad,7.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,down,WNT5A,-0.0113211632894422,focused_triad,4.0,9,8
+AT2,__broad__,LUAD,AAH,__none__,up,AREG,0.0699274426201088,source_agnostic_planned_panel,3.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,CXCL12,0.0311517841721199,source_agnostic_planned_panel,18.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,CXCL2,0.0536195399625281,source_agnostic_planned_panel,11.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,FGF7,0.0858131970895243,source_agnostic_planned_panel,1.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,HBEGF,0.0316200609303118,source_agnostic_planned_panel,17.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,TGFB1,0.081318938295505,source_agnostic_planned_panel,2.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,VEGFA,0.0377486215899471,source_agnostic_planned_panel,16.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,WNT10A,0.0559543945531703,source_agnostic_planned_panel,9.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,WNT11,0.0519949138002062,source_agnostic_planned_panel,14.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,WNT2,0.0595163605852911,source_agnostic_planned_panel,7.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,WNT2B,0.0530164443000539,source_agnostic_planned_panel,13.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,WNT3A,0.046758094917502,source_agnostic_planned_panel,15.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,WNT4,0.0672664813196799,source_agnostic_planned_panel,4.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,WNT5A,0.0576172639892513,source_agnostic_planned_panel,8.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,WNT5B,0.0531794873675776,source_agnostic_planned_panel,12.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,WNT7A,0.0595709175560263,source_agnostic_planned_panel,6.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,WNT7B,0.0600942663466697,source_agnostic_planned_panel,5.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,up,WNT9A,0.0555899084280351,source_agnostic_planned_panel,10.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,AREG,-0.009516644374369,source_agnostic_planned_panel,5.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,CXCL12,-0.023202476669107,source_agnostic_planned_panel,18.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,CXCL2,-0.0213624783841424,source_agnostic_planned_panel,17.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,FGF7,-0.0058517414790891,source_agnostic_planned_panel,2.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,HBEGF,0.0135508308440851,source_agnostic_planned_panel,1.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,TGFB1,-0.0069035145346261,source_agnostic_planned_panel,3.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,VEGFA,-0.0168428082441127,source_agnostic_planned_panel,13.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,WNT10A,-0.0153177635223427,source_agnostic_planned_panel,9.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,WNT11,-0.0154548250901168,source_agnostic_planned_panel,10.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,WNT2,-0.0178602843571845,source_agnostic_planned_panel,14.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,WNT2B,-0.0185595301424705,source_agnostic_planned_panel,15.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,WNT3A,-0.0116805071955522,source_agnostic_planned_panel,7.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,WNT4,-0.0189150162026522,source_agnostic_planned_panel,16.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,WNT5A,-0.0113211632894422,source_agnostic_planned_panel,6.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,WNT5B,-0.0093855323221787,source_agnostic_planned_panel,4.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,WNT7A,-0.0164790682144843,source_agnostic_planned_panel,12.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,WNT7B,-0.0152660885418078,source_agnostic_planned_panel,8.0,18,8
+AT2,__broad__,LUAD,AAH,__none__,down,WNT9A,-0.015901623329497,source_agnostic_planned_panel,11.0,18,8
+AT2,__broad__,LUAD,AIS,__none__,up,CXCL12,0.0417248170684877,focused_triad,7.0,9,12
+AT2,__broad__,LUAD,AIS,__none__,up,CXCL2,0.05091084615529,focused_triad,4.0,9,12
+AT2,__broad__,LUAD,AIS,__none__,up,FGF7,0.0640960108288101,focused_triad,2.0,9,12
+AT2,__broad__,LUAD,AIS,__none__,up,HBEGF,0.0079101362078585,focused_triad,9.0,9,12
+AT2,__broad__,LUAD,AIS,__none__,up,TGFB1,0.0644364088574232,focused_triad,1.0,9,12
+AT2,__broad__,LUAD,AIS,__none__,up,VEGFA,0.0375936877129637,focused_triad,8.0,9,12
+AT2,__broad__,LUAD,AIS,__none__,up,WNT11,0.0439460143049733,focused_triad,5.0,9,12
+AT2,__broad__,LUAD,AIS,__none__,up,WNT2,0.0511577820065808,focused_triad,3.0,9,12
+AT2,__broad__,LUAD,AIS,__none__,up,WNT2B,0.0423885057915196,focused_triad,6.0,9,12
+AT2,__broad__,LUAD,AIS,__none__,up,AREG,0.0205177629085389,source_agnostic_planned_panel,18.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,CXCL12,0.0417248170684877,source_agnostic_planned_panel,12.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,CXCL2,0.05091084615529,source_agnostic_planned_panel,5.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,FGF7,0.0640960108288101,source_agnostic_planned_panel,3.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,HBEGF,0.0079101362078585,source_agnostic_planned_panel,19.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,TGFB1,0.0644364088574232,source_agnostic_planned_panel,2.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,VEGFA,0.0375936877129637,source_agnostic_planned_panel,16.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,WNT10A,0.0441320860844567,source_agnostic_planned_panel,8.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,WNT10B,0.040628655244849,source_agnostic_planned_panel,15.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,WNT11,0.0439460143049733,source_agnostic_planned_panel,10.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,WNT2,0.0511577820065808,source_agnostic_planned_panel,4.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,WNT2B,0.0423885057915196,source_agnostic_planned_panel,11.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,WNT3A,0.0737857393149378,source_agnostic_planned_panel,1.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,WNT4,0.0415193015241131,source_agnostic_planned_panel,14.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,WNT5A,0.0348221863383369,source_agnostic_planned_panel,17.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,WNT5B,0.0415352178482784,source_agnostic_planned_panel,13.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,WNT7A,0.045389586167473,source_agnostic_planned_panel,6.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,WNT7B,0.0445633652532375,source_agnostic_planned_panel,7.0,19,12
+AT2,__broad__,LUAD,AIS,__none__,up,WNT9A,0.0439754228017386,source_agnostic_planned_panel,9.0,19,12
+AT2,__broad__,LUAD,normal,__none__,up,CXCL12,0.0358168488681389,focused_triad,10.0,14,23
+AT2,__broad__,LUAD,normal,__none__,up,CXCL2,0.0575831960329805,focused_triad,2.0,14,23
+AT2,__broad__,LUAD,normal,__none__,up,FGF10,0.0359574318865839,focused_triad,9.0,14,23
+AT2,__broad__,LUAD,normal,__none__,up,FGF7,0.0677827649560263,focused_triad,1.0,14,23
+AT2,__broad__,LUAD,normal,__none__,up,HBEGF,0.0139012837167099,focused_triad,13.0,14,23
+AT2,__broad__,LUAD,normal,__none__,up,IL1B,0.030635044710754,focused_triad,12.0,14,23
+AT2,__broad__,LUAD,normal,__none__,up,TGFB1,0.0477162204272958,focused_triad,5.0,14,23
+AT2,__broad__,LUAD,normal,__none__,up,VEGFA,0.0078604899299525,focused_triad,14.0,14,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT10B,0.0412851483515422,focused_triad,8.0,14,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT11,0.0423531967945138,focused_triad,7.0,14,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT2,0.0541074227348411,focused_triad,3.0,14,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT2B,0.0479187009390699,focused_triad,4.0,14,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT5A,0.0326901917832739,focused_triad,11.0,14,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT9A,0.0469033136854463,focused_triad,6.0,14,23
+AT2,__broad__,LUAD,normal,__none__,down,CXCL12,-0.0380423489713682,focused_triad,12.0,14,23
+AT2,__broad__,LUAD,normal,__none__,down,CXCL2,-0.0197182591703351,focused_triad,5.0,14,23
+AT2,__broad__,LUAD,normal,__none__,down,FGF10,-0.0247291244024615,focused_triad,10.0,14,23
+AT2,__broad__,LUAD,normal,__none__,down,FGF7,-0.0420616558217431,focused_triad,13.0,14,23
+AT2,__broad__,LUAD,normal,__none__,down,HBEGF,0.0078188018375797,focused_triad,1.0,14,23
+AT2,__broad__,LUAD,normal,__none__,down,IL1B,-0.0268706973547854,focused_triad,11.0,14,23
+AT2,__broad__,LUAD,normal,__none__,down,TGFB1,-0.0475627306607714,focused_triad,14.0,14,23
+AT2,__broad__,LUAD,normal,__none__,down,VEGFA,-0.0174915261701558,focused_triad,3.0,14,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT10B,-0.022634563022223,focused_triad,9.0,14,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT11,-0.0198184066505944,focused_triad,6.0,14,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT2,-0.0220712080019,focused_triad,8.0,14,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT2B,-0.0196060279739797,focused_triad,4.0,14,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT5A,-0.0171094546239612,focused_triad,2.0,14,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT9A,-0.0208510216082735,focused_triad,7.0,14,23
+AT2,__broad__,LUAD,normal,__none__,up,AREG,0.0777348568367168,source_agnostic_planned_panel,1.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,CXCL12,0.0358168488681389,source_agnostic_planned_panel,18.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,CXCL2,0.0575831960329805,source_agnostic_planned_panel,3.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,FGF10,0.0359574318865839,source_agnostic_planned_panel,17.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,FGF7,0.0677827649560263,source_agnostic_planned_panel,2.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,HBEGF,0.0139012837167099,source_agnostic_planned_panel,21.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,IL1B,0.030635044710754,source_agnostic_planned_panel,20.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,TGFB1,0.0477162204272958,source_agnostic_planned_panel,9.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,VEGFA,0.0078604899299525,source_agnostic_planned_panel,22.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT10A,0.0475173825607794,source_agnostic_planned_panel,10.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT10B,0.0412851483515422,source_agnostic_planned_panel,16.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT11,0.0423531967945138,source_agnostic_planned_panel,14.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT2,0.0541074227348411,source_agnostic_planned_panel,4.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT2B,0.0479187009390699,source_agnostic_planned_panel,7.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT3,0.0475054615906569,source_agnostic_planned_panel,11.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT3A,0.0422080855008485,source_agnostic_planned_panel,15.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT4,0.0480626877890306,source_agnostic_planned_panel,6.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT5A,0.0326901917832739,source_agnostic_planned_panel,19.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT5B,0.042700117455467,source_agnostic_planned_panel,13.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT7A,0.047778969708914,source_agnostic_planned_panel,8.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT7B,0.0486285530134802,source_agnostic_planned_panel,5.0,22,23
+AT2,__broad__,LUAD,normal,__none__,up,WNT9A,0.0469033136854463,source_agnostic_planned_panel,12.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,AREG,-0.0457195349294906,source_agnostic_planned_panel,21.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,CXCL12,-0.0380423489713682,source_agnostic_planned_panel,19.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,CXCL2,-0.0197182591703351,source_agnostic_planned_panel,7.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,FGF10,-0.0247291244024615,source_agnostic_planned_panel,15.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,FGF7,-0.0420616558217431,source_agnostic_planned_panel,20.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,HBEGF,0.0078188018375797,source_agnostic_planned_panel,1.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,IL1B,-0.0268706973547854,source_agnostic_planned_panel,16.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,TGFB1,-0.0475627306607714,source_agnostic_planned_panel,22.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,VEGFA,-0.0174915261701558,source_agnostic_planned_panel,3.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT10A,-0.021343968451781,source_agnostic_planned_panel,11.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT10B,-0.022634563022223,source_agnostic_planned_panel,14.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT11,-0.0198184066505944,source_agnostic_planned_panel,8.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT2,-0.0220712080019,source_agnostic_planned_panel,13.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT2B,-0.0196060279739797,source_agnostic_planned_panel,6.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT3,-0.0216899142812425,source_agnostic_planned_panel,12.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT3A,-0.0291293397662479,source_agnostic_planned_panel,18.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT4,-0.0270823893148717,source_agnostic_planned_panel,17.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT5A,-0.0171094546239612,source_agnostic_planned_panel,2.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT5B,-0.0186572831003421,source_agnostic_planned_panel,5.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT7A,-0.0180742826238264,source_agnostic_planned_panel,4.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT7B,-0.0201509754882282,source_agnostic_planned_panel,9.0,22,23
+AT2,__broad__,LUAD,normal,__none__,down,WNT9A,-0.0208510216082735,source_agnostic_planned_panel,10.0,22,23
+AT2,__broad__,MIA,normal,__none__,up,CXCL12,0.0361155192689932,focused_triad,3.0,6,4
+AT2,__broad__,MIA,normal,__none__,up,CXCL2,0.0326582663965906,focused_triad,4.0,6,4
+AT2,__broad__,MIA,normal,__none__,up,FGF7,0.0930936019616674,focused_triad,1.0,6,4
+AT2,__broad__,MIA,normal,__none__,up,HBEGF,0.016237317550191,focused_triad,6.0,6,4
+AT2,__broad__,MIA,normal,__none__,up,VEGFA,0.028408042999015,focused_triad,5.0,6,4
+AT2,__broad__,MIA,normal,__none__,up,WNT2,0.0426679992170495,focused_triad,2.0,6,4
+AT2,__broad__,MIA,normal,__none__,down,CXCL12,0.015968587595468,focused_triad,5.0,6,4
+AT2,__broad__,MIA,normal,__none__,down,CXCL2,0.0186156729991654,focused_triad,3.0,6,4
+AT2,__broad__,MIA,normal,__none__,down,FGF7,0.0161733036878943,focused_triad,4.0,6,4
+AT2,__broad__,MIA,normal,__none__,down,HBEGF,0.0123469842318655,focused_triad,6.0,6,4
+AT2,__broad__,MIA,normal,__none__,down,VEGFA,0.0423055498974138,focused_triad,1.0,6,4
+AT2,__broad__,MIA,normal,__none__,down,WNT2,0.0274193688136597,focused_triad,2.0,6,4
+AT2,__broad__,MIA,normal,__none__,up,AREG,0.0415692483735862,source_agnostic_planned_panel,4.0,12,4
+AT2,__broad__,MIA,normal,__none__,up,CXCL12,0.0361155192689932,source_agnostic_planned_panel,9.0,12,4
+AT2,__broad__,MIA,normal,__none__,up,CXCL2,0.0326582663965906,source_agnostic_planned_panel,10.0,12,4
+AT2,__broad__,MIA,normal,__none__,up,FGF7,0.0930936019616674,source_agnostic_planned_panel,1.0,12,4
+AT2,__broad__,MIA,normal,__none__,up,HBEGF,0.016237317550191,source_agnostic_planned_panel,12.0,12,4
+AT2,__broad__,MIA,normal,__none__,up,VEGFA,0.028408042999015,source_agnostic_planned_panel,11.0,12,4
+AT2,__broad__,MIA,normal,__none__,up,WNT2,0.0426679992170495,source_agnostic_planned_panel,3.0,12,4
+AT2,__broad__,MIA,normal,__none__,up,WNT3A,0.0498595784243701,source_agnostic_planned_panel,2.0,12,4
+AT2,__broad__,MIA,normal,__none__,up,WNT5B,0.0393250245165239,source_agnostic_planned_panel,8.0,12,4
+AT2,__broad__,MIA,normal,__none__,up,WNT7A,0.0410091776391404,source_agnostic_planned_panel,6.0,12,4
+AT2,__broad__,MIA,normal,__none__,up,WNT7B,0.0410101577638663,source_agnostic_planned_panel,5.0,12,4
+AT2,__broad__,MIA,normal,__none__,up,WNT9A,0.0407756966228381,source_agnostic_planned_panel,7.0,12,4
+AT2,__broad__,MIA,normal,__none__,down,AREG,0.0064775712100656,source_agnostic_planned_panel,12.0,12,4
+AT2,__broad__,MIA,normal,__none__,down,CXCL12,0.015968587595468,source_agnostic_planned_panel,9.0,12,4
+AT2,__broad__,MIA,normal,__none__,down,CXCL2,0.0186156729991654,source_agnostic_planned_panel,7.0,12,4
+AT2,__broad__,MIA,normal,__none__,down,FGF7,0.0161733036878943,source_agnostic_planned_panel,8.0,12,4
+AT2,__broad__,MIA,normal,__none__,down,HBEGF,0.0123469842318655,source_agnostic_planned_panel,11.0,12,4
+AT2,__broad__,MIA,normal,__none__,down,VEGFA,0.0423055498974138,source_agnostic_planned_panel,1.0,12,4
+AT2,__broad__,MIA,normal,__none__,down,WNT2,0.0274193688136597,source_agnostic_planned_panel,2.0,12,4
+AT2,__broad__,MIA,normal,__none__,down,WNT3A,0.0156797913094133,source_agnostic_planned_panel,10.0,12,4
+AT2,__broad__,MIA,normal,__none__,down,WNT5B,0.0248547287730492,source_agnostic_planned_panel,6.0,12,4
+AT2,__broad__,MIA,normal,__none__,down,WNT7A,0.0264822733721201,source_agnostic_planned_panel,3.0,12,4
+AT2,__broad__,MIA,normal,__none__,down,WNT7B,0.0257087545752314,source_agnostic_planned_panel,5.0,12,4
+AT2,__broad__,MIA,normal,__none__,down,WNT9A,0.0257861995253507,source_agnostic_planned_panel,4.0,12,4
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,AREG,0.0285934373956948,focused_triad,3.0,5,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,HBEGF,0.0120617300309372,focused_triad,5.0,5,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,TGFB1,0.103856620423259,focused_triad,1.0,5,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,VEGFA,0.0172002998180069,focused_triad,4.0,5,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,WNT7B,0.0546852462661597,focused_triad,2.0,5,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,AREG,0.011292541610338,focused_triad,4.0,5,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,HBEGF,0.0566149925455667,focused_triad,1.0,5,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,TGFB1,0.018844428254439,focused_triad,3.0,5,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,VEGFA,0.0265182978812036,focused_triad,2.0,5,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,WNT7B,0.0101152053577532,focused_triad,5.0,5,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,AREG,0.0285934373956948,source_agnostic_planned_panel,13.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,CXCL12,0.0468877608122131,source_agnostic_planned_panel,10.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,FGF7,0.0436229021216218,source_agnostic_planned_panel,11.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,HBEGF,0.0120617300309372,source_agnostic_planned_panel,15.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,TGFB1,0.103856620423259,source_agnostic_planned_panel,1.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,VEGFA,0.0172002998180069,source_agnostic_planned_panel,14.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,WNT10A,0.0547865445522449,source_agnostic_planned_panel,4.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,WNT2,0.0546137002047037,source_agnostic_planned_panel,6.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,WNT2B,0.048509184154087,source_agnostic_planned_panel,9.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,WNT3A,0.0375884347574716,source_agnostic_planned_panel,12.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,WNT5A,0.060755457291141,source_agnostic_planned_panel,3.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,WNT5B,0.0515301808761011,source_agnostic_planned_panel,8.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,WNT7A,0.0635778587830898,source_agnostic_planned_panel,2.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,WNT7B,0.0546852462661597,source_agnostic_planned_panel,5.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,up,WNT9A,0.0539600059445805,source_agnostic_planned_panel,7.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,AREG,0.011292541610338,source_agnostic_planned_panel,6.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,CXCL12,-0.0094401728502589,source_agnostic_planned_panel,15.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,FGF7,0.0226651782862186,source_agnostic_planned_panel,3.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,HBEGF,0.0566149925455667,source_agnostic_planned_panel,1.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,TGFB1,0.018844428254439,source_agnostic_planned_panel,4.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,VEGFA,0.0265182978812036,source_agnostic_planned_panel,2.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,WNT10A,0.0106663838905023,source_agnostic_planned_panel,7.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,WNT2,0.0067495108752441,source_agnostic_planned_panel,12.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,WNT2B,0.0056667728264083,source_agnostic_planned_panel,13.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,WNT3A,0.0096580552848667,source_agnostic_planned_panel,10.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,WNT5A,-3.84055761913833e-05,source_agnostic_planned_panel,14.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,WNT5B,0.0096551406610717,source_agnostic_planned_panel,11.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,WNT7A,0.0121445641770226,source_agnostic_planned_panel,5.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,WNT7B,0.0101152053577532,source_agnostic_planned_panel,9.0,15,3
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,__none__,down,WNT9A,0.0104287051639733,source_agnostic_planned_panel,8.0,15,3
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,AREG,0.0269866658000929,focused_triad,6.0,7,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,CXCL12,0.0463553880125107,focused_triad,3.0,7,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,HBEGF,0.0216493397320743,focused_triad,7.0,7,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,TGFB1,0.0653010053622385,focused_triad,1.0,7,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,VEGFA,0.0518512311986393,focused_triad,2.0,7,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,WNT5A,0.0440286656297159,focused_triad,4.0,7,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,WNT7B,0.043784979711725,focused_triad,5.0,7,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,AREG,-0.0113806895891038,focused_triad,7.0,7,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,CXCL12,-0.0035619612637021,focused_triad,4.0,7,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,HBEGF,-0.0068110131146351,focused_triad,5.0,7,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,TGFB1,-0.0022591015997369,focused_triad,3.0,7,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,VEGFA,0.0033323929378446,focused_triad,2.0,7,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,WNT5A,0.0064738824748117,focused_triad,1.0,7,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,WNT7B,-0.0070960778367858,focused_triad,6.0,7,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,AREG,0.0269866658000929,source_agnostic_planned_panel,16.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,CXCL12,0.0463553880125107,source_agnostic_planned_panel,4.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,FGF7,0.035625218467809,source_agnostic_planned_panel,15.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,HBEGF,0.0216493397320743,source_agnostic_planned_panel,17.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,TGFB1,0.0653010053622385,source_agnostic_planned_panel,1.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,VEGFA,0.0518512311986393,source_agnostic_planned_panel,2.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,WNT10A,0.0447659247160083,source_agnostic_planned_panel,5.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,WNT11,0.0436952170783277,source_agnostic_planned_panel,9.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,WNT2,0.0481914733616668,source_agnostic_planned_panel,3.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,WNT2B,0.0410123236317652,source_agnostic_planned_panel,12.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,WNT3A,0.0409328569645554,source_agnostic_planned_panel,13.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,WNT4,0.0398691671524364,source_agnostic_planned_panel,14.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,WNT5A,0.0440286656297159,source_agnostic_planned_panel,7.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,WNT5B,0.0430856927338861,source_agnostic_planned_panel,11.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,WNT7A,0.0436607555790548,source_agnostic_planned_panel,10.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,WNT7B,0.043784979711725,source_agnostic_planned_panel,8.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,up,WNT9A,0.0446383792722646,source_agnostic_planned_panel,6.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,AREG,-0.0113806895891038,source_agnostic_planned_panel,17.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,CXCL12,-0.0035619612637021,source_agnostic_planned_panel,6.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,FGF7,-0.0012502265827997,source_agnostic_planned_panel,4.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,HBEGF,-0.0068110131146351,source_agnostic_planned_panel,9.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,TGFB1,-0.0022591015997369,source_agnostic_planned_panel,5.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,VEGFA,0.0033323929378446,source_agnostic_planned_panel,3.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,WNT10A,-0.007754045838981,source_agnostic_planned_panel,13.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,WNT11,-0.0065617739491644,source_agnostic_planned_panel,8.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,WNT2,-0.0079831120867503,source_agnostic_planned_panel,15.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,WNT2B,-0.0087135556455086,source_agnostic_planned_panel,16.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,WNT3A,0.0093605552907878,source_agnostic_planned_panel,1.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,WNT4,-0.0078850658509993,source_agnostic_planned_panel,14.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,WNT5A,0.0064738824748117,source_agnostic_planned_panel,2.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,WNT5B,-0.007384558043811,source_agnostic_planned_panel,11.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,WNT7A,-0.006301266869061,source_agnostic_planned_panel,7.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,WNT7B,-0.0070960778367858,source_agnostic_planned_panel,10.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,__none__,down,WNT9A,-0.0075165926505351,source_agnostic_planned_panel,12.0,17,8
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,AREG,0.0556907976468139,focused_triad,4.0,6,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,CXCL12,0.102266321792512,focused_triad,1.0,6,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,HBEGF,0.02677943055496,focused_triad,6.0,6,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,TGFB1,0.101249534355601,focused_triad,2.0,6,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,VEGFA,0.0982005306721509,focused_triad,3.0,6,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,WNT7B,0.0420450151437305,focused_triad,5.0,6,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,AREG,-0.0006448959273709,focused_triad,5.0,6,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,CXCL12,0.018564714253136,focused_triad,4.0,6,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,HBEGF,-0.0028390159860217,focused_triad,6.0,6,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,TGFB1,0.034847641286661,focused_triad,1.0,6,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,VEGFA,0.0224447149497023,focused_triad,3.0,6,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,WNT7B,0.0326003387148111,focused_triad,2.0,6,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,AREG,0.0556907976468139,source_agnostic_planned_panel,5.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,CXCL12,0.102266321792512,source_agnostic_planned_panel,1.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,FGF7,0.0467845529516784,source_agnostic_planned_panel,8.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,HBEGF,0.02677943055496,source_agnostic_planned_panel,18.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,TGFB1,0.101249534355601,source_agnostic_planned_panel,2.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,VEGFA,0.0982005306721509,source_agnostic_planned_panel,3.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,WNT10A,0.0416004045610825,source_agnostic_planned_panel,11.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,WNT10B,0.0379983737307256,source_agnostic_planned_panel,17.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,WNT11,0.0413082546989939,source_agnostic_planned_panel,12.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,WNT2,0.0552522567736673,source_agnostic_planned_panel,7.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,WNT2B,0.0405370460037342,source_agnostic_planned_panel,15.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,WNT3A,0.0709291267327612,source_agnostic_planned_panel,4.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,WNT4,0.040670549747576,source_agnostic_planned_panel,14.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,WNT5A,0.055306513593215,source_agnostic_planned_panel,6.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,WNT5B,0.0382605571599888,source_agnostic_planned_panel,16.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,WNT7A,0.0425154925471223,source_agnostic_planned_panel,9.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,WNT7B,0.0420450151437305,source_agnostic_planned_panel,10.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,up,WNT9A,0.0412821555958607,source_agnostic_planned_panel,13.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,AREG,-0.0006448959273709,source_agnostic_planned_panel,17.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,CXCL12,0.018564714253136,source_agnostic_planned_panel,14.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,FGF7,0.0082454088087672,source_agnostic_planned_panel,16.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,HBEGF,-0.0028390159860217,source_agnostic_planned_panel,18.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,TGFB1,0.034847641286661,source_agnostic_planned_panel,1.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,VEGFA,0.0224447149497023,source_agnostic_planned_panel,13.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,WNT10A,0.0337829265597666,source_agnostic_planned_panel,3.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,WNT10B,0.0335079052228439,source_agnostic_planned_panel,4.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,WNT11,0.0344868441505373,source_agnostic_planned_panel,2.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,WNT2,0.0294498678813883,source_agnostic_planned_panel,10.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,WNT2B,0.0323689797968848,source_agnostic_planned_panel,8.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,WNT3A,0.0270473816307652,source_agnostic_planned_panel,12.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,WNT4,0.0287921743569122,source_agnostic_planned_panel,11.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,WNT5A,0.0098952858760048,source_agnostic_planned_panel,15.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,WNT5B,0.0320689261434584,source_agnostic_planned_panel,9.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,WNT7A,0.0332938678332521,source_agnostic_planned_panel,6.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,WNT7B,0.0326003387148111,source_agnostic_planned_panel,7.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,__none__,down,WNT9A,0.0334385684904473,source_agnostic_planned_panel,5.0,18,11
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,AREG,0.0341402894490398,focused_triad,9.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,CXCL12,0.0462374713700044,focused_triad,6.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,FGF10,0.0415966168836195,focused_triad,8.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,HBEGF,0.0302072768228718,focused_triad,10.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,IL1B,0.0685917351544964,focused_triad,2.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,TGFB1,0.0819467953986792,focused_triad,1.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,VEGFA,0.0446783769416504,focused_triad,7.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT4,0.0603482729429194,focused_triad,4.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT5A,0.0563620223464462,focused_triad,5.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT7B,0.0616338632311814,focused_triad,3.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,AREG,-0.0009713522925203,focused_triad,8.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,CXCL12,-0.0040913530678738,focused_triad,9.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,FGF10,0.0064622442785813,focused_triad,4.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,HBEGF,-0.0079430909903028,focused_triad,10.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,IL1B,0.0009739041750581,focused_triad,7.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,TGFB1,0.0373552546936846,focused_triad,1.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,VEGFA,0.0031854380498443,focused_triad,6.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT4,0.007413921129193,focused_triad,3.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT5A,0.0093314765244128,focused_triad,2.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT7B,0.0059984995722788,focused_triad,5.0,10,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,AREG,0.0341402894490398,source_agnostic_planned_panel,20.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,CXCL12,0.0462374713700044,source_agnostic_planned_panel,17.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,FGF10,0.0415966168836195,source_agnostic_planned_panel,19.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,FGF7,0.0665976341568507,source_agnostic_planned_panel,3.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,HBEGF,0.0302072768228718,source_agnostic_planned_panel,21.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,IL1B,0.0685917351544964,source_agnostic_planned_panel,2.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,TGFB1,0.0819467953986792,source_agnostic_planned_panel,1.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,VEGFA,0.0446783769416504,source_agnostic_planned_panel,18.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT10A,0.0586913715885804,source_agnostic_planned_panel,9.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT10B,0.0575862944821539,source_agnostic_planned_panel,11.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT11,0.0540516202150068,source_agnostic_planned_panel,13.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT2,0.0630221932080749,source_agnostic_planned_panel,4.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT2B,0.0536617505932724,source_agnostic_planned_panel,15.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT3,0.0610463139556581,source_agnostic_planned_panel,6.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT3A,0.0487356947097191,source_agnostic_planned_panel,16.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT4,0.0603482729429194,source_agnostic_planned_panel,8.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT5A,0.0563620223464462,source_agnostic_planned_panel,12.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT5B,0.05403436221458,source_agnostic_planned_panel,14.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT7A,0.0606541851598003,source_agnostic_planned_panel,7.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT7B,0.0616338632311814,source_agnostic_planned_panel,5.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,up,WNT9A,0.057840069577847,source_agnostic_planned_panel,10.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,AREG,-0.0009713522925203,source_agnostic_planned_panel,18.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,CXCL12,-0.0040913530678738,source_agnostic_planned_panel,20.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,FGF10,0.0064622442785813,source_agnostic_planned_panel,7.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,FGF7,0.0070494796180746,source_agnostic_planned_panel,6.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,HBEGF,-0.0079430909903028,source_agnostic_planned_panel,21.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,IL1B,0.0009739041750581,source_agnostic_planned_panel,16.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,TGFB1,0.0373552546936846,source_agnostic_planned_panel,1.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,VEGFA,0.0031854380498443,source_agnostic_planned_panel,15.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT10A,0.0063264908642868,source_agnostic_planned_panel,9.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT10B,0.0064305939578821,source_agnostic_planned_panel,8.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT11,0.0045401806705278,source_agnostic_planned_panel,14.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT2,-0.0013606690449861,source_agnostic_planned_panel,19.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT2B,0.0009551349800694,source_agnostic_planned_panel,17.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT3,0.0060290830020327,source_agnostic_planned_panel,11.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT3A,0.0333994955453548,source_agnostic_planned_panel,2.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT4,0.007413921129193,source_agnostic_planned_panel,5.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT5A,0.0093314765244128,source_agnostic_planned_panel,4.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT5B,0.0114098384354466,source_agnostic_planned_panel,3.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT7A,0.005812621407879,source_agnostic_planned_panel,13.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT7B,0.0059984995722788,source_agnostic_planned_panel,12.0,21,22
+fibroblasts,Alveolar fibroblasts,LUAD,normal,__none__,down,WNT9A,0.0060459436910109,source_agnostic_planned_panel,10.0,21,22
+fibroblasts,__broad__,LUAD,AAH,__none__,up,AREG,0.0276309092404486,focused_triad,6.0,7,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,CXCL12,0.0561877214113958,focused_triad,3.0,7,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,HBEGF,0.0215225707605997,focused_triad,7.0,7,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,TGFB1,0.108379402905664,focused_triad,1.0,7,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,VEGFA,0.0552404310432517,focused_triad,4.0,7,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,WNT5A,0.0616540232592848,focused_triad,2.0,7,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,WNT7B,0.0514978176384736,focused_triad,5.0,7,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,AREG,-0.0068858044006696,focused_triad,7.0,7,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,CXCL12,0.0051538282286402,focused_triad,4.0,7,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,HBEGF,4.81566097843325e-05,focused_triad,5.0,7,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,TGFB1,0.0178760677165806,focused_triad,1.0,7,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,VEGFA,0.0103833871185954,focused_triad,2.0,7,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,WNT5A,-0.004706322729407,focused_triad,6.0,7,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,WNT7B,0.0059324018726166,focused_triad,3.0,7,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,AREG,0.0276309092404486,source_agnostic_planned_panel,16.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,CXCL12,0.0561877214113958,source_agnostic_planned_panel,5.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,FGF7,0.0529312999525572,source_agnostic_planned_panel,8.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,HBEGF,0.0215225707605997,source_agnostic_planned_panel,17.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,TGFB1,0.108379402905664,source_agnostic_planned_panel,1.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,VEGFA,0.0552404310432517,source_agnostic_planned_panel,6.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,WNT10A,0.053273029020052,source_agnostic_planned_panel,7.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,WNT11,0.0506946757976645,source_agnostic_planned_panel,14.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,WNT2,0.05698726402544,source_agnostic_planned_panel,4.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,WNT2B,0.0469258893226801,source_agnostic_planned_panel,15.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,WNT3A,0.0520603930889673,source_agnostic_planned_panel,10.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,WNT4,0.0608592923287267,source_agnostic_planned_panel,3.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,WNT5A,0.0616540232592848,source_agnostic_planned_panel,2.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,WNT5B,0.0508951676938307,source_agnostic_planned_panel,12.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,WNT7A,0.0507687794852544,source_agnostic_planned_panel,13.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,WNT7B,0.0514978176384736,source_agnostic_planned_panel,11.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,up,WNT9A,0.0527566063093772,source_agnostic_planned_panel,9.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,AREG,-0.0068858044006696,source_agnostic_planned_panel,17.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,CXCL12,0.0051538282286402,source_agnostic_planned_panel,7.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,FGF7,-0.0019388589500505,source_agnostic_planned_panel,15.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,HBEGF,4.81566097843325e-05,source_agnostic_planned_panel,14.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,TGFB1,0.0178760677165806,source_agnostic_planned_panel,1.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,VEGFA,0.0103833871185954,source_agnostic_planned_panel,3.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,WNT10A,0.0040014641913301,source_agnostic_planned_panel,11.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,WNT11,0.004775449166485,source_agnostic_planned_panel,8.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,WNT2,0.0030904529594601,source_agnostic_planned_panel,12.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,WNT2B,0.0022430297658397,source_agnostic_planned_panel,13.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,WNT3A,0.0086233945624251,source_agnostic_planned_panel,4.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,WNT4,0.0131055221202622,source_agnostic_planned_panel,2.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,WNT5A,-0.004706322729407,source_agnostic_planned_panel,16.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,WNT5B,0.004120178192586,source_agnostic_planned_panel,10.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,WNT7A,0.0053289986176087,source_agnostic_planned_panel,6.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,WNT7B,0.0059324018726166,source_agnostic_planned_panel,5.0,17,8
+fibroblasts,__broad__,LUAD,AAH,__none__,down,WNT9A,0.0042052333015843,source_agnostic_planned_panel,9.0,17,8
+fibroblasts,__broad__,LUAD,AIS,__none__,up,AREG,0.0499198444892917,focused_triad,4.0,6,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,CXCL12,0.0891849930800884,focused_triad,1.0,6,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,HBEGF,0.0126558833216289,focused_triad,6.0,6,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,TGFB1,0.0502575309709321,focused_triad,3.0,6,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,VEGFA,0.0797667844023581,focused_triad,2.0,6,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,WNT7B,0.0331037555120068,focused_triad,5.0,6,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,AREG,0.0499198444892917,source_agnostic_planned_panel,4.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,CXCL12,0.0891849930800884,source_agnostic_planned_panel,1.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,FGF7,0.0364311479768558,source_agnostic_planned_panel,7.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,HBEGF,0.0126558833216289,source_agnostic_planned_panel,18.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,TGFB1,0.0502575309709321,source_agnostic_planned_panel,3.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,VEGFA,0.0797667844023581,source_agnostic_planned_panel,2.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,WNT10A,0.0339828574119043,source_agnostic_planned_panel,8.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,WNT10B,0.0309190992180728,source_agnostic_planned_panel,15.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,WNT11,0.0328074303375317,source_agnostic_planned_panel,11.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,WNT2,0.0420674686565166,source_agnostic_planned_panel,5.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,WNT2B,0.0304584458781128,source_agnostic_planned_panel,16.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,WNT3A,0.0279721392148009,source_agnostic_planned_panel,17.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,WNT4,0.031483225916636,source_agnostic_planned_panel,14.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,WNT5A,0.037054917057223,source_agnostic_planned_panel,6.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,WNT5B,0.0316658181756279,source_agnostic_planned_panel,13.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,WNT7A,0.0325668127072314,source_agnostic_planned_panel,12.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,WNT7B,0.0331037555120068,source_agnostic_planned_panel,10.0,18,11
+fibroblasts,__broad__,LUAD,AIS,__none__,up,WNT9A,0.0333479113001902,source_agnostic_planned_panel,9.0,18,11
+fibroblasts,__broad__,LUAD,MIA,__none__,up,AREG,0.0283314915901357,focused_triad,4.0,5,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,HBEGF,0.0159438504046707,focused_triad,5.0,5,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,TGFB1,0.118376104728198,focused_triad,1.0,5,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,VEGFA,0.0539773874989996,focused_triad,3.0,5,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,WNT7B,0.0601699543663563,focused_triad,2.0,5,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,AREG,0.0001208475171645,focused_triad,3.0,5,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,HBEGF,-0.0039496026523707,focused_triad,5.0,5,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,TGFB1,0.0109979197926722,focused_triad,1.0,5,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,VEGFA,0.0092932493522238,focused_triad,2.0,5,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,WNT7B,-0.000130721675157,focused_triad,4.0,5,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,AREG,0.0283314915901357,source_agnostic_planned_panel,12.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,CXCL12,0.046357675799713,source_agnostic_planned_panel,10.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,FGF7,0.0473121586211596,source_agnostic_planned_panel,9.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,HBEGF,0.0159438504046707,source_agnostic_planned_panel,13.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,TGFB1,0.118376104728198,source_agnostic_planned_panel,1.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,VEGFA,0.0539773874989996,source_agnostic_planned_panel,8.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,WNT10A,0.0619081404271853,source_agnostic_planned_panel,3.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,WNT2,0.0637617621711452,source_agnostic_planned_panel,2.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,WNT3A,0.0414065297093558,source_agnostic_planned_panel,11.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,WNT5B,0.0589810211110372,source_agnostic_planned_panel,7.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,WNT7A,0.0605278246484666,source_agnostic_planned_panel,5.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,WNT7B,0.0601699543663563,source_agnostic_planned_panel,6.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,up,WNT9A,0.0614601188092197,source_agnostic_planned_panel,4.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,AREG,0.0001208475171645,source_agnostic_planned_panel,5.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,CXCL12,0.0055996394606426,source_agnostic_planned_panel,4.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,FGF7,-0.0009415197435909,source_agnostic_planned_panel,11.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,HBEGF,-0.0039496026523707,source_agnostic_planned_panel,12.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,TGFB1,0.0109979197926722,source_agnostic_planned_panel,2.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,VEGFA,0.0092932493522238,source_agnostic_planned_panel,3.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,WNT10A,-6.50615970680877e-05,source_agnostic_planned_panel,7.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,WNT2,-0.0058499836565523,source_agnostic_planned_panel,13.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,WNT3A,0.0247655395013408,source_agnostic_planned_panel,1.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,WNT5B,9.35038181511758e-05,source_agnostic_planned_panel,6.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,WNT7A,-0.000358226404857,source_agnostic_planned_panel,10.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,WNT7B,-0.000130721675157,source_agnostic_planned_panel,9.0,13,4
+fibroblasts,__broad__,LUAD,MIA,__none__,down,WNT9A,-9.57854339404943e-05,source_agnostic_planned_panel,8.0,13,4
+fibroblasts,__broad__,LUAD,normal,__none__,up,AREG,0.0381020859620807,focused_triad,9.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,CXCL12,0.0435009192455832,focused_triad,7.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,FGF10,0.040864481156306,focused_triad,8.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,HBEGF,0.0257697079105265,focused_triad,10.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,IL1B,0.0623528096444161,focused_triad,4.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,TGFB1,0.110136298161646,focused_triad,1.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,VEGFA,0.051609634858893,focused_triad,6.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT4,0.0737449023989476,focused_triad,2.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT5A,0.0516816853885321,focused_triad,5.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT7B,0.0691524868128608,focused_triad,3.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,AREG,-0.0213023841466221,focused_triad,4.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,CXCL12,-0.0322647638387228,focused_triad,7.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,FGF10,-0.0290416818697572,focused_triad,5.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,HBEGF,-0.0030193329959752,focused_triad,1.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,IL1B,-0.0355680586342007,focused_triad,8.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,TGFB1,-0.0167140422819484,focused_triad,3.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,VEGFA,-0.0309519036190499,focused_triad,6.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT4,-0.0386313482042844,focused_triad,9.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT5A,-0.0145262230846744,focused_triad,2.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT7B,-0.0392166431080717,focused_triad,10.0,10,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,AREG,0.0381020859620807,source_agnostic_planned_panel,20.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,CXCL12,0.0435009192455832,source_agnostic_planned_panel,18.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,FGF10,0.040864481156306,source_agnostic_planned_panel,19.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,FGF7,0.058887733388298,source_agnostic_planned_panel,14.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,HBEGF,0.0257697079105265,source_agnostic_planned_panel,21.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,IL1B,0.0623528096444161,source_agnostic_planned_panel,13.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,TGFB1,0.110136298161646,source_agnostic_planned_panel,1.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,VEGFA,0.051609634858893,source_agnostic_planned_panel,17.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT10A,0.0682010201089098,source_agnostic_planned_panel,8.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT10B,0.0632711187733066,source_agnostic_planned_panel,11.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT11,0.0664769002146944,source_agnostic_planned_panel,9.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT2,0.0758069341967775,source_agnostic_planned_panel,2.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT2B,0.0649140498427104,source_agnostic_planned_panel,10.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT3,0.0702498356534165,source_agnostic_planned_panel,4.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT3A,0.0517783426747866,source_agnostic_planned_panel,15.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT4,0.0737449023989476,source_agnostic_planned_panel,3.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT5A,0.0516816853885321,source_agnostic_planned_panel,16.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT5B,0.0630379279919905,source_agnostic_planned_panel,12.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT7A,0.069018942570974,source_agnostic_planned_panel,6.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT7B,0.0691524868128608,source_agnostic_planned_panel,5.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,up,WNT9A,0.0684522766080005,source_agnostic_planned_panel,7.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,AREG,-0.0213023841466221,source_agnostic_planned_panel,6.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,CXCL12,-0.0322647638387228,source_agnostic_planned_panel,9.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,FGF10,-0.0290416818697572,source_agnostic_planned_panel,7.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,FGF7,-0.0202770819609338,source_agnostic_planned_panel,5.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,HBEGF,-0.0030193329959752,source_agnostic_planned_panel,1.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,IL1B,-0.0355680586342007,source_agnostic_planned_panel,12.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,TGFB1,-0.0167140422819484,source_agnostic_planned_panel,3.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,VEGFA,-0.0309519036190499,source_agnostic_planned_panel,8.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT10A,-0.0379980023575148,source_agnostic_planned_panel,14.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT10B,-0.0385720840702286,source_agnostic_planned_panel,15.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT11,-0.0358251881503056,source_agnostic_planned_panel,13.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT2,-0.0502862839212433,source_agnostic_planned_panel,21.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT2B,-0.0448062101050686,source_agnostic_planned_panel,20.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT3,-0.0396213214332953,source_agnostic_planned_panel,19.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT3A,-0.0168915740379506,source_agnostic_planned_panel,4.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT4,-0.0386313482042844,source_agnostic_planned_panel,16.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT5A,-0.0145262230846744,source_agnostic_planned_panel,2.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT5B,-0.0345413888957502,source_agnostic_planned_panel,10.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT7A,-0.0354121104065434,source_agnostic_planned_panel,11.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT7B,-0.0392166431080717,source_agnostic_planned_panel,18.0,21,22
+fibroblasts,__broad__,LUAD,normal,__none__,down,WNT9A,-0.0388308085345238,source_agnostic_planned_panel,17.0,21,22
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,CCL2,0.0291144461606941,focused_triad,1.0,5,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,CXCL12,0.0231377391707321,focused_triad,4.0,5,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,FGF7,0.0218356288365856,focused_triad,5.0,5,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,VEGFA,0.0262052051716349,focused_triad,3.0,5,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,WNT2,0.0276269017325004,focused_triad,2.0,5,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,CCL2,0.0291144461606941,source_agnostic_planned_panel,8.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,CXCL12,0.0231377391707321,source_agnostic_planned_panel,13.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,FGF7,0.0218356288365856,source_agnostic_planned_panel,15.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,HBEGF,0.0041369646894228,source_agnostic_planned_panel,17.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,IL1A,0.0454121759776962,source_agnostic_planned_panel,6.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,IL1B,0.0501466970743074,source_agnostic_planned_panel,4.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,TGFB1,0.047561037899951,source_agnostic_planned_panel,5.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,VEGFA,0.0262052051716349,source_agnostic_planned_panel,10.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,WNT10A,0.0238629937735474,source_agnostic_planned_panel,12.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,WNT2,0.0276269017325004,source_agnostic_planned_panel,9.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,WNT2B,0.0197505752377379,source_agnostic_planned_panel,16.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,WNT3A,0.0317776373458185,source_agnostic_planned_panel,7.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,WNT5A,0.0667417876090203,source_agnostic_planned_panel,1.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,WNT5B,0.022270005978637,source_agnostic_planned_panel,14.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,WNT7A,0.0627674895965996,source_agnostic_planned_panel,3.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,WNT7B,0.0628793266154931,source_agnostic_planned_panel,2.0,17,5
+macrophages,Alveolar macrophages,LUAD,AAH,__none__,up,WNT9A,0.0238670038851029,source_agnostic_planned_panel,11.0,17,5
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,CCL2,0.03592448688965,focused_triad,5.0,7,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,CXCL12,0.0208217794959603,focused_triad,7.0,7,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,FGF7,0.0526241257823369,focused_triad,4.0,7,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,TGFB1,0.0682762448845769,focused_triad,1.0,7,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,VEGFA,0.0303673864732575,focused_triad,6.0,7,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,WNT2,0.0623271002910518,focused_triad,2.0,7,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,WNT2B,0.0541770308160744,focused_triad,3.0,7,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,AREG,0.0335027124640553,source_agnostic_planned_panel,17.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,CCL2,0.03592448688965,source_agnostic_planned_panel,16.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,CXCL12,0.0208217794959603,source_agnostic_planned_panel,22.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,CXCL2,0.0401805846633034,source_agnostic_planned_panel,15.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,FGF10,0.023945366824659,source_agnostic_planned_panel,21.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,FGF7,0.0526241257823369,source_agnostic_planned_panel,13.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,HBEGF,0.0268848309406928,source_agnostic_planned_panel,20.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,IL1A,0.0326991891226954,source_agnostic_planned_panel,18.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,IL1B,0.0432662503645488,source_agnostic_planned_panel,14.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,TGFB1,0.0682762448845769,source_agnostic_planned_panel,2.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,VEGFA,0.0303673864732575,source_agnostic_planned_panel,19.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,WNT10A,0.0606288882908048,source_agnostic_planned_panel,4.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,WNT10B,0.057860220489685,source_agnostic_planned_panel,11.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,WNT2,0.0623271002910518,source_agnostic_planned_panel,3.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,WNT2B,0.0541770308160744,source_agnostic_planned_panel,12.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,WNT3A,0.0592024091723862,source_agnostic_planned_panel,8.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,WNT4,0.058633870578366,source_agnostic_planned_panel,9.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,WNT5A,0.0957747602703213,source_agnostic_planned_panel,1.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,WNT5B,0.0582140273518095,source_agnostic_planned_panel,10.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,WNT7A,0.0600588333051319,source_agnostic_planned_panel,6.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,WNT7B,0.0593139535137604,source_agnostic_planned_panel,7.0,22,9
+macrophages,Alveolar macrophages,LUAD,normal,__none__,up,WNT9A,0.0602308616530075,source_agnostic_planned_panel,5.0,22,9
+macrophages,__broad__,LUAD,AAH,__none__,up,CCL2,-0.0009844890172782,focused_triad,7.0,7,8
+macrophages,__broad__,LUAD,AAH,__none__,up,CXCL12,0.0464017983011279,focused_triad,2.0,7,8
+macrophages,__broad__,LUAD,AAH,__none__,up,FGF7,0.0349325743093622,focused_triad,4.0,7,8
+macrophages,__broad__,LUAD,AAH,__none__,up,TGFB1,0.0619300490670495,focused_triad,1.0,7,8
+macrophages,__broad__,LUAD,AAH,__none__,up,VEGFA,0.0133841529745663,focused_triad,6.0,7,8
+macrophages,__broad__,LUAD,AAH,__none__,up,WNT2,0.0399818744320619,focused_triad,3.0,7,8
+macrophages,__broad__,LUAD,AAH,__none__,up,WNT5A,0.0225493945823012,focused_triad,5.0,7,8
+macrophages,__broad__,LUAD,AAH,__none__,up,AREG,0.0193389995335406,source_agnostic_planned_panel,17.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,CCL2,-0.0009844890172782,source_agnostic_planned_panel,19.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,CXCL12,0.0464017983011279,source_agnostic_planned_panel,7.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,FGF7,0.0349325743093622,source_agnostic_planned_panel,13.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,HBEGF,0.0237257749550203,source_agnostic_planned_panel,15.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,IL1A,0.0469904194020853,source_agnostic_planned_panel,6.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,IL1B,0.0584231299216181,source_agnostic_planned_panel,4.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,TGFB1,0.0619300490670495,source_agnostic_planned_panel,2.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,VEGFA,0.0133841529745663,source_agnostic_planned_panel,18.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,WNT10A,0.0404116411548818,source_agnostic_planned_panel,8.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,WNT2,0.0399818744320619,source_agnostic_planned_panel,10.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,WNT2B,0.0340030723559712,source_agnostic_planned_panel,14.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,WNT3A,0.047466162195552,source_agnostic_planned_panel,5.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,WNT4,0.03830285789565,source_agnostic_planned_panel,11.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,WNT5A,0.0225493945823012,source_agnostic_planned_panel,16.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,WNT5B,0.0382646466538982,source_agnostic_planned_panel,12.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,WNT7A,0.0620716427467714,source_agnostic_planned_panel,1.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,WNT7B,0.0608861107442565,source_agnostic_planned_panel,3.0,19,8
+macrophages,__broad__,LUAD,AAH,__none__,up,WNT9A,0.0401979212224204,source_agnostic_planned_panel,9.0,19,8
+macrophages,__broad__,LUAD,normal,__none__,up,CCL2,0.0683899650915881,focused_triad,7.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,up,CXCL12,0.0645607866944125,focused_triad,8.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,up,FGF7,0.0932368018199057,focused_triad,4.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,up,TGFB1,0.136344147856655,focused_triad,1.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,up,VEGFA,0.0915730682947417,focused_triad,6.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,up,WNT2,0.103237194619939,focused_triad,2.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,up,WNT2B,0.0927105097868603,focused_triad,5.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,up,WNT5A,0.0965861909260096,focused_triad,3.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,down,CCL2,0.0090062580055949,focused_triad,6.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,down,CXCL12,0.0021599401257077,focused_triad,7.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,down,FGF7,0.0238043536983679,focused_triad,3.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,down,TGFB1,0.017685627337305,focused_triad,4.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,down,VEGFA,-0.0040741796180993,focused_triad,8.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,down,WNT2,0.0284909673802792,focused_triad,1.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,down,WNT2B,0.026902205967748,focused_triad,2.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,down,WNT5A,0.0153910455248578,focused_triad,5.0,8,12
+macrophages,__broad__,LUAD,normal,__none__,up,AREG,0.0614210687504252,source_agnostic_planned_panel,22.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,CCL2,0.0683899650915881,source_agnostic_planned_panel,19.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,CXCL12,0.0645607866944125,source_agnostic_planned_panel,20.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,CXCL2,0.0964906321736148,source_agnostic_planned_panel,10.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,FGF10,0.0631496584155304,source_agnostic_planned_panel,21.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,FGF7,0.0932368018199057,source_agnostic_planned_panel,14.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,HBEGF,0.0510411891570793,source_agnostic_planned_panel,23.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,IL1A,0.0767314782982085,source_agnostic_planned_panel,18.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,IL1B,0.0969480800231898,source_agnostic_planned_panel,8.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,TGFB1,0.136344147856655,source_agnostic_planned_panel,1.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,VEGFA,0.0915730682947417,source_agnostic_planned_panel,16.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,WNT10A,0.0949958323513022,source_agnostic_planned_panel,11.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,WNT10B,0.0902316864473357,source_agnostic_planned_panel,17.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,WNT2,0.103237194619939,source_agnostic_planned_panel,4.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,WNT2B,0.0927105097868603,source_agnostic_planned_panel,15.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,WNT3,0.0974897545200772,source_agnostic_planned_panel,7.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,WNT3A,0.0948310717332411,source_agnostic_planned_panel,12.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,WNT4,0.098957420238035,source_agnostic_planned_panel,6.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,WNT5A,0.0965861909260096,source_agnostic_planned_panel,9.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,WNT5B,0.0991627674038402,source_agnostic_planned_panel,5.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,WNT7A,0.103263576488678,source_agnostic_planned_panel,3.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,WNT7B,0.103300937669329,source_agnostic_planned_panel,2.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,up,WNT9A,0.0947863358975656,source_agnostic_planned_panel,13.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,AREG,0.0045086884608565,source_agnostic_planned_panel,20.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,CCL2,0.0090062580055949,source_agnostic_planned_panel,18.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,CXCL12,0.0021599401257077,source_agnostic_planned_panel,21.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,CXCL2,0.0170434448971635,source_agnostic_planned_panel,14.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,FGF10,0.0149691146707485,source_agnostic_planned_panel,16.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,FGF7,0.0238043536983679,source_agnostic_planned_panel,11.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,HBEGF,-0.0075061039246617,source_agnostic_planned_panel,23.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,IL1A,0.0086372810246824,source_agnostic_planned_panel,19.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,IL1B,0.0098698070117802,source_agnostic_planned_panel,17.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,TGFB1,0.017685627337305,source_agnostic_planned_panel,13.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,VEGFA,-0.0040741796180993,source_agnostic_planned_panel,22.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,WNT10A,0.026087360916795,source_agnostic_planned_panel,5.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,WNT10B,0.0242208963683086,source_agnostic_planned_panel,10.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,WNT2,0.0284909673802792,source_agnostic_planned_panel,1.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,WNT2B,0.026902205967748,source_agnostic_planned_panel,2.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,WNT3,0.0262472273529198,source_agnostic_planned_panel,4.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,WNT3A,0.0237688188226757,source_agnostic_planned_panel,12.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,WNT4,0.0246140646691141,source_agnostic_planned_panel,9.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,WNT5A,0.0153910455248578,source_agnostic_planned_panel,15.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,WNT5B,0.0247227556567753,source_agnostic_planned_panel,8.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,WNT7A,0.0260659977147119,source_agnostic_planned_panel,6.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,WNT7B,0.0250132192272929,source_agnostic_planned_panel,7.0,23,12
+macrophages,__broad__,LUAD,normal,__none__,down,WNT9A,0.0265237337001404,source_agnostic_planned_panel,3.0,23,12

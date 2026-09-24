@@ -75,19 +75,19 @@ override the claim register.
 | [Nabhan: Wnt niches](Thesis/gate1_03_nabhan_2018/README.md#figure-gallery) | Source-expression heatmaps, threshold sensitivity, paired fibroblast and AT2 plots |
 | [Sikkema: reference annotation](Thesis/gate1_04_sikkema_2023_hlca/README.md#figure-gallery) | HLCA label transfer, uncertainty, marker-score heatmap and annotation/QC checks |
 | [Cardoso: ligand sources and niche candidates](Thesis/gate2_05_cardoso_2026/README.md#figure-gallery) | Source/depth sensitivity and resource/receptor coverage |
-| [Yu, Lee, Choi_Min: IL-1beta niches](Thesis/gate2_C3_yu_lee_choi_min_2026/README.md#figure-gallery) | Initial IPF pathway results and the context-specific gallery plan |
+| [Yu, Lee, Choi_Min: IL-1beta niches](Thesis/gate2_C3_yu_lee_choi_min_2026/README.md#figure-gallery) | IPF, mouse and paired human niches; spatial context, specificity and evidence review |
 | [Murthy: human distal-lung atlas](Thesis/ungated_murthy_2022/README.md#figure-gallery) | Donor UMAP and epithelial marker dot plot |
 | [Epithelial-state specificity across studies](Thesis/epithelial_state_specificity/README.md) | Matched-depth published signatures and cohort eligibility |
 
 ## Datasets
 
 The [IL-1beta review branch](Thesis/gate2_C3_yu_lee_choi_min_2026/README.md)
-has completed its initial mouse QC/clustering, two-cohort IPF pathway analysis,
-and descriptive ligand-receptor analysis in 25 donors. Its
-[initial report](Thesis/gate2_C3_yu_lee_choi_min_2026/INITIAL_RUN_REPORT.md)
-distinguishes completed results from pending treatment, sensitivity and
-human/spatial work. The [public-data shortlist](Thesis/gate2_C3_yu_lee_choi_min_2026/DATASETS.md)
-records further candidates. The table below describes the earlier analyses.
+has completed its feasible public-data analyses across IPF, early mouse
+blockade, human lesions, spatial context and epithelial program specificity.
+Its [evidence review](Thesis/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md)
+distinguishes measured findings from inconclusive and unidentifiable endpoints.
+The [public-data shortlist](Thesis/gate2_C3_yu_lee_choi_min_2026/DATASETS.md)
+records dataset roles; the table below describes the earlier analyses.
 
 Deposits used in the existing biological analyses, with their source studies and where in
 this repository it was read. Deposits are analysed under the roadmap paper

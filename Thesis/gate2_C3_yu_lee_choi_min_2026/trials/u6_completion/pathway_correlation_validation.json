@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "96696b14289b3069242554a45fe0f13195df901179ff4f17577bee5624704017",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u6_compare_pathway_assumptions.py",
+    "entrypoint_sha256": "7197caeca8e4f002e9ac740cd9c2703fed3c03fa1b1fe2a3b70c3394f41fbe9f"
+  },
+  "cohorts": 4,
+  "identical_test_membership_checked": true,
+  "interpretation": "Primary and fixed-correlation sensitivity results remain separate; a change in model assumptions is not a rescue by assay coverage or proof of absence. No criterion or model was changed."
+}

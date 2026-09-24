@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks": [
+    "selected panel order and zero-filled off-panel feature",
+    "full library and gene detection totals including empty cells",
+    "blocked CSC pseudobulk exact dense parity",
+    "detected-cell counts exact parity",
+    "excluded cells omitted",
+    "fractional count rejection"
+  ]
+}

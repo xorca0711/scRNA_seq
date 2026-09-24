@@ -1,0 +1,1009 @@
+config,label,cell_floor,module,case,reference,n_patients,eligible,source_coverage,reason,mean_difference,positive_patients,loo_min,loo_max
+unc20_largest_library,AT2,50,ADI_published_holdout,AAH,normal,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,AT2,50,ADI_published_holdout,AIS,normal,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,AT2,50,ADI_published_holdout,MIA,normal,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,AT2,50,ADI_published_holdout,LUAD,normal,23,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,AT2,50,ADI_published_holdout,LUAD,AAH,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,AT2,50,ADI_published_holdout,LUAD,AIS,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,AT2,50,ADI_published_holdout,LUAD,MIA,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,AT2,50,AT1_published_holdout,AAH,normal,8,True,0.842105263157895,eligible_descriptive_contrast,0.06922078291505618,5.0,0.026251790343969943,0.10023331027680271
+unc20_largest_library,AT2,50,AT1_published_holdout,AIS,normal,12,True,0.842105263157895,eligible_descriptive_contrast,0.04538726934825821,8.0,0.022945079159086227,0.0868202237142226
+unc20_largest_library,AT2,50,AT1_published_holdout,MIA,normal,4,True,0.842105263157895,eligible_descriptive_contrast,0.1837340410295174,4.0,0.16973724998582984,0.20773565571499
+unc20_largest_library,AT2,50,AT1_published_holdout,LUAD,normal,23,True,0.842105263157895,eligible_descriptive_contrast,0.1572280791715121,18.0,0.1425325997166581,0.17169012219069993
+unc20_largest_library,AT2,50,AT1_published_holdout,LUAD,AAH,8,True,0.842105263157895,eligible_descriptive_contrast,0.1092373162461987,5.0,0.06415376138556132,0.1471296920851228
+unc20_largest_library,AT2,50,AT1_published_holdout,LUAD,AIS,12,True,0.842105263157895,eligible_descriptive_contrast,0.09632636210337171,9.0,0.06135345021447002,0.11318742994726914
+unc20_largest_library,AT2,50,AT1_published_holdout,LUAD,MIA,4,True,0.842105263157895,eligible_descriptive_contrast,0.0050544456163672535,2.0,-0.04817963338025688,0.05345963762650641
+unc20_largest_library,AT2,50,AT2_published_holdout,AAH,normal,8,True,0.864321608040201,eligible_descriptive_contrast,0.02600842449990015,5.0,0.0027073781227229888,0.0475257411282601
+unc20_largest_library,AT2,50,AT2_published_holdout,AIS,normal,12,True,0.864321608040201,eligible_descriptive_contrast,0.014711736003045687,8.0,-0.0067564874455546715,0.05404409892842525
+unc20_largest_library,AT2,50,AT2_published_holdout,MIA,normal,4,True,0.864321608040201,eligible_descriptive_contrast,0.08619976386991479,3.0,0.05710828883477307,0.12925268900826303
+unc20_largest_library,AT2,50,AT2_published_holdout,LUAD,normal,23,True,0.864321608040201,eligible_descriptive_contrast,-0.0005961339868213021,15.0,-0.010256653010241357,0.02036267157423274
+unc20_largest_library,AT2,50,AT2_published_holdout,LUAD,AAH,8,True,0.864321608040201,eligible_descriptive_contrast,-0.02063719465356506,5.0,-0.06509132678777581,0.015997521527387093
+unc20_largest_library,AT2,50,AT2_published_holdout,LUAD,AIS,12,True,0.864321608040201,eligible_descriptive_contrast,-0.0042174840809323655,7.0,-0.050892937765023454,0.024918502674459185
+unc20_largest_library,AT2,50,AT2_published_holdout,LUAD,MIA,4,True,0.864321608040201,eligible_descriptive_contrast,-0.06564082955028483,0.0,-0.08524941698274298,-0.04495580318298664
+unc20_largest_library,AT2,50,DATP_PATS_holdout_panel,AAH,normal,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,AT2,50,DATP_PATS_holdout_panel,AIS,normal,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,AT2,50,DATP_PATS_holdout_panel,MIA,normal,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,AT2,50,DATP_PATS_holdout_panel,LUAD,normal,23,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,AT2,50,DATP_PATS_holdout_panel,LUAD,AAH,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,AT2,50,DATP_PATS_holdout_panel,LUAD,AIS,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,AT2,50,DATP_PATS_holdout_panel,LUAD,MIA,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,AT2,50,HALLMARK_HYPOXIA,AAH,normal,8,True,0.92964824120603,eligible_descriptive_contrast,-0.0022848400098964827,4.0,-0.0634286834706131,0.05406972405752545
+unc20_largest_library,AT2,50,HALLMARK_HYPOXIA,AIS,normal,12,True,0.92964824120603,eligible_descriptive_contrast,0.031112726436315907,8.0,-0.037485925363869056,0.08468131241399825
+unc20_largest_library,AT2,50,HALLMARK_HYPOXIA,MIA,normal,4,True,0.92964824120603,eligible_descriptive_contrast,0.15032754359692235,2.0,0.07574096789122331,0.2146364469119765
+unc20_largest_library,AT2,50,HALLMARK_HYPOXIA,LUAD,normal,23,True,0.92964824120603,eligible_descriptive_contrast,0.24612787814974635,21.0,0.22340154825935937,0.26692573655394347
+unc20_largest_library,AT2,50,HALLMARK_HYPOXIA,LUAD,AAH,8,True,0.92964824120603,eligible_descriptive_contrast,0.27375129089214134,8.0,0.21935817170318295,0.30863934705755014
+unc20_largest_library,AT2,50,HALLMARK_HYPOXIA,LUAD,AIS,12,True,0.92964824120603,eligible_descriptive_contrast,0.21165502719618065,10.0,0.1665456643529971,0.24153039509276522
+unc20_largest_library,AT2,50,HALLMARK_HYPOXIA,LUAD,MIA,4,True,0.92964824120603,eligible_descriptive_contrast,0.13163657017109975,3.0,0.09094184850123987,0.22875507262119962
+unc20_largest_library,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,AAH,normal,8,True,0.954314720812183,eligible_descriptive_contrast,-0.0770727634250975,1.0,-0.15175755508129146,-0.02252832286605993
+unc20_largest_library,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,AIS,normal,12,True,0.954314720812183,eligible_descriptive_contrast,0.10059085972221911,8.0,0.03206458970520266,0.17146917223593994
+unc20_largest_library,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,MIA,normal,4,True,0.954314720812183,eligible_descriptive_contrast,0.3007490626839151,3.0,0.1732497581505701,0.4203737069431135
+unc20_largest_library,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,normal,23,True,0.954314720812183,eligible_descriptive_contrast,0.3966912130672839,20.0,0.3541945379466745,0.43025296904221494
+unc20_largest_library,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AAH,8,True,0.954314720812183,eligible_descriptive_contrast,0.4949671036138263,7.0,0.3925368880532372,0.5823048598624087
+unc20_largest_library,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AIS,12,True,0.954314720812183,eligible_descriptive_contrast,0.2532948032051408,9.0,0.20045455816382,0.2935259694354755
+unc20_largest_library,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,MIA,4,True,0.954314720812183,eligible_descriptive_contrast,0.41868326120095734,4.0,0.3804230607197998,0.4788221732372831
+unc20_largest_library,AT2,50,HALLMARK_P53_PATHWAY,AAH,normal,8,True,0.93,eligible_descriptive_contrast,0.07947502713687882,6.0,0.02401282277723433,0.12272778312432145
+unc20_largest_library,AT2,50,HALLMARK_P53_PATHWAY,AIS,normal,12,True,0.93,eligible_descriptive_contrast,0.094119294996914,9.0,0.07316647088933982,0.13627250606209343
+unc20_largest_library,AT2,50,HALLMARK_P53_PATHWAY,MIA,normal,4,True,0.93,eligible_descriptive_contrast,0.30208838004158767,4.0,0.2922397668500934,0.3103932903135336
+unc20_largest_library,AT2,50,HALLMARK_P53_PATHWAY,LUAD,normal,23,True,0.93,eligible_descriptive_contrast,0.23594734902851008,21.0,0.215562059529766,0.2557863617686892
+unc20_largest_library,AT2,50,HALLMARK_P53_PATHWAY,LUAD,AAH,8,True,0.93,eligible_descriptive_contrast,0.1389536431477274,6.0,0.09959691159222281,0.17432620313352132
+unc20_largest_library,AT2,50,HALLMARK_P53_PATHWAY,LUAD,AIS,12,True,0.93,eligible_descriptive_contrast,0.16061809055388268,11.0,0.13979293123782205,0.18517939259497107
+unc20_largest_library,AT2,50,HALLMARK_P53_PATHWAY,LUAD,MIA,4,True,0.93,eligible_descriptive_contrast,-0.04634487338072235,2.0,-0.10587971286247318,0.016000504821626887
+unc20_largest_library,AT2,50,HPCS_author_top100,AAH,normal,8,True,0.78,eligible_descriptive_contrast,0.018893530095146327,3.0,-0.06993712217802704,0.09158970301987569
+unc20_largest_library,AT2,50,HPCS_author_top100,AIS,normal,12,True,0.78,eligible_descriptive_contrast,0.11739407416936827,10.0,0.07469566046278266,0.1715380504362008
+unc20_largest_library,AT2,50,HPCS_author_top100,MIA,normal,4,True,0.78,eligible_descriptive_contrast,0.210054531992935,3.0,0.1250016870574265,0.3497818803790936
+unc20_largest_library,AT2,50,HPCS_author_top100,LUAD,normal,23,True,0.78,eligible_descriptive_contrast,0.33369407383789135,18.0,0.2914159893568291,0.3687480508420355
+unc20_largest_library,AT2,50,HPCS_author_top100,LUAD,AAH,8,True,0.78,eligible_descriptive_contrast,0.34290169095795886,6.0,0.25611840485168297,0.4244029317803645
+unc20_largest_library,AT2,50,HPCS_author_top100,LUAD,AIS,12,True,0.78,eligible_descriptive_contrast,0.245741008855456,10.0,0.20066019762239373,0.28738100516584203
+unc20_largest_library,AT2,50,HPCS_author_top100,LUAD,MIA,4,True,0.78,eligible_descriptive_contrast,0.17481432329605506,3.0,0.10944978186174688,0.24811294669508013
+unc20_largest_library,AT2,50,HPCS_excluding_operational_markers,AAH,normal,8,True,0.785714285714286,eligible_descriptive_contrast,0.025957613619719766,3.0,-0.06539098973569304,0.09538989621682838
+unc20_largest_library,AT2,50,HPCS_excluding_operational_markers,AIS,normal,12,True,0.785714285714286,eligible_descriptive_contrast,0.1153619148617749,10.0,0.06685004785597991,0.16684041870408625
+unc20_largest_library,AT2,50,HPCS_excluding_operational_markers,MIA,normal,4,True,0.785714285714286,eligible_descriptive_contrast,0.19312283939598252,3.0,0.10041218754807317,0.3402190648936134
+unc20_largest_library,AT2,50,HPCS_excluding_operational_markers,LUAD,normal,23,True,0.785714285714286,eligible_descriptive_contrast,0.3173407326477195,19.0,0.27423722922984856,0.35205326448787627
+unc20_largest_library,AT2,50,HPCS_excluding_operational_markers,LUAD,AAH,8,True,0.785714285714286,eligible_descriptive_contrast,0.3228374659436089,6.0,0.23543531587602443,0.40694627924726456
+unc20_largest_library,AT2,50,HPCS_excluding_operational_markers,LUAD,AIS,12,True,0.785714285714286,eligible_descriptive_contrast,0.24591153305878186,10.0,0.20145095221838386,0.2920219662808702
+unc20_largest_library,AT2,50,HPCS_excluding_operational_markers,LUAD,MIA,4,True,0.785714285714286,eligible_descriptive_contrast,0.1449994258708649,3.0,0.08336877906356015,0.21925741883082317
+unc20_largest_library,AT2,50,HPCS_without_ADI_or_operational_markers,AAH,normal,8,True,0.791208791208791,eligible_descriptive_contrast,0.00810786827036114,3.0,-0.0833345611744901,0.0739197364420556
+unc20_largest_library,AT2,50,HPCS_without_ADI_or_operational_markers,AIS,normal,12,True,0.791208791208791,eligible_descriptive_contrast,0.09330691857453581,9.0,0.043499778319027224,0.14569817157926998
+unc20_largest_library,AT2,50,HPCS_without_ADI_or_operational_markers,MIA,normal,4,True,0.791208791208791,eligible_descriptive_contrast,0.175273887223525,3.0,0.07365746002026989,0.3438512461219034
+unc20_largest_library,AT2,50,HPCS_without_ADI_or_operational_markers,LUAD,normal,23,True,0.791208791208791,eligible_descriptive_contrast,0.30928236424771693,19.0,0.26538236171545454,0.34340318702282585
+unc20_largest_library,AT2,50,HPCS_without_ADI_or_operational_markers,LUAD,AAH,8,True,0.791208791208791,eligible_descriptive_contrast,0.3300565531861751,7.0,0.23774340935228006,0.41198264040269006
+unc20_largest_library,AT2,50,HPCS_without_ADI_or_operational_markers,LUAD,AIS,12,True,0.791208791208791,eligible_descriptive_contrast,0.2569300350549809,10.0,0.21219351538496828,0.3032090323360601
+unc20_largest_library,AT2,50,HPCS_without_ADI_or_operational_markers,LUAD,MIA,4,True,0.791208791208791,eligible_descriptive_contrast,0.17321551313060235,3.0,0.11791540237895,0.2457479214395164
+unc20_largest_library,AT2,50,Han_ISR_source_symbols,AAH,normal,8,True,0.821705426356589,eligible_descriptive_contrast,0.07767080939187998,5.0,0.023491188839165695,0.12843208386807423
+unc20_largest_library,AT2,50,Han_ISR_source_symbols,AIS,normal,12,True,0.821705426356589,eligible_descriptive_contrast,0.14125293438053577,9.0,0.10073381817873264,0.17840367551055536
+unc20_largest_library,AT2,50,Han_ISR_source_symbols,MIA,normal,4,True,0.821705426356589,eligible_descriptive_contrast,0.40215698986678505,4.0,0.35134309670032,0.4372164239120934
+unc20_largest_library,AT2,50,Han_ISR_source_symbols,LUAD,normal,23,True,0.821705426356589,eligible_descriptive_contrast,0.37332851187272437,23.0,0.3572346674343777,0.38990428937962496
+unc20_largest_library,AT2,50,Han_ISR_source_symbols,LUAD,AAH,8,True,0.821705426356589,eligible_descriptive_contrast,0.2590399940255612,8.0,0.21593880066282573,0.28377684026201716
+unc20_largest_library,AT2,50,Han_ISR_source_symbols,LUAD,AIS,12,True,0.821705426356589,eligible_descriptive_contrast,0.22180982513879174,9.0,0.1685334437145337,0.2525286502874183
+unc20_largest_library,AT2,50,Han_ISR_source_symbols,LUAD,MIA,4,True,0.821705426356589,eligible_descriptive_contrast,0.03573542455580525,3.0,-0.009950907308983107,0.09363623497511704
+unc20_largest_library,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,AAH,normal,8,True,0.847619047619048,eligible_descriptive_contrast,0.10346484820963359,6.0,0.04414969782175847,0.14929996747565985
+unc20_largest_library,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,AIS,normal,12,True,0.847619047619048,eligible_descriptive_contrast,0.17592198013346413,9.0,0.13018911846354903,0.2067264121223727
+unc20_largest_library,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,MIA,normal,4,True,0.847619047619048,eligible_descriptive_contrast,0.46571944168574764,4.0,0.39984566871613697,0.52678221680514
+unc20_largest_library,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,normal,23,True,0.847619047619048,eligible_descriptive_contrast,0.43086229828450645,23.0,0.4097525588015413,0.44333422783423226
+unc20_largest_library,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AAH,8,True,0.847619047619048,eligible_descriptive_contrast,0.27961369045059004,8.0,0.25216538586941856,0.29831242825974574
+unc20_largest_library,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AIS,12,True,0.847619047619048,eligible_descriptive_contrast,0.2294536593823092,11.0,0.17487652324743277,0.2575673114584036
+unc20_largest_library,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,MIA,4,True,0.847619047619048,eligible_descriptive_contrast,0.08232378622657222,3.0,0.03245311286370948,0.14507384270669318
+unc20_largest_library,__broad__,50,ADI_published_holdout,AAH,normal,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,__broad__,50,ADI_published_holdout,AIS,normal,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,__broad__,50,ADI_published_holdout,MIA,normal,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,__broad__,50,ADI_published_holdout,LUAD,normal,23,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,__broad__,50,ADI_published_holdout,LUAD,AAH,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,__broad__,50,ADI_published_holdout,LUAD,AIS,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,__broad__,50,ADI_published_holdout,LUAD,MIA,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,__broad__,50,AT1_published_holdout,AAH,normal,8,True,0.842105263157895,eligible_descriptive_contrast,0.07000348789628374,5.0,0.02702404986227006,0.10112193637722276
+unc20_largest_library,__broad__,50,AT1_published_holdout,AIS,normal,12,True,0.842105263157895,eligible_descriptive_contrast,0.04480141424229419,8.0,0.0222713786531373,0.08619812004689456
+unc20_largest_library,__broad__,50,AT1_published_holdout,MIA,normal,4,True,0.842105263157895,eligible_descriptive_contrast,0.18356300007751503,4.0,0.16938222622378016,0.20739675933070334
+unc20_largest_library,__broad__,50,AT1_published_holdout,LUAD,normal,23,True,0.842105263157895,eligible_descriptive_contrast,0.15861188646068383,19.0,0.14369939263090672,0.1732322564630295
+unc20_largest_library,__broad__,50,AT1_published_holdout,LUAD,AAH,8,True,0.842105263157895,eligible_descriptive_contrast,0.10882434075329861,5.0,0.06363614285259558,0.1485117852829813
+unc20_largest_library,__broad__,50,AT1_published_holdout,LUAD,AIS,12,True,0.842105263157895,eligible_descriptive_contrast,0.09965224831831243,9.0,0.06501873226173908,0.11676307002502986
+unc20_largest_library,__broad__,50,AT1_published_holdout,LUAD,MIA,4,True,0.842105263157895,eligible_descriptive_contrast,0.004503008672797293,2.0,-0.04894889685479361,0.054790885605286554
+unc20_largest_library,__broad__,50,AT2_published_holdout,AAH,normal,8,True,0.864321608040201,eligible_descriptive_contrast,0.024775001039758715,5.0,0.0015985591346685218,0.046159792938091346
+unc20_largest_library,__broad__,50,AT2_published_holdout,AIS,normal,12,True,0.864321608040201,eligible_descriptive_contrast,0.013629821780758444,7.0,-0.008097015233232615,0.05291261074527737
+unc20_largest_library,__broad__,50,AT2_published_holdout,MIA,normal,4,True,0.864321608040201,eligible_descriptive_contrast,0.08657848699537252,3.0,0.05755721705599992,0.12983642904834683
+unc20_largest_library,__broad__,50,AT2_published_holdout,LUAD,normal,23,True,0.864321608040201,eligible_descriptive_contrast,-0.005580766291481771,15.0,-0.01556151036426416,0.015374842927817685
+unc20_largest_library,__broad__,50,AT2_published_holdout,LUAD,AAH,8,True,0.864321608040201,eligible_descriptive_contrast,-0.027051650901321334,4.0,-0.07249835993132578,0.011585134084258542
+unc20_largest_library,__broad__,50,AT2_published_holdout,LUAD,AIS,12,True,0.864321608040201,eligible_descriptive_contrast,-0.0035568325117959856,7.0,-0.050122037775181046,0.026064136510389847
+unc20_largest_library,__broad__,50,AT2_published_holdout,LUAD,MIA,4,True,0.864321608040201,eligible_descriptive_contrast,-0.07712796347077511,0.0,-0.10006299723044343,-0.0534035448974833
+unc20_largest_library,__broad__,50,DATP_PATS_holdout_panel,AAH,normal,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,__broad__,50,DATP_PATS_holdout_panel,AIS,normal,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,__broad__,50,DATP_PATS_holdout_panel,MIA,normal,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,__broad__,50,DATP_PATS_holdout_panel,LUAD,normal,23,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,__broad__,50,DATP_PATS_holdout_panel,LUAD,AAH,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,__broad__,50,DATP_PATS_holdout_panel,LUAD,AIS,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,__broad__,50,DATP_PATS_holdout_panel,LUAD,MIA,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_largest_library,__broad__,50,HALLMARK_HYPOXIA,AAH,normal,8,True,0.92964824120603,eligible_descriptive_contrast,-0.004065234631951131,4.0,-0.06334426956889841,0.052119830420947304
+unc20_largest_library,__broad__,50,HALLMARK_HYPOXIA,AIS,normal,12,True,0.92964824120603,eligible_descriptive_contrast,0.03138068712031783,8.0,-0.03755684496206331,0.08517986352395489
+unc20_largest_library,__broad__,50,HALLMARK_HYPOXIA,MIA,normal,4,True,0.92964824120603,eligible_descriptive_contrast,0.15152877193960257,2.0,0.07692414783432995,0.21593842517444006
+unc20_largest_library,__broad__,50,HALLMARK_HYPOXIA,LUAD,normal,23,True,0.92964824120603,eligible_descriptive_contrast,0.2453555765149841,21.0,0.22330428641700475,0.2662742288011484
+unc20_largest_library,__broad__,50,HALLMARK_HYPOXIA,LUAD,AAH,8,True,0.92964824120603,eligible_descriptive_contrast,0.2732949629696325,8.0,0.21861066745474148,0.30883292736321294
+unc20_largest_library,__broad__,50,HALLMARK_HYPOXIA,LUAD,AIS,12,True,0.92964824120603,eligible_descriptive_contrast,0.21148924594273402,10.0,0.16593358931712618,0.24146891838893253
+unc20_largest_library,__broad__,50,HALLMARK_HYPOXIA,LUAD,MIA,4,True,0.92964824120603,eligible_descriptive_contrast,0.12970283543442518,3.0,0.08905497792976351,0.22198964260701684
+unc20_largest_library,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,AAH,normal,8,True,0.954314720812183,eligible_descriptive_contrast,-0.0799244819132412,1.0,-0.15245614715557426,-0.02569847480829855
+unc20_largest_library,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,AIS,normal,12,True,0.954314720812183,eligible_descriptive_contrast,0.10130394684956752,8.0,0.03242050493507637,0.1724543594159791
+unc20_largest_library,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,MIA,normal,4,True,0.954314720812183,eligible_descriptive_contrast,0.30183072064957006,3.0,0.17329041077189014,0.4221118403912234
+unc20_largest_library,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,normal,23,True,0.954314720812183,eligible_descriptive_contrast,0.39104322931364643,20.0,0.3494031493607254,0.42554656397046303
+unc20_largest_library,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AAH,8,True,0.954314720812183,eligible_descriptive_contrast,0.49246791660314115,7.0,0.3892127746539999,0.580969815116194
+unc20_largest_library,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AIS,12,True,0.954314720812183,eligible_descriptive_contrast,0.2509123001037366,9.0,0.19781764573766172,0.29116351753581815
+unc20_largest_library,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,MIA,4,True,0.954314720812183,eligible_descriptive_contrast,0.40281275548802997,4.0,0.35901706820428325,0.4598093106493633
+unc20_largest_library,__broad__,50,HALLMARK_P53_PATHWAY,AAH,normal,8,True,0.93,eligible_descriptive_contrast,0.07993421565585501,6.0,0.02410982866001429,0.12332010992044141
+unc20_largest_library,__broad__,50,HALLMARK_P53_PATHWAY,AIS,normal,12,True,0.93,eligible_descriptive_contrast,0.09498658840043483,9.0,0.0740645173768871,0.13730876509031892
+unc20_largest_library,__broad__,50,HALLMARK_P53_PATHWAY,MIA,normal,4,True,0.93,eligible_descriptive_contrast,0.30153808968276996,4.0,0.2923301673473733,0.31025642093805317
+unc20_largest_library,__broad__,50,HALLMARK_P53_PATHWAY,LUAD,normal,23,True,0.93,eligible_descriptive_contrast,0.24038168000340202,21.0,0.22023994552748485,0.2605558273753535
+unc20_largest_library,__broad__,50,HALLMARK_P53_PATHWAY,LUAD,AAH,8,True,0.93,eligible_descriptive_contrast,0.14136673446983972,6.0,0.09852107181393548,0.17776065134074542
+unc20_largest_library,__broad__,50,HALLMARK_P53_PATHWAY,LUAD,AIS,12,True,0.93,eligible_descriptive_contrast,0.1678296086097558,11.0,0.1473328698153009,0.1931192879739663
+unc20_largest_library,__broad__,50,HALLMARK_P53_PATHWAY,LUAD,MIA,4,True,0.93,eligible_descriptive_contrast,-0.05026582677113489,2.0,-0.11079373305548312,0.012032672884643306
+unc20_largest_library,__broad__,50,HPCS_author_top100,AAH,normal,8,True,0.78,eligible_descriptive_contrast,0.015218702465959966,3.0,-0.07034758071020862,0.08750952570849987
+unc20_largest_library,__broad__,50,HPCS_author_top100,AIS,normal,12,True,0.78,eligible_descriptive_contrast,0.11931365093691419,10.0,0.07659745516345726,0.17304174406001635
+unc20_largest_library,__broad__,50,HPCS_author_top100,MIA,normal,4,True,0.78,eligible_descriptive_contrast,0.2115525365008749,3.0,0.12619232776134334,0.35172494485100997
+unc20_largest_library,__broad__,50,HPCS_author_top100,LUAD,normal,23,True,0.78,eligible_descriptive_contrast,0.33741379129750604,19.0,0.2960384092618508,0.37279610113023537
+unc20_largest_library,__broad__,50,HPCS_author_top100,LUAD,AAH,8,True,0.78,eligible_descriptive_contrast,0.34634273705010504,6.0,0.25967907267179297,0.4292870126713315
+unc20_largest_library,__broad__,50,HPCS_author_top100,LUAD,AIS,12,True,0.78,eligible_descriptive_contrast,0.25146635966717157,10.0,0.20656805641549444,0.29371103385546177
+unc20_largest_library,__broad__,50,HPCS_author_top100,LUAD,MIA,4,True,0.78,eligible_descriptive_contrast,0.17258887445064763,3.0,0.10648964875904336,0.24586214223053351
+unc20_largest_library,__broad__,50,HPCS_excluding_operational_markers,AAH,normal,8,True,0.785714285714286,eligible_descriptive_contrast,0.022299388913898766,3.0,-0.06573169069551854,0.09128688781953283
+unc20_largest_library,__broad__,50,HPCS_excluding_operational_markers,AIS,normal,12,True,0.785714285714286,eligible_descriptive_contrast,0.11730275600022914,10.0,0.06874210239362814,0.1690529453309682
+unc20_largest_library,__broad__,50,HPCS_excluding_operational_markers,MIA,normal,4,True,0.785714285714286,eligible_descriptive_contrast,0.19447359611563508,3.0,0.10139602126189,0.3420401953230002
+unc20_largest_library,__broad__,50,HPCS_excluding_operational_markers,LUAD,normal,23,True,0.785714285714286,eligible_descriptive_contrast,0.32075043713739604,19.0,0.2786317353372154,0.3557765450031027
+unc20_largest_library,__broad__,50,HPCS_excluding_operational_markers,LUAD,AAH,8,True,0.785714285714286,eligible_descriptive_contrast,0.32572820642732236,6.0,0.23840160754214848,0.41150926997832266
+unc20_largest_library,__broad__,50,HPCS_excluding_operational_markers,LUAD,AIS,12,True,0.785714285714286,eligible_descriptive_contrast,0.25154112461112416,10.0,0.2073954493602881,0.2982781194885182
+unc20_largest_library,__broad__,50,HPCS_excluding_operational_markers,LUAD,MIA,4,True,0.785714285714286,eligible_descriptive_contrast,0.1424488364958525,3.0,0.08008314749896339,0.21655086417189326
+unc20_largest_library,__broad__,50,HPCS_without_ADI_or_operational_markers,AAH,normal,8,True,0.791208791208791,eligible_descriptive_contrast,0.004419468196324938,3.0,-0.08399550636509145,0.06978756603712702
+unc20_largest_library,__broad__,50,HPCS_without_ADI_or_operational_markers,AIS,normal,12,True,0.791208791208791,eligible_descriptive_contrast,0.09514699653457825,9.0,0.04526644581562991,0.14780746775192266
+unc20_largest_library,__broad__,50,HPCS_without_ADI_or_operational_markers,MIA,normal,4,True,0.791208791208791,eligible_descriptive_contrast,0.1766715307832325,3.0,0.07464736187994332,0.3458750008129199
+unc20_largest_library,__broad__,50,HPCS_without_ADI_or_operational_markers,LUAD,normal,23,True,0.791208791208791,eligible_descriptive_contrast,0.31265377262672994,19.0,0.26953708532463133,0.34708699670522997
+unc20_largest_library,__broad__,50,HPCS_without_ADI_or_operational_markers,LUAD,AAH,8,True,0.791208791208791,eligible_descriptive_contrast,0.33322233872515883,7.0,0.24100072403956727,0.41667761880514437
+unc20_largest_library,__broad__,50,HPCS_without_ADI_or_operational_markers,LUAD,AIS,12,True,0.791208791208791,eligible_descriptive_contrast,0.26273178343968656,10.0,0.21837927449013267,0.3096609510047063
+unc20_largest_library,__broad__,50,HPCS_without_ADI_or_operational_markers,LUAD,MIA,4,True,0.791208791208791,eligible_descriptive_contrast,0.16983982308221512,3.0,0.11353783921973666,0.2424330707951666
+unc20_largest_library,__broad__,50,Han_ISR_source_symbols,AAH,normal,8,True,0.821705426356589,eligible_descriptive_contrast,0.0803691628071036,5.0,0.024145863885945622,0.13154362519230553
+unc20_largest_library,__broad__,50,Han_ISR_source_symbols,AIS,normal,12,True,0.821705426356589,eligible_descriptive_contrast,0.14371988324173732,9.0,0.10325640739196253,0.18111746891743621
+unc20_largest_library,__broad__,50,Han_ISR_source_symbols,MIA,normal,4,True,0.821705426356589,eligible_descriptive_contrast,0.403629195567765,4.0,0.35254757783168333,0.4395548870143033
+unc20_largest_library,__broad__,50,Han_ISR_source_symbols,LUAD,normal,23,True,0.821705426356589,eligible_descriptive_contrast,0.383303829583071,23.0,0.36704006995488975,0.4002747054239165
+unc20_largest_library,__broad__,50,Han_ISR_source_symbols,LUAD,AAH,8,True,0.821705426356589,eligible_descriptive_contrast,0.2687719051800763,8.0,0.22162353001929574,0.290559302473543
+unc20_largest_library,__broad__,50,Han_ISR_source_symbols,LUAD,AIS,12,True,0.821705426356589,eligible_descriptive_contrast,0.22567919448037407,9.0,0.17108353832836992,0.2566664706493999
+unc20_largest_library,__broad__,50,Han_ISR_source_symbols,LUAD,MIA,4,True,0.821705426356589,eligible_descriptive_contrast,0.04844748686899969,3.0,0.007064631552616163,0.11228619945179978
+unc20_largest_library,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,AAH,normal,8,True,0.847619047619048,eligible_descriptive_contrast,0.10646173731210223,6.0,0.044881463472175476,0.15275663264321265
+unc20_largest_library,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,AIS,normal,12,True,0.847619047619048,eligible_descriptive_contrast,0.1782343905425634,9.0,0.13250574110351285,0.20877815519172735
+unc20_largest_library,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,MIA,normal,4,True,0.847619047619048,eligible_descriptive_contrast,0.46715694744059244,4.0,0.4008564366933465,0.5292625893138166
+unc20_largest_library,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,normal,23,True,0.847619047619048,eligible_descriptive_contrast,0.44236215549314867,23.0,0.42164967026289407,0.45524695984471997
+unc20_largest_library,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AAH,8,True,0.847619047619048,eligible_descriptive_contrast,0.28974382147004774,8.0,0.258972661769576,0.31007977778158174
+unc20_largest_library,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AIS,12,True,0.847619047619048,eligible_descriptive_contrast,0.23472467648410492,11.0,0.17886081159630632,0.26317001893561265
+unc20_largest_library,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,MIA,4,True,0.847619047619048,eligible_descriptive_contrast,0.09879916562823499,3.0,0.05440610387884023,0.1685036568931535
+unc20_pooled,AT2,30,ADI_published_holdout,AAH,normal,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,30,ADI_published_holdout,AIS,normal,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,30,ADI_published_holdout,MIA,normal,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,30,ADI_published_holdout,LUAD,normal,23,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,30,ADI_published_holdout,LUAD,AAH,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,30,ADI_published_holdout,LUAD,AIS,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,30,ADI_published_holdout,LUAD,MIA,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,30,AT1_published_holdout,AAH,normal,8,True,0.842105263157895,eligible_descriptive_contrast,0.07243638799206265,5.0,0.029342240038661593,0.10387627015488578
+unc20_pooled,AT2,30,AT1_published_holdout,AIS,normal,12,True,0.842105263157895,eligible_descriptive_contrast,0.0484095414017125,8.0,0.026058569806648165,0.09020635873922006
+unc20_pooled,AT2,30,AT1_published_holdout,MIA,normal,4,True,0.842105263157895,eligible_descriptive_contrast,0.18508149457494505,4.0,0.17086402048072338,0.20905121592069342
+unc20_pooled,AT2,30,AT1_published_holdout,LUAD,normal,23,True,0.842105263157895,eligible_descriptive_contrast,0.16567991763532347,19.0,0.1512012018961027,0.180553586671405
+unc20_pooled,AT2,30,AT1_published_holdout,LUAD,AAH,8,True,0.842105263157895,eligible_descriptive_contrast,0.1087804398154123,5.0,0.06339126800889693,0.1465295994674041
+unc20_pooled,AT2,30,AT1_published_holdout,LUAD,AIS,12,True,0.842105263157895,eligible_descriptive_contrast,0.09421699430658921,9.0,0.058559394897017274,0.10945490911197647
+unc20_pooled,AT2,30,AT1_published_holdout,LUAD,MIA,4,True,0.842105263157895,eligible_descriptive_contrast,0.005280217302907397,2.0,-0.04805640983786663,0.05343447283752312
+unc20_pooled,AT2,30,AT2_published_holdout,AAH,normal,8,True,0.864321608040201,eligible_descriptive_contrast,0.025591761492458676,5.0,0.001558337161267076,0.04728237445254851
+unc20_pooled,AT2,30,AT2_published_holdout,AIS,normal,12,True,0.864321608040201,eligible_descriptive_contrast,0.019614086667449977,10.0,-0.0022545087772364203,0.05964927544436724
+unc20_pooled,AT2,30,AT2_published_holdout,MIA,normal,4,True,0.864321608040201,eligible_descriptive_contrast,0.08966075712776278,3.0,0.059830896376470356,0.1339323952558935
+unc20_pooled,AT2,30,AT2_published_holdout,LUAD,normal,23,True,0.864321608040201,eligible_descriptive_contrast,0.005197539892256633,15.0,-0.00441976560816627,0.026445684161347405
+unc20_pooled,AT2,30,AT2_published_holdout,LUAD,AAH,8,True,0.864321608040201,eligible_descriptive_contrast,-0.020421157054477335,5.0,-0.06524611209883842,0.016202130233627265
+unc20_pooled,AT2,30,AT2_published_holdout,LUAD,AIS,12,True,0.864321608040201,eligible_descriptive_contrast,-0.0067557024604725235,7.0,-0.05432192187857187,0.02208479548503545
+unc20_pooled,AT2,30,AT2_published_holdout,LUAD,MIA,4,True,0.864321608040201,eligible_descriptive_contrast,-0.06498420647187486,0.0,-0.084806093618913,-0.043690045449519786
+unc20_pooled,AT2,30,DATP_PATS_holdout_panel,AAH,normal,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,30,DATP_PATS_holdout_panel,AIS,normal,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,30,DATP_PATS_holdout_panel,MIA,normal,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,30,DATP_PATS_holdout_panel,LUAD,normal,23,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,30,DATP_PATS_holdout_panel,LUAD,AAH,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,30,DATP_PATS_holdout_panel,LUAD,AIS,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,30,DATP_PATS_holdout_panel,LUAD,MIA,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,30,HALLMARK_HYPOXIA,AAH,normal,8,True,0.92964824120603,eligible_descriptive_contrast,-0.0015644631360263173,4.0,-0.06433236678573863,0.055341996121561286
+unc20_pooled,AT2,30,HALLMARK_HYPOXIA,AIS,normal,12,True,0.92964824120603,eligible_descriptive_contrast,0.036120728334759135,8.0,-0.033941845736186374,0.09123797120091809
+unc20_pooled,AT2,30,HALLMARK_HYPOXIA,MIA,normal,4,True,0.92964824120603,eligible_descriptive_contrast,0.15517043587765988,2.0,0.07999130957091631,0.22120600055564
+unc20_pooled,AT2,30,HALLMARK_HYPOXIA,LUAD,normal,23,True,0.92964824120603,eligible_descriptive_contrast,0.25428679400333,21.0,0.2313219216190895,0.27548189214278546
+unc20_pooled,AT2,30,HALLMARK_HYPOXIA,LUAD,AAH,8,True,0.92964824120603,eligible_descriptive_contrast,0.2780439499134738,8.0,0.22307353168055855,0.3121349790729558
+unc20_pooled,AT2,30,HALLMARK_HYPOXIA,LUAD,AIS,12,True,0.92964824120603,eligible_descriptive_contrast,0.2109584307636917,10.0,0.16471825137670917,0.23993863064156182
+unc20_pooled,AT2,30,HALLMARK_HYPOXIA,LUAD,MIA,4,True,0.92964824120603,eligible_descriptive_contrast,0.1334509981460501,3.0,0.09327517076058338,0.23210289316011026
+unc20_pooled,AT2,30,HALLMARK_INFLAMMATORY_RESPONSE,AAH,normal,8,True,0.954314720812183,eligible_descriptive_contrast,-0.0706148385104649,1.0,-0.14671549641758988,-0.014678838770177092
+unc20_pooled,AT2,30,HALLMARK_INFLAMMATORY_RESPONSE,AIS,normal,12,True,0.954314720812183,eligible_descriptive_contrast,0.10552503991698663,8.0,0.035214260495188145,0.17794730251463087
+unc20_pooled,AT2,30,HALLMARK_INFLAMMATORY_RESPONSE,MIA,normal,4,True,0.954314720812183,eligible_descriptive_contrast,0.31310848971050254,3.0,0.18231643291901678,0.43722914825940995
+unc20_pooled,AT2,30,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,normal,23,True,0.954314720812183,eligible_descriptive_contrast,0.4157706800724386,20.0,0.3730586838250154,0.450681921307589
+unc20_pooled,AT2,30,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AAH,8,True,0.954314720812183,eligible_descriptive_contrast,0.5070576086430261,7.0,0.4038899333836142,0.5901423791274113
+unc20_pooled,AT2,30,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AIS,12,True,0.954314720812183,eligible_descriptive_contrast,0.255962482428785,9.0,0.20152180181282722,0.28852739117183
+unc20_pooled,AT2,30,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,MIA,4,True,0.954314720812183,eligible_descriptive_contrast,0.4235949317463674,4.0,0.38569653860116987,0.4846265891787098
+unc20_pooled,AT2,30,HALLMARK_P53_PATHWAY,AAH,normal,8,True,0.93,eligible_descriptive_contrast,0.08479147386519226,6.0,0.028776589797269762,0.12916142506700407
+unc20_pooled,AT2,30,HALLMARK_P53_PATHWAY,AIS,normal,12,True,0.93,eligible_descriptive_contrast,0.09553785564469323,9.0,0.07427401702393809,0.13829515012401442
+unc20_pooled,AT2,30,HALLMARK_P53_PATHWAY,MIA,normal,4,True,0.93,eligible_descriptive_contrast,0.3050840806920876,4.0,0.2958044840525271,0.31444903700322663
+unc20_pooled,AT2,30,HALLMARK_P53_PATHWAY,LUAD,normal,23,True,0.93,eligible_descriptive_contrast,0.2468626992539768,21.0,0.2264946062543512,0.26729070043945846
+unc20_pooled,AT2,30,HALLMARK_P53_PATHWAY,LUAD,AAH,8,True,0.93,eligible_descriptive_contrast,0.14009142984874745,6.0,0.10063297523071427,0.17566895497707855
+unc20_pooled,AT2,30,HALLMARK_P53_PATHWAY,LUAD,AIS,12,True,0.93,eligible_descriptive_contrast,0.16128611882528987,11.0,0.13997352519679895,0.18239994092239167
+unc20_pooled,AT2,30,HALLMARK_P53_PATHWAY,LUAD,MIA,4,True,0.93,eligible_descriptive_contrast,-0.046630076037394996,2.0,-0.10666317101360316,0.01664352091427664
+unc20_pooled,AT2,30,HPCS_author_top100,AAH,normal,8,True,0.78,eligible_descriptive_contrast,0.023147993958987367,3.0,-0.06732974152490152,0.09708576043457841
+unc20_pooled,AT2,30,HPCS_author_top100,AIS,normal,12,True,0.78,eligible_descriptive_contrast,0.12124649551583433,10.0,0.07788080323531744,0.17210364438513837
+unc20_pooled,AT2,30,HPCS_author_top100,MIA,normal,4,True,0.78,eligible_descriptive_contrast,0.2168396731156449,3.0,0.12978003918387326,0.35765649422222995
+unc20_pooled,AT2,30,HPCS_author_top100,LUAD,normal,23,True,0.78,eligible_descriptive_contrast,0.34831035631868085,18.0,0.30581663003811543,0.3841353668109067
+unc20_pooled,AT2,30,HPCS_author_top100,LUAD,AAH,8,True,0.78,eligible_descriptive_contrast,0.35193931719539767,7.0,0.26448451834445735,0.43451437334544585
+unc20_pooled,AT2,30,HPCS_author_top100,LUAD,AIS,12,True,0.78,eligible_descriptive_contrast,0.24689446626848574,10.0,0.20120352173050174,0.2890843168551372
+unc20_pooled,AT2,30,HPCS_author_top100,LUAD,MIA,4,True,0.78,eligible_descriptive_contrast,0.17594878245864498,3.0,0.11101835178401309,0.25070062892882
+unc20_pooled,AT2,30,HPCS_excluding_operational_markers,AAH,normal,8,True,0.785714285714286,eligible_descriptive_contrast,0.03022296587707135,3.0,-0.06282585954394422,0.10067704543663725
+unc20_pooled,AT2,30,HPCS_excluding_operational_markers,AIS,normal,12,True,0.785714285714286,eligible_descriptive_contrast,0.11937056867166089,10.0,0.07003179437187734,0.17171966259876828
+unc20_pooled,AT2,30,HPCS_excluding_operational_markers,MIA,normal,4,True,0.785714285714286,eligible_descriptive_contrast,0.19898960053670245,3.0,0.1039105979318166,0.34738986284203993
+unc20_pooled,AT2,30,HPCS_excluding_operational_markers,LUAD,normal,23,True,0.785714285714286,eligible_descriptive_contrast,0.3322285820544635,19.0,0.28891346799088635,0.3677277061454923
+unc20_pooled,AT2,30,HPCS_excluding_operational_markers,LUAD,AAH,8,True,0.785714285714286,eligible_descriptive_contrast,0.3312764713643798,7.0,0.24330094249921125,0.41641640919974693
+unc20_pooled,AT2,30,HPCS_excluding_operational_markers,LUAD,AIS,12,True,0.785714285714286,eligible_descriptive_contrast,0.24684017238750589,10.0,0.20175360078903906,0.29364161385702275
+unc20_pooled,AT2,30,HPCS_excluding_operational_markers,LUAD,MIA,4,True,0.785714285714286,eligible_descriptive_contrast,0.1454095914330824,3.0,0.08454253649262326,0.22099114605999315
+unc20_pooled,AT2,30,HPCS_without_ADI_or_operational_markers,AAH,normal,8,True,0.791208791208791,eligible_descriptive_contrast,0.012466758820879886,3.0,-0.08082077820506019,0.0793420247357999
+unc20_pooled,AT2,30,HPCS_without_ADI_or_operational_markers,AIS,normal,12,True,0.791208791208791,eligible_descriptive_contrast,0.0980699291800959,9.0,0.04742262488473365,0.15143589915660186
+unc20_pooled,AT2,30,HPCS_without_ADI_or_operational_markers,MIA,normal,4,True,0.791208791208791,eligible_descriptive_contrast,0.18154351419725212,3.0,0.07739427268942951,0.3515175506540397
+unc20_pooled,AT2,30,HPCS_without_ADI_or_operational_markers,LUAD,normal,23,True,0.791208791208791,eligible_descriptive_contrast,0.323211397566616,19.0,0.278995298649884,0.3580828617758263
+unc20_pooled,AT2,30,HPCS_without_ADI_or_operational_markers,LUAD,AAH,8,True,0.791208791208791,eligible_descriptive_contrast,0.3386673315099623,7.0,0.24568240262187832,0.4216358692700526
+unc20_pooled,AT2,30,HPCS_without_ADI_or_operational_markers,LUAD,AIS,12,True,0.791208791208791,eligible_descriptive_contrast,0.25743742527660746,10.0,0.21198769422119088,0.30441119441015
+unc20_pooled,AT2,30,HPCS_without_ADI_or_operational_markers,LUAD,MIA,4,True,0.791208791208791,eligible_descriptive_contrast,0.17365493166105006,3.0,0.1191727378171367,0.24760045707046677
+unc20_pooled,AT2,30,Han_ISR_source_symbols,AAH,normal,8,True,0.821705426356589,eligible_descriptive_contrast,0.08414038634487497,7.0,0.02914948989267569,0.1359732389170128
+unc20_pooled,AT2,30,Han_ISR_source_symbols,AIS,normal,12,True,0.821705426356589,eligible_descriptive_contrast,0.14241724082009746,9.0,0.10111299111353635,0.1797928342198354
+unc20_pooled,AT2,30,Han_ISR_source_symbols,MIA,normal,4,True,0.821705426356589,eligible_descriptive_contrast,0.40863738747019984,4.0,0.35598799389304975,0.4462577006396297
+unc20_pooled,AT2,30,Han_ISR_source_symbols,LUAD,normal,23,True,0.821705426356589,eligible_descriptive_contrast,0.3830586633056635,23.0,0.3669102480496937,0.40003549203927363
+unc20_pooled,AT2,30,Han_ISR_source_symbols,LUAD,AAH,8,True,0.821705426356589,eligible_descriptive_contrast,0.26052870472061396,8.0,0.21681534438039168,0.2850215715668046
+unc20_pooled,AT2,30,Han_ISR_source_symbols,LUAD,AIS,12,True,0.821705426356589,eligible_descriptive_contrast,0.2249604232416016,9.0,0.17154722933454902,0.24930741115299718
+unc20_pooled,AT2,30,Han_ISR_source_symbols,LUAD,MIA,4,True,0.821705426356589,eligible_descriptive_contrast,0.03636322144753512,3.0,-0.00876178164840328,0.09472256018777347
+unc20_pooled,AT2,30,Han_ISR_without_HPCS_ADI_or_operational_markers,AAH,normal,8,True,0.847619047619048,eligible_descriptive_contrast,0.11000599792585508,7.0,0.049711032246512916,0.15694411807876435
+unc20_pooled,AT2,30,Han_ISR_without_HPCS_ADI_or_operational_markers,AIS,normal,12,True,0.847619047619048,eligible_descriptive_contrast,0.1779850938144868,9.0,0.13135220787867927,0.2067320871296465
+unc20_pooled,AT2,30,Han_ISR_without_HPCS_ADI_or_operational_markers,MIA,normal,4,True,0.847619047619048,eligible_descriptive_contrast,0.47310657051366234,4.0,0.4049232586575866,0.5371227146075265
+unc20_pooled,AT2,30,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,normal,23,True,0.847619047619048,eligible_descriptive_contrast,0.439386120095993,23.0,0.4180033244669932,0.4521403010415973
+unc20_pooled,AT2,30,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AAH,8,True,0.847619047619048,eligible_descriptive_contrast,0.2814502380125411,8.0,0.2535405127202841,0.29993257204151125
+unc20_pooled,AT2,30,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AIS,12,True,0.847619047619048,eligible_descriptive_contrast,0.233162083837081,11.0,0.17841768277197198,0.2551669284823311
+unc20_pooled,AT2,30,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,MIA,4,True,0.847619047619048,eligible_descriptive_contrast,0.08346932412470265,3.0,0.03390872621557003,0.14693349820312354
+unc20_pooled,AT2,50,ADI_published_holdout,AAH,normal,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,50,ADI_published_holdout,AIS,normal,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,50,ADI_published_holdout,MIA,normal,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,50,ADI_published_holdout,LUAD,normal,23,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,50,ADI_published_holdout,LUAD,AAH,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,50,ADI_published_holdout,LUAD,AIS,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,50,ADI_published_holdout,LUAD,MIA,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,50,AT1_published_holdout,AAH,normal,8,True,0.842105263157895,eligible_descriptive_contrast,0.07243638799206265,5.0,0.029342240038661593,0.10387627015488578
+unc20_pooled,AT2,50,AT1_published_holdout,AIS,normal,12,True,0.842105263157895,eligible_descriptive_contrast,0.0484095414017125,8.0,0.026058569806648165,0.09020635873922006
+unc20_pooled,AT2,50,AT1_published_holdout,MIA,normal,4,True,0.842105263157895,eligible_descriptive_contrast,0.18508149457494505,4.0,0.17086402048072338,0.20905121592069342
+unc20_pooled,AT2,50,AT1_published_holdout,LUAD,normal,23,True,0.842105263157895,eligible_descriptive_contrast,0.16567991763532347,19.0,0.1512012018961027,0.180553586671405
+unc20_pooled,AT2,50,AT1_published_holdout,LUAD,AAH,8,True,0.842105263157895,eligible_descriptive_contrast,0.1087804398154123,5.0,0.06339126800889693,0.1465295994674041
+unc20_pooled,AT2,50,AT1_published_holdout,LUAD,AIS,12,True,0.842105263157895,eligible_descriptive_contrast,0.09421699430658921,9.0,0.058559394897017274,0.10945490911197647
+unc20_pooled,AT2,50,AT1_published_holdout,LUAD,MIA,4,True,0.842105263157895,eligible_descriptive_contrast,0.005280217302907397,2.0,-0.04805640983786663,0.05343447283752312
+unc20_pooled,AT2,50,AT2_published_holdout,AAH,normal,8,True,0.864321608040201,eligible_descriptive_contrast,0.025591761492458676,5.0,0.001558337161267076,0.04728237445254851
+unc20_pooled,AT2,50,AT2_published_holdout,AIS,normal,12,True,0.864321608040201,eligible_descriptive_contrast,0.019614086667449977,10.0,-0.0022545087772364203,0.05964927544436724
+unc20_pooled,AT2,50,AT2_published_holdout,MIA,normal,4,True,0.864321608040201,eligible_descriptive_contrast,0.08966075712776278,3.0,0.059830896376470356,0.1339323952558935
+unc20_pooled,AT2,50,AT2_published_holdout,LUAD,normal,23,True,0.864321608040201,eligible_descriptive_contrast,0.005197539892256633,15.0,-0.00441976560816627,0.026445684161347405
+unc20_pooled,AT2,50,AT2_published_holdout,LUAD,AAH,8,True,0.864321608040201,eligible_descriptive_contrast,-0.020421157054477335,5.0,-0.06524611209883842,0.016202130233627265
+unc20_pooled,AT2,50,AT2_published_holdout,LUAD,AIS,12,True,0.864321608040201,eligible_descriptive_contrast,-0.0067557024604725235,7.0,-0.05432192187857187,0.02208479548503545
+unc20_pooled,AT2,50,AT2_published_holdout,LUAD,MIA,4,True,0.864321608040201,eligible_descriptive_contrast,-0.06498420647187486,0.0,-0.084806093618913,-0.043690045449519786
+unc20_pooled,AT2,50,DATP_PATS_holdout_panel,AAH,normal,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,50,DATP_PATS_holdout_panel,AIS,normal,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,50,DATP_PATS_holdout_panel,MIA,normal,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,50,DATP_PATS_holdout_panel,LUAD,normal,23,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,50,DATP_PATS_holdout_panel,LUAD,AAH,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,50,DATP_PATS_holdout_panel,LUAD,AIS,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,50,DATP_PATS_holdout_panel,LUAD,MIA,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,50,HALLMARK_HYPOXIA,AAH,normal,8,True,0.92964824120603,eligible_descriptive_contrast,-0.0015644631360263173,4.0,-0.06433236678573863,0.055341996121561286
+unc20_pooled,AT2,50,HALLMARK_HYPOXIA,AIS,normal,12,True,0.92964824120603,eligible_descriptive_contrast,0.036120728334759135,8.0,-0.033941845736186374,0.09123797120091809
+unc20_pooled,AT2,50,HALLMARK_HYPOXIA,MIA,normal,4,True,0.92964824120603,eligible_descriptive_contrast,0.15517043587765988,2.0,0.07999130957091631,0.22120600055564
+unc20_pooled,AT2,50,HALLMARK_HYPOXIA,LUAD,normal,23,True,0.92964824120603,eligible_descriptive_contrast,0.25428679400333,21.0,0.2313219216190895,0.27548189214278546
+unc20_pooled,AT2,50,HALLMARK_HYPOXIA,LUAD,AAH,8,True,0.92964824120603,eligible_descriptive_contrast,0.2780439499134738,8.0,0.22307353168055855,0.3121349790729558
+unc20_pooled,AT2,50,HALLMARK_HYPOXIA,LUAD,AIS,12,True,0.92964824120603,eligible_descriptive_contrast,0.2109584307636917,10.0,0.16471825137670917,0.23993863064156182
+unc20_pooled,AT2,50,HALLMARK_HYPOXIA,LUAD,MIA,4,True,0.92964824120603,eligible_descriptive_contrast,0.1334509981460501,3.0,0.09327517076058338,0.23210289316011026
+unc20_pooled,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,AAH,normal,8,True,0.954314720812183,eligible_descriptive_contrast,-0.0706148385104649,1.0,-0.14671549641758988,-0.014678838770177092
+unc20_pooled,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,AIS,normal,12,True,0.954314720812183,eligible_descriptive_contrast,0.10552503991698663,8.0,0.035214260495188145,0.17794730251463087
+unc20_pooled,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,MIA,normal,4,True,0.954314720812183,eligible_descriptive_contrast,0.31310848971050254,3.0,0.18231643291901678,0.43722914825940995
+unc20_pooled,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,normal,23,True,0.954314720812183,eligible_descriptive_contrast,0.4157706800724386,20.0,0.3730586838250154,0.450681921307589
+unc20_pooled,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AAH,8,True,0.954314720812183,eligible_descriptive_contrast,0.5070576086430261,7.0,0.4038899333836142,0.5901423791274113
+unc20_pooled,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AIS,12,True,0.954314720812183,eligible_descriptive_contrast,0.255962482428785,9.0,0.20152180181282722,0.28852739117183
+unc20_pooled,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,MIA,4,True,0.954314720812183,eligible_descriptive_contrast,0.4235949317463674,4.0,0.38569653860116987,0.4846265891787098
+unc20_pooled,AT2,50,HALLMARK_P53_PATHWAY,AAH,normal,8,True,0.93,eligible_descriptive_contrast,0.08479147386519226,6.0,0.028776589797269762,0.12916142506700407
+unc20_pooled,AT2,50,HALLMARK_P53_PATHWAY,AIS,normal,12,True,0.93,eligible_descriptive_contrast,0.09553785564469323,9.0,0.07427401702393809,0.13829515012401442
+unc20_pooled,AT2,50,HALLMARK_P53_PATHWAY,MIA,normal,4,True,0.93,eligible_descriptive_contrast,0.3050840806920876,4.0,0.2958044840525271,0.31444903700322663
+unc20_pooled,AT2,50,HALLMARK_P53_PATHWAY,LUAD,normal,23,True,0.93,eligible_descriptive_contrast,0.2468626992539768,21.0,0.2264946062543512,0.26729070043945846
+unc20_pooled,AT2,50,HALLMARK_P53_PATHWAY,LUAD,AAH,8,True,0.93,eligible_descriptive_contrast,0.14009142984874745,6.0,0.10063297523071427,0.17566895497707855
+unc20_pooled,AT2,50,HALLMARK_P53_PATHWAY,LUAD,AIS,12,True,0.93,eligible_descriptive_contrast,0.16128611882528987,11.0,0.13997352519679895,0.18239994092239167
+unc20_pooled,AT2,50,HALLMARK_P53_PATHWAY,LUAD,MIA,4,True,0.93,eligible_descriptive_contrast,-0.046630076037394996,2.0,-0.10666317101360316,0.01664352091427664
+unc20_pooled,AT2,50,HPCS_author_top100,AAH,normal,8,True,0.78,eligible_descriptive_contrast,0.023147993958987367,3.0,-0.06732974152490152,0.09708576043457841
+unc20_pooled,AT2,50,HPCS_author_top100,AIS,normal,12,True,0.78,eligible_descriptive_contrast,0.12124649551583433,10.0,0.07788080323531744,0.17210364438513837
+unc20_pooled,AT2,50,HPCS_author_top100,MIA,normal,4,True,0.78,eligible_descriptive_contrast,0.2168396731156449,3.0,0.12978003918387326,0.35765649422222995
+unc20_pooled,AT2,50,HPCS_author_top100,LUAD,normal,23,True,0.78,eligible_descriptive_contrast,0.34831035631868085,18.0,0.30581663003811543,0.3841353668109067
+unc20_pooled,AT2,50,HPCS_author_top100,LUAD,AAH,8,True,0.78,eligible_descriptive_contrast,0.35193931719539767,7.0,0.26448451834445735,0.43451437334544585
+unc20_pooled,AT2,50,HPCS_author_top100,LUAD,AIS,12,True,0.78,eligible_descriptive_contrast,0.24689446626848574,10.0,0.20120352173050174,0.2890843168551372
+unc20_pooled,AT2,50,HPCS_author_top100,LUAD,MIA,4,True,0.78,eligible_descriptive_contrast,0.17594878245864498,3.0,0.11101835178401309,0.25070062892882
+unc20_pooled,AT2,50,HPCS_excluding_operational_markers,AAH,normal,8,True,0.785714285714286,eligible_descriptive_contrast,0.03022296587707135,3.0,-0.06282585954394422,0.10067704543663725
+unc20_pooled,AT2,50,HPCS_excluding_operational_markers,AIS,normal,12,True,0.785714285714286,eligible_descriptive_contrast,0.11937056867166089,10.0,0.07003179437187734,0.17171966259876828
+unc20_pooled,AT2,50,HPCS_excluding_operational_markers,MIA,normal,4,True,0.785714285714286,eligible_descriptive_contrast,0.19898960053670245,3.0,0.1039105979318166,0.34738986284203993
+unc20_pooled,AT2,50,HPCS_excluding_operational_markers,LUAD,normal,23,True,0.785714285714286,eligible_descriptive_contrast,0.3322285820544635,19.0,0.28891346799088635,0.3677277061454923
+unc20_pooled,AT2,50,HPCS_excluding_operational_markers,LUAD,AAH,8,True,0.785714285714286,eligible_descriptive_contrast,0.3312764713643798,7.0,0.24330094249921125,0.41641640919974693
+unc20_pooled,AT2,50,HPCS_excluding_operational_markers,LUAD,AIS,12,True,0.785714285714286,eligible_descriptive_contrast,0.24684017238750589,10.0,0.20175360078903906,0.29364161385702275
+unc20_pooled,AT2,50,HPCS_excluding_operational_markers,LUAD,MIA,4,True,0.785714285714286,eligible_descriptive_contrast,0.1454095914330824,3.0,0.08454253649262326,0.22099114605999315
+unc20_pooled,AT2,50,HPCS_without_ADI_or_operational_markers,AAH,normal,8,True,0.791208791208791,eligible_descriptive_contrast,0.012466758820879886,3.0,-0.08082077820506019,0.0793420247357999
+unc20_pooled,AT2,50,HPCS_without_ADI_or_operational_markers,AIS,normal,12,True,0.791208791208791,eligible_descriptive_contrast,0.0980699291800959,9.0,0.04742262488473365,0.15143589915660186
+unc20_pooled,AT2,50,HPCS_without_ADI_or_operational_markers,MIA,normal,4,True,0.791208791208791,eligible_descriptive_contrast,0.18154351419725212,3.0,0.07739427268942951,0.3515175506540397
+unc20_pooled,AT2,50,HPCS_without_ADI_or_operational_markers,LUAD,normal,23,True,0.791208791208791,eligible_descriptive_contrast,0.323211397566616,19.0,0.278995298649884,0.3580828617758263
+unc20_pooled,AT2,50,HPCS_without_ADI_or_operational_markers,LUAD,AAH,8,True,0.791208791208791,eligible_descriptive_contrast,0.3386673315099623,7.0,0.24568240262187832,0.4216358692700526
+unc20_pooled,AT2,50,HPCS_without_ADI_or_operational_markers,LUAD,AIS,12,True,0.791208791208791,eligible_descriptive_contrast,0.25743742527660746,10.0,0.21198769422119088,0.30441119441015
+unc20_pooled,AT2,50,HPCS_without_ADI_or_operational_markers,LUAD,MIA,4,True,0.791208791208791,eligible_descriptive_contrast,0.17365493166105006,3.0,0.1191727378171367,0.24760045707046677
+unc20_pooled,AT2,50,Han_ISR_source_symbols,AAH,normal,8,True,0.821705426356589,eligible_descriptive_contrast,0.08414038634487497,7.0,0.02914948989267569,0.1359732389170128
+unc20_pooled,AT2,50,Han_ISR_source_symbols,AIS,normal,12,True,0.821705426356589,eligible_descriptive_contrast,0.14241724082009746,9.0,0.10111299111353635,0.1797928342198354
+unc20_pooled,AT2,50,Han_ISR_source_symbols,MIA,normal,4,True,0.821705426356589,eligible_descriptive_contrast,0.40863738747019984,4.0,0.35598799389304975,0.4462577006396297
+unc20_pooled,AT2,50,Han_ISR_source_symbols,LUAD,normal,23,True,0.821705426356589,eligible_descriptive_contrast,0.3830586633056635,23.0,0.3669102480496937,0.40003549203927363
+unc20_pooled,AT2,50,Han_ISR_source_symbols,LUAD,AAH,8,True,0.821705426356589,eligible_descriptive_contrast,0.26052870472061396,8.0,0.21681534438039168,0.2850215715668046
+unc20_pooled,AT2,50,Han_ISR_source_symbols,LUAD,AIS,12,True,0.821705426356589,eligible_descriptive_contrast,0.2249604232416016,9.0,0.17154722933454902,0.24930741115299718
+unc20_pooled,AT2,50,Han_ISR_source_symbols,LUAD,MIA,4,True,0.821705426356589,eligible_descriptive_contrast,0.03636322144753512,3.0,-0.00876178164840328,0.09472256018777347
+unc20_pooled,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,AAH,normal,8,True,0.847619047619048,eligible_descriptive_contrast,0.11000599792585508,7.0,0.049711032246512916,0.15694411807876435
+unc20_pooled,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,AIS,normal,12,True,0.847619047619048,eligible_descriptive_contrast,0.1779850938144868,9.0,0.13135220787867927,0.2067320871296465
+unc20_pooled,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,MIA,normal,4,True,0.847619047619048,eligible_descriptive_contrast,0.47310657051366234,4.0,0.4049232586575866,0.5371227146075265
+unc20_pooled,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,normal,23,True,0.847619047619048,eligible_descriptive_contrast,0.439386120095993,23.0,0.4180033244669932,0.4521403010415973
+unc20_pooled,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AAH,8,True,0.847619047619048,eligible_descriptive_contrast,0.2814502380125411,8.0,0.2535405127202841,0.29993257204151125
+unc20_pooled,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AIS,12,True,0.847619047619048,eligible_descriptive_contrast,0.233162083837081,11.0,0.17841768277197198,0.2551669284823311
+unc20_pooled,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,MIA,4,True,0.847619047619048,eligible_descriptive_contrast,0.08346932412470265,3.0,0.03390872621557003,0.14693349820312354
+unc20_pooled,AT2,100,ADI_published_holdout,AAH,normal,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,100,ADI_published_holdout,AIS,normal,11,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,100,ADI_published_holdout,MIA,normal,3,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,100,ADI_published_holdout,LUAD,normal,22,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,100,ADI_published_holdout,LUAD,AAH,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,100,ADI_published_holdout,LUAD,AIS,11,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,100,ADI_published_holdout,LUAD,MIA,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,100,AT1_published_holdout,AAH,normal,8,True,0.842105263157895,eligible_descriptive_contrast,0.07270295575301733,5.0,0.029483269090012674,0.10417159672981834
+unc20_pooled,AT2,100,AT1_published_holdout,AIS,normal,11,True,0.842105263157895,eligible_descriptive_contrast,0.0903801483092256,8.0,0.06993433443379518,0.11038047783058813
+unc20_pooled,AT2,100,AT1_published_holdout,MIA,normal,3,True,0.842105263157895,eligible_descriptive_contrast,0.17117907454773018,3.0,0.1552517006177352,0.19998014134093545
+unc20_pooled,AT2,100,AT1_published_holdout,LUAD,normal,22,True,0.842105263157895,eligible_descriptive_contrast,0.15566494140796283,18.0,0.13997099804219726,0.17077814493251917
+unc20_pooled,AT2,100,AT1_published_holdout,LUAD,AAH,8,True,0.842105263157895,eligible_descriptive_contrast,0.10897451890432519,5.0,0.063546247921803,0.14672997521589867
+unc20_pooled,AT2,100,AT1_published_holdout,LUAD,AIS,11,True,0.842105263157895,eligible_descriptive_contrast,0.058550359146523755,8.0,0.033814818244653114,0.07176466679385704
+unc20_pooled,AT2,100,AT1_published_holdout,LUAD,MIA,4,True,0.842105263157895,eligible_descriptive_contrast,0.005341531683562106,2.0,-0.0480235390418103,0.05342601760227961
+unc20_pooled,AT2,100,AT2_published_holdout,AAH,normal,8,True,0.864321608040201,eligible_descriptive_contrast,0.025968540402144025,5.0,0.0017994171508730616,0.04777894387520311
+unc20_pooled,AT2,100,AT2_published_holdout,AIS,normal,11,True,0.864321608040201,eligible_descriptive_contrast,0.06027406636292174,10.0,0.04002483298612995,0.0801640585389789
+unc20_pooled,AT2,100,AT2_published_holdout,MIA,normal,3,True,0.864321608040201,eligible_descriptive_contrast,0.08330370540207681,2.0,0.034584350179379886,0.1465614999504501
+unc20_pooled,AT2,100,AT2_published_holdout,LUAD,normal,22,True,0.864321608040201,eligible_descriptive_contrast,0.0019909287504644916,14.0,-0.008301714616489113,0.0241056278171947
+unc20_pooled,AT2,100,AT2_published_holdout,LUAD,AAH,8,True,0.864321608040201,eligible_descriptive_contrast,-0.020214176837420217,5.0,-0.06512138199373448,0.01642657221091553
+unc20_pooled,AT2,100,AT2_published_holdout,LUAD,AIS,11,True,0.864321608040201,eligible_descriptive_contrast,-0.05433769719942278,6.0,-0.07035916119753702,-0.027392277294043053
+unc20_pooled,AT2,100,AT2_published_holdout,LUAD,MIA,4,True,0.864321608040201,eligible_descriptive_contrast,-0.06479960683781516,0.0,-0.08468317323027345,-0.04333504959641695
+unc20_pooled,AT2,100,DATP_PATS_holdout_panel,AAH,normal,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,100,DATP_PATS_holdout_panel,AIS,normal,11,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,100,DATP_PATS_holdout_panel,MIA,normal,3,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,100,DATP_PATS_holdout_panel,LUAD,normal,22,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,100,DATP_PATS_holdout_panel,LUAD,AAH,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,100,DATP_PATS_holdout_panel,LUAD,AIS,11,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,100,DATP_PATS_holdout_panel,LUAD,MIA,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2,100,HALLMARK_HYPOXIA,AAH,normal,8,True,0.92964824120603,eligible_descriptive_contrast,-0.0010829706636798497,4.0,-0.06426718814972558,0.05601808791710442
+unc20_pooled,AT2,100,HALLMARK_HYPOXIA,AIS,normal,11,True,0.92964824120603,eligible_descriptive_contrast,0.0867120464696117,8.0,0.014112321331180854,0.15273810483944789
+unc20_pooled,AT2,100,HALLMARK_HYPOXIA,MIA,normal,3,True,0.92964824120603,eligible_descriptive_contrast,0.10053028545819664,1.0,-0.04048105475411523,0.17230633437117016
+unc20_pooled,AT2,100,HALLMARK_HYPOXIA,LUAD,normal,22,True,0.92964824120603,eligible_descriptive_contrast,0.24341487413823737,20.0,0.21865996573074348,0.26510972421398915
+unc20_pooled,AT2,100,HALLMARK_HYPOXIA,LUAD,AAH,8,True,0.92964824120603,eligible_descriptive_contrast,0.27890502063244493,8.0,0.2237263487705913,0.3131083992457771
+unc20_pooled,AT2,100,HALLMARK_HYPOXIA,LUAD,AIS,11,True,0.92964824120603,eligible_descriptive_contrast,0.17035575081796195,9.0,0.11510310379777007,0.19823920327497718
+unc20_pooled,AT2,100,HALLMARK_HYPOXIA,LUAD,MIA,4,True,0.92964824120603,eligible_descriptive_contrast,0.13395522849829766,3.0,0.0939266925106234,0.23303479298491356
+unc20_pooled,AT2,100,HALLMARK_INFLAMMATORY_RESPONSE,AAH,normal,8,True,0.954314720812183,eligible_descriptive_contrast,-0.06985747965839012,1.0,-0.1465067026830073,-0.01368259858167439
+unc20_pooled,AT2,100,HALLMARK_INFLAMMATORY_RESPONSE,AIS,normal,11,True,0.954314720812183,eligible_descriptive_contrast,0.12285460008329183,8.0,0.04655756374102902,0.204588980917719
+unc20_pooled,AT2,100,HALLMARK_INFLAMMATORY_RESPONSE,MIA,normal,3,True,0.954314720812183,eligible_descriptive_contrast,0.18487048076408005,2.0,0.035723054733689974,0.307076281127425
+unc20_pooled,AT2,100,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,normal,22,True,0.954314720812183,eligible_descriptive_contrast,0.3806661347824965,19.0,0.3339320471534863,0.4157916461652244
+unc20_pooled,AT2,100,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AAH,8,True,0.954314720812183,eligible_descriptive_contrast,0.5090166187271513,7.0,0.40544314732984293,0.5923165360852573
+unc20_pooled,AT2,100,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AIS,11,True,0.954314720812183,eligible_descriptive_contrast,0.20139856838488637,8.0,0.145516541613588,0.232237448790378
+unc20_pooled,AT2,100,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,MIA,4,True,0.954314720812183,eligible_descriptive_contrast,0.42494637375265754,4.0,0.3871508722819466,0.48622459641421684
+unc20_pooled,AT2,100,HALLMARK_P53_PATHWAY,AAH,normal,8,True,0.93,eligible_descriptive_contrast,0.08533642293269006,6.0,0.029032981837457124,0.1298845738128416
+unc20_pooled,AT2,100,HALLMARK_P53_PATHWAY,AIS,normal,11,True,0.93,eligible_descriptive_contrast,0.13889478650685652,9.0,0.1197041477359992,0.17408477537213313
+unc20_pooled,AT2,100,HALLMARK_P53_PATHWAY,MIA,normal,3,True,0.93,eligible_descriptive_contrast,0.3042068389720732,3.0,0.2896682901030898,0.3178419472014147
+unc20_pooled,AT2,100,HALLMARK_P53_PATHWAY,LUAD,normal,22,True,0.93,eligible_descriptive_contrast,0.24045902520617554,20.0,0.2186759676562715,0.2615825022365658
+unc20_pooled,AT2,100,HALLMARK_P53_PATHWAY,LUAD,AAH,8,True,0.93,eligible_descriptive_contrast,0.14031606874925873,6.0,0.10081699791542142,0.1759384398880314
+unc20_pooled,AT2,100,HALLMARK_P53_PATHWAY,LUAD,AIS,11,True,0.93,eligible_descriptive_contrast,0.13998606198884175,10.0,0.11700180071780393,0.16111908396612593
+unc20_pooled,AT2,100,HALLMARK_P53_PATHWAY,LUAD,MIA,4,True,0.93,eligible_descriptive_contrast,-0.046712529857310114,2.0,-0.10688440979185672,0.016818206269143172
+unc20_pooled,AT2,100,HPCS_author_top100,AAH,normal,8,True,0.78,eligible_descriptive_contrast,0.02398776131571745,3.0,-0.06700184532827429,0.09822341140961426
+unc20_pooled,AT2,100,HPCS_author_top100,AIS,normal,11,True,0.78,eligible_descriptive_contrast,0.11543856598036988,9.0,0.06684197511692487,0.1709490932039639
+unc20_pooled,AT2,100,HPCS_author_top100,MIA,normal,3,True,0.78,eligible_descriptive_contrast,0.13112996142716357,2.0,0.044255013889645145,0.2989978159860751
+unc20_pooled,AT2,100,HPCS_author_top100,LUAD,normal,22,True,0.78,eligible_descriptive_contrast,0.3272112116087937,17.0,0.28143242484094727,0.3637692341748967
+unc20_pooled,AT2,100,HPCS_author_top100,LUAD,AAH,8,True,0.78,eligible_descriptive_contrast,0.35342888364314395,7.0,0.26563947482058875,0.43615755123431593
+unc20_pooled,AT2,100,HPCS_author_top100,LUAD,AIS,11,True,0.78,eligible_descriptive_contrast,0.24957380123668635,9.0,0.19936172550656597,0.29638746022237206
+unc20_pooled,AT2,100,HPCS_author_top100,LUAD,MIA,4,True,0.78,eligible_descriptive_contrast,0.17624632033677767,3.0,0.11143851499146014,0.25139842961219677
+unc20_pooled,AT2,100,HPCS_excluding_operational_markers,AAH,normal,8,True,0.785714285714286,eligible_descriptive_contrast,0.031135033260002665,3.0,-0.06243026350692408,0.10183526155085014
+unc20_pooled,AT2,100,HPCS_excluding_operational_markers,AIS,normal,11,True,0.785714285714286,eligible_descriptive_contrast,0.12012974596397262,9.0,0.0655661269141929,0.17794668148940293
+unc20_pooled,AT2,100,HPCS_excluding_operational_markers,MIA,normal,3,True,0.785714285714286,eligible_descriptive_contrast,0.1048992767775232,2.0,0.009566842492575223,0.2801708576687245
+unc20_pooled,AT2,100,HPCS_excluding_operational_markers,LUAD,normal,22,True,0.785714285714286,eligible_descriptive_contrast,0.3119250501232913,18.0,0.2653211692958809,0.34818047484795944
+unc20_pooled,AT2,100,HPCS_excluding_operational_markers,LUAD,AAH,8,True,0.785714285714286,eligible_descriptive_contrast,0.33256398920933117,7.0,0.24427680034571703,0.4178399842849957
+unc20_pooled,AT2,100,HPCS_excluding_operational_markers,LUAD,AIS,11,True,0.785714285714286,eligible_descriptive_contrast,0.24940235006096453,9.0,0.19984453956799192,0.30132670805785694
+unc20_pooled,AT2,100,HPCS_excluding_operational_markers,LUAD,MIA,4,True,0.785714285714286,eligible_descriptive_contrast,0.14550790586624007,3.0,0.08485669898113013,0.2214530956445433
+unc20_pooled,AT2,100,HPCS_without_ADI_or_operational_markers,AAH,normal,8,True,0.791208791208791,eligible_descriptive_contrast,0.01344021593579009,3.0,-0.08039937910825991,0.08057834028709866
+unc20_pooled,AT2,100,HPCS_without_ADI_or_operational_markers,AIS,normal,11,True,0.791208791208791,eligible_descriptive_contrast,0.09922152036446369,8.0,0.04323253891686907,0.1582072790719861
+unc20_pooled,AT2,100,HPCS_without_ADI_or_operational_markers,MIA,normal,3,True,0.791208791208791,eligible_descriptive_contrast,0.07845042488039027,2.0,-0.027731059108144773,0.28156299436272025
+unc20_pooled,AT2,100,HPCS_without_ADI_or_operational_markers,LUAD,normal,22,True,0.791208791208791,eligible_descriptive_contrast,0.3017438479497682,18.0,0.2541228562922286,0.33728856619630143
+unc20_pooled,AT2,100,HPCS_without_ADI_or_operational_markers,LUAD,AAH,8,True,0.791208791208791,eligible_descriptive_contrast,0.3400432187356949,7.0,0.24672499270230133,0.4231568267913242
+unc20_pooled,AT2,100,HPCS_without_ADI_or_operational_markers,LUAD,AIS,11,True,0.791208791208791,eligible_descriptive_contrast,0.25728151668403537,9.0,0.2070373450821789,0.3091365630050239
+unc20_pooled,AT2,100,HPCS_without_ADI_or_operational_markers,LUAD,MIA,4,True,0.791208791208791,eligible_descriptive_contrast,0.1737602740897075,3.0,0.11950925625651336,0.24809407180572998
+unc20_pooled,AT2,100,Han_ISR_source_symbols,AAH,normal,8,True,0.821705426356589,eligible_descriptive_contrast,0.08501335813915767,7.0,0.02966197553789878,0.13701251343835302
+unc20_pooled,AT2,100,Han_ISR_source_symbols,AIS,normal,11,True,0.821705426356589,eligible_descriptive_contrast,0.1808178467563901,9.0,0.13894930025820013,0.21406785421414803
+unc20_pooled,AT2,100,Han_ISR_source_symbols,MIA,normal,3,True,0.821705426356589,eligible_descriptive_contrast,0.3572778105117929,3.0,0.3337423954409946,0.3882050859561348
+unc20_pooled,AT2,100,Han_ISR_source_symbols,LUAD,normal,22,True,0.821705426356589,eligible_descriptive_contrast,0.3683080151112273,22.0,0.35082117144192426,0.3853794910334157
+unc20_pooled,AT2,100,Han_ISR_source_symbols,LUAD,AAH,8,True,0.821705426356589,eligible_descriptive_contrast,0.2611474427630025,8.0,0.21729412206347995,0.28560152701532715
+unc20_pooled,AT2,100,Han_ISR_source_symbols,LUAD,AIS,11,True,0.821705426356589,eligible_descriptive_contrast,0.21030083095322363,8.0,0.149950373984725,0.23559759886179998
+unc20_pooled,AT2,100,Han_ISR_source_symbols,LUAD,MIA,4,True,0.821705426356589,eligible_descriptive_contrast,0.03654080261486237,3.0,-0.008425473568729913,0.09503120126778312
+unc20_pooled,AT2,100,Han_ISR_without_HPCS_ADI_or_operational_markers,AAH,normal,8,True,0.847619047619048,eligible_descriptive_contrast,0.11098920126951878,7.0,0.050300290697191406,0.15811546011628147
+unc20_pooled,AT2,100,Han_ISR_without_HPCS_ADI_or_operational_markers,AIS,normal,11,True,0.847619047619048,eligible_descriptive_contrast,0.2079373508581682,9.0,0.159302449556359,0.24066821759087903
+unc20_pooled,AT2,100,Han_ISR_without_HPCS_ADI_or_operational_markers,MIA,normal,3,True,0.847619047619048,eligible_descriptive_contrast,0.40633174780397985,3.0,0.3622772986197098,0.4691843402042799
+unc20_pooled,AT2,100,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,normal,22,True,0.847619047619048,eligible_descriptive_contrast,0.41970691233067325,22.0,0.40096946737473715,0.4321011994051115
+unc20_pooled,AT2,100,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AAH,8,True,0.847619047619048,eligible_descriptive_contrast,0.28218301035588894,8.0,0.2541774950686588,0.3006349234989273
+unc20_pooled,AT2,100,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AIS,11,True,0.847619047619048,eligible_descriptive_contrast,0.21603144895604995,10.0,0.15394463567227099,0.2384992531492199
+unc20_pooled,AT2,100,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,MIA,4,True,0.847619047619048,eligible_descriptive_contrast,0.08379165904209263,3.0,0.03431978037927023,0.14745820858067335
+unc20_pooled,AT2 proliferating,30,ADI_published_holdout,AAH,normal,0,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2 proliferating,30,ADI_published_holdout,AIS,normal,0,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2 proliferating,30,ADI_published_holdout,MIA,normal,0,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2 proliferating,30,ADI_published_holdout,LUAD,normal,0,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2 proliferating,30,ADI_published_holdout,LUAD,AAH,0,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2 proliferating,30,ADI_published_holdout,LUAD,AIS,0,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2 proliferating,30,ADI_published_holdout,LUAD,MIA,0,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2 proliferating,30,AT1_published_holdout,AAH,normal,0,False,0.842105263157895,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,AT1_published_holdout,AIS,normal,0,False,0.842105263157895,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,AT1_published_holdout,MIA,normal,0,False,0.842105263157895,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,AT1_published_holdout,LUAD,normal,0,False,0.842105263157895,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,AT1_published_holdout,LUAD,AAH,0,False,0.842105263157895,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,AT1_published_holdout,LUAD,AIS,0,False,0.842105263157895,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,AT1_published_holdout,LUAD,MIA,0,False,0.842105263157895,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,AT2_published_holdout,AAH,normal,0,False,0.864321608040201,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,AT2_published_holdout,AIS,normal,0,False,0.864321608040201,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,AT2_published_holdout,MIA,normal,0,False,0.864321608040201,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,AT2_published_holdout,LUAD,normal,0,False,0.864321608040201,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,AT2_published_holdout,LUAD,AAH,0,False,0.864321608040201,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,AT2_published_holdout,LUAD,AIS,0,False,0.864321608040201,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,AT2_published_holdout,LUAD,MIA,0,False,0.864321608040201,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,DATP_PATS_holdout_panel,AAH,normal,0,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2 proliferating,30,DATP_PATS_holdout_panel,AIS,normal,0,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2 proliferating,30,DATP_PATS_holdout_panel,MIA,normal,0,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2 proliferating,30,DATP_PATS_holdout_panel,LUAD,normal,0,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2 proliferating,30,DATP_PATS_holdout_panel,LUAD,AAH,0,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2 proliferating,30,DATP_PATS_holdout_panel,LUAD,AIS,0,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2 proliferating,30,DATP_PATS_holdout_panel,LUAD,MIA,0,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_HYPOXIA,AAH,normal,0,False,0.92964824120603,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_HYPOXIA,AIS,normal,0,False,0.92964824120603,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_HYPOXIA,MIA,normal,0,False,0.92964824120603,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_HYPOXIA,LUAD,normal,0,False,0.92964824120603,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_HYPOXIA,LUAD,AAH,0,False,0.92964824120603,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_HYPOXIA,LUAD,AIS,0,False,0.92964824120603,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_HYPOXIA,LUAD,MIA,0,False,0.92964824120603,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_INFLAMMATORY_RESPONSE,AAH,normal,0,False,0.954314720812183,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_INFLAMMATORY_RESPONSE,AIS,normal,0,False,0.954314720812183,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_INFLAMMATORY_RESPONSE,MIA,normal,0,False,0.954314720812183,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,normal,0,False,0.954314720812183,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AAH,0,False,0.954314720812183,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AIS,0,False,0.954314720812183,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,MIA,0,False,0.954314720812183,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_P53_PATHWAY,AAH,normal,0,False,0.93,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_P53_PATHWAY,AIS,normal,0,False,0.93,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_P53_PATHWAY,MIA,normal,0,False,0.93,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_P53_PATHWAY,LUAD,normal,0,False,0.93,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_P53_PATHWAY,LUAD,AAH,0,False,0.93,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_P53_PATHWAY,LUAD,AIS,0,False,0.93,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HALLMARK_P53_PATHWAY,LUAD,MIA,0,False,0.93,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_author_top100,AAH,normal,0,False,0.78,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_author_top100,AIS,normal,0,False,0.78,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_author_top100,MIA,normal,0,False,0.78,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_author_top100,LUAD,normal,0,False,0.78,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_author_top100,LUAD,AAH,0,False,0.78,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_author_top100,LUAD,AIS,0,False,0.78,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_author_top100,LUAD,MIA,0,False,0.78,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_excluding_operational_markers,AAH,normal,0,False,0.785714285714286,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_excluding_operational_markers,AIS,normal,0,False,0.785714285714286,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_excluding_operational_markers,MIA,normal,0,False,0.785714285714286,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_excluding_operational_markers,LUAD,normal,0,False,0.785714285714286,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_excluding_operational_markers,LUAD,AAH,0,False,0.785714285714286,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_excluding_operational_markers,LUAD,AIS,0,False,0.785714285714286,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_excluding_operational_markers,LUAD,MIA,0,False,0.785714285714286,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_without_ADI_or_operational_markers,AAH,normal,0,False,0.791208791208791,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_without_ADI_or_operational_markers,AIS,normal,0,False,0.791208791208791,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_without_ADI_or_operational_markers,MIA,normal,0,False,0.791208791208791,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_without_ADI_or_operational_markers,LUAD,normal,0,False,0.791208791208791,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_without_ADI_or_operational_markers,LUAD,AAH,0,False,0.791208791208791,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_without_ADI_or_operational_markers,LUAD,AIS,0,False,0.791208791208791,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,HPCS_without_ADI_or_operational_markers,LUAD,MIA,0,False,0.791208791208791,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,Han_ISR_source_symbols,AAH,normal,0,False,0.821705426356589,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,Han_ISR_source_symbols,AIS,normal,0,False,0.821705426356589,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,Han_ISR_source_symbols,MIA,normal,0,False,0.821705426356589,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,Han_ISR_source_symbols,LUAD,normal,0,False,0.821705426356589,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,Han_ISR_source_symbols,LUAD,AAH,0,False,0.821705426356589,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,Han_ISR_source_symbols,LUAD,AIS,0,False,0.821705426356589,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,Han_ISR_source_symbols,LUAD,MIA,0,False,0.821705426356589,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,Han_ISR_without_HPCS_ADI_or_operational_markers,AAH,normal,0,False,0.847619047619048,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,Han_ISR_without_HPCS_ADI_or_operational_markers,AIS,normal,0,False,0.847619047619048,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,Han_ISR_without_HPCS_ADI_or_operational_markers,MIA,normal,0,False,0.847619047619048,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,normal,0,False,0.847619047619048,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AAH,0,False,0.847619047619048,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AIS,0,False,0.847619047619048,fewer_than_3_complete_patients,,,,
+unc20_pooled,AT2 proliferating,30,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,MIA,0,False,0.847619047619048,fewer_than_3_complete_patients,,,,
+unc20_pooled,__broad__,30,ADI_published_holdout,AAH,normal,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,30,ADI_published_holdout,AIS,normal,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,30,ADI_published_holdout,MIA,normal,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,30,ADI_published_holdout,LUAD,normal,23,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,30,ADI_published_holdout,LUAD,AAH,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,30,ADI_published_holdout,LUAD,AIS,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,30,ADI_published_holdout,LUAD,MIA,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,30,AT1_published_holdout,AAH,normal,8,True,0.842105263157895,eligible_descriptive_contrast,0.07309704232291236,5.0,0.029982369697931333,0.10462542913587125
+unc20_pooled,__broad__,30,AT1_published_holdout,AIS,normal,12,True,0.842105263157895,eligible_descriptive_contrast,0.04768735957594831,8.0,0.025238108487213588,0.08943407737797275
+unc20_pooled,__broad__,30,AT1_published_holdout,MIA,normal,4,True,0.842105263157895,eligible_descriptive_contrast,0.1849010119247374,4.0,0.17050528772165988,0.20869447355548645
+unc20_pooled,__broad__,30,AT1_published_holdout,LUAD,normal,23,True,0.842105263157895,eligible_descriptive_contrast,0.16694145319876222,20.0,0.1522406711463405,0.1819677372501469
+unc20_pooled,__broad__,30,AT1_published_holdout,LUAD,AAH,8,True,0.842105263157895,eligible_descriptive_contrast,0.10840299189860259,5.0,0.06291764049734296,0.14795589909122725
+unc20_pooled,__broad__,30,AT1_published_holdout,LUAD,AIS,12,True,0.842105263157895,eligible_descriptive_contrast,0.09771094360759336,9.0,0.06241493143550183,0.11327755716231369
+unc20_pooled,__broad__,30,AT1_published_holdout,LUAD,MIA,4,True,0.842105263157895,eligible_descriptive_contrast,0.004716148423212552,2.0,-0.04883944062891329,0.05476609794138998
+unc20_pooled,__broad__,30,AT2_published_holdout,AAH,normal,8,True,0.864321608040201,eligible_descriptive_contrast,0.024358451614201138,5.0,0.0004579511236055822,0.04591453031784555
+unc20_pooled,__broad__,30,AT2_published_holdout,AIS,normal,12,True,0.864321608040201,eligible_descriptive_contrast,0.01847324593034679,9.0,-0.0036483595031607504,0.05845000831587743
+unc20_pooled,__broad__,30,AT2_published_holdout,MIA,normal,4,True,0.864321608040201,eligible_descriptive_contrast,0.08999989002078035,3.0,0.060244584096800224,0.13446325682898022
+unc20_pooled,__broad__,30,AT2_published_holdout,LUAD,normal,23,True,0.864321608040201,eligible_descriptive_contrast,0.00029120084471312424,15.0,-0.009640268169644443,0.021539740979406433
+unc20_pooled,__broad__,30,AT2_published_holdout,LUAD,AAH,8,True,0.864321608040201,eligible_descriptive_contrast,-0.02685305301033236,4.0,-0.07266755524252703,0.01176965839652157
+unc20_pooled,__broad__,30,AT2_published_holdout,LUAD,AIS,12,True,0.864321608040201,eligible_descriptive_contrast,-0.0060242858054383825,7.0,-0.0534646353095201,0.023308558940982656
+unc20_pooled,__broad__,30,AT2_published_holdout,LUAD,MIA,4,True,0.864321608040201,eligible_descriptive_contrast,-0.07649603249952763,0.0,-0.09964812169529018,-0.05305619880684661
+unc20_pooled,__broad__,30,DATP_PATS_holdout_panel,AAH,normal,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,30,DATP_PATS_holdout_panel,AIS,normal,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,30,DATP_PATS_holdout_panel,MIA,normal,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,30,DATP_PATS_holdout_panel,LUAD,normal,23,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,30,DATP_PATS_holdout_panel,LUAD,AAH,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,30,DATP_PATS_holdout_panel,LUAD,AIS,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,30,DATP_PATS_holdout_panel,LUAD,MIA,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,30,HALLMARK_HYPOXIA,AAH,normal,8,True,0.92964824120603,eligible_descriptive_contrast,-0.0034457182474171844,4.0,-0.06424261296282532,0.053271503178257476
+unc20_pooled,__broad__,30,HALLMARK_HYPOXIA,AIS,normal,12,True,0.92964824120603,eligible_descriptive_contrast,0.036302192888563366,8.0,-0.034082947393859045,0.09163006018682275
+unc20_pooled,__broad__,30,HALLMARK_HYPOXIA,MIA,normal,4,True,0.92964824120603,eligible_descriptive_contrast,0.15631589245892763,2.0,0.08112971284835702,0.22242891465910683
+unc20_pooled,__broad__,30,HALLMARK_HYPOXIA,LUAD,normal,23,True,0.92964824120603,eligible_descriptive_contrast,0.2533780370953854,21.0,0.23112166796870337,0.27468812230663475
+unc20_pooled,__broad__,30,HALLMARK_HYPOXIA,LUAD,AAH,8,True,0.92964824120603,eligible_descriptive_contrast,0.27755579268411856,8.0,0.22230616619925403,0.3122729374867256
+unc20_pooled,__broad__,30,HALLMARK_HYPOXIA,LUAD,AIS,12,True,0.92964824120603,eligible_descriptive_contrast,0.21082207214495027,10.0,0.1641499504480648,0.2398274855460657
+unc20_pooled,__broad__,30,HALLMARK_HYPOXIA,LUAD,MIA,4,True,0.92964824120603,eligible_descriptive_contrast,0.13163051561516736,3.0,0.09154578643658635,0.22525635481054973
+unc20_pooled,__broad__,30,HALLMARK_INFLAMMATORY_RESPONSE,AAH,normal,8,True,0.954314720812183,eligible_descriptive_contrast,-0.0735646656700863,1.0,-0.14739678741206572,-0.017967442024725715
+unc20_pooled,__broad__,30,HALLMARK_INFLAMMATORY_RESPONSE,AIS,normal,12,True,0.954314720812183,eligible_descriptive_contrast,0.10608306477978169,8.0,0.035427644535189096,0.1787496690817955
+unc20_pooled,__broad__,30,HALLMARK_INFLAMMATORY_RESPONSE,MIA,normal,4,True,0.954314720812183,eligible_descriptive_contrast,0.31404656275844267,3.0,0.18225578596821013,0.4387627283707369
+unc20_pooled,__broad__,30,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,normal,23,True,0.954314720812183,eligible_descriptive_contrast,0.41021946428619477,20.0,0.3684163703344377,0.44634935121657776
+unc20_pooled,__broad__,30,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AAH,8,True,0.954314720812183,eligible_descriptive_contrast,0.5044799411704788,7.0,0.4005104534106572,0.5886726413484801
+unc20_pooled,__broad__,30,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AIS,12,True,0.954314720812183,eligible_descriptive_contrast,0.2536576719434283,9.0,0.19899469987283452,0.2891340013051373
+unc20_pooled,__broad__,30,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,MIA,4,True,0.954314720812183,eligible_descriptive_contrast,0.40756251858669734,4.0,0.36409983246919325,0.46541940606013643
+unc20_pooled,__broad__,30,HALLMARK_P53_PATHWAY,AAH,normal,8,True,0.93,eligible_descriptive_contrast,0.08525325693681496,6.0,0.028893808569142747,0.1297525914873471
+unc20_pooled,__broad__,30,HALLMARK_P53_PATHWAY,AIS,normal,12,True,0.93,eligible_descriptive_contrast,0.09620925262656566,9.0,0.07496451092908246,0.13911126477706712
+unc20_pooled,__broad__,30,HALLMARK_P53_PATHWAY,MIA,normal,4,True,0.93,eligible_descriptive_contrast,0.30449203571680994,4.0,0.2958455692524833,0.3142579742212499
+unc20_pooled,__broad__,30,HALLMARK_P53_PATHWAY,LUAD,normal,23,True,0.93,eligible_descriptive_contrast,0.25134314200673896,21.0,0.23122813109696347,0.2721077754167544
+unc20_pooled,__broad__,30,HALLMARK_P53_PATHWAY,LUAD,AAH,8,True,0.93,eligible_descriptive_contrast,0.14249652044562244,7.0,0.09955221728874987,0.17909775299682856
+unc20_pooled,__broad__,30,HALLMARK_P53_PATHWAY,LUAD,AIS,12,True,0.93,eligible_descriptive_contrast,0.16879231566177744,11.0,0.14784172773218085,0.19065313133841266
+unc20_pooled,__broad__,30,HALLMARK_P53_PATHWAY,LUAD,MIA,4,True,0.93,eligible_descriptive_contrast,-0.05055629502644754,2.0,-0.11157682061169005,0.012656298312366587
+unc20_pooled,__broad__,30,HPCS_author_top100,AAH,normal,8,True,0.78,eligible_descriptive_contrast,0.019455914304370048,3.0,-0.06771859155719286,0.09297866716797001
+unc20_pooled,__broad__,30,HPCS_author_top100,AIS,normal,12,True,0.78,eligible_descriptive_contrast,0.12278660890513837,10.0,0.07938078304889462,0.17386900381742185
+unc20_pooled,__broad__,30,HPCS_author_top100,MIA,normal,4,True,0.78,eligible_descriptive_contrast,0.21826424374365982,3.0,0.13092378349598643,0.35951040241855986
+unc20_pooled,__broad__,30,HPCS_author_top100,LUAD,normal,23,True,0.78,eligible_descriptive_contrast,0.35202872867866475,19.0,0.3104497360301327,0.3881814515479222
+unc20_pooled,__broad__,30,HPCS_author_top100,LUAD,AAH,8,True,0.78,eligible_descriptive_contrast,0.3552078470085248,7.0,0.2678738992712855,0.43921273916115133
+unc20_pooled,__broad__,30,HPCS_author_top100,LUAD,AIS,12,True,0.78,eligible_descriptive_contrast,0.2532105616026241,10.0,0.2077668645064745,0.2960532635506663
+unc20_pooled,__broad__,30,HPCS_author_top100,LUAD,MIA,4,True,0.78,eligible_descriptive_contrast,0.17366256656845258,3.0,0.10798450182634678,0.2483597820369233
+unc20_pooled,__broad__,30,HPCS_excluding_operational_markers,AAH,normal,8,True,0.785714285714286,eligible_descriptive_contrast,0.02654362872269128,3.0,-0.06314826578158853,0.09654529288763573
+unc20_pooled,__broad__,30,HPCS_excluding_operational_markers,AIS,normal,12,True,0.785714285714286,eligible_descriptive_contrast,0.1209277333987685,10.0,0.07151971420301194,0.1735085537946265
+unc20_pooled,__broad__,30,HPCS_excluding_operational_markers,MIA,normal,4,True,0.785714285714286,eligible_descriptive_contrast,0.20027623691875984,3.0,0.10486061584855981,0.34912776499387316
+unc20_pooled,__broad__,30,HPCS_excluding_operational_markers,LUAD,normal,23,True,0.785714285714286,eligible_descriptive_contrast,0.33563828517244665,19.0,0.293320406208746,0.3714503333448283
+unc20_pooled,__broad__,30,HPCS_excluding_operational_markers,LUAD,AAH,8,True,0.785714285714286,eligible_descriptive_contrast,0.333997343825425,7.0,0.24609715826781006,0.4207964138708172
+unc20_pooled,__broad__,30,HPCS_excluding_operational_markers,LUAD,AIS,12,True,0.785714285714286,eligible_descriptive_contrast,0.25306863597331664,10.0,0.2083629742905945,0.30054350324086276
+unc20_pooled,__broad__,30,HPCS_excluding_operational_markers,LUAD,MIA,4,True,0.785714285714286,eligible_descriptive_contrast,0.14280860421425756,3.0,0.08118989459905339,0.2182053549000802
+unc20_pooled,__broad__,30,HPCS_without_ADI_or_operational_markers,AAH,normal,8,True,0.791208791208791,eligible_descriptive_contrast,0.008773011153998866,3.0,-0.08144278422407705,0.07519881951725438
+unc20_pooled,__broad__,30,HPCS_without_ADI_or_operational_markers,AIS,normal,12,True,0.791208791208791,eligible_descriptive_contrast,0.09954002913906738,9.0,0.048801074397312606,0.1531361382104217
+unc20_pooled,__broad__,30,HPCS_without_ADI_or_operational_markers,MIA,normal,4,True,0.791208791208791,eligible_descriptive_contrast,0.18287271233874758,3.0,0.07834813230898341,0.3534523916229433
+unc20_pooled,__broad__,30,HPCS_without_ADI_or_operational_markers,LUAD,normal,23,True,0.791208791208791,eligible_descriptive_contrast,0.3266108112887225,19.0,0.2831924846845322,0.3617952516233394
+unc20_pooled,__broad__,30,HPCS_without_ADI_or_operational_markers,LUAD,AAH,8,True,0.791208791208791,eligible_descriptive_contrast,0.3416630401941472,7.0,0.24877105465064972,0.4261483666741097
+unc20_pooled,__broad__,30,HPCS_without_ADI_or_operational_markers,LUAD,AIS,12,True,0.791208791208791,eligible_descriptive_contrast,0.2638394406683217,10.0,0.21884065166653552,0.3115098468256346
+unc20_pooled,__broad__,30,HPCS_without_ADI_or_operational_markers,LUAD,MIA,4,True,0.791208791208791,eligible_descriptive_contrast,0.17022523814153256,3.0,0.11472333663531338,0.24420092631247994
+unc20_pooled,__broad__,30,Han_ISR_source_symbols,AAH,normal,8,True,0.821705426356589,eligible_descriptive_contrast,0.08687010977787879,7.0,0.029853890403125836,0.1391191942053686
+unc20_pooled,__broad__,30,Han_ISR_source_symbols,AIS,normal,12,True,0.821705426356589,eligible_descriptive_contrast,0.14459497581837352,9.0,0.10333128527819566,0.1821895009642356
+unc20_pooled,__broad__,30,Han_ISR_source_symbols,MIA,normal,4,True,0.821705426356589,eligible_descriptive_contrast,0.4100155865117673,4.0,0.35712260095166304,0.4484747068901365
+unc20_pooled,__broad__,30,Han_ISR_source_symbols,LUAD,normal,23,True,0.821705426356589,eligible_descriptive_contrast,0.39309042518344944,23.0,0.37669321409790074,0.41046607958642767
+unc20_pooled,__broad__,30,Han_ISR_source_symbols,LUAD,AAH,8,True,0.821705426356589,eligible_descriptive_contrast,0.2701659420892637,8.0,0.22240288569580283,0.29170263075668423
+unc20_pooled,__broad__,30,Han_ISR_source_symbols,LUAD,AIS,12,True,0.821705426356589,eligible_descriptive_contrast,0.22906214336882158,9.0,0.17435783660636453,0.25366213297217627
+unc20_pooled,__broad__,30,Han_ISR_source_symbols,LUAD,MIA,4,True,0.821705426356589,eligible_descriptive_contrast,0.04908726397144725,3.0,0.008266470884603194,0.11338978842236654
+unc20_pooled,__broad__,30,Han_ISR_without_HPCS_ADI_or_operational_markers,AAH,normal,8,True,0.847619047619048,eligible_descriptive_contrast,0.1130349929687603,7.0,0.05049450379686033,0.16043593867638745
+unc20_pooled,__broad__,30,Han_ISR_without_HPCS_ADI_or_operational_markers,AIS,normal,12,True,0.847619047619048,eligible_descriptive_contrast,0.18003435147339752,9.0,0.13339583504985272,0.20894248487476635
+unc20_pooled,__broad__,30,Han_ISR_without_HPCS_ADI_or_operational_markers,MIA,normal,4,True,0.847619047619048,eligible_descriptive_contrast,0.47443553984122766,4.0,0.4058557661857001,0.5394627516401469
+unc20_pooled,__broad__,30,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,normal,23,True,0.847619047619048,eligible_descriptive_contrast,0.4509362655865126,23.0,0.4299623829660264,0.46410750757089825
+unc20_pooled,__broad__,30,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AAH,8,True,0.847619047619048,eligible_descriptive_contrast,0.29147862182167733,8.0,0.260240388278777,0.31158959783557416
+unc20_pooled,__broad__,30,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AIS,12,True,0.847619047619048,eligible_descriptive_contrast,0.2386201229951702,11.0,0.1826145343881011,0.2609403104782638
+unc20_pooled,__broad__,30,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,MIA,4,True,0.847619047619048,eligible_descriptive_contrast,0.09996120568558231,3.0,0.05588600010430985,0.17038518868509644
+unc20_pooled,__broad__,50,ADI_published_holdout,AAH,normal,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,50,ADI_published_holdout,AIS,normal,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,50,ADI_published_holdout,MIA,normal,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,50,ADI_published_holdout,LUAD,normal,23,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,50,ADI_published_holdout,LUAD,AAH,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,50,ADI_published_holdout,LUAD,AIS,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,50,ADI_published_holdout,LUAD,MIA,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,50,AT1_published_holdout,AAH,normal,8,True,0.842105263157895,eligible_descriptive_contrast,0.07309704232291236,5.0,0.029982369697931333,0.10462542913587125
+unc20_pooled,__broad__,50,AT1_published_holdout,AIS,normal,12,True,0.842105263157895,eligible_descriptive_contrast,0.04768735957594831,8.0,0.025238108487213588,0.08943407737797275
+unc20_pooled,__broad__,50,AT1_published_holdout,MIA,normal,4,True,0.842105263157895,eligible_descriptive_contrast,0.1849010119247374,4.0,0.17050528772165988,0.20869447355548645
+unc20_pooled,__broad__,50,AT1_published_holdout,LUAD,normal,23,True,0.842105263157895,eligible_descriptive_contrast,0.16694145319876222,20.0,0.1522406711463405,0.1819677372501469
+unc20_pooled,__broad__,50,AT1_published_holdout,LUAD,AAH,8,True,0.842105263157895,eligible_descriptive_contrast,0.10840299189860259,5.0,0.06291764049734296,0.14795589909122725
+unc20_pooled,__broad__,50,AT1_published_holdout,LUAD,AIS,12,True,0.842105263157895,eligible_descriptive_contrast,0.09771094360759336,9.0,0.06241493143550183,0.11327755716231369
+unc20_pooled,__broad__,50,AT1_published_holdout,LUAD,MIA,4,True,0.842105263157895,eligible_descriptive_contrast,0.004716148423212552,2.0,-0.04883944062891329,0.05476609794138998
+unc20_pooled,__broad__,50,AT2_published_holdout,AAH,normal,8,True,0.864321608040201,eligible_descriptive_contrast,0.024358451614201138,5.0,0.0004579511236055822,0.04591453031784555
+unc20_pooled,__broad__,50,AT2_published_holdout,AIS,normal,12,True,0.864321608040201,eligible_descriptive_contrast,0.01847324593034679,9.0,-0.0036483595031607504,0.05845000831587743
+unc20_pooled,__broad__,50,AT2_published_holdout,MIA,normal,4,True,0.864321608040201,eligible_descriptive_contrast,0.08999989002078035,3.0,0.060244584096800224,0.13446325682898022
+unc20_pooled,__broad__,50,AT2_published_holdout,LUAD,normal,23,True,0.864321608040201,eligible_descriptive_contrast,0.00029120084471312424,15.0,-0.009640268169644443,0.021539740979406433
+unc20_pooled,__broad__,50,AT2_published_holdout,LUAD,AAH,8,True,0.864321608040201,eligible_descriptive_contrast,-0.02685305301033236,4.0,-0.07266755524252703,0.01176965839652157
+unc20_pooled,__broad__,50,AT2_published_holdout,LUAD,AIS,12,True,0.864321608040201,eligible_descriptive_contrast,-0.0060242858054383825,7.0,-0.0534646353095201,0.023308558940982656
+unc20_pooled,__broad__,50,AT2_published_holdout,LUAD,MIA,4,True,0.864321608040201,eligible_descriptive_contrast,-0.07649603249952763,0.0,-0.09964812169529018,-0.05305619880684661
+unc20_pooled,__broad__,50,DATP_PATS_holdout_panel,AAH,normal,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,50,DATP_PATS_holdout_panel,AIS,normal,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,50,DATP_PATS_holdout_panel,MIA,normal,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,50,DATP_PATS_holdout_panel,LUAD,normal,23,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,50,DATP_PATS_holdout_panel,LUAD,AAH,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,50,DATP_PATS_holdout_panel,LUAD,AIS,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,50,DATP_PATS_holdout_panel,LUAD,MIA,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,50,HALLMARK_HYPOXIA,AAH,normal,8,True,0.92964824120603,eligible_descriptive_contrast,-0.0034457182474171844,4.0,-0.06424261296282532,0.053271503178257476
+unc20_pooled,__broad__,50,HALLMARK_HYPOXIA,AIS,normal,12,True,0.92964824120603,eligible_descriptive_contrast,0.036302192888563366,8.0,-0.034082947393859045,0.09163006018682275
+unc20_pooled,__broad__,50,HALLMARK_HYPOXIA,MIA,normal,4,True,0.92964824120603,eligible_descriptive_contrast,0.15631589245892763,2.0,0.08112971284835702,0.22242891465910683
+unc20_pooled,__broad__,50,HALLMARK_HYPOXIA,LUAD,normal,23,True,0.92964824120603,eligible_descriptive_contrast,0.2533780370953854,21.0,0.23112166796870337,0.27468812230663475
+unc20_pooled,__broad__,50,HALLMARK_HYPOXIA,LUAD,AAH,8,True,0.92964824120603,eligible_descriptive_contrast,0.27755579268411856,8.0,0.22230616619925403,0.3122729374867256
+unc20_pooled,__broad__,50,HALLMARK_HYPOXIA,LUAD,AIS,12,True,0.92964824120603,eligible_descriptive_contrast,0.21082207214495027,10.0,0.1641499504480648,0.2398274855460657
+unc20_pooled,__broad__,50,HALLMARK_HYPOXIA,LUAD,MIA,4,True,0.92964824120603,eligible_descriptive_contrast,0.13163051561516736,3.0,0.09154578643658635,0.22525635481054973
+unc20_pooled,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,AAH,normal,8,True,0.954314720812183,eligible_descriptive_contrast,-0.0735646656700863,1.0,-0.14739678741206572,-0.017967442024725715
+unc20_pooled,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,AIS,normal,12,True,0.954314720812183,eligible_descriptive_contrast,0.10608306477978169,8.0,0.035427644535189096,0.1787496690817955
+unc20_pooled,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,MIA,normal,4,True,0.954314720812183,eligible_descriptive_contrast,0.31404656275844267,3.0,0.18225578596821013,0.4387627283707369
+unc20_pooled,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,normal,23,True,0.954314720812183,eligible_descriptive_contrast,0.41021946428619477,20.0,0.3684163703344377,0.44634935121657776
+unc20_pooled,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AAH,8,True,0.954314720812183,eligible_descriptive_contrast,0.5044799411704788,7.0,0.4005104534106572,0.5886726413484801
+unc20_pooled,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AIS,12,True,0.954314720812183,eligible_descriptive_contrast,0.2536576719434283,9.0,0.19899469987283452,0.2891340013051373
+unc20_pooled,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,MIA,4,True,0.954314720812183,eligible_descriptive_contrast,0.40756251858669734,4.0,0.36409983246919325,0.46541940606013643
+unc20_pooled,__broad__,50,HALLMARK_P53_PATHWAY,AAH,normal,8,True,0.93,eligible_descriptive_contrast,0.08525325693681496,6.0,0.028893808569142747,0.1297525914873471
+unc20_pooled,__broad__,50,HALLMARK_P53_PATHWAY,AIS,normal,12,True,0.93,eligible_descriptive_contrast,0.09620925262656566,9.0,0.07496451092908246,0.13911126477706712
+unc20_pooled,__broad__,50,HALLMARK_P53_PATHWAY,MIA,normal,4,True,0.93,eligible_descriptive_contrast,0.30449203571680994,4.0,0.2958455692524833,0.3142579742212499
+unc20_pooled,__broad__,50,HALLMARK_P53_PATHWAY,LUAD,normal,23,True,0.93,eligible_descriptive_contrast,0.25134314200673896,21.0,0.23122813109696347,0.2721077754167544
+unc20_pooled,__broad__,50,HALLMARK_P53_PATHWAY,LUAD,AAH,8,True,0.93,eligible_descriptive_contrast,0.14249652044562244,7.0,0.09955221728874987,0.17909775299682856
+unc20_pooled,__broad__,50,HALLMARK_P53_PATHWAY,LUAD,AIS,12,True,0.93,eligible_descriptive_contrast,0.16879231566177744,11.0,0.14784172773218085,0.19065313133841266
+unc20_pooled,__broad__,50,HALLMARK_P53_PATHWAY,LUAD,MIA,4,True,0.93,eligible_descriptive_contrast,-0.05055629502644754,2.0,-0.11157682061169005,0.012656298312366587
+unc20_pooled,__broad__,50,HPCS_author_top100,AAH,normal,8,True,0.78,eligible_descriptive_contrast,0.019455914304370048,3.0,-0.06771859155719286,0.09297866716797001
+unc20_pooled,__broad__,50,HPCS_author_top100,AIS,normal,12,True,0.78,eligible_descriptive_contrast,0.12278660890513837,10.0,0.07938078304889462,0.17386900381742185
+unc20_pooled,__broad__,50,HPCS_author_top100,MIA,normal,4,True,0.78,eligible_descriptive_contrast,0.21826424374365982,3.0,0.13092378349598643,0.35951040241855986
+unc20_pooled,__broad__,50,HPCS_author_top100,LUAD,normal,23,True,0.78,eligible_descriptive_contrast,0.35202872867866475,19.0,0.3104497360301327,0.3881814515479222
+unc20_pooled,__broad__,50,HPCS_author_top100,LUAD,AAH,8,True,0.78,eligible_descriptive_contrast,0.3552078470085248,7.0,0.2678738992712855,0.43921273916115133
+unc20_pooled,__broad__,50,HPCS_author_top100,LUAD,AIS,12,True,0.78,eligible_descriptive_contrast,0.2532105616026241,10.0,0.2077668645064745,0.2960532635506663
+unc20_pooled,__broad__,50,HPCS_author_top100,LUAD,MIA,4,True,0.78,eligible_descriptive_contrast,0.17366256656845258,3.0,0.10798450182634678,0.2483597820369233
+unc20_pooled,__broad__,50,HPCS_excluding_operational_markers,AAH,normal,8,True,0.785714285714286,eligible_descriptive_contrast,0.02654362872269128,3.0,-0.06314826578158853,0.09654529288763573
+unc20_pooled,__broad__,50,HPCS_excluding_operational_markers,AIS,normal,12,True,0.785714285714286,eligible_descriptive_contrast,0.1209277333987685,10.0,0.07151971420301194,0.1735085537946265
+unc20_pooled,__broad__,50,HPCS_excluding_operational_markers,MIA,normal,4,True,0.785714285714286,eligible_descriptive_contrast,0.20027623691875984,3.0,0.10486061584855981,0.34912776499387316
+unc20_pooled,__broad__,50,HPCS_excluding_operational_markers,LUAD,normal,23,True,0.785714285714286,eligible_descriptive_contrast,0.33563828517244665,19.0,0.293320406208746,0.3714503333448283
+unc20_pooled,__broad__,50,HPCS_excluding_operational_markers,LUAD,AAH,8,True,0.785714285714286,eligible_descriptive_contrast,0.333997343825425,7.0,0.24609715826781006,0.4207964138708172
+unc20_pooled,__broad__,50,HPCS_excluding_operational_markers,LUAD,AIS,12,True,0.785714285714286,eligible_descriptive_contrast,0.25306863597331664,10.0,0.2083629742905945,0.30054350324086276
+unc20_pooled,__broad__,50,HPCS_excluding_operational_markers,LUAD,MIA,4,True,0.785714285714286,eligible_descriptive_contrast,0.14280860421425756,3.0,0.08118989459905339,0.2182053549000802
+unc20_pooled,__broad__,50,HPCS_without_ADI_or_operational_markers,AAH,normal,8,True,0.791208791208791,eligible_descriptive_contrast,0.008773011153998866,3.0,-0.08144278422407705,0.07519881951725438
+unc20_pooled,__broad__,50,HPCS_without_ADI_or_operational_markers,AIS,normal,12,True,0.791208791208791,eligible_descriptive_contrast,0.09954002913906738,9.0,0.048801074397312606,0.1531361382104217
+unc20_pooled,__broad__,50,HPCS_without_ADI_or_operational_markers,MIA,normal,4,True,0.791208791208791,eligible_descriptive_contrast,0.18287271233874758,3.0,0.07834813230898341,0.3534523916229433
+unc20_pooled,__broad__,50,HPCS_without_ADI_or_operational_markers,LUAD,normal,23,True,0.791208791208791,eligible_descriptive_contrast,0.3266108112887225,19.0,0.2831924846845322,0.3617952516233394
+unc20_pooled,__broad__,50,HPCS_without_ADI_or_operational_markers,LUAD,AAH,8,True,0.791208791208791,eligible_descriptive_contrast,0.3416630401941472,7.0,0.24877105465064972,0.4261483666741097
+unc20_pooled,__broad__,50,HPCS_without_ADI_or_operational_markers,LUAD,AIS,12,True,0.791208791208791,eligible_descriptive_contrast,0.2638394406683217,10.0,0.21884065166653552,0.3115098468256346
+unc20_pooled,__broad__,50,HPCS_without_ADI_or_operational_markers,LUAD,MIA,4,True,0.791208791208791,eligible_descriptive_contrast,0.17022523814153256,3.0,0.11472333663531338,0.24420092631247994
+unc20_pooled,__broad__,50,Han_ISR_source_symbols,AAH,normal,8,True,0.821705426356589,eligible_descriptive_contrast,0.08687010977787879,7.0,0.029853890403125836,0.1391191942053686
+unc20_pooled,__broad__,50,Han_ISR_source_symbols,AIS,normal,12,True,0.821705426356589,eligible_descriptive_contrast,0.14459497581837352,9.0,0.10333128527819566,0.1821895009642356
+unc20_pooled,__broad__,50,Han_ISR_source_symbols,MIA,normal,4,True,0.821705426356589,eligible_descriptive_contrast,0.4100155865117673,4.0,0.35712260095166304,0.4484747068901365
+unc20_pooled,__broad__,50,Han_ISR_source_symbols,LUAD,normal,23,True,0.821705426356589,eligible_descriptive_contrast,0.39309042518344944,23.0,0.37669321409790074,0.41046607958642767
+unc20_pooled,__broad__,50,Han_ISR_source_symbols,LUAD,AAH,8,True,0.821705426356589,eligible_descriptive_contrast,0.2701659420892637,8.0,0.22240288569580283,0.29170263075668423
+unc20_pooled,__broad__,50,Han_ISR_source_symbols,LUAD,AIS,12,True,0.821705426356589,eligible_descriptive_contrast,0.22906214336882158,9.0,0.17435783660636453,0.25366213297217627
+unc20_pooled,__broad__,50,Han_ISR_source_symbols,LUAD,MIA,4,True,0.821705426356589,eligible_descriptive_contrast,0.04908726397144725,3.0,0.008266470884603194,0.11338978842236654
+unc20_pooled,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,AAH,normal,8,True,0.847619047619048,eligible_descriptive_contrast,0.1130349929687603,7.0,0.05049450379686033,0.16043593867638745
+unc20_pooled,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,AIS,normal,12,True,0.847619047619048,eligible_descriptive_contrast,0.18003435147339752,9.0,0.13339583504985272,0.20894248487476635
+unc20_pooled,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,MIA,normal,4,True,0.847619047619048,eligible_descriptive_contrast,0.47443553984122766,4.0,0.4058557661857001,0.5394627516401469
+unc20_pooled,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,normal,23,True,0.847619047619048,eligible_descriptive_contrast,0.4509362655865126,23.0,0.4299623829660264,0.46410750757089825
+unc20_pooled,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AAH,8,True,0.847619047619048,eligible_descriptive_contrast,0.29147862182167733,8.0,0.260240388278777,0.31158959783557416
+unc20_pooled,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AIS,12,True,0.847619047619048,eligible_descriptive_contrast,0.2386201229951702,11.0,0.1826145343881011,0.2609403104782638
+unc20_pooled,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,MIA,4,True,0.847619047619048,eligible_descriptive_contrast,0.09996120568558231,3.0,0.05588600010430985,0.17038518868509644
+unc20_pooled,__broad__,100,ADI_published_holdout,AAH,normal,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,100,ADI_published_holdout,AIS,normal,11,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,100,ADI_published_holdout,MIA,normal,3,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,100,ADI_published_holdout,LUAD,normal,22,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,100,ADI_published_holdout,LUAD,AAH,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,100,ADI_published_holdout,LUAD,AIS,11,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,100,ADI_published_holdout,LUAD,MIA,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,100,AT1_published_holdout,AAH,normal,8,True,0.842105263157895,eligible_descriptive_contrast,0.07336659537687373,5.0,0.030126443091587136,0.10492404729416283
+unc20_pooled,__broad__,100,AT1_published_holdout,AIS,normal,11,True,0.842105263157895,eligible_descriptive_contrast,0.08960905332051829,8.0,0.06905000930310408,0.10955401218124212
+unc20_pooled,__broad__,100,AT1_published_holdout,MIA,normal,3,True,0.842105263157895,eligible_descriptive_contrast,0.17082388066029353,3.0,0.15454745825725524,0.19926818683547998
+unc20_pooled,__broad__,100,AT1_published_holdout,LUAD,normal,22,True,0.842105263157895,eligible_descriptive_contrast,0.15697096107888084,19.0,0.14104593157165182,0.1722462361854552
+unc20_pooled,__broad__,100,AT1_published_holdout,LUAD,AAH,8,True,0.842105263157895,eligible_descriptive_contrast,0.10859910327721622,5.0,0.0630748843768443,0.1481592716471785
+unc20_pooled,__broad__,100,AT1_published_holdout,LUAD,AIS,11,True,0.842105263157895,eligible_descriptive_contrast,0.062418467146363454,8.0,0.037957092274490824,0.07603182500331282
+unc20_pooled,__broad__,100,AT1_published_holdout,LUAD,MIA,4,True,0.842105263157895,eligible_descriptive_contrast,0.004774971768682246,2.0,-0.04880978633376376,0.05475764627910973
+unc20_pooled,__broad__,100,AT2_published_holdout,AAH,normal,8,True,0.864321608040201,eligible_descriptive_contrast,0.02472244285265124,5.0,0.0006839539880384596,0.04639687971674
+unc20_pooled,__broad__,100,AT2_published_holdout,AIS,normal,11,True,0.864321608040201,eligible_descriptive_contrast,0.05907646635533081,9.0,0.03854274910519288,0.07887002476835789
+unc20_pooled,__broad__,100,AT2_published_holdout,MIA,normal,3,True,0.864321608040201,eligible_descriptive_contrast,0.08352248687899995,2.0,0.0348504924940749,0.1470080412465249
+unc20_pooled,__broad__,100,AT2_published_holdout,LUAD,normal,22,True,0.864321608040201,eligible_descriptive_contrast,-0.0031763894700723616,14.0,-0.013810805814415347,0.01892642464963708
+unc20_pooled,__broad__,100,AT2_published_holdout,LUAD,AAH,8,True,0.864321608040201,eligible_descriptive_contrast,-0.02664459554046139,4.0,-0.07254127133375578,0.01199548357447977
+unc20_pooled,__broad__,100,AT2_published_holdout,LUAD,AIS,11,True,0.864321608040201,eligible_descriptive_contrast,-0.05346778678667368,6.0,-0.06968604003859005,-0.025966928644437993
+unc20_pooled,__broad__,100,AT2_published_holdout,LUAD,MIA,4,True,0.864321608040201,eligible_descriptive_contrast,-0.07631551418748739,0.0,-0.09953116446552339,-0.05295582778123661
+unc20_pooled,__broad__,100,DATP_PATS_holdout_panel,AAH,normal,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,100,DATP_PATS_holdout_panel,AIS,normal,11,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,100,DATP_PATS_holdout_panel,MIA,normal,3,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,100,DATP_PATS_holdout_panel,LUAD,normal,22,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,100,DATP_PATS_holdout_panel,LUAD,AAH,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,100,DATP_PATS_holdout_panel,LUAD,AIS,11,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,100,DATP_PATS_holdout_panel,LUAD,MIA,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc20_pooled,__broad__,100,HALLMARK_HYPOXIA,AAH,normal,8,True,0.92964824120603,eligible_descriptive_contrast,-0.002987495518711192,4.0,-0.06417703103843701,0.05392138059327139
+unc20_pooled,__broad__,100,HALLMARK_HYPOXIA,AIS,normal,11,True,0.92964824120603,eligible_descriptive_contrast,0.08701132119437993,8.0,0.014067227862370935,0.15328210803663592
+unc20_pooled,__broad__,100,HALLMARK_HYPOXIA,MIA,normal,3,True,0.92964824120603,eligible_descriptive_contrast,0.10147213776003323,1.0,-0.03965297628477016,0.17326132632369484
+unc20_pooled,__broad__,100,HALLMARK_HYPOXIA,LUAD,normal,22,True,0.92964824120603,eligible_descriptive_contrast,0.2423737433700473,20.0,0.21836388608182286,0.2641829754721772
+unc20_pooled,__broad__,100,HALLMARK_HYPOXIA,LUAD,AAH,8,True,0.92964824120603,eligible_descriptive_contrast,0.27841656110865864,8.0,0.2229582815330399,0.3132455573137956
+unc20_pooled,__broad__,100,HALLMARK_HYPOXIA,LUAD,AIS,11,True,0.92964824120603,eligible_descriptive_contrast,0.1702668586680119,9.0,0.11454255702979906,0.19818312322995305
+unc20_pooled,__broad__,100,HALLMARK_HYPOXIA,LUAD,MIA,4,True,0.92964824120603,eligible_descriptive_contrast,0.13217506181093253,3.0,0.09225246536750002,0.22617986419184
+unc20_pooled,__broad__,100,HALLMARK_INFLAMMATORY_RESPONSE,AAH,normal,8,True,0.954314720812183,eligible_descriptive_contrast,-0.07282991959324386,1.0,-0.14718694561511297,-0.01699684280133004
+unc20_pooled,__broad__,100,HALLMARK_INFLAMMATORY_RESPONSE,AIS,normal,11,True,0.954314720812183,eligible_descriptive_contrast,0.12341992199599733,8.0,0.04674253351005806,0.20542463393421206
+unc20_pooled,__broad__,100,HALLMARK_INFLAMMATORY_RESPONSE,MIA,normal,3,True,0.954314720812183,eligible_descriptive_contrast,0.18481892228576013,2.0,0.034081409405980256,0.3074201546642601
+unc20_pooled,__broad__,100,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,normal,22,True,0.954314720812183,eligible_descriptive_contrast,0.37464637444696325,19.0,0.32885159099953387,0.41102744157518717
+unc20_pooled,__broad__,100,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AAH,8,True,0.954314720812183,eligible_descriptive_contrast,0.5064328606762063,7.0,0.4020560074154371,0.5908421415458044
+unc20_pooled,__broad__,100,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AIS,11,True,0.954314720812183,eligible_descriptive_contrast,0.1988756855736136,8.0,0.14213946735223498,0.23289915174792997
+unc20_pooled,__broad__,100,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,MIA,4,True,0.954314720812183,eligible_descriptive_contrast,0.4088901195890974,4.0,0.36552396090968325,0.46698839780657303
+unc20_pooled,__broad__,100,HALLMARK_P53_PATHWAY,AAH,normal,8,True,0.93,eligible_descriptive_contrast,0.0857989908208,6.0,0.029150464079972745,0.13047696751019
+unc20_pooled,__broad__,100,HALLMARK_P53_PATHWAY,AIS,normal,11,True,0.93,eligible_descriptive_contrast,0.1397123196974036,9.0,0.12055718478267394,0.17483141756520393
+unc20_pooled,__broad__,100,HALLMARK_P53_PATHWAY,MIA,normal,3,True,0.93,eligible_descriptive_contrast,0.303088470683087,3.0,0.28923642175198516,0.3170628123547252
+unc20_pooled,__broad__,100,HALLMARK_P53_PATHWAY,LUAD,normal,22,True,0.93,eligible_descriptive_contrast,0.24513199386643994,20.0,0.22362331987154804,0.2666175212573818
+unc20_pooled,__broad__,100,HALLMARK_P53_PATHWAY,LUAD,AAH,8,True,0.93,eligible_descriptive_contrast,0.14272215087181994,7.0,0.09973745405063131,0.1793695470648943
+unc20_pooled,__broad__,100,HALLMARK_P53_PATHWAY,LUAD,AIS,11,True,0.93,eligible_descriptive_contrast,0.1478927570816353,10.0,0.12416625041324583,0.16988772738416485
+unc20_pooled,__broad__,100,HALLMARK_P53_PATHWAY,LUAD,MIA,4,True,0.93,eligible_descriptive_contrast,-0.050641332423714935,2.0,-0.11180112212163647,0.012828327850289867
+unc20_pooled,__broad__,100,HPCS_author_top100,AAH,normal,8,True,0.78,eligible_descriptive_contrast,0.020293577278505004,3.0,-0.06739106282765281,0.0941145267130814
+unc20_pooled,__broad__,100,HPCS_author_top100,AIS,normal,11,True,0.78,eligible_descriptive_contrast,0.11697932324436473,9.0,0.06833775168151517,0.1727384738397892
+unc20_pooled,__broad__,100,HPCS_author_top100,MIA,normal,3,True,0.78,eligible_descriptive_contrast,0.1322802786413068,2.0,0.045213135822304906,0.3006515693339602
+unc20_pooled,__broad__,100,HPCS_author_top100,LUAD,normal,22,True,0.78,eligible_descriptive_contrast,0.33103965510783,18.0,0.2862241004103267,0.3679465272016372
+unc20_pooled,__broad__,100,HPCS_author_top100,LUAD,AAH,8,True,0.78,eligible_descriptive_contrast,0.3566974723901974,7.0,0.2690279830559285,0.44085828840582275
+unc20_pooled,__broad__,100,HPCS_author_top100,LUAD,AIS,11,True,0.78,eligible_descriptive_contrast,0.2566840792045563,9.0,0.2068235170666069,0.304295624824717
+unc20_pooled,__broad__,100,HPCS_author_top100,LUAD,MIA,4,True,0.78,eligible_descriptive_contrast,0.17394826929099505,3.0,0.10839101362316317,0.2490436856964434
+unc20_pooled,__broad__,100,HPCS_excluding_operational_markers,AAH,normal,8,True,0.785714285714286,eligible_descriptive_contrast,0.027453815966263673,3.0,-0.06275270857132442,0.09770178200453859
+unc20_pooled,__broad__,100,HPCS_excluding_operational_markers,AIS,normal,11,True,0.785714285714286,eligible_descriptive_contrast,0.12171652850331537,9.0,0.06707870889053087,0.17979205859548789
+unc20_pooled,__broad__,100,HPCS_excluding_operational_markers,MIA,normal,3,True,0.785714285714286,eligible_descriptive_contrast,0.10585424569756678,2.0,0.01029927037858025,0.2816339597269053
+unc20_pooled,__broad__,100,HPCS_excluding_operational_markers,LUAD,normal,22,True,0.785714285714286,eligible_descriptive_contrast,0.31544318361104234,18.0,0.26988894767327104,0.3520318748147896
+unc20_pooled,__broad__,100,HPCS_excluding_operational_markers,LUAD,AAH,8,True,0.785714285714286,eligible_descriptive_contrast,0.33528376939506266,7.0,0.24707107421492733,0.4222211397388058
+unc20_pooled,__broad__,100,HPCS_excluding_operational_markers,LUAD,AIS,11,True,0.785714285714286,eligible_descriptive_contrast,0.2564131146615129,9.0,0.20735283418071018,0.3091569104657671
+unc20_pooled,__broad__,100,HPCS_excluding_operational_markers,LUAD,MIA,4,True,0.785714285714286,eligible_descriptive_contrast,0.14289496369081967,3.0,0.08149062153653978,0.21865289420037648
+unc20_pooled,__broad__,100,HPCS_without_ADI_or_operational_markers,AAH,normal,8,True,0.791208791208791,eligible_descriptive_contrast,0.009744527672406245,3.0,-0.08102142212062421,0.07643337000366854
+unc20_pooled,__broad__,100,HPCS_without_ADI_or_operational_markers,AIS,normal,11,True,0.791208791208791,eligible_descriptive_contrast,0.10070569052596655,8.0,0.04461623447201117,0.15994679199691916
+unc20_pooled,__broad__,100,HPCS_without_ADI_or_operational_markers,MIA,normal,3,True,0.791208791208791,eligible_descriptive_contrast,0.07940959280525013,2.0,-0.027108394037884675,0.28324246817812004
+unc20_pooled,__broad__,100,HPCS_without_ADI_or_operational_markers,LUAD,normal,22,True,0.791208791208791,eligible_descriptive_contrast,0.30524807925945135,18.0,0.25846755477600236,0.3411259654995538
+unc20_pooled,__broad__,100,HPCS_without_ADI_or_operational_markers,LUAD,AAH,8,True,0.791208791208791,eligible_descriptive_contrast,0.3430377953816437,7.0,0.24981160667990712,0.42767058350669857
+unc20_pooled,__broad__,100,HPCS_without_ADI_or_operational_markers,LUAD,AIS,11,True,0.791208791208791,eligible_descriptive_contrast,0.2644873458958999,9.0,0.21481991278270293,0.3171895444726769
+unc20_pooled,__broad__,100,HPCS_without_ADI_or_operational_markers,LUAD,MIA,4,True,0.791208791208791,eligible_descriptive_contrast,0.1703177705675023,3.0,0.11504544890276976,0.24467913909097305
+unc20_pooled,__broad__,100,Han_ISR_source_symbols,AAH,normal,8,True,0.821705426356589,eligible_descriptive_contrast,0.08774637446323608,7.0,0.030366920722724115,0.14016243539156406
+unc20_pooled,__broad__,100,Han_ISR_source_symbols,AIS,normal,11,True,0.821705426356589,eligible_descriptive_contrast,0.18321918001116017,9.0,0.14141698791878615,0.21639276700893112
+unc20_pooled,__broad__,100,Han_ISR_source_symbols,MIA,normal,3,True,0.821705426356589,eligible_descriptive_contrast,0.3584123502092966,3.0,0.33372112742669513,0.3904799333310298
+unc20_pooled,__broad__,100,Han_ISR_source_symbols,LUAD,normal,22,True,0.821705426356589,eligible_descriptive_contrast,0.37871150370279927,22.0,0.36067736349313495,0.39621864639535637
+unc20_pooled,__broad__,100,Han_ISR_source_symbols,LUAD,AAH,8,True,0.821705426356589,eligible_descriptive_contrast,0.27078397756282657,8.0,0.22288052172768744,0.2922818835807489
+unc20_pooled,__broad__,100,Han_ISR_source_symbols,LUAD,AIS,11,True,0.821705426356589,eligible_descriptive_contrast,0.2140878795810165,8.0,0.15228595727072908,0.2396311284676531
+unc20_pooled,__broad__,100,Han_ISR_source_symbols,LUAD,MIA,4,True,0.821705426356589,eligible_descriptive_contrast,0.04927051665441007,3.0,0.008610861048163443,0.11370732908124677
+unc20_pooled,__broad__,100,Han_ISR_without_HPCS_ADI_or_operational_markers,AAH,normal,8,True,0.847619047619048,eligible_descriptive_contrast,0.11402157403964108,7.0,0.0510839898766141,0.16161140224915702
+unc20_pooled,__broad__,100,Han_ISR_without_HPCS_ADI_or_operational_markers,AIS,normal,11,True,0.847619047619048,eligible_descriptive_contrast,0.21015272275238095,9.0,0.161527596558367,0.24280740885197907
+unc20_pooled,__broad__,100,Han_ISR_without_HPCS_ADI_or_operational_markers,MIA,normal,3,True,0.847619047619048,eligible_descriptive_contrast,0.40726369346733665,3.0,0.36300682914514515,0.47143903608316506
+unc20_pooled,__broad__,100,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,normal,22,True,0.847619047619048,eligible_descriptive_contrast,0.431669496873935,22.0,0.41259927330328905,0.4445204325866553
+unc20_pooled,__broad__,100,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AAH,8,True,0.847619047619048,eligible_descriptive_contrast,0.2922097065693702,8.0,0.26087494414778156,0.3122896960205959
+unc20_pooled,__broad__,100,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AIS,11,True,0.847619047619048,eligible_descriptive_contrast,0.22110810644982729,10.0,0.15759616167495505,0.24388428009131502
+unc20_pooled,__broad__,100,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,MIA,4,True,0.847619047619048,eligible_descriptive_contrast,0.10029251700600716,3.0,0.05630932983105286,0.1709231616229463
+unc30_pooled,AT2,50,ADI_published_holdout,AAH,normal,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2,50,ADI_published_holdout,AIS,normal,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2,50,ADI_published_holdout,MIA,normal,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2,50,ADI_published_holdout,LUAD,normal,23,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2,50,ADI_published_holdout,LUAD,AAH,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2,50,ADI_published_holdout,LUAD,AIS,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2,50,ADI_published_holdout,LUAD,MIA,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2,50,AT1_published_holdout,AAH,normal,8,True,0.842105263157895,eligible_descriptive_contrast,0.07820610703648745,5.0,0.03747393918488852,0.1060540434442829
+unc30_pooled,AT2,50,AT1_published_holdout,AIS,normal,12,True,0.842105263157895,eligible_descriptive_contrast,0.04272302575581518,8.0,0.021772700031261992,0.08471318500275289
+unc30_pooled,AT2,50,AT1_published_holdout,MIA,normal,4,True,0.842105263157895,eligible_descriptive_contrast,0.2403281344401722,4.0,0.22428541433487967,0.27099799994001295
+unc30_pooled,AT2,50,AT1_published_holdout,LUAD,normal,23,True,0.842105263157895,eligible_descriptive_contrast,0.16829119468405304,20.0,0.15402868037927228,0.18172510273697046
+unc30_pooled,AT2,50,AT1_published_holdout,LUAD,AAH,8,True,0.842105263157895,eligible_descriptive_contrast,0.10720013899455505,5.0,0.06573760012195999,0.1506444004037215
+unc30_pooled,AT2,50,AT1_published_holdout,LUAD,AIS,12,True,0.842105263157895,eligible_descriptive_contrast,0.08718696481485666,8.0,0.050443430907564556,0.1037434797012482
+unc30_pooled,AT2,50,AT1_published_holdout,LUAD,MIA,4,True,0.842105263157895,eligible_descriptive_contrast,-0.008506365775527547,2.0,-0.05680569413874655,0.036934497401029866
+unc30_pooled,AT2,50,AT2_published_holdout,AAH,normal,8,True,0.864321608040201,eligible_descriptive_contrast,0.03365165657666114,6.0,0.01492748985898995,0.05480922902306418
+unc30_pooled,AT2,50,AT2_published_holdout,AIS,normal,12,True,0.864321608040201,eligible_descriptive_contrast,0.02425819259144831,9.0,0.0038475535087609007,0.059682624146809034
+unc30_pooled,AT2,50,AT2_published_holdout,MIA,normal,4,True,0.864321608040201,eligible_descriptive_contrast,0.09587989981358236,3.0,0.06648098116707324,0.1422612385408867
+unc30_pooled,AT2,50,AT2_published_holdout,LUAD,normal,23,True,0.864321608040201,eligible_descriptive_contrast,-0.014185472617869621,13.0,-0.02410157571963141,0.008158251660740417
+unc30_pooled,AT2,50,AT2_published_holdout,LUAD,AAH,8,True,0.864321608040201,eligible_descriptive_contrast,-0.043124734138851095,4.0,-0.08730431288310989,-0.0037000758324112126
+unc30_pooled,AT2,50,AT2_published_holdout,LUAD,AIS,12,True,0.864321608040201,eligible_descriptive_contrast,-0.03114226969941088,5.0,-0.07400414812794555,0.00012944524980634304
+unc30_pooled,AT2,50,AT2_published_holdout,LUAD,MIA,4,True,0.864321608040201,eligible_descriptive_contrast,-0.09032695897887244,0.0,-0.10812984060302651,-0.06884358681817648
+unc30_pooled,AT2,50,DATP_PATS_holdout_panel,AAH,normal,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2,50,DATP_PATS_holdout_panel,AIS,normal,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2,50,DATP_PATS_holdout_panel,MIA,normal,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2,50,DATP_PATS_holdout_panel,LUAD,normal,23,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2,50,DATP_PATS_holdout_panel,LUAD,AAH,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2,50,DATP_PATS_holdout_panel,LUAD,AIS,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2,50,DATP_PATS_holdout_panel,LUAD,MIA,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2,50,HALLMARK_HYPOXIA,AAH,normal,8,True,0.92964824120603,eligible_descriptive_contrast,0.00024693988049029336,4.0,-0.053300449461214025,0.05352718078674025
+unc30_pooled,AT2,50,HALLMARK_HYPOXIA,AIS,normal,12,True,0.92964824120603,eligible_descriptive_contrast,0.004562207989268467,7.0,-0.06063789951694714,0.05483765989920742
+unc30_pooled,AT2,50,HALLMARK_HYPOXIA,MIA,normal,4,True,0.92964824120603,eligible_descriptive_contrast,0.17853548608689773,2.0,0.10892055986423355,0.24778053523650043
+unc30_pooled,AT2,50,HALLMARK_HYPOXIA,LUAD,normal,23,True,0.92964824120603,eligible_descriptive_contrast,0.2461346916615643,21.0,0.22522983038188038,0.26476370398695265
+unc30_pooled,AT2,50,HALLMARK_HYPOXIA,LUAD,AAH,8,True,0.92964824120603,eligible_descriptive_contrast,0.2804899501168646,8.0,0.22733433723490823,0.3162887454617295
+unc30_pooled,AT2,50,HALLMARK_HYPOXIA,LUAD,AIS,12,True,0.92964824120603,eligible_descriptive_contrast,0.21896434490773475,10.0,0.17116329026086427,0.24990485571993337
+unc30_pooled,AT2,50,HALLMARK_HYPOXIA,LUAD,MIA,4,True,0.92964824120603,eligible_descriptive_contrast,0.14001040573779222,3.0,0.08238158582813959,0.2515623962502132
+unc30_pooled,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,AAH,normal,8,True,0.954314720812183,eligible_descriptive_contrast,-0.06492000807083737,1.0,-0.1298575414473584,-0.01760606913179132
+unc30_pooled,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,AIS,normal,12,True,0.954314720812183,eligible_descriptive_contrast,0.046344692940737474,7.0,-0.029586296535493647,0.10806784224250089
+unc30_pooled,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,MIA,normal,4,True,0.954314720812183,eligible_descriptive_contrast,0.33657168395476267,3.0,0.18904418892830352,0.4757332746066802
+unc30_pooled,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,normal,23,True,0.954314720812183,eligible_descriptive_contrast,0.39499895051956435,18.0,0.3494611830333895,0.4313551400615927
+unc30_pooled,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AAH,8,True,0.954314720812183,eligible_descriptive_contrast,0.5467141886313874,7.0,0.4418044532162185,0.6430969062445799
+unc30_pooled,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AIS,12,True,0.954314720812183,eligible_descriptive_contrast,0.25141747848590495,8.0,0.1919365672010727,0.2905971665805827
+unc30_pooled,AT2,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,MIA,4,True,0.954314720812183,eligible_descriptive_contrast,0.4158501684274847,4.0,0.3686275541660664,0.4793207418647463
+unc30_pooled,AT2,50,HALLMARK_P53_PATHWAY,AAH,normal,8,True,0.93,eligible_descriptive_contrast,0.07796557399798854,6.0,0.02795352755405554,0.12002152551819835
+unc30_pooled,AT2,50,HALLMARK_P53_PATHWAY,AIS,normal,12,True,0.93,eligible_descriptive_contrast,0.10079744205368413,10.0,0.08700166824407903,0.14035479080182273
+unc30_pooled,AT2,50,HALLMARK_P53_PATHWAY,MIA,normal,4,True,0.93,eligible_descriptive_contrast,0.32850647851755777,4.0,0.32130453056364683,0.33717909923282036
+unc30_pooled,AT2,50,HALLMARK_P53_PATHWAY,LUAD,normal,23,True,0.93,eligible_descriptive_contrast,0.2662088620281384,21.0,0.24828153734445335,0.28686165076772563
+unc30_pooled,AT2,50,HALLMARK_P53_PATHWAY,LUAD,AAH,8,True,0.93,eligible_descriptive_contrast,0.16446081408950397,7.0,0.11542452162427022,0.20451278353793448
+unc30_pooled,AT2,50,HALLMARK_P53_PATHWAY,LUAD,AIS,12,True,0.93,eligible_descriptive_contrast,0.17409793653309444,11.0,0.15668410557204213,0.1963289554621148
+unc30_pooled,AT2,50,HALLMARK_P53_PATHWAY,LUAD,MIA,4,True,0.93,eligible_descriptive_contrast,-0.038548444477667365,2.0,-0.09097364251504321,0.02433719747687017
+unc30_pooled,AT2,50,HPCS_author_top100,AAH,normal,8,True,0.78,eligible_descriptive_contrast,0.015009264505454922,3.0,-0.06962321855786145,0.08213443168731427
+unc30_pooled,AT2,50,HPCS_author_top100,AIS,normal,12,True,0.78,eligible_descriptive_contrast,0.10917392321217752,10.0,0.06284247088565552,0.1618671912098936
+unc30_pooled,AT2,50,HPCS_author_top100,MIA,normal,4,True,0.78,eligible_descriptive_contrast,0.270855792227345,3.0,0.16850813909316673,0.43626365272718
+unc30_pooled,AT2,50,HPCS_author_top100,LUAD,normal,23,True,0.78,eligible_descriptive_contrast,0.37743503355823643,18.0,0.3358488186253249,0.41245525074526995
+unc30_pooled,AT2,50,HPCS_author_top100,LUAD,AAH,8,True,0.78,eligible_descriptive_contrast,0.3763258469725825,7.0,0.29609707898858423,0.46221694426953713
+unc30_pooled,AT2,50,HPCS_author_top100,LUAD,AIS,12,True,0.78,eligible_descriptive_contrast,0.2852811382573374,10.0,0.23913128806220893,0.3364329921047572
+unc30_pooled,AT2,50,HPCS_author_top100,LUAD,MIA,4,True,0.78,eligible_descriptive_contrast,0.19363749619477266,3.0,0.14489141121598012,0.2698869758132503
+unc30_pooled,AT2,50,HPCS_excluding_operational_markers,AAH,normal,8,True,0.785714285714286,eligible_descriptive_contrast,0.029550778580163695,3.0,-0.056546262626408605,0.09400597648417712
+unc30_pooled,AT2,50,HPCS_excluding_operational_markers,AIS,normal,12,True,0.785714285714286,eligible_descriptive_contrast,0.10053469302439011,10.0,0.05006249328962738,0.1523208144703929
+unc30_pooled,AT2,50,HPCS_excluding_operational_markers,MIA,normal,4,True,0.785714285714286,eligible_descriptive_contrast,0.25706078310395253,3.0,0.15777983653613337,0.41368610254014
+unc30_pooled,AT2,50,HPCS_excluding_operational_markers,LUAD,normal,23,True,0.785714285714286,eligible_descriptive_contrast,0.3627395030111009,20.0,0.32073532637267005,0.3976554716613865
+unc30_pooled,AT2,50,HPCS_excluding_operational_markers,LUAD,AAH,8,True,0.785714285714286,eligible_descriptive_contrast,0.35113122887476617,7.0,0.26991203808695563,0.4392279094315528
+unc30_pooled,AT2,50,HPCS_excluding_operational_markers,LUAD,AIS,12,True,0.785714285714286,eligible_descriptive_contrast,0.2887856363199116,10.0,0.24263157884905723,0.34228275807625724
+unc30_pooled,AT2,50,HPCS_excluding_operational_markers,LUAD,MIA,4,True,0.785714285714286,eligible_descriptive_contrast,0.16596106963834245,3.0,0.11577602545026651,0.24006908493544335
+unc30_pooled,AT2,50,HPCS_without_ADI_or_operational_markers,AAH,normal,8,True,0.791208791208791,eligible_descriptive_contrast,0.010707609265077522,3.0,-0.07476395746341856,0.07105814962901137
+unc30_pooled,AT2,50,HPCS_without_ADI_or_operational_markers,AIS,normal,12,True,0.791208791208791,eligible_descriptive_contrast,0.07608979705579415,8.0,0.024692576392711798,0.12982361577158363
+unc30_pooled,AT2,50,HPCS_without_ADI_or_operational_markers,MIA,normal,4,True,0.791208791208791,eligible_descriptive_contrast,0.23975195522019221,3.0,0.129115479499793,0.4173488905719031
+unc30_pooled,AT2,50,HPCS_without_ADI_or_operational_markers,LUAD,normal,23,True,0.791208791208791,eligible_descriptive_contrast,0.35288828638221403,20.0,0.31008018632920376,0.38717530415884416
+unc30_pooled,AT2,50,HPCS_without_ADI_or_operational_markers,LUAD,AAH,8,True,0.791208791208791,eligible_descriptive_contrast,0.35802943049535385,7.0,0.2718692552577844,0.4437928943450329
+unc30_pooled,AT2,50,HPCS_without_ADI_or_operational_markers,LUAD,AIS,12,True,0.791208791208791,eligible_descriptive_contrast,0.30165718812220005,10.0,0.25411047636251455,0.3553334971143528
+unc30_pooled,AT2,50,HPCS_without_ADI_or_operational_markers,LUAD,MIA,4,True,0.791208791208791,eligible_descriptive_contrast,0.1935377136307701,3.0,0.15123656281603992,0.26390186703538693
+unc30_pooled,AT2,50,Han_ISR_source_symbols,AAH,normal,8,True,0.821705426356589,eligible_descriptive_contrast,0.09273004972172127,7.0,0.045014441352917246,0.14123440140174295
+unc30_pooled,AT2,50,Han_ISR_source_symbols,AIS,normal,12,True,0.821705426356589,eligible_descriptive_contrast,0.16608673792443338,9.0,0.12236592598130364,0.1959591427720073
+unc30_pooled,AT2,50,Han_ISR_source_symbols,MIA,normal,4,True,0.821705426356589,eligible_descriptive_contrast,0.4430697156885053,4.0,0.3963618398956103,0.4807057938734003
+unc30_pooled,AT2,50,Han_ISR_source_symbols,LUAD,normal,23,True,0.821705426356589,eligible_descriptive_contrast,0.4213027562046248,23.0,0.40562550354816956,0.4368377022687969
+unc30_pooled,AT2,50,Han_ISR_source_symbols,LUAD,AAH,8,True,0.821705426356589,eligible_descriptive_contrast,0.2990757548917762,8.0,0.25337237273250424,0.32720733662969853
+unc30_pooled,AT2,50,Han_ISR_source_symbols,LUAD,AIS,12,True,0.821705426356589,eligible_descriptive_contrast,0.2333573984894807,9.0,0.17876322319259896,0.2592252105120199
+unc30_pooled,AT2,50,Han_ISR_source_symbols,LUAD,MIA,4,True,0.821705426356589,eligible_descriptive_contrast,0.05804041452950215,3.0,0.019246621467729597,0.11541368848267641
+unc30_pooled,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,AAH,normal,8,True,0.847619047619048,eligible_descriptive_contrast,0.11919169452182243,7.0,0.0676051054934157,0.1619051000019757
+unc30_pooled,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,AIS,normal,12,True,0.847619047619048,eligible_descriptive_contrast,0.20269912434214163,10.0,0.15233654207063543,0.23327903078733456
+unc30_pooled,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,MIA,normal,4,True,0.847619047619048,eligible_descriptive_contrast,0.518334137712995,4.0,0.45107573730915673,0.5848675366305899
+unc30_pooled,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,normal,23,True,0.847619047619048,eligible_descriptive_contrast,0.48198217252037123,23.0,0.46094110905254765,0.49398059719126763
+unc30_pooled,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AAH,8,True,0.847619047619048,eligible_descriptive_contrast,0.32332308584842523,8.0,0.29272663334106447,0.3414923791186802
+unc30_pooled,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AIS,12,True,0.847619047619048,eligible_descriptive_contrast,0.24283415756593252,10.0,0.18773018182015822,0.26794740600880634
+unc30_pooled,AT2,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,MIA,4,True,0.847619047619048,eligible_descriptive_contrast,0.10703085018198233,3.0,0.06778239027998308,0.16939790263900653
+unc30_pooled,AT2 proliferating,50,ADI_published_holdout,AAH,normal,0,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2 proliferating,50,ADI_published_holdout,AIS,normal,0,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2 proliferating,50,ADI_published_holdout,MIA,normal,0,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2 proliferating,50,ADI_published_holdout,LUAD,normal,0,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2 proliferating,50,ADI_published_holdout,LUAD,AAH,0,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2 proliferating,50,ADI_published_holdout,LUAD,AIS,0,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2 proliferating,50,ADI_published_holdout,LUAD,MIA,0,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2 proliferating,50,AT1_published_holdout,AAH,normal,0,False,0.842105263157895,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,AT1_published_holdout,AIS,normal,0,False,0.842105263157895,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,AT1_published_holdout,MIA,normal,0,False,0.842105263157895,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,AT1_published_holdout,LUAD,normal,0,False,0.842105263157895,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,AT1_published_holdout,LUAD,AAH,0,False,0.842105263157895,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,AT1_published_holdout,LUAD,AIS,0,False,0.842105263157895,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,AT1_published_holdout,LUAD,MIA,0,False,0.842105263157895,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,AT2_published_holdout,AAH,normal,0,False,0.864321608040201,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,AT2_published_holdout,AIS,normal,0,False,0.864321608040201,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,AT2_published_holdout,MIA,normal,0,False,0.864321608040201,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,AT2_published_holdout,LUAD,normal,0,False,0.864321608040201,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,AT2_published_holdout,LUAD,AAH,0,False,0.864321608040201,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,AT2_published_holdout,LUAD,AIS,0,False,0.864321608040201,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,AT2_published_holdout,LUAD,MIA,0,False,0.864321608040201,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,DATP_PATS_holdout_panel,AAH,normal,0,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2 proliferating,50,DATP_PATS_holdout_panel,AIS,normal,0,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2 proliferating,50,DATP_PATS_holdout_panel,MIA,normal,0,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2 proliferating,50,DATP_PATS_holdout_panel,LUAD,normal,0,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2 proliferating,50,DATP_PATS_holdout_panel,LUAD,AAH,0,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2 proliferating,50,DATP_PATS_holdout_panel,LUAD,AIS,0,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2 proliferating,50,DATP_PATS_holdout_panel,LUAD,MIA,0,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_HYPOXIA,AAH,normal,0,False,0.92964824120603,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_HYPOXIA,AIS,normal,0,False,0.92964824120603,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_HYPOXIA,MIA,normal,0,False,0.92964824120603,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_HYPOXIA,LUAD,normal,0,False,0.92964824120603,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_HYPOXIA,LUAD,AAH,0,False,0.92964824120603,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_HYPOXIA,LUAD,AIS,0,False,0.92964824120603,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_HYPOXIA,LUAD,MIA,0,False,0.92964824120603,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_INFLAMMATORY_RESPONSE,AAH,normal,0,False,0.954314720812183,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_INFLAMMATORY_RESPONSE,AIS,normal,0,False,0.954314720812183,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_INFLAMMATORY_RESPONSE,MIA,normal,0,False,0.954314720812183,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,normal,0,False,0.954314720812183,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AAH,0,False,0.954314720812183,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AIS,0,False,0.954314720812183,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,MIA,0,False,0.954314720812183,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_P53_PATHWAY,AAH,normal,0,False,0.93,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_P53_PATHWAY,AIS,normal,0,False,0.93,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_P53_PATHWAY,MIA,normal,0,False,0.93,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_P53_PATHWAY,LUAD,normal,0,False,0.93,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_P53_PATHWAY,LUAD,AAH,0,False,0.93,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_P53_PATHWAY,LUAD,AIS,0,False,0.93,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HALLMARK_P53_PATHWAY,LUAD,MIA,0,False,0.93,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_author_top100,AAH,normal,0,False,0.78,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_author_top100,AIS,normal,0,False,0.78,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_author_top100,MIA,normal,0,False,0.78,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_author_top100,LUAD,normal,0,False,0.78,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_author_top100,LUAD,AAH,0,False,0.78,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_author_top100,LUAD,AIS,0,False,0.78,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_author_top100,LUAD,MIA,0,False,0.78,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_excluding_operational_markers,AAH,normal,0,False,0.785714285714286,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_excluding_operational_markers,AIS,normal,0,False,0.785714285714286,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_excluding_operational_markers,MIA,normal,0,False,0.785714285714286,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_excluding_operational_markers,LUAD,normal,0,False,0.785714285714286,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_excluding_operational_markers,LUAD,AAH,0,False,0.785714285714286,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_excluding_operational_markers,LUAD,AIS,0,False,0.785714285714286,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_excluding_operational_markers,LUAD,MIA,0,False,0.785714285714286,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_without_ADI_or_operational_markers,AAH,normal,0,False,0.791208791208791,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_without_ADI_or_operational_markers,AIS,normal,0,False,0.791208791208791,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_without_ADI_or_operational_markers,MIA,normal,0,False,0.791208791208791,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_without_ADI_or_operational_markers,LUAD,normal,0,False,0.791208791208791,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_without_ADI_or_operational_markers,LUAD,AAH,0,False,0.791208791208791,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_without_ADI_or_operational_markers,LUAD,AIS,0,False,0.791208791208791,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,HPCS_without_ADI_or_operational_markers,LUAD,MIA,0,False,0.791208791208791,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,Han_ISR_source_symbols,AAH,normal,0,False,0.821705426356589,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,Han_ISR_source_symbols,AIS,normal,0,False,0.821705426356589,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,Han_ISR_source_symbols,MIA,normal,0,False,0.821705426356589,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,Han_ISR_source_symbols,LUAD,normal,0,False,0.821705426356589,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,Han_ISR_source_symbols,LUAD,AAH,0,False,0.821705426356589,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,Han_ISR_source_symbols,LUAD,AIS,0,False,0.821705426356589,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,Han_ISR_source_symbols,LUAD,MIA,0,False,0.821705426356589,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,Han_ISR_without_HPCS_ADI_or_operational_markers,AAH,normal,0,False,0.847619047619048,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,Han_ISR_without_HPCS_ADI_or_operational_markers,AIS,normal,0,False,0.847619047619048,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,Han_ISR_without_HPCS_ADI_or_operational_markers,MIA,normal,0,False,0.847619047619048,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,normal,0,False,0.847619047619048,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AAH,0,False,0.847619047619048,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AIS,0,False,0.847619047619048,fewer_than_3_complete_patients,,,,
+unc30_pooled,AT2 proliferating,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,MIA,0,False,0.847619047619048,fewer_than_3_complete_patients,,,,
+unc30_pooled,__broad__,50,ADI_published_holdout,AAH,normal,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,__broad__,50,ADI_published_holdout,AIS,normal,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,__broad__,50,ADI_published_holdout,MIA,normal,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,__broad__,50,ADI_published_holdout,LUAD,normal,23,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,__broad__,50,ADI_published_holdout,LUAD,AAH,8,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,__broad__,50,ADI_published_holdout,LUAD,AIS,12,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,__broad__,50,ADI_published_holdout,LUAD,MIA,4,False,0.64070351758794,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,__broad__,50,AT1_published_holdout,AAH,normal,8,True,0.842105263157895,eligible_descriptive_contrast,0.08911436517007776,5.0,0.039704941699987346,0.121403098665116
+unc30_pooled,__broad__,50,AT1_published_holdout,AIS,normal,12,True,0.842105263157895,eligible_descriptive_contrast,0.04301185973933578,9.0,0.02011179790579726,0.08379908335253178
+unc30_pooled,__broad__,50,AT1_published_holdout,MIA,normal,4,True,0.842105263157895,eligible_descriptive_contrast,0.21055993867664236,4.0,0.18962343304132645,0.25025483022669653
+unc30_pooled,__broad__,50,AT1_published_holdout,LUAD,normal,23,True,0.842105263157895,eligible_descriptive_contrast,0.16148286915170346,17.0,0.14538284221190995,0.17618485252957905
+unc30_pooled,__broad__,50,AT1_published_holdout,LUAD,AAH,8,True,0.842105263157895,eligible_descriptive_contrast,0.09028545477149252,5.0,0.04735575694418147,0.13537705351417717
+unc30_pooled,__broad__,50,AT1_published_holdout,LUAD,AIS,12,True,0.842105263157895,eligible_descriptive_contrast,0.08462361485162329,8.0,0.049499143604569085,0.1003739084107972
+unc30_pooled,__broad__,50,AT1_published_holdout,LUAD,MIA,4,True,0.842105263157895,eligible_descriptive_contrast,-0.00037495676676013723,2.0,-0.04644967194528338,0.0428771946391997
+unc30_pooled,__broad__,50,AT2_published_holdout,AAH,normal,8,True,0.864321608040201,eligible_descriptive_contrast,0.04249835438423999,6.0,0.008642329296934268,0.06889631404339713
+unc30_pooled,__broad__,50,AT2_published_holdout,AIS,normal,12,True,0.864321608040201,eligible_descriptive_contrast,0.023670251860259024,8.0,0.0013603438162344196,0.05786668267700437
+unc30_pooled,__broad__,50,AT2_published_holdout,MIA,normal,4,True,0.864321608040201,eligible_descriptive_contrast,0.06739502970524258,3.0,0.046548784664866595,0.11519058975397023
+unc30_pooled,__broad__,50,AT2_published_holdout,LUAD,normal,23,True,0.864321608040201,eligible_descriptive_contrast,-0.026235294672801696,12.0,-0.03894378899044906,-0.000131413110761783
+unc30_pooled,__broad__,50,AT2_published_holdout,LUAD,AAH,8,True,0.864321608040201,eligible_descriptive_contrast,-0.06552308715707489,3.0,-0.11199584317684419,-0.023940101336297075
+unc30_pooled,__broad__,50,AT2_published_holdout,LUAD,AIS,12,True,0.864321608040201,eligible_descriptive_contrast,-0.035338329497586564,6.0,-0.07678276225206809,6.122863614642749e-05
+unc30_pooled,__broad__,50,AT2_published_holdout,LUAD,MIA,4,True,0.864321608040201,eligible_descriptive_contrast,-0.0915699797549574,0.0,-0.11031370915648342,-0.07389765419302978
+unc30_pooled,__broad__,50,DATP_PATS_holdout_panel,AAH,normal,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,__broad__,50,DATP_PATS_holdout_panel,AIS,normal,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,__broad__,50,DATP_PATS_holdout_panel,MIA,normal,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,__broad__,50,DATP_PATS_holdout_panel,LUAD,normal,23,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,__broad__,50,DATP_PATS_holdout_panel,LUAD,AAH,8,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,__broad__,50,DATP_PATS_holdout_panel,LUAD,AIS,12,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,__broad__,50,DATP_PATS_holdout_panel,LUAD,MIA,4,False,0.666666666666667,assayed_source_gene_fraction_below_0.7,,,,
+unc30_pooled,__broad__,50,HALLMARK_HYPOXIA,AAH,normal,8,True,0.92964824120603,eligible_descriptive_contrast,0.007751261396544973,4.0,-0.039820830265987074,0.06588174976389276
+unc30_pooled,__broad__,50,HALLMARK_HYPOXIA,AIS,normal,12,True,0.92964824120603,eligible_descriptive_contrast,0.006265713693275998,6.0,-0.06043790186419711,0.060872903017741044
+unc30_pooled,__broad__,50,HALLMARK_HYPOXIA,MIA,normal,4,True,0.92964824120603,eligible_descriptive_contrast,0.15269673199982747,2.0,0.0782346973249366,0.22427517325458668
+unc30_pooled,__broad__,50,HALLMARK_HYPOXIA,LUAD,normal,23,True,0.92964824120603,eligible_descriptive_contrast,0.23847466650219132,21.0,0.21836686553335777,0.25826793531532366
+unc30_pooled,__broad__,50,HALLMARK_HYPOXIA,LUAD,AAH,8,True,0.92964824120603,eligible_descriptive_contrast,0.26482673562365255,7.0,0.21021405213383446,0.30274922507681
+unc30_pooled,__broad__,50,HALLMARK_HYPOXIA,LUAD,AIS,12,True,0.92964824120603,eligible_descriptive_contrast,0.21360163992006576,10.0,0.16824381473658087,0.24352909045274904
+unc30_pooled,__broad__,50,HALLMARK_HYPOXIA,LUAD,MIA,4,True,0.92964824120603,eligible_descriptive_contrast,0.1470031876607225,3.0,0.09149043388239668,0.2515953011075632
+unc30_pooled,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,AAH,normal,8,True,0.954314720812183,eligible_descriptive_contrast,-0.05915952236319505,2.0,-0.11797194784760576,-0.007179472645815833
+unc30_pooled,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,AIS,normal,12,True,0.954314720812183,eligible_descriptive_contrast,0.03990275287594828,7.0,-0.038121189357317314,0.10516246964975542
+unc30_pooled,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,MIA,normal,4,True,0.954314720812183,eligible_descriptive_contrast,0.3097217880267249,3.0,0.1557578688043099,0.4509972056055198
+unc30_pooled,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,normal,23,True,0.954314720812183,eligible_descriptive_contrast,0.37799086916651486,17.0,0.33342270891002374,0.4143418228284297
+unc30_pooled,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AAH,8,True,0.954314720812183,eligible_descriptive_contrast,0.5258660922737748,7.0,0.41858442669679546,0.6252077414213869
+unc30_pooled,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,AIS,12,True,0.954314720812183,eligible_descriptive_contrast,0.24549586939691745,9.0,0.1866747876529845,0.2840969768986245
+unc30_pooled,__broad__,50,HALLMARK_INFLAMMATORY_RESPONSE,LUAD,MIA,4,True,0.954314720812183,eligible_descriptive_contrast,0.40994884396266007,4.0,0.36682723821305013,0.4669963803352067
+unc30_pooled,__broad__,50,HALLMARK_P53_PATHWAY,AAH,normal,8,True,0.93,eligible_descriptive_contrast,0.08840983290868254,6.0,0.042180596866370025,0.13597520987198145
+unc30_pooled,__broad__,50,HALLMARK_P53_PATHWAY,AIS,normal,12,True,0.93,eligible_descriptive_contrast,0.10120820157382567,9.0,0.08557322046480532,0.13983700144877345
+unc30_pooled,__broad__,50,HALLMARK_P53_PATHWAY,MIA,normal,4,True,0.93,eligible_descriptive_contrast,0.2983941577266298,4.0,0.2931454348552265,0.3016965510339231
+unc30_pooled,__broad__,50,HALLMARK_P53_PATHWAY,LUAD,normal,23,True,0.93,eligible_descriptive_contrast,0.26057268075061135,21.0,0.24268325514010733,0.28265808208376003
+unc30_pooled,__broad__,50,HALLMARK_P53_PATHWAY,LUAD,AAH,8,True,0.93,eligible_descriptive_contrast,0.15001461774002012,6.0,0.10105005208632013,0.1907434375837387
+unc30_pooled,__broad__,50,HALLMARK_P53_PATHWAY,LUAD,AIS,12,True,0.93,eligible_descriptive_contrast,0.17266193922782022,11.0,0.15684876225798927,0.1937426810856475
+unc30_pooled,__broad__,50,HALLMARK_P53_PATHWAY,LUAD,MIA,4,True,0.93,eligible_descriptive_contrast,-0.032144930003969785,2.0,-0.08286706807313315,0.02908666975418021
+unc30_pooled,__broad__,50,HPCS_author_top100,AAH,normal,8,True,0.78,eligible_descriptive_contrast,0.02041508347267984,3.0,-0.05700359684885153,0.09221937033275271
+unc30_pooled,__broad__,50,HPCS_author_top100,AIS,normal,12,True,0.78,eligible_descriptive_contrast,0.10957754806065245,9.0,0.061528767556259065,0.1641110170997899
+unc30_pooled,__broad__,50,HPCS_author_top100,MIA,normal,4,True,0.78,eligible_descriptive_contrast,0.2441940628659247,3.0,0.1366575306871797,0.41862238078011976
+unc30_pooled,__broad__,50,HPCS_author_top100,LUAD,normal,23,True,0.78,eligible_descriptive_contrast,0.370732958990297,18.0,0.33021343686061366,0.4070466103267378
+unc30_pooled,__broad__,50,HPCS_author_top100,LUAD,AAH,8,True,0.78,eligible_descriptive_contrast,0.36283347789309783,6.0,0.2813868448303332,0.44966820762574616
+unc30_pooled,__broad__,50,HPCS_author_top100,LUAD,AIS,12,True,0.78,eligible_descriptive_contrast,0.2834278308122851,10.0,0.24085335433862196,0.3339075673355947
+unc30_pooled,__broad__,50,HPCS_author_top100,LUAD,MIA,4,True,0.78,eligible_descriptive_contrast,0.19989704158478028,3.0,0.15287341294557688,0.27322506772964356
+unc30_pooled,__broad__,50,HPCS_excluding_operational_markers,AAH,normal,8,True,0.785714285714286,eligible_descriptive_contrast,0.0349704069765438,3.0,-0.04385288966181428,0.10409459381850152
+unc30_pooled,__broad__,50,HPCS_excluding_operational_markers,AIS,normal,12,True,0.785714285714286,eligible_descriptive_contrast,0.10091137134504742,9.0,0.04872083956476809,0.15683654904732175
+unc30_pooled,__broad__,50,HPCS_excluding_operational_markers,MIA,normal,4,True,0.785714285714286,eligible_descriptive_contrast,0.23014326942584473,3.0,0.12570965275188298,0.395675804434713
+unc30_pooled,__broad__,50,HPCS_excluding_operational_markers,LUAD,normal,23,True,0.785714285714286,eligible_descriptive_contrast,0.3557850764852118,19.0,0.31491224792479783,0.3919792532747064
+unc30_pooled,__broad__,50,HPCS_excluding_operational_markers,LUAD,AAH,8,True,0.785714285714286,eligible_descriptive_contrast,0.33721809997539737,7.0,0.25474379848226125,0.4264764053428028
+unc30_pooled,__broad__,50,HPCS_excluding_operational_markers,LUAD,AIS,12,True,0.785714285714286,eligible_descriptive_contrast,0.2868845845987275,10.0,0.24434587704902455,0.33970664717853
+unc30_pooled,__broad__,50,HPCS_excluding_operational_markers,LUAD,MIA,4,True,0.785714285714286,eligible_descriptive_contrast,0.1721557256737325,3.0,0.12366498193790676,0.24332530117008666
+unc30_pooled,__broad__,50,HPCS_without_ADI_or_operational_markers,AAH,normal,8,True,0.791208791208791,eligible_descriptive_contrast,0.016017429054487442,3.0,-0.062493362763745806,0.08100843405352709
+unc30_pooled,__broad__,50,HPCS_without_ADI_or_operational_markers,AIS,normal,12,True,0.791208791208791,eligible_descriptive_contrast,0.076392130959641,9.0,0.02328957818433838,0.13425025578362473
+unc30_pooled,__broad__,50,HPCS_without_ADI_or_operational_markers,MIA,normal,4,True,0.791208791208791,eligible_descriptive_contrast,0.21285494624541523,3.0,0.09696751938381694,0.39939210335411346
+unc30_pooled,__broad__,50,HPCS_without_ADI_or_operational_markers,LUAD,normal,23,True,0.791208791208791,eligible_descriptive_contrast,0.34600924658673,19.0,0.30414493401289994,0.3815541878734577
+unc30_pooled,__broad__,50,HPCS_without_ADI_or_operational_markers,LUAD,AAH,8,True,0.791208791208791,eligible_descriptive_contrast,0.3445912970179314,7.0,0.25722656898712726,0.43137291052403165
+unc30_pooled,__broad__,50,HPCS_without_ADI_or_operational_markers,LUAD,AIS,12,True,0.791208791208791,eligible_descriptive_contrast,0.299906111415649,10.0,0.25607994760069536,0.3529272787922071
+unc30_pooled,__broad__,50,HPCS_without_ADI_or_operational_markers,LUAD,MIA,4,True,0.791208791208791,eligible_descriptive_contrast,0.19921216613402493,3.0,0.1584413691040266,0.26661105328633994
+unc30_pooled,__broad__,50,Han_ISR_source_symbols,AAH,normal,8,True,0.821705426356589,eligible_descriptive_contrast,0.1047858893991277,7.0,0.059089646429375975,0.1588051265930702
+unc30_pooled,__broad__,50,Han_ISR_source_symbols,AIS,normal,12,True,0.821705426356589,eligible_descriptive_contrast,0.17033255902236846,9.0,0.12526144949929466,0.1959770625289874
+unc30_pooled,__broad__,50,Han_ISR_source_symbols,MIA,normal,4,True,0.821705426356589,eligible_descriptive_contrast,0.4182804637437325,4.0,0.3672161486315468,0.45822191837358667
+unc30_pooled,__broad__,50,Han_ISR_source_symbols,LUAD,normal,23,True,0.821705426356589,eligible_descriptive_contrast,0.42458203440032954,23.0,0.4081609386851904,0.4413593600991531
+unc30_pooled,__broad__,50,Han_ISR_source_symbols,LUAD,AAH,8,True,0.821705426356589,eligible_descriptive_contrast,0.2963072969577949,8.0,0.2509413414276885,0.32072168111969707
+unc30_pooled,__broad__,50,Han_ISR_source_symbols,LUAD,AIS,12,True,0.821705426356589,eligible_descriptive_contrast,0.23046787998860477,10.0,0.17800348927374154,0.2555257668458625
+unc30_pooled,__broad__,50,Han_ISR_source_symbols,LUAD,MIA,4,True,0.821705426356589,eligible_descriptive_contrast,0.0768185949819673,3.0,0.04381807545310649,0.1394866708638031
+unc30_pooled,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,AAH,normal,8,True,0.847619047619048,eligible_descriptive_contrast,0.13130440252609638,7.0,0.08176665300109587,0.17949687781753015
+unc30_pooled,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,AIS,normal,12,True,0.847619047619048,eligible_descriptive_contrast,0.20724096014559765,10.0,0.15560880932522744,0.23042148415925193
+unc30_pooled,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,MIA,normal,4,True,0.847619047619048,eligible_descriptive_contrast,0.49311930110393987,4.0,0.4210912353377599,0.5625673134593532
+unc30_pooled,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,normal,23,True,0.847619047619048,eligible_descriptive_contrast,0.48708576647971474,23.0,0.4666992094801732,0.5002458564480669
+unc30_pooled,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AAH,8,True,0.847619047619048,eligible_descriptive_contrast,0.3220563209926025,8.0,0.2924673370552514,0.34204436579157427
+unc30_pooled,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,AIS,12,True,0.847619047619048,eligible_descriptive_contrast,0.2408920091302399,11.0,0.18793367913279163,0.26527895507511895
+unc30_pooled,__broad__,50,Han_ISR_without_HPCS_ADI_or_operational_markers,LUAD,MIA,4,True,0.847619047619048,eligible_descriptive_contrast,0.12983312229129762,3.0,0.07864256303805355,0.19827562293665016

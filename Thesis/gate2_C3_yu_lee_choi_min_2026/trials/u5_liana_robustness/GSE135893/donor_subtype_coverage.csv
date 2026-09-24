@@ -1,0 +1,119 @@
+donor,disease,celltype,compartment,cells
+THD0001,control,AT2,epithelial,1219
+THD0001,control,Fibroblasts,fibroblast,4
+THD0001,control,Macrophages,myeloid,292
+THD0001,control,Myofibroblasts,fibroblast,2
+THD0001,control,PLIN2+ Fibroblasts,fibroblast,3
+THD0001,control,Proliferating Macrophages,myeloid,3
+THD0002,control,AT2,epithelial,1044
+THD0002,control,Fibroblasts,fibroblast,23
+THD0002,control,Macrophages,myeloid,748
+THD0002,control,Myofibroblasts,fibroblast,14
+THD0002,control,Proliferating Macrophages,myeloid,7
+THD0005,control,AT2,epithelial,30
+THD0005,control,Fibroblasts,fibroblast,1
+THD0005,control,Macrophages,myeloid,958
+THD0005,control,Myofibroblasts,fibroblast,11
+THD0005,control,PLIN2+ Fibroblasts,fibroblast,1
+THD0005,control,Proliferating Macrophages,myeloid,11
+TILD001,IPF,AT2,epithelial,2
+TILD001,IPF,Fibroblasts,fibroblast,7
+TILD001,IPF,HAS1 High Fibroblasts,fibroblast,179
+TILD001,IPF,Macrophages,myeloid,431
+TILD001,IPF,Myofibroblasts,fibroblast,53
+TILD001,IPF,PLIN2+ Fibroblasts,fibroblast,830
+TILD001,IPF,Proliferating Macrophages,myeloid,4
+TILD006,IPF,AT2,epithelial,36
+TILD006,IPF,Fibroblasts,fibroblast,40
+TILD006,IPF,Macrophages,myeloid,2122
+TILD006,IPF,Myofibroblasts,fibroblast,117
+TILD006,IPF,PLIN2+ Fibroblasts,fibroblast,4
+TILD006,IPF,Proliferating Macrophages,myeloid,78
+TILD010,IPF,AT2,epithelial,29
+TILD010,IPF,Fibroblasts,fibroblast,8
+TILD010,IPF,Macrophages,myeloid,741
+TILD010,IPF,Myofibroblasts,fibroblast,47
+TILD010,IPF,PLIN2+ Fibroblasts,fibroblast,2
+TILD010,IPF,Proliferating Macrophages,myeloid,33
+TILD015,IPF,AT2,epithelial,19
+TILD015,IPF,Fibroblasts,fibroblast,29
+TILD015,IPF,Macrophages,myeloid,2422
+TILD015,IPF,Myofibroblasts,fibroblast,94
+TILD015,IPF,PLIN2+ Fibroblasts,fibroblast,7
+TILD015,IPF,Proliferating Macrophages,myeloid,18
+TILD028,IPF,AT2,epithelial,61
+TILD028,IPF,Fibroblasts,fibroblast,13
+TILD028,IPF,Macrophages,myeloid,1799
+TILD028,IPF,Myofibroblasts,fibroblast,104
+TILD028,IPF,PLIN2+ Fibroblasts,fibroblast,27
+TILD028,IPF,Proliferating Macrophages,myeloid,25
+VUHD65,control,AT2,epithelial,328
+VUHD65,control,Fibroblasts,fibroblast,19
+VUHD65,control,Macrophages,myeloid,791
+VUHD65,control,Myofibroblasts,fibroblast,36
+VUHD65,control,PLIN2+ Fibroblasts,fibroblast,2
+VUHD65,control,Proliferating Macrophages,myeloid,39
+VUHD66,control,AT2,epithelial,504
+VUHD66,control,Fibroblasts,fibroblast,57
+VUHD66,control,Macrophages,myeloid,169
+VUHD66,control,Myofibroblasts,fibroblast,56
+VUHD66,control,Proliferating Macrophages,myeloid,11
+VUHD67,control,AT2,epithelial,1120
+VUHD67,control,Fibroblasts,fibroblast,22
+VUHD67,control,Macrophages,myeloid,2073
+VUHD67,control,Myofibroblasts,fibroblast,30
+VUHD67,control,Proliferating Macrophages,myeloid,9
+VUHD68,control,AT2,epithelial,42
+VUHD68,control,Fibroblasts,fibroblast,7
+VUHD68,control,Macrophages,myeloid,4492
+VUHD68,control,Myofibroblasts,fibroblast,41
+VUHD68,control,Proliferating Macrophages,myeloid,98
+VUHD69,control,AT2,epithelial,4
+VUHD69,control,Fibroblasts,fibroblast,2
+VUHD69,control,Macrophages,myeloid,20
+VUHD69,control,Myofibroblasts,fibroblast,5
+VUHD70,control,AT2,epithelial,4
+VUHD70,control,Fibroblasts,fibroblast,5
+VUHD70,control,Macrophages,myeloid,538
+VUHD70,control,Myofibroblasts,fibroblast,1
+VUHD70,control,Proliferating Macrophages,myeloid,11
+VUHD071,control,AT2,epithelial,98
+VUHD071,control,Macrophages,myeloid,1923
+VUHD071,control,Proliferating Macrophages,myeloid,11
+VUILD53,IPF,AT2,epithelial,109
+VUILD53,IPF,Fibroblasts,fibroblast,1
+VUILD53,IPF,Macrophages,myeloid,380
+VUILD53,IPF,Myofibroblasts,fibroblast,26
+VUILD53,IPF,PLIN2+ Fibroblasts,fibroblast,39
+VUILD53,IPF,Proliferating Macrophages,myeloid,9
+VUILD59,IPF,AT2,epithelial,1838
+VUILD59,IPF,Fibroblasts,fibroblast,38
+VUILD59,IPF,Macrophages,myeloid,5372
+VUILD59,IPF,Myofibroblasts,fibroblast,324
+VUILD59,IPF,PLIN2+ Fibroblasts,fibroblast,250
+VUILD59,IPF,Proliferating Macrophages,myeloid,497
+VUILD60,IPF,AT2,epithelial,137
+VUILD60,IPF,Fibroblasts,fibroblast,2
+VUILD60,IPF,Macrophages,myeloid,1011
+VUILD60,IPF,Myofibroblasts,fibroblast,10
+VUILD60,IPF,Proliferating Macrophages,myeloid,51
+VUILD61,IPF,AT2,epithelial,395
+VUILD61,IPF,Fibroblasts,fibroblast,11
+VUILD61,IPF,Macrophages,myeloid,971
+VUILD61,IPF,Myofibroblasts,fibroblast,20
+VUILD61,IPF,PLIN2+ Fibroblasts,fibroblast,8
+VUILD61,IPF,Proliferating Macrophages,myeloid,22
+VUILD63,IPF,AT2,epithelial,99
+VUILD63,IPF,Macrophages,myeloid,322
+VUILD63,IPF,Myofibroblasts,fibroblast,4
+VUILD63,IPF,Proliferating Macrophages,myeloid,24
+VUILD64,IPF,AT2,epithelial,428
+VUILD64,IPF,Fibroblasts,fibroblast,2
+VUILD64,IPF,Macrophages,myeloid,135
+VUILD64,IPF,Myofibroblasts,fibroblast,7
+VUILD64,IPF,Proliferating Macrophages,myeloid,6
+VUILD65,IPF,AT2,epithelial,72
+VUILD65,IPF,Fibroblasts,fibroblast,1
+VUILD65,IPF,Macrophages,myeloid,801
+VUILD65,IPF,Myofibroblasts,fibroblast,7
+VUILD65,IPF,Proliferating Macrophages,myeloid,46

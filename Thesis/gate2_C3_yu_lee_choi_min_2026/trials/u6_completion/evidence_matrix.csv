@@ -1,0 +1,8 @@
+Context,Completed measurement,Evidence at declared setting,Interpretation,Material limit,Report
+Direct mouse blockade,RNA niches measured,0 / 46 primary q<0.05,KAC endpoint unidentifiable,No KAC classifier; 3 controls / 2 treated at phenotype floor,trials/u4_mouse_niche/REPORT.md
+IPF: two cohorts,RNA niches / targets measured,No primary q<0.05,IL1B compatibility differs by cohort,Observational; complete triads sparse,trials/u5_ligand_targets/REPORT.md
+Human lesion cohort,Paired RNA niches / targets measured,0 / 279 primary q<0.05,Candidate atlas compartments,Much IL1B remains unassigned; no KAC classifier,trials/u5_human_niche/REPORT.md
+Human spatial companion,56 section maps / paired means,Descriptive whole-section values,Pathological regions unidentifiable,No independent ROI labels; shared RNA patients,trials/u5_spatial_context/REPORT.md
+Post-viral repair context,9 whole-sample RNA profiles,Descriptive; small biological n,Neighborhoods unidentifiable,No deposited coordinates; anti-CD8 in mice,trials/u5_spatial_context/REPORT.md
+Epithelial specificity,Source and reduced programs measured,Reduced HPCS also rises in repair/IPF,Increased score not neoplasia-specific,"Pooled wells, sparse pairs, coupled source labels",trials/u6_specificity/REPORT.md
+Han ISR source,129-symbol signature evaluated,24 / 24 technical-seed directions agree,Original expression arm conditional,No reusable original processed matrices found,trials/u6_isr_extension/REPORT.md

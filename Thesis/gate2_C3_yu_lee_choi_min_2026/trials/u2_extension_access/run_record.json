@@ -1,0 +1,219 @@
+{
+  "checked_utc": "2026-09-24T10:51:41.437871+00:00",
+  "status": "completed_access_audit",
+  "scope": "bounded HEAD requests and compressed text prefixes; not expression analysis",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracked_changes_present": false,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u2_extension_access.py",
+    "entrypoint_sha256": "297b90dee9eb59e14926486a6d3b81821db397168ca3064c7a1276c4e4f81749"
+  },
+  "files": [
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237901",
+      "title": [
+        "Normal lung tissue of patient 3 [snRNA-seq]"
+      ],
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237901/suppl/GSM9237901_P3_Normal.raw_counts.mtx.txt.gz",
+      "http_status": 200,
+      "bytes": 3441648,
+      "content_type": "application/x-gzip",
+      "compressed_prefix_sha256": "7d727fc4d99bfe37a1499a5bac9784600af64615e38c362974f319118f1bcd62",
+      "text_prefix": [
+        "AAACAAGCACCAGCTCACTTTAGG.1\tAAACAAGCACGTAGTAACTTTAGG.1\tAAACAAGCATCCTTGGACTTTAGG.1\tAAACCAATCGGTAAGTACTTTAGG.1\tAAACCGGTCATTTAGCACTTTAGG.1\tAAACGGGCAGCACCTCACTTTAGG.1\tAAACGGGCAGCCTATTACTTTAGG.1\tAAACGGGCATTGAACGACTTTAGG.1\tAAACGTTCAATCGTTCACTTTAGG.1\tAAACGTTCATATCGCTACTTTAGG.1\tAAACGTTCATTTGGCTACTTTAGG.1\tAAACTGGGTGTTTGCGACTTTAGG.1\tAAACTGTCAATAAGCTACTTTAGG.1\tAAAGATGCAACCGTAAACTTTAGG.1\tAAAGCATGTACGAATGACTTTAGG.1\tAAAGCATGTCGCAATTACTTTAGG.1\tAAAGCCTAGGTTCGAGACTTTAGG.1\tAAAGCGAAGGAAGCCCACTTTAGG.1\tAAAGGCAAGAACCTAAACTTTAGG.1\tAAAGGCTTCATGGAACACTTTAGG.1\tAAAGGCTTCTTAATGCACTTTAGG.1\tAAAGGGATCAAAGGCTACTTTAGG.1\tAAAGGGATCATGATGAACTTTAGG.1\tAAAGGGATCCCTCTCAACTTTAGG.1\tAAAGGGATCGCAAATAACTTTAGG.1\tAAAGGGATCGTCAATTACTTTAGG.",
+        "SAMD11\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2\t0\t0\t0\t0\t0\t0\t2\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t3\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t3\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t3\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0",
+        "NOC2L\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t",
+        "KLHL17\t0\t0\t0\t1\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0"
+      ],
+      "status": "accessible"
+    },
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237902",
+      "title": [
+        "Lung tissue with AIS of patient 3 [snRNA-seq]"
+      ],
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237902/suppl/GSM9237902_P3_AIS.raw_counts.mtx.txt.gz",
+      "http_status": 200,
+      "bytes": 7642884,
+      "content_type": "application/x-gzip",
+      "compressed_prefix_sha256": "c12a87201d61e05d61824a902655988608e5cd1cadb67e0262a7c6869960c2c3",
+      "text_prefix": [
+        "AAACAAGCAAAGCCTAAACGGGAA.1\tAAACAAGCACTTTATGAACGGGAA.1\tAAACAAGCAGAAAGGTAACGGGAA.1\tAAACGGGCAAGAAATGAACGGGAA.1\tAAACGTTCAACAGCTAAACGGGAA.1\tAAACGTTCATACCTTAAACGGGAA.1\tAAACGTTCATCTATGCAACGGGAA.1\tAAACTGGGTACTGCCAAACGGGAA.1\tAAACTGGGTGTTTGTAAACGGGAA.1\tAAACTGTCAACAGCACAACGGGAA.1\tAAAGATGCAATCAAGTAACGGGAA.1\tAAAGATGCACATTCGTAACGGGAA.1\tAAAGATGCATGGCTTTAACGGGAA.1\tAAAGCATGTAACGTGAAACGGGAA.1\tAAAGCATGTATTACCAAACGGGAA.1\tAAAGCATGTGGATGCGAACGGGAA.1\tAAAGCATGTGTGTTACAACGGGAA.1\tAAAGCATGTTGAATCCAACGGGAA.1\tAAAGCATGTTGGCCACAACGGGAA.1\tAAAGCCTAGGTTCGAGAACGGGAA.1\tAAAGCGAAGGAGCCGTAACGGGAA.1\tAAAGCGAAGGTCAAACAACGGGAA.1\tAAAGCGAAGTCATAAGAACGGGAA.1\tAAAGGCAAGAGGAGGTAACGGGAA.1\tAAAGGCAAGCACGTTCAACGGGAA.1\tAAAGGCAAGCAGCCAAAACGGGAA.",
+        "SAMD11\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t3\t0\t0\t0\t0\t0\t0\t0\t0\t2\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t6\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t3\t0\t0\t0\t0\t0\t0\t0\t2\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2\t0\t0\t0\t0\t0\t0\t0\t0\t0",
+        "NOC2L\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t1\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t2\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t1\t1\t0\t0\t0\t1\t1\t0\t1\t1\t0\t0\t0\t0\t0\t2\t2\t0\t1\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t2\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t1\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t5\t0\t1\t0\t2\t0\t0\t0\t0\t1\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t",
+        "KLHL17\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t2\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0"
+      ],
+      "status": "accessible"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226168",
+      "title": [
+        "Lung tissue with AAH of patient 1 [ST]"
+      ],
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226168/suppl/GSM9226168_P1_AAH.tar.gz",
+      "http_status": 200,
+      "bytes": 138021514,
+      "content_type": "application/x-gzip",
+      "status": "accessible"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226169",
+      "title": [
+        "Lung tissue with LUAD of patient 1 [ST]"
+      ],
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226169/suppl/GSM9226169_P1_LUAD.tar.gz",
+      "http_status": 200,
+      "bytes": 105855699,
+      "content_type": "application/x-gzip",
+      "status": "accessible"
+    },
+    {
+      "series": "GSE267226",
+      "gsm": "GSM8262701",
+      "title": [
+        "COVID1"
+      ],
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262701/suppl/GSM8262701_21-035_S5_filtered_feature_bc_matrix.h5",
+      "http_status": 200,
+      "bytes": 24399686,
+      "content_type": null,
+      "status": "accessible"
+    },
+    {
+      "series": "GSE267226",
+      "gsm": "GSM8262701",
+      "title": [
+        "COVID1"
+      ],
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262701/suppl/GSM8262701_21-035_tissue_hires_image.png.gz",
+      "http_status": 200,
+      "bytes": 5534104,
+      "content_type": "application/x-gzip",
+      "status": "accessible"
+    },
+    {
+      "series": "GSE267226",
+      "gsm": "GSM8262702",
+      "title": [
+        "COVID2"
+      ],
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262702/suppl/GSM8262702_BB-22001_S3_filtered_feature_bc_matrix.h5",
+      "http_status": 200,
+      "bytes": 21718912,
+      "content_type": null,
+      "status": "accessible"
+    },
+    {
+      "series": "GSE267226",
+      "gsm": "GSM8262702",
+      "title": [
+        "COVID2"
+      ],
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262702/suppl/GSM8262702_BB-22001_tissue_hires_image.png.gz",
+      "http_status": 200,
+      "bytes": 5857206,
+      "content_type": "application/x-gzip",
+      "status": "accessible"
+    },
+    {
+      "series": "GSE267228",
+      "gsm": "GSM8262712",
+      "title": [
+        "S1A_IgG1"
+      ],
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262712/suppl/GSM8262712_6433-HN-S1-A-GEX_TCAGAACT-GTGGACTG_filtered_feature_bc_matrix.h5",
+      "http_status": 200,
+      "bytes": 12417691,
+      "content_type": null,
+      "status": "accessible"
+    },
+    {
+      "series": "GSE267228",
+      "gsm": "GSM8262712",
+      "title": [
+        "S1A_IgG1"
+      ],
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262712/suppl/GSM8262712_S1A_tissue_hires_image.png.gz",
+      "http_status": 200,
+      "bytes": 3085380,
+      "content_type": "application/x-gzip",
+      "status": "accessible"
+    },
+    {
+      "series": "GSE267228",
+      "gsm": "GSM8262713",
+      "title": [
+        "S2A_IgG2"
+      ],
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262713/suppl/GSM8262713_6433-HN-S2-A-GEX_CGCGCCAA-CCTTGGAT_filtered_feature_bc_matrix.h5",
+      "http_status": 200,
+      "bytes": 6036344,
+      "content_type": null,
+      "status": "accessible"
+    },
+    {
+      "series": "GSE267228",
+      "gsm": "GSM8262713",
+      "title": [
+        "S2A_IgG2"
+      ],
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262713/suppl/GSM8262713_S2A_tissue_hires_image.png.gz",
+      "http_status": 200,
+      "bytes": 3041982,
+      "content_type": "application/x-gzip",
+      "status": "accessible"
+    },
+    {
+      "series": "GSE277777",
+      "gsm": "GSM8529524",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 2 weeks of tracing, GEX"
+      ],
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529524/suppl/GSM8529524_IGO14143-filtered_feature_bc_matrix_10k.h5",
+      "http_status": 200,
+      "bytes": 54207045,
+      "content_type": null,
+      "status": "accessible"
+    },
+    {
+      "series": "GSE277777",
+      "gsm": "GSM8529524",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 2 weeks of tracing, GEX"
+      ],
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529524/suppl/GSM8529524_IGO14143-slc4a11-traced.h5ad",
+      "http_status": 200,
+      "bytes": 182424090,
+      "content_type": null,
+      "status": "accessible"
+    },
+    {
+      "series": "GSE277777",
+      "gsm": "GSM8529524",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 2 weeks of tracing, GEX"
+      ],
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529524/suppl/GSM8529524_IGO14143.featureref.csv.gz",
+      "http_status": 200,
+      "bytes": 271,
+      "content_type": "application/x-gzip",
+      "status": "accessible"
+    },
+    {
+      "series": "GSE277777",
+      "gsm": "GSM8529525",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 2 weeks of tracing, HTO"
+      ],
+      "url": "NONE",
+      "status": "failed",
+      "error": "unknown url type: 'NONE'"
+    }
+  ]
+}

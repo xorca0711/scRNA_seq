@@ -1,0 +1,20 @@
+cohort,unit,unit_type,genotype,stage,injury,independence,n_input,n_depth,n_retained,retained_fraction,median_UMI
+GSE247130,P9_control,pooled_library,control,P9,uninjured,"pooled well, not replicated animals; new HPCS scoring, original ES1 files unchanged",12186,11795,11062.0,0.9077630067290333,8724.0
+GSE247130,P9_Cebpa_mutant,pooled_library,Cebpa_mutant,P9,uninjured,"pooled well, not replicated animals; new HPCS scoring, original ES1 files unchanged",11272,11005,10670.0,0.9465933286018453,10242.5
+GSE247130,7wk_control,pooled_library,control,7wk,uninjured,"pooled well, not replicated animals; new HPCS scoring, original ES1 files unchanged",7589,7095,6894.0,0.9084200816971933,6433.0
+GSE247130,7wk_Cebpa_mutant,pooled_library,Cebpa_mutant,7wk,uninjured,"pooled well, not replicated animals; new HPCS scoring, original ES1 files unchanged",10838,9942,9804.0,0.9045949437165529,6504.0
+GSE247130,SeV_control,pooled_library,control,adult_14dpi,SeV,"pooled well, not replicated animals; new HPCS scoring, original ES1 files unchanged",11773,9398,8575.0,0.7283615051388771,3985.0
+GSE247130,SeV_Cebpa_mutant,pooled_library,Cebpa_mutant,adult_14dpi,SeV,"pooled well, not replicated animals; new HPCS scoring, original ES1 files unchanged",10636,9373,8924.0,0.8390372320421211,5805.0
+GSE310539,wildtype_PBS,pooled_library,wildtype,adult,uninjured,"pooled well, not replicated animals; new HPCS scoring, original ES1 files unchanged",7340,5855,5756.0,0.7841961852861036,4705.5
+GSE310539,wildtype_SeV,pooled_library,wildtype,adult,SeV,"pooled well, not replicated animals; new HPCS scoring, original ES1 files unchanged",8093,6612,4721.0,0.5833436302977882,6253.0
+GSE310539,AP1mut_PBS,pooled_library,AP1mut,adult,uninjured,"pooled well, not replicated animals; new HPCS scoring, original ES1 files unchanged",13622,8903,8861.0,0.6504918514168258,2953.0
+GSE310539,AP1mut_SeV,pooled_library,AP1mut,adult,SeV,"pooled well, not replicated animals; new HPCS scoring, original ES1 files unchanged",10794,8389,7888.0,0.7307763572355012,4206.5
+GSE277777,AV1975,source_identifier_at_most_two_animals,KP_Slc4a11_MCD_Hipp11_reporter,16wk_2wk_trace,neoplastic_sorted,multiple sorting gates share source identifier; author state/signature not independent validation,1263,1263,,,
+GSE277777,AV1980,source_identifier_at_most_two_animals,KP_Slc4a11_MCD_Hipp11_reporter,16wk_2wk_trace,neoplastic_sorted,multiple sorting gates share source identifier; author state/signature not independent validation,2040,2040,,,
+GSE300288,GSM9057709,retained_mouse_library,NNK_model,3mo_post_NNK,Control IgG,"source-verified mouse library; independent broad annotation, KAC not assigned",394,288,,,
+GSE300288,GSM9057712,retained_mouse_library,NNK_model,3mo_post_NNK,Control IgG,"source-verified mouse library; independent broad annotation, KAC not assigned",66,52,,,
+GSE300288,GSM9057713,retained_mouse_library,NNK_model,3mo_post_NNK,anti-IL-1β,"source-verified mouse library; independent broad annotation, KAC not assigned",154,139,,,
+GSE300288,GSM9057716,retained_mouse_library,NNK_model,3mo_post_NNK,Control IgG,"source-verified mouse library; independent broad annotation, KAC not assigned",211,180,,,
+GSE300288,GSM9057717,retained_mouse_library,NNK_model,3mo_post_NNK,anti-IL-1β,"source-verified mouse library; independent broad annotation, KAC not assigned",74,61,,,
+GSE300288,GSM9057720,retained_mouse_library,NNK_model,3mo_post_NNK,Control IgG,"source-verified mouse library; independent broad annotation, KAC not assigned",353,295,,,
+GSE300288,GSM9057721,retained_mouse_library,NNK_model,3mo_post_NNK,anti-IL-1β,"source-verified mouse library; independent broad annotation, KAC not assigned",374,221,,,

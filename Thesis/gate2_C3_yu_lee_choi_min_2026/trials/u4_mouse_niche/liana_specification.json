@@ -1,0 +1,82 @@
+{
+  "frozen_utc": "2026-09-24T11:50:11.403692+00:00",
+  "configs": [
+    {
+      "name": "all_cells_primary",
+      "floor": 50,
+      "expr": 0.1,
+      "cap": null,
+      "seed": 20260924
+    },
+    {
+      "name": "cap500_seed1",
+      "floor": 50,
+      "expr": 0.1,
+      "cap": 500,
+      "seed": 20260924
+    },
+    {
+      "name": "cap500_seed2",
+      "floor": 50,
+      "expr": 0.1,
+      "cap": 500,
+      "seed": 20260925
+    },
+    {
+      "name": "floor30",
+      "floor": 30,
+      "expr": 0.1,
+      "cap": null,
+      "seed": 20260924
+    },
+    {
+      "name": "floor100",
+      "floor": 100,
+      "expr": 0.1,
+      "cap": null,
+      "seed": 20260924
+    },
+    {
+      "name": "expression005",
+      "floor": 50,
+      "expr": 0.05,
+      "cap": null,
+      "seed": 20260924
+    },
+    {
+      "name": "expression020",
+      "floor": 50,
+      "expr": 0.2,
+      "cap": null,
+      "seed": 20260924
+    }
+  ],
+  "species": "Mus musculus",
+  "source_annotation": "independent broad-lineage review; myeloid is not macrophage-only; alveolar is not AT2/KAC",
+  "method": "native LIANA CellChat-like, n_perms=None",
+  "directions": [
+    [
+      "epithelial",
+      "fibroblast"
+    ],
+    [
+      "fibroblast",
+      "epithelial"
+    ],
+    [
+      "fibroblast",
+      "myeloid"
+    ],
+    [
+      "myeloid",
+      "epithelial"
+    ],
+    [
+      "myeloid",
+      "fibroblast"
+    ]
+  ],
+  "resource_sha256": "d0e622f71a4591e6e59ec06adcd7530a89aa3444a40e7c3f12e7f0951ee2986d",
+  "input_annotation_sha256": "7b4a1807ba538290e85f53d087ee61028a8e43281cf968d33b9ffc21f5ac57ed",
+  "inference": "within-sample descriptive magnitude only, no cell-level P values"
+}

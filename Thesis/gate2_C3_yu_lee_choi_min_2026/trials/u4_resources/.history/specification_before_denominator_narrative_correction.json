@@ -1,0 +1,21 @@
+{
+  "frozen_utc": "2026-09-24T11:43:53.853068+00:00",
+  "scope": "early treatment niche analysis with independent broad-lineage annotations; does not substitute for KAC phenotype",
+  "orthology": "HCOP >=3 supporting resources; strictly unique human and mouse symbols; every complex subunit must map",
+  "pathways": "same declared families, version 2024.1.Mm; broad myeloid/alveolar labels replace unsupported macrophage/AT2 specificity explicitly",
+  "inputs": {
+    "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u4_resources\\human_mouse_hcop_fifteen_column.txt.gz": "0cfb78e4eb273751e0557e8230445a60e844bfaf958e32740d4a266fb41cdb35",
+    "raw_data\\msigdb\\mh.all.v2024.1.Mm.symbols.gmt": "e5aa9acd833179d1d571b48bf91a28fb387722ce68ff53094d05847659d66460",
+    "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u4_resources\\m2.cp.reactome.v2024.1.Mm.symbols.gmt": "1f2468bd00ce3a3290aa60d0dda14fe8d46be49dd4a6752d9d3bafc2df60e4b9",
+    "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u3_lineage_annotation\\frozen_cluster_annotations.csv": "d4ecab6d1fa69ca4510567db6c016a87431a590784a3da4edf7902cd7fbfcb97"
+  },
+  "statistical_scope": "early endpoint association and descriptive LR; later treatment-history unresolved; primary epithelial fraction independently fails >=100-alveolar-cell floor in one control, leaving only two controls",
+  "minimum_units_per_arm": 3,
+  "niche_floors": [
+    30,
+    50,
+    100
+  ],
+  "primary_floor": 50,
+  "pathway_multiplicity": "BH over all evaluable early-endpoint sets and subtype views; additional sensitivity reserves equally many unobserved late-endpoint tests at P=1; no claim to completed two-endpoint primary family"
+}

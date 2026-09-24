@@ -1,0 +1,389 @@
+config,donor,disease,source,target
+all_cells_primary,THD0001,control,Macrophages,AT2
+all_cells_primary,THD0002,control,Macrophages,AT2
+all_cells_primary,TILD001,IPF,HAS1 High Fibroblasts,Macrophages
+all_cells_primary,TILD001,IPF,Macrophages,HAS1 High Fibroblasts
+all_cells_primary,TILD001,IPF,Macrophages,Myofibroblasts
+all_cells_primary,TILD001,IPF,Macrophages,PLIN2+ Fibroblasts
+all_cells_primary,TILD001,IPF,Myofibroblasts,Macrophages
+all_cells_primary,TILD001,IPF,PLIN2+ Fibroblasts,Macrophages
+all_cells_primary,TILD006,IPF,Macrophages,Myofibroblasts
+all_cells_primary,TILD006,IPF,Myofibroblasts,Macrophages
+all_cells_primary,TILD006,IPF,Myofibroblasts,Proliferating Macrophages
+all_cells_primary,TILD006,IPF,Proliferating Macrophages,Myofibroblasts
+all_cells_primary,TILD015,IPF,Macrophages,Myofibroblasts
+all_cells_primary,TILD015,IPF,Myofibroblasts,Macrophages
+all_cells_primary,TILD028,IPF,AT2,Myofibroblasts
+all_cells_primary,TILD028,IPF,Macrophages,AT2
+all_cells_primary,TILD028,IPF,Macrophages,Myofibroblasts
+all_cells_primary,TILD028,IPF,Myofibroblasts,AT2
+all_cells_primary,TILD028,IPF,Myofibroblasts,Macrophages
+all_cells_primary,VUHD65,control,Macrophages,AT2
+all_cells_primary,VUHD66,control,AT2,Fibroblasts
+all_cells_primary,VUHD66,control,AT2,Myofibroblasts
+all_cells_primary,VUHD66,control,Fibroblasts,AT2
+all_cells_primary,VUHD66,control,Fibroblasts,Macrophages
+all_cells_primary,VUHD66,control,Macrophages,AT2
+all_cells_primary,VUHD66,control,Macrophages,Fibroblasts
+all_cells_primary,VUHD66,control,Macrophages,Myofibroblasts
+all_cells_primary,VUHD66,control,Myofibroblasts,AT2
+all_cells_primary,VUHD66,control,Myofibroblasts,Macrophages
+all_cells_primary,VUHD67,control,Macrophages,AT2
+all_cells_primary,VUHD071,control,Macrophages,AT2
+all_cells_primary,VUILD53,IPF,Macrophages,AT2
+all_cells_primary,VUILD59,IPF,AT2,Myofibroblasts
+all_cells_primary,VUILD59,IPF,AT2,PLIN2+ Fibroblasts
+all_cells_primary,VUILD59,IPF,Macrophages,AT2
+all_cells_primary,VUILD59,IPF,Macrophages,Myofibroblasts
+all_cells_primary,VUILD59,IPF,Macrophages,PLIN2+ Fibroblasts
+all_cells_primary,VUILD59,IPF,Myofibroblasts,AT2
+all_cells_primary,VUILD59,IPF,Myofibroblasts,Macrophages
+all_cells_primary,VUILD59,IPF,Myofibroblasts,Proliferating Macrophages
+all_cells_primary,VUILD59,IPF,PLIN2+ Fibroblasts,AT2
+all_cells_primary,VUILD59,IPF,PLIN2+ Fibroblasts,Macrophages
+all_cells_primary,VUILD59,IPF,PLIN2+ Fibroblasts,Proliferating Macrophages
+all_cells_primary,VUILD59,IPF,Proliferating Macrophages,AT2
+all_cells_primary,VUILD59,IPF,Proliferating Macrophages,Myofibroblasts
+all_cells_primary,VUILD59,IPF,Proliferating Macrophages,PLIN2+ Fibroblasts
+all_cells_primary,VUILD60,IPF,Macrophages,AT2
+all_cells_primary,VUILD60,IPF,Proliferating Macrophages,AT2
+all_cells_primary,VUILD61,IPF,Macrophages,AT2
+all_cells_primary,VUILD63,IPF,Macrophages,AT2
+all_cells_primary,VUILD64,IPF,Macrophages,AT2
+all_cells_primary,VUILD65,IPF,Macrophages,AT2
+cap500_seed1,THD0001,control,Macrophages,AT2
+cap500_seed1,THD0002,control,Macrophages,AT2
+cap500_seed1,TILD001,IPF,HAS1 High Fibroblasts,Macrophages
+cap500_seed1,TILD001,IPF,Macrophages,HAS1 High Fibroblasts
+cap500_seed1,TILD001,IPF,Macrophages,Myofibroblasts
+cap500_seed1,TILD001,IPF,Macrophages,PLIN2+ Fibroblasts
+cap500_seed1,TILD001,IPF,Myofibroblasts,Macrophages
+cap500_seed1,TILD001,IPF,PLIN2+ Fibroblasts,Macrophages
+cap500_seed1,TILD006,IPF,Macrophages,Myofibroblasts
+cap500_seed1,TILD006,IPF,Myofibroblasts,Macrophages
+cap500_seed1,TILD006,IPF,Myofibroblasts,Proliferating Macrophages
+cap500_seed1,TILD006,IPF,Proliferating Macrophages,Myofibroblasts
+cap500_seed1,TILD015,IPF,Macrophages,Myofibroblasts
+cap500_seed1,TILD015,IPF,Myofibroblasts,Macrophages
+cap500_seed1,TILD028,IPF,AT2,Myofibroblasts
+cap500_seed1,TILD028,IPF,Macrophages,AT2
+cap500_seed1,TILD028,IPF,Macrophages,Myofibroblasts
+cap500_seed1,TILD028,IPF,Myofibroblasts,AT2
+cap500_seed1,TILD028,IPF,Myofibroblasts,Macrophages
+cap500_seed1,VUHD65,control,Macrophages,AT2
+cap500_seed1,VUHD66,control,AT2,Fibroblasts
+cap500_seed1,VUHD66,control,AT2,Myofibroblasts
+cap500_seed1,VUHD66,control,Fibroblasts,AT2
+cap500_seed1,VUHD66,control,Fibroblasts,Macrophages
+cap500_seed1,VUHD66,control,Macrophages,AT2
+cap500_seed1,VUHD66,control,Macrophages,Fibroblasts
+cap500_seed1,VUHD66,control,Macrophages,Myofibroblasts
+cap500_seed1,VUHD66,control,Myofibroblasts,AT2
+cap500_seed1,VUHD66,control,Myofibroblasts,Macrophages
+cap500_seed1,VUHD67,control,Macrophages,AT2
+cap500_seed1,VUHD071,control,Macrophages,AT2
+cap500_seed1,VUILD53,IPF,Macrophages,AT2
+cap500_seed1,VUILD59,IPF,AT2,Myofibroblasts
+cap500_seed1,VUILD59,IPF,AT2,PLIN2+ Fibroblasts
+cap500_seed1,VUILD59,IPF,Macrophages,AT2
+cap500_seed1,VUILD59,IPF,Macrophages,Myofibroblasts
+cap500_seed1,VUILD59,IPF,Macrophages,PLIN2+ Fibroblasts
+cap500_seed1,VUILD59,IPF,Myofibroblasts,AT2
+cap500_seed1,VUILD59,IPF,Myofibroblasts,Macrophages
+cap500_seed1,VUILD59,IPF,Myofibroblasts,Proliferating Macrophages
+cap500_seed1,VUILD59,IPF,PLIN2+ Fibroblasts,AT2
+cap500_seed1,VUILD59,IPF,PLIN2+ Fibroblasts,Macrophages
+cap500_seed1,VUILD59,IPF,PLIN2+ Fibroblasts,Proliferating Macrophages
+cap500_seed1,VUILD59,IPF,Proliferating Macrophages,AT2
+cap500_seed1,VUILD59,IPF,Proliferating Macrophages,Myofibroblasts
+cap500_seed1,VUILD59,IPF,Proliferating Macrophages,PLIN2+ Fibroblasts
+cap500_seed1,VUILD60,IPF,Macrophages,AT2
+cap500_seed1,VUILD60,IPF,Proliferating Macrophages,AT2
+cap500_seed1,VUILD61,IPF,Macrophages,AT2
+cap500_seed1,VUILD63,IPF,Macrophages,AT2
+cap500_seed1,VUILD64,IPF,Macrophages,AT2
+cap500_seed1,VUILD65,IPF,Macrophages,AT2
+cap500_seed2,THD0001,control,Macrophages,AT2
+cap500_seed2,THD0002,control,Macrophages,AT2
+cap500_seed2,TILD001,IPF,HAS1 High Fibroblasts,Macrophages
+cap500_seed2,TILD001,IPF,Macrophages,HAS1 High Fibroblasts
+cap500_seed2,TILD001,IPF,Macrophages,Myofibroblasts
+cap500_seed2,TILD001,IPF,Macrophages,PLIN2+ Fibroblasts
+cap500_seed2,TILD001,IPF,Myofibroblasts,Macrophages
+cap500_seed2,TILD001,IPF,PLIN2+ Fibroblasts,Macrophages
+cap500_seed2,TILD006,IPF,Macrophages,Myofibroblasts
+cap500_seed2,TILD006,IPF,Myofibroblasts,Macrophages
+cap500_seed2,TILD006,IPF,Myofibroblasts,Proliferating Macrophages
+cap500_seed2,TILD006,IPF,Proliferating Macrophages,Myofibroblasts
+cap500_seed2,TILD015,IPF,Macrophages,Myofibroblasts
+cap500_seed2,TILD015,IPF,Myofibroblasts,Macrophages
+cap500_seed2,TILD028,IPF,AT2,Myofibroblasts
+cap500_seed2,TILD028,IPF,Macrophages,AT2
+cap500_seed2,TILD028,IPF,Macrophages,Myofibroblasts
+cap500_seed2,TILD028,IPF,Myofibroblasts,AT2
+cap500_seed2,TILD028,IPF,Myofibroblasts,Macrophages
+cap500_seed2,VUHD65,control,Macrophages,AT2
+cap500_seed2,VUHD66,control,AT2,Fibroblasts
+cap500_seed2,VUHD66,control,AT2,Myofibroblasts
+cap500_seed2,VUHD66,control,Fibroblasts,AT2
+cap500_seed2,VUHD66,control,Fibroblasts,Macrophages
+cap500_seed2,VUHD66,control,Macrophages,AT2
+cap500_seed2,VUHD66,control,Macrophages,Fibroblasts
+cap500_seed2,VUHD66,control,Macrophages,Myofibroblasts
+cap500_seed2,VUHD66,control,Myofibroblasts,AT2
+cap500_seed2,VUHD66,control,Myofibroblasts,Macrophages
+cap500_seed2,VUHD67,control,Macrophages,AT2
+cap500_seed2,VUHD071,control,Macrophages,AT2
+cap500_seed2,VUILD53,IPF,Macrophages,AT2
+cap500_seed2,VUILD59,IPF,AT2,Myofibroblasts
+cap500_seed2,VUILD59,IPF,AT2,PLIN2+ Fibroblasts
+cap500_seed2,VUILD59,IPF,Macrophages,AT2
+cap500_seed2,VUILD59,IPF,Macrophages,Myofibroblasts
+cap500_seed2,VUILD59,IPF,Macrophages,PLIN2+ Fibroblasts
+cap500_seed2,VUILD59,IPF,Myofibroblasts,AT2
+cap500_seed2,VUILD59,IPF,Myofibroblasts,Macrophages
+cap500_seed2,VUILD59,IPF,Myofibroblasts,Proliferating Macrophages
+cap500_seed2,VUILD59,IPF,PLIN2+ Fibroblasts,AT2
+cap500_seed2,VUILD59,IPF,PLIN2+ Fibroblasts,Macrophages
+cap500_seed2,VUILD59,IPF,PLIN2+ Fibroblasts,Proliferating Macrophages
+cap500_seed2,VUILD59,IPF,Proliferating Macrophages,AT2
+cap500_seed2,VUILD59,IPF,Proliferating Macrophages,Myofibroblasts
+cap500_seed2,VUILD59,IPF,Proliferating Macrophages,PLIN2+ Fibroblasts
+cap500_seed2,VUILD60,IPF,Macrophages,AT2
+cap500_seed2,VUILD60,IPF,Proliferating Macrophages,AT2
+cap500_seed2,VUILD61,IPF,Macrophages,AT2
+cap500_seed2,VUILD63,IPF,Macrophages,AT2
+cap500_seed2,VUILD64,IPF,Macrophages,AT2
+cap500_seed2,VUILD65,IPF,Macrophages,AT2
+floor30,THD0001,control,Macrophages,AT2
+floor30,THD0002,control,Macrophages,AT2
+floor30,THD0005,control,Macrophages,AT2
+floor30,TILD001,IPF,HAS1 High Fibroblasts,Macrophages
+floor30,TILD001,IPF,Macrophages,HAS1 High Fibroblasts
+floor30,TILD001,IPF,Macrophages,Myofibroblasts
+floor30,TILD001,IPF,Macrophages,PLIN2+ Fibroblasts
+floor30,TILD001,IPF,Myofibroblasts,Macrophages
+floor30,TILD001,IPF,PLIN2+ Fibroblasts,Macrophages
+floor30,TILD006,IPF,AT2,Fibroblasts
+floor30,TILD006,IPF,AT2,Myofibroblasts
+floor30,TILD006,IPF,Fibroblasts,AT2
+floor30,TILD006,IPF,Fibroblasts,Macrophages
+floor30,TILD006,IPF,Fibroblasts,Proliferating Macrophages
+floor30,TILD006,IPF,Macrophages,AT2
+floor30,TILD006,IPF,Macrophages,Fibroblasts
+floor30,TILD006,IPF,Macrophages,Myofibroblasts
+floor30,TILD006,IPF,Myofibroblasts,AT2
+floor30,TILD006,IPF,Myofibroblasts,Macrophages
+floor30,TILD006,IPF,Myofibroblasts,Proliferating Macrophages
+floor30,TILD006,IPF,Proliferating Macrophages,AT2
+floor30,TILD006,IPF,Proliferating Macrophages,Fibroblasts
+floor30,TILD006,IPF,Proliferating Macrophages,Myofibroblasts
+floor30,TILD010,IPF,Macrophages,Myofibroblasts
+floor30,TILD010,IPF,Myofibroblasts,Macrophages
+floor30,TILD010,IPF,Myofibroblasts,Proliferating Macrophages
+floor30,TILD010,IPF,Proliferating Macrophages,Myofibroblasts
+floor30,TILD015,IPF,Macrophages,Myofibroblasts
+floor30,TILD015,IPF,Myofibroblasts,Macrophages
+floor30,TILD028,IPF,AT2,Myofibroblasts
+floor30,TILD028,IPF,Macrophages,AT2
+floor30,TILD028,IPF,Macrophages,Myofibroblasts
+floor30,TILD028,IPF,Myofibroblasts,AT2
+floor30,TILD028,IPF,Myofibroblasts,Macrophages
+floor30,VUHD65,control,AT2,Myofibroblasts
+floor30,VUHD65,control,Macrophages,AT2
+floor30,VUHD65,control,Macrophages,Myofibroblasts
+floor30,VUHD65,control,Myofibroblasts,AT2
+floor30,VUHD65,control,Myofibroblasts,Macrophages
+floor30,VUHD65,control,Myofibroblasts,Proliferating Macrophages
+floor30,VUHD65,control,Proliferating Macrophages,AT2
+floor30,VUHD65,control,Proliferating Macrophages,Myofibroblasts
+floor30,VUHD66,control,AT2,Fibroblasts
+floor30,VUHD66,control,AT2,Myofibroblasts
+floor30,VUHD66,control,Fibroblasts,AT2
+floor30,VUHD66,control,Fibroblasts,Macrophages
+floor30,VUHD66,control,Macrophages,AT2
+floor30,VUHD66,control,Macrophages,Fibroblasts
+floor30,VUHD66,control,Macrophages,Myofibroblasts
+floor30,VUHD66,control,Myofibroblasts,AT2
+floor30,VUHD66,control,Myofibroblasts,Macrophages
+floor30,VUHD67,control,AT2,Myofibroblasts
+floor30,VUHD67,control,Macrophages,AT2
+floor30,VUHD67,control,Macrophages,Myofibroblasts
+floor30,VUHD67,control,Myofibroblasts,AT2
+floor30,VUHD67,control,Myofibroblasts,Macrophages
+floor30,VUHD68,control,AT2,Myofibroblasts
+floor30,VUHD68,control,Macrophages,AT2
+floor30,VUHD68,control,Macrophages,Myofibroblasts
+floor30,VUHD68,control,Myofibroblasts,AT2
+floor30,VUHD68,control,Myofibroblasts,Macrophages
+floor30,VUHD68,control,Myofibroblasts,Proliferating Macrophages
+floor30,VUHD68,control,Proliferating Macrophages,AT2
+floor30,VUHD68,control,Proliferating Macrophages,Myofibroblasts
+floor30,VUHD071,control,Macrophages,AT2
+floor30,VUILD53,IPF,AT2,PLIN2+ Fibroblasts
+floor30,VUILD53,IPF,Macrophages,AT2
+floor30,VUILD53,IPF,Macrophages,PLIN2+ Fibroblasts
+floor30,VUILD53,IPF,PLIN2+ Fibroblasts,AT2
+floor30,VUILD53,IPF,PLIN2+ Fibroblasts,Macrophages
+floor30,VUILD59,IPF,AT2,Fibroblasts
+floor30,VUILD59,IPF,AT2,Myofibroblasts
+floor30,VUILD59,IPF,AT2,PLIN2+ Fibroblasts
+floor30,VUILD59,IPF,Fibroblasts,AT2
+floor30,VUILD59,IPF,Fibroblasts,Macrophages
+floor30,VUILD59,IPF,Fibroblasts,Proliferating Macrophages
+floor30,VUILD59,IPF,Macrophages,AT2
+floor30,VUILD59,IPF,Macrophages,Fibroblasts
+floor30,VUILD59,IPF,Macrophages,Myofibroblasts
+floor30,VUILD59,IPF,Macrophages,PLIN2+ Fibroblasts
+floor30,VUILD59,IPF,Myofibroblasts,AT2
+floor30,VUILD59,IPF,Myofibroblasts,Macrophages
+floor30,VUILD59,IPF,Myofibroblasts,Proliferating Macrophages
+floor30,VUILD59,IPF,PLIN2+ Fibroblasts,AT2
+floor30,VUILD59,IPF,PLIN2+ Fibroblasts,Macrophages
+floor30,VUILD59,IPF,PLIN2+ Fibroblasts,Proliferating Macrophages
+floor30,VUILD59,IPF,Proliferating Macrophages,AT2
+floor30,VUILD59,IPF,Proliferating Macrophages,Fibroblasts
+floor30,VUILD59,IPF,Proliferating Macrophages,Myofibroblasts
+floor30,VUILD59,IPF,Proliferating Macrophages,PLIN2+ Fibroblasts
+floor30,VUILD60,IPF,Macrophages,AT2
+floor30,VUILD60,IPF,Proliferating Macrophages,AT2
+floor30,VUILD61,IPF,Macrophages,AT2
+floor30,VUILD63,IPF,Macrophages,AT2
+floor30,VUILD64,IPF,Macrophages,AT2
+floor30,VUILD65,IPF,Macrophages,AT2
+floor30,VUILD65,IPF,Proliferating Macrophages,AT2
+floor100,THD0001,control,Macrophages,AT2
+floor100,THD0002,control,Macrophages,AT2
+floor100,TILD001,IPF,HAS1 High Fibroblasts,Macrophages
+floor100,TILD001,IPF,Macrophages,HAS1 High Fibroblasts
+floor100,TILD001,IPF,Macrophages,PLIN2+ Fibroblasts
+floor100,TILD001,IPF,PLIN2+ Fibroblasts,Macrophages
+floor100,TILD006,IPF,Macrophages,Myofibroblasts
+floor100,TILD006,IPF,Myofibroblasts,Macrophages
+floor100,TILD028,IPF,Macrophages,Myofibroblasts
+floor100,TILD028,IPF,Myofibroblasts,Macrophages
+floor100,VUHD65,control,Macrophages,AT2
+floor100,VUHD66,control,Macrophages,AT2
+floor100,VUHD67,control,Macrophages,AT2
+floor100,VUILD53,IPF,Macrophages,AT2
+floor100,VUILD59,IPF,AT2,Myofibroblasts
+floor100,VUILD59,IPF,AT2,PLIN2+ Fibroblasts
+floor100,VUILD59,IPF,Macrophages,AT2
+floor100,VUILD59,IPF,Macrophages,Myofibroblasts
+floor100,VUILD59,IPF,Macrophages,PLIN2+ Fibroblasts
+floor100,VUILD59,IPF,Myofibroblasts,AT2
+floor100,VUILD59,IPF,Myofibroblasts,Macrophages
+floor100,VUILD59,IPF,Myofibroblasts,Proliferating Macrophages
+floor100,VUILD59,IPF,PLIN2+ Fibroblasts,AT2
+floor100,VUILD59,IPF,PLIN2+ Fibroblasts,Macrophages
+floor100,VUILD59,IPF,PLIN2+ Fibroblasts,Proliferating Macrophages
+floor100,VUILD59,IPF,Proliferating Macrophages,AT2
+floor100,VUILD59,IPF,Proliferating Macrophages,Myofibroblasts
+floor100,VUILD59,IPF,Proliferating Macrophages,PLIN2+ Fibroblasts
+floor100,VUILD60,IPF,Macrophages,AT2
+floor100,VUILD61,IPF,Macrophages,AT2
+floor100,VUILD64,IPF,Macrophages,AT2
+expression005,THD0001,control,Macrophages,AT2
+expression005,THD0002,control,Macrophages,AT2
+expression005,TILD001,IPF,HAS1 High Fibroblasts,Macrophages
+expression005,TILD001,IPF,Macrophages,HAS1 High Fibroblasts
+expression005,TILD001,IPF,Macrophages,Myofibroblasts
+expression005,TILD001,IPF,Macrophages,PLIN2+ Fibroblasts
+expression005,TILD001,IPF,Myofibroblasts,Macrophages
+expression005,TILD001,IPF,PLIN2+ Fibroblasts,Macrophages
+expression005,TILD006,IPF,Macrophages,Myofibroblasts
+expression005,TILD006,IPF,Myofibroblasts,Macrophages
+expression005,TILD006,IPF,Myofibroblasts,Proliferating Macrophages
+expression005,TILD006,IPF,Proliferating Macrophages,Myofibroblasts
+expression005,TILD015,IPF,Macrophages,Myofibroblasts
+expression005,TILD015,IPF,Myofibroblasts,Macrophages
+expression005,TILD028,IPF,AT2,Myofibroblasts
+expression005,TILD028,IPF,Macrophages,AT2
+expression005,TILD028,IPF,Macrophages,Myofibroblasts
+expression005,TILD028,IPF,Myofibroblasts,AT2
+expression005,TILD028,IPF,Myofibroblasts,Macrophages
+expression005,VUHD65,control,Macrophages,AT2
+expression005,VUHD66,control,AT2,Fibroblasts
+expression005,VUHD66,control,AT2,Myofibroblasts
+expression005,VUHD66,control,Fibroblasts,AT2
+expression005,VUHD66,control,Fibroblasts,Macrophages
+expression005,VUHD66,control,Macrophages,AT2
+expression005,VUHD66,control,Macrophages,Fibroblasts
+expression005,VUHD66,control,Macrophages,Myofibroblasts
+expression005,VUHD66,control,Myofibroblasts,AT2
+expression005,VUHD66,control,Myofibroblasts,Macrophages
+expression005,VUHD67,control,Macrophages,AT2
+expression005,VUHD071,control,Macrophages,AT2
+expression005,VUILD53,IPF,Macrophages,AT2
+expression005,VUILD59,IPF,AT2,Myofibroblasts
+expression005,VUILD59,IPF,AT2,PLIN2+ Fibroblasts
+expression005,VUILD59,IPF,Macrophages,AT2
+expression005,VUILD59,IPF,Macrophages,Myofibroblasts
+expression005,VUILD59,IPF,Macrophages,PLIN2+ Fibroblasts
+expression005,VUILD59,IPF,Myofibroblasts,AT2
+expression005,VUILD59,IPF,Myofibroblasts,Macrophages
+expression005,VUILD59,IPF,Myofibroblasts,Proliferating Macrophages
+expression005,VUILD59,IPF,PLIN2+ Fibroblasts,AT2
+expression005,VUILD59,IPF,PLIN2+ Fibroblasts,Macrophages
+expression005,VUILD59,IPF,PLIN2+ Fibroblasts,Proliferating Macrophages
+expression005,VUILD59,IPF,Proliferating Macrophages,AT2
+expression005,VUILD59,IPF,Proliferating Macrophages,Myofibroblasts
+expression005,VUILD59,IPF,Proliferating Macrophages,PLIN2+ Fibroblasts
+expression005,VUILD60,IPF,Macrophages,AT2
+expression005,VUILD60,IPF,Proliferating Macrophages,AT2
+expression005,VUILD61,IPF,Macrophages,AT2
+expression005,VUILD63,IPF,Macrophages,AT2
+expression005,VUILD64,IPF,Macrophages,AT2
+expression005,VUILD65,IPF,Macrophages,AT2
+expression020,THD0001,control,Macrophages,AT2
+expression020,THD0002,control,Macrophages,AT2
+expression020,TILD001,IPF,HAS1 High Fibroblasts,Macrophages
+expression020,TILD001,IPF,Macrophages,HAS1 High Fibroblasts
+expression020,TILD001,IPF,Macrophages,Myofibroblasts
+expression020,TILD001,IPF,Macrophages,PLIN2+ Fibroblasts
+expression020,TILD001,IPF,Myofibroblasts,Macrophages
+expression020,TILD001,IPF,PLIN2+ Fibroblasts,Macrophages
+expression020,TILD006,IPF,Macrophages,Myofibroblasts
+expression020,TILD006,IPF,Myofibroblasts,Macrophages
+expression020,TILD006,IPF,Myofibroblasts,Proliferating Macrophages
+expression020,TILD006,IPF,Proliferating Macrophages,Myofibroblasts
+expression020,TILD015,IPF,Macrophages,Myofibroblasts
+expression020,TILD015,IPF,Myofibroblasts,Macrophages
+expression020,TILD028,IPF,AT2,Myofibroblasts
+expression020,TILD028,IPF,Macrophages,AT2
+expression020,TILD028,IPF,Macrophages,Myofibroblasts
+expression020,TILD028,IPF,Myofibroblasts,AT2
+expression020,TILD028,IPF,Myofibroblasts,Macrophages
+expression020,VUHD65,control,Macrophages,AT2
+expression020,VUHD66,control,AT2,Fibroblasts
+expression020,VUHD66,control,AT2,Myofibroblasts
+expression020,VUHD66,control,Fibroblasts,AT2
+expression020,VUHD66,control,Fibroblasts,Macrophages
+expression020,VUHD66,control,Macrophages,AT2
+expression020,VUHD66,control,Macrophages,Fibroblasts
+expression020,VUHD66,control,Macrophages,Myofibroblasts
+expression020,VUHD66,control,Myofibroblasts,AT2
+expression020,VUHD66,control,Myofibroblasts,Macrophages
+expression020,VUHD67,control,Macrophages,AT2
+expression020,VUHD071,control,Macrophages,AT2
+expression020,VUILD53,IPF,Macrophages,AT2
+expression020,VUILD59,IPF,AT2,Myofibroblasts
+expression020,VUILD59,IPF,AT2,PLIN2+ Fibroblasts
+expression020,VUILD59,IPF,Macrophages,AT2
+expression020,VUILD59,IPF,Macrophages,Myofibroblasts
+expression020,VUILD59,IPF,Macrophages,PLIN2+ Fibroblasts
+expression020,VUILD59,IPF,Myofibroblasts,AT2
+expression020,VUILD59,IPF,Myofibroblasts,Macrophages
+expression020,VUILD59,IPF,Myofibroblasts,Proliferating Macrophages
+expression020,VUILD59,IPF,PLIN2+ Fibroblasts,AT2
+expression020,VUILD59,IPF,PLIN2+ Fibroblasts,Macrophages
+expression020,VUILD59,IPF,PLIN2+ Fibroblasts,Proliferating Macrophages
+expression020,VUILD59,IPF,Proliferating Macrophages,AT2
+expression020,VUILD59,IPF,Proliferating Macrophages,Myofibroblasts
+expression020,VUILD59,IPF,Proliferating Macrophages,PLIN2+ Fibroblasts
+expression020,VUILD60,IPF,Macrophages,AT2
+expression020,VUILD60,IPF,Proliferating Macrophages,AT2
+expression020,VUILD61,IPF,Macrophages,AT2
+expression020,VUILD63,IPF,Macrophages,AT2
+expression020,VUILD64,IPF,Macrophages,AT2
+expression020,VUILD65,IPF,Macrophages,AT2

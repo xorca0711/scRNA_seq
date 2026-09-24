@@ -1,0 +1,34 @@
+cluster,compartment,label,rationale
+0,myeloid,CSF1R_myeloid,Lyz2/Tyrobp/Csf1r; insufficient evidence for macrophage-only identity
+1,myeloid,CSF1R_myeloid,"Csf1r/Lyz2/Cd68; C1q and Mertk low, monocyte/macrophage unresolved"
+2,other,APC_ambiguous,MHCII-rich; DC/macrophage distinction unresolved
+3,unassigned,mixed_lineage,MHCII/airway/stromal and immunoglobulin mixture
+4,myeloid,inflammatory_CSF1R_CSF3R_myeloid,Strong Csf1r and Csf3r; preserve as distinct inflammatory myeloid subtype
+5,other,pDC_candidate,Bst2/Siglech/Tcf4
+6,myeloid,macrophage_candidate,C1qa/C1qb/Mertk with Lyz2; only 19 cells overall
+7,fibroblast,fibroblast_Gsn,Pdgfra/Col1a1/Dcn; Gsn/Bgn/Mgp
+8,other,T_cell,Cd3d/Cd3e/Il7r
+9,other,T_cell,Cd3d/Cd3e/Thy1
+10,other,T_cell,Cd3e/Il7r
+11,other,B_cell,Cd79a/Cd79b/Igkc
+12,other,NK_cell,Ncr1/Prf1/Nkg7
+13,other,cytotoxic_T_cell,Cd3e/Nkg7/Ccl5
+14,fibroblast,fibroblast_Itga8,Pdgfra/Col1a1/Dcn; Itga8/Npnt/C7
+15,other,neutrophil,Csf3r/Retnlg/S100a8/S100a9
+16,other,inflammatory_granulocyte_candidate,"Csf3r high, Csf1r low; Il1b/Cxcl2/Ccl3"
+17,other,basophil_mast_candidate,Gata2/Hdc; lineage ambiguous
+18,unassigned,mixed_myeloid_B,Lyz2/Tyrobp plus Cd79a/MHCII
+19,endothelial,vascular_endothelial,Ptprb/Plvap/Cdh5
+20,alveolar,mixed_AT2_AT1_alveolar,Sftpc/Sftpa1/Abca3 together with Ager/Hopx; no KAC or DATP assignment
+21,airway,secretory_airway,Scgb1a1/Cbr2/Wfdc2
+22,other,smooth_muscle,Acta2/Tagln/Myh11; not assigned as myofibroblast
+23,alveolar,AT1_like,"Ager/Hopx/Pdpn/Aqp5; cell identity only, no lineage-fate claim"
+24,other,mesothelial_stromal_ambiguous,Dcn/C3/Upk3b; not forced into fibroblast
+25,endothelial,capillary_endothelial,Car4/Cldn5/Kdr/Cdh5
+26,fibroblast,fibroblast_Pi16,Pdgfra/Col1a1/Dcn plus Pi16/Clec3b
+27,other,mural_pericyte,Pdgfrb/Gucy1a1/Cox4i2
+28,unassigned,mixed_fibroblast_myeloid,Pdgfra/Col1a1 together with Csf3r/S100a8/S100a9
+29,other,plasma_cell,Jchain/Mzb1/Igha
+30,airway,neuroendocrine_candidate,Calca/Resp18/Pcsk1/Krt18
+31,other,cardiac_muscle,Myh6/Tnnt2/Tnni3/Actc1
+32,unassigned,mixed_airway_cytotoxic,Scgb1a1 with Ccl5/Gzma/Prf1; 11 cells from one library

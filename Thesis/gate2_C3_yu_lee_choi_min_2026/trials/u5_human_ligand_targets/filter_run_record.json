@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "96696b14289b3069242554a45fe0f13195df901179ff4f17577bee5624704017",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_filter_human_ligand_targets.py",
+    "entrypoint_sha256": "a01465409821c6d1bfebddd41f797f669895b4e786a86ca21b7ae10889f46080"
+  },
+  "started_utc": "2026-09-24T14:22:42.364135+00:00",
+  "target_rule": ">=10 mapped q<.05 DE targets, up/down separately; paired patient design and full patient-omission refits",
+  "expression_rule": "same case-histology patient, fixed source label and receiver >=50 cells and every complex subunit >=10% detection, >=3 supporting patients; omission support rechecked",
+  "score": "official unsigned prior Pearson statistic, descriptive ranks; down-target fit not causal inhibition",
+  "primary_candidate_rows": 943,
+  "ranking_rows_with_omissions": 11039,
+  "assay_genes": 18082,
+  "assay_source": "all assayed genes in exact patient/histology pseudobulks, not the targeted LR panel",
+  "updated_utc": "2026-09-24T14:23:22.117874+00:00"
+}

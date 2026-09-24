@@ -1,0 +1,10 @@
+{
+  "status": "candidate_review_tables_ready",
+  "cells": 58779,
+  "confident_primary": 34299,
+  "full_series_libraries": 75,
+  "full_series_patients": 23,
+  "filename_title_disagreements": 0,
+  "pathology_limit": "deposited histology labels; independent section-level ROI masks not supplied",
+  "decision": "manual marker review still required before releasing final human subtype annotations"
+}

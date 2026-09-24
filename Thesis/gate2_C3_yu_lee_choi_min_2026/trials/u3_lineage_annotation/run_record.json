@@ -1,0 +1,18 @@
+{
+  "status": "completed_broad_lineage_inputs_KAC_unresolved",
+  "pid": 24640,
+  "started_utc": "2026-09-24T11:41:19.822742+00:00",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "192d4f600e86d182b8d5babdf6a1fa1568bd1fe1f1b8a1bd2876bd6f4d35d744",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u3_lineage_inputs.py",
+    "entrypoint_sha256": "456c9ad271615aaddd53e5e8df21d2a18051ef0e49d544af193a8777a704e142"
+  },
+  "cells": 28243,
+  "genes": 31017,
+  "pseudobulk_units": 197,
+  "elapsed_seconds": 24.7,
+  "updated_utc": "2026-09-24T11:41:44.851880+00:00"
+}
