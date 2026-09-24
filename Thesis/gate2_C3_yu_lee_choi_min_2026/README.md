@@ -26,6 +26,7 @@ the first batch; it is not the current whole-run status.
 | Artifact | Purpose |
 |---|---|
 | [Completed evidence review](EVIDENCE_REVIEW.md) | Cross-context findings and limits for interpretation review |
+| [Derived research questions and proposed figures](DERIVED_RESEARCH_QUESTIONS.md) | Post-analysis RQs with UMAP, PCA, violin, enrichment and niche-panel plans; existing results versus new computations/evidence |
 | [Evaluation rules](EVALUATION_RULES.md) | Distinguish null, undercovered, unidentifiable and unmeasured questions |
 | [Reproducibility](REPRODUCIBILITY.md) | Runtime, stage dependencies, provenance and preserved corrections |
 | [Analysis pipeline plan](ANALYSIS_TRIAL_PLAN.md) | Research questions, estimands, stages, controls, decision gates and outputs |
@@ -86,6 +87,10 @@ primary studies, including situations that could contradict the unified model.
 The [gallery plan](FIGURE_GALLERY_PLAN.md) orders figures by the research
 questions. Only generated, checked figures are embedded below; planned
 figures remain listed with their analysis dependencies.
+
+The [derived-RQ figure proposal](DERIVED_RESEARCH_QUESTIONS.md) adds a proposed
+D0-D4 sequence grounded in the completed findings. These new panels have not
+been run or added to the released gallery.
 
 | Figure group | Current gallery status |
 |---|---|

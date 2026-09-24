@@ -1,9 +1,9 @@
 {
   "status": "passed",
-  "checked_utc": "2026-09-24T14:31:48.926565+00:00",
+  "checked_utc": "2026-09-24T14:47:45.698861+00:00",
   "code": {
-    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
-    "tracked_diff_sha256": "30e81e035e4f786b4f33349fb995e93582264179a408b6d091ebabfc91c27091",
+    "commit": "fc8e19cc401d62373cde087636ff0bb93861540b",
+    "tracked_diff_sha256": "5fb57280cd093f575bd50e3d3041e4227bb12a9fe2f94166701a473e19432c73",
     "tracked_changes_present": true,
     "untracked_files_present": true,
     "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u6_validate_release.py",
@@ -75,7 +75,7 @@
   "legacy_png_only_figures": [
     "ipf_pathway_primary_and_sensitivity.png"
   ],
-  "release_files": 534,
-  "release_bytes": 55058269,
-  "manifest_sha256": "3d5c2285f04199f7efe50297d60ecad82df27b811305ccf0396747e3181d2e91"
+  "release_files": 535,
+  "release_bytes": 55076590,
+  "manifest_sha256": "3f827d68711fd5107435206a6ad93eba13b97f0b45f7f49f37965b4469270009"
 }
