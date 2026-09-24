@@ -105,3 +105,6 @@ Thesis/**/reference/
 
 # scvi-tools query model written by trial S2, regenerable
 Thesis/**/query_model/
+
+# Regenerable shared research-question diagnostics
+analysis/figures/rq/il1b_context/cache/

@@ -4,7 +4,7 @@ The record of the repository's first two series, an independent Python and
 scanpy reanalysis of a mouse injury time course and a human distal-lung
 reference, built from the deposited raw count matrices with no use of the
 authors' processed objects. It is kept as written in August and September
-2026. The thirteen further deposits opened since are read under
+2026. Further deposits opened since are read under
 [`Thesis/`](Thesis/README.md), and the science across all of them is
 organised by question in [`RESEARCH_QUESTIONS.md`](RESEARCH_QUESTIONS.md).
 The working question this file moves toward is: **which epithelial and immune-state
@@ -13,6 +13,13 @@ after injury?** The Stage 0 question, asked first and answered in August 2026,
 was narrower: can the published biology be recovered from the raw data by an
 independent pipeline, and where it cannot, why not. Later stages build on the
 Stage 0 answer rather than repeating it.
+
+**Current extensions (25 September 2026):** the completed
+[IL-1 context evidence review](Thesis/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md)
+and the shared [A11–A14 questions and figures](RESEARCH_QUESTIONS.md#a11-shared-plasticity-versus-neoplasia-associated-context)
+cover macrophage/fibroblast recipient context, epithelial programme specificity
+and the remaining causal questions. This file's original two-series results
+below are a historical analysis record, not the current whole-repository scope.
 
 | Dataset | Species | Design | Cells analysed | Source paper |
 |---|---|---|---|---|

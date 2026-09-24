@@ -211,3 +211,13 @@ Each dataset directory contains:
 The large raw inputs and processed objects are intentionally excluded from
 Git. Figures, compact tables, decision logs, and generated reports are tracked
 so the scientific claims remain auditable without recomputing the analysis.
+
+## Shared research-question figures
+
+[Questions A1–A14](RESEARCH_QUESTIONS.md) are the canonical register. Scripts
+16 and 18 produce the earlier shared figures; scripts 19–21 prepare, render
+and validate the IL-1 context package. See its
+[methods, commands and preserved provenance](analysis/figures/rq/il1b_context/REPORT.md).
+Rendering uses tracked tables. Full preparation and input-hash validation
+require ignored source caches; relocation did not rerun embeddings or inference.
+Paper-specific release validation covers the 17 Yu study figures separately.

@@ -731,6 +731,26 @@ status counts are not used as a measure of scientific calibration.
 Completion, numerical results, tests and the purpose-aware next-stage decision
 are in the [implementation record](docs/remediation/2026-09-22/IMPLEMENTATION_STATUS.md).
 
+## 33. Consolidate shared questions and current status (25 September 2026)
+
+The owner requested a repository-wide structure audit, consolidation into the
+existing research-question register, updates to related Markdown documents
+and the private Notion roadmap, and revised LinkedIn project text.
+The former Yu RQ1–RQ4 are now A11–A14 in
+[RESEARCH_QUESTIONS.md](RESEARCH_QUESTIONS.md); their six shared figures,
+plotted tables and scripts moved into the established `analysis/` layout.
+Paper-specific inference and its 17 figures stay with the paper. The
+[structure contract](docs/REPOSITORY_STRUCTURE.md) documents label namespaces
+and the original-to-current path mapping.
+
+The original UMAP/PCA preparation and scientific table bytes were preserved;
+only presentation labels were rerendered. Original script bytes, run records
+and a relocation manifest retain the execution history. Status edits distinguish
+completed feasible work from unavailable endpoints and new proposals. No
+scientific threshold, claim classification or inference was changed by this
+consolidation. The [LinkedIn draft](docs/LINKEDIN_PROJECT.md) is prepared for
+owner use; it has not been posted. Personal PI-fit planning remains in Notion.
+
 ## How outputs were reviewed
 
 Every run writes its decisions to machine logs (`decisions.json`,

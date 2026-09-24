@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "D0_display_and_source_units",
+      "passed": true
+    },
+    {
+      "check": "D1_paired_scores_match_released_differences",
+      "passed": true
+    },
+    {
+      "check": "D2_exact_component_and_edge_pairs",
+      "passed": true
+    },
+    {
+      "check": "D2_pathway_pairs_and_full_family_counts",
+      "passed": true
+    },
+    {
+      "check": "D2_all_ligand_candidates_retained",
+      "passed": true
+    }
+  ],
+  "figure_count": 6,
+  "measured_figure_count": 5,
+  "proposed_experiment_schematics": 1,
+  "no_new_inferential_tests": true,
+  "visual_review_status": "passed",
+  "generated_utc": "2026-09-24T15:05:00.716153+00:00"
+}

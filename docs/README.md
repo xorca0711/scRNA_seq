@@ -1,6 +1,10 @@
 # Documentation Index
 
-> **Reference material, not a record of what was run.** The pages below
+Repository guides: [structure and label scope](REPOSITORY_STRUCTURE.md),
+[portfolio summary](PORTFOLIO_SUMMARY.md), [LinkedIn project draft](LINKEDIN_PROJECT.md),
+and [next-dataset gate](NEXT_DATASET_GATE.md).
+
+> **Tool reference pages are not execution records.** The five tool pages below
 > describe tools and the reference study's design. They do **not** imply that
 > every tool described here was used in the analysis in `analysis/`, most were
 > not. For what was actually executed, with real parameters and cell counts,

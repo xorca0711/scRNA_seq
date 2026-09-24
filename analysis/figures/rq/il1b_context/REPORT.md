@@ -2,19 +2,19 @@
 
 25 September 2026. Five measured-data figures and one explicitly labeled
 experimental-design schematic are attached to the
-[RQ proposal](../../DERIVED_RESEARCH_QUESTIONS.md) and
-[paper gallery](../../README.md#d0-source-identity-and-annotation-context).
+[RQ proposal](../../../../RESEARCH_QUESTIONS.md#a11-shared-plasticity-versus-neoplasia-associated-context) and
+[paper gallery](../../../../Thesis/gate2_C3_yu_lee_choi_min_2026/README.md#figure-gallery).
 They supplement the original 17 figures. No original annotations, thresholds,
 DE fits, pathway results or ligand-target fits were changed.
 
 | Figure | RQ and purpose | Main plotted data |
 |---|---|---|
-| [D0: source context](../../figures/derived_D0_source_annotation_context.png) | Enabling source-identity question: reference UMAP, uncertainty, IL1B expression and paired source-allocation violins | [Coordinates and display values](umap_display_values.csv); [all/display coverage](embedding_sampling_coverage.csv); [paired source fractions](D0_paired_unassigned_IL1B.csv) |
-| [D1: epithelial programs](../../figures/derived_D1_epithelial_programs.png) | RQ1: patient PCA, paired HPCS violins, all seven HPCS contrasts and a six-program heatmap | [PCA points](AT2_pseudobulk_PCA_values.csv); [PCA features](AT2_PCA_features.csv); [paired scores](D1_HPCS_paired_scores.csv); [all contrasts](D1_HPCS_all_contrasts.csv); [heatmap](D1_program_heatmap_values.csv) |
-| [D2a: components](../../figures/derived_D2_source_recipient_components.png) | RQ2 and context for RQ3: donor-weighted component dot plot and paired component/edge changes | [Dot summaries](D2_component_dot_values.csv); [donors](D2_component_donor_values.csv); [paired components](D2_paired_components.csv); [paired edges](D2_paired_edge_values.csv) |
-| [D2b: enrichment](../../figures/derived_D2_recipient_enrichment.png) | RQ2: all 21 broad-receiver LUAD-normal tests under each correlation setting | [All displayed rows](D2_pathway_values.csv) |
-| [D2c: ligand targets](../../figures/derived_D2_ligand_target_candidates.png) | RQ2: all 32 eligible focused-triad up-target candidates across AT2-like, fibroblast and macrophage receivers | [Fits, ranks and omission coverage](D2_ligand_target_values.csv) |
-| [D4: withdrawal experiment](../../figures/derived_D4_withdrawal_experiment_proposal.png) | RQ4: proposed experimental design; no observed or simulated outcomes | [Experimental question](../../DERIVED_RESEARCH_QUESTIONS.md#rq4-resolution-versus-persistence-after-signal-withdrawal) |
+| [A12-S1: source context](../rq_a12_source_context.png) | Enabling source-identity question: reference UMAP, uncertainty, IL1B expression and paired source-allocation violins | [Coordinates and display values](umap_display_values.csv); [all/display coverage](embedding_sampling_coverage.csv); [paired source fractions](D0_paired_unassigned_IL1B.csv) |
+| [A11: epithelial programs](../rq_a11_epithelial_programs.png) | A11: patient PCA, paired HPCS violins, all seven HPCS contrasts and a six-program heatmap | [PCA points](AT2_pseudobulk_PCA_values.csv); [PCA features](AT2_PCA_features.csv); [paired scores](D1_HPCS_paired_scores.csv); [all contrasts](D1_HPCS_all_contrasts.csv); [heatmap](D1_program_heatmap_values.csv) |
+| [A12a: components](../rq_a12_source_recipient_components.png) | A12 and context for A13: donor-weighted component dot plot and paired component/edge changes | [Dot summaries](D2_component_dot_values.csv); [donors](D2_component_donor_values.csv); [paired components](D2_paired_components.csv); [paired edges](D2_paired_edge_values.csv) |
+| [A12b: enrichment](../rq_a12_recipient_enrichment.png) | A12: all 21 broad-receiver LUAD-normal tests under each correlation setting | [All displayed rows](D2_pathway_values.csv) |
+| [A12c: ligand targets](../rq_a12_ligand_target_candidates.png) | A12: all 32 eligible focused-triad up-target candidates across AT2-like, fibroblast and macrophage receivers | [Fits, ranks and omission coverage](D2_ligand_target_values.csv) |
+| [A14: withdrawal experiment](../rq_a14_withdrawal_design.png) | A14: proposed experimental design; no observed or simulated outcomes | [Experimental question](../../../../RESEARCH_QUESTIONS.md#a14-resolution-versus-persistence-after-signal-withdrawal) |
 
 Every figure has a sibling SVG. UMAP point clouds are rasterized within the SVG
 to keep files practical; labels and other plot elements remain vector objects.
@@ -83,18 +83,18 @@ remain in the original analysis, not silently discarded.
 
 ## Remaining scope and reproduction
 
-RQ3 joint associations and regional spatial inference are not newly fit.
+A13 joint associations and regional spatial inference are not newly fit.
 Current spatial maps remain linked in the proposal; missing independent
-regions and complete-compartment coverage still limit inference. D4 is a
-design schematic only. The D0 diagnostics do not resolve unassigned cell
+regions and complete-compartment coverage still limit inference. A14 is a
+design schematic only. The source diagnostics do not resolve unassigned cell
 identity; additional source review remains a separate scientific task.
 
 Run the scripts from the repository root with the existing scientific runtime:
 
 ```powershell
-python analysis/scripts/run_with_environment.py --site-packages .venv-x64/Lib/site-packages Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_prepare_proposal_figures.py
-python analysis/scripts/run_with_environment.py --site-packages .venv-x64/Lib/site-packages Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_render_proposal_figures.py
-python analysis/scripts/run_with_environment.py --site-packages .venv-x64/Lib/site-packages Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_validate_proposal_figures.py
+python analysis/scripts/run_with_environment.py --site-packages .venv-x64/Lib/site-packages analysis/scripts/19_prepare_il1b_rq_figures.py
+python analysis/scripts/run_with_environment.py --site-packages .venv-x64/Lib/site-packages analysis/scripts/20_render_il1b_rq_figures.py
+python analysis/scripts/run_with_environment.py --site-packages .venv-x64/Lib/site-packages analysis/scripts/21_validate_il1b_rq_figures.py
 ```
 
 Preparation refuses to overwrite an existing run record. Its saved coordinates
@@ -106,3 +106,17 @@ validation and release.
 [input hashes](preparation_inputs.csv) · [render record](render_run_record.json) ·
 [render inputs](render_inputs.csv) · [donor QC summaries](donor_QC_summary.csv) ·
 [visual review](visual_review.json) · [validation](validation.json).
+
+## Repository layout migration, 25 September 2026
+
+Shared RQ assets now live here; study-specific inference stays under `Thesis/`.
+CSV basenames D0/D1/D2 retain their historical source-table IDs. Presentation
+labels are A11, A12a–c, A12-S1 and A14, matching the root question register.
+The UMAP/PCA preparation was not rerun. Its original entrypoint bytes and run
+identity are preserved in `.history/layout_2026-09-25/`;
+[the relocation manifest](relocation_manifest.json) records every original
+path and hash. Rerendering changes labels and destinations, not inferential results.
+Preparation inputs use paths relative to the Yu study; current render inputs
+and output paths are relative to the repository root. The validator handles
+these explicit namespaces. A clean checkout can replot from tracked tables;
+full input-hash validation additionally requires the original ignored caches.
