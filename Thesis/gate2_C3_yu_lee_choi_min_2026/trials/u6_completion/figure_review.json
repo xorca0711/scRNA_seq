@@ -1,5 +1,5 @@
 {
-  "recorded_utc": "2026-09-24T14:28:39.536834+00:00",
+  "recorded_utc": "2026-09-24T15:14:43.633892+00:00",
   "scope": "PNG visual review; paired SVG exports are included in the release manifest. Pending figures are added only after inspection.",
   "figures": {
     "context_design_and_coverage.png": {
@@ -86,6 +86,36 @@
       "status": "visually_reviewed",
       "png_sha256": "059847a945d1f61513107af5f0ffd359bfc2b1f5ff53d50622f2d503ac88d7c0",
       "basis": "Direct final inspection: readable labels, corrected colorbar placement, explicit eligibility and biological-unit limits."
+    },
+    "derived_D0_source_annotation_context.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "58fa3ac81b4675a8c0318c27aec6fbf29dee3f22d2ac15a03af9d3db12ed45f6",
+      "basis": "Direct inspection of final PNG after layout corrections: complete labels, legible scales and captions, visible donor units, primary/sensitivity distinctions, and explicit proposal-only schematic status."
+    },
+    "derived_D1_epithelial_programs.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "c086e4c381838db9e2c3c48a041323eff23d3c17d5661826ecda16bdfd277ea0",
+      "basis": "Direct inspection of final PNG after layout corrections: complete labels, legible scales and captions, visible donor units, primary/sensitivity distinctions, and explicit proposal-only schematic status."
+    },
+    "derived_D2_source_recipient_components.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "171c7d926968fe8074b2a69e64c65e6a3e1b4177e834f308b2e09bdacf37ecf3",
+      "basis": "Direct inspection of final PNG after layout corrections: complete labels, legible scales and captions, visible donor units, primary/sensitivity distinctions, and explicit proposal-only schematic status."
+    },
+    "derived_D2_recipient_enrichment.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "e22018be2ed60835f5affac408ca8ecdfbaab14d0b2d124cf1d334f644eeed1b",
+      "basis": "Direct inspection of final PNG after layout corrections: complete labels, legible scales and captions, visible donor units, primary/sensitivity distinctions, and explicit proposal-only schematic status."
+    },
+    "derived_D2_ligand_target_candidates.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "0e2da95449f34acc1064ed1efc765b191c57420d4ab2f0d46a291f5d0faa0b7b",
+      "basis": "Direct inspection of final PNG after layout corrections: complete labels, legible scales and captions, visible donor units, primary/sensitivity distinctions, and explicit proposal-only schematic status."
+    },
+    "derived_D4_withdrawal_experiment_proposal.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "a3e5e655e59afd1246c2ac3c5be9825d984593f141dc170b14dbdb34a9b27b62",
+      "basis": "Direct inspection of final PNG after layout corrections: complete labels, legible scales and captions, visible donor units, primary/sensitivity distinctions, and explicit proposal-only schematic status."
     }
   }
 }

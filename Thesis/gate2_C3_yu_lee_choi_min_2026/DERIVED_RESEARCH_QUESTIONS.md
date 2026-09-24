@@ -1,7 +1,10 @@
 # Derived research questions and proposed figures
 
-24 September 2026. **Post-analysis exploratory proposal; new panels and tests
-have not been run.** These questions arise from the completed evidence review.
+24 September 2026; figure package added 25 September 2026.
+**Post-analysis exploratory proposal with five generated data figures and one
+experimental-design schematic.** New UMAP/PCA diagnostics were computed;
+inferential panels reuse completed results. No new hypothesis tests were run.
+These questions arise from the completed evidence review.
 They supplement the original N1-N5 questions and F01-F07 gallery, without
 changing the completed analyses, their thresholds or their conclusions.
 They are not claims of literature novelty or retrospectively prespecified tests.
@@ -25,14 +28,15 @@ F01-F07 gallery. “Replot” means existing results can supply the panel;
 
 | Priority | Derived question | Proposed figure | Readiness |
 |---|---|---|---|
-| Lead: RQ1 | What distinguishes neoplasia-associated epithelial plasticity from a shared injury response? | D1: epithelial UMAP, pseudobulk PCA, paired program plots and gene/program heatmap | Existing program results; new embeddings and diagnostic summaries; independent state validation still needed |
-| Core: RQ2 | Does recipient subtype and receptor/inhibitor context explain heterogeneous IL-1-associated responses? | D2: marker dot plot, paired expression/compatibility plots, recipient enrichment and ligand-target ranks | Existing components, pathways and target fits; explanatory association tests would be new |
+| Lead: RQ1 | What distinguishes neoplasia-associated epithelial plasticity from a shared injury response? | D1: pseudobulk PCA, paired program violins/contrasts and program heatmap; D0 supplies the reference UMAP | Generated human diagnostic/program figure; independent state validation still needed |
+| Core: RQ2 | Does recipient subtype and receptor/inhibitor context explain heterogeneous IL-1-associated responses? | D2a-c: component dot plot, paired expression/compatibility plots, recipient enrichment and ligand-target ranks | Three figures generated from existing results; explanatory association tests would be new |
 | Conditional: RQ3 | Do fibroblast inflammatory/recruitment and trophic programs accompany epithelial plasticity beyond the macrophage IL1B measure alone? | D3: donor-aligned niche heatmap, component scatterplots and conditional spatial maps | Existing separate measurements; joint associations require complete-sample eligibility and new analysis |
-| Mechanistic follow-up: RQ4 | Does signal withdrawal resolve epithelial plasticity, and does fibroblast IL-1 reception modify that response? | D4: perturbation design, time-course plots, fate distributions and protein/function readouts | Requires new longitudinal perturbation evidence |
-| Enabling question | What accounts for IL1B RNA in cells without confident fine labels? | D0: all-QC UMAP, multi-marker dot plot, QC violins and per-patient source fractions | Existing source/QC summaries; new embedding and annotation audit |
+| Mechanistic follow-up: RQ4 | Does signal withdrawal resolve epithelial plasticity, and does fibroblast IL-1 reception modify that response? | D4: generated experimental-design schematic; future time-course, fate and protein/function plots | Schematic complete; outcome figures require new longitudinal perturbation evidence |
+| Enabling question | What accounts for IL1B RNA in cells without confident fine labels? | D0: reference UMAP, uncertainty and IL1B overlays, paired source-fraction violins | Diagnostic figure generated; source identity remains unresolved |
 
-Recommended first package: **D0, D1 and D2**, reusing completed tables first.
-D3 follows only for eligible matched samples. D4 is an experimental proposal.
+The first package **D0, D1 and D2** is generated and documented in the
+[figure report](trials/u7_proposal_figures/REPORT.md). D3 remains conditional
+on matched-sample eligibility. D4 is an experimental proposal, shown as a schematic.
 
 ## RQ1. Shared plasticity versus neoplasia-associated context
 
@@ -56,7 +60,15 @@ or assay, annotation and sample composition may explain apparent differences.
 An extra program is useful only if its association survives independent
 evaluation, rather than being defined and tested on the same labels.
 
-**D1 panels.**
+**Generated D1:** A, PCA of 70 patient-histology pseudobulks; B, reduced-HPCS
+violins for 23 paired patients; C, all seven released paired contrasts;
+D, six fixed program differences across 23 LUAD-normal pairs.
+
+![D1 epithelial programs](figures/derived_D1_epithelial_programs.png)
+
+**Original panel concepts and optional extensions.** The following design
+menu remains broader than the generated figure; dedicated epithelial UMAP
+score overlays and gene-component heatmaps have not been generated.
 
 - **A: epithelial UMAP.** Within each cohort, use the same coordinates in
   adjacent panels colored by supported annotation, histology, donor and
@@ -144,6 +156,19 @@ causal evidence. The main test includes discordance and ineligible target sets.
 [target figure](figures/human_ligand_target_eligibility_and_fit.png),
 [paired compatibility values](trials/u5_human_niche/primary_compatibility_patient_values.csv).
 
+**Generated RQ2 figures:**
+
+![D2a source and recipient components](figures/derived_D2_source_recipient_components.png)
+
+![D2b recipient enrichment](figures/derived_D2_recipient_enrichment.png)
+
+![D2c ligand-target candidates](figures/derived_D2_ligand_target_candidates.png)
+
+The target figure retains all 32 eligible up-target candidates across the
+three broad receivers for LUAD-normal in the focused-triad scope. IL1B does
+not pass expression eligibility in the macrophage panel. Full contrast,
+direction and sensitivity tables remain available in the original reports.
+
 ## RQ3. Fibroblast context and reciprocal niche associations
 
 **Question.** Within eligible patients, do fibroblast recruitment/inflammatory,
@@ -198,6 +223,11 @@ This is a mechanistic follow-up, not a claim derived directly from RNA ranks.
 
 **D4 panels, requiring new evidence.**
 
+The experimental layout is now drawn below; outcome panels B-D still require
+new data. No anticipated response curve is presented as a result.
+
+![D4 proposed withdrawal experiment](figures/derived_D4_withdrawal_experiment_proposal.png)
+
 - **A: experimental schematic.** Define transient/sustained exposure and
   withdrawal, with epithelial-only and stromal-containing systems and
   recipient-specific IL1R1 perturbations. Add a macrophage-source arm only
@@ -230,7 +260,14 @@ Cross-lineage RNA also remains substantial in the mapped populations. See the
 [annotation review](trials/u5_human_full/ANNOTATION_REVIEW.md) and
 [source report](trials/u5_human_sources/REPORT.md).
 
-Proposed panels: an all-QC UMAP colored separately by broad identity, confidence,
+The generated D0 figure uses 34,178 display cells with a 75-cell cap per
+patient/histology/source label, while quantitative source fractions use all
+QC cells. The same UMAP coordinates show existing labels, uncertainty and
+IL1B RNA; paired source-fraction violins show 23 normal-LUAD patient pairs.
+
+![D0 source and annotation context](figures/derived_D0_source_annotation_context.png)
+
+Further annotation-review options: an all-QC UMAP colored by broad identity, confidence,
 donor, histology and IL1B; a multi-marker dot plot; QC/confidence violin plots
 with donor summaries; and stacked per-patient IL1B count fractions retaining
 the unassigned category. Use assay-appropriate background/mixed-profile checks
@@ -267,7 +304,7 @@ and any reviewed alternative labels as separately versioned results.
    repository palette and PNG/SVG exports under this paper's `figures/` folder.
    The main repository README stays a navigation page.
 
-These proposals do not alter the 17 released figures. Replotting existing
-tables is the least expensive next step; new embeddings and source-label review
-need additional computation, and causal/spatial claims need additional evidence.
+The original 17 figures remain unchanged. The six new figures add display
+geometry, existing quantitative evidence and one experimental schematic.
+Source-label review and causal/spatial claims still need additional evidence.
 Freeze any new analysis specification before testing these exploratory RQs.

@@ -46,6 +46,7 @@ Report/figure entrypoints can regenerate their derived presentation files.
 | Source-program specificity | `u6_score_specificity.py`, `u6_freeze_isr_and_human_modules.py`, `u6_score_isr.py` and report scripts | `trials/u6_specificity/`, `trials/u6_isr_extension/` |
 | IPF and human program extension | `u6_ipf_epithelial_pseudobulks.py`, `u6_ipf_program_scores.R`, `u6_report_ipf_specificity.py`; human scores come from the paired pathway stage | `trials/u6_ipf_specificity/`, `trials/u6_human_specificity/` |
 | Completion | `u6_audit_pathway_coverage.py`, `u6_report_context_coverage.py`, `u6_summarize_evidence.py`, `u6_validate_release.py` | `trials/u6_completion/` |
+| Derived-RQ figures | `u7_prepare_proposal_figures.py`, then `u7_render_proposal_figures.py` and `u7_validate_proposal_figures.py` | `trials/u7_proposal_figures/` |
 
 This dependency table is an entrypoint index, not a claim that scripts with
 required cohort arguments can all be invoked without arguments. Each script's

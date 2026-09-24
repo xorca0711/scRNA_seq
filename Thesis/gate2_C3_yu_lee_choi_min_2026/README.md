@@ -26,7 +26,7 @@ the first batch; it is not the current whole-run status.
 | Artifact | Purpose |
 |---|---|
 | [Completed evidence review](EVIDENCE_REVIEW.md) | Cross-context findings and limits for interpretation review |
-| [Derived research questions and proposed figures](DERIVED_RESEARCH_QUESTIONS.md) | Post-analysis RQs with UMAP, PCA, violin, enrichment and niche-panel plans; existing results versus new computations/evidence |
+| [Derived research questions and figures](DERIVED_RESEARCH_QUESTIONS.md) | Post-analysis RQs with five generated data figures and an experimental-design schematic; remaining evidence requirements |
 | [Evaluation rules](EVALUATION_RULES.md) | Distinguish null, undercovered, unidentifiable and unmeasured questions |
 | [Reproducibility](REPRODUCIBILITY.md) | Runtime, stage dependencies, provenance and preserved corrections |
 | [Analysis pipeline plan](ANALYSIS_TRIAL_PLAN.md) | Research questions, estimands, stages, controls, decision gates and outputs |
@@ -88,9 +88,9 @@ The [gallery plan](FIGURE_GALLERY_PLAN.md) orders figures by the research
 questions. Only generated, checked figures are embedded below; planned
 figures remain listed with their analysis dependencies.
 
-The [derived-RQ figure proposal](DERIVED_RESEARCH_QUESTIONS.md) adds a proposed
-D0-D4 sequence grounded in the completed findings. These new panels have not
-been run or added to the released gallery.
+The [derived-RQ figure package](DERIVED_RESEARCH_QUESTIONS.md) adds five data
+figures and one experimental-design schematic, shown after F07 below.
+UMAP/PCA are new diagnostics; statistical panels reuse completed results.
 
 | Figure group | Current gallery status |
 |---|---|
@@ -268,6 +268,47 @@ remain distinct from source-defined KAC/HPCS identity and malignant status.
 [Evidence review](EVIDENCE_REVIEW.md) ·
 [complete table](trials/u6_completion/evidence_matrix.csv) ·
 [generating script](trials/u6_summarize_evidence.py).
+
+### D0: source identity and annotation context
+
+![Source and annotation context](figures/derived_D0_source_annotation_context.png)
+
+One reference-conditioned UMAP uses 34,178 cells sampled across patient,
+histology and existing source label. Source-allocation violins use all QC
+cells from 23 paired normal-LUAD patients. No annotations were changed.
+[Methods and plotted values](trials/u7_proposal_figures/REPORT.md).
+
+### D1: epithelial programs motivating the specificity question
+
+![Derived epithelial program figure](figures/derived_D1_epithelial_programs.png)
+
+Patient-histology PCA, paired reduced-HPCS violins, all seven released paired
+contrasts and six fixed program differences. These plots describe AT2-like
+populations and do not establish malignant-cell identity or progression.
+[RQ1 and interpretation](DERIVED_RESEARCH_QUESTIONS.md#rq1-shared-plasticity-versus-neoplasia-associated-context).
+
+### D2: source-recipient components, enrichment and ligand targets
+
+![Source-recipient components](figures/derived_D2_source_recipient_components.png)
+
+![Recipient enrichment](figures/derived_D2_recipient_enrichment.png)
+
+![Ligand-target candidates](figures/derived_D2_ligand_target_candidates.png)
+
+Donor-weighted components and paired RNA compatibility accompany all eligible
+broad-receiver pathway rows and ligand candidates for LUAD versus normal.
+Primary/sensitivity distinctions and ligand-target omission limits remain
+visible. These are RNA associations, not measured communication.
+[RQ2](DERIVED_RESEARCH_QUESTIONS.md#rq2-recipient-context-and-il-1-specificity) ·
+[plotted tables and validation](trials/u7_proposal_figures/REPORT.md).
+
+### D4: proposed withdrawal experiment
+
+![Proposed withdrawal experiment](figures/derived_D4_withdrawal_experiment_proposal.png)
+
+Experimental-design schematic only. Exposure/withdrawal, recipient-specific
+perturbation and fate/function measurements require new experimental evidence.
+[RQ4](DERIVED_RESEARCH_QUESTIONS.md#rq4-resolution-versus-persistence-after-signal-withdrawal).
 
 ## Layout and execution boundary
 

@@ -1,0 +1,65 @@
+{
+  "status": "completed_and_visually_reviewed",
+  "code": {
+    "commit": "3b5e1140d6ee5b311764201bfe29f10a0804a05c",
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracked_changes_present": false,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u7_render_proposal_figures.py",
+    "entrypoint_sha256": "cb671d9bf84a7e655d52c11776d7f1518bdb402818279bb0321c6db700d70103"
+  },
+  "completed_utc": "2026-09-24T15:05:00.998590+00:00",
+  "outputs": [
+    {
+      "path": "figures/derived_D0_source_annotation_context.png",
+      "sha256": "58fa3ac81b4675a8c0318c27aec6fbf29dee3f22d2ac15a03af9d3db12ed45f6"
+    },
+    {
+      "path": "figures/derived_D0_source_annotation_context.svg",
+      "sha256": "561c513b6c160a967387788f4f6f05168cd87fbc17dc0216223d99d53db2f324"
+    },
+    {
+      "path": "figures/derived_D1_epithelial_programs.png",
+      "sha256": "c086e4c381838db9e2c3c48a041323eff23d3c17d5661826ecda16bdfd277ea0"
+    },
+    {
+      "path": "figures/derived_D1_epithelial_programs.svg",
+      "sha256": "5912cc32949c1e9c33adf16afa6f232143935c21c5585c515c82459dff18d880"
+    },
+    {
+      "path": "figures/derived_D2_source_recipient_components.png",
+      "sha256": "171c7d926968fe8074b2a69e64c65e6a3e1b4177e834f308b2e09bdacf37ecf3"
+    },
+    {
+      "path": "figures/derived_D2_source_recipient_components.svg",
+      "sha256": "7778ba113020aa620fdcc0dac80be34d5f944fe98f4fa18f2c48b17eabb942df"
+    },
+    {
+      "path": "figures/derived_D2_recipient_enrichment.png",
+      "sha256": "e22018be2ed60835f5affac408ca8ecdfbaab14d0b2d124cf1d334f644eeed1b"
+    },
+    {
+      "path": "figures/derived_D2_recipient_enrichment.svg",
+      "sha256": "e713e954814f996330b3514dc4fccb21b94db3fa32df4cd7e2272858664e77c0"
+    },
+    {
+      "path": "figures/derived_D2_ligand_target_candidates.png",
+      "sha256": "0e2da95449f34acc1064ed1efc765b191c57420d4ab2f0d46a291f5d0faa0b7b"
+    },
+    {
+      "path": "figures/derived_D2_ligand_target_candidates.svg",
+      "sha256": "af76734651cf3e68f6059c0cc65a2c36a667a226e5fe0039ed12261383d86d3e"
+    },
+    {
+      "path": "figures/derived_D4_withdrawal_experiment_proposal.png",
+      "sha256": "a3e5e655e59afd1246c2ac3c5be9825d984593f141dc170b14dbdb34a9b27b62"
+    },
+    {
+      "path": "figures/derived_D4_withdrawal_experiment_proposal.svg",
+      "sha256": "921ec086fcbef2d49243f61985a6f9dce63f19260bb10b43fed60becb2ad968f"
+    }
+  ],
+  "matplotlib_version": "3.11.1",
+  "proposal_vs_results": "Five data figures and one explicitly labeled experimental design",
+  "visual_review_record": "visual_review.json"
+}
