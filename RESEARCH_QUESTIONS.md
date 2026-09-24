@@ -41,6 +41,13 @@ sample definitions, measurements and analysis requirements. Figures show either
 observed data or a labelled conceptual study design; design schematics do not
 represent demonstrated biological mechanisms.
 
+The [IL-1beta review branch](Thesis/gate2_C3_yu_lee_choi_min_2026/ANALYSIS_TRIAL_PLAN.md)
+adds context-specific macrophage-fibroblast-epithelial questions, with required
+[ligand-receptor and pathway-enrichment analyses](Thesis/gate2_C3_yu_lee_choi_min_2026/NICHE_ANALYSIS_PLAN.md)
+and a public-data shortlist. Source/recipient identity, repair, fibrosis,
+precursor lesions and cross-organ hypotheses remain distinct. The owner authorized staged execution after final review; the existing
+evidence below is unchanged until new results are interpreted and registered.
+
 ## Part A. Questions, evidence and decision limits
 
 ### A1. Which RNA and chromatin changes accompany transitional epithelial states?

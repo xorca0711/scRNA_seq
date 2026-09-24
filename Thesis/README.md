@@ -6,7 +6,7 @@ folder holding (1) a study note in the roadmap's five-question format
 bridge), (2) any parameters or decision criteria extracted from the paper as
 reviewable JSON, and (3) the analysis trial that paper motivates, with its
 pre-registered plan, its logged outcome, and its negative results. Folders
-are added one at a time in the order below, with two exceptions recorded in
+are added one at a time in the order below, with owner-directed exceptions recorded in
 the table: paper 5 (Cardoso 2026) was entered on the owner's instruction of
 2026-09-12, ahead of papers 2, 3 and 6; and paper 2 (Choi 2020) was entered by
 the agent on 2026-09-13 on a general "proceed", then withdrawn on 2026-09-15
@@ -16,6 +16,14 @@ the owner's direction after reading (decision 23). The order below is the owner'
 reading order
 (gates 1, 2C, 2N, 2W, 3A, 3B; the Gate 2 branches were added on 2026-09-15). The same table is machine-readable in
 [`ROADMAP.json`](ROADMAP.json).
+
+On 24 September 2026, after reading paper 13, the owner opened its planning
+branch as [`gate2_C3_yu_lee_choi_min_2026/`](gate2_C3_yu_lee_choi_min_2026/README.md).
+`C3` denotes the third item in branch 2C; stable roadmap order 13 is unchanged.
+The owner subsequently authorized staged execution. Mouse QC/clustering,
+two-cohort IPF pathways and an initial 25-donor ligand-receptor analysis are
+complete; treatment inference, sensitivities and human/spatial work remain
+pending. See the [initial report](gate2_C3_yu_lee_choi_min_2026/INITIAL_RUN_REPORT.md).
 
 Paper PDFs and supplementary spreadsheets stay on disk and are gitignored
 (`*.pdf`, `*.xlsx`); only text, JSON and small tables are tracked. The
@@ -36,7 +44,7 @@ remodelling after inflammatory injury?
 | 4 | 1 | Sikkema et al. 2023, *Nature Medicine* (HLCA) | [10.1038/s41591-023-02327-2](https://doi.org/10.1038/s41591-023-02327-2) | 37291214 | reference framework: annotation hierarchy, reference mapping, uncertainty handling, donor coverage, shared profibrotic macrophage states | [`gate1_04_sikkema_2023_hlca/`](gate1_04_sikkema_2023_hlca/README.md) | done, owner review pending | S1 to S5 run (Descriptive only); see [`ANALYSIS_TRIAL_PLAN.md`](gate1_04_sikkema_2023_hlca/ANALYSIS_TRIAL_PLAN.md) |
 | 5 | 2C | Cardoso, Lee et al. 2026, *Nature* | [10.1038/s41586-026-10399-6](https://doi.org/10.1038/s41586-026-10399-6) | 42020743 | early fibrotic niches; regenerative-like mutant AT2 states coordinate fibroblast and immune remodelling through AREG-EGFR | [`gate2_05_cardoso_2026/`](gate2_05_cardoso_2026/README.md) | done, owner review pending | C0 to C6 plus the E series run 2026-09-12 and 2026-09-13; Gate 1 returned **not recovered**, and six extension trials left this deposit for public data because it carries no within-group replication. E1 on GSE131907 is the only tested claim (p = 0.0020); E4 on GSE132771 refuted the second-signal reading of claim C29: [`ANALYSIS_TRIAL_PLAN.md`](gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md) |
 | 12 | 2C | England et al. 2025, *Cell Stem Cell* | [10.1016/j.stem.2025.01.011](https://doi.org/10.1016/j.stem.2025.01.011) | 39978341 | companion of paper 5: NF-kappaB separates tumour initiation from regeneration; its deposit GSE247505 is the only replicated time course in the Cardoso set and is already used by trial C3 | not started | not started | none planned; its data are analysed under paper 5 |
-| 13 | 2C | Yu, Lee, Choi and Choi 2026, *Seminars in Immunology* (review) | [10.1016/j.smim.2026.102050](https://doi.org/10.1016/j.smim.2026.102050) | 42497497 | a review of IL-1beta across repair, fibrosis and cancer; read before the analysis contract | not started | not started | none (review) |
+| 13 | 2C | Yu, Lee, Choi_Min and Choi 2026, *Seminars in Immunology* (review) | [10.1016/j.smim.2026.102050](https://doi.org/10.1016/j.smim.2026.102050) | 42497497 | review-motivated IL-1beta perturbation, state specificity and niche-context questions | [`gate2_C3_yu_lee_choi_min_2026/`](gate2_C3_yu_lee_choi_min_2026/README.md) | owner read; synthesis prepared; staged execution authorized 2026-09-24 | [initial batch complete](gate2_C3_yu_lee_choi_min_2026/INITIAL_RUN_REPORT.md): mouse QC/clustering, IPF pathways and descriptive LR; remaining inference and extensions pending |
 | 6 | 2N | Nabhan et al. 2023, *Cell* | [10.1016/j.cell.2023.05.022](https://doi.org/10.1016/j.cell.2023.05.022) | 37321220 | Frizzled-specific Wnt agonists separate regeneration from fibrotic risk; receptor-specific Wnt modules | queued after paper 3 (re-ranking 2026-09-15) | not started | not started |
 | 14 | 2N | Nabhan et al. 2026, *PNAS* | [10.1073/pnas.2606113123](https://doi.org/10.1073/pnas.2606113123) | 42418498 | an alveolosphere screen of 201 genes with chimeric RNA-seq of stem-cell effects on the fibroblast niche | not started | not started | not started |
 | 15 | 2W | Wagner et al. 2021, *Cell* | [10.1016/j.cell.2021.05.045](https://doi.org/10.1016/j.cell.2021.05.045) | 34216539 | Compass: immune-metabolic state inference from single-cell RNA, the method behind proposal W1 | not started | not started | proposal W1 (Stage 2 of paper 1's plan) |
@@ -54,7 +62,8 @@ interpretive limits: [Niethamer](gate1_01_niethamer_2025/README.md#figure-galler
 [Choi](gate1_02_choi_2020/README.md#figure-gallery),
 [Nabhan](gate1_03_nabhan_2018/README.md#figure-gallery),
 [Sikkema](gate1_04_sikkema_2023_hlca/README.md#figure-gallery),
-[Cardoso](gate2_05_cardoso_2026/README.md#figure-gallery) and
+[Cardoso](gate2_05_cardoso_2026/README.md#figure-gallery),
+[Yu, Lee, Choi_Min](gate2_C3_yu_lee_choi_min_2026/README.md#figure-gallery) and
 [Murthy](ungated_murthy_2022/README.md#figure-gallery).
 Choi's [chromatin](gate1_02_choi_2020/datp_epigenetics/README.md#figure-gallery)
 and [Axin2/Il1r1](gate1_02_choi_2020/axin2_il1r1/README.md#figure-gallery)

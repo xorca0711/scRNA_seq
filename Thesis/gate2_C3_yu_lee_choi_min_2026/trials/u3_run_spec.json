@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "frozen_utc": "2026-09-24T08:04:42.882165+00:00",
+  "scope": "seven_early_two_arm_libraries_acquisition_QC_candidate_coverage_only",
+  "samples": [
+    {
+      "gsm": "GSM9057712",
+      "treatment": "Control IgG",
+      "endpoint": "3 months post-NNK",
+      "analysis_unit": "GSM9057712",
+      "unit_basis": "primary_methods_one_retained_library_per_mouse; original_animal_ID_unavailable",
+      "files": [
+        {
+          "kind": "matrix",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057712/suppl/GSM9057712_aIL1B_9_matrix.mtx.gz",
+          "filename": "GSM9057712_aIL1B_9_matrix.mtx.gz",
+          "previous_sha256": "1bc20e1606ace0e1c0c0a947baea0535efc327b69b29082052aab248fac93cb1"
+        },
+        {
+          "kind": "features",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057712/suppl/GSM9057712_aIL1B_9_features.tsv.gz",
+          "filename": "GSM9057712_aIL1B_9_features.tsv.gz",
+          "previous_sha256": "1b4adf48df32800a536545d944ba20865855d44e40685b5c77cc6d5495616d64"
+        },
+        {
+          "kind": "barcodes",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057712/suppl/GSM9057712_aIL1B_9_barcodes.tsv.gz",
+          "filename": "GSM9057712_aIL1B_9_barcodes.tsv.gz",
+          "previous_sha256": "32a22b2bf72c798a1a8f6a805bb9fb09101f705ff5beb8aade425bfddf4b0598"
+        }
+      ]
+    },
+    {
+      "gsm": "GSM9057713",
+      "treatment": "anti-IL-1β",
+      "endpoint": "3 months post-NNK",
+      "analysis_unit": "GSM9057713",
+      "unit_basis": "primary_methods_one_retained_library_per_mouse; original_animal_ID_unavailable",
+      "files": [
+        {
+          "kind": "matrix",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057713/suppl/GSM9057713_aIL1B_10_matrix.mtx.gz",
+          "filename": "GSM9057713_aIL1B_10_matrix.mtx.gz",
+          "previous_sha256": "003509ca15cb9f050e2bac48b5b6ef55dc3b4a586c37f9190b4e99e2e0062a35"
+        },
+        {
+          "kind": "features",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057713/suppl/GSM9057713_aIL1B_10_features.tsv.gz",
+          "filename": "GSM9057713_aIL1B_10_features.tsv.gz",
+          "previous_sha256": "5848bc810d1551af708e07cad90139e2eb24f83141125757c43180a43316194b"
+        },
+        {
+          "kind": "barcodes",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057713/suppl/GSM9057713_aIL1B_10_barcodes.tsv.gz",
+          "filename": "GSM9057713_aIL1B_10_barcodes.tsv.gz",
+          "previous_sha256": "2d7b9915234fbf4ed9bab3979b7e060f3cf9993b22e8dd66f8e55c210f47d21b"
+        }
+      ]
+    },
+    {
+      "gsm": "GSM9057709",
+      "treatment": "Control IgG",
+      "endpoint": "3 months post-NNK",
+      "analysis_unit": "GSM9057709",
+      "unit_basis": "primary_methods_one_retained_library_per_mouse; original_animal_ID_unavailable",
+      "files": [
+        {
+          "kind": "matrix",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057709/suppl/GSM9057709_aIL1B_5_matrix.mtx.gz",
+          "filename": "GSM9057709_aIL1B_5_matrix.mtx.gz",
+          "previous_sha256": null
+        },
+        {
+          "kind": "features",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057709/suppl/GSM9057709_aIL1B_5_features.tsv.gz",
+          "filename": "GSM9057709_aIL1B_5_features.tsv.gz",
+          "previous_sha256": null
+        },
+        {
+          "kind": "barcodes",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057709/suppl/GSM9057709_aIL1B_5_barcodes.tsv.gz",
+          "filename": "GSM9057709_aIL1B_5_barcodes.tsv.gz",
+          "previous_sha256": null
+        }
+      ]
+    },
+    {
+      "gsm": "GSM9057716",
+      "treatment": "Control IgG",
+      "endpoint": "3 months post-NNK",
+      "analysis_unit": "GSM9057716",
+      "unit_basis": "primary_methods_one_retained_library_per_mouse; original_animal_ID_unavailable",
+      "files": [
+        {
+          "kind": "matrix",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057716/suppl/GSM9057716_aIL1B_13_matrix.mtx.gz",
+          "filename": "GSM9057716_aIL1B_13_matrix.mtx.gz",
+          "previous_sha256": null
+        },
+        {
+          "kind": "features",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057716/suppl/GSM9057716_aIL1B_13_features.tsv.gz",
+          "filename": "GSM9057716_aIL1B_13_features.tsv.gz",
+          "previous_sha256": null
+        },
+        {
+          "kind": "barcodes",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057716/suppl/GSM9057716_aIL1B_13_barcodes.tsv.gz",
+          "filename": "GSM9057716_aIL1B_13_barcodes.tsv.gz",
+          "previous_sha256": null
+        }
+      ]
+    },
+    {
+      "gsm": "GSM9057717",
+      "treatment": "anti-IL-1β",
+      "endpoint": "3 months post-NNK",
+      "analysis_unit": "GSM9057717",
+      "unit_basis": "primary_methods_one_retained_library_per_mouse; original_animal_ID_unavailable",
+      "files": [
+        {
+          "kind": "matrix",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057717/suppl/GSM9057717_aIL1B_14_matrix.mtx.gz",
+          "filename": "GSM9057717_aIL1B_14_matrix.mtx.gz",
+          "previous_sha256": null
+        },
+        {
+          "kind": "features",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057717/suppl/GSM9057717_aIL1B_14_features.tsv.gz",
+          "filename": "GSM9057717_aIL1B_14_features.tsv.gz",
+          "previous_sha256": null
+        },
+        {
+          "kind": "barcodes",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057717/suppl/GSM9057717_aIL1B_14_barcodes.tsv.gz",
+          "filename": "GSM9057717_aIL1B_14_barcodes.tsv.gz",
+          "previous_sha256": null
+        }
+      ]
+    },
+    {
+      "gsm": "GSM9057720",
+      "treatment": "Control IgG",
+      "endpoint": "3 months post-NNK",
+      "analysis_unit": "GSM9057720",
+      "unit_basis": "primary_methods_one_retained_library_per_mouse; original_animal_ID_unavailable",
+      "files": [
+        {
+          "kind": "matrix",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057720/suppl/GSM9057720_aIL1B_17_matrix.mtx.gz",
+          "filename": "GSM9057720_aIL1B_17_matrix.mtx.gz",
+          "previous_sha256": null
+        },
+        {
+          "kind": "features",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057720/suppl/GSM9057720_aIL1B_17_features.tsv.gz",
+          "filename": "GSM9057720_aIL1B_17_features.tsv.gz",
+          "previous_sha256": null
+        },
+        {
+          "kind": "barcodes",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057720/suppl/GSM9057720_aIL1B_17_barcodes.tsv.gz",
+          "filename": "GSM9057720_aIL1B_17_barcodes.tsv.gz",
+          "previous_sha256": null
+        }
+      ]
+    },
+    {
+      "gsm": "GSM9057721",
+      "treatment": "anti-IL-1β",
+      "endpoint": "3 months post-NNK",
+      "analysis_unit": "GSM9057721",
+      "unit_basis": "primary_methods_one_retained_library_per_mouse; original_animal_ID_unavailable",
+      "files": [
+        {
+          "kind": "matrix",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057721/suppl/GSM9057721_aIL1B_18_matrix.mtx.gz",
+          "filename": "GSM9057721_aIL1B_18_matrix.mtx.gz",
+          "previous_sha256": null
+        },
+        {
+          "kind": "features",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057721/suppl/GSM9057721_aIL1B_18_features.tsv.gz",
+          "filename": "GSM9057721_aIL1B_18_features.tsv.gz",
+          "previous_sha256": null
+        },
+        {
+          "kind": "barcodes",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057721/suppl/GSM9057721_aIL1B_18_barcodes.tsv.gz",
+          "filename": "GSM9057721_aIL1B_18_barcodes.tsv.gz",
+          "previous_sha256": null
+        }
+      ]
+    }
+  ],
+  "maximum_bytes_per_file": 500000000,
+  "maximum_new_download_bytes": 3000000000,
+  "qc": {
+    "source": "GEO deposited processing protocol; compare retained counts rather than claiming to reproduce all author doublet exclusions",
+    "min_genes": 200,
+    "max_genes": 6500,
+    "max_percent_mt": 15
+  },
+  "candidate_panels": {
+    "epithelial": [
+      "Epcam",
+      "Krt18",
+      "Krt19",
+      "Cdh1"
+    ],
+    "macrophage_myeloid": [
+      "Adgre1",
+      "Csf1r",
+      "Mertk",
+      "Marco",
+      "Lyz2",
+      "Cd68"
+    ],
+    "fibroblast": [
+      "Pdgfra",
+      "Col1a1",
+      "Col1a2",
+      "Dcn",
+      "Lum"
+    ],
+    "endothelial": [
+      "Pecam1",
+      "Cdh5",
+      "Emcn",
+      "Kdr"
+    ],
+    "T_cell": [
+      "Cd3d",
+      "Cd3e",
+      "Trac",
+      "Lck"
+    ],
+    "B_cell": [
+      "Cd79a",
+      "Ms4a1",
+      "Cd79b",
+      "Cd19"
+    ],
+    "neutrophil": [
+      "S100a8",
+      "S100a9",
+      "Csf3r",
+      "Retnlg"
+    ]
+  },
+  "minimum_detected_panel_genes": 2,
+  "candidate_annotation_warning": "hand-curated feasibility panels, not validated identities; ambiguous cells retained; no KAC assignment or treatment inference",
+  "next_stage_requires": [
+    "annotation_provenance_review",
+    "sample_design_release",
+    "frozen_pathway_and_LR_resources"
+  ]
+}

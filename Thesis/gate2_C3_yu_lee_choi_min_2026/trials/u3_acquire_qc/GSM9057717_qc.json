@@ -1,0 +1,17 @@
+{
+  "gsm": "GSM9057717",
+  "treatment": "anti-IL-1\u03b2",
+  "endpoint": "3 months post-NNK",
+  "analysis_unit": "GSM9057717",
+  "input_cells": 2979,
+  "qc_pass_cells": 2913,
+  "qc_excluded_cells": 66,
+  "features": 31053,
+  "mt_features": 13,
+  "median_counts": 4171.0,
+  "median_genes": 1670.0,
+  "median_percent_mt": 2.3712847165827515,
+  "duplicate_coordinates_collapsed": 0,
+  "ambiguous_candidate_cells_after_qc": 230,
+  "processing_seconds": 5.157
+}

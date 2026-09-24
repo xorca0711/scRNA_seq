@@ -1,0 +1,59 @@
+{
+  "started_utc": "2026-09-24T08:09:58.173897+00:00",
+  "status": "completed_annotation_review_required",
+  "pid": 21644,
+  "stage": "U3_cluster_annotation_review",
+  "parameters": {
+    "n_top_genes": 1500,
+    "n_pcs": 30,
+    "neighbors": 15,
+    "leiden_resolution": 1.0,
+    "seed": 20260924,
+    "feature_selection": "seurat_log_normalized_dispersion_batch_key_GSM",
+    "integration": false,
+    "treatment_used_for_clustering": false,
+    "biological_effect_tests": false
+  },
+  "code": {
+    "commit": "e9d79e0e5269249f8cf12c8a45ba70ac7009da33",
+    "tracked_diff_sha256": "1971c9db3dc0c460a553a2884403c425f51ae1ec40a47a2148965e4db0db4e13",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u3_cluster_review.py",
+    "entrypoint_sha256": "828155e3ddb82dad55a339e921bd17f33754517058e94a4f208e3075cd660a93"
+  },
+  "cells": 28243,
+  "clusters": 33,
+  "inputs": [
+    {
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u3_qc\\GSM9057712_qc.h5ad",
+      "sha256": "14efcfca040469b7056aa93a2c22955ffabc33cf66f736f8ff8a8623c00a3d4c"
+    },
+    {
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u3_qc\\GSM9057713_qc.h5ad",
+      "sha256": "3fabdee69ff18bfbd2ea6b3f4fb179f5e140a0d1d2654601d5c3b9cb95009c05"
+    },
+    {
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u3_qc\\GSM9057709_qc.h5ad",
+      "sha256": "933f82c0e194ca57f23a7af660c831b3d4f5cb5522b631c07673e781e40e0970"
+    },
+    {
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u3_qc\\GSM9057716_qc.h5ad",
+      "sha256": "9ab91cb9fb941e8a77486c2e54a18bd7febbc769ba0ce5918c4e2a892148b214"
+    },
+    {
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u3_qc\\GSM9057717_qc.h5ad",
+      "sha256": "837f7d5d61038cf6ed1d421a78a97c0437f521083a20f7153d200889a73c1166"
+    },
+    {
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u3_qc\\GSM9057720_qc.h5ad",
+      "sha256": "39dbcfa447195bb0f2f200a7335c487df27a9764ecdfb640301b6db81d92089a"
+    },
+    {
+      "file": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u3_qc\\GSM9057721_qc.h5ad",
+      "sha256": "e8098ca71cb0834ca0a641d975ae1384a8111db5190c73731b8e848a064dbc20"
+    }
+  ],
+  "updated_utc": "2026-09-24T08:14:01.442458+00:00",
+  "elapsed_seconds": 243.27
+}

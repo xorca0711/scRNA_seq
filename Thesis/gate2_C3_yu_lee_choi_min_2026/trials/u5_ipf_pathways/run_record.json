@@ -1,0 +1,109 @@
+{
+  "started_utc": "2026-09-24T08:19:28.794613+00:00",
+  "status": "completed_results_require_interpretation",
+  "pid": 22508,
+  "spec_sha256": "2a2f123513a9a169e681c9ee8eef6b7b53ec45d8229edbd7323d67e224c00e5a",
+  "R_code_sha256": "444d676ab8c5c055042255b248d95e4e7482875e3c76d5a10370961fb85a671c",
+  "code": {
+    "commit": "e9d79e0e5269249f8cf12c8a45ba70ac7009da33",
+    "tracked_diff_sha256": "8e32ffb6bbba74385dfc8277cd25202b7e1fc8ca6e06ac86d6056b2dce9dd55b",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_run_ipf.py",
+    "entrypoint_sha256": "85992057caad90ab2e9015ae33e08d218e8d23051961b2e7578261f7df3dd1a4"
+  },
+  "completed_cohorts": [
+    "GSE136831",
+    "GSE135893"
+  ],
+  "interpretation": "previously inspected observational IPF cohorts; not mouse treatment or independent validation",
+  "current_cohort": "GSE135893",
+  "elapsed_seconds": 266.8,
+  "outputs": [
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/.gitignore",
+      "sha256": "cef6e15f7a441b099f773154f1aeb2b4ce9348b11e35bcf6da5d8cefba2f8ff5"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE135893_AT2___broad___DE.csv.gz",
+      "sha256": "bc1843e1d37e9eb377cb8bdf85385528951882e8b5c959b82b003b74b22d9565"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE135893_AT2_AT2_DE.csv.gz",
+      "sha256": "bc1843e1d37e9eb377cb8bdf85385528951882e8b5c959b82b003b74b22d9565"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE135893_camera.csv",
+      "sha256": "7993843239706db80ef0227b742b74d08dbaf84fd6f90f17be8af1fb2dea3ba8"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE135893_design.csv",
+      "sha256": "a04b0c909aaf71087fc9c27cc0298366663bfd71b200256db23271463188b6f7"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE135893_eligibility.csv",
+      "sha256": "77812dd84aa11d423a5db524a571365c04744a7a2450132923f053d4d0a6d7c4"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE135893_fibroblasts___broad___DE.csv.gz",
+      "sha256": "9ee469d8eaa0274e82abf36229bf3a28ec804d72baf0726610480b4950a90adb"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE135893_macrophages___broad___DE.csv.gz",
+      "sha256": "6e2a8e257769b2bf201e829b57249f154786ad41e56a00211645e75873626ecb"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE135893_macrophages_Macrophages_DE.csv.gz",
+      "sha256": "b576a7aef458061ee66304761f01eab45e040b650953cbe8d3f78307ef5c67ad"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE135893_R_session.txt",
+      "sha256": "524d5062b844d09af8d70fa01ed49952356c14e8bf196e60cd99215dcd0ba61a"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE136831_AT2___broad___DE.csv.gz",
+      "sha256": "cca892de985527ef2067921abd337ca4be54d81fb37e27af99b8456d9cd10d74"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE136831_AT2_ATII_DE.csv.gz",
+      "sha256": "cca892de985527ef2067921abd337ca4be54d81fb37e27af99b8456d9cd10d74"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE136831_camera.csv",
+      "sha256": "7a85c5791bbeaae8e2466c82b535bd4636fde40db38e7dd7849fde6291ac56f9"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE136831_design.csv",
+      "sha256": "1ef95e619930b11bedd9caf899f753c0e7c119073aa4e09d28b6a5c914249529"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE136831_eligibility.csv",
+      "sha256": "d6e57cbe648c36bc898141f4716705a8d2d1d4e7b9ea574a6561b07cd0f801ea"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE136831_fibroblasts___broad___DE.csv.gz",
+      "sha256": "1d70c0fec5f02dcce15b86c0efdd9cc45a17a271cfaf29199d74be21c8f677ae"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE136831_fibroblasts_Fibroblast_DE.csv.gz",
+      "sha256": "eca41b925adb788d782d782c52d6ccf5ead1c3813ee16227ed16dde46b7f1877"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE136831_macrophages___broad___DE.csv.gz",
+      "sha256": "802aa9f2ffe83b68d46e26e3c1298e44291933b5fb4338c99455058823ea3cde"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE136831_macrophages_Macrophage_Alveolar_DE.csv.gz",
+      "sha256": "009873241286df1678a02a23eaf7fff38dbf9abf940c69d7749d6b67e3577db4"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE136831_macrophages_Macrophage_DE.csv.gz",
+      "sha256": "e49d5fb8a6f04ae619f660e283577e513d7e349d383941798586d447b4613933"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE136831_R_session.txt",
+      "sha256": "524d5062b844d09af8d70fa01ed49952356c14e8bf196e60cd99215dcd0ba61a"
+    }
+  ],
+  "updated_utc": "2026-09-24T08:23:56.324174+00:00"
+}

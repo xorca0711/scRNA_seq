@@ -1,0 +1,2320 @@
+{
+  "schema_version": 1,
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE141259&targ=all&form=xml&view=full",
+  "retrieved_utc": "2026-09-24T07:15:57.911872+00:00",
+  "sha256": "13ee0314fc6bc2c38b8900002fa66f71bbf30bd03a9580134cc9b7ab3ed5587a",
+  "series": {
+    "accession": "GSE141259",
+    "title": [
+      "Longitudinal single-cell transcriptomics analysis of mouse lung upon bleomycin-induced injury"
+    ],
+    "pubmed_id": [
+      "32678092"
+    ],
+    "summary": [
+      "Two single-cell RNA sequencing data sets were generated called \"Whole lung\" and \"High Resolution\". The \"Whole lung\" single-cell mRNAseq libraries were generated with Drop-Seq from whole mouse lungs upon bleomycin-induced injury and followed over time. Samples were taken at days 3 (n = 3), 7 (n = 5), 10 (n = 3), 14 (n = 4), 21 (n = 4) and 28 (n = 2). Control samples (n = 7) were administered saline only, also indicated with PBS or day0. The \"High resolution\" single-cell mRNAseq libraries were generated with Drop-Seq from the epithelial compartment of mouse lungs upon bleomycin-induced injury and followed over time. Samples were taken daily for two weeks and at days 21, 28, 36, 54 after injury. Control samples (n = 2) were administered saline only, also indicated with PBS or day0."
+    ],
+    "overall_design": [
+      "Single-cell transcriptomics time-course experiment."
+    ],
+    "sample_id": [
+      "GSM4200035",
+      "GSM4200036",
+      "GSM4200037",
+      "GSM4200038",
+      "GSM4200039",
+      "GSM4200040",
+      "GSM4200041",
+      "GSM4200042",
+      "GSM4200043",
+      "GSM4200044",
+      "GSM4200045",
+      "GSM4200046",
+      "GSM4200047",
+      "GSM4200048",
+      "GSM4200049",
+      "GSM4200050",
+      "GSM4200051",
+      "GSM4200052",
+      "GSM4200053",
+      "GSM4200054",
+      "GSM4200055",
+      "GSM4200056",
+      "GSM4200057",
+      "GSM4200058",
+      "GSM4200059",
+      "GSM4200060",
+      "GSM4200061",
+      "GSM4200062",
+      "GSM4200063",
+      "GSM4200064",
+      "GSM4200065",
+      "GSM4200066",
+      "GSM4200067",
+      "GSM4200068",
+      "GSM4200069",
+      "GSM4200070",
+      "GSM4200071",
+      "GSM4200072",
+      "GSM4200073",
+      "GSM4200074",
+      "GSM4200075",
+      "GSM4200076",
+      "GSM4200077",
+      "GSM4200078",
+      "GSM4200079",
+      "GSM4200080",
+      "GSM4200081",
+      "GSM4200082",
+      "GSM4200083",
+      "GSM4200084",
+      "GSM4200085",
+      "GSM4200086",
+      "GSM4200087",
+      "GSM4200088",
+      "GSM4200089",
+      "GSM4200090",
+      "GSM4200091",
+      "GSM4200092",
+      "GSM4200093",
+      "GSM4200094"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_HighResolution_barcodes.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_HighResolution_cellinfo.csv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_HighResolution_genes.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_HighResolution_rawcounts.mtx.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_WholeLung_barcodes.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_WholeLung_cellinfo.csv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_WholeLung_genes.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_WholeLung_rawcounts.mtx.gz"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA592973",
+      "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRP234414"
+    ]
+  },
+  "samples": [
+    {
+      "accession": "GSM4200035",
+      "title": [
+        "hires_d36_1 [muc9265]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day36"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day36",
+        "experiment: high_resolution",
+        "number of cells: 1089"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446376",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255519"
+      ]
+    },
+    {
+      "accession": "GSM4200036",
+      "title": [
+        "hires_d7_1 [muc9267]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day7"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day7",
+        "experiment: high_resolution",
+        "number of cells: 728"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446426",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255536"
+      ]
+    },
+    {
+      "accession": "GSM4200037",
+      "title": [
+        "hires_d11_1 [muc9268]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day11"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day11",
+        "experiment: high_resolution",
+        "number of cells: 972"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446425",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255537"
+      ]
+    },
+    {
+      "accession": "GSM4200038",
+      "title": [
+        "hires_d9_1 [muc9269]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day9"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day9",
+        "experiment: high_resolution",
+        "number of cells: 686"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446424",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255538"
+      ]
+    },
+    {
+      "accession": "GSM4200039",
+      "title": [
+        "hires_d8_1 [muc9270]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day8"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day8",
+        "experiment: high_resolution",
+        "number of cells: 598"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446423",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255539"
+      ]
+    },
+    {
+      "accession": "GSM4200040",
+      "title": [
+        "hires_d0_1 [muc9271]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day0"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day0",
+        "experiment: high_resolution",
+        "number of cells: 1042"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446422",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255540"
+      ]
+    },
+    {
+      "accession": "GSM4200041",
+      "title": [
+        "hires_d7_2 [muc9272]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day7"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day7",
+        "experiment: high_resolution",
+        "number of cells: 774"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446420",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255541"
+      ]
+    },
+    {
+      "accession": "GSM4200042",
+      "title": [
+        "hires_d3_1 [muc9273]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day3"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day3",
+        "experiment: high_resolution",
+        "number of cells: 1165"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446419",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255542"
+      ]
+    },
+    {
+      "accession": "GSM4200043",
+      "title": [
+        "hires_d2_1 [muc9274]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day2"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day2",
+        "experiment: high_resolution",
+        "number of cells: 1295"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446418",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255543"
+      ]
+    },
+    {
+      "accession": "GSM4200044",
+      "title": [
+        "hires_d4_1 [muc9275]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day4"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day4",
+        "experiment: high_resolution",
+        "number of cells: 1223"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446417",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255552"
+      ]
+    },
+    {
+      "accession": "GSM4200045",
+      "title": [
+        "hires_d15_1 [muc9276]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day15"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day15",
+        "experiment: high_resolution",
+        "number of cells: 1273"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446416",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255553"
+      ]
+    },
+    {
+      "accession": "GSM4200046",
+      "title": [
+        "hires_d11_2 [muc9277]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day11"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day11",
+        "experiment: high_resolution",
+        "number of cells: 806"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446415",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255554"
+      ]
+    },
+    {
+      "accession": "GSM4200047",
+      "title": [
+        "hires_d5_1 [muc9278]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day5"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day5",
+        "experiment: high_resolution",
+        "number of cells: 1248"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446413",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255555"
+      ]
+    },
+    {
+      "accession": "GSM4200048",
+      "title": [
+        "hires_d54_1 [muc9279]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day54"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day54",
+        "experiment: high_resolution",
+        "number of cells: 879"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446412",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255556"
+      ]
+    },
+    {
+      "accession": "GSM4200049",
+      "title": [
+        "hires_d15_2 [muc9280]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day15"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day15",
+        "experiment: high_resolution",
+        "number of cells: 982"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446410",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255557"
+      ]
+    },
+    {
+      "accession": "GSM4200050",
+      "title": [
+        "hires_d36_2 [muc9281]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day36"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day36",
+        "experiment: high_resolution",
+        "number of cells: 1144"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446409",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255558"
+      ]
+    },
+    {
+      "accession": "GSM4200051",
+      "title": [
+        "hires_d6_1 [muc9282]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day6"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day6",
+        "experiment: high_resolution",
+        "number of cells: 882"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446408",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255559"
+      ]
+    },
+    {
+      "accession": "GSM4200052",
+      "title": [
+        "hires_d12_1 [muc9283]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day12"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day12",
+        "experiment: high_resolution",
+        "number of cells: 797"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446406",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255528"
+      ]
+    },
+    {
+      "accession": "GSM4200053",
+      "title": [
+        "hires_d2_2 [muc9284]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day2"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day2",
+        "experiment: high_resolution",
+        "number of cells: 850"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446405",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255529"
+      ]
+    },
+    {
+      "accession": "GSM4200054",
+      "title": [
+        "hires_d10_1 [muc9285]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day10"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day10",
+        "experiment: high_resolution",
+        "number of cells: 1247"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446403",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255530"
+      ]
+    },
+    {
+      "accession": "GSM4200055",
+      "title": [
+        "hires_d21_1 [muc9286]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day21"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day21",
+        "experiment: high_resolution",
+        "number of cells: 2088"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446402",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255531"
+      ]
+    },
+    {
+      "accession": "GSM4200056",
+      "title": [
+        "hires_d0_2 [muc9287]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day0"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day0",
+        "experiment: high_resolution",
+        "number of cells: 1334"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446400",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255532"
+      ]
+    },
+    {
+      "accession": "GSM4200057",
+      "title": [
+        "hires_d13_1 [muc9288]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day13"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day13",
+        "experiment: high_resolution",
+        "number of cells: 1133"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446399",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255533"
+      ]
+    },
+    {
+      "accession": "GSM4200058",
+      "title": [
+        "hires_d4_2 [muc9289]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day4"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day4",
+        "experiment: high_resolution",
+        "number of cells: 1392"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446397",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255534"
+      ]
+    },
+    {
+      "accession": "GSM4200059",
+      "title": [
+        "hires_d5_2 [muc9290]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day5"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day5",
+        "experiment: high_resolution",
+        "number of cells: 1156"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446396",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255535"
+      ]
+    },
+    {
+      "accession": "GSM4200060",
+      "title": [
+        "hires_d8_2 [muc9291]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day8"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day8",
+        "experiment: high_resolution",
+        "number of cells: 595"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446395",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255560"
+      ]
+    },
+    {
+      "accession": "GSM4200061",
+      "title": [
+        "hires_d3_2 [muc9292]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day3"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day3",
+        "experiment: high_resolution",
+        "number of cells: 1301"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446394",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255561"
+      ]
+    },
+    {
+      "accession": "GSM4200062",
+      "title": [
+        "hires_d10_2 [muc9293]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day10"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day10",
+        "experiment: high_resolution",
+        "number of cells: 996"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446393",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255562"
+      ]
+    },
+    {
+      "accession": "GSM4200063",
+      "title": [
+        "hires_d12_2 [muc9294]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day12"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day12",
+        "experiment: high_resolution",
+        "number of cells: 1067"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446391",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255563"
+      ]
+    },
+    {
+      "accession": "GSM4200064",
+      "title": [
+        "hires_d9_2 [muc9295]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day9"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day9",
+        "experiment: high_resolution",
+        "number of cells: 861"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446390",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255564"
+      ]
+    },
+    {
+      "accession": "GSM4200065",
+      "title": [
+        "hires_d13_2 [muc9296]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day13"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day13",
+        "experiment: high_resolution",
+        "number of cells: 913"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446388",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255565"
+      ]
+    },
+    {
+      "accession": "GSM4200066",
+      "title": [
+        "hires_d28_1 [muc9297]"
+      ],
+      "source_name_ch1": [
+        "high_resolution_Lung epithelium_day28"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung epithelium",
+        "injury timecourse: day28",
+        "experiment: high_resolution",
+        "number of cells: 1552"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446387",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255566"
+      ]
+    },
+    {
+      "accession": "GSM4200067",
+      "title": [
+        "wlung_PBS_1 [muc4169]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day0"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day0",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446386",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255567"
+      ]
+    },
+    {
+      "accession": "GSM4200068",
+      "title": [
+        "wlung_PBS_2 [muc4170]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day0"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day0",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446385",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255520"
+      ]
+    },
+    {
+      "accession": "GSM4200069",
+      "title": [
+        "wlung_d7_1 [muc4171]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day7"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day7",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446384",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255521"
+      ]
+    },
+    {
+      "accession": "GSM4200070",
+      "title": [
+        "wlung_PBS_3 [muc4172]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day0"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day0",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446383",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255522"
+      ]
+    },
+    {
+      "accession": "GSM4200071",
+      "title": [
+        "wlung_PBS_4 [muc4173]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day0"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day0",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446382",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255523"
+      ]
+    },
+    {
+      "accession": "GSM4200072",
+      "title": [
+        "wlung_d3_1 [muc4631]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day3"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day3",
+        "experiment: whole_lung",
+        "number of cells: 851"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446381",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255524"
+      ]
+    },
+    {
+      "accession": "GSM4200073",
+      "title": [
+        "wlung_d7_2 [muc4632]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day7"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day7",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446380",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255525"
+      ]
+    },
+    {
+      "accession": "GSM4200074",
+      "title": [
+        "wlung_d7_3 [muc4633]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day7"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day7",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446379",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255526"
+      ]
+    },
+    {
+      "accession": "GSM4200075",
+      "title": [
+        "wlung_d7_4 [muc4634]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day7"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day7",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446378",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255527"
+      ]
+    },
+    {
+      "accession": "GSM4200076",
+      "title": [
+        "wlung_d10_1 [muc4635]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day10"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day10",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446377",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255568"
+      ]
+    },
+    {
+      "accession": "GSM4200077",
+      "title": [
+        "wlung_d10_2 [muc4636]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day10"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day10",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446444",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255569"
+      ]
+    },
+    {
+      "accession": "GSM4200078",
+      "title": [
+        "wlung_d14_1 [muc4637]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day14"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day14",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446443",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255570"
+      ]
+    },
+    {
+      "accession": "GSM4200079",
+      "title": [
+        "wlung_d21_1 [muc4638]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day21"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day21",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446442",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255571"
+      ]
+    },
+    {
+      "accession": "GSM4200080",
+      "title": [
+        "wlung_d21_2 [muc4639]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day21"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day21",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446441",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255572"
+      ]
+    },
+    {
+      "accession": "GSM4200081",
+      "title": [
+        "wlung_PBS_5 [muc4640]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day0"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day0",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446440",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255573"
+      ]
+    },
+    {
+      "accession": "GSM4200082",
+      "title": [
+        "wlung_d28 [muc4641]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day28"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day28",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446439",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255574"
+      ]
+    },
+    {
+      "accession": "GSM4200083",
+      "title": [
+        "wlung_d28 [muc4642]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day28"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day28",
+        "experiment: whole_lung",
+        "number of cells: 1120"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446438",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255575"
+      ]
+    },
+    {
+      "accession": "GSM4200084",
+      "title": [
+        "wlung_d3_2 [muc4643]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day3"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day3",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446437",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255544"
+      ]
+    },
+    {
+      "accession": "GSM4200085",
+      "title": [
+        "wlung_PBS_6 [muc4644]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day0"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day0",
+        "experiment: whole_lung",
+        "number of cells: 228"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446436",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255545"
+      ]
+    },
+    {
+      "accession": "GSM4200086",
+      "title": [
+        "wlung_d7_5 [muc4645]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day7"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day7",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446435",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255546"
+      ]
+    },
+    {
+      "accession": "GSM4200087",
+      "title": [
+        "wlung_d10_3 [muc4646]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day10"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day10",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446434",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255547"
+      ]
+    },
+    {
+      "accession": "GSM4200088",
+      "title": [
+        "wlung_d14_2 [muc4647]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day14"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day14",
+        "experiment: whole_lung",
+        "number of cells: 686"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446433",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255548"
+      ]
+    },
+    {
+      "accession": "GSM4200089",
+      "title": [
+        "wlung_d21_3 [muc4648]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day21"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day21",
+        "experiment: whole_lung",
+        "number of cells: 771"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446432",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255549"
+      ]
+    },
+    {
+      "accession": "GSM4200090",
+      "title": [
+        "wlung_d21_4 [muc4649]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day21"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day21",
+        "experiment: whole_lung",
+        "number of cells: 835"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446431",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255550"
+      ]
+    },
+    {
+      "accession": "GSM4200091",
+      "title": [
+        "wlung_d3_3 [muc4653]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day3"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day3",
+        "experiment: whole_lung",
+        "number of cells: 248"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446430",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255551"
+      ]
+    },
+    {
+      "accession": "GSM4200092",
+      "title": [
+        "wlung_d14_3 [muc4655]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day14"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day14",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446429",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255576"
+      ]
+    },
+    {
+      "accession": "GSM4200093",
+      "title": [
+        "wlung_d14_4 [muc4656]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day14"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day14",
+        "experiment: whole_lung",
+        "number of cells: 1199"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446428",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255577"
+      ]
+    },
+    {
+      "accession": "GSM4200094",
+      "title": [
+        "wlung_PBS_7 [muc4657]"
+      ],
+      "source_name_ch1": [
+        "whole_lung_Whole lung_day0"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Whole lung",
+        "injury timecourse: day0",
+        "experiment: whole_lung",
+        "number of cells: 679"
+      ],
+      "data_processing": [
+        "For the single-cell RNA-seq data the Drop-Seq core computational pipeline was used for processing next generation sequencing reads of the scRNA-seq data, as previously described (Pubmed ID: 26000488). For the whole lung tissue and flow-sorted bulk RNA-seq data, STAR (Pubmed ID:  23104886) was used to align the reads to reference genome mm10 followed by featureCounts (Pubmed ID: 24227677) for gene summarization.\nGenome_build: mm10\nSupplementary_files_format_and_content: For the \"High resolution\" experiment: Raw count matrix (HighResolution_rawcounts.mtx) from Drop-seq experiments with 24051 genes and 34068 cells in market matrix format and corresponding column (HighResolution_barcodes.txt) and row (HighResolution_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv). For the \"Whole lung\" experiment: Raw count matrix (WholeLung_rawcounts.mtx) from Drop-seq experiments with 23400 genes and 29297 cells in market matrix format and corresponding column (WholeLung_barcodes.txt) and row (WholeLung_genes.txt) labels and cell-level metadata (WholeLung_cellinfo.csv)."
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13446427",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7255578"
+      ]
+    }
+  ],
+  "scope": "Metadata only; sample records are not independent biological units."
+}

@@ -1,0 +1,60 @@
+{
+  "run_utc": "2026-09-24T07:21:18.321888+00:00",
+  "code": {
+    "commit": "e9d79e0e5269249f8cf12c8a45ba70ac7009da33",
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracked_changes_present": false,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u1_count_input_preflight.py",
+    "entrypoint_sha256": "833c56ca5138e406b4b05a5218996a3c2df002e828077bc8891fef4fb20acc5c"
+  },
+  "spec_sha256": "8d76dd8dd8a62e5fc604f6f7b11e015987113db175c2a2a0bd7d6fa7af11cfaf",
+  "metadata_sha256": "cc5090aa82892b9ed7b3f4bf71a8f14c237a037cff15f902a3bd291eded0dbbe",
+  "inputs": [
+    {
+      "gsm": "GSM9057712",
+      "kind": "matrix",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057712/suppl/GSM9057712_aIL1B_9_matrix.mtx.gz",
+      "bytes": 19730091,
+      "sha256": "1bc20e1606ace0e1c0c0a947baea0535efc327b69b29082052aab248fac93cb1"
+    },
+    {
+      "gsm": "GSM9057712",
+      "kind": "features",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057712/suppl/GSM9057712_aIL1B_9_features.tsv.gz",
+      "bytes": 279361,
+      "sha256": "1b4adf48df32800a536545d944ba20865855d44e40685b5c77cc6d5495616d64"
+    },
+    {
+      "gsm": "GSM9057712",
+      "kind": "barcodes",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057712/suppl/GSM9057712_aIL1B_9_barcodes.tsv.gz",
+      "bytes": 18568,
+      "sha256": "32a22b2bf72c798a1a8f6a805bb9fb09101f705ff5beb8aade425bfddf4b0598"
+    },
+    {
+      "gsm": "GSM9057713",
+      "kind": "matrix",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057713/suppl/GSM9057713_aIL1B_10_matrix.mtx.gz",
+      "bytes": 24505554,
+      "sha256": "003509ca15cb9f050e2bac48b5b6ef55dc3b4a586c37f9190b4e99e2e0062a35"
+    },
+    {
+      "gsm": "GSM9057713",
+      "kind": "features",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057713/suppl/GSM9057713_aIL1B_10_features.tsv.gz",
+      "bytes": 279361,
+      "sha256": "5848bc810d1551af708e07cad90139e2eb24f83141125757c43180a43316194b"
+    },
+    {
+      "gsm": "GSM9057713",
+      "kind": "barcodes",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057713/suppl/GSM9057713_aIL1B_10_barcodes.tsv.gz",
+      "bytes": 21945,
+      "sha256": "2d7b9915234fbf4ed9bab3979b7e060f3cf9993b22e8dd66f8e55c210f47d21b"
+    }
+  ],
+  "total_compressed_bytes": 44834880,
+  "biological_effects_estimated": false,
+  "limits": "Two library examples; not paired animals; no between-arm inference; coordinate duplicates are not tested."
+}

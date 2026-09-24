@@ -1,0 +1,126 @@
+{
+  "run_utc": "2026-09-24T07:16:49.785864+00:00",
+  "code": {
+    "commit": "e9d79e0e5269249f8cf12c8a45ba70ac7009da33",
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracked_changes_present": false,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u0_geo_design_audit.py",
+    "entrypoint_sha256": "93aa9cf8410705ce59a1105d379f7d5248581fd9e5e18e9104e9c5ac3fc0b4a4"
+  },
+  "mode": "retrieval",
+  "accessions": [
+    {
+      "accession": "GSE267226",
+      "sample_records": 5,
+      "title": [
+        "An aberrant immune-epithelial progenitor niche drives post-viral lung sequelae [human]"
+      ],
+      "assays": {
+        "OTHER": 5
+      },
+      "source_sha256": "bb9a077070ab67d83b27f7aef930d6034e9e9475c3eb349eabce4465bdfd08f8"
+    },
+    {
+      "accession": "GSE267228",
+      "sample_records": 4,
+      "title": [
+        "An aberrant immune-epithelial progenitor niche drives post-viral lung sequelae [mouse]"
+      ],
+      "assays": {
+        "OTHER": 4
+      },
+      "source_sha256": "9d304d97cdd78cf449d09e5fd91f09af9e604b761c2d423d8bd3f9ca735eb99a"
+    },
+    {
+      "accession": "GSE141259",
+      "sample_records": 60,
+      "title": [
+        "Longitudinal single-cell transcriptomics analysis of mouse lung upon bleomycin-induced injury"
+      ],
+      "assays": {
+        "RNA-Seq": 60
+      },
+      "source_sha256": "13ee0314fc6bc2c38b8900002fa66f71bbf30bd03a9580134cc9b7ab3ed5587a"
+    },
+    {
+      "accession": "GSE277777",
+      "sample_records": 32,
+      "title": [
+        "Critical role for a high-plasticity cell state in lung cancer"
+      ],
+      "assays": {
+        "RNA-Seq": 22,
+        "OTHER": 10
+      },
+      "source_sha256": "17bfb513d5e5ab215f74e5b81a6bad53bc1b349ac258461b1c5cc5f399f5cb45"
+    },
+    {
+      "accession": "GSE222901",
+      "sample_records": 35,
+      "title": [
+        "Single-cell analysis of tobacco-associated lung adenocarcinoma development"
+      ],
+      "assays": {
+        "RNA-Seq": 35
+      },
+      "source_sha256": "ce0d0516c6a33b109aa9ee706bcc56c43df89e573756eb1ab70c9222201f50bf"
+    },
+    {
+      "accession": "GSE300288",
+      "sample_records": 31,
+      "title": [
+        "Single-cell and spatial transcriptomics analysis of tobacco-associated lung adenocarcinoma development, and in response to targeting inflammation alone or in combination with immune checkpoint blockade in precancerous phase [scRNA-seq]"
+      ],
+      "assays": {
+        "RNA-Seq": 31
+      },
+      "source_sha256": "a1757bf7055f653de19ece9574b87ce635264f21a8fcd1cccc7113aa0aaf9463"
+    },
+    {
+      "accession": "GSE300293",
+      "sample_records": 19,
+      "title": [
+        "Single-cell and spatial transcriptomics analysis of tobacco-associated lung adenocarcinoma development, and in response to targeting inflammation alone or in combination with immune checkpoint blockade in precancerous phase [Spatial transcriptomics]"
+      ],
+      "assays": {
+        "OTHER": 19
+      },
+      "source_sha256": "38e976e0993b17a4ba8da2f86de84bd1c08442fb3fd652432e4116c6e3b966d1"
+    },
+    {
+      "accession": "GSE307534",
+      "sample_records": 56,
+      "title": [
+        "Spatial transcriptomics analysis of normal lung tissues, precursor lung lesions and invasive lung adenocarcinomas"
+      ],
+      "assays": {
+        "OTHER": 56
+      },
+      "source_sha256": "d33d0f1a8a7aa763c137b444c61de7806646a5a3b34530b83cc6ebeff0ef48d6"
+    },
+    {
+      "accession": "GSE308103",
+      "sample_records": 75,
+      "title": [
+        "Single-nucleus RNA-sequencing (snRNA-seq) analysis of normal lung tissues, precursor lung lesions and invasive lung adenocarcinomas"
+      ],
+      "assays": {
+        "RNA-Seq": 75
+      },
+      "source_sha256": "f9f75b744377021fc128478a7b35f8ed1072624e9475c0fee595c7f1b65b03ea"
+    },
+    {
+      "accession": "GSE307529",
+      "sample_records": 54,
+      "title": [
+        "Whole-exome sequencing of normal lung tissues, precursor lesions and invasive lung adenocarcinomas"
+      ],
+      "assays": {
+        "OTHER": 54
+      },
+      "source_sha256": "4ba9d4f4f2c327ea59fabe818ca3640d12abe0f03b1b4a57fc8a7a2e6300458d"
+    }
+  ],
+  "expression_analysis_run": false
+}

@@ -1,0 +1,269 @@
+{
+  "checked_utc": "2026-09-24T10:08:46.421770+00:00",
+  "status": "passed",
+  "scope": "file completeness, fixed-pair/resource membership, row uniqueness, score bounds, detection eligibility and disabled cell P values; not biological validation or missing-edge interpretation",
+  "donors": 25,
+  "donors_by_disease": {
+    "IPF": 15,
+    "control": 10
+  },
+  "output_files": 50,
+  "empty_files": [],
+  "rows_by_resource": {
+    "consensus": 3449,
+    "cellchatdb": 884
+  },
+  "spec_sha256": "246e61532bd3c6bb0c0907476e6b13324398dc79598316a1fb5bcb708ab1a64d",
+  "files": [
+    {
+      "file": "consensus_010I.csv",
+      "rows": 108,
+      "sha256": "06990f049251830b8ac0990accfdd991077a9a1c62ee27e2a083664a59921a4e"
+    },
+    {
+      "file": "consensus_021I.csv",
+      "rows": 242,
+      "sha256": "516b816ca58de40925b77f0c1d4c51199e4dc9c5d0fde782ab588b96f65c4244"
+    },
+    {
+      "file": "consensus_022I.csv",
+      "rows": 370,
+      "sha256": "4ec9befa63c043143aaf181f137d9b9235fb9321c16f1662761b92bccad05a40"
+    },
+    {
+      "file": "consensus_034I.csv",
+      "rows": 46,
+      "sha256": "91296f6ed4414016eb45fc70fa365518809742ed0ad1c77d60cd8593246aa0f0"
+    },
+    {
+      "file": "consensus_040I.csv",
+      "rows": 224,
+      "sha256": "3792ff130faf1fff9b080a89b900002f5816733178443193d8d26b59517f9dcd"
+    },
+    {
+      "file": "consensus_041I.csv",
+      "rows": 116,
+      "sha256": "433ff2c7f1a1f2057ca87b8f161d1696425494376149fe5e428cf8cc75089615"
+    },
+    {
+      "file": "consensus_051I.csv",
+      "rows": 218,
+      "sha256": "323550d82f0a17b0b7d68d69ec36c84c5433c20619d30b1a35ccec8548bff52b"
+    },
+    {
+      "file": "consensus_063I.csv",
+      "rows": 90,
+      "sha256": "454e328d38f0a51f2f13771e14644d8530ba133ddf9b454e3761ec01a27cf6b4"
+    },
+    {
+      "file": "consensus_098C.csv",
+      "rows": 155,
+      "sha256": "3824a90452ee9089c2c398d4703949c3f169ec4c02413efb91089434022a0d02"
+    },
+    {
+      "file": "consensus_133C.csv",
+      "rows": 50,
+      "sha256": "1fa7514d987d84e9290e7ff40f110fce2057210c307b128967b0244bb96e4c2f"
+    },
+    {
+      "file": "consensus_135I.csv",
+      "rows": 109,
+      "sha256": "6a16fbf82b67adf8844ce1d7f15279d5eb463f2c8c75b4b4fcb839a971b876d9"
+    },
+    {
+      "file": "consensus_1372C.csv",
+      "rows": 198,
+      "sha256": "043c8c3536dd3d4b6a08908d109c9411cf1063267292336d16d15eb171df9690"
+    },
+    {
+      "file": "consensus_138I.csv",
+      "rows": 134,
+      "sha256": "416171673c8858ffffb35aee57bddda353bb34ac098e11bf56dc111183e2089b"
+    },
+    {
+      "file": "consensus_158I.csv",
+      "rows": 33,
+      "sha256": "45b178d2d3ee07aa984a0f16f31a72848d5461ed43414d29b570af749a016628"
+    },
+    {
+      "file": "consensus_160C.csv",
+      "rows": 35,
+      "sha256": "2f2ad755d8f38958181d56edbc85345ea6f3cd24605617c653d6500fe7edab9d"
+    },
+    {
+      "file": "consensus_174I.csv",
+      "rows": 103,
+      "sha256": "edcb925b0ce8eeeb21933d0f02f940db17bb7ff3d0e1c1b195552b5f2aa02a50"
+    },
+    {
+      "file": "consensus_192C.csv",
+      "rows": 266,
+      "sha256": "e97fc65c952deaf542a7ca90e010148ec0caa550b090fbe120b5b596e61e971b"
+    },
+    {
+      "file": "consensus_222C.csv",
+      "rows": 308,
+      "sha256": "ce0028c5b5fa22988eb16824c8facf8bca878a757d24bb7cd6b67c1f613185b4"
+    },
+    {
+      "file": "consensus_225I.csv",
+      "rows": 139,
+      "sha256": "e04be13ca1cf3a29588206828570fbfd0ae8eea16637024393c4ab7ffdc8c33c"
+    },
+    {
+      "file": "consensus_226C.csv",
+      "rows": 68,
+      "sha256": "27f7e90390a6c553fa716d27211e73e41ca1cb8b43b8c5f92bc751201955e2e9"
+    },
+    {
+      "file": "consensus_228I.csv",
+      "rows": 240,
+      "sha256": "2f42fd1cca1b5b16ba9f6fa832f533de959fe3366c4c5c979e85da316914da51"
+    },
+    {
+      "file": "consensus_296C.csv",
+      "rows": 36,
+      "sha256": "621780f8155bff69467e300d671db6ba7befd5e5d19ead214d4e4f2139e7be6a"
+    },
+    {
+      "file": "consensus_396C.csv",
+      "rows": 19,
+      "sha256": "066af9d91549c2ed11dc932311c4100c9c6c8f120dda36c3be6351fc945e4ec4"
+    },
+    {
+      "file": "consensus_454C.csv",
+      "rows": 32,
+      "sha256": "6d8daa8c76fcbbd13d42963c135a771c9c8897f2fb10c9ad40847bcab208b581"
+    },
+    {
+      "file": "consensus_49I.csv",
+      "rows": 110,
+      "sha256": "23460969970a7c12b7d619d4f445b722f5e0bbd7899a61387d357876c79322eb"
+    },
+    {
+      "file": "cellchatdb_010I.csv",
+      "rows": 32,
+      "sha256": "bd5848fd435c9de904ba2df4b1dd6e6e60c5f22c0c644ed6e8df2815abc1b9d1"
+    },
+    {
+      "file": "cellchatdb_021I.csv",
+      "rows": 60,
+      "sha256": "fda4e560e6727b0206c289ff7dcf7e40317959c86b463a776ab5767b153434a5"
+    },
+    {
+      "file": "cellchatdb_022I.csv",
+      "rows": 100,
+      "sha256": "1ce2ccf55849f98b871056745c75c5d2d04437929a532dade50dde5055a7e1f5"
+    },
+    {
+      "file": "cellchatdb_034I.csv",
+      "rows": 10,
+      "sha256": "d6ad19a2910589eef064216be5ace32fe4330fbdc60baf3c19851ff552b93b22"
+    },
+    {
+      "file": "cellchatdb_040I.csv",
+      "rows": 70,
+      "sha256": "26c83360e980cb8657dd442b135b5caa914a3420bf8594de024995a53e195a71"
+    },
+    {
+      "file": "cellchatdb_041I.csv",
+      "rows": 28,
+      "sha256": "9cd56733095f6a5b61b4b88d5f269860c28e2ea8187246ec9b0f47efa286585e"
+    },
+    {
+      "file": "cellchatdb_051I.csv",
+      "rows": 48,
+      "sha256": "f448d5d5bc69752356847b56a4f7ade780fdd1e10ba20dd5d18c937917dcc0f6"
+    },
+    {
+      "file": "cellchatdb_063I.csv",
+      "rows": 16,
+      "sha256": "1b35a6ff9f70924db09cb869cf00db5d1cc08bed82405e3705bc3610cc9bcd5c"
+    },
+    {
+      "file": "cellchatdb_098C.csv",
+      "rows": 27,
+      "sha256": "21144bb29fb949ceb4a2c9f441939391f94492e9f8945cc1aece37542c6e3e2d"
+    },
+    {
+      "file": "cellchatdb_133C.csv",
+      "rows": 17,
+      "sha256": "d1dba1fb0aad6e22393fd48d2c9e45b2b80531a79d5f9341a89f18a98489618d"
+    },
+    {
+      "file": "cellchatdb_135I.csv",
+      "rows": 28,
+      "sha256": "6895e2bbbecead9e23c9a0f1b0257a55ea252e86d69c5f2c727f743f5733457c"
+    },
+    {
+      "file": "cellchatdb_1372C.csv",
+      "rows": 42,
+      "sha256": "84e75bc877a94100babf0517aa5e7a1f5e2421268367e1d3b8ea833761cfb986"
+    },
+    {
+      "file": "cellchatdb_138I.csv",
+      "rows": 36,
+      "sha256": "aa0da7ef12d856d606d571d3510fa2b81ccc6a3cdfc0b484618886e1cba27e8d"
+    },
+    {
+      "file": "cellchatdb_158I.csv",
+      "rows": 8,
+      "sha256": "977fd8d9cda4d3f7024fb108e651ba8ce97bc4a6d3be7c97272f12cf0ee2d833"
+    },
+    {
+      "file": "cellchatdb_160C.csv",
+      "rows": 12,
+      "sha256": "c08ffbde080a589fb32f6da66270d13284f9043a737a2dddd55258e0e91fa4d4"
+    },
+    {
+      "file": "cellchatdb_174I.csv",
+      "rows": 28,
+      "sha256": "14ae8b7913e4e2b0c5b1a966b4cda76d2894335f7242243856a550251f400f73"
+    },
+    {
+      "file": "cellchatdb_192C.csv",
+      "rows": 67,
+      "sha256": "ee67bf9bcc67b7dc30cff0dd2630436eef54668e39ffa84484e1c839b79b0e55"
+    },
+    {
+      "file": "cellchatdb_222C.csv",
+      "rows": 74,
+      "sha256": "c64e505fe3f912462ee8c351da0cdb2e06cbba14d60575c62b69d3c967ed8cd0"
+    },
+    {
+      "file": "cellchatdb_225I.csv",
+      "rows": 44,
+      "sha256": "981b2b0a77d52911f4e6beebd9a35e1556b074b18f6ae9107751228d207f6390"
+    },
+    {
+      "file": "cellchatdb_226C.csv",
+      "rows": 20,
+      "sha256": "7a12f206621cb08c8cfc3f436d8f36d3df050d6c3403e5a904754a4fcf0d3b41"
+    },
+    {
+      "file": "cellchatdb_228I.csv",
+      "rows": 62,
+      "sha256": "9789b83bfc2bf24cb5b1db5216f76ac6a1b2bfa359e2191facd887e2a88da3a7"
+    },
+    {
+      "file": "cellchatdb_296C.csv",
+      "rows": 9,
+      "sha256": "42ff2fd1810bced69c2cc3cd91d0b9a884bf545fad2d22ba6fa70ef0ecfc3dd3"
+    },
+    {
+      "file": "cellchatdb_396C.csv",
+      "rows": 5,
+      "sha256": "48bf5abf37c3c827573678378fcff6e799172a9df0ca563db706e8b6a5ab8396"
+    },
+    {
+      "file": "cellchatdb_454C.csv",
+      "rows": 8,
+      "sha256": "3c626a775eb509d0dca74fc3080aaf5b6b2c8e4a6beead92b67a219e68c09162"
+    },
+    {
+      "file": "cellchatdb_49I.csv",
+      "rows": 33,
+      "sha256": "d5291c2e0067b7a5a1d9864367d9537a9d347e43c3af9eaaa4de5b0c0ed37e02"
+    }
+  ]
+}

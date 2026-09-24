@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "plan_version": 3,
+  "status": "authorized_subject_to_design_annotation_resource_gates",
+  "full_run_authorized": true,
+  "source_plan": "NICHE_ANALYSIS_PLAN.md",
+  "context_axes": [
+    "molecular_regulation",
+    "source_and_recipient_identity",
+    "alveolar_vs_airway_route",
+    "niche_condition",
+    "age_and_exposure_history",
+    "organ_and_disease_stage",
+    "spatial_and_tissue_outcome"
+  ],
+  "research_questions": [
+    "N1_source_recipient",
+    "N2_fibroblast_context",
+    "N3_reciprocal_niche",
+    "N4_perturbation",
+    "N5_context_specificity"
+  ],
+  "required_arms": [
+    "LR",
+    "PW"
+  ],
+  "conditional_arm": "LT",
+  "required_compartments_for_joint_triad": [
+    "myeloid",
+    "fibroblast",
+    "epithelial"
+  ],
+  "eligibility": {
+    "minimum_independent_units_per_arm": 3,
+    "minimum_complete_patients_per_paired_contrast": 3,
+    "minimum_cells_per_niche_subtype_per_sample": 50,
+    "subtype_cell_floor_sensitivity": [
+      30,
+      50,
+      100
+    ],
+    "minimum_complete_patients_for_joint_association": 10,
+    "same_biological_sample_sender_receiver_required": true,
+    "missing_compartments_are_zero": false,
+    "treatment_dependent_attrition_report_required": true
+  },
+  "ligand_receptor": {
+    "primary_resource": "LIANA_consensus_version_and_hash_to_freeze_before_effects",
+    "sensitivity_resource": "cellchatdb_version_and_hash_to_freeze_before_effects",
+    "magnitude_method": "LIANA_CellChat_like_per_sample_descriptive_not_native_R_CellChat",
+    "normalization_for_magnitude": "normalize_total_10000_log1p",
+    "detection_fraction": 0.1,
+    "detection_sensitivity": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "core_ligand_families": [
+      "IL1B",
+      "IL1A",
+      "AREG",
+      "HBEGF",
+      "TGFB1"
+    ],
+    "exploratory_or_conditional_families": [
+      "CCL2",
+      "CXCL12",
+      "CXCL1",
+      "CXCL2",
+      "FGF7",
+      "FGF10",
+      "resource_supported_WNT",
+      "VEGFA"
+    ],
+    "inhibitory_context_not_activation_edges": [
+      "IL1RN",
+      "IL1R2",
+      "SIGIRR"
+    ],
+    "differential_score": "half_sum_of_minimum_ligand_subunit_sender_logCPM_and_minimum_receptor_subunit_receiver_logCPM",
+    "differential_normalization": "within_study_subtype_TMM_all_groups_together_edgeR_log2_CPM_prior_count_1",
+    "inference": "biological_unit_permutation_only_if_exchangeability_supported_otherwise_descriptive",
+    "fixed_subtype_pairs": true,
+    "max_subtype_selection": false,
+    "missing_LIANA_rows_are_zero": false,
+    "observed_zero_counts_in_eligible_assay_covered_pseudobulks_retained": true,
+    "RNA_score_is_signalling_activity": false,
+    "unchanged_IL1B_RNA_refutes_neutralization": false,
+    "exact_edges_and_complex_subunits_status": "initial_IPF_edges_frozen_in_trials/u5_ipf_liana/specification.json_other_contexts_pending",
+    "differential_score_evidence_level": "exploratory_custom_RNA_compatibility",
+    "prior_count_sensitivity": [
+      0.5,
+      1,
+      2
+    ]
+  },
+  "pathways": {
+    "unit": "animal_or_patient_subtype_raw_count_pseudobulk",
+    "method": "edgeR_TMM_limma_voom_official_CAMERA",
+    "inter_gene_cor": "estimated_NA",
+    "allow_neg_cor": false,
+    "sensitivity_inter_gene_cor": 0.01,
+    "minimum_assayed_set_fraction": 0.7,
+    "assayed_set_fraction_sensitivity": [
+      0.5,
+      0.7,
+      0.8
+    ],
+    "minimum_expressed_tested_set_members": 10,
+    "universe": "all_genes_passing_frozen_design_aware_filter_in_subtype",
+    "collections": [
+      "selected_Hallmark",
+      "Reactome_ECM",
+      "source_defined_epithelial_identity"
+    ],
+    "short_component_panels": "descriptive_unless_enrichment_eligibility_passes",
+    "exact_gene_sets_versions_hashes_status": "IPF_frozen_in_trials/u5_ipf_spec/specification.json_other_contexts_pending"
+  },
+  "ligand_target": {
+    "method": "NicheNet_pinned_species_matched_prior",
+    "receiver_targets": "biological_unit_DE_BH_q_less_than_0.05_up_and_down_separately",
+    "minimum_mapped_target_genes": 10,
+    "background": "all_tested_receiver_genes",
+    "insufficient_targets": "report_ineligible_do_not_relax_threshold",
+    "independent_validation": false,
+    "stability": "leave_one_biological_unit_out"
+  },
+  "multiplicity": {
+    "epithelial_fraction": "Holm_two_treatment_endpoints_in_parent_contract",
+    "core_LR": "BH_all_core_edges_fixed_subtype_pairs_and_both_endpoints",
+    "primary_pathways": "BH_all_primary_sets_compartments_subtypes_and_both_endpoints",
+    "human": "separate_declared_families_across_eligible_histology_contrasts",
+    "IPF": "separate_declared_LR_and_pathway_families_within_each_cohort",
+    "exploratory": "separate_labelled_families_no_primary_replacement"
+  },
+  "figure_location": "paper_level_gallery_only",
+  "biological_results_computed": true,
+  "computed_scope": "two_observational_IPF_cohort_pathways_mouse_treatment_inference_not_released",
+  "initial_LR_scope": {
+    "cohort": "GSE136831",
+    "status": "completed_descriptive_run_output_integrity_passed_interpretation_pending",
+    "specification": "trials/u5_ipf_liana/specification.json",
+    "maximum_cells_per_donor_subtype": 500,
+    "seed": 20260924,
+    "all_cell_sensitivity_complete": false,
+    "differential_RNA_compatibility_complete": false,
+    "scope": "initial_descriptive_triad_pass_does_not_complete_all_required_niche_arms"
+  }
+}

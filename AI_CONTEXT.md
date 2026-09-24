@@ -19,6 +19,28 @@ the acute source switch or a replicated baseline/day-11 AT2 contrast.
 
 ## Current correction authority and runtime
 
+On 2026-09-24 the owner opened the IL-1beta review branch under
+`Thesis/gate2_C3_yu_lee_choi_min_2026/` (2C item 3, stable paper 13), then
+requested final self-attack, improvements and launch. This supersedes the
+earlier confirmation hold; both contracts now authorize staged execution.
+Read FINAL_REVIEW.md and the stage run records before continuing. Seven early
+GSE300288 IgG/anti-IL-1beta libraries passed acquisition/QC (28,243 retained
+cells); treatment-blind cluster diagnostics are complete. Donor-level IPF
+macrophage/fibroblast/AT2 pathway fits completed in two existing cohorts:
+neither has primary global q < 0.05; fixed-correlation sensitivity findings
+are not robust replacements. The initial GSE136831 per-donor LIANA run
+completed at 17:43 KST (25 donors: 15 IPF/10 control; 500-cell/subtype cap).
+Both resources produced 25 tables each; output-integrity checks passed.
+This initial compute job has ended. Differential contrasts, sensitivities,
+figure rendering and interpretation remain pending. Read the paper's
+INITIAL_RUN_REPORT.md and current run records before reporting status.
+Scientific gates remain: validated KAC/subtype annotation, resource freeze,
+coverage, and later treatment-start crosswalk. Zenodo annotated files are
+restricted; no restricted-file retrieval or author contact is authorized.
+The mouse two-endpoint exact permutation/Holm family cannot reject at 0.05
+at the deposited n; report effect sizes and limits without changing tests.
+Keep the root README as navigation and figures in paper-level galleries.
+
 On 2026-09-22 the owner explicitly delegated orders 1–4 of the audit improvement
 sequence, claim reclassification, relevant analyses and replots for portfolio
 use. Decision 32 and the remediation record supersede conflicting current-state

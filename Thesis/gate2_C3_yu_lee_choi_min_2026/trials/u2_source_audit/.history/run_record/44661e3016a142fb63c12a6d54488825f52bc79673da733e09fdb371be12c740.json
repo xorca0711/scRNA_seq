@@ -1,0 +1,161 @@
+{
+  "run_utc": "2026-09-24T07:57:55.242761+00:00",
+  "sources": [
+    {
+      "name": "author_tree.json",
+      "url": "https://api.github.com/repos/FuduanPeng/LungPCA_Code/git/trees/main?recursive=1",
+      "bytes": 3360,
+      "sha256": "cb16b135b156360faf66c4ef2d34a5088a704ec3ad459fc44ee525bdeecf8de0",
+      "seconds": 0.719,
+      "status": "retrieved"
+    },
+    {
+      "name": "zenodo_17148540.json",
+      "url": "https://zenodo.org/api/records/17148540",
+      "status": "unavailable",
+      "error": "HTTP Error 404: NOT FOUND"
+    },
+    {
+      "name": "zenodo_17172149.json",
+      "url": "https://zenodo.org/api/records/17172149",
+      "bytes": 4034,
+      "sha256": "98c765933a7bb67786a92e3e0c6d28e5e70d87842f78a275b18d4ed73f8dc61f",
+      "seconds": 1.5,
+      "status": "retrieved"
+    },
+    {
+      "name": "peng_fulltext.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12980502/fullTextXML",
+      "status": "unavailable",
+      "error": "HTTP Error 500: "
+    },
+    {
+      "name": "peng_bioc.xml",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC12980502/unicode",
+      "bytes": 6148,
+      "sha256": "3acc5f4c51ec704cd708d3379196db9f66442a96c9bf275773710e0de0196b52",
+      "seconds": 1.312,
+      "status": "retrieved"
+    },
+    {
+      "name": "Figure 1.R",
+      "url": "https://raw.githubusercontent.com/FuduanPeng/LungPCA_Code/fba87dbee8dbae497b15b81a4b0fa79edccd17b2/Figure%201.R",
+      "bytes": 4133,
+      "sha256": "2c6841fb8ff90187e77f9cd2e0201603c851e35814efbb3811321566ef014286",
+      "seconds": 0.734,
+      "status": "retrieved"
+    },
+    {
+      "name": "Figure 1E 4F.py",
+      "url": "https://raw.githubusercontent.com/FuduanPeng/LungPCA_Code/fba87dbee8dbae497b15b81a4b0fa79edccd17b2/Figure%201E%204F.py",
+      "bytes": 2261,
+      "sha256": "637e23e1295ff4754569a6e5e652ccef5b7656803186f4768488b48ade01b14a",
+      "seconds": 0.719,
+      "status": "retrieved"
+    },
+    {
+      "name": "Figure 2.R",
+      "url": "https://raw.githubusercontent.com/FuduanPeng/LungPCA_Code/fba87dbee8dbae497b15b81a4b0fa79edccd17b2/Figure%202.R",
+      "bytes": 5446,
+      "sha256": "d03051081dfbf2cf0e2998d6f44e7b43a24540ae84de5aac5277bbf080f34e51",
+      "seconds": 0.719,
+      "status": "retrieved"
+    },
+    {
+      "name": "Figure 2C.py",
+      "url": "https://raw.githubusercontent.com/FuduanPeng/LungPCA_Code/fba87dbee8dbae497b15b81a4b0fa79edccd17b2/Figure%202C.py",
+      "bytes": 4591,
+      "sha256": "36267f5a9c35dd70ea5b7fa611795190548947518f98f3b5360815c7702e43fe",
+      "seconds": 0.5,
+      "status": "retrieved"
+    },
+    {
+      "name": "Figure 3.R",
+      "url": "https://raw.githubusercontent.com/FuduanPeng/LungPCA_Code/fba87dbee8dbae497b15b81a4b0fa79edccd17b2/Figure%203.R",
+      "bytes": 9853,
+      "sha256": "783130429f5b4e6a5ce341a721a2951c5bd1f26fb4a08e5b7286dd47cc96fbea",
+      "seconds": 0.516,
+      "status": "retrieved"
+    },
+    {
+      "name": "Figure 3K 3N.py",
+      "url": "https://raw.githubusercontent.com/FuduanPeng/LungPCA_Code/fba87dbee8dbae497b15b81a4b0fa79edccd17b2/Figure%203K%203N.py",
+      "bytes": 3427,
+      "sha256": "73d9a5f364159fbcd2817e78b605c6130dd6f185e1aae694b64082314a204cdf",
+      "seconds": 0.516,
+      "status": "retrieved"
+    },
+    {
+      "name": "Figure 4.R",
+      "url": "https://raw.githubusercontent.com/FuduanPeng/LungPCA_Code/fba87dbee8dbae497b15b81a4b0fa79edccd17b2/Figure%204.R",
+      "bytes": 4452,
+      "sha256": "fd559372651017869b733d76152e14de266c1f3aba16bfe7c90b740443fc7cf9",
+      "seconds": 0.422,
+      "status": "retrieved"
+    },
+    {
+      "name": "Figure 4G.py",
+      "url": "https://raw.githubusercontent.com/FuduanPeng/LungPCA_Code/fba87dbee8dbae497b15b81a4b0fa79edccd17b2/Figure%204G.py",
+      "bytes": 2822,
+      "sha256": "34adf3c7cfe4a4d738576b0eb80a2e09f0d7eaec2b0cfe48284c59aa128c942d",
+      "seconds": 0.39,
+      "status": "retrieved"
+    },
+    {
+      "name": "Figure 5.R",
+      "url": "https://raw.githubusercontent.com/FuduanPeng/LungPCA_Code/fba87dbee8dbae497b15b81a4b0fa79edccd17b2/Figure%205.R",
+      "bytes": 6220,
+      "sha256": "ba530ea1d1120538c112c3e800de24cbcba92755fc6d95eb5affbd729b3b3455",
+      "seconds": 0.422,
+      "status": "retrieved"
+    },
+    {
+      "name": "Figure 6.R",
+      "url": "https://raw.githubusercontent.com/FuduanPeng/LungPCA_Code/fba87dbee8dbae497b15b81a4b0fa79edccd17b2/Figure%206.R",
+      "bytes": 3878,
+      "sha256": "f356c0e43268b9099fb438fbbf026d40ac39ad7ddae4fc53fa987cbcd5ff1ec7",
+      "seconds": 0.485,
+      "status": "retrieved"
+    },
+    {
+      "name": "Figure 6E 6F 7D.py",
+      "url": "https://raw.githubusercontent.com/FuduanPeng/LungPCA_Code/fba87dbee8dbae497b15b81a4b0fa79edccd17b2/Figure%206E%206F%207D.py",
+      "bytes": 3878,
+      "sha256": "1948ce653b6f787c61c3a9b28d459f84f5e1f424dba75bc46a9f91f88bf5746d",
+      "seconds": 0.469,
+      "status": "retrieved"
+    },
+    {
+      "name": "Figure 6G.py",
+      "url": "https://raw.githubusercontent.com/FuduanPeng/LungPCA_Code/fba87dbee8dbae497b15b81a4b0fa79edccd17b2/Figure%206G.py",
+      "bytes": 862,
+      "sha256": "0e7d0fccee33d54426452a740fc4eab271cface6dbeb563a2e554c8ce9b2eae2",
+      "seconds": 0.453,
+      "status": "retrieved"
+    },
+    {
+      "name": "Figure 7.R",
+      "url": "https://raw.githubusercontent.com/FuduanPeng/LungPCA_Code/fba87dbee8dbae497b15b81a4b0fa79edccd17b2/Figure%207.R",
+      "bytes": 5907,
+      "sha256": "a0f7112ec0c1ffc4c40fdbb0623f6d243278155fc4c200a6a767a70946f98dda",
+      "seconds": 0.437,
+      "status": "retrieved"
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/FuduanPeng/LungPCA_Code/fba87dbee8dbae497b15b81a4b0fa79edccd17b2/README.md",
+      "bytes": 450,
+      "sha256": "543aea5a9a21dbae85e0b1beca9a2d87d3bdd8fb502fe5514c4f17e34a28c39d",
+      "seconds": 0.453,
+      "status": "retrieved"
+    }
+  ],
+  "zenodo_inventories": [
+    {
+      "record": "17172149",
+      "title": "LungPCA_Code",
+      "files": []
+    }
+  ],
+  "external_code_executed": false
+}

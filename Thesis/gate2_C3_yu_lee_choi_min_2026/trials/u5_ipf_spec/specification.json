@@ -1,0 +1,102 @@
+{
+  "frozen_utc": "2026-09-24T08:15:42.148131+00:00",
+  "status": "released",
+  "cohorts": [
+    "GSE136831",
+    "GSE135893"
+  ],
+  "expected_total_counts": {
+    "GSE136831": 1239639679,
+    "GSE135893": 396154020
+  },
+  "primary_floor": 50,
+  "sensitivity_floors": [
+    30,
+    100
+  ],
+  "source": "audited subtype pseudobulks from full raw matrices; macrophages included",
+  "input_sources": [
+    {
+      "path": "raw_data/msigdb/h.all.v2024.1.Hs.symbols.gmt",
+      "sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772"
+    },
+    {
+      "path": "Thesis/gate2_C3_yu_lee_choi_min_2026/cache/u2_sources/c2.cp.reactome.v2024.1.Hs.symbols.gmt",
+      "sha256": "9ea1b5e656597daf423e41c5ebcaa9892bfedf3292fff768605d7b0d5e5e9703"
+    },
+    {
+      "path": "analysis/corrections/statistics/cache/GSE136831_subtypes_counts.csv.gz",
+      "sha256": "156323f19f46db446fda0ff8bba5bb396093825e08141943a505826521f63951",
+      "bytes": 5250952
+    },
+    {
+      "path": "analysis/corrections/statistics/cache/GSE136831_subtypes_units.csv",
+      "sha256": "2ef9248442d27e4fb1d246e91623798001f1f52653db6b10e856013e29f96a6c",
+      "bytes": 7988
+    },
+    {
+      "path": "analysis/corrections/statistics/cache/GSE135893_subtypes_counts.csv.gz",
+      "sha256": "b7a902ca81a5f5c3196bd8122dea703205ad5d9d26d86e7f53886e25b46d2f8f",
+      "bytes": 1562629
+    },
+    {
+      "path": "analysis/corrections/statistics/cache/GSE135893_subtypes_units.csv",
+      "sha256": "e3d7f848a64c28dedd5710d6a89eb6c567bf079fec2de629338a593fa071a358",
+      "bytes": 4077
+    }
+  ],
+  "sets": [
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_G2M_CHECKPOINT",
+    "HALLMARK_GLYCOLYSIS",
+    "HALLMARK_HYPOXIA",
+    "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+    "HALLMARK_INFLAMMATORY_RESPONSE",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+    "HALLMARK_P53_PATHWAY",
+    "HALLMARK_TGF_BETA_SIGNALING",
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+    "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+    "REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION"
+  ],
+  "sets_per_compartment": {
+    "macrophages": [
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+      "HALLMARK_INFLAMMATORY_RESPONSE",
+      "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+      "HALLMARK_GLYCOLYSIS",
+      "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+      "HALLMARK_HYPOXIA",
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE"
+    ],
+    "fibroblasts": [
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+      "HALLMARK_INFLAMMATORY_RESPONSE",
+      "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+      "HALLMARK_TGF_BETA_SIGNALING",
+      "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+      "REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION"
+    ],
+    "AT2": [
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+      "HALLMARK_INFLAMMATORY_RESPONSE",
+      "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+      "HALLMARK_HYPOXIA",
+      "HALLMARK_GLYCOLYSIS",
+      "HALLMARK_P53_PATHWAY",
+      "HALLMARK_E2F_TARGETS",
+      "HALLMARK_G2M_CHECKPOINT"
+    ]
+  },
+  "method": "TMM_filterByExpr_voom_official_CAMERA_estimated_inter_gene_correlation",
+  "sensitivity_correlation": 0.01,
+  "multiple_testing": "global_BH_across_all_compartments_subtypes_per_cohort_floor_correlation_family",
+  "annotation": "all_deposited_subtypes_in_cached_compartments_no_effect_based_selection",
+  "covariates": "disease_only; age/sex unavailable in reused metadata; observational",
+  "assayed_fraction_floor": 0.7,
+  "minimum_tested_set_members": 10,
+  "independent_validation": false,
+  "coverage_limit": "Cache retained donors with >=50 broad-compartment cells. Floor-30 subtype sensitivity is conditional on that original eligible population; it cannot recover excluded broad compartments with 30-49 cells.",
+  "resource_source": "https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2024.1.Hs/c2.cp.reactome.v2024.1.Hs.symbols.gmt"
+}

@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-09-24T08:15:42.509181+00:00",
+  "status": "failed",
+  "pid": 8140,
+  "spec_sha256": "2a2f123513a9a169e681c9ee8eef6b7b53ec45d8229edbd7323d67e224c00e5a",
+  "R_code_sha256": "8e3da56eca83b3ffbbfdfee1249f4870f469ea0deff05c57a48cb3cef866d95b",
+  "code": {
+    "commit": "e9d79e0e5269249f8cf12c8a45ba70ac7009da33",
+    "tracked_diff_sha256": "1971c9db3dc0c460a553a2884403c425f51ae1ec40a47a2148965e4db0db4e13",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_run_ipf.py",
+    "entrypoint_sha256": "85992057caad90ab2e9015ae33e08d218e8d23051961b2e7578261f7df3dd1a4"
+  },
+  "completed_cohorts": [],
+  "interpretation": "previously inspected observational IPF cohorts; not mouse treatment or independent validation",
+  "current_cohort": "GSE136831",
+  "error": "GSE136831 failed; see its local log",
+  "updated_utc": "2026-09-24T08:18:38.450588+00:00",
+  "elapsed_seconds": 175.5
+}

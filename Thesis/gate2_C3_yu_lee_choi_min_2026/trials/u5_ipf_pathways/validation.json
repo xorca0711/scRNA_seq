@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-09-24T08:27:45.807657+00:00",
+  "checks_passed": 20,
+  "cohorts": [
+    {
+      "cohort": "GSE136831",
+      "primary_tests": 49,
+      "primary_q_lt_05": 0,
+      "fixed001_q_lt_05": 14
+    },
+    {
+      "cohort": "GSE135893",
+      "primary_tests": 36,
+      "primary_q_lt_05": 0,
+      "fixed001_q_lt_05": 12
+    }
+  ],
+  "scope": "output integrity, eligibility and global-BH recalculation; not independent scientific validation"
+}

@@ -1,0 +1,1396 @@
+{
+  "schema_version": 1,
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300288&targ=all&form=xml&view=full",
+  "retrieved_utc": "2026-09-24T07:16:17.402491+00:00",
+  "sha256": "a1757bf7055f653de19ece9574b87ce635264f21a8fcd1cccc7113aa0aaf9463",
+  "series": {
+    "accession": "GSE300288",
+    "title": [
+      "Single-cell and spatial transcriptomics analysis of tobacco-associated lung adenocarcinoma development, and in response to targeting inflammation alone or in combination with immune checkpoint blockade in precancerous phase [scRNA-seq]"
+    ],
+    "pubmed_id": [
+      "41202811"
+    ],
+    "summary": [
+      "Understanding cellular processes underlying early lung adenocarcinoma (LUAD) development is needed to devise intervention strategies. Here, we performed single-cell RNA sequencing (scRNA-seq) of mouse lungs from Gprc5a−/− mice during lung tumor development and also following therapeutic targeting of inflammation (IL-1𝛽) alone and in combination with immune checkpoint blockade in precancerous stages. We coupled scRNA-seq analysis with spatial transcriptomics of mouse lungs under different conditions."
+    ],
+    "overall_design": [
+      "Gene expression profiling by high throughput single-cell sequencing and spatial transcriptomics"
+    ],
+    "sample_id": [
+      "GSM9057709",
+      "GSM9057710",
+      "GSM9057711",
+      "GSM9057712",
+      "GSM9057713",
+      "GSM9057714",
+      "GSM9057715",
+      "GSM9057716",
+      "GSM9057717",
+      "GSM9057718",
+      "GSM9057719",
+      "GSM9057720",
+      "GSM9057721",
+      "GSM9057722",
+      "GSM9057723",
+      "GSM9057724",
+      "GSM9057725",
+      "GSM9057726",
+      "GSM9057727",
+      "GSM9057728",
+      "GSM9057729",
+      "GSM9057730",
+      "GSM9057731",
+      "GSM9057732",
+      "GSM9057733",
+      "GSM9057734",
+      "GSM9057735",
+      "GSM9057736",
+      "GSM9057737",
+      "GSM9057738",
+      "GSM9057739"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE300nnn/GSE300288/suppl/GSE300288_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1280046"
+    ]
+  },
+  "samples": [
+    {
+      "accession": "GSM9057709",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to Control IgG and analyzed at 3 months post-NNK, replicate 1"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: Control IgG",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057709/suppl/GSM9057709_aIL1B_5_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057709/suppl/GSM9057709_aIL1B_5_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057709/suppl/GSM9057709_aIL1B_5_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514143",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270837"
+      ]
+    },
+    {
+      "accession": "GSM9057710",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-PD-1 and analyzed at 3 months post-NNK, replicate 1"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-PD-1",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057710/suppl/GSM9057710_aIL1B_7_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057710/suppl/GSM9057710_aIL1B_7_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057710/suppl/GSM9057710_aIL1B_7_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514142",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270838"
+      ]
+    },
+    {
+      "accession": "GSM9057711",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and anti-PD-1 and analyzed at 3 months post-NNK, replicate 1"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽 and anti-PD-1",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057711/suppl/GSM9057711_aIL1B_8_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057711/suppl/GSM9057711_aIL1B_8_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057711/suppl/GSM9057711_aIL1B_8_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514141",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270836"
+      ]
+    },
+    {
+      "accession": "GSM9057712",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to Control IgG and analyzed at 3 months post-NNK, replicate 2"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: Control IgG",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057712/suppl/GSM9057712_aIL1B_9_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057712/suppl/GSM9057712_aIL1B_9_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057712/suppl/GSM9057712_aIL1B_9_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514140",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270839"
+      ]
+    },
+    {
+      "accession": "GSM9057713",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and analyzed at 3 months post-NNK, replicate 2"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057713/suppl/GSM9057713_aIL1B_10_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057713/suppl/GSM9057713_aIL1B_10_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057713/suppl/GSM9057713_aIL1B_10_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514139",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270840"
+      ]
+    },
+    {
+      "accession": "GSM9057714",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-PD-1 and analyzed at 3 months post-NNK, replicate 2"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-PD-1",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057714/suppl/GSM9057714_aIL1B_11_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057714/suppl/GSM9057714_aIL1B_11_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057714/suppl/GSM9057714_aIL1B_11_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514138",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270841"
+      ]
+    },
+    {
+      "accession": "GSM9057715",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and anti-PD-1 and analyzed at 3 months post-NNK, replicate 2"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽 and anti-PD-1",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057715/suppl/GSM9057715_aIL1B_12_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057715/suppl/GSM9057715_aIL1B_12_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057715/suppl/GSM9057715_aIL1B_12_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514137",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270848"
+      ]
+    },
+    {
+      "accession": "GSM9057716",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to Control IgG and analyzed at 3 months post-NNK, replicate 3"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: Control IgG",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057716/suppl/GSM9057716_aIL1B_13_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057716/suppl/GSM9057716_aIL1B_13_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057716/suppl/GSM9057716_aIL1B_13_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514136",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270846"
+      ]
+    },
+    {
+      "accession": "GSM9057717",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and analyzed at 3 months post-NNK, replicate 3"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057717/suppl/GSM9057717_aIL1B_14_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057717/suppl/GSM9057717_aIL1B_14_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057717/suppl/GSM9057717_aIL1B_14_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514135",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270847"
+      ]
+    },
+    {
+      "accession": "GSM9057718",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-PD-1 and analyzed at 3 months post-NNK, replicate 3"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-PD-1",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057718/suppl/GSM9057718_aIL1B_15_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057718/suppl/GSM9057718_aIL1B_15_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057718/suppl/GSM9057718_aIL1B_15_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514134",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270851"
+      ]
+    },
+    {
+      "accession": "GSM9057719",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and anti-PD-1 and analyzed at 3 months post-NNK, replicate 3"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽 and anti-PD-1",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057719/suppl/GSM9057719_aIL1B_16_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057719/suppl/GSM9057719_aIL1B_16_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057719/suppl/GSM9057719_aIL1B_16_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514133",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270849"
+      ]
+    },
+    {
+      "accession": "GSM9057720",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to Control IgG and analyzed at 3 months post-NNK, replicate 4"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: Control IgG",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057720/suppl/GSM9057720_aIL1B_17_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057720/suppl/GSM9057720_aIL1B_17_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057720/suppl/GSM9057720_aIL1B_17_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514132",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270857"
+      ]
+    },
+    {
+      "accession": "GSM9057721",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and analyzed at 3 months post-NNK, replicate 4"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057721/suppl/GSM9057721_aIL1B_18_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057721/suppl/GSM9057721_aIL1B_18_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057721/suppl/GSM9057721_aIL1B_18_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514131",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270855"
+      ]
+    },
+    {
+      "accession": "GSM9057722",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-PD-1 and analyzed at 3 months post-NNK, replicate 4"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-PD-1",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057722/suppl/GSM9057722_aIL1B_19_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057722/suppl/GSM9057722_aIL1B_19_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057722/suppl/GSM9057722_aIL1B_19_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514130",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270856"
+      ]
+    },
+    {
+      "accession": "GSM9057723",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and anti-PD-1 and analyzed at 3 months post-NNK, replicate 4"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽 and anti-PD-1",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057723/suppl/GSM9057723_aIL1B_20_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057723/suppl/GSM9057723_aIL1B_20_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057723/suppl/GSM9057723_aIL1B_20_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514129",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270858"
+      ]
+    },
+    {
+      "accession": "GSM9057724",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to Control IgG and analyzed at 7 months post-NNK, replicate 1"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: Control IgG",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057724/suppl/GSM9057724_aIL1B_25_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057724/suppl/GSM9057724_aIL1B_25_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057724/suppl/GSM9057724_aIL1B_25_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514128",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270859"
+      ]
+    },
+    {
+      "accession": "GSM9057725",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and analyzed at 7 months post-NNK, replicate 1"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057725/suppl/GSM9057725_aIL1B_26_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057725/suppl/GSM9057725_aIL1B_26_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057725/suppl/GSM9057725_aIL1B_26_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514127",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270861"
+      ]
+    },
+    {
+      "accession": "GSM9057726",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-PD-1 and analyzed at 7 months post-NNK, replicate 1"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-PD-1",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057726/suppl/GSM9057726_aIL1B_27_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057726/suppl/GSM9057726_aIL1B_27_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057726/suppl/GSM9057726_aIL1B_27_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514126",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270860"
+      ]
+    },
+    {
+      "accession": "GSM9057727",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and anti-PD-1 and analyzed at 7 months post-NNK, replicate 1"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽 and anti-PD-1",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057727/suppl/GSM9057727_aIL1B_28_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057727/suppl/GSM9057727_aIL1B_28_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057727/suppl/GSM9057727_aIL1B_28_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514125",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270864"
+      ]
+    },
+    {
+      "accession": "GSM9057728",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to Control IgG and analyzed at 7 months post-NNK, replicate 2"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: Control IgG",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057728/suppl/GSM9057728_aIL1B_29_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057728/suppl/GSM9057728_aIL1B_29_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057728/suppl/GSM9057728_aIL1B_29_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514124",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270862"
+      ]
+    },
+    {
+      "accession": "GSM9057729",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and analyzed at 7 months post-NNK, replicate 2"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057729/suppl/GSM9057729_aIL1B_30_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057729/suppl/GSM9057729_aIL1B_30_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057729/suppl/GSM9057729_aIL1B_30_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514123",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270863"
+      ]
+    },
+    {
+      "accession": "GSM9057730",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-PD-1 and analyzed at 7 months post-NNK, replicate 2"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-PD-1",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057730/suppl/GSM9057730_aIL1B_31_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057730/suppl/GSM9057730_aIL1B_31_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057730/suppl/GSM9057730_aIL1B_31_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514122",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270865"
+      ]
+    },
+    {
+      "accession": "GSM9057731",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and anti-PD-1 and analyzed at 7 months post-NNK, replicate 2"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽 and anti-PD-1",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057731/suppl/GSM9057731_aIL1B_32_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057731/suppl/GSM9057731_aIL1B_32_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057731/suppl/GSM9057731_aIL1B_32_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514121",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270866"
+      ]
+    },
+    {
+      "accession": "GSM9057732",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to Control IgG and analyzed at 7 months post-NNK, replicate 3"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: Control IgG",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057732/suppl/GSM9057732_aIL1B_33_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057732/suppl/GSM9057732_aIL1B_33_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057732/suppl/GSM9057732_aIL1B_33_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514120",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270844"
+      ]
+    },
+    {
+      "accession": "GSM9057733",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and analyzed at 7 months post-NNK, replicate 3"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057733/suppl/GSM9057733_aIL1B_34_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057733/suppl/GSM9057733_aIL1B_34_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057733/suppl/GSM9057733_aIL1B_34_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514119",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270842"
+      ]
+    },
+    {
+      "accession": "GSM9057734",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-PD-1 and analyzed at 7 months post-NNK, replicate 3"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-PD-1",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057734/suppl/GSM9057734_aIL1B_35_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057734/suppl/GSM9057734_aIL1B_35_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057734/suppl/GSM9057734_aIL1B_35_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514118",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270843"
+      ]
+    },
+    {
+      "accession": "GSM9057735",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and anti-PD-1 and analyzed at 7 months post-NNK, replicate 3"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽 and anti-PD-1",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057735/suppl/GSM9057735_aIL1B_36_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057735/suppl/GSM9057735_aIL1B_36_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057735/suppl/GSM9057735_aIL1B_36_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514117",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270852"
+      ]
+    },
+    {
+      "accession": "GSM9057736",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to Control IgG and analyzed at 7 months post-NNK, replicate 4"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: Control IgG",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057736/suppl/GSM9057736_aIL1B_37_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057736/suppl/GSM9057736_aIL1B_37_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057736/suppl/GSM9057736_aIL1B_37_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514116",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270845"
+      ]
+    },
+    {
+      "accession": "GSM9057737",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and analyzed at 7 months post-NNK, replicate 4"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057737/suppl/GSM9057737_aIL1B_38_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057737/suppl/GSM9057737_aIL1B_38_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057737/suppl/GSM9057737_aIL1B_38_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514115",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270850"
+      ]
+    },
+    {
+      "accession": "GSM9057738",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-PD-1 and analyzed at 7 months post-NNK, replicate 4"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-PD-1",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057738/suppl/GSM9057738_aIL1B_39_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057738/suppl/GSM9057738_aIL1B_39_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057738/suppl/GSM9057738_aIL1B_39_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514114",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270854"
+      ]
+    },
+    {
+      "accession": "GSM9057739",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and anti-PD-1 and analyzed at 7 months post-NNK, replicate 4"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽 and anti-PD-1",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of mouse scRNA-seq data, the mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded. Doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm Scrublet. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057739/suppl/GSM9057739_aIL1B_40_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057739/suppl/GSM9057739_aIL1B_40_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057739/suppl/GSM9057739_aIL1B_40_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514113",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29270853"
+      ]
+    }
+  ],
+  "scope": "Metadata only; sample records are not independent biological units."
+}

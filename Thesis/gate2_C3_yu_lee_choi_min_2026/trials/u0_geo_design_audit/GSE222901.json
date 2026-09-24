@@ -1,0 +1,1433 @@
+{
+  "schema_version": 1,
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE222901&targ=all&form=xml&view=full",
+  "retrieved_utc": "2026-09-24T07:16:11.188061+00:00",
+  "sha256": "ce0d0516c6a33b109aa9ee706bcc56c43df89e573756eb1ab70c9222201f50bf",
+  "series": {
+    "accession": "GSE222901",
+    "title": [
+      "Single-cell analysis of tobacco-associated lung adenocarcinoma development"
+    ],
+    "pubmed_id": [
+      "38418883",
+      "41202811"
+    ],
+    "summary": [
+      "Understanding cellular processes underlying early lung adenocarcinoma (LUAD) development is needed to devise intervention strategies. Here, we performed single-cell RNA sequencing (scRNA-seq) of mouse lungs from Gprc5a-/- mice during lung tumor development. We coupled scRNA-seq analysis with spatial transcriptomics of tumor-bearing lungs."
+    ],
+    "overall_design": [
+      "scRNA-seq profiling was performed on lungs from Gprc5a-/- mice treated with nicotine-derived nitrosamine ketone (NNK) or saline at the end of exposure (EOE, timepoint at which lungs are still clear of lesions), at 3 months and at 7 months post-exposure, the time point of Kras-mutant LUAD onset in all mice (n = 4 mice per group and time point). We also performed scRNA-seq of GFP+ and GFP- fractions of lungs from Gprc5a-/- mice carrying alveolar type II reporter (Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+) at three months post-exposure to saline of NNK (n = 2 mice per group). scRNA-seq was performed using the 10X Genomics platform. Spatial transcriptomics of tumor-bearing lungs from Gprc5a-/- mice at 7 months post-exposure to NNK (n = 3) was performed using the Visium platform from 10X Genomics to further characterize and validate scRNA-seq findings in a spatial context."
+    ],
+    "sample_id": [
+      "GSM6934986",
+      "GSM6934987",
+      "GSM6934988",
+      "GSM6934989",
+      "GSM6934990",
+      "GSM6934991",
+      "GSM6934992",
+      "GSM6934993",
+      "GSM6934994",
+      "GSM6934995",
+      "GSM6934996",
+      "GSM6934997",
+      "GSM6934998",
+      "GSM6934999",
+      "GSM6935000",
+      "GSM6935001",
+      "GSM6935002",
+      "GSM6935003",
+      "GSM6935004",
+      "GSM6935005",
+      "GSM6935006",
+      "GSM6935007",
+      "GSM6935008",
+      "GSM6935009",
+      "GSM6935010",
+      "GSM6935011",
+      "GSM6935012",
+      "GSM9229522",
+      "GSM9229523",
+      "GSM9229524",
+      "GSM9229525",
+      "GSM9229526",
+      "GSM9229527",
+      "GSM9229528",
+      "GSM9229529"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE222nnn/GSE222901/suppl/GSE222901_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA923805"
+    ]
+  },
+  "samples": [
+    {
+      "accession": "GSM6934986",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 1 at 7 months post-NNK [KOK7_45]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934986/suppl/GSM6934986_KOK7_45_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934986/suppl/GSM6934986_KOK7_45_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934986/suppl/GSM6934986_KOK7_45_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740191",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035637"
+      ]
+    },
+    {
+      "accession": "GSM6934987",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 2 at 7 months post-NNK [KOK7_46]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934987/suppl/GSM6934987_KOK7_46_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934987/suppl/GSM6934987_KOK7_46_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934987/suppl/GSM6934987_KOK7_46_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740190",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035638"
+      ]
+    },
+    {
+      "accession": "GSM6934988",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 3 at 7 months post-NNK [KOK7_47]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934988/suppl/GSM6934988_KOK7_47_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934988/suppl/GSM6934988_KOK7_47_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934988/suppl/GSM6934988_KOK7_47_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740189",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035640"
+      ]
+    },
+    {
+      "accession": "GSM6934989",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 5 at end of exposure to NNK [KOKB_1]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934989/suppl/GSM6934989_KOKB_1_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934989/suppl/GSM6934989_KOKB_1_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934989/suppl/GSM6934989_KOKB_1_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740188",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035639"
+      ]
+    },
+    {
+      "accession": "GSM6934990",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 6 at end of exposure to NNK [KOKB_2]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934990/suppl/GSM6934990_KOKB_2_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934990/suppl/GSM6934990_KOKB_2_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934990/suppl/GSM6934990_KOKB_2_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740187",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035643"
+      ]
+    },
+    {
+      "accession": "GSM6934991",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 7 at end of exposure to NNK [KOKB_3]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934991/suppl/GSM6934991_KOKB_3_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934991/suppl/GSM6934991_KOKB_3_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934991/suppl/GSM6934991_KOKB_3_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740186",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035644"
+      ]
+    },
+    {
+      "accession": "GSM6934992",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 8 at end of exposure to NNK [KOKB_4]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934992/suppl/GSM6934992_KOKB_4_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934992/suppl/GSM6934992_KOKB_4_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934992/suppl/GSM6934992_KOKB_4_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740185",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035645"
+      ]
+    },
+    {
+      "accession": "GSM6934993",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 9 at 7 months post-saline [KOS7_41]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934993/suppl/GSM6934993_KOS7_41_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934993/suppl/GSM6934993_KOS7_41_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934993/suppl/GSM6934993_KOS7_41_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740184",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035649"
+      ]
+    },
+    {
+      "accession": "GSM6934994",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 10 at 7 months post-saline [KOS7_42]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934994/suppl/GSM6934994_KOS7_42_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934994/suppl/GSM6934994_KOS7_42_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934994/suppl/GSM6934994_KOS7_42_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740183",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035650"
+      ]
+    },
+    {
+      "accession": "GSM6934995",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 11 at 7 months post-saline [KOS7_43]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934995/suppl/GSM6934995_KOS7_43_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934995/suppl/GSM6934995_KOS7_43_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934995/suppl/GSM6934995_KOS7_43_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740182",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035651"
+      ]
+    },
+    {
+      "accession": "GSM6934996",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 12 at 7 months post-saline [KOS7_44]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934996/suppl/GSM6934996_KOS7_44_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934996/suppl/GSM6934996_KOS7_44_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934996/suppl/GSM6934996_KOS7_44_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740181",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035652"
+      ]
+    },
+    {
+      "accession": "GSM6934997",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 13 at end of exposure to saline [KOSB_5]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934997/suppl/GSM6934997_KOSB_5_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934997/suppl/GSM6934997_KOSB_5_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934997/suppl/GSM6934997_KOSB_5_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740180",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035641"
+      ]
+    },
+    {
+      "accession": "GSM6934998",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 14 at end of exposure to saline [KOSB_6]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934998/suppl/GSM6934998_KOSB_6_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934998/suppl/GSM6934998_KOSB_6_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934998/suppl/GSM6934998_KOSB_6_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740179",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035642"
+      ]
+    },
+    {
+      "accession": "GSM6934999",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 15 at end of exposure to saline [KOSB_7]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934999/suppl/GSM6934999_KOSB_7_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934999/suppl/GSM6934999_KOSB_7_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6934nnn/GSM6934999/suppl/GSM6934999_KOSB_7_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740178",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035646"
+      ]
+    },
+    {
+      "accession": "GSM6935000",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 16 at end of exposure to saline [KOSB_8]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935000/suppl/GSM6935000_KOSB_8_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935000/suppl/GSM6935000_KOSB_8_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935000/suppl/GSM6935000_KOSB_8_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740177",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035653"
+      ]
+    },
+    {
+      "accession": "GSM6935001",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 4 at 7 months post-NNK [JJ49]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935001/suppl/GSM6935001_JJ49_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935001/suppl/GSM6935001_JJ49_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935001/suppl/GSM6935001_JJ49_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740176",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035656"
+      ]
+    },
+    {
+      "accession": "GSM6935002",
+      "title": [
+        "GFP+ cells from lungs of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mouse 1 at 3 months post-NNK [1-SGGplusNNK-GfpPos]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP+ sorted mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935002/suppl/GSM6935002_1-SGGplusNNK-epplus_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935002/suppl/GSM6935002_1-SGGplusNNK-epplus_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935002/suppl/GSM6935002_1-SGGplusNNK-epplus_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740175",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035657"
+      ]
+    },
+    {
+      "accession": "GSM6935003",
+      "title": [
+        "GFP+ cells from lungs of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mouse 2 at 3 months post-NNK [2-SGGplusNNK-GfpPos]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP+ sorted mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935003/suppl/GSM6935003_2-SGGplusNNK-epplus_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935003/suppl/GSM6935003_2-SGGplusNNK-epplus_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935003/suppl/GSM6935003_2-SGGplusNNK-epplus_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740174",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035658"
+      ]
+    },
+    {
+      "accession": "GSM6935004",
+      "title": [
+        "GFP- cells from lungs of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mouse 1 at 3 months post-NNK [3-SGGplusNNK-GfpNeg]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP- sorted mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935004/suppl/GSM6935004_3-SGGplusNNK-ep-_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935004/suppl/GSM6935004_3-SGGplusNNK-ep-_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935004/suppl/GSM6935004_3-SGGplusNNK-ep-_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740173",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035659"
+      ]
+    },
+    {
+      "accession": "GSM6935005",
+      "title": [
+        "GFP- cells from lungs of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mouse 2 at 3 months post-NNK [4-SGGplusNNK-GfpNeg]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP- sorted mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935005/suppl/GSM6935005_4-SGGplusNNK-ep-_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935005/suppl/GSM6935005_4-SGGplusNNK-ep-_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935005/suppl/GSM6935005_4-SGGplusNNK-ep-_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740172",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035660"
+      ]
+    },
+    {
+      "accession": "GSM6935006",
+      "title": [
+        "GFP+ cells from lungs of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mouse 3 at 3 months post-saline [5-SGGplussaline-GfpPos]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP+ sorted mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935006/suppl/GSM6935006_5-SGGplussaline-epplus_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935006/suppl/GSM6935006_5-SGGplussaline-epplus_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935006/suppl/GSM6935006_5-SGGplussaline-epplus_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740171",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035661"
+      ]
+    },
+    {
+      "accession": "GSM6935007",
+      "title": [
+        "GFP+ cells from lungs of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mouse 4 at 3 months post-saline [6-SGGplussaline-GfpPos]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP+ sorted mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935007/suppl/GSM6935007_6-SGGplussaline-epplus_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935007/suppl/GSM6935007_6-SGGplussaline-epplus_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935007/suppl/GSM6935007_6-SGGplussaline-epplus_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740170",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035662"
+      ]
+    },
+    {
+      "accession": "GSM6935008",
+      "title": [
+        "GFP- cells from lungs of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mouse 3 at 3 months post-saline [7-SGGplussaline-GfpNeg]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP- sorted mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935008/suppl/GSM6935008_7-SGGplussaline-ep-_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935008/suppl/GSM6935008_7-SGGplussaline-ep-_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935008/suppl/GSM6935008_7-SGGplussaline-ep-_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740169",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035663"
+      ]
+    },
+    {
+      "accession": "GSM6935009",
+      "title": [
+        "GFP- cells from lungs of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mouse 4 at 3 months post-saline [8-SGGplussaline-GfpNeg]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP- sorted mouse lung cells",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935009/suppl/GSM6935009_8-SGGplussaline-ep-_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935009/suppl/GSM6935009_8-SGGplussaline-ep-_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935009/suppl/GSM6935009_8-SGGplussaline-ep-_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740168",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035647"
+      ]
+    },
+    {
+      "accession": "GSM6935010",
+      "title": [
+        "Tumor-bearing Gprc5a-/-  lung tissue 1 [ST-a4]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Formalin-fixed paraffin embedded mouse lung tissue",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935010/suppl/GSM6935010_a4_processed_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935010/suppl/GSM6935010_a4_processed_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935010/suppl/GSM6935010_a4_processed_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740167",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035648"
+      ]
+    },
+    {
+      "accession": "GSM6935011",
+      "title": [
+        "Tumor-bearing Gprc5a-/-  lung tissue 2 [ST-b4]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Formalin-fixed paraffin embedded mouse lung tissue",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935011/suppl/GSM6935011_b4_processed_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935011/suppl/GSM6935011_b4_processed_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935011/suppl/GSM6935011_b4_processed_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740166",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035655"
+      ]
+    },
+    {
+      "accession": "GSM6935012",
+      "title": [
+        "Tumor-bearing Gprc5a-/-  lung tissue 3 [ST-c4]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Formalin-fixed paraffin embedded mouse lung tissue",
+        "tissue: Lung",
+        "genotype: Gprc5a-/-",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935012/suppl/GSM6935012_c4_processed_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935012/suppl/GSM6935012_c4_processed_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6935nnn/GSM6935012/suppl/GSM6935012_c4_processed_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN32740165",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19035654"
+      ]
+    },
+    {
+      "accession": "GSM9229522",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 17 at 3 months post-NNK"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "strain: Gprc5a-/-",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229522/suppl/GSM9229522_KOK3_29_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229522/suppl/GSM9229522_KOK3_29_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229522/suppl/GSM9229522_KOK3_29_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN51251456",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30449470"
+      ]
+    },
+    {
+      "accession": "GSM9229523",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 18 at 3 months post-NNK"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "strain: Gprc5a-/-",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229523/suppl/GSM9229523_KOK3_30_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229523/suppl/GSM9229523_KOK3_30_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229523/suppl/GSM9229523_KOK3_30_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN51251455",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30449471"
+      ]
+    },
+    {
+      "accession": "GSM9229524",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 19 at 3 months post-NNK"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "strain: Gprc5a-/-",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229524/suppl/GSM9229524_KOK3_31_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229524/suppl/GSM9229524_KOK3_31_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229524/suppl/GSM9229524_KOK3_31_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN51251454",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30449472"
+      ]
+    },
+    {
+      "accession": "GSM9229525",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 20 at 3 months post-NNK"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "strain: Gprc5a-/-",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229525/suppl/GSM9229525_KOK3_32_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229525/suppl/GSM9229525_KOK3_32_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229525/suppl/GSM9229525_KOK3_32_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN51251453",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30449473"
+      ]
+    },
+    {
+      "accession": "GSM9229526",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 21 at 3 months post-saline"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "strain: Gprc5a-/-",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229526/suppl/GSM9229526_KOS3_25_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229526/suppl/GSM9229526_KOS3_25_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229526/suppl/GSM9229526_KOS3_25_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN51251452",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30449474"
+      ]
+    },
+    {
+      "accession": "GSM9229527",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 22 at 3 months post-saline"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "strain: Gprc5a-/-",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229527/suppl/GSM9229527_KOS3_26_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229527/suppl/GSM9229527_KOS3_26_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229527/suppl/GSM9229527_KOS3_26_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN51251451",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30449475"
+      ]
+    },
+    {
+      "accession": "GSM9229528",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 23 at 3 months post-saline"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "strain: Gprc5a-/-",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229528/suppl/GSM9229528_KOS3_27_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229528/suppl/GSM9229528_KOS3_27_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229528/suppl/GSM9229528_KOS3_27_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN51251450",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30449476"
+      ]
+    },
+    {
+      "accession": "GSM9229529",
+      "title": [
+        "Lungs from Gprc5a-/- mouse 24 at 3 months post-saline"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: Mouse lung cells",
+        "tissue: Lung",
+        "strain: Gprc5a-/-",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw scRNA-seq data were pre-processed (demultiplex cellular barcodes, read alignment, and generation of gene count matrix) using Cell Ranger Single Cell Software Suite (version 3.0.1) provided by 10X Genomics. For read alignment of human and mouse scRNA-seq data, the human reference GRCh38 (hg38) and mouse reference GRCm38 (mm10) genomes were used, respectively. Detailed quality control (QC) metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, cells with low complexity libraries (in which detected transcripts are aligned to < 200 genes such as cell debris, empty drops, and low-quality cells) were filtered out and excluded from subsequent analyses. Likely dying or apoptotic cells where > 15% of transcripts derived from the mitochondrial genome were also excluded.  For scRNA-seq data of Gprc5a-/-; SftpcCreER/+; RosaSun1GFP/+ mice, we further removed potential droplets/dead cells with nFeature smaller than or equal to 500 and mitochondrial gene fraction larger than or equal to 15% using Seurat.\nFor scRNA-seq data, likely doublets or multiplets were identified and carefully removed through a multi-step approach. Briefly, doublets or multiplets were identified based on library complexity, whereby cells with high-complexity libraries in which detected transcripts are aligned to > 6,500 genes were removed, and also, based on cluster distribution and marker gene expression, whereby doublets or multiplets forming distinct clusters with hybrid expression features and/or exhibiting an aberrantly high gene count were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed. Doublets or multiplets were also identified using the doublet detection algorithm DoubletFinder. The proportion of expected doublets was estimated based on cell counts obtained prior to scRNA-seq library construction. Data normalization was then performed using Seurat on the filtered gene-cell matrix. Statistical assessment of possible batch effects was performed on non-malignant epithelial cells using the R package k-BET48 as described in our previous studies and Harmony was run with default parameters to remove batch effects present in the PCA space.  For ST profiling data, demultiplexed clean reads were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. Generated ST gene expression count matrices were then analyzed using Seurat v4.1.0 to perform unsupervised clustering analysis.\nAssembly: mm10\nSupplementary files format and content: Comma-separated values and matrix files"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229529/suppl/GSM9229529_KOS3_28_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229529/suppl/GSM9229529_KOS3_28_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9229nnn/GSM9229529/suppl/GSM9229529_KOS3_28_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN51251449",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30449477"
+      ]
+    }
+  ],
+  "scope": "Metadata only; sample records are not independent biological units."
+}

@@ -1,0 +1,50 @@
+{
+  "frozen_utc": "2026-09-24T08:23:55.854257+00:00",
+  "cohort": "GSE136831",
+  "sampled_cells": 27352,
+  "donors": [
+    "010I",
+    "021I",
+    "022I",
+    "034I",
+    "040I",
+    "041I",
+    "051I",
+    "063I",
+    "098C",
+    "133C",
+    "135I",
+    "1372C",
+    "138I",
+    "158I",
+    "160C",
+    "174I",
+    "192C",
+    "222C",
+    "225I",
+    "226C",
+    "228I",
+    "296C",
+    "396C",
+    "454C",
+    "49I"
+  ],
+  "cell_floor": 50,
+  "maximum_cells_per_donor_subtype": 500,
+  "seed": 20260924,
+  "method": "LIANA_CellChat_like_magnitude_n_perms_None",
+  "resources": [
+    "consensus",
+    "cellchatdb"
+  ],
+  "expression_fraction": 0.1,
+  "scope": "declared myeloid/fibroblast/AT2 pairs; no whole-cohort source-agnostic claim; initial descriptive pass only",
+  "input_hashes": {
+    "raw_data\\GSE136831\\GSE136831_AllCells.Samples.CellType.MetadataTable.txt.gz": "147bdd11d720ed30736a459ba62a3d8e2f3f9028a8430e0eb714484f0456049b",
+    "raw_data\\GSE136831\\GSE136831_AllCells.GeneIDs.txt.gz": "e43b3008945c87a6875d4fb1a99a791fdaefeeb3c5a72a5d17589f621eb83af8",
+    "raw_data\\GSE136831\\GSE136831_RawCounts_Sparse.mtx.gz": "266133a964b5c45bf02394acaaff4ea4eb66096ec5a051d92f93dd2747b5850b",
+    ".venv-x64\\Lib\\site-packages\\liana\\resource\\omni_resource.csv": "b499b56ce084b7afde3462460e25b79c6abc047086833cd95ca42172d78e0b7c",
+    "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_ipf_liana\\resource_consensus.csv": "994db466f210f15ed36ee40b7f132cb85f3fa2f0a8def9f793b53f43222b96ab",
+    "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_ipf_liana\\resource_cellchatdb.csv": "6826b17c69c09c512c1f7838653f5992d0e6bd08e90c8f0d18c5b77f15200a80"
+  }
+}

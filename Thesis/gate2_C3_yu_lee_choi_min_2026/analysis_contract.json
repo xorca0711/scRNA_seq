@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "status": "authorized_staged_execution_with_scientific_gates",
+  "full_run_authorized": true,
+  "primary_dataset": "GSE300288",
+  "primary_contrast": "anti-IL-1beta alone versus IgG at 3 months post-NNK",
+  "primary_estimand": "mean difference in animal-level KAC fraction among eligible alveolar epithelial cells",
+  "primary_requires": [
+    "verified_biological_units",
+    "resolved_assay_metadata",
+    "source_frozen_KAC_definition"
+  ],
+  "secondary_contrast": "same contrast at 7 months",
+  "multiple_testing": "Holm across two phenotypic endpoint contrasts; separate globally adjusted core LR and primary pathway families specified in niche_analysis_contract.json; declared secondary DE families",
+  "proposed_eligibility": {
+    "minimum_independent_units_per_arm": 3,
+    "minimum_alveolar_cells_for_fraction": 100,
+    "minimum_state_cells_for_pseudobulk": 30,
+    "zero_KAC_fraction_retained": true,
+    "minimum_assayed_signature_fraction": 0.7
+  },
+  "proposed_sensitivity": {
+    "alveolar_cell_floors": [
+      50,
+      100,
+      200
+    ],
+    "state_cell_floors": [
+      20,
+      30,
+      50
+    ],
+    "signature_coverage": [
+      0.5,
+      0.7,
+      0.8
+    ]
+  },
+  "stages": [
+    {
+      "id": "U0",
+      "status": "metadata_preparation_complete"
+    },
+    {
+      "id": "U1",
+      "status": "two_count_inputs_checked_no_effects"
+    },
+    {
+      "id": "U2",
+      "status": "source_audit_and_IPF_resource_freeze_complete_remaining_design_annotation_gates"
+    },
+    {
+      "id": "U3",
+      "status": "early_seven_library_QC_and_cluster_diagnostics_complete_final_annotations_pending"
+    },
+    {
+      "id": "U4",
+      "status": "planned_perturbation_analysis",
+      "required_arms": [
+        "phenotypic_anchor",
+        "LR",
+        "PW"
+      ],
+      "conditional_arms": [
+        "LT"
+      ]
+    },
+    {
+      "id": "U5",
+      "status": "IPF_pathways_and_initial_descriptive_LR_complete_LR_contrasts_sensitivities_lesion_spatial_pending",
+      "required_arms": [
+        "paired_phenotypic_context",
+        "LR",
+        "PW"
+      ],
+      "conditional_arms": [
+        "LT",
+        "spatial"
+      ]
+    },
+    {
+      "id": "U6",
+      "status": "planned_specificity_and_synthesis"
+    }
+  ],
+  "unresolved_claims": [
+    "mature_cytokine_secretion",
+    "lineage_fate",
+    "chromatin_memory",
+    "irreversible_state_exit",
+    "universal_dose_duration_threshold",
+    "matrix_mechanical_stiffness",
+    "fibroblast_functional_suppression",
+    "causal_feedback_from_RNA_edges"
+  ],
+  "source_plan": "ANALYSIS_TRIAL_PLAN.md",
+  "plan_version": 3,
+  "primary_estimand_role": "primary_phenotypic_endpoint_parallel_to_central_niche_aims",
+  "niche_contract": "niche_analysis_contract.json",
+  "required_niche_aims": [
+    "N1_source_recipient",
+    "N2_fibroblast_context",
+    "N3_reciprocal_niche",
+    "N4_perturbation",
+    "N5_context_specificity"
+  ],
+  "authorization": {
+    "date": "2026-09-24",
+    "basis": "Owner requested final self-attack, improvements and launch; no renewed approval needed for agreed scope."
+  },
+  "final_review": "FINAL_REVIEW.md",
+  "release_limits": [
+    "KAC_annotation_not_yet_available",
+    "same_sample_niche_coverage_required",
+    "late_treatment_strategy_crosswalk_unresolved"
+  ]
+}

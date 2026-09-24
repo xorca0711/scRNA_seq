@@ -1,0 +1,31 @@
+"cohort","compartment","label","cell_floor","n_control","n_IPF","eligible"
+"GSE135893","AT2","__broad__",50,6,8,TRUE
+"GSE135893","AT2","__broad__",30,6,8,TRUE
+"GSE135893","AT2","__broad__",100,5,5,TRUE
+"GSE135893","AT2","AT2",50,6,8,TRUE
+"GSE135893","AT2","AT2",30,6,8,TRUE
+"GSE135893","AT2","AT2",100,5,5,TRUE
+"GSE135893","fibroblasts","__broad__",50,3,7,TRUE
+"GSE135893","fibroblasts","__broad__",30,3,7,TRUE
+"GSE135893","fibroblasts","__broad__",100,1,5,FALSE
+"GSE135893","fibroblasts","Fibroblasts",50,1,0,FALSE
+"GSE135893","fibroblasts","Fibroblasts",30,1,2,FALSE
+"GSE135893","fibroblasts","Fibroblasts",100,0,0,FALSE
+"GSE135893","fibroblasts","HAS1 High Fibroblasts",50,0,1,FALSE
+"GSE135893","fibroblasts","HAS1 High Fibroblasts",30,0,1,FALSE
+"GSE135893","fibroblasts","HAS1 High Fibroblasts",100,0,1,FALSE
+"GSE135893","fibroblasts","Myofibroblasts",50,1,5,FALSE
+"GSE135893","fibroblasts","Myofibroblasts",30,3,6,TRUE
+"GSE135893","fibroblasts","Myofibroblasts",100,0,3,FALSE
+"GSE135893","fibroblasts","PLIN2+ Fibroblasts",50,0,2,FALSE
+"GSE135893","fibroblasts","PLIN2+ Fibroblasts",30,0,3,FALSE
+"GSE135893","fibroblasts","PLIN2+ Fibroblasts",100,0,2,FALSE
+"GSE135893","macrophages","__broad__",50,9,12,TRUE
+"GSE135893","macrophages","__broad__",30,9,12,TRUE
+"GSE135893","macrophages","__broad__",100,9,12,TRUE
+"GSE135893","macrophages","Macrophages",50,9,12,TRUE
+"GSE135893","macrophages","Macrophages",30,9,12,TRUE
+"GSE135893","macrophages","Macrophages",100,9,12,TRUE
+"GSE135893","macrophages","Proliferating Macrophages",50,1,3,FALSE
+"GSE135893","macrophages","Proliferating Macrophages",30,2,5,FALSE
+"GSE135893","macrophages","Proliferating Macrophages",100,0,1,FALSE

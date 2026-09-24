@@ -1,0 +1,2048 @@
+{
+  "schema_version": 1,
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307534&targ=all&form=xml&view=full",
+  "retrieved_utc": "2026-09-24T07:16:30.988792+00:00",
+  "sha256": "d33d0f1a8a7aa763c137b444c61de7806646a5a3b34530b83cc6ebeff0ef48d6",
+  "series": {
+    "accession": "GSE307534",
+    "title": [
+      "Spatial transcriptomics analysis of normal lung tissues, precursor lung lesions and invasive lung adenocarcinomas"
+    ],
+    "pubmed_id": [
+      "41202811"
+    ],
+    "summary": [
+      "Understanding cellular processes underlying early lung adenocarcinoma (LUAD) development is needed to devise intervention strategies. Here, we performed spatial trancriptomics analysis of human treatment-naive lungs comprising various stages in the sequence of pathogenesis of LUAD including normal lung tissues, atypical adenomatous hyperplasia (AAH), adenocarcinoma in situ (AIS), minimally invasive adenocarcinoma (MIA) and LUAD."
+    ],
+    "overall_design": [
+      "Spatial transcriptomics analysis of samples was done using the Visium CytAssist platform from 10x Genomics. All tissues were surgically resected and formalin-fixed paraffin embedded.\n\n***************************************************************\nRaw files for human/patient samples were not submitted to GEO due to concerns about submitting personally identifiable sequence data for open access.\n***************************************************************"
+    ],
+    "sample_id": [
+      "GSM9226168",
+      "GSM9226169",
+      "GSM9226170",
+      "GSM9226171",
+      "GSM9226172",
+      "GSM9226173",
+      "GSM9226174",
+      "GSM9226175",
+      "GSM9226176",
+      "GSM9226177",
+      "GSM9226178",
+      "GSM9226179",
+      "GSM9226180",
+      "GSM9226181",
+      "GSM9226182",
+      "GSM9226183",
+      "GSM9226184",
+      "GSM9226185",
+      "GSM9226186",
+      "GSM9226187",
+      "GSM9226188",
+      "GSM9226189",
+      "GSM9226190",
+      "GSM9226191",
+      "GSM9226192",
+      "GSM9226193",
+      "GSM9226194",
+      "GSM9226195",
+      "GSM9226196",
+      "GSM9226197",
+      "GSM9226198",
+      "GSM9226199",
+      "GSM9226200",
+      "GSM9226201",
+      "GSM9226202",
+      "GSM9226203",
+      "GSM9226204",
+      "GSM9226205",
+      "GSM9226206",
+      "GSM9226207",
+      "GSM9226208",
+      "GSM9226209",
+      "GSM9226210",
+      "GSM9226211",
+      "GSM9226212",
+      "GSM9226213",
+      "GSM9226214",
+      "GSM9226215",
+      "GSM9226216",
+      "GSM9226217",
+      "GSM9226218",
+      "GSM9226219",
+      "GSM9226220",
+      "GSM9226221",
+      "GSM9226222",
+      "GSM9226223"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307534/suppl/GSE307534_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1321930"
+    ]
+  },
+  "samples": [
+    {
+      "accession": "GSM9226168",
+      "title": [
+        "Lung tissue with AAH of patient 1 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 65",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226168/suppl/GSM9226168_P1_AAH.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226169",
+      "title": [
+        "Lung tissue with LUAD of patient 1 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 65",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226169/suppl/GSM9226169_P1_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226170",
+      "title": [
+        "Lung tissue with AAH of patient 2 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 73",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226170/suppl/GSM9226170_P2_AAH.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226171",
+      "title": [
+        "Lung tissue with LUAD of patient 2 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 73",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226171/suppl/GSM9226171_P2_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226172",
+      "title": [
+        "Lung tissue with AIS of patient 3 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226172/suppl/GSM9226172_P3_AIS.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226173",
+      "title": [
+        "Lung tissue with LUAD of patient 3 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226173/suppl/GSM9226173_P3_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226174",
+      "title": [
+        "Normal lung tissue of patient 4 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226174/suppl/GSM9226174_P4_Normal.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226175",
+      "title": [
+        "Lung tissue with AAH of patient 4 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226175/suppl/GSM9226175_P4_AAH.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226176",
+      "title": [
+        "Lung tissue with second AAH of patient 4 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226176/suppl/GSM9226176_P4_AAH-1.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226177",
+      "title": [
+        "Lung tissue with LUAD of patient 4 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226177/suppl/GSM9226177_P4_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226178",
+      "title": [
+        "Lung tissue with AIS of patient 5 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 81",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226178/suppl/GSM9226178_P5_AIS.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226179",
+      "title": [
+        "Lung tissue with LUAD of patient 5 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 81",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226179/suppl/GSM9226179_P5_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226180",
+      "title": [
+        "Lung tissue with AAH of patient 6 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 66",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226180/suppl/GSM9226180_P6_AAH.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226181",
+      "title": [
+        "Lung tissue with LUAD of patient 6 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 66",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226181/suppl/GSM9226181_P6_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226182",
+      "title": [
+        "Lung tissue with LUAD of patient 7 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 46",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226182/suppl/GSM9226182_P7_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226183",
+      "title": [
+        "Lung tissue with second LUAD of patient 7 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 46",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226183/suppl/GSM9226183_P7_LUAD-1.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226184",
+      "title": [
+        "Lung tissue with AIS of patient 8 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226184/suppl/GSM9226184_P8_AIS.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226185",
+      "title": [
+        "Lung tissue with LUAD of patient 8 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226185/suppl/GSM9226185_P8_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226186",
+      "title": [
+        "Lung tissue with AAH of patient 9 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226186/suppl/GSM9226186_P9_AAH.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226187",
+      "title": [
+        "Lung tissue with AIS of patient 9 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226187/suppl/GSM9226187_P9_AIS.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226188",
+      "title": [
+        "Lung tissue with LUAD of patient 9 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226188/suppl/GSM9226188_P9_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226189",
+      "title": [
+        "Lung tissue with MIA of patient 10 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 58",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226189/suppl/GSM9226189_P10_MIA.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226190",
+      "title": [
+        "Lung tissue with LUAD of patient 10 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 58",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226190/suppl/GSM9226190_P10_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226191",
+      "title": [
+        "Lung tissue with AAH of patient 11 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 70",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226191/suppl/GSM9226191_P11_AAH.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226192",
+      "title": [
+        "Lung tissue with LUAD of patient 11 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 70",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226192/suppl/GSM9226192_P11_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226193",
+      "title": [
+        "Lung tissue with AIS of patient 12 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226193/suppl/GSM9226193_P12_AIS.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226194",
+      "title": [
+        "Lung tissue with LUAD of patient 12 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226194/suppl/GSM9226194_P12_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226195",
+      "title": [
+        "Lung tissue with MIA of patient 13 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 77",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226195/suppl/GSM9226195_P13_MIA.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226196",
+      "title": [
+        "Lung tissue with LUAD of patient 13 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 77",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226196/suppl/GSM9226196_P13_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226197",
+      "title": [
+        "Lung tissue with AIS of patient 14 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 53",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226197/suppl/GSM9226197_P14_AIS.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226198",
+      "title": [
+        "Lung tissue with LUAD of patient 14 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 53",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226198/suppl/GSM9226198_P14_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226199",
+      "title": [
+        "Lung tissue with MIA of patient 15 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226199/suppl/GSM9226199_P15_MIA.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226200",
+      "title": [
+        "Lung tissue with LUAD of patient 15 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226200/suppl/GSM9226200_P15_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226201",
+      "title": [
+        "Lung tissue with AIS of patient 16 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226201/suppl/GSM9226201_P16_AIS.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226202",
+      "title": [
+        "Lung tissue with LUAD of patient 16 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226202/suppl/GSM9226202_P16_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226203",
+      "title": [
+        "Lung tissue with AIS of patient 17 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226203/suppl/GSM9226203_P17_AIS.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226204",
+      "title": [
+        "Lung tissue with LUAD of patient 17 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226204/suppl/GSM9226204_P17_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226205",
+      "title": [
+        "Lung tissue with MIA of patient 18 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 77",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226205/suppl/GSM9226205_P18_MIA.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226206",
+      "title": [
+        "Lung tissue with LUAD of patient 18 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 77",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226206/suppl/GSM9226206_P18_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226207",
+      "title": [
+        "Lung tissue with AIS of patient 19 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 76",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226207/suppl/GSM9226207_P19_AIS.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226208",
+      "title": [
+        "Lung tissue with LUAD of patient 19 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 76",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226208/suppl/GSM9226208_P19_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226209",
+      "title": [
+        "Lung tissue with AAH of patient 20 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226209/suppl/GSM9226209_P20_AAH.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226210",
+      "title": [
+        "Lung tissue with LUAD of patient 20 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226210/suppl/GSM9226210_P20_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226211",
+      "title": [
+        "Lung tissue with AIS of patient 21 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226211/suppl/GSM9226211_P21_AIS.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226212",
+      "title": [
+        "Lung tissue with second AIS of patient 21 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226212/suppl/GSM9226212_P21_AIS-1.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226213",
+      "title": [
+        "Lung tissue with LUAD of patient 21 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226213/suppl/GSM9226213_P21_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226214",
+      "title": [
+        "Lung tissue with AAH of patient 22 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226214/suppl/GSM9226214_P22_AAH.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226215",
+      "title": [
+        "Lung tissue with AIS of patient 22 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226215/suppl/GSM9226215_P22_AIS.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226216",
+      "title": [
+        "Lung tissue with LUAD of patient 22 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226216/suppl/GSM9226216_P22_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226217",
+      "title": [
+        "Lung tissue with AIS of patient 23 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226217/suppl/GSM9226217_P23_AIS.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226218",
+      "title": [
+        "Lung tissue with second AIS of patient 23 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226218/suppl/GSM9226218_P23_AIS-1.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226219",
+      "title": [
+        "Lung tissue with LUAD of patient 23 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226219/suppl/GSM9226219_P23_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226220",
+      "title": [
+        "Lung tissue with AAH of patient 24 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 61",
+        "Sex: Male",
+        "ethnicity: White/Caucasian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226220/suppl/GSM9226220_P24_AAH.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226221",
+      "title": [
+        "Lung tissue with LUAD of patient 24 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 61",
+        "Sex: Male",
+        "ethnicity: White/Caucasian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226221/suppl/GSM9226221_P24_LUAD.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226222",
+      "title": [
+        "Lung tissue with AAH of patient 25 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 70",
+        "Sex: Male",
+        "ethnicity: White/Caucasian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226222/suppl/GSM9226222_P25_AAH.tar.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226223",
+      "title": [
+        "Lung tissue with LUAD of patient 25 [ST]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 70",
+        "Sex: Male",
+        "ethnicity: White/Caucasian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "Visium ST experiment: Demultiplexed reads were pre-processed using Space Ranger (v2.0.0, 10x Genomics) and aligned to the GRCh38 reference genome. ST profiling of human FFPE tissues from P1-P25 was performed using the CytAssist-enabled Visium platform with 11 x 11 mm fiducial frames (each frame comprises roughly 14,000 spots) from 10x Genomics according to the manufacturer’s recommendations. ST RNA-seq libraries were generated according to the manufacturer’s instructions with an average of ~11,000 uniquely barcoded spots/tissue. Libraries were sequenced on NovaSeq 6000 or NovaSeq X platforms (Illumina) to achieve an average depth of ~65,000 mean reads per spot and ~3,400 median genes per spot. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. Spot-level histopathological annotation and visualization were generated using loupe browser (v.7.1). An experienced pathologist then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. 18Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out.\nAssembly: GRCh38\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226223/suppl/GSM9226223_P25_LUAD.tar.gz"
+      ]
+    }
+  ],
+  "scope": "Metadata only; sample records are not independent biological units."
+}

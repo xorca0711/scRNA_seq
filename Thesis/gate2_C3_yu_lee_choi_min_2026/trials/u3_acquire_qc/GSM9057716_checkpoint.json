@@ -1,0 +1,86 @@
+{
+  "fingerprint": "b943cd281c13003c51d8ccb6f6f3a3ef57323620d584b789e0c8b112b0c5edfaf2a46262a33a3b7d90d04fa47fd06580d01c9751398cb4d529039b39a7eb984a",
+  "input_hash": "e3d37d92864aea715ebcba8f56974e5852bf1b0f4117f6bf49e3d97bf6e18694",
+  "summary": {
+    "gsm": "GSM9057716",
+    "treatment": "Control IgG",
+    "endpoint": "3 months post-NNK",
+    "analysis_unit": "GSM9057716",
+    "input_cells": 4331,
+    "qc_pass_cells": 4256,
+    "qc_excluded_cells": 75,
+    "features": 31053,
+    "mt_features": 13,
+    "median_counts": 3602.0,
+    "median_genes": 1510.0,
+    "median_percent_mt": 2.395209580838323,
+    "duplicate_coordinates_collapsed": 0,
+    "ambiguous_candidate_cells_after_qc": 321,
+    "processing_seconds": 7.062
+  },
+  "coverage": [
+    {
+      "gsm": "GSM9057716",
+      "candidate_compartment": "epithelial",
+      "panel_genes": 4,
+      "assayed_panel_genes": 4,
+      "qc_pass_panel_positive_cells": 320,
+      "qc_pass_exclusive_candidate_cells": 270,
+      "provisional_only": true
+    },
+    {
+      "gsm": "GSM9057716",
+      "candidate_compartment": "macrophage_myeloid",
+      "panel_genes": 6,
+      "assayed_panel_genes": 6,
+      "qc_pass_panel_positive_cells": 473,
+      "qc_pass_exclusive_candidate_cells": 283,
+      "provisional_only": true
+    },
+    {
+      "gsm": "GSM9057716",
+      "candidate_compartment": "fibroblast",
+      "panel_genes": 5,
+      "assayed_panel_genes": 5,
+      "qc_pass_panel_positive_cells": 1125,
+      "qc_pass_exclusive_candidate_cells": 1058,
+      "provisional_only": true
+    },
+    {
+      "gsm": "GSM9057716",
+      "candidate_compartment": "endothelial",
+      "panel_genes": 4,
+      "assayed_panel_genes": 4,
+      "qc_pass_panel_positive_cells": 148,
+      "qc_pass_exclusive_candidate_cells": 135,
+      "provisional_only": true
+    },
+    {
+      "gsm": "GSM9057716",
+      "candidate_compartment": "T_cell",
+      "panel_genes": 4,
+      "assayed_panel_genes": 4,
+      "qc_pass_panel_positive_cells": 894,
+      "qc_pass_exclusive_candidate_cells": 801,
+      "provisional_only": true
+    },
+    {
+      "gsm": "GSM9057716",
+      "candidate_compartment": "B_cell",
+      "panel_genes": 4,
+      "assayed_panel_genes": 4,
+      "qc_pass_panel_positive_cells": 548,
+      "qc_pass_exclusive_candidate_cells": 452,
+      "provisional_only": true
+    },
+    {
+      "gsm": "GSM9057716",
+      "candidate_compartment": "neutrophil",
+      "panel_genes": 4,
+      "assayed_panel_genes": 4,
+      "qc_pass_panel_positive_cells": 474,
+      "qc_pass_exclusive_candidate_cells": 310,
+      "provisional_only": true
+    }
+  ]
+}
