@@ -1,0 +1,19 @@
+{
+  "frozen_utc": "2026-09-24T12:07:14.668304+00:00",
+  "scope": "all 75 source-deposited libraries, all 23 patients; library counts are not patient replication",
+  "qc": {
+    "min_genes": 500,
+    "min_counts": 1000,
+    "max_mito_percent_exclusive": 20
+  },
+  "annotation": "frozen three-patient pilot scArches adaptor; exact HLCA-core weighted 50-neighbor transfer; all fine labels with uncertainty <=0.2 primary, <=0.3 sensitivity; original histology retained",
+  "annotation_validation": "pilot multi-marker review supports major compartments; ambiguous and low-confidence cells excluded from primary subtype pseudobulks; distant/new neoplastic states are not forced into KAC/malignancy classes",
+  "background_RNA_limit": "surfactant RNA is widespread outside epithelial assignments in the pilot; identity uses multigene/reference support, not one marker; LR remains RNA compatibility",
+  "model_sha256": "311129202099c7a21f669216c113e03ba6e6a4748157ecdd9c286d8fd934ea87",
+  "reference_gene_map_sha256": "4c88e4942f8f1fad9eb7cdb712d0588699918e136d87183d158ac0ebba1fef86",
+  "count_store_code_sha256": "ba8552e76d3e1f6507727db68bdae15810ead6e65773f5f2ae478cbc1ebec90d",
+  "normalization": "raw counts preserved; TMM/pathway normalization follows donor-by-histology aggregation",
+  "unit": "patient; repeated same-histology libraries pooled after annotation",
+  "primary_uncertainty": 0.2,
+  "sensitivity_uncertainty": 0.3
+}

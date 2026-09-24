@@ -1,0 +1,5 @@
+resource,family,view,ligand,receptor,human_ligand,human_receptor,source,source_label,target,target_label,cell_floor,prior_count,n_control,n_antiIL1B,difference_antiIL1B_minus_IgG,ligand_component_difference,receptor_component_difference,loo_min,loo_max,inference
+consensus,core,broad,Il1b,Il1r1_Il1rap,IL1B,IL1R1_IL1RAP,myeloid,__broad__,fibroblast,__broad__,50,1.0,4,3,0.1549891329234629,0.0702882487267899,0.2396900171201332,0.0633116594307647,0.2310043917662501,descriptive_no_p_value
+consensus,core,broad,Il1a,Il1r1_Il1rap,IL1A,IL1R1_IL1RAP,myeloid,__broad__,fibroblast,__broad__,50,1.0,4,3,0.238703398017992,0.2377167789158489,0.2396900171201332,0.0705837909946511,0.4665885465451125,descriptive_no_p_value
+consensus,core,broad,Tgfb1,Tgfbr1_Tgfbr2,TGFB1,TGFBR1_TGFBR2,myeloid,__broad__,fibroblast,__broad__,50,1.0,4,3,0.2340021447329974,0.2981388072191002,0.1698654822468954,0.0998943427585414,0.3114612856242145,descriptive_no_p_value
+consensus,core,broad,Il1b,Il1r1_Il1rap,IL1B,IL1R1_IL1RAP,myeloid,__broad__,alveolar,__broad__,50,1.0,4,3,0.3409075769639615,0.0702882487267899,0.611526905201131,-0.0558526696588002,0.6186283341715093,descriptive_no_p_value

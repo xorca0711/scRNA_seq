@@ -1,0 +1,461 @@
+{
+  "frozen_utc": "2026-09-24T11:58:55.559644+00:00",
+  "series": "GSE308103",
+  "selection": "all 75 deposited processed libraries; no outcome-based selection; repeated tissues remain nested within 23 patients",
+  "per_file_cap": 500000000,
+  "total_new_cap": 8000000000,
+  "jobs": [
+    {
+      "gsm": "GSM9237901",
+      "patient": 3,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237901/suppl/GSM9237901_P3_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237902",
+      "patient": 3,
+      "histology": "AIS",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237902/suppl/GSM9237902_P3_AIS.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237903",
+      "patient": 3,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237903/suppl/GSM9237903_P3_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237904",
+      "patient": 4,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237904/suppl/GSM9237904_P4_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237905",
+      "patient": 4,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237905/suppl/GSM9237905_P4_Normal1.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237906",
+      "patient": 4,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237906/suppl/GSM9237906_P4_AAH.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237907",
+      "patient": 4,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237907/suppl/GSM9237907_P4_AAH1.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237908",
+      "patient": 4,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237908/suppl/GSM9237908_P4_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237909",
+      "patient": 5,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237909/suppl/GSM9237909_P5_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237910",
+      "patient": 5,
+      "histology": "AIS",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237910/suppl/GSM9237910_P5_AIS.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237911",
+      "patient": 5,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237911/suppl/GSM9237911_P5_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237912",
+      "patient": 6,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237912/suppl/GSM9237912_P6_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237913",
+      "patient": 6,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237913/suppl/GSM9237913_P6_AAH.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237914",
+      "patient": 6,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237914/suppl/GSM9237914_P6_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237915",
+      "patient": 7,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237915/suppl/GSM9237915_P7_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237916",
+      "patient": 7,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237916/suppl/GSM9237916_P7_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237917",
+      "patient": 7,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237917/suppl/GSM9237917_P7_LUAD1.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237918",
+      "patient": 8,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237918/suppl/GSM9237918_P8_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237919",
+      "patient": 8,
+      "histology": "AIS",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237919/suppl/GSM9237919_P8_AIS.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237920",
+      "patient": 8,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237920/suppl/GSM9237920_P8_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237921",
+      "patient": 9,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237921/suppl/GSM9237921_P9_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237922",
+      "patient": 9,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237922/suppl/GSM9237922_P9_AAH.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237923",
+      "patient": 9,
+      "histology": "AIS",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237923/suppl/GSM9237923_P9_AIS.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237924",
+      "patient": 9,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237924/suppl/GSM9237924_P9_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237925",
+      "patient": 10,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237925/suppl/GSM9237925_P10_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237926",
+      "patient": 10,
+      "histology": "MIA",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237926/suppl/GSM9237926_P10_MIA.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237927",
+      "patient": 10,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237927/suppl/GSM9237927_P10_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237928",
+      "patient": 11,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237928/suppl/GSM9237928_P11_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237929",
+      "patient": 11,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237929/suppl/GSM9237929_P11_AAH.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237930",
+      "patient": 11,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237930/suppl/GSM9237930_P11_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237931",
+      "patient": 12,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237931/suppl/GSM9237931_P12_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237932",
+      "patient": 12,
+      "histology": "AIS",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237932/suppl/GSM9237932_P12_AIS.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237933",
+      "patient": 12,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237933/suppl/GSM9237933_P12_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237934",
+      "patient": 13,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237934/suppl/GSM9237934_P13_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237935",
+      "patient": 13,
+      "histology": "MIA",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237935/suppl/GSM9237935_P13_MIA.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237936",
+      "patient": 13,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237936/suppl/GSM9237936_P13_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237937",
+      "patient": 14,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237937/suppl/GSM9237937_P14_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237938",
+      "patient": 14,
+      "histology": "AIS",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237938/suppl/GSM9237938_P14_AIS.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237939",
+      "patient": 14,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237939/suppl/GSM9237939_P14_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237940",
+      "patient": 15,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237940/suppl/GSM9237940_P15_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237941",
+      "patient": 15,
+      "histology": "MIA",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237941/suppl/GSM9237941_P15_MIA.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237942",
+      "patient": 15,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237942/suppl/GSM9237942_P15_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237943",
+      "patient": 16,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237943/suppl/GSM9237943_P16_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237944",
+      "patient": 16,
+      "histology": "AIS",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237944/suppl/GSM9237944_P16_AIS.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237945",
+      "patient": 16,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237945/suppl/GSM9237945_P16_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237946",
+      "patient": 17,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237946/suppl/GSM9237946_P17_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237947",
+      "patient": 17,
+      "histology": "AIS",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237947/suppl/GSM9237947_P17_AIS.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237948",
+      "patient": 17,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237948/suppl/GSM9237948_P17_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237949",
+      "patient": 18,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237949/suppl/GSM9237949_P18_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237950",
+      "patient": 18,
+      "histology": "MIA",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237950/suppl/GSM9237950_P18_MIA.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237951",
+      "patient": 18,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237951/suppl/GSM9237951_P18_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237952",
+      "patient": 19,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237952/suppl/GSM9237952_P19_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237953",
+      "patient": 19,
+      "histology": "AIS",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237953/suppl/GSM9237953_P19_AIS.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237954",
+      "patient": 19,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237954/suppl/GSM9237954_P19_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237955",
+      "patient": 20,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237955/suppl/GSM9237955_P20_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237956",
+      "patient": 20,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237956/suppl/GSM9237956_P20_AAH.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237957",
+      "patient": 20,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237957/suppl/GSM9237957_P20_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237958",
+      "patient": 21,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237958/suppl/GSM9237958_P21_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237959",
+      "patient": 21,
+      "histology": "AIS",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237959/suppl/GSM9237959_P21_AIS.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237960",
+      "patient": 21,
+      "histology": "AIS",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237960/suppl/GSM9237960_P21_AIS1.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237961",
+      "patient": 21,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237961/suppl/GSM9237961_P21_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237962",
+      "patient": 22,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237962/suppl/GSM9237962_P22_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237963",
+      "patient": 22,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237963/suppl/GSM9237963_P22_AAH.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237964",
+      "patient": 22,
+      "histology": "AIS",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237964/suppl/GSM9237964_P22_AIS.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237965",
+      "patient": 22,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237965/suppl/GSM9237965_P22_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237966",
+      "patient": 23,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237966/suppl/GSM9237966_P23_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237967",
+      "patient": 23,
+      "histology": "AIS",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237967/suppl/GSM9237967_P23_AIS.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237968",
+      "patient": 23,
+      "histology": "AIS",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237968/suppl/GSM9237968_P23_AIS1.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237969",
+      "patient": 23,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237969/suppl/GSM9237969_P23_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237970",
+      "patient": 24,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237970/suppl/GSM9237970_P24_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237971",
+      "patient": 24,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237971/suppl/GSM9237971_P24_AAH.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237972",
+      "patient": 24,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237972/suppl/GSM9237972_P24_LUAD.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237973",
+      "patient": 25,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237973/suppl/GSM9237973_P25_Normal.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237974",
+      "patient": 25,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237974/suppl/GSM9237974_P25_AAH.raw_counts.mtx.txt.gz"
+    },
+    {
+      "gsm": "GSM9237975",
+      "patient": 25,
+      "histology": "LUAD",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237975/suppl/GSM9237975_P25_LUAD.raw_counts.mtx.txt.gz"
+    }
+  ],
+  "pilot": "eight libraries parsed and reference mapped; all series patient/title/file/demographic crosschecks agree",
+  "phenotype_limit": "source-deposited histology labels; atlas candidates are not malignant/KAC labels"
+}

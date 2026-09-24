@@ -1,0 +1,34 @@
+{
+  "status": "completed",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "b6f23e50e720ef84ed2e6775b5e10c394190eb34a90596c2f3e9bdfd017d96f5",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_human_aggregate.py",
+    "entrypoint_sha256": "28e918c5a60423e4dc9746146ec2a196cd1977eec2a4ee53c475abd58a97c1c5"
+  },
+  "started_utc": "2026-09-24T13:43:56.546568+00:00",
+  "completed": [
+    {
+      "name": "unc20_pooled",
+      "all_units": 2535,
+      "triad_units": 743,
+      "exact_count_parity": true
+    },
+    {
+      "name": "unc20_largest_library",
+      "all_units": 2525,
+      "triad_units": 742,
+      "exact_count_parity": true
+    },
+    {
+      "name": "unc30_pooled",
+      "all_units": 2715,
+      "triad_units": 782,
+      "exact_count_parity": true
+    }
+  ],
+  "elapsed_seconds": 252.3,
+  "updated_utc": "2026-09-24T13:48:09.208148+00:00"
+}

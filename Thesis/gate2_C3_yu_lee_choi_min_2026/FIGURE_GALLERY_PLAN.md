@@ -13,15 +13,20 @@ table; missing images are not embedded as placeholders.
 
 ## Reading order and current readiness
 
+The completed gallery and evidence register are in [README](README.md#figure-gallery)
+and [EVIDENCE_REVIEW](EVIDENCE_REVIEW.md). The panel specifications below
+preserve the original presentation plan; unavailable endpoints are explicitly
+represented by eligibility tables or narrower measured panels.
+
 | ID | Figure and question | Current readiness | Analysis dependency |
 |---|---|---|---|
-| F01 | Context, experimental design and observed cell coverage: what can each cohort answer? | Design/QC/coverage inputs available for the initial batch; rendering planned | U0/U2/U3; current eligibility tables |
-| F02 | IL-1 sources, recipients and inhibitory context: who expresses the components? | Initial triad extraction complete; donor panels and comprehensive source scan pending | N1; validated labels and donor-level expression/detection tables |
-| F03 | Directional macrophage-fibroblast-epithelial RNA compatibility: which fixed edges are supported? | Initial 25-donor GSE136831 descriptive LR run and output checks complete; rendering, differential and sensitivity arms pending | N1/N3; U4-LR/U5-LR |
-| F04 | Fibroblast, macrophage and epithelial recipient pathways: do response programmes agree? | Initial two-cohort IPF broad-compartment figure available | N2/N3; U5-PW; treatment panels conditional on U4-PW |
-| F05 | Direct IL-1beta blockade: do epithelial state balance and niche responses change together? | Gated by KAC annotation and eligible cell coverage; later endpoint also needs treatment-history mapping | N4; U3/U4 |
-| F06 | Human lesion and spatial context: do associations persist within patients and regions? | Conditional; no lesion/spatial result yet | N5; verified GSE308103/GSE307534 crosswalk and U5 |
-| F07 | Evidence across repair, fibrosis and neoplasia: what agrees, conflicts or remains unmeasured? | Final synthesis planned | N5/U6; completed or explicitly ineligible analyses |
+| F01 | Context, experimental design and observed cell coverage: what can each cohort answer? | Completed design and biological-unit coverage figure | U0/U2/U3; current eligibility tables |
+| F02 | IL-1 sources, recipients and inhibitory context: who expresses the components? | Completed IPF and all-QC human sources; receptor/inhibitor tables retain assay limits | N1; validated labels and donor-level expression/detection tables |
+| F03 | Directional macrophage-fibroblast-epithelial RNA compatibility: which fixed edges are supported? | Completed IPF, mouse and paired human RNA compatibility with native LR sensitivities | N1/N3; U4-LR/U5-LR |
+| F04 | Fibroblast, macrophage and epithelial recipient pathways: do response programmes agree? | Completed IPF, mouse and paired human pathways; eligible IPF/human ligand targets | N2/N3; U5-PW; treatment panels conditional on U4-PW |
+| F05 | Direct IL-1beta blockade: do epithelial state balance and niche responses change together? | Early niche measurements complete; KAC identity and primary phenotype remain unidentifiable | N4; U3/U4 |
+| F06 | Human lesion and spatial context: do associations persist within patients and regions? | All human libraries and spatial/context matrices processed; independent ROI and post-viral coordinates unavailable | N5; verified GSE308103/GSE307534 crosswalk and U5 |
+| F07 | Evidence across repair, fibrosis and neoplasia: what agrees, conflicts or remains unmeasured? | Completed specificity panels and evidence matrix; interpretation review ready | N5/U6; completed or explicitly ineligible analyses |
 
 F01-F04 are the first gallery-building batch. F05-F07 are scientific goals,
 not promised positive findings. A failed eligibility gate produces an explicit

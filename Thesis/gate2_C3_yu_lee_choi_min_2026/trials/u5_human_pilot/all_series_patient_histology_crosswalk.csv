@@ -1,0 +1,76 @@
+gsm,patient,histology,title,filename,title_filename_agree,age,sex,smoking
+GSM9237901,3,normal,Normal lung tissue of patient 3 [snRNA-seq],GSM9237901_P3_Normal.raw_counts.mtx.txt.gz,True,74,Male,Yes
+GSM9237902,3,AIS,Lung tissue with AIS of patient 3 [snRNA-seq],GSM9237902_P3_AIS.raw_counts.mtx.txt.gz,True,74,Male,Yes
+GSM9237903,3,LUAD,Lung tissue with LUAD of patient 3 [snRNA-seq],GSM9237903_P3_LUAD.raw_counts.mtx.txt.gz,True,74,Male,Yes
+GSM9237904,4,normal,Normal lung tissue of patient 4 [snRNA-seq],GSM9237904_P4_Normal.raw_counts.mtx.txt.gz,True,74,Female,No
+GSM9237905,4,normal,Second normal lung tissue of patient 4 [snRNA-seq],GSM9237905_P4_Normal1.raw_counts.mtx.txt.gz,True,74,Female,No
+GSM9237906,4,AAH,Lung tissue with AAH of patient 4 [snRNA-seq],GSM9237906_P4_AAH.raw_counts.mtx.txt.gz,True,74,Female,No
+GSM9237907,4,AAH,Lung tissue with second AAH of patient 4 [snRNA-seq],GSM9237907_P4_AAH1.raw_counts.mtx.txt.gz,True,74,Female,No
+GSM9237908,4,LUAD,Lung tissue with LUAD of patient 4 [snRNA-seq],GSM9237908_P4_LUAD.raw_counts.mtx.txt.gz,True,74,Female,No
+GSM9237909,5,normal,Normal lung tissue of patient 5 [snRNA-seq],GSM9237909_P5_Normal.raw_counts.mtx.txt.gz,True,81,Male,Yes
+GSM9237910,5,AIS,Lung tissue with AIS of patient 5 [snRNA-seq],GSM9237910_P5_AIS.raw_counts.mtx.txt.gz,True,81,Male,Yes
+GSM9237911,5,LUAD,Lung tissue with LUAD of patient 5 [snRNA-seq],GSM9237911_P5_LUAD.raw_counts.mtx.txt.gz,True,81,Male,Yes
+GSM9237912,6,normal,Normal lung tissue of patient 6 [snRNA-seq],GSM9237912_P6_Normal.raw_counts.mtx.txt.gz,True,66,Male,Yes
+GSM9237913,6,AAH,Lung tissue with AAH of patient 6 [snRNA-seq],GSM9237913_P6_AAH.raw_counts.mtx.txt.gz,True,66,Male,Yes
+GSM9237914,6,LUAD,Lung tissue with LUAD of patient 6 [snRNA-seq],GSM9237914_P6_LUAD.raw_counts.mtx.txt.gz,True,66,Male,Yes
+GSM9237915,7,normal,Normal lung tissue of patient 7 [snRNA-seq],GSM9237915_P7_Normal.raw_counts.mtx.txt.gz,True,46,Female,No
+GSM9237916,7,LUAD,Lung tissue with LUAD of patient 7 [snRNA-seq],GSM9237916_P7_LUAD.raw_counts.mtx.txt.gz,True,46,Female,No
+GSM9237917,7,LUAD,Lung tissue with second LUAD of patient 7 [snRNA-seq],GSM9237917_P7_LUAD1.raw_counts.mtx.txt.gz,True,46,Female,No
+GSM9237918,8,normal,Normal lung tissue of patient 8 [snRNA-seq],GSM9237918_P8_Normal.raw_counts.mtx.txt.gz,True,63,Female,No
+GSM9237919,8,AIS,Lung tissue with AIS of patient 8 [snRNA-seq],GSM9237919_P8_AIS.raw_counts.mtx.txt.gz,True,63,Female,No
+GSM9237920,8,LUAD,Lung tissue with LUAD of patient 8 [snRNA-seq],GSM9237920_P8_LUAD.raw_counts.mtx.txt.gz,True,63,Female,No
+GSM9237921,9,normal,Normal lung tissue of patient 9 [snRNA-seq],GSM9237921_P9_Normal.raw_counts.mtx.txt.gz,True,63,Female,No
+GSM9237922,9,AAH,Lung tissue with AAH of patient 9 [snRNA-seq],GSM9237922_P9_AAH.raw_counts.mtx.txt.gz,True,63,Female,No
+GSM9237923,9,AIS,Lung tissue with AIS of patient 9 [snRNA-seq],GSM9237923_P9_AIS.raw_counts.mtx.txt.gz,True,63,Female,No
+GSM9237924,9,LUAD,Lung tissue with LUAD of patient 9 [snRNA-seq],GSM9237924_P9_LUAD.raw_counts.mtx.txt.gz,True,63,Female,No
+GSM9237925,10,normal,Normal lung tissue of patient 10 [snRNA-seq],GSM9237925_P10_Normal.raw_counts.mtx.txt.gz,True,58,Female,No
+GSM9237926,10,MIA,Lung tissue with MIA of patient 10 [snRNA-seq],GSM9237926_P10_MIA.raw_counts.mtx.txt.gz,True,58,Female,No
+GSM9237927,10,LUAD,Lung tissue with LUAD of patient 10 [snRNA-seq],GSM9237927_P10_LUAD.raw_counts.mtx.txt.gz,True,58,Female,No
+GSM9237928,11,normal,Normal lung tissue of patient 11 [snRNA-seq],GSM9237928_P11_Normal.raw_counts.mtx.txt.gz,True,70,Female,Yes
+GSM9237929,11,AAH,Lung tissue with AAH of patient 11 [snRNA-seq],GSM9237929_P11_AAH.raw_counts.mtx.txt.gz,True,70,Female,Yes
+GSM9237930,11,LUAD,Lung tissue with LUAD of patient 11 [snRNA-seq],GSM9237930_P11_LUAD.raw_counts.mtx.txt.gz,True,70,Female,Yes
+GSM9237931,12,normal,Normal lung tissue of patient 12 [snRNA-seq],GSM9237931_P12_Normal.raw_counts.mtx.txt.gz,True,74,Female,No
+GSM9237932,12,AIS,Lung tissue with AIS of patient 12 [snRNA-seq],GSM9237932_P12_AIS.raw_counts.mtx.txt.gz,True,74,Female,No
+GSM9237933,12,LUAD,Lung tissue with LUAD of patient 12 [snRNA-seq],GSM9237933_P12_LUAD.raw_counts.mtx.txt.gz,True,74,Female,No
+GSM9237934,13,normal,Normal lung tissue of patient 13 [snRNA-seq],GSM9237934_P13_Normal.raw_counts.mtx.txt.gz,True,77,Male,Yes
+GSM9237935,13,MIA,Lung tissue with MIA of patient 13 [snRNA-seq],GSM9237935_P13_MIA.raw_counts.mtx.txt.gz,True,77,Male,Yes
+GSM9237936,13,LUAD,Lung tissue with LUAD of patient 13 [snRNA-seq],GSM9237936_P13_LUAD.raw_counts.mtx.txt.gz,True,77,Male,Yes
+GSM9237937,14,normal,Normal lung tissue of patient 14 [snRNA-seq],GSM9237937_P14_Normal.raw_counts.mtx.txt.gz,True,53,Male,Yes
+GSM9237938,14,AIS,Lung tissue with AIS of patient 14 [snRNA-seq],GSM9237938_P14_AIS.raw_counts.mtx.txt.gz,True,53,Male,Yes
+GSM9237939,14,LUAD,Lung tissue with LUAD of patient 14 [snRNA-seq],GSM9237939_P14_LUAD.raw_counts.mtx.txt.gz,True,53,Male,Yes
+GSM9237940,15,normal,Normal lung tissue of patient 15 [snRNA-seq],GSM9237940_P15_Normal.raw_counts.mtx.txt.gz,True,63,Male,Yes
+GSM9237941,15,MIA,Lung tissue with MIA of patient 15 [snRNA-seq],GSM9237941_P15_MIA.raw_counts.mtx.txt.gz,True,63,Male,Yes
+GSM9237942,15,LUAD,Lung tissue with LUAD of patient 15 [snRNA-seq],GSM9237942_P15_LUAD.raw_counts.mtx.txt.gz,True,63,Male,Yes
+GSM9237943,16,normal,Normal lung tissue of patient 16 [snRNA-seq],GSM9237943_P16_Normal.raw_counts.mtx.txt.gz,True,68,Female,Yes
+GSM9237944,16,AIS,Lung tissue with AIS lesion of patient 16 [snRNA-seq],GSM9237944_P16_AIS.raw_counts.mtx.txt.gz,True,68,Female,Yes
+GSM9237945,16,LUAD,Lung tissue with LUAD lesion of patient 16 [snRNA-seq],GSM9237945_P16_LUAD.raw_counts.mtx.txt.gz,True,68,Female,Yes
+GSM9237946,17,normal,Normal lung tissue of patient 17 [snRNA-seq],GSM9237946_P17_Normal.raw_counts.mtx.txt.gz,True,72,Male,Yes
+GSM9237947,17,AIS,Lung tissue with AIS of patient 17 [snRNA-seq],GSM9237947_P17_AIS.raw_counts.mtx.txt.gz,True,72,Male,Yes
+GSM9237948,17,LUAD,Lung tissue with LUAD of patient 17 [snRNA-seq],GSM9237948_P17_LUAD.raw_counts.mtx.txt.gz,True,72,Male,Yes
+GSM9237949,18,normal,Normal lung tissue of patient 18 [snRNA-seq],GSM9237949_P18_Normal.raw_counts.mtx.txt.gz,True,77,Female,No
+GSM9237950,18,MIA,Lung tissue with MIA of patient 18 [snRNA-seq],GSM9237950_P18_MIA.raw_counts.mtx.txt.gz,True,77,Female,No
+GSM9237951,18,LUAD,Lung tissue with LUAD of patient 18 [snRNA-seq],GSM9237951_P18_LUAD.raw_counts.mtx.txt.gz,True,77,Female,No
+GSM9237952,19,normal,Normal lung tissue of patient 19 [snRNA-seq],GSM9237952_P19_Normal.raw_counts.mtx.txt.gz,True,76,Male,Yes
+GSM9237953,19,AIS,Lung tissue with AIS of patient 19 [snRNA-seq],GSM9237953_P19_AIS.raw_counts.mtx.txt.gz,True,76,Male,Yes
+GSM9237954,19,LUAD,Lung tissue with LUAD of patient 19 [snRNA-seq],GSM9237954_P19_LUAD.raw_counts.mtx.txt.gz,True,76,Male,Yes
+GSM9237955,20,normal,Normal lung tissue of patient 20 [snRNA-seq],GSM9237955_P20_Normal.raw_counts.mtx.txt.gz,True,74,Male,Yes
+GSM9237956,20,AAH,Lung tissue with AAH of patient 20 [snRNA-seq],GSM9237956_P20_AAH.raw_counts.mtx.txt.gz,True,74,Male,Yes
+GSM9237957,20,LUAD,Lung tissue with LUAD of patient 20 [snRNA-seq],GSM9237957_P20_LUAD.raw_counts.mtx.txt.gz,True,74,Male,Yes
+GSM9237958,21,normal,Normal lung tissue of patient 21 [snRNA-seq],GSM9237958_P21_Normal.raw_counts.mtx.txt.gz,True,72,Female,Yes
+GSM9237959,21,AIS,Lung tissue with AIS of patient 21 [snRNA-seq],GSM9237959_P21_AIS.raw_counts.mtx.txt.gz,True,72,Female,Yes
+GSM9237960,21,AIS,Lung tissue with second AIS of patient 21 [snRNA-seq],GSM9237960_P21_AIS1.raw_counts.mtx.txt.gz,True,72,Female,Yes
+GSM9237961,21,LUAD,Lung tissue with LUAD of patient 21 [snRNA-seq],GSM9237961_P21_LUAD.raw_counts.mtx.txt.gz,True,72,Female,Yes
+GSM9237962,22,normal,Normal lung tissue of patient 22 [snRNA-seq],GSM9237962_P22_Normal.raw_counts.mtx.txt.gz,True,68,Female,Yes
+GSM9237963,22,AAH,Lung tissue with AAH of patient 22 [snRNA-seq],GSM9237963_P22_AAH.raw_counts.mtx.txt.gz,True,68,Female,Yes
+GSM9237964,22,AIS,Lung tissue with AIS of patient 22 [snRNA-seq],GSM9237964_P22_AIS.raw_counts.mtx.txt.gz,True,68,Female,Yes
+GSM9237965,22,LUAD,Lung tissue with LUAD of patient 22 [snRNA-seq],GSM9237965_P22_LUAD.raw_counts.mtx.txt.gz,True,68,Female,Yes
+GSM9237966,23,normal,Normal lung tissue of patient 23 [snRNA-seq],GSM9237966_P23_Normal.raw_counts.mtx.txt.gz,True,74,Male,No
+GSM9237967,23,AIS,Lung tissue with AIS of patient 23 [snRNA-seq],GSM9237967_P23_AIS.raw_counts.mtx.txt.gz,True,74,Male,No
+GSM9237968,23,AIS,Lung tissue with second AIS of patient 23 [snRNA-seq],GSM9237968_P23_AIS1.raw_counts.mtx.txt.gz,True,74,Male,No
+GSM9237969,23,LUAD,Lung tissue with LUAD of patient 23 [snRNA-seq],GSM9237969_P23_LUAD.raw_counts.mtx.txt.gz,True,74,Male,No
+GSM9237970,24,normal,Normal lung tissue of patient 24 [snRNA-seq],GSM9237970_P24_Normal.raw_counts.mtx.txt.gz,True,61,Male,Yes
+GSM9237971,24,AAH,Lung tissue with AAH of patient 24 [snRNA-seq],GSM9237971_P24_AAH.raw_counts.mtx.txt.gz,True,61,Male,Yes
+GSM9237972,24,LUAD,Lung tissue with LUAD of patient 24 [snRNA-seq],GSM9237972_P24_LUAD.raw_counts.mtx.txt.gz,True,61,Male,Yes
+GSM9237973,25,normal,Normal lung tissue of patient 25 [snRNA-seq],GSM9237973_P25_Normal.raw_counts.mtx.txt.gz,True,70,Male,Yes
+GSM9237974,25,AAH,Lung tissue with AAH of patient 25 [snRNA-seq],GSM9237974_P25_AAH.raw_counts.mtx.txt.gz,True,70,Male,Yes
+GSM9237975,25,LUAD,Lung tissue with LUAD of patient 25 [snRNA-seq],GSM9237975_P25_LUAD.raw_counts.mtx.txt.gz,True,70,Male,Yes

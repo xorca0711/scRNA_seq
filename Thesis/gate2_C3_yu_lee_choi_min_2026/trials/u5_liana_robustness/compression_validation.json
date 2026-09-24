@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "scope": "full-gene normalization and native LIANA versus sufficient-component input, two donors and both resources",
+  "tolerance_rtol": 2e-06,
+  "tolerance_atol": 2e-07,
+  "checks": [
+    {
+      "donor": "010I",
+      "resource": "consensus",
+      "rows": 108,
+      "max_absolute_score_difference": 0.0
+    },
+    {
+      "donor": "010I",
+      "resource": "cellchatdb",
+      "rows": 32,
+      "max_absolute_score_difference": 0.0
+    },
+    {
+      "donor": "222C",
+      "resource": "consensus",
+      "rows": 308,
+      "max_absolute_score_difference": 0.0
+    },
+    {
+      "donor": "222C",
+      "resource": "cellchatdb",
+      "rows": 74,
+      "max_absolute_score_difference": 0.0
+    }
+  ]
+}

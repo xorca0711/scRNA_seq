@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "status": "authorized_staged_execution_with_scientific_gates",
+  "status": "completed_feasible_scope_with_documented_scientific_gates",
   "full_run_authorized": true,
   "primary_dataset": "GSE300288",
   "primary_contrast": "anti-IL-1beta alone versus IgG at 3 months post-NNK",
@@ -51,11 +51,11 @@
     },
     {
       "id": "U3",
-      "status": "early_seven_library_QC_and_cluster_diagnostics_complete_final_annotations_pending"
+      "status": "independent_broad_lineage_annotations_complete_KAC_unavailable_primary_fraction_fewer_than_three_eligible_treated_animals"
     },
     {
       "id": "U4",
-      "status": "planned_perturbation_analysis",
+      "status": "eligible_early_niche_analyses_complete_primary_phenotype_and_late_history_ineligible",
       "required_arms": [
         "phenotypic_anchor",
         "LR",
@@ -67,7 +67,7 @@
     },
     {
       "id": "U5",
-      "status": "IPF_pathways_and_initial_descriptive_LR_complete_LR_contrasts_sensitivities_lesion_spatial_pending",
+      "status": "IPF_human_and_spatial_measurements_complete_identity_and_region_endpoints_unidentifiable",
       "required_arms": [
         "paired_phenotypic_context",
         "LR",
@@ -80,7 +80,7 @@
     },
     {
       "id": "U6",
-      "status": "planned_specificity_and_synthesis"
+      "status": "specificity_and_evidence_synthesis_complete_original_Han_expression_arm_unavailable"
     }
   ],
   "unresolved_claims": [
@@ -113,5 +113,7 @@
     "KAC_annotation_not_yet_available",
     "same_sample_niche_coverage_required",
     "late_treatment_strategy_crosswalk_unresolved"
-  ]
+  ],
+  "completion_report": "EVIDENCE_REVIEW.md",
+  "completion_register": "WORK_PACKAGES.md"
 }

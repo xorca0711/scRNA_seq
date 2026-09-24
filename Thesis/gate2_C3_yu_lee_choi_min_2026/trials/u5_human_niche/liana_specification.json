@@ -1,0 +1,103 @@
+{
+  "frozen_utc": "2026-09-24T12:46:16.679337+00:00",
+  "configs": [
+    {
+      "name": "all_cells_primary",
+      "floor": 50,
+      "expr": 0.1,
+      "cap": null,
+      "seed": 20260924,
+      "uncertainty": 0.2,
+      "library_mode": "pooled"
+    },
+    {
+      "name": "cap500_seed1",
+      "floor": 50,
+      "expr": 0.1,
+      "cap": 500,
+      "seed": 20260924,
+      "uncertainty": 0.2,
+      "library_mode": "pooled"
+    },
+    {
+      "name": "cap500_seed2",
+      "floor": 50,
+      "expr": 0.1,
+      "cap": 500,
+      "seed": 20260925,
+      "uncertainty": 0.2,
+      "library_mode": "pooled"
+    },
+    {
+      "name": "floor30",
+      "floor": 30,
+      "expr": 0.1,
+      "cap": null,
+      "seed": 20260924,
+      "uncertainty": 0.2,
+      "library_mode": "pooled"
+    },
+    {
+      "name": "floor100",
+      "floor": 100,
+      "expr": 0.1,
+      "cap": null,
+      "seed": 20260924,
+      "uncertainty": 0.2,
+      "library_mode": "pooled"
+    },
+    {
+      "name": "expression005",
+      "floor": 50,
+      "expr": 0.05,
+      "cap": null,
+      "seed": 20260924,
+      "uncertainty": 0.2,
+      "library_mode": "pooled"
+    },
+    {
+      "name": "expression020",
+      "floor": 50,
+      "expr": 0.2,
+      "cap": null,
+      "seed": 20260924,
+      "uncertainty": 0.2,
+      "library_mode": "pooled"
+    },
+    {
+      "name": "uncertainty030",
+      "floor": 50,
+      "expr": 0.1,
+      "cap": null,
+      "seed": 20260924,
+      "uncertainty": 0.3,
+      "library_mode": "pooled"
+    },
+    {
+      "name": "largest_library",
+      "floor": 50,
+      "expr": 0.1,
+      "cap": null,
+      "seed": 20260924,
+      "uncertainty": 0.2,
+      "library_mode": "largest_library"
+    }
+  ],
+  "subtype_compartments": {
+    "AT2 proliferating": "epithelial",
+    "AT2": "epithelial",
+    "Myofibroblasts": "fibroblast",
+    "Peribronchial fibroblasts": "fibroblast",
+    "Adventitial fibroblasts": "fibroblast",
+    "Alveolar fibroblasts": "fibroblast",
+    "Monocyte-derived Mph": "myeloid",
+    "Interstitial Mph perivascular": "myeloid",
+    "Alveolar macrophages": "myeloid",
+    "Alveolar Mph proliferating": "myeloid"
+  },
+  "resource_sha256": "f79375da173c23273e69e0158eb17d41716e6e13269f35631b6883988801b35b",
+  "normalization": "full-assay totals and observed global maximum; validated exact LIANA sufficient-component input",
+  "unit": "patient x deposited histology; repeated same-histology libraries pooled; only source/receiver within same tissue group",
+  "identity_limit": "reference-compatible candidate labels; unknown/malignant populations not forced into atlas cell types",
+  "RNA_limit": "fixed RNA background may affect scores; no secretion/activation inference"
+}

@@ -1,0 +1,50 @@
+{
+  "checked_utc": "2026-09-24T13:52:54.750044+00:00",
+  "checks": [
+    {
+      "command": "python -m unittest discover -s analysis/tests -q",
+      "exit_code": 0,
+      "result": "7 tests passed"
+    },
+    {
+      "command": "python analysis/scripts/claim_contract.py --check",
+      "exit_code": 0,
+      "result": "18 numeric bindings passed"
+    },
+    {
+      "command": "python Thesis/gate1_03_nabhan_2018/nb1/verify_outputs.py",
+      "exit_code": 0,
+      "result": "17 output hashes, code/protocol/panel hashes, units, paired directions and expression denominators verified"
+    },
+    {
+      "command": "py_compile on git-listed nonignored analysis/Thesis Python files",
+      "exit_code": 0,
+      "result": "187 files compiled",
+      "checked_utc": "2026-09-24T13:59:32.451090+00:00",
+      "scope_note": "Broad local compileall additionally encountered ignored R-portable Tcl/Tktable2.10/tktable.py, a bundled Python-2 helper. That untracked dependency is absent from CI checkout and was not modified. Every repository Python source compiled."
+    },
+    {
+      "command": "py_compile on added or changed files since the full repository source check",
+      "exit_code": 0,
+      "result": "7 changed/new files compiled; 188 current repository Python sources covered",
+      "files": [
+        "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_report_human_ligand_targets.py",
+        "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_report_human_niche.py",
+        "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u6_compare_pathway_assumptions.py",
+        "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u6_report_context_coverage.py",
+        "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u6_report_human_specificity.py",
+        "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u6_summarize_evidence.py",
+        "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u6_validate_release.py"
+      ],
+      "checked_utc": "2026-09-24T14:29:01.693231+00:00"
+    },
+    {
+      "command": "python analysis/scripts/validate_repository.py",
+      "exit_code": 0,
+      "result": "1818 repository checks passed: local links, JSON, headline bindings and claim register/index consistency",
+      "checked_utc": "2026-09-24T14:30:44.820188+00:00"
+    }
+  ],
+  "remaining": [],
+  "separate_paper_release_check": "release_validation.json"
+}

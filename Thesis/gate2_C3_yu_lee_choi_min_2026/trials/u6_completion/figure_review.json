@@ -1,0 +1,91 @@
+{
+  "recorded_utc": "2026-09-24T14:28:39.536834+00:00",
+  "scope": "PNG visual review; paired SVG exports are included in the release manifest. Pending figures are added only after inspection.",
+  "figures": {
+    "context_design_and_coverage.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "6b27314a36d2af7b307e5c099a2f8d2440aac1c19f81a42c4f8a3d23241ab01a",
+      "basis": "Direct inspection in this continuation: readable axes/captions, no material overlap, correct units and missing-coverage labels."
+    },
+    "epithelial_specificity_and_signature_overlap.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "da04f54d7e7e6869a2f0cc82aea84137330e1738d3eded72b40bbf4751ba9d25",
+      "basis": "Direct inspection in this continuation: readable axes/captions, no material overlap, correct units and missing-coverage labels."
+    },
+    "human_epithelial_program_specificity.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "4998e7bdf3bc1ade76c923033e5fb1802884442b09d8ebc8fc9101b04204d38c",
+      "basis": "Direct inspection in this continuation: readable axes/captions, no material overlap, correct units and missing-coverage labels."
+    },
+    "human_IL1B_sources.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "5342a0d260cd96ce6d4f181dc271bc3cab273793075f7ad0ceb8a57c6b89ba80",
+      "basis": "Direct inspection in this continuation: readable axes/captions, no material overlap, correct units and missing-coverage labels."
+    },
+    "human_paired_niche_RNA_contrasts.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "72901b4b3e3f2080e579ade919c900c70d7ab9ccb37ff65372984718a612119e",
+      "basis": "Direct inspection in this continuation: readable axes/captions, no material overlap, correct units and missing-coverage labels."
+    },
+    "human_paired_recipient_pathways.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "92e246ab1650b4277275c6f959304e51a79d06f2a49df331a6de8f28ba9d7bb5",
+      "basis": "Direct inspection in this continuation: readable axes/captions, no material overlap, correct units and missing-coverage labels."
+    },
+    "human_spatial_measured_maps.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "0fce31ea4400e82eec7dfa3d636774c1a6971c4c6be24ba8ced76f74e36b14f8",
+      "basis": "Valid earlier stage visual review retained; no subsequent figure change reported."
+    },
+    "human_spatial_paired_sections.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "86e1fa134fdf53fab294893fa63fe38aca26cc9eeecb2922ec13e548e27fe0ad",
+      "basis": "Valid earlier stage visual review retained; no subsequent figure change reported."
+    },
+    "ipf_epithelial_state_specificity.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "e93d646d61fed66030ad7dc8901975381542ce8e2a00da8a35d1c44b2527e8b5",
+      "basis": "Direct inspection in this continuation: readable axes/captions, no material overlap, correct units and missing-coverage labels."
+    },
+    "ipf_full_cell_robustness_and_sources.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "41a241d6b98b1a2ff31f855c9a0dee7fbe09b5b0533b2e556de79b54e2400b3f",
+      "basis": "Valid earlier stage visual review retained; no subsequent figure change reported."
+    },
+    "ipf_ligand_target_eligibility_and_fit.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "046d9597c6b7954bf634ffdc8b77bebdd09170e528b7adde7d5cb1bbf150d14b",
+      "basis": "Valid earlier stage visual review retained; no subsequent figure change reported."
+    },
+    "ipf_pathway_primary_and_sensitivity.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "e4cd87725cd0d601b5f3ac403577668e82229d28da67ca441bffaf7aef73c829",
+      "basis": "Valid earlier stage visual review retained; no subsequent figure change reported."
+    },
+    "ipu5_rna_compatibility.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "79aaf39d463554e7042b6ca18e479d73391cd805047034e4fe40f08e331b9999",
+      "basis": "Valid earlier stage visual review retained; no subsequent figure change reported."
+    },
+    "isr_specificity_contexts.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "a12795d168230a28185ba5882faeb70d1be5e004a886c5d329aa5df67e31da40",
+      "basis": "Valid earlier stage visual review retained; no subsequent figure change reported."
+    },
+    "mouse_early_niche_and_phenotype_gates.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "db378004de77bfd13f3ae9aee485bd5905f15dcb82c3043c3a77f49678ceaff7",
+      "basis": "Direct inspection in this continuation: readable axes/captions, no material overlap, correct units and missing-coverage labels."
+    },
+    "human_ligand_target_eligibility_and_fit.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "7148ab267e458a93ed0bf4349d21f39a674324a9601f74ea720bf835b30cfd46",
+      "basis": "Direct final inspection: readable labels, corrected colorbar placement, explicit eligibility and biological-unit limits."
+    },
+    "cross_context_evidence_review.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "059847a945d1f61513107af5f0ffd359bfc2b1f5ff53d50622f2d503ac88d7c0",
+      "basis": "Direct final inspection: readable labels, corrected colorbar placement, explicit eligibility and biological-unit limits."
+    }
+  }
+}

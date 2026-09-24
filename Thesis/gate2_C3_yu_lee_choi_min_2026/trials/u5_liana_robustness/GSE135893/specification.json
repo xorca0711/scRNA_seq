@@ -1,0 +1,92 @@
+{
+  "frozen_utc": "2026-09-24T11:21:58.146097+00:00",
+  "cohort": "GSE135893",
+  "configs": [
+    {
+      "name": "all_cells_primary",
+      "floor": 50,
+      "expr": 0.1,
+      "cap": null,
+      "seed": 20260924
+    },
+    {
+      "name": "cap500_seed1",
+      "floor": 50,
+      "expr": 0.1,
+      "cap": 500,
+      "seed": 20260924
+    },
+    {
+      "name": "cap500_seed2",
+      "floor": 50,
+      "expr": 0.1,
+      "cap": 500,
+      "seed": 20260925
+    },
+    {
+      "name": "floor30",
+      "floor": 30,
+      "expr": 0.1,
+      "cap": null,
+      "seed": 20260924
+    },
+    {
+      "name": "floor100",
+      "floor": 100,
+      "expr": 0.1,
+      "cap": null,
+      "seed": 20260924
+    },
+    {
+      "name": "expression005",
+      "floor": 50,
+      "expr": 0.05,
+      "cap": null,
+      "seed": 20260924
+    },
+    {
+      "name": "expression020",
+      "floor": 50,
+      "expr": 0.2,
+      "cap": null,
+      "seed": 20260924
+    }
+  ],
+  "labels": {
+    "AT2": "epithelial",
+    "Fibroblasts": "fibroblast",
+    "HAS1 High Fibroblasts": "fibroblast",
+    "PLIN2+ Fibroblasts": "fibroblast",
+    "Myofibroblasts": "fibroblast",
+    "Macrophages": "myeloid",
+    "Proliferating Macrophages": "myeloid"
+  },
+  "directions": [
+    [
+      "epithelial",
+      "fibroblast"
+    ],
+    [
+      "fibroblast",
+      "epithelial"
+    ],
+    [
+      "fibroblast",
+      "myeloid"
+    ],
+    [
+      "myeloid",
+      "epithelial"
+    ],
+    [
+      "myeloid",
+      "fibroblast"
+    ]
+  ],
+  "method": "native LIANA CellChat-like; n_perms=None",
+  "input_sha256": "d7c34d64a023b0640b7656c7a807007799ba1f443f0ad1feadf3f98b1d4545de",
+  "compression_validation_sha256": "5a9c1dc6ce272b247fef935a2c00b4912326a4cb5d8fee332e7a8505e75f9afd",
+  "sampling": "independent stable SHA256-derived donor/subtype seeds; cap sensitivity, not original cap replicate",
+  "inference": "descriptive, missing rows not zero; resource WNT edges exploratory",
+  "source_profiles": "all deposited annotated IPF/control cells, full-library normalization; detection and recovered abundance reported separately"
+}

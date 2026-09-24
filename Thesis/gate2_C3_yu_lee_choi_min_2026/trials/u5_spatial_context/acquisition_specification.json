@@ -1,0 +1,525 @@
+{
+  "frozen_utc": "2026-09-24T12:37:16.605717+00:00",
+  "jobs": [
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226168",
+      "title": "Lung tissue with AAH of patient 1 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226168/suppl/GSM9226168_P1_AAH.tar.gz",
+      "patient": 1,
+      "histology": "AAH"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226169",
+      "title": "Lung tissue with LUAD of patient 1 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226169/suppl/GSM9226169_P1_LUAD.tar.gz",
+      "patient": 1,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226170",
+      "title": "Lung tissue with AAH of patient 2 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226170/suppl/GSM9226170_P2_AAH.tar.gz",
+      "patient": 2,
+      "histology": "AAH"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226171",
+      "title": "Lung tissue with LUAD of patient 2 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226171/suppl/GSM9226171_P2_LUAD.tar.gz",
+      "patient": 2,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226172",
+      "title": "Lung tissue with AIS of patient 3 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226172/suppl/GSM9226172_P3_AIS.tar.gz",
+      "patient": 3,
+      "histology": "AIS"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226173",
+      "title": "Lung tissue with LUAD of patient 3 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226173/suppl/GSM9226173_P3_LUAD.tar.gz",
+      "patient": 3,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226174",
+      "title": "Normal lung tissue of patient 4 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226174/suppl/GSM9226174_P4_Normal.tar.gz",
+      "patient": 4,
+      "histology": "normal"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226175",
+      "title": "Lung tissue with AAH of patient 4 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226175/suppl/GSM9226175_P4_AAH.tar.gz",
+      "patient": 4,
+      "histology": "AAH"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226176",
+      "title": "Lung tissue with second AAH of patient 4 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226176/suppl/GSM9226176_P4_AAH-1.tar.gz",
+      "patient": 4,
+      "histology": "AAH"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226177",
+      "title": "Lung tissue with LUAD of patient 4 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226177/suppl/GSM9226177_P4_LUAD.tar.gz",
+      "patient": 4,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226178",
+      "title": "Lung tissue with AIS of patient 5 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226178/suppl/GSM9226178_P5_AIS.tar.gz",
+      "patient": 5,
+      "histology": "AIS"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226179",
+      "title": "Lung tissue with LUAD of patient 5 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226179/suppl/GSM9226179_P5_LUAD.tar.gz",
+      "patient": 5,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226180",
+      "title": "Lung tissue with AAH of patient 6 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226180/suppl/GSM9226180_P6_AAH.tar.gz",
+      "patient": 6,
+      "histology": "AAH"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226181",
+      "title": "Lung tissue with LUAD of patient 6 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226181/suppl/GSM9226181_P6_LUAD.tar.gz",
+      "patient": 6,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226182",
+      "title": "Lung tissue with LUAD of patient 7 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226182/suppl/GSM9226182_P7_LUAD.tar.gz",
+      "patient": 7,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226183",
+      "title": "Lung tissue with second LUAD of patient 7 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226183/suppl/GSM9226183_P7_LUAD-1.tar.gz",
+      "patient": 7,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226184",
+      "title": "Lung tissue with AIS of patient 8 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226184/suppl/GSM9226184_P8_AIS.tar.gz",
+      "patient": 8,
+      "histology": "AIS"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226185",
+      "title": "Lung tissue with LUAD of patient 8 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226185/suppl/GSM9226185_P8_LUAD.tar.gz",
+      "patient": 8,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226186",
+      "title": "Lung tissue with AAH of patient 9 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226186/suppl/GSM9226186_P9_AAH.tar.gz",
+      "patient": 9,
+      "histology": "AAH"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226187",
+      "title": "Lung tissue with AIS of patient 9 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226187/suppl/GSM9226187_P9_AIS.tar.gz",
+      "patient": 9,
+      "histology": "AIS"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226188",
+      "title": "Lung tissue with LUAD of patient 9 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226188/suppl/GSM9226188_P9_LUAD.tar.gz",
+      "patient": 9,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226189",
+      "title": "Lung tissue with MIA of patient 10 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226189/suppl/GSM9226189_P10_MIA.tar.gz",
+      "patient": 10,
+      "histology": "MIA"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226190",
+      "title": "Lung tissue with LUAD of patient 10 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226190/suppl/GSM9226190_P10_LUAD.tar.gz",
+      "patient": 10,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226191",
+      "title": "Lung tissue with AAH of patient 11 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226191/suppl/GSM9226191_P11_AAH.tar.gz",
+      "patient": 11,
+      "histology": "AAH"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226192",
+      "title": "Lung tissue with LUAD of patient 11 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226192/suppl/GSM9226192_P11_LUAD.tar.gz",
+      "patient": 11,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226193",
+      "title": "Lung tissue with AIS of patient 12 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226193/suppl/GSM9226193_P12_AIS.tar.gz",
+      "patient": 12,
+      "histology": "AIS"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226194",
+      "title": "Lung tissue with LUAD of patient 12 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226194/suppl/GSM9226194_P12_LUAD.tar.gz",
+      "patient": 12,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226195",
+      "title": "Lung tissue with MIA of patient 13 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226195/suppl/GSM9226195_P13_MIA.tar.gz",
+      "patient": 13,
+      "histology": "MIA"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226196",
+      "title": "Lung tissue with LUAD of patient 13 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226196/suppl/GSM9226196_P13_LUAD.tar.gz",
+      "patient": 13,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226197",
+      "title": "Lung tissue with AIS of patient 14 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226197/suppl/GSM9226197_P14_AIS.tar.gz",
+      "patient": 14,
+      "histology": "AIS"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226198",
+      "title": "Lung tissue with LUAD of patient 14 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226198/suppl/GSM9226198_P14_LUAD.tar.gz",
+      "patient": 14,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226199",
+      "title": "Lung tissue with MIA of patient 15 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226199/suppl/GSM9226199_P15_MIA.tar.gz",
+      "patient": 15,
+      "histology": "MIA"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226200",
+      "title": "Lung tissue with LUAD of patient 15 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226200/suppl/GSM9226200_P15_LUAD.tar.gz",
+      "patient": 15,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226201",
+      "title": "Lung tissue with AIS of patient 16 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226201/suppl/GSM9226201_P16_AIS.tar.gz",
+      "patient": 16,
+      "histology": "AIS"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226202",
+      "title": "Lung tissue with LUAD of patient 16 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226202/suppl/GSM9226202_P16_LUAD.tar.gz",
+      "patient": 16,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226203",
+      "title": "Lung tissue with AIS of patient 17 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226203/suppl/GSM9226203_P17_AIS.tar.gz",
+      "patient": 17,
+      "histology": "AIS"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226204",
+      "title": "Lung tissue with LUAD of patient 17 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226204/suppl/GSM9226204_P17_LUAD.tar.gz",
+      "patient": 17,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226205",
+      "title": "Lung tissue with MIA of patient 18 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226205/suppl/GSM9226205_P18_MIA.tar.gz",
+      "patient": 18,
+      "histology": "MIA"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226206",
+      "title": "Lung tissue with LUAD of patient 18 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226206/suppl/GSM9226206_P18_LUAD.tar.gz",
+      "patient": 18,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226207",
+      "title": "Lung tissue with AIS of patient 19 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226207/suppl/GSM9226207_P19_AIS.tar.gz",
+      "patient": 19,
+      "histology": "AIS"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226208",
+      "title": "Lung tissue with LUAD of patient 19 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226208/suppl/GSM9226208_P19_LUAD.tar.gz",
+      "patient": 19,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226209",
+      "title": "Lung tissue with AAH of patient 20 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226209/suppl/GSM9226209_P20_AAH.tar.gz",
+      "patient": 20,
+      "histology": "AAH"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226210",
+      "title": "Lung tissue with LUAD of patient 20 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226210/suppl/GSM9226210_P20_LUAD.tar.gz",
+      "patient": 20,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226211",
+      "title": "Lung tissue with AIS of patient 21 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226211/suppl/GSM9226211_P21_AIS.tar.gz",
+      "patient": 21,
+      "histology": "AIS"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226212",
+      "title": "Lung tissue with second AIS of patient 21 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226212/suppl/GSM9226212_P21_AIS-1.tar.gz",
+      "patient": 21,
+      "histology": "AIS"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226213",
+      "title": "Lung tissue with LUAD of patient 21 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226213/suppl/GSM9226213_P21_LUAD.tar.gz",
+      "patient": 21,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226214",
+      "title": "Lung tissue with AAH of patient 22 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226214/suppl/GSM9226214_P22_AAH.tar.gz",
+      "patient": 22,
+      "histology": "AAH"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226215",
+      "title": "Lung tissue with AIS of patient 22 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226215/suppl/GSM9226215_P22_AIS.tar.gz",
+      "patient": 22,
+      "histology": "AIS"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226216",
+      "title": "Lung tissue with LUAD of patient 22 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226216/suppl/GSM9226216_P22_LUAD.tar.gz",
+      "patient": 22,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226217",
+      "title": "Lung tissue with AIS of patient 23 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226217/suppl/GSM9226217_P23_AIS.tar.gz",
+      "patient": 23,
+      "histology": "AIS"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226218",
+      "title": "Lung tissue with second AIS of patient 23 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226218/suppl/GSM9226218_P23_AIS-1.tar.gz",
+      "patient": 23,
+      "histology": "AIS"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226219",
+      "title": "Lung tissue with LUAD of patient 23 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226219/suppl/GSM9226219_P23_LUAD.tar.gz",
+      "patient": 23,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226220",
+      "title": "Lung tissue with AAH of patient 24 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226220/suppl/GSM9226220_P24_AAH.tar.gz",
+      "patient": 24,
+      "histology": "AAH"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226221",
+      "title": "Lung tissue with LUAD of patient 24 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226221/suppl/GSM9226221_P24_LUAD.tar.gz",
+      "patient": 24,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226222",
+      "title": "Lung tissue with AAH of patient 25 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226222/suppl/GSM9226222_P25_AAH.tar.gz",
+      "patient": 25,
+      "histology": "AAH"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226223",
+      "title": "Lung tissue with LUAD of patient 25 [ST]",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226223/suppl/GSM9226223_P25_LUAD.tar.gz",
+      "patient": 25,
+      "histology": "LUAD"
+    },
+    {
+      "series": "GSE267226",
+      "gsm": "GSM8262701",
+      "title": "COVID1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262701/suppl/GSM8262701_21-035_S5_filtered_feature_bc_matrix.h5",
+      "source_title": "COVID1"
+    },
+    {
+      "series": "GSE267226",
+      "gsm": "GSM8262702",
+      "title": "COVID2",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262702/suppl/GSM8262702_BB-22001_S3_filtered_feature_bc_matrix.h5",
+      "source_title": "COVID2"
+    },
+    {
+      "series": "GSE267226",
+      "gsm": "GSM8262703",
+      "title": "COVID3",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262703/suppl/GSM8262703_LIBB-0093_S2_filtered_feature_bc_matrix.h5",
+      "source_title": "COVID3"
+    },
+    {
+      "series": "GSE267226",
+      "gsm": "GSM8262704",
+      "title": "Control1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262704/suppl/GSM8262704_CC005-19_S4_filtered_feature_bc_matrix.h5",
+      "source_title": "Control1"
+    },
+    {
+      "series": "GSE267226",
+      "gsm": "GSM8262705",
+      "title": "Control2",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262705/suppl/GSM8262705_CC003-20_S1_filtered_feature_bc_matrix.h5",
+      "source_title": "Control2"
+    },
+    {
+      "series": "GSE267228",
+      "gsm": "GSM8262712",
+      "title": "S1A_IgG1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262712/suppl/GSM8262712_6433-HN-S1-A-GEX_TCAGAACT-GTGGACTG_filtered_feature_bc_matrix.h5",
+      "source_title": "S1A_IgG1"
+    },
+    {
+      "series": "GSE267228",
+      "gsm": "GSM8262713",
+      "title": "S2A_IgG2",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262713/suppl/GSM8262713_6433-HN-S2-A-GEX_CGCGCCAA-CCTTGGAT_filtered_feature_bc_matrix.h5",
+      "source_title": "S2A_IgG2"
+    },
+    {
+      "series": "GSE267228",
+      "gsm": "GSM8262714",
+      "title": "S1D_\u03b1CD8-1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262714/suppl/GSM8262714_6433-HN-S1-D-GEX_CGGCCATA-GAACGAAG_filtered_feature_bc_matrix.h5",
+      "source_title": "S1D_\u03b1CD8-1"
+    },
+    {
+      "series": "GSE267228",
+      "gsm": "GSM8262715",
+      "title": "S2D_\u03b1CD8-2",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262715/suppl/GSM8262715_6433-HN-S2-D-GEX_ACTAAATG-ACAGATTT_filtered_feature_bc_matrix.h5",
+      "source_title": "S2D_\u03b1CD8-2"
+    }
+  ],
+  "per_file_cap": 600000000,
+  "total_new_cap": 15000000000,
+  "selection": "all deposited human precursor spatial sections; all post-viral count H5 files; no result-based selection",
+  "spatial_limit": "independent pathology ROI annotations required for regional inference; source tissue mask allows descriptive whole-section measurements, not cell contacts",
+  "analysis_plan": {
+    "qc": "in_tissue and UMI>=500 and detected_genes>=200 and mitochondrial_percentage<=15",
+    "whole_section": "source-deposited lesion labels, patient-level paired descriptive differences; repeated same-histology sections averaged equally; spots not replicates",
+    "main_region_endpoint": "gated on independent released spot-level pathology labels; do not derive ROIs from tested genes"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "frozen_utc": "2026-09-24T12:58:24.558729+00:00",
+  "labels": {
+    "GSE136831": [
+      "ATI",
+      "ATII",
+      "Aberrant_Basaloid",
+      "Basal",
+      "Club",
+      "Ciliated"
+    ],
+    "GSE135893": [
+      "AT1",
+      "AT2",
+      "Transitional AT2",
+      "KRT5-/KRT17+",
+      "Basal",
+      "Proliferating Epithelial Cells",
+      "SCGB3A2+",
+      "SCGB3A2+ SCGB1A1+"
+    ]
+  },
+  "selection": "all source-labelled IPF/control epithelial cells in listed lineages; no score-based cell selection; counts retained before 30/50/100-cell floors",
+  "primary_contrasts": {
+    "GSE136831": [
+      "Aberrant_Basaloid",
+      "ATII"
+    ],
+    "GSE135893": [
+      "KRT5-/KRT17+",
+      "AT2"
+    ]
+  },
+  "additional_state_contrast": {
+    "GSE135893": [
+      "Transitional AT2",
+      "AT2"
+    ]
+  },
+  "unit": "donor; primary state contrasts within IPF donor; AT2 IPF/control descriptive contrast separate",
+  "identity_limit": "deposited aberrant/transitional labels are not KAC, HPCS or malignancy",
+  "minimum_same_donor_pairs": 3,
+  "source_modules_sha256": "c26f86321a45eb9a02eaac51477b23ee259865ad34e93d2ddff593a947160231"
+}

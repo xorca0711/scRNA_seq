@@ -1,0 +1,107 @@
+{
+  "status": "completed",
+  "pid": 16392,
+  "started_utc": "2026-09-24T11:18:39.021764+00:00",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracked_changes_present": false,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_human_pilot_input.py",
+    "entrypoint_sha256": "4d8f4cf2497c6fb98520f607e6dd72c691ff74260c22e7d2a5255d20106b205d"
+  },
+  "completed": [
+    {
+      "gsm": "GSM9237904",
+      "patient": 4,
+      "histology": "normal",
+      "source_cells": 36862,
+      "qc_cells": 28112,
+      "assayed_genes": 18082,
+      "model_genes_measured": 1731,
+      "total_counts": 109940542,
+      "sha256": "3d61006c03786fed3dc1524ee5fb27836bddfac1374f39c763a3225e2919a59c"
+    },
+    {
+      "gsm": "GSM9237905",
+      "patient": 4,
+      "histology": "normal",
+      "source_cells": 14328,
+      "qc_cells": 10131,
+      "assayed_genes": 18082,
+      "model_genes_measured": 1731,
+      "total_counts": 34856775,
+      "sha256": "5f372179fd195f07b964ce7a65beece1b0affd616ad555798430d09f7f0d10f7"
+    },
+    {
+      "gsm": "GSM9237906",
+      "patient": 4,
+      "histology": "AAH",
+      "source_cells": 5613,
+      "qc_cells": 4445,
+      "assayed_genes": 18082,
+      "model_genes_measured": 1731,
+      "total_counts": 19719088,
+      "sha256": "15216710884844b6223562218e654a4902393aed5ab9024130c95ec97e98b1bc"
+    },
+    {
+      "gsm": "GSM9237907",
+      "patient": 4,
+      "histology": "AAH",
+      "source_cells": 14058,
+      "qc_cells": 9781,
+      "assayed_genes": 18082,
+      "model_genes_measured": 1731,
+      "total_counts": 34296795,
+      "sha256": "d1f4c92746e446773100ec824c55c0ff198626c1fd6868009ae0a6bf840ace10"
+    },
+    {
+      "gsm": "GSM9237912",
+      "patient": 6,
+      "histology": "normal",
+      "source_cells": 1690,
+      "qc_cells": 1076,
+      "assayed_genes": 18082,
+      "model_genes_measured": 1731,
+      "total_counts": 4385959,
+      "sha256": "e15fb5efdd42f6f88580d574f25be90432552abe3362cd429c476795e45b9817"
+    },
+    {
+      "gsm": "GSM9237913",
+      "patient": 6,
+      "histology": "AAH",
+      "source_cells": 3699,
+      "qc_cells": 2236,
+      "assayed_genes": 18082,
+      "model_genes_measured": 1731,
+      "total_counts": 8245139,
+      "sha256": "65e3ddb706ea78d027ff825c022d308ea5d6ee87f40eea70ab9bb753e203bedf"
+    },
+    {
+      "gsm": "GSM9237921",
+      "patient": 9,
+      "histology": "normal",
+      "source_cells": 3000,
+      "qc_cells": 1989,
+      "assayed_genes": 18082,
+      "model_genes_measured": 1731,
+      "total_counts": 7251894,
+      "sha256": "7af5ccdd490254af2a1fc17652097ebe8065b89107f16213ce29ed75f3a000ca"
+    },
+    {
+      "gsm": "GSM9237922",
+      "patient": 9,
+      "histology": "AAH",
+      "source_cells": 1730,
+      "qc_cells": 1009,
+      "assayed_genes": 18082,
+      "model_genes_measured": 1731,
+      "total_counts": 3776783,
+      "sha256": "14cafcbb452b53efc1a16c6daf64fa7fb990fd746119bfe676388d5e2174ed2c"
+    }
+  ],
+  "qc_cells": 58779,
+  "panel_genes": 3495,
+  "elapsed_seconds": 273.0,
+  "updated_utc": "2026-09-24T11:23:12.337762+00:00"
+}

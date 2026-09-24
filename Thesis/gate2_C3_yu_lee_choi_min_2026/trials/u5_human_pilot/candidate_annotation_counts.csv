@@ -1,0 +1,457 @@
+patient,histology,ann_level_1,ann_level_2,ann_finest_level,nuclei
+4,AAH,Endothelial,Blood vessels,AT2,1
+4,AAH,Endothelial,Blood vessels,EC aerocyte capillary,141
+4,AAH,Endothelial,Blood vessels,EC arterial,152
+4,AAH,Endothelial,Blood vessels,EC general capillary,127
+4,AAH,Endothelial,Blood vessels,EC venous pulmonary,178
+4,AAH,Endothelial,Blood vessels,EC venous systemic,32
+4,AAH,Endothelial,Blood vessels,Lymphatic EC differentiating,3
+4,AAH,Endothelial,Blood vessels,Lymphatic EC mature,1
+4,AAH,Endothelial,Fibroblast lineage,Lymphatic EC differentiating,1
+4,AAH,Endothelial,Lymphatic EC,Lymphatic EC differentiating,68
+4,AAH,Endothelial,Lymphatic EC,Lymphatic EC mature,1
+4,AAH,Endothelial,Lymphoid,CD8 T cells,2
+4,AAH,Endothelial,Lymphoid,EC general capillary,1
+4,AAH,Epithelial,Airway epithelium,AT0,60
+4,AAH,Epithelial,Airway epithelium,AT2,18
+4,AAH,Epithelial,Airway epithelium,Alveolar fibroblasts,1
+4,AAH,Epithelial,Airway epithelium,Basal resting,15
+4,AAH,Epithelial,Airway epithelium,CD8 T cells,1
+4,AAH,Epithelial,Airway epithelium,Club (nasal),1
+4,AAH,Epithelial,Airway epithelium,Club (non-nasal),3
+4,AAH,Epithelial,Airway epithelium,Deuterosomal,1
+4,AAH,Epithelial,Airway epithelium,EC venous pulmonary,1
+4,AAH,Epithelial,Airway epithelium,Goblet (bronchial),1
+4,AAH,Epithelial,Airway epithelium,Goblet (nasal),30
+4,AAH,Epithelial,Airway epithelium,Multiciliated (non-nasal),63
+4,AAH,Epithelial,Airway epithelium,Peribronchial fibroblasts,1
+4,AAH,Epithelial,Airway epithelium,Suprabasal,2
+4,AAH,Epithelial,Airway epithelium,pre-TB secretory,20
+4,AAH,Epithelial,Alveolar epithelium,AT0,4
+4,AAH,Epithelial,Alveolar epithelium,AT1,1116
+4,AAH,Epithelial,Alveolar epithelium,AT2,3801
+4,AAH,Epithelial,Alveolar epithelium,AT2 proliferating,22
+4,AAH,Epithelial,Alveolar epithelium,Adventitial fibroblasts,1
+4,AAH,Epithelial,Alveolar epithelium,Alveolar fibroblasts,1
+4,AAH,Epithelial,Alveolar epithelium,Alveolar macrophages,1
+4,AAH,Epithelial,Alveolar epithelium,EC aerocyte capillary,2
+4,AAH,Epithelial,Alveolar epithelium,Plasma cells,1
+4,AAH,Epithelial,Blood vessels,AT2,1
+4,AAH,Epithelial,Blood vessels,EC venous pulmonary,1
+4,AAH,Epithelial,Fibroblast lineage,Adventitial fibroblasts,1
+4,AAH,Epithelial,Lymphoid,AT1,1
+4,AAH,Epithelial,Lymphoid,CD4 T cells,1
+4,AAH,Epithelial,Myeloid,AT2,3
+4,AAH,Epithelial,Myeloid,Alveolar macrophages,1
+4,AAH,Immune,Airway epithelium,Multiciliated (non-nasal),2
+4,AAH,Immune,Alveolar epithelium,AT2,3
+4,AAH,Immune,Alveolar epithelium,Alveolar macrophages,1
+4,AAH,Immune,Alveolar epithelium,CD8 T cells,1
+4,AAH,Immune,Fibroblast lineage,Alveolar macrophages,1
+4,AAH,Immune,Fibroblast lineage,CD8 T cells,1
+4,AAH,Immune,Lymphoid,AT1,2
+4,AAH,Immune,Lymphoid,AT2,16
+4,AAH,Immune,Lymphoid,AT2 proliferating,1
+4,AAH,Immune,Lymphoid,Alveolar macrophages,3
+4,AAH,Immune,Lymphoid,B cells,26
+4,AAH,Immune,Lymphoid,CD4 T cells,1030
+4,AAH,Immune,Lymphoid,CD8 T cells,1235
+4,AAH,Immune,Lymphoid,Classical monocytes,1
+4,AAH,Immune,Lymphoid,EC aerocyte capillary,2
+4,AAH,Immune,Lymphoid,NK cells,151
+4,AAH,Immune,Lymphoid,Pericytes,2
+4,AAH,Immune,Lymphoid,Plasma cells,156
+4,AAH,Immune,Lymphoid,Plasmacytoid DCs,2
+4,AAH,Immune,Lymphoid,T cells proliferating,92
+4,AAH,Immune,Myeloid,AT1,1
+4,AAH,Immune,Myeloid,AT2,31
+4,AAH,Immune,Myeloid,Alveolar Mph proliferating,1
+4,AAH,Immune,Myeloid,Alveolar fibroblasts,1
+4,AAH,Immune,Myeloid,Alveolar macrophages,1007
+4,AAH,Immune,Myeloid,B cells,1
+4,AAH,Immune,Myeloid,Basal resting,1
+4,AAH,Immune,Myeloid,CD4 T cells,3
+4,AAH,Immune,Myeloid,CD8 T cells,8
+4,AAH,Immune,Myeloid,Classical monocytes,143
+4,AAH,Immune,Myeloid,DC2,28
+4,AAH,Immune,Myeloid,EC arterial,1
+4,AAH,Immune,Myeloid,Goblet (nasal),1
+4,AAH,Immune,Myeloid,Interstitial Mph perivascular,392
+4,AAH,Immune,Myeloid,Mast cells,271
+4,AAH,Immune,Myeloid,Migratory DCs,50
+4,AAH,Immune,Myeloid,Monocyte-derived Mph,433
+4,AAH,Immune,Myeloid,Multiciliated (non-nasal),3
+4,AAH,Immune,Myeloid,Non-classical monocytes,150
+4,AAH,Immune,Myeloid,Plasmacytoid DCs,43
+4,AAH,Stroma,Alveolar epithelium,AT2,3
+4,AAH,Stroma,Blood vessels,AT2,1
+4,AAH,Stroma,Blood vessels,Pericytes,1
+4,AAH,Stroma,Blood vessels,Smooth muscle,1
+4,AAH,Stroma,Fibroblast lineage,AT1,2
+4,AAH,Stroma,Fibroblast lineage,AT2,20
+4,AAH,Stroma,Fibroblast lineage,Adventitial fibroblasts,549
+4,AAH,Stroma,Fibroblast lineage,Alveolar fibroblasts,2106
+4,AAH,Stroma,Fibroblast lineage,Alveolar macrophages,2
+4,AAH,Stroma,Fibroblast lineage,CD8 T cells,8
+4,AAH,Stroma,Fibroblast lineage,EC arterial,1
+4,AAH,Stroma,Fibroblast lineage,Multiciliated (non-nasal),1
+4,AAH,Stroma,Fibroblast lineage,Myofibroblasts,41
+4,AAH,Stroma,Fibroblast lineage,Peribronchial fibroblasts,131
+4,AAH,Stroma,Fibroblast lineage,Pericytes,87
+4,AAH,Stroma,Fibroblast lineage,Smooth muscle,12
+4,AAH,Stroma,Lymphoid,CD8 T cells,1
+4,AAH,Stroma,Mesothelium,Mesothelium,3
+4,AAH,Stroma,Smooth muscle,SM activated stress response,1
+4,AAH,Stroma,Smooth muscle,Smooth muscle,73
+4,AAH,Stroma,Smooth muscle,Smooth muscle FAM83D+,1
+4,normal,Endothelial,Alveolar epithelium,AT2,1
+4,normal,Endothelial,Blood vessels,AT1,1
+4,normal,Endothelial,Blood vessels,AT2,17
+4,normal,Endothelial,Blood vessels,Alveolar fibroblasts,1
+4,normal,Endothelial,Blood vessels,Alveolar macrophages,1
+4,normal,Endothelial,Blood vessels,CD4 T cells,1
+4,normal,Endothelial,Blood vessels,CD8 T cells,6
+4,normal,Endothelial,Blood vessels,EC aerocyte capillary,568
+4,normal,Endothelial,Blood vessels,EC arterial,367
+4,normal,Endothelial,Blood vessels,EC general capillary,435
+4,normal,Endothelial,Blood vessels,EC venous pulmonary,548
+4,normal,Endothelial,Blood vessels,EC venous systemic,71
+4,normal,Endothelial,Blood vessels,Lymphatic EC differentiating,4
+4,normal,Endothelial,Blood vessels,NK cells,1
+4,normal,Endothelial,Blood vessels,Pericytes,4
+4,normal,Endothelial,Fibroblast lineage,Lymphatic EC differentiating,1
+4,normal,Endothelial,Lymphatic EC,Lymphatic EC differentiating,215
+4,normal,Endothelial,Lymphatic EC,Lymphatic EC mature,2
+4,normal,Endothelial,Lymphoid,Lymphatic EC differentiating,1
+4,normal,Epithelial,Airway epithelium,AT0,304
+4,normal,Epithelial,Airway epithelium,AT1,2
+4,normal,Epithelial,Airway epithelium,AT2,32
+4,normal,Epithelial,Airway epithelium,AT2 proliferating,1
+4,normal,Epithelial,Airway epithelium,Basal resting,120
+4,normal,Epithelial,Airway epithelium,CD8 T cells,1
+4,normal,Epithelial,Airway epithelium,Classical monocytes,1
+4,normal,Epithelial,Airway epithelium,Club (nasal),3
+4,normal,Epithelial,Airway epithelium,Club (non-nasal),2
+4,normal,Epithelial,Airway epithelium,Deuterosomal,2
+4,normal,Epithelial,Airway epithelium,EC venous pulmonary,1
+4,normal,Epithelial,Airway epithelium,Goblet (nasal),95
+4,normal,Epithelial,Airway epithelium,Goblet (subsegmental),2
+4,normal,Epithelial,Airway epithelium,Ionocyte,1
+4,normal,Epithelial,Airway epithelium,Mast cells,1
+4,normal,Epithelial,Airway epithelium,Mesothelium,1
+4,normal,Epithelial,Airway epithelium,Multiciliated (nasal),1
+4,normal,Epithelial,Airway epithelium,Multiciliated (non-nasal),329
+4,normal,Epithelial,Airway epithelium,Neuroendocrine,5
+4,normal,Epithelial,Airway epithelium,Non-classical monocytes,1
+4,normal,Epithelial,Airway epithelium,Suprabasal,6
+4,normal,Epithelial,Airway epithelium,pre-TB secretory,138
+4,normal,Epithelial,Alveolar epithelium,AT0,12
+4,normal,Epithelial,Alveolar epithelium,AT1,2998
+4,normal,Epithelial,Alveolar epithelium,AT2,8680
+4,normal,Epithelial,Alveolar epithelium,AT2 proliferating,25
+4,normal,Epithelial,Alveolar epithelium,Alveolar fibroblasts,6
+4,normal,Epithelial,Alveolar epithelium,Alveolar macrophages,4
+4,normal,Epithelial,Alveolar epithelium,CD4 T cells,1
+4,normal,Epithelial,Alveolar epithelium,CD8 T cells,1
+4,normal,Epithelial,Alveolar epithelium,EC aerocyte capillary,7
+4,normal,Epithelial,Blood vessels,AT1,1
+4,normal,Epithelial,Blood vessels,AT2,2
+4,normal,Epithelial,Blood vessels,EC venous pulmonary,2
+4,normal,Epithelial,Fibroblast lineage,AT1,1
+4,normal,Epithelial,Lymphoid,AT1,2
+4,normal,Epithelial,Lymphoid,AT2,2
+4,normal,Epithelial,Lymphoid,AT2 proliferating,1
+4,normal,Epithelial,Lymphoid,CD4 T cells,1
+4,normal,Epithelial,Lymphoid,CD8 T cells,1
+4,normal,Epithelial,Myeloid,AT0,1
+4,normal,Epithelial,Myeloid,AT2,4
+4,normal,Epithelial,Myeloid,Alveolar macrophages,1
+4,normal,Immune,Alveolar epithelium,AT1,1
+4,normal,Immune,Alveolar epithelium,AT2,14
+4,normal,Immune,Alveolar epithelium,Alveolar macrophages,1
+4,normal,Immune,Blood vessels,AT2,1
+4,normal,Immune,Blood vessels,Alveolar macrophages,1
+4,normal,Immune,Blood vessels,Basal resting,1
+4,normal,Immune,Blood vessels,EC aerocyte capillary,1
+4,normal,Immune,Fibroblast lineage,AT2,1
+4,normal,Immune,Fibroblast lineage,Adventitial fibroblasts,1
+4,normal,Immune,Fibroblast lineage,Alveolar fibroblasts,2
+4,normal,Immune,Fibroblast lineage,Alveolar macrophages,2
+4,normal,Immune,Fibroblast lineage,Pericytes,1
+4,normal,Immune,Lymphoid,AT1,9
+4,normal,Immune,Lymphoid,AT2,59
+4,normal,Immune,Lymphoid,AT2 proliferating,1
+4,normal,Immune,Lymphoid,Adventitial fibroblasts,2
+4,normal,Immune,Lymphoid,Alveolar fibroblasts,3
+4,normal,Immune,Lymphoid,Alveolar macrophages,4
+4,normal,Immune,Lymphoid,B cells,114
+4,normal,Immune,Lymphoid,CD4 T cells,3358
+4,normal,Immune,Lymphoid,CD8 T cells,4418
+4,normal,Immune,Lymphoid,EC aerocyte capillary,3
+4,normal,Immune,Lymphoid,Lymphatic EC differentiating,1
+4,normal,Immune,Lymphoid,Mast cells,4
+4,normal,Immune,Lymphoid,Monocyte-derived Mph,2
+4,normal,Immune,Lymphoid,Multiciliated (non-nasal),1
+4,normal,Immune,Lymphoid,NK cells,510
+4,normal,Immune,Lymphoid,Non-classical monocytes,2
+4,normal,Immune,Lymphoid,Pericytes,4
+4,normal,Immune,Lymphoid,Plasma cells,679
+4,normal,Immune,Lymphoid,Plasmacytoid DCs,1
+4,normal,Immune,Lymphoid,Suprabasal,1
+4,normal,Immune,Lymphoid,T cells proliferating,121
+4,normal,Immune,Myeloid,AT1,5
+4,normal,Immune,Myeloid,AT2,58
+4,normal,Immune,Myeloid,Adventitial fibroblasts,1
+4,normal,Immune,Myeloid,Alveolar Mph CCL3+,1
+4,normal,Immune,Myeloid,Alveolar Mph proliferating,11
+4,normal,Immune,Myeloid,Alveolar fibroblasts,7
+4,normal,Immune,Myeloid,Alveolar macrophages,3166
+4,normal,Immune,Myeloid,CD4 T cells,6
+4,normal,Immune,Myeloid,CD8 T cells,25
+4,normal,Immune,Myeloid,Classical monocytes,307
+4,normal,Immune,Myeloid,DC2,67
+4,normal,Immune,Myeloid,EC aerocyte capillary,1
+4,normal,Immune,Myeloid,EC arterial,3
+4,normal,Immune,Myeloid,EC general capillary,2
+4,normal,Immune,Myeloid,Goblet (nasal),2
+4,normal,Immune,Myeloid,Interstitial Mph perivascular,741
+4,normal,Immune,Myeloid,Mast cells,685
+4,normal,Immune,Myeloid,Migratory DCs,96
+4,normal,Immune,Myeloid,Monocyte-derived Mph,1189
+4,normal,Immune,Myeloid,Multiciliated (non-nasal),2
+4,normal,Immune,Myeloid,NK cells,3
+4,normal,Immune,Myeloid,Non-classical monocytes,322
+4,normal,Immune,Myeloid,Plasma cells,2
+4,normal,Immune,Myeloid,Plasmacytoid DCs,68
+4,normal,Immune,Myeloid,Smooth muscle,2
+4,normal,Immune,Myeloid,Suprabasal,1
+4,normal,Stroma,Alveolar epithelium,AT1,1
+4,normal,Stroma,Alveolar epithelium,AT2,6
+4,normal,Stroma,Blood vessels,EC arterial,3
+4,normal,Stroma,Blood vessels,EC general capillary,1
+4,normal,Stroma,Blood vessels,Smooth muscle,1
+4,normal,Stroma,Fibroblast lineage,AT1,2
+4,normal,Stroma,Fibroblast lineage,AT2,43
+4,normal,Stroma,Fibroblast lineage,Adventitial fibroblasts,873
+4,normal,Stroma,Fibroblast lineage,Alveolar fibroblasts,5412
+4,normal,Stroma,Fibroblast lineage,Alveolar macrophages,4
+4,normal,Stroma,Fibroblast lineage,B cells,1
+4,normal,Stroma,Fibroblast lineage,CD8 T cells,22
+4,normal,Stroma,Fibroblast lineage,Classical monocytes,1
+4,normal,Stroma,Fibroblast lineage,EC aerocyte capillary,2
+4,normal,Stroma,Fibroblast lineage,EC arterial,2
+4,normal,Stroma,Fibroblast lineage,EC general capillary,1
+4,normal,Stroma,Fibroblast lineage,EC venous pulmonary,2
+4,normal,Stroma,Fibroblast lineage,Lymphatic EC differentiating,4
+4,normal,Stroma,Fibroblast lineage,Mast cells,3
+4,normal,Stroma,Fibroblast lineage,Myofibroblasts,95
+4,normal,Stroma,Fibroblast lineage,Peribronchial fibroblasts,121
+4,normal,Stroma,Fibroblast lineage,Pericytes,289
+4,normal,Stroma,Fibroblast lineage,Plasma cells,1
+4,normal,Stroma,Fibroblast lineage,SM activated stress response,3
+4,normal,Stroma,Fibroblast lineage,Smooth muscle,37
+4,normal,Stroma,Lymphoid,CD8 T cells,4
+4,normal,Stroma,Lymphoid,Pericytes,2
+4,normal,Stroma,Mesothelium,Mesothelium,4
+4,normal,Stroma,Myeloid,Adventitial fibroblasts,1
+4,normal,Stroma,Myeloid,Alveolar macrophages,1
+4,normal,Stroma,Myeloid,Mast cells,1
+4,normal,Stroma,Myeloid,Smooth muscle,1
+4,normal,Stroma,Smooth muscle,Alveolar fibroblasts,2
+4,normal,Stroma,Smooth muscle,SM activated stress response,20
+4,normal,Stroma,Smooth muscle,Smooth muscle,129
+4,normal,Stroma,Smooth muscle,Smooth muscle FAM83D+,4
+6,AAH,Endothelial,Blood vessels,AT1,1
+6,AAH,Endothelial,Blood vessels,AT2,1
+6,AAH,Endothelial,Blood vessels,EC aerocyte capillary,81
+6,AAH,Endothelial,Blood vessels,EC arterial,39
+6,AAH,Endothelial,Blood vessels,EC general capillary,70
+6,AAH,Endothelial,Blood vessels,EC venous pulmonary,22
+6,AAH,Endothelial,Blood vessels,EC venous systemic,3
+6,AAH,Endothelial,Blood vessels,Lymphatic EC differentiating,1
+6,AAH,Endothelial,Lymphatic EC,Lymphatic EC differentiating,11
+6,AAH,Epithelial,Airway epithelium,AT0,10
+6,AAH,Epithelial,Airway epithelium,AT2,4
+6,AAH,Epithelial,Airway epithelium,Basal resting,48
+6,AAH,Epithelial,Airway epithelium,Club (nasal),1
+6,AAH,Epithelial,Airway epithelium,Club (non-nasal),10
+6,AAH,Epithelial,Airway epithelium,Goblet (bronchial),1
+6,AAH,Epithelial,Airway epithelium,Goblet (nasal),17
+6,AAH,Epithelial,Airway epithelium,Goblet (subsegmental),2
+6,AAH,Epithelial,Airway epithelium,Multiciliated (non-nasal),193
+6,AAH,Epithelial,Airway epithelium,Neuroendocrine,1
+6,AAH,Epithelial,Airway epithelium,Suprabasal,8
+6,AAH,Epithelial,Airway epithelium,pre-TB secretory,38
+6,AAH,Epithelial,Alveolar epithelium,AT0,1
+6,AAH,Epithelial,Alveolar epithelium,AT1,249
+6,AAH,Epithelial,Alveolar epithelium,AT2,445
+6,AAH,Epithelial,Alveolar epithelium,AT2 proliferating,1
+6,AAH,Epithelial,Submucosal Gland,SMG duct,1
+6,AAH,Epithelial,Submucosal Gland,SMG mucous,7
+6,AAH,Epithelial,Submucosal Gland,SMG serous (bronchial),8
+6,AAH,Immune,Lymphoid,AT1,1
+6,AAH,Immune,Lymphoid,AT2,1
+6,AAH,Immune,Lymphoid,B cells,1
+6,AAH,Immune,Lymphoid,CD4 T cells,38
+6,AAH,Immune,Lymphoid,CD8 T cells,88
+6,AAH,Immune,Lymphoid,NK cells,59
+6,AAH,Immune,Lymphoid,Plasma cells,28
+6,AAH,Immune,Myeloid,Alveolar macrophages,90
+6,AAH,Immune,Myeloid,CD8 T cells,1
+6,AAH,Immune,Myeloid,Classical monocytes,19
+6,AAH,Immune,Myeloid,DC2,7
+6,AAH,Immune,Myeloid,EC general capillary,2
+6,AAH,Immune,Myeloid,Interstitial Mph perivascular,40
+6,AAH,Immune,Myeloid,Mast cells,15
+6,AAH,Immune,Myeloid,Migratory DCs,1
+6,AAH,Immune,Myeloid,Monocyte-derived Mph,31
+6,AAH,Immune,Myeloid,Non-classical monocytes,27
+6,AAH,Immune,Myeloid,Plasmacytoid DCs,1
+6,AAH,Stroma,Alveolar epithelium,AT2,1
+6,AAH,Stroma,Fibroblast lineage,AT1,2
+6,AAH,Stroma,Fibroblast lineage,AT2,2
+6,AAH,Stroma,Fibroblast lineage,Adventitial fibroblasts,58
+6,AAH,Stroma,Fibroblast lineage,Alveolar fibroblasts,336
+6,AAH,Stroma,Fibroblast lineage,EC arterial,1
+6,AAH,Stroma,Fibroblast lineage,Lymphatic EC differentiating,1
+6,AAH,Stroma,Fibroblast lineage,Myofibroblasts,7
+6,AAH,Stroma,Fibroblast lineage,Peribronchial fibroblasts,8
+6,AAH,Stroma,Fibroblast lineage,Pericytes,38
+6,AAH,Stroma,Fibroblast lineage,Smooth muscle,4
+6,AAH,Stroma,Smooth muscle,Smooth muscle,54
+6,normal,Endothelial,Alveolar epithelium,AT1,1
+6,normal,Endothelial,Blood vessels,EC aerocyte capillary,35
+6,normal,Endothelial,Blood vessels,EC arterial,26
+6,normal,Endothelial,Blood vessels,EC general capillary,35
+6,normal,Endothelial,Blood vessels,EC venous pulmonary,22
+6,normal,Endothelial,Blood vessels,EC venous systemic,6
+6,normal,Endothelial,Lymphatic EC,Lymphatic EC differentiating,19
+6,normal,Endothelial,Lymphatic EC,Lymphatic EC mature,1
+6,normal,Epithelial,Airway epithelium,AT0,2
+6,normal,Epithelial,Airway epithelium,AT2,1
+6,normal,Epithelial,Airway epithelium,Basal resting,16
+6,normal,Epithelial,Airway epithelium,Club (non-nasal),3
+6,normal,Epithelial,Airway epithelium,Goblet (nasal),2
+6,normal,Epithelial,Airway epithelium,Multiciliated (non-nasal),42
+6,normal,Epithelial,Airway epithelium,Suprabasal,3
+6,normal,Epithelial,Airway epithelium,pre-TB secretory,11
+6,normal,Epithelial,Alveolar epithelium,AT1,108
+6,normal,Epithelial,Alveolar epithelium,AT2,162
+6,normal,Epithelial,Submucosal Gland,SMG mucous,3
+6,normal,Epithelial,Submucosal Gland,SMG serous (bronchial),5
+6,normal,Epithelial,Submucosal Gland,SMG serous (nasal),1
+6,normal,Immune,Lymphoid,B cells,7
+6,normal,Immune,Lymphoid,CD4 T cells,39
+6,normal,Immune,Lymphoid,CD8 T cells,46
+6,normal,Immune,Lymphoid,NK cells,33
+6,normal,Immune,Lymphoid,Plasma cells,13
+6,normal,Immune,Myeloid,Alveolar macrophages,99
+6,normal,Immune,Myeloid,Classical monocytes,12
+6,normal,Immune,Myeloid,DC2,4
+6,normal,Immune,Myeloid,Interstitial Mph perivascular,36
+6,normal,Immune,Myeloid,Mast cells,15
+6,normal,Immune,Myeloid,Monocyte-derived Mph,25
+6,normal,Immune,Myeloid,Non-classical monocytes,12
+6,normal,Immune,Myeloid,Plasmacytoid DCs,2
+6,normal,Stroma,Fibroblast lineage,Adventitial fibroblasts,27
+6,normal,Stroma,Fibroblast lineage,Alveolar fibroblasts,159
+6,normal,Stroma,Fibroblast lineage,Myofibroblasts,1
+6,normal,Stroma,Fibroblast lineage,Pericytes,16
+6,normal,Stroma,Fibroblast lineage,SM activated stress response,1
+6,normal,Stroma,Smooth muscle,Myofibroblasts,1
+6,normal,Stroma,Smooth muscle,SM activated stress response,7
+6,normal,Stroma,Smooth muscle,Smooth muscle,16
+6,normal,Stroma,Smooth muscle,Smooth muscle FAM83D+,1
+9,AAH,Endothelial,Blood vessels,EC aerocyte capillary,31
+9,AAH,Endothelial,Blood vessels,EC arterial,54
+9,AAH,Endothelial,Blood vessels,EC general capillary,21
+9,AAH,Endothelial,Blood vessels,EC venous pulmonary,20
+9,AAH,Endothelial,Blood vessels,EC venous systemic,2
+9,AAH,Endothelial,Fibroblast lineage,EC aerocyte capillary,1
+9,AAH,Endothelial,Lymphatic EC,Lymphatic EC differentiating,8
+9,AAH,Endothelial,Lymphatic EC,Lymphatic EC mature,1
+9,AAH,Epithelial,Airway epithelium,AT0,6
+9,AAH,Epithelial,Airway epithelium,Alveolar macrophages,1
+9,AAH,Epithelial,Airway epithelium,Basal resting,1
+9,AAH,Epithelial,Airway epithelium,Multiciliated (non-nasal),18
+9,AAH,Epithelial,Airway epithelium,Suprabasal,1
+9,AAH,Epithelial,Airway epithelium,pre-TB secretory,3
+9,AAH,Epithelial,Alveolar epithelium,AT1,134
+9,AAH,Epithelial,Alveolar epithelium,AT2,243
+9,AAH,Immune,Fibroblast lineage,Alveolar fibroblasts,1
+9,AAH,Immune,Lymphoid,AT2,1
+9,AAH,Immune,Lymphoid,B cells,3
+9,AAH,Immune,Lymphoid,CD4 T cells,35
+9,AAH,Immune,Lymphoid,CD8 T cells,52
+9,AAH,Immune,Lymphoid,NK cells,29
+9,AAH,Immune,Lymphoid,Pericytes,1
+9,AAH,Immune,Lymphoid,Plasma cells,6
+9,AAH,Immune,Myeloid,Alveolar Mph proliferating,2
+9,AAH,Immune,Myeloid,Alveolar macrophages,70
+9,AAH,Immune,Myeloid,CD8 T cells,1
+9,AAH,Immune,Myeloid,Classical monocytes,13
+9,AAH,Immune,Myeloid,DC2,1
+9,AAH,Immune,Myeloid,Interstitial Mph perivascular,13
+9,AAH,Immune,Myeloid,Mast cells,13
+9,AAH,Immune,Myeloid,Migratory DCs,1
+9,AAH,Immune,Myeloid,Monocyte-derived Mph,11
+9,AAH,Immune,Myeloid,Non-classical monocytes,10
+9,AAH,Stroma,Fibroblast lineage,AT1,1
+9,AAH,Stroma,Fibroblast lineage,Adventitial fibroblasts,5
+9,AAH,Stroma,Fibroblast lineage,Alveolar fibroblasts,159
+9,AAH,Stroma,Fibroblast lineage,Myofibroblasts,4
+9,AAH,Stroma,Fibroblast lineage,Peribronchial fibroblasts,1
+9,AAH,Stroma,Fibroblast lineage,Pericytes,16
+9,AAH,Stroma,Fibroblast lineage,SM activated stress response,1
+9,AAH,Stroma,Smooth muscle,SM activated stress response,2
+9,AAH,Stroma,Smooth muscle,Smooth muscle,12
+9,normal,Endothelial,Blood vessels,AT2,1
+9,normal,Endothelial,Blood vessels,EC aerocyte capillary,81
+9,normal,Endothelial,Blood vessels,EC arterial,63
+9,normal,Endothelial,Blood vessels,EC general capillary,64
+9,normal,Endothelial,Blood vessels,EC venous pulmonary,49
+9,normal,Endothelial,Blood vessels,EC venous systemic,2
+9,normal,Endothelial,Lymphatic EC,Lymphatic EC differentiating,23
+9,normal,Epithelial,Airway epithelium,AT0,6
+9,normal,Epithelial,Airway epithelium,AT2,2
+9,normal,Epithelial,Airway epithelium,Basal resting,27
+9,normal,Epithelial,Airway epithelium,Club (non-nasal),5
+9,normal,Epithelial,Airway epithelium,Goblet (bronchial),3
+9,normal,Epithelial,Airway epithelium,Goblet (nasal),8
+9,normal,Epithelial,Airway epithelium,Multiciliated (nasal),2
+9,normal,Epithelial,Airway epithelium,Multiciliated (non-nasal),221
+9,normal,Epithelial,Airway epithelium,Neuroendocrine,1
+9,normal,Epithelial,Airway epithelium,pre-TB secretory,15
+9,normal,Epithelial,Alveolar epithelium,AT1,149
+9,normal,Epithelial,Alveolar epithelium,AT2,290
+9,normal,Epithelial,Submucosal Gland,SMG mucous,1
+9,normal,Epithelial,Submucosal Gland,SMG serous (bronchial),9
+9,normal,Immune,Lymphoid,AT2,1
+9,normal,Immune,Lymphoid,B cells,32
+9,normal,Immune,Lymphoid,CD4 T cells,89
+9,normal,Immune,Lymphoid,CD8 T cells,127
+9,normal,Immune,Lymphoid,NK cells,111
+9,normal,Immune,Lymphoid,Plasma cells,17
+9,normal,Immune,Myeloid,Alveolar Mph proliferating,1
+9,normal,Immune,Myeloid,Alveolar fibroblasts,1
+9,normal,Immune,Myeloid,Alveolar macrophages,49
+9,normal,Immune,Myeloid,Classical monocytes,24
+9,normal,Immune,Myeloid,DC2,4
+9,normal,Immune,Myeloid,Interstitial Mph perivascular,24
+9,normal,Immune,Myeloid,Mast cells,12
+9,normal,Immune,Myeloid,Monocyte-derived Mph,27
+9,normal,Immune,Myeloid,Non-classical monocytes,30
+9,normal,Immune,Myeloid,Plasmacytoid DCs,4
+9,normal,Stroma,Blood vessels,EC general capillary,1
+9,normal,Stroma,Fibroblast lineage,AT1,1
+9,normal,Stroma,Fibroblast lineage,Adventitial fibroblasts,43
+9,normal,Stroma,Fibroblast lineage,Alveolar fibroblasts,282
+9,normal,Stroma,Fibroblast lineage,CD8 T cells,1
+9,normal,Stroma,Fibroblast lineage,Lymphatic EC differentiating,1
+9,normal,Stroma,Fibroblast lineage,Myofibroblasts,14
+9,normal,Stroma,Fibroblast lineage,Peribronchial fibroblasts,4
+9,normal,Stroma,Fibroblast lineage,Pericytes,26
+9,normal,Stroma,Fibroblast lineage,SM activated stress response,1
+9,normal,Stroma,Smooth muscle,SM activated stress response,7
+9,normal,Stroma,Smooth muscle,Smooth muscle,31
+9,normal,Stroma,Smooth muscle,Smooth muscle FAM83D+,2

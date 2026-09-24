@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-09-24T11:32:24.392332+00:00",
+  "checks": [
+    {
+      "cohort": "GSE136831",
+      "rows": 33946,
+      "pair_membership": "passed",
+      "cell_floors": "passed",
+      "profiles": "passed"
+    },
+    {
+      "cohort": "GSE135893",
+      "rows": 10852,
+      "pair_membership": "passed",
+      "cell_floors": "passed",
+      "profiles": "passed"
+    }
+  ]
+}

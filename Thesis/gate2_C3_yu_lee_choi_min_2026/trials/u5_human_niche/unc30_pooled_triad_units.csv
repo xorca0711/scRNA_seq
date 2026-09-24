@@ -1,0 +1,783 @@
+patient,histology,label,comp,view,cells,full_library_sum,libraries,n_libraries,uncertainty,library_mode,unit_id
+3,AIS,AT2,AT2,subtype,773,1793891,GSM9237902,1,0.3,pooled,unc30_pooled_0001
+3,AIS,Adventitial fibroblasts,fibroblasts,subtype,33,54822,GSM9237902,1,0.3,pooled,unc30_pooled_0002
+3,AIS,Alveolar fibroblasts,fibroblasts,subtype,173,268857,GSM9237902,1,0.3,pooled,unc30_pooled_0003
+3,AIS,Alveolar macrophages,macrophages,subtype,2,5606,GSM9237902,1,0.3,pooled,unc30_pooled_0004
+3,AIS,Monocyte-derived Mph,macrophages,subtype,85,194089,GSM9237902,1,0.3,pooled,unc30_pooled_0020
+3,LUAD,AT2,AT2,subtype,344,1086108,GSM9237903,1,0.3,pooled,unc30_pooled_0028
+3,LUAD,Adventitial fibroblasts,fibroblasts,subtype,13,20549,GSM9237903,1,0.3,pooled,unc30_pooled_0029
+3,LUAD,Alveolar fibroblasts,fibroblasts,subtype,123,191308,GSM9237903,1,0.3,pooled,unc30_pooled_0030
+3,LUAD,Alveolar macrophages,macrophages,subtype,1,5737,GSM9237903,1,0.3,pooled,unc30_pooled_0031
+3,LUAD,Monocyte-derived Mph,macrophages,subtype,55,145050,GSM9237903,1,0.3,pooled,unc30_pooled_0046
+3,LUAD,Myofibroblasts,fibroblasts,subtype,1,1476,GSM9237903,1,0.3,pooled,unc30_pooled_0048
+3,normal,AT2,AT2,subtype,169,301251,GSM9237901,1,0.3,pooled,unc30_pooled_0061
+3,normal,Adventitial fibroblasts,fibroblasts,subtype,17,33460,GSM9237901,1,0.3,pooled,unc30_pooled_0062
+3,normal,Alveolar fibroblasts,fibroblasts,subtype,130,187672,GSM9237901,1,0.3,pooled,unc30_pooled_0063
+3,normal,Alveolar macrophages,macrophages,subtype,2,14402,GSM9237901,1,0.3,pooled,unc30_pooled_0064
+3,normal,Interstitial Mph perivascular,macrophages,subtype,2,2791,GSM9237901,1,0.3,pooled,unc30_pooled_0075
+3,normal,Monocyte-derived Mph,macrophages,subtype,52,102369,GSM9237901,1,0.3,pooled,unc30_pooled_0079
+3,normal,Myofibroblasts,fibroblasts,subtype,1,1473,GSM9237901,1,0.3,pooled,unc30_pooled_0081
+4,AAH,AT2,AT2,subtype,3291,14487622,GSM9237906;GSM9237907,2,0.3,pooled,unc30_pooled_0089
+4,AAH,AT2 proliferating,AT2,subtype,17,147966,GSM9237906;GSM9237907,2,0.3,pooled,unc30_pooled_0090
+4,AAH,Adventitial fibroblasts,fibroblasts,subtype,129,462994,GSM9237906;GSM9237907,2,0.3,pooled,unc30_pooled_0091
+4,AAH,Alveolar fibroblasts,fibroblasts,subtype,1593,3529365,GSM9237906;GSM9237907,2,0.3,pooled,unc30_pooled_0092
+4,AAH,Alveolar macrophages,macrophages,subtype,640,8256819,GSM9237906;GSM9237907,2,0.3,pooled,unc30_pooled_0093
+4,AAH,Interstitial Mph perivascular,macrophages,subtype,128,268334,GSM9237906;GSM9237907,2,0.3,pooled,unc30_pooled_0108
+4,AAH,Monocyte-derived Mph,macrophages,subtype,89,309975,GSM9237906;GSM9237907,2,0.3,pooled,unc30_pooled_0113
+4,AAH,Myofibroblasts,fibroblasts,subtype,9,13400,GSM9237906;GSM9237907,2,0.3,pooled,unc30_pooled_0115
+4,AAH,Peribronchial fibroblasts,fibroblasts,subtype,25,96870,GSM9237906;GSM9237907,2,0.3,pooled,unc30_pooled_0118
+4,LUAD,AT2,AT2,subtype,5787,31853901,GSM9237908,1,0.3,pooled,unc30_pooled_0128
+4,LUAD,AT2 proliferating,AT2,subtype,59,1084923,GSM9237908,1,0.3,pooled,unc30_pooled_0129
+4,LUAD,Adventitial fibroblasts,fibroblasts,subtype,136,447213,GSM9237908,1,0.3,pooled,unc30_pooled_0130
+4,LUAD,Alveolar Mph proliferating,macrophages,subtype,1,18329,GSM9237908,1,0.3,pooled,unc30_pooled_0131
+4,LUAD,Alveolar fibroblasts,fibroblasts,subtype,3084,9138190,GSM9237908,1,0.3,pooled,unc30_pooled_0132
+4,LUAD,Alveolar macrophages,macrophages,subtype,1159,15188661,GSM9237908,1,0.3,pooled,unc30_pooled_0133
+4,LUAD,Interstitial Mph perivascular,macrophages,subtype,226,578652,GSM9237908,1,0.3,pooled,unc30_pooled_0151
+4,LUAD,Monocyte-derived Mph,macrophages,subtype,201,1071031,GSM9237908,1,0.3,pooled,unc30_pooled_0156
+4,LUAD,Myofibroblasts,fibroblasts,subtype,11,19608,GSM9237908,1,0.3,pooled,unc30_pooled_0159
+4,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,101,306498,GSM9237908,1,0.3,pooled,unc30_pooled_0163
+4,normal,AT2,AT2,subtype,7552,32171546,GSM9237904;GSM9237905,2,0.3,pooled,unc30_pooled_0176
+4,normal,AT2 proliferating,AT2,subtype,15,159969,GSM9237904;GSM9237905,2,0.3,pooled,unc30_pooled_0177
+4,normal,Adventitial fibroblasts,fibroblasts,subtype,289,959653,GSM9237904;GSM9237905,2,0.3,pooled,unc30_pooled_0178
+4,normal,Alveolar Mph proliferating,macrophages,subtype,2,8422,GSM9237904,1,0.3,pooled,unc30_pooled_0179
+4,normal,Alveolar fibroblasts,fibroblasts,subtype,4160,10497601,GSM9237904;GSM9237905,2,0.3,pooled,unc30_pooled_0180
+4,normal,Alveolar macrophages,macrophages,subtype,2188,24665454,GSM9237904;GSM9237905,2,0.3,pooled,unc30_pooled_0181
+4,normal,Interstitial Mph perivascular,macrophages,subtype,269,576005,GSM9237904;GSM9237905,2,0.3,pooled,unc30_pooled_0196
+4,normal,Monocyte-derived Mph,macrophages,subtype,259,1068595,GSM9237904;GSM9237905,2,0.3,pooled,unc30_pooled_0200
+4,normal,Myofibroblasts,fibroblasts,subtype,23,35783,GSM9237904;GSM9237905,2,0.3,pooled,unc30_pooled_0202
+4,normal,Peribronchial fibroblasts,fibroblasts,subtype,25,112459,GSM9237904;GSM9237905,2,0.3,pooled,unc30_pooled_0206
+5,AIS,AT2,AT2,subtype,244,1031631,GSM9237910,1,0.3,pooled,unc30_pooled_0217
+5,AIS,Adventitial fibroblasts,fibroblasts,subtype,9,19779,GSM9237910,1,0.3,pooled,unc30_pooled_0218
+5,AIS,Alveolar fibroblasts,fibroblasts,subtype,245,456724,GSM9237910,1,0.3,pooled,unc30_pooled_0219
+5,AIS,Alveolar macrophages,macrophages,subtype,42,302443,GSM9237910,1,0.3,pooled,unc30_pooled_0220
+5,AIS,Interstitial Mph perivascular,macrophages,subtype,11,18801,GSM9237910,1,0.3,pooled,unc30_pooled_0232
+5,AIS,Monocyte-derived Mph,macrophages,subtype,5,16944,GSM9237910,1,0.3,pooled,unc30_pooled_0236
+5,AIS,Myofibroblasts,fibroblasts,subtype,2,2282,GSM9237910,1,0.3,pooled,unc30_pooled_0238
+5,LUAD,AT2,AT2,subtype,1524,8039230,GSM9237911,1,0.3,pooled,unc30_pooled_0248
+5,LUAD,AT2 proliferating,AT2,subtype,51,501965,GSM9237911,1,0.3,pooled,unc30_pooled_0249
+5,LUAD,Adventitial fibroblasts,fibroblasts,subtype,30,98126,GSM9237911,1,0.3,pooled,unc30_pooled_0250
+5,LUAD,Alveolar fibroblasts,fibroblasts,subtype,195,529929,GSM9237911,1,0.3,pooled,unc30_pooled_0251
+5,LUAD,Alveolar macrophages,macrophages,subtype,322,2165616,GSM9237911,1,0.3,pooled,unc30_pooled_0252
+5,LUAD,Interstitial Mph perivascular,macrophages,subtype,100,234792,GSM9237911,1,0.3,pooled,unc30_pooled_0266
+5,LUAD,Monocyte-derived Mph,macrophages,subtype,174,738052,GSM9237911,1,0.3,pooled,unc30_pooled_0272
+5,LUAD,Myofibroblasts,fibroblasts,subtype,4,6817,GSM9237911,1,0.3,pooled,unc30_pooled_0274
+5,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,663,2284537,GSM9237911,1,0.3,pooled,unc30_pooled_0277
+5,normal,AT2,AT2,subtype,1786,6351714,GSM9237909,1,0.3,pooled,unc30_pooled_0286
+5,normal,Adventitial fibroblasts,fibroblasts,subtype,9,11858,GSM9237909,1,0.3,pooled,unc30_pooled_0287
+5,normal,Alveolar fibroblasts,fibroblasts,subtype,3152,7136838,GSM9237909,1,0.3,pooled,unc30_pooled_0288
+5,normal,Alveolar macrophages,macrophages,subtype,555,5188197,GSM9237909,1,0.3,pooled,unc30_pooled_0289
+5,normal,Interstitial Mph perivascular,macrophages,subtype,33,58692,GSM9237909,1,0.3,pooled,unc30_pooled_0302
+5,normal,Monocyte-derived Mph,macrophages,subtype,47,165618,GSM9237909,1,0.3,pooled,unc30_pooled_0306
+5,normal,Myofibroblasts,fibroblasts,subtype,11,17518,GSM9237909,1,0.3,pooled,unc30_pooled_0309
+5,normal,Peribronchial fibroblasts,fibroblasts,subtype,1,3550,GSM9237909,1,0.3,pooled,unc30_pooled_0312
+6,AAH,AT2,AT2,subtype,422,1197670,GSM9237913,1,0.3,pooled,unc30_pooled_0321
+6,AAH,Adventitial fibroblasts,fibroblasts,subtype,40,81208,GSM9237913,1,0.3,pooled,unc30_pooled_0322
+6,AAH,Alveolar fibroblasts,fibroblasts,subtype,275,642774,GSM9237913,1,0.3,pooled,unc30_pooled_0323
+6,AAH,Alveolar macrophages,macrophages,subtype,83,685189,GSM9237913,1,0.3,pooled,unc30_pooled_0324
+6,AAH,Interstitial Mph perivascular,macrophages,subtype,12,17560,GSM9237913,1,0.3,pooled,unc30_pooled_0337
+6,AAH,Monocyte-derived Mph,macrophages,subtype,3,8775,GSM9237913,1,0.3,pooled,unc30_pooled_0341
+6,AAH,Myofibroblasts,fibroblasts,subtype,2,3175,GSM9237913,1,0.3,pooled,unc30_pooled_0343
+6,LUAD,AT2,AT2,subtype,541,2438906,GSM9237914,1,0.3,pooled,unc30_pooled_0357
+6,LUAD,AT2 proliferating,AT2,subtype,3,77376,GSM9237914,1,0.3,pooled,unc30_pooled_0358
+6,LUAD,Adventitial fibroblasts,fibroblasts,subtype,29,70139,GSM9237914,1,0.3,pooled,unc30_pooled_0359
+6,LUAD,Alveolar fibroblasts,fibroblasts,subtype,331,851530,GSM9237914,1,0.3,pooled,unc30_pooled_0360
+6,LUAD,Alveolar macrophages,macrophages,subtype,231,2431255,GSM9237914,1,0.3,pooled,unc30_pooled_0361
+6,LUAD,Interstitial Mph perivascular,macrophages,subtype,63,124452,GSM9237914,1,0.3,pooled,unc30_pooled_0378
+6,LUAD,Monocyte-derived Mph,macrophages,subtype,44,191460,GSM9237914,1,0.3,pooled,unc30_pooled_0382
+6,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,73,271846,GSM9237914,1,0.3,pooled,unc30_pooled_0386
+6,normal,AT2,AT2,subtype,147,437640,GSM9237912,1,0.3,pooled,unc30_pooled_0396
+6,normal,Adventitial fibroblasts,fibroblasts,subtype,20,63694,GSM9237912,1,0.3,pooled,unc30_pooled_0397
+6,normal,Alveolar fibroblasts,fibroblasts,subtype,128,290496,GSM9237912,1,0.3,pooled,unc30_pooled_0398
+6,normal,Alveolar macrophages,macrophages,subtype,85,813513,GSM9237912,1,0.3,pooled,unc30_pooled_0399
+6,normal,Interstitial Mph perivascular,macrophages,subtype,19,27662,GSM9237912,1,0.3,pooled,unc30_pooled_0410
+6,normal,Monocyte-derived Mph,macrophages,subtype,13,34220,GSM9237912,1,0.3,pooled,unc30_pooled_0413
+7,LUAD,AT2,AT2,subtype,2055,9332507,GSM9237916;GSM9237917,2,0.3,pooled,unc30_pooled_0429
+7,LUAD,AT2 proliferating,AT2,subtype,4,20807,GSM9237917,1,0.3,pooled,unc30_pooled_0430
+7,LUAD,Adventitial fibroblasts,fibroblasts,subtype,146,435329,GSM9237916;GSM9237917,2,0.3,pooled,unc30_pooled_0431
+7,LUAD,Alveolar fibroblasts,fibroblasts,subtype,1743,3459949,GSM9237916;GSM9237917,2,0.3,pooled,unc30_pooled_0432
+7,LUAD,Alveolar macrophages,macrophages,subtype,610,6294295,GSM9237916;GSM9237917,2,0.3,pooled,unc30_pooled_0433
+7,LUAD,Interstitial Mph perivascular,macrophages,subtype,105,195571,GSM9237916;GSM9237917,2,0.3,pooled,unc30_pooled_0448
+7,LUAD,Monocyte-derived Mph,macrophages,subtype,69,305838,GSM9237916;GSM9237917,2,0.3,pooled,unc30_pooled_0455
+7,LUAD,Myofibroblasts,fibroblasts,subtype,27,39647,GSM9237916;GSM9237917,2,0.3,pooled,unc30_pooled_0457
+7,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,35,119388,GSM9237916;GSM9237917,2,0.3,pooled,unc30_pooled_0461
+7,normal,AT2,AT2,subtype,1416,2847408,GSM9237915,1,0.3,pooled,unc30_pooled_0470
+7,normal,Adventitial fibroblasts,fibroblasts,subtype,28,51355,GSM9237915,1,0.3,pooled,unc30_pooled_0471
+7,normal,Alveolar fibroblasts,fibroblasts,subtype,869,1320305,GSM9237915,1,0.3,pooled,unc30_pooled_0472
+7,normal,Alveolar macrophages,macrophages,subtype,94,509082,GSM9237915,1,0.3,pooled,unc30_pooled_0473
+7,normal,Interstitial Mph perivascular,macrophages,subtype,1,1122,GSM9237915,1,0.3,pooled,unc30_pooled_0486
+7,normal,Monocyte-derived Mph,macrophages,subtype,2,3103,GSM9237915,1,0.3,pooled,unc30_pooled_0491
+7,normal,Myofibroblasts,fibroblasts,subtype,11,13874,GSM9237915,1,0.3,pooled,unc30_pooled_0493
+8,AIS,AT2,AT2,subtype,98,274947,GSM9237919,1,0.3,pooled,unc30_pooled_0503
+8,AIS,Adventitial fibroblasts,fibroblasts,subtype,4,4605,GSM9237919,1,0.3,pooled,unc30_pooled_0504
+8,AIS,Alveolar fibroblasts,fibroblasts,subtype,25,37500,GSM9237919,1,0.3,pooled,unc30_pooled_0505
+8,AIS,Alveolar macrophages,macrophages,subtype,14,31376,GSM9237919,1,0.3,pooled,unc30_pooled_0506
+8,AIS,Interstitial Mph perivascular,macrophages,subtype,1,1655,GSM9237919,1,0.3,pooled,unc30_pooled_0514
+8,AIS,Monocyte-derived Mph,macrophages,subtype,1,1502,GSM9237919,1,0.3,pooled,unc30_pooled_0516
+8,LUAD,AT2,AT2,subtype,316,527659,GSM9237920,1,0.3,pooled,unc30_pooled_0523
+8,LUAD,AT2 proliferating,AT2,subtype,1,1489,GSM9237920,1,0.3,pooled,unc30_pooled_0524
+8,LUAD,Adventitial fibroblasts,fibroblasts,subtype,48,113612,GSM9237920,1,0.3,pooled,unc30_pooled_0525
+8,LUAD,Alveolar fibroblasts,fibroblasts,subtype,50,90364,GSM9237920,1,0.3,pooled,unc30_pooled_0526
+8,LUAD,Alveolar macrophages,macrophages,subtype,86,227011,GSM9237920,1,0.3,pooled,unc30_pooled_0527
+8,LUAD,Interstitial Mph perivascular,macrophages,subtype,4,5134,GSM9237920,1,0.3,pooled,unc30_pooled_0540
+8,LUAD,Monocyte-derived Mph,macrophages,subtype,81,153733,GSM9237920,1,0.3,pooled,unc30_pooled_0544
+8,LUAD,Myofibroblasts,fibroblasts,subtype,2,2819,GSM9237920,1,0.3,pooled,unc30_pooled_0547
+8,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,63,139614,GSM9237920,1,0.3,pooled,unc30_pooled_0550
+8,normal,AT2,AT2,subtype,219,307500,GSM9237918,1,0.3,pooled,unc30_pooled_0559
+8,normal,Alveolar fibroblasts,fibroblasts,subtype,27,48972,GSM9237918,1,0.3,pooled,unc30_pooled_0560
+8,normal,Alveolar macrophages,macrophages,subtype,4,8132,GSM9237918,1,0.3,pooled,unc30_pooled_0561
+9,AAH,AT2,AT2,subtype,225,720083,GSM9237922,1,0.3,pooled,unc30_pooled_0574
+9,AAH,Adventitial fibroblasts,fibroblasts,subtype,1,1408,GSM9237922,1,0.3,pooled,unc30_pooled_0575
+9,AAH,Alveolar fibroblasts,fibroblasts,subtype,144,274807,GSM9237922,1,0.3,pooled,unc30_pooled_0576
+9,AAH,Alveolar macrophages,macrophages,subtype,64,728241,GSM9237922,1,0.3,pooled,unc30_pooled_0577
+9,AAH,Interstitial Mph perivascular,macrophages,subtype,5,8172,GSM9237922,1,0.3,pooled,unc30_pooled_0587
+9,AAH,Monocyte-derived Mph,macrophages,subtype,6,21892,GSM9237922,1,0.3,pooled,unc30_pooled_0591
+9,AAH,Myofibroblasts,fibroblasts,subtype,2,3448,GSM9237922,1,0.3,pooled,unc30_pooled_0593
+9,AIS,AT2,AT2,subtype,668,2275666,GSM9237923,1,0.3,pooled,unc30_pooled_0604
+9,AIS,AT2 proliferating,AT2,subtype,1,5519,GSM9237923,1,0.3,pooled,unc30_pooled_0605
+9,AIS,Adventitial fibroblasts,fibroblasts,subtype,25,72681,GSM9237923,1,0.3,pooled,unc30_pooled_0606
+9,AIS,Alveolar fibroblasts,fibroblasts,subtype,482,1014906,GSM9237923,1,0.3,pooled,unc30_pooled_0607
+9,AIS,Alveolar macrophages,macrophages,subtype,40,396675,GSM9237923,1,0.3,pooled,unc30_pooled_0608
+9,AIS,Interstitial Mph perivascular,macrophages,subtype,16,25441,GSM9237923,1,0.3,pooled,unc30_pooled_0622
+9,AIS,Monocyte-derived Mph,macrophages,subtype,26,58782,GSM9237923,1,0.3,pooled,unc30_pooled_0626
+9,AIS,Myofibroblasts,fibroblasts,subtype,3,3721,GSM9237923,1,0.3,pooled,unc30_pooled_0629
+9,AIS,Peribronchial fibroblasts,fibroblasts,subtype,1,2043,GSM9237923,1,0.3,pooled,unc30_pooled_0633
+9,LUAD,AT2,AT2,subtype,700,2038797,GSM9237924,1,0.3,pooled,unc30_pooled_0642
+9,LUAD,Adventitial fibroblasts,fibroblasts,subtype,170,360597,GSM9237924,1,0.3,pooled,unc30_pooled_0643
+9,LUAD,Alveolar fibroblasts,fibroblasts,subtype,269,438660,GSM9237924,1,0.3,pooled,unc30_pooled_0644
+9,LUAD,Alveolar macrophages,macrophages,subtype,47,361279,GSM9237924,1,0.3,pooled,unc30_pooled_0645
+9,LUAD,Interstitial Mph perivascular,macrophages,subtype,42,73692,GSM9237924,1,0.3,pooled,unc30_pooled_0662
+9,LUAD,Monocyte-derived Mph,macrophages,subtype,51,191640,GSM9237924,1,0.3,pooled,unc30_pooled_0668
+9,LUAD,Myofibroblasts,fibroblasts,subtype,10,13449,GSM9237924,1,0.3,pooled,unc30_pooled_0670
+9,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,12,24073,GSM9237924,1,0.3,pooled,unc30_pooled_0674
+9,normal,AT2,AT2,subtype,283,991766,GSM9237921,1,0.3,pooled,unc30_pooled_0689
+9,normal,Adventitial fibroblasts,fibroblasts,subtype,27,69635,GSM9237921,1,0.3,pooled,unc30_pooled_0690
+9,normal,Alveolar fibroblasts,fibroblasts,subtype,236,595751,GSM9237921,1,0.3,pooled,unc30_pooled_0691
+9,normal,Alveolar macrophages,macrophages,subtype,35,642593,GSM9237921,1,0.3,pooled,unc30_pooled_0692
+9,normal,Interstitial Mph perivascular,macrophages,subtype,6,11750,GSM9237921,1,0.3,pooled,unc30_pooled_0705
+9,normal,Monocyte-derived Mph,macrophages,subtype,3,6699,GSM9237921,1,0.3,pooled,unc30_pooled_0708
+9,normal,Myofibroblasts,fibroblasts,subtype,4,4447,GSM9237921,1,0.3,pooled,unc30_pooled_0711
+10,LUAD,AT2,AT2,subtype,871,3278689,GSM9237927,1,0.3,pooled,unc30_pooled_0725
+10,LUAD,AT2 proliferating,AT2,subtype,10,337420,GSM9237927,1,0.3,pooled,unc30_pooled_0726
+10,LUAD,Adventitial fibroblasts,fibroblasts,subtype,35,95919,GSM9237927,1,0.3,pooled,unc30_pooled_0727
+10,LUAD,Alveolar Mph proliferating,macrophages,subtype,1,5657,GSM9237927,1,0.3,pooled,unc30_pooled_0728
+10,LUAD,Alveolar fibroblasts,fibroblasts,subtype,603,1552983,GSM9237927,1,0.3,pooled,unc30_pooled_0729
+10,LUAD,Alveolar macrophages,macrophages,subtype,203,2356004,GSM9237927,1,0.3,pooled,unc30_pooled_0730
+10,LUAD,Interstitial Mph perivascular,macrophages,subtype,64,125218,GSM9237927,1,0.3,pooled,unc30_pooled_0745
+10,LUAD,Monocyte-derived Mph,macrophages,subtype,54,280864,GSM9237927,1,0.3,pooled,unc30_pooled_0751
+10,LUAD,Myofibroblasts,fibroblasts,subtype,9,12270,GSM9237927,1,0.3,pooled,unc30_pooled_0754
+10,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,193,612189,GSM9237927,1,0.3,pooled,unc30_pooled_0758
+10,MIA,AT2,AT2,subtype,479,2209732,GSM9237926,1,0.3,pooled,unc30_pooled_0770
+10,MIA,AT2 proliferating,AT2,subtype,1,5398,GSM9237926,1,0.3,pooled,unc30_pooled_0771
+10,MIA,Adventitial fibroblasts,fibroblasts,subtype,2,5791,GSM9237926,1,0.3,pooled,unc30_pooled_0772
+10,MIA,Alveolar fibroblasts,fibroblasts,subtype,305,502892,GSM9237926,1,0.3,pooled,unc30_pooled_0773
+10,MIA,Alveolar macrophages,macrophages,subtype,39,262318,GSM9237926,1,0.3,pooled,unc30_pooled_0774
+10,MIA,Interstitial Mph perivascular,macrophages,subtype,12,19243,GSM9237926,1,0.3,pooled,unc30_pooled_0787
+10,MIA,Monocyte-derived Mph,macrophages,subtype,13,53448,GSM9237926,1,0.3,pooled,unc30_pooled_0791
+10,MIA,Myofibroblasts,fibroblasts,subtype,6,7683,GSM9237926,1,0.3,pooled,unc30_pooled_0793
+10,MIA,Peribronchial fibroblasts,fibroblasts,subtype,2,6351,GSM9237926,1,0.3,pooled,unc30_pooled_0796
+10,normal,AT2,AT2,subtype,182,418471,GSM9237925,1,0.3,pooled,unc30_pooled_0807
+10,normal,Adventitial fibroblasts,fibroblasts,subtype,3,7628,GSM9237925,1,0.3,pooled,unc30_pooled_0808
+10,normal,Alveolar fibroblasts,fibroblasts,subtype,113,222734,GSM9237925,1,0.3,pooled,unc30_pooled_0809
+10,normal,Alveolar macrophages,macrophages,subtype,12,65976,GSM9237925,1,0.3,pooled,unc30_pooled_0810
+10,normal,Interstitial Mph perivascular,macrophages,subtype,1,1452,GSM9237925,1,0.3,pooled,unc30_pooled_0821
+10,normal,Monocyte-derived Mph,macrophages,subtype,32,158075,GSM9237925,1,0.3,pooled,unc30_pooled_0825
+10,normal,Myofibroblasts,fibroblasts,subtype,1,1213,GSM9237925,1,0.3,pooled,unc30_pooled_0827
+11,AAH,AT2,AT2,subtype,474,2453356,GSM9237929,1,0.3,pooled,unc30_pooled_0839
+11,AAH,AT2 proliferating,AT2,subtype,3,14675,GSM9237929,1,0.3,pooled,unc30_pooled_0840
+11,AAH,Adventitial fibroblasts,fibroblasts,subtype,57,99653,GSM9237929,1,0.3,pooled,unc30_pooled_0841
+11,AAH,Alveolar Mph proliferating,macrophages,subtype,3,29472,GSM9237929,1,0.3,pooled,unc30_pooled_0842
+11,AAH,Alveolar fibroblasts,fibroblasts,subtype,267,483313,GSM9237929,1,0.3,pooled,unc30_pooled_0843
+11,AAH,Alveolar macrophages,macrophages,subtype,94,746549,GSM9237929,1,0.3,pooled,unc30_pooled_0844
+11,AAH,Interstitial Mph perivascular,macrophages,subtype,19,30110,GSM9237929,1,0.3,pooled,unc30_pooled_0858
+11,AAH,Monocyte-derived Mph,macrophages,subtype,11,42174,GSM9237929,1,0.3,pooled,unc30_pooled_0862
+11,AAH,Myofibroblasts,fibroblasts,subtype,1,1123,GSM9237929,1,0.3,pooled,unc30_pooled_0864
+11,LUAD,AT2,AT2,subtype,656,3244627,GSM9237930,1,0.3,pooled,unc30_pooled_0878
+11,LUAD,AT2 proliferating,AT2,subtype,11,142694,GSM9237930,1,0.3,pooled,unc30_pooled_0879
+11,LUAD,Adventitial fibroblasts,fibroblasts,subtype,30,102293,GSM9237930,1,0.3,pooled,unc30_pooled_0880
+11,LUAD,Alveolar Mph proliferating,macrophages,subtype,2,35810,GSM9237930,1,0.3,pooled,unc30_pooled_0881
+11,LUAD,Alveolar fibroblasts,fibroblasts,subtype,333,963543,GSM9237930,1,0.3,pooled,unc30_pooled_0882
+11,LUAD,Alveolar macrophages,macrophages,subtype,258,2074217,GSM9237930,1,0.3,pooled,unc30_pooled_0883
+11,LUAD,Interstitial Mph perivascular,macrophages,subtype,76,179342,GSM9237930,1,0.3,pooled,unc30_pooled_0899
+11,LUAD,Monocyte-derived Mph,macrophages,subtype,50,297840,GSM9237930,1,0.3,pooled,unc30_pooled_0905
+11,LUAD,Myofibroblasts,fibroblasts,subtype,5,8977,GSM9237930,1,0.3,pooled,unc30_pooled_0907
+11,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,506,1677523,GSM9237930,1,0.3,pooled,unc30_pooled_0910
+11,normal,AT2,AT2,subtype,148,433998,GSM9237928,1,0.3,pooled,unc30_pooled_0919
+11,normal,AT2 proliferating,AT2,subtype,1,2076,GSM9237928,1,0.3,pooled,unc30_pooled_0920
+11,normal,Adventitial fibroblasts,fibroblasts,subtype,23,33942,GSM9237928,1,0.3,pooled,unc30_pooled_0921
+11,normal,Alveolar fibroblasts,fibroblasts,subtype,132,214132,GSM9237928,1,0.3,pooled,unc30_pooled_0922
+11,normal,Alveolar macrophages,macrophages,subtype,20,110516,GSM9237928,1,0.3,pooled,unc30_pooled_0923
+11,normal,Interstitial Mph perivascular,macrophages,subtype,10,13701,GSM9237928,1,0.3,pooled,unc30_pooled_0934
+11,normal,Monocyte-derived Mph,macrophages,subtype,5,11458,GSM9237928,1,0.3,pooled,unc30_pooled_0938
+11,normal,Myofibroblasts,fibroblasts,subtype,2,2276,GSM9237928,1,0.3,pooled,unc30_pooled_0940
+12,AIS,AT2,AT2,subtype,534,3780495,GSM9237932,1,0.3,pooled,unc30_pooled_0952
+12,AIS,AT2 proliferating,AT2,subtype,3,39337,GSM9237932,1,0.3,pooled,unc30_pooled_0953
+12,AIS,Adventitial fibroblasts,fibroblasts,subtype,5,17310,GSM9237932,1,0.3,pooled,unc30_pooled_0954
+12,AIS,Alveolar fibroblasts,fibroblasts,subtype,277,578957,GSM9237932,1,0.3,pooled,unc30_pooled_0955
+12,AIS,Alveolar macrophages,macrophages,subtype,42,421301,GSM9237932,1,0.3,pooled,unc30_pooled_0956
+12,AIS,Interstitial Mph perivascular,macrophages,subtype,9,17106,GSM9237932,1,0.3,pooled,unc30_pooled_0968
+12,AIS,Monocyte-derived Mph,macrophages,subtype,2,2972,GSM9237932,1,0.3,pooled,unc30_pooled_0972
+12,AIS,Peribronchial fibroblasts,fibroblasts,subtype,1,3406,GSM9237932,1,0.3,pooled,unc30_pooled_0977
+12,LUAD,AT2,AT2,subtype,624,4073783,GSM9237933,1,0.3,pooled,unc30_pooled_0986
+12,LUAD,Adventitial fibroblasts,fibroblasts,subtype,3,14003,GSM9237933,1,0.3,pooled,unc30_pooled_0987
+12,LUAD,Alveolar fibroblasts,fibroblasts,subtype,211,331943,GSM9237933,1,0.3,pooled,unc30_pooled_0988
+12,LUAD,Alveolar macrophages,macrophages,subtype,54,353035,GSM9237933,1,0.3,pooled,unc30_pooled_0989
+12,LUAD,Interstitial Mph perivascular,macrophages,subtype,21,35014,GSM9237933,1,0.3,pooled,unc30_pooled_1000
+12,LUAD,Monocyte-derived Mph,macrophages,subtype,17,39360,GSM9237933,1,0.3,pooled,unc30_pooled_1004
+12,LUAD,Myofibroblasts,fibroblasts,subtype,1,1079,GSM9237933,1,0.3,pooled,unc30_pooled_1006
+12,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,5,11271,GSM9237933,1,0.3,pooled,unc30_pooled_1009
+12,normal,AT2,AT2,subtype,203,876197,GSM9237931,1,0.3,pooled,unc30_pooled_1019
+12,normal,AT2 proliferating,AT2,subtype,1,12735,GSM9237931,1,0.3,pooled,unc30_pooled_1020
+12,normal,Adventitial fibroblasts,fibroblasts,subtype,3,7397,GSM9237931,1,0.3,pooled,unc30_pooled_1021
+12,normal,Alveolar fibroblasts,fibroblasts,subtype,189,419643,GSM9237931,1,0.3,pooled,unc30_pooled_1022
+12,normal,Alveolar macrophages,macrophages,subtype,37,490627,GSM9237931,1,0.3,pooled,unc30_pooled_1023
+12,normal,Interstitial Mph perivascular,macrophages,subtype,4,9226,GSM9237931,1,0.3,pooled,unc30_pooled_1033
+12,normal,Monocyte-derived Mph,macrophages,subtype,3,5656,GSM9237931,1,0.3,pooled,unc30_pooled_1036
+12,normal,Peribronchial fibroblasts,fibroblasts,subtype,1,1413,GSM9237931,1,0.3,pooled,unc30_pooled_1041
+13,LUAD,AT2,AT2,subtype,211,1188037,GSM9237936,1,0.3,pooled,unc30_pooled_1049
+13,LUAD,Adventitial fibroblasts,fibroblasts,subtype,9,25404,GSM9237936,1,0.3,pooled,unc30_pooled_1050
+13,LUAD,Alveolar fibroblasts,fibroblasts,subtype,234,545581,GSM9237936,1,0.3,pooled,unc30_pooled_1051
+13,LUAD,Alveolar macrophages,macrophages,subtype,37,387901,GSM9237936,1,0.3,pooled,unc30_pooled_1052
+13,LUAD,Interstitial Mph perivascular,macrophages,subtype,59,118972,GSM9237936,1,0.3,pooled,unc30_pooled_1062
+13,LUAD,Monocyte-derived Mph,macrophages,subtype,11,32531,GSM9237936,1,0.3,pooled,unc30_pooled_1066
+13,LUAD,Myofibroblasts,fibroblasts,subtype,1,1014,GSM9237936,1,0.3,pooled,unc30_pooled_1068
+13,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,54,157018,GSM9237936,1,0.3,pooled,unc30_pooled_1071
+13,MIA,AT2,AT2,subtype,343,1579329,GSM9237935,1,0.3,pooled,unc30_pooled_1078
+13,MIA,Adventitial fibroblasts,fibroblasts,subtype,13,30209,GSM9237935,1,0.3,pooled,unc30_pooled_1079
+13,MIA,Alveolar fibroblasts,fibroblasts,subtype,307,490153,GSM9237935,1,0.3,pooled,unc30_pooled_1080
+13,MIA,Alveolar macrophages,macrophages,subtype,92,701714,GSM9237935,1,0.3,pooled,unc30_pooled_1081
+13,MIA,Interstitial Mph perivascular,macrophages,subtype,23,33445,GSM9237935,1,0.3,pooled,unc30_pooled_1095
+13,MIA,Monocyte-derived Mph,macrophages,subtype,12,26847,GSM9237935,1,0.3,pooled,unc30_pooled_1099
+13,MIA,Myofibroblasts,fibroblasts,subtype,1,1088,GSM9237935,1,0.3,pooled,unc30_pooled_1101
+13,MIA,Peribronchial fibroblasts,fibroblasts,subtype,4,11413,GSM9237935,1,0.3,pooled,unc30_pooled_1104
+13,normal,AT2,AT2,subtype,97,345800,GSM9237934,1,0.3,pooled,unc30_pooled_1112
+13,normal,Alveolar fibroblasts,fibroblasts,subtype,104,205460,GSM9237934,1,0.3,pooled,unc30_pooled_1113
+13,normal,Alveolar macrophages,macrophages,subtype,7,76868,GSM9237934,1,0.3,pooled,unc30_pooled_1114
+13,normal,Interstitial Mph perivascular,macrophages,subtype,2,4234,GSM9237934,1,0.3,pooled,unc30_pooled_1126
+13,normal,Monocyte-derived Mph,macrophages,subtype,2,6013,GSM9237934,1,0.3,pooled,unc30_pooled_1129
+13,normal,Myofibroblasts,fibroblasts,subtype,1,1105,GSM9237934,1,0.3,pooled,unc30_pooled_1131
+14,AIS,AT2,AT2,subtype,670,2040675,GSM9237938,1,0.3,pooled,unc30_pooled_1142
+14,AIS,AT2 proliferating,AT2,subtype,2,32498,GSM9237938,1,0.3,pooled,unc30_pooled_1143
+14,AIS,Adventitial fibroblasts,fibroblasts,subtype,17,48002,GSM9237938,1,0.3,pooled,unc30_pooled_1144
+14,AIS,Alveolar Mph proliferating,macrophages,subtype,3,31998,GSM9237938,1,0.3,pooled,unc30_pooled_1145
+14,AIS,Alveolar fibroblasts,fibroblasts,subtype,353,799722,GSM9237938,1,0.3,pooled,unc30_pooled_1146
+14,AIS,Alveolar macrophages,macrophages,subtype,371,2873881,GSM9237938,1,0.3,pooled,unc30_pooled_1147
+14,AIS,Interstitial Mph perivascular,macrophages,subtype,28,43374,GSM9237938,1,0.3,pooled,unc30_pooled_1163
+14,AIS,Monocyte-derived Mph,macrophages,subtype,23,65182,GSM9237938,1,0.3,pooled,unc30_pooled_1167
+14,AIS,Myofibroblasts,fibroblasts,subtype,2,2395,GSM9237938,1,0.3,pooled,unc30_pooled_1169
+14,LUAD,AT2,AT2,subtype,530,1969412,GSM9237939,1,0.3,pooled,unc30_pooled_1180
+14,LUAD,AT2 proliferating,AT2,subtype,3,32159,GSM9237939,1,0.3,pooled,unc30_pooled_1181
+14,LUAD,Adventitial fibroblasts,fibroblasts,subtype,10,19983,GSM9237939,1,0.3,pooled,unc30_pooled_1182
+14,LUAD,Alveolar fibroblasts,fibroblasts,subtype,253,394097,GSM9237939,1,0.3,pooled,unc30_pooled_1183
+14,LUAD,Alveolar macrophages,macrophages,subtype,68,471640,GSM9237939,1,0.3,pooled,unc30_pooled_1184
+14,LUAD,Interstitial Mph perivascular,macrophages,subtype,16,26737,GSM9237939,1,0.3,pooled,unc30_pooled_1196
+14,LUAD,Monocyte-derived Mph,macrophages,subtype,4,8847,GSM9237939,1,0.3,pooled,unc30_pooled_1200
+14,LUAD,Myofibroblasts,fibroblasts,subtype,1,1299,GSM9237939,1,0.3,pooled,unc30_pooled_1202
+14,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,1,1217,GSM9237939,1,0.3,pooled,unc30_pooled_1205
+14,normal,AT2,AT2,subtype,147,419872,GSM9237937,1,0.3,pooled,unc30_pooled_1213
+14,normal,Adventitial fibroblasts,fibroblasts,subtype,7,11874,GSM9237937,1,0.3,pooled,unc30_pooled_1214
+14,normal,Alveolar fibroblasts,fibroblasts,subtype,74,273984,GSM9237937,1,0.3,pooled,unc30_pooled_1215
+14,normal,Alveolar macrophages,macrophages,subtype,107,754062,GSM9237937,1,0.3,pooled,unc30_pooled_1216
+14,normal,Interstitial Mph perivascular,macrophages,subtype,1,2049,GSM9237937,1,0.3,pooled,unc30_pooled_1227
+14,normal,Monocyte-derived Mph,macrophages,subtype,6,22021,GSM9237937,1,0.3,pooled,unc30_pooled_1231
+15,LUAD,AT2,AT2,subtype,307,908997,GSM9237942,1,0.3,pooled,unc30_pooled_1242
+15,LUAD,AT2 proliferating,AT2,subtype,1,5207,GSM9237942,1,0.3,pooled,unc30_pooled_1243
+15,LUAD,Adventitial fibroblasts,fibroblasts,subtype,48,108735,GSM9237942,1,0.3,pooled,unc30_pooled_1244
+15,LUAD,Alveolar fibroblasts,fibroblasts,subtype,174,273512,GSM9237942,1,0.3,pooled,unc30_pooled_1245
+15,LUAD,Alveolar macrophages,macrophages,subtype,76,549110,GSM9237942,1,0.3,pooled,unc30_pooled_1246
+15,LUAD,Interstitial Mph perivascular,macrophages,subtype,19,27376,GSM9237942,1,0.3,pooled,unc30_pooled_1264
+15,LUAD,Monocyte-derived Mph,macrophages,subtype,90,346394,GSM9237942,1,0.3,pooled,unc30_pooled_1269
+15,LUAD,Myofibroblasts,fibroblasts,subtype,5,5781,GSM9237942,1,0.3,pooled,unc30_pooled_1271
+15,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,238,668722,GSM9237942,1,0.3,pooled,unc30_pooled_1274
+15,MIA,AT2,AT2,subtype,405,1618268,GSM9237941,1,0.3,pooled,unc30_pooled_1286
+15,MIA,AT2 proliferating,AT2,subtype,2,12954,GSM9237941,1,0.3,pooled,unc30_pooled_1287
+15,MIA,Adventitial fibroblasts,fibroblasts,subtype,28,58628,GSM9237941,1,0.3,pooled,unc30_pooled_1288
+15,MIA,Alveolar Mph proliferating,macrophages,subtype,1,15875,GSM9237941,1,0.3,pooled,unc30_pooled_1289
+15,MIA,Alveolar fibroblasts,fibroblasts,subtype,531,913407,GSM9237941,1,0.3,pooled,unc30_pooled_1290
+15,MIA,Alveolar macrophages,macrophages,subtype,96,890698,GSM9237941,1,0.3,pooled,unc30_pooled_1291
+15,MIA,Interstitial Mph perivascular,macrophages,subtype,43,75026,GSM9237941,1,0.3,pooled,unc30_pooled_1306
+15,MIA,Monocyte-derived Mph,macrophages,subtype,5,12464,GSM9237941,1,0.3,pooled,unc30_pooled_1309
+15,MIA,Myofibroblasts,fibroblasts,subtype,5,6560,GSM9237941,1,0.3,pooled,unc30_pooled_1311
+15,MIA,Peribronchial fibroblasts,fibroblasts,subtype,7,20440,GSM9237941,1,0.3,pooled,unc30_pooled_1314
+15,normal,AT2,AT2,subtype,179,541234,GSM9237940,1,0.3,pooled,unc30_pooled_1322
+15,normal,Adventitial fibroblasts,fibroblasts,subtype,9,24211,GSM9237940,1,0.3,pooled,unc30_pooled_1323
+15,normal,Alveolar fibroblasts,fibroblasts,subtype,227,356369,GSM9237940,1,0.3,pooled,unc30_pooled_1324
+15,normal,Alveolar macrophages,macrophages,subtype,39,294033,GSM9237940,1,0.3,pooled,unc30_pooled_1325
+15,normal,Interstitial Mph perivascular,macrophages,subtype,9,13122,GSM9237940,1,0.3,pooled,unc30_pooled_1337
+15,normal,Monocyte-derived Mph,macrophages,subtype,4,7876,GSM9237940,1,0.3,pooled,unc30_pooled_1340
+15,normal,Myofibroblasts,fibroblasts,subtype,1,1187,GSM9237940,1,0.3,pooled,unc30_pooled_1342
+15,normal,Peribronchial fibroblasts,fibroblasts,subtype,1,4094,GSM9237940,1,0.3,pooled,unc30_pooled_1345
+16,AIS,AT2,AT2,subtype,441,1837550,GSM9237944,1,0.3,pooled,unc30_pooled_1353
+16,AIS,AT2 proliferating,AT2,subtype,1,5173,GSM9237944,1,0.3,pooled,unc30_pooled_1354
+16,AIS,Adventitial fibroblasts,fibroblasts,subtype,5,7585,GSM9237944,1,0.3,pooled,unc30_pooled_1355
+16,AIS,Alveolar fibroblasts,fibroblasts,subtype,509,729296,GSM9237944,1,0.3,pooled,unc30_pooled_1356
+16,AIS,Alveolar macrophages,macrophages,subtype,51,260116,GSM9237944,1,0.3,pooled,unc30_pooled_1357
+16,AIS,Monocyte-derived Mph,macrophages,subtype,9,38941,GSM9237944,1,0.3,pooled,unc30_pooled_1372
+16,AIS,Myofibroblasts,fibroblasts,subtype,12,15042,GSM9237944,1,0.3,pooled,unc30_pooled_1374
+16,LUAD,AT2,AT2,subtype,414,1254849,GSM9237945,1,0.3,pooled,unc30_pooled_1384
+16,LUAD,Adventitial fibroblasts,fibroblasts,subtype,5,16960,GSM9237945,1,0.3,pooled,unc30_pooled_1385
+16,LUAD,Alveolar fibroblasts,fibroblasts,subtype,249,439468,GSM9237945,1,0.3,pooled,unc30_pooled_1386
+16,LUAD,Alveolar macrophages,macrophages,subtype,37,269012,GSM9237945,1,0.3,pooled,unc30_pooled_1387
+16,LUAD,Interstitial Mph perivascular,macrophages,subtype,6,14350,GSM9237945,1,0.3,pooled,unc30_pooled_1399
+16,LUAD,Monocyte-derived Mph,macrophages,subtype,54,190428,GSM9237945,1,0.3,pooled,unc30_pooled_1403
+16,LUAD,Myofibroblasts,fibroblasts,subtype,3,4371,GSM9237945,1,0.3,pooled,unc30_pooled_1405
+16,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,15,66540,GSM9237945,1,0.3,pooled,unc30_pooled_1408
+16,normal,AT2,AT2,subtype,226,779492,GSM9237943,1,0.3,pooled,unc30_pooled_1416
+16,normal,AT2 proliferating,AT2,subtype,1,9951,GSM9237943,1,0.3,pooled,unc30_pooled_1417
+16,normal,Adventitial fibroblasts,fibroblasts,subtype,6,11074,GSM9237943,1,0.3,pooled,unc30_pooled_1418
+16,normal,Alveolar fibroblasts,fibroblasts,subtype,212,338699,GSM9237943,1,0.3,pooled,unc30_pooled_1419
+16,normal,Alveolar macrophages,macrophages,subtype,44,361225,GSM9237943,1,0.3,pooled,unc30_pooled_1420
+16,normal,Interstitial Mph perivascular,macrophages,subtype,5,6189,GSM9237943,1,0.3,pooled,unc30_pooled_1432
+16,normal,Monocyte-derived Mph,macrophages,subtype,13,49610,GSM9237943,1,0.3,pooled,unc30_pooled_1436
+16,normal,Myofibroblasts,fibroblasts,subtype,2,2452,GSM9237943,1,0.3,pooled,unc30_pooled_1438
+16,normal,Peribronchial fibroblasts,fibroblasts,subtype,1,2363,GSM9237943,1,0.3,pooled,unc30_pooled_1442
+17,AIS,AT2,AT2,subtype,1926,9855008,GSM9237947,1,0.3,pooled,unc30_pooled_1453
+17,AIS,AT2 proliferating,AT2,subtype,5,44790,GSM9237947,1,0.3,pooled,unc30_pooled_1454
+17,AIS,Adventitial fibroblasts,fibroblasts,subtype,69,162048,GSM9237947,1,0.3,pooled,unc30_pooled_1455
+17,AIS,Alveolar fibroblasts,fibroblasts,subtype,1211,2680071,GSM9237947,1,0.3,pooled,unc30_pooled_1456
+17,AIS,Alveolar macrophages,macrophages,subtype,170,2653323,GSM9237947,1,0.3,pooled,unc30_pooled_1457
+17,AIS,Interstitial Mph perivascular,macrophages,subtype,127,235131,GSM9237947,1,0.3,pooled,unc30_pooled_1471
+17,AIS,Monocyte-derived Mph,macrophages,subtype,23,141323,GSM9237947,1,0.3,pooled,unc30_pooled_1477
+17,AIS,Myofibroblasts,fibroblasts,subtype,12,18423,GSM9237947,1,0.3,pooled,unc30_pooled_1479
+17,AIS,Peribronchial fibroblasts,fibroblasts,subtype,11,40748,GSM9237947,1,0.3,pooled,unc30_pooled_1482
+17,LUAD,AT2,AT2,subtype,506,2448243,GSM9237948,1,0.3,pooled,unc30_pooled_1491
+17,LUAD,Adventitial fibroblasts,fibroblasts,subtype,178,505349,GSM9237948,1,0.3,pooled,unc30_pooled_1492
+17,LUAD,Alveolar Mph proliferating,macrophages,subtype,1,1953,GSM9237948,1,0.3,pooled,unc30_pooled_1493
+17,LUAD,Alveolar fibroblasts,fibroblasts,subtype,819,1889591,GSM9237948,1,0.3,pooled,unc30_pooled_1494
+17,LUAD,Alveolar macrophages,macrophages,subtype,102,621399,GSM9237948,1,0.3,pooled,unc30_pooled_1495
+17,LUAD,Interstitial Mph perivascular,macrophages,subtype,191,371858,GSM9237948,1,0.3,pooled,unc30_pooled_1511
+17,LUAD,Monocyte-derived Mph,macrophages,subtype,192,789376,GSM9237948,1,0.3,pooled,unc30_pooled_1516
+17,LUAD,Myofibroblasts,fibroblasts,subtype,6,7695,GSM9237948,1,0.3,pooled,unc30_pooled_1519
+17,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,78,179334,GSM9237948,1,0.3,pooled,unc30_pooled_1522
+17,normal,AT2,AT2,subtype,1232,4707824,GSM9237946,1,0.3,pooled,unc30_pooled_1537
+17,normal,AT2 proliferating,AT2,subtype,3,13765,GSM9237946,1,0.3,pooled,unc30_pooled_1538
+17,normal,Adventitial fibroblasts,fibroblasts,subtype,106,275852,GSM9237946,1,0.3,pooled,unc30_pooled_1539
+17,normal,Alveolar fibroblasts,fibroblasts,subtype,1257,2813285,GSM9237946,1,0.3,pooled,unc30_pooled_1540
+17,normal,Alveolar macrophages,macrophages,subtype,114,1219461,GSM9237946,1,0.3,pooled,unc30_pooled_1541
+17,normal,Interstitial Mph perivascular,macrophages,subtype,108,170178,GSM9237946,1,0.3,pooled,unc30_pooled_1557
+17,normal,Monocyte-derived Mph,macrophages,subtype,6,9964,GSM9237946,1,0.3,pooled,unc30_pooled_1562
+17,normal,Myofibroblasts,fibroblasts,subtype,2,2426,GSM9237946,1,0.3,pooled,unc30_pooled_1565
+17,normal,Peribronchial fibroblasts,fibroblasts,subtype,4,7319,GSM9237946,1,0.3,pooled,unc30_pooled_1568
+18,LUAD,AT2,AT2,subtype,1370,6695419,GSM9237951,1,0.3,pooled,unc30_pooled_1577
+18,LUAD,AT2 proliferating,AT2,subtype,5,20716,GSM9237951,1,0.3,pooled,unc30_pooled_1578
+18,LUAD,Adventitial fibroblasts,fibroblasts,subtype,197,485664,GSM9237951,1,0.3,pooled,unc30_pooled_1579
+18,LUAD,Alveolar fibroblasts,fibroblasts,subtype,1376,2661825,GSM9237951,1,0.3,pooled,unc30_pooled_1580
+18,LUAD,Alveolar macrophages,macrophages,subtype,187,1918293,GSM9237951,1,0.3,pooled,unc30_pooled_1581
+18,LUAD,Interstitial Mph perivascular,macrophages,subtype,23,39902,GSM9237951,1,0.3,pooled,unc30_pooled_1597
+18,LUAD,Monocyte-derived Mph,macrophages,subtype,129,396604,GSM9237951,1,0.3,pooled,unc30_pooled_1602
+18,LUAD,Myofibroblasts,fibroblasts,subtype,189,280246,GSM9237951,1,0.3,pooled,unc30_pooled_1604
+18,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,1,2407,GSM9237951,1,0.3,pooled,unc30_pooled_1608
+18,MIA,AT2,AT2,subtype,1382,7291791,GSM9237950,1,0.3,pooled,unc30_pooled_1619
+18,MIA,AT2 proliferating,AT2,subtype,3,29542,GSM9237950,1,0.3,pooled,unc30_pooled_1620
+18,MIA,Adventitial fibroblasts,fibroblasts,subtype,75,194410,GSM9237950,1,0.3,pooled,unc30_pooled_1621
+18,MIA,Alveolar fibroblasts,fibroblasts,subtype,1369,2782016,GSM9237950,1,0.3,pooled,unc30_pooled_1622
+18,MIA,Alveolar macrophages,macrophages,subtype,203,1951555,GSM9237950,1,0.3,pooled,unc30_pooled_1623
+18,MIA,Interstitial Mph perivascular,macrophages,subtype,24,42893,GSM9237950,1,0.3,pooled,unc30_pooled_1636
+18,MIA,Monocyte-derived Mph,macrophages,subtype,72,266947,GSM9237950,1,0.3,pooled,unc30_pooled_1641
+18,MIA,Myofibroblasts,fibroblasts,subtype,255,384542,GSM9237950,1,0.3,pooled,unc30_pooled_1643
+18,MIA,Peribronchial fibroblasts,fibroblasts,subtype,3,10420,GSM9237950,1,0.3,pooled,unc30_pooled_1646
+18,normal,AT2,AT2,subtype,1398,2639645,GSM9237949,1,0.3,pooled,unc30_pooled_1656
+18,normal,AT2 proliferating,AT2,subtype,2,5200,GSM9237949,1,0.3,pooled,unc30_pooled_1657
+18,normal,Adventitial fibroblasts,fibroblasts,subtype,37,77109,GSM9237949,1,0.3,pooled,unc30_pooled_1658
+18,normal,Alveolar fibroblasts,fibroblasts,subtype,1374,2233555,GSM9237949,1,0.3,pooled,unc30_pooled_1659
+18,normal,Alveolar macrophages,macrophages,subtype,293,1356858,GSM9237949,1,0.3,pooled,unc30_pooled_1660
+18,normal,Interstitial Mph perivascular,macrophages,subtype,7,8976,GSM9237949,1,0.3,pooled,unc30_pooled_1671
+18,normal,Monocyte-derived Mph,macrophages,subtype,22,52708,GSM9237949,1,0.3,pooled,unc30_pooled_1675
+18,normal,Myofibroblasts,fibroblasts,subtype,69,96067,GSM9237949,1,0.3,pooled,unc30_pooled_1678
+19,AIS,AT2,AT2,subtype,1745,7807238,GSM9237953,1,0.3,pooled,unc30_pooled_1690
+19,AIS,AT2 proliferating,AT2,subtype,5,71248,GSM9237953,1,0.3,pooled,unc30_pooled_1691
+19,AIS,Adventitial fibroblasts,fibroblasts,subtype,123,393537,GSM9237953,1,0.3,pooled,unc30_pooled_1692
+19,AIS,Alveolar fibroblasts,fibroblasts,subtype,1278,2788973,GSM9237953,1,0.3,pooled,unc30_pooled_1693
+19,AIS,Alveolar macrophages,macrophages,subtype,209,2136343,GSM9237953,1,0.3,pooled,unc30_pooled_1694
+19,AIS,Interstitial Mph perivascular,macrophages,subtype,100,211375,GSM9237953,1,0.3,pooled,unc30_pooled_1710
+19,AIS,Monocyte-derived Mph,macrophages,subtype,48,169573,GSM9237953,1,0.3,pooled,unc30_pooled_1714
+19,AIS,Myofibroblasts,fibroblasts,subtype,19,28810,GSM9237953,1,0.3,pooled,unc30_pooled_1717
+19,AIS,Peribronchial fibroblasts,fibroblasts,subtype,2,3871,GSM9237953,1,0.3,pooled,unc30_pooled_1721
+19,LUAD,AT2,AT2,subtype,2560,11600603,GSM9237954,1,0.3,pooled,unc30_pooled_1729
+19,LUAD,AT2 proliferating,AT2,subtype,6,90551,GSM9237954,1,0.3,pooled,unc30_pooled_1730
+19,LUAD,Adventitial fibroblasts,fibroblasts,subtype,164,554036,GSM9237954,1,0.3,pooled,unc30_pooled_1731
+19,LUAD,Alveolar Mph proliferating,macrophages,subtype,1,27143,GSM9237954,1,0.3,pooled,unc30_pooled_1732
+19,LUAD,Alveolar fibroblasts,fibroblasts,subtype,1765,3989978,GSM9237954,1,0.3,pooled,unc30_pooled_1733
+19,LUAD,Alveolar macrophages,macrophages,subtype,315,3960432,GSM9237954,1,0.3,pooled,unc30_pooled_1734
+19,LUAD,Interstitial Mph perivascular,macrophages,subtype,152,307192,GSM9237954,1,0.3,pooled,unc30_pooled_1750
+19,LUAD,Monocyte-derived Mph,macrophages,subtype,60,284602,GSM9237954,1,0.3,pooled,unc30_pooled_1755
+19,LUAD,Myofibroblasts,fibroblasts,subtype,26,40662,GSM9237954,1,0.3,pooled,unc30_pooled_1757
+19,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,19,57513,GSM9237954,1,0.3,pooled,unc30_pooled_1760
+19,normal,AT2,AT2,subtype,610,3399730,GSM9237952,1,0.3,pooled,unc30_pooled_1771
+19,normal,AT2 proliferating,AT2,subtype,1,10465,GSM9237952,1,0.3,pooled,unc30_pooled_1772
+19,normal,Adventitial fibroblasts,fibroblasts,subtype,54,265588,GSM9237952,1,0.3,pooled,unc30_pooled_1773
+19,normal,Alveolar fibroblasts,fibroblasts,subtype,500,1476751,GSM9237952,1,0.3,pooled,unc30_pooled_1774
+19,normal,Alveolar macrophages,macrophages,subtype,127,2535288,GSM9237952,1,0.3,pooled,unc30_pooled_1775
+19,normal,Interstitial Mph perivascular,macrophages,subtype,43,141630,GSM9237952,1,0.3,pooled,unc30_pooled_1787
+19,normal,Monocyte-derived Mph,macrophages,subtype,29,97324,GSM9237952,1,0.3,pooled,unc30_pooled_1791
+19,normal,Myofibroblasts,fibroblasts,subtype,16,29681,GSM9237952,1,0.3,pooled,unc30_pooled_1793
+20,AAH,AT2,AT2,subtype,1278,4721202,GSM9237956,1,0.3,pooled,unc30_pooled_1805
+20,AAH,AT2 proliferating,AT2,subtype,2,26296,GSM9237956,1,0.3,pooled,unc30_pooled_1806
+20,AAH,Adventitial fibroblasts,fibroblasts,subtype,126,404879,GSM9237956,1,0.3,pooled,unc30_pooled_1807
+20,AAH,Alveolar Mph proliferating,macrophages,subtype,1,4405,GSM9237956,1,0.3,pooled,unc30_pooled_1808
+20,AAH,Alveolar fibroblasts,fibroblasts,subtype,1091,2913108,GSM9237956,1,0.3,pooled,unc30_pooled_1809
+20,AAH,Alveolar macrophages,macrophages,subtype,206,3236675,GSM9237956,1,0.3,pooled,unc30_pooled_1810
+20,AAH,Interstitial Mph perivascular,macrophages,subtype,99,215755,GSM9237956,1,0.3,pooled,unc30_pooled_1825
+20,AAH,Monocyte-derived Mph,macrophages,subtype,25,80475,GSM9237956,1,0.3,pooled,unc30_pooled_1830
+20,AAH,Myofibroblasts,fibroblasts,subtype,9,14586,GSM9237956,1,0.3,pooled,unc30_pooled_1832
+20,AAH,Peribronchial fibroblasts,fibroblasts,subtype,14,46288,GSM9237956,1,0.3,pooled,unc30_pooled_1835
+20,LUAD,AT2,AT2,subtype,1091,3845963,GSM9237957,1,0.3,pooled,unc30_pooled_1845
+20,LUAD,AT2 proliferating,AT2,subtype,3,11217,GSM9237957,1,0.3,pooled,unc30_pooled_1846
+20,LUAD,Adventitial fibroblasts,fibroblasts,subtype,40,110459,GSM9237957,1,0.3,pooled,unc30_pooled_1847
+20,LUAD,Alveolar fibroblasts,fibroblasts,subtype,1086,2497749,GSM9237957,1,0.3,pooled,unc30_pooled_1848
+20,LUAD,Alveolar macrophages,macrophages,subtype,154,1499585,GSM9237957,1,0.3,pooled,unc30_pooled_1849
+20,LUAD,Interstitial Mph perivascular,macrophages,subtype,84,159375,GSM9237957,1,0.3,pooled,unc30_pooled_1865
+20,LUAD,Monocyte-derived Mph,macrophages,subtype,21,55174,GSM9237957,1,0.3,pooled,unc30_pooled_1870
+20,LUAD,Myofibroblasts,fibroblasts,subtype,3,4541,GSM9237957,1,0.3,pooled,unc30_pooled_1872
+20,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,389,1209067,GSM9237957,1,0.3,pooled,unc30_pooled_1876
+20,normal,AT2,AT2,subtype,195,524603,GSM9237955,1,0.3,pooled,unc30_pooled_1885
+20,normal,Adventitial fibroblasts,fibroblasts,subtype,7,11367,GSM9237955,1,0.3,pooled,unc30_pooled_1886
+20,normal,Alveolar fibroblasts,fibroblasts,subtype,172,346423,GSM9237955,1,0.3,pooled,unc30_pooled_1887
+20,normal,Alveolar macrophages,macrophages,subtype,32,379872,GSM9237955,1,0.3,pooled,unc30_pooled_1888
+20,normal,Interstitial Mph perivascular,macrophages,subtype,7,12627,GSM9237955,1,0.3,pooled,unc30_pooled_1899
+20,normal,Monocyte-derived Mph,macrophages,subtype,9,16392,GSM9237955,1,0.3,pooled,unc30_pooled_1903
+20,normal,Myofibroblasts,fibroblasts,subtype,5,6845,GSM9237955,1,0.3,pooled,unc30_pooled_1905
+21,AIS,AT2,AT2,subtype,2946,12112519,GSM9237959;GSM9237960,2,0.3,pooled,unc30_pooled_1915
+21,AIS,AT2 proliferating,AT2,subtype,5,28288,GSM9237959,1,0.3,pooled,unc30_pooled_1916
+21,AIS,Adventitial fibroblasts,fibroblasts,subtype,116,445921,GSM9237959;GSM9237960,2,0.3,pooled,unc30_pooled_1917
+21,AIS,Alveolar fibroblasts,fibroblasts,subtype,1773,4481929,GSM9237959;GSM9237960,2,0.3,pooled,unc30_pooled_1918
+21,AIS,Alveolar macrophages,macrophages,subtype,1012,15649436,GSM9237959;GSM9237960,2,0.3,pooled,unc30_pooled_1919
+21,AIS,Interstitial Mph perivascular,macrophages,subtype,103,212286,GSM9237959;GSM9237960,2,0.3,pooled,unc30_pooled_1935
+21,AIS,Monocyte-derived Mph,macrophages,subtype,92,519032,GSM9237959;GSM9237960,2,0.3,pooled,unc30_pooled_1939
+21,AIS,Myofibroblasts,fibroblasts,subtype,51,92979,GSM9237959;GSM9237960,2,0.3,pooled,unc30_pooled_1941
+21,AIS,Peribronchial fibroblasts,fibroblasts,subtype,12,39152,GSM9237959;GSM9237960,2,0.3,pooled,unc30_pooled_1945
+21,LUAD,AT2,AT2,subtype,212,583979,GSM9237961,1,0.3,pooled,unc30_pooled_1956
+21,LUAD,AT2 proliferating,AT2,subtype,4,26898,GSM9237961,1,0.3,pooled,unc30_pooled_1957
+21,LUAD,Adventitial fibroblasts,fibroblasts,subtype,12,44444,GSM9237961,1,0.3,pooled,unc30_pooled_1958
+21,LUAD,Alveolar fibroblasts,fibroblasts,subtype,77,159994,GSM9237961,1,0.3,pooled,unc30_pooled_1959
+21,LUAD,Alveolar macrophages,macrophages,subtype,22,146633,GSM9237961,1,0.3,pooled,unc30_pooled_1960
+21,LUAD,Interstitial Mph perivascular,macrophages,subtype,5,10882,GSM9237961,1,0.3,pooled,unc30_pooled_1974
+21,LUAD,Monocyte-derived Mph,macrophages,subtype,71,215060,GSM9237961,1,0.3,pooled,unc30_pooled_1980
+21,LUAD,Myofibroblasts,fibroblasts,subtype,1,3740,GSM9237961,1,0.3,pooled,unc30_pooled_1982
+21,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,142,408454,GSM9237961,1,0.3,pooled,unc30_pooled_1985
+21,normal,AT2,AT2,subtype,391,1701323,GSM9237958,1,0.3,pooled,unc30_pooled_1994
+21,normal,Adventitial fibroblasts,fibroblasts,subtype,23,68678,GSM9237958,1,0.3,pooled,unc30_pooled_1995
+21,normal,Alveolar fibroblasts,fibroblasts,subtype,395,881279,GSM9237958,1,0.3,pooled,unc30_pooled_1996
+21,normal,Alveolar macrophages,macrophages,subtype,138,1004609,GSM9237958,1,0.3,pooled,unc30_pooled_1997
+21,normal,Interstitial Mph perivascular,macrophages,subtype,3,4998,GSM9237958,1,0.3,pooled,unc30_pooled_2009
+21,normal,Monocyte-derived Mph,macrophages,subtype,24,69896,GSM9237958,1,0.3,pooled,unc30_pooled_2013
+21,normal,Myofibroblasts,fibroblasts,subtype,2,3389,GSM9237958,1,0.3,pooled,unc30_pooled_2015
+21,normal,Peribronchial fibroblasts,fibroblasts,subtype,3,11410,GSM9237958,1,0.3,pooled,unc30_pooled_2017
+22,AAH,AT2,AT2,subtype,563,2113887,GSM9237963,1,0.3,pooled,unc30_pooled_2025
+22,AAH,Adventitial fibroblasts,fibroblasts,subtype,19,51910,GSM9237963,1,0.3,pooled,unc30_pooled_2026
+22,AAH,Alveolar Mph proliferating,macrophages,subtype,2,28927,GSM9237963,1,0.3,pooled,unc30_pooled_2027
+22,AAH,Alveolar fibroblasts,fibroblasts,subtype,606,1315945,GSM9237963,1,0.3,pooled,unc30_pooled_2028
+22,AAH,Alveolar macrophages,macrophages,subtype,365,4467498,GSM9237963,1,0.3,pooled,unc30_pooled_2029
+22,AAH,Interstitial Mph perivascular,macrophages,subtype,62,130682,GSM9237963,1,0.3,pooled,unc30_pooled_2041
+22,AAH,Monocyte-derived Mph,macrophages,subtype,8,32341,GSM9237963,1,0.3,pooled,unc30_pooled_2044
+22,AAH,Myofibroblasts,fibroblasts,subtype,12,17788,GSM9237963,1,0.3,pooled,unc30_pooled_2046
+22,AAH,Peribronchial fibroblasts,fibroblasts,subtype,1,1800,GSM9237963,1,0.3,pooled,unc30_pooled_2049
+22,AIS,AT2,AT2,subtype,815,3335702,GSM9237964,1,0.3,pooled,unc30_pooled_2060
+22,AIS,Adventitial fibroblasts,fibroblasts,subtype,63,215507,GSM9237964,1,0.3,pooled,unc30_pooled_2061
+22,AIS,Alveolar fibroblasts,fibroblasts,subtype,629,1564057,GSM9237964,1,0.3,pooled,unc30_pooled_2062
+22,AIS,Alveolar macrophages,macrophages,subtype,416,5381800,GSM9237964,1,0.3,pooled,unc30_pooled_2063
+22,AIS,Interstitial Mph perivascular,macrophages,subtype,65,144891,GSM9237964,1,0.3,pooled,unc30_pooled_2077
+22,AIS,Monocyte-derived Mph,macrophages,subtype,26,142439,GSM9237964,1,0.3,pooled,unc30_pooled_2082
+22,AIS,Myofibroblasts,fibroblasts,subtype,19,32901,GSM9237964,1,0.3,pooled,unc30_pooled_2084
+22,LUAD,AT2,AT2,subtype,1193,6277231,GSM9237965,1,0.3,pooled,unc30_pooled_2096
+22,LUAD,AT2 proliferating,AT2,subtype,1,17437,GSM9237965,1,0.3,pooled,unc30_pooled_2097
+22,LUAD,Adventitial fibroblasts,fibroblasts,subtype,70,168132,GSM9237965,1,0.3,pooled,unc30_pooled_2098
+22,LUAD,Alveolar fibroblasts,fibroblasts,subtype,824,1996374,GSM9237965,1,0.3,pooled,unc30_pooled_2099
+22,LUAD,Alveolar macrophages,macrophages,subtype,362,4785011,GSM9237965,1,0.3,pooled,unc30_pooled_2100
+22,LUAD,Interstitial Mph perivascular,macrophages,subtype,73,165006,GSM9237965,1,0.3,pooled,unc30_pooled_2115
+22,LUAD,Monocyte-derived Mph,macrophages,subtype,42,237466,GSM9237965,1,0.3,pooled,unc30_pooled_2119
+22,LUAD,Myofibroblasts,fibroblasts,subtype,17,31264,GSM9237965,1,0.3,pooled,unc30_pooled_2121
+22,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,3,6378,GSM9237965,1,0.3,pooled,unc30_pooled_2124
+22,normal,AT2,AT2,subtype,441,1750976,GSM9237962,1,0.3,pooled,unc30_pooled_2136
+22,normal,Adventitial fibroblasts,fibroblasts,subtype,17,49028,GSM9237962,1,0.3,pooled,unc30_pooled_2137
+22,normal,Alveolar fibroblasts,fibroblasts,subtype,430,1110999,GSM9237962,1,0.3,pooled,unc30_pooled_2138
+22,normal,Alveolar macrophages,macrophages,subtype,197,2230551,GSM9237962,1,0.3,pooled,unc30_pooled_2139
+22,normal,Interstitial Mph perivascular,macrophages,subtype,56,115932,GSM9237962,1,0.3,pooled,unc30_pooled_2154
+22,normal,Monocyte-derived Mph,macrophages,subtype,3,9250,GSM9237962,1,0.3,pooled,unc30_pooled_2157
+22,normal,Myofibroblasts,fibroblasts,subtype,5,10803,GSM9237962,1,0.3,pooled,unc30_pooled_2159
+23,AIS,AT2,AT2,subtype,6904,29576111,GSM9237967;GSM9237968,2,0.3,pooled,unc30_pooled_2170
+23,AIS,AT2 proliferating,AT2,subtype,3,22830,GSM9237967;GSM9237968,2,0.3,pooled,unc30_pooled_2171
+23,AIS,Adventitial fibroblasts,fibroblasts,subtype,449,1634737,GSM9237967;GSM9237968,2,0.3,pooled,unc30_pooled_2172
+23,AIS,Alveolar fibroblasts,fibroblasts,subtype,6454,18535159,GSM9237967;GSM9237968,2,0.3,pooled,unc30_pooled_2173
+23,AIS,Alveolar macrophages,macrophages,subtype,409,3677774,GSM9237967;GSM9237968,2,0.3,pooled,unc30_pooled_2174
+23,AIS,Interstitial Mph perivascular,macrophages,subtype,127,302988,GSM9237967;GSM9237968,2,0.3,pooled,unc30_pooled_2189
+23,AIS,Monocyte-derived Mph,macrophages,subtype,782,3134147,GSM9237967;GSM9237968,2,0.3,pooled,unc30_pooled_2196
+23,AIS,Myofibroblasts,fibroblasts,subtype,21,28834,GSM9237967;GSM9237968,2,0.3,pooled,unc30_pooled_2198
+23,AIS,Peribronchial fibroblasts,fibroblasts,subtype,42,124199,GSM9237967;GSM9237968,2,0.3,pooled,unc30_pooled_2202
+23,LUAD,AT2,AT2,subtype,3436,14043459,GSM9237969,1,0.3,pooled,unc30_pooled_2218
+23,LUAD,AT2 proliferating,AT2,subtype,7,86053,GSM9237969,1,0.3,pooled,unc30_pooled_2219
+23,LUAD,Adventitial fibroblasts,fibroblasts,subtype,96,577702,GSM9237969,1,0.3,pooled,unc30_pooled_2220
+23,LUAD,Alveolar fibroblasts,fibroblasts,subtype,4006,10944612,GSM9237969,1,0.3,pooled,unc30_pooled_2221
+23,LUAD,Alveolar macrophages,macrophages,subtype,181,1581444,GSM9237969,1,0.3,pooled,unc30_pooled_2222
+23,LUAD,Interstitial Mph perivascular,macrophages,subtype,78,167170,GSM9237969,1,0.3,pooled,unc30_pooled_2236
+23,LUAD,Monocyte-derived Mph,macrophages,subtype,331,1302385,GSM9237969,1,0.3,pooled,unc30_pooled_2241
+23,LUAD,Myofibroblasts,fibroblasts,subtype,40,60998,GSM9237969,1,0.3,pooled,unc30_pooled_2243
+23,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,69,254993,GSM9237969,1,0.3,pooled,unc30_pooled_2246
+23,normal,AT2,AT2,subtype,1037,4052527,GSM9237966,1,0.3,pooled,unc30_pooled_2256
+23,normal,Adventitial fibroblasts,fibroblasts,subtype,45,141240,GSM9237966,1,0.3,pooled,unc30_pooled_2257
+23,normal,Alveolar fibroblasts,fibroblasts,subtype,855,2645466,GSM9237966,1,0.3,pooled,unc30_pooled_2258
+23,normal,Alveolar macrophages,macrophages,subtype,51,449912,GSM9237966,1,0.3,pooled,unc30_pooled_2259
+23,normal,Interstitial Mph perivascular,macrophages,subtype,6,14343,GSM9237966,1,0.3,pooled,unc30_pooled_2270
+23,normal,Monocyte-derived Mph,macrophages,subtype,62,231028,GSM9237966,1,0.3,pooled,unc30_pooled_2274
+24,AAH,AT2,AT2,subtype,2264,35427847,GSM9237971,1,0.3,pooled,unc30_pooled_2286
+24,AAH,AT2 proliferating,AT2,subtype,3,21810,GSM9237971,1,0.3,pooled,unc30_pooled_2287
+24,AAH,Adventitial fibroblasts,fibroblasts,subtype,73,480633,GSM9237971,1,0.3,pooled,unc30_pooled_2288
+24,AAH,Alveolar fibroblasts,fibroblasts,subtype,699,3339308,GSM9237971,1,0.3,pooled,unc30_pooled_2289
+24,AAH,Alveolar macrophages,macrophages,subtype,43,780582,GSM9237971,1,0.3,pooled,unc30_pooled_2290
+24,AAH,Interstitial Mph perivascular,macrophages,subtype,30,138609,GSM9237971,1,0.3,pooled,unc30_pooled_2303
+24,AAH,Monocyte-derived Mph,macrophages,subtype,213,1986866,GSM9237971,1,0.3,pooled,unc30_pooled_2309
+24,AAH,Myofibroblasts,fibroblasts,subtype,4,18911,GSM9237971,1,0.3,pooled,unc30_pooled_2311
+24,AAH,Peribronchial fibroblasts,fibroblasts,subtype,4,9320,GSM9237971,1,0.3,pooled,unc30_pooled_2314
+24,LUAD,AT2,AT2,subtype,8316,115063849,GSM9237972,1,0.3,pooled,unc30_pooled_2323
+24,LUAD,AT2 proliferating,AT2,subtype,153,6108737,GSM9237972,1,0.3,pooled,unc30_pooled_2324
+24,LUAD,Adventitial fibroblasts,fibroblasts,subtype,26,136758,GSM9237972,1,0.3,pooled,unc30_pooled_2325
+24,LUAD,Alveolar fibroblasts,fibroblasts,subtype,2592,20214466,GSM9237972,1,0.3,pooled,unc30_pooled_2326
+24,LUAD,Alveolar macrophages,macrophages,subtype,1620,31405018,GSM9237972,1,0.3,pooled,unc30_pooled_2327
+24,LUAD,Interstitial Mph perivascular,macrophages,subtype,21,61100,GSM9237972,1,0.3,pooled,unc30_pooled_2342
+24,LUAD,Monocyte-derived Mph,macrophages,subtype,146,1569276,GSM9237972,1,0.3,pooled,unc30_pooled_2347
+24,LUAD,Myofibroblasts,fibroblasts,subtype,1,2469,GSM9237972,1,0.3,pooled,unc30_pooled_2349
+24,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,1428,13627917,GSM9237972,1,0.3,pooled,unc30_pooled_2352
+24,normal,AT2,AT2,subtype,1862,27012734,GSM9237970,1,0.3,pooled,unc30_pooled_2360
+24,normal,AT2 proliferating,AT2,subtype,1,28494,GSM9237970,1,0.3,pooled,unc30_pooled_2361
+24,normal,Adventitial fibroblasts,fibroblasts,subtype,27,174221,GSM9237970,1,0.3,pooled,unc30_pooled_2362
+24,normal,Alveolar fibroblasts,fibroblasts,subtype,575,2388860,GSM9237970,1,0.3,pooled,unc30_pooled_2363
+24,normal,Alveolar macrophages,macrophages,subtype,52,1447625,GSM9237970,1,0.3,pooled,unc30_pooled_2364
+24,normal,Interstitial Mph perivascular,macrophages,subtype,33,120265,GSM9237970,1,0.3,pooled,unc30_pooled_2377
+24,normal,Monocyte-derived Mph,macrophages,subtype,94,713055,GSM9237970,1,0.3,pooled,unc30_pooled_2382
+24,normal,Myofibroblasts,fibroblasts,subtype,2,6661,GSM9237970,1,0.3,pooled,unc30_pooled_2384
+24,normal,Peribronchial fibroblasts,fibroblasts,subtype,5,22593,GSM9237970,1,0.3,pooled,unc30_pooled_2387
+25,AAH,AT2,AT2,subtype,457,1826452,GSM9237974,1,0.3,pooled,unc30_pooled_2396
+25,AAH,Adventitial fibroblasts,fibroblasts,subtype,3,29094,GSM9237974,1,0.3,pooled,unc30_pooled_2397
+25,AAH,Alveolar fibroblasts,fibroblasts,subtype,490,1104765,GSM9237974,1,0.3,pooled,unc30_pooled_2398
+25,AAH,Alveolar macrophages,macrophages,subtype,53,271043,GSM9237974,1,0.3,pooled,unc30_pooled_2399
+25,AAH,Interstitial Mph perivascular,macrophages,subtype,17,32166,GSM9237974,1,0.3,pooled,unc30_pooled_2410
+25,AAH,Monocyte-derived Mph,macrophages,subtype,31,168243,GSM9237974,1,0.3,pooled,unc30_pooled_2414
+25,AAH,Myofibroblasts,fibroblasts,subtype,1,1987,GSM9237974,1,0.3,pooled,unc30_pooled_2416
+25,AAH,Peribronchial fibroblasts,fibroblasts,subtype,11,42670,GSM9237974,1,0.3,pooled,unc30_pooled_2419
+25,LUAD,AT2,AT2,subtype,430,1951019,GSM9237975,1,0.3,pooled,unc30_pooled_2425
+25,LUAD,AT2 proliferating,AT2,subtype,4,12465,GSM9237975,1,0.3,pooled,unc30_pooled_2426
+25,LUAD,Adventitial fibroblasts,fibroblasts,subtype,6,9449,GSM9237975,1,0.3,pooled,unc30_pooled_2427
+25,LUAD,Alveolar Mph proliferating,macrophages,subtype,4,43747,GSM9237975,1,0.3,pooled,unc30_pooled_2428
+25,LUAD,Alveolar fibroblasts,fibroblasts,subtype,382,1207484,GSM9237975,1,0.3,pooled,unc30_pooled_2429
+25,LUAD,Alveolar macrophages,macrophages,subtype,220,1304430,GSM9237975,1,0.3,pooled,unc30_pooled_2430
+25,LUAD,Interstitial Mph perivascular,macrophages,subtype,29,56270,GSM9237975,1,0.3,pooled,unc30_pooled_2445
+25,LUAD,Monocyte-derived Mph,macrophages,subtype,194,728590,GSM9237975,1,0.3,pooled,unc30_pooled_2451
+25,LUAD,Myofibroblasts,fibroblasts,subtype,15,27988,GSM9237975,1,0.3,pooled,unc30_pooled_2454
+25,LUAD,Peribronchial fibroblasts,fibroblasts,subtype,1157,4234477,GSM9237975,1,0.3,pooled,unc30_pooled_2457
+25,normal,AT2,AT2,subtype,1331,5964365,GSM9237973,1,0.3,pooled,unc30_pooled_2467
+25,normal,Adventitial fibroblasts,fibroblasts,subtype,48,98443,GSM9237973,1,0.3,pooled,unc30_pooled_2468
+25,normal,Alveolar fibroblasts,fibroblasts,subtype,1544,3241854,GSM9237973,1,0.3,pooled,unc30_pooled_2469
+25,normal,Alveolar macrophages,macrophages,subtype,102,642893,GSM9237973,1,0.3,pooled,unc30_pooled_2470
+25,normal,Interstitial Mph perivascular,macrophages,subtype,36,72841,GSM9237973,1,0.3,pooled,unc30_pooled_2485
+25,normal,Monocyte-derived Mph,macrophages,subtype,120,612066,GSM9237973,1,0.3,pooled,unc30_pooled_2490
+25,normal,Myofibroblasts,fibroblasts,subtype,22,37573,GSM9237973,1,0.3,pooled,unc30_pooled_2492
+25,normal,Peribronchial fibroblasts,fibroblasts,subtype,18,72425,GSM9237973,1,0.3,pooled,unc30_pooled_2496
+3,AIS,__broad__,AT2,broad,773,1793891,GSM9237902,1,0.3,pooled,unc30_pooled_2505
+3,AIS,__broad__,fibroblasts,broad,206,323679,GSM9237902,1,0.3,pooled,unc30_pooled_2506
+3,AIS,__broad__,macrophages,broad,87,199695,GSM9237902,1,0.3,pooled,unc30_pooled_2507
+3,LUAD,__broad__,AT2,broad,344,1086108,GSM9237903,1,0.3,pooled,unc30_pooled_2508
+3,LUAD,__broad__,fibroblasts,broad,137,213333,GSM9237903,1,0.3,pooled,unc30_pooled_2509
+3,LUAD,__broad__,macrophages,broad,56,150787,GSM9237903,1,0.3,pooled,unc30_pooled_2510
+3,normal,__broad__,AT2,broad,169,301251,GSM9237901,1,0.3,pooled,unc30_pooled_2511
+3,normal,__broad__,fibroblasts,broad,148,222605,GSM9237901,1,0.3,pooled,unc30_pooled_2512
+3,normal,__broad__,macrophages,broad,56,119562,GSM9237901,1,0.3,pooled,unc30_pooled_2513
+4,AAH,__broad__,AT2,broad,3308,14635588,GSM9237906;GSM9237907,2,0.3,pooled,unc30_pooled_2514
+4,AAH,__broad__,fibroblasts,broad,1756,4102629,GSM9237906;GSM9237907,2,0.3,pooled,unc30_pooled_2515
+4,AAH,__broad__,macrophages,broad,857,8835128,GSM9237906;GSM9237907,2,0.3,pooled,unc30_pooled_2516
+4,LUAD,__broad__,AT2,broad,5846,32938824,GSM9237908,1,0.3,pooled,unc30_pooled_2517
+4,LUAD,__broad__,fibroblasts,broad,3332,9911509,GSM9237908,1,0.3,pooled,unc30_pooled_2518
+4,LUAD,__broad__,macrophages,broad,1587,16856673,GSM9237908,1,0.3,pooled,unc30_pooled_2519
+4,normal,__broad__,AT2,broad,7567,32331515,GSM9237904;GSM9237905,2,0.3,pooled,unc30_pooled_2520
+4,normal,__broad__,fibroblasts,broad,4497,11605496,GSM9237904;GSM9237905,2,0.3,pooled,unc30_pooled_2521
+4,normal,__broad__,macrophages,broad,2718,26318476,GSM9237904;GSM9237905,2,0.3,pooled,unc30_pooled_2522
+5,AIS,__broad__,AT2,broad,244,1031631,GSM9237910,1,0.3,pooled,unc30_pooled_2523
+5,AIS,__broad__,fibroblasts,broad,256,478785,GSM9237910,1,0.3,pooled,unc30_pooled_2524
+5,AIS,__broad__,macrophages,broad,58,338188,GSM9237910,1,0.3,pooled,unc30_pooled_2525
+5,LUAD,__broad__,AT2,broad,1575,8541195,GSM9237911,1,0.3,pooled,unc30_pooled_2526
+5,LUAD,__broad__,fibroblasts,broad,892,2919409,GSM9237911,1,0.3,pooled,unc30_pooled_2527
+5,LUAD,__broad__,macrophages,broad,596,3138460,GSM9237911,1,0.3,pooled,unc30_pooled_2528
+5,normal,__broad__,AT2,broad,1786,6351714,GSM9237909,1,0.3,pooled,unc30_pooled_2529
+5,normal,__broad__,fibroblasts,broad,3173,7169764,GSM9237909,1,0.3,pooled,unc30_pooled_2530
+5,normal,__broad__,macrophages,broad,635,5412507,GSM9237909,1,0.3,pooled,unc30_pooled_2531
+6,AAH,__broad__,AT2,broad,422,1197670,GSM9237913,1,0.3,pooled,unc30_pooled_2532
+6,AAH,__broad__,fibroblasts,broad,317,727157,GSM9237913,1,0.3,pooled,unc30_pooled_2533
+6,AAH,__broad__,macrophages,broad,98,711524,GSM9237913,1,0.3,pooled,unc30_pooled_2534
+6,LUAD,__broad__,AT2,broad,544,2516282,GSM9237914,1,0.3,pooled,unc30_pooled_2535
+6,LUAD,__broad__,fibroblasts,broad,433,1193515,GSM9237914,1,0.3,pooled,unc30_pooled_2536
+6,LUAD,__broad__,macrophages,broad,338,2747167,GSM9237914,1,0.3,pooled,unc30_pooled_2537
+6,normal,__broad__,AT2,broad,147,437640,GSM9237912,1,0.3,pooled,unc30_pooled_2538
+6,normal,__broad__,fibroblasts,broad,148,354190,GSM9237912,1,0.3,pooled,unc30_pooled_2539
+6,normal,__broad__,macrophages,broad,117,875395,GSM9237912,1,0.3,pooled,unc30_pooled_2540
+7,LUAD,__broad__,AT2,broad,2059,9353314,GSM9237916;GSM9237917,2,0.3,pooled,unc30_pooled_2541
+7,LUAD,__broad__,fibroblasts,broad,1951,4054313,GSM9237916;GSM9237917,2,0.3,pooled,unc30_pooled_2542
+7,LUAD,__broad__,macrophages,broad,784,6795704,GSM9237916;GSM9237917,2,0.3,pooled,unc30_pooled_2543
+7,normal,__broad__,AT2,broad,1416,2847408,GSM9237915,1,0.3,pooled,unc30_pooled_2544
+7,normal,__broad__,fibroblasts,broad,908,1385534,GSM9237915,1,0.3,pooled,unc30_pooled_2545
+7,normal,__broad__,macrophages,broad,97,513307,GSM9237915,1,0.3,pooled,unc30_pooled_2546
+8,AIS,__broad__,AT2,broad,98,274947,GSM9237919,1,0.3,pooled,unc30_pooled_2547
+8,AIS,__broad__,fibroblasts,broad,29,42105,GSM9237919,1,0.3,pooled,unc30_pooled_2548
+8,AIS,__broad__,macrophages,broad,16,34533,GSM9237919,1,0.3,pooled,unc30_pooled_2549
+8,LUAD,__broad__,AT2,broad,317,529148,GSM9237920,1,0.3,pooled,unc30_pooled_2550
+8,LUAD,__broad__,fibroblasts,broad,163,346409,GSM9237920,1,0.3,pooled,unc30_pooled_2551
+8,LUAD,__broad__,macrophages,broad,171,385878,GSM9237920,1,0.3,pooled,unc30_pooled_2552
+8,normal,__broad__,AT2,broad,219,307500,GSM9237918,1,0.3,pooled,unc30_pooled_2553
+8,normal,__broad__,fibroblasts,broad,27,48972,GSM9237918,1,0.3,pooled,unc30_pooled_2554
+8,normal,__broad__,macrophages,broad,4,8132,GSM9237918,1,0.3,pooled,unc30_pooled_2555
+9,AAH,__broad__,AT2,broad,225,720083,GSM9237922,1,0.3,pooled,unc30_pooled_2556
+9,AAH,__broad__,fibroblasts,broad,147,279663,GSM9237922,1,0.3,pooled,unc30_pooled_2557
+9,AAH,__broad__,macrophages,broad,75,758305,GSM9237922,1,0.3,pooled,unc30_pooled_2558
+9,AIS,__broad__,AT2,broad,669,2281185,GSM9237923,1,0.3,pooled,unc30_pooled_2559
+9,AIS,__broad__,fibroblasts,broad,511,1093351,GSM9237923,1,0.3,pooled,unc30_pooled_2560
+9,AIS,__broad__,macrophages,broad,82,480898,GSM9237923,1,0.3,pooled,unc30_pooled_2561
+9,LUAD,__broad__,AT2,broad,700,2038797,GSM9237924,1,0.3,pooled,unc30_pooled_2562
+9,LUAD,__broad__,fibroblasts,broad,461,836779,GSM9237924,1,0.3,pooled,unc30_pooled_2563
+9,LUAD,__broad__,macrophages,broad,140,626611,GSM9237924,1,0.3,pooled,unc30_pooled_2564
+9,normal,__broad__,AT2,broad,283,991766,GSM9237921,1,0.3,pooled,unc30_pooled_2565
+9,normal,__broad__,fibroblasts,broad,267,669833,GSM9237921,1,0.3,pooled,unc30_pooled_2566
+9,normal,__broad__,macrophages,broad,44,661042,GSM9237921,1,0.3,pooled,unc30_pooled_2567
+10,LUAD,__broad__,AT2,broad,881,3616109,GSM9237927,1,0.3,pooled,unc30_pooled_2568
+10,LUAD,__broad__,fibroblasts,broad,840,2273361,GSM9237927,1,0.3,pooled,unc30_pooled_2569
+10,LUAD,__broad__,macrophages,broad,322,2767743,GSM9237927,1,0.3,pooled,unc30_pooled_2570
+10,MIA,__broad__,AT2,broad,480,2215130,GSM9237926,1,0.3,pooled,unc30_pooled_2571
+10,MIA,__broad__,fibroblasts,broad,315,522717,GSM9237926,1,0.3,pooled,unc30_pooled_2572
+10,MIA,__broad__,macrophages,broad,64,335009,GSM9237926,1,0.3,pooled,unc30_pooled_2573
+10,normal,__broad__,AT2,broad,182,418471,GSM9237925,1,0.3,pooled,unc30_pooled_2574
+10,normal,__broad__,fibroblasts,broad,117,231575,GSM9237925,1,0.3,pooled,unc30_pooled_2575
+10,normal,__broad__,macrophages,broad,45,225503,GSM9237925,1,0.3,pooled,unc30_pooled_2576
+11,AAH,__broad__,AT2,broad,477,2468031,GSM9237929,1,0.3,pooled,unc30_pooled_2577
+11,AAH,__broad__,fibroblasts,broad,325,584089,GSM9237929,1,0.3,pooled,unc30_pooled_2578
+11,AAH,__broad__,macrophages,broad,127,848305,GSM9237929,1,0.3,pooled,unc30_pooled_2579
+11,LUAD,__broad__,AT2,broad,667,3387321,GSM9237930,1,0.3,pooled,unc30_pooled_2580
+11,LUAD,__broad__,fibroblasts,broad,874,2752336,GSM9237930,1,0.3,pooled,unc30_pooled_2581
+11,LUAD,__broad__,macrophages,broad,386,2587209,GSM9237930,1,0.3,pooled,unc30_pooled_2582
+11,normal,__broad__,AT2,broad,149,436074,GSM9237928,1,0.3,pooled,unc30_pooled_2583
+11,normal,__broad__,fibroblasts,broad,157,250350,GSM9237928,1,0.3,pooled,unc30_pooled_2584
+11,normal,__broad__,macrophages,broad,35,135675,GSM9237928,1,0.3,pooled,unc30_pooled_2585
+12,AIS,__broad__,AT2,broad,537,3819832,GSM9237932,1,0.3,pooled,unc30_pooled_2586
+12,AIS,__broad__,fibroblasts,broad,283,599673,GSM9237932,1,0.3,pooled,unc30_pooled_2587
+12,AIS,__broad__,macrophages,broad,53,441379,GSM9237932,1,0.3,pooled,unc30_pooled_2588
+12,LUAD,__broad__,AT2,broad,624,4073783,GSM9237933,1,0.3,pooled,unc30_pooled_2589
+12,LUAD,__broad__,fibroblasts,broad,220,358296,GSM9237933,1,0.3,pooled,unc30_pooled_2590
+12,LUAD,__broad__,macrophages,broad,92,427409,GSM9237933,1,0.3,pooled,unc30_pooled_2591
+12,normal,__broad__,AT2,broad,204,888932,GSM9237931,1,0.3,pooled,unc30_pooled_2592
+12,normal,__broad__,fibroblasts,broad,193,428453,GSM9237931,1,0.3,pooled,unc30_pooled_2593
+12,normal,__broad__,macrophages,broad,44,505509,GSM9237931,1,0.3,pooled,unc30_pooled_2594
+13,LUAD,__broad__,AT2,broad,211,1188037,GSM9237936,1,0.3,pooled,unc30_pooled_2595
+13,LUAD,__broad__,fibroblasts,broad,298,729017,GSM9237936,1,0.3,pooled,unc30_pooled_2596
+13,LUAD,__broad__,macrophages,broad,107,539404,GSM9237936,1,0.3,pooled,unc30_pooled_2597
+13,MIA,__broad__,AT2,broad,343,1579329,GSM9237935,1,0.3,pooled,unc30_pooled_2598
+13,MIA,__broad__,fibroblasts,broad,325,532863,GSM9237935,1,0.3,pooled,unc30_pooled_2599
+13,MIA,__broad__,macrophages,broad,127,762006,GSM9237935,1,0.3,pooled,unc30_pooled_2600
+13,normal,__broad__,AT2,broad,97,345800,GSM9237934,1,0.3,pooled,unc30_pooled_2601
+13,normal,__broad__,fibroblasts,broad,105,206565,GSM9237934,1,0.3,pooled,unc30_pooled_2602
+13,normal,__broad__,macrophages,broad,11,87115,GSM9237934,1,0.3,pooled,unc30_pooled_2603
+14,AIS,__broad__,AT2,broad,672,2073173,GSM9237938,1,0.3,pooled,unc30_pooled_2604
+14,AIS,__broad__,fibroblasts,broad,372,850119,GSM9237938,1,0.3,pooled,unc30_pooled_2605
+14,AIS,__broad__,macrophages,broad,425,3014435,GSM9237938,1,0.3,pooled,unc30_pooled_2606
+14,LUAD,__broad__,AT2,broad,533,2001571,GSM9237939,1,0.3,pooled,unc30_pooled_2607
+14,LUAD,__broad__,fibroblasts,broad,265,416596,GSM9237939,1,0.3,pooled,unc30_pooled_2608
+14,LUAD,__broad__,macrophages,broad,88,507224,GSM9237939,1,0.3,pooled,unc30_pooled_2609
+14,normal,__broad__,AT2,broad,147,419872,GSM9237937,1,0.3,pooled,unc30_pooled_2610
+14,normal,__broad__,fibroblasts,broad,81,285858,GSM9237937,1,0.3,pooled,unc30_pooled_2611
+14,normal,__broad__,macrophages,broad,114,778132,GSM9237937,1,0.3,pooled,unc30_pooled_2612
+15,LUAD,__broad__,AT2,broad,308,914204,GSM9237942,1,0.3,pooled,unc30_pooled_2613
+15,LUAD,__broad__,fibroblasts,broad,465,1056750,GSM9237942,1,0.3,pooled,unc30_pooled_2614
+15,LUAD,__broad__,macrophages,broad,185,922880,GSM9237942,1,0.3,pooled,unc30_pooled_2615
+15,MIA,__broad__,AT2,broad,407,1631222,GSM9237941,1,0.3,pooled,unc30_pooled_2616
+15,MIA,__broad__,fibroblasts,broad,571,999035,GSM9237941,1,0.3,pooled,unc30_pooled_2617
+15,MIA,__broad__,macrophages,broad,145,994063,GSM9237941,1,0.3,pooled,unc30_pooled_2618
+15,normal,__broad__,AT2,broad,179,541234,GSM9237940,1,0.3,pooled,unc30_pooled_2619
+15,normal,__broad__,fibroblasts,broad,238,385861,GSM9237940,1,0.3,pooled,unc30_pooled_2620
+15,normal,__broad__,macrophages,broad,52,315031,GSM9237940,1,0.3,pooled,unc30_pooled_2621
+16,AIS,__broad__,AT2,broad,442,1842723,GSM9237944,1,0.3,pooled,unc30_pooled_2622
+16,AIS,__broad__,fibroblasts,broad,526,751923,GSM9237944,1,0.3,pooled,unc30_pooled_2623
+16,AIS,__broad__,macrophages,broad,60,299057,GSM9237944,1,0.3,pooled,unc30_pooled_2624
+16,LUAD,__broad__,AT2,broad,414,1254849,GSM9237945,1,0.3,pooled,unc30_pooled_2625
+16,LUAD,__broad__,fibroblasts,broad,272,527339,GSM9237945,1,0.3,pooled,unc30_pooled_2626
+16,LUAD,__broad__,macrophages,broad,97,473790,GSM9237945,1,0.3,pooled,unc30_pooled_2627
+16,normal,__broad__,AT2,broad,227,789443,GSM9237943,1,0.3,pooled,unc30_pooled_2628
+16,normal,__broad__,fibroblasts,broad,221,354588,GSM9237943,1,0.3,pooled,unc30_pooled_2629
+16,normal,__broad__,macrophages,broad,62,417024,GSM9237943,1,0.3,pooled,unc30_pooled_2630
+17,AIS,__broad__,AT2,broad,1931,9899798,GSM9237947,1,0.3,pooled,unc30_pooled_2631
+17,AIS,__broad__,fibroblasts,broad,1303,2901290,GSM9237947,1,0.3,pooled,unc30_pooled_2632
+17,AIS,__broad__,macrophages,broad,320,3029777,GSM9237947,1,0.3,pooled,unc30_pooled_2633
+17,LUAD,__broad__,AT2,broad,506,2448243,GSM9237948,1,0.3,pooled,unc30_pooled_2634
+17,LUAD,__broad__,fibroblasts,broad,1081,2581969,GSM9237948,1,0.3,pooled,unc30_pooled_2635
+17,LUAD,__broad__,macrophages,broad,486,1784586,GSM9237948,1,0.3,pooled,unc30_pooled_2636
+17,normal,__broad__,AT2,broad,1235,4721589,GSM9237946,1,0.3,pooled,unc30_pooled_2637
+17,normal,__broad__,fibroblasts,broad,1369,3098882,GSM9237946,1,0.3,pooled,unc30_pooled_2638
+17,normal,__broad__,macrophages,broad,228,1399603,GSM9237946,1,0.3,pooled,unc30_pooled_2639
+18,LUAD,__broad__,AT2,broad,1375,6716135,GSM9237951,1,0.3,pooled,unc30_pooled_2640
+18,LUAD,__broad__,fibroblasts,broad,1763,3430142,GSM9237951,1,0.3,pooled,unc30_pooled_2641
+18,LUAD,__broad__,macrophages,broad,339,2354799,GSM9237951,1,0.3,pooled,unc30_pooled_2642
+18,MIA,__broad__,AT2,broad,1385,7321333,GSM9237950,1,0.3,pooled,unc30_pooled_2643
+18,MIA,__broad__,fibroblasts,broad,1702,3371388,GSM9237950,1,0.3,pooled,unc30_pooled_2644
+18,MIA,__broad__,macrophages,broad,299,2261395,GSM9237950,1,0.3,pooled,unc30_pooled_2645
+18,normal,__broad__,AT2,broad,1400,2644845,GSM9237949,1,0.3,pooled,unc30_pooled_2646
+18,normal,__broad__,fibroblasts,broad,1480,2406731,GSM9237949,1,0.3,pooled,unc30_pooled_2647
+18,normal,__broad__,macrophages,broad,322,1418542,GSM9237949,1,0.3,pooled,unc30_pooled_2648
+19,AIS,__broad__,AT2,broad,1750,7878486,GSM9237953,1,0.3,pooled,unc30_pooled_2649
+19,AIS,__broad__,fibroblasts,broad,1422,3215191,GSM9237953,1,0.3,pooled,unc30_pooled_2650
+19,AIS,__broad__,macrophages,broad,357,2517291,GSM9237953,1,0.3,pooled,unc30_pooled_2651
+19,LUAD,__broad__,AT2,broad,2566,11691154,GSM9237954,1,0.3,pooled,unc30_pooled_2652
+19,LUAD,__broad__,fibroblasts,broad,1974,4642189,GSM9237954,1,0.3,pooled,unc30_pooled_2653
+19,LUAD,__broad__,macrophages,broad,528,4579369,GSM9237954,1,0.3,pooled,unc30_pooled_2654
+19,normal,__broad__,AT2,broad,611,3410195,GSM9237952,1,0.3,pooled,unc30_pooled_2655
+19,normal,__broad__,fibroblasts,broad,570,1772020,GSM9237952,1,0.3,pooled,unc30_pooled_2656
+19,normal,__broad__,macrophages,broad,199,2774242,GSM9237952,1,0.3,pooled,unc30_pooled_2657
+20,AAH,__broad__,AT2,broad,1280,4747498,GSM9237956,1,0.3,pooled,unc30_pooled_2658
+20,AAH,__broad__,fibroblasts,broad,1240,3378861,GSM9237956,1,0.3,pooled,unc30_pooled_2659
+20,AAH,__broad__,macrophages,broad,331,3537310,GSM9237956,1,0.3,pooled,unc30_pooled_2660
+20,LUAD,__broad__,AT2,broad,1094,3857180,GSM9237957,1,0.3,pooled,unc30_pooled_2661
+20,LUAD,__broad__,fibroblasts,broad,1518,3821816,GSM9237957,1,0.3,pooled,unc30_pooled_2662
+20,LUAD,__broad__,macrophages,broad,259,1714134,GSM9237957,1,0.3,pooled,unc30_pooled_2663
+20,normal,__broad__,AT2,broad,195,524603,GSM9237955,1,0.3,pooled,unc30_pooled_2664
+20,normal,__broad__,fibroblasts,broad,184,364635,GSM9237955,1,0.3,pooled,unc30_pooled_2665
+20,normal,__broad__,macrophages,broad,48,408891,GSM9237955,1,0.3,pooled,unc30_pooled_2666
+21,AIS,__broad__,AT2,broad,2951,12140807,GSM9237959;GSM9237960,2,0.3,pooled,unc30_pooled_2667
+21,AIS,__broad__,fibroblasts,broad,1952,5059981,GSM9237959;GSM9237960,2,0.3,pooled,unc30_pooled_2668
+21,AIS,__broad__,macrophages,broad,1207,16380754,GSM9237959;GSM9237960,2,0.3,pooled,unc30_pooled_2669
+21,LUAD,__broad__,AT2,broad,216,610877,GSM9237961,1,0.3,pooled,unc30_pooled_2670
+21,LUAD,__broad__,fibroblasts,broad,232,616632,GSM9237961,1,0.3,pooled,unc30_pooled_2671
+21,LUAD,__broad__,macrophages,broad,98,372575,GSM9237961,1,0.3,pooled,unc30_pooled_2672
+21,normal,__broad__,AT2,broad,391,1701323,GSM9237958,1,0.3,pooled,unc30_pooled_2673
+21,normal,__broad__,fibroblasts,broad,423,964756,GSM9237958,1,0.3,pooled,unc30_pooled_2674
+21,normal,__broad__,macrophages,broad,165,1079503,GSM9237958,1,0.3,pooled,unc30_pooled_2675
+22,AAH,__broad__,AT2,broad,563,2113887,GSM9237963,1,0.3,pooled,unc30_pooled_2676
+22,AAH,__broad__,fibroblasts,broad,638,1387443,GSM9237963,1,0.3,pooled,unc30_pooled_2677
+22,AAH,__broad__,macrophages,broad,437,4659448,GSM9237963,1,0.3,pooled,unc30_pooled_2678
+22,AIS,__broad__,AT2,broad,815,3335702,GSM9237964,1,0.3,pooled,unc30_pooled_2679
+22,AIS,__broad__,fibroblasts,broad,711,1812465,GSM9237964,1,0.3,pooled,unc30_pooled_2680
+22,AIS,__broad__,macrophages,broad,507,5669130,GSM9237964,1,0.3,pooled,unc30_pooled_2681
+22,LUAD,__broad__,AT2,broad,1194,6294668,GSM9237965,1,0.3,pooled,unc30_pooled_2682
+22,LUAD,__broad__,fibroblasts,broad,914,2202148,GSM9237965,1,0.3,pooled,unc30_pooled_2683
+22,LUAD,__broad__,macrophages,broad,477,5187483,GSM9237965,1,0.3,pooled,unc30_pooled_2684
+22,normal,__broad__,AT2,broad,441,1750976,GSM9237962,1,0.3,pooled,unc30_pooled_2685
+22,normal,__broad__,fibroblasts,broad,452,1170830,GSM9237962,1,0.3,pooled,unc30_pooled_2686
+22,normal,__broad__,macrophages,broad,256,2355733,GSM9237962,1,0.3,pooled,unc30_pooled_2687
+23,AIS,__broad__,AT2,broad,6907,29598941,GSM9237967;GSM9237968,2,0.3,pooled,unc30_pooled_2688
+23,AIS,__broad__,fibroblasts,broad,6966,20322929,GSM9237967;GSM9237968,2,0.3,pooled,unc30_pooled_2689
+23,AIS,__broad__,macrophages,broad,1318,7114909,GSM9237967;GSM9237968,2,0.3,pooled,unc30_pooled_2690
+23,LUAD,__broad__,AT2,broad,3443,14129512,GSM9237969,1,0.3,pooled,unc30_pooled_2691
+23,LUAD,__broad__,fibroblasts,broad,4211,11838305,GSM9237969,1,0.3,pooled,unc30_pooled_2692
+23,LUAD,__broad__,macrophages,broad,590,3050999,GSM9237969,1,0.3,pooled,unc30_pooled_2693
+23,normal,__broad__,AT2,broad,1037,4052527,GSM9237966,1,0.3,pooled,unc30_pooled_2694
+23,normal,__broad__,fibroblasts,broad,900,2786706,GSM9237966,1,0.3,pooled,unc30_pooled_2695
+23,normal,__broad__,macrophages,broad,119,695283,GSM9237966,1,0.3,pooled,unc30_pooled_2696
+24,AAH,__broad__,AT2,broad,2267,35449657,GSM9237971,1,0.3,pooled,unc30_pooled_2697
+24,AAH,__broad__,fibroblasts,broad,780,3848172,GSM9237971,1,0.3,pooled,unc30_pooled_2698
+24,AAH,__broad__,macrophages,broad,286,2906057,GSM9237971,1,0.3,pooled,unc30_pooled_2699
+24,LUAD,__broad__,AT2,broad,8469,121172586,GSM9237972,1,0.3,pooled,unc30_pooled_2700
+24,LUAD,__broad__,fibroblasts,broad,4047,33981610,GSM9237972,1,0.3,pooled,unc30_pooled_2701
+24,LUAD,__broad__,macrophages,broad,1787,33035394,GSM9237972,1,0.3,pooled,unc30_pooled_2702
+24,normal,__broad__,AT2,broad,1863,27041228,GSM9237970,1,0.3,pooled,unc30_pooled_2703
+24,normal,__broad__,fibroblasts,broad,609,2592335,GSM9237970,1,0.3,pooled,unc30_pooled_2704
+24,normal,__broad__,macrophages,broad,179,2280945,GSM9237970,1,0.3,pooled,unc30_pooled_2705
+25,AAH,__broad__,AT2,broad,457,1826452,GSM9237974,1,0.3,pooled,unc30_pooled_2706
+25,AAH,__broad__,fibroblasts,broad,505,1178516,GSM9237974,1,0.3,pooled,unc30_pooled_2707
+25,AAH,__broad__,macrophages,broad,101,471452,GSM9237974,1,0.3,pooled,unc30_pooled_2708
+25,LUAD,__broad__,AT2,broad,434,1963484,GSM9237975,1,0.3,pooled,unc30_pooled_2709
+25,LUAD,__broad__,fibroblasts,broad,1560,5479398,GSM9237975,1,0.3,pooled,unc30_pooled_2710
+25,LUAD,__broad__,macrophages,broad,447,2133037,GSM9237975,1,0.3,pooled,unc30_pooled_2711
+25,normal,__broad__,AT2,broad,1331,5964365,GSM9237973,1,0.3,pooled,unc30_pooled_2712
+25,normal,__broad__,fibroblasts,broad,1632,3450295,GSM9237973,1,0.3,pooled,unc30_pooled_2713
+25,normal,__broad__,macrophages,broad,258,1327800,GSM9237973,1,0.3,pooled,unc30_pooled_2714

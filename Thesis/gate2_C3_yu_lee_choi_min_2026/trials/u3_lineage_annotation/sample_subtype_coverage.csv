@@ -1,0 +1,198 @@
+gsm,treatment,compartment,label,cells
+GSM9057709,Control IgG,airway,neuroendocrine_candidate,69
+GSM9057709,Control IgG,airway,secretory_airway,65
+GSM9057709,Control IgG,alveolar,AT1_like,214
+GSM9057709,Control IgG,alveolar,mixed_AT2_AT1_alveolar,180
+GSM9057709,Control IgG,endothelial,capillary_endothelial,80
+GSM9057709,Control IgG,endothelial,vascular_endothelial,141
+GSM9057709,Control IgG,fibroblast,fibroblast_Gsn,58
+GSM9057709,Control IgG,fibroblast,fibroblast_Itga8,6
+GSM9057709,Control IgG,fibroblast,fibroblast_Pi16,23
+GSM9057709,Control IgG,myeloid,CSF1R_myeloid,96
+GSM9057709,Control IgG,myeloid,inflammatory_CSF1R_CSF3R_myeloid,26
+GSM9057709,Control IgG,other,APC_ambiguous,58
+GSM9057709,Control IgG,other,B_cell,397
+GSM9057709,Control IgG,other,NK_cell,147
+GSM9057709,Control IgG,other,T_cell,535
+GSM9057709,Control IgG,other,basophil_mast_candidate,3
+GSM9057709,Control IgG,other,cardiac_muscle,2
+GSM9057709,Control IgG,other,cytotoxic_T_cell,73
+GSM9057709,Control IgG,other,inflammatory_granulocyte_candidate,8
+GSM9057709,Control IgG,other,mesothelial_stromal_ambiguous,5
+GSM9057709,Control IgG,other,mural_pericyte,23
+GSM9057709,Control IgG,other,neutrophil,196
+GSM9057709,Control IgG,other,pDC_candidate,6
+GSM9057709,Control IgG,other,plasma_cell,14
+GSM9057709,Control IgG,other,smooth_muscle,43
+GSM9057709,Control IgG,unassigned,mixed_myeloid_B,7
+GSM9057712,Control IgG,airway,neuroendocrine_candidate,7
+GSM9057712,Control IgG,airway,secretory_airway,21
+GSM9057712,Control IgG,alveolar,AT1_like,38
+GSM9057712,Control IgG,alveolar,mixed_AT2_AT1_alveolar,28
+GSM9057712,Control IgG,endothelial,capillary_endothelial,37
+GSM9057712,Control IgG,endothelial,vascular_endothelial,59
+GSM9057712,Control IgG,fibroblast,fibroblast_Gsn,93
+GSM9057712,Control IgG,fibroblast,fibroblast_Itga8,146
+GSM9057712,Control IgG,fibroblast,fibroblast_Pi16,179
+GSM9057712,Control IgG,myeloid,CSF1R_myeloid,354
+GSM9057712,Control IgG,myeloid,inflammatory_CSF1R_CSF3R_myeloid,95
+GSM9057712,Control IgG,myeloid,macrophage_candidate,1
+GSM9057712,Control IgG,other,APC_ambiguous,56
+GSM9057712,Control IgG,other,B_cell,696
+GSM9057712,Control IgG,other,NK_cell,158
+GSM9057712,Control IgG,other,T_cell,562
+GSM9057712,Control IgG,other,basophil_mast_candidate,12
+GSM9057712,Control IgG,other,cardiac_muscle,1
+GSM9057712,Control IgG,other,cytotoxic_T_cell,140
+GSM9057712,Control IgG,other,inflammatory_granulocyte_candidate,10
+GSM9057712,Control IgG,other,mesothelial_stromal_ambiguous,10
+GSM9057712,Control IgG,other,mural_pericyte,5
+GSM9057712,Control IgG,other,neutrophil,697
+GSM9057712,Control IgG,other,pDC_candidate,20
+GSM9057712,Control IgG,other,plasma_cell,15
+GSM9057712,Control IgG,other,smooth_muscle,23
+GSM9057712,Control IgG,unassigned,mixed_fibroblast_myeloid,9
+GSM9057712,Control IgG,unassigned,mixed_lineage,2
+GSM9057712,Control IgG,unassigned,mixed_myeloid_B,43
+GSM9057713,anti-IL-1β,airway,neuroendocrine_candidate,28
+GSM9057713,anti-IL-1β,airway,secretory_airway,19
+GSM9057713,anti-IL-1β,alveolar,AT1_like,118
+GSM9057713,anti-IL-1β,alveolar,mixed_AT2_AT1_alveolar,36
+GSM9057713,anti-IL-1β,endothelial,capillary_endothelial,120
+GSM9057713,anti-IL-1β,endothelial,vascular_endothelial,240
+GSM9057713,anti-IL-1β,fibroblast,fibroblast_Gsn,319
+GSM9057713,anti-IL-1β,fibroblast,fibroblast_Itga8,285
+GSM9057713,anti-IL-1β,fibroblast,fibroblast_Pi16,185
+GSM9057713,anti-IL-1β,myeloid,CSF1R_myeloid,439
+GSM9057713,anti-IL-1β,myeloid,inflammatory_CSF1R_CSF3R_myeloid,109
+GSM9057713,anti-IL-1β,other,APC_ambiguous,108
+GSM9057713,anti-IL-1β,other,B_cell,454
+GSM9057713,anti-IL-1β,other,NK_cell,98
+GSM9057713,anti-IL-1β,other,T_cell,660
+GSM9057713,anti-IL-1β,other,basophil_mast_candidate,24
+GSM9057713,anti-IL-1β,other,cardiac_muscle,6
+GSM9057713,anti-IL-1β,other,cytotoxic_T_cell,69
+GSM9057713,anti-IL-1β,other,inflammatory_granulocyte_candidate,7
+GSM9057713,anti-IL-1β,other,mesothelial_stromal_ambiguous,8
+GSM9057713,anti-IL-1β,other,mural_pericyte,10
+GSM9057713,anti-IL-1β,other,neutrophil,677
+GSM9057713,anti-IL-1β,other,pDC_candidate,31
+GSM9057713,anti-IL-1β,other,plasma_cell,15
+GSM9057713,anti-IL-1β,other,smooth_muscle,87
+GSM9057713,anti-IL-1β,unassigned,mixed_fibroblast_myeloid,10
+GSM9057713,anti-IL-1β,unassigned,mixed_lineage,21
+GSM9057713,anti-IL-1β,unassigned,mixed_myeloid_B,13
+GSM9057716,Control IgG,airway,neuroendocrine_candidate,70
+GSM9057716,Control IgG,airway,secretory_airway,23
+GSM9057716,Control IgG,alveolar,AT1_like,149
+GSM9057716,Control IgG,alveolar,mixed_AT2_AT1_alveolar,62
+GSM9057716,Control IgG,endothelial,capillary_endothelial,62
+GSM9057716,Control IgG,endothelial,vascular_endothelial,85
+GSM9057716,Control IgG,fibroblast,fibroblast_Gsn,289
+GSM9057716,Control IgG,fibroblast,fibroblast_Itga8,187
+GSM9057716,Control IgG,fibroblast,fibroblast_Pi16,475
+GSM9057716,Control IgG,myeloid,CSF1R_myeloid,262
+GSM9057716,Control IgG,myeloid,inflammatory_CSF1R_CSF3R_myeloid,62
+GSM9057716,Control IgG,other,APC_ambiguous,80
+GSM9057716,Control IgG,other,B_cell,427
+GSM9057716,Control IgG,other,NK_cell,263
+GSM9057716,Control IgG,other,T_cell,795
+GSM9057716,Control IgG,other,basophil_mast_candidate,15
+GSM9057716,Control IgG,other,cardiac_muscle,8
+GSM9057716,Control IgG,other,cytotoxic_T_cell,132
+GSM9057716,Control IgG,other,inflammatory_granulocyte_candidate,8
+GSM9057716,Control IgG,other,mesothelial_stromal_ambiguous,39
+GSM9057716,Control IgG,other,mural_pericyte,24
+GSM9057716,Control IgG,other,neutrophil,347
+GSM9057716,Control IgG,other,pDC_candidate,30
+GSM9057716,Control IgG,other,plasma_cell,109
+GSM9057716,Control IgG,other,smooth_muscle,220
+GSM9057716,Control IgG,unassigned,mixed_fibroblast_myeloid,3
+GSM9057716,Control IgG,unassigned,mixed_lineage,21
+GSM9057716,Control IgG,unassigned,mixed_myeloid_B,9
+GSM9057717,anti-IL-1β,airway,neuroendocrine_candidate,15
+GSM9057717,anti-IL-1β,airway,secretory_airway,10
+GSM9057717,anti-IL-1β,alveolar,AT1_like,29
+GSM9057717,anti-IL-1β,alveolar,mixed_AT2_AT1_alveolar,45
+GSM9057717,anti-IL-1β,endothelial,capillary_endothelial,44
+GSM9057717,anti-IL-1β,endothelial,vascular_endothelial,74
+GSM9057717,anti-IL-1β,fibroblast,fibroblast_Gsn,104
+GSM9057717,anti-IL-1β,fibroblast,fibroblast_Itga8,95
+GSM9057717,anti-IL-1β,fibroblast,fibroblast_Pi16,218
+GSM9057717,anti-IL-1β,myeloid,CSF1R_myeloid,260
+GSM9057717,anti-IL-1β,myeloid,inflammatory_CSF1R_CSF3R_myeloid,44
+GSM9057717,anti-IL-1β,myeloid,macrophage_candidate,3
+GSM9057717,anti-IL-1β,other,APC_ambiguous,97
+GSM9057717,anti-IL-1β,other,B_cell,411
+GSM9057717,anti-IL-1β,other,NK_cell,312
+GSM9057717,anti-IL-1β,other,T_cell,563
+GSM9057717,anti-IL-1β,other,basophil_mast_candidate,16
+GSM9057717,anti-IL-1β,other,cardiac_muscle,1
+GSM9057717,anti-IL-1β,other,cytotoxic_T_cell,90
+GSM9057717,anti-IL-1β,other,inflammatory_granulocyte_candidate,5
+GSM9057717,anti-IL-1β,other,mesothelial_stromal_ambiguous,11
+GSM9057717,anti-IL-1β,other,mural_pericyte,38
+GSM9057717,anti-IL-1β,other,neutrophil,275
+GSM9057717,anti-IL-1β,other,pDC_candidate,45
+GSM9057717,anti-IL-1β,other,plasma_cell,9
+GSM9057717,anti-IL-1β,other,smooth_muscle,91
+GSM9057717,anti-IL-1β,unassigned,mixed_myeloid_B,8
+GSM9057720,Control IgG,airway,neuroendocrine_candidate,46
+GSM9057720,Control IgG,airway,secretory_airway,85
+GSM9057720,Control IgG,alveolar,AT1_like,245
+GSM9057720,Control IgG,alveolar,mixed_AT2_AT1_alveolar,108
+GSM9057720,Control IgG,endothelial,capillary_endothelial,164
+GSM9057720,Control IgG,endothelial,vascular_endothelial,313
+GSM9057720,Control IgG,fibroblast,fibroblast_Gsn,230
+GSM9057720,Control IgG,fibroblast,fibroblast_Itga8,234
+GSM9057720,Control IgG,fibroblast,fibroblast_Pi16,254
+GSM9057720,Control IgG,myeloid,CSF1R_myeloid,303
+GSM9057720,Control IgG,myeloid,inflammatory_CSF1R_CSF3R_myeloid,95
+GSM9057720,Control IgG,myeloid,macrophage_candidate,11
+GSM9057720,Control IgG,other,APC_ambiguous,250
+GSM9057720,Control IgG,other,B_cell,224
+GSM9057720,Control IgG,other,NK_cell,85
+GSM9057720,Control IgG,other,T_cell,708
+GSM9057720,Control IgG,other,basophil_mast_candidate,11
+GSM9057720,Control IgG,other,cardiac_muscle,6
+GSM9057720,Control IgG,other,cytotoxic_T_cell,71
+GSM9057720,Control IgG,other,inflammatory_granulocyte_candidate,25
+GSM9057720,Control IgG,other,mesothelial_stromal_ambiguous,21
+GSM9057720,Control IgG,other,mural_pericyte,15
+GSM9057720,Control IgG,other,neutrophil,916
+GSM9057720,Control IgG,other,pDC_candidate,33
+GSM9057720,Control IgG,other,plasma_cell,25
+GSM9057720,Control IgG,other,smooth_muscle,107
+GSM9057720,Control IgG,unassigned,mixed_airway_cytotoxic,11
+GSM9057720,Control IgG,unassigned,mixed_fibroblast_myeloid,11
+GSM9057720,Control IgG,unassigned,mixed_lineage,17
+GSM9057720,Control IgG,unassigned,mixed_myeloid_B,2
+GSM9057721,anti-IL-1β,airway,neuroendocrine_candidate,66
+GSM9057721,anti-IL-1β,airway,secretory_airway,26
+GSM9057721,anti-IL-1β,alveolar,AT1_like,250
+GSM9057721,anti-IL-1β,alveolar,mixed_AT2_AT1_alveolar,124
+GSM9057721,anti-IL-1β,endothelial,capillary_endothelial,232
+GSM9057721,anti-IL-1β,endothelial,vascular_endothelial,501
+GSM9057721,anti-IL-1β,fibroblast,fibroblast_Gsn,302
+GSM9057721,anti-IL-1β,fibroblast,fibroblast_Itga8,374
+GSM9057721,anti-IL-1β,fibroblast,fibroblast_Pi16,304
+GSM9057721,anti-IL-1β,myeloid,CSF1R_myeloid,522
+GSM9057721,anti-IL-1β,myeloid,inflammatory_CSF1R_CSF3R_myeloid,177
+GSM9057721,anti-IL-1β,myeloid,macrophage_candidate,4
+GSM9057721,anti-IL-1β,other,APC_ambiguous,303
+GSM9057721,anti-IL-1β,other,B_cell,683
+GSM9057721,anti-IL-1β,other,NK_cell,235
+GSM9057721,anti-IL-1β,other,T_cell,936
+GSM9057721,anti-IL-1β,other,basophil_mast_candidate,33
+GSM9057721,anti-IL-1β,other,cardiac_muscle,10
+GSM9057721,anti-IL-1β,other,cytotoxic_T_cell,155
+GSM9057721,anti-IL-1β,other,inflammatory_granulocyte_candidate,86
+GSM9057721,anti-IL-1β,other,mesothelial_stromal_ambiguous,25
+GSM9057721,anti-IL-1β,other,mural_pericyte,27
+GSM9057721,anti-IL-1β,other,neutrophil,590
+GSM9057721,anti-IL-1β,other,pDC_candidate,70
+GSM9057721,anti-IL-1β,other,plasma_cell,39
+GSM9057721,anti-IL-1β,other,smooth_muscle,155
+GSM9057721,anti-IL-1β,unassigned,mixed_fibroblast_myeloid,10
+GSM9057721,anti-IL-1β,unassigned,mixed_lineage,16
+GSM9057721,anti-IL-1β,unassigned,mixed_myeloid_B,5

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "plan_version": 3,
-  "status": "authorized_subject_to_design_annotation_resource_gates",
+  "status": "completed_feasible_scope_with_documented_scientific_gates",
   "full_run_authorized": true,
   "source_plan": "NICHE_ANALYSIS_PLAN.md",
   "context_axes": [
@@ -86,7 +86,7 @@
     "observed_zero_counts_in_eligible_assay_covered_pseudobulks_retained": true,
     "RNA_score_is_signalling_activity": false,
     "unchanged_IL1B_RNA_refutes_neutralization": false,
-    "exact_edges_and_complex_subunits_status": "initial_IPF_edges_frozen_in_trials/u5_ipf_liana/specification.json_other_contexts_pending",
+    "exact_edges_and_complex_subunits_status": "frozen_resources_and_biological_role_tables_available_for_IPF_mouse_and_human",
     "differential_score_evidence_level": "exploratory_custom_RNA_compatibility",
     "prior_count_sensitivity": [
       0.5,
@@ -114,7 +114,7 @@
       "source_defined_epithelial_identity"
     ],
     "short_component_panels": "descriptive_unless_enrichment_eligibility_passes",
-    "exact_gene_sets_versions_hashes_status": "IPF_frozen_in_trials/u5_ipf_spec/specification.json_other_contexts_pending"
+    "exact_gene_sets_versions_hashes_status": "all_contexts_frozen_and_coverage_sensitivity_verified"
   },
   "ligand_target": {
     "method": "NicheNet_pinned_species_matched_prior",
@@ -135,15 +135,40 @@
   },
   "figure_location": "paper_level_gallery_only",
   "biological_results_computed": true,
-  "computed_scope": "two_observational_IPF_cohort_pathways_mouse_treatment_inference_not_released",
+  "computed_scope": "IPF_mouse_human_niche_measurements_native_LR_sensitivities_eligible_ligand_targets_spatial_whole_section_context_and_epithelial_specificity",
   "initial_LR_scope": {
     "cohort": "GSE136831",
     "status": "completed_descriptive_run_output_integrity_passed_interpretation_pending",
     "specification": "trials/u5_ipf_liana/specification.json",
     "maximum_cells_per_donor_subtype": 500,
     "seed": 20260924,
-    "all_cell_sensitivity_complete": false,
+    "all_cell_sensitivity_complete": true,
     "differential_RNA_compatibility_complete": false,
     "scope": "initial_descriptive_triad_pass_does_not_complete_all_required_niche_arms"
+  },
+  "continuation_LR": {
+    "status": "completed_descriptive_with_integrity_checks",
+    "reports": [
+      "trials/u5_ipf_compatibility/REPORT.md",
+      "trials/u5_liana_robustness/REPORT.md"
+    ],
+    "native_calls": 586,
+    "primary_compatibility_contrasts": 277
+  },
+  "continuation_LT": {
+    "status": "completed_for_eligible_IPF_receivers",
+    "primary_candidate_rows": 274,
+    "report": "trials/u5_ligand_targets/REPORT.md",
+    "metric": "NicheNet_v2_prior_Pearson_base_R_implementation",
+    "scope": "planned ligand families; focused and source-agnostic views; not independent validation"
+  },
+  "completion_report": "EVIDENCE_REVIEW.md",
+  "completion_register": "WORK_PACKAGES.md",
+  "human_completion": {
+    "report": "trials/u5_human_niche/REPORT.md",
+    "pathways": 279,
+    "primary_q05": 0,
+    "native_calls": 1214,
+    "ligand_target_candidates": 943
   }
 }

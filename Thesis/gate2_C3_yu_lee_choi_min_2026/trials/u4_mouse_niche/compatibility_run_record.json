@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "started_utc": "2026-09-24T12:01:31.271986+00:00",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "12b2e6352766b57b5c41df3d183dfd67ac5aaa1a32f5ef3325c24a0b9a0a2c5c",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u4_mouse_compatibility.py",
+    "entrypoint_sha256": "2cb2530fd72b6e598f761cb5ed770444755b4525bea75e2ca600007d6775318a"
+  },
+  "components_sha256": "d0422564b59e9da863d4e5c366c6fc0ac81a7404c681ebb28e9c3cb28f561f2a",
+  "scope": "descriptive independent broad-lineage early mouse contrast; no KAC endpoint or causal claim",
+  "primary_contrasts": 613,
+  "all_contrasts": 9606,
+  "method": "half-sum of minimum ligand/receptor logCPM; all-gene TMM; 30/50/100 floors and 0.5/1/2 priors; no P values",
+  "elapsed_seconds": 623.3,
+  "updated_utc": "2026-09-24T12:11:54.937615+00:00"
+}

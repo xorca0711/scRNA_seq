@@ -1,0 +1,11 @@
+{
+  "cohort": "GSE136831",
+  "source_hashes": {
+    "raw_data\\GSE136831\\GSE136831_AllCells.Samples.CellType.MetadataTable.txt.gz": "147bdd11d720ed30736a459ba62a3d8e2f3f9028a8430e0eb714484f0456049b",
+    "raw_data\\GSE136831\\GSE136831_AllCells.GeneIDs.txt.gz": "e43b3008945c87a6875d4fb1a99a791fdaefeeb3c5a72a5d17589f621eb83af8",
+    "raw_data\\GSE136831\\GSE136831_RawCounts_Sparse.mtx.gz": "266133a964b5c45bf02394acaaff4ea4eb66096ec5a051d92f93dd2747b5850b"
+  },
+  "matrix_entries": 692789348,
+  "units": 301,
+  "count_parity": "all epithelial donor/label full-library totals match independent prior stream"
+}

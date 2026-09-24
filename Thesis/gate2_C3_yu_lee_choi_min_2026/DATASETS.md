@@ -6,6 +6,15 @@ source URLs, retrieval times and response hashes. **GSM counts are records,
 not automatically biological replicates.** Priority means suitability for the
 specified question, not a declaration that all data are ready to analyse.
 
+## Current execution
+
+The [completion register](WORK_PACKAGES.md) records the completed public-data
+analyses. All 75 human RNA libraries, 56 human spatial sections and nine
+post-viral matrices were processed. Both IPF cohorts, eligible early mouse
+niches and specificity extensions have measured outputs. The shortlist below
+preserves source-design questions; endpoint-level resolutions and remaining
+limits are in the [evidence review](EVIDENCE_REVIEW.md).
+
 ## New verified deposits
 
 | Priority / series | Design actually visible in the deposit | Role and decision |
@@ -52,8 +61,9 @@ are not a queue for rerunning the entire repository.
 
 The [niche plan](NICHE_ANALYSIS_PLAN.md) makes macrophage/fibroblast
 ligand-receptor analysis and pathway enrichment required proposed arms.
-For GSE300288 and GSE308103, actual eligible cell coverage in each compartment
-is **not yet verified** by the two technical matrix checks. Require same-sample
+For GSE300288 and GSE308103, actual eligible cell coverage is now measured
+in the [completed context figure](README.md#figure-gallery) and biological-unit
+tables. Comparisons require same-sample
 sender/receiver coverage for each edge, all three compartments for a joint
 triad comparison, and verified animals or patient/lesion IDs. An assay that
 captures only epithelial cells cannot answer a missing stromal question.

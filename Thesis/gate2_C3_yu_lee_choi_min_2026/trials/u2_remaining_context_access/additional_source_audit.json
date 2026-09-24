@@ -1,0 +1,127 @@
+{
+  "checked_utc": "2026-09-24T12:59:49.707699+00:00",
+  "pasc_repository": "https://github.com/zang-lab/covidSTanalysis",
+  "pasc_commit": "42bf27f9661cc16b4fad843da2811e55b1d10d29",
+  "han_fulltext_endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10447247/fullTextXML",
+  "han_supplement_acquisition": {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10447247/supplementaryFiles",
+    "bytes": 5017188,
+    "sha256": "e6254fb11fed4fc755bbf979748b54f14d69c3b641b95c19d0a09e86d1a95cce",
+    "members": [
+      "41586_2023_6423_Article_Equa.gif",
+      "41586_2023_6423_Fig7_ESM.jpg",
+      "41586_2023_6423_MOESM5_ESM.xlsx",
+      "41586_2023_6423_MOESM10_ESM.xlsx",
+      "41586_2023_6423_Fig15_ESM.gif",
+      "41586_2023_6423_Fig2_HTML.gif",
+      "41586_2023_6423_Fig12_ESM.gif",
+      "41586_2023_6423_Fig17_ESM.jpg",
+      "41586_2023_6423_MOESM8_ESM.xlsx",
+      "41586_2023_6423_MOESM16_ESM.xlsx",
+      "41586_2023_6423_MOESM18_ESM.xlsx",
+      "41586_2023_6423_Fig18_ESM.jpg",
+      "41586_2023_6423_Fig8_ESM.gif",
+      "41586_2023_6423_Fig3_HTML.gif",
+      "41586_2023_6423_Fig18_ESM.gif",
+      "41586_2023_6423_MOESM2_ESM.pdf",
+      "41586_2023_6423_Fig6_ESM.jpg",
+      "41586_2023_6423_Fig14_ESM.gif",
+      "41586_2023_6423_Fig6_ESM.gif",
+      "41586_2023_6423_Fig1_HTML.jpg",
+      "41586_2023_6423_MOESM6_ESM.xlsx",
+      "41586_2023_6423_Fig10_ESM.gif",
+      "41586_2023_6423_Fig7_ESM.gif",
+      "41586_2023_6423_MOESM11_ESM.xlsx",
+      "41586_2023_6423_MOESM3_ESM.pdf",
+      "41586_2023_6423_Fig9_ESM.gif",
+      "41586_2023_6423_Fig11_ESM.jpg",
+      "41586_2023_6423_MOESM7_ESM.xlsx",
+      "41586_2023_6423_Fig13_ESM.jpg",
+      "41586_2023_6423_Tab1_ESM.gif",
+      "41586_2023_6423_Fig16_ESM.jpg",
+      "41586_2023_6423_Fig11_ESM.gif",
+      "41586_2023_6423_MOESM1_ESM.pdf",
+      "41586_2023_6423_Fig2_HTML.jpg",
+      "41586_2023_6423_Fig9_ESM.jpg",
+      "41586_2023_6423_Fig5_HTML.gif",
+      "41586_2023_6423_Fig12_ESM.jpg",
+      "41586_2023_6423_MOESM17_ESM.xlsx",
+      "41586_2023_6423_Tab1_ESM.jpg",
+      "41586_2023_6423_Fig1_HTML.gif",
+      "41586_2023_6423_MOESM15_ESM.xlsx",
+      "41586_2023_6423_Fig16_ESM.gif",
+      "41586_2023_6423_Fig14_ESM.jpg",
+      "41586_2023_6423_Fig17_ESM.gif",
+      "41586_2023_6423_Fig8_ESM.jpg",
+      "41586_2023_6423_Fig10_ESM.jpg",
+      "41586_2023_6423_Fig15_ESM.jpg",
+      "41586_2023_6423_MOESM12_ESM.xlsx",
+      "41586_2023_6423_MOESM4_ESM.zip",
+      "41586_2023_6423_Fig13_ESM.gif",
+      "41586_2023_6423_Fig3_HTML.jpg",
+      "41586_2023_6423_Fig4_HTML.jpg",
+      "41586_2023_6423_Fig4_HTML.gif",
+      "41586_2023_6423_Fig5_HTML.jpg",
+      "41586_2023_6423_MOESM14_ESM.xlsx",
+      "41586_2023_6423_MOESM13_ESM.xlsx",
+      "41586_2023_6423_MOESM9_ESM.xlsx"
+    ],
+    "previous_attempt": "Springer CDN DNS resolution failed; public Europe PMC supplementary endpoint used"
+  },
+  "files": [
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\GSE267226_filelist.txt",
+      "bytes": 955,
+      "sha256": "7a0956b15564bd1f0a9de810269b12b8f14a9fb42edcb7d998891d032c07e914"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\GSE267228_filelist.txt",
+      "bytes": 856,
+      "sha256": "72f075bd5be58a9a641d6cda62e15123b9a59a10924f991d5072998bf1f233d1"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\han_full_text.xml",
+      "bytes": 210765,
+      "sha256": "fefa82c7ca0ab229cf43a47ce1409c8ed975d37f018d73b7b5ab219dfbf51701"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\han_supplement_acquisition.json",
+      "bytes": 2529,
+      "sha256": "c09f89da94bc35da2a57afbba881dbf96ce8853cbb9a169f8504b057ae302109"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\pasc_commit.json",
+      "bytes": 5218,
+      "sha256": "8df27f814275c0715da4879c3d8211d6d925989cf22e1ec6cb9281aa8ebcc01c"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\pasc_README.md",
+      "bytes": 330,
+      "sha256": "f5e0df1f6fb36cf2c8358220dd7e91b923cfb73978e293ca7d84d62cf078a70a"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\pasc_ST_humanDEG_mouseDEG.R",
+      "bytes": 10338,
+      "sha256": "e0084d21d9d44fc2769011eb06ddd6db8e43541911aec52dc54446eee8887772"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\pasc_tree.json",
+      "bytes": 1142,
+      "sha256": "dc52a7202491cb3f4de9ad7e005271af6144cde04a6c6f412b0610f26efc7e62"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\pasc_visium_seurat_10x_humanLung.r",
+      "bytes": 148602,
+      "sha256": "946e61e4af73d5132ca261e6cbf9ca847c23bbb42068db017ab2c5d6c9af660a"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u2_remaining_context_access\\pasc_visium_seurat_10x_mouse.r",
+      "bytes": 87469,
+      "sha256": "e9170903e13da9fe3b46b60a39756ac389f66747482f9c2d353d59a6152475a0"
+    }
+  ],
+  "findings": {
+    "Han_original_developmental_matrix": "not found in audited author repository or supplements; original code references local 10x/RDS files; raw BioProjects not processed inputs",
+    "PASC_coordinates": "GEO file lists contain count H5 and image PNG files only; author code loads local complete Space Ranger directories; H5 structure audit still completes with expression run"
+  }
+}

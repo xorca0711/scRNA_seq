@@ -1,0 +1,19 @@
+{
+  "status": "passed_identical_eligibility",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "b6f23e50e720ef84ed2e6775b5e10c394190eb34a90596c2f3e9bdfd017d96f5",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u6_audit_pathway_coverage.py",
+    "entrypoint_sha256": "ca8d0927a196483b256f1577f1d9ad9cd9b0685370b45831ff082b5d050cd3f3"
+  },
+  "assessed_set_cohort_rows": 52,
+  "changed_rows": 0,
+  "minimum_assayed_fraction": 0.92,
+  "conclusion": "All declared coverage gates select identical pathway sets; identical inputs/designs give the existing CAMERA results and BH families without rerunning models.",
+  "source_memberships": {
+    "trials\\u5_ipf_spec\\pathway_genes.tsv": "46d7db90ff87a6c9c68913575ab5935c7b26dc515c2b5d8e907ea838bb7db869",
+    "trials\\u4_resources\\pathway_genes.tsv": "d1c97287becf99820e6013bf7485ec2b93d465ebe874f8ff508f4b78383a15fe"
+  }
+}

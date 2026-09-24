@@ -1,0 +1,32 @@
+{
+  "status": "review_tables_ready",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "b6f23e50e720ef84ed2e6775b5e10c394190eb34a90596c2f3e9bdfd017d96f5",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_review_human_full.py",
+    "entrypoint_sha256": "61e7cfcea4db050d23cf369a762f9a7cd763a82d63f16ad96aea433b11a5c746"
+  },
+  "libraries": 75,
+  "patients": 23,
+  "qc_cells": 555480,
+  "primary_confident_cells": 308646,
+  "sensitivity_confident_cells": 362208,
+  "assayed_reference_gene_fraction_min": 0.8655,
+  "assayed_reference_gene_fraction_max": 0.8655,
+  "marker_review_sha256": "837a04e8dc16795b669beeb8391585b045559004c4e8c379ec1cb88401ccd605",
+  "limitations": [
+    "healthy reference compatible candidate labels, not proof of nonmalignant identity",
+    "unassigned cells retained in QC records, excluded from subtype pseudobulks",
+    "fixed-RNA background means surfactant RNA alone cannot assign epithelial identity",
+    "fractions concern recovered assayed cells, not tissue abundance",
+    "histology labels come from deposition; no inferred normal-to-cancer lineage"
+  ],
+  "release_decision": "Coherent broad multi-marker support in each histology; release candidate-compartment analysis with confidence selection and cross-lineage RNA limitations. No relabelling, threshold change, malignant/KAC assignment or all-tissue source claim.",
+  "release_decision_status": "reviewed_for_reference_compatible_broad_niche_interpretation",
+  "reviewed_utc": "2026-09-24T13:51:27.860153+00:00",
+  "review_document": "ANNOTATION_REVIEW.md",
+  "source_attribution_limit": "Unassigned finest labels carry median 52-72% of observed IL1B counts by histology.",
+  "reviewer": "assistant manual inspection of full-cohort marker and patient-retention tables before paired effect interpretation"
+}

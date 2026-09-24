@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-09-24T14:31:48.926565+00:00",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "30e81e035e4f786b4f33349fb995e93582264179a408b6d091ebabfc91c27091",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u6_validate_release.py",
+    "entrypoint_sha256": "d11a37bc70264f07b9816e6608f8e0a1c5baa2c797b7f363d98c68e7331be02c"
+  },
+  "stages": [
+    {
+      "stage": "u5_ipf_pathways",
+      "validation_sha256": "b7dc8614b348f118d194762bf9584a55dbea6371c68f75133e1d4b454ffc57cb"
+    },
+    {
+      "stage": "u5_ipf_liana",
+      "validation_sha256": "1c5c4f6e23ed55d2c90e0349e0aec24fd68400ca82d645c045f0bc53da939179"
+    },
+    {
+      "stage": "u5_ipf_compatibility",
+      "validation_sha256": "5ccc4772dc1e233114576f317647227b8036c979a86fe6bb99d65e2295ce39ed"
+    },
+    {
+      "stage": "u5_liana_robustness",
+      "validation_sha256": "a8c2c1672980012f2ba73fd78e9a285fe706cf7cdfd1ceef3ce2492b4efb2760"
+    },
+    {
+      "stage": "u5_ligand_targets",
+      "validation_sha256": "0a3e14e2e725d51e48972fdadfded466ce6a2f3153e064f38b555c180559bc88"
+    },
+    {
+      "stage": "u4_mouse_niche",
+      "validation_sha256": "28c035f837ac2bae8c6c569f3311afbeb00545625529c0c87703a05a93d086a6"
+    },
+    {
+      "stage": "u6_specificity",
+      "validation_sha256": "a3c72ce5ce488f3679582607b432fd5fe47456407ac8d66f71fd769770128506"
+    },
+    {
+      "stage": "u6_isr_extension",
+      "validation_sha256": "9de97c4471d8e079f9e547aac3db636df985b28306fc803d0127cf085396f727"
+    },
+    {
+      "stage": "u6_ipf_specificity",
+      "validation_sha256": "c1161c39b34f3b0d84d85ce899051fc912d833aa399c327b528829ffb39c17ef"
+    },
+    {
+      "stage": "u5_spatial_context",
+      "validation_sha256": "c9d3735462579e62a91f795d9459aacef3a9cd46d875ea4f66609b0d58e82495"
+    },
+    {
+      "stage": "u5_human_niche",
+      "validation_sha256": "cb598ed91097ba7cef7bb2971f048a59083b7568c45fa06ba0288957be8cbc0f"
+    },
+    {
+      "stage": "u5_human_sources",
+      "validation_sha256": "b689e31bdd5af5d230bdabf9ab977682a99a4a83ed336a1501c0a25dc8fad507"
+    },
+    {
+      "stage": "u5_human_ligand_targets",
+      "validation_sha256": "dee213c39d674d1b27ee6bcd8c3c3b53de771dc20da807a4db41fa8a595a9570"
+    },
+    {
+      "stage": "u6_human_specificity",
+      "validation_sha256": "2200ea6a5e98c80b5c4b6490fe18fe5596f91d4ce3a085e8232cfa4e51c25c6c"
+    }
+  ],
+  "stage_validation_count": 14,
+  "frozen_human_scripts_verified": 4,
+  "local_markdown_links": "all_exist",
+  "forbidden_large_or_private_inputs_tracked": false,
+  "visually_reviewed_figures": 17,
+  "legacy_png_only_figures": [
+    "ipf_pathway_primary_and_sensitivity.png"
+  ],
+  "release_files": 534,
+  "release_bytes": 55058269,
+  "manifest_sha256": "3d5c2285f04199f7efe50297d60ecad82df27b811305ccf0396747e3181d2e91"
+}

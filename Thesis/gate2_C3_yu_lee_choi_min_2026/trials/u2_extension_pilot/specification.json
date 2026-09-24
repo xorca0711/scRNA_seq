@@ -1,0 +1,95 @@
+{
+  "frozen_utc": "2026-09-24T10:58:08.551017+00:00",
+  "patients": [
+    4,
+    6,
+    9
+  ],
+  "per_file_limit": 250000000,
+  "total_new_limit": 800000000,
+  "selection": "first three numeric patient labels with normal and AAH; all repeats; first spatial pair; first annotated HPCS object",
+  "jobs": [
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237904",
+      "patient": 4,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237904/suppl/GSM9237904_P4_Normal.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot"
+    },
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237905",
+      "patient": 4,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237905/suppl/GSM9237905_P4_Normal1.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot"
+    },
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237906",
+      "patient": 4,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237906/suppl/GSM9237906_P4_AAH.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot"
+    },
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237907",
+      "patient": 4,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237907/suppl/GSM9237907_P4_AAH1.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot"
+    },
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237912",
+      "patient": 6,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237912/suppl/GSM9237912_P6_Normal.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot"
+    },
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237913",
+      "patient": 6,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237913/suppl/GSM9237913_P6_AAH.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot"
+    },
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237921",
+      "patient": 9,
+      "histology": "normal",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237921/suppl/GSM9237921_P9_Normal.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot"
+    },
+    {
+      "series": "GSE308103",
+      "gsm": "GSM9237922",
+      "patient": 9,
+      "histology": "AAH",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237922/suppl/GSM9237922_P9_AAH.raw_counts.mtx.txt.gz",
+      "role": "paired_nucleus_pilot"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226168",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226168/suppl/GSM9226168_P1_AAH.tar.gz",
+      "role": "spatial_pair_pilot"
+    },
+    {
+      "series": "GSE307534",
+      "gsm": "GSM9226169",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226169/suppl/GSM9226169_P1_LUAD.tar.gz",
+      "role": "spatial_pair_pilot"
+    },
+    {
+      "series": "GSE277777",
+      "gsm": "GSM8529524",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529524/suppl/GSM8529524_IGO14143-slc4a11-traced.h5ad",
+      "role": "annotated_HPCS_feasibility"
+    }
+  ]
+}

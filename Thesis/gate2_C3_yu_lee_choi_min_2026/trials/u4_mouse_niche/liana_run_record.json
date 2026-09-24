@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "pid": 30228,
+  "started_utc": "2026-09-24T11:50:11.403692+00:00",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "192d4f600e86d182b8d5babdf6a1fa1568bd1fe1f1b8a1bd2876bd6f4d35d744",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u4_mouse_liana.py",
+    "entrypoint_sha256": "06f4cc4ff2b925b0b7b7053c7a743597472c8ae0015b8fa24ced117d01a5a767"
+  },
+  "completed_calls": 96,
+  "gsm": "GSM9057721",
+  "elapsed_seconds": 57.4,
+  "rows": 31130,
+  "validation": "all native edges equal independent subunit/pair eligibility; unique bounded scores; no P values",
+  "updated_utc": "2026-09-24T11:51:09.079555+00:00"
+}

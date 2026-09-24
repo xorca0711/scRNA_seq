@@ -1,0 +1,71 @@
+{
+  "frozen_utc": "2026-09-24T13:43:56.546568+00:00",
+  "compartments": {
+    "AT2": [
+      "AT2",
+      "AT2 proliferating"
+    ],
+    "fibroblasts": [
+      "Adventitial fibroblasts",
+      "Alveolar fibroblasts",
+      "Myofibroblasts",
+      "Peribronchial fibroblasts"
+    ],
+    "macrophages": [
+      "Alveolar Mph proliferating",
+      "Alveolar macrophages",
+      "Interstitial Mph perivascular",
+      "Monocyte-derived Mph"
+    ]
+  },
+  "contrasts": [
+    {
+      "case": "AAH",
+      "reference": "normal"
+    },
+    {
+      "case": "AIS",
+      "reference": "normal"
+    },
+    {
+      "case": "MIA",
+      "reference": "normal"
+    },
+    {
+      "case": "LUAD",
+      "reference": "normal"
+    },
+    {
+      "case": "LUAD",
+      "reference": "AAH"
+    },
+    {
+      "case": "LUAD",
+      "reference": "AIS"
+    },
+    {
+      "case": "LUAD",
+      "reference": "MIA"
+    }
+  ],
+  "unit": "patient; same-histology libraries pooled; precursors never pooled together",
+  "primary": {
+    "uncertainty": 0.2,
+    "library_mode": "pooled",
+    "cell_floor": 50
+  },
+  "sensitivities": {
+    "uncertainty": 0.3,
+    "library_mode": "largest_QC_library_per_patient_histology",
+    "cell_floors": [
+      30,
+      100
+    ]
+  },
+  "paired_minimum": 3,
+  "assayed_fraction_minimum": 0.7,
+  "tested_pathway_genes_minimum": 10,
+  "identity_limits": "healthy-atlas candidate labels; low-confidence cells remain unassigned; no malignant/KAC/DATP assignment; assay background can affect RNA compatibility",
+  "selection_rule": "largest QC cell library chosen without subtype or expression results; same chosen library used for every subtype",
+  "input_processing_record_sha256": "ff33bd46f4a3356d5a73dac87a8162ad744357b18a3ad2eeaffcde0895d9740c"
+}

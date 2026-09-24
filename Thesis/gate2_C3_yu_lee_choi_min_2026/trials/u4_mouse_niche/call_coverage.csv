@@ -1,0 +1,97 @@
+gsm,treatment,resource,config,cells,pairs,retained_edges
+GSM9057709,Control IgG,consensus,all_cells_primary,548,8,243
+GSM9057709,Control IgG,cellchatdb,all_cells_primary,548,8,66
+GSM9057709,Control IgG,consensus,cap500_seed1,548,8,243
+GSM9057709,Control IgG,cellchatdb,cap500_seed1,548,8,66
+GSM9057709,Control IgG,consensus,cap500_seed2,548,8,243
+GSM9057709,Control IgG,cellchatdb,cap500_seed2,548,8,66
+GSM9057709,Control IgG,consensus,floor30,548,8,243
+GSM9057709,Control IgG,cellchatdb,floor30,548,8,66
+GSM9057709,Control IgG,consensus,expression005,548,8,403
+GSM9057709,Control IgG,cellchatdb,expression005,548,8,185
+GSM9057709,Control IgG,consensus,expression020,548,8,76
+GSM9057709,Control IgG,cellchatdb,expression020,548,8,13
+GSM9057712,Control IgG,consensus,all_cells_primary,867,12,234
+GSM9057712,Control IgG,cellchatdb,all_cells_primary,867,12,27
+GSM9057712,Control IgG,consensus,cap500_seed1,867,12,234
+GSM9057712,Control IgG,cellchatdb,cap500_seed1,867,12,27
+GSM9057712,Control IgG,consensus,cap500_seed2,867,12,234
+GSM9057712,Control IgG,cellchatdb,cap500_seed2,867,12,27
+GSM9057712,Control IgG,consensus,floor30,905,20,523
+GSM9057712,Control IgG,cellchatdb,floor30,905,20,132
+GSM9057712,Control IgG,consensus,floor100,679,4,78
+GSM9057712,Control IgG,cellchatdb,floor100,679,4,9
+GSM9057712,Control IgG,consensus,expression005,867,12,340
+GSM9057712,Control IgG,cellchatdb,expression005,867,12,81
+GSM9057712,Control IgG,consensus,expression020,867,12,134
+GSM9057712,Control IgG,cellchatdb,expression020,867,12,10
+GSM9057713,anti-IL-1β,consensus,all_cells_primary,1455,20,482
+GSM9057713,anti-IL-1β,cellchatdb,all_cells_primary,1455,20,129
+GSM9057713,anti-IL-1β,consensus,cap500_seed1,1455,20,482
+GSM9057713,anti-IL-1β,cellchatdb,cap500_seed1,1455,20,129
+GSM9057713,anti-IL-1β,consensus,cap500_seed2,1455,20,482
+GSM9057713,anti-IL-1β,cellchatdb,cap500_seed2,1455,20,129
+GSM9057713,anti-IL-1β,consensus,floor30,1491,28,587
+GSM9057713,anti-IL-1β,cellchatdb,floor30,1491,28,151
+GSM9057713,anti-IL-1β,consensus,floor100,1455,20,482
+GSM9057713,anti-IL-1β,cellchatdb,floor100,1455,20,129
+GSM9057713,anti-IL-1β,consensus,expression005,1455,20,767
+GSM9057713,anti-IL-1β,cellchatdb,expression005,1455,20,292
+GSM9057713,anti-IL-1β,consensus,expression020,1455,20,261
+GSM9057713,anti-IL-1β,cellchatdb,expression020,1455,20,39
+GSM9057716,Control IgG,consensus,all_cells_primary,1486,28,811
+GSM9057716,Control IgG,cellchatdb,all_cells_primary,1486,28,222
+GSM9057716,Control IgG,consensus,cap500_seed1,1486,28,811
+GSM9057716,Control IgG,cellchatdb,cap500_seed1,1486,28,222
+GSM9057716,Control IgG,consensus,cap500_seed2,1486,28,811
+GSM9057716,Control IgG,cellchatdb,cap500_seed2,1486,28,222
+GSM9057716,Control IgG,consensus,floor30,1486,28,811
+GSM9057716,Control IgG,cellchatdb,floor30,1486,28,222
+GSM9057716,Control IgG,consensus,floor100,1362,13,411
+GSM9057716,Control IgG,cellchatdb,floor100,1362,13,123
+GSM9057716,Control IgG,consensus,expression005,1486,28,1364
+GSM9057716,Control IgG,cellchatdb,expression005,1486,28,642
+GSM9057716,Control IgG,consensus,expression020,1486,28,366
+GSM9057716,Control IgG,cellchatdb,expression020,1486,28,51
+GSM9057717,anti-IL-1β,consensus,all_cells_primary,677,6,133
+GSM9057717,anti-IL-1β,cellchatdb,all_cells_primary,677,6,18
+GSM9057717,anti-IL-1β,consensus,cap500_seed1,677,6,133
+GSM9057717,anti-IL-1β,cellchatdb,cap500_seed1,677,6,18
+GSM9057717,anti-IL-1β,consensus,cap500_seed2,677,6,133
+GSM9057717,anti-IL-1β,cellchatdb,cap500_seed2,677,6,18
+GSM9057717,anti-IL-1β,consensus,floor30,766,20,560
+GSM9057717,anti-IL-1β,cellchatdb,floor30,766,20,146
+GSM9057717,anti-IL-1β,consensus,floor100,582,4,87
+GSM9057717,anti-IL-1β,cellchatdb,floor100,582,4,12
+GSM9057717,anti-IL-1β,consensus,expression005,677,6,190
+GSM9057717,anti-IL-1β,cellchatdb,expression005,677,6,53
+GSM9057717,anti-IL-1β,consensus,expression020,677,6,78
+GSM9057717,anti-IL-1β,cellchatdb,expression020,677,6,6
+GSM9057720,Control IgG,consensus,all_cells_primary,1469,28,873
+GSM9057720,Control IgG,cellchatdb,all_cells_primary,1469,28,255
+GSM9057720,Control IgG,consensus,cap500_seed1,1469,28,873
+GSM9057720,Control IgG,cellchatdb,cap500_seed1,1469,28,255
+GSM9057720,Control IgG,consensus,cap500_seed2,1469,28,873
+GSM9057720,Control IgG,cellchatdb,cap500_seed2,1469,28,255
+GSM9057720,Control IgG,consensus,floor30,1469,28,873
+GSM9057720,Control IgG,cellchatdb,floor30,1469,28,255
+GSM9057720,Control IgG,consensus,floor100,1374,20,701
+GSM9057720,Control IgG,cellchatdb,floor100,1374,20,234
+GSM9057720,Control IgG,consensus,expression005,1469,28,1470
+GSM9057720,Control IgG,cellchatdb,expression005,1469,28,724
+GSM9057720,Control IgG,consensus,expression020,1469,28,435
+GSM9057720,Control IgG,cellchatdb,expression020,1469,28,73
+GSM9057721,anti-IL-1β,consensus,all_cells_primary,2053,28,689
+GSM9057721,anti-IL-1β,cellchatdb,all_cells_primary,2053,28,143
+GSM9057721,anti-IL-1β,consensus,cap500_seed1,2031,28,689
+GSM9057721,anti-IL-1β,cellchatdb,cap500_seed1,2031,28,143
+GSM9057721,anti-IL-1β,consensus,cap500_seed2,2031,28,689
+GSM9057721,anti-IL-1β,cellchatdb,cap500_seed2,2031,28,146
+GSM9057721,anti-IL-1β,consensus,floor30,2053,28,689
+GSM9057721,anti-IL-1β,cellchatdb,floor30,2053,28,143
+GSM9057721,anti-IL-1β,consensus,floor100,2053,28,689
+GSM9057721,anti-IL-1β,cellchatdb,floor100,2053,28,143
+GSM9057721,anti-IL-1β,consensus,expression005,2053,28,1027
+GSM9057721,anti-IL-1β,cellchatdb,expression005,2053,28,318
+GSM9057721,anti-IL-1β,consensus,expression020,2053,28,226
+GSM9057721,anti-IL-1β,cellchatdb,expression020,2053,28,29

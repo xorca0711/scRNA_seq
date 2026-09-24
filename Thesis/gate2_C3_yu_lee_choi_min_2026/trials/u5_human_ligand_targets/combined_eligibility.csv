@@ -1,0 +1,125 @@
+comp,label,case,reference,direction,scope,target_eligible,eligible_ligands,mapped_targets
+AT2,AT2,AAH,normal,up,both,False,0,1.0
+AT2,AT2,AAH,normal,down,both,False,0,2.0
+AT2,AT2,AIS,normal,up,focused_triad,True,11,30.0
+AT2,AT2,AIS,normal,down,focused_triad,False,0,6.0
+AT2,AT2,AIS,normal,up,source_agnostic_planned_panel,True,19,30.0
+AT2,AT2,AIS,normal,down,source_agnostic_planned_panel,False,0,6.0
+AT2,AT2,LUAD,AAH,up,focused_triad,True,9,781.0
+AT2,AT2,LUAD,AAH,down,focused_triad,True,9,645.0
+AT2,AT2,LUAD,AAH,up,source_agnostic_planned_panel,True,18,781.0
+AT2,AT2,LUAD,AAH,down,source_agnostic_planned_panel,True,18,645.0
+AT2,AT2,LUAD,AIS,up,focused_triad,True,9,41.0
+AT2,AT2,LUAD,AIS,down,focused_triad,False,0,3.0
+AT2,AT2,LUAD,AIS,up,source_agnostic_planned_panel,True,19,41.0
+AT2,AT2,LUAD,AIS,down,source_agnostic_planned_panel,False,0,3.0
+AT2,AT2,LUAD,MIA,up,both,False,0,2.0
+AT2,AT2,LUAD,MIA,down,both,False,0,0.0
+AT2,AT2,LUAD,normal,up,focused_triad,True,13,2934.0
+AT2,AT2,LUAD,normal,down,focused_triad,True,13,2644.0
+AT2,AT2,LUAD,normal,up,source_agnostic_planned_panel,True,21,2934.0
+AT2,AT2,LUAD,normal,down,source_agnostic_planned_panel,True,21,2644.0
+AT2,AT2,MIA,normal,up,focused_triad,True,6,118.0
+AT2,AT2,MIA,normal,down,focused_triad,True,6,80.0
+AT2,AT2,MIA,normal,up,source_agnostic_planned_panel,True,12,118.0
+AT2,AT2,MIA,normal,down,source_agnostic_planned_panel,True,12,80.0
+AT2,__broad__,AAH,normal,up,both,False,0,1.0
+AT2,__broad__,AAH,normal,down,both,False,0,2.0
+AT2,__broad__,AIS,normal,up,focused_triad,True,11,30.0
+AT2,__broad__,AIS,normal,down,focused_triad,False,0,6.0
+AT2,__broad__,AIS,normal,up,source_agnostic_planned_panel,True,19,30.0
+AT2,__broad__,AIS,normal,down,source_agnostic_planned_panel,False,0,6.0
+AT2,__broad__,LUAD,AAH,up,focused_triad,True,9,908.0
+AT2,__broad__,LUAD,AAH,down,focused_triad,True,9,801.0
+AT2,__broad__,LUAD,AAH,up,source_agnostic_planned_panel,True,18,908.0
+AT2,__broad__,LUAD,AAH,down,source_agnostic_planned_panel,True,18,801.0
+AT2,__broad__,LUAD,AIS,up,focused_triad,True,9,43.0
+AT2,__broad__,LUAD,AIS,down,focused_triad,False,0,3.0
+AT2,__broad__,LUAD,AIS,up,source_agnostic_planned_panel,True,19,43.0
+AT2,__broad__,LUAD,AIS,down,source_agnostic_planned_panel,False,0,3.0
+AT2,__broad__,LUAD,MIA,up,both,False,0,2.0
+AT2,__broad__,LUAD,MIA,down,both,False,0,0.0
+AT2,__broad__,LUAD,normal,up,focused_triad,True,14,3013.0
+AT2,__broad__,LUAD,normal,down,focused_triad,True,14,2801.0
+AT2,__broad__,LUAD,normal,up,source_agnostic_planned_panel,True,22,3013.0
+AT2,__broad__,LUAD,normal,down,source_agnostic_planned_panel,True,22,2801.0
+AT2,__broad__,MIA,normal,up,focused_triad,True,6,117.0
+AT2,__broad__,MIA,normal,down,focused_triad,True,6,81.0
+AT2,__broad__,MIA,normal,up,source_agnostic_planned_panel,True,12,117.0
+AT2,__broad__,MIA,normal,down,source_agnostic_planned_panel,True,12,81.0
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,up,focused_triad,True,5,201.0
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,down,focused_triad,True,5,21.0
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,up,source_agnostic_planned_panel,True,15,201.0
+fibroblasts,Adventitial fibroblasts,LUAD,AIS,down,source_agnostic_planned_panel,True,15,21.0
+fibroblasts,Alveolar fibroblasts,AAH,normal,up,both,False,0,0.0
+fibroblasts,Alveolar fibroblasts,AAH,normal,down,both,False,0,0.0
+fibroblasts,Alveolar fibroblasts,AIS,normal,up,both,False,0,0.0
+fibroblasts,Alveolar fibroblasts,AIS,normal,down,both,False,0,0.0
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,up,focused_triad,True,7,327.0
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,down,focused_triad,True,7,29.0
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,up,source_agnostic_planned_panel,True,17,327.0
+fibroblasts,Alveolar fibroblasts,LUAD,AAH,down,source_agnostic_planned_panel,True,17,29.0
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,up,focused_triad,True,6,74.0
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,down,focused_triad,True,6,25.0
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,up,source_agnostic_planned_panel,True,18,74.0
+fibroblasts,Alveolar fibroblasts,LUAD,AIS,down,source_agnostic_planned_panel,True,18,25.0
+fibroblasts,Alveolar fibroblasts,LUAD,MIA,up,both,False,0,4.0
+fibroblasts,Alveolar fibroblasts,LUAD,MIA,down,both,False,0,0.0
+fibroblasts,Alveolar fibroblasts,LUAD,normal,up,focused_triad,True,10,1091.0
+fibroblasts,Alveolar fibroblasts,LUAD,normal,down,focused_triad,True,10,616.0
+fibroblasts,Alveolar fibroblasts,LUAD,normal,up,source_agnostic_planned_panel,True,21,1091.0
+fibroblasts,Alveolar fibroblasts,LUAD,normal,down,source_agnostic_planned_panel,True,21,616.0
+fibroblasts,Alveolar fibroblasts,MIA,normal,up,both,False,0,0.0
+fibroblasts,Alveolar fibroblasts,MIA,normal,down,both,False,0,0.0
+fibroblasts,__broad__,AAH,normal,up,both,False,0,0.0
+fibroblasts,__broad__,AAH,normal,down,both,False,0,0.0
+fibroblasts,__broad__,AIS,normal,up,both,False,0,0.0
+fibroblasts,__broad__,AIS,normal,down,both,False,0,0.0
+fibroblasts,__broad__,LUAD,AAH,up,focused_triad,True,7,520.0
+fibroblasts,__broad__,LUAD,AAH,down,focused_triad,True,7,177.0
+fibroblasts,__broad__,LUAD,AAH,up,source_agnostic_planned_panel,True,17,520.0
+fibroblasts,__broad__,LUAD,AAH,down,source_agnostic_planned_panel,True,17,177.0
+fibroblasts,__broad__,LUAD,AIS,up,focused_triad,True,6,49.0
+fibroblasts,__broad__,LUAD,AIS,down,focused_triad,False,0,9.0
+fibroblasts,__broad__,LUAD,AIS,up,source_agnostic_planned_panel,True,18,49.0
+fibroblasts,__broad__,LUAD,AIS,down,source_agnostic_planned_panel,False,0,9.0
+fibroblasts,__broad__,LUAD,MIA,up,focused_triad,True,5,160.0
+fibroblasts,__broad__,LUAD,MIA,down,focused_triad,True,5,78.0
+fibroblasts,__broad__,LUAD,MIA,up,source_agnostic_planned_panel,True,13,160.0
+fibroblasts,__broad__,LUAD,MIA,down,source_agnostic_planned_panel,True,13,78.0
+fibroblasts,__broad__,LUAD,normal,up,focused_triad,True,10,2115.0
+fibroblasts,__broad__,LUAD,normal,down,focused_triad,True,10,1873.0
+fibroblasts,__broad__,LUAD,normal,up,source_agnostic_planned_panel,True,21,2115.0
+fibroblasts,__broad__,LUAD,normal,down,source_agnostic_planned_panel,True,21,1873.0
+fibroblasts,__broad__,MIA,normal,up,both,False,0,0.0
+fibroblasts,__broad__,MIA,normal,down,both,False,0,0.0
+macrophages,Alveolar macrophages,AAH,normal,up,both,False,0,6.0
+macrophages,Alveolar macrophages,AAH,normal,down,both,False,0,9.0
+macrophages,Alveolar macrophages,AIS,normal,up,both,False,0,1.0
+macrophages,Alveolar macrophages,AIS,normal,down,both,False,0,3.0
+macrophages,Alveolar macrophages,LUAD,AAH,up,focused_triad,True,5,17.0
+macrophages,Alveolar macrophages,LUAD,AAH,down,focused_triad,False,0,1.0
+macrophages,Alveolar macrophages,LUAD,AAH,up,source_agnostic_planned_panel,True,17,17.0
+macrophages,Alveolar macrophages,LUAD,AAH,down,source_agnostic_planned_panel,False,0,1.0
+macrophages,Alveolar macrophages,LUAD,AIS,up,both,False,0,6.0
+macrophages,Alveolar macrophages,LUAD,AIS,down,both,False,0,1.0
+macrophages,Alveolar macrophages,LUAD,normal,up,focused_triad,True,7,100.0
+macrophages,Alveolar macrophages,LUAD,normal,down,focused_triad,False,0,6.0
+macrophages,Alveolar macrophages,LUAD,normal,up,source_agnostic_planned_panel,True,22,100.0
+macrophages,Alveolar macrophages,LUAD,normal,down,source_agnostic_planned_panel,False,0,6.0
+macrophages,__broad__,AAH,normal,up,both,False,0,0.0
+macrophages,__broad__,AAH,normal,down,both,False,0,0.0
+macrophages,__broad__,AIS,normal,up,both,False,0,2.0
+macrophages,__broad__,AIS,normal,down,both,False,0,3.0
+macrophages,__broad__,LUAD,AAH,up,focused_triad,True,7,57.0
+macrophages,__broad__,LUAD,AAH,down,focused_triad,False,0,1.0
+macrophages,__broad__,LUAD,AAH,up,source_agnostic_planned_panel,True,19,57.0
+macrophages,__broad__,LUAD,AAH,down,source_agnostic_planned_panel,False,0,1.0
+macrophages,__broad__,LUAD,AIS,up,both,False,0,9.0
+macrophages,__broad__,LUAD,AIS,down,both,False,0,0.0
+macrophages,__broad__,LUAD,MIA,up,both,False,0,0.0
+macrophages,__broad__,LUAD,MIA,down,both,False,0,0.0
+macrophages,__broad__,LUAD,normal,up,focused_triad,True,8,422.0
+macrophages,__broad__,LUAD,normal,down,focused_triad,True,8,203.0
+macrophages,__broad__,LUAD,normal,up,source_agnostic_planned_panel,True,23,422.0
+macrophages,__broad__,LUAD,normal,down,source_agnostic_planned_panel,True,23,203.0

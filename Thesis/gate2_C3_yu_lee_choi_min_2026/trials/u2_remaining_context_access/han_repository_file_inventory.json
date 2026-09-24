@@ -1,0 +1,349 @@
+{
+  "commit": "e1cbecd5dc0e36cc3b22f266804597b179096514",
+  "files": [
+    {
+      "path": "Bulk/NDUFS2 cKO P35 and P6.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20c4d870875f65d1cd0e1f2a556eabc4781c23a0",
+      "size": 5872,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/20c4d870875f65d1cd0e1f2a556eabc4781c23a0"
+    },
+    {
+      "path": "Bulk/NDUFS2 cKO mice.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb9bc8ec792444b6b6773c1caf8947afa00f77a7",
+      "size": 3698,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/cb9bc8ec792444b6b6773c1caf8947afa00f77a7"
+    },
+    {
+      "path": "Bulk/NDUFS2 cKO, ISRIB and NMN.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62e10c99bc86b22578f913e8c1e3ebe652fbf487",
+      "size": 6513,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/62e10c99bc86b22578f913e8c1e3ebe652fbf487"
+    },
+    {
+      "path": "Bulk/P6 PCA Plot.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "542c0ce8ef4a90eb4c6f1ed25bc7ac47440eff65",
+      "size": 2042,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/542c0ce8ef4a90eb4c6f1ed25bc7ac47440eff65"
+    },
+    {
+      "path": "Bulk/P6 WT cultured.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f5256ec97cc55f097b118ad54617b850a5b38a3",
+      "size": 4528,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/2f5256ec97cc55f097b118ad54617b850a5b38a3"
+    },
+    {
+      "path": "Bulk/Sdhd cKO and Ndufs2 cKO.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "569b01fe1d7a9d5a750b3d3f612ce3b1faf14a2a",
+      "size": 4177,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/569b01fe1d7a9d5a750b3d3f612ce3b1faf14a2a"
+    },
+    {
+      "path": "Bulk/isr.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3f347dfa6eab4d15eb443fbdd87338c77c443f4",
+      "size": 805,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/f3f347dfa6eab4d15eb443fbdd87338c77c443f4"
+    },
+    {
+      "path": "Bulk/isrib_bulk/gene_read_counts_table_all_final.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e898eb1918ff599d1e8469825aabd624e80f4969",
+      "size": 5651272,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/e898eb1918ff599d1e8469825aabd624e80f4969"
+    },
+    {
+      "path": "Bulk/nd_p6/sample_info_nd_p6.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "324043381570c6b54e26bd4b1369f71d3bb926e3",
+      "size": 758,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/324043381570c6b54e26bd4b1369f71d3bb926e3"
+    },
+    {
+      "path": "Bulk/nd_sd/sample_info.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b61bb640639a5975853bbae65f8840c099fe94a5",
+      "size": 628,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/b61bb640639a5975853bbae65f8840c099fe94a5"
+    },
+    {
+      "path": "Bulk/ndufs2_bulk/gene_read_counts_table_all_final.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "732f073be746f94e2df49ea4d0bf534611afdf0c",
+      "size": 5041468,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/732f073be746f94e2df49ea4d0bf534611afdf0c"
+    },
+    {
+      "path": "Bulk/ndufs2_bulk/sample_info.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5767546b5a68a576de59fa086f8a3572130fb589",
+      "size": 593,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/5767546b5a68a576de59fa086f8a3572130fb589"
+    },
+    {
+      "path": "Bulk/ndufs2_isrib_nmn/sample_info.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8fc6357e26b4e0def65cdae92f2e051057eec3a",
+      "size": 1835,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/f8fc6357e26b4e0def65cdae92f2e051057eec3a"
+    },
+    {
+      "path": "Bulk/nmn_bulk/gene_read_counts_table_all_final.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5858083beae0d3519158319d90ec92f93690ebdb",
+      "size": 5116603,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/5858083beae0d3519158319d90ec92f93690ebdb"
+    },
+    {
+      "path": "Bulk/p6_bulk/P6_10_gene.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "268670c4cad87b054ef9939c24e4e38b48ae9717",
+      "size": 1190784,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/268670c4cad87b054ef9939c24e4e38b48ae9717"
+    },
+    {
+      "path": "Bulk/p6_bulk/P6_11_gene.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9e3dc6d7252e069c3242267fe24ed634af6a6b9",
+      "size": 1191040,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/d9e3dc6d7252e069c3242267fe24ed634af6a6b9"
+    },
+    {
+      "path": "Bulk/p6_bulk/P6_12_gene.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f629fd6b8642ac8d69296c6025cce9b653cb4062",
+      "size": 1192102,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/f629fd6b8642ac8d69296c6025cce9b653cb4062"
+    },
+    {
+      "path": "Bulk/p6_bulk/P6_1_gene.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84a3bfac50f5c839dec73c77453386672d893698",
+      "size": 1190783,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/84a3bfac50f5c839dec73c77453386672d893698"
+    },
+    {
+      "path": "Bulk/p6_bulk/P6_2_gene.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2865687dc337e68fa676db6848add89abccc1c6a",
+      "size": 1190876,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/2865687dc337e68fa676db6848add89abccc1c6a"
+    },
+    {
+      "path": "Bulk/p6_bulk/P6_3_gene.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf26ba546f96ff95fbe14c4de9cb153800481823",
+      "size": 1191503,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/bf26ba546f96ff95fbe14c4de9cb153800481823"
+    },
+    {
+      "path": "Bulk/p6_bulk/P6_4_gene.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cf54d8c222cede093a977d5fee8c0d7544b6044",
+      "size": 1191252,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/6cf54d8c222cede093a977d5fee8c0d7544b6044"
+    },
+    {
+      "path": "Bulk/p6_bulk/P6_5_gene.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b84582825186136ed798bb92a127df9f32cd4dd6",
+      "size": 1190679,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/b84582825186136ed798bb92a127df9f32cd4dd6"
+    },
+    {
+      "path": "Bulk/p6_bulk/P6_6_gene.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bc74b0631b83585ef5568d77a0687d832ddffa4",
+      "size": 1191499,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/7bc74b0631b83585ef5568d77a0687d832ddffa4"
+    },
+    {
+      "path": "Bulk/p6_bulk/P6_7_gene.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "632d16bbd09844e53adf07454cbc3f34313ec3bc",
+      "size": 1191305,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/632d16bbd09844e53adf07454cbc3f34313ec3bc"
+    },
+    {
+      "path": "Bulk/p6_bulk/P6_8_gene.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a5ba42da833e3bbf80a0882860df75aebdfe2f8",
+      "size": 1191994,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/7a5ba42da833e3bbf80a0882860df75aebdfe2f8"
+    },
+    {
+      "path": "Bulk/p6_bulk/P6_9_gene.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be663b64951ec03649c30dcfbfdc64611da0f1c8",
+      "size": 1191302,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/be663b64951ec03649c30dcfbfdc64611da0f1c8"
+    },
+    {
+      "path": "Bulk/p6_bulk/gene_read_counts_table_all_final.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba75bc8d74b9b4cdf2cd450e975081c091fc2087",
+      "size": 2711924,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/ba75bc8d74b9b4cdf2cd450e975081c091fc2087"
+    },
+    {
+      "path": "Bulk/p6_bulk/sample_info_p6.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b54f56482a63a83a9b3a80332944919d6c70d16",
+      "size": 188,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/1b54f56482a63a83a9b3a80332944919d6c70d16"
+    },
+    {
+      "path": "Bulk/p6_wt_bulk/gene_read_counts_table_all_final.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eac4fecff13a5470e2af6a43b8b503ef4f3ce07a",
+      "size": 4560139,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/eac4fecff13a5470e2af6a43b8b503ef4f3ce07a"
+    },
+    {
+      "path": "Bulk/p6_wt_bulk/sample_info_p6_wt.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea3e043bc8d97172665f4adecd5109d190c9ef7f",
+      "size": 818,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/ea3e043bc8d97172665f4adecd5109d190c9ef7f"
+    },
+    {
+      "path": "Bulk/sdhd_bulk/gene_read_counts_table_all_final.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a327b821918cadb44f915c43ab5cfbcfa23dfebc",
+      "size": 2787777,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/a327b821918cadb44f915c43ab5cfbcfa23dfebc"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b2d331291986c1d9b9ed0421791f01d4c72b1b8",
+      "size": 1902,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/4b2d331291986c1d9b9ed0421791f01d4c72b1b8"
+    },
+    {
+      "path": "scRNA/AT1 Pseudobulk.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b394ca58eb249763c92c21ae5649e61755babda",
+      "size": 4085,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/9b394ca58eb249763c92c21ae5649e61755babda"
+    },
+    {
+      "path": "scRNA/Integration Hurskainen Han.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ee5d2f5cd5bcbff87ecf6f7c15fd02323355ea5",
+      "size": 4169,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/1ee5d2f5cd5bcbff87ecf6f7c15fd02323355ea5"
+    },
+    {
+      "path": "scRNA/Integration Hurskainen Han.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1b49e74dc9c43ab07dc6eae249dec77e5e62ecd",
+      "size": 6052,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/a1b49e74dc9c43ab07dc6eae249dec77e5e62ecd"
+    },
+    {
+      "path": "scRNA/Integration Negretti Han.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b45b26fa8fa099a121b66823da2911e0054a9a9",
+      "size": 4037,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/5b45b26fa8fa099a121b66823da2911e0054a9a9"
+    },
+    {
+      "path": "scRNA/Integration Negretti Han.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e52c0d5669a67c520437fb2e951e63ce5f8e3ea",
+      "size": 7196,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/6e52c0d5669a67c520437fb2e951e63ce5f8e3ea"
+    },
+    {
+      "path": "scRNA/Other models and NDUFS2 cKO Epithelium.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c75a725c2f97340c3ce509ad5867dbcb49c3a0e5",
+      "size": 4741,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/c75a725c2f97340c3ce509ad5867dbcb49c3a0e5"
+    },
+    {
+      "path": "scRNA/Processing",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ca7e974cea9ce2a34eede05e7fa7c8986f84740",
+      "size": 3288,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/6ca7e974cea9ce2a34eede05e7fa7c8986f84740"
+    },
+    {
+      "path": "scRNA/Subset AT1 cells.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6541d4f06a7a15734d18071f5bba7407c2b19371",
+      "size": 1221,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/6541d4f06a7a15734d18071f5bba7407c2b19371"
+    },
+    {
+      "path": "scRNA/Subset Mesenchymal.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1819a302cffce16098541c08a6998a73c425737a",
+      "size": 4116,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/1819a302cffce16098541c08a6998a73c425737a"
+    },
+    {
+      "path": "scRNA/Subset epithelial.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bd79ef571d16055f156c381300d3d699292e9c3",
+      "size": 9841,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/1bd79ef571d16055f156c381300d3d699292e9c3"
+    },
+    {
+      "path": "scRNA/Whole clusters.R",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "195ce4bc36eaaf8708cca8ac393b5fa73e5bd324",
+      "size": 15604,
+      "url": "https://api.github.com/repos/MinhoLee-DGU/2023.Han.et.al.Nature/git/blobs/195ce4bc36eaaf8708cca8ac393b5fa73e5bd324"
+    }
+  ]
+}

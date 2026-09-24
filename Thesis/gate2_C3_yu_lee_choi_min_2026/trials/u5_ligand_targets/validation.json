@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-09-24T11:51:52.329024+00:00",
+  "primary_candidate_rows": 274,
+  "rows_with_omissions": 8750,
+  "source_pairs": 8773,
+  "checks": [
+    "unique ranking keys",
+    "same-donor expression support >=50 cells and >=10% detection",
+    "fixed source label >=3 IPF donors",
+    "at least ten mapped DE targets",
+    "full DE parity and centered-vector Pearson checks in R"
+  ]
+}

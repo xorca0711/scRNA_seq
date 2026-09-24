@@ -1,0 +1,29 @@
+{
+  "status": "completed",
+  "started_utc": "2026-09-24T11:15:46.667267+00:00",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracked_changes_present": false,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u2_acquire_ligand_prior.py",
+    "entrypoint_sha256": "e5119aa450537c565f051d818bf913f88346ebb215eca4a2c225777c429f268f"
+  },
+  "files": [
+    {
+      "name": "ligand_target_matrix_nsga2r_final.rds",
+      "url": "https://zenodo.org/records/7074291/files/ligand_target_matrix_nsga2r_final.rds?download=1",
+      "bytes": 262116605,
+      "md5": "b09606b04b2d4490418d9028c0e58b9f",
+      "sha256": "699fce17ff65e2511277359696306bb130aa833bd7f30dd9290ad9efd9dc9c5d"
+    },
+    {
+      "name": "lr_network_human_21122021.rds",
+      "url": "https://zenodo.org/records/7074291/files/lr_network_human_21122021.rds?download=1",
+      "bytes": 20724,
+      "md5": "2a155f81e9ffffd5d5e709fe66bcc465",
+      "sha256": "47c971d2fbba4ecd0ba7485d1846a74054432a0d1a97ea3e6a79ae27d0da8094"
+    }
+  ],
+  "elapsed_seconds": 286.3
+}

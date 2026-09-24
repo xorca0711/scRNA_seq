@@ -1,0 +1,22 @@
+{
+  "status": "completed_computations_require_reports",
+  "pid": 15660,
+  "started_utc": "2026-09-24T12:50:58.916375+00:00",
+  "stage": "source_filter_and_reports",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "88dccae159df7553c076b13aff012ac502747e918bac7a3f4e9b087403b67e27",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_run_human_paired.py",
+    "entrypoint_sha256": "606134f32b94403b532d82244d3abc3e1935761c666ddb79a7c777e954b96ee1"
+  },
+  "completed": [
+    "u5_human_aggregate.py",
+    "u5_human_paired_pathways.R",
+    "u5_human_compatibility.py",
+    "u5_human_ligand_refits.R"
+  ],
+  "elapsed_seconds": 5410.4,
+  "updated_utc": "2026-09-24T14:21:09.684091+00:00"
+}

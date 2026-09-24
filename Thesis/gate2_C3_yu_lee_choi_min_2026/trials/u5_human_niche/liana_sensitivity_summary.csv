@@ -1,0 +1,17 @@
+config,resource,groups,comparable,median_edge_jaccard,median_shared_edge_spearman
+cap500_seed1,cellchatdb,70,68,1.0,0.9999999999999999
+cap500_seed1,consensus,70,68,1.0,0.9999999999999998
+cap500_seed2,cellchatdb,70,68,1.0,1.0
+cap500_seed2,consensus,70,68,1.0,0.9999999999999998
+expression005,cellchatdb,70,68,0.51,1.0
+expression005,consensus,70,68,0.6638418079096045,1.0
+expression020,cellchatdb,70,68,0.3333333333333333,1.0
+expression020,consensus,70,68,0.4651442307692308,1.0
+floor100,cellchatdb,70,63,1.0,1.0
+floor100,consensus,70,63,1.0,1.0
+floor30,cellchatdb,70,68,1.0,1.0
+floor30,consensus,70,68,1.0,1.0
+largest_library,cellchatdb,70,68,1.0,1.0
+largest_library,consensus,70,68,1.0,1.0
+uncertainty030,cellchatdb,70,68,0.9605841302662186,0.9970630411109553
+uncertainty030,consensus,70,68,0.9609136351013607,0.960286551053865

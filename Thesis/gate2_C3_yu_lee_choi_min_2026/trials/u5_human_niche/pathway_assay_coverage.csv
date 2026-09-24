@@ -1,0 +1,1450 @@
+"config","comp","label","cell_floor","case","reference","set","assayed_fraction","tested_genes","eligible"
+"unc20_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,160,TRUE
+"unc20_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_HYPOXIA",0.975,166,TRUE
+"unc20_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,161,TRUE
+"unc20_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_P53_PATHWAY",0.95,177,TRUE
+"unc20_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_E2F_TARGETS",0.955,153,TRUE
+"unc20_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_G2M_CHECKPOINT",0.945,147,TRUE
+"unc20_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,184,TRUE
+"unc20_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,160,TRUE
+"unc20_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,167,TRUE
+"unc20_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_P53_PATHWAY",0.95,180,TRUE
+"unc20_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_E2F_TARGETS",0.955,160,TRUE
+"unc20_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_G2M_CHECKPOINT",0.945,153,TRUE
+"unc20_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,176,TRUE
+"unc20_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,132,TRUE
+"unc20_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,62,TRUE
+"unc20_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_HYPOXIA",0.975,159,TRUE
+"unc20_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_GLYCOLYSIS",0.955,158,TRUE
+"unc20_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_P53_PATHWAY",0.95,176,TRUE
+"unc20_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_E2F_TARGETS",0.955,140,TRUE
+"unc20_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_G2M_CHECKPOINT",0.945,140,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,189,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,172,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_HYPOXIA",0.975,176,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,177,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_P53_PATHWAY",0.95,186,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_E2F_TARGETS",0.955,174,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_G2M_CHECKPOINT",0.945,170,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,168,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,78,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,171,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_P53_PATHWAY",0.95,183,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_E2F_TARGETS",0.955,170,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_G2M_CHECKPOINT",0.945,169,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,184,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,166,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,178,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_P53_PATHWAY",0.95,182,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_E2F_TARGETS",0.955,167,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_G2M_CHECKPOINT",0.945,164,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,151,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_HYPOXIA",0.975,164,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_GLYCOLYSIS",0.955,163,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_P53_PATHWAY",0.95,178,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_E2F_TARGETS",0.955,152,TRUE
+"unc20_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_G2M_CHECKPOINT",0.945,147,TRUE
+"unc20_pooled","AT2","AT2",30,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_pooled","AT2","AT2",30,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,160,TRUE
+"unc20_pooled","AT2","AT2",30,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","AT2","AT2",30,"AAH","normal","HALLMARK_HYPOXIA",0.975,166,TRUE
+"unc20_pooled","AT2","AT2",30,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,161,TRUE
+"unc20_pooled","AT2","AT2",30,"AAH","normal","HALLMARK_P53_PATHWAY",0.95,177,TRUE
+"unc20_pooled","AT2","AT2",30,"AAH","normal","HALLMARK_E2F_TARGETS",0.955,153,TRUE
+"unc20_pooled","AT2","AT2",30,"AAH","normal","HALLMARK_G2M_CHECKPOINT",0.945,147,TRUE
+"unc20_pooled","AT2","AT2",30,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,184,TRUE
+"unc20_pooled","AT2","AT2",30,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,160,TRUE
+"unc20_pooled","AT2","AT2",30,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_pooled","AT2","AT2",30,"AIS","normal","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_pooled","AT2","AT2",30,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,167,TRUE
+"unc20_pooled","AT2","AT2",30,"AIS","normal","HALLMARK_P53_PATHWAY",0.95,180,TRUE
+"unc20_pooled","AT2","AT2",30,"AIS","normal","HALLMARK_E2F_TARGETS",0.955,160,TRUE
+"unc20_pooled","AT2","AT2",30,"AIS","normal","HALLMARK_G2M_CHECKPOINT",0.945,153,TRUE
+"unc20_pooled","AT2","AT2",30,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,176,TRUE
+"unc20_pooled","AT2","AT2",30,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,132,TRUE
+"unc20_pooled","AT2","AT2",30,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,62,TRUE
+"unc20_pooled","AT2","AT2",30,"MIA","normal","HALLMARK_HYPOXIA",0.975,159,TRUE
+"unc20_pooled","AT2","AT2",30,"MIA","normal","HALLMARK_GLYCOLYSIS",0.955,158,TRUE
+"unc20_pooled","AT2","AT2",30,"MIA","normal","HALLMARK_P53_PATHWAY",0.95,176,TRUE
+"unc20_pooled","AT2","AT2",30,"MIA","normal","HALLMARK_E2F_TARGETS",0.955,140,TRUE
+"unc20_pooled","AT2","AT2",30,"MIA","normal","HALLMARK_G2M_CHECKPOINT",0.945,140,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,189,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,172,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","normal","HALLMARK_HYPOXIA",0.975,176,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,177,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","normal","HALLMARK_P53_PATHWAY",0.95,186,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","normal","HALLMARK_E2F_TARGETS",0.955,174,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","normal","HALLMARK_G2M_CHECKPOINT",0.945,170,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,168,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,78,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,171,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AAH","HALLMARK_P53_PATHWAY",0.95,183,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AAH","HALLMARK_E2F_TARGETS",0.955,170,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AAH","HALLMARK_G2M_CHECKPOINT",0.945,169,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,184,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,166,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,178,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AIS","HALLMARK_P53_PATHWAY",0.95,182,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AIS","HALLMARK_E2F_TARGETS",0.955,167,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","AIS","HALLMARK_G2M_CHECKPOINT",0.945,164,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,151,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","MIA","HALLMARK_HYPOXIA",0.975,164,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","MIA","HALLMARK_GLYCOLYSIS",0.955,163,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","MIA","HALLMARK_P53_PATHWAY",0.95,178,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","MIA","HALLMARK_E2F_TARGETS",0.955,152,TRUE
+"unc20_pooled","AT2","AT2",30,"LUAD","MIA","HALLMARK_G2M_CHECKPOINT",0.945,147,TRUE
+"unc20_pooled","AT2","AT2",100,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_pooled","AT2","AT2",100,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,160,TRUE
+"unc20_pooled","AT2","AT2",100,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","AT2","AT2",100,"AAH","normal","HALLMARK_HYPOXIA",0.975,166,TRUE
+"unc20_pooled","AT2","AT2",100,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,161,TRUE
+"unc20_pooled","AT2","AT2",100,"AAH","normal","HALLMARK_P53_PATHWAY",0.95,177,TRUE
+"unc20_pooled","AT2","AT2",100,"AAH","normal","HALLMARK_E2F_TARGETS",0.955,153,TRUE
+"unc20_pooled","AT2","AT2",100,"AAH","normal","HALLMARK_G2M_CHECKPOINT",0.945,147,TRUE
+"unc20_pooled","AT2","AT2",100,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,185,TRUE
+"unc20_pooled","AT2","AT2",100,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,160,TRUE
+"unc20_pooled","AT2","AT2",100,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_pooled","AT2","AT2",100,"AIS","normal","HALLMARK_HYPOXIA",0.975,169,TRUE
+"unc20_pooled","AT2","AT2",100,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,165,TRUE
+"unc20_pooled","AT2","AT2",100,"AIS","normal","HALLMARK_P53_PATHWAY",0.95,181,TRUE
+"unc20_pooled","AT2","AT2",100,"AIS","normal","HALLMARK_E2F_TARGETS",0.955,157,TRUE
+"unc20_pooled","AT2","AT2",100,"AIS","normal","HALLMARK_G2M_CHECKPOINT",0.945,153,TRUE
+"unc20_pooled","AT2","AT2",100,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,176,TRUE
+"unc20_pooled","AT2","AT2",100,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,135,TRUE
+"unc20_pooled","AT2","AT2",100,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,62,TRUE
+"unc20_pooled","AT2","AT2",100,"MIA","normal","HALLMARK_HYPOXIA",0.975,162,TRUE
+"unc20_pooled","AT2","AT2",100,"MIA","normal","HALLMARK_GLYCOLYSIS",0.955,158,TRUE
+"unc20_pooled","AT2","AT2",100,"MIA","normal","HALLMARK_P53_PATHWAY",0.95,177,TRUE
+"unc20_pooled","AT2","AT2",100,"MIA","normal","HALLMARK_E2F_TARGETS",0.955,146,TRUE
+"unc20_pooled","AT2","AT2",100,"MIA","normal","HALLMARK_G2M_CHECKPOINT",0.945,143,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,189,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,174,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,77,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","normal","HALLMARK_HYPOXIA",0.975,177,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,178,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","normal","HALLMARK_P53_PATHWAY",0.95,186,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","normal","HALLMARK_E2F_TARGETS",0.955,176,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","normal","HALLMARK_G2M_CHECKPOINT",0.945,171,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,168,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,78,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,171,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AAH","HALLMARK_P53_PATHWAY",0.95,183,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AAH","HALLMARK_E2F_TARGETS",0.955,170,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AAH","HALLMARK_G2M_CHECKPOINT",0.945,169,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,185,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,168,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,174,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,175,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AIS","HALLMARK_P53_PATHWAY",0.95,183,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AIS","HALLMARK_E2F_TARGETS",0.955,170,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","AIS","HALLMARK_G2M_CHECKPOINT",0.945,165,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,151,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","MIA","HALLMARK_HYPOXIA",0.975,164,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","MIA","HALLMARK_GLYCOLYSIS",0.955,163,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","MIA","HALLMARK_P53_PATHWAY",0.95,178,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","MIA","HALLMARK_E2F_TARGETS",0.955,152,TRUE
+"unc20_pooled","AT2","AT2",100,"LUAD","MIA","HALLMARK_G2M_CHECKPOINT",0.945,147,TRUE
+"unc20_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,160,TRUE
+"unc20_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_HYPOXIA",0.975,166,TRUE
+"unc20_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,162,TRUE
+"unc20_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_P53_PATHWAY",0.95,177,TRUE
+"unc20_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_E2F_TARGETS",0.955,158,TRUE
+"unc20_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_G2M_CHECKPOINT",0.945,153,TRUE
+"unc20_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,184,TRUE
+"unc20_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,160,TRUE
+"unc20_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,170,TRUE
+"unc20_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_P53_PATHWAY",0.95,180,TRUE
+"unc20_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_E2F_TARGETS",0.955,167,TRUE
+"unc20_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_G2M_CHECKPOINT",0.945,161,TRUE
+"unc20_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,176,TRUE
+"unc20_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,132,TRUE
+"unc20_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,62,TRUE
+"unc20_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_HYPOXIA",0.975,159,TRUE
+"unc20_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_GLYCOLYSIS",0.955,158,TRUE
+"unc20_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_P53_PATHWAY",0.95,176,TRUE
+"unc20_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_E2F_TARGETS",0.955,140,TRUE
+"unc20_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_G2M_CHECKPOINT",0.945,140,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,189,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,172,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_HYPOXIA",0.975,176,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,178,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_P53_PATHWAY",0.95,186,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_E2F_TARGETS",0.955,188,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_G2M_CHECKPOINT",0.945,185,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,168,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,78,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,172,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_P53_PATHWAY",0.95,183,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_E2F_TARGETS",0.955,184,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_G2M_CHECKPOINT",0.945,181,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,184,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,166,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,169,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,179,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_P53_PATHWAY",0.95,182,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_E2F_TARGETS",0.955,180,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_G2M_CHECKPOINT",0.945,179,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,151,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_HYPOXIA",0.975,164,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_GLYCOLYSIS",0.955,166,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_P53_PATHWAY",0.95,179,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_E2F_TARGETS",0.955,161,TRUE
+"unc20_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_G2M_CHECKPOINT",0.945,159,TRUE
+"unc20_pooled","AT2","__broad__",30,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_pooled","AT2","__broad__",30,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,160,TRUE
+"unc20_pooled","AT2","__broad__",30,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","AT2","__broad__",30,"AAH","normal","HALLMARK_HYPOXIA",0.975,166,TRUE
+"unc20_pooled","AT2","__broad__",30,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,162,TRUE
+"unc20_pooled","AT2","__broad__",30,"AAH","normal","HALLMARK_P53_PATHWAY",0.95,177,TRUE
+"unc20_pooled","AT2","__broad__",30,"AAH","normal","HALLMARK_E2F_TARGETS",0.955,158,TRUE
+"unc20_pooled","AT2","__broad__",30,"AAH","normal","HALLMARK_G2M_CHECKPOINT",0.945,153,TRUE
+"unc20_pooled","AT2","__broad__",30,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,184,TRUE
+"unc20_pooled","AT2","__broad__",30,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,160,TRUE
+"unc20_pooled","AT2","__broad__",30,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_pooled","AT2","__broad__",30,"AIS","normal","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_pooled","AT2","__broad__",30,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,170,TRUE
+"unc20_pooled","AT2","__broad__",30,"AIS","normal","HALLMARK_P53_PATHWAY",0.95,180,TRUE
+"unc20_pooled","AT2","__broad__",30,"AIS","normal","HALLMARK_E2F_TARGETS",0.955,167,TRUE
+"unc20_pooled","AT2","__broad__",30,"AIS","normal","HALLMARK_G2M_CHECKPOINT",0.945,161,TRUE
+"unc20_pooled","AT2","__broad__",30,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,176,TRUE
+"unc20_pooled","AT2","__broad__",30,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,132,TRUE
+"unc20_pooled","AT2","__broad__",30,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,62,TRUE
+"unc20_pooled","AT2","__broad__",30,"MIA","normal","HALLMARK_HYPOXIA",0.975,159,TRUE
+"unc20_pooled","AT2","__broad__",30,"MIA","normal","HALLMARK_GLYCOLYSIS",0.955,158,TRUE
+"unc20_pooled","AT2","__broad__",30,"MIA","normal","HALLMARK_P53_PATHWAY",0.95,176,TRUE
+"unc20_pooled","AT2","__broad__",30,"MIA","normal","HALLMARK_E2F_TARGETS",0.955,140,TRUE
+"unc20_pooled","AT2","__broad__",30,"MIA","normal","HALLMARK_G2M_CHECKPOINT",0.945,140,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,189,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,172,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","normal","HALLMARK_HYPOXIA",0.975,176,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,178,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","normal","HALLMARK_P53_PATHWAY",0.95,186,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","normal","HALLMARK_E2F_TARGETS",0.955,188,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","normal","HALLMARK_G2M_CHECKPOINT",0.945,185,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,168,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,78,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,172,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AAH","HALLMARK_P53_PATHWAY",0.95,183,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AAH","HALLMARK_E2F_TARGETS",0.955,184,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AAH","HALLMARK_G2M_CHECKPOINT",0.945,181,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,184,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,166,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,169,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,179,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AIS","HALLMARK_P53_PATHWAY",0.95,182,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AIS","HALLMARK_E2F_TARGETS",0.955,180,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","AIS","HALLMARK_G2M_CHECKPOINT",0.945,179,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,151,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","MIA","HALLMARK_HYPOXIA",0.975,164,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","MIA","HALLMARK_GLYCOLYSIS",0.955,166,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","MIA","HALLMARK_P53_PATHWAY",0.95,179,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","MIA","HALLMARK_E2F_TARGETS",0.955,161,TRUE
+"unc20_pooled","AT2","__broad__",30,"LUAD","MIA","HALLMARK_G2M_CHECKPOINT",0.945,159,TRUE
+"unc20_pooled","AT2","__broad__",100,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_pooled","AT2","__broad__",100,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,160,TRUE
+"unc20_pooled","AT2","__broad__",100,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","AT2","__broad__",100,"AAH","normal","HALLMARK_HYPOXIA",0.975,166,TRUE
+"unc20_pooled","AT2","__broad__",100,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,162,TRUE
+"unc20_pooled","AT2","__broad__",100,"AAH","normal","HALLMARK_P53_PATHWAY",0.95,177,TRUE
+"unc20_pooled","AT2","__broad__",100,"AAH","normal","HALLMARK_E2F_TARGETS",0.955,158,TRUE
+"unc20_pooled","AT2","__broad__",100,"AAH","normal","HALLMARK_G2M_CHECKPOINT",0.945,153,TRUE
+"unc20_pooled","AT2","__broad__",100,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,185,TRUE
+"unc20_pooled","AT2","__broad__",100,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,160,TRUE
+"unc20_pooled","AT2","__broad__",100,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_pooled","AT2","__broad__",100,"AIS","normal","HALLMARK_HYPOXIA",0.975,169,TRUE
+"unc20_pooled","AT2","__broad__",100,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,166,TRUE
+"unc20_pooled","AT2","__broad__",100,"AIS","normal","HALLMARK_P53_PATHWAY",0.95,181,TRUE
+"unc20_pooled","AT2","__broad__",100,"AIS","normal","HALLMARK_E2F_TARGETS",0.955,162,TRUE
+"unc20_pooled","AT2","__broad__",100,"AIS","normal","HALLMARK_G2M_CHECKPOINT",0.945,158,TRUE
+"unc20_pooled","AT2","__broad__",100,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,176,TRUE
+"unc20_pooled","AT2","__broad__",100,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,135,TRUE
+"unc20_pooled","AT2","__broad__",100,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,62,TRUE
+"unc20_pooled","AT2","__broad__",100,"MIA","normal","HALLMARK_HYPOXIA",0.975,162,TRUE
+"unc20_pooled","AT2","__broad__",100,"MIA","normal","HALLMARK_GLYCOLYSIS",0.955,158,TRUE
+"unc20_pooled","AT2","__broad__",100,"MIA","normal","HALLMARK_P53_PATHWAY",0.95,177,TRUE
+"unc20_pooled","AT2","__broad__",100,"MIA","normal","HALLMARK_E2F_TARGETS",0.955,146,TRUE
+"unc20_pooled","AT2","__broad__",100,"MIA","normal","HALLMARK_G2M_CHECKPOINT",0.945,144,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,189,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,174,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,77,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","normal","HALLMARK_HYPOXIA",0.975,177,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,179,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","normal","HALLMARK_P53_PATHWAY",0.95,186,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","normal","HALLMARK_E2F_TARGETS",0.955,188,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","normal","HALLMARK_G2M_CHECKPOINT",0.945,185,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,168,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,78,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,172,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AAH","HALLMARK_P53_PATHWAY",0.95,183,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AAH","HALLMARK_E2F_TARGETS",0.955,184,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AAH","HALLMARK_G2M_CHECKPOINT",0.945,181,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,185,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,168,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,174,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,177,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AIS","HALLMARK_P53_PATHWAY",0.95,183,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AIS","HALLMARK_E2F_TARGETS",0.955,182,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","AIS","HALLMARK_G2M_CHECKPOINT",0.945,181,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,151,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","MIA","HALLMARK_HYPOXIA",0.975,164,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","MIA","HALLMARK_GLYCOLYSIS",0.955,166,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","MIA","HALLMARK_P53_PATHWAY",0.95,179,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","MIA","HALLMARK_E2F_TARGETS",0.955,161,TRUE
+"unc20_pooled","AT2","__broad__",100,"LUAD","MIA","HALLMARK_G2M_CHECKPOINT",0.945,159,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,151,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,109,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,51,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,51,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,28,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,185,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,132,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,77,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,44,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"AIS","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,43,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"AIS","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,25,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"AIS","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,154,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,150,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,112,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,54,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,50,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,29,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,186,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,155,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,111,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,53,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","AIS","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,51,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","AIS","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,28,TRUE
+"unc20_pooled","fibroblasts","Adventitial fibroblasts",30,"LUAD","AIS","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,188,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,183,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,156,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,221,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,181,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,150,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,70,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,34,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,220,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,157,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,108,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,54,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,50,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,30,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,188,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,164,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,73,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,235,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,188,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,165,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,75,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,37,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,230,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,179,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,148,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,34,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,223,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,172,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,132,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,67,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,52,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,32,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,211,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,183,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,156,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"AAH","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"AAH","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"AAH","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,221,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,181,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,150,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,70,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"AIS","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"AIS","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,34,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"AIS","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,220,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,157,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,108,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,54,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"MIA","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,50,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"MIA","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,30,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"MIA","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,188,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,164,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,73,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,235,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,188,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,165,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,75,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","AAH","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","AAH","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,37,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","AAH","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,230,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,179,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,148,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","AIS","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","AIS","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,34,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","AIS","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,223,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,172,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,132,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,67,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","MIA","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,52,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","MIA","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,32,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",30,"LUAD","MIA","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,211,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,183,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,156,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"AAH","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"AAH","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"AAH","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,221,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,181,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,149,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,70,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"AIS","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"AIS","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"AIS","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,220,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,167,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,120,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,61,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"MIA","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,52,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"MIA","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,31,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"MIA","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,197,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,189,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,174,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,77,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,38,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,249,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,188,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,165,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,75,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","AAH","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","AAH","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,37,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","AAH","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,230,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,177,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,148,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","AIS","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","AIS","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,34,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","AIS","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,222,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,172,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,132,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,67,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","MIA","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,52,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","MIA","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,32,TRUE
+"unc20_pooled","fibroblasts","Alveolar fibroblasts",100,"LUAD","MIA","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,211,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,183,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,157,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"AAH","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"AAH","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"AAH","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,227,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,179,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,150,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"AIS","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"AIS","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"AIS","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,223,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,156,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,110,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,56,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"MIA","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,51,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"MIA","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,30,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"MIA","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,192,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,190,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,173,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,38,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,251,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,191,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,171,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","AAH","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","AAH","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,39,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","AAH","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,249,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,183,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,153,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","AIS","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","AIS","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,37,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","AIS","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,231,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,175,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,139,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","MIA","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","MIA","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,34,TRUE
+"unc20_pooled","fibroblasts","__broad__",50,"LUAD","MIA","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,224,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,183,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,157,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"AAH","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"AAH","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"AAH","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,227,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,179,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,150,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"AIS","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"AIS","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"AIS","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,223,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,156,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,110,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,56,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"MIA","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,51,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"MIA","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,30,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"MIA","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,192,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,190,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,173,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,38,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,251,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,191,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,171,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","AAH","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","AAH","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,39,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","AAH","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,249,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,183,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,153,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","AIS","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","AIS","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,37,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","AIS","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,231,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,175,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,139,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","MIA","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","MIA","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,34,TRUE
+"unc20_pooled","fibroblasts","__broad__",30,"LUAD","MIA","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,224,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,183,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,157,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"AAH","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"AAH","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"AAH","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,227,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,183,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,154,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"AIS","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"AIS","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"AIS","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,227,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,168,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,122,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,62,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"MIA","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,52,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"MIA","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,31,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"MIA","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,202,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,191,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,180,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,77,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,39,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,258,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,191,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,171,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","AAH","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","AAH","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,39,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","AAH","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,249,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,166,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,74,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","AIS","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","AIS","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,37,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","AIS","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,240,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,175,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,139,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","MIA","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","MIA","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,34,TRUE
+"unc20_pooled","fibroblasts","__broad__",100,"LUAD","MIA","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,224,TRUE
+"unc20_pooled","macrophages","Monocyte-derived Mph",30,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,167,TRUE
+"unc20_pooled","macrophages","Monocyte-derived Mph",30,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,128,TRUE
+"unc20_pooled","macrophages","Monocyte-derived Mph",30,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,67,TRUE
+"unc20_pooled","macrophages","Monocyte-derived Mph",30,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,114,TRUE
+"unc20_pooled","macrophages","Monocyte-derived Mph",30,"LUAD","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,171,TRUE
+"unc20_pooled","macrophages","Monocyte-derived Mph",30,"LUAD","normal","HALLMARK_HYPOXIA",0.975,131,TRUE
+"unc20_pooled","macrophages","Monocyte-derived Mph",30,"LUAD","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,165,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,181,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,158,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,70,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,145,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_HYPOXIA",0.975,150,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,183,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,179,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,145,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,139,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,184,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_HYPOXIA",0.975,147,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,179,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,184,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,165,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,150,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_HYPOXIA",0.975,159,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,183,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,167,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,73,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,151,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,157,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,166,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,148,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,156,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,181,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,173,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,136,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,124,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AAH","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,182,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AAH","normal","HALLMARK_HYPOXIA",0.975,133,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AAH","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,174,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,177,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,144,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,132,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AIS","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,182,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AIS","normal","HALLMARK_HYPOXIA",0.975,142,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"AIS","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,176,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,157,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,147,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,185,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","normal","HALLMARK_HYPOXIA",0.975,153,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,182,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,180,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,153,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,146,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AAH","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,184,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,155,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AAH","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,182,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,183,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,159,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,73,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,144,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AIS","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,184,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,153,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","AIS","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,182,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,172,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,132,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","MIA","HALLMARK_GLYCOLYSIS",0.955,125,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","MIA","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,179,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","MIA","HALLMARK_HYPOXIA",0.975,134,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",30,"LUAD","MIA","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,170,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,178,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,146,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,139,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"AIS","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,184,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"AIS","normal","HALLMARK_HYPOXIA",0.975,144,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"AIS","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,176,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,174,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,158,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","normal","HALLMARK_HYPOXIA",0.975,163,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,183,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,172,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,73,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,154,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","AAH","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,161,TRUE
+"unc20_pooled","macrophages","Alveolar macrophages",100,"LUAD","AAH","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,111,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,89,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,50,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,72,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,109,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","normal","HALLMARK_HYPOXIA",0.975,86,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,118,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,96,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,81,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,46,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,47,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AAH","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,60,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,61,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AAH","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,103,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,102,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,84,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,45,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,60,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AIS","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,90,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,71,TRUE
+"unc20_pooled","macrophages","Interstitial Mph perivascular",30,"LUAD","AIS","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,109,TRUE
+"unc20_pooled","macrophages","__broad__",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,179,TRUE
+"unc20_pooled","macrophages","__broad__",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,150,TRUE
+"unc20_pooled","macrophages","__broad__",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","macrophages","__broad__",50,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,134,TRUE
+"unc20_pooled","macrophages","__broad__",50,"AAH","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,183,TRUE
+"unc20_pooled","macrophages","__broad__",50,"AAH","normal","HALLMARK_HYPOXIA",0.975,142,TRUE
+"unc20_pooled","macrophages","__broad__",50,"AAH","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,180,TRUE
+"unc20_pooled","macrophages","__broad__",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,180,TRUE
+"unc20_pooled","macrophages","__broad__",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,156,TRUE
+"unc20_pooled","macrophages","__broad__",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc20_pooled","macrophages","__broad__",50,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,143,TRUE
+"unc20_pooled","macrophages","__broad__",50,"AIS","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,185,TRUE
+"unc20_pooled","macrophages","__broad__",50,"AIS","normal","HALLMARK_HYPOXIA",0.975,150,TRUE
+"unc20_pooled","macrophages","__broad__",50,"AIS","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,180,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,175,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,158,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","normal","HALLMARK_HYPOXIA",0.975,165,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,188,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,170,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,156,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,161,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,188,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,177,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,154,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,162,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,183,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,174,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,139,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_GLYCOLYSIS",0.955,129,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,180,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_HYPOXIA",0.975,138,TRUE
+"unc20_pooled","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,171,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,179,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,144,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,130,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AAH","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,180,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AAH","normal","HALLMARK_HYPOXIA",0.975,138,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AAH","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,177,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,154,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,140,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AIS","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,184,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AIS","normal","HALLMARK_HYPOXIA",0.975,151,TRUE
+"unc20_pooled","macrophages","__broad__",30,"AIS","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,178,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,169,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,151,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,184,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","normal","HALLMARK_HYPOXIA",0.975,158,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,188,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,170,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,156,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AAH","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,161,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AAH","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,172,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,151,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AIS","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,156,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","AIS","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,176,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,145,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,70,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","MIA","HALLMARK_GLYCOLYSIS",0.955,132,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","MIA","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,181,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","MIA","HALLMARK_HYPOXIA",0.975,141,TRUE
+"unc20_pooled","macrophages","__broad__",30,"LUAD","MIA","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,174,TRUE
+"unc20_pooled","macrophages","__broad__",100,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,180,TRUE
+"unc20_pooled","macrophages","__broad__",100,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,156,TRUE
+"unc20_pooled","macrophages","__broad__",100,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc20_pooled","macrophages","__broad__",100,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,143,TRUE
+"unc20_pooled","macrophages","__broad__",100,"AIS","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,185,TRUE
+"unc20_pooled","macrophages","__broad__",100,"AIS","normal","HALLMARK_HYPOXIA",0.975,150,TRUE
+"unc20_pooled","macrophages","__broad__",100,"AIS","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,180,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,188,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,178,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,77,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,160,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","normal","HALLMARK_HYPOXIA",0.975,166,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,190,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,177,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,78,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,159,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AAH","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,164,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AAH","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,172,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,75,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,154,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AIS","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,162,TRUE
+"unc20_pooled","macrophages","__broad__",100,"LUAD","AIS","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc30_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc30_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,161,TRUE
+"unc30_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc30_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_HYPOXIA",0.975,169,TRUE
+"unc30_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,162,TRUE
+"unc30_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_P53_PATHWAY",0.95,179,TRUE
+"unc30_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_E2F_TARGETS",0.955,154,TRUE
+"unc30_pooled","AT2","AT2",50,"AAH","normal","HALLMARK_G2M_CHECKPOINT",0.945,149,TRUE
+"unc30_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,185,TRUE
+"unc30_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,165,TRUE
+"unc30_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc30_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_HYPOXIA",0.975,171,TRUE
+"unc30_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,168,TRUE
+"unc30_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_P53_PATHWAY",0.95,181,TRUE
+"unc30_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_E2F_TARGETS",0.955,159,TRUE
+"unc30_pooled","AT2","AT2",50,"AIS","normal","HALLMARK_G2M_CHECKPOINT",0.945,156,TRUE
+"unc30_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,178,TRUE
+"unc30_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,137,TRUE
+"unc30_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,62,TRUE
+"unc30_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_HYPOXIA",0.975,162,TRUE
+"unc30_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_GLYCOLYSIS",0.955,161,TRUE
+"unc30_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_P53_PATHWAY",0.95,178,TRUE
+"unc30_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_E2F_TARGETS",0.955,145,TRUE
+"unc30_pooled","AT2","AT2",50,"MIA","normal","HALLMARK_G2M_CHECKPOINT",0.945,143,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,190,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,180,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,78,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_HYPOXIA",0.975,183,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,180,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_P53_PATHWAY",0.95,186,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_E2F_TARGETS",0.955,185,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","normal","HALLMARK_G2M_CHECKPOINT",0.945,180,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,171,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,78,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,174,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,174,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_P53_PATHWAY",0.95,183,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_E2F_TARGETS",0.955,176,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AAH","HALLMARK_G2M_CHECKPOINT",0.945,171,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,185,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,168,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,174,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,177,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_P53_PATHWAY",0.95,183,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_E2F_TARGETS",0.955,175,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","AIS","HALLMARK_G2M_CHECKPOINT",0.945,172,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,153,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_HYPOXIA",0.975,165,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_GLYCOLYSIS",0.955,165,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_P53_PATHWAY",0.95,179,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_E2F_TARGETS",0.955,156,TRUE
+"unc30_pooled","AT2","AT2",50,"LUAD","MIA","HALLMARK_G2M_CHECKPOINT",0.945,154,TRUE
+"unc30_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc30_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,161,TRUE
+"unc30_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc30_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_HYPOXIA",0.975,169,TRUE
+"unc30_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,163,TRUE
+"unc30_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_P53_PATHWAY",0.95,179,TRUE
+"unc30_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_E2F_TARGETS",0.955,159,TRUE
+"unc30_pooled","AT2","__broad__",50,"AAH","normal","HALLMARK_G2M_CHECKPOINT",0.945,157,TRUE
+"unc30_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,185,TRUE
+"unc30_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,165,TRUE
+"unc30_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc30_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_HYPOXIA",0.975,171,TRUE
+"unc30_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,171,TRUE
+"unc30_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_P53_PATHWAY",0.95,181,TRUE
+"unc30_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_E2F_TARGETS",0.955,165,TRUE
+"unc30_pooled","AT2","__broad__",50,"AIS","normal","HALLMARK_G2M_CHECKPOINT",0.945,162,TRUE
+"unc30_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,178,TRUE
+"unc30_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,137,TRUE
+"unc30_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,62,TRUE
+"unc30_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_HYPOXIA",0.975,162,TRUE
+"unc30_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_GLYCOLYSIS",0.955,161,TRUE
+"unc30_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_P53_PATHWAY",0.95,178,TRUE
+"unc30_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_E2F_TARGETS",0.955,148,TRUE
+"unc30_pooled","AT2","__broad__",50,"MIA","normal","HALLMARK_G2M_CHECKPOINT",0.945,148,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,190,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,179,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,77,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_HYPOXIA",0.975,182,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,180,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_P53_PATHWAY",0.95,186,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_E2F_TARGETS",0.955,190,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","normal","HALLMARK_G2M_CHECKPOINT",0.945,187,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,171,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,78,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,175,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,178,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_P53_PATHWAY",0.95,183,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_E2F_TARGETS",0.955,187,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AAH","HALLMARK_G2M_CHECKPOINT",0.945,185,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,185,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,168,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,174,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,179,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_P53_PATHWAY",0.95,183,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_E2F_TARGETS",0.955,184,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","AIS","HALLMARK_G2M_CHECKPOINT",0.945,181,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,153,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_HYPOXIA",0.975,165,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_GLYCOLYSIS",0.955,167,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_P53_PATHWAY",0.95,180,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_E2F_TARGETS",0.955,169,TRUE
+"unc30_pooled","AT2","__broad__",50,"LUAD","MIA","HALLMARK_G2M_CHECKPOINT",0.945,168,TRUE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,165,TRUE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,127,TRUE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,58,TRUE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,51,TRUE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,31,TRUE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,197,TRUE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,164,TRUE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,126,TRUE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,56,TRUE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,51,TRUE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,33,TRUE
+"unc30_pooled","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,196,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,185,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,159,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,37,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,229,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,184,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,160,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,229,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,160,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,115,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,57,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,52,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,31,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,197,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,189,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,169,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,75,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,38,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,244,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,191,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,168,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,38,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,240,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,156,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,35,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,232,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,175,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,137,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,33,TRUE
+"unc30_pooled","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,216,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,160,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"AAH","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"AAH","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"AAH","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,234,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,184,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,158,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"AIS","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"AIS","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,37,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"AIS","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,234,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,163,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,120,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,60,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"MIA","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,52,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"MIA","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,31,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"MIA","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,202,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,190,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,178,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,77,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,38,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,255,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,192,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,176,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,78,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","AAH","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","AAH","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,39,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","AAH","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,259,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,161,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","AIS","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","AIS","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,37,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","AIS","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,238,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,181,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,146,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,70,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","MIA","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","MIA","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,34,TRUE
+"unc30_pooled","fibroblasts","__broad__",50,"LUAD","MIA","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,228,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,159,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,140,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,183,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_HYPOXIA",0.975,148,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,181,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,185,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,165,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,73,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,153,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_HYPOXIA",0.975,158,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,183,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,188,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,180,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,159,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_HYPOXIA",0.975,167,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,171,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,73,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,156,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,161,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,185,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,173,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,74,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,155,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,162,TRUE
+"unc30_pooled","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,183,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,177,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,152,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,74,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,142,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,183,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","normal","HALLMARK_HYPOXIA",0.975,147,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,176,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,160,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,123,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,61,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,110,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","AIS","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,170,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,124,TRUE
+"unc30_pooled","macrophages","Monocyte-derived Mph",50,"LUAD","AIS","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,153,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,130,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,109,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,57,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,88,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,138,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","normal","HALLMARK_HYPOXIA",0.975,103,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,144,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,120,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,94,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,54,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,68,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AAH","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,103,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,80,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AAH","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,128,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,129,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,103,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,53,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,87,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AIS","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,129,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,97,TRUE
+"unc30_pooled","macrophages","Interstitial Mph perivascular",50,"LUAD","AIS","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,137,TRUE
+"unc30_pooled","macrophages","__broad__",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc30_pooled","macrophages","__broad__",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,170,TRUE
+"unc30_pooled","macrophages","__broad__",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,74,TRUE
+"unc30_pooled","macrophages","__broad__",50,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,152,TRUE
+"unc30_pooled","macrophages","__broad__",50,"AAH","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc30_pooled","macrophages","__broad__",50,"AAH","normal","HALLMARK_HYPOXIA",0.975,158,TRUE
+"unc30_pooled","macrophages","__broad__",50,"AAH","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,183,TRUE
+"unc30_pooled","macrophages","__broad__",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc30_pooled","macrophages","__broad__",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,172,TRUE
+"unc30_pooled","macrophages","__broad__",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,75,TRUE
+"unc30_pooled","macrophages","__broad__",50,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,152,TRUE
+"unc30_pooled","macrophages","__broad__",50,"AIS","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc30_pooled","macrophages","__broad__",50,"AIS","normal","HALLMARK_HYPOXIA",0.975,160,TRUE
+"unc30_pooled","macrophages","__broad__",50,"AIS","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,183,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,189,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,180,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,77,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,164,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","normal","HALLMARK_HYPOXIA",0.975,168,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,190,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,182,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,78,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,163,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,166,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,169,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,75,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,150,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,184,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,157,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,181,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,155,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_GLYCOLYSIS",0.955,145,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,183,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_HYPOXIA",0.975,148,TRUE
+"unc30_pooled","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,176,TRUE
+"unc20_largest_library","AT2","AT2",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_largest_library","AT2","AT2",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,162,TRUE
+"unc20_largest_library","AT2","AT2",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_largest_library","AT2","AT2",50,"AAH","normal","HALLMARK_HYPOXIA",0.975,166,TRUE
+"unc20_largest_library","AT2","AT2",50,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,161,TRUE
+"unc20_largest_library","AT2","AT2",50,"AAH","normal","HALLMARK_P53_PATHWAY",0.95,177,TRUE
+"unc20_largest_library","AT2","AT2",50,"AAH","normal","HALLMARK_E2F_TARGETS",0.955,153,TRUE
+"unc20_largest_library","AT2","AT2",50,"AAH","normal","HALLMARK_G2M_CHECKPOINT",0.945,149,TRUE
+"unc20_largest_library","AT2","AT2",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,184,TRUE
+"unc20_largest_library","AT2","AT2",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,161,TRUE
+"unc20_largest_library","AT2","AT2",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,70,TRUE
+"unc20_largest_library","AT2","AT2",50,"AIS","normal","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_largest_library","AT2","AT2",50,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,167,TRUE
+"unc20_largest_library","AT2","AT2",50,"AIS","normal","HALLMARK_P53_PATHWAY",0.95,180,TRUE
+"unc20_largest_library","AT2","AT2",50,"AIS","normal","HALLMARK_E2F_TARGETS",0.955,160,TRUE
+"unc20_largest_library","AT2","AT2",50,"AIS","normal","HALLMARK_G2M_CHECKPOINT",0.945,153,TRUE
+"unc20_largest_library","AT2","AT2",50,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,176,TRUE
+"unc20_largest_library","AT2","AT2",50,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,132,TRUE
+"unc20_largest_library","AT2","AT2",50,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,62,TRUE
+"unc20_largest_library","AT2","AT2",50,"MIA","normal","HALLMARK_HYPOXIA",0.975,159,TRUE
+"unc20_largest_library","AT2","AT2",50,"MIA","normal","HALLMARK_GLYCOLYSIS",0.955,158,TRUE
+"unc20_largest_library","AT2","AT2",50,"MIA","normal","HALLMARK_P53_PATHWAY",0.95,176,TRUE
+"unc20_largest_library","AT2","AT2",50,"MIA","normal","HALLMARK_E2F_TARGETS",0.955,140,TRUE
+"unc20_largest_library","AT2","AT2",50,"MIA","normal","HALLMARK_G2M_CHECKPOINT",0.945,140,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,189,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,172,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","normal","HALLMARK_HYPOXIA",0.975,175,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,178,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","normal","HALLMARK_P53_PATHWAY",0.95,186,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","normal","HALLMARK_E2F_TARGETS",0.955,173,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","normal","HALLMARK_G2M_CHECKPOINT",0.945,169,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,168,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,78,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,171,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AAH","HALLMARK_P53_PATHWAY",0.95,183,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AAH","HALLMARK_E2F_TARGETS",0.955,170,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AAH","HALLMARK_G2M_CHECKPOINT",0.945,169,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,184,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,167,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,178,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AIS","HALLMARK_P53_PATHWAY",0.95,182,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AIS","HALLMARK_E2F_TARGETS",0.955,167,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","AIS","HALLMARK_G2M_CHECKPOINT",0.945,164,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,151,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","MIA","HALLMARK_HYPOXIA",0.975,164,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","MIA","HALLMARK_GLYCOLYSIS",0.955,163,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","MIA","HALLMARK_P53_PATHWAY",0.95,178,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","MIA","HALLMARK_E2F_TARGETS",0.955,152,TRUE
+"unc20_largest_library","AT2","AT2",50,"LUAD","MIA","HALLMARK_G2M_CHECKPOINT",0.945,147,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,161,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AAH","normal","HALLMARK_HYPOXIA",0.975,166,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,162,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AAH","normal","HALLMARK_P53_PATHWAY",0.95,177,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AAH","normal","HALLMARK_E2F_TARGETS",0.955,160,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AAH","normal","HALLMARK_G2M_CHECKPOINT",0.945,155,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,184,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,161,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,70,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AIS","normal","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,170,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AIS","normal","HALLMARK_P53_PATHWAY",0.95,180,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AIS","normal","HALLMARK_E2F_TARGETS",0.955,167,TRUE
+"unc20_largest_library","AT2","__broad__",50,"AIS","normal","HALLMARK_G2M_CHECKPOINT",0.945,161,TRUE
+"unc20_largest_library","AT2","__broad__",50,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,176,TRUE
+"unc20_largest_library","AT2","__broad__",50,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,132,TRUE
+"unc20_largest_library","AT2","__broad__",50,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,62,TRUE
+"unc20_largest_library","AT2","__broad__",50,"MIA","normal","HALLMARK_HYPOXIA",0.975,159,TRUE
+"unc20_largest_library","AT2","__broad__",50,"MIA","normal","HALLMARK_GLYCOLYSIS",0.955,158,TRUE
+"unc20_largest_library","AT2","__broad__",50,"MIA","normal","HALLMARK_P53_PATHWAY",0.95,176,TRUE
+"unc20_largest_library","AT2","__broad__",50,"MIA","normal","HALLMARK_E2F_TARGETS",0.955,140,TRUE
+"unc20_largest_library","AT2","__broad__",50,"MIA","normal","HALLMARK_G2M_CHECKPOINT",0.945,140,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,188,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,172,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","normal","HALLMARK_HYPOXIA",0.975,176,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,179,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","normal","HALLMARK_P53_PATHWAY",0.95,186,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","normal","HALLMARK_E2F_TARGETS",0.955,187,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","normal","HALLMARK_G2M_CHECKPOINT",0.945,184,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,168,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,78,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,170,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,172,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AAH","HALLMARK_P53_PATHWAY",0.95,183,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AAH","HALLMARK_E2F_TARGETS",0.955,184,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AAH","HALLMARK_G2M_CHECKPOINT",0.945,181,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,184,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,167,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,169,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,179,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AIS","HALLMARK_P53_PATHWAY",0.95,182,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AIS","HALLMARK_E2F_TARGETS",0.955,180,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","AIS","HALLMARK_G2M_CHECKPOINT",0.945,179,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,151,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","MIA","HALLMARK_HYPOXIA",0.975,164,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","MIA","HALLMARK_GLYCOLYSIS",0.955,166,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","MIA","HALLMARK_P53_PATHWAY",0.95,179,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","MIA","HALLMARK_E2F_TARGETS",0.955,161,TRUE
+"unc20_largest_library","AT2","__broad__",50,"LUAD","MIA","HALLMARK_G2M_CHECKPOINT",0.945,159,TRUE
+"unc20_largest_library","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,151,TRUE
+"unc20_largest_library","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,109,TRUE
+"unc20_largest_library","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,51,TRUE
+"unc20_largest_library","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,51,TRUE
+"unc20_largest_library","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,28,TRUE
+"unc20_largest_library","fibroblasts","Adventitial fibroblasts",50,"LUAD","AIS","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,185,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,183,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,156,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"AAH","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,221,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,181,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,150,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,34,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"AIS","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,220,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,157,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,108,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,54,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,50,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,30,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"MIA","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,188,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,164,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,73,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,235,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,188,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,165,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,75,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,37,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","AAH","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,232,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,179,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,148,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,34,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","AIS","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,224,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,172,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,132,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,67,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,52,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,32,TRUE
+"unc20_largest_library","fibroblasts","Alveolar fibroblasts",50,"LUAD","MIA","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,211,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,183,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,157,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"AAH","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"AAH","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"AAH","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,227,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,180,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,151,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"AIS","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"AIS","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,36,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"AIS","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,224,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"MIA","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,156,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"MIA","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,110,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"MIA","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,56,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"MIA","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,51,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"MIA","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,30,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"MIA","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,192,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,190,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,174,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","normal","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","normal","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,38,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","normal","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,250,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,191,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,172,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","AAH","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","AAH","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,39,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","AAH","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,248,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,183,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,153,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","AIS","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","AIS","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,37,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","AIS","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,232,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,175,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,139,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","MIA","HALLMARK_TGF_BETA_SIGNALING",0.981481481481481,53,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","MIA","HALLMARK_WNT_BETA_CATENIN_SIGNALING",0.976190476190476,34,TRUE
+"unc20_largest_library","fibroblasts","__broad__",50,"LUAD","MIA","REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",0.98,224,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,180,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,155,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,70,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,143,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_HYPOXIA",0.975,149,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AAH","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,183,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,179,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,145,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,68,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,139,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,184,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_HYPOXIA",0.975,147,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"AIS","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,179,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,183,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,160,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,148,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_HYPOXIA",0.975,158,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,182,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,186,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,167,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,73,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,151,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,157,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AAH","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,182,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,163,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,147,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,153,TRUE
+"unc20_largest_library","macrophages","Alveolar macrophages",50,"LUAD","AIS","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,181,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"AAH","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,180,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"AAH","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,153,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"AAH","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,72,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"AAH","normal","HALLMARK_GLYCOLYSIS",0.955,134,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"AAH","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,183,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"AAH","normal","HALLMARK_HYPOXIA",0.975,143,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"AAH","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,180,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"AIS","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,180,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"AIS","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,156,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"AIS","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,71,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"AIS","normal","HALLMARK_GLYCOLYSIS",0.955,143,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"AIS","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,185,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"AIS","normal","HALLMARK_HYPOXIA",0.975,150,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"AIS","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,180,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","normal","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","normal","HALLMARK_INFLAMMATORY_RESPONSE",0.99,175,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","normal","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","normal","HALLMARK_GLYCOLYSIS",0.955,158,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","normal","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","normal","HALLMARK_HYPOXIA",0.975,165,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","normal","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,188,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_INFLAMMATORY_RESPONSE",0.99,170,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_GLYCOLYSIS",0.955,156,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_HYPOXIA",0.975,161,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AAH","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,184,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,187,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_INFLAMMATORY_RESPONSE",0.99,177,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,76,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_GLYCOLYSIS",0.955,154,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,186,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_HYPOXIA",0.975,162,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","AIS","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,183,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_TNFA_SIGNALING_VIA_NFKB",0.98,174,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_INFLAMMATORY_RESPONSE",0.99,139,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_IL6_JAK_STAT3_SIGNALING",0.988505747126437,69,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_GLYCOLYSIS",0.955,129,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_OXIDATIVE_PHOSPHORYLATION",0.93,180,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_HYPOXIA",0.975,138,TRUE
+"unc20_largest_library","macrophages","__broad__",50,"LUAD","MIA","HALLMARK_INTERFERON_GAMMA_RESPONSE",0.94,171,TRUE

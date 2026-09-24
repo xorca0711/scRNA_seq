@@ -1,0 +1,74 @@
+{
+  "status": "completed_scores_require_report",
+  "pid": 24408,
+  "started_utc": "2026-09-24T12:48:00.607763+00:00",
+  "code": {
+    "commit": "d77f4285ef03f3617289f4fc74847986782c54b1",
+    "tracked_diff_sha256": "88dccae159df7553c076b13aff012ac502747e918bac7a3f4e9b087403b67e27",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u6_score_isr.py",
+    "entrypoint_sha256": "45ad2b05b7ff48ed5cf9528b1202cfd0f11e4cc3ca47aa6da9bf5286077b94fd"
+  },
+  "specification_sha256": "c9594bd827d173e235b6c981a037e1e31c5927f6573d5ecd689d20f74ae4afc9",
+  "readonly_helper_sha256": "38e4066b00b8a4b17854cfc676b5a7e09beadc61bed59153051fe119f9caba82",
+  "inputs": [
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate.P9_filtered_feature_bc_matrix.h5",
+      "sha256": "34bdad122f8c42346e1512d667ff05dba9210891cf6e27fa7ea09575a8834bce"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate7-wk_filtered_feature_bc_matrix.h5",
+      "sha256": "ceed18eb1ec80a1d3feee78c459d52b0d240ab50793ffa46a4e0ce08e47e63c1"
+    },
+    {
+      "path": "raw_data\\GSE247130\\GSE247130_Aggregate_SeV_filtered_feature_bc_matrix.h5",
+      "sha256": "73f38005269ee779d88eba2bf9088a4920ca5cc31935f647dc2cd9d065466f64"
+    },
+    {
+      "path": "raw_data\\GSE310539\\GSE310539_totalaggr_filtered_feature_bc_matrix.h5",
+      "sha256": "43858a93fad7990a4a6adf06e27d0c3f47947696c01e8d72d74ab4527609adbb"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\extension_pilot\\GSM8529524_IGO14143-slc4a11-traced.h5ad",
+      "sha256": "b94c3fa7c97ec6d51180e1129c292ef6e5c03275f9694ba737d31ceba74f7801"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u3_qc\\GSM9057709_qc.h5ad",
+      "sha256": "933f82c0e194ca57f23a7af660c831b3d4f5cb5522b631c07673e781e40e0970"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u3_qc\\GSM9057712_qc.h5ad",
+      "sha256": "14efcfca040469b7056aa93a2c22955ffabc33cf66f736f8ff8a8623c00a3d4c"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u3_qc\\GSM9057713_qc.h5ad",
+      "sha256": "3fabdee69ff18bfbd2ea6b3f4fb179f5e140a0d1d2654601d5c3b9cb95009c05"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u3_qc\\GSM9057716_qc.h5ad",
+      "sha256": "9ab91cb9fb941e8a77486c2e54a18bd7febbc769ba0ce5918c4e2a892148b214"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u3_qc\\GSM9057717_qc.h5ad",
+      "sha256": "837f7d5d61038cf6ed1d421a78a97c0437f521083a20f7153d200889a73c1166"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u3_qc\\GSM9057720_qc.h5ad",
+      "sha256": "39dbcfa447195bb0f2f200a7335c487df27a9764ecdfb640301b6db81d92089a"
+    },
+    {
+      "path": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\cache\\u3_qc\\GSM9057721_qc.h5ad",
+      "sha256": "e8098ca71cb0834ca0a641d975ae1384a8111db5190c73731b8e848a064dbc20"
+    }
+  ],
+  "rows": 196,
+  "source_identifiers_HPCS": 2,
+  "technical_seeds": [
+    17,
+    29
+  ],
+  "independence": "no cell-level P values; no pseudo-replication of sorting gates or pooled wells",
+  "updated_utc": "2026-09-24T12:50:02.378207+00:00",
+  "elapsed_seconds": 121.4
+}

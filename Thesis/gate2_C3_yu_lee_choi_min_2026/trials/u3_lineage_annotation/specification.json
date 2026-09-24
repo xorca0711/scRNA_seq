@@ -1,0 +1,14 @@
+{
+  "frozen_utc": "2026-09-24T11:41:19.822742+00:00",
+  "basis": "treatment-blind existing cluster top genes and detection fractions; independent broad annotation",
+  "KAC": "unassigned: author classifier/labels not publicly available in audited source",
+  "alveolar_denominator": "clusters 20 and 23, not a KAC classifier",
+  "macrophage_specific": "cluster 6 candidate only; broad CSF1R+ myeloid is not macrophage-only",
+  "exclusions": "mixed clusters 3,18,28,32 stay unassigned; muscle and ambiguous stromal not fibroblasts",
+  "annotation_sha256": "d4ecab6d1fa69ca4510567db6c016a87431a590784a3da4edf7902cd7fbfcb97",
+  "inputs": {
+    "cluster_top_genes.csv": "ec4d4daed9733c3862b9b2e13a266636f4d996ca037c88a2f189dd8a51b2b2c0",
+    "cluster_marker_summary.csv": "4e66d4319ab56bab28ba92aa458b80e573ba907314bbbf50f029d02bcc4eb420",
+    "cluster_membership.csv.gz": "066b85b5f277031f126ef841592409aea5978db6d874cffe6f9d45be814575e5"
+  }
+}
