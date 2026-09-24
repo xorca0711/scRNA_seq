@@ -1,0 +1,848 @@
+{
+  "schema_version": 1,
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300293&targ=all&form=xml&view=full",
+  "retrieved_utc": "2026-09-24T07:16:23.288271+00:00",
+  "sha256": "38e976e0993b17a4ba8da2f86de84bd1c08442fb3fd652432e4116c6e3b966d1",
+  "series": {
+    "accession": "GSE300293",
+    "title": [
+      "Single-cell and spatial transcriptomics analysis of tobacco-associated lung adenocarcinoma development, and in response to targeting inflammation alone or in combination with immune checkpoint blockade in precancerous phase [Spatial transcriptomics]"
+    ],
+    "pubmed_id": [
+      "41202811"
+    ],
+    "summary": [
+      "Understanding cellular processes underlying early lung adenocarcinoma (LUAD) development is needed to devise intervention strategies. Here, we performed single-cell RNA sequencing (scRNA-seq) of mouse lungs from Gprc5a−/− mice during lung tumor development and also following therapeutic targeting of inflammation (IL-1𝛽) alone and in combination with immune checkpoint blockade in precancerous stages. We coupled scRNA-seq analysis with spatial transcriptomics of mouse lungs under different conditions."
+    ],
+    "overall_design": [
+      "Gene expression profiling by high throughput single-cell sequencing and spatial transcriptomics"
+    ],
+    "sample_id": [
+      "GSM9057760",
+      "GSM9057761",
+      "GSM9057762",
+      "GSM9057763",
+      "GSM9057764",
+      "GSM9057765",
+      "GSM9057766",
+      "GSM9057767",
+      "GSM9057768",
+      "GSM9057769",
+      "GSM9057770",
+      "GSM9057771",
+      "GSM9057772",
+      "GSM9057773",
+      "GSM9057774",
+      "GSM9057775",
+      "GSM9057776",
+      "GSM9057777",
+      "GSM9057778"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE300nnn/GSE300293/suppl/GSE300293_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1280038"
+    ]
+  },
+  "samples": [
+    {
+      "accession": "GSM9057760",
+      "title": [
+        "Tumor-bearing Gprc5a-/- lung tissue 4 [ST-D4]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057760/suppl/GSM9057760_D4.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057760/suppl/GSM9057760_D4_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057760/suppl/GSM9057760_D4_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057760/suppl/GSM9057760_D4_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514109",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269722"
+      ]
+    },
+    {
+      "accession": "GSM9057761",
+      "title": [
+        "Tumor-bearing Gprc5a-/- lung tissue 5 [ST-A1]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: Saline",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057761/suppl/GSM9057761_A1.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057761/suppl/GSM9057761_A1_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057761/suppl/GSM9057761_A1_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057761/suppl/GSM9057761_A1_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514108",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269723"
+      ]
+    },
+    {
+      "accession": "GSM9057762",
+      "title": [
+        "Tumor-bearing Gprc5a-/- lung tissue 6 [ST-B1]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: Saline",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057762/suppl/GSM9057762_B1.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057762/suppl/GSM9057762_B1_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057762/suppl/GSM9057762_B1_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057762/suppl/GSM9057762_B1_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514107",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269724"
+      ]
+    },
+    {
+      "accession": "GSM9057763",
+      "title": [
+        "Tumor-bearing Gprc5a-/- lung tissue 7 [ST-C1]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: Saline",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057763/suppl/GSM9057763_C1.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057763/suppl/GSM9057763_C1_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057763/suppl/GSM9057763_C1_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057763/suppl/GSM9057763_C1_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514106",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269725"
+      ]
+    },
+    {
+      "accession": "GSM9057764",
+      "title": [
+        "Tumor-bearing Gprc5a-/- lung tissue 8 [ST-D1]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: Saline",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057764/suppl/GSM9057764_D1.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057764/suppl/GSM9057764_D1_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057764/suppl/GSM9057764_D1_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057764/suppl/GSM9057764_D1_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514105",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269726"
+      ]
+    },
+    {
+      "accession": "GSM9057765",
+      "title": [
+        "Tumor-bearing Gprc5a-/- lung tissue 9 [ST-A2]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057765/suppl/GSM9057765_A2.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057765/suppl/GSM9057765_A2_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057765/suppl/GSM9057765_A2_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057765/suppl/GSM9057765_A2_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514104",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269727"
+      ]
+    },
+    {
+      "accession": "GSM9057766",
+      "title": [
+        "Tumor-bearing Gprc5a-/- lung tissue 10 [ST-B2]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057766/suppl/GSM9057766_B2.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057766/suppl/GSM9057766_B2_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057766/suppl/GSM9057766_B2_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057766/suppl/GSM9057766_B2_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514103",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269728"
+      ]
+    },
+    {
+      "accession": "GSM9057767",
+      "title": [
+        "Tumor-bearing Gprc5a-/- lung tissue 11 [ST-C2]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057767/suppl/GSM9057767_C2.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057767/suppl/GSM9057767_C2_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057767/suppl/GSM9057767_C2_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057767/suppl/GSM9057767_C2_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514102",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269729"
+      ]
+    },
+    {
+      "accession": "GSM9057768",
+      "title": [
+        "Tumor-bearing Gprc5a-/- lung tissue 12 [ST-D2]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "age: 4 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057768/suppl/GSM9057768_D2.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057768/suppl/GSM9057768_D2_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057768/suppl/GSM9057768_D2_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057768/suppl/GSM9057768_D2_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514101",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269730"
+      ]
+    },
+    {
+      "accession": "GSM9057769",
+      "title": [
+        "Tumor-bearing Gprc5a-/- lung tissue 13 [ST-A3]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: Saline",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057769/suppl/GSM9057769_A3.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057769/suppl/GSM9057769_A3_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057769/suppl/GSM9057769_A3_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057769/suppl/GSM9057769_A3_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514100",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269731"
+      ]
+    },
+    {
+      "accession": "GSM9057770",
+      "title": [
+        "Tumor-bearing Gprc5a-/- lung tissue 14 [ST-B3]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: Saline",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057770/suppl/GSM9057770_B3.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057770/suppl/GSM9057770_B3_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057770/suppl/GSM9057770_B3_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057770/suppl/GSM9057770_B3_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514099",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269732"
+      ]
+    },
+    {
+      "accession": "GSM9057771",
+      "title": [
+        "Tumor-bearing Gprc5a-/- lung tissue 15 [ST-C3]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: Saline",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057771/suppl/GSM9057771_C3.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057771/suppl/GSM9057771_C3_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057771/suppl/GSM9057771_C3_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057771/suppl/GSM9057771_C3_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514098",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269733"
+      ]
+    },
+    {
+      "accession": "GSM9057772",
+      "title": [
+        "Tumor-bearing Gprc5a-/- lung tissue 16 [ST-D3]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: Saline",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057772/suppl/GSM9057772_D3.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057772/suppl/GSM9057772_D3_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057772/suppl/GSM9057772_D3_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057772/suppl/GSM9057772_D3_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514097",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269734"
+      ]
+    },
+    {
+      "accession": "GSM9057773",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to Control IgG and analyzed at 3 months post-NNK, ST"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: Control IgG",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057773/suppl/GSM9057773_A_IgG_3m_5241.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057773/suppl/GSM9057773_A_IgG_3m_5241_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057773/suppl/GSM9057773_A_IgG_3m_5241_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057773/suppl/GSM9057773_A_IgG_3m_5241_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514096",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269735"
+      ]
+    },
+    {
+      "accession": "GSM9057774",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and analyzed at 3 months post-NNK, ST, replicate 1"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057774/suppl/GSM9057774_A_Il1b_3m_5318.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057774/suppl/GSM9057774_A_Il1b_3m_5318_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057774/suppl/GSM9057774_A_Il1b_3m_5318_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057774/suppl/GSM9057774_A_Il1b_3m_5318_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514095",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269736"
+      ]
+    },
+    {
+      "accession": "GSM9057775",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and analyzed at 7 months post-NNK, ST, replicate 1"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057775/suppl/GSM9057775_A_Il1b_7mo_4912.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057775/suppl/GSM9057775_A_Il1b_7mo_4912_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057775/suppl/GSM9057775_A_Il1b_7mo_4912_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057775/suppl/GSM9057775_A_Il1b_7mo_4912_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514094",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269737"
+      ]
+    },
+    {
+      "accession": "GSM9057776",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to Control IgG and analyzed at 7 months post-NNK, ST"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: Control IgG",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057776/suppl/GSM9057776_B_IgG_7m_4955.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057776/suppl/GSM9057776_B_IgG_7m_4955_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057776/suppl/GSM9057776_B_IgG_7m_4955_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057776/suppl/GSM9057776_B_IgG_7m_4955_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514093",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269738"
+      ]
+    },
+    {
+      "accession": "GSM9057777",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and analyzed at 3 months post-NNK, ST, replicate 2"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1𝛽",
+        "treatment starting_point: End of NNK exposure",
+        "treatment endpoint: 3 months post-NNK",
+        "age: 7 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057777/suppl/GSM9057777_B_Il1b_3m_5252.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057777/suppl/GSM9057777_B_Il1b_3m_5252_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057777/suppl/GSM9057777_B_Il1b_3m_5252_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057777/suppl/GSM9057777_B_Il1b_3m_5252_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514092",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269739"
+      ]
+    },
+    {
+      "accession": "GSM9057778",
+      "title": [
+        "Lungs of Gprc5a-/- mice exposed to anti-IL-1𝛽 and analyzed at 7 months post-NNK, ST, replicate 2"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded mouse lung tissue",
+        "genotype: Gprc5a-/-",
+        "exposure: NNK",
+        "treatment: anti-IL-1B",
+        "treatment starting_point: 3 months post end of NNK exposure",
+        "treatment endpoint: 7 months post-NNK",
+        "age: 11 months"
+      ],
+      "data_processing": [
+        "Raw FASTQ data (demultiplexed clean reads) were aligned against the GRCm38 (mm10) mouse reference genomes by Spaceranger (version 2.0.0 for mouse ST data) with the Visium transcriptome probe set (mouse data probeset v1.0) and default parameter settings. The resulting unique molecular identifier (UMI) count matrices were analyzed using Seurat (v5.1.0) in the R platform. An experienced pathologist (A.G.S.) then checked and annotated each spot by using the Loupe Browser with the corresponding high-resolution images. A spot’s annotation was based on the cell type or structure that covered at least 50% of the spot. Spots annotated as “Space”, \"Foreign body\", \"Tissue artifacts\" were filtered out during QC processing. Detailed QC metrics were generated and evaluated, and spots were carefully filtered to obtain high-quality data for downstream analyses. Briefly, for basic quality filtering, spots with nUMI < 500 and nFeature < 200 and relative high percentage of mitochondrial genes >15% were filtered out. Data normalization was then performed using Seurat on the filtered gene-cell matrix.\nAssembly: GRCm38 (mm10)\nSupplementary files format and content: images, tab-delimited text files include barcodes, features/genes, coordinates, and raw counts for each sample\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057778/suppl/GSM9057778_B_Il1b_7mo_4963.spatial.tar.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057778/suppl/GSM9057778_B_Il1b_7mo_4963_barcodes.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057778/suppl/GSM9057778_B_Il1b_7mo_4963_features.tsv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9057nnn/GSM9057778/suppl/GSM9057778_B_Il1b_7mo_4963_matrix.mtx.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN49514091",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX29269740"
+      ]
+    }
+  ],
+  "scope": "Metadata only; sample records are not independent biological units."
+}

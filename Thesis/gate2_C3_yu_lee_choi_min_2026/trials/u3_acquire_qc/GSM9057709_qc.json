@@ -1,0 +1,17 @@
+{
+  "gsm": "GSM9057709",
+  "treatment": "Control IgG",
+  "endpoint": "3 months post-NNK",
+  "analysis_unit": "GSM9057709",
+  "input_cells": 2561,
+  "qc_pass_cells": 2475,
+  "qc_excluded_cells": 86,
+  "features": 31053,
+  "mt_features": 13,
+  "median_counts": 3161.0,
+  "median_genes": 1385.0,
+  "median_percent_mt": 2.227090178897408,
+  "duplicate_coordinates_collapsed": 0,
+  "ambiguous_candidate_cells_after_qc": 208,
+  "processing_seconds": 4.516
+}

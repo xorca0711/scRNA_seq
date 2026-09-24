@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "specified_on": "2026-09-24",
+  "scope": "Technical sparse-count preflight only; no expression effects, biological tests or state calls",
+  "source_series": "GSE300288",
+  "samples": ["GSM9057712", "GSM9057713"],
+  "selection_reason": "One control and one anti-IL-1beta library at the 3-month endpoint with the same deposited replicate ordinal; ordinal is NOT evidence of pairing. Chosen from metadata before count inspection to exercise both input arms.",
+  "maximum_compressed_bytes_per_file": 150000000,
+  "maximum_total_compressed_bytes": 320000000,
+  "checks": ["Three deposited 10x files per GSM", "MatrixMarket integer or real coordinate format", "Feature/barcode dimensions agree", "Unique feature IDs and barcodes", "Finite nonnegative integer counts", "Coordinate bounds and exact declared entry count"],
+  "inference_permitted": false,
+  "remaining_gates": ["Resolve FFPE characteristic versus fresh single-cell processing metadata", "Recover animal/pool identifiers and batch structure", "Freeze epithelial-state definitions and target contrasts before expression scoring"]
+}

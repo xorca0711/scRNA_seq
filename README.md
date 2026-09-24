@@ -32,6 +32,7 @@ Exploratory findings and independent confirmation are distinguished explicitly.
 | To assess | Open |
 |---|---|
 | Scientific questions and measurement limits | [Research questions](RESEARCH_QUESTIONS.md) |
+| Paper-specific analyses and figure galleries | [Paper roadmap](Thesis/README.md) |
 | A short portfolio entry and four figures | [Portfolio summary](docs/PORTFOLIO_SUMMARY.md) |
 | Three portfolio case studies and what was actually demonstrated | [Portfolio guide](docs/PORTFOLIO.md) |
 | Every claim, decision authority and explicit numeric-check coverage | [Claim register](CLAIMS.md) and [generated summary](docs/CLAIM_SUMMARY.md) |
@@ -39,13 +40,6 @@ Exploratory findings and independent confirmation are distinguished explicitly.
 | Commands, dependencies and data requirements | [Reproducibility guide](REPRODUCIBILITY.md) |
 | Next outcome-linked analysis and eligibility gates | [Next dataset gate](docs/NEXT_DATASET_GATE.md) |
 | Nabhan 2018 source reproduction and animal-level Wnt analysis | [Wnt niche analysis](Thesis/gate1_03_nabhan_2018/README.md) |
-
-![Claim status by analysis family](analysis/figures/claims_ledger.png)
-
-*Generated from the register using explicit analysis-family assignments.
-Rows include biological observations, method checks and decision records;
-status counts are not independent discoveries or a measure of calibration.
-Current counts and review states are in the [generated summary](docs/CLAIM_SUMMARY.md).*
 
 ## What the portfolio demonstrates
 
@@ -81,85 +75,21 @@ override the claim register.
 | [Nabhan: Wnt niches](Thesis/gate1_03_nabhan_2018/README.md#figure-gallery) | Source-expression heatmaps, threshold sensitivity, paired fibroblast and AT2 plots |
 | [Sikkema: reference annotation](Thesis/gate1_04_sikkema_2023_hlca/README.md#figure-gallery) | HLCA label transfer, uncertainty, marker-score heatmap and annotation/QC checks |
 | [Cardoso: ligand sources and niche candidates](Thesis/gate2_05_cardoso_2026/README.md#figure-gallery) | Source/depth sensitivity and resource/receptor coverage |
+| [Yu, Lee, Choi_Min: IL-1beta niches](Thesis/gate2_C3_yu_lee_choi_min_2026/README.md#figure-gallery) | Initial IPF pathway results and the context-specific gallery plan |
 | [Murthy: human distal-lung atlas](Thesis/ungated_murthy_2022/README.md#figure-gallery) | Donor UMAP and epithelial marker dot plot |
 | [Epithelial-state specificity across studies](Thesis/epithelial_state_specificity/README.md) | Matched-depth published signatures and cohort eligibility |
 
-![Gene-set inference under different correlation and adjustment assumptions](analysis/corrections/statistics/statistical_corrections.png)
-
-*Programme-analysis comparison. G2 replication changes from zero candidates
-under estimated-correlation CAMERA to 30 under fixed correlation 0.01; the
-historical GSEA result is shown for context. W1 has no significant gene set,
-and the G1 DNA-replication sets do not pass after covariate adjustment. These
-results establish method sensitivity, not biological absence.
-[Methods and numerical tables](analysis/corrections/statistics/README.md).*
-
-## Nabhan 2018: Wnt source and response figures
-
-The [Nabhan analysis](Thesis/gate1_03_nabhan_2018/README.md) combines a
-47-cell source-data reproduction with descriptive summaries of 34,503 cells
-from 25 animals in GSE262927. The seven figures below show expression,
-detection sensitivity and animal coverage. No gene-set enrichment analysis
-was run for Nb1. PNGs are embedded here; vector SVGs, tables, methods and
-provenance are linked from the [complete figure gallery](Thesis/gate1_03_nabhan_2018/README.md#figure-gallery).
-
-![Wnt source and response heatmaps across deposited lung compartments](Thesis/gate1_03_nabhan_2018/nb1/figures/02_source_response.png)
-
-*Wnt ligands, secretion machinery and response markers by compartment and
-day. Left: mean animal-level log2(CPM+1); right: expected detection at 1,000
-UMIs. Only units with at least 50 cells enter these summaries; row labels show
-the animal count. Expression does not establish secretion or spatial contact.*
-
-![Wnt ligands in paired AF1 and AF2 fibroblast compartments](Thesis/gate1_03_nabhan_2018/nb1/figures/05_fibroblast_pairs.png)
-
-*Each line joins the same animal's AF1 and AF2 compartments. Wnt2 is higher in
-AF1 and Wnt4 in AF2 in all 21 eligible pairs, with the same directions after
-depth standardization. These are descriptive compartment differences, not
-evidence that injury caused the difference.*
-
-<details>
-<summary>Source expression heatmap and detection-threshold sensitivity</summary>
-
-![Nabhan source expression panel in 47 deposited mesenchymal cells](Thesis/gate1_03_nabhan_2018/source_reproduction/figures/source_expression_panel.png)
-
-*GSE109444, log2(1+FPKM); the bulk control is excluded. The panel includes Wnt
-ligands, fibroblast markers and identity/QC context. Sftpc detection in these
-deposited mesenchymal cells remains an unresolved source-data caveat.*
-
-![Sensitivity of gene detection and conditional Wnt5a/Pdgfra overlap to FPKM cutoffs](Thesis/gate1_03_nabhan_2018/source_reproduction/figures/detection_sensitivity.png)
-
-*Pdgfra detection among Wnt5a-positive cells ranges from 72.2% to 90.3% across
-four fixed cutoffs. Unspecified original filtering and positivity rules prevent
-exact reproduction of the published 74%. The source cells are not established
-independent-animal replicates. [Source report](Thesis/gate1_03_nabhan_2018/source_reproduction/README.md).*
-
-</details>
-
-<details>
-<summary>Animal coverage and AT2 source, response and state plots</summary>
-
-![Animal-by-compartment cell coverage for Nb1](Thesis/gate1_03_nabhan_2018/nb1/figures/01_animal_coverage.png)
-
-*Bold counts meet the 50-cell floor. Only one baseline and one day-11 AT2
-animal pass, preventing the intended replicated comparison. The first injury
-sample is day 6, too late to test the paper's rapid source switch.*
-
-![Per-animal AT2 Wnt source, secretion-machinery and response transcripts](Thesis/gate1_03_nabhan_2018/nb1/figures/03_at2_per_animal.png)
-
-*One point per animal; open points fall below the cell floor. Wnt7b occurs at
-baseline as well as after injury. Detection of Wnt7b, Porcn and Wls does not
-establish induction, secretion or an autocrine loop.*
-
-![AT2 identity and proliferation against Wnt-response transcript summaries](Thesis/gate1_03_nabhan_2018/nb1/figures/04_at2_dimensions.png)
-
-*Animal-level comparisons of Axin2/Lef1 with a published AT2 identity panel
-and Mki67/Top2a. The two-gene summaries are not validated pathway or stemness
-scores; the identity panel covers 377/398 genes. [Nb1 report and tables](Thesis/gate1_03_nabhan_2018/nb1/README.md).*
-
-</details>
-
 ## Datasets
 
-Every deposit the log has opened, with the study it came from and where in
+The [IL-1beta review branch](Thesis/gate2_C3_yu_lee_choi_min_2026/README.md)
+has completed its initial mouse QC/clustering, two-cohort IPF pathway analysis,
+and descriptive ligand-receptor analysis in 25 donors. Its
+[initial report](Thesis/gate2_C3_yu_lee_choi_min_2026/INITIAL_RUN_REPORT.md)
+distinguishes completed results from pending treatment, sensitivity and
+human/spatial work. The [public-data shortlist](Thesis/gate2_C3_yu_lee_choi_min_2026/DATASETS.md)
+records further candidates. The table below describes the earlier analyses.
+
+Deposits used in the existing biological analyses, with their source studies and where in
 this repository it was read. Deposits are analysed under the roadmap paper
 that motivated them. The two series that predate the roadmap sit beside their
 source papers too: GSE262927 under paper 1, and GSE178360 under a folder for

@@ -1,0 +1,1307 @@
+{
+  "schema_version": 1,
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277777&targ=all&form=xml&view=full",
+  "retrieved_utc": "2026-09-24T07:16:05.170946+00:00",
+  "sha256": "17bfb513d5e5ab215f74e5b81a6bad53bc1b349ac258461b1c5cc5f399f5cb45",
+  "series": {
+    "accession": "GSE277777",
+    "title": [
+      "Critical role for a high-plasticity cell state in lung cancer"
+    ],
+    "pubmed_id": [
+      "41565826"
+    ],
+    "summary": [
+      "Plasticity—the ability of cells to undergo phenotypic transitions—drives cancer progression and therapy resistance. Recent studies have suggested that plasticity in solid tumors is concentrated in a minority subset of cancer cells, yet functional studies interrogating this high plasticity cell state (HPCS) in situ are lacking. Here, we develop mouse models enabling detection, longitudinal lineage tracing, and ablation of the HPCS in autochthonous lung tumors in vivo. Lineage tracing reveals that the HPCS cells possess high capacity for cell state transitions, giving rise to both early neoplastic (differentiated) and progressed lung cancer cell states in situ. Longitudinal lineage tracing using secreted luciferases reveals HPCS-derived cells harbor high capacity for growth when compared to bulk cancer cells or another cancer cell state with features of differentiated lung epithelium. HPCS ablation in early neoplasias abrogates benign-to-malignant transition, whereas ablation in established tumors by suicide gene or CAR T cells robustly reduces tumor burden. We further demonstrate that the HPCS gives rise to therapy-resistant cell states, whereas HPCS ablation suppresses resistance to chemotherapy and oncoprotein-targeted therapy. Interestingly, an HPCS-like state is ubiquitous in regenerating epithelia and in carcinomas of multiple other tissues, revealing a convergence of plasticity programs. Our work establishes the HPCS as a critical hub enabling reciprocal transitions between cancer cell states. Targeting the HPCS in lung cancer and in other carcinomas may suppress cancer progression and eradicate treatment resistance."
+    ],
+    "overall_design": [
+      "KP mice with either Slc4a11-FSF-MCD/+ with either Hipp11-FSF-GGCB/+ or Rosa26-FSFmTmG/+ reporter alleles or Hopx-FSF-MACD/+ mouse model with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice with tumors were treated as indicated and tumor cells were hashed with TotalSeq B and then isolated for single-cell mRNA sequencing after FACS purification. One dataset is KP Rosa26-tdTomato/+ with tumors harvested 14 weeks post tumor initiation. One dataset is a KP Slc4a11-MCD/+ iRFP670-GLuc cell line transplant.\nPlease note that GSM9193561/GSM9193562 are biological replicate of GSM8529536/GSM8529537, sequenced on separate lanes and have different featureref.csv files."
+    ],
+    "sample_id": [
+      "GSM8529524",
+      "GSM8529525",
+      "GSM8529526",
+      "GSM8529527",
+      "GSM8529528",
+      "GSM8529529",
+      "GSM8529530",
+      "GSM8529531",
+      "GSM8529532",
+      "GSM8529533",
+      "GSM8529534",
+      "GSM8529535",
+      "GSM8529536",
+      "GSM8529537",
+      "GSM8529538",
+      "GSM8529539",
+      "GSM8529540",
+      "GSM8529541",
+      "GSM8529542",
+      "GSM8529543",
+      "GSM9193561",
+      "GSM9193562",
+      "GSM9193563",
+      "GSM9193564",
+      "GSM9193565",
+      "GSM9193566",
+      "GSM9193567",
+      "GSM9193568",
+      "GSM9193569",
+      "GSM9193570",
+      "GSM9315338",
+      "GSM9315339"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_RAW.tar",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO15123.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO15342.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO15600.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO15601.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO15771.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO16235.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO16562.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO16686-nointrons.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO17402.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO17483-DT.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO17483-Vehicle.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO17543.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO17721-DT.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO17721-Vehicle.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-KPT1.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-KPT2.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_combined_data.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_luadAdata.h5ad"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1164164"
+    ]
+  },
+  "samples": [
+    {
+      "accession": "GSM8529524",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 2 weeks of tracing, GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Hipp11-GGCB/+",
+        "treatment: Tamoxifen"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529524/suppl/GSM8529524_IGO14143-filtered_feature_bc_matrix_10k.h5",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529524/suppl/GSM8529524_IGO14143-slc4a11-traced.h5ad",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529524/suppl/GSM8529524_IGO14143.featureref.csv.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886930",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171521"
+      ]
+    },
+    {
+      "accession": "GSM8529525",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 2 weeks of tracing, HTO"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Hipp11-GGCB/+",
+        "treatment: Tamoxifen"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad\nLibrary strategy: HTO"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886929",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171522"
+      ]
+    },
+    {
+      "accession": "GSM8529526",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+  tumor cells harvested 14 weeks PTI after 2 weeks of tracing, GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529526/suppl/GSM8529526_IGO15600-filtered_feature_bc_matrix.h5",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529526/suppl/GSM8529526_IGO15600.featureref.csv.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886928",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171523"
+      ]
+    },
+    {
+      "accession": "GSM8529527",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+  tumor cells harvested 14 weeks PTI after 2 weeks of tracing, HTO"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad\nLibrary strategy: HTO"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886927",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171524"
+      ]
+    },
+    {
+      "accession": "GSM8529528",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+  tumor cells harvested 8 weeks PTI after 2 weeks of tracing, GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529528/suppl/GSM8529528_IGO15601.featureref.csv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529528/suppl/GSM8529528_IGO15601_-_filtered_feature_bc_matrix.h5"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886926",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171525"
+      ]
+    },
+    {
+      "accession": "GSM8529529",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+  tumor cells harvested 8 weeks PTI after 2 weeks of tracing, HTO"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad\nLibrary strategy: HTO"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886925",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171526"
+      ]
+    },
+    {
+      "accession": "GSM8529530",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+  tumor cells harvested 14 weeks PTI after 2 weeks of tracing, replicates, GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529530/suppl/GSM8529530_IGO15771-filtered_feature_bc_matrix.h5",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529530/suppl/GSM8529530_IGO15771.featureref.csv.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886924",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171527"
+      ]
+    },
+    {
+      "accession": "GSM8529531",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+  tumor cells harvested 14 weeks PTI after 2 weeks of tracing, replicates, HTO"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad\nLibrary strategy: HTO"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886923",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171529"
+      ]
+    },
+    {
+      "accession": "GSM8529532",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 1 week of ablation, GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Hipp11-GGCB/+",
+        "treatment: DT"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529532/suppl/GSM8529532_IGO15123-filtered_feature_bc_matrix.h5",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529532/suppl/GSM8529532_IGO15123.featureref.csv.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886922",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171528"
+      ]
+    },
+    {
+      "accession": "GSM8529533",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 1 week of ablation, HTO"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Hipp11-GGCB/+",
+        "treatment: DT"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad\nLibrary strategy: HTO"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886921",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171530"
+      ]
+    },
+    {
+      "accession": "GSM8529534",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 1 week of ablation, replicate, GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Hipp11-GGCB/+",
+        "treatment: DT"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529534/suppl/GSM8529534_IGO15342-filtered_feature_bc_matrix.h5",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529534/suppl/GSM8529534_IGO15342.featureref.csv.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886920",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171539"
+      ]
+    },
+    {
+      "accession": "GSM8529535",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 1 week of ablation, replicate, HTO"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Hipp11-GGCB/+",
+        "treatment: DT"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad\nLibrary strategy: HTO"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886919",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171531"
+      ]
+    },
+    {
+      "accession": "GSM8529536",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+ tumors treated and harvested at 17 weeks PTI after 3 weeks of tracing, GEX, rep1"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen, cisplatin, MRTX1133"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529536/suppl/GSM8529536_IGO16235-filtered_feature_bc_matrix_wintron.h5",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529536/suppl/GSM8529536_IGO16235.featureref.csv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529536/suppl/GSM8529536_IGO16235_16562.h5ad"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886918",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171536"
+      ]
+    },
+    {
+      "accession": "GSM8529537",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+ tumors treated and harvested at 17 weeks PTI after 3 weeks of tracing, HTO, rep1"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen, cisplatin, MRTX1133"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad\nLibrary strategy: HTO"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886917",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171537"
+      ]
+    },
+    {
+      "accession": "GSM8529538",
+      "title": [
+        "KPfrt Hopx-MACD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI, GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Hopx-MACD/+ Hipp11-GGCB/+"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529538/suppl/GSM8529538_IGO16318-filtered_feature_bc_matrix.h5",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529538/suppl/GSM8529538_IGO16318.featureref.csv.gz",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529538/suppl/GSM8529538_allmice-tumor-IGO16318.h5ad"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886916",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171538"
+      ]
+    },
+    {
+      "accession": "GSM8529539",
+      "title": [
+        "KPfrt Hopx-MACD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI, HTO"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Hopx-MACD/+ Hipp11-GGCB/+"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad\nLibrary strategy: HTO"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "NONE"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886915",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171540"
+      ]
+    },
+    {
+      "accession": "GSM8529540",
+      "title": [
+        "KP Rosa26-tdTomato/+ tumors harvested at 14 weeks post tumor initiation, GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Rosa26-tdTomato/+"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529540/suppl/GSM8529540_KPT1-filtered_feature_bc_matrix.h5"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886914",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171532"
+      ]
+    },
+    {
+      "accession": "GSM8529541",
+      "title": [
+        "KP Rosa26-tdTomato/+ tumors harvested at 14 weeks post tumor initiation, HTO"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Rosa26-tdTomato/+"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad\nLibrary strategy: HTO"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529541/suppl/GSM8529541_IGO15488_1.featureref.csv.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886913",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171533"
+      ]
+    },
+    {
+      "accession": "GSM8529542",
+      "title": [
+        "KP Rosa26-tdTomato/+ tumors harvested at 14 weeks post tumor initiation, replicate, GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Rosa26-tdTomato/+"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529542/suppl/GSM8529542_KPT2-filtered_feature_bc_matrix.h5"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886912",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171534"
+      ]
+    },
+    {
+      "accession": "GSM8529543",
+      "title": [
+        "KP Rosa26-tdTomato/+ tumors harvested at 14 weeks post tumor initiation, repilcate, HTO"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Rosa26-tdTomato/+"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad\nLibrary strategy: HTO"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529543/suppl/GSM8529543_IGO15488_2.featureref.csv.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886911",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171535"
+      ]
+    },
+    {
+      "accession": "GSM9193561",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+ tumors treated and harvested at 17 weeks PTI after 3 weeks of tracing, GEX rep2"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: treatment: Tamoxifen, cisplatin, MRTX1133",
+        "treatment: Tamoxifen, cisplatin, MRTX1133, Diphtheria toxin"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5: raw counts\nSupplementary files format and content: h5ad: processed file\nSupplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193561/suppl/GSM9193561_IGO16562-filtered_feature_bc_matrix_wintron.h5"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749627",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202100"
+      ]
+    },
+    {
+      "accession": "GSM9193562",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+ tumors treated and harvested at 17 weeks PTI after 3 weeks of tracing, HTO, rep2"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen, cisplatin, MRTX1133, Diptheria toxin"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5: raw counts\nSupplementary files format and content: h5ad: processed file\nSupplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193562/suppl/GSM9193562_IGO16562-feature_reference.csv.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749626",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202099"
+      ]
+    },
+    {
+      "accession": "GSM9193563",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+ tumors treated with Tamoxifen and harvested at 12 weeks PTI after 3d tracing, GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5: raw counts\nSupplementary files format and content: h5ad: processed file\nSupplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193563/suppl/GSM9193563_IGO16686-filtered_feature_bc_matrix-nointrons.h5"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749625",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202101"
+      ]
+    },
+    {
+      "accession": "GSM9193564",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+ tumors treated with Tamoxifen and harvested at 12 weeks PTI after 3d tracing, HTO"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5: raw counts\nSupplementary files format and content: h5ad: processed file\nSupplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193564/suppl/GSM9193564_IGO16686-feature_reference.csv.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749624",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202102"
+      ]
+    },
+    {
+      "accession": "GSM9193565",
+      "title": [
+        "KPfrt (Slc4a11-MCD/+ or Hopx-MACD/+) Rosa26-mTmG/+ tumors harvested at (6 or 12) weeks PTI, 3d tracing, GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+ and Kras-G12D/+ Trp53-delta/delta Hopx-MACD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5: raw counts\nSupplementary files format and content: h5ad: processed file\nSupplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193565/suppl/GSM9193565_IGO17402-filtered_feature_bc_matrix.h5"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749623",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202103"
+      ]
+    },
+    {
+      "accession": "GSM9193566",
+      "title": [
+        "KPfrt (Slc4a11-MCD/+ or Hopx-MACD/+) Rosa26-mTmG/+ tumors harvested at (6 or 12) weeks PTI, 3d tracing, HTO"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+ and Kras-G12D/+ Trp53-delta/delta Hopx-MACD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5: raw counts\nSupplementary files format and content: h5ad: processed file\nSupplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193566/suppl/GSM9193566_IGO17402-feature_reference.csv.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749622",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202104"
+      ]
+    },
+    {
+      "accession": "GSM9193567",
+      "title": [
+        "KPfrt Hopx-MACD/+ Rosa26-mTmG/+ tumors; harvested at 14 weeks PTI after 14 days of tracing, GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Hopx-MACD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5: raw counts\nSupplementary files format and content: h5ad: processed file\nSupplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193567/suppl/GSM9193567_IGO17543-filtered_feature_bc_matrix.h5"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749621",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202105"
+      ]
+    },
+    {
+      "accession": "GSM9193568",
+      "title": [
+        "KPfrt Hopx-MACD/+ Rosa26-mTmG/+ tumors; harvested at 14 weeks PTI after 14 days of tracing, HTO"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Hopx-MACD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5: raw counts\nSupplementary files format and content: h5ad: processed file\nSupplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193568/suppl/GSM9193568_IGO17543-feature_reference.csv.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749620",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202106"
+      ]
+    },
+    {
+      "accession": "GSM9193569",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ iRFP670-Gluc cell line; tail vein injected, harvested 5 weeks post transplant (1 week DT), GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: AT1401 iRFP670-GLuc",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MACD/+ iRFP670-Gluc",
+        "treatment: Saline"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5: raw counts\nSupplementary files format and content: h5ad: processed file\nSupplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193569/suppl/GSM9193569_IGO17483-Vehicle-filtered_feature_bc_matrix.h5",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193569/suppl/GSM9193569_IGO17483-Vehicle-raw_feature_bc_matrix.h5"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749619",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202107"
+      ]
+    },
+    {
+      "accession": "GSM9193570",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ iRFP670-Gluc cell line; tail vein injected, harvested 5 weeks post transplant (1 week Saline), GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: AT1401 iRFP670-GLuc",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MACD/+ iRFP670-Gluc",
+        "treatment: Diphteria toxin"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5: raw counts\nSupplementary files format and content: h5ad: processed file\nSupplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193570/suppl/GSM9193570_IGO17483-DT-filtered_feature_bc_matrix.h5",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193570/suppl/GSM9193570_IGO17483-DT-raw_feature_bc_matrix.h5"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749618",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202108"
+      ]
+    },
+    {
+      "accession": "GSM9315338",
+      "title": [
+        "KPfrt Hopx-MACD/+ BG/+  cell line; tail vein injected, harvested 5 weeks post transplant (1 week DT), GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: cancer",
+        "genotype: Kras-G12D/+ Trp53-Frt/Frt Hopx-MACD/+ Hipp11-BG/+",
+        "treatment: DT",
+        "batch: 9/2/2025"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9315nnn/GSM9315338/suppl/GSM9315338_IGO17721-DT-filtered_feature_bc_matrix.h5",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9315nnn/GSM9315338/suppl/GSM9315338_IGO17721-DT-raw_feature_bc_matrix.h5"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN53365666",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX31186838"
+      ]
+    },
+    {
+      "accession": "GSM9315339",
+      "title": [
+        "KPfrt Hopx-MACD/+ BG/+  cell line; tail vein injected, harvested 5 weeks post transplant (1 week Saline), GEX"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: cancer",
+        "genotype: Kras-G12D/+ Trp53-Frt/Frt Hopx-MACD/+ Hipp11-BG/+",
+        "treatment: Saline",
+        "batch: 9/2/2025"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)\nAssembly: GRCm38/mm10\nSupplementary files format and content: h5ad"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9315nnn/GSM9315339/suppl/GSM9315339_IGO17721-Vehicle-filtered_feature_bc_matrix.h5",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9315nnn/GSM9315339/suppl/GSM9315339_IGO17721-Vehicle-raw_feature_bc_matrix.h5"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN53365665",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX31186839"
+      ]
+    }
+  ],
+  "scope": "Metadata only; sample records are not independent biological units."
+}

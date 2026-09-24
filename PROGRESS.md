@@ -3,7 +3,86 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-## Current state: Nabhan analysis, 22 September 2026
+## Current execution: IL-1beta review, 24 September 2026
+
+The owner authorized final self-review, improvements and launch, superseding
+this morning's confirmation hold. [Final review](Thesis/gate2_C3_yu_lee_choi_min_2026/FINAL_REVIEW.md)
+records small-n permutation limits, treatment-dependent coverage selection,
+annotation/access gates and source resolution. The first seven-library
+mouse acquisition/QC stage completed in 107.58 seconds; 28,243 cells pass QC.
+Treatment-blind clustering completed in 243.27 seconds with 33 review clusters.
+The two-cohort IPF pathway job completed using frozen MSigDB 2024.1.Hs
+Hallmark/Reactome sets and previously audited raw-count pseudobulks. Neither
+cohort has primary global q < 0.05; fixed-correlation sensitivity findings
+must not replace these primary results. Independent table checks passed.
+The initial GSE136831 LIANA job completed at 17:43 KST: 25 eligible donors
+(15 IPF/10 control), with a seeded 500-cell/subtype cap and 50 tables across
+two resources. Count parity and output-integrity checks passed; no table is
+empty. This compute job has ended. Results are descriptive, without biological-
+replicate tests; interpretation, full-cell and other sensitivities remain
+pending. See the
+[initial results](Thesis/gate2_C3_yu_lee_choi_min_2026/INITIAL_RUN_REPORT.md).
+Read current run records before reporting status. This is staged execution,
+not a claim that all endpoints or ligand-receptor analyses have completed.
+Restricted annotated objects and the later treatment-start crosswalk remain
+scientific gates. No additional user confirmation is required to continue
+within the authorized plan.
+
+The owner also requested a figure-gallery plan during execution. The
+[paper-specific gallery plan](Thesis/gate2_C3_yu_lee_choi_min_2026/FIGURE_GALLERY_PLAN.md)
+now specifies context/coverage, source-recipient expression, directional LR,
+recipient pathways, mouse perturbation, human/spatial context and evidence
+synthesis, with supporting annotation and robustness panels. The paper README
+has a readiness index and retains the completed IPF figure. Planned panels
+must not be presented as completed analyses; null and discordant results stay
+in the gallery. No statistical specification changed to select figure results.
+
+## Earlier planning checkpoint: IL-1beta review, 24 September 2026
+
+The owner finished Yu, Lee, Choi_Min and Choi 2026 and requested integration
+of the annotated PDF, Notion notes and repository state into research questions,
+a public-data shortlist and a complete analysis plan. The paper-specific folder
+is [`Thesis/gate2_C3_yu_lee_choi_min_2026/`](Thesis/gate2_C3_yu_lee_choi_min_2026/README.md),
+using branch 2C item 3 while retaining stable roadmap number 13.
+
+**The owner explicitly requested review before the whole run.**
+[The proposed pipeline](Thesis/gate2_C3_yu_lee_choi_min_2026/ANALYSIS_TRIAL_PLAN.md)
+is ready for confirmation or revision. Preparation retrieved ten GEO metadata
+records (371 GSM records) and checked two GSE300288 sparse count inputs; no
+biological effect or treatment comparison was computed. Core proposal:
+GSE300288 anti-IL-1beta perturbation, then human GSE308103/GSE307534 context,
+then injury and malignant-state specificity. Resolve animal identities and
+the core assay metadata conflict before inference. Existing claims and
+historical runs are unchanged. See [preparation evidence](Thesis/gate2_C3_yu_lee_choi_min_2026/trials/PREPARATION_REPORT.md).
+
+The owner's follow-up identified that version 1 lacked actual macrophage/
+fibroblast ligand-receptor and pathway-enrichment analyses, and pointed back
+to the Body notes' context hierarchy. Version 2 now makes these central aims:
+[niche specification](Thesis/gate2_C3_yu_lee_choi_min_2026/NICHE_ANALYSIS_PLAN.md).
+It separates source regulation, recipient response, niche condition, age/history,
+repair routes and organ/disease contexts; CRC/PDAC leads are lung hypotheses.
+It specifies LIANA plus sample-level RNA-compatibility contrasts, macrophage/
+fibroblast pseudobulk CAMERA enrichment and conditional NicheNet target support.
+Existing IPF cohorts supply a fibrotic niche arm; old epithelial-stromal caches
+cannot supply macrophages. This is a planning revision only, awaiting review.
+Revision verification passed 1,297 repository checks, contract/dataset-gate
+consistency assertions and `git diff --check`. No biological analysis ran.
+
+The owner also requested either a representative repository-wide figure
+gallery or removal of the partial gallery from the main README. The latter
+option was applied: the landing page links to paper-specific analyses and
+galleries, with no embedded scientific figure. This checkout contained only
+the claim-status plot, not the reported Nabhan-only gallery; its embed and
+caption were removed while the figure file and all existing analysis galleries
+were preserved. Carry this presentation choice into the full analysis release.
+This documentation change does not approve or start the biological run.
+
+Publication update: the branch was rebased onto the subsequent Nabhan and
+gallery changes from main. Their paper galleries and results are preserved;
+the root README now retains the gallery index and removes the embedded
+Nabhan/statistics panels under the owner's navigation-only preference.
+
+## Prior state: Nabhan analysis, 22 September 2026
 
 README follow-up: existing figures are now embedded in the six executed paper
 overviews and both Choi subbranches, with a root gallery index. Nabhan's full

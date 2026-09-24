@@ -1,0 +1,1976 @@
+{
+  "schema_version": 1,
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307529&targ=all&form=xml&view=full",
+  "retrieved_utc": "2026-09-24T07:16:49.716008+00:00",
+  "sha256": "4ba9d4f4f2c327ea59fabe818ca3640d12abe0f03b1b4a57fc8a7a2e6300458d",
+  "series": {
+    "accession": "GSE307529",
+    "title": [
+      "Whole-exome sequencing of normal lung tissues, precursor lesions and invasive lung adenocarcinomas"
+    ],
+    "pubmed_id": [
+      "41202811"
+    ],
+    "summary": [
+      "Understanding cellular processes underlying early lung adenocarcinoma (LUAD) development is needed to devise intervention strategies. Here, we performed whole exome sequencing (WES) of human treatment-naive lungs comprising various stages in the sequence of pathogenesis of LUAD including normal lung tissues, atypical adenomatous hyperplasia (AAH), adenocarcinoma in situ (AIS), minimally invasive adenocarcinoma (MIA) and LUAD."
+    ],
+    "overall_design": [
+      "WES of tissues was performed on DNA isolated from formalin-fixed paraffin embedded tissues using the TWIST-WES protocol. Sequencing was done on the NovaSeq 6000 platform from Illumina.\n\n***************************************************************\nRaw files for human/patient samples were not submitted to GEO due to concerns about submitting personally identifiable sequence data for open access.\n***************************************************************"
+    ],
+    "sample_id": [
+      "GSM9226073",
+      "GSM9226074",
+      "GSM9226075",
+      "GSM9226076",
+      "GSM9226077",
+      "GSM9226078",
+      "GSM9226079",
+      "GSM9226080",
+      "GSM9226081",
+      "GSM9226082",
+      "GSM9226083",
+      "GSM9226084",
+      "GSM9226085",
+      "GSM9226086",
+      "GSM9226087",
+      "GSM9226088",
+      "GSM9226089",
+      "GSM9226090",
+      "GSM9226091",
+      "GSM9226092",
+      "GSM9226093",
+      "GSM9226094",
+      "GSM9226095",
+      "GSM9226096",
+      "GSM9226097",
+      "GSM9226098",
+      "GSM9226099",
+      "GSM9226100",
+      "GSM9226101",
+      "GSM9226102",
+      "GSM9226103",
+      "GSM9226104",
+      "GSM9226105",
+      "GSM9226106",
+      "GSM9226107",
+      "GSM9226108",
+      "GSM9226109",
+      "GSM9226110",
+      "GSM9226111",
+      "GSM9226112",
+      "GSM9226113",
+      "GSM9226114",
+      "GSM9226115",
+      "GSM9226116",
+      "GSM9226117",
+      "GSM9226118",
+      "GSM9226119",
+      "GSM9226120",
+      "GSM9226121",
+      "GSM9226122",
+      "GSM9226123",
+      "GSM9226124",
+      "GSM9226125",
+      "GSM9226126"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307529/suppl/GSE307529_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1321929"
+    ]
+  },
+  "samples": [
+    {
+      "accession": "GSM9226073",
+      "title": [
+        "Lung tissue with AAH of patient 1 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 65",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226073/suppl/GSM9226073_P1_AAH.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226074",
+      "title": [
+        "Lung tissue with LUAD of patient 1 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 65",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226074/suppl/GSM9226074_P1_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226075",
+      "title": [
+        "Lung tissue with AAH of patient 2 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 73",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226075/suppl/GSM9226075_P2_AAH.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226076",
+      "title": [
+        "Lung tissue with LUAD of patient 2 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 73",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226076/suppl/GSM9226076_P2_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226077",
+      "title": [
+        "Lung tissue with AIS of patient 3 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226077/suppl/GSM9226077_P3_AIS.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226078",
+      "title": [
+        "Lung tissue with LUAD of patient 3 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226078/suppl/GSM9226078_P3_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226079",
+      "title": [
+        "Lung tissue with AAH of patient 4 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226079/suppl/GSM9226079_P4_AAH-1.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226080",
+      "title": [
+        "Lung tissue with LUAD of patient 4 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226080/suppl/GSM9226080_P4_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226081",
+      "title": [
+        "Lung tissue with AIS of patient 5 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 81",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226081/suppl/GSM9226081_P5_AIS.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226082",
+      "title": [
+        "Lung tissue with LUAD of patient 5 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 81",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226082/suppl/GSM9226082_P5_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226083",
+      "title": [
+        "Lung tissue with AAH of patient 6 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 66",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226083/suppl/GSM9226083_P6_AIS.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226084",
+      "title": [
+        "Lung tissue with LUAD of patient 6 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 66",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226084/suppl/GSM9226084_P6_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226085",
+      "title": [
+        "Lung tissue with LUAD of patient 7 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 46",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226085/suppl/GSM9226085_P7_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226086",
+      "title": [
+        "Lung tissue with second LUAD of patient 7 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 46",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226086/suppl/GSM9226086_P7_LUAD-1.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226087",
+      "title": [
+        "Lung tissue with AIS of patient 8 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226087/suppl/GSM9226087_P8_AIS.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226088",
+      "title": [
+        "Lung tissue with LUAD of patient 8 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226088/suppl/GSM9226088_P8_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226089",
+      "title": [
+        "Lung tissue with AAH of patient 9 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226089/suppl/GSM9226089_P9_AAH.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226090",
+      "title": [
+        "Lung tissue with AIS of patient 9 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226090/suppl/GSM9226090_P9_AIS.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226091",
+      "title": [
+        "Lung tissue with LUAD of patient 9 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226091/suppl/GSM9226091_P9_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226092",
+      "title": [
+        "Lung tissue with LUAD of patient 10 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 58",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226092/suppl/GSM9226092_P10_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226093",
+      "title": [
+        "Lung tissue with MIA of patient 10 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 58",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226093/suppl/GSM9226093_P10_MIA.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226094",
+      "title": [
+        "Lung tissue with AAH of patient 11 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 70",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226094/suppl/GSM9226094_P11_AAH.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226095",
+      "title": [
+        "Lung tissue with LUAD of patient 11 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 70",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226095/suppl/GSM9226095_P11_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226096",
+      "title": [
+        "Lung tissue with AIS of patient 12 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226096/suppl/GSM9226096_P12_AIS.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226097",
+      "title": [
+        "Lung tissue with LUAD of patient 12 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226097/suppl/GSM9226097_P12_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226098",
+      "title": [
+        "Lung tissue with LUAD of patient 13 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 77",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226098/suppl/GSM9226098_P13_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226099",
+      "title": [
+        "Lung tissue with MIA of patient 13 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 77",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226099/suppl/GSM9226099_P13_MIA.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226100",
+      "title": [
+        "Lung tissue with AIS of patient 14 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 53",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226100/suppl/GSM9226100_P14_AIS.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226101",
+      "title": [
+        "Lung tissue with LUAD of patient 14 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 53",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226101/suppl/GSM9226101_P14_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226102",
+      "title": [
+        "Lung tissue with LUAD of patient 15 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226102/suppl/GSM9226102_P15_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226103",
+      "title": [
+        "Lung tissue with MIA of patient 15 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226103/suppl/GSM9226103_P15_MIA.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226104",
+      "title": [
+        "Lung tissue with AIS of patient 16 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226104/suppl/GSM9226104_P16_AIS.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226105",
+      "title": [
+        "Lung tissue with LUAD of patient 16 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226105/suppl/GSM9226105_P16_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226106",
+      "title": [
+        "Lung tissue with AIS of patient 17 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226106/suppl/GSM9226106_P17_AIS.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226107",
+      "title": [
+        "Lung tissue with LUAD of patient 17 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226107/suppl/GSM9226107_P17_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226108",
+      "title": [
+        "Lung tissue with LUAD of patient 18 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 77",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226108/suppl/GSM9226108_P18_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226109",
+      "title": [
+        "Lung tissue with MIA of patient 18 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 77",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226109/suppl/GSM9226109_P18_MIA.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226110",
+      "title": [
+        "Lung tissue with AIS of patient 19 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 76",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226110/suppl/GSM9226110_P19_AIS.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226111",
+      "title": [
+        "Lung tissue with LUAD of patient 19 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 76",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226111/suppl/GSM9226111_P19_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226112",
+      "title": [
+        "Lung tissue with AAH of patient 20 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226112/suppl/GSM9226112_P20_AAH.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226113",
+      "title": [
+        "Lung tissue with LUAD of patient 20 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226113/suppl/GSM9226113_P20_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226114",
+      "title": [
+        "Lung tissue with AIS of patient 21 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226114/suppl/GSM9226114_P21_AIS.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226115",
+      "title": [
+        "Lung tissue with second AIS of patient 21 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226115/suppl/GSM9226115_P21_AIS-1.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226116",
+      "title": [
+        "Lung tissue with LUAD of patient 21 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226116/suppl/GSM9226116_P21_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226117",
+      "title": [
+        "Lung tissue with AAH of patient 22 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226117/suppl/GSM9226117_P22_AAH.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226118",
+      "title": [
+        "Lung tissue with AIS of patient 22 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226118/suppl/GSM9226118_P22_AIS.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226119",
+      "title": [
+        "Lung tissue with LUAD of patient 22 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226119/suppl/GSM9226119_P22_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226120",
+      "title": [
+        "Lung tissue with AIS of patient 23 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226120/suppl/GSM9226120_P23_AIS.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226121",
+      "title": [
+        "Lung tissue with second AIS of patient 23 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226121/suppl/GSM9226121_P23_AIS-1.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226122",
+      "title": [
+        "Lung tissue with LUAD of patient 23 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226122/suppl/GSM9226122_P23_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226123",
+      "title": [
+        "Lung tissue with AAH of patient 24 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 61",
+        "Sex: Male",
+        "ethnicity: White/Caucasian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226123/suppl/GSM9226123_P24_AAH.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226124",
+      "title": [
+        "Lung tissue with LUAD of patient 24 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 61",
+        "Sex: Male",
+        "ethnicity: White/Caucasian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226124/suppl/GSM9226124_P24_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226125",
+      "title": [
+        "Lung tissue with AAH of patient 25 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 70",
+        "Sex: Male",
+        "ethnicity: White/Caucasian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226125/suppl/GSM9226125_P25_AAH.WES.PASS.recode.vcf.gz"
+      ]
+    },
+    {
+      "accession": "GSM9226126",
+      "title": [
+        "Lung tissue with LUAD of patient 25 [WES]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 70",
+        "Sex: Male",
+        "ethnicity: White/Caucasian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "WES experiment: Reads were mapped to the human reference genome GRCh38 (hg38) using BWA-mem. Duplicates were marked for filtering and base quality scores were recalibrated using GATK61. Somatic single nucleotide variants and indels were called using MuTect2 with default settings followed by post-calling filtering, and they were subsequently annotated using GATK Funcotator and ANNOVAR. The following criteria were applied to filter variants: (i) only variants marked as \"PASS\" by MuTect2 were considered; (ii) a minimum coverage of 10× for normal samples and 20× for non-normal samples (AAH, AIS, MIA and LUAD) was required; (iii) variants were required to have at least 4 alternate reads or a variant allele frequency (VAF) of ≥5% in the non-normal regions, while having fewer than 3 alternate reads and a VAF of <5% in the corresponding normal regions, and a VAF ratio (normal/non-normal) of <0.2; (iv) only variants with a median distance of at least 5 bases from the read ends were considered; (v) common variants reported by gnomAD (the Genome Aggregation Database, https://gnomad.broadinstitute.org/), Phase-3 1000 Genome Project (http://phase3browser.1000genomes.org/Homo_sapiens/Info/Index) or the NHLBI GO Exome Sequencing Project (ESP6500) (http://evs.gs.washington.edu/EVS/) with minor allele frequencies greater than 0.5% were removed. Somatic mutations located within introns, untranslated regions (UTRs), UTR-flanking regions, or those classified as silent mutations were also excluded from subsequent analyses. The somatic mutation burden for each sample was calculated based on 3 major mutation types (missense, truncating, and in-frame indels), as previously described.\nAssembly: GRCh38\nSupplementary files format and content: text files of mutation calling reults"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9226nnn/GSM9226126/suppl/GSM9226126_P25_LUAD.WES.PASS.recode.vcf.gz"
+      ]
+    }
+  ],
+  "scope": "Metadata only; sample records are not independent biological units."
+}

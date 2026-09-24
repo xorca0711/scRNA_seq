@@ -1,0 +1,2732 @@
+{
+  "schema_version": 1,
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308103&targ=all&form=xml&view=full",
+  "retrieved_utc": "2026-09-24T07:16:41.868245+00:00",
+  "sha256": "f9f75b744377021fc128478a7b35f8ed1072624e9475c0fee595c7f1b65b03ea",
+  "series": {
+    "accession": "GSE308103",
+    "title": [
+      "Single-nucleus RNA-sequencing (snRNA-seq) analysis of normal lung tissues, precursor lung lesions and invasive lung adenocarcinomas"
+    ],
+    "pubmed_id": [
+      "41202811"
+    ],
+    "summary": [
+      "Understanding cellular processes underlying early lung adenocarcinoma (LUAD) development is needed to devise intervention strategies. Here, we performed snRNA-seq analysis of human treatment-naive lungs comprising various stages in the sequence of pathogenesis of LUAD including normal lung tissues, atypical adenomatous hyperplasia (AAH), adenocarcinoma in situ (AIS), minimally invasive adenocarcinoma (MIA) and LUAD."
+    ],
+    "overall_design": [
+      "snRNA-seq was performed on isolated nuclei from tissue scrolls of formalin-fixed parafin embedded tissues using the 10x Genomics Chromium Fixed RNA protocol.\n\n***************************************************************\nRaw files for human/patient samples were not submitted to GEO due to concerns about submitting personally identifiable sequence data for open access.\n***************************************************************"
+    ],
+    "sample_id": [
+      "GSM9237901",
+      "GSM9237902",
+      "GSM9237903",
+      "GSM9237904",
+      "GSM9237905",
+      "GSM9237906",
+      "GSM9237907",
+      "GSM9237908",
+      "GSM9237909",
+      "GSM9237910",
+      "GSM9237911",
+      "GSM9237912",
+      "GSM9237913",
+      "GSM9237914",
+      "GSM9237915",
+      "GSM9237916",
+      "GSM9237917",
+      "GSM9237918",
+      "GSM9237919",
+      "GSM9237920",
+      "GSM9237921",
+      "GSM9237922",
+      "GSM9237923",
+      "GSM9237924",
+      "GSM9237925",
+      "GSM9237926",
+      "GSM9237927",
+      "GSM9237928",
+      "GSM9237929",
+      "GSM9237930",
+      "GSM9237931",
+      "GSM9237932",
+      "GSM9237933",
+      "GSM9237934",
+      "GSM9237935",
+      "GSM9237936",
+      "GSM9237937",
+      "GSM9237938",
+      "GSM9237939",
+      "GSM9237940",
+      "GSM9237941",
+      "GSM9237942",
+      "GSM9237943",
+      "GSM9237944",
+      "GSM9237945",
+      "GSM9237946",
+      "GSM9237947",
+      "GSM9237948",
+      "GSM9237949",
+      "GSM9237950",
+      "GSM9237951",
+      "GSM9237952",
+      "GSM9237953",
+      "GSM9237954",
+      "GSM9237955",
+      "GSM9237956",
+      "GSM9237957",
+      "GSM9237958",
+      "GSM9237959",
+      "GSM9237960",
+      "GSM9237961",
+      "GSM9237962",
+      "GSM9237963",
+      "GSM9237964",
+      "GSM9237965",
+      "GSM9237966",
+      "GSM9237967",
+      "GSM9237968",
+      "GSM9237969",
+      "GSM9237970",
+      "GSM9237971",
+      "GSM9237972",
+      "GSM9237973",
+      "GSM9237974",
+      "GSM9237975"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE308nnn/GSE308103/suppl/GSE308103_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1328749"
+    ]
+  },
+  "samples": [
+    {
+      "accession": "GSM9237901",
+      "title": [
+        "Normal lung tissue of patient 3 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237901/suppl/GSM9237901_P3_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237902",
+      "title": [
+        "Lung tissue with AIS of patient 3 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237902/suppl/GSM9237902_P3_AIS.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237903",
+      "title": [
+        "Lung tissue with LUAD of patient 3 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237903/suppl/GSM9237903_P3_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237904",
+      "title": [
+        "Normal lung tissue of patient 4 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237904/suppl/GSM9237904_P4_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237905",
+      "title": [
+        "Second normal lung tissue of patient 4 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237905/suppl/GSM9237905_P4_Normal1.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237906",
+      "title": [
+        "Lung tissue with AAH of patient 4 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237906/suppl/GSM9237906_P4_AAH.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237907",
+      "title": [
+        "Lung tissue with second AAH of patient 4 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237907/suppl/GSM9237907_P4_AAH1.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237908",
+      "title": [
+        "Lung tissue with LUAD of patient 4 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237908/suppl/GSM9237908_P4_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237909",
+      "title": [
+        "Normal lung tissue of patient 5 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 81",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237909/suppl/GSM9237909_P5_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237910",
+      "title": [
+        "Lung tissue with AIS of patient 5 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 81",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237910/suppl/GSM9237910_P5_AIS.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237911",
+      "title": [
+        "Lung tissue with LUAD of patient 5 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 81",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237911/suppl/GSM9237911_P5_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237912",
+      "title": [
+        "Normal lung tissue of patient 6 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 66",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237912/suppl/GSM9237912_P6_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237913",
+      "title": [
+        "Lung tissue with AAH of patient 6 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 66",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237913/suppl/GSM9237913_P6_AAH.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237914",
+      "title": [
+        "Lung tissue with LUAD of patient 6 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 66",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237914/suppl/GSM9237914_P6_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237915",
+      "title": [
+        "Normal lung tissue of patient 7 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 46",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237915/suppl/GSM9237915_P7_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237916",
+      "title": [
+        "Lung tissue with LUAD of patient 7 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 46",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237916/suppl/GSM9237916_P7_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237917",
+      "title": [
+        "Lung tissue with second LUAD of patient 7 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 46",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237917/suppl/GSM9237917_P7_LUAD1.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237918",
+      "title": [
+        "Normal lung tissue of patient 8 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237918/suppl/GSM9237918_P8_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237919",
+      "title": [
+        "Lung tissue with AIS of patient 8 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237919/suppl/GSM9237919_P8_AIS.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237920",
+      "title": [
+        "Lung tissue with LUAD of patient 8 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237920/suppl/GSM9237920_P8_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237921",
+      "title": [
+        "Normal lung tissue of patient 9 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237921/suppl/GSM9237921_P9_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237922",
+      "title": [
+        "Lung tissue with AAH of patient 9 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237922/suppl/GSM9237922_P9_AAH.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237923",
+      "title": [
+        "Lung tissue with AIS of patient 9 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237923/suppl/GSM9237923_P9_AIS.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237924",
+      "title": [
+        "Lung tissue with LUAD of patient 9 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237924/suppl/GSM9237924_P9_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237925",
+      "title": [
+        "Normal lung tissue of patient 10 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 58",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237925/suppl/GSM9237925_P10_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237926",
+      "title": [
+        "Lung tissue with MIA of patient 10 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 58",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237926/suppl/GSM9237926_P10_MIA.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237927",
+      "title": [
+        "Lung tissue with LUAD of patient 10 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 58",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237927/suppl/GSM9237927_P10_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237928",
+      "title": [
+        "Normal lung tissue of patient 11 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 70",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237928/suppl/GSM9237928_P11_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237929",
+      "title": [
+        "Lung tissue with AAH of patient 11 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 70",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237929/suppl/GSM9237929_P11_AAH.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237930",
+      "title": [
+        "Lung tissue with LUAD of patient 11 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 70",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237930/suppl/GSM9237930_P11_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237931",
+      "title": [
+        "Normal lung tissue of patient 12 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237931/suppl/GSM9237931_P12_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237932",
+      "title": [
+        "Lung tissue with AIS of patient 12 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237932/suppl/GSM9237932_P12_AIS.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237933",
+      "title": [
+        "Lung tissue with LUAD of patient 12 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237933/suppl/GSM9237933_P12_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237934",
+      "title": [
+        "Normal lung tissue of patient 13 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 77",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237934/suppl/GSM9237934_P13_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237935",
+      "title": [
+        "Lung tissue with MIA of patient 13 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 77",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237935/suppl/GSM9237935_P13_MIA.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237936",
+      "title": [
+        "Lung tissue with LUAD of patient 13 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 77",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237936/suppl/GSM9237936_P13_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237937",
+      "title": [
+        "Normal lung tissue of patient 14 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 53",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237937/suppl/GSM9237937_P14_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237938",
+      "title": [
+        "Lung tissue with AIS of patient 14 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 53",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237938/suppl/GSM9237938_P14_AIS.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237939",
+      "title": [
+        "Lung tissue with LUAD of patient 14 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 53",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237939/suppl/GSM9237939_P14_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237940",
+      "title": [
+        "Normal lung tissue of patient 15 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237940/suppl/GSM9237940_P15_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237941",
+      "title": [
+        "Lung tissue with MIA of patient 15 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237941/suppl/GSM9237941_P15_MIA.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237942",
+      "title": [
+        "Lung tissue with LUAD of patient 15 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 63",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237942/suppl/GSM9237942_P15_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237943",
+      "title": [
+        "Normal lung tissue of patient 16 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237943/suppl/GSM9237943_P16_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237944",
+      "title": [
+        "Lung tissue with AIS lesion of patient 16 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237944/suppl/GSM9237944_P16_AIS.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237945",
+      "title": [
+        "Lung tissue with LUAD lesion of patient 16 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237945/suppl/GSM9237945_P16_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237946",
+      "title": [
+        "Normal lung tissue of patient 17 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237946/suppl/GSM9237946_P17_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237947",
+      "title": [
+        "Lung tissue with AIS of patient 17 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237947/suppl/GSM9237947_P17_AIS.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237948",
+      "title": [
+        "Lung tissue with LUAD of patient 17 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237948/suppl/GSM9237948_P17_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237949",
+      "title": [
+        "Normal lung tissue of patient 18 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 77",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237949/suppl/GSM9237949_P18_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237950",
+      "title": [
+        "Lung tissue with MIA of patient 18 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 77",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237950/suppl/GSM9237950_P18_MIA.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237951",
+      "title": [
+        "Lung tissue with LUAD of patient 18 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 77",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237951/suppl/GSM9237951_P18_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237952",
+      "title": [
+        "Normal lung tissue of patient 19 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 76",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237952/suppl/GSM9237952_P19_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237953",
+      "title": [
+        "Lung tissue with AIS of patient 19 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 76",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237953/suppl/GSM9237953_P19_AIS.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237954",
+      "title": [
+        "Lung tissue with LUAD of patient 19 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 76",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237954/suppl/GSM9237954_P19_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237955",
+      "title": [
+        "Normal lung tissue of patient 20 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237955/suppl/GSM9237955_P20_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237956",
+      "title": [
+        "Lung tissue with AAH of patient 20 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237956/suppl/GSM9237956_P20_AAH.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237957",
+      "title": [
+        "Lung tissue with LUAD of patient 20 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237957/suppl/GSM9237957_P20_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237958",
+      "title": [
+        "Normal lung tissue of patient 21 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237958/suppl/GSM9237958_P21_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237959",
+      "title": [
+        "Lung tissue with AIS of patient 21 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237959/suppl/GSM9237959_P21_AIS.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237960",
+      "title": [
+        "Lung tissue with second AIS of patient 21 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237960/suppl/GSM9237960_P21_AIS1.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237961",
+      "title": [
+        "Lung tissue with LUAD of patient 21 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 72",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237961/suppl/GSM9237961_P21_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237962",
+      "title": [
+        "Normal lung tissue of patient 22 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237962/suppl/GSM9237962_P22_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237963",
+      "title": [
+        "Lung tissue with AAH of patient 22 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237963/suppl/GSM9237963_P22_AAH.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237964",
+      "title": [
+        "Lung tissue with AIS of patient 22 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237964/suppl/GSM9237964_P22_AIS.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237965",
+      "title": [
+        "Lung tissue with LUAD of patient 22 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 68",
+        "Sex: Female",
+        "ethnicity: East Asian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237965/suppl/GSM9237965_P22_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237966",
+      "title": [
+        "Normal lung tissue of patient 23 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237966/suppl/GSM9237966_P23_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237967",
+      "title": [
+        "Lung tissue with AIS of patient 23 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237967/suppl/GSM9237967_P23_AIS.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237968",
+      "title": [
+        "Lung tissue with second AIS of patient 23 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237968/suppl/GSM9237968_P23_AIS1.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237969",
+      "title": [
+        "Lung tissue with LUAD of patient 23 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 74",
+        "Sex: Male",
+        "ethnicity: East Asian",
+        "smoking: No"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237969/suppl/GSM9237969_P23_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237970",
+      "title": [
+        "Normal lung tissue of patient 24 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 61",
+        "Sex: Male",
+        "ethnicity: White/Caucasian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237970/suppl/GSM9237970_P24_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237971",
+      "title": [
+        "Lung tissue with AAH of patient 24 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 61",
+        "Sex: Male",
+        "ethnicity: White/Caucasian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237971/suppl/GSM9237971_P24_AAH.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237972",
+      "title": [
+        "Lung tissue with LUAD of patient 24 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 61",
+        "Sex: Male",
+        "ethnicity: White/Caucasian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237972/suppl/GSM9237972_P24_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237973",
+      "title": [
+        "Normal lung tissue of patient 25 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 70",
+        "Sex: Male",
+        "ethnicity: White/Caucasian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237973/suppl/GSM9237973_P25_Normal.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237974",
+      "title": [
+        "Lung tissue with AAH of patient 25 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 70",
+        "Sex: Male",
+        "ethnicity: White/Caucasian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237974/suppl/GSM9237974_P25_AAH.raw_counts.mtx.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9237975",
+      "title": [
+        "Lung tissue with LUAD of patient 25 [snRNA-seq]"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell line: Formalin-fixed paraffin embedded human lung tissue",
+        "age: 70",
+        "Sex: Male",
+        "ethnicity: White/Caucasian",
+        "smoking: Yes"
+      ],
+      "data_processing": [
+        "snRNA-seq experiment: Raw data were pre-processed (demultiplex cellular barcodes, read alignment and generation of gene count matrix) using Cell Ranger Single Cell Software Suite provided by 10x Genomics. For read alignment of human data, human reference GRCh38 (hg38) was used. Detailed QC metrics were generated and evaluated, and cells were carefully and rigorously filtered to obtain high-quality data for downstream analyses. In brief, for basic quality filtering, cells with low-complexity libraries (in which detected transcripts were aligned to <200 genes such as cell debris, empty drops and low-quality cells) were filtered out and excluded from subsequent analyses, and genes detected in less than 3 cells were also excluded. In addition, like with scRNA-seq analysis, nuclei with less than 500 detected genes or with less than 1000 reads count or with a mitochondrial gene fraction that is ≥20% were filtered out using Seurat (v5.1.0). Doublets were identified based on library complexity. First, a python-based software Scrublet was applied to identify the doublets by each sample. Second, based on cluster distribution and marker gene expression, doublets forming distinct clusters with hybrid expression features were also removed. Expression levels and proportions of canonical lineage-related marker genes in each identified cluster were carefully reviewed. Clusters co-expressing discrepant lineage markers were identified and removed.\nAssembly: GRCh38\nSupplementary files format and content: tab-delimited text files include barcodes, features/genes, and raw counts for each sample"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9237nnn/GSM9237975/suppl/GSM9237975_P25_LUAD.raw_counts.mtx.txt.gz"
+      ]
+    }
+  ],
+  "scope": "Metadata only; sample records are not independent biological units."
+}

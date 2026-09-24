@@ -222,6 +222,23 @@ Read at the backbone step that uses them, not as a gate. Metadata verified again
 
 ---
 
+## IL-1beta review branch, 24 September 2026
+
+The [Yu, Lee, Choi_Min and Choi review branch](Thesis/gate2_C3_yu_lee_choi_min_2026/README.md)
+uses the primary studies below to define context-specific analyses. The owner
+authorized staged execution: seven GSE300288 libraries passed QC/clustering,
+two existing IPF cohorts completed pathway fits, and GSE136831 completed an
+initial 25-donor descriptive ligand-receptor pass. The full study remains
+incomplete; see the [initial report](Thesis/gate2_C3_yu_lee_choi_min_2026/INITIAL_RUN_REPORT.md).
+The [dataset inventory](Thesis/gate2_C3_yu_lee_choi_min_2026/DATASETS.md)
+records all accessions, direct GEO links, assay roles and limitations.
+
+- Yu S, Lee SH, Choi MS, Choi J. *IL-1beta signaling as a molecular arbiter of stem cell plasticity: orchestrating the niches of repair, fibrosis, and cancer.* Seminars in Immunology 2026;83:102050. [DOI](https://doi.org/10.1016/j.smim.2026.102050). Review; generates no new dataset.
+- Peng F, et al. *Multimodal spatial-omics reveal co-evolution of alveolar progenitors and proinflammatory niches in progression of lung precursor lesions.* Cancer Cell 2026 (online 2025). [DOI](https://doi.org/10.1016/j.ccell.2025.10.004). GSE300288, GSE300293, GSE307534, GSE308103, GSE307529; also uses GSE222901.
+- Narasimhan H, et al. *An aberrant immune-epithelial progenitor niche drives viral lung sequelae.* Nature 2024;634:961-969. [DOI](https://doi.org/10.1038/s41586-024-07926-8). GSE267226 and GSE267228.
+- Strunz M, et al. *Alveolar regeneration through a Krt8+ transitional stem cell state that persists in human lung fibrosis.* Nature Communications 2020;11:3559. [DOI](https://doi.org/10.1038/s41467-020-17358-3). GSE141259; definition/reference role, not independent validation of its own ADI signature.
+- Chan JE, et al. *Critical role for a high-plasticity cell state in lung cancer.* Nature 2026. [DOI](https://doi.org/10.1038/s41586-025-09985-x). GSE277777.
+
 ## A note on the PDFs
 
 The PDFs of these papers are **not** included in this repository. SoupX, Slingshot and tradeSeq are CC BY 4.0 and freely redistributable; Scrublet, scds and the Cell Stem Cell paper are not. All six are open to read at the PMC links above.

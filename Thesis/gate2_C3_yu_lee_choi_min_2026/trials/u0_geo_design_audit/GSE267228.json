@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267228&targ=all&form=xml&view=full",
+  "retrieved_utc": "2026-09-24T07:15:53.233103+00:00",
+  "sha256": "9d304d97cdd78cf449d09e5fd91f09af9e604b761c2d423d8bd3f9ca735eb99a",
+  "series": {
+    "accession": "GSE267228",
+    "title": [
+      "An aberrant immune-epithelial progenitor niche drives post-viral lung sequelae [mouse]"
+    ],
+    "pubmed_id": [
+      "39232171"
+    ],
+    "summary": [
+      "Respiratory viral infections are being increasingly recognized not just for their acute impact but also as potential triggers of long-term health conditions. The recent COVID-19 pandemic in particular has highlighted the prevalence of this phenomenon, termed Post-Acute Sequelae of SARS-CoV-2 (PASC), which has rapidly evolved into a major public health concern. The underlying cellular and molecular etiology remain poorly defined but growing evidence links PASC to abnormal immune responses and/or impaired organ recovery post infection. Yet, the precise mechanisms linking non-resolving inflammation and impaired tissue repair in the context of PASC remain unclear. With insights from three independent clinical cohorts of PASC patients with abnormal lung function and/or viral infection-mediated pulmonary fibrosis, we established a clinically relevant mouse model of post-viral lung sequelae to investigate the pathophysiology of respiratory PASC. By employing a combination of spatial transcriptomics and imaging, we identified dysregulated interactions between immune cells and epithelial progenitors unique to the fibroproliferation in respiratory PASC. Specifically, we found a central role for lung-resident CD8+ T cell-macrophage interactions in maintaining Krt8hi transitional and ectopic Krt5+ basal cell progenitors, thus impairing alveolar regeneration and driving fibrotic sequelae after acute viral pneumonia. CD8+ T cell derived IFN-γ and TNF stimulated local macrophages to chronically release IL-1β, resulting in the abnormal accumulation of dysplastic epithelial progenitors and lung fibrosis. Notably, therapeutic neutralization of IFN-γ and TNF, or IL-1β after the resolution of acute infection resulted in markedly improved alveolar regeneration and restoration of pulmonary function. Together, our findings implicate an aberrant immune-epithelial progenitor niche in driving respiratory PASC. Moreover, in contrast to other approaches requiring early intervention, we highlight therapeutic strategies to rescue fibrotic disease in the aftermath of respiratory viral infections, addressing the current unmet need in the clinical management of PASC and post-viral disease."
+    ],
+    "overall_design": [
+      "Lungs from 4 aged C57BL/6 mice infected with influenza were treated with control (S1A, S2A) or αCD8 (S1D, S2D) antibody prior to collection and Visium analysis at 60 days post infection"
+    ],
+    "sample_id": [
+      "GSM8262712",
+      "GSM8262713",
+      "GSM8262714",
+      "GSM8262715"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE267nnn/GSE267228/suppl/GSE267228_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1110281"
+    ]
+  },
+  "samples": [
+    {
+      "accession": "GSM8262712",
+      "title": [
+        "S1A_IgG1"
+      ],
+      "source_name_ch1": [
+        "Lungs"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lungs",
+        "genotype: WT",
+        "strain: C57BL/6",
+        "treatment: Control IgG"
+      ],
+      "data_processing": [
+        "The spatial transcriptome (ST, 10x Visium) data were preprocessed using the 10x Genomics pipeline (Space Ranger) v2.0.1 using the hg38/mm10 genome. Only high-quality spots with sufficient covered genes (>=2000) were retained for the downstream analysis.\nAssembly: mm10\nSupplementary files format and content: filtered_feature_bc_matrix.h5: Respective matrix files\nSupplementary files format and content: tissue_hires_image.png: hi-res image of tissue\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262712/suppl/GSM8262712_6433-HN-S1-A-GEX_TCAGAACT-GTGGACTG_filtered_feature_bc_matrix.h5",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262712/suppl/GSM8262712_S1A_tissue_hires_image.png.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN41342179",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX24523234"
+      ]
+    },
+    {
+      "accession": "GSM8262713",
+      "title": [
+        "S2A_IgG2"
+      ],
+      "source_name_ch1": [
+        "Lungs"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lungs",
+        "genotype: WT",
+        "strain: C57BL/6",
+        "treatment: Control IgG"
+      ],
+      "data_processing": [
+        "The spatial transcriptome (ST, 10x Visium) data were preprocessed using the 10x Genomics pipeline (Space Ranger) v2.0.1 using the hg38/mm10 genome. Only high-quality spots with sufficient covered genes (>=2000) were retained for the downstream analysis.\nAssembly: mm10\nSupplementary files format and content: filtered_feature_bc_matrix.h5: Respective matrix files\nSupplementary files format and content: tissue_hires_image.png: hi-res image of tissue\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262713/suppl/GSM8262713_6433-HN-S2-A-GEX_CGCGCCAA-CCTTGGAT_filtered_feature_bc_matrix.h5",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262713/suppl/GSM8262713_S2A_tissue_hires_image.png.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN41342178",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX24523235"
+      ]
+    },
+    {
+      "accession": "GSM8262714",
+      "title": [
+        "S1D_αCD8-1"
+      ],
+      "source_name_ch1": [
+        "Lungs"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lungs",
+        "genotype: WT",
+        "strain: C57BL/6",
+        "treatment: αCD8"
+      ],
+      "data_processing": [
+        "The spatial transcriptome (ST, 10x Visium) data were preprocessed using the 10x Genomics pipeline (Space Ranger) v2.0.1 using the hg38/mm10 genome. Only high-quality spots with sufficient covered genes (>=2000) were retained for the downstream analysis.\nAssembly: mm10\nSupplementary files format and content: filtered_feature_bc_matrix.h5: Respective matrix files\nSupplementary files format and content: tissue_hires_image.png: hi-res image of tissue\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262714/suppl/GSM8262714_6433-HN-S1-D-GEX_CGGCCATA-GAACGAAG_filtered_feature_bc_matrix.h5",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262714/suppl/GSM8262714_S1D_tissue_hires_image.png.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN41342177",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX24523236"
+      ]
+    },
+    {
+      "accession": "GSM8262715",
+      "title": [
+        "S2D_αCD8-2"
+      ],
+      "source_name_ch1": [
+        "Lungs"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lungs",
+        "genotype: WT",
+        "strain: C57BL/6",
+        "treatment: αCD8"
+      ],
+      "data_processing": [
+        "The spatial transcriptome (ST, 10x Visium) data were preprocessed using the 10x Genomics pipeline (Space Ranger) v2.0.1 using the hg38/mm10 genome. Only high-quality spots with sufficient covered genes (>=2000) were retained for the downstream analysis.\nAssembly: mm10\nSupplementary files format and content: filtered_feature_bc_matrix.h5: Respective matrix files\nSupplementary files format and content: tissue_hires_image.png: hi-res image of tissue\nLibrary strategy: Spatial transcriptomics"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "supplementary_file": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262715/suppl/GSM8262715_6433-HN-S2-D-GEX_ACTAAATG-ACAGATTT_filtered_feature_bc_matrix.h5",
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8262nnn/GSM8262715/suppl/GSM8262715_S2D_tissue_hires_image.png.gz"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN41342176",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX24523237"
+      ]
+    }
+  ],
+  "scope": "Metadata only; sample records are not independent biological units."
+}
