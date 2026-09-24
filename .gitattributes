@@ -11,6 +11,12 @@ analysis/corrections/statistics/R-session.txt whitespace=cr-at-eol,-blank-at-eol
 # RQ figure provenance also records exact source and vector-output hashes.
 analysis/scripts/18_rq_evidence_figures.py -text whitespace=cr-at-eol
 analysis/figures/rq/*.svg -text whitespace=cr-at-eol
+# Shared IL-1 question records retain hashes from their original paper-local run.
+analysis/figures/rq/il1b_context/** -text whitespace=cr-at-eol
+analysis/scripts/19_prepare_il1b_rq_figures.py -text whitespace=cr-at-eol
+analysis/scripts/20_render_il1b_rq_figures.py -text whitespace=cr-at-eol
+analysis/scripts/21_validate_il1b_rq_figures.py -text whitespace=cr-at-eol
+analysis/figures/rq/rq_a1[124]_*.svg whitespace=cr-at-eol,-blank-at-eol
 Thesis/gate1_03_nabhan_2018/** -text whitespace=cr-at-eol
 # Preserve generated figure and downloaded source bytes used by provenance hashes.
 Thesis/gate1_03_nabhan_2018/**/figures/*.svg whitespace=cr-at-eol,-blank-at-eol

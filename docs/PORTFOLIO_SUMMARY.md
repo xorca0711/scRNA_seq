@@ -26,6 +26,14 @@ reasoning, targeted sensitivity analysis, and willingness to revise conclusions.
 The generated claim index checks selected numeric fields without claiming to
 certify every biological statement.
 
+**IL-1beta context extension.** Completed paired human and IPF niche analyses
+separate source/recipient RNA, pathway-model sensitivity and epithelial
+programme specificity. Elevated reduced-HPCS scores also occur in repair
+and fibrosis; they do not establish malignant identity. The
+[shared questions A11–A14](../RESEARCH_QUESTIONS.md#a11-shared-plasticity-versus-neoplasia-associated-context)
+include PCA, paired program distributions, enrichment and ligand-target
+figures, with joint associations and withdrawal outcomes still proposed.
+
 **Next step.** An organoid perturbation dataset offers paired RNA and imaging
 measurements. Its biological batches and well mapping must pass the
 [dataset gate](NEXT_DATASET_GATE.md) before an outcome model is justified.

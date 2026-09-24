@@ -3,7 +3,47 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-## Current execution: IL-1beta review, 24 September 2026
+## Current status, 25 September 2026
+
+The feasible Yu review-motivated analyses are complete: IPF pathways and
+ligand/target sensitivity analyses, eligible early mouse niches, all 75 human
+lesion libraries (555,480 QC cells/nuclei; 23 patients), 56 spatial sections,
+nine post-viral matrices and source-program specificity extensions.
+See the [evidence review](Thesis/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md)
+and [completion register](Thesis/gate2_C3_yu_lee_choi_min_2026/WORK_PACKAGES.md).
+Completion does not resolve the KAC classifier, later treatment-history
+crosswalk, independent spatial regions or withdrawal/fate measurements.
+Estimated-correlation CAMERA remains primary; fixed-correlation findings stay
+sensitivity results. No threshold was relaxed to obtain a positive result.
+
+Repository-wide questions now have a single home in
+[RESEARCH_QUESTIONS.md](RESEARCH_QUESTIONS.md): A1–A14. A11–A14 extend the
+earlier questions with shared plasticity, recipient context, fibroblast
+associations and signal withdrawal. Five measured-data figures and one
+experimental schematic live in `analysis/figures/rq/`; scripts 19–21 and
+their [methods/provenance](analysis/figures/rq/il1b_context/REPORT.md) accompany
+them. The paper folder retains its 17 study-specific figures and inference.
+The original preparation coordinates and run identities were preserved.
+
+Next scientific decisions: audit complete patient/compartment coverage before
+A13 joint associations; independent state/annotation evidence for A11–A12;
+the existing [GSE307112 outcome-linked pilot gate](docs/NEXT_DATASET_GATE.md)
+for A10; new longitudinal perturbation evidence for A14. These are proposed
+follow-ups, not newly executed tests. Niethamer W1 and Nabhan descriptive Nb1
+have run; Nb1 stopped before local ligand ranking on coverage grounds.
+Gate 3A/3B and the original KRT8 pilot contract retain their separate status.
+
+The [structure contract](docs/REPOSITORY_STRUCTURE.md) defines shared versus
+paper-specific paths and scoped labels. The root README remains navigation.
+The [LinkedIn project draft](docs/LINKEDIN_PROJECT.md) uses current evidence
+and includes replacement media captions; profile publication is separate.
+The four linked Notion roadmap/status pages were updated and read back;
+child-page links and private PI planning were preserved. Verification passed
+239 input hashes, 19 unchanged scientific files, all six shared figure reviews
+and the separate 17-figure paper release. Repository checks and contract tests
+passed. Historical checkpoints below describe their dates, not current pending work.
+
+## Historical first-batch checkpoint: IL-1beta review, 24 September 2026
 
 The owner authorized final self-review, improvements and launch, superseding
 this morning's confirmation hold. [Final review](Thesis/gate2_C3_yu_lee_choi_min_2026/FINAL_REVIEW.md)

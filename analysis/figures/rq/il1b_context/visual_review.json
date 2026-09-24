@@ -1,0 +1,36 @@
+{
+  "recorded_utc": "2026-09-24T16:00:15.240466+00:00",
+  "reviewer": "Codex direct inspection of all six relabeled PNGs",
+  "figures": {
+    "rq_a11_epithelial_programs.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "25616826e8c45f4f84534b1d8ac9a12236c323c3cd4e3ce4b6dcd4bb5a2184fc",
+      "basis": "Inspected current PNG: readable global A labels, complete scales/legends/captions, patient units retained, primary and sensitivity distinct, A14 explicitly proposal-only."
+    },
+    "rq_a12_ligand_target_candidates.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "e96c4c70071b29dbcf7b4361c99c7faa5ada1c94e7bd98acd1c45e6327cecc3b",
+      "basis": "Inspected current PNG: readable global A labels, complete scales/legends/captions, patient units retained, primary and sensitivity distinct, A14 explicitly proposal-only."
+    },
+    "rq_a12_recipient_enrichment.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "1a63143fb73672e6c63a2a6a275d6e0b2eb7a5cea16b98aaa8c41990956cb360",
+      "basis": "Inspected current PNG: readable global A labels, complete scales/legends/captions, patient units retained, primary and sensitivity distinct, A14 explicitly proposal-only."
+    },
+    "rq_a12_source_context.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "86df7eba0cc6a39696a4d83ea142d62b37b03b3f7d9e7758e3345dfa633e7a66",
+      "basis": "Inspected current PNG: readable global A labels, complete scales/legends/captions, patient units retained, primary and sensitivity distinct, A14 explicitly proposal-only."
+    },
+    "rq_a12_source_recipient_components.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "e21e8c9d8cabc1908f335d1a0fffb70b7e20f97f4c21f72f1785878c1285ea7c",
+      "basis": "Inspected current PNG: readable global A labels, complete scales/legends/captions, patient units retained, primary and sensitivity distinct, A14 explicitly proposal-only."
+    },
+    "rq_a14_withdrawal_design.png": {
+      "status": "visually_reviewed",
+      "png_sha256": "61567d5ecb7ccbce9184a485234d1514ff6854fc2f81490f2c66437904202079",
+      "basis": "Inspected current PNG: readable global A labels, complete scales/legends/captions, patient units retained, primary and sensitivity distinct, A14 explicitly proposal-only."
+    }
+  }
+}

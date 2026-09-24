@@ -19,27 +19,24 @@ the acute source switch or a replicated baseline/day-11 AT2 contrast.
 
 ## Current correction authority and runtime
 
-On 2026-09-24 the owner opened the IL-1beta review branch under
-`Thesis/gate2_C3_yu_lee_choi_min_2026/` (2C item 3, stable paper 13), then
-requested final self-attack, improvements and launch. This supersedes the
-earlier confirmation hold; both contracts now authorize staged execution.
-Read FINAL_REVIEW.md and the stage run records before continuing. Seven early
-GSE300288 IgG/anti-IL-1beta libraries passed acquisition/QC (28,243 retained
-cells); treatment-blind cluster diagnostics are complete. Donor-level IPF
-macrophage/fibroblast/AT2 pathway fits completed in two existing cohorts:
-neither has primary global q < 0.05; fixed-correlation sensitivity findings
-are not robust replacements. The initial GSE136831 per-donor LIANA run
-completed at 17:43 KST (25 donors: 15 IPF/10 control; 500-cell/subtype cap).
-Both resources produced 25 tables each; output-integrity checks passed.
-This initial compute job has ended. Differential contrasts, sensitivities,
-figure rendering and interpretation remain pending. Read the paper's
-INITIAL_RUN_REPORT.md and current run records before reporting status.
-Scientific gates remain: validated KAC/subtype annotation, resource freeze,
-coverage, and later treatment-start crosswalk. Zenodo annotated files are
-restricted; no restricted-file retrieval or author contact is authorized.
-The mouse two-endpoint exact permutation/Holm family cannot reject at 0.05
-at the deposited n; report effect sizes and limits without changing tests.
-Keep the root README as navigation and figures in paper-level galleries.
+The Yu review-motivated feasible analyses are complete as of 2026-09-25;
+use its EVIDENCE_REVIEW.md and WORK_PACKAGES.md for current status. Initial
+batch reports and dated plans retain their historical meaning. Human/spatial,
+IPF sensitivities and the early mouse niche analyses have run. KAC identity,
+later treatment history, independent pathology regions and withdrawal/fate
+remain unavailable endpoints. Estimated-correlation CAMERA is primary;
+sensitivity findings do not replace it. Restricted-file retrieval and author
+contact have not been authorized.
+
+The root RESEARCH_QUESTIONS.md is the only current repository-wide question
+register (A1–A14). Shared RQ figures/data live under analysis/figures/rq/,
+with numbered scripts under analysis/scripts/. Paper-specific inference and
+F01–F07 gallery groups stay in Thesis/gate2_C3_yu_lee_choi_min_2026/.
+The original u7 preparation records and script bytes are archived with the
+shared package; do not rewrite them as if the UMAP/PCA were recomputed.
+See docs/REPOSITORY_STRUCTURE.md for ID scope, path bases and authority.
+Keep the root README as navigation. No new statistical test is authorized
+merely by moving an exploratory question into the root register.
 
 On 2026-09-22 the owner explicitly delegated orders 1–4 of the audit improvement
 sequence, claim reclassification, relevant analyses and replots for portfolio
@@ -238,22 +235,24 @@ not_done:
 thesis_roadmap:
   directory: Thesis/
   index: Thesis/README.md        # the owner's reading order; also Thesis/ROADMAP.json
-  rule: one folder per paper, added one at a time in roadmap order; study note + extracted JSON + pre-registered trial
+  rule: one folder per paper, added one at a time in roadmap order; study note + extracted JSON + dated analysis specification and run record
   tracked: notes, JSON, small trial tables; PDFs and XLSX in Thesis/ are gitignored
   local_pdfs: "C:/Users/dream/Documents/AC_document/External Thesis/SAP_Thesis study/Gate_1-2_Universal/ (per gate); older ones directly under Thesis/"
   done:
-    - gate1_01_niethamer_2025 (pointer to docs/ and Thesis/gate1_01_niethamer_2025/GSE262927; follow-ups N1 to N4 run 2026-09-10; Stage 2 proposals W1, S1, Nb1, D1, V1 written, not run)
+    - gate1_01_niethamer_2025 (pointer to docs/ and Thesis/gate1_01_niethamer_2025/GSE262927; follow-ups N1 to N4 run 2026-09-10; Stage 2 W1 complete and descriptive Nb1 complete/gated; S1, D1 and V1 unrun)
     - gate1_02_choi_2020 (re-entered 2026-09-15 at the owner's direction after reading: study note, choi_2020_extracts.json, trials D0 to D7 and the corrected passes D2b and D5b with run records; the AI-written note of 2026-09-13 was withdrawn first, decision 21, and the re-entry is decision 23; owner review pending on rows C58 to C64 and C85 to C104)
     - gate1_04_sikkema_2023_hlca (note, integration_benchmark.json, PIPELINE_FRAMING.md, trials S1 to S5 with run records; owner review pending; S2 result contradicts the human AT0 headline, see PROGRESS item 15)
     - gate2_05_cardoso_2026 (note, cardoso_2026_extracts.json, trials C0 to C12 and E1 to E6 with run records; entered out of order on the owner's instruction 2026-09-12; Gate 1 returned "not recovered"; list A exhausted; owner review pending, see PROGRESS items 23 to 29)
-  next: gate1_03_nabhan_2018, then gate2_06_nabhan_2023, with proposal Nb1 as their trial (re-ranking of 2026-09-15, recorded in Thesis/README.md gate rules and ROADMAP.json); Gate 3A and 3B paused; Gate 2 carries branches 2C (Choi axis), 2N (Nabhan) and 2W (Wagner, papers 15 and 16 added 2026-09-15); methods references M1 to M8 are listed in Thesis/README.md and read at the step that uses them; owner decisions on PROGRESS items 12 to 31
+    - gate1_03_nabhan_2018 (source reproduction, descriptive Nb1 and external eligibility complete; local ligand ranking coverage-gated)
+    - gate2_C3_yu_lee_choi_min_2026 (feasible IPF/mouse/human/spatial/specificity analyses complete; remaining endpoints explicitly gated)
+  next: gate2_06_nabhan_2023 and the GSE307112 outcome-pilot eligibility audit (A10); Nb1 completed its feasible descriptive scope (re-ranking of 2026-09-15, recorded in Thesis/README.md gate rules and ROADMAP.json); Gate 3A and 3B paused; Gate 2 carries branches 2C (Choi axis), 2N (Nabhan) and 2W (Wagner, papers 15 and 16 added 2026-09-15); methods references M1 to M8 are listed in Thesis/README.md and read at the step that uses them; owner decisions on PROGRESS items 12 to 31
   s2_environment: .venv-x64 also holds torch 2.14.0 (CPU) and scvi-tools 1.5.0.post1 (frozen in trials/s2_reference_mapping/requirements_s2_env.txt); scarches package removed (incompatible with anndata 0.13); HLCA reference files under trials/s2_reference_mapping/reference/ are gitignored (embedding 2.37 GB, MD5 4aa9167707141dd884ff0202b3ab1205)
 
 pitfalls_for_ai_assistants:
-  - "raw_data/ is read-only, 7.8 GB, gitignored. NEVER modify or commit it. Never grep/walk it recursively."
+  - "raw_data/ is read-only and gitignored. NEVER modify or commit it. Never grep/walk it recursively."
   - "docs/PIPELINE_AS_RUN.md and both series README.md files (Thesis/gate1_01_niethamer_2025/GSE262927/README.md, Thesis/ungated_murthy_2022/GSE178360/README.md) are GENERATED. Edit the generators (analysis/scripts/05_write_pipeline_as_run.py, 03_write_report.py) and re-run; never hand-edit."
-  - "Layout since 2026-09-21: each deposit lives beside its source paper under Thesis/ (GSE262927 under gate1_01_niethamer_2025/, GSE178360 under ungated_murthy_2022/, whose README is a pointer note because the paper is outside the roadmap and unread). analysis/ holds only the shared pipeline, config, repository-level figures and the raw-data inventory. pipeline_utils.SERIES_DIRS is the one place the two locations are written. Run records and logs written before the move keep their analysis/GSE... paths: they are artefacts, not pointers, and are not edited."
-  - "The five figures in RESEARCH_QUESTIONS.md and their caption blocks (between <!-- rq-figure:A# --> markers) are GENERATED by analysis/scripts/16_research_question_figures.py from the analysed objects; every caption number is formatted from a CSV beside the figure. They are visual aids for register rows, not evidence: nothing in them is tested, the multiome embeddings are RNA-only per well with no batch correction, and the owner asked for paper-style panels (embeddings, feature and violin panels, dotplots), not summary bars. Edit the script and re-run; never hand-edit the blocks. A1 panels g to i are the per-nucleus promoter reading that depth dominates, kept beside the detection-at-budget heatmap by owner decision 29; never cite panel g alone, because on its own it shows the retracted direction (C120)."
+  - "Layout since 2026-09-21: each deposit lives beside its source paper under Thesis/ (GSE262927 under gate1_01_niethamer_2025/, GSE178360 under ungated_murthy_2022/, whose README is a pointer note because the paper is outside the roadmap and unread). analysis/ holds the shared pipeline, config, helpers, repository-level RQ figures/tables, corrective analyses and raw-data inventory; see docs/REPOSITORY_STRUCTURE.md. pipeline_utils.SERIES_DIRS is the one place the two locations are written. Run records and logs written before the move keep their analysis/GSE... paths: they are artefacts, not pointers, and are not edited."
+  - "The original five figure blocks in RESEARCH_QUESTIONS.md and their caption blocks (between <!-- rq-figure:A# --> markers) are GENERATED by analysis/scripts/16_research_question_figures.py from the analysed objects; every caption number is formatted from a CSV beside the figure. They are visual aids for register rows, not evidence: nothing in them is tested, the multiome embeddings are RNA-only per well with no batch correction, and the owner asked for paper-style panels (embeddings, feature and violin panels, dotplots), not summary bars. Edit the script and re-run; never hand-edit the blocks. A1 panels g to i are the per-nucleus promoter reading that depth dominates, kept beside the detection-at-budget heatmap by owner decision 29; never cite panel g alone, because on its own it shows the retracted direction (C120)."
   - "Owner instruction 2026-09-21 on multi-agent workflows: weigh the cost before launching one. Do the deterministic part (id checks, number checks, path rewrites) with a script; deploy agents only where a script cannot judge (wording, framing, a fresh-eyes critique), at most three lenses, never one verifier per finding. Spend tokens where they change the answer."
   - "use .venv-x64/Scripts/python.exe for all Python; the native interpreter cannot import scanpy."
   - "the whole-atlas mouse object merges two incompatible experiments; condition/trace claims must come from the focused analyses (regeneration_focus/, lineage_tracing_cohort/)."
@@ -281,7 +280,7 @@ pitfalls_for_ai_assistants:
   - "NEGATIVE_RESULTS.md is GENERATED from CLAIMS.md by analysis/scripts/14_write_negative_results.py. Never edit it by hand; change the register row and re-run the script. It collects every refuted, not-established, not-establishable and retracted row, and it deliberately gives no count of how many refute this repository's own claims, because that is a judgement the register does not encode."
   - "The .venv-x64 environment was rebuilt on 2026-09-20 after its base interpreter, which uv had placed under a tmp directory, was deleted; every scanpy, leidenalg, numba, torch and liana trial stopped running and nothing recorded what had been installed. Its exact contents are now tracked in analysis/config/requirements-x64.txt with the rebuild recipe in its header. Python 3.12.13, win-amd64, 128 distributions as of 2026-09-22 (pydeseq2 0.5.4 and its six dependencies added for trial W1, owner-authorised; gseapy 1.3.1, installed for G1 and G2 on 2026-09-21, pinned late). The interpreter now lives under uv's durable default, AppData/Roaming/uv/python, not under any tmp path."
   - "To check a venv is genuinely x86-64, use sysconfig.get_platform() and expect 'win-amd64'. Do NOT use platform.machine(): on Windows it reads PROCESSOR_ARCHITECTURE and reports ARM64 even from an x86-64 interpreter running under emulation, so it will tell you the rebuild failed when it succeeded."
-  - "Branch lifecycle: land work on a Claude/<topic> branch, open a pull request, merge it, then DELETE the branch both locally and on the remote. Twenty-two merged branches had accumulated on the remote by 2026-09-13 because nothing wrote this down; they were deleted on 2026-09-14 after checking that main contained every commit. A merged pull request keeps its diff on GitHub after its branch is gone, and the branch can be restored from the pull request page, so deleting is safe and reversible. Before deleting any branch, verify it with git rev-list --count main..<branch> and expect 0."
+  - "Branch lifecycle: use codex/<topic> for Codex work (historical Claude branches keep their names), and open a pull request; merge and branch deletion require the applicable user instruction. Twenty-two merged branches had accumulated on the remote by 2026-09-13 because nothing wrote this down; they were deleted on 2026-09-14 after checking that main contained every commit. A merged pull request keeps its diff on GitHub after its branch is gone, and the branch can be restored from the pull request page, so deleting is safe and reversible. Before deleting any branch, verify it with git rev-list --count main..<branch> and expect 0."
   - "Repository checks: analysis/scripts/validate_repository.py (renamed from validate_portfolio.py on 2026-09-10) and .github/workflows/repository-checks.yml. The paper's own workflow document moved to docs/WORKFLOW_Niethamer2025.md."
   - "Trial scripts under Thesis/**/trials read the processed .h5ad objects row-wise (trial_utils.read_csr_rows); never load the 2.1 GB mouse object fully. Use absolute paths; the shell cwd can change between calls."
   - "Cardoso 2026 (Thesis/gate2_05_cardoso_2026/): EVERY deposited mouse library pools three mice and each genotype contributes one library per sort, so no genotype contrast in that deposit has within-group replication. Describe directions; never compute a P value on a genotype contrast there. The exception is GSE247505 (England 2025), which has two replicate libraries per arm."

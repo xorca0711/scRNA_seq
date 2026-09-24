@@ -1,0 +1,65 @@
+{
+  "status": "completed",
+  "code": {
+    "commit": "2f653b095b3fd39e0bd77ec54b613478c7210a7b",
+    "tracked_diff_sha256": "582436febd6d660f1dc140cd9712d6795669f53a96167b6a3b6a740c23ea2fd1",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "analysis\\scripts\\20_render_il1b_rq_figures.py",
+    "entrypoint_sha256": "745f1919af4b9512b033a8c6eed3f1d44ed9ee4047eed1564e476f8e53b9f6b3"
+  },
+  "completed_utc": "2026-09-24T15:54:23.910525+00:00",
+  "outputs": [
+    {
+      "path": "analysis/figures/rq/rq_a12_source_context.png",
+      "sha256": "86df7eba0cc6a39696a4d83ea142d62b37b03b3f7d9e7758e3345dfa633e7a66"
+    },
+    {
+      "path": "analysis/figures/rq/rq_a12_source_context.svg",
+      "sha256": "5d3768698c37f09db84efddb46212ad5708c12f4ff4b4012e8d0bcc528dc8a2a"
+    },
+    {
+      "path": "analysis/figures/rq/rq_a11_epithelial_programs.png",
+      "sha256": "25616826e8c45f4f84534b1d8ac9a12236c323c3cd4e3ce4b6dcd4bb5a2184fc"
+    },
+    {
+      "path": "analysis/figures/rq/rq_a11_epithelial_programs.svg",
+      "sha256": "3c1c086ce98afb54d91e7ad260969cd2c3617a0093adb0c2fa39b86cdfb73a7a"
+    },
+    {
+      "path": "analysis/figures/rq/rq_a12_source_recipient_components.png",
+      "sha256": "e21e8c9d8cabc1908f335d1a0fffb70b7e20f97f4c21f72f1785878c1285ea7c"
+    },
+    {
+      "path": "analysis/figures/rq/rq_a12_source_recipient_components.svg",
+      "sha256": "4ac941aa6d9d4212394ad684e08f5c9ec0dacbd97575fde2be445a333ff8389e"
+    },
+    {
+      "path": "analysis/figures/rq/rq_a12_recipient_enrichment.png",
+      "sha256": "1a63143fb73672e6c63a2a6a275d6e0b2eb7a5cea16b98aaa8c41990956cb360"
+    },
+    {
+      "path": "analysis/figures/rq/rq_a12_recipient_enrichment.svg",
+      "sha256": "b37c2ea6bf9134be939ae1b64e49a86314e7ce044b1f96d6d887b97b3b5405b7"
+    },
+    {
+      "path": "analysis/figures/rq/rq_a12_ligand_target_candidates.png",
+      "sha256": "e96c4c70071b29dbcf7b4361c99c7faa5ada1c94e7bd98acd1c45e6327cecc3b"
+    },
+    {
+      "path": "analysis/figures/rq/rq_a12_ligand_target_candidates.svg",
+      "sha256": "6a62ef57b289211921a01f4d9b7eed56cf82030c975a6f3d316148563ed95691"
+    },
+    {
+      "path": "analysis/figures/rq/rq_a14_withdrawal_design.png",
+      "sha256": "61567d5ecb7ccbce9184a485234d1514ff6854fc2f81490f2c66437904202079"
+    },
+    {
+      "path": "analysis/figures/rq/rq_a14_withdrawal_design.svg",
+      "sha256": "e84b3d016a5d5d3ec11d087b64d4849bf6d808b3a8ab5314966ce3953c7d914e"
+    }
+  ],
+  "matplotlib_version": "3.11.1",
+  "proposal_vs_results": "Five data figures and one explicitly labeled experimental design",
+  "visual_review_status": "passed"
+}

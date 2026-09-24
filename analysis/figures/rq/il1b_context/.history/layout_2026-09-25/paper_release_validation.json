@@ -1,13 +1,13 @@
 {
   "status": "passed",
-  "checked_utc": "2026-09-24T16:07:50.204834+00:00",
+  "checked_utc": "2026-09-24T15:15:22.046084+00:00",
   "code": {
-    "commit": "2f653b095b3fd39e0bd77ec54b613478c7210a7b",
-    "tracked_diff_sha256": "976ccd10faaf063ee4406e83f5d3da2ba7b595d41902e935a22a05ac198a14a3",
+    "commit": "3b5e1140d6ee5b311764201bfe29f10a0804a05c",
+    "tracked_diff_sha256": "572909dab0dea873278ed7c3b002a3a2d7e0f59f35647ec46861e4191b434d29",
     "tracked_changes_present": true,
     "untracked_files_present": true,
     "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u6_validate_release.py",
-    "entrypoint_sha256": "d11a37bc70264f07b9816e6608f8e0a1c5baa2c797b7f363d98c68e7331be02c"
+    "entrypoint_sha256": "451df83437f9e7dbe0643bfe8f20ae48fa0295bc31b61780c82157ee06983229"
   },
   "stages": [
     {
@@ -65,17 +65,21 @@
     {
       "stage": "u6_human_specificity",
       "validation_sha256": "2200ea6a5e98c80b5c4b6490fe18fe5596f91d4ce3a085e8232cfa4e51c25c6c"
+    },
+    {
+      "stage": "u7_proposal_figures",
+      "validation_sha256": "55a372f22e8cfe52725a2be669affb244639bb1489c956c418ed43b771d85d6f"
     }
   ],
-  "stage_validation_count": 14,
+  "stage_validation_count": 15,
   "frozen_human_scripts_verified": 4,
   "local_markdown_links": "all_exist",
   "forbidden_large_or_private_inputs_tracked": false,
-  "visually_reviewed_figures": 17,
+  "visually_reviewed_figures": 23,
   "legacy_png_only_figures": [
     "ipf_pathway_primary_and_sensitivity.png"
   ],
-  "release_files": 534,
-  "release_bytes": 55058777,
-  "manifest_sha256": "051e04c031997f50de8e2bfc52d2e71636851ec6f13bd1cc4555255288d79f32"
+  "release_files": 575,
+  "release_bytes": 62646457,
+  "manifest_sha256": "7b140b8dbdb031aa9fa3e1976b2ffd411515ffed833e65bd72c4bedf71c9ca9d"
 }

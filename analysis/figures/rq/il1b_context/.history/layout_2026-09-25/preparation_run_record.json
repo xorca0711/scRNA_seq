@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "started_utc": "2026-09-24T14:56:20.553547+00:00",
+  "code": {
+    "commit": "3b5e1140d6ee5b311764201bfe29f10a0804a05c",
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracked_changes_present": false,
+    "untracked_files_present": true,
+    "entrypoint": "Thesis\\gate2_C3_yu_lee_choi_min_2026\\trials\\u7_prepare_proposal_figures.py",
+    "entrypoint_sha256": "be63f0859bb26b4a40c467368aec3367a253605790a49c51874c074864d2b1cb"
+  },
+  "stage": "diagnostic_inputs_ready",
+  "display_cells": 34178,
+  "all_QC_cells": 555480,
+  "sampled_strata": 490,
+  "PCA_units": 70,
+  "patients": 23,
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "umap-learn": "0.5.12",
+    "h5py": "3.16.0"
+  },
+  "no_new_statistical_tests": true,
+  "no_annotation_changes": true,
+  "elapsed_seconds": 216.44,
+  "updated_utc": "2026-09-24T14:59:56.991287+00:00"
+}

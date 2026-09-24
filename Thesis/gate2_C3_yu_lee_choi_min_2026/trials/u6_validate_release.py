@@ -20,7 +20,7 @@ def main():
     validations = ['u5_ipf_pathways', 'u5_ipf_liana', 'u5_ipf_compatibility', 'u5_liana_robustness',
                    'u5_ligand_targets', 'u4_mouse_niche', 'u6_specificity', 'u6_isr_extension',
                    'u6_ipf_specificity', 'u5_spatial_context', 'u5_human_niche',
-                   'u5_human_sources', 'u5_human_ligand_targets', 'u6_human_specificity', 'u7_proposal_figures']
+                   'u5_human_sources', 'u5_human_ligand_targets', 'u6_human_specificity']
     checked = []
     for name in validations:
         path = PAPER / 'trials' / name / 'validation.json'

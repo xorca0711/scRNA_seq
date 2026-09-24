@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-09-24T16:00:55.727321+00:00",
+  "code": {
+    "commit": "2f653b095b3fd39e0bd77ec54b613478c7210a7b",
+    "tracked_diff_sha256": "38d0951e16c2fac61718528e70f3085f3357e9e94504e610b7e4c4d178fa650b",
+    "tracked_changes_present": true,
+    "untracked_files_present": true,
+    "entrypoint": "analysis\\scripts\\21_validate_il1b_rq_figures.py",
+    "entrypoint_sha256": "661dc5ae52847455e66b0eda88227a08cb8031129ea84e062888ed040526c01a"
+  },
+  "input_hashes_checked": 239,
+  "source_label_cell_count_parity": true,
+  "full_QC_cells": 555480,
+  "display_cells": 34178,
+  "patients": 23,
+  "PCA_units": 70,
+  "program_pairs_verified": true,
+  "pathway_rows": 42,
+  "target_candidates": 32,
+  "visually_reviewed_figures": 6,
+  "measured_figures": 5,
+  "proposal_schematics": 1,
+  "no_new_inferential_tests": true
+}

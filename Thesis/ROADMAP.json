@@ -3,12 +3,13 @@
   "source": {
     "origin": "the owner's reading order; the reading notes are kept privately",
     "reading_order_last_checked": "2026-09-15",
-    "ids_verified_against_pubmed_on": "2026-09-09 (papers 1 to 11); 2026-09-15 (papers 12 to 16 and M1 to M7)"
+    "ids_verified_against_pubmed_on": "2026-09-09 (papers 1 to 11); 2026-09-15 (papers 12 to 16 and M1 to M7)",
+    "analysis_status_updated": "2026-09-25"
   },
   "working_question": "Which epithelial and immune-state programmes distinguish productive lung repair from persistent dysplastic remodelling after inflammatory injury?",
   "gate_rules": {
     "analysis_gate": "after papers 1-4: write a one-page analysis contract; start from deposited count matrices plus metadata, not FASTQ",
-    "stop_rule": "finish papers 1-4, write the contract, start the pilot; read 5-11 only when a pilot result makes their branch relevant",
+    "stop_rule": "finish papers 1-4, write the contract, start the pilot; read 5-16 only when a pilot result makes their branch relevant",
     "gate_3A_condition": "cytokine or inflammation-resolution signal is strong",
     "gate_3B_condition": "regulatory T cells are sufficiently represented"
   },
@@ -117,7 +118,7 @@
         "GSE144598 (ATAC-seq, bigwig coverage only, not reusable)",
         "GSE144553 (SuperSeries)"
       ],
-      "folder": "Thesis/gate1_02_choi_2020/",
+      "folder": "gate1_02_choi_2020",
       "note_status": "written 2026-09-15 at the owner's direction after reading (DEVELOPMENT decision 23); the AI-written note of 2026-09-13 was withdrawn first (decision 21) and stays in git history at PR #19",
       "trial_status": "trials D0 to D7 run 2026-09-15 plus a corrected annotation pass D2b beside D2 (no threshold moved); Gate 1 not fully recovered from the deposit (four of five states; primed AT2 never assigned as a cluster); Descriptive only, owner review pending",
       "pmcid": "PMC7487779",
@@ -142,10 +143,14 @@
         "injury-dependent vs homeostatic logic",
         "experimentally supported directionality"
       ],
-      "datasets": ["GSE109444 (source mesenchymal FPKM)", "GSE262927 (Nb1 viral-injury counts)", "GSE129605 (external feasibility screen)"],
+      "datasets": [
+        "GSE109444 (source mesenchymal FPKM)",
+        "GSE262927 (Nb1 viral-injury counts)",
+        "GSE129605 (external feasibility screen)"
+      ],
       "folder": "gate1_03_nabhan_2018",
       "note_status": "owner completed reading 2026-09-22; private notes retained by owner",
-      "trial_status": "source reproduction and descriptive Nb1 authorized 2026-09-22; see trial report for execution and external gate",
+      "trial_status": "source reproduction, descriptive Nb1 and external eligibility screen complete; local ligand ranking stopped at the day-11 animal-coverage gate",
       "trial_location": "Thesis/gate1_03_nabhan_2018/README.md"
     },
     {
@@ -359,7 +364,7 @@
       "datasets": [],
       "folder": "gate2_C3_yu_lee_choi_min_2026",
       "note_status": "owner read; source synthesis prepared; staged execution authorized 2026-09-24",
-      "trial_status": "initial batch complete: seven-library mouse QC/clustering, two-cohort IPF pathways and 25-donor descriptive LR; treatment inference, sensitivities and human/spatial extensions pending",
+      "trial_status": "feasible IPF, early mouse, full human, spatial/context and specificity analyses complete; KAC identity, later history, independent spatial regions and causal/fate endpoints remain gated; repository-wide follow-ups A11–A14",
       "added": "2026-09-15"
     },
     {
@@ -405,7 +410,7 @@
       "datasets": [],
       "folder": null,
       "note_status": "not started",
-      "trial_status": "proposal W1 (Stage 2 of paper 1's plan)",
+      "trial_status": "Niethamer W1 animal-level aMAC pseudobulk completed 2026-09-22; programme evidence remains correlation-sensitive. Compass flux inference has not run; reading status unchanged.",
       "added": "2026-09-15"
     },
     {
@@ -428,7 +433,7 @@
       "datasets": [],
       "folder": null,
       "note_status": "not started",
-      "trial_status": "proposal W1 (Stage 2 of paper 1's plan)",
+      "trial_status": "Niethamer W1 animal-level aMAC pseudobulk completed 2026-09-22; programme evidence remains correlation-sensitive. Compass flux inference has not run; reading status unchanged.",
       "added": "2026-09-15"
     }
   ],
@@ -458,7 +463,7 @@
       "doi": "10.1038/s41467-021-25960-2",
       "pmid": "34584091",
       "backbone_step": 3,
-      "used_in": "the animal-as-unit rule throughout; no pseudobulk differential expression yet (proposal W1)"
+      "used_in": "Animal/donor-aware pseudobulk implemented in Niethamer W1 and IPF/human follow-ups; use current correction records."
     },
     {
       "ref": "M2",
@@ -559,5 +564,15 @@
       "backbone_step": 2,
       "used_in": "named by Choi 2020 attack A3 (trial D7); the list is not on disk and the attack was not attempted"
     }
-  ]
+  ],
+  "path_conventions": {
+    "folder": "Relative to Thesis; no trailing slash. Null means no paper folder.",
+    "artifact_paths": "Repository-relative unless explicitly stated otherwise.",
+    "question_register": "RESEARCH_QUESTIONS.md",
+    "shared_figures": "analysis/figures/rq/",
+    "label_scope": "Paper-local trials and figure groups are qualified by paper key; A1–A14 are repository-wide questions."
+  },
+  "folder_name_exceptions": {
+    "yu_lee_choi_min_2026": "gate2_C3_yu_lee_choi_min_2026: owner-selected branch 2C item 3; stable paper order 13."
+  }
 }

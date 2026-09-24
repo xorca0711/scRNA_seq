@@ -256,6 +256,9 @@ def main() -> int:
     check_claim_ids_unique(result)
     check_machine_readable_files(result)
     check_headline_results(result)
+    sys.path.insert(0, str(REPO))
+    from analysis.lib.research_layout import check_research_layout
+    check_research_layout(REPO, result)
     from claim_contract import generated, verify_bindings, MANIFEST, SUMMARY, BINDINGS
     bindings = read_json(str(BINDINGS))["bindings"]
     for error in verify_bindings(bindings, REPO):

@@ -2,16 +2,23 @@
 
 `analysis/` holds what is shared across deposits: the pipeline, its
 configuration, the repository-level figures and the raw-data inventory.
-The data and every per-deposit artefact live under `Thesis/`, beside the
-paper that produced the deposit, since 2026-09-21.
+Paper-specific data and inference live under `Thesis/`, beside the study that
+motivated them, since 2026-09-21. Cross-study corrections remain in
+`analysis/corrections/`. Shared RQ figures and their compact plotted tables
+belong in `analysis/figures/rq/`, even when they draw on one study's results.
+The [repository structure contract](../docs/REPOSITORY_STRUCTURE.md) defines
+canonical paths and identifier scope across the whole repository.
 
 ```
 analysis/
 ├── scripts/          the pipeline (run_scrna_analysis.py; --dataset selects the series),
 │                     the focused analyses of the mouse series (06 to 13), the generators
-│                     (03, 05, 14, 15) and the validator
+│                     (03, 05, 14, 15), shared RQ figures (16, 18–21) and the validator
 ├── config/           the one validated palette; the x86-64 environment lock
-├── figures/          repository-level figures drawn from the claims register
+├── figures/          repository-level claims and question figures
+│   └── rq/           shared RQ PNG/SVGs; il1b_context/ holds tables and provenance
+├── lib/              reusable provenance and validation helpers
+├── corrections/      explicitly separated corrective analyses and records
 ├── requirements.txt  the native environment
 ├── raw_data_inventory.txt / .csv / .json   the Stage 0 scan of raw_data/ (51 files)
 └── LAYOUT.md         this file
@@ -72,6 +79,10 @@ inverted labelling design. The focused directories restrict to the correct
 cohort. See [`../docs/ANALYSIS_RATIONALE.md`](../docs/ANALYSIS_RATIONALE.md).
 
 ## Where to start
+
+For the current shared scientific questions, use
+[RESEARCH_QUESTIONS.md](../RESEARCH_QUESTIONS.md); the IL-1 context figures have
+their own [methods and reproduction commands](figures/rq/il1b_context/REPORT.md).
 
 | I want | Read |
 |---|---|

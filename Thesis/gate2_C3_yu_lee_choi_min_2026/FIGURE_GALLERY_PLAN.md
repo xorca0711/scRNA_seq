@@ -18,13 +18,12 @@ and [EVIDENCE_REVIEW](EVIDENCE_REVIEW.md). The panel specifications below
 preserve the original presentation plan; unavailable endpoints are explicitly
 represented by eligibility tables or narrower measured panels.
 
-The post-analysis [derived questions and figure plan](DERIVED_RESEARCH_QUESTIONS.md)
-maps four follow-up RQs and an annotation audit to proposed UMAP, pseudobulk
-PCA, violin/paired-point, enrichment and spatial/perturbation panels. Its D0-D4
-identifiers are distinct from the completed F01-F07 figures below. On
-25 September, D0, D1 and D2a-c were generated from measured data and D4 was
-drawn as an experimental-design schematic. D3 joint/spatial inference and D4
-outcome plots remain conditional. See the [figure report](trials/u7_proposal_figures/REPORT.md).
+Post-analysis questions are now A11–A14 in the root
+[research-question register](../../RESEARCH_QUESTIONS.md#a11-shared-plasticity-versus-neoplasia-associated-context),
+with five measured figures and one experimental schematic in the shared
+[figure package](../../analysis/figures/rq/il1b_context/REPORT.md). Joint
+fibroblast associations (A13) and withdrawal outcomes (A14) remain conditional.
+The F01–F07 groups below remain specific to this paper.
 
 | ID | Figure and question | Current readiness | Analysis dependency |
 |---|---|---|---|

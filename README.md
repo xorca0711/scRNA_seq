@@ -68,6 +68,7 @@ override the claim register.
 
 | Branch | Figures and evidence |
 |---|---|
+| [Repository-wide questions A1–A14](RESEARCH_QUESTIONS.md) | Shared question figures, including IL-1 recipient context, source UMAP, patient PCA and a proposed withdrawal design |
 | [Niethamer: viral injury and repair](Thesis/gate1_01_niethamer_2025/README.md#figure-gallery) | Animal-level tracing/cycling, myeloid composition and programme-inference sensitivity; links to phase, lineage and batch galleries |
 | [Choi: epithelial states](Thesis/gate1_02_choi_2020/README.md#figure-gallery) | Deposited in vivo and organoid state maps, with links to specificity and chromatin analyses |
 | [Choi: chromatin and transitional states](Thesis/gate1_02_choi_2020/datp_epigenetics/README.md#figure-gallery) | RNA/promoter displays and developmental specificity |
@@ -147,9 +148,12 @@ cannot answer a co-occurrence question. Every opened deposit's citation is in
 
 ## Repository map
 
+The [structure and label contract](docs/REPOSITORY_STRUCTURE.md) defines
+canonical question, figure, script and paper-record locations.
+
 ```
 RESEARCH_QUESTIONS.md        the hypotheses by question; phenotypes; specified follow-up analyses
-CLAIMS.md                    claims register: evidence, status, potential (164 rows)
+CLAIMS.md                    claims register: evidence, status, potential; counts in analysis/claims/
 NEGATIVE_RESULTS.md          generated from the register: refuted, retracted, unestablished
 FINDINGS.md                  the original two-series analysis with figures
 DEVELOPMENT.md               who decided what; rejected output stays visible
@@ -161,23 +165,26 @@ analysis/
   scripts/                   the pipeline, the focused analyses, the generators, the validator
   config/                    the one validated palette; the x86-64 environment lock
   figures/                   repository-level figures: the claims ledger from the register, and rq/,
-                             one paper-style figure per research question from the analysed objects
+                             question-linked data figures and explicitly labelled study designs
   LAYOUT.md                  what lives where, and why the mouse cohorts differ
 Thesis/                      paper roadmap, one folder per paper, in reading order; each deposit beside its paper
-  gate1_01_niethamer_2025/     phase and myeloid follow-ups (N1 to N4); Stage 2 proposals
+  gate1_01_niethamer_2025/     phase/myeloid follow-ups; Stage 2 designs and executed follow-ups
     GSE262927/                   the mouse series: report, figures, tables, QC, focused analyses
   gate1_02_choi_2020/          trials D0 to D7; two branches:
     datp_epigenetics/            the transitional state in chromatin (M0 to M4)
     axin2_il1r1/                 the paper's own closing question (A1 to A2)
+  gate1_03_nabhan_2018/        source reproduction, descriptive Nb1, external eligibility
   gate1_04_sikkema_2023_hlca/  reference mapping to the HLCA (S1 to S5)
   gate2_05_cardoso_2026/       early fibrotic niches (C0 to C14, E1 to E6)
+  gate2_C3_yu_lee_choi_min_2026/ IL-1 context analyses and paper-specific F01–F07 gallery
+  epithelial_state_specificity/ cross-study signature, genotype and coverage analysis
   ungated_murthy_2022/         a source paper outside the roadmap; pointer note only
     GSE178360/                   the human series: report, figures, tables, QC
 docs/                        rationale, background, generated pipeline record, source-study notes
 archive/                     displaced material: what moved, when, and why
 ```
 
-`raw_data/` (GEO downloads, about 11 GB) and all regenerable `.h5ad` and
+`raw_data/` (GEO downloads) and all regenerable `.h5ad` and
 `.npz` objects are gitignored; figures, small tables and run records are
 tracked. No sequencing data, count matrices or paper PDFs are committed.
 

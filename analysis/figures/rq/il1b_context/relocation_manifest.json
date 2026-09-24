@@ -1,0 +1,236 @@
+{
+  "schema": "rq-layout-migration/v1",
+  "date": "2026-09-25",
+  "source_commit": "d455509a7077debc31ef839cfffdd6cdd0e74d91",
+  "preparation_recomputed": false,
+  "original_script_archive": "analysis/figures/rq/il1b_context/.history/layout_2026-09-25",
+  "files": [
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_prepare_proposal_figures.py",
+      "new_path": "analysis/scripts/19_prepare_il1b_rq_figures.py",
+      "original_sha256": "be63f0859bb26b4a40c467368aec3367a253605790a49c51874c074864d2b1cb"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_render_proposal_figures.py",
+      "new_path": "analysis/scripts/20_render_il1b_rq_figures.py",
+      "original_sha256": "cb671d9bf84a7e655d52c11776d7f1518bdb402818279bb0321c6db700d70103"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_validate_proposal_figures.py",
+      "new_path": "analysis/scripts/21_validate_il1b_rq_figures.py",
+      "original_sha256": "a76228d5d263db0aa764c676460b651836ed5401a376829ff3893a0c40b3c021"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/AT2_PCA_features.csv",
+      "new_path": "analysis/figures/rq/il1b_context/AT2_PCA_features.csv",
+      "original_sha256": "d1b46734d88a7d6b770e6084950e6ddc879d025d4a53b339e4ed716e2c9683a2"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/AT2_pseudobulk_PCA_values.csv",
+      "new_path": "analysis/figures/rq/il1b_context/AT2_pseudobulk_PCA_values.csv",
+      "original_sha256": "23f357182b91b94b89f2be0bdd339b850375102e78d42010dc2106d1efb76990"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/D0_paired_unassigned_IL1B.csv",
+      "new_path": "analysis/figures/rq/il1b_context/D0_paired_unassigned_IL1B.csv",
+      "original_sha256": "9cb51863cff78e692db579fe7cf0a4ce4b9211ff1ab0fc17640d20a4d1824d51"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/D1_HPCS_all_contrasts.csv",
+      "new_path": "analysis/figures/rq/il1b_context/D1_HPCS_all_contrasts.csv",
+      "original_sha256": "5baca2845419b374ad56212d7eebf1d361af190971c89dedc3e59bcb1b769641"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/D1_HPCS_paired_scores.csv",
+      "new_path": "analysis/figures/rq/il1b_context/D1_HPCS_paired_scores.csv",
+      "original_sha256": "40ebdbaece8d994b59e0b878601dba35d911851a2951e3fb18a922a9501fa8fb"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/D1_program_heatmap_values.csv",
+      "new_path": "analysis/figures/rq/il1b_context/D1_program_heatmap_values.csv",
+      "original_sha256": "b017292866929cb12be03cec07ddcd9e8024d63138cb8e7f7ba9d9ff02465182"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/D2_component_donor_values.csv",
+      "new_path": "analysis/figures/rq/il1b_context/D2_component_donor_values.csv",
+      "original_sha256": "0f854fff18b6676ea5d28fb0db8d505c63f99f4e87e2ad43406d97cf3a034792"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/D2_component_dot_values.csv",
+      "new_path": "analysis/figures/rq/il1b_context/D2_component_dot_values.csv",
+      "original_sha256": "bb0ea55edae6acf1f5b3dd274f06de0b8ad849f0d2006ee85dd08f8f5a69da57"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/D2_ligand_target_values.csv",
+      "new_path": "analysis/figures/rq/il1b_context/D2_ligand_target_values.csv",
+      "original_sha256": "53575049a52464785242f35cd8173ee8fb0185d1048d884fa21fd99de5e80adc"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/D2_paired_components.csv",
+      "new_path": "analysis/figures/rq/il1b_context/D2_paired_components.csv",
+      "original_sha256": "933193c4e2454170e414c44aaef736f118f6a13b40053ad9fce4d68aa263e301"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/D2_paired_edge_values.csv",
+      "new_path": "analysis/figures/rq/il1b_context/D2_paired_edge_values.csv",
+      "original_sha256": "483eb10c95861735408719a944e913eda86a670dca1826b24b430df5bba77411"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/D2_pathway_values.csv",
+      "new_path": "analysis/figures/rq/il1b_context/D2_pathway_values.csv",
+      "original_sha256": "5b59c5ea752c076e117fab377de902c0c5ec810ce05e02bcf5a96a34c5a8c359"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/donor_QC_summary.csv",
+      "new_path": "analysis/figures/rq/il1b_context/donor_QC_summary.csv",
+      "original_sha256": "87704e1da35946b8550bd0c71e2967cfdd8af4547455a9a2c3669a3becffb775"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/embedding_sampling_coverage.csv",
+      "new_path": "analysis/figures/rq/il1b_context/embedding_sampling_coverage.csv",
+      "original_sha256": "77f44c0e23714effe5f170302aa2412b796ce1e30106ee26737e3ac216861624"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/PCA_summary.json",
+      "new_path": "analysis/figures/rq/il1b_context/PCA_summary.json",
+      "original_sha256": "6cec4b8aab68f083152a8a35ab4f660bdd7a3b7ac9a0bfb94d93b406dd923ab1"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/preparation_inputs.csv",
+      "new_path": "analysis/figures/rq/il1b_context/preparation_inputs.csv",
+      "original_sha256": "45c6878a1d1431c2d4a5999ac41b63fd3ae1bc1470b7189c75894762d9ea90d4"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/preparation_run_record.json",
+      "new_path": "analysis/figures/rq/il1b_context/preparation_run_record.json",
+      "original_sha256": "5d03142ab3932939cbc499fdfbc705a304d186eb02a01920a1e9564199114e82"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/render_inputs.csv",
+      "new_path": "analysis/figures/rq/il1b_context/render_inputs.csv",
+      "original_sha256": "5bb44798393dca0cfb0cd893af38dd06ac5e3024b78a19b8083ae3281588a931"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/render_run_record.json",
+      "new_path": "analysis/figures/rq/il1b_context/render_run_record.json",
+      "original_sha256": "36823fa4765dc237078645fb925b7371741d6a6963a33d8b2cf053f70ea9a2c3"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/render_validation.json",
+      "new_path": "analysis/figures/rq/il1b_context/render_validation.json",
+      "original_sha256": "52d54e133d9bcbfa0e81ef29f4130b0be15da3393cef7c4d1b422f727624690a"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/REPORT.md",
+      "new_path": "analysis/figures/rq/il1b_context/REPORT.md",
+      "original_sha256": "5be3a2e9d9193a587684a295dc152e0dfa4a6891f64d92620638ce377c231a39"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/specification.json",
+      "new_path": "analysis/figures/rq/il1b_context/specification.json",
+      "original_sha256": "8446093ceac921cf40481137f20847fc54ce1c421d95a87ede344dd2fe0a16d6"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/umap_display_values.csv",
+      "new_path": "analysis/figures/rq/il1b_context/umap_display_values.csv",
+      "original_sha256": "372af613b970ea36d6b9865330c071b01bd9016fb9db6f28f970a4bb59787501"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/validation.json",
+      "new_path": "analysis/figures/rq/il1b_context/validation.json",
+      "original_sha256": "55a372f22e8cfe52725a2be669affb244639bb1489c956c418ed43b771d85d6f"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u7_proposal_figures/visual_review.json",
+      "new_path": "analysis/figures/rq/il1b_context/visual_review.json",
+      "original_sha256": "967c6fe23c67b9859c0bce8dd4f08b69deeb5eb22f400add921a2f1c5df509af"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/figures/derived_D0_source_annotation_context.png",
+      "new_path": "analysis/figures/rq/rq_a12_source_context.png",
+      "original_sha256": "58fa3ac81b4675a8c0318c27aec6fbf29dee3f22d2ac15a03af9d3db12ed45f6"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/figures/derived_D0_source_annotation_context.svg",
+      "new_path": "analysis/figures/rq/rq_a12_source_context.svg",
+      "original_sha256": "561c513b6c160a967387788f4f6f05168cd87fbc17dc0216223d99d53db2f324"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/figures/derived_D1_epithelial_programs.png",
+      "new_path": "analysis/figures/rq/rq_a11_epithelial_programs.png",
+      "original_sha256": "c086e4c381838db9e2c3c48a041323eff23d3c17d5661826ecda16bdfd277ea0"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/figures/derived_D1_epithelial_programs.svg",
+      "new_path": "analysis/figures/rq/rq_a11_epithelial_programs.svg",
+      "original_sha256": "5912cc32949c1e9c33adf16afa6f232143935c21c5585c515c82459dff18d880"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/figures/derived_D2_source_recipient_components.png",
+      "new_path": "analysis/figures/rq/rq_a12_source_recipient_components.png",
+      "original_sha256": "171c7d926968fe8074b2a69e64c65e6a3e1b4177e834f308b2e09bdacf37ecf3"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/figures/derived_D2_source_recipient_components.svg",
+      "new_path": "analysis/figures/rq/rq_a12_source_recipient_components.svg",
+      "original_sha256": "7778ba113020aa620fdcc0dac80be34d5f944fe98f4fa18f2c48b17eabb942df"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/figures/derived_D2_recipient_enrichment.png",
+      "new_path": "analysis/figures/rq/rq_a12_recipient_enrichment.png",
+      "original_sha256": "e22018be2ed60835f5affac408ca8ecdfbaab14d0b2d124cf1d334f644eeed1b"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/figures/derived_D2_recipient_enrichment.svg",
+      "new_path": "analysis/figures/rq/rq_a12_recipient_enrichment.svg",
+      "original_sha256": "e713e954814f996330b3514dc4fccb21b94db3fa32df4cd7e2272858664e77c0"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/figures/derived_D2_ligand_target_candidates.png",
+      "new_path": "analysis/figures/rq/rq_a12_ligand_target_candidates.png",
+      "original_sha256": "0e2da95449f34acc1064ed1efc765b191c57420d4ab2f0d46a291f5d0faa0b7b"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/figures/derived_D2_ligand_target_candidates.svg",
+      "new_path": "analysis/figures/rq/rq_a12_ligand_target_candidates.svg",
+      "original_sha256": "af76734651cf3e68f6059c0cc65a2c36a667a226e5fe0039ed12261383d86d3e"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/figures/derived_D4_withdrawal_experiment_proposal.png",
+      "new_path": "analysis/figures/rq/rq_a14_withdrawal_design.png",
+      "original_sha256": "a3e5e655e59afd1246c2ac3c5be9825d984593f141dc170b14dbdb34a9b27b62"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/figures/derived_D4_withdrawal_experiment_proposal.svg",
+      "new_path": "analysis/figures/rq/rq_a14_withdrawal_design.svg",
+      "original_sha256": "921ec086fcbef2d49243f61985a6f9dce63f19260bb10b43fed60becb2ad968f"
+    },
+    {
+      "old_path": "Thesis/gate2_C3_yu_lee_choi_min_2026/DERIVED_RESEARCH_QUESTIONS.md",
+      "new_path": "analysis/figures/rq/il1b_context/.history/layout_2026-09-25/DERIVED_RESEARCH_QUESTIONS.md.txt",
+      "original_sha256": "76682b92e04cd37b81515945b59962022160ae8301abf6b6b43df214e86e797a"
+    }
+  ],
+  "preserved_scientific_files": [
+    "analysis/figures/rq/il1b_context/AT2_PCA_features.csv",
+    "analysis/figures/rq/il1b_context/AT2_pseudobulk_PCA_values.csv",
+    "analysis/figures/rq/il1b_context/D0_paired_unassigned_IL1B.csv",
+    "analysis/figures/rq/il1b_context/D1_HPCS_all_contrasts.csv",
+    "analysis/figures/rq/il1b_context/D1_HPCS_paired_scores.csv",
+    "analysis/figures/rq/il1b_context/D1_program_heatmap_values.csv",
+    "analysis/figures/rq/il1b_context/D2_component_donor_values.csv",
+    "analysis/figures/rq/il1b_context/D2_component_dot_values.csv",
+    "analysis/figures/rq/il1b_context/D2_ligand_target_values.csv",
+    "analysis/figures/rq/il1b_context/D2_paired_components.csv",
+    "analysis/figures/rq/il1b_context/D2_paired_edge_values.csv",
+    "analysis/figures/rq/il1b_context/D2_pathway_values.csv",
+    "analysis/figures/rq/il1b_context/donor_QC_summary.csv",
+    "analysis/figures/rq/il1b_context/embedding_sampling_coverage.csv",
+    "analysis/figures/rq/il1b_context/PCA_summary.json",
+    "analysis/figures/rq/il1b_context/preparation_inputs.csv",
+    "analysis/figures/rq/il1b_context/preparation_run_record.json",
+    "analysis/figures/rq/il1b_context/specification.json",
+    "analysis/figures/rq/il1b_context/umap_display_values.csv"
+  ],
+  "interpretation": "Original bytes hashed at relocation; presentation/code/report changes are expected. preserved_scientific_files must still match original hashes."
+}
