@@ -7,8 +7,11 @@ to know to continue. Update this before stopping.
 
 **Current task: RQ reframing, before further analysis.** The owner merged PR #67
 and requested a substantial review using their `RQ_FRAMING_PROPOSAL.md`.
-The [restructuring plan](docs/RQ_REFRAMING_PLAN.md) recommends four core biological
-questions, a complete A-ID crosswalk and separate measurement contracts. It also
+The [restructuring plan](docs/RQ_REFRAMING_PLAN.md) now explicitly foregrounds
+the project's own biological observations and hypotheses. Following the owner's
+clarification, four worked cards are examples of possible priorities, not a
+survival limit. A broader hypothesis inventory precedes final grouping, with a
+complete A-ID crosswalk and separate measurement contracts. The plan also
 identifies propositions that exceed the existing evidence and confirms script
 16's caption-ownership drift. This is a review draft on `codex/rq-framing-plan`;
 the canonical RQ register, claim statuses and numerical outputs are unchanged.

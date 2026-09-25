@@ -786,6 +786,7 @@ choice of this structure and acceptance of its hypotheses remain pending.
 |---|---|---|---|
 | 2026-09-25 | Biological hypotheses and depth/resource/annotation diagnostics presented as peer A-series questions | Owner requested substantial reconsideration; Codex proposed consolidation around measured biological endpoints | Owner initiated the revision; the resulting plan has not yet been adopted |
 | 2026-09-25 | Stronger biological headlines treated as restatements of existing measurements | Planning review distinguishes motivating observations from untested temporal, lineage, receptor-complex and absence claims | Codex's assessment of the supplied proposal, for owner review |
+| 2026-09-25 | The planning summary appeared to reduce the surviving biological questions to four | Owner asked whether scientific ownership was considered and whether only four survived; Codex made ownership explicit, added the broader hypothesis inventory and removed the fixed-count recommendation | Owner requested clarification; revised grouping remains a proposal |
 
 The review also confirmed caption-generator drift that could restore a
 superseded A2 figure. Repair is specified before redraw; no generator or

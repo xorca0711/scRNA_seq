@@ -13,6 +13,11 @@ The owner merged PR #67 and requested a plan to substantially revise the A-serie
 before proceeding with remaining analysis. Read `docs/RQ_REFRAMING_PLAN.md`.
 It is a proposal, not an adopted replacement register; preserve existing IDs,
 claim statuses, figures and numerical records until implementation is requested.
+The owner emphasized ownership of biological hypotheses and challenged the
+apparent four-question limit. Four cards are now illustrative priorities, not
+the only surviving RQs. Inventory distinct biological hypotheses before grouping;
+foreground observed biology and its proposed interpretation, with support graded
+separately from execution readiness and technical prerequisites.
 The current planning branch is `codex/rq-framing-plan`. No new fits are authorized
 by this planning turn. A new biological proposition cannot inherit the status of
 a differently worded historical claim, even when it cites the same observation.

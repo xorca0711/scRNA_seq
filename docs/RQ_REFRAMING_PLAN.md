@@ -15,12 +15,14 @@ passed 2,109 checks for this planning update.
 
 ## Recommendation
 
-Rebuild the front page around **four biological questions**, retaining the
-existing A1, A5, A10 and A14 identifiers. Give each a working hypothesis, a
-measured endpoint, competing explanations and a decision rule. Consolidate the
-other entries into biological subquestions, conditional follow-ups and a linked
-measurement-contract index. Preserve every existing A identifier in a migration
-crosswalk; keep historical evidence and figures available.
+First inventory the project's own biological observations and the distinct
+hypotheses they support or motivate. Separate reusable measurement checks, then
+choose the front-page grouping. **There is no four-question survival limit.**
+The A1, A5, A10 and A14 cards below are worked examples of possible priorities,
+not an exhaustive list or a rejection of the other biological propositions.
+Preserve every existing A identifier and its evidence in a migration crosswalk.
+Merge hypotheses only when they have the same discriminating test and decision,
+not just a shared topic.
 
 This is a substantive prioritization, not a declarative rewrite of all fifteen
 headlines. A hypothesis can be valuable while untested. A technical result can
@@ -32,6 +34,61 @@ The immediate analytical priority after the restructuring should be the bounded
 A10 outcome-data join, alongside identification of a compatible direct-mark
 comparison for A1. Do not begin another unrestricted score, depth or ligand-rank
 sweep merely because it is computationally available.
+
+## Make the project's own biological interpretation explicit
+
+The attachment's ownership argument is central to this revision. The project
+should state what its analyses reveal about biological systems and use those
+observations to formulate its own hypotheses. A list of failures of labels,
+references or databases is not an adequate account of the scientific contribution.
+The first draft underemphasized this by leading with consolidation and caveats.
+
+Use two distinct sentences in each entry: **what we observed**, then **the
+biological hypothesis that observation supports or motivates**. State the
+strength of that connection. Put the discriminating experiment next; attach
+measurement rivals without making them the entire identity of the question.
+
+| This project's observation | Biological interpretation to foreground | Test of the stronger hypothesis |
+|---|---|---|
+| Transitional-marker expression occurs in neonatal controls; ES1 also examines label-excluded programme enrichment | Part of the epithelial transition programme may be reused during alveolar maturation and adult repair | Shared components beyond generic stress/cycling in independent developmental and injury comparisons |
+| The overlap-reduced HPCS score increases in non-neoplastic repair/developmental libraries and IPF pairs as well as lesion comparisons | Neoplasia-associated transcript programmes contain features also expressed during non-neoplastic epithelial remodelling; this motivates a shared-plasticity hypothesis | Identify reproducible shared components, then test context-specific additions separately |
+| Both reference identity scores and labelled-reference contrasts change in Cebpa-mutant wells (C167) | Cebpa loss may attenuate identity across the AT2 population rather than selectively preserving intermediates | Replicated genotype-by-state comparison with a state definition independent of the scored genes |
+| Broad ADI/AT1 scores have shared definitions, while the small late-marker component is unstable (C168) | A maturation model should distinguish a shared transition component from an additional endpoint-associated component | Test independent information about measured maturation; list overlap alone does not prove biological continuity |
+
+The first three examples contain biological distributions that can motivate
+positive hypotheses; the fourth begins with a definitional dependency and
+provides weaker biological support. They should not all be called instrument
+failures or assigned the same evidential strength. The observations remain the
+project's results even when a proposed mechanism is unconfirmed. Reframing
+changes scientific emphasis without changing numerical evidence or granting a
+new hypothesis an old claim's status.
+
+## Biological candidates retained beyond the four worked cards
+
+This inventory is for selection, not a declaration that each hypothesis has
+passed an inferential test. Data availability controls execution readiness;
+it does not determine whether a biological question is worth retaining.
+
+| Existing IDs | Biological proposition retained | Place in the revision |
+|---|---|---|
+| A1 | Regulatory programmes distinguish RNA-overlapping intermediates and relate to different measured outcomes | Candidate main question; direct epigenetic measurements remain central |
+| A5 | A developmental transition component is reused during adult repair | Its own hypothesis, independently testable from the next row |
+| A11 | Lesions add a reproducible epithelial component beyond the shared transition programme | Its own hypothesis; possible thematic grouping with A5 |
+| A7 | Cebpa loss produces a population-wide identity shift versus a state-selective change | Biological modifier hypothesis; nesting under A1 is optional |
+| A8 | A maturation-specific component adds endpoint information beyond a shared transition component | Biological hypothesis; overlap auditing is a method prerequisite |
+| A3 | Late injury-associated macrophage programmes differ from age-matched uninjured programmes | Temporal hypothesis; persistence of the same cells is a separate tracing claim |
+| A6 | IPF changes a programme within a comparable macrophage state beyond changing subtype proportions | Cell-intrinsic versus composition hypothesis, not eliminated by moving harmonization checks |
+| A12 | Recipient receptor/inhibitor context explains response differences beyond ligand RNA alone | Recipient-context hypothesis; association and causal reception need different tests |
+| A13 | Fibroblast programmes add information about epithelial state beyond macrophage IL1B | Distinct joint-model hypothesis, conditional on complete triads and adequate precision |
+| A10 | Molecular responses add information about measured organoid outcomes | Predictive hypothesis with a bounded public-data pilot |
+| A14 | Exposure duration affects recovery after withdrawal; fibroblast reception modifies recovery | Two hypotheses with separate decisions, potentially tested in one factorial experiment |
+| A4 | Wnt-associated maintenance and IL-1-responsive transition occur sequentially within a traced population | Conditional temporal hypothesis requiring activity/history measurements |
+| A2/A9 | Source contributions and receiver competence vary with biological context | Optional functional hypotheses if exposure/receiver endpoints can be specified; resource coverage alone remains method work |
+
+A12-S1 remains an enabling source-identity question until a biological state can
+be defined independently of reference-label failure. None of these candidates
+must be discarded to reach a predetermined number of headings. The final RQ
+count should follow nonredundant predictions and scientific priority.
 
 ## What to retain and correct in the attached proposal
 
@@ -61,7 +118,7 @@ reference to PROGRESS item 41 is historical. The new first batch adds measured
 PATS endpoint reconstruction and IRE1α RiboTag results, not evidence for a
 general regulatory taxonomy. See the [current A1 report](../RQ_Specified/A1_transitional_epithelial_state_distinction/reports/FIRST_BATCH_REPORT.md).
 
-## Four proposed core questions
+## Four worked hypothesis cards, not a survival shortlist
 
 These are retrospective hypothesis formulations informed by inspected data.
 Future tests require dated specifications and validation units not used to
@@ -250,7 +307,7 @@ claim IDs or frozen runs as part of this documentation change.
 | A13 | Conditional niche model supporting A14; relevant comparator in A10 | Fibroblast programmes adding information beyond macrophage IL1B | Triad completeness and estimable joint-model requirements |
 | A14 | Core A14 | Withdrawal, recipient-specific effects and measured recovery | Experimental design stays explicitly prospective |
 
-The A3/A6 branch is retained but not promoted to a fifth immediate programme.
+The A3/A6 branch is retained; its front-page priority has not been decided.
 A persistent population and persistence of the same cells are different targets.
 For a within-state test, avoid defining “noncycling” solely through the very
 cell-cycle score being tested. Age-matched controls, harmonized populations and
@@ -280,7 +337,7 @@ hypotheses are retained; reframing alone creates neither novelty nor evidence.
 ## Proposed document and figure structure
 
 `RESEARCH_QUESTIONS.md` remains the single biological-question index. Its opening
-table should show four core questions, biological endpoint, evidence state,
+table should show the selected biological hypotheses, endpoint, evidence state,
 execution readiness and next discriminating task. Follow with compact hypothesis
 cards, then conditional branches and an A-ID crosswalk. Implementation detail
 stays under `RQ_Specified/`; paper-specific evidence stays under `Research Article/`.
@@ -343,7 +400,7 @@ turn.
 | Step | Concrete deliverable | Acceptance / stopping rule |
 |---|---|---|
 | 1. Freeze the crosswalk | Snapshot current A headings, evidence links, figure ownership and C-row statuses; classify every entry using the table above | All A1–A14 plus A12-S1 accounted for; no deleted evidence or assumed human acceptance |
-| 2. Rewrite the front page | Four hypothesis cards and conditional branches, with linked measurement contracts | Each has one bounded primary test, biological unit, comparator, failure criterion and explicit readiness; nested subhypotheses have separate decisions |
+| 2. Rewrite the front page | Selected hypothesis cards and conditional branches, with linked measurement contracts; no fixed question quota | Each has one bounded primary test, biological unit, comparator, failure criterion and explicit readiness; nested subhypotheses have separate decisions |
 | 3. Synchronize plans and handoffs | Update A1 workspace scope, A10 pilot pointer, PROGRESS, AI_CONTEXT, README navigation and structure documentation | Core/public-data questions distinguish exploratory evidence from pending endpoint tests; thresholds and finished runs unchanged |
 | 4. Repair figure ownership | Safe generator/caption ownership, current A2 retained, corrected A3 title and selected displays | Rerender cannot restore retired blocks; scientific table hashes identical; figure-specific provenance and visual review pass |
 | 5. Review before analysis resumes | Compact change report: crosswalk, selected hypotheses, data gaps and next approved tests | No fit launched simply to populate a new headline; hypotheses formulated from inspected data labelled retrospective |
