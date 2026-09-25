@@ -1,0 +1,5 @@
+dataset	n_files	n_features	n_unique_names	sorted_names_sha256	arm	universe_source
+GSE247130	3	32286	32246	f5bb67d984c0f54f6b4ca0a10f0fe03f87c9fbca43c1b1cb1c7b922b473453de	mouse	raw 10x Gene Expression feature names
+GSE310539	1	32287	32247	45ee7370196319309473d19fe9d576dffda53d63ca96c4485f8fc29cca01b282	mouse	raw 10x Gene Expression feature names
+GSE262927	1	32228	32228	ebaacca8ca6f4ecc21dc79bef175c1623f483e9161e4913343caa53ce1ce4db9	mouse	post-QC object variable names, sha256 d4f3cfbe81b6e8f6665205e3bb731c6baeef611e5b43bfe522593f7fabaa9dc1, as scored by the precedent
+GSE308103	75	18082	18082	2d5cd2268f6fd00c54b5d30646e72adca28dc74201e144584a74f8a2729d7a9e	human	processed per-library gene index shared by all libraries

@@ -33,5 +33,12 @@
   "archive_packaging_fix": "Reference map retained as exact .md.txt bytes so original relative links do not resolve against its archive directory.",
   "unrelated_work": ".claude directory excluded",
   "external_actions": "Public-source reads; no author messages or raw-read downloads",
-  "remaining": "External inputs and new experiments listed in REGULATORY_FATE_REPORT.md"
+  "remaining": "External inputs and new experiments listed in REGULATORY_FATE_REPORT.md",
+  "integration": {
+    "main_commit": "5dbc3a9",
+    "conflict": "AI_CONTEXT.md only; retained the A1 continuation and parallel A5/A11 handoff",
+    "repository_checks_after_merge": 2489,
+    "A1_numerical_changes": "none",
+    "PR": "https://github.com/xorca0711/scRNA_seq/pull/74"
+  }
 }
