@@ -45,6 +45,7 @@ violate, is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | The A1 figure: adding the per-nucleus promoter violin back beside the detection-at-budget heatmap, with the ATAC depth behind it (decision 29) | Me (2026-09-22), choosing among keep, add back beside, and restore; the assistant computed the depth from the cached object and redrew the figure with script 16 |
 | Retain or reject on the Choi 2020 branch rows C116 to C154 (decision 30) | Me, row by row in four themed groups (2026-09-22); the assistant checked the cited artefacts by script and set out the evidence |
 | Choosing W1 as the next analysis, narrowing it to alveolar macrophages, and installing pydeseq2 (decision 31) | Me (2026-09-22); the assistant proposed the narrowing, wrote and committed the pre-registration before any count was read, and chose the genotype exclusion, the sex-gene gate and CAMERA, all pending my review |
+| Selecting the next question-specific analysis, and the A5 and A11 shared component contract (decision 37) | Me (2026-09-25). I REJECTED the assistant's first recommendation, A6, as artifact-adjacent, then chose to join A5 and A11 through a shared contract in its own folder and branch, and authorized execution. The assistant selected the developmental source, wrote and committed the partition rule before any intersection, and corrected its own coverage gate and one dataset universe, all pending my review |
 
 AI execution never meant automatic acceptance. Results were reviewed between
 sessions, and several were sent back: one finding was refuted and rewritten
@@ -816,6 +817,37 @@ render records replace root-document mutation. Only A3 was redrawn from existing
 coordinates; no scientific model/embedding was refit and no threshold or claim
 grade was changed. Authorizing this edit is not acceptance of its hypotheses as
 established scientific findings.
+
+## 37. Reject A6 as the next analysis; join A5 and A11 through a shared component contract (25 September 2026)
+
+Asked which remaining question was most plausible to launch, the assistant first
+recommended A6, ranking it by data already on disk. The owner rejected that as an
+artifact-adjacent choice. A6 asks whether IPF changes macrophage states beyond their
+abundance, and the boundary between composition and within-state change is set by
+how finely the states are annotated, so its answer moves with a convention rather
+than with the biology. The assistant then recommended A11, and on the owner's
+question proposed joining A5 and A11 by sharing their component definition while
+keeping the questions separate. The owner chose that design and authorized its
+execution on a separate branch.
+
+| Date | Item | Proposed by | Decided by | Decision | Reason |
+|---|---|---|---|---|---|
+| 2026-09-25 | Next analysis selection | Assistant recommended A6, then A11 | Owner | A6 rejected; A5 and A11 joined through a contract | A6 resolves to a variance partition set by annotation granularity, with no named mechanism at the end |
+| 2026-09-25 | Shared component contract in `RQ_Specified/A5_A11_shared_component_contract/` | Assistant | Owner requested the folder, branch and execution | Stages 1 to 3 executed; stage 4 is the owner's | Both questions need one frozen partition to stay comparable |
+| 2026-09-25 | Developmental source, partition rule, Slc4a11 exclusion, source-defined lesion module | Assistant | Pending owner review | Rule committed before any intersection was computed | See the source audit and the stages 2 and 3 report |
+
+| Date | Rejected or reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-25 | The assistant's A6 recommendation | Ranked by feasibility; the question is artifact-adjacent | Owner rejected it |
+| 2026-09-25 | The draft contract's single coverage gate on ortholog mapping | The completed run applies the gate to the assayed fraction, which also loses genes at assay presence, and adds a unit floor | Assistant corrected it on inspection, before any freeze |
+| 2026-09-25 | The first stage 3 run | Three of 33 precedent checks failed because it read the raw deposit rather than the post-QC object the precedent scored; it refused to report | The script's own fail-closed check; the attempt is preserved |
+
+Result, pending the owner's review: A11 is eligible for its test and A5 is not
+eligible for confirmation, for want of independent neonatal animals. At the level
+of the source lists the two questions need disjoint pairwise components, so the
+contract's "one shared baseline" wording overstates what the lists support. No
+expression score was computed and no claim grade changed. See the
+[contract report](RQ_Specified/A5_A11_shared_component_contract/reports/STAGE2_3_REPORT.md).
 
 ## How outputs were reviewed
 

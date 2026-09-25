@@ -1,0 +1,75 @@
+{
+  "stage": 3,
+  "status": "reported",
+  "completed_utc": "2026-09-25T10:29:55.985594+00:00",
+  "script": "RQ_Specified/A5_A11_shared_component_contract/scripts/02_report_coverage.py",
+  "script_sha256": "839a2d451a74ad4e95418521f5e439bfdd1de2de85414448aa78f7d5b097ace5",
+  "data_root": "X:/GitHub/scRNA_seq",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "pandas": "2.3.3",
+  "h5py": "3.16.0",
+  "tracked_inputs": {
+    "RQ_Specified/A5_A11_shared_component_contract/tables/frozen_modules.json": "059f72c07b5c35cb597c219e87606249c814712d238fd2a75724a91761913bcc",
+    "RQ_Specified/A5_A11_shared_component_contract/tables/module_membership.tsv": "4531c91bc67848faf87ad7644a6e950cdd16ecc0f2e3d2e90b994e76d875d704",
+    "RQ_Specified/A5_A11_shared_component_contract/tables/freeze_run.json": "f1d91b44dfc494da395addc0d916bf2f17d0d6373c4e66b0fdf064d07643deea",
+    "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u4_resources/strict_one_to_one_orthologs.csv": "d2a5bc6e2a11f685afeeb214dc7fade9f7aaafa0036cc364d2c28a89ca83df87",
+    "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_specificity/module_specification.json": "48a4316579c511effb8e4172cea2251dcb1d3374c66292bc0ccd9a0ba4a30ab6",
+    "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_summary.csv": "4616391747eb893a2e296aa4ae27c5e7c91dabc35f1f71b5c1859ea154a8c63e",
+    "Research Article/epithelial_state_specificity/modules.json": "64ceac751679f6dcbc5be48cbee7a6ea4bba17ad39ff1ba2eebfdd575f78e12d",
+    "Research Article/epithelial_state_specificity/results/module_scores.csv": "8e12a64755f1d9973a65a71b75be0752cf34c395d2f8597fb6d938993f3da707",
+    "Research Article/epithelial_state_specificity/results/SUMMARY.md": "84939da82b2d598a67c4a1cac40d8e3a76c06f9a09fe538300c8d267efde0f22",
+    "Research Article/epithelial_state_specificity/results/run_record.json": "228429f5c7d6afb2e9666e525b784aa4bb57e7b95f928a4489d78529b45572a5",
+    "Research Article/epithelial_state_specificity/results/retention.csv": "a0daab73c829f796e0801afd3bc617a74164ddf51435dbad16cae94bf123918f"
+  },
+  "gene_universes": [
+    {
+      "dataset": "GSE247130",
+      "n_files": 3,
+      "n_features": 32286,
+      "n_unique_names": 32246,
+      "sorted_names_sha256": "f5bb67d984c0f54f6b4ca0a10f0fe03f87c9fbca43c1b1cb1c7b922b473453de",
+      "arm": "mouse",
+      "universe_source": "raw 10x Gene Expression feature names"
+    },
+    {
+      "dataset": "GSE310539",
+      "n_files": 1,
+      "n_features": 32287,
+      "n_unique_names": 32247,
+      "sorted_names_sha256": "45ee7370196319309473d19fe9d576dffda53d63ca96c4485f8fc29cca01b282",
+      "arm": "mouse",
+      "universe_source": "raw 10x Gene Expression feature names"
+    },
+    {
+      "dataset": "GSE262927",
+      "n_files": 1,
+      "n_features": 32228,
+      "n_unique_names": 32228,
+      "sorted_names_sha256": "ebaacca8ca6f4ecc21dc79bef175c1623f483e9161e4913343caa53ce1ce4db9",
+      "arm": "mouse",
+      "universe_source": "post-QC object variable names, sha256 d4f3cfbe81b6e8f6665205e3bb731c6baeef611e5b43bfe522593f7fabaa9dc1, as scored by the precedent"
+    },
+    {
+      "dataset": "GSE308103",
+      "n_files": 75,
+      "n_features": 18082,
+      "n_unique_names": 18082,
+      "sorted_names_sha256": "2d5cd2268f6fd00c54b5d30646e72adca28dc74201e144584a74f8a2729d7a9e",
+      "arm": "human",
+      "universe_source": "processed per-library gene index shared by all libraries"
+    }
+  ],
+  "instrument_checks": {
+    "n": 33,
+    "all_match": true
+  },
+  "expression_counts_read": false,
+  "outputs": {
+    "instrument_check.tsv": "517a6f115b473998a31452771cee9306d29837818340b848a629f79182daece6",
+    "gene_universes.tsv": "36aba32f014a11caa40b150e1ccdc4d17dae24619c18ff7af8eddb9ac79464bc",
+    "coverage_gate.tsv": "52ac8f0e8e5d87d3abe2ed28af343e76964aebd1979de47cc91746b1b3b57f74",
+    "coverage_gene_detail.tsv": "3530134c34ec92d58f410ba3a6437162e8966394ecf1c56033ed9f48bfe33299",
+    "unit_floor.tsv": "eac968f15d963c38d6a3b2c452074bb33ee82ab369a24d4f73e656ac7780bccc"
+  }
+}

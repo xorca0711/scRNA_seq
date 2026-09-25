@@ -1,0 +1,22 @@
+{
+  "stage": 2,
+  "completed_utc": "2026-09-25T10:23:05.813013+00:00",
+  "script": "RQ_Specified/A5_A11_shared_component_contract/scripts/01_freeze_modules.py",
+  "script_sha256": "147ec02d5cb1310a518eb518618061ef1fd31e957ae436d05ed8e8dcd37db033",
+  "config_sha256": "a3b524de29f4cb3cbbe0023875f3669556903302ff35dd4bf94d4e7a51fe43e3",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "pandas": "2.3.3",
+  "inputs": {
+    "RQ_Specified/A5_A11_shared_component_contract/sources/guo_2019_supplementary_data_2.xlsx": "81e6916773f91fa78669b02186a3078c24ff2ab418697ab9415ad2003e0702f8",
+    "Research Article/epithelial_state_specificity/modules.json": "64ceac751679f6dcbc5be48cbee7a6ea4bba17ad39ff1ba2eebfdd575f78e12d",
+    "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_specificity/module_specification.json": "48a4316579c511effb8e4172cea2251dcb1d3374c66292bc0ccd9a0ba4a30ab6",
+    "RQ_Specified/A5_A11_shared_component_contract/config/shared_component.json": "a3b524de29f4cb3cbbe0023875f3669556903302ff35dd4bf94d4e7a51fe43e3"
+  },
+  "outputs": {
+    "frozen_modules.json": "059f72c07b5c35cb597c219e87606249c814712d238fd2a75724a91761913bcc",
+    "module_membership.tsv": "4531c91bc67848faf87ad7644a6e950cdd16ecc0f2e3d2e90b994e76d875d704",
+    "module_overlap.tsv": "82b3288a3cb264c34dfc17c39bd14023717646c536ec748a1c4f53ae93d48075"
+  },
+  "expression_data_read": false
+}

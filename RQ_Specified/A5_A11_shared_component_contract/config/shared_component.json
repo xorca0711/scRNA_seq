@@ -1,0 +1,216 @@
+{
+  "schema": "shared-component-contract/v1",
+  "drafted": "2026-09-25",
+  "status": "stages_1_to_3_complete_awaiting_owner_decision",
+  "executed": {
+    "stage_1": "source selected; reports/STAGE1_SOURCE_AUDIT.md",
+    "stage_2": "modules frozen; tables/frozen_modules.json and tables/freeze_run.json",
+    "stage_3": "eligibility reported; tables/coverage_gate.tsv, tables/unit_floor.tsv and tables/coverage_run.json",
+    "stage_4": "not reached; awaits the owner's retain or reject"
+  },
+  "note": "Membership fields below remain null in this file by design. The freeze script wrote membership to tables/frozen_modules.json and refuses to overwrite it. This file holds the decisions; the tables hold the results.",
+  "preregistration": {
+    "committed_before_freeze": true,
+    "date": "2026-09-25",
+    "what_was_seen_before_this_rule": [
+      "Guo 2019 AT1/AT2 list compared only against Guo's own AT1 and AT2 lists, to test the doublet reading.",
+      "Precedent assayed fractions reproduced exactly on the human gene universe."
+    ],
+    "what_was_not_seen_before_this_rule": [
+      "Any intersection between the developmental list and the injury or lesion lists.",
+      "Any expression score in any target dataset."
+    ]
+  },
+  "owning_questions": {
+    "A5": {
+      "register": "RESEARCH_QUESTIONS.md#a5",
+      "hypothesis": "Adult alveolar repair reuses part of a developmental epithelial programme.",
+      "owns_test_of": "shared_remodelling, development_specific",
+      "species_arm": "mouse",
+      "biological_unit": "animal"
+    },
+    "A11": {
+      "register": "RESEARCH_QUESTIONS.md#a11",
+      "hypothesis": "Lesion-associated epithelial programmes add to a shared plasticity component.",
+      "owns_test_of": "shared_remodelling, lesion_specific",
+      "species_arm": "human",
+      "biological_unit": "patient"
+    }
+  },
+  "what_this_contract_decides": [
+    "Whether each module reaches the assayed source fraction gate and the complete-unit floor in each species arm.",
+    "Whether the three modules are disjoint after label-gene and overlap exclusion.",
+    "Whether a sourced developmental maturation signature exists and is independent of the injury lists."
+  ],
+  "what_this_contract_does_not_decide": [
+    "Either the A5 or the A11 hypothesis.",
+    "Whether any context-specific addition transports to held-out units.",
+    "Any cell identity, ancestry, fate or malignant status.",
+    "Any existing claim grade in CLAIMS.md."
+  ],
+  "source_lists": {
+    "symbol_policy": "exact published mouse symbols; no alias or RIKEN-name updates; an unmapped or unassayed symbol lowers coverage and is reported, never repaired",
+    "D_developmental_transitional": {
+      "source": "Guo et al. 2019, Nature Communications",
+      "doi": "10.1038/s41467-018-07770-1",
+      "pmid": "30604742",
+      "pmcid": "PMC6318311",
+      "locator": "Supplementary Data 2, sheet Drop-seq signature, Group AT1/AT2",
+      "archive": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6318311/supplementaryFiles",
+      "archive_member": "41467_2018_7770_MOESM5_ESM.xlsx",
+      "archive_sha256": "5942c900289b15b35ee1405067263b35037ee815eb5678fb5258985fad6afd51",
+      "member_sha256": "81e6916773f91fa78669b02186a3078c24ff2ab418697ab9415ad2003e0702f8",
+      "cached_as": "sources/guo_2019_supplementary_data_2.xlsx, untracked by the repository-wide xlsx ignore rule",
+      "context": "normal mouse lung at postnatal day 1, no injury; 460 cells of mixed type 1 and type 2 features",
+      "selection": "every gene the authors list for the group; the authors capped each group at 100 by binomial-test ranking with FDR below 0.1",
+      "doublet_check": "54 of 100 genes are unique to this group across all 20 author subtypes, 37 are shared with the author type 1 list and 6 with the type 2 list; a type 1 plus type 2 doublet would pull type 2 identity genes in heavily, so the list is not treated as a doublet union"
+    },
+    "I_adult_injury_transitional": {
+      "source": "Strunz et al. 2020, Nature Communications",
+      "doi": "10.1038/s41467-020-17358-3",
+      "repository_entry": "Research Article/epithelial_state_specificity/modules.json, module ADI_published_400"
+    },
+    "L_lesion_high_plasticity": {
+      "source": "author top 100 of the high-plasticity cell state cluster",
+      "repository_entry": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_specificity/module_specification.json, module HPCS_author_top100",
+      "caveat": "The A1 robustness batch found pooled high-plasticity fractions move from 31.79 to 51.11 percent when the dominant source library is omitted. Use this list as a scored module only, never as a cell identity."
+    }
+  },
+  "operational_exclusions": {
+    "genes": ["Krt8", "Cldn4", "Sftpc", "Cebpa", "Slc4a11"],
+    "rationale": "A component must not contain the genes that selected its cells. Krt8, Cldn4 and Sftpc define the transitional and reference groups, Cebpa is the genotype gene, and Slc4a11 is the high-plasticity selection marker. The set matches the operational set of the completed human specificity run.",
+    "change_from_draft": "The draft listed four genes. Slc4a11 was added to match the precedent operational set once the lesion list was loaded; it was added before any intersection was computed."
+  },
+  "partition_rule": {
+    "applied_after": "operational exclusions, applied identically to D, I and L",
+    "shared_remodelling": "genes present in at least two of D, I and L",
+    "development_specific": "genes present in D only",
+    "lesion_specific": "genes present in L only",
+    "injury_residual": "genes present in I only; retained as a reference module, not one of the three contract modules",
+    "disjointness": "guaranteed by construction, and asserted by the freeze script",
+    "provenance_per_gene": "every gene carries membership flags for D, I and L, so each owning question can inspect its relevant sub-origin, for example D and I for A5, as a declared secondary",
+    "core_tag": "genes in all three of D, I and L are tagged within shared_remodelling and reported, not split out",
+    "why_at_least_two": "Shared means recurring in more than one independently defined context. The rule is symmetric and does not privilege any pair of contexts. It was chosen before any intersection was computed, not for the module sizes it produces."
+  },
+  "identity_axes": {
+    "lists": ["AT1_published_400", "AT2_published_400"],
+    "repository_entry": "Research Article/epithelial_state_specificity/modules.json",
+    "role": "diagnostic only; each module's overlap with type 1 and type 2 identity is reported, and no gene is removed on that basis",
+    "why_not_partition_inputs": "Identity lists describe a settled cell type, not a plasticity programme. The rival that a shared component is mere type 1 identity is tested by reporting the overlap, not by a post hoc removal."
+  },
+  "modules": [
+    {
+      "id": "shared_remodelling",
+      "role": "common baseline scored identically by both arms",
+      "membership": null,
+      "membership_state": "defined_by_partition_rule",
+      "membership_written_to": "tables/frozen_modules.json"
+    },
+    {
+      "id": "development_specific",
+      "role": "candidate addition tested by A5 only",
+      "membership": null,
+      "membership_state": "defined_by_partition_rule",
+      "membership_written_to": "tables/frozen_modules.json",
+      "stage_1_outcome": "Source found. See reports/STAGE1_SOURCE_AUDIT.md for the seven candidates examined and why six were not used."
+    },
+    {
+      "id": "lesion_specific",
+      "role": "candidate addition tested by A11 only",
+      "membership": null,
+      "membership_state": "defined_by_partition_rule",
+      "membership_written_to": "tables/frozen_modules.json",
+      "change_from_draft": "The draft defined this module by a discovery split of patients. A discovery split is part of A11's own validation design, and running it here would begin A11's fit, which this contract forbids. The contract therefore freezes a source-defined lesion module. A11 may define an additional patient-discovery module in its own plan, with disjoint whole patients for discovery and evaluation."
+    }
+  ],
+  "control_axes": {
+    "role": "scored separately, never merged into a module",
+    "sets": ["HALLMARK_P53_PATHWAY", "HALLMARK_HYPOXIA", "HALLMARK_INFLAMMATORY_RESPONSE"],
+    "resource": "MSigDB 2024.1, already cached in raw_data/msigdb",
+    "rule": "A shared or context-specific effect must survive these axes. Generic stress and cycling are rivals, not components."
+  },
+  "eligibility_gates": {
+    "correction_note": "An earlier draft of this contract described a single gate on ortholog mapping alone. Inspection of the completed human specificity run shows the gate is applied to the assayed source gene fraction, which loses genes at two stages, and that a separate unit floor also applies. Both are recorded below. The quoted precedent values were already the assayed fractions; the description of what they measured was wrong.",
+    "gate_1_assayed_source_fraction": {
+      "statistic": "source genes that both map to a strict one-to-one ortholog and are present in the target expression matrix, divided by the original source gene count",
+      "denominator": "original mouse source list length, never the mapped or assayed subset",
+      "threshold": 0.7,
+      "failure_reason_string": "assayed_source_gene_fraction_below_0.7",
+      "stages_of_loss": [
+        "strict one-to-one ortholog mapping between mouse and human",
+        "presence in the gene index of the specific target dataset"
+      ],
+      "why_both_stages_matter": "The ADI holdout retains 0.8593 after ortholog mapping and would pass a mapping-only gate, but reaches only 0.6407 once assay presence is applied and is correctly ruled ineligible. Reporting ortholog coverage alone would admit a module the completed run rejected.",
+      "reported": "per module, per species arm, per target dataset, before any score is computed",
+      "on_failure": "record the module as ineligible for that arm and report it; do not substitute, impute, or retreat to the cross-species intersection silently"
+    },
+    "gate_2_complete_unit_floor": {
+      "statistic": "complete biological units contributing both sides of a paired contrast",
+      "threshold": 3,
+      "failure_reason_string": "fewer_than_3_complete_patients",
+      "note": "This floor is an eligibility rule, not a power justification. A module can clear gate 1 and still fail here."
+    },
+    "precedent": [
+      {"list": "ADI published holdout", "source_genes": 398, "ortholog_fraction": 0.8593, "assayed_fraction": 0.6407, "verdict": "ineligible on gate 1"},
+      {"list": "six-gene DATP/PATS holdout", "source_genes": 6, "ortholog_fraction": 0.6667, "assayed_fraction": 0.6667, "verdict": "ineligible on gate 1"},
+      {"list": "HPCS author top 100", "source_genes": 100, "ortholog_fraction": 0.79, "assayed_fraction": 0.78, "verdict": "eligible"},
+      {"list": "HPCS without ADI or operational markers", "source_genes": 91, "ortholog_fraction": 0.8022, "assayed_fraction": 0.7912, "verdict": "eligible"},
+      {"list": "AT2 published holdout", "source_genes": 398, "ortholog_fraction": 0.8894, "assayed_fraction": 0.8643, "verdict": "eligible"},
+      {"list": "AT1 published holdout", "source_genes": 399, "ortholog_fraction": 0.8822, "assayed_fraction": 0.8421, "verdict": "eligible"}
+    ],
+    "precedent_sources": [
+      "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/module_specification.json",
+      "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_summary.csv"
+    ]
+  },
+  "ortholog_resource": {
+    "path": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u4_resources/strict_one_to_one_orthologs.csv",
+    "pairs": 16328,
+    "definition": "frozen HCOP with at least 3 evidence supports and strict one-to-one in both species",
+    "rule": "reuse this frozen table; do not build a second ortholog mapping for this contract"
+  },
+  "species_rule": {
+    "decision": "freeze each module from one source definition, then map per arm and report coverage per arm",
+    "rejected_alternative": "freezing on the cross-species ortholog intersection",
+    "rejection_reason": "No human fetal or developmental lung deposit exists locally, so the developmental arm is mouse and the lesion arm is human. Intersecting shrinks both arms rather than one.",
+    "local_check": "A scan of every local GEO family record found developmental terms only in the mouse multiome deposit GSE247130."
+  },
+  "unit_rules": {
+    "A5_mouse": {
+      "unit": "animal",
+      "current_coverage": "1 of 25 external-study animals passes both group floors",
+      "status": "hold: component definition permitted, confirmation not permitted"
+    },
+    "A11_human": {
+      "unit": "patient",
+      "current_coverage": "23 paired patients for the LUAD versus normal contrast",
+      "pairing": "the same patient appears on both sides of each contrast",
+      "caveat": "Histology contrasts reuse patients and are not independent confirmations of each other."
+    },
+    "prohibited": [
+      "Pooling biological units across species.",
+      "Presenting the human patient count as support for the mouse arm.",
+      "Counting wells, libraries, pools, regions or technical seeds as biological units."
+    ]
+  },
+  "multiplicity": {
+    "decision": "separate families per owning question",
+    "rejected_alternative": "one joint family spanning both arms",
+    "rejection_reason": "A joint family inflates the correction across two species and four contexts and could suppress both arms. Separate families keep each decision interpretable."
+  },
+  "prohibited_readings": [
+    "Ordering development, repair, fibrosis and neoplasia as one progression sequence. The register forbids an assumed repair-to-cancer trajectory.",
+    "Reading a similar module score across contexts as common ancestry or transformation.",
+    "Treating a frozen module as a cell-type or malignancy classifier.",
+    "Treating a shared component as evidence that no context-specific programme exists."
+  ],
+  "reuse": {
+    "rationale": "The overlap and freezing machinery already exists and should not be rewritten.",
+    "existing_assets": [
+      "Research Article/epithelial_state_specificity/freeze_modules.py",
+      "Research Article/epithelial_state_specificity/modules.json",
+      "Research Article/epithelial_state_specificity/results/module_overlap.csv"
+    ],
+    "overlap_rule": "The existing overlap table exists to stop overlapping signatures counting as independent corroboration. Apply it across all three modules and both control axes."
+  }
+}

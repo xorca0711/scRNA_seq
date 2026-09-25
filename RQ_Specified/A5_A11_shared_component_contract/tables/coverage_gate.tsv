@@ -1,0 +1,61 @@
+module	role	relevant_to	arm	dataset	n_genes	n_orthologs	ortholog_fraction	n_assayed	assayed_fraction	gate1
+shared_remodelling	contract	A5 primary	mouse	GSE247130	12			12	1.0	pass
+shared_remodelling	contract	A5 primary	mouse	GSE310539	12			12	1.0	pass
+shared_remodelling	contract	A5 primary	mouse	GSE262927	12			12	1.0	pass
+shared_remodelling	contract	A11 primary	human	GSE308103	12	10	0.8333	10	0.8333	pass
+development_specific	contract	A5 primary	mouse	GSE247130	94			92	0.9787	pass
+development_specific	contract	A5 primary	mouse	GSE310539	94			92	0.9787	pass
+development_specific	contract	A5 primary	mouse	GSE262927	94			90	0.9574	pass
+development_specific	contract		human	GSE308103	94	86	0.9149	84	0.8936	pass
+lesion_specific	contract		mouse	GSE247130	91			86	0.9451	pass
+lesion_specific	contract		mouse	GSE310539	91			86	0.9451	pass
+lesion_specific	contract		mouse	GSE262927	91			88	0.967	pass
+lesion_specific	contract	A11 primary	human	GSE308103	91	73	0.8022	72	0.7912	pass
+injury_residual	reference		mouse	GSE247130	386			378	0.9793	pass
+injury_residual	reference		mouse	GSE310539	386			378	0.9793	pass
+injury_residual	reference		mouse	GSE262927	386			376	0.9741	pass
+injury_residual	reference		human	GSE308103	386	332	0.8601	245	0.6347	assayed_source_gene_fraction_below_0.7
+shared_D_and_I	declared secondary	A5 declared secondary	mouse	GSE247130	5			5	1.0	pass
+shared_D_and_I	declared secondary	A5 declared secondary	mouse	GSE310539	5			5	1.0	pass
+shared_D_and_I	declared secondary	A5 declared secondary	mouse	GSE262927	5			5	1.0	pass
+shared_D_and_I	declared secondary		human	GSE308103	5	5	1.0	5	1.0	pass
+shared_I_and_L	declared secondary		mouse	GSE247130	7			7	1.0	pass
+shared_I_and_L	declared secondary		mouse	GSE310539	7			7	1.0	pass
+shared_I_and_L	declared secondary		mouse	GSE262927	7			7	1.0	pass
+shared_I_and_L	declared secondary	A11 declared secondary	human	GSE308103	7	5	0.7143	5	0.7143	pass
+shared_D_and_L	declared secondary		mouse	GSE247130	0			0		empty_module
+shared_D_and_L	declared secondary		mouse	GSE310539	0			0		empty_module
+shared_D_and_L	declared secondary		mouse	GSE262927	0			0		empty_module
+shared_D_and_L	declared secondary		human	GSE308103	0			0		empty_module
+source_D	source list		mouse	GSE247130	99			97	0.9798	pass
+source_D	source list		mouse	GSE310539	99			97	0.9798	pass
+source_D	source list		mouse	GSE262927	99			95	0.9596	pass
+source_D	source list		human	GSE308103	99	91	0.9192	89	0.899	pass
+source_I	source list		mouse	GSE247130	398			390	0.9799	pass
+source_I	source list		mouse	GSE310539	398			390	0.9799	pass
+source_I	source list		mouse	GSE262927	398			388	0.9749	pass
+source_I	source list		human	GSE308103	398	342	0.8593	255	0.6407	assayed_source_gene_fraction_below_0.7
+source_L	source list		mouse	GSE247130	98			93	0.949	pass
+source_L	source list		mouse	GSE310539	98			93	0.949	pass
+source_L	source list		mouse	GSE262927	98			95	0.9694	pass
+source_L	source list		human	GSE308103	98	78	0.7959	77	0.7857	pass
+AT1_published_400	identity axis		mouse	GSE247130	400			383	0.9575	pass
+AT1_published_400	identity axis		mouse	GSE310539	400			383	0.9575	pass
+AT1_published_400	identity axis		mouse	GSE262927	400			382	0.955	pass
+AT1_published_400	identity axis		human	GSE308103	400	353	0.8825	337	0.8425	pass
+AT2_published_400	identity axis		mouse	GSE247130	400			381	0.9525	pass
+AT2_published_400	identity axis		mouse	GSE310539	400			381	0.9525	pass
+AT2_published_400	identity axis		mouse	GSE262927	400			379	0.9475	pass
+AT2_published_400	identity axis		human	GSE308103	400	356	0.89	346	0.865	pass
+HALLMARK_P53_PATHWAY	control axis		mouse	GSE247130	200			196	0.98	pass
+HALLMARK_P53_PATHWAY	control axis		mouse	GSE310539	200			196	0.98	pass
+HALLMARK_P53_PATHWAY	control axis		mouse	GSE262927	200			197	0.985	pass
+HALLMARK_P53_PATHWAY	control axis		human	GSE308103	200	194	0.97	186	0.93	pass
+HALLMARK_HYPOXIA	control axis		mouse	GSE247130	199			197	0.9899	pass
+HALLMARK_HYPOXIA	control axis		mouse	GSE310539	199			197	0.9899	pass
+HALLMARK_HYPOXIA	control axis		mouse	GSE262927	199			196	0.9849	pass
+HALLMARK_HYPOXIA	control axis		human	GSE308103	199	188	0.9447	185	0.9296	pass
+HALLMARK_INFLAMMATORY_RESPONSE	control axis		mouse	GSE247130	197			196	0.9949	pass
+HALLMARK_INFLAMMATORY_RESPONSE	control axis		mouse	GSE310539	197			196	0.9949	pass
+HALLMARK_INFLAMMATORY_RESPONSE	control axis		mouse	GSE262927	197			195	0.9898	pass
+HALLMARK_INFLAMMATORY_RESPONSE	control axis		human	GSE308103	197	189	0.9594	188	0.9543	pass

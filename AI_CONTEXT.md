@@ -7,6 +7,31 @@ violated. Human-readable counterparts: [`README.md`](README.md) (overview),
 (AI-assisted development disclosure and scientific ownership),
 [`PROGRESS.md`](PROGRESS.md) (session state).
 
+## Parallel work stream: A5 and A11 shared component contract
+
+Folder `RQ_Specified/A5_A11_shared_component_contract/`, branch
+`Claude/shared-component-contract`. Stages 1 to 3 are complete and stage 4 is the
+owner's decision. Read `reports/STAGE2_3_REPORT.md` first.
+
+Rules that must not be violated here:
+
+- The partition rule was committed before the freeze and the freeze read those
+  exact bytes. Do not edit `partition_rule` in the specification and rerun; a new
+  rule needs a new pre-registration commit first.
+- Both scripts refuse to overwrite. Move superseded outputs aside and keep them, as
+  `tables/stage3_attempt1_refused/` shows.
+- Coverage uses the assayed fraction: strict one-to-one ortholog mapping, then
+  presence in the target gene index, divided by the module's own length. The
+  external viral-injury cohort's universe is its post-QC object, verified by hash
+  against the specificity run record, not the raw per-sample deposit.
+- Exact published symbols only. Losses such as Nars, now Nars1, stay lost.
+- A5 has no independent neonatal animals in any local dataset. Do not present
+  pooled multiome libraries as biological replicates for A5.
+- The shared module is two disjoint pairwise overlaps. Do not describe it as one
+  programme spanning development, injury and neoplasia.
+- The register cards for A5 and A11 were deliberately not edited; that is the
+  owner's call.
+
 ## Current task: A1 adaptive evidence closure
 
 Read A1 `reports/EVIDENCE_CLOSURE_REPORT.md`, `reports/ANALYSIS_REFERENCE_MAP.md`
