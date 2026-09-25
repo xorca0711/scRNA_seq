@@ -1,5 +1,21 @@
 # A1 study and assay map
 
+Latest closure audit: [report](reports/EVIDENCE_CLOSURE_REPORT.md) and
+[established analysis references](reports/ANALYSIS_REFERENCE_MAP.md). CD44's
+count/sample identities are recovered from original SRA filenames; paired
+contrasts and genotype interaction are complete. HPCS's biological labels and
+confidence-abstention definition are verified. These updates supersede the
+older identity/annotation caveats in the catalog below.
+
+New primary follow-up: [Auyeung 2025](https://doi.org/10.1172/JCI184522),
+[GSE243124](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243124), provides
+day-10 epithelial scRNA after saline, bleomycin, epithelial IRE1 knockout or
+KIRA8. Each group is pooled into one GEM library (2/2/3/3 contributing mice).
+Replicated treatment inference requires demultiplexing or additional libraries.
+The linked [GSE243129](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243129)
+is neonatal Tgfbr2/hyperoxia. SAGE's current text still promises future
+deposition; no new perturbation accession was recovered.
+
 Catalog audit: 25 September 2026. Accession links lead to primary repositories;
 paper links establish study context. GSM counts below are **library records,
 not independent animals or donors**. Public metadata and listed files do not

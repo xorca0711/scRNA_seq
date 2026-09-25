@@ -1,0 +1,4 @@
+contrast	mice	rank	residual_df	genes	FDR05	joint_FDR05	joint_up	joint_down
+WT_positive_minus_negative	8	10	6	15516	6615	6659	3687	2972
+Mutant_positive_minus_negative	8	10	6	15516	8739	8480	3791	4689
+Mutant_minus_WT_CD44_interaction	8	10	6	15516	5023	5321	1553	3768

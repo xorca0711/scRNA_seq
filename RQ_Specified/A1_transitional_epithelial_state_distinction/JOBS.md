@@ -1,6 +1,21 @@
 # A1 execution jobs
 
-## Latest authorized robustness batch
+## Latest adaptive closure batch
+
+Read [EVIDENCE_CLOSURE_REPORT.md](reports/EVIDENCE_CLOSURE_REPORT.md) and
+[ANALYSIS_REFERENCE_MAP.md](reports/ANALYSIS_REFERENCE_MAP.md). PRs #70/#71 are
+merged; this delivery is on `codex/a1-evidence-closure`.
+
+| Package | State | Result / next decision |
+|---|---|---|
+| Established-analysis check | Complete | Published precedents and evidence dependence linked before each new analysis |
+| CD44 identity recovery and paired response | Complete | SRA originals recover all 16 columns / eight mice; direct genotype interaction and eight pair omissions |
+| HPCS annotation recovery | Complete | All 28,402 labels match author mapping; all 1,282 traced-cell K12 changes are abstentions |
+| TIGIT and PATS bounded recovery | Complete with specific holds | TIGIT pool members remain absent; PATS raw catalog exists but track scaling remains unresolved; raw reprocessing pruned from this question |
+| Independent comparator / IRE1 / SAGE screen | Complete with eligibility decisions | Zhou state/scale mismatch, IRE1 one pooled library per condition, SAGE deposition still promised |
+| Collective interpretation | Complete | Shared RNA markers alone do not identify disease-specific or causal regulatory states; exact external requirements in closure ledger |
+
+## Previous authorized robustness batch
 
 All numerical processes finished. Read [ROBUSTNESS_REPORT.md](reports/ROBUSTNESS_REPORT.md).
 

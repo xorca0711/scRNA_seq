@@ -1,13 +1,16 @@
 # A1: Distinguishing transitional epithelial states
 
-Updated 25 September 2026. **Status: robustness batch verified and reported;
-specific design/normalization/identity holds remain.** Start with the
-[robustness report](reports/ROBUSTNESS_REPORT.md): alternative TSSs weaken the
-CDKN1A acetylation lead, HPCS source influence is quantified, and chase is
-aliased with source library in a fixed-library model. See also the
+Updated 25 September 2026. **Status: adaptive closure analyses completed.**
+Start with [the closure report](reports/EVIDENCE_CLOSURE_REPORT.md) and
+[the analysis-reference map](reports/ANALYSIS_REFERENCE_MAP.md). SRA original
+filenames unlock all eight CD44 mice: paired contrasts and a direct genotype
+interaction now run. HPCS biological labels are verified; stringent K12 changes
+are confidence abstentions. The closure ledger separates finished work,
+pruned analyses and precise external-input requirements. See also the
+[robustness report](reports/ROBUSTNESS_REPORT.md),
 [second-batch report](reports/SECOND_BATCH_REPORT.md), [figure gallery](figures/README.md)
 and [job status](JOBS.md). Original numerical runs and presentation evidence are
-preserved. PR #70 is merged; the new branch is `codex/a1-robustness-analysis`.
+preserved. PRs #70/#71 are merged; delivery branch: `codex/a1-evidence-closure`.
 
 The preceding second batch adds checked IRE1α sensitivities, 24 native-assembly histone tracks
 at 23 loci, a one-donor methylation-domain reference, and a newly recovered

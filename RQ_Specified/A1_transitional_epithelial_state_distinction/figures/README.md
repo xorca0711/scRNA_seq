@@ -1,6 +1,26 @@
 # A1 figure gallery
 
-## Latest: source influence and alternative transcript starts
+## Latest: CD44 context and HPCS confidence abstention
+
+![CD44 paired context comparison](evidence_closure/a1_cd44_context.png)
+
+Four paired mice per genotype. The heatmap shows model log2 fold changes;
+stars use BH across all genes and all three contrasts. The interaction is
+the mutant-minus-WT difference of CD44 effects, not a comparison of separate
+significance calls. Dots show individual paired logCPM differences. Shared
+marker directions occur in both genotypes and do not alone define a
+disease-specific state. [Report](../reports/EVIDENCE_CLOSURE_REPORT.md),
+[SVG](evidence_closure/a1_cd44_context.svg).
+
+![HPCS confidence abstention](evidence_closure/a1_hpcs_abstention.png)
+
+All 5,333 traced cells remain in denominators. Stringent K12 rejects 1,282 cells
+to `other` without changing any retained K12 code. State names come from the
+separate, verified `newleiden` mapping. Related classifications are not
+independent validation. [SVG](evidence_closure/a1_hpcs_abstention.svg),
+[collective analysis references](../reports/ANALYSIS_REFERENCE_MAP.md).
+
+## Previous: source influence and alternative transcript starts
 
 ![HPCS source and annotation robustness](robustness_2026-09-25/a1_hpcs_robustness.png)
 

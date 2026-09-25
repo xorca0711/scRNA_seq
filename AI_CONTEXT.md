@@ -7,7 +7,30 @@ violated. Human-readable counterparts: [`README.md`](README.md) (overview),
 (AI-assisted development disclosure and scientific ownership),
 [`PROGRESS.md`](PROGRESS.md) (session state).
 
-## Current task: A1 robustness batch verified and reported
+## Current task: A1 adaptive evidence closure
+
+Read A1 `reports/EVIDENCE_CLOSURE_REPORT.md`, `reports/ANALYSIS_REFERENCE_MAP.md`
+and `NEXT_SESSION.md`. PRs #70/#71 are merged. Current delivery branch:
+`codex/a1-evidence-closure`. The owner requested adaptive completion and
+established-analysis reference checks before each new launch.
+
+Scripts 26–31 recover sources, audit exact CD44 identities and HPCS annotations,
+fit eight-mouse paired CD44 contrasts/direct interaction and verify/render
+results. The older CD44 identity hold and HPCS definition-notebook size hold are
+superseded. Historical source/primary results remain immutable. New numerical
+contracts are in `config/closure_analysis_contract.json`; reference provenance
+and exact sources are linked by run records. Avoid completed-entrypoint reruns.
+
+Seven transported markers change with CD44 gate in both genotypes; direct
+interactions test effect-size differences. This is same-cohort reanalysis,
+not independent biological validation. HPCS stringent K12 adds abstention only.
+Remaining inputs: TIGIT disjoint pool membership, HPCS units/timing/current
+reporter, PATS scaling and appropriate replicated regulatory/fate linkage.
+New IRE1 GSE243124 has one pooled library per treatment; GSE243129 is Tgfbr2.
+See the ledger before launching new work. Notion remains concise English
+without critique/follow-up plans. No author messages or raw-read download.
+
+## Previous milestone: A1 robustness batch verified and reported
 
 Read A1 `reports/ROBUSTNESS_REPORT.md` and `NEXT_SESSION.md`. PR #70 is merged;
 the new branch is `codex/a1-robustness-analysis`. The owner authorized continuing

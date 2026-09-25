@@ -5,7 +5,27 @@ to know to continue. Update this before stopping.
 
 ## Current status, 25 September 2026
 
-**Current task: the next A1 robustness batch is complete and verified.** Read
+**Current task: A1 adaptive evidence closure.** Read the
+[closure report](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/EVIDENCE_CLOSURE_REPORT.md)
+and [analysis-reference map](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ANALYSIS_REFERENCE_MAP.md).
+PRs #70/#71 are merged; delivery branch: `codex/a1-evidence-closure`.
+The requested prelaunch reference checks are recorded. SRA originals recover
+CD44's 16 columns / eight paired mice, enabling genotype-specific contrasts and
+a direct interaction. HPCS labels reproduce the author map; all 1,282 stringent
+changes among traced cells are abstentions. Newly screened IRE1 single-cell data
+have one pooled library per condition. The ledger closes the chosen executable
+work and records external requirements and deliberately pruned extensions.
+Original numerical outputs and historical claim grades are preserved.
+All eight pair omissions are complete; Sftpc's interaction nearly vanishes
+without WT2 and is explicitly treated as fragile. Independent verification
+passes for 113 prior numerical artifacts and all 46,548 new adjusted tests.
+Both new figures were visually inspected; no background analysis is active.
+No author contact or raw sequencing download was made. The concise English
+Notion page remains unchanged.
+
+### Previous milestone: A1 robustness batch (merged PR #71)
+
+**The A1 robustness batch is complete and verified.** Read
 the [report](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ROBUSTNESS_REPORT.md).
 PR #70 was merged; delivery continues on `codex/a1-robustness-analysis`.
 The Notion page now contains only a concise English reasoning summary.

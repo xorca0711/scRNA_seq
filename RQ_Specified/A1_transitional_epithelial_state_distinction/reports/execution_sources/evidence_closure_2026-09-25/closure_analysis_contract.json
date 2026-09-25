@@ -1,0 +1,30 @@
+{
+  "status": "frozen_before_new_numerical_results",
+  "date": "2026-09-25",
+  "reference_check": "reports/ANALYSIS_REFERENCE_MAP.md; original author analyses inspected before launch",
+  "hpcs": {
+    "precedent": "Pinned HPCS_LUAD 01_Concatenate_cells cells 77, 102, 116, 142; 02_Analyze_control_DT_depletion cell 161",
+    "question": "Do deposited cell-type labels reproduce the explicit author map, and how much of classifier disagreement is confidence abstention?",
+    "input": "cache/followup_sources/hpcs_combined_obs.csv.gz",
+    "mapping": {"0":"AT2-like","1":"HPCS","2":"AT1-like","3":"Lung endoderm-like","4":"AT2-like","5":"Hybrid lung/gastric-like","6":"Lung endoderm-like","7":"Highly proliferative","8":"AT2-like","9":"HPCS","10":"EMT","11":"Ribosome"},
+    "scope": "Map validation over all deposited rows and the original 5333 traced cells; confidence abstention summaries by RNA state, source and group; retain all cells in denominators",
+    "stopping_rule": "If stringent labels retain the original code or other only, retire independent-classifier interpretation; do not force K12 codes into the newleiden map",
+    "inference": "Descriptive audit only; probabilities absent so no independent recalculation of the 0.8 confidence threshold"
+  },
+  "cd44": {
+    "precedent": "Rodriguez et al. 2025 Fig. 3e-k, GSE273123 paired CD44Hi/Lo from four mice per genotype; edgeR QL workflow Chen/Lun/Smyth 2016; existing local scripts 04 and 08",
+    "identity_rule": "Join submitted SRA Original FASTQ filenames to count identifiers by source token and CD44 gate. Only spelling normalization R26_1 -> R261 (likewise 2,7,8); no ordering or expression-based identity inference. Require a bijection and concordant GEO title/genotype/sort; positive and negative must share mouse label.",
+    "samples": "All 16 libraries; four paired WT mice and four paired SP-C mutant mice; no outlier exclusions",
+    "model": "~0 + mouse + positiveWT + positiveMutant; genotype main effect is absorbed by mouse",
+    "contrasts": ["WT_positive_minus_negative", "Mutant_positive_minus_negative", "Mutant_minus_WT_CD44_interaction"],
+    "filter": "edgeR filterByExpr by four genotype/sort groups; min.count=10, min.total.count=15; one common universe",
+    "normalization": "TMM on retained raw integer counts",
+    "fit": "edgeR robust estimateDisp + glmQLFit + glmQLFTest",
+    "multiple_testing": "BH within each all-retained-gene contrast, plus BH over all three contrasts jointly for cross-contrast conclusions; marker panels show these genome-wide q-values",
+    "focus_symbols": ["Itgb6", "Krt8", "Krt19", "Cldn4", "Ager", "Sftpc", "Cdkn1a", "Krt7"],
+    "focus_reason": "Transport the eight previously frozen IRE1 markers; source-informed targeted interpretation, not eight newly independent hypotheses",
+    "diagnostics": "Library totals; retained fraction; TMM factors; rank and residual degrees of freedom; PCA of top 2000 variable logCPM genes; every mouse's paired marker differences",
+    "sensitivity": "If a focus marker passes pooled three-contrast FDR 0.05, fit eight leave-one-mouse-pair-out models using the frozen retained universe; report effects/directions, never use sensitivity discoveries to replace the primary",
+    "limitations": "Sorted population association; CD44 is the selection gate, not an independent validator; neither histone mechanism nor lineage fate measured. Mutation/disease state is not experimentally separable here. Raw alignment/RNA-integrity QC unavailable. This is reanalysis of the published cohort, not independent replication."
+  }
+}

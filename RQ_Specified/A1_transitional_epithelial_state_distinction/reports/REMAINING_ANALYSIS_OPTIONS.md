@@ -1,5 +1,14 @@
 # A1: useful follow-up analysis and what it can resolve
 
+**Superseded status, 25 September 2026:** the owner's adaptive continuation has
+executed the useful newly eligible work. Use the
+[closure decision ledger](EVIDENCE_CLOSURE_REPORT.md#adaptive-decisions-for-every-remaining-branch)
+and [reference map](ANALYSIS_REFERENCE_MAP.md). CD44 identities are recovered and
+paired comparisons/interaction completed; the HPCS map and confidence-abstention
+interpretation are resolved. The table below is historical rationale, not a
+remaining execution queue. Exact TIGIT/PATS/HPCS biological holds and
+independent-data requirements are in the current ledger.
+
 25 September 2026. **Updated after execution:** the first two packages below
 have now run under the [robustness scope](../config/robustness_batch.json).
 Read [ROBUSTNESS_REPORT.md](ROBUSTNESS_REPORT.md) and [JOBS.md](../JOBS.md).

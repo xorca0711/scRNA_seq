@@ -1,5 +1,11 @@
 # Prospective contracts
 
+Latest: `closure_analysis_contract.json` freezes HPCS mapping/abstention checks
+and the recovered CD44 paired/interaction analysis before new numerical results.
+`evidence_closure_scope.md` bounds acquisition and adaptive stopping decisions.
+The older `samples.json`/`contrasts.json` below remain historical candidate
+contracts. CD44 uses its new verified manifest and contract; TIGIT stays held.
+
 `samples.json` preserves a **candidate** title-derived pairing for the first
 processed-count pilots. `candidate_pair_id` must never substitute for a verified
 `biological_unit_id`. Leave unknown pool membership and source identity null.

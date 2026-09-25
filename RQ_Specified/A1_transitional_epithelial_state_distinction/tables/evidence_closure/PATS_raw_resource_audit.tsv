@@ -1,0 +1,21 @@
+experiment	title	runs	spots	original_bytes	original_files
+SRX7290387	GSM4210296: H3K4me3 ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 1; Mus musculus; ChIP-Seq	SRR10611115	12605853	8760263706	H3K4me3_CTGFpos_Rep1_R1;H3K4me3_CTGFpos_Rep1_R2
+SRX7290388	GSM4210297: H3K4me3 ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 2; Mus musculus; ChIP-Seq	SRR10611116	17776336	12353406306	H3K4me3_CTGFpos_Rep2_R1;H3K4me3_CTGFpos_Rep2_R2
+SRX7290389	GSM4210298: H3K27ac ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 1; Mus musculus; ChIP-Seq	SRR10611117	5617500	793690727	H3K27ac_CTGFpos_Rep1_R1.fastq.gz;H3K27ac_CTGFpos_Rep1_R2.fastq.gz
+SRX7290390	GSM4210299: H3K27ac ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 2; Mus musculus; ChIP-Seq	SRR10611118	8086519	1141922096	H3K27ac_CTGFpos_Rep2_R1.fastq.gz;H3K27ac_CTGFpos_Rep2_R2.fastq.gz
+SRX7290391	GSM4210300: H3K36me3 ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 1; Mus musculus; ChIP-Seq	SRR10611119	13466510	1920907979	H3K36me3_CTGFpos_Rep1_R1.fastq.gz;H3K36me3_CTGFpos_Rep1_R2.fastq.gz
+SRX7290392	GSM4210301: H3K36me3 ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 2; Mus musculus; ChIP-Seq	SRR10611120	19167907	2737877617	H3K36me3_CTGFpos_Rep2_R1.fastq.gz;H3K36me3_CTGFpos_Rep2_R2.fastq.gz
+SRX7290393	GSM4210302: H3 ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 1; Mus musculus; ChIP-Seq	SRR10611121	9940501	1403795132	H3_CTGFpos_Rep1_R1.fastq.gz;H3_CTGFpos_Rep1_R2.fastq.gz
+SRX7290394	GSM4210303: H3 ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 2; Mus musculus; ChIP-Seq	SRR10611122	14165235	2000025070	H3_CTGFpos_Rep2_R1.fastq.gz;H3_CTGFpos_Rep2_R2.fastq.gz
+SRX7290395	GSM4210304: H3K4me3 RFP-neg AEC2s in homeostasis Replication 1; Mus musculus; ChIP-Seq	SRR10611123	11409008	2035037164	H3K4me3_AEC2_Rep1_R1.fastq.gz;H3K4me3_AEC2_Rep1_R2.fastq.gz
+SRX7290396	GSM4210305: H3K4me3 RFP-neg AEC2s in homeostasis Replication 2; Mus musculus; ChIP-Seq	SRR10611124	18026531	3230716306	H3K4me3_AEC2_Rep2_R1.fastq.gz;H3K4me3_AEC2_Rep2_R2.fastq.gz
+SRX7290397	GSM4210306: H3K27ac RFP-neg AEC2s in homeostasis Replication 1; Mus musculus; ChIP-Seq	SRR10611125	7528522	1522375379	H3K27ac_AEC2_Rep1_R1.fastq.gz;H3K27ac_AEC2_Rep1_R2.fastq.gz
+SRX7290398	GSM4210307: H3K27ac RFP-neg AEC2s in homeostasis Replication 2; Mus musculus; ChIP-Seq	SRR10611126	11984115	2439019005	H3K27ac_AEC2_Rep2_R1.fastq.gz;H3K27ac_AEC2_Rep2_R2.fastq.gz
+SRX7290399	GSM4210308: H3K36me3 RFP-neg AEC2s in homeostasis Replication 1; Mus musculus; ChIP-Seq	SRR10611127	7946765	1212539553	H3K36me3_AEC2_Rep1_R1.fastq.gz;H3K36me3_AEC2_Rep1_R2.fastq.gz
+SRX7290400	GSM4210309: H3K36me3 RFP-neg AEC2s in homeostasis Replication 2; Mus musculus; ChIP-Seq	SRR10611128	12454338	1915978919	H3K36me3_AEC2_Rep2_R1.fastq.gz;H3K36me3_AEC2_Rep2_R2.fastq.gz
+SRX7290401	GSM4210310: H3 RFP-neg AEC2s in homeostasis Replication 1; Mus musculus; ChIP-Seq	SRR10611129	9511147	1828924316	H3_AEC2_Rep1_R1.fastq.gz;H3_AEC2_Rep1_R2.fastq.gz
+SRX7290402	GSM4210311: H3 RFP-neg AEC2s in homeostasis Replication 2; Mus musculus; ChIP-Seq	SRR10611130	13992333	2714084019	H3_AEC2_Rep2_R1.fastq.gz;H3_AEC2_Rep2_R2.fastq.gz
+SRX8048639	GSM4452306: p53 ChIP-seq CTGF-pos tdTomato-pos cells after Bleomycin treatment Replication 1; Mus musculus; ChIP-Seq	SRR11472386	1560334	235903984	p53_CTGFpos_tdTomatopos_Rep1_R1.fastq.gz;p53_CTGFpos_tdTomatopos_Rep1_R2.fastq.gz
+SRX8048640	GSM4452307: p53 ChIP-seq CTGF-pos tdTomato-pos cells after Bleomycin treatment Replication 2; Mus musculus; ChIP-Seq	SRR11472387	7582550	1142615925	p53_CTGFpos_tdTomatopos_Rep2_R1.fastq.gz;p53_CTGFpos_tdTomatopos_Rep2_R2.fastq.gz
+SRX8051539	GSM4452682: Input CTGF-pos tdTomato-pos cells after Bleomycin treatment Replication 1; Mus musculus; ChIP-Seq	SRR11475308	9729694	1370083459	Input_CTGFpos_tdTomatopos_Rep1_R1.fastq.gz;Input_CTGFpos_tdTomatopos_Rep1_R2.fastq.gz
+SRX8051540	GSM4452683: Input CTGF-pos tdTomato-pos cells after Bleomycin treatment Replication 2; Mus musculus; ChIP-Seq	SRR11475309	28435725	4099160547	Input_CTGFpos_tdTomatopos_Rep2_R1.fastq.gz;Input_CTGFpos_tdTomatopos_Rep2_R2.fastq.gz

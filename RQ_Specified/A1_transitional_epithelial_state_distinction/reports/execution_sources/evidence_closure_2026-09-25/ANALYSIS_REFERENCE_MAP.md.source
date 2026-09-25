@@ -1,0 +1,23 @@
+# A1 analysis references and logical progression
+
+This living map separates a method precedent, reuse of an existing dataset, and
+independent evidence. References are checked before each new numerical launch.
+The first two batches predate this request; their precedents are recorded
+retrospectively. New closure analyses were reference-checked before fitting.
+
+| Logical question | Established analysis / primary reference | A1 implementation and decision |
+|---|---|---|
+| Can similar RNA labels imply a shared biological state? | [Strunz 2020](https://www.nature.com/articles/s41467-020-17358-3), [PATS 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7461628/), [HPCS tracing 2026](https://www.nature.com/articles/s41586-025-09985-x) define populations in different contexts | Keep study-defined labels; neither an integrated embedding nor a common marker establishes equivalence. |
+| Is a direct regulatory difference measured? | [Tsutsui 2026](https://www.nature.com/articles/s41467-026-68909-z), GSE289683/GSE291333; deposited CPM CUT&Tag with H3 controls | Completed 23-locus native-coordinate comparison, H3/window/transcript-start sensitivity. CDKN1A acetylation is promoter-sensitive; a gene-wide activation claim does not survive. Same-cohort reanalysis, one iPSC line. |
+| Is the difference specific to an injury transition? | [Zhou 2021](https://doi.org/10.1186/s12864-021-08152-6), GSE150527, normal AT2-to-AT1 culture and donor-2 enhancer validation; PATS MintChIP | One-donor methylation domains supply context. D4 is mixed cultured AT1-like differentiation, not purified DATP. Histone amplitude requires known track scaling. These sources do not validate a universal transitional class. |
+| What descendants are actually observed? | PATS extended-data source counts and HPCS tracing notebooks | Completed measured PATS endpoint reconstruction and 22-source HPCS composition. Source omissions expose sampling sensitivity; no conversion rate or cell-as-replicate test. |
+| Are HPCS label comparisons independent? | [Pinned author notebooks](https://github.com/dbetel/HPCS_LUAD/tree/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/tracing_depletion_analysis): 01 cells 77/102/116/142; 02 cell 161 | **Prelaunch checked:** cell type maps from `newleiden`; stringent K12 uses a 0.8 confidence threshold on the same classifier. Audit explicit mapping and abstention; do not interpret three label columns as three independent validations. Driver-excluded labels in notebook 02 are absent from recovered observations. |
+| Does intervention change epithelial RNA? | [Auyeung 2022](https://pubmed.ncbi.nlm.nih.gov/35170357/), GSE190821; [edgeR QL workflow](https://doi.org/10.12688/f1000research.8987.2) | Completed five-mice-per-arm, batch/sex-adjusted analysis and sensitivity. Four primary discoveries; frozen marker effects mostly directionally stable but not significant. Bulk response does not identify within-state effects. |
+| Can a newer cell-resolved cohort separate abundance and response? | [Auyeung 2025](https://doi.org/10.1172/JCI184522), GSE243124; [replicate-aware DE benchmark](https://doi.org/10.1038/s41467-021-25960-2) | **Prelaunch checked:** one pooled GEM library per condition, with 2/2/3/3 contributing mice; no recovered donor demultiplexing. Cell-level testing cannot create independent treatment replication. GSE243129 is neonatal Tgfbr2/hyperoxia, not another KIRA8 cohort. No replicate-level response/deconvolution claim. |
+| Is CD44-associated RNA different in normal and mutant lungs? | [Rodriguez 2025 Fig. 3e-k](https://doi.org/10.1038/s41467-025-63735-1), GSE273123; edgeR QL workflow above | **Prelaunch checked:** SRA original filenames unlock all 16 matrix columns, eight mice. Fit paired WT and mutant differences and their direct interaction in one model. A difference in significance is not an interaction. This extends the published analysis statistically; it is not an independent cohort. |
+| Can new perturbation data connect regulation to outcome? | [SAGE preprint](https://pmc.ncbi.nlm.nih.gov/articles/PMC13015491/) | **Current text checked:** data/code availability still promises future deposition. Use as a literature hypothesis, not as an executed or independently verified analysis. |
+
+Each new result is connected to its next decision in
+[EVIDENCE_CLOSURE_REPORT.md](EVIDENCE_CLOSURE_REPORT.md). Downloaded author code
+is read as evidence, never executed. Existing claim grades remain governed by
+their original contracts, not by the number of mutually dependent panels.

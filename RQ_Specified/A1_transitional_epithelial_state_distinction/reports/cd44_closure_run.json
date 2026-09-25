@@ -1,0 +1,47 @@
+{
+  "status": "completed",
+  "started_utc": "2026-09-25T09:41:46.027244+00:00",
+  "finished_utc": "2026-09-25T09:53:59.461651+00:00",
+  "contract_sha256": "31bbb785846f62667acbed67f5fefc244f88800a423d6c2b30af21b7862d9bec",
+  "reference_map_sha256": "bfff50ad4903f92ef4cf1c1c28e647ec32358528500f622b91a80c9e31c59d71",
+  "input_sha256": {
+    "cache\\inputs\\GSE273123\\GSE273123_Count_Matrix.txt.gz": "326b4c263de65a07239accf8294b2930aaa68ca3fe81339a15e660dad2c29a90",
+    "tables\\evidence_closure\\cd44_sample_manifest.tsv": "a206d3a847c5a39c05ce788a38cd7f51b70d809b235144ccebac7f239e4ebd7e"
+  },
+  "gene_lookup": [
+    {
+      "path": "cache/evidence_closure/gene_lookup/search.json",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmode=json&retmax=100&term=%28Itgb6%5Bsym%5D%20OR%20Krt8%5Bsym%5D%20OR%20Krt19%5Bsym%5D%20OR%20Cldn4%5Bsym%5D%20OR%20Ager%5Bsym%5D%20OR%20Sftpc%5Bsym%5D%20OR%20Cdkn1a%5Bsym%5D%20OR%20Krt7%5Bsym%5D%29%20AND%2010090%5Btaxid%5D",
+      "sha256": "fd24ae33d641f555d4c1ad3f831f12ada6df65549c603b605d277e38238fb29e"
+    },
+    {
+      "path": "cache/evidence_closure/gene_lookup/summary.json",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&retmode=json&id=12575,11596,20389,16691,16669,12740,16420,110310,107656,110961,16674",
+      "sha256": "ab29f5579ab0cb3fab363e7df66dd7966c619a9a1ebf527e61f05dc92489cd56"
+    }
+  ],
+  "code_sha256": {
+    "29_run_cd44_analysis.py": "df358a5fe4320ce9621bdee9b859435bfcc5d157c6f611ee26335c03b362d111",
+    "30_fit_cd44.R": "cc28c2df5791b02ebd985e271c698b58f54e735fd169d977e5ef8d8b7461b802"
+  },
+  "output_sha256": {
+    "tables/cd44_closure/all_gene_effects.tsv": "12f4bece1a3f817b33bdbb4108fd96f014b1b6d1b5551ccd1224bc8aa5201181",
+    "tables/cd44_closure/contrasts.tsv": "7f95cdf5e7a939ea51455768075acb3b704566dd8ef5355d3fa2578b3cebc91a",
+    "tables/cd44_closure/counts_input.tsv.gz": "7796e7cbcd8dbea7fd5bb5c668526cc1ed6984fd741851a5ea9c459db63b2e83",
+    "tables/cd44_closure/design.tsv": "2b06592ed1a63de4128c4596e6170a8accbabc2b1c998c0410aa6873dc6d6330",
+    "tables/cd44_closure/feature_filter.tsv": "1f7d43eec8fa5f605f47f58f074b5a602c713a3b5b099e76908b1ca0d204b078",
+    "tables/cd44_closure/fit_summary.tsv": "522a6ca80cab45a0e3bce3598bdd21310fc15b528df396f901740a8452788cfe",
+    "tables/cd44_closure/focus_effects.tsv": "0f98cf12aa041dd0ac88e872f00b6b3b6717c06abc70ada196c07227297f2b01",
+    "tables/cd44_closure/focus_leave_one_pair_out.tsv": "8a49f9613fad7c927b31066f3f028c02b6972cf841742185f5f24295b8e94995",
+    "tables/cd44_closure/input_hashes.tsv": "4e147c239f9cdffb2ada6b01e9a302fc31d89890bf9d0fd1502b75ffa94b69e9",
+    "tables/cd44_closure/marker_logCPM.tsv": "cc264249b23b7270f74fa896a2c0593ea57e39875de5fcca5d922eaa2e263b0b",
+    "tables/cd44_closure/marker_mapping.tsv": "06f89df917953c934bb156c81a942b60f14f5d663fef159a70007fa2c4a935d0",
+    "tables/cd44_closure/marker_paired_differences.tsv": "f01b26915e2dca378c3282ccb859c158ec16f48f5718753aafd3dd8abcd44f24",
+    "tables/cd44_closure/normalization.tsv": "403f2839ef79cb9bc4a1d404835aacdec450fa910e341eb798bdfab20e383b5c",
+    "tables/cd44_closure/PCA_features.tsv": "e28ab4e2f33dd90c0366b8ba8f9a55dfcb518a899a826ff7e198ff25a6c5220b",
+    "tables/cd44_closure/PCA_variance.tsv": "a6176c02231df0f38e4ba0c7e3405568a8563f405943a942701db642f0ba5690",
+    "tables/cd44_closure/R_session.txt": "c4c172f9af116ea6bb29feb18fa6744323912142931d39402cb8c8a6cc53b409",
+    "tables/cd44_closure/sample_manifest.tsv": "a206d3a847c5a39c05ce788a38cd7f51b70d809b235144ccebac7f239e4ebd7e",
+    "tables/cd44_closure/sample_PCA.tsv": "913231d126fa47207adca9d9d006b75fe84f1dc6e60fb7d7ce10a63ad1d08315"
+  }
+}
