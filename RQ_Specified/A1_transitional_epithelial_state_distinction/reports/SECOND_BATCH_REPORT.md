@@ -1,5 +1,10 @@
 # A1 second batch: regulatory profiles and perturbation stability
 
+**Subsequent evidence:** the [robustness batch](ROBUSTNESS_REPORT.md) preserves
+these numerical results but narrows the CDKN1A acetylation lead to a particular
+promoter definition and identifies HPCS source influence and chase/library
+aliasing. Read that report for the current interpretation.
+
 25 September 2026. Continuation authorized by the owner's request to resume A1.
 This is a source-informed follow-up to the [first batch](FIRST_BATCH_REPORT.md),
 not unseen-data confirmation. The primary IRE1α analysis, first render, executed

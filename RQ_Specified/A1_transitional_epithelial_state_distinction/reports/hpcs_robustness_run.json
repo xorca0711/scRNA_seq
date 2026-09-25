@@ -1,0 +1,30 @@
+{
+  "status": "completed_descriptive_robustness",
+  "utc": "2026-09-25T09:02:20.431614+00:00",
+  "code_sha256": "c00528cff5af4bf9067c38fee95fa16a1d9632febd51961d5ce796d374f3a0e0",
+  "helper_sha256": "242fa1fd9fad96fb1b821e29c22d1a6b0c7b1774fe02ba9b0e1cdbe08b7f853e",
+  "input_sha256": {
+    "config/robustness_batch.json": "33d4717c9f95cf550a7902634526bdc0d0e750c6166e38805235984c4fa5616a",
+    "config/hpcs_descendant_reconstruction.json": "a1d216717ccbe8d052432eebffd0da9444974a524541f71935505e8272cc37d9",
+    "config/robustness_annotation_scope.md": "a4b7fa8d690b2fbe3a969126c08ed2729bb7de53449c8db2eb956ff93c66fa75",
+    "cache/followup_sources/hpcs_combined_obs.csv.gz": "5372f9f11796d7be7ee0bdab5296d97e7c3c99256a29d8106d8aef7b01e62387",
+    "tables/hpcs_source_composition/source_manifest.tsv": "1322439c82ac75a4624c41889585d298e0d9db476f13b383adc218ca3bca7e13",
+    "reports/hpcs_source_composition_run.json": "8af7557e1343298147ddc661c40fc0a0b8d8ba8a8fd3e769597532698d1b960c",
+    "reports/robustness_source_inventory.json": "93859b33e8e2b44ff692e8bfaf2db98e24a1cec9ab4a687136495587d34c778f"
+  },
+  "original_output_hashes_verified": 5,
+  "annotation_mapping": "biological recoding held; label-invariant partition audit completed",
+  "selected_cells": 5333,
+  "source_aliases": 22,
+  "output_sha256": {
+    "tables/robustness_2026-09-25/hpcs/annotation_contingencies.tsv": "7f51c447a42f5057f22c45908a3fdfb92859a843579f79b25b1afc63720233f2",
+    "tables/robustness_2026-09-25/hpcs/design_rank_audit.tsv": "a09ed05017f0f0f6a44bd3e16e29b096177bc2e6efebe630dc6ee1cf6fb30a38",
+    "tables/robustness_2026-09-25/hpcs/group_influence_summary.tsv": "fef59ef5274236536638538e60d070e547db1bbe4ca2749d24584bd06f7e29c0",
+    "tables/robustness_2026-09-25/hpcs/leave_one_source_out.tsv": "6cea2edadff3e0b631dce1493fa370db5fd0d36b49e0b48e1f6b91e6bb3f35bb",
+    "tables/robustness_2026-09-25/hpcs/library_group_support.tsv": "2ae3680a3b453bdf385adb4e1e9dfcfd5429aacc612c70209a2e8a403ebf0fde",
+    "tables/robustness_2026-09-25/hpcs/partition_agreement.tsv": "0d5d16b212da95b808f9d6b955b44893670da61692c500a59b951a069ebf42a4",
+    "tables/robustness_2026-09-25/hpcs/source_annotation_counts.tsv": "cf0397d0f74a1ace7003f710f71334fe6f05f9032f722b27858b08715d7dab8c",
+    "figures/robustness_2026-09-25/a1_hpcs_robustness.png": "5817539edbf8d870d917314f9b5a4d7e756b5398b1fc7d53ef5d0150db55e8fe",
+    "figures/robustness_2026-09-25/a1_hpcs_robustness.svg": "3a365495283c183e83626ddefbe09c5c12f9dcc3b6ae2ec6ed8965925e93fb46"
+  }
+}

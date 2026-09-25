@@ -1,5 +1,30 @@
 # A1 figure gallery
 
+## Latest: source influence and alternative transcript starts
+
+![HPCS source and annotation robustness](robustness_2026-09-25/a1_hpcs_robustness.png)
+
+Dots retain full-group equal-source and pooled-cell HPCS fractions; lines show
+the range after omitting each source, not confidence intervals. The heatmap
+compares deposited partitions using ARI, not biological accuracy. The 22 source
+aliases are not verified independent mice. Chase cannot be separated from
+unrestricted source-library effects in this design.
+[Report and full tables](../reports/ROBUSTNESS_REPORT.md),
+[SVG](robustness_2026-09-25/a1_hpcs_robustness.svg).
+
+![Alternative TSS sensitivity](robustness_2026-09-25/a1_histone_tss_robustness.png)
+
+All 23 loci, iATCs versus iAT2, ±1-kb promoters. Dots mark the original
+gene-boundary TSS and lines span eligible annotated starts. Eleven genes have
+alternative starts; a single dot at the other genes is not evidence of
+alternative-promoter robustness. CDKN1A H3K27ac/H3 reverses in CUT1 at the second
+start, whereas H3K27me3/H3 stays lower at both starts in both preparations.
+One cell line; no population tests or dominant-isoform inference.
+[All contrasts and both widths](../tables/robustness_2026-09-25/histone/contrasts.tsv),
+[SVG](robustness_2026-09-25/a1_histone_tss_robustness.svg).
+
+## Preserved earlier batches
+
 The verified second batch adds five figure groups to the four first-batch
 groups. Read the [second-batch report](../reports/SECOND_BATCH_REPORT.md) and
 [first-batch report](../reports/FIRST_BATCH_REPORT.md) for models, source hashes
@@ -39,7 +64,9 @@ H3K27ac/H3 and lower H3K27me3/H3 versus iAT2 in both preparations, but other
 loci disagree or change direction under H3 normalization. The
 [complete ±1/±5-kb sensitivity table](../tables/second_batch_verification/histone_window_and_H3_sensitivity.tsv)
 retains counterexamples and held ratios. These are descriptive preparations,
-not population tests. [SVG](second_batch_verified/a1_histone_promoters.svg).
+not population tests. This statement applies to the original gene-boundary
+TSS; the newer alternate-TSS result above narrows the acetylation interpretation.
+[SVG](second_batch_verified/a1_histone_promoters.svg).
 
 ## Normal-differentiation methylation-domain reference
 
