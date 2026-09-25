@@ -21,8 +21,9 @@ deposited files. Technical replicates cannot masquerade as additional animals.
 Source-specific adapters, peak annotation/QC, normalization diagnostics,
 leave-one-pair-out sensitivity and cross-contrast FDR reporting follow payload
 inspection. The pilot is not the complete A1 workflow. Histone, trajectory,
-spatial-protein and proteomic stages currently have specifications, not executed
-pipelines or fabricated starter results.
+spatial-protein and proteomic stages retain separate eligibility gates. Direct
+histone/domain quantification and a descriptive descendant reconstruction have
+now run in the bounded second batch described below.
 
 From the repository root:
 
@@ -34,6 +35,27 @@ python RQ_Specified/A1_transitional_epithelial_state_distinction/scripts/03_run_
 The current configuration deliberately reports identity and payload holds.
 After review, freeze the source-specific QC and normalization decisions before
 setting a contrast to `frozen`; do not edit these fields to bypass missing data.
+
+## Verified second batch
+
+| Script | Purpose |
+|---|---|
+| `11_run_ire1_stability.py`, `12_fit_ire1_stability.R` | Completed omission/within-batch fits; reuse outputs, do not refit |
+| `13_fetch_direct_mark_inputs.py`, `14_fetch_followup_sources.py` | Bounded original source acquisition and inventories |
+| `15_quantify_direct_marks.py` | Completed exact native-assembly signal/domain quantification; refuses overwrite |
+| `16_summarize_second_batch.py` | Cached-data summary/render with required fresh `--run-id`; refuses existing outputs |
+| `17_verify_second_batch.py` | Input/output hashes, fit/BH/universe checks, base-resolution controls and independent domain unions |
+| `18_fetch_identity_evidence.py` | Bounded public source/ENA/notebook retrieval; downloaded code is never executed |
+| `19_recover_hpcs_metadata.py` | Remote HDF5 `/obs` only; 64-MiB/15-minute hard ceilings and exact range validation |
+| `20_audit_delivery_evidence.py` | Fresh identity tables, native-size and preserved/corrected presentation checks |
+| `21_reconstruct_hpcs_source_composition.py` | Frozen descriptive source counts and figure, author-output checks, no biological inference |
+
+Scientific entrypoints use `analysis/scripts/run_with_environment.py` with
+`.venv-x64/Lib/site-packages` and the working Python runtime in the handoff.
+New figure example: `16_summarize_second_batch.py --run-id another_presentation`.
+The existing `second_batch_verified` run must not be reused as an output name.
+Reports, source hashes and limitations are in
+[SECOND_BATCH_REPORT.md](../reports/SECOND_BATCH_REPORT.md).
 
 Software checks: repository unit tests exercise missing identities, overlapping
 pools, broken pairs, altered counts and column alignment. The optional

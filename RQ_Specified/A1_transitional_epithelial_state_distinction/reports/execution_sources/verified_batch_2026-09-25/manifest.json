@@ -1,0 +1,42 @@
+{
+  "utc": "2026-09-25T08:25:26.958175+00:00",
+  "scope": "Exact sources for verification/corrected presentation and HPCS recovery/reconstruction. Earlier acquisition inventories retain their own historical code hashes. Archived code is evidence only.",
+  "files": [
+    {
+      "source": "scripts/16_summarize_second_batch.py",
+      "archive": "reports/execution_sources/verified_batch_2026-09-25/16_summarize_second_batch.py",
+      "sha256": "1aaff5f6787746bd5c226d2560a2db980c7cd9fd24635d0bc4d39e09be8b04c5",
+      "matching_run_record": "reports/second_batch_verified_run.json"
+    },
+    {
+      "source": "scripts/17_verify_second_batch.py",
+      "archive": "reports/execution_sources/verified_batch_2026-09-25/17_verify_second_batch.py",
+      "sha256": "7774295c47df5731aa4a079e084f7032e54107f038fc0b0ca623c8d7c70ce7de",
+      "matching_run_record": "reports/second_batch_verification.json"
+    },
+    {
+      "source": "scripts/18_fetch_identity_evidence.py",
+      "archive": "reports/execution_sources/verified_batch_2026-09-25/18_fetch_identity_evidence.py",
+      "sha256": "8e4c321a00aec52590d7b9f2c2cb0c640fad18d57512475cdf29a2040cf28419",
+      "matching_run_record": "reports/hpcs_sample_notebook_inventory.json"
+    },
+    {
+      "source": "scripts/19_recover_hpcs_metadata.py",
+      "archive": "reports/execution_sources/verified_batch_2026-09-25/19_recover_hpcs_metadata.py",
+      "sha256": "559d980ceea4dac000e46a3b6145223ef8ad734680fc326f2fab74922b0747aa",
+      "matching_run_record": "reports/hpcs_metadata_recovery.json"
+    },
+    {
+      "source": "scripts/20_audit_delivery_evidence.py",
+      "archive": "reports/execution_sources/verified_batch_2026-09-25/20_audit_delivery_evidence.py",
+      "sha256": "072ff1a8145942f1b69cd3c716051c850ab7975075e3373c684e6768a75bf028",
+      "matching_run_record": "reports/delivery_evidence_audit.json"
+    },
+    {
+      "source": "scripts/21_reconstruct_hpcs_source_composition.py",
+      "archive": "reports/execution_sources/verified_batch_2026-09-25/21_reconstruct_hpcs_source_composition.py",
+      "sha256": "063dd9512afec9596764138c44cdad85264566186a7119136bf947acf8154321",
+      "matching_run_record": "reports/hpcs_source_composition_run.json"
+    }
+  ]
+}

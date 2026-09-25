@@ -1,0 +1,20 @@
+{
+  "frozen_on": "2026-09-25 before signal extraction; source-informed follow-up",
+  "gene_groups": {
+    "AT2": ["SFTPC", "ABCA3", "NKX2-1", "ETV5", "SFTPB"],
+    "AT1": ["AGER", "PDPN", "HOPX", "CAV1", "AQP5"],
+    "transition_stress": ["KRT8", "CLDN4", "KRT19", "CDKN1A", "SFN", "ITGB6", "KRT17", "TP63", "COL1A1"],
+    "regulators": ["ATF3", "HNF1B", "TP53", "CEBPA"]
+  },
+  "locus_panels": ["SFTPC", "AGER", "CDKN1A"],
+  "promoter_half_width_bp": 1000,
+  "broad_promoter_half_width_bp": 5000,
+  "track_half_width_bp": 5000,
+  "track_bin_bp": 100,
+  "annotation_rule": "CHM13 RefSeq Liftoff v5.3: exact gene symbol, unique gene feature on primary chromosomes. Duplicate/missing loci held. GFF 1-based inclusive converted to 0-based half-open. Gene boundary TSS, not inferred dominant isoform. hg19 refGene: same-symbol transcripts on one primary chromosome/strand use outer gene boundary TSS; discordant loci held.",
+  "signal_rule": "Exact overlap-length-weighted BigWig records. Report integral/window length (uncovered bases zero-filled) and covered fraction separately. Missing chromosome is an error. A mark/H3 ratio is computed only when both tracks cover >=80% of window and both means are strictly positive; no pseudocount. No cross-mark absolute comparison, no global modification claim, no p-values. CPM profiles, not spike-in scaled occupancy.",
+  "contrasts": ["iATCs_minus_iAT2", "iATCs_minus_iAT1"],
+  "contrast_rule": "Log2 mark/H3 ratio difference for each matched CUT label; report both labels and direction concordance, not population inference. H3 comes from matched state/CUT in GSE289683; mark coverage and H3 effects remain visible.",
+  "methylation_rule": "Single-donor D0/D4/D6 normal differentiation reference. Intersect hg19 promoter windows with author UMR/LMR and PMD domain calls. Report fraction of window covered by each class. No CpG methylation estimate, DMR p-value, or transition-state assignment inferred from domain overlap.",
+  "pats_rule": "Quantitative between-condition comparison requires verified deposited-track normalization and compatible controls. If unresolved, hold the comparison rather than comparing raw peak abundance. File acquisition cap 256 MiB remains in force."
+}

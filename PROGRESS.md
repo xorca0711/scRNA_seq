@@ -5,6 +5,34 @@ to know to continue. Update this before stopping.
 
 ## Current status, 25 September 2026
 
+**Current task: A1 second batch verified and reported after the owner's resume
+request.** Read the [report](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/SECOND_BATCH_REPORT.md),
+[checked gallery](RQ_Specified/A1_transitional_epithelial_state_distinction/figures/README.md)
+and [eight-job tracker](RQ_Specified/A1_transitional_epithelial_state_distinction/JOBS.md).
+Delivery branch: `codex/a1-regulatory-followup`; the owner requested a PR for the
+accumulated results. No background process remains active. Original primary
+results and the first render are preserved.
+
+J1–J3: eleven IRE1α sensitivity fits, gene universe/BH/pathway joins, 24 native
+histone headers, all 1,104 signals/controls, 72 base-resolution windows and 414
+domain intersections verified. The corrected legend is rendered into a fresh
+directory. H3/window sensitivity and counterexamples are reported alongside
+the CDKN1A lead. PATS timing is documented. Fresh GEO/ENA/sample-code audits
+leave PATS scaling, TIGIT pools and CD44 matrix identities explicitly held.
+
+J7: bounded remote HDF5 metadata recovery enabled a new descriptive reconstruction
+of 5,333 traced cells across 22 source labels, with explicit state counts and
+denominators. Author output checks pass; independent mouse/pool identities,
+current mScarlet status and an age conflict remain unresolved. No cell-level
+inference or transition-rate estimate was made. J8 report, canonical A1 card,
+assay/lineage documentation, gallery and handoff are updated. No historical claim
+grade changed and no author contact was sent. The
+[remaining-analysis assessment](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/REMAINING_ANALYSIS_OPTIONS.md)
+separates feasible robustness checks from metadata-dependent inference and new
+replication. Those proposed follow-ups have not run.
+
+### Previous milestone: canonical RQ rewrite (merged PR #69)
+
 **Current task: actual RQ rewrite implemented.** After the framing plan in PR
 #68, the owner explicitly requested implementation. The canonical
 [register](RESEARCH_QUESTIONS.md) now foregrounds biological hypotheses,

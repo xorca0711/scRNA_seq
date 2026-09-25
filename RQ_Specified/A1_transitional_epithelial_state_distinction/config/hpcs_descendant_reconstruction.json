@@ -1,0 +1,21 @@
+{
+  "frozen_on": "2026-09-25 after metadata eligibility inspection and author-output review; source-informed reproduction",
+  "input": "cache/followup_sources/hpcs_combined_obs.csv.gz",
+  "select_batches": ["traced", "Hopx-MACD_traced"],
+  "require_sorting_group": "traced",
+  "groups": {
+    "6wk_3d": {"driver": "Slc4a11", "chase_days": 3, "source_age_label": "6wk_3d", "notebooks": ["IGO17402"]},
+    "8wk": {"driver": "Slc4a11", "chase_days": 14, "source_age_label": "8wk harvest; 6wk induction in panel label", "notebooks": ["IGO15601"]},
+    "12wk_3d": {"driver": "Slc4a11", "chase_days": 3, "source_age_label": "12wk_3d", "notebooks": ["IGO16686"]},
+    "14wk": {"driver": "Slc4a11", "chase_days": 14, "source_age_label": "14wk harvest; 12wk induction in panel label", "notebooks": ["IGO15600", "IGO15771"]},
+    "Hopx_12wk3d": {"driver": "Hopx", "chase_days": 3, "source_age_label": "12wk3d; generic time field incorrectly inherits 6wk_3d", "notebooks": ["IGO17402"]},
+    "Hopx_12wk14d": {"driver": "Hopx", "chase_days": 14, "source_age_label": "12wk14d in code; README says 12wk harvest and GEO says 14wk harvest", "notebooks": ["IGO17543"]}
+  },
+  "state_column": "cell type",
+  "source_column": "Classification",
+  "denominator": "All retained author-annotated cells in each selected source label, including every cell-type category; zero state counts retained",
+  "reporter_rule": "Tracing history is the author's trace-sorted library assignment; do not threshold EGFP RNA. Current-state mScarlet protein is unavailable in these traced observation rows. Separate Hopx reporter-sorted control cells are excluded.",
+  "unit_rule": "Report named source labels, not independently verified animals. Pool membership/non-overlap needs an explicit crosswalk. Do not infer independence from identifiers or convert source counts into mouse n.",
+  "endpoint_rule": "Reconstruct source-level descendant RNA-label composition only; retain author QC and annotations. No new annotation, expression-matrix read, statistical test, transition rate, clone-size claim, diversity test or population inference.",
+  "validation": "Totals agree with saved author notebook group counts; all source labels appear in the corresponding author hash-assignment output; early HPCS fractions and Hopx summaries agree with saved numerical notebook outputs. Preserve code/GEO age discrepancies."
+}

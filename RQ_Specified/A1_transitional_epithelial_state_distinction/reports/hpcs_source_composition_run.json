@@ -1,0 +1,29 @@
+{
+  "status": "completed_descriptive_source_reproduction",
+  "utc": "2026-09-25T08:17:28.376834+00:00",
+  "code_sha256": "063dd9512afec9596764138c44cdad85264566186a7119136bf947acf8154321",
+  "input_sha256": {
+    "cache/followup_sources/hpcs_combined_obs.csv.gz": "5372f9f11796d7be7ee0bdab5296d97e7c3c99256a29d8106d8aef7b01e62387",
+    "config/hpcs_descendant_reconstruction.json": "a1d216717ccbe8d052432eebffd0da9444974a524541f71935505e8272cc37d9",
+    "cache/followup_sources/hpcs/tracing/IGO17402/IGO17402-nointrons.ipynb": "5b6679842523123351446f511c3237f46face33e7fb9585d2dd063e0e817d69f",
+    "cache/followup_sources/hpcs/tracing/IGO15601/IGO15601.ipynb": "5038cd503b15bfa1a416cff53d50bc3e3c7d27a7335d866bed36a93583bdaad3",
+    "cache/followup_sources/hpcs/tracing/IGO16686/IGO16686-nointrons.ipynb": "9a2635ced1bbc1536c642f296f5a70a00297cca59ab6f0bcf6b563cffce1bd02",
+    "cache/followup_sources/hpcs/tracing/IGO15600/IGO15600.ipynb": "ba6eb255a1f8b7eaa7395fd44c3161aa00a107d9f1959c01ba44845aa9cf37b2",
+    "cache/followup_sources/hpcs/tracing/IGO15771/IGO15771.ipynb": "0594f3b64c727f2bdcbfca53dae915c169540340c2f03717eb0769ab78279d9d",
+    "cache/followup_sources/hpcs/tracing/IGO17543/IGO17543-nointrons.ipynb": "e96222bcaafbb658402079b87675fe39ccd982ce413d1ca23206e28f274acb99"
+  },
+  "selected_cells": 5333,
+  "source_labels": 22,
+  "independent_biological_units_verified": false,
+  "current_mScarlet_available": false,
+  "saved_author_group_counts_verified": true,
+  "author_early_HPCS_fractions_verified": 11,
+  "author_Hopx_means_verified": 4,
+  "output_sha256": {
+    "tables/hpcs_source_composition/group_descriptive_summary.tsv": "474a1dbe96434a3e5f1c72e912d3b9c16d73b71fd029dfa060ef3e01b6d58378",
+    "tables/hpcs_source_composition/source_manifest.tsv": "1322439c82ac75a4624c41889585d298e0d9db476f13b383adc218ca3bca7e13",
+    "tables/hpcs_source_composition/source_state_counts.tsv": "58d77eb9bda1e5f73d1aa8b50863f3bbd2140f75d6d18c9d4f6734c1bb64eb2d",
+    "figures/hpcs_source_composition/a1_hpcs_source_composition.png": "662651a7b20ef98e1d8e0b7ca926867b2ae3ab64a64221ce7d5751cb15bc614a",
+    "figures/hpcs_source_composition/a1_hpcs_source_composition.svg": "73a033c784a042c20fcc2b06e0279189ae69a21fba8d8c3a2110885c0cfe8226"
+  }
+}

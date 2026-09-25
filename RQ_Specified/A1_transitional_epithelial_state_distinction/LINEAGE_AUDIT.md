@@ -127,3 +127,22 @@ assay. See the [primary figure legends](https://pubmed.ncbi.nlm.nih.gov/35170357
 The downloaded Chan workbook contains growth/ablation source panels from
 Figures 3, 4 and Extended Data 10, not the Figure 2 lineage-composition values.
 It is inventoried but has not been fitted as a lineage-transition dataset.
+
+## Second-batch resolution, 25 September 2026
+
+The [published PATS text](https://pmc.ncbi.nlm.nih.gov/articles/PMC7461628/)
+specifies Krt19-CreER induction seven days after injury and day-12 harvest:
+a nominal five-day interval. The ED4 reconstruction retains three mice per
+marker, separate marker denominators and undefined 0/0 controls. Histone ChIP
+uses CTGF-positive cells at day 12; TP53 ChIP uses a separate Sftpc-lineage/
+CTGF-positive day-8 preparation. They are distinct experiments.
+
+The HPCS hold is now narrower: author notebooks and bounded recovery of the
+GEO observation metadata enabled a [source-composition reconstruction](tables/hpcs_source_composition/source_state_counts.tsv)
+with 5,333 traced cells and 22 source labels. It reproduces author group counts
+and selected saved fractions without reading expression or refitting annotation.
+The [source manifest](tables/hpcs_source_composition/source_manifest.tsv) preserves
+driver/chase and conflicting age fields. Mouse/pool independence is still
+unverified; current mScarlet is absent for traced rows. The measured tracing
+assignment and current RNA-state labels do not supply a transition rate or
+same-cell current-reporter measurement. See the [second-batch report](reports/SECOND_BATCH_REPORT.md).

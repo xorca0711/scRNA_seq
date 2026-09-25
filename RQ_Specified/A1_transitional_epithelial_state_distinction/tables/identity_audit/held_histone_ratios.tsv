@@ -1,0 +1,17 @@
+gene	gene_group	mark	window	replicate	contrast	eligible	log2_ratio_difference	raw_mark_log2_ratio	H3_log2_ratio
+TP63	transition_stress	H3K27ac	promoter	CUT1	iATCs_minus_iAT2	False			0.8175878412678612
+TP63	transition_stress	H3K4me3	promoter	CUT1	iATCs_minus_iAT2	False			0.8175878412678612
+TP63	transition_stress	H3K4me3	promoter	CUT1	iATCs_minus_iAT1	False			0.1346558098459342
+TP63	transition_stress	H3K4me3	broad_promoter	CUT1	iATCs_minus_iAT2	False			0.6521923568992375
+TP63	transition_stress	H3K4me3	broad_promoter	CUT1	iATCs_minus_iAT1	False			0.5765699621414332
+KRT17	transition_stress	H3K4me3	promoter	CUT2	iATCs_minus_iAT1	False			1.6427748083359623
+TP63	transition_stress	H3K4me3	promoter	CUT2	iATCs_minus_iAT2	False			-1.0837689725914348
+TP63	transition_stress	H3K4me3	promoter	CUT2	iATCs_minus_iAT1	False			-0.504705710726567
+TP63	transition_stress	H3K4me3	broad_promoter	CUT2	iATCs_minus_iAT2	False			-0.68454736907539
+TP63	transition_stress	H3K4me3	broad_promoter	CUT2	iATCs_minus_iAT1	False			-0.11105218261616942
+ATF3	regulators	H3K4me3	promoter	CUT2	iATCs_minus_iAT1	False			0.4785544832660541
+ITGB6	transition_stress	H3K27me3	promoter	CUT1	iATCs_minus_iAT2	False			0.22490915612858506
+ITGB6	transition_stress	H3K27me3	promoter	CUT1	iATCs_minus_iAT1	False			1.0003722668453252
+AGER	AT1	H3K27me3	promoter	CUT2	iATCs_minus_iAT2	False			2.385592038788116
+AGER	AT1	H3K27me3	promoter	CUT2	iATCs_minus_iAT1	False			1.18781383125292
+ITGB6	transition_stress	H3K27me3	promoter	CUT2	iATCs_minus_iAT2	False			0.8148319946382433

@@ -47,3 +47,14 @@ The [lineage audit](LINEAGE_AUDIT.md) distinguishes origin tracing, state pulse/
 chase, experimental conversion and perturbation across eight anchor studies.
 The [first-batch report](reports/FIRST_BATCH_REPORT.md) supersedes planning-only
 status for the executed source tables without promoting the other catalog entries.
+
+The [second-batch report](reports/SECOND_BATCH_REPORT.md) adds verified native
+CHM13 histone profiles from GSE289683/GSE291333 (two preparations, one B2-3 line),
+GSE150527 hg19 domain-overlap context (one donor), and IRE1α omission/batch
+sensitivities. The 23-locus histone table includes H3 and window sensitivities;
+these are descriptive comparisons, not independently replicated state classes.
+PATS tracing timing is resolved, while deposited histone scaling remains held.
+The expanded GEO/ENA audits do not resolve TIGIT pools or CD44 matrix identities.
+GSE277777 observation metadata now supports a descriptive 22-source descendant
+composition table; mouse/pool independence, current mScarlet and one age conflict
+remain unresolved. No paired multimodal assay is implied by these separate studies.

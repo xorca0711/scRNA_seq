@@ -7,7 +7,37 @@ violated. Human-readable counterparts: [`README.md`](README.md) (overview),
 (AI-assisted development disclosure and scientific ownership),
 [`PROGRESS.md`](PROGRESS.md) (session state).
 
-## Current task: biological RQ rewrite implemented
+## Current task: A1 second batch verified and reported
+
+The owner resumed A1 on 25 September 2026. Read
+`RQ_Specified/A1_transitional_epithelial_state_distinction/reports/SECOND_BATCH_REPORT.md`,
+`JOBS.md` and the updated `NEXT_SESSION.md`. Branch `codex/a1-regulatory-followup`
+is the delivery branch for this follow-up; assay caches remain local and ignored.
+No background numerical process remains active and no scientific claim grade changed.
+The owner subsequently requested a PR covering the accumulated results. Proposed
+next packages are in A1 `reports/REMAINING_ANALYSIS_OPTIONS.md`; they have not run.
+
+Scripts 17/20 verified the completed IRE1α/direct-mark/domain outputs, primary
+provenance, native chromosome sizes and fresh GEO/ENA identity evidence. Script
+16 now requires a fresh `--run-id`; corrected figures/tables are in
+`second_batch_verified/`, while original `second_batch/` figures and the original
+summary run remain unchanged. Do not rerun models or overwrite original records.
+
+J7 advanced: script 19 recovered only the GEO HPCS HDF5 `/obs` metadata via
+bounded ranges (7.41 MB transferred from an 8.05-GB object). Script 21 reproduced
+5,333 traced cells / 22 source labels and all eight author RNA-state categories.
+This is source-level descriptive composition, not verified independent mice.
+Current mScarlet is absent for traced rows; the Hopx generic `time` field and
+IGO17543 harvest age need the source-manifest caveats. No expression was read.
+
+Remaining inputs: PATS deposited-track scaling/H3 association; TIGIT pool
+memberships/non-overlap; CD44 R26/OG-to-GSM identities; HPCS mouse/pool and age
+reconciliation. Forty-eight ENA XML records and the empty CD44 submitted-file
+fields did not resolve the first two identity problems. PATS day-7 induction /
+day-12 harvest is documented separately from day-12 histone and day-8 TP53 sorts.
+No author request has been sent. The report records validation and limitations.
+
+## Previous milestone: biological RQ rewrite implemented (merged PR #69)
 
 The owner explicitly requested the actual rewrite after the plan in PR #68.
 `RESEARCH_QUESTIONS.md` now contains biological hypothesis cards for all A1–A14,
