@@ -81,6 +81,10 @@ histone profiles at 23 loci in two induced-cell preparations, and one-donor
 methylation-domain context. Histone directions can depend on H3/window choice.
 Recovered HPCS trace-linked RNA composition covers 5,333 cells / 22 source
 labels; biological-unit independence and current mScarlet remain unresolved.
+The [robustness batch](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ROBUSTNESS_REPORT.md)
+shows promoter-dependent CDKN1A acetylation, source-sensitive HPCS fractions and
+chase/library aliasing that prevents the proposed fixed-library-adjusted temporal
+contrast. Deposited annotation partitions differ; biological recoding remains held.
 These within-context measurements do not establish an epigenetic taxonomy.
 
 **Rivals and test.** A common regulatory continuum, distinct branches, and

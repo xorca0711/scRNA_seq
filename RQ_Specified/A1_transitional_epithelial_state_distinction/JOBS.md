@@ -1,5 +1,18 @@
 # A1 execution jobs
 
+## Latest authorized robustness batch
+
+All numerical processes finished. Read [ROBUSTNESS_REPORT.md](reports/ROBUSTNESS_REPORT.md).
+
+| Package | State | Result / remaining boundary |
+|---|---|---|
+| Design audit | Complete | HPCS chase adds no rank to library indicators; independent-unit identity alone cannot unlock the adjusted temporal model |
+| HPCS source influence | Complete | 22 distinct source omissions; 704 category rows; all denominators retained |
+| Annotation robustness | Raw-partition audit complete; semantic recoding held | 87 ARIs and full contingencies; defining notebooks exceed the document cap |
+| Alternative histone TSSs | Complete and verified | 46 positions, 2,208 signals, 1,104 contrasts; CDKN1A acetylation depends on promoter definition |
+
+## Preserved second-batch job record
+
 Owner requested separate jobs and stepwise execution on 25 September 2026.
 These are work packages in the existing A1 folder, not new research questions.
 An input hold in one package does not prevent completion of another.

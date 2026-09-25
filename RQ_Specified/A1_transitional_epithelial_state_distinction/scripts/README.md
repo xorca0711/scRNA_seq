@@ -1,5 +1,24 @@
 # Execution scope
 
+## Latest robustness batch
+
+Scripts 22–25 implement the frozen [robustness scope](../config/robustness_batch.json):
+
+| Script | Purpose |
+|---|---|
+| `22_prepare_robustness.py` | Pinned author-definition eligibility; records the two notebook size holds without downloading them |
+| `23_analyze_hpcs_robustness.py` | Library/design rank, source omissions, raw-category compositions and label-invariant partition agreement |
+| `24_analyze_histone_tss.py` | All eligible native transcript starts, original-TSS baseline, both windows and matched H3 controls |
+| `25_verify_robustness_batch.py` | Independent source/partition checks, baseline reproduction and alternative-window base-resolution checks |
+| `a1_robustness.py` | Tested source-weighting, partition-agreement and parent/strand-aware transcript helpers |
+
+The annotation audit is qualified by its [eligibility scope](../config/robustness_annotation_scope.md).
+All completed entrypoints refuse to overwrite their output paths. Use the existing
+scientific launcher; script 25 additionally uses the installed scikit-learn.
+Read the [report](../reports/ROBUSTNESS_REPORT.md) before planning another run.
+
+## Earlier execution scope
+
 `01_audit_geo_metadata.py` retrieves public GEO design metadata. It archives
 existing extracts only with explicit `--refresh`; it does not retrieve counts.
 `02_preflight.py` checks local catalog integrity and the candidate pair contract.

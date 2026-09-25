@@ -5,6 +5,26 @@ to know to continue. Update this before stopping.
 
 ## Current status, 25 September 2026
 
+**Current task: the next A1 robustness batch is complete and verified.** Read
+the [report](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ROBUSTNESS_REPORT.md).
+PR #70 was merged; delivery continues on `codex/a1-robustness-analysis`.
+The Notion page now contains only a concise English reasoning summary.
+
+New evidence: 22 distinct source omissions (704 source/category rows), 87
+partition metrics and 46 native gene/TSS positions across 23 loci. All 1,104
+old histone windows reproduce exactly; 264 alternative windows passed independent
+base-resolution checks. CDKN1A acetylation reverses at an alternative promoter in
+CUT1. HPCS chase is aliased with source-library indicators; the 14wk pooled HPCS
+fraction rises from 31.79% to 51.11% when the dominant source is omitted.
+
+Author biological annotation recoding remains held because the two defining
+notebooks exceed the frozen document cap; raw-category/partition robustness ran.
+No new biological-unit inference, raw sequencing download or author contact.
+No process remains active. Original numerical outputs and claim grades remain
+unchanged; the new results narrow the current interpretation.
+
+### Previous milestone: A1 second-batch delivery (merged PR #70)
+
 **Current task: A1 second batch verified and reported after the owner's resume
 request.** Read the [report](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/SECOND_BATCH_REPORT.md),
 [checked gallery](RQ_Specified/A1_transitional_epithelial_state_distinction/figures/README.md)

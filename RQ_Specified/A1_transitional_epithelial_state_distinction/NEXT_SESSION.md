@@ -1,4 +1,32 @@
-# A1 — current handoff after verification
+# A1 — current handoff after the robustness batch
+
+Updated 25 September 2026. The owner requested a concise Notion page and then
+execution of the next plans. The Notion change and feasible robustness batch
+are complete. Start with [ROBUSTNESS_REPORT.md](reports/ROBUSTNESS_REPORT.md).
+PR #70 is merged; new branch: `codex/a1-robustness-analysis`.
+
+Scripts 22–25 have finished; no process needs resuming. Source omissions and
+annotation partition checks use the same 5,333 cells / 22 source aliases.
+Native transcript-start sensitivity uses 46 positions over 23 loci. Old output
+hashes remain valid and 1,104 baseline windows reproduce; 264 alternative windows
+passed independent base-resolution checks. Both new figures were inspected.
+
+The main new limit is substantive: CDKN1A acetylation reverses in CUT1 at the
+alternative promoter. HPCS chase cannot be separated from unrestricted library
+effects (rank 6 → 6 overall), and the 14wk composition is source-sensitive.
+Keep the revised interpretation; do not promote the earlier locus lead.
+
+Biological annotation recoding is held: the two pinned definition notebooks
+exceed 20 MiB. Raw categories, including `other`, and label-invariant partition
+metrics were retained. Do not infer a cluster-to-HPCS map from these same cells.
+
+Next packages are conditional: verified units and an estimable design for TIGIT,
+CD44 and HPCS inference; PATS track scaling/controls; independent state-specific
+regulatory/fate data. The [remaining-analysis assessment](reports/REMAINING_ANALYSIS_OPTIONS.md)
+separates completed robustness from these missing inputs. No author contact was
+sent. Do not add the analysis menu or a critique to the concise Notion page.
+
+## Historical second-batch handoff (superseded by the status above)
 
 Updated 25 September 2026 after the owner resumed A1. **The feasible second
 batch is now verified and reported.** Start with

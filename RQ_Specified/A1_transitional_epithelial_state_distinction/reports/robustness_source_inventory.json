@@ -1,0 +1,21 @@
+{
+  "utc": "2026-09-25T08:55:43.370883+00:00",
+  "code_sha256": "57d70032d23c28f42456652a4fe8f8e5e531dbfbb4a957bd590f2402e4ee05b1",
+  "contract_sha256": "33d4717c9f95cf550a7902634526bdc0d0e750c6166e38805235984c4fa5616a",
+  "tree_sha256": "f86f802bed85696531cc0c96b6863f8e9672be0fe6b592cbce044fffca917973",
+  "author_commit": "b52d53c984e21d3bb3a163041fdb3f56b54c19c0",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/dbetel/HPCS_LUAD/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/tracing_depletion_analysis/01_Concatenate_cells.ipynb",
+      "bytes": 69091594,
+      "git_blob_sha": "f33e497b5e90f8a29126e6b1353115fabd67ccad",
+      "status": "held_full_notebook_exceeds_20_MiB"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/dbetel/HPCS_LUAD/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/tracing_depletion_analysis/02_Analyze_control_DT_depletion.ipynb",
+      "bytes": 49691834,
+      "git_blob_sha": "c8a79640f12224ca02b0e5396d342551933722af",
+      "status": "held_full_notebook_exceeds_20_MiB"
+    }
+  ]
+}

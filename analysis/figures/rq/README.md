@@ -50,6 +50,9 @@ The [second-batch report](../../../RQ_Specified/A1_transitional_epithelial_state
 states their separate experimental units and remaining identity/normalization
 holds. These descriptive direct-mark and lineage panels do not upgrade the
 historical claim grades attached to the supporting diagnostic below.
+The [new robustness report](../../../RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ROBUSTNESS_REPORT.md)
+and two new A1 figures qualify the CDKN1A lead by alternate promoter choice and
+expose HPCS source influence, annotation differences and chase/library aliasing.
 
 ![A1: the AT2 identity programme in RNA and in chromatin](../../../analysis/figures/rq/rq_a1_chromatin.png)
 

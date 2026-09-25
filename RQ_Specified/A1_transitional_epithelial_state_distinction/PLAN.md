@@ -7,7 +7,14 @@ results and earlier repository analyses informed the hypotheses. The owner autho
 checks are not biological results. Sources and assay availability
 are in [STUDY_MAP.md](STUDY_MAP.md) and [metadata](metadata/README.md).
 
-**Execution update, 25 September 2026:** the [second batch](reports/SECOND_BATCH_REPORT.md)
+**Latest execution, 25 September 2026:** the
+[robustness batch](reports/ROBUSTNESS_REPORT.md) adds source omissions,
+label-invariant annotation comparison and alternative native transcript starts.
+The CDKN1A acetylation direction depends on promoter definition. HPCS chase adds
+no rank to source-library indicators, so identity recovery alone does not enable
+the proposed library-adjusted temporal test. Original results remain preserved.
+
+**Earlier execution update:** the [second batch](reports/SECOND_BATCH_REPORT.md)
 is verified: IRE1α sensitivity, native-CHM13 direct marks, hg19 methylation-domain
 context and a descriptive HPCS descendant source reconstruction. PATS timing is
 resolved. PATS track normalization, TIGIT/CD44 identities and HPCS independent

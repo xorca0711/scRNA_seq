@@ -1,9 +1,12 @@
 # A1: useful follow-up analysis and what it can resolve
 
-25 September 2026. Prepared for delivery of the verified second batch. These
-are proposed next packages, not executed results or relaxed eligibility rules.
-The completed work and exact remaining holds are in
-[SECOND_BATCH_REPORT.md](SECOND_BATCH_REPORT.md) and [JOBS.md](../JOBS.md).
+25 September 2026. **Updated after execution:** the first two packages below
+have now run under the [robustness scope](../config/robustness_batch.json).
+Read [ROBUSTNESS_REPORT.md](ROBUSTNESS_REPORT.md) and [JOBS.md](../JOBS.md).
+The source/partition analysis is complete at the descriptive level; biological
+cluster recoding remains held. Alternate native transcript starts were quantified;
+no dominant isoform or MANE-coordinate transfer was inferred. The table preserves
+the original package rationale; packages 3–5 remain conditional and unexecuted.
 
 Further analysis can reduce uncertainty in the measured patterns. It cannot
 recover an unrecorded animal identity, measure an absent reporter, add donors
@@ -27,15 +30,24 @@ to a one-line experiment or establish chromatin causality from separate cohorts.
 - **HPCS:** mouse/pool members and induction/harvest ages. mScarlet RNA, if
   retrieved later, would measure transcript abundance rather than the missing
   current-state protein gate; it cannot reconstruct that gate without validation.
+  The completed design audit additionally shows chase/library aliasing. An
+  identity crosswalk alone cannot enable a fixed-library-adjusted chase test.
 - **PATS:** deposited-track scale/control metadata, or a verified raw-library
   route under a new resource contract.
 - **Methylation and causal state distinction:** independent donors and matched
   state/perturbation/fate measurements. More overlap calculations cannot supply
   biological replication or a same-cell multimodal causal test.
 
-The recommended next small batch is packages 1 and 2 plus one bounded pass at
-the specific uninspected identity records in package 3. Freeze those scopes
-before numerical work. Author contact is a separate action and has not been sent.
+The next priorities are one bounded pass at the specific uninspected identity
+records in package 3, then design-rank/support checks before any newly eligible
+contrast. Do not repeat packages 1–2 merely to obtain the same evidence.
+For transition specificity, first identify appropriately matched mature,
+stress/cell-cycle controls and validation features separate from label-defining
+markers. For the IRE1α lead, a compatible treated/control cell-resolved or sorted
+dataset could distinguish population abundance from within-state response;
+deconvolution would be secondary and assumption-sensitive. Neither new dataset
+is declared eligible here. Freeze each scope before numerical work.
+Author contact is a separate action and has not been sent.
 Whole-archive reprocessing, another omnibus embedding, and repeated testing of
 the same primary RNA model do not address the recorded missing inputs.
 

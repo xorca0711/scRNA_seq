@@ -7,7 +7,26 @@ violated. Human-readable counterparts: [`README.md`](README.md) (overview),
 (AI-assisted development disclosure and scientific ownership),
 [`PROGRESS.md`](PROGRESS.md) (session state).
 
-## Current task: A1 second batch verified and reported
+## Current task: A1 robustness batch verified and reported
+
+Read A1 `reports/ROBUSTNESS_REPORT.md` and `NEXT_SESSION.md`. PR #70 is merged;
+the new branch is `codex/a1-robustness-analysis`. The owner authorized continuing
+after a concise Notion update. Scripts 22–25 ran; 22 recorded oversized source
+notebook holds, 23 ran HPCS source/partition/design checks, 24 alternative native
+transcript starts, and 25 independent verification. Do not rerun completed jobs.
+
+Interpretation is narrower: CDKN1A H3K27ac/H3 reverses at the alternative ±1-kb
+promoter in CUT1; H3K27me3/H3 stays lower. HPCS chase adds zero rank to source
+library indicators. Identity recovery alone does not fix that confounding.
+Source labels are not verified mice. Semantic cluster-to-state recoding remains
+held; label-invariant ARI and raw categories were used instead. The Notion page
+must remain concise, without the follow-up analysis menu or critique.
+
+New tables/figures are under `robustness_2026-09-25/`; original outputs are
+preserved. No background process or author contact. Remaining comparisons need
+the explicit input and design gates in the report. No claim grade changed.
+
+## Previous milestone: A1 second batch verified and reported
 
 The owner resumed A1 on 25 September 2026. Read
 `RQ_Specified/A1_transitional_epithelial_state_distinction/reports/SECOND_BATCH_REPORT.md`,

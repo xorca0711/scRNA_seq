@@ -1,0 +1,30 @@
+{
+  "utc": "2026-09-25T09:14:54.672651+00:00",
+  "checks": {
+    "compileall": {
+      "exit_code": 0,
+      "output_tail": ""
+    },
+    "unittest": {
+      "exit_code": 0,
+      "output_tail": "----------------------------------------------------------------------\nRan 28 tests in 0.848s\n\nOK (skipped=1)\n"
+    },
+    "claim_contract": {
+      "exit_code": 0,
+      "output_tail": "Claim contract verified; 18 numeric bindings passed.\n"
+    },
+    "Nb1_verifier": {
+      "exit_code": 0,
+      "output_tail": "Nb1 evidence verified: 17 output hashes, code/protocol/panel hashes, units, reported paired directions and expression denominators; raw inputs not requested.\n"
+    }
+  },
+  "scientific_A1_tests": "15 tests passed, no skips",
+  "visual_QA": "Both PNGs inspected; both SVGs parsed. Text and legends readable.",
+  "executed_source_archive": "Seven sources/contracts match their exact archive hashes; acquisition contract hash matches.",
+  "repository_validator": {
+    "exit_code": 0,
+    "output": "Repository validation passed: 2375 checks\n  local Markdown links resolve\n  tracked JSON artefacts parse\n  selected headline values and explicit numeric bindings match tracked tables\n  claim index and summary match the register; this is not full scientific reproduction"
+  },
+  "staged_diff_check": "passed",
+  "staged_A1_byte_checks": 46
+}

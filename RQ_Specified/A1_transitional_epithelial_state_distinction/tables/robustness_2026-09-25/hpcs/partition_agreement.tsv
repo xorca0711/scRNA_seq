@@ -1,0 +1,88 @@
+level	unit	left	right	cells	adjusted_rand	literal_code_disagreements	literal_code_disagreement_fraction	missing_left	missing_right
+all	all	cell type	clusterK12	5333	0.6331167444945444			0	0
+all	all	cell type	clusterK12_stringent	5333	0.5722759105295503			0	0
+all	all	clusterK12	clusterK12_stringent	5333	0.7148293018944571	1282.0	0.24039002437652354	0	0
+group	12wk_3d	cell type	clusterK12	877	0.6094282632841816			0	0
+group	12wk_3d	cell type	clusterK12_stringent	877	0.5612441927046452			0	0
+group	12wk_3d	clusterK12	clusterK12_stringent	877	0.8338369382771814	150.0	0.17103762827822122	0	0
+group	14wk	cell type	clusterK12	991	0.4332460360598805			0	0
+group	14wk	cell type	clusterK12_stringent	991	0.41645450690936264			0	0
+group	14wk	clusterK12	clusterK12_stringent	991	0.47156250931758253	371.0	0.37436932391523714	0	0
+group	6wk_3d	cell type	clusterK12	586	0.6360611351146792			0	0
+group	6wk_3d	cell type	clusterK12_stringent	586	0.5838642196605995			0	0
+group	6wk_3d	clusterK12	clusterK12_stringent	586	0.8703208964746314	24.0	0.040955631399317405	0	0
+group	8wk	cell type	clusterK12	742	0.41883038117208593			0	0
+group	8wk	cell type	clusterK12_stringent	742	0.29420302784390834			0	0
+group	8wk	clusterK12	clusterK12_stringent	742	0.5255819715898025	227.0	0.3059299191374663	0	0
+group	Hopx_12wk14d	cell type	clusterK12	911	0.7771222752520694			0	0
+group	Hopx_12wk14d	cell type	clusterK12_stringent	911	0.7382526296235233			0	0
+group	Hopx_12wk14d	clusterK12	clusterK12_stringent	911	0.8621346664849233	154.0	0.1690450054884742	0	0
+group	Hopx_12wk3d	cell type	clusterK12	1226	0.6277425419420223			0	0
+group	Hopx_12wk3d	cell type	clusterK12_stringent	1226	0.5333155879598086			0	0
+group	Hopx_12wk3d	clusterK12	clusterK12_stringent	1226	0.6568084440633667	356.0	0.2903752039151713	0	0
+source	BD1621_B0302_GFP+	cell type	clusterK12	119	0.6268176485455788			0	0
+source	BD1621_B0302_GFP+	cell type	clusterK12_stringent	119	0.6480639045237057			0	0
+source	BD1621_B0302_GFP+	clusterK12	clusterK12_stringent	119	0.720582403589673	36.0	0.3025210084033613	0	0
+source	BF1303_B0301_GFP+	cell type	clusterK12	811	0.37283706136914246			0	0
+source	BF1303_B0301_GFP+	cell type	clusterK12_stringent	811	0.36703493203829374			0	0
+source	BF1303_B0301_GFP+	clusterK12	clusterK12_stringent	811	0.4077426800990301	321.0	0.3958076448828607	0	0
+source	BH1065_B0301_GFP+	cell type	clusterK12	138	0.3218967081282622			0	0
+source	BH1065_B0301_GFP+	cell type	clusterK12_stringent	138	0.22332513125854409			0	0
+source	BH1065_B0301_GFP+	clusterK12	clusterK12_stringent	138	0.44855613379459147	50.0	0.36231884057971014	0	0
+source	BH1066_GFP+	cell type	clusterK12	61	0.6726143987183338			0	0
+source	BH1066_GFP+	cell type	clusterK12_stringent	61	0.5831766556284697			0	0
+source	BH1066_GFP+	clusterK12	clusterK12_stringent	61	0.7533780189381849	14.0	0.22950819672131148	0	0
+source	BH1094_B0302_GFP+	cell type	clusterK12	376	0.4347278553260523			0	0
+source	BH1094_B0302_GFP+	cell type	clusterK12_stringent	376	0.3071988641904618			0	0
+source	BH1094_B0302_GFP+	clusterK12	clusterK12_stringent	376	0.49371890589862877	121.0	0.32180851063829785	0	0
+source	BH1129_B0303_GFP+	cell type	clusterK12	90	0.5093777886813624			0	0
+source	BH1129_B0303_GFP+	cell type	clusterK12_stringent	90	0.36766472136978484			0	0
+source	BH1129_B0303_GFP+	clusterK12	clusterK12_stringent	90	0.6414308088786942	23.0	0.25555555555555554	0	0
+source	BH1290_B0304_GFP+	cell type	clusterK12	138	0.49046173494559936			0	0
+source	BH1290_B0304_GFP+	cell type	clusterK12_stringent	138	0.3408889139827444			0	0
+source	BH1290_B0304_GFP+	clusterK12	clusterK12_stringent	138	0.6172122287117433	33.0	0.2391304347826087	0	0
+source	BL1121_B0304	cell type	clusterK12	57	0.5362480119814343			0	0
+source	BL1121_B0304	cell type	clusterK12_stringent	57	0.45800177517076374			0	0
+source	BL1121_B0304	clusterK12	clusterK12_stringent	57	0.8904075463382151	10.0	0.17543859649122806	0	0
+source	BL1124_B0305	cell type	clusterK12	67	0.7481776765375854			0	0
+source	BL1124_B0305	cell type	clusterK12_stringent	67	0.6901587519321656			0	0
+source	BL1124_B0305	clusterK12	clusterK12_stringent	67	0.9179737721779377	9.0	0.13432835820895522	0	0
+source	BL1233_B0306	cell type	clusterK12	58	0.5195519484874908			0	0
+source	BL1233_B0306	cell type	clusterK12_stringent	58	0.4319299609579664			0	0
+source	BL1233_B0306	clusterK12	clusterK12_stringent	58	0.7523848432233684	12.0	0.20689655172413793	0	0
+source	BL1237_B0302	cell type	clusterK12	239	0.7589116186420372			0	0
+source	BL1237_B0302	cell type	clusterK12_stringent	239	0.7860575244553245			0	0
+source	BL1237_B0302	clusterK12	clusterK12_stringent	239	0.9302418508122307	19.0	0.0794979079497908	0	0
+source	BL1606_B0303	cell type	clusterK12	354	0.4850972080161531			0	0
+source	BL1606_B0303	cell type	clusterK12_stringent	354	0.41591761742355277			0	0
+source	BL1606_B0303	clusterK12	clusterK12_stringent	354	0.721479110178185	78.0	0.22033898305084745	0	0
+source	BL1646_B0301	cell type	clusterK12	102	0.5226276717205207			0	0
+source	BL1646_B0301	cell type	clusterK12_stringent	102	0.432196974397796			0	0
+source	BL1646_B0301	clusterK12	clusterK12_stringent	102	0.8158906853177977	22.0	0.21568627450980393	0	0
+source	BO1535_B0302	cell type	clusterK12	76	0.8474759657334766			0	0
+source	BO1535_B0302	cell type	clusterK12_stringent	76	0.7755900510846481			0	0
+source	BO1535_B0302	clusterK12	clusterK12_stringent	76	0.9196459375939041	4.0	0.05263157894736842	0	0
+source	BO1540_B0303	cell type	clusterK12	146	0.766234825684385			0	0
+source	BO1540_B0303	cell type	clusterK12_stringent	146	0.7897592998127904			0	0
+source	BO1540_B0303	clusterK12	clusterK12_stringent	146	0.8398918711010175	5.0	0.03424657534246575	0	0
+source	BP1479_B0309	cell type	clusterK12	361	0.7868387599725205			0	0
+source	BP1479_B0309	cell type	clusterK12_stringent	361	0.7559709246828812			0	0
+source	BP1479_B0309	clusterK12	clusterK12_stringent	361	0.8796833924112446	66.0	0.18282548476454294	0	0
+source	BQ1151_B0308	cell type	clusterK12	648	0.6786649279359052			0	0
+source	BQ1151_B0308	cell type	clusterK12_stringent	648	0.5930341285959501			0	0
+source	BQ1151_B0308	clusterK12	clusterK12_stringent	648	0.717093131481203	178.0	0.27469135802469136	0	0
+source	BQ1152_B0309	cell type	clusterK12	578	0.5651456400686639			0	0
+source	BQ1152_B0309	cell type	clusterK12_stringent	578	0.45673762174951094			0	0
+source	BQ1152_B0309	clusterK12	clusterK12_stringent	578	0.5857712352559082	178.0	0.3079584775086505	0	0
+source	BQ1920_B0308	cell type	clusterK12	550	0.7659374445596833			0	0
+source	BQ1920_B0308	cell type	clusterK12_stringent	550	0.7220230162139376			0	0
+source	BQ1920_B0308	clusterK12	clusterK12_stringent	550	0.8482277411279526	88.0	0.16	0	0
+source	BR1128_B0307	cell type	clusterK12	28	0.0			0	0
+source	BR1128_B0307	cell type	clusterK12_stringent	28	-0.03703703703703771			0	0
+source	BR1128_B0307	clusterK12	clusterK12_stringent	28	0.0	1.0	0.03571428571428571	0	0
+source	BR1615_B0304	cell type	clusterK12	158	0.44820851255932526			0	0
+source	BR1615_B0304	cell type	clusterK12_stringent	158	0.39480326817200656			0	0
+source	BR1615_B0304	clusterK12	clusterK12_stringent	158	0.8731165387826126	5.0	0.03164556962025317	0	0
+source	BS1265_B0305	cell type	clusterK12	178	0.5910433144223113			0	0
+source	BS1265_B0305	cell type	clusterK12_stringent	178	0.5283313129408344			0	0
+source	BS1265_B0305	clusterK12	clusterK12_stringent	178	0.8900195622402939	9.0	0.05056179775280899	0	0
