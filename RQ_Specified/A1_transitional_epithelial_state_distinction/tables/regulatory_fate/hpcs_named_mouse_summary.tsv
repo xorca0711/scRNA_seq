@@ -1,0 +1,49 @@
+group	state	n	mean	sd	minimum	maximum	male	female	libraries	estimand
+6wk_3d	HPCS	5	0.9308027246697705	0.025138006961393584	0.8947368421052632	0.9642857142857143	1	4	IGO17402	equal named-mouse fraction; no chase-effect inference
+6wk_3d	AT1-like	5	0.0059024320864741854	0.008217241829415042	0.0	0.016853932584269662	1	4	IGO17402	equal named-mouse fraction; no chase-effect inference
+6wk_3d	AT2-like	5	0.04375019510655832	0.020639284695316812	0.013157894736842105	0.06329113924050633	1	4	IGO17402	equal named-mouse fraction; no chase-effect inference
+6wk_3d	Lung endoderm-like	5	0.010526315789473684	0.023537557657892522	0.0	0.05263157894736842	1	4	IGO17402	equal named-mouse fraction; no chase-effect inference
+6wk_3d	Hybrid lung/gastric-like	5	0.0	0.0	0.0	0.0	1	4	IGO17402	equal named-mouse fraction; no chase-effect inference
+6wk_3d	Highly proliferative	5	0.00901833234772324	0.017197978260456378	0.0	0.039473684210526314	1	4	IGO17402	equal named-mouse fraction; no chase-effect inference
+6wk_3d	EMT	5	0.0	0.0	0.0	0.0	1	4	IGO17402	equal named-mouse fraction; no chase-effect inference
+6wk_3d	Ribosome	5	0.0	0.0	0.0	0.0	1	4	IGO17402	equal named-mouse fraction; no chase-effect inference
+8wk	HPCS	4	0.23997520300133623	0.03734374280517402	0.18840579710144928	0.2777777777777778	3	1	IGO15601	equal named-mouse fraction; no chase-effect inference
+8wk	AT1-like	4	0.06052780347414945	0.028875325104177608	0.021739130434782608	0.0851063829787234	3	1	IGO15601	equal named-mouse fraction; no chase-effect inference
+8wk	AT2-like	4	0.4743884263541988	0.07822888684178558	0.42028985507246375	0.5869565217391305	3	1	IGO15601	equal named-mouse fraction; no chase-effect inference
+8wk	Lung endoderm-like	4	0.08232924761023744	0.06259407664558062	0.03333333333333333	0.16666666666666666	3	1	IGO15601	equal named-mouse fraction; no chase-effect inference
+8wk	Hybrid lung/gastric-like	4	0.12477901120361805	0.06270571827783385	0.07246376811594203	0.2111111111111111	3	1	IGO15601	equal named-mouse fraction; no chase-effect inference
+8wk	Highly proliferative	4	0.017335414739438792	0.014914382258215354	0.0	0.036231884057971016	3	1	IGO15601	equal named-mouse fraction; no chase-effect inference
+8wk	EMT	4	0.0	0.0	0.0	0.0	3	1	IGO15601	equal named-mouse fraction; no chase-effect inference
+8wk	Ribosome	4	0.0006648936170212766	0.0013297872340425532	0.0	0.0026595744680851063	3	1	IGO15601	equal named-mouse fraction; no chase-effect inference
+12wk_3d	HPCS	6	0.6785839307411266	0.1295218354850731	0.46551724137931033	0.7824267782426778	3	3	IGO16686	equal named-mouse fraction; no chase-effect inference
+12wk_3d	AT1-like	6	0.04847395675029345	0.024074230763277634	0.0196078431372549	0.08757062146892655	3	3	IGO16686	equal named-mouse fraction; no chase-effect inference
+12wk_3d	AT2-like	6	0.16577847422116204	0.0822637489198756	0.08955223880597014	0.3103448275862069	3	3	IGO16686	equal named-mouse fraction; no chase-effect inference
+12wk_3d	Lung endoderm-like	6	0.03670584043253119	0.027446232648163208	0.012552301255230125	0.08620689655172414	3	3	IGO16686	equal named-mouse fraction; no chase-effect inference
+12wk_3d	Hybrid lung/gastric-like	6	0.0180928982398258	0.017847261798307337	0.0	0.03954802259887006	3	3	IGO16686	equal named-mouse fraction; no chase-effect inference
+12wk_3d	Highly proliferative	6	0.04148364356569961	0.028370282454008897	0.00980392156862745	0.08620689655172414	3	3	IGO16686	equal named-mouse fraction; no chase-effect inference
+12wk_3d	EMT	6	0.004209593441896533	0.007874804871338046	0.0	0.0196078431372549	3	3	IGO16686	equal named-mouse fraction; no chase-effect inference
+12wk_3d	Ribosome	6	0.006671662607464768	0.010825353007824515	0.0	0.02510460251046025	3	3	IGO16686	equal named-mouse fraction; no chase-effect inference
+14wk	HPCS	3	0.43725036658151367	0.14234400822999985	0.2749691738594328	0.5409836065573771	2	1	IGO15600,IGO15771	equal named-mouse fraction; no chase-effect inference
+14wk	AT1-like	3	0.12800357757058473	0.07745430914337621	0.06165228113440197	0.21311475409836064	2	1	IGO15600,IGO15771	equal named-mouse fraction; no chase-effect inference
+14wk	AT2-like	3	0.1873582163151691	0.0818564355915569	0.1092436974789916	0.2725030826140567	2	1	IGO15600,IGO15771	equal named-mouse fraction; no chase-effect inference
+14wk	Lung endoderm-like	3	0.1621860120410073	0.11206293115184533	0.03278688524590164	0.226890756302521	2	1	IGO15600,IGO15771	equal named-mouse fraction; no chase-effect inference
+14wk	Hybrid lung/gastric-like	3	0.044648685614813124	0.06333866967547627	0.0	0.11713933415536375	2	1	IGO15600,IGO15771	equal named-mouse fraction; no chase-effect inference
+14wk	Highly proliferative	3	0.024903478805764993	0.022045568909202593	0.0	0.04192355117139334	2	1	IGO15600,IGO15771	equal named-mouse fraction; no chase-effect inference
+14wk	EMT	3	0.01564966307114708	0.02296739655002955	0.0	0.04201680672268908	2	1	IGO15600,IGO15771	equal named-mouse fraction; no chase-effect inference
+14wk	Ribosome	3	0.0	0.0	0.0	0.0	2	1	IGO15600,IGO15771	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk3d	HPCS	2	0.04767397154940407	0.011146242994482294	0.039792387543252594	0.05555555555555555	2	0	IGO17402	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk3d	AT1-like	2	0.47159479260113635	0.0772723112744174	0.41695501730103807	0.5262345679012346	2	0	IGO17402	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk3d	AT2-like	2	0.24185142466572684	0.010300457618207215	0.2345679012345679	0.2491349480968858	2	0	IGO17402	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk3d	Lung endoderm-like	2	0.15443045409885087	0.00670209394146547	0.14969135802469136	0.15916955017301038	2	0	IGO17402	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk3d	Hybrid lung/gastric-like	2	0.07626607287795292	0.0707552328840121	0.026234567901234566	0.12629757785467127	2	0	IGO17402	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk3d	Highly proliferative	2	0.005775022427271562	0.0016198300286696834	0.004629629629629629	0.006920415224913495	2	0	IGO17402	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk3d	EMT	2	0.002408261779657397	0.0009590602034547772	0.0017301038062283738	0.0030864197530864196	2	0	IGO17402	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk3d	Ribosome	2	0.0	0.0	0.0	0.0	2	0	IGO17402	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk14d	HPCS	2	0.0432409972299169	0.03286773348562401	0.02	0.0664819944598338	2	0	IGO17543	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk14d	AT1-like	2	0.6506824477461597	0.0466038747852287	0.6177285318559557	0.6836363636363636	2	0	IGO17543	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk14d	AT2-like	2	0.23032737345756737	0.01625045702621112	0.2188365650969529	0.24181818181818182	2	0	IGO17543	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk14d	Lung endoderm-like	2	0.03389322588768572	0.0009223906135850698	0.0332409972299169	0.034545454545454546	2	0	IGO17543	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk14d	Hybrid lung/gastric-like	2	0.02389322588768572	0.01321974501014588	0.014545454545454545	0.0332409972299169	2	0	IGO17543	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk14d	Highly proliferative	2	0.01614454797280282	0.020260541315387907	0.0018181818181818182	0.030470914127423823	2	0	IGO17543	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk14d	EMT	2	0.0	0.0	0.0	0.0	2	0	IGO17543	equal named-mouse fraction; no chase-effect inference
+Hopx_12wk14d	Ribosome	2	0.0018181818181818182	0.0025712973861329	0.0	0.0036363636363636364	2	0	IGO17543	equal named-mouse fraction; no chase-effect inference

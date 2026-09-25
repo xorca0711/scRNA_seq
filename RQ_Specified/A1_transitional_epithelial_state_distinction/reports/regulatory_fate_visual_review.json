@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-25T10:51:47.918605+00:00",
+  "reviewer": "Codex visual inspection",
+  "figures": {
+    "figures/regulatory_fate/ap1_region_outcome.png": "d8cd6d7e4c405f07dc19ac097a8c1926d6ded4489ef5a47e6c78f74bb8cb9b0e",
+    "figures/regulatory_fate/tsutsui_capacity_and_response.png": "07c325fe8a8e1d4687c024125ee0b0e1d7a72019be92426aa5c4dac729ffc8f1"
+  },
+  "outcome": "Both figures inspected: readable labels, nested unit definitions, no clipping; numbers and limitations match tables.",
+  "source_pdf": "HPCS reporting summary page 1 visually inspected; animal joins use supplementary workbook, not generic statistical checkboxes."
+}

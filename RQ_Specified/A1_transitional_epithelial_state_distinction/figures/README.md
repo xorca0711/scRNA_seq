@@ -1,6 +1,23 @@
 # A1 figure gallery
 
-## Latest: CD44 context and HPCS confidence abstention
+## Latest: regulatory perturbation and context-dependent outcomes
+
+![AP-1 regional HOPX response](regulatory_fate/ap1_region_outcome.png)
+
+Three mice per genotype; fields are aggregated within mouse and region.
+Opposite regional responses yield a 24.55-point interaction; the exact
+two-sided permutation p-value is 0.10 with only 20 allocations. HOPX acquisition
+does not establish mature AT1 function. [Report](../reports/REGULATORY_FATE_REPORT.md),
+[SVG](regulatory_fate/ap1_region_outcome.svg).
+
+![iATC capacity and regulatory response](regulatory_fate/tsutsui_capacity_and_response.png)
+
+Culture observations from Tsutsui Fig. 6i and 9g, with experiment counts and
+means. Medium-switch capacity and knockdown response come from separate
+experiments using one parental iPSC line. They do not demonstrate rescue of
+the same cells' fate. [SVG](regulatory_fate/tsutsui_capacity_and_response.svg).
+
+## Previous: CD44 context and HPCS confidence abstention
 
 ![CD44 paired context comparison](evidence_closure/a1_cd44_context.png)
 
@@ -27,7 +44,8 @@ independent validation. [SVG](evidence_closure/a1_hpcs_abstention.svg),
 Dots retain full-group equal-source and pooled-cell HPCS fractions; lines show
 the range after omitting each source, not confidence intervals. The heatmap
 compares deposited partitions using ARI, not biological accuracy. The 22 source
-aliases are not verified independent mice. Chase cannot be separated from
+aliases were unverified at that run; the new animal table now resolves them.
+Chase still cannot be separated from
 unrestricted source-library effects in this design.
 [Report and full tables](../reports/ROBUSTNESS_REPORT.md),
 [SVG](robustness_2026-09-25/a1_hpcs_robustness.svg).

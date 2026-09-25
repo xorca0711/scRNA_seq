@@ -1,0 +1,43 @@
+{
+  "utc": "2026-09-25T10:38:46.098175+00:00",
+  "code_sha256": "edd6b7f39d1366f0de26b63ab021ca86a6a2ba319a0bd552e566297c8368bfc8",
+  "helper_sha256": "3f6939bc83cf3332b4fb80c496f4f94214f4cb6f4ff96960b44a6709bcf155e6",
+  "contract_sha256": "22ed9898fb30d82d5a57529920e21bc4bffecdaac72f82e802ac540de63a608d",
+  "source_hashes": {
+    "cache/regulatory_fate/ap1_DC5.xlsx": "9f5c289627829acc3cd41eb19a4a323f199f1c86121c6c3af03c30f93f1b13eb",
+    "cache/followup_sources/tsutsui_source.xlsx": "f59fb7a0c4ecfe2f86683b9d28836be88c1f213ba249725c6a1fcff319febb07",
+    "cache/regulatory_fate/tsutsui_data2.xlsx": "446882460dfeb3ced746617ab7fccd5d92c8fa216b25ff8fcb26a8b03e2410d3",
+    "cache/regulatory_fate/tp53_table1.xlsx": "6b047e5135ff6a94f5a3eb16e0bfbe1b04eb08162d0755cd39710fbfcdb707a7"
+  },
+  "output_hashes": {
+    "tables\\regulatory_fate\\ap1_fields.tsv": "08b47558c6154e65b5c3b418084dd948ff55d8542f170b13d8d91ddcee8b0378",
+    "tables\\regulatory_fate\\ap1_mice.tsv": "a556581d16da3506a18d865a7d4f6cc74823c8ea7990861e106c8d91962f2ad4",
+    "tables\\regulatory_fate\\ap1_group_summary.tsv": "c08486af161af48b4e2f1b85a9694adaeedd0db5e01c8f07627c5d7d2f8fa962",
+    "tables\\regulatory_fate\\ap1_region_interaction.tsv": "fad1169c044f2548bfa0171a46fb06f5fe8304a841697e4c566c4a8ee2d73cee",
+    "tables\\regulatory_fate\\ap1_mouse_omissions.tsv": "ce55f25273d686559f83cbb07929b058b627ffd305b35d1f4f5660dc4869c222",
+    "tables\\regulatory_fate\\tsutsui_source_values.tsv": "218e5265c4bb50bd257aa7f382dbebb77c85631055a3f50d2790bc4e25dfe2f9",
+    "tables\\regulatory_fate\\tsutsui_endpoint_summary.tsv": "2669201ac30e7602cfbcb63d6279b81c6db82d6a7c02109cb5b58cfb8f705f75",
+    "tables\\regulatory_fate\\tsutsui_descriptive_ratios.tsv": "1a0a2b4acf498dee9712e914e0b08dd19cb122e64ee28f178bbe0bbcc63909fe",
+    "tables\\regulatory_fate\\tsutsui_regulatory_gene_sets.tsv": "a26f5e0f894399136877eac188c69182943587fd9de66d5fa91b0a8c8fa493c9",
+    "tables\\regulatory_fate\\tsutsui_gene_set_audit.tsv": "0fb16db961771fd6e3b84c443326701d8b1ee4151eda055979ce379a655b0ecb",
+    "tables\\regulatory_fate\\tp53_selected_gene_audit.tsv": "285138c50299f11b2f83886bea91dbe0b1b10989e89a37c160228af4afe3786d",
+    "tables\\regulatory_fate\\tp53_signed_set_summary.tsv": "c757d28b27bcee5f3825dd8e6d0eb377f7c97b0caefa57b3fdb9554a8d45fc32",
+    "tables\\regulatory_fate\\tp53_frozen_markers.tsv": "06a63d07b9165d20d061a57944a7f642fd6f68a9228eb8f2b7d99f21e63d38ea"
+  },
+  "rows": {
+    "ap1_fields.tsv": 36,
+    "ap1_mice.tsv": 12,
+    "ap1_group_summary.tsv": 8,
+    "ap1_region_interaction.tsv": 2,
+    "ap1_mouse_omissions.tsv": 18,
+    "tsutsui_source_values.tsv": 317,
+    "tsutsui_endpoint_summary.tsv": 65,
+    "tsutsui_descriptive_ratios.tsv": 28,
+    "tsutsui_regulatory_gene_sets.tsv": 2107,
+    "tsutsui_gene_set_audit.tsv": 4,
+    "tp53_selected_gene_audit.tsv": 5538,
+    "tp53_signed_set_summary.tsv": 7,
+    "tp53_frozen_markers.tsv": 8
+  },
+  "inference_limits": "Selected-source extension; no raw-count fit, cell-as-replicate test or causal chromatin mediation"
+}

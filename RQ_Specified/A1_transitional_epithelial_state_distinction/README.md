@@ -1,7 +1,15 @@
 # A1: Distinguishing transitional epithelial states
 
-Updated 25 September 2026. **Status: adaptive closure analyses completed.**
-Start with [the closure report](reports/EVIDENCE_CLOSURE_REPORT.md) and
+Updated 25 September 2026. **Status: three-avenue continuation completed for
+usable public inputs.** Start with the
+[regulatory and outcome report](reports/REGULATORY_FATE_REPORT.md). All 22 HPCS
+aliases now resolve to mice; Hopx harvest timing is reconciled. AP-1 mouse-level
+source measurements show opposite regional HOPX responses. Tsutsui's regulatory
+library identities and culture endpoints are recovered, and TP53 source lists
+are audited for direction. The causal same-cell regulation-to-fate question
+remains open. Delivery branch: `codex/a1-regulatory-fate-linkage`; PR #73 merged.
+
+The previous [closure report](reports/EVIDENCE_CLOSURE_REPORT.md) and
 [the analysis-reference map](reports/ANALYSIS_REFERENCE_MAP.md). SRA original
 filenames unlock all eight CD44 mice: paired contrasts and a direct genotype
 interaction now run. HPCS biological labels are verified; stringent K12 changes
@@ -10,13 +18,13 @@ pruned analyses and precise external-input requirements. See also the
 [robustness report](reports/ROBUSTNESS_REPORT.md),
 [second-batch report](reports/SECOND_BATCH_REPORT.md), [figure gallery](figures/README.md)
 and [job status](JOBS.md). Original numerical runs and presentation evidence are
-preserved. PRs #70/#71 are merged; delivery branch: `codex/a1-evidence-closure`.
+preserved. The historical closure branch was `codex/a1-evidence-closure` (PR #73).
 
 The preceding second batch adds checked IRE1α sensitivities, 24 native-assembly histone tracks
 at 23 loci, a one-donor methylation-domain reference, and a newly recovered
 HPCS descendant source-composition table (5,333 cells, 22 source labels).
-H3 and window sensitivity qualify the histone patterns. HPCS source labels
-are not verified independent animals, and current mScarlet status is unavailable.
+H3 and window sensitivity qualify the histone patterns. HPCS mouse identities
+are now verified by the new animal table; current mScarlet remains unavailable.
 The results support specific follow-ups, not a universal state taxonomy.
 
 First-batch baseline:

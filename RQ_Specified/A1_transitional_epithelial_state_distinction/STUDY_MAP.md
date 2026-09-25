@@ -1,6 +1,15 @@
 # A1 study and assay map
 
-Latest closure audit: [report](reports/EVIDENCE_CLOSURE_REPORT.md) and
+Latest continuation: [regulatory and outcome report](reports/REGULATORY_FATE_REPORT.md).
+HPCS Supplementary Table 4 resolves all 22 retained mouse tags and IGO17543's
+14-week harvest. Tsutsui DDBJ full SRA records resolve 26 inhibitor CUT&Tag,
+32 organoid CUT&Tag and six fibroblast RNA libraries. Lynch's preprint microscopy
+source table supports a mouse-level regional HOPX comparison; it is separate
+from pooled multiome sequencing. Morowitz's TP53 preprint supplies selected DE
+tables, but GSE335749/335750 currently remain private. Prior holds below are
+historical where superseded by these explicit primary records.
+
+Previous closure audit: [report](reports/EVIDENCE_CLOSURE_REPORT.md) and
 [established analysis references](reports/ANALYSIS_REFERENCE_MAP.md). CD44's
 count/sample identities are recovered from original SRA filenames; paired
 contrasts and genotype interaction are complete. HPCS's biological labels and
