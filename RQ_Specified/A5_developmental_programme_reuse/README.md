@@ -1,36 +1,37 @@
-# A5: developmental programme reuse in adult repair
+# A5: developmental-gene recruitment in adult repair
 
-Question-specific work for [A5](../../RESEARCH_QUESTIONS.md#a5). The canonical
-hypothesis stays in the register.
+Read the [biological rationale](../A5_A11_shared_component_contract/BIOLOGICAL_LOGIC.md)
+and [prospective plan](PLAN.md). **The revised test is complete.** All 24 primary mice have positive paired
+changes: mean +0.735 detection percentage points (95% CI 0.579–0.892).
+The external identity- and identity/control-excluded modules remain positive
+under the declared Holm family. This supports partial signature recruitment,
+not shared lineage or repair function. Read the
+[full results](../A5_A11_shared_component_contract/reports/REVISED_TEST_RESULTS.md).
 
-**Status: cohort audited; no A5 plan or score yet.** Read the
-[data audit](DATA_AUDIT.md).
+The primary compares an external Guo 99-gene signature in transitional versus
+activated AT2 cells of the same injured mouse. External identity exclusions leave
+57 genes, then stress/cycling exclusions leave 53. These address distinct rivals.
+The original Strunz-filtered 94/51-gene variants remain descriptive.
 
-## Where A5 stands
+All 24 primary-reference mice and 26 resting-reference mice retain eligibility
+after the fixed 500-UMI depth filter. The test uses days 2–21 and at least 30 cells per arm.
+See [the corrected cohort audit](DATA_AUDIT.md).
 
-- **The developmental list exists.** The
-  [shared component contract](../A5_A11_shared_component_contract/README.md) sourced
-  it and froze a 94-gene development-specific module, which the owner retained.
-- **Neonatal animals are no longer required.** With an outside developmental list,
-  reuse can be tested inside adult injury, comparing transitional and type 2 cells
-  of the same mouse.
-- **A replicated cohort exists.** The Strunz 2020 time course has 26 independent
-  injured mice meeting the cell floors, with full gene coverage, and the
-  development-specific genes were never selected in its data.
-- **The main rival is identity.** Forty-three of the 94 genes are type 1 or type 2
-  identity genes, so the plan must separate reuse from type 1-directed identity.
+- `config/strunz_test_contract.json`: fixed design.
+- `tables/external_test_modules.json`: additional source-defined modules.
+- `scripts/02_freeze_external_test.py`: source freeze, no counts.
+- `tables/external_freeze_run.json`: provenance and hashes.
 
-## Next
+Original audit outputs remain in `tables/`; completed scores, gates and inference
+are in `tables/test_v1/`.
 
-Write A5's pre-registration, fixing the reference population, identity handling,
-depth budget and time window, then fetch the 76 MB count matrix and score. None of
-that has started.
+## Reproduce the completed test
 
-## Layout
-
-| Path | Contents |
-|---|---|
-| [DATA_AUDIT.md](DATA_AUDIT.md) | Cohort audit: units, coverage, circularity, rivals and open items |
-| `scripts/01_audit_strunz_units.py` | The audit, from cell labels and gene names only |
-| `tables/` | Per-mouse cell counts, module coverage and the run record |
-| `cache/` | The two fetched metadata files; ignored, hashes recorded in the script |
+Use the repository Python launcher with a compatible scientific environment.
+Run `scripts/02_freeze_external_test.py --source-root SOURCE --data-root DATA`
+only in a clean output directory; the tracked frozen definitions already exist.
+`scripts/03_score_external_test.py --source-root SOURCE` reads metadata from
+SOURCE and the downloaded matrix/barcodes from this folder's ignored `cache/`.
+Then run `Rscript scripts/04_inference.R REPO_ROOT`.
+The scripts refuse to overwrite results. Source URLs/hashes are recorded in
+`tables/audit_run.json`, `tables/external_freeze_run.json` and `tables/count_retrieval.json`.

@@ -1,0 +1,26 @@
+{
+  "completed_utc": "2026-09-25T13:26:55.426212+00:00",
+  "preregistration_commit": "eb5317e",
+  "code_commit": "19fa11613e56e088608a069ce5981d0df7f0e73d",
+  "script_sha256": "0bac553e3cbb5c10edaf894f4d711a761c164c5f9ed9342b3b806a2d8c9e2924",
+  "config_sha256": "2bdd8ae0dbc2c04c07f95744f8ab54b066fbff96498385605c69c71ce711bdb7",
+  "inputs": {
+    "X:\\GitHub\\scRNA_seq-component-contract\\RQ_Specified\\A5_developmental_programme_reuse\\cache\\GSE141259_HighResolution_cellinfo.csv.gz": "fe82e4a9c86720186c03c602148ea52118458e50a0847b869ce375b50a284da8",
+    "X:\\GitHub\\scRNA_seq-component-contract\\RQ_Specified\\A5_developmental_programme_reuse\\cache\\GSE141259_HighResolution_genes.txt.gz": "e7c86817507d191a030350c7f595661e283a0ff10a4f7d5b6fcf52b455892c04",
+    "X:\\GitHub\\scRNA_seq\\.worktrees\\a5-a11-biological-tests\\RQ_Specified\\A5_developmental_programme_reuse\\cache\\GSE141259_HighResolution_rawcounts.mtx.gz": "ebcf8825e94b787fef9ec69be98d8bdfd1a2adbd7359aeecc828062ab31b61b8",
+    "X:\\GitHub\\scRNA_seq\\.worktrees\\a5-a11-biological-tests\\RQ_Specified\\A5_developmental_programme_reuse\\cache\\GSE141259_HighResolution_barcodes.txt.gz": "5d61b289238aeb1c0dda40416378f074183a930d8362d57a98ac977e00d12b1c",
+    "X:\\GitHub\\scRNA_seq\\.worktrees\\a5-a11-biological-tests\\RQ_Specified\\A5_developmental_programme_reuse\\tables\\external_test_modules.json": "26740525bb07ab2b239789a680a1ca7a687075bb8edcfecb0948c9f59278c3ec"
+  },
+  "outputs": {
+    "cell_depth_gates.tsv": "0ea2c1b6b8869eb9e7436e30c0ee04620ceea5c05ef29bc2b13eab39b3d78d72",
+    "coverage.tsv": "324af4a6330594052de4613b99e2c1d26ad0b580ec881e23e3e699bc102eb322",
+    "gates.json": "afef44403d0c776c23069b828b478d191b5d2b0774b9129cadfee31a441c0ae6",
+    "paired_differences.tsv": "8c49afd16f27c2ba21bb4e4bb447e4cb0cb90ca0f75bc11352265cb8111e607f",
+    "unit_scores.tsv": "ef0e89ce4ec7498c3b53347139d39cbb97c9e084f89aa424991e59c12145e55e"
+  },
+  "software": {
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.3.3"
+  }
+}

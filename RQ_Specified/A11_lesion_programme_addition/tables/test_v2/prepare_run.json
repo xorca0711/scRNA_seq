@@ -1,0 +1,23 @@
+{
+  "completed_utc": "2026-09-25T13:45:25.885486+00:00",
+  "preregistration_commit": "eb5317e",
+  "code_commit": "19fa11613e56e088608a069ce5981d0df7f0e73d",
+  "script_sha256": "7c9d40207ee082e22f9c967d78840140ad489b29194c19d9e4e0b5d075f1dd75",
+  "config_sha256": "426b1b1e24a18332c11ba3c0323ee914f1cbe3413c027c58678087e9c5b33300",
+  "inputs": {
+    "X:\\GitHub\\scRNA_seq\\raw_data\\GSE131907\\GSE131907_Lung_Cancer_Feature_Summary.xlsx": "27bec6d22d2658e5cccab2bdd463e7b4e4ba342f795bdeb07fdb3f68084ff8e4",
+    "X:\\GitHub\\scRNA_seq\\raw_data\\GSE131907\\GSE131907_Lung_Cancer_cell_annotation.txt.gz": "9d017652a31a489c1f62cacc436936d48a5b07bb554fc0dbe602da7474532205",
+    "X:\\GitHub\\scRNA_seq\\raw_data\\GSE131907\\GSE131907_Lung_Cancer_raw_UMI_matrix.txt.gz": "b44a9c6635d0b59ec66b5eb6b40b40e7292c3a75aaf8afc4f933eb0550a26372"
+  },
+  "outputs": {
+    "cache\\test_v2\\counts.tsv.gz": "17b5d15d9eff09607943795761d8c3ca01e8c3ba660c776cd48a0a2d6e7c0acb",
+    "tables\\test_v2\\units.tsv": "7774cff95b0455c2a81f7440876c2302919afea0f8d8f33ce8361f599d0bb9bd",
+    "tables\\test_v2\\human_module_genes.tsv": "6032c6baf2801f5e574650ccac7dbbe93306bc8392232d00f7e9f1978ace8a89",
+    "tables\\test_v2\\instrument_check.tsv": "e1e405c5318907572c8c194e214a808f6c2dba21a87985dfce348aaa550ec4be"
+  },
+  "gene_rows": 29634,
+  "cells": 7490,
+  "patients": 8,
+  "pandas": "2.3.3",
+  "numpy": "2.4.6"
+}

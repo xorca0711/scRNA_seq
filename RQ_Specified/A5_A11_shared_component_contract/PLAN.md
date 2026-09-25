@@ -1,5 +1,7 @@
 # Shared epithelial component contract: prospective plan
 
+Current continuation: [biological logic and amended child tests](BIOLOGICAL_LOGIC.md). Unit-readiness statements below describe the original contract stage.
+
 25 September 2026. **Complete; the owner retained the frozen modules at stage 4.**
 The owner authorized execution of this plan. No expression score has been computed and
 no claim grade changes. The machine-readable specification is

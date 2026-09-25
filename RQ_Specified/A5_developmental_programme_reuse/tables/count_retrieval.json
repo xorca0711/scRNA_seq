@@ -1,0 +1,16 @@
+{
+  "retrieved_utc": "2026-09-25T13:19:22.865141+00:00",
+  "preregistration_commit": "eb5317e",
+  "files": {
+    "GSE141259_HighResolution_rawcounts.mtx.gz": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_HighResolution_rawcounts.mtx.gz",
+      "bytes": 76106578,
+      "sha256": "ebcf8825e94b787fef9ec69be98d8bdfd1a2adbd7359aeecc828062ab31b61b8"
+    },
+    "GSE141259_HighResolution_barcodes.txt.gz": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_HighResolution_barcodes.txt.gz",
+      "bytes": 171842,
+      "sha256": "5d61b289238aeb1c0dda40416378f074183a930d8362d57a98ac977e00d12b1c"
+    }
+  }
+}
