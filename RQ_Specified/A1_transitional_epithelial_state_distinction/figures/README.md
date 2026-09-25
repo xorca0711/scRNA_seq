@@ -1,8 +1,74 @@
 # A1 figure gallery
 
-Four figure groups were generated from real inputs on 25 September 2026.
-Read the [batch report](../reports/FIRST_BATCH_REPORT.md) for models, results,
-source hashes and limits. PNGs below have adjacent SVG versions.
+The verified second batch adds five figure groups to the four first-batch
+groups. Read the [second-batch report](../reports/SECOND_BATCH_REPORT.md) and
+[first-batch report](../reports/FIRST_BATCH_REPORT.md) for models, source hashes
+and limits. PNGs below have adjacent SVG versions. Original second-batch renders
+remain preserved under `second_batch/`; the corrected versions are below.
+
+## IRE1α omission and batch sensitivity
+
+![IRE1α stability](second_batch_verified/a1_ire1_stability.png)
+
+Eight frozen markers, ten nine-mouse omission fits and the six-mouse S061 fit.
+Seven markers retain direction in every omission; Ager does so in nine.
+Dots are point estimates, not confidence intervals. Whole-family discoveries
+range from 1 to 264 versus 4 in the primary analysis. TGF-β passes pathway FDR
+only for omission of mouse 148; the primary pathway result remains nonsignificant.
+S135 (two per arm) stays descriptive in the
+[table](../tables/second_batch_verified/ire1_focus_stability.tsv).
+The four post-selection primary discoveries remain outside this marker panel.
+[SVG](second_batch_verified/a1_ire1_stability.svg).
+
+## Direct histone profiles and controls
+
+![Native-assembly histone locus profiles](second_batch_verified/a1_histone_loci.png)
+
+Three frozen loci, four marks including H3, three induced states and both
+CUT preparations from one B2-3 iPSC line. Native CHM13 coordinates, gene-boundary
+TSSs and 100-bp means. Axes scale independently across locus/mark. CPM is not
+absolute or spike-in-scaled occupancy. [Values](../tables/direct_marks_2026-09-25/locus_tracks.tsv),
+[SVG](second_batch_verified/a1_histone_loci.svg).
+
+![All frozen promoter loci and H3 controls](second_batch_verified/a1_histone_promoters.png)
+
+All 23 loci and both preparations, ±1-kb windows. First three panels display
+log2(mark/H3) differences; the fourth displays H3 differences. Grey indicates
+failure of the frozen coverage/positive-signal rule. CDKN1A shows higher
+H3K27ac/H3 and lower H3K27me3/H3 versus iAT2 in both preparations, but other
+loci disagree or change direction under H3 normalization. The
+[complete ±1/±5-kb sensitivity table](../tables/second_batch_verification/histone_window_and_H3_sensitivity.tsv)
+retains counterexamples and held ratios. These are descriptive preparations,
+not population tests. [SVG](second_batch_verified/a1_histone_promoters.svg).
+
+## Normal-differentiation methylation-domain reference
+
+![Normal-differentiation domain context](second_batch_verified/a1_methylation_domains.png)
+
+One donor at D0/D4/D6, hg19 ±1-kb promoters. Colour is promoter fraction
+overlapping an author-called UMR, LMR or PMD, not CpG methylation percentage.
+Classes are separate annotations, not an assumed partition. The main panel
+assumes one-based inclusive domains; the alternative BED convention changes
+fractions by at most 0.0005. No replicated DMR or purified transitional state
+is inferred. [Values](../tables/direct_marks_2026-09-25/methylation_domain_overlap.tsv),
+[SVG](second_batch_verified/a1_methylation_domains.svg).
+
+## HPCS trace-linked descendant source composition
+
+![HPCS source composition](hpcs_source_composition/a1_hpcs_source_composition.png)
+
+5,333 retained author-designated traced cells across 22 source labels. Each
+bar retains every RNA-state category, including zeros; N denotes captured
+cells, not biological replicates. Source labels, driver and chase are linked
+to author hash assignments and GEO libraries in the
+[manifest](../tables/hpcs_source_composition/source_manifest.tsv).
+Current mScarlet is absent in these traced rows. Mouse/pool independence and
+the IGO17543 age discrepancy remain unresolved, so the panel is a descriptive
+source reproduction with no p-values or transition rates. Source means and
+cell-pooled fractions are reported separately in the
+[summary](../tables/hpcs_source_composition/group_descriptive_summary.tsv).
+[Counts](../tables/hpcs_source_composition/source_state_counts.tsv),
+[SVG](hpcs_source_composition/a1_hpcs_source_composition.svg).
 
 ## IRE1α perturbation: sample structure and treatment effects
 
@@ -69,8 +135,8 @@ histone-modification or fate questions.
 |---|---|---|
 | A1-1 | Sampling and modality-specific state maps | Assay/design diagram; separate RNA and ATAC UMAPs; cross-assignment matrix |
 | A1-2 | Sample-level accessible regulatory programmes | PCA with paired sources joined; accessibility effects; motif heatmap; genome tracks |
-| A1-3 | Direct histone marks and methylation reference | Mark-specific locus tracks and heatmaps; observed methylation fractions with coverage |
-| A1-4 | Measured lineage, then testable time/topology | Mouse-level endpoints first; measured descendant matrix; trajectory only with a validation endpoint |
+| A1-3 | Direct histone marks and methylation reference | Descriptive tracks/domain heatmap completed above; replicated direct-mark effects and promoter CpG estimates remain future work |
+| A1-4 | Measured lineage, then testable time/topology | PATS mouse endpoints and HPCS source-composition table completed; verified HPCS biological units and independently testable trajectory remain future work |
 | A1-5 | Functional perturbation and linked phenotype | RNA response, eligible pathways and separately measured differentiation/fibroblast outcomes |
 | A1-6 | Optional tissue proteins and cross-assay synthesis | Donor/ROI protein, morphology and regional effects; measured-versus-inferred evidence matrix |
 

@@ -9,6 +9,12 @@ RQ_Specified/** -text whitespace=cr-at-eol
 RQ_Specified/A1_transitional_epithelial_state_distinction/figures/*.svg whitespace=cr-at-eol,-blank-at-eol
 RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ire1_R.log whitespace=cr-at-eol,-blank-at-eol
 RQ_Specified/A1_transitional_epithelial_state_distinction/tables/ire1/R_session.txt whitespace=cr-at-eol,-blank-at-eol
+# Nested A1 renders and R logs retain their recorded generator output.
+RQ_Specified/A1_transitional_epithelial_state_distinction/figures/**/*.svg whitespace=cr-at-eol,-blank-at-eol
+RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ire1_stability_R.log whitespace=cr-at-eol,-blank-at-eol
+RQ_Specified/A1_transitional_epithelial_state_distinction/tables/ire1_stability_2026-09-25/R_session.txt whitespace=cr-at-eol,-blank-at-eol
+# A trailing tab is an intentionally missing final TSV field, not removable whitespace.
+RQ_Specified/A1_transitional_epithelial_state_distinction/tables/**/*.tsv whitespace=cr-at-eol,-blank-at-eol
 
 # Preserve exact bytes in correction sources and evidence with recorded hashes.
 analysis/corrections/** -text whitespace=cr-at-eol

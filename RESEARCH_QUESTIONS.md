@@ -74,8 +74,14 @@ closure or its timing (C131/C133). The completed
 [first batch](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/FIRST_BATCH_REPORT.md)
 adds measured PATS endpoints, a separate ten-mouse IRE1α RiboTag contrast and
 descriptive ATAC/CD44 profiles. Four of 14,811 genes pass whole-family FDR;
-none of the predefined markers or eligible pathways does. These are motivations
-for multimodal distinctions, not an established epigenetic taxonomy.
+none of the predefined markers or eligible pathways does. The verified
+[second batch](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/SECOND_BATCH_REPORT.md)
+adds directionally stable but significance-sensitive IRE1α effects, direct
+histone profiles at 23 loci in two induced-cell preparations, and one-donor
+methylation-domain context. Histone directions can depend on H3/window choice.
+Recovered HPCS trace-linked RNA composition covers 5,333 cells / 22 source
+labels; biological-unit independence and current mScarlet remain unresolved.
+These within-context measurements do not establish an epigenetic taxonomy.
 
 **Rivals and test.** A common regulatory continuum, distinct branches, and
 different routes sharing stress RNA remain alternatives. Compare frozen
@@ -92,12 +98,13 @@ discriminator. Incompatible callers, pooled identities or low replication leave
 it inconclusive. The [plan](RQ_Specified/A1_transitional_epithelial_state_distinction/PLAN.md),
 [assay map](RQ_Specified/A1_transitional_epithelial_state_distinction/STUDY_MAP.md)
 and [lineage audit](RQ_Specified/A1_transitional_epithelial_state_distinction/LINEAGE_AUDIT.md)
-govern the input gate. Temporal closure or memory additionally needs actual
+govern the input gate. PATS track scaling, TIGIT pool membership, CD44 count
+identities and HPCS source/age reconciliation remain specific holds. Temporal closure or memory additionally needs actual
 time/fate evidence (A14).
 
 **Figures / contracts.** [Existing assay and endpoint panels](RQ_Specified/A1_transitional_epithelial_state_distinction/figures/README.md);
-future primary panels: replicate-level direct-mark effects and measured descendant
-or functional outcomes. [Depth panels](analysis/figures/rq/README.md#a1) are
+Descriptive direct-mark and descendant-source panels are available; independently
+replicated regulatory/endpoint tests remain future work. [Depth panels](analysis/figures/rq/README.md#a1) are
 supporting diagnostics. [MC1–MC2](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1).
 
 <a id="a2-which-cells-express-areg-and-how-sensitive-are-candidate-rankings-to-the-resource"></a>

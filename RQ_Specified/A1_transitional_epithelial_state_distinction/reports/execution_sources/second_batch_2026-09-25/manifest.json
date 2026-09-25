@@ -1,0 +1,21 @@
+{
+  "scope": "Exact executed source bytes; script 16 archived before an unrendered legend-position edit. Do not execute archive to bypass overwrite guards.",
+  "files": [
+    {
+      "file": "11_run_ire1_stability.py",
+      "sha256": "4b2286fb69dbf0c309d23bc8dd3761598bf45be5200e162ac9749061a5f5a52b"
+    },
+    {
+      "file": "12_fit_ire1_stability.R",
+      "sha256": "eabb8c76819994017c58a8a23d1dc27588a1274f981901541b60f33ffa04c298"
+    },
+    {
+      "file": "15_quantify_direct_marks.py",
+      "sha256": "db7b12385b6355b7a13dbe2d4b91456342b5745149b91979e1bed1c1dae8ab46"
+    },
+    {
+      "file": "16_summarize_second_batch.py",
+      "sha256": "21440e7349acf176bb5d55197d0f6a888d52ffe62c5074ab2d931a21f5f17d55"
+    }
+  ]
+}

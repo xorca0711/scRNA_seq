@@ -7,6 +7,13 @@ results and earlier repository analyses informed the hypotheses. The owner autho
 checks are not biological results. Sources and assay availability
 are in [STUDY_MAP.md](STUDY_MAP.md) and [metadata](metadata/README.md).
 
+**Execution update, 25 September 2026:** the [second batch](reports/SECOND_BATCH_REPORT.md)
+is verified: IRE1α sensitivity, native-CHM13 direct marks, hg19 methylation-domain
+context and a descriptive HPCS descendant source reconstruction. PATS timing is
+resolved. PATS track normalization, TIGIT/CD44 identities and HPCS independent
+units/current reporter/age reconciliation remain separate holds. The original
+stage specifications below describe the broader programme, not completed tests.
+
 ## Question and possible answers
 
 Current biological framing: [canonical A1](../../RESEARCH_QUESTIONS.md#a1).

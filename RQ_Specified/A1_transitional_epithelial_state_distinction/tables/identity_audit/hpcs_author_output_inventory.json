@@ -1,0 +1,96 @@
+[
+  {
+    "notebook": "cache/followup_sources/hpcs/tracing_depletion_analysis/04_Evaluate_traced_cells_Slc4a11.ipynb",
+    "sha256": "d6b909e714be9dfaa1e55e96f2d993bc48e61f60af14275fa1209dc2faf3f47c",
+    "cells": [
+      {
+        "cell_index_zero_based": 11,
+        "source_sha256": "b95c28bfbf0012f19decb5204baa37a85538bfaaf976d0a3cc5e1fd13eb5aa65",
+        "saved_text_outputs": []
+      },
+      {
+        "cell_index_zero_based": 12,
+        "source_sha256": "e879bdd6bc60922ae7a5b096e33de6c91175862fefc0e1fef709e4a4b79fd45f",
+        "saved_text_outputs": [
+          "batch             Group             \ntraced            6wk_3d                  586\n                  8wk                     742\n                  12wk_3d                 877\n                  14wk                    991\ndepletion         Saline                10660\nuntraced_14wk     KPT                    1903\nHopx-MACD         Hopx_GFP+mScarlet+     5660\n                  Hopx_GFP+mScarlet-     4846\nHopx-MACD_traced  Hopx_12wk3d            1226\n                  Hopx_12wk14d            911\nName: count, dtype: int64"
+        ]
+      },
+      {
+        "cell_index_zero_based": 29,
+        "source_sha256": "1cf47caca2bebb8de1b9e14e292b870a8fafef0b5c3ef273aef4c6e0d2f1e1d8",
+        "saved_text_outputs": [
+          "<Figure size 320x320 with 1 Axes>"
+        ]
+      },
+      {
+        "cell_index_zero_based": 61,
+        "source_sha256": "f6fda3a699ff66c069460954e3ed75b33eec1e48c8c62326dc68898601d4f3ac",
+        "saved_text_outputs": [
+          "<Figure size 320x320 with 1 Axes>"
+        ]
+      },
+      {
+        "cell_index_zero_based": 73,
+        "source_sha256": "0d2eb23712025c2e60696375a4814922e52c085921a4a3514c262b51aa8ae398",
+        "saved_text_outputs": [
+          "   Classification cell type  proportion\n0    BO1535_B0302      HPCS    0.894737\n5    BO1540_B0303      HPCS    0.938356\n10   BR1128_B0307      HPCS    0.964286\n15   BR1615_B0304      HPCS    0.924051\n20   BS1265_B0305      HPCS    0.932584\nHPCS mean: 0.9308027246697707 +/- 0.025138006961393584\nnot HPCS mean: 0.06919727533022943 +/- 0.025138006961393587\n"
+        ]
+      },
+      {
+        "cell_index_zero_based": 74,
+        "source_sha256": "5ed2dda7fb3c23135fab4efb3a7899b3fbfe5dc87e88e316de6a200a97622d1f",
+        "saved_text_outputs": [
+          "   Classification cell type  proportion\n0    BL1121_B0304      HPCS    0.736842\n8    BL1124_B0305      HPCS    0.761194\n16   BL1233_B0306      HPCS    0.465517\n24   BL1237_B0302      HPCS    0.782427\n32   BL1606_B0303      HPCS    0.570621\n40   BL1646_B0301      HPCS    0.754902\nHPCS mean: 0.6785839307411266 +/- 0.1295218354850731\nnot HPCS mean: 0.3214160692588734 +/- 0.1295218354850731\n"
+        ]
+      },
+      {
+        "cell_index_zero_based": 77,
+        "source_sha256": "d10f8edaeebfcc01ae36ec52610b845b9f982bf69b3b6e2a2659e8865d36a221",
+        "saved_text_outputs": [
+          "HPCS mean: 0.7932288370723285 +/- 0.1612143935703585\n"
+        ]
+      }
+    ],
+    "interpretation": "Author-saved output only; no independent reanalysis or verified mouse/pool mapping"
+  },
+  {
+    "notebook": "cache/followup_sources/hpcs/tracing_depletion_analysis/05_Evaluate_traced_cells_Hopx.ipynb",
+    "sha256": "3deec45c43ee7a272f12f7f31c19cbb73165b2e0f9a0331064c48d6babd89551",
+    "cells": [
+      {
+        "cell_index_zero_based": 11,
+        "source_sha256": "b95c28bfbf0012f19decb5204baa37a85538bfaaf976d0a3cc5e1fd13eb5aa65",
+        "saved_text_outputs": []
+      },
+      {
+        "cell_index_zero_based": 12,
+        "source_sha256": "e879bdd6bc60922ae7a5b096e33de6c91175862fefc0e1fef709e4a4b79fd45f",
+        "saved_text_outputs": [
+          "batch             Group             \ntraced            6wk_3d                  586\n                  8wk                     742\n                  12wk_3d                 877\n                  14wk                    991\ndepletion         Saline                10660\nuntraced_14wk     KPT                    1903\nHopx-MACD         Hopx_GFP+mScarlet+     5660\n                  Hopx_GFP+mScarlet-     4846\nHopx-MACD_traced  Hopx_12wk3d            1226\n                  Hopx_12wk14d            911\nName: count, dtype: int64"
+        ]
+      },
+      {
+        "cell_index_zero_based": 36,
+        "source_sha256": "ebc916992a25f30ae2503f7faa4303cda23fc80990318a4aa23134e0ef377777",
+        "saved_text_outputs": [
+          "<Figure size 320x320 with 1 Axes>"
+        ]
+      },
+      {
+        "cell_index_zero_based": 55,
+        "source_sha256": "3a5f28d6aadea0262672e40e9436d9e98263414368bd166617ee370cb12762e1",
+        "saved_text_outputs": [
+          "HPCS mean: 0.04767397154940407 +/- SD: 0.011146242994482292 or SEM: 0.007881584006151477\nnot HPCS mean: 0.9523260284505959 +/- SD: 0.011146242994482273 or SEM: 0.007881584006151465\nAT1-like mean: 0.47159479260113635 +/- SD: 0.0772723112744174 or SEM: 0.05463977530009825\nnot AT1-like mean: 0.5284052073988637 +/- SD: 0.07727231127441736 or SEM: 0.05463977530009822\n"
+        ]
+      },
+      {
+        "cell_index_zero_based": 56,
+        "source_sha256": "1a44c1bea9b268bfc0649ab2f3633a947fc059bad5a982cc055d556e15e2454d",
+        "saved_text_outputs": [
+          "HPCS mean: 0.0432409972299169 +/- SD: 0.03286773348562401 or SEM: 0.023240997229916897\nnot HPCS mean: 0.9567590027700831 +/- SD: 0.032867733485624016 or SEM: 0.0232409972299169\nAT1-like mean: 0.6506824477461597 +/- SD: 0.04660387478522869 or SEM: 0.03295391589020396\nnot AT1-like mean: 0.34931755225384037 +/- SD: 0.04660387478522869 or SEM: 0.03295391589020396\n"
+        ]
+      }
+    ],
+    "interpretation": "Author-saved output only; no independent reanalysis or verified mouse/pool mapping"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-25T08:25:26.970180+00:00",
+  "status": "passed",
+  "checks": {
+    "compileall": "passed",
+    "repository_unittest": "24 tests; OK, one expected scientific-runtime skip",
+    "A1_scientific_runtime_unittest": "11 tests; OK, no skips",
+    "claim_contract": "18 numeric bindings passed",
+    "Nb1_verifier": "17 output hashes plus code/protocol/panel/units/denominators verified",
+    "repository_validator": "2325 checks passed after final documentation and archive links",
+    "git_diff_check": "passed"
+  },
+  "scientific_evidence": [
+    "reports/second_batch_verification.json",
+    "reports/delivery_evidence_audit.json",
+    "reports/hpcs_source_composition_run.json"
+  ],
+  "visual_QA": "All five new/corrected PNG figures visually inspected; SVG XML/text checked",
+  "execution_archive_sha256": "4cecbc5f92bc62cd721b6558d8695da2f8b42ada58f0df1465aa7b513e950b6e"
+}

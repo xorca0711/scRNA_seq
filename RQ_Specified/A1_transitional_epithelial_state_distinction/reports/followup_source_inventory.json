@@ -1,0 +1,92 @@
+[
+  {
+    "name": "cd44_source.xlsx",
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-63735-1/MediaObjects/41467_2025_63735_MOESM4_ESM.xlsx",
+    "path": "cache/followup_sources/cd44_source.xlsx",
+    "bytes": 663667,
+    "sha256": "ed69c9e0afa6f15c71b85f8cc4ac63356fbc3e28206e983d065ea7bfeff308a7",
+    "cache_reused": true,
+    "checked_utc": "2026-09-25T07:44:54.897600+00:00"
+  },
+  {
+    "name": "tsutsui_source.xlsx",
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-68909-z/MediaObjects/41467_2026_68909_MOESM9_ESM.xlsx",
+    "path": "cache/followup_sources/tsutsui_source.xlsx",
+    "bytes": 68397,
+    "sha256": "f59fb7a0c4ecfe2f86683b9d28836be88c1f213ba249725c6a1fcff319febb07",
+    "cache_reused": true,
+    "checked_utc": "2026-09-25T07:44:54.899609+00:00"
+  },
+  {
+    "name": "KatzenLab_repos.json",
+    "url": "https://api.github.com/users/KatzenLab/repos?per_page=100",
+    "path": "cache/followup_sources/KatzenLab_repos.json",
+    "bytes": 5568,
+    "sha256": "f9bad40f4e759b5edf268be9962b940da7b38880e3b163b0ca605b75e3461da6",
+    "cache_reused": true,
+    "checked_utc": "2026-09-25T07:44:54.893581+00:00"
+  },
+  {
+    "name": "katzen_tree.json",
+    "url": "https://api.github.com/repos/KatzenLab/SFTPC_Mutant_Mice-Code/git/trees/main?recursive=1",
+    "path": "cache/followup_sources/katzen_tree.json",
+    "bytes": 437,
+    "sha256": "af165656e9fcb13f8d26c6c9f4ca39bbe94c52bb3049e712e13bbd4eb7a33c9b",
+    "cache_reused": true,
+    "checked_utc": "2026-09-25T07:44:54.897600+00:00"
+  },
+  {
+    "name": "katzen_Manuscript_code",
+    "url": "https://raw.githubusercontent.com/KatzenLab/SFTPC_Mutant_Mice-Code/0be3a649b6c8c72a5d64787a9ac6f3023ddba52d/Manuscript_code",
+    "path": "cache/followup_sources/katzen_Manuscript_code",
+    "bytes": 9517,
+    "sha256": "fa4b628a6b770acb14518fc191452fd6f26dbca0c7d20b38456e92b33934047e",
+    "cache_reused": true,
+    "checked_utc": "2026-09-25T07:44:54.897600+00:00"
+  },
+  {
+    "name": "hpcs_code_tree.json",
+    "url": "https://api.github.com/repos/dbetel/HPCS_LUAD/git/trees/main?recursive=1",
+    "path": "cache/followup_sources/hpcs_code_tree.json",
+    "bytes": 35501,
+    "sha256": "f86f802bed85696531cc0c96b6863f8e9672be0fe6b592cbce044fffca917973",
+    "cache_reused": false,
+    "checked_utc": "2026-09-25T07:44:55.732221+00:00"
+  },
+  {
+    "name": "mintchip_tree.json",
+    "url": "https://api.github.com/repos/jianhong/MintChIP/git/trees/master?recursive=1",
+    "path": "cache/followup_sources/mintchip_tree.json",
+    "bytes": 4610,
+    "sha256": "604a9d588f5502173b9da96b0b110717e10315cba662a764811af8b40480f534",
+    "cache_reused": true,
+    "checked_utc": "2026-09-25T07:44:54.900154+00:00"
+  },
+  {
+    "name": "mintchip_main.nf",
+    "url": "https://raw.githubusercontent.com/jianhong/MintChIP/b0b7eb7f8c0c4ee6f9c3c90f17b1b1207708f71a/main.nf",
+    "path": "cache/followup_sources/mintchip_main.nf",
+    "bytes": 14787,
+    "sha256": "4d7c11271d72d7bc46faa5d50d6df51a326bc8cba3bc7f9b80dd19ba1bbc8bd4",
+    "cache_reused": true,
+    "checked_utc": "2026-09-25T07:44:54.902159+00:00"
+  },
+  {
+    "name": "pats_bioc.xml",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC7461628/unicode",
+    "path": "cache/followup_sources/pats_bioc.xml",
+    "bytes": 125106,
+    "sha256": "3cf92594efbe6783e4293061eafa9fd0f4fe002185e4fff2bfc643c688c78ea5",
+    "cache_reused": true,
+    "checked_utc": "2026-09-25T07:44:54.900154+00:00"
+  },
+  {
+    "name": "hpcs_bioc.xml",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC7745838/unicode",
+    "path": "cache/followup_sources/hpcs_bioc.xml",
+    "bytes": 279912,
+    "sha256": "89e95717b4cb5630eb716df8b556c9479d6bec3efa73623bd4397eec1e8ce195",
+    "cache_reused": true,
+    "checked_utc": "2026-09-25T07:44:54.902159+00:00"
+  }
+]

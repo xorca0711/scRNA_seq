@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-25T08:06:26.363268+00:00",
+  "author_code_commit": "b52d53c984e21d3bb3a163041fdb3f56b54c19c0",
+  "code_sha256": "785529acd5f8f477fb4c50c69687d03b6fce8f24284ae4b171c1f374e7f30a5f",
+  "file_ceiling_bytes": 20971520,
+  "files": [
+    {
+      "path": "cache/followup_sources/hs1.chrom.sizes",
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hs1/bigZips/hs1.chrom.sizes",
+      "bytes": 375,
+      "sha256": "acd8997731252a8315286f89ac12a4f03d6cf84f2848189bba41463386cf9be7"
+    },
+    {
+      "path": "cache/followup_sources/cd44_submitted_files.tsv",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA1140210&result=read_run&fields=run_accession,experiment_accession,sample_accession,sample_title,submitted_ftp&format=tsv",
+      "bytes": 999,
+      "sha256": "13ef39c622a740ce24b31305477676f0e8804048254d86a46287e35cb648ac88"
+    }
+  ]
+}

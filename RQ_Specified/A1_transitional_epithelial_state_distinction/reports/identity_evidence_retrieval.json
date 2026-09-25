@@ -1,0 +1,97 @@
+{
+  "utc": "2026-09-25T08:01:23.618864+00:00",
+  "author_code_commit": "b52d53c984e21d3bb3a163041fdb3f56b54c19c0",
+  "code_sha256": "78ae0e459e2bef7af11ecc826717cec7bd638a03ac132a93f2380c69b8a0377f",
+  "file_ceiling_bytes": 20971520,
+  "files": [
+    {
+      "path": "cache/followup_sources/hpcs/README.md",
+      "url": "https://raw.githubusercontent.com/dbetel/HPCS_LUAD/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/README.md",
+      "bytes": 11761,
+      "sha256": "928e8a1d75b8875ebc96cf92dae0785f83abd88b5813b77060c2defc06bd653f"
+    },
+    {
+      "path": "cache/followup_sources/hpcs/tracing/IGO15600/README.md",
+      "url": "https://raw.githubusercontent.com/dbetel/HPCS_LUAD/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/tracing/IGO15600/README.md",
+      "bytes": 508,
+      "sha256": "d5edf26d5da4fab9822a97dced54919902ecd211215274a14d6456dbcc26315a"
+    },
+    {
+      "path": "cache/followup_sources/hpcs/tracing/IGO15600_IGO15601_IGO15771_IGO16686_IGO17402_IGO17543_combined/IGO15600_IGO15601_IGO15771_IGO16686_IGO17402_combined.ipynb",
+      "url": "https://raw.githubusercontent.com/dbetel/HPCS_LUAD/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/tracing/IGO15600_IGO15601_IGO15771_IGO16686_IGO17402_IGO17543_combined/IGO15600_IGO15601_IGO15771_IGO16686_IGO17402_combined.ipynb",
+      "bytes": 173840,
+      "sha256": "9ba8f993b118f6de9656cefc904dfcd8ef9214ff72759409f79250b4c33822ed"
+    },
+    {
+      "path": "cache/followup_sources/hpcs/tracing/IGO15600_IGO15601_IGO15771_IGO16686_IGO17402_IGO17543_combined/README.md",
+      "url": "https://raw.githubusercontent.com/dbetel/HPCS_LUAD/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/tracing/IGO15600_IGO15601_IGO15771_IGO16686_IGO17402_IGO17543_combined/README.md",
+      "bytes": 552,
+      "sha256": "eca0135f569d8f595ad9a9e4e2dc8f3f1b9b3b205e01dc663ab675c389d6de20"
+    },
+    {
+      "path": "cache/followup_sources/hpcs/tracing/IGO15601/README.md",
+      "url": "https://raw.githubusercontent.com/dbetel/HPCS_LUAD/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/tracing/IGO15601/README.md",
+      "bytes": 507,
+      "sha256": "573f84962cf1dea49c904a39764e58b64070c3ac7762f2dfd4053c1f61d0881a"
+    },
+    {
+      "path": "cache/followup_sources/hpcs/tracing/IGO15771/README.md",
+      "url": "https://raw.githubusercontent.com/dbetel/HPCS_LUAD/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/tracing/IGO15771/README.md",
+      "bytes": 508,
+      "sha256": "2d8ff293866832bc2f7ea08a43a1873d9cf479438ca6a3e7c081ef10ce4b0374"
+    },
+    {
+      "path": "cache/followup_sources/hpcs/tracing/IGO16686/README.md",
+      "url": "https://raw.githubusercontent.com/dbetel/HPCS_LUAD/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/tracing/IGO16686/README.md",
+      "bytes": 507,
+      "sha256": "80c995ba16fa13b6c91afb6bc5ffa0a01206e551cfc74f16ad7f7180931bf9ce"
+    },
+    {
+      "path": "cache/followup_sources/hpcs/tracing/IGO17402/README.md",
+      "url": "https://raw.githubusercontent.com/dbetel/HPCS_LUAD/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/tracing/IGO17402/README.md",
+      "bytes": 652,
+      "sha256": "467410f4953be683bfc8dff88b54896ed94cb3364557567bf1c9aee6cc335f06"
+    },
+    {
+      "path": "cache/followup_sources/hpcs/tracing/IGO17543/README.md",
+      "url": "https://raw.githubusercontent.com/dbetel/HPCS_LUAD/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/tracing/IGO17543/README.md",
+      "bytes": 506,
+      "sha256": "3de731c85f0e9cd55380bf06229bfcfa403302fb48b451121f790238b6a81053"
+    },
+    {
+      "path": "cache/followup_sources/hpcs/tracing/README.md",
+      "url": "https://raw.githubusercontent.com/dbetel/HPCS_LUAD/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/tracing/README.md",
+      "bytes": 2092,
+      "sha256": "8dbbad92b1019724b3b232bdd9fc9d2eb58282c953c63480192b6c242eab141e"
+    },
+    {
+      "path": "cache/followup_sources/hpcs/tracing_depletion_analysis/04_Evaluate_traced_cells_Slc4a11.ipynb",
+      "url": "https://raw.githubusercontent.com/dbetel/HPCS_LUAD/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/tracing_depletion_analysis/04_Evaluate_traced_cells_Slc4a11.ipynb",
+      "bytes": 12762973,
+      "sha256": "d6b909e714be9dfaa1e55e96f2d993bc48e61f60af14275fa1209dc2faf3f47c"
+    },
+    {
+      "path": "cache/followup_sources/hpcs/tracing_depletion_analysis/05_Evaluate_traced_cells_Hopx.ipynb",
+      "url": "https://raw.githubusercontent.com/dbetel/HPCS_LUAD/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/tracing_depletion_analysis/05_Evaluate_traced_cells_Hopx.ipynb",
+      "bytes": 6424910,
+      "sha256": "3deec45c43ee7a272f12f7f31c19cbb73165b2e0f9a0331064c48d6babd89551"
+    },
+    {
+      "path": "cache/followup_sources/hpcs/tracing_depletion_analysis/README.md",
+      "url": "https://raw.githubusercontent.com/dbetel/HPCS_LUAD/b52d53c984e21d3bb3a163041fdb3f56b54c19c0/tracing_depletion_analysis/README.md",
+      "bytes": 1884,
+      "sha256": "932d56d6233d996d0b88b4cbbdd842b28800bf537ef446b93f9a7036d3d3365b"
+    },
+    {
+      "name": "chm13v2.0.fa.gz.fai",
+      "url": "https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/chm13v2.0.fa.gz.fai",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "cache/followup_sources/zenodo_17662770.json",
+      "url": "https://zenodo.org/api/records/17662770",
+      "bytes": 4177,
+      "sha256": "fb3395e034009323fbcaeffe6814b7137cd6638e54be46cb6b2c4235ca103265"
+    }
+  ]
+}
