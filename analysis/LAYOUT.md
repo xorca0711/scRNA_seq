@@ -2,8 +2,10 @@
 
 `analysis/` holds what is shared across deposits: the pipeline, its
 configuration, the repository-level figures and the raw-data inventory.
-Paper-specific data and inference live under `Thesis/`, beside the study that
-motivated them, since 2026-09-21. Cross-study corrections remain in
+Paper-specific data and inference live under `Research Article/`, beside the study that
+motivated them (paper layout established 2026-09-21; directory renamed 2026-09-25).
+Question-specific plans and future analyses live in `RQ_Specified/`.
+Cross-study corrections remain in
 `analysis/corrections/`. Shared RQ figures and their compact plotted tables
 belong in `analysis/figures/rq/`, even when they draw on one study's results.
 The [repository structure contract](../docs/REPOSITORY_STRUCTURE.md) defines
@@ -28,12 +30,12 @@ analysis/
 
 | Series | Location | Why there |
 |---|---|---|
-| GSE262927, mouse, 33 samples, H1N1 time course | [`Thesis/gate1_01_niethamer_2025/GSE262927/`](../Thesis/gate1_01_niethamer_2025/GSE262927/README.md) | Niethamer et al. 2025 deposited it; roadmap paper 1 |
-| GSE178360, human, 3 donors, distal lung | [`Thesis/ungated_murthy_2022/GSE178360/`](../Thesis/ungated_murthy_2022/GSE178360/README.md) | Kadur Lakshminarasimha Murthy et al. 2022 deposited it; the paper is outside the roadmap, so the folder carries only a pointer note |
+| GSE262927, mouse, 33 samples, H1N1 time course | [`Research Article/gate1_01_niethamer_2025/GSE262927/`](../Research%20Article/gate1_01_niethamer_2025/GSE262927/README.md) | Niethamer et al. 2025 deposited it; roadmap paper 1 |
+| GSE178360, human, 3 donors, distal lung | [`Research Article/ungated_murthy_2022/GSE178360/`](../Research%20Article/ungated_murthy_2022/GSE178360/README.md) | Kadur Lakshminarasimha Murthy et al. 2022 deposited it; the paper is outside the roadmap, so the folder carries only a pointer note |
 
 `pipeline_utils.SERIES_DIRS` is the one place the locations are written;
 every script and trial derives its paths from it or from the equivalent
-`REPO / "Thesis" / ...` constant. Run records and logs written before the
+`REPO / "Research Article" / ...` constant. Run records and logs written before the
 move keep the `analysis/GSE...` paths of their day; they are artefacts, not
 pointers, and are not edited.
 
@@ -64,7 +66,7 @@ Both have the same structure:
 
 ## The mouse analyses differ by cohort, and this matters
 
-| Directory (under `Thesis/gate1_01_niethamer_2025/GSE262927/`) | Cells | Cohort | Purpose |
+| Directory (under `Research Article/gate1_01_niethamer_2025/GSE262927/`) | Cells | Cohort | Purpose |
 |---|---:|---|---|
 | top level | 162,175 | **all 33 samples** | Whole-atlas survey: 29 clusters, marker tables, composition. General-purpose object. |
 | `regeneration_focus/` | 5,694 alveolar; 43,359 capillary | 25-sample annotated atlas | **The biology.** AT2 to Krt8-positive transitional to AT1 trajectory, and the persistent injury-induced capillary state. |
@@ -89,8 +91,8 @@ their own [methods and reproduction commands](figures/rq/il1b_context/REPORT.md)
 | what was actually run, with parameters | [`../docs/PIPELINE_AS_RUN.md`](../docs/PIPELINE_AS_RUN.md) |
 | why each decision was made | [`../docs/ANALYSIS_RATIONALE.md`](../docs/ANALYSIS_RATIONALE.md) |
 | background (non-computational reader) | [`../docs/UMAP_AND_FIGURES.md`](../docs/UMAP_AND_FIGURES.md), [`../docs/BACKGROUND_FOR_BIOLOGISTS.md`](../docs/BACKGROUND_FOR_BIOLOGISTS.md), [`../docs/DOUBLETS_AND_SCRUBLET.md`](../docs/DOUBLETS_AND_SCRUBLET.md) |
-| the mouse report | [`GSE262927/README.md`](../Thesis/gate1_01_niethamer_2025/GSE262927/README.md) |
-| the human report | [`GSE178360/README.md`](../Thesis/ungated_murthy_2022/GSE178360/README.md) |
+| the mouse report | [`GSE262927/README.md`](../Research%20Article/gate1_01_niethamer_2025/GSE262927/README.md) |
+| the human report | [`GSE178360/README.md`](../Research%20Article/ungated_murthy_2022/GSE178360/README.md) |
 
 ## Re-running
 

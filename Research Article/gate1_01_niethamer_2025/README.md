@@ -1,0 +1,65 @@
+# Gate 1, paper 1: Niethamer et al. 2025 (GSE262927)
+
+This page brings together the study note, analysis reports and selected
+figures for the first paper in the [reading roadmap](../README.md).
+
+**Citation.** Niethamer TK, Planer JD, Morley MP, et al. *Longitudinal
+single-cell profiles of lung regeneration after viral infection reveal
+persistent injury-associated cell states.* Cell Stem Cell 2025;32(2):302-321.e6.
+DOI 10.1016/j.stem.2024.12.002, PMID 39818203. Data: GEO GSE262927.
+
+| What | Where |
+|---|---|
+| Annotated reference to the published method (parameters, marker tables, open decisions) | [`../../docs/scRNAseq_workflow_Niethamer2025.md`](../../docs/scRNAseq_workflow_Niethamer2025.md) |
+| The published workflow, ordering constraints, statistical unit | [`../../docs/WORKFLOW_Niethamer2025.md`](../../docs/WORKFLOW_Niethamer2025.md) |
+| The executed reanalysis (generated report) | [`Research Article/gate1_01_niethamer_2025/GSE262927/README.md`](GSE262927/README.md) |
+| Focused analyses: AT2 to Krt8-high transitional to AT1 trajectory; injury-associated capillary state | [`Research Article/gate1_01_niethamer_2025/GSE262927/regeneration_focus/`](GSE262927/regeneration_focus/) |
+| Lineage-tracing cohort (8 non-atlas samples) | [`Research Article/gate1_01_niethamer_2025/GSE262927/lineage_tracing_cohort/`](GSE262927/lineage_tracing_cohort/) |
+| Every decision, before and after reading the paper | [`../../docs/ANALYSIS_RATIONALE.md`](../../docs/ANALYSIS_RATIONALE.md) |
+| What actually ran, with the divergence table | [`../../docs/PIPELINE_AS_RUN.md`](../../docs/PIPELINE_AS_RUN.md) |
+| Results and negative results | [`../../FINDINGS.md`](../../FINDINGS.md) |
+| Full citation block | [`../../REFERENCES.md`](../../REFERENCES.md) |
+| The analysis in steps: initial run (Stage 0) versus phase and myeloid follow-ups (Stage 1) and proposals (Stage 2) | [`ANALYSIS_TRIAL_PLAN.md`](ANALYSIS_TRIAL_PLAN.md) |
+
+**Status.** Study note: done (in the docs above). Analysis trial: done; the
+current claim decisions are listed in [the register](../../CLAIMS.md). Four
+follow-ups (per-day phase view, myeloid compartment, alveolar macrophage
+origin by trace window, batch sensitivity on infection round) were run on
+2026-09-10 with frozen rules; they are Descriptive only and await owner
+review; [`ANALYSIS_TRIAL_PLAN.md`](ANALYSIS_TRIAL_PLAN.md) lays them out
+step by step against the initial run. The five reading-workflow questions of
+the roadmap (question, evidence type, reusable variables, one limitation, one
+bridge) are answered in prose across the rationale document and are not yet
+collected in the roadmap format; that is the remaining item for this folder.
+
+## Figure gallery
+
+These figures distinguish reporter history, current RNA measurements and
+statistical inference. The full analysis reports retain their tables and
+sampling rules; the early repair days contain only two animals each.
+
+![Ki67 tracing and deposited cell-cycle calls by lineage and animal](GSE262927/phase_timecourse/figures/proliferation_by_lineage.png)
+
+*Top: Ki67 tracing in immediate tamoxifen windows, excluding undetected
+reporters. Bottom: deposited S/G2M calls. Points are animals and lines are
+medians; the two measurements need not peak together. These rankings are
+descriptive. [Phase report and tables](GSE262927/phase_timecourse/README.md).*
+
+![Myeloid composition across injury and recovery days](GSE262927/myeloid_focus/figures/myeloid_label_composition_by_dpi.png)
+
+*Deposited labels within the myeloid compartment, summarized per animal.
+Changing proportions do not establish persistence of the same cells or their
+lineage of origin. [Myeloid report](GSE262927/myeloid_focus/README.md).*
+
+![Sensitivity of programme inference to model and correlation assumptions](../../analysis/corrections/statistics/statistical_corrections.png)
+
+*The G1 panel shows that the DNA-replication sets do not pass after covariate
+adjustment; W1 has no significant set under the reference analysis. G2 is an
+external human-IPF comparison, included to show method sensitivity across the
+programme-analysis branch. A null result is not evidence of equivalence.
+[Current statistical results and tables](../../analysis/corrections/statistics/README.md).*
+
+Further galleries: [myeloid embeddings](GSE262927/myeloid_focus/README.md),
+[trace-window comparisons](GSE262927/myeloid_focus/amac_origin/README.md),
+[infection-round sensitivity](GSE262927/myeloid_focus/batch_sensitivity/README.md)
+and [Wnt source/response in this cohort](../gate1_03_nabhan_2018/README.md#figure-gallery).

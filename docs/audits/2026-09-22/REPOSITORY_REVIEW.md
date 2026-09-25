@@ -33,7 +33,7 @@ The eligibility floor also uses all stromal cells rather than the actual fibrobl
 
 **Improvement:** a separate corrected pass must use an explicit epithelial sender allowlist, require the cell floor in the actual sender and target populations, preserve source/target labels in every output, and regenerate the resource comparisons. Keep the original trial as the historical result.
 
-Evidence: [C12 implementation](../../../Thesis/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan.py), lines 159–160 and 249–250; [C12 donor-pair table](../../../Thesis/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan/c12_per_donor_pairs.csv), rows for donor `021I`; [C14 implementation](../../../Thesis/gate2_05_cardoso_2026/trials/c14_does_the_ranking_depend_on_the_database.py), lines 144–150.
+Evidence: [C12 implementation](../../../Research%20Article/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan.py), lines 159–160 and 249–250; [C12 donor-pair table](../../../Research%20Article/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan/c12_per_donor_pairs.csv), rows for donor `021I`; [C14 implementation](../../../Research%20Article/gate2_05_cardoso_2026/trials/c14_does_the_ranking_depend_on_the_database.py), lines 144–150.
 
 ### 2.2 High priority: C161's statistical caveat also applies to held-out validation
 
@@ -43,7 +43,7 @@ The stored counts reproduce: **254 discovery sets passed; 62 meet the recorded r
 
 **Improvement:** retain the observed cross-cohort concordance, explicitly extend the null caveat to validation, and re-evaluate frozen candidate sets using a verified correlation-aware method or donor-level resampling appropriate to the design. Examine leading-edge overlap and subtype composition. The small AT2 arm and its mesenchymal/immune signals should remain the least persuasive biological interpretation.
 
-Evidence: [C161](../../../CLAIMS.md), line 51; [G2 implementation](../../../Thesis/gate1_01_niethamer_2025/trials/g2_gsea_ipf.py), lines 179, 228 and 251–257; [shared enrichment implementation](../../../Thesis/gate1_01_niethamer_2025/trials/gsea_utils.py), `run_prerank`; [G2 replication table](../../../Thesis/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_replication.csv). The correlation problem is the methodological motivation of [Wu and Smyth's CAMERA paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC3458527/).
+Evidence: [C161](../../../CLAIMS.md), line 51; [G2 implementation](../../../Research%20Article/gate1_01_niethamer_2025/trials/g2_gsea_ipf.py), lines 179, 228 and 251–257; [shared enrichment implementation](../../../Research%20Article/gate1_01_niethamer_2025/trials/gsea_utils.py), `run_prerank`; [G2 replication table](../../../Research%20Article/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_replication.csv). The correlation problem is the methodological motivation of [Wu and Smyth's CAMERA paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC3458527/).
 
 ### 2.3 High priority for method validity: W1 did not run standard CAMERA
 
@@ -53,7 +53,7 @@ These are substantive implementation differences, not naming details. **They do 
 
 **Improvement:** run a pinned limma implementation, explicitly document estimated versus fixed correlation, and compare a small known example before interpreting a new biological run. Until then, describe C163 as the result of the custom approximation. The sex-gene gate checks part of the count-analysis machinery; it does not validate pathway sensitivity or the phase contrast.
 
-Evidence: [W1 function](../../../Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de.py), lines 184–213; [stored set results](../../../Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_sets.csv); [official limma source](https://raw.githubusercontent.com/bioc/limma/master/R/geneset-camera.R), the `df.camera`, moderated-statistic and set-variance calculations.
+Evidence: [W1 function](../../../Research%20Article/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de.py), lines 184–213; [stored set results](../../../Research%20Article/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_sets.csv); [official limma source](https://raw.githubusercontent.com/bioc/limma/master/R/geneset-camera.R), the `df.camera`, moderated-statistic and set-variance calculations.
 
 ### 2.4 High priority: C158 inherits confounding disclosed for C164 but not carried backward
 
@@ -68,7 +68,7 @@ There is also the approximately nine-month age difference acknowledged in W1. C1
 
 **Improvement:** propagate age, round, sex and genotype caveats into C158's interpretation. Any sensitivity analysis should use the original myeloid contrast and show which comparisons are estimable. No regression can separate elapsed injury time from ageing when the necessary age-matched uninjured controls are missing.
 
-Evidence: [G1 implementation](../../../Thesis/gate1_01_niethamer_2025/trials/g1_gsea_by_phase.py), lines 150 and 176; [G1 animal table](../../../Thesis/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_units.csv); [W1 animal table](../../../Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_units.csv); joined counts in the audit JSON.
+Evidence: [G1 implementation](../../../Research%20Article/gate1_01_niethamer_2025/trials/g1_gsea_by_phase.py), lines 150 and 176; [G1 animal table](../../../Research%20Article/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_units.csv); [W1 animal table](../../../Research%20Article/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_units.csv); joined counts in the audit JSON.
 
 ### 2.5 C37's gate is poor, but its directional lead survives a diagnostic check
 
@@ -78,7 +78,7 @@ Importantly, replacing the gates with deposited major cell types, retaining the 
 
 **Improvement:** qualify what the original “Validated” number validates, and formalize the annotation-based sensitivity analysis. The comparison does not show that epithelium is the exclusive source, the largest total tissue source, or the functionally relevant source; per-cell detection lacks abundance, secretion, processing and spatial information.
 
-Evidence: [E1 gating and test](../../../Thesis/gate2_05_cardoso_2026/trials/e1_human_luad_ligand_sources.py), lines 149–163 and 192–203; [deposited-label cross-tab](../../../Thesis/gate2_05_cardoso_2026/trials/e1_human_luad_ligand_sources/e1_gate_vs_deposited_celltype.csv); exact inputs and diagnostic calculations in the audit script/JSON.
+Evidence: [E1 gating and test](../../../Research%20Article/gate2_05_cardoso_2026/trials/e1_human_luad_ligand_sources.py), lines 149–163 and 192–203; [deposited-label cross-tab](../../../Research%20Article/gate2_05_cardoso_2026/trials/e1_human_luad_ligand_sources/e1_gate_vs_deposited_celltype.csv); exact inputs and diagnostic calculations in the audit script/JSON.
 
 ### 2.6 C105/C107 exclude more than their measurement can exclude
 
@@ -86,7 +86,7 @@ The Epcam trial's decision rule measures the fraction of cells with detectable t
 
 **Improvement:** narrow the result to no consistent large detection-fraction deficit under the tested rule, supported by the stored mean-expression direction. Assess those means with depth controls and retain the distinction between companion states and actual sorted contaminants. Surface staining is required to establish dimming, and a targeted perturbation would be needed to test shedding. Also correct C106's blanket 0.89–1.00 range: an evaluable library reports 0.6674 versus 0.6456.
 
-Evidence: [C13 summary](../../../Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_summary.md), [state-level detection and means](../../../Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_by_library_and_state.csv); C105–C107 in [the register](../../../CLAIMS.md).
+Evidence: [C13 summary](../../../Research%20Article/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_summary.md), [state-level detection and means](../../../Research%20Article/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_by_library_and_state.csv); C105–C107 in [the register](../../../CLAIMS.md).
 
 ### 2.7 A significance threshold is not a bound on undetected biology
 
@@ -96,7 +96,7 @@ For scale only, a Fisher-z approximation at n = 22 and observed rho 0.3484 gives
 
 Similarly, C156's failed G2M gate establishes that its enrichment criterion was not met, not that the active-repair compartment “is not more proliferative.”
 
-**Improvement:** use effect estimates with appropriate donor-level uncertainty and design-specific power simulations; reserve equivalence language for an explicit margin and test. Evidence: [E6 function](../../../Thesis/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling.py), lines 180–184; [RQ A2](../../../RESEARCH_QUESTIONS.md), lines 103–106; [C156](../../../CLAIMS.md), line 46.
+**Improvement:** use effect estimates with appropriate donor-level uncertainty and design-specific power simulations; reserve equivalence language for an explicit margin and test. Evidence: [E6 function](../../../Research%20Article/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling.py), lines 180–184; [RQ A2](../../../RESEARCH_QUESTIONS.md), lines 103–106; [C156](../../../CLAIMS.md), line 46.
 
 ## 3. Is the research question misguided?
 
@@ -106,7 +106,7 @@ The project needs to define what would count as productive repair: mature AT1 co
 
 ### A1: useful molecular question, misleading fate interpretation
 
-The most serious conceptual error is equating **AT2 chromatin closure with arrest** and retained AT2 accessibility with reversibility. Productive progression from AT2 through a transitional state into AT1 can itself require losing AT2 identity. A transient state can disappear through differentiation, death or replacement; it need not reverse into AT2. The branch README explicitly says closing favours arrest, which the measured accessibility difference does not establish. [A1](../../../RESEARCH_QUESTIONS.md), lines 34–72; [branch interpretation](../../../Thesis/gate1_02_choi_2020/datp_epigenetics/README.md), line 123. The original DATP study includes maturation toward AT1, not just return to AT2. [Choi et al. 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7487779/).
+The most serious conceptual error is equating **AT2 chromatin closure with arrest** and retained AT2 accessibility with reversibility. Productive progression from AT2 through a transitional state into AT1 can itself require losing AT2 identity. A transient state can disappear through differentiation, death or replacement; it need not reverse into AT2. The branch README explicitly says closing favours arrest, which the measured accessibility difference does not establish. [A1](../../../RESEARCH_QUESTIONS.md), lines 34–72; [branch interpretation](../../../Research%20Article/gate1_02_choi_2020/datp_epigenetics/README.md), line 123. The original DATP study includes maturation toward AT1, not just return to AT2. [Choi et al. 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7487779/).
 
 **GSE309751 would not directly test cellular reversibility.** Different mice at 14 and 49 days, bulk mixtures and thresholded peak calls cannot distinguish reopening in the same cells from altered composition, selection or replacement. Peak absence also depends on sequencing and peak-calling sensitivity. Its valid role is an exploratory test of time-associated bulk peak detection at frozen loci, with the scope stated before analysis. Animal replication is valuable but does not repair a mismatch between assay and question.
 
@@ -116,7 +116,7 @@ There are three additional issues in retained C131/C133:
 - The reported reductions **−37.8%, −18.3%, −15.5%** are background-centered contrasts: `(observed difference − matched-set null mean) / reference baseline`. The corresponding raw differences are **−31.8%, −16.0%, −8.5%**. Calling the adjusted numbers literal accessibility losses hides a meaningful distinction.
 - C133's interval is constructed from reference-only random cell splits. It is not an animal-level confidence interval, nor a demonstrated confidence interval covering all uncertainty in the transitional group, background offset and denominator. It should not determine future biological sample size by itself.
 
-Evidence: [M3 readings](../../../Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_readings.csv); [M3 implementation](../../../Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null.py), lines 219 and 240–263; audited transformations in the JSON.
+Evidence: [M3 readings](../../../Research%20Article/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_readings.csv); [M3 implementation](../../../Research%20Article/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null.py), lines 219 and 240–263; audited transformations in the JSON.
 
 **Better question:** which RNA and accessibility changes accompany defined transitional states, and which subsequently associate with AT1 maturation, AT2 restoration or persistent pathological states? The current data address parts of the first clause; fate evidence is a separate requirement.
 
@@ -130,7 +130,7 @@ Spatial evidence would improve a local-niche hypothesis, but proximity alone wou
 
 The long time course and lineage information give this branch strong descriptive value. Retain the per-animal fractions and the limited tracing interpretation. Avoid interpreting relative abundance as an absolute population expansion, or a state detected at one year as evidence that it causes failed repair. The same state need not be the same persisting cells.
 
-W1 does not fully deliver the proposed ARG1/ornithine circuit analysis: it substituted broad GO proxies, and the ornithine set was not tested because only seven genes survived. That is an unfilled component, not a negative answer about the circuit. A receiver-side mesenchymal response and metabolite flux are also absent. [W1 rules/results](../../../Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de.py).
+W1 does not fully deliver the proposed ARG1/ornithine circuit analysis: it substituted broad GO proxies, and the ornithine set was not tested because only seven genes survived. That is an unfilled component, not a negative answer about the circuit. A receiver-side mesenchymal response and metabolite flux are also absent. [W1 rules/results](../../../Research%20Article/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de.py).
 
 ### A4: good experimental question, false binary and inconsistent measurement scope
 
@@ -144,7 +144,7 @@ Bulk qPCR enrichment in a sorted lineage supports an association; it does not de
 
 The two neonatal values are **3.69% in control** and **8.07% in Cebpa mutant**. The larger value should not be presented as ordinary normal development. Control neonatal positivity is already sufficient to refute injury exclusivity of this two-transcript classifier. It does not show that the complete DATP/PATS/ADI programs, regulatory states or fates are identical to developmental states.
 
-The proposed full-module comparison is worthwhile descriptively. However, scoring a maturation module does not “hold development fixed”: the available design does not provide a replicated age-by-injury factorial comparison. Start within genotype, explicitly distinguish the state definitions, and keep developmental similarity separate from injury-specificity inference. [A5](../../../RESEARCH_QUESTIONS.md), lines 206–228; [label table](../../../Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1c_label_at_the_depth_available/m1c_labels.csv).
+The proposed full-module comparison is worthwhile descriptively. However, scoring a maturation module does not “hold development fixed”: the available design does not provide a replicated age-by-injury factorial comparison. Start within genotype, explicitly distinguish the state definitions, and keep developmental similarity separate from injury-specificity inference. [A5](../../../RESEARCH_QUESTIONS.md), lines 206–228; [label table](../../../Research%20Article/gate1_02_choi_2020/datp_epigenetics/trials/m1c_label_at_the_depth_available/m1c_labels.csv).
 
 ### A literature gap worth addressing
 
@@ -184,7 +184,7 @@ The structure is understandable but organized around papers and historical trial
 
 **Improvement:** introduce a small structured claim manifest with claim kind, estimand, dataset/sample definition, evidence source, numeric field/filter, status and owner-review state. Generate public summaries from it and check their declared numbers. Record shared data and gene-set dependencies explicitly. Freeze code commit, input hashes and environment identity per run. Benchmark custom statistics against reference implementations. Keep historical trial outputs intact.
 
-Evidence: [validator](../../../analysis/scripts/validate_repository.py), especially `check_headline_results`; [CI workflow](../../../.github/workflows/repository-checks.yml); [RunRecord](../../../Thesis/gate1_04_sikkema_2023_hlca/trials/trial_utils.py); [reproduction guide](../../../REPRODUCIBILITY.md); [ledger generator](../../../analysis/scripts/15_claims_ledger_figure.py).
+Evidence: [validator](../../../analysis/scripts/validate_repository.py), especially `check_headline_results`; [CI workflow](../../../.github/workflows/repository-checks.yml); [RunRecord](../../../Research%20Article/gate1_04_sikkema_2023_hlca/trials/trial_utils.py); [reproduction guide](../../../REPRODUCIBILITY.md); [ledger generator](../../../analysis/scripts/15_claims_ledger_figure.py).
 
 ## 6. Plausible improvement sequence
 

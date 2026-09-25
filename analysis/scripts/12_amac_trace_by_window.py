@@ -59,7 +59,7 @@ MARROW_MARGIN = 10.0   # percentage points
 SPLIT_MARGIN = 20.0    # percentage points
 
 RULES = {
-    "input": "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_cell_metadata.csv (tracked; written by "
+    "input": "Research Article/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_cell_metadata.csv (tracked; written by "
              "11_myeloid_focus.py from atlas clusters 5, 17, 24 of the 25-sample Ki67 atlas)",
     "cells": "cells with a deposited myeloid label in the frozen list and trace_call in {Traced, Untraced}; "
              "Not_detected is reporter dropout and is excluded (rule of 07_lineage_tracing_cohort.py)",

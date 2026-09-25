@@ -3,7 +3,7 @@
 25 September 2026. Five measured-data figures and one explicitly labeled
 experimental-design schematic are attached to the
 [RQ proposal](../../../../RESEARCH_QUESTIONS.md#a11-shared-plasticity-versus-neoplasia-associated-context) and
-[paper gallery](../../../../Thesis/gate2_C3_yu_lee_choi_min_2026/README.md#figure-gallery).
+[paper gallery](../../../../Research%20Article/gate2_C3_yu_lee_choi_min_2026/README.md#figure-gallery).
 They supplement the original 17 figures. No original annotations, thresholds,
 DE fits, pathway results or ligand-target fits were changed.
 
@@ -109,7 +109,7 @@ validation and release.
 
 ## Repository layout migration, 25 September 2026
 
-Shared RQ assets now live here; study-specific inference stays under `Thesis/`.
+Shared RQ assets now live here; study-specific inference stays under `Research Article/`.
 CSV basenames D0/D1/D2 retain their historical source-table IDs. Presentation
 labels are A11, A12a–c, A12-S1 and A14, matching the root question register.
 The UMAP/PCA preparation was not rerun. Its original entrypoint bytes and run

@@ -1,0 +1,79 @@
+# LinkedIn project update
+
+Draft prepared 25 September 2026 from the repository's current evidence.
+This text has not been posted to LinkedIn.
+
+## Title
+
+scRNA_seq: Public Lung Single-Cell and Multiome Reanalysis of Injury, Repair and Pathological Remodelling
+
+## Description — ready to paste
+
+An ongoing computational research project reanalysing public mouse and human
+lung single-cell RNA-seq and multiome (RNA + ATAC) data to develop testable
+questions about injury, repair and persistent pathological remodelling.
+
+Organising question: which epithelial, macrophage and fibroblast programmes
+accompany productive repair, fibrosis and neoplasia-associated plasticity?
+
+Current outputs:
+• 14 research questions with supporting observations, alternative explanations
+  and explicit requirements for further evidence.
+• 168 evidence-register entries, alongside reproducible scripts, result tables,
+  provenance records and figure galleries.
+• Donor/animal-level analyses spanning injury time courses, pulmonary fibrosis,
+  lung lesions, organoids and RNA–chromatin comparisons. The latest human
+  lesion analysis includes 75 libraries from 23 patients and 555,480 QC-retained
+  cells/nuclei, with paired molecular contrasts and spatial context.
+
+Methods include Scanpy QC and annotation, dataset-specific batch assessment,
+HLCA reference mapping with scvi-tools, biological-replicate pseudobulk,
+limma/voom and CAMERA pathway analysis, ligand–receptor resource comparisons
+with LIANA, conditional ligand–target analysis and programme-specificity checks.
+PCA, UMAP, paired distributions and enrichment figures retain sample coverage
+and model sensitivity.
+
+A central result is that elevated plasticity-related RNA programmes are not
+necessarily specific to neoplasia. Inferred communication and programme scores
+generate hypotheses; they do not establish cell fate or causal mechanisms.
+Null results, uncertain annotations and corrections remain visible.
+
+Stack: Python, R/limma, Scanpy, scvi-tools, LIANA, pandas, matplotlib, Git and
+GitHub Actions. AI-assisted development and scientific review are documented.
+
+Repository: https://github.com/xorca0711/scRNA_seq
+
+## Suggested media order and captions
+
+Keep the GitHub repository link. These five figures provide an updated selection;
+each title and description below can be pasted into the corresponding media item.
+
+| Media title | Caption | Asset |
+|---|---|---|
+| Epithelial plasticity across lung-lesion contexts | Patient-level PCA and paired programme scores in GSE308103. Reduced-HPCS scores rise in 19 of 23 LUAD–normal pairs, but also rise in repair/fibrosis comparisons; this is a specificity question, not a malignant-cell classifier. | [PNG](../analysis/figures/rq/rq_a11_epithelial_programs.png) |
+| IL-1 source, receptor and regulatory context | Donor-weighted expression and paired contrasts for macrophage, fibroblast and AT2-like compartments. RNA compatibility is measured separately from cytokine secretion and functional signalling. | [PNG](../analysis/figures/rq/rq_a12_source_recipient_components.png) |
+| Recipient pathways and model sensitivity | Broad-recipient LUAD–normal CAMERA results under estimated and fixed inter-gene correlation. Primary and sensitivity analyses remain distinct; changing the correlation assumption changes retained leads. | [PNG](../analysis/figures/rq/rq_a12_recipient_enrichment.png) |
+| How annotation and molecule depth affect ligand-source comparisons | AREG source differences examined across annotation rules and molecule budgets. The primary matched-depth comparison does not establish a depth-independent source hierarchy. | [PNG](../analysis/corrections/ligand/results/figures/c37_annotation_depth.png) |
+| Epithelial signature specificity and validation coverage | Source-defined developmental, injury and genotype contrasts with an external eligibility audit. Limited biological replication prevents treating transcript overlap as confirmed shared cell identity. | [PNG](../Thesis/epithelial_state_specificity/results/es1_specificity.png) |
+
+Replace the old 161-entry claims-ledger image/caption if using this selection.
+The ledger remains useful as repository documentation, but the scientific plots
+make better use of the limited media space. Existing phase and multiome images
+can remain in their repository galleries; this selection is not a quality ranking.
+
+## Verification and wording changes
+
+- The [canonical register](../RESEARCH_QUESTIONS.md) now has A1–A14; the
+  [generated claims index](../analysis/claims/manifest.json) contains 168 entries.
+  Entries include methods, limitations and negative results, not 168 discoveries.
+- Human counts and inferential limits are documented in the
+  [completed review](../Thesis/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md)
+  and [annotation review](../Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_full/ANNOTATION_REVIEW.md).
+- Removed the stale accession/study, total-cell, script, run-record and figure
+  totals. Repeated analyses, superseries, companion assays and regenerated
+  figures make an unqualified portfolio-wide total misleading.
+- Removed the blanket “pre-registered” label: dated specifications and
+  post-analysis exploratory questions do not establish unseen-data preregistration.
+- Added fibroblast/recipient context, R/limma, correlation sensitivity and the
+  newer human/spatial analysis. The project does not claim that every method
+  is newer than every source publication or that every programme replicated.

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "CLAIMS.md",
-  "source_sha256": "5a3e5490690ff1942465d8796cd3a5d8276d6e64bf448c873e95b62232e65373",
+  "source_sha256": "f9cf102ff5904917ab339c9281e0d1615552fa3de24513940d8e9c5377a41af2",
   "interpretation": "Generated index, not a certificate of biological validity. Numeric checks have explicitly bounded coverage.",
   "claims": [
     {
@@ -14,9 +14,9 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/GSE262927/tables/cluster_vs_author_celltype_fraction.csv"
+        "Research Article/gate1_01_niethamer_2025/GSE262927/tables/cluster_vs_author_celltype_fraction.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/GSE262927/tables/cluster_vs_author_celltype_fraction.csv`; checked by `validate_repository.py`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/GSE262927/tables/cluster_vs_author_celltype_fraction.csv`; checked by `validate_repository.py`",
       "unresolved_artifact_labels": [
         "validate_repository.py"
       ],
@@ -43,10 +43,10 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/",
+        "Research Article/gate1_01_niethamer_2025/GSE262927/regeneration_focus/",
         "archive/DISPLACED.md"
       ],
-      "artifact_text": "[`archive/DISPLACED.md`](archive/DISPLACED.md) (artefacts unchanged under `Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/`)",
+      "artifact_text": "[`archive/DISPLACED.md`](archive/DISPLACED.md) (artefacts unchanged under `Research Article/gate1_01_niethamer_2025/GSE262927/regeneration_focus/`)",
       "unresolved_artifact_labels": [],
       "status": "Validated",
       "status_group": "Displaced",
@@ -71,9 +71,9 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/tables/icap_abundance_per_sample.csv"
+        "Research Article/gate1_01_niethamer_2025/GSE262927/regeneration_focus/tables/icap_abundance_per_sample.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/tables/icap_abundance_per_sample.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/GSE262927/regeneration_focus/tables/icap_abundance_per_sample.csv`",
       "unresolved_artifact_labels": [],
       "status": "Validated",
       "status_group": "Validated",
@@ -100,9 +100,9 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/GSE262927/lineage_tracing_cohort/"
+        "Research Article/gate1_01_niethamer_2025/GSE262927/lineage_tracing_cohort/"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/GSE262927/lineage_tracing_cohort/`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/GSE262927/lineage_tracing_cohort/`",
       "unresolved_artifact_labels": [],
       "status": "Validated (Kit); Not established (CAP2)",
       "status_group": "Validated",
@@ -128,10 +128,10 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/GSE262927/qc/batch_assessment.json",
-        "Thesis/ungated_murthy_2022/GSE178360/qc/"
+        "Research Article/gate1_01_niethamer_2025/GSE262927/qc/batch_assessment.json",
+        "Research Article/ungated_murthy_2022/GSE178360/qc/"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/GSE262927/qc/batch_assessment.json`, `Thesis/ungated_murthy_2022/GSE178360/qc/`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/GSE262927/qc/batch_assessment.json`, `Research Article/ungated_murthy_2022/GSE178360/qc/`",
       "unresolved_artifact_labels": [],
       "status": "Validated (as a decision record)",
       "status_group": "Validated",
@@ -155,9 +155,9 @@
       "design_and_observation": "HLCA marker transfer (trial S3) and scArches mapping (trial S2, 99.2% agreement with the HLCA authors' own transfer)",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_04_sikkema_2023_hlca/trials/s2_reference_mapping/"
+        "Research Article/gate1_04_sikkema_2023_hlca/trials/s2_reference_mapping/"
       ],
-      "artifact_text": "`Thesis/gate1_04_sikkema_2023_hlca/trials/s2_reference_mapping/` (merged 2026-09-10)",
+      "artifact_text": "`Research Article/gate1_04_sikkema_2023_hlca/trials/s2_reference_mapping/` (merged 2026-09-10)",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only; headline re-wording pending (PROGRESS item 15)",
       "status_group": "Descriptive or exploratory",
@@ -203,9 +203,9 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/GSE262927/tables/cluster_annotation_proposals.csv"
+        "Research Article/gate1_01_niethamer_2025/GSE262927/tables/cluster_annotation_proposals.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/GSE262927/tables/cluster_annotation_proposals.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/GSE262927/tables/cluster_annotation_proposals.csv`",
       "unresolved_artifact_labels": [],
       "status": "Validated (negative result)",
       "status_group": "Validated",
@@ -230,9 +230,9 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/GSE262927/phase_timecourse/tables/proliferation_peak_by_lineage.csv"
+        "Research Article/gate1_01_niethamer_2025/GSE262927/phase_timecourse/tables/proliferation_peak_by_lineage.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/GSE262927/phase_timecourse/tables/proliferation_peak_by_lineage.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/GSE262927/phase_timecourse/tables/proliferation_peak_by_lineage.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -278,9 +278,9 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/GSE262927/phase_timecourse/tables/cycling_fraction_per_animal.csv"
+        "Research Article/gate1_01_niethamer_2025/GSE262927/phase_timecourse/tables/cycling_fraction_per_animal.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/GSE262927/phase_timecourse/tables/cycling_fraction_per_animal.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/GSE262927/phase_timecourse/tables/cycling_fraction_per_animal.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established as a measure",
       "status_group": "Not established",
@@ -305,9 +305,9 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_label_composition_median_by_dpi.csv"
+        "Research Article/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_label_composition_median_by_dpi.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_label_composition_median_by_dpi.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_label_composition_median_by_dpi.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -353,9 +353,9 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_grading_sub_r0.5.csv"
+        "Research Article/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_grading_sub_r0.5.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_grading_sub_r0.5.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_grading_sub_r0.5.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -380,9 +380,9 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/window_contribution_summary.csv"
+        "Research Article/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/window_contribution_summary.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/window_contribution_summary.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/window_contribution_summary.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -407,9 +407,9 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/marrow_reference_check.csv"
+        "Research Article/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/marrow_reference_check.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/marrow_reference_check.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/marrow_reference_check.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established (references evaluable in 3 of 8 animals)",
       "status_group": "Not established",
@@ -434,9 +434,9 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/amac_subcluster_traced_fraction_42dpi.csv"
+        "Research Article/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/amac_subcluster_traced_fraction_42dpi.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/amac_subcluster_traced_fraction_42dpi.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/GSE262927/myeloid_focus/amac_origin/tables/amac_subcluster_traced_fraction_42dpi.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established (evaluable in one animal per window)",
       "status_group": "Not established",
@@ -461,9 +461,9 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/batch_sensitivity/tables/imon_state_check.csv"
+        "Research Article/gate1_01_niethamer_2025/GSE262927/myeloid_focus/batch_sensitivity/tables/imon_state_check.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/batch_sensitivity/tables/imon_state_check.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/GSE262927/myeloid_focus/batch_sensitivity/tables/imon_state_check.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (rule revision disclosed)",
       "status_group": "Descriptive or exploratory",
@@ -811,9 +811,9 @@
       "design_and_observation": "trials C3 and C5",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c5_figures_for_the_three_findings/c5_ligand_rankings.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c5_figures_for_the_three_findings/c5_ligand_rankings.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c5_figures_for_the_three_findings/c5_ligand_rankings.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c5_figures_for_the_three_findings/c5_ligand_rankings.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (corrected 2026-09-13; the earlier row said Hbegf ranks ahead of Ereg)",
       "status_group": "Descriptive or exploratory",
@@ -931,9 +931,9 @@
       "design_and_observation": "trials E1 T2 and E1b T6, two independent groupings of the same cells",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/e1b_human_luad_by_subtype/e1b_tumour_ranking_by_subtype.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/e1b_human_luad_by_subtype/e1b_tumour_ranking_by_subtype.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/e1b_human_luad_by_subtype/e1b_tumour_ranking_by_subtype.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/e1b_human_luad_by_subtype/e1b_tumour_ranking_by_subtype.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -954,9 +954,9 @@
       "design_and_observation": "trial E1b T6: CD1c+ dendritic cells reach 0.618 against tS1 0.555 and tS2 0.532",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/e1b_human_luad_by_subtype/e1b_tumour_ranking_by_subtype.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/e1b_human_luad_by_subtype/e1b_tumour_ranking_by_subtype.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/e1b_human_luad_by_subtype/e1b_tumour_ranking_by_subtype.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/e1b_human_luad_by_subtype/e1b_tumour_ranking_by_subtype.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established, and it qualifies C37",
       "status_group": "Not established",
@@ -977,9 +977,9 @@
       "design_and_observation": "trial E1: AREG epithelial 0.336 in tumour against 0.356 in normal; HBEGF higher in normal lung",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/e1_human_luad_ligand_sources/e1_per_donor_compartment.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/e1_human_luad_ligand_sources/e1_per_donor_compartment.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/e1_human_luad_ligand_sources/e1_per_donor_compartment.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/e1_human_luad_ligand_sources/e1_per_donor_compartment.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted at compartment level",
       "status_group": "Refuted or retracted",
@@ -1002,9 +1002,9 @@
         "GSE131907"
       ],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/e1b_human_luad_by_subtype/e1b_paired_comparisons.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/e1b_human_luad_by_subtype/e1b_paired_comparisons.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/e1b_human_luad_by_subtype/e1b_paired_comparisons.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/e1b_human_luad_by_subtype/e1b_paired_comparisons.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not establishable with these labels",
       "status_group": "Not established",
@@ -1029,9 +1029,9 @@
         "GSE132771"
       ],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/e4_bleomycin_fibrotic_genes/e4_injury_generic_verdicts.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/e4_bleomycin_fibrotic_genes/e4_injury_generic_verdicts.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/e4_bleomycin_fibrotic_genes/e4_injury_generic_verdicts.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/e4_bleomycin_fibrotic_genes/e4_injury_generic_verdicts.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted by a rule frozen before the data were read",
       "status_group": "Refuted or retracted",
@@ -1054,9 +1054,9 @@
       "design_and_observation": "trial E4: both are injury-generic in sorted Col1a1-GFP mesenchyme with no oncogene present",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/e4_bleomycin_fibrotic_genes/e4_detection_by_library.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/e4_bleomycin_fibrotic_genes/e4_detection_by_library.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/e4_bleomycin_fibrotic_genes/e4_detection_by_library.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/e4_bleomycin_fibrotic_genes/e4_detection_by_library.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted",
       "status_group": "Refuted or retracted",
@@ -1079,9 +1079,9 @@
         "GSE136831"
       ],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_paired_comparisons.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_paired_comparisons.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_paired_comparisons.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_paired_comparisons.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established",
       "status_group": "Not established",
@@ -1104,9 +1104,9 @@
       "design_and_observation": "trials E1b, E2 and E3, three datasets and two diseases, deposited labels in each",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_ipf_ranking_by_celltype.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_ipf_ranking_by_celltype.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_ipf_ranking_by_celltype.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_ipf_ranking_by_celltype.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -1127,9 +1127,9 @@
       "design_and_observation": "trials E2 and E3 T3: three comparisons, none clearing the five-donor floor, and the two cohorts disagree in direction (aberrant basaloid 0.485 against ATII 0.767; KRT5-/KRT17+ 0.700 against AT2 0.672)",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_paired_comparisons.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_paired_comparisons.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_paired_comparisons.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_paired_comparisons.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established",
       "status_group": "Not established",
@@ -1152,9 +1152,9 @@
         "GSE131907"
       ],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_ipf_ranking_by_celltype.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_ipf_ranking_by_celltype.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_ipf_ranking_by_celltype.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/e2_human_fibrosis_ligand_sources/e2_ipf_ranking_by_celltype.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -1177,9 +1177,9 @@
       "design_and_observation": "trial E2b, the T4 reading E2 declared and did not compute: AREG higher in IPF in 24 of 37 cell types with median difference 0.027, HBEGF in 24 of 37 with 0.019",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/e2b_t4_disease_against_control/e2b_t4_disease_against_control.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/e2b_t4_disease_against_control/e2b_t4_disease_against_control.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/e2b_t4_disease_against_control/e2b_t4_disease_against_control.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/e2b_t4_disease_against_control/e2b_t4_disease_against_control.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established",
       "status_group": "Not established",
@@ -1202,9 +1202,9 @@
         "GSE136831"
       ],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling/e6_correlations.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling/e6_correlations.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling/e6_correlations.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling/e6_correlations.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established",
       "status_group": "Not established",
@@ -1227,9 +1227,9 @@
       "design_and_observation": "trial E6: rho -0.150 pooled, -0.013 within fibrosis donors",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling/e6_correlations.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling/e6_correlations.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling/e6_correlations.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling/e6_correlations.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established",
       "status_group": "Not established",
@@ -1250,9 +1250,9 @@
       "design_and_observation": "trial E6 T10 and T11: epithelial TGFA against fibroblast activation rho 0.432, p = 0.045; TGFA against depth 0.507, activation against depth 0.412",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling/e6_correlations.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling/e6_correlations.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling/e6_correlations.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling/e6_correlations.csv`",
       "unresolved_artifact_labels": [],
       "status": "Validated (as a decision record)",
       "status_group": "Validated",
@@ -1273,9 +1273,9 @@
       "design_and_observation": "trial C7 T2: of 184 cells, DATP-like 77, AT2 70, cycling 20, AT1-like 13, Cd177-positive 4; modal call 41.8%, below this repository's 50% floor",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c7_what_the_sort_contaminant_is/c7_run_record.json"
+        "Research Article/gate2_05_cardoso_2026/trials/c7_what_the_sort_contaminant_is/c7_run_record.json"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c7_what_the_sort_contaminant_is/c7_run_record.json`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c7_what_the_sort_contaminant_is/c7_run_record.json`",
       "unresolved_artifact_labels": [],
       "status": "Refuted",
       "status_group": "Refuted or retracted",
@@ -1298,9 +1298,9 @@
         "GSE316241"
       ],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c7_what_the_sort_contaminant_is/c7_summary.md"
+        "Research Article/gate2_05_cardoso_2026/trials/c7_what_the_sort_contaminant_is/c7_summary.md"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c7_what_the_sort_contaminant_is/c7_summary.md`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c7_what_the_sort_contaminant_is/c7_summary.md`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -1323,9 +1323,9 @@
       "design_and_observation": "trial C7: the measure separates the epithelial query from a fibroblast control by 0.415 of rho and separates epithelial states from each other by 0.0056, with the top four matches spanning three different calls inside 0.015",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c7_what_the_sort_contaminant_is/c7_profile_correlations.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c7_what_the_sort_contaminant_is/c7_profile_correlations.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c7_what_the_sort_contaminant_is/c7_profile_correlations.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c7_what_the_sort_contaminant_is/c7_profile_correlations.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted, and the rule that allowed it is disclosed",
       "status_group": "Refuted or retracted",
@@ -1346,9 +1346,9 @@
       "design_and_observation": "trial C8 T1: Runx1 with Pdgfrb co-detected in 22.46% of flox/flox gated fibroblasts against 20.44% expected under independence, ratio 1.099 inside the frozen 0.80 to 1.25 band, and the depth control moves it by 0.043",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_codetection_ratios.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_codetection_ratios.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_codetection_ratios.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_codetection_ratios.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established; the tiers are amplitudes, as C5 corrected",
       "status_group": "Not established",
@@ -1369,9 +1369,9 @@
       "design_and_observation": "trial C8 T3: two components beat one by 731 BIC, while 31.5% of the cells detect neither gene, so the score has a spike at zero and a continuum",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_run_record.json"
+        "Research Article/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_run_record.json"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_run_record.json`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_run_record.json`",
       "unresolved_artifact_labels": [],
       "status": "Refuted as a method, and recorded rather than repaired",
       "status_group": "Refuted or retracted",
@@ -1392,9 +1392,9 @@
       "design_and_observation": "trial C8 T2, post hoc: Fst with Runx2 at ratio 1.735 in Areg-flox/+ and 0.816 in Areg-flox/flox, where only 24 of 3,700 cells carry both; Runx1 with Pdgfrb inside the independence band in both arms",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_codetection_ratios.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_codetection_ratios.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_codetection_ratios.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c8_subpopulation_or_gradient/c8_codetection_ratios.csv`",
       "unresolved_artifact_labels": [],
       "status": "Exploratory, and explicitly post hoc",
       "status_group": "Descriptive or exploratory",
@@ -1415,9 +1415,9 @@
       "design_and_observation": "trial D0: exact ordered (Ensembl ID, symbol) comparison",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_gene_spaces.csv"
+        "Research Article/gate1_02_choi_2020/trials/d0_data_reality_check/d0_gene_spaces.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_gene_spaces.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d0_data_reality_check/d0_gene_spaces.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -1438,9 +1438,9 @@
       "design_and_observation": "trial D0: the frozen replicate rule applied to time point with sort held constant, sort with time point held constant, and organoid treatment; none passed",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_replication.csv"
+        "Research Article/gate1_02_choi_2020/trials/d0_data_reality_check/d0_replication.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_replication.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d0_data_reality_check/d0_replication.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -1461,9 +1461,9 @@
       "design_and_observation": "trial D0: column count equals the 10x v2 whitelist of 737,280 in all six lineage-traced libraries; the two organoid libraries are filtered at 2,101 and 3,066 cells",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv"
+        "Research Article/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -1484,9 +1484,9 @@
       "design_and_observation": "trial D0: no non-gene features in any library",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv"
+        "Research Article/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted",
       "status_group": "Refuted or retracted",
@@ -1507,9 +1507,9 @@
       "design_and_observation": "trial D0: marker presence per library, including Sprr1a and AW112010",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_marker_presence.csv"
+        "Research Article/gate1_02_choi_2020/trials/d0_data_reality_check/d0_marker_presence.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_marker_presence.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d0_data_reality_check/d0_marker_presence.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -1530,9 +1530,9 @@
       "design_and_observation": "trial D0: the ATAC-seq accession deposits bigwig coverage tracks only, with no peaks and no reads",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_summary.md"
+        "Research Article/gate1_02_choi_2020/trials/d0_data_reality_check/d0_summary.md"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_summary.md`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d0_data_reality_check/d0_summary.md`",
       "unresolved_artifact_labels": [],
       "status": "Not establishable with the data that exists",
       "status_group": "Not established",
@@ -1553,9 +1553,9 @@
       "design_and_observation": "trial D0 inventory, barcodes over a 500-count floor",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv"
+        "Research Article/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d0_data_reality_check/d0_library_inventory.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -1578,9 +1578,9 @@
         "GSE132771"
       ],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_per_library.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_per_library.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_per_library.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_per_library.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -1603,9 +1603,9 @@
       "design_and_observation": "trial C9 T5: those ratios move by 1.10 and 0.45 across a median depth split against a frozen limit of 0.25, on 32 and 37 double-positive cells",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_per_library.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_per_library.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_per_library.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_per_library.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established",
       "status_group": "Not established",
@@ -1626,9 +1626,9 @@
       "design_and_observation": "trial C9 T2: zero double-positive cells in both untreated libraries against 32 and 37 in the bleomycin ones",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_per_library.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_per_library.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_per_library.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_per_library.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only, and weaker than it looks",
       "status_group": "Descriptive or exploratory",
@@ -1649,9 +1649,9 @@
       "design_and_observation": "trial C9 T4, thirty genes ranked in the Areg-flox/+ library and checked in both bleomycin libraries",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_marker_replication.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_marker_replication.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_marker_replication.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_marker_replication.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -1672,9 +1672,9 @@
       "design_and_observation": "trial C9 T4: the median gene's bleomycin difference is 0.535 of its reference difference against a threshold of 0.5, and the bleomycin libraries carry half the genes per cell",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_marker_replication.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_marker_replication.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_marker_replication.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_marker_replication.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established as a meaningful figure",
       "status_group": "Not established",
@@ -1695,9 +1695,9 @@
       "design_and_observation": "trial C9 T3, descriptive in one library, with the direction replicated in both bleomycin animals",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_reference_markers.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_reference_markers.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_reference_markers.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_reference_markers.csv`",
       "unresolved_artifact_labels": [],
       "status": "Exploratory, superseded 2026-09-13",
       "status_group": "Descriptive or exploratory",
@@ -1739,9 +1739,9 @@
       "design_and_observation": "trial C9: T1 tested a ratio that T5 forbade reading, so the rules were not composable; the implementation took the conservative branch",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_run_record.json"
+        "Research Article/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_run_record.json"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_run_record.json`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c9_the_fst_runx2_population/c9_run_record.json`",
       "unresolved_artifact_labels": [],
       "status": "Retracted-superseded as a reading, kept on display",
       "status_group": "Refuted or retracted",
@@ -1762,9 +1762,9 @@
       "design_and_observation": "trial C10 T1 and T4: standardised difference on the pathological set 1.81 in the reference library and 1.49 and 1.46 in two independent bleomycin animals, with that set the largest of four scored everywhere",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_effect_sizes.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_effect_sizes.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_effect_sizes.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_effect_sizes.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -1785,9 +1785,9 @@
       "design_and_observation": "trial C10 T4: alveolar score difference -0.76, -1.03 and -1.26 across the three libraries, against a flat smooth-muscle score",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_effect_sizes.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_effect_sizes.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_effect_sizes.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_effect_sizes.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -1808,9 +1808,9 @@
       "design_and_observation": "trial C10 T2: Cthrc1 detected in 44.9% of double-positive against 2.0% of double-negative cells in the reference library, a difference of 0.428 against that list's cutoff of 0.510",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_saturation_audit.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_saturation_audit.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_saturation_audit.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_saturation_audit.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted",
       "status_group": "Refuted or retracted",
@@ -1831,9 +1831,9 @@
       "design_and_observation": "trial C10: the same cells score highest on the published pathological set of the four tested",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_summary.md"
+        "Research Article/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_summary.md"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_summary.md`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_summary.md`",
       "unresolved_artifact_labels": [],
       "status": "Refuted; supersedes the reading of C70",
       "status_group": "Refuted or retracted",
@@ -1854,9 +1854,9 @@
       "design_and_observation": "trial C10 T3: blind clustering of the reference library does not concentrate them in one cluster at the frozen thresholds",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_reference_clusters.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_reference_clusters.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_reference_clusters.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_reference_clusters.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established",
       "status_group": "Not established",
@@ -1877,9 +1877,9 @@
       "design_and_observation": "trial C10, depth split at the median genes per cell",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_effect_sizes.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_effect_sizes.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_effect_sizes.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_effect_sizes.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -1900,9 +1900,9 @@
       "design_and_observation": "trial C10 T5: the bleomycin shallow halves hold one and four double-positive cells; the first run treated not computable as failed and suppressed a reading the reference library supports",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_run_record.json"
+        "Research Article/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_run_record.json"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_run_record.json`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c10_published_state_or_not/c10_run_record.json`",
       "unresolved_artifact_labels": [],
       "status": "Refuted as written, and disclosed",
       "status_group": "Refuted or retracted",
@@ -2006,9 +2006,9 @@
       "design_and_observation": "trial C12 T4 against trial C3: the top two match (AREG then HBEGF) and EREG and TGFA swap",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan/c12_same_receptor.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan/c12_same_receptor.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan/c12_same_receptor.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan/c12_same_receptor.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -2055,9 +2055,9 @@
       "design_and_observation": "trial D1: the paper's post-Cell-Ranger filter on every barcode, per-library MAD bounds, Scrublet per capture",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d1_cells_and_qc/d1_cell_calling.csv"
+        "Research Article/gate1_02_choi_2020/trials/d1_cells_and_qc/d1_cell_calling.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d1_cells_and_qc/d1_cell_calling.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d1_cells_and_qc/d1_cell_calling.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -2078,9 +2078,9 @@
       "design_and_observation": "trial D2 first pass: every one of fourteen clusters detects Sftpc in 100 percent of cells, so the clauses never fired; a 337-cell cluster with AT1 canonical detection 0.70 was labelled hAT2 and a ciliated cluster took the primed-AT2 label",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d2_state_recovery/d2_cluster_annotation_res1.0.csv"
+        "Research Article/gate1_02_choi_2020/trials/d2_state_recovery/d2_cluster_annotation_res1.0.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d2_state_recovery/d2_cluster_annotation_res1.0.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d2_state_recovery/d2_cluster_annotation_res1.0.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted as written, and disclosed",
       "status_group": "Refuted or retracted",
@@ -2101,9 +2101,9 @@
       "design_and_observation": "trial D2b: the corrected rule on D2's embedding; reading R6",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_cluster_annotation_res1.0.csv"
+        "Research Article/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_cluster_annotation_res1.0.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_cluster_annotation_res1.0.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_cluster_annotation_res1.0.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -2124,9 +2124,9 @@
       "design_and_observation": "trial D2b: assigned at none of three resolutions, in none of four DATP sub-clusters, and at the cell level in 18 of 9,546 hAT2-labelled cells; trial D5b: the organoid cluster the paper calls 77 percent primed under IL-1beta keeps its identity genes (detection 0.76) and carries the DATP markers",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_datp_subclusters.csv"
+        "Research Article/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_datp_subclusters.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_datp_subclusters.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_datp_subclusters.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established",
       "status_group": "Not established",
@@ -2147,9 +2147,9 @@
       "design_and_observation": "trial D2b composition; the day-14 cycling fraction is the paper's \"approximately 6 percent\"",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_composition.csv"
+        "Research Article/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_composition.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_composition.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_composition.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -2170,9 +2170,9 @@
       "design_and_observation": "trial D2b: R4 fails because day-14 hAT2 (0.717) does not halve against PBS (0.984) and pAT2 is absent; R5 fails on pAT2 alone, every other direction holding",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_readings.csv"
+        "Research Article/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_readings.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_readings.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d2b_corrected_annotation/d2b_readings.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established as written",
       "status_group": "Not established",
@@ -2193,9 +2193,9 @@
       "design_and_observation": "trial D3 on the D2b object; the pre-registered readings O1 to O6 all name primed AT2 and are not computable",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d3_ordering/d3_readings.csv"
+        "Research Article/gate1_02_choi_2020/trials/d3_ordering/d3_readings.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d3_ordering/d3_readings.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d3_ordering/d3_readings.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -2216,9 +2216,9 @@
       "design_and_observation": "trial D4 C1: 844 such barcodes, 7 of them DATP-like; the move comes from the denominator",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d4_composition_and_controls/d4_calling_sensitivity.csv"
+        "Research Article/gate1_02_choi_2020/trials/d4_composition_and_controls/d4_calling_sensitivity.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d4_composition_and_controls/d4_calling_sensitivity.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d4_composition_and_controls/d4_calling_sensitivity.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted as a sensitivity finding, and disclosed",
       "status_group": "Refuted or retracted",
@@ -2239,9 +2239,9 @@
       "design_and_observation": "trial D4 C2",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d4_composition_and_controls/d4_depth_window_composition.csv"
+        "Research Article/gate1_02_choi_2020/trials/d4_composition_and_controls/d4_depth_window_composition.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d4_composition_and_controls/d4_depth_window_composition.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d4_composition_and_controls/d4_depth_window_composition.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -2262,9 +2262,9 @@
       "design_and_observation": "trial D4 C3: the day-14 Tomato-negative library carries no alveolar cluster under the frozen gate (4,138 cells), which the plan named in advance as unreadable; day 28 carries 708 unlabelled alveolar cells with 9 DATP-like",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d4_composition_and_controls/d4_nontomato_composition.csv"
+        "Research Article/gate1_02_choi_2020/trials/d4_composition_and_controls/d4_nontomato_composition.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d4_composition_and_controls/d4_nontomato_composition.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d4_composition_and_controls/d4_nontomato_composition.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established",
       "status_group": "Not established",
@@ -2285,9 +2285,9 @@
       "design_and_observation": "trial D5: 1,868 and 2,699 against the paper's 1,286 and 2,584, because a 586-cell cluster with mesenchyme detection 0.70 (the size of the stromal cluster the paper removed) and a 365-cell cluster at 0.64 were kept as hAT2, and a 481-cell AT1 cluster (detection 0.79) was labelled hAT2, all by the C86 defect",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d5_organoids/d5_cluster_annotation_res0.3.csv"
+        "Research Article/gate1_02_choi_2020/trials/d5_organoids/d5_cluster_annotation_res0.3.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d5_organoids/d5_cluster_annotation_res0.3.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d5_organoids/d5_cluster_annotation_res0.3.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted as written, and disclosed",
       "status_group": "Refuted or retracted",
@@ -2308,9 +2308,9 @@
       "design_and_observation": "trial D5b; epithelial counts 1,193 and 2,423 against the paper's 1,286 and 2,584",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d5b_corrected_annotation/d5b_composition.csv"
+        "Research Article/gate1_02_choi_2020/trials/d5b_corrected_annotation/d5b_composition.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d5b_corrected_annotation/d5b_composition.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d5b_corrected_annotation/d5b_composition.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -2331,9 +2331,9 @@
       "design_and_observation": "trial D5b G5 on 202 control and 279 IL-1beta AT1 cells; inside the depth window 0.94, 0.69, 3.54",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d5b_corrected_annotation/d5b_at1_marker_ratios.csv"
+        "Research Article/gate1_02_choi_2020/trials/d5b_corrected_annotation/d5b_at1_marker_ratios.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d5b_corrected_annotation/d5b_at1_marker_ratios.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d5b_corrected_annotation/d5b_at1_marker_ratios.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -2354,9 +2354,9 @@
       "design_and_observation": "trial D6 P1, P2, P5 on the D2b object",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d6_programmes/d6_scores_invivo.csv"
+        "Research Article/gate1_02_choi_2020/trials/d6_programmes/d6_scores_invivo.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d6_programmes/d6_scores_invivo.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d6_programmes/d6_scores_invivo.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -2377,9 +2377,9 @@
       "design_and_observation": "trial D6: Hif1a detection is highest in cycling AT2 (0.476 against 0.386); the Ndrg1-free hypoxia edge holds in the full object by 0.004 and not inside the depth window (-0.178 against -0.055)",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d6_programmes/d6_scores_invivo_window.csv"
+        "Research Article/gate1_02_choi_2020/trials/d6_programmes/d6_scores_invivo_window.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d6_programmes/d6_scores_invivo_window.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d6_programmes/d6_scores_invivo_window.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established",
       "status_group": "Not established",
@@ -2400,9 +2400,9 @@
       "design_and_observation": "trial D6 on the D5b object",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d6_programmes/d6_scores_organoid.csv"
+        "Research Article/gate1_02_choi_2020/trials/d6_programmes/d6_scores_organoid.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d6_programmes/d6_scores_organoid.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d6_programmes/d6_scores_organoid.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -2423,9 +2423,9 @@
       "design_and_observation": "trial D6 P4",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d6_programmes/d6_scores_invivo.csv"
+        "Research Article/gate1_02_choi_2020/trials/d6_programmes/d6_scores_invivo.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d6_programmes/d6_scores_invivo.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d6_programmes/d6_scores_invivo.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only",
       "status_group": "Descriptive or exploratory",
@@ -2446,9 +2446,9 @@
       "design_and_observation": "trial D7 A2: mean Scrublet score 0.052 against the paper's cut of 0.6, no cell above 0.7; Sftpc-plus-two-AT1-gene co-detection 0.24 in DATP against 0.74 in AT1 and 0.01 in hAT2",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d7_attack_claims/d7_a2_doublet_by_state.csv"
+        "Research Article/gate1_02_choi_2020/trials/d7_attack_claims/d7_a2_doublet_by_state.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d7_attack_claims/d7_a2_doublet_by_state.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d7_attack_claims/d7_a2_doublet_by_state.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted",
       "status_group": "Refuted or retracted",
@@ -2469,9 +2469,9 @@
       "design_and_observation": "trial D7 A4: 578 double-positive of 3,661 against 551 expected, ratio 1.05, permutation p 0.005 within depth deciles; Krt8 is detected in 90 percent of the cells",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d7_attack_claims/d7_a4_codetection.csv"
+        "Research Article/gate1_02_choi_2020/trials/d7_attack_claims/d7_a4_codetection.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d7_attack_claims/d7_a4_codetection.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d7_attack_claims/d7_a4_codetection.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established (the test is uninformative at this detection level)",
       "status_group": "Not established",
@@ -2492,9 +2492,9 @@
       "design_and_observation": "A1 not computable (no primed-AT2 state in the object); A3 not attempted (the van den Brink 2017 list, M8, is not on disk and the repository does not take gene lists from memory)",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/trials/d7_attack_claims/d7_run_record.json"
+        "Research Article/gate1_02_choi_2020/trials/d7_attack_claims/d7_run_record.json"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/trials/d7_attack_claims/d7_run_record.json`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/trials/d7_attack_claims/d7_run_record.json`",
       "unresolved_artifact_labels": [],
       "status": "Not established",
       "status_group": "Not established",
@@ -2518,9 +2518,9 @@
         "GSE316244"
       ],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Not established",
@@ -2544,9 +2544,9 @@
       "design_and_observation": "trial C13: the observed detection gap is +0.02 to +0.09; Epcam detection spans 0.6456 to 0.9912 across the two groups in five evaluable libraries, and transitional cells are deeper in all five",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_by_library_and_state.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_by_library_and_state.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_by_library_and_state.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_by_library_and_state.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established",
       "status_group": "Not established",
@@ -2570,9 +2570,9 @@
       "design_and_observation": "trial C13, as the space left by C85 rather than a positive finding",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_summary.md"
+        "Research Article/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_summary.md"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_summary.md`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_summary.md`",
       "unresolved_artifact_labels": [],
       "status": "Not established (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Not established",
@@ -2596,9 +2596,9 @@
       "design_and_observation": "trial C13 T2, exploratory context",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv`",
       "unresolved_artifact_labels": [],
       "status": "Exploratory",
       "status_group": "Descriptive or exploratory",
@@ -2619,9 +2619,9 @@
       "design_and_observation": "trial C13 T2: it does not, median difference -0.08, and the direction disagrees across libraries",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_contrasts.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted",
       "status_group": "Refuted or retracted",
@@ -2642,9 +2642,9 @@
       "design_and_observation": "trial C13 T3: the flagged library moves from +0.066 to +0.002 between halves, a sign flip around zero rather than a reversed effect; the rule said what counts as a reversal but not when a difference is too small to have a sign",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_depth_split.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_depth_split.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_depth_split.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c13_epcam_transcript_in_the_transitional_state/c13_depth_split.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted as written, and disclosed",
       "status_group": "Refuted or retracted",
@@ -2770,9 +2770,9 @@
       "design_and_observation": "trial C14: it still misses TIMP1 to CD63, which tops three of the five resources",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate2_05_cardoso_2026/trials/c14_does_the_ranking_depend_on_the_database/c14_rankings_by_resource.csv"
+        "Research Article/gate2_05_cardoso_2026/trials/c14_does_the_ranking_depend_on_the_database/c14_rankings_by_resource.csv"
       ],
-      "artifact_text": "`Thesis/gate2_05_cardoso_2026/trials/c14_does_the_ranking_depend_on_the_database/c14_rankings_by_resource.csv`",
+      "artifact_text": "`Research Article/gate2_05_cardoso_2026/trials/c14_does_the_ranking_depend_on_the_database/c14_rankings_by_resource.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted by its own output, and disclosed",
       "status_group": "Refuted or retracted",
@@ -2797,9 +2797,9 @@
         "GSE247130"
       ],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m4_the_corroboration_the_register_claimed/m4_ratios.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m4_the_corroboration_the_register_claimed/m4_ratios.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m4_the_corroboration_the_register_claimed/m4_ratios.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m4_the_corroboration_the_register_claimed/m4_ratios.csv`",
       "unresolved_artifact_labels": [],
       "status": "Validated (owner retained 2026-09-22, decision 30)",
       "status_group": "Validated",
@@ -2822,9 +2822,9 @@
       "design_and_observation": "trial M0 under the replicate rule inherited from D0: ten libraries, 104,143 cells, one library per condition, each pooling two mice before loading",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m0_deposit_reality_check/m0_replication.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m0_deposit_reality_check/m0_replication.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m0_deposit_reality_check/m0_replication.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m0_deposit_reality_check/m0_replication.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not establishable with the data that exists (owner retained 2026-09-22, decision 30)",
       "status_group": "Not established",
@@ -2845,9 +2845,9 @@
       "design_and_observation": "trials M1e and M2; per gene the loss is carried by at least five genes (Etv5 -0.227 and -0.239, Napsa -0.272 and -0.167, Slc34a2 -0.271 and -0.189, Abca3 -0.182 and -0.212, Lamp3 -0.160 and -0.115)",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_seeds.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_seeds.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_seeds.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_seeds.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (owner retained 2026-09-22, decision 30)",
       "status_group": "Descriptive or exploratory",
@@ -2871,9 +2871,9 @@
       "design_and_observation": "trial M1c: the two neonatal P9 wells label 3.69 and 8.07 per cent against at most 5.09 per cent in any injured well, so the whole-trial negative control fired and the trial refused",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1c_label_at_the_depth_available/m1c_labels.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m1c_label_at_the_depth_available/m1c_labels.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1c_label_at_the_depth_available/m1c_labels.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m1c_label_at_the_depth_available/m1c_labels.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted (owner retained 2026-09-22, decision 30)",
       "status_group": "Refuted or retracted",
@@ -2896,9 +2896,9 @@
       "design_and_observation": "trial M1e read this in two wells; trial M2 withdrew it",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1e_per_well_budget/m1e_arms.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m1e_per_well_budget/m1e_arms.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1e_per_well_budget/m1e_arms.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m1e_per_well_budget/m1e_arms.csv`",
       "unresolved_artifact_labels": [],
       "status": "Retracted-superseded (owner retained 2026-09-22, decision 30)",
       "status_group": "Refuted or retracted",
@@ -2919,9 +2919,9 @@
       "design_and_observation": "trials M1e, M2 and M3; three sham standard deviations, the smallest value the frozen rule would have called real, is 0.0043 to 0.0120 in detection fraction, and the effects present are 0.004 to 0.012",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_summary.md"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_summary.md"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_summary.md`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_summary.md`",
       "unresolved_artifact_labels": [],
       "status": "Not established (owner retained 2026-09-22, decision 30)",
       "status_group": "Not established",
@@ -2942,9 +2942,9 @@
       "design_and_observation": "trial M2 and the M2 offsets table: under the mean and trimmed offsets the AT2 arm in the infected Cebpa-mutant well moves further toward closing, reaching z = -3.23 under the mean, where it clears, and z = -2.81 under the trimmed mean",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_offsets.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_offsets.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_offsets.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_offsets.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted (owner retained 2026-09-22, decision 30)",
       "status_group": "Refuted or retracted",
@@ -2965,9 +2965,9 @@
       "design_and_observation": "trial M1 rule R3: the rule removed a median of 99.9 per cent of cells across the ten wells, keeping 25.5 per cent of the shallowest well and none of the deepest",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1_closed_or_merely_silenced/m1_wells.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m1_closed_or_merely_silenced/m1_wells.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1_closed_or_merely_silenced/m1_wells.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m1_closed_or_merely_silenced/m1_wells.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted as written, and disclosed (owner retained 2026-09-22, decision 30)",
       "status_group": "Refuted or retracted",
@@ -2988,9 +2988,9 @@
       "design_and_observation": "trial M1b: on RNA downsampled to 2,366 and 3,400 UMI the conjunction returned 0.03 to 0.66 per cent of filtered cells across the ten wells",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1b_corrected_pass/m1b_labels.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m1b_corrected_pass/m1b_labels.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1b_corrected_pass/m1b_labels.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m1b_corrected_pass/m1b_labels.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted (owner retained 2026-09-22, decision 30)",
       "status_group": "Refuted or retracted",
@@ -3011,9 +3011,9 @@
       "design_and_observation": "trial M1d: the budget retained 60 per cent of every well, which permits up to 40 per cent to fall below it, while the gate refused any well losing more than 20 per cent of a group. 5 of the eight mature wells reached the gate and all 5 refused there, at 27 to 47 per cent; the other 3 refused earlier at the fifty-cell floor and never reached the budget",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1d_mature_wells_only/m1d_readings.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m1d_mature_wells_only/m1d_readings.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1d_mature_wells_only/m1d_readings.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m1d_mature_wells_only/m1d_readings.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted, and disclosed (owner retained 2026-09-22, decision 30)",
       "status_group": "Refuted or retracted",
@@ -3034,9 +3034,9 @@
       "design_and_observation": "trial M2 against trial M1e's rule R9: the control clears in five of eight seed-and-well combinations and fails leave-one-out on two of six genes in each injured well. The two carriers differ between wells: Ndrg1, Sfn in the wildtype infected well and Lgals3, Ndrg1 in the Cebpa-mutant infected well",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_leave_one_out.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_leave_one_out.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_leave_one_out.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m2_robustness_of_the_m1e_reading/m2_leave_one_out.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted, and disclosed (owner retained 2026-09-22, decision 30)",
       "status_group": "Refuted or retracted",
@@ -3057,9 +3057,9 @@
       "design_and_observation": "refused a priori, and the argument is what carries it: the labels and the chromatin come from one nucleus, both modalities share that nucleus's quality, and a per-peak detection fraction is monotone in depth, so the null is false by construction and the design has no state in which it reads no",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/ANALYSIS_TRIAL_PLAN.md"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/ANALYSIS_TRIAL_PLAN.md"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/ANALYSIS_TRIAL_PLAN.md`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/ANALYSIS_TRIAL_PLAN.md`",
       "unresolved_artifact_labels": [],
       "status": "Refuted (owner retained 2026-09-22, decision 30)",
       "status_group": "Refuted or retracted",
@@ -3080,9 +3080,9 @@
       "design_and_observation": "trials M1e and M2: the infected Fos/Fosb/Junb mutant well held 44 labelled cells after the fragment budget, below the floor of 50, so it was never computed",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1e_per_well_budget/m1e_readings.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m1e_per_well_budget/m1e_readings.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1e_per_well_budget/m1e_readings.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m1e_per_well_budget/m1e_readings.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established (owner retained 2026-09-22, decision 30)",
       "status_group": "Not established",
@@ -3103,9 +3103,9 @@
       "design_and_observation": "trial M3: rule R12 had removed Cebpa from the AT2 arm where it is genetically deleted and kept it everywhere else, and Cebpa carries three distal peaks but the largest positive per-gene value in wildtype_SeV. With Cebpa dropped everywhere the AT2 arm is negative in all three computable wells",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted, and disclosed (owner retained 2026-09-22, decision 30)",
       "status_group": "Refuted or retracted",
@@ -3126,9 +3126,9 @@
       "design_and_observation": "trial M3: the sham permutes cells, so it asks whether this split is special and cannot ask whether these genes are special. Against 300 gene sets matched gene by gene on distal peak count and evaluated on the real split, the mean is +0.00069 and +0.00205 rather than zero",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted (owner retained 2026-09-22, decision 30)",
       "status_group": "Refuted or retracted",
@@ -3149,9 +3149,9 @@
       "design_and_observation": "trial M3 under one instrument and the gene-set null: percentile 0.000, 0.007 and 0.000 of 300 matched sets, at -37.8, -18.3 and -15.5 per cent of reference accessibility",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv`",
       "unresolved_artifact_labels": [],
       "status": "Exploratory (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Descriptive or exploratory",
@@ -3175,9 +3175,9 @@
       "design_and_observation": "trial M3: re-centred on the gene-set null that arm falls from clearing to z = 1.96, and only wildtype_SeV retains a transitional signal after proper centring",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_arms.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted (owner retained 2026-09-22, decision 30)",
       "status_group": "Refuted or retracted",
@@ -3198,9 +3198,9 @@
       "design_and_observation": "trial M3, reported but refused under rule R9 because that well's positive control did not fire",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_readings.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_readings.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_readings.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m3_one_instrument_and_the_right_null/m3_readings.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Not established",
@@ -3223,9 +3223,9 @@
       "design_and_observation": "the Axin2 fraction differs 20 to 30 fold between two knock-in alleles (1 per cent in Nabhan 2018, about 20 per cent in Zacharias 2018) and nobody has explained the gap; the stability argument cannot separate subset from state because a recombined cell stays labelled after it switches the gene off; and the same paper reports 73 per cent of AT2 turning Axin2 on after injury, marker status tracking distance to a Wnt5a-expressing fibroblast, and Wnt ligand switching it on in ordinary AT2 cells",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/README.md"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/README.md"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/README.md`",
       "unresolved_artifact_labels": [],
       "status": "Not established (owner retained 2026-09-22, decision 30, as a block, to revisit)",
       "status_group": "Not established",
@@ -3246,9 +3246,9 @@
       "design_and_observation": "the lineage-labelled fraction rises from 15 to 60 per cent after bleomycin, and Choi's own Limitations section says residual tamoxifen means expansion of a pre-existing pool cannot be separated from fresh Cre firing during repair",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/README.md"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/README.md"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/README.md`",
       "unresolved_artifact_labels": [],
       "status": "Not established (owner retained 2026-09-22, decision 30, as a block, to revisit)",
       "status_group": "Not established",
@@ -3269,9 +3269,9 @@
       "design_and_observation": "England et al. 2025 report Axin2 specifically upregulated in the Il1r1-lineage sorted fraction and write that this suggests enrichment; it is one supplementary panel, bulk-sorted, at homeostasis only, with no contingency table",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/README.md"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/README.md"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/README.md`",
       "unresolved_artifact_labels": [],
       "status": "Not established (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Not established",
@@ -3292,9 +3292,9 @@
       "design_and_observation": "the GEO DataSets keyword intersection of the two genes returns zero records across all organisms, and no Il1r1 reporter mouse has ever been deposited",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/README.md"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/README.md"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/README.md`",
       "unresolved_artifact_labels": [],
       "status": "Refuted by this branch's own artefacts (owner retained 2026-09-22, decision 30, as a block, to revisit)",
       "status_group": "Refuted or retracted",
@@ -3318,9 +3318,9 @@
         "GSE310539"
       ],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/README.md"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/README.md"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/README.md`",
       "unresolved_artifact_labels": [],
       "status": "Not established (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Not established",
@@ -3347,9 +3347,9 @@
         "GSE310539"
       ],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/trials/feasibility_of_the_joint_question/locus_vs_transcript.csv"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/trials/feasibility_of_the_joint_question/locus_vs_transcript.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/trials/feasibility_of_the_joint_question/locus_vs_transcript.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/trials/feasibility_of_the_joint_question/locus_vs_transcript.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Descriptive or exploratory",
@@ -3373,9 +3373,9 @@
       "design_and_observation": "not measured here and not claimed; accessibility reports that a locus permits expression, not that the cell is signalling, and it is slower and more permissive than transcription",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/README.md"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/README.md"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/README.md`",
       "unresolved_artifact_labels": [],
       "status": "Not established (owner retained 2026-09-22, decision 30, as a block, to revisit)",
       "status_group": "Not established",
@@ -3396,9 +3396,9 @@
       "design_and_observation": "examined the 2026 Seminars in Immunology review of Yu, Lee, Choi and Choi, whose 162-item reference list cites Choi 2020 and contains no primary Axin2 or AEP paper",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/README.md"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/README.md"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/README.md`",
       "unresolved_artifact_labels": [],
       "status": "Refuted (owner retained 2026-09-22, decision 30, as a block, to revisit)",
       "status_group": "Refuted or retracted",
@@ -3419,9 +3419,9 @@
       "design_and_observation": "trials A1, A1b and A1c on the eight mature wells of both multiome deposits, with three instruments; every well returned NOT COMPUTABLE because the positive control gating the reading never cleared",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/ROUTE_B_OUTCOME.md"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/ROUTE_B_OUTCOME.md"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/ROUTE_B_OUTCOME.md`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/ROUTE_B_OUTCOME.md`",
       "unresolved_artifact_labels": [],
       "status": "Not established (owner retained 2026-09-22, decision 30, as a block, to revisit)",
       "status_group": "Not established",
@@ -3442,9 +3442,9 @@
       "design_and_observation": "trial A1: the vendor annotation assigns each peak to its NEAREST gene, so the two loci largely do not share peaks; the control returned ratios of 1.11 to 1.25 against null means near 1.03, a real but modest effect rather than an identity",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a1_locus_co_accessibility/a1_pairs.csv"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/trials/a1_locus_co_accessibility/a1_pairs.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a1_locus_co_accessibility/a1_pairs.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/trials/a1_locus_co_accessibility/a1_pairs.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted, and disclosed (owner retained 2026-09-22, decision 30, as a block, to revisit)",
       "status_group": "Refuted or retracted",
@@ -3465,9 +3465,9 @@
       "design_and_observation": "trials A1b and A1c: it failed in every well at z +0.24 to +2.05, for two reasons found only afterwards. It is judged against a null built for a different peak-count profile, 15 against 38, while the control is 15 against 15; and peaks the vendor annotation links to one gene need not lie in one regulatory domain",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted, and disclosed (owner retained 2026-09-22, decision 30, as a block, to revisit)",
       "status_group": "Refuted or retracted",
@@ -3488,9 +3488,9 @@
       "design_and_observation": "trial A1c against A1b: the binary form detected nothing anywhere, while the graded form clears on Etv5 against Abca3 at z = +3.55 and on Krt8 against Krt18 at z = +3.59",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Descriptive or exploratory",
@@ -3513,9 +3513,9 @@
         "GSE150957"
       ],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/README.md"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/README.md"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/README.md`",
       "unresolved_artifact_labels": [],
       "status": "Refuted (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Refuted or retracted",
@@ -3540,9 +3540,9 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/trials/module_detection_check/module_detection.csv"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/trials/module_detection_check/module_detection.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/trials/module_detection_check/module_detection.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/trials/module_detection_check/module_detection.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted (owner retained 2026-09-22, decision 30, as a block, to revisit)",
       "status_group": "Refuted or retracted",
@@ -3567,9 +3567,9 @@
         "GSE247505"
       ],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_summary.md"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_summary.md"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_summary.md`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_summary.md`",
       "unresolved_artifact_labels": [],
       "status": "Refuted (owner retained 2026-09-22, decision 30, as a block, to revisit)",
       "status_group": "Refuted or retracted",
@@ -3594,9 +3594,9 @@
         "GSE247504"
       ],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_libraries.csv"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_libraries.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_libraries.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_libraries.csv`",
       "unresolved_artifact_labels": [],
       "status": "Refuted (owner retained 2026-09-22, decision 30, as a block, to revisit)",
       "status_group": "Refuted or retracted",
@@ -3619,9 +3619,9 @@
       "design_and_observation": "trial A2: not computable, because R2 refused the genotype labels. The unread values are recorded: at two weeks the Wnt module separates completely in the direction of more Wnt without Il1r1, at twelve weeks it does not, and with two libraries per group the smallest attainable permutation p is one in six",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_readings.csv"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_readings.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_readings.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/trials/a2_does_il1r1_deletion_move_wnt/a2_readings.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established (owner retained 2026-09-22, decision 30, as a block, to revisit)",
       "status_group": "Not established",
@@ -3642,9 +3642,9 @@
       "design_and_observation": "an eight-adversary audit of those rows, each finding sent to an independent verifier that defaulted to refuting it, returned 45 confirmed or partly confirmed defects across 14 rows. Four numbers were quoted that no run in this repository ever produced: the Sox9 corroboration axis of C116, two z values in C122, and all three figures in C127. Four more were wrong against the tables they cite. Two rows were internally inconsistent with their neighbours, one named the wrong laboratory, and one was refuted by this branch's own artefacts",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m4_the_corroboration_the_register_claimed/m4_summary.md"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m4_the_corroboration_the_register_claimed/m4_summary.md"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m4_the_corroboration_the_register_claimed/m4_summary.md`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m4_the_corroboration_the_register_claimed/m4_summary.md`",
       "unresolved_artifact_labels": [],
       "status": "Refuted (owner retained 2026-09-22, decision 30)",
       "status_group": "Refuted or retracted",
@@ -3665,9 +3665,9 @@
       "design_and_observation": "the audit distinguishes them, and so does this repository's own rule that a result with no logged artefact is Not established. Of the four unlogged numbers, the Sox9 ratio recomputes to 7.05 and was right; the C127 figures came from an adversarial agent and cannot be reproduced here at all",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m4_the_corroboration_the_register_claimed/m4_ratios.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m4_the_corroboration_the_register_claimed/m4_ratios.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m4_the_corroboration_the_register_claimed/m4_ratios.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m4_the_corroboration_the_register_claimed/m4_ratios.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Descriptive or exploratory",
@@ -3691,9 +3691,9 @@
         "GSE310539"
       ],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1c_label_at_the_depth_available/m1c_labels.csv"
+        "Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m1c_label_at_the_depth_available/m1c_labels.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/datp_epigenetics/trials/m1c_label_at_the_depth_available/m1c_labels.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/datp_epigenetics/trials/m1c_label_at_the_depth_available/m1c_labels.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (owner retained 2026-09-22, decision 30)",
       "status_group": "Descriptive or exploratory",
@@ -3717,9 +3717,9 @@
       "design_and_observation": "trial A1c, produced and never registered until the audit found it missing: in the one transitional set large enough to compute, 773 cells of the infected Cebpa mutant, the Axin2 against Il1r1 correlation flips positive at r = +0.070 and the Wnt module at +0.092, percentile 0.94 and 0.977, against negative values in every AT2 set",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv"
+        "Research Article/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv"
       ],
-      "artifact_text": "`Thesis/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv`",
+      "artifact_text": "`Research Article/gate1_02_choi_2020/axin2_il1r1/trials/a1c_graded_statistic/a1c_pairs.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Not established",
@@ -3748,9 +3748,9 @@
         "GSE309751"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/trials/g0_gsea_feasibility/g0_deposits.csv"
+        "Research Article/gate1_01_niethamer_2025/trials/g0_gsea_feasibility/g0_deposits.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/trials/g0_gsea_feasibility/g0_deposits.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/trials/g0_gsea_feasibility/g0_deposits.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (owner retained 2026-09-22, decision 28)",
       "status_group": "Descriptive or exploratory",
@@ -3779,9 +3779,9 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_positive_control.csv"
+        "Research Article/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_positive_control.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_positive_control.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_positive_control.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Descriptive or exploratory",
@@ -3804,9 +3804,9 @@
       "design_and_observation": "trial G1b: iMON set NES 2.98, gseapy FDR 0.000, expression-matched p 0.000; iCAP set NES 2.07, FDR 0.000, matched p 0.008; rule written after G1's tables were seen, stated in the record (R0)",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/trials/g1b_corrected_positive_control/g1b_positive_control.csv"
+        "Research Article/gate1_01_niethamer_2025/trials/g1b_corrected_positive_control/g1b_positive_control.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/trials/g1b_corrected_positive_control/g1b_positive_control.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/trials/g1b_corrected_positive_control/g1b_positive_control.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (owner retained 2026-09-22, decision 28)",
       "status_group": "Descriptive or exploratory",
@@ -3827,10 +3827,10 @@
       "design_and_observation": "trial G1 TEST contrast, injury resolution (12 animals) against long-term (3): 8 GO biological process sets at gseapy FDR < 0.05, of which 2 also clear the expression-matched null (GOBP_MITOTIC_DNA_REPLICATION NES 2.98, FDR 0.000, matched p 0.000; GOBP_CELL_CYCLE_DNA_REPLICATION NES 2.67, FDR 0.000, matched p 0.004); no hallmark set clears Post-audit reference CAMERA: neither DNA-replication set passes confound-aware sensitivities under estimated correlation or fixed 0.01; fixed 0.01 supports the unadjusted contrast only.",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_gobp_cleared.csv",
+        "Research Article/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_gobp_cleared.csv",
         "analysis/corrections/statistics/tables/g1_confounded_sensitivity.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_gobp_cleared.csv`; `analysis/corrections/statistics/tables/g1_confounded_sensitivity.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_gobp_cleared.csv`; `analysis/corrections/statistics/tables/g1_confounded_sensitivity.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Not established",
@@ -3853,9 +3853,9 @@
       "design_and_observation": "trial G1 TEST contrast, 12 against 3 animals: no hallmark and no GO biological process set at gseapy FDR < 0.05 in either direction, with the gate cleared",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_hallmark_TEST_capillary.csv"
+        "Research Article/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_hallmark_TEST_capillary.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_hallmark_TEST_capillary.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_hallmark_TEST_capillary.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established (owner retained 2026-09-22, decision 28)",
       "status_group": "Not established",
@@ -3879,9 +3879,9 @@
         "GSE136831"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_positive_control.csv"
+        "Research Article/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_positive_control.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_positive_control.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_positive_control.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (owner retained 2026-09-22, decision 28)",
       "status_group": "Descriptive or exploratory",
@@ -3908,10 +3908,10 @@
         "GSE136831"
       ],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_replication.csv",
+        "Research Article/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_replication.csv",
         "analysis/corrections/statistics/tables/g2_corrected_replication.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_replication.csv`; `analysis/corrections/statistics/tables/g2_corrected_replication.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_replication.csv`; `analysis/corrections/statistics/tables/g2_corrected_replication.csv`",
       "unresolved_artifact_labels": [],
       "status": "Exploratory (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Descriptive or exploratory",
@@ -3939,9 +3939,9 @@
       "design_and_observation": "trial W1 contrast A, aMAC pseudobulk per animal, 4 against 8 animals, pydeseq2 ~ batch + sex + arm: 310 genes at padj < 0.05, 217 up in late active repair, led by C1qb and C1qc (log2 fold change 5.68 and 5.59), Trem2 (1.29), Tnf (0.97), Mmp14, Slc7a11 and the response-state genes Oas3, Oasl2, Slfn5 and Tap1; proliferation genes do not differ (Mki67 padj 0.55)",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_de_top_A.csv"
+        "Research Article/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_de_top_A.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_de_top_A.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_de_top_A.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Descriptive or exploratory",
@@ -3964,10 +3964,10 @@
       "design_and_observation": "trial W1 under CAMERA on the same design: no set at FDR < 0.05 in either contrast (0.95 in late active repair against resolution, 0.46 to 0.48 in resolution against long-term); the proliferation sets carry an inter-gene correlation of 0.30 to 0.45 across animals, and the two hallmark sets a variance inflation of 55 to 69, so a hallmark set of about 190 genes carries the independent information of about three; the ornithine set had 7 genes and was not tested Official reference limma CAMERA reproduces the no-hit result under both historical logCPM and voom/TMM transformations with estimated correlation.",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_sets.csv",
+        "Research Article/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_sets.csv",
         "analysis/corrections/statistics/tables/w1_reference_camera.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_sets.csv`; `analysis/corrections/statistics/tables/w1_reference_camera.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_sets.csv`; `analysis/corrections/statistics/tables/w1_reference_camera.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Not established",
@@ -3993,9 +3993,9 @@
       "design_and_observation": "trial W1 contrast B, 8 against 3 animals, the arm identified inside infection round 2022-12-06: 100 genes at padj < 0.05, 71 higher at 366 dpi, led by Il1a, Tnf, Nfkbiz, Nfkbid, Ccrl2, Zfp36, S100a8 and Cd274; Mki67 alone is higher at 90 dpi (log2 fold change 1.19, padj 0.02)",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_de_top_B.csv"
+        "Research Article/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_de_top_B.csv"
       ],
-      "artifact_text": "`Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_de_top_B.csv`",
+      "artifact_text": "`Research Article/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_de_top_B.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Descriptive or exploratory",
@@ -4018,10 +4018,10 @@
       "design_and_observation": "ES1 at 2,000 RNA UMI, label-free published ADI list: P9 control +1.04/+1.21 detection points; adult SeV control +7.61/+6.53 across seeds 17/29. All 400 source markers retained before exclusion of label genes; 398 remain and 390 are present in the multiome universe",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/epithelial_state_specificity/modules.json",
-        "Thesis/epithelial_state_specificity/results/within_unit_effects.csv"
+        "Research Article/epithelial_state_specificity/modules.json",
+        "Research Article/epithelial_state_specificity/results/within_unit_effects.csv"
       ],
-      "artifact_text": "`Thesis/epithelial_state_specificity/results/within_unit_effects.csv`; `Thesis/epithelial_state_specificity/modules.json`",
+      "artifact_text": "`Research Article/epithelial_state_specificity/results/within_unit_effects.csv`; `Research Article/epithelial_state_specificity/modules.json`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Descriptive or exploratory",
@@ -4053,10 +4053,10 @@
         "GSE262927"
       ],
       "artifacts": [
-        "Thesis/epithelial_state_specificity/results/retention.csv",
-        "Thesis/epithelial_state_specificity/results/within_unit_effects.csv"
+        "Research Article/epithelial_state_specificity/results/retention.csv",
+        "Research Article/epithelial_state_specificity/results/within_unit_effects.csv"
       ],
-      "artifact_text": "`Thesis/epithelial_state_specificity/results/retention.csv`; `Thesis/epithelial_state_specificity/results/within_unit_effects.csv`",
+      "artifact_text": "`Research Article/epithelial_state_specificity/results/retention.csv`; `Research Article/epithelial_state_specificity/results/within_unit_effects.csv`",
       "unresolved_artifact_labels": [],
       "status": "Not established (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Not established",
@@ -4081,10 +4081,10 @@
       "design_and_observation": "ES1 label-free AT2 list: P9 controls -4.59/-4.79 detection points versus mutants -0.70/-0.31; injured adult controls -8.88/-7.34 versus mutants -2.28/-2.43. Reference scores are also lower in mutants",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/epithelial_state_specificity/results/between_well_contrasts.csv",
-        "Thesis/epithelial_state_specificity/results/within_unit_effects.csv"
+        "Research Article/epithelial_state_specificity/results/between_well_contrasts.csv",
+        "Research Article/epithelial_state_specificity/results/within_unit_effects.csv"
       ],
-      "artifact_text": "`Thesis/epithelial_state_specificity/results/within_unit_effects.csv`; `Thesis/epithelial_state_specificity/results/between_well_contrasts.csv`",
+      "artifact_text": "`Research Article/epithelial_state_specificity/results/within_unit_effects.csv`; `Research Article/epithelial_state_specificity/results/between_well_contrasts.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Descriptive or exploratory",
@@ -4109,10 +4109,10 @@
       "design_and_observation": "The source-derived ADI and AT1 holdout lists share 119 genes; the four-gene late-AT1 panel changes direction across technical seeds in several injured wells and the one eligible external mouse",
       "datasets_explicit_in_row": [],
       "artifacts": [
-        "Thesis/epithelial_state_specificity/results/module_overlap.csv",
-        "Thesis/epithelial_state_specificity/results/seed_sensitivity.csv"
+        "Research Article/epithelial_state_specificity/results/module_overlap.csv",
+        "Research Article/epithelial_state_specificity/results/seed_sensitivity.csv"
       ],
-      "artifact_text": "`Thesis/epithelial_state_specificity/results/module_overlap.csv`; `Thesis/epithelial_state_specificity/results/seed_sensitivity.csv`",
+      "artifact_text": "`Research Article/epithelial_state_specificity/results/module_overlap.csv`; `Research Article/epithelial_state_specificity/results/seed_sensitivity.csv`",
       "unresolved_artifact_labels": [],
       "status": "Descriptive only (delegated reassessment 2026-09-22, decision 32)",
       "status_group": "Descriptive or exploratory",

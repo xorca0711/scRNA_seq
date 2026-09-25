@@ -9,7 +9,7 @@ import time
 from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parents[2]
-PAPER = ROOT / 'Thesis/gate2_C3_yu_lee_choi_min_2026'
+PAPER = ROOT / 'Research Article/gate2_C3_yu_lee_choi_min_2026'
 sys.path.insert(0, str(ROOT))
 from analysis.lib.provenance import sha256_file, code_identity, write_json_atomic
 sys.path.insert(0, str(PAPER / 'trials'))

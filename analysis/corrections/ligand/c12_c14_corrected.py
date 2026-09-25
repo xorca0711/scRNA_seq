@@ -18,7 +18,7 @@ from common import (HERE, ROOT, LIGANDS, RESOURCES, TARGETS, abundance_guard,
 
 OUT = HERE / "results" / "lr"
 CACHE = ROOT / "raw_data" / "GSE136831" / "c12_epithelial_stromal.h5ad"
-HISTORICAL = ROOT / "Thesis" / "gate2_05_cardoso_2026" / "trials"
+HISTORICAL = ROOT / "Research Article" / "gate2_05_cardoso_2026" / "trials"
 
 
 def aggregate(winners, donor_count):

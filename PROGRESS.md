@@ -5,12 +5,18 @@ to know to continue. Update this before stopping.
 
 ## Current status, 25 September 2026
 
+Folder migration: `Thesis/` is now `Research Article/`; question-specific work
+starts under [RQ_Specified](RQ_Specified/README.md). The structure PR establishes
+the A1 workspace; its expanded analysis specification follows separately. No
+scientific analysis was rerun for this migration. Historical records retain
+their original paths and hashes; see the [migration record](docs/migrations/2026-09-25-research-layout/README.md).
+
 The feasible Yu review-motivated analyses are complete: IPF pathways and
 ligand/target sensitivity analyses, eligible early mouse niches, all 75 human
 lesion libraries (555,480 QC cells/nuclei; 23 patients), 56 spatial sections,
 nine post-viral matrices and source-program specificity extensions.
-See the [evidence review](Thesis/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md)
-and [completion register](Thesis/gate2_C3_yu_lee_choi_min_2026/WORK_PACKAGES.md).
+See the [evidence review](Research%20Article/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md)
+and [completion register](Research%20Article/gate2_C3_yu_lee_choi_min_2026/WORK_PACKAGES.md).
 Completion does not resolve the KAC classifier, later treatment-history
 crosswalk, independent spatial regions or withdrawal/fate measurements.
 Estimated-correlation CAMERA remains primary; fixed-correlation findings stay
@@ -46,7 +52,7 @@ passed. Historical checkpoints below describe their dates, not current pending w
 ## Historical first-batch checkpoint: IL-1beta review, 24 September 2026
 
 The owner authorized final self-review, improvements and launch, superseding
-this morning's confirmation hold. [Final review](Thesis/gate2_C3_yu_lee_choi_min_2026/FINAL_REVIEW.md)
+this morning's confirmation hold. [Final review](Research%20Article/gate2_C3_yu_lee_choi_min_2026/FINAL_REVIEW.md)
 records small-n permutation limits, treatment-dependent coverage selection,
 annotation/access gates and source resolution. The first seven-library
 mouse acquisition/QC stage completed in 107.58 seconds; 28,243 cells pass QC.
@@ -61,7 +67,7 @@ two resources. Count parity and output-integrity checks passed; no table is
 empty. This compute job has ended. Results are descriptive, without biological-
 replicate tests; interpretation, full-cell and other sensitivities remain
 pending. See the
-[initial results](Thesis/gate2_C3_yu_lee_choi_min_2026/INITIAL_RUN_REPORT.md).
+[initial results](Research%20Article/gate2_C3_yu_lee_choi_min_2026/INITIAL_RUN_REPORT.md).
 Read current run records before reporting status. This is staged execution,
 not a claim that all endpoints or ligand-receptor analyses have completed.
 Restricted annotated objects and the later treatment-start crosswalk remain
@@ -69,7 +75,7 @@ scientific gates. No additional user confirmation is required to continue
 within the authorized plan.
 
 The owner also requested a figure-gallery plan during execution. The
-[paper-specific gallery plan](Thesis/gate2_C3_yu_lee_choi_min_2026/FIGURE_GALLERY_PLAN.md)
+[paper-specific gallery plan](Research%20Article/gate2_C3_yu_lee_choi_min_2026/FIGURE_GALLERY_PLAN.md)
 now specifies context/coverage, source-recipient expression, directional LR,
 recipient pathways, mouse perturbation, human/spatial context and evidence
 synthesis, with supporting annotation and robustness panels. The paper README
@@ -82,23 +88,23 @@ in the gallery. No statistical specification changed to select figure results.
 The owner finished Yu, Lee, Choi_Min and Choi 2026 and requested integration
 of the annotated PDF, Notion notes and repository state into research questions,
 a public-data shortlist and a complete analysis plan. The paper-specific folder
-is [`Thesis/gate2_C3_yu_lee_choi_min_2026/`](Thesis/gate2_C3_yu_lee_choi_min_2026/README.md),
+is [`Research Article/gate2_C3_yu_lee_choi_min_2026/`](Research%20Article/gate2_C3_yu_lee_choi_min_2026/README.md),
 using branch 2C item 3 while retaining stable roadmap number 13.
 
 **The owner explicitly requested review before the whole run.**
-[The proposed pipeline](Thesis/gate2_C3_yu_lee_choi_min_2026/ANALYSIS_TRIAL_PLAN.md)
+[The proposed pipeline](Research%20Article/gate2_C3_yu_lee_choi_min_2026/ANALYSIS_TRIAL_PLAN.md)
 is ready for confirmation or revision. Preparation retrieved ten GEO metadata
 records (371 GSM records) and checked two GSE300288 sparse count inputs; no
 biological effect or treatment comparison was computed. Core proposal:
 GSE300288 anti-IL-1beta perturbation, then human GSE308103/GSE307534 context,
 then injury and malignant-state specificity. Resolve animal identities and
 the core assay metadata conflict before inference. Existing claims and
-historical runs are unchanged. See [preparation evidence](Thesis/gate2_C3_yu_lee_choi_min_2026/trials/PREPARATION_REPORT.md).
+historical runs are unchanged. See [preparation evidence](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/PREPARATION_REPORT.md).
 
 The owner's follow-up identified that version 1 lacked actual macrophage/
 fibroblast ligand-receptor and pathway-enrichment analyses, and pointed back
 to the Body notes' context hierarchy. Version 2 now makes these central aims:
-[niche specification](Thesis/gate2_C3_yu_lee_choi_min_2026/NICHE_ANALYSIS_PLAN.md).
+[niche specification](Research%20Article/gate2_C3_yu_lee_choi_min_2026/NICHE_ANALYSIS_PLAN.md).
 It separates source regulation, recipient response, niche condition, age/history,
 repair routes and organ/disease contexts; CRC/PDAC leads are lung hypotheses.
 It specifies LIANA plus sample-level RNA-compatibility contrasts, macrophage/
@@ -132,7 +138,7 @@ outputs and their provenance hashes are unchanged. Documentation validation
 passed 1,408 checks before publication of this follow-up.
 
 The owner completed Nabhan 2018 and authorized source reproduction, Nb1 and an
-independent-cohort screen. The [analysis report](Thesis/gate1_03_nabhan_2018/README.md)
+independent-cohort screen. The [analysis report](Research%20Article/gate1_03_nabhan_2018/README.md)
 records the completed source and local descriptive runs, five Nb1 figures,
 input/output hashes and mathematical checks. A focused independent audit found
 no blocking calculation error; the current raw-layer denominator and incomplete
@@ -168,16 +174,16 @@ The older entries below are history, not the current execution queue. Decision
 new explicitly authorized reclassification. No original raw inputs are edited.
 
 
-Last updated: 2026-09-21 (the two original series moved into Thesis/ beside their source papers, the README left open-ended, the owner's rule on multi-agent cost recorded, the docs pages cleared of em-dashes, a paper-style figure drawn for each research question, a scan of where a gene set enrichment analysis is admissible, and the first three GSEA trials; see items 37 to 40). Previously 2026-09-20 (two branches of roadmap paper 2 on multiome deposits, an eight-adversary audit that corrected 14 register rows, the root README rewritten around a claims ledger drawn from the register, and RESEARCH_QUESTIONS.md added as the question-first entry point; items 35 and 36), 2026-09-17, 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
+Last updated: 2026-09-21 (the two original series moved into Research Article/ beside their source papers, the README left open-ended, the owner's rule on multi-agent cost recorded, the docs pages cleared of em-dashes, a paper-style figure drawn for each research question, a scan of where a gene set enrichment analysis is admissible, and the first three GSEA trials; see items 37 to 40). Previously 2026-09-20 (two branches of roadmap paper 2 on multiome deposits, an eight-adversary audit that corrected 14 register rows, the root README rewritten around a claims ledger drawn from the register, and RESEARCH_QUESTIONS.md added as the question-first entry point; items 35 and 36), 2026-09-17, 2026-09-15, 2026-09-13, 2026-09-12 and 2026-09-10. The scientific analysis of the two series is
 complete (state of 2026-08-09 below): `FINDINGS.md` (results with figures)
 leads, `README.md` is a landing page for the executed analysis, and
 `scRNAseq_workflow_Niethamer2025.md` lives in `docs/`. On 2026-09-09 a
-paper-by-paper roadmap directory was added (`Thesis/`, in the owner's
+paper-by-paper roadmap directory was added (`Research Article/`, in the owner's
 reading order) with the Sikkema 2023 HLCA study note, its
 decision criteria as reviewable JSON, a pipeline-framing proposal, and a
 first criteria trial on tracked tables. **Owner retain/reject review of that
 material is pending.** On 2026-09-10 two focused analyses of the source
-paper's phase structure were added under `Thesis/gate1_01_niethamer_2025/GSE262927/`
+paper's phase structure were added under `Research Article/gate1_01_niethamer_2025/GSE262927/`
 (`phase_timecourse/` and `myeloid_focus/`, scripts 10 to 13; items 18 to
 21 below). **Owner review of those is pending too.** Later on 2026-09-10 the
 S2 trial was merged (PR #8) with the items renumbered chronologically, and
@@ -210,24 +216,24 @@ below). Nothing is running.
 | `analysis/` reorganised into two series subdirectories | **DONE** |
 | Pipeline speedups (PCA, scan, threads) | **DONE**, verified output-identical |
 | Repository restructure (`FINDINGS.md`, README rewrite, root tidy-up) | **DONE** |
-| `Thesis/` roadmap index (11 papers, the owner's reading order, PubMed-verified IDs) | **DONE** |
+| `Research Article/` roadmap index (11 papers, the owner's reading order, PubMed-verified IDs) | **DONE** |
 | Sikkema 2023 (HLCA) study note, `integration_benchmark.json`, `PIPELINE_FRAMING.md` | **DONE, owner review pending** |
-| Trial S1: HLCA cluster-entropy criteria on the tracked tables | **DONE (2026-09-09); artefacts in Thesis/gate1_04_sikkema_2023_hlca/trials/** |
+| Trial S1: HLCA cluster-entropy criteria on the tracked tables | **DONE (2026-09-09); artefacts in Research Article/gate1_04_sikkema_2023_hlca/trials/** |
 | Trial S2: scArches mapping of GSE178360 to the HLCA core | **DONE (2026-09-09)**; 23 of 31 clusters agree with the blind proposals; AT0 is a minority and the AT0 candidate subcluster is mostly AT2 or uncertain; our mapping matches the HLCA authors' own transfer of the same cells at 99.2% (level 3) |
 | Trial S3: HLCA consensus-marker annotation of GSE178360 | **DONE (2026-09-09)**; 17 to 19 of 31 clusters agree with the blind proposals; AT0 by marker transfer Not established (scheme-dependent) |
 | Trial S4: mouse cluster 23 explained | **DONE (2026-09-09)**; low-count, ambient-like; 78% from EEM-scRNA-289 |
 | Trial S5: mouse cluster 5 subclustered and re-graded | **DONE (2026-09-09)**; resolved at Leiden 0.5 (94% of labelled cells in pure subclusters), not at 0.2 |
-| Phase-wise view of the Ki67 atlas (`Thesis/gate1_01_niethamer_2025/GSE262927/phase_timecourse/`, script 10) | **DONE (2026-09-10), owner review pending**; per-dpi atlas UMAP, per-animal lineage composition, Ki67-trace proliferation by lineage; trace peaks fall in the paper's window for 4 of 5 lineages (Lymphoid peaks at 11 dpi, not 6); Descriptive only, from tracked metadata |
-| Myeloid compartment by dpi (`Thesis/gate1_01_niethamer_2025/GSE262927/myeloid_focus/`, script 11) | **DONE (2026-09-10), owner review pending**; 9,997 cells from atlas clusters 5, 17, 24; 16 blind subclusters at Leiden 0.5 with 87% of labelled cells in pure subclusters; aMAC loss and iMON expansion at 6 dpi with reconstitution by 19 to 42 dpi, consistent with the paper's Figure 3; Descriptive only |
+| Phase-wise view of the Ki67 atlas (`Research Article/gate1_01_niethamer_2025/GSE262927/phase_timecourse/`, script 10) | **DONE (2026-09-10), owner review pending**; per-dpi atlas UMAP, per-animal lineage composition, Ki67-trace proliferation by lineage; trace peaks fall in the paper's window for 4 of 5 lineages (Lymphoid peaks at 11 dpi, not 6); Descriptive only, from tracked metadata |
+| Myeloid compartment by dpi (`Research Article/gate1_01_niethamer_2025/GSE262927/myeloid_focus/`, script 11) | **DONE (2026-09-10), owner review pending**; 9,997 cells from atlas clusters 5, 17, 24; 16 blind subclusters at Leiden 0.5 with 87% of labelled cells in pure subclusters; aMAC loss and iMON expansion at 6 dpi with reconstitution by 19 to 42 dpi, consistent with the paper's Figure 3; Descriptive only |
 | Alveolar macrophage origin by Ki67 trace window (`myeloid_focus/amac_origin/`, script 12) | **DONE (2026-09-10), owner review pending**; the 2 to 3 dpi window labels most of the 42 dpi aMAC pool (median 79.7%); marrow-inheritance and two-source checks Not established under the 30-cell floor |
 | Batch sensitivity of the myeloid embedding, Harmony on infection round (`myeloid_focus/batch_sensitivity/`, script 13) | **DONE (2026-09-10), owner review pending**; rounds already mix within every tested day (enrichment 1.11 to 1.46, threshold 2); the 6 dpi iMON state survives correction as its own subcluster (92% of cells from 6 dpi, 77% and 74% of each animal's iMON cells); the frozen survival rule selected the wrong subcluster and the revision is disclosed |
 | Trial S2 merged into main; PROGRESS and DEVELOPMENT renumbered chronologically | **DONE (2026-09-10, PR #8)** |
 | Repository hygiene and reframing: `archive/` for displaced material, README opens with the claims table, injury model named once, checks renamed | **DONE (2026-09-10), owner review pending**; see item 22 |
-| Cardoso 2026 (Gate 2, paper 5): study note, extracts, trials C0 to C12 and E1 to E6 (`Thesis/gate2_05_cardoso_2026/`) | **DONE (2026-09-12 to 2026-09-13), owner review pending**; Gate 1 not recovered; list A exhausted; rows C19 to C57 and C65 to C84; items 23 to 25 and 27 to 29 |
-| Choi 2020 (roadmap paper 2): study note, extracts, trials D0 to D7 with corrected passes D2b and D5b (`Thesis/gate1_02_choi_2020/`) | **DONE (2026-09-15), owner review pending**; entered at the owner's direction after reading (the AI-written note of 2026-09-13 was withdrawn first, items 26 and 31); four of five states, time course, ordering, programmes and the organoid shift reproduce as descriptions; primed AT2 never a cluster; rows C58 to C64 and C85 to C104; item 33 |
-| Reading order revised: Gate 2 branches 2C, 2N, 2W; papers 12 to 16 and methods references M1 to M7 added (`Thesis/README.md`, `ROADMAP.json`, `REFERENCES.md`) | **DONE (2026-09-15)**; documentation only; item 31 |
+| Cardoso 2026 (Gate 2, paper 5): study note, extracts, trials C0 to C12 and E1 to E6 (`Research Article/gate2_05_cardoso_2026/`) | **DONE (2026-09-12 to 2026-09-13), owner review pending**; Gate 1 not recovered; list A exhausted; rows C19 to C57 and C65 to C84; items 23 to 25 and 27 to 29 |
+| Choi 2020 (roadmap paper 2): study note, extracts, trials D0 to D7 with corrected passes D2b and D5b (`Research Article/gate1_02_choi_2020/`) | **DONE (2026-09-15), owner review pending**; entered at the owner's direction after reading (the AI-written note of 2026-09-13 was withdrawn first, items 26 and 31); four of five states, time course, ordering, programmes and the organoid shift reproduce as descriptions; primed AT2 never a cluster; rows C58 to C64 and C85 to C104; item 33 |
+| Reading order revised: Gate 2 branches 2C, 2N, 2W; papers 12 to 16 and methods references M1 to M7 added (`Research Article/README.md`, `ROADMAP.json`, `REFERENCES.md`) | **DONE (2026-09-15)**; documentation only; item 31 |
 | Generated `NEGATIVE_RESULTS.md`, one validated palette, shared deposit readers | **DONE (2026-09-13)** |
-| Roadmap re-ranked: Nabhan papers next, Gate 3 paused (`Thesis/README.md`, `ROADMAP.json`) | **DONE (2026-09-15, PR #26)**; documentation only; see item 30 |
+| Roadmap re-ranked: Nabhan papers next, Gate 3 paused (`Research Article/README.md`, `ROADMAP.json`) | **DONE (2026-09-15, PR #26)**; documentation only; see item 30 |
 | Branch labels (2C, 2N, 2W, 3A, 3B) carried into every document that names a gate or a branch; the two gate namespaces stated | **DONE (2026-09-15, PR #28)**; documentation only; item 32 |
 
 Repository state: the scientific analysis and its curation are complete;
@@ -360,11 +366,11 @@ labelled cells.
    interferon-stimulated). 21 of 29 agree. Trust the deposited label where the
    two conflict.
 
-11. **`Thesis/` is now a tracked directory** (2026-09-09). Its Markdown is
+11. **`Research Article/` is now a tracked directory** (2026-09-09). Its Markdown is
    link-checked by `validate_repository.py` like everything else. PDFs and
    spreadsheets inside it remain gitignored; only notes, JSON and small
    trial tables are tracked. Each new paper gets its own folder in the
-   roadmap order (`Thesis/README.md`), one at a time.
+   roadmap order (`Research Article/README.md`), one at a time.
 12. **Mouse cluster 23 is a low-count, ambient-like barcode population, not a
    cell type** (trial S4, 2026-09-09): median 1,868 counts against 6,790
    atlas-wide, 84% of its cells detect three or more lineage markers, 78% of
@@ -461,7 +467,7 @@ labelled cells.
    (FINDINGS section 1, the human KRT8 reference-aligned panels) moved to
    `archive/DISPLACED.md` because it is established outside this
    repository. Their artefacts and scripts stay in place
-   (then under `analysis/`; the artefacts moved with their series to `Thesis/`
+   (then under `analysis/`; the artefacts moved with their series to `Research Article/`
    on 2026-09-21, item 37) because the validator checks their numbers and the
    scripts regenerate them; only the narrative moved. The CI workflow and validator were
    renamed (`repository-checks.yml`, `validate_repository.py`), the paper's
@@ -474,7 +480,7 @@ labelled cells.
    human report and the validator's transitional-abundance checks.
 
 23. **Cardoso 2026 (Gate 2, paper 5) entered out of order; all eight trials
-   run** (`Thesis/gate2_05_cardoso_2026/`, 2026-09-12, owner instruction).
+   run** (`Research Article/gate2_05_cardoso_2026/`, 2026-09-12, owner instruction).
    Gate 1 returned a negative result and stopped to characterise, as the gate
    design requires; Gate 2 branches (a) and (b) then ran and both returned
    positive results, while branch (d) is closed by the data.
@@ -551,7 +557,7 @@ labelled cells.
      preference. **It is deliberately not a CellChat rerun**: CellChat is
      R-only and this machine has no R, so the trial re-derives the expression
      fact the communication claim rests on and states what it is not.
-   - **C5, 2026-09-13: three corrections.** Hbegf is second by abundance but third by enrichment over AT2 in three of four libraries; the 4-day replicates disagree 24-fold on the DATP-like share; the fibrotic response is three graded tiers, not a split. Rationale and next steps: `Thesis/gate2_05_cardoso_2026/DIVERGENCES_AND_NEXT.md`.
+   - **C5, 2026-09-13: three corrections.** Hbegf is second by abundance but third by enrichment over AT2 in three of four libraries; the 4-day replicates disagree 24-fold on the DATP-like share; the fibrotic response is three graded tiers, not a split. Rationale and next steps: `Research Article/gate2_05_cardoso_2026/DIVERGENCES_AND_NEXT.md`.
    - Status of every row: Descriptive only or Exploratory at best, by the
      replication constraint. Owner retain/reject review pending on all of it.
      The two decisions that matter: whether cluster 14 is the published
@@ -560,7 +566,7 @@ labelled cells.
 
 24. **The Hbegf lead was extended into four public datasets, and one of the
    repository's own leads was refuted in the process**
-   (`Thesis/gate2_05_cardoso_2026/trials/e*.py`, 2026-09-13, owner
+   (`Research Article/gate2_05_cardoso_2026/trials/e*.py`, 2026-09-13, owner
    instruction). Six trials, E1 to E4 plus E1b and E2b, all outside the
    Cardoso deposit. Full account in the newest handoff block below.
    - **Why leave the deposit.** Item 23's binding constraint means no Cardoso
@@ -598,7 +604,7 @@ labelled cells.
      retain/reject review pending on all of it.
 
 25. **Three chosen follow-ups run; list A is now empty and every answer is
-   negative or a correction** (`Thesis/gate2_05_cardoso_2026/trials/e6_*.py`,
+   negative or a correction** (`Research Article/gate2_05_cardoso_2026/trials/e6_*.py`,
    `c7_*.py`, `c8_*.py`, 2026-09-13, owner selection). Full account in the
    newest handoff block below.
    - **E6, the first direct test of the paper's axis.** Across 22 donors of
@@ -781,8 +787,8 @@ labelled cells.
 30. **Roadmap re-ranked (2026-09-15).** The owner re-ranked the reading
    order; at the time this repository had trials built for branch 2W and
    none for branch 2N. Consequences recorded in
-   `Thesis/README.md` (gate rules and the status column) and
-   `Thesis/ROADMAP.json` (a `reranking_2026_09_15` block and per-paper
+   `Research Article/README.md` (gate rules and the status column) and
+   `Research Article/ROADMAP.json` (a `reranking_2026_09_15` block and per-paper
    statuses): papers 3 and 6 (Nabhan 2018 and 2023) are next, with proposal
    Nb1 as their trial; Gate 3A and 3B are paused, not closed; the analysis
    contract and the KRT8 pilot remain unwritten. Two pieces of document
@@ -801,10 +807,10 @@ labelled cells.
      instruction to leave the paper until the owner had read it. DEVELOPMENT
      decision 21 and its responsibility row now say so, and the AI-written
      study note is recorded as REJECTED.
-   - **The Choi 2020 folder is withdrawn.** `Thesis/gate1_02_choi_2020/` no
+   - **The Choi 2020 folder is withdrawn.** `Research Article/gate1_02_choi_2020/` no
      longer exists on main. The study note and the D-series plan stay in git
      history (PR #19, commit 0cd45b6). Trial D0, its artefacts and the marker
-     extract moved unchanged to `Thesis/gate2_05_cardoso_2026/` as an
+     extract moved unchanged to `Research Article/gate2_05_cardoso_2026/` as an
      extension, with the D0 identifier kept so the run record and rows C58 to
      C64 stay true; the Cardoso plan, its trials index, `CLAIMS.md`,
      `README.md`, `REFERENCES.md` and `AI_CONTEXT.md` point there now, and
@@ -821,7 +827,7 @@ labelled cells.
      letter lives in the table and the JSON.
    - No analysis ran. No claim status changed.
 32. **Branch labels carried across every document (2026-09-15).** After
-   item 31 the branch letters lived only in `Thesis/README.md` and
+   item 31 the branch letters lived only in `Research Article/README.md` and
    `ROADMAP.json`. They are now in the Niethamer plan's theme table and Stage
    2 proposals (W1 is 2W, Nb1 is 2N, S1 is 3A, D1 is 3B), in the Cardoso
    study note and trials index (branch 2C), in the Stage 3 header of
@@ -906,7 +912,7 @@ labelled cells.
 
 35. **A branch of paper 2 into another genomic layer, five refusals, one
    retraction and one validated deposit error**
-   (`Thesis/gate1_02_choi_2020/datp_epigenetics/`, 2026-09-20, owner
+   (`Research Article/gate1_02_choi_2020/datp_epigenetics/`, 2026-09-20, owner
    instruction).
    - **Why the branch is not on the Choi deposit.** Choi 2020 supports the
      epigenetic half of its Il1r1 claim with ATAC-seq, and GSE144598 deposits
@@ -965,12 +971,12 @@ labelled cells.
      mouse can be the unit and reversibility, which is what "transient" in
      damage-associated transient progenitor actually asserts, becomes testable.
    - Rows C116 to C128; branch documents under
-     `Thesis/gate1_02_choi_2020/datp_epigenetics/`. Owner retain/reject review
+     `Research Article/gate1_02_choi_2020/datp_epigenetics/`. Owner retain/reject review
      pending.
 
 36. **The second branch, an adversarial audit of both, and the repository
    brought current** (2026-09-20, owner instruction).
-   - **The Axin2 and Il1r1 branch** (`Thesis/gate1_02_choi_2020/axin2_il1r1/`)
+   - **The Axin2 and Il1r1 branch** (`Research Article/gate1_02_choi_2020/axin2_il1r1/`)
      assessed the question Choi 2020's own Discussion proposes and ran no
      definitive trial on it, because none is possible: both populations are
      tamoxifen-inducible lineage reporters, no deposit carries both readouts in
@@ -1028,8 +1034,8 @@ labelled cells.
 
 37. **The two original series moved beside their source papers, and the
    README left open** (2026-09-21, owner instruction).
-   - `analysis/GSE262927/` is now `Thesis/gate1_01_niethamer_2025/GSE262927/`
-     and `analysis/GSE178360/` is `Thesis/ungated_murthy_2022/GSE178360/`. The
+   - `analysis/GSE262927/` is now `Research Article/gate1_01_niethamer_2025/GSE262927/`
+     and `analysis/GSE178360/` is `Research Article/ungated_murthy_2022/GSE178360/`. The
      rule is one folder per paper with each deposit beside the paper that
      produced it. Murthy 2022 is outside the roadmap and unread, so its folder
      carries a pointer note, not a study note (decision 23 still applies).
@@ -1041,7 +1047,7 @@ labelled cells.
    - Rewired by script, not by hand: every local Markdown link that crossed
      the boundary re-relativised, every prose path and script constant
      rewritten, `.gitignore` given the same regenerable-output rules under
-     `Thesis/`, the validator's JSON sweep extended to `Thesis/`, and the
+     `Research Article/`, the validator's JSON sweep extended to `Research Article/`, and the
      report generator's path anchor taught the new root. Run records and logs
      written before the move keep the paths of their day; they are artefacts,
      not pointers. The archived August 2026 PDF script is not maintained and says
@@ -1105,7 +1111,7 @@ labelled cells.
    question: is any GSEA established, and on which imported data would a
    trial be plausible). None exists; the pipeline record says "not run" and
    every "enrichment" in the scripts is a fold or kNN enrichment. Trial G0
-   (`Thesis/gate1_01_niethamer_2025/trials/g0_gsea_feasibility/`) scanned the
+   (`Research Article/gate1_01_niethamer_2025/trials/g0_gsea_feasibility/`) scanned the
    16 imported accessions from their metadata tables and this
    repository's reality-check records, no matrix opened, under rules frozen
    first (unit of animal, donor or library with at least three per arm; raw
@@ -1281,11 +1287,11 @@ and one regenerated page; no script ran on data.
 
 | What | Where | State |
 |---|---|---|
-| D0 trial, artefacts, `choi_utils.py`, `choi_2020_extracts.json` | moved with `git mv` into `Thesis/gate2_05_cardoso_2026/` (trials and folder root) | complete; history preserved |
+| D0 trial, artefacts, `choi_utils.py`, `choi_2020_extracts.json` | moved with `git mv` into `Research Article/gate2_05_cardoso_2026/` (trials and folder root) | complete; history preserved |
 | Choi study note and D-series plan | removed from main; recoverable from PR #19 | complete |
-| D0 section, TOC row, trial-table row | `Thesis/gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md`; index row in `trials/README.md` | complete |
+| D0 section, TOC row, trial-table row | `Research Article/gate2_05_cardoso_2026/ANALYSIS_TRIAL_PLAN.md`; index row in `trials/README.md` | complete |
 | Decision 21 and its responsibility row | `DEVELOPMENT.md` | complete |
-| Gate 2 branches, papers 12 to 16, methods M1 to M7 | `Thesis/README.md`, `Thesis/ROADMAP.json`, `REFERENCES.md` | complete; validator passes |
+| Gate 2 branches, papers 12 to 16, methods M1 to M7 | `Research Article/README.md`, `Research Article/ROADMAP.json`, `REFERENCES.md` | complete; validator passes |
 | The owner's private reading-order notes | outside git | revised the same day |
 
 **Next.** Paper 3 (Nabhan 2018) remains next, and paper 2 is the owner's to
@@ -1300,7 +1306,7 @@ ran and no artefact changed.
 
 | What | Where | State |
 |---|---|---|
-| Re-ranking recorded in the roadmap | `Thesis/README.md` gate rules and status column; `Thesis/ROADMAP.json` | complete; validator passes |
+| Re-ranking recorded in the roadmap | `Research Article/README.md` gate rules and status column; `Research Article/ROADMAP.json` | complete; validator passes |
 | Machine context brought in line | `AI_CONTEXT.md` status and `thesis_roadmap` block | complete |
 | Status table and item 30 | this file | complete |
 | The owner's private notes updated to match | outside git | complete |
@@ -1324,8 +1330,8 @@ Cardoso follow-ups, in this order.
 |---|---|---|
 | The two items left open by PR #12 | `analysis/config/palette.json`, `analysis/scripts/08_*` | closed; one validated palette, and the "AT0 candidate" label corrected |
 | A generated negative-results page | `NEGATIVE_RESULTS.md`, `analysis/scripts/14_*` | complete; 23 rows, regenerate after any status change |
-| Generic deposit readers promoted to the shared module | `Thesis/gate1_04_sikkema_2023_hlca/trials/trial_utils.py` | complete; `cardoso_utils` re-exports, all 19 Cardoso trial modules still import and two were re-run to prove it |
-| Roadmap paper 2, study note and Gate 0 | `Thesis/gate1_02_choi_2020/` | note and D0 complete; D1 not started |
+| Generic deposit readers promoted to the shared module | `Research Article/gate1_04_sikkema_2023_hlca/trials/trial_utils.py` | complete; `cardoso_utils` re-exports, all 19 Cardoso trial modules still import and two were re-run to prove it |
+| Roadmap paper 2, study note and Gate 0 | `Research Article/gate1_02_choi_2020/` | note and D0 complete; D1 not started |
 
 **Why the helper module moved.** The Choi folder needed the MatrixMarket
 triplet reader, the SOFT parser and the non-Ensembl feature rule, and a gate1
@@ -1361,7 +1367,7 @@ Branch `Claude/cardoso-2026-three-followups`, opened after
 | C8 | subpopulation or gradient in the Areg-independent tier | complete, gradient | about 12 minutes; reprocesses the GSE316244 niche libraries |
 
 **Where the work stands.** List A of
-[`DIVERGENCES_AND_NEXT.md`](Thesis/gate2_05_cardoso_2026/DIVERGENCES_AND_NEXT.md)
+[`DIVERGENCES_AND_NEXT.md`](Research%20Article/gate2_05_cardoso_2026/DIVERGENCES_AND_NEXT.md)
 is empty. Every question answerable from data already on disk has been asked,
 and five of the six answered negatively or forced a correction. What remains on
 that page is list B, which needs the bench, and list C, which the data type
@@ -1481,7 +1487,7 @@ caught the neutrophil error.
 
 Branch `Claude/cardoso-2026-gate0-gate1`, [PR #10](https://github.com/xorca0711/scRNA_seq/pull/10),
 merged 2026-09-13, but only up to trial C3; the later commits moved to PR #11. Nothing in `analysis/` was touched; all new material is under
-`Thesis/gate2_05_cardoso_2026/`. **All eight trials have run**; the trial
+`Research Article/gate2_05_cardoso_2026/`. **All eight trials have run**; the trial
 plan, the claims register (rows C19 to C36), the root README claims table and
 DEVELOPMENT decision 18 are written.
 
@@ -1533,15 +1539,15 @@ at a time.
 3. Trial S2 has run (2026-09-09); its consequences (items 15 to 17 above)
    await the owner's retain/reject decisions. The x64 environment now also
    holds torch 2.14.0 (CPU) and scvi-tools 1.5.0.post1, frozen in
-   `Thesis/gate1_04_sikkema_2023_hlca/trials/s2_reference_mapping/requirements_s2_env.txt`;
+   `Research Article/gate1_04_sikkema_2023_hlca/trials/s2_reference_mapping/requirements_s2_env.txt`;
    `analysis/requirements.txt` is unchanged.
 4. Add the next roadmap papers (Choi 2020, Nabhan 2018) as folders under
-   `Thesis/` in order, each with its five-question note.
+   `Research Article/` in order, each with its five-question note.
 
 ## Directory layout
 
-`analysis/` is split by series: `Thesis/gate1_01_niethamer_2025/GSE262927/` (mouse) and
-`Thesis/ungated_murthy_2022/GSE178360/` (human), with `scripts/`, `requirements.txt` and
+`analysis/` is split by series: `Research Article/gate1_01_niethamer_2025/GSE262927/` (mouse) and
+`Research Article/ungated_murthy_2022/GSE178360/` (human), with `scripts/`, `requirements.txt` and
 `raw_data_inventory.*` shared at the top level. This departs from the canonical
 paths in the original brief, which put the mouse outputs at the top level - see
 `analysis/LAYOUT.md` for the mapping and for why the three mouse analyses

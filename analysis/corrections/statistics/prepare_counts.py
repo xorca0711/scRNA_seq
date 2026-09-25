@@ -22,7 +22,7 @@ import numpy as np
 import pandas as pd
 from scipy import sparse
 
-TRIALS = ROOT / 'Thesis/gate1_01_niethamer_2025/trials'
+TRIALS = ROOT / 'Research Article/gate1_01_niethamer_2025/trials'
 sys.path.insert(0, str(TRIALS))
 import gsea_utils as gu
 import g2_gsea_ipf as g2
@@ -111,7 +111,7 @@ def human(name):
 
 
 def mouse():
-    base = ROOT / 'Thesis/gate1_01_niethamer_2025/GSE262927'
+    base = ROOT / 'Research Article/gate1_01_niethamer_2025/GSE262927'
     src = base / 'processed/final_clustered.h5ad'
     mypath = base / 'myeloid_focus/tables/myeloid_cell_metadata.csv'
     mpath = base / 'myeloid_focus/batch_sensitivity/tables/sample_infection_round.csv'

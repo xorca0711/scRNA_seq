@@ -25,10 +25,10 @@ violate, is [`AI_CONTEXT.md`](AI_CONTEXT.md).
 | Figures, tables, and report generation | AI-assisted |
 | Review of intermediate and final outputs | Me |
 | Retain / revise / reject decision on every result | Me |
-| Literature extraction into study notes and reviewable configs (`Thesis/`) | AI-assisted; my review pending |
+| Literature extraction into study notes and reviewable configs (`Research Article/`) | AI-assisted; my review pending |
 | Focused reproductions of the source paper's phase and myeloid claims (`phase_timecourse/`, `myeloid_focus/`) | AI-assisted, rules frozen before each run; my review pending |
 | Repository framing, and what is displaced as established elsewhere | Me (instruction 2026-09-10); AI-assisted execution |
-| Reading the Cardoso 2026 deposit in gates, and stopping Gate 1 when it failed (`Thesis/gate2_05_cardoso_2026/`) | Me (instruction and gate design 2026-09-12); AI-assisted execution, rules frozen before each run; my review pending |
+| Reading the Cardoso 2026 deposit in gates, and stopping Gate 1 when it failed (`Research Article/gate2_05_cardoso_2026/`) | Me (instruction and gate design 2026-09-12); AI-assisted execution, rules frozen before each run; my review pending |
 | Relaxing the displaced-material rule for the reference-aligned primary-marker panels (PR #12) | Me (decision 2026-09-13, against the agent's recommendation to hold them back); the agent had preserved them on a branch rather than reverting them, and flagged both the displaced-material rule and the non-validated palette; the palette is still unaddressed |
 | Pre-registering the post hoc Fst and Runx2 lead and running it (trial C9) | Me (instruction 2026-09-13); AI-assisted execution. The agent named the untestable half before running, reported that the effect size its own trial computed is not usable, and disclosed that T1 and T5 were not composable; my review pending on rows C65 to C72 |
 | Entering roadmap paper 2 (Choi 2020) on 2026-09-13: study note, extract, trial D0 | **Agent-proposed, approved by a one-word "proceed" on an agent-written list, not a specific instruction of mine** (corrected 2026-09-15). Later that day I said to leave the paper until I had read it. On 2026-09-15 I REJECTED the AI-written study note (withdrawn; kept in git history at PR #19), relocated trial D0 and its extract under the Cardoso folder as an extension, and reserved the paper-2 folder for after my own reading. Rows C58 to C64 stand, review pending |
@@ -146,7 +146,7 @@ the roadmap's "reference framework". Its integration benchmark, entropy
 thresholds, marker filters, sample-count rule and label-transfer uncertainty
 cutoff were extracted into a reviewable JSON file, and the AI session then
 proposed, criterion by criterion, what this pipeline should adopt, adapt or
-decline (`Thesis/gate1_04_sikkema_2023_hlca/PIPELINE_FRAMING.md`). Two
+decline (`Research Article/gate1_04_sikkema_2023_hlca/PIPELINE_FRAMING.md`). Two
 proposals are already fixed by earlier decisions: supervised scANVI on the
 deposited labels is declined because it would make decision 4 circular, and
 the HLCA donor-entropy threshold is not copied because it encodes 107 donors.
@@ -235,7 +235,7 @@ the human KRT8 reference-aligned panels), which is established elsewhere,
 outside this repository. Both were moved out of the main narrative into
 `archive/` with a note on what moved, when and why; their artefacts and
 scripts stay in place (then under `analysis/`; the artefacts moved with their
-series to `Thesis/` on 2026-09-21, decision 25) because the validator checks
+series to `Research Article/` on 2026-09-21, decision 25) because the validator checks
 their numbers and the scripts regenerate them. The README was rewritten to open with the
 claims table, to state the working question rather than a recovery
 exercise, and to name H1N1 once as the injury model of one series, because
@@ -549,7 +549,7 @@ framing is pending.
 
 **25 · The deposits moved beside their papers, the README was left open, and
 a cost rule for multi-agent work was set.** (2026-09-21.) I asked for the
-analysis folders to move into `Thesis/`, one folder per dataset, or into the
+analysis folders to move into `Research Article/`, one folder per dataset, or into the
 paper folder when that paper produced the deposit. GSE262927 therefore sits
 under paper 1. GSE178360 sits under a folder for Murthy 2022, which is outside
 the roadmap, and that folder holds a pointer note only, because decision 23
@@ -767,7 +767,7 @@ were carried forward in writing rather than dropped.
 - The refuted Scrublet/AT0 over-removal claim, with both rounds of the test:
   [`docs/DOUBLETS_AND_SCRUBLET.md`](docs/DOUBLETS_AND_SCRUBLET.md)
 - The three contradicted cluster annotations, flagged in
-  `Thesis/gate1_01_niethamer_2025/GSE262927/tables/cluster_annotation_proposals.csv`
+  `Research Article/gate1_01_niethamer_2025/GSE262927/tables/cluster_annotation_proposals.csv`
 - Thresholds that never bound, doublet calls that are a ranking rather than a
   detection, and every other caveat: [`FINDINGS.md § 6`](FINDINGS.md#5--negative-results-and-self-audits)
   and the per-dataset reports

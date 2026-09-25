@@ -16,12 +16,12 @@ jobs:
         with:
           python-version: "3.12"
       - name: Compile Python sources
-        run: python -m compileall -q analysis Thesis
+        run: python -m compileall -q -x '[/\\]\.tools[/\\]' analysis "Research Article" RQ_Specified
       - name: Test evidence and provenance contracts
         run: python -m unittest discover -s analysis/tests -q
       - name: Check generated claim manifest and summaries
         run: python analysis/scripts/claim_contract.py --check
       - name: Verify tracked Nb1 evidence
-        run: python Thesis/gate1_03_nabhan_2018/nb1/verify_outputs.py
+        run: python "Research Article/gate1_03_nabhan_2018/nb1/verify_outputs.py"
       - name: Validate tracked artefacts and documentation
         run: python analysis/scripts/validate_repository.py

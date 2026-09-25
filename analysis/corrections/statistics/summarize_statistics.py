@@ -22,7 +22,7 @@ from scipy.stats import false_discovery_control
 
 CACHE = HERE / 'cache'
 TABLES = HERE / 'tables'
-TRIALS = ROOT / 'Thesis/gate1_01_niethamer_2025/trials'
+TRIALS = ROOT / 'Research Article/gate1_01_niethamer_2025/trials'
 
 
 def read_sets():

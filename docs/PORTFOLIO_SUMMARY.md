@@ -46,7 +46,7 @@ measurements. Its biological batches and well mapping must pass the
    rank robustness is conditional on population and resource definitions.
 3. [Reference enrichment and design limits](../analysis/corrections/statistics/statistical_corrections.png):
    sample-level inference and correlation assumptions change retained leads.
-4. [Epithelial specificity and eligibility](../Thesis/epithelial_state_specificity/results/es1_specificity.png):
+4. [Epithelial specificity and eligibility](../Research%20Article/epithelial_state_specificity/results/es1_specificity.png):
    full source lists, technical sensitivity and external animal coverage.
 
 Follow the [case studies](PORTFOLIO.md), [research questions](../RESEARCH_QUESTIONS.md)

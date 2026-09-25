@@ -211,13 +211,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--input",
         type=Path,
-        default=Path("Thesis/ungated_murthy_2022/GSE178360/epithelial_subanalysis/epithelial_clustered.h5ad"),
+        default=Path("Research Article/ungated_murthy_2022/GSE178360/epithelial_subanalysis/epithelial_clustered.h5ad"),
     )
     parser.add_argument(
         "--output",
         type=Path,
         default=Path(
-            "Thesis/ungated_murthy_2022/GSE178360/epithelial_subanalysis/figures/reference_aligned"
+            "Research Article/ungated_murthy_2022/GSE178360/epithelial_subanalysis/figures/reference_aligned"
         ),
     )
     return parser.parse_args()
@@ -663,7 +663,7 @@ def write_metadata(
 
     metadata = {
         "dataset": "GSE178360",
-        "source_object": str(Path("Thesis/ungated_murthy_2022/GSE178360/epithelial_subanalysis/epithelial_clustered.h5ad")),
+        "source_object": str(Path("Research Article/ungated_murthy_2022/GSE178360/epithelial_subanalysis/epithelial_clustered.h5ad")),
         "source_n_cells": int(source.n_obs),
         "retained_n_cells": int(epi.n_obs),
         "excluded_n_cells": int(source.n_obs - epi.n_obs),

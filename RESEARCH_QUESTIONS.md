@@ -41,7 +41,7 @@ sample definitions, measurements and analysis requirements. Figures show either
 observed data or a labelled conceptual study design; design schematics do not
 represent demonstrated biological mechanisms.
 
-The completed [IL-1beta review analysis](Thesis/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md)
+The completed [IL-1beta review analysis](Research%20Article/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md)
 informs A11–A14 below. Paper-specific plans and completed trial records stay
 with their source study; this file is the canonical repository-wide RQ register.
 
@@ -68,7 +68,7 @@ prespecified gates, and reference-cell split intervals do not provide animal-lev
 uncertainty (C133). Chromatin closure, cellular arrest and reversibility remain
 unestablished here.
 
-The [epithelial specificity analysis](Thesis/epithelial_state_specificity/README.md)
+The [epithelial specificity analysis](Research%20Article/epithelial_state_specificity/README.md)
 freezes source definitions, separates full signatures from short marker panels,
 compares age and genotype explicitly, and records eligibility for independent
 confirmation. One well per age/genotype condition supports descriptive
@@ -186,23 +186,23 @@ across animals? These measurements separate candidate ligand sources from
 receiver responses and functional stemness. They also allow the possibility
 that identity maintenance and proliferation vary independently.
 
-[Nb1](Thesis/gate1_03_nabhan_2018/nb1/README.md) uses deposited cell labels and
+[Nb1](Research%20Article/gate1_03_nabhan_2018/nb1/README.md) uses deposited cell labels and
 animal-level raw-count summaries in GSE262927. Its earliest injured samples
 are day 6; it cannot test the rapid induction described by Nabhan 2018. Only
 one baseline and one day-11 AT2 unit pass the primary 50-cell floor, so these
 plots support hypothesis generation, not a replicated injury-effect test.
-An [independent cohort screen](Thesis/gate1_03_nabhan_2018/external_feasibility/README.md)
+An [independent cohort screen](Research%20Article/gate1_03_nabhan_2018/external_feasibility/README.md)
 documents the conditions needed for a follow-up comparison.
 
-![Animal-level AT2 identity, proliferation and Wnt-response transcripts](Thesis/gate1_03_nabhan_2018/nb1/figures/04_at2_dimensions.png)
+![Animal-level AT2 identity, proliferation and Wnt-response transcripts](Research%20Article/gate1_03_nabhan_2018/nb1/figures/04_at2_dimensions.png)
 
 *Figure A4b. GSE262927, one point per animal, identified by sample suffix.
 The two panels compare the Axin2/Lef1 transcript summary with a published AT2
 holdout panel and Mki67/Top2a. Filled points have at least 50 AT2 cells; open
 points fall below this eligibility floor. Day is confounded with cohort
 characteristics, and the two-gene summaries are not validated pathway or
-stemness scores. The [coverage figure](Thesis/gate1_03_nabhan_2018/nb1/figures/01_animal_coverage.png)
-and [per-gene results](Thesis/gate1_03_nabhan_2018/nb1/figures/03_at2_per_animal.png)
+stemness scores. The [coverage figure](Research%20Article/gate1_03_nabhan_2018/nb1/figures/01_animal_coverage.png)
+and [per-gene results](Research%20Article/gate1_03_nabhan_2018/nb1/figures/03_at2_per_animal.png)
 show the sampling and transcript-level context.*
 
 ### A5. Which transitional signatures are specific to injury rather than development or genotype?
@@ -233,7 +233,7 @@ reason to narrow the conclusion, not to substitute cell-level significance.
 
 #### Source-defined signatures and sample coverage
 
-![Full source-defined epithelial panels and external animal coverage](Thesis/epithelial_state_specificity/results/es1_specificity.png)
+![Full source-defined epithelial panels and external animal coverage](Research%20Article/epithelial_state_specificity/results/es1_specificity.png)
 
 *ES1 uses 2,000 UMI and label-excluded source definitions. ADI enrichment is
 +1.04/+1.21 detection points in neonatal controls and +7.61/+6.53 in injured
@@ -283,7 +283,7 @@ establish that interaction.
 
 ![AT2 programme detection in reference and labelled states by genotype](analysis/figures/rq/rq_a7_genotype_reference.png)
 
-*Figure A7. GSE247130 AT2 holdout mean gene detection at 2,000 UMIs, shown separately for P9 and SeV-injured adult wells. Lines connect the mean of two technical seeds within each genotype; circles and diamonds show seeds 17 and 29. There is one pooled library per condition, so these points do not supply biological replication or an interaction confidence interval. Reporting both populations reveals how reference shifts affect the labelled–reference contrast. Source: [module scores](Thesis/epithelial_state_specificity/results/module_scores.csv).*
+*Figure A7. GSE247130 AT2 holdout mean gene detection at 2,000 UMIs, shown separately for P9 and SeV-injured adult wells. Lines connect the mean of two technical seeds within each genotype; circles and diamonds show seeds 17 and 29. There is one pooled library per condition, so these points do not supply biological replication or an interaction confidence interval. Reporting both populations reveals how reference shifts affect the labelled–reference contrast. Source: [module scores](Research%20Article/epithelial_state_specificity/results/module_scores.csv).*
 
 ### A8. Does a broad AT1 score capture shared transition programmes rather than late maturation?
 
@@ -299,13 +299,13 @@ beyond the shared component, a purely shared-transition explanation is weakened.
 If no precise difference can be estimated, retain the question rather than
 calling one component biologically absent.
 
-Evidence for A7/A8: [ES1 source definitions and results](Thesis/epithelial_state_specificity/README.md).
+Evidence for A7/A8: [ES1 source definitions and results](Research%20Article/epithelial_state_specificity/README.md).
 Neither requires treating the neonatal label as the same biological state as an
 adult injury intermediate.
 
 ![Gene-list overlap and epithelial programme contrasts](analysis/figures/rq/rq_a8_signature_specificity.png)
 
-*Figure A8. Panel a shows source-list membership: diagonal cells are holdout-list sizes, and off-diagonal cells count shared genes, including 119 between ADI and AT1. Panel b shows labelled-minus-reference detection differences in percentage points, averaged across technical seeds 17 and 29 at 2,000 UMIs. An asterisk marks a sign change between seeds, not statistical significance. All displayed comparisons pass the group floor in both seeds. The external row is one mouse; broad AT1 enrichment and a small late-marker panel do not establish mature fate. Sources: [module overlap](Thesis/epithelial_state_specificity/results/module_overlap.csv) and [within-unit effects](Thesis/epithelial_state_specificity/results/within_unit_effects.csv).*
+*Figure A8. Panel a shows source-list membership: diagonal cells are holdout-list sizes, and off-diagonal cells count shared genes, including 119 between ADI and AT1. Panel b shows labelled-minus-reference detection differences in percentage points, averaged across technical seeds 17 and 29 at 2,000 UMIs. An asterisk marks a sign change between seeds, not statistical significance. All displayed comparisons pass the group floor in both seeds. The external row is one mouse; broad AT1 enrichment and a small late-marker panel do not establish mature fate. Sources: [module overlap](Research%20Article/epithelial_state_specificity/results/module_overlap.csv) and [within-unit effects](Research%20Article/epithelial_state_specificity/results/within_unit_effects.csv).*
 
 ### A9. Does apparent EGFR ligand specificity reflect receiver biology or receptor representation and coverage?
 
@@ -389,10 +389,10 @@ in all seven evaluable pooled repair/developmental libraries and all three
 eligible IPF donor pairs. It also rises in 19/23 LUAD-versus-normal paired
 patients, with mean difference +0.327 log2 CPM. This challenges the specificity
 of an elevated score; it does not establish a common cell identity. See the
-[completed evidence review](Thesis/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md),
-[repair comparison](Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u6_specificity/REPORT.md),
-[IPF comparison](Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u6_ipf_specificity/REPORT.md) and
-[human comparison](Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/REPORT.md).
+[completed evidence review](Research%20Article/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md),
+[repair comparison](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_specificity/REPORT.md),
+[IPF comparison](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_ipf_specificity/REPORT.md) and
+[human comparison](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/REPORT.md).
 
 **Working alternatives.** A shared injury/stress program may account for the
 overlap; additional epithelial programs may associate with lesion context;
@@ -438,10 +438,10 @@ neoplasia-specific extension needs reproducible within-study associations,
 independent cell-state validation and validation data not used for selection.
 Histology differences are cross-sectional, not a progression time course.
 
-**Reuse now:** [human program figure](Thesis/gate2_C3_yu_lee_choi_min_2026/figures/human_epithelial_program_specificity.png),
-[IPF state figure](Thesis/gate2_C3_yu_lee_choi_min_2026/figures/ipf_epithelial_state_specificity.png),
-[repair/overlap figure](Thesis/gate2_C3_yu_lee_choi_min_2026/figures/epithelial_specificity_and_signature_overlap.png),
-[paired values](Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_values.csv).
+**Reuse now:** [human program figure](Research%20Article/gate2_C3_yu_lee_choi_min_2026/figures/human_epithelial_program_specificity.png),
+[IPF state figure](Research%20Article/gate2_C3_yu_lee_choi_min_2026/figures/ipf_epithelial_state_specificity.png),
+[repair/overlap figure](Research%20Article/gate2_C3_yu_lee_choi_min_2026/figures/epithelial_specificity_and_signature_overlap.png),
+[paired values](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_values.csv).
 
 ### A12. Recipient context and IL-1 specificity
 
@@ -455,8 +455,8 @@ the other. In human LUAD-versus-normal up-target fits, IL1B ranks 4/10 for
 broad fibroblasts and 12/14 for AT2. Different candidate/target backgrounds
 make those ranks noncommensurate as effect sizes; they motivate a recipient
 question without proving stronger fibroblast signaling or indirect causality.
-See [IPF compatibility](Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_compatibility/REPORT.md) and
-[human target fits](Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_ligand_targets/REPORT.md).
+See [IPF compatibility](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_compatibility/REPORT.md) and
+[human target fits](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_ligand_targets/REPORT.md).
 
 **Working alternatives.** Changes could originate in ligand RNA, recipient
 components, captured subtype mixture, shared inflammation or other ligands.
@@ -491,10 +491,10 @@ recipient programs and omission stability. RNA agreement remains an
 association; NF-kB-like responses and high ligand ranks are not IL-1-specific
 causal evidence. The main test includes discordance and ineligible target sets.
 
-**Reuse now:** [human pathway figure](Thesis/gate2_C3_yu_lee_choi_min_2026/figures/human_paired_recipient_pathways.png),
-[human niche figure](Thesis/gate2_C3_yu_lee_choi_min_2026/figures/human_paired_niche_RNA_contrasts.png),
-[target figure](Thesis/gate2_C3_yu_lee_choi_min_2026/figures/human_ligand_target_eligibility_and_fit.png),
-[paired compatibility values](Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_niche/primary_compatibility_patient_values.csv).
+**Reuse now:** [human pathway figure](Research%20Article/gate2_C3_yu_lee_choi_min_2026/figures/human_paired_recipient_pathways.png),
+[human niche figure](Research%20Article/gate2_C3_yu_lee_choi_min_2026/figures/human_paired_niche_RNA_contrasts.png),
+[target figure](Research%20Article/gate2_C3_yu_lee_choi_min_2026/figures/human_ligand_target_eligibility_and_fit.png),
+[paired compatibility values](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_niche/primary_compatibility_patient_values.csv).
 
 **Generated A12 figures:**
 
@@ -517,8 +517,8 @@ represent coherent cell states, mixed profiles or measurement background?
 Unassigned cells carry median IL1B count fractions of 52-72% across human
 histologies. This is recovered RNA, not a fraction of tissue cytokine secretion.
 Cross-lineage RNA also remains substantial in the mapped populations. See the
-[annotation review](Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_full/ANNOTATION_REVIEW.md) and
-[source report](Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_sources/REPORT.md).
+[annotation review](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_full/ANNOTATION_REVIEW.md) and
+[source report](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_sources/REPORT.md).
 
 The generated A12-S1 figure uses 34,178 display cells with a 75-cell cap per
 patient/histology/source label, while quantitative source fractions use all
@@ -572,9 +572,9 @@ for the exact variables and paired contrast; 23 cohort patients does not mean
 a coverage panel, not a mediation fit. Replicated association would prioritize
 a functional test; it would not demonstrate a feedback loop.
 
-**Reuse now:** [human niche report](Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_niche/REPORT.md),
-[spatial report](Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_spatial_context/REPORT.md),
-[measured maps](Thesis/gate2_C3_yu_lee_choi_min_2026/figures/human_spatial_measured_maps.png).
+**Reuse now:** [human niche report](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_niche/REPORT.md),
+[spatial report](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_spatial_context/REPORT.md),
+[measured maps](Research%20Article/gate2_C3_yu_lee_choi_min_2026/figures/human_spatial_measured_maps.png).
 
 ### A14. Resolution versus persistence after signal withdrawal
 

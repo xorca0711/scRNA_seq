@@ -9,7 +9,7 @@ following three weeks from both resident aMACs and an iMON-derived trajectory.
 
 The whole-atlas run put the myeloid lineage into three Leiden clusters
 (5: monocyte, interstitial macrophage and dendritic cell mixture; 17: aMAC;
-24: neutrophils), and trial S5 (Thesis/gate1_04_sikkema_2023_hlca/trials)
+24: neutrophils), and trial S5 (Research Article/gate1_04_sikkema_2023_hlca/trials)
 found that cluster 5 on its own resolves at Leiden 0.5, not 0.2. This script
 takes the whole compartment from the 25-sample Ki67 atlas, re-embeds it with
 the deposited labels held out, grades the subclusters against those labels
@@ -85,7 +85,7 @@ PRIMARY_RES = 0.5
 SENSITIVITY_RES = [0.2, 1.0]
 
 RULES = {
-    "object": "Thesis/gate1_01_niethamer_2025/GSE262927/processed/final_clustered.h5ad, read row-wise; never loaded fully",
+    "object": "Research Article/gate1_01_niethamer_2025/GSE262927/processed/final_clustered.h5ad, read row-wise; never loaded fully",
     "cohort": "has_author_metadata == True (the 25-sample Ki67 atlas)",
     "cells": "atlas Leiden clusters 5, 17 and 24, chosen from the blind clustering and the cluster-level "
              "dominant-label table (tables/cluster_dominant_author_celltype.csv). Cluster 23 (ambient-like, "

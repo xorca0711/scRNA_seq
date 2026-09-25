@@ -54,7 +54,7 @@ each title and description below can be pasted into the corresponding media item
 | IL-1 source, receptor and regulatory context | Donor-weighted expression and paired contrasts for macrophage, fibroblast and AT2-like compartments. RNA compatibility is measured separately from cytokine secretion and functional signalling. | [PNG](../analysis/figures/rq/rq_a12_source_recipient_components.png) |
 | Recipient pathways and model sensitivity | Broad-recipient LUAD–normal CAMERA results under estimated and fixed inter-gene correlation. Primary and sensitivity analyses remain distinct; changing the correlation assumption changes retained leads. | [PNG](../analysis/figures/rq/rq_a12_recipient_enrichment.png) |
 | How annotation and molecule depth affect ligand-source comparisons | AREG source differences examined across annotation rules and molecule budgets. The primary matched-depth comparison does not establish a depth-independent source hierarchy. | [PNG](../analysis/corrections/ligand/results/figures/c37_annotation_depth.png) |
-| Epithelial signature specificity and validation coverage | Source-defined developmental, injury and genotype contrasts with an external eligibility audit. Limited biological replication prevents treating transcript overlap as confirmed shared cell identity. | [PNG](../Thesis/epithelial_state_specificity/results/es1_specificity.png) |
+| Epithelial signature specificity and validation coverage | Source-defined developmental, injury and genotype contrasts with an external eligibility audit. Limited biological replication prevents treating transcript overlap as confirmed shared cell identity. | [PNG](../Research%20Article/epithelial_state_specificity/results/es1_specificity.png) |
 
 Replace the old 161-entry claims-ledger image/caption if using this selection.
 The ledger remains useful as repository documentation, but the scientific plots
@@ -67,8 +67,8 @@ can remain in their repository galleries; this selection is not a quality rankin
   [generated claims index](../analysis/claims/manifest.json) contains 168 entries.
   Entries include methods, limitations and negative results, not 168 discoveries.
 - Human counts and inferential limits are documented in the
-  [completed review](../Thesis/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md)
-  and [annotation review](../Thesis/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_full/ANNOTATION_REVIEW.md).
+  [completed review](../Research%20Article/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md)
+  and [annotation review](../Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_full/ANNOTATION_REVIEW.md).
 - Removed the stale accession/study, total-cell, script, run-record and figure
   totals. Repeated analyses, superseries, companion assays and regenerated
   figures make an unqualified portfolio-wide total misleading.

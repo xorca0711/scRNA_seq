@@ -1,0 +1,36 @@
+"""Shared helpers for the Cardoso-2026 trials.
+
+Everything here now comes from the repository's one shared helper module. This
+file used to define the MatrixMarket triplet reader, the GEO SOFT family
+parser, the non-Ensembl feature rule and the QC metric helper, because the
+Cardoso deposits were the first mtx/tsv series in the repository. On 2026-09-13
+the Choi-2020 folder needed the same readers, and a gate1 folder importing from
+a gate2 folder is the wrong dependency direction, so they moved to
+`Research Article/gate1_04_sikkema_2023_hlca/trials/trial_utils.py` alongside RunRecord.
+
+This module is kept as a re-export so that every Cardoso trial written against
+it continues to work unchanged, and so that `from cardoso_utils import ...`
+stays the one import line those trials need.
+"""
+
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parents[3]
+RAW = REPO / "raw_data"
+
+# One implementation of RunRecord, and now of the deposit readers, for the
+# whole repository.
+_SHARED_TRIALS = REPO / "Research Article" / "gate1_04_sikkema_2023_hlca" / "trials"
+if str(_SHARED_TRIALS) not in sys.path:
+    sys.path.insert(0, str(_SHARED_TRIALS))
+from trial_utils import (ENSEMBL_ID_RE, RunRecord, df_to_markdown,  # noqa: E402,F401
+                         file_facts, package_versions, parse_soft, qc_metrics,
+                         read_mtx_triplet, shannon, utc_now)
+
+__all__ = [
+    "ENSEMBL_ID_RE", "RAW", "REPO", "RunRecord", "df_to_markdown", "file_facts",
+    "package_versions", "parse_soft", "qc_metrics", "read_mtx_triplet", "shannon", "utc_now",
+]

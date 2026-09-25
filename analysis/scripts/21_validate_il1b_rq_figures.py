@@ -5,9 +5,10 @@ import sys
 from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parents[2]
-PAPER = ROOT / 'Thesis/gate2_C3_yu_lee_choi_min_2026'
+PAPER = ROOT / 'Research Article/gate2_C3_yu_lee_choi_min_2026'
 sys.path.insert(0, str(ROOT))
 from analysis.lib.provenance import sha256_file, write_json_atomic, code_identity
+from analysis.lib.repository_paths import recorded_file, resolve_repo_path
 
 
 def main():
@@ -20,15 +21,17 @@ def main():
     assert prep['status'] == 'completed'
     assert json.loads((out / 'render_validation.json').read_text())['status'] == 'passed'
     for record in [prep, render]:
-        path = ROOT / record['code']['entrypoint']
+        path = resolve_repo_path(ROOT, record['code']['entrypoint'])
         if record is prep and not path.exists():
             path = out / '.history/layout_2026-09-25/u7_prepare_proposal_figures.py.txt'
+        else:
+            path = recorded_file(ROOT, record['code']['entrypoint'], record['code']['entrypoint_sha256'])
         assert sha256_file(path) == record['code']['entrypoint_sha256'], str(path)
     original = pd.read_csv(out / 'preparation_inputs.csv')
     original['path'] = original.path.map(lambda x: (PAPER / x).relative_to(ROOT).as_posix())
     hashes = pd.concat([original, pd.read_csv(out / 'render_inputs.csv')]).drop_duplicates('path')
     for row in hashes.itertuples():
-        assert sha256_file(ROOT / row.path) == row.sha256, row.path
+        assert sha256_file(recorded_file(ROOT, row.path, row.sha256)) == row.sha256, row.path
     cells = pd.read_csv(out / 'umap_display_values.csv')
     coverage = pd.read_csv(out / 'embedding_sampling_coverage.csv')
     sources = pd.read_csv(PAPER / 'trials/u5_human_sources/IL1B_source_fractions.csv')
@@ -70,7 +73,10 @@ def main():
                   display_cells=len(cells), patients=23, PCA_units=70, program_pairs_verified=True,
                   pathway_rows=42, target_candidates=32, visually_reviewed_figures=6,
                   measured_figures=5, proposal_schematics=1, no_new_inferential_tests=True)
-    write_json_atomic(out / 'validation.json', record)
+    if '--read-only' not in sys.argv:
+        from analysis.lib.provenance import archive_existing_record
+        archive_existing_record(out / 'validation.json')
+        write_json_atomic(out / 'validation.json', record)
     print(json.dumps({k: v for k, v in record.items() if k != 'code'}))
 
 

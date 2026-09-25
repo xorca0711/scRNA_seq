@@ -60,8 +60,8 @@ from matplotlib.colors import LinearSegmentedColormap  # noqa: E402
 
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "analysis" / "scripts"))
-sys.path.insert(0, str(REPO / "Thesis" / "gate2_05_cardoso_2026" / "trials"))
-sys.path.insert(0, str(REPO / "Thesis" / "gate1_02_choi_2020" / "datp_epigenetics" / "trials"))
+sys.path.insert(0, str(REPO / "Research Article" / "gate2_05_cardoso_2026" / "trials"))
+sys.path.insert(0, str(REPO / "Research Article" / "gate1_02_choi_2020" / "datp_epigenetics" / "trials"))
 
 import viz_style as vs  # noqa: E402
 from pipeline_utils import RANDOM_SEED, SERIES_DIRS  # noqa: E402
@@ -75,7 +75,7 @@ CACHE = OUT / "processed"
 RQ = REPO / "RESEARCH_QUESTIONS.md"
 MOUSE = SERIES_DIRS["GSE262927"]
 LUAD = REPO / "raw_data" / "GSE131907"
-C14 = REPO / "Thesis" / "gate2_05_cardoso_2026" / "trials" / "c14_does_the_ranking_depend_on_the_database"
+C14 = REPO / "Research Article" / "gate2_05_cardoso_2026" / "trials" / "c14_does_the_ranking_depend_on_the_database"
 
 RAMP = LinearSegmentedColormap.from_list("ramp", vs.RAMP)
 DOT = dict(s=2.5, linewidths=0, rasterized=True)

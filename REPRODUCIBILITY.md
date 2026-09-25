@@ -18,9 +18,9 @@ Python 3.12 is recommended; no third-party package is needed:
 ```bash
 python analysis/scripts/validate_repository.py
 python analysis/scripts/claim_contract.py --check
-python Thesis/gate1_03_nabhan_2018/nb1/verify_outputs.py
+python "Research Article/gate1_03_nabhan_2018/nb1/verify_outputs.py"
 python -m unittest discover -s analysis/tests -q
-python -m compileall -q analysis Thesis
+python -m compileall -q analysis "Research Article" RQ_Specified
 ```
 
 The validator checks local documentation links, parses every tracked JSON
@@ -32,12 +32,12 @@ coverage is stated per row; CI does not reproduce all biological claims.
 
 Local portable runtimes may contain ignored third-party Python 2 files. In a
 workspace containing `analysis/corrections/statistics/.tools/`, compile the
-repository sources with `python -m compileall -q -x '[/\\]\.tools[/\\]' analysis Thesis`.
+repository sources with `python -m compileall -q -x '[/\\]\.tools[/\\]' analysis "Research Article" RQ_Specified`.
 Those ignored runtime files are absent from a clean checkout and CI.
 
 ## Nabhan 2018 and Nb1
 
-The [Nabhan analysis](Thesis/gate1_03_nabhan_2018/README.md) has three separate
+The [Nabhan analysis](Research%20Article/gate1_03_nabhan_2018/README.md) has three separate
 reproduction paths: a 47-cell deposited FPKM panel, an animal-level raw-count
 analysis of GSE262927, and acquisition/eligibility checks for an external
 cohort. Each report supplies commands and input provenance. These paths do not
@@ -51,7 +51,7 @@ environment and source inputs listed in its run record.
 Historical trials are preserved. Corrected results and their run specifications
 live in [ligand corrections](analysis/corrections/ligand/README.md),
 [statistical corrections](analysis/corrections/statistics/README.md), and
-[epithelial specificity](Thesis/epithelial_state_specificity/README.md). Those
+[epithelial specificity](Research%20Article/epithelial_state_specificity/README.md). Those
 pages give the exact scripts, inputs, outputs and seeds for each pass. Review
 them before launching a large data stream. Large caches and the local R runtime
 are ignored by Git; compact results, plots, source definitions and provenance
@@ -115,7 +115,7 @@ extract them to this layout:
 
 ```text
 raw_data/
-├── GSE262927/                         # the two original series; analysed under Thesis/, beside their papers
+├── GSE262927/                         # the two original series; analysed under Research Article/, beside their papers
 │   ├── GSE262927_RAW/                 #   33 GSM*.h5 matrices
 │   └── GSE262927_CellMetaData.csv
 ├── GSE178360/

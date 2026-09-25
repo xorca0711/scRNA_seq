@@ -7,10 +7,19 @@ violated. Human-readable counterparts: [`README.md`](README.md) (overview),
 (AI-assisted development disclosure and scientific ownership),
 [`PROGRESS.md`](PROGRESS.md) (session state).
 
+## Current repository layout
+
+Paper studies: `Research Article/` (renamed from `Thesis/` on 2026-09-25).
+Question-specific plans and workflows: `RQ_Specified/`. Keep the root
+`RESEARCH_QUESTIONS.md` as the single question register. Quote directory names
+with spaces. Use `analysis/lib/repository_paths.py` to resolve historical paths;
+never rewrite old run identities to imply a new analysis. The folder PR contains
+an A1 workspace only; the detailed A1 specification follows separately.
+
 ## Current Nabhan analysis
 
 The owner completed Nabhan 2018 and authorized the analysis sequence on
-2026-09-22. [The Nabhan analysis](Thesis/gate1_03_nabhan_2018/README.md) contains
+2026-09-22. [The Nabhan analysis](Research%20Article/gate1_03_nabhan_2018/README.md) contains
 the source FPKM reproduction, local Nb1 raw-count analysis and independent
 cohort eligibility screen. Use its frozen protocol and run records; older
 Stage 2 references saying Nb1 is unrun are historical. Deposited fibroblast
@@ -31,7 +40,7 @@ contact have not been authorized.
 The root RESEARCH_QUESTIONS.md is the only current repository-wide question
 register (A1–A14). Shared RQ figures/data live under analysis/figures/rq/,
 with numbered scripts under analysis/scripts/. Paper-specific inference and
-F01–F07 gallery groups stay in Thesis/gate2_C3_yu_lee_choi_min_2026/.
+F01–F07 gallery groups stay in Research Article/gate2_C3_yu_lee_choi_min_2026/.
 The original u7 preparation records and script bytes are archived with the
 shared package; do not rewrite them as if the UMAP/PCA were recomputed.
 See docs/REPOSITORY_STRUCTURE.md for ID scope, path bases and authority.
@@ -42,7 +51,7 @@ On 2026-09-22 the owner explicitly delegated orders 1–4 of the audit improveme
 sequence, claim reclassification, relevant analyses and replots for portfolio
 use. Decision 32 and the remediation record supersede conflicting current-state
 summaries below; historical owner decisions remain preserved. New scientific
-runs live under `analysis/corrections/` and `Thesis/epithelial_state_specificity/`.
+runs live under `analysis/corrections/` and `Research Article/epithelial_state_specificity/`.
 Use `analysis/scripts/run_with_environment.py` with a compatible working
 Python and the existing x64 site-packages when the old venv launchers fail.
 See REPRODUCIBILITY.md. Do not confuse a successful structural check with
@@ -67,7 +76,7 @@ project:
     independently measured outcomes and is a follow-up question. Stage 0
     asked whether the published biology of one injury series could be
     recovered from raw counts; Stage 1 follows the paper's phase and myeloid
-    claims (Thesis/gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md).
+    claims (Research Article/gate1_01_niethamer_2025/ANALYSIS_TRIAL_PLAN.md).
   repository: https://github.com/xorca0711/scRNA_seq
   status: >
     Stage 0 complete (PR #1 to #4); Stage 1 follow-ups and trials S1 to S5
@@ -79,7 +88,7 @@ project:
     audited by eight adversaries and corrected (PR #42); README, references
     and this file brought current on 2026-09-20 with RESEARCH_QUESTIONS.md
     added as the question-first entry point; the two original series moved
-    into Thesis/ beside their source papers on 2026-09-21. Owner retain/reject
+    into Research Article/ beside their source papers on 2026-09-21. Owner retain/reject
     review pending on most register rows (PROGRESS items 12 to 37)
 
 datasets:
@@ -98,7 +107,7 @@ datasets:
     integration: Harmony (primary embedding)
     source_paper: "Kadur Lakshminarasimha Murthy et al., Nature 2022, doi:10.1038/s41586-022-04541-3"
   # Added 2026-09-12 for the Gate 2 paper (reading-order branch 2C since 2026-09-15). Downloaded, inventoried by trial C0,
-  # analysed under Thesis/gate2_05_cardoso_2026/, NOT under analysis/.
+  # analysed under Research Article/gate2_05_cardoso_2026/, NOT under analysis/.
   - accession: GSE316241
     role: Cardoso 2026 mesenchyme (Gate 1 target)
     species: mouse
@@ -170,7 +179,7 @@ datasets:
       epithelial half of the paper's CellChat object; the Cardoso data-availability statement
       does not name it
   # Added 2026-09-20 for the two branches of Choi 2020. Analysed under
-  # Thesis/gate1_02_choi_2020/datp_epigenetics/ and axin2_il1r1/, NOT under analysis/.
+  # Research Article/gate1_02_choi_2020/datp_epigenetics/ and axin2_il1r1/, NOT under analysis/.
   - accession: GSE310539
     role: "Lynch et al. 2026 multiome; the transitional state in chromatin (trials M0 to M4, A1 to A1c)"
     species: mouse
@@ -233,25 +242,25 @@ not_done:
   - reading the GSE178360 .RDS objects (need R; they hold author annotations)
 
 thesis_roadmap:
-  directory: Thesis/
-  index: Thesis/README.md        # the owner's reading order; also Thesis/ROADMAP.json
+  directory: Research Article/
+  index: Research Article/README.md        # the owner's reading order; also Research Article/ROADMAP.json
   rule: one folder per paper, added one at a time in roadmap order; study note + extracted JSON + dated analysis specification and run record
-  tracked: notes, JSON, small trial tables; PDFs and XLSX in Thesis/ are gitignored
-  local_pdfs: "C:/Users/dream/Documents/AC_document/External Thesis/SAP_Thesis study/Gate_1-2_Universal/ (per gate); older ones directly under Thesis/"
+  tracked: notes, JSON, small trial tables; PDFs and XLSX in Research Article/ are gitignored
+  local_pdfs: "C:/Users/dream/Documents/AC_document/External Research Article/SAP_Thesis study/Gate_1-2_Universal/ (per gate); older ones directly under Research Article/"
   done:
-    - gate1_01_niethamer_2025 (pointer to docs/ and Thesis/gate1_01_niethamer_2025/GSE262927; follow-ups N1 to N4 run 2026-09-10; Stage 2 W1 complete and descriptive Nb1 complete/gated; S1, D1 and V1 unrun)
+    - gate1_01_niethamer_2025 (pointer to docs/ and Research Article/gate1_01_niethamer_2025/GSE262927; follow-ups N1 to N4 run 2026-09-10; Stage 2 W1 complete and descriptive Nb1 complete/gated; S1, D1 and V1 unrun)
     - gate1_02_choi_2020 (re-entered 2026-09-15 at the owner's direction after reading: study note, choi_2020_extracts.json, trials D0 to D7 and the corrected passes D2b and D5b with run records; the AI-written note of 2026-09-13 was withdrawn first, decision 21, and the re-entry is decision 23; owner review pending on rows C58 to C64 and C85 to C104)
     - gate1_04_sikkema_2023_hlca (note, integration_benchmark.json, PIPELINE_FRAMING.md, trials S1 to S5 with run records; owner review pending; S2 result contradicts the human AT0 headline, see PROGRESS item 15)
     - gate2_05_cardoso_2026 (note, cardoso_2026_extracts.json, trials C0 to C12 and E1 to E6 with run records; entered out of order on the owner's instruction 2026-09-12; Gate 1 returned "not recovered"; list A exhausted; owner review pending, see PROGRESS items 23 to 29)
     - gate1_03_nabhan_2018 (source reproduction, descriptive Nb1 and external eligibility complete; local ligand ranking coverage-gated)
     - gate2_C3_yu_lee_choi_min_2026 (feasible IPF/mouse/human/spatial/specificity analyses complete; remaining endpoints explicitly gated)
-  next: gate2_06_nabhan_2023 and the GSE307112 outcome-pilot eligibility audit (A10); Nb1 completed its feasible descriptive scope (re-ranking of 2026-09-15, recorded in Thesis/README.md gate rules and ROADMAP.json); Gate 3A and 3B paused; Gate 2 carries branches 2C (Choi axis), 2N (Nabhan) and 2W (Wagner, papers 15 and 16 added 2026-09-15); methods references M1 to M8 are listed in Thesis/README.md and read at the step that uses them; owner decisions on PROGRESS items 12 to 31
+  next: gate2_06_nabhan_2023 and the GSE307112 outcome-pilot eligibility audit (A10); Nb1 completed its feasible descriptive scope (re-ranking of 2026-09-15, recorded in Research Article/README.md gate rules and ROADMAP.json); Gate 3A and 3B paused; Gate 2 carries branches 2C (Choi axis), 2N (Nabhan) and 2W (Wagner, papers 15 and 16 added 2026-09-15); methods references M1 to M8 are listed in Research Article/README.md and read at the step that uses them; owner decisions on PROGRESS items 12 to 31
   s2_environment: .venv-x64 also holds torch 2.14.0 (CPU) and scvi-tools 1.5.0.post1 (frozen in trials/s2_reference_mapping/requirements_s2_env.txt); scarches package removed (incompatible with anndata 0.13); HLCA reference files under trials/s2_reference_mapping/reference/ are gitignored (embedding 2.37 GB, MD5 4aa9167707141dd884ff0202b3ab1205)
 
 pitfalls_for_ai_assistants:
   - "raw_data/ is read-only and gitignored. NEVER modify or commit it. Never grep/walk it recursively."
-  - "docs/PIPELINE_AS_RUN.md and both series README.md files (Thesis/gate1_01_niethamer_2025/GSE262927/README.md, Thesis/ungated_murthy_2022/GSE178360/README.md) are GENERATED. Edit the generators (analysis/scripts/05_write_pipeline_as_run.py, 03_write_report.py) and re-run; never hand-edit."
-  - "Layout since 2026-09-21: each deposit lives beside its source paper under Thesis/ (GSE262927 under gate1_01_niethamer_2025/, GSE178360 under ungated_murthy_2022/, whose README is a pointer note because the paper is outside the roadmap and unread). analysis/ holds the shared pipeline, config, helpers, repository-level RQ figures/tables, corrective analyses and raw-data inventory; see docs/REPOSITORY_STRUCTURE.md. pipeline_utils.SERIES_DIRS is the one place the two locations are written. Run records and logs written before the move keep their analysis/GSE... paths: they are artefacts, not pointers, and are not edited."
+  - "docs/PIPELINE_AS_RUN.md and both series README.md files (Research Article/gate1_01_niethamer_2025/GSE262927/README.md, Research Article/ungated_murthy_2022/GSE178360/README.md) are GENERATED. Edit the generators (analysis/scripts/05_write_pipeline_as_run.py, 03_write_report.py) and re-run; never hand-edit."
+  - "Layout since 2026-09-21: each deposit lives beside its source paper under Research Article/ (GSE262927 under gate1_01_niethamer_2025/, GSE178360 under ungated_murthy_2022/, whose README is a pointer note because the paper is outside the roadmap and unread). analysis/ holds the shared pipeline, config, helpers, repository-level RQ figures/tables, corrective analyses and raw-data inventory; see docs/REPOSITORY_STRUCTURE.md. pipeline_utils.SERIES_DIRS is the one place the two locations are written. Run records and logs written before the move keep their analysis/GSE... paths: they are artefacts, not pointers, and are not edited."
   - "The original five figure blocks in RESEARCH_QUESTIONS.md and their caption blocks (between <!-- rq-figure:A# --> markers) are GENERATED by analysis/scripts/16_research_question_figures.py from the analysed objects; every caption number is formatted from a CSV beside the figure. They are visual aids for register rows, not evidence: nothing in them is tested, the multiome embeddings are RNA-only per well with no batch correction, and the owner asked for paper-style panels (embeddings, feature and violin panels, dotplots), not summary bars. Edit the script and re-run; never hand-edit the blocks. A1 panels g to i are the per-nucleus promoter reading that depth dominates, kept beside the detection-at-budget heatmap by owner decision 29; never cite panel g alone, because on its own it shows the retracted direction (C120)."
   - "Owner instruction 2026-09-21 on multi-agent workflows: weigh the cost before launching one. Do the deterministic part (id checks, number checks, path rewrites) with a script; deploy agents only where a script cannot judge (wording, framing, a fresh-eyes critique), at most three lenses, never one verifier per finding. Spend tokens where they change the answer."
   - "use .venv-x64/Scripts/python.exe for all Python; the native interpreter cannot import scanpy."
@@ -260,30 +269,30 @@ pitfalls_for_ai_assistants:
   - "docs/ tool pages (SoupX, scds, Slingshot, tradeSeq) describe the PUBLISHED method, not this pipeline; only Scrublet was used."
   - "where marker-panel annotation and deposited labels conflict, trust the deposited label."
   - "*.h5ad, processed/, sample_shards/ are gitignored and regenerable; figures and small tables are tracked."
-  - "Thesis/ is tracked and link-checked; never commit a PDF or XLSX there. Add papers one at a time in Thesis/README.md order."
+  - "Research Article/ is tracked and link-checked; never commit a PDF or XLSX there. Add papers one at a time in Research Article/README.md order."
   - "Thresholds taken from a paper are frozen in the trial plan BEFORE the trial reads any table; the HLCA donor-entropy threshold (0.43) must be recomputed per dataset and, for the mouse, within time point."
   - "scvi-tools and torch are installed in the emulated .venv-x64 only (owner-authorised 2026-09-09); never on the native ARM64 interpreter. The scarches package does not import with anndata 0.13; use scvi.model.SCANVI.load_query_data for surgery. Train in the background: about 40 s per epoch for 28k cells."
   - "HLCA label transfer confidently mislabels neutrophils as classical monocytes; uncertainty does not flag absent identities that resemble present ones."
   - "Framing (owner instruction 2026-09-09, tightened 2026-09-10): no influenza or interferon narrative; H1N1 is the injury model of one series, not the subject. Describe results by cell state, niche, macrophage and monocyte states, annotation robustness, curation hygiene. The repository is an analysis log for hypothesis generation."
   - "Trial W1 (2026-09-22, rows C162 to C164): in GSE262927 any contrast of 90 against 366 dpi is confounded with about nine months of age (no aged uninjured animal exists), with harvest date even inside one infection round, and inside round 2022-12-06 with sex. Never read a difference there as persistence after injury. Three animals are Ki67Cre/Cre (EEM-scRNA-125, -127, -236); W1 excluded them and removed Mki67 from every set. Proliferation gene sets co-vary across animals (inter-gene correlation 0.30 to 0.45), so a gene-permutation null overstates them by a factor of tens; use a correlation-respecting set test (CAMERA) or animal-label permutation, and say which."
   - "Purpose (owner restatement 2026-09-22, DEVELOPMENT decision 27): repository text describes one purpose only, hypothesis generation from an integrative reanalysis of public lung single-cell and multiome data. The owner's personal planning, including how the resulting questions are used, lives in private notes and never in a tracked file. Reading-order branches (2C, 2N, 2W, 3A, 3B) are named by theme, not by laboratory."
-  - "Displaced material (archive/DISPLACED.md, 2026-09-10): the Krt8-high transitional trajectory, the human KRT8 reference-aligned panels and the summary PDF under archive/portfolio_2026-08/ are established outside this repository. Do not extend them here; their artefacts and scripts stay in place and are validated. ONE EXCEPTION, by owner decision on 2026-09-13 (PR #12): the primary-marker dotplot, violin and per-cluster table for KRT8, CLDN4, KRT17 and SFN are on main under Thesis/ungated_murthy_2022/GSE178360/epithelial_subanalysis/figures/reference_aligned/. Treat that as a one-off the owner authorised, not as a general relaxation. Those panels were redrawn on the validated palette on the same day and their \"AT0 candidate\" label now reads \"SFTPC+SCGB3A2+ (mostly AT2)\", matching claim C6."
+  - "Displaced material (archive/DISPLACED.md, 2026-09-10): the Krt8-high transitional trajectory, the human KRT8 reference-aligned panels and the summary PDF under archive/portfolio_2026-08/ are established outside this repository. Do not extend them here; their artefacts and scripts stay in place and are validated. ONE EXCEPTION, by owner decision on 2026-09-13 (PR #12): the primary-marker dotplot, violin and per-cluster table for KRT8, CLDN4, KRT17 and SFN are on main under Research Article/ungated_murthy_2022/GSE178360/epithelial_subanalysis/figures/reference_aligned/. Treat that as a one-off the owner authorised, not as a general relaxation. Those panels were redrawn on the validated palette on the same day and their \"AT0 candidate\" label now reads \"SFTPC+SCGB3A2+ (mostly AT2)\", matching claim C6."
   - "liana 1.10.0 is installed in .venv-x64 for trial C12 (CellChat's resource and scoring logic in Python). Installing it DOWNGRADED pandas from 3.0.5 to 2.3.3. That was checked rather than assumed: the validator and three trials were re-run and reproduced identical results, with only the recorded version string changing. Older run records therefore name pandas 3.0.5, which is correct history, not drift."
   - "CellChat itself has never been run in this repository and cannot be: it is R-only and there is no R here. Trial C3 re-derives the expression fact the paper's communication claim rests on, and trial C12 scores CellChat's own resource through liana with permutations switched off. Neither is a CellChat rerun and both say so. Never describe a Python ligand-receptor computation in this repository as CellChat."
-  - "The validated figure palette lives in analysis/config/palette.json and is the ONE source of truth; Thesis/gate2_05_cardoso_2026/trials/viz_style.py reads it. Never hard-code figure colours and never reach for viridis or another default ramp. Categorical slots 1 to 4 pass the dataviz validator on the light surface, with one contrast warning that obliges visible labels or a table view; the sequential ramp is for magnitude only."
-  - "Choi 2020 (Thesis/gate1_02_choi_2020/): ONE library per condition in both single-cell accessions, so no contrast there carries within-group replication either. Describe directions; never compute a P value on a between-condition comparison. The trajectory question is the exception, because an ordering inside one library needs no between-group replication."
+  - "The validated figure palette lives in analysis/config/palette.json and is the ONE source of truth; Research Article/gate2_05_cardoso_2026/trials/viz_style.py reads it. Never hard-code figure colours and never reach for viridis or another default ramp. Categorical slots 1 to 4 pass the dataviz validator on the light surface, with one contrast warning that obliges visible labels or a table view; the sequential ramp is for magnitude only."
+  - "Choi 2020 (Research Article/gate1_02_choi_2020/): ONE library per condition in both single-cell accessions, so no contrast there carries within-group replication either. Describe directions; never compute a P value on a between-condition comparison. The trajectory question is the exception, because an ordering inside one library needs no between-group replication."
   - "Six of the eight Choi-2020 matrices are RAW 10x barcode whitelists (737,280 columns), not called cells. Cell calling is this repository's job and needs a frozen threshold; the cell count will not match the paper's, which used Cell Ranger 2.0.2. The two organoid libraries are already filtered."
   - "The tdTomato reporter is NOT a counted feature in the Choi-2020 deposit, so the Tomato-positive and Tomato-negative split cannot be verified from the matrix; a reanalysis must trust the library labels. This is the opposite of the Cardoso deposit, where the BSD selection marker gave an independent sort check."
   - "The Choi-2020 DATP definition includes a NEGATIVE condition (low Pdpn, Hopx, Cav1). A score built from the positive genes alone will not separate DATPs from mature AT1 cells. The primed AT2 state is defined by LOSS of Etv5, Abca3 and Cebpa rather than by a positive marker, so it cannot be scored the same way as the other states. Ndrg1 sits in both the DATP marker set and the hypoxia programme, so it is not independent evidence for both."
   - "The PMC web rendering strips italicised gene symbols, which silently empties every marker set in a paper. Read full text from the Europe PMC XML instead: https://www.ebi.ac.uk/europepmc/webservices/rest/PMCID/fullTextXML. GEO accessions are often stripped too; recover them with eutils elink from the PMID to the gds database, since the GEO web pages return reCAPTCHA."
-  - "Generic deposit readers (read_mtx_triplet, parse_soft, qc_metrics, ENSEMBL_ID_RE) live in Thesis/gate1_04_sikkema_2023_hlca/trials/trial_utils.py beside RunRecord, as of 2026-09-13. Thesis/gate2_05_cardoso_2026/trials/cardoso_utils.py re-exports them for the trials already written against it. Do not add a second implementation, and do not import across paper folders."
+  - "Generic deposit readers (read_mtx_triplet, parse_soft, qc_metrics, ENSEMBL_ID_RE) live in Research Article/gate1_04_sikkema_2023_hlca/trials/trial_utils.py beside RunRecord, as of 2026-09-13. Research Article/gate2_05_cardoso_2026/trials/cardoso_utils.py re-exports them for the trials already written against it. Do not add a second implementation, and do not import across paper folders."
   - "NEGATIVE_RESULTS.md is GENERATED from CLAIMS.md by analysis/scripts/14_write_negative_results.py. Never edit it by hand; change the register row and re-run the script. It collects every refuted, not-established, not-establishable and retracted row, and it deliberately gives no count of how many refute this repository's own claims, because that is a judgement the register does not encode."
   - "The .venv-x64 environment was rebuilt on 2026-09-20 after its base interpreter, which uv had placed under a tmp directory, was deleted; every scanpy, leidenalg, numba, torch and liana trial stopped running and nothing recorded what had been installed. Its exact contents are now tracked in analysis/config/requirements-x64.txt with the rebuild recipe in its header. Python 3.12.13, win-amd64, 128 distributions as of 2026-09-22 (pydeseq2 0.5.4 and its six dependencies added for trial W1, owner-authorised; gseapy 1.3.1, installed for G1 and G2 on 2026-09-21, pinned late). The interpreter now lives under uv's durable default, AppData/Roaming/uv/python, not under any tmp path."
   - "To check a venv is genuinely x86-64, use sysconfig.get_platform() and expect 'win-amd64'. Do NOT use platform.machine(): on Windows it reads PROCESSOR_ARCHITECTURE and reports ARM64 even from an x86-64 interpreter running under emulation, so it will tell you the rebuild failed when it succeeded."
   - "Branch lifecycle: use codex/<topic> for Codex work (historical Claude branches keep their names), and open a pull request; merge and branch deletion require the applicable user instruction. Twenty-two merged branches had accumulated on the remote by 2026-09-13 because nothing wrote this down; they were deleted on 2026-09-14 after checking that main contained every commit. A merged pull request keeps its diff on GitHub after its branch is gone, and the branch can be restored from the pull request page, so deleting is safe and reversible. Before deleting any branch, verify it with git rev-list --count main..<branch> and expect 0."
   - "Repository checks: analysis/scripts/validate_repository.py (renamed from validate_portfolio.py on 2026-09-10) and .github/workflows/repository-checks.yml. The paper's own workflow document moved to docs/WORKFLOW_Niethamer2025.md."
-  - "Trial scripts under Thesis/**/trials read the processed .h5ad objects row-wise (trial_utils.read_csr_rows); never load the 2.1 GB mouse object fully. Use absolute paths; the shell cwd can change between calls."
-  - "Cardoso 2026 (Thesis/gate2_05_cardoso_2026/): EVERY deposited mouse library pools three mice and each genotype contributes one library per sort, so no genotype contrast in that deposit has within-group replication. Describe directions; never compute a P value on a genotype contrast there. The exception is GSE247505 (England 2025), which has two replicate libraries per arm."
+  - "Trial scripts under Research Article/**/trials read the processed .h5ad objects row-wise (trial_utils.read_csr_rows); never load the 2.1 GB mouse object fully. Use absolute paths; the shell cwd can change between calls."
+  - "Cardoso 2026 (Research Article/gate2_05_cardoso_2026/): EVERY deposited mouse library pools three mice and each genotype contributes one library per sort, so no genotype contrast in that deposit has within-group replication. Describe directions; never compute a P value on a genotype contrast there. The exception is GSE247505 (England 2025), which has two replicate libraries per arm."
   - "Cardoso 2026: the mesenchymal and immune libraries are all a single time point (2 weeks). The paper's claim that fibroblast reprogramming precedes macrophage remodelling is imaging-only and CANNOT be tested from the deposit. Do not attempt a transcriptomic ordering there."
   - "Cardoso 2026 deposits carry three distinct gene spaces (CellRanger 3.0.2 to 8.0.0 against GRCm38, plus GRCh38 for the organoids). GSE316241 and GSE316244 share one; GSE316243 and GSE247505 share another; integration across them needs an explicit Ensembl-ID intersection (30,406 genes)."
   - "GSE316244 carries one non-gene feature, BSD (the reporter construct's selection marker). The C0 rule removes any feature whose ID is not an Ensembl gene ID and carries it per cell; BSD is detected in about 39% of RFP-sorted cells and 3 to 5% of niche cells, so it is a sort check, never a cell-type call."
@@ -293,7 +302,7 @@ pitfalls_for_ai_assistants:
   - "The Hbegf lead does NOT transfer across species. In mouse (trial C6) the Areg-independent Hbegf share is endothelial and mesenchymal; in three human datasets (E1, E1b, E2, E3) the ligand is myeloid-dominant. EGFR is mesenchymal in mouse and in human fibrosis but epithelial in human adenocarcinoma. Do not write a cross-species Hbegf argument from this repository's results."
   - "Claim C29's three-tier fibrotic response keeps its numbers and has lost its interpretation. Trial E4 showed Runx1, Pdgfrb, Tnc, Fst, Runx2, Hbegf and Egfr are all injury-generic in bleomycin mesenchyme with no oncogene. Never describe the Areg-independent tier as a tumour-specific second signal."
   - "Dendritic cells and monocytes carry AREG and HBEGF at or above the epithelial states in every human lung dataset here. This is established immunology (Zaiss et al. 2015, doi:10.1016/j.immuni.2015.01.020), not a finding of this repository. Cite it as a constraint on epithelium-centric readings, never as a new result."
-  - "The human atlases deposit one merged MatrixMarket file each (1.0 to 2.0 GB gzipped), too large to load whole on 15.6 GB. Use Thesis/gate2_05_cardoso_2026/trials/mtx_stream.py to extract selected gene rows in one streaming pass; memory stays in the hundreds of megabytes. Cache extracted vectors as .npz so later trials cost seconds."
+  - "The human atlases deposit one merged MatrixMarket file each (1.0 to 2.0 GB gzipped), too large to load whole on 15.6 GB. Use Research Article/gate2_05_cardoso_2026/trials/mtx_stream.py to extract selected gene rows in one streaming pass; memory stays in the hundreds of megabytes. Cache extracted vectors as .npz so later trials cost seconds."
   - "When a trial declares a reading in its frozen rules and does not compute it, supply it from that trial's own tracked tables in a separate trial (C2b for C2, E2b for E2). Do not edit the original trial's rules after the fact."
   - "Rank correlation of whole mean expression profiles has COMPARTMENT resolution and NO state resolution. Trial C7 separated an epithelial query from a fibroblast control by 0.415 of Spearman rho and separated epithelial states from each other by 0.0056, with the top four matches spanning three different state calls. Use marker scoring to name a state; use profile correlation only to confirm a compartment, and always report the margin to second place."
   - "Never fit a Gaussian mixture to a raw two-gene mean to test for a subpopulation. Trial C8's score had 31.5% of cells detecting neither gene, so a spike at zero guarantees a two-component win regardless of biology. Trial C1's use of the same test was sound because score_genes output is centred and continuous. If a state-versus-gradient test is needed on raw values, use co-detection against independence (C1c and C8 T1) with a depth-split control."
@@ -303,8 +312,8 @@ pitfalls_for_ai_assistants:
   - "Claim C29's tiers are amplitudes, not populations (trial C8: Runx1 with Pdgfrb co-detected at ratio 1.099, inside the 0.80 to 1.25 independence band). The co-organisation is on the FALLING tier instead: Fst with Runx2 at 1.735 in Areg-flox/+ and 0.816 after deletion. That last observation is post hoc and rests on 24 double-positive cells in one library; label it as such."
   - "The tracked analysis/raw_data_inventory.* files describe the Stage 0 downloads (51 files) and the validator checks that count. The Cardoso downloads were added to raw_data/ afterwards and are inventoried by trial C0, not by that file. Do not re-run 01_scan_raw_data.py without also updating the validator."
   - "Do not write a study note for a roadmap paper the owner has not read. The owner writes or directs the note after reading (DEVELOPMENT decision 21, 2026-09-15). A deposit reality check may run when instructed, but the paper's folder is the owner's. When the owner answers 'proceed' to an agent-written list, name which items are being treated as approved before starting any that commit a reading on the owner's behalf."
-  - "Two gate namespaces. Reading-order gates (1, 2C, 2N, 2W, 3A, 3B) say when a paper is read and live in Thesis/README.md and ROADMAP.json; the trial gates inside Thesis/gate2_05_cardoso_2026 (0, 1, 2a, 2b, 2d) are the owner's analysis gates for that paper alone. Never conflate them, and never rename a trial gate to match a reading-order branch."
-  - "Choi 2020 trials: regenerable objects live under raw_data/GSE145031/choi_trials/ and raw_data/GSE144468/choi_trials/ (gitignored); the annotation rule and its thresholds live in Thesis/gate1_02_choi_2020/trials/choi_utils.py and were frozen before D2 ran; never move a threshold after a result, add a corrected pass beside it (D2b is that pass: every cluster of a lineage-sorted library detects Sftpc, so D2's Sftpc-low clauses never fired and an AT1 cluster was called hAT2; annotate_clusters_b applies those clauses only where Sftpc separates clusters, and D3 to D7 read its object tomato_annotated_d2b.h5ad; D5b is the same pass on the organoids, read by D6). The cell filter is the paper's own (500 to 7,000 genes, 2,000 UMI) applied to the raw whitelist; Cell Ranger 2.0.2's caller is not reproduced, so cell counts are comparable in size to the paper's, not identical."
+  - "Two gate namespaces. Reading-order gates (1, 2C, 2N, 2W, 3A, 3B) say when a paper is read and live in Research Article/README.md and ROADMAP.json; the trial gates inside Research Article/gate2_05_cardoso_2026 (0, 1, 2a, 2b, 2d) are the owner's analysis gates for that paper alone. Never conflate them, and never rename a trial gate to match a reading-order branch."
+  - "Choi 2020 trials: regenerable objects live under raw_data/GSE145031/choi_trials/ and raw_data/GSE144468/choi_trials/ (gitignored); the annotation rule and its thresholds live in Research Article/gate1_02_choi_2020/trials/choi_utils.py and were frozen before D2 ran; never move a threshold after a result, add a corrected pass beside it (D2b is that pass: every cluster of a lineage-sorted library detects Sftpc, so D2's Sftpc-low clauses never fired and an AT1 cluster was called hAT2; annotate_clusters_b applies those clauses only where Sftpc separates clusters, and D3 to D7 read its object tomato_annotated_d2b.h5ad; D5b is the same pass on the organoids, read by D6). The cell filter is the paper's own (500 to 7,000 genes, 2,000 UMI) applied to the raw whitelist; Cell Ranger 2.0.2's caller is not reproduced, so cell counts are comparable in size to the paper's, not identical."
 
 reproduce:
   - python analysis/scripts/01_scan_raw_data.py
@@ -320,8 +329,8 @@ reproduce:
   - python analysis/scripts/05_write_pipeline_as_run.py
   - python analysis/scripts/14_write_negative_results.py   # regenerates NEGATIVE_RESULTS.md from CLAIMS.md
   - python analysis/scripts/16_research_question_figures.py [--replot]   # the five RESEARCH_QUESTIONS.md figures and their caption blocks; needs raw_data/ and final_clustered.h5ad; --replot reuses analysis/figures/rq/processed/
-  - python Thesis/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan.py   # needs liana; streams GSE136831 once and caches under raw_data/
-  - python Thesis/gate1_02_choi_2020/trials/d1_cells_and_qc.py   # then d2, d2b, d3, d4, d5, d5b, d6, d7 in order; x64 venv; about 15 minutes for D1, under 5 for each of the rest
+  - python "Research Article/gate2_05_cardoso_2026/trials/c12_cellchatdb_full_resource_scan.py"   # needs liana; streams GSE136831 once and caches under raw_data/
+  - python "Research Article/gate1_02_choi_2020/trials/d1_cells_and_qc.py"   # then d2, d2b, d3, d4, d5, d5b, d6, d7 in order; x64 venv; about 15 minutes for D1, under 5 for each of the rest
 ```
 
 ## Authorship

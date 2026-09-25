@@ -1,0 +1,157 @@
+#!/usr/bin/env python
+"""Draw the claims ledger: every register row, by paper, by what it is allowed to be called.
+
+This is the repository's identity figure, and it is generated from CLAIMS.md
+rather than drawn by hand, so it cannot say more than the register does. The
+point of the figure is the shape of the ledger, not any one bar: a project that
+pre-registers its rules and refuses to move them ends up with most of its rows
+in the Descriptive, Not-established and Refuted bins, and the small Validated
+bin is the part that survived. A reader who wants a repository that only
+reports positives should be able to see from this one image that this is not
+that repository.
+
+Four bins, mapped to the four validated categorical slots in
+analysis/config/palette.json. The register's vocabulary is collapsed as
+follows and nowhere else:
+
+    Validated                              -> Validated
+    Descriptive only, Exploratory          -> Descriptive or exploratory
+    Not established, Not establishable     -> Not established
+    Refuted, Retracted-superseded          -> Refuted or retracted
+
+Displaced rows (established outside this repository) are counted in the total
+and named in the caption, not drawn, because they are not claims this
+repository makes.
+
+Regenerate with:  python analysis/scripts/15_claims_ledger_figure.py
+"""
+
+from __future__ import annotations
+
+import collections
+import json
+import re
+import sys
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parents[2]
+CLAIMS = REPO / "CLAIMS.md"
+OUT_DIR = REPO / "analysis" / "figures"
+OUT = OUT_DIR / "claims_ledger.png"
+TABLE = OUT_DIR / "claims_ledger.csv"
+
+sys.path.insert(0, str(REPO / "Thesis" / "gate2_05_cardoso_2026" / "trials"))
+import viz_style as V  # noqa: E402
+from claim_contract import FAMILIES, claim_family, parse_register
+
+# Register stage heading -> short label on the figure, in reading order.
+STAGES = [(label, label) for label in FAMILIES]
+BINS = ["Validated", "Descriptive or exploratory", "Not established", "Refuted or retracted"]
+BIN_COLOUR = {
+    "Validated": V.SLOT[1],
+    "Descriptive or exploratory": V.SLOT[3],
+    "Not established": V.DEEMPH,
+    "Refuted or retracted": V.SLOT[2],
+}
+
+
+def to_bin(status: str) -> str | None:
+    s = status.strip().lower()
+    if s.startswith("validated"):
+        return "Validated"
+    if s.startswith("descriptive") or s.startswith("exploratory"):
+        return "Descriptive or exploratory"
+    if "establishable" in s or "not established" in s:
+        return "Not established"
+    if s.startswith("refuted") or "retract" in s or "superseded" in s:
+        return "Refuted or retracted"
+    if "displaced" in s:
+        return None
+    raise SystemExit(f"status outside the register vocabulary, refusing to draw: {status!r}")
+
+
+def read_register() -> tuple[dict, int, int]:
+    counts: dict[str, collections.Counter] = {label: collections.Counter() for _, label in STAGES}
+    total = displaced = 0
+    for row in parse_register(CLAIMS.read_text(encoding="utf-8"), REPO):
+        status = row["status"]
+        stage = row["family"]
+        total += 1
+        b = None if row["status_group"] == "Displaced" else to_bin(status)
+        if b is None or stage == "Displaced":
+            displaced += 1
+            continue
+        counts[stage][b] += 1
+    return counts, total, displaced
+
+
+def main() -> None:
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    counts, total, displaced = read_register()
+    V.apply(plt)
+    OUT_DIR.mkdir(exist_ok=True)
+
+    labels = [label for _, label in STAGES]
+    n_rows = [sum(counts[l].values()) for l in labels]
+    grand = collections.Counter()
+    for l in labels:
+        grand.update(counts[l])
+
+    fig, ax = plt.subplots(figsize=(10.5, 4.9))
+    y = list(range(len(labels)))[::-1]
+    left = [0.0] * len(labels)
+    for b in BINS:
+        vals = [counts[l][b] for l in labels]
+        bars = ax.barh(y, vals, left=left, color=BIN_COLOUR[b], height=0.62,
+                       edgecolor=V.SURFACE, linewidth=2, label=b)
+        for bar, v in zip(bars, vals):
+            if v >= 3:
+                ax.text(bar.get_x() + bar.get_width() / 2, bar.get_y() + bar.get_height() / 2,
+                        str(v), ha="center", va="center", fontsize=9,
+                        color=V.INK if b == "Not established" else V.SURFACE, fontweight="semibold")
+        left = [a + b_ for a, b_ in zip(left, vals)]
+
+    for yi, n in zip(y, n_rows):
+        ax.text(n + 0.8, yi, f"{n} rows", va="center", ha="left", fontsize=9, color=V.INK_2)
+
+    ax.set_yticks(y)
+    ax.set_yticklabels(labels)
+    ax.set_xlim(0, max(n_rows) * 1.14)
+    ax.set_xlabel("register rows")
+    V.recessive(ax, grid_axis="x")
+    ax.tick_params(axis="y", length=0)
+
+    drawn = sum(n_rows)
+    ax.set_title(
+        f"{total} register rows: observations, method checks and decisions",
+        loc="left")
+    fig.text(0.125, 0.905,
+             f"{grand['Validated']} validated  ·  {grand['Descriptive or exploratory']} descriptive or exploratory  ·  "
+             f"{grand['Not established']} not established  ·  {grand['Refuted or retracted']} refuted or retracted"
+             + (f"  ·  {displaced} displaced, not drawn" if displaced else ""),
+             fontsize=9.5, color=V.INK_2, ha="left")
+    ax.legend(loc="lower right", ncol=2, handlelength=1.2, columnspacing=1.4)
+    fig.text(0.125, 0.015,
+             "Status counts are not independent discoveries or a calibration metric. "
+             "Generated from the claim contract; historical results remain visible.",
+             fontsize=8.5, color=V.MUTED, ha="left")
+    fig.subplots_adjust(top=0.84, bottom=0.17, left=0.27, right=0.98)
+    fig.savefig(OUT, dpi=170)
+
+    import csv
+    with TABLE.open("w", encoding="utf-8", newline="") as fh:
+        writer = csv.writer(fh)
+        writer.writerow(["stage", *BINS, "rows"])
+        for l in labels:
+            writer.writerow([l, *(counts[l][b] for b in BINS), sum(counts[l].values())])
+        writer.writerow(["total", *(grand[b] for b in BINS), drawn])
+    print(f"drew {drawn} of {total} rows ({displaced} displaced) -> {OUT.relative_to(REPO)}")
+    for l in labels:
+        print(f"  {l:38s}", dict(counts[l]))
+
+
+if __name__ == "__main__":
+    main()
