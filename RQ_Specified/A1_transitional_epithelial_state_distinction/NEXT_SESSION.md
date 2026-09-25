@@ -1,4 +1,34 @@
-# A1 — current handoff after the robustness batch
+# A1 — current handoff after adaptive evidence closure
+
+25 September 2026. The owner's adaptive continuation and reference-check
+requests are implemented. Read [EVIDENCE_CLOSURE_REPORT.md](reports/EVIDENCE_CLOSURE_REPORT.md)
+and [ANALYSIS_REFERENCE_MAP.md](reports/ANALYSIS_REFERENCE_MAP.md). PRs #70/#71
+are merged. Current delivery branch: `codex/a1-evidence-closure`.
+
+Scripts 26–31 recover bounded primary sources, verify CD44 identities, audit
+HPCS annotations, fit paired CD44 contrasts/direct interaction and verify/render
+results. New outputs are under `tables/evidence_closure`, `tables/cd44_closure`,
+`tables/closure_verification` and `figures/evidence_closure`. Preserve original
+numerical output bytes; do not rerun completed entrypoints.
+
+CD44 now has an exact SRA-file-to-matrix-to-GSM-to-mouse/genotype/gate map.
+Four mice per genotype support a paired, rank-10 model. Shared marker changes
+occur in both genotypes; direct interactions distinguish effect sizes.
+Sftpc's interaction nearly vanishes without WT2; do not promote it from the
+primary q-value alone. All omissions/verification/figures are complete and no
+background analysis remains active.
+HPCS's newleiden biological map is verified, and its stringent K12 annotation
+only introduces confidence abstentions. It is not independent validation.
+
+The closure ledger retires uninformative extensions and names external
+requirements. TIGIT pools, HPCS biological units/timing/current reporter,
+PATS track scaling, and replicated matched regulatory/fate evidence remain
+unresolved. GSE243124 has one pooled library per condition; GSE243129 is neonatal
+Tgfbr2/hyperoxia. No raw sequencing download or author contact was made. New work
+should begin with a changed input or a new specific scientific question.
+Keep the Notion page concise and English, without critique or analysis plans.
+
+## Historical robustness handoff (superseded above)
 
 Updated 25 September 2026. The owner requested a concise Notion page and then
 execution of the next plans. The Notion change and feasible robustness batch

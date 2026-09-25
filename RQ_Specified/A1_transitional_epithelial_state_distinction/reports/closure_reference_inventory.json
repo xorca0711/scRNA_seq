@@ -1,0 +1,51 @@
+{
+  "utc": "2026-09-25T09:32:38.119629+00:00",
+  "files": [
+    {
+      "name": "cd44_bioc.xml",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC12484947/unicode",
+      "cap_bytes": 20971520,
+      "path": "cache/evidence_closure/cd44_bioc.xml",
+      "bytes": 165642,
+      "sha256": "09f751d76a0b9e52f725bf7b852028634a4105bb2fa40221865768dd418a2f5b",
+      "status": "retrieved"
+    },
+    {
+      "name": "ire1_2025_bioc.xml",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC12520674/unicode",
+      "cap_bytes": 20971520,
+      "path": "cache/evidence_closure/ire1_2025_bioc.xml",
+      "bytes": 126330,
+      "sha256": "d31d83d3f06293929c26d5cabefe4ef6a13d2bd8ec07e2a5cba84c96eea652fb",
+      "status": "retrieved"
+    },
+    {
+      "name": "sage_perturb_bioc.xml",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC13015491/unicode",
+      "cap_bytes": 20971520,
+      "path": "cache/evidence_closure/sage_perturb_bioc.xml",
+      "bytes": 158533,
+      "sha256": "9d4def34ce8df780be582e2d5116b176bf9579e11ced700ae158521a7cb08353",
+      "status": "retrieved"
+    },
+    {
+      "name": "zhou_bioc.xml",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC8684104/unicode",
+      "cap_bytes": 20971520,
+      "path": "cache/evidence_closure/zhou_bioc.xml",
+      "bytes": 235268,
+      "sha256": "d65b67cbac87174eff5066eaaa846d89be0f61bb10460720cc71319a1e415028",
+      "status": "retrieved"
+    },
+    {
+      "name": "pats_sra.xml",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=sra&id=SRX7290387,SRX7290388,SRX7290389,SRX7290390,SRX7290391,SRX7290392,SRX7290393,SRX7290394,SRX7290395,SRX7290396,SRX7290397,SRX7290398,SRX7290399,SRX7290400,SRX7290401,SRX7290402,SRX8048639,SRX8048640,SRX8051539,SRX8051540&rettype=full&retmode=xml",
+      "cap_bytes": 20971520,
+      "path": "cache/evidence_closure/pats_sra.xml",
+      "bytes": 166541,
+      "sha256": "b9db12a4c4eb67a6486a7c39a961a42d32b246e52880efc1290836095588351c",
+      "status": "retrieved"
+    }
+  ],
+  "code_sha256": "85738553eca136b31b9e3a04e625320e5cf272ddbec3d2fec595eebfd47b8adf"
+}

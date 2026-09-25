@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "utc": "2026-09-25T10:05:00.120231+00:00",
+  "lightweight_tests": {
+    "run": 30,
+    "expected_skips": 1
+  },
+  "scientific_A1_tests": {
+    "run": 17,
+    "skips": 0
+  },
+  "claim_numeric_bindings": 18,
+  "NB1_hashes": 17,
+  "repository_validation_checks": 2421,
+  "compileall": "passed",
+  "scientific_verification": "reports/closure_verification_run.json",
+  "figure_inspection": [
+    "a1_cd44_context.png: readable labels, legend, values and denominator caption",
+    "a1_hpcs_abstention.png: readable labels, counts and shared-classifier caveat"
+  ],
+  "executed_sources_archived": 11,
+  "notes": "Local R emitted locale and calcNormFactors rename notices; no model error. Two preflight failures corrected before numerical results. Remote CI tracked separately in PR.",
+  "staged_diff_check": "passed; preserve original R session whitespace through targeted .gitattributes rule",
+  "unrelated_work": ".claude/ left untracked and untouched"
+}
