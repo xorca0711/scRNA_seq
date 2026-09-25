@@ -33,6 +33,9 @@ analysis/figures/rq/rq_a1[124]_*.svg whitespace=cr-at-eol,-blank-at-eol
 "Research Article/gate1_03_nabhan_2018/external_feasibility/GSE129605_supplementary_index.html" whitespace=cr-at-eol,-blank-at-eol
 
 # Preserve the review branch's exact analysis inputs, scripts and evidence hashes.
+docs/migrations/2026-09-25-rq-reframing/** -text whitespace=cr-at-eol
+analysis/scripts/16_research_question_figures.py -text whitespace=cr-at-eol
+analysis/figures/rq/renders/** -text whitespace=cr-at-eol
 "Research Article/gate2_C3_yu_lee_choi_min_2026/**" -text whitespace=cr-at-eol
 "Research Article/gate2_C3_yu_lee_choi_min_2026/figures/*.svg" whitespace=cr-at-eol,-blank-at-eol
 "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/**/*R_session.txt" whitespace=cr-at-eol,-blank-at-eol

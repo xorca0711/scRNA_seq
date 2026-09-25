@@ -68,14 +68,29 @@ def markdown_files() -> list[Path]:
 
 
 def heading_slugs(text: str) -> set[str]:
-    """GitHub-flavoured anchor slugs for every heading in a document.
+    """GitHub-flavoured heading slugs and standalone explicit HTML anchors.
 
     Lowercase, drop anything that is not a word character, space or hyphen,
     then hyphenate the spaces. Duplicate headings get a numeric suffix on
     GitHub, so every slug is also accepted with one.
     """
     slugs: set[str] = set()
+    fence = None
     for line in text.splitlines():
+        marker = re.match(r"^\s*(`{3,}|~{3,})", line)
+        if marker:
+            token = marker.group(1)
+            if fence is None:
+                fence = token
+            elif token[0] == fence[0] and len(token) >= len(fence):
+                fence = None
+            continue
+        if fence is not None:
+            continue
+        anchor = re.match(r'''^\s*<a\s+(?:id|name)=["']([^"']+)["']\s*>\s*</a>\s*$''', line, re.I)
+        if anchor:
+            slugs.add(anchor.group(1))
+            continue
         if not line.startswith("#"):
             continue
         heading = line.lstrip("#").strip()

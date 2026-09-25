@@ -1,0 +1,110 @@
+{
+  "created_utc": "2026-09-25T06:47:32.311920+00:00",
+  "baseline_commit": "c3bcc695b974c1653fe7ce557796ee939f9aacf2",
+  "unchanged_evidence_files": 1353,
+  "changed_evidence_files": [],
+  "original_snapshots_verified": 3,
+  "a3_render_record": "analysis/figures/rq/renders/20260925T064155204852Z/run_record.json",
+  "a3_plotted_tables_byte_identical": true,
+  "a3_promoted_png_sha256": "a7a6f1bcd2eb27b73c8a4226fb7cd404be04519bf71d22c24fcfc46079efd0f3",
+  "visual_review": {
+    "status": "visually_reviewed",
+    "png_sha256": "a7a6f1bcd2eb27b73c8a4226fb7cd404be04519bf71d22c24fcfc46079efd0f3",
+    "checks": [
+      "sampling labels readable",
+      "all nine panels visible",
+      "no claimed recovery or same-cell persistence in title"
+    ]
+  },
+  "scientific_models_or_embeddings_refit": false,
+  "checks": [
+    {
+      "arguments": [
+        "-m",
+        "compileall",
+        "-q",
+        "-x",
+        "[/\\\\]\\.tools[/\\\\]",
+        "analysis",
+        "Research Article",
+        "RQ_Specified"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "arguments": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "analysis/tests",
+        "-q"
+      ],
+      "exit_code": 0,
+      "output": "----------------------------------------------------------------------\nRan 19 tests in 0.554s\n\nOK (skipped=1)"
+    },
+    {
+      "arguments": [
+        "Research Article/gate1_03_nabhan_2018/nb1/verify_outputs.py"
+      ],
+      "exit_code": 0,
+      "output": "Nb1 evidence verified: 17 output hashes, code/protocol/panel hashes, units, reported paired directions and expression denominators; raw inputs not requested."
+    },
+    {
+      "arguments": [
+        "analysis/scripts/validate_repository.py"
+      ],
+      "exit_code": 1,
+      "output": "Repository validation FAILED (66 of 2249 checks):\n  - broken anchor in FINDINGS.md: RESEARCH_QUESTIONS.md#a11-shared-plasticity-versus-neoplasia-associated-context\n  - broken anchor in RESEARCH_QUESTIONS.md: #a1\n  - broken anchor in RESEARCH_QUESTIONS.md: #a2\n  - broken anchor in RESEARCH_QUESTIONS.md: #a3\n  - broken anchor in RESEARCH_QUESTIONS.md: #a4\n  - broken anchor in RESEARCH_QUESTIONS.md: #a5\n  - broken anchor in RESEARCH_QUESTIONS.md: #a6\n  - broken anchor in RESEARCH_QUESTIONS.md: #a7\n  - broken anchor in RESEARCH_QUESTIONS.md: #a8\n  - broken anchor in RESEARCH_QUESTIONS.md: #a9\n  - broken anchor in RESEARCH_QUESTIONS.md: #a10\n  - broken anchor in RESEARCH_QUESTIONS.md: #a11\n  - broken anchor in RESEARCH_QUESTIONS.md: #a12\n  - broken anchor in RESEARCH_QUESTIONS.md: #a13\n  - broken anchor in RESEARCH_QUESTIONS.md: #a14\n  - broken anchor in RESEARCH_QUESTIONS.md: analysis/figures/rq/README.md#a1\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc1\n  - broken anchor in RESEARCH_QUESTIONS.md: analysis/figures/rq/README.md#a2\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc2\n  - broken anchor in RESEARCH_QUESTIONS.md: analysis/figures/rq/README.md#a3\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc1\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc5\n  - broken anchor in RESEARCH_QUESTIONS.md: analysis/figures/rq/README.md#a4\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc1\n  - broken anchor in RESEARCH_QUESTIONS.md: analysis/figures/rq/README.md#a5\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc1\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc5\n  - broken anchor in RESEARCH_QUESTIONS.md: analysis/figures/rq/README.md#a6\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc1\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc3\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc5\n  - broken anchor in RESEARCH_QUESTIONS.md: analysis/figures/rq/README.md#a7\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc1\n  - broken anchor in RESEARCH_QUESTIONS.md: analysis/figures/rq/README.md#a8\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc1\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc5\n  - broken anchor in RESEARCH_QUESTIONS.md: analysis/figures/rq/README.md#a9\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc3\n  - broken anchor in RESEARCH_QUESTIONS.md: analysis/figures/rq/README.md#a10\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc1\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc5\n  - broken anchor in RESEARCH_QUESTIONS.md: analysis/figures/rq/README.md#a11\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc1\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc3\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc5\n  - broken anchor in RESEARCH_QUESTIONS.md: analysis/figures/rq/README.md#a12\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc1\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc3\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#a12-s1\n  - broken anchor in RESEARCH_QUESTIONS.md: analysis/figures/rq/README.md#a12-s1\n  - broken anchor in RESEARCH_QUESTIONS.md: analysis/figures/rq/README.md#a13\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc1\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc3\n  - broken anchor in RESEARCH_QUESTIONS.md: analysis/figures/rq/README.md#a14\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc1\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#mc3\n  - broken anchor in RESEARCH_QUESTIONS.md: docs/RQ_MEASUREMENT_CONTRACTS.md#crosswalk\n  - broken anchor in analysis\\figures\\rq\\il1b_context\\REPORT.md: ../../../../RESEARCH_QUESTIONS.md#a11-shared-plasticity-versus-neoplasia-associated-context\n  - broken anchor in analysis\\figures\\rq\\il1b_context\\REPORT.md: ../../../../RESEARCH_QUESTIONS.md#a14-resolution-versus-persistence-after-signal-withdrawal\n  - broken anchor in docs\\PORTFOLIO_SUMMARY.md: ../RESEARCH_QUESTIONS.md#a11-shared-plasticity-versus-neoplasia-associated-context\n  - broken anchor in docs\\RQ_MEASUREMENT_CONTRACTS.md: ../analysis/figures/rq/README.md#a12-s1\n  - broken anchor in Research Article\\gate1_03_nabhan_2018\\README.md: ../../RESEARCH_QUESTIONS.md#a4-how-do-current-wnt-activity-and-il-1-responsiveness-overlap-in-at2-cells\n  - broken anchor in Research Article\\gate2_C3_yu_lee_choi_min_2026\\FIGURE_GALLERY_PLAN.md: ../../RESEARCH_QUESTIONS.md#a11-shared-plasticity-versus-neoplasia-associated-context\n  - broken anchor in Research Article\\gate2_C3_yu_lee_choi_min_2026\\README.md: ../../RESEARCH_QUESTIONS.md#a11-shared-plasticity-versus-neoplasia-associated-context\n  - broken anchor in Research Article\\gate2_C3_yu_lee_choi_min_2026\\README.md: ../../RESEARCH_QUESTIONS.md#a11-shared-plasticity-versus-neoplasia-associated-context\n  - broken anchor in RQ_Specified\\A1_transitional_epithelial_state_distinction\\PLAN.md: ../../RESEARCH_QUESTIONS.md#a1",
+      "resolved_by": "Preserved all 14 legacy heading aliases, added stable explicit IDs, and taught the Markdown validator to recognize explicit anchors outside code fences; subsequent validation passed."
+    },
+    {
+      "arguments": [
+        "analysis/scripts/validate_repository.py"
+      ],
+      "exit_code": 0,
+      "output": "Repository validation passed: 2249 checks; links, JSON, selected headline values, explicit numeric bindings and claim summaries verified."
+    },
+    {
+      "arguments": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "analysis/tests",
+        "-q"
+      ],
+      "exit_code": 0,
+      "output": "Ran 20 tests; OK (skipped=1: scientific integration module unavailable in the lightweight environment). Includes explicit-anchor and figure-ownership/caption regression tests."
+    },
+    {
+      "arguments": [
+        "-m",
+        "py_compile",
+        "analysis/scripts/validate_repository.py",
+        "analysis/tests/test_repository_paths.py"
+      ],
+      "exit_code": 0,
+      "output": "Passed after explicit-anchor repair."
+    },
+    {
+      "arguments": [
+        "analysis/scripts/claim_contract.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Claim contract verified; 18 numeric bindings passed. Executed separately."
+    },
+    {
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Passed."
+    }
+  ],
+  "status": "passed_after_anchor_repair"
+}

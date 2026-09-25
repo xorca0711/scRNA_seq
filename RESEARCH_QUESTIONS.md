@@ -1,740 +1,506 @@
 # Research questions
 
-This repository reanalyses public lung single-cell RNA-seq and multiome
-(RNA + ATAC) data, applying and evaluating analysis frameworks to characterize
-molecular phenotypes, cell-state programmes and data distributions that can be
-framed as testable research questions about injury and repair.
+> Which epithelial programmes and immune–stromal interactions distinguish
+> productive lung repair from persistent remodelling after injury?
 
-The organising biological question is:
+This project uses public lung RNA, chromatin and complementary assays to develop
+and test its own biological hypotheses. Our observations motivate developmental
+programme reuse, context-dependent loss of epithelial identity, and recipient
+and fibroblast contributions to injury responses. Those interpretations are
+scientific propositions to distinguish from alternatives, not just criticisms
+of markers or analysis tools.
 
-> Which epithelial and immune-state programmes distinguish productive lung
-> repair from persistent remodelling after injury?
+**Rewritten 25 September 2026.** All A1–A14 identifiers remain; A12-S1 remains an
+enabling source-identity question. There is no fixed number of “surviving” RQs.
+Related questions share evidence but retain separate tests and decisions.
 
-Embeddings, expression and accessibility distributions, programme scores and
-sample-level contrasts provide starting observations. Each question specifies
-the biological interpretation, plausible alternative explanations, and a
-measurement or experiment that could distinguish them. Reproducibility and
-sensitivity analysis establish how much weight an observation can carry.
+The [claim register](CLAIMS.md) grades the original measurements. A new biological
+interpretation does not inherit a historical claim's status. Here **motivation**
+describes the connection to observations; **readiness** describes whether a
+discriminating test can run. This rewrite establishes no new mechanism and
+changes no result, threshold or claim grade. These are source-informed and often
+post-analysis hypotheses, not retrospective preregistrations or novelty claims.
 
-The computational question is:
+The [measurement contracts](docs/RQ_MEASUREMENT_CONTRACTS.md) collect technical
+checks that can change a decision. The [figure gallery](analysis/figures/rq/README.md)
+preserves measured panels, full captions, diagnostics and labelled designs.
+The [migration record](docs/migrations/2026-09-25-rq-reframing/README.md) preserves
+the previous register. Paper-specific evidence stays under `Research Article/`;
+question-specific execution stays under `RQ_Specified/`.
 
-> Which epithelial and macrophage programme changes repeat across independent
-> samples after accounting for cell-state composition, genotype and measurement quality?
+## Biological hypotheses and execution priorities
 
-The outcome-linked question is:
+The collections do not share an independently measured repair outcome. Analyse
+development, infection, fibrosis and neoplasia within their own designs; do not
+order them along an assumed repair-to-cancer trajectory. Late sampling is not a
+recovery endpoint, and population persistence does not trace the same cells.
 
-> Which of those changes associate with mature AT1 contribution or persistent
-> pathological remodelling in cohorts with independently measured outcomes?
+| ID | Biological hypothesis / decisive endpoint | Motivation | Readiness and next task |
+|---|---|---|---|
+| [A1](#a1) | Regulatory features distinguish RNA-similar transitional states and responses | RNA identity differences; direct-mark and lineage sources identified | First batch complete; resolve compatible direct-mark inputs and units |
+| [A2](#a2) | Functional AREG source contributions vary with context | Source RNA distributions; dominance unresolved | Conditional; source perturbation with receiver endpoint needed |
+| [A3](#a3) | Injury leaves a macrophage programme beyond normal aging | Late population composition | Age-matched controls and comparable sampling needed |
+| [A4](#a4) | Wnt maintenance and IL-1 response occur sequentially in an AT2 lineage | Transcript/source observations; sequence untested | Measured activity/history and lineage-linked response needed |
+| [A5](#a5) | Adult repair reuses a developmental epithelial component | Neonatal coexpression and label-excluded ADI enrichment | Define components; independent confirmation held by animal coverage |
+| [A6](#a6) | IPF changes shared macrophage states beyond subtype abundance | Cell fractions and RNA contributions differ | Harmonize states and audit donors before a within-state fit |
+| [A7](#a7) | Cebpa loss attenuates identity across AT2 states | Reference and transitional contrasts both change | Replicated genotype-by-state design needed |
+| [A8](#a8) | A maturation component adds information about mature AT1 contribution | Score dependence motivates separation; limited biological support | Independent mature endpoints needed |
+| [A9](#a9) | Fibroblast receptor context modifies AREG response | RNA/resource observations nominate a competence question | RNA screen possible; protein/function data needed |
+| [A10](#a10) | Epithelial programmes add information about measured organoid growth | Public RNA and imaging design | Next bounded task: verify outcome joins and independent preparations |
+| [A11](#a11) | Lesion-associated programmes add to shared plasticity | Reduced HPCS signal across repair, development, IPF and LUAD | Exploratory discovery possible; independent evaluation required |
+| [A12](#a12) | Recipient context explains responses beyond ligand RNA | Cohort/recipient heterogeneity | Conditional component model; activation unmeasured |
+| [A13](#a13) | Fibroblast programmes add information beyond macrophage IL1B | Niche heterogeneity motivates joint association | Audit complete triads; current IPF arms below joint-model floor |
+| [A14](#a14) | Exposure duration and fibroblast reception separately affect recovery | Mechanistic follow-up to the repair/persistence question | Two decisions; withdrawal and recipient-specific data needed |
 
-These questions have different evidence requirements. The current collections
-have no shared, independently measured repair outcome. A late time point is
-not proof of recovery, and a persistent transcriptional state is not proof of
-pathology. Fibrosis, tumour initiation and viral injury are separate contexts.
+Immediate priorities are the bounded **A10 outcome-data join** and the **A1
+direct-mark comparison gate**. The other questions remain scientifically useful;
+another unrestricted score or ligand-ranking sweep is not their next test.
 
-Deposited counts are used where available; E1 instead uses deposited normalized
-expression. Author labels were held out of the unsupervised atlas fits, but are
-explicitly used in compartment pseudobulks and annotation sensitivity analyses.
+## Hypothesis cards
 
-The [claim register](CLAIMS.md) records the evidence and limitations for each
-observation. The [methods and reproduction guide](REPRODUCIBILITY.md) describes
-sample definitions, measurements and analysis requirements. Figures show either
-observed data or a labelled conceptual study design; design schematics do not
-represent demonstrated biological mechanisms.
+<a id="a1-which-regulatory-and-phenotypic-features-distinguish-transitional-epithelial-states-beyond-rna-markers"></a>
+<a id="a1"></a>
 
-The completed [IL-1beta review analysis](Research%20Article/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md)
-informs A11–A14 below. Paper-specific plans and completed trial records stay
-with their source study; this file is the canonical repository-wide RQ register.
+### A1. Do regulatory programmes distinguish RNA-similar transitional states and their functional responses?
 
-## Part A. Questions, evidence and decision limits
+**Hypothesis.** Transitional epithelia share part of an RNA response but differ
+in regulatory programmes that help explain maturation, persistence or perturbation
+response. DATP, PATS, Krt8 ADI, ABI/aberrant basaloid and HPCS remain source-defined
+states; their names predetermine neither equivalence nor separate cell types.
 
-### A1. Which regulatory and phenotypic features distinguish transitional epithelial states beyond RNA markers?
-
-The primary goal is to test whether DATP, PATS, Krt8 ADI, aberrant basaloid/ABI
-and HPCS labels capture a common regulatory programme, distinct branches or
-different routes that share stress-related RNA expression. Keep the original
-study definitions and biological contexts; these names are not predetermined
-equivalent classes. Direct histone marks and, where measured, DNA methylation
-extend the existing accessibility analyses. Trajectory, recorded lineage,
-protein phenotype, spatial location and perturbation provide separate evidence
-about the distinctions and their behaviour.
-
-The prospective [A1 analysis plan](RQ_Specified/A1_transitional_epithelial_state_distinction/PLAN.md)
-and [study/assay map](RQ_Specified/A1_transitional_epithelial_state_distinction/STUDY_MAP.md)
-cover 30 audited GEO series plus spatial-protein, proteomics and sequencing
-catalogs. GSE141635 and the Tsutsui iPSC series provide direct histone evidence;
-GSE150527 adds a normal-differentiation methylation reference. Low replication
-limits these to descriptive comparisons. GSE154966 paired TIGIT ATAC and
-GSE273123 CD44-sorted RNA have descriptive source-block PCA, with biological
-identity still held for inferential tests. The
+**Our observation.** AT2 RNA loss survives the specified depth controls in two
+same-laboratory deposits (C118). Distal-accessibility comparisons do not establish
+closure or its timing (C131/C133). The completed
 [first batch](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/FIRST_BATCH_REPORT.md)
-also reconstructs the measured PATS endpoint and fits a separate five-versus-five
-IRE1α epithelial RiboTag contrast. Four genes pass whole-family FDR, but none of
-the predefined markers or eligible pathways does. These source-informed results
-do not establish an epigenetic distinction or DATP/PATS/HPCS taxonomy.
+adds measured PATS endpoints, a separate ten-mouse IRE1α RiboTag contrast and
+descriptive ATAC/CD44 profiles. Four of 14,811 genes pass whole-family FDR;
+none of the predefined markers or eligible pathways does. These are motivations
+for multimodal distinctions, not an established epigenetic taxonomy.
 
-The [gallery](RQ_Specified/A1_transitional_epithelial_state_distinction/figures/README.md)
-contains the initial sample PCA, treatment/marker and measured-lineage panels,
-alongside the remaining direct-mark and endpoint plans. The
-[lineage audit](RQ_Specified/A1_transitional_epithelial_state_distinction/LINEAGE_AUDIT.md)
-now prioritizes measured descendants and functional endpoints. Computational
-trajectories do not establish ancestry; ATAC does not measure histone marks,
-methylation or chromosome conformation. Evidence for memory or irreversibility
-still requires the appropriate chase/withdrawal design (A14).
+**Rivals and test.** A common regulatory continuum, distinct branches, and
+different routes sharing stress RNA remain alternatives. Compare frozen
+loci/programmes in compatible direct histone-mark or accessibility assays using
+independent animals/donors and independent state definitions. Where observations
+can be linked, test added information beyond RNA about measured protein,
+lineage-descendant or perturbation endpoints. Separate studies triangulate;
+they do not constitute a paired multiomic fate test. ATAC does not measure
+histone marks, methylation or chromosome conformation.
 
-Epithelial-state specificity has two linked parts: measuring identity and state
-programmes across injury, development and genotype (A1/A5), and testing their
-association with independently observed fate. Accessibility cannot substitute
-for that fate measurement: productive AT2-to-AT1 differentiation can also lose
-AT2 identity, while disappearance of a transitional state can reflect
-maturation, death or replacement rather than reversal into AT2.
+**Decision / readiness.** A precise independent exclusion of the predefined
+meaningful regulatory effect or added endpoint information retires that specified
+discriminator. Incompatible callers, pooled identities or low replication leave
+it inconclusive. The [plan](RQ_Specified/A1_transitional_epithelial_state_distinction/PLAN.md),
+[assay map](RQ_Specified/A1_transitional_epithelial_state_distinction/STUDY_MAP.md)
+and [lineage audit](RQ_Specified/A1_transitional_epithelial_state_distinction/LINEAGE_AUDIT.md)
+govern the input gate. Temporal closure or memory additionally needs actual
+time/fate evidence (A14).
 
-Across GSE310539 and GSE247130, the operational Cldn4/Krt8-labelled group loses
-AT2 RNA detection under the specified depth-budget rules (C118). These deposits
-share a laboratory, so their agreement is consistency rather than independent
-confirmation. The M3 background-centered distal-accessibility contrasts are
-approximately -37.8%, -18.3% and -15.5% of reference accessibility; raw contrasts
-are -31.8%, -16.0% and -8.5%. These are different estimands (C131).
-The uninjured comparator is a **7-week Cebpa mutant**, not healthy wild type.
-Its response can reflect genuine genetic plasticity. No well passes all the
-prespecified gates, and reference-cell split intervals do not provide animal-level
-uncertainty (C133). Chromatin closure, cellular arrest and reversibility remain
-unestablished here.
+**Figures / contracts.** [Existing assay and endpoint panels](RQ_Specified/A1_transitional_epithelial_state_distinction/figures/README.md);
+future primary panels: replicate-level direct-mark effects and measured descendant
+or functional outcomes. [Depth panels](analysis/figures/rq/README.md#a1) are
+supporting diagnostics. [MC1–MC2](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1).
 
-The [epithelial specificity analysis](Research%20Article/epithelial_state_specificity/README.md)
-freezes source definitions, separates full signatures from short marker panels,
-compares age and genotype explicitly, and records eligibility for independent
-confirmation. One well per age/genotype condition supports descriptive
-contrasts; thousands of cells do not supply missing biological replication.
+<a id="a2-which-cells-express-areg-and-how-sensitive-are-candidate-rankings-to-the-resource"></a>
+<a id="a2"></a>
 
-GSE309751 bulk ATAC peak calls could test time-associated peak detection at
-frozen loci in different mice. They cannot directly test reopening in the same
-cells, and binary peak absence is sensitive to sequencing and peak calling.
-Quantitative differential accessibility needs suitable quantitative data;
-cellular reversibility additionally needs fate information.
+### A2. Does the functional contribution of AREG sources depend on tissue context?
 
-<!-- rq-figure:A1 -->
-![A1: the AT2 identity programme in RNA and in chromatin](analysis/figures/rq/rq_a1_chromatin.png)
+**Hypothesis.** Epithelial and myeloid sources contribute differently to
+AREG-dependent fibroblast responses across defined contexts; no universally
+dominant source is assumed.
 
-*Figure A1. GSE310539 wild-type nuclei: PBS n = 7,340 and SeV n = 8,093. Panels a–d show well, Cldn4/Krt8 co-detection, AT2 RNA score and promoter accessibility on an RNA embedding. Panels e–f compare group scores and detection at matched depth (7,013 RNA UMIs; 3,132 ATAC fragments). Across nine genes with annotated promoter peaks, mean RNA detection is 73% in PBS reference and 57% in SeV transitional nuclei; promoter detection is 7% and 6%. Panels g–i show why per-nucleus accessibility needs depth controls: transitional nuclei have more fragments and fewer zero-signal observations, despite lower accessibility among nuclei with detected signal. These descriptive panels accompany the matched-gene-set and per-well tests for C118/C121/C127; they do not measure cellular fate. Generated by `analysis/scripts/16_research_question_figures.py`; data in `analysis/figures/rq/rq_a1_groups.csv` and `rq_a1_detection_at_budget.csv`.*
-<!-- /rq-figure:A1 -->
+**Our observation.** AREG RNA occurs across sources. The epithelial–myeloid
+contrast is epithelial-higher in all ten donors before depth standardization
+but only six at the primary 1,000-UMI budget (C37). This nominates sources without
+establishing epithelial control of ligand availability. See the
+[source analysis](analysis/corrections/ligand/README.md).
 
-### A2. Which cells express AREG, and how sensitive are candidate rankings to the resource?
+**Rivals and test.** Source abundance, secretion/processing, other ligands and
+recipient competence may determine response. Compare source-specific AREG
+suppression and rescue, measured extracellular ligand and a frozen fibroblast
+activation/trophic endpoint across independent animals or culture preparations.
+A matched RNA-only source comparison is an initial screen.
 
-Source expression and database sensitivity are separate questions. Source
-comparisons use deposited cell types, donors as the paired sample units and
-explicit molecule-depth sensitivity (C37). With deposited labels,
-the unadjusted direction is epithelial-higher in all 10 donors (0.4591 versus
-0.2715, p = 0.001953). At the prespecified primary 1,000-UMI expected-detection
-budget only 6/10 retain that direction (0.1224 versus 0.0999, p = 0.130859).
-The 500/2,000-UMI sensitivities give p = 0.322266/0.019531. Thus the source
-contrast is measurement-dependent. All 10 donors and all 16,064 selected cells
-remain at 500 and 1,000 UMIs; only the 2,000-UMI sensitivity excludes cells (1,188).
+**Decision / readiness.** With verified suppression and responsive controls,
+a precise absence of the proposed endpoint change weakens that source's
+contribution. Unmeasured secretion or failed engagement is inconclusive.
+Functional testing needs additional data. [Current figures](analysis/figures/rq/README.md#a2)
+are diagnostics; future primary panels pair source intervention and receiver
+response. [MC2–MC4](docs/RQ_MEASUREMENT_CONTRACTS.md#mc2).
 
-The [ligand analysis](analysis/corrections/ligand/README.md) uses an explicit
-epithelial allowlist, cell-count floors for the actual fibroblast targets,
-source/target provenance and a shared eligible donor set. Pericytes and smooth
-muscle cells are excluded as senders. In the 22-donor CellChatDB analysis,
-AREG's donor-median rank is 10.5 among 312 retained
-pairs, and it remains first among the prespecified canonical exact-EGFR ligands.
-Consensus contains AREG–EGFR_ERBB2 but it is scored in only 7/22 donors, below
-the 11-donor retention rule. Resource encoding and sample coverage both matter.
+<a id="a3-which-macrophage-programmes-vary-with-phase-and-what-explains-the-differences"></a>
+<a id="a3"></a>
 
-Expression-derived ranks nominate hypotheses. They do not establish secretion,
-ligand processing, receptor activation or functional necessity. Agreement among
-resources is not biological replication because the expression data, score and
-underlying curation overlap. Coverage and ranking effects should be distinguished.
+### A3. Does prior injury leave a macrophage programme that differs from normal aging?
 
-E6's pooled correlation (rho 0.348, p 0.112, 22 donors) did not meet its
-significance criterion. The approximately 0.43 calculation was a significance
-threshold, not a bound on undetected coupling or an 80%-power calculation.
-The state-resolved question has fewer eligible donors. Future spatial work
-should test proximity and activation in replicated samples; proximity alone
-still does not establish signalling. Literature novelty requires a dated search.
+**Hypothesis.** Prior infection is associated with a late macrophage programme
+or state distribution beyond changes expected with age alone.
 
-![AREG donor-paired detection and resource-dependent ranks](analysis/figures/rq/rq_a2_source_rank.png)
+**Our observation.** Late myeloid states and altered capillary composition
+motivate a lasting tissue-response question. G1/W1 retain age and processing
+confounding (C158). Reference CAMERA yields no significant W1 sets; its
+seven-gene ornithine set is ineligible, not negative. See the
+[sample-level analysis](analysis/corrections/statistics/README.md).
 
-*Figure A2. Panels a–b connect epithelial and myeloid measurements within each of the ten eligible tumour donors, before and after standardization to 1,000 UMIs. Panel c shows AREG–EGFR median donor ranks across four resources in the 22-donor ligand analysis; labels give rank and retained pair-universe size, not a normalized probability. Source detection and ligand ranking use different cohorts. The plots describe expression and resource sensitivity, not secretion or activation. Sources: [per-donor detection](analysis/corrections/ligand/results/c37/per_donor.csv) and [resource summaries](analysis/corrections/ligand/results/lr/resource_summary.csv).*
+**Rivals and test.** Normal aging, recruitment/replacement, subtype mixture and
+processing compete with an injury-history effect. Compare age-matched uninjured
+and previously injured animals using harmonized states and an estimable
+injury-history contrast. Report state fractions and within-state programmes.
+Same-cell persistence requires tracing; metabolic flux requires a metabolic
+endpoint. Neither follows from late RNA or relative fractions.
 
-### A3. Which macrophage programmes vary with phase, and what explains the differences?
+**Decision / readiness.** A matched design precisely excluding a predefined
+meaningful effect retires the specified injury-associated programme. The current
+confounded contrast cannot decide it. Age-matched data are the gate.
+[Existing temporal panels](analysis/figures/rq/README.md#a3) describe sampling
+after infection; desired primary plots compare animal-level effects with matched
+controls. [MC1](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1),
+[MC5](docs/RQ_MEASUREMENT_CONTRACTS.md#mc5).
 
-The time course and per-animal fractions remain valuable descriptions of
-population composition. Relative fractions do not demonstrate absolute
-expansion, and the same state at a later time need not consist of the same
-persisting cells. Broad macrophage pseudobulks mix subtype proportions with
-within-subtype changes.
+<a id="a4-how-do-current-wnt-activity-and-il-1-responsiveness-overlap-in-at2-cells"></a>
+<a id="a4"></a>
 
-G1's resolution-versus-long-term ranking is confounded by age, infection round,
-sex and genotype as well as composition (C158). W1 excludes some genotype
-variation and narrows to deposited aMACs, but its late contrast retains age and
-processing limitations. An adjustment cannot identify an injury-time effect
-when age-matched uninjured controls are absent.
+### A4. Can Wnt-supported maintenance precede an IL-1-responsive transition in the same AT2 lineage?
 
-The [sample-level enrichment analysis](analysis/corrections/statistics/README.md)
-separates reference-method verification, sample-level sensitivity, leave-one-out
-stability and subtype contributions using reference limma CAMERA. W1's
-seven-gene ornithine set was not tested under its minimum-size rule: this is an unfilled part of
-the ARG1/ornithine circuit question, not evidence against that circuit. Reference
-CAMERA finds no significant W1 sets. G1's DNA-replication lead does
-not pass confound-aware sensitivities. G2 supports 30 frozen candidates across
-cohorts with fixed correlation 0.01, but none with estimated correlation; C161
-is exploratory and method-sensitive. Neither
-metabolite flux nor receiver-side functional response was measured.
+**Hypothesis.** Wnt-associated maintenance and IL-1-associated transition can be
+sequential states of a lineage rather than fixed opposing subsets.
 
-<!-- rq-figure:A3 -->
-![A3: myeloid and capillary states by phase](analysis/figures/rq/rq_a3_persistence.png)
+**Our observation.** Transcript co-detection and Wnt/source profiles provide
+feasibility information, not a measured sequence. [Nb1](Research%20Article/gate1_03_nabhan_2018/nb1/README.md)
+starts at day 6 and has only one eligible baseline and one day-11 AT2 unit;
+it cannot test an acute switch. Current activity, reporter history and sparse
+Axin2/Il1r1 transcripts are different measurements.
 
-*Figure A3. GSE262927. Panels a–d show the myeloid embedding (9,997 cells) by phase, distinguishing alveolar macrophages, interstitial macrophages and inflammatory monocytes. Panels e–h show capillary endothelium (43,359 cells), coloured by the injury-induced capillary score. Panel i shows per-animal iCAP fractions and per-day medians: 2.0% at baseline, 37.5% at 25 dpi and 21.7% at 366 dpi. These are population-composition observations (C3/C12/C13/C15), not evidence that the same cells persist. Data in `analysis/figures/rq/rq_a3_myeloid_by_phase.csv` and `rq_a3_icap_by_day.csv`.*
-<!-- /rq-figure:A3 -->
+**Rivals and test.** Stable subsets, concurrent signalling and selection of
+different cells remain alternatives. Use a Wnt-history pulse/chase with reporter
+washout, present pathway activity, IL-1 challenge and traced descendant/function
+endpoints across independent animals. Separate fibroblast ligand sources from
+epithelial receiver activity.
 
-### A4. How do current Wnt activity and IL-1 responsiveness overlap in AT2 cells?
+**Decision / readiness.** A precise absence of the predicted transition among
+verified history-labelled responsive cells weakens the sequential model.
+Sparse RNA overlap or an unverified reporter is inconclusive. Suitable
+history/activity data are required. [Current figures](analysis/figures/rq/README.md#a4)
+are screens; the desired figure is a lineage-linked activity/response time course.
+[MC1–MC3](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1).
 
-Lineage history, current transcript detection, pathway activity and
-future fate are different measurements. Wnt-associated maintenance and
-IL-1-associated transition can be sequential or context dependent within the
-same cells; the question does not require two stable opposing subsets.
+<a id="a5-which-transitional-signatures-are-specific-to-injury-rather-than-development-or-genotype"></a>
+<a id="a5"></a>
 
-The bulk qPCR comparison of sorted cells supports an association, not a
-same-cell overlap fraction. Detection near 4–7% applies to GSE145031; the
-GSE310539 figure below reports Il1r1 detection of 19.3–29.8%. Neither makes a
-single sparse transcript a validated substitute for a lineage reporter.
+### A5. Does adult alveolar repair reuse part of a developmental epithelial programme?
 
-A useful experiment would specify present activity versus lineage history,
-reporter washout, animal-level four-quadrant proportions and a functional
-response endpoint. Available counts and accessibility can guide feasibility;
-they do not establish reporter overlap or responsiveness. Claims of being the
-first or only such comparison require a scoped literature review.
+**Hypothesis.** Development and adult repair recruit a shared epithelial
+remodelling component, with context-specific additions contributing to different
+outcomes.
 
-<!-- rq-figure:A4 -->
-![A4: Axin2 and Il1r1 in AT2 nuclei](analysis/figures/rq/rq_a4_axin2_il1r1.png)
-
-*Figure A4. GSE310539. Panels a–b show Axin2 and Il1r1 on the wild-type embedding. Panel c shows detection in AT2 nuclei (Sftpc detected; outside the transitional group) across four wells: Axin2 4.4–7.5% and Il1r1 19.3–29.8%. Panel d shows co-detection in 1.0–3.1% of AT2 nuclei. Sparse transcript co-detection does not establish the overlap of pathway activity, reporter history or functional responsiveness (C134–C137/C142). Data in `analysis/figures/rq/rq_a4_detection.csv` and `rq_a4_codetection.csv`.*
-<!-- /rq-figure:A4 -->
-
-#### Wnt source, response and epithelial state after injury
-
-Which fibroblast states carry Wnt-ligand transcripts, and how do epithelial
-Wnt transcripts, Wnt-response markers, AT2 identity and proliferation vary
-across animals? These measurements separate candidate ligand sources from
-receiver responses and functional stemness. They also allow the possibility
-that identity maintenance and proliferation vary independently.
-
-[Nb1](Research%20Article/gate1_03_nabhan_2018/nb1/README.md) uses deposited cell labels and
-animal-level raw-count summaries in GSE262927. Its earliest injured samples
-are day 6; it cannot test the rapid induction described by Nabhan 2018. Only
-one baseline and one day-11 AT2 unit pass the primary 50-cell floor, so these
-plots support hypothesis generation, not a replicated injury-effect test.
-An [independent cohort screen](Research%20Article/gate1_03_nabhan_2018/external_feasibility/README.md)
-documents the conditions needed for a follow-up comparison.
-
-![Animal-level AT2 identity, proliferation and Wnt-response transcripts](Research%20Article/gate1_03_nabhan_2018/nb1/figures/04_at2_dimensions.png)
-
-*Figure A4b. GSE262927, one point per animal, identified by sample suffix.
-The two panels compare the Axin2/Lef1 transcript summary with a published AT2
-holdout panel and Mki67/Top2a. Filled points have at least 50 AT2 cells; open
-points fall below this eligibility floor. Day is confounded with cohort
-characteristics, and the two-gene summaries are not validated pathway or
-stemness scores. The [coverage figure](Research%20Article/gate1_03_nabhan_2018/nb1/figures/01_animal_coverage.png)
-and [per-gene results](Research%20Article/gate1_03_nabhan_2018/nb1/figures/03_at2_per_animal.png)
-show the sampling and transcript-level context.*
-
-### A5. Which transitional signatures are specific to injury rather than development or genotype?
-
-This specificity question complements the RNA/chromatin measurements in A1. At
-the common RNA budget, the two-transcript label identifies 3.69% of P9
-control cells and 8.07% of P9 **Cebpa-mutant** cells. The control result already
-refutes injury exclusivity of the classifier (C119); the larger mutant value
-must not be described as ordinary development.
-
-Shared Krt8/Cldn4 expression does not establish that full DATP, PATS and ADI
-programmes, regulatory mechanisms or fates are equivalent. Those definitions
-must retain their original source and gene universe. Analyses should include
-label-free versions excluding Krt8 and Cldn4 to expose circular enrichment.
-A maturation score does not hold development fixed: the existing age-by-injury
-design is not a replicated factorial experiment.
-
-The analysis records which complete source signatures are available,
-which comparisons use marker panels, and whether an independent cohort has
-adequate animals and epithelial coverage. A failed eligibility check is a
-reason to narrow the conclusion, not to substitute cell-level significance.
-
-<!-- rq-figure:A5 -->
-![A5: the transitional marker set in development and after injury](analysis/figures/rq/rq_a5_development.png)
-
-*Figure A5. GSE247130 control wells: P9 n = 12,186; seven weeks n = 7,589; SeV-infected n = 11,773. Panels a–c show an RNA embedding for each well, with Cldn4/Krt8 co-detection at the available depth (12.47%, 2.08% and 1.27%), followed by each transcript separately. Panels d–e compare transcript measurements across wells. The raw detection fractions shown here differ from the common-depth comparison in the text; both require their stated measurement scale. The depth-matched analysis supports the presence of this marker combination during development (C119), without establishing equivalence to an adult injury state. Data in `analysis/figures/rq/rq_a5_wells.csv`.*
-<!-- /rq-figure:A5 -->
-
-#### Source-defined signatures and sample coverage
-
-![Full source-defined epithelial panels and external animal coverage](Research%20Article/epithelial_state_specificity/results/es1_specificity.png)
-
-*ES1 uses 2,000 UMI and label-excluded source definitions. ADI enrichment is
+**Our observation.** Neonatal controls contain Krt8/Cldn4 co-detection at the
+common depth budget (3.69%; C119). ES1's label-excluded ADI enrichment is
 +1.04/+1.21 detection points in neonatal controls and +7.61/+6.53 in injured
-adult controls. Only one of 25 external-study animals passes both group floors.
-Seven-week control eligibility changes with seed. These are within-well
-measurements and coverage checks, not replicated fate inference (C165–C168).*
-
-### A6. How much of the IPF macrophage proliferation signal is composition, and what remains within a shared noncycling state?
-
-**Motivation:** G2 enrichment inference depends strongly on correlation assumptions.
-The validation cohort has more deposited proliferating macrophages on average in
-IPF (3.77% versus 2.11%), but its proliferating subtype has only three IPF donors
-and one control above the 50-cell floor. Within-subtype findings in discovery
-are not confirmed in the available validation labels.
-
-**Test:** harmonize resident, recruited and cycling states across cohorts before
-constructing donor pseudobulks. Decompose cell-fraction and raw transcript
-contributions, then compare the same noncycling state under a fixed composition
-standard. Require at least three donors per arm and justify power beyond that
-minimum. A composition-only explanation is challenged by a reproducible
-within-state effect after standardization. Failure to reach significance does
-not establish composition-only; excluding a meaningful within-state effect
-requires a prespecified equivalence margin and adequate precision.
-
-Evidence: [sample-level enrichment analysis](analysis/corrections/statistics/README.md).
-The current data leave both mixture and within-state explanations plausible.
-
-![Macrophage state fractions and proliferating-state transcript contributions](analysis/figures/rq/rq_a6_composition.png)
-
-*Figure A6. Panels a–b show mean donor cell fractions under each cohort’s deposited macrophage labels. The state labels differ between cohorts and are not treated as harmonized populations. Panel c shows the validation cohort’s proliferating-state share of cells and of E2F/G2M programme transcripts. Values are cohort means, without donor-level uncertainty bars; they motivate composition analysis but cannot establish a within-state effect. Sources: [cell fractions](analysis/corrections/statistics/tables/subtype_cell_fractions.csv) and [transcript contributions](analysis/corrections/statistics/tables/subtype_transcript_contributions.csv).*
-
-### A7. Does Cebpa genotype shift the reference AT2 population and compress the apparent transitional contrast?
-
-**Motivation:** ES1's published AT2 holdout contrast is smaller in mutant wells:
-P9 control -4.59/-4.79 points versus mutant -0.70/-0.31, and injured adult
-control -8.88/-7.34 versus mutant -2.28/-2.43 across technical seeds. Reference
-scores also decrease in mutants (C167). A smaller difference need not mean a
-more preserved transitional state; it can arise from a changed reference.
-
-**Test:** estimate a genotype-by-state interaction from independent animals at
-matched ages, reporting changes in both reference and labelled states. Repeat
-with state definitions independent of Sftpc and the scored genes, because
-reference selection can itself change with genotype. Comparable genotype shifts
-in both states, bounded by a prespecified interaction margin, would argue against
-the differential-state explanation. The current one-well comparisons cannot
-establish that interaction.
-
-![AT2 programme detection in reference and labelled states by genotype](analysis/figures/rq/rq_a7_genotype_reference.png)
-
-*Figure A7. GSE247130 AT2 holdout mean gene detection at 2,000 UMIs, shown separately for P9 and SeV-injured adult wells. Lines connect the mean of two technical seeds within each genotype; circles and diamonds show seeds 17 and 29. There is one pooled library per condition, so these points do not supply biological replication or an interaction confidence interval. Reporting both populations reveals how reference shifts affect the labelled–reference contrast. Source: [module scores](Research%20Article/epithelial_state_specificity/results/module_scores.csv).*
-
-### A8. Does a broad AT1 score capture shared transition programmes rather than late maturation?
-
-**Motivation:** the published ADI and AT1 holdout lists share **119 genes**.
-Broad AT1 scores rise in several injured labelled groups while a four-gene
-late-AT1 panel is seed-sensitive (C168). Neither the broad score nor the small
-late-marker panel alone establishes fate.
-
-**Test:** freeze shared and AT1-unique components before validation; relate both
-to mature AT1 protein, morphology or lineage contribution in independent animals.
-If the unique component predicts mature endpoints with adequate precision
-beyond the shared component, a purely shared-transition explanation is weakened.
-If no precise difference can be estimated, retain the question rather than
-calling one component biologically absent.
-
-Evidence for A7/A8: [ES1 source definitions and results](Research%20Article/epithelial_state_specificity/README.md).
-Neither requires treating the neonatal label as the same biological state as an
-adult injury intermediate.
-
-![Gene-list overlap and epithelial programme contrasts](analysis/figures/rq/rq_a8_signature_specificity.png)
-
-*Figure A8. Panel a shows source-list membership: diagonal cells are holdout-list sizes, and off-diagonal cells count shared genes, including 119 between ADI and AT1. Panel b shows labelled-minus-reference detection differences in percentage points, averaged across technical seeds 17 and 29 at 2,000 UMIs. An asterisk marks a sign change between seeds, not statistical significance. All displayed comparisons pass the group floor in both seeds. The external row is one mouse; broad AT1 enrichment and a small late-marker panel do not establish mature fate. Sources: [module overlap](Research%20Article/epithelial_state_specificity/results/module_overlap.csv) and [within-unit effects](Research%20Article/epithelial_state_specificity/results/within_unit_effects.csv).*
-
-### A9. Does apparent EGFR ligand specificity reflect receiver biology or receptor representation and coverage?
-
-**Motivation:** the consensus resource contains
-AREG–EGFR_ERBB2, but only 7 of 22 donors pass its expression score requirements,
-below the 11-donor retention rule. Meanwhile, AREG leads a restricted canonical
-exact-EGFR list in four resources. These are different estimands on shared data,
-not independent confirmations of one mechanism.
-
-**Test:** freeze the receptor-complex definitions, compare donor-level EGFR and
-ERBB2 coexpression within the same fibroblast states, and distinguish missing
-resource entries from failed expression eligibility. Require matched biological
-replicates and independent protein or receptor-activation measurements before
-inferring receiver specificity. If the ranking difference disappears under
-matched definitions and donor coverage, the representation explanation gains
-support; persistent RNA differences alone still do not prove activation.
-
-Evidence: [ligand-resource analysis](analysis/corrections/ligand/RESULTS.md).
-
-![Donor coverage by ligand, resource and receptor definition](analysis/figures/rq/rq_a9_receptor_coverage.png)
-
-*Figure A9. Each cell gives the number of scored donors out of 22; retention requires at least 11. Separate rows preserve exact EGFR and EGFR_ERBB2 complex definitions. A dash means no matching row in the inspected canonical coverage table, not biological absence. AREG–EGFR is scored in all 22 donors in four resources, while AREG–EGFR_ERBB2 is scored in seven where listed. The dependence on receptor representation is visible before any activation claim is considered. Source: [receptor coverage](analysis/corrections/ligand/results/lr/canonical_egfr_receptor_coverage.csv).*
-
-### A10. Do epithelial perturbation responses predict organoid growth and fibroblast responses across independent preparations?
-
-**Motivation:** GSE307112 provides species-separated epithelial/fibroblast RNA
-and well-linked imaging measurements, enabling an association with organoid
-growth outcomes. The relationship has not yet been tested in this repository.
-
-**Test:** freeze epithelial programmes and an imaging endpoint, resolve well,
-guide, plate and biological-preparation identities, and test prediction on held-out
-biological batches. Compare programme predictions with models using plate and
-baseline imaging alone. A precise absence of incremental predictive performance
-would weaken the proposed RNA–growth association. If independent batches cannot
-be identified, restrict the analysis to descriptive screen associations.
-Species-separated bulk RNA does not resolve within-compartment composition;
-organoid area is not mature AT1 fate or in vivo repair.
-
-See the [dataset gate and pilot contract](docs/NEXT_DATASET_GATE.md). This takes
-priority over another unrestricted ligand-ranking pass because it can test a
-different endpoint; the design still has to pass before inference.
-
-```mermaid
-flowchart TD
-    W["Map wells, guides, plates<br/>and biological preparations"] --> E["Mouse epithelial RNA<br/>Frozen programme scores"]
-    W --> F["Human fibroblast RNA<br/>Receiver-response scores"]
-    W --> O["Imaging endpoints<br/>Day-14 area conditional on day-7 area"]
-    E --> M["Compare outcome models<br/>Account for estimable plate and batch structure"]
-    F --> M
-    O --> M
-    M --> V["Evaluate on held-out biological preparations<br/>Compare with baseline-imaging and plate models"]
-```
-
-*Figure A10. Conceptual prediction design. Preparation identities define the
-validation split; wells from a shared preparation cannot supply independent
-validation. Imaging measures organoid growth and morphology, not mature AT1
-fate or in vivo repair.*
-
-The review-motivated extensions A11–A14 below were consolidated here on
-25 September 2026. They build on A5/A8 (programme specificity), A2/A9
-(source and receptor coverage), A3/A6 (myeloid context) and A4 (recipient
-state). These are **post-analysis exploratory questions**, not claims of
-literature novelty or retrospective preregistration. Five measured-data
-figures and one experimental schematic are complete; the proposed joint
-association and withdrawal tests are not. See the shared
-[figure methods and plotted values](analysis/figures/rq/il1b_context/REPORT.md).
-
-The organising extension is: which macrophage–fibroblast niche features
-accompany shared epithelial plasticity, and which distinguish neoplasia-associated
-plasticity from non-neoplastic repair and fibrosis? Histology context does not
-independently establish malignant cell identity, persistence or dysplastic fate.
-
-### A11. Shared plasticity versus neoplasia-associated context
-
-**Question.** Which epithelial programs distinguish lesion-associated AT2-like
-cells from repair/fibrotic transitional cells, once the shared HPCS-like
-transcriptional component is made explicit?
-
-**Why it follows from the results.** The overlap-reduced HPCS signature rises
-in all seven evaluable pooled repair/developmental libraries and all three
-eligible IPF donor pairs. It also rises in 19/23 LUAD-versus-normal paired
-patients, with mean difference +0.327 log2 CPM. This challenges the specificity
-of an elevated score; it does not establish a common cell identity. See the
-[completed evidence review](Research%20Article/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md),
-[repair comparison](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_specificity/REPORT.md),
-[IPF comparison](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_ipf_specificity/REPORT.md) and
-[human comparison](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/REPORT.md).
-
-**Working alternatives.** A shared injury/stress program may account for the
-overlap; additional epithelial programs may associate with lesion context;
-or assay, annotation and sample composition may explain apparent differences.
-An extra program is useful only if its association survives independent
-evaluation, rather than being defined and tested on the same labels.
-
-**Generated A11:** A, PCA of 70 patient-histology pseudobulks; B, reduced-HPCS
-violins for 23 paired patients; C, all seven released paired contrasts;
-D, six fixed program differences across 23 LUAD-normal pairs.
-
-![A11 epithelial programs](analysis/figures/rq/rq_a11_epithelial_programs.png)
-
-**Original panel concepts and optional extensions.** The following design
-menu remains broader than the generated figure; dedicated epithelial UMAP
-score overlays and gene-component heatmaps have not been generated.
-
-- **A: epithelial UMAP.** Within each cohort, use the same coordinates in
-  adjacent panels colored by supported annotation, histology, donor and
-  continuous reduced-HPCS/ISR scores. Keep uncertain identities visible.
-  No combined repair-to-fibrosis-to-cancer trajectory or cross-cohort distance
-  interpretation. This panel localizes heterogeneity; it does not test fate.
-- **B: pseudobulk PCA.** Each point is a patient-histology-cell-state aggregate,
-  analyzed within cohort and compartment. Show PC variance, patient identity
-  and paired normal-lesion connections where verified. Use an unsupervised
-  expression-based feature rule, not genes selected for case-control separation.
-  PCA is a sample/heterogeneity diagnostic, not a significance test.
-- **C: paired program distributions.** Plot individual patient scores and
-  paired differences for reduced HPCS and eligible source programs. A violin
-  may summarize donor scores where sample size supports a density; retain all
-  points. Use dot/slope plots for three IPF pairs and small histology groups.
-  Cell-score violins, if added, are descriptive supplements and show donor
-  contributions. Do not recalculate a different cell score and present it as
-  the released pseudobulk result.
-- **D: gene/program heatmap.** Show fixed signature components and overlap
-  membership alongside within-study contrasts and measured-gene coverage.
-  Separate shared from source-specific members without selecting only positive
-  genes. New candidate discriminatory genes remain exploratory and require
-  a held-out cohort; no classifier performance claim from these inspected data.
-
-**Decision.** Overlap alone supports a specificity limitation. A defensible
-neoplasia-specific extension needs reproducible within-study associations,
-independent cell-state validation and validation data not used for selection.
-Histology differences are cross-sectional, not a progression time course.
-
-**Reuse now:** [human program figure](Research%20Article/gate2_C3_yu_lee_choi_min_2026/figures/human_epithelial_program_specificity.png),
-[IPF state figure](Research%20Article/gate2_C3_yu_lee_choi_min_2026/figures/ipf_epithelial_state_specificity.png),
-[repair/overlap figure](Research%20Article/gate2_C3_yu_lee_choi_min_2026/figures/epithelial_specificity_and_signature_overlap.png),
-[paired values](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_values.csv).
-
-### A12. Recipient context and IL-1 specificity
-
-**Question.** Are differences in fibroblast and epithelial recipient programs
-associated with receptor/inhibitor expression and subtype composition, and
-how do IL1A/IL1B candidates compare with the frozen alternative ligand families?
-
-**Why it follows from the results.** The canonical macrophage-to-fibroblast
-IL1B compatibility contrast is near zero in one IPF cohort and positive in
-the other. In human LUAD-versus-normal up-target fits, IL1B ranks 4/10 for
-broad fibroblasts and 12/14 for AT2. Different candidate/target backgrounds
-make those ranks noncommensurate as effect sizes; they motivate a recipient
-question without proving stronger fibroblast signaling or indirect causality.
-See [IPF compatibility](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_compatibility/REPORT.md) and
-[human target fits](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_ligand_targets/REPORT.md).
-
-**Working alternatives.** Changes could originate in ligand RNA, recipient
-components, captured subtype mixture, shared inflammation or other ligands.
-The current data do not identify which explanation causes cohort disagreement.
-
-**A12 panels.**
-
-- **A: source/recipient dot plot.** IL1A/IL1B in observed sources; IL1R1 and
-  IL1RAP in recipients; IL1RN, IL1R2 and SIGIRR in a separate regulatory block.
-  Dot size shows the donor-averaged detection fraction and color the
-  donor-averaged expression, with eligible n. Keep complex subunits visible.
-- **B: paired expression and compatibility plots.** Show patient points or
-  donor-score violins with overlaid points for fixed macrophage/fibroblast/
-  epithelial labels. Place ligand and receptor component changes beside the
-  composite score. Facet independent IPF cohorts; do not connect unpaired
-  IPF and control donors. Label omission ranges as robustness, not confidence.
-- **C: recipient pathway enrichment dot plot.** Separate fibroblast,
-  macrophage and epithelial panels. Include the declared evaluable pathway
-  family, with direction, q value, measured set size and sample coverage.
-  Show estimated-correlation primary and fixed-0.01 sensitivity side by side.
-  The human results are 0/279 versus 148/279 at q<0.05; this model dependence
-  is a finding to display, not a reason to hide the primary results.
-- **D: ligand-target rank and stability plot.** Compare IL1A/IL1B with eligible
-  TGFB1, EGFR-ligand and other prespecified candidates within each receiver's
-  fixed comparison. Show candidate denominators, target eligibility and
-  omitted-patient rank ranges. An unsigned prior fit is not an activation or
-  inhibition measurement. Any ligand-target heatmap must distinguish prior
-  weights from observed receiver gene changes.
-
-**Decision.** Look for agreement between within-subtype component changes,
-recipient programs and omission stability. RNA agreement remains an
-association; NF-kB-like responses and high ligand ranks are not IL-1-specific
-causal evidence. The main test includes discordance and ineligible target sets.
-
-**Reuse now:** [human pathway figure](Research%20Article/gate2_C3_yu_lee_choi_min_2026/figures/human_paired_recipient_pathways.png),
-[human niche figure](Research%20Article/gate2_C3_yu_lee_choi_min_2026/figures/human_paired_niche_RNA_contrasts.png),
-[target figure](Research%20Article/gate2_C3_yu_lee_choi_min_2026/figures/human_ligand_target_eligibility_and_fit.png),
-[paired compatibility values](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_niche/primary_compatibility_patient_values.csv).
-
-**Generated A12 figures:**
-
-![A12a source and recipient components](analysis/figures/rq/rq_a12_source_recipient_components.png)
-
-![A12b recipient enrichment](analysis/figures/rq/rq_a12_recipient_enrichment.png)
-
-![A12c ligand-target candidates](analysis/figures/rq/rq_a12_ligand_target_candidates.png)
-
-The target figure retains all 32 eligible up-target candidates across the
-three broad receivers for LUAD-normal in the focused-triad scope. IL1B does
-not pass expression eligibility in the macrophage panel. Full contrast,
-direction and sensitivity tables remain available in the original reports.
-
-#### Source annotation supporting A12: Resolve source uncertainty before strong macrophage claims
-
-**Enabling question.** Do IL1B-expressing cells without confident fine labels
-represent coherent cell states, mixed profiles or measurement background?
-
-Unassigned cells carry median IL1B count fractions of 52-72% across human
-histologies. This is recovered RNA, not a fraction of tissue cytokine secretion.
-Cross-lineage RNA also remains substantial in the mapped populations. See the
-[annotation review](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_full/ANNOTATION_REVIEW.md) and
-[source report](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_sources/REPORT.md).
-
-The generated A12-S1 figure uses 34,178 display cells with a 75-cell cap per
-patient/histology/source label, while quantitative source fractions use all
-QC cells. The same UMAP coordinates show existing labels, uncertainty and
-IL1B RNA; paired source-fraction violins show 23 normal-LUAD patient pairs.
-
-![A12-S1 source and annotation context](analysis/figures/rq/rq_a12_source_context.png)
-
-Further annotation-review options: an all-QC UMAP colored by broad identity, confidence,
-donor, histology and IL1B; a multi-marker dot plot; QC/confidence violin plots
-with donor summaries; and stacked per-patient IL1B count fractions retaining
-the unassigned category. Use assay-appropriate background/mixed-profile checks
-and independent marker support. A separate UMAP cluster or a relaxed confidence
-cutoff does not establish a new macrophage state. Keep original annotations
-and any reviewed alternative labels as separately versioned results.
-
-### A13. Fibroblast context and reciprocal niche associations
-
-**Question.** Within eligible patients, do fibroblast recruitment/inflammatory,
-matrix and trophic programs associate with epithelial plasticity, and do these
-associations differ from those involving macrophage IL1B RNA alone?
-
-This is a new, conditional association question inspired by the heterogeneous
-IL-1 results and the Body notes. A reciprocal or fibroblast-mediated mechanism
-has not been established by the completed analysis.
-
-**A13 panels.**
-
-- **A: matched-patient heatmap.** Align macrophage IL1B, recipient components,
-  fibroblast inflammatory/matrix/trophic programs, eligible CCL2/CCR2 and
-  CXCL12/CXCR4 compatibility, and epithelial program scores. Rows are verified
-  patient-histology observations; mark missing compartments instead of filling
-  them with zero. Separate captured cell fractions from within-state RNA.
-- **B: donor-level scatterplots.** Use matched within-patient lesion-normal
-  changes where available; show every patient and omission sensitivity.
-  Freeze a small set of associations and their multiplicity family before
-  fitting. Repeated histologies cannot supply independent patient n.
-  “Beyond IL1B” requires an eligible, parsimonious joint model; marginal
-  correlations alone cannot establish added explanatory information.
-- **C: spatial extension.** Reuse measured human maps as descriptive context.
-  Regional enrichment and neighborhood summaries wait for independent
-  pathology regions and a suitable patient-level spatial null. Transcript
-  hotspots cannot define and then validate their own regions. Mixed spots
-  do not identify direct cell contact, and companion assays are not replication.
-
-**Eligibility and decision.** Count complete triads before estimating joint
-associations. Existing IPF triad counts (six and three donors) do not reach the
-project's ten-unit joint-association floor. Human eligibility must be audited
-for the exact variables and paired contrast; 23 cohort patients does not mean
-23 complete triads. A floor is not a power guarantee. Weak coverage produces
-a coverage panel, not a mediation fit. Replicated association would prioritize
-a functional test; it would not demonstrate a feedback loop.
-
-**Reuse now:** [human niche report](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_niche/REPORT.md),
-[spatial report](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_spatial_context/REPORT.md),
-[measured maps](Research%20Article/gate2_C3_yu_lee_choi_min_2026/figures/human_spatial_measured_maps.png).
-
-### A14. Resolution versus persistence after signal withdrawal
-
-**Question.** Does transient versus sustained IL-1beta exposure produce
-different recovery after withdrawal, and does fibroblast IL-1 reception modify
-epithelial recovery independently of direct epithelial reception?
-
-**Why it matters.** Shared RNA programs cannot distinguish reversible repair
-from persistent dysfunction. The current mouse arm lacks the author KAC
-classifier and does not supply the required withdrawal/lineage experiment.
-This is a mechanistic follow-up, not a claim derived directly from RNA ranks.
-
-**A14 panels, requiring new evidence.**
-
-The experimental layout is now drawn below; outcome panels B-D still require
-new data. No anticipated response curve is presented as a result.
-
-![A14 proposed withdrawal experiment](analysis/figures/rq/rq_a14_withdrawal_design.png)
-
-- **A: experimental schematic.** Define transient/sustained exposure and
-  withdrawal, with epithelial-only and stromal-containing systems and
-  recipient-specific IL1R1 perturbations. Add a macrophage-source arm only
-  if separating source effects is an explicit experimental aim. Freeze
-  endpoints, contrasts and biological replication before acquisition.
-- **B: longitudinal response plots.** Epithelial plasticity and mature-state
-  recovery alongside fibroblast responses, with independent culture/animal
-  replicates and time-matched controls. Connect repeated measures only when
-  the same unit was actually measured repeatedly.
-- **C: fate and function.** Replicate-level mature-cell yield, viability,
-  organoid function and lineage outcomes; show individual replicates rather
-  than treating cells or organoids from one preparation as independent animals.
-- **D: protein and target engagement.** Measured mature cytokine release and
-  recipient response establish exposure/perturbation context. RNA alone cannot
-  measure blockade efficacy, biochemical ISR activation or irreversible fate.
-
-**Decision.** Evidence for fibroblast dependence requires an epithelial outcome
-change under a fibroblast-specific intervention with appropriate controls.
-Persistence after withdrawal requires observation after withdrawal. Neither
-result, on its own, establishes malignant transformation.
-
-
-#### Analysis and figure rules for A11–A14
-
-1. **Biological units remain visible.** Cells describe heterogeneity; donors,
-   patients or animals support inference. Preserve paired designs. Pooled
-   wells/sort gates do not become independent mice. This is consistent with
-   the biological-replicate analysis evaluated by
-   [Squair et al.](https://www.nature.com/articles/s41467-021-25960-2).
-2. **UMAP and PCA need their own reproducible inputs.** Reuse validated
-   embeddings where present; otherwise record feature selection, normalization,
-   dimensions, neighbors, seed and any display-only donor-balanced sampling.
-   Use identical coordinates for overlays and include donor/batch diagnostics.
-   Do not optimize embeddings to separate histologies. Statistical summaries
-   use all eligible observations, not the display subsample.
-3. **Enrichment plots must match the method.** CAMERA returns set size,
-   direction and P/FDR values, not a GSEA normalized enrichment score
-   ([official limma manual](https://bioconductor.org/packages/release/bioc/manuals/limma/man/limma.pdf)).
-   Running-score GSEA curves would require a separately specified exploratory
-   analysis and would not replace the completed primary analysis. Current
-   primary and sensitivity labels remain unchanged.
-4. **Small n stays visible.** Prefer paired points to a smooth violin with
-   three donors. No cell-level significance stars as patient-level evidence,
-   no inferred confidence intervals from omission ranges, and no pooling of
-   distinct studies into a common quantitative trajectory.
-5. **Render from saved tables.** New embeddings/models are separate computation
-   stages. Each released figure needs its plotted table, input hashes,
-   generating script, run record, sample counts and visual review. Use the
-   repository palette and PNG/SVG exports under `analysis/figures/rq/`.
-   The main repository README stays a navigation page.
-
-The 17 paper-specific figures remain in the Yu study gallery. The six new figures add display
-geometry, existing quantitative evidence and one experimental schematic.
-Source-label review and causal/spatial claims still need additional evidence.
-Freeze any new analysis specification before testing these exploratory RQs.
-
-## Part B. What a reader can reproduce
-
-- Initial mouse and human atlas recovery, annotation disagreements and integration
-  choices: [FINDINGS.md](FINDINGS.md) and [pipeline record](docs/PIPELINE_AS_RUN.md).
-- Observations and source-specific limitations:
-  [CLAIMS.md](CLAIMS.md), [generated evidence index](analysis/claims/manifest.json),
-  and [negative results](NEGATIVE_RESULTS.md).
-- Data preparation, environments and analysis commands:
-  [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
-
-Data figures A2 and A6–A9 are generated by
-[`18_rq_evidence_figures.py`](analysis/scripts/18_rq_evidence_figures.py) from saved
-analysis tables. PNG and editable SVG versions are stored beside the other RQ
-figures; [input and output hashes](analysis/figures/rq/rq_evidence_figures.json)
-record their provenance. These descriptive displays do not introduce new
-hypothesis tests.
-
-## Part C. How evidence is assessed
-
-A donor or animal is the inferential unit where replication exists. Cell
-resampling measures technical or within-sample sensitivity, not biological
-replication. Gene-set permutations and donor-label permutations test different
-nulls. Discovery selection and confirmation are separated; overlapping gene
-sets are not counted as independent mechanisms. Leave-one-out direction checks
-measure influence, not external replication.
-
-Analysis records distinguish exploratory observations from independent
-confirmation and preserve the provenance of each result. Machine checks bind
-selected numbers to explicit files and filters; unbound
-claims remain visibly outside that check's coverage. Status counts combine
-observations, methods and decisions and are not a measure of scientific merit.
-
-## Part D. Research sequence
-
-A10 retains priority for linking RNA to an independent measured outcome.
-A11–A12 use the completed evidence and source diagnostics; A13 first needs
-complete-triad eligibility and a frozen joint model, while A14 requires new
-withdrawal/perturbation data. These extensions do not reopen completed runs.
-
-1. Establish source, programme and epithelial-state measurements with explicit
-   sensitivity to annotation, sampling depth and analysis assumptions.
-2. Select confirmation datasets using independent samples, explicit outcomes,
-   cell-state coverage, age/genotype controls and quantitative assay availability.
-3. Link molecular programmes to measured outcomes through the
-   [organoid dataset pilot](docs/NEXT_DATASET_GATE.md). Establish sample identities
-   and replication before fitting an inferential model.
-4. Undertake spatial or functional follow-up only for surviving candidates with
-   a defined discriminating endpoint.
-
-## Part E. Scope and limitations
-
-Several deposits contain one pooled library per condition. Same-laboratory
-agreement, alternate databases on the same expression matrix, and repeated
-resampling do not create independent cohorts. There is no common functional
-repair outcome across this collection. The project supplies reproducible
-observations and candidate mechanisms; causal claims require additional design.
+adult controls across technical seeds. These positive within-well observations
+motivate reuse without equating neonatal and adult injury states. Only one of
+25 external-study animals passes both group floors. See
+[ES1](Research%20Article/epithelial_state_specificity/README.md).
+
+**Rivals and test.** Generic stress, cycling, age/genotype imbalance and shared
+label genes can explain overlap. Freeze source-defined shared and context-specific
+components excluding selection genes; test effects beyond generic stress/cycling
+in independent developmental and injury contrasts. Use animals as units, retain
+genotype and validate outside the component-selection data.
+
+**Decision / readiness.** Precise failure of the nominated component to transport,
+or explanation entirely by prespecified generic programmes, weakens that reuse
+hypothesis. Poor animal coverage is inconclusive. Component definition can use
+existing tables; confirmation requires eligible independent units.
+[Current figures](analysis/figures/rq/README.md#a5) motivate animal-level
+shared-versus-specific effects and held-out evaluation.
+[MC1–MC2](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1), [MC5](docs/RQ_MEASUREMENT_CONTRACTS.md#mc5).
+
+<a id="a6-how-much-of-the-ipf-macrophage-proliferation-signal-is-composition-and-what-remains-within-a-shared-noncycling-state"></a>
+<a id="a6"></a>
+
+### A6. Does IPF alter shared macrophage states beyond changing their abundance?
+
+**Hypothesis.** IPF has a within-state macrophage programme component in addition
+to changes in resident, recruited and proliferating cell proportions.
+
+**Our observation.** Validation-cohort proliferating macrophage fractions average
+3.77% in IPF versus 2.11% in controls. Cell and programme-RNA contributions differ,
+motivating a biological decomposition. Only three IPF donors and one control
+exceed the proliferating-state floor, and cohort labels are not harmonized.
+[Existing enrichment](analysis/corrections/statistics/README.md) does not establish
+the within-state hypothesis.
+
+**Rivals and test.** Mixture alone, inconsistent annotation and batch effects
+compete with a within-state change. Harmonize states independently of the tested
+programme, compare donor pseudobulks under a frozen composition standard, and
+replicate across cohorts. Do not define “noncycling” solely with the score tested.
+
+**Decision / readiness.** A replicated effect supports the within-state component.
+A narrow interval inside a prespecified equivalence margin supports a
+composition-only explanation for that programme; nonsignificance does not.
+Harmonization and donor coverage are gates. Extend the
+[composition panels](analysis/figures/rq/README.md#a6) to donor-level standardized
+effects and intervals. [MC1](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1),
+[MC3](docs/RQ_MEASUREMENT_CONTRACTS.md#mc3), [MC5](docs/RQ_MEASUREMENT_CONTRACTS.md#mc5).
+
+<a id="a7-does-cebpa-genotype-shift-the-reference-at2-population-and-compress-the-apparent-transitional-contrast"></a>
+<a id="a7"></a>
+
+### A7. Does Cebpa loss attenuate AT2 identity across states or preferentially within a transitional state?
+
+**Hypothesis.** Cebpa loss reduces identity across AT2 states, so the smaller
+transitional–reference contrast partly reflects a changed reference rather than
+selective preservation of intermediates.
+
+**Our observation.** Both reference identity and labelled–reference differences
+decrease in mutant wells (C167). The P9 contrast changes from -4.59/-4.79 points
+in controls to -0.70/-0.31 in mutants across technical seeds; adult injured wells
+show the same qualitative compression. This motivates a genotype-wide effect,
+but one well per condition cannot establish an interaction. See
+[ES1](Research%20Article/epithelial_state_specificity/README.md).
+
+**Rivals and test.** State-selective effects, genotype-dependent reference
+selection and sampling remain alternatives. Estimate genotype effects in both
+states and their interaction in replicated age-matched animals. Define states
+independently of Sftpc and scored identity genes.
+
+**Decision / readiness.** Comparable shifts with a precisely bounded interaction
+support broad attenuation; a replicated meaningful interaction supports a
+state-selective component. Both can coexist. Current one-well measurements are
+descriptive. Extend [two-population plots](analysis/figures/rq/README.md#a7) to
+animal effects and interaction intervals. [MC1–MC3](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1).
+
+<a id="a8-does-a-broad-at1-score-capture-shared-transition-programmes-rather-than-late-maturation"></a>
+<a id="a8"></a>
+
+### A8. Does a maturation-specific programme add information about mature AT1 contribution beyond shared transition?
+
+**Hypothesis.** A component beyond shared transition provides additional
+information about measured mature AT1 contribution.
+
+**Our observation.** ADI and AT1 holdout lists share 119 genes, and the small
+late-AT1 panel is seed-sensitive (C168). This definitional dependence motivates
+separation but is weak biological evidence. It does not show that mature AT1
+identity is merely an extension of transition.
+
+**Rivals and test.** Shared transition alone, timing, mixture or measurement
+quality may explain the endpoint. Freeze disjoint/shared components and test
+incremental association or prediction against measured AT1 protein, morphology
+or traced descendant yield in independent animals. Do not define both predictor
+and “mature” outcome with the same RNA panel.
+
+**Decision / readiness.** Added information that transports supports the nominated
+component; a precise absence of a meaningful increment weakens it. Missing
+independent endpoints or imprecision is inconclusive. The
+[A1 lineage audit](RQ_Specified/A1_transitional_epithelial_state_distinction/LINEAGE_AUDIT.md)
+guides sourcing. [Overlap figures](analysis/figures/rq/README.md#a8) are diagnostics;
+desired panels compare component effects and held-out endpoint performance.
+[MC1](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1), [MC5](docs/RQ_MEASUREMENT_CONTRACTS.md#mc5).
+
+<a id="a9-does-apparent-egfr-ligand-specificity-reflect-receiver-biology-or-receptor-representation-and-coverage"></a>
+<a id="a9"></a>
+
+### A9. Does fibroblast receptor context determine the response to AREG?
+
+**Hypothesis.** Receptor abundance and complex competence modify fibroblast
+responses to a defined AREG exposure.
+
+**Our observation.** Exact EGFR and EGFR_ERBB2 definitions have different donor
+coverage: the complex is scored in 7/22 donors, below the 11-donor retention rule.
+This nominates a competence question and identifies a measurement prerequisite;
+it does not measure dimer composition or support EGFR-homodimer predominance.
+
+**Rivals and test.** Resource representation, depth, fibroblast mixture and
+other pathways compete with receiver biology. Following a within-state RNA
+screen, measure receptor protein/activation and matched ligand responses under
+receptor-specific perturbation across independent preparations. Complex
+composition needs an appropriate direct assay.
+
+**Decision / readiness.** A receptor-specific outcome change with verified
+engagement supports context dependence; its precise absence weakens the nominated
+mechanism. RNA/resource discordance cannot decide it. The
+[ligand report](analysis/corrections/ligand/RESULTS.md) and
+[coverage panels](analysis/figures/rq/README.md#a9) support screening; primary
+future panels are protein/activation and functional contrasts.
+[MC3–MC4](docs/RQ_MEASUREMENT_CONTRACTS.md#mc3).
+
+<a id="a10-do-epithelial-perturbation-responses-predict-organoid-growth-and-fibroblast-responses-across-independent-preparations"></a>
+<a id="a10"></a>
+
+### A10. Do epithelial programmes predict measured organoid growth across independent preparations?
+
+**Hypothesis.** Epithelial perturbation programmes add information about growth
+beyond baseline imaging and plate effects; fibroblast response programmes may
+provide a separate increment.
+
+**Motivation.** GSE307112 offers species-separated epithelial/fibroblast RNA and
+well-linked imaging. This is a public-data opportunity, not an association
+already found here. The [dataset gate](docs/NEXT_DATASET_GATE.md) defines the
+bounded next task.
+
+**Rivals and test.** Initial size, plate/preparation, guide effects or mixture
+may explain growth. Verify well–guide–plate–preparation identities and RNA harvest
+timing. Freeze day-14 area conditional on day-7 area as primary; number/coverage
+are secondary. Compare nested models and hold out whole biological preparations,
+never sibling wells. Outcome-time RNA supports concurrent association rather
+than prospective prediction. Known positive controls establish assay behaviour;
+rediscovering them is not a new mechanism.
+
+**Decision / readiness.** Reproducible incremental performance supports the
+specified association; precise absence of a predefined useful improvement weakens
+it. Unresolvable preparation identities restrict results to descriptive screen
+associations. No fit has run locally. Organoid area measures growth, not mature
+AT1 fate or in vivo repair. [Current design schematic](analysis/figures/rq/README.md#a10);
+future panels: held-out observed/predicted outcomes, preparation-level errors
+and improvement over baseline. [MC1](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1),
+[MC5](docs/RQ_MEASUREMENT_CONTRACTS.md#mc5).
+
+<a id="a11-shared-plasticity-versus-neoplasia-associated-context"></a>
+<a id="a11"></a>
+
+### A11. Which lesion-associated programmes add to a shared epithelial plasticity component?
+
+**Hypothesis.** Neoplasia-associated epithelial states contain a shared
+remodelling component plus context-associated additions distinguishable from
+non-neoplastic repair and fibrosis.
+
+**Our observation.** The overlap-reduced HPCS score rises in 7/7 pooled
+repair/development libraries, 3/3 IPF donor pairs and 19/23 LUAD paired comparisons
+(mean +0.327 log2 CPM). This positively motivates shared transcriptional biology;
+it establishes neither one cell identity nor the absence of lesion-specific
+additions. The [evidence review](Research%20Article/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md)
+preserves each context's units and limitations.
+
+**Rivals and test.** Generic stress, cycling, annotation and composition can
+mimic sharing or specificity. Define shared and candidate context-associated
+components in discovery data, then evaluate frozen additions in independent
+within-study contrasts with paired patients and supported epithelial states.
+Require independent identity evidence before calling a cell malignant;
+histology groups are not longitudinal progression stages.
+
+**Decision / readiness.** An addition that transports supports that specific
+programme. Precise failure retires the nominated addition, not all possible
+cancer-specific biology. Exploratory discovery is possible; independent
+validation remains required. [Current PCA/paired panels](analysis/figures/rq/README.md#a11)
+motivate disjoint-component heatmaps and held-out patient effects.
+[MC1](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1), [MC3](docs/RQ_MEASUREMENT_CONTRACTS.md#mc3),
+[MC5](docs/RQ_MEASUREMENT_CONTRACTS.md#mc5).
+
+<a id="a12-recipient-context-and-il-1-specificity"></a>
+<a id="a12"></a>
+
+### A12. Does recipient receptor and inhibitor context explain responses beyond IL-1 ligand RNA?
+
+**Hypothesis.** Fibroblast and epithelial receptor/inhibitor context contributes
+to recipient programme variation beyond source IL1A/IL1B RNA and subtype mixture.
+
+**Our observation.** IL1B compatibility differs between IPF cohorts and human
+target fits vary by recipient. These patterns motivate a recipient model;
+different rank denominators cannot establish stronger signalling. Human pathway
+results yield 0/279 significant primary estimated-correlation tests versus
+148/279 under fixed-0.01 sensitivity. The primary result remains primary.
+
+**Rivals and test.** Ligand amount, mixture, shared inflammation and alternative
+ligand families compete with the recipient explanation. Within supported states,
+compare a frozen source-only model with a parsimonious receptor/inhibitor
+extension using verified patient/donor units. Include IL1R1/IL1RAP and regulatory
+components; retain alternative ligands, pathway eligibility and omission
+sensitivity. Ligand–receptor inference and pathway enrichment explicitly support
+this analysis. IL-1 specificity needs activation or selective perturbation data.
+
+**Decision / readiness.** Replicated added information supports an association;
+a precisely excluded meaningful increment weakens it. Ineligible targets or
+insufficient matched units leave it unresolved. The
+[methods/report](analysis/figures/rq/il1b_context/REPORT.md) and
+[component, enrichment and target figures](analysis/figures/rq/README.md#a12)
+are complete; the proposed joint model has not run. Future primary panels show
+within-state effects and independent recipient responses.
+[MC1](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1), [MC3–MC5](docs/RQ_MEASUREMENT_CONTRACTS.md#mc3).
+
+<a id="a12-s1"></a>
+
+**A12-S1 — enabling source-identity question.** Unassigned cells carry median
+52–72% of recovered IL1B counts across human histologies. Resolving their identity
+can change source attribution; an unknown label does not define a new macrophage
+state. Retain this question in the [annotation contract](docs/RQ_MEASUREMENT_CONTRACTS.md#a12-s1)
+and [source gallery](analysis/figures/rq/README.md#a12-s1). Cytokine secretion is
+a separate measurement.
+
+<a id="a13-fibroblast-context-and-reciprocal-niche-associations"></a>
+<a id="a13"></a>
+
+### A13. Do fibroblast programmes add information about epithelial plasticity beyond macrophage IL1B?
+
+**Hypothesis.** Fibroblast inflammatory/recruitment, matrix and trophic programmes
+contribute information about epithelial plasticity beyond macrophage IL1B RNA.
+
+**Motivation.** Heterogeneous niche associations motivate a joint model, but
+completed analyses establish neither fibroblast mediation nor reciprocal feedback.
+See the [human niche report](Research%20Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_niche/REPORT.md).
+
+**Rivals and test.** Shared inflammation, histology, capture composition and
+macrophage state can explain apparent fibroblast information. Count complete
+macrophage–fibroblast–epithelial triads for the exact variables and contrast.
+Freeze a small programme/multiplicity family, then compare parsimonious joint
+models using within-patient changes where available. Marginal correlations do
+not test “beyond IL1B.” Spatial work requires independently defined pathology
+regions and a patient-level null; feedback requires intervention.
+
+**Decision / readiness.** Replicated added information supports the association;
+precise absence weakens the nominated programme. IPF has six and three complete
+triads, below the ten-unit joint-model floor; 23 human cohort patients does not
+mean 23 complete paired triads. Coverage is next, not mediation fitting.
+[Figure plan/spatial evidence](analysis/figures/rq/README.md#a13): coverage heatmap
+first, then patient effects if eligible. [MC1](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1),
+[MC3–MC5](docs/RQ_MEASUREMENT_CONTRACTS.md#mc3).
+
+<a id="a14-resolution-versus-persistence-after-signal-withdrawal"></a>
+<a id="a14"></a>
+
+### A14. Do exposure duration and fibroblast IL-1 reception separately determine recovery after withdrawal?
+
+**Two hypotheses, separate decisions.** Longer IL-1β exposure reduces mature
+epithelial recovery after withdrawal. Separately, fibroblast IL-1 reception
+modifies recovery beyond direct epithelial reception. Either can hold without
+the other.
+
+**Motivation.** Shared RNA cannot distinguish reversible repair from persistent
+dysfunction. This is a mechanistic follow-up, not an existing withdrawal-fate
+result. Published tracing informs the design but cannot replace that experiment.
+
+**Rivals and test.** Residual exposure, toxicity, death/replacement and an
+epithelial-only response compete with duration and fibroblast dependence.
+Compare transient/sustained exposure and verified withdrawal with time-matched
+controls and epithelial- versus fibroblast-specific IL1R1 perturbation. Use
+independent animals or culture preparations. Measure mature-cell yield, viability,
+traced descendants and function alongside exposure and target engagement, with
+comparable post-withdrawal intervals. Loss of a transitional score cannot by
+itself distinguish maturation, reversion, death or replacement.
+
+**Decision / readiness.** A recovery difference after verified withdrawal
+supports the duration hypothesis; an outcome change under fibroblast-specific
+intervention with controlled direct epithelial reception supports the second.
+Precise absence weakens each separately. Failed engagement or no withdrawal
+observation is inconclusive. Appropriate new data are needed; neither result
+alone establishes malignant transformation.
+
+**Figures / contracts.** [Existing design schematic](analysis/figures/rq/README.md#a14);
+future primary panels: replicate-level recovery, mature-cell yield and
+recipient-specific contrasts with exposure/engagement controls. No anticipated
+response curve is a result. [MC1](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1),
+[MC3–MC4](docs/RQ_MEASUREMENT_CONTRACTS.md#mc3).
+
+## Execution and interpretation rules
+
+Before a new fit, freeze its estimand, biological unit, eligible observations,
+primary comparison, multiplicity family, meaningful effect/prediction margin
+and validation split in the question-specific plan. Sample floors are eligibility
+rules, not power guarantees. Separate confirmation, exploratory discovery and
+tests left inconclusive by inadequate data.
+
+Reuse completed measurement checks within their recorded scope; repeat only if
+inputs, estimands or a concrete unresolved risk change. Do not broaden a
+sensitivity sweep merely to obtain significance. The [methods guide](REPRODUCIBILITY.md),
+[measurement contracts](docs/RQ_MEASUREMENT_CONTRACTS.md) and
+[ID crosswalk](docs/RQ_MEASUREMENT_CONTRACTS.md#crosswalk) locate requirements
+without making diagnostics the biological questions.

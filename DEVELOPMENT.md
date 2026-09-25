@@ -792,6 +792,31 @@ The review also confirmed caption-generator drift that could restore a
 superseded A2 figure. Repair is specified before redraw; no generator or
 biological model was run, and no numerical evidence or claim grade was changed.
 
+## 36. Implement the biological RQ rewrite (25 September 2026)
+
+After the revised framing plan in PR #68, the owner explicitly requested the
+actual rewrite. Codex implemented hypothesis cards, a measurement-contract
+index and a shared gallery. Every A1–A14 ID remains; no four-question limit
+applies. A12-S1 remains enabling, and A14 keeps two independent decisions.
+This supersedes the four-core wording in the initial historical decision 35;
+it does not change the scientific status of any hypothesis or claim.
+
+| Date | Item | Proposed by | Decided by | Decision | Reason |
+|---|---|---|---|---|---|
+| 2026-09-25 | Implement the biological-question-first rewrite and supporting-document separation | Codex, following the owner's framing note and corrections | Owner requested implementation | Applied to the root register and related docs; scientific interpretation remains subject to review | Distinguish this project's biological hypotheses from supporting measurement checks without discarding distinct questions |
+
+| Date | Reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-25 | Artifact-led RQ headlines and implied four-question survival limit | They obscured positive biological hypotheses and conflated scientific value with current data readiness | Owner requested the rewrite and challenged the limit |
+| 2026-09-25 | Script 16's automatic caption insertion and A3 “after repair” title | The writer could restore superseded A2 content; recovery had not been measured | Codex implemented the approved plan's ownership repair and presentation correction |
+
+The [migration record](docs/migrations/2026-09-25-rq-reframing/README.md) preserves
+original sources and the old figure. Explicit figure selection and isolated
+render records replace root-document mutation. Only A3 was redrawn from existing
+coordinates; no scientific model/embedding was refit and no threshold or claim
+grade was changed. Authorizing this edit is not acceptance of its hypotheses as
+established scientific findings.
+
 ## How outputs were reviewed
 
 Every run writes its decisions to machine logs (`decisions.json`,

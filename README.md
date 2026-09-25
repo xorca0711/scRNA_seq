@@ -35,7 +35,7 @@ Exploratory findings and independent confirmation are distinguished explicitly.
 
 | To assess | Open |
 |---|---|
-| Scientific questions and measurement limits | [Research questions](RESEARCH_QUESTIONS.md) |
+| Biological hypotheses, evidence and next tests | [Research questions](RESEARCH_QUESTIONS.md); [measurement contracts](docs/RQ_MEASUREMENT_CONTRACTS.md) |
 | Paper-specific analyses and figure galleries | [Paper roadmap](Research%20Article/README.md) |
 | A short portfolio entry and four figures | [Portfolio summary](docs/PORTFOLIO_SUMMARY.md) |
 | Three portfolio case studies and what was actually demonstrated | [Portfolio guide](docs/PORTFOLIO.md) |
@@ -72,7 +72,7 @@ override the claim register.
 
 | Branch | Figures and evidence |
 |---|---|
-| [Repository-wide questions A1–A14](RESEARCH_QUESTIONS.md) | Shared question figures, including IL-1 recipient context, source UMAP, patient PCA and a proposed withdrawal design |
+| [Shared question gallery](analysis/figures/rq/README.md) | Measured panels, diagnostic figures and proposed designs supporting [A1–A14](RESEARCH_QUESTIONS.md), with captions and sources |
 | [A1: lineage and functional state distinction](RQ_Specified/A1_transitional_epithelial_state_distinction/figures/README.md) | First measured-lineage reconstruction, IRE1α RNA response and descriptive source PCAs; direct epigenetic distinctions remain unresolved |
 | [Niethamer: viral injury and repair](Research%20Article/gate1_01_niethamer_2025/README.md#figure-gallery) | Animal-level tracing/cycling, myeloid composition and programme-inference sensitivity; links to phase, lineage and batch galleries |
 | [Choi: epithelial states](Research%20Article/gate1_02_choi_2020/README.md#figure-gallery) | Deposited in vivo and organoid state maps, with links to specificity and chromatin analyses |
@@ -157,7 +157,7 @@ The [structure and label contract](docs/REPOSITORY_STRUCTURE.md) defines
 canonical question, figure, script and paper-record locations.
 
 ```
-RESEARCH_QUESTIONS.md        the hypotheses by question; phenotypes; specified follow-up analyses
+RESEARCH_QUESTIONS.md        biological hypotheses, evidence, tests and execution readiness
 CLAIMS.md                    claims register: evidence, status, potential; counts in analysis/claims/
 NEGATIVE_RESULTS.md          generated from the register: refuted, retracted, unestablished
 FINDINGS.md                  the original two-series analysis with figures

@@ -9,6 +9,14 @@ are in [STUDY_MAP.md](STUDY_MAP.md) and [metadata](metadata/README.md).
 
 ## Question and possible answers
 
+Current biological framing: [canonical A1](../../RESEARCH_QUESTIONS.md#a1).
+The working hypothesis is that RNA-similar transitional states have regulatory
+features that help distinguish their responses or outcomes. Compare the shared
+continuum, regulatory-branch and distinct-route alternatives below. This framing
+does not assert an already established epigenetic taxonomy or temporal closure.
+The first-batch contracts and results retain their original scope; stronger
+endpoint/temporal tests require their own linked design and eligible inputs.
+
 Which chromatin programmes distinguish transitional alveolar epithelial
 states beyond overlapping RNA markers, and which distinctions agree with
 lineage history, protein phenotype, tissue position or perturbation response?

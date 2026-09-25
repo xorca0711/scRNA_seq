@@ -1,5 +1,12 @@
 # Plan to restructure the research questions
 
+**Implementation update, 25 September 2026:** the owner subsequently requested
+the actual rewrite. See the [current register](../RESEARCH_QUESTIONS.md),
+[measurement contracts](RQ_MEASUREMENT_CONTRACTS.md) and
+[implementation record](migrations/2026-09-25-rq-reframing/README.md). All A1–A14
+remain, without a four-question cap. The dated text below is the historical
+planning proposal; its grouping recommendations are not the current register.
+
 25 September 2026. **Review draft; no new analysis launched and no question or
 claim status changed.** Based on the owner's `RQ_FRAMING_PROPOSAL.md`, the current
 question/claim registers, source tables and figure-generator code. PRs #66 and

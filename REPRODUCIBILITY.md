@@ -214,10 +214,19 @@ so the scientific claims remain auditable without recomputing the analysis.
 
 ## Shared research-question figures
 
-[Questions A1–A14](RESEARCH_QUESTIONS.md) are the canonical register. Scripts
-16 and 18 produce the earlier shared figures; scripts 19–21 prepare, render
-and validate the IL-1 context package. See its
+[Questions A1–A14](RESEARCH_QUESTIONS.md) are the authored canonical register;
+[measurement contracts](docs/RQ_MEASUREMENT_CONTRACTS.md) index the relevant
+design checks. The [shared gallery](analysis/figures/rq/README.md) owns curated
+captions and distinguishes observations, diagnostics and proposed designs.
+Script 16 renders A1/A3/A4/A5 with explicit selection, for example
+`python analysis/scripts/16_research_question_figures.py --figures A3 --replot`.
+Cache-only mode refuses missing/invalid caches; outputs and panel facts go into
+a fresh `analysis/figures/rq/renders/<run>/` without changing authored documents
+or old records. `--rebuild-embeddings` is an explicit separate mode. Script 18
+owns current A2 and A6–A9; script 16's A2 is retired from the active gallery.
+Scripts 19–21 prepare, render and validate the IL-1 context package. See its
 [methods, commands and preserved provenance](analysis/figures/rq/il1b_context/REPORT.md).
-Rendering uses tracked tables. Full preparation and input-hash validation
+The IL-1 package renders tracked tables; script 16 also uses local display caches
+and source objects. Full preparation and input-hash validation
 require ignored source caches; relocation did not rerun embeddings or inference.
 Paper-specific release validation covers the 17 Yu study figures separately.

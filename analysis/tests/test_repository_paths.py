@@ -8,9 +8,19 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from analysis.lib.repository_paths import MANIFEST, recorded_file, resolve_repo_path
+from analysis.scripts.validate_repository import heading_slugs
 
 
 class RepositoryPathTests(unittest.TestCase):
+    def test_explicit_question_anchors_survive_heading_rewrites(self):
+        text = '<a id="a1"></a>\n<a name="old-question"></a>\n### A1. New biological question\n'
+        slugs = heading_slugs(text)
+        self.assertIn('a1', slugs)
+        self.assertIn('old-question', slugs)
+        self.assertIn('a1-new-biological-question', slugs)
+        self.assertNotIn('not-present', slugs)
+        self.assertNotIn('example', heading_slugs('```html\n<a id="example"></a>\n```'))
+
     def test_old_windows_and_posix_paths_resolve(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
