@@ -32,7 +32,15 @@ Do not fit a new count model from selected lists. Unsent requests are in
 `reports/SOURCE_REQUEST_DRAFTS.md`. No explicit author-contact authorization.
 Keep Notion concise English without critique/plans. Preserve earlier output bytes.
 
-## Parallel work stream: A5 and A11
+## A5/A11 current amendment
+
+The owner now authorized revisions and execution after review. Read shared
+`BIOLOGICAL_LOGIC.md` and child `PLAN.md`; they supersede the old owner-hold
+and independence wording below. A5 uses external Guo 99/57/53-gene modules and
+activated AT2 at 500 UMI, days 2–21. A11 requires original discovery TMM
+normalization scope for reproduction. Preserve old output bytes.
+
+## Historical parallel work stream: A5 and A11
 
 Folders `RQ_Specified/A5_A11_shared_component_contract/` (complete, merged in PR #72,
 modules retained), `RQ_Specified/A11_lesion_programme_addition/` and

@@ -3,8 +3,8 @@
 25 September 2026. **Pre-registered; not scored.** The owner chose this design at
 stage 4 of the [shared component contract](../A5_A11_shared_component_contract/README.md)
 (DEVELOPMENT decision 37). The machine-readable version is
-[`config/kim2020_test_contract.json`](config/kim2020_test_contract.json). Scoring
-waits for the owner to retain this plan.
+[`config/kim2020_test_contract.json`](config/kim2020_test_contract.json). The owner now authorized revisions and execution after review. This amendment
+is committed before new scores. See the shared [biological rationale](../A5_A11_shared_component_contract/BIOLOGICAL_LOGIC.md).
 
 ## The question
 
@@ -48,14 +48,10 @@ scored with any module in this plan.
 This differs from the discovery, and the difference matters. The discovery used
 atlas-mapped type 2-like cells in both arms, which in lesions included lesional
 cells that resemble type 2. Here the lesion arm is all tumour epithelium. So this
-is a stricter transport test: a positive result survives a change of cell
-definition, and a negative one may reflect that change. The author annotation has
+is a changed population contrast, not automatically a stricter test. Either
+direction may partly reflect different cellular composition. The author annotation has
 no copy-number malignancy label, so the lesion arm may also include some
 non-malignant epithelium.
-
-If the owner prefers the discovery's own cell definition, the alternative is to
-rerun its atlas mapping on Kim before any scoring. That costs a reference-mapping
-run and changes nothing else in this plan.
 
 ## Eligibility
 
@@ -85,37 +81,64 @@ per-patient differences for this module from the cached discovery pseudobulks,
 within 1e-6, under both the broad and the narrower type 2 labels. If it cannot, Kim
 is not scored and the discrepancy is reported.
 
+For this check reproduce the original normalization scope: all retained
+patient/histology units within each label/floor view, including histologies outside
+the final LUAD-normal contrast. The original R script normalizes these together
+before forming the 23 paired differences. Use its original human gene membership
+for discovery; Kim has its own gene-index coverage. Hash inputs and record versions.
+
 ## Primary test
 
 | Item | Choice |
 |---|---|
 | Module | lesion-specific, 91 mouse genes |
-| Estimand | mean within-patient difference, lesion minus normal type 2 |
+| Estimand | Location shift / pseudomedian of paired differences, lesion minus normal type 2 |
 | Test | exact two-sided Wilcoxon signed-rank, alpha 0.05 |
 | Estimate | Hodges-Lehmann with exact 95 percent interval |
-| Sensitivity | paired t 95 percent interval |
+| Mean sensitivity | arithmetic mean and paired t 95 percent interval, a different estimand |
 | Smallest effect of interest | 0.10 log2 CPM, about a third of the discovery mean |
 
-Decision rules, fixed now:
+Signed-rank location inference assumes independent patients and a symmetric
+distribution of paired differences. The Hodges–Lehmann estimator targets the
+pseudomedian, not generally the arithmetic mean. See the
+[R documentation](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/wilcox.test.html).
+If zeros/ties or interval failure prevent the installed implementation from giving
+exact inference, report it unavailable; do not promote an approximate fallback.
 
-- **Transports** if p is below 0.05 and the estimate is above zero.
-- **Contradicts** if p is below 0.05 and the estimate is below zero.
-- **Precisely absent** if the upper bound of the exact interval is below 0.10. This
-  retires the specified addition only, not every lesion programme.
-- **Inconclusive** otherwise.
+The old overlapping categories are replaced by **two separate axes**:
+
+- Direction: positive if exact p < 0.05 and HL > 0, negative if p < 0.05 and HL < 0,
+  otherwise unresolved. Failed exact inference is unavailable.
+- Magnitude: meaningful positive shift supported if exact CI lower > 0.10;
+  positive shift of 0.10 ruled out if exact CI upper < 0.10; otherwise unresolved.
+  An unavailable interval gives unavailable magnitude inference.
+
+A small positive effect can have a supported direction while falling below the
+planning margin without contradictory labels. The 0.10 margin is pragmatic and
+based on discovery, not clinically validated. Ruling out this positive margin
+is not two-sided equivalence to zero and does not retire all lesion programmes.
 
 ## Secondary tests
 
 One family, Benjamini-Hochberg at q below 0.05, same test as the primary:
 
 1. **Beyond shared.** Each patient's lesion-specific difference minus their
-   shared-remodelling difference. This is the literal form of "adds to a shared
-   component".
+   shared-remodelling difference. This is relative expression activation, not
+   conditional adjustment, independent mechanism or incremental prediction.
 2. **Stress excluded.** The lesion-specific module with every gene of the three
    Hallmark control sets removed. Nineteen of its 91 genes sit in those sets,
-   leaving 72, so a rise driven only by stress would fail here.
+   leaving 72. This addresses those memberships, not every stress/cycling
+   response; a smaller module also has less sensitivity.
 3. **Injury-lesion pair.** The seven-gene component shared by injury and lesions,
    five of them human-mappable.
+
+An unavailable secondary enters the fixed three-test BH family as p=1 and is
+marked unavailable. A positive primary means replicated lesion association.
+Positive primary plus positive BH-significant beyond-shared and stress-excluded
+results supports relative activation exceeding the nominated shared score and
+surviving those exclusions. If the shared score decreases, do not describe this
+as two co-activated programmes. None of these tests establishes specificity to
+neoplasia without a non-neoplastic injury comparator.
 
 Reported without a test: the shared module; type 1 and type 2 identity axes; the
 three Hallmark axes; the leave-one-patient-out range of the primary; and the primary
@@ -133,23 +156,24 @@ From a logged calculation using only the discovery's tracked differences:
 So even if the discovery effect transports in full, this test is close to a coin
 flip. First estimates are often inflated, and at half the effect the chance is
 about one in six. A null result will therefore be inconclusive unless the
-precise-absence rule is met, which is unlikely with eight patients. A positive
-result would be meaningful precisely because the test is hard to pass.
+positive-margin interval resolves magnitude. These are normal-location-model
+planning numbers, not guaranteed power. A significant result is not inherently
+more credible because power is low.
 
 ## What this cannot show
 
-- A null is not a refutation unless the precise-absence rule is met.
+- Unresolved direction is not refutation; the magnitude margin is not equivalence to zero.
 - Tumour epithelium is not confirmed malignant.
 - Same-patient pairing controls the donor, not stage, smoking or driver mutation,
   which all vary across these patients.
-- A positive result supports transport of this one addition. It does not show that
-  no other lesion programme exists.
+- A positive primary supports lesion association in this defined population.
+  Relative activation requires secondary evidence; neoplasia specificity is untested.
 
 ## Order of work
 
 1. This plan and its contract are committed before the gates run.
 2. The eligibility gates run and their tables are committed.
-3. The owner retains or revises this plan.
+3. The owner authorized revision and execution; commit the amended plan before new scores.
 4. Only then does scoring run, and its first step is the instrument check.
 
 ## Gate outcome
@@ -166,7 +190,7 @@ labels only. Kim's gene index holds 29,634 genes.
 
 Every identity and control axis also passes. For gate 2, eight patients meet the
 50-cell floor in both arms, as the metadata indicated; P0008 and P0009 fall short on
-tumour epithelium. The test is eligible to run once the owner retains this plan.
+tumour epithelium. The test is eligible; owner-authorized scoring first requires the instrument check.
 
 ## Correction made before scoring
 
@@ -179,3 +203,15 @@ first power output is preserved under `tables/superseded_power_label_AT2/`.
 
 This was corrected before any Kim score existed. The Kim populations, test,
 margin and decision rules did not change.
+
+
+## Current amendment before scoring
+
+The owner requested proceeding with review revisions and biological rationale.
+The amendments align the estimand with Wilcoxon, separate direction/magnitude,
+correct the population interpretation and narrow the biological claim. Module
+membership, populations, test, margin, secondary family and original gate outputs
+are retained. The 23-patient result remains discovery. Descriptive patient omissions
+use already-normalized paired scores and do not constitute new tests or a separately
+renormalized analysis. No favorable subtype or alternative test is selected after
+viewing Kim.

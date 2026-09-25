@@ -68,21 +68,21 @@ old RIKEN symbols that cost coverage elsewhere.
 | Shared remodelling | 12 | 12 |
 | Development and injury pair | 5 | 5 |
 
-## Circularity
+## Provenance correction after review, before scoring
 
-The adult injury list in the contract came from this same study. That makes the
-choice of module decisive.
+The original audit called the development-specific module non-circular and left
+its Strunz experiment provenance open. This is superseded. The cached author
+supplement description (`41467_2020_17358_MOESM3_ESM.pdf`) explicitly assigns
+Supplementary Data 3 to the high-resolution epithelial dataset. The contract uses
+that workbook's `cell_types_2` sheet for injury and identity markers.
 
-- **The development-specific genes are not circular here.** They come from the Guo
-  list and were never selected in this study's data.
-- **That test is conservative.** Building the development-specific module removed
-  the developmental genes that were among this study's top 400 transitional markers,
-  so the module has already lost the genes most likely to separate these cells.
-- **The development-injury pair may be circular here.** Its five genes were selected
-  as transitional markers by this study. Whether that selection used this
-  high-resolution series or the separate whole-lung experiment is not yet
-  established; the published list is named only as a supplementary sheet. If it
-  used the whole-lung mice, these 36 mice are independent of it.
+The five shared genes were positively selected in this cohort. The 94-gene module
+and 51-gene identity-excluded variant were negatively filtered using the same
+cohort. Negative filtering can be conservative but is not independent selection.
+The revised [plan](PLAN.md) uses Guo's external 99-gene module, Guo-only identity
+exclusions (57 genes), and external control exclusions (53 genes). Old modules
+remain descriptive. Strunz's discussion already reports poor correspondence with
+Guo's developmental signature; this prior analysis now informs the test.
 
 ## Identity is the main rival
 
@@ -92,7 +92,7 @@ simply reflect type 1-directed identity, which is the rival the contract already
 found in the development-injury pair. The 51-gene version without identity genes
 is fully covered and should be the primary module or at least a declared secondary.
 
-## Design choices the A5 plan must fix before scoring
+## Historical design choices, now fixed in PLAN.md
 
 1. **The reference population.** The authors split type 2 cells into resting and
    activated. Activated type 2 cells respond to injury themselves, so the choice
@@ -110,10 +110,9 @@ as day 14, with sample names beginning NC, in the cell table. They are probably
 PBS controls harvested at day 14. The within-mouse contrast does not use them, so
 the conflict does not affect A5. It is recorded rather than resolved.
 
-## Verdict
+## Revised verdict
 
-The Strunz high-resolution time course is a feasible A5 cohort. It has 26
-independent injured mice meeting the cell floors, full gene coverage, and a
-development-specific module that is not circular in this data. Before scoring, A5
-needs its own pre-registration fixing the four choices above, and one provenance
-question remains open: which Strunz dataset produced the transitional marker list.
+A feasible source-defined signature test, with 26 mice for resting AT2 and 24
+for activated AT2 before depth filtering. The primary now uses activated AT2 and
+independently sourced gene selection. The [plan](PLAN.md) fixes depth, time,
+reference, identity/control handling and inferential limits before new counts.

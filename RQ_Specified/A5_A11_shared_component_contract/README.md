@@ -8,13 +8,14 @@ work continues in [A5's folder](../A5_developmental_programme_reuse/README.md) a
 [stage 1 source audit](reports/STAGE1_SOURCE_AUDIT.md). No expression score was
 computed here and no claim grade changes.
 
-- **A11 is eligible for its test.** Its modules clear both gates in the human
-  lesion cohort, with 23 paired patients for the main contrast.
-- **A5 is not eligible for confirmation.** Its modules are well covered, but no
-  local dataset holds independent neonatal animals.
-- **The shared module is two unrelated overlaps.** Development shares 5 genes with
-  adult injury, adult injury shares 7 with lesions, and development shares none with
-  lesions. At list level there is no single baseline serving both questions.
+Start with [the biological logic and revised analysis sequence](BIOLOGICAL_LOGIC.md).
+
+- **A11:** eight eligible Kim patient pairs; the original 23 are discovery.
+  Its amended plan separates lesion association from relative activation.
+- **A5:** an external Guo gene set avoids Strunz-derived filtering for the primary
+  test. The old 94/51-gene variants remain descriptive in Strunz.
+- **Shared:** 5 development–injury and 7 injury–lesion genes, with no three-way
+  intersection. Biological unrelatedness is not established by limited overlap.
 
 ## What this is
 

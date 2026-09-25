@@ -3,6 +3,20 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
+## Current: A5/A11 biological rationale and test revisions, 25 September 2026
+
+Branch `codex/a5-a11-biological-tests`. The owner authorized revision and execution
+following the review, and requested biological rationale. Read shared
+`BIOLOGICAL_LOGIC.md`, A5 `PLAN.md` and amended A11 `PLAN.md`.
+
+A5 uses external Guo 99/57/53-gene definitions. Strunz Supplementary Data 3
+comes from the test cohort; the old 94/51-gene variants are descriptive there.
+A11 corrects its estimand, outcome categories and claim hierarchy. Commit before
+scores. Next: A11 instrument reproduction, then fixed A5 depth/unit gates and
+both analyses, with all outcomes reported.
+
+### Historical handoff (superseded where noted)
+
 ## Parallel work stream: A5 and A11 after the contract, 25 September 2026
 
 Branch `Claude/stage4-decisions`, in the separate worktree at

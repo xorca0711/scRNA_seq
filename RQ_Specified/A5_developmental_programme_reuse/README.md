@@ -1,36 +1,20 @@
-# A5: developmental programme reuse in adult repair
+# A5: developmental-gene recruitment in adult repair
 
-Question-specific work for [A5](../../RESEARCH_QUESTIONS.md#a5). The canonical
-hypothesis stays in the register.
+Read the [biological rationale](../A5_A11_shared_component_contract/BIOLOGICAL_LOGIC.md)
+and [prospective plan](PLAN.md). The owner authorized revisions and execution.
 
-**Status: cohort audited; no A5 plan or score yet.** Read the
-[data audit](DATA_AUDIT.md).
+The primary compares an external Guo 99-gene signature in transitional versus
+activated AT2 cells of the same injured mouse. External identity exclusions leave
+57 genes, then stress/cycling exclusions leave 53. These address distinct rivals.
+The original Strunz-filtered 94/51-gene variants remain descriptive.
 
-## Where A5 stands
+Metadata gives 24 primary-reference candidate mice (26 for resting AT2), before
+500-UMI depth filtering. The test uses days 2–21 and at least 30 cells per arm.
+See [the corrected cohort audit](DATA_AUDIT.md).
 
-- **The developmental list exists.** The
-  [shared component contract](../A5_A11_shared_component_contract/README.md) sourced
-  it and froze a 94-gene development-specific module, which the owner retained.
-- **Neonatal animals are no longer required.** With an outside developmental list,
-  reuse can be tested inside adult injury, comparing transitional and type 2 cells
-  of the same mouse.
-- **A replicated cohort exists.** The Strunz 2020 time course has 26 independent
-  injured mice meeting the cell floors, with full gene coverage, and the
-  development-specific genes were never selected in its data.
-- **The main rival is identity.** Forty-three of the 94 genes are type 1 or type 2
-  identity genes, so the plan must separate reuse from type 1-directed identity.
+- `config/strunz_test_contract.json`: fixed design.
+- `tables/external_test_modules.json`: additional source-defined modules.
+- `scripts/02_freeze_external_test.py`: source freeze, no counts.
+- `tables/external_freeze_run.json`: provenance and hashes.
 
-## Next
-
-Write A5's pre-registration, fixing the reference population, identity handling,
-depth budget and time window, then fetch the 76 MB count matrix and score. None of
-that has started.
-
-## Layout
-
-| Path | Contents |
-|---|---|
-| [DATA_AUDIT.md](DATA_AUDIT.md) | Cohort audit: units, coverage, circularity, rivals and open items |
-| `scripts/01_audit_strunz_units.py` | The audit, from cell labels and gene names only |
-| `tables/` | Per-mouse cell counts, module coverage and the run record |
-| `cache/` | The two fetched metadata files; ignored, hashes recorded in the script |
+Original audit outputs remain in `tables/`; new results use `tables/test_v1/`.

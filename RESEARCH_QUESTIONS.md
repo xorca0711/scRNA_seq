@@ -253,10 +253,12 @@ hypothesis. Poor animal coverage is inconclusive. With an outside developmental
 list, reuse can be tested inside adult injury, comparing transitional and type 2
 cells of the same mouse, so neonatal units are no longer required. The
 [Strunz 2020 audit](RQ_Specified/A5_developmental_programme_reuse/DATA_AUDIT.md)
-finds 26 independent injured mice meeting the cell floors, with full gene coverage,
-and the development-specific genes were never selected in that data. Next is A5's
-own pre-registration, fixing the reference population, identity handling, depth
-and time window; no A5 score exists.
+finds 26 candidate mice against resting AT2 and 24 against activated AT2, before
+depth filtering. The injury and identity lists used for contract filtering come
+from this same Strunz experiment. The revised [A5 plan](RQ_Specified/A5_developmental_programme_reuse/PLAN.md)
+therefore tests external Guo 99/57/53-gene modules using activated AT2 as primary
+reference. Old 94/51-gene variants remain descriptive. Strunz's prior poor
+developmental correspondence is explicit counterevidence.
 [Current figures](analysis/figures/rq/README.md#a5) motivate animal-level
 shared-versus-specific effects and held-out evaluation.
 [MC1–MC2](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1), [MC5](docs/RQ_MEASUREMENT_CONTRACTS.md#mc5).
@@ -440,8 +442,11 @@ cancer-specific biology. Independent evaluation is now
 2020 cohort: ten tumour-normal pairs verified from the deposit's patient
 identifiers, never scored with these modules. Both eligibility gates pass, with
 eight patients meeting the cell floor. At the discovery effect the exact test has
-about 0.47 power, so a null will be inconclusive unless the pre-declared
-precise-absence rule is met. Scoring waits for the owner to retain the plan. [Current PCA/paired panels](analysis/figures/rq/README.md#a11)
+about 0.47 power under its planning model. The amended plan aligns the location
+estimand with Wilcoxon and separates direction from a 0.10 positive-magnitude
+margin. Primary positivity supports lesion association; relative activation
+requires secondary evidence, and neoplasia specificity remains untested. The
+owner authorized revisions and execution. [Current PCA/paired panels](analysis/figures/rq/README.md#a11)
 motivate disjoint-component heatmaps and held-out patient effects.
 [MC1](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1), [MC3](docs/RQ_MEASUREMENT_CONTRACTS.md#mc3),
 [MC5](docs/RQ_MEASUREMENT_CONTRACTS.md#mc5).
