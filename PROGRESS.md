@@ -5,10 +5,22 @@ to know to continue. Update this before stopping.
 
 ## Current status, 25 September 2026
 
+**Current task: RQ reframing, before further analysis.** The owner merged PR #67
+and requested a substantial review using their `RQ_FRAMING_PROPOSAL.md`.
+The [restructuring plan](docs/RQ_REFRAMING_PLAN.md) now explicitly foregrounds
+the project's own biological observations and hypotheses. Following the owner's
+clarification, four worked cards are examples of possible priorities, not a
+survival limit. A broader hypothesis inventory precedes final grouping, with a
+complete A-ID crosswalk and separate measurement contracts. The plan also
+identifies propositions that exceed the existing evidence and confirms script
+16's caption-ownership drift. This is a review draft on `codex/rq-framing-plan`;
+the canonical RQ register, claim statuses and numerical outputs are unchanged.
+No further analysis was launched. Resume after the framing decision, with the
+A10 outcome-data join and compatible A1 direct-mark inputs as proposed priorities.
+
 Folder migration: `Thesis/` is now `Research Article/`; question-specific work
-starts under [RQ_Specified](RQ_Specified/README.md). The structure PR establishes
-the A1 workspace in PR #66; its expanded analysis specification is on the separate
-`codex/a1-state-distinction-plan` branch. No
+starts under [RQ_Specified](RQ_Specified/README.md). The structure PR #66 and the
+A1 specification/first-batch PR #67 are merged. No
 scientific analysis was rerun for this migration. Historical records retain
 their original paths and hashes; see the [migration record](docs/migrations/2026-09-25-research-layout/README.md).
 

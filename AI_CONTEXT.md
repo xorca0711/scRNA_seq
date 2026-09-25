@@ -7,15 +7,36 @@ violated. Human-readable counterparts: [`README.md`](README.md) (overview),
 (AI-assisted development disclosure and scientific ownership),
 [`PROGRESS.md`](PROGRESS.md) (session state).
 
+## Current task: research-question reframing
+
+The owner merged PR #67 and requested a plan to substantially revise the A-series
+before proceeding with remaining analysis. Read `docs/RQ_REFRAMING_PLAN.md`.
+It is a proposal, not an adopted replacement register; preserve existing IDs,
+claim statuses, figures and numerical records until implementation is requested.
+The owner emphasized ownership of biological hypotheses and challenged the
+apparent four-question limit. Four cards are now illustrative priorities, not
+the only surviving RQs. Inventory distinct biological hypotheses before grouping;
+foreground observed biology and its proposed interpretation, with support graded
+separately from execution readiness and technical prerequisites.
+The current planning branch is `codex/rq-framing-plan`. No new fits are authorized
+by this planning turn. A new biological proposition cannot inherit the status of
+a differently worded historical claim, even when it cites the same observation.
+
+Script 16's caption writer is inconsistent with the current register: its
+implicit missing-block insertion can restore the superseded A2 figure, and its
+other caption wording is stale. The older generated-block rule below describes
+intended ownership, not a verified current correspondence. Do not rerun script
+16 to fix titles before resolving ownership as specified in the reframing plan.
+
 ## Current repository layout
 
 Paper studies: `Research Article/` (renamed from `Thesis/` on 2026-09-25).
 Question-specific plans and workflows: `RQ_Specified/`. Keep the root
 `RESEARCH_QUESTIONS.md` as the single question register. Quote directory names
 with spaces. Use `analysis/lib/repository_paths.py` to resolve historical paths;
-never rewrite old run identities to imply a new analysis. Folder PR #66 contains
-the A1 workspace skeleton only. The expanded specification lives separately on
-`codex/a1-state-distinction-plan`, under `RQ_Specified/`. Its 30 GEO extracts are
+never rewrite old run identities to imply a new analysis. Folder PR #66 and the
+expanded A1 specification/first batch in PR #67 are merged. The work lives under
+`RQ_Specified/`. Its 30 GEO extracts are
 catalog evidence; only individually verified manifests support sample-level fits.
 The owner authorized the revised first batch on 25 September 2026. PATS source
 endpoints, GSE190821 ten-mouse RNA, two descriptive PCAs and the histone-input
