@@ -32,13 +32,38 @@ Do not fit a new count model from selected lists. Unsent requests are in
 `reports/SOURCE_REQUEST_DRAFTS.md`. No explicit author-contact authorization.
 Keep Notion concise English without critique/plans. Preserve earlier output bytes.
 
-## Parallel work stream: A5 and A11 shared component contract
+## Parallel work stream: A5 and A11
 
-Folder `RQ_Specified/A5_A11_shared_component_contract/`, branch
-`Claude/shared-component-contract`. Stages 1 to 3 are complete and stage 4 is the
-owner's decision. Read `reports/STAGE2_3_REPORT.md` first.
+Folders `RQ_Specified/A5_A11_shared_component_contract/` (complete, merged in PR #72,
+modules retained), `RQ_Specified/A11_lesion_programme_addition/` and
+`RQ_Specified/A5_developmental_programme_reuse/`. Branch `Claude/stage4-decisions`.
+Read the A11 `PLAN.md` and the A5 `DATA_AUDIT.md` first.
 
-Rules that must not be violated here:
+A11 rules:
+
+- The Kim 2020 test is pre-registered (`e6b9dc9`) and its gates ran on those exact
+  bytes (`2cdc5dc`). Do not score Kim until the owner retains the plan. Kim is the
+  only independent A11 cohort held locally; a scored cohort cannot be un-seen.
+- The scoring script must first reproduce the discovery's tracked per-patient
+  differences from the cached discovery pseudobulks, under the broad and the
+  narrower type 2 labels, using the edgeR procedure of `u5_human_paired_pathways.R`.
+  If it cannot, it stops.
+- The discovery reference is the broad type 2 compartment (0.327), the discovery
+  run's own primary. The narrower label (0.323) is a sensitivity. Never re-score the
+  23-patient cohort as if it were an evaluation.
+- Eight patients are eligible; P0008 and P0009 were excluded by the inherited
+  50-cell floor before any score.
+
+A5 rules:
+
+- Reuse is tested inside adult injury, transitional versus type 2 cells of the same
+  mouse; neonatal units are not required with the outside developmental list.
+- The Strunz 2020 time course is the audited cohort: 26 eligible injured mice. Write
+  A5's pre-registration before fetching its 76 MB count matrix.
+- Identity is the leading rival: 43 of the 94 development-specific genes are
+  identity genes. The development-injury pair may be circular in Strunz data.
+
+Contract rules that still apply:
 
 - The partition rule was committed before the freeze and the freeze read those
   exact bytes. Do not edit `partition_rule` in the specification and rerun; a new
@@ -54,8 +79,8 @@ Rules that must not be violated here:
   pooled multiome libraries as biological replicates for A5.
 - The shared module is two disjoint pairwise overlaps. Do not describe it as one
   programme spanning development, injury and neoplasia.
-- The register cards for A5 and A11 were deliberately not edited; that is the
-  owner's call.
+- The owner chose to update the A5 and A11 register cards at stage 4; further card
+  changes still follow the owner's review.
 
 ## Previous milestone: A1 adaptive evidence closure
 

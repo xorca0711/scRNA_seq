@@ -1,0 +1,61 @@
+{
+  "purpose": "eligibility gates for the pre-registered Kim 2020 test; no module score computed",
+  "completed_utc": "2026-09-25T11:14:50.455265+00:00",
+  "script": "RQ_Specified/A11_lesion_programme_addition/scripts/01_eligibility_gates.py",
+  "script_sha256": "198c975523b697bcb5142d53c0a3563969d3e412dad1afe077bf13cdcd7b9d21",
+  "config_sha256": "97ba40e3b2188307703b83944d5d710200d0f68c81230c60a7c6566878e504c6",
+  "data_root": "X:/GitHub/scRNA_seq",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "pandas": "2.3.3",
+  "inputs": {
+    "X:/GitHub/scRNA_seq/raw_data/GSE131907/GSE131907_Lung_Cancer_Feature_Summary.xlsx": {
+      "bytes": 19500,
+      "sha256": "27bec6d22d2658e5cccab2bdd463e7b4e4ba342f795bdeb07fdb3f68084ff8e4"
+    },
+    "X:/GitHub/scRNA_seq/raw_data/GSE131907/GSE131907_Lung_Cancer_cell_annotation.txt.gz": {
+      "bytes": 1886187,
+      "sha256": "9d017652a31a489c1f62cacc436936d48a5b07bb554fc0dbe602da7474532205"
+    },
+    "X:/GitHub/scRNA_seq/raw_data/GSE131907/GSE131907_Lung_Cancer_raw_UMI_matrix.txt.gz": {
+      "bytes": 408736818,
+      "sha256": "b44a9c6635d0b59ec66b5eb6b40b40e7292c3a75aaf8afc4f933eb0550a26372"
+    }
+  },
+  "tracked_inputs": {
+    "RQ_Specified/A5_A11_shared_component_contract/tables/frozen_modules.json": "059f72c07b5c35cb597c219e87606249c814712d238fd2a75724a91761913bcc",
+    "RQ_Specified/A5_A11_shared_component_contract/tables/module_membership.tsv": "4531c91bc67848faf87ad7644a6e950cdd16ecc0f2e3d2e90b994e76d875d704",
+    "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u4_resources/strict_one_to_one_orthologs.csv": "d2a5bc6e2a11f685afeeb214dc7fade9f7aaafa0036cc364d2c28a89ca83df87",
+    "Research Article/epithelial_state_specificity/modules.json": "64ceac751679f6dcbc5be48cbee7a6ea4bba17ad39ff1ba2eebfdd575f78e12d",
+    "RQ_Specified/A11_lesion_programme_addition/config/kim2020_test_contract.json": "97ba40e3b2188307703b83944d5d710200d0f68c81230c60a7c6566878e504c6"
+  },
+  "kim_gene_index": {
+    "n_genes": 29634,
+    "sorted_names_sha256": "dab7040ba270fcaab40a47b2a6f9fca91bf03dc2d299206a6c10673ca50b62e4"
+  },
+  "gate1_primary": "pass",
+  "gate1_primary_fraction": 0.8022,
+  "gate2": {
+    "eligible_patients": [
+      "P0006",
+      "P0018",
+      "P0019",
+      "P0020",
+      "P0028",
+      "P0030",
+      "P0031",
+      "P0034"
+    ],
+    "n_eligible": 8,
+    "cell_floor": 50,
+    "unit_floor": 3,
+    "verdict": "pass"
+  },
+  "counts_used": false,
+  "outputs": {
+    "kim_pairing.tsv": "af63aab1d692f2dcfbd05773aeaa9761cd36db5396d6ea3a28594ac8b70e821d",
+    "kim_cell_counts.tsv": "e8756e8b1d2cc02c9e36e7fee78d50ea61bafb5c76ce7791ae039c2e7565c81c",
+    "gate1_coverage.tsv": "f6ecb447efe3b64cc7d865ac03897610ec38548d509ec454ef9e814db4754e2b",
+    "derived_modules.json": "8c1a4ab7f6a1eed4b16f4261efa079c0db2e3ceecddaa69ee926b3f28cbf3b76"
+  }
+}

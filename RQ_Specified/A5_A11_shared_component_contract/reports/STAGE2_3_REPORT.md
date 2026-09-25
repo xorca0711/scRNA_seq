@@ -186,6 +186,12 @@ matters because any A5 scoring of that cohort would reuse the same object.
 
 ## Stage 4: decisions for the owner
 
+**Outcome, 25 September 2026.** The owner chose the recommended option in each
+question: retain the frozen modules; pre-register A11's test in the Kim 2020 cohort
+and run only its eligibility gates first; audit a replicated adult injury time
+course for A5; update both register cards. DEVELOPMENT decision 37 records this.
+The list below is kept as it was proposed.
+
 The contract stops here. These are proposals, and none has run.
 
 1. **Retain or reject the frozen modules.** If retained, they become the fixed

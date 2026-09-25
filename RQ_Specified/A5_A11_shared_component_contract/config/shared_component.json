@@ -1,12 +1,12 @@
 {
   "schema": "shared-component-contract/v1",
   "drafted": "2026-09-25",
-  "status": "stages_1_to_3_complete_awaiting_owner_decision",
+  "status": "complete_modules_retained",
   "executed": {
     "stage_1": "source selected; reports/STAGE1_SOURCE_AUDIT.md",
     "stage_2": "modules frozen; tables/frozen_modules.json and tables/freeze_run.json",
     "stage_3": "eligibility reported; tables/coverage_gate.tsv, tables/unit_floor.tsv and tables/coverage_run.json",
-    "stage_4": "not reached; awaits the owner's retain or reject"
+    "stage_4": "owner retained the frozen modules on 2026-09-25; DEVELOPMENT decision 37"
   },
   "note": "Membership fields below remain null in this file by design. The freeze script wrote membership to tables/frozen_modules.json and refuses to overwrite it. This file holds the decisions; the tables hold the results.",
   "preregistration": {

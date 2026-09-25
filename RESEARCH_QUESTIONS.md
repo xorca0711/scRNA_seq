@@ -41,13 +41,13 @@ recovery endpoint, and population persistence does not trace the same cells.
 | [A2](#a2) | Functional AREG source contributions vary with context | Source RNA distributions; dominance unresolved | Conditional; source perturbation with receiver endpoint needed |
 | [A3](#a3) | Injury leaves a macrophage programme beyond normal aging | Late population composition | Age-matched controls and comparable sampling needed |
 | [A4](#a4) | Wnt maintenance and IL-1 response occur sequentially in an AT2 lineage | Transcript/source observations; sequence untested | Measured activity/history and lineage-linked response needed |
-| [A5](#a5) | Adult repair reuses a developmental epithelial component | Neonatal coexpression and label-excluded ADI enrichment | Define components; independent confirmation held by animal coverage |
+| [A5](#a5) | Adult repair reuses a developmental epithelial component | Neonatal coexpression and label-excluded ADI enrichment; outside developmental list now sourced | Components frozen; Strunz 2020 audit finds 26 eligible injured mice; A5 pre-registration next |
 | [A6](#a6) | IPF changes shared macrophage states beyond subtype abundance | Cell fractions and RNA contributions differ | Harmonize states and audit donors before a within-state fit |
 | [A7](#a7) | Cebpa loss attenuates identity across AT2 states | Reference and transitional contrasts both change | Replicated genotype-by-state design needed |
 | [A8](#a8) | A maturation component adds information about mature AT1 contribution | Score dependence motivates separation; limited biological support | Independent mature endpoints needed |
 | [A9](#a9) | Fibroblast receptor context modifies AREG response | RNA/resource observations nominate a competence question | RNA screen possible; protein/function data needed |
 | [A10](#a10) | Epithelial programmes add information about measured organoid growth | Public RNA and imaging design | Next bounded task: verify outcome joins and independent preparations |
-| [A11](#a11) | Lesion-associated programmes add to shared plasticity | Reduced HPCS signal across repair, development, IPF and LUAD | Exploratory discovery possible; independent evaluation required |
+| [A11](#a11) | Lesion-associated programmes add to shared plasticity | Reduced HPCS signal across repair, development, IPF and LUAD | Kim 2020 test pre-registered; both gates pass with 8 paired patients; scoring awaits owner |
 | [A12](#a12) | Recipient context explains responses beyond ligand RNA | Cohort/recipient heterogeneity | Conditional component model; activation unmeasured |
 | [A13](#a13) | Fibroblast programmes add information beyond macrophage IL1B | Niche heterogeneity motivates joint association | Audit complete triads; current IPF arms below joint-model floor |
 | [A14](#a14) | Exposure duration and fibroblast reception separately affect recovery | Mechanistic follow-up to the repair/persistence question | Two decisions; withdrawal and recipient-specific data needed |
@@ -229,16 +229,34 @@ motivate reuse without equating neonatal and adult injury states. Only one of
 25 external-study animals passes both group floors. See
 [ES1](Research%20Article/epithelial_state_specificity/README.md).
 
+The [shared component contract](RQ_Specified/A5_A11_shared_component_contract/README.md)
+sourced an outside developmental list, the signature of a mixed type 1 and type 2
+population in normal lung at postnatal day 1 (Guo et al. 2019), and froze a
+94-gene development-specific module, retained by the owner. At list level the
+developmental list shares only five genes with the adult injury list, four of them
+type 1 identity genes, and none with the lesion list. List overlap is a
+conservative measure, so this does not show the programmes differ.
+
 **Rivals and test.** Generic stress, cycling, age/genotype imbalance and shared
 label genes can explain overlap. Freeze source-defined shared and context-specific
 components excluding selection genes; test effects beyond generic stress/cycling
 in independent developmental and injury contrasts. Use animals as units, retain
-genotype and validate outside the component-selection data.
+genotype and validate outside the component-selection data. Type 1-directed
+identity is now the leading rival: 43 of the 94 development-specific genes are
+type 1 or type 2 identity genes. A shared transcriptional component would also not
+imply a shared route, since neonatal injury is reported to regenerate by type 1 to
+type 2 reprogramming (Penkala et al. 2021).
 
 **Decision / readiness.** Precise failure of the nominated component to transport,
 or explanation entirely by prespecified generic programmes, weakens that reuse
-hypothesis. Poor animal coverage is inconclusive. Component definition can use
-existing tables; confirmation requires eligible independent units.
+hypothesis. Poor animal coverage is inconclusive. With an outside developmental
+list, reuse can be tested inside adult injury, comparing transitional and type 2
+cells of the same mouse, so neonatal units are no longer required. The
+[Strunz 2020 audit](RQ_Specified/A5_developmental_programme_reuse/DATA_AUDIT.md)
+finds 26 independent injured mice meeting the cell floors, with full gene coverage,
+and the development-specific genes were never selected in that data. Next is A5's
+own pre-registration, fixing the reference population, identity handling, depth
+and time window; no A5 score exists.
 [Current figures](analysis/figures/rq/README.md#a5) motivate animal-level
 shared-versus-specific effects and held-out evaluation.
 [MC1–MC2](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1), [MC5](docs/RQ_MEASUREMENT_CONTRACTS.md#mc5).
@@ -397,7 +415,16 @@ repair/development libraries, 3/3 IPF donor pairs and 19/23 LUAD paired comparis
 (mean +0.327 log2 CPM). This positively motivates shared transcriptional biology;
 it establishes neither one cell identity nor the absence of lesion-specific
 additions. The [evidence review](Research%20Article/gate2_C3_yu_lee_choi_min_2026/EVIDENCE_REVIEW.md)
-preserves each context's units and limitations.
+preserves each context's units and limitations. The 0.327 figure is the discovery
+run's broad type 2 compartment; its narrower type 2 label gives 0.323 with the same
+19 positive patients.
+
+The [shared component contract](RQ_Specified/A5_A11_shared_component_contract/README.md)
+froze a lesion-specific module that is identical, gene for gene, to this
+overlap-reduced score, so the 23-patient result is discovery and cannot also
+evaluate. At list level the adult injury programme shares seven genes with the
+lesion list, mostly stress genes such as the p53 targets Bax and Gdf15, and the
+developmental list shares none.
 
 **Rivals and test.** Generic stress, cycling, annotation and composition can
 mimic sharing or specificity. Define shared and candidate context-associated
@@ -408,8 +435,13 @@ histology groups are not longitudinal progression stages.
 
 **Decision / readiness.** An addition that transports supports that specific
 programme. Precise failure retires the nominated addition, not all possible
-cancer-specific biology. Exploratory discovery is possible; independent
-validation remains required. [Current PCA/paired panels](analysis/figures/rq/README.md#a11)
+cancer-specific biology. Independent evaluation is now
+[pre-registered](RQ_Specified/A11_lesion_programme_addition/PLAN.md) in the Kim
+2020 cohort: ten tumour-normal pairs verified from the deposit's patient
+identifiers, never scored with these modules. Both eligibility gates pass, with
+eight patients meeting the cell floor. At the discovery effect the exact test has
+about 0.47 power, so a null will be inconclusive unless the pre-declared
+precise-absence rule is met. Scoring waits for the owner to retain the plan. [Current PCA/paired panels](analysis/figures/rq/README.md#a11)
 motivate disjoint-component heatmaps and held-out patient effects.
 [MC1](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1), [MC3](docs/RQ_MEASUREMENT_CONTRACTS.md#mc3),
 [MC5](docs/RQ_MEASUREMENT_CONTRACTS.md#mc5).

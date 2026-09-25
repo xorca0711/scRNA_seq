@@ -1,9 +1,12 @@
 # Shared epithelial component contract (A5 and A11)
 
-**Status: stages 1 to 3 complete; stage 4 awaits the owner's decision.** Start
-with the [stages 2 and 3 report](reports/STAGE2_3_REPORT.md), then the
-[stage 1 source audit](reports/STAGE1_SOURCE_AUDIT.md). No expression score has
-been computed and no claim grade changes.
+**Status: complete. The owner retained the frozen modules on 25 September 2026**
+(DEVELOPMENT decision 37). They are now the fixed inputs for A5 and A11, whose own
+work continues in [A5's folder](../A5_developmental_programme_reuse/README.md) and
+[A11's folder](../A11_lesion_programme_addition/README.md). Start with the
+[stages 2 and 3 report](reports/STAGE2_3_REPORT.md), then the
+[stage 1 source audit](reports/STAGE1_SOURCE_AUDIT.md). No expression score was
+computed here and no claim grade changes.
 
 - **A11 is eligible for its test.** Its modules clear both gates in the human
   lesion cohort, with 23 paired patients for the main contrast.

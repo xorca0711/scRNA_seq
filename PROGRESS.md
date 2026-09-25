@@ -3,18 +3,38 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-## Parallel work stream: A5 and A11 shared component contract, 25 September 2026
+## Parallel work stream: A5 and A11 after the contract, 25 September 2026
 
-Branch `Claude/shared-component-contract`, drafted in a separate worktree at
-`X:/GitHub/scRNA_seq-component-contract` so the concurrent A1 evidence-closure work
-in the main checkout was not disturbed; that work has since merged as PR #73, and
-this branch has merged it in. Start with the
-[stages 2 and 3 report](RQ_Specified/A5_A11_shared_component_contract/reports/STAGE2_3_REPORT.md).
+Branch `Claude/stage4-decisions`, in the separate worktree at
+`X:/GitHub/scRNA_seq-component-contract`, because an A1 session is active in the main
+checkout. The contract merged as PR #72. At stage 4 the owner chose the recommended
+option in all four questions (decision 37). No module score exists anywhere in this
+work, and no claim grade changed.
+
+- **Contract.** Complete; the frozen modules are retained as the fixed inputs.
+- **A11.** Test [pre-registered](RQ_Specified/A11_lesion_programme_addition/PLAN.md)
+  in the Kim 2020 cohort, because the lesion module had already been scored in the
+  23-patient discovery cohort. Both gates pass with eight paired patients. Power at
+  the discovery effect is about 0.47. The discovery reference was corrected to the
+  discovery run's broad primary in a separate commit before any score.
+  **Next: the owner retains or revises the plan; only then write the scoring script,
+  whose first step reproduces the discovery values.**
+- **A5.** The [Strunz 2020 audit](RQ_Specified/A5_developmental_programme_reuse/DATA_AUDIT.md)
+  finds 26 independent injured mice meeting the cell floors and full coverage.
+  **Next: A5's own pre-registration, fixing reference population, identity handling,
+  depth and time window, then fetch the 76 MB count matrix.**
+- **Register.** The A5 and A11 cards and table rows now record these results.
+
+The cached spreadsheets and Strunz metadata live under ignored folders in the
+worktree; their hashes are tracked. Copy or rebuild them before removing it.
+
+### Earlier: the shared component contract (merged PR #72)
 
 The owner rejected A6 as the next analysis (decision 37), chose to join A5 and A11
 through a shared component contract, and authorized its execution. Stages 1 to 3
-are complete; stage 4 is the owner's retain or reject. No expression score was
-computed, and no claim grade changed.
+completed before stage 4. No expression score was computed, and no claim grade
+changed. Start with the
+[stages 2 and 3 report](RQ_Specified/A5_A11_shared_component_contract/reports/STAGE2_3_REPORT.md).
 
 - **Stage 1.** The missing developmental signature is sourced from Guo et al. 2019,
   a mixed type 1 and type 2 population in normal lung at postnatal day 1. Seven
@@ -29,11 +49,7 @@ computed, and no claim grade changed.
   independent neonatal animals. The coverage method reproduces all 33 precedent
   values; its first attempt refused to report and is preserved.
 
-Next, all for the owner: retain or reject the frozen modules; specify A11's test in
-its own plan; decide whether A5 stays descriptive or waits for independent neonatal
-animals; decide whether to update the A5 and A11 register cards, which this branch
-does not edit. The cached developmental spreadsheet is untracked; its hash is in the
-contract specification.
+Those four stage 4 decisions were made the same day; see the section above.
 
 ## Current status, 25 September 2026
 
