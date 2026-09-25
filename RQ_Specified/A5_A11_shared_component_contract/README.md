@@ -1,10 +1,17 @@
 # Shared epithelial component contract (A5 and A11)
 
-**Status: stage 1 complete, stage 2 rule pre-registered.** The owner authorized
-execution. Read the [prospective plan](PLAN.md), the
-[machine-readable specification](config/shared_component.json) and the
+**Status: stages 1 to 3 complete; stage 4 awaits the owner's decision.** Start
+with the [stages 2 and 3 report](reports/STAGE2_3_REPORT.md), then the
 [stage 1 source audit](reports/STAGE1_SOURCE_AUDIT.md). No expression score has
 been computed and no claim grade changes.
+
+- **A11 is eligible for its test.** Its modules clear both gates in the human
+  lesion cohort, with 23 paired patients for the main contrast.
+- **A5 is not eligible for confirmation.** Its modules are well covered, but no
+  local dataset holds independent neonatal animals.
+- **The shared module is two unrelated overlaps.** Development shares 5 genes with
+  adult injury, adult injury shares 7 with lesions, and development shares none with
+  lesions. At list level there is no single baseline serving both questions.
 
 ## What this is
 
@@ -43,10 +50,13 @@ the selection is partly by accessibility.
 | [config/shared_component.json](config/shared_component.json) | Reviewable specification: sources, exclusions, partition rule, gates |
 | `config/README.md` | What the specification fixes and what stays open |
 | [reports/STAGE1_SOURCE_AUDIT.md](reports/STAGE1_SOURCE_AUDIT.md) | Every candidate examined, the doublet check and the limitations |
+| [reports/STAGE2_3_REPORT.md](reports/STAGE2_3_REPORT.md) | Frozen modules, eligibility per question, limitations and stage 4 decisions |
+| [scripts/README.md](scripts/README.md) | How to rerun the freeze and the coverage report |
+| `tables/` | Frozen modules, membership, overlap, coverage, unit floors and run records |
+| [tables/stage3_attempt1_refused/](tables/stage3_attempt1_refused/README.md) | The first coverage attempt, refused by its own precedent check |
 | `sources/README.md` | Identity of the untracked cached source spreadsheet |
 
-Scripts and tables arrive with stage 2 and stage 3 and follow the
-question-specific layout in the
+The layout follows the question-specific pattern in the
 [structure contract](../../docs/REPOSITORY_STRUCTURE.md).
 
 ## Evidence this draft rests on

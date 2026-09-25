@@ -3,6 +3,37 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
+## Parallel work stream: A5 and A11 shared component contract, 25 September 2026
+
+Branch `Claude/shared-component-contract`, drafted in a separate worktree at
+`X:/GitHub/scRNA_seq-component-contract` so the concurrent A1 evidence-closure work
+in the main checkout was not disturbed. Start with the
+[stages 2 and 3 report](RQ_Specified/A5_A11_shared_component_contract/reports/STAGE2_3_REPORT.md).
+
+The owner rejected A6 as the next analysis (decision 37), chose to join A5 and A11
+through a shared component contract, and authorized its execution. Stages 1 to 3
+are complete; stage 4 is the owner's retain or reject. No expression score was
+computed, and no claim grade changed.
+
+- **Stage 1.** The missing developmental signature is sourced from Guo et al. 2019,
+  a mixed type 1 and type 2 population in normal lung at postnatal day 1. Seven
+  candidates were audited; the likely stronger Negretti 2021 is not openly
+  retrievable.
+- **Stage 2.** The partition rule was committed before any intersection, and the
+  freeze provably read those bytes. The shared module is 12 genes, but it is two
+  disjoint overlaps: 5 between development and injury, mostly type 1 identity, and
+  7 between injury and lesion, mostly stress. Development and lesion share none.
+- **Stage 3.** A11 is eligible for its test, with 23 paired patients. A5 is not
+  eligible for confirmation: its modules are covered, but no local dataset holds
+  independent neonatal animals. The coverage method reproduces all 33 precedent
+  values; its first attempt refused to report and is preserved.
+
+Next, all for the owner: retain or reject the frozen modules; specify A11's test in
+its own plan; decide whether A5 stays descriptive or waits for independent neonatal
+animals; decide whether to update the A5 and A11 register cards, which this branch
+does not edit. The cached developmental spreadsheet is untracked; its hash is in the
+contract specification.
+
 ## Current status, 25 September 2026
 
 **Current task: the next A1 robustness batch is complete and verified.** Read

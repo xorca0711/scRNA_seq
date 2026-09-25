@@ -1,0 +1,10 @@
+arm	question	unit	contrast	n_complete_units	floor	gate2	source
+human	A11	patient	AAH minus normal	8	3	pass	Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_summary.csv; config unc20_pooled, label AT2, cell floor 50
+human	A11	patient	AIS minus normal	12	3	pass	Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_summary.csv; config unc20_pooled, label AT2, cell floor 50
+human	A11	patient	MIA minus normal	4	3	pass	Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_summary.csv; config unc20_pooled, label AT2, cell floor 50
+human	A11	patient	LUAD minus normal	23	3	pass	Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_summary.csv; config unc20_pooled, label AT2, cell floor 50
+human	A11	patient	LUAD minus AAH	8	3	pass	Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_summary.csv; config unc20_pooled, label AT2, cell floor 50
+human	A11	patient	LUAD minus AIS	12	3	pass	Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_summary.csv; config unc20_pooled, label AT2, cell floor 50
+human	A11	patient	LUAD minus MIA	4	3	pass	Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_summary.csv; config unc20_pooled, label AT2, cell floor 50
+mouse	A5	animal	adult injury, external animals meeting both group floors	1	3	fewer_than_3_complete_units	Research Article/epithelial_state_specificity/results/SUMMARY.md; 25 animals scored
+mouse	A5	animal	neonatal development, independent animals	0	3	fewer_than_3_complete_units	external cohort caution states no neonatal arm; every multiome neonatal unit is a pooled library (True) in Research Article/epithelial_state_specificity/results/retention.csv

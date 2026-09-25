@@ -1,0 +1,36 @@
+{
+  "status": "refused_instrument_check_failed",
+  "failed": [
+    {
+      "arm": "mouse",
+      "dataset": "GSE262927",
+      "module": "HALLMARK_HYPOXIA",
+      "expected": 196,
+      "observed": 199,
+      "denominator": 199,
+      "match": false,
+      "expected_source": "Research Article/epithelial_state_specificity/results/module_scores.csv"
+    },
+    {
+      "arm": "mouse",
+      "dataset": "GSE262927",
+      "module": "HALLMARK_INFLAMMATORY_RESPONSE",
+      "expected": 195,
+      "observed": 197,
+      "denominator": 197,
+      "match": false,
+      "expected_source": "Research Article/epithelial_state_specificity/results/module_scores.csv"
+    },
+    {
+      "arm": "mouse",
+      "dataset": "GSE262927",
+      "module": "HALLMARK_P53_PATHWAY",
+      "expected": 197,
+      "observed": 198,
+      "denominator": 200,
+      "match": false,
+      "expected_source": "Research Article/epithelial_state_specificity/results/module_scores.csv"
+    }
+  ],
+  "n_checks": 33
+}

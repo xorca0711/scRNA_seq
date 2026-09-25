@@ -1,10 +1,12 @@
 # Shared epithelial component contract: prospective plan
 
-25 September 2026. **Stage 1 complete; the stage 2 partition rule is
-pre-registered.** The owner authorized execution of this plan. No expression
-score has been computed and no claim grade changes. The machine-readable
-specification is [`config/shared_component.json`](config/shared_component.json),
-and the stage 1 record is the [source audit](reports/STAGE1_SOURCE_AUDIT.md).
+25 September 2026. **Stages 1 to 3 complete; stage 4 awaits the owner.** The
+owner authorized execution of this plan. No expression score has been computed and
+no claim grade changes. The machine-readable specification is
+[`config/shared_component.json`](config/shared_component.json). Results are in the
+[source audit](reports/STAGE1_SOURCE_AUDIT.md) and the
+[stages 2 and 3 report](reports/STAGE2_3_REPORT.md). The plan text below is kept as
+written before execution, with dated notes where a result changed its reading.
 
 This contract is enabling work owned jointly by [A5](../../RESEARCH_QUESTIONS.md#a5)
 and [A11](../../RESEARCH_QUESTIONS.md#a11). It is **not** a new research question
@@ -33,6 +35,14 @@ remodelling component. Defined twice, independently, the two results describe
 different baselines and neither constrains the other. Defined once, a three-way
 partition becomes statable: shared, development-specific, lesion-specific. That
 partition is the scientific gain from joining, and it is the whole purpose here.
+
+**Note after stage 2.** At the level of the three source lists there is no single
+shared object. Development shares 5 genes with adult injury, adult injury shares 7
+with lesions, and development shares none with lesions. A5 needs the first pair and
+A11 the second, and the two are disjoint. The partition still gives both questions
+one frozen basis, and the per-gene flags route each to its pair. The phrase "one
+shared baseline" overstates what the lists support; see the
+[stages 2 and 3 report](reports/STAGE2_3_REPORT.md#consequence-for-the-joint-framing).
 
 ## What the contract decides, and what it must not
 

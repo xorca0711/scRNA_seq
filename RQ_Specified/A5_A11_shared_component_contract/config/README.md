@@ -1,10 +1,11 @@
 # Specification files
 
 [`shared_component.json`](shared_component.json) is the reviewable contract. It
-fixes the decisions that must not move once results are visible, and it leaves
-open the parts that require a sourcing job the owner has not yet authorized.
+fixes the decisions that must not move once results are visible. The partition
+rule inside it was committed before the freeze ran, and the freeze record proves
+the freeze read those exact bytes.
 
-## What the specification fixes now
+## What the specification fixes
 
 - The three module identifiers and which question owns each test.
 - The label genes excluded from every module, and why.
@@ -18,16 +19,16 @@ open the parts that require a sourcing job the owner has not yet authorized.
 - The unit rules, including the prohibition on transferring units across arms.
 - Separate multiplicity families per owning question.
 
-## What stays open
+## Where membership lives
 
-Module membership is `null` in all three modules. A null list is a missing input,
-never an empty biological result. Membership is written only by the stage 1 and
-stage 2 sourcing and freezing jobs, and only if the owner retains this draft.
+Module membership fields are `null` in this file by design. This file holds the
+decisions; the freeze script wrote the membership to `../tables/frozen_modules.json`
+and refuses to overwrite it. Keeping the two apart means a result cannot quietly
+rewrite the rule that produced it.
 
-The development-specific module carries `membership_state:
-blocked_missing_source`. Its blocking input is an independently sourced
-developmental maturation signature, which the existing specificity module records
-as unavailable in its current pass.
+The developmental source that was missing when this file was drafted is now
+recorded under `source_lists`, with its archive and member hashes. The
+[source audit](../reports/STAGE1_SOURCE_AUDIT.md) explains the choice.
 
 ## Reading order
 

@@ -1,9 +1,14 @@
 {
   "schema": "shared-component-contract/v1",
   "drafted": "2026-09-25",
-  "status": "stage_1_complete_partition_preregistered",
-  "executed": false,
-  "note": "Membership fields below remain null in this file by design. The freeze script writes membership to tables/frozen_modules.json and refuses to overwrite it. A null list here is a missing input, never an empty biological result.",
+  "status": "stages_1_to_3_complete_awaiting_owner_decision",
+  "executed": {
+    "stage_1": "source selected; reports/STAGE1_SOURCE_AUDIT.md",
+    "stage_2": "modules frozen; tables/frozen_modules.json and tables/freeze_run.json",
+    "stage_3": "eligibility reported; tables/coverage_gate.tsv, tables/unit_floor.tsv and tables/coverage_run.json",
+    "stage_4": "not reached; awaits the owner's retain or reject"
+  },
+  "note": "Membership fields below remain null in this file by design. The freeze script wrote membership to tables/frozen_modules.json and refuses to overwrite it. This file holds the decisions; the tables hold the results.",
   "preregistration": {
     "committed_before_freeze": true,
     "date": "2026-09-25",
