@@ -27,5 +27,10 @@ and normalization; raw count format alone is insufficient. Any combined claim
 across contrasts needs a declared joint testing family rather than choosing
 whichever per-contrast result is significant.
 
-Only after plan review and verification should execution be authorized and a
-contrast marked frozen. The current files intentionally prevent model fitting.
+The owner authorized revised execution on 25 September 2026. The three original
+paired contrasts still prevent model fitting because their identity/QC gates
+remain unresolved. `first_batch.json` freezes descriptive PCA, technical peak
+audit and the source-lineage denominator rules. `ire1_kira8.json` separately
+freezes the verified unpaired ten-mouse RNA comparison, marker panel and pathway
+eligibility before expression fitting. It does not bypass the paired contracts.
+See the [completed batch](../reports/FIRST_BATCH_REPORT.md) for actual outcomes.

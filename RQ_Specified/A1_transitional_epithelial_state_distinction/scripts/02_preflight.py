@@ -18,12 +18,12 @@ def main():
     for c in contracts['contrasts']:
         holds,selected=readiness(c,samples)
         contrasts.append(dict(id=c['id'],design_ready=not holds,holds=holds,sample_records=len(selected)))
-    report=dict(status='metadata_audit_complete',scientific_analysis_executed=False,
+    report=dict(status='metadata_audit_complete',scope='original_three_candidate_pair_designs',scientific_analysis_executed_by_this_check=False,
                 execution_authorized=contracts['execution_authorized'],catalog=catalog,contrasts=contrasts)
     directory=STUDY/'reports';directory.mkdir(exist_ok=True)
     (directory/'catalog_audit.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
     lines=['# A1 catalog and design preflight','',
-           'Metadata-only report. No assay matrix has been analysed and no biological effect estimated.','',
+           'Metadata-only check of the original three paired candidates. Separate lineage and IRE1α execution is recorded in [FIRST_BATCH_REPORT.md](FIRST_BATCH_REPORT.md).','',
            f'{len(catalog)} GEO series; {sum(x["GSM_records"] for x in catalog)} GSM records (not a biological-unit count).','',
            '| Prospective contrast | Sample records | Status |','|---|---:|---|']
     for c in contrasts:lines.append(f'| {c["id"]} | {c["sample_records"]} | '+('Design ready; execution separate' if c['design_ready'] else 'Held: identity/processed-input verification pending')+' |')
@@ -31,7 +31,7 @@ def main():
                   'See [the study map](../STUDY_MAP.md) for descriptive assays and other work packages.',''])
     (directory/'PREFLIGHT.md').write_text('\n'.join(lines),encoding='utf-8')
     print(f'Metadata audit: {len(catalog)} series; {len(contrasts)} proposed contrasts; '+
-          f'{sum(c["design_ready"] for c in contrasts)} designs ready. Scientific analysis not run.')
+          f'{sum(c["design_ready"] for c in contrasts)} original paired designs ready. This check does not fit models.')
 
 
 if __name__=='__main__':main()

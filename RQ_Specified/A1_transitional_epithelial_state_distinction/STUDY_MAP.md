@@ -28,6 +28,7 @@ passed inspection. The [metadata audit](metadata/README.md) records those limits
 | Study/resource | Distinguishing measurement | Planned use and limitation |
 |---|---|---|
 | [Strunz et al., 2020](https://www.nature.com/articles/s41467-020-17358-3); [GSE141259](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE141259) | Injury chronology, epithelial enrichment and published lineage/velocity analyses; 60 GSM across preparation types | Reconstruct time-associated state paths with sample-aware uncertainty. Resolve preparation overlap. Ordinary count matrices cannot supply splicing layers or measured lineage histories. [Author code](https://github.com/theislab/2019_Strunz). |
+| [Auyeung et al., 2022](https://pubmed.ncbi.nlm.nih.gov/35170357/); [GSE190821](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE190821) | Krt19 pulse/chase and AGER endpoint under IRE1α inhibition; separate day-7 RiboTag RNA; 48 GSM representing epithelial and whole-lung libraries from 24 mice | First RNA contrast completed: five KIRA8 versus five vehicle mice with batch/sex adjustment. Axum8 is a separate antibody control. RiboTag expression does not identify traced DATPs, fate transitions or chromatin changes. |
 | [Chan et al., 2026](https://www.nature.com/articles/s41586-025-09985-x); [GSE277777](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277777) | HPCS tracing/ablation, GEX and HTO, processed objects; 32 GSM | Distinguish lineage origin, chase and perturbation from a shared RNA programme. Some animals are pooled. HTO is sample hashing, not a protein-phenotyping panel. Existing A11 projection is not a reanalysis of lineage outcomes. |
 | [Krt8 perturbation study](https://www.jci.org/articles/view/165612); [GSE223302](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223302) | 24 bulk-RNA GSM, WT/KO time course | Time-by-genotype response after replicate verification. Links molecular state to perturbation; bulk expression alone cannot prove irreversible fate. |
 | [Aberrant intermediate epithelial cells, 2025](https://www.nature.com/articles/s41467-025-63735-1); [GSE273123](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273123) | 16 CD44-positive/negative sorted AT2 RNA GSM, WT and SP-C mutant; published fibroblast-response assays | Protein-enriched populations provide an orthogonal selection axis. Four candidate pairs per genotype require animal-ID confirmation. This is not mass-spectrometry proteomics. |
@@ -41,3 +42,8 @@ passed inspection. The [metadata audit](metadata/README.md) records those limits
 No matched 3D-contact assay or directly relevant epithelial CITE-seq deposit
 passed this bounded audit. These remain coverage gaps, not claims that no such
 study exists. Re-query them when the first executable contrasts are frozen.
+
+The [lineage audit](LINEAGE_AUDIT.md) distinguishes origin tracing, state pulse/
+chase, experimental conversion and perturbation across eight anchor studies.
+The [first-batch report](reports/FIRST_BATCH_REPORT.md) supersedes planning-only
+status for the executed source tables without promoting the other catalog entries.

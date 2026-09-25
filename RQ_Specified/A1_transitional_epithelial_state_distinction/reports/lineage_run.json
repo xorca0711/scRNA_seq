@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "utc": "2026-09-25T05:30:00.551858+00:00",
+  "source": {
+    "study": "pats_nature",
+    "label": "Source Data Extended Data Fig. 4 (download XLSX     )",
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41556-020-0542-8/MediaObjects/41556_2020_542_MOESM7_ESM.xlsx",
+    "path": "RQ_Specified/A1_transitional_epithelial_state_distinction/cache/source_workbooks/41556_2020_542_MOESM7_ESM.xlsx",
+    "sha256": "803c8cd0028d439e7e48b708b124755313a820fa6b0c35b62e9242e75278509c",
+    "retrieved_utc": "2026-09-25T05:09:41.902213+00:00"
+  },
+  "input_fields": 38,
+  "zero_denominator_fields": 18,
+  "mean_mouse_field_percent": {
+    "AGER": 32.83586557596785,
+    "KRT8": 64.68592344147417
+  },
+  "claim": "Reconstruction of published labelled-cell endpoint composition, not a new fate experiment or exit-rate estimate",
+  "script_sha256": "421813c5fa217957575be087209dd9f8b81e7a3ab6846c3ff6f3dd176a6ee983"
+}

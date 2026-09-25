@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "prospective_for_review",
-  "execution_authorized": false,
+  "execution_authorized": true,
   "contrasts": [
     {
       "id": "A1_ATAC_TIGIT",
@@ -96,5 +96,6 @@
       "assay_qc_verified": false,
       "assay_qc_evidence": null
     }
-  ]
+  ],
+  "authorization": "Owner authorized revised main analysis on 2026-09-25; eligibility holds remain"
 }

@@ -2,8 +2,9 @@
 
 25 September 2026. Prospective reanalysis plan following a targeted literature
 and public catalog search; not an unseen-data preregistration. Published
-results and earlier repository analyses informed the hypotheses. Execution
-has not started beyond metadata retrieval. Sources and assay availability
+results and earlier repository analyses informed the hypotheses. The owner authorized revised execution on 25 September 2026; see the
+[lineage audit](LINEAGE_AUDIT.md) and first-batch contract. Historical planning
+checks are not biological results. Sources and assay availability
 are in [STUDY_MAP.md](STUDY_MAP.md) and [metadata](metadata/README.md).
 
 ## Question and possible answers
@@ -61,14 +62,14 @@ The initial shortlist is deliberately broader than the executable set.
 
 | Order | Dataset/work package | First practical deliverable | Current constraint |
 |---|---|---|---|
-| 0 | Every selected cohort | Sample/animal/donor/pool/assay crosswalk, conflicts and file inventory | Catalog availability is verified, payload integrity and independence are not |
-| 1a | GSE154966 HPCS bulk ATAC | Within-source paired accessibility contrast from deposited counts | Four apparent pairing blocks; verify pooling and IDs before inference |
-| 1b | GSE289683 + GSE291333; GSE141635; GSE150527 | Direct histone-mark profiles and normal-differentiation reference | Mostly one or two donors/preparations: descriptive, not replicated population inference |
-| 2 | GSE273123 CD44-sorted RNA | Protein-enriched population contrast within genotype | Four apparent pairing blocks per genotype; verify animal and column IDs |
-| 3 | Zenodo 10930946 / processed IMC resource | Protein-state and neighbourhood comparison at donor level | Obtain processed cell/ROI/donor table, masks and channel dictionary first |
+| 0 | Every selected cohort | Sample/animal/donor/pool/assay crosswalk, conflicts and input hashes | Verify each contrast separately; a catalog entry alone is insufficient |
+| 1a | Kobayashi Extended Data 4 source workbook | Mouse-level labelled-cell endpoint reconstruction | Completed: preserve nested fields and undefined control denominators |
+| 1b | GSE190821 IRE1α perturbation | Five KIRA8 versus five vehicle mice; epithelial RiboTag RNA | Initial model completed; batch + sex adjustment, separate from day-14 microscopy; raw-read QC not repeated |
+| 2 | GSE289683 + GSE291333; GSE141635; GSE150527 | Direct histone-mark profiles and normal-differentiation reference | Central regulatory work remains; GSE141635 peak callers differ, so raw interval counts/overlap are not biological evidence |
+| 3 | GSE154966 HPCS ATAC; GSE273123 CD44 RNA | Count QC and source-block PCA, then eligible within-source effects | Descriptive PCA completed; ATAC pool independence and CD44 alias-to-genotype crosswalk remain held |
 | 4 | Existing GSE310539/GSE247130; GSE290014; GSE327686 | ATAC-derived state map with RNA labels held out | Pooled/single libraries, depth and conflicting metadata limit interpretation |
-| 5 | GSE141259; GSE277777; GSE223302 | Time/lineage/perturbation comparison of frozen state axes | Recover sample identities; counts alone do not contain velocity layers or lineage events |
-| 6 | PXD058626 and DDBJ perturbation deposits | Regional protein corroboration and treatment-sensitive chromatin | Processed matrix/cross-assay mapping unresolved; sequencing reprocessing may be expensive |
+| 5 | GSE141259; GSE277777; GSE223302 | Compare a frozen molecular axis with measured time, lineage or perturbation endpoints | Exact label/chase/source mapping first; RNA counts do not contain unmeasured lineage histories |
+| 6 | Zenodo 10930946; PXD058626; DDBJ perturbation deposits | Optional spatial/protein or treatment-sensitive chromatin extension | Only after a specific comparison and processed sample map; no full IMC archive in the first batch |
 
 The source cohorts differ in species, genotype and experimental setting.
 These work packages provide complementary evidence, not paired modalities from the same
@@ -79,9 +80,12 @@ individuals. A programme can be shared without its function being shared.
 The runnable scaffold implements the metadata audit and a guarded paired
 bulk-count pilot; see [scripts](scripts/README.md) and
 [prospective contracts](config/README.md). Default execution reports holds.
-The current 24 title-derived candidate sample rows have no verified biological
-unit IDs; all three proposed contrasts remain unfrozen. This is an explicit
-boundary between specification and analysis, not a failed biological result.
+The original 24 title-derived candidate sample rows still have no verified
+biological-unit IDs; all three paired contrasts remain unfrozen. A separate
+[IRE1α contract](config/ire1_kira8.json) now fixes an unpaired ten-mouse design,
+using explicit GEO mouse IDs, compartment and treatment to map count columns.
+It does not unlock the other contrasts. The
+[first-batch report](reports/FIRST_BATCH_REPORT.md) records completed work and holds.
 
 Use `metadata/<accession>.json` as dated source evidence, not as a curated
 sample sheet. Build `config/samples.json` with one row per biological unit ×
@@ -158,6 +162,12 @@ Otherwise publish descriptive correspondence and leave classification unrun.
    before interpreting global H3K27ac changes; library normalization alone can
    conceal global changes. BigWig/bedGraph overlays remain descriptive if
    replicate-level counts cannot be recovered.
+The first GSE141635 payload audit found different peak-caller region sizes and
+   merging distances between the two conditions. Peak-count/overlap contrasts
+   are therefore technical diagnostics only; biological comparison waits for
+   common-region quantification or consistent re-calling. The source-data
+   tracing workbook also contains zero-denominator control fractions, which
+   are explicitly missing in reanalysis (see the lineage audit).
 5. **DNA methylation:** GSE150527 provides a normal-differentiation reference
    with one WGBS donor at D0/D4/D6. Plot covered CpGs/regions and methylation
    fractions alongside histone/RNA changes. Do not run a donor-level DMR test
@@ -183,64 +193,71 @@ RNA WT and mutant strata remain separate; testing a genotype interaction or
 making a joint claim requires its own family/design, not comparing significance
 labels. Leave-one-pair-out checks and assay-specific QC follow payload inspection.
 
-## Stage 3: time, trajectory and measured lineage
+## Stage 3: measured origin, state passage and descendants
 
-GSE141259 is the time-course reference. Keep its whole-lung and enriched
-epithelial preparations distinguishable and audit animal overlap. Use native
-sampling times and broad lineage compartments to orient an initial PAGA/
-diffusion or principal-graph trajectory. Compare an alternative topology and
-test stability under animal exclusion, root choice, cell-cycle exclusion and
-downsampling. A single attractive UMAP is not a topology test.
+Revised after the owner's challenge on 25 September 2026. The
+[lineage audit](LINEAGE_AUDIT.md) specifies eight experimental anchors and their
+separate claim limits. Trace induction, washout/chase, permanent label versus
+current-state reporter, anatomical gate and source mouse/pool must be recorded
+before any trajectory comparison.
 
-Use [CellRank 2](https://doi.org/10.1038/s41592-024-02303-9) time/pseudotime
-kernels only as model-based transition hypotheses. RNA velocity requires
-spliced/unspliced layers or an explicit raw-read reconstruction and kinetic
-diagnostics. Do not manufacture velocity from ordinary expression counts.
-Gene trends should be estimated with sample-aware models; cell bootstrap
-bands do not express between-animal uncertainty.
+The core endpoints are (1) labelled-origin contribution among transitional
+cells, (2) phenotype among traced descendants, and (3) lineage contribution to
+all endpoint cells or lineage expansion. Their denominators cannot be exchanged.
+Choi DATP, Kobayashi PATS and Auyeung IRE1α experiments anchor injury repair;
+Strunz tests origin convergence; Chan HPCS tracing/ablation remains a separate
+cancer-context comparison with a differentiated-state control. Human organoid/
+graft conversion in Kathiriya is an experimental capacity test, not endogenous
+human disease lineage tracing.
 
-In GSE277777, use trace origin, chase duration, sample hashes and treatment
-history rather than an HPCS score alone. Compare observed reporter-positive
-descendant distributions and the paper's measured ablation/growth endpoints.
-Do not count pooled mice as individually observed replicates. A genetic fate
-experiment reported in the paper is not automatically available per cell in
-the deposited matrix. Normal repair and cancer histories remain separate.
+Start with accessible measured source tables and retain their nested units.
+Kobayashi Extended Data 4 supplies named mice and subsampled fields at BleoD12.
+A zero labelled-cell denominator is undefined, even if the source spreadsheet
+stores zero percent. Report field-mean and count-pooled within-mouse summaries;
+do not compare undefined controls as if they were valid zero-valued animals.
 
-Late tissue can reflect replacement, death, migration or different cells.
-“Persistent” requires repeated population evidence; “irreversible” or
-“epigenetic memory” needs an appropriate withdrawal/chase experiment.
+Only add PAGA/trajectory/CellRank if a held-out time or measured lineage endpoint
+can test the ordering. Freeze roots from experimental design, assess sample
+exclusion sensitivity, and separate model probabilities from observed lineage.
+No all-study UMAP or raw-read velocity reconstruction is part of the first batch.
+RNA/ATAC label transfer and marker scores cannot substitute for trace labels.
 
-## Stage 4: proteins, location and function
+## Stage 4: functional endpoints linked to the state
 
-**Spatial proteins (IMC):** obtain antibody panel, segmentation masks, cell
-features, donor/ROI and pathology labels. Distinguish intact AT2, AT1,
-intermediate/basaloid and airway epithelium using multiple measured channels.
-Reserve independent channels/features for validation so a KRT-defined gate
-is not validated by KRT abundance itself. Test morphology and immune/fibroblast
-neighbourhoods conditional on epithelial state, local density and pathology.
-Use within-ROI spatial nulls preserving tissue compartments; summarise effects
-within donor before inference. Regions labelled early/intermediate/advanced
-are cross-sectional pathology, not a longitudinal trajectory.
+Prefer evidence within a model/study: a traced regenerative population with
+histone measurements (PATS), a state-labelled perturbation and AT1 endpoint
+(IRE1α), protein-sorted epithelium with fibroblast responses (CD44), or traced
+cancer cells with descendant/ablation outcomes (HPCS). Published functional
+results remain source evidence unless their numerical endpoints are reanalysed.
 
-**LCM-MS (PXD058626):** recover the protein abundance table and donor-region
-map, including MUC5B genotype. Compare epithelium overlying fibroblastic foci
-with prespecified epithelial reference regions using donor blocking when
-matched. Audit epithelial/stromal admixture, missingness and detection frequency.
-Report an observed-data analysis and an imputation sensitivity; do not
-interpret imputed low abundance as protein absence. Regional enrichment is
-supporting protein evidence, not single-cell identity or secretion rate.
+CD44-positive versus negative counts require an exact matrix-to-GEO sample
+crosswalk before genotype-stratified inference. Healthy CD44-positive cells are
+a counterexample to equating the sort gate with pathology. Keep expression,
+measured fibroblast activation and differentiation endpoints separate. An
+intervention that changes abundance may act on entry, proliferation, survival
+or exit; loss of the population alone does not demonstrate restored repair.
 
-**Functional anchors:** connect CD44-sorted expression with the source study's
-conditioned-medium/coculture tests; Krt8 perturbation with GSE223302's time
-course; and HPCS with lineage tracing/ablation. Analyse actual accessible
-endpoint tables if their biological units are recoverable. Keep reported
-source-paper experiments separate from computations performed here.
-The SAGE Perturb-seq preprint is particularly relevant to bifurcating repair
-and pathological states, but its public accession remains unverified.
+IMC and laser-capture proteomics are optional context/phenotype extensions.
+They require a declared biological contrast and donor/ROI map. They do not
+validate ancestry, reversibility or epigenetic memory, and cannot rescue a
+failed core comparison. Complete-archive IMC download/re-segmentation is
+removed from the initial execution scope.
 
-No directly relevant epithelial CITE-seq/ADT dataset passed this targeted
-scan. An alveolar macrophage CITE-seq study does not fill that gap. Whole-lung
-proteomics or plasma biomarkers cannot establish a transitional-cell proteome.
+The first functional expression comparison is GSE190821: bleomycin-exposed
+epithelial RiboTag RNA, five KIRA8 versus five vehicle mice across S061/S135.
+Do not add the four Axum8 controls from a different antibody experiment to the
+vehicle group. Fit `~ batch + sex + group` using TMM and robust edgeR QL; retain
+`~ batch + group` as a specified sensitivity. This is day-7 epithelial
+ribosome-associated RNA, not sorted DATPs or a day-14 labelled-cell endpoint.
+Bulk treatment effects may include composition and translation-associated
+changes. The tracing result remains separate published evidence.
+
+The frozen eight-marker panel is displayed regardless of significance. Three
+published signatures were specified before fitting; exact mapping and expression
+coverage determine eligibility before CAMERA with estimated gene correlation.
+Use whole tested-gene BH and a separate eligible-signature family. No marker-only
+FDR, post hoc gene-set repair or favourable fixed-correlation result replaces
+these primary tests. The first run and its actual outcomes are in the report.
 
 ## Stage 5: cross-study synthesis and decision rules
 
@@ -284,9 +301,9 @@ replicated assays would be needed for that stronger claim.
 | A1-1 | Sample/assay design; RNA and ATAC embeddings shown separately; state correspondence with unassigned cells | Correct sample mapping; UMAP descriptive |
 | A1-2 | Sample-level ATAC PCA; paired accessibility effects; motif/module heatmap; selected locus tracks | Genuine units for effect inference; loci frozen or labelled exploratory |
 | A1-3 | H3K27ac/H3K4me3/H3K27me3 tracks; mark-by-state heatmap; methylation coverage and fractions | Direct measured marks; low replication shown explicitly |
-| A1-4 | Chronological state fractions; trajectory/topology sensitivity; observed lineage-descendant matrix | Temporal/lineage metadata; arrows labelled inferred or measured |
-| A1-5 | Tissue images; protein distributions; morphology and neighbourhood effects per donor | Antibody/segmentation/ROI audit |
-| A1-6 | Regional proteomic heatmap and paired effects; cross-assay evidence matrix | Protein table, donor map and detection audit |
+| A1-4 | Measured lineage endpoints per mouse first; chronological fractions or trajectory validation only when independently testable | Driver, pulse/chase, denominator and nesting verified; source reproduction labelled |
+| A1-5 | Functional response: mouse-level RNA PCA, full-family effects, predefined marker points and eligible pathway tests; separately measured endpoints | Treatment/source map; RNA, microscopy and perturbation endpoints not conflated |
+| A1-6 | Optional tissue protein/morphology, regional proteomics and cross-assay evidence matrix | Frozen comparison, donor/ROI map and detection audit |
 
 Violin plots may display cells, but inference and error bars use biological
 units. Illustrative tissue fields are chosen by a declared rule, not maximum
@@ -302,7 +319,9 @@ write `tables/`, `figures/` and `reports/` here, preserving prior run records
 on rerun. The canonical A1 summary links to this gallery; source-paper
 outputs remain under `Research Article/`.
 
-First review point: resolve the HPCS/IMC/CD44 identifiers and select the
-executable contrasts. Later batches can proceed independently where gates
+Execution authorization is recorded in `config/first_batch.json` and the separate
+`config/ire1_kira8.json` inferential contract. Resolve source
+identities before inferential contrasts; descriptive first-batch outputs are
+explicitly separated from deferred tests. Later batches can proceed independently where gates
 pass. Downloading all raw reads, claiming a complete DATP/PATS/HPCS taxonomy,
 or launching every method listed above is not the present plan.

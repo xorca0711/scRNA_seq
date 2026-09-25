@@ -13,12 +13,21 @@ scientific analysis was rerun for this migration. Historical records retain
 their original paths and hashes; see the [migration record](docs/migrations/2026-09-25-research-layout/README.md).
 
 A1 now has a [prospective plan](RQ_Specified/A1_transitional_epithelial_state_distinction/PLAN.md),
-29 GEO metadata extracts, three ENA project inventories, IMC/PRIDE catalog
-evidence, a study map, six figure groups and a guarded paired-count scaffold.
-Only metadata auditing and code checks have run. The three first count contrasts
-remain held for biological-unit, assay-QC and processed-input verification.
-Direct histone profiles, methylation references, lineage, protein and functional
-evidence are distinct work packages; no new biological findings are claimed.
+30 GEO metadata extracts, three ENA project inventories and IMC/PRIDE catalogs.
+The owner requested revision of stages 3–4 and authorized execution. The
+[first real batch](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/FIRST_BATCH_REPORT.md)
+is complete: PATS measured-endpoint reconstruction, GSE190821 five-versus-five
+IRE1α RNA model, TIGIT/CD44 descriptive PCA and the histone-input audit, with
+four figure groups. Four of 14,811 genes pass BH FDR; no predefined marker or
+eligible pathway does. Strong batch structure and bulk-mixture interpretation
+remain limitations. No epigenetic state taxonomy is established.
+
+The original three paired contrasts remain held for identities/assay QC;
+GSE141635 peak-caller settings prevent raw interval-overlap interpretation.
+Next: compatible direct-mark quantification, IRE1α batch/mouse sensitivity,
+source crosswalks and exact HPCS measured-lineage endpoints. Spatial/protein
+extensions require a specific contrast and donor/ROI map. Completed numerical
+runs refuse overwrite; exact executed code is archived beside the run records.
 
 The feasible Yu review-motivated analyses are complete: IPF pathways and
 ligand/target sensitivity analyses, eligible early mouse niches, all 75 human

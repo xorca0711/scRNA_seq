@@ -1,0 +1,77 @@
+{
+  "status": "frozen_before_expression_results",
+  "frozen_utc": "2026-09-25T05:24:40.401872+00:00",
+  "authorization": "Owner requested revised stages 3/4 and initiation of the main analysis, 25 September 2026",
+  "study": "Auyeung et al. 2022; GSE190821",
+  "assay": "Mouse lung epithelial RiboTag immunoprecipitation, QuantSeq; day 7 after bleomycin, per published Fig. 1K",
+  "selection": {
+    "tissue compartment": "Epithelium",
+    "exposure": "Bleomycin",
+    "treatment": [
+      "Vehicle",
+      "KIRA8"
+    ]
+  },
+  "reference": "Vehicle",
+  "case": "KIRA8",
+  "expected_mice_per_group": 5,
+  "expected_batches": [
+    "S061",
+    "S135"
+  ],
+  "excluded": "Axum8 is the antibody control and is not a vehicle control for KIRA8. Whole-lung libraries are not independent animals.",
+  "count_source_sha256": "2c8a21fd68c355330bfee2e5e63ca3d415d7f4677a3b783669d9acb0a595d1f7",
+  "metadata_sha256": "8b01e8a823d1fe38bc54357d43e963f0fc031c571af4e7d2d5561912e2182e96",
+  "model": "~ batch + sex + group",
+  "sensitivity_model": "~ batch + group",
+  "inference": "Treatment association in epithelial ribosome-associated RNA; no DATP-specific, fate, cell-composition or epigenetic attribution from this assay alone",
+  "filter": {
+    "method": "edgeR filterByExpr with group",
+    "min_count": 10,
+    "min_total_count": 15
+  },
+  "normalization": "TMM",
+  "fit": "edgeR robust quasi-likelihood",
+  "multiple_testing": "BH across all retained genes; secondary gene-set family separately",
+  "qc": {
+    "nonnegative_integer": true,
+    "unique_genes": true,
+    "unique_mice": true,
+    "minimum_library_count": 100000,
+    "no_automatic_sample_outlier_removal": true,
+    "raw_read_QC": "Not reprocessed; alignment and RNA integrity metrics unavailable in deposited count table"
+  },
+  "pca": {
+    "top_variable_features": 2000,
+    "transform": "TMM log2CPM, prior.count=2",
+    "center": true,
+    "scale": false,
+    "batch_correction": false
+  },
+  "markers": [
+    "Itgb6",
+    "Krt8",
+    "Krt19",
+    "Cldn4",
+    "Ager",
+    "Sftpc",
+    "Cdkn1a",
+    "Krt7"
+  ],
+  "gene_sets": {
+    "source": "Published Supplemental Table 1 (figshare 17293883)",
+    "selected": [
+      "TGFbeta",
+      "Gene Ontology 0006986",
+      "T-UPR"
+    ],
+    "selection_reason": "Predefined TGF-beta and general/terminal unfolded-protein-response axes; no selection by observed DE",
+    "method": "limma voom + CAMERA; estimated inter-gene correlation; allow.neg.cor=FALSE",
+    "minimum_fraction_of_source_symbols_in_tested_universe": 0.8,
+    "minimum_genes": 5,
+    "missing_symbols": "Report and exclude exact lookup failures without silent alias repair",
+    "multiple_testing": "BH across eligible sets in this three-set family; no corroboration independent of source study"
+  },
+  "signature_sha256": "b9bf56476e38073856627ff74bd9d853f0c868bed11b326aaa5060de7f11ff1b",
+  "threshold_interpretation": "FDR <0.05 denotes statistical evidence under the specified model, not biological validity or independent replication"
+}

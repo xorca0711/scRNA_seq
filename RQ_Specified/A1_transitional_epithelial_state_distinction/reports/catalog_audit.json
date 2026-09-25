@@ -1,7 +1,8 @@
 {
   "status": "metadata_audit_complete",
-  "scientific_analysis_executed": false,
-  "execution_authorized": false,
+  "scope": "original_three_candidate_pair_designs",
+  "scientific_analysis_executed_by_this_check": false,
+  "execution_authorized": true,
   "catalog": [
     {
       "accession": "GSE141259",
@@ -51,6 +52,13 @@
       "title": "Emergence of a high-plasticity cell state during lung cancer evolution, single-cell RNAseq tigit",
       "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE154978&targ=all&form=text&view=full",
       "response_sha256": "768fb12c2b43479fe0a0d1282d4b8f959f0e5ef57ca61f66b4b881a6ee688b75"
+    },
+    {
+      "accession": "GSE190821",
+      "GSM_records": 48,
+      "title": "Lung epithelial transcriptional responses to bleomycin and effects of IRE1\u03b1 or TGF\u03b2 inhibition",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE190821&targ=all&form=text&view=full",
+      "response_sha256": "ff1fb0e69ef7c563cb41980774d0c2cf97f1bbeafc9fe1c26913d900d97d4865"
     },
     {
       "accession": "GSE218665",

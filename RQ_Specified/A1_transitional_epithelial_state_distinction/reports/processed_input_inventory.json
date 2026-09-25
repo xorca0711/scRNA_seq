@@ -1,0 +1,59 @@
+{
+  "scope": "Downloaded processed assay inputs; sample/assay QC separate",
+  "files": [
+    {
+      "accession": "GSE273123",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE273nnn/GSE273123/suppl/GSE273123_Count_Matrix.txt.gz",
+      "path": "RQ_Specified/A1_transitional_epithelial_state_distinction/cache/inputs/GSE273123/GSE273123_Count_Matrix.txt.gz",
+      "bytes": 557299,
+      "sha256": "326b4c263de65a07239accf8294b2930aaa68ca3fe81339a15e660dad2c29a90",
+      "checked_utc": "2026-09-25T05:05:46.159592+00:00",
+      "elapsed_seconds": 2.95
+    },
+    {
+      "accession": "GSE154966",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154966/suppl/GSE154966_counts_tigitSamples_featureCounts_filtered_notSubs.tsv.gz",
+      "path": "RQ_Specified/A1_transitional_epithelial_state_distinction/cache/inputs/GSE154966/GSE154966_counts_tigitSamples_featureCounts_filtered_notSubs.tsv.gz",
+      "bytes": 3159444,
+      "sha256": "67b2751451e304a0308323a2cb5526bb52370d0f518ca9cb778255c1598db2a3",
+      "checked_utc": "2026-09-25T05:05:48.435509+00:00",
+      "elapsed_seconds": 2.28
+    },
+    {
+      "accession": "GSE154966",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154966/suppl/GSE154966_tigit_pos_neg.merged.bed.gz",
+      "path": "RQ_Specified/A1_transitional_epithelial_state_distinction/cache/inputs/GSE154966/GSE154966_tigit_pos_neg.merged.bed.gz",
+      "bytes": 930907,
+      "sha256": "a4c2bfd5b1d4fd7c89e7ed86f7bc0636a10ee2c620c69dff5b40aa2ebb4172db",
+      "checked_utc": "2026-09-25T05:05:50.403953+00:00",
+      "elapsed_seconds": 1.95
+    },
+    {
+      "accession": "GSE141635",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141635/suppl/GSE141635_AEC2_Homeostasis_H3K4me3_calledpeaks.bed.gz",
+      "path": "RQ_Specified/A1_transitional_epithelial_state_distinction/cache/inputs/GSE141635/GSE141635_AEC2_Homeostasis_H3K4me3_calledpeaks.bed.gz",
+      "bytes": 395371,
+      "sha256": "60c261f73f0e307faadb6f8b4a840f9eb73decad65667e319508a6fccacd21b3",
+      "checked_utc": "2026-09-25T05:08:46.669194+00:00",
+      "elapsed_seconds": 1.67
+    },
+    {
+      "accession": "GSE141635",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141635/suppl/GSE141635_CTGFpos_Bleomycin_H3K4me3_calledpeaks.bed.gz",
+      "path": "RQ_Specified/A1_transitional_epithelial_state_distinction/cache/inputs/GSE141635/GSE141635_CTGFpos_Bleomycin_H3K4me3_calledpeaks.bed.gz",
+      "bytes": 311715,
+      "sha256": "7a47dcd7775b93595aea406892531b006a143b2e3a9c7af67a32adae66d58f05",
+      "checked_utc": "2026-09-25T05:08:48.167731+00:00",
+      "elapsed_seconds": 1.47
+    },
+    {
+      "accession": "GSE190821",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE190nnn/GSE190821/suppl/GSE190821_counts.csv.gz",
+      "path": "RQ_Specified/A1_transitional_epithelial_state_distinction/cache/inputs/GSE190821/GSE190821_counts.csv.gz",
+      "bytes": 1748418,
+      "sha256": "2c8a21fd68c355330bfee2e5e63ca3d415d7f4677a3b783669d9acb0a595d1f7",
+      "checked_utc": "2026-09-25T05:16:43.234108+00:00",
+      "elapsed_seconds": 4.61
+    }
+  ]
+}

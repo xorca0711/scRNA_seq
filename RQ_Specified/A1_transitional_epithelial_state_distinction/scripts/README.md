@@ -3,7 +3,8 @@
 `01_audit_geo_metadata.py` retrieves public GEO design metadata. It archives
 existing extracts only with explicit `--refresh`; it does not retrieve counts.
 `02_preflight.py` checks local catalog integrity and the candidate pair contract.
-These are the only entrypoints run on real sources during planning.
+Those were the only entrypoints run on real sources during the initial planning
+stage. The first numerical batch has now run as described below.
 
 `03_run_paired_counts.py` defaults to reporting holds. Its optional `--execute`
 mode requires an authorized, frozen contract, verified independent sample/pool
@@ -41,3 +42,30 @@ with 500 synthetic features and four pairs, verifying the coefficient direction.
 Its outputs stay in ignored `tmp/a1_synthetic_qll/` and are not scientific evidence.
 This local check requires the existing portable R installation; it is not an
 undeclared dependency of the standard-library GitHub CI job.
+
+## First real analysis batch
+
+| Script | Purpose |
+|---|---|
+| `05_fetch_processed_inputs.py` | Bounded processed-count/BED downloads, source URLs and SHA-256 inventory |
+| `06_lineage_source_reanalysis.py` | Kobayashi ED4 workbook parsing, zero-denominator handling, nested field/mouse summaries and figure |
+| `07_ire1_epithelial_analysis.py` | Exact GSE190821 mouse/compartment/treatment crosswalk, count checks, frozen-contract orchestration and figures |
+| `08_fit_ire1.R` | Unpaired batch + sex + treatment edgeR model, sensitivity, PCA and eligible estimated-correlation CAMERA tests |
+| `09_descriptive_input_audit.py` | TIGIT/CD44 source-alias PCA; H3K4me3 caller/geometry audit without biological tests |
+| `10_render_audited_figures.py` | Re-render existing results and verify unchanged scientific-table hashes |
+
+Python analysis scripts need NumPy, pandas and matplotlib in the scientific
+environment. R needs edgeR, limma and statmod. On this workstation, the existing
+`analysis/scripts/run_with_environment.py --site-packages .venv-x64/Lib/site-packages`
+launcher supplies Python packages, and the portable Rscript is at
+`analysis/corrections/statistics/.tools/R-portable/app/bin/Rscript.exe`.
+Pass that path with `--rscript` to script 07. Public inputs and Ensembl annotation
+snapshots are identified in the inventories/contracts; downloaded assay payloads
+stay ignored under `cache/`, selected count adapters under `processed/`.
+
+The completed numerical entrypoints refuse to overwrite existing run records.
+Archive a batch's reports, tables and figures before a new numerical run.
+Script 10 updates presentation only. Exact first-run source bytes are preserved
+in [the execution archive](../reports/execution_sources/2026-09-25/manifest.json).
+Do not execute archived source files as a workaround for the overwrite guard.
+The [report](../reports/FIRST_BATCH_REPORT.md) links all run records and limitations.

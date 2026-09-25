@@ -1,5 +1,11 @@
 # Specification status — 25 September 2026
 
+**Update:** the owner subsequently requested a stages 3–4 challenge and actual
+execution. The revised [lineage audit](../LINEAGE_AUDIT.md) and
+[first-batch report](FIRST_BATCH_REPORT.md) now govern current status. The
+planning-stage record below describes what had run before that authorization;
+it is retained as history, not the current execution state.
+
 The prospective plan, source map, metadata conflicts, candidate sample/contrast
 contracts and six figure groups are ready for review. A1 remains one question
 in the root register, with its implementation workspace here. Structure PR #66
@@ -23,7 +29,7 @@ direction check. No biological counts were fitted and no new scientific figures
 or findings were produced. The synthetic check is a software test, not a power
 analysis or validation of real-data assumptions.
 
-Next scientific step after plan review: resolve source-unit/file mappings and
+The next scientific step proposed at that planning checkpoint was to resolve source-unit/file mappings and
 inspect the small deposited processed tables. Freeze the first eligible
 contrast and measured resource budget before inference. Direct histone profiles
 can proceed as descriptive work when their controls and normalization are

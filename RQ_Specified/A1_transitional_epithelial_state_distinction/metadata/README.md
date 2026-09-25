@@ -1,12 +1,20 @@
 # Metadata evidence and unresolved identities
 
-The 29 `GSE*.json` extracts preserve the catalog response URL, retrieval time,
+The 30 `GSE*.json` extracts preserve the catalog response URL, retrieval time,
 response SHA-256 and sample fields. Full GEO responses are cached locally under
 ignored `tmp/a1_epigenetic_metadata/`. These are public design metadata, not
 downloaded sequencing matrices or a verified biological-unit manifest. No
 contact details are retained. PRIDE and Zenodo extracts have their own source
 and scope fields. `ENA_projects.json` records run inventories and the unresolved
 crosswalk, rather than implying that runs are independent samples.
+
+GSE190821 was added during the lineage-stage revision. Its explicit mouse IDs,
+compartment and treatment fields resolve the first five-versus-five KIRA8 RNA
+contrast; see the [manifest](../tables/ire1/sample_manifest.tsv). The broader
+catalog is not thereby validated. Figshare 17293883 supplies published gene
+signatures; exact Ensembl lookups provide stable gene-ID labels, not coordinate
+liftover to GRCm38. Mapping failures and expression coverage are retained in
+the [gene-set audit](../tables/ire1/gene_set_mapping_tested.tsv).
 
 Use [the study map](../STUDY_MAP.md) for assay roles and [the plan](../PLAN.md)
 for interpretation. `config/samples.json` initially contains candidate pair IDs

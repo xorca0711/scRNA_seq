@@ -1,8 +1,8 @@
 # A1 catalog and design preflight
 
-Metadata-only report. No assay matrix has been analysed and no biological effect estimated.
+Metadata-only check of the original three paired candidates. Separate lineage and IRE1α execution is recorded in [FIRST_BATCH_REPORT.md](FIRST_BATCH_REPORT.md).
 
-29 GEO series; 355 GSM records (not a biological-unit count).
+30 GEO series; 403 GSM records (not a biological-unit count).
 
 | Prospective contrast | Sample records | Status |
 |---|---:|---|

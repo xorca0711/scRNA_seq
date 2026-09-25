@@ -60,17 +60,23 @@ about the distinctions and their behaviour.
 
 The prospective [A1 analysis plan](RQ_Specified/A1_transitional_epithelial_state_distinction/PLAN.md)
 and [study/assay map](RQ_Specified/A1_transitional_epithelial_state_distinction/STUDY_MAP.md)
-cover 29 audited GEO series plus spatial-protein, proteomics and sequencing
+cover 30 audited GEO series plus spatial-protein, proteomics and sequencing
 catalogs. GSE141635 and the Tsutsui iPSC series provide direct histone evidence;
 GSE150527 adds a normal-differentiation methylation reference. Low replication
 limits these to descriptive comparisons. GSE154966 paired TIGIT ATAC and
-GSE273123 CD44-sorted RNA are proposed processed-count pilots pending biological
-identity and payload verification. This audit has not produced new biological
-results or established a DATP/PATS/HPCS taxonomy.
+GSE273123 CD44-sorted RNA have descriptive source-block PCA, with biological
+identity still held for inferential tests. The
+[first batch](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/FIRST_BATCH_REPORT.md)
+also reconstructs the measured PATS endpoint and fits a separate five-versus-five
+IRE1α epithelial RiboTag contrast. Four genes pass whole-family FDR, but none of
+the predefined markers or eligible pathways does. These source-informed results
+do not establish an epigenetic distinction or DATP/PATS/HPCS taxonomy.
 
-The [planned gallery](RQ_Specified/A1_transitional_epithelial_state_distinction/figures/README.md)
-specifies separate modality embeddings, sample PCA, regulatory profiles,
-direct-mark tracks, lineage matrices and spatial/protein panels. Computational
+The [gallery](RQ_Specified/A1_transitional_epithelial_state_distinction/figures/README.md)
+contains the initial sample PCA, treatment/marker and measured-lineage panels,
+alongside the remaining direct-mark and endpoint plans. The
+[lineage audit](RQ_Specified/A1_transitional_epithelial_state_distinction/LINEAGE_AUDIT.md)
+now prioritizes measured descendants and functional endpoints. Computational
 trajectories do not establish ancestry; ATAC does not measure histone marks,
 methylation or chromosome conformation. Evidence for memory or irreversibility
 still requires the appropriate chase/withdrawal design (A14).

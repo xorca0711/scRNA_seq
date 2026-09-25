@@ -1,0 +1,13 @@
+key	value
+counts_path	X:/GitHub/scRNA_seq/RQ_Specified/A1_transitional_epithelial_state_distinction/processed/ire1/counts.tsv
+samples_path	X:/GitHub/scRNA_seq/RQ_Specified/A1_transitional_epithelial_state_distinction/tables/ire1/sample_manifest.tsv
+counts_md5	b1a3025c427696180daa884bf09635c9
+samples_md5	deb3cd4a99ee5b1d7c3e1ce6360eaf54
+primary_model	~ batch + sex + group
+sensitivity_model	~ batch + group
+min_count	10
+min_total_count	15
+minimum_library_count	100000
+gene_set_min_fraction	0.8
+gene_set_min_genes	5
+pca_features	2000
