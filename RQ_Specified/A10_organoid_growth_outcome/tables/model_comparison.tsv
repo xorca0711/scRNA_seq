@@ -1,0 +1,6 @@
+model	features	wells	units	held_out_r2
+baseline	7.0	885	15.0	0.5864
+baseline_plus_epithelial	18.0	885	15.0	0.6007
+baseline_plus_epithelial_plus_fibroblast	29.0	885	15.0	0.6237
+epithelial_increment		885		0.0144
+fibroblast_increment		885		0.023

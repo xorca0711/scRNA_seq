@@ -1,0 +1,130 @@
+{
+  "schema": "a10-organoid-outcome/v1",
+  "drafted": "2026-09-25",
+  "status": "stage_1_authorized_nothing_fitted",
+  "question": {
+    "register": "RESEARCH_QUESTIONS.md#a10",
+    "hypothesis": "Epithelial programme state carries information about measured organoid growth beyond baseline size and batch; fibroblast response programmes may add a further increment.",
+    "rationale": "RATIONALE.md",
+    "inherits": "docs/NEXT_DATASET_GATE.md, which set the joins and prohibitions for this deposit"
+  },
+  "dataset": {
+    "accession": "GSE307112",
+    "parent": "GSE307351",
+    "design": "CRISPR knockout of candidate genes in mouse alveolar type 2 cells, co-cultured with human lung fibroblasts in Matrigel for two weeks; per-well RNA by SmartSeq3; reads assigned by species",
+    "source_paper": {
+      "roadmap_order": 14,
+      "doi": "10.1073/pnas.2606113123",
+      "owner_reading_status": "not started",
+      "rule": "use the deposit, not the paper's claims; write no study note; the precedent is DEVELOPMENT decision 21"
+    },
+    "observed_counts_from_cached_metadata": {
+      "rna_libraries": 886,
+      "distinct_crispr_targets": 203,
+      "design_rows": 232,
+      "design_distinct_genes": 202,
+      "plates": 4,
+      "plate_replicate_labels_with_rna": 15,
+      "plate_replicate_labels_with_imaging": 16,
+      "imaging_rows": 1883,
+      "imaging_days": ["day07", "day14"],
+      "targets_with_at_least_4_libraries": 146,
+      "targets_with_fewer_than_4": 57
+    },
+    "known_anomalies_for_stage_1": [
+      "One plate replicate has imaging rows but no RNA libraries.",
+      "One target appears in 87 libraries and another in 30, against four for most; their role must be established from the files, not assumed.",
+      "Two target labels in the species QC table are absent from the design table under that spelling.",
+      "Which assigned genome is the mouse epithelium and which the human fibroblasts must be established from the files."
+    ]
+  },
+  "cached_inputs": {
+    "note": "small metadata only; the 303 MB count table is deliberately not fetched before the gate",
+    "files": {
+      "GSE307112_plate_design.csv.gz": {"bytes": 14102, "sha256": "8f6950e6286ed438748bfcb12077e683abe74aa525678096f9ad9bea282b8ad1"},
+      "GSE307112_imaging_outputs.csv.gz": {"bytes": 46028, "sha256": "50ab337c916e0bd195c0fc387067fe0ee138683537e738c23f90ad97ef99d215"},
+      "GSE307112_xenome_stats.csv.gz": {"bytes": 31732, "sha256": "045b9da623db54a59948f1e8e6b68c1587fa4786a6838a51a890dfe59064edf5"}
+    },
+    "not_fetched": {"GSE307112_gene_counts.xlsx": {"bytes": 303511372, "reason": "stage 3 input; fetching it before the gate would prejudge the gate"}}
+  },
+  "outcome": {
+    "primary": "mean organoid area at day 14, conditional on mean organoid area at day 7",
+    "secondary": ["organoid count", "organoid area proportion"],
+    "origin": "the register's own choice, fixed before any fit",
+    "limits": ["growth and morphology, not mature type 1 fate", "not repair in a living lung"]
+  },
+  "baseline_covariates": [
+    "day-7 mean organoid area",
+    "plate",
+    "plate replicate",
+    "well composition from species read fractions"
+  ],
+  "why_composition_is_baseline": "Both compartments are read from one bulk well. Without composition in the baseline, a programme score could report how much of each cell type the well contained rather than a programme state.",
+  "programme_set": {
+    "source": "RQ_Specified/A5_A11_shared_component_contract/tables/frozen_modules.json and the identity and control axes that contract uses",
+    "why_reused": "already frozen, and defined without reference to this screen, so they cannot be tuned to it",
+    "epithelial_side": "mouse symbols used directly",
+    "fibroblast_side": "mapped through the frozen strict one-to-one ortholog table, under the same assayed source fraction gate of 0.7",
+    "prohibited": "defining a new programme from this screen's expression and then testing it on the same wells"
+  },
+  "tests": {
+    "order_fixed_before_fitting": true,
+    "primary_1_epithelial_increment": "baseline versus baseline plus the epithelial programme block",
+    "primary_2_niche_increment": "the retained model from primary 1 versus that plus the fibroblast programme block",
+    "block_not_per_module": "Block comparisons keep the multiplicity small; per-module associations are exploratory, corrected separately, and carry no decision.",
+    "declared_margin_held_out_r2": 0.02,
+    "margin_declared_utc": "2026-09-25, committed before any model was fitted",
+    "margin_meaning": "A useful increment raises leave-one-unit-out predictive R squared on the primary outcome by at least 0.02 in absolute terms. Chosen as a modest floor that a real but small biological signal could clear, while excluding numerical noise from adding standardized features to a model with several hundred wells.",
+    "margin_applies_to": "the epithelial increment as primary, and the fibroblast increment as the second comparison"
+  },
+  "model_specification": {
+    "outcome_transform": "log2 of day-14 mean organoid area plus one",
+    "baseline_terms": ["log2 day-7 mean organoid area plus one", "epithelial read fraction", "log2 epithelial library size", "plate indicators"],
+    "unit_effects_excluded_from_baseline": "A held-out unit's own effect is not estimable from training folds, so plate is used for batch and the unit is the fold rather than a covariate.",
+    "module_scores": "mean log2 CPM over each module's genes present in that compartment's index, with prior count 1 and the compartment's own total counts as denominator",
+    "standardization": "module scores centred and scaled before entering a block",
+    "estimator": "ordinary least squares on the training folds"
+  },
+  "evaluation": {
+    "holdout": "leave one whole biological preparation out",
+    "why": "sibling wells share isolation, fibroblast lot, plate handling and often target; a random well split would leak and inflate any increment",
+    "forbidden": "random well splits, guide-level splits, organoid-level splits"
+  },
+  "assay_controls": {
+    "role": "targets with published effects in this assay validate the assay and the join",
+    "rule": "their recovery is validation, reported as validation, never a finding of this repository",
+    "failure": "if they show no effect, the assay or the join is wrong and the fits are not interpreted",
+    "open": "which targets the authors treated as controls is not established here, because the source paper is unread; it must come from the files or stay open"
+  },
+  "decision_rules": {
+    "supported": "increment exceeds the declared margin and reproduces across held-out preparations",
+    "precisely_absent": "confidence bound excludes the declared margin; retires the specified association for this assay only",
+    "inconclusive": "any other outcome, including too few preparations",
+    "descriptive_only": "stage 1 leaves the biological unit unresolved"
+  },
+  "prohibited_readings": [
+    "Any claim of forecasting growth: expression and outcome are both from day 14.",
+    "Wells, guides or organoids as biological replicates; 886 libraries are not 886 animals.",
+    "Organoid area as mature type 1 fate or as in vivo repair.",
+    "A null for one target as absence of a role, without editing efficiency per well.",
+    "A fibroblast transcriptome change as fibroblast causation; that needs a fibroblast-side perturbation.",
+    "This screen as a test of A5 or A11."
+  ],
+  "cross_question_links": {
+    "status": "opportunities for other questions' own plans, not results and not tests of them",
+    "frozen_module_genes_perturbed_here": {
+      "shared_development_and_injury": ["Areg", "Itgb6"],
+      "development_specific": ["Cdkn2b", "Dsp", "Egfr", "Erbb3", "Fzd5", "Liph", "Rbpjl", "Sema3e", "Slc6a14", "Tfcp2l1", "Zfp385b"],
+      "lesion_specific": ["Tgif1", "Tigit"],
+      "shared_injury_and_lesion": []
+    },
+    "caveat": "Perturbing a gene and seeing a growth change says nothing directly about programme reuse in adult repair. At most, a load-bearing module should have some perturbable member that moves a growth outcome.",
+    "other_questions": "Amphiregulin and its receptors are targets, touching A2 and A9. An interleukin-1 ligand is a target but the receptor is not, so A12 is only partly touched."
+  },
+  "order": [
+    "commit the rationale, plan and this contract",
+    "run stage 1 on the cached metadata and commit its tables",
+    "owner retains or revises the plan",
+    "only then fetch the count table and specify stages 2 and 3"
+  ]
+}

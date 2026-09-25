@@ -1,0 +1,116 @@
+{
+  "stage": "3c",
+  "completed_utc": "2026-09-25T13:32:27.373500+00:00",
+  "script": "RQ_Specified/A10_organoid_growth_outcome/scripts/04_robustness.py",
+  "script_sha256": "f8db9aaae5d7a6b8b25231cbfacf9331cd62885a52ef9b9157bd8771ff9ec8af",
+  "declared_margin": 0.02,
+  "fit_run_sha256": "bf4a8e5c13ed3577911d5b895f9a8effc2f54b02829847edec739cf45d257278",
+  "sensitivity": [
+    {
+      "check": "primary, as fitted",
+      "wells": 885,
+      "units": 15,
+      "baseline_r2": 0.5864,
+      "epithelial_increment": 0.0144,
+      "fibroblast_increment": 0.023,
+      "epithelial_clears_margin": false,
+      "fibroblast_clears_margin": true
+    },
+    {
+      "check": "add fibroblast library size to baseline",
+      "wells": 885,
+      "units": 15,
+      "baseline_r2": 0.5763,
+      "epithelial_increment": 0.0178,
+      "fibroblast_increment": 0.0231,
+      "epithelial_clears_margin": false,
+      "fibroblast_clears_margin": true
+    },
+    {
+      "check": "drop the extreme-replication target (TIGIT)",
+      "wells": 798,
+      "units": 15,
+      "baseline_r2": 0.5803,
+      "epithelial_increment": 0.0163,
+      "fibroblast_increment": 0.0179,
+      "epithelial_clears_margin": false,
+      "fibroblast_clears_margin": false
+    },
+    {
+      "check": "drop control-like libraries (TDTOMATO)",
+      "wells": 856,
+      "units": 15,
+      "baseline_r2": 0.6236,
+      "epithelial_increment": 0.0113,
+      "fibroblast_increment": 0.0222,
+      "epithelial_clears_margin": false,
+      "fibroblast_clears_margin": true
+    },
+    {
+      "check": "drop both",
+      "wells": 769,
+      "units": 15,
+      "baseline_r2": 0.6201,
+      "epithelial_increment": 0.0134,
+      "fibroblast_increment": 0.0159,
+      "epithelial_clears_margin": false,
+      "fibroblast_clears_margin": false
+    }
+  ],
+  "per_unit": {
+    "units": 15,
+    "epithelial_increment_positive_in": 8,
+    "fibroblast_increment_positive_in": 10
+  },
+  "assay_validation": {
+    "genes_testable": 76,
+    "reduced_when_targeted": 58,
+    "binomial_one_sided_p": 2.3566211197875785e-06,
+    "reading": "supports that editing reduces the targeted transcript and that the mouse sheet is the perturbed compartment"
+  },
+  "top_single_features": [
+    {
+      "feature": "epi__shared_remodelling",
+      "compartment": "epithelial",
+      "module": "shared_remodelling",
+      "single_feature_increment": 0.0038
+    },
+    {
+      "feature": "epi__shared_I_and_L",
+      "compartment": "epithelial",
+      "module": "shared_I_and_L",
+      "single_feature_increment": 0.0036
+    },
+    {
+      "feature": "epi__injury_residual",
+      "compartment": "epithelial",
+      "module": "injury_residual",
+      "single_feature_increment": 0.0017
+    },
+    {
+      "feature": "epi__shared_D_and_I",
+      "compartment": "epithelial",
+      "module": "shared_D_and_I",
+      "single_feature_increment": 0.0016
+    },
+    {
+      "feature": "fib__shared_D_and_I",
+      "compartment": "fibroblast",
+      "module": "shared_D_and_I",
+      "single_feature_increment": -0.001
+    },
+    {
+      "feature": "fib__shared_remodelling",
+      "compartment": "fibroblast",
+      "module": "shared_remodelling",
+      "single_feature_increment": -0.0026
+    }
+  ],
+  "python": "3.12.14",
+  "scipy": "1.18.0",
+  "outputs": {
+    "sensitivity.tsv": "bf30ac7b1f47ae597471ea156e0a3339ac75565ddb27983e9ea7e5e11f9c6684",
+    "per_unit_increments.tsv": "7c0b3aab06e202868748259e4927056be7b3282a77006119a736224c17f8139c",
+    "module_contributions.tsv": "9e89380f9dbdb3c20969e4ef06e76a4e02ecc5ac3354c5050fdebb147e0414b5"
+  }
+}
