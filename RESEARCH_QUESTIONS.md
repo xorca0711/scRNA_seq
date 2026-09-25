@@ -79,8 +79,9 @@ none of the predefined markers or eligible pathways does. The verified
 adds directionally stable but significance-sensitive IRE1α effects, direct
 histone profiles at 23 loci in two induced-cell preparations, and one-donor
 methylation-domain context. Histone directions can depend on H3/window choice.
-Recovered HPCS trace-linked RNA composition covers 5,333 cells / 22 source
-labels; biological-unit independence and current mScarlet remain unresolved.
+Recovered HPCS trace-linked RNA composition covers 5,333 cells / 22 sources;
+the latest primary animal table resolves the mouse identities, while current
+mScarlet remains unavailable.
 The [robustness batch](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ROBUSTNESS_REPORT.md)
 shows promoter-dependent CDKN1A acetylation, source-sensitive HPCS fractions and
 chase/library aliasing that prevents the proposed fixed-library-adjusted temporal
@@ -90,6 +91,13 @@ plus their direct interaction. Seven transported markers change in both
 genotypes; four have detected effect-size interactions, although Sftpc's effect
 nearly vanishes when WT2 is omitted. HPCS's author biological
 map is now verified, and all stringent K12 changes are confidence abstentions.
+The [regulatory/outcome continuation](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/REGULATORY_FATE_REPORT.md)
+resolves HPCS harvest timing and Tsutsui perturbation-library identities, and
+reanalyzes AP-1 microscopy with fields nested within mice. HOPX responses have
+opposite directions by lung region; culture program suppression and
+differentiation capacity remain separate experiments. TP53 selected RNA lists
+include shared and opposing responses across AT1/AT2 origins. These results
+make origin and local context necessary parts of the proposed comparison.
 The [reference map](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ANALYSIS_REFERENCE_MAP.md)
 connects published precedents, dependent reanalyses and the next decision.
 These within-context measurements do not establish an epigenetic taxonomy.

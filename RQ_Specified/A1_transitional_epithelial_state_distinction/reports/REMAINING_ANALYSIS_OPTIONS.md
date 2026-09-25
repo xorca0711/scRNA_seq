@@ -1,5 +1,12 @@
 # A1: useful follow-up analysis and what it can resolve
 
+**Latest, 25 September 2026:** the owner requested proceeding with the remaining
+three avenues. The [new report](REGULATORY_FATE_REPORT.md) records completed
+mouse-identity recovery, regulatory-source resolution and outcome reanalysis.
+Its final table is the current list of external requirements; the earlier
+queues below are preserved history. HPCS mouse identity and Hopx harvest time
+are no longer missing inputs. Source requests are drafted but unsent.
+
 **Superseded status, 25 September 2026:** the owner's adaptive continuation has
 executed the useful newly eligible work. Use the
 [closure decision ledger](EVIDENCE_CLOSURE_REPORT.md#adaptive-decisions-for-every-remaining-branch)

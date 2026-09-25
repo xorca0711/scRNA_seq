@@ -53,6 +53,21 @@ Those four stage 4 decisions were made the same day; see the section above.
 
 ## Current status, 25 September 2026
 
+**Current task: A1 three-avenue continuation.** The
+[regulatory and outcome report](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/REGULATORY_FATE_REPORT.md)
+records completed identity recovery, regulatory-source resolution and measured
+outcome reanalysis. All 22 HPCS aliases are named mice and Hopx harvest is
+resolved at 14 weeks. AP-1 microscopy aggregated to three mice per genotype
+shows opposite regional HOPX responses (24.55-point interaction; exact p=0.10).
+Tsutsui's 64 DDBJ identities and 65 culture summaries are recovered. TP53's
+selected shared set includes 109 opposite-sign genes; full GEO inputs are private.
+Pre-established analyses were checked before execution and unnecessary temporal
+correlations/raw-read processing were pruned. Remaining external requirements
+and unsent source requests are explicit. Old numerical results remain intact.
+PR #73 is merged; delivery branch: `codex/a1-regulatory-fate-linkage`.
+
+### Previous milestone: A1 evidence closure (merged PR #73)
+
 **Current task: A1 adaptive evidence closure.** Read the
 [closure report](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/EVIDENCE_CLOSURE_REPORT.md)
 and [analysis-reference map](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ANALYSIS_REFERENCE_MAP.md).

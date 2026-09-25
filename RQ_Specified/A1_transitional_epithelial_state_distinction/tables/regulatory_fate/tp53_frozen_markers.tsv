@@ -1,0 +1,9 @@
+gene	supplied_set	ager_log2FC	sftpc_log2FC	sign_class	limitation
+Itgb6	not in selected lists			unknown	absence from selected list is not evidence of no response
+Krt8	Ager MDM2-KO Unique	1.10284961205196		up	unlisted contrast is unknown, not zero; no direct origin interaction tested
+Krt19	Sftpc MDM2-KO Unique		2.59808587408452	up	unlisted contrast is unknown, not zero; no direct origin interaction tested
+Cldn4	MDM2-KO Shared	4.39076234717622	5.863786356153	both_up	unlisted contrast is unknown, not zero; no direct origin interaction tested
+Ager	not in selected lists			unknown	absence from selected list is not evidence of no response
+Sftpc	Sftpc MDM2-KO Unique		-2.55214022800849	down	unlisted contrast is unknown, not zero; no direct origin interaction tested
+Cdkn1a	MDM2-KO Shared	1.89046041357485	2.80524601490322	both_up	unlisted contrast is unknown, not zero; no direct origin interaction tested
+Krt7	Sftpc MDM2-KO Unique		1.73942287660612	up	unlisted contrast is unknown, not zero; no direct origin interaction tested

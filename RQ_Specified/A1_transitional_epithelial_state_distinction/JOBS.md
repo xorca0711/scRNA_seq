@@ -1,6 +1,21 @@
 # A1 execution jobs
 
-## Latest adaptive closure batch
+## Latest: three requested remaining avenues
+
+Read [REGULATORY_FATE_REPORT.md](reports/REGULATORY_FATE_REPORT.md).
+Delivery: `codex/a1-regulatory-fate-linkage`, after merged PR #73.
+
+| Avenue | Executed work | Remaining requirement |
+|---|---|---|
+| Identities | All 22 HPCS mice resolved; four additional listed animals recorded; 14-week Hopx harvest reconciled; 2020 TIGIT author-code catalog inspected | TIGIT pool members, HPCS current reporter, and libraries spanning chase |
+| Regulatory comparisons | All 64 Tsutsui run identities recovered; published normalized-perturbation analyses and 325/126 gene sets incorporated | Comparable per-preparation signal/count inputs with spike-in provenance; PATS scaling |
+| Regulation to outcome | AP-1 mouse-level regional interaction and nine omissions; 65 culture endpoint summaries; TP53 selected-list sign audit | Linked replicated chromatin/fate experiments; TP53 full inputs currently private |
+
+Pre-established references were checked before numerical launch. Scripts 32–35
+and five focused unit tests are complete. Both figures were inspected and old
+numerical hashes preserved. Exact source requests are prepared, not sent.
+
+## Previous adaptive closure batch
 
 Read [EVIDENCE_CLOSURE_REPORT.md](reports/EVIDENCE_CLOSURE_REPORT.md) and
 [ANALYSIS_REFERENCE_MAP.md](reports/ANALYSIS_REFERENCE_MAP.md). PRs #70/#71 are

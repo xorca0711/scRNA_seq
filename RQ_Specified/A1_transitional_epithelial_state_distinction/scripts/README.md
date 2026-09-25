@@ -126,3 +126,14 @@ Script 10 updates presentation only. Exact first-run source bytes are preserved
 in [the execution archive](../reports/execution_sources/2026-09-25/manifest.json).
 Do not execute archived source files as a workaround for the overwrite guard.
 The [report](../reports/FIRST_BATCH_REPORT.md) links all run records and limitations.
+
+## Regulatory and outcome continuation
+
+Scripts 32–35 implement bounded append-only acquisition, exact HPCS/DDBJ joins,
+nested AP-1 mouse outcomes, culture source measurements, TP53 sign audits and
+independent verification/figures. `a1_regulatory_fate.py` holds small tested
+calculation helpers. The new [report](../reports/REGULATORY_FATE_REPORT.md)
+and [contract](../config/regulatory_fate_analysis.json) describe each estimand.
+Scripts 33–35 refuse completed-output overwrites; do not rerun as a routine
+status check. Script 32 validates the hash and URL when reusing a fetched file;
+its transport inventory does not substitute for source-content validation.

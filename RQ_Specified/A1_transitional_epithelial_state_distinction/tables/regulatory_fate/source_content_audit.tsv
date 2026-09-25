@@ -1,0 +1,36 @@
+name	sha256	bytes	content_review
+tsutsui_bioc.xml	2b00153a72d9ac5590bd559174df8e18aa5e4ce7a096e8aaf1ffa359782b054b	172210	payload retrieved; purpose evaluated in report
+hpcs2026_bioc.xml	86dfbb1bea6c037ad55a3c033e944132b03ab4fbd22332569348a2e8a0840cc9	210547	payload retrieved; purpose evaluated in report
+lungTumorEvolution_repo.json	19af8759d7f5e9ce85f636e49f75c12685d909b19e0e945606f8ade31866692e	5688	payload retrieved; purpose evaluated in report
+ap1_pubmed.xml	bb9a7eefb751506f18eac5ccaa3ccd997de370b6f06dc67cbe79a218a41527e6	356	zero search hits; superseded by full PubMed XML
+tsutsui_experiment.xml	4f55f7f5629d9075cdc208983f5772c1c64bead3d5d5da74a770b08df5b4563e	2477	payload retrieved; purpose evaluated in report
+hpcs_reporting.pdf	7e2effc79b24c5be9b0e12b7b06887fa59eff1e2d3b85c90b64f2b9d6e0aa1ba	4277036	payload retrieved; purpose evaluated in report
+hpcs_resources.xlsx	3026a3aff6305276fd19e6b83f34eda0f9db50000110ca2015512cc48fd579eb	215085	Workbook contents identified by internal sheets: Mice; Mouse Flow Antibodies; Primers; crRNAs; ISH; IHCIF Antibodies; TotalSeq-B Hash Antibodies
+lungTumorEvolution_tree.json	5aeeb94cdf714ea9ca7a4f6f492b1b6a447d4c4eebab798bc5d435b53b226610	215408	payload retrieved; purpose evaluated in report
+ap1_pubmed_full.xml	6a17ed3c49e4f7ca639554816faf20c9c458049ab7629eb5d41f53a9ab8c70d7	13714	payload retrieved; purpose evaluated in report
+ap1_preprint_bioc.xml	3acc5f4c51ec704cd708d3379196db9f66442a96c9bf275773710e0de0196b52	6148	API error page; excluded as article evidence
+lungTumorEvolution_README.md	6a8ccd9f7c422b53be29fcdbc8a16e0685250a05b42d4e11677b8b20dd026b91	2000	payload retrieved; purpose evaluated in report
+tsutsui_sra_DRX770877.xml	b7109ab7aac38e3fa01f4a6c353bf62c18a00396daa230bee1aa0ec0ab858a3f	6303	payload retrieved; purpose evaluated in report
+PRJDB37980_sra.xml	59ab540468d9f8578071b8cd3046c0a54c9f35c638ecfdfaac7d3bbfb71d0006	161822	payload retrieved; purpose evaluated in report
+PRJDB37982_sra.xml	b9d67cf0bf9134e83331ea85dd9368fdfb26c5deb77c1d7aa456df20f065b965	37772	payload retrieved; purpose evaluated in report
+PRJDB37983_sra.xml	4cdf56f842008f14be0e6255797e272594574864bfba2d900c743ef698bd7f99	209792	payload retrieved; purpose evaluated in report
+ap1_preprint.html	3b5678f92608d1fd4bd68e559bc952fbe50d98c03517c3eddc65c535125ae871	344248	payload retrieved; purpose evaluated in report
+tp53_preprint.html	f6185c1a68939f13b70ff7ae93d385a4ec512ce912fa6ebcedd9a9469f076743	372484	payload retrieved; purpose evaluated in report
+tsutsui_data2.xlsx	446882460dfeb3ced746617ab7fccd5d92c8fa216b25ff8fcb26a8b03e2410d3	45764	Workbook contents identified by internal sheets: Supplementary Data 2
+tsutsui_data3.xlsx	2f6e964689fa2b60cbb4c52eedb9ec7263f6c61b5cdbb5fe7efb77e73d50938b	17247	Workbook contents identified by internal sheets: Supplementary Data 3
+ap1_supplements.html	70b8b71e97baba4163fa27d635ccc2bb1f848e65c13584b392d4adf9aba4456b	117554	payload retrieved; purpose evaluated in report
+tp53_supplements.html	9e3d0baa3aae51510177406619d3c04ebad66f99b08da42f8b9c91d46ae6abe3	108853	payload retrieved; purpose evaluated in report
+ap1_table9.xlsx	426e2396f84daeeb196fea38de32d4cfad0e47294707c877e75149060d57828d	133624	Workbook contents identified by internal sheets: WT; AP-1 mutant
+tp53_table1.xlsx	6b047e5135ff6a94f5a3eb16e0bfbe1b04eb08162d0755cd39710fbfcdb707a7	644990	Workbook contents identified by internal sheets: Sftpc MDM2-KO Unique; Ager MDM2-KO Unique; MDM2-KO Shared
+tp53_GSE335749.txt	1a953fbea592d871749358bd92f9192a96d806e31df1ffbe88e446a03dbf7a48	17759	GEO private-access notice; availability evidence only
+tp53_GSE335750.txt	a30e0b4370711aa4337066fed69f76c37c2d13f7f2b8a914f6a047548fb757da	17759	GEO private-access notice; availability evidence only
+ap1_DC1.xlsx	ffa4d1b8d72f43ae8a4cf6aae16af9981a9345c8665ad2d0b9b3f9f7ed5aaea0	83719	Workbook contents identified by internal sheets: 14d SeV vs PBS_gain; 14d SeV vs PBS_loss; 49d SeV vs 14d SeV_gain; 49d SeV vs 14d SeV_loss; KRAS vs control_gain; KRAS vs control_loss
+ap1_DC2.xlsx	b4165ac1cdf8192f8806ea5cfcc6e613cd7130675f114442698b8fbe43f9a8f3	65836	Workbook contents identified by internal sheets: GO analysis_T2
+ap1_DC3.xlsx	3717bff9f99832758f0137b666d3b7cbd87ac7643efe9fc8a0fd490d57b26532	24367	Workbook contents identified by internal sheets: %AT2cells AP-1+; %AP-1+ AT2 cells transitioning; FOSB-PBSctrl-WT; JUNB-PBSctrl-WT; FOSB-2wkSeV-WT; JUNB-2wkSeV-WT; FOSB-PBSctrl-mut; JUNB-PBSctrl-mut; FOSB-2wkSeV-mut; JUNB-2wkSeV-mut
+ap1_DC4.xlsx	6fe971820c74ee4514e057256b4e75202aa160652ae12dd634ebcca14c7502ac	18165	Workbook contents identified by internal sheets: AT2 cell neighbor analysis; PBSctrl-WT; PBSctrl-mut; 2wkSeV-WT; 2wkSeV-mut
+ap1_DC5.xlsx	9f5c289627829acc3cd41eb19a4a323f199f1c86121c6c3af03c30f93f1b13eb	17615	Workbook contents identified by internal sheets: %HOPX+ AT2 cells; wt SeV in situ; wt SeV de novo; mut SeV in situ; mut SeV de novo
+ap1_DC6.xlsx	3b29328409133ffd0153cfd175818f0472657357528582292aca7ee5b1a92e51	1053720	Workbook contents identified by internal sheets: 14d SeV vs. PBS; 49d SeV vs. 14d SeV; KRAS vs. control
+ap1_DC7.xlsx	1e85900242276ec756448a9e3ffc65b2e06c000b5d5c0c0120026f69740f1dec	3308294	Workbook contents identified by internal sheets: all peaks; peaks with AP-1 motifs
+ap1_DC8.xlsx	0333fadfbe39c0e846874510ae06f2e15137cdf1f5ac3d7253caf8c96df3cd52	4362866	Workbook contents identified by internal sheets: RNA vs. ATAC scatter plot; RNA vs. ATAC_highlighted genes; scRNA-seq AT2 14d SeV vs PBS; HOMER annotate ATAC 14 day SeV
+ap1_DC10.xlsx	33d66b59e38bde2d6b4333cac9a22032c9ba4bb59a6a7f98aa0a29ae304d24b3	71912	Workbook contents identified by internal sheets: module genes; module peaks
+ap1_DC11.xlsx	7dd797317572d747ab817d2f96333701e54808b294a9e3d78f9bd746464bbc92	121125	Workbook contents identified by internal sheets: Sheet1

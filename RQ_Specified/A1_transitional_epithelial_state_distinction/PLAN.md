@@ -7,7 +7,16 @@ results and earlier repository analyses informed the hypotheses. The owner autho
 checks are not biological results. Sources and assay availability
 are in [STUDY_MAP.md](STUDY_MAP.md) and [metadata](metadata/README.md).
 
-**Latest execution, 25 September 2026:** [adaptive closure](reports/EVIDENCE_CLOSURE_REPORT.md)
+**Latest execution, 25 September 2026:** the
+[three-avenue continuation](reports/REGULATORY_FATE_REPORT.md) resolves HPCS mice
+and Hopx harvest, recovers regulatory perturbation library identities, and
+extends published outcome analyses using animal-level AP-1 microscopy, culture
+source data and signed TP53 gene lists. Regional effects rule out a universal
+beneficial interpretation of transitional-program suppression. The report's
+decision ledger replaces the older remaining queue; same-cell chromatin/fate
+mediation still needs new measurements.
+
+**Previous execution:** [adaptive closure](reports/EVIDENCE_CLOSURE_REPORT.md)
 adds recovered CD44 identities and paired genotype interaction tests, explicit
 HPCS annotation/abstention checks, and bounded external-cohort eligibility
 decisions. [Established references](reports/ANALYSIS_REFERENCE_MAP.md) were
