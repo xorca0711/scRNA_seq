@@ -1,0 +1,6 @@
+check	wells	units	baseline_r2	epithelial_increment	fibroblast_increment	epithelial_clears_margin	fibroblast_clears_margin
+primary, as fitted	885	15	0.5864	0.0144	0.023	False	True
+add fibroblast library size to baseline	885	15	0.5763	0.0178	0.0231	False	True
+drop the extreme-replication target (TIGIT)	798	15	0.5803	0.0163	0.0179	False	False
+drop control-like libraries (TDTOMATO)	856	15	0.6236	0.0113	0.0222	False	True
+drop both	769	15	0.6201	0.0134	0.0159	False	False

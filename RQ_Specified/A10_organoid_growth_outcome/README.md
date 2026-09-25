@@ -3,19 +3,22 @@
 Question-specific work for [A10](../../RESEARCH_QUESTIONS.md#a10). The canonical
 hypothesis stays in the register.
 
-**Status: stage 1 complete; nothing fitted.** Read
+**Status: stages 1 and 3 complete; the analysis has run.** Read
 [RATIONALE.md](RATIONALE.md) for the biology and the argument,
 [PLAN.md](PLAN.md) for the analysis structure, and
 [the audit](reports/STAGE1_IDENTITY_AUDIT.md) for what the design can and cannot
 support.
 
-**Stage 1 verdict: the joins hold, the biological unit does not.** 885 of 886 RNA
-libraries link to both imaging days. But nothing in the deposit says whether a
-replicate index is a separate cell isolation or a repeat of one preparation, and a
-probe of the sample metadata showed the deposit records only a batch label. Under the
-register's own rule that restricts this screen to within-screen descriptive
-association. Resolving it needs a methods fact or the authors, which is an owner
-decision because that paper's reading is reserved.
+**Result: both increments are inconclusive.** The epithelial increment fails the
+declared margin, and the fibroblast increment clears it only in the primary fit, then
+falls below it once the one over-replicated target is removed. The baseline itself does
+not transfer to a held-out unit, with a median within-unit predictive R squared near
+zero against a pooled 0.586. Read
+[the stage 3 report](reports/STAGE3_FIT_REPORT.md) first.
+
+The assay validation passes convincingly, so this is a negative result about the
+hypothesis rather than a broken pipeline. The biological unit also remains unresolved,
+which would have capped any positive result at within-screen description.
 
 ## Why this question is worth the effort
 
@@ -56,6 +59,7 @@ an animal, and the deposit does not say how many independent preparations there 
 | [PLAN.md](PLAN.md) | Four-stage structure, outcome, covariates, tests, holdout, decision rules |
 | [config/a10_outcome_contract.json](config/a10_outcome_contract.json) | The same, machine-readable, with cached file hashes |
 | [reports/STAGE1_IDENTITY_AUDIT.md](reports/STAGE1_IDENTITY_AUDIT.md) | What joined, why the unit is unresolved, and what stage 2 must assume |
+| [reports/STAGE3_FIT_REPORT.md](reports/STAGE3_FIT_REPORT.md) | The fitted result, its sensitivity checks and the per-unit failure |
 | [reports/PUBLIC_DATA_SEARCH.md](reports/PUBLIC_DATA_SEARCH.md) | Whether any public cohort could validate A10, and why none can |
 | `scripts/01_audit_identities.py` | Stage 1: joins and units, metadata only |
 | `scripts/02_extract_counts.py` | Stage 3a: stream the two count sheets, cache the declared gene set |

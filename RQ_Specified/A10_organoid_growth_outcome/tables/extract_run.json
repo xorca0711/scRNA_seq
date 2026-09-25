@@ -1,0 +1,58 @@
+{
+  "stage": "3a",
+  "purpose": "stream the count workbook and cache the declared gene set only",
+  "completed_utc": "2026-09-25T13:29:44.756718+00:00",
+  "script": "RQ_Specified/A10_organoid_growth_outcome/scripts/02_extract_counts.py",
+  "script_sha256": "855396123a07aad1245ec696d64ab2280dbb718d802eb0ab30384bd3f8de187a",
+  "config_sha256": "b43cbbcfee0279a13a1f9da466c5990c98f0eb35504b67b309ba6d93feb01fcd",
+  "workbook_sha256": "60736e5c153a4fb92908f19148ebb5ef2b59f7ade97fb1056deee7d0205acc33",
+  "workbook_bytes": 303511372,
+  "tracked_inputs": {
+    "RQ_Specified/A5_A11_shared_component_contract/tables/frozen_modules.json": "059f72c07b5c35cb597c219e87606249c814712d238fd2a75724a91761913bcc",
+    "RQ_Specified/A5_A11_shared_component_contract/tables/module_membership.tsv": "4531c91bc67848faf87ad7644a6e950cdd16ecc0f2e3d2e90b994e76d875d704",
+    "Research Article/epithelial_state_specificity/modules.json": "64ceac751679f6dcbc5be48cbee7a6ea4bba17ad39ff1ba2eebfdd575f78e12d",
+    "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u4_resources/strict_one_to_one_orthologs.csv": "d2a5bc6e2a11f685afeeb214dc7fade9f7aaafa0036cc364d2c28a89ca83df87"
+  },
+  "species_sheets": {
+    "mouse": "sheet1",
+    "human": "sheet2",
+    "note": "the workbook names its sheets by species, which resolves the stage 1 hold on which assigned genome is which"
+  },
+  "per_species": {
+    "mouse": {
+      "rows_scanned": 52636,
+      "genes_wanted": 1613,
+      "genes_found": 1575,
+      "libraries": 886
+    },
+    "human": {
+      "rows_scanned": 58302,
+      "genes_wanted": 1449,
+      "genes_found": 1442,
+      "libraries": 886
+    }
+  },
+  "libraries": 886,
+  "module_sizes": {
+    "shared_remodelling": 12,
+    "development_specific": 94,
+    "lesion_specific": 91,
+    "injury_residual": 386,
+    "shared_D_and_I": 5,
+    "shared_I_and_L": 7,
+    "AT1_published_400": 400,
+    "AT2_published_400": 400,
+    "HALLMARK_P53_PATHWAY": 200,
+    "HALLMARK_HYPOXIA": 199,
+    "HALLMARK_INFLAMMATORY_RESPONSE": 197
+  },
+  "cache": {
+    "path": "RQ_Specified/A10_organoid_growth_outcome/cache/a10_selected_counts.npz",
+    "sha256": "61502bb7e46f857cbe512243d73fe5daaa337a6995feba80185efbdccad92dc7",
+    "bytes": 3988506
+  },
+  "python": "3.12.14",
+  "outputs": {
+    "library_totals.tsv": "19c90e9aa068445edfbb21cc8af95d581427db11e4fdbc5f51943380f4f90ca2"
+  }
+}

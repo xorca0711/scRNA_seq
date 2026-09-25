@@ -1,0 +1,61 @@
+{
+  "stage": "3b",
+  "completed_utc": "2026-09-25T13:31:16.369303+00:00",
+  "script": "RQ_Specified/A10_organoid_growth_outcome/scripts/03_fit_outcome_models.py",
+  "script_sha256": "cfbc49080c3971fd250a7024063755c5734ad2ead3bae29f8692ad3105b5e29a",
+  "config_sha256": "b43cbbcfee0279a13a1f9da466c5990c98f0eb35504b67b309ba6d93feb01fcd",
+  "cache_sha256": "61502bb7e46f857cbe512243d73fe5daaa337a6995feba80185efbdccad92dc7",
+  "declared_margin_held_out_r2": 0.02,
+  "wells_fitted": 885,
+  "units": 15,
+  "held_out_r2": {
+    "baseline": 0.5864,
+    "baseline_plus_epithelial": 0.6007,
+    "baseline_plus_epithelial_plus_fibroblast": 0.6237
+  },
+  "epithelial_increment": 0.0144,
+  "fibroblast_increment": 0.023,
+  "primary_verdict_epithelial": "below_declared_margin",
+  "module_coverage": {
+    "epithelial": {
+      "shared_remodelling": 1.0,
+      "development_specific": 0.989,
+      "lesion_specific": 1.0,
+      "injury_residual": 0.984,
+      "shared_D_and_I": 1.0,
+      "shared_I_and_L": 1.0,
+      "AT1_published_400": 0.968,
+      "AT2_published_400": 0.965,
+      "HALLMARK_P53_PATHWAY": 0.975,
+      "HALLMARK_HYPOXIA": 0.98,
+      "HALLMARK_INFLAMMATORY_RESPONSE": 1.0
+    },
+    "fibroblast": {
+      "shared_remodelling": 0.833,
+      "development_specific": 0.915,
+      "lesion_specific": 0.802,
+      "injury_residual": 0.86,
+      "shared_D_and_I": 1.0,
+      "shared_I_and_L": 0.714,
+      "AT1_published_400": 0.882,
+      "AT2_published_400": 0.89,
+      "HALLMARK_P53_PATHWAY": 0.95,
+      "HALLMARK_HYPOXIA": 0.93,
+      "HALLMARK_INFLAMMATORY_RESPONSE": 0.959
+    }
+  },
+  "knockout_validation": {
+    "genes_testable": 76,
+    "genes_reduced_when_targeted": 58
+  },
+  "evaluation": "leave one whole plate-replicate unit out; units are batches, not verified independent preparations",
+  "interpretation_limit": "within-screen descriptive association; expression and outcome are both day 14",
+  "python": "3.12.14",
+  "pandas": "2.3.3",
+  "numpy": "2.4.6",
+  "outputs": {
+    "model_comparison.tsv": "c8670615e92b3394f383358bac0d924ae5a80777a6c5a486aa501cd6fbb1c597",
+    "module_scores.tsv": "de0a083b521e5abbde0775c0769d8f78823cf3e07c3ef1ac97daf88f5bc09687",
+    "knockout_validation.tsv": "c8fecc96ff2c0030d06c416a7a210ec497ca251f5e45fddc63bf448cbc6c9a47"
+  }
+}
