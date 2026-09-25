@@ -1,0 +1,104 @@
+{
+  "schema": "a11-kim2020-test/v1",
+  "preregistered": "2026-09-25",
+  "status": "preregistered_not_scored",
+  "authorization": "Owner chose this design at stage 4 of the shared component contract (DEVELOPMENT decision 37). Scoring waits for the owner to retain this plan.",
+  "question": {
+    "register": "RESEARCH_QUESTIONS.md#a11",
+    "hypothesis": "Lesion-associated epithelial programmes add to a shared plasticity component.",
+    "test": "Does the frozen lesion-specific module rise in lung adenocarcinoma epithelium relative to the same patient's normal type 2 cells, in a cohort never scored with it?"
+  },
+  "discovery": {
+    "role": "discovery only; already scored and reported, so it cannot also evaluate",
+    "cohort": "GSE308103",
+    "module_identity": "lesion_specific is gene-for-gene identical to HPCS_without_ADI_or_operational_markers, scored by the completed human run",
+    "configuration": "unc20_pooled, label AT2, cell floor 50, LUAD minus normal",
+    "source": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_values.csv",
+    "n_patients": 23,
+    "mean_difference_log2cpm": 0.3232,
+    "sd": 0.3849,
+    "standardized_effect": 0.8398,
+    "positive_patients": 19
+  },
+  "cohort": {
+    "accession": "GSE131907",
+    "source": "Kim et al. 2020, Nature Communications",
+    "doi": "10.1038/s41467-020-16164-1",
+    "pairing_evidence": "the deposit's Feature Summary patient id column, not sample-name resemblance",
+    "verified_paired_patients": ["P0006", "P0008", "P0009", "P0018", "P0019", "P0020", "P0028", "P0030", "P0031", "P0034"],
+    "prior_use": "opened once, for trial E1 on EGFR ligand RNA; never scored with any module in this plan"
+  },
+  "populations": {
+    "normal_arm": {"sample": "the patient's normal-lung sample", "author_labels": ["AT2"]},
+    "lesion_arm": {"sample": "the patient's tumour sample", "author_labels": ["tS1", "tS2", "tS3"], "pooling": "all three pooled; no subtype selected"},
+    "difference_from_discovery": "Discovery used atlas-mapped type 2-like cells in both arms, which in lesions included lesional cells resembling type 2. Here the lesion arm is all tumour epithelium by author label. This is a stricter transport test. A positive result survives a change of cell definition; a negative one may reflect it.",
+    "malignancy": "The author annotation has no copy-number malignancy label, so the lesion arm may include non-malignant epithelium."
+  },
+  "eligibility": {
+    "unit": "patient",
+    "cell_floor_per_arm": 50,
+    "cell_floor_origin": "inherited from the discovery primary configuration, not chosen for this cohort",
+    "unit_floor": 3,
+    "gate1_threshold": 0.7,
+    "gate1_statistic": "assayed source fraction: strict one-to-one ortholog, then presence in the Kim gene index, over the module's mouse length",
+    "on_gate_failure": "a module failing gate 1 is not scored; if the primary fails, the test is not run and the result is recorded as ineligible"
+  },
+  "scoring": {
+    "instrument": "the discovery run's own procedure in Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_paired_pathways.R",
+    "pseudobulk": "sum raw UMI over the arm's cells for each patient",
+    "normalization": "edgeR calcNormFactors method TMM across all eligible pseudobulks together, then cpm with log TRUE and prior.count 1",
+    "module_score": "mean logCPM over the module's genes present in the gene index",
+    "difference": "lesion arm score minus normal arm score, per patient",
+    "instrument_check": "Before any Kim score, the same code must reproduce the discovery's tracked per-patient differences for this module from the cached discovery pseudobulks, within 1e-6. If it cannot, Kim is not scored and the discrepancy is reported."
+  },
+  "primary": {
+    "family_size": 1,
+    "module": "lesion_specific",
+    "estimand": "mean within-patient difference, lesion epithelium minus normal type 2",
+    "test": "exact two-sided Wilcoxon signed-rank",
+    "alpha": 0.05,
+    "estimate": "Hodges-Lehmann with exact 95 percent confidence interval",
+    "sensitivity_interval": "paired t 95 percent confidence interval",
+    "smallest_effect_of_interest_log2cpm": 0.10,
+    "decision_rules": {
+      "transports": "p below 0.05 and estimate above zero",
+      "contradicts": "p below 0.05 and estimate below zero",
+      "precisely_absent": "upper bound of the exact 95 percent interval below 0.10; retires the specified addition only",
+      "inconclusive": "any other outcome"
+    }
+  },
+  "secondary": {
+    "family": "Benjamini-Hochberg across the three tests below, q below 0.05, same test as primary",
+    "tests": [
+      {"name": "beyond_shared", "estimand": "per-patient lesion_specific difference minus shared_remodelling difference"},
+      {"name": "stress_excluded", "module": "lesion_specific_stress_excluded", "definition": "lesion_specific minus every gene in the three frozen mouse Hallmark control sets"},
+      {"name": "injury_lesion_pair", "module": "shared_I_and_L"}
+    ]
+  },
+  "descriptive_only": [
+    "shared_remodelling score differences",
+    "type 1 and type 2 identity axis differences",
+    "three Hallmark control axis differences",
+    "leave-one-patient-out range of the primary mean",
+    "the primary excluding the double-primary patient P0028"
+  ],
+  "power": {
+    "source": "tables/power.tsv from scripts/00_power_calculation.py",
+    "n_patients_assumed": 8,
+    "at_discovery_effect": {"wilcoxon_exact": 0.4642, "paired_t": 0.5345},
+    "at_half_effect": {"wilcoxon_exact": 0.1456, "paired_t": 0.1777},
+    "consequence": "A null result is inconclusive unless the precise-absence rule is met, which is unlikely with this many patients."
+  },
+  "prohibited_readings": [
+    "A null is not a refutation unless the precise-absence rule is met.",
+    "Tumour epithelium is not confirmed malignant.",
+    "Same-patient pairing controls donor, not stage, smoking or driver status, which vary across patients.",
+    "A positive result supports transport of this addition; it does not show that no other lesion programme exists."
+  ],
+  "order": [
+    "commit this contract and the plan",
+    "run the eligibility gates and commit their tables",
+    "owner retains or revises the plan",
+    "scoring run, whose first step is the instrument check"
+  ]
+}
