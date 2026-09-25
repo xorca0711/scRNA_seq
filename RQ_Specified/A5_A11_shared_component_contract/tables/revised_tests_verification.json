@@ -1,5 +1,5 @@
 {
-  "verified_utc": "2026-09-25T13:48:40.694190+00:00",
+  "verified_utc": "2026-09-25T13:50:23.194958+00:00",
   "checks": [
     {
       "check": "A5 paired arithmetic",
@@ -131,13 +131,13 @@
     "X:\\GitHub\\scRNA_seq\\.worktrees\\a5-a11-biological-tests\\Research Article\\gate2_C3_yu_lee_choi_min_2026\\trials\\u6_human_specificity\\human_module_genes.tsv": "5992aeb3e372fc19478edc40e6f39352a2038b6e7646f28aae516302109d0806",
     "X:\\GitHub\\scRNA_seq\\.worktrees\\a5-a11-biological-tests\\Research Article\\gate2_C3_yu_lee_choi_min_2026\\trials\\u5_human_paired_pathways.R": "3a091c747ed9de3e03c7d814fc02d9a1d1a5b6148b3d16257871d1b1d2230ac2"
   },
-  "script_sha256": "93ebecadecb94dd8373c4c4183693921073393d37fd32822a9350b566ed1b977",
+  "script_sha256": "cffb3dc431ee4ef83515d5f05767fc5ffe328d9f8cd124589fab9fbd0dc5c296",
   "analysis_code_sha256": {
     "RQ_Specified\\A5_developmental_programme_reuse\\scripts\\03_score_external_test.py": "0bac553e3cbb5c10edaf894f4d711a761c164c5f9ed9342b3b806a2d8c9e2924",
-    "RQ_Specified\\A5_developmental_programme_reuse\\scripts\\04_inference.R": "9804026d519eeea18561bfc2c28202f30a3fc96134a14829e14fba1cd1cf2240",
-    "RQ_Specified\\A11_lesion_programme_addition\\scripts\\02_reproduce_discovery.R": "f6fe07b330a760a0621fce60ce51f82340008179345b00dd6bc8f377225eb965",
+    "RQ_Specified\\A5_developmental_programme_reuse\\scripts\\04_inference.R": "d56e8e5d9c93e43698f6f50f151de0d09b03820365564938aa4177574296a964",
+    "RQ_Specified\\A11_lesion_programme_addition\\scripts\\02_reproduce_discovery.R": "e8b5c9940bc87eed9cb777ef3f6ee4c4a286b9a4ffa174fc3c2adc1ad6d84578",
     "RQ_Specified\\A11_lesion_programme_addition\\scripts\\03_prepare_kim.py": "7c9d40207ee082e22f9c967d78840140ad489b29194c19d9e4e0b5d075f1dd75",
-    "RQ_Specified\\A11_lesion_programme_addition\\scripts\\04_score_kim.R": "6aecd38b7c77dcf37eb5db87dd0999e2cd586d2e336ddc88e46901749708640e",
+    "RQ_Specified\\A11_lesion_programme_addition\\scripts\\04_score_kim.R": "afb15de0149148f807f140b852db5127611251c5e697dc515f94f637a2f3c332",
     "RQ_Specified\\A5_A11_shared_component_contract\\scripts\\paired_inference.R": "2293a02ce8e928bbd1ecd937e43d44b085ca7e210367663fe726a6f27cff4337"
   },
   "inference_outputs": {
@@ -148,18 +148,18 @@
     "RQ_Specified\\A5_developmental_programme_reuse\\tables\\test_v1\\inference.tsv": "d276064aa2bfb57a9582b97211c398a7a53af446e02f1672b3456699562728d8",
     "RQ_Specified\\A5_developmental_programme_reuse\\tables\\test_v1\\omission_diagnostics.tsv": "040577cde4662d77b269c6b1644baef4e93f473cf6b8aeb282e62323423ff97b",
     "RQ_Specified\\A5_developmental_programme_reuse\\tables\\test_v1\\paired_differences.tsv": "8c49afd16f27c2ba21bb4e4bb447e4cb0cb90ca0f75bc11352265cb8111e607f",
-    "RQ_Specified\\A5_developmental_programme_reuse\\tables\\test_v1\\R_session.txt": "5dca46de002095860825fb26e9ade11e64eee64ab2eee4b262b06e0e90c51f75",
+    "RQ_Specified\\A5_developmental_programme_reuse\\tables\\test_v1\\R_session.txt": "e20473c38df378368e599806f8846ee2d08abc50e0a086f403f048717123192f",
     "RQ_Specified\\A5_developmental_programme_reuse\\tables\\test_v1\\score_run.json": "45b3a145ba37c4d006f1bf37d78fc1585a0acec0b8eb81e273dd960ac07a8e76",
     "RQ_Specified\\A5_developmental_programme_reuse\\tables\\test_v1\\unit_scores.tsv": "ef0e89ce4ec7498c3b53347139d39cbb97c9e084f89aa424991e59c12145e55e",
     "RQ_Specified\\A11_lesion_programme_addition\\tables\\test_v2\\human_module_genes.tsv": "6032c6baf2801f5e574650ccac7dbbe93306bc8392232d00f7e9f1978ace8a89",
     "RQ_Specified\\A11_lesion_programme_addition\\tables\\test_v2\\inference.tsv": "c6d88911b49ae354bc150ea3fec2ad38e92469c05416af164eb6a9833ad7dfe1",
     "RQ_Specified\\A11_lesion_programme_addition\\tables\\test_v2\\instrument_check.tsv": "e1e405c5318907572c8c194e214a808f6c2dba21a87985dfce348aaa550ec4be",
-    "RQ_Specified\\A11_lesion_programme_addition\\tables\\test_v2\\instrument_R_session.txt": "524d5062b844d09af8d70fa01ed49952356c14e8bf196e60cd99215dcd0ba61a",
+    "RQ_Specified\\A11_lesion_programme_addition\\tables\\test_v2\\instrument_R_session.txt": "fc3c975491909432be123df61cb5c7d7214dbdf20b67eb4e23b9360adf33d464",
     "RQ_Specified\\A11_lesion_programme_addition\\tables\\test_v2\\normalization.tsv": "61053529c9312b2d766b60bb5e0de3b80ecc0266192dca37e4064aa90751d824",
     "RQ_Specified\\A11_lesion_programme_addition\\tables\\test_v2\\omission_diagnostics.tsv": "15500c34db2e18eeb17f00751df84ab17b1a28bf737bb4d32b436882a35d4708",
     "RQ_Specified\\A11_lesion_programme_addition\\tables\\test_v2\\paired_differences.tsv": "c64636ef9ec8a0006f85101224876532a52c853bec0fa6670b0346e179949f25",
     "RQ_Specified\\A11_lesion_programme_addition\\tables\\test_v2\\prepare_run.json": "fb520c94d0998b738f1477606f976cd59b67c0aae3c050cc6674675495baea7a",
-    "RQ_Specified\\A11_lesion_programme_addition\\tables\\test_v2\\R_session.txt": "524d5062b844d09af8d70fa01ed49952356c14e8bf196e60cd99215dcd0ba61a",
+    "RQ_Specified\\A11_lesion_programme_addition\\tables\\test_v2\\R_session.txt": "fc3c975491909432be123df61cb5c7d7214dbdf20b67eb4e23b9360adf33d464",
     "RQ_Specified\\A11_lesion_programme_addition\\tables\\test_v2\\scores.tsv": "d4521090ad11fc829de30f756ff94164e97c27dda05aaab661441c662d7ab7b3",
     "RQ_Specified\\A11_lesion_programme_addition\\tables\\test_v2\\units.tsv": "7774cff95b0455c2a81f7440876c2302919afea0f8d8f33ce8361f599d0bb9bd"
   }

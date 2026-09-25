@@ -37,6 +37,6 @@ for(label in c('__broad__','AT2')) {
 }
 z <- do.call(rbind,rows)
 write.table(z,target,sep='\t',row.names=FALSE,quote=FALSE)
-capture.output(sessionInfo(),file=file.path(out,'instrument_R_session.txt'))
+writeLines(trimws(capture.output(sessionInfo()),which='right'),file.path(out,'instrument_R_session.txt'))
 stopifnot(nrow(z)==46, all(z$abs_error<=1e-6))
 cat('PASS discovery reproduction:',nrow(z),'pairs, max error',max(z$abs_error),'\n')

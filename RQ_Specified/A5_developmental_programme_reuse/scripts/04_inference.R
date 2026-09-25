@@ -25,6 +25,6 @@ loo <- data.frame(omitted_mouse=d$sample_id,remaining_mean=sapply(seq_len(nrow(d
 write.table(loo,file.path(out,'omission_diagnostics.tsv'),sep='\t',row.names=FALSE,quote=FALSE)
 days <- aggregate(difference_pp~day,data=d,FUN=mean)
 write.table(days,file.path(out,'day_means.tsv'),sep='\t',row.names=FALSE,quote=FALSE)
-capture.output(sessionInfo(),file=file.path(out,'R_session.txt'))
+writeLines(trimws(capture.output(sessionInfo()),which='right'),file.path(out,'R_session.txt'))
 print(r[,c('test','n','mean','mean_low','mean_high','p_mean','q_secondary','direction')],row.names=FALSE)
 cat('Equal-day mean:',mean(days$difference_pp),'pp\n')

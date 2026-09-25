@@ -113,6 +113,9 @@ def main():
     fig.suptitle('Distinct questions and measurement scales; expression does not establish lineage or function',fontsize=12)
     for suffix in ['png','svg']:
         fig.savefig(figures/('a5_a11_results.'+suffix),dpi=180)
+        if suffix=='svg':
+            vector=figures/('a5_a11_results.'+suffix)
+            vector.write_text('\n'.join(line.rstrip() for line in vector.read_text().splitlines())+'\n',encoding='utf-8',newline='\n')
     plt.close(fig)
     primary5=r5.iloc[0];primary11=r11.iloc[0]
     l5=pd.read_csv(a5/'omission_diagnostics.tsv',sep='\t')

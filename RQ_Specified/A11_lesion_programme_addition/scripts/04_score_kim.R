@@ -33,5 +33,5 @@ write.table(do.call(rbind,rows),file.path(out,'scores.tsv'),sep='\t',row.names=F
 write.table(cbind(m,library_size=y$samples$lib.size,TMM_factor=y$samples$norm.factors),file.path(out,'normalization.tsv'),sep='\t',row.names=FALSE,quote=FALSE)
 loo <- data.frame(omitted_patient=names(d),remaining_n=length(d)-1,remaining_mean=sapply(seq_along(d),function(j)mean(d[-j])))
 write.table(loo,file.path(out,'omission_diagnostics.tsv'),sep='\t',row.names=FALSE,quote=FALSE)
-capture.output(sessionInfo(),file=file.path(out,'R_session.txt'))
+writeLines(trimws(capture.output(sessionInfo()),which='right'),file.path(out,'R_session.txt'))
 print(res[,c('test','n','mean','HL','low','high','p_exact','q_secondary','direction','magnitude')],row.names=FALSE)
