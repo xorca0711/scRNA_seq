@@ -1,0 +1,41 @@
+{
+  "status": "frozen_for_initial_descriptive_batch",
+  "frozen_utc": "2026-09-25T05:15:58.917531+00:00",
+  "authorization": "Owner: challenge stages 3/4, patch plan and initiate main analysis",
+  "scope": [
+    "GSE154966 and GSE273123 deposited-count QC and sample-level PCA",
+    "GSE141635 pooled H3K4me3 peak-caller and interval-geometry audit only",
+    "Kobayashi Extended Data 4 field and mouse denominator reconstruction"
+  ],
+  "inference": "No p-values or differential tests until biological-unit and sample-label mappings pass original gates",
+  "counts_qc": {
+    "nonnegative_integer": true,
+    "unique_feature_ids": true,
+    "complete_pairs_by_deposited_alias": true
+  },
+  "pca": {
+    "transform": "log2(CPM + 1)",
+    "features": "Top 2000 variable features among CPM >= 1 in at least half of libraries",
+    "center": true,
+    "scale": false,
+    "interpretation": "Descriptive sample geometry; source blocks are not certified independent animals"
+  },
+  "chromatin": {
+    "assay": "H3K4me3",
+    "summary": "Technical geometry only; biological overlap contrast deferred",
+    "coordinate_check": "Infer/verify deposited BED-like coordinate columns before comparison",
+    "replication": "Pooled called regions; no differential occupancy or global abundance estimate",
+    "caller_mismatch": "Homeostasis size 1000/minDist 2000 versus CTGF size 4000/minDist 4000",
+    "biological_state_comparison_authorized": false
+  },
+  "lineage": {
+    "source": "Kobayashi 2020 Extended Data 4b/d",
+    "unit": "mouse; nested fields",
+    "zero_denominator": "missing/undefined, never zero percent",
+    "summaries": [
+      "mean of nonzero-denominator field percentages per mouse",
+      "pooled numerator / pooled denominator within mouse"
+    ],
+    "inference": "Descriptive source-data reconstruction; no fabricated healthy-control percentage"
+  }
+}

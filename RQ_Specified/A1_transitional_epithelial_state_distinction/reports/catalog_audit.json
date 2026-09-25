@@ -1,0 +1,301 @@
+{
+  "status": "metadata_audit_complete",
+  "scope": "original_three_candidate_pair_designs",
+  "scientific_analysis_executed_by_this_check": false,
+  "execution_authorized": true,
+  "catalog": [
+    {
+      "accession": "GSE141259",
+      "GSM_records": 60,
+      "title": "Longitudinal single-cell transcriptomics analysis of mouse lung upon bleomycin-induced injury",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE141259&targ=all&form=text&view=full",
+      "response_sha256": "2bee6bbeea2f11e770ce66e2cdd716f998fc6ee813c27f7bec135cc1ead60875"
+    },
+    {
+      "accession": "GSE141635",
+      "GSM_records": 20,
+      "title": "Histone modifications in lung epithelial cells",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE141635&targ=all&form=text&view=full",
+      "response_sha256": "de69d4c6c2a262b3f61d7d4e0082ba147c900fad686613025f4b76e5d70b8297"
+    },
+    {
+      "accession": "GSE144598",
+      "GSM_records": 4,
+      "title": "Inflammatory Signals induce AT2 Cell-Derived Damage-Associated Transient Progenitors that Mediate Alveolar Regeneration",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144598&targ=all&form=text&view=full",
+      "response_sha256": "6d45a64ef74620fc6780415d47f2d77667ca8f75611bdfd90412adec27f22090"
+    },
+    {
+      "accession": "GSE150527",
+      "GSM_records": 48,
+      "title": "Comprehensive epigenomic profiling of human alveolar epithelial differentiation identifies key epigenetic states and transcription factor co-regulatory networks for maintenance of distal lung identity",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE150527&targ=all&form=text&view=full",
+      "response_sha256": "485c087ec1fba8df822eeb96fd836689e344821bdbfdd5f68f6193608eafac15"
+    },
+    {
+      "accession": "GSE154965",
+      "GSM_records": 2,
+      "title": "Emergence of a high-plasticity cell state during lung cancer evolution, single-cell ATACseq",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE154965&targ=all&form=text&view=full",
+      "response_sha256": "034d8da0a6f14864f3934424327b7760cfa5a63fb4a4bffff9b8941e78b00372"
+    },
+    {
+      "accession": "GSE154966",
+      "GSM_records": 8,
+      "title": "Emergence of a high-plasticity cell state during lung cancer evolution, ATACseq",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE154966&targ=all&form=text&view=full",
+      "response_sha256": "2467f43aa622b883e52428bbac0f2b3426344a4dbcc2b50c29c310f03937c0f1"
+    },
+    {
+      "accession": "GSE154978",
+      "GSM_records": 6,
+      "title": "Emergence of a high-plasticity cell state during lung cancer evolution, single-cell RNAseq tigit",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE154978&targ=all&form=text&view=full",
+      "response_sha256": "768fb12c2b43479fe0a0d1282d4b8f959f0e5ef57ca61f66b4b881a6ee688b75"
+    },
+    {
+      "accession": "GSE190821",
+      "GSM_records": 48,
+      "title": "Lung epithelial transcriptional responses to bleomycin and effects of IRE1\u03b1 or TGF\u03b2 inhibition",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE190821&targ=all&form=text&view=full",
+      "response_sha256": "ff1fb0e69ef7c563cb41980774d0c2cf97f1bbeafc9fe1c26913d900d97d4865"
+    },
+    {
+      "accession": "GSE218665",
+      "GSM_records": 2,
+      "title": "Single-cell RNA-seq of BHT induced lung injury",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE218665&targ=all&form=text&view=full",
+      "response_sha256": "1c1f56ac528db50f3bb5ed64fc3e38ecb41784c42e0bdf7240aed5d76b0d8fca"
+    },
+    {
+      "accession": "GSE218666",
+      "GSM_records": 4,
+      "title": "Single-cell RNA-seq in AT1 cell-ablated mouse lungs",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE218666&targ=all&form=text&view=full",
+      "response_sha256": "10c5cc0dd88ad1862e9a8bc201ec55ea4cc890a4a2e36e0dcff40675f648ae13"
+    },
+    {
+      "accession": "GSE223302",
+      "GSM_records": 24,
+      "title": "Regulation of the Alveolar Epithelial Transitional State in Murine and Human Pulmonary Fibrosis",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223302&targ=all&form=text&view=full",
+      "response_sha256": "38863292866f02f3e6f796a6e86f70f67927024d707178b2143e6183b2dd192c"
+    },
+    {
+      "accession": "GSE235212",
+      "GSM_records": 1,
+      "title": "Single-cell RNA-seq of AT2-specific loss of Mdm2-Day8",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE235212&targ=all&form=text&view=full",
+      "response_sha256": "ca24a3040a46183fb0e617cdd0ea8577f524b6c677367acba61dd5da97f3ad16"
+    },
+    {
+      "accession": "GSE247130",
+      "GSM_records": 12,
+      "title": "CEBPA restricts alveolar type 2 cell plasticity during development and injury-repair [1]",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247130&targ=all&form=text&view=full",
+      "response_sha256": "7f52700ab42a8716d354c74995eda9594c2a332eceaf4968e09c2aca213cb45f"
+    },
+    {
+      "accession": "GSE254356",
+      "GSM_records": 3,
+      "title": "Morphogenesis and regeneration share a conserved core transition cell state program that control lung epithelial cell fate",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254356&targ=all&form=text&view=full",
+      "response_sha256": "d47f7aba1041b67ce6549d6caaf6670946aee8d54e03447f0d167831baca13a4"
+    },
+    {
+      "accession": "GSE272862",
+      "GSM_records": 2,
+      "title": "Transcriptomic profiling of day 194 patient-specific pluripotent stem cell-derived alveolar epithelial type 2 cells expressing the SFTPCC121Y mutation and their gene-edited corrected counterparts",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE272862&targ=all&form=text&view=full",
+      "response_sha256": "fbcf78e8403c0453374c707777ce3f7e23d059d7abf220a62e88ca8e467414e4"
+    },
+    {
+      "accession": "GSE273122",
+      "GSM_records": 4,
+      "title": "Aberrant Transitional Alveolar Epithelial Cells Promote Pathogenic Activation of Lung Fibroblasts in Preclinical Fibrosis Modeling (scRNAseq)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273122&targ=all&form=text&view=full",
+      "response_sha256": "34729cf2c4471213134fe6750c64c083f66f409130c06eea02117420a7dc9bac"
+    },
+    {
+      "accession": "GSE273123",
+      "GSM_records": 16,
+      "title": "Aberrant Transitional Alveolar Epithelial Cells Promote Pathogenic Activation of Lung Fibroblasts in Preclinical Fibrosis Modeling (Bulk RNA-Seq)",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273123&targ=all&form=text&view=full",
+      "response_sha256": "f49cb3e64bdb5f9db002697e62e2c700cba8806826c35b400b51f91e366ce72e"
+    },
+    {
+      "accession": "GSE277777",
+      "GSM_records": 32,
+      "title": "Critical role for a high-plasticity cell state in lung cancer",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277777&targ=all&form=text&view=full",
+      "response_sha256": "258cb68067b7c967cedf8590fe87077424897cc006c207b569aa6a16b3eca344"
+    },
+    {
+      "accession": "GSE289676",
+      "GSM_records": 9,
+      "title": "Human PSC-based Modeling of Pulmonary Fibrosis Identifies p300/CBP Inhibition as a Suppressor of Alveolar Transitional Cell State [epithelial]",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289676&targ=all&form=text&view=full",
+      "response_sha256": "adaa240b89c7eb14305c9761479792b11b94b42afcbc45eaff731cd5a0b5f915"
+    },
+    {
+      "accession": "GSE289678",
+      "GSM_records": 9,
+      "title": "Human PSC-based Modeling of Pulmonary Fibrosis Identifies p300/CBP Inhibition as a Suppressor of Alveolar Transitional Cell State [BLM]",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289678&targ=all&form=text&view=full",
+      "response_sha256": "26c97c376658e498357be659c2f020d6b3deafe1ab169e66718415f6cfda0197"
+    },
+    {
+      "accession": "GSE289679",
+      "GSM_records": 6,
+      "title": "Modeling of spontaneous pulmonary fibrosis via cellular senescence in type 2 alveolar epithelial cells derived from human iPSCs [epithelial]",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289679&targ=all&form=text&view=full",
+      "response_sha256": "4ee98edbca04d45635482032ed16e7d0ef7457d4a6688bb692ed1347df39ecb7"
+    },
+    {
+      "accession": "GSE289682",
+      "GSM_records": 6,
+      "title": "Modeling of spontaneous pulmonary fibrosis via cellular senescence in type 2 alveolar epithelial cells derived from human iPSCs [HFLF]",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289682&targ=all&form=text&view=full",
+      "response_sha256": "f975d5738221a04a8ba365a8b6020fe5e798345e51cd18867ccc7d6aede6c8ea"
+    },
+    {
+      "accession": "GSE289683",
+      "GSM_records": 12,
+      "title": "The iPSC-derived pulmonary epithilial cells in micro-patterned culture plate [CUT&Tag]",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289683&targ=all&form=text&view=full",
+      "response_sha256": "e31782ca23a8db8e68fc9ead0f5eac0035645736aa5d15b2e895041e1ad05736"
+    },
+    {
+      "accession": "GSE289846",
+      "GSM_records": 6,
+      "title": "The iPSC-derived pulmonary epithilial cells in micro-patterned culture plate [scRNA-seq]",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289846&targ=all&form=text&view=full",
+      "response_sha256": "117c0cab0407e718d6f1bd7c757f0a183a01d348bd2046fa21dd35b2b235e09c"
+    },
+    {
+      "accession": "GSE290014",
+      "GSM_records": 3,
+      "title": "The iPSC-derived pulmonary epithilial cells in micro-patterned culture plate [scATAC-seq]",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290014&targ=all&form=text&view=full",
+      "response_sha256": "efd9a32809c4c9408b3841312e56c4dc0004fbde3e4c7d4563258f13d3f1bac6"
+    },
+    {
+      "accession": "GSE291333",
+      "GSM_records": 12,
+      "title": "The iPSC-derived pulmonary epithelial cells in micro-patterned culture plate",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291333&targ=all&form=text&view=full",
+      "response_sha256": "84a1cfe0cfbce1435622ffa08b414eee2628db8b93dfeb22fa1670517cf41185"
+    },
+    {
+      "accession": "GSE309751",
+      "GSM_records": 14,
+      "title": "AP-1 mediated chromatin changes govern alveolar type 2 cell transition in lung injury-repair",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309751&targ=all&form=text&view=full",
+      "response_sha256": "6ae8a18eeb5e061e3952663e0d38e78b87663a9f7bb177820f898cf0a860ca7a"
+    },
+    {
+      "accession": "GSE310539",
+      "GSM_records": 8,
+      "title": "AP-1 mediated chromatin changes govern alveolar type 2 cell transition in lung injury-repair [multiome]",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310539&targ=all&form=text&view=full",
+      "response_sha256": "dd54d579394aecd00773cd3c436b97f0ca5559b981fdfc784900372b93440a2d"
+    },
+    {
+      "accession": "GSE327565",
+      "GSM_records": 14,
+      "title": "Sustained Yap/Taz activation promotes aberrant alveolar epithelial cell differentiation and drives persistent fibrotic remodeling",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327565&targ=all&form=text&view=full",
+      "response_sha256": "516a79b844477a4b73ed340687c40e09f590ab5fb5828ae1f2b083bb07645597"
+    },
+    {
+      "accession": "GSE327686",
+      "GSM_records": 8,
+      "title": "Sustained Yap/Taz activation promotes aberrant alveolar epithelial cell differentiation and drives persistent fibrotic remodeling [Multi-omics]",
+      "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327686&targ=all&form=text&view=full",
+      "response_sha256": "e0b9b9c3f1389933f6f261d3c9429d7dbe41e3478ce351923bc03b3527ba2de8"
+    }
+  ],
+  "contrasts": [
+    {
+      "id": "A1_ATAC_TIGIT",
+      "design_ready": false,
+      "holds": [
+        "Assay QC, feature universe and normalization suitability not verified",
+        "GSM4685043: biological identity/pool membership unverified",
+        "GSM4685043: count-column crosswalk missing",
+        "GSM4685044: biological identity/pool membership unverified",
+        "GSM4685044: count-column crosswalk missing",
+        "GSM4685045: biological identity/pool membership unverified",
+        "GSM4685045: count-column crosswalk missing",
+        "GSM4685046: biological identity/pool membership unverified",
+        "GSM4685046: count-column crosswalk missing",
+        "GSM4685047: biological identity/pool membership unverified",
+        "GSM4685047: count-column crosswalk missing",
+        "GSM4685048: biological identity/pool membership unverified",
+        "GSM4685048: count-column crosswalk missing",
+        "GSM4685049: biological identity/pool membership unverified",
+        "GSM4685049: count-column crosswalk missing",
+        "GSM4685050: biological identity/pool membership unverified",
+        "GSM4685050: count-column crosswalk missing",
+        "Processed count payload/path/hash not verified",
+        "Raw integer-count scale unverified",
+        "Too few verified independent pairs"
+      ],
+      "sample_records": 8
+    },
+    {
+      "id": "A1_CD44_SPC_mutant",
+      "design_ready": false,
+      "holds": [
+        "Assay QC, feature universe and normalization suitability not verified",
+        "GSM8422170: biological identity/pool membership unverified",
+        "GSM8422170: count-column crosswalk missing",
+        "GSM8422171: biological identity/pool membership unverified",
+        "GSM8422171: count-column crosswalk missing",
+        "GSM8422172: biological identity/pool membership unverified",
+        "GSM8422172: count-column crosswalk missing",
+        "GSM8422173: biological identity/pool membership unverified",
+        "GSM8422173: count-column crosswalk missing",
+        "GSM8422174: biological identity/pool membership unverified",
+        "GSM8422174: count-column crosswalk missing",
+        "GSM8422175: biological identity/pool membership unverified",
+        "GSM8422175: count-column crosswalk missing",
+        "GSM8422176: biological identity/pool membership unverified",
+        "GSM8422176: count-column crosswalk missing",
+        "GSM8422177: biological identity/pool membership unverified",
+        "GSM8422177: count-column crosswalk missing",
+        "Processed count payload/path/hash not verified",
+        "Raw integer-count scale unverified",
+        "Too few verified independent pairs"
+      ],
+      "sample_records": 8
+    },
+    {
+      "id": "A1_CD44_WT",
+      "design_ready": false,
+      "holds": [
+        "Assay QC, feature universe and normalization suitability not verified",
+        "GSM8422162: biological identity/pool membership unverified",
+        "GSM8422162: count-column crosswalk missing",
+        "GSM8422163: biological identity/pool membership unverified",
+        "GSM8422163: count-column crosswalk missing",
+        "GSM8422164: biological identity/pool membership unverified",
+        "GSM8422164: count-column crosswalk missing",
+        "GSM8422165: biological identity/pool membership unverified",
+        "GSM8422165: count-column crosswalk missing",
+        "GSM8422166: biological identity/pool membership unverified",
+        "GSM8422166: count-column crosswalk missing",
+        "GSM8422167: biological identity/pool membership unverified",
+        "GSM8422167: count-column crosswalk missing",
+        "GSM8422168: biological identity/pool membership unverified",
+        "GSM8422168: count-column crosswalk missing",
+        "GSM8422169: biological identity/pool membership unverified",
+        "GSM8422169: count-column crosswalk missing",
+        "Processed count payload/path/hash not verified",
+        "Raw integer-count scale unverified",
+        "Too few verified independent pairs"
+      ],
+      "sample_records": 8
+    }
+  ]
+}

@@ -751,6 +751,28 @@ scientific threshold, claim classification or inference was changed by this
 consolidation. The [LinkedIn draft](docs/LINKEDIN_PROJECT.md) is prepared for
 owner use; it has not been posted. Personal PI-fit planning remains in Notion.
 
+## 34. Rework A1 lineage/function stages and execute the first batch (25 September 2026)
+
+The owner challenged the proposed stages 3–4 and explicitly requested a review
+of established tracing studies, a patched plan and initiation of analysis.
+Codex implemented the revision and execution; acceptance of the resulting
+scientific interpretations remains with the owner.
+
+| Date | Proposal reworked | Reason | Decision authority |
+|---|---|---|---|
+| 2026-09-25 | Broad trajectory and spatial/proteomic work as the immediate A1 lineage/phenotype stages | It did not prioritize measured ancestry/descendants and same-study functional endpoints; modalities could be mistaken for interchangeable validation | Owner requested the challenge and revision; Codex developed the measured-endpoint-first implementation |
+| 2026-09-25 | A biological overlap comparison of the deposited PATS H3K4me3 calls | Input headers revealed different caller region/merging settings; interval differences cannot establish a biological state distinction | Codex input audit under the owner's authorized analysis; replaced with technical audit, without relaxing gates |
+
+The [lineage audit](RQ_Specified/A1_transitional_epithelial_state_distinction/LINEAGE_AUDIT.md)
+records the primary sources. The
+[batch report](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/FIRST_BATCH_REPORT.md)
+records the PATS source reconstruction, frozen ten-mouse IRE1α model,
+descriptive ATAC/CD44 profiles, failed pathway coverage and remaining holds.
+Undefined control fractions were not converted into zeros; unrelated antibody
+controls were not added to the KIRA8 comparison. Numerical source versions,
+hashes and model diagnostics are retained. No result was promoted to an
+independent validation or universal transitional-state taxonomy.
+
 ## How outputs were reviewed
 
 Every run writes its decisions to machine logs (`decisions.json`,

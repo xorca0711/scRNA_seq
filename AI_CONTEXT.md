@@ -13,8 +13,23 @@ Paper studies: `Research Article/` (renamed from `Thesis/` on 2026-09-25).
 Question-specific plans and workflows: `RQ_Specified/`. Keep the root
 `RESEARCH_QUESTIONS.md` as the single question register. Quote directory names
 with spaces. Use `analysis/lib/repository_paths.py` to resolve historical paths;
-never rewrite old run identities to imply a new analysis. The folder PR contains
-an A1 workspace only; the detailed A1 specification follows separately.
+never rewrite old run identities to imply a new analysis. Folder PR #66 contains
+the A1 workspace skeleton only. The expanded specification lives separately on
+`codex/a1-state-distinction-plan`, under `RQ_Specified/`. Its 30 GEO extracts are
+catalog evidence; only individually verified manifests support sample-level fits.
+The owner authorized the revised first batch on 25 September 2026. PATS source
+endpoints, GSE190821 ten-mouse RNA, two descriptive PCAs and the histone-input
+audit completed; read the A1 `reports/FIRST_BATCH_REPORT.md` and run records.
+GSE190821 is day-7 epithelial RiboTag, not DATP scRNA or day-14 tracing. Exclude
+Axum8 antibody controls from the KIRA8 vehicle contrast. PATS 0/0 fractions are
+undefined. GSE141635 homeostasis/injury peak callers differ; interval geometry
+is technical, not biological evidence. Original paired ATAC/CD44 contracts
+remain held. No new epigenetic taxonomy or fate claim is established.
+Current scripts refuse completed numerical-run overwrite; original executed
+source versions are preserved under A1 `reports/execution_sources/`. Script 10
+renders existing tables without refitting. Do not execute archived code to
+bypass the guard. Scientific integration tests run locally; lightweight CI
+skips them explicitly when scientific packages are unavailable.
 
 ## Current Nabhan analysis
 

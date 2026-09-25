@@ -1,0 +1,2874 @@
+{
+  "accession": "GSE190821",
+  "retrieved_at_utc": "2026-09-25T05:14:31.334923+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE190821&targ=all&form=text&view=full",
+  "response_sha256": "ff1fb0e69ef7c563cb41980774d0c2cf97f1bbeafc9fe1c26913d900d97d4865",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Lung epithelial transcriptional responses to bleomycin and effects of IRE1α or TGFβ inhibition"
+    ],
+    "geo_accession": [
+      "GSE190821"
+    ],
+    "status": [
+      "Public on Feb 14 2022"
+    ],
+    "last_update_date": [
+      "Mar 03 2022"
+    ],
+    "pubmed_id": [
+      "35170357"
+    ],
+    "overall_design": [
+      "Factorial design. Principal treatment groups are: Saline/Control (6 mice), Bleomycin/Control (9 mice), Bleomycin/KIRA8 (5 mice) and Bleomycin/3G9 (4 mice). Each mouse has a corresponding whole lung and epithelial library."
+    ],
+    "type": [
+      "Other"
+    ],
+    "sample_id": [
+      "GSM5732434",
+      "GSM5732435",
+      "GSM5732436",
+      "GSM5732437",
+      "GSM5732438",
+      "GSM5732439",
+      "GSM5732440",
+      "GSM5732441",
+      "GSM5732442",
+      "GSM5732443",
+      "GSM5732444",
+      "GSM5732445",
+      "GSM5732446",
+      "GSM5732447",
+      "GSM5732448",
+      "GSM5732449",
+      "GSM5732450",
+      "GSM5732451",
+      "GSM5732452",
+      "GSM5732453",
+      "GSM5732454",
+      "GSM5732455",
+      "GSM5732456",
+      "GSM5732457",
+      "GSM5732458",
+      "GSM5732459",
+      "GSM5732460",
+      "GSM5732461",
+      "GSM5732462",
+      "GSM5732463",
+      "GSM5732464",
+      "GSM5732465",
+      "GSM5732466",
+      "GSM5732467",
+      "GSM5732468",
+      "GSM5732469",
+      "GSM5732470",
+      "GSM5732471",
+      "GSM5732472",
+      "GSM5732473",
+      "GSM5732474",
+      "GSM5732475",
+      "GSM5732476",
+      "GSM5732477",
+      "GSM5732478",
+      "GSM5732479",
+      "GSM5732480",
+      "GSM5732481"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE190nnn/GSE190821/suppl/GSE190821_counts.csv.gz"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA788524",
+      "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRP350747"
+    ]
+  },
+  "sample_count": 48,
+  "samples": [
+    {
+      "accession": "GSM5732434",
+      "title": [
+        "Bleomycin_epithelial_017"
+      ],
+      "geo_accession": [
+        "GSM5732434"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 17",
+        "mouse sex: F",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S061"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010211",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407763"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732435",
+      "title": [
+        "Bleomycin_wholelung_017"
+      ],
+      "geo_accession": [
+        "GSM5732435"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 17",
+        "mouse sex: F",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S061"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010212",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407764"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732436",
+      "title": [
+        "Bleomycin_epithelial_031"
+      ],
+      "geo_accession": [
+        "GSM5732436"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 31",
+        "mouse sex: F",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S061"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010213",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407765"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732437",
+      "title": [
+        "Bleomycin_wholelung_031"
+      ],
+      "geo_accession": [
+        "GSM5732437"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 31",
+        "mouse sex: F",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S061"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010214",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407766"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732438",
+      "title": [
+        "Bleomycin_epithelial_045"
+      ],
+      "geo_accession": [
+        "GSM5732438"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 45",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S061"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010215",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407767"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732439",
+      "title": [
+        "Bleomycin_wholelung_045"
+      ],
+      "geo_accession": [
+        "GSM5732439"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 45",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S061"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010216",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407768"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732440",
+      "title": [
+        "BleomycinKIRA8_epithelial_020"
+      ],
+      "geo_accession": [
+        "GSM5732440"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 20",
+        "mouse sex: F",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: KIRA8",
+        "treatment type: KIRA8",
+        "batch: S061"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010217",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407769"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732441",
+      "title": [
+        "BleomycinKIRA8_wholelung_020"
+      ],
+      "geo_accession": [
+        "GSM5732441"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 20",
+        "mouse sex: F",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: KIRA8",
+        "treatment type: KIRA8",
+        "batch: S061"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010218",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407770"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732442",
+      "title": [
+        "BleomycinKIRA8_epithelial_032"
+      ],
+      "geo_accession": [
+        "GSM5732442"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 32",
+        "mouse sex: F",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: KIRA8",
+        "treatment type: KIRA8",
+        "batch: S061"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010219",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407771"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732443",
+      "title": [
+        "BleomycinKIRA8_wholelung_032"
+      ],
+      "geo_accession": [
+        "GSM5732443"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 32",
+        "mouse sex: F",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: KIRA8",
+        "treatment type: KIRA8",
+        "batch: S061"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010220",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407772"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732444",
+      "title": [
+        "BleomycinKIRA8_epithelial_041"
+      ],
+      "geo_accession": [
+        "GSM5732444"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 41",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: KIRA8",
+        "treatment type: KIRA8",
+        "batch: S061"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010221",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407773"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732445",
+      "title": [
+        "BleomycinKIRA8_wholelung_041"
+      ],
+      "geo_accession": [
+        "GSM5732445"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 41",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: KIRA8",
+        "treatment type: KIRA8",
+        "batch: S061"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010222",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407774"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732446",
+      "title": [
+        "Bleomycin_epithelial_148"
+      ],
+      "geo_accession": [
+        "GSM5732446"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 148",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S135"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010223",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407775"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732447",
+      "title": [
+        "Bleomycin_epithelial_149"
+      ],
+      "geo_accession": [
+        "GSM5732447"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 149",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S135"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010224",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407776"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732448",
+      "title": [
+        "Bleomycin_wholelung_148"
+      ],
+      "geo_accession": [
+        "GSM5732448"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 148",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S135"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010225",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407777"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732449",
+      "title": [
+        "Bleomycin_wholelung_149"
+      ],
+      "geo_accession": [
+        "GSM5732449"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 149",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S135"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010226",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407778"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732450",
+      "title": [
+        "BleomycinKIRA8_epithelial_154"
+      ],
+      "geo_accession": [
+        "GSM5732450"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 154",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: KIRA8",
+        "treatment type: KIRA8",
+        "batch: S135"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010227",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407779"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732451",
+      "title": [
+        "BleomycinKIRA8_epithelial_155"
+      ],
+      "geo_accession": [
+        "GSM5732451"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 155",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: KIRA8",
+        "treatment type: KIRA8",
+        "batch: S135"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010228",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407780"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732452",
+      "title": [
+        "BleomycinKIRA8_wholelung_154"
+      ],
+      "geo_accession": [
+        "GSM5732452"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 154",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: KIRA8",
+        "treatment type: KIRA8",
+        "batch: S135"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010229",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407781"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732453",
+      "title": [
+        "BleomycinKIRA8_wholelung_155"
+      ],
+      "geo_accession": [
+        "GSM5732453"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 155",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: KIRA8",
+        "treatment type: KIRA8",
+        "batch: S135"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010230",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407782"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732454",
+      "title": [
+        "Saline_epithelial_146"
+      ],
+      "geo_accession": [
+        "GSM5732454"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 146",
+        "mouse sex: F",
+        "tissue compartment: Epithelium",
+        "exposure: Saline",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S135"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010231",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407783"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732455",
+      "title": [
+        "Saline_epithelial_152"
+      ],
+      "geo_accession": [
+        "GSM5732455"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 152",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Saline",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S135"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010232",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407784"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732456",
+      "title": [
+        "Saline_epithelial_153"
+      ],
+      "geo_accession": [
+        "GSM5732456"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 153",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Saline",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S135"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010233",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407785"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732457",
+      "title": [
+        "Saline_wholelung_146"
+      ],
+      "geo_accession": [
+        "GSM5732457"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 146",
+        "mouse sex: F",
+        "tissue compartment: Whole Lung",
+        "exposure: Saline",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S135"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010234",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407786"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732458",
+      "title": [
+        "Saline_wholelung_152"
+      ],
+      "geo_accession": [
+        "GSM5732458"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 152",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Saline",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S135"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010235",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407787"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732459",
+      "title": [
+        "Saline_wholelung_153"
+      ],
+      "geo_accession": [
+        "GSM5732459"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 153",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Saline",
+        "treatment: Vehicle",
+        "treatment type: Control",
+        "batch: S135"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010236",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407788"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732460",
+      "title": [
+        "Bleomycin_wholelung_208R"
+      ],
+      "geo_accession": [
+        "GSM5732460"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 208R",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: Axum8",
+        "treatment type: Control",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010237",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407789"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732461",
+      "title": [
+        "Bleomycin_epithelial_208R"
+      ],
+      "geo_accession": [
+        "GSM5732461"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 208R",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: Axum8",
+        "treatment type: Control",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010238",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407790"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732462",
+      "title": [
+        "Bleomycin_epithelial_206"
+      ],
+      "geo_accession": [
+        "GSM5732462"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 206",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: Axum8",
+        "treatment type: Control",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010239",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407791"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732463",
+      "title": [
+        "Bleomycin3G9_epithelial_226R"
+      ],
+      "geo_accession": [
+        "GSM5732463"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 226R",
+        "mouse sex: F",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: 3G9",
+        "treatment type: 3G9",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010247",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407792"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732464",
+      "title": [
+        "Saline_wholelung_221"
+      ],
+      "geo_accession": [
+        "GSM5732464"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 221",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Saline",
+        "treatment: Axum8",
+        "treatment type: Control",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010241",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407793"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732465",
+      "title": [
+        "Bleomycin3G9_epithelial_218"
+      ],
+      "geo_accession": [
+        "GSM5732465"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 218",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: 3G9",
+        "treatment type: 3G9",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010242",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407794"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732466",
+      "title": [
+        "Bleomycin_wholelung_225"
+      ],
+      "geo_accession": [
+        "GSM5732466"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 225",
+        "mouse sex: F",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: Axum8",
+        "treatment type: Control",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010243",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407795"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732467",
+      "title": [
+        "Bleomycin3G9_epithelial_228"
+      ],
+      "geo_accession": [
+        "GSM5732467"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 228",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: 3G9",
+        "treatment type: 3G9",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010244",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407796"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732468",
+      "title": [
+        "Bleomycin_epithelial_225"
+      ],
+      "geo_accession": [
+        "GSM5732468"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 225",
+        "mouse sex: F",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: Axum8",
+        "treatment type: Control",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010245",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407797"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732469",
+      "title": [
+        "Saline_wholelung_207"
+      ],
+      "geo_accession": [
+        "GSM5732469"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 207",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Saline",
+        "treatment: Axum8",
+        "treatment type: Control",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010246",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407798"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732470",
+      "title": [
+        "Saline_wholelung_230"
+      ],
+      "geo_accession": [
+        "GSM5732470"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 230",
+        "mouse sex: F",
+        "tissue compartment: Whole Lung",
+        "exposure: Saline",
+        "treatment: Axum8",
+        "treatment type: Control",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010240",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407799"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732471",
+      "title": [
+        "Saline_epithelial_230"
+      ],
+      "geo_accession": [
+        "GSM5732471"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 230",
+        "mouse sex: F",
+        "tissue compartment: Epithelium",
+        "exposure: Saline",
+        "treatment: Axum8",
+        "treatment type: Control",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010256",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407800"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732472",
+      "title": [
+        "Bleomycin3G9_epithelial_219"
+      ],
+      "geo_accession": [
+        "GSM5732472"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 219",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: 3G9",
+        "treatment type: 3G9",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010255",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407801"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732473",
+      "title": [
+        "Saline_epithelial_207"
+      ],
+      "geo_accession": [
+        "GSM5732473"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 207",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Saline",
+        "treatment: Axum8",
+        "treatment type: Control",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010248",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407802"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732474",
+      "title": [
+        "Bleomycin_wholelung_206"
+      ],
+      "geo_accession": [
+        "GSM5732474"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 206",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: Axum8",
+        "treatment type: Control",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010249",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407803"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732475",
+      "title": [
+        "Bleomycin_wholelung_204"
+      ],
+      "geo_accession": [
+        "GSM5732475"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 204",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: Axum8",
+        "treatment type: Control",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010250",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407804"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732476",
+      "title": [
+        "Bleomycin3G9_wholelung_218"
+      ],
+      "geo_accession": [
+        "GSM5732476"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 218",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: 3G9",
+        "treatment type: 3G9",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010251",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407805"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732477",
+      "title": [
+        "Saline_epithelial_221"
+      ],
+      "geo_accession": [
+        "GSM5732477"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 221",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Saline",
+        "treatment: Axum8",
+        "treatment type: Control",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010252",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407806"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732478",
+      "title": [
+        "Bleomycin3G9_wholelung_226R"
+      ],
+      "geo_accession": [
+        "GSM5732478"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 226R",
+        "mouse sex: F",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: 3G9",
+        "treatment type: 3G9",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010253",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407807"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732479",
+      "title": [
+        "Bleomycin3G9_wholelung_219"
+      ],
+      "geo_accession": [
+        "GSM5732479"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 219",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: 3G9",
+        "treatment type: 3G9",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010254",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407808"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732480",
+      "title": [
+        "Bleomycin_epithelial_204"
+      ],
+      "geo_accession": [
+        "GSM5732480"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 204",
+        "mouse sex: M",
+        "tissue compartment: Epithelium",
+        "exposure: Bleomycin",
+        "treatment: Axum8",
+        "treatment type: Control",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010257",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407809"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM5732481",
+      "title": [
+        "Bleomycin3G9_wholelung_228"
+      ],
+      "geo_accession": [
+        "GSM5732481"
+      ],
+      "source_name_ch1": [
+        "Lung epithelial Ribotag immunoprecipitation"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "mouse identifier: 228",
+        "mouse sex: M",
+        "tissue compartment: Whole Lung",
+        "exposure: Bleomycin",
+        "treatment: 3G9",
+        "treatment type: 3G9",
+        "batch: S151"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)",
+        "Lexogen Quantseq Forward kit"
+      ],
+      "description": [
+        "Tagged ribosome immunoprecipitated RNA"
+      ],
+      "data_processing": [
+        "Alignment: STAR_2.5.2b",
+        "Genome_build: Ensembl Mouse GRCm38",
+        "Supplementary_files_format_and_content: Comma-separated file with read counts (rows) and samples (columns)"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN24010258",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX13407810"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    }
+  ]
+}

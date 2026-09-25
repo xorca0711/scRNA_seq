@@ -1,0 +1,606 @@
+{
+  "accession": "GSE327686",
+  "retrieved_at_utc": "2026-09-25T01:03:50.750182+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327686&targ=all&form=text&view=full",
+  "response_sha256": "e0b9b9c3f1389933f6f261d3c9429d7dbe41e3478ce351923bc03b3527ba2de8",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Sustained Yap/Taz activation promotes aberrant alveolar epithelial cell differentiation and drives persistent fibrotic remodeling [Multi-omics]"
+    ],
+    "geo_accession": [
+      "GSE327686"
+    ],
+    "status": [
+      "Public on Jun 02 2026"
+    ],
+    "last_update_date": [
+      "Sep 02 2026"
+    ],
+    "pubmed_id": [
+      "42262884"
+    ],
+    "overall_design": [
+      "Cultured CD326+ epithelial cells from wild-type and Yap/Taz active (driven by Stk3/4 deletion in Sftpc+ AT2 cells) with Tomato lineage trace. After Passage 1, cells were flow sorted for Tomato+ to isalate only lineage traced cells. Cells were then cultured an additional 10 days in SFFFM media then either continued in SFFFM or switched to alveolar differentiation media (ADM) for 7 days. Cells were then bulk RNA sequenced."
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing",
+      "Genome binding/occupancy profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM9663195",
+      "GSM9663196",
+      "GSM9663197",
+      "GSM9663198",
+      "GSM9663199",
+      "GSM9663200",
+      "GSM9663201",
+      "GSM9663202"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE327nnn/GSE327686/suppl/GSE327686_8765-CT-1_filtered_feature_bc_matrix.h5",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE327nnn/GSE327686/suppl/GSE327686_9164-CT-1_filtered_feature_bc_matrix.h5",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE327nnn/GSE327686/suppl/GSE327686_9412-CT-1_filtered_feature_bc_matrix.h5",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE327nnn/GSE327686/suppl/GSE327686_9719-CT-1_filtered_feature_bc_matrix.h5"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1451861"
+    ]
+  },
+  "sample_count": 8,
+  "samples": [
+    {
+      "accession": "GSM9663195",
+      "title": [
+        "Wild type, saline, RNA"
+      ],
+      "geo_accession": [
+        "GSM9663195"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: whole lung",
+        "genotype: wild type",
+        "treatment: saline",
+        "batch: 1",
+        "library type: RNA"
+      ],
+      "treatment_protocol_ch1": [
+        "Mice were given 3mg/mouse of tamoxifen, 3 weeks later they were injured with 0.08iU bleomycin or saline, then mice were sacrificed 4-weeks after bleomycin injury."
+      ],
+      "growth_protocol_ch1": [
+        "Primary cells directly after mouse sacrifice."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were excised, incubated in DNAse, Disapse and collagenase in a C-Tube and single cells were generated using an octomacs. Cell suspensions were passed through 100um then 40um filter.",
+        "10X multiome protocol-10x Genomics Chromium sequencing targeting 10,000 nuclei per sample and 50,000 reads per nuclei"
+      ],
+      "description": [
+        "Library name: 9164-CT-1_RNA",
+        "Wild type, saline, RNA gene expression"
+      ],
+      "data_processing": [
+        "SoupX and scDoublet were used to remove ambient DNA and detect doublets",
+        "Seurat/Signac used for Multi-resolution clustering, normalization and dimension reduction",
+        "Harmony was used to map the scATAC-seq data onto these clusters by identifying open chromatin regions associated with specific marker genes and integrated with the scRNA-Seq",
+        "MACS2 was used for peak calling with 2kbp of transcriptional start site",
+        "Promoter associated TF factor enrichment was assessed using Chromvar",
+        "Assembly: GRcm39 reference genome",
+        "Supplementary files format and content: h5 files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57201542",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32898945"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM9663196",
+      "title": [
+        "Wild type, saline, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9663196"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: whole lung",
+        "genotype: wild type",
+        "treatment: saline",
+        "batch: 1",
+        "library type: ATAC"
+      ],
+      "treatment_protocol_ch1": [
+        "Mice were given 3mg/mouse of tamoxifen, 3 weeks later they were injured with 0.08iU bleomycin or saline, then mice were sacrificed 4-weeks after bleomycin injury."
+      ],
+      "growth_protocol_ch1": [
+        "Primary cells directly after mouse sacrifice."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were excised, incubated in DNAse, Disapse and collagenase in a C-Tube and single cells were generated using an octomacs. Cell suspensions were passed through 100um then 40um filter.",
+        "10X multiome protocol-10x Genomics Chromium sequencing targeting 10,000 nuclei per sample and 50,000 reads per nuclei"
+      ],
+      "description": [
+        "Library name: 9164-CT-1_ATAC",
+        "Wild type, saline, ATAC sequences"
+      ],
+      "data_processing": [
+        "SoupX and scDoublet were used to remove ambient DNA and detect doublets",
+        "Seurat/Signac used for Multi-resolution clustering, normalization and dimension reduction",
+        "Harmony was used to map the scATAC-seq data onto these clusters by identifying open chromatin regions associated with specific marker genes and integrated with the scRNA-Seq",
+        "MACS2 was used for peak calling with 2kbp of transcriptional start site",
+        "Promoter associated TF factor enrichment was assessed using Chromvar",
+        "Assembly: GRcm39 reference genome",
+        "Supplementary files format and content: h5 files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic single cell"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57201541",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32898946"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM9663197",
+      "title": [
+        "Wild type, bleomycin, RNA"
+      ],
+      "geo_accession": [
+        "GSM9663197"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: whole lung",
+        "genotype: wild type",
+        "treatment: bleomycin",
+        "batch: 1",
+        "library type: RNA"
+      ],
+      "treatment_protocol_ch1": [
+        "Mice were given 3mg/mouse of tamoxifen, 3 weeks later they were injured with 0.08iU bleomycin or saline, then mice were sacrificed 4-weeks after bleomycin injury."
+      ],
+      "growth_protocol_ch1": [
+        "Primary cells directly after mouse sacrifice."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were excised, incubated in DNAse, Disapse and collagenase in a C-Tube and single cells were generated using an octomacs. Cell suspensions were passed through 100um then 40um filter.",
+        "10X multiome protocol-10x Genomics Chromium sequencing targeting 10,000 nuclei per sample and 50,000 reads per nuclei"
+      ],
+      "description": [
+        "Library name: 9412-CT-1_RNA",
+        "Wild type, bleomycin, RNA gene expression"
+      ],
+      "data_processing": [
+        "SoupX and scDoublet were used to remove ambient DNA and detect doublets",
+        "Seurat/Signac used for Multi-resolution clustering, normalization and dimension reduction",
+        "Harmony was used to map the scATAC-seq data onto these clusters by identifying open chromatin regions associated with specific marker genes and integrated with the scRNA-Seq",
+        "MACS2 was used for peak calling with 2kbp of transcriptional start site",
+        "Promoter associated TF factor enrichment was assessed using Chromvar",
+        "Assembly: GRcm39 reference genome",
+        "Supplementary files format and content: h5 files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57201540",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32898947"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM9663198",
+      "title": [
+        "Wild type, bleomycin, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9663198"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: whole lung",
+        "genotype: wild type",
+        "treatment: bleomycin",
+        "batch: 1",
+        "library type: ATAC"
+      ],
+      "treatment_protocol_ch1": [
+        "Mice were given 3mg/mouse of tamoxifen, 3 weeks later they were injured with 0.08iU bleomycin or saline, then mice were sacrificed 4-weeks after bleomycin injury."
+      ],
+      "growth_protocol_ch1": [
+        "Primary cells directly after mouse sacrifice."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were excised, incubated in DNAse, Disapse and collagenase in a C-Tube and single cells were generated using an octomacs. Cell suspensions were passed through 100um then 40um filter.",
+        "10X multiome protocol-10x Genomics Chromium sequencing targeting 10,000 nuclei per sample and 50,000 reads per nuclei"
+      ],
+      "description": [
+        "Library name: 9412-CT-1_ATAC",
+        "Wild type, bleomycin, ATAC sequences"
+      ],
+      "data_processing": [
+        "SoupX and scDoublet were used to remove ambient DNA and detect doublets",
+        "Seurat/Signac used for Multi-resolution clustering, normalization and dimension reduction",
+        "Harmony was used to map the scATAC-seq data onto these clusters by identifying open chromatin regions associated with specific marker genes and integrated with the scRNA-Seq",
+        "MACS2 was used for peak calling with 2kbp of transcriptional start site",
+        "Promoter associated TF factor enrichment was assessed using Chromvar",
+        "Assembly: GRcm39 reference genome",
+        "Supplementary files format and content: h5 files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic single cell"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57201539",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32898948"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM9663199",
+      "title": [
+        "YapTaz active, saline, RNA"
+      ],
+      "geo_accession": [
+        "GSM9663199"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: whole lung",
+        "genotype: YapTaz active",
+        "treatment: saline",
+        "batch: 1",
+        "library type: RNA"
+      ],
+      "treatment_protocol_ch1": [
+        "Mice were given 3mg/mouse of tamoxifen, 3 weeks later they were injured with 0.08iU bleomycin or saline, then mice were sacrificed 4-weeks after bleomycin injury."
+      ],
+      "growth_protocol_ch1": [
+        "Primary cells directly after mouse sacrifice."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were excised, incubated in DNAse, Disapse and collagenase in a C-Tube and single cells were generated using an octomacs. Cell suspensions were passed through 100um then 40um filter.",
+        "10X multiome protocol-10x Genomics Chromium sequencing targeting 10,000 nuclei per sample and 50,000 reads per nuclei"
+      ],
+      "description": [
+        "Library name: 9719-CT-1_RNA",
+        "YapTaz active, saline, RNA gene expression"
+      ],
+      "data_processing": [
+        "SoupX and scDoublet were used to remove ambient DNA and detect doublets",
+        "Seurat/Signac used for Multi-resolution clustering, normalization and dimension reduction",
+        "Harmony was used to map the scATAC-seq data onto these clusters by identifying open chromatin regions associated with specific marker genes and integrated with the scRNA-Seq",
+        "MACS2 was used for peak calling with 2kbp of transcriptional start site",
+        "Promoter associated TF factor enrichment was assessed using Chromvar",
+        "Assembly: GRcm39 reference genome",
+        "Supplementary files format and content: h5 files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57201538",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32898949"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM9663200",
+      "title": [
+        "YapTaz active, saline, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9663200"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: whole lung",
+        "genotype: YapTaz active",
+        "treatment: saline",
+        "batch: 1",
+        "library type: ATAC"
+      ],
+      "treatment_protocol_ch1": [
+        "Mice were given 3mg/mouse of tamoxifen, 3 weeks later they were injured with 0.08iU bleomycin or saline, then mice were sacrificed 4-weeks after bleomycin injury."
+      ],
+      "growth_protocol_ch1": [
+        "Primary cells directly after mouse sacrifice."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were excised, incubated in DNAse, Disapse and collagenase in a C-Tube and single cells were generated using an octomacs. Cell suspensions were passed through 100um then 40um filter.",
+        "10X multiome protocol-10x Genomics Chromium sequencing targeting 10,000 nuclei per sample and 50,000 reads per nuclei"
+      ],
+      "description": [
+        "Library name: 9719-CT-1_ATAC",
+        "YapTaz active, saline, ATAC sequences"
+      ],
+      "data_processing": [
+        "SoupX and scDoublet were used to remove ambient DNA and detect doublets",
+        "Seurat/Signac used for Multi-resolution clustering, normalization and dimension reduction",
+        "Harmony was used to map the scATAC-seq data onto these clusters by identifying open chromatin regions associated with specific marker genes and integrated with the scRNA-Seq",
+        "MACS2 was used for peak calling with 2kbp of transcriptional start site",
+        "Promoter associated TF factor enrichment was assessed using Chromvar",
+        "Assembly: GRcm39 reference genome",
+        "Supplementary files format and content: h5 files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic single cell"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57201537",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32898950"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM9663201",
+      "title": [
+        "YapTaz active, bleomycin, RNA"
+      ],
+      "geo_accession": [
+        "GSM9663201"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: whole lung",
+        "genotype: YapTaz active",
+        "treatment: bleomycin",
+        "batch: 1",
+        "library type: RNA"
+      ],
+      "treatment_protocol_ch1": [
+        "Mice were given 3mg/mouse of tamoxifen, 3 weeks later they were injured with 0.08iU bleomycin or saline, then mice were sacrificed 4-weeks after bleomycin injury."
+      ],
+      "growth_protocol_ch1": [
+        "Primary cells directly after mouse sacrifice."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were excised, incubated in DNAse, Disapse and collagenase in a C-Tube and single cells were generated using an octomacs. Cell suspensions were passed through 100um then 40um filter.",
+        "10X multiome protocol-10x Genomics Chromium sequencing targeting 10,000 nuclei per sample and 50,000 reads per nuclei"
+      ],
+      "description": [
+        "Library name: 8765-CT-1_RNA",
+        "YapTaz active, bleomycin, RNA gene expression"
+      ],
+      "data_processing": [
+        "SoupX and scDoublet were used to remove ambient DNA and detect doublets",
+        "Seurat/Signac used for Multi-resolution clustering, normalization and dimension reduction",
+        "Harmony was used to map the scATAC-seq data onto these clusters by identifying open chromatin regions associated with specific marker genes and integrated with the scRNA-Seq",
+        "MACS2 was used for peak calling with 2kbp of transcriptional start site",
+        "Promoter associated TF factor enrichment was assessed using Chromvar",
+        "Assembly: GRcm39 reference genome",
+        "Supplementary files format and content: h5 files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57201536",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32898951"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM9663202",
+      "title": [
+        "YapTaz active, bleomycin, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9663202"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: whole lung",
+        "genotype: YapTaz active",
+        "treatment: bleomycin",
+        "batch: 1",
+        "library type: ATAC"
+      ],
+      "treatment_protocol_ch1": [
+        "Mice were given 3mg/mouse of tamoxifen, 3 weeks later they were injured with 0.08iU bleomycin or saline, then mice were sacrificed 4-weeks after bleomycin injury."
+      ],
+      "growth_protocol_ch1": [
+        "Primary cells directly after mouse sacrifice."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were excised, incubated in DNAse, Disapse and collagenase in a C-Tube and single cells were generated using an octomacs. Cell suspensions were passed through 100um then 40um filter.",
+        "10X multiome protocol-10x Genomics Chromium sequencing targeting 10,000 nuclei per sample and 50,000 reads per nuclei"
+      ],
+      "description": [
+        "Library name: 8765-CT-1_ATAC",
+        "YapTaz active, bleomycin, ATAC sequences"
+      ],
+      "data_processing": [
+        "SoupX and scDoublet were used to remove ambient DNA and detect doublets",
+        "Seurat/Signac used for Multi-resolution clustering, normalization and dimension reduction",
+        "Harmony was used to map the scATAC-seq data onto these clusters by identifying open chromatin regions associated with specific marker genes and integrated with the scRNA-Seq",
+        "MACS2 was used for peak calling with 2kbp of transcriptional start site",
+        "Promoter associated TF factor enrichment was assessed using Chromvar",
+        "Assembly: GRcm39 reference genome",
+        "Supplementary files format and content: h5 files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic single cell"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57201535",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32898952"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

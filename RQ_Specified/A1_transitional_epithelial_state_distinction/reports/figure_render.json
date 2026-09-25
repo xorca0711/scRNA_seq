@@ -1,0 +1,50 @@
+{
+  "utc": "2026-09-25T05:34:52.459140+00:00",
+  "status": "completed",
+  "scope": "Presentation-only rerender; remove overlapping PCA point labels, keep identities in source tables",
+  "input_table_sha256": {
+    "tables/descriptive/GSE154966_PCA_features.tsv": "f7e0ce7151703b50aad8773b4d49322fc7fc5b079e1ce91d0998954d9bb3e846",
+    "tables/descriptive/GSE154966_PCA_variance.tsv": "21272a46b8de9d0022ef447960a0c44e96545f514399bc3dcea7e0590a27612c",
+    "tables/descriptive/GSE154966_source_PCA_QC.tsv": "c09c592e06925569239b2ac83da82c014e7aa4446d26c61df34ed8c8fe94f80b",
+    "tables/descriptive/GSE273123_PCA_features.tsv": "c3f38f8db7ed4f0179f45b7a9efc2b2db2ec6dc504e85c42e2ab87c727537a53",
+    "tables/descriptive/GSE273123_PCA_variance.tsv": "fb625cfad91981964e599ddedcf3d14cf4eac18bd6127d9d8aa7add2a140b9f9",
+    "tables/descriptive/GSE273123_source_PCA_QC.tsv": "deb607ca8ebd9e455542178abbf84a5ddf3d4be932a615c460709979f2818594",
+    "tables/descriptive/H3K4me3_technical_geometry.tsv": "bd21963020927c1aa666dbe1685bdfdda58a4cd8d035fd3363694bd9f2e2f024",
+    "tables/ire1/count_QC.tsv": "01510db00b43c0cdacba3940d6d5ad187160b6c0f2bef9e16faaf51d3c9fd3ed",
+    "tables/ire1/design.tsv": "b141d59817b2080667257fae9a55bc464400e082aa799a1e70d0b9620c77dcbb",
+    "tables/ire1/feature_filter.tsv": "ccdd7e83006b37ef92f720b04a94e880eeb5302605f70d1c7b7803390227a669",
+    "tables/ire1/fit_summary.tsv": "295c287d367f4b79be8d6f33142c3f34c0437d0732150fbf3bb105d5c499136c",
+    "tables/ire1/gene_effects.tsv": "a738bcc58a455364c70b574077aebcf8df961b65df56cc73c02a235f671d8472",
+    "tables/ire1/gene_effects_without_sex.tsv": "79d0bf11e3aadc6227e325a300b9aad5a5ddc5de6e1b6026a6f8becf0eadf2aa",
+    "tables/ire1/gene_set_camera.tsv": "6a5f4b6e883481bdb2fe83ad44970aacfbde09a9e23fe6a9d511adbdc5c46291",
+    "tables/ire1/gene_set_coverage.tsv": "13b98291d32eb9f7627c1d8dcea4d2d0982001bab3b001da9d3539d789120dfb",
+    "tables/ire1/gene_set_mapping.tsv": "e876b8083d56858e936624569c7d95c7c5b4316b719e5f59a7d6df00ee5212f1",
+    "tables/ire1/gene_set_mapping_tested.tsv": "fb436c6e711eb008a0b78883c16eaaace53f408cda7e2350fb757dcb0738d6c5",
+    "tables/ire1/input_contract.tsv": "1a7695aa7769de0c36427efc3bfa7a2fb26876aea0561b4e224fca4cd0c2ba84",
+    "tables/ire1/marker_logCPM.tsv": "2ca4a1f99256e2d4db7fedfd167ec2b005cb5e7cf4cec0e3eff9d75a47d6978b",
+    "tables/ire1/marker_mapping.tsv": "bd6ad23b79ec852195f2f52feec524daa7f81250bf7488ec319e1d6e25a1443a",
+    "tables/ire1/normalization.tsv": "09fba0733a9f92172977c113dbc5e685c5971cb1d926ac55e1e907b7e300b3a4",
+    "tables/ire1/PCA_features.tsv": "c190fc90624dcdc03ac03654421056c2e532f62da9400b13190da8780440e233",
+    "tables/ire1/PCA_variance.tsv": "22a1f66ad9737f7575e9e2100ed968d4cc83c36ab9165caf4711df867131ef29",
+    "tables/ire1/predefined_marker_effects.tsv": "82ec22e2261f2c0ed71e9fb4207b46298928aec306bf6a0195bfef0bf1fe1747",
+    "tables/ire1/sample_manifest.tsv": "ab113cc8e1058d46d5a6ccc94661700f4527b2f199f357a984f56fef67b92bae",
+    "tables/ire1/sample_PCA.tsv": "c7b00d7961f17615ae17b5e9344eb8406920c8a5c95aff4b7d0d85b5cf5f0660",
+    "tables/ire1/sensitivity_design.tsv": "89e9d2c52bf07cfe1deb6eb278a22492d70104c866549ed3c9512386fb2e5e75",
+    "tables/lineage/pats_mouse_endpoints.tsv": "170bf5d267f8df36b34bb1baf63d9867e564085f11e928b92250eea275dcf8f7",
+    "tables/lineage/pats_source_fields.tsv": "637d65729879b0f58067b8c6a7482ee34aa921b68bd7b36c2d9662ce84b66fee"
+  },
+  "script_sha256": {
+    "10_render_audited_figures.py": "cf594b62cdb5ace0ee6071ec67a4fb2f58d684c2582ac708dbf4452fa519e51d",
+    "07_ire1_epithelial_analysis.py": "57e29e2762d32f0cff609410fc26b177d6e2ef1a63993d2543968c8e6f9d74d2"
+  },
+  "figures": {
+    "a1_deposited_source_PCA.png": "211395d5575f0cbc7c1117d5968669aa440da677d985f494c57825857b903d38",
+    "a1_deposited_source_PCA.svg": "cd95e8e0dd2fa701a27b6e1533e9d104d98a0479d9f4b6e134d5a6ab2e26237d",
+    "a1_ire1_marker_panel.png": "db06b30f8728053c36ccab9ef07a5509365779dadf9ddab58adbc4b76886b193",
+    "a1_ire1_marker_panel.svg": "87d746159726c7db2721668f39ec5a60838949eb8c06c21ffd1b5f7c24023deb",
+    "a1_ire1_rna_overview.png": "9380f9cdd233cec8c90b1583d5cabc6ba627345c6570420a44fbe8cd1dd63d4e",
+    "a1_ire1_rna_overview.svg": "296f07c38e01ad70e375c7365ce415f3b18d7b8ad17d5ec55d199c06ed770ee7",
+    "a1_pats_lineage_endpoints.png": "85d860943d9dffbe84366cc7703b2fa4e2cea2715098fe52229d781480566e49",
+    "a1_pats_lineage_endpoints.svg": "9f8b8ab5690a47274a39ddf3614f3900ccd5c55c7d958b8d3396e3934785f89b"
+  }
+}

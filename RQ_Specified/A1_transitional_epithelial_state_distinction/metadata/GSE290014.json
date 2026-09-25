@@ -1,0 +1,237 @@
+{
+  "accession": "GSE290014",
+  "retrieved_at_utc": "2026-09-25T00:59:24.757607+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290014&targ=all&form=text&view=full",
+  "response_sha256": "efd9a32809c4c9408b3841312e56c4dc0004fbde3e4c7d4563258f13d3f1bac6",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "The iPSC-derived pulmonary epithilial cells in micro-patterned culture plate [scATAC-seq]"
+    ],
+    "geo_accession": [
+      "GSE290014"
+    ],
+    "status": [
+      "Public on Feb 18 2026"
+    ],
+    "last_update_date": [
+      "Feb 19 2026"
+    ],
+    "pubmed_id": [
+      "41680175"
+    ],
+    "overall_design": [
+      "Human iPSC-derived lung progenitor cells were seeded onto micro-patterned plates and cultured in \"DCIK+3i\" (CHIR99021, SB431542 and Y27632) medium for 7 days to induce alveolar organoids involving alveolar type 2 cells in the DCIK+3i medium. Then, the culture medium was switched to DCI+LATS(LATS-IN-1) medium to induce AT1 cells or \"PAL\" medium to induce alveolar transitional state cells (iATCs), respectively. The organoids in each condition were dissociated using Accutase and subjected to single-cell RNA sequencing analysis."
+    ],
+    "type": [
+      "Genome binding/occupancy profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM8803567",
+      "GSM8803568",
+      "GSM8803569"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE290nnn/GSE290014/suppl/GSE290014_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1225736"
+    ]
+  },
+  "sample_count": 3,
+  "samples": [
+    {
+      "accession": "GSM8803567",
+      "title": [
+        "3i_Day14_scATAC"
+      ],
+      "geo_accession": [
+        "GSM8803567"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→DCIK+3i"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, and PAL medium to induce iATCs"
+      ],
+      "molecule_ch1": [
+        "other"
+      ],
+      "extract_protocol_ch1": [
+        "The cell suspension after CPM MACS sorting was used as \"CPM_MACS_progenitor\". The micro-patterned cultured cells were dissociated by  0.5 mM EDTA/PBS and Accutase treatment and subjected to scRNA-seq.",
+        "Single-cell ATAC-seq libraries were prepared using DNBelab C Series High-throughput Single-cell ATAC Library Preparation Set (MGI, #940-000793-00), following the manufacturer’s protocol. After making the nuclei suspension, we subjected 100,000 nuclei to transposition reaction and 20,000 nuclei to droplet formation for each sample using DNBelab C-TaiM 4RS (MGI, #900-000637-00). PCR was first performed in droplets for 10 cycles. Then, after the subsequent demulsification and beads purification, PCR amplification was performed with scATAC Barcode primers for 12 cycles. We then converted the generated libraries to DNB through single-stranded circularization and rolling amplification."
+      ],
+      "description": [
+        "Library name: Sample 1"
+      ],
+      "data_processing": [
+        "The generated fastq files were processed with dnbc4tools (v2.1.2). We aligned the reads to the human genome hg38 assembly after creating the genome index file together with the GENCODE v32 annotation GTF file.",
+        "Assembly: hg38",
+        "Supplementary files format and content: A tab-delimited text file listing the unique cell barcodes detected in the dataset. A sparse matrix in Matrix Market (MTX) format, containing accessibility count values for each peak across all barcoded cells.",
+        "Supplementary files format and content: A BED-formatted file listing the genomic regions (peaks) identified as open chromatin regions."
+      ],
+      "platform_id": [
+        "GPL29480"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46901609",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27733246"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8803nnn/GSM8803567/suppl/GSM8803567_iAT2_barcodes.tsv.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8803nnn/GSM8803567/suppl/GSM8803567_iAT2_matrix.mtx.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8803nnn/GSM8803567/suppl/GSM8803567_iAT2_peaks.bed.gz"
+      ]
+    },
+    {
+      "accession": "GSM8803568",
+      "title": [
+        "3i_LATS_Day14_scATAC"
+      ],
+      "geo_accession": [
+        "GSM8803568"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→DCI+LATS-IN-1"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, and PAL medium to induce iATCs"
+      ],
+      "molecule_ch1": [
+        "other"
+      ],
+      "extract_protocol_ch1": [
+        "The cell suspension after CPM MACS sorting was used as \"CPM_MACS_progenitor\". The micro-patterned cultured cells were dissociated by  0.5 mM EDTA/PBS and Accutase treatment and subjected to scRNA-seq.",
+        "Single-cell ATAC-seq libraries were prepared using DNBelab C Series High-throughput Single-cell ATAC Library Preparation Set (MGI, #940-000793-00), following the manufacturer’s protocol. After making the nuclei suspension, we subjected 100,000 nuclei to transposition reaction and 20,000 nuclei to droplet formation for each sample using DNBelab C-TaiM 4RS (MGI, #900-000637-00). PCR was first performed in droplets for 10 cycles. Then, after the subsequent demulsification and beads purification, PCR amplification was performed with scATAC Barcode primers for 12 cycles. We then converted the generated libraries to DNB through single-stranded circularization and rolling amplification."
+      ],
+      "description": [
+        "Library name: Sample 2"
+      ],
+      "data_processing": [
+        "The generated fastq files were processed with dnbc4tools (v2.1.2). We aligned the reads to the human genome hg38 assembly after creating the genome index file together with the GENCODE v32 annotation GTF file.",
+        "Assembly: hg38",
+        "Supplementary files format and content: A tab-delimited text file listing the unique cell barcodes detected in the dataset. A sparse matrix in Matrix Market (MTX) format, containing accessibility count values for each peak across all barcoded cells.",
+        "Supplementary files format and content: A BED-formatted file listing the genomic regions (peaks) identified as open chromatin regions."
+      ],
+      "platform_id": [
+        "GPL29480"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46901608",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27733247"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8803nnn/GSM8803568/suppl/GSM8803568_iAT1_barcodes.tsv.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8803nnn/GSM8803568/suppl/GSM8803568_iAT1_matrix.mtx.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8803nnn/GSM8803568/suppl/GSM8803568_iAT1_peaks.bed.gz"
+      ]
+    },
+    {
+      "accession": "GSM8803569",
+      "title": [
+        "3i_PAL_Day14_scATAC"
+      ],
+      "geo_accession": [
+        "GSM8803569"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→PAL"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, and PAL medium to induce iATCs"
+      ],
+      "molecule_ch1": [
+        "other"
+      ],
+      "extract_protocol_ch1": [
+        "The cell suspension after CPM MACS sorting was used as \"CPM_MACS_progenitor\". The micro-patterned cultured cells were dissociated by  0.5 mM EDTA/PBS and Accutase treatment and subjected to scRNA-seq.",
+        "Single-cell ATAC-seq libraries were prepared using DNBelab C Series High-throughput Single-cell ATAC Library Preparation Set (MGI, #940-000793-00), following the manufacturer’s protocol. After making the nuclei suspension, we subjected 100,000 nuclei to transposition reaction and 20,000 nuclei to droplet formation for each sample using DNBelab C-TaiM 4RS (MGI, #900-000637-00). PCR was first performed in droplets for 10 cycles. Then, after the subsequent demulsification and beads purification, PCR amplification was performed with scATAC Barcode primers for 12 cycles. We then converted the generated libraries to DNB through single-stranded circularization and rolling amplification."
+      ],
+      "description": [
+        "Library name: Sample 3"
+      ],
+      "data_processing": [
+        "The generated fastq files were processed with dnbc4tools (v2.1.2). We aligned the reads to the human genome hg38 assembly after creating the genome index file together with the GENCODE v32 annotation GTF file.",
+        "Assembly: hg38",
+        "Supplementary files format and content: A tab-delimited text file listing the unique cell barcodes detected in the dataset. A sparse matrix in Matrix Market (MTX) format, containing accessibility count values for each peak across all barcoded cells.",
+        "Supplementary files format and content: A BED-formatted file listing the genomic regions (peaks) identified as open chromatin regions."
+      ],
+      "platform_id": [
+        "GPL29480"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46901607",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27733248"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8803nnn/GSM8803569/suppl/GSM8803569_iATCs_barcodes.tsv.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8803nnn/GSM8803569/suppl/GSM8803569_iATCs_matrix.mtx.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8803nnn/GSM8803569/suppl/GSM8803569_iATCs_peaks.bed.gz"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

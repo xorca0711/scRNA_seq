@@ -1,0 +1,857 @@
+{
+  "accession": "GSE247130",
+  "retrieved_at_utc": "2026-09-25T01:01:06.531981+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247130&targ=all&form=text&view=full",
+  "response_sha256": "7f52700ab42a8716d354c74995eda9594c2a332eceaf4968e09c2aca213cb45f",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "CEBPA restricts alveolar type 2 cell plasticity during development and injury-repair [1]"
+    ],
+    "geo_accession": [
+      "GSE247130"
+    ],
+    "status": [
+      "Public on Apr 18 2024"
+    ],
+    "last_update_date": [
+      "May 19 2024"
+    ],
+    "pubmed_id": [
+      "38755149"
+    ],
+    "overall_design": [
+      "FACS purified epithelial cells from Cebpa mutant and littermate control were profiled at the indicated time"
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing",
+      "Genome binding/occupancy profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM7883976",
+      "GSM7883977",
+      "GSM7883978",
+      "GSM7883979",
+      "GSM7883980",
+      "GSM7883981",
+      "GSM7883982",
+      "GSM7883983",
+      "GSM7883984",
+      "GSM7883985",
+      "GSM7883986",
+      "GSM7883987"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate.P9.atac_peak_annotation.tsv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate.P9.rds.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate.P9_atac_fragments.tsv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate.P9_atac_fragments.tsv.gz.tbi.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate.P9_cloupe.cloupe.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate.P9_filtered_feature_bc_matrix.h5",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate7-wk.rds.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate7-wk_atac_fragments.tsv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate7-wk_atac_fragments.tsv.gz.tbi.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate7-wk_atac_peak_annotation.tsv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate7-wk_cloupe.cloupe.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate7-wk_filtered_feature_bc_matrix.h5",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate7-wk_raw_feature_bc_matrix.h5",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate7wk_filtered_feature_bc_matrix.h5",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate_SeV.rds.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate_SeV_atac_fragments.tsv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate_SeV_atac_fragments.tsv.gz.tbi.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate_SeV_atac_peak_annotation.tsv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate_SeV_cloupe.cloupe.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate_SeV_filtered_feature_bc_matrix.h5",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_Aggregate_SeV_raw_feature_bc_matrix.h5",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247130/suppl/GSE247130_RAW.tar"
+    ],
+    "relation": [
+      "SubSeries of: GSE247272",
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1036384"
+    ]
+  },
+  "sample_count": 12,
+  "samples": [
+    {
+      "accession": "GSM7883976",
+      "title": [
+        "mutant P9 scmultiome GE"
+      ],
+      "geo_accession": [
+        "GSM7883976"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: epithelial cells",
+        "genotype: CebpaCKO/CKO; SftpcCreER;Sun1GFP",
+        "age: postnatal day 9",
+        "treatment: 250ug-Tamoxifen at at postnatal day 2",
+        "Sex: pooled male and female"
+      ],
+      "molecule_ch1": [
+        "nuclear RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Perfused lungs were collected from anesthetized mice as described above. Previously published protocols for cell dissociation and sorting cells were used with minor modifications11. Extra-pulmonary airways and connective tissues were removed from lungs, which were then minced with forceps and digested in Liebovitz media (Gibco, 21083-027) for scRNA-seq, ATAC-seq, or scATAC-seq with 2 mg/mL collagenase type I (Worthington, CLS-1, LS004197), 0.5 mg/mL DNase I (Worthington, D, LS002007), and 2 mg/mL elastase (Worthingon, ESL, LS002294) for 30 min at 37 °C. To stop the digestion, fetal bovine serum (FBS, Invitrogen, 10082-139) was added to a final concentration of 20%. Tissues were triturated until homogenous and filtered through a 70 µm cell strainer (Falcon, 352350) on ice in a 4 °C cold room and transferred to a 2 mL tube. The sample was then centrifuged at 1,537 rcf for 1 min; then 1 mL red blood cell lysis buffer (15 mM NH4Cl, 12 mM NaHCO3, 0.1 mM EDTA, pH 8.0) was added and incubated for 3 min before centrifugation again at 1,537 rcf. The red blood cell lysis buffer incubation was repeated to remove residual red blood cells. Liebovitz+10% FBS was used to wash and resuspend samples, which were then filtrated through a 35 mm cell strainer into a 5 mL glass tube and had SYTOX Blue (1:1000, Invitrogen, S34857) added. After refiltering, samples were for ATAC-seq were sorted for GFP positive cells from a RosaSun1GFP reporter activated by Wnt3aCre, Rtkn2CreER, or SftpcCreER on a BD FACSAria IIIu cell sorter with a 70 mm nozzle. Samples for scRNA-seq or scATAC-seq were stained with CD45-PE/Cy7 (BioLegend, 103114), ECAD-PE (BioLegend, 147304), and ICAM2-A647 (Invitrogen, A15452) antibodies (1:250 dilutions for all antibodies) for 30 min followed by a wash and being resuspended with Liebovitz meda+10% FBS and addition of SYTOX Blue. Samples were then filtered through a 35 mm cell strainer into a 5 mL glass tube again and sorted by a BD FACSAria Fusion sorter or a with a 70 mm nozzle.",
+        "FACS-purified lung epithelial, were processed through the CG000338_ChromiumNextGEM_Multiome_ATAC_GEX_User_Guide_Revf.",
+        "scRNA-seq  28 cycles read1, 90 cycles read2, 10 cycles Index1, and 10 cycles Index2",
+        "scATAC-seq 50 cycles for read 1, 49 cycles for read2, 8 cycles for index1, and 24 cycles for index2"
+      ],
+      "description": [
+        "Deletion of cebpa from neonatal AT2 cells",
+        "Aggregate.P9_filtered_feature_bc_matrix.h5",
+        "Aggregate.P9.rds",
+        "Aggregate.P9_cloupe.cloupe"
+      ],
+      "data_processing": [
+        "Raw sequencing data (fastq file) was demultiplexed and analyzed using 10X Genomics Cell Ranger ARC software",
+        "Further analysis can be achieved using the Cell Ranger ARC-derived analysis files in 10X Genomics Loupe Browser software.",
+        "Assembly: mm10",
+        "Supplementary files format and content: Rds, tsv and mtx files can be opened with Seurat&Signac (R package) and analyzed. Cloupe file can be opened with Loupe cell browser to visualize the data.",
+        "Supplementary files format and content: filtered_feature_bc_matrix.h5 can be opened with Seurat (R package)"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN38144885",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX22384750"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM7883977",
+      "title": [
+        "mutant P9 scmultiome ATAC"
+      ],
+      "geo_accession": [
+        "GSM7883977"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: epithelial cells",
+        "genotype: CebpaCKO/CKO; SftpcCreER;Sun1GFP",
+        "age: postnatal day 9",
+        "treatment: 250ug-Tamoxifen at at postnatal day 2",
+        "Sex: pooled male and female"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Perfused lungs were collected from anesthetized mice as described above. Previously published protocols for cell dissociation and sorting cells were used with minor modifications11. Extra-pulmonary airways and connective tissues were removed from lungs, which were then minced with forceps and digested in Liebovitz media (Gibco, 21083-027) for scRNA-seq, ATAC-seq, or scATAC-seq with 2 mg/mL collagenase type I (Worthington, CLS-1, LS004197), 0.5 mg/mL DNase I (Worthington, D, LS002007), and 2 mg/mL elastase (Worthingon, ESL, LS002294) for 30 min at 37 °C. To stop the digestion, fetal bovine serum (FBS, Invitrogen, 10082-139) was added to a final concentration of 20%. Tissues were triturated until homogenous and filtered through a 70 µm cell strainer (Falcon, 352350) on ice in a 4 °C cold room and transferred to a 2 mL tube. The sample was then centrifuged at 1,537 rcf for 1 min; then 1 mL red blood cell lysis buffer (15 mM NH4Cl, 12 mM NaHCO3, 0.1 mM EDTA, pH 8.0) was added and incubated for 3 min before centrifugation again at 1,537 rcf. The red blood cell lysis buffer incubation was repeated to remove residual red blood cells. Liebovitz+10% FBS was used to wash and resuspend samples, which were then filtrated through a 35 mm cell strainer into a 5 mL glass tube and had SYTOX Blue (1:1000, Invitrogen, S34857) added. After refiltering, samples were for ATAC-seq were sorted for GFP positive cells from a RosaSun1GFP reporter activated by Wnt3aCre, Rtkn2CreER, or SftpcCreER on a BD FACSAria IIIu cell sorter with a 70 mm nozzle. Samples for scRNA-seq or scATAC-seq were stained with CD45-PE/Cy7 (BioLegend, 103114), ECAD-PE (BioLegend, 147304), and ICAM2-A647 (Invitrogen, A15452) antibodies (1:250 dilutions for all antibodies) for 30 min followed by a wash and being resuspended with Liebovitz meda+10% FBS and addition of SYTOX Blue. Samples were then filtered through a 35 mm cell strainer into a 5 mL glass tube again and sorted by a BD FACSAria Fusion sorter or a with a 70 mm nozzle.",
+        "FACS-purified lung epithelial, were processed through the CG000338_ChromiumNextGEM_Multiome_ATAC_GEX_User_Guide_Revf.",
+        "scRNA-seq  28 cycles read1, 90 cycles read2, 10 cycles Index1, and 10 cycles Index2",
+        "scATAC-seq 50 cycles for read 1, 49 cycles for read2, 8 cycles for index1, and 24 cycles for index2"
+      ],
+      "description": [
+        "Deletion of cebpa from neonatal AT2 cells",
+        "Aggregate.P9_atac_fragments.tsv.gz",
+        "Aggregate.P9.atac_peak_annotation.tsv",
+        "Aggregate.P9_cloupe.cloupe"
+      ],
+      "data_processing": [
+        "Raw sequencing data (fastq file) was demultiplexed and analyzed using 10X Genomics Cell Ranger ARC software",
+        "Further analysis can be achieved using the Cell Ranger ARC-derived analysis files in 10X Genomics Loupe Browser software.",
+        "Assembly: mm10",
+        "Supplementary files format and content: Rds, tsv and mtx files can be opened with Seurat&Signac (R package) and analyzed. Cloupe file can be opened with Loupe cell browser to visualize the data.",
+        "Supplementary files format and content: filtered_feature_bc_matrix.h5 can be opened with Seurat (R package)"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic single cell"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN38144884",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX22384751"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7883nnn/GSM7883977/suppl/GSM7883977_P9-mutAT2_psudoBulkATAC.rep1.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7883nnn/GSM7883977/suppl/GSM7883977_P9-mutAT2_psudoBulkATAC.rep2.broadPeak.gz"
+      ]
+    },
+    {
+      "accession": "GSM7883978",
+      "title": [
+        "control P9 scmultiome GE"
+      ],
+      "geo_accession": [
+        "GSM7883978"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: epithelial cells",
+        "genotype: CebpaCKO/+; SftpcCreER;SUN1GFP",
+        "age: postnatal day 9",
+        "treatment: 250ug-Tamoxifen at at postnatal day 2",
+        "Sex: pooled male and female"
+      ],
+      "molecule_ch1": [
+        "nuclear RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Perfused lungs were collected from anesthetized mice as described above. Previously published protocols for cell dissociation and sorting cells were used with minor modifications11. Extra-pulmonary airways and connective tissues were removed from lungs, which were then minced with forceps and digested in Liebovitz media (Gibco, 21083-027) for scRNA-seq, ATAC-seq, or scATAC-seq with 2 mg/mL collagenase type I (Worthington, CLS-1, LS004197), 0.5 mg/mL DNase I (Worthington, D, LS002007), and 2 mg/mL elastase (Worthingon, ESL, LS002294) for 30 min at 37 °C. To stop the digestion, fetal bovine serum (FBS, Invitrogen, 10082-139) was added to a final concentration of 20%. Tissues were triturated until homogenous and filtered through a 70 µm cell strainer (Falcon, 352350) on ice in a 4 °C cold room and transferred to a 2 mL tube. The sample was then centrifuged at 1,537 rcf for 1 min; then 1 mL red blood cell lysis buffer (15 mM NH4Cl, 12 mM NaHCO3, 0.1 mM EDTA, pH 8.0) was added and incubated for 3 min before centrifugation again at 1,537 rcf. The red blood cell lysis buffer incubation was repeated to remove residual red blood cells. Liebovitz+10% FBS was used to wash and resuspend samples, which were then filtrated through a 35 mm cell strainer into a 5 mL glass tube and had SYTOX Blue (1:1000, Invitrogen, S34857) added. After refiltering, samples were for ATAC-seq were sorted for GFP positive cells from a RosaSun1GFP reporter activated by Wnt3aCre, Rtkn2CreER, or SftpcCreER on a BD FACSAria IIIu cell sorter with a 70 mm nozzle. Samples for scRNA-seq or scATAC-seq were stained with CD45-PE/Cy7 (BioLegend, 103114), ECAD-PE (BioLegend, 147304), and ICAM2-A647 (Invitrogen, A15452) antibodies (1:250 dilutions for all antibodies) for 30 min followed by a wash and being resuspended with Liebovitz meda+10% FBS and addition of SYTOX Blue. Samples were then filtered through a 35 mm cell strainer into a 5 mL glass tube again and sorted by a BD FACSAria Fusion sorter or a with a 70 mm nozzle.",
+        "FACS-purified lung epithelial, were processed through the CG000338_ChromiumNextGEM_Multiome_ATAC_GEX_User_Guide_Revf.",
+        "scRNA-seq  28 cycles read1, 90 cycles read2, 10 cycles Index1, and 10 cycles Index2",
+        "scATAC-seq 50 cycles for read 1, 49 cycles for read2, 8 cycles for index1, and 24 cycles for index2"
+      ],
+      "description": [
+        "Deletion of cebpa from neonatal AT2 cells",
+        "Aggregate.P9_filtered_feature_bc_matrix.h5",
+        "Aggregate.P9.rds",
+        "Aggregate.P9_cloupe.cloupe"
+      ],
+      "data_processing": [
+        "Raw sequencing data (fastq file) was demultiplexed and analyzed using 10X Genomics Cell Ranger ARC software",
+        "Further analysis can be achieved using the Cell Ranger ARC-derived analysis files in 10X Genomics Loupe Browser software.",
+        "Assembly: mm10",
+        "Supplementary files format and content: Rds, tsv and mtx files can be opened with Seurat&Signac (R package) and analyzed. Cloupe file can be opened with Loupe cell browser to visualize the data.",
+        "Supplementary files format and content: filtered_feature_bc_matrix.h5 can be opened with Seurat (R package)"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN38144883",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX22384752"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM7883979",
+      "title": [
+        "control P9 scmultiome ATAC"
+      ],
+      "geo_accession": [
+        "GSM7883979"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: epithelial cells",
+        "genotype: CebpaCKO/+; SftpcCreER;SUN1GFP",
+        "age: postnatal day 9",
+        "treatment: 250ug-Tamoxifen at at postnatal day 2",
+        "Sex: pooled male and female"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Perfused lungs were collected from anesthetized mice as described above. Previously published protocols for cell dissociation and sorting cells were used with minor modifications11. Extra-pulmonary airways and connective tissues were removed from lungs, which were then minced with forceps and digested in Liebovitz media (Gibco, 21083-027) for scRNA-seq, ATAC-seq, or scATAC-seq with 2 mg/mL collagenase type I (Worthington, CLS-1, LS004197), 0.5 mg/mL DNase I (Worthington, D, LS002007), and 2 mg/mL elastase (Worthingon, ESL, LS002294) for 30 min at 37 °C. To stop the digestion, fetal bovine serum (FBS, Invitrogen, 10082-139) was added to a final concentration of 20%. Tissues were triturated until homogenous and filtered through a 70 µm cell strainer (Falcon, 352350) on ice in a 4 °C cold room and transferred to a 2 mL tube. The sample was then centrifuged at 1,537 rcf for 1 min; then 1 mL red blood cell lysis buffer (15 mM NH4Cl, 12 mM NaHCO3, 0.1 mM EDTA, pH 8.0) was added and incubated for 3 min before centrifugation again at 1,537 rcf. The red blood cell lysis buffer incubation was repeated to remove residual red blood cells. Liebovitz+10% FBS was used to wash and resuspend samples, which were then filtrated through a 35 mm cell strainer into a 5 mL glass tube and had SYTOX Blue (1:1000, Invitrogen, S34857) added. After refiltering, samples were for ATAC-seq were sorted for GFP positive cells from a RosaSun1GFP reporter activated by Wnt3aCre, Rtkn2CreER, or SftpcCreER on a BD FACSAria IIIu cell sorter with a 70 mm nozzle. Samples for scRNA-seq or scATAC-seq were stained with CD45-PE/Cy7 (BioLegend, 103114), ECAD-PE (BioLegend, 147304), and ICAM2-A647 (Invitrogen, A15452) antibodies (1:250 dilutions for all antibodies) for 30 min followed by a wash and being resuspended with Liebovitz meda+10% FBS and addition of SYTOX Blue. Samples were then filtered through a 35 mm cell strainer into a 5 mL glass tube again and sorted by a BD FACSAria Fusion sorter or a with a 70 mm nozzle.",
+        "FACS-purified lung epithelial, were processed through the CG000338_ChromiumNextGEM_Multiome_ATAC_GEX_User_Guide_Revf.",
+        "scRNA-seq  28 cycles read1, 90 cycles read2, 10 cycles Index1, and 10 cycles Index2",
+        "scATAC-seq 50 cycles for read 1, 49 cycles for read2, 8 cycles for index1, and 24 cycles for index2"
+      ],
+      "description": [
+        "Deletion of cebpa from neonatal AT2 cells",
+        "Aggregate.P9_atac_fragments.tsv.gz",
+        "Aggregate.P9.atac_peak_annotation.tsv",
+        "Aggregate7-wk_cloupe.cloupe"
+      ],
+      "data_processing": [
+        "Raw sequencing data (fastq file) was demultiplexed and analyzed using 10X Genomics Cell Ranger ARC software",
+        "Further analysis can be achieved using the Cell Ranger ARC-derived analysis files in 10X Genomics Loupe Browser software.",
+        "Assembly: mm10",
+        "Supplementary files format and content: Rds, tsv and mtx files can be opened with Seurat&Signac (R package) and analyzed. Cloupe file can be opened with Loupe cell browser to visualize the data.",
+        "Supplementary files format and content: filtered_feature_bc_matrix.h5 can be opened with Seurat (R package)"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic single cell"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN38144882",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX22384753"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7883nnn/GSM7883979/suppl/GSM7883979_P9-ctrlAT2_psudoBulkATAC.rep1.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7883nnn/GSM7883979/suppl/GSM7883979_P9-ctrlAT2_psudoBulkATAC.rep2.broadPeak.gz"
+      ]
+    },
+    {
+      "accession": "GSM7883980",
+      "title": [
+        "7 wk mutant scmultiome GE"
+      ],
+      "geo_accession": [
+        "GSM7883980"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: epithelial cells",
+        "genotype: CebpaCKO/CKO; SftpcCreER;Sun1GFP",
+        "age: 7-wk",
+        "treatment: 2 doses of Tamoxifen each 3mg at 5-wk",
+        "Sex: pooled male and female"
+      ],
+      "molecule_ch1": [
+        "nuclear RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Perfused lungs were collected from anesthetized mice as described above. Previously published protocols for cell dissociation and sorting cells were used with minor modifications11. Extra-pulmonary airways and connective tissues were removed from lungs, which were then minced with forceps and digested in Liebovitz media (Gibco, 21083-027) for scRNA-seq, ATAC-seq, or scATAC-seq with 2 mg/mL collagenase type I (Worthington, CLS-1, LS004197), 0.5 mg/mL DNase I (Worthington, D, LS002007), and 2 mg/mL elastase (Worthingon, ESL, LS002294) for 30 min at 37 °C. To stop the digestion, fetal bovine serum (FBS, Invitrogen, 10082-139) was added to a final concentration of 20%. Tissues were triturated until homogenous and filtered through a 70 µm cell strainer (Falcon, 352350) on ice in a 4 °C cold room and transferred to a 2 mL tube. The sample was then centrifuged at 1,537 rcf for 1 min; then 1 mL red blood cell lysis buffer (15 mM NH4Cl, 12 mM NaHCO3, 0.1 mM EDTA, pH 8.0) was added and incubated for 3 min before centrifugation again at 1,537 rcf. The red blood cell lysis buffer incubation was repeated to remove residual red blood cells. Liebovitz+10% FBS was used to wash and resuspend samples, which were then filtrated through a 35 mm cell strainer into a 5 mL glass tube and had SYTOX Blue (1:1000, Invitrogen, S34857) added. After refiltering, samples were for ATAC-seq were sorted for GFP positive cells from a RosaSun1GFP reporter activated by Wnt3aCre, Rtkn2CreER, or SftpcCreER on a BD FACSAria IIIu cell sorter with a 70 mm nozzle. Samples for scRNA-seq or scATAC-seq were stained with CD45-PE/Cy7 (BioLegend, 103114), ECAD-PE (BioLegend, 147304), and ICAM2-A647 (Invitrogen, A15452) antibodies (1:250 dilutions for all antibodies) for 30 min followed by a wash and being resuspended with Liebovitz meda+10% FBS and addition of SYTOX Blue. Samples were then filtered through a 35 mm cell strainer into a 5 mL glass tube again and sorted by a BD FACSAria Fusion sorter or a with a 70 mm nozzle.",
+        "FACS-purified lung epithelial, were processed through the CG000338_ChromiumNextGEM_Multiome_ATAC_GEX_User_Guide_Revf.",
+        "scRNA-seq  28 cycles read1, 90 cycles read2, 10 cycles Index1, and 10 cycles Index2",
+        "scATAC-seq 50 cycles for read 1, 49 cycles for read2, 8 cycles for index1, and 24 cycles for index2"
+      ],
+      "description": [
+        "Deletion of cebpa in mature AT2 cells",
+        "Aggregate7wk_filtered_feature_bc_matrix.h5",
+        "Aggregate7wk_raw_feature_bc_matrix.h5",
+        "Aggregate7-wk_cloupe.cloupe"
+      ],
+      "data_processing": [
+        "Raw sequencing data (fastq file) was demultiplexed and analyzed using 10X Genomics Cell Ranger ARC software",
+        "Further analysis can be achieved using the Cell Ranger ARC-derived analysis files in 10X Genomics Loupe Browser software.",
+        "Assembly: mm10",
+        "Supplementary files format and content: Rds, tsv and mtx files can be opened with Seurat&Signac (R package) and analyzed. Cloupe file can be opened with Loupe cell browser to visualize the data.",
+        "Supplementary files format and content: filtered_feature_bc_matrix.h5 can be opened with Seurat (R package)"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN38144881",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX22384754"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM7883981",
+      "title": [
+        "7-wk mutant scmultiome ATAC"
+      ],
+      "geo_accession": [
+        "GSM7883981"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: epithelial cells",
+        "genotype: CebpaCKO/CKO; SftpcCreER;Sun1GFP",
+        "age: 7-wk",
+        "treatment: 2 doses of Tamoxifen each 3mg at 5-wk",
+        "Sex: pooled male and female"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Perfused lungs were collected from anesthetized mice as described above. Previously published protocols for cell dissociation and sorting cells were used with minor modifications11. Extra-pulmonary airways and connective tissues were removed from lungs, which were then minced with forceps and digested in Liebovitz media (Gibco, 21083-027) for scRNA-seq, ATAC-seq, or scATAC-seq with 2 mg/mL collagenase type I (Worthington, CLS-1, LS004197), 0.5 mg/mL DNase I (Worthington, D, LS002007), and 2 mg/mL elastase (Worthingon, ESL, LS002294) for 30 min at 37 °C. To stop the digestion, fetal bovine serum (FBS, Invitrogen, 10082-139) was added to a final concentration of 20%. Tissues were triturated until homogenous and filtered through a 70 µm cell strainer (Falcon, 352350) on ice in a 4 °C cold room and transferred to a 2 mL tube. The sample was then centrifuged at 1,537 rcf for 1 min; then 1 mL red blood cell lysis buffer (15 mM NH4Cl, 12 mM NaHCO3, 0.1 mM EDTA, pH 8.0) was added and incubated for 3 min before centrifugation again at 1,537 rcf. The red blood cell lysis buffer incubation was repeated to remove residual red blood cells. Liebovitz+10% FBS was used to wash and resuspend samples, which were then filtrated through a 35 mm cell strainer into a 5 mL glass tube and had SYTOX Blue (1:1000, Invitrogen, S34857) added. After refiltering, samples were for ATAC-seq were sorted for GFP positive cells from a RosaSun1GFP reporter activated by Wnt3aCre, Rtkn2CreER, or SftpcCreER on a BD FACSAria IIIu cell sorter with a 70 mm nozzle. Samples for scRNA-seq or scATAC-seq were stained with CD45-PE/Cy7 (BioLegend, 103114), ECAD-PE (BioLegend, 147304), and ICAM2-A647 (Invitrogen, A15452) antibodies (1:250 dilutions for all antibodies) for 30 min followed by a wash and being resuspended with Liebovitz meda+10% FBS and addition of SYTOX Blue. Samples were then filtered through a 35 mm cell strainer into a 5 mL glass tube again and sorted by a BD FACSAria Fusion sorter or a with a 70 mm nozzle.",
+        "FACS-purified lung epithelial, were processed through the CG000338_ChromiumNextGEM_Multiome_ATAC_GEX_User_Guide_Revf.",
+        "scRNA-seq  28 cycles read1, 90 cycles read2, 10 cycles Index1, and 10 cycles Index2",
+        "scATAC-seq 50 cycles for read 1, 49 cycles for read2, 8 cycles for index1, and 24 cycles for index2"
+      ],
+      "description": [
+        "Deletion of cebpa in mature AT2 cells",
+        "Aggregate7-wk_atac_fragments.tsv.gz",
+        "Aggregate7-wk.rds",
+        "Aggregate7-wk_cloupe.cloupe"
+      ],
+      "data_processing": [
+        "Raw sequencing data (fastq file) was demultiplexed and analyzed using 10X Genomics Cell Ranger ARC software",
+        "Further analysis can be achieved using the Cell Ranger ARC-derived analysis files in 10X Genomics Loupe Browser software.",
+        "Assembly: mm10",
+        "Supplementary files format and content: Rds, tsv and mtx files can be opened with Seurat&Signac (R package) and analyzed. Cloupe file can be opened with Loupe cell browser to visualize the data.",
+        "Supplementary files format and content: filtered_feature_bc_matrix.h5 can be opened with Seurat (R package)"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic single cell"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN38144880",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX22384755"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7883nnn/GSM7883981/suppl/GSM7883981_7wk-mutAT2_psudoBulkATAC.rep1.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7883nnn/GSM7883981/suppl/GSM7883981_7wk-mutAT2_psudoBulkATAC.rep2.broadPeak.gz"
+      ]
+    },
+    {
+      "accession": "GSM7883982",
+      "title": [
+        "7-wk control scmultiome GE"
+      ],
+      "geo_accession": [
+        "GSM7883982"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: epithelial cells",
+        "genotype: CebpaCKO/+; SftpcCreER;SUN1GFP",
+        "age: 7-wk",
+        "treatment: 2 doses of Tamoxifen each 3mg at 5-wk",
+        "Sex: pooled male and female"
+      ],
+      "molecule_ch1": [
+        "nuclear RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Perfused lungs were collected from anesthetized mice as described above. Previously published protocols for cell dissociation and sorting cells were used with minor modifications11. Extra-pulmonary airways and connective tissues were removed from lungs, which were then minced with forceps and digested in Liebovitz media (Gibco, 21083-027) for scRNA-seq, ATAC-seq, or scATAC-seq with 2 mg/mL collagenase type I (Worthington, CLS-1, LS004197), 0.5 mg/mL DNase I (Worthington, D, LS002007), and 2 mg/mL elastase (Worthingon, ESL, LS002294) for 30 min at 37 °C. To stop the digestion, fetal bovine serum (FBS, Invitrogen, 10082-139) was added to a final concentration of 20%. Tissues were triturated until homogenous and filtered through a 70 µm cell strainer (Falcon, 352350) on ice in a 4 °C cold room and transferred to a 2 mL tube. The sample was then centrifuged at 1,537 rcf for 1 min; then 1 mL red blood cell lysis buffer (15 mM NH4Cl, 12 mM NaHCO3, 0.1 mM EDTA, pH 8.0) was added and incubated for 3 min before centrifugation again at 1,537 rcf. The red blood cell lysis buffer incubation was repeated to remove residual red blood cells. Liebovitz+10% FBS was used to wash and resuspend samples, which were then filtrated through a 35 mm cell strainer into a 5 mL glass tube and had SYTOX Blue (1:1000, Invitrogen, S34857) added. After refiltering, samples were for ATAC-seq were sorted for GFP positive cells from a RosaSun1GFP reporter activated by Wnt3aCre, Rtkn2CreER, or SftpcCreER on a BD FACSAria IIIu cell sorter with a 70 mm nozzle. Samples for scRNA-seq or scATAC-seq were stained with CD45-PE/Cy7 (BioLegend, 103114), ECAD-PE (BioLegend, 147304), and ICAM2-A647 (Invitrogen, A15452) antibodies (1:250 dilutions for all antibodies) for 30 min followed by a wash and being resuspended with Liebovitz meda+10% FBS and addition of SYTOX Blue. Samples were then filtered through a 35 mm cell strainer into a 5 mL glass tube again and sorted by a BD FACSAria Fusion sorter or a with a 70 mm nozzle.",
+        "FACS-purified lung epithelial, were processed through the CG000338_ChromiumNextGEM_Multiome_ATAC_GEX_User_Guide_Revf.",
+        "scRNA-seq  28 cycles read1, 90 cycles read2, 10 cycles Index1, and 10 cycles Index2",
+        "scATAC-seq 50 cycles for read 1, 49 cycles for read2, 8 cycles for index1, and 24 cycles for index2"
+      ],
+      "description": [
+        "Deletion of cebpa in mature AT2 cells",
+        "Aggregate7-wk_filtered_feature_bc_matrix.h5",
+        "Aggregate7-wk_raw_feature_bc_matrix.h5",
+        "Aggregate7-wk_cloupe.cloupe"
+      ],
+      "data_processing": [
+        "Raw sequencing data (fastq file) was demultiplexed and analyzed using 10X Genomics Cell Ranger ARC software",
+        "Further analysis can be achieved using the Cell Ranger ARC-derived analysis files in 10X Genomics Loupe Browser software.",
+        "Assembly: mm10",
+        "Supplementary files format and content: Rds, tsv and mtx files can be opened with Seurat&Signac (R package) and analyzed. Cloupe file can be opened with Loupe cell browser to visualize the data.",
+        "Supplementary files format and content: filtered_feature_bc_matrix.h5 can be opened with Seurat (R package)"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN38144879",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX22384756"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM7883983",
+      "title": [
+        "7-wk control scmultiome ATAC"
+      ],
+      "geo_accession": [
+        "GSM7883983"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: epithelial cells",
+        "genotype: CebpaCKO/+; SftpcCreER;SUN1GFP",
+        "age: 7-wk",
+        "treatment: 2 doses of Tamoxifen each 3mg at 5-wk",
+        "Sex: pooled male and female"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Perfused lungs were collected from anesthetized mice as described above. Previously published protocols for cell dissociation and sorting cells were used with minor modifications11. Extra-pulmonary airways and connective tissues were removed from lungs, which were then minced with forceps and digested in Liebovitz media (Gibco, 21083-027) for scRNA-seq, ATAC-seq, or scATAC-seq with 2 mg/mL collagenase type I (Worthington, CLS-1, LS004197), 0.5 mg/mL DNase I (Worthington, D, LS002007), and 2 mg/mL elastase (Worthingon, ESL, LS002294) for 30 min at 37 °C. To stop the digestion, fetal bovine serum (FBS, Invitrogen, 10082-139) was added to a final concentration of 20%. Tissues were triturated until homogenous and filtered through a 70 µm cell strainer (Falcon, 352350) on ice in a 4 °C cold room and transferred to a 2 mL tube. The sample was then centrifuged at 1,537 rcf for 1 min; then 1 mL red blood cell lysis buffer (15 mM NH4Cl, 12 mM NaHCO3, 0.1 mM EDTA, pH 8.0) was added and incubated for 3 min before centrifugation again at 1,537 rcf. The red blood cell lysis buffer incubation was repeated to remove residual red blood cells. Liebovitz+10% FBS was used to wash and resuspend samples, which were then filtrated through a 35 mm cell strainer into a 5 mL glass tube and had SYTOX Blue (1:1000, Invitrogen, S34857) added. After refiltering, samples were for ATAC-seq were sorted for GFP positive cells from a RosaSun1GFP reporter activated by Wnt3aCre, Rtkn2CreER, or SftpcCreER on a BD FACSAria IIIu cell sorter with a 70 mm nozzle. Samples for scRNA-seq or scATAC-seq were stained with CD45-PE/Cy7 (BioLegend, 103114), ECAD-PE (BioLegend, 147304), and ICAM2-A647 (Invitrogen, A15452) antibodies (1:250 dilutions for all antibodies) for 30 min followed by a wash and being resuspended with Liebovitz meda+10% FBS and addition of SYTOX Blue. Samples were then filtered through a 35 mm cell strainer into a 5 mL glass tube again and sorted by a BD FACSAria Fusion sorter or a with a 70 mm nozzle.",
+        "FACS-purified lung epithelial, were processed through the CG000338_ChromiumNextGEM_Multiome_ATAC_GEX_User_Guide_Revf.",
+        "scRNA-seq  28 cycles read1, 90 cycles read2, 10 cycles Index1, and 10 cycles Index2",
+        "scATAC-seq 50 cycles for read 1, 49 cycles for read2, 8 cycles for index1, and 24 cycles for index2"
+      ],
+      "description": [
+        "Deletion of cebpa in mature AT2 cells",
+        "Aggregate7-wk_atac_fragments.tsv.gz",
+        "Aggregate7-wk.rds",
+        "Aggregate7-wk_cloupe.cloupe"
+      ],
+      "data_processing": [
+        "Raw sequencing data (fastq file) was demultiplexed and analyzed using 10X Genomics Cell Ranger ARC software",
+        "Further analysis can be achieved using the Cell Ranger ARC-derived analysis files in 10X Genomics Loupe Browser software.",
+        "Assembly: mm10",
+        "Supplementary files format and content: Rds, tsv and mtx files can be opened with Seurat&Signac (R package) and analyzed. Cloupe file can be opened with Loupe cell browser to visualize the data.",
+        "Supplementary files format and content: filtered_feature_bc_matrix.h5 can be opened with Seurat (R package)"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic single cell"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN38144878",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX22384757"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7883nnn/GSM7883983/suppl/GSM7883983_7wk-ctrlAT2_psudoBulkATAC.rep1.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7883nnn/GSM7883983/suppl/GSM7883983_7wk-ctrlAT2_psudoBulkATAC.rep2.broadPeak.gz"
+      ]
+    },
+    {
+      "accession": "GSM7883984",
+      "title": [
+        "SeV mutant scmultiome GE"
+      ],
+      "geo_accession": [
+        "GSM7883984"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: epithelial cells",
+        "genotype: CebpaCKO/CKO; SftpcCreER;Sun1GFP",
+        "age: 12-wk",
+        "treatment: 3 doses of Tamoxifen each 3mg (last dose at 7-wk) , Sendai Virus treatment at 10-wk, lung harvest at 12-wk",
+        "Sex: pooled male and female"
+      ],
+      "molecule_ch1": [
+        "nuclear RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Perfused lungs were collected from anesthetized mice as described above. Previously published protocols for cell dissociation and sorting cells were used with minor modifications11. Extra-pulmonary airways and connective tissues were removed from lungs, which were then minced with forceps and digested in Liebovitz media (Gibco, 21083-027) for scRNA-seq, ATAC-seq, or scATAC-seq with 2 mg/mL collagenase type I (Worthington, CLS-1, LS004197), 0.5 mg/mL DNase I (Worthington, D, LS002007), and 2 mg/mL elastase (Worthingon, ESL, LS002294) for 30 min at 37 °C. To stop the digestion, fetal bovine serum (FBS, Invitrogen, 10082-139) was added to a final concentration of 20%. Tissues were triturated until homogenous and filtered through a 70 µm cell strainer (Falcon, 352350) on ice in a 4 °C cold room and transferred to a 2 mL tube. The sample was then centrifuged at 1,537 rcf for 1 min; then 1 mL red blood cell lysis buffer (15 mM NH4Cl, 12 mM NaHCO3, 0.1 mM EDTA, pH 8.0) was added and incubated for 3 min before centrifugation again at 1,537 rcf. The red blood cell lysis buffer incubation was repeated to remove residual red blood cells. Liebovitz+10% FBS was used to wash and resuspend samples, which were then filtrated through a 35 mm cell strainer into a 5 mL glass tube and had SYTOX Blue (1:1000, Invitrogen, S34857) added. After refiltering, samples were for ATAC-seq were sorted for GFP positive cells from a RosaSun1GFP reporter activated by Wnt3aCre, Rtkn2CreER, or SftpcCreER on a BD FACSAria IIIu cell sorter with a 70 mm nozzle. Samples for scRNA-seq or scATAC-seq were stained with CD45-PE/Cy7 (BioLegend, 103114), ECAD-PE (BioLegend, 147304), and ICAM2-A647 (Invitrogen, A15452) antibodies (1:250 dilutions for all antibodies) for 30 min followed by a wash and being resuspended with Liebovitz meda+10% FBS and addition of SYTOX Blue. Samples were then filtered through a 35 mm cell strainer into a 5 mL glass tube again and sorted by a BD FACSAria Fusion sorter or a with a 70 mm nozzle.",
+        "FACS-purified lung epithelial, were processed through the CG000338_ChromiumNextGEM_Multiome_ATAC_GEX_User_Guide_Revf.",
+        "scRNA-seq  28 cycles read1, 90 cycles read2, 10 cycles Index1, and 10 cycles Index2",
+        "scATAC-seq 50 cycles for read 1, 49 cycles for read2, 8 cycles for index1, and 24 cycles for index2"
+      ],
+      "description": [
+        "2-wk post Sendai Virus injury",
+        "Aggregate_SeV_filtered_feature_bc_matrix.h5",
+        "Aggregate_SeV.rds",
+        "Aggregate_SeV_cloupe.cloupe"
+      ],
+      "data_processing": [
+        "Raw sequencing data (fastq file) was demultiplexed and analyzed using 10X Genomics Cell Ranger ARC software",
+        "Further analysis can be achieved using the Cell Ranger ARC-derived analysis files in 10X Genomics Loupe Browser software.",
+        "Assembly: mm10",
+        "Supplementary files format and content: Rds, tsv and mtx files can be opened with Seurat&Signac (R package) and analyzed. Cloupe file can be opened with Loupe cell browser to visualize the data.",
+        "Supplementary files format and content: filtered_feature_bc_matrix.h5 can be opened with Seurat (R package)"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN38144877",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX22384758"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM7883985",
+      "title": [
+        "SeV mutant scmultiome ATAC"
+      ],
+      "geo_accession": [
+        "GSM7883985"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: epithelial cells",
+        "genotype: CebpaCKO/CKO; SftpcCreER;Sun1GFP",
+        "age: 12-wk",
+        "treatment: 3 doses of Tamoxifen each 3mg at 7-wk , Sendai Virus treatment at 10-wk, lung harvest at 12-wk",
+        "Sex: pooled male and female"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Perfused lungs were collected from anesthetized mice as described above. Previously published protocols for cell dissociation and sorting cells were used with minor modifications11. Extra-pulmonary airways and connective tissues were removed from lungs, which were then minced with forceps and digested in Liebovitz media (Gibco, 21083-027) for scRNA-seq, ATAC-seq, or scATAC-seq with 2 mg/mL collagenase type I (Worthington, CLS-1, LS004197), 0.5 mg/mL DNase I (Worthington, D, LS002007), and 2 mg/mL elastase (Worthingon, ESL, LS002294) for 30 min at 37 °C. To stop the digestion, fetal bovine serum (FBS, Invitrogen, 10082-139) was added to a final concentration of 20%. Tissues were triturated until homogenous and filtered through a 70 µm cell strainer (Falcon, 352350) on ice in a 4 °C cold room and transferred to a 2 mL tube. The sample was then centrifuged at 1,537 rcf for 1 min; then 1 mL red blood cell lysis buffer (15 mM NH4Cl, 12 mM NaHCO3, 0.1 mM EDTA, pH 8.0) was added and incubated for 3 min before centrifugation again at 1,537 rcf. The red blood cell lysis buffer incubation was repeated to remove residual red blood cells. Liebovitz+10% FBS was used to wash and resuspend samples, which were then filtrated through a 35 mm cell strainer into a 5 mL glass tube and had SYTOX Blue (1:1000, Invitrogen, S34857) added. After refiltering, samples were for ATAC-seq were sorted for GFP positive cells from a RosaSun1GFP reporter activated by Wnt3aCre, Rtkn2CreER, or SftpcCreER on a BD FACSAria IIIu cell sorter with a 70 mm nozzle. Samples for scRNA-seq or scATAC-seq were stained with CD45-PE/Cy7 (BioLegend, 103114), ECAD-PE (BioLegend, 147304), and ICAM2-A647 (Invitrogen, A15452) antibodies (1:250 dilutions for all antibodies) for 30 min followed by a wash and being resuspended with Liebovitz meda+10% FBS and addition of SYTOX Blue. Samples were then filtered through a 35 mm cell strainer into a 5 mL glass tube again and sorted by a BD FACSAria Fusion sorter or a with a 70 mm nozzle.",
+        "FACS-purified lung epithelial, were processed through the CG000338_ChromiumNextGEM_Multiome_ATAC_GEX_User_Guide_Revf.",
+        "scRNA-seq  28 cycles read1, 90 cycles read2, 10 cycles Index1, and 10 cycles Index2",
+        "scATAC-seq 50 cycles for read 1, 49 cycles for read2, 8 cycles for index1, and 24 cycles for index2"
+      ],
+      "description": [
+        "2-wk post Sendai Virus injury",
+        "Aggregate_SeV_atac_fragments.tsv.gz",
+        "Aggregate_SeV_atac_peak_annotation.tsv",
+        "Aggregate_SeV_cloupe.cloupe"
+      ],
+      "data_processing": [
+        "Raw sequencing data (fastq file) was demultiplexed and analyzed using 10X Genomics Cell Ranger ARC software",
+        "Further analysis can be achieved using the Cell Ranger ARC-derived analysis files in 10X Genomics Loupe Browser software.",
+        "Assembly: mm10",
+        "Supplementary files format and content: Rds, tsv and mtx files can be opened with Seurat&Signac (R package) and analyzed. Cloupe file can be opened with Loupe cell browser to visualize the data.",
+        "Supplementary files format and content: filtered_feature_bc_matrix.h5 can be opened with Seurat (R package)"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic single cell"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN38144876",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX22384759"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM7883986",
+      "title": [
+        "SeV control scmultiome GE"
+      ],
+      "geo_accession": [
+        "GSM7883986"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: epithelial cells",
+        "genotype: CebpaCKO/+; SftpcCreER;SUN1GFP",
+        "age: 12-wk",
+        "treatment: 3 doses of Tamoxifen each 3mg at 7-wk , Sendai Virus treatment at 10-wk, lung harvest at 12-wk",
+        "Sex: pooled male and female"
+      ],
+      "molecule_ch1": [
+        "nuclear RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Perfused lungs were collected from anesthetized mice as described above. Previously published protocols for cell dissociation and sorting cells were used with minor modifications11. Extra-pulmonary airways and connective tissues were removed from lungs, which were then minced with forceps and digested in Liebovitz media (Gibco, 21083-027) for scRNA-seq, ATAC-seq, or scATAC-seq with 2 mg/mL collagenase type I (Worthington, CLS-1, LS004197), 0.5 mg/mL DNase I (Worthington, D, LS002007), and 2 mg/mL elastase (Worthingon, ESL, LS002294) for 30 min at 37 °C. To stop the digestion, fetal bovine serum (FBS, Invitrogen, 10082-139) was added to a final concentration of 20%. Tissues were triturated until homogenous and filtered through a 70 µm cell strainer (Falcon, 352350) on ice in a 4 °C cold room and transferred to a 2 mL tube. The sample was then centrifuged at 1,537 rcf for 1 min; then 1 mL red blood cell lysis buffer (15 mM NH4Cl, 12 mM NaHCO3, 0.1 mM EDTA, pH 8.0) was added and incubated for 3 min before centrifugation again at 1,537 rcf. The red blood cell lysis buffer incubation was repeated to remove residual red blood cells. Liebovitz+10% FBS was used to wash and resuspend samples, which were then filtrated through a 35 mm cell strainer into a 5 mL glass tube and had SYTOX Blue (1:1000, Invitrogen, S34857) added. After refiltering, samples were for ATAC-seq were sorted for GFP positive cells from a RosaSun1GFP reporter activated by Wnt3aCre, Rtkn2CreER, or SftpcCreER on a BD FACSAria IIIu cell sorter with a 70 mm nozzle. Samples for scRNA-seq or scATAC-seq were stained with CD45-PE/Cy7 (BioLegend, 103114), ECAD-PE (BioLegend, 147304), and ICAM2-A647 (Invitrogen, A15452) antibodies (1:250 dilutions for all antibodies) for 30 min followed by a wash and being resuspended with Liebovitz meda+10% FBS and addition of SYTOX Blue. Samples were then filtered through a 35 mm cell strainer into a 5 mL glass tube again and sorted by a BD FACSAria Fusion sorter or a with a 70 mm nozzle.",
+        "FACS-purified lung epithelial, were processed through the CG000338_ChromiumNextGEM_Multiome_ATAC_GEX_User_Guide_Revf.",
+        "scRNA-seq  28 cycles read1, 90 cycles read2, 10 cycles Index1, and 10 cycles Index2",
+        "scATAC-seq 50 cycles for read 1, 49 cycles for read2, 8 cycles for index1, and 24 cycles for index2"
+      ],
+      "description": [
+        "2-wk post Sendai Virus injury",
+        "Aggregate_SeV_filtered_feature_bc_matrix.h5",
+        "Aggregate_SeV.rds",
+        "Aggregate_SeV_cloupe.cloupe"
+      ],
+      "data_processing": [
+        "Raw sequencing data (fastq file) was demultiplexed and analyzed using 10X Genomics Cell Ranger ARC software",
+        "Further analysis can be achieved using the Cell Ranger ARC-derived analysis files in 10X Genomics Loupe Browser software.",
+        "Assembly: mm10",
+        "Supplementary files format and content: Rds, tsv and mtx files can be opened with Seurat&Signac (R package) and analyzed. Cloupe file can be opened with Loupe cell browser to visualize the data.",
+        "Supplementary files format and content: filtered_feature_bc_matrix.h5 can be opened with Seurat (R package)"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN38144875",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX22384760"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM7883987",
+      "title": [
+        "SeV control scmultiome ATAC"
+      ],
+      "geo_accession": [
+        "GSM7883987"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: epithelial cells",
+        "genotype: CebpaCKO/+; SftpcCreER;SUN1GFP",
+        "age: 12-wk",
+        "treatment: 3 doses of Tamoxifen each 3mg at 7-wk , Sendai Virus treatment at 10-wk, lung harvest at 12-wk",
+        "Sex: pooled male and female"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Perfused lungs were collected from anesthetized mice as described above. Previously published protocols for cell dissociation and sorting cells were used with minor modifications11. Extra-pulmonary airways and connective tissues were removed from lungs, which were then minced with forceps and digested in Liebovitz media (Gibco, 21083-027) for scRNA-seq, ATAC-seq, or scATAC-seq with 2 mg/mL collagenase type I (Worthington, CLS-1, LS004197), 0.5 mg/mL DNase I (Worthington, D, LS002007), and 2 mg/mL elastase (Worthingon, ESL, LS002294) for 30 min at 37 °C. To stop the digestion, fetal bovine serum (FBS, Invitrogen, 10082-139) was added to a final concentration of 20%. Tissues were triturated until homogenous and filtered through a 70 µm cell strainer (Falcon, 352350) on ice in a 4 °C cold room and transferred to a 2 mL tube. The sample was then centrifuged at 1,537 rcf for 1 min; then 1 mL red blood cell lysis buffer (15 mM NH4Cl, 12 mM NaHCO3, 0.1 mM EDTA, pH 8.0) was added and incubated for 3 min before centrifugation again at 1,537 rcf. The red blood cell lysis buffer incubation was repeated to remove residual red blood cells. Liebovitz+10% FBS was used to wash and resuspend samples, which were then filtrated through a 35 mm cell strainer into a 5 mL glass tube and had SYTOX Blue (1:1000, Invitrogen, S34857) added. After refiltering, samples were for ATAC-seq were sorted for GFP positive cells from a RosaSun1GFP reporter activated by Wnt3aCre, Rtkn2CreER, or SftpcCreER on a BD FACSAria IIIu cell sorter with a 70 mm nozzle. Samples for scRNA-seq or scATAC-seq were stained with CD45-PE/Cy7 (BioLegend, 103114), ECAD-PE (BioLegend, 147304), and ICAM2-A647 (Invitrogen, A15452) antibodies (1:250 dilutions for all antibodies) for 30 min followed by a wash and being resuspended with Liebovitz meda+10% FBS and addition of SYTOX Blue. Samples were then filtered through a 35 mm cell strainer into a 5 mL glass tube again and sorted by a BD FACSAria Fusion sorter or a with a 70 mm nozzle.",
+        "FACS-purified lung epithelial, were processed through the CG000338_ChromiumNextGEM_Multiome_ATAC_GEX_User_Guide_Revf.",
+        "scRNA-seq  28 cycles read1, 90 cycles read2, 10 cycles Index1, and 10 cycles Index2",
+        "scATAC-seq 50 cycles for read 1, 49 cycles for read2, 8 cycles for index1, and 24 cycles for index2"
+      ],
+      "description": [
+        "2-wk post Sendai Virus injury",
+        "Aggregate_SeV_atac_fragments.tsv.gz",
+        "Aggregate_SeV_atac_peak_annotation.tsv",
+        "Aggregate_SeV_cloupe.cloupe"
+      ],
+      "data_processing": [
+        "Raw sequencing data (fastq file) was demultiplexed and analyzed using 10X Genomics Cell Ranger ARC software",
+        "Further analysis can be achieved using the Cell Ranger ARC-derived analysis files in 10X Genomics Loupe Browser software.",
+        "Assembly: mm10",
+        "Supplementary files format and content: Rds, tsv and mtx files can be opened with Seurat&Signac (R package) and analyzed. Cloupe file can be opened with Loupe cell browser to visualize the data.",
+        "Supplementary files format and content: filtered_feature_bc_matrix.h5 can be opened with Seurat (R package)"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic single cell"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN38144874",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX22384761"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

@@ -1,0 +1,21 @@
+{
+  "purpose": "Exact versions executed for the first numerical batch, before non-overwrite guards and figure label edits",
+  "files": [
+    {
+      "script": "06_lineage_source_reanalysis.py",
+      "sha256": "421813c5fa217957575be087209dd9f8b81e7a3ab6846c3ff6f3dd176a6ee983"
+    },
+    {
+      "script": "07_ire1_epithelial_analysis.py",
+      "sha256": "e8e3b242a39e5fb2a08bd15d69a6f55f184791e7f9d7207abd31d9e7f6788026"
+    },
+    {
+      "script": "08_fit_ire1.R",
+      "sha256": "e75242923a8505a6edadc3d400369ea026d80f6125a49dbe0debf16c6add34e0"
+    },
+    {
+      "script": "09_descriptive_input_audit.py",
+      "sha256": "c70cbac98ae2fd6ca870fb7b10e3c654bf048d99970180d05f882faff6a440a9"
+    }
+  ]
+}

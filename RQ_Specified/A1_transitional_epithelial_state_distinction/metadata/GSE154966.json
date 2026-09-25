@@ -1,0 +1,580 @@
+{
+  "accession": "GSE154966",
+  "retrieved_at_utc": "2026-09-25T01:01:22.092749+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE154966&targ=all&form=text&view=full",
+  "response_sha256": "2467f43aa622b883e52428bbac0f2b3426344a4dbcc2b50c29c310f03937c0f1",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Emergence of a high-plasticity cell state during lung cancer evolution, ATACseq"
+    ],
+    "geo_accession": [
+      "GSE154966"
+    ],
+    "status": [
+      "Public on Jul 24 2020"
+    ],
+    "last_update_date": [
+      "Aug 07 2020"
+    ],
+    "pubmed_id": [
+      "32707077"
+    ],
+    "overall_design": [
+      "Bulk ATACseq of mouse lung tumor cells sorted by expression of Tigit."
+    ],
+    "type": [
+      "Genome binding/occupancy profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM4685043",
+      "GSM4685044",
+      "GSM4685045",
+      "GSM4685046",
+      "GSM4685047",
+      "GSM4685048",
+      "GSM4685049",
+      "GSM4685050"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154966/suppl/GSE154966_counts_tigitSamples_featureCounts_filtered_notSubs.tsv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154966/suppl/GSE154966_tigit_pos_neg.merged.bed.gz"
+    ],
+    "relation": [
+      "SubSeries of: GSE152607",
+      "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRP273259"
+    ]
+  },
+  "sample_count": 8,
+  "samples": [
+    {
+      "accession": "GSM4685043",
+      "title": [
+        "YY1181_Tigit_Neg_S1 bulk ATACseq"
+      ],
+      "geo_accession": [
+        "GSM4685043"
+      ],
+      "source_name_ch1": [
+        "Lung tissue, AT2 cells"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tigit: Negative",
+        "genotype: Kras mut, Trp53 null"
+      ],
+      "treatment_protocol_ch1": [
+        "Tumors were induced in K or KP mice with 0.5-2.5 x 10^8 PFU of AdSPC-Cre (Sutherland et al., 2011) or 2 x 10^8 PFU of AdCMV-FlpO (Iowa)."
+      ],
+      "growth_protocol_ch1": [
+        "We used C57BL/6 x Sv129 mixed background mice from the following previously published strains: KrasLSL-G12D (Jackson et al., 2001), Trp53flox/flox (Marino et al., 2000), Rosa26LSL-tdTomato (Madisen et al., 2010), and Rosa26LSL-Luciferase (Safran et al., 2003)."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mice with LUAD tumors were euthanized at 2, 12, 20, or 30 weeks following tumor induction. We chose these time points because they reflect key stages in LUAD progression: atypical adenomatous hyperplasia (AAH) (KT and KPT at 2 weeks), adenoma (KT at 12 and 30 weeks), adenoma-to-LUAD transition (KPT at 12 weeks) and LUAD (KPT at 20 and 30 weeks). We micro-dissected large KPT tumors individually at 20 and 30 weeks, whereas all other samples were harvested by dissociating entire lungs containing mixtures of neoplasias in various stages of tumor progression. Following euthanasia, mice were perfused with S-MEM (Gibco, catalog #11380037) through the right ventricle of the heart. Dissected lungs or microdissected tumors were dissociated either with protease and DNAse solution in the Lung Dissociation Kit (Miltenyi Biotech, catalog #130-095-927) followed by mechanical dissociation using gentleMACS “C” columns (Miltenyi Biotech, catalog #130-093-237) according to the manufacturer’s instructions (Tammela et al., 2017), or by a mixture of Dispase II (Gibco, catalog #17105-041, final concentration 0.6 U/ml), Collagenase Type IV (Thermo Fisher Scientific, catalog #17104019; final concentration 0.083 U/ml), and DNase I (Sigma-Aldrich, catalog #69182-3; final concentration 10 U/ml) in S-MEM solution containing Gentamicin (Gibco, catalog #15750-060, final concentration 20 mg/ml) at 37°C for 30 min (Table S6). The dissociated cells were filtered using a 100 mm strainer and spun at 300 g for 5 min at room temperature. The supernatant was removed by aspiration and red blood cell lysis was performed using ACK (Thermo Fisher Scientific, catalog #A1049201). Cells were then washed with media and pelleted at 300 g for 5 min at 4°C. The supernatant was removed, and the pellet resuspended in Fluorescence-Activated Cell Sorting (FACS) buffer media (200 mM EDTA with 250 ml heat-inactivated FBS in PBS) before being passed through a 40 mm strainer and counted for use in FACS below."
+      ],
+      "description": [
+        "Bulk ATAC of AT2 cells from lung tumors, sorted by FACS for expression of TIGIT",
+        "tigit_pos_neg.merged.bed",
+        "counts_tigitSamples_featureCounts_filtered_notSubs.tsv.gz"
+      ],
+      "data_processing": [
+        "Alignment and QC performed using ENCODE ATAC-Seq pipeline, v1.5.4, https://github.com/ENCODE-DCC/atac-seq-pipeline, processed on terra-firecloud",
+        "Filter the de-duped .bam files generated by the ENCODE ATAC-Seq pipeline to contain only the main chromosomes (Samtools v1.8)",
+        "Subsample the .bam files to the minimum number of reads observed across all replicates and conditions (Samtools v1.8)",
+        "Merge the .bam files across replicates from individual condition (Samtools v1.8)",
+        "Call peaks (MACS2 v2.2.6)",
+        "Filter blacklisted regions (Bedtools v2.26.0)",
+        "Merge peak files from Tigit+ and Tigit- conditions (Bedtools v2.26.0)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Peak file in bed format, and featureCounts output"
+      ],
+      "platform_id": [
+        "GPL19057"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN15618163",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8806123"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4685044",
+      "title": [
+        "YY1181_Tigit_Pos_S2 bulk ATACseq"
+      ],
+      "geo_accession": [
+        "GSM4685044"
+      ],
+      "source_name_ch1": [
+        "Lung tissue, AT2 cells"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tigit: Positive",
+        "genotype: Kras mut, Trp53 null"
+      ],
+      "treatment_protocol_ch1": [
+        "Tumors were induced in K or KP mice with 0.5-2.5 x 10^8 PFU of AdSPC-Cre (Sutherland et al., 2011) or 2 x 10^8 PFU of AdCMV-FlpO (Iowa)."
+      ],
+      "growth_protocol_ch1": [
+        "We used C57BL/6 x Sv129 mixed background mice from the following previously published strains: KrasLSL-G12D (Jackson et al., 2001), Trp53flox/flox (Marino et al., 2000), Rosa26LSL-tdTomato (Madisen et al., 2010), and Rosa26LSL-Luciferase (Safran et al., 2003)."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mice with LUAD tumors were euthanized at 2, 12, 20, or 30 weeks following tumor induction. We chose these time points because they reflect key stages in LUAD progression: atypical adenomatous hyperplasia (AAH) (KT and KPT at 2 weeks), adenoma (KT at 12 and 30 weeks), adenoma-to-LUAD transition (KPT at 12 weeks) and LUAD (KPT at 20 and 30 weeks). We micro-dissected large KPT tumors individually at 20 and 30 weeks, whereas all other samples were harvested by dissociating entire lungs containing mixtures of neoplasias in various stages of tumor progression. Following euthanasia, mice were perfused with S-MEM (Gibco, catalog #11380037) through the right ventricle of the heart. Dissected lungs or microdissected tumors were dissociated either with protease and DNAse solution in the Lung Dissociation Kit (Miltenyi Biotech, catalog #130-095-927) followed by mechanical dissociation using gentleMACS “C” columns (Miltenyi Biotech, catalog #130-093-237) according to the manufacturer’s instructions (Tammela et al., 2017), or by a mixture of Dispase II (Gibco, catalog #17105-041, final concentration 0.6 U/ml), Collagenase Type IV (Thermo Fisher Scientific, catalog #17104019; final concentration 0.083 U/ml), and DNase I (Sigma-Aldrich, catalog #69182-3; final concentration 10 U/ml) in S-MEM solution containing Gentamicin (Gibco, catalog #15750-060, final concentration 20 mg/ml) at 37°C for 30 min (Table S6). The dissociated cells were filtered using a 100 mm strainer and spun at 300 g for 5 min at room temperature. The supernatant was removed by aspiration and red blood cell lysis was performed using ACK (Thermo Fisher Scientific, catalog #A1049201). Cells were then washed with media and pelleted at 300 g for 5 min at 4°C. The supernatant was removed, and the pellet resuspended in Fluorescence-Activated Cell Sorting (FACS) buffer media (200 mM EDTA with 250 ml heat-inactivated FBS in PBS) before being passed through a 40 mm strainer and counted for use in FACS below."
+      ],
+      "description": [
+        "Bulk ATAC of AT2 cells from lung tumors, sorted by FACS for expression of TIGIT",
+        "tigit_pos_neg.merged.bed",
+        "counts_tigitSamples_featureCounts_filtered_notSubs.tsv.gz"
+      ],
+      "data_processing": [
+        "Alignment and QC performed using ENCODE ATAC-Seq pipeline, v1.5.4, https://github.com/ENCODE-DCC/atac-seq-pipeline, processed on terra-firecloud",
+        "Filter the de-duped .bam files generated by the ENCODE ATAC-Seq pipeline to contain only the main chromosomes (Samtools v1.8)",
+        "Subsample the .bam files to the minimum number of reads observed across all replicates and conditions (Samtools v1.8)",
+        "Merge the .bam files across replicates from individual condition (Samtools v1.8)",
+        "Call peaks (MACS2 v2.2.6)",
+        "Filter blacklisted regions (Bedtools v2.26.0)",
+        "Merge peak files from Tigit+ and Tigit- conditions (Bedtools v2.26.0)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Peak file in bed format, and featureCounts output"
+      ],
+      "platform_id": [
+        "GPL19057"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN15618162",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8806124"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4685045",
+      "title": [
+        "YY1916_Tigit_Neg_S3 bulk ATACseq"
+      ],
+      "geo_accession": [
+        "GSM4685045"
+      ],
+      "source_name_ch1": [
+        "Lung tissue, AT2 cells"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tigit: Negative",
+        "genotype: Kras mut, Trp53 null"
+      ],
+      "treatment_protocol_ch1": [
+        "Tumors were induced in K or KP mice with 0.5-2.5 x 10^8 PFU of AdSPC-Cre (Sutherland et al., 2011) or 2 x 10^8 PFU of AdCMV-FlpO (Iowa)."
+      ],
+      "growth_protocol_ch1": [
+        "We used C57BL/6 x Sv129 mixed background mice from the following previously published strains: KrasLSL-G12D (Jackson et al., 2001), Trp53flox/flox (Marino et al., 2000), Rosa26LSL-tdTomato (Madisen et al., 2010), and Rosa26LSL-Luciferase (Safran et al., 2003)."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mice with LUAD tumors were euthanized at 2, 12, 20, or 30 weeks following tumor induction. We chose these time points because they reflect key stages in LUAD progression: atypical adenomatous hyperplasia (AAH) (KT and KPT at 2 weeks), adenoma (KT at 12 and 30 weeks), adenoma-to-LUAD transition (KPT at 12 weeks) and LUAD (KPT at 20 and 30 weeks). We micro-dissected large KPT tumors individually at 20 and 30 weeks, whereas all other samples were harvested by dissociating entire lungs containing mixtures of neoplasias in various stages of tumor progression. Following euthanasia, mice were perfused with S-MEM (Gibco, catalog #11380037) through the right ventricle of the heart. Dissected lungs or microdissected tumors were dissociated either with protease and DNAse solution in the Lung Dissociation Kit (Miltenyi Biotech, catalog #130-095-927) followed by mechanical dissociation using gentleMACS “C” columns (Miltenyi Biotech, catalog #130-093-237) according to the manufacturer’s instructions (Tammela et al., 2017), or by a mixture of Dispase II (Gibco, catalog #17105-041, final concentration 0.6 U/ml), Collagenase Type IV (Thermo Fisher Scientific, catalog #17104019; final concentration 0.083 U/ml), and DNase I (Sigma-Aldrich, catalog #69182-3; final concentration 10 U/ml) in S-MEM solution containing Gentamicin (Gibco, catalog #15750-060, final concentration 20 mg/ml) at 37°C for 30 min (Table S6). The dissociated cells were filtered using a 100 mm strainer and spun at 300 g for 5 min at room temperature. The supernatant was removed by aspiration and red blood cell lysis was performed using ACK (Thermo Fisher Scientific, catalog #A1049201). Cells were then washed with media and pelleted at 300 g for 5 min at 4°C. The supernatant was removed, and the pellet resuspended in Fluorescence-Activated Cell Sorting (FACS) buffer media (200 mM EDTA with 250 ml heat-inactivated FBS in PBS) before being passed through a 40 mm strainer and counted for use in FACS below."
+      ],
+      "description": [
+        "Bulk ATAC of AT2 cells from lung tumors, sorted by FACS for expression of TIGIT",
+        "tigit_pos_neg.merged.bed",
+        "counts_tigitSamples_featureCounts_filtered_notSubs.tsv.gz"
+      ],
+      "data_processing": [
+        "Alignment and QC performed using ENCODE ATAC-Seq pipeline, v1.5.4, https://github.com/ENCODE-DCC/atac-seq-pipeline, processed on terra-firecloud",
+        "Filter the de-duped .bam files generated by the ENCODE ATAC-Seq pipeline to contain only the main chromosomes (Samtools v1.8)",
+        "Subsample the .bam files to the minimum number of reads observed across all replicates and conditions (Samtools v1.8)",
+        "Merge the .bam files across replicates from individual condition (Samtools v1.8)",
+        "Call peaks (MACS2 v2.2.6)",
+        "Filter blacklisted regions (Bedtools v2.26.0)",
+        "Merge peak files from Tigit+ and Tigit- conditions (Bedtools v2.26.0)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Peak file in bed format, and featureCounts output"
+      ],
+      "platform_id": [
+        "GPL19057"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN15618161",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8806125"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4685046",
+      "title": [
+        "YY1916_Tigit_Pos_S4 bulk ATACseq"
+      ],
+      "geo_accession": [
+        "GSM4685046"
+      ],
+      "source_name_ch1": [
+        "Lung tissue, AT2 cells"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tigit: Positive",
+        "genotype: Kras mut, Trp53 null"
+      ],
+      "treatment_protocol_ch1": [
+        "Tumors were induced in K or KP mice with 0.5-2.5 x 10^8 PFU of AdSPC-Cre (Sutherland et al., 2011) or 2 x 10^8 PFU of AdCMV-FlpO (Iowa)."
+      ],
+      "growth_protocol_ch1": [
+        "We used C57BL/6 x Sv129 mixed background mice from the following previously published strains: KrasLSL-G12D (Jackson et al., 2001), Trp53flox/flox (Marino et al., 2000), Rosa26LSL-tdTomato (Madisen et al., 2010), and Rosa26LSL-Luciferase (Safran et al., 2003)."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mice with LUAD tumors were euthanized at 2, 12, 20, or 30 weeks following tumor induction. We chose these time points because they reflect key stages in LUAD progression: atypical adenomatous hyperplasia (AAH) (KT and KPT at 2 weeks), adenoma (KT at 12 and 30 weeks), adenoma-to-LUAD transition (KPT at 12 weeks) and LUAD (KPT at 20 and 30 weeks). We micro-dissected large KPT tumors individually at 20 and 30 weeks, whereas all other samples were harvested by dissociating entire lungs containing mixtures of neoplasias in various stages of tumor progression. Following euthanasia, mice were perfused with S-MEM (Gibco, catalog #11380037) through the right ventricle of the heart. Dissected lungs or microdissected tumors were dissociated either with protease and DNAse solution in the Lung Dissociation Kit (Miltenyi Biotech, catalog #130-095-927) followed by mechanical dissociation using gentleMACS “C” columns (Miltenyi Biotech, catalog #130-093-237) according to the manufacturer’s instructions (Tammela et al., 2017), or by a mixture of Dispase II (Gibco, catalog #17105-041, final concentration 0.6 U/ml), Collagenase Type IV (Thermo Fisher Scientific, catalog #17104019; final concentration 0.083 U/ml), and DNase I (Sigma-Aldrich, catalog #69182-3; final concentration 10 U/ml) in S-MEM solution containing Gentamicin (Gibco, catalog #15750-060, final concentration 20 mg/ml) at 37°C for 30 min (Table S6). The dissociated cells were filtered using a 100 mm strainer and spun at 300 g for 5 min at room temperature. The supernatant was removed by aspiration and red blood cell lysis was performed using ACK (Thermo Fisher Scientific, catalog #A1049201). Cells were then washed with media and pelleted at 300 g for 5 min at 4°C. The supernatant was removed, and the pellet resuspended in Fluorescence-Activated Cell Sorting (FACS) buffer media (200 mM EDTA with 250 ml heat-inactivated FBS in PBS) before being passed through a 40 mm strainer and counted for use in FACS below."
+      ],
+      "description": [
+        "Bulk ATAC of AT2 cells from lung tumors, sorted by FACS for expression of TIGIT",
+        "tigit_pos_neg.merged.bed",
+        "counts_tigitSamples_featureCounts_filtered_notSubs.tsv.gz"
+      ],
+      "data_processing": [
+        "Alignment and QC performed using ENCODE ATAC-Seq pipeline, v1.5.4, https://github.com/ENCODE-DCC/atac-seq-pipeline, processed on terra-firecloud",
+        "Filter the de-duped .bam files generated by the ENCODE ATAC-Seq pipeline to contain only the main chromosomes (Samtools v1.8)",
+        "Subsample the .bam files to the minimum number of reads observed across all replicates and conditions (Samtools v1.8)",
+        "Merge the .bam files across replicates from individual condition (Samtools v1.8)",
+        "Call peaks (MACS2 v2.2.6)",
+        "Filter blacklisted regions (Bedtools v2.26.0)",
+        "Merge peak files from Tigit+ and Tigit- conditions (Bedtools v2.26.0)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Peak file in bed format, and featureCounts output"
+      ],
+      "platform_id": [
+        "GPL19057"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN15618160",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8806126"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4685047",
+      "title": [
+        "106621_106642_Tigit_Neg_S5 bulk ATACseq"
+      ],
+      "geo_accession": [
+        "GSM4685047"
+      ],
+      "source_name_ch1": [
+        "Lung tissue, AT2 cells"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tigit: Negative",
+        "genotype: Kras mut, Trp53 null"
+      ],
+      "treatment_protocol_ch1": [
+        "Tumors were induced in K or KP mice with 0.5-2.5 x 10^8 PFU of AdSPC-Cre (Sutherland et al., 2011) or 2 x 10^8 PFU of AdCMV-FlpO (Iowa)."
+      ],
+      "growth_protocol_ch1": [
+        "We used C57BL/6 x Sv129 mixed background mice from the following previously published strains: KrasLSL-G12D (Jackson et al., 2001), Trp53flox/flox (Marino et al., 2000), Rosa26LSL-tdTomato (Madisen et al., 2010), and Rosa26LSL-Luciferase (Safran et al., 2003)."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mice with LUAD tumors were euthanized at 2, 12, 20, or 30 weeks following tumor induction. We chose these time points because they reflect key stages in LUAD progression: atypical adenomatous hyperplasia (AAH) (KT and KPT at 2 weeks), adenoma (KT at 12 and 30 weeks), adenoma-to-LUAD transition (KPT at 12 weeks) and LUAD (KPT at 20 and 30 weeks). We micro-dissected large KPT tumors individually at 20 and 30 weeks, whereas all other samples were harvested by dissociating entire lungs containing mixtures of neoplasias in various stages of tumor progression. Following euthanasia, mice were perfused with S-MEM (Gibco, catalog #11380037) through the right ventricle of the heart. Dissected lungs or microdissected tumors were dissociated either with protease and DNAse solution in the Lung Dissociation Kit (Miltenyi Biotech, catalog #130-095-927) followed by mechanical dissociation using gentleMACS “C” columns (Miltenyi Biotech, catalog #130-093-237) according to the manufacturer’s instructions (Tammela et al., 2017), or by a mixture of Dispase II (Gibco, catalog #17105-041, final concentration 0.6 U/ml), Collagenase Type IV (Thermo Fisher Scientific, catalog #17104019; final concentration 0.083 U/ml), and DNase I (Sigma-Aldrich, catalog #69182-3; final concentration 10 U/ml) in S-MEM solution containing Gentamicin (Gibco, catalog #15750-060, final concentration 20 mg/ml) at 37°C for 30 min (Table S6). The dissociated cells were filtered using a 100 mm strainer and spun at 300 g for 5 min at room temperature. The supernatant was removed by aspiration and red blood cell lysis was performed using ACK (Thermo Fisher Scientific, catalog #A1049201). Cells were then washed with media and pelleted at 300 g for 5 min at 4°C. The supernatant was removed, and the pellet resuspended in Fluorescence-Activated Cell Sorting (FACS) buffer media (200 mM EDTA with 250 ml heat-inactivated FBS in PBS) before being passed through a 40 mm strainer and counted for use in FACS below."
+      ],
+      "description": [
+        "Bulk ATAC of AT2 cells from lung tumors, sorted by FACS for expression of TIGIT",
+        "tigit_pos_neg.merged.bed",
+        "counts_tigitSamples_featureCounts_filtered_notSubs.tsv.gz"
+      ],
+      "data_processing": [
+        "Alignment and QC performed using ENCODE ATAC-Seq pipeline, v1.5.4, https://github.com/ENCODE-DCC/atac-seq-pipeline, processed on terra-firecloud",
+        "Filter the de-duped .bam files generated by the ENCODE ATAC-Seq pipeline to contain only the main chromosomes (Samtools v1.8)",
+        "Subsample the .bam files to the minimum number of reads observed across all replicates and conditions (Samtools v1.8)",
+        "Merge the .bam files across replicates from individual condition (Samtools v1.8)",
+        "Call peaks (MACS2 v2.2.6)",
+        "Filter blacklisted regions (Bedtools v2.26.0)",
+        "Merge peak files from Tigit+ and Tigit- conditions (Bedtools v2.26.0)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Peak file in bed format, and featureCounts output"
+      ],
+      "platform_id": [
+        "GPL19057"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN15618159",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8806127"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4685048",
+      "title": [
+        "106621_106642_Tigit_Pos_S6 bulk ATACseq"
+      ],
+      "geo_accession": [
+        "GSM4685048"
+      ],
+      "source_name_ch1": [
+        "Lung tissue, AT2 cells"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tigit: Positive",
+        "genotype: Kras mut, Trp53 null"
+      ],
+      "treatment_protocol_ch1": [
+        "Tumors were induced in K or KP mice with 0.5-2.5 x 10^8 PFU of AdSPC-Cre (Sutherland et al., 2011) or 2 x 10^8 PFU of AdCMV-FlpO (Iowa)."
+      ],
+      "growth_protocol_ch1": [
+        "We used C57BL/6 x Sv129 mixed background mice from the following previously published strains: KrasLSL-G12D (Jackson et al., 2001), Trp53flox/flox (Marino et al., 2000), Rosa26LSL-tdTomato (Madisen et al., 2010), and Rosa26LSL-Luciferase (Safran et al., 2003)."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mice with LUAD tumors were euthanized at 2, 12, 20, or 30 weeks following tumor induction. We chose these time points because they reflect key stages in LUAD progression: atypical adenomatous hyperplasia (AAH) (KT and KPT at 2 weeks), adenoma (KT at 12 and 30 weeks), adenoma-to-LUAD transition (KPT at 12 weeks) and LUAD (KPT at 20 and 30 weeks). We micro-dissected large KPT tumors individually at 20 and 30 weeks, whereas all other samples were harvested by dissociating entire lungs containing mixtures of neoplasias in various stages of tumor progression. Following euthanasia, mice were perfused with S-MEM (Gibco, catalog #11380037) through the right ventricle of the heart. Dissected lungs or microdissected tumors were dissociated either with protease and DNAse solution in the Lung Dissociation Kit (Miltenyi Biotech, catalog #130-095-927) followed by mechanical dissociation using gentleMACS “C” columns (Miltenyi Biotech, catalog #130-093-237) according to the manufacturer’s instructions (Tammela et al., 2017), or by a mixture of Dispase II (Gibco, catalog #17105-041, final concentration 0.6 U/ml), Collagenase Type IV (Thermo Fisher Scientific, catalog #17104019; final concentration 0.083 U/ml), and DNase I (Sigma-Aldrich, catalog #69182-3; final concentration 10 U/ml) in S-MEM solution containing Gentamicin (Gibco, catalog #15750-060, final concentration 20 mg/ml) at 37°C for 30 min (Table S6). The dissociated cells were filtered using a 100 mm strainer and spun at 300 g for 5 min at room temperature. The supernatant was removed by aspiration and red blood cell lysis was performed using ACK (Thermo Fisher Scientific, catalog #A1049201). Cells were then washed with media and pelleted at 300 g for 5 min at 4°C. The supernatant was removed, and the pellet resuspended in Fluorescence-Activated Cell Sorting (FACS) buffer media (200 mM EDTA with 250 ml heat-inactivated FBS in PBS) before being passed through a 40 mm strainer and counted for use in FACS below."
+      ],
+      "description": [
+        "Bulk ATAC of AT2 cells from lung tumors, sorted by FACS for expression of TIGIT",
+        "tigit_pos_neg.merged.bed",
+        "counts_tigitSamples_featureCounts_filtered_notSubs.tsv.gz"
+      ],
+      "data_processing": [
+        "Alignment and QC performed using ENCODE ATAC-Seq pipeline, v1.5.4, https://github.com/ENCODE-DCC/atac-seq-pipeline, processed on terra-firecloud",
+        "Filter the de-duped .bam files generated by the ENCODE ATAC-Seq pipeline to contain only the main chromosomes (Samtools v1.8)",
+        "Subsample the .bam files to the minimum number of reads observed across all replicates and conditions (Samtools v1.8)",
+        "Merge the .bam files across replicates from individual condition (Samtools v1.8)",
+        "Call peaks (MACS2 v2.2.6)",
+        "Filter blacklisted regions (Bedtools v2.26.0)",
+        "Merge peak files from Tigit+ and Tigit- conditions (Bedtools v2.26.0)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Peak file in bed format, and featureCounts output"
+      ],
+      "platform_id": [
+        "GPL19057"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN15618158",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8806128"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4685049",
+      "title": [
+        "106623_Tigit_Neg_S7 bulk ATACseq"
+      ],
+      "geo_accession": [
+        "GSM4685049"
+      ],
+      "source_name_ch1": [
+        "Lung tissue, AT2 cells"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tigit: Negative",
+        "genotype: Kras mut, Trp53 null"
+      ],
+      "treatment_protocol_ch1": [
+        "Tumors were induced in K or KP mice with 0.5-2.5 x 10^8 PFU of AdSPC-Cre (Sutherland et al., 2011) or 2 x 10^8 PFU of AdCMV-FlpO (Iowa)."
+      ],
+      "growth_protocol_ch1": [
+        "We used C57BL/6 x Sv129 mixed background mice from the following previously published strains: KrasLSL-G12D (Jackson et al., 2001), Trp53flox/flox (Marino et al., 2000), Rosa26LSL-tdTomato (Madisen et al., 2010), and Rosa26LSL-Luciferase (Safran et al., 2003)."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mice with LUAD tumors were euthanized at 2, 12, 20, or 30 weeks following tumor induction. We chose these time points because they reflect key stages in LUAD progression: atypical adenomatous hyperplasia (AAH) (KT and KPT at 2 weeks), adenoma (KT at 12 and 30 weeks), adenoma-to-LUAD transition (KPT at 12 weeks) and LUAD (KPT at 20 and 30 weeks). We micro-dissected large KPT tumors individually at 20 and 30 weeks, whereas all other samples were harvested by dissociating entire lungs containing mixtures of neoplasias in various stages of tumor progression. Following euthanasia, mice were perfused with S-MEM (Gibco, catalog #11380037) through the right ventricle of the heart. Dissected lungs or microdissected tumors were dissociated either with protease and DNAse solution in the Lung Dissociation Kit (Miltenyi Biotech, catalog #130-095-927) followed by mechanical dissociation using gentleMACS “C” columns (Miltenyi Biotech, catalog #130-093-237) according to the manufacturer’s instructions (Tammela et al., 2017), or by a mixture of Dispase II (Gibco, catalog #17105-041, final concentration 0.6 U/ml), Collagenase Type IV (Thermo Fisher Scientific, catalog #17104019; final concentration 0.083 U/ml), and DNase I (Sigma-Aldrich, catalog #69182-3; final concentration 10 U/ml) in S-MEM solution containing Gentamicin (Gibco, catalog #15750-060, final concentration 20 mg/ml) at 37°C for 30 min (Table S6). The dissociated cells were filtered using a 100 mm strainer and spun at 300 g for 5 min at room temperature. The supernatant was removed by aspiration and red blood cell lysis was performed using ACK (Thermo Fisher Scientific, catalog #A1049201). Cells were then washed with media and pelleted at 300 g for 5 min at 4°C. The supernatant was removed, and the pellet resuspended in Fluorescence-Activated Cell Sorting (FACS) buffer media (200 mM EDTA with 250 ml heat-inactivated FBS in PBS) before being passed through a 40 mm strainer and counted for use in FACS below."
+      ],
+      "description": [
+        "Bulk ATAC of AT2 cells from lung tumors, sorted by FACS for expression of TIGIT",
+        "tigit_pos_neg.merged.bed",
+        "counts_tigitSamples_featureCounts_filtered_notSubs.tsv.gz"
+      ],
+      "data_processing": [
+        "Alignment and QC performed using ENCODE ATAC-Seq pipeline, v1.5.4, https://github.com/ENCODE-DCC/atac-seq-pipeline, processed on terra-firecloud",
+        "Filter the de-duped .bam files generated by the ENCODE ATAC-Seq pipeline to contain only the main chromosomes (Samtools v1.8)",
+        "Subsample the .bam files to the minimum number of reads observed across all replicates and conditions (Samtools v1.8)",
+        "Merge the .bam files across replicates from individual condition (Samtools v1.8)",
+        "Call peaks (MACS2 v2.2.6)",
+        "Filter blacklisted regions (Bedtools v2.26.0)",
+        "Merge peak files from Tigit+ and Tigit- conditions (Bedtools v2.26.0)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Peak file in bed format, and featureCounts output"
+      ],
+      "platform_id": [
+        "GPL19057"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN15618157",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8806129"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4685050",
+      "title": [
+        "106623_Tigit_Pos_S8 bulk ATACseq"
+      ],
+      "geo_accession": [
+        "GSM4685050"
+      ],
+      "source_name_ch1": [
+        "Lung tissue, AT2 cells"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tigit: Positive",
+        "genotype: Kras mut, Trp53 null"
+      ],
+      "treatment_protocol_ch1": [
+        "Tumors were induced in K or KP mice with 0.5-2.5 x 10^8 PFU of AdSPC-Cre (Sutherland et al., 2011) or 2 x 10^8 PFU of AdCMV-FlpO (Iowa)."
+      ],
+      "growth_protocol_ch1": [
+        "We used C57BL/6 x Sv129 mixed background mice from the following previously published strains: KrasLSL-G12D (Jackson et al., 2001), Trp53flox/flox (Marino et al., 2000), Rosa26LSL-tdTomato (Madisen et al., 2010), and Rosa26LSL-Luciferase (Safran et al., 2003)."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mice with LUAD tumors were euthanized at 2, 12, 20, or 30 weeks following tumor induction. We chose these time points because they reflect key stages in LUAD progression: atypical adenomatous hyperplasia (AAH) (KT and KPT at 2 weeks), adenoma (KT at 12 and 30 weeks), adenoma-to-LUAD transition (KPT at 12 weeks) and LUAD (KPT at 20 and 30 weeks). We micro-dissected large KPT tumors individually at 20 and 30 weeks, whereas all other samples were harvested by dissociating entire lungs containing mixtures of neoplasias in various stages of tumor progression. Following euthanasia, mice were perfused with S-MEM (Gibco, catalog #11380037) through the right ventricle of the heart. Dissected lungs or microdissected tumors were dissociated either with protease and DNAse solution in the Lung Dissociation Kit (Miltenyi Biotech, catalog #130-095-927) followed by mechanical dissociation using gentleMACS “C” columns (Miltenyi Biotech, catalog #130-093-237) according to the manufacturer’s instructions (Tammela et al., 2017), or by a mixture of Dispase II (Gibco, catalog #17105-041, final concentration 0.6 U/ml), Collagenase Type IV (Thermo Fisher Scientific, catalog #17104019; final concentration 0.083 U/ml), and DNase I (Sigma-Aldrich, catalog #69182-3; final concentration 10 U/ml) in S-MEM solution containing Gentamicin (Gibco, catalog #15750-060, final concentration 20 mg/ml) at 37°C for 30 min (Table S6). The dissociated cells were filtered using a 100 mm strainer and spun at 300 g for 5 min at room temperature. The supernatant was removed by aspiration and red blood cell lysis was performed using ACK (Thermo Fisher Scientific, catalog #A1049201). Cells were then washed with media and pelleted at 300 g for 5 min at 4°C. The supernatant was removed, and the pellet resuspended in Fluorescence-Activated Cell Sorting (FACS) buffer media (200 mM EDTA with 250 ml heat-inactivated FBS in PBS) before being passed through a 40 mm strainer and counted for use in FACS below."
+      ],
+      "description": [
+        "Bulk ATAC of AT2 cells from lung tumors, sorted by FACS for expression of TIGIT",
+        "tigit_pos_neg.merged.bed",
+        "counts_tigitSamples_featureCounts_filtered_notSubs.tsv.gz"
+      ],
+      "data_processing": [
+        "Alignment and QC performed using ENCODE ATAC-Seq pipeline, v1.5.4, https://github.com/ENCODE-DCC/atac-seq-pipeline, processed on terra-firecloud",
+        "Filter the de-duped .bam files generated by the ENCODE ATAC-Seq pipeline to contain only the main chromosomes (Samtools v1.8)",
+        "Subsample the .bam files to the minimum number of reads observed across all replicates and conditions (Samtools v1.8)",
+        "Merge the .bam files across replicates from individual condition (Samtools v1.8)",
+        "Call peaks (MACS2 v2.2.6)",
+        "Filter blacklisted regions (Bedtools v2.26.0)",
+        "Merge peak files from Tigit+ and Tigit- conditions (Bedtools v2.26.0)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Peak file in bed format, and featureCounts output"
+      ],
+      "platform_id": [
+        "GPL19057"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN15618155",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8806130"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

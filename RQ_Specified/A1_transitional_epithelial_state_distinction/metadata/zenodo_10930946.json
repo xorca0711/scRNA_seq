@@ -1,0 +1,146 @@
+{
+  "retrieved_at_utc": "2026-09-25T01:07:30.952666+00:00",
+  "source_url": "https://zenodo.org/api/records/10930946",
+  "response_sha256": "d4723d6dc0714ce9e73272ef8e16bc107f263b0b71724880e1669e882a052201",
+  "scope": "Public catalog only; no assay data downloaded",
+  "metadata": {
+    "title": "Temporo-spatial cellular atlas of the regenerating alveolar niche in idiopathic pulmonary fibrosis",
+    "doi": "10.5281/zenodo.10930946",
+    "version": null,
+    "publication_date": "2024-04-05",
+    "files": [
+      {
+        "name": "RB081_B1_I ROIS 1+4.mcd",
+        "size_bytes": 415218964,
+        "checksum": "md5:05c298496bb5b4f77bbbcb41e2900a07",
+        "url": "https://zenodo.org/api/records/10930946/files/RB081_B1_I%20ROIS%201+4.mcd/content"
+      },
+      {
+        "name": "RB98_B1_I.mcd",
+        "size_bytes": 1022445686,
+        "checksum": "md5:f25e57aa0ed7607154148559ab275d05",
+        "url": "https://zenodo.org/api/records/10930946/files/RB98_B1_I.mcd/content"
+      },
+      {
+        "name": "RB108_B3_I.mcd",
+        "size_bytes": 472395076,
+        "checksum": "md5:20b8b6ebed76552a02995c8ec742b0b0",
+        "url": "https://zenodo.org/api/records/10930946/files/RB108_B3_I.mcd/content"
+      },
+      {
+        "name": "RB081_B1_N .mcd",
+        "size_bytes": 771082825,
+        "checksum": "md5:fc3deff9075ecd49ef053b2fa345aae3",
+        "url": "https://zenodo.org/api/records/10930946/files/RB081_B1_N%20.mcd/content"
+      },
+      {
+        "name": "RB098_B1_F.mcd",
+        "size_bytes": 214330732,
+        "checksum": "md5:0be9f8c6533332cef71979c45d3accc8",
+        "url": "https://zenodo.org/api/records/10930946/files/RB098_B1_F.mcd/content"
+      },
+      {
+        "name": "RB104_B3_F.mcd",
+        "size_bytes": 358381109,
+        "checksum": "md5:e1c5a984dbb9c247a4d531c0b7ae8793",
+        "url": "https://zenodo.org/api/records/10930946/files/RB104_B3_F.mcd/content"
+      },
+      {
+        "name": "RB081_B1_I ROIS 2+3.mcd",
+        "size_bytes": 449305721,
+        "checksum": "md5:0198aedbbe72ecf7235c0f083eda4eb5",
+        "url": "https://zenodo.org/api/records/10930946/files/RB081_B1_I%20ROIS%202+3.mcd/content"
+      },
+      {
+        "name": "RB108_B3_F.mcd",
+        "size_bytes": 333122593,
+        "checksum": "md5:4d0fcc5ec3a247a26806f1f20656ee04",
+        "url": "https://zenodo.org/api/records/10930946/files/RB108_B3_F.mcd/content"
+      },
+      {
+        "name": "RB098_B1_N.mcd",
+        "size_bytes": 616536844,
+        "checksum": "md5:3218b5c17d61fd4e28e2bbddabf5f801",
+        "url": "https://zenodo.org/api/records/10930946/files/RB098_B1_N.mcd/content"
+      },
+      {
+        "name": "RB86_B4_N.mcd",
+        "size_bytes": 771860338,
+        "checksum": "md5:bfff061919c5a47d79ca73905635a8f9",
+        "url": "https://zenodo.org/api/records/10930946/files/RB86_B4_N.mcd/content"
+      },
+      {
+        "name": "RB051_B1_Control.mcd",
+        "size_bytes": 591798452,
+        "checksum": "md5:54704b5dbbb1278575dfb86536ad1e21",
+        "url": "https://zenodo.org/api/records/10930946/files/RB051_B1_Control.mcd/content"
+      },
+      {
+        "name": "RB86_B2_F.mcd",
+        "size_bytes": 976306936,
+        "checksum": "md5:e2fd3056951cab716f447bea6b6b6c93",
+        "url": "https://zenodo.org/api/records/10930946/files/RB86_B2_F.mcd/content"
+      },
+      {
+        "name": "RB081_B1_F .mcd",
+        "size_bytes": 401289099,
+        "checksum": "md5:c5c9dcf1d10ea07d73186ddffac1f84c",
+        "url": "https://zenodo.org/api/records/10930946/files/RB081_B1_F%20.mcd/content"
+      },
+      {
+        "name": "RB113_B2_I.mcd",
+        "size_bytes": 1235384500,
+        "checksum": "md5:5245844de21df801c6a71bc8c57c5b03",
+        "url": "https://zenodo.org/api/records/10930946/files/RB113_B2_I.mcd/content"
+      },
+      {
+        "name": "RB108_B3_N.mcd",
+        "size_bytes": 272492443,
+        "checksum": "md5:3ba20b21972f7927301c1550d19563e2",
+        "url": "https://zenodo.org/api/records/10930946/files/RB108_B3_N.mcd/content"
+      },
+      {
+        "name": "RB113_B2_N.mcd",
+        "size_bytes": 947373624,
+        "checksum": "md5:da1cca38a865487ca0c0f84ab8c3c387",
+        "url": "https://zenodo.org/api/records/10930946/files/RB113_B2_N.mcd/content"
+      },
+      {
+        "name": "RB104_B3_I.mcd",
+        "size_bytes": 571480232,
+        "checksum": "md5:96b532a50a9aa66e290d303b0cbb4d21",
+        "url": "https://zenodo.org/api/records/10930946/files/RB104_B3_I.mcd/content"
+      },
+      {
+        "name": "RB82_B3_I.mcd",
+        "size_bytes": 608274193,
+        "checksum": "md5:76bf6b15b36aa854eb60d964e3126a89",
+        "url": "https://zenodo.org/api/records/10930946/files/RB82_B3_I.mcd/content"
+      },
+      {
+        "name": "RB82_B3_N.mcd",
+        "size_bytes": 1152099383,
+        "checksum": "md5:cef5cd1214691166ac3741964bad76f2",
+        "url": "https://zenodo.org/api/records/10930946/files/RB82_B3_N.mcd/content"
+      },
+      {
+        "name": "RB113_B2_F.mcd",
+        "size_bytes": 1455180725,
+        "checksum": "md5:12e6d9088e6dcd267335dcbc85c09d05",
+        "url": "https://zenodo.org/api/records/10930946/files/RB113_B2_F.mcd/content"
+      },
+      {
+        "name": "RB86_B2_I.mcd",
+        "size_bytes": 883573318,
+        "checksum": "md5:bcd6eecf8e07e99985df77794cf3f9d3",
+        "url": "https://zenodo.org/api/records/10930946/files/RB86_B2_I.mcd/content"
+      },
+      {
+        "name": "RB82_B3_F.mcd",
+        "size_bytes": 1032090220,
+        "checksum": "md5:15c5fe7c80b4e68fc499bd83bd012862",
+        "url": "https://zenodo.org/api/records/10930946/files/RB82_B3_F.mcd/content"
+      }
+    ]
+  }
+}

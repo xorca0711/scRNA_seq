@@ -1,0 +1,477 @@
+{
+  "accession": "GSE154978",
+  "retrieved_at_utc": "2026-09-25T01:01:29.538254+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE154978&targ=all&form=text&view=full",
+  "response_sha256": "768fb12c2b43479fe0a0d1282d4b8f959f0e5ef57ca61f66b4b881a6ee688b75",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Emergence of a high-plasticity cell state during lung cancer evolution, single-cell RNAseq tigit"
+    ],
+    "geo_accession": [
+      "GSE154978"
+    ],
+    "status": [
+      "Public on Jul 24 2020"
+    ],
+    "last_update_date": [
+      "Aug 07 2020"
+    ],
+    "pubmed_id": [
+      "32707077"
+    ],
+    "overall_design": [
+      "Single-cell RNAseq by 10x of mouse lung tumors and orthotropic allotransplant tumros, sorted for expression of Tigit."
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM4685285",
+      "GSM4685286",
+      "GSM4685287",
+      "GSM4685288",
+      "GSM4685289",
+      "GSM4685290"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154978/suppl/GSE154978_mmLung10x_Tigit_dSp_normTPM.h5",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154978/suppl/GSE154978_mmLung10x_Tigit_dSp_rawCount.h5",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154978/suppl/GSE154978_mmLung10x_Tigit_dZ_QCstat_QCstat_smpTable.csv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154978/suppl/GSE154978_mmLung10x_Tigit_dZ_annotTigitAll_annotTigitAll_smpTable.csv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154978/suppl/GSE154978_mmLung10x_Tigit_dZ_annotTigitPre_annotTigitPre_smpTable.csv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154978/suppl/GSE154978_mmLung10x_Tigit_dZ_emptyP_emptyP_smpTable.csv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154978/suppl/GSE154978_mmLung10x_Tigit_dZ_mappingStats_mappingStats_smpTable.csv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154978/suppl/GSE154978_mmLung10x_Tigit_dZ_saturation_saturation_smpTable.csv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154978/suppl/GSE154978_mmLung10x_Tigit_geneTable.csv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154978/suppl/GSE154978_mmLung10x_Tigit_smpTable.csv.gz"
+    ],
+    "relation": [
+      "SubSeries of: GSE152607"
+    ]
+  },
+  "sample_count": 6,
+  "samples": [
+    {
+      "accession": "GSM4685285",
+      "title": [
+        "Tigit_neg_pre_1 10xRNA-seq"
+      ],
+      "geo_accession": [
+        "GSM4685285"
+      ],
+      "source_name_ch1": [
+        "Lung tissue, AT2 cells"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "time: Pre-transplant",
+        "tigit: Negative",
+        "genotype: Kras mut, Trp53 null"
+      ],
+      "treatment_protocol_ch1": [
+        "Tumors were induced in K or KP mice with 0.5-2.5 x 10^8 PFU of AdSPC-Cre (Sutherland et al., 2011) or 2 x 10^8 PFU of AdCMV-FlpO (Iowa)."
+      ],
+      "growth_protocol_ch1": [
+        "We used C57BL/6 x Sv129 mixed background mice from the following previously published strains: KrasLSL-G12D (Jackson et al., 2001), Trp53flox/flox (Marino et al., 2000), Rosa26LSL-tdTomato (Madisen et al., 2010), and Rosa26LSL-Luciferase (Safran et al., 2003)."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mice with LUAD tumors were euthanized at 2, 12, 20, or 30 weeks following tumor induction. We chose these time points because they reflect key stages in LUAD progression: atypical adenomatous hyperplasia (AAH) (KT and KPT at 2 weeks), adenoma (KT at 12 and 30 weeks), adenoma-to-LUAD transition (KPT at 12 weeks) and LUAD (KPT at 20 and 30 weeks). We micro-dissected large KPT tumors individually at 20 and 30 weeks, whereas all other samples were harvested by dissociating entire lungs containing mixtures of neoplasias in various stages of tumor progression. Following euthanasia, mice were perfused with S-MEM (Gibco, catalog #11380037) through the right ventricle of the heart. Dissected lungs or microdissected tumors were dissociated either with protease and DNAse solution in the Lung Dissociation Kit (Miltenyi Biotech, catalog #130-095-927) followed by mechanical dissociation using gentleMACS “C” columns (Miltenyi Biotech, catalog #130-093-237) according to the manufacturer’s instructions (Tammela et al., 2017), or by a mixture of Dispase II (Gibco, catalog #17105-041, final concentration 0.6 U/ml), Collagenase Type IV (Thermo Fisher Scientific, catalog #17104019; final concentration 0.083 U/ml), and DNase I (Sigma-Aldrich, catalog #69182-3; final concentration 10 U/ml) in S-MEM solution containing Gentamicin (Gibco, catalog #15750-060, final concentration 20 mg/ml) at 37°C for 30 min (Table S6). The dissociated cells were filtered using a 100 mm strainer and spun at 300 g for 5 min at room temperature. The supernatant was removed by aspiration and red blood cell lysis was performed using ACK (Thermo Fisher Scientific, catalog #A1049201). Cells were then washed with media and pelleted at 300 g for 5 min at 4°C. The supernatant was removed, and the pellet resuspended in Fluorescence-Activated Cell Sorting (FACS) buffer media (200 mM EDTA with 250 ml heat-inactivated FBS in PBS) before being passed through a 40 mm strainer and counted for use in FACS below.",
+        "3' RNAseq (10x V3)",
+        "Droplet single-cell RNAseq"
+      ],
+      "data_processing": [
+        "Demultiplexing with cellranger mkfastq v3.1 (bcl2fastq)",
+        "UMI expression quantification with cellranger v3.1",
+        "R package dropletUtils is used to exclude chimeric reads and identify and exclude empty droplets",
+        "Genome_build: mm10 (GRCm38.p4)",
+        "Supplementary_files_format_and_content: Raw count matrices are in HDF5 Feature Barcode Matrix Format used by 10x, and metadata files are comma-delimited text:",
+        "mmLung10x_Tigit_dZ_annotTigitAll_annotTigitAll_smpTable.csv (csv, annotation post-transplant)",
+        "mmLung10x_Tigit_dZ_annotTigitPre_annotTigitPre_smpTable.csv (cvs, annotation pre-transplant)",
+        "mmLung10x_Tigit_dZ_emptyP_emptyP_smpTable.csv (csv, QC empty drop table)",
+        "mmLung10x_Tigit_dZ_mappingStats_mappingStats_smpTable.csv (csv, QC mapping stats table)",
+        "mmLung10x_Tigit_dZ_QCstat_QCstat_smpTable.csv (csv, QC table)",
+        "mmLung10x_Tigit_dZ_saturation_saturation_smpTable.csv (csv, cell sequencing saturation estimates)",
+        "mmLung10x_Tigit_geneTable.csv (csv, gene ids)",
+        "mmLung10x_Tigit_smpTable.csv (csv, sample ids)",
+        "mmLung10x_Tigit_dSp_rawCount.h5 (hdf5, (i,j,v, sparse matrix), Raw counts )",
+        "mmLung10x_Tigit_dSp_normTPM.h5 (hdf5, (i,j,v, sparse matrix), Log2 (transcript/10K+1))"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN15618427",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8806906"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4685286",
+      "title": [
+        "Tigit_neg_pre_2 10xRNA-seq"
+      ],
+      "geo_accession": [
+        "GSM4685286"
+      ],
+      "source_name_ch1": [
+        "Lung tissue, AT2 cells"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "time: Pre-transplant",
+        "tigit: Negative",
+        "genotype: Kras mut, Trp53 null"
+      ],
+      "treatment_protocol_ch1": [
+        "Tumors were induced in K or KP mice with 0.5-2.5 x 10^8 PFU of AdSPC-Cre (Sutherland et al., 2011) or 2 x 10^8 PFU of AdCMV-FlpO (Iowa)."
+      ],
+      "growth_protocol_ch1": [
+        "We used C57BL/6 x Sv129 mixed background mice from the following previously published strains: KrasLSL-G12D (Jackson et al., 2001), Trp53flox/flox (Marino et al., 2000), Rosa26LSL-tdTomato (Madisen et al., 2010), and Rosa26LSL-Luciferase (Safran et al., 2003)."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mice with LUAD tumors were euthanized at 2, 12, 20, or 30 weeks following tumor induction. We chose these time points because they reflect key stages in LUAD progression: atypical adenomatous hyperplasia (AAH) (KT and KPT at 2 weeks), adenoma (KT at 12 and 30 weeks), adenoma-to-LUAD transition (KPT at 12 weeks) and LUAD (KPT at 20 and 30 weeks). We micro-dissected large KPT tumors individually at 20 and 30 weeks, whereas all other samples were harvested by dissociating entire lungs containing mixtures of neoplasias in various stages of tumor progression. Following euthanasia, mice were perfused with S-MEM (Gibco, catalog #11380037) through the right ventricle of the heart. Dissected lungs or microdissected tumors were dissociated either with protease and DNAse solution in the Lung Dissociation Kit (Miltenyi Biotech, catalog #130-095-927) followed by mechanical dissociation using gentleMACS “C” columns (Miltenyi Biotech, catalog #130-093-237) according to the manufacturer’s instructions (Tammela et al., 2017), or by a mixture of Dispase II (Gibco, catalog #17105-041, final concentration 0.6 U/ml), Collagenase Type IV (Thermo Fisher Scientific, catalog #17104019; final concentration 0.083 U/ml), and DNase I (Sigma-Aldrich, catalog #69182-3; final concentration 10 U/ml) in S-MEM solution containing Gentamicin (Gibco, catalog #15750-060, final concentration 20 mg/ml) at 37°C for 30 min (Table S6). The dissociated cells were filtered using a 100 mm strainer and spun at 300 g for 5 min at room temperature. The supernatant was removed by aspiration and red blood cell lysis was performed using ACK (Thermo Fisher Scientific, catalog #A1049201). Cells were then washed with media and pelleted at 300 g for 5 min at 4°C. The supernatant was removed, and the pellet resuspended in Fluorescence-Activated Cell Sorting (FACS) buffer media (200 mM EDTA with 250 ml heat-inactivated FBS in PBS) before being passed through a 40 mm strainer and counted for use in FACS below.",
+        "3' RNAseq (10x V3)",
+        "Droplet single-cell RNAseq"
+      ],
+      "data_processing": [
+        "Demultiplexing with cellranger mkfastq v3.1 (bcl2fastq)",
+        "UMI expression quantification with cellranger v3.1",
+        "R package dropletUtils is used to exclude chimeric reads and identify and exclude empty droplets",
+        "Genome_build: mm10 (GRCm38.p4)",
+        "Supplementary_files_format_and_content: Raw count matrices are in HDF5 Feature Barcode Matrix Format used by 10x, and metadata files are comma-delimited text:",
+        "mmLung10x_Tigit_dZ_annotTigitAll_annotTigitAll_smpTable.csv (csv, annotation post-transplant)",
+        "mmLung10x_Tigit_dZ_annotTigitPre_annotTigitPre_smpTable.csv (cvs, annotation pre-transplant)",
+        "mmLung10x_Tigit_dZ_emptyP_emptyP_smpTable.csv (csv, QC empty drop table)",
+        "mmLung10x_Tigit_dZ_mappingStats_mappingStats_smpTable.csv (csv, QC mapping stats table)",
+        "mmLung10x_Tigit_dZ_QCstat_QCstat_smpTable.csv (csv, QC table)",
+        "mmLung10x_Tigit_dZ_saturation_saturation_smpTable.csv (csv, cell sequencing saturation estimates)",
+        "mmLung10x_Tigit_geneTable.csv (csv, gene ids)",
+        "mmLung10x_Tigit_smpTable.csv (csv, sample ids)",
+        "mmLung10x_Tigit_dSp_rawCount.h5 (hdf5, (i,j,v, sparse matrix), Raw counts )",
+        "mmLung10x_Tigit_dSp_normTPM.h5 (hdf5, (i,j,v, sparse matrix), Log2 (transcript/10K+1))"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN15618426",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8806907"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4685287",
+      "title": [
+        "Tigit_pos_pre_1 10xRNA-seq"
+      ],
+      "geo_accession": [
+        "GSM4685287"
+      ],
+      "source_name_ch1": [
+        "Lung tissue, AT2 cells"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "time: Pre-transplant",
+        "tigit: Positive",
+        "genotype: Kras mut, Trp53 null"
+      ],
+      "treatment_protocol_ch1": [
+        "Tumors were induced in K or KP mice with 0.5-2.5 x 10^8 PFU of AdSPC-Cre (Sutherland et al., 2011) or 2 x 10^8 PFU of AdCMV-FlpO (Iowa)."
+      ],
+      "growth_protocol_ch1": [
+        "We used C57BL/6 x Sv129 mixed background mice from the following previously published strains: KrasLSL-G12D (Jackson et al., 2001), Trp53flox/flox (Marino et al., 2000), Rosa26LSL-tdTomato (Madisen et al., 2010), and Rosa26LSL-Luciferase (Safran et al., 2003)."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mice with LUAD tumors were euthanized at 2, 12, 20, or 30 weeks following tumor induction. We chose these time points because they reflect key stages in LUAD progression: atypical adenomatous hyperplasia (AAH) (KT and KPT at 2 weeks), adenoma (KT at 12 and 30 weeks), adenoma-to-LUAD transition (KPT at 12 weeks) and LUAD (KPT at 20 and 30 weeks). We micro-dissected large KPT tumors individually at 20 and 30 weeks, whereas all other samples were harvested by dissociating entire lungs containing mixtures of neoplasias in various stages of tumor progression. Following euthanasia, mice were perfused with S-MEM (Gibco, catalog #11380037) through the right ventricle of the heart. Dissected lungs or microdissected tumors were dissociated either with protease and DNAse solution in the Lung Dissociation Kit (Miltenyi Biotech, catalog #130-095-927) followed by mechanical dissociation using gentleMACS “C” columns (Miltenyi Biotech, catalog #130-093-237) according to the manufacturer’s instructions (Tammela et al., 2017), or by a mixture of Dispase II (Gibco, catalog #17105-041, final concentration 0.6 U/ml), Collagenase Type IV (Thermo Fisher Scientific, catalog #17104019; final concentration 0.083 U/ml), and DNase I (Sigma-Aldrich, catalog #69182-3; final concentration 10 U/ml) in S-MEM solution containing Gentamicin (Gibco, catalog #15750-060, final concentration 20 mg/ml) at 37°C for 30 min (Table S6). The dissociated cells were filtered using a 100 mm strainer and spun at 300 g for 5 min at room temperature. The supernatant was removed by aspiration and red blood cell lysis was performed using ACK (Thermo Fisher Scientific, catalog #A1049201). Cells were then washed with media and pelleted at 300 g for 5 min at 4°C. The supernatant was removed, and the pellet resuspended in Fluorescence-Activated Cell Sorting (FACS) buffer media (200 mM EDTA with 250 ml heat-inactivated FBS in PBS) before being passed through a 40 mm strainer and counted for use in FACS below.",
+        "3' RNAseq (10x V3)",
+        "Droplet single-cell RNAseq"
+      ],
+      "data_processing": [
+        "Demultiplexing with cellranger mkfastq v3.1 (bcl2fastq)",
+        "UMI expression quantification with cellranger v3.1",
+        "R package dropletUtils is used to exclude chimeric reads and identify and exclude empty droplets",
+        "Genome_build: mm10 (GRCm38.p4)",
+        "Supplementary_files_format_and_content: Raw count matrices are in HDF5 Feature Barcode Matrix Format used by 10x, and metadata files are comma-delimited text:",
+        "mmLung10x_Tigit_dZ_annotTigitAll_annotTigitAll_smpTable.csv (csv, annotation post-transplant)",
+        "mmLung10x_Tigit_dZ_annotTigitPre_annotTigitPre_smpTable.csv (cvs, annotation pre-transplant)",
+        "mmLung10x_Tigit_dZ_emptyP_emptyP_smpTable.csv (csv, QC empty drop table)",
+        "mmLung10x_Tigit_dZ_mappingStats_mappingStats_smpTable.csv (csv, QC mapping stats table)",
+        "mmLung10x_Tigit_dZ_QCstat_QCstat_smpTable.csv (csv, QC table)",
+        "mmLung10x_Tigit_dZ_saturation_saturation_smpTable.csv (csv, cell sequencing saturation estimates)",
+        "mmLung10x_Tigit_geneTable.csv (csv, gene ids)",
+        "mmLung10x_Tigit_smpTable.csv (csv, sample ids)",
+        "mmLung10x_Tigit_dSp_rawCount.h5 (hdf5, (i,j,v, sparse matrix), Raw counts )",
+        "mmLung10x_Tigit_dSp_normTPM.h5 (hdf5, (i,j,v, sparse matrix), Log2 (transcript/10K+1))"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN15618425",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8806908"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4685288",
+      "title": [
+        "Tigit_pos_pre_2 10xRNA-seq"
+      ],
+      "geo_accession": [
+        "GSM4685288"
+      ],
+      "source_name_ch1": [
+        "Lung tissue, AT2 cells"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "time: Pre-transplant",
+        "tigit: Positive",
+        "genotype: Kras mut, Trp53 null"
+      ],
+      "treatment_protocol_ch1": [
+        "Tumors were induced in K or KP mice with 0.5-2.5 x 10^8 PFU of AdSPC-Cre (Sutherland et al., 2011) or 2 x 10^8 PFU of AdCMV-FlpO (Iowa)."
+      ],
+      "growth_protocol_ch1": [
+        "We used C57BL/6 x Sv129 mixed background mice from the following previously published strains: KrasLSL-G12D (Jackson et al., 2001), Trp53flox/flox (Marino et al., 2000), Rosa26LSL-tdTomato (Madisen et al., 2010), and Rosa26LSL-Luciferase (Safran et al., 2003)."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mice with LUAD tumors were euthanized at 2, 12, 20, or 30 weeks following tumor induction. We chose these time points because they reflect key stages in LUAD progression: atypical adenomatous hyperplasia (AAH) (KT and KPT at 2 weeks), adenoma (KT at 12 and 30 weeks), adenoma-to-LUAD transition (KPT at 12 weeks) and LUAD (KPT at 20 and 30 weeks). We micro-dissected large KPT tumors individually at 20 and 30 weeks, whereas all other samples were harvested by dissociating entire lungs containing mixtures of neoplasias in various stages of tumor progression. Following euthanasia, mice were perfused with S-MEM (Gibco, catalog #11380037) through the right ventricle of the heart. Dissected lungs or microdissected tumors were dissociated either with protease and DNAse solution in the Lung Dissociation Kit (Miltenyi Biotech, catalog #130-095-927) followed by mechanical dissociation using gentleMACS “C” columns (Miltenyi Biotech, catalog #130-093-237) according to the manufacturer’s instructions (Tammela et al., 2017), or by a mixture of Dispase II (Gibco, catalog #17105-041, final concentration 0.6 U/ml), Collagenase Type IV (Thermo Fisher Scientific, catalog #17104019; final concentration 0.083 U/ml), and DNase I (Sigma-Aldrich, catalog #69182-3; final concentration 10 U/ml) in S-MEM solution containing Gentamicin (Gibco, catalog #15750-060, final concentration 20 mg/ml) at 37°C for 30 min (Table S6). The dissociated cells were filtered using a 100 mm strainer and spun at 300 g for 5 min at room temperature. The supernatant was removed by aspiration and red blood cell lysis was performed using ACK (Thermo Fisher Scientific, catalog #A1049201). Cells were then washed with media and pelleted at 300 g for 5 min at 4°C. The supernatant was removed, and the pellet resuspended in Fluorescence-Activated Cell Sorting (FACS) buffer media (200 mM EDTA with 250 ml heat-inactivated FBS in PBS) before being passed through a 40 mm strainer and counted for use in FACS below.",
+        "3' RNAseq (10x V3)",
+        "Droplet single-cell RNAseq"
+      ],
+      "data_processing": [
+        "Demultiplexing with cellranger mkfastq v3.1 (bcl2fastq)",
+        "UMI expression quantification with cellranger v3.1",
+        "R package dropletUtils is used to exclude chimeric reads and identify and exclude empty droplets",
+        "Genome_build: mm10 (GRCm38.p4)",
+        "Supplementary_files_format_and_content: Raw count matrices are in HDF5 Feature Barcode Matrix Format used by 10x, and metadata files are comma-delimited text:",
+        "mmLung10x_Tigit_dZ_annotTigitAll_annotTigitAll_smpTable.csv (csv, annotation post-transplant)",
+        "mmLung10x_Tigit_dZ_annotTigitPre_annotTigitPre_smpTable.csv (cvs, annotation pre-transplant)",
+        "mmLung10x_Tigit_dZ_emptyP_emptyP_smpTable.csv (csv, QC empty drop table)",
+        "mmLung10x_Tigit_dZ_mappingStats_mappingStats_smpTable.csv (csv, QC mapping stats table)",
+        "mmLung10x_Tigit_dZ_QCstat_QCstat_smpTable.csv (csv, QC table)",
+        "mmLung10x_Tigit_dZ_saturation_saturation_smpTable.csv (csv, cell sequencing saturation estimates)",
+        "mmLung10x_Tigit_geneTable.csv (csv, gene ids)",
+        "mmLung10x_Tigit_smpTable.csv (csv, sample ids)",
+        "mmLung10x_Tigit_dSp_rawCount.h5 (hdf5, (i,j,v, sparse matrix), Raw counts )",
+        "mmLung10x_Tigit_dSp_normTPM.h5 (hdf5, (i,j,v, sparse matrix), Log2 (transcript/10K+1))"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN15618424",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8806909"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4685289",
+      "title": [
+        "Tigit_pos_post 10xRNA-seq"
+      ],
+      "geo_accession": [
+        "GSM4685289"
+      ],
+      "source_name_ch1": [
+        "Lung tissue, AT2 cells"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "time: Post-transplant",
+        "tigit: Positive",
+        "genotype: Kras mut, Trp53 null"
+      ],
+      "treatment_protocol_ch1": [
+        "Tumors were induced in K or KP mice with 0.5-2.5 x 10^8 PFU of AdSPC-Cre (Sutherland et al., 2011) or 2 x 10^8 PFU of AdCMV-FlpO (Iowa)."
+      ],
+      "growth_protocol_ch1": [
+        "We used C57BL/6 x Sv129 mixed background mice from the following previously published strains: KrasLSL-G12D (Jackson et al., 2001), Trp53flox/flox (Marino et al., 2000), Rosa26LSL-tdTomato (Madisen et al., 2010), and Rosa26LSL-Luciferase (Safran et al., 2003)."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mice with LUAD tumors were euthanized at 2, 12, 20, or 30 weeks following tumor induction. We chose these time points because they reflect key stages in LUAD progression: atypical adenomatous hyperplasia (AAH) (KT and KPT at 2 weeks), adenoma (KT at 12 and 30 weeks), adenoma-to-LUAD transition (KPT at 12 weeks) and LUAD (KPT at 20 and 30 weeks). We micro-dissected large KPT tumors individually at 20 and 30 weeks, whereas all other samples were harvested by dissociating entire lungs containing mixtures of neoplasias in various stages of tumor progression. Following euthanasia, mice were perfused with S-MEM (Gibco, catalog #11380037) through the right ventricle of the heart. Dissected lungs or microdissected tumors were dissociated either with protease and DNAse solution in the Lung Dissociation Kit (Miltenyi Biotech, catalog #130-095-927) followed by mechanical dissociation using gentleMACS “C” columns (Miltenyi Biotech, catalog #130-093-237) according to the manufacturer’s instructions (Tammela et al., 2017), or by a mixture of Dispase II (Gibco, catalog #17105-041, final concentration 0.6 U/ml), Collagenase Type IV (Thermo Fisher Scientific, catalog #17104019; final concentration 0.083 U/ml), and DNase I (Sigma-Aldrich, catalog #69182-3; final concentration 10 U/ml) in S-MEM solution containing Gentamicin (Gibco, catalog #15750-060, final concentration 20 mg/ml) at 37°C for 30 min (Table S6). The dissociated cells were filtered using a 100 mm strainer and spun at 300 g for 5 min at room temperature. The supernatant was removed by aspiration and red blood cell lysis was performed using ACK (Thermo Fisher Scientific, catalog #A1049201). Cells were then washed with media and pelleted at 300 g for 5 min at 4°C. The supernatant was removed, and the pellet resuspended in Fluorescence-Activated Cell Sorting (FACS) buffer media (200 mM EDTA with 250 ml heat-inactivated FBS in PBS) before being passed through a 40 mm strainer and counted for use in FACS below.",
+        "3' RNAseq (10x V3)",
+        "Droplet single-cell RNAseq"
+      ],
+      "data_processing": [
+        "Demultiplexing with cellranger mkfastq v3.1 (bcl2fastq)",
+        "UMI expression quantification with cellranger v3.1",
+        "R package dropletUtils is used to exclude chimeric reads and identify and exclude empty droplets",
+        "Genome_build: mm10 (GRCm38.p4)",
+        "Supplementary_files_format_and_content: Raw count matrices are in HDF5 Feature Barcode Matrix Format used by 10x, and metadata files are comma-delimited text:",
+        "mmLung10x_Tigit_dZ_annotTigitAll_annotTigitAll_smpTable.csv (csv, annotation post-transplant)",
+        "mmLung10x_Tigit_dZ_annotTigitPre_annotTigitPre_smpTable.csv (cvs, annotation pre-transplant)",
+        "mmLung10x_Tigit_dZ_emptyP_emptyP_smpTable.csv (csv, QC empty drop table)",
+        "mmLung10x_Tigit_dZ_mappingStats_mappingStats_smpTable.csv (csv, QC mapping stats table)",
+        "mmLung10x_Tigit_dZ_QCstat_QCstat_smpTable.csv (csv, QC table)",
+        "mmLung10x_Tigit_dZ_saturation_saturation_smpTable.csv (csv, cell sequencing saturation estimates)",
+        "mmLung10x_Tigit_geneTable.csv (csv, gene ids)",
+        "mmLung10x_Tigit_smpTable.csv (csv, sample ids)",
+        "mmLung10x_Tigit_dSp_rawCount.h5 (hdf5, (i,j,v, sparse matrix), Raw counts )",
+        "mmLung10x_Tigit_dSp_normTPM.h5 (hdf5, (i,j,v, sparse matrix), Log2 (transcript/10K+1))"
+      ],
+      "platform_id": [
+        "GPL19057"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN15618423",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8806910"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4685290",
+      "title": [
+        "Tigit_neg_post 10xRNA-seq"
+      ],
+      "geo_accession": [
+        "GSM4685290"
+      ],
+      "source_name_ch1": [
+        "Lung tissue, AT2 cells"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "time: Post-transplant",
+        "tigit: Negative",
+        "genotype: Kras mut, Trp53 null"
+      ],
+      "treatment_protocol_ch1": [
+        "Tumors were induced in K or KP mice with 0.5-2.5 x 10^8 PFU of AdSPC-Cre (Sutherland et al., 2011) or 2 x 10^8 PFU of AdCMV-FlpO (Iowa)."
+      ],
+      "growth_protocol_ch1": [
+        "We used C57BL/6 x Sv129 mixed background mice from the following previously published strains: KrasLSL-G12D (Jackson et al., 2001), Trp53flox/flox (Marino et al., 2000), Rosa26LSL-tdTomato (Madisen et al., 2010), and Rosa26LSL-Luciferase (Safran et al., 2003)."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mice with LUAD tumors were euthanized at 2, 12, 20, or 30 weeks following tumor induction. We chose these time points because they reflect key stages in LUAD progression: atypical adenomatous hyperplasia (AAH) (KT and KPT at 2 weeks), adenoma (KT at 12 and 30 weeks), adenoma-to-LUAD transition (KPT at 12 weeks) and LUAD (KPT at 20 and 30 weeks). We micro-dissected large KPT tumors individually at 20 and 30 weeks, whereas all other samples were harvested by dissociating entire lungs containing mixtures of neoplasias in various stages of tumor progression. Following euthanasia, mice were perfused with S-MEM (Gibco, catalog #11380037) through the right ventricle of the heart. Dissected lungs or microdissected tumors were dissociated either with protease and DNAse solution in the Lung Dissociation Kit (Miltenyi Biotech, catalog #130-095-927) followed by mechanical dissociation using gentleMACS “C” columns (Miltenyi Biotech, catalog #130-093-237) according to the manufacturer’s instructions (Tammela et al., 2017), or by a mixture of Dispase II (Gibco, catalog #17105-041, final concentration 0.6 U/ml), Collagenase Type IV (Thermo Fisher Scientific, catalog #17104019; final concentration 0.083 U/ml), and DNase I (Sigma-Aldrich, catalog #69182-3; final concentration 10 U/ml) in S-MEM solution containing Gentamicin (Gibco, catalog #15750-060, final concentration 20 mg/ml) at 37°C for 30 min (Table S6). The dissociated cells were filtered using a 100 mm strainer and spun at 300 g for 5 min at room temperature. The supernatant was removed by aspiration and red blood cell lysis was performed using ACK (Thermo Fisher Scientific, catalog #A1049201). Cells were then washed with media and pelleted at 300 g for 5 min at 4°C. The supernatant was removed, and the pellet resuspended in Fluorescence-Activated Cell Sorting (FACS) buffer media (200 mM EDTA with 250 ml heat-inactivated FBS in PBS) before being passed through a 40 mm strainer and counted for use in FACS below.",
+        "3' RNAseq (10x V3)",
+        "Droplet single-cell RNAseq"
+      ],
+      "data_processing": [
+        "Demultiplexing with cellranger mkfastq v3.1 (bcl2fastq)",
+        "UMI expression quantification with cellranger v3.1",
+        "R package dropletUtils is used to exclude chimeric reads and identify and exclude empty droplets",
+        "Genome_build: mm10 (GRCm38.p4)",
+        "Supplementary_files_format_and_content: Raw count matrices are in HDF5 Feature Barcode Matrix Format used by 10x, and metadata files are comma-delimited text:",
+        "mmLung10x_Tigit_dZ_annotTigitAll_annotTigitAll_smpTable.csv (csv, annotation post-transplant)",
+        "mmLung10x_Tigit_dZ_annotTigitPre_annotTigitPre_smpTable.csv (cvs, annotation pre-transplant)",
+        "mmLung10x_Tigit_dZ_emptyP_emptyP_smpTable.csv (csv, QC empty drop table)",
+        "mmLung10x_Tigit_dZ_mappingStats_mappingStats_smpTable.csv (csv, QC mapping stats table)",
+        "mmLung10x_Tigit_dZ_QCstat_QCstat_smpTable.csv (csv, QC table)",
+        "mmLung10x_Tigit_dZ_saturation_saturation_smpTable.csv (csv, cell sequencing saturation estimates)",
+        "mmLung10x_Tigit_geneTable.csv (csv, gene ids)",
+        "mmLung10x_Tigit_smpTable.csv (csv, sample ids)",
+        "mmLung10x_Tigit_dSp_rawCount.h5 (hdf5, (i,j,v, sparse matrix), Raw counts )",
+        "mmLung10x_Tigit_dSp_normTPM.h5 (hdf5, (i,j,v, sparse matrix), Log2 (transcript/10K+1))"
+      ],
+      "platform_id": [
+        "GPL19057"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN15618422",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8806911"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

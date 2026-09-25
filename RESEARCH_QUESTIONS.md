@@ -47,7 +47,39 @@ with their source study; this file is the canonical repository-wide RQ register.
 
 ## Part A. Questions, evidence and decision limits
 
-### A1. Which RNA and chromatin changes accompany transitional epithelial states?
+### A1. Which regulatory and phenotypic features distinguish transitional epithelial states beyond RNA markers?
+
+The primary goal is to test whether DATP, PATS, Krt8 ADI, aberrant basaloid/ABI
+and HPCS labels capture a common regulatory programme, distinct branches or
+different routes that share stress-related RNA expression. Keep the original
+study definitions and biological contexts; these names are not predetermined
+equivalent classes. Direct histone marks and, where measured, DNA methylation
+extend the existing accessibility analyses. Trajectory, recorded lineage,
+protein phenotype, spatial location and perturbation provide separate evidence
+about the distinctions and their behaviour.
+
+The prospective [A1 analysis plan](RQ_Specified/A1_transitional_epithelial_state_distinction/PLAN.md)
+and [study/assay map](RQ_Specified/A1_transitional_epithelial_state_distinction/STUDY_MAP.md)
+cover 30 audited GEO series plus spatial-protein, proteomics and sequencing
+catalogs. GSE141635 and the Tsutsui iPSC series provide direct histone evidence;
+GSE150527 adds a normal-differentiation methylation reference. Low replication
+limits these to descriptive comparisons. GSE154966 paired TIGIT ATAC and
+GSE273123 CD44-sorted RNA have descriptive source-block PCA, with biological
+identity still held for inferential tests. The
+[first batch](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/FIRST_BATCH_REPORT.md)
+also reconstructs the measured PATS endpoint and fits a separate five-versus-five
+IRE1α epithelial RiboTag contrast. Four genes pass whole-family FDR, but none of
+the predefined markers or eligible pathways does. These source-informed results
+do not establish an epigenetic distinction or DATP/PATS/HPCS taxonomy.
+
+The [gallery](RQ_Specified/A1_transitional_epithelial_state_distinction/figures/README.md)
+contains the initial sample PCA, treatment/marker and measured-lineage panels,
+alongside the remaining direct-mark and endpoint plans. The
+[lineage audit](RQ_Specified/A1_transitional_epithelial_state_distinction/LINEAGE_AUDIT.md)
+now prioritizes measured descendants and functional endpoints. Computational
+trajectories do not establish ancestry; ATAC does not measure histone marks,
+methylation or chromosome conformation. Evidence for memory or irreversibility
+still requires the appropriate chase/withdrawal design (A14).
 
 Epithelial-state specificity has two linked parts: measuring identity and state
 programmes across injury, development and genotype (A1/A5), and testing their

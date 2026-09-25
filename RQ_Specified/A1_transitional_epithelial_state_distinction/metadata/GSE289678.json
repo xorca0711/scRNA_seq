@@ -1,0 +1,609 @@
+{
+  "accession": "GSE289678",
+  "retrieved_at_utc": "2026-09-25T00:58:33.333451+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289678&targ=all&form=text&view=full",
+  "response_sha256": "26c97c376658e498357be659c2f020d6b3deafe1ab169e66718415f6cfda0197",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Human PSC-based Modeling of Pulmonary Fibrosis Identifies p300/CBP Inhibition as a Suppressor of Alveolar Transitional Cell State [BLM]"
+    ],
+    "geo_accession": [
+      "GSE289678"
+    ],
+    "status": [
+      "Public on Feb 18 2026"
+    ],
+    "last_update_date": [
+      "Feb 18 2026"
+    ],
+    "pubmed_id": [
+      "41680175"
+    ],
+    "overall_design": [
+      "Alveolar organoids composed of SPC-GFP reporter iPSC line (B2-3)-derived alveolar epithelial type 2 (AT2) cells and human fetal lung fibroblasts (HFLFs) were treated with DMSO or BLM for 3 days , followed by an additional 3-day incubation with or without compounds. For gene expression profile analysis, HFLFs were isolated from the organoids through magnetic activated cell sorting using anti-EpCAM antibody."
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM8796377",
+      "GSM8796378",
+      "GSM8796379",
+      "GSM8796380",
+      "GSM8796381",
+      "GSM8796382",
+      "GSM8796383",
+      "GSM8796384",
+      "GSM8796385"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE289nnn/GSE289678/suppl/GSE289678_BLM_FDAO_HFLF_COUNT.txt.gz"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1223928"
+    ]
+  },
+  "sample_count": 9,
+  "samples": [
+    {
+      "accession": "GSM8796377",
+      "title": [
+        "HFLF_BLM_1"
+      ],
+      "geo_accession": [
+        "GSM8796377"
+      ],
+      "source_name_ch1": [
+        "HFLFs"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: HFLFs",
+        "cell type: Human fetal lung fibroblasts",
+        "treatment: BLM"
+      ],
+      "treatment_protocol_ch1": [
+        "Alveolar organoids were treated with DMSO or BLM from Day11 to Day14, followed by the removal of BLM and a 3-day incubation with or without compounds."
+      ],
+      "growth_protocol_ch1": [
+        "Lung progenitor cells were derived from iPSCs and CPM+ lung progenitor cells were cocultured with HFLFs in organoids to promote induction of alveolar organoids. Then, SPC+ alveolar type 2 cells were isolated and passaged in alveolar organoids cocultured with HFLFs. The alveolar organoids were maintained in DCIK medium. DCIK medium: Ham's F12 (Fujifilm Wako, 087-08335) containing 50 nM dexamethasone, 100 μM 8-Br-cAMP, 100 μM 3-isobutyl-1-methylxanthine, 10 ng/mL KGF, 1% B-27 supplement, 0.25% BSA (Thermo Fisher Scientific, 15260-037), 15 mM HEPES (Thermo Fisher Scientific, 17557-94), 0.8 mM CaCl2, 0.1% ITS premix (Corning), and 50 U/mL Penicillin/Streptomycin."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "RNA was extracted using RNeasy micro (Qiagen).",
+        "Library preparation was performed using an Illumina Stranded Total RNA Prep, Ligation with Ribo-Zero Plus kit (Cat# 20040525, Illumina) according to the manufacturer’s instructions. The constructed libraries were sequenced on an Illumina NextSeq 2000 with the paired-end mode."
+      ],
+      "description": [
+        "Library name: Sample 1"
+      ],
+      "data_processing": [
+        "Illumina RTA version 3.10.30 and  bcl2fastq version 2.20 were used for basecalling and fastq generation, respectively.",
+        "Adapter sequences and low-quality bases were trimmed from the raw reads by cutadapt v4.6. The trimmed reads were mapped to the human reference genome sequences (hg38) using STAR v2.7.11a with the GENCODE (release 32, GRCh38.p13) gtf file.",
+        "The uniquely and properly mapped reads were used for further analysis. Raw read counts were calculated using htseq-count v2.0.5 with the GENCODE gtf file. Gene expression levels were determined as transcripts per million (TPM).",
+        "Assembly: hg38",
+        "Supplementary files format and content: tab-delimited text files incude count values and TPM for each sample."
+      ],
+      "platform_id": [
+        "GPL30173"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46830560",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27688044"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8796378",
+      "title": [
+        "HFLF_BLM_2"
+      ],
+      "geo_accession": [
+        "GSM8796378"
+      ],
+      "source_name_ch1": [
+        "HFLFs"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: HFLFs",
+        "cell type: Human fetal lung fibroblasts",
+        "treatment: BLM"
+      ],
+      "treatment_protocol_ch1": [
+        "Alveolar organoids were treated with DMSO or BLM from Day11 to Day14, followed by the removal of BLM and a 3-day incubation with or without compounds."
+      ],
+      "growth_protocol_ch1": [
+        "Lung progenitor cells were derived from iPSCs and CPM+ lung progenitor cells were cocultured with HFLFs in organoids to promote induction of alveolar organoids. Then, SPC+ alveolar type 2 cells were isolated and passaged in alveolar organoids cocultured with HFLFs. The alveolar organoids were maintained in DCIK medium. DCIK medium: Ham's F12 (Fujifilm Wako, 087-08335) containing 50 nM dexamethasone, 100 μM 8-Br-cAMP, 100 μM 3-isobutyl-1-methylxanthine, 10 ng/mL KGF, 1% B-27 supplement, 0.25% BSA (Thermo Fisher Scientific, 15260-037), 15 mM HEPES (Thermo Fisher Scientific, 17557-94), 0.8 mM CaCl2, 0.1% ITS premix (Corning), and 50 U/mL Penicillin/Streptomycin."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "RNA was extracted using RNeasy micro (Qiagen).",
+        "Library preparation was performed using an Illumina Stranded Total RNA Prep, Ligation with Ribo-Zero Plus kit (Cat# 20040525, Illumina) according to the manufacturer’s instructions. The constructed libraries were sequenced on an Illumina NextSeq 2000 with the paired-end mode."
+      ],
+      "description": [
+        "Library name: Sample 2"
+      ],
+      "data_processing": [
+        "Illumina RTA version 3.10.30 and  bcl2fastq version 2.20 were used for basecalling and fastq generation, respectively.",
+        "Adapter sequences and low-quality bases were trimmed from the raw reads by cutadapt v4.6. The trimmed reads were mapped to the human reference genome sequences (hg38) using STAR v2.7.11a with the GENCODE (release 32, GRCh38.p13) gtf file.",
+        "The uniquely and properly mapped reads were used for further analysis. Raw read counts were calculated using htseq-count v2.0.5 with the GENCODE gtf file. Gene expression levels were determined as transcripts per million (TPM).",
+        "Assembly: hg38",
+        "Supplementary files format and content: tab-delimited text files incude count values and TPM for each sample."
+      ],
+      "platform_id": [
+        "GPL30173"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46830559",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27688045"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8796379",
+      "title": [
+        "HFLF_BLM_3"
+      ],
+      "geo_accession": [
+        "GSM8796379"
+      ],
+      "source_name_ch1": [
+        "HFLFs"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: HFLFs",
+        "cell type: Human fetal lung fibroblasts",
+        "treatment: BLM"
+      ],
+      "treatment_protocol_ch1": [
+        "Alveolar organoids were treated with DMSO or BLM from Day11 to Day14, followed by the removal of BLM and a 3-day incubation with or without compounds."
+      ],
+      "growth_protocol_ch1": [
+        "Lung progenitor cells were derived from iPSCs and CPM+ lung progenitor cells were cocultured with HFLFs in organoids to promote induction of alveolar organoids. Then, SPC+ alveolar type 2 cells were isolated and passaged in alveolar organoids cocultured with HFLFs. The alveolar organoids were maintained in DCIK medium. DCIK medium: Ham's F12 (Fujifilm Wako, 087-08335) containing 50 nM dexamethasone, 100 μM 8-Br-cAMP, 100 μM 3-isobutyl-1-methylxanthine, 10 ng/mL KGF, 1% B-27 supplement, 0.25% BSA (Thermo Fisher Scientific, 15260-037), 15 mM HEPES (Thermo Fisher Scientific, 17557-94), 0.8 mM CaCl2, 0.1% ITS premix (Corning), and 50 U/mL Penicillin/Streptomycin."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "RNA was extracted using RNeasy micro (Qiagen).",
+        "Library preparation was performed using an Illumina Stranded Total RNA Prep, Ligation with Ribo-Zero Plus kit (Cat# 20040525, Illumina) according to the manufacturer’s instructions. The constructed libraries were sequenced on an Illumina NextSeq 2000 with the paired-end mode."
+      ],
+      "description": [
+        "Library name: Sample 3"
+      ],
+      "data_processing": [
+        "Illumina RTA version 3.10.30 and  bcl2fastq version 2.20 were used for basecalling and fastq generation, respectively.",
+        "Adapter sequences and low-quality bases were trimmed from the raw reads by cutadapt v4.6. The trimmed reads were mapped to the human reference genome sequences (hg38) using STAR v2.7.11a with the GENCODE (release 32, GRCh38.p13) gtf file.",
+        "The uniquely and properly mapped reads were used for further analysis. Raw read counts were calculated using htseq-count v2.0.5 with the GENCODE gtf file. Gene expression levels were determined as transcripts per million (TPM).",
+        "Assembly: hg38",
+        "Supplementary files format and content: tab-delimited text files incude count values and TPM for each sample."
+      ],
+      "platform_id": [
+        "GPL30173"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46830558",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27688046"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8796380",
+      "title": [
+        "HFLF_BLM_CBP30_1"
+      ],
+      "geo_accession": [
+        "GSM8796380"
+      ],
+      "source_name_ch1": [
+        "HFLFs"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: HFLFs",
+        "cell type: Human fetal lung fibroblasts",
+        "treatment: BLM+CBP30"
+      ],
+      "treatment_protocol_ch1": [
+        "Alveolar organoids were treated with DMSO or BLM from Day11 to Day14, followed by the removal of BLM and a 3-day incubation with or without compounds."
+      ],
+      "growth_protocol_ch1": [
+        "Lung progenitor cells were derived from iPSCs and CPM+ lung progenitor cells were cocultured with HFLFs in organoids to promote induction of alveolar organoids. Then, SPC+ alveolar type 2 cells were isolated and passaged in alveolar organoids cocultured with HFLFs. The alveolar organoids were maintained in DCIK medium. DCIK medium: Ham's F12 (Fujifilm Wako, 087-08335) containing 50 nM dexamethasone, 100 μM 8-Br-cAMP, 100 μM 3-isobutyl-1-methylxanthine, 10 ng/mL KGF, 1% B-27 supplement, 0.25% BSA (Thermo Fisher Scientific, 15260-037), 15 mM HEPES (Thermo Fisher Scientific, 17557-94), 0.8 mM CaCl2, 0.1% ITS premix (Corning), and 50 U/mL Penicillin/Streptomycin."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "RNA was extracted using RNeasy micro (Qiagen).",
+        "Library preparation was performed using an Illumina Stranded Total RNA Prep, Ligation with Ribo-Zero Plus kit (Cat# 20040525, Illumina) according to the manufacturer’s instructions. The constructed libraries were sequenced on an Illumina NextSeq 2000 with the paired-end mode."
+      ],
+      "description": [
+        "Library name: Sample 4"
+      ],
+      "data_processing": [
+        "Illumina RTA version 3.10.30 and  bcl2fastq version 2.20 were used for basecalling and fastq generation, respectively.",
+        "Adapter sequences and low-quality bases were trimmed from the raw reads by cutadapt v4.6. The trimmed reads were mapped to the human reference genome sequences (hg38) using STAR v2.7.11a with the GENCODE (release 32, GRCh38.p13) gtf file.",
+        "The uniquely and properly mapped reads were used for further analysis. Raw read counts were calculated using htseq-count v2.0.5 with the GENCODE gtf file. Gene expression levels were determined as transcripts per million (TPM).",
+        "Assembly: hg38",
+        "Supplementary files format and content: tab-delimited text files incude count values and TPM for each sample."
+      ],
+      "platform_id": [
+        "GPL30173"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46830557",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27688047"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8796381",
+      "title": [
+        "HFLF_BLM_CBP30_2"
+      ],
+      "geo_accession": [
+        "GSM8796381"
+      ],
+      "source_name_ch1": [
+        "HFLFs"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: HFLFs",
+        "cell type: Human fetal lung fibroblasts",
+        "treatment: BLM+CBP30"
+      ],
+      "treatment_protocol_ch1": [
+        "Alveolar organoids were treated with DMSO or BLM from Day11 to Day14, followed by the removal of BLM and a 3-day incubation with or without compounds."
+      ],
+      "growth_protocol_ch1": [
+        "Lung progenitor cells were derived from iPSCs and CPM+ lung progenitor cells were cocultured with HFLFs in organoids to promote induction of alveolar organoids. Then, SPC+ alveolar type 2 cells were isolated and passaged in alveolar organoids cocultured with HFLFs. The alveolar organoids were maintained in DCIK medium. DCIK medium: Ham's F12 (Fujifilm Wako, 087-08335) containing 50 nM dexamethasone, 100 μM 8-Br-cAMP, 100 μM 3-isobutyl-1-methylxanthine, 10 ng/mL KGF, 1% B-27 supplement, 0.25% BSA (Thermo Fisher Scientific, 15260-037), 15 mM HEPES (Thermo Fisher Scientific, 17557-94), 0.8 mM CaCl2, 0.1% ITS premix (Corning), and 50 U/mL Penicillin/Streptomycin."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "RNA was extracted using RNeasy micro (Qiagen).",
+        "Library preparation was performed using an Illumina Stranded Total RNA Prep, Ligation with Ribo-Zero Plus kit (Cat# 20040525, Illumina) according to the manufacturer’s instructions. The constructed libraries were sequenced on an Illumina NextSeq 2000 with the paired-end mode."
+      ],
+      "description": [
+        "Library name: Sample 5"
+      ],
+      "data_processing": [
+        "Illumina RTA version 3.10.30 and  bcl2fastq version 2.20 were used for basecalling and fastq generation, respectively.",
+        "Adapter sequences and low-quality bases were trimmed from the raw reads by cutadapt v4.6. The trimmed reads were mapped to the human reference genome sequences (hg38) using STAR v2.7.11a with the GENCODE (release 32, GRCh38.p13) gtf file.",
+        "The uniquely and properly mapped reads were used for further analysis. Raw read counts were calculated using htseq-count v2.0.5 with the GENCODE gtf file. Gene expression levels were determined as transcripts per million (TPM).",
+        "Assembly: hg38",
+        "Supplementary files format and content: tab-delimited text files incude count values and TPM for each sample."
+      ],
+      "platform_id": [
+        "GPL30173"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46830556",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27688048"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8796382",
+      "title": [
+        "HFLF_BLM_CBP30_3"
+      ],
+      "geo_accession": [
+        "GSM8796382"
+      ],
+      "source_name_ch1": [
+        "HFLFs"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: HFLFs",
+        "cell type: Human fetal lung fibroblasts",
+        "treatment: BLM+CBP30"
+      ],
+      "treatment_protocol_ch1": [
+        "Alveolar organoids were treated with DMSO or BLM from Day11 to Day14, followed by the removal of BLM and a 3-day incubation with or without compounds."
+      ],
+      "growth_protocol_ch1": [
+        "Lung progenitor cells were derived from iPSCs and CPM+ lung progenitor cells were cocultured with HFLFs in organoids to promote induction of alveolar organoids. Then, SPC+ alveolar type 2 cells were isolated and passaged in alveolar organoids cocultured with HFLFs. The alveolar organoids were maintained in DCIK medium. DCIK medium: Ham's F12 (Fujifilm Wako, 087-08335) containing 50 nM dexamethasone, 100 μM 8-Br-cAMP, 100 μM 3-isobutyl-1-methylxanthine, 10 ng/mL KGF, 1% B-27 supplement, 0.25% BSA (Thermo Fisher Scientific, 15260-037), 15 mM HEPES (Thermo Fisher Scientific, 17557-94), 0.8 mM CaCl2, 0.1% ITS premix (Corning), and 50 U/mL Penicillin/Streptomycin."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "RNA was extracted using RNeasy micro (Qiagen).",
+        "Library preparation was performed using an Illumina Stranded Total RNA Prep, Ligation with Ribo-Zero Plus kit (Cat# 20040525, Illumina) according to the manufacturer’s instructions. The constructed libraries were sequenced on an Illumina NextSeq 2000 with the paired-end mode."
+      ],
+      "description": [
+        "Library name: Sample 6"
+      ],
+      "data_processing": [
+        "Illumina RTA version 3.10.30 and  bcl2fastq version 2.20 were used for basecalling and fastq generation, respectively.",
+        "Adapter sequences and low-quality bases were trimmed from the raw reads by cutadapt v4.6. The trimmed reads were mapped to the human reference genome sequences (hg38) using STAR v2.7.11a with the GENCODE (release 32, GRCh38.p13) gtf file.",
+        "The uniquely and properly mapped reads were used for further analysis. Raw read counts were calculated using htseq-count v2.0.5 with the GENCODE gtf file. Gene expression levels were determined as transcripts per million (TPM).",
+        "Assembly: hg38",
+        "Supplementary files format and content: tab-delimited text files incude count values and TPM for each sample."
+      ],
+      "platform_id": [
+        "GPL30173"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46830555",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27688049"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8796383",
+      "title": [
+        "HFLF_BLM_GNE781_1"
+      ],
+      "geo_accession": [
+        "GSM8796383"
+      ],
+      "source_name_ch1": [
+        "HFLFs"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: HFLFs",
+        "cell type: Human fetal lung fibroblasts",
+        "treatment: BLM+GNE781"
+      ],
+      "treatment_protocol_ch1": [
+        "Alveolar organoids were treated with DMSO or BLM from Day11 to Day14, followed by the removal of BLM and a 3-day incubation with or without compounds."
+      ],
+      "growth_protocol_ch1": [
+        "Lung progenitor cells were derived from iPSCs and CPM+ lung progenitor cells were cocultured with HFLFs in organoids to promote induction of alveolar organoids. Then, SPC+ alveolar type 2 cells were isolated and passaged in alveolar organoids cocultured with HFLFs. The alveolar organoids were maintained in DCIK medium. DCIK medium: Ham's F12 (Fujifilm Wako, 087-08335) containing 50 nM dexamethasone, 100 μM 8-Br-cAMP, 100 μM 3-isobutyl-1-methylxanthine, 10 ng/mL KGF, 1% B-27 supplement, 0.25% BSA (Thermo Fisher Scientific, 15260-037), 15 mM HEPES (Thermo Fisher Scientific, 17557-94), 0.8 mM CaCl2, 0.1% ITS premix (Corning), and 50 U/mL Penicillin/Streptomycin."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "RNA was extracted using RNeasy micro (Qiagen).",
+        "Library preparation was performed using an Illumina Stranded Total RNA Prep, Ligation with Ribo-Zero Plus kit (Cat# 20040525, Illumina) according to the manufacturer’s instructions. The constructed libraries were sequenced on an Illumina NextSeq 2000 with the paired-end mode."
+      ],
+      "description": [
+        "Library name: Sample 7"
+      ],
+      "data_processing": [
+        "Illumina RTA version 3.10.30 and  bcl2fastq version 2.20 were used for basecalling and fastq generation, respectively.",
+        "Adapter sequences and low-quality bases were trimmed from the raw reads by cutadapt v4.6. The trimmed reads were mapped to the human reference genome sequences (hg38) using STAR v2.7.11a with the GENCODE (release 32, GRCh38.p13) gtf file.",
+        "The uniquely and properly mapped reads were used for further analysis. Raw read counts were calculated using htseq-count v2.0.5 with the GENCODE gtf file. Gene expression levels were determined as transcripts per million (TPM).",
+        "Assembly: hg38",
+        "Supplementary files format and content: tab-delimited text files incude count values and TPM for each sample."
+      ],
+      "platform_id": [
+        "GPL30173"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46830554",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27688050"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8796384",
+      "title": [
+        "HFLF_BLM_GNE781_2"
+      ],
+      "geo_accession": [
+        "GSM8796384"
+      ],
+      "source_name_ch1": [
+        "HFLFs"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: HFLFs",
+        "cell type: Human fetal lung fibroblasts",
+        "treatment: BLM+GNE781"
+      ],
+      "treatment_protocol_ch1": [
+        "Alveolar organoids were treated with DMSO or BLM from Day11 to Day14, followed by the removal of BLM and a 3-day incubation with or without compounds."
+      ],
+      "growth_protocol_ch1": [
+        "Lung progenitor cells were derived from iPSCs and CPM+ lung progenitor cells were cocultured with HFLFs in organoids to promote induction of alveolar organoids. Then, SPC+ alveolar type 2 cells were isolated and passaged in alveolar organoids cocultured with HFLFs. The alveolar organoids were maintained in DCIK medium. DCIK medium: Ham's F12 (Fujifilm Wako, 087-08335) containing 50 nM dexamethasone, 100 μM 8-Br-cAMP, 100 μM 3-isobutyl-1-methylxanthine, 10 ng/mL KGF, 1% B-27 supplement, 0.25% BSA (Thermo Fisher Scientific, 15260-037), 15 mM HEPES (Thermo Fisher Scientific, 17557-94), 0.8 mM CaCl2, 0.1% ITS premix (Corning), and 50 U/mL Penicillin/Streptomycin."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "RNA was extracted using RNeasy micro (Qiagen).",
+        "Library preparation was performed using an Illumina Stranded Total RNA Prep, Ligation with Ribo-Zero Plus kit (Cat# 20040525, Illumina) according to the manufacturer’s instructions. The constructed libraries were sequenced on an Illumina NextSeq 2000 with the paired-end mode."
+      ],
+      "description": [
+        "Library name: Sample 8"
+      ],
+      "data_processing": [
+        "Illumina RTA version 3.10.30 and  bcl2fastq version 2.20 were used for basecalling and fastq generation, respectively.",
+        "Adapter sequences and low-quality bases were trimmed from the raw reads by cutadapt v4.6. The trimmed reads were mapped to the human reference genome sequences (hg38) using STAR v2.7.11a with the GENCODE (release 32, GRCh38.p13) gtf file.",
+        "The uniquely and properly mapped reads were used for further analysis. Raw read counts were calculated using htseq-count v2.0.5 with the GENCODE gtf file. Gene expression levels were determined as transcripts per million (TPM).",
+        "Assembly: hg38",
+        "Supplementary files format and content: tab-delimited text files incude count values and TPM for each sample."
+      ],
+      "platform_id": [
+        "GPL30173"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46830553",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27688051"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8796385",
+      "title": [
+        "HFLF_BLM_GNE781_3"
+      ],
+      "geo_accession": [
+        "GSM8796385"
+      ],
+      "source_name_ch1": [
+        "HFLFs"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: HFLFs",
+        "cell type: Human fetal lung fibroblasts",
+        "treatment: BLM+GNE781"
+      ],
+      "treatment_protocol_ch1": [
+        "Alveolar organoids were treated with DMSO or BLM from Day11 to Day14, followed by the removal of BLM and a 3-day incubation with or without compounds."
+      ],
+      "growth_protocol_ch1": [
+        "Lung progenitor cells were derived from iPSCs and CPM+ lung progenitor cells were cocultured with HFLFs in organoids to promote induction of alveolar organoids. Then, SPC+ alveolar type 2 cells were isolated and passaged in alveolar organoids cocultured with HFLFs. The alveolar organoids were maintained in DCIK medium. DCIK medium: Ham's F12 (Fujifilm Wako, 087-08335) containing 50 nM dexamethasone, 100 μM 8-Br-cAMP, 100 μM 3-isobutyl-1-methylxanthine, 10 ng/mL KGF, 1% B-27 supplement, 0.25% BSA (Thermo Fisher Scientific, 15260-037), 15 mM HEPES (Thermo Fisher Scientific, 17557-94), 0.8 mM CaCl2, 0.1% ITS premix (Corning), and 50 U/mL Penicillin/Streptomycin."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "RNA was extracted using RNeasy micro (Qiagen).",
+        "Library preparation was performed using an Illumina Stranded Total RNA Prep, Ligation with Ribo-Zero Plus kit (Cat# 20040525, Illumina) according to the manufacturer’s instructions. The constructed libraries were sequenced on an Illumina NextSeq 2000 with the paired-end mode."
+      ],
+      "description": [
+        "Library name: Sample 9"
+      ],
+      "data_processing": [
+        "Illumina RTA version 3.10.30 and  bcl2fastq version 2.20 were used for basecalling and fastq generation, respectively.",
+        "Adapter sequences and low-quality bases were trimmed from the raw reads by cutadapt v4.6. The trimmed reads were mapped to the human reference genome sequences (hg38) using STAR v2.7.11a with the GENCODE (release 32, GRCh38.p13) gtf file.",
+        "The uniquely and properly mapped reads were used for further analysis. Raw read counts were calculated using htseq-count v2.0.5 with the GENCODE gtf file. Gene expression levels were determined as transcripts per million (TPM).",
+        "Assembly: hg38",
+        "Supplementary files format and content: tab-delimited text files incude count values and TPM for each sample."
+      ],
+      "platform_id": [
+        "GPL30173"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46830552",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27688052"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

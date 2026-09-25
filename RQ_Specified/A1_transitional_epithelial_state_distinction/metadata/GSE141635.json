@@ -1,0 +1,1202 @@
+{
+  "accession": "GSE141635",
+  "retrieved_at_utc": "2026-09-25T00:58:26.315033+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE141635&targ=all&form=text&view=full",
+  "response_sha256": "de69d4c6c2a262b3f61d7d4e0082ba147c900fad686613025f4b76e5d70b8297",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Histone modifications in lung epithelial cells"
+    ],
+    "geo_accession": [
+      "GSE141635"
+    ],
+    "status": [
+      "Public on Jun 02 2020"
+    ],
+    "last_update_date": [
+      "Aug 07 2020"
+    ],
+    "pubmed_id": [
+      "32661339"
+    ],
+    "overall_design": [
+      "We performed Mint-ChIP (ChIP-seq for low cell number samples) using antibodies for H3K4me3, H3K27ac, H3K36me3, H3 and p53)"
+    ],
+    "type": [
+      "Genome binding/occupancy profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM4210296",
+      "GSM4210297",
+      "GSM4210298",
+      "GSM4210299",
+      "GSM4210300",
+      "GSM4210301",
+      "GSM4210302",
+      "GSM4210303",
+      "GSM4210304",
+      "GSM4210305",
+      "GSM4210306",
+      "GSM4210307",
+      "GSM4210308",
+      "GSM4210309",
+      "GSM4210310",
+      "GSM4210311",
+      "GSM4452306",
+      "GSM4452307",
+      "GSM4452682",
+      "GSM4452683"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141635/suppl/GSE141635_AEC2_Homeostasis_H3K27ac.bedgraph.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141635/suppl/GSE141635_AEC2_Homeostasis_H3K36me3.bedgraph.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141635/suppl/GSE141635_AEC2_Homeostasis_H3K4me3.bedgraph.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141635/suppl/GSE141635_AEC2_Homeostasis_H3K4me3_calledpeaks.bed.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141635/suppl/GSE141635_CTGFpos_Bleomycin_H3K27ac.bedgraph.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141635/suppl/GSE141635_CTGFpos_Bleomycin_H3K36me3.bedgraph.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141635/suppl/GSE141635_CTGFpos_Bleomycin_H3K4me3.bedgraph.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141635/suppl/GSE141635_CTGFpos_Bleomycin_H3K4me3_calledpeaks.bed.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141635/suppl/GSE141635_CTGFpos_tdTomatopos_Bleomycin_Input.bedgraph.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141635/suppl/GSE141635_CTGFpos_tdTomatopos_Bleomycin_p53.bedgraph.gz"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA594274",
+      "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRP235223"
+    ]
+  },
+  "sample_count": 20,
+  "samples": [
+    {
+      "accession": "GSM4210296",
+      "title": [
+        "H3K4me3 ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 1"
+      ],
+      "geo_accession": [
+        "GSM4210296"
+      ],
+      "source_name_ch1": [
+        "alveolar epithelial cells induced by Bleomycin treatment"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP-pos epithelial cells",
+        "group: Ctgf-GFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "CTGFpos_Bleomycin_H3K4me3.bedgraph",
+        "CTGFpos_Bleomycin_H3K4me3.calledpeaks.bed"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510306",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290387"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4210297",
+      "title": [
+        "H3K4me3 ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 2"
+      ],
+      "geo_accession": [
+        "GSM4210297"
+      ],
+      "source_name_ch1": [
+        "alveolar epithelial cells induced by Bleomycin treatment"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP-pos epithelial cells",
+        "group: Ctgf-GFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "CTGFpos_Bleomycin_H3K4me3.bedgraph",
+        "CTGFpos_Bleomycin_H3K4me3.calledpeaks.bed"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510305",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290388"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4210298",
+      "title": [
+        "H3K27ac ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 1"
+      ],
+      "geo_accession": [
+        "GSM4210298"
+      ],
+      "source_name_ch1": [
+        "alveolar epithelial cells induced by Bleomycin treatment"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP-pos epithelial cells",
+        "group: Ctgf-GFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "CTGFpos_Bleomycin_H3K27ac.bedgraph"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510304",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290389"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4210299",
+      "title": [
+        "H3K27ac ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 2"
+      ],
+      "geo_accession": [
+        "GSM4210299"
+      ],
+      "source_name_ch1": [
+        "alveolar epithelial cells induced by Bleomycin treatment"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP-pos epithelial cells",
+        "group: Ctgf-GFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "CTGFpos_Bleomycin_H3K27ac.bedgraph"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510303",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290390"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4210300",
+      "title": [
+        "H3K36me3 ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 1"
+      ],
+      "geo_accession": [
+        "GSM4210300"
+      ],
+      "source_name_ch1": [
+        "alveolar epithelial cells induced by Bleomycin treatment"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP-pos epithelial cells",
+        "group: Ctgf-GFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "CTGFpos_Bleomycin_H3K36me3.bedgraph"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510302",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290391"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4210301",
+      "title": [
+        "H3K36me3 ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 2"
+      ],
+      "geo_accession": [
+        "GSM4210301"
+      ],
+      "source_name_ch1": [
+        "alveolar epithelial cells induced by Bleomycin treatment"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP-pos epithelial cells",
+        "group: Ctgf-GFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "CTGFpos_Bleomycin_H3K36me3.bedgraph"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510301",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290392"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4210302",
+      "title": [
+        "H3 ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 1"
+      ],
+      "geo_accession": [
+        "GSM4210302"
+      ],
+      "source_name_ch1": [
+        "alveolar epithelial cells induced by Bleomycin treatment"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP-pos epithelial cells",
+        "group: Ctgf-GFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510300",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290393"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4210303",
+      "title": [
+        "H3 ChIP-seq CTGF-pos epithelial cells after Bleomycin treatment Replication 2"
+      ],
+      "geo_accession": [
+        "GSM4210303"
+      ],
+      "source_name_ch1": [
+        "alveolar epithelial cells induced by Bleomycin treatment"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: GFP-pos epithelial cells",
+        "group: Ctgf-GFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510299",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290394"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4210304",
+      "title": [
+        "H3K4me3 RFP-neg AEC2s in homeostasis Replication 1"
+      ],
+      "geo_accession": [
+        "GSM4210304"
+      ],
+      "source_name_ch1": [
+        "Alveolar epithelial type 2 cells in homeostasis"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: RFP-neg alveolar epithelial type 2 cells",
+        "group: Mki67-tagRFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "AEC2_Homeostasis_H3K4me3.bedgraph",
+        "AEC2_Homeostasis_H3K4me3.calledpeaks.bed"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510298",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290395"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4210305",
+      "title": [
+        "H3K4me3 RFP-neg AEC2s in homeostasis Replication 2"
+      ],
+      "geo_accession": [
+        "GSM4210305"
+      ],
+      "source_name_ch1": [
+        "Alveolar epithelial type 2 cells in homeostasis"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: RFP-neg alveolar epithelial type 2 cells",
+        "group: Mki67-tagRFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "AEC2_Homeostasis_H3K4me3.bedgraph",
+        "AEC2_Homeostasis_H3K4me3.calledpeaks.bed"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510297",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290396"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4210306",
+      "title": [
+        "H3K27ac RFP-neg AEC2s in homeostasis Replication 1"
+      ],
+      "geo_accession": [
+        "GSM4210306"
+      ],
+      "source_name_ch1": [
+        "Alveolar epithelial type 2 cells in homeostasis"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: RFP-neg alveolar epithelial type 2 cells",
+        "group: Mki67-tagRFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "AEC2_Homeostasis_H3K27ac.bedgraph"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510296",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290397"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4210307",
+      "title": [
+        "H3K27ac RFP-neg AEC2s in homeostasis Replication 2"
+      ],
+      "geo_accession": [
+        "GSM4210307"
+      ],
+      "source_name_ch1": [
+        "Alveolar epithelial type 2 cells in homeostasis"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: RFP-neg alveolar epithelial type 2 cells",
+        "group: Mki67-tagRFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "AEC2_Homeostasis_H3K27ac.bedgraph"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510295",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290398"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4210308",
+      "title": [
+        "H3K36me3 RFP-neg AEC2s in homeostasis Replication 1"
+      ],
+      "geo_accession": [
+        "GSM4210308"
+      ],
+      "source_name_ch1": [
+        "Alveolar epithelial type 2 cells in homeostasis"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: RFP-neg alveolar epithelial type 2 cells",
+        "group: Mki67-tagRFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "AEC2_Homeostasis_H3K36me3.bedgraph"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510294",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290399"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4210309",
+      "title": [
+        "H3K36me3 RFP-neg AEC2s in homeostasis Replication 2"
+      ],
+      "geo_accession": [
+        "GSM4210309"
+      ],
+      "source_name_ch1": [
+        "Alveolar epithelial type 2 cells in homeostasis"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: RFP-neg alveolar epithelial type 2 cells",
+        "group: Mki67-tagRFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "AEC2_Homeostasis_H3K36me3.bedgraph"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510309",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290400"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4210310",
+      "title": [
+        "H3 RFP-neg AEC2s in homeostasis Replication 1"
+      ],
+      "geo_accession": [
+        "GSM4210310"
+      ],
+      "source_name_ch1": [
+        "Alveolar epithelial type 2 cells in homeostasis"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: RFP-neg alveolar epithelial type 2 cells",
+        "group: Mki67-tagRFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510308",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290401"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4210311",
+      "title": [
+        "H3 RFP-neg AEC2s in homeostasis Replication 2"
+      ],
+      "geo_accession": [
+        "GSM4210311"
+      ],
+      "source_name_ch1": [
+        "Alveolar epithelial type 2 cells in homeostasis"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: RFP-neg alveolar epithelial type 2 cells",
+        "group: Mki67-tagRFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph, bed"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13510307",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7290402"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4452306",
+      "title": [
+        "p53 ChIP-seq CTGF-pos tdTomato-pos cells after Bleomycin treatment Replication 1"
+      ],
+      "geo_accession": [
+        "GSM4452306"
+      ],
+      "source_name_ch1": [
+        "alveolar epithelial cells induced by Bleomycin treatment"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: CTGF-pos tdTomato+ cells",
+        "group: Sftpc-CreER;R26R-tdTomato;Ctgf-GFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "CTGFpos_tdTomatopos_Bleomycin_p53.bedgraph"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN14529300",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8048639"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4452307",
+      "title": [
+        "p53 ChIP-seq CTGF-pos tdTomato-pos cells after Bleomycin treatment Replication 2"
+      ],
+      "geo_accession": [
+        "GSM4452307"
+      ],
+      "source_name_ch1": [
+        "alveolar epithelial cells induced by Bleomycin treatment"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: CTGF-pos tdTomato+ cells",
+        "group: Sftpc-CreER;R26R-tdTomato;Ctgf-GFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "CTGFpos_tdTomatopos_Bleomycin_p53.bedgraph"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN14529299",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8048640"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4452682",
+      "title": [
+        "Input CTGF-pos tdTomato-pos cells after Bleomycin treatment Replication 1"
+      ],
+      "geo_accession": [
+        "GSM4452682"
+      ],
+      "source_name_ch1": [
+        "alveolar epithelial cells induced by Bleomycin treatment"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: CTGF-pos tdTomato+ cells",
+        "strain: Sftpc-CreER;R26R-tdTomato;Ctgf-GFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "CTGFpos_tdTomatopos_Bleomycin_Input.bedgraph"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN14532789",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8051539"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4452683",
+      "title": [
+        "Input CTGF-pos tdTomato-pos cells after Bleomycin treatment Replication 2"
+      ],
+      "geo_accession": [
+        "GSM4452683"
+      ],
+      "source_name_ch1": [
+        "alveolar epithelial cells induced by Bleomycin treatment"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "cell type: CTGF-pos tdTomato+ cells",
+        "strain: Sftpc-CreER;R26R-tdTomato;Ctgf-GFP",
+        "age: 3 months"
+      ],
+      "treatment_protocol_ch1": [
+        "2.5 U/Kg bleomycin was administered intranasally and mice were monitored daily. Mice were sacrificed at day 12 after bleomycin injury."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "For sorting AEC2 cells from Mki67-tagRFP mice, cells were stained with CD31, CD45, CD326 and lysotracker then CD31-neg/CD45-neg/CD326-pos/Lysotracker-pos/tagRFP-neg cells were sorted. For sorting CTGFpos cells from CTGF-GFP mice, cells were stained with CD31, CD45, Lgals3, CD326 then CD31-neg/CD45-neg/Lgals3-neg/CD326-pos/GFP-pos cells were sorted.",
+        "Extraction of DNA, ChIP reactions and library constractions were performed uisng Mint-ChIP3 protocol (https://www.protocols.io/view/mint-chip3-a-low-input-chip-seq-protocol-using-mul-wbefaje)"
+      ],
+      "description": [
+        "CTGFpos_tdTomatopos_Bleomycin_Input.bedgraph"
+      ],
+      "data_processing": [
+        "A pipeline called MintChIP was used (https://github.com/jianhong/MintChIP)",
+        "Genome_build: mm10",
+        "Supplementary_files_format_and_content: Bedgraph"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "ChIP"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ChIP-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN14532791",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX8051540"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

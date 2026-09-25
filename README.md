@@ -73,6 +73,7 @@ override the claim register.
 | Branch | Figures and evidence |
 |---|---|
 | [Repository-wide questions A1–A14](RESEARCH_QUESTIONS.md) | Shared question figures, including IL-1 recipient context, source UMAP, patient PCA and a proposed withdrawal design |
+| [A1: lineage and functional state distinction](RQ_Specified/A1_transitional_epithelial_state_distinction/figures/README.md) | First measured-lineage reconstruction, IRE1α RNA response and descriptive source PCAs; direct epigenetic distinctions remain unresolved |
 | [Niethamer: viral injury and repair](Research%20Article/gate1_01_niethamer_2025/README.md#figure-gallery) | Animal-level tracing/cycling, myeloid composition and programme-inference sensitivity; links to phase, lineage and batch galleries |
 | [Choi: epithelial states](Research%20Article/gate1_02_choi_2020/README.md#figure-gallery) | Deposited in vivo and organoid state maps, with links to specificity and chromatin analyses |
 | [Choi: chromatin and transitional states](Research%20Article/gate1_02_choi_2020/datp_epigenetics/README.md#figure-gallery) | RNA/promoter displays and developmental specificity |

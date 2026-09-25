@@ -1,0 +1,2158 @@
+{
+  "accession": "GSE277777",
+  "retrieved_at_utc": "2026-09-25T01:08:47.838445+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277777&targ=all&form=text&view=full",
+  "response_sha256": "258cb68067b7c967cedf8590fe87077424897cc006c207b569aa6a16b3eca344",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Critical role for a high-plasticity cell state in lung cancer"
+    ],
+    "geo_accession": [
+      "GSE277777"
+    ],
+    "status": [
+      "Public on Nov 25 2025"
+    ],
+    "last_update_date": [
+      "Feb 24 2026"
+    ],
+    "pubmed_id": [
+      "41565826"
+    ],
+    "overall_design": [
+      "KP mice with either Slc4a11-FSF-MCD/+ with either Hipp11-FSF-GGCB/+ or Rosa26-FSFmTmG/+ reporter alleles or Hopx-FSF-MACD/+ mouse model with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice with tumors were treated as indicated and tumor cells were hashed with TotalSeq B and then isolated for single-cell mRNA sequencing after FACS purification. One dataset is KP Rosa26-tdTomato/+ with tumors harvested 14 weeks post tumor initiation. One dataset is a KP Slc4a11-MCD/+ iRFP670-GLuc cell line transplant.",
+      "Please note that GSM9193561/GSM9193562 are biological replicate of GSM8529536/GSM8529537, sequenced on separate lanes and have different featureref.csv files."
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM8529524",
+      "GSM8529525",
+      "GSM8529526",
+      "GSM8529527",
+      "GSM8529528",
+      "GSM8529529",
+      "GSM8529530",
+      "GSM8529531",
+      "GSM8529532",
+      "GSM8529533",
+      "GSM8529534",
+      "GSM8529535",
+      "GSM8529536",
+      "GSM8529537",
+      "GSM8529538",
+      "GSM8529539",
+      "GSM8529540",
+      "GSM8529541",
+      "GSM8529542",
+      "GSM8529543",
+      "GSM9193561",
+      "GSM9193562",
+      "GSM9193563",
+      "GSM9193564",
+      "GSM9193565",
+      "GSM9193566",
+      "GSM9193567",
+      "GSM9193568",
+      "GSM9193569",
+      "GSM9193570",
+      "GSM9315338",
+      "GSM9315339"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_RAW.tar",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO15123.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO15342.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO15600.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO15601.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO15771.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO16235.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO16562.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO16686-nointrons.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO17402.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO17483-DT.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO17483-Vehicle.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO17543.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO17721-DT.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-IGO17721-Vehicle.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-KPT1.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_allmice-tumor-KPT2.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_combined_data.h5ad",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE277nnn/GSE277777/suppl/GSE277777_luadAdata.h5ad"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1164164"
+    ]
+  },
+  "sample_count": 32,
+  "samples": [
+    {
+      "accession": "GSM8529524",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 2 weeks of tracing, GEX"
+      ],
+      "geo_accession": [
+        "GSM8529524"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Hipp11-GGCB/+",
+        "treatment: Tamoxifen"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "AdCMV-FlpO induced tumors",
+        "IGO14143.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886930",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171521"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529524/suppl/GSM8529524_IGO14143-filtered_feature_bc_matrix_10k.h5"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529524/suppl/GSM8529524_IGO14143-slc4a11-traced.h5ad"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529524/suppl/GSM8529524_IGO14143.featureref.csv.gz"
+      ]
+    },
+    {
+      "accession": "GSM8529525",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 2 weeks of tracing, HTO"
+      ],
+      "geo_accession": [
+        "GSM8529525"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Hipp11-GGCB/+",
+        "treatment: Tamoxifen"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "protein"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "AdCMV-FlpO induced tumors",
+        "IGO14143.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad",
+        "Library strategy: HTO"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886929",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171522"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8529526",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+  tumor cells harvested 14 weeks PTI after 2 weeks of tracing, GEX"
+      ],
+      "geo_accession": [
+        "GSM8529526"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "PGK-FlpO induced tumors",
+        "IGO15600.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886928",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171523"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529526/suppl/GSM8529526_IGO15600-filtered_feature_bc_matrix.h5"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529526/suppl/GSM8529526_IGO15600.featureref.csv.gz"
+      ]
+    },
+    {
+      "accession": "GSM8529527",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+  tumor cells harvested 14 weeks PTI after 2 weeks of tracing, HTO"
+      ],
+      "geo_accession": [
+        "GSM8529527"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "protein"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "PGK-FlpO induced tumors",
+        "IGO15600.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad",
+        "Library strategy: HTO"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886927",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171524"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8529528",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+  tumor cells harvested 8 weeks PTI after 2 weeks of tracing, GEX"
+      ],
+      "geo_accession": [
+        "GSM8529528"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "PGK-FlpO induced tumors",
+        "IGO15601.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886926",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171525"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529528/suppl/GSM8529528_IGO15601.featureref.csv.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529528/suppl/GSM8529528_IGO15601_-_filtered_feature_bc_matrix.h5"
+      ]
+    },
+    {
+      "accession": "GSM8529529",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+  tumor cells harvested 8 weeks PTI after 2 weeks of tracing, HTO"
+      ],
+      "geo_accession": [
+        "GSM8529529"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "protein"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "PGK-FlpO induced tumors",
+        "IGO15601.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad",
+        "Library strategy: HTO"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886925",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171526"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8529530",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+  tumor cells harvested 14 weeks PTI after 2 weeks of tracing, replicates, GEX"
+      ],
+      "geo_accession": [
+        "GSM8529530"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "PGK-FlpO induced tumors",
+        "IGO15771.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886924",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171527"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529530/suppl/GSM8529530_IGO15771-filtered_feature_bc_matrix.h5"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529530/suppl/GSM8529530_IGO15771.featureref.csv.gz"
+      ]
+    },
+    {
+      "accession": "GSM8529531",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+  tumor cells harvested 14 weeks PTI after 2 weeks of tracing, replicates, HTO"
+      ],
+      "geo_accession": [
+        "GSM8529531"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "protein"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "PGK-FlpO induced tumors",
+        "IGO15771.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad",
+        "Library strategy: HTO"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886923",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171529"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8529532",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 1 week of ablation, GEX"
+      ],
+      "geo_accession": [
+        "GSM8529532"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Hipp11-GGCB/+",
+        "treatment: DT"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "PGK-FlpO induced tumors",
+        "IGO15123.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886922",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171528"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529532/suppl/GSM8529532_IGO15123-filtered_feature_bc_matrix.h5"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529532/suppl/GSM8529532_IGO15123.featureref.csv.gz"
+      ]
+    },
+    {
+      "accession": "GSM8529533",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 1 week of ablation, HTO"
+      ],
+      "geo_accession": [
+        "GSM8529533"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Hipp11-GGCB/+",
+        "treatment: DT"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "protein"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "PGK-FlpO induced tumors",
+        "IGO15123.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad",
+        "Library strategy: HTO"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886921",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171530"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8529534",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 1 week of ablation, replicate, GEX"
+      ],
+      "geo_accession": [
+        "GSM8529534"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Hipp11-GGCB/+",
+        "treatment: DT"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "PGK-FlpO induced tumors",
+        "IGO15342.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886920",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171539"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529534/suppl/GSM8529534_IGO15342-filtered_feature_bc_matrix.h5"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529534/suppl/GSM8529534_IGO15342.featureref.csv.gz"
+      ]
+    },
+    {
+      "accession": "GSM8529535",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI after 1 week of ablation, replicate, HTO"
+      ],
+      "geo_accession": [
+        "GSM8529535"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Hipp11-GGCB/+",
+        "treatment: DT"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "protein"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "PGK-FlpO induced tumors",
+        "IGO15342.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad",
+        "Library strategy: HTO"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886919",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171531"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8529536",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+ tumors treated and harvested at 17 weeks PTI after 3 weeks of tracing, GEX, rep1"
+      ],
+      "geo_accession": [
+        "GSM8529536"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen, cisplatin, MRTX1133"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "PGK-FlpO induced tumors",
+        "IGO16235.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886918",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171536"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529536/suppl/GSM8529536_IGO16235-filtered_feature_bc_matrix_wintron.h5"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529536/suppl/GSM8529536_IGO16235.featureref.csv.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529536/suppl/GSM8529536_IGO16235_16562.h5ad"
+      ]
+    },
+    {
+      "accession": "GSM8529537",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+ tumors treated and harvested at 17 weeks PTI after 3 weeks of tracing, HTO, rep1"
+      ],
+      "geo_accession": [
+        "GSM8529537"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen, cisplatin, MRTX1133"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "protein"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "PGK-FlpO induced tumors",
+        "IGO16235.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad",
+        "Library strategy: HTO"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886917",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171537"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8529538",
+      "title": [
+        "KPfrt Hopx-MACD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI, GEX"
+      ],
+      "geo_accession": [
+        "GSM8529538"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Hopx-MACD/+ Hipp11-GGCB/+"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "PGK-FlpO induced tumors",
+        "IGO16318.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886916",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171538"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529538/suppl/GSM8529538_IGO16318-filtered_feature_bc_matrix.h5"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529538/suppl/GSM8529538_IGO16318.featureref.csv.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529538/suppl/GSM8529538_allmice-tumor-IGO16318.h5ad"
+      ]
+    },
+    {
+      "accession": "GSM8529539",
+      "title": [
+        "KPfrt Hopx-MACD/+ Hipp11-GGCB/+ tumor cells harvested 16 weeks PTI, HTO"
+      ],
+      "geo_accession": [
+        "GSM8529539"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Hopx-MACD/+ Hipp11-GGCB/+"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "protein"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "PGK-FlpO induced tumors",
+        "IGO16318.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad",
+        "Library strategy: HTO"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886915",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171540"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8529540",
+      "title": [
+        "KP Rosa26-tdTomato/+ tumors harvested at 14 weeks post tumor initiation, GEX"
+      ],
+      "geo_accession": [
+        "GSM8529540"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Rosa26-tdTomato/+"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "AdSPC-Cre",
+        "IGO15488_1.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886914",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171532"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529540/suppl/GSM8529540_KPT1-filtered_feature_bc_matrix.h5"
+      ]
+    },
+    {
+      "accession": "GSM8529541",
+      "title": [
+        "KP Rosa26-tdTomato/+ tumors harvested at 14 weeks post tumor initiation, HTO"
+      ],
+      "geo_accession": [
+        "GSM8529541"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Rosa26-tdTomato/+"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "protein"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "AdSPC-Cre",
+        "IGO15488_1.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad",
+        "Library strategy: HTO"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886913",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171533"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529541/suppl/GSM8529541_IGO15488_1.featureref.csv.gz"
+      ]
+    },
+    {
+      "accession": "GSM8529542",
+      "title": [
+        "KP Rosa26-tdTomato/+ tumors harvested at 14 weeks post tumor initiation, replicate, GEX"
+      ],
+      "geo_accession": [
+        "GSM8529542"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Rosa26-tdTomato/+"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "AdSPC-Cre",
+        "IGO15488_2.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886912",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171534"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529542/suppl/GSM8529542_KPT2-filtered_feature_bc_matrix.h5"
+      ]
+    },
+    {
+      "accession": "GSM8529543",
+      "title": [
+        "KP Rosa26-tdTomato/+ tumors harvested at 14 weeks post tumor initiation, repilcate, HTO"
+      ],
+      "geo_accession": [
+        "GSM8529543"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Rosa26-tdTomato/+"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "protein"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina)."
+      ],
+      "description": [
+        "AdSPC-Cre",
+        "IGO15488_2.featureref.csv"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad",
+        "Library strategy: HTO"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN43886911",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX26171535"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8529nnn/GSM8529543/suppl/GSM8529543_IGO15488_2.featureref.csv.gz"
+      ]
+    },
+    {
+      "accession": "GSM9193561",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+ tumors treated and harvested at 17 weeks PTI after 3 weeks of tracing, GEX rep2"
+      ],
+      "geo_accession": [
+        "GSM9193561"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: treatment: Tamoxifen, cisplatin, MRTX1133",
+        "treatment: Tamoxifen, cisplatin, MRTX1133, Diphtheria toxin"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina).",
+        "Single cell suspensions were stained with Trypan blue and Countess II Automated Cell Counter (ThermoFisher) was used to assess both cell number and viability. Following QC, the samples were loaded onto Next GEM Chip G (14143, 15123, 15342, 15488, 15600, 15601, 15771) or GEM-X Single Cell Chip (16235, 16318, 16562, 16686, 17402, 17483, 17543) (10X Genomics PN 1000690 & 2000060) and GEM generation, cDNA synthesis, cDNA amplification, and library preparation of ~4-50,000 cells proceeded using the Chromium Next GEM Single Cell 3’ Kit v3.1 or GEM-X Single Cell 3’ Kit v4 (10X Genomics PN 1000268 & 1000691) according to the manufacturer’s protocol. cDNA amplification included 11-12 cycles and 78-863 ng of the material was used to prepare sequencing libraries with 8-14 cycles of PCR. Indexed libraries were pooled and sequenced on a NovaSeq 6000 (14143, 16235, 16562) or X (15123, 15342, 15488, 15600, 15601, 15771, 16235, 16318, 16562, 16686, 17402, 17483, 17543) in a PE28/88 run using the NovaSeq 6000 S4 (200 Cycles) or X 10B (100 Cycles) or 25B (300 cycles) Reagent Kit (Illumina).  An average of 38 thousand paired reads was generated per cell."
+      ],
+      "description": [
+        "Library name: IGO16562_GEX",
+        "10x genomics"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5: raw counts",
+        "Supplementary files format and content: h5ad: processed file",
+        "Supplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749627",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202100"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193561/suppl/GSM9193561_IGO16562-filtered_feature_bc_matrix_wintron.h5"
+      ]
+    },
+    {
+      "accession": "GSM9193562",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+ tumors treated and harvested at 17 weeks PTI after 3 weeks of tracing, HTO, rep2"
+      ],
+      "geo_accession": [
+        "GSM9193562"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen, cisplatin, MRTX1133, Diptheria toxin"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina).",
+        "Single cell suspensions were stained with Trypan blue and Countess II Automated Cell Counter (ThermoFisher) was used to assess both cell number and viability. Following QC, the samples were loaded onto Next GEM Chip G (14143, 15123, 15342, 15488, 15600, 15601, 15771) or GEM-X Single Cell Chip (16235, 16318, 16562, 16686, 17402, 17483, 17543) (10X Genomics PN 1000690 & 2000060) and GEM generation, cDNA synthesis, cDNA amplification, and library preparation of ~4-50,000 cells proceeded using the Chromium Next GEM Single Cell 3’ Kit v3.1 or GEM-X Single Cell 3’ Kit v4 (10X Genomics PN 1000268 & 1000691) according to the manufacturer’s protocol. cDNA amplification included 11-12 cycles and 78-863 ng of the material was used to prepare sequencing libraries with 8-14 cycles of PCR. Indexed libraries were pooled and sequenced on a NovaSeq 6000 (14143, 16235, 16562) or X (15123, 15342, 15488, 15600, 15601, 15771, 16235, 16318, 16562, 16686, 17402, 17483, 17543) in a PE28/88 run using the NovaSeq 6000 S4 (200 Cycles) or X 10B (100 Cycles) or 25B (300 cycles) Reagent Kit (Illumina).  An average of 38 thousand paired reads was generated per cell."
+      ],
+      "description": [
+        "Library name: IGO16562_HTO",
+        "10x genomics"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5: raw counts",
+        "Supplementary files format and content: h5ad: processed file",
+        "Supplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749626",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202099"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193562/suppl/GSM9193562_IGO16562-feature_reference.csv.gz"
+      ]
+    },
+    {
+      "accession": "GSM9193563",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+ tumors treated with Tamoxifen and harvested at 12 weeks PTI after 3d tracing, GEX"
+      ],
+      "geo_accession": [
+        "GSM9193563"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina).",
+        "Single cell suspensions were stained with Trypan blue and Countess II Automated Cell Counter (ThermoFisher) was used to assess both cell number and viability. Following QC, the samples were loaded onto Next GEM Chip G (14143, 15123, 15342, 15488, 15600, 15601, 15771) or GEM-X Single Cell Chip (16235, 16318, 16562, 16686, 17402, 17483, 17543) (10X Genomics PN 1000690 & 2000060) and GEM generation, cDNA synthesis, cDNA amplification, and library preparation of ~4-50,000 cells proceeded using the Chromium Next GEM Single Cell 3’ Kit v3.1 or GEM-X Single Cell 3’ Kit v4 (10X Genomics PN 1000268 & 1000691) according to the manufacturer’s protocol. cDNA amplification included 11-12 cycles and 78-863 ng of the material was used to prepare sequencing libraries with 8-14 cycles of PCR. Indexed libraries were pooled and sequenced on a NovaSeq 6000 (14143, 16235, 16562) or X (15123, 15342, 15488, 15600, 15601, 15771, 16235, 16318, 16562, 16686, 17402, 17483, 17543) in a PE28/88 run using the NovaSeq 6000 S4 (200 Cycles) or X 10B (100 Cycles) or 25B (300 cycles) Reagent Kit (Illumina).  An average of 38 thousand paired reads was generated per cell."
+      ],
+      "description": [
+        "Library name: IGO16686_GEX",
+        "10x genomics"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5: raw counts",
+        "Supplementary files format and content: h5ad: processed file",
+        "Supplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749625",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202101"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193563/suppl/GSM9193563_IGO16686-filtered_feature_bc_matrix-nointrons.h5"
+      ]
+    },
+    {
+      "accession": "GSM9193564",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ Rosa26-mTmG/+ tumors treated with Tamoxifen and harvested at 12 weeks PTI after 3d tracing, HTO"
+      ],
+      "geo_accession": [
+        "GSM9193564"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina).",
+        "Single cell suspensions were stained with Trypan blue and Countess II Automated Cell Counter (ThermoFisher) was used to assess both cell number and viability. Following QC, the samples were loaded onto Next GEM Chip G (14143, 15123, 15342, 15488, 15600, 15601, 15771) or GEM-X Single Cell Chip (16235, 16318, 16562, 16686, 17402, 17483, 17543) (10X Genomics PN 1000690 & 2000060) and GEM generation, cDNA synthesis, cDNA amplification, and library preparation of ~4-50,000 cells proceeded using the Chromium Next GEM Single Cell 3’ Kit v3.1 or GEM-X Single Cell 3’ Kit v4 (10X Genomics PN 1000268 & 1000691) according to the manufacturer’s protocol. cDNA amplification included 11-12 cycles and 78-863 ng of the material was used to prepare sequencing libraries with 8-14 cycles of PCR. Indexed libraries were pooled and sequenced on a NovaSeq 6000 (14143, 16235, 16562) or X (15123, 15342, 15488, 15600, 15601, 15771, 16235, 16318, 16562, 16686, 17402, 17483, 17543) in a PE28/88 run using the NovaSeq 6000 S4 (200 Cycles) or X 10B (100 Cycles) or 25B (300 cycles) Reagent Kit (Illumina).  An average of 38 thousand paired reads was generated per cell."
+      ],
+      "description": [
+        "Library name: IGO16686_HTO",
+        "10x genomics"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5: raw counts",
+        "Supplementary files format and content: h5ad: processed file",
+        "Supplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749624",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202102"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193564/suppl/GSM9193564_IGO16686-feature_reference.csv.gz"
+      ]
+    },
+    {
+      "accession": "GSM9193565",
+      "title": [
+        "KPfrt (Slc4a11-MCD/+ or Hopx-MACD/+) Rosa26-mTmG/+ tumors harvested at (6 or 12) weeks PTI, 3d tracing, GEX"
+      ],
+      "geo_accession": [
+        "GSM9193565"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+ and Kras-G12D/+ Trp53-delta/delta Hopx-MACD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina).",
+        "Single cell suspensions were stained with Trypan blue and Countess II Automated Cell Counter (ThermoFisher) was used to assess both cell number and viability. Following QC, the samples were loaded onto Next GEM Chip G (14143, 15123, 15342, 15488, 15600, 15601, 15771) or GEM-X Single Cell Chip (16235, 16318, 16562, 16686, 17402, 17483, 17543) (10X Genomics PN 1000690 & 2000060) and GEM generation, cDNA synthesis, cDNA amplification, and library preparation of ~4-50,000 cells proceeded using the Chromium Next GEM Single Cell 3’ Kit v3.1 or GEM-X Single Cell 3’ Kit v4 (10X Genomics PN 1000268 & 1000691) according to the manufacturer’s protocol. cDNA amplification included 11-12 cycles and 78-863 ng of the material was used to prepare sequencing libraries with 8-14 cycles of PCR. Indexed libraries were pooled and sequenced on a NovaSeq 6000 (14143, 16235, 16562) or X (15123, 15342, 15488, 15600, 15601, 15771, 16235, 16318, 16562, 16686, 17402, 17483, 17543) in a PE28/88 run using the NovaSeq 6000 S4 (200 Cycles) or X 10B (100 Cycles) or 25B (300 cycles) Reagent Kit (Illumina).  An average of 38 thousand paired reads was generated per cell."
+      ],
+      "description": [
+        "Library name: IGO17402_GEX",
+        "10x genomics"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5: raw counts",
+        "Supplementary files format and content: h5ad: processed file",
+        "Supplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749623",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202103"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193565/suppl/GSM9193565_IGO17402-filtered_feature_bc_matrix.h5"
+      ]
+    },
+    {
+      "accession": "GSM9193566",
+      "title": [
+        "KPfrt (Slc4a11-MCD/+ or Hopx-MACD/+) Rosa26-mTmG/+ tumors harvested at (6 or 12) weeks PTI, 3d tracing, HTO"
+      ],
+      "geo_accession": [
+        "GSM9193566"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MCD/+ Rosa26-mTmG/+ and Kras-G12D/+ Trp53-delta/delta Hopx-MACD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina).",
+        "Single cell suspensions were stained with Trypan blue and Countess II Automated Cell Counter (ThermoFisher) was used to assess both cell number and viability. Following QC, the samples were loaded onto Next GEM Chip G (14143, 15123, 15342, 15488, 15600, 15601, 15771) or GEM-X Single Cell Chip (16235, 16318, 16562, 16686, 17402, 17483, 17543) (10X Genomics PN 1000690 & 2000060) and GEM generation, cDNA synthesis, cDNA amplification, and library preparation of ~4-50,000 cells proceeded using the Chromium Next GEM Single Cell 3’ Kit v3.1 or GEM-X Single Cell 3’ Kit v4 (10X Genomics PN 1000268 & 1000691) according to the manufacturer’s protocol. cDNA amplification included 11-12 cycles and 78-863 ng of the material was used to prepare sequencing libraries with 8-14 cycles of PCR. Indexed libraries were pooled and sequenced on a NovaSeq 6000 (14143, 16235, 16562) or X (15123, 15342, 15488, 15600, 15601, 15771, 16235, 16318, 16562, 16686, 17402, 17483, 17543) in a PE28/88 run using the NovaSeq 6000 S4 (200 Cycles) or X 10B (100 Cycles) or 25B (300 cycles) Reagent Kit (Illumina).  An average of 38 thousand paired reads was generated per cell."
+      ],
+      "description": [
+        "Library name: IGO17402_HTO",
+        "10x genomics"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5: raw counts",
+        "Supplementary files format and content: h5ad: processed file",
+        "Supplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749622",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202104"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193566/suppl/GSM9193566_IGO17402-feature_reference.csv.gz"
+      ]
+    },
+    {
+      "accession": "GSM9193567",
+      "title": [
+        "KPfrt Hopx-MACD/+ Rosa26-mTmG/+ tumors; harvested at 14 weeks PTI after 14 days of tracing, GEX"
+      ],
+      "geo_accession": [
+        "GSM9193567"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Hopx-MACD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina).",
+        "Single cell suspensions were stained with Trypan blue and Countess II Automated Cell Counter (ThermoFisher) was used to assess both cell number and viability. Following QC, the samples were loaded onto Next GEM Chip G (14143, 15123, 15342, 15488, 15600, 15601, 15771) or GEM-X Single Cell Chip (16235, 16318, 16562, 16686, 17402, 17483, 17543) (10X Genomics PN 1000690 & 2000060) and GEM generation, cDNA synthesis, cDNA amplification, and library preparation of ~4-50,000 cells proceeded using the Chromium Next GEM Single Cell 3’ Kit v3.1 or GEM-X Single Cell 3’ Kit v4 (10X Genomics PN 1000268 & 1000691) according to the manufacturer’s protocol. cDNA amplification included 11-12 cycles and 78-863 ng of the material was used to prepare sequencing libraries with 8-14 cycles of PCR. Indexed libraries were pooled and sequenced on a NovaSeq 6000 (14143, 16235, 16562) or X (15123, 15342, 15488, 15600, 15601, 15771, 16235, 16318, 16562, 16686, 17402, 17483, 17543) in a PE28/88 run using the NovaSeq 6000 S4 (200 Cycles) or X 10B (100 Cycles) or 25B (300 cycles) Reagent Kit (Illumina).  An average of 38 thousand paired reads was generated per cell."
+      ],
+      "description": [
+        "Library name: IGO17543_GEX",
+        "10x genomics"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5: raw counts",
+        "Supplementary files format and content: h5ad: processed file",
+        "Supplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749621",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202105"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193567/suppl/GSM9193567_IGO17543-filtered_feature_bc_matrix.h5"
+      ]
+    },
+    {
+      "accession": "GSM9193568",
+      "title": [
+        "KPfrt Hopx-MACD/+ Rosa26-mTmG/+ tumors; harvested at 14 weeks PTI after 14 days of tracing, HTO"
+      ],
+      "geo_accession": [
+        "GSM9193568"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: Primary tumor cells",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Hopx-MACD/+ Rosa26-mTmG/+",
+        "treatment: Tamoxifen"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina).",
+        "Single cell suspensions were stained with Trypan blue and Countess II Automated Cell Counter (ThermoFisher) was used to assess both cell number and viability. Following QC, the samples were loaded onto Next GEM Chip G (14143, 15123, 15342, 15488, 15600, 15601, 15771) or GEM-X Single Cell Chip (16235, 16318, 16562, 16686, 17402, 17483, 17543) (10X Genomics PN 1000690 & 2000060) and GEM generation, cDNA synthesis, cDNA amplification, and library preparation of ~4-50,000 cells proceeded using the Chromium Next GEM Single Cell 3’ Kit v3.1 or GEM-X Single Cell 3’ Kit v4 (10X Genomics PN 1000268 & 1000691) according to the manufacturer’s protocol. cDNA amplification included 11-12 cycles and 78-863 ng of the material was used to prepare sequencing libraries with 8-14 cycles of PCR. Indexed libraries were pooled and sequenced on a NovaSeq 6000 (14143, 16235, 16562) or X (15123, 15342, 15488, 15600, 15601, 15771, 16235, 16318, 16562, 16686, 17402, 17483, 17543) in a PE28/88 run using the NovaSeq 6000 S4 (200 Cycles) or X 10B (100 Cycles) or 25B (300 cycles) Reagent Kit (Illumina).  An average of 38 thousand paired reads was generated per cell."
+      ],
+      "description": [
+        "Library name: IGO17543_HTO",
+        "10x genomics"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5: raw counts",
+        "Supplementary files format and content: h5ad: processed file",
+        "Supplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749620",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202106"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193568/suppl/GSM9193568_IGO17543-feature_reference.csv.gz"
+      ]
+    },
+    {
+      "accession": "GSM9193569",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ iRFP670-Gluc cell line; tail vein injected, harvested 5 weeks post transplant (1 week DT), GEX"
+      ],
+      "geo_accession": [
+        "GSM9193569"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: AT1401 iRFP670-GLuc",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MACD/+ iRFP670-Gluc",
+        "treatment: Saline"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina).",
+        "Single cell suspensions were stained with Trypan blue and Countess II Automated Cell Counter (ThermoFisher) was used to assess both cell number and viability. Following QC, the samples were loaded onto Next GEM Chip G (14143, 15123, 15342, 15488, 15600, 15601, 15771) or GEM-X Single Cell Chip (16235, 16318, 16562, 16686, 17402, 17483, 17543) (10X Genomics PN 1000690 & 2000060) and GEM generation, cDNA synthesis, cDNA amplification, and library preparation of ~4-50,000 cells proceeded using the Chromium Next GEM Single Cell 3’ Kit v3.1 or GEM-X Single Cell 3’ Kit v4 (10X Genomics PN 1000268 & 1000691) according to the manufacturer’s protocol. cDNA amplification included 11-12 cycles and 78-863 ng of the material was used to prepare sequencing libraries with 8-14 cycles of PCR. Indexed libraries were pooled and sequenced on a NovaSeq 6000 (14143, 16235, 16562) or X (15123, 15342, 15488, 15600, 15601, 15771, 16235, 16318, 16562, 16686, 17402, 17483, 17543) in a PE28/88 run using the NovaSeq 6000 S4 (200 Cycles) or X 10B (100 Cycles) or 25B (300 cycles) Reagent Kit (Illumina).  An average of 38 thousand paired reads was generated per cell."
+      ],
+      "description": [
+        "Library name: IGO17483-DT_GEX",
+        "10x genomics"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5: raw counts",
+        "Supplementary files format and content: h5ad: processed file",
+        "Supplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749619",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202107"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193569/suppl/GSM9193569_IGO17483-Vehicle-filtered_feature_bc_matrix.h5"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193569/suppl/GSM9193569_IGO17483-Vehicle-raw_feature_bc_matrix.h5"
+      ]
+    },
+    {
+      "accession": "GSM9193570",
+      "title": [
+        "KPfrt Slc4a11-MCD/+ iRFP670-Gluc cell line; tail vein injected, harvested 5 weeks post transplant (1 week Saline), GEX"
+      ],
+      "geo_accession": [
+        "GSM9193570"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: AT1401 iRFP670-GLuc",
+        "cell type: Tumor cells",
+        "genotype: Kras-G12D/+ Trp53-delta/delta Slc4a11-MACD/+ iRFP670-Gluc",
+        "treatment: Diphteria toxin"
+      ],
+      "treatment_protocol_ch1": [
+        "KP mice with either Slc4a11-FSF-MCD/+ or Hopx-FSF-MACD/+ alleles with either Hipp11-FSF-GGCB/+ or Rosa26-FSF-mTmG/+ reporter alleles were infected by adenoviral CMV-FlpO or lentiviral PGK-FlpO recombinase. Mice bearing tumors were treated with either Tamoxifen, Diphtheria toxin, or saline with or without Cisplatin and MRTX1133 as indicated, and tumor cells were isolated, hashed using TotalSeq-B antibodies, and processed for single-cell mRNA sequencing after FACS purification. One dataset contains KP Rosa26-tdTomato/+ tumors used in this study."
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from animals. No additional growth was involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq 6000 platform (Illumina).",
+        "Single cell suspensions were stained with Trypan blue and Countess II Automated Cell Counter (ThermoFisher) was used to assess both cell number and viability. Following QC, the samples were loaded onto Next GEM Chip G (14143, 15123, 15342, 15488, 15600, 15601, 15771) or GEM-X Single Cell Chip (16235, 16318, 16562, 16686, 17402, 17483, 17543) (10X Genomics PN 1000690 & 2000060) and GEM generation, cDNA synthesis, cDNA amplification, and library preparation of ~4-50,000 cells proceeded using the Chromium Next GEM Single Cell 3’ Kit v3.1 or GEM-X Single Cell 3’ Kit v4 (10X Genomics PN 1000268 & 1000691) according to the manufacturer’s protocol. cDNA amplification included 11-12 cycles and 78-863 ng of the material was used to prepare sequencing libraries with 8-14 cycles of PCR. Indexed libraries were pooled and sequenced on a NovaSeq 6000 (14143, 16235, 16562) or X (15123, 15342, 15488, 15600, 15601, 15771, 16235, 16318, 16562, 16686, 17402, 17483, 17543) in a PE28/88 run using the NovaSeq 6000 S4 (200 Cycles) or X 10B (100 Cycles) or 25B (300 cycles) Reagent Kit (Illumina).  An average of 38 thousand paired reads was generated per cell."
+      ],
+      "description": [
+        "Library name: IGO17483-Saline_GEX",
+        "10x genomics"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5: raw counts",
+        "Supplementary files format and content: h5ad: processed file",
+        "Supplementary files format and content: csv: featureref for Total Seq B Hash antibodies"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN50749618",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30202108"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193570/suppl/GSM9193570_IGO17483-DT-filtered_feature_bc_matrix.h5"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9193nnn/GSM9193570/suppl/GSM9193570_IGO17483-DT-raw_feature_bc_matrix.h5"
+      ]
+    },
+    {
+      "accession": "GSM9315338",
+      "title": [
+        "KPfrt Hopx-MACD/+ BG/+  cell line; tail vein injected, harvested 5 weeks post transplant (1 week DT), GEX"
+      ],
+      "geo_accession": [
+        "GSM9315338"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: cancer",
+        "genotype: Kras-G12D/+ Trp53-Frt/Frt Hopx-MACD/+ Hipp11-BG/+",
+        "treatment: DT",
+        "batch: 9/2/2025"
+      ],
+      "treatment_protocol_ch1": [
+        "Cell line transplants were treated with Saline or Diphtheria toxin as indicated and tumor cells were isolated for single-cell mRNA sequencing after FACS purification."
+      ],
+      "growth_protocol_ch1": [
+        "Tumors were isolated from animals with transplanted cell lines. No additional growth is involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq X platform (Illumina).",
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq X platform (Illumina)."
+      ],
+      "description": [
+        "Library name: IGO17721-Hopx-BG-DT",
+        "KPfrt Hopx-MACD/+ BG/+  cell line; tail vein injected, harvested 5 weeks post transplant (1 week DT), GEX"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN53365666",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX31186838"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9315nnn/GSM9315338/suppl/GSM9315338_IGO17721-DT-filtered_feature_bc_matrix.h5"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9315nnn/GSM9315338/suppl/GSM9315338_IGO17721-DT-raw_feature_bc_matrix.h5"
+      ]
+    },
+    {
+      "accession": "GSM9315339",
+      "title": [
+        "KPfrt Hopx-MACD/+ BG/+  cell line; tail vein injected, harvested 5 weeks post transplant (1 week Saline), GEX"
+      ],
+      "geo_accession": [
+        "GSM9315339"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: cancer",
+        "genotype: Kras-G12D/+ Trp53-Frt/Frt Hopx-MACD/+ Hipp11-BG/+",
+        "treatment: Saline",
+        "batch: 9/2/2025"
+      ],
+      "treatment_protocol_ch1": [
+        "Cell line transplants were treated with Saline or Diphtheria toxin as indicated and tumor cells were isolated for single-cell mRNA sequencing after FACS purification."
+      ],
+      "growth_protocol_ch1": [
+        "Tumors were isolated from animals with transplanted cell lines. No additional growth is involved."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq X platform (Illumina).",
+        "Encapsulation and library preparation were performed using the 10X Genomics Chromium Single Cell 3’ Library & Gel bead Kit V3 (10X Genomics, PN-1000121) according to the manufacturer’s protocol. Libraries were sequenced using the Nova-Seq X platform (Illumina)."
+      ],
+      "description": [
+        "Library name: IGO17721-Hopx-BG-Saline",
+        "KPfrt Hopx-MACD/+ BG/+  cell line; tail vein injected, harvested 5 weeks post transplant (1 week Saline), GEX"
+      ],
+      "data_processing": [
+        "FASTQ files of single-cell RNA-sequencing data generated on the 10X Chromium platform were processed using the standard CellRanger pipeline (version >=6.0.0). Reads were aligned to a custom GRCm38 / mm10 reference containing additional transgenes used in the study. The generated cell-gene count matrices were analyzed using a combination of published packages and custom scripts in either the scanpy (v> 1.9.0) / AnnData (v. 0.10.5, Python)",
+        "Assembly: GRCm38/mm10",
+        "Supplementary files format and content: h5ad"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN53365665",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX31186839"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9315nnn/GSM9315339/suppl/GSM9315339_IGO17721-Vehicle-filtered_feature_bc_matrix.h5"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9315nnn/GSM9315339/suppl/GSM9315339_IGO17721-Vehicle-raw_feature_bc_matrix.h5"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

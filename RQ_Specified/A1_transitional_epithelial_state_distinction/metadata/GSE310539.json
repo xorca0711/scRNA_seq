@@ -1,0 +1,509 @@
+{
+  "accession": "GSE310539",
+  "retrieved_at_utc": "2026-09-25T01:00:13.814047+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310539&targ=all&form=text&view=full",
+  "response_sha256": "dd54d579394aecd00773cd3c436b97f0ca5559b981fdfc784900372b93440a2d",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "AP-1 mediated chromatin changes govern alveolar type 2 cell transition in lung injury-repair [multiome]"
+    ],
+    "geo_accession": [
+      "GSE310539"
+    ],
+    "status": [
+      "Public on Jul 01 2026"
+    ],
+    "last_update_date": [
+      "Jul 01 2026"
+    ],
+    "overall_design": [
+      "performed single-cell multiome sequencing for RNA and ATAC on 8 week old SftpcCreER/+;RosaSun1GFP/+ and SftpcCreER/+;RosaSun1GFP/+;FosF/F;FosbF/F;JunbF/F mice infected with Sendai virus or mock PBS, harvested 14 days post infection, and sorted for ECAD+ epithelial cells"
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing",
+      "Genome binding/occupancy profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM9303242",
+      "GSM9303243",
+      "GSM9303244",
+      "GSM9303245",
+      "GSM9303246",
+      "GSM9303247",
+      "GSM9303248",
+      "GSM9303249"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE310nnn/GSE310539/suppl/GSE310539_totalaggr_atac_fragments.tsv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE310nnn/GSE310539/suppl/GSE310539_totalaggr_atac_fragments.tsv.gz.tbi.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE310nnn/GSE310539/suppl/GSE310539_totalaggr_atac_peak_annotation.tsv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE310nnn/GSE310539/suppl/GSE310539_totalaggr_atac_peaks.bed.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE310nnn/GSE310539/suppl/GSE310539_totalaggr_cloupe.cloupe.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE310nnn/GSE310539/suppl/GSE310539_totalaggr_filtered_feature_bc_matrix.h5"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1366485"
+    ]
+  },
+  "sample_count": 8,
+  "samples": [
+    {
+      "accession": "GSM9303242",
+      "title": [
+        "Multiome, wildtype PBS control lung epithelial cells, GEX"
+      ],
+      "geo_accession": [
+        "GSM9303242"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpCreER/+;RosaSun1GFP/+",
+        "treatment: PBS mock infected",
+        "library type: mRNA"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Epithelial cells from 8 week old SftpcCreER/+;RosaSun1GFP/+ and SftpcCreER/+;RosaSun1GFP/+;FosF/F;FosbF/F;JunbF/F mice were sorted from Sendai infected or PBS mock infected lungs 14 days post infection and cell extraction was performed with 10X genomics manufacturer instructions",
+        "libraries were generatd using the 10X Genomics Single Cell Multiome ATAC + Gene Expression kit with 10,000 nuclei loaded per lane"
+      ],
+      "description": [
+        "Library name: 14dpi_PBScontrol_wt_RNA",
+        "all samples were aggregated to one processed data file"
+      ],
+      "data_processing": [
+        "Cellranger-arc (version 2.0.0) was used to run “cellranger-arc count” on all samples to align fastq files to a custom mm10 reference genome containing the Sun1GFP and Fos-GFP transcripts. Wildtype control, wildtype Sendai infected, mutant control, and mutant Sendai infected samples were then aggregated together using “cellranger-arc aggr”.",
+        "Assembly: custom reference of mm10 with the addition of Sun1GFP and FosGFP sequences",
+        "Supplementary files format and content: cellranger-outputs: totalaggr_filtered_feature_bc_matrix.h5, totalaggr_atac_fragments.tsv.gz, totalaggr_atac_fragments.tsv.gz.tbi, totalaggr_atac_peak_annotation.tsv, totalaggr_atac_peaks.bed, totalaggr_cloupe.cloupe"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN53317997",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX31208497"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM9303243",
+      "title": [
+        "Multiome, wildtype PBS control lung epithelial cells, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9303243"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpCreER/+;RosaSun1GFP/+",
+        "treatment: PBS mock infected",
+        "library type: ATAC"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Epithelial cells from 8 week old SftpcCreER/+;RosaSun1GFP/+ and SftpcCreER/+;RosaSun1GFP/+;FosF/F;FosbF/F;JunbF/F mice were sorted from Sendai infected or PBS mock infected lungs 14 days post infection and cell extraction was performed with 10X genomics manufacturer instructions",
+        "libraries were generatd using the 10X Genomics Single Cell Multiome ATAC + Gene Expression kit with 10,000 nuclei loaded per lane"
+      ],
+      "description": [
+        "Library name: 14dpi_PBScontrol_wt_ATAC",
+        "all samples were aggregated to one processed data file"
+      ],
+      "data_processing": [
+        "Cellranger-arc (version 2.0.0) was used to run “cellranger-arc count” on all samples to align fastq files to a custom mm10 reference genome containing the Sun1GFP and Fos-GFP transcripts. Wildtype control, wildtype Sendai infected, mutant control, and mutant Sendai infected samples were then aggregated together using “cellranger-arc aggr”.",
+        "Assembly: custom reference of mm10 with the addition of Sun1GFP and FosGFP sequences",
+        "Supplementary files format and content: cellranger-outputs: totalaggr_filtered_feature_bc_matrix.h5, totalaggr_atac_fragments.tsv.gz, totalaggr_atac_fragments.tsv.gz.tbi, totalaggr_atac_peak_annotation.tsv, totalaggr_atac_peaks.bed, totalaggr_cloupe.cloupe"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic single cell"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN53317996",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX31208499"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM9303244",
+      "title": [
+        "Multiome, wildtype SeV infected lung epithelial cells, GEX"
+      ],
+      "geo_accession": [
+        "GSM9303244"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpCreER/+;RosaSun1GFP/+",
+        "treatment: Sendai virus infected",
+        "library type: mRNA"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Epithelial cells from 8 week old SftpcCreER/+;RosaSun1GFP/+ and SftpcCreER/+;RosaSun1GFP/+;FosF/F;FosbF/F;JunbF/F mice were sorted from Sendai infected or PBS mock infected lungs 14 days post infection and cell extraction was performed with 10X genomics manufacturer instructions",
+        "libraries were generatd using the 10X Genomics Single Cell Multiome ATAC + Gene Expression kit with 10,000 nuclei loaded per lane"
+      ],
+      "description": [
+        "Library name: 14dpi_SeV_wt_RNA",
+        "all samples were aggregated to one processed data file"
+      ],
+      "data_processing": [
+        "Cellranger-arc (version 2.0.0) was used to run “cellranger-arc count” on all samples to align fastq files to a custom mm10 reference genome containing the Sun1GFP and Fos-GFP transcripts. Wildtype control, wildtype Sendai infected, mutant control, and mutant Sendai infected samples were then aggregated together using “cellranger-arc aggr”.",
+        "Assembly: custom reference of mm10 with the addition of Sun1GFP and FosGFP sequences",
+        "Supplementary files format and content: cellranger-outputs: totalaggr_filtered_feature_bc_matrix.h5, totalaggr_atac_fragments.tsv.gz, totalaggr_atac_fragments.tsv.gz.tbi, totalaggr_atac_peak_annotation.tsv, totalaggr_atac_peaks.bed, totalaggr_cloupe.cloupe"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN53317995",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX31208498"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM9303245",
+      "title": [
+        "Multiome, wildtype SeV infected lung epithelial cells, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9303245"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpCreER/+;RosaSun1GFP/+",
+        "treatment: Sendai virus infected",
+        "library type: ATAC"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Epithelial cells from 8 week old SftpcCreER/+;RosaSun1GFP/+ and SftpcCreER/+;RosaSun1GFP/+;FosF/F;FosbF/F;JunbF/F mice were sorted from Sendai infected or PBS mock infected lungs 14 days post infection and cell extraction was performed with 10X genomics manufacturer instructions",
+        "libraries were generatd using the 10X Genomics Single Cell Multiome ATAC + Gene Expression kit with 10,000 nuclei loaded per lane"
+      ],
+      "description": [
+        "Library name: 14dpi_SeV_wt_ATAC",
+        "all samples were aggregated to one processed data file"
+      ],
+      "data_processing": [
+        "Cellranger-arc (version 2.0.0) was used to run “cellranger-arc count” on all samples to align fastq files to a custom mm10 reference genome containing the Sun1GFP and Fos-GFP transcripts. Wildtype control, wildtype Sendai infected, mutant control, and mutant Sendai infected samples were then aggregated together using “cellranger-arc aggr”.",
+        "Assembly: custom reference of mm10 with the addition of Sun1GFP and FosGFP sequences",
+        "Supplementary files format and content: cellranger-outputs: totalaggr_filtered_feature_bc_matrix.h5, totalaggr_atac_fragments.tsv.gz, totalaggr_atac_fragments.tsv.gz.tbi, totalaggr_atac_peak_annotation.tsv, totalaggr_atac_peaks.bed, totalaggr_cloupe.cloupe"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic single cell"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN53317994",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX31208504"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM9303246",
+      "title": [
+        "Multiome, AP-1 mut PBS control lung epithelial cells, GEX"
+      ],
+      "geo_accession": [
+        "GSM9303246"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpCreER/+;RosaSun1GFP/+;FosF/F;FosbF/FJunbF/F",
+        "treatment: PBS mock infected",
+        "library type: mRNA"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Epithelial cells from 8 week old SftpcCreER/+;RosaSun1GFP/+ and SftpcCreER/+;RosaSun1GFP/+;FosF/F;FosbF/F;JunbF/F mice were sorted from Sendai infected or PBS mock infected lungs 14 days post infection and cell extraction was performed with 10X genomics manufacturer instructions",
+        "libraries were generatd using the 10X Genomics Single Cell Multiome ATAC + Gene Expression kit with 10,000 nuclei loaded per lane"
+      ],
+      "description": [
+        "Library name: 14dpi_PBScontrol_mut_RNA",
+        "all samples were aggregated to one processed data file"
+      ],
+      "data_processing": [
+        "Cellranger-arc (version 2.0.0) was used to run “cellranger-arc count” on all samples to align fastq files to a custom mm10 reference genome containing the Sun1GFP and Fos-GFP transcripts. Wildtype control, wildtype Sendai infected, mutant control, and mutant Sendai infected samples were then aggregated together using “cellranger-arc aggr”.",
+        "Assembly: custom reference of mm10 with the addition of Sun1GFP and FosGFP sequences",
+        "Supplementary files format and content: cellranger-outputs: totalaggr_filtered_feature_bc_matrix.h5, totalaggr_atac_fragments.tsv.gz, totalaggr_atac_fragments.tsv.gz.tbi, totalaggr_atac_peak_annotation.tsv, totalaggr_atac_peaks.bed, totalaggr_cloupe.cloupe"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN53317993",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX31208503"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM9303247",
+      "title": [
+        "Multiome, AP-1 mut PBS control lung epithelial cells, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9303247"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpCreER/+;RosaSun1GFP/+;FosF/F;FosbF/FJunbF/F",
+        "treatment: PBS mock infected",
+        "library type: ATAC"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Epithelial cells from 8 week old SftpcCreER/+;RosaSun1GFP/+ and SftpcCreER/+;RosaSun1GFP/+;FosF/F;FosbF/F;JunbF/F mice were sorted from Sendai infected or PBS mock infected lungs 14 days post infection and cell extraction was performed with 10X genomics manufacturer instructions",
+        "libraries were generatd using the 10X Genomics Single Cell Multiome ATAC + Gene Expression kit with 10,000 nuclei loaded per lane"
+      ],
+      "description": [
+        "Library name: 14dpi_PBScotrol_mut_ATAC",
+        "all samples were aggregated to one processed data file"
+      ],
+      "data_processing": [
+        "Cellranger-arc (version 2.0.0) was used to run “cellranger-arc count” on all samples to align fastq files to a custom mm10 reference genome containing the Sun1GFP and Fos-GFP transcripts. Wildtype control, wildtype Sendai infected, mutant control, and mutant Sendai infected samples were then aggregated together using “cellranger-arc aggr”.",
+        "Assembly: custom reference of mm10 with the addition of Sun1GFP and FosGFP sequences",
+        "Supplementary files format and content: cellranger-outputs: totalaggr_filtered_feature_bc_matrix.h5, totalaggr_atac_fragments.tsv.gz, totalaggr_atac_fragments.tsv.gz.tbi, totalaggr_atac_peak_annotation.tsv, totalaggr_atac_peaks.bed, totalaggr_cloupe.cloupe"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic single cell"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN53317992",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX31208502"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM9303248",
+      "title": [
+        "Multiome, AP-1 mutant SeV infected lung epithelial cells, GEX"
+      ],
+      "geo_accession": [
+        "GSM9303248"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpCreER/+;RosaSun1GFP/+;FosF/F;FosbF/FJunbF/F",
+        "treatment: Sendai virus infected",
+        "library type: mRNA"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Epithelial cells from 8 week old SftpcCreER/+;RosaSun1GFP/+ and SftpcCreER/+;RosaSun1GFP/+;FosF/F;FosbF/F;JunbF/F mice were sorted from Sendai infected or PBS mock infected lungs 14 days post infection and cell extraction was performed with 10X genomics manufacturer instructions",
+        "libraries were generatd using the 10X Genomics Single Cell Multiome ATAC + Gene Expression kit with 10,000 nuclei loaded per lane"
+      ],
+      "description": [
+        "Library name: 14dpi_SeV_mut_RNA",
+        "all samples were aggregated to one processed data file"
+      ],
+      "data_processing": [
+        "Cellranger-arc (version 2.0.0) was used to run “cellranger-arc count” on all samples to align fastq files to a custom mm10 reference genome containing the Sun1GFP and Fos-GFP transcripts. Wildtype control, wildtype Sendai infected, mutant control, and mutant Sendai infected samples were then aggregated together using “cellranger-arc aggr”.",
+        "Assembly: custom reference of mm10 with the addition of Sun1GFP and FosGFP sequences",
+        "Supplementary files format and content: cellranger-outputs: totalaggr_filtered_feature_bc_matrix.h5, totalaggr_atac_fragments.tsv.gz, totalaggr_atac_fragments.tsv.gz.tbi, totalaggr_atac_peak_annotation.tsv, totalaggr_atac_peaks.bed, totalaggr_cloupe.cloupe"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN53317991",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX31208501"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM9303249",
+      "title": [
+        "Multiome, AP-1 mutant SeV infected lung epithelial cells, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9303249"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpCreER/+;RosaSun1GFP/+;FosF/F;FosbF/FJunbF/F",
+        "treatment: Sendai virus infected",
+        "library type: ATAC"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Epithelial cells from 8 week old SftpcCreER/+;RosaSun1GFP/+ and SftpcCreER/+;RosaSun1GFP/+;FosF/F;FosbF/F;JunbF/F mice were sorted from Sendai infected or PBS mock infected lungs 14 days post infection and cell extraction was performed with 10X genomics manufacturer instructions",
+        "libraries were generatd using the 10X Genomics Single Cell Multiome ATAC + Gene Expression kit with 10,000 nuclei loaded per lane"
+      ],
+      "description": [
+        "Library name: 14dpi_SeV_mut_ATAC",
+        "all samples were aggregated to one processed data file"
+      ],
+      "data_processing": [
+        "Cellranger-arc (version 2.0.0) was used to run “cellranger-arc count” on all samples to align fastq files to a custom mm10 reference genome containing the Sun1GFP and Fos-GFP transcripts. Wildtype control, wildtype Sendai infected, mutant control, and mutant Sendai infected samples were then aggregated together using “cellranger-arc aggr”.",
+        "Assembly: custom reference of mm10 with the addition of Sun1GFP and FosGFP sequences",
+        "Supplementary files format and content: cellranger-outputs: totalaggr_filtered_feature_bc_matrix.h5, totalaggr_atac_fragments.tsv.gz, totalaggr_atac_fragments.tsv.gz.tbi, totalaggr_atac_peak_annotation.tsv, totalaggr_atac_peaks.bed, totalaggr_cloupe.cloupe"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic single cell"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN53317990",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX31208500"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

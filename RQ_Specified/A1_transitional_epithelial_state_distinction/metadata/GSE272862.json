@@ -1,0 +1,166 @@
+{
+  "accession": "GSE272862",
+  "retrieved_at_utc": "2026-09-25T01:07:46.636371+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE272862&targ=all&form=text&view=full",
+  "response_sha256": "fbcf78e8403c0453374c707777ce3f7e23d059d7abf220a62e88ca8e467414e4",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Transcriptomic profiling of day 194 patient-specific pluripotent stem cell-derived alveolar epithelial type 2 cells expressing the SFTPCC121Y mutation and their gene-edited corrected counterparts"
+    ],
+    "geo_accession": [
+      "GSE272862"
+    ],
+    "status": [
+      "Public on Jul 25 2025"
+    ],
+    "last_update_date": [
+      "Jan 30 2026"
+    ],
+    "pubmed_id": [
+      "41027873"
+    ],
+    "overall_design": [
+      "Global transcriptomic profiling of day 194 patient-specific induced pluripotent stem cell (iPSC)-derived alveolar epithelial type 2 cells (iAT2s) expressing the SFTPCC121Y mutation and their gene-edited corrected counterparts by scRNA-seq"
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM8413755",
+      "GSM8413756"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE272nnn/GSE272862/suppl/GSE272862_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1139141"
+    ]
+  },
+  "sample_count": 2,
+  "samples": [
+    {
+      "accession": "GSM8413755",
+      "title": [
+        "Day 194 SFTPCtdT/WT iAT2s"
+      ],
+      "geo_accession": [
+        "GSM8413755"
+      ],
+      "source_name_ch1": [
+        "SPC8-ST-Corr"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: SPC8-ST-Corr",
+        "cell type: Induced pluripotent stem cell-derived alveolar epithelial type 2 cells (iAT2s)",
+        "genotype: SFTPC tdTomato/WT",
+        "treatment: CK+DCI+Y"
+      ],
+      "growth_protocol_ch1": [
+        "To generate iAT2s, we performed PSC directed differentiation via definitive endoderm into NKX2-1 lung progenitors using methods we have previously described (Hawkins et al., JCI 2017; Jacob et al., Cell Stem Cell 2017; Jacob et al., Nat Protoc 2019). In brief, cells maintained in mTeSR1 media were differentiated into definitive endoderm using the STEMdiff Definitive Endoderm Kit (StemCell Technologies) for 3 days (day 0-3) and after the endoderm-induction stage, cells were dissociated with gentle cell dissociation reagent and passaged into 6-well dishes pre-coated with growth factor reduced Matrigel in ‘‘DS/SB’’ anteriorization media, consisting of complete serum-free differentiation media (cSFDM) base as previously described (Jacob et al., Cell Stem Cell 2017; Jacob et al., Nat Protoc 2019), supplemented with 2 µM Dorsomorphin (‘‘DS’’; Stemgent) and 10 µM SB431542 (‘‘SB’’; Tocris). For the first 24 hour after passaging, 10 µM Y-27632 was added to the media. After anteriorization in DS/SB media for 3 days (day 3-6), cells were cultured in ‘‘CBRa’’ lung progenitor-induction media until day 16, as we have previously published (Jacob et al., Cell Stem Cell 2017). ‘‘CBRa’’ media consists of cSFDM base supplemented with 3 µM CHIR99021 (Tocris), 10 ng/ml recombinant human BMP4 (rhBMP4, R&D Systems), and 100 nM retinoic acid (RA, Sigma). On day 17 of differentiation, live cells were sorted on a high-speed cell sorter (MoFlo Legacy or MoFlo Astrios EQ) to isolate NKX2-1+ lung progenitors based on CD47hi/CD26neg gating (Hawkins et al., JCI 2017). Sorted lung progenitors were resuspended in undiluted growth factor reduced 3D Matrigel (Corning) at a concentration of approximately 400 cells/µl and distal/alveolar differentiation of cells was performed in CK+DCI+Y medium, consisting of complete serum-free differentiation medium (cSFDM) base supplemented with 3 µM CHIR99021, 10 ng/ml rhKGF (CK), 50 nM dexamethasone (Sigma), 0.1 mM 8-Bromoadenosine 3’,5’-cyclic monophosphate sodium salt (Sigma), 0.1 mM 3-Isobutyl-1-methylxanthine (IBMX; Sigma) (DCI), and 10 μM Y-27632 (Tocris). SFTPCtdTomato+ cells were sorted on days 45, 87, and 182 of differentiation. iAT2s were single-cell passaged in self-renewing 3D alveolosphere cultures approximately every 10-14 days through day 194. On day 194, all live cells, irrespective of SFTPCtdTomato expression, were sorted and encapsulated for scRNA-seq using the 10X Chromium System."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Cells were resuspended in buffer at a concentration of 1000 cells/ul and captured using a 10X chromium instrument (10X Chromium, Pleasanton, CA), following standard Chromium 10x guidelines.",
+        "Libraries were prepared using a Chromium Single-Cell 30 Library Kit (10X Genomics) and loaded on a NextSeq500 (Illumina) with a custom sequencing setting to obtain a sequencing depth of ~40k reads/cell"
+      ],
+      "description": [
+        "10X Genomics"
+      ],
+      "data_processing": [
+        "The sample was processed using the standard Cell ranger pipeline",
+        "Reads were mapped to GRCh38",
+        "Downstream analysis and QC done on Seurat",
+        "Differential expression using MAST models",
+        "Assembly: GRCh38",
+        "Supplementary files format and content: H5 files"
+      ],
+      "platform_id": [
+        "GPL18573"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42762896",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25422707"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8413nnn/GSM8413755/suppl/GSM8413755_sample1_filtered_feature_bc_matrix.h5"
+      ]
+    },
+    {
+      "accession": "GSM8413756",
+      "title": [
+        "Day 194 SFTPCC121Y/tdT iAT2s"
+      ],
+      "geo_accession": [
+        "GSM8413756"
+      ],
+      "source_name_ch1": [
+        "SPC8-ST-Mut"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: SPC8-ST-Mut",
+        "cell type: Induced pluripotent stem cell-derived alveolar epithelial type 2 cells (iAT2s)",
+        "genotype: SFTPC C121Y/tdTomato",
+        "treatment: CK+DCI+Y"
+      ],
+      "growth_protocol_ch1": [
+        "To generate iAT2s, we performed PSC directed differentiation via definitive endoderm into NKX2-1 lung progenitors using methods we have previously described (Hawkins et al., JCI 2017; Jacob et al., Cell Stem Cell 2017; Jacob et al., Nat Protoc 2019). In brief, cells maintained in mTeSR1 media were differentiated into definitive endoderm using the STEMdiff Definitive Endoderm Kit (StemCell Technologies) for 3 days (day 0-3) and after the endoderm-induction stage, cells were dissociated with gentle cell dissociation reagent and passaged into 6-well dishes pre-coated with growth factor reduced Matrigel in ‘‘DS/SB’’ anteriorization media, consisting of complete serum-free differentiation media (cSFDM) base as previously described (Jacob et al., Cell Stem Cell 2017; Jacob et al., Nat Protoc 2019), supplemented with 2 µM Dorsomorphin (‘‘DS’’; Stemgent) and 10 µM SB431542 (‘‘SB’’; Tocris). For the first 24 hour after passaging, 10 µM Y-27632 was added to the media. After anteriorization in DS/SB media for 3 days (day 3-6), cells were cultured in ‘‘CBRa’’ lung progenitor-induction media until day 16, as we have previously published (Jacob et al., Cell Stem Cell 2017). ‘‘CBRa’’ media consists of cSFDM base supplemented with 3 µM CHIR99021 (Tocris), 10 ng/ml recombinant human BMP4 (rhBMP4, R&D Systems), and 100 nM retinoic acid (RA, Sigma). On day 17 of differentiation, live cells were sorted on a high-speed cell sorter (MoFlo Legacy or MoFlo Astrios EQ) to isolate NKX2-1+ lung progenitors based on CD47hi/CD26neg gating (Hawkins et al., JCI 2017). Sorted lung progenitors were resuspended in undiluted growth factor reduced 3D Matrigel (Corning) at a concentration of approximately 400 cells/µl and distal/alveolar differentiation of cells was performed in CK+DCI+Y medium, consisting of complete serum-free differentiation medium (cSFDM) base supplemented with 3 µM CHIR99021, 10 ng/ml rhKGF (CK), 50 nM dexamethasone (Sigma), 0.1 mM 8-Bromoadenosine 3’,5’-cyclic monophosphate sodium salt (Sigma), 0.1 mM 3-Isobutyl-1-methylxanthine (IBMX; Sigma) (DCI), and 10 μM Y-27632 (Tocris). SFTPCtdTomato+ cells were sorted on days 45, 87, and 182 of differentiation. iAT2s were single-cell passaged in self-renewing 3D alveolosphere cultures approximately every 10-14 days through day 194. On day 194, all live cells, irrespective of SFTPCtdTomato expression, were sorted and encapsulated for scRNA-seq using the 10X Chromium System."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Cells were resuspended in buffer at a concentration of 1000 cells/ul and captured using a 10X chromium instrument (10X Chromium, Pleasanton, CA), following standard Chromium 10x guidelines.",
+        "Libraries were prepared using a Chromium Single-Cell 30 Library Kit (10X Genomics) and loaded on a NextSeq500 (Illumina) with a custom sequencing setting to obtain a sequencing depth of ~40k reads/cell"
+      ],
+      "description": [
+        "10X Genomics"
+      ],
+      "data_processing": [
+        "The sample was processed using the standard Cell ranger pipeline",
+        "Reads were mapped to GRCh38",
+        "Downstream analysis and QC done on Seurat",
+        "Differential expression using MAST models",
+        "Assembly: GRCh38",
+        "Supplementary files format and content: H5 files"
+      ],
+      "platform_id": [
+        "GPL18573"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42762895",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25422708"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8413nnn/GSM8413756/suppl/GSM8413756_sample2_filtered_feature_bc_matrix.h5"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

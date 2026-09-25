@@ -1,0 +1,63 @@
+{
+  "status": "completed",
+  "started_utc": "2026-09-25T05:32:07.669182+00:00",
+  "contract_sha256": "f52f7ac7258d58ba2051fec2e27bf33968b8be4adf151a31ef853308b299205d",
+  "source_files": [
+    {
+      "accession": "GSE154966",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE154nnn/GSE154966/suppl/GSE154966_counts_tigitSamples_featureCounts_filtered_notSubs.tsv.gz",
+      "path": "RQ_Specified/A1_transitional_epithelial_state_distinction/cache/inputs/GSE154966/GSE154966_counts_tigitSamples_featureCounts_filtered_notSubs.tsv.gz",
+      "bytes": 3159444,
+      "sha256": "67b2751451e304a0308323a2cb5526bb52370d0f518ca9cb778255c1598db2a3",
+      "checked_utc": "2026-09-25T05:05:48.435509+00:00",
+      "elapsed_seconds": 2.28
+    },
+    {
+      "accession": "GSE273123",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE273nnn/GSE273123/suppl/GSE273123_Count_Matrix.txt.gz",
+      "path": "RQ_Specified/A1_transitional_epithelial_state_distinction/cache/inputs/GSE273123/GSE273123_Count_Matrix.txt.gz",
+      "bytes": 557299,
+      "sha256": "326b4c263de65a07239accf8294b2930aaa68ca3fe81339a15e660dad2c29a90",
+      "checked_utc": "2026-09-25T05:05:46.159592+00:00",
+      "elapsed_seconds": 2.95
+    },
+    {
+      "accession": "GSE141635",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141635/suppl/GSE141635_AEC2_Homeostasis_H3K4me3_calledpeaks.bed.gz",
+      "path": "RQ_Specified/A1_transitional_epithelial_state_distinction/cache/inputs/GSE141635/GSE141635_AEC2_Homeostasis_H3K4me3_calledpeaks.bed.gz",
+      "bytes": 395371,
+      "sha256": "60c261f73f0e307faadb6f8b4a840f9eb73decad65667e319508a6fccacd21b3",
+      "checked_utc": "2026-09-25T05:08:46.669194+00:00",
+      "elapsed_seconds": 1.67
+    },
+    {
+      "accession": "GSE141635",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141635/suppl/GSE141635_CTGFpos_Bleomycin_H3K4me3_calledpeaks.bed.gz",
+      "path": "RQ_Specified/A1_transitional_epithelial_state_distinction/cache/inputs/GSE141635/GSE141635_CTGFpos_Bleomycin_H3K4me3_calledpeaks.bed.gz",
+      "bytes": 311715,
+      "sha256": "7a47dcd7775b93595aea406892531b006a143b2e3a9c7af67a32adae66d58f05",
+      "checked_utc": "2026-09-25T05:08:48.167731+00:00",
+      "elapsed_seconds": 1.47
+    }
+  ],
+  "count_datasets": [
+    {
+      "accession": "GSE154966",
+      "features": 112729,
+      "columns": 8,
+      "PCA_features": 2000,
+      "source_blocks": 4
+    },
+    {
+      "accession": "GSE273123",
+      "features": 27179,
+      "columns": 16,
+      "PCA_features": 2000,
+      "source_blocks": 8
+    }
+  ],
+  "inference": "None; deposited aliases are not verified independent animals or genotypes",
+  "finished_utc": "2026-09-25T05:32:09.854705+00:00",
+  "histone_result": "Different size/minDist/caller parameters preclude biological interpretation of interval count/overlap",
+  "script_sha256": "c70cbac98ae2fd6ca870fb7b10e3c654bf048d99970180d05f882faff6a440a9"
+}
