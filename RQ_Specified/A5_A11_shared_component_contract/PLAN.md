@@ -1,7 +1,7 @@
 # Shared epithelial component contract: prospective plan
 
-25 September 2026. **Stages 1 to 3 complete; stage 4 awaits the owner.** The
-owner authorized execution of this plan. No expression score has been computed and
+25 September 2026. **Complete; the owner retained the frozen modules at stage 4.**
+The owner authorized execution of this plan. No expression score has been computed and
 no claim grade changes. The machine-readable specification is
 [`config/shared_component.json`](config/shared_component.json). Results are in the
 [source audit](reports/STAGE1_SOURCE_AUDIT.md) and the
