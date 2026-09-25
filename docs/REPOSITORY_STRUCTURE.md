@@ -7,15 +7,16 @@ protocols, original trial names and immutable run records remain historical evid
 | Material | Canonical location | Rule |
 |---|---|---|
 | Repository-wide scientific questions | [RESEARCH_QUESTIONS.md](../RESEARCH_QUESTIONS.md) | One current register, A1–A14; link to source studies rather than maintaining a second register |
+| Question-specific plans and analyses | `RQ_Specified/A<id>_<topic>/` | Prospective plan, source metadata, configuration, scripts, tables, reports and gallery; reference the root question register |
 | Shared question figures | `analysis/figures/rq/` | PNG/SVG assets; grouped supporting tables and provenance may occupy a named subdirectory |
 | Shared plotting and pipeline entrypoints | `analysis/scripts/` | Numbered entrypoints; reusable utilities in `analysis/lib/` |
 | Palette, reusable settings and contracts | `analysis/config/` | Shared configuration, independent of a paper's local trial ID |
-| Paper notes, contracts, inference and galleries | `Thesis/<paper>/` | Preserve the paper-specific source evidence, scripts, tables and figure gallery |
-| Cross-study specificity analysis | `Thesis/epithelial_state_specificity/` | Existing substantive analysis module, referenced by the global questions |
+| Paper notes, contracts, inference and galleries | `Research Article/<paper>/` | Preserve the paper-specific source evidence, scripts, tables and figure gallery |
+| Cross-study specificity analysis | `Research Article/epithelial_state_specificity/` | Existing substantive analysis module, referenced by the global questions |
 | Corrective scientific analyses | `analysis/corrections/` | Keep original results and corrections distinguishable |
 | Current scientific findings and evidence ledger | [FINDINGS.md](../FINDINGS.md), [CLAIMS.md](../CLAIMS.md), [NEGATIVE_RESULTS.md](../NEGATIVE_RESULTS.md) | Claims change only with supporting evidence; a layout migration does not promote them |
 | Methods, structure, portfolio and communication drafts | `docs/` | Each page identifies whether it describes execution, reference methods or proposed work |
-| Reading order and paper status | [Thesis/ROADMAP.json](../Thesis/ROADMAP.json), [Thesis/README.md](../Thesis/README.md) | Stable paper identifiers differ from the reading sequence; update the two views together |
+| Reading order and paper status | [Research Article/ROADMAP.json](../Research%20Article/ROADMAP.json), [Research Article/README.md](../Research%20Article/README.md) | Stable paper identifiers differ from the reading sequence; update the two views together |
 | Current handoff and operating context | [PROGRESS.md](../PROGRESS.md), [AI_CONTEXT.md](../AI_CONTEXT.md) | Current section first; older dated checkpoints remain historical |
 | Raw inputs, caches and private reading annotations | Ignored local directories | Do not copy them into public figure or documentation directories |
 
@@ -38,7 +39,16 @@ protocols, original trial names and immutable run records remain historical evid
 
 ## Paths and historical provenance
 
-`ROADMAP.json` paper `folder` values are relative to `Thesis/`, without a
+On 25 September 2026, `Thesis/` was renamed to `Research Article/` and
+`RQ_Specified/` was introduced at the owner's request. Paper folder identifiers,
+scientific results and historical run identities are unchanged. The
+[migration record](migrations/2026-09-25-research-layout/README.md) lists preserved
+hashes and archives original bytes of updated code and documentation. Historical
+paths are resolved by `analysis/lib/repository_paths.py`; this is a record check,
+not evidence that the updated scripts have rerun. Quote paths containing
+`Research Article` in commands; Markdown links encode the space as `%20`.
+
+`ROADMAP.json` paper `folder` values are relative to `Research Article/`, without a
 trailing slash; other artifact fields are repository-relative. The owner-selected
 `gate2_C3_yu_lee_choi_min_2026/` is branch 2C item 3, stable paper 13.
 This documented exception does not renumber the roadmap.

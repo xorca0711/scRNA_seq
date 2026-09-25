@@ -9,7 +9,7 @@ data determine the workflow."* So the pipeline was built by reading the
 deposited files and nothing else. No papers, no prior knowledge of the studies.
 
 **Pass 2, after reading the source publications.** The two papers behind these
-accessions live in `Thesis/Primary/`. They were read only after the analysis was
+accessions live in `Research Article/Primary/`. They were read only after the analysis was
 complete. Some decisions were confirmed. One was right for the wrong reason.
 Several facts turned out to be unknowable from the deposited files alone.
 

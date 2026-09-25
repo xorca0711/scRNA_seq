@@ -12,7 +12,7 @@ options(stringsAsFactors=FALSE)
 cache <- file.path(here, "cache")
 out <- file.path(here, "tables")
 dir.create(out, showWarnings=FALSE)
-trials <- file.path(root, "Thesis/gate1_01_niethamer_2025/trials")
+trials <- file.path(root, "Research Article/gate1_01_niethamer_2025/trials")
 
 read_gmt <- function(path) {
   x <- strsplit(readLines(path), "\t", fixed=TRUE)

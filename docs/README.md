@@ -58,7 +58,7 @@ Supporting documents:
   above were used, and how the analysis diverges from the source papers.
   Generated from the pipeline's artefacts; regenerate with
   `analysis/scripts/05_write_pipeline_as_run.py`.
-- [`Thesis/gate1_01_niethamer_2025/GSE262927/README.md`](../Thesis/gate1_01_niethamer_2025/GSE262927/README.md): the full analysis report
+- [`Research Article/gate1_01_niethamer_2025/GSE262927/README.md`](../Research%20Article/gate1_01_niethamer_2025/GSE262927/README.md): the full analysis report
   for the primary (mouse) dataset, including QC tables and output locations.
 - [`WORKFLOW_Niethamer2025.md`](WORKFLOW_Niethamer2025.md): the end-to-end sequence, ordering
   constraints, subset-and-recluster loop, lineage-trace calling, and quality
@@ -67,10 +67,10 @@ Supporting documents:
   the annotated pipeline reference, study design, stage-by-stage parameters,
   marker-gene annotation tables, and the twelve parameters the reference study
   leaves unspecified.
-- [`../Thesis/README.md`](../Thesis/README.md): the paper-by-paper roadmap
+- [`../Research Article/README.md`](../Research%20Article/README.md): the paper-by-paper roadmap
   (the owner's reading order), with per-paper study notes, extracted decision criteria and
   analysis trials; the HLCA note is at
-  [`../Thesis/gate1_04_sikkema_2023_hlca/README.md`](../Thesis/gate1_04_sikkema_2023_hlca/README.md).
+  [`../Research Article/gate1_04_sikkema_2023_hlca/README.md`](../Research%20Article/gate1_04_sikkema_2023_hlca/README.md).
 - [`../REFERENCES.md`](../REFERENCES.md): every source study, roadmap paper and
   method paper with DOIs, PMC links and data accessions.
 

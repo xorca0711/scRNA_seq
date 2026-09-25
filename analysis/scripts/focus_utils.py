@@ -2,8 +2,8 @@
 
 Shared by the focused analyses under analysis/scripts/ (10_phase_timecourse.py,
 11_myeloid_focus.py). Mirrors the helpers in
-Thesis/gate1_04_sikkema_2023_hlca/trials/trial_utils.py so that the analysis/
-tree does not import from Thesis/.
+Research Article/gate1_04_sikkema_2023_hlca/trials/trial_utils.py so that the analysis/
+tree does not import from Research Article/.
 
 A run record is written with the frozen rules BEFORE any data table is opened
 and completed afterwards with the inputs (size, modification time), package

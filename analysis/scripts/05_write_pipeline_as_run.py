@@ -41,12 +41,12 @@ TOOL_STATUS = [
 ]
 
 # Divergences from the two source publications, established by reading them
-# (Thesis/Primary/). These are stated here because the deposited files alone
+# (Research Article/Primary/). These are stated here because the deposited files alone
 # do not reveal them.
 DIVERGENCES = """
 ## How this analysis differs from the source publications
 
-The two papers behind these accessions are in `Thesis/Primary/`. They were
+The two papers behind these accessions are in `Research Article/Primary/`. They were
 **not** consulted while the pipeline was being built - the analysis was driven
 purely by the deposited files, as the brief required - and were read only
 afterwards. This section records where the executed analysis agrees with, and
@@ -163,7 +163,7 @@ NOT_PERFORMED = [
      "It WAS run in the focused re-analysis "
      "(analysis/scripts/06_regeneration_focus.py): PAGA topology plus "
      "diffusion pseudotime rooted in AT2, on the 25-sample annotated cohort. "
-     "See Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/."),
+     "See Research Article/gate1_01_niethamer_2025/GSE262927/regeneration_focus/."),
     ("Trajectory-based differential expression", "tradeSeq",
      "Not run; marker programmes are summarised along pseudotime bins in the "
      "focused re-analysis, but no formal trajectory-DE model was fitted."),

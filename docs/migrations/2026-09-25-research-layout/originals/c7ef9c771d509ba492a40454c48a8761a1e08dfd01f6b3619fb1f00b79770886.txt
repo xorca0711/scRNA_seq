@@ -1,0 +1,110 @@
+# ---------------------------------------------------------------
+# Copyrighted literature and supplementary material — NEVER commit.
+# The papers in this folder belong to their publishers. See
+# REFERENCES.md for links to the open-access versions instead.
+# ---------------------------------------------------------------
+*.pdf
+*.xlsx
+*.xls
+*.gsheet
+Lv-2024-Alveolar-regeneration-by-airway-sec/
+
+# Downloaded GEO series (multi-GB). Never commit; see REFERENCES.md for
+# accessions and analysis/raw_data_inventory.txt for exactly what was used.
+raw_data/
+
+# Sequencing data and derived objects
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.h5
+*.h5ad
+*.loom
+*.rds
+*.RData
+*.mtx
+*.mtx.gz
+barcodes.tsv*
+features.tsv*
+genes.tsv*
+data/
+raw/
+counts/
+results/
+
+# R
+.Rhistory
+.Rapp.history
+.Rproj.user/
+*.Rproj
+.Renviron
+renv/library/
+renv/staging/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*~
+.venv-x64/
+.tools/
+.venv-repro/
+analysis/corrections/**/cache/
+analysis/corrections/**/*.npz
+analysis/corrections/**/*.h5ad
+Thesis/epithelial_state_specificity/cache/
+
+# Compact, reproducible correction evidence is part of the portfolio.
+!analysis/corrections/ligand/results/
+!analysis/corrections/ligand/results/*.csv
+!analysis/corrections/ligand/results/*.json
+!analysis/corrections/ligand/results/*.md
+!analysis/corrections/ligand/results/*.png
+!Thesis/epithelial_state_specificity/results/
+!Thesis/epithelial_state_specificity/results/*.csv
+!Thesis/epithelial_state_specificity/results/*.json
+!Thesis/epithelial_state_specificity/results/*.md
+!Thesis/epithelial_state_specificity/results/*.png
+Thesis/epithelial_state_specificity/results/gene_detection.csv
+
+# Derived analysis outputs that are large and fully regenerable by
+# analysis/scripts/run_scrna_analysis.py (figures and small tables ARE tracked).
+# The two original series live under Thesis/ beside their source papers since
+# 2026-09-21; the analysis/ patterns stay so an --outdir run there is still safe.
+analysis/**/processed/
+analysis/**/sample_shards/
+analysis/**/cluster_markers_all.csv
+analysis/**/epithelial_cluster_markers_all.csv
+analysis/**/*.csv.gz
+analysis/**/epithelial_clustered.h5ad
+Thesis/**/processed/
+Thesis/**/sample_shards/
+Thesis/**/cluster_markers_all.csv
+Thesis/**/epithelial_cluster_markers_all.csv
+Thesis/**/epithelial_clustered.h5ad
+
+# Regenerable per-cell tables written by Thesis/ trials
+Thesis/**/*.csv.gz
+
+# Downloaded HLCA reference model and embedding (Zenodo 10.5281/zenodo.7599104), regenerable
+Thesis/**/reference/
+
+# scvi-tools query model written by trial S2, regenerable
+Thesis/**/query_model/
+
+# Regenerable shared research-question diagnostics
+analysis/figures/rq/il1b_context/cache/

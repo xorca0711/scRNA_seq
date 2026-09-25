@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "analysis/figures/rq"
 LIGAND = "analysis/corrections/ligand/results/"
 STATS = "analysis/corrections/statistics/tables/"
-ES = "Thesis/epithelial_state_specificity/results/"
+ES = "Research Article/epithelial_state_specificity/results/"
 TEAL, ORANGE, BLUE = "#087e8b", "#cf663b", "#4967a4"
 INPUTS, OUTPUTS = {}, []
 plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10,

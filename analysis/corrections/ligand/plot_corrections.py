@@ -13,7 +13,7 @@ from common import HERE, ROOT, RESOURCES, TARGETS
 
 RESULTS = HERE / "results"
 FIG = RESULTS / "figures"
-OLD = ROOT / "Thesis" / "gate2_05_cardoso_2026" / "trials"
+OLD = ROOT / "Research Article" / "gate2_05_cardoso_2026" / "trials"
 COLORS = {"historical": "#858d99", "corrected": "#087e8b"}
 
 

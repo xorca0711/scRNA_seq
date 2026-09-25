@@ -37,7 +37,7 @@ def main():
     post_floor.to_csv(lr / "post_subtype_floor_counts.csv", index=False)
     checks["minimum_scored_compartment_cells"] = {k: int(v) for k, v in
         post_floor[["scored_epithelial", "scored_fibroblast"]].min().to_dict().items()}
-    historical = ROOT / "Thesis" / "gate2_05_cardoso_2026" / "trials"
+    historical = ROOT / "Research Article" / "gate2_05_cardoso_2026" / "trials"
     old = pd.read_csv(historical / "c12_cellchatdb_full_resource_scan" / "c12_per_donor_pairs.csv")
     hashes = {}
     receptor_coverage = []

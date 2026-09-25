@@ -29,9 +29,10 @@ def _repo_rel(p) -> str:
     # Recorded on another OS or checkout: rebase at the first repo-level
     # directory name, independent of the path separator in the old record.
     parts = [part for part in value.split("/") if part]
-    for anchor in ("raw_data", "analysis", "docs", "Thesis"):
+    for anchor in ("raw_data", "analysis", "docs", "Research Article", "Thesis"):
         if anchor in parts:
-            return "/".join(parts[parts.index(anchor):])
+            relative = "/".join(parts[parts.index(anchor):])
+            return relative.replace('Thesis/', 'Research Article/', 1) if anchor == 'Thesis' else relative
     return value
 
 
@@ -130,8 +131,8 @@ def build(dataset: str) -> tuple[str, str]:
 >
 > | Series | Species | Samples | Outputs |
 > |---|---|---|---|
-> | **GSE262927** (this report) | mouse | 33 | `Thesis/gate1_01_niethamer_2025/GSE262927/` |
-> | GSE178360 | human | 3 | `Thesis/ungated_murthy_2022/GSE178360/` |
+> | **GSE262927** (this report) | mouse | 33 | `Research Article/gate1_01_niethamer_2025/GSE262927/` |
+> | GSE178360 | human | 3 | `Research Article/ungated_murthy_2022/GSE178360/` |
 >
 > GSE178360 also ships four pre-processed Seurat `.RDS` objects
 > (epithelial / endothelial / mesenchymal / immune subsets). They are valid

@@ -1,8 +1,11 @@
 *.pdf binary
 
+# Migration archives retain original hashes, including line endings.
+docs/migrations/2026-09-25-research-layout/** -text whitespace=cr-at-eol
+
 # Preserve exact bytes in correction sources and evidence with recorded hashes.
 analysis/corrections/** -text whitespace=cr-at-eol
-Thesis/epithelial_state_specificity/** -text whitespace=cr-at-eol
+"Research Article/epithelial_state_specificity/**" -text whitespace=cr-at-eol
 
 # These generators emit harmless trailing spaces; keep their original output.
 analysis/corrections/ligand/results/figures/*.svg whitespace=cr-at-eol,-blank-at-eol
@@ -17,12 +20,12 @@ analysis/scripts/19_prepare_il1b_rq_figures.py -text whitespace=cr-at-eol
 analysis/scripts/20_render_il1b_rq_figures.py -text whitespace=cr-at-eol
 analysis/scripts/21_validate_il1b_rq_figures.py -text whitespace=cr-at-eol
 analysis/figures/rq/rq_a1[124]_*.svg whitespace=cr-at-eol,-blank-at-eol
-Thesis/gate1_03_nabhan_2018/** -text whitespace=cr-at-eol
+"Research Article/gate1_03_nabhan_2018/**" -text whitespace=cr-at-eol
 # Preserve generated figure and downloaded source bytes used by provenance hashes.
-Thesis/gate1_03_nabhan_2018/**/figures/*.svg whitespace=cr-at-eol,-blank-at-eol
-Thesis/gate1_03_nabhan_2018/external_feasibility/GSE129605_supplementary_index.html whitespace=cr-at-eol,-blank-at-eol
+"Research Article/gate1_03_nabhan_2018/**/figures/*.svg" whitespace=cr-at-eol,-blank-at-eol
+"Research Article/gate1_03_nabhan_2018/external_feasibility/GSE129605_supplementary_index.html" whitespace=cr-at-eol,-blank-at-eol
 
 # Preserve the review branch's exact analysis inputs, scripts and evidence hashes.
-Thesis/gate2_C3_yu_lee_choi_min_2026/** -text whitespace=cr-at-eol
-Thesis/gate2_C3_yu_lee_choi_min_2026/figures/*.svg whitespace=cr-at-eol,-blank-at-eol
-Thesis/gate2_C3_yu_lee_choi_min_2026/trials/**/*R_session.txt whitespace=cr-at-eol,-blank-at-eol
+"Research Article/gate2_C3_yu_lee_choi_min_2026/**" -text whitespace=cr-at-eol
+"Research Article/gate2_C3_yu_lee_choi_min_2026/figures/*.svg" whitespace=cr-at-eol,-blank-at-eol
+"Research Article/gate2_C3_yu_lee_choi_min_2026/trials/**/*R_session.txt" whitespace=cr-at-eol,-blank-at-eol

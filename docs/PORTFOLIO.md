@@ -55,7 +55,7 @@ DNA-replication lead remains limited by phase/age/round confounding and by its
 reassessment with sample-level uncertainty.
 
 Read the [statistical correction](../analysis/corrections/statistics/README.md).
-The connected [epithelial specificity project](../Thesis/epithelial_state_specificity/README.md)
+The connected [epithelial specificity project](../Research%20Article/epithelial_state_specificity/README.md)
 adds explicit injury, development and genotype contrasts, source-defined gene
 sets and an external-study eligibility assessment. It does not infer cellular
 fate from a chromatin proxy.

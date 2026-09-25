@@ -8,6 +8,8 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
+sys.path.insert(0, str(ROOT))
+from analysis.lib.repository_paths import recorded_file
 site = ROOT / '.venv-x64/Lib/site-packages'
 if site.is_dir():
     sys.path.insert(0, str(site))
@@ -28,7 +30,7 @@ class StatisticalCorrectionChecks(unittest.TestCase):
             self.assertEqual(len(set(arr['genes'])), len(arr['genes']))
 
     def test_w1_independent_reference_residuals(self):
-        old = pd.read_csv(ROOT / 'Thesis/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_sets.csv')
+        old = pd.read_csv(ROOT / 'Research Article/gate1_01_niethamer_2025/trials/w1_amac_pseudobulk_de/w1_sets.csv')
         new = pd.read_csv(HERE / 'tables/w1_reference_camera.csv')
         joined = old[old.tested].merge(new[new.method=='historical_logCPM'],on=['contrast','set'],validate='one_to_one')
         self.assertEqual(len(joined), 10)
@@ -42,7 +44,7 @@ class StatisticalCorrectionChecks(unittest.TestCase):
         np.testing.assert_array_equal(joined['size'].to_numpy(),joined.NGenes.to_numpy())
 
     def test_multiplicity_uses_complete_discovery(self):
-        frozen = pd.read_csv(ROOT / 'Thesis/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_replication.csv')
+        frozen = pd.read_csv(ROOT / 'Research Article/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_replication.csv')
         for cohort in ['GSE136831','GSE135893']:
             allsets = pd.read_csv(HERE / 'cache' / f'{cohort}_camera_allsets.csv.gz')
             self.assertTrue(allsets.PValue.between(0,1).all())
@@ -91,14 +93,14 @@ class StatisticalCorrectionChecks(unittest.TestCase):
         record = json.loads((HERE / 'run_record.json').read_text())
         for section in ['historical_inputs','gene_set_inputs','code','outputs']:
             for entry in record[section]:
-                self.assertEqual(hashlib.sha256((ROOT / entry['path']).read_bytes()).hexdigest(),entry['sha256'],entry['path'])
+                self.assertEqual(hashlib.sha256(recorded_file(ROOT, entry['path'], entry['sha256']).read_bytes()).hexdigest(),entry['sha256'],entry['path'])
 
     def test_gene_sets_match_frozen_libraries(self):
         for trial in ['g1_gsea_by_phase','g2_gsea_ipf']:
             tag = trial.split('_')[0]
-            record = json.loads((ROOT / 'Thesis/gate1_01_niethamer_2025/trials' / trial / f'{tag}_run_record.json').read_text())
+            record = json.loads((ROOT / 'Research Article/gate1_01_niethamer_2025/trials' / trial / f'{tag}_run_record.json').read_text())
             for facts in record['results']['gene_set_files'].values():
-                self.assertEqual(hashlib.sha256((ROOT / facts['file']).read_bytes()).hexdigest(),facts['sha256'])
+                self.assertEqual(hashlib.sha256(recorded_file(ROOT, facts['file'], facts['sha256']).read_bytes()).hexdigest(),facts['sha256'])
 
 
 if __name__ == '__main__':

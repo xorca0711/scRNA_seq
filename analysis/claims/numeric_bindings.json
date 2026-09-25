@@ -8,7 +8,7 @@
         "C3"
       ],
       "kind": "csv",
-      "path": "Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/tables/icap_abundance_per_sample.csv",
+      "path": "Research Article/gate1_01_niethamer_2025/GSE262927/regeneration_focus/tables/icap_abundance_per_sample.csv",
       "where": {
         "day": "366.0"
       },
@@ -24,7 +24,7 @@
         "C165"
       ],
       "kind": "csv",
-      "path": "Thesis/epithelial_state_specificity/results/within_unit_effects.csv",
+      "path": "Research Article/epithelial_state_specificity/results/within_unit_effects.csv",
       "where": {
         "unit": "P9_control",
         "seed": "17",
@@ -43,7 +43,7 @@
         "C165"
       ],
       "kind": "csv",
-      "path": "Thesis/epithelial_state_specificity/results/within_unit_effects.csv",
+      "path": "Research Article/epithelial_state_specificity/results/within_unit_effects.csv",
       "where": {
         "unit": "P9_control",
         "seed": "29",
@@ -62,7 +62,7 @@
         "C165"
       ],
       "kind": "csv",
-      "path": "Thesis/epithelial_state_specificity/results/within_unit_effects.csv",
+      "path": "Research Article/epithelial_state_specificity/results/within_unit_effects.csv",
       "where": {
         "unit": "SeV_control",
         "seed": "17",
@@ -81,7 +81,7 @@
         "C165"
       ],
       "kind": "csv",
-      "path": "Thesis/epithelial_state_specificity/results/within_unit_effects.csv",
+      "path": "Research Article/epithelial_state_specificity/results/within_unit_effects.csv",
       "where": {
         "unit": "SeV_control",
         "seed": "29",
@@ -100,7 +100,7 @@
         "C168"
       ],
       "kind": "csv",
-      "path": "Thesis/epithelial_state_specificity/results/module_overlap.csv",
+      "path": "Research Article/epithelial_state_specificity/results/module_overlap.csv",
       "where": {
         "module_a": "ADI_published_holdout",
         "module_b": "AT1_published_holdout"

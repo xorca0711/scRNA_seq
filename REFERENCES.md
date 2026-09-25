@@ -25,7 +25,7 @@ Preprint: *A longitudinal atlas of post-viral lung regeneration reveals persiste
 **Nature** 2022;604(7904):111–119.
 DOI: [10.1038/s41586-022-04541-3](https://doi.org/10.1038/s41586-022-04541-3) · PMID [35355018](https://pubmed.ncbi.nlm.nih.gov/35355018/)
 
-**Data:** GEO [GSE178360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178360), the three healthy-donor distal-lung samples analysed in [`Thesis/ungated_murthy_2022/GSE178360/`](Thesis/ungated_murthy_2022/GSE178360/README.md)
+**Data:** GEO [GSE178360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178360), the three healthy-donor distal-lung samples analysed in [`Research Article/ungated_murthy_2022/GSE178360/`](Research%20Article/ungated_murthy_2022/GSE178360/README.md)
 
 ---
 
@@ -91,9 +91,9 @@ Reference genome: mm39 / GRCm39.
 
 ---
 
-## Roadmap papers (`Thesis/`)
+## Roadmap papers (`Research Article/`)
 
-The ordered paper roadmap followed in [`Thesis/README.md`](Thesis/README.md);
+The ordered paper roadmap followed in [`Research Article/README.md`](Research%20Article/README.md);
 DOIs and PMIDs verified against PubMed on 2026-09-09. Only papers with a
 study note in the repository get a full citation block; the rest are listed
 so the order is visible here too.
@@ -105,7 +105,7 @@ so the order is visible here too.
 **Cell Stem Cell** 2020;27(3):366-382.e7.
 DOI: [10.1016/j.stem.2020.06.020](https://doi.org/10.1016/j.stem.2020.06.020) · PMID [32750316](https://pubmed.ncbi.nlm.nih.gov/32750316/) · PMC [PMC7487779](https://pmc.ncbi.nlm.nih.gov/articles/PMC7487779/)
 Data: GEO [GSE145031](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE145031) (scRNA-seq, AT2 lineage tracing), [GSE144468](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144468) (scRNA-seq, AT2 organoids), [GSE144598](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144598) (ATAC-seq, bigwig coverage only), [GSE144553](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144553) (SuperSeries)
-Study note: [`Thesis/gate1_02_choi_2020/README.md`](Thesis/gate1_02_choi_2020/README.md), written 2026-09-15 at the owner's direction after reading (the AI-written note of 2026-09-13 was withdrawn, DEVELOPMENT decision 21, and stays in git history at PR #19). Trials D0 to D7 with corrected passes D2b and D5b: [`Thesis/gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md`](Thesis/gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md), indexed in [`Thesis/gate1_02_choi_2020/trials/README.md`](Thesis/gate1_02_choi_2020/trials/README.md); extract [`choi_2020_extracts.json`](Thesis/gate1_02_choi_2020/choi_2020_extracts.json).
+Study note: [`Research Article/gate1_02_choi_2020/README.md`](Research%20Article/gate1_02_choi_2020/README.md), written 2026-09-15 at the owner's direction after reading (the AI-written note of 2026-09-13 was withdrawn, DEVELOPMENT decision 21, and stays in git history at PR #19). Trials D0 to D7 with corrected passes D2b and D5b: [`Research Article/gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md`](Research%20Article/gate1_02_choi_2020/ANALYSIS_TRIAL_PLAN.md), indexed in [`Research Article/gate1_02_choi_2020/trials/README.md`](Research%20Article/gate1_02_choi_2020/trials/README.md); extract [`choi_2020_extracts.json`](Research%20Article/gate1_02_choi_2020/choi_2020_extracts.json).
 
 A note on how this paper was read: the full text was taken from the Europe PMC
 XML rather than the PMC web rendering, because that rendering strips italicised
@@ -119,7 +119,7 @@ gene symbols and would have left every marker set in the extract empty.
 DOI: [10.1038/s41591-023-02327-2](https://doi.org/10.1038/s41591-023-02327-2) · PMID [37291214](https://pubmed.ncbi.nlm.nih.gov/37291214/) · Licence: CC BY 4.0
 Data: cellxgene collection `6f6d381a-7701-4781-935c-db10d30de293`; reference model Zenodo [10.5281/zenodo.7599104](https://doi.org/10.5281/zenodo.7599104)
 Code: [github.com/LungCellAtlas/HLCA](https://github.com/LungCellAtlas/HLCA) · [HLCA_reproducibility](https://github.com/LungCellAtlas/HLCA_reproducibility) · [mapping_data_to_the_HLCA](https://github.com/LungCellAtlas/mapping_data_to_the_HLCA)
-Study note: [`Thesis/gate1_04_sikkema_2023_hlca/README.md`](Thesis/gate1_04_sikkema_2023_hlca/README.md)
+Study note: [`Research Article/gate1_04_sikkema_2023_hlca/README.md`](Research%20Article/gate1_04_sikkema_2023_hlca/README.md)
 
 Benchmark framework used by the HLCA:
 **Luecken MD, Buttner M, Chaichoompu K, et al.** *Benchmarking atlas-level data integration in single-cell genomics.*
@@ -132,7 +132,7 @@ Benchmark framework used by the HLCA:
 **Nature** 2026;653(8113):254-264.
 DOI: [10.1038/s41586-026-10399-6](https://doi.org/10.1038/s41586-026-10399-6) · PMID [42020743](https://pubmed.ncbi.nlm.nih.gov/42020743/) · PMC [PMC13149335](https://pmc.ncbi.nlm.nih.gov/articles/PMC13149335/) · Licence: CC BY 4.0
 Data: GEO [GSE316241](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316241) (mesenchyme) · [GSE316243](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316243) (immune and stroma) · [GSE316244](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316244) (Areg-flox arm) · [GSE310335](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310335) (human alveolar organoids)
-Study note: [`Thesis/gate2_05_cardoso_2026/README.md`](Thesis/gate2_05_cardoso_2026/README.md)
+Study note: [`Research Article/gate2_05_cardoso_2026/README.md`](Research%20Article/gate2_05_cardoso_2026/README.md)
 
 **The companion paper its communication analysis depends on**, and the source of the
 lineage-labelled mutant epithelial cells that analysis uses. The Nature paper's data-availability
@@ -177,7 +177,7 @@ Data: GEO [GSE310539](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE3105
 DOI: [10.1038/s41467-024-48632-3](https://doi.org/10.1038/s41467-024-48632-3) · PMID [38755149](https://pubmed.ncbi.nlm.nih.gov/38755149/) · PMC [PMC11099190](https://pmc.ncbi.nlm.nih.gov/articles/PMC11099190/)
 Data: GEO [GSE247130](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247130) (10x multiome, 6 wells in 3 aggregates; **the deposited barcode-suffix order is inverted**, claim C116) · [GSE247271](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247271) (CEBPA and NKX2-1 ChIP-seq; not used) · [GSE264098](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264098) (developmental scATAC; not used)
 
-Branch notes: [`Thesis/gate1_02_choi_2020/datp_epigenetics/README.md`](Thesis/gate1_02_choi_2020/datp_epigenetics/README.md) and [`Thesis/gate1_02_choi_2020/axin2_il1r1/README.md`](Thesis/gate1_02_choi_2020/axin2_il1r1/README.md).
+Branch notes: [`Research Article/gate1_02_choi_2020/datp_epigenetics/README.md`](Research%20Article/gate1_02_choi_2020/datp_epigenetics/README.md) and [`Research Article/gate1_02_choi_2020/axin2_il1r1/README.md`](Research%20Article/gate1_02_choi_2020/axin2_il1r1/README.md).
 
 **Primary literature the Axin2 and Il1r1 assessment rests on**, DOIs verified on 2026-09-20:
 Zacharias WJ, et al. *Regeneration of the lung alveolus by an evolutionarily conserved epithelial progenitor.* **Nature** 2018. DOI [10.1038/nature25786](https://doi.org/10.1038/nature25786) (the AEP subset, about 20 per cent).
@@ -224,13 +224,13 @@ Read at the backbone step that uses them, not as a gate. Metadata verified again
 
 ## IL-1beta review branch, 24 September 2026
 
-The [Yu, Lee, Choi_Min and Choi review branch](Thesis/gate2_C3_yu_lee_choi_min_2026/README.md)
+The [Yu, Lee, Choi_Min and Choi review branch](Research%20Article/gate2_C3_yu_lee_choi_min_2026/README.md)
 uses the primary studies below to define context-specific analyses. The owner
 authorized staged execution: seven GSE300288 libraries passed QC/clustering,
 two existing IPF cohorts completed pathway fits, and GSE136831 completed an
 initial 25-donor descriptive ligand-receptor pass. The full study remains
-incomplete; see the [initial report](Thesis/gate2_C3_yu_lee_choi_min_2026/INITIAL_RUN_REPORT.md).
-The [dataset inventory](Thesis/gate2_C3_yu_lee_choi_min_2026/DATASETS.md)
+incomplete; see the [initial report](Research%20Article/gate2_C3_yu_lee_choi_min_2026/INITIAL_RUN_REPORT.md).
+The [dataset inventory](Research%20Article/gate2_C3_yu_lee_choi_min_2026/DATASETS.md)
 records all accessions, direct GEO links, assay roles and limitations.
 
 - Yu S, Lee SH, Choi MS, Choi J. *IL-1beta signaling as a molecular arbiter of stem cell plasticity: orchestrating the niches of repair, fibrosis, and cancer.* Seminars in Immunology 2026;83:102050. [DOI](https://doi.org/10.1016/j.smim.2026.102050). Review; generates no new dataset.

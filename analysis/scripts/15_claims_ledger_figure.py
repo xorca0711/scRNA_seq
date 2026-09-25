@@ -40,7 +40,7 @@ OUT_DIR = REPO / "analysis" / "figures"
 OUT = OUT_DIR / "claims_ledger.png"
 TABLE = OUT_DIR / "claims_ledger.csv"
 
-sys.path.insert(0, str(REPO / "Thesis" / "gate2_05_cardoso_2026" / "trials"))
+sys.path.insert(0, str(REPO / "Research Article" / "gate2_05_cardoso_2026" / "trials"))
 import viz_style as V  # noqa: E402
 from claim_contract import FAMILIES, claim_family, parse_register
 

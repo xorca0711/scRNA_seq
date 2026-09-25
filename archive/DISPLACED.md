@@ -39,7 +39,7 @@ injury. Re-derived here on the 25-sample annotated cohort
 (5,694 alveolar epithelial cells) with PAGA topology and diffusion pseudotime
 rooted in AT2:
 
-![Alveolar pseudotime](../Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/figures/UMAP_alveolar_pseudotime.png)
+![Alveolar pseudotime](../Research%20Article/gate1_01_niethamer_2025/GSE262927/regeneration_focus/figures/UMAP_alveolar_pseudotime.png)
 
 With the deposited labels held out, pseudotime orders them exactly as the
 model predicts: **AT2 0.013 → transitional 0.179 → AT1/AT2 0.237 → AT1
@@ -48,9 +48,9 @@ like a true intermediate in time as well: the **median per-animal proportion**
 peaks at **27.4% of alveolar epithelium at 11 dpi** and collapses to **0.3% by
 366 dpi**.
 
-![Transitional state time course](../Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/figures/transitional_timecourse.png)
+![Transitional state time course](../Research%20Article/gate1_01_niethamer_2025/GSE262927/regeneration_focus/figures/transitional_timecourse.png)
 
-Detail: [`Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/`](../Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/) ·
+Detail: [`Thesis/gate1_01_niethamer_2025/GSE262927/regeneration_focus/`](../Research%20Article/gate1_01_niethamer_2025/GSE262927/regeneration_focus/) ·
 script [`06_regeneration_focus.py`](../analysis/scripts/06_regeneration_focus.py)
 
 ## 2. Human epithelial states in the reference orientation
@@ -73,14 +73,14 @@ labels. In particular, Leiden 4 is separated as the thesis-relevant
 candidate. Reference states not separately resolved by this embedding are
 listed on the figure rather than invented.
 
-![Reference-oriented human epithelial UMAP](../Thesis/ungated_murthy_2022/GSE178360/epithelial_subanalysis/figures/reference_aligned/epithelial_UMAP_proposed_reference_aligned.png)
+![Reference-oriented human epithelial UMAP](../Research%20Article/ungated_murthy_2022/GSE178360/epithelial_subanalysis/figures/reference_aligned/epithelial_UMAP_proposed_reference_aligned.png)
 
 The primary feature panel uses the identical cells and display transform for
 `KRT8`, `CLDN4`, `KRT17` and `SFN`. Separate epithelial reference-marker and
 off-compartment control panels are provided alongside individual high-resolution
 plots under `epithelial_subanalysis/figures/reference_aligned/`.
 
-![Reference-oriented primary epithelial markers](../Thesis/ungated_murthy_2022/GSE178360/epithelial_subanalysis/figures/reference_aligned/epithelial_featureplots_KRT8_CLDN4_KRT17_SFN_reference_aligned.png)
+![Reference-oriented primary epithelial markers](../Research%20Article/ungated_murthy_2022/GSE178360/epithelial_subanalysis/figures/reference_aligned/epithelial_featureplots_KRT8_CLDN4_KRT17_SFN_reference_aligned.png)
 
 ## 3. Portfolio PDF
 

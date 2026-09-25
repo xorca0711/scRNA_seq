@@ -58,7 +58,7 @@ MYELOID = SERIES / "myeloid_focus"
 OUT = MYELOID / "batch_sensitivity"
 FIG = OUT / "figures"
 TAB = OUT / "tables"
-TABLE_S3 = REPO / "Thesis" / "Primary" / "Longitudinal single-cell profiles of lung regeneration" / "xlsx raw" / "mmc4.xlsx"
+TABLE_S3 = REPO / "Research Article" / "Primary" / "Longitudinal single-cell profiles of lung regeneration" / "xlsx raw" / "mmc4.xlsx"
 ROUND_CSV = TAB / "sample_infection_round.csv"
 
 CLUSTERS = ["5", "17", "24"]
@@ -73,7 +73,7 @@ K = 30
 REPS = {"X_pca": "uncorrected", "X_pca_harmony": "Harmony on infection round"}
 
 RULES = {
-    "object": "Thesis/gate1_01_niethamer_2025/GSE262927/processed/final_clustered.h5ad, read row-wise; never loaded fully",
+    "object": "Research Article/gate1_01_niethamer_2025/GSE262927/processed/final_clustered.h5ad, read row-wise; never loaded fully",
     "cells": "atlas Leiden clusters 5, 17, 24 within the 25-sample Ki67 atlas (as 11_myeloid_focus.py), restricted "
              f"to days where both infection rounds are present: {DAYS_TESTED} dpi. 0, 90 and 366 dpi are "
              "single-round and excluded",

@@ -1,0 +1,295 @@
+#!/usr/bin/env python
+"""Trial G1: gene set enrichment by repair phase, per animal, in the myeloid and
+capillary compartments of GSE262927.
+
+The gene-set layer of proposal W1 and the trial that G0 licensed first. Nothing
+here is a cell-level test: every ranking is a Welch t between arms of per-animal
+pseudobulks, and every enrichment statistic is drawn against a null of random
+gene sets, twice (gseapy's gene-label permutation, and an expression-matched
+random-set null of the kind trial M2 used).
+
+Rules, frozen before any count is read
+--------------------------------------
+R1  Unit: the animal (sample_id) of the annotated 25-animal cohort. An animal
+    enters a compartment only with at least 50 cells in it.
+R2  Compartments: myeloid = the cells of trial 11's myeloid embedding
+    (myeloid_focus/tables/myeloid_cell_metadata.csv) except the "other lineage"
+    label; capillary = the script 06 selection (atlas clusters 0, 1, 3, 21 minus 4)
+    within the annotated cohort. Pseudobulk = sum of raw counts per animal.
+R3  Arms: active repair = 6, 11, 19, 25 dpi pooled; injury resolution = 42 and 90
+    dpi pooled; long-term = 366 dpi; baseline (0 dpi, two animals) is a reference
+    band and enters no test. An arm with fewer than 3 animals after R1 stops the
+    contrast.
+R4  Contrasts: (PC) active repair against injury resolution, whose positive
+    control is HALLMARK_G2M_CHECKPOINT up in active repair in the myeloid
+    compartment at FDR < 0.05 (the immune proliferation phase the source paper
+    reports and trial N1 sees in the Ki67 trace at the animal level); (TEST)
+    injury resolution against long-term, in both compartments. If the positive
+    control fails, the TEST contrast in that compartment is reported as
+    unreadable and no set from it is registered.
+R5  Ranking: genes with at least 10 counts in at least 3 animals of the two arms;
+    log2 CPM on the compartment pseudobulk; Welch t, first arm minus second;
+    ties broken by mean difference then by name.
+R6  Gene sets: MSigDB 2024.1.Mm hallmark and GO biological process, read from
+    files whose sha256 is in the run record; sets of 15 to 500 genes after
+    intersection with the tested genes. The three repository sets G1 named in
+    the plan are NOT used, and this is recorded as an amendment made before the
+    run: the iCAP set has two genes, the ARG1 and ornithine circuit of paper 16
+    is not on disk as a list, and the aMAC reconstitution programme would be
+    derived from the same data and is circular.
+R7  Statistic: gseapy pre-ranked GSEA, weight 1, 1000 permutations, seed 0;
+    FDR is gseapy's. Every hallmark set's enrichment score is recomputed by an
+    in-house running sum and must agree to 1e-6, else the run refuses. Every
+    set at FDR < 0.05 in a TEST contrast, and the positive-control set, is then
+    drawn against 500 expression-matched random sets; a set counts as clearing
+    only if its matched p is also below 0.05.
+R8  Reading, fixed now: the TEST contrast has three animals in its long-term
+    arm, so nothing from it can be Validated. A set that clears both nulls in
+    one compartment is Exploratory; in both compartments, Descriptive only with
+    the direction stated. A set up in active repair over resolution (PC) that
+    does not differ between resolution and long-term is consistent with its
+    resolution having completed by 42 to 90 dpi, and that is the only
+    "persistence" reading this design admits: baseline cannot be tested.
+
+Outcome of the first run (2026-09-21, recorded here so the file stays true): the
+positive control failed in both compartments (G2M NES 0.40 in myeloid, 1.15 in
+capillary, neither at FDR < 0.05), so every TEST reading below is unreadable
+under R4. Trial N1's own cycling fractions show no early proliferation peak in
+either lineage, so the control was mis-specified for this deposit; the corrected
+gate is trial G1b, which sits beside this one and reads the same TEST tables.
+The first run also died while writing its record (a dictionary with tuple keys);
+this file was corrected and the run repeated, seed and rules unchanged.
+
+Outputs (g1_gsea_by_phase/): g1_units.csv, g1_hallmark_<contrast>_<compartment>.csv,
+g1_gobp_cleared.csv, g1_positive_control.csv, g1_matched_null.csv, g1_summary.md,
+g1_run_record.json; full rankings and GO tables as csv.gz (ignored, regenerable).
+"""
+from __future__ import annotations
+
+import sys
+import time
+from pathlib import Path
+
+import anndata as ad
+import numpy as np
+import pandas as pd
+
+HERE = Path(__file__).resolve().parent
+REPO = HERE.parents[2]
+sys.path.insert(0, str(HERE))
+sys.path.insert(0, str(REPO / "Research Article" / "gate1_04_sikkema_2023_hlca" / "trials"))
+sys.path.insert(0, str(REPO / "analysis" / "scripts"))
+from trial_utils import RunRecord, df_to_markdown  # noqa: E402
+from pipeline_utils import SERIES_DIRS  # noqa: E402
+import gsea_utils as gu  # noqa: E402
+
+MOUSE = SERIES_DIRS["GSE262927"]
+OUT = HERE / "g1_gsea_by_phase"
+SEED = 0
+CELL_FLOOR = 50
+ARM_FLOOR = 3
+PHASE = {0: "baseline", 6: "active repair", 11: "active repair", 19: "active repair", 25: "active repair",
+         42: "injury resolution", 90: "injury resolution", 366: "long-term"}
+CAPILLARY_CLUSTERS, CAPILLARY_DROP = ["0", "1", "3", "21"], ["4"]
+GMT = {"hallmark": gu.MSIGDB / "mh.all.v2024.1.Mm.symbols.gmt", "gobp": gu.MSIGDB / "m5.go.bp.v2024.1.Mm.symbols.gmt"}
+PC_SET = "HALLMARK_G2M_CHECKPOINT"
+RULES = {
+    "R1_unit": "animal; at least 50 cells per animal per compartment",
+    "R2_compartments": "myeloid = trial 11 cells minus 'other lineage'; capillary = clusters 0,1,3,21 minus 4, annotated cohort",
+    "R3_arms": {"active repair": [6, 11, 19, 25], "injury resolution": [42, 90], "long-term": [366], "baseline": "reference only",
+                "arm_floor": ARM_FLOOR},
+    "R4_contrasts": {"PC": "active repair vs injury resolution; positive control HALLMARK_G2M_CHECKPOINT up in active repair, myeloid, FDR < 0.05",
+                     "TEST": "injury resolution vs long-term, both compartments; unreadable if the PC fails in that compartment"},
+    "R5_ranking": "genes with >= 10 counts in >= 3 animals; log2 CPM; Welch t first minus second; deterministic ties",
+    "R6_gene_sets": "MSigDB 2024.1.Mm hallmark and GO BP, 15 to 500 genes after intersection; repository sets dropped (amendment before the run: 2-gene iCAP set, ARG1 circuit not on disk, aMAC programme circular)",
+    "R7_statistic": "gseapy prerank, weight 1, 1000 permutations, seed 0; in-house ES agreement to 1e-6; expression-matched null of 500 draws for cleared sets, matched p < 0.05 required",
+    "R8_reading": "TEST long-term arm has 3 animals: nothing Validated; both nulls in one compartment Exploratory, in both Descriptive only; baseline untestable",
+}
+
+
+def log(msg: str) -> None:
+    print(time.strftime("%H:%M:%S"), msg, flush=True)
+
+
+# ---------------------------------------------------------------------------
+# shared with G1b
+# ---------------------------------------------------------------------------
+def pseudobulk_compartments(rec: RunRecord, out: Path):
+    """Per-animal pseudobulk of the two compartments. Returns units, groups, pb, genes, day_of_animal."""
+    src = MOUSE / "processed" / "final_clustered.h5ad"
+    my_path = MOUSE / "myeloid_focus" / "tables" / "myeloid_cell_metadata.csv"
+    for p in (src, my_path):
+        rec.add_input(p)
+    log("reading obs")
+    a = ad.read_h5ad(src, backed="r")
+    obs = a.obs
+    genes = a.var["gene_symbol"].astype(str).to_numpy() if "gene_symbol" in a.var else a.var_names.astype(str).to_numpy()
+    n_cells = a.n_obs
+    annotated = obs["has_author_metadata"].astype(str).isin(["True", "true"]).to_numpy()
+    sample = obs["sample_id"].astype(str).to_numpy()
+    day = pd.to_numeric(obs["sacrifice_day"], errors="coerce").to_numpy()
+    cluster = obs["leiden_cluster"].astype(str).to_numpy()
+    obs_index = obs.index.astype(str)
+    a.file.close()
+
+    my = pd.read_csv(my_path)
+    my = my[my["label"] != "other lineage"]
+    my_mask = np.zeros(n_cells, dtype=bool)
+    my_mask[obs_index.get_indexer(my["cell_id"].astype(str))] = True
+    cap_mask = annotated & np.isin(cluster, CAPILLARY_CLUSTERS) & ~np.isin(cluster, CAPILLARY_DROP)
+    compartments = {"myeloid": my_mask & annotated, "capillary": cap_mask}
+
+    units, groups = [], []
+    group_of_cell = np.full(n_cells, -1, dtype=np.int64)
+    day_of = {}
+    for comp, mask in compartments.items():
+        for s in sorted(set(sample[mask])):
+            m = mask & (sample == s)
+            d = int(np.nanmedian(day[m]))
+            n = int(m.sum())
+            keep = n >= CELL_FLOOR
+            units.append({"compartment": comp, "animal": s, "day": d, "phase": PHASE[d], "cells": n, "kept": keep})
+            if keep:
+                group_of_cell[m] = len(groups)
+                groups.append((comp, s))
+                day_of[(comp, s)] = d
+    units = pd.DataFrame(units)
+    log(f"pseudobulk over {len(groups)} animal-compartments from {int((group_of_cell >= 0).sum()):,} cells")
+    pb = gu.pseudobulk_from_h5ad_counts(src, group_of_cell, len(groups))
+    units["counts"] = 0
+    for i, (comp, s) in enumerate(groups):
+        units.loc[(units.compartment == comp) & (units.animal == s), "counts"] = int(pb[i].sum())
+    units.to_csv(out / "g1_units.csv" if out == OUT else out / f"{out.name.split('_')[0]}_units.csv", index=False)
+    return units, groups, pb, genes, day_of
+
+
+def arm_indices(groups, day_of, comp: str, days: list[int]) -> np.ndarray:
+    return np.array([i for i, (c, s) in enumerate(groups) if c == comp and day_of[(c, s)] in days], dtype=int)
+
+
+def gsea_contrast(tag: str, pb, genes, idx1, idx2, sets, rec: RunRecord, out: Path, prefix: str):
+    """Rank one contrast and run both collections; returns (ranking, results) or None if stopped."""
+    if len(idx1) < ARM_FLOOR or len(idx2) < ARM_FLOOR:
+        rec.set(f"{tag}_verdict", f"stopped: {len(idx1)} against {len(idx2)} animals")
+        log(f"{tag}: stopped, {len(idx1)} against {len(idx2)} animals")
+        return None
+    ranking, facts = gu.ranking_between_arms(pb, genes, idx1, idx2)
+    ranking.to_csv(out / f"{prefix}_ranking_{tag}.csv.gz", index=False, compression="gzip")
+    rec.set(f"{tag}_ranking", {**facts, "animals": [int(len(idx1)), int(len(idx2))]})
+    log(f"{tag}: {len(idx1)} against {len(idx2)} animals, {facts['genes_tested']:,} genes ranked")
+    results = {coll: gu.run_prerank(ranking, gs, SEED, n_perm=1000) for coll, gs in sets.items()}
+    scores, gene_arr = ranking["t"].to_numpy(), ranking["gene"].to_numpy()
+    worst = max((abs(gu.enrichment_score(scores, np.isin(gene_arr, list(sets["hallmark"][r["set"]]))) - float(r["es"]))
+                 for _, r in results["hallmark"].iterrows()), default=0.0)
+    assert worst < 1e-6, f"{tag}: in-house ES disagrees with gseapy by {worst}"
+    rec.set(f"{tag}_es_agreement_max_abs_diff", float(worst))
+    results["hallmark"].to_csv(out / f"{prefix}_hallmark_{tag}.csv", index=False)
+    rec.add_output(out / f"{prefix}_hallmark_{tag}.csv")
+    if "gobp" in results:
+        results["gobp"].to_csv(out / f"{prefix}_gobp_{tag}.csv.gz", index=False, compression="gzip")
+    return ranking, results
+
+
+def matched_for(ranking, sets_coll: dict, rows: pd.DataFrame, rng) -> list[dict]:
+    scores, gene_arr = ranking["t"].to_numpy(), ranking["gene"].to_numpy()
+    out = []
+    for _, r in rows.iterrows():
+        hit = np.isin(gene_arr, list(sets_coll[r["set"]]))
+        null = gu.matched_random_null(scores, ranking["mean_logcpm"].to_numpy(), hit, 500, rng)
+        summ = gu.matched_null_summary(float(r["es"]), null)
+        out.append({"set": r["set"], "size": r["size"], "nes": float(r["nes"]), "fdr": float(r["fdr"]), **summ,
+                    "clears_both": bool(r["fdr"] < 0.05 and summ["matched_p"] < 0.05)})
+    return out
+
+
+# ---------------------------------------------------------------------------
+def main() -> int:
+    OUT.mkdir(exist_ok=True)
+    rec = RunRecord(OUT / "g1_run_record.json", "G1 gene set enrichment by phase, per animal, myeloid and capillary", RULES)
+    rec.set("gene_set_files", {k: gu.gene_set_facts(v) for k, v in GMT.items()})
+    units, groups, pb, genes, day_of = pseudobulk_compartments(rec, OUT)
+    rec.add_output(OUT / "g1_units.csv")
+    sets = {k: gu.read_gmt(v) for k, v in GMT.items()}
+    rng = np.random.default_rng(SEED)
+    arms = {"active repair": [6, 11, 19, 25], "injury resolution": [42, 90], "long-term": [366]}
+    contrasts = {"PC": ("active repair", "injury resolution"), "TEST": ("injury resolution", "long-term")}
+
+    pc_ok, pc_rows, matched_rows, cleared_go, verdicts = {}, [], [], [], {}
+    for comp in ("myeloid", "capillary"):
+        for cname, (a1, a2) in contrasts.items():
+            tag = f"{cname}_{comp}"
+            got = gsea_contrast(tag, pb, genes, arm_indices(groups, day_of, comp, arms[a1]),
+                                arm_indices(groups, day_of, comp, arms[a2]), sets, rec, OUT, "g1")
+            if got is None:
+                verdicts[tag] = rec.record["results"][f"{tag}_verdict"]
+                continue
+            ranking, res = got
+            hall = res["hallmark"]
+            if cname == "PC":
+                row = hall[hall["set"] == PC_SET]
+                ok = bool(len(row) and row["nes"].iloc[0] > 0 and row["fdr"].iloc[0] < 0.05)
+                pc_ok[comp] = ok
+                pc_rows.append({"compartment": comp, "set": PC_SET, "nes": float(row["nes"].iloc[0]) if len(row) else np.nan,
+                                "fdr": float(row["fdr"].iloc[0]) if len(row) else np.nan, "clears": ok, "required": comp == "myeloid"})
+                log(f"{tag}: positive control {'clears' if ok else 'FAILS'}")
+                for m in matched_for(ranking, sets["hallmark"], row, rng):
+                    matched_rows.append({"contrast": cname, "compartment": comp, "collection": "hallmark", **m})
+            else:
+                for m in matched_for(ranking, sets["hallmark"], hall[hall["fdr"] < 0.05], rng):
+                    matched_rows.append({"contrast": cname, "compartment": comp, "collection": "hallmark", **m})
+                go_c = res["gobp"][res["gobp"]["fdr"] < 0.05]
+                for m in matched_for(ranking, sets["gobp"], go_c, rng):
+                    cleared_go.append({"compartment": comp, **m})
+                verdicts[tag] = {"hallmark_fdr05": int((hall["fdr"] < 0.05).sum()), "gobp_fdr05": int(len(go_c))}
+
+    pd.DataFrame(pc_rows).to_csv(OUT / "g1_positive_control.csv", index=False)
+    matched = pd.DataFrame(matched_rows)
+    matched.to_csv(OUT / "g1_matched_null.csv", index=False)
+    go_cleared = pd.DataFrame(cleared_go)
+    go_cleared.to_csv(OUT / "g1_gobp_cleared.csv", index=False)
+    for name in ("g1_positive_control.csv", "g1_matched_null.csv", "g1_gobp_cleared.csv"):
+        rec.add_output(OUT / name)
+    rec.set("positive_control", pc_ok)
+    rec.set("contrast_verdicts", verdicts)
+    kept = units.groupby(["compartment", "phase"])["kept"].sum().astype(int)
+    rec.set("units_kept", {f"{c}/{p}": int(v) for (c, p), v in kept.items()})
+
+    md = ["# Trial G1: gene set enrichment by repair phase, per animal", "",
+          "Generated by `g1_gsea_by_phase.py`; rules R1 to R8 in the docstring and the run record,",
+          "frozen before any count was read. Unit: the animal. Engine: gseapy pre-ranked GSEA on",
+          "per-animal pseudobulk rankings, every hallmark enrichment score reproduced in-house, and",
+          "an expression-matched random-set null beside it.", "",
+          "## Animals per arm after the 50-cell floor", "",
+          df_to_markdown(units.groupby(["compartment", "phase"]).agg(animals=("kept", "sum"), cells=("cells", "sum")).reset_index(), index=False), "",
+          "## Positive control (active repair against injury resolution)", "",
+          df_to_markdown(pd.DataFrame(pc_rows).round(4), index=False) if pc_rows else "none computed", ""]
+    for comp in ("myeloid", "capillary"):
+        ok = pc_ok.get(comp)
+        md.append(f"- **{comp}**: the positive control {'clears' if ok else 'fails'}; the TEST contrast in this compartment is "
+                  + ("readable." if ok else "reported as unreadable (R4)."))
+    md += ["", "## TEST contrast (injury resolution against long-term): hallmark sets at gseapy FDR < 0.05", ""]
+    tm = matched[matched.contrast == "TEST"] if len(matched) else matched
+    md.append(df_to_markdown(tm.drop(columns=["contrast"]).round(4), index=False) if len(tm) else "no hallmark set at FDR < 0.05 in any TEST contrast")
+    md += ["", f"GO biological process sets at FDR < 0.05 in TEST contrasts: {len(go_cleared)}, of which "
+           f"{int(go_cleared['clears_both'].sum()) if len(go_cleared) else 0} also clear the matched null (`g1_gobp_cleared.csv`).", "",
+           "## Reading under R8", ""]
+    for comp in ("myeloid", "capillary"):
+        v = verdicts.get(f"TEST_{comp}")
+        if not isinstance(v, dict):
+            md.append(f"- {comp}: {v}.")
+            continue
+        both = tm[(tm.compartment == comp) & tm.clears_both] if len(tm) else tm
+        md.append(f"- {comp}: {v['hallmark_fdr05']} hallmark and {v['gobp_fdr05']} GO sets at FDR < 0.05; {len(both)} hallmark sets clear both nulls"
+                  + ("" if pc_ok.get(comp) else "; unreadable because the positive control failed") + ".")
+    md += ["", "Nothing here is Validated: the long-term arm holds three animals. Statuses proposed for the",
+           "register follow R8 and await the owner's retain or reject. Baseline was not tested. The",
+           "corrected positive control is trial G1b, beside this one."]
+    (OUT / "g1_summary.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+    rec.add_output(OUT / "g1_summary.md")
+    rec.finish()
+    log("done")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

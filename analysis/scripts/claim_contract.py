@@ -15,6 +15,7 @@ import math
 import re
 import statistics
 from pathlib import Path
+from urllib.parse import unquote
 
 REPO = Path(__file__).resolve().parents[2]
 MANIFEST = Path("analysis/claims/manifest.json")
@@ -85,6 +86,7 @@ def parse_register(text: str, root: Path) -> list[dict]:
                 unresolved.append(label)
         # Also retain Markdown file targets when evidence uses links.
         for target in re.findall(r"\]\(([^)]+)\)", artifact_text):
+            target = unquote(target.strip('<>'))
             if not target.startswith(("http:", "https:")) and (root / target.split("#")[0]).exists():
                 artifacts.append(target.split("#")[0])
         if "delegated reassessment" in status:

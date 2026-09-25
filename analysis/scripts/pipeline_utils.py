@@ -21,12 +21,12 @@ import pandas as pd
 REPO = Path(__file__).resolve().parents[2]
 RAW = REPO / "raw_data"
 ANALYSIS = REPO / "analysis"
-# Each series lives beside the paper that produced it, under Thesis/, since
+# Each series lives beside the paper that produced it, under Research Article/, since
 # 2026-09-21; analysis/ holds the shared pipeline, its config and the
 # repository-level figures only. See analysis/LAYOUT.md.
 SERIES_DIRS = {
-    "GSE262927": REPO / "Thesis" / "gate1_01_niethamer_2025" / "GSE262927",
-    "GSE178360": REPO / "Thesis" / "ungated_murthy_2022" / "GSE178360",
+    "GSE262927": REPO / "Research Article" / "gate1_01_niethamer_2025" / "GSE262927",
+    "GSE178360": REPO / "Research Article" / "ungated_murthy_2022" / "GSE178360",
 }
 
 RANDOM_SEED = 0
@@ -57,10 +57,10 @@ def gse262927(outdir: Path | None = None) -> DatasetConfig:
         raw_dir=RAW / "GSE262927" / "GSE262927_RAW",
         h5_glob="GSM*.h5",
         species="mouse",
-        # The series lives beside its source paper under Thesis/. The original
+        # The series lives beside its source paper under Research Article/. The original
         # brief put its outputs at analysis/figures/... and
         # analysis/processed/final_clustered.h5ad; they moved once to
-        # Thesis/gate1_01_niethamer_2025/GSE262927/ and once more here. See analysis/LAYOUT.md.
+        # Research Article/gate1_01_niethamer_2025/GSE262927/ and once more here. See analysis/LAYOUT.md.
         outdir=outdir or SERIES_DIRS["GSE262927"],
         sample_regex=r"^GSM\d+_(.+)\.h5$",
         metadata_csv=RAW / "GSE262927" / "GSE262927_CellMetaData.csv",
