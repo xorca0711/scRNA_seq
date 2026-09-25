@@ -36,9 +36,12 @@ that exchange, with the perturbation made only in the epithelium.
   outcomes and the species-assignment quality control. Hashes are in the contract.
 - **Deliberately not fetched.** The 303 MB count table. It is stage 3 input, and
   fetching it before the design gate would prejudge the gate.
-- **Done.** Stage 1, the identity and join audit.
-- **Next, for the owner.** Decide whether to pursue the unit question, and whether a
-  descriptive-only analysis is worth the 303 MB fetch on its own terms.
+- **Done.** Stage 1, the identity and join audit. A public data search, which found no
+  cohort that could validate this screen externally.
+- **Resolved since stage 1.** The count workbook names its two sheets by species, so
+  the epithelial and fibroblast compartments no longer have to be inferred.
+- **Still unresolved.** The biological unit. With no external cohort available, that is
+  now the binding constraint on how strongly any result can be read.
 
 ## The gate in one sentence
 
@@ -53,8 +56,11 @@ an animal, and the deposit does not say how many independent preparations there 
 | [PLAN.md](PLAN.md) | Four-stage structure, outcome, covariates, tests, holdout, decision rules |
 | [config/a10_outcome_contract.json](config/a10_outcome_contract.json) | The same, machine-readable, with cached file hashes |
 | [reports/STAGE1_IDENTITY_AUDIT.md](reports/STAGE1_IDENTITY_AUDIT.md) | What joined, why the unit is unresolved, and what stage 2 must assume |
-| `scripts/` | Stage 1 audit; later stages are written only after the owner reviews stage 1 |
-| `tables/` | Stage 1 outputs and its run record |
+| [reports/PUBLIC_DATA_SEARCH.md](reports/PUBLIC_DATA_SEARCH.md) | Whether any public cohort could validate A10, and why none can |
+| `scripts/01_audit_identities.py` | Stage 1: joins and units, metadata only |
+| `scripts/02_extract_counts.py` | Stage 3a: stream the two count sheets, cache the declared gene set |
+| `scripts/03_fit_outcome_models.py` | Stage 3b: nested models, leave-one-unit-out, plus assay validation |
+| `tables/` | Stage outputs and run records |
 | `cache/` | The three fetched metadata files; ignored, hashes tracked |
 
 ## Two things a later session must not do
