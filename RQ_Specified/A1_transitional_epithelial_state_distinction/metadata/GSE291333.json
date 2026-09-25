@@ -1,0 +1,786 @@
+{
+  "accession": "GSE291333",
+  "retrieved_at_utc": "2026-09-25T00:59:08.483526+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291333&targ=all&form=text&view=full",
+  "response_sha256": "84a1cfe0cfbce1435622ffa08b414eee2628db8b93dfeb22fa1670517cf41185",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "The iPSC-derived pulmonary epithelial cells in micro-patterned culture plate"
+    ],
+    "geo_accession": [
+      "GSE291333"
+    ],
+    "status": [
+      "Public on Feb 18 2026"
+    ],
+    "last_update_date": [
+      "Feb 19 2026"
+    ],
+    "pubmed_id": [
+      "41680175"
+    ],
+    "overall_design": [
+      "Human iPSC-derived lung progenitor cells were seeded onto micro-patterned plates and cultured in \"DCIK+3i\" (CHIR99021, SB431542 and Y27632) medium for 7 days to induce alveolar organoids involving alveolar type 2 cells in the DCIK+3i medium. Thereafter, the alveolar organoids were cultured in the following three conditions for 7 days: \"DCIK+3i\" to maintain alveolar type 2 cells, \"DCI+LATS(LATS-IN-1)\" to induce alveolar type 1 cells, or \"PAL\" to induce alveolar transitional state cells (iATCs), respectively. The organoids in each condition were dissociated using Accutase and subjected to CUT&TAG analysis."
+    ],
+    "type": [
+      "Genome binding/occupancy profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM8833580",
+      "GSM8833581",
+      "GSM8833582",
+      "GSM8833583",
+      "GSM8833584",
+      "GSM8833585",
+      "GSM8833586",
+      "GSM8833587",
+      "GSM8833588",
+      "GSM8833589",
+      "GSM8833590",
+      "GSM8833591"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE291nnn/GSE291333/suppl/GSE291333_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1232855"
+    ]
+  },
+  "sample_count": 12,
+  "samples": [
+    {
+      "accession": "GSM8833580",
+      "title": [
+        "iATCs_CUT1_H3K4me3"
+      ],
+      "geo_accession": [
+        "GSM8833580"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→PAL"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, or PAL medium to induce iATCs, respectively."
+      ],
+      "molecule_ch1": [
+        "other"
+      ],
+      "extract_protocol_ch1": [
+        "For the isolation of iAT2 and iAT1 cells, the cells cultured on micro-patterned plates were first stained with Hoechst-33342 for 30 minutes at 37°C, followed by incubation with Accutase at 37°C for 20 minutes and dissociation by gentle pipetting. For the isolation of iATCs, the cells were incubated with Accutase, gently dissociated by pipetting, and stained with an APC-conjugated anti-human CD54 antibody for 20 minutes at 4°C. Each positive cell population was then sorted using fluorescence-activated cell sorting.",
+        "To make the CUT&Tag libraries, the dissociated cells were washed with PBS supplemented with 1X Protease Inhibitor (Roche, # 11873580001), and subsequently washed with wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.25 mM spermidine, 1X Protease Inhibitor (Roche, # 11873580001)). Then, we resuspended 50,000 cells in 500 µl of the wash buffer supplemented with 5 mM sodium butyrate. We added 2 µl of the concanavalin A-conjugated magnetic beads to the cell suspension. Next, after magnetic separation of the beads and removal of the supernatant, we resuspended the beads in 50 µL of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, 2 mM EDTA, and 0.1% BSA together with 0.5 µl primary antibody against H3K4me3 (MAB Institute, MABI0304) and H3K27me3 (MAB Institute, MABI0323). After rotating incubation at room temperature for 3 hours, the buffer containing the primary antibody was replaced with 100 µl of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, together with 1 µl secondary rabbit anti-mouse IgG antibody (Abcam, #ab46540), and was incubated at 4 °C for overnight. After washing the beads with Dig-300 buffer (20 mM HEPES pH 7.5, 300 mM NaCl, 0.5 mM spermidine, 0.01% digitonin, 1X Protease Inhibitor (Roche, # 11873580001), 5 mM sodium butyrate) twice, we applied 100 µl of the Dig-300 buffer containing 3.6 femtomol pA-Tn5 transposome and incubated the mixture for 1 hour at room temperature. After washing the beads with the Dig-300 buffer twice, we resuspended the beads in 50 µl of the Dig-300 buffer supplemented with 10 mM MgCl2 and incubated them at 37 °C for 1 hour. We then removed the supernatant and resuspended the beads in 20 µl of 10 mM TAPS buffer (pH 8.5) together with 0.5 µl thermolabile proteinase K (NEB, #P8111S), and incubated the mixture at 37 °C for 30 minutes, followed by incubation at 55 °C for 20 minutes to inactivate the proteinase. We directly performed PCR-amplification of the library from the tube after adding the reaction mixture (KAPA BIOSYSTEMS, #KK2602) using index primers. The amplified libraries were purified with 1.3 volumes of AMPure XP beads."
+      ],
+      "description": [
+        "Library name: Sample 1"
+      ],
+      "data_processing": [
+        "We used “DNA-mapping” in snakePipes (v2.7.3) (PMID: 31134269) to trim adapter sequences with fastp (v0.23.2) (PMID: 38868435) and to subsequently map the remaining sequences with bowtie2 (v2.4.5) (PMID: 22388286) against the reference sequence created from the human T2T-CHM13v2.0 genome assembly without Y chromosome together with the complete genome sequence of Escherichia coli strain BL21 (GenBank: CP010816.1) and the 3XFlag-pA-Tn5-Fl plasmid sequence (Addgene, #124601).",
+        "We obtained a bam file only with properly-paired alignments mapped to the human chromosomes 1 to 22 and X with the MAPQ score greater than or equal to 10 using samtools view command (v1.15.1) (PMID: 19505943) with the option “-f 2 -F 256 -x XA -q 10.",
+        "We further created bigwig tracks from the bam files using “bamCoverage” in deeptools (v3.5.1) (PMID: 27079975) with the option “--binSize 25 --effectiveGenomeSize 3054815472 --normalizeUsing CPM\".",
+        "We called peaks with MACS2 callpeak (v2.2.7.1) (PMID: 18798982) with the option “-f BAM -g hs --nomodel” using the snakemake wrapper v2.1.0 in a snakemake workflow (PMID: 22908215).",
+        "Assembly: Human T2T-CHM13v2.0",
+        "Supplementary files format and content: BigWig files include signal intensity values across the genome for each sample",
+        "Library strategy: CUT&Tag"
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN47251448",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27909360"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8833nnn/GSM8833580/suppl/GSM8833580_iATCs_H3K4me3_CUT1.bw"
+      ]
+    },
+    {
+      "accession": "GSM8833581",
+      "title": [
+        "iAT2_CUT1_H3K4me3"
+      ],
+      "geo_accession": [
+        "GSM8833581"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→DCIK+3i"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, or PAL medium to induce iATCs, respectively."
+      ],
+      "molecule_ch1": [
+        "other"
+      ],
+      "extract_protocol_ch1": [
+        "For the isolation of iAT2 and iAT1 cells, the cells cultured on micro-patterned plates were first stained with Hoechst-33342 for 30 minutes at 37°C, followed by incubation with Accutase at 37°C for 20 minutes and dissociation by gentle pipetting. For the isolation of iATCs, the cells were incubated with Accutase, gently dissociated by pipetting, and stained with an APC-conjugated anti-human CD54 antibody for 20 minutes at 4°C. Each positive cell population was then sorted using fluorescence-activated cell sorting.",
+        "To make the CUT&Tag libraries, the dissociated cells were washed with PBS supplemented with 1X Protease Inhibitor (Roche, # 11873580001), and subsequently washed with wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.25 mM spermidine, 1X Protease Inhibitor (Roche, # 11873580001)). Then, we resuspended 50,000 cells in 500 µl of the wash buffer supplemented with 5 mM sodium butyrate. We added 2 µl of the concanavalin A-conjugated magnetic beads to the cell suspension. Next, after magnetic separation of the beads and removal of the supernatant, we resuspended the beads in 50 µL of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, 2 mM EDTA, and 0.1% BSA together with 0.5 µl primary antibody against H3K4me3 (MAB Institute, MABI0304) and H3K27me3 (MAB Institute, MABI0323). After rotating incubation at room temperature for 3 hours, the buffer containing the primary antibody was replaced with 100 µl of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, together with 1 µl secondary rabbit anti-mouse IgG antibody (Abcam, #ab46540), and was incubated at 4 °C for overnight. After washing the beads with Dig-300 buffer (20 mM HEPES pH 7.5, 300 mM NaCl, 0.5 mM spermidine, 0.01% digitonin, 1X Protease Inhibitor (Roche, # 11873580001), 5 mM sodium butyrate) twice, we applied 100 µl of the Dig-300 buffer containing 3.6 femtomol pA-Tn5 transposome and incubated the mixture for 1 hour at room temperature. After washing the beads with the Dig-300 buffer twice, we resuspended the beads in 50 µl of the Dig-300 buffer supplemented with 10 mM MgCl2 and incubated them at 37 °C for 1 hour. We then removed the supernatant and resuspended the beads in 20 µl of 10 mM TAPS buffer (pH 8.5) together with 0.5 µl thermolabile proteinase K (NEB, #P8111S), and incubated the mixture at 37 °C for 30 minutes, followed by incubation at 55 °C for 20 minutes to inactivate the proteinase. We directly performed PCR-amplification of the library from the tube after adding the reaction mixture (KAPA BIOSYSTEMS, #KK2602) using index primers. The amplified libraries were purified with 1.3 volumes of AMPure XP beads."
+      ],
+      "description": [
+        "Library name: Sample 2"
+      ],
+      "data_processing": [
+        "We used “DNA-mapping” in snakePipes (v2.7.3) (PMID: 31134269) to trim adapter sequences with fastp (v0.23.2) (PMID: 38868435) and to subsequently map the remaining sequences with bowtie2 (v2.4.5) (PMID: 22388286) against the reference sequence created from the human T2T-CHM13v2.0 genome assembly without Y chromosome together with the complete genome sequence of Escherichia coli strain BL21 (GenBank: CP010816.1) and the 3XFlag-pA-Tn5-Fl plasmid sequence (Addgene, #124601).",
+        "We obtained a bam file only with properly-paired alignments mapped to the human chromosomes 1 to 22 and X with the MAPQ score greater than or equal to 10 using samtools view command (v1.15.1) (PMID: 19505943) with the option “-f 2 -F 256 -x XA -q 10.",
+        "We further created bigwig tracks from the bam files using “bamCoverage” in deeptools (v3.5.1) (PMID: 27079975) with the option “--binSize 25 --effectiveGenomeSize 3054815472 --normalizeUsing CPM\".",
+        "We called peaks with MACS2 callpeak (v2.2.7.1) (PMID: 18798982) with the option “-f BAM -g hs --nomodel” using the snakemake wrapper v2.1.0 in a snakemake workflow (PMID: 22908215).",
+        "Assembly: Human T2T-CHM13v2.0",
+        "Supplementary files format and content: BigWig files include signal intensity values across the genome for each sample",
+        "Library strategy: CUT&Tag"
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN47251447",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27909361"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8833nnn/GSM8833581/suppl/GSM8833581_iAT2_H3K4me3_CUT1.bw"
+      ]
+    },
+    {
+      "accession": "GSM8833582",
+      "title": [
+        "iAT1_CUT1_H3K4me3"
+      ],
+      "geo_accession": [
+        "GSM8833582"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→DCI+LATS-IN-1"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, or PAL medium to induce iATCs, respectively."
+      ],
+      "molecule_ch1": [
+        "other"
+      ],
+      "extract_protocol_ch1": [
+        "For the isolation of iAT2 and iAT1 cells, the cells cultured on micro-patterned plates were first stained with Hoechst-33342 for 30 minutes at 37°C, followed by incubation with Accutase at 37°C for 20 minutes and dissociation by gentle pipetting. For the isolation of iATCs, the cells were incubated with Accutase, gently dissociated by pipetting, and stained with an APC-conjugated anti-human CD54 antibody for 20 minutes at 4°C. Each positive cell population was then sorted using fluorescence-activated cell sorting.",
+        "To make the CUT&Tag libraries, the dissociated cells were washed with PBS supplemented with 1X Protease Inhibitor (Roche, # 11873580001), and subsequently washed with wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.25 mM spermidine, 1X Protease Inhibitor (Roche, # 11873580001)). Then, we resuspended 50,000 cells in 500 µl of the wash buffer supplemented with 5 mM sodium butyrate. We added 2 µl of the concanavalin A-conjugated magnetic beads to the cell suspension. Next, after magnetic separation of the beads and removal of the supernatant, we resuspended the beads in 50 µL of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, 2 mM EDTA, and 0.1% BSA together with 0.5 µl primary antibody against H3K4me3 (MAB Institute, MABI0304) and H3K27me3 (MAB Institute, MABI0323). After rotating incubation at room temperature for 3 hours, the buffer containing the primary antibody was replaced with 100 µl of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, together with 1 µl secondary rabbit anti-mouse IgG antibody (Abcam, #ab46540), and was incubated at 4 °C for overnight. After washing the beads with Dig-300 buffer (20 mM HEPES pH 7.5, 300 mM NaCl, 0.5 mM spermidine, 0.01% digitonin, 1X Protease Inhibitor (Roche, # 11873580001), 5 mM sodium butyrate) twice, we applied 100 µl of the Dig-300 buffer containing 3.6 femtomol pA-Tn5 transposome and incubated the mixture for 1 hour at room temperature. After washing the beads with the Dig-300 buffer twice, we resuspended the beads in 50 µl of the Dig-300 buffer supplemented with 10 mM MgCl2 and incubated them at 37 °C for 1 hour. We then removed the supernatant and resuspended the beads in 20 µl of 10 mM TAPS buffer (pH 8.5) together with 0.5 µl thermolabile proteinase K (NEB, #P8111S), and incubated the mixture at 37 °C for 30 minutes, followed by incubation at 55 °C for 20 minutes to inactivate the proteinase. We directly performed PCR-amplification of the library from the tube after adding the reaction mixture (KAPA BIOSYSTEMS, #KK2602) using index primers. The amplified libraries were purified with 1.3 volumes of AMPure XP beads."
+      ],
+      "description": [
+        "Library name: Sample 3"
+      ],
+      "data_processing": [
+        "We used “DNA-mapping” in snakePipes (v2.7.3) (PMID: 31134269) to trim adapter sequences with fastp (v0.23.2) (PMID: 38868435) and to subsequently map the remaining sequences with bowtie2 (v2.4.5) (PMID: 22388286) against the reference sequence created from the human T2T-CHM13v2.0 genome assembly without Y chromosome together with the complete genome sequence of Escherichia coli strain BL21 (GenBank: CP010816.1) and the 3XFlag-pA-Tn5-Fl plasmid sequence (Addgene, #124601).",
+        "We obtained a bam file only with properly-paired alignments mapped to the human chromosomes 1 to 22 and X with the MAPQ score greater than or equal to 10 using samtools view command (v1.15.1) (PMID: 19505943) with the option “-f 2 -F 256 -x XA -q 10.",
+        "We further created bigwig tracks from the bam files using “bamCoverage” in deeptools (v3.5.1) (PMID: 27079975) with the option “--binSize 25 --effectiveGenomeSize 3054815472 --normalizeUsing CPM\".",
+        "We called peaks with MACS2 callpeak (v2.2.7.1) (PMID: 18798982) with the option “-f BAM -g hs --nomodel” using the snakemake wrapper v2.1.0 in a snakemake workflow (PMID: 22908215).",
+        "Assembly: Human T2T-CHM13v2.0",
+        "Supplementary files format and content: BigWig files include signal intensity values across the genome for each sample",
+        "Library strategy: CUT&Tag"
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN47251446",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27909362"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8833nnn/GSM8833582/suppl/GSM8833582_iAT1_H3K4me3_CUT1.bw"
+      ]
+    },
+    {
+      "accession": "GSM8833583",
+      "title": [
+        "iATCs_CUT2_H3K4me3"
+      ],
+      "geo_accession": [
+        "GSM8833583"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→PAL"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, or PAL medium to induce iATCs, respectively."
+      ],
+      "molecule_ch1": [
+        "other"
+      ],
+      "extract_protocol_ch1": [
+        "For the isolation of iAT2 and iAT1 cells, the cells cultured on micro-patterned plates were first stained with Hoechst-33342 for 30 minutes at 37°C, followed by incubation with Accutase at 37°C for 20 minutes and dissociation by gentle pipetting. For the isolation of iATCs, the cells were incubated with Accutase, gently dissociated by pipetting, and stained with an APC-conjugated anti-human CD54 antibody for 20 minutes at 4°C. Each positive cell population was then sorted using fluorescence-activated cell sorting.",
+        "To make the CUT&Tag libraries, the dissociated cells were washed with PBS supplemented with 1X Protease Inhibitor (Roche, # 11873580001), and subsequently washed with wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.25 mM spermidine, 1X Protease Inhibitor (Roche, # 11873580001)). Then, we resuspended 50,000 cells in 500 µl of the wash buffer supplemented with 5 mM sodium butyrate. We added 2 µl of the concanavalin A-conjugated magnetic beads to the cell suspension. Next, after magnetic separation of the beads and removal of the supernatant, we resuspended the beads in 50 µL of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, 2 mM EDTA, and 0.1% BSA together with 0.5 µl primary antibody against H3K4me3 (MAB Institute, MABI0304) and H3K27me3 (MAB Institute, MABI0323). After rotating incubation at room temperature for 3 hours, the buffer containing the primary antibody was replaced with 100 µl of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, together with 1 µl secondary rabbit anti-mouse IgG antibody (Abcam, #ab46540), and was incubated at 4 °C for overnight. After washing the beads with Dig-300 buffer (20 mM HEPES pH 7.5, 300 mM NaCl, 0.5 mM spermidine, 0.01% digitonin, 1X Protease Inhibitor (Roche, # 11873580001), 5 mM sodium butyrate) twice, we applied 100 µl of the Dig-300 buffer containing 3.6 femtomol pA-Tn5 transposome and incubated the mixture for 1 hour at room temperature. After washing the beads with the Dig-300 buffer twice, we resuspended the beads in 50 µl of the Dig-300 buffer supplemented with 10 mM MgCl2 and incubated them at 37 °C for 1 hour. We then removed the supernatant and resuspended the beads in 20 µl of 10 mM TAPS buffer (pH 8.5) together with 0.5 µl thermolabile proteinase K (NEB, #P8111S), and incubated the mixture at 37 °C for 30 minutes, followed by incubation at 55 °C for 20 minutes to inactivate the proteinase. We directly performed PCR-amplification of the library from the tube after adding the reaction mixture (KAPA BIOSYSTEMS, #KK2602) using index primers. The amplified libraries were purified with 1.3 volumes of AMPure XP beads."
+      ],
+      "description": [
+        "Library name: Sample 4"
+      ],
+      "data_processing": [
+        "We used “DNA-mapping” in snakePipes (v2.7.3) (PMID: 31134269) to trim adapter sequences with fastp (v0.23.2) (PMID: 38868435) and to subsequently map the remaining sequences with bowtie2 (v2.4.5) (PMID: 22388286) against the reference sequence created from the human T2T-CHM13v2.0 genome assembly without Y chromosome together with the complete genome sequence of Escherichia coli strain BL21 (GenBank: CP010816.1) and the 3XFlag-pA-Tn5-Fl plasmid sequence (Addgene, #124601).",
+        "We obtained a bam file only with properly-paired alignments mapped to the human chromosomes 1 to 22 and X with the MAPQ score greater than or equal to 10 using samtools view command (v1.15.1) (PMID: 19505943) with the option “-f 2 -F 256 -x XA -q 10.",
+        "We further created bigwig tracks from the bam files using “bamCoverage” in deeptools (v3.5.1) (PMID: 27079975) with the option “--binSize 25 --effectiveGenomeSize 3054815472 --normalizeUsing CPM\".",
+        "We called peaks with MACS2 callpeak (v2.2.7.1) (PMID: 18798982) with the option “-f BAM -g hs --nomodel” using the snakemake wrapper v2.1.0 in a snakemake workflow (PMID: 22908215).",
+        "Assembly: Human T2T-CHM13v2.0",
+        "Supplementary files format and content: BigWig files include signal intensity values across the genome for each sample",
+        "Library strategy: CUT&Tag"
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN47251445",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27909363"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8833nnn/GSM8833583/suppl/GSM8833583_iATCs_H3K4me3_CUT2.bw"
+      ]
+    },
+    {
+      "accession": "GSM8833584",
+      "title": [
+        "iAT2_CUT2_H3K4me3"
+      ],
+      "geo_accession": [
+        "GSM8833584"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→DCIK+3i"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, or PAL medium to induce iATCs, respectively."
+      ],
+      "molecule_ch1": [
+        "other"
+      ],
+      "extract_protocol_ch1": [
+        "For the isolation of iAT2 and iAT1 cells, the cells cultured on micro-patterned plates were first stained with Hoechst-33342 for 30 minutes at 37°C, followed by incubation with Accutase at 37°C for 20 minutes and dissociation by gentle pipetting. For the isolation of iATCs, the cells were incubated with Accutase, gently dissociated by pipetting, and stained with an APC-conjugated anti-human CD54 antibody for 20 minutes at 4°C. Each positive cell population was then sorted using fluorescence-activated cell sorting.",
+        "To make the CUT&Tag libraries, the dissociated cells were washed with PBS supplemented with 1X Protease Inhibitor (Roche, # 11873580001), and subsequently washed with wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.25 mM spermidine, 1X Protease Inhibitor (Roche, # 11873580001)). Then, we resuspended 50,000 cells in 500 µl of the wash buffer supplemented with 5 mM sodium butyrate. We added 2 µl of the concanavalin A-conjugated magnetic beads to the cell suspension. Next, after magnetic separation of the beads and removal of the supernatant, we resuspended the beads in 50 µL of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, 2 mM EDTA, and 0.1% BSA together with 0.5 µl primary antibody against H3K4me3 (MAB Institute, MABI0304) and H3K27me3 (MAB Institute, MABI0323). After rotating incubation at room temperature for 3 hours, the buffer containing the primary antibody was replaced with 100 µl of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, together with 1 µl secondary rabbit anti-mouse IgG antibody (Abcam, #ab46540), and was incubated at 4 °C for overnight. After washing the beads with Dig-300 buffer (20 mM HEPES pH 7.5, 300 mM NaCl, 0.5 mM spermidine, 0.01% digitonin, 1X Protease Inhibitor (Roche, # 11873580001), 5 mM sodium butyrate) twice, we applied 100 µl of the Dig-300 buffer containing 3.6 femtomol pA-Tn5 transposome and incubated the mixture for 1 hour at room temperature. After washing the beads with the Dig-300 buffer twice, we resuspended the beads in 50 µl of the Dig-300 buffer supplemented with 10 mM MgCl2 and incubated them at 37 °C for 1 hour. We then removed the supernatant and resuspended the beads in 20 µl of 10 mM TAPS buffer (pH 8.5) together with 0.5 µl thermolabile proteinase K (NEB, #P8111S), and incubated the mixture at 37 °C for 30 minutes, followed by incubation at 55 °C for 20 minutes to inactivate the proteinase. We directly performed PCR-amplification of the library from the tube after adding the reaction mixture (KAPA BIOSYSTEMS, #KK2602) using index primers. The amplified libraries were purified with 1.3 volumes of AMPure XP beads."
+      ],
+      "description": [
+        "Library name: Sample 5"
+      ],
+      "data_processing": [
+        "We used “DNA-mapping” in snakePipes (v2.7.3) (PMID: 31134269) to trim adapter sequences with fastp (v0.23.2) (PMID: 38868435) and to subsequently map the remaining sequences with bowtie2 (v2.4.5) (PMID: 22388286) against the reference sequence created from the human T2T-CHM13v2.0 genome assembly without Y chromosome together with the complete genome sequence of Escherichia coli strain BL21 (GenBank: CP010816.1) and the 3XFlag-pA-Tn5-Fl plasmid sequence (Addgene, #124601).",
+        "We obtained a bam file only with properly-paired alignments mapped to the human chromosomes 1 to 22 and X with the MAPQ score greater than or equal to 10 using samtools view command (v1.15.1) (PMID: 19505943) with the option “-f 2 -F 256 -x XA -q 10.",
+        "We further created bigwig tracks from the bam files using “bamCoverage” in deeptools (v3.5.1) (PMID: 27079975) with the option “--binSize 25 --effectiveGenomeSize 3054815472 --normalizeUsing CPM\".",
+        "We called peaks with MACS2 callpeak (v2.2.7.1) (PMID: 18798982) with the option “-f BAM -g hs --nomodel” using the snakemake wrapper v2.1.0 in a snakemake workflow (PMID: 22908215).",
+        "Assembly: Human T2T-CHM13v2.0",
+        "Supplementary files format and content: BigWig files include signal intensity values across the genome for each sample",
+        "Library strategy: CUT&Tag"
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN47251444",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27909364"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8833nnn/GSM8833584/suppl/GSM8833584_iAT2_H3K4me3_CUT2.bw"
+      ]
+    },
+    {
+      "accession": "GSM8833585",
+      "title": [
+        "iAT1_CUT2_H3K4me3"
+      ],
+      "geo_accession": [
+        "GSM8833585"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→DCI+LATS-IN-1"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, or PAL medium to induce iATCs, respectively."
+      ],
+      "molecule_ch1": [
+        "other"
+      ],
+      "extract_protocol_ch1": [
+        "For the isolation of iAT2 and iAT1 cells, the cells cultured on micro-patterned plates were first stained with Hoechst-33342 for 30 minutes at 37°C, followed by incubation with Accutase at 37°C for 20 minutes and dissociation by gentle pipetting. For the isolation of iATCs, the cells were incubated with Accutase, gently dissociated by pipetting, and stained with an APC-conjugated anti-human CD54 antibody for 20 minutes at 4°C. Each positive cell population was then sorted using fluorescence-activated cell sorting.",
+        "To make the CUT&Tag libraries, the dissociated cells were washed with PBS supplemented with 1X Protease Inhibitor (Roche, # 11873580001), and subsequently washed with wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.25 mM spermidine, 1X Protease Inhibitor (Roche, # 11873580001)). Then, we resuspended 50,000 cells in 500 µl of the wash buffer supplemented with 5 mM sodium butyrate. We added 2 µl of the concanavalin A-conjugated magnetic beads to the cell suspension. Next, after magnetic separation of the beads and removal of the supernatant, we resuspended the beads in 50 µL of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, 2 mM EDTA, and 0.1% BSA together with 0.5 µl primary antibody against H3K4me3 (MAB Institute, MABI0304) and H3K27me3 (MAB Institute, MABI0323). After rotating incubation at room temperature for 3 hours, the buffer containing the primary antibody was replaced with 100 µl of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, together with 1 µl secondary rabbit anti-mouse IgG antibody (Abcam, #ab46540), and was incubated at 4 °C for overnight. After washing the beads with Dig-300 buffer (20 mM HEPES pH 7.5, 300 mM NaCl, 0.5 mM spermidine, 0.01% digitonin, 1X Protease Inhibitor (Roche, # 11873580001), 5 mM sodium butyrate) twice, we applied 100 µl of the Dig-300 buffer containing 3.6 femtomol pA-Tn5 transposome and incubated the mixture for 1 hour at room temperature. After washing the beads with the Dig-300 buffer twice, we resuspended the beads in 50 µl of the Dig-300 buffer supplemented with 10 mM MgCl2 and incubated them at 37 °C for 1 hour. We then removed the supernatant and resuspended the beads in 20 µl of 10 mM TAPS buffer (pH 8.5) together with 0.5 µl thermolabile proteinase K (NEB, #P8111S), and incubated the mixture at 37 °C for 30 minutes, followed by incubation at 55 °C for 20 minutes to inactivate the proteinase. We directly performed PCR-amplification of the library from the tube after adding the reaction mixture (KAPA BIOSYSTEMS, #KK2602) using index primers. The amplified libraries were purified with 1.3 volumes of AMPure XP beads."
+      ],
+      "description": [
+        "Library name: Sample 6"
+      ],
+      "data_processing": [
+        "We used “DNA-mapping” in snakePipes (v2.7.3) (PMID: 31134269) to trim adapter sequences with fastp (v0.23.2) (PMID: 38868435) and to subsequently map the remaining sequences with bowtie2 (v2.4.5) (PMID: 22388286) against the reference sequence created from the human T2T-CHM13v2.0 genome assembly without Y chromosome together with the complete genome sequence of Escherichia coli strain BL21 (GenBank: CP010816.1) and the 3XFlag-pA-Tn5-Fl plasmid sequence (Addgene, #124601).",
+        "We obtained a bam file only with properly-paired alignments mapped to the human chromosomes 1 to 22 and X with the MAPQ score greater than or equal to 10 using samtools view command (v1.15.1) (PMID: 19505943) with the option “-f 2 -F 256 -x XA -q 10.",
+        "We further created bigwig tracks from the bam files using “bamCoverage” in deeptools (v3.5.1) (PMID: 27079975) with the option “--binSize 25 --effectiveGenomeSize 3054815472 --normalizeUsing CPM\".",
+        "We called peaks with MACS2 callpeak (v2.2.7.1) (PMID: 18798982) with the option “-f BAM -g hs --nomodel” using the snakemake wrapper v2.1.0 in a snakemake workflow (PMID: 22908215).",
+        "Assembly: Human T2T-CHM13v2.0",
+        "Supplementary files format and content: BigWig files include signal intensity values across the genome for each sample",
+        "Library strategy: CUT&Tag"
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN47251443",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27909365"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8833nnn/GSM8833585/suppl/GSM8833585_iAT1_H3K4me3_CUT2.bw"
+      ]
+    },
+    {
+      "accession": "GSM8833586",
+      "title": [
+        "iATCs_CUT1_H3K27me3"
+      ],
+      "geo_accession": [
+        "GSM8833586"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→PAL"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, or PAL medium to induce iATCs, respectively."
+      ],
+      "molecule_ch1": [
+        "other"
+      ],
+      "extract_protocol_ch1": [
+        "For the isolation of iAT2 and iAT1 cells, the cells cultured on micro-patterned plates were first stained with Hoechst-33342 for 30 minutes at 37°C, followed by incubation with Accutase at 37°C for 20 minutes and dissociation by gentle pipetting. For the isolation of iATCs, the cells were incubated with Accutase, gently dissociated by pipetting, and stained with an APC-conjugated anti-human CD54 antibody for 20 minutes at 4°C. Each positive cell population was then sorted using fluorescence-activated cell sorting.",
+        "To make the CUT&Tag libraries, the dissociated cells were washed with PBS supplemented with 1X Protease Inhibitor (Roche, # 11873580001), and subsequently washed with wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.25 mM spermidine, 1X Protease Inhibitor (Roche, # 11873580001)). Then, we resuspended 50,000 cells in 500 µl of the wash buffer supplemented with 5 mM sodium butyrate. We added 2 µl of the concanavalin A-conjugated magnetic beads to the cell suspension. Next, after magnetic separation of the beads and removal of the supernatant, we resuspended the beads in 50 µL of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, 2 mM EDTA, and 0.1% BSA together with 0.5 µl primary antibody against H3K4me3 (MAB Institute, MABI0304) and H3K27me3 (MAB Institute, MABI0323). After rotating incubation at room temperature for 3 hours, the buffer containing the primary antibody was replaced with 100 µl of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, together with 1 µl secondary rabbit anti-mouse IgG antibody (Abcam, #ab46540), and was incubated at 4 °C for overnight. After washing the beads with Dig-300 buffer (20 mM HEPES pH 7.5, 300 mM NaCl, 0.5 mM spermidine, 0.01% digitonin, 1X Protease Inhibitor (Roche, # 11873580001), 5 mM sodium butyrate) twice, we applied 100 µl of the Dig-300 buffer containing 3.6 femtomol pA-Tn5 transposome and incubated the mixture for 1 hour at room temperature. After washing the beads with the Dig-300 buffer twice, we resuspended the beads in 50 µl of the Dig-300 buffer supplemented with 10 mM MgCl2 and incubated them at 37 °C for 1 hour. We then removed the supernatant and resuspended the beads in 20 µl of 10 mM TAPS buffer (pH 8.5) together with 0.5 µl thermolabile proteinase K (NEB, #P8111S), and incubated the mixture at 37 °C for 30 minutes, followed by incubation at 55 °C for 20 minutes to inactivate the proteinase. We directly performed PCR-amplification of the library from the tube after adding the reaction mixture (KAPA BIOSYSTEMS, #KK2602) using index primers. The amplified libraries were purified with 1.3 volumes of AMPure XP beads."
+      ],
+      "description": [
+        "Library name: Sample 7"
+      ],
+      "data_processing": [
+        "We used “DNA-mapping” in snakePipes (v2.7.3) (PMID: 31134269) to trim adapter sequences with fastp (v0.23.2) (PMID: 38868435) and to subsequently map the remaining sequences with bowtie2 (v2.4.5) (PMID: 22388286) against the reference sequence created from the human T2T-CHM13v2.0 genome assembly without Y chromosome together with the complete genome sequence of Escherichia coli strain BL21 (GenBank: CP010816.1) and the 3XFlag-pA-Tn5-Fl plasmid sequence (Addgene, #124601).",
+        "We obtained a bam file only with properly-paired alignments mapped to the human chromosomes 1 to 22 and X with the MAPQ score greater than or equal to 10 using samtools view command (v1.15.1) (PMID: 19505943) with the option “-f 2 -F 256 -x XA -q 10.",
+        "We further created bigwig tracks from the bam files using “bamCoverage” in deeptools (v3.5.1) (PMID: 27079975) with the option “--binSize 25 --effectiveGenomeSize 3054815472 --normalizeUsing CPM\".",
+        "We called peaks with MACS2 callpeak (v2.2.7.1) (PMID: 18798982) with the option “-f BAM -g hs --nomodel” using the snakemake wrapper v2.1.0 in a snakemake workflow (PMID: 22908215).",
+        "Assembly: Human T2T-CHM13v2.0",
+        "Supplementary files format and content: BigWig files include signal intensity values across the genome for each sample",
+        "Library strategy: CUT&Tag"
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN47251442",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27909366"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8833nnn/GSM8833586/suppl/GSM8833586_iATCs_H3K27me3_CUT1.bw"
+      ]
+    },
+    {
+      "accession": "GSM8833587",
+      "title": [
+        "iAT2_CUT1_H3K27me3"
+      ],
+      "geo_accession": [
+        "GSM8833587"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→DCIK+3i"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, or PAL medium to induce iATCs, respectively."
+      ],
+      "molecule_ch1": [
+        "other"
+      ],
+      "extract_protocol_ch1": [
+        "For the isolation of iAT2 and iAT1 cells, the cells cultured on micro-patterned plates were first stained with Hoechst-33342 for 30 minutes at 37°C, followed by incubation with Accutase at 37°C for 20 minutes and dissociation by gentle pipetting. For the isolation of iATCs, the cells were incubated with Accutase, gently dissociated by pipetting, and stained with an APC-conjugated anti-human CD54 antibody for 20 minutes at 4°C. Each positive cell population was then sorted using fluorescence-activated cell sorting.",
+        "To make the CUT&Tag libraries, the dissociated cells were washed with PBS supplemented with 1X Protease Inhibitor (Roche, # 11873580001), and subsequently washed with wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.25 mM spermidine, 1X Protease Inhibitor (Roche, # 11873580001)). Then, we resuspended 50,000 cells in 500 µl of the wash buffer supplemented with 5 mM sodium butyrate. We added 2 µl of the concanavalin A-conjugated magnetic beads to the cell suspension. Next, after magnetic separation of the beads and removal of the supernatant, we resuspended the beads in 50 µL of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, 2 mM EDTA, and 0.1% BSA together with 0.5 µl primary antibody against H3K4me3 (MAB Institute, MABI0304) and H3K27me3 (MAB Institute, MABI0323). After rotating incubation at room temperature for 3 hours, the buffer containing the primary antibody was replaced with 100 µl of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, together with 1 µl secondary rabbit anti-mouse IgG antibody (Abcam, #ab46540), and was incubated at 4 °C for overnight. After washing the beads with Dig-300 buffer (20 mM HEPES pH 7.5, 300 mM NaCl, 0.5 mM spermidine, 0.01% digitonin, 1X Protease Inhibitor (Roche, # 11873580001), 5 mM sodium butyrate) twice, we applied 100 µl of the Dig-300 buffer containing 3.6 femtomol pA-Tn5 transposome and incubated the mixture for 1 hour at room temperature. After washing the beads with the Dig-300 buffer twice, we resuspended the beads in 50 µl of the Dig-300 buffer supplemented with 10 mM MgCl2 and incubated them at 37 °C for 1 hour. We then removed the supernatant and resuspended the beads in 20 µl of 10 mM TAPS buffer (pH 8.5) together with 0.5 µl thermolabile proteinase K (NEB, #P8111S), and incubated the mixture at 37 °C for 30 minutes, followed by incubation at 55 °C for 20 minutes to inactivate the proteinase. We directly performed PCR-amplification of the library from the tube after adding the reaction mixture (KAPA BIOSYSTEMS, #KK2602) using index primers. The amplified libraries were purified with 1.3 volumes of AMPure XP beads."
+      ],
+      "description": [
+        "Library name: Sample 8"
+      ],
+      "data_processing": [
+        "We used “DNA-mapping” in snakePipes (v2.7.3) (PMID: 31134269) to trim adapter sequences with fastp (v0.23.2) (PMID: 38868435) and to subsequently map the remaining sequences with bowtie2 (v2.4.5) (PMID: 22388286) against the reference sequence created from the human T2T-CHM13v2.0 genome assembly without Y chromosome together with the complete genome sequence of Escherichia coli strain BL21 (GenBank: CP010816.1) and the 3XFlag-pA-Tn5-Fl plasmid sequence (Addgene, #124601).",
+        "We obtained a bam file only with properly-paired alignments mapped to the human chromosomes 1 to 22 and X with the MAPQ score greater than or equal to 10 using samtools view command (v1.15.1) (PMID: 19505943) with the option “-f 2 -F 256 -x XA -q 10.",
+        "We further created bigwig tracks from the bam files using “bamCoverage” in deeptools (v3.5.1) (PMID: 27079975) with the option “--binSize 25 --effectiveGenomeSize 3054815472 --normalizeUsing CPM\".",
+        "We called peaks with MACS2 callpeak (v2.2.7.1) (PMID: 18798982) with the option “-f BAM -g hs --nomodel” using the snakemake wrapper v2.1.0 in a snakemake workflow (PMID: 22908215).",
+        "Assembly: Human T2T-CHM13v2.0",
+        "Supplementary files format and content: BigWig files include signal intensity values across the genome for each sample",
+        "Library strategy: CUT&Tag"
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN47251441",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27909367"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8833nnn/GSM8833587/suppl/GSM8833587_iAT2_H3K27me3_CUT1.bw"
+      ]
+    },
+    {
+      "accession": "GSM8833588",
+      "title": [
+        "iAT1_CUT1_H3K27me3"
+      ],
+      "geo_accession": [
+        "GSM8833588"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→DCI+LATS-IN-1"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, or PAL medium to induce iATCs, respectively."
+      ],
+      "molecule_ch1": [
+        "other"
+      ],
+      "extract_protocol_ch1": [
+        "For the isolation of iAT2 and iAT1 cells, the cells cultured on micro-patterned plates were first stained with Hoechst-33342 for 30 minutes at 37°C, followed by incubation with Accutase at 37°C for 20 minutes and dissociation by gentle pipetting. For the isolation of iATCs, the cells were incubated with Accutase, gently dissociated by pipetting, and stained with an APC-conjugated anti-human CD54 antibody for 20 minutes at 4°C. Each positive cell population was then sorted using fluorescence-activated cell sorting.",
+        "To make the CUT&Tag libraries, the dissociated cells were washed with PBS supplemented with 1X Protease Inhibitor (Roche, # 11873580001), and subsequently washed with wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.25 mM spermidine, 1X Protease Inhibitor (Roche, # 11873580001)). Then, we resuspended 50,000 cells in 500 µl of the wash buffer supplemented with 5 mM sodium butyrate. We added 2 µl of the concanavalin A-conjugated magnetic beads to the cell suspension. Next, after magnetic separation of the beads and removal of the supernatant, we resuspended the beads in 50 µL of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, 2 mM EDTA, and 0.1% BSA together with 0.5 µl primary antibody against H3K4me3 (MAB Institute, MABI0304) and H3K27me3 (MAB Institute, MABI0323). After rotating incubation at room temperature for 3 hours, the buffer containing the primary antibody was replaced with 100 µl of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, together with 1 µl secondary rabbit anti-mouse IgG antibody (Abcam, #ab46540), and was incubated at 4 °C for overnight. After washing the beads with Dig-300 buffer (20 mM HEPES pH 7.5, 300 mM NaCl, 0.5 mM spermidine, 0.01% digitonin, 1X Protease Inhibitor (Roche, # 11873580001), 5 mM sodium butyrate) twice, we applied 100 µl of the Dig-300 buffer containing 3.6 femtomol pA-Tn5 transposome and incubated the mixture for 1 hour at room temperature. After washing the beads with the Dig-300 buffer twice, we resuspended the beads in 50 µl of the Dig-300 buffer supplemented with 10 mM MgCl2 and incubated them at 37 °C for 1 hour. We then removed the supernatant and resuspended the beads in 20 µl of 10 mM TAPS buffer (pH 8.5) together with 0.5 µl thermolabile proteinase K (NEB, #P8111S), and incubated the mixture at 37 °C for 30 minutes, followed by incubation at 55 °C for 20 minutes to inactivate the proteinase. We directly performed PCR-amplification of the library from the tube after adding the reaction mixture (KAPA BIOSYSTEMS, #KK2602) using index primers. The amplified libraries were purified with 1.3 volumes of AMPure XP beads."
+      ],
+      "description": [
+        "Library name: Sample 9"
+      ],
+      "data_processing": [
+        "We used “DNA-mapping” in snakePipes (v2.7.3) (PMID: 31134269) to trim adapter sequences with fastp (v0.23.2) (PMID: 38868435) and to subsequently map the remaining sequences with bowtie2 (v2.4.5) (PMID: 22388286) against the reference sequence created from the human T2T-CHM13v2.0 genome assembly without Y chromosome together with the complete genome sequence of Escherichia coli strain BL21 (GenBank: CP010816.1) and the 3XFlag-pA-Tn5-Fl plasmid sequence (Addgene, #124601).",
+        "We obtained a bam file only with properly-paired alignments mapped to the human chromosomes 1 to 22 and X with the MAPQ score greater than or equal to 10 using samtools view command (v1.15.1) (PMID: 19505943) with the option “-f 2 -F 256 -x XA -q 10.",
+        "We further created bigwig tracks from the bam files using “bamCoverage” in deeptools (v3.5.1) (PMID: 27079975) with the option “--binSize 25 --effectiveGenomeSize 3054815472 --normalizeUsing CPM\".",
+        "We called peaks with MACS2 callpeak (v2.2.7.1) (PMID: 18798982) with the option “-f BAM -g hs --nomodel” using the snakemake wrapper v2.1.0 in a snakemake workflow (PMID: 22908215).",
+        "Assembly: Human T2T-CHM13v2.0",
+        "Supplementary files format and content: BigWig files include signal intensity values across the genome for each sample",
+        "Library strategy: CUT&Tag"
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN47251440",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27909368"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8833nnn/GSM8833588/suppl/GSM8833588_iAT1_H3K27me3_CUT1.bw"
+      ]
+    },
+    {
+      "accession": "GSM8833589",
+      "title": [
+        "iATCs_CUT2_H3K27me3"
+      ],
+      "geo_accession": [
+        "GSM8833589"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→PAL"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, or PAL medium to induce iATCs, respectively."
+      ],
+      "molecule_ch1": [
+        "other"
+      ],
+      "extract_protocol_ch1": [
+        "For the isolation of iAT2 and iAT1 cells, the cells cultured on micro-patterned plates were first stained with Hoechst-33342 for 30 minutes at 37°C, followed by incubation with Accutase at 37°C for 20 minutes and dissociation by gentle pipetting. For the isolation of iATCs, the cells were incubated with Accutase, gently dissociated by pipetting, and stained with an APC-conjugated anti-human CD54 antibody for 20 minutes at 4°C. Each positive cell population was then sorted using fluorescence-activated cell sorting.",
+        "To make the CUT&Tag libraries, the dissociated cells were washed with PBS supplemented with 1X Protease Inhibitor (Roche, # 11873580001), and subsequently washed with wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.25 mM spermidine, 1X Protease Inhibitor (Roche, # 11873580001)). Then, we resuspended 50,000 cells in 500 µl of the wash buffer supplemented with 5 mM sodium butyrate. We added 2 µl of the concanavalin A-conjugated magnetic beads to the cell suspension. Next, after magnetic separation of the beads and removal of the supernatant, we resuspended the beads in 50 µL of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, 2 mM EDTA, and 0.1% BSA together with 0.5 µl primary antibody against H3K4me3 (MAB Institute, MABI0304) and H3K27me3 (MAB Institute, MABI0323). After rotating incubation at room temperature for 3 hours, the buffer containing the primary antibody was replaced with 100 µl of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, together with 1 µl secondary rabbit anti-mouse IgG antibody (Abcam, #ab46540), and was incubated at 4 °C for overnight. After washing the beads with Dig-300 buffer (20 mM HEPES pH 7.5, 300 mM NaCl, 0.5 mM spermidine, 0.01% digitonin, 1X Protease Inhibitor (Roche, # 11873580001), 5 mM sodium butyrate) twice, we applied 100 µl of the Dig-300 buffer containing 3.6 femtomol pA-Tn5 transposome and incubated the mixture for 1 hour at room temperature. After washing the beads with the Dig-300 buffer twice, we resuspended the beads in 50 µl of the Dig-300 buffer supplemented with 10 mM MgCl2 and incubated them at 37 °C for 1 hour. We then removed the supernatant and resuspended the beads in 20 µl of 10 mM TAPS buffer (pH 8.5) together with 0.5 µl thermolabile proteinase K (NEB, #P8111S), and incubated the mixture at 37 °C for 30 minutes, followed by incubation at 55 °C for 20 minutes to inactivate the proteinase. We directly performed PCR-amplification of the library from the tube after adding the reaction mixture (KAPA BIOSYSTEMS, #KK2602) using index primers. The amplified libraries were purified with 1.3 volumes of AMPure XP beads."
+      ],
+      "description": [
+        "Library name: Sample 10"
+      ],
+      "data_processing": [
+        "We used “DNA-mapping” in snakePipes (v2.7.3) (PMID: 31134269) to trim adapter sequences with fastp (v0.23.2) (PMID: 38868435) and to subsequently map the remaining sequences with bowtie2 (v2.4.5) (PMID: 22388286) against the reference sequence created from the human T2T-CHM13v2.0 genome assembly without Y chromosome together with the complete genome sequence of Escherichia coli strain BL21 (GenBank: CP010816.1) and the 3XFlag-pA-Tn5-Fl plasmid sequence (Addgene, #124601).",
+        "We obtained a bam file only with properly-paired alignments mapped to the human chromosomes 1 to 22 and X with the MAPQ score greater than or equal to 10 using samtools view command (v1.15.1) (PMID: 19505943) with the option “-f 2 -F 256 -x XA -q 10.",
+        "We further created bigwig tracks from the bam files using “bamCoverage” in deeptools (v3.5.1) (PMID: 27079975) with the option “--binSize 25 --effectiveGenomeSize 3054815472 --normalizeUsing CPM\".",
+        "We called peaks with MACS2 callpeak (v2.2.7.1) (PMID: 18798982) with the option “-f BAM -g hs --nomodel” using the snakemake wrapper v2.1.0 in a snakemake workflow (PMID: 22908215).",
+        "Assembly: Human T2T-CHM13v2.0",
+        "Supplementary files format and content: BigWig files include signal intensity values across the genome for each sample",
+        "Library strategy: CUT&Tag"
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN47251439",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27909369"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8833nnn/GSM8833589/suppl/GSM8833589_iATCs_H3K27me3_CUT2.bw"
+      ]
+    },
+    {
+      "accession": "GSM8833590",
+      "title": [
+        "iAT2_CUT2_H3K27me3"
+      ],
+      "geo_accession": [
+        "GSM8833590"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→DCIK+3i"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, or PAL medium to induce iATCs, respectively."
+      ],
+      "molecule_ch1": [
+        "other"
+      ],
+      "extract_protocol_ch1": [
+        "For the isolation of iAT2 and iAT1 cells, the cells cultured on micro-patterned plates were first stained with Hoechst-33342 for 30 minutes at 37°C, followed by incubation with Accutase at 37°C for 20 minutes and dissociation by gentle pipetting. For the isolation of iATCs, the cells were incubated with Accutase, gently dissociated by pipetting, and stained with an APC-conjugated anti-human CD54 antibody for 20 minutes at 4°C. Each positive cell population was then sorted using fluorescence-activated cell sorting.",
+        "To make the CUT&Tag libraries, the dissociated cells were washed with PBS supplemented with 1X Protease Inhibitor (Roche, # 11873580001), and subsequently washed with wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.25 mM spermidine, 1X Protease Inhibitor (Roche, # 11873580001)). Then, we resuspended 50,000 cells in 500 µl of the wash buffer supplemented with 5 mM sodium butyrate. We added 2 µl of the concanavalin A-conjugated magnetic beads to the cell suspension. Next, after magnetic separation of the beads and removal of the supernatant, we resuspended the beads in 50 µL of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, 2 mM EDTA, and 0.1% BSA together with 0.5 µl primary antibody against H3K4me3 (MAB Institute, MABI0304) and H3K27me3 (MAB Institute, MABI0323). After rotating incubation at room temperature for 3 hours, the buffer containing the primary antibody was replaced with 100 µl of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, together with 1 µl secondary rabbit anti-mouse IgG antibody (Abcam, #ab46540), and was incubated at 4 °C for overnight. After washing the beads with Dig-300 buffer (20 mM HEPES pH 7.5, 300 mM NaCl, 0.5 mM spermidine, 0.01% digitonin, 1X Protease Inhibitor (Roche, # 11873580001), 5 mM sodium butyrate) twice, we applied 100 µl of the Dig-300 buffer containing 3.6 femtomol pA-Tn5 transposome and incubated the mixture for 1 hour at room temperature. After washing the beads with the Dig-300 buffer twice, we resuspended the beads in 50 µl of the Dig-300 buffer supplemented with 10 mM MgCl2 and incubated them at 37 °C for 1 hour. We then removed the supernatant and resuspended the beads in 20 µl of 10 mM TAPS buffer (pH 8.5) together with 0.5 µl thermolabile proteinase K (NEB, #P8111S), and incubated the mixture at 37 °C for 30 minutes, followed by incubation at 55 °C for 20 minutes to inactivate the proteinase. We directly performed PCR-amplification of the library from the tube after adding the reaction mixture (KAPA BIOSYSTEMS, #KK2602) using index primers. The amplified libraries were purified with 1.3 volumes of AMPure XP beads."
+      ],
+      "description": [
+        "Library name: Sample 11"
+      ],
+      "data_processing": [
+        "We used “DNA-mapping” in snakePipes (v2.7.3) (PMID: 31134269) to trim adapter sequences with fastp (v0.23.2) (PMID: 38868435) and to subsequently map the remaining sequences with bowtie2 (v2.4.5) (PMID: 22388286) against the reference sequence created from the human T2T-CHM13v2.0 genome assembly without Y chromosome together with the complete genome sequence of Escherichia coli strain BL21 (GenBank: CP010816.1) and the 3XFlag-pA-Tn5-Fl plasmid sequence (Addgene, #124601).",
+        "We obtained a bam file only with properly-paired alignments mapped to the human chromosomes 1 to 22 and X with the MAPQ score greater than or equal to 10 using samtools view command (v1.15.1) (PMID: 19505943) with the option “-f 2 -F 256 -x XA -q 10.",
+        "We further created bigwig tracks from the bam files using “bamCoverage” in deeptools (v3.5.1) (PMID: 27079975) with the option “--binSize 25 --effectiveGenomeSize 3054815472 --normalizeUsing CPM\".",
+        "We called peaks with MACS2 callpeak (v2.2.7.1) (PMID: 18798982) with the option “-f BAM -g hs --nomodel” using the snakemake wrapper v2.1.0 in a snakemake workflow (PMID: 22908215).",
+        "Assembly: Human T2T-CHM13v2.0",
+        "Supplementary files format and content: BigWig files include signal intensity values across the genome for each sample",
+        "Library strategy: CUT&Tag"
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN47251438",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27909370"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8833nnn/GSM8833590/suppl/GSM8833590_iAT2_H3K27me3_CUT2.bw"
+      ]
+    },
+    {
+      "accession": "GSM8833591",
+      "title": [
+        "iAT1_CUT2_H3K27me3"
+      ],
+      "geo_accession": [
+        "GSM8833591"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→DCI+LATS-IN-1"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, or PAL medium to induce iATCs, respectively."
+      ],
+      "molecule_ch1": [
+        "other"
+      ],
+      "extract_protocol_ch1": [
+        "For the isolation of iAT2 and iAT1 cells, the cells cultured on micro-patterned plates were first stained with Hoechst-33342 for 30 minutes at 37°C, followed by incubation with Accutase at 37°C for 20 minutes and dissociation by gentle pipetting. For the isolation of iATCs, the cells were incubated with Accutase, gently dissociated by pipetting, and stained with an APC-conjugated anti-human CD54 antibody for 20 minutes at 4°C. Each positive cell population was then sorted using fluorescence-activated cell sorting.",
+        "To make the CUT&Tag libraries, the dissociated cells were washed with PBS supplemented with 1X Protease Inhibitor (Roche, # 11873580001), and subsequently washed with wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.25 mM spermidine, 1X Protease Inhibitor (Roche, # 11873580001)). Then, we resuspended 50,000 cells in 500 µl of the wash buffer supplemented with 5 mM sodium butyrate. We added 2 µl of the concanavalin A-conjugated magnetic beads to the cell suspension. Next, after magnetic separation of the beads and removal of the supernatant, we resuspended the beads in 50 µL of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, 2 mM EDTA, and 0.1% BSA together with 0.5 µl primary antibody against H3K4me3 (MAB Institute, MABI0304) and H3K27me3 (MAB Institute, MABI0323). After rotating incubation at room temperature for 3 hours, the buffer containing the primary antibody was replaced with 100 µl of ice-cold wash buffer, supplemented with 5 mM sodium butyrate, 0.05% digitonin, together with 1 µl secondary rabbit anti-mouse IgG antibody (Abcam, #ab46540), and was incubated at 4 °C for overnight. After washing the beads with Dig-300 buffer (20 mM HEPES pH 7.5, 300 mM NaCl, 0.5 mM spermidine, 0.01% digitonin, 1X Protease Inhibitor (Roche, # 11873580001), 5 mM sodium butyrate) twice, we applied 100 µl of the Dig-300 buffer containing 3.6 femtomol pA-Tn5 transposome and incubated the mixture for 1 hour at room temperature. After washing the beads with the Dig-300 buffer twice, we resuspended the beads in 50 µl of the Dig-300 buffer supplemented with 10 mM MgCl2 and incubated them at 37 °C for 1 hour. We then removed the supernatant and resuspended the beads in 20 µl of 10 mM TAPS buffer (pH 8.5) together with 0.5 µl thermolabile proteinase K (NEB, #P8111S), and incubated the mixture at 37 °C for 30 minutes, followed by incubation at 55 °C for 20 minutes to inactivate the proteinase. We directly performed PCR-amplification of the library from the tube after adding the reaction mixture (KAPA BIOSYSTEMS, #KK2602) using index primers. The amplified libraries were purified with 1.3 volumes of AMPure XP beads."
+      ],
+      "description": [
+        "Library name: Sample 12"
+      ],
+      "data_processing": [
+        "We used “DNA-mapping” in snakePipes (v2.7.3) (PMID: 31134269) to trim adapter sequences with fastp (v0.23.2) (PMID: 38868435) and to subsequently map the remaining sequences with bowtie2 (v2.4.5) (PMID: 22388286) against the reference sequence created from the human T2T-CHM13v2.0 genome assembly without Y chromosome together with the complete genome sequence of Escherichia coli strain BL21 (GenBank: CP010816.1) and the 3XFlag-pA-Tn5-Fl plasmid sequence (Addgene, #124601).",
+        "We obtained a bam file only with properly-paired alignments mapped to the human chromosomes 1 to 22 and X with the MAPQ score greater than or equal to 10 using samtools view command (v1.15.1) (PMID: 19505943) with the option “-f 2 -F 256 -x XA -q 10.",
+        "We further created bigwig tracks from the bam files using “bamCoverage” in deeptools (v3.5.1) (PMID: 27079975) with the option “--binSize 25 --effectiveGenomeSize 3054815472 --normalizeUsing CPM\".",
+        "We called peaks with MACS2 callpeak (v2.2.7.1) (PMID: 18798982) with the option “-f BAM -g hs --nomodel” using the snakemake wrapper v2.1.0 in a snakemake workflow (PMID: 22908215).",
+        "Assembly: Human T2T-CHM13v2.0",
+        "Supplementary files format and content: BigWig files include signal intensity values across the genome for each sample",
+        "Library strategy: CUT&Tag"
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "other"
+      ],
+      "library_strategy": [
+        "OTHER"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN47251437",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27909371"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8833nnn/GSM8833591/suppl/GSM8833591_iAT1_H3K27me3_CUT2.bw"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

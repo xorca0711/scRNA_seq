@@ -1,0 +1,266 @@
+{
+  "accession": "GSE218666",
+  "retrieved_at_utc": "2026-09-25T01:08:54.854032+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE218666&targ=all&form=text&view=full",
+  "response_sha256": "10c5cc0dd88ad1862e9a8bc201ec55ea4cc890a4a2e36e0dcff40675f648ae13",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Single-cell RNA-seq in AT1 cell-ablated mouse lungs"
+    ],
+    "geo_accession": [
+      "GSE218666"
+    ],
+    "status": [
+      "Public on Nov 02 2023"
+    ],
+    "last_update_date": [
+      "Feb 01 2024"
+    ],
+    "pubmed_id": [
+      "37922879"
+    ],
+    "overall_design": [
+      "Single-cell RNA-seq at day 3, 6 and 10 following AT1 cell ablation"
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM6754357",
+      "GSM6754358",
+      "GSM6754359",
+      "GSM6754360"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218666/suppl/GSE218666_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA904777"
+    ]
+  },
+  "sample_count": 4,
+  "samples": [
+    {
+      "accession": "GSM6754357",
+      "title": [
+        "AT1 cell ablation day 3"
+      ],
+      "geo_accession": [
+        "GSM6754357"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Lung cells",
+        "genotype: Ager-CreER;Rosa26-lsl-DTR"
+      ],
+      "treatment_protocol_ch1": [
+        "Ager-CreER;Rosa26R-DTA mice treated with Tamoxifen followed by Diphtheria Toxin"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "lungs were inflated with an enzyme dissociation solution (450U/mL Collagenase I (Worthington, LS004197), 5U/mL Dispase (Corning, 354235), and 0.33U/mL DNase I (Roche, 10104159001), in DMEM). Separated lung lobes were minced and incubated in enzyme solution at 37°C for 25-35 minutes. Dissociation was quenched with equivalent volume 10% FBS/DMEM and strained through a 100 µm strainer. Cell pellet was resuspended in red blood cell lysis buffer (100 µm EDTA, 10 mM KHCO3, 155 mM NH4Cl) for 2 minutes, followed by quenching with 10% FBS/DMEM and filtration through a 40 µm strainer. Cell pellet was resuspended in 500µL 2%FBS/DMEM and split into three fractions: CD45/31/140a, CD45, and bulk sample. For MACS, cells were incubated for 30 minutes with the following antibodies: CD45 (MiltenyiBiotech, 130-052-301), CD31 (MiltenyiBiotech, 130-097-418), and CD140a (MiltenyiBiotech, 130-101-547). MACS depletion was performed as per manufacturer protocol using LD columns (MiltenyiBiotech, 130-042-901). Lung cell suspensions were first enriched for epithelial and mesenchymal cell populations as follows: 11,200 cells from CD31/CD45/CD140a-depleted cells, 3200 cells from CD45-depleted cells, and 1600 cells from bulk fractions, and resuspended in PBS supplemented with 0.01% BSA.",
+        "We used Drop-seq S3 (Second-Strand Synthesis), the method optimized by adopting S3 procedure from Seq-well S3 (Hughes et al., Immunity 2020 ). Briefly, cells at a concentration of 100 cells/μl were run through microfluidic channels at 3,000 μl/h, together with mRNA capture beads at 3,000 μl/h and droplet-generation oil at 13,000 μl/h. Captured mRNA on the beads were reverse-transcribed using Maxima H Minus RTase (Thermo Fisher, #EP0753) with a series of incubation at 25°C for 30 min, 42°C for 90 min and 50°C for 30 min followed by Exonuclease I treatment. The beads were treated with fresh 0.1M NaOH at room temperature for 5 min followed by second-strand synthesis using Klenow fragment (3'→5' exo minus, New England Biolabs, #M0212L) with incubation at 37°C for 60 min. DNA polymerase for The beads were then used for pre-amplification step (1 cycle of 985°C for 3 min, 4 cycles of 98°C for 15 sec, 55°C for 45 sec, 68°C for 4min, 10-1445–17 cycles of 98°C for 15 sec, 5765°C for 30 sec, 68°C for 4 min and 1 cycle of 72°C for 10 min) using was replaced by Terra PCR Direct Polymerase (#639271, Takara) which was ranked #1 polymerase in several studies (Sasagawa et al., Genome Biology 2013; Bagnoli et al., Nature Communications 2018). The rest of theother processes were performed as described in the original Drop-seq protocol.",
+        "Drop-seq S3"
+      ],
+      "data_processing": [
+        "FASTQ files were processed using dropSeqPipe v0.3 (https://hoohm.github.io/dropSeqPipe) and mapped on the GRCm38 genome reference with annotation version 91 to get UMI expression matrix files.",
+        "Assembly: GRCm38.91",
+        "Supplementary files format and content: .tsv"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN31854123",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX18367923"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6754nnn/GSM6754357/suppl/GSM6754357_AEC1_D3_umi_expression_matrix.tsv.gz"
+      ]
+    },
+    {
+      "accession": "GSM6754358",
+      "title": [
+        "AT1 cell ablation day 6"
+      ],
+      "geo_accession": [
+        "GSM6754358"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Lung cells",
+        "genotype: Ager-CreER;Rosa26-lsl-DTR"
+      ],
+      "treatment_protocol_ch1": [
+        "Ager-CreER;Rosa26R-DTA mice treated with Tamoxifen followed by Diphtheria Toxin"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "lungs were inflated with an enzyme dissociation solution (450U/mL Collagenase I (Worthington, LS004197), 5U/mL Dispase (Corning, 354235), and 0.33U/mL DNase I (Roche, 10104159001), in DMEM). Separated lung lobes were minced and incubated in enzyme solution at 37°C for 25-35 minutes. Dissociation was quenched with equivalent volume 10% FBS/DMEM and strained through a 100 µm strainer. Cell pellet was resuspended in red blood cell lysis buffer (100 µm EDTA, 10 mM KHCO3, 155 mM NH4Cl) for 2 minutes, followed by quenching with 10% FBS/DMEM and filtration through a 40 µm strainer. Cell pellet was resuspended in 500µL 2%FBS/DMEM and split into three fractions: CD45/31/140a, CD45, and bulk sample. For MACS, cells were incubated for 30 minutes with the following antibodies: CD45 (MiltenyiBiotech, 130-052-301), CD31 (MiltenyiBiotech, 130-097-418), and CD140a (MiltenyiBiotech, 130-101-547). MACS depletion was performed as per manufacturer protocol using LD columns (MiltenyiBiotech, 130-042-901). Lung cell suspensions were first enriched for epithelial and mesenchymal cell populations as follows: 11,200 cells from CD31/CD45/CD140a-depleted cells, 3200 cells from CD45-depleted cells, and 1600 cells from bulk fractions, and resuspended in PBS supplemented with 0.01% BSA.",
+        "We used Drop-seq S3 (Second-Strand Synthesis), the method optimized by adopting S3 procedure from Seq-well S3 (Hughes et al., Immunity 2020 ). Briefly, cells at a concentration of 100 cells/μl were run through microfluidic channels at 3,000 μl/h, together with mRNA capture beads at 3,000 μl/h and droplet-generation oil at 13,000 μl/h. Captured mRNA on the beads were reverse-transcribed using Maxima H Minus RTase (Thermo Fisher, #EP0753) with a series of incubation at 25°C for 30 min, 42°C for 90 min and 50°C for 30 min followed by Exonuclease I treatment. The beads were treated with fresh 0.1M NaOH at room temperature for 5 min followed by second-strand synthesis using Klenow fragment (3'→5' exo minus, New England Biolabs, #M0212L) with incubation at 37°C for 60 min. DNA polymerase for The beads were then used for pre-amplification step (1 cycle of 985°C for 3 min, 4 cycles of 98°C for 15 sec, 55°C for 45 sec, 68°C for 4min, 10-1445–17 cycles of 98°C for 15 sec, 5765°C for 30 sec, 68°C for 4 min and 1 cycle of 72°C for 10 min) using was replaced by Terra PCR Direct Polymerase (#639271, Takara) which was ranked #1 polymerase in several studies (Sasagawa et al., Genome Biology 2013; Bagnoli et al., Nature Communications 2018). The rest of theother processes were performed as described in the original Drop-seq protocol.",
+        "Drop-seq S3"
+      ],
+      "data_processing": [
+        "FASTQ files were processed using dropSeqPipe v0.3 (https://hoohm.github.io/dropSeqPipe) and mapped on the GRCm38 genome reference with annotation version 91 to get UMI expression matrix files.",
+        "Assembly: GRCm38.91",
+        "Supplementary files format and content: .tsv"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN31854122",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX18367924"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6754nnn/GSM6754358/suppl/GSM6754358_AEC1_D6_umi_expression_matrix.tsv.gz"
+      ]
+    },
+    {
+      "accession": "GSM6754359",
+      "title": [
+        "AT1 cell ablation day 10"
+      ],
+      "geo_accession": [
+        "GSM6754359"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Lung cells",
+        "genotype: Ager-CreER;Rosa26-lsl-DTR"
+      ],
+      "treatment_protocol_ch1": [
+        "Ager-CreER;Rosa26R-DTA mice treated with Tamoxifen followed by Diphtheria Toxin"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "lungs were inflated with an enzyme dissociation solution (450U/mL Collagenase I (Worthington, LS004197), 5U/mL Dispase (Corning, 354235), and 0.33U/mL DNase I (Roche, 10104159001), in DMEM). Separated lung lobes were minced and incubated in enzyme solution at 37°C for 25-35 minutes. Dissociation was quenched with equivalent volume 10% FBS/DMEM and strained through a 100 µm strainer. Cell pellet was resuspended in red blood cell lysis buffer (100 µm EDTA, 10 mM KHCO3, 155 mM NH4Cl) for 2 minutes, followed by quenching with 10% FBS/DMEM and filtration through a 40 µm strainer. Cell pellet was resuspended in 500µL 2%FBS/DMEM and split into three fractions: CD45/31/140a, CD45, and bulk sample. For MACS, cells were incubated for 30 minutes with the following antibodies: CD45 (MiltenyiBiotech, 130-052-301), CD31 (MiltenyiBiotech, 130-097-418), and CD140a (MiltenyiBiotech, 130-101-547). MACS depletion was performed as per manufacturer protocol using LD columns (MiltenyiBiotech, 130-042-901). Lung cell suspensions were first enriched for epithelial and mesenchymal cell populations as follows: 11,200 cells from CD31/CD45/CD140a-depleted cells, 3200 cells from CD45-depleted cells, and 1600 cells from bulk fractions, and resuspended in PBS supplemented with 0.01% BSA.",
+        "We used Drop-seq S3 (Second-Strand Synthesis), the method optimized by adopting S3 procedure from Seq-well S3 (Hughes et al., Immunity 2020 ). Briefly, cells at a concentration of 100 cells/μl were run through microfluidic channels at 3,000 μl/h, together with mRNA capture beads at 3,000 μl/h and droplet-generation oil at 13,000 μl/h. Captured mRNA on the beads were reverse-transcribed using Maxima H Minus RTase (Thermo Fisher, #EP0753) with a series of incubation at 25°C for 30 min, 42°C for 90 min and 50°C for 30 min followed by Exonuclease I treatment. The beads were treated with fresh 0.1M NaOH at room temperature for 5 min followed by second-strand synthesis using Klenow fragment (3'→5' exo minus, New England Biolabs, #M0212L) with incubation at 37°C for 60 min. DNA polymerase for The beads were then used for pre-amplification step (1 cycle of 985°C for 3 min, 4 cycles of 98°C for 15 sec, 55°C for 45 sec, 68°C for 4min, 10-1445–17 cycles of 98°C for 15 sec, 5765°C for 30 sec, 68°C for 4 min and 1 cycle of 72°C for 10 min) using was replaced by Terra PCR Direct Polymerase (#639271, Takara) which was ranked #1 polymerase in several studies (Sasagawa et al., Genome Biology 2013; Bagnoli et al., Nature Communications 2018). The rest of theother processes were performed as described in the original Drop-seq protocol.",
+        "Drop-seq S3"
+      ],
+      "data_processing": [
+        "FASTQ files were processed using dropSeqPipe v0.3 (https://hoohm.github.io/dropSeqPipe) and mapped on the GRCm38 genome reference with annotation version 91 to get UMI expression matrix files.",
+        "Assembly: GRCm38.91",
+        "Supplementary files format and content: .tsv"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN31854121",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX18367925"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6754nnn/GSM6754359/suppl/GSM6754359_AEC1_D10_umi_expression_matrix.tsv.gz"
+      ]
+    },
+    {
+      "accession": "GSM6754360",
+      "title": [
+        "Control for AT1 cell ablation"
+      ],
+      "geo_accession": [
+        "GSM6754360"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Lung cells",
+        "genotype: WT"
+      ],
+      "treatment_protocol_ch1": [
+        "Ager-CreER;Rosa26R-DTA mice treated with Tamoxifen followed by Diphtheria Toxin"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "lungs were inflated with an enzyme dissociation solution (450U/mL Collagenase I (Worthington, LS004197), 5U/mL Dispase (Corning, 354235), and 0.33U/mL DNase I (Roche, 10104159001), in DMEM). Separated lung lobes were minced and incubated in enzyme solution at 37°C for 25-35 minutes. Dissociation was quenched with equivalent volume 10% FBS/DMEM and strained through a 100 µm strainer. Cell pellet was resuspended in red blood cell lysis buffer (100 µm EDTA, 10 mM KHCO3, 155 mM NH4Cl) for 2 minutes, followed by quenching with 10% FBS/DMEM and filtration through a 40 µm strainer. Cell pellet was resuspended in 500µL 2%FBS/DMEM and split into three fractions: CD45/31/140a, CD45, and bulk sample. For MACS, cells were incubated for 30 minutes with the following antibodies: CD45 (MiltenyiBiotech, 130-052-301), CD31 (MiltenyiBiotech, 130-097-418), and CD140a (MiltenyiBiotech, 130-101-547). MACS depletion was performed as per manufacturer protocol using LD columns (MiltenyiBiotech, 130-042-901). Lung cell suspensions were first enriched for epithelial and mesenchymal cell populations as follows: 11,200 cells from CD31/CD45/CD140a-depleted cells, 3200 cells from CD45-depleted cells, and 1600 cells from bulk fractions, and resuspended in PBS supplemented with 0.01% BSA.",
+        "We used Drop-seq S3 (Second-Strand Synthesis), the method optimized by adopting S3 procedure from Seq-well S3 (Hughes et al., Immunity 2020 ). Briefly, cells at a concentration of 100 cells/μl were run through microfluidic channels at 3,000 μl/h, together with mRNA capture beads at 3,000 μl/h and droplet-generation oil at 13,000 μl/h. Captured mRNA on the beads were reverse-transcribed using Maxima H Minus RTase (Thermo Fisher, #EP0753) with a series of incubation at 25°C for 30 min, 42°C for 90 min and 50°C for 30 min followed by Exonuclease I treatment. The beads were treated with fresh 0.1M NaOH at room temperature for 5 min followed by second-strand synthesis using Klenow fragment (3'→5' exo minus, New England Biolabs, #M0212L) with incubation at 37°C for 60 min. DNA polymerase for The beads were then used for pre-amplification step (1 cycle of 985°C for 3 min, 4 cycles of 98°C for 15 sec, 55°C for 45 sec, 68°C for 4min, 10-1445–17 cycles of 98°C for 15 sec, 5765°C for 30 sec, 68°C for 4 min and 1 cycle of 72°C for 10 min) using was replaced by Terra PCR Direct Polymerase (#639271, Takara) which was ranked #1 polymerase in several studies (Sasagawa et al., Genome Biology 2013; Bagnoli et al., Nature Communications 2018). The rest of theother processes were performed as described in the original Drop-seq protocol.",
+        "Drop-seq S3"
+      ],
+      "data_processing": [
+        "FASTQ files were processed using dropSeqPipe v0.3 (https://hoohm.github.io/dropSeqPipe) and mapped on the GRCm38 genome reference with annotation version 91 to get UMI expression matrix files.",
+        "Assembly: GRCm38.91",
+        "Supplementary files format and content: .tsv"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN31854120",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX18367926"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6754nnn/GSM6754360/suppl/GSM6754360_Homeo_umi_expression_matrix.tsv.gz"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

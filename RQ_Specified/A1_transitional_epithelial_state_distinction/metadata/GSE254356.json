@@ -1,0 +1,216 @@
+{
+  "accession": "GSE254356",
+  "retrieved_at_utc": "2026-09-25T01:07:59.311216+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254356&targ=all&form=text&view=full",
+  "response_sha256": "d47f7aba1041b67ce6549d6caaf6670946aee8d54e03447f0d167831baca13a4",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Morphogenesis and regeneration share a conserved core transition cell state program that control lung epithelial cell fate"
+    ],
+    "geo_accession": [
+      "GSE254356"
+    ],
+    "status": [
+      "Public on Jun 01 2024"
+    ],
+    "last_update_date": [
+      "Apr 14 2026"
+    ],
+    "pubmed_id": [
+      "39667932"
+    ],
+    "overall_design": [
+      "Epcam+ or Epcam+Icam1+ cells from E14.5 mouse embroynic lungs are isolated and proceeded to single cell sequencing"
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM8039459",
+      "GSM8039460",
+      "GSM8039461"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE254nnn/GSE254356/suppl/GSE254356_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1070005"
+    ]
+  },
+  "sample_count": 3,
+  "samples": [
+    {
+      "accession": "GSM8039459",
+      "title": [
+        "Epcam+ Icam+ cells, replicate1"
+      ],
+      "geo_accession": [
+        "GSM8039459"
+      ],
+      "source_name_ch1": [
+        "E14.5 Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "age: E14.5",
+        "cell type: Epcam+ Icam+ cells"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "To obtain a single cell suspension for scRNAseq, two C57/B6 females were euthanized and E14.5 embryos were collected. Lungs were dissected out and kept in ice-cold HBSS until the start of dissociation. Lungs were pooled and minced manually with a blade into pieces of ~1mm in diameter in 4ml dissociation buffer (0.8ml HBSS (1X), 2ml Dispase II, Stemcell Technologies #7913, 2.5 U/ml, 400μl Collagenase A, Roche #10103578001, 800ul DNase 1, 200ug/ml, Sigma, Cat# DN25) Dissociation followed in an insitu hybridization oven at 37°C for 1 hour on a rotator with gentle P1000 pipette trituration every 20 minutes. Then, ice-cold FACS buffer (2% FBS,2mM EDTA, 5μM Y27632, 1M HEPES in HBSS) was added, the suspension was filtered through a 70μm filter, spun down at 5 minutes at 400g, and incubated 5 minutes in red blood cell lysis buffer (sigma). The buffer was diluted with FACS buffer, spun down 5 minutes at 400g and resuspended in 1ml FACS buffer. The suspension was then passed through a 40μm filter, cells were counted and incubated 40 minutes with Epcam-APC antibody (1:150) and Icam1-PE antibody(1:150) on ice in the dark. After staining, the suspension was three times washed in FACS buffer and spun down 5 minutes at 400g. Finally, DAPI was added at a final concentration of 1μM in FACS buffer.",
+        "Single Cell 3’ libraries were prepared using the Chromium Single Cell 3’ v3 Protocol according to the manufacturer’s manual (10× Genomics). The pooled, 3’- end libraries were sequenced using Illumina NovaSeq6000"
+      ],
+      "data_processing": [
+        "Cellranger v2.1.1 was used for demultiplexing, alignment and mapping using Mus musculus reference genome v10 (mm10)",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated values files and matrix files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN39634475",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX23416353"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8039nnn/GSM8039459/suppl/GSM8039459_R1_barcodes.tsv.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8039nnn/GSM8039459/suppl/GSM8039459_R1_features.tsv.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8039nnn/GSM8039459/suppl/GSM8039459_R1_matrix.mtx.gz"
+      ]
+    },
+    {
+      "accession": "GSM8039460",
+      "title": [
+        "Epcam+ Icam+ cells, replicate2"
+      ],
+      "geo_accession": [
+        "GSM8039460"
+      ],
+      "source_name_ch1": [
+        "E14.5 Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "age: E14.5",
+        "cell type: Epcam+ Icam+ cells"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "To obtain a single cell suspension for scRNAseq, two C57/B6 females were euthanized and E14.5 embryos were collected. Lungs were dissected out and kept in ice-cold HBSS until the start of dissociation. Lungs were pooled and minced manually with a blade into pieces of ~1mm in diameter in 4ml dissociation buffer (0.8ml HBSS (1X), 2ml Dispase II, Stemcell Technologies #7913, 2.5 U/ml, 400μl Collagenase A, Roche #10103578001, 800ul DNase 1, 200ug/ml, Sigma, Cat# DN25) Dissociation followed in an insitu hybridization oven at 37°C for 1 hour on a rotator with gentle P1000 pipette trituration every 20 minutes. Then, ice-cold FACS buffer (2% FBS,2mM EDTA, 5μM Y27632, 1M HEPES in HBSS) was added, the suspension was filtered through a 70μm filter, spun down at 5 minutes at 400g, and incubated 5 minutes in red blood cell lysis buffer (sigma). The buffer was diluted with FACS buffer, spun down 5 minutes at 400g and resuspended in 1ml FACS buffer. The suspension was then passed through a 40μm filter, cells were counted and incubated 40 minutes with Epcam-APC antibody (1:150) and Icam1-PE antibody(1:150) on ice in the dark. After staining, the suspension was three times washed in FACS buffer and spun down 5 minutes at 400g. Finally, DAPI was added at a final concentration of 1μM in FACS buffer.",
+        "Single Cell 3’ libraries were prepared using the Chromium Single Cell 3’ v3 Protocol according to the manufacturer’s manual (10× Genomics). The pooled, 3’- end libraries were sequenced using Illumina NovaSeq6000"
+      ],
+      "data_processing": [
+        "Cellranger v2.1.1 was used for demultiplexing, alignment and mapping using Mus musculus reference genome v10 (mm10)",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated values files and matrix files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN39634474",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX23416354"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8039nnn/GSM8039460/suppl/GSM8039460_R2_barcodes.tsv.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8039nnn/GSM8039460/suppl/GSM8039460_R2_features.tsv.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8039nnn/GSM8039460/suppl/GSM8039460_R2_matrix.mtx.gz"
+      ]
+    },
+    {
+      "accession": "GSM8039461",
+      "title": [
+        "Epcam+ cells"
+      ],
+      "geo_accession": [
+        "GSM8039461"
+      ],
+      "source_name_ch1": [
+        "E14.5 Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "age: E14.5",
+        "cell type: Epcam+ cells"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "To obtain a single cell suspension for scRNAseq, two C57/B6 females were euthanized and E14.5 embryos were collected. Lungs were dissected out and kept in ice-cold HBSS until the start of dissociation. Lungs were pooled and minced manually with a blade into pieces of ~1mm in diameter in 4ml dissociation buffer (0.8ml HBSS (1X), 2ml Dispase II, Stemcell Technologies #7913, 2.5 U/ml, 400μl Collagenase A, Roche #10103578001, 800ul DNase 1, 200ug/ml, Sigma, Cat# DN25) Dissociation followed in an insitu hybridization oven at 37°C for 1 hour on a rotator with gentle P1000 pipette trituration every 20 minutes. Then, ice-cold FACS buffer (2% FBS,2mM EDTA, 5μM Y27632, 1M HEPES in HBSS) was added, the suspension was filtered through a 70μm filter, spun down at 5 minutes at 400g, and incubated 5 minutes in red blood cell lysis buffer (sigma). The buffer was diluted with FACS buffer, spun down 5 minutes at 400g and resuspended in 1ml FACS buffer. The suspension was then passed through a 40μm filter, cells were counted and incubated 40 minutes with Epcam-APC antibody (1:150) and Icam1-PE antibody(1:150) on ice in the dark. After staining, the suspension was three times washed in FACS buffer and spun down 5 minutes at 400g. Finally, DAPI was added at a final concentration of 1μM in FACS buffer.",
+        "Single Cell 3’ libraries were prepared using the Chromium Single Cell 3’ v3 Protocol according to the manufacturer’s manual (10× Genomics). The pooled, 3’- end libraries were sequenced using Illumina NovaSeq6000"
+      ],
+      "data_processing": [
+        "Cellranger v2.1.1 was used for demultiplexing, alignment and mapping using Mus musculus reference genome v10 (mm10)",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated values files and matrix files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN39634473",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX23416355"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8039nnn/GSM8039461/suppl/GSM8039461_S3_barcodes.tsv.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8039nnn/GSM8039461/suppl/GSM8039461_S3_features.tsv.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8039nnn/GSM8039461/suppl/GSM8039461_S3_matrix.mtx.gz"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

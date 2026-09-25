@@ -1,0 +1,995 @@
+{
+  "accession": "GSE327565",
+  "retrieved_at_utc": "2026-09-25T01:01:32.458014+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327565&targ=all&form=text&view=full",
+  "response_sha256": "516a79b844477a4b73ed340687c40e09f590ab5fb5828ae1f2b083bb07645597",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Sustained Yap/Taz activation promotes aberrant alveolar epithelial cell differentiation and drives persistent fibrotic remodeling"
+    ],
+    "geo_accession": [
+      "GSE327565"
+    ],
+    "status": [
+      "Public on Jun 02 2026"
+    ],
+    "last_update_date": [
+      "Sep 02 2026"
+    ],
+    "pubmed_id": [
+      "42262884"
+    ],
+    "overall_design": [
+      "Cultured CD326+ epithelial cells from wild-type and Yap/Taz active (driven by Stk3/4 deletion in Sftpc+ AT2 cells) with Tomato lineage trace. After Passage 1, cells were flow sorted for Tomato+ to isalate only lineage traced cells. Cells were then cultured an additional 10 days in SFFFM media then either continued in SFFFM or switched to alveolar differentiation media (ADM) for 7 days. Cells were then bulk RNA sequenced."
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM9661623",
+      "GSM9661624",
+      "GSM9661625",
+      "GSM9661626",
+      "GSM9661627",
+      "GSM9661628",
+      "GSM9661629",
+      "GSM9661630",
+      "GSM9661631",
+      "GSM9661632",
+      "GSM9661633",
+      "GSM9661634",
+      "GSM9661635",
+      "GSM9661636"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE327nnn/GSE327565/suppl/GSE327565_RAW.tar",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE327nnn/GSE327565/suppl/GSE327565_raw_counts_GEO_YapTaz.csv.gz"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1451232"
+    ]
+  },
+  "sample_count": 14,
+  "samples": [
+    {
+      "accession": "GSM9661623",
+      "title": [
+        "Wild type, ADM, sample 1"
+      ],
+      "geo_accession": [
+        "GSM9661623"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: alveolar type 2",
+        "genotype: wildtype",
+        "treatment: alveolar differentiation media",
+        "batch: 1"
+      ],
+      "treatment_protocol_ch1": [
+        "There were no treatments beyond changing the media"
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from WT or Yap/Taz active mice that were injected with 3mg/mouse tamoxifen 2-weeks prior. CD326+ epithelial cells were isolated with Miltenyi beads. Cells were cultuired for 2-weeks in serum-free-feeder free media (SFFFM) as per the Katsura et al (PMID:33128895) protocol. TdTomato+ lineage labeled cells were then flow sorted and cultured again in SFFFM for 10 days and then either continued in SFFFM or switched to alveolar differentiation media for 7-days. Organoids were then imaged and cells extracted via dispase."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Once cells were isolated RNA was extracted following Qiagen Rneasy mini-plus kit protocol using RLT.",
+        "ERCC RNA Spike-In Mix (Cat: #4456740) from ThermoFisher Scientific, was added to normalized total RNA prior to library preparation following manufacturer’s protocol. The NEBNext Ultra II RNA Library Prep Kit for Illumina & NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs, Ipswich, MA, USA) were used."
+      ],
+      "description": [
+        "Library name: WTA1",
+        "Column name in raw_counts_GEO_YapTaz.csv: WTA1"
+      ],
+      "data_processing": [
+        "Trimmomatic v.0.36. was used to remove adaptor sequences",
+        "Trimmed reads were mapped and BAM files were generated using STAR aligner v.2.5.2b",
+        "Unique gene hit counts were calculated by using feature Counts from the Subread package v.1.5.2. Only unique reads that fell within exon regions were counted",
+        "DESeq2 was used for comparison between groups. Genes with adjusted P values < 0.05 and absolute log2 fold changes >0.5 were called as differentially expressed genes for each comparison.",
+        "Assembly: GRCm38",
+        "Supplementary files format and content: csv count files"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57185416",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32877814"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9661nnn/GSM9661623/suppl/GSM9661623_WTA1.counts.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9661624",
+      "title": [
+        "Wild type, ADM, sample 2"
+      ],
+      "geo_accession": [
+        "GSM9661624"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: alveolar type 2",
+        "genotype: wildtype",
+        "treatment: alveolar differentiation media",
+        "batch: 1"
+      ],
+      "treatment_protocol_ch1": [
+        "There were no treatments beyond changing the media"
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from WT or Yap/Taz active mice that were injected with 3mg/mouse tamoxifen 2-weeks prior. CD326+ epithelial cells were isolated with Miltenyi beads. Cells were cultuired for 2-weeks in serum-free-feeder free media (SFFFM) as per the Katsura et al (PMID:33128895) protocol. TdTomato+ lineage labeled cells were then flow sorted and cultured again in SFFFM for 10 days and then either continued in SFFFM or switched to alveolar differentiation media for 7-days. Organoids were then imaged and cells extracted via dispase."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Once cells were isolated RNA was extracted following Qiagen Rneasy mini-plus kit protocol using RLT.",
+        "ERCC RNA Spike-In Mix (Cat: #4456740) from ThermoFisher Scientific, was added to normalized total RNA prior to library preparation following manufacturer’s protocol. The NEBNext Ultra II RNA Library Prep Kit for Illumina & NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs, Ipswich, MA, USA) were used."
+      ],
+      "description": [
+        "Library name: WTA2",
+        "Column name in raw_counts_GEO_YapTaz.csv: WTA2"
+      ],
+      "data_processing": [
+        "Trimmomatic v.0.36. was used to remove adaptor sequences",
+        "Trimmed reads were mapped and BAM files were generated using STAR aligner v.2.5.2b",
+        "Unique gene hit counts were calculated by using feature Counts from the Subread package v.1.5.2. Only unique reads that fell within exon regions were counted",
+        "DESeq2 was used for comparison between groups. Genes with adjusted P values < 0.05 and absolute log2 fold changes >0.5 were called as differentially expressed genes for each comparison.",
+        "Assembly: GRCm38",
+        "Supplementary files format and content: csv count files"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57185415",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32877815"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9661nnn/GSM9661624/suppl/GSM9661624_WTA2.counts.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9661625",
+      "title": [
+        "Wild type, ADM, sample 3"
+      ],
+      "geo_accession": [
+        "GSM9661625"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: alveolar type 2",
+        "genotype: wildtype",
+        "treatment: alveolar differentiation media",
+        "batch: 1"
+      ],
+      "treatment_protocol_ch1": [
+        "There were no treatments beyond changing the media"
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from WT or Yap/Taz active mice that were injected with 3mg/mouse tamoxifen 2-weeks prior. CD326+ epithelial cells were isolated with Miltenyi beads. Cells were cultuired for 2-weeks in serum-free-feeder free media (SFFFM) as per the Katsura et al (PMID:33128895) protocol. TdTomato+ lineage labeled cells were then flow sorted and cultured again in SFFFM for 10 days and then either continued in SFFFM or switched to alveolar differentiation media for 7-days. Organoids were then imaged and cells extracted via dispase."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Once cells were isolated RNA was extracted following Qiagen Rneasy mini-plus kit protocol using RLT.",
+        "ERCC RNA Spike-In Mix (Cat: #4456740) from ThermoFisher Scientific, was added to normalized total RNA prior to library preparation following manufacturer’s protocol. The NEBNext Ultra II RNA Library Prep Kit for Illumina & NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs, Ipswich, MA, USA) were used."
+      ],
+      "description": [
+        "Library name: WTA3",
+        "Column name in raw_counts_GEO_YapTaz.csv: WTA3"
+      ],
+      "data_processing": [
+        "Trimmomatic v.0.36. was used to remove adaptor sequences",
+        "Trimmed reads were mapped and BAM files were generated using STAR aligner v.2.5.2b",
+        "Unique gene hit counts were calculated by using feature Counts from the Subread package v.1.5.2. Only unique reads that fell within exon regions were counted",
+        "DESeq2 was used for comparison between groups. Genes with adjusted P values < 0.05 and absolute log2 fold changes >0.5 were called as differentially expressed genes for each comparison.",
+        "Assembly: GRCm38",
+        "Supplementary files format and content: csv count files"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57185414",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32877816"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9661nnn/GSM9661625/suppl/GSM9661625_WTA3.counts.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9661626",
+      "title": [
+        "Wild type, ADM, sample 4"
+      ],
+      "geo_accession": [
+        "GSM9661626"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: alveolar type 2",
+        "genotype: wildtype",
+        "treatment: alveolar differentiation media",
+        "batch: 1"
+      ],
+      "treatment_protocol_ch1": [
+        "There were no treatments beyond changing the media"
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from WT or Yap/Taz active mice that were injected with 3mg/mouse tamoxifen 2-weeks prior. CD326+ epithelial cells were isolated with Miltenyi beads. Cells were cultuired for 2-weeks in serum-free-feeder free media (SFFFM) as per the Katsura et al (PMID:33128895) protocol. TdTomato+ lineage labeled cells were then flow sorted and cultured again in SFFFM for 10 days and then either continued in SFFFM or switched to alveolar differentiation media for 7-days. Organoids were then imaged and cells extracted via dispase."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Once cells were isolated RNA was extracted following Qiagen Rneasy mini-plus kit protocol using RLT.",
+        "ERCC RNA Spike-In Mix (Cat: #4456740) from ThermoFisher Scientific, was added to normalized total RNA prior to library preparation following manufacturer’s protocol. The NEBNext Ultra II RNA Library Prep Kit for Illumina & NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs, Ipswich, MA, USA) were used."
+      ],
+      "description": [
+        "Library name: WTA4",
+        "Column name in raw_counts_GEO_YapTaz.csv: WTA4"
+      ],
+      "data_processing": [
+        "Trimmomatic v.0.36. was used to remove adaptor sequences",
+        "Trimmed reads were mapped and BAM files were generated using STAR aligner v.2.5.2b",
+        "Unique gene hit counts were calculated by using feature Counts from the Subread package v.1.5.2. Only unique reads that fell within exon regions were counted",
+        "DESeq2 was used for comparison between groups. Genes with adjusted P values < 0.05 and absolute log2 fold changes >0.5 were called as differentially expressed genes for each comparison.",
+        "Assembly: GRCm38",
+        "Supplementary files format and content: csv count files"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57185413",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32877817"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9661nnn/GSM9661626/suppl/GSM9661626_WTA4.counts.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9661627",
+      "title": [
+        "Wild type, SFFFM, sample 1"
+      ],
+      "geo_accession": [
+        "GSM9661627"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: alveolar type 2",
+        "genotype: wildtype",
+        "treatment: serum-free, feeder-free media",
+        "batch: 1"
+      ],
+      "treatment_protocol_ch1": [
+        "There were no treatments beyond changing the media"
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from WT or Yap/Taz active mice that were injected with 3mg/mouse tamoxifen 2-weeks prior. CD326+ epithelial cells were isolated with Miltenyi beads. Cells were cultuired for 2-weeks in serum-free-feeder free media (SFFFM) as per the Katsura et al (PMID:33128895) protocol. TdTomato+ lineage labeled cells were then flow sorted and cultured again in SFFFM for 10 days and then either continued in SFFFM or switched to alveolar differentiation media for 7-days. Organoids were then imaged and cells extracted via dispase."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Once cells were isolated RNA was extracted following Qiagen Rneasy mini-plus kit protocol using RLT.",
+        "ERCC RNA Spike-In Mix (Cat: #4456740) from ThermoFisher Scientific, was added to normalized total RNA prior to library preparation following manufacturer’s protocol. The NEBNext Ultra II RNA Library Prep Kit for Illumina & NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs, Ipswich, MA, USA) were used."
+      ],
+      "description": [
+        "Library name: WTS1",
+        "Column name in raw_counts_GEO_YapTaz.csv: WTS1"
+      ],
+      "data_processing": [
+        "Trimmomatic v.0.36. was used to remove adaptor sequences",
+        "Trimmed reads were mapped and BAM files were generated using STAR aligner v.2.5.2b",
+        "Unique gene hit counts were calculated by using feature Counts from the Subread package v.1.5.2. Only unique reads that fell within exon regions were counted",
+        "DESeq2 was used for comparison between groups. Genes with adjusted P values < 0.05 and absolute log2 fold changes >0.5 were called as differentially expressed genes for each comparison.",
+        "Assembly: GRCm38",
+        "Supplementary files format and content: csv count files"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57185412",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32877818"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9661nnn/GSM9661627/suppl/GSM9661627_WTS1.counts.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9661628",
+      "title": [
+        "Wild type, SFFFM, sample 2"
+      ],
+      "geo_accession": [
+        "GSM9661628"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: alveolar type 2",
+        "genotype: wildtype",
+        "treatment: serum-free, feeder-free media",
+        "batch: 1"
+      ],
+      "treatment_protocol_ch1": [
+        "There were no treatments beyond changing the media"
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from WT or Yap/Taz active mice that were injected with 3mg/mouse tamoxifen 2-weeks prior. CD326+ epithelial cells were isolated with Miltenyi beads. Cells were cultuired for 2-weeks in serum-free-feeder free media (SFFFM) as per the Katsura et al (PMID:33128895) protocol. TdTomato+ lineage labeled cells were then flow sorted and cultured again in SFFFM for 10 days and then either continued in SFFFM or switched to alveolar differentiation media for 7-days. Organoids were then imaged and cells extracted via dispase."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Once cells were isolated RNA was extracted following Qiagen Rneasy mini-plus kit protocol using RLT.",
+        "ERCC RNA Spike-In Mix (Cat: #4456740) from ThermoFisher Scientific, was added to normalized total RNA prior to library preparation following manufacturer’s protocol. The NEBNext Ultra II RNA Library Prep Kit for Illumina & NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs, Ipswich, MA, USA) were used."
+      ],
+      "description": [
+        "Library name: WTS2",
+        "Column name in raw_counts_GEO_YapTaz.csv: WTS2"
+      ],
+      "data_processing": [
+        "Trimmomatic v.0.36. was used to remove adaptor sequences",
+        "Trimmed reads were mapped and BAM files were generated using STAR aligner v.2.5.2b",
+        "Unique gene hit counts were calculated by using feature Counts from the Subread package v.1.5.2. Only unique reads that fell within exon regions were counted",
+        "DESeq2 was used for comparison between groups. Genes with adjusted P values < 0.05 and absolute log2 fold changes >0.5 were called as differentially expressed genes for each comparison.",
+        "Assembly: GRCm38",
+        "Supplementary files format and content: csv count files"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57185411",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32877819"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9661nnn/GSM9661628/suppl/GSM9661628_WTS2.counts.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9661629",
+      "title": [
+        "Wild type, SFFFM, sample 3"
+      ],
+      "geo_accession": [
+        "GSM9661629"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: alveolar type 2",
+        "genotype: wildtype",
+        "treatment: serum-free, feeder-free media",
+        "batch: 1"
+      ],
+      "treatment_protocol_ch1": [
+        "There were no treatments beyond changing the media"
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from WT or Yap/Taz active mice that were injected with 3mg/mouse tamoxifen 2-weeks prior. CD326+ epithelial cells were isolated with Miltenyi beads. Cells were cultuired for 2-weeks in serum-free-feeder free media (SFFFM) as per the Katsura et al (PMID:33128895) protocol. TdTomato+ lineage labeled cells were then flow sorted and cultured again in SFFFM for 10 days and then either continued in SFFFM or switched to alveolar differentiation media for 7-days. Organoids were then imaged and cells extracted via dispase."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Once cells were isolated RNA was extracted following Qiagen Rneasy mini-plus kit protocol using RLT.",
+        "ERCC RNA Spike-In Mix (Cat: #4456740) from ThermoFisher Scientific, was added to normalized total RNA prior to library preparation following manufacturer’s protocol. The NEBNext Ultra II RNA Library Prep Kit for Illumina & NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs, Ipswich, MA, USA) were used."
+      ],
+      "description": [
+        "Library name: WTS3",
+        "Column name in raw_counts_GEO_YapTaz.csv: WTS3"
+      ],
+      "data_processing": [
+        "Trimmomatic v.0.36. was used to remove adaptor sequences",
+        "Trimmed reads were mapped and BAM files were generated using STAR aligner v.2.5.2b",
+        "Unique gene hit counts were calculated by using feature Counts from the Subread package v.1.5.2. Only unique reads that fell within exon regions were counted",
+        "DESeq2 was used for comparison between groups. Genes with adjusted P values < 0.05 and absolute log2 fold changes >0.5 were called as differentially expressed genes for each comparison.",
+        "Assembly: GRCm38",
+        "Supplementary files format and content: csv count files"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57185410",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32877820"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9661nnn/GSM9661629/suppl/GSM9661629_WTS3.counts.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9661630",
+      "title": [
+        "Yap-Taz, ADM, sample 1"
+      ],
+      "geo_accession": [
+        "GSM9661630"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: alveolar type 2",
+        "genotype: Yap-Taz active",
+        "treatment: alveolar differentiation media",
+        "batch: 1"
+      ],
+      "treatment_protocol_ch1": [
+        "There were no treatments beyond changing the media"
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from WT or Yap/Taz active mice that were injected with 3mg/mouse tamoxifen 2-weeks prior. CD326+ epithelial cells were isolated with Miltenyi beads. Cells were cultuired for 2-weeks in serum-free-feeder free media (SFFFM) as per the Katsura et al (PMID:33128895) protocol. TdTomato+ lineage labeled cells were then flow sorted and cultured again in SFFFM for 10 days and then either continued in SFFFM or switched to alveolar differentiation media for 7-days. Organoids were then imaged and cells extracted via dispase."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Once cells were isolated RNA was extracted following Qiagen Rneasy mini-plus kit protocol using RLT.",
+        "ERCC RNA Spike-In Mix (Cat: #4456740) from ThermoFisher Scientific, was added to normalized total RNA prior to library preparation following manufacturer’s protocol. The NEBNext Ultra II RNA Library Prep Kit for Illumina & NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs, Ipswich, MA, USA) were used."
+      ],
+      "description": [
+        "Library name: YTA1",
+        "Column name in raw_counts_GEO_YapTaz.csv: YTA1"
+      ],
+      "data_processing": [
+        "Trimmomatic v.0.36. was used to remove adaptor sequences",
+        "Trimmed reads were mapped and BAM files were generated using STAR aligner v.2.5.2b",
+        "Unique gene hit counts were calculated by using feature Counts from the Subread package v.1.5.2. Only unique reads that fell within exon regions were counted",
+        "DESeq2 was used for comparison between groups. Genes with adjusted P values < 0.05 and absolute log2 fold changes >0.5 were called as differentially expressed genes for each comparison.",
+        "Assembly: GRCm38",
+        "Supplementary files format and content: csv count files"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57185409",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32877821"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9661nnn/GSM9661630/suppl/GSM9661630_YTA1.counts.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9661631",
+      "title": [
+        "Yap-Taz, ADM, sample 2"
+      ],
+      "geo_accession": [
+        "GSM9661631"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: alveolar type 2",
+        "genotype: Yap-Taz active",
+        "treatment: alveolar differentiation media",
+        "batch: 1"
+      ],
+      "treatment_protocol_ch1": [
+        "There were no treatments beyond changing the media"
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from WT or Yap/Taz active mice that were injected with 3mg/mouse tamoxifen 2-weeks prior. CD326+ epithelial cells were isolated with Miltenyi beads. Cells were cultuired for 2-weeks in serum-free-feeder free media (SFFFM) as per the Katsura et al (PMID:33128895) protocol. TdTomato+ lineage labeled cells were then flow sorted and cultured again in SFFFM for 10 days and then either continued in SFFFM or switched to alveolar differentiation media for 7-days. Organoids were then imaged and cells extracted via dispase."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Once cells were isolated RNA was extracted following Qiagen Rneasy mini-plus kit protocol using RLT.",
+        "ERCC RNA Spike-In Mix (Cat: #4456740) from ThermoFisher Scientific, was added to normalized total RNA prior to library preparation following manufacturer’s protocol. The NEBNext Ultra II RNA Library Prep Kit for Illumina & NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs, Ipswich, MA, USA) were used."
+      ],
+      "description": [
+        "Library name: YTA2",
+        "Column name in raw_counts_GEO_YapTaz.csv: YTA2"
+      ],
+      "data_processing": [
+        "Trimmomatic v.0.36. was used to remove adaptor sequences",
+        "Trimmed reads were mapped and BAM files were generated using STAR aligner v.2.5.2b",
+        "Unique gene hit counts were calculated by using feature Counts from the Subread package v.1.5.2. Only unique reads that fell within exon regions were counted",
+        "DESeq2 was used for comparison between groups. Genes with adjusted P values < 0.05 and absolute log2 fold changes >0.5 were called as differentially expressed genes for each comparison.",
+        "Assembly: GRCm38",
+        "Supplementary files format and content: csv count files"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57185408",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32877822"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9661nnn/GSM9661631/suppl/GSM9661631_YTA2.counts.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9661632",
+      "title": [
+        "Yap-Taz, ADM, sample 3"
+      ],
+      "geo_accession": [
+        "GSM9661632"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: alveolar type 2",
+        "genotype: Yap-Taz active",
+        "treatment: alveolar differentiation media",
+        "batch: 1"
+      ],
+      "treatment_protocol_ch1": [
+        "There were no treatments beyond changing the media"
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from WT or Yap/Taz active mice that were injected with 3mg/mouse tamoxifen 2-weeks prior. CD326+ epithelial cells were isolated with Miltenyi beads. Cells were cultuired for 2-weeks in serum-free-feeder free media (SFFFM) as per the Katsura et al (PMID:33128895) protocol. TdTomato+ lineage labeled cells were then flow sorted and cultured again in SFFFM for 10 days and then either continued in SFFFM or switched to alveolar differentiation media for 7-days. Organoids were then imaged and cells extracted via dispase."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Once cells were isolated RNA was extracted following Qiagen Rneasy mini-plus kit protocol using RLT.",
+        "ERCC RNA Spike-In Mix (Cat: #4456740) from ThermoFisher Scientific, was added to normalized total RNA prior to library preparation following manufacturer’s protocol. The NEBNext Ultra II RNA Library Prep Kit for Illumina & NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs, Ipswich, MA, USA) were used."
+      ],
+      "description": [
+        "Library name: YTA3",
+        "Column name in raw_counts_GEO_YapTaz.csv: YTA3"
+      ],
+      "data_processing": [
+        "Trimmomatic v.0.36. was used to remove adaptor sequences",
+        "Trimmed reads were mapped and BAM files were generated using STAR aligner v.2.5.2b",
+        "Unique gene hit counts were calculated by using feature Counts from the Subread package v.1.5.2. Only unique reads that fell within exon regions were counted",
+        "DESeq2 was used for comparison between groups. Genes with adjusted P values < 0.05 and absolute log2 fold changes >0.5 were called as differentially expressed genes for each comparison.",
+        "Assembly: GRCm38",
+        "Supplementary files format and content: csv count files"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57185407",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32877823"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9661nnn/GSM9661632/suppl/GSM9661632_YTA3.counts.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9661633",
+      "title": [
+        "Yap-Taz, ADM, sample 4"
+      ],
+      "geo_accession": [
+        "GSM9661633"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: alveolar type 2",
+        "genotype: Yap-Taz active",
+        "treatment: alveolar differentiation media",
+        "batch: 1"
+      ],
+      "treatment_protocol_ch1": [
+        "There were no treatments beyond changing the media"
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from WT or Yap/Taz active mice that were injected with 3mg/mouse tamoxifen 2-weeks prior. CD326+ epithelial cells were isolated with Miltenyi beads. Cells were cultuired for 2-weeks in serum-free-feeder free media (SFFFM) as per the Katsura et al (PMID:33128895) protocol. TdTomato+ lineage labeled cells were then flow sorted and cultured again in SFFFM for 10 days and then either continued in SFFFM or switched to alveolar differentiation media for 7-days. Organoids were then imaged and cells extracted via dispase."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Once cells were isolated RNA was extracted following Qiagen Rneasy mini-plus kit protocol using RLT.",
+        "ERCC RNA Spike-In Mix (Cat: #4456740) from ThermoFisher Scientific, was added to normalized total RNA prior to library preparation following manufacturer’s protocol. The NEBNext Ultra II RNA Library Prep Kit for Illumina & NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs, Ipswich, MA, USA) were used."
+      ],
+      "description": [
+        "Library name: YTA4",
+        "Column name in raw_counts_GEO_YapTaz.csv: YTA4"
+      ],
+      "data_processing": [
+        "Trimmomatic v.0.36. was used to remove adaptor sequences",
+        "Trimmed reads were mapped and BAM files were generated using STAR aligner v.2.5.2b",
+        "Unique gene hit counts were calculated by using feature Counts from the Subread package v.1.5.2. Only unique reads that fell within exon regions were counted",
+        "DESeq2 was used for comparison between groups. Genes with adjusted P values < 0.05 and absolute log2 fold changes >0.5 were called as differentially expressed genes for each comparison.",
+        "Assembly: GRCm38",
+        "Supplementary files format and content: csv count files"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57185406",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32877824"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9661nnn/GSM9661633/suppl/GSM9661633_YTA4.counts.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9661634",
+      "title": [
+        "Yap-Taz, SFFFM, sample 1"
+      ],
+      "geo_accession": [
+        "GSM9661634"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: alveolar type 2",
+        "genotype: Yap-Taz active",
+        "treatment: serum-free, feeder-free media",
+        "batch: 1"
+      ],
+      "treatment_protocol_ch1": [
+        "There were no treatments beyond changing the media"
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from WT or Yap/Taz active mice that were injected with 3mg/mouse tamoxifen 2-weeks prior. CD326+ epithelial cells were isolated with Miltenyi beads. Cells were cultuired for 2-weeks in serum-free-feeder free media (SFFFM) as per the Katsura et al (PMID:33128895) protocol. TdTomato+ lineage labeled cells were then flow sorted and cultured again in SFFFM for 10 days and then either continued in SFFFM or switched to alveolar differentiation media for 7-days. Organoids were then imaged and cells extracted via dispase."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Once cells were isolated RNA was extracted following Qiagen Rneasy mini-plus kit protocol using RLT.",
+        "ERCC RNA Spike-In Mix (Cat: #4456740) from ThermoFisher Scientific, was added to normalized total RNA prior to library preparation following manufacturer’s protocol. The NEBNext Ultra II RNA Library Prep Kit for Illumina & NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs, Ipswich, MA, USA) were used."
+      ],
+      "description": [
+        "Library name: YTS1",
+        "Column name in raw_counts_GEO_YapTaz.csv: YTS1"
+      ],
+      "data_processing": [
+        "Trimmomatic v.0.36. was used to remove adaptor sequences",
+        "Trimmed reads were mapped and BAM files were generated using STAR aligner v.2.5.2b",
+        "Unique gene hit counts were calculated by using feature Counts from the Subread package v.1.5.2. Only unique reads that fell within exon regions were counted",
+        "DESeq2 was used for comparison between groups. Genes with adjusted P values < 0.05 and absolute log2 fold changes >0.5 were called as differentially expressed genes for each comparison.",
+        "Assembly: GRCm38",
+        "Supplementary files format and content: csv count files"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57185405",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32877825"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9661nnn/GSM9661634/suppl/GSM9661634_YTS1.counts.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9661635",
+      "title": [
+        "Yap-Taz, SFFFM, sample 2"
+      ],
+      "geo_accession": [
+        "GSM9661635"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: alveolar type 2",
+        "genotype: Yap-Taz active",
+        "treatment: serum-free, feeder-free media",
+        "batch: 1"
+      ],
+      "treatment_protocol_ch1": [
+        "There were no treatments beyond changing the media"
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from WT or Yap/Taz active mice that were injected with 3mg/mouse tamoxifen 2-weeks prior. CD326+ epithelial cells were isolated with Miltenyi beads. Cells were cultuired for 2-weeks in serum-free-feeder free media (SFFFM) as per the Katsura et al (PMID:33128895) protocol. TdTomato+ lineage labeled cells were then flow sorted and cultured again in SFFFM for 10 days and then either continued in SFFFM or switched to alveolar differentiation media for 7-days. Organoids were then imaged and cells extracted via dispase."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Once cells were isolated RNA was extracted following Qiagen Rneasy mini-plus kit protocol using RLT.",
+        "ERCC RNA Spike-In Mix (Cat: #4456740) from ThermoFisher Scientific, was added to normalized total RNA prior to library preparation following manufacturer’s protocol. The NEBNext Ultra II RNA Library Prep Kit for Illumina & NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs, Ipswich, MA, USA) were used."
+      ],
+      "description": [
+        "Library name: YTS2",
+        "Column name in raw_counts_GEO_YapTaz.csv: YTS2"
+      ],
+      "data_processing": [
+        "Trimmomatic v.0.36. was used to remove adaptor sequences",
+        "Trimmed reads were mapped and BAM files were generated using STAR aligner v.2.5.2b",
+        "Unique gene hit counts were calculated by using feature Counts from the Subread package v.1.5.2. Only unique reads that fell within exon regions were counted",
+        "DESeq2 was used for comparison between groups. Genes with adjusted P values < 0.05 and absolute log2 fold changes >0.5 were called as differentially expressed genes for each comparison.",
+        "Assembly: GRCm38",
+        "Supplementary files format and content: csv count files"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57185404",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32877826"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9661nnn/GSM9661635/suppl/GSM9661635_YTS2.counts.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9661636",
+      "title": [
+        "Yap-Taz, SFFFM, sample 3"
+      ],
+      "geo_accession": [
+        "GSM9661636"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell line: primary",
+        "cell type: alveolar type 2",
+        "genotype: Yap-Taz active",
+        "treatment: serum-free, feeder-free media",
+        "batch: 1"
+      ],
+      "treatment_protocol_ch1": [
+        "There were no treatments beyond changing the media"
+      ],
+      "growth_protocol_ch1": [
+        "Cells were isolated from WT or Yap/Taz active mice that were injected with 3mg/mouse tamoxifen 2-weeks prior. CD326+ epithelial cells were isolated with Miltenyi beads. Cells were cultuired for 2-weeks in serum-free-feeder free media (SFFFM) as per the Katsura et al (PMID:33128895) protocol. TdTomato+ lineage labeled cells were then flow sorted and cultured again in SFFFM for 10 days and then either continued in SFFFM or switched to alveolar differentiation media for 7-days. Organoids were then imaged and cells extracted via dispase."
+      ],
+      "molecule_ch1": [
+        "polyA RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Once cells were isolated RNA was extracted following Qiagen Rneasy mini-plus kit protocol using RLT.",
+        "ERCC RNA Spike-In Mix (Cat: #4456740) from ThermoFisher Scientific, was added to normalized total RNA prior to library preparation following manufacturer’s protocol. The NEBNext Ultra II RNA Library Prep Kit for Illumina & NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs, Ipswich, MA, USA) were used."
+      ],
+      "description": [
+        "Library name: YTS3",
+        "Column name in raw_counts_GEO_YapTaz.csv: YTS3"
+      ],
+      "data_processing": [
+        "Trimmomatic v.0.36. was used to remove adaptor sequences",
+        "Trimmed reads were mapped and BAM files were generated using STAR aligner v.2.5.2b",
+        "Unique gene hit counts were calculated by using feature Counts from the Subread package v.1.5.2. Only unique reads that fell within exon regions were counted",
+        "DESeq2 was used for comparison between groups. Genes with adjusted P values < 0.05 and absolute log2 fold changes >0.5 were called as differentially expressed genes for each comparison.",
+        "Assembly: GRCm38",
+        "Supplementary files format and content: csv count files"
+      ],
+      "platform_id": [
+        "GPL34328"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN57185403",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX32877827"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9661nnn/GSM9661636/suppl/GSM9661636_YTS3.counts.txt.gz"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

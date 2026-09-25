@@ -13,8 +13,12 @@ Paper studies: `Research Article/` (renamed from `Thesis/` on 2026-09-25).
 Question-specific plans and workflows: `RQ_Specified/`. Keep the root
 `RESEARCH_QUESTIONS.md` as the single question register. Quote directory names
 with spaces. Use `analysis/lib/repository_paths.py` to resolve historical paths;
-never rewrite old run identities to imply a new analysis. The folder PR contains
-an A1 workspace only; the detailed A1 specification follows separately.
+never rewrite old run identities to imply a new analysis. Folder PR #66 contains
+the A1 workspace skeleton only. The expanded specification lives separately on
+`codex/a1-state-distinction-plan`, under `RQ_Specified/`. Its 29 GEO extracts are
+catalog evidence, not verified independent samples or new analysis results.
+Read the A1 plan, metadata conflicts and prospective contracts before execution;
+the count pilot defaults to reporting holds and requires a reviewed frozen design.
 
 ## Current Nabhan analysis
 

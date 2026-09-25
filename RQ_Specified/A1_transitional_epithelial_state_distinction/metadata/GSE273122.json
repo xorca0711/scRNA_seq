@@ -1,0 +1,258 @@
+{
+  "accession": "GSE273122",
+  "retrieved_at_utc": "2026-09-25T01:07:16.599437+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273122&targ=all&form=text&view=full",
+  "response_sha256": "34729cf2c4471213134fe6750c64c083f66f409130c06eea02117420a7dc9bac",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Aberrant Transitional Alveolar Epithelial Cells Promote Pathogenic Activation of Lung Fibroblasts in Preclinical Fibrosis Modeling (scRNAseq)"
+    ],
+    "geo_accession": [
+      "GSE273122"
+    ],
+    "status": [
+      "Public on Jul 25 2025"
+    ],
+    "last_update_date": [
+      "Jan 30 2026"
+    ],
+    "pubmed_id": [
+      "41027873"
+    ],
+    "overall_design": [
+      "To enrich for EPCAM+ cells and mesenchymal cells , a single cell suspension was prepared by physical and enzymatic dissociation (Collagenase, DNase, Dispase) from Sftpc mutation firbosis lungs (n=2) and control lungs (n=2) followed by MACS sorting by LS columns with CD45+ and CD31 cell removal using CD45 and CD31 micobeads followed by EPCAM+ cell enrichment using EPCAM microbeads. CD45-/CD31-/EPCAM- cells were considered lung mesenchymal cells. EPCAM+ and mesenchymal cells were prepared in 50/50 concentration for sequencing."
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM8422158",
+      "GSM8422159",
+      "GSM8422160",
+      "GSM8422161"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE273nnn/GSE273122/suppl/GSE273122_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1140211"
+    ]
+  },
+  "sample_count": 4,
+  "samples": [
+    {
+      "accession": "GSM8422158",
+      "title": [
+        "Sftpc_WT_1"
+      ],
+      "geo_accession": [
+        "GSM8422158"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: EPCAM+/Mesenchyme",
+        "genotype: SP-C Mutant",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "A single cell suspension was prepared by physical and enzymatic dissociation (Collagenase, DNase, Dispase) followed by MACS sorting by LS columns with CD45+ and CD31 cell removal using CD45 and CD31 micobeads followed by EPCAM+ cell enrichment using EPCAM microbeads. CD45-/CD31-/EPCAM- cells were considered lung mesenchymal cells. EPCAM+ and mesenchymal cells were prepared in 50/50 concentration for sequencing.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Fastq files were aligned to the mm10 reference genome using STARSolo",
+        "Downstream processing was performed using Seurat v3",
+        "Assembly: mm10",
+        "Supplementary files format and content: Seurat processed h5 files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42824131",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25475634"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8422nnn/GSM8422158/suppl/GSM8422158_WT_1.h5ad"
+      ]
+    },
+    {
+      "accession": "GSM8422159",
+      "title": [
+        "Sftpc_WT_2"
+      ],
+      "geo_accession": [
+        "GSM8422159"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: EPCAM+/Mesenchyme",
+        "genotype: SP-C Mutant",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "A single cell suspension was prepared by physical and enzymatic dissociation (Collagenase, DNase, Dispase) followed by MACS sorting by LS columns with CD45+ and CD31 cell removal using CD45 and CD31 micobeads followed by EPCAM+ cell enrichment using EPCAM microbeads. CD45-/CD31-/EPCAM- cells were considered lung mesenchymal cells. EPCAM+ and mesenchymal cells were prepared in 50/50 concentration for sequencing.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Fastq files were aligned to the mm10 reference genome using STARSolo",
+        "Downstream processing was performed using Seurat v3",
+        "Assembly: mm10",
+        "Supplementary files format and content: Seurat processed h5 files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42824130",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25475635"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8422nnn/GSM8422159/suppl/GSM8422159_WT_2.h5ad"
+      ]
+    },
+    {
+      "accession": "GSM8422160",
+      "title": [
+        "Sftpc_C121G_1"
+      ],
+      "geo_accession": [
+        "GSM8422160"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: EPCAM+/Mesenchyme",
+        "genotype: SP-C WT",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "A single cell suspension was prepared by physical and enzymatic dissociation (Collagenase, DNase, Dispase) followed by MACS sorting by LS columns with CD45+ and CD31 cell removal using CD45 and CD31 micobeads followed by EPCAM+ cell enrichment using EPCAM microbeads. CD45-/CD31-/EPCAM- cells were considered lung mesenchymal cells. EPCAM+ and mesenchymal cells were prepared in 50/50 concentration for sequencing.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Fastq files were aligned to the mm10 reference genome using STARSolo",
+        "Downstream processing was performed using Seurat v3",
+        "Assembly: mm10",
+        "Supplementary files format and content: Seurat processed h5 files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42824129",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25475636"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8422nnn/GSM8422160/suppl/GSM8422160_C121G_W7_1.h5ad"
+      ]
+    },
+    {
+      "accession": "GSM8422161",
+      "title": [
+        "Sftpc_C121G_2"
+      ],
+      "geo_accession": [
+        "GSM8422161"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: EPCAM+/Mesenchyme",
+        "genotype: SP-C WT",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "A single cell suspension was prepared by physical and enzymatic dissociation (Collagenase, DNase, Dispase) followed by MACS sorting by LS columns with CD45+ and CD31 cell removal using CD45 and CD31 micobeads followed by EPCAM+ cell enrichment using EPCAM microbeads. CD45-/CD31-/EPCAM- cells were considered lung mesenchymal cells. EPCAM+ and mesenchymal cells were prepared in 50/50 concentration for sequencing.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Fastq files were aligned to the mm10 reference genome using STARSolo",
+        "Downstream processing was performed using Seurat v3",
+        "Assembly: mm10",
+        "Supplementary files format and content: Seurat processed h5 files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42824128",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25475637"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8422nnn/GSM8422161/suppl/GSM8422161_C121G_W7_2.h5ad"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

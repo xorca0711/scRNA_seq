@@ -7,9 +7,18 @@ to know to continue. Update this before stopping.
 
 Folder migration: `Thesis/` is now `Research Article/`; question-specific work
 starts under [RQ_Specified](RQ_Specified/README.md). The structure PR establishes
-the A1 workspace; its expanded analysis specification follows separately. No
+the A1 workspace in PR #66; its expanded analysis specification is on the separate
+`codex/a1-state-distinction-plan` branch. No
 scientific analysis was rerun for this migration. Historical records retain
 their original paths and hashes; see the [migration record](docs/migrations/2026-09-25-research-layout/README.md).
+
+A1 now has a [prospective plan](RQ_Specified/A1_transitional_epithelial_state_distinction/PLAN.md),
+29 GEO metadata extracts, three ENA project inventories, IMC/PRIDE catalog
+evidence, a study map, six figure groups and a guarded paired-count scaffold.
+Only metadata auditing and code checks have run. The three first count contrasts
+remain held for biological-unit, assay-QC and processed-input verification.
+Direct histone profiles, methylation references, lineage, protein and functional
+evidence are distinct work packages; no new biological findings are claimed.
 
 The feasible Yu review-motivated analyses are complete: IPF pathways and
 ligand/target sensitivity analyses, eligible early mouse niches, all 75 human

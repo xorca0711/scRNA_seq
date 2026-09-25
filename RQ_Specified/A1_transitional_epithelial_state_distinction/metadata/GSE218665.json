@@ -1,0 +1,172 @@
+{
+  "accession": "GSE218665",
+  "retrieved_at_utc": "2026-09-25T01:08:51.703006+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE218665&targ=all&form=text&view=full",
+  "response_sha256": "1c1f56ac528db50f3bb5ed64fc3e38ecb41784c42e0bdf7240aed5d76b0d8fca",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Single-cell RNA-seq of BHT induced lung injury"
+    ],
+    "geo_accession": [
+      "GSE218665"
+    ],
+    "status": [
+      "Public on Nov 02 2023"
+    ],
+    "last_update_date": [
+      "Dec 02 2024"
+    ],
+    "pubmed_id": [
+      "37922879"
+    ],
+    "overall_design": [
+      "Single-cell RNA-seq on day 6 post BHT induced lung injury"
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM6754355",
+      "GSM6754356"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218665/suppl/GSE218665_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA904776"
+    ]
+  },
+  "sample_count": 2,
+  "samples": [
+    {
+      "accession": "GSM6754355",
+      "title": [
+        "BHT injury repeat-1"
+      ],
+      "geo_accession": [
+        "GSM6754355"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Lung cells",
+        "genotype: Sftpc-creER;Rosa26-lsl-tdTomato (Ai9); Ctgf-GFP",
+        "treatment: Tamoxifen and BHT"
+      ],
+      "treatment_protocol_ch1": [
+        "Sftpc-creER;Rosa26-lsl-tdTomato (Ai9); Ctgf-GFP mice were treated with Tamoxifen followed by BHT administration"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "lungs were inflated with an enzyme dissociation solution (450U/mL Collagenase I (Worthington, LS004197), 5U/mL Dispase (Corning, 354235), and 0.33U/mL DNase I (Roche, 10104159001), in DMEM). Separated lung lobes were minced and incubated in enzyme solution at 37°C for 25-35 minutes. Dissociation was quenched with equivalent volume 10% FBS/DMEM and strained through a 100 µm strainer. Cell pellet was resuspended in red blood cell lysis buffer (100 µm EDTA, 10 mM KHCO3, 155 mM NH4Cl) for 2 minutes, followed by quenching with 10% FBS/DMEM and filtration through a 40 µm strainer. Cell pellet was resuspended in 500µL 2%FBS/DMEM. For MACS, cells were incubated for 30 minutes with the following antibodies: CD45 (MiltenyiBiotech, 130-052-301) and CD31 (MiltenyiBiotech, 130-097-418). MACS depletion was performed as per manufacturer protocol using LD columns (MiltenyiBiotech, 130-042-901). Lung cell suspensions were enriched for epithelial and mesenchymal cell populations and resuspended in PBS supplemented with 0.01% BSA.",
+        "We used 10X genomics, 3'-GEX scRNA-seq (V3.1) protocol to capture cells and prepare libraries.",
+        "3'-GEX v3.1 (10X genomics)"
+      ],
+      "description": [
+        "10X genomics"
+      ],
+      "data_processing": [
+        "The demultiplexing, barcoded processing, gene counting and aggregation were made using the Cell Ranger software v7.0.1 (https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger)",
+        "Assembly: GRCm38.p4 (mm10)"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN31853644",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX18367427"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6754nnn/GSM6754355/suppl/GSM6754355_BHT1_barcodes.tsv.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6754nnn/GSM6754355/suppl/GSM6754355_BHT1_features.tsv.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6754nnn/GSM6754355/suppl/GSM6754355_BHT1_matrix.mtx.gz"
+      ]
+    },
+    {
+      "accession": "GSM6754356",
+      "title": [
+        "BHT injury repeat-2"
+      ],
+      "geo_accession": [
+        "GSM6754356"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Lung cells",
+        "genotype: Sftpc-creER;Rosa26-lsl-tdTomato (Ai9); Ctgf-GFP",
+        "treatment: Tamoxifen and BHT"
+      ],
+      "treatment_protocol_ch1": [
+        "Sftpc-creER;Rosa26-lsl-tdTomato (Ai9); Ctgf-GFP mice were treated with Tamoxifen followed by BHT administration"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "lungs were inflated with an enzyme dissociation solution (450U/mL Collagenase I (Worthington, LS004197), 5U/mL Dispase (Corning, 354235), and 0.33U/mL DNase I (Roche, 10104159001), in DMEM). Separated lung lobes were minced and incubated in enzyme solution at 37°C for 25-35 minutes. Dissociation was quenched with equivalent volume 10% FBS/DMEM and strained through a 100 µm strainer. Cell pellet was resuspended in red blood cell lysis buffer (100 µm EDTA, 10 mM KHCO3, 155 mM NH4Cl) for 2 minutes, followed by quenching with 10% FBS/DMEM and filtration through a 40 µm strainer. Cell pellet was resuspended in 500µL 2%FBS/DMEM. For MACS, cells were incubated for 30 minutes with the following antibodies: CD45 (MiltenyiBiotech, 130-052-301) and CD31 (MiltenyiBiotech, 130-097-418). MACS depletion was performed as per manufacturer protocol using LD columns (MiltenyiBiotech, 130-042-901). Lung cell suspensions were enriched for epithelial and mesenchymal cell populations and resuspended in PBS supplemented with 0.01% BSA.",
+        "We used 10X genomics, 3'-GEX scRNA-seq (V3.1) protocol to capture cells and prepare libraries.",
+        "3'-GEX v3.1 (10X genomics)"
+      ],
+      "description": [
+        "10X genomics"
+      ],
+      "data_processing": [
+        "The demultiplexing, barcoded processing, gene counting and aggregation were made using the Cell Ranger software v7.0.1 (https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger)",
+        "Assembly: GRCm38.p4 (mm10)"
+      ],
+      "platform_id": [
+        "GPL21273"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN31853643",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX18367428"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6754nnn/GSM6754356/suppl/GSM6754356_BHT2_barcodes.tsv.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6754nnn/GSM6754356/suppl/GSM6754356_BHT2_features.tsv.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6754nnn/GSM6754356/suppl/GSM6754356_BHT2_matrix.mtx.gz"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

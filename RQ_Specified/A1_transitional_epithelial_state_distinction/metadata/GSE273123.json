@@ -1,0 +1,890 @@
+{
+  "accession": "GSE273123",
+  "retrieved_at_utc": "2026-09-25T01:07:40.589277+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273123&targ=all&form=text&view=full",
+  "response_sha256": "f49cb3e64bdb5f9db002697e62e2c700cba8806826c35b400b51f91e366ce72e",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Aberrant Transitional Alveolar Epithelial Cells Promote Pathogenic Activation of Lung Fibroblasts in Preclinical Fibrosis Modeling (Bulk RNA-Seq)"
+    ],
+    "geo_accession": [
+      "GSE273123"
+    ],
+    "status": [
+      "Public on Jul 25 2025"
+    ],
+    "last_update_date": [
+      "Jan 30 2026"
+    ],
+    "pubmed_id": [
+      "41027873"
+    ],
+    "overall_design": [
+      "To determine the transcriptional distinctions between CD44+ and CD44- alveolar type 2 (AT2) cells during fibrosis we isolated AT2 by FACS from lungs of control (n=4)  and Sftpc mutant lungs (n=4). Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-."
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM8422162",
+      "GSM8422163",
+      "GSM8422164",
+      "GSM8422165",
+      "GSM8422166",
+      "GSM8422167",
+      "GSM8422168",
+      "GSM8422169",
+      "GSM8422170",
+      "GSM8422171",
+      "GSM8422172",
+      "GSM8422173",
+      "GSM8422174",
+      "GSM8422175",
+      "GSM8422176",
+      "GSM8422177"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE273nnn/GSE273123/suppl/GSE273123_Count_Matrix.txt.gz"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1140210"
+    ]
+  },
+  "sample_count": 16,
+  "samples": [
+    {
+      "accession": "GSM8422162",
+      "title": [
+        "WT1 AT2 CD44 neg"
+      ],
+      "geo_accession": [
+        "GSM8422162"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C WT",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826590",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477427"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8422163",
+      "title": [
+        "WT2 AT2 CD44 neg"
+      ],
+      "geo_accession": [
+        "GSM8422163"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C WT",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826589",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477428"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8422164",
+      "title": [
+        "WT3 AT2 CD44 neg"
+      ],
+      "geo_accession": [
+        "GSM8422164"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C WT",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826588",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477429"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8422165",
+      "title": [
+        "WT4 AT2 CD44 neg"
+      ],
+      "geo_accession": [
+        "GSM8422165"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C WT",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826587",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477430"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8422166",
+      "title": [
+        "WT1 AT2 CD44 pos"
+      ],
+      "geo_accession": [
+        "GSM8422166"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C WT",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826586",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477431"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8422167",
+      "title": [
+        "WT2 AT2 CD44 pos"
+      ],
+      "geo_accession": [
+        "GSM8422167"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C WT",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826585",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477432"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8422168",
+      "title": [
+        "WT3 AT2 CD44 pos"
+      ],
+      "geo_accession": [
+        "GSM8422168"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C WT",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826584",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477433"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8422169",
+      "title": [
+        "WT4 AT2 CD44 pos"
+      ],
+      "geo_accession": [
+        "GSM8422169"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C WT",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826583",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477434"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8422170",
+      "title": [
+        "SPC Mut1 AT2 CD44 neg"
+      ],
+      "geo_accession": [
+        "GSM8422170"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C Mutant",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826582",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477435"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8422171",
+      "title": [
+        "SPC Mut2 AT2 CD44 neg"
+      ],
+      "geo_accession": [
+        "GSM8422171"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C Mutant",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826581",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477436"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8422172",
+      "title": [
+        "SPC Mut3 AT2 CD44 neg"
+      ],
+      "geo_accession": [
+        "GSM8422172"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C Mutant",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826580",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477437"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8422173",
+      "title": [
+        "SPC Mut4 AT2 CD44 neg"
+      ],
+      "geo_accession": [
+        "GSM8422173"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C Mutant",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826579",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477438"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8422174",
+      "title": [
+        "SPC Mut1 AT2 CD44 pos"
+      ],
+      "geo_accession": [
+        "GSM8422174"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C Mutant",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826578",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477439"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8422175",
+      "title": [
+        "SPC Mut2 AT2 CD44 pos"
+      ],
+      "geo_accession": [
+        "GSM8422175"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C Mutant",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826577",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477440"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8422176",
+      "title": [
+        "SPC Mut3 AT2 CD44 pos"
+      ],
+      "geo_accession": [
+        "GSM8422176"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C Mutant",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826576",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477441"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8422177",
+      "title": [
+        "SPC Mut4 AT2 CD44 pos"
+      ],
+      "geo_accession": [
+        "GSM8422177"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: AT2",
+        "genotype: SP-C Mutant",
+        "treatment: OG TMX"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were harvested from control and Sftpc mutant lungs, single cells suspension was prepared by mehcanical and enzymatic digetsion.  CD45+ and CD31+ cells were depleted using biotinylated antibodies followed by surface staining with antibody mix to identify CD44+ and CD44- AT2s. AT2 cells were identified as CD45-CD31-Epcam+CD104-CD200hi and then CD44+ or CD44-.. Dead cells were excluded by Dapi staining.",
+        "Libraries were prepared using Illumina stranded total RNA with Ribo-zero Plus kit accordine to manufacture instructions"
+      ],
+      "data_processing": [
+        "Bowtie2",
+        "Assembly: mm10",
+        "Supplementary files format and content: tab seperated files"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN42826575",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX25477442"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

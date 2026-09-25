@@ -1,0 +1,410 @@
+{
+  "accession": "GSE289846",
+  "retrieved_at_utc": "2026-09-25T00:59:22.491098+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289846&targ=all&form=text&view=full",
+  "response_sha256": "117c0cab0407e718d6f1bd7c757f0a183a01d348bd2046fa21dd35b2b235e09c",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "The iPSC-derived pulmonary epithilial cells in micro-patterned culture plate [scRNA-seq]"
+    ],
+    "geo_accession": [
+      "GSE289846"
+    ],
+    "status": [
+      "Public on Feb 18 2026"
+    ],
+    "last_update_date": [
+      "Feb 18 2026"
+    ],
+    "pubmed_id": [
+      "41680175"
+    ],
+    "overall_design": [
+      "Human iPSC-derived lung progenitor cells were seeded onto micro-patterned plates and cultured in \"DCIK+3i\" (CHIR99021, SB431542 and Y27632) medium for 7 days to induce alveolar organoids involving alveolar type 2 cells in the DCIK+3i medium. Then, the culture medium was switched to DCI+LATS(LATS-IN-1) medium to induce AT1 cells or \"PAL\" medium to induce alveolar transitional state cells (iATCs), respectively. The organoids in each condition were dissociated using Accutase and subjected to single-cell RNA sequencing analysis."
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM8800133",
+      "GSM8800134",
+      "GSM8800135",
+      "GSM8800136",
+      "GSM8800137",
+      "GSM8800138"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE289nnn/GSE289846/suppl/GSE289846_3i_Day7_barcodes.tsv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE289nnn/GSE289846/suppl/GSE289846_3i_Day7_features.tsv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE289nnn/GSE289846/suppl/GSE289846_3i_Day7_matrix.mtx.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE289nnn/GSE289846/suppl/GSE289846_3i_LATS_Day14_barcodes.tsv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE289nnn/GSE289846/suppl/GSE289846_3i_LATS_Day14_features.tsv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE289nnn/GSE289846/suppl/GSE289846_3i_LATS_Day14_matrix.mtx.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE289nnn/GSE289846/suppl/GSE289846_3i_PAL_Day14_barcodes.tsv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE289nnn/GSE289846/suppl/GSE289846_3i_PAL_Day14_features.tsv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE289nnn/GSE289846/suppl/GSE289846_3i_PAL_Day14_matrix.mtx.gz"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1225182"
+    ]
+  },
+  "sample_count": 6,
+  "samples": [
+    {
+      "accession": "GSM8800133",
+      "title": [
+        "3i_LATS_1_Day14"
+      ],
+      "geo_accession": [
+        "GSM8800133"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→DCI+LATS-IN-1",
+        "time: Day14"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, and PAL medium to induce iATCs"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "The cell suspension after CPM MACS sorting was used as \"CPM_MACS_progenitor\". The micro-patterned cultured cells were dissociated by  0.5 mM EDTA/PBS and Accutase treatment and subjected to scRNA-seq.",
+        "The collected cells were loaded into a 10X Genomics Chromium system. The scRNA-seq libraries were constructed using Single Cell 3' Reagent Kits (v.3.1, 10X Genomics)."
+      ],
+      "description": [
+        "Library name: Sample 1",
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "The 10X Genomics Cell Ranger pipeline (version 7.1.0) was used to perform sample demultiplexing, alignment to the hg38 human reference genome (refdata-gex-GRCh38-2020-A from 10X Genomics) and the reporter sequences, barcode/UMI processing, and gene counting for each cell.",
+        "Assembly: hg38",
+        "Supplementary files format and content: A tab-delimited text file listing the unique cell barcodes detected in the dataset. A sparse matrix in Matrix Market (MTX) format, containing accessibility count values for each peak across all barcoded cells."
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46879899",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27714275"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8800134",
+      "title": [
+        "3i_LATS_2_Day14"
+      ],
+      "geo_accession": [
+        "GSM8800134"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→DCI+LATS-IN-1",
+        "time: Day14"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, and PAL medium to induce iATCs"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "The cell suspension after CPM MACS sorting was used as \"CPM_MACS_progenitor\". The micro-patterned cultured cells were dissociated by  0.5 mM EDTA/PBS and Accutase treatment and subjected to scRNA-seq.",
+        "The collected cells were loaded into a 10X Genomics Chromium system. The scRNA-seq libraries were constructed using Single Cell 3' Reagent Kits (v.3.1, 10X Genomics)."
+      ],
+      "description": [
+        "Library name: Sample 2",
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "The 10X Genomics Cell Ranger pipeline (version 7.1.0) was used to perform sample demultiplexing, alignment to the hg38 human reference genome (refdata-gex-GRCh38-2020-A from 10X Genomics) and the reporter sequences, barcode/UMI processing, and gene counting for each cell.",
+        "Assembly: hg38",
+        "Supplementary files format and content: A tab-delimited text file listing the unique cell barcodes detected in the dataset. A sparse matrix in Matrix Market (MTX) format, containing accessibility count values for each peak across all barcoded cells."
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46879898",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27714276"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8800135",
+      "title": [
+        "3i_PAL_1_Day14"
+      ],
+      "geo_accession": [
+        "GSM8800135"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→PAL",
+        "time: Day14"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, and PAL medium to induce iATCs"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "The cell suspension after CPM MACS sorting was used as \"CPM_MACS_progenitor\". The micro-patterned cultured cells were dissociated by  0.5 mM EDTA/PBS and Accutase treatment and subjected to scRNA-seq.",
+        "The collected cells were loaded into a 10X Genomics Chromium system. The scRNA-seq libraries were constructed using Single Cell 3' Reagent Kits (v.3.1, 10X Genomics)."
+      ],
+      "description": [
+        "Library name: Sample 3",
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "The 10X Genomics Cell Ranger pipeline (version 7.1.0) was used to perform sample demultiplexing, alignment to the hg38 human reference genome (refdata-gex-GRCh38-2020-A from 10X Genomics) and the reporter sequences, barcode/UMI processing, and gene counting for each cell.",
+        "Assembly: hg38",
+        "Supplementary files format and content: A tab-delimited text file listing the unique cell barcodes detected in the dataset. A sparse matrix in Matrix Market (MTX) format, containing accessibility count values for each peak across all barcoded cells."
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46879897",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27714277"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8800136",
+      "title": [
+        "3i_PAL_2_Day14"
+      ],
+      "geo_accession": [
+        "GSM8800136"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i→PAL",
+        "time: Day14"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, and PAL medium to induce iATCs"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "The cell suspension after CPM MACS sorting was used as \"CPM_MACS_progenitor\". The micro-patterned cultured cells were dissociated by  0.5 mM EDTA/PBS and Accutase treatment and subjected to scRNA-seq.",
+        "The collected cells were loaded into a 10X Genomics Chromium system. The scRNA-seq libraries were constructed using Single Cell 3' Reagent Kits (v.3.1, 10X Genomics)."
+      ],
+      "description": [
+        "Library name: Sample 4",
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "The 10X Genomics Cell Ranger pipeline (version 7.1.0) was used to perform sample demultiplexing, alignment to the hg38 human reference genome (refdata-gex-GRCh38-2020-A from 10X Genomics) and the reporter sequences, barcode/UMI processing, and gene counting for each cell.",
+        "Assembly: hg38",
+        "Supplementary files format and content: A tab-delimited text file listing the unique cell barcodes detected in the dataset. A sparse matrix in Matrix Market (MTX) format, containing accessibility count values for each peak across all barcoded cells."
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46879896",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27714278"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8800137",
+      "title": [
+        "3i_1_Day7"
+      ],
+      "geo_accession": [
+        "GSM8800137"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i",
+        "time: Day7"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, and PAL medium to induce iATCs"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "The cell suspension after CPM MACS sorting was used as \"CPM_MACS_progenitor\". The micro-patterned cultured cells were dissociated by  0.5 mM EDTA/PBS and Accutase treatment and subjected to scRNA-seq.",
+        "The collected cells were loaded into a 10X Genomics Chromium system. The scRNA-seq libraries were constructed using Single Cell 3' Reagent Kits (v.3.1, 10X Genomics)."
+      ],
+      "description": [
+        "Library name: Sample 5",
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "The 10X Genomics Cell Ranger pipeline (version 7.1.0) was used to perform sample demultiplexing, alignment to the hg38 human reference genome (refdata-gex-GRCh38-2020-A from 10X Genomics) and the reporter sequences, barcode/UMI processing, and gene counting for each cell.",
+        "Assembly: hg38",
+        "Supplementary files format and content: A tab-delimited text file listing the unique cell barcodes detected in the dataset. A sparse matrix in Matrix Market (MTX) format, containing accessibility count values for each peak across all barcoded cells."
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46879895",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27714279"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM8800138",
+      "title": [
+        "3i_2_Day7"
+      ],
+      "geo_accession": [
+        "GSM8800138"
+      ],
+      "source_name_ch1": [
+        "B2-3"
+      ],
+      "organism_ch1": [
+        "Homo sapiens"
+      ],
+      "characteristics_ch1": [
+        "cell line: B2-3",
+        "cell type: iPSC-derived alveolar epithelial cells",
+        "treatment: DCIK+3i",
+        "time: Day7"
+      ],
+      "growth_protocol_ch1": [
+        "The MACS-isolated iPSC-derived lung progenitor cells (LPs) were seeded in the 24-well micro-patterned plates for \"2.5-dimensional culture\" (Tosoh Co., Ltd.) with multiple round shaped cell-attachment areas in 100 μm diameter pre-coated with 0.5 ug/cm2 of iMatrix-511 silk (TaKaRa bio, 892021) at the cell densities 1x10^5 cells/well. These cells were cultured in \"DCIK+3i\" (CHIR99021, SB431542, and Y27632) medium for 7 days to induce AT2 cells, followed by an additional 7-day maintenance with DCIK+3i medium to induce AT2 cells, DCI+LATS medium to induce AT1 cells, and PAL medium to induce iATCs"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "The cell suspension after CPM MACS sorting was used as \"CPM_MACS_progenitor\". The micro-patterned cultured cells were dissociated by  0.5 mM EDTA/PBS and Accutase treatment and subjected to scRNA-seq.",
+        "The collected cells were loaded into a 10X Genomics Chromium system. The scRNA-seq libraries were constructed using Single Cell 3' Reagent Kits (v.3.1, 10X Genomics)."
+      ],
+      "description": [
+        "Library name: Sample 6",
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "The 10X Genomics Cell Ranger pipeline (version 7.1.0) was used to perform sample demultiplexing, alignment to the hg38 human reference genome (refdata-gex-GRCh38-2020-A from 10X Genomics) and the reporter sequences, barcode/UMI processing, and gene counting for each cell.",
+        "Assembly: hg38",
+        "Supplementary files format and content: A tab-delimited text file listing the unique cell barcodes detected in the dataset. A sparse matrix in Matrix Market (MTX) format, containing accessibility count values for each peak across all barcoded cells."
+      ],
+      "platform_id": [
+        "GPL24676"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN46879894",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX27714280"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

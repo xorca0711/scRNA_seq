@@ -1,0 +1,297 @@
+{
+  "accession": "GSE144598",
+  "retrieved_at_utc": "2026-09-25T01:01:11.811863+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE144598&targ=all&form=text&view=full",
+  "response_sha256": "6d45a64ef74620fc6780415d47f2d77667ca8f75611bdfd90412adec27f22090",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Inflammatory Signals induce AT2 Cell-Derived Damage-Associated Transient Progenitors that Mediate Alveolar Regeneration"
+    ],
+    "geo_accession": [
+      "GSE144598"
+    ],
+    "status": [
+      "Public on Aug 03 2020"
+    ],
+    "last_update_date": [
+      "Nov 02 2020"
+    ],
+    "pubmed_id": [
+      "32750316"
+    ],
+    "overall_design": [
+      "For ATAC-seq of bulk (control) and Il1r1+ AT2, Tomato+ AT2 cells were isolated by FACS.",
+      "Please note that each processed .bw data was generated from both replicates and is linked to the corresponding *_1 records."
+    ],
+    "type": [
+      "Genome binding/occupancy profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM4291723",
+      "GSM4291724",
+      "GSM4291725",
+      "GSM4291726"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE144nnn/GSE144598/suppl/GSE144598_RAW.tar"
+    ],
+    "relation": [
+      "SubSeries of: GSE144553",
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA604180",
+      "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRP246322"
+    ]
+  },
+  "sample_count": 4,
+  "samples": [
+    {
+      "accession": "GSM4291723",
+      "title": [
+        "Control AT2_1"
+      ],
+      "geo_accession": [
+        "GSM4291723"
+      ],
+      "source_name_ch1": [
+        "Control AT2"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "strain background: C57BL/6",
+        "tissue: Lung",
+        "cell type: lung pogenitor cells",
+        "cell subtype: Alveolar type 2 progenitor cells (AT2)"
+      ],
+      "treatment_protocol_ch1": [
+        "0.2mg/g body weight tamoxifen was given via intraperitoneal (IP) injection."
+      ],
+      "growth_protocol_ch1": [
+        "Mice for the lineage tracing and injury experiments were  bred and maintained under specific-pathogen-free conditions at the Cambridge Stem Cell Institute and Gurdon Institute of University of Cambridge."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "The ATAC-seq assay was performed on 50,000 FACS-purified",
+        "Purified cells were lysed in ATAC lysis buffer for 5 min to get nuclei and then transposed with Tn5 transposase (Illumina) for 30 min. Fractionated DNA was used for amplification and library preparation",
+        "Illumina, Illumina HiSeq 4000, 150 bp-paired end sequencing"
+      ],
+      "data_processing": [
+        "The quality of the generated sequencing data was checked using the FastQC program, followed by filtering of adapter and/or overrepresented sequences using Trimmomatic.",
+        "Filtered reads were next mapped to the mouse primary genome assembly (mm9/GRCm38) using STAR38, with parameters -outFilterMatchNminOverLread 0.4 -outFilterScoreMinOverLread 0.4, and a GTF annotation file of the latest mouse assembly (GCA_000001635.8) downloaded from ENSEMBL ftp.",
+        "MACS2 callpeak was used for ATAC-seq peak calling of the Il1r1+AT2 and bulk AT2 samples, using the options -nomodel-shift -100 -extsize 200. Differentially enriched peaks in Il1r1+AT2 and bulk AT2 populations were next inferred using the MACS2 bdgdiff with a log10 likelihood ratio score cutoff of 10. ATAC-seq heatmaps were plotted using deepTools2.",
+        "Annotation of ATAC-seq enriched peaks overlapping with promoter and other gene regions was performed using the ChIPseeker R/Bioconductor package, together with GO enrichment and pathway analyses. Finally, motif identification was performed using the findMotifsGenome.pl program of the HOMER software.",
+        "Genome_build: Mus musculus, GRCm38",
+        "Supplementary_files_format_and_content: raw fastq files and peak quantifications, bw format"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13955723",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7655620"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4291nnn/GSM4291723/suppl/GSM4291723_Control_AT2.bw"
+      ]
+    },
+    {
+      "accession": "GSM4291724",
+      "title": [
+        "Control AT2_2"
+      ],
+      "geo_accession": [
+        "GSM4291724"
+      ],
+      "source_name_ch1": [
+        "Control AT2"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "strain background: C57BL/6",
+        "tissue: Lung",
+        "cell type: lung pogenitor cells",
+        "cell subtype: Alveolar type 2 progenitor cells (AT2)"
+      ],
+      "treatment_protocol_ch1": [
+        "0.2mg/g body weight tamoxifen was given via intraperitoneal (IP) injection."
+      ],
+      "growth_protocol_ch1": [
+        "Mice for the lineage tracing and injury experiments were  bred and maintained under specific-pathogen-free conditions at the Cambridge Stem Cell Institute and Gurdon Institute of University of Cambridge."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "The ATAC-seq assay was performed on 50,000 FACS-purified",
+        "Purified cells were lysed in ATAC lysis buffer for 5 min to get nuclei and then transposed with Tn5 transposase (Illumina) for 30 min. Fractionated DNA was used for amplification and library preparation",
+        "Illumina, Illumina HiSeq 4000, 150 bp-paired end sequencing"
+      ],
+      "data_processing": [
+        "The quality of the generated sequencing data was checked using the FastQC program, followed by filtering of adapter and/or overrepresented sequences using Trimmomatic.",
+        "Filtered reads were next mapped to the mouse primary genome assembly (mm9/GRCm38) using STAR38, with parameters -outFilterMatchNminOverLread 0.4 -outFilterScoreMinOverLread 0.4, and a GTF annotation file of the latest mouse assembly (GCA_000001635.8) downloaded from ENSEMBL ftp.",
+        "MACS2 callpeak was used for ATAC-seq peak calling of the Il1r1+AT2 and bulk AT2 samples, using the options -nomodel-shift -100 -extsize 200. Differentially enriched peaks in Il1r1+AT2 and bulk AT2 populations were next inferred using the MACS2 bdgdiff with a log10 likelihood ratio score cutoff of 10. ATAC-seq heatmaps were plotted using deepTools2.",
+        "Annotation of ATAC-seq enriched peaks overlapping with promoter and other gene regions was performed using the ChIPseeker R/Bioconductor package, together with GO enrichment and pathway analyses. Finally, motif identification was performed using the findMotifsGenome.pl program of the HOMER software.",
+        "Genome_build: Mus musculus, GRCm38",
+        "Supplementary_files_format_and_content: raw fastq files and peak quantifications, bw format"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13955722",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7655621"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    },
+    {
+      "accession": "GSM4291725",
+      "title": [
+        "Il1r1+AT2_1"
+      ],
+      "geo_accession": [
+        "GSM4291725"
+      ],
+      "source_name_ch1": [
+        "Il1r1 AT2"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "strain background: C57BL/6",
+        "tissue: Lung",
+        "cell type: lung pogenitor cells",
+        "cell subtype: Alveolar type 2 progenitor cells (AT2)"
+      ],
+      "treatment_protocol_ch1": [
+        "0.2mg/g body weight tamoxifen was given via intraperitoneal (IP) injection."
+      ],
+      "growth_protocol_ch1": [
+        "Mice for the lineage tracing and injury experiments were  bred and maintained under specific-pathogen-free conditions at the Cambridge Stem Cell Institute and Gurdon Institute of University of Cambridge."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "The ATAC-seq assay was performed on 50,000 FACS-purified",
+        "Purified cells were lysed in ATAC lysis buffer for 5 min to get nuclei and then transposed with Tn5 transposase (Illumina) for 30 min. Fractionated DNA was used for amplification and library preparation",
+        "Illumina, Illumina HiSeq 4000, 150 bp-paired end sequencing"
+      ],
+      "data_processing": [
+        "The quality of the generated sequencing data was checked using the FastQC program, followed by filtering of adapter and/or overrepresented sequences using Trimmomatic.",
+        "Filtered reads were next mapped to the mouse primary genome assembly (mm9/GRCm38) using STAR38, with parameters -outFilterMatchNminOverLread 0.4 -outFilterScoreMinOverLread 0.4, and a GTF annotation file of the latest mouse assembly (GCA_000001635.8) downloaded from ENSEMBL ftp.",
+        "MACS2 callpeak was used for ATAC-seq peak calling of the Il1r1+AT2 and bulk AT2 samples, using the options -nomodel-shift -100 -extsize 200. Differentially enriched peaks in Il1r1+AT2 and bulk AT2 populations were next inferred using the MACS2 bdgdiff with a log10 likelihood ratio score cutoff of 10. ATAC-seq heatmaps were plotted using deepTools2.",
+        "Annotation of ATAC-seq enriched peaks overlapping with promoter and other gene regions was performed using the ChIPseeker R/Bioconductor package, together with GO enrichment and pathway analyses. Finally, motif identification was performed using the findMotifsGenome.pl program of the HOMER software.",
+        "Genome_build: Mus musculus, GRCm38",
+        "Supplementary_files_format_and_content: raw fastq files and peak quantifications, bw format"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13955721",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7655622"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4291nnn/GSM4291725/suppl/GSM4291725_Il1r1_AT2.bw"
+      ]
+    },
+    {
+      "accession": "GSM4291726",
+      "title": [
+        "IL1r1+AT2_2"
+      ],
+      "geo_accession": [
+        "GSM4291726"
+      ],
+      "source_name_ch1": [
+        "Il1r1 AT2"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "strain background: C57BL/6",
+        "tissue: Lung",
+        "cell type: lung pogenitor cells",
+        "cell subtype: Alveolar type 2 progenitor cells (AT2)"
+      ],
+      "treatment_protocol_ch1": [
+        "0.2mg/g body weight tamoxifen was given via intraperitoneal (IP) injection."
+      ],
+      "growth_protocol_ch1": [
+        "Mice for the lineage tracing and injury experiments were  bred and maintained under specific-pathogen-free conditions at the Cambridge Stem Cell Institute and Gurdon Institute of University of Cambridge."
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "The ATAC-seq assay was performed on 50,000 FACS-purified",
+        "Purified cells were lysed in ATAC lysis buffer for 5 min to get nuclei and then transposed with Tn5 transposase (Illumina) for 30 min. Fractionated DNA was used for amplification and library preparation",
+        "Illumina, Illumina HiSeq 4000, 150 bp-paired end sequencing"
+      ],
+      "data_processing": [
+        "The quality of the generated sequencing data was checked using the FastQC program, followed by filtering of adapter and/or overrepresented sequences using Trimmomatic.",
+        "Filtered reads were next mapped to the mouse primary genome assembly (mm9/GRCm38) using STAR38, with parameters -outFilterMatchNminOverLread 0.4 -outFilterScoreMinOverLread 0.4, and a GTF annotation file of the latest mouse assembly (GCA_000001635.8) downloaded from ENSEMBL ftp.",
+        "MACS2 callpeak was used for ATAC-seq peak calling of the Il1r1+AT2 and bulk AT2 samples, using the options -nomodel-shift -100 -extsize 200. Differentially enriched peaks in Il1r1+AT2 and bulk AT2 populations were next inferred using the MACS2 bdgdiff with a log10 likelihood ratio score cutoff of 10. ATAC-seq heatmaps were plotted using deepTools2.",
+        "Annotation of ATAC-seq enriched peaks overlapping with promoter and other gene regions was performed using the ChIPseeker R/Bioconductor package, together with GO enrichment and pathway analyses. Finally, motif identification was performed using the findMotifsGenome.pl program of the HOMER software.",
+        "Genome_build: Mus musculus, GRCm38",
+        "Supplementary_files_format_and_content: raw fastq files and peak quantifications, bw format"
+      ],
+      "platform_id": [
+        "GPL21103"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN13955720",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX7655623"
+      ],
+      "supplementary_file_1": [
+        "NONE"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

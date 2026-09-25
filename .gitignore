@@ -108,3 +108,8 @@ Research Article/**/query_model/
 
 # Regenerable shared research-question diagnostics
 analysis/figures/rq/il1b_context/cache/
+
+# Question-specific assay payloads and regenerable intermediates
+RQ_Specified/**/cache/
+RQ_Specified/**/processed/
+RQ_Specified/**/reference/

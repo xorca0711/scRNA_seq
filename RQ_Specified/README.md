@@ -6,7 +6,7 @@ tables and galleries. Source-paper analyses belong in `Research Article/`.
 
 | Question | Analysis | Status |
 |---|---|---|
-| A1 | [Transitional epithelial state distinction](A1_transitional_epithelial_state_distinction/README.md) | Workspace established; detailed specification follows separately |
+| A1 | [Transitional epithelial state distinction](A1_transitional_epithelial_state_distinction/README.md) | Prospective specification and public metadata audit; biological analysis not started |
 
 Question numbers are stable identifiers, not evidence grades. A plan or a
 source paper's published finding is not a result of this repository.

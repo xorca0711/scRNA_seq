@@ -1,0 +1,979 @@
+{
+  "accession": "GSE309751",
+  "retrieved_at_utc": "2026-09-25T00:59:52.508939+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309751&targ=all&form=text&view=full",
+  "response_sha256": "6ae8a18eeb5e061e3952663e0d38e78b87663a9f7bb177820f898cf0a860ca7a",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "AP-1 mediated chromatin changes govern alveolar type 2 cell transition in lung injury-repair"
+    ],
+    "geo_accession": [
+      "GSE309751"
+    ],
+    "status": [
+      "Public on Jul 01 2026"
+    ],
+    "last_update_date": [
+      "Jul 02 2026"
+    ],
+    "overall_design": [
+      "ATAC-seq of lung AT2 cells from collected from SftpcCreER/+;RosatdT/+ mice 14 days post Sendai viral infection and mock PBS treatment",
+      "ATAC-seq of lung AT2 cells from collected from SftpcCreER/+;RosatdT/+ mice 49 days post Sendai viral infection and mock PBS treatment",
+      "ATAC-seq of lung AT2 cells from collected from SftpcCreER/+;RosatdT/+;KrasG12D mice and SftpcCreER/+;RosatdT/+ 14 days post tamoxifen induction"
+    ],
+    "type": [
+      "Genome binding/occupancy profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM9278486",
+      "GSM9278487",
+      "GSM9278488",
+      "GSM9278489",
+      "GSM9278490",
+      "GSM9278491",
+      "GSM9278492",
+      "GSM9278493",
+      "GSM9278494",
+      "GSM9278495",
+      "GSM9278496",
+      "GSM9278497",
+      "GSM9278498",
+      "GSM9278499"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE309nnn/GSE309751/suppl/GSE309751_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1336875"
+    ]
+  },
+  "sample_count": 14,
+  "samples": [
+    {
+      "accession": "GSM9278486",
+      "title": [
+        "14 day mock PBS, AT2 cells, repliate 01, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9278486"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpcCreER/+;RosatdT/+",
+        "treatment: PBS mock infected"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested, dissociated and sorted for 100,000 tdT+ AT2 cells. Cells were centrifuged in 4°C at 1098 rcf  for 5 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellets were resuspended in 50 µL of cold ATAC-RSB lysis buffer (0.1% NP-40, 0.1% Tween-20, 0.01% Digitonin, 10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2). The resuspension was incubated on ice for 3 minutes followed by the addition of 1mL of cold ATAC-RSB+Tween (10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20) and inverted 3 times to mix. Nuclei were pelleted through centrifugation in 4°C at 1098 rcffor 10 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellet was resuspended in 50 µL of transposition buffer that included the following: 22.5 µL of Tn5 Reaction Mix (PBS, 2.2% Digitonin, 2.2% Tween-20), 25 µL of Tn5 Buffer (10 mM MgCl2, 20 mM Tris-HCl, 20% Dimethyl Formamide), and 2.5 µL of Tn5 Enzyme (NX#-TDE1, Tagment DNA Enzyme, 15027865, Illumina). The reaction was incubated in a thermocycler at 37°C for 30 minutes. DNA was purified using the Qiagen MinElute PCR Purification Kit (29004) following the manufacturer instructions with one modification of eluting with 10 µL of distilled water.",
+        "Sample barcoding and PCR amplification was performed using the Greenleaf ATAC primers (Buenrostro et al., 2013) following the OMNI-ATAC protocol PCR parameters.  To assess amplification efficiency, 5 µL of each sample was saved and set aside while the remainder of each sample continued to size selection purification using SPRIselect beads (Beckman Coulter, B23318). Following the manufacturer instructions for double size selection, the sample was incubated for upper size selection with 0.5X the volume and for lower size selection at 1.8X the volume. Size selection was verified using agarose gel electrophoresis with 1 µL of final sample as well as the previously saved pre size selection sample. Final DNA quantification was measured using the Qubit HS dsDNA assay (Thermo Fisher Scientific, Q32851)."
+      ],
+      "description": [
+        "Library name: 14dpi_PBScontrol_01, ATAC"
+      ],
+      "data_processing": [
+        "Fastq files were generated through demultiplexing using BCL2Fastq and quality checked using FastQC",
+        "Poor quality bases were removed using Trimmomatic and filtered reads were aligned to the UCSC mm10 reference genome with Bowtie2",
+        "Aligned reads were converted from sam files to bam files using Samtools and filtered for poor alignment and unmapped reads using Picard, MarkDuplicates, and Samtools with the following parameters: –f 3 –F 4 –F 256 –F 1024 –F 2048 –q 30",
+        "Peak calling was conducted using MACS2 with the following parameters: -q 0.05 –nomodel –shift -100 –extsize 200 –broad and filtered for a−log10 q value greater than 5 and removal of mm10 blacklist sites",
+        "Assembly: mm10",
+        "Supplementary files format and content: MACS2 output peak files as .broadpeak",
+        "Supplementary files format and content: MACS2 output peak files as .gappedpeak",
+        "Supplementary files format and content: MACS2 output peak files as .txt"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN52095690",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30745206"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278486/suppl/GSM9278486_14dpi_PBScontrol_01.bt.macs2_peaks.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278486/suppl/GSM9278486_14dpi_PBScontrol_01.bt.macs2_peaks.gappedPeak.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278486/suppl/GSM9278486_14dpi_PBScontrol_01.bt.macs2_peaks.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9278487",
+      "title": [
+        "14 day mock PBS, AT2 cells, repliate 02, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9278487"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpcCreER/+;RosatdT/+",
+        "treatment: PBS mock infected"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested, dissociated and sorted for 100,000 tdT+ AT2 cells. Cells were centrifuged in 4°C at 1098 rcf  for 5 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellets were resuspended in 50 µL of cold ATAC-RSB lysis buffer (0.1% NP-40, 0.1% Tween-20, 0.01% Digitonin, 10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2). The resuspension was incubated on ice for 3 minutes followed by the addition of 1mL of cold ATAC-RSB+Tween (10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20) and inverted 3 times to mix. Nuclei were pelleted through centrifugation in 4°C at 1098 rcffor 10 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellet was resuspended in 50 µL of transposition buffer that included the following: 22.5 µL of Tn5 Reaction Mix (PBS, 2.2% Digitonin, 2.2% Tween-20), 25 µL of Tn5 Buffer (10 mM MgCl2, 20 mM Tris-HCl, 20% Dimethyl Formamide), and 2.5 µL of Tn5 Enzyme (NX#-TDE1, Tagment DNA Enzyme, 15027865, Illumina). The reaction was incubated in a thermocycler at 37°C for 30 minutes. DNA was purified using the Qiagen MinElute PCR Purification Kit (29004) following the manufacturer instructions with one modification of eluting with 10 µL of distilled water.",
+        "Sample barcoding and PCR amplification was performed using the Greenleaf ATAC primers (Buenrostro et al., 2013) following the OMNI-ATAC protocol PCR parameters.  To assess amplification efficiency, 5 µL of each sample was saved and set aside while the remainder of each sample continued to size selection purification using SPRIselect beads (Beckman Coulter, B23318). Following the manufacturer instructions for double size selection, the sample was incubated for upper size selection with 0.5X the volume and for lower size selection at 1.8X the volume. Size selection was verified using agarose gel electrophoresis with 1 µL of final sample as well as the previously saved pre size selection sample. Final DNA quantification was measured using the Qubit HS dsDNA assay (Thermo Fisher Scientific, Q32851)."
+      ],
+      "description": [
+        "Library name: 14dpi_PBScontrol_02, ATAC"
+      ],
+      "data_processing": [
+        "Fastq files were generated through demultiplexing using BCL2Fastq and quality checked using FastQC",
+        "Poor quality bases were removed using Trimmomatic and filtered reads were aligned to the UCSC mm10 reference genome with Bowtie2",
+        "Aligned reads were converted from sam files to bam files using Samtools and filtered for poor alignment and unmapped reads using Picard, MarkDuplicates, and Samtools with the following parameters: –f 3 –F 4 –F 256 –F 1024 –F 2048 –q 30",
+        "Peak calling was conducted using MACS2 with the following parameters: -q 0.05 –nomodel –shift -100 –extsize 200 –broad and filtered for a−log10 q value greater than 5 and removal of mm10 blacklist sites",
+        "Assembly: mm10",
+        "Supplementary files format and content: MACS2 output peak files as .broadpeak",
+        "Supplementary files format and content: MACS2 output peak files as .gappedpeak",
+        "Supplementary files format and content: MACS2 output peak files as .txt"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN52095689",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30745207"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278487/suppl/GSM9278487_14dpi_PBScontrol_02.bt.macs2_peaks.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278487/suppl/GSM9278487_14dpi_PBScontrol_02.bt.macs2_peaks.gappedPeak.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278487/suppl/GSM9278487_14dpi_PBScontrol_02.bt.macs2_peaks.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9278488",
+      "title": [
+        "14 day SeV infected, AT2 cells, replicate 01, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9278488"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpcCreER/+;RosatdT/+",
+        "treatment: Sendai virus infected"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested, dissociated and sorted for 100,000 tdT+ AT2 cells. Cells were centrifuged in 4°C at 1098 rcf  for 5 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellets were resuspended in 50 µL of cold ATAC-RSB lysis buffer (0.1% NP-40, 0.1% Tween-20, 0.01% Digitonin, 10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2). The resuspension was incubated on ice for 3 minutes followed by the addition of 1mL of cold ATAC-RSB+Tween (10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20) and inverted 3 times to mix. Nuclei were pelleted through centrifugation in 4°C at 1098 rcffor 10 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellet was resuspended in 50 µL of transposition buffer that included the following: 22.5 µL of Tn5 Reaction Mix (PBS, 2.2% Digitonin, 2.2% Tween-20), 25 µL of Tn5 Buffer (10 mM MgCl2, 20 mM Tris-HCl, 20% Dimethyl Formamide), and 2.5 µL of Tn5 Enzyme (NX#-TDE1, Tagment DNA Enzyme, 15027865, Illumina). The reaction was incubated in a thermocycler at 37°C for 30 minutes. DNA was purified using the Qiagen MinElute PCR Purification Kit (29004) following the manufacturer instructions with one modification of eluting with 10 µL of distilled water.",
+        "Sample barcoding and PCR amplification was performed using the Greenleaf ATAC primers (Buenrostro et al., 2013) following the OMNI-ATAC protocol PCR parameters.  To assess amplification efficiency, 5 µL of each sample was saved and set aside while the remainder of each sample continued to size selection purification using SPRIselect beads (Beckman Coulter, B23318). Following the manufacturer instructions for double size selection, the sample was incubated for upper size selection with 0.5X the volume and for lower size selection at 1.8X the volume. Size selection was verified using agarose gel electrophoresis with 1 µL of final sample as well as the previously saved pre size selection sample. Final DNA quantification was measured using the Qubit HS dsDNA assay (Thermo Fisher Scientific, Q32851)."
+      ],
+      "description": [
+        "Library name: 14dpi_SeV_01, ATAC"
+      ],
+      "data_processing": [
+        "Fastq files were generated through demultiplexing using BCL2Fastq and quality checked using FastQC",
+        "Poor quality bases were removed using Trimmomatic and filtered reads were aligned to the UCSC mm10 reference genome with Bowtie2",
+        "Aligned reads were converted from sam files to bam files using Samtools and filtered for poor alignment and unmapped reads using Picard, MarkDuplicates, and Samtools with the following parameters: –f 3 –F 4 –F 256 –F 1024 –F 2048 –q 30",
+        "Peak calling was conducted using MACS2 with the following parameters: -q 0.05 –nomodel –shift -100 –extsize 200 –broad and filtered for a−log10 q value greater than 5 and removal of mm10 blacklist sites",
+        "Assembly: mm10",
+        "Supplementary files format and content: MACS2 output peak files as .broadpeak",
+        "Supplementary files format and content: MACS2 output peak files as .gappedpeak",
+        "Supplementary files format and content: MACS2 output peak files as .txt"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN52095688",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30745208"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278488/suppl/GSM9278488_14dpi_SeV_01.bt.macs2_peaks.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278488/suppl/GSM9278488_14dpi_SeV_01.bt.macs2_peaks.gappedPeak.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278488/suppl/GSM9278488_14dpi_SeV_01.bt.macs2_peaks.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9278489",
+      "title": [
+        "14 day SeV infected, AT2 cells, replicate 02, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9278489"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpcCreER/+;RosatdT/+",
+        "treatment: Sendai virus infected"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested, dissociated and sorted for 100,000 tdT+ AT2 cells. Cells were centrifuged in 4°C at 1098 rcf  for 5 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellets were resuspended in 50 µL of cold ATAC-RSB lysis buffer (0.1% NP-40, 0.1% Tween-20, 0.01% Digitonin, 10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2). The resuspension was incubated on ice for 3 minutes followed by the addition of 1mL of cold ATAC-RSB+Tween (10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20) and inverted 3 times to mix. Nuclei were pelleted through centrifugation in 4°C at 1098 rcffor 10 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellet was resuspended in 50 µL of transposition buffer that included the following: 22.5 µL of Tn5 Reaction Mix (PBS, 2.2% Digitonin, 2.2% Tween-20), 25 µL of Tn5 Buffer (10 mM MgCl2, 20 mM Tris-HCl, 20% Dimethyl Formamide), and 2.5 µL of Tn5 Enzyme (NX#-TDE1, Tagment DNA Enzyme, 15027865, Illumina). The reaction was incubated in a thermocycler at 37°C for 30 minutes. DNA was purified using the Qiagen MinElute PCR Purification Kit (29004) following the manufacturer instructions with one modification of eluting with 10 µL of distilled water.",
+        "Sample barcoding and PCR amplification was performed using the Greenleaf ATAC primers (Buenrostro et al., 2013) following the OMNI-ATAC protocol PCR parameters.  To assess amplification efficiency, 5 µL of each sample was saved and set aside while the remainder of each sample continued to size selection purification using SPRIselect beads (Beckman Coulter, B23318). Following the manufacturer instructions for double size selection, the sample was incubated for upper size selection with 0.5X the volume and for lower size selection at 1.8X the volume. Size selection was verified using agarose gel electrophoresis with 1 µL of final sample as well as the previously saved pre size selection sample. Final DNA quantification was measured using the Qubit HS dsDNA assay (Thermo Fisher Scientific, Q32851)."
+      ],
+      "description": [
+        "Library name: 14dpi_SeV_02, ATAC"
+      ],
+      "data_processing": [
+        "Fastq files were generated through demultiplexing using BCL2Fastq and quality checked using FastQC",
+        "Poor quality bases were removed using Trimmomatic and filtered reads were aligned to the UCSC mm10 reference genome with Bowtie2",
+        "Aligned reads were converted from sam files to bam files using Samtools and filtered for poor alignment and unmapped reads using Picard, MarkDuplicates, and Samtools with the following parameters: –f 3 –F 4 –F 256 –F 1024 –F 2048 –q 30",
+        "Peak calling was conducted using MACS2 with the following parameters: -q 0.05 –nomodel –shift -100 –extsize 200 –broad and filtered for a−log10 q value greater than 5 and removal of mm10 blacklist sites",
+        "Assembly: mm10",
+        "Supplementary files format and content: MACS2 output peak files as .broadpeak",
+        "Supplementary files format and content: MACS2 output peak files as .gappedpeak",
+        "Supplementary files format and content: MACS2 output peak files as .txt"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN52095687",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30745209"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278489/suppl/GSM9278489_14dpi_SeV_02.bt.macs2_peaks.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278489/suppl/GSM9278489_14dpi_SeV_02.bt.macs2_peaks.gappedPeak.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278489/suppl/GSM9278489_14dpi_SeV_02.bt.macs2_peaks.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9278490",
+      "title": [
+        "14 day SeV infected, AT2 cells, replicate 03, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9278490"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpcCreER/+;RosatdT/+",
+        "treatment: Sendai virus infected"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested, dissociated and sorted for 100,000 tdT+ AT2 cells. Cells were centrifuged in 4°C at 1098 rcf  for 5 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellets were resuspended in 50 µL of cold ATAC-RSB lysis buffer (0.1% NP-40, 0.1% Tween-20, 0.01% Digitonin, 10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2). The resuspension was incubated on ice for 3 minutes followed by the addition of 1mL of cold ATAC-RSB+Tween (10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20) and inverted 3 times to mix. Nuclei were pelleted through centrifugation in 4°C at 1098 rcffor 10 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellet was resuspended in 50 µL of transposition buffer that included the following: 22.5 µL of Tn5 Reaction Mix (PBS, 2.2% Digitonin, 2.2% Tween-20), 25 µL of Tn5 Buffer (10 mM MgCl2, 20 mM Tris-HCl, 20% Dimethyl Formamide), and 2.5 µL of Tn5 Enzyme (NX#-TDE1, Tagment DNA Enzyme, 15027865, Illumina). The reaction was incubated in a thermocycler at 37°C for 30 minutes. DNA was purified using the Qiagen MinElute PCR Purification Kit (29004) following the manufacturer instructions with one modification of eluting with 10 µL of distilled water.",
+        "Sample barcoding and PCR amplification was performed using the Greenleaf ATAC primers (Buenrostro et al., 2013) following the OMNI-ATAC protocol PCR parameters.  To assess amplification efficiency, 5 µL of each sample was saved and set aside while the remainder of each sample continued to size selection purification using SPRIselect beads (Beckman Coulter, B23318). Following the manufacturer instructions for double size selection, the sample was incubated for upper size selection with 0.5X the volume and for lower size selection at 1.8X the volume. Size selection was verified using agarose gel electrophoresis with 1 µL of final sample as well as the previously saved pre size selection sample. Final DNA quantification was measured using the Qubit HS dsDNA assay (Thermo Fisher Scientific, Q32851)."
+      ],
+      "description": [
+        "Library name: 14dpi_SeV_03, ATAC"
+      ],
+      "data_processing": [
+        "Fastq files were generated through demultiplexing using BCL2Fastq and quality checked using FastQC",
+        "Poor quality bases were removed using Trimmomatic and filtered reads were aligned to the UCSC mm10 reference genome with Bowtie2",
+        "Aligned reads were converted from sam files to bam files using Samtools and filtered for poor alignment and unmapped reads using Picard, MarkDuplicates, and Samtools with the following parameters: –f 3 –F 4 –F 256 –F 1024 –F 2048 –q 30",
+        "Peak calling was conducted using MACS2 with the following parameters: -q 0.05 –nomodel –shift -100 –extsize 200 –broad and filtered for a−log10 q value greater than 5 and removal of mm10 blacklist sites",
+        "Assembly: mm10",
+        "Supplementary files format and content: MACS2 output peak files as .broadpeak",
+        "Supplementary files format and content: MACS2 output peak files as .gappedpeak",
+        "Supplementary files format and content: MACS2 output peak files as .txt"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN52095686",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30745210"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278490/suppl/GSM9278490_14dpi_SeV_03.bt.macs2_peaks.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278490/suppl/GSM9278490_14dpi_SeV_03.bt.macs2_peaks.gappedPeak.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278490/suppl/GSM9278490_14dpi_SeV_03.bt.macs2_peaks.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9278491",
+      "title": [
+        "49 day mock PBS, AT2 cells, repliate 01, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9278491"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpcCreER/+;RosatdT/+",
+        "treatment: Sendai virus infected"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested, dissociated and sorted for 100,000 tdT+ AT2 cells. Cells were centrifuged in 4°C at 1098 rcf  for 5 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellets were resuspended in 50 µL of cold ATAC-RSB lysis buffer (0.1% NP-40, 0.1% Tween-20, 0.01% Digitonin, 10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2). The resuspension was incubated on ice for 3 minutes followed by the addition of 1mL of cold ATAC-RSB+Tween (10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20) and inverted 3 times to mix. Nuclei were pelleted through centrifugation in 4°C at 1098 rcffor 10 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellet was resuspended in 50 µL of transposition buffer that included the following: 22.5 µL of Tn5 Reaction Mix (PBS, 2.2% Digitonin, 2.2% Tween-20), 25 µL of Tn5 Buffer (10 mM MgCl2, 20 mM Tris-HCl, 20% Dimethyl Formamide), and 2.5 µL of Tn5 Enzyme (NX#-TDE1, Tagment DNA Enzyme, 15027865, Illumina). The reaction was incubated in a thermocycler at 37°C for 30 minutes. DNA was purified using the Qiagen MinElute PCR Purification Kit (29004) following the manufacturer instructions with one modification of eluting with 10 µL of distilled water.",
+        "Sample barcoding and PCR amplification was performed using the Greenleaf ATAC primers (Buenrostro et al., 2013) following the OMNI-ATAC protocol PCR parameters.  To assess amplification efficiency, 5 µL of each sample was saved and set aside while the remainder of each sample continued to size selection purification using SPRIselect beads (Beckman Coulter, B23318). Following the manufacturer instructions for double size selection, the sample was incubated for upper size selection with 0.5X the volume and for lower size selection at 1.8X the volume. Size selection was verified using agarose gel electrophoresis with 1 µL of final sample as well as the previously saved pre size selection sample. Final DNA quantification was measured using the Qubit HS dsDNA assay (Thermo Fisher Scientific, Q32851)."
+      ],
+      "description": [
+        "Library name: 49dpi_PBScontrol_01, ATAC"
+      ],
+      "data_processing": [
+        "Fastq files were generated through demultiplexing using BCL2Fastq and quality checked using FastQC",
+        "Poor quality bases were removed using Trimmomatic and filtered reads were aligned to the UCSC mm10 reference genome with Bowtie2",
+        "Aligned reads were converted from sam files to bam files using Samtools and filtered for poor alignment and unmapped reads using Picard, MarkDuplicates, and Samtools with the following parameters: –f 3 –F 4 –F 256 –F 1024 –F 2048 –q 30",
+        "Peak calling was conducted using MACS2 with the following parameters: -q 0.05 –nomodel –shift -100 –extsize 200 –broad and filtered for a−log10 q value greater than 5 and removal of mm10 blacklist sites",
+        "Assembly: mm10",
+        "Supplementary files format and content: MACS2 output peak files as .broadpeak",
+        "Supplementary files format and content: MACS2 output peak files as .gappedpeak",
+        "Supplementary files format and content: MACS2 output peak files as .txt"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN52095685",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30745211"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278491/suppl/GSM9278491_49dpi_PBScontrol_01.bt.macs2_peaks.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278491/suppl/GSM9278491_49dpi_PBScontrol_01.bt.macs2_peaks.gappedPeak.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278491/suppl/GSM9278491_49dpi_PBScontrol_01.bt.macs2_peaks.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9278492",
+      "title": [
+        "49 day mock PBS, AT2 cells, repliate 02, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9278492"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpcCreER/+;RosatdT/+",
+        "treatment: Sendai virus infected"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested, dissociated and sorted for 100,000 tdT+ AT2 cells. Cells were centrifuged in 4°C at 1098 rcf  for 5 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellets were resuspended in 50 µL of cold ATAC-RSB lysis buffer (0.1% NP-40, 0.1% Tween-20, 0.01% Digitonin, 10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2). The resuspension was incubated on ice for 3 minutes followed by the addition of 1mL of cold ATAC-RSB+Tween (10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20) and inverted 3 times to mix. Nuclei were pelleted through centrifugation in 4°C at 1098 rcffor 10 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellet was resuspended in 50 µL of transposition buffer that included the following: 22.5 µL of Tn5 Reaction Mix (PBS, 2.2% Digitonin, 2.2% Tween-20), 25 µL of Tn5 Buffer (10 mM MgCl2, 20 mM Tris-HCl, 20% Dimethyl Formamide), and 2.5 µL of Tn5 Enzyme (NX#-TDE1, Tagment DNA Enzyme, 15027865, Illumina). The reaction was incubated in a thermocycler at 37°C for 30 minutes. DNA was purified using the Qiagen MinElute PCR Purification Kit (29004) following the manufacturer instructions with one modification of eluting with 10 µL of distilled water.",
+        "Sample barcoding and PCR amplification was performed using the Greenleaf ATAC primers (Buenrostro et al., 2013) following the OMNI-ATAC protocol PCR parameters.  To assess amplification efficiency, 5 µL of each sample was saved and set aside while the remainder of each sample continued to size selection purification using SPRIselect beads (Beckman Coulter, B23318). Following the manufacturer instructions for double size selection, the sample was incubated for upper size selection with 0.5X the volume and for lower size selection at 1.8X the volume. Size selection was verified using agarose gel electrophoresis with 1 µL of final sample as well as the previously saved pre size selection sample. Final DNA quantification was measured using the Qubit HS dsDNA assay (Thermo Fisher Scientific, Q32851)."
+      ],
+      "description": [
+        "Library name: 49dpi_PBScontrol_02, ATAC"
+      ],
+      "data_processing": [
+        "Fastq files were generated through demultiplexing using BCL2Fastq and quality checked using FastQC",
+        "Poor quality bases were removed using Trimmomatic and filtered reads were aligned to the UCSC mm10 reference genome with Bowtie2",
+        "Aligned reads were converted from sam files to bam files using Samtools and filtered for poor alignment and unmapped reads using Picard, MarkDuplicates, and Samtools with the following parameters: –f 3 –F 4 –F 256 –F 1024 –F 2048 –q 30",
+        "Peak calling was conducted using MACS2 with the following parameters: -q 0.05 –nomodel –shift -100 –extsize 200 –broad and filtered for a−log10 q value greater than 5 and removal of mm10 blacklist sites",
+        "Assembly: mm10",
+        "Supplementary files format and content: MACS2 output peak files as .broadpeak",
+        "Supplementary files format and content: MACS2 output peak files as .gappedpeak",
+        "Supplementary files format and content: MACS2 output peak files as .txt"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN52095684",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30745212"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278492/suppl/GSM9278492_49dpi_PBScontrol_02.bt.macs2_peaks.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278492/suppl/GSM9278492_49dpi_PBScontrol_02.bt.macs2_peaks.gappedPeak.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278492/suppl/GSM9278492_49dpi_PBScontrol_02.bt.macs2_peaks.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9278493",
+      "title": [
+        "49 day SeV infected, AT2 cells, replicate 01, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9278493"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpcCreER/+;RosatdT/+",
+        "treatment: Sendai virus infected"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested, dissociated and sorted for 100,000 tdT+ AT2 cells. Cells were centrifuged in 4°C at 1098 rcf  for 5 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellets were resuspended in 50 µL of cold ATAC-RSB lysis buffer (0.1% NP-40, 0.1% Tween-20, 0.01% Digitonin, 10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2). The resuspension was incubated on ice for 3 minutes followed by the addition of 1mL of cold ATAC-RSB+Tween (10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20) and inverted 3 times to mix. Nuclei were pelleted through centrifugation in 4°C at 1098 rcffor 10 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellet was resuspended in 50 µL of transposition buffer that included the following: 22.5 µL of Tn5 Reaction Mix (PBS, 2.2% Digitonin, 2.2% Tween-20), 25 µL of Tn5 Buffer (10 mM MgCl2, 20 mM Tris-HCl, 20% Dimethyl Formamide), and 2.5 µL of Tn5 Enzyme (NX#-TDE1, Tagment DNA Enzyme, 15027865, Illumina). The reaction was incubated in a thermocycler at 37°C for 30 minutes. DNA was purified using the Qiagen MinElute PCR Purification Kit (29004) following the manufacturer instructions with one modification of eluting with 10 µL of distilled water.",
+        "Sample barcoding and PCR amplification was performed using the Greenleaf ATAC primers (Buenrostro et al., 2013) following the OMNI-ATAC protocol PCR parameters.  To assess amplification efficiency, 5 µL of each sample was saved and set aside while the remainder of each sample continued to size selection purification using SPRIselect beads (Beckman Coulter, B23318). Following the manufacturer instructions for double size selection, the sample was incubated for upper size selection with 0.5X the volume and for lower size selection at 1.8X the volume. Size selection was verified using agarose gel electrophoresis with 1 µL of final sample as well as the previously saved pre size selection sample. Final DNA quantification was measured using the Qubit HS dsDNA assay (Thermo Fisher Scientific, Q32851)."
+      ],
+      "description": [
+        "Library name: 49dpi_SeV_01, ATAC"
+      ],
+      "data_processing": [
+        "Fastq files were generated through demultiplexing using BCL2Fastq and quality checked using FastQC",
+        "Poor quality bases were removed using Trimmomatic and filtered reads were aligned to the UCSC mm10 reference genome with Bowtie2",
+        "Aligned reads were converted from sam files to bam files using Samtools and filtered for poor alignment and unmapped reads using Picard, MarkDuplicates, and Samtools with the following parameters: –f 3 –F 4 –F 256 –F 1024 –F 2048 –q 30",
+        "Peak calling was conducted using MACS2 with the following parameters: -q 0.05 –nomodel –shift -100 –extsize 200 –broad and filtered for a−log10 q value greater than 5 and removal of mm10 blacklist sites",
+        "Assembly: mm10",
+        "Supplementary files format and content: MACS2 output peak files as .broadpeak",
+        "Supplementary files format and content: MACS2 output peak files as .gappedpeak",
+        "Supplementary files format and content: MACS2 output peak files as .txt"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN52095683",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30745213"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278493/suppl/GSM9278493_49dpi_SeV_01.bt.macs2_peaks.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278493/suppl/GSM9278493_49dpi_SeV_01.bt.macs2_peaks.gappedPeak.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278493/suppl/GSM9278493_49dpi_SeV_01.bt.macs2_peaks.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9278494",
+      "title": [
+        "49 day SeV infected, AT2 cells, replicate 02, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9278494"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpcCreER/+;RosatdT/+",
+        "treatment: Sendai virus infected"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested, dissociated and sorted for 100,000 tdT+ AT2 cells. Cells were centrifuged in 4°C at 1098 rcf  for 5 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellets were resuspended in 50 µL of cold ATAC-RSB lysis buffer (0.1% NP-40, 0.1% Tween-20, 0.01% Digitonin, 10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2). The resuspension was incubated on ice for 3 minutes followed by the addition of 1mL of cold ATAC-RSB+Tween (10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20) and inverted 3 times to mix. Nuclei were pelleted through centrifugation in 4°C at 1098 rcffor 10 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellet was resuspended in 50 µL of transposition buffer that included the following: 22.5 µL of Tn5 Reaction Mix (PBS, 2.2% Digitonin, 2.2% Tween-20), 25 µL of Tn5 Buffer (10 mM MgCl2, 20 mM Tris-HCl, 20% Dimethyl Formamide), and 2.5 µL of Tn5 Enzyme (NX#-TDE1, Tagment DNA Enzyme, 15027865, Illumina). The reaction was incubated in a thermocycler at 37°C for 30 minutes. DNA was purified using the Qiagen MinElute PCR Purification Kit (29004) following the manufacturer instructions with one modification of eluting with 10 µL of distilled water.",
+        "Sample barcoding and PCR amplification was performed using the Greenleaf ATAC primers (Buenrostro et al., 2013) following the OMNI-ATAC protocol PCR parameters.  To assess amplification efficiency, 5 µL of each sample was saved and set aside while the remainder of each sample continued to size selection purification using SPRIselect beads (Beckman Coulter, B23318). Following the manufacturer instructions for double size selection, the sample was incubated for upper size selection with 0.5X the volume and for lower size selection at 1.8X the volume. Size selection was verified using agarose gel electrophoresis with 1 µL of final sample as well as the previously saved pre size selection sample. Final DNA quantification was measured using the Qubit HS dsDNA assay (Thermo Fisher Scientific, Q32851)."
+      ],
+      "description": [
+        "Library name: 49dpi_SeV_02, ATAC"
+      ],
+      "data_processing": [
+        "Fastq files were generated through demultiplexing using BCL2Fastq and quality checked using FastQC",
+        "Poor quality bases were removed using Trimmomatic and filtered reads were aligned to the UCSC mm10 reference genome with Bowtie2",
+        "Aligned reads were converted from sam files to bam files using Samtools and filtered for poor alignment and unmapped reads using Picard, MarkDuplicates, and Samtools with the following parameters: –f 3 –F 4 –F 256 –F 1024 –F 2048 –q 30",
+        "Peak calling was conducted using MACS2 with the following parameters: -q 0.05 –nomodel –shift -100 –extsize 200 –broad and filtered for a−log10 q value greater than 5 and removal of mm10 blacklist sites",
+        "Assembly: mm10",
+        "Supplementary files format and content: MACS2 output peak files as .broadpeak",
+        "Supplementary files format and content: MACS2 output peak files as .gappedpeak",
+        "Supplementary files format and content: MACS2 output peak files as .txt"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN52095682",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30745214"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278494/suppl/GSM9278494_49dpi_SeV_02.bt.macs2_peaks.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278494/suppl/GSM9278494_49dpi_SeV_02.bt.macs2_peaks.gappedPeak.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278494/suppl/GSM9278494_49dpi_SeV_02.bt.macs2_peaks.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9278495",
+      "title": [
+        "KRAS negative control, AT2 cells, replicate 01, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9278495"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpcCreER/+;RosatdT/+",
+        "treatment: none"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested, dissociated and sorted for 100,000 tdT+ AT2 cells. Cells were centrifuged in 4°C at 1098 rcf  for 5 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellets were resuspended in 50 µL of cold ATAC-RSB lysis buffer (0.1% NP-40, 0.1% Tween-20, 0.01% Digitonin, 10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2). The resuspension was incubated on ice for 3 minutes followed by the addition of 1mL of cold ATAC-RSB+Tween (10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20) and inverted 3 times to mix. Nuclei were pelleted through centrifugation in 4°C at 1098 rcffor 10 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellet was resuspended in 50 µL of transposition buffer that included the following: 22.5 µL of Tn5 Reaction Mix (PBS, 2.2% Digitonin, 2.2% Tween-20), 25 µL of Tn5 Buffer (10 mM MgCl2, 20 mM Tris-HCl, 20% Dimethyl Formamide), and 2.5 µL of Tn5 Enzyme (NX#-TDE1, Tagment DNA Enzyme, 15027865, Illumina). The reaction was incubated in a thermocycler at 37°C for 30 minutes. DNA was purified using the Qiagen MinElute PCR Purification Kit (29004) following the manufacturer instructions with one modification of eluting with 10 µL of distilled water.",
+        "Sample barcoding and PCR amplification was performed using the Greenleaf ATAC primers (Buenrostro et al., 2013) following the OMNI-ATAC protocol PCR parameters.  To assess amplification efficiency, 5 µL of each sample was saved and set aside while the remainder of each sample continued to size selection purification using SPRIselect beads (Beckman Coulter, B23318). Following the manufacturer instructions for double size selection, the sample was incubated for upper size selection with 0.5X the volume and for lower size selection at 1.8X the volume. Size selection was verified using agarose gel electrophoresis with 1 µL of final sample as well as the previously saved pre size selection sample. Final DNA quantification was measured using the Qubit HS dsDNA assay (Thermo Fisher Scientific, Q32851)."
+      ],
+      "description": [
+        "Library name: KRAS_control_01, ATAC"
+      ],
+      "data_processing": [
+        "Fastq files were generated through demultiplexing using BCL2Fastq and quality checked using FastQC",
+        "Poor quality bases were removed using Trimmomatic and filtered reads were aligned to the UCSC mm10 reference genome with Bowtie2",
+        "Aligned reads were converted from sam files to bam files using Samtools and filtered for poor alignment and unmapped reads using Picard, MarkDuplicates, and Samtools with the following parameters: –f 3 –F 4 –F 256 –F 1024 –F 2048 –q 30",
+        "Peak calling was conducted using MACS2 with the following parameters: -q 0.05 –nomodel –shift -100 –extsize 200 –broad and filtered for a−log10 q value greater than 5 and removal of mm10 blacklist sites",
+        "Assembly: mm10",
+        "Supplementary files format and content: MACS2 output peak files as .broadpeak",
+        "Supplementary files format and content: MACS2 output peak files as .gappedpeak",
+        "Supplementary files format and content: MACS2 output peak files as .txt"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN52095681",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30745215"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278495/suppl/GSM9278495_KRAS_control_01.bt.macs2_peaks.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278495/suppl/GSM9278495_KRAS_control_01.bt.macs2_peaks.gappedPeak.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278495/suppl/GSM9278495_KRAS_control_01.bt.macs2_peaks.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9278496",
+      "title": [
+        "KRAS negative control, AT2 cells, replicate 02, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9278496"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpcCreER/+;RosatdT/+",
+        "treatment: none"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested, dissociated and sorted for 100,000 tdT+ AT2 cells. Cells were centrifuged in 4°C at 1098 rcf  for 5 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellets were resuspended in 50 µL of cold ATAC-RSB lysis buffer (0.1% NP-40, 0.1% Tween-20, 0.01% Digitonin, 10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2). The resuspension was incubated on ice for 3 minutes followed by the addition of 1mL of cold ATAC-RSB+Tween (10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20) and inverted 3 times to mix. Nuclei were pelleted through centrifugation in 4°C at 1098 rcffor 10 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellet was resuspended in 50 µL of transposition buffer that included the following: 22.5 µL of Tn5 Reaction Mix (PBS, 2.2% Digitonin, 2.2% Tween-20), 25 µL of Tn5 Buffer (10 mM MgCl2, 20 mM Tris-HCl, 20% Dimethyl Formamide), and 2.5 µL of Tn5 Enzyme (NX#-TDE1, Tagment DNA Enzyme, 15027865, Illumina). The reaction was incubated in a thermocycler at 37°C for 30 minutes. DNA was purified using the Qiagen MinElute PCR Purification Kit (29004) following the manufacturer instructions with one modification of eluting with 10 µL of distilled water.",
+        "Sample barcoding and PCR amplification was performed using the Greenleaf ATAC primers (Buenrostro et al., 2013) following the OMNI-ATAC protocol PCR parameters.  To assess amplification efficiency, 5 µL of each sample was saved and set aside while the remainder of each sample continued to size selection purification using SPRIselect beads (Beckman Coulter, B23318). Following the manufacturer instructions for double size selection, the sample was incubated for upper size selection with 0.5X the volume and for lower size selection at 1.8X the volume. Size selection was verified using agarose gel electrophoresis with 1 µL of final sample as well as the previously saved pre size selection sample. Final DNA quantification was measured using the Qubit HS dsDNA assay (Thermo Fisher Scientific, Q32851)."
+      ],
+      "description": [
+        "Library name: KRAS_control_02, ATAC"
+      ],
+      "data_processing": [
+        "Fastq files were generated through demultiplexing using BCL2Fastq and quality checked using FastQC",
+        "Poor quality bases were removed using Trimmomatic and filtered reads were aligned to the UCSC mm10 reference genome with Bowtie2",
+        "Aligned reads were converted from sam files to bam files using Samtools and filtered for poor alignment and unmapped reads using Picard, MarkDuplicates, and Samtools with the following parameters: –f 3 –F 4 –F 256 –F 1024 –F 2048 –q 30",
+        "Peak calling was conducted using MACS2 with the following parameters: -q 0.05 –nomodel –shift -100 –extsize 200 –broad and filtered for a−log10 q value greater than 5 and removal of mm10 blacklist sites",
+        "Assembly: mm10",
+        "Supplementary files format and content: MACS2 output peak files as .broadpeak",
+        "Supplementary files format and content: MACS2 output peak files as .gappedpeak",
+        "Supplementary files format and content: MACS2 output peak files as .txt"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN52095680",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30745216"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278496/suppl/GSM9278496_KRAS_control_02.bt.macs2_peaks.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278496/suppl/GSM9278496_KRAS_control_02.bt.macs2_peaks.gappedPeak.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278496/suppl/GSM9278496_KRAS_control_02.bt.macs2_peaks.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9278497",
+      "title": [
+        "KRAS induced, AT2 cells, replicate 01, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9278497"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpcCreER/+;RosatdT/+;KrasG12D",
+        "treatment: KRAS induction"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested, dissociated and sorted for 100,000 tdT+ AT2 cells. Cells were centrifuged in 4°C at 1098 rcf  for 5 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellets were resuspended in 50 µL of cold ATAC-RSB lysis buffer (0.1% NP-40, 0.1% Tween-20, 0.01% Digitonin, 10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2). The resuspension was incubated on ice for 3 minutes followed by the addition of 1mL of cold ATAC-RSB+Tween (10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20) and inverted 3 times to mix. Nuclei were pelleted through centrifugation in 4°C at 1098 rcffor 10 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellet was resuspended in 50 µL of transposition buffer that included the following: 22.5 µL of Tn5 Reaction Mix (PBS, 2.2% Digitonin, 2.2% Tween-20), 25 µL of Tn5 Buffer (10 mM MgCl2, 20 mM Tris-HCl, 20% Dimethyl Formamide), and 2.5 µL of Tn5 Enzyme (NX#-TDE1, Tagment DNA Enzyme, 15027865, Illumina). The reaction was incubated in a thermocycler at 37°C for 30 minutes. DNA was purified using the Qiagen MinElute PCR Purification Kit (29004) following the manufacturer instructions with one modification of eluting with 10 µL of distilled water.",
+        "Sample barcoding and PCR amplification was performed using the Greenleaf ATAC primers (Buenrostro et al., 2013) following the OMNI-ATAC protocol PCR parameters.  To assess amplification efficiency, 5 µL of each sample was saved and set aside while the remainder of each sample continued to size selection purification using SPRIselect beads (Beckman Coulter, B23318). Following the manufacturer instructions for double size selection, the sample was incubated for upper size selection with 0.5X the volume and for lower size selection at 1.8X the volume. Size selection was verified using agarose gel electrophoresis with 1 µL of final sample as well as the previously saved pre size selection sample. Final DNA quantification was measured using the Qubit HS dsDNA assay (Thermo Fisher Scientific, Q32851)."
+      ],
+      "description": [
+        "Library name: KRAS_induced_01, ATAC"
+      ],
+      "data_processing": [
+        "Fastq files were generated through demultiplexing using BCL2Fastq and quality checked using FastQC",
+        "Poor quality bases were removed using Trimmomatic and filtered reads were aligned to the UCSC mm10 reference genome with Bowtie2",
+        "Aligned reads were converted from sam files to bam files using Samtools and filtered for poor alignment and unmapped reads using Picard, MarkDuplicates, and Samtools with the following parameters: –f 3 –F 4 –F 256 –F 1024 –F 2048 –q 30",
+        "Peak calling was conducted using MACS2 with the following parameters: -q 0.05 –nomodel –shift -100 –extsize 200 –broad and filtered for a−log10 q value greater than 5 and removal of mm10 blacklist sites",
+        "Assembly: mm10",
+        "Supplementary files format and content: MACS2 output peak files as .broadpeak",
+        "Supplementary files format and content: MACS2 output peak files as .gappedpeak",
+        "Supplementary files format and content: MACS2 output peak files as .txt"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN52095679",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30745217"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278497/suppl/GSM9278497_KRAS_induced_01.bt.macs2_peaks.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278497/suppl/GSM9278497_KRAS_induced_01.bt.macs2_peaks.gappedPeak.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278497/suppl/GSM9278497_KRAS_induced_01.bt.macs2_peaks.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9278498",
+      "title": [
+        "KRAS induced, AT2 cells, replicate 02, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9278498"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpcCreER/+;RosatdT/+;KrasG12D",
+        "treatment: KRAS induction"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested, dissociated and sorted for 100,000 tdT+ AT2 cells. Cells were centrifuged in 4°C at 1098 rcf  for 5 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellets were resuspended in 50 µL of cold ATAC-RSB lysis buffer (0.1% NP-40, 0.1% Tween-20, 0.01% Digitonin, 10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2). The resuspension was incubated on ice for 3 minutes followed by the addition of 1mL of cold ATAC-RSB+Tween (10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20) and inverted 3 times to mix. Nuclei were pelleted through centrifugation in 4°C at 1098 rcffor 10 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellet was resuspended in 50 µL of transposition buffer that included the following: 22.5 µL of Tn5 Reaction Mix (PBS, 2.2% Digitonin, 2.2% Tween-20), 25 µL of Tn5 Buffer (10 mM MgCl2, 20 mM Tris-HCl, 20% Dimethyl Formamide), and 2.5 µL of Tn5 Enzyme (NX#-TDE1, Tagment DNA Enzyme, 15027865, Illumina). The reaction was incubated in a thermocycler at 37°C for 30 minutes. DNA was purified using the Qiagen MinElute PCR Purification Kit (29004) following the manufacturer instructions with one modification of eluting with 10 µL of distilled water.",
+        "Sample barcoding and PCR amplification was performed using the Greenleaf ATAC primers (Buenrostro et al., 2013) following the OMNI-ATAC protocol PCR parameters.  To assess amplification efficiency, 5 µL of each sample was saved and set aside while the remainder of each sample continued to size selection purification using SPRIselect beads (Beckman Coulter, B23318). Following the manufacturer instructions for double size selection, the sample was incubated for upper size selection with 0.5X the volume and for lower size selection at 1.8X the volume. Size selection was verified using agarose gel electrophoresis with 1 µL of final sample as well as the previously saved pre size selection sample. Final DNA quantification was measured using the Qubit HS dsDNA assay (Thermo Fisher Scientific, Q32851)."
+      ],
+      "description": [
+        "Library name: KRAS_induced_02, ATAC"
+      ],
+      "data_processing": [
+        "Fastq files were generated through demultiplexing using BCL2Fastq and quality checked using FastQC",
+        "Poor quality bases were removed using Trimmomatic and filtered reads were aligned to the UCSC mm10 reference genome with Bowtie2",
+        "Aligned reads were converted from sam files to bam files using Samtools and filtered for poor alignment and unmapped reads using Picard, MarkDuplicates, and Samtools with the following parameters: –f 3 –F 4 –F 256 –F 1024 –F 2048 –q 30",
+        "Peak calling was conducted using MACS2 with the following parameters: -q 0.05 –nomodel –shift -100 –extsize 200 –broad and filtered for a−log10 q value greater than 5 and removal of mm10 blacklist sites",
+        "Assembly: mm10",
+        "Supplementary files format and content: MACS2 output peak files as .broadpeak",
+        "Supplementary files format and content: MACS2 output peak files as .gappedpeak",
+        "Supplementary files format and content: MACS2 output peak files as .txt"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN52095678",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30745218"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278498/suppl/GSM9278498_KRAS_induced_02.bt.macs2_peaks.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278498/suppl/GSM9278498_KRAS_induced_02.bt.macs2_peaks.gappedPeak.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278498/suppl/GSM9278498_KRAS_induced_02.bt.macs2_peaks.txt.gz"
+      ]
+    },
+    {
+      "accession": "GSM9278499",
+      "title": [
+        "KRAS induced, AT2 cells, replicate 03, ATAC"
+      ],
+      "geo_accession": [
+        "GSM9278499"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "cell type: AT2",
+        "genotype: SftpcCreER/+;RosatdT/+;KrasG12D",
+        "treatment: KRAS induction"
+      ],
+      "molecule_ch1": [
+        "genomic DNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested, dissociated and sorted for 100,000 tdT+ AT2 cells. Cells were centrifuged in 4°C at 1098 rcf  for 5 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellets were resuspended in 50 µL of cold ATAC-RSB lysis buffer (0.1% NP-40, 0.1% Tween-20, 0.01% Digitonin, 10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2). The resuspension was incubated on ice for 3 minutes followed by the addition of 1mL of cold ATAC-RSB+Tween (10 mM Tris-HCl pH 8.1, 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20) and inverted 3 times to mix. Nuclei were pelleted through centrifugation in 4°C at 1098 rcffor 10 minutes in a fixed angle centrifuge. The supernatant was discarded, and the pellet was resuspended in 50 µL of transposition buffer that included the following: 22.5 µL of Tn5 Reaction Mix (PBS, 2.2% Digitonin, 2.2% Tween-20), 25 µL of Tn5 Buffer (10 mM MgCl2, 20 mM Tris-HCl, 20% Dimethyl Formamide), and 2.5 µL of Tn5 Enzyme (NX#-TDE1, Tagment DNA Enzyme, 15027865, Illumina). The reaction was incubated in a thermocycler at 37°C for 30 minutes. DNA was purified using the Qiagen MinElute PCR Purification Kit (29004) following the manufacturer instructions with one modification of eluting with 10 µL of distilled water.",
+        "Sample barcoding and PCR amplification was performed using the Greenleaf ATAC primers (Buenrostro et al., 2013) following the OMNI-ATAC protocol PCR parameters.  To assess amplification efficiency, 5 µL of each sample was saved and set aside while the remainder of each sample continued to size selection purification using SPRIselect beads (Beckman Coulter, B23318). Following the manufacturer instructions for double size selection, the sample was incubated for upper size selection with 0.5X the volume and for lower size selection at 1.8X the volume. Size selection was verified using agarose gel electrophoresis with 1 µL of final sample as well as the previously saved pre size selection sample. Final DNA quantification was measured using the Qubit HS dsDNA assay (Thermo Fisher Scientific, Q32851)."
+      ],
+      "description": [
+        "Library name: KRAS_induced_03, ATAC"
+      ],
+      "data_processing": [
+        "Fastq files were generated through demultiplexing using BCL2Fastq and quality checked using FastQC",
+        "Poor quality bases were removed using Trimmomatic and filtered reads were aligned to the UCSC mm10 reference genome with Bowtie2",
+        "Aligned reads were converted from sam files to bam files using Samtools and filtered for poor alignment and unmapped reads using Picard, MarkDuplicates, and Samtools with the following parameters: –f 3 –F 4 –F 256 –F 1024 –F 2048 –q 30",
+        "Peak calling was conducted using MACS2 with the following parameters: -q 0.05 –nomodel –shift -100 –extsize 200 –broad and filtered for a−log10 q value greater than 5 and removal of mm10 blacklist sites",
+        "Assembly: mm10",
+        "Supplementary files format and content: MACS2 output peak files as .broadpeak",
+        "Supplementary files format and content: MACS2 output peak files as .gappedpeak",
+        "Supplementary files format and content: MACS2 output peak files as .txt"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "other"
+      ],
+      "library_source": [
+        "genomic"
+      ],
+      "library_strategy": [
+        "ATAC-seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN52095677",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX30745219"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278499/suppl/GSM9278499_KRAS_induced_03.bt.macs2_peaks.broadPeak.gz"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278499/suppl/GSM9278499_KRAS_induced_03.bt.macs2_peaks.gappedPeak.gz"
+      ],
+      "supplementary_file_3": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9278nnn/GSM9278499/suppl/GSM9278499_KRAS_induced_03.bt.macs2_peaks.txt.gz"
+      ]
+    }
+  ],
+  "extract_schema_version": 2
+}

@@ -1,0 +1,37 @@
+{
+  "retrieved_at_utc": "2026-09-25T01:07:32.390499+00:00",
+  "source_url": "https://www.ebi.ac.uk/pride/ws/archive/v2/projects/PXD058626",
+  "response_sha256": "3dc03e4c48030fa8ae27773d3a834d551ccdf3c9a81a931d3d28808a95ae2091",
+  "scope": "Public catalog only; no assay data downloaded",
+  "metadata": {
+    "accession": "PXD058626",
+    "title": "The MUC5B promoter variant results in proteomic changes in the non-fibrotic lung",
+    "projectDescription": "The gain-of-function MUC5B promoter varaint is the dominant risk for IPF development. Herein, we performed laser capture microdissection coupled mass spectrometry to isolate the characteristic histopathological lesions of IPF, the normal-appearing alveoli/small airways, and epithelium overlying fibroblastic foci. The captured samples were subject to mass spectrometry.",
+    "sampleProcessingProtocol": "Volumes of 0.01-0.005 mm^3 of captured hematoxylin and eosin stained, formalin-fixed paraffin-embedded, lung tissue was used as a starting material. Samples were subject to SDS treatment, heating, and sonication to break apart the tissue. Using S-TRAP, we digested the sample with trypsin for 2-hours at 47oC. Samples were finally cleaned up using POROS-R3 beads. Samples were run on a timsTOF SCP.",
+    "dataProcessingProtocol": "Data was searched using MSFragger via FragPipe v 20.0. Precursor tolerance was set to ±15 ppm and fragment tolerance was set to ±0.08 Da. Data was searched against SwissProt restricted to Homo sapiens with added common contaminants (20,410 total sequences). Enzyme cleavage was set to semi-specific trypsin for all samples. Fixed modifications were set as carbamidomethyl (C). Variable modifications were set as oxidation (M), oxidation (P) (hydroxyproline), Gln->pyro-Glu (N-term Q), and acetyl (Peptide N-term). Results were filtered to 1% FDR at the peptide and protein level. The data was then uploaded and processed with FragPipe-Analyst using LFQ settings, no normalization, p-value cutoff at 0.05, Perseus-type imputation and FDR correction using Benjamini Hochberg to acquire a dataset for further statistical processing.Data was searched using MSFragger via FragPipe v 20.0. Precursor tolerance was set to ±15 ppm and fragment tolerance was set to ±0.08 Da. Data was searched against SwissProt restricted to Homo sapiens with added common contaminants (20,410 total sequences). Enzyme cleavage was set to semi-specific trypsin for all samples. Fixed modifications were set as carbamidomethyl (C). Variable modifications were set as oxidation (M), oxidation (P) (hydroxyproline), Gln->pyro-Glu (N-term Q), and acetyl (Peptide N-term). Results were filtered to 1% FDR at the peptide and protein level. The data was then uploaded and processed with FragPipe-Analyst using LFQ settings, no normalization, p-value cutoff at 0.05, Perseus-type imputation and FDR correction using Benjamini Hochberg to acquire a dataset for further statistical processing.",
+    "publicationDate": "2025-06-13",
+    "submissionType": "PARTIAL",
+    "instruments": [
+      {
+        "@type": "CvParam",
+        "cvLabel": "MS",
+        "accession": "MS:1003231",
+        "name": "timsTOF SCP"
+      }
+    ],
+    "organisms": [
+      {
+        "@type": "CvParam",
+        "cvLabel": "NEWT",
+        "accession": "NEWT:9606",
+        "name": "Homo sapiens (human)"
+      }
+    ],
+    "references": [
+      {
+        "pubmedID": 0,
+        "doi": "10.1172/JCI.INSIGHT.189636"
+      }
+    ]
+  }
+}
