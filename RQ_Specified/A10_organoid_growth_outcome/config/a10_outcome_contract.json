@@ -72,7 +72,18 @@
     "primary_1_epithelial_increment": "baseline versus baseline plus the epithelial programme block",
     "primary_2_niche_increment": "the retained model from primary 1 versus that plus the fibroblast programme block",
     "block_not_per_module": "Block comparisons keep the multiplicity small; per-module associations are exploratory, corrected separately, and carry no decision.",
-    "margin": "declared in stage 2 before any fit, as a minimum useful improvement in held-out predictive error"
+    "declared_margin_held_out_r2": 0.02,
+    "margin_declared_utc": "2026-09-25, committed before any model was fitted",
+    "margin_meaning": "A useful increment raises leave-one-unit-out predictive R squared on the primary outcome by at least 0.02 in absolute terms. Chosen as a modest floor that a real but small biological signal could clear, while excluding numerical noise from adding standardized features to a model with several hundred wells.",
+    "margin_applies_to": "the epithelial increment as primary, and the fibroblast increment as the second comparison"
+  },
+  "model_specification": {
+    "outcome_transform": "log2 of day-14 mean organoid area plus one",
+    "baseline_terms": ["log2 day-7 mean organoid area plus one", "epithelial read fraction", "log2 epithelial library size", "plate indicators"],
+    "unit_effects_excluded_from_baseline": "A held-out unit's own effect is not estimable from training folds, so plate is used for batch and the unit is the fold rather than a covariate.",
+    "module_scores": "mean log2 CPM over each module's genes present in that compartment's index, with prior count 1 and the compartment's own total counts as denominator",
+    "standardization": "module scores centred and scaled before entering a block",
+    "estimator": "ordinary least squares on the training folds"
   },
   "evaluation": {
     "holdout": "leave one whole biological preparation out",
