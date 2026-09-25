@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-09-25T13:18:14.026067+00:00",
+  "paper": "10.1038/s41467-020-17358-3",
+  "archive": "X:\\GitHub\\scRNA_seq\\raw_data\\literature\\PMC7366678_supplementary.zip",
+  "archive_sha256": "5dec01ae7c6b1485e896a85be7834b66784fb852461a94c4cacc95a9e75c0947",
+  "members": {
+    "41467_2020_17358_MOESM3_ESM.pdf": "57133ca2f8b74f3b60c482189257538a1d675b9efa9b25fcee99cb5ace044a30",
+    "41467_2020_17358_MOESM6_ESM.xlsx": "c8710a359eb4ff5617606ffc3a02c36490c10cb1516d6db5d57c7051de8a31cb"
+  },
+  "description": "Supplementary Data 3: Cell type marker genes from high resolution epithelial cell dataset",
+  "marker_sheet": "cell_types_2",
+  "consequence": "ADI, AT1 and AT2 selection/filtering uses the same high-resolution cohort proposed for A5",
+  "prior_analysis": {
+    "locator": "Strunz discussion paragraph beginning In lung development; references 52 and 53",
+    "finding": "Authors report poor correspondence between developmental signatures and injury-induced ADI",
+    "Guo_reference": 53
+  },
+  "no_expression_counts_read": true
+}

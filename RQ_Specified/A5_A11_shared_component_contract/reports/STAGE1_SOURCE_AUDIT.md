@@ -96,3 +96,18 @@ Both archives came from the Europe PMC supplementary files service, the same rou
 the repository used for the Strunz lists. Only the Guo member file is cached for the
 freeze, under the untracked `sources/` directory; its hash is tracked in the
 specification. Article metadata came from PubMed.
+
+
+## Interpretation added after the joint review
+
+The source remains Guo P1 AT1/AT2; no gene list is re-frozen here. Before the
+new A5 scoring run, the review recovered an existing relevant comparison in
+Strunz 2020's discussion: both developmental signatures, including Guo (reference
+53), corresponded poorly to the injury-induced ADI signature in the authors'
+preliminary analysis. A5 therefore tests partial transcriptional recruitment,
+not assumed global state equivalence. The new primary and external identity
+controls are specified in [A5's plan](../../A5_developmental_programme_reuse/PLAN.md).
+
+Guo's own PLISH co-detection supplies biological context beyond the top-list
+argument against a simple doublet union. It does not establish a single ancestry
+or fate for every sequenced mixed-identity cell. See [biological logic](../BIOLOGICAL_LOGIC.md).

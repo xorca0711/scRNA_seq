@@ -1,0 +1,13 @@
+{
+  "completed_utc": "2026-09-25T13:12:20.976035+00:00",
+  "counts_read": false,
+  "script_sha256": "28fb06aec4d8e9592f2589dc127b01f78a0c61fd2f5405a8486d23bd72b9aff3",
+  "sources": {
+    "X:\\GitHub\\scRNA_seq-component-contract\\RQ_Specified\\A5_A11_shared_component_contract\\sources\\guo_2019_supplementary_data_2.xlsx": "81e6916773f91fa78669b02186a3078c24ff2ab418697ab9415ad2003e0702f8",
+    "X:\\GitHub\\scRNA_seq\\raw_data\\msigdb\\mh.all.v2024.1.Mm.symbols.gmt": "e5aa9acd833179d1d571b48bf91a28fb387722ce68ff53094d05847659d66460"
+  },
+  "outputs": {
+    "config\\strunz_test_contract.json": "2bdd8ae0dbc2c04c07f95744f8ab54b066fbff96498385605c69c71ce711bdb7",
+    "tables\\external_test_modules.json": "26740525bb07ab2b239789a680a1ca7a687075bb8edcfecb0948c9f59278c3ec"
+  }
+}

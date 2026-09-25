@@ -35,3 +35,10 @@ recorded under `source_lists`, with its archive and member hashes. The
 Read [PLAN.md](../PLAN.md) first for the argument, then this specification for
 the exact values. Where the two disagree, the specification is authoritative for
 values and the plan is authoritative for scope.
+
+
+The current continuation is in [BIOLOGICAL_LOGIC.md](../BIOLOGICAL_LOGIC.md) and
+the two child plans. Historical unit-readiness fields in `shared_component.json`
+describe the original contract stage. A5's additional external Guo test and A11's
+amended inferential interpretation are defined in their own configurations; the
+original partition and its output hashes remain fixed.

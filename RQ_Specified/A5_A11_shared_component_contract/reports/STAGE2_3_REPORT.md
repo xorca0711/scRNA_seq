@@ -1,5 +1,7 @@
 # Stages 2 and 3: frozen modules and eligibility
 
+**Current interpretation (25 September 2026):** historical freeze/coverage report. Original unit-readiness and stage-4 proposals are superseded by [the biological rationale and child plans](../BIOLOGICAL_LOGIC.md). Frozen outputs remain unchanged.
+
 25 September 2026. Executed under the owner's authorization of the
 [contract plan](../PLAN.md). Every number below is read from the tracked tables in
 [`tables/`](../tables/) and their run records. **No expression score was computed.**
@@ -10,7 +12,7 @@ Stage 3 read gene names only. No claim grade changes.
 - **Modules frozen under the pre-registered rule.** The rule was committed before
   any intersection was computed. The freeze asserted that the modules are disjoint
   and cover the union of the three source lists.
-- **The shared module is two unrelated overlaps, not one programme.** Development
+- **The shared module contains two disjoint pairwise overlaps.** Development
   and adult injury share 5 genes. Adult injury and lesion share 7. Development and
   lesion share none, and no gene appears in all three lists.
 - **A11 is eligible for its test. A5 is not eligible for confirmation.** Every

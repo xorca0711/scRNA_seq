@@ -3,6 +3,33 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
+## Current: A5/A11 revised tests complete, 25 September 2026
+
+Branch `codex/a5-a11-biological-tests`; [PR #77](https://github.com/xorca0711/scRNA_seq/pull/77) is open for review. The owner authorized review revisions,
+execution and biological rationale. Start with
+[biological logic](RQ_Specified/A5_A11_shared_component_contract/BIOLOGICAL_LOGIC.md)
+and [results](RQ_Specified/A5_A11_shared_component_contract/reports/REVISED_TEST_RESULTS.md).
+
+- Plans/external modules committed before scores in `eb5317e`; implementation and
+  passed human instrument reproduction in `19fa116`. Original outputs preserved.
+- A5: all 24 primary mice positive, mean +0.735 pp, CI 0.579–0.892. External Guo
+  57/53-gene sensitivities positive after Holm; 26 mice in resting-AT2 sensitivity.
+  Old Strunz-filtered 94/51 modules are descriptive. Source independence was corrected.
+- A11: eight patient pairs, HL +0.681 log2 CPM, exact p=0.0078125; stress exclusion
+  BH q=0.0234. Beyond-shared q=0.0547, so the stronger criterion is not met.
+  No subtype, threshold or comparator was switched to rescue this result.
+- Independent verification: 28 deterministic checks; original 46 discovery pairs
+  reproduced to <1e-14. Scientific figure inspected. Numerical scripts refuse overwrites.
+- Current bounded tests complete. Another adult injury cohort would assess A5
+  generality; a comparable non-neoplastic human injury arm is needed for A11
+  specificity. Existing pooled chromatin does not supply these missing tests.
+- Large inputs remain ignored. Strunz processed counts/barcodes are in this
+  worktree's A5 cache; original metadata/Guo workbook remain under the earlier
+  component-contract worktree. Kim raw data and discovery caches remain in the
+  main checkout. Input/output hashes and source URLs are recorded.
+
+### Historical handoff (superseded where noted)
+
 ## Parallel work stream: A5 and A11 after the contract, 25 September 2026
 
 Branch `Claude/stage4-decisions`, in the separate worktree at

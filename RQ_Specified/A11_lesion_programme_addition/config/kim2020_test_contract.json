@@ -1,8 +1,8 @@
 {
-  "schema": "a11-kim2020-test/v1",
+  "schema": "a11-kim2020-test/v2",
   "preregistered": "2026-09-25",
-  "status": "preregistered_not_scored",
-  "authorization": "Owner chose this design at stage 4 of the shared component contract (DEVELOPMENT decision 37). Scoring waits for the owner to retain this plan.",
+  "status": "amended_before_scoring_authorized",
+  "authorization": "Owner requested proceeding with the review revisions and biological rationale; commit amendments before new scoring.",
   "question": {
     "register": "RESEARCH_QUESTIONS.md#a11",
     "hypothesis": "Lesion-associated epithelial programmes add to a shared plasticity component.",
@@ -20,7 +20,13 @@
     "sd": 0.3842,
     "standardized_effect": 0.8501,
     "positive_patients": 19,
-    "sensitivity_label": {"label": "AT2", "mean_difference_log2cpm": 0.3232, "sd": 0.3849, "standardized_effect": 0.8398, "positive_patients": 19},
+    "sensitivity_label": {
+      "label": "AT2",
+      "mean_difference_log2cpm": 0.3232,
+      "sd": 0.3849,
+      "standardized_effect": 0.8398,
+      "positive_patients": 19
+    },
     "correction": "The version committed in e6b9dc9 cited the narrower AT2 label as the discovery reference. It was corrected to the discovery primary before any Kim score existed; only eligibility, from gene names and cell labels, had run. The Kim populations, test and decision rules are unchanged."
   },
   "cohort": {
@@ -28,13 +34,37 @@
     "source": "Kim et al. 2020, Nature Communications",
     "doi": "10.1038/s41467-020-16164-1",
     "pairing_evidence": "the deposit's Feature Summary patient id column, not sample-name resemblance",
-    "verified_paired_patients": ["P0006", "P0008", "P0009", "P0018", "P0019", "P0020", "P0028", "P0030", "P0031", "P0034"],
+    "verified_paired_patients": [
+      "P0006",
+      "P0008",
+      "P0009",
+      "P0018",
+      "P0019",
+      "P0020",
+      "P0028",
+      "P0030",
+      "P0031",
+      "P0034"
+    ],
     "prior_use": "opened once, for trial E1 on EGFR ligand RNA; never scored with any module in this plan"
   },
   "populations": {
-    "normal_arm": {"sample": "the patient's normal-lung sample", "author_labels": ["AT2"]},
-    "lesion_arm": {"sample": "the patient's tumour sample", "author_labels": ["tS1", "tS2", "tS3"], "pooling": "all three pooled; no subtype selected"},
-    "difference_from_discovery": "Discovery used atlas-mapped type 2-like cells in both arms, which in lesions included lesional cells resembling type 2. Here the lesion arm is all tumour epithelium by author label. This is a stricter transport test. A positive result survives a change of cell definition; a negative one may reflect it.",
+    "normal_arm": {
+      "sample": "the patient's normal-lung sample",
+      "author_labels": [
+        "AT2"
+      ]
+    },
+    "lesion_arm": {
+      "sample": "the patient's tumour sample",
+      "author_labels": [
+        "tS1",
+        "tS2",
+        "tS3"
+      ],
+      "pooling": "all three pooled; no subtype selected"
+    },
+    "difference_from_discovery": "Changed population contrast: all author tumour epithelial subtypes versus normal AT2, rather than atlas-mapped type-2-like cells in both arms. Neither necessarily stricter nor identical population transport.",
     "malignancy": "The author annotation has no copy-number malignancy label, so the lesion arm may include non-malignant epithelium."
   },
   "eligibility": {
@@ -52,31 +82,57 @@
     "normalization": "edgeR calcNormFactors method TMM across all eligible pseudobulks together, then cpm with log TRUE and prior.count 1",
     "module_score": "mean logCPM over the module's genes present in the gene index",
     "difference": "lesion arm score minus normal arm score, per patient",
-    "instrument_check": "Before any Kim score, the same code must reproduce the discovery's tracked per-patient differences for this module from the cached discovery pseudobulks, within 1e-6, for both the broad and the narrower type 2 labels. If it cannot, Kim is not scored and the discrepancy is reported."
+    "instrument_check": "Before any Kim score, the same code must reproduce the discovery's tracked per-patient differences for this module from the cached discovery pseudobulks, within 1e-6, for both the broad and the narrower type 2 labels. If it cannot, Kim is not scored and the discrepancy is reported.",
+    "discovery_normalization_scope": "All retained patient/histology pseudobulks within comp AT2, label and floor 50, before selecting LUAD-normal paired differences."
   },
   "primary": {
     "family_size": 1,
     "module": "lesion_specific",
-    "estimand": "mean within-patient difference, lesion epithelium minus normal type 2",
+    "estimand": "Location shift / pseudomedian of within-patient differences, lesion epithelium minus normal type 2",
     "test": "exact two-sided Wilcoxon signed-rank",
     "alpha": 0.05,
     "estimate": "Hodges-Lehmann with exact 95 percent confidence interval",
     "sensitivity_interval": "paired t 95 percent confidence interval",
-    "smallest_effect_of_interest_log2cpm": 0.10,
+    "smallest_effect_of_interest_log2cpm": 0.1,
     "decision_rules": {
-      "transports": "p below 0.05 and estimate above zero",
-      "contradicts": "p below 0.05 and estimate below zero",
-      "precisely_absent": "upper bound of the exact 95 percent interval below 0.10; retires the specified addition only",
-      "inconclusive": "any other outcome"
-    }
+      "direction": {
+        "positive": "exact p < 0.05 and HL > 0",
+        "negative": "exact p < 0.05 and HL < 0",
+        "unresolved": "otherwise",
+        "unavailable": "exact inference cannot be computed"
+      },
+      "magnitude": {
+        "meaningful_positive_supported": "exact CI lower > 0.10",
+        "positive_margin_ruled_out": "exact CI upper < 0.10",
+        "unresolved": "otherwise",
+        "unavailable": "exact interval unavailable"
+      },
+      "interpretation": "Direction and magnitude are separate axes. Upper CI below 0.10 rules out that positive margin; it is not equivalence to zero."
+    },
+    "assumptions": "Independent patients; symmetric distribution of paired differences for signed-rank location inference",
+    "exact_failure": "No confirmatory approximate fallback when ties/zeros or interval failure prevent exact inference; preserve effects and report unavailable.",
+    "margin_rationale": "Pragmatic planning margin based on a fraction of discovery, not clinically validated."
   },
   "secondary": {
     "family": "Benjamini-Hochberg across the three tests below, q below 0.05, same test as primary",
     "tests": [
-      {"name": "beyond_shared", "estimand": "per-patient lesion_specific difference minus shared_remodelling difference"},
-      {"name": "stress_excluded", "module": "lesion_specific_stress_excluded", "definition": "lesion_specific minus every gene in the three frozen mouse Hallmark control sets"},
-      {"name": "injury_lesion_pair", "module": "shared_I_and_L"}
-    ]
+      {
+        "name": "beyond_shared",
+        "estimand": "per-patient lesion_specific difference minus shared_remodelling difference",
+        "interpretation": "Relative score activation only, not conditional adjustment, independent mechanism, or neoplasia specificity."
+      },
+      {
+        "name": "stress_excluded",
+        "module": "lesion_specific_stress_excluded",
+        "definition": "lesion_specific minus every gene in the three frozen mouse Hallmark control sets",
+        "interpretation": "Sensitivity to membership in the three frozen Hallmarks, not elimination of every stress or cycling response."
+      },
+      {
+        "name": "injury_lesion_pair",
+        "module": "shared_I_and_L"
+      }
+    ],
+    "missing_test_rule": "Unavailable or ineligible test p=1 in the fixed family, and marked unavailable."
   },
   "descriptive_only": [
     "shared_remodelling score differences",
@@ -89,20 +145,52 @@
     "source": "tables/power.tsv from scripts/00_power_calculation.py; the first version is kept under tables/superseded_power_label_AT2/",
     "n_patients_assumed": 8,
     "n_patients_confirmed_by_gates": 8,
-    "at_discovery_effect": {"wilcoxon_exact": 0.4743, "paired_t": 0.5443},
-    "at_half_effect": {"wilcoxon_exact": 0.1479, "paired_t": 0.1809},
-    "consequence": "A null result is inconclusive unless the precise-absence rule is met, which is unlikely with this many patients."
+    "at_discovery_effect": {
+      "wilcoxon_exact": 0.4743,
+      "paired_t": 0.5443
+    },
+    "at_half_effect": {
+      "wilcoxon_exact": 0.1479,
+      "paired_t": 0.1809
+    },
+    "consequence": "Low power under the normal-location planning model; report direction and positive-margin inference separately, without equating non-significance with absence."
   },
   "prohibited_readings": [
-    "A null is not a refutation unless the precise-absence rule is met.",
+    "An unresolved direction is not refutation.",
+    "The margin is not equivalence to zero.",
     "Tumour epithelium is not confirmed malignant.",
-    "Same-patient pairing controls donor, not stage, smoking or driver status, which vary across patients.",
-    "A positive result supports transport of this addition; it does not show that no other lesion programme exists."
+    "Pairing does not remove tissue composition or effect modification.",
+    "A positive primary alone establishes association, not addition or cancer specificity."
   ],
   "order": [
-    "commit this contract and the plan",
-    "run the eligibility gates and commit their tables",
-    "owner retains or revises the plan",
-    "scoring run, whose first step is the instrument check"
-  ]
+    "commit amended contract, plan and biological rationale",
+    "reproduce discovery broad and narrow paired differences within 1e-6",
+    "verify prior gates and hash-identified raw inputs",
+    "score Kim once and report all planned results"
+  ],
+  "claim_hierarchy": {
+    "primary_positive": "Replicated lesion-associated expression in the specified population contrast",
+    "stronger_narrow_claim": "Positive primary plus positive BH-significant beyond_shared and stress_excluded: relative activation above the nominated shared score surviving specified exclusions",
+    "not_tested": "Specificity relative to non-neoplastic repair/fibrosis; malignant identity; causal mechanism; fate"
+  },
+  "amendment": {
+    "date": "2026-09-25",
+    "prior_score_state": "No Kim module score existed",
+    "retained": [
+      "populations",
+      "module membership",
+      "test",
+      "margin",
+      "secondary family",
+      "gates"
+    ],
+    "changes": [
+      "estimand wording",
+      "non-overlapping direction/magnitude axes",
+      "biological claim hierarchy",
+      "population interpretation",
+      "discovery normalization scope"
+    ],
+    "historical_gates": "tables/gates_run.json hashes v1 at the original gate date; do not overwrite it to match this amended file."
+  }
 }
