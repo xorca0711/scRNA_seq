@@ -1,16 +1,28 @@
 {
   "purpose": "planning calculation for the pre-registered Kim 2020 test; no Kim data read",
-  "completed_utc": "2026-09-25T11:11:18.302476+00:00",
-  "script_sha256": "054bb38b87e8c57de6a7a4cbbd20ee5e140e7f64872c217b1eef75f2cd739288",
+  "completed_utc": "2026-09-25T11:18:36.432760+00:00",
+  "script_sha256": "f532126c03058d890bacdd33883706823edcd1ebec291f6da4b78c38de421689",
   "discovery_input": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_values.csv",
   "discovery_input_sha256": "23925240374be0c25803409183e2eec2ee7b9cd156f742b40a702ef861169f68",
   "discovery": {
-    "n": 23,
-    "mean": 0.3232,
-    "sd": 0.3849,
-    "standardized_effect": 0.8398,
-    "positive": 19
+    "__broad__": {
+      "role": "primary: broad type 2 compartment, the discovery run primary",
+      "n": 23,
+      "mean": 0.3266,
+      "sd": 0.3842,
+      "standardized_effect": 0.8501,
+      "positive": 19
+    },
+    "AT2": {
+      "role": "sensitivity: narrower type 2 label",
+      "n": 23,
+      "mean": 0.3232,
+      "sd": 0.3849,
+      "standardized_effect": 0.8398,
+      "positive": 19
+    }
   },
+  "supersedes": "tables/superseded_power_label_AT2/, which used only the narrower type 2 label",
   "n_patients": 8,
   "alpha": 0.05,
   "simulations": 20000,
@@ -18,6 +30,6 @@
   "python": "3.12.14",
   "scipy": "1.18.0",
   "outputs": {
-    "power.tsv": "82f3fe8b85a2c8f355b51e9c4bb0778bc2e414320c10b350a5e8541ebcc7c12b"
+    "power.tsv": "13cd02c0acc504786598f389b5cf391f433bcd47e2a79a471c895f2454f2a2ec"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "purpose": "planning calculation for the pre-registered Kim 2020 test; no Kim data read",
+  "completed_utc": "2026-09-25T11:11:18.302476+00:00",
+  "script_sha256": "054bb38b87e8c57de6a7a4cbbd20ee5e140e7f64872c217b1eef75f2cd739288",
+  "discovery_input": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_values.csv",
+  "discovery_input_sha256": "23925240374be0c25803409183e2eec2ee7b9cd156f742b40a702ef861169f68",
+  "discovery": {
+    "n": 23,
+    "mean": 0.3232,
+    "sd": 0.3849,
+    "standardized_effect": 0.8398,
+    "positive": 19
+  },
+  "n_patients": 8,
+  "alpha": 0.05,
+  "simulations": 20000,
+  "seed": 20260925,
+  "python": "3.12.14",
+  "scipy": "1.18.0",
+  "outputs": {
+    "power.tsv": "82f3fe8b85a2c8f355b51e9c4bb0778bc2e414320c10b350a5e8541ebcc7c12b"
+  }
+}

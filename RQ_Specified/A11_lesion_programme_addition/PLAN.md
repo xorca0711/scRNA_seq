@@ -23,9 +23,13 @@ only be the discovery. Scoring it again would reproduce a reported number.
 | Discovery, already reported | Value |
 |---|--:|
 | Patients | 23 |
-| Mean paired difference, log2 CPM | 0.323 |
-| Standard deviation of differences | 0.385 |
+| Mean paired difference, log2 CPM | 0.327 |
+| Standard deviation of differences | 0.384 |
 | Patients positive | 19 |
+
+These figures use the discovery run's own primary, its broad type 2 compartment
+label, which the register also quotes. Its narrower type 2 label gives a mean of
+0.323 with the same 19 positive patients and serves as a sensitivity.
 
 The evaluation cohort is Kim et al. 2020
 ([10.1038/s41467-020-16164-1](https://doi.org/10.1038/s41467-020-16164-1)), held
@@ -78,7 +82,8 @@ The discovery scores come from a tracked R script,
 
 Before any Kim score, the same code must reproduce the discovery's tracked
 per-patient differences for this module from the cached discovery pseudobulks,
-within 1e-6. If it cannot, Kim is not scored and the discrepancy is reported.
+within 1e-6, under both the broad and the narrower type 2 labels. If it cannot, Kim
+is not scored and the discrepancy is reported.
 
 ## Primary test
 
@@ -122,7 +127,7 @@ From a logged calculation using only the discovery's tracked differences:
 
 | Scenario | Exact Wilcoxon | Paired t |
 |---|--:|--:|
-| Discovery effect, 8 patients | 0.46 | 0.53 |
+| Discovery effect, 8 patients | 0.47 | 0.54 |
 | Half the discovery effect | 0.15 | 0.18 |
 
 So even if the discovery effect transports in full, this test is close to a coin
@@ -146,3 +151,31 @@ result would be meaningful precisely because the test is hard to pass.
 2. The eligibility gates run and their tables are committed.
 3. The owner retains or revises this plan.
 4. Only then does scoring run, and its first step is the instrument check.
+
+## Gate outcome
+
+The gates ran on the pre-registered configuration and read gene names and cell
+labels only. Kim's gene index holds 29,634 genes.
+
+| Module | Role | Assayed fraction | Gate 1 |
+|---|---|--:|---|
+| Lesion-specific | primary | 0.802 | pass |
+| Lesion-specific without stress genes | secondary | 0.778 | pass |
+| Injury-lesion pair | secondary | 0.714 | pass |
+| Shared remodelling | secondary baseline | 0.833 | pass |
+
+Every identity and control axis also passes. For gate 2, eight patients meet the
+50-cell floor in both arms, as the metadata indicated; P0008 and P0009 fall short on
+tumour epithelium. The test is eligible to run once the owner retains this plan.
+
+## Correction made before scoring
+
+The version committed in `e6b9dc9` cited the discovery run's narrower type 2 label
+as its reference, at a mean of 0.323. The discovery run's own primary is its broad
+type 2 compartment label, at 0.327, which is also the closer analogue of Kim's
+pooled tumour epithelium. The reference, the power calculation and the instrument
+check now use the broad label, with the narrower one kept as a sensitivity. The
+first power output is preserved under `tables/superseded_power_label_AT2/`.
+
+This was corrected before any Kim score existed. The Kim populations, test,
+margin and decision rules did not change.

@@ -12,13 +12,16 @@
     "role": "discovery only; already scored and reported, so it cannot also evaluate",
     "cohort": "GSE308103",
     "module_identity": "lesion_specific is gene-for-gene identical to HPCS_without_ADI_or_operational_markers, scored by the completed human run",
-    "configuration": "unc20_pooled, label AT2, cell floor 50, LUAD minus normal",
+    "configuration": "unc20_pooled, label __broad__ (the broad type 2 compartment), cell floor 50, LUAD minus normal",
+    "why_this_label": "It is the discovery run's own primary: its validation record counts primary_broad_contrasts, and its report and the register quote this figure. It is also the closer analogue of Kim's pooled tumour epithelium.",
     "source": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_human_specificity/paired_program_values.csv",
     "n_patients": 23,
-    "mean_difference_log2cpm": 0.3232,
-    "sd": 0.3849,
-    "standardized_effect": 0.8398,
-    "positive_patients": 19
+    "mean_difference_log2cpm": 0.3266,
+    "sd": 0.3842,
+    "standardized_effect": 0.8501,
+    "positive_patients": 19,
+    "sensitivity_label": {"label": "AT2", "mean_difference_log2cpm": 0.3232, "sd": 0.3849, "standardized_effect": 0.8398, "positive_patients": 19},
+    "correction": "The version committed in e6b9dc9 cited the narrower AT2 label as the discovery reference. It was corrected to the discovery primary before any Kim score existed; only eligibility, from gene names and cell labels, had run. The Kim populations, test and decision rules are unchanged."
   },
   "cohort": {
     "accession": "GSE131907",
@@ -49,7 +52,7 @@
     "normalization": "edgeR calcNormFactors method TMM across all eligible pseudobulks together, then cpm with log TRUE and prior.count 1",
     "module_score": "mean logCPM over the module's genes present in the gene index",
     "difference": "lesion arm score minus normal arm score, per patient",
-    "instrument_check": "Before any Kim score, the same code must reproduce the discovery's tracked per-patient differences for this module from the cached discovery pseudobulks, within 1e-6. If it cannot, Kim is not scored and the discrepancy is reported."
+    "instrument_check": "Before any Kim score, the same code must reproduce the discovery's tracked per-patient differences for this module from the cached discovery pseudobulks, within 1e-6, for both the broad and the narrower type 2 labels. If it cannot, Kim is not scored and the discrepancy is reported."
   },
   "primary": {
     "family_size": 1,
@@ -83,10 +86,11 @@
     "the primary excluding the double-primary patient P0028"
   ],
   "power": {
-    "source": "tables/power.tsv from scripts/00_power_calculation.py",
+    "source": "tables/power.tsv from scripts/00_power_calculation.py; the first version is kept under tables/superseded_power_label_AT2/",
     "n_patients_assumed": 8,
-    "at_discovery_effect": {"wilcoxon_exact": 0.4642, "paired_t": 0.5345},
-    "at_half_effect": {"wilcoxon_exact": 0.1456, "paired_t": 0.1777},
+    "n_patients_confirmed_by_gates": 8,
+    "at_discovery_effect": {"wilcoxon_exact": 0.4743, "paired_t": 0.5443},
+    "at_half_effect": {"wilcoxon_exact": 0.1479, "paired_t": 0.1809},
     "consequence": "A null result is inconclusive unless the precise-absence rule is met, which is unlikely with this many patients."
   },
   "prohibited_readings": [

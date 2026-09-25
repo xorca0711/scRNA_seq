@@ -1,3 +1,5 @@
-scenario	standardized_effect	n_patients	wilcoxon_exact_power	paired_t_power
-discovery effect	0.8398	8	0.4642	0.5345
-half the discovery effect	0.4199	8	0.1456	0.1777
+discovery_label	role	scenario	standardized_effect	n_patients	wilcoxon_exact_power	paired_t_power
+__broad__	primary: broad type 2 compartment, the discovery run primary	discovery effect	0.8501	8	0.4743	0.5443
+__broad__	primary: broad type 2 compartment, the discovery run primary	half the discovery effect	0.425	8	0.1479	0.1809
+AT2	sensitivity: narrower type 2 label	discovery effect	0.8398	8	0.4663	0.5345
+AT2	sensitivity: narrower type 2 label	half the discovery effect	0.4199	8	0.1461	0.1777
