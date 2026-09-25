@@ -1,0 +1,64 @@
+{
+  "stage": "4a",
+  "completed_utc": "2026-09-25T14:02:24.717054+00:00",
+  "script": "RQ_Specified/A10_organoid_growth_outcome/scripts/05_extract_hallmark.py",
+  "script_sha256": "c69f7ab0376509216e509649a4339e5b892ac6bd0a2d3304afeefdd0c07c7931",
+  "spec_sha256": "89bff2937fd3ae323ac2ef6b29db58548d7833611f9028befa5ffe5254a7c18e",
+  "workbook_sha256": "60736e5c153a4fb92908f19148ebb5ef2b59f7ade97fb1056deee7d0205acc33",
+  "gmt": {
+    "mouse": {
+      "path": "mh.all.v2024.1.Mm.symbols.gmt",
+      "sha256": "e5aa9acd833179d1d571b48bf91a28fb387722ce68ff53094d05847659d66460"
+    },
+    "human": {
+      "path": "h.all.v2024.1.Hs.symbols.gmt",
+      "sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772"
+    }
+  },
+  "blocks": {
+    "primary_block_growth": [
+      "HALLMARK_E2F_TARGETS",
+      "HALLMARK_G2M_CHECKPOINT",
+      "HALLMARK_MYC_TARGETS_V1",
+      "HALLMARK_APOPTOSIS",
+      "HALLMARK_P53_PATHWAY",
+      "HALLMARK_MTORC1_SIGNALING"
+    ],
+    "secondary_block_niche_signalling": [
+      "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+      "HALLMARK_TGF_BETA_SIGNALING",
+      "HALLMARK_NOTCH_SIGNALING",
+      "HALLMARK_HEDGEHOG_SIGNALING",
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION"
+    ],
+    "secondary_block_environment": [
+      "HALLMARK_HYPOXIA",
+      "HALLMARK_UNFOLDED_PROTEIN_RESPONSE",
+      "HALLMARK_INFLAMMATORY_RESPONSE",
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB"
+    ]
+  },
+  "per_species": {
+    "mouse": {
+      "rows_scanned": 52636,
+      "declared_genes": 1660,
+      "genes_found": 1629,
+      "sets": 15
+    },
+    "human": {
+      "rows_scanned": 58302,
+      "declared_genes": 1681,
+      "genes_found": 1656,
+      "sets": 15
+    }
+  },
+  "library_totals_match_first_pass": true,
+  "cache": {
+    "path": "RQ_Specified/A10_organoid_growth_outcome/cache/a10_hallmark_counts.npz",
+    "sha256": "75805f3fe608a8620d7cfa09439db4b51f9beee028ca5773998b7c6e01bd545a",
+    "bytes": 3999044
+  },
+  "outputs": {
+    "hallmark_coverage.tsv": "e188ca1f2da55e7084cfa6bcb0e0d9ed44ac0dec7cbd77d0b251d2e5cd87044b"
+  }
+}

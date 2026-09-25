@@ -9,16 +9,24 @@ hypothesis stays in the register.
 [the audit](reports/STAGE1_IDENTITY_AUDIT.md) for what the design can and cannot
 support.
 
-**Result: both increments are inconclusive.** The epithelial increment fails the
-declared margin, and the fibroblast increment clears it only in the primary fit, then
-falls below it once the one over-replicated target is removed. The baseline itself does
-not transfer to a held-out unit, with a median within-unit predictive R squared near
-zero against a pooled 0.586. Read
-[the stage 3 report](reports/STAGE3_FIT_REPORT.md) first.
+**Result after the revised specification: the epithelial growth programmes clear the
+declared margin; the fibroblast block does not.** Read
+[the stage 4 report](reports/STAGE4_REVISED_REPORT.md) first, then
+[stage 3](reports/STAGE3_FIT_REPORT.md) for how the first specification failed and why.
 
-The assay validation passes convincingly, so this is a negative result about the
-hypothesis rather than a broken pipeline. The biological unit also remains unresolved,
-which would have capped any positive result at within-screen description.
+- **The supported cell** pairs the within-unit baseline with growth-nominated Hallmark
+  programmes: an increment of 0.0426 against a 0.02 margin, clearing it in all four
+  mandatory sensitivity checks.
+- **Both changes were needed.** Growth programmes with the old baseline give 0.0136, and
+  the old repair modules with the new baseline give 0.0036. Neither alone suffices.
+- **The earlier fibroblast finding was a specification artefact.** With the better
+  specification it turns negative, so the epithelial side carries the information and the
+  niche block does not add.
+- **It is uneven.** The increment is positive in 8 of 15 units, and plates 2 and 4 still
+  have baselines that do not predict. The pooled result is carried by two of four plates.
+
+The assay validation passes, and the biological unit is still unresolved, so everything
+here remains a within-screen descriptive association.
 
 ## Why this question is worth the effort
 
@@ -59,7 +67,8 @@ an animal, and the deposit does not say how many independent preparations there 
 | [PLAN.md](PLAN.md) | Four-stage structure, outcome, covariates, tests, holdout, decision rules |
 | [config/a10_outcome_contract.json](config/a10_outcome_contract.json) | The same, machine-readable, with cached file hashes |
 | [reports/STAGE1_IDENTITY_AUDIT.md](reports/STAGE1_IDENTITY_AUDIT.md) | What joined, why the unit is unresolved, and what stage 2 must assume |
-| [reports/STAGE3_FIT_REPORT.md](reports/STAGE3_FIT_REPORT.md) | The fitted result, its sensitivity checks and the per-unit failure |
+| [reports/STAGE4_REVISED_REPORT.md](reports/STAGE4_REVISED_REPORT.md) | The four-cell grid, the supported cell, and the limitation that qualifies it |
+| [reports/STAGE3_FIT_REPORT.md](reports/STAGE3_FIT_REPORT.md) | The first specification, its inconclusive result and the per-unit failure that pointed at the fix |
 | [reports/PUBLIC_DATA_SEARCH.md](reports/PUBLIC_DATA_SEARCH.md) | Whether any public cohort could validate A10, and why none can |
 | `scripts/01_audit_identities.py` | Stage 1: joins and units, metadata only |
 | `scripts/02_extract_counts.py` | Stage 3a: stream the two count sheets, cache the declared gene set |

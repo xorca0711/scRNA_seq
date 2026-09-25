@@ -1,0 +1,13 @@
+programme_set	baseline	wells	units	baseline_r2	epithelial_increment	fibroblast_increment	epithelial_clears_margin	fibroblast_clears_margin
+frozen_repair_modules	pooled	885	15	0.5864	0.0144	0.023	False	True
+frozen_repair_modules	within_unit	885	15	0.3774	0.0036	0.0161	False	False
+growth_hallmark	pooled	885	15	0.5864	0.0136	-0.0017	False	False
+secondary:epithelial:niche_signalling	pooled	885	15	0.5982		-0.0084		False
+secondary:epithelial:environment	pooled	885	15	0.5982		0.0135		False
+secondary:fibroblast:niche_signalling	pooled	885	15	0.5982		0.0059		False
+secondary:fibroblast:environment	pooled	885	15	0.5982		0.0099		False
+growth_hallmark	within_unit	885	15	0.3774	0.0426	-0.0154	True	False
+secondary:epithelial:niche_signalling	within_unit	885	15	0.4046		-0.0081		False
+secondary:epithelial:environment	within_unit	885	15	0.4046		0.003		False
+secondary:fibroblast:niche_signalling	within_unit	885	15	0.4046		-0.0052		False
+secondary:fibroblast:environment	within_unit	885	15	0.4046		0.0163		False

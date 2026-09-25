@@ -21,6 +21,8 @@ CACHE = HERE / 'cache'
 OUT = HERE / 'tables'
 SPEC = HERE / 'config/a10_revised_specification.json'
 OUTPUTS = ['revised_grid.tsv', 'revised_sensitivity.tsv', 'revised_per_unit.tsv', 'revised_run.json']
+GMT_RELATIVE = {'mouse': 'raw_data/msigdb/mh.all.v2024.1.Mm.symbols.gmt',
+                'human': 'raw_data/msigdb/h.all.v2024.1.Hs.symbols.gmt'}
 EPS = 1.0
 PRIOR = 1.0
 
@@ -53,8 +55,14 @@ def held_out(design, y, folds):
 
 
 def main() -> None:
+    import argparse
     import numpy as np
     import pandas as pd
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--data-root', type=Path, default=ROOT,
+                        help='checkout holding raw_data; defaults to the repository root')
+    data_root = parser.parse_args().data_root.resolve()
 
     OUT.mkdir(exist_ok=True)
     existing = [n for n in OUTPUTS if (OUT / n).exists()]
@@ -71,8 +79,13 @@ def main() -> None:
 
     gmt = {}
     for species, meta in hall_run['gmt'].items():
+        path = data_root / GMT_RELATIVE[species]
+        if not path.exists():
+            raise SystemExit(f'Missing {species} gene set file: {path}')
+        if sha256(path) != meta['sha256']:
+            raise SystemExit(f'{species} gene set file differs from the extraction record; refusing to fit')
         sets = {}
-        for line in (ROOT / meta['path']).read_text(encoding='utf-8').splitlines():
+        for line in path.read_text(encoding='utf-8').splitlines():
             p = line.split('\t')
             if p and p[0] in {s for v in blocks.values() for s in v}:
                 sets[p[0]] = [g for g in p[2:] if g]

@@ -1,0 +1,164 @@
+{
+  "stage": "4b",
+  "completed_utc": "2026-09-25T14:03:47.255568+00:00",
+  "script": "RQ_Specified/A10_organoid_growth_outcome/scripts/06_fit_revised_grid.py",
+  "script_sha256": "63b0e65e3e6be89a96cca0ef5a62a986bf75c91d09395770f5136a7c506ac6cf",
+  "spec_sha256": "89bff2937fd3ae323ac2ef6b29db58548d7833611f9028befa5ffe5254a7c18e",
+  "hallmark_cache_sha256": "75805f3fe608a8620d7cfa09439db4b51f9beee028ca5773998b7c6e01bd545a",
+  "declared_margin": 0.02,
+  "wells": 885,
+  "grid": [
+    {
+      "programme_set": "frozen_repair_modules",
+      "baseline": "pooled",
+      "wells": 885,
+      "units": 15,
+      "baseline_r2": 0.5864,
+      "epithelial_increment": 0.0144,
+      "fibroblast_increment": 0.023,
+      "epithelial_clears_margin": false,
+      "fibroblast_clears_margin": true
+    },
+    {
+      "programme_set": "frozen_repair_modules",
+      "baseline": "within_unit",
+      "wells": 885,
+      "units": 15,
+      "baseline_r2": 0.3774,
+      "epithelial_increment": 0.0036,
+      "fibroblast_increment": 0.0161,
+      "epithelial_clears_margin": false,
+      "fibroblast_clears_margin": false
+    },
+    {
+      "programme_set": "growth_hallmark",
+      "baseline": "pooled",
+      "wells": 885,
+      "units": 15,
+      "baseline_r2": 0.5864,
+      "epithelial_increment": 0.0136,
+      "fibroblast_increment": -0.0017,
+      "epithelial_clears_margin": false,
+      "fibroblast_clears_margin": false
+    },
+    {
+      "programme_set": "secondary:epithelial:niche_signalling",
+      "baseline": "pooled",
+      "wells": 885,
+      "units": 15,
+      "baseline_r2": 0.5982,
+      "epithelial_increment": null,
+      "fibroblast_increment": -0.0084,
+      "epithelial_clears_margin": null,
+      "fibroblast_clears_margin": false
+    },
+    {
+      "programme_set": "secondary:epithelial:environment",
+      "baseline": "pooled",
+      "wells": 885,
+      "units": 15,
+      "baseline_r2": 0.5982,
+      "epithelial_increment": null,
+      "fibroblast_increment": 0.0135,
+      "epithelial_clears_margin": null,
+      "fibroblast_clears_margin": false
+    },
+    {
+      "programme_set": "secondary:fibroblast:niche_signalling",
+      "baseline": "pooled",
+      "wells": 885,
+      "units": 15,
+      "baseline_r2": 0.5982,
+      "epithelial_increment": null,
+      "fibroblast_increment": 0.0059,
+      "epithelial_clears_margin": null,
+      "fibroblast_clears_margin": false
+    },
+    {
+      "programme_set": "secondary:fibroblast:environment",
+      "baseline": "pooled",
+      "wells": 885,
+      "units": 15,
+      "baseline_r2": 0.5982,
+      "epithelial_increment": null,
+      "fibroblast_increment": 0.0099,
+      "epithelial_clears_margin": null,
+      "fibroblast_clears_margin": false
+    },
+    {
+      "programme_set": "growth_hallmark",
+      "baseline": "within_unit",
+      "wells": 885,
+      "units": 15,
+      "baseline_r2": 0.3774,
+      "epithelial_increment": 0.0426,
+      "fibroblast_increment": -0.0154,
+      "epithelial_clears_margin": true,
+      "fibroblast_clears_margin": false
+    },
+    {
+      "programme_set": "secondary:epithelial:niche_signalling",
+      "baseline": "within_unit",
+      "wells": 885,
+      "units": 15,
+      "baseline_r2": 0.4046,
+      "epithelial_increment": null,
+      "fibroblast_increment": -0.0081,
+      "epithelial_clears_margin": null,
+      "fibroblast_clears_margin": false
+    },
+    {
+      "programme_set": "secondary:epithelial:environment",
+      "baseline": "within_unit",
+      "wells": 885,
+      "units": 15,
+      "baseline_r2": 0.4046,
+      "epithelial_increment": null,
+      "fibroblast_increment": 0.003,
+      "epithelial_clears_margin": null,
+      "fibroblast_clears_margin": false
+    },
+    {
+      "programme_set": "secondary:fibroblast:niche_signalling",
+      "baseline": "within_unit",
+      "wells": 885,
+      "units": 15,
+      "baseline_r2": 0.4046,
+      "epithelial_increment": null,
+      "fibroblast_increment": -0.0052,
+      "epithelial_clears_margin": null,
+      "fibroblast_clears_margin": false
+    },
+    {
+      "programme_set": "secondary:fibroblast:environment",
+      "baseline": "within_unit",
+      "wells": 885,
+      "units": 15,
+      "baseline_r2": 0.4046,
+      "epithelial_increment": null,
+      "fibroblast_increment": 0.0163,
+      "epithelial_clears_margin": null,
+      "fibroblast_clears_margin": false
+    }
+  ],
+  "verdicts": {
+    "frozen_repair_modules|pooled|epithelial": "not_supported",
+    "frozen_repair_modules|pooled|fibroblast": "fragile",
+    "frozen_repair_modules|within_unit|epithelial": "not_supported",
+    "frozen_repair_modules|within_unit|fibroblast": "not_supported",
+    "growth_hallmark|pooled|epithelial": "not_supported",
+    "growth_hallmark|pooled|fibroblast": "not_supported",
+    "growth_hallmark|within_unit|epithelial": "supported",
+    "growth_hallmark|within_unit|fibroblast": "not_supported"
+  },
+  "interpretation_limit": "within-screen descriptive association; the biological unit is unresolved",
+  "within_unit_caveat": "Centring the held-out unit uses that unit's own mean. That is a nuisance location parameter which would be observable for any unit actually in hand, but it means the metric answers which well inside a unit grows more, not how a unit behaves sight unseen. The pooled baseline is retained in the grid precisely so both readings are available.",
+  "python": "3.12.14",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "outputs": {
+    "revised_grid.tsv": "ff997178404b732eb2076caa67d25e0d2e7ad18ad5253d80d6ac2a3a30cd29f3",
+    "revised_sensitivity.tsv": "f1e4c95fce3f848429a8a9f6082f7e58c008dcc01fec57107de313913500b436",
+    "revised_per_unit.tsv": "28eb1e77233f2d333983cbcd871fe48838fb46c93f2916b5e1b4309cdad6f151"
+  }
+}
