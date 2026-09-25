@@ -1,0 +1,29 @@
+panel	marker	condition	comparator	mean_ratio	interpretation
+6c	SFTPC	iATCs→iAT2s	iATCs_Day0	229.8788041280578	medium-switch population differentiation capacity
+6d	COL1A1	iATCs→iAT2s	iATCs_Day0	0.0024333641610213047	medium-switch population differentiation capacity
+6c	NAPSA	iATCs→iAT2s	iATCs_Day0	3.9052499654932333	medium-switch population differentiation capacity
+6d	KRT17	iATCs→iAT2s	iATCs_Day0	0.15217251380808336	medium-switch population differentiation capacity
+6c	SLC34A2	iATCs→iAT2s	iATCs_Day0	35.33846956921976	medium-switch population differentiation capacity
+6d	MMP7	iATCs→iAT2s	iATCs_Day0	0.04518203443562544	medium-switch population differentiation capacity
+6g	AGER	iATCs→iAT1s	iATCs_Day0	33.320133225370114	medium-switch population differentiation capacity
+6h	COL1A1	iATCs→iAT1s	iATCs_Day0	0.12506237186110206	medium-switch population differentiation capacity
+6g	CLIC5	iATCs→iAT1s	iATCs_Day0	4.043277545849764	medium-switch population differentiation capacity
+6h	KRT17	iATCs→iAT1s	iATCs_Day0	0.25321762536483733	medium-switch population differentiation capacity
+6g	RTKN2	iATCs→iAT1s	iATCs_Day0	19.332821260147686	medium-switch population differentiation capacity
+6h	MMP7	iATCs→iAT1s	iATCs_Day0	0.035666465482012896	medium-switch population differentiation capacity
+6i	AGER_HiBiT	iATCs→iAT1s	iATCs→iAT2s	158.44621794804348	AGER reporter induction, not mature AT1 function
+6i	AGER_HiBiT	iAT2s→iAT1s	iAT2s→iAT2s	151.21523994552155	AGER reporter induction, not mature AT1 function
+9f	ATF3	siATF3	siCont	0.3958043333333333	normalized expression; no re-test against artificial zero-variance controls
+9f	ATF3	siHNF1b	siCont	0.432585	normalized expression; no re-test against artificial zero-variance controls
+9f	HNF1B	siATF3	siCont	0.473777	normalized expression; no re-test against artificial zero-variance controls
+9f	HNF1B	siHNF1b	siCont	0.3722745	normalized expression; no re-test against artificial zero-variance controls
+9g	TP63	siATF3	siCont	0.436309	normalized expression; no re-test against artificial zero-variance controls
+9g	TP63	siHNF1b	siCont	0.44371125	normalized expression; no re-test against artificial zero-variance controls
+9g	MMP7	siATF3	siCont	0.24644066666666667	normalized expression; no re-test against artificial zero-variance controls
+9g	MMP7	siHNF1b	siCont	0.14921575	normalized expression; no re-test against artificial zero-variance controls
+9g	ITGB6	siATF3	siCont	0.4546704133374982	normalized expression; no re-test against artificial zero-variance controls
+9g	ITGB6	siHNF1b	siCont	0.31881059385031807	normalized expression; no re-test against artificial zero-variance controls
+9g	KRT17	siATF3	siCont	0.3694406666666667	normalized expression; no re-test against artificial zero-variance controls
+9g	KRT17	siHNF1b	siCont	0.19201600000000002	normalized expression; no re-test against artificial zero-variance controls
+9g	COL1A1	siATF3	siCont	0.478053	normalized expression; no re-test against artificial zero-variance controls
+9g	COL1A1	siHNF1b	siCont	0.5096025	normalized expression; no re-test against artificial zero-variance controls

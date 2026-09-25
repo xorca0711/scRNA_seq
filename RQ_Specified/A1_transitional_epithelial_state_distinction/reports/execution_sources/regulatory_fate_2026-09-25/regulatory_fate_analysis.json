@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "date": "2026-09-25",
+  "status": "source-informed extension; source values and layouts inspected before this specification",
+  "references_checked_before_launch": {
+    "HPCS": "Nature 2026 Fig. 2 and Supplementary Table 4 Mice; pinned dbetel tracing notebooks and 2020 repository tree",
+    "Tsutsui": "Nature Communications 2026 Figs. 6, 8, 9 and Supplementary Data 2; DDBJ full SRA records",
+    "AP1": "Lynch bioRxiv v2 Fig. 4I and actual HOPX workbook DC5; published July 2026 abstract; pooled multiome metadata",
+    "TP53": "Morowitz bioRxiv v1 Fig. 5 and Supplementary Data Table 1; both cited GEO records currently private"
+  },
+  "hpcs": {
+    "join": "exact source alias prefix before underscore to Mice sheet Tag; library and driver must agree",
+    "unit": "named mouse; keep library, sex, reporter genotype, rounded harvest week and chase separate",
+    "summaries": "equal mouse mean and range of state fractions; inventory listed mice without retained traced cells",
+    "inference": "none: chase remains confounded with sequencing library; current reporter not recovered"
+  },
+  "ap1": {
+    "input": "cache/regulatory_fate/ap1_DC5.xlsx",
+    "sheets": ["wt SeV in situ", "wt SeV de novo", "mut SeV in situ", "mut SeV de novo"],
+    "source_rows": [3, 11],
+    "endpoint": "HOPX-positive fraction among GFP-labelled AT2-lineage cells; not completed functional AT1 fate",
+    "units": "three mice per genotype; three fields per mouse and region; mouse IDs scoped within genotype",
+    "primary": "sum positive and total counts within mouse-region; equal-mouse mean; genotype difference in each region and difference of within-mouse regional differences",
+    "sensitivity": "equal-field fractions within mouse; all nine leave-one-mouse-per-genotype omissions",
+    "uncertainty": "exploratory two-sided exhaustive permutation of six mouse regional differences into 3+3 groups; 20 allocations; conditional exchangeability assumption; minimum attainable two-sided p is 0.10",
+    "excluded": "no field-level or cell-level inferential tests; no universal beneficial AP-1 inhibition claim"
+  },
+  "tsutsui": {
+    "input": "cache/followup_sources/tsutsui_source.xlsx",
+    "endpoints": "all marker blocks and HiBiT in Figure 6; all gel and knockdown blocks in Figure 9",
+    "summary": "means, sample SD, n, min/max; verify against cached workbook averages and SDs; descriptive condition ratios",
+    "missing": "dash is missing, numeric zero is observed; no pseudocounts",
+    "replication": "author-declared biologically independent culture experiments, one parental epithelial iPSC line; no assumed cross-panel pairing",
+    "units": "qPCR adult-lung ratios for Figure 6 markers, HiBiT luminescence with unspecified absolute units, normalized contraction inhibition and relative expression for Figure 9",
+    "inference": "no new tests using deterministic siCont=1 or normalized contraction controls=0/100",
+    "regulatory_genes": "reconstruct 325 shared predicted motif-associated genes and supplied 126-gene RNA-upregulated subset; no enrichment test without universe; prediction not validated binding"
+  },
+  "tp53": {
+    "input": "cache/regulatory_fate/tp53_table1.xlsx",
+    "analysis": "audit selected DE lists, signs and frozen eight A1 markers; describe shared concordant and opposite changes",
+    "limits": "selected significant gene sets; no unfiltered universe, counts or new p-values; difference in significance is not origin interaction; preprint not independent validation of Tsutsui"
+  },
+  "outputs": "new tables/regulatory_fate and figures/regulatory_fate; preserve all earlier numerical outputs"
+}

@@ -5,6 +5,15 @@ main analysis. This audit changes the scientific design; it does not lower the
 replication standard. Source-paper findings remain distinct from results computed
 in this repository.
 
+**New execution:** [regulatory and outcome continuation](reports/REGULATORY_FATE_REPORT.md)
+resolves the HPCS animals and Hopx harvest timing, and reanalyzes AP-1
+lineage-labelled HOPX acquisition with fields nested in mice. The regional
+effect has opposite directions; a lost transitional marker is not sufficient
+to infer improved maturation. Tsutsui population differentiation capacity and
+regulatory suppression are separate experiments. The TP53 preprint introduces
+an AT1-origin alternative, with selected signed RNA evidence and currently
+private full sequencing inputs. These updates inform the design below.
+
 ## Why the previous stages were inadequate
 
 Stage 3 led with trajectory tools before defining a measured lineage endpoint.

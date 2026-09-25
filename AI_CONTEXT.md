@@ -7,7 +7,32 @@ violated. Human-readable counterparts: [`README.md`](README.md) (overview),
 (AI-assisted development disclosure and scientific ownership),
 [`PROGRESS.md`](PROGRESS.md) (session state).
 
-## Current task: A1 adaptive evidence closure
+## Current task: A1 regulatory and outcome continuation
+
+Read A1 `reports/REGULATORY_FATE_REPORT.md`, `NEXT_SESSION.md` and the updated
+reference map. The three requested avenues are complete for currently usable
+inputs. PR #73 is merged; branch `codex/a1-regulatory-fate-linkage`.
+Scripts 32–35 and `a1_regulatory_fate.py` produce new tables/figures under
+`regulatory_fate`; completed numerical entrypoints refuse overwrites.
+
+All 22 HPCS aliases resolve to named mice via Supplementary Table 4, with four
+other listed animals lacking a retained traced alias. Hopx IGO17543 harvest is
+14 weeks. The old unit/timing holds are superseded; library/chase confounding
+and absent current mScarlet remain. Tsutsui's 64 raw-run identities resolve,
+but per-preparation perturbation scaling/count inputs remain needed; do not
+compare E. coli-normalized figure tracks with baseline CPM amplitudes.
+
+AP-1 source fields are nested in three mice/genotype: use mouse-level regional
+differences, not field/cell tests. Interaction 24.55 pp, exact p=0.10, all nine
+paired omissions same sign. HOPX acquisition is not completed AT1 function.
+Tsutsui medium-switch and knockdown panels are separate one-line experiments.
+TP53 selected lists contain both signs; 109/868 shared DE genes are opposite.
+GSE335749/335750 currently private until a displayed June 2027 release.
+Do not fit a new count model from selected lists. Unsent requests are in
+`reports/SOURCE_REQUEST_DRAFTS.md`. No explicit author-contact authorization.
+Keep Notion concise English without critique/plans. Preserve earlier output bytes.
+
+## Previous milestone: A1 adaptive evidence closure
 
 Read A1 `reports/EVIDENCE_CLOSURE_REPORT.md`, `reports/ANALYSIS_REFERENCE_MAP.md`
 and `NEXT_SESSION.md`. PRs #70/#71 are merged. Current delivery branch:

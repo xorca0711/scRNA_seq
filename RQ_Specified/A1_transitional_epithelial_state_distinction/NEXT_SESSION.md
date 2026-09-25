@@ -1,4 +1,43 @@
-# A1 — current handoff after adaptive evidence closure
+# A1 — current handoff after regulatory and outcome continuation
+
+25 September 2026. The three requested avenues and prelaunch reference checks
+are complete for currently usable public inputs. Read
+[REGULATORY_FATE_REPORT.md](reports/REGULATORY_FATE_REPORT.md) and the
+[reference map](reports/ANALYSIS_REFERENCE_MAP.md). PR #73 is merged; current
+delivery branch is `codex/a1-regulatory-fate-linkage`.
+
+Scripts 32–35 recover public sources, resolve identities, reanalyze source
+measurements and independently verify/render results. Outputs are under
+`tables/regulatory_fate` and `figures/regulatory_fate`; completed numerical
+entrypoints refuse overwrites. There is no raw-read processing to resume.
+
+All 22 retained HPCS aliases now match named mice; four additional listed mice
+have no retained traced alias. IGO17543 harvest is resolved at 14 weeks.
+Current mScarlet remains missing and chase remains aliased with libraries.
+The earlier mouse-identity/harvest holds are superseded, not the design limit.
+
+Tsutsui's 64 DDBJ runs have explicit sample titles, treatment, mark and biological
+preparation labels. Published perturbation tracks use E. coli normalization;
+do not compare their amplitude with the earlier baseline CPM tracks. The
+325/126 predicted regulatory/RNA sets reproduce; the HNF1B-only set has four
+duplicate rows. SiRNA program suppression and medium-switch differentiation
+remain separate experiments from one parental iPSC line.
+
+AP-1 microscopy has three mice per genotype, three fields per region per mouse.
+Mouse-level regional interaction: 24.55 percentage points; exact two-sided
+permutation p=0.10 over 20 allocations. All nine paired omissions retain its
+direction. Suppressing the transitional program has different regional effects.
+HOPX acquisition is not mature AT1 function or proof of chromatin mediation.
+
+TP53 selected lists have 493 shared increases, 266 shared decreases and 109
+opposite-sign genes, not 868 shared increases. Both cited GEO studies are
+currently private until a displayed scheduled release of June 2027. No new
+DE/interaction model is eligible. Remaining data requests are drafted in
+[SOURCE_REQUEST_DRAFTS.md](reports/SOURCE_REQUEST_DRAFTS.md), not sent.
+No explicit author-contact authorization exists. Notion stays concise English
+without critique or follow-up analyses. Preserve all old numerical bytes.
+
+## Historical closure handoff (superseded above)
 
 25 September 2026. The owner's adaptive continuation and reference-check
 requests are implemented. Read [EVIDENCE_CLOSURE_REPORT.md](reports/EVIDENCE_CLOSURE_REPORT.md)

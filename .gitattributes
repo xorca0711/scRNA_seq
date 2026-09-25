@@ -5,6 +5,8 @@ docs/migrations/2026-09-25-research-layout/** -text whitespace=cr-at-eol
 
 # Question workflows record source/config hashes across Windows and Linux.
 RQ_Specified/** -text whitespace=cr-at-eol
+# This test is included byte-for-byte in the A1 execution-source archive.
+analysis/tests/test_a1_regulatory_fate.py -text whitespace=cr-at-eol
 # Preserve generated A1 SVG and raw R-session/log bytes used as execution evidence.
 RQ_Specified/A1_transitional_epithelial_state_distinction/figures/*.svg whitespace=cr-at-eol,-blank-at-eol
 RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ire1_R.log whitespace=cr-at-eol,-blank-at-eol

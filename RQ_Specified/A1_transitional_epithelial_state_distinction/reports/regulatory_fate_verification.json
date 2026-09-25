@@ -1,0 +1,22 @@
+{
+  "utc": "2026-09-25T10:42:21.068465+00:00",
+  "checks": {
+    "regulatory_fate_input_audit.json": 14,
+    "regulatory_fate_analysis_run.json": 17,
+    "preserved_preclosure_numerical_artifacts": 113,
+    "preserved_closure_identity_run.json": 6,
+    "preserved_cd44_closure_run.json": 18,
+    "AP1_source_mouse_region_fractions": 12,
+    "AP1_exhaustive_allocations": 20,
+    "TP53_shared_gene_signs": 868,
+    "Tsutsui_endpoint_recomputations": 65
+  },
+  "code_sha256": "fa72b28d8b45514185a42bc40339ba50985d017cdfbdfe2872bb6ff86871af5f",
+  "figures": {
+    "figures/regulatory_fate/ap1_region_outcome.png": "d8cd6d7e4c405f07dc19ac097a8c1926d6ded4489ef5a47e6c78f74bb8cb9b0e",
+    "figures/regulatory_fate/ap1_region_outcome.svg": "8891019ee7388c96fdac7d5a7b08e4eca269670cc0a7a96cc7a43ebbc4684015",
+    "figures/regulatory_fate/tsutsui_capacity_and_response.png": "07c325fe8a8e1d4687c024125ee0b0e1d7a72019be92426aa5c4dac729ffc8f1",
+    "figures/regulatory_fate/tsutsui_capacity_and_response.svg": "eb7c61ce5a8ff3c90d1f5511e77216abea4ab7a809b927cd4c59db24ce7a147f"
+  },
+  "visual_review": "pending; record inspection separately"
+}

@@ -845,6 +845,29 @@ treated as unverified and removed. Work was reviewed between sessions against
 [`PROGRESS.md`](PROGRESS.md), landed through pull requests, and known issues
 were carried forward in writing rather than dropped.
 
+### A1 regulatory and outcome continuation, 25 September 2026
+
+The owner requested all three remaining avenues and established-analysis
+checks, especially before regulation-to-fate work. Codex recovered primary
+identities and extended source analyses; the owner has not been represented
+as accepting the resulting scientific conclusions.
+
+| Date | Item | Proposed by | Decided by | Decision | Reason |
+|---|---|---|---|---|---|
+| 2026-09-25 | HPCS animal crosswalk and Hopx harvest | Codex from Supplementary Table 4, pinned demultiplexing and Fig. 2 | Owner authorized continuation; Codex applied explicit-evidence rule | Resolve 22 mice and 14-week Hopx harvest; retain library/chase and current-reporter limits | Exact animal/library/driver matches replace alias-based uncertainty |
+| 2026-09-25 | AP-1 regional outcome and culture/source reanalysis | Codex after checking established papers and source tables | Owner authorized all three avenues | Use mice for nested microscopy; keep culture differentiation, regulatory suppression and selected RNA contrasts separate | Program suppression is region-dependent and not equivalent to fate rescue |
+
+| Date | Reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-25 | Generic beneficial interpretation of AP-1/transitional-state suppression | Mouse-level HOPX responses have opposite regional directions; only three mice per genotype | Codex narrowed claims from source-informed reanalysis |
+| 2026-09-25 | Assumption of 317 unique HNF1B-only genes | First new numerical launch stopped before output; four source symbols are duplicated | Codex preserved raw rows and reported 313 unique genes |
+| 2026-09-25 | TP53 shared significant genes described as uniformly upregulated | Source values contain 493 shared increases, 266 shared decreases and 109 opposite directions; counts remain private | Codex audited signs and declined an unsupported interaction fit |
+| 2026-09-25 | Adjacent-time ATAC correlation and large PATS raw-read processing | Shared middle time point, ambiguous age-control metadata and persistent injury/sort confounding would not resolve the proposed causal question | Codex pruned dependent work under the owner's adaptive instruction |
+
+See the [report](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/REGULATORY_FATE_REPORT.md)
+for source definitions, checks and exact remaining requirements. Source requests
+are drafted but unsent; the concise Notion page was not expanded.
+
 ## Where the honest failures live
 
 - The refuted Scrublet/AT0 over-removal claim, with both rounds of the test:

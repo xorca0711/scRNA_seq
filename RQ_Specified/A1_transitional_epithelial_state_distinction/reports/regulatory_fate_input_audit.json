@@ -1,0 +1,27 @@
+{
+  "utc": "2026-09-25T10:38:03.678246+00:00",
+  "code_sha256": "c32ea672a08d903715399615d23a8223dec1f39151abff3fcb2ffaeff95af5be",
+  "helper_sha256": "3f6939bc83cf3332b4fb80c496f4f94214f4cb6f4ff96960b44a6709bcf155e6",
+  "contract_sha256": "22ed9898fb30d82d5a57529920e21bc4bffecdaac72f82e802ac540de63a608d",
+  "inputs": {
+    "cache/regulatory_fate/hpcs_resources.xlsx": "3026a3aff6305276fd19e6b83f34eda0f9db50000110ca2015512cc48fd579eb",
+    "tables/hpcs_source_composition/source_manifest.tsv": "1322439c82ac75a4624c41889585d298e0d9db476f13b383adc218ca3bca7e13",
+    "tables/hpcs_source_composition/source_state_counts.tsv": "58d77eb9bda1e5f73d1aa8b50863f3bbd2140f75d6d18c9d4f6734c1bb64eb2d",
+    "metadata/ENA_projects.json": "c3a0ce070846c975fc815d00e930ed179e3f90eb6eb102caf1d44375a9d309d9",
+    "cache/regulatory_fate/PRJDB37980_sra.xml": "59ab540468d9f8578071b8cd3046c0a54c9f35c638ecfdfaac7d3bbfb71d0006",
+    "cache/regulatory_fate/PRJDB37982_sra.xml": "b9d67cf0bf9134e83331ea85dd9368fdfb26c5deb77c1d7aa456df20f065b965",
+    "cache/regulatory_fate/PRJDB37983_sra.xml": "4cdf56f842008f14be0e6255797e272594574864bfba2d900c743ef698bd7f99",
+    "cache/regulatory_fate/tp53_GSE335749.txt": "1a953fbea592d871749358bd92f9192a96d806e31df1ffbe88e446a03dbf7a48",
+    "cache/regulatory_fate/tp53_GSE335750.txt": "a30e0b4370711aa4337066fed69f76c37c2d13f7f2b8a914f6a047548fb757da"
+  },
+  "resolved_mice": 22,
+  "listed_mice_without_retained_trace": 4,
+  "sequencing_records": 64,
+  "outputs": {
+    "tables/regulatory_fate/hpcs_listed_without_retained_trace.tsv": "8ac10465fab62a712d5698451b8728cc1c30a4e0aeff6694670ded0c861a0522",
+    "tables/regulatory_fate/hpcs_mouse_crosswalk.tsv": "59da1edca71bd2db20ecc917d7a5a695c6f41beb3c3cb11796315496eb95b813",
+    "tables/regulatory_fate/hpcs_named_mouse_summary.tsv": "f420bfbc0bd932bb50505ede51c79c26ecd783f616677d76b512d22177c56626",
+    "tables/regulatory_fate/tp53_accessibility.tsv": "b35941dfb9cadbabd392d567127a9a69c334c133e1afba288f3d435a4a69668f",
+    "tables/regulatory_fate/tsutsui_sequencing_crosswalk.tsv": "e771390bbdd887bfcfcede3bed3f3e3d61e9484a517a930926e49da44f5956c9"
+  }
+}

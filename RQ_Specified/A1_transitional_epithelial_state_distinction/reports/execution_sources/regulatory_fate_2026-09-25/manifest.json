@@ -1,0 +1,51 @@
+{
+  "utc": "2026-09-25T10:51:47.918605+00:00",
+  "files": [
+    {
+      "source": "RQ_Specified/A1_transitional_epithelial_state_distinction/scripts/32_fetch_regulatory_fate_sources.py",
+      "archived": "reports/execution_sources/regulatory_fate_2026-09-25/32_fetch_regulatory_fate_sources.py",
+      "sha256": "77794e012508e13aa863870292e08fa369aba083a47e7dd6ead5bc1d6f81b01f"
+    },
+    {
+      "source": "RQ_Specified/A1_transitional_epithelial_state_distinction/scripts/33_audit_regulatory_fate_inputs.py",
+      "archived": "reports/execution_sources/regulatory_fate_2026-09-25/33_audit_regulatory_fate_inputs.py",
+      "sha256": "c32ea672a08d903715399615d23a8223dec1f39151abff3fcb2ffaeff95af5be"
+    },
+    {
+      "source": "RQ_Specified/A1_transitional_epithelial_state_distinction/scripts/34_analyze_regulatory_fate.py",
+      "archived": "reports/execution_sources/regulatory_fate_2026-09-25/34_analyze_regulatory_fate.py",
+      "sha256": "edd6b7f39d1366f0de26b63ab021ca86a6a2ba319a0bd552e566297c8368bfc8"
+    },
+    {
+      "source": "RQ_Specified/A1_transitional_epithelial_state_distinction/scripts/35_verify_and_render_regulatory_fate.py",
+      "archived": "reports/execution_sources/regulatory_fate_2026-09-25/35_verify_and_render_regulatory_fate.py",
+      "sha256": "fa72b28d8b45514185a42bc40339ba50985d017cdfbdfe2872bb6ff86871af5f"
+    },
+    {
+      "source": "RQ_Specified/A1_transitional_epithelial_state_distinction/scripts/a1_regulatory_fate.py",
+      "archived": "reports/execution_sources/regulatory_fate_2026-09-25/a1_regulatory_fate.py",
+      "sha256": "3f6939bc83cf3332b4fb80c496f4f94214f4cb6f4ff96960b44a6709bcf155e6"
+    },
+    {
+      "source": "RQ_Specified/A1_transitional_epithelial_state_distinction/config/regulatory_fate_scope.md",
+      "archived": "reports/execution_sources/regulatory_fate_2026-09-25/regulatory_fate_scope.md",
+      "sha256": "e34e454c72b4ff97caa2dbac61c0f6bd70497cb7667079ea195be909ea751305"
+    },
+    {
+      "source": "RQ_Specified/A1_transitional_epithelial_state_distinction/config/regulatory_fate_analysis.json",
+      "archived": "reports/execution_sources/regulatory_fate_2026-09-25/regulatory_fate_analysis.json",
+      "sha256": "22ed9898fb30d82d5a57529920e21bc4bffecdaac72f82e802ac540de63a608d"
+    },
+    {
+      "source": "RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ANALYSIS_REFERENCE_MAP.md",
+      "archived": "reports/execution_sources/regulatory_fate_2026-09-25/ANALYSIS_REFERENCE_MAP.md.txt",
+      "sha256": "ad8aa8a2e86f405635793a8a96a87ecbef6ed7748223c901467d4e6f18a5fb9d"
+    },
+    {
+      "source": "analysis/tests/test_a1_regulatory_fate.py",
+      "archived": "reports/execution_sources/regulatory_fate_2026-09-25/test_a1_regulatory_fate.py",
+      "sha256": "165b116ea8c8831cbd1028082c9b608b300fbb5e8fcd12cf0ef3a8442a6fc509"
+    }
+  ],
+  "note": "Exact execution sources; do not run archived entrypoints to bypass overwrite guards. The exact reference-map copy has a .txt suffix so its original relative links are not interpreted at the archive location."
+}
