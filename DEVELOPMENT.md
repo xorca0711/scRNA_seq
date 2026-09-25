@@ -851,6 +851,23 @@ expression score was computed and no claim grade changed. See the
 
 ## How outputs were reviewed
 
+### A1 adaptive continuation, 25 September 2026
+
+| Date | Item | Proposed by | Decided by | Decision | Reason |
+|---|---|---|---|---|---|
+| 2026-09-25 | Recover exact CD44 identities, run paired contrasts/interaction, verify HPCS definitions and link established analysis references | Codex | Owner authorized adaptive continuation and reference checks; scientific interpretation remains for review | Execute newly eligible work and document completed, pruned and external-input branches | SRA originals resolve the RNA identity hold; author notebooks resolve annotation dependence |
+
+| Date | Reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-25 | Earlier CD44 identity hold and HPCS definition-notebook hold | Exact SRA original filenames recover all columns; a new bounded scope retrieves the two pinned notebooks | Codex revised status from new primary evidence within owner-authorized continuation |
+| 2026-09-25 | Potential interpretation of stringent HPCS labels as independent annotation support, and shared markers as disease-specific validation | Every stringent change is abstention; seven transported markers change in both CD44 genotype contrasts | Codex narrowed interpretation from executed source/data audits; historical numerical outputs retained |
+| 2026-09-25 | Replicated IRE1 single-cell follow-up from the newly identified study | Each treatment group is one pooled GEM library; GSE243129 is a different neonatal experiment | Codex applied the prespecified unit/design gate before assay acquisition |
+
+The [closure report](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/EVIDENCE_CLOSURE_REPORT.md)
+and [reference map](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ANALYSIS_REFERENCE_MAP.md)
+record evidence dependencies and uncertainty. This is an authorized analysis
+delivery, not an invented human acceptance of the scientific conclusions.
+
 Every run writes its decisions to machine logs (`decisions.json`,
 `analysis_log.txt`), and the original per-dataset reports and pipeline record are
 *generated* from those artefacts. Later manually maintained narratives can

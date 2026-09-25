@@ -1,0 +1,1063 @@
+{
+  "accession": "GSE243129",
+  "retrieved_at_utc": "2026-09-25T09:30:33.034243+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243129&targ=all&form=text&view=full",
+  "response_sha256": "9bee70ac7b46250f2ec5b1a3fa6a9c9c5085dceeabfd094c869b5d407d8d410c",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Single-cell RNA Sequencing of Murine Lungs to Compare Two Different Models of Alveolar Simplification"
+    ],
+    "geo_accession": [
+      "GSE243129"
+    ],
+    "status": [
+      "Public on Mar 14 2024"
+    ],
+    "last_update_date": [
+      "Nov 14 2024"
+    ],
+    "overall_design": [
+      "Neonatal mice on the C57BL/6 background were exposed to either hyperoxia (75% oxygen) or normoxia for 10 days begnning on day 0 and were recovered in normoxia until harvest at day 14. Tgfbr2 flox/flox (WT) mice were compared to Nkx2.1-cre;Tgfbr2 flox/flox (KO) littermates in either normoxic (RA) or hyperoxic (O2) conditions. Two mice of each genotype and of each exposure were harvested on day 7 and day 14 and lung tissues were digested to generate a single cell suspension and analyzed using scRNAseq."
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM7779691",
+      "GSM7779692",
+      "GSM7779693",
+      "GSM7779694",
+      "GSM7779695",
+      "GSM7779696",
+      "GSM7779697",
+      "GSM7779698",
+      "GSM7779699",
+      "GSM7779700",
+      "GSM7779701",
+      "GSM7779702",
+      "GSM7779703",
+      "GSM7779704",
+      "GSM7779705",
+      "GSM7779706"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE243nnn/GSE243129/suppl/GSE243129_RAW.tar",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE243nnn/GSE243129/suppl/GSE243129_combined_labeled.RDS.gz"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1016405"
+    ]
+  },
+  "sample_count": 16,
+  "samples": [
+    {
+      "accession": "GSM7779691",
+      "title": [
+        "Wildtype mouse, age P7, normoxia, replicate 1"
+      ],
+      "geo_accession": [
+        "GSM7779691"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P7",
+        "genotype: Tgfbr2 flox/flox (WT)",
+        "treatment: Normoxia (RA)",
+        "biological replicate: 1",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386703",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773153"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779691/suppl/GSM7779691_per_sample_outs_1_P7_RA_WT_1_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779691/suppl/GSM7779691_per_sample_outs_2_P7_RA_WT_1_.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779692",
+      "title": [
+        "Wildtype mouse, age P7, normoxia, replicate 2"
+      ],
+      "geo_accession": [
+        "GSM7779692"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P7",
+        "genotype: Tgfbr2 flox/flox (WT)",
+        "treatment: Normoxia (RA)",
+        "biological replicate: 2",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386702",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773154"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779692/suppl/GSM7779692_per_sample_outs_1_P7_RA_WT_2_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779692/suppl/GSM7779692_per_sample_outs_2_P7_RA_WT_2_.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779693",
+      "title": [
+        "Tgfbr2 knockout mouse, age P7, normoxia, replicate 1"
+      ],
+      "geo_accession": [
+        "GSM7779693"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P7",
+        "genotype: Nkx2.1-cre;Tgfbr2 flox/flox (KO)",
+        "treatment: Normoxia (RA)",
+        "biological replicate: 1",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386701",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773155"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779693/suppl/GSM7779693_per_sample_outs_1_P7_RA_KO_1_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779693/suppl/GSM7779693_per_sample_outs_2_P7_RA_KO_1_.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779694",
+      "title": [
+        "Tgfbr2 knockout mouse, age P7, normoxia, replicate 2"
+      ],
+      "geo_accession": [
+        "GSM7779694"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P7",
+        "genotype: Nkx2.1-cre;Tgfbr2 flox/flox (KO)",
+        "treatment: Normoxia (RA)",
+        "biological replicate: 2",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386700",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773156"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779694/suppl/GSM7779694_per_sample_outs_1_P7_RA_KO_2_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779694/suppl/GSM7779694_per_sample_outs_2_P7_RA_KO_2_.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779695",
+      "title": [
+        "Wildtype mouse, age P7, hyperoxia, replicate 1"
+      ],
+      "geo_accession": [
+        "GSM7779695"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P7",
+        "genotype: Tgfbr2 flox/flox (WT)",
+        "treatment: Hyperoxia (O2)",
+        "biological replicate: 1",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386699",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773157"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779695/suppl/GSM7779695_per_sample_outs_1_P7_O2_WT_1_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779695/suppl/GSM7779695_per_sample_outs_2_P7_O2_WT_1_.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779696",
+      "title": [
+        "Wildtype mouse, age P7, hyperoxia, replicate 2"
+      ],
+      "geo_accession": [
+        "GSM7779696"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P7",
+        "genotype: Tgfbr2 flox/flox (WT)",
+        "treatment: Hyperoxia (O2)",
+        "biological replicate: 2",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386698",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773158"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779696/suppl/GSM7779696_per_sample_outs_1_P7_O2_WT_2_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779696/suppl/GSM7779696_per_sample_outs_2_P7_O2_WT_2_.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779697",
+      "title": [
+        "Tgfbr2 knockout mouse, age P7, hyperoxia, replicate 1"
+      ],
+      "geo_accession": [
+        "GSM7779697"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P7",
+        "genotype: Nkx2.1-cre;Tgfbr2 flox/flox (KO)",
+        "treatment: Hyperoxia (O2)",
+        "biological replicate: 1",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386697",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773159"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779697/suppl/GSM7779697_per_sample_outs_1_P7_O2_KO_1_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779697/suppl/GSM7779697_per_sample_outs_2_P7_O2_KO_1_.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779698",
+      "title": [
+        "Tgfbr2 knockout mouse, age P7, hyperoxia, replicate 2"
+      ],
+      "geo_accession": [
+        "GSM7779698"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P7",
+        "genotype: Nkx2.1-cre;Tgfbr2 flox/flox (KO)",
+        "treatment: Hyperoxia (O2)",
+        "biological replicate: 2",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386696",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773160"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779698/suppl/GSM7779698_per_sample_outs_1_P7_O2_KO_2_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779698/suppl/GSM7779698_per_sample_outs_2_P7_O2_KO_2_.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779699",
+      "title": [
+        "Wildtype mouse, age P14, normoxia, replicate 1"
+      ],
+      "geo_accession": [
+        "GSM7779699"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P14",
+        "genotype: Tgfbr2 flox/flox (WT)",
+        "treatment: Normoxia (RA)",
+        "biological replicate: 1",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386695",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773161"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779699/suppl/GSM7779699_per_sample_outs_3_P14_RA_WT_1_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779699/suppl/GSM7779699_per_sample_outs_4_P14_RA_WT_1_.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779700",
+      "title": [
+        "Wildtype mouse, age P14, normoxia, replicate 2"
+      ],
+      "geo_accession": [
+        "GSM7779700"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P14",
+        "genotype: Tgfbr2 flox/flox (WT)",
+        "treatment: Normoxia (RA)",
+        "biological replicate: 2",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386694",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773162"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779700/suppl/GSM7779700_per_sample_outs_3_P14_RA_WT_2_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779700/suppl/GSM7779700_per_sample_outs_4_P14_RA_WT_2_.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779701",
+      "title": [
+        "Tgfbr2 knockout mouse, age P14, normoxia, replicate 1"
+      ],
+      "geo_accession": [
+        "GSM7779701"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P14",
+        "genotype: Nkx2.1-cre;Tgfbr2 flox/flox (KO)",
+        "treatment: Normoxia (RA)",
+        "biological replicate: 1",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386693",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773163"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779701/suppl/GSM7779701_per_sample_outs_3_P14_RA_KO_1_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779701/suppl/GSM7779701_per_sample_outs_4_P14_RA_KO_1_.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779702",
+      "title": [
+        "Tgfbr2 knockout mouse, age P14, normoxia, replicate 2"
+      ],
+      "geo_accession": [
+        "GSM7779702"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P14",
+        "genotype: Nkx2.1-cre;Tgfbr2 flox/flox (KO)",
+        "treatment: Normoxia (RA)",
+        "biological replicate: 2",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386692",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773164"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779702/suppl/GSM7779702_per_sample_outs_3_P14_RA_KO_2_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779702/suppl/GSM7779702_per_sample_outs_4_P14_RA_KO_2_.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779703",
+      "title": [
+        "Wildtype mouse, age P14, hyperoxia, replicate 1"
+      ],
+      "geo_accession": [
+        "GSM7779703"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P14",
+        "genotype: Tgfbr2 flox/flox (WT)",
+        "treatment: Hyperoxia (O2)",
+        "biological replicate: 1",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386691",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773165"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779703/suppl/GSM7779703_per_sample_outs_3_P14_O2_WT_1_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779703/suppl/GSM7779703_per_sample_outs_4_P14_O2_WT_1_.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779704",
+      "title": [
+        "Wildtype mouse, age P14, hyperoxia, replicate 2"
+      ],
+      "geo_accession": [
+        "GSM7779704"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P14",
+        "genotype: Tgfbr2 flox/flox (WT)",
+        "treatment: Hyperoxia (O2)",
+        "biological replicate: 2",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386690",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773166"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779704/suppl/GSM7779704_per_sample_outs_3_P14_O2_WT_2_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779704/suppl/GSM7779704_per_sample_outs_4_P14_O2_WT_2_.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779705",
+      "title": [
+        "Tgfbr2 knockout mouse, age P14, hyperoxia, replicate 1"
+      ],
+      "geo_accession": [
+        "GSM7779705"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P14",
+        "genotype: Nkx2.1-cre;Tgfbr2 flox/flox (KO)",
+        "treatment: Hyperoxia (O2)",
+        "biological replicate: 1",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386689",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773167"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779705/suppl/GSM7779705_per_sample_outs_3_P14_O2_KO_1_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779705/suppl/GSM7779705_per_sample_outs_4_P14_O2_KO_1_.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779706",
+      "title": [
+        "Tgfbr2 knockout mouse, age P14, hyperoxia, replicate 2"
+      ],
+      "geo_accession": [
+        "GSM7779706"
+      ],
+      "source_name_ch1": [
+        "lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: lung",
+        "age: P14",
+        "genotype: Nkx2.1-cre;Tgfbr2 flox/flox (KO)",
+        "treatment: Hyperoxia (O2)",
+        "biological replicate: 2",
+        "strain: C57BL/6"
+      ],
+      "treatment_protocol_ch1": [
+        "Wildtype (Tgfbr2 flox/flox) or KO (Nkx2.1-cre;Tgfbr2 flox/flox) littermate mice were maintained in either normoxia (RA) or hyperoxia (75% O2) from birth (P0) until P10, after which they were recovered in normoxia until harvest. Nursing dams were rotated every 48 hours for maternal health and to maintain adequate nutrition for neonatal mice. Pups were euthanized to harvest both lungs on either P7 or 14."
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Mouse lungs were harvested after perfusion through the right ventricle with PBS. After mincing with razor blades, tissues were suspended in protease solution [0.25 % Collagenase A, 1 U/ml Dispase II, 2000 U/ml Dnase I in DMEM containing 10 mM HEPES and 2% FBS. The suspension was incubated at 37°C for 25 min with trituration by glass Pasteur pipette every 8 minutes. The digestion was then quenched for 5 minutes in ice-cold PBS containing 5% FBS and 2 mM EDTA, and cells were passed through a 100 μm cell strainer. Cells were pelleted and resuspended in RBC lysis buffer for 5 minutes. RBC lysis was quenched with 5% FBS/PBS and cells were passed through a 70 μm cell strainer, washed, and resuspended in 5% FBS/PBS containing antibodies for FACS purification. Approximately 100k CD45+ cells, 100k CD31+ cells, and 1x10e6 CD45-/CD31- cells were sorted for each sample and collected in 10% FBS/PBS.",
+        "Sorted cells were then counted and labeled with oligonucleotide tags for multiplexing using 10x Genomics 3’ CellPlex Kit Set A. All 8 biologic samples for P7 timepoint were pooled and 60,000 cells / lane were loaded onto 2 lanes of a Chromium Next GEM Chip (10x Genomics). The same workflow was used for P14 samples with all 8 P14 biologic samples pooled together and loaded onto 2 lanes as well. Each lane therefore represents a technical replicate for each biologic sample. Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "Assembly: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386688",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21773168"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779706/suppl/GSM7779706_per_sample_outs_3_P14_O2_KO_2_.zip"
+      ],
+      "supplementary_file_2": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779706/suppl/GSM7779706_per_sample_outs_4_P14_O2_KO_2_.zip"
+      ]
+    }
+  ]
+}

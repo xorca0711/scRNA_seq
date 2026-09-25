@@ -1,0 +1,7 @@
+{
+  "stage": "script 28 identity parsing, before analysis outputs",
+  "failure": "The strict title parser expected Mutant1; the deposited title is SPC Mut1 AT2 CD44 neg.",
+  "correction": "Use the explicit deposited SPC Mut spelling, still require genotype and sort agreement. Retain and verify the already-created baseline hash inventory on retry.",
+  "second_failure": "Pandas GroupBy.sort is an option, not the sort column; changed to explicit column indexing before any numerical analysis.",
+  "scientific_impact": "None; no CD44 fit or HPCS numerical output existed at either failure. No sample exclusion or identity inference from expression."
+}

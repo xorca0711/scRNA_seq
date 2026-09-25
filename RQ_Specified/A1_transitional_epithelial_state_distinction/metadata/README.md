@@ -1,6 +1,6 @@
 # Metadata evidence and unresolved identities
 
-The 30 `GSE*.json` extracts preserve the catalog response URL, retrieval time,
+The 32 `GSE*.json` extracts preserve the catalog response URL, retrieval time,
 response SHA-256 and sample fields. Full GEO responses are cached locally under
 ignored `tmp/a1_epigenetic_metadata/`. These are public design metadata, not
 downloaded sequencing matrices or a verified biological-unit manifest. No
@@ -22,6 +22,13 @@ from titles, with biological identity explicitly unverified. Titles are useful
 for finding a crosswalk; they do not certify paired animals.
 
 ## Holds that must be resolved before the affected contrast
+
+Closure update: GSE273123's original SRA filenames resolve its matrix
+identities, paired mice, genotype and sort. See the
+[verified crosswalk](../tables/evidence_closure/cd44_sample_manifest.tsv).
+GSE243124/129 were added during the IRE1 follow-up screen; only the former is
+the IRE1 intervention, with one pooled library per condition. The historical
+joint TIGIT/CD44 hold below now applies only to TIGIT.
 
 | Resource | Observed inconsistency or missing evidence | Required resolution |
 |---|---|---|

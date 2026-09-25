@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "utc": "2026-09-25T10:02:32.934317+00:00",
+  "prior_numerical_files_unchanged": 113,
+  "output_hashes_verified": 24,
+  "BH_tests_verified": 46548,
+  "interaction_identities_verified": 15516,
+  "HPCS_rows_verified": 28402,
+  "source_sha256": "3a10e751ac5aa455fecff0316ba0946a53c7bb826b00f68de1ee760052ab9c65",
+  "output_sha256": {
+    "tables/closure_verification/cd44_focus_stability.tsv": "77fe993f2fa95986cce0adc7fff5aaf355487500901fa4d21d7f115e18bfa383",
+    "figures/evidence_closure/a1_cd44_context.png": "30ba6ad6ab557517cb8b3d1078d6fca249231e9ed21c317d963ab04e725dd257",
+    "figures/evidence_closure/a1_cd44_context.svg": "75520f7f6be03c281ef13adaec4ccedd1439a5804cf059e0ae25f7d1513c246a",
+    "figures/evidence_closure/a1_hpcs_abstention.png": "104ae87277f75096ac2188aba0c4dec46db597591a8da77cdc8aac5e25c2d5ce",
+    "figures/evidence_closure/a1_hpcs_abstention.svg": "f0294c220fdeb18d996fdc3dcb035935ad8532789701083ad68f40f9a50963c4"
+  }
+}

@@ -1,0 +1,17 @@
+sample_id	source_alias	gsm	experiment	mouse	genotype	sort	GEO_title	original_files	evidence
+R26_8_CD44-	R268	GSM8422165	SRX25477430	WT4	WT	negative	WT4 AT2 CD44 neg	HTS053_19_R268_CD44minus_S19_R1_001.fastq.gz;HTS053_19_R268_CD44minus_S19_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477430
+R26_7_CD44-	R267	GSM8422164	SRX25477429	WT3	WT	negative	WT3 AT2 CD44 neg	HTS053_17_R267_CD44minus_S17_R1_001.fastq.gz;HTS053_17_R267_CD44minus_S17_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477429
+R26_2_CD44-	R262	GSM8422163	SRX25477428	WT2	WT	negative	WT2 AT2 CD44 neg	HTS053_15_R262_CD44minus_S15_R1_001.fastq.gz;HTS053_15_R262_CD44minus_S15_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477428
+R26_1_CD44-	R261	GSM8422162	SRX25477427	WT1	WT	negative	WT1 AT2 CD44 neg	HTS053_13_R261_CD44minus_S13_R1_001.fastq.gz;HTS053_13_R261_CD44minus_S13_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477427
+R26_8_CD44+	R268	GSM8422169	SRX25477434	WT4	WT	positive	WT4 AT2 CD44 pos	HTS053_20_R268_CD44plus_S20_R1_001.fastq.gz;HTS053_20_R268_CD44plus_S20_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477434
+R26_7_CD44+	R267	GSM8422168	SRX25477433	WT3	WT	positive	WT3 AT2 CD44 pos	HTS053_18_R267_CD44plus_S18_R1_001.fastq.gz;HTS053_18_R267_CD44plus_S18_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477433
+R26_2_CD44+	R262	GSM8422167	SRX25477432	WT2	WT	positive	WT2 AT2 CD44 pos	HTS053_16_R262_CD44plus_S16_R1_001.fastq.gz;HTS053_16_R262_CD44plus_S16_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477432
+R26_1_CD44+	R261	GSM8422166	SRX25477431	WT1	WT	positive	WT1 AT2 CD44 pos	HTS053_14_R261_CD44plus_S14_R1_001.fastq.gz;HTS053_14_R261_CD44plus_S14_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477431
+OG7_CD44-	OG7	GSM8422170	SRX25477435	Mutant1	Mutant	negative	SPC Mut1 AT2 CD44 neg	HTS053_27_OG7_CD44minus_S27_R1_001.fastq.gz;HTS053_27_OG7_CD44minus_S27_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477435
+OG6_CD44-	OG6	GSM8422171	SRX25477436	Mutant2	Mutant	negative	SPC Mut2 AT2 CD44 neg	HTS053_25_OG6_CD44minus_S25_R1_001.fastq.gz;HTS053_25_OG6_CD44minus_S25_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477436
+OG5_CD44-	OG5	GSM8422172	SRX25477437	Mutant3	Mutant	negative	SPC Mut3 AT2 CD44 neg	HTS053_23_OG5_CD44minus_S23_R1_001.fastq.gz;HTS053_23_OG5_CD44minus_S23_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477437
+OG3_CD44-	OG3	GSM8422173	SRX25477438	Mutant4	Mutant	negative	SPC Mut4 AT2 CD44 neg	HTS053_21_OG3_CD44minus_S21_R1_001.fastq.gz;HTS053_21_OG3_CD44minus_S21_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477438
+OG7_CD44+	OG7	GSM8422174	SRX25477439	Mutant1	Mutant	positive	SPC Mut1 AT2 CD44 pos	HTS053_28_OG7_CD44plus_S28_R1_001.fastq.gz;HTS053_28_OG7_CD44plus_S28_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477439
+OG6_CD44+	OG6	GSM8422175	SRX25477440	Mutant2	Mutant	positive	SPC Mut2 AT2 CD44 pos	HTS053_26_OG6_CD44plus_S26_R1_001.fastq.gz;HTS053_26_OG6_CD44plus_S26_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477440
+OG5_CD44+	OG5	GSM8422176	SRX25477441	Mutant3	Mutant	positive	SPC Mut3 AT2 CD44 pos	HTS053_24_OG5_CD44plus_S24_R1_001.fastq.gz;HTS053_24_OG5_CD44plus_S24_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477441
+OG3_CD44+	OG3	GSM8422177	SRX25477442	Mutant4	Mutant	positive	SPC Mut4 AT2 CD44 pos	HTS053_22_OG3_CD44plus_S22_R1_001.fastq.gz;HTS053_22_OG3_CD44plus_S22_R2_001.fastq.gz	https://www.ncbi.nlm.nih.gov/sra?term=SRX25477442

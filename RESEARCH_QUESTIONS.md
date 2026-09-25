@@ -37,7 +37,7 @@ recovery endpoint, and population persistence does not trace the same cells.
 
 | ID | Biological hypothesis / decisive endpoint | Motivation | Readiness and next task |
 |---|---|---|---|
-| [A1](#a1) | Regulatory features distinguish RNA-similar transitional states and responses | RNA identity differences; direct-mark and lineage sources identified | First batch complete; resolve compatible direct-mark inputs and units |
+| [A1](#a1) | Regulatory features distinguish RNA-similar transitional states and responses | Direct marks, lineage, perturbation and paired CD44 context contrasts | Adaptive batch complete; matched replicated regulatory/fate linkage remains missing |
 | [A2](#a2) | Functional AREG source contributions vary with context | Source RNA distributions; dominance unresolved | Conditional; source perturbation with receiver endpoint needed |
 | [A3](#a3) | Injury leaves a macrophage programme beyond normal aging | Late population composition | Age-matched controls and comparable sampling needed |
 | [A4](#a4) | Wnt maintenance and IL-1 response occur sequentially in an AT2 lineage | Transcript/source observations; sequence untested | Measured activity/history and lineage-linked response needed |
@@ -84,7 +84,14 @@ labels; biological-unit independence and current mScarlet remain unresolved.
 The [robustness batch](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ROBUSTNESS_REPORT.md)
 shows promoter-dependent CDKN1A acetylation, source-sensitive HPCS fractions and
 chase/library aliasing that prevents the proposed fixed-library-adjusted temporal
-contrast. Deposited annotation partitions differ; biological recoding remains held.
+contrast. The [closure batch](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/EVIDENCE_CLOSURE_REPORT.md)
+recovers CD44's exact eight-mouse crosswalk and fits paired genotype contrasts
+plus their direct interaction. Seven transported markers change in both
+genotypes; four have detected effect-size interactions, although Sftpc's effect
+nearly vanishes when WT2 is omitted. HPCS's author biological
+map is now verified, and all stringent K12 changes are confidence abstentions.
+The [reference map](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ANALYSIS_REFERENCE_MAP.md)
+connects published precedents, dependent reanalyses and the next decision.
 These within-context measurements do not establish an epigenetic taxonomy.
 
 **Rivals and test.** A common regulatory continuum, distinct branches, and
@@ -102,8 +109,10 @@ discriminator. Incompatible callers, pooled identities or low replication leave
 it inconclusive. The [plan](RQ_Specified/A1_transitional_epithelial_state_distinction/PLAN.md),
 [assay map](RQ_Specified/A1_transitional_epithelial_state_distinction/STUDY_MAP.md)
 and [lineage audit](RQ_Specified/A1_transitional_epithelial_state_distinction/LINEAGE_AUDIT.md)
-govern the input gate. PATS track scaling, TIGIT pool membership, CD44 count
-identities and HPCS source/age reconciliation remain specific holds. Temporal closure or memory additionally needs actual
+govern the input gate. PATS track scaling, TIGIT pool membership and HPCS
+source/age reconciliation remain specific holds; CD44 count identities are
+resolved. The newer IRE1 cell-resolved cohort has one pooled library per
+condition and cannot supply replicated treatment inference. Temporal closure or memory additionally needs actual
 time/fate evidence (A14).
 
 **Figures / contracts.** [Existing assay and endpoint panels](RQ_Specified/A1_transitional_epithelial_state_distinction/figures/README.md);

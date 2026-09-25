@@ -73,7 +73,7 @@ override the claim register.
 | Branch | Figures and evidence |
 |---|---|
 | [Shared question gallery](analysis/figures/rq/README.md) | Measured panels, diagnostic figures and proposed designs supporting [A1–A14](RESEARCH_QUESTIONS.md), with captions and sources |
-| [A1: regulatory, lineage and functional state distinction](RQ_Specified/A1_transitional_epithelial_state_distinction/figures/README.md) | Verified histone/H3 profiles, IRE1α stability, methylation-domain context, PATS endpoints and HPCS descendant source composition; independent state taxonomy remains unresolved |
+| [A1: regulatory, lineage and functional state distinction](RQ_Specified/A1_transitional_epithelial_state_distinction/figures/README.md) | Histone/H3 sensitivity, lineage and IRE1 evidence, recovered paired CD44 context contrasts and HPCS annotation audit; [collective reference map](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ANALYSIS_REFERENCE_MAP.md); independent state taxonomy remains unresolved |
 | [Niethamer: viral injury and repair](Research%20Article/gate1_01_niethamer_2025/README.md#figure-gallery) | Animal-level tracing/cycling, myeloid composition and programme-inference sensitivity; links to phase, lineage and batch galleries |
 | [Choi: epithelial states](Research%20Article/gate1_02_choi_2020/README.md#figure-gallery) | Deposited in vivo and organoid state maps, with links to specificity and chromatin analyses |
 | [Choi: chromatin and transitional states](Research%20Article/gate1_02_choi_2020/datp_epigenetics/README.md#figure-gallery) | RNA/promoter displays and developmental specificity |

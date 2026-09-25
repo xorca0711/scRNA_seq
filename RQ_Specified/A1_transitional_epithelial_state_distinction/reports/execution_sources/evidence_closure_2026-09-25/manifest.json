@@ -1,0 +1,60 @@
+{
+  "utc": "2026-09-25T10:05:00.112664+00:00",
+  "files": [
+    {
+      "original": "scripts/26_fetch_closure_sources.py",
+      "archive": "reports/execution_sources/evidence_closure_2026-09-25/26_fetch_closure_sources.py",
+      "sha256": "6f6892794d31d88aab385532e1198045d32a64e204609b70ae7090eb088a5bd7"
+    },
+    {
+      "original": "scripts/27_fetch_reference_evidence.py",
+      "archive": "reports/execution_sources/evidence_closure_2026-09-25/27_fetch_reference_evidence.py",
+      "sha256": "85738553eca136b31b9e3a04e625320e5cf272ddbec3d2fec595eebfd47b8adf"
+    },
+    {
+      "original": "scripts/28_audit_closure_identities.py",
+      "archive": "reports/execution_sources/evidence_closure_2026-09-25/28_audit_closure_identities.py",
+      "sha256": "e76578e59e454748414246e8fca7ca238b6ad3ee61a2af6278d56da6afc72a71"
+    },
+    {
+      "original": "scripts/a1_closure.py",
+      "archive": "reports/execution_sources/evidence_closure_2026-09-25/a1_closure.py",
+      "sha256": "8e00033af5528d817fb32aa3aa1152a8fe697081bc1e3d332100db4debdfa6b7"
+    },
+    {
+      "original": "scripts/29_run_cd44_analysis.py",
+      "archive": "reports/execution_sources/evidence_closure_2026-09-25/29_run_cd44_analysis.py",
+      "sha256": "df358a5fe4320ce9621bdee9b859435bfcc5d157c6f611ee26335c03b362d111"
+    },
+    {
+      "original": "scripts/30_fit_cd44.R",
+      "archive": "reports/execution_sources/evidence_closure_2026-09-25/30_fit_cd44.R",
+      "sha256": "cc28c2df5791b02ebd985e271c698b58f54e735fd169d977e5ef8d8b7461b802"
+    },
+    {
+      "original": "scripts/31_verify_and_render_closure.py",
+      "archive": "reports/execution_sources/evidence_closure_2026-09-25/31_verify_and_render_closure.py",
+      "sha256": "3a10e751ac5aa455fecff0316ba0946a53c7bb826b00f68de1ee760052ab9c65"
+    },
+    {
+      "original": "scripts/a1_robustness.py",
+      "archive": "reports/execution_sources/evidence_closure_2026-09-25/a1_robustness.py",
+      "sha256": "242fa1fd9fad96fb1b821e29c22d1a6b0c7b1774fe02ba9b0e1cdbe08b7f853e"
+    },
+    {
+      "original": "config/closure_analysis_contract.json",
+      "archive": "reports/execution_sources/evidence_closure_2026-09-25/closure_analysis_contract.json",
+      "sha256": "31bbb785846f62667acbed67f5fefc244f88800a423d6c2b30af21b7862d9bec"
+    },
+    {
+      "original": "config/evidence_closure_scope.md",
+      "archive": "reports/execution_sources/evidence_closure_2026-09-25/evidence_closure_scope.md.source",
+      "sha256": "3d69d6f5a72df13c64d0cbc67a65a57367c856cdd5fd78fafe790dcf83f7ddb9"
+    },
+    {
+      "original": "reports/ANALYSIS_REFERENCE_MAP.md",
+      "archive": "reports/execution_sources/evidence_closure_2026-09-25/ANALYSIS_REFERENCE_MAP.md.source",
+      "sha256": "bfff50ad4903f92ef4cf1c1c28e647ec32358528500f622b91a80c9e31c59d71"
+    }
+  ]
+}

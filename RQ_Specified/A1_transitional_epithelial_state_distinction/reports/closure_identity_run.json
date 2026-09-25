@@ -1,0 +1,73 @@
+{
+  "status": "completed",
+  "utc": "2026-09-25T09:39:31.709214+00:00",
+  "cd44_libraries": 16,
+  "cd44_mice": 8,
+  "hpcs": [
+    {
+      "scope": "all_deposited",
+      "cells": 28402,
+      "unmapped_newleiden": 0,
+      "cell_type_mismatches": 0,
+      "stringent_other": 11133,
+      "literal_changes": 11133,
+      "retained_code_changes": 0
+    },
+    {
+      "scope": "traced",
+      "cells": 5333,
+      "unmapped_newleiden": 0,
+      "cell_type_mismatches": 0,
+      "stringent_other": 1282,
+      "literal_changes": 1282,
+      "retained_code_changes": 0
+    }
+  ],
+  "input_sha256": {
+    "config/closure_analysis_contract.json": "31bbb785846f62667acbed67f5fefc244f88800a423d6c2b30af21b7862d9bec",
+    "reports/closure_source_inventory.json": "32fbce8c3c9cc4ac9dab2ab1eb2fddca83ad03d96e1567f1ae3a55bdf018b264",
+    "metadata/GSE273123.json": "dde9957536503dd770bebfd71b689aceba3623ff432c0e68aaebe0d97ca527df",
+    "cache/evidence_closure/hpcs/tracing_depletion_analysis/01_Concatenate_cells.ipynb": "e006143dfa29592d2c92b5bd7b0c05e1dfa923958ba3ed67c7ab577d2925019c",
+    "cache/evidence_closure/hpcs/tracing_depletion_analysis/02_Analyze_control_DT_depletion.ipynb": "79e29c45dedbe062d03c14e71c8f916a77d5975a6f06aee2c7c09934ac75accb",
+    "cache/evidence_closure/sra/SRX8806123.xml": "f7644de3780a571ac4468fab319492599c579841255b424eb26f3845ff8e7653",
+    "cache/evidence_closure/sra/SRX8806124.xml": "b7bf44b7a4ea45895c6490aa407e4161f79114e890a2e6b3063fa9a64ea249f9",
+    "cache/evidence_closure/sra/SRX8806125.xml": "0544af41dbea0542525ff39bbeb1c89501b31dfeb3afcf91fe11e94a4dbe6a30",
+    "cache/evidence_closure/sra/SRX8806126.xml": "c8b360f28c650dafdd528bafe659292bca9ef1fb20cc44c58320b73fd47da359",
+    "cache/evidence_closure/sra/SRX8806127.xml": "e6fcf6352792b5de4930787c3c05efa254e2b2a167f3f4d00a9bdef18cb15889",
+    "cache/evidence_closure/sra/SRX8806128.xml": "afefb0fded9cfe901e8faa863c45768e11c8981a5cf81c8e3a1b2ddfe81751d4",
+    "cache/evidence_closure/sra/SRX8806129.xml": "c9a97ac41eaf87a6051b3c521e4c7a235307312670ae43f0310a5ded9ac7670f",
+    "cache/evidence_closure/sra/SRX8806130.xml": "e9a8bd42749da2380166876d354b5896709e743a4dac429f0b11c07ed1c1b4b3",
+    "cache/evidence_closure/sra/SRX25477427.xml": "f79a8a17ca3f9a92d6d11f29b60143a7e9fe648bd811e0719539ca1ab63a9a7c",
+    "cache/evidence_closure/sra/SRX25477428.xml": "9c04616088c545134224b871161108161e920155694758aaaadcf06a363ce527",
+    "cache/evidence_closure/sra/SRX25477429.xml": "40a96a01b5f2bc67b34016b89a5209a54eb915f3bcc41bf5bcf500c92aa30a03",
+    "cache/evidence_closure/sra/SRX25477430.xml": "09588783782a889f4d403ede3a053d399ec94b950368548f9de467cec5c870d2",
+    "cache/evidence_closure/sra/SRX25477431.xml": "6ae8150fc6e71c6e31257d8e5e9b7d2074d2e9ed7dbdab8dade7c94821e0781c",
+    "cache/evidence_closure/sra/SRX25477432.xml": "45ba5fde1da2640d699c7a4b9ad0c400237ccd623a342d22f4ecae8fa915d9c3",
+    "cache/evidence_closure/sra/SRX25477433.xml": "91746298636b516b533f2027a9f87a157815dff31c796ba67ae4766936e861f4",
+    "cache/evidence_closure/sra/SRX25477434.xml": "d585d3060aea3c640f7ba2046b3cc39005b7c118b2307123053cea164107e9b3",
+    "cache/evidence_closure/sra/SRX25477435.xml": "a9a633b2e7a310387843eb362d63530f15202ce92a4b21a09514df04ea6ca0e1",
+    "cache/evidence_closure/sra/SRX25477436.xml": "0cacea02f984db5e291ec7c4ef6c4e8cfc9ca620b769a9743d31c5b7465290fc",
+    "cache/evidence_closure/sra/SRX25477437.xml": "1a7b3963092b429454248550bc450b24f271e820cc81ea93932b462cbcb022f5",
+    "cache/evidence_closure/sra/SRX25477438.xml": "2e379fdd7efb077dd2f85626942deee6dc6f9f1960567c87fc9d531f594e6790",
+    "cache/evidence_closure/sra/SRX25477439.xml": "b4ea593117c154ef6d1ab81b4a0902cbad89d415f034b8cdd3bb0ba006499e65",
+    "cache/evidence_closure/sra/SRX25477440.xml": "f96afc9de3e3ad184622f435f20a1c6a96c8b85afb7277c4d2f08e593d089cfa",
+    "cache/evidence_closure/sra/SRX25477441.xml": "2a036f7e3419c03a2afa4709e10d19c12fb56782bf445f57f1de5efd304b5c5d",
+    "cache/evidence_closure/sra/SRX25477442.xml": "8e0571c78fd917655aa4a490dd1a42df0e3bb7e3575132c7adcd37000538d980",
+    "cache/inputs/GSE273123/GSE273123_Count_Matrix.txt.gz": "326b4c263de65a07239accf8294b2930aaa68ca3fe81339a15e660dad2c29a90",
+    "cache/followup_sources/hpcs_combined_obs.csv.gz": "5372f9f11796d7be7ee0bdab5296d97e7c3c99256a29d8106d8aef7b01e62387",
+    "cache/evidence_closure/hpcs/tracing_depletion_analysis/01_Concatenate_cells.source.json": "17603ff5edb14431654454e294ebc34f61f70a88a91e03868ad67decfe400ba3",
+    "cache/evidence_closure/pats_sra.xml": "b9db12a4c4eb67a6486a7c39a961a42d32b246e52880efc1290836095588351c"
+  },
+  "code_sha256": {
+    "28_audit_closure_identities.py": "e76578e59e454748414246e8fca7ca238b6ad3ee61a2af6278d56da6afc72a71",
+    "a1_closure.py": "8e00033af5528d817fb32aa3aa1152a8fe697081bc1e3d332100db4debdfa6b7"
+  },
+  "output_sha256": {
+    "tables/evidence_closure/cd44_sample_manifest.tsv": "a206d3a847c5a39c05ce788a38cd7f51b70d809b235144ccebac7f239e4ebd7e",
+    "tables/evidence_closure/hpcs_abstention_summary.tsv": "cec846a515e5ce782cb8d87c4afc743779c51f3862c0c7f31473f5bba1b87b84",
+    "tables/evidence_closure/hpcs_annotation_audit.tsv": "297f53d7eddfbb345a3dfb3a78f6cd79bc2dd741059558c317d9ef50bc458598",
+    "tables/evidence_closure/PATS_raw_resource_audit.tsv": "145b61e484a79452281dbe693806b60eb8e122925087863c7472d4179b25699d",
+    "tables/evidence_closure/prior_numerical_sha256.json": "cb8bdff72b6bd63054aee6d03f64c10b43056c9e1ec448de0a33b548d22f6c9c",
+    "tables/evidence_closure/SRA_explicit_identity_evidence.tsv": "47f7251a1b9160c09f3ee0b10400370a10b7665d8f89cdf624774b03a6688865"
+  }
+}

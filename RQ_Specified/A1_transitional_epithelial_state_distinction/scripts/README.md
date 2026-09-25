@@ -84,6 +84,22 @@ Its outputs stay in ignored `tmp/a1_synthetic_qll/` and are not scientific evide
 This local check requires the existing portable R installation; it is not an
 undeclared dependency of the standard-library GitHub CI job.
 
+## Adaptive evidence closure (scripts 26–31)
+
+26 fetches two pinned annotation notebooks and 24 exact SRA records; 27 fetches
+small primary texts and the 20-experiment PATS catalog. 28 verifies identities,
+HPCS mapping and confidence abstention. 29 orchestrates the new CD44 analysis;
+30 fits paired genotype-specific contrasts and their direct interaction, with
+conditional pair omissions. 31 independently verifies results and renders two
+figures. All completed entrypoints refuse output overwrites. Source inventories
+record hashes; author notebook code is never executed.
+
+See [the reference map](../reports/ANALYSIS_REFERENCE_MAP.md),
+[frozen contract](../config/closure_analysis_contract.json) and
+[closure report](../reports/EVIDENCE_CLOSURE_REPORT.md). Script 29 needs the same
+`--rscript` path as script 07 and small NCBI gene-ID lookups. Its compressed count
+adapter is ignored; deposited inputs and hashes remain authoritative.
+
 ## First real analysis batch
 
 | Script | Purpose |

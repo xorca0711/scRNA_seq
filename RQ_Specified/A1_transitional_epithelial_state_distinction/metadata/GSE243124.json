@@ -1,0 +1,297 @@
+{
+  "accession": "GSE243124",
+  "retrieved_at_utc": "2026-09-25T09:30:17.741265+00:00",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243124&targ=all&form=text&view=full",
+  "response_sha256": "2ccb97fcd3dcf705fb64ccdae1aec7503ab3bb8d44ca8e7520942b4f9a6f9c12",
+  "scope": "GEO catalog metadata; file payloads, biological independence and cross-assay pairing not verified",
+  "series": {
+    "title": [
+      "Single-cell sequencing of mouse lung epithelial cells after bleomycin injury and modulation of IRE1α"
+    ],
+    "geo_accession": [
+      "GSE243124"
+    ],
+    "status": [
+      "Public on Aug 12 2025"
+    ],
+    "last_update_date": [
+      "Nov 11 2025"
+    ],
+    "pubmed_id": [
+      "41090357"
+    ],
+    "overall_design": [
+      "This is single cell sequencing of mouse lung epithelial cells from a study with factorial design. The four groups are: wildtype mice exposed to saline; wildtype mice exposed to bleomycin; mice with conditional knockout of IRE1α in the lung epithelium -- Shh(Cre/+) Ern1(flox/flox) -- exposed to bleomycin; and wildtype mice exposed to bleomycin and treated daily with the IRE1a kinase inhibitor KIRA8. Lungs were harvested and dissociated on day 10 after bleomycin exposure, and sorted for live, CD45- CD31- Epcam+ single cells. Cells from multiple mice in each treatment group were pooled into a single GEM lane. Single-cell sequencing performed using 10X Single Cell 3' technology. The output of Cell Ranger software is provided in the processed data file."
+    ],
+    "type": [
+      "Expression profiling by high throughput sequencing"
+    ],
+    "sample_id": [
+      "GSM7779594",
+      "GSM7779595",
+      "GSM7779596",
+      "GSM7779597"
+    ],
+    "supplementary_file": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE243nnn/GSE243124/suppl/GSE243124_RAW.tar"
+    ],
+    "relation": [
+      "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1016394"
+    ]
+  },
+  "sample_count": 4,
+  "samples": [
+    {
+      "accession": "GSM7779594",
+      "title": [
+        "Wildtype mouse lung, saline exposed, vehicle treated (n=2)"
+      ],
+      "geo_accession": [
+        "GSM7779594"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Epithelium",
+        "agent: Saline",
+        "genotype: Wildtype",
+        "treatment: Vehicle",
+        "number of_animals: 2"
+      ],
+      "treatment_protocol_ch1": [
+        "Mice were anesthetized with isoflurane and exposed to a single dose of intranasal bleomycin (3 units/kg). Mice were treated with KIRA8 dissolved in a vehicle consisting of 3% ethanol, 7% Tween-80, and 90% normal saline injected intraperitoneally at 50 mg/kg/day starting on the day of bleomycin exposure. Mice were euthanized by perfusion under anesthesia and removal of the thoracic block on day 10 after bleomycin exposure."
+      ],
+      "growth_protocol_ch1": [
+        "Mice were maintained under standard housing conditions"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were dissociated by dispase inflation as described (doi.org/10.1038/protex.2015.017). Single cell suspensions were sorted for live, CD45-, CD31-, Epcam+ epithelial cells.",
+        "Sorted cells counted and loaded onto separate lanes of a Chromium Next GEM Chip (10x Genomics). Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "genome build: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386185",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21772631"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779594/suppl/GSM7779594_Saline__filtered_feature_bc_matrix.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779595",
+      "title": [
+        "IRE1a epithelial kockout mouse lung, bleomycin exposed, vehicle treated (n=2)"
+      ],
+      "geo_accession": [
+        "GSM7779595"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Epithelium",
+        "agent: Bleomycin",
+        "genotype: Epithelial Knockout: Shh(Cre/+) Ern1(flox/flox)",
+        "treatment: Vehicle",
+        "number of_animals: 2"
+      ],
+      "treatment_protocol_ch1": [
+        "Mice were anesthetized with isoflurane and exposed to a single dose of intranasal bleomycin (3 units/kg). Mice were treated with KIRA8 dissolved in a vehicle consisting of 3% ethanol, 7% Tween-80, and 90% normal saline injected intraperitoneally at 50 mg/kg/day starting on the day of bleomycin exposure. Mice were euthanized by perfusion under anesthesia and removal of the thoracic block on day 10 after bleomycin exposure."
+      ],
+      "growth_protocol_ch1": [
+        "Mice were maintained under standard housing conditions"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were dissociated by dispase inflation as described (doi.org/10.1038/protex.2015.017). Single cell suspensions were sorted for live, CD45-, CD31-, Epcam+ epithelial cells.",
+        "Sorted cells counted and loaded onto separate lanes of a Chromium Next GEM Chip (10x Genomics). Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "genome build: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386184",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21772632"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779595/suppl/GSM7779595_BleoKO__filtered_feature_bc_matrix.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779596",
+      "title": [
+        "Wildtype mouse lung, bleomycin exposed, KIRA8 treated (n=3)"
+      ],
+      "geo_accession": [
+        "GSM7779596"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Epithelium",
+        "agent: Bleomycin",
+        "genotype: Wildtype: Ern1(flox/flox)",
+        "treatment: KIRA8",
+        "number of_animals: 3"
+      ],
+      "treatment_protocol_ch1": [
+        "Mice were anesthetized with isoflurane and exposed to a single dose of intranasal bleomycin (3 units/kg). Mice were treated with KIRA8 dissolved in a vehicle consisting of 3% ethanol, 7% Tween-80, and 90% normal saline injected intraperitoneally at 50 mg/kg/day starting on the day of bleomycin exposure. Mice were euthanized by perfusion under anesthesia and removal of the thoracic block on day 10 after bleomycin exposure."
+      ],
+      "growth_protocol_ch1": [
+        "Mice were maintained under standard housing conditions"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were dissociated by dispase inflation as described (doi.org/10.1038/protex.2015.017). Single cell suspensions were sorted for live, CD45-, CD31-, Epcam+ epithelial cells.",
+        "Sorted cells counted and loaded onto separate lanes of a Chromium Next GEM Chip (10x Genomics). Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "genome build: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386183",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21772633"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779596/suppl/GSM7779596_BleoKIRA8__filtered_feature_bc_matrix.zip"
+      ]
+    },
+    {
+      "accession": "GSM7779597",
+      "title": [
+        "Wildtype mouse lung, bleoomycin exposed, vehicle treated (n=3)"
+      ],
+      "geo_accession": [
+        "GSM7779597"
+      ],
+      "source_name_ch1": [
+        "Lung"
+      ],
+      "organism_ch1": [
+        "Mus musculus"
+      ],
+      "characteristics_ch1": [
+        "tissue: Lung",
+        "cell type: Epithelium",
+        "agent: Bleomycin",
+        "genotype: Wildtype: Ern1(flox/flox)",
+        "treatment: Vehicle",
+        "number of_animals: 3"
+      ],
+      "treatment_protocol_ch1": [
+        "Mice were anesthetized with isoflurane and exposed to a single dose of intranasal bleomycin (3 units/kg). Mice were treated with KIRA8 dissolved in a vehicle consisting of 3% ethanol, 7% Tween-80, and 90% normal saline injected intraperitoneally at 50 mg/kg/day starting on the day of bleomycin exposure. Mice were euthanized by perfusion under anesthesia and removal of the thoracic block on day 10 after bleomycin exposure."
+      ],
+      "growth_protocol_ch1": [
+        "Mice were maintained under standard housing conditions"
+      ],
+      "molecule_ch1": [
+        "total RNA"
+      ],
+      "extract_protocol_ch1": [
+        "Lungs were dissociated by dispase inflation as described (doi.org/10.1038/protex.2015.017). Single cell suspensions were sorted for live, CD45-, CD31-, Epcam+ epithelial cells.",
+        "Sorted cells counted and loaded onto separate lanes of a Chromium Next GEM Chip (10x Genomics). Chromium Single Cell 3’ v3.1 (10x Genomics) reagents were used for library preparation according to the manufacturer’s protocol. The libraries were sequenced on an Illumina NovaSeq 6000 S4 flow cell."
+      ],
+      "description": [
+        "10x Genomics"
+      ],
+      "data_processing": [
+        "Demultiplexing, barcode processing, gene counting and aggregation were made using the 10x Genomics Cloud Analysis with Cell Ranger software (https://www.10xgenomics.com/products/cloud-analysis)",
+        "genome build: mm10",
+        "Supplementary files format and content: filtered_feature_bc_matrix"
+      ],
+      "platform_id": [
+        "GPL24247"
+      ],
+      "library_selection": [
+        "cDNA"
+      ],
+      "library_source": [
+        "transcriptomic single cell"
+      ],
+      "library_strategy": [
+        "RNA-Seq"
+      ],
+      "relation": [
+        "BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37386182",
+        "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21772634"
+      ],
+      "supplementary_file_1": [
+        "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7779nnn/GSM7779597/suppl/GSM7779597_BleoFlox__raw_feature_bc_matrix.zip"
+      ]
+    }
+  ]
+}
