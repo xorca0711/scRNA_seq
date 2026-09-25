@@ -1,51 +1,24 @@
 #!/usr/bin/env python
-"""One figure per question in RESEARCH_QUESTIONS.md, drawn from the analysed objects.
+"""Render selected A1/A3/A4/A5 panels without editing authored documents.
 
-These are visual aids for register rows that already exist, not new evidence:
-nothing here is tested, no threshold is set, and every number that reaches a
-caption is formatted from a table this script writes beside the figure. The
-embeddings are computed for display with fixed seeds and the same recipe the
-trials used where one exists (script 06 for the capillary compartment); the
-multiome embeddings are RNA-only, per deposit and per well, with no batch
-correction, so that nothing is claimed about integration.
-
-Outputs, all under analysis/figures/rq/:
-  rq_a1_chromatin.png        GSE310539 wildtype nuclei: UMAP by well and by the
-                             transitional label; AT2 identity in RNA and at
-                             promoter chromatin on the same embedding; violins;
-                             detection at one depth budget; and, beside it,
-                             the per-nucleus promoter reading with the ATAC
-                             depth that dominates it (owner decision, 2026-09-22)
-  rq_a2_ligands.png          GSE131907: donor-medianed dotplot of EGFR ligands
-                             and receptor by compartment and tissue; the
-                             top-15 overlap of five ligand-receptor resources
-  rq_a3_persistence.png      GSE262927: myeloid embedding by phase with the
-                             three states of the question highlighted; the
-                             capillary embedding by phase coloured by the
-                             injury-induced score; per-animal iCAP fraction
-  rq_a4_axin2_il1r1.png      GSE310539: Axin2 and Il1r1 on the wildtype
-                             embedding; violins in AT2 nuclei per well;
-                             co-detection tiles
-  rq_a5_development.png      GSE247130 control wells (P9, seven weeks, SeV):
-                             per-well embeddings with the transitional label,
-                             Cldn4 and Krt8; violins across wells
-  rq_*.csv                   the numbers behind each panel
-  run_record.json            parameters, seeds, versions, counts
-  processed/                 cached embeddings (gitignored, regenerable)
-
-The caption blocks in RESEARCH_QUESTIONS.md are written by this script between
-<!-- rq-figure:A1 --> markers, so a re-run cannot leave a stale number there.
-
-Run in the x86-64 environment:
-  .venv-x64/Scripts/python.exe analysis/scripts/16_research_question_figures.py [--replot]
+Use --figures A3 --replot for a cache-only presentation run. Missing/invalid
+caches fail closed. --rebuild-embeddings explicitly prepares fresh display
+embeddings in the new run directory; neither mode deletes existing caches.
+Every invocation writes images, tables and panel facts to a fresh directory
+under analysis/figures/rq/renders/. Review before promoting individual images.
+The original run_record.json and curated gallery captions remain unchanged.
+A2 is owned by script 18; the retired implementation is preserved in the
+2026-09-25 RQ migration archive. No model or hypothesis test is performed here.
 """
 from __future__ import annotations
 
 import argparse
+import hashlib
 import importlib
 import json
 import sys
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 
 import h5py
@@ -72,16 +45,18 @@ from m1_closed_or_merely_silenced import AT1, AT2_IDENTITY, TRANSITIONAL  # noqa
 
 OUT = REPO / "analysis" / "figures" / "rq"
 CACHE = OUT / "processed"
-RQ = REPO / "RESEARCH_QUESTIONS.md"
+REBUILD = False
+ACTIVE_FIGURES = ("A1", "A3", "A4", "A5")
 MOUSE = SERIES_DIRS["GSE262927"]
-LUAD = REPO / "raw_data" / "GSE131907"
-C14 = REPO / "Research Article" / "gate2_05_cardoso_2026" / "trials" / "c14_does_the_ranking_depend_on_the_database"
 
 RAMP = LinearSegmentedColormap.from_list("ramp", vs.RAMP)
 DOT = dict(s=2.5, linewidths=0, rasterized=True)
 LABEL_GENES = ["Cldn4", "Krt8", "Sftpc", "Axin2", "Il1r1"]
 PHASES = [("baseline", [0]), ("active repair", [6, 11, 19, 25]),
           ("injury resolution", [42, 90]), ("long-term homeostasis", [366])]
+# Preserve historical table keys; display only observed sampling intervals.
+PHASE_DISPLAY = {"baseline": "baseline", "active repair": "6–25 dpi",
+                 "injury resolution": "42–90 dpi", "long-term homeostasis": "366 dpi"}
 
 RECORD: dict = {
     "script": "analysis/scripts/16_research_question_figures.py",
@@ -202,6 +177,8 @@ def ensure_promoter_score(a) -> None:
     """Recompute the promoter accessibility, in total and per gene, when a cached object lacks it."""
     if "atac_promoter_by_gene" in a.obsm and "atac_at2_promoter" in a.obs:
         return
+    if not REBUILD:
+        raise ValueError("Cache lacks promoter measurements; --replot never rewrites caches")
     from multiome_utils import stream_selected
     path, peaks = GSE310539["matrix"], GSE310539["peaks"]
     by_gene = promoter_rows_by_gene(path, peaks, AT2_IDENTITY)
@@ -284,22 +261,31 @@ def embed_rna(a, tag: str):
     return a
 
 
-def cached(tag: str, build):
+def sha256(path: Path) -> str:
+    with path.open("rb") as handle:
+        return hashlib.file_digest(handle, "sha256").hexdigest()
+
+
+def cached(tag: str, build, *, backed=None):
     import anndata as ad
-    ad.settings.allow_write_nullable_strings = True
     p = CACHE / f"{tag}.h5ad"
-    if p.exists():
-        try:
-            a = ad.read_h5ad(p)
-            if "X_umap" in a.obsm:
-                log(f"  {tag}: cached embedding")
-                return a
-        except Exception as exc:  # a write that failed half way leaves a file behind
-            log(f"  {tag}: cache unreadable ({exc.__class__.__name__}), rebuilding")
-        p.unlink()
-    a = build()
-    CACHE.mkdir(parents=True, exist_ok=True)
-    a.write_h5ad(p)
+    if REBUILD:
+        if p.exists():
+            raise FileExistsError(f"Refusing to overwrite display cache: {p}")
+        ad.settings.allow_write_nullable_strings = True
+        a = build()
+        CACHE.mkdir(parents=True, exist_ok=True)
+        a.write_h5ad(p)
+    else:
+        if not p.is_file():
+            raise FileNotFoundError(f"Missing cache {p}; no embedding will be rebuilt in --replot mode")
+        a = ad.read_h5ad(p, backed=backed)
+        if "X_umap" not in a.obsm:
+            if getattr(a, "isbacked", False):
+                a.file.close()
+            raise ValueError(f"Cache lacks X_umap: {p}; no automatic rebuild")
+        log(f"  {tag}: cached embedding")
+    RECORD.setdefault("input_sha256", {})[p.relative_to(REPO).as_posix()] = sha256(p)
     return a
 
 
@@ -654,7 +640,7 @@ def figure_a3(cap) -> dict:
             mm = m & (my["label"] == lab).to_numpy()
             ax.scatter(xy[mm, 0], xy[mm, 1], c=colour, **DOT)
             rows.append({"phase": phase, "label": lab, "cells": int(mm.sum()), "of_phase_pct": 100 * mm.sum() / max(m.sum(), 1)})
-        umap_axes(ax, f"{'abcd'[c]}  {phase}, {', '.join(str(d) for d in days)} dpi, n = {m.sum():,}")
+        umap_axes(ax, f"{'abcd'[c]}  {PHASE_DISPLAY[phase]} (n = {m.sum():,})")
     handles = [plt.Line2D([], [], marker="o", ls="", color=colour, label=f"{lab}, {desc}")
                for lab, (colour, desc) in states.items()]
     fig.axes[0].legend(handles=handles, loc="lower left", fontsize=8, handletextpad=0.3)
@@ -667,7 +653,7 @@ def figure_a3(cap) -> dict:
         ax.scatter(cxy[:, 0], cxy[:, 1], c=vs.DEEMPH, **DOT)
         order = np.flatnonzero(m)[np.argsort(score[m])]
         sm = ax.scatter(cxy[order, 0], cxy[order, 1], c=score[order], cmap=RAMP, vmin=0, vmax=vmax, **DOT)
-        umap_axes(ax, f"{'efgh'[c]}  capillary, {phase} (n = {m.sum():,})")
+        umap_axes(ax, f"{'efgh'[c]}  capillary, {PHASE_DISPLAY[phase]} (n = {m.sum():,})")
     cb = fig.colorbar(sm, ax=ax, fraction=0.04, pad=0.02)
     cb.outline.set_visible(False); cb.ax.tick_params(length=0, labelsize=8, colors=vs.MUTED)
     cb.set_label("iCAP score (Sparcl1, Ntrk2)", color=vs.INK_2, fontsize=8)
@@ -684,7 +670,7 @@ def figure_a3(cap) -> dict:
     ax.set_ylabel("iCAP, % of capillary cells")
     ax.set_title("i  Injury-induced capillary state per animal (points) and the median per day (line)")
     vs.recessive(ax, grid_axis="y")
-    fig.suptitle("A3  States still present a year after repair, GSE262927 annotated cohort",
+    fig.suptitle("A3  Myeloid and capillary states across sampling times after infection, GSE262927",
                  x=0.01, ha="left", fontsize=12.5, fontweight="semibold")
     fig.tight_layout()
     save(fig, "rq_a3_persistence.png")
@@ -699,254 +685,60 @@ def figure_a3(cap) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# A2: GSE131907 and the C14 overlap
-# ---------------------------------------------------------------------------
-def figure_a2() -> dict:
-    z = np.load(LUAD / "e1_extracted_rows.npz", allow_pickle=True)
-    ann = pd.read_csv(LUAD / "GSE131907_Lung_Cancer_cell_annotation.txt.gz", sep="\t")
-    ann = ann.set_index("Index").loc[z["cells"]]
-    genes = ["AREG", "HBEGF", "EREG", "TGFA", "EGF", "BTC", "EPGN", "EGFR"]
-    df = pd.DataFrame({g: z[g] for g in genes}, index=z["cells"])
-    df["donor"] = ann["Sample"].to_numpy()
-    df["tissue"] = ann["Sample_Origin"].to_numpy()
-    df["celltype"] = ann["Cell_type"].to_numpy()
-    df = df[df["tissue"].isin(["nLung", "tLung"])]
-    types = ["Epithelial cells", "Fibroblasts", "Endothelial cells", "Myeloid cells",
-             "T lymphocytes", "B lymphocytes", "NK cells", "MAST cells"]
-    df = df[df["celltype"].isin(types)]
-    per = df.groupby(["donor", "tissue", "celltype"])
-    n = per.size().rename("cells")
-    frac = per[genes].apply(lambda x: (x > 0).mean())
-    mean = per[genes].mean()
-    ok = n >= 20
-    frac = frac[ok]; mean = mean[ok]
-    med_frac = frac.groupby(["tissue", "celltype"]).median()
-    med_mean = mean.groupby(["tissue", "celltype"]).median()
-    donors = frac.groupby(["tissue", "celltype"]).size()
-    fig = plt.figure(figsize=(14, 6.4))
-    gs = fig.add_gridspec(1, 3, width_ratios=[1, 1, 0.95])
-    vmax = float(med_mean.to_numpy().max())
-    for c, tissue in enumerate(("nLung", "tLung")):
-        ax = fig.add_subplot(gs[0, c])
-        for r, ct in enumerate(types):
-            if (tissue, ct) not in med_frac.index:
-                continue
-            for k, g in enumerate(genes):
-                ax.scatter(k, r, s=8 + 420 * med_frac.loc[(tissue, ct), g], c=[med_mean.loc[(tissue, ct), g]],
-                           cmap=RAMP, vmin=0, vmax=vmax, edgecolor=vs.AXIS, linewidth=0.4)
-            ax.text(len(genes) - 0.4, r, f"{donors.loc[(tissue, ct)]} donors", fontsize=7.5, color=vs.MUTED, va="center")
-        ax.set_xticks(range(len(genes))); ax.set_xticklabels(genes, rotation=45, ha="right", fontsize=8.5)
-        ax.set_yticks(range(len(types))); ax.set_yticklabels(types if c == 0 else [""] * len(types), fontsize=8.5)
-        ax.set_xlim(-0.6, len(genes) + 1.2); ax.set_ylim(len(types) - 0.4, -0.6)
-        ax.axvline(len(genes) - 1.5, color=vs.GRID, lw=1)
-        ax.set_title(f"{'ab'[c]}  {'normal lung' if tissue == 'nLung' else 'tumour lung'} ({tissue})")
-        vs.recessive(ax, grid_axis="both")
-        ax.grid(False)
-    ax = fig.axes[1]
-    for s, lab in ((0.1, "10%"), (0.5, "50%"), (1.0, "100%")):
-        ax.scatter([], [], s=8 + 420 * s, c=vs.DEEMPH, edgecolor=vs.AXIS, linewidth=0.4, label=lab)
-    ax.legend(title="fraction expressing\n(donor median)", loc="upper left", bbox_to_anchor=(1.0, 1.0),
-              fontsize=8, title_fontsize=8, labelspacing=1.4, borderpad=0.8)
-    sm = plt.cm.ScalarMappable(cmap=RAMP, norm=plt.Normalize(0, vmax))
-    cax = fig.axes[0].inset_axes([0.05, -0.3, 0.9, 0.03])
-    cb = fig.colorbar(sm, cax=cax, orientation="horizontal")
-    cb.outline.set_visible(False); cb.ax.tick_params(length=0, labelsize=8, colors=vs.MUTED)
-    cb.set_label("mean log2 TPM (donor median)", color=vs.INK_2, fontsize=8)
-    ov = pd.read_csv(C14 / "c14_top15_overlap.csv")
-    res = sorted(set(ov["resource_a"]) | set(ov["resource_b"]))
-    J = pd.DataFrame(np.eye(len(res)), index=res, columns=res)
-    for _, r in ov.iterrows():
-        J.loc[r["resource_a"], r["resource_b"]] = r["jaccard"]
-        J.loc[r["resource_b"], r["resource_a"]] = r["jaccard"]
-    ax = fig.add_subplot(gs[0, 2])
-    ax.imshow(J.to_numpy(), cmap=RAMP, vmin=0, vmax=1)
-    for i in range(len(res)):
-        for j in range(len(res)):
-            if i != j:
-                ax.text(j, i, f"{J.iloc[i, j]:.2f}", ha="center", va="center", fontsize=8.5,
-                        color=vs.INK if J.iloc[i, j] < 0.6 else vs.SURFACE)
-    ax.set_xticks(range(len(res))); ax.set_xticklabels(res, rotation=45, ha="right", fontsize=8.5)
-    ax.set_yticks(range(len(res))); ax.set_yticklabels(res, fontsize=8.5)
-    ax.set_title("c  Top-15 pair overlap between resources, Jaccard (trial C14, IPF)")
-    for s in ax.spines.values():
-        s.set_visible(False)
-    ax.tick_params(length=0)
-    fig.suptitle("A2  Who makes the EGFR ligands, and how much of a ranking is the database",
-                 x=0.01, ha="left", fontsize=12.5, fontweight="semibold")
-    fig.tight_layout()
-    save(fig, "rq_a2_ligands.png")
-    table = med_frac.reset_index().melt(id_vars=["tissue", "celltype"], var_name="gene", value_name="fraction_expressing_donor_median")
-    table = table.merge(med_mean.reset_index().melt(id_vars=["tissue", "celltype"], var_name="gene", value_name="mean_log2tpm_donor_median"))
-    table = table.merge(donors.rename("donors").reset_index())
-    table.to_csv(OUT / "rq_a2_dotplot.csv", index=False)
-    J.to_csv(OUT / "rq_a2_jaccard.csv")
-    epi = table[(table["celltype"] == "Epithelial cells") & (table["gene"] == "AREG")].set_index("tissue")
-    note("A2", cells=int(len(df)), donors_by_tissue={t: int(df[df["tissue"] == t]["donor"].nunique()) for t in ("nLung", "tLung")},
-         min_cells_per_donor_group=20, areg_epithelial=epi[["fraction_expressing_donor_median", "donors"]].to_dict("index"),
-         jaccard_min=float(ov["jaccard"].min()), jaccard_max=float(ov["jaccard"].max()))
-    return {"table": table, "epi": epi, "J": J, "ov": ov,
-            "donors": {t: int(df[df["tissue"] == t]["donor"].nunique()) for t in ("nLung", "tLung")}}
-
-
-# ---------------------------------------------------------------------------
-# Captions into RESEARCH_QUESTIONS.md
-# ---------------------------------------------------------------------------
-def caption_blocks(r: dict) -> dict[str, str]:
-    a1, a2, a3, a4, a5 = r["A1"], r["A2"], r["A3"], r["A4"], r["A5"]
-    g = a1["table"].set_index("group")
-    t4 = a4["table"]
-    ax_wt = t4[(t4["gene"] == "Axin2")]["pct_detected"]
-    il_wt = t4[(t4["gene"] == "Il1r1")]["pct_detected"]
-    both = a4["tiles"]["both_pct"]
-    t5 = a5["table"].set_index("well")
-    epi_n = a2["epi"].loc["nLung", "fraction_expressing_donor_median"]
-    epi_t = a2["epi"].loc["tLung", "fraction_expressing_donor_median"]
-    ov = a2["ov"]
-    trio = {"connectomedb2020", "consensus", "italk"}
-    in_trio = ov[ov["resource_a"].isin(trio) & ov["resource_b"].isin(trio)]
-    cpdb = ov[((ov["resource_a"] == "cellphonedb") & ov["resource_b"].isin(trio))
-              | ((ov["resource_b"] == "cellphonedb") & ov["resource_a"].isin(trio))]
-    ccdb = ov[(ov["resource_a"] == "cellchatdb") | (ov["resource_b"] == "cellchatdb")]
-    med = a3["med"]
-    return {
-        "A1": (
-            "![A1: the AT2 identity programme in RNA and in chromatin](analysis/figures/rq/rq_a1_chromatin.png)\n\n"
-            f"*Figure A1. Wildtype nuclei of GSE310539 (PBS n = {a1['n']['wildtype_PBS']:,}, SeV n = {a1['n']['wildtype_SeV']:,}), "
-            "RNA-only embedding for display. (a) by well; (b) nuclei with both Cldn4 and Krt8 detected at the depth available "
-            f"({a1['frac']['wildtype_PBS']:.1f}% of PBS, {a1['frac']['wildtype_SeV']:.1f}% of SeV nuclei); (c) the AT2 identity "
-            f"score in RNA; (d) accessibility of the {RECORD['panels']['A1']['promoter_peaks']} promoter peaks the vendor annotated to "
-            "the same nine genes, per 10,000 ATAC counts, a per-nucleus view that depth dominates; (e) the RNA score by group, "
-            f"medians as bars ({g.loc['PBS reference', 'median_rna_score']:.2f} in PBS reference, "
-            f"{g.loc['SeV transitional', 'median_rna_score']:.2f} in SeV transitional); (f) the form the registered statistic takes: "
-            f"for each of the {a1['n_genes']} genes with an annotated promoter peak, the fraction of nuclei in which the transcript, "
-            f"and separately the promoter peak, is detected once every nucleus is held to one depth budget (RNA {a1['budget']['rna']:,} "
-            f"UMI, chromatin {a1['budget']['atac']:,} fragments; the 20th percentile of the transitional group, trial M1e's rule). "
-            f"Averaged over the genes, RNA detection is {a1['mean_det'].loc['PBS reference', 'rna_detection_pct']:.0f}% in PBS "
-            f"reference and {a1['mean_det'].loc['SeV transitional', 'rna_detection_pct']:.0f}% in SeV transitional nuclei; promoter "
-            f"detection {a1['mean_det'].loc['PBS reference', 'atac_detection_pct']:.0f}% and "
-            f"{a1['mean_det'].loc['SeV transitional', 'atac_detection_pct']:.0f}%. (g to i) the per-nucleus reading the heatmap replaced, "
-            "kept beside it because it shows how depth inverts the answer (row C127): by group, the promoter score is highest in "
-            f"transitional nuclei (median {g.loc['SeV transitional', 'median_atac_promoter']:.2f}, against "
-            f"{g.loc['PBS reference', 'median_atac_promoter']:.2f} in PBS and {g.loc['SeV reference', 'median_atac_promoter']:.2f} "
-            "in SeV reference), because those nuclei carry about twice the fragments (median "
-            f"{g.loc['SeV transitional', 'median_atac_counts']:,.0f} against {g.loc['PBS reference', 'median_atac_counts']:,.0f} and "
-            f"{g.loc['SeV reference', 'median_atac_counts']:,.0f}) and so fewer of them have no promoter fragment at all "
-            f"({g.loc['SeV transitional', 'pct_no_promoter_fragment']:.1f}% against "
-            f"{g.loc['PBS reference', 'pct_no_promoter_fragment']:.1f}% and {g.loc['SeV reference', 'pct_no_promoter_fragment']:.1f}%); "
-            "among nuclei with any signal the transitional group is the lowest "
-            f"({g.loc['SeV transitional', 'median_atac_promoter_nonzero']:.2f} against "
-            f"{g.loc['PBS reference', 'median_atac_promoter_nonzero']:.2f} and "
-            f"{g.loc['SeV reference', 'median_atac_promoter_nonzero']:.2f}). Read on its own, panel g would support the "
-            "retracted \"silenced but not closed\" reading (C120). A visual aid for rows C118 and C121: the registered "
-            "test adds the matched-gene-set null and the per-well budgets of trials M1e and M2, and these panels do not replace it. "
-            "Drawn by `analysis/scripts/16_research_question_figures.py`; numbers in `analysis/figures/rq/rq_a1_groups.csv` and "
-            "`rq_a1_detection_at_budget.csv`.*\n"
-        ),
-        "A2": (
-            "![A2: EGFR ligands by compartment and the resource overlap](analysis/figures/rq/rq_a2_ligands.png)\n\n"
-            f"*Figure A2. (a, b) GSE131907, {a2['donors']['nLung']} normal-lung and {a2['donors']['tLung']} tumour-lung donors: for each "
-            "donor, tissue and compartment with at least 20 cells, the fraction of cells expressing each EGFR ligand and the receptor "
-            "and the mean log2 TPM; dots show the median across donors. AREG in epithelial cells: median fraction "
-            f"{100 * epi_n:.0f}% in normal and {100 * epi_t:.0f}% in tumour lung. (c) Jaccard overlap of the top fifteen "
-            f"ligand-receptor pairs between five resources on the IPF deposit (trial C14): connectomedb2020, consensus and italk "
-            f"agree at {in_trio['jaccard'].min():.2f} to {in_trio['jaccard'].max():.2f}, cellphonedb shares at most "
-            f"{cpdb['jaccard'].max():.2f} with any of them, and CellChatDB at most {ccdb['jaccard'].max():.2f} with anything. "
-            "A visual aid for rows C40, C48 and C113. Numbers in `rq_a2_dotplot.csv` and `rq_a2_jaccard.csv`.*\n"
-        ),
-        "A3": (
-            "![A3: myeloid and capillary states by phase](analysis/figures/rq/rq_a3_persistence.png)\n\n"
-            f"*Figure A3. GSE262927 annotated cohort. (a to d) the myeloid embedding of trial 11 ({a3['n_my']:,} cells, tracked "
-            "coordinates) by phase, with alveolar macrophages, interstitial macrophages and inflammatory monocytes coloured and every "
-            f"other label in grey; (e to h) the capillary endothelium ({a3['n_cap']:,} cells, script 06 recipe) by phase, coloured by "
-            "the injury-induced capillary score; (i) the iCAP fraction per animal with the median per day: "
-            f"{med[0.0]:.1f}% at baseline, {med[25.0]:.1f}% at 25 dpi, {med[366.0]:.1f}% at 366 dpi. A visual aid for rows C3, C12, "
-            "C13 and C15; the per-animal numbers are the registered ones. Numbers in `rq_a3_myeloid_by_phase.csv` and "
-            "`rq_a3_icap_by_day.csv`.*\n"
-        ),
-        "A4": (
-            "![A4: Axin2 and Il1r1 in AT2 nuclei](analysis/figures/rq/rq_a4_axin2_il1r1.png)\n\n"
-            "*Figure A4. GSE310539. (a, b) Axin2 and Il1r1 on the wildtype embedding of Figure A1; (c) both transcripts in AT2 "
-            "nuclei (Sftpc detected, not transitional) of all four wells, with the fraction detected above each violin "
-            f"(Axin2 {ax_wt.min():.1f} to {ax_wt.max():.1f}%, Il1r1 {il_wt.min():.1f} to {il_wt.max():.1f}%); (d) co-detection "
-            f"tiles per well: both detected in {both.min():.1f} to {both.max():.1f}% of AT2 nuclei. A visual aid for rows C134 to "
-            "C137 and C142: the question is whether the two mark distinct subsets, and at this detection depth the count matrices "
-            "cannot say. Numbers in `rq_a4_detection.csv` and `rq_a4_codetection.csv`.*\n"
-        ),
-        "A5": (
-            "![A5: the transitional marker set in development and after injury](analysis/figures/rq/rq_a5_development.png)\n\n"
-            f"*Figure A5. GSE247130 control wells, one RNA-only embedding each: P9 (n = {int(t5.loc['P9_control', 'n_nuclei']):,}), "
-            f"seven weeks (n = {int(t5.loc['7wk_control', 'n_nuclei']):,}) and SeV infected (n = {int(t5.loc['SeV_control', 'n_nuclei']):,}). "
-            "(a to c) nuclei with both Cldn4 and Krt8 detected at the depth available "
-            f"({t5.loc['P9_control', 'transitional_pct']:.2f}%, {t5.loc['7wk_control', 'transitional_pct']:.2f}%, "
-            f"{t5.loc['SeV_control', 'transitional_pct']:.2f}%), then Cldn4 and Krt8 on the same embeddings; (d, e) the two "
-            "transcripts across wells. A visual aid for row C119; the registered comparison is trial M1c at one depth budget, where "
-            "the P9 wells labelled more than any injured adult well. Numbers in `rq_a5_wells.csv`.*\n"
-        ),
-    }
-
-
-NEXT_HEADING = {"A1": "### A2.", "A2": "### A3.", "A3": "### A4.", "A4": "### A5.", "A5": "## Part B."}
-
-
-def write_captions(blocks: dict[str, str]) -> None:
-    text = RQ.read_text(encoding="utf-8")
-    for key, body in blocks.items():
-        start, end = f"<!-- rq-figure:{key} -->", f"<!-- /rq-figure:{key} -->"
-        block = f"{start}\n{body}{end}\n"
-        if start in text:
-            i, j = text.index(start), text.index(end) + len(end) + 1
-            text = text[:i] + block + text[j:]
-        else:
-            anchor = NEXT_HEADING[key]
-            k = text.index("\n" + anchor)
-            # place before the horizontal rule that precedes Part B, if any
-            if key == "A5" and text[:k].rstrip().endswith("---"):
-                k = text[:k].rstrip().rfind("---")
-            text = text[:k].rstrip("\n") + "\n\n" + block + "\n" + text[k:].lstrip("\n")
-    RQ.write_text(text, encoding="utf-8")
-    log("  captions written into RESEARCH_QUESTIONS.md")
-
-
-# ---------------------------------------------------------------------------
 def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--replot", action="store_true", help="use cached embeddings if present")
+    global OUT, CACHE, REBUILD
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--figures", nargs="+", choices=ACTIVE_FIGURES, required=True)
+    mode = ap.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--replot", action="store_true", help="require existing display caches; never refit embeddings")
+    mode.add_argument("--rebuild-embeddings", action="store_true", help="explicitly prepare fresh display embeddings")
     args = ap.parse_args()
-    if not args.replot and CACHE.exists():
-        for p in CACHE.glob("*.h5ad"):
-            p.unlink()
+    selected = list(dict.fromkeys(args.figures))
+    REBUILD = args.rebuild_embeddings
+    run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+    OUT = REPO / "analysis" / "figures" / "rq" / "renders" / run_id
+    OUT.mkdir(parents=True, exist_ok=False)
+    if REBUILD:
+        CACHE = OUT / "processed"
+    RECORD["selected_figures"] = selected
+    RECORD["render_mode"] = "fresh_embeddings" if REBUILD else "existing_embeddings"
+    RECORD["script_sha256"] = sha256(Path(__file__))
+    RECORD["palette_sha256"] = sha256(REPO / "analysis/config/palette.json")
+    RECORD["caption_owner"] = "analysis/figures/rq/README.md (curated); panel facts in this record"
     vs.apply(plt)
-    OUT.mkdir(parents=True, exist_ok=True)
-    results = {}
-
-    log("A1/A4: GSE310539")
-    wt = cached("gse310539_wildtype", build_gse310539)
-    ensure_promoter_score(wt)
-    results["A1"] = figure_a1(wt)
-    counts = all_well_counts_gse310539()
-    results["A4"] = figure_a4(wt, counts)
-    del wt
-
-    log("A5: GSE247130 control wells")
-    objs = {n: cached(n, lambda n=n: build_gse247130(n)) for n in ("P9_control", "7wk_control", "SeV_control")}
-    results["A5"] = figure_a5(objs)
-    del objs
-
-    log("A3: GSE262927")
-    cap = cached("capillary", build_capillary)
-    results["A3"] = figure_a3(cap)
-    del cap
-
-    log("A2: GSE131907 and C14")
-    results["A2"] = figure_a2()
-
-    write_captions(caption_blocks(results))
-    import anndata, scanpy
+    if {"A1", "A4"}.intersection(selected):
+        wt = cached("gse310539_wildtype", build_gse310539)
+        if "A1" in selected:
+            ensure_promoter_score(wt)
+            cache_path = CACHE / "gse310539_wildtype.h5ad"
+            RECORD["input_sha256"][cache_path.relative_to(REPO).as_posix()] = sha256(cache_path)
+            figure_a1(wt)
+        if "A4" in selected:
+            figure_a4(wt, all_well_counts_gse310539())
+        del wt
+    if "A5" in selected:
+        objs = {n: cached(n, lambda n=n: build_gse247130(n))
+                for n in ("P9_control", "7wk_control", "SeV_control")}
+        figure_a5(objs)
+        del objs
+    if "A3" in selected:
+        for name in ("myeloid_focus/tables/myeloid_cell_metadata.csv",
+                     "regeneration_focus/tables/icap_abundance_per_sample.csv"):
+            p = MOUSE / name
+            RECORD.setdefault("input_sha256", {})[p.relative_to(REPO).as_posix()] = sha256(p)
+        cap = cached("capillary", build_capillary, backed="r")
+        try:
+            figure_a3(cap)
+        finally:
+            if getattr(cap, "isbacked", False):
+                cap.file.close()
+        del cap
     from importlib.metadata import version
     RECORD["versions"] = {p: version(p) for p in ("scanpy", "anndata", "numpy", "pandas", "matplotlib", "umap-learn")}
     RECORD["finished_utc"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-    (OUT / "run_record.json").write_text(json.dumps(RECORD, indent=2), encoding="utf-8")
-    log("done")
+    RECORD["output_sha256"] = {p.name: sha256(p) for p in sorted(OUT.iterdir()) if p.is_file()}
+    (OUT / "run_record.json").write_text(json.dumps(RECORD, indent=2) + "\n", encoding="utf-8")
+    log(f"done: {OUT.relative_to(REPO).as_posix()}")
     return 0
 
 

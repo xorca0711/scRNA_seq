@@ -5,18 +5,32 @@ to know to continue. Update this before stopping.
 
 ## Current status, 25 September 2026
 
-**Current task: RQ reframing, before further analysis.** The owner merged PR #67
-and requested a substantial review using their `RQ_FRAMING_PROPOSAL.md`.
-The [restructuring plan](docs/RQ_REFRAMING_PLAN.md) now explicitly foregrounds
-the project's own biological observations and hypotheses. Following the owner's
-clarification, four worked cards are examples of possible priorities, not a
-survival limit. A broader hypothesis inventory precedes final grouping, with a
-complete A-ID crosswalk and separate measurement contracts. The plan also
-identifies propositions that exceed the existing evidence and confirms script
-16's caption-ownership drift. This is a review draft on `codex/rq-framing-plan`;
-the canonical RQ register, claim statuses and numerical outputs are unchanged.
-No further analysis was launched. Resume after the framing decision, with the
-A10 outcome-data join and compatible A1 direct-mark inputs as proposed priorities.
+**Current task: actual RQ rewrite implemented.** After the framing plan in PR
+#68, the owner explicitly requested implementation. The canonical
+[register](RESEARCH_QUESTIONS.md) now foregrounds biological hypotheses,
+motivating observations, rivals, discriminating tests, retirement/inconclusive
+criteria and execution readiness. All A1–A14 identifiers remain; there is no
+four-question cap. A12-S1 remains an enabling source-identity question, and A14
+has separate duration and fibroblast-reception decisions.
+
+[Measurement contracts](docs/RQ_MEASUREMENT_CONTRACTS.md) and the
+[shared figure gallery](analysis/figures/rq/README.md) retain the technical checks,
+captions and existing evidence. Script 16 no longer writes the root register or
+generates the superseded A2. Explicit figure selection writes fresh render runs;
+cache-only mode fails rather than rebuilding. A3 alone was redrawn from existing
+coordinates with sampling-time labels. The
+[migration record](docs/migrations/2026-09-25-rq-reframing/README.md) preserves the
+original register, generator and image, and records evidence checks.
+
+No scientific model or embedding was refit. Numerical results, claim grades and
+thresholds retain their prior status. Next scientific tasks are the bounded A10
+outcome/preparation join and a compatible A1 direct-mark comparison, with A13
+triad coverage as a separate gate. They have not run as part of this rewrite.
+Implementation branch: `codex/rewrite-research-questions`.
+Validation: 2,249 repository checks, 18 claim bindings, Nb1 provenance checks
+and 20 unit tests (one scientific integration module skipped in the lightweight
+environment). All 1,353 protected evidence files remain byte-identical; the two
+A3 plotted tables also match exactly. Legacy question anchors remain valid.
 
 Folder migration: `Thesis/` is now `Research Article/`; question-specific work
 starts under [RQ_Specified](RQ_Specified/README.md). The structure PR #66 and the

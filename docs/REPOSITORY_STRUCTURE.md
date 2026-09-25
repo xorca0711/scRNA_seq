@@ -8,7 +8,8 @@ protocols, original trial names and immutable run records remain historical evid
 |---|---|---|
 | Repository-wide scientific questions | [RESEARCH_QUESTIONS.md](../RESEARCH_QUESTIONS.md) | One current register, A1–A14; link to source studies rather than maintaining a second register |
 | Question-specific plans and analyses | `RQ_Specified/A<id>_<topic>/` | Prospective plan, source metadata, configuration, scripts, tables, reports and gallery; reference the root question register |
-| Shared question figures | `analysis/figures/rq/` | PNG/SVG assets; grouped supporting tables and provenance may occupy a named subdirectory |
+| Shared question figures | [analysis/figures/rq/README.md](../analysis/figures/rq/README.md) | Curated gallery/captions; assets, tables and provenance alongside; fresh script-16 runs under `renders/` |
+| Cross-question measurement checks | [RQ_MEASUREMENT_CONTRACTS.md](RQ_MEASUREMENT_CONTRACTS.md) | Reusable checks and legacy-ID crosswalk; biological decisions stay in the root register |
 | Shared plotting and pipeline entrypoints | `analysis/scripts/` | Numbered entrypoints; reusable utilities in `analysis/lib/` |
 | Palette, reusable settings and contracts | `analysis/config/` | Shared configuration, independent of a paper's local trial ID |
 | Paper notes, contracts, inference and galleries | `Research Article/<paper>/` | Preserve the paper-specific source evidence, scripts, tables and figure gallery |

@@ -1,0 +1,67 @@
+{
+  "script": "analysis/scripts/16_research_question_figures.py",
+  "purpose": "visual aids for RESEARCH_QUESTIONS.md; not evidence; nothing tested",
+  "seed": 0,
+  "embedding_recipe": {
+    "multiome": "RNA only; genes in >= 3 nuclei; normalize_total 1e4; log1p; 2000 HVGs (seurat flavour); scale, clip 10; PCA 30; neighbours 15; UMAP; per deposit and per well, no batch correction",
+    "capillary": "script 06 recipe (load_subset clusters 0,1,3,21 minus 4 within the annotated cohort; embed n_hvg 2000, resolution 0.4; iCAP score from Sparcl1, Ntrk2)",
+    "myeloid": "tracked coordinates from myeloid_focus/tables/myeloid_cell_metadata.csv"
+  },
+  "labels": {
+    "transitional_at_depth_available": "raw Cldn4 >= 1 and raw Krt8 >= 1 (the R4c form of trial M1c without downsampling); display only",
+    "at2_nucleus": "raw Sftpc >= 1 and not transitional (the A1 rule)"
+  },
+  "panels": {
+    "A3": {
+      "myeloid_cells": 9997,
+      "capillary_cells": 43359,
+      "icap_median_by_day": {
+        "0": 1.997,
+        "6": 0.522,
+        "11": 12.504,
+        "19": 29.1535,
+        "25": 37.540499999999994,
+        "42": 26.2825,
+        "90": 33.0335,
+        "366": 21.654
+      },
+      "animals_by_day": {
+        "0": 2,
+        "6": 2,
+        "11": 2,
+        "19": 2,
+        "25": 2,
+        "42": 8,
+        "90": 4,
+        "366": 3
+      }
+    }
+  },
+  "started_utc": "2026-09-25T06:41:55Z",
+  "selected_figures": [
+    "A3"
+  ],
+  "render_mode": "existing_embeddings",
+  "script_sha256": "6c4bbd80d6db530e7fa1867e393e5bbb3fcd546da743292bfa615a393b2ef53a",
+  "palette_sha256": "41c8f85365b1a8343b1f223d22fe69a1285f630fd739b9585e15d48a9b52dd4a",
+  "caption_owner": "analysis/figures/rq/README.md (curated); panel facts in this record",
+  "input_sha256": {
+    "Research Article/gate1_01_niethamer_2025/GSE262927/myeloid_focus/tables/myeloid_cell_metadata.csv": "1e3710318c900847c10ca35804afb42007df66d3c4b29e6d9a3b8e1f2950da23",
+    "Research Article/gate1_01_niethamer_2025/GSE262927/regeneration_focus/tables/icap_abundance_per_sample.csv": "0b14f9b35739096c6bf2f31fdf704330f5cbbf0c26aceeb699491331c9e915b8",
+    "analysis/figures/rq/processed/capillary.h5ad": "0abcfcc9d33b26b20368c5495edf09973b2ae1e1e8122d4e6bb768af999c40c7"
+  },
+  "versions": {
+    "scanpy": "1.12.3",
+    "anndata": "0.13.2",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "matplotlib": "3.11.1",
+    "umap-learn": "0.5.12"
+  },
+  "finished_utc": "2026-09-25T06:42:14Z",
+  "output_sha256": {
+    "rq_a3_icap_by_day.csv": "23976e8fa1cdaff38aac931788eb75e6f1de878eaf295aef513e4ae58a4804ad",
+    "rq_a3_myeloid_by_phase.csv": "29171513d8ad40187430d41290e0be81f28ac225989c535be50ef9592ce189ac",
+    "rq_a3_persistence.png": "a7a6f1bcd2eb27b73c8a4226fb7cd404be04519bf71d22c24fcfc46079efd0f3"
+  }
+}
