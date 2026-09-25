@@ -9,8 +9,11 @@ open the parts that require a sourcing job the owner has not yet authorized.
 - The three module identifiers and which question owns each test.
 - The label genes excluded from every module, and why.
 - The Hallmark control axes, which are scored separately and never merged in.
-- The ortholog coverage gate at 0.7, reported per module per species arm, before
-  any score is computed.
+- Two eligibility gates, reported per module per species arm per target dataset
+  before any score is computed: an assayed source fraction of at least 0.7, where
+  genes are lost both at ortholog mapping and at assay presence, and a floor of
+  three complete biological units per paired contrast.
+- The frozen strict one-to-one ortholog table to reuse, rather than a new mapping.
 - The species rule: freeze once from one source definition, then map per arm.
 - The unit rules, including the prohibition on transferring units across arms.
 - Separate multiplicity families per owning question.

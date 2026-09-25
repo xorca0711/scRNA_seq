@@ -1,10 +1,10 @@
 # Shared epithelial component contract (A5 and A11)
 
-**Status: draft, nothing executed.** Read the
-[prospective plan](PLAN.md) and the
-[machine-readable specification](config/shared_component.json). No gene list is
-frozen, no score has been computed, no figure exists and no claim grade changes.
-This folder contains a specification awaiting the owner's retain or reject.
+**Status: stage 1 complete, stage 2 rule pre-registered.** The owner authorized
+execution. Read the [prospective plan](PLAN.md), the
+[machine-readable specification](config/shared_component.json) and the
+[stage 1 source audit](reports/STAGE1_SOURCE_AUDIT.md). No expression score has
+been computed and no claim grade changes.
 
 ## What this is
 
@@ -25,27 +25,29 @@ lesion-specific.
 - **Not a result.** Passing this contract licenses two later tests. It
   establishes no mechanism, cell identity, ancestry or fate.
 
-## Current gate
+## Stage 1 outcome
 
-The development-specific module is **blocked on a missing input**. The existing
+The missing developmental input is now sourced. The existing
 [specificity module](../../Research%20Article/epithelial_state_specificity/README.md)
-records that an independently sourced developmental maturation signature is not
-available in its current pass. Sourcing one is stage 1, and it must come from a
-study that did not define the injury or lesion lists. Otherwise sharing is built
-in by construction and the A5 test is circular.
+recorded that no independent developmental signature was available locally. Seven
+external candidates were examined and one selected: the author-defined signature
+of a mixed type 1 and type 2 population in normal mouse lung at postnatal day 1,
+from Guo et al. 2019. The audit records why the other six were not used, and that
+the selection is partly by accessibility.
 
 ## Layout
 
 | Path | Contents |
 |---|---|
 | [PLAN.md](PLAN.md) | Prospective plan, stages, species and unit rules, prohibited readings |
-| [config/shared_component.json](config/shared_component.json) | Reviewable specification: modules, coverage gate, unit rules |
+| [config/shared_component.json](config/shared_component.json) | Reviewable specification: sources, exclusions, partition rule, gates |
 | `config/README.md` | What the specification fixes and what stays open |
+| [reports/STAGE1_SOURCE_AUDIT.md](reports/STAGE1_SOURCE_AUDIT.md) | Every candidate examined, the doublet check and the limitations |
+| `sources/README.md` | Identity of the untracked cached source spreadsheet |
 
-Scripts, tables, reports and a gallery are absent because nothing has run. They
-follow the question-specific layout in the
-[structure contract](../../docs/REPOSITORY_STRUCTURE.md) if the owner retains
-this draft.
+Scripts and tables arrive with stage 2 and stage 3 and follow the
+question-specific layout in the
+[structure contract](../../docs/REPOSITORY_STRUCTURE.md).
 
 ## Evidence this draft rests on
 
@@ -53,9 +55,11 @@ Every number below is read from existing tracked evidence, not recomputed here.
 
 | Fact | Value | Source |
 |---|---|---|
-| Ortholog coverage gate | 0.7 | Completed human specificity trial |
-| Lists already failing that gate | 0.641 and 0.667 | Same trial |
+| Assayed source fraction gate | 0.7 | Completed human specificity trial |
+| Complete-unit floor per paired contrast | 3 | Same trial |
+| Lists already failing the fraction gate | 0.641 and 0.667 | Same trial |
 | Lists already passing it | 0.780 and 0.791 | Same trial |
+| ADI holdout ortholog fraction, which a mapping-only gate would pass | 0.859 | Same trial |
 | A11 paired patients, lesion contrast | 23 | Same trial |
 | A5 animals passing both group floors | 1 of 25 | Specificity module |
 | Local human developmental lung deposits | none found | Scan of local GEO family records |

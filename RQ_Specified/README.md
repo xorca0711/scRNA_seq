@@ -7,7 +7,7 @@ tables and galleries. Source-paper analyses belong in `Research Article/`.
 | Question | Analysis | Status |
 |---|---|---|
 | A1 | [Transitional epithelial state distinction](A1_transitional_epithelial_state_distinction/README.md) | Revised lineage/functional plan; first real batch and four figure groups completed; direct epigenetic comparison remains open |
-| A5 and A11 | [Shared epithelial component contract](A5_A11_shared_component_contract/README.md) | Draft specification only; nothing executed; blocked on an independently sourced developmental maturation signature |
+| A5 and A11 | [Shared epithelial component contract](A5_A11_shared_component_contract/README.md) | Developmental source found and audited; partition rule pre-registered; no expression score computed |
 
 Question numbers are stable identifiers, not evidence grades. A plan or a
 source paper's published finding is not a result of this repository.
