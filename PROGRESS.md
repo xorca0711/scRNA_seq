@@ -5,7 +5,7 @@ to know to continue. Update this before stopping.
 
 ## Current: A5/A11 revised tests complete, 25 September 2026
 
-Branch `codex/a5-a11-biological-tests`. The owner authorized review revisions,
+Branch `codex/a5-a11-biological-tests`; [PR #77](https://github.com/xorca0711/scRNA_seq/pull/77) is open for review. The owner authorized review revisions,
 execution and biological rationale. Start with
 [biological logic](RQ_Specified/A5_A11_shared_component_contract/BIOLOGICAL_LOGIC.md)
 and [results](RQ_Specified/A5_A11_shared_component_contract/reports/REVISED_TEST_RESULTS.md).
