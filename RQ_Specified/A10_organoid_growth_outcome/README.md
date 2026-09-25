@@ -3,9 +3,19 @@
 Question-specific work for [A10](../../RESEARCH_QUESTIONS.md#a10). The canonical
 hypothesis stays in the register.
 
-**Status: structured; stage 1 authorized; nothing fitted.** Read
-[RATIONALE.md](RATIONALE.md) for the biology and the argument, then
-[PLAN.md](PLAN.md) for the analysis structure.
+**Status: stage 1 complete; nothing fitted.** Read
+[RATIONALE.md](RATIONALE.md) for the biology and the argument,
+[PLAN.md](PLAN.md) for the analysis structure, and
+[the audit](reports/STAGE1_IDENTITY_AUDIT.md) for what the design can and cannot
+support.
+
+**Stage 1 verdict: the joins hold, the biological unit does not.** 885 of 886 RNA
+libraries link to both imaging days. But nothing in the deposit says whether a
+replicate index is a separate cell isolation or a repeat of one preparation, and a
+probe of the sample metadata showed the deposit records only a batch label. Under the
+register's own rule that restricts this screen to within-screen descriptive
+association. Resolving it needs a methods fact or the authors, which is an owner
+decision because that paper's reading is reserved.
 
 ## Why this question is worth the effort
 
@@ -26,14 +36,14 @@ that exchange, with the perturbation made only in the epithelium.
   outcomes and the species-assignment quality control. Hashes are in the contract.
 - **Deliberately not fetched.** The 303 MB count table. It is stage 3 input, and
   fetching it before the design gate would prejudge the gate.
-- **Next.** Stage 1, the identity and join audit. It decides whether a model is
-  possible at all, or whether results are restricted to description.
+- **Done.** Stage 1, the identity and join audit.
+- **Next, for the owner.** Decide whether to pursue the unit question, and whether a
+  descriptive-only analysis is worth the 303 MB fetch on its own terms.
 
 ## The gate in one sentence
 
 The deposit has 886 RNA libraries across 203 perturbation targets, but a well is not
-an animal, so the biological unit has to be established from the files before any
-model is fitted.
+an animal, and the deposit does not say how many independent preparations there are.
 
 ## Layout
 
@@ -42,6 +52,7 @@ model is fitted.
 | [RATIONALE.md](RATIONALE.md) | Biological context, hypothesis, logical flow, limits, cross-links, governance |
 | [PLAN.md](PLAN.md) | Four-stage structure, outcome, covariates, tests, holdout, decision rules |
 | [config/a10_outcome_contract.json](config/a10_outcome_contract.json) | The same, machine-readable, with cached file hashes |
+| [reports/STAGE1_IDENTITY_AUDIT.md](reports/STAGE1_IDENTITY_AUDIT.md) | What joined, why the unit is unresolved, and what stage 2 must assume |
 | `scripts/` | Stage 1 audit; later stages are written only after the owner reviews stage 1 |
 | `tables/` | Stage 1 outputs and its run record |
 | `cache/` | The three fetched metadata files; ignored, hashes tracked |

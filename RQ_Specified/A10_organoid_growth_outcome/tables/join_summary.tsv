@@ -1,0 +1,22 @@
+check	result	detail
+design key format	normalized	design wells are unpadded (example B2), the other tables padded (example B02); both normalized to one letter plus two digits
+replicate label format	normalized	imaging uses 'plate3-1' and species QC '1-1'; both normalized to plate plus replicate index
+design has no replicate column	by design	the design table is the plate layout and applies to every replicate of that plate; it therefore joins on plate and well only
+duplicate design keys	pass	0 duplicated plate and well rows
+duplicate library keys	pass	0 duplicated unit and well rows in the species table
+duplicate imaging keys	pass	0 duplicated unit, well and day rows
+wells in species QC absent from design	report	8 plate and well combinations
+wells in imaging absent from design	report	8 plate and well combinations
+wells in design absent from species QC	report	0 plate and well combinations
+replicate units with imaging but no RNA	report	plate2-rep1
+replicate units with RNA but no imaging	report	none
+imaging days per well	report	{'day07': 942, 'day14': 941}; wells with both days 941, with one day 1
+candidate preparation units	report	16 plate and replicate combinations; 15 have RNA wells with both imaging days
+biological independence of replicate indices	UNRESOLVED	the deposited metadata give plate and replicate labels only. Nothing in these three files states whether a replicate index is a separate type 2 isolation and fibroblast lot or a repeat of one preparation. Resolving it needs the series sample metadata or the authors. Until then, holdouts by replicate index cannot be called independent biological preparations.
+libraries joined to design	report	856 of 886 libraries matched a design row by plate and well
+libraries with both imaging days	report	885 of 886 libraries have day-7 and day-14 mean area
+targets with extreme replication	report	TIGIT in 87 libraries across 15 units; TDTOMATO in 30 libraries across 15 units
+targets absent from the design table	report	TDTOMATO, NKX21
+control identity	UNRESOLVED	which targets the authors treated as controls is not established from these files, and the source paper is unread by the owner, so it is not taken from there either.
+unassigned read fraction	report	Ambiguous median 0.0338; Both median 0.1119; Neither median 0.069
+which assigned genome is which species	UNRESOLVED	the two assignment fields are named by role, not by species, and these files do not map either to mouse epithelium or human fibroblast. A stage 3 check settles it without guessing: the perturbed genes are mouse, so knocking one out should reduce that gene in whichever compartment is mouse. Until settled, the epithelial and niche sides must not be labelled.

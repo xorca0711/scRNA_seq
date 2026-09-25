@@ -1,0 +1,44 @@
+{
+  "stage": 1,
+  "purpose": "identity and join audit; metadata only, no counts read",
+  "completed_utc": "2026-09-25T13:14:40.424743+00:00",
+  "script": "RQ_Specified/A10_organoid_growth_outcome/scripts/01_audit_identities.py",
+  "script_sha256": "e196cb66c9d816ea65065fc00166f8c98f9327c0f0193743a6894f5b9f412b77",
+  "config_sha256": "2e9617625bd64d855ab0543ce8382244c6db9bfaee18396a1b406336a7d352b9",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "pandas": "2.3.3",
+  "inputs": {
+    "RQ_Specified/A10_organoid_growth_outcome/cache/GSE307112_plate_design.csv.gz": {
+      "bytes": 14102,
+      "sha256": "8f6950e6286ed438748bfcb12077e683abe74aa525678096f9ad9bea282b8ad1"
+    },
+    "RQ_Specified/A10_organoid_growth_outcome/cache/GSE307112_imaging_outputs.csv.gz": {
+      "bytes": 46028,
+      "sha256": "50ab337c916e0bd195c0fc387067fe0ee138683537e738c23f90ad97ef99d215"
+    },
+    "RQ_Specified/A10_organoid_growth_outcome/cache/GSE307112_xenome_stats.csv.gz": {
+      "bytes": 31732,
+      "sha256": "045b9da623db54a59948f1e8e6b68c1587fa4786a6838a51a890dfe59064edf5"
+    }
+  },
+  "counts_read": false,
+  "libraries": 886,
+  "targets": 203,
+  "candidate_units": 16,
+  "libraries_with_both_imaging_days": 885,
+  "unresolved": [
+    "biological independence of replicate indices",
+    "control identity",
+    "which assigned genome is which species"
+  ],
+  "failed_checks": [],
+  "verdict": "descriptive_only_unit_unresolved",
+  "outputs": {
+    "join_summary.tsv": "33e4d50f31ae9d1d1155458e3f2b12b1d827f4feb21b9bd6f448c28573d88531",
+    "well_join.tsv": "5bbb3debca16b63b21bf14bc91e86856f1b8bfaf6d9f37bfe7b4d8f63ef39774",
+    "preparation_units.tsv": "81836a8ec50a6dc8768726f04ac38e8aaa47e0359825d88b2bbca94eef6c7546",
+    "target_replication.tsv": "9f4ecdfc3ed0d135703f0016a9ea077345c175dc6c3cc142a6465c703a154d02",
+    "species_assignment.tsv": "da5d89ce625567365c710c397e2cc8facd41cd59b40e098912bb214b1aec8b61"
+  }
+}
