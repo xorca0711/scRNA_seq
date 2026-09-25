@@ -1,0 +1,10 @@
+module	role	n_genes	n_orthologs	n_assayed	assayed_fraction	gate1
+lesion_specific	primary	91	73	73	0.8022	pass
+lesion_specific_stress_excluded	secondary	72	56	56	0.7778	pass
+shared_I_and_L	secondary	7	5	5	0.7143	pass
+shared_remodelling	secondary baseline and descriptive	12	10	10	0.8333	pass
+AT1_published_400	descriptive identity axis	400	353	353	0.8825	pass
+AT2_published_400	descriptive identity axis	400	356	356	0.89	pass
+HALLMARK_P53_PATHWAY	descriptive control axis	200	194	187	0.935	pass
+HALLMARK_HYPOXIA	descriptive control axis	199	188	182	0.9146	pass
+HALLMARK_INFLAMMATORY_RESPONSE	descriptive control axis	197	189	188	0.9543	pass
