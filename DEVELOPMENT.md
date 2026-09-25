@@ -773,6 +773,24 @@ controls were not added to the KIRA8 comparison. Numerical source versions,
 hashes and model diagnostics are retained. No result was promoted to an
 independent validation or universal transitional-state taxonomy.
 
+## 35. Plan a biological-question-first restructuring (25 September 2026)
+
+After merging PR #67, the owner requested a substantial RQ review before
+remaining analysis, using their attached `RQ_FRAMING_PROPOSAL.md`. Codex prepared
+[a restructuring plan](docs/RQ_REFRAMING_PLAN.md), not an implemented replacement
+of the register. It recommends four core questions with unchanged legacy IDs,
+linked supporting contracts and conditional biological branches. The owner's
+choice of this structure and acceptance of its hypotheses remain pending.
+
+| Date | Prior framing challenged | Review outcome | Authority |
+|---|---|---|---|
+| 2026-09-25 | Biological hypotheses and depth/resource/annotation diagnostics presented as peer A-series questions | Owner requested substantial reconsideration; Codex proposed consolidation around measured biological endpoints | Owner initiated the revision; the resulting plan has not yet been adopted |
+| 2026-09-25 | Stronger biological headlines treated as restatements of existing measurements | Planning review distinguishes motivating observations from untested temporal, lineage, receptor-complex and absence claims | Codex's assessment of the supplied proposal, for owner review |
+
+The review also confirmed caption-generator drift that could restore a
+superseded A2 figure. Repair is specified before redraw; no generator or
+biological model was run, and no numerical evidence or claim grade was changed.
+
 ## How outputs were reviewed
 
 Every run writes its decisions to machine logs (`decisions.json`,
