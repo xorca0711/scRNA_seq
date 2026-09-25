@@ -1,0 +1,67 @@
+{
+  "schema": "a10-revised-specification/v1",
+  "declared": "2026-09-25",
+  "status": "declared_not_fitted",
+  "authorization": "The owner authorized the two substantive routes recorded at the end of reports/STAGE3_FIT_REPORT.md: a unit-varying baseline, and a programme set nominated for this assay rather than borrowed from repair biology.",
+  "supersedes_nothing": "The first analysis stands as reported. Its outputs are not overwritten and its verdict is not revised. This is a second, separately declared specification.",
+  "why_two_changes_are_tested_as_a_grid": "Changing the baseline and the programme set at once would confound attribution: a different answer could come from either. All four combinations are therefore fitted and reported, so the source of any change is visible.",
+  "grid": {
+    "baselines": ["pooled, as first fitted", "within-unit"],
+    "programme_sets": ["frozen repair modules, as first fitted", "growth-nominated Hallmark blocks"],
+    "cells": 4
+  },
+  "within_unit_baseline": {
+    "problem_it_addresses": "The first analysis reached a pooled held-out R squared of 0.586 while its median within-unit value was near zero and 6 of 15 units were negative. The pooled figure was carried by differences between unit means rather than by predicting which well grows.",
+    "transformation": "For each unit, subtract that unit's own mean from the outcome and from every continuous predictor, then fit on the training units and predict the held-out unit's centred outcome.",
+    "plate_terms_dropped": "Plate indicators are constant within a unit and therefore vanish under the transformation.",
+    "honest_limitation": "Centring the held-out unit uses that unit's own mean. That is a nuisance location parameter which would be observable for any unit actually in hand, but it means the metric answers which well inside a unit grows more, not how a unit behaves sight unseen. The pooled baseline is retained in the grid precisely so both readings are available.",
+    "estimand": "within-unit association between programme score and day-14 area, given day-7 area and composition"
+  },
+  "growth_nominated_programmes": {
+    "source": "MSigDB Hallmark 2024.1, mouse mh.all for the epithelium and human h.all for the fibroblasts",
+    "why_native_sets": "Species-native collections remove the ortholog mapping step that cost the frozen modules genes on the human side, so both compartments are scored on their own annotation.",
+    "why_these_and_not_the_frozen_modules": "The frozen modules describe repair, development and lesion biology. Organoid growth is set by proliferation, cell loss and biosynthetic signalling, and none of those was represented in the first analysis. That omission is a specification weakness, not a result.",
+    "selection_rule": "chosen a priori from set names on biological grounds, before any score was computed, and never from this screen's expression",
+    "primary_block_growth": {
+      "sets": ["HALLMARK_E2F_TARGETS", "HALLMARK_G2M_CHECKPOINT", "HALLMARK_MYC_TARGETS_V1", "HALLMARK_APOPTOSIS", "HALLMARK_P53_PATHWAY", "HALLMARK_MTORC1_SIGNALING"],
+      "rationale": "how much tissue forms is proliferation minus loss, scaled by biosynthetic capacity"
+    },
+    "secondary_block_niche_signalling": {
+      "sets": ["HALLMARK_WNT_BETA_CATENIN_SIGNALING", "HALLMARK_TGF_BETA_SIGNALING", "HALLMARK_NOTCH_SIGNALING", "HALLMARK_HEDGEHOG_SIGNALING", "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION"],
+      "rationale": "the pathways through which the fibroblast niche is known to act on type 2 cells, Wnt above all"
+    },
+    "secondary_block_environment": {
+      "sets": ["HALLMARK_HYPOXIA", "HALLMARK_UNFOLDED_PROTEIN_RESPONSE", "HALLMARK_INFLAMMATORY_RESPONSE", "HALLMARK_TNFA_SIGNALING_VIA_NFKB"],
+      "rationale": "organoid cores become hypoxic as they enlarge, and inflammatory signalling is the axis this repository has studied most"
+    }
+  },
+  "tests": {
+    "primary_order_fixed": [
+      "epithelial growth block beyond the within-unit baseline",
+      "fibroblast growth block beyond the retained model from the first test"
+    ],
+    "secondary": "niche-signalling and environment blocks, in both compartments, as one Benjamini-Hochberg family at q below 0.05 equivalent, reported as increments without a retirement decision",
+    "declared_margin_held_out_r2": 0.02,
+    "margin_justification": "Kept at the first analysis's value so the two specifications are directly comparable. Under the within-unit transformation the total variance to explain is smaller, so the same absolute gain represents a larger relative effect, which makes this margin conservative rather than lenient.",
+    "mandatory_sensitivity": [
+      "drop the target appearing in 87 libraries",
+      "drop the control-like libraries",
+      "drop both",
+      "per-unit increments reported for every fold"
+    ],
+    "robustness_rule": "An increment is reported as supported only if it clears the margin in the primary fit and in the drop-both sensitivity. The first analysis's fibroblast increment failed exactly this rule."
+  },
+  "decision_rules": {
+    "supported": "clears the margin in the primary fit and in the drop-both check",
+    "not_supported": "below the margin in the primary fit",
+    "fragile": "clears the margin in the primary fit but fails a mandatory sensitivity",
+    "inconclusive": "any other outcome",
+    "no_retirement": "Precise absence is still not claimable: it needs a confidence bound excluding the margin, which is not computed here."
+  },
+  "unchanged_limits": [
+    "The biological unit remains unresolved, so every result stays a within-screen descriptive association.",
+    "Expression and outcome are both from day 14, so nothing bears on prediction.",
+    "Organoid area is growth and morphology, not mature cell fate or repair in a lung.",
+    "This is not a test of A5 or A11."
+  ]
+}
