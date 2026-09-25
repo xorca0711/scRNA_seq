@@ -32,13 +32,21 @@ Do not fit a new count model from selected lists. Unsent requests are in
 `reports/SOURCE_REQUEST_DRAFTS.md`. No explicit author-contact authorization.
 Keep Notion concise English without critique/plans. Preserve earlier output bytes.
 
-## A5/A11 current amendment
+## A5/A11 current results
 
-The owner now authorized revisions and execution after review. Read shared
-`BIOLOGICAL_LOGIC.md` and child `PLAN.md`; they supersede the old owner-hold
-and independence wording below. A5 uses external Guo 99/57/53-gene modules and
-activated AT2 at 500 UMI, days 2–21. A11 requires original discovery TMM
-normalization scope for reproduction. Preserve old output bytes.
+Owner-authorized revised tests are complete. Read shared `BIOLOGICAL_LOGIC.md`
+and `reports/REVISED_TEST_RESULTS.md`; the old owner-hold text below is historical.
+A5 external Guo 99/57/53-gene tests are positive in 24 activated-reference mice;
+old 94/51 Strunz-filtered modules are descriptive. A11 replicates lesion association
+in eight patients (HL +0.681, exact p=.0078125), but beyond-shared BH q=.0546875
+leaves the stronger combined criterion unmet. Do not reclassify it as significant
+or change the nominated shared baseline after seeing the result.
+Plans/modules were committed in `eb5317e`, implementation/reproduction in `19fa116`.
+Preserve completed `test_v1` (A5) and `test_v2` (A11) outputs. The original discovery
+check requires all retained histologies in the TMM view before forming contrasts.
+The Strunz count matrix is cells-by-genes, unlike its textual deposit description;
+transpose only after exact dimension/barcode checks. Metadata n_counts is not raw
+UMI. No data/threshold change was made to fit the outcomes. Keep Notion concise.
 
 ## Historical parallel work stream: A5 and A11
 

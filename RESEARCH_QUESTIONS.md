@@ -41,13 +41,13 @@ recovery endpoint, and population persistence does not trace the same cells.
 | [A2](#a2) | Functional AREG source contributions vary with context | Source RNA distributions; dominance unresolved | Conditional; source perturbation with receiver endpoint needed |
 | [A3](#a3) | Injury leaves a macrophage programme beyond normal aging | Late population composition | Age-matched controls and comparable sampling needed |
 | [A4](#a4) | Wnt maintenance and IL-1 response occur sequentially in an AT2 lineage | Transcript/source observations; sequence untested | Measured activity/history and lineage-linked response needed |
-| [A5](#a5) | Adult repair reuses a developmental epithelial component | Neonatal coexpression and label-excluded ADI enrichment; outside developmental list now sourced | Components frozen; Strunz 2020 audit finds 26 eligible injured mice; A5 pre-registration next |
+| [A5](#a5) | Adult repair reuses a developmental epithelial component | Neonatal coexpression and label-excluded ADI enrichment; outside developmental list now sourced | Revised external-signature test positive in 24 mice and after identity/control exclusions; lineage/function untested |
 | [A6](#a6) | IPF changes shared macrophage states beyond subtype abundance | Cell fractions and RNA contributions differ | Harmonize states and audit donors before a within-state fit |
 | [A7](#a7) | Cebpa loss attenuates identity across AT2 states | Reference and transitional contrasts both change | Replicated genotype-by-state design needed |
 | [A8](#a8) | A maturation component adds information about mature AT1 contribution | Score dependence motivates separation; limited biological support | Independent mature endpoints needed |
 | [A9](#a9) | Fibroblast receptor context modifies AREG response | RNA/resource observations nominate a competence question | RNA screen possible; protein/function data needed |
 | [A10](#a10) | Epithelial programmes add information about measured organoid growth | Public RNA and imaging design | Next bounded task: verify outcome joins and independent preparations |
-| [A11](#a11) | Lesion-associated programmes add to shared plasticity | Reduced HPCS signal across repair, development, IPF and LUAD | Kim 2020 test pre-registered; both gates pass with 8 paired patients; scoring awaits owner |
+| [A11](#a11) | Lesion-associated programmes add to shared plasticity | Reduced HPCS signal across repair, development, IPF and LUAD | Kim lesion association replicates in 8 patients; beyond-shared criterion unresolved (BH q=0.0547) |
 | [A12](#a12) | Recipient context explains responses beyond ligand RNA | Cohort/recipient heterogeneity | Conditional component model; activation unmeasured |
 | [A13](#a13) | Fibroblast programmes add information beyond macrophage IL1B | Niche heterogeneity motivates joint association | Audit complete triads; current IPF arms below joint-model floor |
 | [A14](#a14) | Exposure duration and fibroblast reception separately affect recovery | Mechanistic follow-up to the repair/persistence question | Two decisions; withdrawal and recipient-specific data needed |
@@ -247,18 +247,15 @@ type 1 or type 2 identity genes. A shared transcriptional component would also n
 imply a shared route, since neonatal injury is reported to regenerate by type 1 to
 type 2 reprogramming (Penkala et al. 2021).
 
-**Decision / readiness.** Precise failure of the nominated component to transport,
-or explanation entirely by prespecified generic programmes, weakens that reuse
-hypothesis. Poor animal coverage is inconclusive. With an outside developmental
-list, reuse can be tested inside adult injury, comparing transitional and type 2
-cells of the same mouse, so neonatal units are no longer required. The
-[Strunz 2020 audit](RQ_Specified/A5_developmental_programme_reuse/DATA_AUDIT.md)
-finds 26 candidate mice against resting AT2 and 24 against activated AT2, before
-depth filtering. The injury and identity lists used for contract filtering come
-from this same Strunz experiment. The revised [A5 plan](RQ_Specified/A5_developmental_programme_reuse/PLAN.md)
-therefore tests external Guo 99/57/53-gene modules using activated AT2 as primary
-reference. Old 94/51-gene variants remain descriptive. Strunz's prior poor
-developmental correspondence is explicit counterevidence.
+**Decision / readiness.** The revised external Guo test is complete: 24 mice,
+transitional versus activated AT2, mean +0.735 detection percentage points
+(95% CI 0.579–0.892). Identity-excluded (57 genes) and identity/control-excluded
+(53 genes) effects remain positive after Holm correction. This supports partial
+transcriptional recruitment, not a shared lineage or repair outcome. The original
+94/51-gene modules were filtered with Strunz test-cohort markers and are descriptive
+there. Strunz's published poor overall developmental correspondence remains relevant
+counterevidence to global equivalence. [Plan](RQ_Specified/A5_developmental_programme_reuse/PLAN.md);
+[results and biological interpretation](RQ_Specified/A5_A11_shared_component_contract/reports/REVISED_TEST_RESULTS.md).
 [Current figures](analysis/figures/rq/README.md#a5) motivate animal-level
 shared-versus-specific effects and held-out evaluation.
 [MC1–MC2](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1), [MC5](docs/RQ_MEASUREMENT_CONTRACTS.md#mc5).
@@ -435,18 +432,16 @@ within-study contrasts with paired patients and supported epithelial states.
 Require independent identity evidence before calling a cell malignant;
 histology groups are not longitudinal progression stages.
 
-**Decision / readiness.** An addition that transports supports that specific
-programme. Precise failure retires the nominated addition, not all possible
-cancer-specific biology. Independent evaluation is now
-[pre-registered](RQ_Specified/A11_lesion_programme_addition/PLAN.md) in the Kim
-2020 cohort: ten tumour-normal pairs verified from the deposit's patient
-identifiers, never scored with these modules. Both eligibility gates pass, with
-eight patients meeting the cell floor. At the discovery effect the exact test has
-about 0.47 power under its planning model. The amended plan aligns the location
-estimand with Wilcoxon and separates direction from a 0.10 positive-magnitude
-margin. Primary positivity supports lesion association; relative activation
-requires secondary evidence, and neoplasia specificity remains untested. The
-owner authorized revisions and execution. [Current PCA/paired panels](analysis/figures/rq/README.md#a11)
+**Decision / readiness.** The amended Kim test is complete after reproducing all
+46 broad/narrow discovery contrasts. All eight patient differences are positive:
+HL +0.681 log2 CPM (exact 95% CI 0.386–0.976; p=0.0078125), with the interval above
+the pragmatic 0.10 margin. Stress exclusion remains positive (BH q=0.0234), but
+beyond-shared does not meet its declared threshold (HL +0.549; CI −0.034–1.063;
+BH q=0.0547). Thus lesion association replicates and the stronger relative-activation
+criterion remains unresolved. Changed population definition and lack of a
+non-neoplastic injury comparator limit specificity claims. [Plan](RQ_Specified/A11_lesion_programme_addition/PLAN.md);
+[results](RQ_Specified/A5_A11_shared_component_contract/reports/REVISED_TEST_RESULTS.md).
+[Current PCA/paired panels](analysis/figures/rq/README.md#a11)
 motivate disjoint-component heatmaps and held-out patient effects.
 [MC1](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1), [MC3](docs/RQ_MEASUREMENT_CONTRACTS.md#mc3),
 [MC5](docs/RQ_MEASUREMENT_CONTRACTS.md#mc5).

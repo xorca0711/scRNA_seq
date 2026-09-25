@@ -8,7 +8,10 @@ work continues in [A5's folder](../A5_developmental_programme_reuse/README.md) a
 [stage 1 source audit](reports/STAGE1_SOURCE_AUDIT.md). No expression score was
 computed here and no claim grade changes.
 
-Start with [the biological logic and revised analysis sequence](BIOLOGICAL_LOGIC.md).
+Start with [the biological logic and revised analysis sequence](BIOLOGICAL_LOGIC.md)
+and [the completed results](reports/REVISED_TEST_RESULTS.md). A5 supports partial
+external-signature recruitment after the planned exclusions. A11 replicates lesion
+association, while its beyond-shared comparison remains unresolved.
 
 - **A11:** eight eligible Kim patient pairs; the original 23 are discovery.
   Its amended plan separates lesion association from relative activation.
@@ -63,7 +66,7 @@ the selection is partly by accessibility.
 The layout follows the question-specific pattern in the
 [structure contract](../../docs/REPOSITORY_STRUCTURE.md).
 
-## Evidence this draft rests on
+## Historical evidence at contract creation
 
 Every number below is read from existing tracked evidence, not recomputed here.
 

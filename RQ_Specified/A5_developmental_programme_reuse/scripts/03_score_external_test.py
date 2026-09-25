@@ -84,7 +84,10 @@ def main():
     c['day']=c.time_point.str.extract(r'(\d+)').astype(int)
     print('Reading raw Strunz matrix',flush=True)
     with gzip.open(matrix_path,'rb') as f:
-        x=mmread(f).tocsc()
+        x=mmread(f, spmatrix=True).tocsc()
+    deposited_shape=list(x.shape)
+    if x.shape==(len(barcodes),len(genes)):
+        x=x.T.tocsc()
     x.sum_duplicates(); x.eliminate_zeros()
     assert x.shape==(len(genes),len(barcodes))
     assert np.isfinite(x.data).all() and (x.data>=0).all() and (x.data==np.floor(x.data)).all()
@@ -113,7 +116,8 @@ def main():
     cov=pd.DataFrame(coverage);cov.to_csv(out/'coverage.tsv',sep='\t',index=False)
     gate={'eligible_mice':elig,'primary_n':len(elig[cfg['reference_label']]),
           'primary_coverage':bool(cov.set_index('module').loc[cfg['primary_module'],'eligible']),
-          'count_shape':list(x.shape),'raw_count_sum':int(library.sum()),'depth_umi':cfg['depth_umi']}
+          'count_shape':list(x.shape),'deposited_shape':deposited_shape,
+          'raw_count_sum':int(library.sum()),'depth_umi':cfg['depth_umi']}
     (out/'gates.json').write_text(json.dumps(gate,indent=2)+'\n')
     if gate['primary_n']<cfg['unit_floor'] or not gate['primary_coverage']:
         print('Primary ineligible; no scores',gate,flush=True)

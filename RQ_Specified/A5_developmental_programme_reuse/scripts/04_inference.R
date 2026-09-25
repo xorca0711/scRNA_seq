@@ -5,6 +5,7 @@ out <- file.path(root,'RQ_Specified/A5_developmental_programme_reuse/tables/test
 if(file.exists(file.path(out,'inference.tsv'))) stop('Refusing to overwrite A5 inference')
 z <- read.delim(file.path(out,'paired_differences.tsv'))
 coverage <- read.delim(file.path(out,'coverage.tsv'))
+coverage$eligible <- tolower(as.character(coverage$eligible))=='true'
 tests <- data.frame(test=c('primary','identity_excluded','identity_controls_excluded','resting_reference'),
   module=c('Guo_AT1_AT2_external','Guo_minus_identity','Guo_minus_identity_and_controls','Guo_AT1_AT2_external'),
   reference=c(rep('AT2 activated',3),'AT2'))

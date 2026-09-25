@@ -934,3 +934,13 @@ are drafted but unsent; the concise Notion page was not expanded.
 | 2026-09-25 | A5 independence claim for Strunz-filtered modules | Supplement identifies the same high-resolution cohort for marker selection; negative selection is data-dependent | Codex source review; owner requested revision |
 | 2026-09-25 | A11 mean estimand with Wilcoxon and overlapping transport/absence categories | HL targets location/pseudomedian; positive small effects could satisfy both labels | Codex review; owner requested revision before scores |
 | 2026-09-25 | Universal baseline, biologically specific list names and credibility from low power | List overlap and test difficulty do not establish a programme, specificity or credibility | Codex review; owner requested biological rationale |
+
+
+A5/A11 execution outcome: A5 external-signature recruitment is positive in 24
+mice and after external identity/control exclusions. A11 lesion association
+replicates in eight patients; beyond-shared BH q=0.0546875 leaves the stronger
+claim unresolved. No threshold, subtype or baseline was retuned. Twenty-eight
+independent numerical/provenance checks passed; the figure was inspected. A
+matrix-orientation assertion and cross-language boolean parsing stopped two
+technical attempts before scientific outputs; their corrections are documented
+in the result report. Scientific acceptance remains for owner review.

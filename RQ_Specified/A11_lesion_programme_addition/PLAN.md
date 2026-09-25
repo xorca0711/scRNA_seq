@@ -1,5 +1,9 @@
 # A11 pre-registered test in the Kim 2020 cohort
 
+**Execution completed after this plan was committed.** Read the
+[results and biological interpretation](../A5_A11_shared_component_contract/reports/REVISED_TEST_RESULTS.md).
+The prospective rules below and their pre-score commits remain the design record.
+
 25 September 2026. **Pre-registered; not scored.** The owner chose this design at
 stage 4 of the [shared component contract](../A5_A11_shared_component_contract/README.md)
 (DEVELOPMENT decision 37). The machine-readable version is

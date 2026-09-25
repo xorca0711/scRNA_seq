@@ -1,5 +1,9 @@
 # A5: prospective test of developmental-gene recruitment in adult injury
 
+**Execution completed after this plan was committed.** Read the
+[results and biological interpretation](../A5_A11_shared_component_contract/reports/REVISED_TEST_RESULTS.md).
+The prospective rules below and their pre-score commits remain the design record.
+
 25 September 2026. Authorized by the owner's request to proceed with the review
 revisions. This plan is committed before downloading or scoring the Strunz count
 matrix. See the [biological logic](../A5_A11_shared_component_contract/BIOLOGICAL_LOGIC.md)
