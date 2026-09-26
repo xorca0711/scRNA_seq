@@ -1,0 +1,29 @@
+{
+  "stage": "E3a",
+  "status": "targeted_post_transfer_sensitivity_completed",
+  "reason": "Primary intestinal transfer is near zero while the pre-transfer generic-excluded variant is positive; check whether depth explains the discrepancy before investment decision.",
+  "program_retuned": false,
+  "new_gene_selection": false,
+  "sampling_iterations": 200,
+  "interpretation": "Sampling quantiles describe dependence on depth-matching draws, not biological confidence intervals; mice remain the biological units.",
+  "matched_cells_per_mouse": [
+    {
+      "unit": "Control-Mouse1",
+      "matched_cells_per_state": 25
+    },
+    {
+      "unit": "Control-Mouse2",
+      "matched_cells_per_state": 7
+    },
+    {
+      "unit": "Control-Mouse3",
+      "matched_cells_per_state": 32
+    },
+    {
+      "unit": "Control-Mouse4",
+      "matched_cells_per_state": 18
+    }
+  ],
+  "qualified_after_matching": 1,
+  "summary_table": "tables/exploratory/intestine_depth_matched_sensitivity.csv"
+}

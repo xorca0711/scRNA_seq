@@ -1,0 +1,51 @@
+{
+  "design": "exploratory_repair_first",
+  "original_three_context_design_complete": false,
+  "decisions": [
+    {
+      "stage": "E1",
+      "reviewed_at_utc": "2026-09-26T11:19:37.652159+00:00",
+      "decision": "proceed_to_E2",
+      "reason": "Nine of nine held-out mice have positive effects against both endpoints; standardized medians exceed the frozen threshold. Source labels are reused, and visible stress-related genes make specificity checks essential.",
+      "targeted_checks": [
+        "All-zero/tied rank-score fixtures passed",
+        "Rank score invariant to positive per-cell scaling",
+        "Every fold excluded its held-out mouse during filtering and ranking",
+        "Fold gene-set Jaccard with full candidate 0.639-0.786"
+      ],
+      "evidence": "stage_E1_result.json"
+    },
+    {
+      "stage": "E2",
+      "reviewed_at_utc": "2026-09-26T11:21:50.771388+00:00",
+      "decision": "proceed_to_E3_descriptive_transfer",
+      "reason": "Both source endpoint directions survive depth matching in all nine mice with >=30 matched cells/state; all nine exceed endpoint-mixture controls. Nineteen of 50 genes overlap generic controls, so the normal-context transfer is informative about scope, not optional proof of specificity.",
+      "evidence": "stage_E2_result.json",
+      "limitations": "Matched-set comparisons are conditional on discovery; stress is not proven absent; activated AT2 is not a validated pure-stress negative control."
+    },
+    {
+      "stage": "E3",
+      "reviewed_at_utc": "2026-09-26T11:37:28.722945+00:00",
+      "decision": "perform_targeted_E3a_depth_sensitivity_before_expansion_decision",
+      "reason": "Frozen primary transfers in the one qualifying developmental group but is near zero in the two qualifying intestinal mice; the pre-transfer 31-gene variant is positive in both intestinal mice and merits a focused depth check.",
+      "evidence": "stage_E3_result.json",
+      "post_transfer_scope_addition": "200 matching draws for existing frozen scores; no new gene selection or branch retuning."
+    },
+    {
+      "stage": "E3a",
+      "reviewed_at_utc": "2026-09-26T11:37:28.722945+00:00",
+      "decision": "narrow_to_lung_repair_and_close_out_E4; stop_broad_shared_program_expansion",
+      "reason": "Primary intestinal effects remain near zero or negative vs Stem. The 31-gene variant changes sign vs Stem in Mouse1 after depth matching; only Mouse3 retains >=30 matched cells/state. Positive developmental evidence is one capture group, not independent replication.",
+      "evidence": "stage_E3a_result.json",
+      "remaining_uncertainty": "Small sample counts, matched-subset loss and normalized developmental input prevent exclusion of weaker shared components or a shared non-transcriptional process.",
+      "next_investment": "A later bounded test in an independently replicated normal epithelial transition could be informative; current results do not justify atlas integration, regulatory-network fitting or causal perturbation selection from this candidate."
+    },
+    {
+      "stage": "E4",
+      "reviewed_at_utc": "2026-09-26T11:46:07.879340+00:00",
+      "decision": "bounded_exploratory_pilot_complete",
+      "reason": "All warranted stages executed; numerical, provenance, freeze, link and figure checks pass. Broad expansion stopped at E3a; original replication gaps remain.",
+      "evidence": "exploratory_validation.json"
+    }
+  ]
+}

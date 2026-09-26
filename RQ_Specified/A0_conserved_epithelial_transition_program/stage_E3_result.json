@@ -1,0 +1,116 @@
+{
+  "stage": "E3",
+  "program_retuned": false,
+  "results": {
+    "intestine": {
+      "coverage": {
+        "dataset": "intestine",
+        "module": "candidate",
+        "requested_genes": 50,
+        "present_genes": 48,
+        "feature_coverage": 0.96,
+        "reference_coverage": 1.0,
+        "reference_genes_used": 997
+      },
+      "effects": {
+        "Enterocyte.Mature.Proximal": {
+          "all_groups": 4,
+          "positive_all_groups": 2,
+          "qualified_groups": 2,
+          "positive_qualified_groups": 1,
+          "qualified_effects": [
+            {
+              "unit": "Control-Mouse1",
+              "difference": 0.004102041367157083,
+              "standardized_difference": 0.21759087176453062
+            },
+            {
+              "unit": "Control-Mouse3",
+              "difference": -0.0004187805505988518,
+              "standardized_difference": -0.022493891516004002
+            }
+          ]
+        },
+        "Stem": {
+          "all_groups": 4,
+          "positive_all_groups": 2,
+          "qualified_groups": 2,
+          "positive_qualified_groups": 0,
+          "qualified_effects": [
+            {
+              "unit": "Control-Mouse1",
+              "difference": -0.0007013096581410805,
+              "standardized_difference": -0.037200643833965284
+            },
+            {
+              "unit": "Control-Mouse3",
+              "difference": -4.831293269835779e-05,
+              "standardized_difference": -0.0025950246862774013
+            }
+          ]
+        }
+      },
+      "unit_interpretation": "verified mice; two pass floor"
+    },
+    "development": {
+      "coverage": {
+        "dataset": "development",
+        "module": "candidate",
+        "requested_genes": 50,
+        "present_genes": 49,
+        "feature_coverage": 0.98,
+        "reference_coverage": 1.0,
+        "reference_genes_used": 997
+      },
+      "effects": {
+        "AT1": {
+          "all_groups": 9,
+          "positive_all_groups": 4,
+          "qualified_groups": 1,
+          "positive_qualified_groups": 1,
+          "qualified_effects": [
+            {
+              "unit": "P14:2",
+              "difference": 0.015233764017141493,
+              "standardized_difference": 0.38274974590527666
+            }
+          ]
+        },
+        "AT2": {
+          "all_groups": 9,
+          "positive_all_groups": 7,
+          "qualified_groups": 1,
+          "positive_qualified_groups": 1,
+          "qualified_effects": [
+            {
+              "unit": "P14:2",
+              "difference": 0.06788482772681415,
+              "standardized_difference": 1.7056126466200243
+            }
+          ]
+        }
+      },
+      "unit_interpretation": "encoded capture groups, not verified animals; one passes floor"
+    }
+  },
+  "input_audits": {
+    "intestine": {
+      "source_features": 15971,
+      "scoring_features": 2143,
+      "mapped_mouse_cells": 3240,
+      "mapped_mice": 4,
+      "expression_type": "raw integer UMI counts",
+      "feature_alignment": "source cell header and row symbols; all input counts checked"
+    },
+    "development": {
+      "source_features": 17578,
+      "scoring_features": 2187,
+      "postnatal_cells": 9861,
+      "encoded_groups": 10,
+      "independent_animals": "not_recovered",
+      "expression_type": "author SCT normalized data-slot export; not raw counts",
+      "feature_alignment": "every numeric API column mapped through source var index; every row index reconciled to annotation order"
+    }
+  },
+  "interpretation_status": "requires checkpoint review; descriptive transfer does not establish broad conservation"
+}

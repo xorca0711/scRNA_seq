@@ -1,0 +1,11 @@
+dataset,module,requested_genes,present_genes,feature_coverage,reference_coverage,reference_genes_used
+development,candidate,50,49,0.98,1.0,997
+development,candidate_without_generic_controls,31,30,0.967741935483871,1.0,999
+development,HALLMARK_HYPOXIA,199,184,0.9246231155778895,1.0,992
+development,HALLMARK_INFLAMMATORY_RESPONSE,197,158,0.8020304568527918,1.0,995
+development,HALLMARK_P53_PATHWAY,200,190,0.95,1.0,987
+development,HALLMARK_TNFA_SIGNALING_VIA_NFKB,196,185,0.9438775510204082,1.0,986
+development,HALLMARK_E2F_TARGETS,199,195,0.9798994974874372,1.0,988
+development,HALLMARK_G2M_CHECKPOINT,195,188,0.9641025641025641,1.0,988
+development,Immediate_early_AP1_panel,8,8,1.0,1.0,999
+development,ADI_published_holdout,398,389,0.9773869346733668,1.0,985
