@@ -220,6 +220,19 @@ Read at the backbone step that uses them, not as a gate. Metadata verified again
 | M7 | Vaughan AE, et al. Lineage-negative progenitors mobilize to regenerate lung epithelium after major injury. *Nature* 2015 | [10.1038/nature14112](https://doi.org/10.1038/nature14112) | 25533958 | 4, the KRT5 dysplastic programme |
 | M8 | van den Brink SC, et al. Single-cell sequencing reveals dissociation-induced gene expression in tissue subpopulations. *Nature Methods* 2017 | [10.1038/nmeth.4437](https://doi.org/10.1038/nmeth.4437) | 28960196 | 2, the dissociation-stress gene list; named by Choi 2020 attack A3, not on disk, not attempted (added 2026-09-15) |
 
+### Mechanism references for A2, the AREG delivery hypothesis (added 2026-09-26)
+
+Read for the mechanism the rewritten [A2 card](RESEARCH_QUESTIONS.md#a2) rests on.
+Metadata verified against PubMed on 2026-09-26. Zaiss 2015 stays as M4 above.
+
+| Ref | Paper | DOI | PMID | Role in A2 |
+|---|---|---|---|---|
+| A2-1 | Minutti CM, et al. A macrophage-pericyte axis directs tissue restoration via amphiregulin-induced transforming growth factor beta activation. *Immunity* 2019 | [10.1016/j.immuni.2019.01.008](https://doi.org/10.1016/j.immuni.2019.01.008) | 30770250 | amphiregulin activates integrin alphaV on mesenchymal stromal cells, releasing bioactive TGF-beta and driving myofibroblast differentiation; the reason abundance is the wrong observable |
+| A2-2 | Zhou Y, et al. Amphiregulin, an epidermal growth factor receptor ligand, plays an essential role in the pathogenesis of transforming growth factor beta-induced pulmonary fibrosis. *Journal of Biological Chemistry* 2012 | [10.1074/jbc.M112.356824](https://doi.org/10.1074/jbc.M112.356824) | 23086930 | amphiregulin silencing or EGFR inhibition reduces TGF-beta1-driven fibroblast proliferation, smooth-muscle actin and collagen |
+| A2-3 | Arpaia N, et al. A distinct function of regulatory T cells in tissue protection. *Cell* 2015 | [10.1016/j.cell.2015.08.021](https://doi.org/10.1016/j.cell.2015.08.021) | 26317471 | leukocyte amphiregulin is non-redundant for lung protection, independent of suppressor function and viral load; the constraint behind C45 |
+| A2-4 | Sorkhdini P, et al. Type 2 innate immunity promotes the development of pulmonary fibrosis in Hermansky-Pudlak syndrome. *JCI Insight* 2024 | [10.1172/jci.insight.178381](https://doi.org/10.1172/jci.insight.178381) | 39405112 | innate lymphoid cells drive lung fibroblast proliferation and differentiation partly through amphiregulin and EGFR |
+
+
 ---
 
 ## IL-1beta review branch, 24 September 2026

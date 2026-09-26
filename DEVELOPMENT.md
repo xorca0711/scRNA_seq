@@ -861,6 +861,44 @@ register cards. Choosing a recommendation is the owner's decision, and it is
 recorded as such; the options were written by the assistant, so this log names
 them as its proposals.
 
+## 38. Rewrite A2 around delivery rather than abundance, and structure its analysis (26 September 2026)
+
+Asked what the real hypothesis for A2 was, the assistant reported that the card's
+source-ranking question was already closed by the repository's own record, and
+that the hypothesis underneath it concerns delivery rather than abundance. The
+owner then asked for the card to be rewritten around that hypothesis and for the
+analysis to be structured stepwise. Nothing was computed: no endpoint was scored
+in either dataset and no claim row changed.
+
+The argument for the reframing is that seven register rows answer the abundance
+question and none supports a hierarchy (C37, C39, C40, C45, C48, C49, C50), while
+C51 records why a seventh comparison would fail the same way. The mechanism
+literature places the rate-limiting step in the recipient: amphiregulin activates
+integrin alphaV on mesenchymal cells and releases bioactive TGF-beta from latent
+complexes (Minutti et al. 2019, doi:10.1016/j.immuni.2019.01.008). A ligand that
+converts a store the recipient already holds predicts the nulls C49 and C50
+recorded, which is a prediction the reframed question can fail rather than a
+rescue of the old one.
+
+| Date | Item | Proposed by | Decided by | Decision | Reason |
+|---|---|---|---|---|---|
+| 2026-09-26 | A2 framing | Assistant, in answer to the owner's question | Owner asked for the rewrite | Card rewritten around delivery; the abundance record is preserved in the rationale with its claim identifiers | Six results close the abundance question; the mechanism names a different observable |
+| 2026-09-26 | Analysis folder `RQ_Specified/A2_areg_source_delivery/` | Assistant | Owner requested the structure | Six stages declared, stage 1 authorized, nothing scored | The test is readable only if its endpoint and rule are frozen first |
+| 2026-09-26 | Primary endpoint | Assistant | Pending owner retain or reject | Human Hallmark TGF-beta signalling, with the repository's five-gene fibroblast activation score as the co-primary | Both were defined outside this screen; the second carries the C50 and C51 precedent |
+| 2026-09-26 | Precise absence | Assistant | Pending owner retain or reject | Declared unavailable at this design, before any test | Four units and a partial knockout, with the Areg transcript falling 1.042 log2 CPM and remaining at 6.226 |
+| 2026-09-26 | Leg 2 in GSE136831 | Assistant | Pending owner retain or reject | Reuse the trial E6 instrument unchanged and change only the predictor | A new estimand in a cohort that already returned a null on the old one, with the C51 depth rule applying unchanged |
+
+| Date | Rejected or reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-26 | The assistant's first statement that the ligand-specificity contrast was matched within plate 3 | The design table places HBEGF on plate 4, so that contrast crosses plates; the plan labels it secondary and weaker | Assistant corrected it from the deposit before the plan was written |
+| 2026-09-26 | A multi-agent workflow for this framing task | The deterministic reading and drafting did not need agents; three review lenses were applied to the drafts instead | Assistant, under the owner's cost rule |
+
+The abundance question is not retired and no claim is re-graded. What changed is
+which observable A2 commits to, and the plan states before running that leg 1 is a
+within-screen association while preparation independence is unresolved, and that
+leg 2 may be refused by its own depth control, in which case the refusal is the
+result.
+
 ## How outputs were reviewed
 
 ### A1 adaptive continuation, 25 September 2026

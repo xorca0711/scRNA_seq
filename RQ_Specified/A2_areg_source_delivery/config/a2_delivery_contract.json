@@ -1,0 +1,200 @@
+{
+  "schema": "a2-areg-source-delivery/v1",
+  "drafted": "2026-09-26",
+  "status": "stage_1_authorized_nothing_scored",
+  "question": {
+    "register": "RESEARCH_QUESTIONS.md#a2",
+    "hypothesis": "AREG's contribution to a fibroblast response is set by where the ligand is released relative to a competent recipient, not by which compartment transcribes the most of it.",
+    "leg_1": "Where an epithelial source and a fibroblast are in contact, removing the epithelial ligand lowers a frozen fibroblast TGF-beta response programme, while removing the epithelium's own receptors does not.",
+    "leg_2": "Across donors, the fibroblast response tracks the recipient's own TGF-beta activation machinery more closely than it tracks epithelial ligand abundance.",
+    "rationale": "RATIONALE.md",
+    "plan": "PLAN.md",
+    "inherits": [
+      "docs/NEXT_DATASET_GATE.md, for the GSE307112 joins and prohibitions",
+      "RQ_Specified/A10_organoid_growth_outcome/reports/STAGE1_IDENTITY_AUDIT.md, for the unresolved preparation identity",
+      "docs/RQ_MEASUREMENT_CONTRACTS.md MC2 to MC4"
+    ]
+  },
+  "why_the_previous_framing_is_closed": {
+    "superseded_question": "Which compartment is the dominant AREG source, and does that dominance change with context.",
+    "rows_that_close_it": 7,
+    "record": {
+      "C37": "epithelial over myeloid detection in ten donors on deposited labels, six of ten at the primary 1,000-UMI budget; descriptive only",
+      "C39": "CD1c-positive dendritic cells above both tumour epithelial states; not established, and it qualifies C37",
+      "C45": "dendritic cells and monocytes at or above epithelial states in two diseases; descriptive only",
+      "C40": "AREG not enriched in tumour against matched normal lung; refuted at compartment level",
+      "C48": "neither AREG nor HBEGF rising with fibrosis against control; not established",
+      "C49": "epithelial AREG against fibroblast EGFR across 22 donors, rho 0.348, p 0.112; not established",
+      "C50": "epithelial AREG against a fibroblast activation score, rho -0.150; not established",
+      "C51": "the only significant correlation in that trial was a depth-tracking control pair, refused by a frozen rule; validated as a decision record"
+    },
+    "reading": "Total ligand abundance is not the rate-limiting quantity the mechanism uses, so the abundance comparisons measured the wrong observable. This reframing commits the question to a different observable that can fail; it does not re-grade any row above.",
+    "no_claim_regrading": true
+  },
+  "mechanism_sources": [
+    {"doi": "10.1016/j.immuni.2019.01.008", "pmid": "30770250", "role": "amphiregulin activates integrin alphaV on mesenchymal stromal cells, releasing bioactive TGF-beta and driving myofibroblast differentiation; macrophages a critical source"},
+    {"doi": "10.1074/jbc.M112.356824", "pmid": "23086930", "role": "amphiregulin silencing or EGFR inhibition reduces TGF-beta1-driven fibroblast proliferation, smooth-muscle actin and collagen"},
+    {"doi": "10.1016/j.cell.2015.08.021", "pmid": "26317471", "role": "regulatory T cell amphiregulin is non-redundant for lung tissue protection, independent of suppressor function and viral load"},
+    {"doi": "10.1172/jci.insight.178381", "pmid": "39405112", "role": "type 2 innate lymphoid cells drive lung fibroblast proliferation and differentiation partly through amphiregulin and EGFR"},
+    {"doi": "10.1016/j.immuni.2015.01.020", "pmid": "25692699", "role": "both epithelial and leukocyte amphiregulin sources are established; the constraint on an epithelium-only reading, already reference M4"}
+  ],
+  "leg_1": {
+    "dataset": {
+      "accession": "GSE307112",
+      "design": "CRISPR knockout in mouse alveolar type 2 cells co-cultured with unedited human lung fibroblasts; per-well RNA with reads assigned by species",
+      "why_it_separates_the_rivals": "The perturbation is epithelial only and the fibroblasts are unedited, so removing the ligand removes what the fibroblast can receive while removing epithelial receptors removes only epithelial reception.",
+      "source_paper": {
+        "roadmap_order": 14,
+        "doi": "10.1073/pnas.2606113123",
+        "owner_reading_status": "not started",
+        "rule": "use the deposit, not the paper's claims; write no study note; the precedent is DEVELOPMENT decision 21"
+      }
+    },
+    "layout_computed_from_the_cached_qc_table_2026_09_26": {
+      "note": "Computed in session from cache/GSE307112_xenome_stats.csv.gz; stage 1 must recompute it with a run record and may contradict it.",
+      "plate3_units": ["3-1", "3-2", "3-3", "3-4"],
+      "wells_per_plate3_unit": 60,
+      "axis_targets_on_plate3_one_well_per_unit": ["AREG", "EGFR", "ERBB2", "ERBB3", "ERBB4", "ITGB6"],
+      "control_wells_per_unit": {"target": "TDTOMATO", "wells": 2},
+      "hbegf_location": {"plate": "plate4", "wells_per_unit": 1, "consequence": "the ligand-specificity contrast crosses plates and is secondary and weaker"}
+    },
+    "knockout_validation": {
+      "recorded_in_a10": {
+        "Areg": -1.042,
+        "Egfr": -1.034,
+        "Erbb3": -0.511,
+        "Itgb6": -1.138,
+        "Hbegf": -1.921
+      },
+      "units": "difference in mean log2 CPM of the targeted mouse transcript, targeted libraries against pooled other libraries",
+      "not_recorded": ["Erbb2", "Erbb4"],
+      "why_not_recorded": "A10 tested only genes that were also members of its declared module set.",
+      "stage_1_action": "extract the Erbb2 and Erbb4 mouse rows and report them on the same footing",
+      "partial_perturbation": "Areg falls by 1.042 log2 CPM and remains at 6.226, so the knockout is partial and pooled; a null is inconclusive by design",
+      "unvalidated_rule": "a target whose transcript does not fall is treated as unvalidated; the recorded Il1a case rose by 0.398"
+    },
+    "unit": {
+      "definition": "the plate-replicate unit",
+      "count_for_leg_1": 4,
+      "forbidden_units": ["well", "guide", "organoid"],
+      "independence": "unresolved; A10 stage 1 could not establish separate epithelial isolations or fibroblast lots, so every result here is a within-screen association"
+    },
+    "endpoints": {
+      "primary": {
+        "name": "HALLMARK_TGF_BETA_SIGNALING",
+        "species_index": "human",
+        "source": "raw_data/msigdb/h.all.v2024.1.Hs.symbols.gmt",
+        "why": "mechanism-matched: the recorded action of amphiregulin on mesenchymal cells is TGF-beta activation",
+        "recorded_coverage_in_this_screen": "54 of 54 members assayed on the human side, from the A10 hallmark coverage table",
+        "defined_before_this_test": true
+      },
+      "co_primary_confirmatory": {
+        "name": "fibroblast activation score",
+        "genes": ["COL1A1", "ACTA2", "POSTN", "CTHRC1", "TNC"],
+        "source": "frozen for trial E6 in Research Article/gate2_05_cardoso_2026; the score behind C50 and the C51 depth precedent",
+        "why": "the differentiation endpoint the mechanism predicts, already frozen in this repository for a different dataset"
+      },
+      "scoring": "mean log2 CPM over the set's members present in the human index, prior count 1, with the well's own human total as the denominator",
+      "prohibited": [
+        "modifying, re-weighting or swapping either endpoint after any value is seen",
+        "adding a block of Hallmark sets, which would enlarge the multiplicity family",
+        "defining an endpoint from this screen's own expression"
+      ]
+    },
+    "adjustment": {
+      "covariates": ["log fibroblast total counts", "epithelial read fraction"],
+      "method": "within each unit, regress the endpoint on the covariates across that unit's wells and use the residual",
+      "why": "C51 established that a depth control is load-bearing in this repository; composition shifts bulk expression on both sides",
+      "unadjusted_score": "reported as a sensitivity, never as the primary"
+    },
+    "statistic": {
+      "definition": "within each unit, the rank of the Areg well's residual among all wells of that unit; the four ranks combined by their sum",
+      "null": "exact, from the uniform rank distribution under the hypothesis that the Areg knockout has no specific effect on the endpoint",
+      "direction": "one-sided lower, declared before any value is read",
+      "reference_wells": "all other libraries in the unit supply the empirical reference; the two control wells anchor the unperturbed location",
+      "stated_assumption": "this is a randomization-style comparison against the unit's own perturbations, so it asks whether the Areg well is exceptional among perturbations rather than against an unperturbed population; it is conservative when other wells act on the same pathway",
+      "threshold": {
+        "primary_alpha_one_sided": 0.05,
+        "consistency_requirement": "the Areg well below its unit median in at least 3 of the 4 units",
+        "co_primary_requirement": "agreement in direction",
+        "declared_before_any_score": true
+      }
+    },
+    "discriminating_contrasts": {
+      "decision_attached": false,
+      "targets": ["EGFR", "ERBB2", "ERBB3", "ERBB4", "ITGB6", "HBEGF"],
+      "predictions": {
+        "delivery_hypothesis": "Areg lower; the receptor knockouts not systematically lower; Itgb6 not required to be lower because the activating integrin is placed on the recipient",
+        "autocrine_rival": "the receptor knockouts move with, or instead of, Areg",
+        "epithelial_activation_rival": "Itgb6 moves as much as Areg",
+        "ligand_specificity": "Hbegf weaker or absent; this contrast crosses plates and is labelled weaker"
+      }
+    },
+    "decision_rules": {
+      "supported": "the primary clears its threshold and its consistency requirement, the co-primary agrees in direction, and the receptor contrasts do not show the same shift; the reading is a within-screen descriptive association",
+      "inconclusive": "any other outcome, including a primary that clears while the co-primary contradicts it, and including a shift that the covariate sensitivity removes",
+      "precise_absence": "unavailable at this design; four units and a partial knockout cannot bound the effect, and no bound will be reported as absence",
+      "descriptive_only": "always, while preparation independence is unresolved"
+    },
+    "assumptions_carried": [
+      "the mouse ligand acts on the human receptor; stage 1 attempts a sequence-level check of the amphiregulin EGF-like domain and records the assumption as carried if it cannot be run",
+      "species read assignment identifies the compartment of origin, established in A10 from data rather than from sheet names"
+    ]
+  },
+  "leg_2": {
+    "dataset": {
+      "accession": "GSE136831",
+      "citation_doi": "10.1126/sciadv.aba1983",
+      "why_reused": "trial E6 tested the abundance version here and found nothing; the instrument is frozen and the estimand is new"
+    },
+    "instrument_reused_unchanged_from_e6": {
+      "donors": "Subject_Identity, restricted to Disease_Identity in IPF and Control; COPD out of scope",
+      "fibroblasts": "Manuscript_Identity in Fibroblast and Myofibroblast; mural cells excluded",
+      "epithelium": "CellType_Category Epithelial, pooled",
+      "cell_floor_per_compartment_per_donor": 50,
+      "minimum_donors_for_any_correlation": 10,
+      "depth_measure": "median deposited genes per cell, per donor and compartment",
+      "measure": "fraction of cells with a non-zero count",
+      "unit": "donor"
+    },
+    "new_estimand": "whether the fibroblast activation score tracks the recipient's own TGF-beta activation machinery, measured in the same fibroblasts, more closely than it tracks epithelial AREG detection",
+    "recipient_machinery_genes": ["ITGAV", "ITGB1", "ITGB8", "LTBP1", "TGFB1", "THBS1"],
+    "controls_not_optional": {
+      "depth_rule": "the C51 rule unchanged: if both members of a pair correlate with their own compartment depth at absolute rho of 0.4 or more, the pair is reported as confounded and is not read",
+      "shared_detection_control": {
+        "genes": ["ACTB", "GAPDH", "PGK1", "RPL13A", "RPS18"],
+        "rule": "scored the same way in the same fibroblasts; if the machinery correlation is no stronger than this control's correlation with the activation score, the result is attributed to shared detection and is not read"
+      },
+      "disease_stratum": "the IPF-only stratum reported next to the pooled result"
+    },
+    "declared_reading": {
+      "supported_observationally": "machinery predicts activation where ligand abundance did not, and the depth rule does not refuse the pair; still correlational, with no direction and no proximity",
+      "not_visible": "neither predicts; the report states the smallest effect the donor count could have detected",
+      "rival_not_excluded": "both predict equally",
+      "refused": "the depth rule or the shared-detection control refuses the pair; this refusal is the result and is reported as one"
+    }
+  },
+  "prohibited_readings": [
+    "Any claim about proximity, distance or gradient from a single-well co-culture.",
+    "Any secreted-protein or receptor-engagement claim; C36 stays Not established.",
+    "A receptor-knockout shift read as fibroblast causation.",
+    "Wells, guides or organoids as biological replicates.",
+    "Re-grading C37, C49 or C50, or adding a claim row; grading is the owner's decision.",
+    "A study note on the screen's source paper, whose owner reading is pending.",
+    "Reinterpreting A10's fits, or using A10's growth outcome as evidence for this question.",
+    "Substituting an alternative endpoint or depth budget for the declared one as though it were independent confirmation."
+  ],
+  "other_layers": [
+    {"layer": "secreted and shed ligand by targeted protein measurement", "value": "decisive for the ligand-availability rival and for C36", "verdict": "not feasible here; needs bench work"},
+    {"layer": "spatial transcriptomics of human fibrotic or tumour lung", "value": "tests the geometry claim the organoid cannot", "verdict": "feasible, pending a cohort audit and a frozen proximity definition"},
+    {"layer": "fibroblast surface protein by CITE-seq or equivalent", "value": "addresses C36 and A9 directly", "verdict": "unverified feasibility; needs a lung cohort with both modalities and adequate fibroblast depth"},
+    {"layer": "chromatin accessibility at fibroblast TGF-beta response elements", "value": "tests licensing at the regulatory layer", "verdict": "unverified feasibility; conditional on a public lung multiome with fibroblast depth"},
+    {"layer": "sequence comparison of the mouse and human amphiregulin EGF-like domains", "value": "bounds the cross-species assumption leg 1 carries", "verdict": "feasible and small; stage 1 owns it"}
+  ],
+  "order": [
+    "commit the rewritten card, the rationale, this contract and the plan",
+    "run stage 1 on the cached screen metadata, the existing A10 tables and the two unvalidated receptor gene rows",
+    "owner retains or revises the plan",
+    "commit stage 2 and only then run stage 3; leg 2 may run once stage 2 is frozen"
+  ]
+}
