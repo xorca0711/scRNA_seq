@@ -1,0 +1,16 @@
+{
+  "reviewed_at_utc": "2026-09-25T14:02:02.740906+00:00",
+  "method": "Rendered PNGs inspected using view_image; checked labels, legends, point clipping, unit definitions and explanatory captions.",
+  "figures": [
+    {
+      "path": "figures/extended_feasibility_coverage.png",
+      "sha256": "ac1e14c964f380f924119c63d549a7bc9173e2d6a51ea35700348ba084407cee",
+      "status": "visually_checked"
+    },
+    {
+      "path": "figures/developmental_capture_planning.png",
+      "sha256": "b4322352c0b6e9f9fcf63f532fb80fa6c37ee286a3663c98cf0899d9f3e5817d",
+      "status": "visually_checked"
+    }
+  ]
+}

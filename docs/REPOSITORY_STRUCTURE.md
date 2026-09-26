@@ -1,12 +1,12 @@
 # Repository structure and label scope
 
-Updated 25 September 2026. This contract follows the existing shared-analysis
+Updated 26 September 2026 (A0 registration). This contract follows the existing shared-analysis
 and paper-study layout. It defines where current material belongs; dated
 protocols, original trial names and immutable run records remain historical evidence.
 
 | Material | Canonical location | Rule |
 |---|---|---|
-| Repository-wide scientific questions | [RESEARCH_QUESTIONS.md](../RESEARCH_QUESTIONS.md) | One current register, A1–A14; link to source studies rather than maintaining a second register |
+| Repository-wide scientific questions | [RESEARCH_QUESTIONS.md](../RESEARCH_QUESTIONS.md) | One current register, A0–A14; link to source studies rather than maintaining a second register |
 | Question-specific plans and analyses | `RQ_Specified/A<id>_<topic>/` | Prospective plan, source metadata, configuration, scripts, tables, reports and gallery; reference the root question register |
 | Shared question figures | [analysis/figures/rq/README.md](../analysis/figures/rq/README.md) | Curated gallery/captions; assets, tables and provenance alongside; fresh script-16 runs under `renders/` |
 | Cross-question measurement checks | [RQ_MEASUREMENT_CONTRACTS.md](RQ_MEASUREMENT_CONTRACTS.md) | Reusable checks and legacy-ID crosswalk; biological decisions stay in the root register |
@@ -23,7 +23,7 @@ protocols, original trial names and immutable run records remain historical evid
 
 ## Identifier namespaces
 
-- `A1`–`A14` identify repository-wide questions; figures use the associated
+- `A0`–`A14` identify repository-wide questions; figures use the associated
   question ID, with panel/group suffixes where needed.
 - Paper-local IDs require paper context: `Niethamer/W1`, `Niethamer/S1`,
   `Sikkema/S1`, `Choi/D1`, `Yu/N1`, `Yu/U5`, `Yu/F01`. Equal short labels do

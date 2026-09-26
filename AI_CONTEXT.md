@@ -7,7 +7,37 @@ violated. Human-readable counterparts: [`README.md`](README.md) (overview),
 (AI-assisted development disclosure and scientific ownership),
 [`PROGRESS.md`](PROGRESS.md) (session state).
 
-## Current task complete: A10 design follow-up, 26 September 2026
+## Current task complete: A0 scientific pilot, 26 September 2026
+
+Branch `codex/a0-scientific-pilot` on merged main `f4d98e3`. The owner requested
+finishing A0, then opening a PR. Read
+`RQ_Specified/A0_conserved_epithelial_transition_program/reports/PILOT_V1_RESULTS.md`
+and `tables/pilot_v1/pilot_status.json`. The old A0 root `readiness.json` and
+`execution_record.json` are historical feasibility records, not current status.
+
+Discovery: 11,590 orthologs, 134 qualifying genes, 50 selected in 9 repair mice /
+11 developmental donors. Freeze commits: configuration `b544cbc`, programme
+`f1a1df7`, transfer implementation/stop `e3e12a0`; no V1 programme effects before
+that last commit. Transfer in 3 intestinal mice passes against stem but fails
+against mature enterocytes (median −0.0914 percentile-rank score points; 1/3
+positive). Both endpoints are mandatory. P4 is PRUNED by the pre-V1 rule; do not
+resume it as unfinished work or search for a module that rescues the outcome.
+Universality and causal fate modulation remain unresolved.
+
+Scripts 10–15 and 17 produce separate `tables/pilot_v1` / `figures/pilot_v1`
+artifacts and refuse output overwrites. Independent numerical and raw-score
+verification passed; all four figures were inspected. Count preparation required
+two performance corrections, with interrupted arrays preserved separately and
+no change to scientific rules. Source-QC cells were used; no de novo ambient or
+doublet audit was claimed. Original feasibility outputs are preserved, with four
+updated documents archived for their original hashes.
+
+Worktree: `X:/GitHub/scRNA_seq/.worktrees/a5-a11-biological-tests`. Preserve ignored
+caches and arrays, the primary checkout's untracked A0/other work, and reusable
+sources in `X:/GitHub/scRNA_seq-component-contract`. No author contact, Notion
+change, source-paper note or scientific owner acceptance is implied by the PR.
+
+## Previous task: A10 design follow-up, 26 September 2026
 
 Branch `codex/a10-design-followup`, after merged PR #79. Read
 `RQ_Specified/A10_organoid_growth_outcome/reports/FOLLOWUP_RESULTS.md` and

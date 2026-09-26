@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-09-26T10:34:19.707668+00:00",
+  "verifier_sha256": "5f2df18d3dd0f089bc18e781da3a2d7900e517d136dcd2bb49acd5f40654c5c2",
+  "summary_checks": 197037,
+  "raw_count_probe_genes": 83,
+  "raw_count_comparisons": 3320,
+  "maximum_summary_error": 0,
+  "maximum_raw_error": 4.993339075554104e-12,
+  "library_qc": {
+    "D1": {
+      "cells_verified": 3850,
+      "minimum_total": 486
+    },
+    "D2": {
+      "cells_verified": 3560,
+      "minimum_total": 2708,
+      "metadata_minus_deposited_gene_total_min": 0,
+      "metadata_minus_deposited_gene_total_median": 0.0,
+      "metadata_minus_deposited_gene_total_max": 0
+    },
+    "V1": {
+      "cells_verified": 1013,
+      "minimum_total": 1206
+    }
+  },
+  "source_raw_count_comparisons": 255340,
+  "programme_decision": "FROZEN_FOR_TRANSFER",
+  "eligible_genes": 134,
+  "selected_genes": 50
+}

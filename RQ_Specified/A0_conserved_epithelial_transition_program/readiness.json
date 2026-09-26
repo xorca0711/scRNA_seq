@@ -1,0 +1,47 @@
+{
+  "current_status": "FEASIBILITY_COMPLETE_PRIMARY_ANALYSIS_BLOCKED",
+  "biological_decision": "UNRESOLVED",
+  "full_pilot_complete": false,
+  "primary_analysis_ready": false,
+  "expression_program_learned": false,
+  "transfer_test_performed": false,
+  "completed": [
+    "Initial and extended public metadata audit",
+    "Published-state coverage counts",
+    "Repair-window feasibility",
+    "Developmental capture planning",
+    "Report and reproducibility checks"
+  ],
+  "roles": {
+    "D1": {
+      "status": "feasible_candidate_not_frozen",
+      "accession": "GSE141259",
+      "complete_triplets_proposed_window": 9
+    },
+    "D2": {
+      "status": "blocked_coverage_and_independent_unit_metadata",
+      "complete_developmental_encoded_groups": 1
+    },
+    "V1": {
+      "status": "blocked_replication_and_mouse_mapping",
+      "complete_verified_intestinal_mice": 2
+    }
+  },
+  "blocked_stages": {
+    "P1": "Need qualifying D2 and V1 cohorts, unit IDs, raw counts and independent state evidence before freezing all cohorts/settings.",
+    "P2": "Cannot learn a two-context program without eligible D2; one-context selection would answer a different question.",
+    "P3": "Requires a frozen discovery program and an eligible held-out tissue cohort.",
+    "P4": "Requires the program and evaluable cohorts; no specificity evidence has been generated."
+  },
+  "unblocking_requirements": [
+    "D2: cell-to-animal or independent-pool map and source-supported start/intermediate/destination states; at least 3 independent units, each with at least 30 cells/state.",
+    "V1: verified batch-to-mouse map that yields at least 3 qualifying units, or an eligible independent non-lung epithelial cohort.",
+    "Both: public raw count matrices matching those annotations and documented transition evidence beyond an unvalidated pseudotime label."
+  ],
+  "not_claimed": [
+    "All public datasets exhausted",
+    "Universal process established",
+    "Conservation disproved",
+    "P1\u2013P4 completed"
+  ]
+}

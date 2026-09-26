@@ -1,0 +1,17 @@
+{
+  "completed_utc": "2026-09-26T10:32:36.281011+00:00",
+  "git_commit": "04261f519bc04c05673bb73ae46d57a44d50ebf2",
+  "script_sha256": "6cee9aa786049c3ebb12c77129c69abeb555e4815c16c76254cde1c38ac8a80b",
+  "config_sha256": "5e33bc9cd01bdaa4dc9bcf72cfc254130e693cde639a642197d9badf58284ed4",
+  "preparation_sha256": "a71d565f5328a83225caa99071ab96ba9ba4bc7dd1612c82d36f2012c3a1aaf7",
+  "source_programme_effects_previously_inspected": false,
+  "V1_expression_effects_read": false,
+  "status": "FROZEN_FOR_TRANSFER",
+  "eligible_genes": 134,
+  "selected_genes": 50,
+  "outputs": {
+    "discovery_gene_effects.tsv.gz": "1fe5043db86e8930ad256b74e09b32d0a59e77c4d7ac3095764cabfaa4f79320",
+    "discovery_unit_effects.tsv": "2935bad274cd8e981d2eb9c0ce1c5198e8afc793e148f6d635ff77576b6a444d",
+    "frozen_programme.json": "a14fabc419e9be86cbd114dca412db1c61f561457b6f21f59f1e02469d2e31f7"
+  }
+}

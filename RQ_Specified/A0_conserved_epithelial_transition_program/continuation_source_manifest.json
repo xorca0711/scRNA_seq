@@ -1,0 +1,386 @@
+[
+  {
+    "requested_url": "https://cells.ucsc.edu/fetal-lung/desc.json",
+    "resolved_url": "https://cells.ucsc.edu/fetal-lung/desc.json",
+    "retrieved_at_utc": "2026-09-26T06:15:25.221511+00:00",
+    "bytes": 1979,
+    "sha256": "9e6082d01b0d1b4006329b09ac3cfc19864ca026df35b72c49f20451ac9ba4bf",
+    "cache_file": "fetal_lung_description.json",
+    "provenance_file": "fetal_lung_description.json.provenance.json"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE215nnn/GSE215896/soft/GSE215896_family.soft.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE215nnn/GSE215896/soft/GSE215896_family.soft.gz",
+    "retrieved_at_utc": "2026-09-26T06:18:55.709058+00:00",
+    "bytes": 3948,
+    "sha256": "855197341a6ab41ce6e02d8d061130b49ad4e8ab740b8aaa578ef707a5a68b40",
+    "cache_file": "GSE215896_family.soft.gz",
+    "provenance_file": "GSE215896_family.soft.gz.provenance.json"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE215nnn/GSE215898/soft/GSE215898_family.soft.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE215nnn/GSE215898/soft/GSE215898_family.soft.gz",
+    "retrieved_at_utc": "2026-09-26T06:20:40.574713+00:00",
+    "bytes": 6373,
+    "sha256": "e874cda2d3ffdeb8101edaf114445e86e309f372b2b36f20152ef9d8cbd44bf1",
+    "cache_file": "GSE215898_family.soft.gz",
+    "provenance_file": "GSE215898_family.soft.gz.provenance.json"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE264nnn/GSE264398/soft/GSE264398_family.soft.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE264nnn/GSE264398/soft/GSE264398_family.soft.gz",
+    "retrieved_at_utc": "2026-09-26T06:06:49.173752+00:00",
+    "bytes": 2737,
+    "sha256": "b64d5e59f051fdcfe80e14e8522b234491db7acacbd8ab8db0ee6decaed9f94e",
+    "cache_file": "GSE264398_family.soft.gz",
+    "provenance_file": "GSE264398_family.soft.gz.provenance.json"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE264nnn/GSE264407/soft/GSE264407_family.soft.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE264nnn/GSE264407/soft/GSE264407_family.soft.gz",
+    "retrieved_at_utc": "2026-09-26T06:07:52.041359+00:00",
+    "bytes": 4155,
+    "sha256": "a772dc428a08eb9bd82b0a9c0044d2a2816607571dfbbfc47de4647b31d3c564",
+    "cache_file": "GSE264407_family.soft.gz",
+    "provenance_file": "GSE264407_family.soft.gz.provenance.json"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE319nnn/GSE319370/soft/GSE319370_family.soft.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE319nnn/GSE319370/soft/GSE319370_family.soft.gz",
+    "retrieved_at_utc": "2026-09-26T05:59:46.559449+00:00",
+    "bytes": 2286,
+    "sha256": "726bee5794fde0cb291f3d158de7e7ecd3abef354f32729c369e7bcc89857210",
+    "cache_file": "GSE319370_family.soft.gz",
+    "provenance_file": "GSE319370_family.soft.gz.provenance.json"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6645nnn/GSM6645126/suppl/GSM6645126_Sountoulidis2022_10X140w1_counts.h5",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6645nnn/GSM6645126/suppl/GSM6645126_Sountoulidis2022_10X140w1_counts.h5",
+    "retrieved_at_utc": "2026-09-26T06:23:15.223691+00:00",
+    "bytes": 31639148,
+    "sha256": "df06f84c02109e98ed8170c0fce94031d71792fafe625a59b9fbc1f47b4f5e19",
+    "cache_file": "GSM6645126_counts.h5",
+    "provenance_file": "GSM6645126_counts.h5.provenance.json"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_atlas_UMIcounts.txt.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_atlas_UMIcounts.txt.gz",
+    "retrieved_at_utc": "2026-09-26T06:25:58.296248+00:00",
+    "bytes": 15984168,
+    "sha256": "667d8ffbc66e6c07c4e0327dd967277d707df2dd9c4130d3f5d56fee59d58278",
+    "cache_file": "Haber_counts.txt.gz",
+    "provenance_file": "Haber_counts.txt.gz.provenance.json"
+  },
+  {
+    "requested_url": "https://hdca-sweden.scilifelab.se/tissues-overview/downloads/",
+    "resolved_url": "https://hdca-sweden.scilifelab.se/tissues-overview/downloads/",
+    "retrieved_at_utc": "2026-09-26T06:20:39.335697+00:00",
+    "bytes": 51472,
+    "sha256": "2350a88f2effd32e730234587e76b9a009aba186c2b30e6f25a2c14ff711a362",
+    "cache_file": "hdca_downloads.html",
+    "provenance_file": "hdca_downloads.html.provenance.json"
+  },
+  {
+    "requested_url": "https://hdca-sweden.scilifelab.se/tissues-overview/lung/",
+    "resolved_url": "https://hdca-sweden.scilifelab.se/tissues-overview/lung/",
+    "retrieved_at_utc": "2026-09-26T06:19:00.007888+00:00",
+    "bytes": 53842,
+    "sha256": "ed3ed6b27102140be4ce03a09e4aadc68b5005a04c3e1ad222349821774be65a",
+    "cache_file": "hdca_lung.html",
+    "provenance_file": "hdca_lung.html.provenance.json"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/Peng-He-Lab/Human_fetal_lung_cell_atlas_2022/main/README.md",
+    "resolved_url": "https://raw.githubusercontent.com/Peng-He-Lab/Human_fetal_lung_cell_atlas_2022/main/README.md",
+    "retrieved_at_utc": "2026-09-26T06:00:47.890103+00:00",
+    "bytes": 2574,
+    "sha256": "d8b01550264184a04590411d7cef0f523eabf1f1c27e1bd74fc44b0f73e942fd",
+    "cache_file": "He_author_readme.md",
+    "provenance_file": "He_author_readme.md.provenance.json"
+  },
+  {
+    "requested_url": "https://fetal-lung-atlas.cells.ucsc.edu/dataset.json",
+    "resolved_url": "https://fetal-lung-atlas.cells.ucsc.edu/dataset.json",
+    "retrieved_at_utc": "2026-09-26T06:00:51.528338+00:00",
+    "bytes": 150642,
+    "sha256": "e2d9498a5d93db785d7a71fed815fe6843fec6a3282ec7b9f9678af087b8238d",
+    "cache_file": "He_cellbrowser_conf.json",
+    "provenance_file": "He_cellbrowser_conf.json.provenance.json"
+  },
+  {
+    "requested_url": "https://api.cellxgene.cziscience.com/curation/v1/collections/2d2e2acd-dade-489f-a2da-6c11aa654028",
+    "resolved_url": "https://api.cellxgene.cziscience.com/curation/v1/collections/2d2e2acd-dade-489f-a2da-6c11aa654028",
+    "retrieved_at_utc": "2026-09-26T06:01:54.964325+00:00",
+    "bytes": 79372,
+    "sha256": "6757f6f277eae1b3fc1da212e6bdaf96eec314239cb5d1d7e7963656a8119ef2",
+    "cache_file": "He_cellxgene_collection.json",
+    "provenance_file": "He_cellxgene_collection.json.provenance.json"
+  },
+  {
+    "requested_url": "https://datasets.cellxgene.cziscience.com/06c5de26-113f-4960-9b5a-143f8955303f.h5ad",
+    "resolved_url": "https://datasets.cellxgene.cziscience.com/06c5de26-113f-4960-9b5a-143f8955303f.h5ad",
+    "retrieved_at_utc": "2026-09-26T06:02:54.406082+00:00",
+    "bytes": 173142263,
+    "sha256": "9a525c3b0f556d82e47b4e312b85137bf73a77fbe50b210c6334850435396793",
+    "cache_file": "He_epi.h5ad",
+    "provenance_file": "He_epi.h5ad.provenance.json"
+  },
+  {
+    "requested_url": "https://cells.ucsc.edu/fetal-lung-atlas/epithelium-no-cilium/dataset.json",
+    "resolved_url": "https://cells.ucsc.edu/fetal-lung-atlas/epithelium-no-cilium/dataset.json",
+    "retrieved_at_utc": "2026-09-26T06:02:41.279571+00:00",
+    "bytes": 1115,
+    "sha256": "ab19e70b7c34639bc42c58a6e4a43cf4d88446e13c43bce088d0fc87d34c9200",
+    "cache_file": "He_epi_dataset.json",
+    "provenance_file": "He_epi_dataset.json.provenance.json"
+  },
+  {
+    "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7618435/fullTextXML",
+    "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7618435/fullTextXML",
+    "retrieved_at_utc": "2026-09-26T05:59:44.667543+00:00",
+    "bytes": 313165,
+    "sha256": "2b9a4adcaa8ad9455551667e661114f9a2771b7e202ed06ea9f2029c5e3a17cf",
+    "cache_file": "He_fulltext.xml",
+    "provenance_file": "He_fulltext.xml.provenance.json"
+  },
+  {
+    "requested_url": "https://api.github.com/repos/brianpenghe/python-genomics/git/trees/master?recursive=1",
+    "resolved_url": "https://api.github.com/repos/brianpenghe/python-genomics/git/trees/master?recursive=1",
+    "retrieved_at_utc": "2026-09-26T05:59:40.676748+00:00",
+    "bytes": 3115,
+    "sha256": "4b79f12096604e8b29aa23337b9ab7d88db477f7dd45b97a85dd878c1f9eca77",
+    "cache_file": "He_github_tree.json",
+    "provenance_file": "He_github_tree.json.provenance.json"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/Peng-He-Lab/Human_fetal_lung_cell_atlas_2022/main/sample_info_for_Pasha.xlsx",
+    "resolved_url": "https://raw.githubusercontent.com/Peng-He-Lab/Human_fetal_lung_cell_atlas_2022/main/sample_info_for_Pasha.xlsx",
+    "retrieved_at_utc": "2026-09-26T06:00:48.788612+00:00",
+    "bytes": 14851,
+    "sha256": "4533c447dcf7ec6ba3e2c87ecdfeb890081513fb7603a9eb846213f133f395a3",
+    "cache_file": "He_sample_info.xlsx",
+    "provenance_file": "He_sample_info.xlsx.provenance.json"
+  },
+  {
+    "requested_url": "https://fetal-lung.cellgeni.sanger.ac.uk/scRNA.html",
+    "resolved_url": "https://fetal-lung.cellgeni.sanger.ac.uk/scRNA.html",
+    "retrieved_at_utc": "2026-09-26T06:01:52.299524+00:00",
+    "bytes": 23896,
+    "sha256": "86a8fe7b162322e2a6342d0effd7efa2a971a3c5bae92bb0f09e4790a1bb05c5",
+    "cache_file": "He_scRNA.html",
+    "provenance_file": "He_scRNA.html.provenance.json"
+  },
+  {
+    "requested_url": "https://cells.ucsc.edu/fetal-lung-atlas/dataset.json",
+    "resolved_url": "https://cells.ucsc.edu/fetal-lung-atlas/dataset.json",
+    "retrieved_at_utc": "2026-09-26T06:01:53.398663+00:00",
+    "bytes": 3453,
+    "sha256": "6aa87d530172f9c6a7c7aeb9ace18b075626bbae9121e4dcf4988aadf64103f4",
+    "cache_file": "He_ucsc_dataset.json",
+    "provenance_file": "He_ucsc_dataset.json.provenance.json"
+  },
+  {
+    "requested_url": "https://www.covid19cellatlas.org/index.healthy.html",
+    "resolved_url": "https://www.covid19cellatlas.org/index.healthy.html",
+    "retrieved_at_utc": "2026-09-26T06:17:12.996309+00:00",
+    "bytes": 50196,
+    "sha256": "166c6b9fb2ad723344ae9f130a6331323803bf2558654b171a50c0fe68a572c9",
+    "cache_file": "healthy_atlas_index.html",
+    "provenance_file": "healthy_atlas_index.html.provenance.json"
+  },
+  {
+    "requested_url": "https://www.informatics.jax.org/downloads/reports/HOM_MouseHumanSequence.rpt",
+    "resolved_url": "https://www.informatics.jax.org/downloads/reports/HOM_MouseHumanSequence.rpt",
+    "retrieved_at_utc": "2026-09-26T06:20:37.160785+00:00",
+    "bytes": 15112222,
+    "sha256": "b8220b7689f11066c3d82e0f24c23ba3c7a30ad26a0f24ab639357aebc09582d",
+    "cache_file": "MGI_MouseHuman.rpt",
+    "provenance_file": "MGI_MouseHuman.rpt.provenance.json"
+  },
+  {
+    "requested_url": "https://api.github.com/repos/Spencerfar/fetal_lung_analysis/issues/1/comments",
+    "resolved_url": "https://api.github.com/repos/Spencerfar/fetal_lung_analysis/issues/1/comments",
+    "retrieved_at_utc": "2026-09-26T06:12:46.885732+00:00",
+    "bytes": 1867,
+    "sha256": "373a25f27c166991485f2d06902754fcb1794639f485da69db9382004437433d",
+    "cache_file": "Quach_access_comments.json",
+    "provenance_file": "Quach_access_comments.json.provenance.json"
+  },
+  {
+    "requested_url": "https://api.github.com/repos/Spencerfar/fetal_lung_analysis/issues/1",
+    "resolved_url": "https://api.github.com/repos/Spencerfar/fetal_lung_analysis/issues/1",
+    "retrieved_at_utc": "2026-09-26T06:12:46.315351+00:00",
+    "bytes": 2525,
+    "sha256": "d91bcff83eab0d403f39fd74228725c1dc8d3cbd769c98fb57e97ecec94a431f",
+    "cache_file": "Quach_access_issue.json",
+    "provenance_file": "Quach_access_issue.json.provenance.json"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/The-HQQ/Human_fetal_lung_atlas/main/README.md",
+    "resolved_url": "https://raw.githubusercontent.com/The-HQQ/Human_fetal_lung_atlas/main/README.md",
+    "retrieved_at_utc": "2026-09-26T06:07:49.171384+00:00",
+    "bytes": 1456,
+    "sha256": "bed9d56fe61306633ecbef09e016f509807775cdee9ba7fc4bb7246177a6da19",
+    "cache_file": "Quach_author_readme.md",
+    "provenance_file": "Quach_author_readme.md.provenance.json"
+  },
+  {
+    "requested_url": "https://repo-prod.prod.sagebase.org/repo/v1/entity/syn54935148",
+    "resolved_url": "https://repo-prod.prod.sagebase.org/repo/v1/entity/syn54935148",
+    "retrieved_at_utc": "2026-09-26T06:11:18.456087+00:00",
+    "bytes": 393,
+    "sha256": "2f6bccbd1aa09cfbd89ed5cf5ecde2455268fa6653cbcfd7a99a07ff4efa5873",
+    "cache_file": "Quach_epi_entity.json",
+    "provenance_file": "Quach_epi_entity.json.provenance.json"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/The-HQQ/Human_fetal_lung_atlas/main/Figures/Figure_4.R",
+    "resolved_url": "https://raw.githubusercontent.com/The-HQQ/Human_fetal_lung_atlas/main/Figures/Figure_4.R",
+    "retrieved_at_utc": "2026-09-26T06:07:50.607592+00:00",
+    "bytes": 4687,
+    "sha256": "c4b1d2ec2540da4c8daef4f28d749cc181c4eeba39ba25afa1f2434f57d17716",
+    "cache_file": "Quach_figure4.R",
+    "provenance_file": "Quach_figure4.R.provenance.json"
+  },
+  {
+    "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11246468/fullTextXML",
+    "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11246468/fullTextXML",
+    "retrieved_at_utc": "2026-09-26T06:05:54.684048+00:00",
+    "bytes": 243980,
+    "sha256": "f797d95806fac2ef80ece3995a5415383f4b384525d8c1bf2d67ed69d4574b53",
+    "cache_file": "Quach_fulltext.xml",
+    "provenance_file": "Quach_fulltext.xml.provenance.json"
+  },
+  {
+    "requested_url": "https://api.github.com/repos/The-HQQ/Human_fetal_lung_atlas/git/trees/main?recursive=1",
+    "resolved_url": "https://api.github.com/repos/The-HQQ/Human_fetal_lung_atlas/git/trees/main?recursive=1",
+    "retrieved_at_utc": "2026-09-26T06:06:45.480583+00:00",
+    "bytes": 8899,
+    "sha256": "12fd614a2baf32f7d92c26fd8f8ac4e2b551705021dd003766065de1c9deb2a0",
+    "cache_file": "Quach_github_tree.json",
+    "provenance_file": "Quach_github_tree.json.provenance.json"
+  },
+  {
+    "requested_url": "https://api.github.com/repos/spencerfar/fetal_lung_analysis/git/trees/main?recursive=1",
+    "resolved_url": "https://api.github.com/repos/spencerfar/fetal_lung_analysis/git/trees/main?recursive=1",
+    "retrieved_at_utc": "2026-09-26T06:06:46.708814+00:00",
+    "bytes": 10122,
+    "sha256": "8bbce89a17cd667e31036455e0ef4dfac5bd999b8c74033eb0181706ed500cc4",
+    "cache_file": "Quach_github_tree2.json",
+    "provenance_file": "Quach_github_tree2.json.provenance.json"
+  },
+  {
+    "requested_url": "https://repo-prod.prod.sagebase.org/repo/v1/entity/syn54530171",
+    "resolved_url": "https://repo-prod.prod.sagebase.org/repo/v1/entity/syn54530171",
+    "retrieved_at_utc": "2026-09-26T06:09:48.456299+00:00",
+    "bytes": 284,
+    "sha256": "c794776a97426f45840f82375b4e4fd37496911e6c5702ba2a69547b42857a1b",
+    "cache_file": "Quach_synapse_folder.json",
+    "provenance_file": "Quach_synapse_folder.json.provenance.json"
+  },
+  {
+    "requested_url": "https://repo-prod.prod.sagebase.org/repo/v1/entity/syn55957285",
+    "resolved_url": "https://repo-prod.prod.sagebase.org/repo/v1/entity/syn55957285",
+    "retrieved_at_utc": "2026-09-26T06:09:50.524036+00:00",
+    "bytes": 288,
+    "sha256": "780b36d700ab964af3b469d406f83d28c6cdc6e8eab4c89abb391a0a7750c968",
+    "cache_file": "Quach_synapse_folder2.json",
+    "provenance_file": "Quach_synapse_folder2.json.provenance.json"
+  },
+  {
+    "requested_url": "https://zenodo.org/api/records/11231149",
+    "resolved_url": "https://zenodo.org/api/records/11231149",
+    "retrieved_at_utc": "2026-09-26T06:07:54.089818+00:00",
+    "bytes": 3834,
+    "sha256": "218bedef979965628d6a8e0fbd67cf1ffcd71a730372df6a1368beab2c162b12",
+    "cache_file": "Quach_zenodo.json",
+    "provenance_file": "Quach_zenodo.json.provenance.json"
+  },
+  {
+    "requested_url": "https://cells.ucsc.edu/lung-dev/all/dataset.json",
+    "resolved_url": "https://cells.ucsc.edu/lung-dev/all/dataset.json",
+    "retrieved_at_utc": "2026-09-26T06:18:52.840670+00:00",
+    "bytes": 36463,
+    "sha256": "d096f866e9a855400d46255c279419a21cb652a17c2c1d58615f135bd1456a9a",
+    "cache_file": "Sountoulidis_all_dataset.json",
+    "provenance_file": "Sountoulidis_all_dataset.json.provenance.json"
+  },
+  {
+    "requested_url": "https://cells.ucsc.edu/lung-dev/all/exprMatrix.tsv.gz",
+    "resolved_url": "https://cells.ucsc.edu/lung-dev/all/exprMatrix.tsv.gz",
+    "retrieved_at_utc": "2026-09-26T06:24:09.202467+00:00",
+    "bytes": 661416697,
+    "sha256": "c5a7899d20539fa974bb3d9a621c876073aa97087c36951e710bc41cb9f9de65",
+    "cache_file": "Sountoulidis_counts.tsv.gz",
+    "provenance_file": "Sountoulidis_counts.tsv.gz.provenance.json"
+  },
+  {
+    "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9928586/fullTextXML",
+    "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9928586/fullTextXML",
+    "retrieved_at_utc": "2026-09-26T06:14:20.806149+00:00",
+    "bytes": 282070,
+    "sha256": "c8832e4a15269376f77be8deebcbcb56a89555f52563eba24188289a224c5a21",
+    "cache_file": "Sountoulidis_fulltext.xml",
+    "provenance_file": "Sountoulidis_fulltext.xml.provenance.json"
+  },
+  {
+    "requested_url": "https://cells.ucsc.edu/lung-dev/dataset.json",
+    "resolved_url": "https://cells.ucsc.edu/lung-dev/dataset.json",
+    "retrieved_at_utc": "2026-09-26T06:15:24.086961+00:00",
+    "bytes": 1412,
+    "sha256": "0deb7175b5e35df3b541a2cea0f4441c2d14da652d3a9e7b7ce48f62d4f8a275",
+    "cache_file": "Sountoulidis_lungdev_dataset.json",
+    "provenance_file": "Sountoulidis_lungdev_dataset.json.provenance.json"
+  },
+  {
+    "requested_url": "https://cells.ucsc.edu/lung-dev/all/meta.tsv",
+    "resolved_url": "https://cells.ucsc.edu/lung-dev/all/meta.tsv",
+    "retrieved_at_utc": "2026-09-26T06:17:05.196003+00:00",
+    "bytes": 24072135,
+    "sha256": "c52d608bf774a465770d75df99c90d6d3c4ef5d38c9d64e33bc578168ae3d942",
+    "cache_file": "Sountoulidis_lungdev_meta.tsv",
+    "provenance_file": "Sountoulidis_lungdev_meta.tsv.provenance.json"
+  },
+  {
+    "requested_url": "https://cells.ucsc.edu/fetal-lung/meta.tsv",
+    "resolved_url": "https://cells.ucsc.edu/fetal-lung/meta.tsv",
+    "retrieved_at_utc": "2026-09-26T06:14:16.768001+00:00",
+    "bytes": 6176594,
+    "sha256": "fc4fd3a0c83baf28ef0c43336db618490e24c2a88af348addb323bd76b096e92",
+    "cache_file": "Sountoulidis_meta.tsv",
+    "provenance_file": "Sountoulidis_meta.tsv.provenance.json"
+  },
+  {
+    "requested_url": "https://cells.ucsc.edu/fetal-lung/dataset.json",
+    "resolved_url": "https://cells.ucsc.edu/fetal-lung/dataset.json",
+    "retrieved_at_utc": "2026-09-26T06:13:43.485932+00:00",
+    "bytes": 12324,
+    "sha256": "4f2784b287b99af9156d0d745c505175c1275bebb251bbc86001e31da034d02a",
+    "cache_file": "Sountoulidis_ucsc_dataset.json",
+    "provenance_file": "Sountoulidis_ucsc_dataset.json.provenance.json"
+  },
+  {
+    "requested_url": "https://repo-prod.prod.sagebase.org/repo/v1/entity/children",
+    "method": "POST",
+    "read_only_query": {
+      "parentId": "syn54530171"
+    },
+    "retrieved_at_utc": "2026-09-26T06:10:42.238161+00:00",
+    "bytes": 8427,
+    "sha256": "abc4432f09f28820674213bba4f6220f1369e7969819f46d852d3942724947a9",
+    "cache_file": "syn54530171_children.json",
+    "provenance_file": "syn54530171_children.json.provenance.json"
+  },
+  {
+    "requested_url": "https://repo-prod.prod.sagebase.org/repo/v1/entity/children",
+    "method": "POST",
+    "read_only_query": {
+      "parentId": "syn55957285"
+    },
+    "retrieved_at_utc": "2026-09-26T06:10:43.401984+00:00",
+    "bytes": 2175,
+    "sha256": "41231d28f6394c78e11f3e85b642192cb2f31b52f3bc7018a36f26af3f81a7f5",
+    "cache_file": "syn55957285_children.json",
+    "provenance_file": "syn55957285_children.json.provenance.json"
+  }
+]

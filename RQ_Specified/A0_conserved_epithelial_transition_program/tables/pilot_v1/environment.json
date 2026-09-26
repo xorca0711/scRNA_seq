@@ -1,0 +1,17 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\dream\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.18.0",
+    "h5py": "3.16.0",
+    "matplotlib": "3.11.1"
+  },
+  "parser_equivalence_probe": {
+    "source": "Sountoulidis_counts.tsv.gz",
+    "first_rows": 12,
+    "values_compared": 1958832,
+    "maximum_absolute_difference": 0
+  }
+}

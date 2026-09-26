@@ -1,0 +1,22 @@
+{
+  "baseline_commit": "4ed38ff",
+  "reason": "Preserve original feasibility documentation before current-pilot entry-point and canonical-link updates. Scientific tables and execution records remain unchanged.",
+  "files": {
+    "README.md": {
+      "bytes": 3477,
+      "sha256": "aff77405d19ed43f80288a2a1e68c40bc63691e50890a9f5d00deed8dc369b0f"
+    },
+    "REPRODUCING.md": {
+      "bytes": 4710,
+      "sha256": "6dabb70f4628ca4c2cb400f2a35f7ecb3e3df5f08a4123a4a050ab602eb6c196"
+    },
+    "PLAN.md": {
+      "bytes": 15108,
+      "sha256": "14db4f6f9432b94f4ae292a0b1166372c99c93cf59c5f1190686273176462ea6"
+    },
+    "DATASET_CANDIDATES.md": {
+      "bytes": 5842,
+      "sha256": "e9786bac0afa5b7a0d2705c67fc6c8d0cbd8dc5abef6c4694de09c427e147743"
+    }
+  }
+}

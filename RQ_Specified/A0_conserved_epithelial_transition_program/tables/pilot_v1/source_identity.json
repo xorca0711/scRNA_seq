@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "captures": 39,
+  "author_donors": 17,
+  "age_conflicts": 0,
+  "interpretation": "Author donor IDs define units; GEO captures do not add replication. Matching ages check source identity, not donor independence by themselves.",
+  "inputs": {
+    "Sountoulidis_lungdev_meta.tsv": "c52d608bf774a465770d75df99c90d6d3c4ef5d38c9d64e33bc578168ae3d942",
+    "GSE215898_family.soft.gz": "e874cda2d3ffdeb8101edaf114445e86e309f372b2b36f20152ef9d8cbd44bf1"
+  }
+}

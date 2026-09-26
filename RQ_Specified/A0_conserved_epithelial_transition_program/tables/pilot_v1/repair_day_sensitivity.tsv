@@ -1,0 +1,13 @@
+endpoint	sensitivity	omitted_day	effect
+destination	equal_day_mean		0.026700310407710703
+destination	leave_one_day_out_median	10	0.028042197422856907
+destination	leave_one_day_out_median	11	0.025151617789122671
+destination	leave_one_day_out_median	12	0.028735614357908945
+destination	leave_one_day_out_median	13	0.027348780487804869
+destination	leave_one_day_out_median	15	0.025151617789122671
+start	equal_day_mean		0.036794468351335749
+start	leave_one_day_out_median	10	0.038264549990355334
+start	leave_one_day_out_median	11	0.035750327352518596
+start	leave_one_day_out_median	12	0.039359020526677391
+start	leave_one_day_out_median	13	0.037170079454033278
+start	leave_one_day_out_median	15	0.035750327352518596

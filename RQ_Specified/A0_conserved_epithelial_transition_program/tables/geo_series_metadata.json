@@ -1,0 +1,131 @@
+{
+  "GSE141259": {
+    "title": [
+      "Longitudinal single-cell transcriptomics analysis of mouse lung upon bleomycin-induced injury"
+    ],
+    "overall_design": [
+      "Single-cell transcriptomics time-course experiment."
+    ],
+    "n_geo_samples": 60,
+    "pubmed_ids": [
+      "32678092"
+    ],
+    "supplementary_files": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_HighResolution_barcodes.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_HighResolution_cellinfo.csv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_HighResolution_genes.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_HighResolution_rawcounts.mtx.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_WholeLung_barcodes.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_WholeLung_cellinfo.csv.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_WholeLung_genes.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_WholeLung_rawcounts.mtx.gz"
+    ]
+  },
+  "GSE149563": {
+    "title": [
+      "The genomic, epigenomic and biophysical cues controlling the emergence of the gas exchange niche in the lung"
+    ],
+    "overall_design": [
+      "All mouse experiments used CD-1 female mice with the age indicated in the libraries . Single-cell suspensions were prepared from whole mouse lungs. For all libraries, DAPI-negative cells were  were sorted by flow cytometry to obtain heterogeneous whole lung sample. Human tissue was derived from normal peripheral lung tissue. Single cell suspension was depleted of CD45-positive cells by bead selection. All of the murine post-natal timepoints also had CD45-positive cells removed from cell sort. Single-cell barcoded droplets were produced using 10X Single Cell 3\u2019 v2 chemistry. Libraries generated were sequenced using HiSeq2500 instrument in High-output mode. Reads were aligned and gene level unique molecular identifier (UMI) counts were obtained using the Cell Ranger pipeline."
+    ],
+    "n_geo_samples": 10,
+    "pubmed_ids": [
+      "33707239"
+    ],
+    "supplementary_files": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE149nnn/GSE149563/suppl/GSE149563_RAW.tar"
+    ]
+  },
+  "GSE160876": {
+    "title": [
+      "Age-determined expression of priming protease TMPRSS2 and localization of SARS-CoV-2 in lung epithelium"
+    ],
+    "overall_design": [
+      "Single Cell RNAseq of dissociated mouse lungs at ages: E18, P0, P7, P14, and P64. Suspensions were enriched for cells that were CD45 negative, Ter119 negative, and viable.",
+      "These data are part of a larger investigation (data not provided here) examining age-determined expression of priming protease TMPRSS2 and localization of SARS-CoV-2 in lung epithelium.",
+      "[contributor]  Vanderbilt COVID-19 Consortium Cohort",
+      "[contributor]  Human Cell Atlas Biological Network"
+    ],
+    "n_geo_samples": 9,
+    "pubmed_ids": [
+      "33180746"
+    ],
+    "supplementary_files": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE160nnn/GSE160876/suppl/GSE160876_RAW.tar"
+    ]
+  },
+  "GSE165063": {
+    "title": [
+      "A Single Cell Atlas of Alveolar Development"
+    ],
+    "overall_design": [
+      "Single Cell RNAseq of dissociated mouse lungs at ages: E12, E15, P3, P5, and P7. Suspensions were enriched for cells that were CD45 negative, Ter119 negative, and viable. P7 lungs were enriched for epithelial cells by collecting EPCAM positive cells."
+    ],
+    "n_geo_samples": 6,
+    "pubmed_ids": [
+      "34927678"
+    ],
+    "supplementary_files": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE165nnn/GSE165063/suppl/GSE165063_RAW.tar"
+    ]
+  },
+  "GSE254356": {
+    "title": [
+      "Morphogenesis and regeneration share a conserved core transition cell state program that control lung epithelial cell fate"
+    ],
+    "overall_design": [
+      "Epcam+ or Epcam+Icam1+ cells from E14.5 mouse embroynic lungs are isolated and proceeded to single cell sequencing"
+    ],
+    "n_geo_samples": 3,
+    "pubmed_ids": [
+      "39667932"
+    ],
+    "supplementary_files": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE254nnn/GSE254356/suppl/GSE254356_RAW.tar"
+    ]
+  },
+  "GSE67602": {
+    "title": [
+      "Single-cell RNA-seq of murine epidermis"
+    ],
+    "overall_design": [
+      "We isolated and analyzed totally 1422 epidermal cells from dorsal telogen skin of C57BL/6 mice aged 56 +/-4 days. Sca1-microbeads were used to increase HF cell numbers and Sca1- (HF) and Sca1+ (mainly IFE) cell fractions were captured in a ratio of  2:1 on a microfluidic Fluidigm C1 system."
+    ],
+    "n_geo_samples": 1422,
+    "pubmed_ids": [
+      "27641957"
+    ],
+    "supplementary_files": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE67nnn/GSE67602/suppl/GSE67602_Joost_et_al_expression.txt.gz"
+    ]
+  },
+  "GSE92332": {
+    "title": [
+      "A single-cell survey of the small intestinal epithelium"
+    ],
+    "overall_design": [
+      "To understand normal tissue homeostasis, untreated cells were profiled, while to investiage the impact of enteric pathogens on epithelial cells, mice infected with both Salmonella Enterica and the parasitic worm H. polygyrus were profiled using both 3'-droplet-based and full length plate-based single-cell RNAseq. RANKL-mediated differentiation of organoid cultures were used to sequence the rare intestinal M cell, these were then compared to M cells obtained from the in vivo follicle associated epithelium (FAE).",
+      "",
+      "Please note that the FAE_UMIcounts.txt file has been updated on May 7th 2020."
+    ],
+    "n_geo_samples": 1957,
+    "pubmed_ids": [
+      "29144463",
+      "30089906"
+    ],
+    "supplementary_files": [
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_AtlasFullLength_TPM.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_EEC_UMIcounts.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_FAE_UMIcounts.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_LargeCellSort_UMIcounts.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_Org_RANKL_UMIcounts.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_RAW.tar",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_Regional_UMIcounts.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_SalmHelmFullLength_TPM.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_SalmHelm_UMIcounts.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_SalmonellaInfect_UMIcounts.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_Supplementary_files_format_and_content_readme.txt.gz",
+      "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_atlas_UMIcounts.txt.gz"
+    ]
+  }
+}

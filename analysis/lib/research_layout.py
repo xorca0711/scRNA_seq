@@ -14,7 +14,7 @@ def check_research_layout(root: Path, result) -> None:
     package = root / 'analysis/figures/rq/il1b_context'
     questions = (root / 'RESEARCH_QUESTIONS.md').read_text(encoding='utf-8')
     ids = re.findall(r'^### (A\d+)\.', questions, flags=re.M)
-    result.equal(ids, [f'A{i}' for i in range(1, 15)], 'canonical question sequence')
+    result.equal(ids, [f'A{i}' for i in range(15)], 'canonical question sequence')
     result.require(not (paper / 'DERIVED_RESEARCH_QUESTIONS.md').exists(),
                    'duplicate current paper-local RQ register')
     roadmap = json.loads((root / 'Research Article/ROADMAP.json').read_text(encoding='utf-8'))

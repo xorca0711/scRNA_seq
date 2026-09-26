@@ -1,0 +1,20 @@
+{
+  "completed_utc": "2026-09-26T10:37:42.413794+00:00",
+  "git_commit": "e3e12a07fa1381fc2581360440ffffaae503fc13",
+  "script_sha256": "fa29ac827dcab665e85f0e2b27b0f048121b0e399c410bbde5f087761285705e",
+  "configuration_sha256": "5e33bc9cd01bdaa4dc9bcf72cfc254130e693cde639a642197d9badf58284ed4",
+  "execution_plan_sha256": "5d8fb2be2e065831990ce33f2d38a6f13927af28a1f03c607cdd7fd32186b805",
+  "module_sha256": "a14fabc419e9be86cbd114dca412db1c61f561457b6f21f59f1e02469d2e31f7",
+  "preparation_sha256": "a71d565f5328a83225caa99071ab96ba9ba4bc7dd1612c82d36f2012c3a1aaf7",
+  "V1_primary_rule_passed": false,
+  "status": "STOP_PRIMARY_TRANSFER_NOT_SUPPORTED",
+  "specificity": "pruned_after_primary_transfer_failure_as_declared_before_V1_scores",
+  "outputs": {
+    "transfer_cell_scores.tsv.gz": "2c6db7805cd61fc9905f32a35d6548eb07037cdd2512db2b4532631b1521d3c4",
+    "transfer_unit_scores.tsv": "f987d70d84c7a3c9c34a639f6f616200cbfd3a23a99e894ff97377dce7c1a1b3",
+    "transfer_unit_differences.tsv": "fc5faf6236ecfde0d5f34435187ee415faac4777f39a087996ef98a06e5f43db",
+    "transfer_summary.tsv": "c8e479a5606225b2b938f3c289eb320332ae15c91ce5c931c73f8ac965a90d0f",
+    "transfer_leave_one_out.tsv": "7581983794a51a23f538dd889f3594230e2e04eea3a64dae4190aee302dcf6aa",
+    "repair_day_sensitivity.tsv": "0bf797b8fcadd7d0bca1dc7dd5dd5076786182a0769fb0bc50c2f12351c94c82"
+  }
+}

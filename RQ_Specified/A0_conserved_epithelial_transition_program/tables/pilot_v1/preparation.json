@@ -1,0 +1,117 @@
+{
+  "completed_utc": "2026-09-26T10:31:53.122362+00:00",
+  "script_sha256": "3068b40a84d36e7644926cd9a0dbd8f8f52e61695b0c3c8802eeb56651299014",
+  "config_sha256": "5e33bc9cd01bdaa4dc9bcf72cfc254130e693cde639a642197d9badf58284ed4",
+  "inputs": {
+    "X:\\GitHub\\scRNA_seq\\RQ_Specified\\A0_conserved_epithelial_transition_program\\cache\\sources\\GSE141259_HighResolution_cellinfo.csv.gz": {
+      "bytes": 1424472,
+      "sha256": "fe82e4a9c86720186c03c602148ea52118458e50a0847b869ce375b50a284da8"
+    },
+    "X:\\GitHub\\scRNA_seq-component-contract\\RQ_Specified\\A5_developmental_programme_reuse\\cache\\GSE141259_HighResolution_genes.txt.gz": {
+      "bytes": 70000,
+      "sha256": "e7c86817507d191a030350c7f595661e283a0ff10a4f7d5b6fcf52b455892c04"
+    },
+    "X:\\GitHub\\scRNA_seq\\.worktrees\\a5-a11-biological-tests\\RQ_Specified\\A5_developmental_programme_reuse\\cache\\GSE141259_HighResolution_rawcounts.mtx.gz": {
+      "bytes": 76106578,
+      "sha256": "ebcf8825e94b787fef9ec69be98d8bdfd1a2adbd7359aeecc828062ab31b61b8"
+    },
+    "X:\\GitHub\\scRNA_seq\\.worktrees\\a5-a11-biological-tests\\RQ_Specified\\A5_developmental_programme_reuse\\cache\\GSE141259_HighResolution_barcodes.txt.gz": {
+      "bytes": 171842,
+      "sha256": "5d61b289238aeb1c0dda40416378f074183a930d8362d57a98ac977e00d12b1c"
+    },
+    "X:\\GitHub\\scRNA_seq\\.worktrees\\a5-a11-biological-tests\\RQ_Specified\\A0_conserved_epithelial_transition_program\\cache\\continuation_v1\\Sountoulidis_lungdev_meta.tsv": {
+      "bytes": 24072135,
+      "sha256": "c52d608bf774a465770d75df99c90d6d3c4ef5d38c9d64e33bc578168ae3d942"
+    },
+    "X:\\GitHub\\scRNA_seq\\.worktrees\\a5-a11-biological-tests\\RQ_Specified\\A0_conserved_epithelial_transition_program\\cache\\continuation_v1\\GSM6645126_counts.h5": {
+      "bytes": 31639148,
+      "sha256": "df06f84c02109e98ed8170c0fce94031d71792fafe625a59b9fbc1f47b4f5e19"
+    },
+    "X:\\GitHub\\scRNA_seq\\.worktrees\\a5-a11-biological-tests\\RQ_Specified\\A0_conserved_epithelial_transition_program\\cache\\continuation_v1\\Sountoulidis_counts.tsv.gz": {
+      "bytes": 661416697,
+      "sha256": "c5a7899d20539fa974bb3d9a621c876073aa97087c36951e710bc41cb9f9de65"
+    },
+    "X:\\GitHub\\scRNA_seq\\.worktrees\\a5-a11-biological-tests\\RQ_Specified\\A0_conserved_epithelial_transition_program\\cache\\continuation_v1\\Haber_counts.txt.gz": {
+      "bytes": 15984168,
+      "sha256": "667d8ffbc66e6c07c4e0327dd967277d707df2dd9c4130d3f5d56fee59d58278"
+    },
+    "X:\\GitHub\\scRNA_seq\\.worktrees\\a5-a11-biological-tests\\RQ_Specified\\A0_conserved_epithelial_transition_program\\tables\\v1_haber_verified_mouse_mapping.csv": {
+      "bytes": 461,
+      "sha256": "3c35344c191af8487b9191e532fed7038491955eb55b67f48b824635dda84512"
+    },
+    "X:\\GitHub\\scRNA_seq\\.worktrees\\a5-a11-biological-tests\\RQ_Specified\\A0_conserved_epithelial_transition_program\\cache\\continuation_v1\\MGI_MouseHuman.rpt": {
+      "bytes": 15112222,
+      "sha256": "b8220b7689f11066c3d82e0f24c23ba3c7a30ad26a0f24ab639357aebc09582d"
+    }
+  },
+  "prepared": {
+    "D1_cells.tsv": {
+      "bytes": 197272,
+      "sha256": "d43e13c82f7121c1f602238e51b966b1a2600c05bfc3f28232bf8e44842b0d5b"
+    },
+    "D1_counts.bin": {
+      "bytes": 370385400,
+      "sha256": "830bc532cd59cfae38b5bfa05941536ce6234d927cd14729b87d760be2d9a29f"
+    },
+    "D1_genes.json": {
+      "bytes": 248307,
+      "sha256": "7db08d47d9d0ceb148614d2924f156334dfb391f27c01b8950e41059f7ee4ea9"
+    },
+    "D1_shape.json": {
+      "bytes": 63,
+      "sha256": "4f27826041a15d543b65c59590d1c1548d7010f4d34abdcaed59a9be78a9cde9"
+    },
+    "D2_cells.tsv": {
+      "bytes": 372419,
+      "sha256": "bcf1448c453b386e69e2857d957f2bad9098ba91bb7d8e688e06cd9422bb5362"
+    },
+    "D2_counts.bin": {
+      "bytes": 363604160,
+      "sha256": "14890817e7a8269bfff2b7ef10df2018a14c90ef500008cca9765e6ef0c6a25d"
+    },
+    "D2_genes.json": {
+      "bytes": 276061,
+      "sha256": "3d6725e690f239cfbd1dab15699766d6b9bed00d9289bc0ba51ccc5e487f0235"
+    },
+    "D2_shape.json": {
+      "bytes": 63,
+      "sha256": "c2ab86be04abebbb1b478b5ada07f7391e34e81881221564d2159a2c6666bff1"
+    },
+    "V1_cells.tsv": {
+      "bytes": 81552,
+      "sha256": "5c13d45eb6f9cd40b5ae913eb5f9baf7c843c933ab70e68f36f6bb063392be04"
+    },
+    "V1_counts.bin": {
+      "bytes": 64714492,
+      "sha256": "2a68b0b05b891b5a9dcc2d0ea5beee9a649b1c9eefa58d5f2d3d874e54198869"
+    },
+    "V1_genes.json": {
+      "bytes": 158098,
+      "sha256": "0a038c4630cc8cb17305a05e63f6278438337dfb36bda86b3ccf6391753bad1d"
+    },
+    "V1_shape.json": {
+      "bytes": 63,
+      "sha256": "26c02235929db5370137b9590437008885aa170ebf7afc16b9be1d2c587136c1"
+    }
+  },
+  "raw_count_comparisons": 255340,
+  "orthologs": 11590,
+  "programme_effects_computed": false,
+  "roles": {
+    "D1": {
+      "units": 9,
+      "cells": 3850,
+      "genes": 24051
+    },
+    "D2": {
+      "units": 11,
+      "cells": 3560,
+      "genes": 25534
+    },
+    "V1": {
+      "units": 3,
+      "cells": 1013,
+      "genes": 15971
+    }
+  }
+}
