@@ -64,3 +64,10 @@ effect sizes without p-values, confidence intervals or biological replicate clai
 Technical record: the first metadata-identity assertion stopped before any output
 because GEO titles are descriptive sentences. Parsing the exact `Library name:`
 description field resolved it without changing the cohort or scientific criteria.
+
+Post-fit source clarification: the authors identify TIGIT as the in-plate control.
+The original metadata-only audit above could not establish that role. A bounded
+source check left preparation/calibration unresolved because the detailed
+supplement was not successfully retrieved; see the
+[access record](../tables/followup_v1/source_design_check.json). No exclusion or
+model was changed after this clarification.

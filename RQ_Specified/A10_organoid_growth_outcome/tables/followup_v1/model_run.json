@@ -1,0 +1,188 @@
+{
+  "stage": "followup_models",
+  "completed_utc": "2026-09-26T04:44:58.343995+00:00",
+  "script_sha256": "aeaa83740871a5b862140b925321a2ce0fc26ac52eb67b87f8a3aa324a7105f9",
+  "spec_sha256": "864a4b02e97b2bd58163ec74837a10c40d1fb3741cf2b7573d44e062079e446c",
+  "input_hashes": {
+    "hallmark_npz": "75805f3fe608a8620d7cfa09439db4b51f9beee028ca5773998b7c6e01bd545a",
+    "original_module_scores": "de0a083b521e5abbde0775c0769d8f78823cf3e07c3ef1ac97daf88f5bc09687",
+    "mouse_gmt": "e5aa9acd833179d1d571b48bf91a28fb387722ce68ff53094d05847659d66460",
+    "human_gmt": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772"
+  },
+  "coverage": {
+    "mouse__HALLMARK_E2F_TARGETS": {
+      "assayed": 194,
+      "source": 199
+    },
+    "mouse__HALLMARK_G2M_CHECKPOINT": {
+      "assayed": 188,
+      "source": 195
+    },
+    "mouse__HALLMARK_MYC_TARGETS_V1": {
+      "assayed": 190,
+      "source": 197
+    },
+    "mouse__HALLMARK_APOPTOSIS": {
+      "assayed": 161,
+      "source": 161
+    },
+    "mouse__HALLMARK_P53_PATHWAY": {
+      "assayed": 195,
+      "source": 200
+    },
+    "mouse__HALLMARK_MTORC1_SIGNALING": {
+      "assayed": 191,
+      "source": 199
+    },
+    "human__HALLMARK_E2F_TARGETS": {
+      "assayed": 198,
+      "source": 200
+    },
+    "human__HALLMARK_G2M_CHECKPOINT": {
+      "assayed": 195,
+      "source": 200
+    },
+    "human__HALLMARK_MYC_TARGETS_V1": {
+      "assayed": 195,
+      "source": 200
+    },
+    "human__HALLMARK_APOPTOSIS": {
+      "assayed": 160,
+      "source": 161
+    },
+    "human__HALLMARK_P53_PATHWAY": {
+      "assayed": 196,
+      "source": 200
+    },
+    "human__HALLMARK_MTORC1_SIGNALING": {
+      "assayed": 195,
+      "source": 200
+    }
+  },
+  "instrument_reproduction": [
+    {
+      "programme": "frozen_repair_modules",
+      "baseline": "pooled",
+      "metric": "baseline_r2",
+      "expected_rounded": 0.5864,
+      "observed": 0.5863615500363942,
+      "absolute_error": 3.844996360580222e-05
+    },
+    {
+      "programme": "frozen_repair_modules",
+      "baseline": "pooled",
+      "metric": "epithelial_increment",
+      "expected_rounded": 0.0144,
+      "observed": 0.014369338822409872,
+      "absolute_error": 3.06611775901279e-05
+    },
+    {
+      "programme": "frozen_repair_modules",
+      "baseline": "pooled",
+      "metric": "fibroblast_increment",
+      "expected_rounded": 0.023,
+      "observed": 0.02301677623388243,
+      "absolute_error": 1.677623388243038e-05
+    },
+    {
+      "programme": "frozen_repair_modules",
+      "baseline": "within_unit",
+      "metric": "baseline_r2",
+      "expected_rounded": 0.3774,
+      "observed": 0.37737102029114944,
+      "absolute_error": 2.8979708850573882e-05
+    },
+    {
+      "programme": "frozen_repair_modules",
+      "baseline": "within_unit",
+      "metric": "epithelial_increment",
+      "expected_rounded": 0.0036,
+      "observed": 0.0035793991076641385,
+      "absolute_error": 2.060089233586141e-05
+    },
+    {
+      "programme": "frozen_repair_modules",
+      "baseline": "within_unit",
+      "metric": "fibroblast_increment",
+      "expected_rounded": 0.0161,
+      "observed": 0.016087169803618795,
+      "absolute_error": 1.2830196381204834e-05
+    },
+    {
+      "programme": "growth_hallmark",
+      "baseline": "pooled",
+      "metric": "baseline_r2",
+      "expected_rounded": 0.5864,
+      "observed": 0.5863615500363942,
+      "absolute_error": 3.844996360580222e-05
+    },
+    {
+      "programme": "growth_hallmark",
+      "baseline": "pooled",
+      "metric": "epithelial_increment",
+      "expected_rounded": 0.0136,
+      "observed": 0.013583111418947968,
+      "absolute_error": 1.688858105203077e-05
+    },
+    {
+      "programme": "growth_hallmark",
+      "baseline": "pooled",
+      "metric": "fibroblast_increment",
+      "expected_rounded": -0.0017,
+      "observed": -0.0017489425512555723,
+      "absolute_error": 4.894255125557239e-05
+    },
+    {
+      "programme": "growth_hallmark",
+      "baseline": "within_unit",
+      "metric": "baseline_r2",
+      "expected_rounded": 0.3774,
+      "observed": 0.37737102029114944,
+      "absolute_error": 2.8979708850573882e-05
+    },
+    {
+      "programme": "growth_hallmark",
+      "baseline": "within_unit",
+      "metric": "epithelial_increment",
+      "expected_rounded": 0.0426,
+      "observed": 0.042596852894164816,
+      "absolute_error": 3.1471058351828507e-06
+    },
+    {
+      "programme": "growth_hallmark",
+      "baseline": "within_unit",
+      "metric": "fibroblast_increment",
+      "expected_rounded": -0.0154,
+      "observed": -0.015385631554767798,
+      "absolute_error": 1.4368445232202515e-05
+    }
+  ],
+  "verdicts": {
+    "proliferation_over_baseline": {
+      "within_group_margin_met": false,
+      "consistent_plate_shift_gain": false
+    },
+    "remaining_over_proliferation": {
+      "within_group_margin_met": true,
+      "consistent_plate_shift_gain": true
+    },
+    "proliferation_over_remaining": {
+      "within_group_margin_met": true,
+      "consistent_plate_shift_gain": true
+    },
+    "full_growth_over_baseline": {
+      "within_group_margin_met": true,
+      "consistent_plate_shift_gain": true
+    }
+  },
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "interpretation": "same-screen descriptive comparison; biological units unresolved; plate shift also changes target mix",
+  "outputs": {
+    "model_scores.tsv": "024d404ac9a6a4b473f9a3914a60326e362c81f250b686eb774e0089a8053e61",
+    "model_predictions.tsv": "0686bde530e315a14d3e92c49bb11c9fc97f544ad5d498ff164822bebfd8d91f",
+    "model_fold_errors.tsv": "cd6ffa96d62f0215ef6dc9d435ea82f79a47134c08c2c0af19561a209a0729a7",
+    "model_comparisons.tsv": "7b2b8dd4752a041e7eb49e9127a825db6efe0510dab208d7460334cc2e307cfb",
+    "model_fold_comparisons.tsv": "738e3ad4f4372ed2904b43a924a22b31a4d822fff642d1a8271343085f20c6a1"
+  }
+}

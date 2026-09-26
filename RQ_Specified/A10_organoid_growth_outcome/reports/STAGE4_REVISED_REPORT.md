@@ -13,6 +13,10 @@ use both primary blocks as their baseline. The original narrative and numbers
 below are retained as the dated reporting record; this addendum governs current
 interpretation. Proposed follow-ups now follow the review's diagnostic-first order.
 
+That follow-up is now complete: read [the new results](FOLLOWUP_RESULTS.md) for
+the design audit, fixed growth-block comparisons, plate-shift gains and remaining
+absolute-performance failures. The numbers below still belong to stage 4.
+
 ## Original report, 25 September 2026
 
 25 September 2026. The specification, its blocks and its 0.02 margin were committed in

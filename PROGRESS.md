@@ -3,7 +3,49 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-## Current: merged analyses and documentation review, 26 September 2026
+## Current: A10 design and model follow-up complete, 26 September 2026
+
+Branch `codex/a10-design-followup`, based on merged documentation PR #79
+(`290af2a`). Start with the
+[follow-up report](RQ_Specified/A10_organoid_growth_outcome/reports/FOLLOWUP_RESULTS.md)
+and [design audit](RQ_Specified/A10_organoid_growth_outcome/reports/FOLLOWUP_DESIGN_REPORT.md).
+
+- The owner authorized the diagnostic-first sequence. Plan `53f5c7a`, diagnostic
+  results/model specification `330f5f2`, implementation `c7f976a`/`6f49669` all
+  precede the new fits. Existing analysis references were checked before launch.
+- All 886 GEO sample records and the original joins were audited. Only four
+  targets span plates; after TIGIT/TDTOMATO removal, plate 3 has no shared target.
+  Every imaging row uses SAM1. Preparation identities remain unresolved.
+- The six-score growth block adds beyond nominated E2F/G2M scores. Relative
+  reference-error reductions are 4.84% within groups and 36.96% in plate holdout;
+  fixed untransformed and drop-both checks agree. Proliferation alone misses the
+  combined rule. Full growth lowers plate-shift error by 42.39%, with positive
+  gains on all four plates, but absolute R-squared remains negative on 3/4.
+- These are same-screen descriptive results. Plate holdout also changes target
+  mix; RNA is concurrent with the imaging endpoint, and no independent biological
+  preparation mapping exists. No p/q values or causal/fate claims were introduced.
+- Twelve original grid values reproduced. All 1,399 verification checks passed;
+  32 independent QR fits reproduced plate predictions within 1.37e-11. The figure
+  was inspected. Portable evidence tests were added for repository CI.
+- Pruned: unidentifiable target-adjusted plate effects, target functional claims
+  without editing efficiency, and further pathway/model searches to rescue transfer.
+  The authorized bounded sequence is complete. Stronger work needs a preparation/
+  lot crosswalk, imaging calibration and a matched validation design. A1/A5/A11
+  retain their separate external-evidence requirements.
+- New tables are under A10 `tables/followup_v1/`, with scripts 07–10 and a figure.
+  Original outputs/configs are untouched. Reused count/metadata caches stay in
+  `X:/GitHub/scRNA_seq-component-contract`; GMTs remain in the primary checkout.
+  The small GEO SOFT cache is in the current worktree. No author contact, source
+  paper note, raw-count re-extraction or Notion expansion was performed.
+- A bounded post-fit source check identifies TIGIT as the authors' in-plate
+  control. Detailed supplemental methods were not retrieved (direct access failed;
+  archive exceeded the 30 MB bound). Their preparation/calibration information is
+  uninspected, not established absent. The source/access record preserves this.
+- Local delivery checks: four portable evidence tests and 2,426 repository
+  documentation/artifact checks passed, including the final source-access addendum;
+  all 30 historical A10 scientific code/config/table files are unchanged.
+
+## Previous milestone: merged analyses and documentation review, 26 September 2026
 
 Scientific baseline: main `32ded9b`, including merged A1 PR #74, A5/A11 PR #77
 and A10 PRs #76/#78. The latest A10 interpretation is the revised specification

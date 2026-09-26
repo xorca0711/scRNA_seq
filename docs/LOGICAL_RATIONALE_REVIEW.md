@@ -6,6 +6,12 @@ contract, and how they feed the A1–A14 register. This is a logic and implement
 review, not a new raw-data analysis or an independent replication. Historical
 claim grades, scripts, frozen specifications and numerical outputs are unchanged.
 
+**Subsequent execution:** the owner authorized the follow-up, now completed in the
+[A10 follow-up report](../RQ_Specified/A10_organoid_growth_outcome/reports/FOLLOWUP_RESULTS.md).
+The proposed order below is retained as the review's decision record. The new
+analysis has its own prospective amendment, results and adaptive stopping rules;
+it does not overwrite the evidence reviewed here.
+
 ## Overall assessment
 
 The programme remains biologically motivated, but the supported conclusion is

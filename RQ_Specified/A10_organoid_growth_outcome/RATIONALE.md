@@ -7,6 +7,14 @@ and numerical outputs preserve the execution record. Read the
 [stage 4 report](reports/STAGE4_REVISED_REPORT.md) and
 [logical review](../../docs/LOGICAL_RATIONALE_REVIEW.md#a10-corrections).
 
+**Execution update:** the diagnostic-first follow-up is now complete. The
+[results](reports/FOLLOWUP_RESULTS.md) show conditional information beyond the
+two nominated proliferation scores and relative gains in all plate holdouts,
+alongside negative absolute R-squared on three of four plates. Target allocation
+and plate cannot be separated adequately; independent preparations remain unknown.
+The sequence below explains the logic, with the completed follow-up supplying
+steps 5/6. Further model expansion was pruned pending design/calibration evidence.
+
 ## Biological premise
 
 Alveolar type 2 cells produce surfactant and include progenitors that can replenish
@@ -103,6 +111,12 @@ Likewise A10 does not fill A1's regulation-to-fate gap, A5's lineage/function ga
 or A11's missing non-neoplastic injury comparator.
 
 ## Source-paper boundary
+
+The follow-up includes a bounded post-fit design check: the main article identifies
+TIGIT as its in-plate control, while the detailed methods supplement was not
+successfully retrieved. The [source record](tables/followup_v1/source_design_check.json)
+states what was and was not inspected. This does not create a study note, update
+the owner's reading status or establish preparation independence.
 
 The source paper is roadmap paper 14 (DOI 10.1073/pnas.2606113123). Its owner
 reading remains recorded as pending. This review uses the deposit and existing

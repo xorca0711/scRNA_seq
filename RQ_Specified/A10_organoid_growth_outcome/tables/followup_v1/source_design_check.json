@@ -1,0 +1,51 @@
+{
+  "checked_utc": "2026-09-26T05:12:14.234661+00:00",
+  "scope": "Bounded post-fit design-source check, not a roadmap study note or a change to model selection.",
+  "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13367804/",
+  "article_retrieval": {
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC13367804/unicode",
+    "retrieved_utc": "2026-09-26T05:02:14.783406+00:00",
+    "bytes": 83469,
+    "sha256": "1856e0ad0c5457aa9634fbaa27e17be468744e7fa165851f590cfbb493fd678d"
+  },
+  "confirmed_design_facts": [
+    {
+      "locator": "Results: Identifying Regulators of AT2 Stem Cell Activity; Figure 2 caption",
+      "fact": "Tigit sgRNA is the in-plate control used by the authors."
+    },
+    {
+      "locator": "Figure 2E/F caption",
+      "fact": "The authors describe four replicates per sgRNA/gene but this caption does not supply the deposited library-to-isolation crosswalk."
+    },
+    {
+      "locator": "Materials and Methods",
+      "fact": "The main article directs detailed methods to the supplementary appendix."
+    }
+  ],
+  "supplement_attempts": [
+    {
+      "source": "PMC direct PDF",
+      "result": "Response was not PDF"
+    },
+    {
+      "source": "PNAS direct supplement",
+      "result": "HTTP 403"
+    },
+    {
+      "source": "Europe PMC supplementaryFiles API",
+      "result": "Bundle exceeded the explicit 30 MB bounded retrieval; no PDF extracted"
+    },
+    {
+      "source": "Europe PMC individual PDF mirror",
+      "result": "HTTP 403"
+    }
+  ],
+  "unresolved": [
+    "preparation/donor/lot crosswalk",
+    "physical area units and transformation/calibration",
+    "per-well editing efficiency"
+  ],
+  "consequence": "Control-role wording updated. Existing model exclusions and numerical results remain unchanged. Supplement not inspected; do not claim those missing facts are absent from it.",
+  "paper_note_created": false,
+  "roadmap_reading_status_changed": false
+}

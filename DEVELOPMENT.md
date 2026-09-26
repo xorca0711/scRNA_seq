@@ -963,3 +963,26 @@ specifications, code and output tables. It retains the A5/A11 association result
 qualifies the small A1 regional comparison and narrows A10's descriptive claim.
 No historical claim grade or numerical artifact was changed. Notion and source
 paper notes were not expanded; no author request was sent.
+
+## A10 adaptive follow-up, 26 September 2026
+
+| Date | Item | Proposed by | Decided by | Decision | Reason |
+|---|---|---|---|---|---|
+| 2026-09-26 | Execute the follow-up after the logical review | Codex review sequence | Owner explicitly requested proceeding | Audit design first, freeze a new descriptive specification, then execute eligible block/plate comparisons | Resolve concrete assumptions before further model expansion |
+| 2026-09-26 | Restrict plate holdout to joint plate/target shift; prune unidentifiable and functional extensions | Codex from phase A diagnostics | Codex applied the owner-authorized adaptive gates; scientific acceptance remains for review | Execute bounded comparisons, stop unsupported target/plate causal claims | Only four targets span plates, preparation IDs remain absent, and guide sequences do not measure editing efficiency |
+
+| Date | Rejected or reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-26 | Initial exact-match assertion using GEO titles as library IDs | Titles are descriptive; explicit Library name fields identify all 886 samples | The first audit attempt stopped before output; Codex corrected parsing without changing eligibility |
+| 2026-09-26 | Plate-only interpretation of transfer and expectation that proliferation alone explains the signal | Plate and target mix change together; the remaining growth block adds conditional information | Prespecified design and model comparisons narrowed the interpretation |
+| 2026-09-26 | Reading a 42.39% relative error reduction as reliable absolute prediction | Full-growth held-out R-squared remains negative on three of four plates | Independent verification and absolute-error diagnostic; no result or threshold was changed |
+
+The [follow-up report](RQ_Specified/A10_organoid_growth_outcome/reports/FOLLOWUP_RESULTS.md)
+records the biological logic, prospective commits, all comparison rules and
+adaptive stopping. Original results and historical claim grades remain unchanged.
+
+A final bounded design-source check established TIGIT's author-designated control
+role. It did not resolve preparations/calibration: detailed supplemental methods
+could not be inspected through the bounded retrieval. The access record preserves
+that limitation; it is not a claim that the supplement lacks those facts. No
+study note, roadmap-reading update, author contact or model retuning occurred.
