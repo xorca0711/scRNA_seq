@@ -1,0 +1,273 @@
+{
+  "schema": "a2-stage2-freeze/v1",
+  "frozen_utc": "2026-09-26T12:45:29.951270+00:00",
+  "authorizes": "stage 3, leg 1 only; leg 2 keeps its own declarations in the contract",
+  "contract": {
+    "path": "RQ_Specified/A2_areg_source_delivery/config/a2_delivery_contract.json",
+    "sha256": "3d5cd67fbccfe49a397ba10a5f7e49e2e637661192e5911f737597e5bec75fd8"
+  },
+  "stage1": {
+    "run_record_sha256": "d41f2b22b9d11580941e64f478e7de4d53940099561e2a9d556070fe2693bbe1",
+    "endpoint_scored": false
+  },
+  "inputs": {
+    "RQ_Specified/A10_organoid_growth_outcome/tables/library_totals.tsv": "19c90e9aa068445edfbb21cc8af95d581427db11e4fdbc5f51943380f4f90ca2",
+    "RQ_Specified/A10_organoid_growth_outcome/cache/GSE307112_xenome_stats.csv.gz": "045b9da623db54a59948f1e8e6b68c1587fa4786a6838a51a890dfe59064edf5"
+  },
+  "endpoints_unchanged_from_the_contract": {
+    "primary": "HALLMARK_TGF_BETA_SIGNALING, human, 54 of 54 members present",
+    "co_primary": "fibroblast activation score COL1A1, ACTA2, POSTN, CTHRC1, TNC, 5 of 5 present",
+    "scoring": "mean over members of log2(count / the well's human total * 1e6 + 1), the same prior and denominator convention A10 used",
+    "co_primary_role": "must agree in direction; the primary carries the decision"
+  },
+  "reference_set": {
+    "primary": "all wells of the Areg well's own unit, [60, 60, 60, 60] per unit",
+    "no_exclusion_in_the_primary": "excluding wells changes the rank universe, so the primary keeps every well and the depth restrictions are declared sensitivities instead"
+  },
+  "adjustment": {
+    "covariates": [
+      "log2 of the well's fibroblast total counts",
+      "epithelial count fraction"
+    ],
+    "epithelial_count_fraction_definition": "mouse total counts divided by the sum of mouse and human total counts, from the A10 library totals table",
+    "clarification_of_the_contract": "the contract said epithelial read fraction; this freeze fixes the count-based fraction, because it comes from the same counts the endpoint uses and is reproducible from a tracked table without re-deriving the species assignment",
+    "method": "within each unit, ordinary least squares of the endpoint on an intercept and the two covariates, across that unit's wells; the residual is the analysed quantity",
+    "why": "stage 1 found fibroblast depth spanning four orders of magnitude and all four Areg wells above their unit median, so the depth control is load-bearing rather than decorative; C51 is the precedent"
+  },
+  "primary_test": {
+    "statistic": "the ascending rank of the Areg well's residual among its unit's residuals, summed over the four units",
+    "direction": "one-sided lower, declared before any value is read",
+    "alpha": 0.05,
+    "null": {
+      "unit_sizes": [
+        60,
+        60,
+        60,
+        60
+      ],
+      "rank_space": 12960000,
+      "smallest_attainable_one_sided_p": 7.71604938271605e-08,
+      "smallest_attainable_p_scientific": "7.72e-08",
+      "critical_rank_sum": 64,
+      "p_at_critical": 0.04903,
+      "mean_percentile_required": 0.2667,
+      "exact_size_with_consistency_requirement": 0.04903
+    },
+    "decision_threshold": "reject only if the rank sum is at or below 64 and the Areg well is below its unit median in at least 3 of 4 units",
+    "exact_size": 0.04903,
+    "what_a_rejection_means": "the Areg well is exceptional among the perturbations in its own unit, in the declared direction; it is not a comparison against an unperturbed population, and it is conservative when other wells in the unit act on the same pathway"
+  },
+  "declared_sensitivities": {
+    "S1_depth_floor": {
+      "definition": "reference set restricted to wells with at least 100000 fibroblast counts",
+      "unit_sizes": [
+        32,
+        48,
+        31,
+        57
+      ],
+      "null": {
+        "unit_sizes": [
+          32,
+          48,
+          31,
+          57
+        ],
+        "rank_space": 2714112,
+        "smallest_attainable_one_sided_p": 3.6844463308809657e-07,
+        "smallest_attainable_p_scientific": "3.68e-07",
+        "critical_rank_sum": 44,
+        "p_at_critical": 0.04957,
+        "mean_percentile_required": 0.2802
+      },
+      "why": "a mean over 54 genes in a shallow well reports detection rather than programme state"
+    },
+    "S2_depth_matched": {
+      "definition": "reference set restricted to the 20 wells nearest the Areg well in log fibroblast depth within its unit, the Areg well included",
+      "unit_sizes": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "null": {
+        "unit_sizes": [
+          20,
+          20,
+          20,
+          20
+        ],
+        "rank_space": 160000,
+        "smallest_attainable_one_sided_p": 6.25e-06,
+        "smallest_attainable_p_scientific": "6.25e-06",
+        "critical_rank_sum": 22,
+        "p_at_critical": 0.04572,
+        "mean_percentile_required": 0.275
+      },
+      "why": "the Areg wells are systematically deeper than their units, so a depth-matched reference tests the result against that asymmetry directly"
+    },
+    "S3_unadjusted": {
+      "definition": "the same statistic on the raw endpoint, with no residualization",
+      "role": "sensitivity only, never the primary"
+    },
+    "requirement_for_a_supported_reading": "the primary must clear its threshold and the effect must hold in direction in at least one of S1 and S2, because the depth asymmetry is known in advance"
+  },
+  "declared_diagnostic": "the within-unit association between the endpoint and log fibroblast depth, reported next to the result; stage 1 reasoned that a depth artefact would push the score upward, which opposes the declared direction, and stage 3 must show whether that holds",
+  "discriminating_contrasts": {
+    "decision_attached": false,
+    "within_plate_3": [
+      "EGFR",
+      "ERBB2",
+      "ERBB3",
+      "ITGB6"
+    ],
+    "across_plates": [
+      "HBEGF, on plate 4, labelled weaker for that reason"
+    ],
+    "dropped": {
+      "ERBB4": "not expressed in the perturbed compartment: 0.367 log2 CPM when not targeted and exactly zero when targeted, so there is no receptor to remove"
+    },
+    "low_abundance_flag": {
+      "EGFR": "1.967 log2 CPM when not targeted, about 2.9 counts per million, so this contrast is weaker than Erbb2 or Erbb3"
+    },
+    "uninterpretable_wells": {
+      "floor": 100000,
+      "wells": [
+        {
+          "unit": "3-1",
+          "target": "ERBB2",
+          "library": "3-1_D03_ERBB2",
+          "fibroblast_total_counts": 1759
+        },
+        {
+          "unit": "3-1",
+          "target": "ERBB4",
+          "library": "3-1_F03_ERBB4",
+          "fibroblast_total_counts": 82689
+        },
+        {
+          "unit": "3-1",
+          "target": "TDTOMATO",
+          "library": "3-1_G10_TDTOMATO",
+          "fibroblast_total_counts": 11417
+        },
+        {
+          "unit": "3-2",
+          "target": "EGFR",
+          "library": "3-2_C03_EGFR",
+          "fibroblast_total_counts": 51605
+        },
+        {
+          "unit": "3-2",
+          "target": "ERBB2",
+          "library": "3-2_D03_ERBB2",
+          "fibroblast_total_counts": 97637
+        },
+        {
+          "unit": "3-2",
+          "target": "TDTOMATO",
+          "library": "3-2_G10_TDTOMATO",
+          "fibroblast_total_counts": 14219
+        },
+        {
+          "unit": "3-3",
+          "target": "TDTOMATO",
+          "library": "3-3_B05_TDTOMATO",
+          "fibroblast_total_counts": 10231
+        },
+        {
+          "unit": "3-3",
+          "target": "ITGB6",
+          "library": "3-3_C02_ITGB6",
+          "fibroblast_total_counts": 4865
+        },
+        {
+          "unit": "3-3",
+          "target": "ERBB2",
+          "library": "3-3_D03_ERBB2",
+          "fibroblast_total_counts": 68491
+        },
+        {
+          "unit": "3-3",
+          "target": "TDTOMATO",
+          "library": "3-3_G10_TDTOMATO",
+          "fibroblast_total_counts": 17021
+        }
+      ],
+      "rule": "a contrast whose well is below the floor is reported as uninterpretable, not as evidence either way"
+    }
+  },
+  "control_wells": {
+    "role_downgraded": true,
+    "reason": "four of the eight plate-3 control wells hold fewer than 100000 fibroblast counts, so they do not define the unperturbed location on this plate",
+    "new_role": "descriptive context only"
+  },
+  "areg_wells": {
+    "3-1": {
+      "library": "3-1_F07_AREG",
+      "fibroblast_total_counts": 408995,
+      "clears_depth_floor": true,
+      "epithelial_count_fraction": 0.7935
+    },
+    "3-2": {
+      "library": "3-2_F07_AREG",
+      "fibroblast_total_counts": 993663,
+      "clears_depth_floor": true,
+      "epithelial_count_fraction": 0.7855
+    },
+    "3-3": {
+      "library": "3-3_F07_AREG",
+      "fibroblast_total_counts": 202922,
+      "clears_depth_floor": true,
+      "epithelial_count_fraction": 0.7092
+    },
+    "3-4": {
+      "library": "3-4_F07_AREG",
+      "fibroblast_total_counts": 1006613,
+      "clears_depth_floor": true,
+      "epithelial_count_fraction": 0.794
+    }
+  },
+  "decision_rules_unchanged": {
+    "supported": "the primary clears its threshold and its consistency requirement, the co-primary agrees in direction, at least one depth sensitivity holds in direction, and the receptor contrasts do not show the same shift",
+    "inconclusive": "any other outcome",
+    "precise_absence": "unavailable at this design, declared before any test",
+    "descriptive_only": "always, while preparation independence is unresolved"
+  },
+  "changes_from_the_contract": [
+    {
+      "change": "Erbb4 dropped from the discriminating set",
+      "reason": "not expressed in the perturbed compartment: 0.367 log2 CPM when not targeted and exactly zero when targeted, so there is no receptor to remove",
+      "source": "stage 1 item 2"
+    },
+    {
+      "change": "Egfr flagged as low-abundance",
+      "reason": "1.967 log2 CPM when not targeted, about 2.9 counts per million, so this contrast is weaker than Erbb2 or Erbb3",
+      "source": "stage 1 item 2"
+    },
+    {
+      "change": "a fibroblast depth floor for reading single wells, plus two declared depth sensitivities and a supported-reading requirement",
+      "reason": "fibroblast depth spans four orders of magnitude and the Areg wells are systematically deeper than their units",
+      "source": "stage 1 item 4"
+    },
+    {
+      "change": "the control wells' anchor role downgraded to descriptive",
+      "reason": "half of the plate-3 control wells are shallow",
+      "source": "stage 1 item 4"
+    },
+    {
+      "change": "epithelial read fraction fixed as the count-based epithelial fraction",
+      "reason": "reproducible from a tracked table and derived from the same counts as the endpoint",
+      "source": "this freeze"
+    }
+  ],
+  "unchanged": [
+    "the hypothesis",
+    "both endpoints",
+    "the declared direction",
+    "the unit",
+    "the prohibitions",
+    "precise absence remaining unavailable"
+  ],
+  "endpoint_scored": false
+}

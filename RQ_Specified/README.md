@@ -8,7 +8,7 @@ tables and galleries. Source-paper analyses belong in `Research Article/`.
 |---|---|---|
 | A0 | [Conserved epithelial transition programme](A0_conserved_epithelial_transition_program/README.md) | Pilot complete: 50-gene lung discovery passes, intestinal mature-endpoint transfer fails; P4 pruned; universal/fate claims unresolved |
 | A1 | [Transitional epithelial state distinction](A1_transitional_epithelial_state_distinction/README.md) | Regulatory/outcome continuation complete, including mouse identities and regional HOPX responses; matched replicated regulation-to-fate linkage remains open |
-| A2 | [AREG source delivery](A2_areg_source_delivery/README.md) | Framing declared and contract frozen; stage 1 authorized, nothing scored |
+| A2 | [AREG source delivery](A2_areg_source_delivery/README.md) | Reframed around delivery; instrument audited and the test frozen with exact critical values; Erbb4 dropped as unexpressed; nothing scored |
 | A5 | [Developmental programme reuse](A5_developmental_programme_reuse/README.md) | External signature enrichment positive in 24 primary mice and after identity/control exclusions; partial recruitment, with lineage/function untested |
 | A10 | [Organoid growth outcome](A10_organoid_growth_outcome/README.md) | Follow-up complete: growth scores add beyond E2F/G2M and lower error on all four plate holdouts, but absolute R-squared remains negative on 3/4 plates; target mix and plate are entangled; preparations unresolved; descriptive only |
 | A11 | [Lesion programme beyond shared plasticity](A11_lesion_programme_addition/README.md) | Lesion association replicates in 8 patients; beyond-shared criterion unresolved (BH q=0.0547); cancer specificity unestablished |

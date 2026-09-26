@@ -1,8 +1,12 @@
 # A2: does the fibroblast response to AREG depend on delivery or on abundance
 
-**Status, 26 September 2026: framing declared, stage 1 authorized, nothing
-scored.** No endpoint has been computed in either dataset named below, and no
-claim row has changed.
+**Status, 26 September 2026: stages 1 and 2 complete, the test is frozen, nothing
+scored.** No endpoint has been computed in either dataset named below, and no claim
+row has changed. Read the [stage 1 audit](reports/STAGE1_AUDIT.md) and the
+[stage 2 freeze](reports/STAGE2_FREEZE.md); the freeze in
+[`config/a2_stage2_freeze.json`](config/a2_stage2_freeze.json) is now the authority on
+what stage 3 may do, and the original contract is preserved unedited so its recorded
+hash stays verifiable. Stage 3 is not authorized.
 
 This analysis replaces A2's abundance question with a delivery question. The
 register card is [A2](../../RESEARCH_QUESTIONS.md#a2); the biology and the closed
@@ -53,11 +57,20 @@ activation. Those three contrasts distinguish the delivery hypothesis from the
 autocrine rival and from the epithelial-activation rival, and all six targets sit
 on one plate with one well per target in each of its four replicate units.
 
-## The gate in one sentence
+## What the gate found
 
-Stage 1 asks whether the plate layout, the knockout validation, the endpoint gene
-coverage, the depth profile and the attainable power support the test at all, and
-it computes no endpoint value while asking.
+Stage 1 passed all seven stop rules, so the test can run, and it constrained the
+freeze in four ways. Erbb4 is not expressed in the perturbed compartment, so it is
+dropped from the discriminating set. Egfr sits near the detection floor, so its
+contrast is weaker than Erbb2 or Erbb3. Fibroblast depth spans four orders of
+magnitude across the 240 plate-3 wells, and all four Areg wells sit above their unit
+median in it, so two depth-restricted sensitivities are declared and a 100,000-count
+floor governs the reading of any single well. Four of the eight control wells fall
+below that floor, so they became descriptive context rather than an anchor.
+
+Power is exact rather than estimated. The Areg well must average the 27th percentile
+of its unit for the primary to clear alpha 0.05, and being just below the median in
+all four units does not reach it.
 
 ## Layout
 
@@ -66,8 +79,10 @@ it computes no endpoint value while asking.
 | `RATIONALE.md` | the biological argument, the closed abundance record, the other-layer verdicts |
 | `PLAN.md` | six stages, their stop rules and the order of work |
 | `config/a2_delivery_contract.json` | endpoints, adjustment, statistic, thresholds, prohibitions |
-| `tables/` | stage outputs, written with run records; created when stage 1 runs |
-| `reports/` | stage reports; created when stage 1 runs |
+| `config/a2_stage2_freeze.json` | the frozen test: reference sets, exact critical values, sensitivities, the changes stage 1 forced |
+| `scripts/` | `01_stage1_audit.py` and `02_stage2_freeze.py`, standard library only, hash-verified inputs, refusing to overwrite |
+| `tables/` | stage 1 outputs and their run record |
+| `reports/` | [stage 1 audit](reports/STAGE1_AUDIT.md) and [stage 2 freeze](reports/STAGE2_FREEZE.md) |
 
 ## Three things a later session must not do
 

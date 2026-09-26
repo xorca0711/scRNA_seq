@@ -39,7 +39,7 @@ recovery endpoint, and population persistence does not trace the same cells.
 |---|---|---|---|
 | [A0](#a0) | A conserved transition-associated programme may contribute to epithelial fate modulation | Related transitional RNA states across repair and development; shared fate control remains a hypothesis | [Pilot complete](RQ_Specified/A0_conserved_epithelial_transition_program/reports/PILOT_V1_RESULTS.md): 50-gene lung signature fails the mature intestinal endpoint; P4 pruned; universal/causal fate claims unresolved |
 | [A1](#a1) | Regulatory features distinguish RNA-similar transitional states and responses | Direct marks, lineage, perturbation and paired CD44 context contrasts | Adaptive batch complete; matched replicated regulatory/fate linkage remains missing |
-| [A2](#a2) | AREG changes a fibroblast response through delivery to a competent recipient, not through source abundance | Seven register rows close the abundance version (C37, C39, C40, C45, C48, C49, C50); the mechanism places the rate-limiting step in the recipient | [Framing declared and contract frozen](RQ_Specified/A2_areg_source_delivery/README.md); stage 1 authorized, nothing scored |
+| [A2](#a2) | AREG changes a fibroblast response through delivery to a competent recipient, not through source abundance | Seven register rows close the abundance version (C37, C39, C40, C45, C48, C49, C50); the mechanism places the rate-limiting step in the recipient | [Instrument audited and the test frozen](RQ_Specified/A2_areg_source_delivery/README.md); nothing scored, stage 3 not authorized |
 | [A3](#a3) | Injury leaves a macrophage programme beyond normal aging | Late population composition | Age-matched controls and comparable sampling needed |
 | [A4](#a4) | Wnt maintenance and IL-1 response occur sequentially in an AT2 lineage | Transcript/source observations; sequence untested | Measured activity/history and lineage-linked response needed |
 | [A5](#a5) | Adult repair reuses a developmental epithelial component | Neonatal coexpression and label-excluded ADI enrichment; outside developmental list now sourced | Revised external-signature test positive in 24 mice and after identity/control exclusions; lineage/function untested |
@@ -229,12 +229,14 @@ epithelial EGFR, ERBB2, ERBB3 or ERBB4 removes only epithelial reception, and
 removing epithelial ITGB6 removes epithelial TGF-beta activation. A second leg
 tests recipient licensing at donor level in an existing cohort.
 
-**Decision / readiness.** Conditional, and descriptive in both legs. Four matched
-replicate wells per target on one plate give an effect size and a consistency
-count, not a significance test; the Areg knockout is partial, so the contract
-declares precise absence unavailable before any test; and preparation independence
-in that screen is unresolved (A10), so a positive result is a within-screen
-association. Secreted ligand, receptor engagement (C36) and proximity remain
+**Decision / readiness.** Conditional, and descriptive in both legs. The instrument
+audit and the freeze are complete and nothing is scored: the layout holds, both
+endpoints are fully covered, the test is still blind, and the exact null requires the
+Areg well to average the 27th percentile of its unit. Erbb4 is dropped for want of an
+expressed receptor, and fibroblast depth spanning four orders of magnitude forced two
+declared depth sensitivities. The Areg knockout is partial, so precise absence is
+declared unavailable before any test, and preparation independence in that screen is
+unresolved (A10), so a positive result is a within-screen association. Secreted ligand, receptor engagement (C36) and proximity remain
 outside the repository. [Current figures](analysis/figures/rq/README.md#a2) are
 diagnostics. [MC2 to MC4](docs/RQ_MEASUREMENT_CONTRACTS.md#mc2).
 

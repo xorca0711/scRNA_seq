@@ -300,9 +300,16 @@ no endpoint scored, no claim row added, no grade changed.
 - Entry points: `RQ_Specified/A2_areg_source_delivery/README.md`, `RATIONALE.md`,
   `PLAN.md` and `config/a2_delivery_contract.json`. The contract is the authority
   on endpoints, adjustment, statistic, thresholds and prohibitions.
-- Stage 1 is the only authorized stage and it computes no endpoint. Its stop
-  rules are the plate-3 layout, the knockout validation, the endpoint gene
-  coverage floors, the depth profile, a precedent check and the attainable power.
+- Stages 1 and 2 are complete, nothing is scored, and stage 3 is not authorized.
+  `config/a2_stage2_freeze.json` is now the authority on what stage 3 may do; the
+  original contract stays unedited so the hash the freeze recorded keeps verifying.
+- Stage 1 passed all seven stop rules. Erbb4 is unexpressed in the perturbed
+  compartment and is dropped from the discriminating set; Egfr is flagged
+  low-abundance; a 100,000-count fibroblast floor governs single-well readings; the
+  control wells are descriptive context because four of eight are shallow.
+- The exact null is computed, not estimated: critical rank sum 64 over four 60-well
+  units, exact joint size 0.04903, smallest attainable one-sided p 7.72e-08, and the
+  Areg well must average the 27th percentile of its unit.
 - Two endpoints are frozen and must not change after any value is seen: the human
   Hallmark TGF-beta signalling set as primary, and the repository's five-gene
   fibroblast activation score (COL1A1, ACTA2, POSTN, CTHRC1, TNC) as co-primary.

@@ -899,6 +899,32 @@ within-screen association while preparation independence is unresolved, and that
 leg 2 may be refused by its own depth control, in which case the refusal is the
 result.
 
+### A2 stages 1 and 2, 26 September 2026
+
+The owner authorized stages 1 and 2 in one instruction, so the retain step the plan
+placed between them was exercised as a single authorization rather than skipped. Both
+stages computed no endpoint: the human sheet pass read gene symbols only, and the
+freeze read covariate tables. The stage 1 script reproduces A10's recorded validation
+on five genes and all 886 mouse library totals before extending the metric, and it
+refuses to continue on any of seven stop rules.
+
+| Date | Item | Proposed by | Decided by | Decision | Reason |
+|---|---|---|---|---|---|
+| 2026-09-26 | Stage 1 execution | Owner instruction | Owner | Run, and all seven stop rules passed | The audit is the gate the plan placed before any freeze |
+| 2026-09-26 | Stage 2 freeze | Assistant, from the stage 1 findings | Pending owner retain or reject | Frozen in a separate file, leaving the original contract unedited | The contract's recorded hash must keep verifying, so the freeze supersedes it only where it says so |
+| 2026-09-26 | Depth handling | Assistant | Pending owner retain or reject | Keep every well in the primary and declare two depth-restricted sensitivities plus an interpretability floor | Excluding wells would change the rank universe, and the Areg wells are systematically deeper than their units |
+
+| Date | Rejected or reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-26 | The Erbb4 contrast declared in the contract | Its mouse transcript is 0.367 log2 CPM when not targeted and exactly zero when targeted, so there is no receptor to remove | Assistant dropped it at the freeze, on stage 1 evidence, before any endpoint existed |
+| 2026-09-26 | The control wells' role as the unperturbed anchor | Four of the eight plate-3 control wells hold fewer than 100,000 fibroblast counts | Assistant downgraded it to descriptive context at the freeze |
+| 2026-09-26 | The contract's wording "epithelial read fraction" | Ambiguous between the species read assignment and the count-based fraction; the freeze fixes the count-based one, from the same counts the endpoint uses | Assistant clarified it at the freeze |
+
+The depth asymmetry is recorded as making the declared one-sided test conservative
+rather than permissive, because a depth artefact on a mean log2 CPM score is expected
+to push it upward while the prediction is downward. That is an expectation, so the
+freeze requires stage 3 to report the observed depth association next to the result.
+
 ## How outputs were reviewed
 
 ### A1 adaptive continuation, 25 September 2026

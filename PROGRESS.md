@@ -147,10 +147,21 @@ Branch `Claude/a2-delivery-hypothesis`, based on main `f1b2c4f`. Start with the
   alphaV on mesenchymal cells and releases bioactive TGF-beta from latent
   complexes (Minutti et al. 2019, doi:10.1016/j.immuni.2019.01.008). Four
   mechanism references were added to REFERENCES.md with PubMed-verified metadata.
-- The plan has six stages and **only stage 1 is authorized**. Leg 1 is the
-  within-plate knockout contrast in GSE307112; leg 2 is a recipient-licensing
-  correlation in GSE136831 that reuses the trial E6 instrument unchanged and
-  changes only the predictor.
+- The plan has six stages. **Stages 1 and 2 are complete and stage 3 is not
+  authorized.** Leg 1 is the within-plate knockout contrast in GSE307112; leg 2 is a
+  recipient-licensing correlation in GSE136831 that reuses the trial E6 instrument
+  unchanged and changes only the predictor.
+- Stage 1 passed all seven stop rules with no endpoint scored: the layout holds, both
+  endpoints are covered 54/54 and 5/5, the recomputed mouse totals and A10's five
+  recorded validations reproduce exactly, and no tracked table pairs either endpoint
+  with per-target rows, so the test is blind. Erbb4 is not expressed (0.367 log2 CPM
+  untargeted, zero when targeted) and Egfr sits at 1.967. Fibroblast depth spans four
+  orders of magnitude and all four Areg wells are above their unit median in it.
+- Stage 2 froze the test with exact nulls: critical rank sum 64 of a 60-well
+  reference, exact size 0.04903, and the Areg well must average the 27th percentile
+  of its unit. Two depth sensitivities and a 100,000-count interpretability floor are
+  declared, Erbb4 is dropped, and the control wells became descriptive context
+  because four of eight are shallow.
 - Design facts that shape the test: plate 3 carries Areg, Egfr, Erbb2, Erbb3,
   Erbb4 and Itgb6 at one well per target in each of its four replicate units,
   with two control wells per unit. Hbegf sits on plate 4, so the ligand
@@ -159,9 +170,10 @@ Branch `Claude/a2-delivery-hypothesis`, based on main `f1b2c4f`. Start with the
   absence is unavailable; preparation independence is unresolved, so leg 1 is a
   within-screen association; leg 2 may be refused by its own depth control, and
   that refusal is a result.
-- Next: run stage 1 on the cached screen metadata, the existing A10 tables and
-  the Erbb2 and Erbb4 gene rows that A10 never validated. Do not compute either
-  endpoint by target before stage 2 is committed.
+- Next: stage 3 scores the two endpoints on the 240 plate-3 wells under the freeze,
+  then leg 2 may run. Do not redefine an endpoint, drop a well from the primary,
+  promote a sensitivity, or read an uninterpretable well as evidence. The original
+  contract must stay unedited so its recorded hash keeps verifying.
 
 ## Historical handoffs
 
