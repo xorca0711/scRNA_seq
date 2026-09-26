@@ -119,11 +119,28 @@ Itgb6, without being removed from either.
    fibroblast runs, and the epithelial integrin is not the rate-limiting input
    ([Sheppard 2015](https://doi.org/10.1513/AnnalsATS.201406-245MG)). Not separable
    without a fibroblast-side perturbation.
-2. **The epithelial state, not the integrin.** Itgb6 loss changes the epithelium itself in
-   vivo ([Morris 2003](https://doi.org/10.1038/nature01413),
-   [Koth 2007](https://doi.org/10.1165/rcmb.2006-0428OC)), so a changed epithelium could
-   change a fibroblast for reasons unrelated to TGF-beta activation. This is the one rival
-   a public dataset can bound today; see the layer proposals below.
+2. **The epithelial state, not the delivered ligand.** **Restated 27 September 2026, and the
+   original wording was wrong.** It read: Itgb6 loss changes the epithelium itself, so a
+   changed epithelium could change a fibroblast "for reasons unrelated to TGF-beta
+   activation". That does not follow from the sources cited for it, because **both of them
+   attribute their phenotypes to loss of TGF-beta activation, in their own titles**:
+   [Morris 2003](https://doi.org/10.1038/nature01413) is "Loss of integrin
+   alpha(v)beta6-mediated TGF-beta activation causes Mmp12-dependent emphysema" and
+   [Koth 2007](https://doi.org/10.1165/rcmb.2006-0428OC) is "Integrin beta6 mediates
+   phospholipid and collectin homeostasis by activation of latent TGF-beta1". What they
+   establish is that the epithelial integrin's TGF-beta activation has consequences **inside
+   the epithelium**, not that a TGF-beta-independent route exists.
+
+   The rival, correctly stated, is therefore: **the epithelial integrin's effect on the
+   fibroblast may be indirect, mediated by a change in the epithelium rather than by TGF-beta
+   activated at the epithelial surface acting on the fibroblast.** The route may still be
+   TGF-beta; what is in question is what it acts on first. So the separable question is
+   whether the epithelium changes at all, which is an omnibus question and needs no curated
+   gene set. This restatement was forced by an adversarial review of the side-branch freeze,
+   and it is recorded in
+   [reports/RIVAL2_FREEZE_V1_WITHDRAWN.md](reports/RIVAL2_FREEZE_V1_WITHDRAWN.md) rather than
+   applied silently. It is the one rival a public dataset can address today; see the layer
+   proposals below.
 3. **Generic perturbation.** Some part of any epithelial knockout effect may be generic.
    Erbb3 fell in all four units, and the panel is not uniformly downward, since Egfr and
    Erbb4 rose.
@@ -203,13 +220,18 @@ unbounded null.
 
 1. **The epithelial translatome under integrin beta6 blockade in vivo.** GSE190821 blocks
    integrin beta6 with the 3G9 antibody in bleomycin-injured mice and reads an epithelial
-   RiboTag translatome alongside whole lung, four treated mice against seven
-   antibody-control mice, with the mouse as the unit. It cannot test the hypothesis: the
-   fibroblast compartment is not separated and there is no activation readout. It can
-   bound **rival 2**, by asking whether the epithelium's own programme moves when the
-   integrin is blocked. Verdict: **feasible now, bounded to one rival**, with the caveats
-   that the antibody is systemic rather than epithelium-restricted, that bleomycin day 7
-   in vivo is not a two-week co-culture, and that four against seven mice is small.
+   RiboTag immunoprecipitation alongside a paired whole-lung input, with the mouse as the
+   unit. It cannot test the hypothesis: the fibroblast compartment is not separated and there
+   is no activation readout. It can address **rival 2** as restated above, by asking whether
+   the epithelium changes at all when the integrin is blocked. Verdict: **authorized and
+   executed, 27 September 2026**, under
+   [`config/a15_rival2_freeze_v2.json`](config/a15_rival2_freeze_v2.json); read
+   [the results](reports/RIVAL2_RESULTS.md). The arms are four treated mice against four
+   inert-antibody mice, not four against seven: only four of the seven Axum8 mice are
+   bleomycin-exposed, and the other three are the saline context arm. The caveats stand: the
+   antibody is systemic rather than epithelium-restricted, bleomycin day 7 in vivo is not a
+   two-week co-culture, and four against four reaches nominal significance only under
+   complete separation.
 2. **A whole-lung activation signature in the same deposit.** Verdict: **feasible but
    non-discriminating, and not recommended.** Whole lung confounds the fibroblast
    compartment with fibrosis extent, and reduced collagen under this antibody is already
