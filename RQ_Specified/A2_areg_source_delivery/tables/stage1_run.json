@@ -1,0 +1,144 @@
+{
+  "stage": "1",
+  "purpose": "instrument, eligibility and power audit; no endpoint scored",
+  "completed_utc": "2026-09-26T12:38:07.483091+00:00",
+  "script": "RQ_Specified/A2_areg_source_delivery/scripts/01_stage1_audit.py",
+  "script_sha256": "ee3f75c4bd8c914ecdddb9915b4b07d35f8ec01dd986d4ae7e27d0cf9560162c",
+  "contract_sha256": "3d5cd67fbccfe49a397ba10a5f7e49e2e637661192e5911f737597e5bec75fd8",
+  "inputs": {
+    "RQ_Specified/A10_organoid_growth_outcome/cache/GSE307112_gene_counts.xlsx": "60736e5c153a4fb92908f19148ebb5ef2b59f7ade97fb1056deee7d0205acc33",
+    "RQ_Specified/A10_organoid_growth_outcome/cache/GSE307112_xenome_stats.csv.gz": "045b9da623db54a59948f1e8e6b68c1587fa4786a6838a51a890dfe59064edf5",
+    "RQ_Specified/A10_organoid_growth_outcome/cache/GSE307112_plate_design.csv.gz": "8f6950e6286ed438748bfcb12077e683abe74aa525678096f9ad9bea282b8ad1"
+  },
+  "msigdb_gmt": {
+    "path": "raw_data/msigdb/h.all.v2024.1.Hs.symbols.gmt",
+    "sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772",
+    "data_root": "X:\\GitHub\\scRNA_seq"
+  },
+  "a10_tables_read": {
+    "tables/library_totals.tsv": "19c90e9aa068445edfbb21cc8af95d581427db11e4fdbc5f51943380f4f90ca2",
+    "tables/knockout_validation.tsv": "c8fecc96ff2c0030d06c416a7a210ec497ca251f5e45fddc63bf448cbc6c9a47",
+    "tables/module_scores.tsv": "de0a083b521e5abbde0775c0769d8f78823cf3e07c3ef1ac97daf88f5bc09687"
+  },
+  "item1_layout": {
+    "plate3_units": 4,
+    "plate3_wells_each": [
+      60
+    ],
+    "axis_one_well_per_plate3_unit": true,
+    "control_two_wells_per_plate3_unit": true,
+    "axis_absent_outside_plate3": true,
+    "hbegf_plate": [
+      "plate4"
+    ],
+    "hbegf_wells_per_unit": [
+      1
+    ],
+    "control_units": 15,
+    "matches_the_contract": true
+  },
+  "item2_knockout": {
+    "library_total_mismatches": 0,
+    "mismatched_libraries": [],
+    "libraries_compared": 886,
+    "reproduced_a10_genes": [
+      {
+        "gene": "Areg",
+        "recomputed": -1.042,
+        "a10_recorded": -1.042,
+        "agrees": true
+      },
+      {
+        "gene": "Egfr",
+        "recomputed": -1.034,
+        "a10_recorded": -1.034,
+        "agrees": true
+      },
+      {
+        "gene": "Erbb3",
+        "recomputed": -0.511,
+        "a10_recorded": -0.511,
+        "agrees": true
+      },
+      {
+        "gene": "Itgb6",
+        "recomputed": -1.138,
+        "a10_recorded": -1.138,
+        "agrees": true
+      },
+      {
+        "gene": "Hbegf",
+        "recomputed": -1.921,
+        "a10_recorded": -1.921,
+        "agrees": true
+      }
+    ]
+  },
+  "item3_coverage": [
+    {
+      "endpoint": "HALLMARK_TGF_BETA_SIGNALING",
+      "set_genes": 54,
+      "genes_in_human_index": 54,
+      "fraction": 1.0,
+      "declared_floor": 0.9,
+      "clears_floor": "yes",
+      "missing_symbols": "none"
+    },
+    {
+      "endpoint": "fibroblast_activation_score",
+      "set_genes": 5,
+      "genes_in_human_index": 5,
+      "fraction": 1.0,
+      "declared_floor": 1.0,
+      "clears_floor": "yes",
+      "missing_symbols": "none"
+    }
+  ],
+  "item4_covariates": {
+    "axis_or_control_wells_audited": 32,
+    "axis_wells_extreme_in_depth": [
+      "ERBB2 in 3-1",
+      "ERBB3 in 3-1",
+      "ITGB6 in 3-3",
+      "ERBB3 in 3-4"
+    ]
+  },
+  "item5_precedent": {
+    "verdict": "blind: no tracked table pairs the declared endpoint with per-target rows",
+    "files_inspected": 77
+  },
+  "item6_power": {
+    "units": 4,
+    "wells_per_unit": 60,
+    "rank_space": 12960000,
+    "smallest_attainable_one_sided_p": 7.71604938271605e-08,
+    "smallest_attainable_p_scientific": "7.72e-08",
+    "alpha": 0.05,
+    "critical_rank_sum_at_alpha": 64,
+    "p_at_critical_sum": 0.04903,
+    "mean_rank_needed": 16.0,
+    "mean_percentile_needed": 0.2667,
+    "exact_size_of_the_joint_rule": 0.04903,
+    "joint_rule": "rank sum at or below the critical value and the well below its unit median in at least 3 of 4 units",
+    "reading": "The joint rule is conservative: its exact size is below the nominal alpha, so a rejection is not an inflated test. The design cannot reach a small p by consistency alone; it needs the well near the bottom of its unit in most units."
+  },
+  "item7_cross_species": {
+    "assumption": "the mouse amphiregulin EGF-like domain activates human EGFR",
+    "attempted_from": "local resources under raw_data",
+    "local_sequence_files_found": [],
+    "status": "carried and unverified",
+    "how_to_settle_it": "align the mature EGF-like domains of UniProt P31955 (mouse Areg) and P15514 (human AREG); the plan restricts this stage to local resources, so no fetch was made"
+  },
+  "human_sheet": {
+    "symbol_column": "AHH",
+    "libraries_in_header": 886,
+    "symbol_rows": 58302,
+    "unique_symbols": 56648
+  },
+  "mouse_sheet": {
+    "rows": 52636,
+    "libraries_in_header": 886
+  },
+  "endpoint_scored": false,
+  "prohibition_honoured": "no human count was read; the human pass collected symbols only"
+}

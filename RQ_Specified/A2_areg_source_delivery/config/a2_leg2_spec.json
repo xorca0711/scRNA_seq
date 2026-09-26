@@ -1,0 +1,92 @@
+{
+  "schema": "a2-leg2-spec/v1",
+  "declared": "2026-09-26",
+  "status": "declared before any correlation was computed; committed in the same commit as the stage 3 results and before stage 4 ran",
+  "classification": "exploratory",
+  "why_exploratory": "the inherited depth gate is likely to refuse this pair: the logged trial E6 table already records the fibroblast activation score against fibroblast depth at rho 0.4116 and fibroblast EGFR at 0.4918, and both members of the new pair are fibroblast detection fractions. No alpha is claimed and no decision is attached.",
+  "question": "whether the fibroblast activation programme tracks the recipient's post-receptor integrin and latent-complex genes more closely than it tracks epithelial ligand abundance",
+  "not_the_question": "recipient licensing as a whole. The cited mechanism makes recipient EGFR obligatory and A9 owns the receptor layer, so EGFR is deliberately absent from the predictor and the estimand is the layer below it.",
+  "dataset": {
+    "accession": "GSE136831",
+    "citation_doi": "10.1126/sciadv.aba1983",
+    "files": [
+      "GSE136831_RawCounts_Sparse.mtx.gz",
+      "GSE136831_AllCells.GeneIDs.txt.gz",
+      "GSE136831_AllCells.cellBarcodes.txt.gz",
+      "GSE136831_AllCells.Samples.CellType.MetadataTable.txt.gz"
+    ],
+    "hashes_recorded_at_run": true
+  },
+  "instrument_reused_unchanged_from_trial_e6": {
+    "donors": "Subject_Identity, restricted to Disease_Identity in IPF and Control; COPD out of scope",
+    "fibroblasts": "Manuscript_Identity in Fibroblast and Myofibroblast",
+    "epithelium": "CellType_Category Epithelial, pooled",
+    "measure": "the fraction of cells with a non-zero count",
+    "cell_floor_per_compartment_per_donor": 50,
+    "minimum_donors": 10,
+    "depth_measure": "median deposited nGene per cell, per donor and compartment",
+    "unit": "donor",
+    "inherited": "the rules and the gene lists, not a claim that any earlier result transfers"
+  },
+  "outcome": {
+    "name": "fibroblast activation score",
+    "genes": ["COL1A1", "ACTA2", "POSTN", "CTHRC1", "TNC"],
+    "note": "the same list trial E6 froze, scored the same way in the same cells"
+  },
+  "predictor": {
+    "name": "recipient machinery composite",
+    "genes": ["ITGAV", "ITGB1", "ITGB8", "LTBP1", "TGFB1", "THBS1"],
+    "aggregation": "the mean of the member detection fractions in the same fibroblasts, one composite, computed per donor",
+    "per_gene_eligibility_floor": 0.05,
+    "eligibility_rule": "a member enters the composite only if its pooled fibroblast detection fraction across eligible donors is at least the floor; any member excluded is named in the run record, as MC4 requires"
+  },
+  "comparator": {
+    "name": "epithelial AREG detection",
+    "why": "the abundance predictor that trial E6 already tested and that C50 grades Not established; the comparison is between predictors, not a retest of that row"
+  },
+  "statistic": {
+    "test": "Spearman rank correlation across donors",
+    "sidedness": "two-sided",
+    "alpha": null,
+    "reported": "rho, the nominal p, and the donor count, with the word exploratory attached to each",
+    "no_decision_attached": true
+  },
+  "controls_that_are_not_optional": {
+    "depth_rule_C51": {
+      "rule": "if both members of a pair correlate with their own compartment's depth at absolute rho of 0.4 or more, the pair is reported as confounded and is not read, whatever its own correlation",
+      "already_recorded": {"fibroblast activation against fibroblast depth": 0.4116, "fibroblast EGFR against fibroblast depth": 0.4918},
+      "consequence_declared_in_advance": "refusal is a likely outcome and is itself the result"
+    },
+    "shared_detection_control": {
+      "genes": ["ACTB", "GAPDH", "PGK1", "RPL13A", "RPS18"],
+      "role": "bounds the artefact of shared detection rate only, and is expected to be a low bar because these are near-saturated"
+    },
+    "co_regulation_control": {
+      "why": "TGFB1, THBS1, ITGB8 and LTBP1 are themselves TGF-beta inducible, so predictor and outcome are co-regulated programme members in the same cells; a detection control cannot bound that",
+      "candidate_universe": "members of HALLMARK_OXIDATIVE_PHOSPHORYLATION, excluding any member of HALLMARK_TGF_BETA_SIGNALING or HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+      "matching_rule": "for each eligible machinery member, in the order declared above, take the unused candidate whose pooled fibroblast detection fraction is closest to that member's; ties broken by gene symbol",
+      "scoring": "identical to the predictor, in the same cells",
+      "requirement": "the machinery correlation must exceed this matched control's correlation, not only the housekeeping control's; otherwise the result is attributed to co-regulation and is not read as recipient state"
+    },
+    "disease_stratum": "the IPF-only stratum reported beside the pooled result",
+    "mural_stratum": {
+      "labels": "Manuscript_Identity Pericyte, plus any deposited smooth-muscle label, named in the run record",
+      "why": "the cited mechanism used PDGFRB-positive pericytes, not lung fibroblasts, so the population it used is reported beside the one the E6 instrument selects",
+      "expected_limit": "the deposit holds 670 pericytes in total, so the 50-cell donor floor will leave few donors; an underpowered stratum is reported as underpowered"
+    }
+  },
+  "declared_reading": {
+    "supported_observationally": "the machinery composite predicts activation where epithelial AREG did not, the depth rule does not refuse the pair, and the correlation exceeds both controls; still correlational, with no direction and no proximity",
+    "not_visible": "neither predictor tracks activation; the report states the smallest effect the donor count could have detected",
+    "rival_not_excluded": "both predictors track activation comparably, or the matched control matches the machinery",
+    "refused": "the depth rule refuses the pair; the refusal is the result"
+  },
+  "prohibited": [
+    "reading any correlation as direction, proximity or mechanism",
+    "reading a positive result as recipient licensing, since the receptor layer is absent from the predictor",
+    "treating this as a retest of C49 or C50, or re-grading either",
+    "adding or grading a claim row",
+    "substituting a different predictor or outcome after any correlation is seen"
+  ],
+  "endpoint_scored_at_declaration": false
+}

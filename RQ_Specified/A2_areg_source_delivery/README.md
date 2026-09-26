@@ -1,8 +1,27 @@
 # A2: does the fibroblast response to AREG depend on delivery or on abundance
 
-**Status, 26 September 2026: framing declared, stage 1 authorized, nothing
-scored.** No endpoint has been computed in either dataset named below, and no
-claim row has changed.
+**Status, 26 September 2026: all six stages complete.** Start with the
+[synthesis](reports/STAGE5_SYNTHESIS.md). Leg 1 found no movement in the Areg arm and a
+large consistent decrease in the epithelial Itgb6 arm; leg 2 was refused by the frozen
+depth rule it inherited. The history below is preserved because the first freeze was
+withdrawn before anything was scored.
+
+**Earlier status, before the legs ran: audited, then narrowed by its own audit. Nothing
+scored.** No endpoint has been computed in either dataset named below, and no claim row
+has changed. A three-lens review and the covariate pass it prompted showed that the
+first freeze declared an inference this design cannot support, so **it is withdrawn and
+preserved**: read [STAGE2_WITHDRAWN.md](reports/STAGE2_WITHDRAWN.md) first, then
+[`config/a2_stage2_freeze_v2.json`](config/a2_stage2_freeze_v2.json), which is the
+authority on what stage 3 may do. The [stage 1 audit](reports/STAGE1_AUDIT.md), the
+[first freeze](reports/STAGE2_FREEZE.md) and the original contract are all preserved
+unedited. The second freeze is provisional pending owner review, and stage 3 is not
+authorized.
+
+**The decisive finding.** These fibroblasts transcribe AREG at 9.846 mean log2 CPM in
+99.2 per cent of plate-3 wells, above the mouse epithelial Areg the knockout removes
+within its own compartment. The recipient supplies the ligand, so removing the
+epithelial source cannot establish necessity, and the screen can at most bound an
+increment.
 
 This analysis replaces A2's abundance question with a delivery question. The
 register card is [A2](../../RESEARCH_QUESTIONS.md#a2); the biology and the closed
@@ -18,46 +37,64 @@ the most of it.
 
 ## Why the previous question is closed
 
-Seven register rows answer the abundance version, and none supports a source
-hierarchy: C37, C39, C45, C40, C48, C49 and C50. C51 records why, in this
-repository, a donor-level correlation on these variables is hard to read at all:
-the one significant pair in that trial tracked sequencing depth and a frozen rule
-refused it. The rationale lists each row with its status. None of them is
-re-graded here.
+Seven register rows answer the abundance version, and none establishes a
+depth-independent epithelial hierarchy: C37, C39, C45, C40, C48, C49 and C50. C45
+records a ranking in the opposite direction, with dendritic cells and monocytes at or
+above the epithelial states. C51 records why a donor-level correlation on these
+variables is hard to read at all: the one significant pair in that trial tracked
+sequencing depth and a frozen rule refused it. The rationale lists each row with the
+register's own wording and its status. None of them is re-graded here.
 
 ## What makes the question testable now
 
 The mechanism is short-range and recipient-licensed. Amphiregulin activates
 integrin alphaV on mesenchymal stromal cells and releases bioactive TGF-beta from
 latent complexes, driving myofibroblast differentiation
-([Minutti 2019](https://doi.org/10.1016/j.immuni.2019.01.008)), and the
-fibroblast arm of TGF-beta signalling needs amphiregulin
-([Zhou 2012](https://doi.org/10.1074/jbc.M112.356824)). A ligand that converts a
-store the recipient already holds predicts that tissue-level ligand abundance
-will not track the response, which is what C49 and C50 found.
+([Minutti 2019](https://doi.org/10.1016/j.immuni.2019.01.008)), downstream of the
+recipient's own EGFR, and the fibroblast arm of TGF-beta signalling needs amphiregulin
+([Zhou 2012](https://doi.org/10.1074/jbc.M112.356824)). A ligand that converts a store
+the recipient already holds does not require tissue-level abundance to be
+rate-limiting, which is consistent with the nulls C49 and C50 recorded without being
+evidence for this framing.
 
 Two legs follow, each able to fail alone:
 
 | Leg | Prediction | Data | Unit |
 |---|---|---|---|
-| 1 | Removing the epithelial ligand lowers a frozen fibroblast TGF-beta programme; removing epithelial receptors does not | GSE307112 organoid knockout screen | 4 plate-replicate units on one plate |
-| 2 | The fibroblast response tracks the recipient's own TGF-beta activation machinery better than it tracks epithelial ligand | GSE136831, the trial E6 instrument reused | donor |
+| 1 | Removing the epithelial source lowers a frozen fibroblast activation programme; removing epithelial reception does not | GSE307112 organoid knockout screen | 4 units of one repeated plate layout |
+| 2 | The fibroblast response tracks the recipient's post-receptor integrin and latent-complex genes better than it tracks epithelial ligand; now exploratory | GSE136831, the trial E6 instrument reused | donor |
 
-## Why the screen can separate the rivals
+## What the screen can and cannot separate
 
 The screen perturbs the mouse epithelium only and leaves the human fibroblasts
-unedited, with reads assigned by species. Removing the ligand removes what the
-fibroblast can receive. Removing epithelial EGFR, ERBB2, ERBB3 or ERBB4 removes
-only epithelial reception. Removing epithelial ITGB6 removes epithelial TGF-beta
-activation. Those three contrasts distinguish the delivery hypothesis from the
-autocrine rival and from the epithelial-activation rival, and all six targets sit
-on one plate with one well per target in each of its four replicate units.
+unedited, with reads assigned by species. Removing mouse Areg removes the **epithelial
+source** of AREG, while the fibroblasts' own AREG remains. Removing epithelial EGFR
+removes epithelial reception, with ERBB2 as its heterodimer partner; ERBB3 and ERBB4
+bind neuregulins rather than AREG, so they are perturbation controls and not tests of
+AREG reception, and Erbb4 has no receptor to remove in this compartment at all.
+Removing epithelial ITGB6 removes epithelial TGF-beta activation.
 
-## The gate in one sentence
+Those contrasts separate an epithelial source contribution from epithelial reception
+and from epithelial TGF-beta activation. They do **not** separate delivery from
+abundance, because a single well holds one source compartment and no spatial variation.
+A positive result is equally consistent with the abundance version. The five remaining
+axis targets sit on plate 3 with one well per target in each of its four units, which
+is forced by the design rather than chosen.
 
-Stage 1 asks whether the plate layout, the knockout validation, the endpoint gene
-coverage, the depth profile and the attainable power support the test at all, and
-it computes no endpoint value while asking.
+## What the gate found
+
+Stage 1 passed all seven stop rules, so the test can run, and it constrained the
+freeze in four ways. Erbb4 is not expressed in the perturbed compartment, so it is
+dropped from the discriminating set. Egfr sits near the detection floor, so its
+contrast is weaker than Erbb2 or Erbb3. Fibroblast depth spans four orders of
+magnitude across the 240 plate-3 wells, and all four Areg wells sit above their unit
+median in it, so two depth-restricted sensitivities are declared and a 100,000-count
+floor governs the reading of any single well. Four of the eight control wells fall
+below that floor, so they became descriptive context rather than an anchor.
+
+Power is exact rather than estimated. The Areg well must average the 27th percentile
+of its unit for the primary to clear alpha 0.05, and being just below the median in
+all four units does not reach it.
 
 ## Layout
 
@@ -66,8 +103,12 @@ it computes no endpoint value while asking.
 | `RATIONALE.md` | the biological argument, the closed abundance record, the other-layer verdicts |
 | `PLAN.md` | six stages, their stop rules and the order of work |
 | `config/a2_delivery_contract.json` | endpoints, adjustment, statistic, thresholds, prohibitions |
-| `tables/` | stage outputs, written with run records; created when stage 1 runs |
-| `reports/` | stage reports; created when stage 1 runs |
+| `config/a2_stage2_freeze.json` | the first freeze, withdrawn and preserved unchanged |
+| `config/a2_stage2_freeze_v2.json` | the freeze leg 1 obeyed: effect size against the screen's controls, eligibility floor, no p-value |
+| `config/a2_leg2_spec.json` | the leg 2 specification, declared and committed before leg 2 ran |
+| `scripts/` | `01_stage1_audit.py` and `02_stage2_freeze.py`, standard library only, hash-verified inputs, refusing to overwrite |
+| `tables/` | stage 1 outputs and their run record |
+| `reports/` | [synthesis](reports/STAGE5_SYNTHESIS.md), [leg 1](reports/STAGE3_LEG1_RESULTS.md), [leg 2](reports/STAGE4_LEG2_RESULTS.md), [stage 1 audit](reports/STAGE1_AUDIT.md), the [first freeze](reports/STAGE2_FREEZE.md) and its [withdrawal](reports/STAGE2_WITHDRAWN.md) |
 
 ## Three things a later session must not do
 

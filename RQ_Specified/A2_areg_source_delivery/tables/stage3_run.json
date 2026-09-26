@@ -1,0 +1,194 @@
+{
+  "stage": "3, leg 1",
+  "governed_by": {
+    "file": "RQ_Specified/A2_areg_source_delivery/config/a2_stage2_freeze_v2.json",
+    "sha256": "81f9d6b119b8f616df13c3d7c2d534b9523f2ed9b5be5ef9c9a35beb120f574f",
+    "schema": "a2-stage2-freeze/v2"
+  },
+  "completed_utc": "2026-09-26T13:56:10.444657+00:00",
+  "script": "RQ_Specified/A2_areg_source_delivery/scripts/04_stage3_leg1.py",
+  "script_sha256": "ae49b1f44bb9374ce04ac8ab7ec011838ea851a16aaf453f374a86969301cbfa",
+  "inputs": {
+    "RQ_Specified/A10_organoid_growth_outcome/cache/GSE307112_gene_counts.xlsx": "60736e5c153a4fb92908f19148ebb5ef2b59f7ade97fb1056deee7d0205acc33",
+    "RQ_Specified/A10_organoid_growth_outcome/cache/GSE307112_xenome_stats.csv.gz": "045b9da623db54a59948f1e8e6b68c1587fa4786a6838a51a890dfe59064edf5",
+    "RQ_Specified/A10_organoid_growth_outcome/tables/library_totals.tsv": "19c90e9aa068445edfbb21cc8af95d581427db11e4fdbc5f51943380f4f90ca2"
+  },
+  "msigdb_gmt_sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772",
+  "human_rows_scanned": 58302,
+  "human_total_mismatches_against_a10": 0,
+  "endpoint_members_recovered": {
+    "activation": 5,
+    "hallmark": 54
+  },
+  "eligibility_floor": 100000,
+  "depth_band_factor": 4.0,
+  "control_targets": [
+    "TDTOMATO",
+    "TIGIT"
+  ],
+  "eligible_wells_per_unit": {
+    "3-1": 32,
+    "3-2": 48,
+    "3-3": 31,
+    "3-4": 57
+  },
+  "no_p_value": true,
+  "summary": {
+    "activation_score|AREG": {
+      "units_with_a_contrast": 4,
+      "interpretable_units": 4,
+      "median_effect_vs_controls": 0.034,
+      "median_effect_depth_matched": 0.036,
+      "units_lower_than_controls_depth_matched": 2,
+      "median_effect_after_epithelial_adjustment": 0.0567,
+      "per_unit_depth_matched": [
+        0.1313,
+        0.4136,
+        -0.0642,
+        -0.0593
+      ]
+    },
+    "activation_score|EGFR": {
+      "units_with_a_contrast": 4,
+      "interpretable_units": 3,
+      "median_effect_vs_controls": 0.1916,
+      "median_effect_depth_matched": 0.2467,
+      "units_lower_than_controls_depth_matched": 0,
+      "median_effect_after_epithelial_adjustment": 0.2838,
+      "per_unit_depth_matched": [
+        0.1365,
+        0.2467,
+        0.4149
+      ]
+    },
+    "activation_score|ERBB2": {
+      "units_with_a_contrast": 4,
+      "interpretable_units": 1,
+      "median_effect_vs_controls": -0.8332,
+      "median_effect_depth_matched": -0.1693,
+      "units_lower_than_controls_depth_matched": 1,
+      "median_effect_after_epithelial_adjustment": -0.1304,
+      "per_unit_depth_matched": [
+        -0.1693
+      ]
+    },
+    "activation_score|ERBB3": {
+      "units_with_a_contrast": 4,
+      "interpretable_units": 4,
+      "median_effect_vs_controls": -0.1947,
+      "median_effect_depth_matched": -0.1867,
+      "units_lower_than_controls_depth_matched": 4,
+      "median_effect_after_epithelial_adjustment": 0.1007,
+      "per_unit_depth_matched": [
+        -0.2631,
+        -0.5812,
+        -0.0778,
+        -0.1102
+      ]
+    },
+    "activation_score|ERBB4": {
+      "units_with_a_contrast": 4,
+      "interpretable_units": 3,
+      "median_effect_vs_controls": 0.3595,
+      "median_effect_depth_matched": 0.5026,
+      "units_lower_than_controls_depth_matched": 0,
+      "median_effect_after_epithelial_adjustment": 0.3848,
+      "per_unit_depth_matched": [
+        0.633,
+        0.3076,
+        0.5026
+      ]
+    },
+    "activation_score|ITGB6": {
+      "units_with_a_contrast": 4,
+      "interpretable_units": 3,
+      "median_effect_vs_controls": -1.2642,
+      "median_effect_depth_matched": -0.938,
+      "units_lower_than_controls_depth_matched": 3,
+      "median_effect_after_epithelial_adjustment": -0.9923,
+      "per_unit_depth_matched": [
+        -0.938,
+        -1.5749,
+        -0.6804
+      ]
+    },
+    "hallmark_tgf_beta_score|AREG": {
+      "units_with_a_contrast": 4,
+      "interpretable_units": 4,
+      "median_effect_vs_controls": 0.0181,
+      "median_effect_depth_matched": 0.0282,
+      "units_lower_than_controls_depth_matched": 1,
+      "median_effect_after_epithelial_adjustment": 0.0318,
+      "per_unit_depth_matched": [
+        0.0503,
+        0.0062,
+        -0.128,
+        0.1175
+      ]
+    },
+    "hallmark_tgf_beta_score|EGFR": {
+      "units_with_a_contrast": 4,
+      "interpretable_units": 3,
+      "median_effect_vs_controls": 0.0204,
+      "median_effect_depth_matched": 0.0578,
+      "units_lower_than_controls_depth_matched": 0,
+      "median_effect_after_epithelial_adjustment": 0.0598,
+      "per_unit_depth_matched": [
+        0.1682,
+        0.0578,
+        0.0385
+      ]
+    },
+    "hallmark_tgf_beta_score|ERBB2": {
+      "units_with_a_contrast": 4,
+      "interpretable_units": 1,
+      "median_effect_vs_controls": -0.4652,
+      "median_effect_depth_matched": -0.0195,
+      "units_lower_than_controls_depth_matched": 1,
+      "median_effect_after_epithelial_adjustment": 0.0158,
+      "per_unit_depth_matched": [
+        -0.0195
+      ]
+    },
+    "hallmark_tgf_beta_score|ERBB3": {
+      "units_with_a_contrast": 4,
+      "interpretable_units": 4,
+      "median_effect_vs_controls": 0.1146,
+      "median_effect_depth_matched": 0.0195,
+      "units_lower_than_controls_depth_matched": 1,
+      "median_effect_after_epithelial_adjustment": 0.114,
+      "per_unit_depth_matched": [
+        0.3998,
+        0.035,
+        -0.0352,
+        0.004
+      ]
+    },
+    "hallmark_tgf_beta_score|ERBB4": {
+      "units_with_a_contrast": 4,
+      "interpretable_units": 3,
+      "median_effect_vs_controls": -0.0573,
+      "median_effect_depth_matched": 0.0496,
+      "units_lower_than_controls_depth_matched": 1,
+      "median_effect_after_epithelial_adjustment": -0.0385,
+      "per_unit_depth_matched": [
+        -0.0618,
+        0.0496,
+        0.165
+      ]
+    },
+    "hallmark_tgf_beta_score|ITGB6": {
+      "units_with_a_contrast": 4,
+      "interpretable_units": 3,
+      "median_effect_vs_controls": -0.1271,
+      "median_effect_depth_matched": 0.1039,
+      "units_lower_than_controls_depth_matched": 1,
+      "median_effect_after_epithelial_adjustment": 0.0764,
+      "per_unit_depth_matched": [
+        0.1039,
+        -0.2903,
+        0.1118
+      ]
+    }
+  }
+}

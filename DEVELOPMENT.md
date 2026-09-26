@@ -882,7 +882,7 @@ rescue of the old one.
 
 | Date | Item | Proposed by | Decided by | Decision | Reason |
 |---|---|---|---|---|---|
-| 2026-09-26 | A2 framing | Assistant, in answer to the owner's question | Owner asked for the rewrite | Card rewritten around delivery; the abundance record is preserved in the rationale with its claim identifiers | Six results close the abundance question; the mechanism names a different observable |
+| 2026-09-26 | A2 framing | Assistant, in answer to the owner's question | Owner asked for the rewrite | Card rewritten around delivery; the abundance record is preserved in the rationale with its claim identifiers | Seven register rows close the abundance question; the mechanism names a different observable |
 | 2026-09-26 | Analysis folder `RQ_Specified/A2_areg_source_delivery/` | Assistant | Owner requested the structure | Six stages declared, stage 1 authorized, nothing scored | The test is readable only if its endpoint and rule are frozen first |
 | 2026-09-26 | Primary endpoint | Assistant | Pending owner retain or reject | Human Hallmark TGF-beta signalling, with the repository's five-gene fibroblast activation score as the co-primary | Both were defined outside this screen; the second carries the C50 and C51 precedent |
 | 2026-09-26 | Precise absence | Assistant | Pending owner retain or reject | Declared unavailable at this design, before any test | Four units and a partial knockout, with the Areg transcript falling 1.042 log2 CPM and remaining at 6.226 |
@@ -898,6 +898,96 @@ which observable A2 commits to, and the plan states before running that leg 1 is
 within-screen association while preparation independence is unresolved, and that
 leg 2 may be refused by its own depth control, in which case the refusal is the
 result.
+
+### A2 stages 1 and 2, 26 September 2026
+
+The owner authorized stages 1 and 2 in one instruction, so the retain step the plan
+placed between them was exercised as a single authorization rather than skipped. Both
+stages computed no endpoint: the human sheet pass read gene symbols only, and the
+freeze read covariate tables. The stage 1 script reproduces A10's recorded validation
+on five genes and all 886 mouse library totals before extending the metric, and it
+refuses to continue on any of seven stop rules.
+
+| Date | Item | Proposed by | Decided by | Decision | Reason |
+|---|---|---|---|---|---|
+| 2026-09-26 | Stage 1 execution | Owner instruction | Owner | Run, and all seven stop rules passed | The audit is the gate the plan placed before any freeze |
+| 2026-09-26 | Stage 2 freeze | Assistant, from the stage 1 findings | Pending owner retain or reject | Frozen in a separate file, leaving the original contract unedited | The contract's recorded hash must keep verifying, so the freeze supersedes it only where it says so |
+| 2026-09-26 | Depth handling | Assistant | Pending owner retain or reject | Keep every well in the primary and declare two depth-restricted sensitivities plus an interpretability floor | Excluding wells would change the rank universe, and the Areg wells are systematically deeper than their units |
+
+| Date | Rejected or reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-26 | The Erbb4 contrast declared in the contract | Its mouse transcript is 0.367 log2 CPM when not targeted and exactly zero when targeted, so there is no receptor to remove | Assistant dropped it at the freeze, on stage 1 evidence, before any endpoint existed |
+| 2026-09-26 | The control wells' role as the unperturbed anchor | Four of the eight plate-3 control wells hold fewer than 100,000 fibroblast counts | Assistant downgraded it to descriptive context at the freeze |
+| 2026-09-26 | The contract's wording "epithelial read fraction" | Ambiguous between the species read assignment and the count-based fraction; the freeze fixes the count-based one, from the same counts the endpoint uses | Assistant clarified it at the freeze |
+
+The depth asymmetry is recorded as making the declared one-sided test conservative
+rather than permissive, because a depth artefact on a mean log2 CPM score is expected
+to push it upward while the prediction is downward. That is an expectation, so the
+freeze requires stage 3 to report the observed depth association next to the result.
+
+### A2 first freeze withdrawn after review, 26 September 2026
+
+Three independent review lenses were run over the A2 documents, on biological and
+literature accuracy, on statistical validity and pre-registration integrity, and on
+internal consistency. They returned 17, 21 and 17 findings, six blocking, and converged
+on two. In response the assistant ran a fibroblast-side covariate pass, which supplied
+the decisive number, and then verified every accepted claim against the deposit or this
+repository's own tables. No endpoint was scored under either freeze.
+
+The first freeze is withdrawn, preserved unchanged, and replaced. The full argument is
+in `RQ_Specified/A2_areg_source_delivery/reports/STAGE2_WITHDRAWN.md`.
+
+| Date | Rejected or reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-26 | The first stage 2 freeze, its rank statistic, its exact null, its critical rank sum of 64 and its alpha | The four replicate units are copies of one plate layout with Areg always at well F07, so there is no randomization behind a uniform-rank null; 50 of 53 plate-3 targets sit at one fixed position | Assistant withdrew it on the statistics lens finding, verified against the deposit, before any score |
+| 2026-09-26 | The claim that removing mouse Areg removes what the fibroblast can receive | The unedited human fibroblasts transcribe AREG at 9.846 mean log2 CPM in 99.2 per cent of plate-3 wells, above the mouse epithelial Areg removed; the repository's own cited paper (Zhou 2012) shows fibroblasts make it | Assistant measured it in a stage 1 addendum prompted by the biology lens, and withdrew the necessity claim |
+| 2026-09-26 | The claim that leg 1 distinguishes delivery from abundance | One source compartment and no spatial variation in a well, so the distinguishing clause has no variance to test; the contrast moves to the spatial layer | Assistant restated leg 1 as a source-contribution contrast |
+| 2026-09-26 | The Hallmark TGF-beta set as primary endpoint | It is a pathway-membership set with 16 negative regulators among 54 members and none of the five activation genes, and it is not what either cited paper measured; the five-gene activation score is | Assistant promoted the activation score and demoted the Hallmark set |
+| 2026-09-26 | TDTOMATO alone as the control set | TIGIT is the article's own in-plate control at six wells per unit, already recorded in A10's source design check | Assistant adopted TIGIT plus TDTOMATO, eight control wells per unit |
+| 2026-09-26 | Epithelial fraction as a primary covariate | Epithelial abundance plausibly lies on the causal path from the knockout to the fibroblast read, and about a fifth of reads are unassigned to either species | Assistant demoted it to a two-sided sensitivity with a mediation-ambiguous reading declared |
+| 2026-09-26 | The consistency requirement presented as added stringency | Its exact size equalled the rank-sum size, 0.04903, so it added none | Assistant recorded the arithmetic and dropped the claim |
+| 2026-09-26 | ERBB3 and ERBB4 as tests of AREG reception | Neither binds AREG; they bind neuregulins, and ERBB4 also has no receptor to remove here | Assistant reclassified them as non-AREG-receptor perturbation controls |
+| 2026-09-26 | Leg 2 as a declared test | The logged trial E6 table already records the activation score against fibroblast depth at rho 0.4116 and fibroblast EGFR at 0.4918, so the inherited gate is likely to refuse it, and the machinery genes are themselves TGF-beta inducible | Assistant reclassified leg 2 as exploratory and required a co-regulation control |
+| 2026-09-26 | The stage 1 report's "all seven stop rules", its count of three sub-threshold wells, and its ranking of Egfr as the weakest contrast | The plan declares four stop rules and seven audit items; six axis wells fall below the adopted floor; Erbb2 clears it in one unit of four | Assistant corrected the report in place, leaving its tables unchanged |
+| 2026-09-26 | The C37 row's proposition, and "none supports a source hierarchy" | The row stated the inverse of the registered proposition and carried its grade; C45 records a ranking in the opposite direction, so the closing statement is about a depth-independent epithelial hierarchy | Assistant restored the register's wording |
+
+The owner retain step the plan placed between stages 1 and 2 was not exercised against
+stage 1's findings, because both stages were authorized in one instruction that
+predates them. The second freeze is therefore recorded as provisional, and stage 3 is
+not authorized.
+
+What survives is narrower and still worth running: a descriptive effect size against
+the screen's own controls, with a direction count and no p-value, which is what the
+register card promised before the first freeze overreached. A2's decisive experiment
+moves to the spatial layer, and the audit also produced the first evidence in this
+repository that the receiver carries the machinery the mechanism needs.
+
+### A2 legs 1 and 2 executed, 26 September 2026
+
+The owner authorized stages 3 and 4. Leg 1 ran under the second freeze, which forbids a
+p-value; the leg 2 specification was declared and committed before leg 2 ran, and
+classified exploratory in advance.
+
+| Date | Item | Proposed by | Decided by | Decision | Reason |
+|---|---|---|---|---|---|
+| 2026-09-26 | Leg 1 execution | Owner instruction | Owner | Run under the second freeze, effect size only | The withdrawn rank test had no randomization behind it |
+| 2026-09-26 | Leg 2 execution | Owner instruction | Owner | Run as declared exploratory | The inherited depth rule was recorded in advance as likely to refuse it |
+| 2026-09-26 | Reading of the Areg null | Assistant | Pending owner retain or reject | No detectable epithelial contribution on top of an unremoved autocrine source; not absence | The recipient transcribes AREG at 9.846 against the 7.267 removed, and the knockout is partial |
+| 2026-09-26 | Reading of the Itgb6 result | Assistant | Pending owner retain or reject | A proposal, not a result: one well per target per unit at a fixed position | It survives the eligibility floor, the epithelial adjustment and a culture check, but the design cannot separate target from position |
+| 2026-09-26 | Claim wording | Assistant | Owner grades, and no row is added here | Four sentences proposed in the synthesis | Grading is the owner's decision |
+
+| Date | Rejected or reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-26 | The leg 2 correlation of +0.433 at nominal p 0.044 | The frozen C51 rule refuses the pair: the composite tracks fibroblast depth at 0.770 and the outcome at 0.412 | The rule, declared before the pair was computed |
+| 2026-09-26 | The IPF stratum of leg 2, which the letter of the rule does not refuse | The predictor still tracks depth at 0.717 there, so the correlation remains a depth comparison | Assistant refused it post hoc, recorded as a tightening in the conservative direction only |
+| 2026-09-26 | The first run of the post hoc culture check | It joined the imaging table on the library prefix where the deposit uses a plate prefix, so every imaging field was empty | Assistant preserved it with a note and corrected the join |
+| 2026-09-26 | The first leg 2 run | It read the gene table's Ensembl column and kept the quoted header, so the row count disagreed with the matrix and the script refused | The script's own shape check; corrected to read the symbol column exactly as trial E6 does |
+
+Two by-products are worth the record. The leg 2 instrument reproduced C50 exactly at
+-0.150, so the refusal is not a broken pipeline. And the screen's fibroblasts carry the
+machinery the cited mechanism needs, with integrin alphaV at 5.835, ITGB1 at 9.487, ITGB8
+at 5.254, LTBP1 at 9.757 and EGFR at 5.389 mean log2 CPM, which is the first evidence in
+this repository that the receiver is equipped and which bears on C36 without settling it.
 
 ## How outputs were reviewed
 

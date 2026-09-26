@@ -194,10 +194,33 @@ Branch `Claude/a2-delivery-hypothesis`, based on main `f1b2c4f`. Start with the
   alphaV on mesenchymal cells and releases bioactive TGF-beta from latent
   complexes (Minutti et al. 2019, doi:10.1016/j.immuni.2019.01.008). Four
   mechanism references were added to REFERENCES.md with PubMed-verified metadata.
-- The plan has six stages and **only stage 1 is authorized**. Leg 1 is the
-  within-plate knockout contrast in GSE307112; leg 2 is a recipient-licensing
-  correlation in GSE136831 that reuses the trial E6 instrument unchanged and
-  changes only the predictor.
+- The plan has six stages. **Stages 1 and 2 are complete and stage 3 is not
+  authorized.** Leg 1 is the within-plate knockout contrast in GSE307112; leg 2 is a
+  recipient-licensing correlation in GSE136831 that reuses the trial E6 instrument
+  unchanged and changes only the predictor.
+- Stage 1 passed all seven stop rules with no endpoint scored: the layout holds, both
+  endpoints are covered 54/54 and 5/5, the recomputed mouse totals and A10's five
+  recorded validations reproduce exactly, and no tracked table pairs either endpoint
+  with per-target rows, so the test is blind. Erbb4 is not expressed (0.367 log2 CPM
+  untargeted, zero when targeted) and Egfr sits at 1.967. Fibroblast depth spans four
+  orders of magnitude and all four Areg wells are above their unit median in it.
+- Stage 2 first froze a rank test with an exact null. **That freeze is withdrawn and
+  preserved**, after three review lenses and a covariate pass the assistant ran in
+  response. Three verified reasons: these fibroblasts transcribe AREG at 9.846 mean
+  log2 CPM in 99.2 per cent of plate-3 wells, above the mouse epithelial Areg removed,
+  so the recipient supplies the ligand and no necessity claim is available; 50 of 53
+  plate-3 targets sit at one fixed well position in all four units, Areg always at F07,
+  so there is no randomization behind a uniform-rank null; and plate 3 carries EGFR,
+  ERBB2, ERBB3, ERBB4, AREG and the MAP kinase cascade, so ranking Areg among its
+  plate-mates is not the declared estimand.
+- The replacement freeze declares an effect size with a direction count and no p-value,
+  against the screen's own control set of TIGIT plus TDTOMATO, eight wells per unit, of
+  which 3, 6, 5 and 8 clear the 100,000-count eligibility floor. The five-gene
+  activation score is promoted to primary because it is what both cited mechanism
+  papers measured; the Hallmark TGF-beta set is demoted, since 16 of its 54 members are
+  negative regulators and none of the five activation genes is in it. Leg 2 is now
+  exploratory: the logged E6 table already puts the activation score at depth rho
+  0.4116.
 - Design facts that shape the test: plate 3 carries Areg, Egfr, Erbb2, Erbb3,
   Erbb4 and Itgb6 at one well per target in each of its four replicate units,
   with two control wells per unit. Hbegf sits on plate 4, so the ligand
@@ -206,9 +229,32 @@ Branch `Claude/a2-delivery-hypothesis`, based on main `f1b2c4f`. Start with the
   absence is unavailable; preparation independence is unresolved, so leg 1 is a
   within-screen association; leg 2 may be refused by its own depth control, and
   that refusal is a result.
-- Next: run stage 1 on the cached screen metadata, the existing A10 tables and
-  the Erbb2 and Erbb4 gene rows that A10 never validated. Do not compute either
-  endpoint by target before stage 2 is committed.
+- **Both legs have now run.** Leg 1: the Areg arm gives a median +0.036 log2 CPM
+  against depth-matched controls, two of four units in the predicted direction, against
+  an endpoint standard deviation of 0.482, and the Hallmark secondary agrees. That null
+  is bounded, not absent. Epithelial Itgb6 gives -0.938 in three of three readable units,
+  surviving the epithelial adjustment at -0.992, with organoid size within 0.022 log
+  units of its controls and fibroblast content at 0.93 of theirs; Erbb3's smaller -0.187
+  fails that culture check, so the generic-perturbation caution weighs on Erbb3. Leg 2 is
+  refused by the frozen C51 depth rule, its composite tracking fibroblast depth at 0.770
+  and the outcome at 0.412, and the IPF stratum is refused too on a stricter post hoc
+  reading. The instrument reproduced C50 at -0.150.
+- Next: the owner grades or rejects the four claim sentences proposed in
+  `reports/STAGE5_SYNTHESIS.md`; none is added. The cheapest open item is a
+  depth-standardized donor measure for leg 2, using the common-molecule-budget treatment
+  this repository applied to C37. The Itgb6 lead needs its own design and is not a
+  question yet. Earlier note, still current: the second freeze was provisional and
+  **stage 3 was not authorized** before the owner authorized it. The owner retain step between stages 1 and 2 was never exercised against
+  stage 1's findings, because both stages were authorized in one instruction. If stage 3
+  is authorized it computes an effect size only, with no p-value. Do not redefine an
+  endpoint, read a null as absence in any arm, or reinstate the withdrawn rank test.
+  The contract and the first freeze must stay unedited so their recorded hashes keep
+  verifying.
+- A2's decisive experiment is no longer in this screen. Source necessity needs a
+  fibroblast-side perturbation or measured extracellular ligand, and the
+  delivery-versus-abundance contrast needs the spatial layer. The audit did produce the
+  first evidence here that the receiver is equipped: fibroblast ITGAV 5.835, ITGB1
+  9.487, ITGB8 5.254, LTBP1 9.757 and EGFR 5.389 mean log2 CPM.
 
 ## Historical handoffs
 

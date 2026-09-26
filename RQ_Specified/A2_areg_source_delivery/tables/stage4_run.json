@@ -1,0 +1,117 @@
+{
+  "stage": "4, leg 2",
+  "classification": "exploratory",
+  "governed_by": {
+    "file": "RQ_Specified/A2_areg_source_delivery/config/a2_leg2_spec.json",
+    "sha256": "27c8d0b35b611ff7610f318d106447c377e33b972354131b6a492d82aa502606"
+  },
+  "completed_utc": "2026-09-26T14:19:44.158630+00:00",
+  "script": "RQ_Specified/A2_areg_source_delivery/scripts/05_stage4_leg2.py",
+  "script_sha256": "f4c3f6362fa703d576363a1c83d62492dcbce0b23a31842e50c6b0b95af1bd05",
+  "inputs": {
+    "X:/GitHub/scRNA_seq/raw_data/GSE136831/GSE136831_RawCounts_Sparse.mtx.gz": "266133a964b5c45bf02394acaaff4ea4eb66096ec5a051d92f93dd2747b5850b",
+    "X:/GitHub/scRNA_seq/raw_data/GSE136831/GSE136831_AllCells.GeneIDs.txt.gz": "e43b3008945c87a6875d4fb1a99a791fdaefeeb3c5a72a5d17589f621eb83af8",
+    "X:/GitHub/scRNA_seq/raw_data/GSE136831/GSE136831_AllCells.cellBarcodes.txt.gz": "0efbb89de618a429e2db0399e25f9b2a0f7cd3b6d6ee9a3da71dfc9318cf1ddc",
+    "X:/GitHub/scRNA_seq/raw_data/GSE136831/GSE136831_AllCells.Samples.CellType.MetadataTable.txt.gz": "147bdd11d720ed30736a459ba62a3d8e2f3f9028a8430e0eb714484f0456049b"
+  },
+  "msigdb_gmt_sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772",
+  "donors": 22,
+  "ipf_donors": 18,
+  "mural_donors_at_the_floor": 6,
+  "mural_labels_present": [
+    "Pericyte",
+    "SMC"
+  ],
+  "machinery_members_used": [
+    "ITGAV",
+    "ITGB1",
+    "ITGB8",
+    "LTBP1",
+    "TGFB1",
+    "THBS1"
+  ],
+  "machinery_members_dropped_for_eligibility": {},
+  "co_regulation_matched_control": [
+    "SLC25A3",
+    "NDUFA1",
+    "ATP6V1D",
+    "COX4I1",
+    "BAX",
+    "CYB5R3"
+  ],
+  "pooled_detection_fractions_used_for_matching": {
+    "ATP6V1D": 0.224,
+    "BAX": 0.2868,
+    "COX4I1": 0.7158,
+    "CYB5R3": 0.5129,
+    "ITGAV": 0.5488,
+    "ITGB1": 0.5516,
+    "ITGB8": 0.224,
+    "LTBP1": 0.7177,
+    "NDUFA1": 0.5536,
+    "SLC25A3": 0.5473,
+    "TGFB1": 0.2894,
+    "THBS1": 0.5155
+  },
+  "headline": {
+    "machinery_vs_activation": {
+      "stratum": "pooled",
+      "x": "machinery",
+      "y": "activation",
+      "donors": 22,
+      "rho": 0.4331,
+      "p_value": 0.044075,
+      "note": "predictor of interest"
+    },
+    "epithelial_AREG_vs_activation": {
+      "stratum": "pooled",
+      "x": "epithelial_AREG",
+      "y": "activation",
+      "donors": 22,
+      "rho": -0.1496,
+      "p_value": 0.506287,
+      "note": "abundance comparator, the E6 estimand"
+    },
+    "co_regulation_control_vs_activation": {
+      "stratum": "pooled",
+      "x": "matched_control",
+      "y": "activation",
+      "donors": 22,
+      "rho": 0.2084,
+      "p_value": 0.352111,
+      "note": "co-regulation control, must be exceeded"
+    },
+    "housekeeping_vs_activation": {
+      "stratum": "pooled",
+      "x": "housekeeping",
+      "y": "activation",
+      "donors": 22,
+      "rho": 0.0661,
+      "p_value": 0.77021,
+      "note": "shared-detection control"
+    },
+    "predictor_depth_coupling": {
+      "stratum": "pooled",
+      "x": "machinery",
+      "y": "fibroblast_depth",
+      "donors": 22,
+      "rho": 0.7696,
+      "p_value": 2.8e-05,
+      "note": "depth coupling of the predictor"
+    },
+    "outcome_depth_coupling": {
+      "stratum": "pooled",
+      "x": "activation",
+      "y": "fibroblast_depth",
+      "donors": 22,
+      "rho": 0.4116,
+      "p_value": 0.056989,
+      "note": "depth coupling of the outcome"
+    }
+  },
+  "depth_rule_refuses_the_pair": true,
+  "machinery_exceeds_co_regulation_control": true,
+  "verdict": "refused by the depth rule; both members of the pair track their compartment depth at or above 0.4",
+  "alpha_claimed": null,
+  "decision_attached": false
+}

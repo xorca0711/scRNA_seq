@@ -321,13 +321,37 @@ no endpoint scored, no claim row added, no grade changed.
 - Entry points: `RQ_Specified/A2_areg_source_delivery/README.md`, `RATIONALE.md`,
   `PLAN.md` and `config/a2_delivery_contract.json`. The contract is the authority
   on endpoints, adjustment, statistic, thresholds and prohibitions.
-- Stage 1 is the only authorized stage and it computes no endpoint. Its stop
-  rules are the plate-3 layout, the knockout validation, the endpoint gene
-  coverage floors, the depth profile, a precedent check and the attainable power.
-- Two endpoints are frozen and must not change after any value is seen: the human
-  Hallmark TGF-beta signalling set as primary, and the repository's five-gene
-  fibroblast activation score (COL1A1, ACTA2, POSTN, CTHRC1, TNC) as co-primary.
-  Both were defined outside this screen.
+- **All six stages have run.** `reports/STAGE5_SYNTHESIS.md` is the entry point. Leg 1:
+  Areg median +0.036 log2 CPM against depth-matched controls, two of four units in the
+  predicted direction, endpoint sd 0.482, so no detectable epithelial contribution on top
+  of an unremoved autocrine source at 9.846; the null is not absence. Epithelial Itgb6
+  gives -0.938 in three of three readable units and survives the epithelial adjustment
+  and a culture check, which proposes epithelial integrin-mediated TGF-beta activation
+  and is not a result. Leg 2 is refused by the C51 depth rule at predictor 0.770 and
+  outcome 0.412; it reproduced C50 at -0.150. No claim row was added and no grade changed.
+- Earlier state, preserved: stages 1 and 2 ran with nothing scored. The first
+  freeze `config/a2_stage2_freeze.json` is **withdrawn and preserved**;
+  `config/a2_stage2_freeze_v2.json` is the authority, and
+  `reports/STAGE2_WITHDRAWN.md` gives the reasons. The contract and the first freeze
+  stay unedited so their recorded hashes keep verifying.
+- The withdrawn inference: there is no p-value and no alpha in A2. The recipient
+  supplies the ligand (human fibroblast AREG 9.846 mean log2 CPM in 99.2 per cent of
+  plate-3 wells), 50 of 53 plate-3 targets sit at one fixed well position in all four
+  units, and plate 3 is an EGFR and MAP kinase plate. A2 now reports an effect size
+  against TIGIT plus TDTOMATO controls with a direction count.
+- Stage 1 passed all seven stop rules. Erbb4 is unexpressed in the perturbed
+  compartment and is dropped from the discriminating set; Egfr is flagged
+  low-abundance; a 100,000-count fibroblast floor governs single-well readings; the
+  control wells are descriptive context because four of eight are shallow.
+- ERBB3 and ERBB4 do not bind AREG and are perturbation controls, not tests of
+  reception; Erbb4 is unexpressed in the perturbed compartment. Erbb2 clears the
+  fibroblast eligibility floor in one unit of four, so it is the least readable
+  contrast, not Egfr.
+- The endpoints are frozen and must not change after any value is seen: the
+  five-gene fibroblast activation score (COL1A1, ACTA2, POSTN, CTHRC1, TNC) is primary,
+  because it is what the cited mechanism papers measured, and the Hallmark TGF-beta set
+  is secondary. Only the gene lists are inherited; neither the E6 operator nor the C51
+  precedent transfers to a per-well log2 CPM score.
 - Precise absence is declared unavailable for leg 1 before any test, because the
   Areg knockout is partial and there are four units. Leg 1 stays a within-screen
   association while A10's preparation identity is unresolved.

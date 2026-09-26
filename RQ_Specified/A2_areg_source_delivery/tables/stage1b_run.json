@@ -1,0 +1,44 @@
+{
+  "stage": "1b, addendum",
+  "purpose": "fibroblast-side ligand, receptor and recipient-machinery covariates; no endpoint scored",
+  "why": "a review found the unremoved human AREG source, the recipient EGFR and machinery, and ligand redundancy all unmeasured",
+  "completed_utc": "2026-09-26T12:54:43.983722+00:00",
+  "script": "RQ_Specified/A2_areg_source_delivery/scripts/01b_stage1_addendum.py",
+  "script_sha256": "b10fabdaa5936a4f9714552442b78f9d2da3a5d1c072ce732aab0aed5fc7e8c4",
+  "inputs": {
+    "RQ_Specified/A10_organoid_growth_outcome/cache/GSE307112_gene_counts.xlsx": "60736e5c153a4fb92908f19148ebb5ef2b59f7ade97fb1056deee7d0205acc33",
+    "RQ_Specified/A10_organoid_growth_outcome/cache/GSE307112_xenome_stats.csv.gz": "045b9da623db54a59948f1e8e6b68c1587fa4786a6838a51a890dfe59064edf5",
+    "RQ_Specified/A10_organoid_growth_outcome/tables/library_totals.tsv": "19c90e9aa068445edfbb21cc8af95d581427db11e4fdbc5f51943380f4f90ca2"
+  },
+  "msigdb_gmt_sha256": "ee2463540042078bfa3f67828e1e223bb354446d9fbb4d22845866835ba5c772",
+  "blinding_guard": "none of the requested genes belongs to the Hallmark TGF-beta set or the activation score; TGFB1 and THBS1 were excluded for exactly that reason",
+  "genes": [
+    "AREG",
+    "EREG",
+    "TGFA",
+    "HBEGF",
+    "BTC",
+    "EPGN",
+    "EGFR",
+    "ERBB2",
+    "ERBB3",
+    "ERBB4",
+    "ITGAV",
+    "ITGB1",
+    "ITGB8",
+    "LTBP1"
+  ],
+  "excluded_for_blinding": [
+    "TGFB1",
+    "THBS1"
+  ],
+  "human_total_mismatches_against_a10": 0,
+  "human_rows_scanned": 58302,
+  "headline": {
+    "human_AREG_detection_fraction_in_plate3_wells": 0.992,
+    "human_AREG_mean_log2cpm": 9.846,
+    "human_EGFR_detection_fraction": 0.908,
+    "human_EGFR_mean_log2cpm": 5.389
+  },
+  "endpoint_scored": false
+}

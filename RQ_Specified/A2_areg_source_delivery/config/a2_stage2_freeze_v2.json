@@ -1,0 +1,316 @@
+{
+  "schema": "a2-stage2-freeze/v2",
+  "frozen_utc": "2026-09-26T13:02:24.804794+00:00",
+  "supersedes": {
+    "file": "RQ_Specified/A2_areg_source_delivery/config/a2_stage2_freeze.json",
+    "sha256": "db5fe996a30ac8ed24f1436a744137a16e4995efec02def60a84061489a18b67",
+    "status": "withdrawn, preserved unchanged",
+    "report": "reports/STAGE2_WITHDRAWN.md"
+  },
+  "contract": {
+    "path": "RQ_Specified/A2_areg_source_delivery/config/a2_delivery_contract.json",
+    "sha256": "3d5cd67fbccfe49a397ba10a5f7e49e2e637661192e5911f737597e5bec75fd8"
+  },
+  "stage1": {
+    "run_record_sha256": "d41f2b22b9d11580941e64f478e7de4d53940099561e2a9d556070fe2693bbe1",
+    "addendum_sha256": "0e1fedc9bd144dcf48e4264d3c93f4f3c64f3901044e78b6b105c5a34b2d5599"
+  },
+  "why_the_first_freeze_is_withdrawn": [
+    {
+      "reason": "the recipient makes the ligand",
+      "evidence": "stage 1b: human AREG at 9.846 mean log2 CPM, detected in 99.2 per cent of plate-3 wells, against mouse epithelial Areg at 7.267 in its own compartment",
+      "consequence": "removing the epithelial source does not remove AREG from the culture, so neither necessity nor sufficiency is available from this design"
+    },
+    {
+      "reason": "there is no randomization",
+      "evidence": "50 of 53 plate-3 targets occupy one fixed well position in all four units, Areg always at F07",
+      "consequence": "target is confounded with plate position and guide pool, the four units are copies of one layout, and a uniform-rank null has nothing behind it"
+    },
+    {
+      "reason": "the reference set is not neutral",
+      "evidence": "plate 3 carries AREG, EGFR, ERBB2, ERBB3, ERBB4 and the MAP kinase cascade among its 53 targets",
+      "consequence": "a rank among plate-mates asks whether Areg is extreme among other perturbations of the same pathway, which is not the declared estimand"
+    },
+    {
+      "reason": "the denominator held ineligible wells",
+      "evidence": "plate-3 fibroblast totals run from 1 count upward, and the first freeze applied its floor only to sensitivities",
+      "consequence": "some ranks were deterministic rather than random draws"
+    },
+    {
+      "reason": "the consistency requirement was arithmetically vacuous",
+      "evidence": "the joint rule's exact size equalled the rank-sum size, 0.04903",
+      "consequence": "it added no stringency while reading as if it did"
+    }
+  ],
+  "what_replaces_it": {
+    "inference": "an effect size with a direction count, descriptive, with no p-value, no alpha and no significance claim",
+    "why": "the register card already promised an effect size and a consistency count rather than a significance test, and the design supports exactly that"
+  },
+  "endpoints": {
+    "primary": {
+      "name": "fibroblast activation score",
+      "genes": [
+        "COL1A1",
+        "ACTA2",
+        "POSTN",
+        "CTHRC1",
+        "TNC"
+      ],
+      "promoted_from": "co-primary in the first freeze",
+      "why": "it is the readout both cited mechanism papers used, alpha-smooth-muscle actin and collagen, so it is the mechanism-matched endpoint"
+    },
+    "secondary": {
+      "name": "HALLMARK_TGF_BETA_SIGNALING",
+      "demoted_from": "primary in the first freeze",
+      "why": "a pathway-membership set whose 54 members include 16 negative regulators and feedback genes, and which contains none of the five activation genes, so its direction is mixed and it is not what the cited papers measured"
+    },
+    "scoring": "mean over members of log2(count / the well's human total * 1e6 + 1)",
+    "inherited": "the gene list only, chosen before this screen was touched; neither the E6 operator nor the C51 precedent transfers to a per-well log2 CPM score"
+  },
+  "eligibility": {
+    "floor_human_counts": 100000,
+    "justification": "at this depth a gene at 50 counts per million is expected about five times, so a five-gene or 54-gene mean estimates a programme rather than reporting detection",
+    "applies_to": "every well in every comparison, including the controls",
+    "eligible_wells_per_unit": [
+      32,
+      48,
+      31,
+      57
+    ]
+  },
+  "control_set": {
+    "targets": [
+      "TIGIT",
+      "TDTOMATO"
+    ],
+    "why": "TIGIT is the screen's own in-plate control, recorded in A10's source design check, at six wells per unit; the first freeze used TDTOMATO alone",
+    "wells_per_unit": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "eligible_per_unit": [
+      3,
+      6,
+      5,
+      8
+    ],
+    "minimum_eligible_controls_in_any_unit": 3
+  },
+  "primary_comparison": {
+    "statistic": "within each unit, the Areg well's endpoint minus the mean endpoint of that unit's eligible control wells, in log2 CPM units",
+    "reported": "one effect per unit, the four effects, their median, and the count of units in the predicted direction",
+    "predicted_direction": "lower in the Areg well, declared before any value is read",
+    "no_p_value": true,
+    "why_no_p_value": "there is no randomization to support one, and the four units are copies of one layout",
+    "depth_matched_variant": {
+      "definition": "controls restricted to those within a factor of 4 of the Areg well's fibroblast total",
+      "controls_within_band_per_unit": [
+        3,
+        5,
+        5,
+        7
+      ],
+      "minimum_in_any_unit": 3,
+      "why": "the Areg wells are deep and several control wells are shallow, so the unmatched contrast confounds depth with target",
+      "status": "required alongside the unmatched contrast, not optional"
+    },
+    "epithelial_fraction": {
+      "role": "reported as a two-sided sensitivity, not a primary covariate",
+      "why": "epithelial abundance plausibly lies on the causal path from an Areg knockout to the fibroblast read, so adjusting for it removes part of the effect; about a fifth of reads are also unassigned to either species",
+      "pre_declared_reading": "an effect that survives only without the epithelial adjustment, or only with it, is reported as mediation-ambiguous rather than as artefact or as signal"
+    }
+  },
+  "discriminating_contrasts": {
+    "decision_attached": false,
+    "no_threshold": "no numeric threshold is declared, because none is defensible at one well per target per unit; these contrasts are descriptive",
+    "areg_receptor": [
+      "EGFR"
+    ],
+    "heterodimer_partner": [
+      "ERBB2"
+    ],
+    "not_areg_receptors": {
+      "ERBB3": "binds neuregulins, not AREG",
+      "ERBB4": "binds neuregulins, HB-EGF, betacellulin and epiregulin, not AREG; also unexpressed here"
+    },
+    "reclassified_as": "non-AREG-receptor perturbation controls, not tests of AREG reception",
+    "itgb6": "epithelial integrin contrast, descriptive",
+    "hbegf": "dropped as an effect-size comparison; it sits on plate 4 and the inherited measurement contract forbids treating cross-plate ranks as commensurable effect sizes",
+    "egfr_caveat": "epithelial Egfr is 1.967 log2 CPM when not targeted, near the detection floor, so the autocrine rival may not be testable in this screen at all",
+    "readability_at_the_floor": {
+      "AREG": {
+        "units_clearing_the_floor": 4,
+        "units_present": 4,
+        "fibroblast_counts_by_unit": [
+          408995,
+          993663,
+          202922,
+          1006613
+        ]
+      },
+      "EGFR": {
+        "units_clearing_the_floor": 3,
+        "units_present": 4,
+        "fibroblast_counts_by_unit": [
+          186908,
+          51605,
+          191302,
+          231560
+        ]
+      },
+      "ERBB2": {
+        "units_clearing_the_floor": 1,
+        "units_present": 4,
+        "fibroblast_counts_by_unit": [
+          1759,
+          97637,
+          68491,
+          1340076
+        ]
+      },
+      "ERBB3": {
+        "units_clearing_the_floor": 4,
+        "units_present": 4,
+        "fibroblast_counts_by_unit": [
+          1267758,
+          843540,
+          149605,
+          2885965
+        ]
+      },
+      "ERBB4": {
+        "units_clearing_the_floor": 3,
+        "units_present": 4,
+        "fibroblast_counts_by_unit": [
+          82689,
+          376011,
+          321068,
+          163817
+        ]
+      },
+      "ITGB6": {
+        "units_clearing_the_floor": 3,
+        "units_present": 4,
+        "fibroblast_counts_by_unit": [
+          856721,
+          650042,
+          4865,
+          232512
+        ]
+      }
+    },
+    "readability_note": "Erbb2 is the weakest contrast by readability, not Egfr: it clears the fibroblast eligibility floor in one unit of four, while Egfr clears three and Erbb3 four. The first freeze ranked these the other way round.",
+    "no_null_supports_absence": "every recorded reduction in this axis is partial, so no arm's null can exclude a role, and the receptor arm contributes only as a consistency check"
+  },
+  "hard_limits_stated_before_any_score": [
+    "The recipient expresses the ligand, so leg 1 can at most bound the incremental contribution of the epithelial source on top of an unremoved autocrine source.",
+    "Ligand redundancy is not excluded: stage 1b records fibroblast EREG at 7.659 log2 CPM in 96.3 per cent of wells, and no Ereg, Tgfa or Btc well exists in this screen.",
+    "Delivery is not separable from abundance in a single well with one source compartment and no spatial variation; that contrast belongs to the spatial layer.",
+    "Neither leg is blind in the strict sense. The primary endpoint's inputs are already cached from A10's extraction, and leg 2's outcome is already computed and graded (C50). What is new in each leg is the contrast, not the measurement.",
+    "Preparation independence is unresolved, so every result is a within-screen association.",
+    "The cross-species assumption that mouse amphiregulin activates human EGFR is carried and unverified.",
+    "The culture medium and matrix are not in the deposit, so exogenous EGF or a TGF-beta receptor inhibitor cannot be ruled out; either would mask or clamp the endpoint, and a null is pharmacologically ambiguous until the methods are checked."
+  ],
+  "leg_2_reclassified": {
+    "status": "exploratory, not a declared test",
+    "why": "the inherited depth gate is likely to refuse it: the logged E6 table already records the activation score against fibroblast depth at rho 0.4116 and fibroblast EGFR at 0.4918, and both members of the new pair are fibroblast detection fractions",
+    "receptor_layer_omitted": "the cited mechanism makes recipient EGFR obligatory, and leg 2 does not measure it because A9 owns the receptor layer; the estimand is therefore the post-receptor integrin and latent-complex layer, not recipient licensing as a whole",
+    "recipient_in_the_cited_work": "a PDGFRB-positive pericyte, not a lung fibroblast, so extension to fibroblasts is an assumption carried on the same footing as the cross-species one; a mural stratum is reported beside the fibroblast stratum rather than instead of it",
+    "controls_required": [
+      "the C51 depth rule, unchanged",
+      "a co-regulation control: genes matched to the machinery set on detection frequency in the same fibroblasts and not TGF-beta responsive, since TGFB1, THBS1, ITGB8 and LTBP1 are themselves TGF-beta inducible",
+      "a per-gene expression eligibility floor, as MC4 requires",
+      "the IPF-only stratum beside the pooled result"
+    ],
+    "named_rival": "co-regulation within one activation programme, which a positive result cannot exclude"
+  },
+  "design_facts": {
+    "3-1": {
+      "wells": 60,
+      "eligible_wells": 32,
+      "areg_library": "3-1_F07_AREG",
+      "areg_fibroblast_counts": 408995,
+      "areg_epithelial_count_fraction": 0.7935,
+      "control_wells": 8,
+      "control_wells_eligible": 3,
+      "control_fibroblast_counts": [
+        2604,
+        11417,
+        34438,
+        37243,
+        96818,
+        344241,
+        372007,
+        600353
+      ],
+      "control_wells_within_depth_band": 3
+    },
+    "3-2": {
+      "wells": 60,
+      "eligible_wells": 48,
+      "areg_library": "3-2_F07_AREG",
+      "areg_fibroblast_counts": 993663,
+      "areg_epithelial_count_fraction": 0.7855,
+      "control_wells": 8,
+      "control_wells_eligible": 6,
+      "control_fibroblast_counts": [
+        14219,
+        59249,
+        113520,
+        376068,
+        529523,
+        874233,
+        1176571,
+        1646992
+      ],
+      "control_wells_within_depth_band": 5
+    },
+    "3-3": {
+      "wells": 60,
+      "eligible_wells": 31,
+      "areg_library": "3-3_F07_AREG",
+      "areg_fibroblast_counts": 202922,
+      "areg_epithelial_count_fraction": 0.7092,
+      "control_wells": 8,
+      "control_wells_eligible": 5,
+      "control_fibroblast_counts": [
+        10231,
+        17021,
+        34871,
+        122242,
+        129225,
+        260319,
+        325890,
+        692172
+      ],
+      "control_wells_within_depth_band": 5
+    },
+    "3-4": {
+      "wells": 60,
+      "eligible_wells": 57,
+      "areg_library": "3-4_F07_AREG",
+      "areg_fibroblast_counts": 1006613,
+      "areg_epithelial_count_fraction": 0.794,
+      "control_wells": 8,
+      "control_wells_eligible": 8,
+      "control_fibroblast_counts": [
+        100609,
+        418856,
+        543071,
+        576372,
+        787450,
+        889529,
+        1067038,
+        1406932
+      ],
+      "control_wells_within_depth_band": 7
+    }
+  },
+  "fixed_position_targets": {
+    "targets_with_one_well_position": 50,
+    "targets_total": 53
+  },
+  "endpoint_scored": false
+}

@@ -1,0 +1,15 @@
+gene	class	plate3_wells	wells_with_any_count	detection_fraction	mean_log2cpm_all_plate3	mean_log2cpm_control_wells	mean_log2cpm_areg_ko_wells	perturbed_in_this_screen
+AREG	EGFR ligand	240	238	0.992	9.846	10.058	10.001	yes
+EREG	EGFR ligand	240	231	0.963	7.659	6.139	7.988	no
+TGFA	EGFR ligand	240	23	0.096	0.189	0.0	0.0	no
+HBEGF	EGFR ligand	240	200	0.833	4.204	3.465	5.085	yes
+BTC	EGFR ligand	240	119	0.496	1.327	2.188	2.422	no
+EPGN	EGFR ligand	240	21	0.087	0.186	0.188	0.0	no
+EGFR	receptor	240	218	0.908	5.389	4.993	6.002	yes
+ERBB2	receptor	240	175	0.729	3.246	0.898	4.689	yes
+ERBB3	receptor	240	78	0.325	0.7	0.738	0.64	yes
+ERBB4	receptor	240	76	0.317	0.851	0.0	0.0	yes
+ITGAV	recipient machinery	240	225	0.938	5.835	3.969	6.023	no
+ITGB1	recipient machinery	240	238	0.992	9.487	9.696	9.426	no
+ITGB8	recipient machinery	240	212	0.883	5.254	4.521	5.752	no
+LTBP1	recipient machinery	240	239	0.996	9.757	9.729	10.055	no
