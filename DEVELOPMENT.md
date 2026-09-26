@@ -962,6 +962,33 @@ register card promised before the first freeze overreached. A2's decisive experi
 moves to the spatial layer, and the audit also produced the first evidence in this
 repository that the receiver carries the machinery the mechanism needs.
 
+### A2 legs 1 and 2 executed, 26 September 2026
+
+The owner authorized stages 3 and 4. Leg 1 ran under the second freeze, which forbids a
+p-value; the leg 2 specification was declared and committed before leg 2 ran, and
+classified exploratory in advance.
+
+| Date | Item | Proposed by | Decided by | Decision | Reason |
+|---|---|---|---|---|---|
+| 2026-09-26 | Leg 1 execution | Owner instruction | Owner | Run under the second freeze, effect size only | The withdrawn rank test had no randomization behind it |
+| 2026-09-26 | Leg 2 execution | Owner instruction | Owner | Run as declared exploratory | The inherited depth rule was recorded in advance as likely to refuse it |
+| 2026-09-26 | Reading of the Areg null | Assistant | Pending owner retain or reject | No detectable epithelial contribution on top of an unremoved autocrine source; not absence | The recipient transcribes AREG at 9.846 against the 7.267 removed, and the knockout is partial |
+| 2026-09-26 | Reading of the Itgb6 result | Assistant | Pending owner retain or reject | A proposal, not a result: one well per target per unit at a fixed position | It survives the eligibility floor, the epithelial adjustment and a culture check, but the design cannot separate target from position |
+| 2026-09-26 | Claim wording | Assistant | Owner grades, and no row is added here | Four sentences proposed in the synthesis | Grading is the owner's decision |
+
+| Date | Rejected or reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-26 | The leg 2 correlation of +0.433 at nominal p 0.044 | The frozen C51 rule refuses the pair: the composite tracks fibroblast depth at 0.770 and the outcome at 0.412 | The rule, declared before the pair was computed |
+| 2026-09-26 | The IPF stratum of leg 2, which the letter of the rule does not refuse | The predictor still tracks depth at 0.717 there, so the correlation remains a depth comparison | Assistant refused it post hoc, recorded as a tightening in the conservative direction only |
+| 2026-09-26 | The first run of the post hoc culture check | It joined the imaging table on the library prefix where the deposit uses a plate prefix, so every imaging field was empty | Assistant preserved it with a note and corrected the join |
+| 2026-09-26 | The first leg 2 run | It read the gene table's Ensembl column and kept the quoted header, so the row count disagreed with the matrix and the script refused | The script's own shape check; corrected to read the symbol column exactly as trial E6 does |
+
+Two by-products are worth the record. The leg 2 instrument reproduced C50 exactly at
+-0.150, so the refusal is not a broken pipeline. And the screen's fibroblasts carry the
+machinery the cited mechanism needs, with integrin alphaV at 5.835, ITGB1 at 9.487, ITGB8
+at 5.254, LTBP1 at 9.757 and EGFR at 5.389 mean log2 CPM, which is the first evidence in
+this repository that the receiver is equipped and which bears on C36 without settling it.
+
 ## How outputs were reviewed
 
 ### A1 adaptive continuation, 25 September 2026

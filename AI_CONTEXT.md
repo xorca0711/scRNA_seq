@@ -300,7 +300,15 @@ no endpoint scored, no claim row added, no grade changed.
 - Entry points: `RQ_Specified/A2_areg_source_delivery/README.md`, `RATIONALE.md`,
   `PLAN.md` and `config/a2_delivery_contract.json`. The contract is the authority
   on endpoints, adjustment, statistic, thresholds and prohibitions.
-- Stages 1 and 2 ran, nothing is scored, and stage 3 is not authorized. The first
+- **All six stages have run.** `reports/STAGE5_SYNTHESIS.md` is the entry point. Leg 1:
+  Areg median +0.036 log2 CPM against depth-matched controls, two of four units in the
+  predicted direction, endpoint sd 0.482, so no detectable epithelial contribution on top
+  of an unremoved autocrine source at 9.846; the null is not absence. Epithelial Itgb6
+  gives -0.938 in three of three readable units and survives the epithelial adjustment
+  and a culture check, which proposes epithelial integrin-mediated TGF-beta activation
+  and is not a result. Leg 2 is refused by the C51 depth rule at predictor 0.770 and
+  outcome 0.412; it reproduced C50 at -0.150. No claim row was added and no grade changed.
+- Earlier state, preserved: stages 1 and 2 ran with nothing scored. The first
   freeze `config/a2_stage2_freeze.json` is **withdrawn and preserved**;
   `config/a2_stage2_freeze_v2.json` is the authority, and
   `reports/STAGE2_WITHDRAWN.md` gives the reasons. The contract and the first freeze

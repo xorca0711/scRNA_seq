@@ -1,6 +1,12 @@
 # A2: does the fibroblast response to AREG depend on delivery or on abundance
 
-**Status, 26 September 2026: audited, then narrowed by its own audit. Nothing
+**Status, 26 September 2026: all six stages complete.** Start with the
+[synthesis](reports/STAGE5_SYNTHESIS.md). Leg 1 found no movement in the Areg arm and a
+large consistent decrease in the epithelial Itgb6 arm; leg 2 was refused by the frozen
+depth rule it inherited. The history below is preserved because the first freeze was
+withdrawn before anything was scored.
+
+**Earlier status, before the legs ran: audited, then narrowed by its own audit. Nothing
 scored.** No endpoint has been computed in either dataset named below, and no claim row
 has changed. A three-lens review and the covariate pass it prompted showed that the
 first freeze declared an inference this design cannot support, so **it is withdrawn and
@@ -98,10 +104,11 @@ all four units does not reach it.
 | `PLAN.md` | six stages, their stop rules and the order of work |
 | `config/a2_delivery_contract.json` | endpoints, adjustment, statistic, thresholds, prohibitions |
 | `config/a2_stage2_freeze.json` | the first freeze, withdrawn and preserved unchanged |
-| `config/a2_stage2_freeze_v2.json` | the current freeze: effect size against the screen's controls, eligibility floor, no p-value |
+| `config/a2_stage2_freeze_v2.json` | the freeze leg 1 obeyed: effect size against the screen's controls, eligibility floor, no p-value |
+| `config/a2_leg2_spec.json` | the leg 2 specification, declared and committed before leg 2 ran |
 | `scripts/` | `01_stage1_audit.py` and `02_stage2_freeze.py`, standard library only, hash-verified inputs, refusing to overwrite |
 | `tables/` | stage 1 outputs and their run record |
-| `reports/` | [stage 1 audit](reports/STAGE1_AUDIT.md), the [first freeze](reports/STAGE2_FREEZE.md) and its [withdrawal](reports/STAGE2_WITHDRAWN.md) |
+| `reports/` | [synthesis](reports/STAGE5_SYNTHESIS.md), [leg 1](reports/STAGE3_LEG1_RESULTS.md), [leg 2](reports/STAGE4_LEG2_RESULTS.md), [stage 1 audit](reports/STAGE1_AUDIT.md), the [first freeze](reports/STAGE2_FREEZE.md) and its [withdrawal](reports/STAGE2_WITHDRAWN.md) |
 
 ## Three things a later session must not do
 

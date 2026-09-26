@@ -1,0 +1,16 @@
+stratum	x	y	donors	rho	p_value	note
+pooled	machinery	activation	22	0.4331	0.044075	predictor of interest
+pooled	epithelial_AREG	activation	22	-0.1496	0.506287	abundance comparator, the E6 estimand
+pooled	matched_control	activation	22	0.2084	0.352111	co-regulation control, must be exceeded
+pooled	housekeeping	activation	22	0.0661	0.77021	shared-detection control
+pooled	machinery	fibroblast_depth	22	0.7696	2.8e-05	depth coupling of the predictor
+pooled	activation	fibroblast_depth	22	0.4116	0.056989	depth coupling of the outcome
+pooled	epithelial_AREG	epithelial_depth	22	0.1237	0.583509	depth coupling of the comparator
+IPF only	machinery	activation	18	0.453	0.059017	predictor of interest
+IPF only	epithelial_AREG	activation	18	-0.0134	0.957864	abundance comparator, the E6 estimand
+IPF only	matched_control	activation	18	0.1434	0.570135	co-regulation control, must be exceeded
+IPF only	housekeeping	activation	18	0.0279	0.912608	shared-detection control
+IPF only	machinery	fibroblast_depth	18	0.7172	0.000807	depth coupling of the predictor
+IPF only	activation	fibroblast_depth	18	0.3209	0.194082	depth coupling of the outcome
+IPF only	epithelial_AREG	epithelial_depth	18	0.162	0.520665	depth coupling of the comparator
+mural	mural_machinery	mural_activation	6	-0.1429	0.787172	the population the cited mechanism used; underpowered

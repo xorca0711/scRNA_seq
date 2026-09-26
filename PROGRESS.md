@@ -182,8 +182,22 @@ Branch `Claude/a2-delivery-hypothesis`, based on main `f1b2c4f`. Start with the
   absence is unavailable; preparation independence is unresolved, so leg 1 is a
   within-screen association; leg 2 may be refused by its own depth control, and
   that refusal is a result.
-- Next: the second freeze is provisional pending owner review and **stage 3 is not
-  authorized**. The owner retain step between stages 1 and 2 was never exercised against
+- **Both legs have now run.** Leg 1: the Areg arm gives a median +0.036 log2 CPM
+  against depth-matched controls, two of four units in the predicted direction, against
+  an endpoint standard deviation of 0.482, and the Hallmark secondary agrees. That null
+  is bounded, not absent. Epithelial Itgb6 gives -0.938 in three of three readable units,
+  surviving the epithelial adjustment at -0.992, with organoid size within 0.022 log
+  units of its controls and fibroblast content at 0.93 of theirs; Erbb3's smaller -0.187
+  fails that culture check, so the generic-perturbation caution weighs on Erbb3. Leg 2 is
+  refused by the frozen C51 depth rule, its composite tracking fibroblast depth at 0.770
+  and the outcome at 0.412, and the IPF stratum is refused too on a stricter post hoc
+  reading. The instrument reproduced C50 at -0.150.
+- Next: the owner grades or rejects the four claim sentences proposed in
+  `reports/STAGE5_SYNTHESIS.md`; none is added. The cheapest open item is a
+  depth-standardized donor measure for leg 2, using the common-molecule-budget treatment
+  this repository applied to C37. The Itgb6 lead needs its own design and is not a
+  question yet. Earlier note, still current: the second freeze was provisional and
+  **stage 3 was not authorized** before the owner authorized it. The owner retain step between stages 1 and 2 was never exercised against
   stage 1's findings, because both stages were authorized in one instruction. If stage 3
   is authorized it computes an effect size only, with no p-value. Do not redefine an
   endpoint, read a null as absence in any arm, or reinstate the withdrawn rank test.

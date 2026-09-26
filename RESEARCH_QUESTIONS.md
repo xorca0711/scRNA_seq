@@ -39,7 +39,7 @@ recovery endpoint, and population persistence does not trace the same cells.
 |---|---|---|---|
 | [A0](#a0) | A conserved transition-associated programme may contribute to epithelial fate modulation | Related transitional RNA states across repair and development; shared fate control remains a hypothesis | [Pilot complete](RQ_Specified/A0_conserved_epithelial_transition_program/reports/PILOT_V1_RESULTS.md): 50-gene lung signature fails the mature intestinal endpoint; P4 pruned; universal/causal fate claims unresolved |
 | [A1](#a1) | Regulatory features distinguish RNA-similar transitional states and responses | Direct marks, lineage, perturbation and paired CD44 context contrasts | Adaptive batch complete; matched replicated regulatory/fate linkage remains missing |
-| [A2](#a2) | AREG changes a fibroblast response through delivery to a competent recipient rather than through source abundance | Seven register rows close the abundance version (C37, C39, C40, C45, C48, C49, C50); the mechanism places the rate-limiting step in the recipient | [Audited, then narrowed by its own audit](RQ_Specified/A2_areg_source_delivery/README.md): the first freeze is withdrawn because the recipient supplies the ligand and the units are one repeated layout; an effect size with no p-value replaces it; nothing scored |
+| [A2](#a2) | AREG changes a fibroblast response through delivery to a competent recipient rather than through source abundance | Seven register rows close the abundance version (C37, C39, C40, C45, C48, C49, C50); the mechanism places the rate-limiting step in the recipient | [Both legs run](RQ_Specified/A2_areg_source_delivery/reports/STAGE5_SYNTHESIS.md): the Areg arm does not move and its null is bounded by an unremoved autocrine source; epithelial Itgb6 moves by -0.938 log2 CPM in three of three readable units; the donor-level leg is refused by the C51 depth rule |
 | [A3](#a3) | Injury leaves a macrophage programme beyond normal aging | Late population composition | Age-matched controls and comparable sampling needed |
 | [A4](#a4) | Wnt maintenance and IL-1 response occur sequentially in an AT2 lineage | Transcript/source observations; sequence untested | Measured activity/history and lineage-linked response needed |
 | [A5](#a5) | Adult repair reuses a developmental epithelial component | Neonatal coexpression and label-excluded ADI enrichment; outside developmental list now sourced | Revised external-signature test positive in 24 mice and after identity/control exclusions; lineage/function untested |
@@ -235,18 +235,24 @@ epithelium, so a positive result is equally consistent with the abundance versio
 bounds an increment rather than establishing necessity. That contrast needs the spatial
 layer.
 
-**Decision / readiness.** Conditional, descriptive, and narrowed by its own audit. The
-instrument audit and two freezes are complete and nothing is scored. The first freeze
-declared a rank test with an exact null and is
-[withdrawn](RQ_Specified/A2_areg_source_delivery/reports/STAGE2_WITHDRAWN.md): the four
-replicate units are copies of one plate layout with Areg always at the same well, plate
-3's other targets are largely the same pathway, and the recipient supplies the ligand.
-What remains is an effect size against the screen's own controls with a direction count
-and no p-value, read as a within-screen association while preparation independence is
-unresolved (A10). Secreted ligand, receptor engagement (C36) and proximity remain
-outside the repository, and the culture medium is not in the deposit, so a null is
-pharmacologically ambiguous. [Current figures](analysis/figures/rq/README.md#a2) are
-diagnostics. [MC2 to MC4](docs/RQ_MEASUREMENT_CONTRACTS.md#mc2).
+**Decision / readiness.** Conditional and descriptive; both legs have now run and
+neither settles the question. In the organoid screen the frozen fibroblast activation
+score does not move on epithelial Areg knockout, a median of +0.036 log2 CPM against
+depth-matched controls with two of four units in the predicted direction and an endpoint
+standard deviation of 0.482. That null is bounded rather than absent: the recipient
+transcribes AREG at 9.846 against the 7.267 removed, the knockout is partial, and the
+culture medium is not in the deposit. The arm that moved is epithelial **Itgb6**, at a
+median of -0.938 in three of three readable units, with organoid size and fibroblast
+content unchanged, which proposes epithelial integrin-mediated TGF-beta activation rather
+than the ligand and needs its own design. The donor-level leg is refused by the frozen
+C51 depth rule, its composite tracking fibroblast depth at 0.770. The first freeze, which
+declared a rank test with an exact null, is
+[withdrawn](RQ_Specified/A2_areg_source_delivery/reports/STAGE2_WITHDRAWN.md). Read the
+[synthesis](RQ_Specified/A2_areg_source_delivery/reports/STAGE5_SYNTHESIS.md). Secreted
+ligand, receptor engagement (C36) and proximity remain outside the repository, and the
+decisive delivery-versus-abundance contrast needs the spatial layer.
+[Current figures](analysis/figures/rq/README.md#a2) are diagnostics.
+[MC2 to MC4](docs/RQ_MEASUREMENT_CONTRACTS.md#mc2).
 
 <a id="a3-which-macrophage-programmes-vary-with-phase-and-what-explains-the-differences"></a>
 <a id="a3"></a>
