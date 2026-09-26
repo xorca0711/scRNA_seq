@@ -110,6 +110,21 @@ these are the sentences the artefacts support:
    significant donor-level correlation for the second time, on a pair declared before it
    was computed.
 
+## The negative-results path, and why it is not taken yet
+
+The plan directed this outcome pair, an inconclusive leg 1 and a leg 2 refused by its own
+control, to NEGATIVE_RESULTS.md through the usual generation path. That file carries a
+standing instruction not to edit it by hand: it is generated from CLAIMS.md by
+`analysis/scripts/14_write_negative_results.py`, and the wording it prints is the
+register's own.
+
+So the entry cannot be written from here. Grading is the owner's decision and this
+analysis adds no register row, which means there is nothing for the generator to pick up.
+Once rows 1 and 3 of the wording proposed above are graded and entered, re-running that
+script places them on the negative-results page without further work. Naming the gap here
+rather than leaving it silent, because a result that exists only in a stage report is
+easier to lose than one the generator owns.
+
 ## Other genomic layers, with feasibility verdicts
 
 1. **A depth-standardized donor measure in the cohort already on disk.** The direct fix
