@@ -1,0 +1,58 @@
+{
+  "schema": "a2-leg2-depth-standardised/v1",
+  "declared": "2026-09-27",
+  "status": "declared and committed before any standardised value was computed",
+  "classification": "exploratory, and explicitly not an independent test",
+  "honesty_statement": "The unstandardised result is already known and logged: the machinery composite correlated with the activation score at rho 0.433 across 22 donors, and the pair was refused because the composite tracked fibroblast depth at 0.770 and the outcome at 0.412. This pass is a second look at the same pair in the same cohort with a different measure. It is neither an independent pre-registration nor a new validation cohort, and it cannot turn a refused pair into a confirmation. Its only question is whether the measure can be made depth-independent enough to be read at all.",
+  "purpose": "replace the raw detection fraction with a common-molecule-budget expectation, the treatment this repository already applied to C37, and re-apply the C51 depth rule",
+  "precedent": {
+    "claim": "C37",
+    "artefact": "analysis/corrections/ligand/README.md",
+    "rule_reused": "at the primary sensitivity budget a cell contributes the exact hypergeometric probability of retaining at least one molecule of the gene; cells below the budget are excluded and each group must still meet the cell floor"
+  },
+  "measure": {
+    "definition": "for a cell with T total molecules and k counts of a gene, the expected detection at budget N is 1 minus the hypergeometric probability of drawing none of the k, that is 1 - C(T-k, N)/C(T, N), and it is 1 when T-k is below N",
+    "cell_total": "the deposited nUMI for that cell",
+    "per_donor_value": "the mean of that expectation over the donor's cells in the compartment",
+    "composite": "the mean over the set's members of the per-donor per-gene value, exactly as the raw version averaged detection fractions"
+  },
+  "budgets": {
+    "primary": 1000,
+    "sensitivities": [500, 2000],
+    "why_1000": "it matches the C37 primary budget, and the deposit is filtered at 1000 molecules so all 5,380 fibroblasts in scope are retained; the 2000 budget excludes 600 of them and its exclusion count is reported",
+    "rule": "the primary carries the reading; a sensitivity may not be substituted for it, which is the same restriction C37 carries"
+  },
+  "frozen_from_the_first_pass_and_not_re_derived": {
+    "outcome": ["COL1A1", "ACTA2", "POSTN", "CTHRC1", "TNC"],
+    "predictor": ["ITGAV", "ITGB1", "ITGB8", "LTBP1", "TGFB1", "THBS1"],
+    "comparator": "epithelial AREG",
+    "shared_detection_control": ["ACTB", "GAPDH", "PGK1", "RPL13A", "RPS18"],
+    "co_regulation_control": ["SLC25A3", "NDUFA1", "ATP6V1D", "COX4I1", "BAX", "CYB5R3"],
+    "why_not_re_matched": "the co-regulation control was matched on pooled detection fraction before any standardised value existed; re-matching it under the new measure would be tuning a control to a result"
+  },
+  "instrument_unchanged": {
+    "dataset": "GSE136831",
+    "donors": "Subject_Identity, restricted to Disease_Identity in IPF and Control",
+    "fibroblasts": "Manuscript_Identity in Fibroblast and Myofibroblast",
+    "epithelium": "CellType_Category Epithelial, pooled",
+    "cell_floor_per_compartment_per_donor": 50,
+    "minimum_donors": 10,
+    "depth_measure": "median deposited nGene per cell, per donor and compartment, unchanged",
+    "statistic": "Spearman across donors, two-sided, nominal p reported, no alpha claimed",
+    "strata": ["pooled", "IPF only", "mural, reported as underpowered"]
+  },
+  "declared_reading": {
+    "readable": "both members of the pair fall below an absolute depth rho of 0.4 under the primary budget, in which case the correlation is reported with its controls and remains exploratory and correlational",
+    "still_refused": "either member remains at or above 0.4, in which case the pair stays refused and this cohort is closed to this question at this measure",
+    "control_requirement_unchanged": "a readable correlation must still exceed both the co-regulation control and the shared-detection control",
+    "no_promotion": "a readable positive is not upgraded to a test, because the unstandardised value was seen first"
+  },
+  "prohibited": [
+    "substituting a sensitivity budget for the primary",
+    "re-deriving or re-matching the control sets",
+    "reading a standardised correlation as direction, proximity or mechanism",
+    "treating this as a retest of C49 or C50, or re-grading either",
+    "adding or grading a claim row"
+  ],
+  "endpoint_scored_at_declaration": false
+}
