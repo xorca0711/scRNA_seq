@@ -1,0 +1,9 @@
+{
+  "status": "interrupted_during_D1_preparation",
+  "reason": "Replace slow scattered memmap writes with bounded sparse accumulation and sequential output",
+  "programme_effects_computed": false,
+  "config_sha256": "5e33bc9cd01bdaa4dc9bcf72cfc254130e693cde639a642197d9badf58284ed4",
+  "partial_counts_preserved_in_ignored": "processed/preparation_attempt1_interrupted/D1_counts.bin",
+  "script_commit": "b544cbc",
+  "scientific_settings_changed": false
+}

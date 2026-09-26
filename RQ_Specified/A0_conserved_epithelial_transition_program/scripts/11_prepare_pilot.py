@@ -6,7 +6,7 @@ from pathlib import Path
 import h5py
 import numpy as np
 import pandas as pd
-from scipy.sparse import csc_matrix
+from scipy.sparse import csc_matrix, coo_matrix
 
 BASE = Path(__file__).resolve().parents[1]
 ROOT = BASE.parents[1]
@@ -80,7 +80,7 @@ def main():
     assert len(set(genes))==len(genes) and len(set(bars))==len(bars)
     bi={s:i for i,s in enumerate(bars)}; ix=np.array([bi[s] for s in d.cell_id])
     mapping=np.full(len(bars),-1,dtype=np.int64); mapping[ix]=np.arange(len(ix))
-    out=WORK/'D1_counts.bin'; x=np.memmap(out,mode='w+',dtype=np.int32,shape=(len(genes),len(d))); x[:]=0
+    out=WORK/'D1_counts.bin'; kept_rows=[]; kept_columns=[]; kept_values=[]
     with gzip.open(d1matrix,'rt') as f:
         line=f.readline()
         while line.startswith('%'): line=f.readline()
@@ -93,10 +93,18 @@ def main():
             rr=z[:,0].astype(np.int64)-1; co=z[:,1].astype(np.int64)-1
             if transpose: rr,co=co,rr
             keep=mapping[co]>=0
-            np.add.at(x,(rr[keep],mapping[co[keep]]),z[keep,2].astype(np.int32))
+            kept_rows.append(rr[keep].astype(np.int32))
+            kept_columns.append(mapping[co[keep]].astype(np.int32))
+            kept_values.append(z[keep,2].astype(np.int32))
             seen+=len(z)
+            if seen%5_000_000<len(z):print(f'D1: {seen} source entries inspected',flush=True)
         assert seen==nnz
-    libraries=np.asarray(x.sum(axis=0,dtype=np.int64)); x.flush(); del x
+    x=coo_matrix((np.concatenate(kept_values),(np.concatenate(kept_rows),np.concatenate(kept_columns))),shape=(len(genes),len(d)),dtype=np.int32).tocsr()
+    del kept_rows,kept_columns,kept_values
+    libraries=np.asarray(x.sum(axis=0,dtype=np.int64)).ravel()
+    with out.open('xb') as f:
+        for i in range(0,len(genes),256):x[i:i+256].toarray().tofile(f)
+    del x
     datasets['D1']=(d,genes,libraries)
     # D2: donor IDs and author state definitions, not capture counts as n.
     d2meta=bind(CACHE/'Sountoulidis_lungdev_meta.tsv')
