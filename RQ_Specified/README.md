@@ -6,11 +6,11 @@ tables and galleries. Source-paper analyses belong in `Research Article/`.
 
 | Question | Analysis | Status |
 |---|---|---|
-| A1 | [Transitional epithelial state distinction](A1_transitional_epithelial_state_distinction/README.md) | Revised lineage/functional plan; first real batch and four figure groups completed; direct epigenetic comparison remains open |
-| A5 | [Developmental programme reuse](A5_developmental_programme_reuse/README.md) | Strunz 2020 time course audited: 26 eligible injured mice, full gene coverage; A5 pre-registration next; no score |
+| A1 | [Transitional epithelial state distinction](A1_transitional_epithelial_state_distinction/README.md) | Regulatory/outcome continuation complete, including mouse identities and regional HOPX responses; matched replicated regulation-to-fate linkage remains open |
+| A5 | [Developmental programme reuse](A5_developmental_programme_reuse/README.md) | External signature enrichment positive in 24 primary mice and after identity/control exclusions; partial recruitment, with lineage/function untested |
 | A10 | [Organoid growth outcome](A10_organoid_growth_outcome/README.md) | Analysis run on 885 wells; revised specification supported: epithelial growth programmes add 0.0426 within unit against a 0.02 margin, robust to all declared checks but carried by two of four plates; fibroblast block adds nothing; descriptive only while the unit is unresolved |
-| A11 | [Lesion programme beyond shared plasticity](A11_lesion_programme_addition/README.md) | Kim 2020 test pre-registered; both eligibility gates pass with 8 paired patients; scoring awaits owner |
-| A5 and A11 | [Shared epithelial component contract](A5_A11_shared_component_contract/README.md) | Complete; frozen modules retained by the owner and now the fixed inputs for both questions |
+| A11 | [Lesion programme beyond shared plasticity](A11_lesion_programme_addition/README.md) | Lesion association replicates in 8 patients; beyond-shared criterion unresolved (BH q=0.0547); cancer specificity unestablished |
+| A5 and A11 | [Shared epithelial component contract](A5_A11_shared_component_contract/README.md) | Contract and revised tests complete; original partition preserved; A5 uses additional independent Guo modules because the original Strunz-filtered variants are descriptive |
 
 Question numbers are stable identifiers, not evidence grades. A plan or a
 source paper's published finding is not a result of this repository.

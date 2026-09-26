@@ -1,5 +1,20 @@
 # A10 stage 4: the revised specification, and what it changes
 
+**Interpretation addendum, 26 September 2026.** The 0.0426 epithelial increment
+and -0.0154 fibroblast increment are retained, as is the declared descriptive
+margin decision. The [logical review](../../../docs/LOGICAL_RATIONALE_REVIEW.md#a10-corrections)
+qualifies the original narrative below: this is a same-screen adaptive
+specification using held-out group outcome means, not independent confirmation.
+The four-cell pattern is specification dependence, not a tested biological
+interaction. A fixed R-squared margin is not automatically conservative across
+different outcome scales, and no extra fibroblast score information does not
+exclude niche function. Secondary outputs have no implemented BH inference and
+use both primary blocks as their baseline. The original narrative and numbers
+below are retained as the dated reporting record; this addendum governs current
+interpretation. Proposed follow-ups now follow the review's diagnostic-first order.
+
+## Original report, 25 September 2026
+
 25 September 2026. The specification, its blocks and its 0.02 margin were committed in
 `165a4f5` and the scripts in `8084083`, both before any fit. Numbers come from
 [`tables/`](../tables/) and their run records.

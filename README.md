@@ -36,13 +36,15 @@ Exploratory findings and independent confirmation are distinguished explicitly.
 | To assess | Open |
 |---|---|
 | Biological hypotheses, evidence and next tests | [Research questions](RESEARCH_QUESTIONS.md); [measurement contracts](docs/RQ_MEASUREMENT_CONTRACTS.md) |
+| Current merged analyses and remaining work | [Current handoff](PROGRESS.md); [question-specific status](RQ_Specified/README.md) |
+| Biological logic, interpretation limits and follow-up order | [Logical rationale review](docs/LOGICAL_RATIONALE_REVIEW.md) |
 | Paper-specific analyses and figure galleries | [Paper roadmap](Research%20Article/README.md) |
 | A short portfolio entry and four figures | [Portfolio summary](docs/PORTFOLIO_SUMMARY.md) |
 | Three portfolio case studies and what was actually demonstrated | [Portfolio guide](docs/PORTFOLIO.md) |
 | Every claim, decision authority and explicit numeric-check coverage | [Claim register](CLAIMS.md) and [generated summary](docs/CLAIM_SUMMARY.md) |
 | Corrected analyses and remaining limitations | [Implementation record](docs/remediation/2026-09-22/IMPLEMENTATION_STATUS.md) |
 | Commands, dependencies and data requirements | [Reproducibility guide](REPRODUCIBILITY.md) |
-| Next outcome-linked analysis and eligibility gates | [Next dataset gate](docs/NEXT_DATASET_GATE.md) |
+| Completed organoid growth analysis and original eligibility gates | [A10 results](RQ_Specified/A10_organoid_growth_outcome/reports/STAGE4_REVISED_REPORT.md); [historical dataset gate](docs/NEXT_DATASET_GATE.md) |
 | Nabhan 2018 source reproduction and animal-level Wnt analysis | [Wnt niche analysis](Research%20Article/gate1_03_nabhan_2018/README.md) |
 
 ## What the portfolio demonstrates

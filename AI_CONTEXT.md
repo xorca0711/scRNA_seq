@@ -7,11 +7,39 @@ violated. Human-readable counterparts: [`README.md`](README.md) (overview),
 (AI-assisted development disclosure and scientific ownership),
 [`PROGRESS.md`](PROGRESS.md) (session state).
 
-## Current task: A1 regulatory and outcome continuation
+## Current state: merged A1, A5/A11 and A10 analyses, 26 September 2026
+
+Main `32ded9b` contains PR #74 (A1), #77 (A5/A11) and #76/#78 (A10).
+The current documentation branch is `codex/sync-status-rationale`. Read the
+current section of [PROGRESS.md](PROGRESS.md) before older handoffs below.
+
+A10 has run: 885 wells, 15 deposited plate-replicate groups, four plates.
+The revised within-unit epithelial growth increment is 0.0426; fibroblast
+increment is -0.0154. Read `RQ_Specified/A10_organoid_growth_outcome/reports/STAGE4_REVISED_REPORT.md`.
+Group means include held-out outcomes, so this is concurrent within-group
+association, not prediction of a new preparation. Biological units remain
+unresolved. Scripts, recorded hashes, original fits and revised outputs are
+historical evidence: do not edit a frozen JSON's `declared_not_fitted` status
+to synchronize it; use the later run record as execution status.
+
+The A5/A11 results below remain current. Old authorization gates and queued
+tasks in explicitly historical sections are not new instructions to rerun them.
+This session synchronizes documentation and reviews logic; scientific acceptance
+is not implied by a merged PR. Preserve caches and do not expand Notion.
+
+The [logical review](docs/LOGICAL_RATIONALE_REVIEW.md) is complete. A10's current
+rationale and report addenda supersede the original causal/validation wording.
+Secondary BH inference was not implemented; secondary models include both primary
+blocks rather than only retained blocks. Do not report those as corrected tests.
+Preserve the 0.0426 primary descriptive increment and all original output bytes.
+Any extension starts with plate/design diagnostics and a new specification; it
+does not reuse the old margin's unsupported claim of cross-scale conservativeness.
+
+## Completed A1 regulatory and outcome continuation
 
 Read A1 `reports/REGULATORY_FATE_REPORT.md`, `NEXT_SESSION.md` and the updated
 reference map. The three requested avenues are complete for currently usable
-inputs. PR #73 is merged; branch `codex/a1-regulatory-fate-linkage`.
+inputs. PR #74 is merged; branch `codex/a1-regulatory-fate-linkage`.
 Scripts 32–35 and `a1_regulatory_fate.py` produce new tables/figures under
 `regulatory_fate`; completed numerical entrypoints refuse overwrites.
 
@@ -459,7 +487,7 @@ thesis_roadmap:
     - gate2_05_cardoso_2026 (note, cardoso_2026_extracts.json, trials C0 to C12 and E1 to E6 with run records; entered out of order on the owner's instruction 2026-09-12; Gate 1 returned "not recovered"; list A exhausted; owner review pending, see PROGRESS items 23 to 29)
     - gate1_03_nabhan_2018 (source reproduction, descriptive Nb1 and external eligibility complete; local ligand ranking coverage-gated)
     - gate2_C3_yu_lee_choi_min_2026 (feasible IPF/mouse/human/spatial/specificity analyses complete; remaining endpoints explicitly gated)
-  next: gate2_06_nabhan_2023 and the GSE307112 outcome-pilot eligibility audit (A10); Nb1 completed its feasible descriptive scope (re-ranking of 2026-09-15, recorded in Research Article/README.md gate rules and ROADMAP.json); Gate 3A and 3B paused; Gate 2 carries branches 2C (Choi axis), 2N (Nabhan) and 2W (Wagner, papers 15 and 16 added 2026-09-15); methods references M1 to M8 are listed in Research Article/README.md and read at the step that uses them; owner decisions on PROGRESS items 12 to 31
+  next: reading order remains in Research Article/README.md and ROADMAP.json; A10's GSE307112 audit and two model specifications are complete, with current limits and next checks in PROGRESS.md; Nb1 completed its feasible descriptive scope; Gate 3A and 3B remain paused; methods references M1 to M8 are read at the step that uses them; historical owner decisions remain in PROGRESS items 12 to 31
   s2_environment: .venv-x64 also holds torch 2.14.0 (CPU) and scvi-tools 1.5.0.post1 (frozen in trials/s2_reference_mapping/requirements_s2_env.txt); scarches package removed (incompatible with anndata 0.13); HLCA reference files under trials/s2_reference_mapping/reference/ are gitignored (embedding 2.37 GB, MD5 4aa9167707141dd884ff0202b3ab1205)
 
 pitfalls_for_ai_assistants:

@@ -1,5 +1,15 @@
 # A10 stage 1: identity and join audit
 
+**Scope correction, 26 September 2026.** The inspected tables and one sample
+record did not establish independent preparations. That does not prove the
+information is absent from every deposited sample or supplementary source.
+The original audit below overstates what one metadata probe can exclude;
+the unit remains unresolved. Later count-sheet and transcript checks are in
+[stage 3](STAGE3_FIT_REPORT.md), with their limits in the
+[logical review](../../../docs/LOGICAL_RATIONALE_REVIEW.md#a10-corrections).
+
+## Original audit, 25 September 2026
+
 25 September 2026. **Metadata only; no count was read.** Produced by
 `scripts/01_audit_identities.py` with its run record in `tables/audit_run.json`.
 The plan and the biology are in [PLAN.md](../PLAN.md) and
