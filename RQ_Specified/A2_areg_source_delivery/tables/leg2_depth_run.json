@@ -1,0 +1,213 @@
+{
+  "stage": "leg 2, second pass, depth standardised",
+  "classification": "exploratory, not an independent test",
+  "governed_by": {
+    "file": "RQ_Specified/A2_areg_source_delivery/config/a2_leg2_depth_spec.json",
+    "sha256": "2dbf165581cf7a1309c3564eb571119c5334261edbae12a26773af5d6512463d"
+  },
+  "completed_utc": "2026-09-26T15:51:38.977782+00:00",
+  "script": "RQ_Specified/A2_areg_source_delivery/scripts/07_leg2_depth_standardised.py",
+  "script_sha256": "35849c6765aa311c44669e1c0843a3a403d5ef9cc0f2452b92fcc732bc420079",
+  "inputs": {
+    "X:/GitHub/scRNA_seq/raw_data/GSE136831/GSE136831_AllCells.GeneIDs.txt.gz": "e43b3008945c87a6875d4fb1a99a791fdaefeeb3c5a72a5d17589f621eb83af8",
+    "X:/GitHub/scRNA_seq/raw_data/GSE136831/GSE136831_AllCells.cellBarcodes.txt.gz": "0efbb89de618a429e2db0399e25f9b2a0f7cd3b6d6ee9a3da71dfc9318cf1ddc",
+    "X:/GitHub/scRNA_seq/raw_data/GSE136831/GSE136831_AllCells.Samples.CellType.MetadataTable.txt.gz": "147bdd11d720ed30736a459ba62a3d8e2f3f9028a8430e0eb714484f0456049b"
+  },
+  "matrix_note": "the 2.1 GB matrix is hashed in the first pass record, tables/stage4_run.json",
+  "budgets": [
+    1000,
+    500,
+    2000
+  ],
+  "primary_budget": 1000,
+  "cell_retention": {
+    "1000": {
+      "fibroblast_cells_retained": 4648,
+      "fibroblast_cells_total": 4648,
+      "fraction": 1.0
+    },
+    "500": {
+      "fibroblast_cells_retained": 4648,
+      "fibroblast_cells_total": 4648,
+      "fraction": 1.0
+    },
+    "2000": {
+      "fibroblast_cells_retained": 4178,
+      "fibroblast_cells_total": 4648,
+      "fraction": 0.8989
+    }
+  },
+  "donors": 22,
+  "frozen_sets_reused": {
+    "outcome": [
+      "COL1A1",
+      "ACTA2",
+      "POSTN",
+      "CTHRC1",
+      "TNC"
+    ],
+    "predictor": [
+      "ITGAV",
+      "ITGB1",
+      "ITGB8",
+      "LTBP1",
+      "TGFB1",
+      "THBS1"
+    ],
+    "comparator": "epithelial AREG",
+    "shared_detection_control": [
+      "ACTB",
+      "GAPDH",
+      "PGK1",
+      "RPL13A",
+      "RPS18"
+    ],
+    "co_regulation_control": [
+      "SLC25A3",
+      "NDUFA1",
+      "ATP6V1D",
+      "COX4I1",
+      "BAX",
+      "CYB5R3"
+    ],
+    "why_not_re_matched": "the co-regulation control was matched on pooled detection fraction before any standardised value existed; re-matching it under the new measure would be tuning a control to a result"
+  },
+  "primary_results": {
+    "machinery_vs_activation": {
+      "budget": 1000,
+      "stratum": "pooled",
+      "x": "machinery",
+      "y": "activation",
+      "donors": 22,
+      "rho": 0.2931,
+      "p_value": 0.185637,
+      "note": "predictor of interest"
+    },
+    "predictor_depth": {
+      "budget": 1000,
+      "stratum": "pooled",
+      "x": "machinery",
+      "y": "fibroblast_depth",
+      "donors": 22,
+      "rho": 0.2321,
+      "p_value": 0.298688,
+      "note": "depth coupling of the predictor"
+    },
+    "outcome_depth": {
+      "budget": 1000,
+      "stratum": "pooled",
+      "x": "activation",
+      "y": "fibroblast_depth",
+      "donors": 22,
+      "rho": 0.3405,
+      "p_value": 0.12101,
+      "note": "depth coupling of the outcome"
+    },
+    "co_regulation_control": {
+      "budget": 1000,
+      "stratum": "pooled",
+      "x": "matched_control",
+      "y": "activation",
+      "donors": 22,
+      "rho": 0.0232,
+      "p_value": 0.918549,
+      "note": "co-regulation control, must be exceeded"
+    },
+    "shared_detection_control": {
+      "budget": 1000,
+      "stratum": "pooled",
+      "x": "housekeeping",
+      "y": "activation",
+      "donors": 22,
+      "rho": 0.1361,
+      "p_value": 0.54595,
+      "note": "shared-detection control"
+    },
+    "abundance_comparator": {
+      "budget": 1000,
+      "stratum": "pooled",
+      "x": "epithelial_AREG",
+      "y": "activation",
+      "donors": 22,
+      "rho": -0.1835,
+      "p_value": 0.413653,
+      "note": "abundance comparator"
+    }
+  },
+  "sensitivity_budgets": {
+    "500": {
+      "machinery_vs_activation": {
+        "budget": 500,
+        "stratum": "pooled",
+        "x": "machinery",
+        "y": "activation",
+        "donors": 22,
+        "rho": 0.2298,
+        "p_value": 0.303548,
+        "note": "predictor of interest"
+      },
+      "predictor_depth": {
+        "budget": 500,
+        "stratum": "pooled",
+        "x": "machinery",
+        "y": "fibroblast_depth",
+        "donors": 22,
+        "rho": 0.1643,
+        "p_value": 0.464961,
+        "note": "depth coupling of the predictor"
+      },
+      "outcome_depth": {
+        "budget": 500,
+        "stratum": "pooled",
+        "x": "activation",
+        "y": "fibroblast_depth",
+        "donors": 22,
+        "rho": 0.354,
+        "p_value": 0.105985,
+        "note": "depth coupling of the outcome"
+      }
+    },
+    "2000": {
+      "machinery_vs_activation": {
+        "budget": 2000,
+        "stratum": "pooled",
+        "x": "machinery",
+        "y": "activation",
+        "donors": 22,
+        "rho": 0.3789,
+        "p_value": 0.082054,
+        "note": "predictor of interest"
+      },
+      "predictor_depth": {
+        "budget": 2000,
+        "stratum": "pooled",
+        "x": "machinery",
+        "y": "fibroblast_depth",
+        "donors": 22,
+        "rho": 0.2784,
+        "p_value": 0.209679,
+        "note": "depth coupling of the predictor"
+      },
+      "outcome_depth": {
+        "budget": 2000,
+        "stratum": "pooled",
+        "x": "activation",
+        "y": "fibroblast_depth",
+        "donors": 22,
+        "rho": 0.3032,
+        "p_value": 0.17014,
+        "note": "depth coupling of the outcome"
+      }
+    }
+  },
+  "still_refused_at_primary": false,
+  "exceeds_both_controls": true,
+  "verdict": "readable at the primary budget and exceeding both controls; exploratory and correlational, with no direction and no proximity, and not promoted to a test because the unstandardised value was seen first",
+  "first_pass_for_comparison": {
+    "measure": "raw detection fraction",
+    "machinery_vs_activation_rho": 0.4331,
+    "predictor_depth_rho": 0.7696,
+    "outcome_depth_rho": 0.4116
+  },
+  "alpha_claimed": null
+}

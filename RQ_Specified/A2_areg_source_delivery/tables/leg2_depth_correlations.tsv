@@ -1,0 +1,46 @@
+budget	stratum	x	y	donors	rho	p_value	note
+1000	pooled	machinery	activation	22	0.2931	0.185637	predictor of interest
+1000	pooled	epithelial_AREG	activation	22	-0.1835	0.413653	abundance comparator
+1000	pooled	matched_control	activation	22	0.0232	0.918549	co-regulation control, must be exceeded
+1000	pooled	housekeeping	activation	22	0.1361	0.54595	shared-detection control
+1000	pooled	machinery	fibroblast_depth	22	0.2321	0.298688	depth coupling of the predictor
+1000	pooled	activation	fibroblast_depth	22	0.3405	0.12101	depth coupling of the outcome
+1000	pooled	epithelial_AREG	epithelial_depth	22	-0.179	0.425438	depth coupling of the comparator
+1000	IPF only	machinery	activation	18	0.3932	0.106485	predictor of interest
+1000	IPF only	epithelial_AREG	activation	18	0.1249	0.621526	abundance comparator
+1000	IPF only	matched_control	activation	18	0.0423	0.867607	co-regulation control, must be exceeded
+1000	IPF only	housekeeping	activation	18	0.0753	0.766392	shared-detection control
+1000	IPF only	machinery	fibroblast_depth	18	0.2116	0.39938	depth coupling of the predictor
+1000	IPF only	activation	fibroblast_depth	18	0.2425	0.332231	depth coupling of the outcome
+1000	IPF only	epithelial_AREG	epithelial_depth	18	-0.1641	0.515295	depth coupling of the comparator
+1000	mural	mural_machinery	mural_activation	6	0.0286	0.957155	the population the cited mechanism used; underpowered
+500	pooled	machinery	activation	22	0.2298	0.303548	predictor of interest
+500	pooled	epithelial_AREG	activation	22	-0.2061	0.357472	abundance comparator
+500	pooled	matched_control	activation	22	0.0175	0.938373	co-regulation control, must be exceeded
+500	pooled	housekeeping	activation	22	0.0807	0.720938	shared-detection control
+500	pooled	machinery	fibroblast_depth	22	0.1643	0.464961	depth coupling of the predictor
+500	pooled	activation	fibroblast_depth	22	0.354	0.105985	depth coupling of the outcome
+500	pooled	epithelial_AREG	epithelial_depth	22	-0.188	0.402049	depth coupling of the comparator
+500	IPF only	machinery	activation	18	0.323	0.191068	predictor of interest
+500	IPF only	epithelial_AREG	activation	18	0.0712	0.778883	abundance comparator
+500	IPF only	matched_control	activation	18	0.0568	0.822989	co-regulation control, must be exceeded
+500	IPF only	housekeeping	activation	18	0.1889	0.452946	shared-detection control
+500	IPF only	machinery	fibroblast_depth	18	0.1476	0.55897	depth coupling of the predictor
+500	IPF only	activation	fibroblast_depth	18	0.2652	0.287484	depth coupling of the outcome
+500	IPF only	epithelial_AREG	epithelial_depth	18	-0.1806	0.473289	depth coupling of the comparator
+500	mural	mural_machinery	mural_activation	6	0.0857	0.871743	the population the cited mechanism used; underpowered
+2000	pooled	machinery	activation	22	0.3789	0.082054	predictor of interest
+2000	pooled	epithelial_AREG	activation	22	-0.1711	0.44649	abundance comparator
+2000	pooled	matched_control	activation	22	-0.048	0.832029	co-regulation control, must be exceeded
+2000	pooled	housekeeping	activation	22	-0.0582	0.797113	shared-detection control
+2000	pooled	machinery	fibroblast_depth	22	0.2784	0.209679	depth coupling of the predictor
+2000	pooled	activation	fibroblast_depth	22	0.3032	0.17014	depth coupling of the outcome
+2000	pooled	epithelial_AREG	epithelial_depth	22	-0.2061	0.357472	depth coupling of the comparator
+2000	IPF only	machinery	activation	18	0.4551	0.057729	predictor of interest
+2000	IPF only	epithelial_AREG	activation	18	0.0733	0.772631	abundance comparator
+2000	IPF only	matched_control	activation	18	-0.0485	0.84843	co-regulation control, must be exceeded
+2000	IPF only	housekeeping	activation	18	-0.1084	0.66866	shared-detection control
+2000	IPF only	machinery	fibroblast_depth	18	0.2363	0.345101	depth coupling of the predictor
+2000	IPF only	activation	fibroblast_depth	18	0.2033	0.418447	depth coupling of the outcome
+2000	IPF only	epithelial_AREG	epithelial_depth	18	-0.1641	0.515295	depth coupling of the comparator
+2000	mural	mural_machinery	mural_activation	6	-0.2	0.704	the population the cited mechanism used; underpowered
