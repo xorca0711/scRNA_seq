@@ -1,0 +1,13 @@
+scope	plate_a	plate_b	targets_a	targets_b	common_targets	common_names
+all	plate1	plate2	53	54	3	MECOM|TDTOMATO|TIGIT
+all	plate1	plate3	53	53	2	TDTOMATO|TIGIT
+all	plate1	plate4	53	51	3	RNF43|TDTOMATO|TIGIT
+all	plate2	plate3	54	53	2	TDTOMATO|TIGIT
+all	plate2	plate4	54	51	2	TDTOMATO|TIGIT
+all	plate3	plate4	53	51	2	TDTOMATO|TIGIT
+drop_top_and_TDTOMATO	plate1	plate2	51	52	1	MECOM
+drop_top_and_TDTOMATO	plate1	plate3	51	51	0	
+drop_top_and_TDTOMATO	plate1	plate4	51	49	1	RNF43
+drop_top_and_TDTOMATO	plate2	plate3	52	51	0	
+drop_top_and_TDTOMATO	plate2	plate4	52	49	0	
+drop_top_and_TDTOMATO	plate3	plate4	51	49	0	

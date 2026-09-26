@@ -44,7 +44,7 @@ Exploratory findings and independent confirmation are distinguished explicitly.
 | Every claim, decision authority and explicit numeric-check coverage | [Claim register](CLAIMS.md) and [generated summary](docs/CLAIM_SUMMARY.md) |
 | Corrected analyses and remaining limitations | [Implementation record](docs/remediation/2026-09-22/IMPLEMENTATION_STATUS.md) |
 | Commands, dependencies and data requirements | [Reproducibility guide](REPRODUCIBILITY.md) |
-| Completed organoid growth analysis and original eligibility gates | [A10 results](RQ_Specified/A10_organoid_growth_outcome/reports/STAGE4_REVISED_REPORT.md); [historical dataset gate](docs/NEXT_DATASET_GATE.md) |
+| Completed organoid growth analysis and original eligibility gates | [A10 follow-up results](RQ_Specified/A10_organoid_growth_outcome/reports/FOLLOWUP_RESULTS.md); [historical dataset gate](docs/NEXT_DATASET_GATE.md) |
 | Nabhan 2018 source reproduction and animal-level Wnt analysis | [Wnt niche analysis](Research%20Article/gate1_03_nabhan_2018/README.md) |
 
 ## What the portfolio demonstrates

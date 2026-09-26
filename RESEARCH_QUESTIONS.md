@@ -46,15 +46,16 @@ recovery endpoint, and population persistence does not trace the same cells.
 | [A7](#a7) | Cebpa loss attenuates identity across AT2 states | Reference and transitional contrasts both change | Replicated genotype-by-state design needed |
 | [A8](#a8) | A maturation component adds information about mature AT1 contribution | Score dependence motivates separation; limited biological support | Independent mature endpoints needed |
 | [A9](#a9) | Fibroblast receptor context modifies AREG response | RNA/resource observations nominate a competence question | RNA screen possible; protein/function data needed |
-| [A10](#a10) | Epithelial programmes add information about measured organoid growth | Public RNA and imaging design | Revised within-unit growth-block increment 0.0426; heterogeneous across plates; biological units and independent generalization unresolved |
+| [A10](#a10) | Epithelial programmes add information about measured organoid growth | Public RNA and imaging design | Follow-up complete: added information beyond E2F/G2M and positive plate-shift error gains, but negative absolute R-squared on 3/4 plates; independent units unresolved |
 | [A11](#a11) | Lesion-associated programmes add to shared plasticity | Reduced HPCS signal across repair, development, IPF and LUAD | Kim lesion association replicates in 8 patients; beyond-shared criterion unresolved (BH q=0.0547) |
 | [A12](#a12) | Recipient context explains responses beyond ligand RNA | Cohort/recipient heterogeneity | Conditional component model; activation unmeasured |
 | [A13](#a13) | Fibroblast programmes add information beyond macrophage IL1B | Niche heterogeneity motivates joint association | Audit complete triads; current IPF arms below joint-model floor |
 | [A14](#a14) | Exposure duration and fibroblast reception separately affect recovery | Mechanistic follow-up to the repair/persistence question | Two decisions; withdrawal and recipient-specific data needed |
 
 The A1 continuation, A5/A11 revised tests and A10 outcome join/fits are complete.
-Next priorities are A10 plate/design diagnostics and a separately specified test
-of what its growth block adds; stronger A1, A5 and A11 conclusions require the
+The A10 plate/design diagnostics and separately specified growth-block test have
+also run. Further A10 expansion now needs preparation identities and imaging/
+validation design evidence; stronger A1, A5 and A11 conclusions require the
 missing evidence named in their cards. Existing joins and scores need not be
 rerun. The other questions remain conditional; their design gates still apply.
 The [logical review](docs/LOGICAL_RATIONALE_REVIEW.md) checks this sequence against
@@ -391,6 +392,15 @@ have a positive epithelial increment, with the pooled result concentrated in
 plates 1 and 3. The [dataset gate](docs/NEXT_DATASET_GATE.md) preserves the initial
 selection rationale; it is no longer the next unexecuted task.
 
+The [completed follow-up](RQ_Specified/A10_organoid_growth_outcome/reports/FOLLOWUP_RESULTS.md)
+finds only four targets shared between plates; 886 GEO sample records still lack
+preparation IDs. The six growth scores add beyond E2F/G2M: 4.84% less reference
+squared error within groups and 36.96% less under joint plate/target shift.
+Full-growth plate-shift improvement is 42.39%, positive in each held-out plate,
+but absolute R-squared is negative on 3/4 plates. These percentages use a new
+reference-error metric, not the original delta-R-squared. Both fixed outcome
+scales and the drop-both sensitivity support the conditional addition.
+
 **Rivals and test.** Initial size, plate/preparation, guide effects or mixture
 may explain growth. The completed analysis joined well metadata and fixed day-14
 area conditional on day-7 area; number/coverage were nominated as secondary
@@ -404,9 +414,11 @@ confirmation: it followed the first analysis on the same screen, and centring
 uses each held-out group's own outcome mean. The grouping labels do not establish
 independent preparations. No confidence bound establishes precise absence of a
 fibroblast contribution. Organoid mean area measures size/morphology, not total
-tissue production, mature AT1 fate or in vivo repair. Next resolve plate/design
-differences, then specify plate holdouts and a simpler growth-block comparison
-before fitting. [Original design schematic](analysis/figures/rq/README.md#a10);
+tissue production, mature AT1 fate or in vivo repair. The follow-up comparisons
+are complete and remain descriptive. Additional model/target extensions were
+pruned: resolve preparation mapping, imaging calibration and a matched validation
+design before another model-selection cycle.
+[Original design schematic](analysis/figures/rq/README.md#a10);
 [MC1](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1),
 [MC5](docs/RQ_MEASUREMENT_CONTRACTS.md#mc5).
 

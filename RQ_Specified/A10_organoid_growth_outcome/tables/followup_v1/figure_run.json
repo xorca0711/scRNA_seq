@@ -1,0 +1,14 @@
+{
+  "script_sha256": "8923eb70ced648943dbc420c027d511e4711cd3d4e23d0adf56138efc15cf49b",
+  "inputs": {
+    "diagnostic_target_overlap.tsv": "fe615f15703ffa1c0bb2745c114f091475087c141c7435dd36d3317388e54677",
+    "model_comparisons.tsv": "7b2b8dd4752a041e7eb49e9127a825db6efe0510dab208d7460334cc2e307cfb",
+    "model_absolute_performance.tsv": "c95a53e77917975a530cbb812081911b2e77e3511039e0cd7dc5b9c6c2035497",
+    "model_fold_comparisons.tsv": "738e3ad4f4372ed2904b43a924a22b31a4d822fff642d1a8271343085f20c6a1"
+  },
+  "outputs": {
+    "a10_followup.png": "256263cac4c7da47a676ce225afcaaaa9cf112a23afb7b6015d2f02ce783e377",
+    "a10_followup.svg": "ad9fdcdc34a11c2ac80e31b2d3eb89f569a36a68345f6905b65f20eaec93264b"
+  },
+  "scope": "Recorded estimates only, no new fit or inferential intervals. Primary inherited-log2 scale except panel A target-removal diagnostic."
+}

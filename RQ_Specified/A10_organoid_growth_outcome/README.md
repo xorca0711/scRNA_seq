@@ -3,13 +3,21 @@
 Question-specific work for [A10](../../RESEARCH_QUESTIONS.md#a10). The canonical
 hypothesis stays in the register.
 
-**Status: identity audit, original fit and revised specification complete; PRs #76/#78 merged.** Read
+**Status: design follow-up and programme/plate comparisons complete, 26 September 2026.**
+Start with the [follow-up results](reports/FOLLOWUP_RESULTS.md) and
+[figure](figures/a10_followup.png). The six-score growth block adds beyond the
+nominated E2F/G2M scores and lowers error on all four held-out plates. Yet its
+absolute R-squared remains negative on three plates. Only four targets occur on
+multiple plates, and all 886 GEO records still leave independent preparations
+unresolved. This is descriptive added information, not validated repair prediction.
+
+The original and revised fits in PRs #76/#78 remain preserved below. Read
 [RATIONALE.md](RATIONALE.md) for the biology and the argument,
 [PLAN.md](PLAN.md) for the analysis structure, and
 [the audit](reports/STAGE1_IDENTITY_AUDIT.md) for what the design can and cannot
 support.
 
-**Result after the revised specification: the epithelial growth programmes clear the
+**Earlier stage 4 result: the epithelial growth programmes clear the
 declared margin for within-group association; the fibroblast block does not.** Read
 [the stage 4 report](reports/STAGE4_REVISED_REPORT.md) first, then
 [stage 3](reports/STAGE3_FIT_REPORT.md) for how the first specification failed and why.
@@ -67,6 +75,10 @@ an animal, and the deposit does not say how many independent preparations there 
 
 | Path | Contents |
 |---|---|
+| [reports/FOLLOWUP_RESULTS.md](reports/FOLLOWUP_RESULTS.md) | Current result, absolute transfer limits, adaptive stopping and verification |
+| [reports/FOLLOWUP_DESIGN_REPORT.md](reports/FOLLOWUP_DESIGN_REPORT.md) | All-sample metadata, target/plate allocation, imaging and guide audit |
+| [FOLLOWUP_PLAN.md](FOLLOWUP_PLAN.md) | Frozen diagnostic sequence before follow-up execution |
+| [config/a10_followup_models.json](config/a10_followup_models.json) | New descriptive estimands, fixed blocks, sensitivities and decisions |
 | [RATIONALE.md](RATIONALE.md) | Biological context, hypothesis, logical flow, limits, cross-links, governance |
 | [PLAN.md](PLAN.md) | Four-stage structure, outcome, covariates, tests, holdout, decision rules |
 | [config/a10_outcome_contract.json](config/a10_outcome_contract.json) | The same, machine-readable, with cached file hashes |
@@ -77,6 +89,7 @@ an animal, and the deposit does not say how many independent preparations there 
 | `scripts/01_audit_identities.py` | Stage 1: joins and units, metadata only |
 | `scripts/02_extract_counts.py` | Stage 3a: stream the two count sheets, cache the declared gene set |
 | `scripts/03_fit_outcome_models.py` | Stage 3b: nested models, leave-one-unit-out, plus assay validation |
+| `scripts/07_audit_followup.py` through `10_plot_followup.py` | Design audit, fixed follow-up fits, independent verification and rendering |
 | `tables/` | Stage outputs and run records |
 | `cache/` | Local metadata/count intermediates; ignored, hashes tracked |
 

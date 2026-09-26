@@ -18,6 +18,9 @@ RQ_Specified/A1_transitional_epithelial_state_distinction/tables/ire1_stability_
 RQ_Specified/A1_transitional_epithelial_state_distinction/tables/cd44_closure/R_session.txt whitespace=cr-at-eol,-blank-at-eol
 # A trailing tab is an intentionally missing final TSV field, not removable whitespace.
 RQ_Specified/A1_transitional_epithelial_state_distinction/tables/**/*.tsv whitespace=cr-at-eol,-blank-at-eol
+# A10 also preserves empty final TSV fields and exact generated vector bytes.
+RQ_Specified/A10_organoid_growth_outcome/tables/**/*.tsv whitespace=cr-at-eol,-blank-at-eol
+RQ_Specified/A10_organoid_growth_outcome/figures/*.svg whitespace=cr-at-eol,-blank-at-eol
 
 # Preserve exact bytes in correction sources and evidence with recorded hashes.
 analysis/corrections/** -text whitespace=cr-at-eol

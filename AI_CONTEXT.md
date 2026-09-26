@@ -7,7 +7,39 @@ violated. Human-readable counterparts: [`README.md`](README.md) (overview),
 (AI-assisted development disclosure and scientific ownership),
 [`PROGRESS.md`](PROGRESS.md) (session state).
 
-## Current state: merged A1, A5/A11 and A10 analyses, 26 September 2026
+## Current task complete: A10 design follow-up, 26 September 2026
+
+Branch `codex/a10-design-followup`, after merged PR #79. Read
+`RQ_Specified/A10_organoid_growth_outcome/reports/FOLLOWUP_RESULTS.md` and
+`reports/FOLLOWUP_DESIGN_REPORT.md`. Phase A plan `53f5c7a`, new model specification
+`330f5f2`, implementation `c7f976a`/`6f49669` precede new fits. Scripts 07–10
+produced `tables/followup_v1/`; they refuse overwrites.
+
+All 886 GEO sample IDs match via `Library name:` description fields, not titles.
+Structured metadata still lacks preparation IDs. Only MECOM/RNF43/TIGIT/TDTOMATO
+span plates. Removing TIGIT/TDTOMATO disconnects plate 3 from shared targets.
+All imaging uses SAM1; physical area calibration is not established.
+
+Remaining growth beyond E2F/G2M reduces reference error by 4.84% within groups and
+36.96% in plate shift; full-growth plate-shift reduction is 42.39%. The fixed
+two-scale/drop-both rules pass, but absolute R-squared is negative on 3/4 plates.
+These are NOT the old delta-R-squared units. Proliferation-only fails the combined
+rule (untransformed within-group primary 1.9615% < 2%). No inference about independent
+preparations, separate causal mechanisms, mature fate or repair was added.
+
+Verification: original 12 grid values reproduced; 1,399 checks and 32 independent
+training-only QR fits passed. Portable evidence tests are in
+`analysis/tests/test_a10_followup_contract.py`. The bounded sequence is complete;
+do not launch additional pathways to rescue transfer. New models require the
+missing design/calibration evidence or a separately justified question.
+
+Post-fit design-source check: TIGIT is the authors' in-plate control. The main
+article's four-replicate caption does not supply the biological-unit crosswalk.
+Detailed supplement access failed/oversized; it remains uninspected. See
+`tables/followup_v1/source_design_check.json` before claiming the missing facts
+are unavailable everywhere. No source-paper note or roadmap-reading status changed.
+
+## Previous milestone: merged A1, A5/A11 and A10 analyses, 26 September 2026
 
 Main `32ded9b` contains PR #74 (A1), #77 (A5/A11) and #76/#78 (A10).
 The current documentation branch is `codex/sync-status-rationale`. Read the
