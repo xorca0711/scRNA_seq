@@ -1,0 +1,81 @@
+{
+  "schema": "a15-rival2-stage1-addendum/v1",
+  "stage": "1 addendum, field reliability; no endpoint computed",
+  "inputs": {
+    "series_matrix": {
+      "path": "cache/GSE190821_series_matrix.txt.gz",
+      "sha256": "a5355b92ef44087b2d78f3fd9318f10dc6941cfb43d0c1e77c1cea4ca361ef29"
+    },
+    "stage1_join": {
+      "path": "tables/rival2/stage1_join.tsv",
+      "sha256": "a67a8c605bc31190ae7aa227bef547c2412e31660a6da2ac89b3961c362e2260"
+    }
+  },
+  "compartment_field": {
+    "fields_that_separate_epithelium_from_whole_lung": [
+      "!Sample_geo_accession",
+      "!Sample_relation",
+      "!Sample_title"
+    ],
+    "note": "besides the tissue compartment characteristic itself, only the sample title and the per-sample identifiers separate the two compartments"
+  },
+  "uniform_fields_that_describe_only_the_immunoprecipitation": [
+    {
+      "field": "!Sample_source_name_ch1",
+      "single_value": "Lung epithelial Ribotag immunoprecipitation"
+    },
+    {
+      "field": "!Sample_extract_protocol_ch1",
+      "single_value": "Anti-HA immunoprecipitation followed by Rneasy Micro kit (Qiagen)"
+    },
+    {
+      "field": "!Sample_extract_protocol_ch1",
+      "single_value": "Lexogen Quantseq Forward kit"
+    },
+    {
+      "field": "!Sample_description",
+      "single_value": "Tagged ribosome immunoprecipitated RNA"
+    }
+  ],
+  "hazard": "source name, description and extract protocol are identical for all 48 libraries and describe the anti-HA immunoprecipitation, although 24 of the libraries are the whole-lung input aliquot. A session that defined the epithelial compartment from any of those three fields would treat all 48 libraries as epithelial.",
+  "titles": {
+    "compartment_disagreements": [],
+    "exposure_disagreements": [],
+    "titles_naming_3G9": [
+      "Bleomycin3G9_epithelial_218",
+      "Bleomycin3G9_epithelial_219",
+      "Bleomycin3G9_epithelial_226R",
+      "Bleomycin3G9_epithelial_228",
+      "Bleomycin3G9_wholelung_218",
+      "Bleomycin3G9_wholelung_219",
+      "Bleomycin3G9_wholelung_226R",
+      "Bleomycin3G9_wholelung_228"
+    ],
+    "titles_naming_Axum8": [],
+    "axum8_title_shapes": [
+      "<exposure>_<compartment>_<mouse>"
+    ],
+    "vehicle_title_shapes": [
+      "<exposure>_<compartment>_<mouse>"
+    ],
+    "titles_can_identify_the_antibody_control": false,
+    "consequence": "the titles name the 3G9 arm but never the Axum8 arm, so an Axum8 title is indistinguishable in form from a Vehicle title. The treatment characteristic remains the only field that separates the antibody control from the KIRA8 vehicle."
+  },
+  "assay_facts_recorded_not_assumed": {
+    "library_preparation": "Lexogen QuantSeq Forward, a 3-prime tag counting assay",
+    "consequence_for_scoring": "counts are 3-prime tag counts rather than full-length coverage, so they are not length-normalised and a gene-set mean of log2 CPM is a relative, within-assay quantity only",
+    "instrument": "Illumina HiSeq 4000",
+    "alignment": "STAR 2.5.2b against Ensembl Mouse GRCm38, per the deposit",
+    "compartment_method": "anti-HA immunoprecipitation of tagged ribosomes, so the epithelial measurement is ribosome-associated RNA"
+  },
+  "what_the_deposit_does_not_state": [
+    "per-mouse genotype, so constancy of the RiboTag and Cre alleles across arms is carried as an assumption and is not established here",
+    "immunoprecipitation efficiency or purity per library, so epithelial enrichment cannot be verified or compared between arms",
+    "antibody dose, schedule or measured target engagement",
+    "how mice were allocated to antibody, so randomisation is not established",
+    "cage, litter, weight or bleomycin dose per mouse",
+    "epithelial subtype composition, so a programme difference cannot be separated from a composition shift within the immunoprecipitated compartment"
+  ],
+  "endpoint_scored": false,
+  "generated_utc": "2026-09-26T15:40:26.604044+00:00"
+}

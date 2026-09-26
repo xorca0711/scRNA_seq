@@ -1,0 +1,1777 @@
+{
+  "schema": "a15-rival2-stage3/v3",
+  "stage": "3, execution under freeze v3",
+  "scope": {
+    "bounds": "A15 rival 2 only",
+    "rival_2_as_restated_here": "the epithelial integrin's effect on the fibroblast may be indirect, mediated by a change in the epithelium rather than by TGF-beta activated at the epithelial surface acting on the fibroblast",
+    "why_restated": "RATIONALE.md grounded rival 2 in Morris 2003 and Koth 2007 as non-TGF-beta routes, but both papers attribute their phenotypes to loss of TGF-beta activation in their own titles. A metalloproteinase and surfactant panel would therefore measure TGF-beta-mediated consequences of removing the integrin and would not separate rival 2 from the mechanism A15 proposes. The separable question is whether the epithelium changes at all.",
+    "is_not": "a test of A15. This deposit fails A15 stage 1 gate conditions 1, 3, 4 and 5: no recorded validation that the perturbation took effect, no activated-TGF-beta readout, no separated fibroblast compartment, and no ligand arm.",
+    "condition_1_consequence": "because condition 1 fails, no bound may be claimed from a null unless the pre-declared engagement control below separates in its declared direction",
+    "may_never_be_reported_as": "evidence for or against the A15 hypothesis"
+  },
+  "freeze": {
+    "path": "config/a15_rival2_freeze_v3.json",
+    "sha256": "5f39fd4e8f9b7e3c67175f547b32c317475088a2b3e783db0d2f308aedd58c09",
+    "status": "COMMITTED_FOR_EXECUTION"
+  },
+  "inputs": {
+    "counts": {
+      "sha256": "2c8a21fd68c355330bfee2e5e63ca3d415d7f4677a3b783669d9acb0a595d1f7"
+    },
+    "ensembl_symbol_lookup": {
+      "sha256": "0a8da7c1ad99c3f7cd1cde806d49b853c03c91a0b60c7eee08ac3b892133fe7b"
+    },
+    "stage1_join": {
+      "sha256": "a67a8c605bc31190ae7aa227bef547c2412e31660a6da2ac89b3961c362e2260"
+    },
+    "a1_config": {
+      "sha256": "5adc21ddc5e9ce81edb216c504662d4d58ad95b97596cd01c411a27f1223139f"
+    }
+  },
+  "declared_alpha": 0.028571,
+  "arms": {
+    "epithelium": {
+      "case": [
+        {
+          "mouse": "218",
+          "column": "Bleo_3G9_E_218",
+          "gsm": "GSM5732465"
+        },
+        {
+          "mouse": "219",
+          "column": "Bleo_3G9_E_219",
+          "gsm": "GSM5732472"
+        },
+        {
+          "mouse": "226R",
+          "column": "Bleo_3G9_E_226R",
+          "gsm": "GSM5732463"
+        },
+        {
+          "mouse": "228",
+          "column": "Bleo_3G9_E_228",
+          "gsm": "GSM5732467"
+        }
+      ],
+      "reference": [
+        {
+          "mouse": "204",
+          "column": "Bleo_E_204",
+          "gsm": "GSM5732480"
+        },
+        {
+          "mouse": "206",
+          "column": "Bleo_E_206",
+          "gsm": "GSM5732462"
+        },
+        {
+          "mouse": "208R",
+          "column": "Bleo_E_208R",
+          "gsm": "GSM5732461"
+        },
+        {
+          "mouse": "225",
+          "column": "Bleo_E_225",
+          "gsm": "GSM5732468"
+        }
+      ],
+      "saline": [
+        {
+          "mouse": "207",
+          "column": "Saline_E_207",
+          "gsm": "GSM5732473"
+        },
+        {
+          "mouse": "221",
+          "column": "Saline_E_221",
+          "gsm": "GSM5732477"
+        },
+        {
+          "mouse": "230",
+          "column": "Saline_E_230",
+          "gsm": "GSM5732471"
+        }
+      ]
+    },
+    "input": {
+      "case": [
+        {
+          "mouse": "218",
+          "column": "Bleo_3G9_I_218FT",
+          "gsm": "GSM5732476"
+        },
+        {
+          "mouse": "219",
+          "column": "Bleo_3G9_I_219",
+          "gsm": "GSM5732479"
+        },
+        {
+          "mouse": "226R",
+          "column": "Bleo_3G9_I_226R",
+          "gsm": "GSM5732478"
+        },
+        {
+          "mouse": "228",
+          "column": "Bleo_3G9_I_228",
+          "gsm": "GSM5732481"
+        }
+      ],
+      "reference": [
+        {
+          "mouse": "204",
+          "column": "Bleo_I_204",
+          "gsm": "GSM5732475"
+        },
+        {
+          "mouse": "206",
+          "column": "Bleo_I_206",
+          "gsm": "GSM5732474"
+        },
+        {
+          "mouse": "208R",
+          "column": "Bleo_I_208R",
+          "gsm": "GSM5732460"
+        },
+        {
+          "mouse": "225",
+          "column": "Bleo_I_225",
+          "gsm": "GSM5732466"
+        }
+      ],
+      "saline": [
+        {
+          "mouse": "207",
+          "column": "Saline_I_207",
+          "gsm": "GSM5732469"
+        },
+        {
+          "mouse": "221",
+          "column": "Saline_I_221",
+          "gsm": "GSM5732464"
+        },
+        {
+          "mouse": "230",
+          "column": "Saline_I_230",
+          "gsm": "GSM5732470"
+        }
+      ]
+    }
+  },
+  "library_totals": {
+    "Bleo_3G9_E_218": 36057881,
+    "Bleo_3G9_E_219": 29348678,
+    "Bleo_3G9_E_226R": 28236796,
+    "Bleo_3G9_E_228": 29737284,
+    "Bleo_3G9_I_218FT": 33138487,
+    "Bleo_3G9_I_219": 31656823,
+    "Bleo_3G9_I_226R": 27984719,
+    "Bleo_3G9_I_228": 25945089,
+    "Bleo_E_204": 32126288,
+    "Bleo_E_206": 24751240,
+    "Bleo_E_208R": 32465809,
+    "Bleo_E_225": 31401069,
+    "Bleo_I_204": 34908999,
+    "Bleo_I_206": 31569136,
+    "Bleo_I_208R": 31021659,
+    "Bleo_I_225": 30666578,
+    "Saline_E_207": 29272704,
+    "Saline_E_221": 26809848,
+    "Saline_E_230": 30722665,
+    "Saline_I_207": 32130149,
+    "Saline_I_221": 35190679,
+    "Saline_I_230": 36945995
+  },
+  "results": {
+    "primary1_transitional": {
+      "standardised": {
+        "label": "primary1 transitional standardised",
+        "case_values": [
+          0.2382,
+          -0.0599,
+          -0.5382,
+          -0.36
+        ],
+        "reference_values": [
+          0.9833,
+          -1.1893,
+          -0.4472,
+          1.373
+        ],
+        "case_mean": -0.18,
+        "reference_mean": 0.18,
+        "case_sd": 0.3416,
+        "reference_sd": 1.2024,
+        "case_range": [
+          -0.5382,
+          0.2382
+        ],
+        "reference_range": [
+          -1.1893,
+          1.373
+        ],
+        "mean_difference": -0.3599,
+        "median_difference": -0.478,
+        "pooled_within_arm_sd": 0.8838,
+        "exact_test": {
+          "u": 7.0,
+          "assignments": 70,
+          "p_one_sided_lower": 0.442857,
+          "p_one_sided_upper": 0.657143,
+          "p_two_sided": 0.885714
+        },
+        "shift": {
+          "estimate": -0.4181,
+          "lower": -1.9112,
+          "upper": 1.4275,
+          "attained_coverage": 0.9714,
+          "trimmed_from_each_end": 0
+        },
+        "separates_at_declared_alpha": false,
+        "coverage": {
+          "declared": 5,
+          "mapped": 5,
+          "measurable": 5,
+          "refused": false,
+          "measurable_symbols": [
+            "Krt8",
+            "Krt19",
+            "Cldn4",
+            "Cdkn1a",
+            "Krt7"
+          ],
+          "dropped_symbols": []
+        },
+        "injury_context": {
+          "label": "injury context transitional standardised",
+          "case_values": [
+            1.0545,
+            0.011,
+            0.3793,
+            1.2359
+          ],
+          "reference_values": [
+            -0.834,
+            -1.1886,
+            -0.6581
+          ],
+          "case_mean": 0.6702,
+          "reference_mean": -0.8936,
+          "case_sd": 0.5735,
+          "reference_sd": 0.2702,
+          "case_range": [
+            0.011,
+            1.2359
+          ],
+          "reference_range": [
+            -1.1886,
+            -0.6581
+          ],
+          "mean_difference": 1.5637,
+          "median_difference": 1.5509,
+          "pooled_within_arm_sd": 0.4483,
+          "exact_test": {
+            "u": 12.0,
+            "assignments": 35,
+            "p_one_sided_lower": 1.0,
+            "p_one_sided_upper": 0.028571,
+            "p_two_sided": 0.057143
+          },
+          "shift": {
+            "estimate": 1.6403,
+            "lower": 0.6691,
+            "upper": 2.4245,
+            "attained_coverage": null,
+            "note": "no interval attains the requested level at these sample sizes"
+          },
+          "separates_at_declared_alpha": false
+        }
+      },
+      "unstandardised": {
+        "label": "primary1 transitional unstandardised",
+        "case_values": [
+          9.0212,
+          8.968,
+          8.7061,
+          8.7649
+        ],
+        "reference_values": [
+          9.3289,
+          8.5085,
+          8.775,
+          9.4727
+        ],
+        "case_mean": 8.865,
+        "reference_mean": 9.0213,
+        "case_sd": 0.1531,
+        "reference_sd": 0.4554,
+        "case_range": [
+          8.7061,
+          9.0212
+        ],
+        "reference_range": [
+          8.5085,
+          9.4727
+        ],
+        "mean_difference": -0.1563,
+        "median_difference": -0.1855,
+        "pooled_within_arm_sd": 0.3397,
+        "exact_test": {
+          "u": 6.0,
+          "assignments": 70,
+          "p_one_sided_lower": 0.342857,
+          "p_one_sided_upper": 0.757143,
+          "p_two_sided": 0.685714
+        },
+        "shift": {
+          "estimate": -0.1883,
+          "lower": -0.7667,
+          "upper": 0.5127,
+          "attained_coverage": 0.9714,
+          "trimmed_from_each_end": 0
+        },
+        "separates_at_declared_alpha": false,
+        "coverage": {
+          "declared": 5,
+          "mapped": 5,
+          "measurable": 5,
+          "refused": false,
+          "measurable_symbols": [
+            "Krt8",
+            "Krt19",
+            "Cldn4",
+            "Cdkn1a",
+            "Krt7"
+          ],
+          "dropped_symbols": []
+        },
+        "injury_context": {
+          "label": "injury context transitional unstandardised",
+          "case_values": [
+            9.3289,
+            8.5085,
+            8.775,
+            9.4727
+          ],
+          "reference_values": [
+            7.4988,
+            7.241,
+            7.6691
+          ],
+          "case_mean": 9.0213,
+          "reference_mean": 7.4696,
+          "case_sd": 0.4554,
+          "reference_sd": 0.2155,
+          "case_range": [
+            8.5085,
+            9.4727
+          ],
+          "reference_range": [
+            7.241,
+            7.6691
+          ],
+          "mean_difference": 1.5517,
+          "median_difference": 1.5532,
+          "pooled_within_arm_sd": 0.3562,
+          "exact_test": {
+            "u": 12.0,
+            "assignments": 35,
+            "p_one_sided_lower": 1.0,
+            "p_one_sided_upper": 0.028571,
+            "p_two_sided": 0.057143
+          },
+          "shift": {
+            "estimate": 1.5969,
+            "lower": 0.8394,
+            "upper": 2.2317,
+            "attained_coverage": null,
+            "note": "no interval attains the requested level at these sample sizes"
+          },
+          "separates_at_declared_alpha": false
+        }
+      }
+    },
+    "primary1_identity": {
+      "standardised": {
+        "label": "primary1 identity standardised",
+        "case_values": [
+          -1.2904,
+          -0.135,
+          0.2908,
+          0.7131
+        ],
+        "reference_values": [
+          -0.8561,
+          1.1521,
+          -0.7434,
+          0.8689
+        ],
+        "case_mean": -0.1054,
+        "reference_mean": 0.1054,
+        "case_sd": 0.8626,
+        "reference_sd": 1.0525,
+        "case_range": [
+          -1.2904,
+          0.7131
+        ],
+        "reference_range": [
+          -0.8561,
+          1.1521
+        ],
+        "mean_difference": -0.2107,
+        "median_difference": 0.0152,
+        "pooled_within_arm_sd": 0.9623,
+        "exact_test": {
+          "u": 6.0,
+          "assignments": 70,
+          "p_one_sided_lower": 0.342857,
+          "p_one_sided_upper": 0.757143,
+          "p_two_sided": 0.685714
+        },
+        "shift": {
+          "estimate": -0.4366,
+          "lower": -2.4426,
+          "upper": 1.5693,
+          "attained_coverage": 0.9714,
+          "trimmed_from_each_end": 0
+        },
+        "separates_at_declared_alpha": false,
+        "coverage": {
+          "declared": 2,
+          "mapped": 2,
+          "measurable": 2,
+          "refused": false,
+          "measurable_symbols": [
+            "Sftpc",
+            "Ager"
+          ],
+          "dropped_symbols": []
+        },
+        "injury_context": {
+          "label": "injury context identity standardised",
+          "case_values": [
+            -0.7031,
+            0.7854,
+            -0.6314,
+            0.5027
+          ],
+          "reference_values": [
+            -1.0203,
+            -0.4857,
+            1.5523
+          ],
+          "case_mean": -0.0116,
+          "reference_mean": 0.0154,
+          "case_sd": 0.7664,
+          "reference_sd": 1.3575,
+          "case_range": [
+            -0.7031,
+            0.7854
+          ],
+          "reference_range": [
+            -1.0203,
+            1.5523
+          ],
+          "mean_difference": -0.027,
+          "median_difference": 0.4213,
+          "pooled_within_arm_sd": 1.1023,
+          "exact_test": {
+            "u": 6.0,
+            "assignments": 35,
+            "p_one_sided_lower": 0.571429,
+            "p_one_sided_upper": 0.571429,
+            "p_two_sided": 1.0
+          },
+          "shift": {
+            "estimate": 0.0857,
+            "lower": -2.2554,
+            "upper": 1.8057,
+            "attained_coverage": null,
+            "note": "no interval attains the requested level at these sample sizes"
+          },
+          "separates_at_declared_alpha": false
+        }
+      },
+      "unstandardised": {
+        "label": "primary1 identity unstandardised",
+        "case_values": [
+          13.9096,
+          14.2405,
+          14.3759,
+          14.4247
+        ],
+        "reference_values": [
+          14.0165,
+          14.6337,
+          14.0374,
+          14.4618
+        ],
+        "case_mean": 14.2377,
+        "reference_mean": 14.2874,
+        "case_sd": 0.2322,
+        "reference_sd": 0.3089,
+        "case_range": [
+          13.9096,
+          14.4247
+        ],
+        "reference_range": [
+          14.0165,
+          14.6337
+        ],
+        "mean_difference": -0.0497,
+        "median_difference": 0.0586,
+        "pooled_within_arm_sd": 0.2732,
+        "exact_test": {
+          "u": 6.0,
+          "assignments": 70,
+          "p_one_sided_lower": 0.342857,
+          "p_one_sided_upper": 0.757143,
+          "p_two_sided": 0.685714
+        },
+        "shift": {
+          "estimate": -0.0965,
+          "lower": -0.7241,
+          "upper": 0.4082,
+          "attained_coverage": 0.9714,
+          "trimmed_from_each_end": 0
+        },
+        "separates_at_declared_alpha": false,
+        "coverage": {
+          "declared": 2,
+          "mapped": 2,
+          "measurable": 2,
+          "refused": false,
+          "measurable_symbols": [
+            "Sftpc",
+            "Ager"
+          ],
+          "dropped_symbols": []
+        },
+        "injury_context": {
+          "label": "injury context identity unstandardised",
+          "case_values": [
+            14.0165,
+            14.6337,
+            14.0374,
+            14.4618
+          ],
+          "reference_values": [
+            13.9013,
+            14.0997,
+            14.8701
+          ],
+          "case_mean": 14.2874,
+          "reference_mean": 14.2904,
+          "case_sd": 0.3089,
+          "reference_sd": 0.5117,
+          "case_range": [
+            14.0165,
+            14.6337
+          ],
+          "reference_range": [
+            13.9013,
+            14.8701
+          ],
+          "mean_difference": -0.003,
+          "median_difference": 0.1499,
+          "pooled_within_arm_sd": 0.4227,
+          "exact_test": {
+            "u": 6.0,
+            "assignments": 35,
+            "p_one_sided_lower": 0.571429,
+            "p_one_sided_upper": 0.571429,
+            "p_two_sided": 1.0
+          },
+          "shift": {
+            "estimate": 0.0264,
+            "lower": -0.8535,
+            "upper": 0.7324,
+            "attained_coverage": null,
+            "note": "no interval attains the requested level at these sample sizes"
+          },
+          "separates_at_declared_alpha": false
+        }
+      }
+    },
+    "declared_here_no_decision": {
+      "Sfn": {
+        "label": "declared-here Sfn",
+        "case_values": [
+          6.864,
+          7.0921,
+          7.1187,
+          6.4394
+        ],
+        "reference_values": [
+          7.7782,
+          6.3063,
+          7.3879,
+          7.41
+        ],
+        "case_mean": 6.8785,
+        "reference_mean": 7.2206,
+        "case_sd": 0.3143,
+        "reference_sd": 0.6353,
+        "case_range": [
+          6.4394,
+          7.1187
+        ],
+        "reference_range": [
+          6.3063,
+          7.7782
+        ],
+        "mean_difference": -0.342,
+        "median_difference": -0.4209,
+        "pooled_within_arm_sd": 0.5012,
+        "exact_test": {
+          "u": 4.0,
+          "assignments": 70,
+          "p_one_sided_lower": 0.171429,
+          "p_one_sided_upper": 0.9,
+          "p_two_sided": 0.342857
+        },
+        "shift": {
+          "estimate": -0.4209,
+          "lower": -1.3388,
+          "upper": 0.8124,
+          "attained_coverage": 0.9714,
+          "trimmed_from_each_end": 0
+        },
+        "separates_at_declared_alpha": false,
+        "measurable": true
+      },
+      "Hopx": {
+        "label": "declared-here Hopx",
+        "case_values": [
+          9.9672,
+          10.2961,
+          11.0613,
+          10.3163
+        ],
+        "reference_values": [
+          10.3319,
+          10.6603,
+          10.2824,
+          10.7387
+        ],
+        "case_mean": 10.4102,
+        "reference_mean": 10.5033,
+        "case_sd": 0.4626,
+        "reference_sd": 0.2296,
+        "case_range": [
+          9.9672,
+          11.0613
+        ],
+        "reference_range": [
+          10.2824,
+          10.7387
+        ],
+        "mean_difference": -0.0931,
+        "median_difference": -0.1899,
+        "pooled_within_arm_sd": 0.3652,
+        "exact_test": {
+          "u": 6.0,
+          "assignments": 70,
+          "p_one_sided_lower": 0.342857,
+          "p_one_sided_upper": 0.757143,
+          "p_two_sided": 0.685714
+        },
+        "shift": {
+          "estimate": -0.1756,
+          "lower": -0.7716,
+          "upper": 0.7789,
+          "attained_coverage": 0.9714,
+          "trimmed_from_each_end": 0
+        },
+        "separates_at_declared_alpha": false,
+        "measurable": true
+      }
+    },
+    "primary2_omnibus": {
+      "genes_used": 15062,
+      "itgb6_excluded": true,
+      "dispersion_diagnostic": {
+        "within_arm_distance_ratio": 1.0661,
+        "declared_threshold": 1.5,
+        "breached": false,
+        "consequence_if_breached": "the omnibus is unreadable as a location change and carries no decision"
+      },
+      "centroid_distance": {
+        "observed_statistic": 79.667358,
+        "assignments": 70,
+        "p_one_sided": 0.657143,
+        "null_max": 124.294736,
+        "null_median": 80.638578,
+        "separates_at_declared_alpha": false,
+        "readable": true,
+        "separates_and_readable": false
+      },
+      "between_minus_within_demoted": {
+        "observed_statistic": -0.038365,
+        "assignments": 70,
+        "p_one_sided": 0.628571,
+        "null_max": 0.238259,
+        "null_median": -0.023005,
+        "separates_at_declared_alpha": false,
+        "status": "reported, carries no decision",
+        "why": "simulation in this repository gives it a rejection rate of 1.000 under a pure dispersion difference with no mean shift, against 0.035 under the true null"
+      }
+    },
+    "engagement_control": {
+      "coverage": {
+        "declared": 5,
+        "mapped": 5,
+        "measurable": 5,
+        "refused": false,
+        "measurable_symbols": [
+          "Col1a1",
+          "Acta2",
+          "Postn",
+          "Cthrc1",
+          "Tnc"
+        ],
+        "dropped_symbols": []
+      },
+      "standardised": {
+        "label": "engagement control, whole-lung input, standardised",
+        "case_values": [
+          -1.0233,
+          -0.3892,
+          -0.4731,
+          -0.5992
+        ],
+        "reference_values": [
+          0.8272,
+          -0.1937,
+          0.5364,
+          1.3149
+        ],
+        "case_mean": -0.6212,
+        "reference_mean": 0.6212,
+        "case_sd": 0.2816,
+        "reference_sd": 0.6311,
+        "case_range": [
+          -1.0233,
+          -0.3892
+        ],
+        "reference_range": [
+          -0.1937,
+          1.3149
+        ],
+        "mean_difference": -1.2424,
+        "median_difference": -1.2179,
+        "pooled_within_arm_sd": 0.4887,
+        "exact_test": {
+          "u": 0.0,
+          "assignments": 70,
+          "p_one_sided_lower": 0.014286,
+          "p_one_sided_upper": 1.0,
+          "p_two_sided": 0.028571
+        },
+        "shift": {
+          "estimate": -1.2583,
+          "lower": -2.3382,
+          "upper": -0.1955,
+          "attained_coverage": 0.9714,
+          "trimmed_from_each_end": 0
+        },
+        "separates_at_declared_alpha": true
+      },
+      "unstandardised": {
+        "label": "engagement control, whole-lung input, unstandardised",
+        "case_values": [
+          6.0531,
+          6.3297,
+          6.2983,
+          6.1605
+        ],
+        "reference_values": [
+          6.9128,
+          6.4412,
+          6.7577,
+          7.133
+        ],
+        "case_mean": 6.2104,
+        "reference_mean": 6.8112,
+        "case_sd": 0.128,
+        "reference_sd": 0.2908,
+        "case_range": [
+          6.0531,
+          6.3297
+        ],
+        "reference_range": [
+          6.4412,
+          7.133
+        ],
+        "mean_difference": -0.6008,
+        "median_difference": -0.6058,
+        "pooled_within_arm_sd": 0.2247,
+        "exact_test": {
+          "u": 0.0,
+          "assignments": 70,
+          "p_one_sided_lower": 0.014286,
+          "p_one_sided_upper": 1.0,
+          "p_two_sided": 0.028571
+        },
+        "shift": {
+          "estimate": -0.6058,
+          "lower": -1.0799,
+          "upper": -0.1115,
+          "attained_coverage": 0.9714,
+          "trimmed_from_each_end": 0
+        },
+        "separates_at_declared_alpha": true
+      },
+      "injury_context": {
+        "label": "engagement control injury context",
+        "case_values": [
+          0.6119,
+          0.0843,
+          0.5874,
+          1.0648
+        ],
+        "reference_values": [
+          -0.9972,
+          -1.2314,
+          -0.1198
+        ],
+        "case_mean": 0.5871,
+        "reference_mean": -0.7828,
+        "case_sd": 0.4006,
+        "reference_sd": 0.586,
+        "case_range": [
+          0.0843,
+          1.0648
+        ],
+        "reference_range": [
+          -1.2314,
+          -0.1198
+        ],
+        "mean_difference": 1.3699,
+        "median_difference": 1.5969,
+        "pooled_within_arm_sd": 0.5019,
+        "exact_test": {
+          "u": 12.0,
+          "assignments": 35,
+          "p_one_sided_lower": 1.0,
+          "p_one_sided_upper": 0.028571,
+          "p_two_sided": 0.057143
+        },
+        "shift": {
+          "estimate": 1.4502,
+          "lower": 0.2042,
+          "upper": 2.2962,
+          "attained_coverage": null,
+          "note": "no interval attains the requested level at these sample sizes"
+        },
+        "separates_at_declared_alpha": false
+      },
+      "declared_direction": "lower",
+      "direction_observed": "lower",
+      "separates_in_declared_direction": true
+    },
+    "purity_covariates": {
+      "epithelial_enrichment": {
+        "Epcam": {
+          "case_mean": 1.1733,
+          "reference_mean": 1.0726,
+          "arm_difference": 0.1008,
+          "exceeds_declared_threshold": false,
+          "exact_test": {
+            "u": 10.0,
+            "assignments": 70,
+            "p_one_sided_lower": 0.757143,
+            "p_one_sided_upper": 0.342857,
+            "p_two_sided": 0.685714
+          }
+        },
+        "Cdh1": {
+          "case_mean": 1.0836,
+          "reference_mean": 0.8871,
+          "arm_difference": 0.1965,
+          "exceeds_declared_threshold": false,
+          "exact_test": {
+            "u": 11.0,
+            "assignments": 70,
+            "p_one_sided_lower": 0.828571,
+            "p_one_sided_upper": 0.242857,
+            "p_two_sided": 0.485714
+          }
+        },
+        "Nkx2-1": {
+          "case_mean": 0.7795,
+          "reference_mean": 0.6927,
+          "arm_difference": 0.0868,
+          "exceeds_declared_threshold": false,
+          "exact_test": {
+            "u": 9.0,
+            "assignments": 70,
+            "p_one_sided_lower": 0.657143,
+            "p_one_sided_upper": 0.442857,
+            "p_two_sided": 0.885714
+          }
+        }
+      },
+      "non_epithelial_de_enrichment": {
+        "Ptprc": {
+          "case_mean": -4.8309,
+          "reference_mean": -4.7915,
+          "arm_difference": -0.0394,
+          "exceeds_declared_threshold": false,
+          "exact_test": {
+            "u": 9.0,
+            "assignments": 70,
+            "p_one_sided_lower": 0.657143,
+            "p_one_sided_upper": 0.442857,
+            "p_two_sided": 0.885714
+          }
+        },
+        "Pecam1": {
+          "case_mean": -3.8119,
+          "reference_mean": -3.8922,
+          "arm_difference": 0.0804,
+          "exceeds_declared_threshold": false,
+          "exact_test": {
+            "u": 8.0,
+            "assignments": 70,
+            "p_one_sided_lower": 0.557143,
+            "p_one_sided_upper": 0.557143,
+            "p_two_sided": 1.0
+          }
+        },
+        "Col3a1": {
+          "case_mean": -4.146,
+          "reference_mean": -4.0926,
+          "arm_difference": -0.0535,
+          "exceeds_declared_threshold": false,
+          "exact_test": {
+            "u": 9.0,
+            "assignments": 70,
+            "p_one_sided_lower": 0.657143,
+            "p_one_sided_upper": 0.442857,
+            "p_two_sided": 0.885714
+          }
+        }
+      },
+      "macrophage_guard": {
+        "Lyz2": {
+          "case_mean": 0.3222,
+          "reference_mean": 0.1023,
+          "arm_difference": 0.2199,
+          "exceeds_declared_threshold": false,
+          "exact_test": {
+            "u": 10.0,
+            "assignments": 70,
+            "p_one_sided_lower": 0.757143,
+            "p_one_sided_upper": 0.342857,
+            "p_two_sided": 0.685714
+          }
+        },
+        "Cd68": {
+          "case_mean": -3.6919,
+          "reference_mean": -3.3979,
+          "arm_difference": -0.2939,
+          "exceeds_declared_threshold": false,
+          "exact_test": {
+            "u": 4.0,
+            "assignments": 70,
+            "p_one_sided_lower": 0.171429,
+            "p_one_sided_upper": 0.9,
+            "p_two_sided": 0.342857
+          }
+        },
+        "Itgax": {
+          "case_mean": -4.4008,
+          "reference_mean": -4.2241,
+          "arm_difference": -0.1768,
+          "exceeds_declared_threshold": false,
+          "exact_test": {
+            "u": 9.0,
+            "assignments": 70,
+            "p_one_sided_lower": 0.657143,
+            "p_one_sided_upper": 0.442857,
+            "p_two_sided": 0.885714
+          }
+        },
+        "Mrc1": {
+          "case_mean": -3.9059,
+          "reference_mean": -4.0096,
+          "arm_difference": 0.1037,
+          "exceeds_declared_threshold": false,
+          "exact_test": {
+            "u": 8.0,
+            "assignments": 70,
+            "p_one_sided_lower": 0.557143,
+            "p_one_sided_upper": 0.557143,
+            "p_two_sided": 1.0
+          }
+        }
+      }
+    },
+    "a0_handling_covariate": {
+      "coverage": {
+        "declared": 50,
+        "mapped": 50,
+        "measurable": 50,
+        "refused": false,
+        "measurable_symbols": [
+          "Edn1",
+          "Tnip3",
+          "Tnfrsf12a",
+          "Slc7a6",
+          "Zfand2a",
+          "Dusp8",
+          "Hspb1",
+          "Myl9",
+          "Prrg4",
+          "Cmpk2",
+          "Ube2c",
+          "Dusp1",
+          "Ehd1",
+          "Mcam",
+          "Fam167a",
+          "Cacybp",
+          "Pla2g15",
+          "Arl5b",
+          "Atf3",
+          "Plk2",
+          "Hspa1a",
+          "Ubc",
+          "Efhd2",
+          "Dok1",
+          "Dnajb1",
+          "Tor1aip2",
+          "Incenp",
+          "Slc1a4",
+          "Hsph1",
+          "Gadd45a",
+          "Rnf6",
+          "Mfge8",
+          "Baz1a",
+          "Lrrc8a",
+          "Egr1",
+          "Fn1",
+          "Nop58",
+          "Rnf19a",
+          "Dnajb6",
+          "Rasal2",
+          "2200002D01Rik",
+          "Tubb2a",
+          "Adprh",
+          "Uspl1",
+          "Mthfd2",
+          "Gtpbp4",
+          "Vcl",
+          "Dusp3",
+          "Gtf2b",
+          "Hspa4"
+        ],
+        "dropped_symbols": []
+      },
+      "role": "handling and stress covariate, not an endpoint",
+      "contrast": {
+        "label": "A0 handling covariate",
+        "case_values": [
+          0.4831,
+          -0.1936,
+          -0.2117,
+          -0.4041
+        ],
+        "reference_values": [
+          0.5818,
+          -0.604,
+          -0.1393,
+          0.4879
+        ],
+        "case_mean": -0.0816,
+        "reference_mean": 0.0816,
+        "case_sd": 0.3883,
+        "reference_sd": 0.558,
+        "case_range": [
+          -0.4041,
+          0.4831
+        ],
+        "reference_range": [
+          -0.604,
+          0.5818
+        ],
+        "mean_difference": -0.1632,
+        "median_difference": -0.377,
+        "pooled_within_arm_sd": 0.4807,
+        "exact_test": {
+          "u": 5.0,
+          "assignments": 70,
+          "p_one_sided_lower": 0.242857,
+          "p_one_sided_upper": 0.828571,
+          "p_two_sided": 0.485714
+        },
+        "shift": {
+          "estimate": -0.0855,
+          "lower": -0.9859,
+          "upper": 1.0871,
+          "attained_coverage": 0.9714,
+          "trimmed_from_each_end": 0
+        },
+        "separates_at_declared_alpha": false
+      }
+    },
+    "secondary_injury_residual": {
+      "coverage": {
+        "declared": 386,
+        "mapped": 373,
+        "measurable": 373,
+        "refused": false,
+        "measurable_symbols": [
+          "1110004F10Rik",
+          "2200002D01Rik",
+          "2410006H16Rik",
+          "Actb",
+          "Actg1",
+          "Ahnak",
+          "Akr1b8",
+          "Aldoa",
+          "Anxa1",
+          "Anxa2",
+          "Anxa3",
+          "Anxa5",
+          "Anxa7",
+          "App",
+          "Arf1",
+          "Arl4c",
+          "Arpc2",
+          "Arpc5",
+          "Arpp19",
+          "Atf3",
+          "Atf4",
+          "Atp6v0e",
+          "Atp6v1f",
+          "Atxn10",
+          "B2m",
+          "Bola2",
+          "Btf3",
+          "Btg2",
+          "Bzw1",
+          "Cald1",
+          "Calm1",
+          "Calm2",
+          "Canx",
+          "Capg",
+          "Capn2",
+          "Capns1",
+          "Capzb",
+          "Cast",
+          "Ccng1",
+          "Cct2",
+          "Cct3",
+          "Cct6a",
+          "Cct8",
+          "Cd151",
+          "Cd2ap",
+          "Cd44",
+          "Cd63",
+          "Cd81",
+          "Cd9",
+          "Cdc42",
+          "Cdkn1a",
+          "Cfl1",
+          "Cfl2",
+          "Chchd2",
+          "Chmp2a",
+          "Chmp3",
+          "Cldn18",
+          "Clic1",
+          "Clta",
+          "Cltb",
+          "Clu",
+          "Cnbp",
+          "Cnn2",
+          "Commd3",
+          "Cox17",
+          "Cox4i1",
+          "Cox5a",
+          "Cox5b",
+          "Cox6a1",
+          "Cox6b1",
+          "Cox7a2",
+          "Cox7c",
+          "Cox8a",
+          "Cryab",
+          "Cstb",
+          "Ctnna1",
+          "Ctsd",
+          "Ctsl",
+          "Cwc15",
+          "Cycs",
+          "Cystm1",
+          "D8Ertd738e",
+          "Dctn3",
+          "Denr",
+          "Dstn",
+          "Dusp1",
+          "Dynlrb1",
+          "Edf1",
+          "Edn1",
+          "Eef1a1",
+          "Eef1b2",
+          "Eef1g",
+          "Ehd4",
+          "Eif1",
+          "Eif2s1",
+          "Eif2s2",
+          "Eif3a",
+          "Eif3c",
+          "Eif3g",
+          "Eif3h",
+          "Eif4a1",
+          "Eif4g2",
+          "Eif5",
+          "Eif5a",
+          "Eif6",
+          "Emp2",
+          "Eno1",
+          "Epcam",
+          "Esd",
+          "Etf1",
+          "F11r",
+          "F3",
+          "Fau",
+          "Fkbp3",
+          "Ftl1",
+          "Fubp1",
+          "Gadd45b",
+          "Gas5",
+          "Ghitm",
+          "Glrx3",
+          "Gpx1",
+          "H2-D1",
+          "H2-K1",
+          "H3f3b",
+          "Hbegf",
+          "Hint1",
+          "Hnrnpa2b1",
+          "Hnrnpab",
+          "Hnrnpc",
+          "Hsp90aa1",
+          "Hsp90ab1",
+          "Hspa8",
+          "Hspa9",
+          "Hspb1",
+          "Icam1",
+          "Ier3",
+          "Ifrd1",
+          "Igfbp7",
+          "Itgb1",
+          "Jun",
+          "Krt18",
+          "Krt19",
+          "Krt7",
+          "Lamp1",
+          "Laptm4a",
+          "Las1l",
+          "Lgals3",
+          "Lmna",
+          "Lmo7",
+          "Lrrfip1",
+          "Lsr",
+          "Mal",
+          "Map1lc3b",
+          "Mdm2",
+          "Mfge8",
+          "Mif",
+          "Morf4l1",
+          "Msn",
+          "Myl12a",
+          "Myl12b",
+          "Myl6",
+          "Naca",
+          "Ncl",
+          "Ndufa4",
+          "Ndufb6",
+          "Nfkbia",
+          "Nme1",
+          "Nop10",
+          "Nop56",
+          "Nop58",
+          "Npm1",
+          "Nupr1",
+          "Ociad1",
+          "Pa2g4",
+          "Pabpc1",
+          "Pafah1b1",
+          "Pdap1",
+          "Pdcd6",
+          "Pdia3",
+          "Pdlim1",
+          "Perp",
+          "Pfn1",
+          "Phlda1",
+          "Pkm",
+          "Plaur",
+          "Plk2",
+          "Pls3",
+          "Polr1d",
+          "Ppia",
+          "Ppp1r15a",
+          "Ppp2r2a",
+          "Prdx1",
+          "Prr13",
+          "Psma1",
+          "Psma2",
+          "Psma5",
+          "Psma6",
+          "Psma7",
+          "Psmb1",
+          "Psmb2",
+          "Psmb3",
+          "Psmb4",
+          "Psmb6",
+          "Psmc1",
+          "Psmc3",
+          "Psmc6",
+          "Psmd11",
+          "Psmd12",
+          "Psmd2",
+          "Psmd4",
+          "Psmd7",
+          "Psmd8",
+          "Psme2",
+          "Ptp4a2",
+          "Pttg1ip",
+          "Rab11a",
+          "Rab2a",
+          "Rab6a",
+          "Rac1",
+          "Rala",
+          "Ran",
+          "Ranbp1",
+          "Rap1b",
+          "Rap2b",
+          "Rbm8a",
+          "Rbms1",
+          "Rbx1",
+          "Rhoa",
+          "Riok3",
+          "Rnf11",
+          "Rnh1",
+          "Rpl10a",
+          "Rpl11",
+          "Rpl12",
+          "Rpl13",
+          "Rpl13a",
+          "Rpl14",
+          "Rpl15",
+          "Rpl17",
+          "Rpl18",
+          "Rpl18a",
+          "Rpl19",
+          "Rpl22",
+          "Rpl23",
+          "Rpl23a",
+          "Rpl26",
+          "Rpl27",
+          "Rpl27a",
+          "Rpl28",
+          "Rpl29",
+          "Rpl3",
+          "Rpl30",
+          "Rpl31",
+          "Rpl32",
+          "Rpl34",
+          "Rpl35",
+          "Rpl35a",
+          "Rpl36",
+          "Rpl36a",
+          "Rpl37",
+          "Rpl37a",
+          "Rpl38",
+          "Rpl39",
+          "Rpl4",
+          "Rpl41",
+          "Rpl5",
+          "Rpl6",
+          "Rpl7",
+          "Rpl7a",
+          "Rpl8",
+          "Rpl9",
+          "Rplp0",
+          "Rplp1",
+          "Rplp2",
+          "Rps10",
+          "Rps11",
+          "Rps12",
+          "Rps13",
+          "Rps14",
+          "Rps15",
+          "Rps15a",
+          "Rps16",
+          "Rps17",
+          "Rps18",
+          "Rps19",
+          "Rps2",
+          "Rps20",
+          "Rps21",
+          "Rps23",
+          "Rps24",
+          "Rps25",
+          "Rps26",
+          "Rps27",
+          "Rps27a",
+          "Rps27l",
+          "Rps28",
+          "Rps29",
+          "Rps3",
+          "Rps3a1",
+          "Rps4x",
+          "Rps5",
+          "Rps6",
+          "Rps7",
+          "Rps8",
+          "Rps9",
+          "Rpsa",
+          "Rsl1d1",
+          "Rtn4",
+          "S100a10",
+          "S100a11",
+          "S100a6",
+          "Sat1",
+          "Sbds",
+          "Sdc4",
+          "Sdcbp",
+          "Serbp1",
+          "Serinc1",
+          "Serpinb6a",
+          "Serpinb9",
+          "Sfn",
+          "Slc25a3",
+          "Snx6",
+          "Sparc",
+          "Sprr1a",
+          "Sqstm1",
+          "Sra1",
+          "St13",
+          "Tacstd2",
+          "Tagln2",
+          "Taldo1",
+          "Tax1bp1",
+          "Tbrg1",
+          "Tcp1",
+          "Tes",
+          "Timm17a",
+          "Timp2",
+          "Tinagl1",
+          "Tjp2",
+          "Tmbim4",
+          "Tmsb10",
+          "Tnfrsf12a",
+          "Tnip3",
+          "Tpd52",
+          "Tpd52l2",
+          "Tpm1",
+          "Tpm2",
+          "Tpm3",
+          "Tpm4",
+          "Tpt1",
+          "Trp53",
+          "Tsg101",
+          "Tspan8",
+          "Tspo",
+          "Tuba1c",
+          "Tuft1",
+          "Txn1",
+          "Txndc17",
+          "Txnl1",
+          "Txnrd1",
+          "Uba52",
+          "Ubb",
+          "Ubc",
+          "Ube2b",
+          "Ube2d3",
+          "Ube2k",
+          "Ubxn1",
+          "Ubxn4",
+          "Uqcrb",
+          "Uqcrq",
+          "Vmp1",
+          "Ybx1",
+          "Ywhab",
+          "Ywhah"
+        ],
+        "dropped_symbols": []
+      },
+      "status": "descriptive, no decision weight",
+      "contrast": {
+        "label": "A5/A11 injury residual, descriptive",
+        "case_values": [
+          0.1395,
+          0.0654,
+          0.02,
+          -0.5073
+        ],
+        "reference_values": [
+          0.2234,
+          -0.2525,
+          -0.2139,
+          0.5253
+        ],
+        "case_mean": -0.0706,
+        "reference_mean": 0.0706,
+        "case_sd": 0.2953,
+        "reference_sd": 0.3722,
+        "case_range": [
+          -0.5073,
+          0.1395
+        ],
+        "reference_range": [
+          -0.2525,
+          0.5253
+        ],
+        "mean_difference": -0.1412,
+        "median_difference": 0.0379,
+        "pooled_within_arm_sd": 0.3359,
+        "exact_test": {
+          "u": 6.0,
+          "assignments": 70,
+          "p_one_sided_lower": 0.342857,
+          "p_one_sided_upper": 0.757143,
+          "p_two_sided": 0.685714
+        },
+        "shift": {
+          "estimate": -0.1807,
+          "lower": -1.0326,
+          "upper": 0.3921,
+          "attained_coverage": 0.9714,
+          "trimmed_from_each_end": 0
+        },
+        "separates_at_declared_alpha": false
+      },
+      "correlation_with_a0_score_vector": 0.8112
+    },
+    "sensitivity_median_of_ratios": {
+      "transitional": {
+        "label": "median-of-ratios transitional",
+        "case_values": [
+          8.7125,
+          9.0245,
+          8.8065,
+          8.9343
+        ],
+        "reference_values": [
+          9.1567,
+          8.9507,
+          8.7264,
+          9.2405
+        ],
+        "case_mean": 8.8695,
+        "reference_mean": 9.0186,
+        "case_sd": 0.1376,
+        "reference_sd": 0.2297,
+        "case_range": [
+          8.7125,
+          9.0245
+        ],
+        "reference_range": [
+          8.7264,
+          9.2405
+        ],
+        "mean_difference": -0.1491,
+        "median_difference": -0.1833,
+        "pooled_within_arm_sd": 0.1894,
+        "exact_test": {
+          "u": 4.0,
+          "assignments": 70,
+          "p_one_sided_lower": 0.171429,
+          "p_one_sided_upper": 0.9,
+          "p_two_sided": 0.342857
+        },
+        "shift": {
+          "estimate": -0.1801,
+          "lower": -0.5279,
+          "upper": 0.2982,
+          "attained_coverage": 0.9714,
+          "trimmed_from_each_end": 0
+        },
+        "separates_at_declared_alpha": false
+      },
+      "identity": {
+        "label": "median-of-ratios identity",
+        "case_values": [
+          13.6001,
+          14.2972,
+          14.4767,
+          14.5947
+        ],
+        "reference_values": [
+          13.8439,
+          15.0772,
+          13.9886,
+          14.2291
+        ],
+        "case_mean": 14.2422,
+        "reference_mean": 14.2847,
+        "case_sd": 0.4452,
+        "reference_sd": 0.5517,
+        "case_range": [
+          13.6001,
+          14.5947
+        ],
+        "reference_range": [
+          13.8439,
+          15.0772
+        ],
+        "mean_difference": -0.0425,
+        "median_difference": 0.2781,
+        "pooled_within_arm_sd": 0.5013,
+        "exact_test": {
+          "u": 9.0,
+          "assignments": 70,
+          "p_one_sided_lower": 0.657143,
+          "p_one_sided_upper": 0.442857,
+          "p_two_sided": 0.885714
+        },
+        "shift": {
+          "estimate": 0.1578,
+          "lower": -1.4771,
+          "upper": 0.7508,
+          "attained_coverage": 0.9714,
+          "trimmed_from_each_end": 0
+        },
+        "separates_at_declared_alpha": false
+      }
+    },
+    "sensitivity_leave_one_mouse_out": {
+      "status": "descriptive, no decision weight, no robustness language",
+      "rows": [
+        {
+          "panel": "transitional",
+          "dropped_mouse": "218",
+          "dropped_arm": "case",
+          "mean_difference": -0.4993
+        },
+        {
+          "panel": "transitional",
+          "dropped_mouse": "219",
+          "dropped_arm": "case",
+          "mean_difference": -0.3999
+        },
+        {
+          "panel": "transitional",
+          "dropped_mouse": "226R",
+          "dropped_arm": "case",
+          "mean_difference": -0.2405
+        },
+        {
+          "panel": "transitional",
+          "dropped_mouse": "228",
+          "dropped_arm": "case",
+          "mean_difference": -0.2999
+        },
+        {
+          "panel": "transitional",
+          "dropped_mouse": "204",
+          "dropped_arm": "reference",
+          "mean_difference": -0.0921
+        },
+        {
+          "panel": "transitional",
+          "dropped_mouse": "206",
+          "dropped_arm": "reference",
+          "mean_difference": -0.8163
+        },
+        {
+          "panel": "transitional",
+          "dropped_mouse": "208R",
+          "dropped_arm": "reference",
+          "mean_difference": -0.569
+        },
+        {
+          "panel": "transitional",
+          "dropped_mouse": "225",
+          "dropped_arm": "reference",
+          "mean_difference": 0.0378
+        },
+        {
+          "panel": "identity",
+          "dropped_mouse": "218",
+          "dropped_arm": "case",
+          "mean_difference": 0.1843
+        },
+        {
+          "panel": "identity",
+          "dropped_mouse": "219",
+          "dropped_arm": "case",
+          "mean_difference": -0.2009
+        },
+        {
+          "panel": "identity",
+          "dropped_mouse": "226R",
+          "dropped_arm": "case",
+          "mean_difference": -0.3428
+        },
+        {
+          "panel": "identity",
+          "dropped_mouse": "228",
+          "dropped_arm": "case",
+          "mean_difference": -0.4836
+        },
+        {
+          "panel": "identity",
+          "dropped_mouse": "204",
+          "dropped_arm": "reference",
+          "mean_difference": -0.5312
+        },
+        {
+          "panel": "identity",
+          "dropped_mouse": "206",
+          "dropped_arm": "reference",
+          "mean_difference": 0.1382
+        },
+        {
+          "panel": "identity",
+          "dropped_mouse": "208R",
+          "dropped_arm": "reference",
+          "mean_difference": -0.4937
+        },
+        {
+          "panel": "identity",
+          "dropped_mouse": "225",
+          "dropped_arm": "reference",
+          "mean_difference": 0.0438
+        }
+      ]
+    },
+    "sensitivity_score_against_log_depth": {
+      "status": "descriptive, no decision weight",
+      "pearson": {
+        "transitional": 0.6165,
+        "identity": -0.7958
+      }
+    }
+  },
+  "verdict": {
+    "value": "weak_bound_on_rival_2",
+    "only_informative_branch": "weak_bound_on_rival_2",
+    "positive_branch_does_not_discriminate": "both the A15 mechanism and rival 2 predict an epithelial change",
+    "transitional_separates": false,
+    "identity_separates": false,
+    "omnibus_correlation_separates": false,
+    "omnibus_euclidean_separates": false,
+    "engagement_separates_in_declared_direction": true,
+    "downgrade_reasons": [],
+    "a0_rule_note": {
+      "frozen_wording": "if the A0 handling covariate separates the arms more strongly than either primary-1 composite does, the primary reading is downgraded",
+      "comparison_was_meaningful": false,
+      "defect": "when nothing separates at the declared alpha, comparing which non-significant p-value is smaller compares noise. The rule is reported as written and its vacuous case is recorded rather than reinterpreted after the fact."
+    },
+    "purity_uncomputed": [],
+    "rules": {
+      "epithelium_differs_but_does_not_discriminate": "either primary-1 composite separates at exact two-sided p at or below 0.028571, or the omnibus separates with its dispersion diagnostic within threshold, and no purity, macrophage or handling covariate separates. Reading: the epithelium differs between the arms. This does NOT discriminate rival 2 from the A15 mechanism, because both predict an epithelial change, and it does not by itself establish target engagement, because an off-target antibody effect would also produce it.",
+      "weak_bound_on_rival_2": "the engagement control separates in its declared direction, AND neither primary-1 composite nor the omnibus separates, AND no covariate separates. Reported as a weak bound, never as absence, never as evidence about A15.",
+      "engagement_not_established": "the engagement control does not separate. No null bounds anything; the arm is reported as engagement-not-established and design-limited.",
+      "inconclusive": "every other configuration, including any covariate separation, a breached dispersion diagnostic, a disagreement between the two primary-1 composites, a refused composite, or a sensitivity disagreement",
+      "which_branch_is_informative": "only weak_bound_on_rival_2 discriminates. The positive branch is predicted by the hypothesis and the rival alike, so it is uninformative between them and its branch name says so.",
+      "expected_outcome_stated_before_running": "the antibody has a published epithelial effect in this model, so a positive result is the likely one, and the likely outcome is the uninformative one. This is recorded before execution so the report cannot present an expected result as a discovery."
+    }
+  },
+  "endpoint_scored": true,
+  "claim_rows_added": 0,
+  "generated_utc": "2026-09-26T16:19:51.995698+00:00"
+}

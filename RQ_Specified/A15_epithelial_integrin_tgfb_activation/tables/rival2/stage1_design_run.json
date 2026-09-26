@@ -1,0 +1,429 @@
+{
+  "schema": "a15-rival2-stage1/v1",
+  "stage": "1, design and instrument audit; no gene-set score computed",
+  "scope": "bounds A15 rival 2 only; not a test of A15",
+  "accession": "GSE190821",
+  "series_title": "Lung epithelial transcriptional responses to bleomycin and effects of IRE1\u03b1 or TGF\u03b2 inhibition",
+  "series_overall_design": "Factorial design. Principal treatment groups are: Saline/Control (6 mice), Bleomycin/Control (9 mice), Bleomycin/KIRA8 (5 mice) and Bleomycin/3G9 (4 mice). Each mouse has a corresponding whole lung and epithelial library.",
+  "series_pubmed_id": "35170357",
+  "platform": "GPL21103",
+  "inputs": {
+    "series_matrix": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE190nnn/GSE190821/matrix/GSE190821_series_matrix.txt.gz",
+      "bytes": 3670,
+      "sha256": "a5355b92ef44087b2d78f3fd9318f10dc6941cfb43d0c1e77c1cea4ca361ef29"
+    },
+    "counts": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE190nnn/GSE190821/suppl/GSE190821_counts.csv.gz",
+      "bytes": 1748418,
+      "sha256": "2c8a21fd68c355330bfee2e5e63ca3d415d7f4677a3b783669d9acb0a595d1f7",
+      "verified_against": "RQ_Specified/A1_transitional_epithelial_state_distinction/config/ire1_kira8.json"
+    },
+    "ensembl_symbol_lookup": {
+      "path": "cache/ensembl_symbol_lookup.json",
+      "sha256": "0a8da7c1ad99c3f7cd1cde806d49b853c03c91a0b60c7eee08ac3b892133fe7b"
+    },
+    "a0_frozen_programme": {
+      "path": "RQ_Specified/A0_conserved_epithelial_transition_program/tables/pilot_v1/frozen_programme.json",
+      "sha256": "a14fabc419e9be86cbd114dca412db1c61f561457b6f21f59f1e02469d2e31f7"
+    },
+    "a5a11_frozen_modules": {
+      "path": "RQ_Specified/A5_A11_shared_component_contract/tables/frozen_modules.json",
+      "sha256": "059f72c07b5c35cb597c219e87606249c814712d238fd2a75724a91761913bcc"
+    },
+    "a1_config": {
+      "path": "RQ_Specified/A1_transitional_epithelial_state_distinction/config/ire1_kira8.json",
+      "sha256": "5adc21ddc5e9ce81edb216c504662d4d58ad95b97596cd01c411a27f1223139f"
+    }
+  },
+  "design": {
+    "libraries": 48,
+    "mice": 24,
+    "one_epithelial_and_one_whole_lung_per_mouse": true,
+    "compartment_shapes": {
+      "('Epithelium', 'Whole Lung')": 24
+    },
+    "arms": {
+      "bleomycin_3G9": {
+        "n_mice": 4,
+        "mice": [
+          "218",
+          "219",
+          "226R",
+          "228"
+        ],
+        "batches": [
+          "S151"
+        ],
+        "sex": {
+          "F": 1,
+          "M": 3
+        }
+      },
+      "bleomycin_Axum8": {
+        "n_mice": 4,
+        "mice": [
+          "204",
+          "206",
+          "208R",
+          "225"
+        ],
+        "batches": [
+          "S151"
+        ],
+        "sex": {
+          "F": 1,
+          "M": 3
+        }
+      },
+      "saline_Axum8": {
+        "n_mice": 3,
+        "mice": [
+          "207",
+          "221",
+          "230"
+        ],
+        "batches": [
+          "S151"
+        ],
+        "sex": {
+          "F": 1,
+          "M": 2
+        }
+      },
+      "bleomycin_Vehicle": {
+        "n_mice": 5,
+        "mice": [
+          "148",
+          "149",
+          "17",
+          "31",
+          "45"
+        ],
+        "batches": [
+          "S061",
+          "S135"
+        ],
+        "sex": {
+          "F": 2,
+          "M": 3
+        }
+      },
+      "bleomycin_KIRA8": {
+        "n_mice": 5,
+        "mice": [
+          "154",
+          "155",
+          "20",
+          "32",
+          "41"
+        ],
+        "batches": [
+          "S061",
+          "S135"
+        ],
+        "sex": {
+          "F": 2,
+          "M": 3
+        }
+      },
+      "saline_Vehicle": {
+        "n_mice": 3,
+        "mice": [
+          "146",
+          "152",
+          "153"
+        ],
+        "batches": [
+          "S135"
+        ],
+        "sex": {
+          "F": 1,
+          "M": 2
+        }
+      }
+    }
+  },
+  "join": {
+    "bijective_over_48_libraries": true,
+    "columns_needing_a_rule_beyond_exact_match": {
+      "Bleo_017_E": [
+        "zero-padded"
+      ],
+      "Bleo_017_I": [
+        "zero-padded"
+      ],
+      "Bleo_031_E": [
+        "zero-padded"
+      ],
+      "Bleo_031_I": [
+        "zero-padded"
+      ],
+      "Bleo_045_E": [
+        "zero-padded"
+      ],
+      "Bleo_045_I": [
+        "zero-padded"
+      ],
+      "Bleo_KIRA8_020_E": [
+        "zero-padded"
+      ],
+      "Bleo_KIRA8_020_I": [
+        "zero-padded"
+      ],
+      "Bleo_KIRA8_032_E": [
+        "zero-padded"
+      ],
+      "Bleo_KIRA8_032_I": [
+        "zero-padded"
+      ],
+      "Bleo_KIRA8_041_E": [
+        "zero-padded"
+      ],
+      "Bleo_KIRA8_041_I": [
+        "zero-padded"
+      ],
+      "Bleo_3G9_I_218FT": [
+        "FT suffix"
+      ]
+    },
+    "unresolved_columns": [],
+    "duplicate_pairs": {},
+    "metadata_pairs_missing_from_counts": [],
+    "counts_pairs_missing_from_metadata": []
+  },
+  "independent_check_against_a1": {
+    "a1_rows_checked": 10,
+    "a1_contrast": "Vehicle against KIRA8",
+    "a1_excluded": "Axum8 is the antibody control and is not a vehicle control for KIRA8. Whole-lung libraries are not independent animals.",
+    "disagreements": [],
+    "rule_reproduces_a1": true
+  },
+  "naming_hazard": {
+    "prefixes_covering_more_than_one_group": {
+      "Bleo": [
+        "Bleomycin/Axum8",
+        "Bleomycin/Vehicle"
+      ]
+    },
+    "consequence": "column names alone cannot identify the antibody control arm; the treatment field in the series metadata is the only source that separates Axum8 from Vehicle"
+  },
+  "confounding": {
+    "primary_arms_share_one_batch": true,
+    "antibody_experiment_batches": [
+      "S151"
+    ],
+    "sex_matched_between_primary_arms": true,
+    "injury_control_in_same_batch": true,
+    "vehicle_is_not_the_antibody_control": "Axum8 is the antibody control and is not a vehicle control for KIRA8. Whole-lung libraries are not independent animals."
+  },
+  "counts_structure": {
+    "genes_in_index": 42548,
+    "unique_gene_ids": 42548,
+    "sample_columns": 48,
+    "identifier_type": "Ensembl mouse stable gene IDs",
+    "identifier_example": [
+      "ENSMUSG00000000001",
+      "ENSMUSG00000000003",
+      "ENSMUSG00000000028"
+    ]
+  },
+  "endpoint_coverage": {
+    "a0_frozen_transition_50": {
+      "declared": 50,
+      "symbol_unresolved": [],
+      "mapped": 50,
+      "present_in_counts": 50,
+      "fraction_present": 1.0,
+      "mapped_but_absent_from_counts": [],
+      "contains_perturbed_gene": false
+    },
+    "a5a11_injury_residual": {
+      "declared": 386,
+      "symbol_unresolved": [
+        "1500012F01Rik",
+        "Atp5d",
+        "Cyr61",
+        "Gnb2l1",
+        "Hist1h2bc",
+        "Prkcdbp",
+        "Rab1",
+        "Rars",
+        "Skp1a",
+        "Tceb1",
+        "Tceb2",
+        "Usmg5"
+      ],
+      "mapped": 374,
+      "present_in_counts": 373,
+      "fraction_present": 0.9663,
+      "mapped_but_absent_from_counts": [
+        "Mrpl33"
+      ],
+      "contains_perturbed_gene": false
+    },
+    "a5a11_shared_remodelling": {
+      "declared": 12,
+      "symbol_unresolved": [
+        "Nars"
+      ],
+      "mapped": 11,
+      "present_in_counts": 11,
+      "fraction_present": 0.9167,
+      "mapped_but_absent_from_counts": [],
+      "contains_perturbed_gene": true
+    },
+    "a1_frozen_marker_panel": {
+      "declared": 8,
+      "symbol_unresolved": [],
+      "mapped": 8,
+      "present_in_counts": 8,
+      "fraction_present": 1.0,
+      "mapped_but_absent_from_counts": [],
+      "contains_perturbed_gene": true
+    }
+  },
+  "perturbed_gene": {
+    "symbol": "Itgb6",
+    "ensembl_id": "ENSMUSG00000026971",
+    "in_counts_index": true,
+    "in_endpoint_sets": {
+      "a0_frozen_transition_50": false,
+      "a5a11_injury_residual": false,
+      "a5a11_shared_remodelling": true,
+      "a1_frozen_marker_panel": true
+    }
+  },
+  "covariates": {
+    "eligible_epithelial_libraries": 11,
+    "depth": {
+      "minimum": 24751240,
+      "maximum": 36057881,
+      "ratio_max_over_min": 1.457,
+      "floor": 100000,
+      "below_floor": []
+    }
+  },
+  "power": {
+    "primary_contrast": {
+      "arms": "bleomycin 3G9 n=4 against bleomycin Axum8 n=4",
+      "assignments": 70,
+      "smallest_attainable_one_sided_p": 0.014286,
+      "smallest_attainable_two_sided_p": 0.028571,
+      "requires": "complete separation of the two arms on the score"
+    },
+    "instrument_check": {
+      "arms": "bleomycin Axum8 n=4 against saline Axum8 n=3",
+      "assignments": 35,
+      "smallest_attainable_one_sided_p": 0.028571,
+      "requires": "complete separation of the two arms on the score"
+    },
+    "precise_absence": "unavailable at these sizes, declared before any test"
+  },
+  "precedent": {
+    "files_mentioning_accession": [
+      "AI_CONTEXT.md",
+      "DEVELOPMENT.md",
+      "PROGRESS.md",
+      "REFERENCES.md",
+      "RESEARCH_QUESTIONS.md",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/PLAN.md",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/RATIONALE.md",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/README.md",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/config/a15_question_contract.json",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/config/a15_rival2_freeze.json",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/config/a15_rival2_freeze_v2.json",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/config/a15_rival2_freeze_v3.json",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/PUBLIC_DATA_SEARCH.md",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/REGISTER_DECISION.md",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/RIVAL2_STAGE1_AUDIT.md",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/RIVAL2_STAGE1_ERRATUM.md",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/scripts/01_rival2_design_audit.py",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/scripts/01b_rival2_stage1_addendum.py",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/scripts/02_rival2_execute.py",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/scripts/03_rival2_verify.py",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/tables/rival2/stage1_design_run.json",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/tables/rival2/stage1b_addendum_run.json",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/LINEAGE_AUDIT.md",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/PLAN.md",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/STUDY_MAP.md",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/config/ire1_kira8.json",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/figures/README.md",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/metadata/GSE190821.json",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/metadata/README.md",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ANALYSIS_REFERENCE_MAP.md",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/reports/FIRST_BATCH_REPORT.md",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/reports/catalog_audit.json",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/reports/execution_sources/2026-09-25/07_ire1_epithelial_analysis.py",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/reports/execution_sources/second_batch_2026-09-25/16_summarize_second_batch.py",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/reports/execution_sources/verified_batch_2026-09-25/16_summarize_second_batch.py",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/reports/processed_input_inventory.json",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/scripts/07_ire1_epithelial_analysis.py",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/scripts/16_summarize_second_batch.py",
+      "RQ_Specified/A1_transitional_epithelial_state_distinction/scripts/README.md",
+      "analysis/tests/test_a1_lineage_execution.py",
+      "docs/migrations/2026-09-25-rq-reframing/preservation_manifest.json"
+    ],
+    "prior_analysis": {
+      "question": "A1",
+      "config": "RQ_Specified/A1_transitional_epithelial_state_distinction/config/ire1_kira8.json",
+      "study_named_by_a1": "Auyeung et al. 2022; GSE190821",
+      "compartment": "Epithelium",
+      "exposure": "Bleomycin",
+      "arms_scored_by_a1": [
+        "Vehicle",
+        "KIRA8"
+      ],
+      "arms_explicitly_excluded_by_a1": "Axum8 is the antibody control and is not a vehicle control for KIRA8. Whole-lung libraries are not independent animals.",
+      "counts_hash_matches": true,
+      "this_contrast_touched_by_a1": false,
+      "instrument_reusable_in_this_session": false,
+      "why_not": "A1's instrument is edgeR and limma in R; no R interpreter is available in this session, so its TMM normalisation and quasi-likelihood fit cannot be reused. A score-level statistic is declared instead and is not presented as A1's instrument."
+    }
+  },
+  "stop_rules": {
+    "counts_hash_mismatch": {
+      "rule": "the counts file differs from A1's recorded hash",
+      "triggered": false
+    },
+    "join_not_bijective": {
+      "rule": "the counts columns do not resolve one-to-one onto the 48 libraries",
+      "triggered": false
+    },
+    "join_rule_disagrees_with_a1": {
+      "rule": "the join rule does not reproduce A1's recorded assignments",
+      "triggered": false
+    },
+    "arms_too_small": {
+      "rule": "fewer than 3 mice in either primary arm",
+      "triggered": false
+    },
+    "treatment_confounded_with_batch": {
+      "rule": "the primary arms do not occupy the same single batch",
+      "triggered": false
+    },
+    "no_injury_control_in_batch": {
+      "rule": "no saline arm shares the antibody experiment's batch",
+      "triggered": false
+    },
+    "endpoint_coverage": {
+      "rule": "the primary endpoint recovers fewer than 0.90 of its declared genes",
+      "triggered": false
+    },
+    "primary_endpoint_contains_perturbed_gene": {
+      "rule": "the primary endpoint contains the perturbed gene",
+      "triggered": false
+    },
+    "eligible_library_below_depth_floor": {
+      "rule": "an eligible epithelial library falls below 100000 counts",
+      "triggered": false
+    },
+    "prior_analysis_scored_this_contrast": {
+      "rule": "a prior analysis already scored the 3G9 against Axum8 contrast",
+      "triggered": false
+    }
+  },
+  "stop_rules_triggered": [],
+  "endpoint_scored": false,
+  "generated_utc": "2026-09-26T16:19:40.593796+00:00"
+}

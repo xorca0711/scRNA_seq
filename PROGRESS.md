@@ -256,10 +256,39 @@ question yet: it is now a proposed question, and the owner decides.**
   can ask whether the integrin blockade moves the epithelium's own programme, which is
   the "changed epithelium, not the integrin" rival. It is declared outside the staged
   test and needs its own pre-declared endpoint before any count is opened.
-- Next: the owner makes three decisions, recorded in DEVELOPMENT.md as pending. Retain or
-  reject the registration; retain or revise the scope wording; and authorize or decline
-  the GSE190821 side-branch. If the registration is rejected, the honest alternative is a
-  FINDINGS entry under A2 with the same limits stated, and the folder is removed.
+- **The side-branch was authorized and has run, 27 September 2026.** Branch
+  `Claude/a15-rival2-gse190821`. It took three freezes: **two were withdrawn on adversarial
+  review with nothing scored**, which is the second and third freeze withdrawal in this
+  repository. Read
+  [the results](RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/RIVAL2_RESULTS.md),
+  then the two withdrawal reports.
+- **The result.** 3G9 anti-integrin-beta6 lowered a frozen whole-lung collagen and
+  myofibroblast programme by 1.2424 standardised units with **complete separation** of four
+  treated from four control mice, exact two-sided p 0.028571, reproducing the published
+  direction for this antibody. In the same mice the epithelial immunoprecipitation showed no
+  detectable difference: transitional panel -0.3599 at p 0.8857, identity panel -0.2107 at
+  p 0.6857, and a 15,062-gene omnibus centroid statistic at p 0.6571 with its dispersion
+  diagnostic within threshold at 1.0661. Epithelial enrichment differs between arms by at
+  most 0.294 log2 units, so the epithelial null is not a purity artefact. Verdict under the
+  frozen rules: **weak bound on rival 2**, which is the one informative branch.
+- **What it is not.** Not absence: the shift intervals span [-1.91, +1.43] and
+  [-2.44, +1.57] standardised units, and four against four reaches significance only under
+  complete separation. Not evidence about A15 in either direction. Not novel: the whole-lung
+  result reproduces Horan 2008 and is reported as reproduction.
+- **Verification.** 39 of 39 independent checks pass through numpy and scipy. Two earlier
+  failures were bugs in the verifier, not the analysis, and are recorded. The repository
+  checks pass at 2,669 validation checks, the claim contract and 45 unit tests.
+- Next: the owner makes four decisions, recorded in DEVELOPMENT.md as pending. Retain or
+  reject the A15 registration; retain or revise the scope wording; retain or reject the
+  restatement of rival 2; and grade or decline the claim sentence the results report
+  proposes. If the registration is rejected, the honest alternative is a FINDINGS entry
+  under A2 with the same limits stated, and the folder is removed.
+- Two defects a later session should not repeat. A frozen rule that compares which
+  non-significant p-value is smaller is vacuous when nothing separates; it is reported as
+  written here rather than reinterpreted, and any future version should require separation
+  before the comparison. And an Ensembl symbol lookup built at one stage must be extended
+  when a later freeze declares new panels, or covariates silently return "not recovered" and
+  vacuous silence gets reported as a negative result; script 02 now fails closed on it.
 - Constraints honoured and worth restating for the next session: no file under
   `RQ_Specified/A2_areg_source_delivery/` was edited, because those are under review in
   PR #85; no study note was written on roadmap paper 14 (doi 10.1073/pnas.2606113123),

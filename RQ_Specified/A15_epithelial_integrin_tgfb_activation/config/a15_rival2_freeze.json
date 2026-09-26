@@ -1,0 +1,139 @@
+{
+  "schema": "a15-rival2-freeze/v1",
+  "status": "DRAFT_PENDING_ADVERSARIAL_REVIEW_NOTHING_SCORED",
+  "drafted": "2026-09-27",
+  "authorization": "Owner instruction, 27 September 2026: run the GSE190821 epithelial arm to bound rival 2",
+  "scope": {
+    "bounds": "A15 rival 2 only: that Itgb6 loss changes the epithelium itself, so a changed epithelium could change a fibroblast for reasons unrelated to TGF-beta activation",
+    "is_not": "a test of A15. This deposit fails A15 stage 1 gate conditions 3, 4 and 5: no activated-TGF-beta readout, no separated fibroblast compartment, no ligand arm.",
+    "may_never_be_reported_as": "evidence for or against the A15 hypothesis"
+  },
+  "stage1": {
+    "report": "reports/RIVAL2_STAGE1_AUDIT.md",
+    "run_record": "tables/rival2/stage1_design_run.json",
+    "stop_rules_triggered": [],
+    "all_ten_passed": true
+  },
+  "dataset": {
+    "accession": "GSE190821",
+    "counts_sha256": "2c8a21fd68c355330bfee2e5e63ca3d415d7f4677a3b783669d9acb0a595d1f7",
+    "counts_verified_against": "A1's recorded count_source_sha256 in RQ_Specified/A1_transitional_epithelial_state_distinction/config/ire1_kira8.json",
+    "source_paper": {
+      "citation": "Auyeung VC, Downey MS, Thamsen M, Wenger TA, Backes BJ, Sheppard D, Papa FR. IRE1alpha drives lung epithelial progenitor dysfunction to establish a niche for pulmonary fibrosis. Am J Physiol Lung Cell Mol Physiol 2022",
+      "doi": "10.1152/ajplung.00408.2021",
+      "pmid": "35170357",
+      "reading_policy": "not under the roadmap-14 unread-source prohibition; A1 already cited its Fig. 1K and Supplemental Table 1",
+      "likely_publishes_this_contrast": true,
+      "consequence": "agreement is reproduction and is reported as reproduction, never as a finding of this repository",
+      "prior_exposure_recorded": "this session read the abstract, which states that the IRE1alpha inhibitor decreases integrin alphaVbeta6 expression with correspondingly decreased TGF-beta-induced gene expression in the epithelium. The primary endpoint below is not a TGF-beta response module, so this does not reveal the primary's direction.",
+      "paper_results_read_before_freeze": false,
+      "order_required": "freeze, then compute, then compare against the paper"
+    }
+  },
+  "unit": {
+    "is": "the mouse",
+    "is_not": ["the library", "the compartment", "the read"],
+    "justification": "every mouse carries exactly one epithelial library, so the epithelial arm has no pseudoreplication"
+  },
+  "eligibility": {
+    "compartment": "Epithelium, the RiboTag immunoprecipitation",
+    "exposure_primary": "Bleomycin",
+    "arms_primary": {
+      "case": {"treatment": "3G9", "n_mice": 4, "mice": ["218", "219", "226R", "228"]},
+      "reference": {"treatment": "Axum8", "n_mice": 4, "mice": ["204", "206", "208R", "225"]}
+    },
+    "arms_instrument_check": {
+      "case": {"exposure": "Bleomycin", "treatment": "Axum8", "n_mice": 4},
+      "reference": {"exposure": "Saline", "treatment": "Axum8", "n_mice": 3}
+    },
+    "batch": "S151 for every arm used, so treatment is separable from batch",
+    "excluded": {
+      "Vehicle": "the KIRA8 vehicle, not the antibody control; pooling it with Axum8 is the naming hazard stage 1 found",
+      "KIRA8": "A1 owns that contrast",
+      "Whole Lung": "a homogenate cannot isolate the epithelial compartment, and A15's gate condition 4 refuses it"
+    },
+    "depth_floor": 100000,
+    "libraries_below_floor": 0
+  },
+  "endpoints": {
+    "primary": {
+      "name": "A0 frozen transition programme, 50 mouse genes",
+      "source": "RQ_Specified/A0_conserved_epithelial_transition_program/tables/pilot_v1/frozen_programme.json",
+      "frozen_before_this_deposit_was_opened": true,
+      "defined_in": "Strunz mouse alveolar repair, a different dataset",
+      "coverage_in_counts": "50 of 50",
+      "contains_perturbed_gene": false,
+      "why": "it is a transition-associated epithelial programme, which is exactly the epithelial state change rival 2 asserts, and it was frozen without any reference to GSE190821"
+    },
+    "secondary": {
+      "name": "A5/A11 injury residual module, 386 mouse genes",
+      "source": "RQ_Specified/A5_A11_shared_component_contract/tables/frozen_modules.json",
+      "coverage_in_counts": "373 of 386",
+      "contains_perturbed_gene": false,
+      "why": "a larger, independently partitioned injury programme; agreement between a 50-gene and a 373-gene set is worth more than either alone"
+    },
+    "excluded_as_endpoints": {
+      "a5a11_shared_remodelling": "contains Itgb6, the perturbed gene",
+      "a1_frozen_marker_panel": "contains Itgb6; retained for per-gene reporting only, with no decision attached"
+    },
+    "scoring": "per mouse, the mean over recovered members of log2(count / that library's total count * 1e6 + 1)",
+    "scoring_provenance": "the same per-library CPM convention A2 leg 1 used for its frozen five-gene score; it is this repository's own convention and is NOT edgeR TMM",
+    "r_unavailable": "no R interpreter exists in this session, so A1's edgeR TMM and quasi-likelihood instrument cannot be reused. Reimplementing TMM and presenting it as edgeR output is refused."
+  },
+  "statistic": {
+    "primary_effect": "mean score of the 3G9 arm minus mean score of the Axum8 bleomycin arm, in log2 CPM units",
+    "also_reported": ["median difference", "each arm's range", "how many of the 4 treated mice fall inside the reference arm's range"],
+    "test": "exact two-sided Wilcoxon rank-sum over all 70 assignments, computed by complete enumeration rather than a normal approximation",
+    "instrument_check_effect": "mean score of the Axum8 bleomycin arm minus mean score of the Axum8 saline arm, same score, same batch, same antibody",
+    "instrument_check_test": "exact one-sided Wilcoxon rank-sum over all 35 assignments",
+    "yardstick": "ratio of the absolute primary effect to the absolute instrument-check effect",
+    "no_normal_approximation": true,
+    "no_multiple_testing_family_beyond": "two endpoints and one instrument check"
+  },
+  "instrument_check": {
+    "required_before_the_primary_is_read": true,
+    "requirement": "the A0 transition programme must be higher in bleomycin than in saline, one-sided p <= 0.05 at the exact test's floor of 0.0286",
+    "if_it_fails": "nothing is read and the failure is the result",
+    "not_independent_validation": "the A0 programme was discovered in mouse bleomycin alveolar repair, so a large bleomycin effect is expected by construction. This is an instrument check, not a validation of the programme."
+  },
+  "margins_declared_before_any_value_is_read": {
+    "bounded": "absolute primary effect <= 0.25 times the absolute instrument-check effect, with the two arms' ranges overlapping",
+    "rival_stays_live": "absolute primary effect >= 0.50 times the absolute instrument-check effect",
+    "inconclusive": "between 0.25 and 0.50, or if the instrument check fails, or if the two criteria for bounded disagree",
+    "why_these_numbers": "at 4 against 4 nothing finer is readable, and two thresholds with an explicit inconclusive zone are preferred to a single cut that would force a binary the design cannot support"
+  },
+  "declared_reading": {
+    "asymmetric_on_purpose": true,
+    "a_small_effect_bounds_rival_2": "if blocking the integrin does not move the epithelium's own programme on the scale that injury moves it, then a grossly restructured epithelium is a weak explanation for the organoid fibroblast effect",
+    "a_large_effect_does_not_establish_rival_2": "an epithelial change under integrin blockade is equally consistent with the mechanism A15 proposes, since less activated TGF-beta would itself change the epithelium. Only the null direction is informative.",
+    "neither_outcome_touches_a15": "this deposit cannot measure activated TGF-beta, cannot separate a fibroblast compartment, and has no ligand arm"
+  },
+  "limits_declared_before_any_value_is_read": [
+    "Four mice against four. Precise absence is unavailable and no bound will be reported as absence.",
+    "The exact test can reach nominal significance only under complete separation of the arms.",
+    "A systemic blocking antibody at day 7 in a mouse lung is not a two-week organoid co-culture of mouse epithelium with human fibroblasts. A bound here transfers to the organoid system as a plausibility argument, not as a fact.",
+    "Antibody blockade is partial and dose-dependent, so this is not a genetic null of the integrin.",
+    "The epithelial compartment is a RiboTag immunoprecipitation, measuring ribosome-associated RNA rather than total RNA, and its purity is not verified in the deposit.",
+    "An epithelial compartment's subtype composition can itself shift under injury, so a programme score cannot separate a state change from a composition change. This is A10's caution, inherited in A10's words.",
+    "The source paper likely reports a 3G9 epithelial contrast, so agreement is reproduction and not a finding of this repository.",
+    "No claim row is added and no register grade changes."
+  ],
+  "prohibitions": [
+    "no substitution of the endpoint after any value is read, including after the source paper's results are read",
+    "no reading of this result as evidence for or against the A15 hypothesis",
+    "no whole-lung score reported as a fibroblast compartment readout",
+    "no pooling of Axum8 with Vehicle as a bleomycin control arm",
+    "no normal approximation where an exact enumeration is available",
+    "no claim row, and no re-grading of any existing row",
+    "no TMM normalisation presented as edgeR output",
+    "no therapeutic reading in either direction"
+  ],
+  "sensitivities_required": {
+    "normalisation": "median-of-ratios size factors computed in this repository, fully specified, labelled as this repository's implementation and not as DESeq2 output",
+    "depth": "the primary score regressed on log library total across the eight primary-arm mice, reported whatever it shows",
+    "leave_one_mouse_out": "the primary effect recomputed with each of the eight mice dropped in turn, reported as a table",
+    "secondary_endpoint": "the whole reading repeated on the 373-gene injury residual module"
+  },
+  "endpoint_scored": false,
+  "claim_rows_added": 0
+}

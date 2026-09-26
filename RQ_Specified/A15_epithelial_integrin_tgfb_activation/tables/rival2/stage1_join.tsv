@@ -1,0 +1,49 @@
+counts_column	gsm	source_title	mouse	sex	batch	exposure	treatment	treatment_type	compartment	join_rule
+Bleo_KIRA8_020_E	GSM5732440	BleomycinKIRA8_epithelial_020	20	F	S061	Bleomycin	KIRA8	KIRA8	Epithelium	zero-padded
+Bleo_KIRA8_032_E	GSM5732442	BleomycinKIRA8_epithelial_032	32	F	S061	Bleomycin	KIRA8	KIRA8	Epithelium	zero-padded
+Bleo_KIRA8_041_E	GSM5732444	BleomycinKIRA8_epithelial_041	41	M	S061	Bleomycin	KIRA8	KIRA8	Epithelium	zero-padded
+Bleo_KIRA8_020_I	GSM5732441	BleomycinKIRA8_wholelung_020	20	F	S061	Bleomycin	KIRA8	KIRA8	Whole Lung	zero-padded
+Bleo_KIRA8_032_I	GSM5732443	BleomycinKIRA8_wholelung_032	32	F	S061	Bleomycin	KIRA8	KIRA8	Whole Lung	zero-padded
+Bleo_KIRA8_041_I	GSM5732445	BleomycinKIRA8_wholelung_041	41	M	S061	Bleomycin	KIRA8	KIRA8	Whole Lung	zero-padded
+Bleo_017_E	GSM5732434	Bleomycin_epithelial_017	17	F	S061	Bleomycin	Vehicle	Control	Epithelium	zero-padded
+Bleo_031_E	GSM5732436	Bleomycin_epithelial_031	31	F	S061	Bleomycin	Vehicle	Control	Epithelium	zero-padded
+Bleo_045_E	GSM5732438	Bleomycin_epithelial_045	45	M	S061	Bleomycin	Vehicle	Control	Epithelium	zero-padded
+Bleo_017_I	GSM5732435	Bleomycin_wholelung_017	17	F	S061	Bleomycin	Vehicle	Control	Whole Lung	zero-padded
+Bleo_031_I	GSM5732437	Bleomycin_wholelung_031	31	F	S061	Bleomycin	Vehicle	Control	Whole Lung	zero-padded
+Bleo_045_I	GSM5732439	Bleomycin_wholelung_045	45	M	S061	Bleomycin	Vehicle	Control	Whole Lung	zero-padded
+Bleo_KIRA8_E_154	GSM5732450	BleomycinKIRA8_epithelial_154	154	M	S135	Bleomycin	KIRA8	KIRA8	Epithelium	exact
+Bleo_KIRA8_E_155	GSM5732451	BleomycinKIRA8_epithelial_155	155	M	S135	Bleomycin	KIRA8	KIRA8	Epithelium	exact
+Bleo_KIRA8_I_154	GSM5732452	BleomycinKIRA8_wholelung_154	154	M	S135	Bleomycin	KIRA8	KIRA8	Whole Lung	exact
+Bleo_KIRA8_I_155	GSM5732453	BleomycinKIRA8_wholelung_155	155	M	S135	Bleomycin	KIRA8	KIRA8	Whole Lung	exact
+Sal_E_146	GSM5732454	Saline_epithelial_146	146	F	S135	Saline	Vehicle	Control	Epithelium	exact
+Bleo_E_148	GSM5732446	Bleomycin_epithelial_148	148	M	S135	Bleomycin	Vehicle	Control	Epithelium	exact
+Bleo_E_149	GSM5732447	Bleomycin_epithelial_149	149	M	S135	Bleomycin	Vehicle	Control	Epithelium	exact
+Sal_E_152	GSM5732455	Saline_epithelial_152	152	M	S135	Saline	Vehicle	Control	Epithelium	exact
+Sal_E_153	GSM5732456	Saline_epithelial_153	153	M	S135	Saline	Vehicle	Control	Epithelium	exact
+Sal_I_146	GSM5732457	Saline_wholelung_146	146	F	S135	Saline	Vehicle	Control	Whole Lung	exact
+Bleo_I_148	GSM5732448	Bleomycin_wholelung_148	148	M	S135	Bleomycin	Vehicle	Control	Whole Lung	exact
+Bleo_I_149	GSM5732449	Bleomycin_wholelung_149	149	M	S135	Bleomycin	Vehicle	Control	Whole Lung	exact
+Sal_I_152	GSM5732458	Saline_wholelung_152	152	M	S135	Saline	Vehicle	Control	Whole Lung	exact
+Sal_I_153	GSM5732459	Saline_wholelung_153	153	M	S135	Saline	Vehicle	Control	Whole Lung	exact
+Bleo_3G9_E_218	GSM5732465	Bleomycin3G9_epithelial_218	218	M	S151	Bleomycin	3G9	3G9	Epithelium	exact
+Bleo_3G9_E_219	GSM5732472	Bleomycin3G9_epithelial_219	219	M	S151	Bleomycin	3G9	3G9	Epithelium	exact
+Bleo_3G9_E_226R	GSM5732463	Bleomycin3G9_epithelial_226R	226R	F	S151	Bleomycin	3G9	3G9	Epithelium	exact
+Bleo_3G9_E_228	GSM5732467	Bleomycin3G9_epithelial_228	228	M	S151	Bleomycin	3G9	3G9	Epithelium	exact
+Bleo_3G9_I_218FT	GSM5732476	Bleomycin3G9_wholelung_218	218	M	S151	Bleomycin	3G9	3G9	Whole Lung	FT suffix
+Bleo_3G9_I_219	GSM5732479	Bleomycin3G9_wholelung_219	219	M	S151	Bleomycin	3G9	3G9	Whole Lung	exact
+Bleo_3G9_I_226R	GSM5732478	Bleomycin3G9_wholelung_226R	226R	F	S151	Bleomycin	3G9	3G9	Whole Lung	exact
+Bleo_3G9_I_228	GSM5732481	Bleomycin3G9_wholelung_228	228	M	S151	Bleomycin	3G9	3G9	Whole Lung	exact
+Bleo_E_204	GSM5732480	Bleomycin_epithelial_204	204	M	S151	Bleomycin	Axum8	Control	Epithelium	exact
+Bleo_E_206	GSM5732462	Bleomycin_epithelial_206	206	M	S151	Bleomycin	Axum8	Control	Epithelium	exact
+Saline_E_207	GSM5732473	Saline_epithelial_207	207	M	S151	Saline	Axum8	Control	Epithelium	exact
+Bleo_E_208R	GSM5732461	Bleomycin_epithelial_208R	208R	M	S151	Bleomycin	Axum8	Control	Epithelium	exact
+Saline_E_221	GSM5732477	Saline_epithelial_221	221	M	S151	Saline	Axum8	Control	Epithelium	exact
+Bleo_E_225	GSM5732468	Bleomycin_epithelial_225	225	F	S151	Bleomycin	Axum8	Control	Epithelium	exact
+Saline_E_230	GSM5732471	Saline_epithelial_230	230	F	S151	Saline	Axum8	Control	Epithelium	exact
+Bleo_I_204	GSM5732475	Bleomycin_wholelung_204	204	M	S151	Bleomycin	Axum8	Control	Whole Lung	exact
+Bleo_I_206	GSM5732474	Bleomycin_wholelung_206	206	M	S151	Bleomycin	Axum8	Control	Whole Lung	exact
+Saline_I_207	GSM5732469	Saline_wholelung_207	207	M	S151	Saline	Axum8	Control	Whole Lung	exact
+Bleo_I_208R	GSM5732460	Bleomycin_wholelung_208R	208R	M	S151	Bleomycin	Axum8	Control	Whole Lung	exact
+Saline_I_221	GSM5732464	Saline_wholelung_221	221	M	S151	Saline	Axum8	Control	Whole Lung	exact
+Bleo_I_225	GSM5732466	Bleomycin_wholelung_225	225	F	S151	Bleomycin	Axum8	Control	Whole Lung	exact
+Saline_I_230	GSM5732470	Saline_wholelung_230	230	F	S151	Saline	Axum8	Control	Whole Lung	exact

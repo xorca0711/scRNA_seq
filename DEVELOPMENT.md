@@ -1181,3 +1181,39 @@ measured decrease against one unbounded null. The
 records every query with its hit count and states that keyword search over indexed
 metadata cannot prove absence. The owner is being asked for three decisions: the
 registration itself, the scope wording, and whether to spend a run on the side-branch.
+
+
+## A15 rival-2 side-branch executed in GSE190821, 27 September 2026
+
+The owner authorized the third of those decisions: run the GSE190821 epithelial arm to bound
+rival 2. It ran, and it took **three freezes** to get a design that could be executed
+honestly. **Two were withdrawn on adversarial review with nothing scored**, which is the
+second and third time this repository has withdrawn a freeze before a value was read. The
+question A15 itself still has no result of its own, no claim row was added, and the register
+still ends at C168.
+
+| Date | Item | Proposed by | Decided by | Decision | Reason |
+|---|---|---|---|---|---|
+| 2026-09-27 | Run the side-branch | Assistant proposal, in the A15 rationale | **Owner instruction** | Executed under a frozen specification, in four stages, with the freeze committed before any value was read | It is the only runnable item in A15, and it bounds a rival rather than the hypothesis |
+| 2026-09-27 | Endpoint, third attempt | Assistant, after two withdrawals | Pending owner retain or reject | A frozen epithelial identity and transitional panel, plus an endpoint-free omnibus divergence test | An omnibus question cannot be defeated by a curated set's construct validity, which is what defeated the first two |
+| 2026-09-27 | Engagement control | Assistant, after the review found the paired input | Pending owner retain or reject | A frozen whole-lung collagen programme on the paired input, with its direction taken from Horan 2008 | A15 gate condition 1 requires a recorded validation that the perturbation took effect, and the first freeze had dropped it |
+| 2026-09-27 | Rival 2 restated | Assistant | Pending owner retain or reject | The rival is an indirect, epithelium-mediated route, not a TGF-beta-independent one | Both papers cited for the original wording attribute their phenotypes to loss of TGF-beta activation, in their own titles |
+| 2026-09-27 | The vacuous A0 rule | Assistant | Assistant, fail-closed | The frozen rule is reported as written and its vacuous case recorded, rather than reinterpreted after the fact | Changing a decision rule after seeing that it misfires on the observed data is the thing pre-registration exists to prevent |
+| 2026-09-27 | Whether to execute at all | Assistant, after the second review | Assistant, under the owner's instruction to proceed | Executed, with the freeze stating before the run that the likely outcome is the uninformative one | A design-limited result reported with its limits is a result; the branch names were rewritten so none of them can overclaim |
+
+| Date | Rejected or reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-27 | **The first freeze, withdrawn** | Its primary endpoint could not carry rival 2's axis by construction: A0's own discovery configuration excludes the surfactant and identity genes by name, and its overlap with A1's frozen epithelial panel for this deposit is exactly zero. It also declared only a null informative while establishing no engagement check, and its decision rule was a ratio whose numerator and denominator share an arm | Three adversarial lenses, each returning three fatal findings; every factual claim verified against the tracked files before acceptance |
+| 2026-09-27 | **The second freeze, withdrawn** | Its omnibus statistic rejects with probability 1.000 under a pure dispersion change with no gene's mean moving, its Hodges-Lehmann interval covered 0.9418 against the 0.9714 it reported, it declared no direction for the contrast it tested, it put `Col1a1` in both the engagement control and the purity downgrade rule, and its positive branch waived the engagement control | A second three-lens red team; both quantitative claims reproduced by simulation here before being accepted |
+| 2026-09-27 | The review's recommended metalloproteinase and surfactant panel | Morris 2003 and Koth 2007 attribute their phenotypes to loss of TGF-beta activation, so such a panel would measure TGF-beta-mediated consequences and would not separate the rival from the mechanism | Assistant, from the primary literature, against the reviewing lens |
+| 2026-09-27 | Two factual statements in the committed stage 1 audit | The deposit does state genotype, bleomycin dose and the 3G9 schedule, and the paired whole-lung input makes immunoprecipitation purity computable rather than unverifiable. Both were corrected in an erratum rather than by editing the committed record | Design lens; verified against the deposit's own series summary |
+| 2026-09-27 | The first execution attempt's `purity breaches: none` | The purity markers had never been mapped, because the Ensembl lookup was built at stage 1 and never extended to the panels the third freeze declares, so vacuous silence was being reported as a negative result. Script 01 now requests every declared symbol, script 02 fails closed when a declared panel does not map, and an uncomputed covariate forces inconclusive | Assistant, from the run record's own `mapped: 0` |
+| 2026-09-27 | Two verification failures on score reproduction | The verifier standardised across eleven libraries while the third freeze scopes each composite to the libraries entering its own contrast, so it was comparing two different estimators. The verifier was wrong, not the analysis; no result changed | Independent recomputation through numpy and scipy |
+| 2026-09-27 | Calling a positive result "rival 2 stays live" | Both the A15 mechanism and rival 2 predict an epithelial change, so a positive discriminates neither. The branch is renamed so the name cannot overclaim | Coherence lens; adopted |
+| 2026-09-27 | A multi-agent workflow for the deterministic work | The download, join, audit, scoring, exact tests and verification are all scripted. Agents were spent on two things a script cannot judge: the adversarial review of each freeze before any value was read, three lenses each | Assistant, under the owner's cost rule, with the owner's later instruction to parallelise |
+
+The [result](RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/RIVAL2_RESULTS.md)
+records every number, its independent verification at 39 of 39 checks, and the sentence the
+artefacts would support if the owner wants a claim row. The two withdrawn freezes stay
+unedited so their bytes keep verifying, and both withdrawals are written up with the
+simulations that justified them. Scientific acceptance is not inferred from execution.
