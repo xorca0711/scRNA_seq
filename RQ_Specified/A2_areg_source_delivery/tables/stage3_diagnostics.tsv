@@ -1,0 +1,9 @@
+unit	endpoint	eligible_wells	spearman_endpoint_vs_log_depth	spearman_endpoint_vs_epithelial_fraction
+3-1	activation_score	32	-0.0488	0.0689
+3-1	hallmark_tgf_beta_score	32	0.7023	0.2533
+3-2	activation_score	48	0.0426	0.1342
+3-2	hallmark_tgf_beta_score	48	0.2118	0.1393
+3-3	activation_score	31	-0.0294	-0.0557
+3-3	hallmark_tgf_beta_score	31	0.5363	0.1934
+3-4	activation_score	57	-0.1089	0.0033
+3-4	hallmark_tgf_beta_score	57	0.3321	-0.0997
