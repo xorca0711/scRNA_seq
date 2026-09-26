@@ -1,0 +1,43 @@
+{
+  "schema": "a10-followup-models/v1",
+  "declared": "2026-09-26",
+  "status_at_declaration": "not_fitted",
+  "prior_evidence": "Stage 3 and stage 4 results plus phase A diagnostics are already known; this is a same-screen descriptive follow-up, not independent confirmation.",
+  "input_contract": "Reuse the original hashed Hallmark NPZ and species-native GMTs; reproduce the four primary stage-4 grid cells before reporting new fits. Never overwrite historical outputs.",
+  "eligibility": "Original 885 wells with positive deposited day-7/day-14 mean-area values and positive epithelial library total; fixed four target-removal settings.",
+  "programme_blocks": {
+    "proliferation": ["HALLMARK_E2F_TARGETS", "HALLMARK_G2M_CHECKPOINT"],
+    "remaining_growth": ["HALLMARK_MYC_TARGETS_V1", "HALLMARK_APOPTOSIS", "HALLMARK_P53_PATHWAY", "HALLMARK_MTORC1_SIGNALING"]
+  },
+  "block_interpretation": "Operational decomposition of the existing six mouse growth scores; remaining_growth is not biologically non-proliferative. Correlated blocks and overlapping genes preclude attribution to isolated mechanisms.",
+  "baseline_features": ["day7 deposited area statistic", "epithelial read fraction", "log2(epithelial library total + 1)"],
+  "outcome_scales": {
+    "inherited_log2": "Primary: log2(deposited day14 area + 1), with log2(deposited day7 area + 1).",
+    "deposited_numeric": "Prespecified sensitivity: untransformed deposited day14 and day7 values; no physical units or unlogged area interpretation is inferred."
+  },
+  "models": ["baseline", "baseline+proliferation", "baseline+remaining_growth", "baseline+proliferation+remaining_growth"],
+  "comparisons": [
+    {"name": "proliferation_over_baseline", "reference": "baseline", "candidate": "baseline+proliferation"},
+    {"name": "remaining_over_proliferation", "reference": "baseline+proliferation", "candidate": "baseline+proliferation+remaining_growth"},
+    {"name": "proliferation_over_remaining", "reference": "baseline+remaining_growth", "candidate": "baseline+proliferation+remaining_growth"},
+    {"name": "full_growth_over_baseline", "reference": "baseline", "candidate": "baseline+proliferation+remaining_growth"}
+  ],
+  "evaluation": {
+    "within_group": "Leave one deposited plate-replicate group out. Centre predictors and outcome within each group, including the held-out group's observed mean. This deliberately retains the original within-observed-group estimand; it is not unseen-group prediction.",
+    "plate_shift": "Leave one entire plate out. No plate or target indicators and no outcome centring. All model centring/scaling parameters are learned on training plates only; held-out outcomes enter only error evaluation. This is joint plate/target-distribution transport, not prospective forecasting because RNA is concurrent.",
+    "fit": "Ordinary least squares with intercept, training-only feature standardization, drop training-zero-variance columns; no tuning, outcome-selected features or penalization.",
+    "metrics": "Record squared errors for each well and fold, mean squared error, and relative error reduction 1 - SSE_candidate/SSE_reference. Also report equal-fold mean relative reductions to expose well/variance weighting."
+  },
+  "sensitivity_settings": ["primary", "drop_TIGIT", "drop_TDTOMATO", "drop_both"],
+  "decisions": {
+    "descriptive_margin_relative_error_reduction": 0.02,
+    "margin_scope": "A pragmatic 2% reduction of the nominated baseline's held-out squared error on the same endpoint scale, not the old 0.02 delta-R2 threshold and not a biological importance margin.",
+    "within_group_margin_met": "For a comparison, pooled relative error reduction >=0.02 in both primary and drop_both on both predeclared outcome scales. Report fold signs and the other two removals even if this rule passes.",
+    "consistent_plate_shift_gain": "The within-group margin rule must also pass in the plate_shift evaluation, and every held-out plate must have a positive comparison increment in primary and drop_both on both outcome scales.",
+    "failure_scope": "Failure is not precise absence of a biological role. No new block is added to rescue it; no per-gene mechanism is inferred.",
+    "question": "If remaining_over_proliferation clears only the within-group rule, the signal contains information beyond the nominated proliferation block within groups but has not demonstrated consistent joint plate/target transport."
+  },
+  "secondary_disposition": "No new fibroblast or additional pathway expansion. Earlier secondary outputs remain descriptive full-baseline comparisons; no retrospective BH inference. All new model baselines are fixed explicitly rather than selected by an unimplemented winner rule.",
+  "uncertainty": "No p/q values or biological confidence intervals because the independent preparation mapping is unresolved. Four plates are too few to establish generality; report all fold errors and signs instead.",
+  "stops": ["input hash mismatch", "failure to reproduce original four-cell grid within 0.00005 rounding tolerance", "non-finite inputs or failed library join", "new outputs would overwrite existing files"]
+}
