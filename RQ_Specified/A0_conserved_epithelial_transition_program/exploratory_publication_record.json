@@ -1,0 +1,37 @@
+{
+  "published_at_utc": "2026-09-26T11:53:47.469258+00:00",
+  "base_commit": "f1b2c4f5405969d7a1a0ef41cd79002707757141",
+  "relationship": "Separate repair-first exploratory run with overlapping source data; not independent replication of pilot_v1.",
+  "original_execution_record_sha256": "2bdf3eda5da96bfae773a2a6ce04744357e4d5003d5b6fdd2ab7736f659d8d7f",
+  "original_execution_validation": "PASS; numerical results reused after verifying original artifact hashes",
+  "original_config_sha256": "085909f6a20582528962f6986f3e8e8502b0a9aab67a34a6d544822fc3c8ae82",
+  "original_program_sha256": "64e16b5b0ed8a8610b06401c4a451b3fe18dd047f1f8458072c60808c24f460e",
+  "original_artifacts": 107,
+  "archived_original_artifacts": {
+    "DATASET_CANDIDATES.md": "e9786bac0afa5b7a0d2705c67fc6c8d0cbd8dc5abef6c4694de09c427e147743",
+    "decisions.json": "a416459ef565f80f16e36e0956393286e582c371fe4d43f00c021b08f4a6e49e",
+    "EXPLORATORY_PLAN.md": "584d56f0d3a21bf81e6efacf03ae927ff71eea504bbc8b42de44555ea8ba9ac1",
+    "PLAN.md": "f0c643c8ec2d2c900b8407bafa3114cf33a31e13fc59f34e74f6a9a996e7eb06",
+    "readiness.json": "ce9677788d015b33f901d840c7c392ce1ac003a390a64478007bd07541e82dc6",
+    "README.md": "9e3a65604603418800fb41275819edbb7d014e425458797a2aebc5455c384f5b",
+    "reports/EXPLORATORY_PILOT_REPORT.md": "4bb6bd648939a2ef07d17b33ec84efaddc40653a307367efb40435ac7cf56d53",
+    "reports/PILOT_REPORT.md": "964a6785fbc3824abdc9f7562ccd1c37356b170534d4a449e1a7691dae1c7a8f",
+    "REPRODUCING.md": "8a4ba424c8988a971f690e95c5f4f613778fd79da883852144cd412c17069a2b",
+    "scripts/exploratory_common.py": "73260dc1dafcd865b60c8efd1adf7e654bb7471bbc0b93120e9ac4374e9ae5c6",
+    "scripts/exploratory_freeze.py": "7c4971f38254f71cbf5e1ce67118baf3803db17e7bcd130a7845fc7528ef3db4",
+    "scripts/feasibility_report.md.in": "4fda5c8e14c82c3a8859d2e9cd33d4caed1547239e9aebb3fc4571955de8dd80",
+    "scripts/verify_a0.py": "93b28e5e8e88616227b46631bf27f14a72a0d21e66a739b45428b7fceb7f36de",
+    "scripts/verify_exploratory.py": "99adf40c189ef2201db0c78ea615c56f50e2a74c644da9c45426e9b83888dd91",
+    "scripts/write_exploratory_report.py": "9154b2d28c8e8b2bb22198ef345dfffc1cc20675a87be4b3ddfd5ac4acb24340",
+    "scripts/write_feasibility_report.py": "0762d7cff199f120f74f1d8bb26a6afb20a5dc818ebc7b008dd1b7e3d51afe6f"
+  },
+  "archive": "history/exploratory_execution_artifacts.zip",
+  "archive_sha256": "cdcc83f3c75cad82c122e9835b0a94c11b252ef9851d5b68fd788e5f0e7f9e6f",
+  "publication_changes": [
+    "Added context separating this run from pilot_v1",
+    "Namespaced exploratory status and decision outputs",
+    "Resolved frozen pre-migration source paths without changing configuration bytes",
+    "Added portable artifact and arithmetic checks"
+  ],
+  "analytical_estimator_or_result_changes": false
+}

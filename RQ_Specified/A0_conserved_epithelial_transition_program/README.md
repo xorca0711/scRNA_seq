@@ -45,3 +45,16 @@ preserves the original bytes of updated entry points. The
 [continuation plan](CONTINUATION_PLAN.md) records the subsequent input recovery.
 The original [plan](PLAN.md) and [candidate list](DATASET_CANDIDATES.md) remain
 available with repaired links to the canonical `Research Article/` directory.
+
+## Separate repair-first exploratory analysis
+
+This is a separate repair-first exploratory run, executed from the earlier
+checkout and published beside the already merged [pilot_v1](reports/PILOT_V1_RESULTS.md)
+from PR #81. The source data overlap; these are not independent replications.
+Unlike pilot_v1's two-context discovery and three-mouse intestinal branch, this
+run discovers only in repair, describes mouse developmental SCT scores, and tests
+the proximal intestinal branch with two qualifying mice. Its program, scoring,
+controls and stage decisions are separate; it does not reopen pilot_v1's pruned P4.
+The earlier replication gaps describe this run's chosen cohorts, not all A0 work.
+
+Read its [report](reports/EXPLORATORY_PILOT_REPORT.md), [stage decisions](stage_decisions.json), [status](exploratory_readiness.json) and [reproduction instructions](EXPLORATORY_REPRODUCING.md). The full 50-gene program remains near zero in the selected intestinal comparison; an initially positive 31-gene control variant weakens after depth matching. The decision is to narrow the interpretation and stop broader expansion of this signature.

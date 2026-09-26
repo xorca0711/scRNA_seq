@@ -1,0 +1,82 @@
+unit,state,metric,n_cells,spearman_rho
+muc9268,AT1,measured_umi,42,0.21798144339435097
+muc9268,AT1,measured_genes,42,0.26369530070377434
+muc9268,AT1,measured_mito_fraction,42,-0.18094157685762907
+muc9268,AT2,measured_umi,189,0.23319403166073457
+muc9268,AT2,measured_genes,189,0.2589131564187766
+muc9268,AT2,measured_mito_fraction,189,0.008603923568007777
+muc9268,Krt8+ ADI,measured_umi,93,0.63103120279455
+muc9268,Krt8+ ADI,measured_genes,93,0.61960146524057
+muc9268,Krt8+ ADI,measured_mito_fraction,93,-0.01149743555285925
+muc9276,AT1,measured_umi,60,0.2222747106553215
+muc9276,AT1,measured_genes,60,0.1814038799167539
+muc9276,AT1,measured_mito_fraction,60,0.001083799977905766
+muc9276,AT2,measured_umi,269,0.13191979285675154
+muc9276,AT2,measured_genes,269,0.1591044232431049
+muc9276,AT2,measured_mito_fraction,269,0.11941113610791139
+muc9276,Krt8+ ADI,measured_umi,82,0.4694435073326738
+muc9276,Krt8+ ADI,measured_genes,82,0.4425191967114298
+muc9276,Krt8+ ADI,measured_mito_fraction,82,-0.10493244526882287
+muc9277,AT1,measured_umi,40,0.14502814258911823
+muc9277,AT1,measured_genes,40,0.1281485999814955
+muc9277,AT1,measured_mito_fraction,40,-0.22224310283682028
+muc9277,AT2,measured_umi,45,0.2199090853971842
+muc9277,AT2,measured_genes,45,0.3021080368906456
+muc9277,AT2,measured_mito_fraction,45,0.0804927241774923
+muc9277,Krt8+ ADI,measured_umi,98,0.4374234928172142
+muc9277,Krt8+ ADI,measured_genes,98,0.43910665103412083
+muc9277,Krt8+ ADI,measured_mito_fraction,98,-0.05025080532860234
+muc9280,AT1,measured_umi,50,0.1201920768307323
+muc9280,AT1,measured_genes,50,0.1361922831108054
+muc9280,AT1,measured_mito_fraction,50,-0.035107298013906496
+muc9280,AT2,measured_umi,380,0.16715438241361322
+muc9280,AT2,measured_genes,380,0.15998154867076644
+muc9280,AT2,measured_mito_fraction,380,-0.031240109443289175
+muc9280,Krt8+ ADI,measured_umi,59,0.5616598480420807
+muc9280,Krt8+ ADI,measured_genes,59,0.484219754529515
+muc9280,Krt8+ ADI,measured_mito_fraction,59,-0.23767134938725976
+muc9283,AT1,measured_umi,40,0.10581613508442779
+muc9283,AT1,measured_genes,40,0.10038936159835372
+muc9283,AT1,measured_mito_fraction,40,-0.16153846153846155
+muc9283,AT2,measured_umi,169,0.24282551376272504
+muc9283,AT2,measured_genes,169,0.23850421285673523
+muc9283,AT2,measured_mito_fraction,169,0.07260633343750118
+muc9283,Krt8+ ADI,measured_umi,87,0.5629886817446302
+muc9283,Krt8+ ADI,measured_genes,87,0.5805948931292532
+muc9283,Krt8+ ADI,measured_mito_fraction,87,-0.06601734713722418
+muc9285,AT1,measured_umi,66,0.2837459816259642
+muc9285,AT1,measured_genes,66,0.2763141416128062
+muc9285,AT1,measured_mito_fraction,66,-0.022620704910689855
+muc9285,AT2,measured_umi,374,0.11308877350412207
+muc9285,AT2,measured_genes,374,0.12419787588966887
+muc9285,AT2,measured_mito_fraction,374,0.036299604303071435
+muc9285,Krt8+ ADI,measured_umi,84,0.5615916168554306
+muc9285,Krt8+ ADI,measured_genes,84,0.48228623562030704
+muc9285,Krt8+ ADI,measured_mito_fraction,84,0.021220514224722067
+muc9288,AT1,measured_umi,98,0.12942631626978285
+muc9288,AT1,measured_genes,98,0.19207314158350786
+muc9288,AT1,measured_mito_fraction,98,0.06860638587164332
+muc9288,AT2,measured_umi,189,-0.05707339379056477
+muc9288,AT2,measured_genes,189,-0.0014024809158659072
+muc9288,AT2,measured_mito_fraction,189,0.04300911120791512
+muc9288,Krt8+ ADI,measured_umi,116,0.5869271046264141
+muc9288,Krt8+ ADI,measured_genes,116,0.543302803458023
+muc9288,Krt8+ ADI,measured_mito_fraction,116,0.10553789632333004
+muc9294,AT1,measured_umi,62,0.045858044048511175
+muc9294,AT1,measured_genes,62,0.08169226894988665
+muc9294,AT1,measured_mito_fraction,62,-0.007106408812833586
+muc9294,AT2,measured_umi,347,0.06652549760062892
+muc9294,AT2,measured_genes,347,0.0907923517703672
+muc9294,AT2,measured_mito_fraction,347,-0.049689442197603316
+muc9294,Krt8+ ADI,measured_umi,109,0.6602399255562198
+muc9294,Krt8+ ADI,measured_genes,109,0.6374580081872046
+muc9294,Krt8+ ADI,measured_mito_fraction,109,-0.12589588613868682
+muc9296,AT1,measured_umi,70,0.330793389743821
+muc9296,AT1,measured_genes,70,0.34363626840749834
+muc9296,AT1,measured_mito_fraction,70,-0.011973428780918033
+muc9296,AT2,measured_umi,167,0.15253968703861642
+muc9296,AT2,measured_genes,167,0.20334827598040464
+muc9296,AT2,measured_mito_fraction,167,0.08704364577178439
+muc9296,Krt8+ ADI,measured_umi,78,0.6746587252042773
+muc9296,Krt8+ ADI,measured_genes,78,0.6772429233307463
+muc9296,Krt8+ ADI,measured_mito_fraction,78,-0.026793902282733196

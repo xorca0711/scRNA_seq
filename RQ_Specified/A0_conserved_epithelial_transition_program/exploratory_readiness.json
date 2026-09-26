@@ -1,0 +1,27 @@
+{
+  "current_status": "EXPLORATORY_PILOT_COMPLETE_NARROW",
+  "biological_decision": "NARROW_REPAIR_ASSOCIATED_PROGRAM; BROAD_TRANSFER_UNSUPPORTED",
+  "exploratory_pilot_complete": true,
+  "original_three_context_pilot_complete": false,
+  "full_pilot_complete": false,
+  "primary_analysis_ready": false,
+  "legacy_field_scope": "full_pilot_complete and primary_analysis_ready refer to the original PLAN.md design",
+  "expression_program_learned": true,
+  "transfer_test_performed": true,
+  "completed": [
+    "E1 repair discovery and mouse-held-out checks",
+    "E2 source specificity and technical challenges",
+    "E3 frozen descriptive developmental and intestinal transfer",
+    "E3a targeted post-transfer intestinal depth sensitivity",
+    "E4 report, figures and validation"
+  ],
+  "not_established": [
+    "universal process",
+    "causal transition regulator",
+    "robust cross-tissue conservation"
+  ],
+  "remaining_original_design_requirements": "feasibility_readiness.json",
+  "current_report": "reports/EXPLORATORY_PILOT_REPORT.md",
+  "required_work_remaining_in_authorized_exploratory_scope": [],
+  "future_investment": "Do not broaden this signature analysis now. A separate bounded independent normal-transition validation could revisit weaker shared components."
+}

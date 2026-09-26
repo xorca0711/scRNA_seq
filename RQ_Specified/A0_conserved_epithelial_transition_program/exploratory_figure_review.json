@@ -1,0 +1,21 @@
+{
+  "reviewed_at_utc": "2026-09-26T11:45:42.661738+00:00",
+  "method": "Rendered PNGs inspected with view_image: labels, legends, point qualification, zero lines, count annotations and layout checked.",
+  "figures": [
+    {
+      "path": "figures/exploratory/repair_discovery.png",
+      "sha256": "6134fb59328d6c879988f35abdeb80506dd3c3dd05f3a44ede174406ca542d8e",
+      "status": "visually_checked"
+    },
+    {
+      "path": "figures/exploratory/repair_specificity.png",
+      "sha256": "e9c684bfd5c8302d86c69e1545fcb803de33a592428f7e27821839fbbdefe80a",
+      "status": "visually_checked"
+    },
+    {
+      "path": "figures/exploratory/frozen_transfer.png",
+      "sha256": "5a9bcb6341db3d9f483067d9d21ff29635f482e54748be4c6176f75cc8a905c7",
+      "status": "visually_checked"
+    }
+  ]
+}

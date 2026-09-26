@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "completed_at_utc": "2026-09-26T11:46:07.879340+00:00",
+  "scope": "amended exploratory pilot; not original confirmatory design",
+  "frozen_config_and_program_hashes_match": true,
+  "expression_sources_verified": 74,
+  "additional_config_source_hashes_verified": 8,
+  "rank_tie_scaling_sparse_overlap_and_missing_feature_fixtures": "PASS",
+  "full_gene_selection_reproduced": true,
+  "representative_heldout_fold_reproduced_and_perturbation_invariant": true,
+  "saved_repair_and_transfer_effects_reconciled": true,
+  "transfer_checks": [
+    {
+      "dataset": "intestine",
+      "qualified_units": 2,
+      "independent_score_reference_cells": 12,
+      "effect_rows_reconciled": 80,
+      "cell_counts_match_pre_expression_inventory": true
+    },
+    {
+      "dataset": "development",
+      "qualified_units": 1,
+      "independent_score_reference_cells": 12,
+      "effect_rows_reconciled": 180,
+      "cell_counts_match_pre_expression_inventory": true
+    }
+  ],
+  "matching_draw_summaries_reconciled": true,
+  "figures_visually_checked": 3,
+  "python_scripts_parsed": 19,
+  "local_markdown_links_checked": 82,
+  "ingestion_checks_reused": "Original ingestion checked matrix/annotation alignment, all intestinal raw integer counts, all repair nonzeros and every developmental chunk feature/row mapping; unchanged input hashes verified here."
+}

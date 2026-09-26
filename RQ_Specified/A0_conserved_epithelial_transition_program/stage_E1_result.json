@@ -1,0 +1,30 @@
+{
+  "stage": "E1",
+  "input_matrix_shape": [
+    32559,
+    24051
+  ],
+  "analyzed_mice": 9,
+  "cells_in_selected_mouse_libraries": 9189,
+  "eligible_genes": 886,
+  "program_genes": 50,
+  "heldout_results": {
+    "AT2": {
+      "positive_mice": 9,
+      "median_difference": 0.0793723555127227,
+      "median_standardized_difference": 3.5383314679140683
+    },
+    "AT1": {
+      "positive_mice": 9,
+      "median_difference": 0.06237390231920259,
+      "median_standardized_difference": 2.7283335341101638
+    }
+  },
+  "checkpoint_passed": true,
+  "next_stage_recommended": "E2 specificity",
+  "limitations": [
+    "Author cell labels reused; internal validation is not independent state validation",
+    "Repair-associated candidate, not a common two-context program",
+    "No causal or universal inference"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "stage": "E2",
+  "generic_overlap_genes": 19,
+  "non_generic_candidate_genes": 31,
+  "depth_matching": {
+    "AT1": {
+      "mice_with_overlap": 9,
+      "positive_mice": 9,
+      "median_difference": 0.05743054162487471,
+      "qualified_matched_mice": 9,
+      "minimum_matched_cells_per_state": 30
+    },
+    "AT2": {
+      "mice_with_overlap": 9,
+      "positive_mice": 9,
+      "median_difference": 0.06293655967903722,
+      "qualified_matched_mice": 9,
+      "minimum_matched_cells_per_state": 30
+    }
+  },
+  "matched_random_sets": {
+    "AT1": {
+      "candidate_median_difference": 0.05917906269829909,
+      "random_median_difference": 0.0016533411495217587,
+      "fraction_random_at_least_candidate": 0.0
+    },
+    "AT2": {
+      "candidate_median_difference": 0.07119266828583404,
+      "random_median_difference": 0.012306084586353183,
+      "fraction_random_at_least_candidate": 0.0
+    }
+  },
+  "mixture_check": {
+    "positive_mice_against_all_three_mixture_weights": 9,
+    "median_worst_intermediate_minus_mixture": 0.05033272368124786
+  },
+  "checkpoint_passed": true,
+  "next_stage_recommended": "E3 descriptive transfer",
+  "limitations": [
+    "Matched random sets use training-context data; tail fractions are not inferential p-values",
+    "Control membership overlap is incomplete knowledge, not a clean separation of stress biology",
+    "Depth matching and low-cycle restriction may reduce cell counts below the original floor",
+    "Synthetic endpoint mixtures do not exhaust real doublets or ambient RNA",
+    "No independent cell lineage validation or overparameterized donor-adjusted model"
+  ]
+}

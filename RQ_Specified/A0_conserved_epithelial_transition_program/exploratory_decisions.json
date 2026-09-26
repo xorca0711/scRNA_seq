@@ -1,0 +1,137 @@
+{
+  "project": "A0 conserved epithelial transition program",
+  "date": "2026-09-25",
+  "current_stage": "E4_exploratory_complete_narrow",
+  "primary_cohorts_frozen": false,
+  "program_scoring_performed": true,
+  "decisions": [
+    {
+      "id": "A0-001",
+      "stage": "P0",
+      "decision": "Start with source annotations and metadata only; retain the 30-cell and three-independent-unit defaults.",
+      "reason": "Eligibility must not depend on a candidate gene-program score.",
+      "prior_exposure": "Existing lung studies and ES1 results already inspected; no A0 expression program learned."
+    },
+    {
+      "id": "A0-002",
+      "stage": "P0",
+      "decision": "Do not use the local GSE262927 author-defined Alveolar_transitional cohort as primary discovery at the current floor.",
+      "reason": "Only one annotated animal has at least 30 AT2, Alveolar_transitional and AT1 cells. AT1_AT2 is reported separately, not merged to improve coverage.",
+      "evidence": "tables/d1_sample_coverage.csv"
+    },
+    {
+      "id": "A0-003",
+      "stage": "P0",
+      "decision": "Keep GSE254356 as a biological reference; replicated discovery eligibility remains unresolved.",
+      "reason": "GEO exposes two EPCAM/ICAM-enriched libraries and one EPCAM library. The paper's n=3 does not establish three independent identically sampled state comparisons. Embryonic pooling and cell-to-library annotation are unresolved.",
+      "evidence": "tables/geo_sample_metadata.csv"
+    },
+    {
+      "id": "A0-004",
+      "stage": "P0",
+      "decision": "Audit one alternative repair study and two linked developmental resources without downloading expression matrices.",
+      "reason": "Resolve concrete coverage and replication gaps in the first candidates. The core analysis remains capped at three selected settings.",
+      "candidates": [
+        "GSE141259",
+        "GSE165063 + GSE160876",
+        "GSE149563"
+      ]
+    },
+    {
+      "id": "A0-005",
+      "stage": "P0",
+      "decision": "Prioritize GSE141259 enriched epithelium for a possible D1 replacement, pending animal independence and time-design review.",
+      "reason": "Ten libraries have complete triplets at the existing floor, across multiple days. Same-day replication is at most two. A paired analysis across a biologically specified time window is a candidate design, not a frozen or executed analysis.",
+      "evidence": "tables/d1_strunz_high_resolution_coverage.csv"
+    },
+    {
+      "id": "A0-006",
+      "stage": "P0",
+      "decision": "Audit GSE92332 using the published matrix header and source-explicit mouse mappings only.",
+      "reason": "The ten batches are not ten biological replicates. Four control mice map explicitly to B3, B4, B7 and B8, including a documented typo in the B3 source title. Other batch-to-mouse relationships are not inferred.",
+      "evidence": "tables/v1_haber_verified_mouse_mapping.csv"
+    },
+    {
+      "id": "A0-007",
+      "stage": "P0",
+      "decision": "Treat Stem to immature-proximal-enterocyte to mature-proximal-enterocyte as an exploratory V1 eligibility branch only.",
+      "reason": "Only two of four mapped mice pass the state floor. State selection used author labels and coverage, not expression scores; transition evidence and full mouse mapping remain unresolved. No program test or validation claim is made.",
+      "evidence": "tables/v1_haber_verified_mouse_coverage.csv"
+    },
+    {
+      "id": "A0-008",
+      "stage": "P0",
+      "decision": "Do not freeze P1 or start P2 from the current candidate set.",
+      "reason": "The intended three-setting design lacks a fully eligible developmental cohort and a fully eligible transfer cohort. This is unresolved feasibility, not a negative biological result. The initial bounded candidate audit is complete; cohort selection is not."
+    },
+    {
+      "id": "A0-009",
+      "stage": "P0_extended",
+      "recorded_at_utc": "2026-09-25T14:00:40.995775+00:00",
+      "decision": "Repair interval comparisons are feasible without three mice on the same day.",
+      "reason": "Strunz primary methods report separate replicate mice. Nine available complete triplets fall within candidate days 10-15, excluding NC-labeled controls. The available annotation version has 32 libraries versus 36 mice in the paper. No expression outcomes were inspected and P1 remains unfrozen.",
+      "evidence": "tables/d1_strunz_proposed_window.csv"
+    },
+    {
+      "id": "A0-010",
+      "stage": "P0_extended",
+      "recorded_at_utc": "2026-09-25T14:00:40.995775+00:00",
+      "decision": "Do not use age-pooled developmental labels as replicated discovery observations.",
+      "reason": "The public Negretti viewer contains 10918 epithelial cells in 14 barcode-suffix groups. Only one group passes all floors; grouping by age would conceal the shortage. Mouse/hash IDs are omitted and suffix-to-library identities remain provisional.",
+      "evidence": "tables/d2_negretti_encoded_group_coverage.csv"
+    },
+    {
+      "id": "A0-011",
+      "stage": "P0_extended",
+      "recorded_at_utc": "2026-09-25T14:00:40.995775+00:00",
+      "decision": "Retain the intestinal mapping and coverage gap.",
+      "reason": "The supplementary table provides dataset totals, not the remaining mouse-to-batch map. Two of four verified mice pass the proposed branch. No unmapped batch is treated as an independent animal.",
+      "evidence": "tables/v1_haber_verified_mouse_coverage.csv"
+    },
+    {
+      "id": "A0-012",
+      "stage": "P0_extended",
+      "recorded_at_utc": "2026-09-25T14:00:40.995775+00:00",
+      "decision": "Audit the planned normal-skin fallback but leave eligibility unresolved.",
+      "reason": "GEO provides 1422 cells in 34 capture batches; the paper reports 19 mice. No reliable mouse-to-batch mapping was recovered. Absence of a recovered mapping is not proof it does not exist.",
+      "evidence": "tables/v1_joost_capture_batch_coverage.csv"
+    },
+    {
+      "id": "A0-013",
+      "stage": "P0_extended",
+      "recorded_at_utc": "2026-09-25T14:00:40.995775+00:00",
+      "decision": "Add explicitly illustrative capture planning, separate from expression-effect power.",
+      "reason": "Use observed pooled epithelial fractions and a binomial union bound to find the smallest retained-cell target with at least 95 percent modeled triplet capture; include a halved-intermediate-fraction scenario. No state floor was changed.",
+      "evidence": "tables/developmental_capture_planning.csv"
+    },
+    {
+      "id": "A0-014",
+      "stage": "P0_extended",
+      "recorded_at_utc": "2026-09-25T14:00:40.995775+00:00",
+      "decision": "Close the bounded feasibility audit; retain P1-P4 as blocked, not completed.",
+      "reason": "D2 and V1 have no qualifying selected cohorts. Learning from repair alone or manufacturing replication would change the scientific question. No conservation or specificity result is available. Additional eligible inputs or a future documented redesign are required.",
+      "evidence": "feasibility_readiness.json"
+    },
+    {
+      "id": "A0-015",
+      "stage": "exploratory_amendment",
+      "recorded_at_utc": "2026-09-26T11:37:28.722945+00:00",
+      "decision": "User authorized stepwise repair-first expression analysis with explicit proceed/stop reviews.",
+      "reason": "Allow an informative descriptive pilot despite unresolved replication for the original three-context design.",
+      "evidence": "EXPLORATORY_PLAN.md",
+      "scope": "Nine repair mice for discovery; development and intestine used only for frozen descriptive transfer."
+    },
+    {
+      "id": "A0-016",
+      "stage": "E1_E3a",
+      "recorded_at_utc": "2026-09-26T11:37:28.722945+00:00",
+      "decision": "Narrow rather than expand after executed discovery, specificity, transfer and targeted depth sensitivity.",
+      "reason": "Repair signal robust; broad primary transfer unsupported; control-variant intestinal lead is depth-sensitive.",
+      "evidence": "stage_decisions.json"
+    }
+  ],
+  "full_pilot_complete": false,
+  "exploratory_cohorts_frozen": true,
+  "original_primary_cohorts_frozen": false,
+  "exploratory_pilot_complete": true
+}

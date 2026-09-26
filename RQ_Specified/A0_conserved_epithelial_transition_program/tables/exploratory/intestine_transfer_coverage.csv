@@ -1,0 +1,11 @@
+dataset,module,requested_genes,present_genes,feature_coverage,reference_coverage,reference_genes_used
+intestine,candidate,50,48,0.96,1.0,997
+intestine,candidate_without_generic_controls,31,29,0.9354838709677419,1.0,999
+intestine,HALLMARK_HYPOXIA,199,165,0.8291457286432161,1.0,992
+intestine,HALLMARK_INFLAMMATORY_RESPONSE,197,154,0.7817258883248731,1.0,995
+intestine,HALLMARK_P53_PATHWAY,200,182,0.91,1.0,987
+intestine,HALLMARK_TNFA_SIGNALING_VIA_NFKB,196,174,0.8877551020408163,1.0,986
+intestine,HALLMARK_E2F_TARGETS,199,191,0.9597989949748744,1.0,988
+intestine,HALLMARK_G2M_CHECKPOINT,195,181,0.9282051282051282,1.0,988
+intestine,Immediate_early_AP1_panel,8,8,1.0,1.0,999
+intestine,ADI_published_holdout,398,391,0.9824120603015075,1.0,985
