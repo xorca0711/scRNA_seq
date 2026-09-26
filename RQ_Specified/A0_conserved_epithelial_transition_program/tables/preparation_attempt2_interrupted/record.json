@@ -1,0 +1,8 @@
+{
+  "status": "INTERRUPTED_DURING_PREPARATION",
+  "programme_effects_computed": false,
+  "config_sha256": "5e33bc9cd01bdaa4dc9bcf72cfc254130e693cde639a642197d9badf58284ed4",
+  "implementation_commit": "5e1576f",
+  "preserved_files": "processed/preparation_attempt2_interrupted",
+  "reason": "Float parsing of 8.4 GB integer text dominated runtime. Twelve-row benchmark: float64 1.114 s; validated integer parsing 0.231 s. Add equivalent integer fast path with original float fallback. No scientific criteria or selections changed."
+}

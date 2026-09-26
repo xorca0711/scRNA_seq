@@ -42,7 +42,12 @@ def dense_text(path,meta,header_has_gene,output,raw_check=None):
             check_indices=np.array([lookup[s] for s in raw_cols])
         for line in f:
             gene, values=line.rstrip('\n\r').split('\t',1)
-            v=np.fromstring(values,sep='\t',dtype=np.float64)
+            # Integer-formatted UCSC exports need not parse billions of zeros as
+            # floating point. Validate the entire row; long/non-integer tokens
+            # use the original parser so accepted numerical inputs do not change.
+            encoded=values.encode('ascii')
+            plain_integer=not encoded.translate(None,b'0123456789\t') and not re.search(rb'\d{10}',encoded)
+            v=np.fromstring(values,sep='\t',dtype=np.int64 if plain_integer else np.float64)
             assert len(v)==len(header) and np.isfinite(v).all() and (v>=0).all() and (v==np.floor(v)).all(),gene
             assert v.max()<np.iinfo(np.int32).max
             if raw_check and gene in rid:
@@ -59,8 +64,9 @@ def main():
     p.add_argument('--a5-source-root',type=Path,required=True)
     a=p.parse_args()
     cfg=json.loads((BASE/'config/pilot_v1.json').read_text())
-    if OUT.exists() or WORK.exists(): raise SystemExit('Refusing to overwrite pilot preparation')
-    OUT.mkdir(parents=True); WORK.mkdir(parents=True)
+    if WORK.exists() or any((OUT/name).exists() for name in ['preparation.json','eligibility.tsv','depth_coverage.tsv','ortholog_universe.tsv']):
+        raise SystemExit('Refusing to overwrite pilot preparation')
+    OUT.mkdir(parents=True,exist_ok=True); WORK.mkdir(parents=True)
     inputs={}; datasets={}; coverage=[]
     def bind(p):
         inputs[str(p)]=dict(bytes=p.stat().st_size,sha256=sha(p)); return p
