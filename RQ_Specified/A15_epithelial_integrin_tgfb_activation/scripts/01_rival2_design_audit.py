@@ -370,8 +370,17 @@ def main() -> int:
     shared_remodelling = list(frozen_modules["modules"]["shared_remodelling"]["genes"])
     a1_markers = list(a1_config["markers"])
 
+    # Every symbol any freeze version declares is looked up here, so a later stage can
+    # never find a declared panel silently unmapped and report a vacuous "no breach".
+    FREEZE_V3_SYMBOLS = [
+        "Col1a1", "Acta2", "Postn", "Cthrc1", "Tnc",          # engagement control
+        "Epcam", "Cdh1", "Nkx2-1",                             # epithelial enrichment
+        "Ptprc", "Pecam1", "Col3a1",                           # non-epithelial de-enrichment
+        "Lyz2", "Cd68", "Itgax", "Mrc1",                       # macrophage guard
+        "Sfn", "Hopx",                                         # declared here, no decision
+    ]
     requested = sorted(set(a0_genes) | set(injury_residual) | set(shared_remodelling)
-                       | set(a1_markers) | {PERTURBED_GENE})
+                       | set(a1_markers) | set(FREEZE_V3_SYMBOLS) | {PERTURBED_GENE})
     lookup = ensembl_symbols(requested)
     symbol_to_id = {
         symbol: record["id"]

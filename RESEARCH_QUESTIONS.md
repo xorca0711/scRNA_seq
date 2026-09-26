@@ -54,7 +54,7 @@ recovery endpoint, and population persistence does not trace the same cells.
 | [A12](#a12) | Recipient context explains responses beyond ligand RNA | Cohort/recipient heterogeneity | Conditional component model; activation unmeasured |
 | [A13](#a13) | Fibroblast programmes add information beyond macrophage IL1B | Niche heterogeneity motivates joint association | Audit complete triads; current IPF arms below joint-model floor |
 | [A14](#a14) | Exposure duration and fibroblast reception separately affect recovery | Mechanistic follow-up to the repair/persistence question | Two decisions; withdrawal and recipient-specific data needed |
-| [A15](#a15) | The epithelial input to fibroblast activation runs through integrin-mediated TGF-beta activation rather than through ligand supply | A2's unplanned lead: epithelial Itgb6 knockout lowers the frozen fibroblast activation score by -0.938 log2 CPM in three of three readable units, while the ligand arm does not move | **Proposed, pending the owner's retain or reject.** Blocked: no public deposit measures activated TGF-beta under an integrin perturbation; the decisive test is a bench design |
+| [A15](#a15) | The epithelial input to fibroblast activation runs through integrin-mediated TGF-beta activation rather than through ligand supply | A2's unplanned lead: epithelial Itgb6 knockout lowers the frozen fibroblast activation score by -0.938 log2 CPM in three of three readable units, while the ligand arm does not move | **Proposed, pending the owner's retain or reject.** Blocked: no public deposit measures activated TGF-beta under an integrin perturbation. One authorized side-branch has run and bounds a rival, not the hypothesis |
 
 A0 completed its bounded pilot: the frozen programme fails the mature intestinal
 endpoint, and its conditional specificity work is pruned. The A1 continuation,
@@ -731,9 +731,17 @@ epithelial integrin perturbation with a measurement of activated TGF-beta
 ([search report](RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/PUBLIC_DATA_SEARCH.md)).
 The nearest, GSE190821, blocks integrin beta6 in vivo with four treated against seven
 antibody-control mice but reads whole lung and epithelium only, so it fails the separated
-recipient and the activation readout, and it has no ligand arm. One bounded side-branch is
-runnable and addresses a rival rather than the hypothesis: whether integrin beta6 blockade
-moves the epithelium's own programme in that deposit. The clinical record bounds any answer
+recipient and the activation readout, and it has no ligand arm. One bounded side-branch was authorized by the owner on
+27 September 2026 and has run. In GSE190821, 3G9 anti-integrin-beta6 lowered a frozen
+whole-lung collagen and myofibroblast programme by 1.2424 standardised units with complete
+separation of four treated from four control mice, reproducing the published direction for
+this antibody, while in the same mice the epithelial immunoprecipitation showed no detectable
+difference in a frozen transitional panel (-0.3599, p 0.8857), a frozen identity panel
+(-0.2107, p 0.6857) or a 15,062-gene omnibus statistic (p 0.6571), with epithelial enrichment
+differing between arms by at most 0.294 log2 units. Under its frozen rules that is a **weak
+bound on rival 2**, not absence and not evidence about A15; the shift intervals span roughly
+plus or minus two standardised units. Two freezes were withdrawn on adversarial review before
+anything was scored. Read [the results](RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/RIVAL2_RESULTS.md). The clinical record bounds any answer
 in advance, because an anti-alphaVbeta6 antibody trial in idiopathic pulmonary fibrosis
 terminated early without benefit and with more serious adverse events
 ([Raghu 2022](https://doi.org/10.1164/rccm.202112-2824OC)), while a dual alphaVbeta6 and

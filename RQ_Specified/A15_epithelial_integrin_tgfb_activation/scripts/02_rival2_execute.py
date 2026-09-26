@@ -29,7 +29,7 @@ HERE = Path(__file__).resolve().parents[1]
 ROOT = HERE.parents[1]
 CACHE = HERE / "cache"
 OUT = HERE / "tables/rival2"
-FREEZE = HERE / "config/a15_rival2_freeze_v2.json"
+FREEZE = HERE / "config/a15_rival2_freeze_v3.json"
 COUNTS = CACHE / "GSE190821_counts.csv.gz"
 SYMBOL_MAP = CACHE / "ensembl_symbol_lookup.json"
 JOIN = OUT / "stage1_join.tsv"
@@ -112,22 +112,27 @@ def hodges_lehmann(a, b, level=0.95):
     estimate = median(differences)
     counts = null_u_counts(len(a), len(b))
     total = sum(counts)
+    # Trim k from each end, where k is the largest value whose interval still attains the
+    # level. Coverage of the k-trimmed interval is 1 - 2 P(U <= k), so k = 0 is the full
+    # range of the pairwise differences. v2 trimmed one too many and mislabelled the
+    # coverage; simulation in this repository showed that interval covered 0.9418.
     cumulative = 0
-    k = 0
+    trim = None
     attained = None
     for u, count in enumerate(counts):
         cumulative += count
-        if 1 - 2 * cumulative / total >= level:
-            k = u + 1
-            attained = round(1 - 2 * cumulative / total, 4)
+        coverage = 1 - 2 * cumulative / total
+        if coverage >= level and 2 * u < m:
+            trim, attained = u, round(coverage, 4)
         else:
             break
-    if k == 0 or 2 * k >= m:
+    if trim is None:
         return {"estimate": round(estimate, 4), "lower": round(differences[0], 4),
                 "upper": round(differences[-1], 4), "attained_coverage": None,
-                "note": "no interval narrower than the full range attains the level"}
-    return {"estimate": round(estimate, 4), "lower": round(differences[k], 4),
-            "upper": round(differences[m - 1 - k], 4), "attained_coverage": attained}
+                "note": "no interval attains the requested level at these sample sizes"}
+    return {"estimate": round(estimate, 4), "lower": round(differences[trim], 4),
+            "upper": round(differences[m - 1 - trim], 4), "attained_coverage": attained,
+            "trimmed_from_each_end": trim}
 
 
 def pearson(xs, ys):
@@ -235,6 +240,28 @@ def main() -> int:
     modules = json.loads((ROOT / "RQ_Specified/A5_A11_shared_component_contract/tables/frozen_modules.json").read_text(encoding="utf-8"))
     injury_residual = list(modules["modules"]["injury_residual"]["genes"])
 
+    # Fail closed: a declared panel that does not map would otherwise be reported as
+    # "refused" or, worse for the covariates, as "no breach", which reads as a result when
+    # nothing was computed at all.
+    declared_panels = {
+        "primary1_transitional": panels["transitional"],
+        "primary1_identity": panels["identity"],
+        "engagement_control": engagement_genes,
+        "epithelial_enrichment": epi_markers,
+        "non_epithelial_de_enrichment": non_epi_markers,
+        "macrophage_guard": macrophage,
+        "declared_here": declared_here,
+    }
+    unmapped = {name: sorted(set(g) - set(sym2id))
+                for name, g in declared_panels.items() if set(g) - set(sym2id)}
+    if unmapped:
+        print("STOP: declared panels are not present in the Ensembl symbol lookup, so any "
+              "covariate result would be vacuous rather than negative:")
+        for name, missing in unmapped.items():
+            print(f"  {name}: {missing}")
+        print("Re-run script 01 with --force so the lookup covers every declared symbol.")
+        return 1
+
     itgb6_id = sym2id.get("Itgb6")
     targeted = set()
     for genes in list(panels.values()) + [declared_here, engagement_genes, epi_markers,
@@ -298,13 +325,19 @@ def main() -> int:
 
     epi_all = [r["counts_column"] for arm in epi.values() for r in arm]
     inp_all = [r["counts_column"] for arm in inp.values() for r in arm]
+    # v3: every composite is standardised across exactly the libraries entering its own
+    # contrast, with no reference to arm labels, so the exact tests stay exact.
+    epi_contrast = [r["counts_column"] for r in epi["case"] + epi["reference"]]
+    epi_injury = [r["counts_column"] for r in epi["reference"] + epi["saline"]]
+    inp_contrast = [r["counts_column"] for r in inp["case"] + inp["reference"]]
+    inp_injury = [r["counts_column"] for r in inp["reference"] + inp["saline"]]
     results = {}
 
     # Primary 1.
     for name, genes in panels.items():
         block = {}
         for variant, std in (("standardised", True), ("unstandardised", False)):
-            scores, cov = composite(genes, epi_all, std)
+            scores, cov = composite(genes, epi_contrast, std)
             if scores is None:
                 block[variant] = {"coverage": cov, "refused": True}
                 continue
@@ -312,10 +345,12 @@ def main() -> int:
                          [scores[r["counts_column"]] for r in epi["reference"]],
                          f"primary1 {name} {variant}")
             c["coverage"] = cov
-            c["injury_context"] = contrast(
-                [scores[r["counts_column"]] for r in epi["reference"]],
-                [scores[r["counts_column"]] for r in epi["saline"]],
-                f"injury context {name} {variant}")
+            inj_ctx, _ = composite(genes, epi_injury, std)
+            if inj_ctx:
+                c["injury_context"] = contrast(
+                    [inj_ctx[r["counts_column"]] for r in epi["reference"]],
+                    [inj_ctx[r["counts_column"]] for r in epi["saline"]],
+                    f"injury context {name} {variant}")
             block[variant] = c
         results[f"primary1_{name}"] = block
 
@@ -326,11 +361,11 @@ def main() -> int:
         if not gid or gid not in matrix:
             extra[symbol] = {"status": "not recovered"}
             continue
-        vals = {c: cpm(gid, c) for c in epi_all}
+        vals = {c: cpm(gid, c) for c in epi_contrast}
         extra[symbol] = contrast([vals[r["counts_column"]] for r in epi["case"]],
                                  [vals[r["counts_column"]] for r in epi["reference"]],
                                  f"declared-here {symbol}")
-        extra[symbol]["measurable"] = measurable(gid, epi_all)
+        extra[symbol]["measurable"] = measurable(gid, epi_contrast)
     results["declared_here_no_decision"] = extra
 
     # Primary 2, the omnibus.
@@ -352,29 +387,10 @@ def main() -> int:
     def euclid_distance(a, b):
         return math.sqrt(sum((x - y) ** 2 for x, y in zip(profiles[a], profiles[b])))
 
-    def omnibus(distance_fn):
-        d = {(a, b): distance_fn(a, b) for i, a in enumerate(epi_primary)
-             for b in epi_primary[i + 1:]}
-
-        def dist(a, b):
-            return d[(a, b)] if (a, b) in d else d[(b, a)]
-
-        def statistic(group_a):
-            group_b = [c for c in epi_primary if c not in set(group_a)]
-            between = [dist(a, b) for a in group_a for b in group_b]
-            within = ([dist(a, b) for i, a in enumerate(group_a) for b in group_a[i + 1:]]
-                      + [dist(a, b) for i, a in enumerate(group_b) for b in group_b[i + 1:]])
-            return mean(between) - mean(within)
-
-        observed_group = [r["counts_column"] for r in epi["case"]]
-        observed = statistic(observed_group)
-        at_or_above = 0
-        values = []
-        for pick in itertools.combinations(epi_primary, 4):
-            s = statistic(list(pick))
-            values.append(s)
-            if s >= observed - 1e-12:
-                at_or_above += 1
+    def permute(statistic_fn):
+        observed = statistic_fn([r["counts_column"] for r in epi["case"]])
+        values = [statistic_fn(list(pick)) for pick in itertools.combinations(epi_primary, 4)]
+        at_or_above = sum(1 for v in values if v >= observed - 1e-12)
         p = at_or_above / len(values)
         return {
             "observed_statistic": round(observed, 6),
@@ -385,16 +401,64 @@ def main() -> int:
             "separates_at_declared_alpha": p <= ALPHA + 1e-12,
         }
 
+    corr_pairs = {(a, b): corr_distance(a, b) for i, a in enumerate(epi_primary)
+                  for b in epi_primary[i + 1:]}
+
+    def pair_distance(a, b):
+        return corr_pairs[(a, b)] if (a, b) in corr_pairs else corr_pairs[(b, a)]
+
+    def centroid_statistic(group_a):
+        group_b = [c for c in epi_primary if c not in set(group_a)]
+        ca = [mean([standardised[g][c] for c in group_a]) for g in omnibus_genes]
+        cb = [mean([standardised[g][c] for c in group_b]) for g in omnibus_genes]
+        return math.sqrt(sum((x - y) ** 2 for x, y in zip(ca, cb)))
+
+    def between_minus_within(group_a):
+        group_b = [c for c in epi_primary if c not in set(group_a)]
+        between = [pair_distance(a, b) for a in group_a for b in group_b]
+        within = ([pair_distance(a, b) for i, a in enumerate(group_a) for b in group_a[i + 1:]]
+                  + [pair_distance(a, b) for i, a in enumerate(group_b) for b in group_b[i + 1:]])
+        return mean(between) - mean(within)
+
+    def dispersion_ratio(group_a):
+        group_b = [c for c in epi_primary if c not in set(group_a)]
+        wa = mean([pair_distance(a, b) for i, a in enumerate(group_a) for b in group_a[i + 1:]])
+        wb = mean([pair_distance(a, b) for i, a in enumerate(group_b) for b in group_b[i + 1:]])
+        lo, hi = min(wa, wb), max(wa, wb)
+        return hi / lo if lo > 0 else float("inf")
+
+    observed_case = [r["counts_column"] for r in epi["case"]]
+    dispersion = dispersion_ratio(observed_case)
+    dispersion_threshold = (freeze["endpoints"]["primary_2_omnibus_epithelial_divergence"]
+                            ["dispersion_diagnostic_required_first"]["declared_threshold"])
+    dispersion_breached = dispersion >= dispersion_threshold
+    centroid = permute(centroid_statistic)
+    centroid["readable"] = not dispersion_breached
+    centroid["separates_and_readable"] = (centroid["separates_at_declared_alpha"]
+                                          and not dispersion_breached)
     results["primary2_omnibus"] = {
         "genes_used": len(omnibus_genes),
         "itgb6_excluded": itgb6_id is not None,
-        "correlation_distance": omnibus(corr_distance),
-        "euclidean_distance": omnibus(euclid_distance),
+        "dispersion_diagnostic": {
+            "within_arm_distance_ratio": round(dispersion, 4),
+            "declared_threshold": dispersion_threshold,
+            "breached": dispersion_breached,
+            "consequence_if_breached": "the omnibus is unreadable as a location change and "
+                                       "carries no decision",
+        },
+        "centroid_distance": centroid,
+        "between_minus_within_demoted": {
+            **permute(between_minus_within),
+            "status": "reported, carries no decision",
+            "why": "simulation in this repository gives it a rejection rate of 1.000 under a "
+                   "pure dispersion difference with no mean shift, against 0.035 under the "
+                   "true null",
+        },
     }
 
     # Engagement control, on the paired input.
-    eng_scores, eng_cov = composite(engagement_genes, inp_all, True)
-    eng_unstd, _ = composite(engagement_genes, inp_all, False)
+    eng_scores, eng_cov = composite(engagement_genes, inp_contrast, True)
+    eng_unstd, _ = composite(engagement_genes, inp_contrast, False)
     engagement = {"coverage": eng_cov}
     if eng_scores:
         engagement["standardised"] = contrast(
@@ -405,10 +469,12 @@ def main() -> int:
             [eng_unstd[r["counts_column"]] for r in inp["case"]],
             [eng_unstd[r["counts_column"]] for r in inp["reference"]],
             "engagement control, whole-lung input, unstandardised")
-        engagement["injury_context"] = contrast(
-            [eng_scores[r["counts_column"]] for r in inp["reference"]],
-            [eng_scores[r["counts_column"]] for r in inp["saline"]],
-            "engagement control injury context")
+        eng_inj, _ = composite(engagement_genes, inp_injury, True)
+        if eng_inj:
+            engagement["injury_context"] = contrast(
+                [eng_inj[r["counts_column"]] for r in inp["reference"]],
+                [eng_inj[r["counts_column"]] for r in inp["saline"]],
+                "engagement control injury context")
         d = engagement["standardised"]["mean_difference"]
         engagement["declared_direction"] = "lower"
         engagement["direction_observed"] = "lower" if d < 0 else "higher"
@@ -430,7 +496,9 @@ def main() -> int:
         for symbol in genes:
             gid = sym2id.get(symbol)
             if not gid or gid not in matrix:
-                per_marker[symbol] = {"status": "not recovered"}
+                per_marker[symbol] = {"status": "not recovered",
+                                      "exceeds_declared_threshold": None,
+                                      "note": "not computed; this is not a negative result"}
                 continue
             values = {}
             for arm, mouse, ecol, icol in mouse_pairs:
@@ -451,9 +519,12 @@ def main() -> int:
     purity_breach = sorted(
         f"{g}:{s}" for g, marks in purity_summary.items() for s, m in marks.items()
         if isinstance(m, dict) and m.get("exceeds_declared_threshold"))
+    purity_uncomputed = sorted(
+        f"{g}:{s}" for g, marks in purity_summary.items() for s, m in marks.items()
+        if isinstance(m, dict) and m.get("status") == "not recovered")
 
     # A0 handling covariate, on the epithelium.
-    a0_scores, a0_cov = composite(a0_genes, epi_all, True)
+    a0_scores, a0_cov = composite(a0_genes, epi_contrast, True)
     a0_block = {"coverage": a0_cov, "role": "handling and stress covariate, not an endpoint"}
     if a0_scores:
         a0_block["contrast"] = contrast(
@@ -463,16 +534,17 @@ def main() -> int:
     results["a0_handling_covariate"] = a0_block
 
     # Secondary, descriptive only.
-    inj_scores, inj_cov = composite(injury_residual, epi_all, True)
+    sec_scores, inj_cov = composite(injury_residual, epi_contrast, True)
     secondary = {"coverage": inj_cov, "status": "descriptive, no decision weight"}
-    if inj_scores:
+    if sec_scores:
         secondary["contrast"] = contrast(
-            [inj_scores[r["counts_column"]] for r in epi["case"]],
-            [inj_scores[r["counts_column"]] for r in epi["reference"]],
+            [sec_scores[r["counts_column"]] for r in epi["case"]],
+            [sec_scores[r["counts_column"]] for r in epi["reference"]],
             "A5/A11 injury residual, descriptive")
         if a0_scores:
             secondary["correlation_with_a0_score_vector"] = round(
-                pearson([a0_scores[c] for c in epi_all], [inj_scores[c] for c in epi_all]), 4)
+                pearson([a0_scores[c] for c in epi_contrast],
+                        [sec_scores[c] for c in epi_contrast]), 4)
     results["secondary_injury_residual"] = secondary
 
     # Sensitivities.
@@ -484,14 +556,14 @@ def main() -> int:
         return {c: math.exp(median([math.log(matrix[g][c]) - log_means[g] for g in shared]))
                 for c in columns}
 
-    sf = size_factors(epi_all)
+    sf = size_factors(epi_contrast)
     mor = {}
     for name, genes in panels.items():
-        _, keep = resolve(genes, epi_all)
+        _, keep = resolve(genes, epi_contrast)
         if not keep:
             continue
         scores = {c: mean([math.log2(matrix[g][c] / (sf[c] * totals[c] / 1e6) + 1)
-                           for _, g in keep]) for c in epi_all}
+                           for _, g in keep]) for c in epi_contrast}
         mor[name] = contrast([scores[r["counts_column"]] for r in epi["case"]],
                              [scores[r["counts_column"]] for r in epi["reference"]],
                              f"median-of-ratios {name}")
@@ -499,10 +571,10 @@ def main() -> int:
 
     loo = []
     for name, genes in panels.items():
-        scores, _ = composite(genes, epi_all, True)
+        scores, _ = composite(genes, epi_contrast, True)
         if not scores:
             continue
-        for arm in ("case", "reference", "saline"):
+        for arm in ("case", "reference"):
             for r in epi[arm]:
                 keep_case = [x["counts_column"] for x in epi["case"]
                              if x["counts_column"] != r["counts_column"]]
@@ -518,7 +590,7 @@ def main() -> int:
 
     depth = {}
     for name, genes in panels.items():
-        scores, _ = composite(genes, epi_all, True)
+        scores, _ = composite(genes, epi_contrast, True)
         if scores:
             depth[name] = round(pearson([math.log2(totals[c]) for c in epi_primary],
                                         [scores[c] for c in epi_primary]), 4)
@@ -532,8 +604,8 @@ def main() -> int:
 
     trans_sep = sep(results["primary1_transitional"])
     ident_sep = sep(results["primary1_identity"])
-    omni_sep = results["primary2_omnibus"]["correlation_distance"]["separates_at_declared_alpha"]
-    omni_euclid_sep = results["primary2_omnibus"]["euclidean_distance"]["separates_at_declared_alpha"]
+    omni_sep = results["primary2_omnibus"]["centroid_distance"]["separates_and_readable"]
+    omni_euclid_sep = omni_sep
     eng_sep = bool(engagement.get("separates_in_declared_direction"))
     a0_sep = bool(a0_block.get("contrast", {}).get("separates_at_declared_alpha"))
     mor_disagree = any(
@@ -546,24 +618,35 @@ def main() -> int:
                if results[k].get("standardised", {}).get("coverage", {}).get("refused")]
 
     a0_stronger = False
+    a0_comparison_meaningful = False
     if a0_block.get("contrast"):
         a0_p = a0_block["contrast"]["exact_test"]["p_two_sided"]
         panel_ps = [results[f"primary1_{n}"]["standardised"]["exact_test"]["p_two_sided"]
                     for n in panels if "standardised" in results[f"primary1_{n}"]
                     and "exact_test" in results[f"primary1_{n}"]["standardised"]]
-        a0_stronger = bool(panel_ps) and a0_p < min(panel_ps)
+        # "Separates more strongly" is only meaningful if something separates. When no
+        # panel reaches the declared alpha, comparing which non-significant p-value is
+        # smaller compares noise, so the comparison is recorded and not acted on. This is a
+        # defect in the frozen rule's wording, reported rather than silently reinterpreted.
+        a0_comparison_meaningful = bool(panel_ps) and (
+            a0_p <= ALPHA + 1e-12 or min(panel_ps) <= ALPHA + 1e-12)
+        a0_stronger = a0_comparison_meaningful and a0_p < min(panel_ps)
 
     downgrades = []
     if purity_breach:
         downgrades.append(f"purity or composition covariate exceeds the declared threshold: {purity_breach}")
+    if purity_uncomputed:
+        downgrades.append(f"a purity or composition covariate could not be computed, so its "
+                          f"silence is not a negative result: {purity_uncomputed}")
     if a0_sep or a0_stronger:
         downgrades.append("the A0 handling covariate separates, or separates more strongly than the panels")
     if mor_disagree:
         downgrades.append("the median-of-ratios verdict differs from the CPM verdict")
     if unstd_disagree:
         downgrades.append("the unstandardised verdict differs from the standardised verdict")
-    if omni_sep != omni_euclid_sep:
-        downgrades.append("the two omnibus distances disagree")
+    if results["primary2_omnibus"]["dispersion_diagnostic"]["breached"]:
+        downgrades.append("the omnibus dispersion diagnostic is breached, so the omnibus "
+                          "cannot be read as a location change")
     if trans_sep != ident_sep and (trans_sep or ident_sep):
         downgrades.append("the two primary-1 composites disagree")
     if refused:
@@ -572,7 +655,10 @@ def main() -> int:
     if downgrades:
         verdict = "inconclusive"
     elif (trans_sep or ident_sep or omni_sep):
-        verdict = "rival_2_stays_live"
+        # Named so it cannot overclaim: both the A15 mechanism and rival 2 predict an
+        # epithelial change, so a positive does not discriminate between them, and it does
+        # not by itself establish target engagement either.
+        verdict = "epithelium_differs_but_does_not_discriminate"
     elif eng_sep:
         verdict = "weak_bound_on_rival_2"
     else:
@@ -594,7 +680,7 @@ def main() -> int:
                     "reference_mean_log2cpm", "mean_difference", "p_two_sided"])
         for name, genes in list(panels.items()) + [("declared_here", declared_here),
                                                   ("engagement_control", engagement_genes)]:
-            columns = inp_all if name == "engagement_control" else epi_all
+            columns = inp_contrast if name == "engagement_control" else epi_contrast
             arms = inp if name == "engagement_control" else epi
             for symbol in genes:
                 gid = sym2id.get(symbol)
@@ -610,10 +696,10 @@ def main() -> int:
                             exact_rank_sum(cv, rv)["p_two_sided"]])
 
     record = {
-        "schema": "a15-rival2-stage3/v2",
-        "stage": "3, execution under freeze v2",
+        "schema": "a15-rival2-stage3/v3",
+        "stage": "3, execution under freeze v3",
         "scope": freeze["scope"],
-        "freeze": {"path": "config/a15_rival2_freeze_v2.json", "sha256": sha256(FREEZE),
+        "freeze": {"path": "config/a15_rival2_freeze_v3.json", "sha256": sha256(FREEZE),
                    "status": freeze["status"]},
         "inputs": {"counts": {"sha256": counts_sha},
                    "ensembl_symbol_lookup": {"sha256": sha256(SYMBOL_MAP)},
@@ -628,12 +714,26 @@ def main() -> int:
         "results": results,
         "verdict": {
             "value": verdict,
+            "only_informative_branch": "weak_bound_on_rival_2",
+            "positive_branch_does_not_discriminate": (
+                "both the A15 mechanism and rival 2 predict an epithelial change"),
             "transitional_separates": trans_sep,
             "identity_separates": ident_sep,
             "omnibus_correlation_separates": omni_sep,
             "omnibus_euclidean_separates": omni_euclid_sep,
             "engagement_separates_in_declared_direction": eng_sep,
             "downgrade_reasons": downgrades,
+            "a0_rule_note": {
+                "frozen_wording": "if the A0 handling covariate separates the arms more "
+                                  "strongly than either primary-1 composite does, the "
+                                  "primary reading is downgraded",
+                "comparison_was_meaningful": a0_comparison_meaningful,
+                "defect": "when nothing separates at the declared alpha, comparing which "
+                          "non-significant p-value is smaller compares noise. The rule is "
+                          "reported as written and its vacuous case is recorded rather "
+                          "than reinterpreted after the fact.",
+            },
+            "purity_uncomputed": purity_uncomputed,
             "rules": freeze["declared_reading"],
         },
         "endpoint_scored": True,
@@ -650,17 +750,22 @@ def main() -> int:
                   f"separates {b['separates_at_declared_alpha']} "
                   f"(measurable {b['coverage']['measurable']}/{b['coverage']['declared']})")
     o = results["primary2_omnibus"]
-    print(f"omnibus corr: stat {o['correlation_distance']['observed_statistic']} "
-          f"p {o['correlation_distance']['p_one_sided']} "
-          f"separates {o['correlation_distance']['separates_at_declared_alpha']}")
-    print(f"omnibus euclid: p {o['euclidean_distance']['p_one_sided']} "
-          f"separates {o['euclidean_distance']['separates_at_declared_alpha']}")
+    print(f"omnibus centroid: stat {o['centroid_distance']['observed_statistic']} "
+          f"p {o['centroid_distance']['p_one_sided']} "
+          f"readable {o['centroid_distance']['readable']} "
+          f"separates_and_readable {o['centroid_distance']['separates_and_readable']}")
+    print(f"dispersion ratio {o['dispersion_diagnostic']['within_arm_distance_ratio']} "
+          f"threshold {o['dispersion_diagnostic']['declared_threshold']} "
+          f"breached {o['dispersion_diagnostic']['breached']}")
+    print(f"between-minus-within (demoted): p "
+          f"{o['between_minus_within_demoted']['p_one_sided']}")
     if "standardised" in engagement:
         e = engagement["standardised"]
         print(f"engagement: diff {e['mean_difference']} p {e['exact_test']['p_two_sided']} "
               f"direction {engagement['direction_observed']} "
               f"separates_in_direction {engagement['separates_in_declared_direction']}")
-    print(f"purity breaches: {purity_breach or 'none'}")
+    print(f"purity breaches: {purity_breach or 'none'}; "
+          f"uncomputed: {purity_uncomputed or 'none'}")
     if a0_block.get("contrast"):
         print(f"A0 handling covariate: diff {a0_block['contrast']['mean_difference']} "
               f"p {a0_block['contrast']['exact_test']['p_two_sided']}")

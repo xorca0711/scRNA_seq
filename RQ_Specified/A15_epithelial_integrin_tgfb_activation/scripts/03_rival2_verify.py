@@ -39,7 +39,7 @@ OUT = HERE / "tables/rival2"
 COUNTS = CACHE / "GSE190821_counts.csv.gz"
 SYMBOL_MAP = CACHE / "ensembl_symbol_lookup.json"
 STAGE3 = OUT / "stage3_execute_run.json"
-FREEZE = HERE / "config/a15_rival2_freeze_v2.json"
+FREEZE = HERE / "config/a15_rival2_freeze_v3.json"
 
 P_TOLERANCE = 2e-6
 SCORE_TOLERANCE = 1e-3
@@ -133,7 +133,10 @@ def main() -> int:
         return ((block - mu) / sd).mean(axis=0), keep
 
     p1 = freeze["endpoints"]["primary_1_epithelial_identity_and_state"]["composites"]
-    epi_columns = [e["column"] for a in ("case", "reference", "saline") for e in epi[a]]
+    # v3 standardises each composite across exactly the libraries entering its own
+    # contrast, so the independent recomputation must use the same scope or it compares
+    # two different estimators and reports a false disagreement.
+    epi_columns = [e["column"] for e in epi["case"] + epi["reference"]]
     for name, spec in p1.items():
         recorded_block = stage3["results"][f"primary1_{name}"].get("standardised")
         if not recorded_block or "case_values" not in recorded_block:
@@ -193,33 +196,97 @@ def main() -> int:
     corr = np.corrcoef(z.T)
     distance = 1 - corr
 
-    def statistic(idx):
+    def centroid_statistic(idx):
+        other = [i for i in range(8) if i not in set(idx)]
+        return float(np.linalg.norm(z[:, idx].mean(axis=1) - z[:, other].mean(axis=1)))
+
+    def between_minus_within(idx):
         other = [i for i in range(8) if i not in set(idx)]
         between = [distance[i, j] for i in idx for j in other]
         within = ([distance[i, j] for a, i in enumerate(idx) for j in idx[a + 1:]]
                   + [distance[i, j] for a, i in enumerate(other) for j in other[a + 1:]])
         return float(np.mean(between) - np.mean(within))
 
-    observed = statistic([0, 1, 2, 3])
-    values = [statistic(list(p)) for p in itertools.combinations(range(8), 4)]
-    p_mine = sum(1 for v in values if v >= observed - 1e-12) / len(values)
-    check("omnibus observed statistic reproduces",
-          abs(observed - omni["correlation_distance"]["observed_statistic"]) < 1e-4,
-          f"mine {observed:.6f}, stage 3 {omni['correlation_distance']['observed_statistic']}")
-    check("omnibus permutation p reproduces",
-          abs(p_mine - omni["correlation_distance"]["p_one_sided"]) < P_TOLERANCE,
-          f"mine {p_mine:.6f}, stage 3 {omni['correlation_distance']['p_one_sided']}")
-    check("omnibus p cannot fall below two over seventy",
-          omni["correlation_distance"]["p_one_sided"] >= 2 / 70 - 1e-9)
+    def dispersion_ratio(idx):
+        other = [i for i in range(8) if i not in set(idx)]
+        wa = np.mean([distance[i, j] for a, i in enumerate(idx) for j in idx[a + 1:]])
+        wb = np.mean([distance[i, j] for a, i in enumerate(other) for j in other[a + 1:]])
+        lo, hi = min(wa, wb), max(wa, wb)
+        return float(hi / lo) if lo > 0 else float("inf")
+
+    for key, fn in (("centroid_distance", centroid_statistic),
+                    ("between_minus_within_demoted", between_minus_within)):
+        observed = fn([0, 1, 2, 3])
+        values = [fn(list(q)) for q in itertools.combinations(range(8), 4)]
+        p_mine = sum(1 for v in values if v >= observed - 1e-12) / len(values)
+        check(f"omnibus {key}: observed statistic reproduces",
+              abs(observed - omni[key]["observed_statistic"]) < 1e-3,
+              f"mine {observed:.6f}, stage 3 {omni[key]['observed_statistic']}")
+        check(f"omnibus {key}: permutation p reproduces",
+              abs(p_mine - omni[key]["p_one_sided"]) < P_TOLERANCE,
+              f"mine {p_mine:.6f}, stage 3 {omni[key]['p_one_sided']}")
+        check(f"omnibus {key}: p cannot fall below two over seventy",
+              omni[key]["p_one_sided"] >= 2 / 70 - 1e-9)
+
+    dr = dispersion_ratio([0, 1, 2, 3])
+    check("omnibus dispersion ratio reproduces",
+          abs(dr - omni["dispersion_diagnostic"]["within_arm_distance_ratio"]) < 1e-3,
+          f"mine {dr:.4f}, stage 3 {omni['dispersion_diagnostic']['within_arm_distance_ratio']}")
+    check("omnibus readability follows the declared threshold",
+          omni["centroid_distance"]["readable"]
+          == (dr < omni["dispersion_diagnostic"]["declared_threshold"]))
+
+    # Engagement control, recomputed on the paired input.
+    eng = stage3["results"]["engagement_control"]
+    if "standardised" in eng:
+        genes = freeze["engagement_control_declared_before_any_value_is_read"]["genes"]
+        inp_contrast = [e["column"] for e in inp["case"] + inp["reference"]]
+        out = standardised_composite(genes, inp_contrast)
+        if out is not None:
+            scores, keep = out
+            by_col = {c: scores[i] for i, c in enumerate(inp_contrast)}
+            mine_case = [by_col[e["column"]] for e in inp["case"]]
+            mine_ref = [by_col[e["column"]] for e in inp["reference"]]
+            worst = max(max(abs(a - b) for a, b in zip(mine_case, eng["standardised"]["case_values"])),
+                        max(abs(a - b) for a, b in zip(mine_ref, eng["standardised"]["reference_values"])))
+            check("engagement control: scores reproduce", worst < SCORE_TOLERANCE,
+                  f"max difference {worst:.3e}")
+            combined = mine_case + mine_ref
+            if len(set(combined)) == len(combined):
+                sp = stats.mannwhitneyu(mine_case, mine_ref, alternative="two-sided",
+                                        method="exact").pvalue
+                check("engagement control: two-sided p matches scipy exact",
+                      abs(sp - eng["standardised"]["exact_test"]["p_two_sided"]) < P_TOLERANCE,
+                      f"scipy {sp:.8f}, stage 3 {eng['standardised']['exact_test']['p_two_sided']}")
+            check("engagement control: declared direction is lower and was observed lower",
+                  eng["direction_observed"] == "lower"
+                  and eng["standardised"]["mean_difference"] < 0)
+            check("engagement control separation flag is consistent",
+                  eng["separates_in_declared_direction"]
+                  == (eng["standardised"]["separates_at_declared_alpha"]
+                      and eng["standardised"]["mean_difference"] < 0))
+    else:
+        check("engagement control was computed", False,
+              "the composite was refused; a bound cannot rest on a refused control")
+
+    # No covariate may be silently uncomputed.
+    check("no purity covariate was left uncomputed",
+          not stage3["verdict"].get("purity_uncomputed"),
+          f"uncomputed {stage3['verdict'].get('purity_uncomputed')}")
 
     # The verdict follows the declared rules rather than a judgement.
     v = stage3["verdict"]
     positive = (v["transitional_separates"] or v["identity_separates"]
                 or v["omnibus_correlation_separates"])
+    check("a weak bound requires the engagement control to have separated",
+          v["value"] != "weak_bound_on_rival_2"
+          or v["engagement_separates_in_declared_direction"])
+    check("a weak bound requires nothing else to have separated",
+          v["value"] != "weak_bound_on_rival_2" or not positive)
     if v["downgrade_reasons"]:
         expected = "inconclusive"
     elif positive:
-        expected = "rival_2_stays_live"
+        expected = "epithelium_differs_but_does_not_discriminate"
     elif v["engagement_separates_in_declared_direction"]:
         expected = "weak_bound_on_rival_2"
     else:
@@ -228,8 +295,13 @@ def main() -> int:
           f"recorded {v['value']}, rules give {expected}")
 
     # The freeze's prohibitions that are mechanically checkable.
-    check("no ratio verdict appears in the run record",
-          "ratio" not in json.dumps(v).lower())
+    check("the verdict carries its non-discrimination note",
+          "does_not_discriminate" in json.dumps(v)
+          or v.get("positive_branch_does_not_discriminate"))
+    check("the Hodges-Lehmann interval reports its attained coverage",
+          all(b.get("standardised", {}).get("shift", {}).get("attained_coverage") is not None
+              for k, b in stage3["results"].items() if k.startswith("primary1_")
+              and "standardised" in b and "shift" in b.get("standardised", {})))
 
     failures = [c for c in checks if not c["passed"]]
     skipped = [c for c in checks if c.get("skipped")]

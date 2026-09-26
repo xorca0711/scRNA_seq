@@ -1,0 +1,216 @@
+{
+  "schema": "a15-rival2-verification/v2",
+  "verified": "tables/rival2/stage3_execute_run.json",
+  "independent_tools": [
+    "numpy",
+    "scipy.stats.mannwhitneyu",
+    "numpy.corrcoef"
+  ],
+  "note": "stage 3 is standard library only by convention; this script is the independent check and is not part of the frozen instrument",
+  "tolerances": {
+    "p_values": 2e-06,
+    "scores": 0.001,
+    "why": "stage 3 rounds p-values to six decimals"
+  },
+  "checks_run": 39,
+  "checks_failed": 0,
+  "checks_skipped": 0,
+  "checks": [
+    {
+      "check": "counts hash unchanged since stage 3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "freeze hash unchanged since stage 3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "freeze status is the execution status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no claim row was added",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "declared alpha equals two over seventy",
+      "passed": true,
+      "detail": "recorded 0.028571"
+    },
+    {
+      "check": "22 libraries were read",
+      "passed": true,
+      "detail": "got 22"
+    },
+    {
+      "check": "no mouse appears twice in one epithelial arm",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "epithelial and input arms name the same mice",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "library totals reproduce",
+      "passed": true,
+      "detail": "max difference 0"
+    },
+    {
+      "check": "gene index length matches stage 3's expectation",
+      "passed": true,
+      "detail": "gene identifiers are unique"
+    },
+    {
+      "check": "primary1 transitional: scores reproduce",
+      "passed": true,
+      "detail": "max difference 4.006e-05"
+    },
+    {
+      "check": "primary1 transitional: measurable member count agrees",
+      "passed": true,
+      "detail": "mine 5, stage 3 5"
+    },
+    {
+      "check": "primary1 transitional: two-sided p matches scipy exact",
+      "passed": true,
+      "detail": "scipy 0.88571429, stage 3 0.885714"
+    },
+    {
+      "check": "primary1 transitional: shift estimate reproduces",
+      "passed": true,
+      "detail": "mine -0.41805, stage 3 -0.4181"
+    },
+    {
+      "check": "primary1 transitional: interval brackets the estimate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "primary1 identity: scores reproduce",
+      "passed": true,
+      "detail": "max difference 4.103e-05"
+    },
+    {
+      "check": "primary1 identity: measurable member count agrees",
+      "passed": true,
+      "detail": "mine 2, stage 3 2"
+    },
+    {
+      "check": "primary1 identity: two-sided p matches scipy exact",
+      "passed": true,
+      "detail": "scipy 0.68571429, stage 3 0.685714"
+    },
+    {
+      "check": "primary1 identity: shift estimate reproduces",
+      "passed": true,
+      "detail": "mine -0.43665, stage 3 -0.4366"
+    },
+    {
+      "check": "primary1 identity: interval brackets the estimate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "omnibus gene count reproduces",
+      "passed": true,
+      "detail": "mine 15062, stage 3 15062"
+    },
+    {
+      "check": "omnibus centroid_distance: observed statistic reproduces",
+      "passed": true,
+      "detail": "mine 79.667358, stage 3 79.667358"
+    },
+    {
+      "check": "omnibus centroid_distance: permutation p reproduces",
+      "passed": true,
+      "detail": "mine 0.657143, stage 3 0.657143"
+    },
+    {
+      "check": "omnibus centroid_distance: p cannot fall below two over seventy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "omnibus between_minus_within_demoted: observed statistic reproduces",
+      "passed": true,
+      "detail": "mine -0.038365, stage 3 -0.038365"
+    },
+    {
+      "check": "omnibus between_minus_within_demoted: permutation p reproduces",
+      "passed": true,
+      "detail": "mine 0.628571, stage 3 0.628571"
+    },
+    {
+      "check": "omnibus between_minus_within_demoted: p cannot fall below two over seventy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "omnibus dispersion ratio reproduces",
+      "passed": true,
+      "detail": "mine 1.0661, stage 3 1.0661"
+    },
+    {
+      "check": "omnibus readability follows the declared threshold",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "engagement control: scores reproduce",
+      "passed": true,
+      "detail": "max difference 4.676e-05"
+    },
+    {
+      "check": "engagement control: two-sided p matches scipy exact",
+      "passed": true,
+      "detail": "scipy 0.02857143, stage 3 0.028571"
+    },
+    {
+      "check": "engagement control: declared direction is lower and was observed lower",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "engagement control separation flag is consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no purity covariate was left uncomputed",
+      "passed": true,
+      "detail": "uncomputed []"
+    },
+    {
+      "check": "a weak bound requires the engagement control to have separated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "a weak bound requires nothing else to have separated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "the recorded verdict follows the declared rules",
+      "passed": true,
+      "detail": "recorded weak_bound_on_rival_2, rules give weak_bound_on_rival_2"
+    },
+    {
+      "check": "the verdict carries its non-discrimination note",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "the Hodges-Lehmann interval reports its attained coverage",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "generated_utc": "2026-09-26T16:21:32.363311+00:00"
+}

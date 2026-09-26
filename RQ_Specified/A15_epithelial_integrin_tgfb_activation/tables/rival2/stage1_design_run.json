@@ -21,7 +21,7 @@
     },
     "ensembl_symbol_lookup": {
       "path": "cache/ensembl_symbol_lookup.json",
-      "sha256": "952b8c6148a4e114a1710556867d7080f17913dbe7d9b555025037504f73b55a"
+      "sha256": "0a8da7c1ad99c3f7cd1cde806d49b853c03c91a0b60c7eee08ac3b892133fe7b"
     },
     "a0_frozen_programme": {
       "path": "RQ_Specified/A0_conserved_epithelial_transition_program/tables/pilot_v1/frozen_programme.json",
@@ -325,15 +325,25 @@
       "AI_CONTEXT.md",
       "DEVELOPMENT.md",
       "PROGRESS.md",
+      "REFERENCES.md",
       "RESEARCH_QUESTIONS.md",
       "RQ_Specified/A15_epithelial_integrin_tgfb_activation/PLAN.md",
       "RQ_Specified/A15_epithelial_integrin_tgfb_activation/RATIONALE.md",
       "RQ_Specified/A15_epithelial_integrin_tgfb_activation/README.md",
       "RQ_Specified/A15_epithelial_integrin_tgfb_activation/config/a15_question_contract.json",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/config/a15_rival2_freeze.json",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/config/a15_rival2_freeze_v2.json",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/config/a15_rival2_freeze_v3.json",
       "RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/PUBLIC_DATA_SEARCH.md",
       "RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/REGISTER_DECISION.md",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/RIVAL2_STAGE1_AUDIT.md",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/RIVAL2_STAGE1_ERRATUM.md",
       "RQ_Specified/A15_epithelial_integrin_tgfb_activation/scripts/01_rival2_design_audit.py",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/scripts/01b_rival2_stage1_addendum.py",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/scripts/02_rival2_execute.py",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/scripts/03_rival2_verify.py",
       "RQ_Specified/A15_epithelial_integrin_tgfb_activation/tables/rival2/stage1_design_run.json",
+      "RQ_Specified/A15_epithelial_integrin_tgfb_activation/tables/rival2/stage1b_addendum_run.json",
       "RQ_Specified/A1_transitional_epithelial_state_distinction/LINEAGE_AUDIT.md",
       "RQ_Specified/A1_transitional_epithelial_state_distinction/PLAN.md",
       "RQ_Specified/A1_transitional_epithelial_state_distinction/STUDY_MAP.md",
@@ -415,5 +425,5 @@
   },
   "stop_rules_triggered": [],
   "endpoint_scored": false,
-  "generated_utc": "2026-09-26T15:31:10.395633+00:00"
+  "generated_utc": "2026-09-26T16:19:40.593796+00:00"
 }
