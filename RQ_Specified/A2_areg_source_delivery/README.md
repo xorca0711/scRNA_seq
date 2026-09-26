@@ -1,9 +1,13 @@
 # A2: does the fibroblast response to AREG depend on delivery or on abundance
 
-**Status, 26 September 2026: all six stages complete.** Start with the
-[synthesis](reports/STAGE5_SYNTHESIS.md). Leg 1 found no movement in the Areg arm and a
-large consistent decrease in the epithelial Itgb6 arm; leg 2 was refused by the frozen
-depth rule it inherited. The history below is preserved because the first freeze was
+**Status, 27 September 2026: all six stages complete, and leg 2 has since been read.**
+Start with the [synthesis](reports/STAGE5_SYNTHESIS.md), then the
+[depth-standardised leg 2](reports/LEG2_DEPTH_STANDARDISED_RESULTS.md). Leg 1 found no
+movement in the Areg arm and a large consistent decrease in the epithelial Itgb6 arm. Leg 2
+was refused by the frozen depth rule it inherited; putting its measure on a common molecule
+budget brought the depth coupling from 0.770 and 0.412 down to 0.232 and 0.341, which lets
+the rule pass the pair, and the correlation then falls from 0.433 at nominal p 0.044 to
+0.293 at p 0.186. The rule was protecting against depth, and there was nothing behind it. The history below is preserved because the first freeze was
 withdrawn before anything was scored.
 
 **Earlier status, before the legs ran: audited, then narrowed by its own audit. Nothing
@@ -106,9 +110,10 @@ all four units does not reach it.
 | `config/a2_stage2_freeze.json` | the first freeze, withdrawn and preserved unchanged |
 | `config/a2_stage2_freeze_v2.json` | the freeze leg 1 obeyed: effect size against the screen's controls, eligibility floor, no p-value |
 | `config/a2_leg2_spec.json` | the leg 2 specification, declared and committed before leg 2 ran |
+| `config/a2_leg2_depth_spec.json` | the depth-standardised second pass, declared before its measure ran |
 | `scripts/` | `01_stage1_audit.py` and `02_stage2_freeze.py`, standard library only, hash-verified inputs, refusing to overwrite |
 | `tables/` | stage 1 outputs and their run record |
-| `reports/` | [synthesis](reports/STAGE5_SYNTHESIS.md), [leg 1](reports/STAGE3_LEG1_RESULTS.md), [leg 2](reports/STAGE4_LEG2_RESULTS.md), [stage 1 audit](reports/STAGE1_AUDIT.md), the [first freeze](reports/STAGE2_FREEZE.md) and its [withdrawal](reports/STAGE2_WITHDRAWN.md) |
+| `reports/` | [synthesis](reports/STAGE5_SYNTHESIS.md), [leg 1](reports/STAGE3_LEG1_RESULTS.md), [leg 2](reports/STAGE4_LEG2_RESULTS.md), [leg 2 standardised](reports/LEG2_DEPTH_STANDARDISED_RESULTS.md), [stage 1 audit](reports/STAGE1_AUDIT.md), the [first freeze](reports/STAGE2_FREEZE.md) and its [withdrawal](reports/STAGE2_WITHDRAWN.md) |
 
 ## Three things a later session must not do
 

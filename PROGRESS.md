@@ -239,8 +239,25 @@ Branch `Claude/a2-delivery-hypothesis`, based on main `f1b2c4f`. Start with the
   refused by the frozen C51 depth rule, its composite tracking fibroblast depth at 0.770
   and the outcome at 0.412, and the IPF stratum is refused too on a stricter post hoc
   reading. The instrument reproduced C50 at -0.150.
-- Next: the owner grades or rejects the four claim sentences proposed in
-  `reports/STAGE5_SYNTHESIS.md`; none is added. The cheapest open item is a
+- **Leg 2 has since been read.** Its measure was put on a common molecule budget, the C37
+  treatment, declared before it ran. The predictor's depth coupling falls from 0.770 to
+  0.232 and the outcome's from 0.412 to 0.341, so the frozen C51 rule no longer refuses the
+  pair, and the correlation falls from 0.433 at nominal p 0.044 to 0.293 at p 0.186. The
+  rule was protecting against depth and nothing survives it. The correlation tracks how much
+  of each library the measure consumes, at 0.230, 0.293, 0.379 and 0.433 for budgets 500,
+  1,000, 2,000 and the whole library, which is the clearest internal evidence for that
+  reading. The limitation is that this deposit is floored at 1,000 molecules, exactly the
+  primary budget, so the standardisation is partial by construction; a budget near 100 is the
+  named next step and was deliberately not substituted after the problem was found.
+- **The register data gates have been audited once**, in
+  `docs/audits/2026-09-27-register-gate-audit/`. One gate is met as written, A3 by GSE303646,
+  with the warning that retired A6 still attached. Three have named candidates whose
+  eligibility is arithmetic: A5 on GSE264278 and GSE201698, A11 on GSE198864 which is outside
+  this repository so it carries no discovery contamination, and A13 on GSE233844 and
+  GSE122960. A1 has half its gate met. Six are blocked with a constraint that now fits in a
+  sentence. A15 was excluded because the session that owns it audited its own gate.
+- Next: the owner grades or rejects the claim sentences proposed in
+  `reports/STAGE5_SYNTHESIS.md` and in the depth-standardised leg 2 report; none is added. The cheapest open item is a
   depth-standardized donor measure for leg 2, using the common-molecule-budget treatment
   this repository applied to C37. The Itgb6 lead needs its own design and is not a
   question yet. Earlier note, still current: the second freeze was provisional and

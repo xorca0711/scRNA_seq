@@ -1,0 +1,302 @@
+{
+  "audit": "register data-gate search",
+  "completed_utc": "2026-09-26T15:42:50.279781+00:00",
+  "script": "docs/audits/2026-09-27-register-gate-audit/run_gate_search.py",
+  "script_sha256": "4524cefd8afa4060060c32d25e46bcfaa9c0bfc43083bc18a3edf71c1851cc35",
+  "archive": "NCBI GEO DataSets, via eutils esearch and esummary",
+  "entry_type_filter": "gse",
+  "top_summaries_per_query": 6,
+  "questions_searched": [
+    "A1",
+    "A3",
+    "A4",
+    "A5",
+    "A7",
+    "A8",
+    "A9",
+    "A11",
+    "A12",
+    "A13",
+    "A14"
+  ],
+  "a15_excluded": "its gate was audited by the session that owns A15; see RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/PUBLIC_DATA_SEARCH.md",
+  "queries": [
+    {
+      "question": "A1",
+      "query_index": 1,
+      "term": "lung[Title] AND (ATAC[All Fields] OR multiome[All Fields]) AND lineage[All Fields] AND mouse[Organism] AND gse[Entry Type]",
+      "hits": 35,
+      "ids_returned": [
+        "200293600",
+        "200268368",
+        "200310084",
+        "200286986",
+        "200286984",
+        "200261082"
+      ]
+    },
+    {
+      "question": "A1",
+      "query_index": 2,
+      "term": "lung regeneration[All Fields] AND chromatin[All Fields] AND (tdTomato[All Fields] OR reporter[All Fields]) AND mouse[Organism] AND gse[Entry Type]",
+      "hits": 0,
+      "ids_returned": []
+    },
+    {
+      "question": "A3",
+      "query_index": 1,
+      "term": "lung[Title] AND macrophage[All Fields] AND aging[All Fields] AND mouse[Organism] AND single cell[All Fields] AND gse[Entry Type]",
+      "hits": 9,
+      "ids_returned": [
+        "200303646",
+        "200271578",
+        "200288730",
+        "200274828",
+        "200277799",
+        "200225166"
+      ]
+    },
+    {
+      "question": "A3",
+      "query_index": 2,
+      "term": "lung[All Fields] AND (influenza[All Fields] OR injury[All Fields]) AND aged[All Fields] AND macrophage[All Fields] AND mouse[Organism] AND gse[Entry Type]",
+      "hits": 30,
+      "ids_returned": [
+        "200311141",
+        "200310065",
+        "200303646",
+        "200295628",
+        "200271578",
+        "200312462"
+      ]
+    },
+    {
+      "question": "A4",
+      "query_index": 1,
+      "term": "lung[All Fields] AND Axin2[All Fields] AND mouse[Organism] AND gse[Entry Type]",
+      "hits": 7,
+      "ids_returned": [
+        "200190934",
+        "200162859",
+        "200147358",
+        "200097055",
+        "200097052",
+        "200092699"
+      ]
+    },
+    {
+      "question": "A4",
+      "query_index": 2,
+      "term": "lung[All Fields] AND Il1r1[All Fields] AND (lineage[All Fields] OR reporter[All Fields]) AND mouse[Organism] AND gse[Entry Type]",
+      "hits": 8,
+      "ids_returned": [
+        "200247505",
+        "200247504",
+        "200247503",
+        "200145031",
+        "200144598",
+        "200144553"
+      ]
+    },
+    {
+      "question": "A5",
+      "query_index": 1,
+      "term": "lung[Title] AND (bleomycin[All Fields] OR influenza[All Fields]) AND time course[All Fields] AND single cell[All Fields] AND mouse[Organism] AND gse[Entry Type]",
+      "hits": 4,
+      "ids_returned": [
+        "200271578",
+        "200264278",
+        "200201698",
+        "200141259"
+      ]
+    },
+    {
+      "question": "A5",
+      "query_index": 2,
+      "term": "alveolar type 2[All Fields] AND injury[All Fields] AND single cell RNA[All Fields] AND mouse[Organism] AND gse[Entry Type]",
+      "hits": 21,
+      "ids_returned": [
+        "200345596",
+        "200313673",
+        "200313672",
+        "200313671",
+        "200304531",
+        "200295484"
+      ]
+    },
+    {
+      "question": "A7",
+      "query_index": 1,
+      "term": "Cebpa[All Fields] AND lung[All Fields] AND gse[Entry Type]",
+      "hits": 27,
+      "ids_returned": [
+        "200305107",
+        "200305099",
+        "200245650",
+        "200245649",
+        "200245648",
+        "200245647"
+      ]
+    },
+    {
+      "question": "A7",
+      "query_index": 2,
+      "term": "Cebpa[All Fields] AND (conditional[All Fields] OR knockout[All Fields]) AND single cell[All Fields] AND gse[Entry Type]",
+      "hits": 14,
+      "ids_returned": [
+        "200284147",
+        "200278751",
+        "200277485",
+        "200277468",
+        "200276998",
+        "200276996"
+      ]
+    },
+    {
+      "question": "A8",
+      "query_index": 1,
+      "term": "alveolar type 1[All Fields] AND maturation[All Fields] AND lung[All Fields] AND gse[Entry Type]",
+      "hits": 3,
+      "ids_returned": [
+        "200261508",
+        "200215824",
+        "200073861"
+      ]
+    },
+    {
+      "question": "A8",
+      "query_index": 2,
+      "term": "lung[Title] AND alveolar[All Fields] AND (morphometry[All Fields] OR proteomics[All Fields]) AND differentiation[All Fields] AND gse[Entry Type]",
+      "hits": 2,
+      "ids_returned": [
+        "200318967",
+        "200027964"
+      ]
+    },
+    {
+      "question": "A9",
+      "query_index": 1,
+      "term": "lung fibroblast[All Fields] AND (CITE-seq[All Fields] OR surface protein[All Fields] OR antibody derived[All Fields]) AND gse[Entry Type]",
+      "hits": 63,
+      "ids_returned": [
+        "200348037",
+        "200330326",
+        "200324380",
+        "200294583",
+        "200306080",
+        "200293962"
+      ]
+    },
+    {
+      "question": "A9",
+      "query_index": 2,
+      "term": "lung[All Fields] AND fibroblast[All Fields] AND EGFR[All Fields] AND (phosphorylation[All Fields] OR activation[All Fields]) AND gse[Entry Type]",
+      "hits": 7,
+      "ids_returned": [
+        "200348037",
+        "200310335",
+        "200288758",
+        "200130807",
+        "200077764",
+        "200106151"
+      ]
+    },
+    {
+      "question": "A11",
+      "query_index": 1,
+      "term": "human[Organism] AND lung[Title] AND (pneumonia[All Fields] OR ARDS[All Fields] OR acute lung injury[All Fields]) AND single cell[All Fields] AND epithelial[All Fields] AND gse[Entry Type]",
+      "hits": 9,
+      "ids_returned": [
+        "200312053",
+        "200214770",
+        "200214762",
+        "200214752",
+        "200214482",
+        "200198864"
+      ]
+    },
+    {
+      "question": "A11",
+      "query_index": 2,
+      "term": "human[Organism] AND lung[All Fields] AND single cell[All Fields] AND paired[All Fields] AND (injury[All Fields] OR repair[All Fields]) AND epithelium[All Fields] AND gse[Entry Type]",
+      "hits": 0,
+      "ids_returned": []
+    },
+    {
+      "question": "A12",
+      "query_index": 1,
+      "term": "IL1B[All Fields] AND lung[All Fields] AND (reporter[All Fields] OR phospho[All Fields] OR activation[All Fields]) AND gse[Entry Type]",
+      "hits": 17,
+      "ids_returned": [
+        "200292495",
+        "200292494",
+        "200317298",
+        "200308855",
+        "200296097",
+        "200296101"
+      ]
+    },
+    {
+      "question": "A12",
+      "query_index": 2,
+      "term": "interleukin 1[All Fields] AND lung[All Fields] AND perturbation[All Fields] AND single cell[All Fields] AND gse[Entry Type]",
+      "hits": 0,
+      "ids_returned": []
+    },
+    {
+      "question": "A13",
+      "query_index": 1,
+      "term": "human[Organism] AND lung[Title] AND fibrosis[All Fields] AND single cell[All Fields] AND (macrophage[All Fields] AND fibroblast[All Fields]) AND gse[Entry Type]",
+      "hits": 3,
+      "ids_returned": [
+        "200240911",
+        "200276934",
+        "200149878"
+      ]
+    },
+    {
+      "question": "A13",
+      "query_index": 2,
+      "term": "human[Organism] AND idiopathic pulmonary fibrosis[All Fields] AND single cell[All Fields] AND atlas[All Fields] AND gse[Entry Type]",
+      "hits": 6,
+      "ids_returned": [
+        "200292589",
+        "200285246",
+        "200264038",
+        "200233844",
+        "200136831",
+        "200122960"
+      ]
+    },
+    {
+      "question": "A14",
+      "query_index": 1,
+      "term": "lung[All Fields] AND fibrosis[All Fields] AND (resolution[All Fields] OR reversible[All Fields] OR withdrawal[All Fields]) AND single cell[All Fields] AND gse[Entry Type]",
+      "hits": 37,
+      "ids_returned": [
+        "200271370",
+        "200292589",
+        "200331432",
+        "200296682",
+        "200317902",
+        "200295566"
+      ]
+    },
+    {
+      "question": "A14",
+      "query_index": 2,
+      "term": "lung[All Fields] AND doxycycline[All Fields] AND (off[All Fields] OR withdrawal[All Fields]) AND mouse[Organism] AND gse[Entry Type]",
+      "hits": 23,
+      "ids_returned": [
+        "200326497",
+        "200292712",
+        "200299635",
+        "200245827",
+        "200245822",
+        "200245821"
+      ]
+    }
+  ],
+  "candidates_recorded": 102,
+  "judgement": "none; this script retrieves only, and REPORT.md carries the verdicts"
+}

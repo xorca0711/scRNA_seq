@@ -329,6 +329,16 @@ no endpoint scored, no claim row added, no grade changed.
   and a culture check, which proposes epithelial integrin-mediated TGF-beta activation
   and is not a result. Leg 2 is refused by the C51 depth rule at predictor 0.770 and
   outcome 0.412; it reproduced C50 at -0.150. No claim row was added and no grade changed.
+- Leg 2 was later read on a common molecule budget: depth coupling 0.770 to 0.232 for the
+  predictor and 0.412 to 0.341 for the outcome, so the C51 rule passes the pair, and the
+  correlation falls from 0.433 at nominal p 0.044 to 0.293 at p 0.186. It tracks how much of
+  each library the measure consumes (0.230, 0.293, 0.379, 0.433). The primary budget of 1,000
+  equals this deposit's floor, so the standardisation is partial; a budget near 100 is the
+  named next step and must be declared before it runs.
+- The register data gates are audited once in `docs/audits/2026-09-27-register-gate-audit/`.
+  A3's gate is met by GSE303646 but A3 still carries A6's annotation defect. A5, A11 and A13
+  have named candidates needing an eligibility count. A4, A7, A8, A9, A12 and A14 are blocked
+  with stated constraints. A15 was excluded; its own session audited it.
 - Earlier state, preserved: stages 1 and 2 ran with nothing scored. The first
   freeze `config/a2_stage2_freeze.json` is **withdrawn and preserved**;
   `config/a2_stage2_freeze_v2.json` is the authority, and
