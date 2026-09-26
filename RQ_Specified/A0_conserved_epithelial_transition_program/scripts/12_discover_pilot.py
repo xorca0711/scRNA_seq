@@ -26,7 +26,7 @@ def main():
     cfg_path=BASE/'config/pilot_v1.json';cfg=json.loads(cfg_path.read_text())
     prep=json.loads((OUT/'preparation.json').read_text())
     assert sha(cfg_path)==prep['config_sha256']
-    targets=['discovery_gene_effects.tsv','discovery_unit_effects.tsv','frozen_programme.json','discovery_run.json']
+    targets=['discovery_gene_effects.tsv.gz','discovery_unit_effects.tsv','frozen_programme.json','discovery_run.json']
     if any((OUT/f).exists() for f in targets):raise SystemExit('Refusing to overwrite discovery')
     for name,record in prep['prepared'].items():assert sha(WORK/name)==record['sha256'],name
     ortho=pd.read_csv(OUT/'ortholog_universe.tsv',sep='\t')
@@ -69,7 +69,7 @@ def main():
     n=len(candidates); passed=n>=rules['minimum_genes']
     selected=candidates.head(rules['maximum_genes']) if passed else candidates.iloc[:0]
     genes['selected']=genes.human.isin(selected.human)
-    genes.to_csv(OUT/'discovery_gene_effects.tsv',sep='\t',index=False,float_format='%.12g')
+    genes.to_csv(OUT/'discovery_gene_effects.tsv.gz',sep='\t',index=False,float_format='%.12g',compression={'method':'gzip','mtime':0})
     pd.DataFrame(unit_rows).to_csv(OUT/'discovery_unit_effects.tsv',sep='\t',index=False)
     frozen=dict(status='FROZEN_FOR_TRANSFER' if passed else 'STOP_NO_QUALIFYING_COMMON_MODULE',eligible_genes=n,
                 selected_genes=len(selected),human_genes=selected.human.tolist(),mouse_genes=selected.mouse.tolist(),
