@@ -106,6 +106,35 @@ is what the eligibility floor was for.
 The depth asymmetry that worried the first freeze is therefore handled by the floor
 rather than by the adjustment, and no effect above rests on a depth gradient.
 
+## A post hoc check that separates Itgb6 from Erbb3
+
+Declared post hoc, not in the freeze, and carrying no decision: if a well's fibroblast
+score falls because its culture collapsed or because its compartment ratio shifted, the
+change is not a signalling result. Ratios and differences are against each unit's
+eligible control wells, and the deposited area is already on a log scale.
+
+| Target | Day-14 log area minus control | Fibroblast count ratio to control | Activation effect |
+|---|--:|--:|--:|
+| Itgb6 | +0.022 | 0.93 | -0.938 |
+| Erbb3 | -0.605 | 2.31 | -0.187 |
+| Areg | +0.018 | 1.26 | +0.036 |
+| Egfr | +0.065 | 0.50 | +0.247 |
+| Erbb4 | +0.026 | 0.54 | +0.503 |
+| Erbb2 | -0.407 | 1.97 | -0.169 |
+
+This separates the two decreases. **Itgb6 lowers the fibroblast activation programme
+with organoid size unchanged and fibroblast content unchanged**, so its effect is not a
+viability or composition artefact. **Erbb3's smaller decrease travels with markedly
+smaller organoids and more than twice the fibroblast material**, which is what a
+composition or viability shift looks like. The generic-perturbation caution therefore
+applies to Erbb3 more than to Itgb6, though it is not removed: one well per target per
+unit at a fixed position cannot separate a target from its position.
+
+The first run of this check joined the imaging table on the wrong key prefix and
+returned empty area fields. It is preserved unchanged in
+[`tables/stage3_robustness_attempt1_failed_join/`](../tables/stage3_robustness_attempt1_failed_join/)
+with a note.
+
 ## What this establishes and what it proposes
 
 **Establishes, descriptively and within this screen only.** The frozen five-gene

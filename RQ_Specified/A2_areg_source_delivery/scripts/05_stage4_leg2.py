@@ -100,7 +100,9 @@ def main() -> None:
     candidates = [g for g in oxphos if g not in tgfb and g not in emt]
     print("co-regulation candidate universe: %d of %d oxphos members" % (len(candidates), len(oxphos)))
 
-    genes = read_lines(gene_ids)
+    # Exactly as trial E6 reads them: column 1 is the HGNC symbol, and the first
+    # line is a quoted header that the matrix does not count as a row.
+    genes = read_lines(gene_ids, column=1)[1:]
     cells = read_lines(barcodes)
     print("deposit: %d genes, %d cells" % (len(genes), len(cells)))
 

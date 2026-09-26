@@ -1,0 +1,46 @@
+{
+  "stage": "3 robustness, post hoc",
+  "declared": "post hoc; not in the second freeze; no decision attached",
+  "question": "whether the Itgb6 signal travels with a viability or composition change",
+  "completed_utc": "2026-09-26T14:08:58.350948+00:00",
+  "script": "RQ_Specified/A2_areg_source_delivery/scripts/06_stage3_robustness.py",
+  "script_sha256": "29f284b26ec165b5c67efb2e36d5f0e04f532afe1b3e141c1a26b1ca47a9885c",
+  "inputs": {
+    "RQ_Specified/A10_organoid_growth_outcome/cache/GSE307112_imaging_outputs.csv.gz": "50ab337c916e0bd195c0fc387067fe0ee138683537e738c23f90ad97ef99d215",
+    "RQ_Specified/A2_areg_source_delivery/tables/stage3_well_scores.tsv": "14171d3bd0bd59539799f82782a347f3613e661f3b8e1600d1ca732ee283ac3d"
+  },
+  "a10_boundary": "the imaging columns are a confound check only; no growth model is fitted and no growth claim is made",
+  "eligibility_floor": 100000,
+  "summary": {
+    "AREG": {
+      "eligible_units": 4,
+      "median_day14_area_ratio_to_control": null,
+      "median_fibroblast_count_ratio_to_control": 1.257
+    },
+    "EGFR": {
+      "eligible_units": 3,
+      "median_day14_area_ratio_to_control": null,
+      "median_fibroblast_count_ratio_to_control": 0.502
+    },
+    "ERBB2": {
+      "eligible_units": 1,
+      "median_day14_area_ratio_to_control": null,
+      "median_fibroblast_count_ratio_to_control": 1.965
+    },
+    "ERBB3": {
+      "eligible_units": 4,
+      "median_day14_area_ratio_to_control": null,
+      "median_fibroblast_count_ratio_to_control": 2.305
+    },
+    "ERBB4": {
+      "eligible_units": 3,
+      "median_day14_area_ratio_to_control": null,
+      "median_fibroblast_count_ratio_to_control": 0.536
+    },
+    "ITGB6": {
+      "eligible_units": 3,
+      "median_day14_area_ratio_to_control": null,
+      "median_fibroblast_count_ratio_to_control": 0.926
+    }
+  }
+}

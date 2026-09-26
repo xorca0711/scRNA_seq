@@ -1,0 +1,5 @@
+The first robustness run joined imaging on the library prefix 3-1 while the deposit
+keys it as plate3-1, so every imaging field came back empty and the area ratios are
+all none. The fibroblast count ratios in it are correct. Preserved unchanged; the
+corrected run is one directory up, and it reports the day-14 area as a difference
+rather than a ratio, because the deposited area is already on a log scale.
