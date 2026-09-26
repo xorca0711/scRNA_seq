@@ -56,6 +56,13 @@ Use the matching UCSC donor annotations as the biological-unit definition;
 captures do not add n. The source's spatial evidence supports an intermediate
 position, not direct proof of each cell's ancestry or future fate.
 
+The [crosswalk](../tables/pilot_v1/D2_source_crosswalk.tsv) checks all 39 author
+capture labels against the corresponding GEO samples: every label is recovered
+and every age agrees. These captures map to 17 author donor IDs. In particular,
+the two age-seven donors use `10x299`, whereas `10X253` belongs to age-fourteen
+donor17; a suspected discrepancy was a reading error. Agreement of ages alone
+does not establish independence; the explicit author donor annotation defines it.
+
 **V1:** Haber source-labeled stem cells, late enterocyte progenitors and mature
 proximal enterocytes. The [source](https://doi.org/10.1038/nature24489) places
 enterocyte commitment within the crypt-to-villus differentiation system. This
@@ -82,6 +89,11 @@ reuse of marker panels but cannot make expression-derived labels independent.
   source was subsequently retrieved with a declared 100 MB bound (15.11 MB file).
 - Public downloaded sources remain ignored. Their URLs and hashes are retained
   in the continuation source manifest; the original source manifest is historical.
+- Two count-preparation attempts were interrupted for performance reasons,
+  before any programme effects. Their partial files and dated records remain
+  separate. The final parser uses a validated integer fast path with the original
+  float parser as fallback. A 12-row comparison found exactly identical values
+  for 1,958,832 entries; biological criteria and source selections did not change.
 
 No result-dependent replacement of a failed module is permitted. In particular,
 the original requirement of at least 20 selected genes is retained. If that gate

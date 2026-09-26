@@ -986,3 +986,26 @@ role. It did not resolve preparations/calibration: detailed supplemental methods
 could not be inspected through the bounded retrieval. The access record preserves
 that limitation; it is not a claim that the supplement lacks those facts. No
 study note, roadmap-reading update, author contact or model retuning occurred.
+
+
+## A0 scientific pilot and adaptive stop, 26 September 2026
+
+| Date | Item | Proposed by | Decided by | Decision | Reason |
+|---|---|---|---|---|---|
+| 2026-09-26 | Finish the scientific pilot, then open a PR | Owner request | Owner explicitly authorized execution and PR creation | Recover eligible cohorts, freeze discovery/transfer, execute and verify the bounded pilot | A0 existed only as a local feasibility audit |
+| 2026-09-26 | Substitute the viable early airway and late-enterocyte-progenitor comparisons before effects | Codex source/coverage audit | Codex within authorized adaptive analysis | Retain original cell/unit floors and 20–50-gene requirement; disclose changed biological scope | Original developmental and gut comparisons did not satisfy coverage |
+| 2026-09-26 | Stop after failure of the mature intestinal endpoint | Codex implementation of the pre-V1 stopping rule | Codex applied the owner-authorized adaptive sequence; scientific acceptance pending review | Report negative primary transfer; prune P4 and avoid result-dependent rescue | Both endpoints are required; only 1/3 mice is positive against mature enterocytes |
+
+| Date | Rejected or reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-26 | Treating the local feasibility audit as a completed scientific pilot | No programme had been learned or transferred | Source/run audit; original bytes and results preserved |
+| 2026-09-26 | Counting captures as donors or misidentifying similarly named UCSC studies | Biological replication and source identity determine eligibility | Author crosswalk and GEO identities checked before effects |
+| 2026-09-26 | Two slow count-preparation implementations | Scattered storage and float parsing of integer text dominated runtime | Performance-only corrections before effects; partial attempts preserved |
+| 2026-09-26 | Calling a positive stem comparison successful cross-tissue transfer | The mature endpoint fails, so a transient intermediate peak is not established | Fixed two-endpoint criterion, independently verified |
+| 2026-09-26 | Equating transfer failure with absence of all conserved fate programmes | Only one RNA instrument, operational comparison and three transfer mice were tested | Interpretation narrowed; no causal or universal claim promoted |
+
+The [result](RQ_Specified/A0_conserved_epithelial_transition_program/reports/PILOT_V1_RESULTS.md)
+records all unit effects, freezes, limits and verification. The owner authorized
+work and PR creation; final scientific acceptance is not invented. Historical
+claim grades, original feasibility tables and unrelated primary-checkout work
+remain unchanged.

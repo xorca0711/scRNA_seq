@@ -1,63 +1,47 @@
-# A0 — Conserved processes across epithelial transitions
+# A0 — Conserved epithelial transition programme
 
-Created: 2026-09-25. Status: **Feasibility audit complete; primary biological analysis blocked by data requirements**.
+**Scientific pilot complete, 26 September 2026: primary intestinal transfer not
+supported.** Discovery in 9 repair mice and 11 developmental donors produced a
+frozen 50-gene programme. In 3 intestinal mice, the intermediate exceeded stem
+cells but failed the mature-enterocyte comparison. Specificity analyses were
+pruned by the rule declared before transfer scoring.
 
-Read the [current pilot report](reports/PILOT_REPORT.md) for the executed audit,
-capture estimates and remaining dependencies. No candidate expression program
-has been learned or scored; P1–P4 remain unexecuted.
+Read the [scientific result](reports/PILOT_V1_RESULTS.md) and
+[figure gallery](figures/pilot_v1/README.md). This completed pilot does not resolve
+universality or demonstrate causal modulation of fate.
 
-## Biological question
+## Biological question and sequence
 
-Do epithelial cells reuse a conserved regulatory process when passing between
-differentiation states, despite differences in tissue, starting identity and
-destination identity?
+Could epithelia reuse some of the cellular work needed to move between identities,
+and could that shared process help determine their fate? The observable RNA test
+comes first: define a biologically supported intermediate, compare it with both
+endpoints within each mouse/donor, discover one common lung signature, then freeze
+it before testing another tissue. Only a positive transfer warrants the planned
+specificity tests. Causal fate modulation would require additional linked
+perturbation/fate measurements.
 
-The motivating hypothesis concerns a universal process. This pilot tests a
-narrower, observable prediction: **a transcriptional program learned from lung
-injury and normal lung development also distinguishes independently supported
-intermediate states in another epithelium, beyond generic stress, proliferation
-and loss of the starting identity.**
+The [A0 question card](../../RESEARCH_QUESTIONS.md#a0) places this pilot alongside
+A1, A5, A11 and A10. Those analyses motivate it without supplying its transfer or
+causal endpoint. No independent cells or technical captures are counted as animals.
 
-## Read in this order
-
-| File | Purpose |
+| Evidence | Purpose |
 |---|---|
-| [PLAN.md](PLAN.md) | Hypotheses, analysis sequence, controls, outputs and expansion criteria |
-| [DATASET_CANDIDATES.md](DATASET_CANDIDATES.md) | Three dataset roles, existing resources, eligibility and unresolved selections |
-| [Current pilot report](reports/PILOT_REPORT.md) | Extended feasibility findings, figures and explicit limits |
-| [Readiness](readiness.json) | Completed work and blocked downstream stages |
-| [Reproduction and input contract](REPRODUCING.md) | Commands, required metadata and unblocking conditions |
-| [P0 eligibility report](reports/P0_ELIGIBILITY_REPORT.md) | Executed coverage audit, limitations and next selection steps |
-| [Dataset audit](tables/dataset_audit.csv) | Candidate-level eligibility decisions |
-| [Decisions](decisions.json) | Dated scope and interpretation decisions |
-| [Source manifest](source_manifest.json) | Download provenance and hashes |
+| [Pilot result](reports/PILOT_V1_RESULTS.md) | Biological rationale, all primary effects, adaptive stop and limits |
+| [Source recovery](reports/SOURCE_RECOVERY.md) | Prior analyses, rejected candidates, donor identities and selected branches |
+| [Frozen configuration](config/pilot_v1.json) | Fixed cohorts, thresholds, gene exclusions and planned controls |
+| [Transfer execution](TRANSFER_EXECUTION.md) | Score definition and conditional stop declared before V1 effects |
+| [Exact 50-gene programme](tables/pilot_v1/frozen_programme.json) | Membership committed before transfer |
+| [Figures](figures/pilot_v1/README.md) | Coverage, discovery gates, gene effects and frozen transfer |
+| [Current status](tables/pilot_v1/pilot_status.json) | Executed stages and explicitly pruned P4 |
+| [Reproduction](REPRODUCING.md) | Inputs, scripts, safeguards and verification |
 
-## Pilot scope
+## Historical feasibility audit
 
-- Three settings: lung repair, normal lung development and differentiation in
-  one other epithelium. Prefer one species for the first pass.
-- One primary candidate gene program, evaluated against both trajectory
-  endpoints and appropriate stressed-cell controls.
-- Discovery in the two lung settings; a frozen transfer test in the other
-  tissue. Biological samples, rather than individual cells, determine replication.
-- A compact report and three figures supporting an **expand, narrow, stop or
-  unresolved** decision.
-
-A positive pilot supports a transferable transcriptional association. It does
-not establish universality, causal control, actual cell fate or transition rate.
-
-## Relationship to existing work
-
-A0 asks about conservation **across transitions and tissues**. The adjacent
-[A1 workspace](../A1_transitional_epithelial_state_distinction/) concerns
-transitional epithelial-state distinction. The existing
-[ES1 analysis](../../Thesis/epithelial_state_specificity/README.md) supplies
-signature provenance, overlap checks and measurement controls; its data and
-previously inspected findings are not untouched validation.
-
-The extended audit found nine complete repair triplets in a proposed days 10–15
-window, only one complete developmental barcode group (animal identities missing),
-and two qualifying mice among four explicitly mapped intestinal controls. The
-skin fallback has 34 capture batches from 19 mice without a recovered mapping.
-These are coverage findings, not a test of conservation. See the current report
-before proceeding to P1.
+The [original report](reports/PILOT_REPORT.md), `readiness.json`, `validation.json`
+and `execution_record.json` describe the 25 September audit, when no programme
+had been learned. Their blocked status is historical. Original tables are
+unchanged; the [documentation archive](history/feasibility_documentation.zip)
+preserves the original bytes of updated entry points. The
+[continuation plan](CONTINUATION_PLAN.md) records the subsequent input recovery.
+The original [plan](PLAN.md) and [candidate list](DATASET_CANDIDATES.md) remain
+available with repaired links to the canonical `Research Article/` directory.

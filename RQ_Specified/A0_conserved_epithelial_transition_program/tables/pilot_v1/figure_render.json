@@ -1,0 +1,21 @@
+{
+  "generator_sha256": "6a0917c7cd62727a6a92270820c358df925423d3e50e693bcd3330aa6ae07f8c",
+  "input_sha256": {
+    "eligibility.tsv": "9c5667f2236a4953fb90c91599e5416edb2eed6deb32a8d4c5d9e90d496b9af0",
+    "discovery_gene_effects.tsv.gz": "1fe5043db86e8930ad256b74e09b32d0a59e77c4d7ac3095764cabfaa4f79320",
+    "frozen_programme.json": "a14fabc419e9be86cbd114dca412db1c61f561457b6f21f59f1e02469d2e31f7",
+    "transfer_unit_differences.tsv": "fc5faf6236ecfde0d5f34435187ee415faac4777f39a087996ef98a06e5f43db",
+    "transfer_summary.tsv": "c8e479a5606225b2b938f3c289eb320332ae15c91ce5c931c73f8ac965a90d0f"
+  },
+  "figures": {
+    "01_biological_unit_coverage.png": "f737a8afba6592b63af6d64d216858f8c0792a3c78c20b6bacb37a20d530bfc6",
+    "01_biological_unit_coverage.svg": "ede3106a8a1c5320510639c313c53d50a87223f6a54ca94319f0e5b9b75855ff",
+    "02_discovery_gates.png": "3e0080e3ecfbec76f1dc8cf2a0b1607ab993172558a7d3e30e446e84bb74a781",
+    "02_discovery_gates.svg": "a3a431fa89ed80c9a56a2f6b8f2baeb116b912efc0517d6cdb070b2029703796",
+    "03_qualifying_gene_effects.png": "c910f282d4a9e7e2690f4f289e7e588e6d4df35444205d571c8f66458bc05195",
+    "03_qualifying_gene_effects.svg": "629582fc433fb196d989a306e7c20c186f43ccb4a1f5576093d4dbf9619b2e27",
+    "04_frozen_transfer.png": "22318687bd5873843444d544aed0d777de06bc2a21af923fef03f23803a2aacb",
+    "04_frozen_transfer.svg": "c259636a5b9151a28ede481cc791961eb20b92df015e3138a4524197a10cd084"
+  },
+  "visual_review": "pending"
+}

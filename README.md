@@ -44,6 +44,7 @@ Exploratory findings and independent confirmation are distinguished explicitly.
 | Every claim, decision authority and explicit numeric-check coverage | [Claim register](CLAIMS.md) and [generated summary](docs/CLAIM_SUMMARY.md) |
 | Corrected analyses and remaining limitations | [Implementation record](docs/remediation/2026-09-22/IMPLEMENTATION_STATUS.md) |
 | Commands, dependencies and data requirements | [Reproducibility guide](REPRODUCIBILITY.md) |
+| A0: conserved transition programme pilot | [Scientific result](RQ_Specified/A0_conserved_epithelial_transition_program/reports/PILOT_V1_RESULTS.md); [source recovery](RQ_Specified/A0_conserved_epithelial_transition_program/reports/SOURCE_RECOVERY.md) |
 | Completed organoid growth analysis and original eligibility gates | [A10 follow-up results](RQ_Specified/A10_organoid_growth_outcome/reports/FOLLOWUP_RESULTS.md); [historical dataset gate](docs/NEXT_DATASET_GATE.md) |
 | Nabhan 2018 source reproduction and animal-level Wnt analysis | [Wnt niche analysis](Research%20Article/gate1_03_nabhan_2018/README.md) |
 
@@ -75,6 +76,7 @@ override the claim register.
 | Branch | Figures and evidence |
 |---|---|
 | [Shared question gallery](analysis/figures/rq/README.md) | Measured panels, diagnostic figures and proposed designs supporting [A1–A14](RESEARCH_QUESTIONS.md), with captions and sources |
+| [A0: conserved epithelial transition programme](RQ_Specified/A0_conserved_epithelial_transition_program/figures/pilot_v1/README.md) | Biological-unit coverage, discovery and failed frozen intestinal transfer; [result and interpretation](RQ_Specified/A0_conserved_epithelial_transition_program/reports/PILOT_V1_RESULTS.md) |
 | [A1: regulatory, lineage and functional state distinction](RQ_Specified/A1_transitional_epithelial_state_distinction/figures/README.md) | Histone/H3, lineage, IRE1/CD44 evidence; resolved HPCS mice and region-dependent AP-1 outcomes; [latest report](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/REGULATORY_FATE_REPORT.md) and [reference map](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/ANALYSIS_REFERENCE_MAP.md); causal regulation-to-fate linkage remains unresolved |
 | [Niethamer: viral injury and repair](Research%20Article/gate1_01_niethamer_2025/README.md#figure-gallery) | Animal-level tracing/cycling, myeloid composition and programme-inference sensitivity; links to phase, lineage and batch galleries |
 | [Choi: epithelial states](Research%20Article/gate1_02_choi_2020/README.md#figure-gallery) | Deposited in vivo and organoid state maps, with links to specificity and chromatin analyses |

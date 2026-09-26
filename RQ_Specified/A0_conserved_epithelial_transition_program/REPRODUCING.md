@@ -1,83 +1,110 @@
-# A0 reproduction and required inputs
+# Reproduce the A0 scientific pilot
 
-Current result: feasibility audit completed; P1–P4 blocked. The authoritative
-status is [readiness.json](readiness.json), with interpretation in the
-[pilot report](reports/PILOT_REPORT.md).
+The current run is specified by [pilot_v1.json](config/pilot_v1.json), executed in
+[tables/pilot_v1](tables/pilot_v1), and interpreted in the
+[pilot results](reports/PILOT_V1_RESULTS.md). The original feasibility audit is
+historical; its output tables and JSON records have not been rewritten.
+Original documentation is preserved in
+[the archive](history/feasibility_documentation.zip), with a
+[migration record](history/documentation_migration.json).
 
-## Reproduce the executed work
+## Inputs and environment
 
-Run from the repository root in PowerShell using the working x64 Python runtime.
-The repository environment launcher supplies the numerical packages. These
-commands reuse the source cache and do not access the network or score expression.
+Use Python 3.12 with NumPy, pandas, SciPy, h5py and matplotlib. The executed
+versions are recorded in `tables/pilot_v1/environment.json`. Count preparation streams the
+large source export and writes integer count arrays; it does not load the full
+163,236-cell developmental atlas into RAM. Allow roughly 2 GB of working memory
+and several GB of disk space. Runtime depends strongly on text parsing and disk
+speed; downloaded caches should be reused.
+
+The [continuation manifest](continuation_source_manifest.json) records public
+URLs, byte counts and SHA-256 hashes. Its entries include inspected but rejected
+candidates, which are not analysis inputs. The definitive input subset and exact
+hashes are in [preparation.json](tables/pilot_v1/preparation.json), plus the
+[GEO/author identity check](tables/pilot_v1/source_identity.json).
+
+| Input | Expected location in a reproduction checkout |
+|---|---|
+| Strunz cell metadata | A0 `cache/sources/GSE141259_HighResolution_cellinfo.csv.gz` |
+| Strunz genes, barcodes, raw count matrix | A5 `cache/GSE141259_HighResolution_{genes.txt,barcodes.txt,rawcounts.mtx}.gz` |
+| Sountoulidis author metadata, integer matrix, independent GEO raw H5 and GEO SOFT | A0 `cache/continuation_v1/` using the filenames in the run record |
+| Haber full UMI matrix | A0 `cache/continuation_v1/Haber_counts.txt.gz` |
+| MGI one-to-one homology source | A0 `cache/continuation_v1/MGI_MouseHuman.rpt` |
+| Haber mouse mapping | Tracked `tables/v1_haber_verified_mouse_mapping.csv` |
+
+The Strunz files are public GSE141259 HighResolution supplements. The original
+[source manifest](source_manifest.json) records the metadata URL; the existing
+A5 source audit/scoring scripts identify the other supplements. Obtain the
+recorded bytes and verify SHA-256 before reproducing: a current download from a
+mutable URL, especially MGI, may differ. Do not silently substitute updated maps.
+The helper `scripts/continuation_fetch.py NAME URL --max-bytes LIMIT` downloads
+bounded public sources into the continuation cache without overwriting them.
+
+## Run in a separate reproduction checkout
+
+The delivered tables are execution evidence. Scripts refuse to overwrite their
+own output files. In a separate checkout, preserve the delivered
+`tables/pilot_v1/` and `figures/pilot_v1/` directories as reference copies outside
+their normal paths before running. Start with no `processed/pilot_v1/` directory.
+No primary-checkout files need to be deleted. Keep the historical mouse mapping.
+
+From the reproduction repository root, with its scientific Python active:
 
 ```powershell
-$a0Python = 'C:/Users/dream/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'
-$a0Root = 'RQ_Specified/A0_conserved_epithelial_transition_program'
-$a0Scripts = @('audit_local_coverage.py', 'audit_public_metadata.py',
-  'plot_p0_coverage.py', 'write_p0_report.py', 'audit_extended_coverage.py',
-  'write_feasibility_report.py', 'verify_a0.py')
-foreach ($a0Script in $a0Scripts) {
-  & $a0Python analysis/scripts/run_with_environment.py `
-    --site-packages .venv-x64/Lib/site-packages "$a0Root/scripts/$a0Script"
-  if ($LASTEXITCODE -ne 0) { throw "A0 failed at $a0Script" }
-}
+$a0Scripts = 'RQ_Specified/A0_conserved_epithelial_transition_program/scripts'
+python "$a0Scripts/10_verify_source_identity.py"
+python "$a0Scripts/11_prepare_pilot.py" --legacy-root . --a5-source-root .
+python "$a0Scripts/12_discover_pilot.py"
 ```
 
-`audit_public_metadata.py` refreshes the GEO metadata inventory, including the
-skin study. `write_feasibility_report.py` applies the current reviewed candidate
-decisions. The initial P0 report remains historical. After changing a figure,
-visually inspect it before updating the figure-review record.
+The execution used reusable inputs in other local checkouts through the two
+explicit root arguments; these paths are provenance, not portable requirements.
+All biological units, state choices, count floors, ortholog rules and thresholds
+are fixed in the configuration before discovery. The full deposited gene set
+supplies each pseudobulk library total; the shared ortholog set supplies candidates.
 
-Public cache files are excluded from Git. `source_manifest.json` contains their
-URLs, sizes, retrieval modes, dates and SHA-256 hashes. To fetch a missing source,
-use `scripts/fetch_source_metadata.py NAME URL --max-bytes LIMIT`, setting LIMIT
-above its recorded size. Add `--gzip-first-line` only for the intestinal matrix
-header and `--accept application/octet-stream` for `Negretti_obs.bin`. The header
-hash covers the saved decompressed header, not the remote expression matrix.
-Full PDF downloads are source documents, not expression data.
+Read `tables/pilot_v1/frozen_programme.json` before continuing. A
+`STOP_NO_QUALIFYING_COMMON_MODULE` decision prunes transfer and specificity
+scoring. It is not permission to choose a smaller module, change the branches or
+relax the thresholds. A valid module must be committed before any V1 programme
+scores are examined. The delivered run passed discovery, froze the 50-gene module,
+and ran `13_transfer_pilot.py` once. Transfer failed the mature-endpoint criterion,
+so P4 was pruned under [the pre-V1 rule](TRANSFER_EXECUTION.md). Any additional
+analysis needs a separately justified plan.
 
-Metadata downloads require network access in a sandboxed session. Previously
-observed failures: NCBI's main www host did not resolve; its public FTP host over
-HTTPS worked. Some PMC and publisher pages were unavailable to automated tools;
-author code, GEO, the author viewer and accessible primary-study copies were used.
-Do not treat an inaccessible document as evidence that metadata do not exist.
+```powershell
+python "$a0Scripts/14_verify_pilot.py"
+# Commit the valid frozen_programme.json before this step.
+python "$a0Scripts/13_transfer_pilot.py"
+python "$a0Scripts/17_verify_transfer.py"
+python "$a0Scripts/15_plot_pilot.py"
+```
 
-## Required cohort metadata
+The numerical verifier independently recomputes all saved discovery decisions
+and probes raw counts with scalar arithmetic. Portable tests run without raw
+caches or scientific packages: they check saved arithmetic, biological-unit
+eligibility, hashes and the preservation of the original feasibility evidence.
+CI does not redownload or rerun the scientific analysis. Inspect the rendered
+figures and record their current hashes after visual review, using the delivered
+`figure_review.json` as the record format. Then run the portable checks:
 
-Provide one row per cell, with these fields or an explicit mapping to them:
+```powershell
+python -m unittest discover -s analysis/tests -p test_a0_pilot_contract.py -q
+```
 
-| Field | Requirement |
-|---|---|
-| `cell_id` | Unique and matches the count matrix exactly |
-| `library_id` | Original capture/sequencing library |
-| `biological_unit_id` | Verified mouse/donor or prespecified independent pool |
-| `unit_type` | Individual animal, donor, or independent pool |
-| `pool_members` | If pooled, membership and evidence of non-overlap across units |
-| `technical_replicate_of` | Connects multiple libraries from the same unit |
-| `time_or_age` | Sampling time with units and a defined biological stage |
-| `condition`, `genotype`, `sort_strategy` | Establish comparable sampling and exclusions |
-| `author_state` | Source label, preserving uncertain/unassigned labels |
-| `state_role` | Source-supported starting, intermediate or destination state for one branch |
-| `label_evidence_source` | Paper/table/code and independent temporal, fate or tissue evidence |
-| `qc_or_doublet_status` | Source QC provenance; missing status must be explicit |
+Two interrupted preparation attempts are documented under
+`tables/preparation_attempt1_interrupted/` and
+`tables/preparation_attempt2_interrupted/`; their partial counts remain ignored.
+The changes were limited to sequential storage and equivalent integer parsing.
+No programme effects were computed during those attempts.
 
-Do not fill missing animal identities with library IDs. Combine technical repeats
-only when their shared biological origin is documented. A donor with two libraries
-is one unit. Independent pools count as pools, not as the number of their members.
+## Historical audit
 
-## Conditions for resuming P1
-
-1. D2 and V1 each have ≥3 independently identified units with ≥30 cells in all
-   three states. Same-day replication is not obligatory if the paired across-time
-   estimand and limits are explicitly frozen.
-2. State definitions and transition evidence are reviewed without examining the
-   candidate program's enrichment. Early embryonic and postnatal branches stay distinct.
-3. Matching raw counts, gene IDs, technical-replicate relationships and assay
-   coverage are available. The developmental viewer's SCT export is not raw counts.
-4. Freeze selected cohorts, exclusions, label-gene exclusions, scoring, effect
-   criteria and source hashes before discovery. Record all prior exposure.
-5. Run the original P2–P4 sequence only after these requirements pass.
-
-Capture estimates in `tables/developmental_capture_planning.csv` are illustrative
-sampling calculations. They neither satisfy these conditions nor estimate power
-for detecting or transferring a gene program.
+The old `readiness.json`, `validation.json`, `execution_record.json` and
+`reports/PILOT_REPORT.md` describe the 25 September feasibility audit. They are
+not current execution status. Its unnumbered audit/report scripts regenerate
+those historical outputs and some reference the pre-migration `Thesis/` layout;
+do not run them over this completed pilot. Commit `4ed38ff` and the documentation
+archive preserve that original state. Current source-paper analyses live in
+`Research Article/`; canonical links in the old plan/candidate list were repaired
+without changing their scientific decisions.

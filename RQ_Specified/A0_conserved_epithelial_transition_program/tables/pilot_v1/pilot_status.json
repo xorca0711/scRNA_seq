@@ -1,0 +1,39 @@
+{
+  "scientific_pilot_complete": true,
+  "status": "STOP_PRIMARY_TRANSFER_NOT_SUPPORTED",
+  "decision_scope": "Fixed 50-gene programme fails the specified intestinal intermediate-versus-both-endpoints transfer criterion; broader conservation and causal fate modulation unresolved.",
+  "stages": {
+    "P0": "recovered_eligible_inputs",
+    "P1": "frozen_before_effects_source_QC_scope",
+    "P2": "134_qualifying_genes_50_selected",
+    "P3": "completed_primary_transfer_not_supported",
+    "P4": "pruned_by_rule_declared_before_V1_scores"
+  },
+  "orthologs": 11590,
+  "biological_units": {
+    "D1": 9,
+    "D2": 11,
+    "V1": 3
+  },
+  "primary_cells": {
+    "D1": 3463,
+    "D2": 3560,
+    "V1": 1013
+  },
+  "V1_primary_rule_passed": false,
+  "specificity_tested": false,
+  "causal_fate_test_performed": false,
+  "historical_claim_grades_changed": false,
+  "verification": {
+    "discovery": "PASS",
+    "transfer": "PASS",
+    "figures": "visually_checked"
+  },
+  "evidence_sha256": {
+    "discovery_run.json": "48e6395c55eb06206ed744a91bc0c3a4eb057f305a6736c1936752a13a511d7d",
+    "transfer_run.json": "c5455acc98826abba13dbaa9cf88c09e1c29e850c32dd5faa131271ffe3b2df0",
+    "verification.json": "b839c3565200d887049be704d70106d6632ebd86f13ce06a2425a6f282979f94",
+    "transfer_verification.json": "0dc0453894a78bb1536db3f67bb8826626e20f4e9329f416ec5f9f50818eb167",
+    "figure_review.json": "d5c66295e41a62f407c46c3a214edd70fa222e4c40e113a5e68b315f47653bdb"
+  }
+}

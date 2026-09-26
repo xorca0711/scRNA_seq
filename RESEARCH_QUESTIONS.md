@@ -10,7 +10,7 @@ and fibroblast contributions to injury responses. Those interpretations are
 scientific propositions to distinguish from alternatives, not just criticisms
 of markers or analysis tools.
 
-**Rewritten 25 September 2026.** All A1–A14 identifiers remain; A12-S1 remains an
+**Rewritten 25 September 2026; A0 registered 26 September.** All A1–A14 identifiers remain; A12-S1 remains an
 enabling source-identity question. There is no fixed number of “surviving” RQs.
 Related questions share evidence but retain separate tests and decisions.
 
@@ -37,6 +37,7 @@ recovery endpoint, and population persistence does not trace the same cells.
 
 | ID | Biological hypothesis / decisive endpoint | Motivation | Readiness and next task |
 |---|---|---|---|
+| [A0](#a0) | A conserved transition-associated programme may contribute to epithelial fate modulation | Related transitional RNA states across repair and development; shared fate control remains a hypothesis | [Pilot complete](RQ_Specified/A0_conserved_epithelial_transition_program/reports/PILOT_V1_RESULTS.md): 50-gene lung signature fails the mature intestinal endpoint; P4 pruned; universal/causal fate claims unresolved |
 | [A1](#a1) | Regulatory features distinguish RNA-similar transitional states and responses | Direct marks, lineage, perturbation and paired CD44 context contrasts | Adaptive batch complete; matched replicated regulatory/fate linkage remains missing |
 | [A2](#a2) | Functional AREG source contributions vary with context | Source RNA distributions; dominance unresolved | Conditional; source perturbation with receiver endpoint needed |
 | [A3](#a3) | Injury leaves a macrophage programme beyond normal aging | Late population composition | Age-matched controls and comparable sampling needed |
@@ -52,7 +53,9 @@ recovery endpoint, and population persistence does not trace the same cells.
 | [A13](#a13) | Fibroblast programmes add information beyond macrophage IL1B | Niche heterogeneity motivates joint association | Audit complete triads; current IPF arms below joint-model floor |
 | [A14](#a14) | Exposure duration and fibroblast reception separately affect recovery | Mechanistic follow-up to the repair/persistence question | Two decisions; withdrawal and recipient-specific data needed |
 
-The A1 continuation, A5/A11 revised tests and A10 outcome join/fits are complete.
+A0 completed its bounded pilot: the frozen programme fails the mature intestinal
+endpoint, and its conditional specificity work is pruned. The A1 continuation,
+A5/A11 revised tests and A10 outcome join/fits are complete.
 The A10 plate/design diagnostics and separately specified growth-block test have
 also run. Further A10 expansion now needs preparation identities and imaging/
 validation design evidence; stronger A1, A5 and A11 conclusions require the
@@ -62,6 +65,50 @@ The [logical review](docs/LOGICAL_RATIONALE_REVIEW.md) checks this sequence agai
 the actual measurements and implementation, with an adaptive follow-up order.
 
 ## Hypothesis cards
+
+<a id="a0"></a>
+
+### A0. Is a conserved programme reused across epithelial transitions, and could it modulate fate?
+
+**Hypothesis.** Different epithelia may reuse part of the cellular work needed to
+leave an established identity and acquire another. A shared RNA component is one
+possible observable consequence. Whether that component controls maturation,
+persistence or reversibility is a separate causal question.
+
+**Biological logic.** First establish the starting, intermediate and destination
+populations from each study's biological context. Compare the intermediate with
+both endpoints within mice or donors: a difference from the starting population
+alone could measure ordinary acquisition of destination identity. Seek one shared
+intermediate-enriched module in injury and normal development, then freeze it
+before testing another epithelium. Challenge any transferable association with
+stress, proliferation and measurement controls. Only matched perturbation and
+fate endpoints could subsequently support modulation of fate.
+
+**Current measurement.** The [A0 workspace](RQ_Specified/A0_conserved_epithelial_transition_program/README.md)
+contains the original feasibility audit and the separately specified scientific
+pilot. D1 is Strunz mouse alveolar repair; D2 is Sountoulidis human early airway
+development; V1 is Haber mouse intestinal enterocyte commitment. These are
+biologically distinct axes, not a single pooled trajectory. Source spatial and
+developmental evidence supports the comparison but does not trace the future of
+each sequenced cell. Read the [executed result and stopping decision](RQ_Specified/A0_conserved_epithelial_transition_program/reports/PILOT_V1_RESULTS.md)
+before proposing any further score or module. Of 134 qualifying genes, 50 were
+frozen. In three intestinal mice, the intermediate-minus-mature median is −0.0914
+score points with only one positive mouse; the primary transfer rule fails.
+Specificity work is pruned under the rule declared before V1 scores.
+
+**Relation to established work.** A5's external developmental signature supports
+partial recruitment in adult repair, not a universal transition machinery.
+A5/A11's shared contract contains pairwise overlaps rather than one three-context
+core. A1 addresses regulatory and response distinctions; A10 measures organoid
+growth. Those results motivate A0 without supplying its cross-tissue transfer or
+causal fate test. The [source recovery report](RQ_Specified/A0_conserved_epithelial_transition_program/reports/SOURCE_RECOVERY.md)
+records the analysis precedents, cohort decisions and prior exposure.
+
+**Scope of the decision.** The pilot requires 20–50 qualifying one-to-one orthologs
+under fixed four-contrast criteria. Failing that operational prediction cannot
+exclude a smaller shared component, conserved regulation with different RNA
+outputs, or all possible transition processes. A positive transfer would remain
+a state association. Neither outcome by itself resolves universality or fate.
 
 <a id="a1-which-regulatory-and-phenotypic-features-distinguish-transitional-epithelial-states-beyond-rna-markers"></a>
 <a id="a1"></a>

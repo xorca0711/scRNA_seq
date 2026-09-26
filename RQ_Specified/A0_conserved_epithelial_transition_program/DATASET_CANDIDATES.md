@@ -67,8 +67,8 @@ and report it before expanding the search or changing the scientific question.
 
 ## Relevant local and primary sources
 
-- [Niethamer project entry](../../Thesis/gate1_01_niethamer_2025/README.md)
-- [Choi study and deposit notes](../../Thesis/gate1_02_choi_2020/README.md)
-- [ES1 results and external sample coverage](../../Thesis/epithelial_state_specificity/results/SUMMARY.md)
-- [ES1 module definitions](../../Thesis/epithelial_state_specificity/modules.json)
+- [Niethamer project entry](../../Research%20Article/gate1_01_niethamer_2025/README.md)
+- [Choi study and deposit notes](../../Research%20Article/gate1_02_choi_2020/README.md)
+- [ES1 results and external sample coverage](../../Research%20Article/epithelial_state_specificity/results/SUMMARY.md)
+- [ES1 module definitions](../../Research%20Article/epithelial_state_specificity/modules.json)
 - [Ke et al. primary paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11945641/)

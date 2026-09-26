@@ -221,4 +221,4 @@ measurements; intermediate abundance alone cannot identify either rate.
 - [Strunz et al., Krt8 transitional state](https://www.nature.com/articles/s41467-020-17358-3): lung regeneration context and reported marker lists.
 - [Yui et al., YAP/TAZ-dependent colonic reprogramming](https://pmc.ncbi.nlm.nih.gov/articles/5766831/): mechanistic context for intestinal repair; dataset eligibility remains a separate question.
 - [Ge et al., skin lineage infidelity](https://pmc.ncbi.nlm.nih.gov/articles/PMC5510746/): functional plasticity during skin repair; not a substitute for a verified normal-differentiation cohort.
-- [ES1 plan](../../Thesis/epithelial_state_specificity/PLAN.md) and [results](../../Thesis/epithelial_state_specificity/results/SUMMARY.md): reusable local resources and known measurement/replication limits.
+- [ES1 plan](../../Research%20Article/epithelial_state_specificity/PLAN.md) and [results](../../Research%20Article/epithelial_state_specificity/results/SUMMARY.md): reusable local resources and known measurement/replication limits.

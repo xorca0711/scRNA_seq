@@ -3,7 +3,48 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-## Current: A10 design and model follow-up complete, 26 September 2026
+## Current: A0 scientific pilot complete, 26 September 2026
+
+Branch `codex/a0-scientific-pilot`, based on main `f4d98e3` (merged A10 PR #80).
+Start with the [A0 result](RQ_Specified/A0_conserved_epithelial_transition_program/reports/PILOT_V1_RESULTS.md)
+and [current status](RQ_Specified/A0_conserved_epithelial_transition_program/tables/pilot_v1/pilot_status.json).
+
+- The owner requested completion of the scientific pilot, then a PR. The original
+  local-only A0 audit is preserved in `4ed38ff`; it was not a completed biological
+  analysis. Current A0 is now registered under `RQ_Specified/` and the root index.
+- Recovery supplied 9 repair mice, 11 human developmental donors and 3 intestinal
+  mice at the unchanged floors. Branch amendments preceded programme effects.
+  All 39 developmental captures map to 17 author donors; technical captures do
+  not add n. Source count comparisons and every retained library total agree.
+- Configuration `b544cbc` preceded discovery. Of 11,590 shared orthologs, 134 met
+  every fixed gene criterion and 50 were selected. `f1a1df7` commits that module
+  before V1 scores; `e3e12a0` fixes transfer and conditional P4 stopping.
+- **Primary transfer fails:** intermediate-minus-stem median +0.2694 score points
+  (2/3 positive), intermediate-minus-mature −0.0914 (1/3 positive). Both endpoints
+  are required. P4 specificity work is pruned, not queued. Do not search alternate
+  modules or rescore controls to rescue this primary result.
+- This supports a selected shared lung RNA signature, not a universal programme
+  or causal fate modulation. Three transfer mice cannot establish equivalence or
+  biological absence. Source-QC, state/branch, species and platform limits remain.
+- Independent verification: 197,037 discovery checks, 3,320 raw effect comparisons,
+  302 transfer checks and 78 raw tied-rank probes pass. Four figures were inspected.
+  All 47 original feasibility artifacts remain hash-verifiable; four original
+  documents are archived because their current entry points/links were updated.
+- Worktree: `X:/GitHub/scRNA_seq/.worktrees/a5-a11-biological-tests`. New public
+  caches and count arrays are ignored there. Reused sources remain in the primary
+  checkout and `X:/GitHub/scRNA_seq-component-contract`. Two interrupted preparation
+  attempts are preserved; they computed no programme effects. The primary
+  checkout's unrelated local/untracked files were not changed.
+- The bounded scientific sequence is complete. Any different conservation or
+  fate test is a new design requiring its own evidence. No author contact,
+  Notion expansion, source-paper note or historical claim-grade change occurred.
+
+Local delivery checks passed: 45 tests ran with one skipped; 2,522 repository
+checks, 18 claim bindings, the tracked Nabhan evidence verifier, source compilation
+and whitespace checks passed. The layout validator now recognizes A0–A14 while
+preserving all pre-existing identifiers.
+
+## Previous: A10 design and model follow-up complete, 26 September 2026
 
 Branch `codex/a10-design-followup`, based on merged documentation PR #79
 (`290af2a`). Start with the
