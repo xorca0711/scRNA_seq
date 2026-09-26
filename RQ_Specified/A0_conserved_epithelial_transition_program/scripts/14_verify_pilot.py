@@ -57,7 +57,28 @@ def verify():
     # universe genes. No discovery helper or pseudobulk output is reused.
     probes={r['human']:r for r in rows[::max(1,len(rows)//32)]}
     probes.update({r['human']:r for r in selected or eligible})
-    max_raw_error=0;raw_checks=0
+    max_raw_error=0;raw_checks=0;library_qc={}
+    # Verify persisted matrix orientation and every retained cell's denominator.
+    # V1 is used only for library QC here, never for programme effects.
+    for role in ['D1','D2','V1']:
+        gene_names=json.loads((WORK/f'{role}_genes.json').read_text())
+        cells=pd.read_csv(WORK/f'{role}_cells.tsv',sep='\t')
+        path=WORK/f'{role}_counts.bin'
+        assert path.stat().st_size==4*len(gene_names)*len(cells)
+        matrix=np.memmap(path,mode='r',dtype=np.int32,shape=(len(gene_names),len(cells)))
+        totals=np.zeros(len(cells),dtype=np.int64)
+        for begin in range(0,len(gene_names),512):
+            block=matrix[begin:begin+512,:]
+            assert np.min(block)>=0
+            totals+=block.sum(axis=0,dtype=np.int64)
+        np.testing.assert_array_equal(totals,cells.library_total.to_numpy())
+        library_qc[role]=dict(cells_verified=len(cells),minimum_total=int(totals.min()))
+        if role=='D2':
+            discrepancy=cells.deposited_metadata_total.to_numpy()-totals
+            library_qc[role].update(metadata_minus_deposited_gene_total_min=int(discrepancy.min()),
+                                   metadata_minus_deposited_gene_total_median=float(np.median(discrepancy)),
+                                   metadata_minus_deposited_gene_total_max=int(discrepancy.max()))
+        del matrix
     for role in ['D1','D2']:
         gene_names=json.loads((WORK/f'{role}_genes.json').read_text())
         index={g:i for i,g in enumerate(gene_names)}
@@ -78,7 +99,7 @@ def verify():
         del x
     return dict(status='PASS',completed_utc=datetime.now(timezone.utc).isoformat(),verifier_sha256=sha(Path(__file__)),
                 summary_checks=checks,raw_count_probe_genes=len(probes),raw_count_comparisons=raw_checks,
-                maximum_summary_error=max_summary_error,maximum_raw_error=max_raw_error,
+                maximum_summary_error=max_summary_error,maximum_raw_error=max_raw_error,library_qc=library_qc,
                 source_raw_count_comparisons=prep['raw_count_comparisons'],programme_decision=frozen['status'],
                 eligible_genes=frozen['eligible_genes'],selected_genes=frozen['selected_genes'])
 
