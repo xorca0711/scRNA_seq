@@ -1,0 +1,15 @@
+{
+  "units": 4,
+  "wells_per_unit": 60,
+  "rank_space": 12960000,
+  "smallest_attainable_one_sided_p": 7.71604938271605e-08,
+  "smallest_attainable_p_scientific": "7.72e-08",
+  "alpha": 0.05,
+  "critical_rank_sum_at_alpha": 64,
+  "p_at_critical_sum": 0.04903,
+  "mean_rank_needed": 16.0,
+  "mean_percentile_needed": 0.2667,
+  "exact_size_of_the_joint_rule": 0.04903,
+  "joint_rule": "rank sum at or below the critical value and the well below its unit median in at least 3 of 4 units",
+  "reading": "The joint rule is conservative: its exact size is below the nominal alpha, so a rejection is not an inflated test. The design cannot reach a small p by consistency alone; it needs the well near the bottom of its unit in most units."
+}

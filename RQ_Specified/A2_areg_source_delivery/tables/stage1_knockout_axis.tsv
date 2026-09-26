@@ -1,0 +1,8 @@
+gene	found_in_sheet	libraries_targeted	mean_log2cpm_targeted	mean_log2cpm_other	difference	verdict
+Areg	yes	4	6.226	7.267	-1.042	reduced when targeted
+Egfr	yes	4	0.933	1.967	-1.034	reduced when targeted
+Erbb2	yes	4	3.147	5.589	-2.441	reduced when targeted
+Erbb3	yes	4	5.718	6.229	-0.511	reduced when targeted
+Erbb4	yes	4	0.0	0.367	-0.367	reduced when targeted
+Itgb6	yes	4	7.043	8.181	-1.138	reduced when targeted
+Hbegf	yes	4	5.734	7.656	-1.921	reduced when targeted

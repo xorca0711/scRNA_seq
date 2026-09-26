@@ -1,0 +1,560 @@
+{
+  "question": "has any per-target fibroblast endpoint contrast already been computed in this repository",
+  "files_inspected": [
+    {
+      "file": "AI_CONTEXT.md",
+      "sha256": "97c67d023f2d91fa15f55640ccd6791145367ab008eb16d46ae40d2a7736fe10",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": true
+    },
+    {
+      "file": "RQ_Specified/A10_organoid_growth_outcome/config/a10_revised_specification.json",
+      "sha256": "89bff2937fd3ae323ac2ef6b29db58548d7833611f9028befa5ffe5254a7c18e",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": true
+    },
+    {
+      "file": "RQ_Specified/A10_organoid_growth_outcome/tables/hallmark_coverage.tsv",
+      "sha256": "e188ca1f2da55e7084cfa6bcb0e0d9ed44ac0dec7cbd77d0b251d2e5cd87044b",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "RQ_Specified/A10_organoid_growth_outcome/tables/hallmark_extract_run.json",
+      "sha256": "0edd78fdfaa60d8a21334855d9d54a4aa18f6a58440e9536e317b78c18af8b2f",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "RQ_Specified/A2_areg_source_delivery/PLAN.md",
+      "sha256": "6529ec71ad5d27944727013f4d91b02978d543dc79820bb494a05f9a28db82b3",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": true
+    },
+    {
+      "file": "RQ_Specified/A2_areg_source_delivery/config/a2_delivery_contract.json",
+      "sha256": "3d5cd67fbccfe49a397ba10a5f7e49e2e637661192e5911f737597e5bec75fd8",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": true
+    },
+    {
+      "file": "Research Article/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_hallmark_PC_capillary.csv",
+      "sha256": "a9fd9ce2c19a648531224a6e2734732d8377219a4a9b1b90c94500f102f922fa",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_hallmark_PC_myeloid.csv",
+      "sha256": "4a2c96f710002311c19730fb4c83e6048b14def585735f575c10049039160836",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_hallmark_TEST_capillary.csv",
+      "sha256": "59354dfda620ce388bef7d73c1bae93ea80dd0b2dd4f7d8c48e037b755a85008",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate1_01_niethamer_2025/trials/g1_gsea_by_phase/g1_hallmark_TEST_myeloid.csv",
+      "sha256": "9b76571ee9a75c354ba0d547e6fd85cf98fe40fc6cb9a0742b5a744ec6d52f60",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate1_01_niethamer_2025/trials/g1b_corrected_positive_control/g1b_hallmark_PC_capillary.csv",
+      "sha256": "ffd6b8579b01119991d3aba36d7080cea2cec14556097babfe823d2b69e4c533",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate1_01_niethamer_2025/trials/g1b_corrected_positive_control/g1b_hallmark_PC_myeloid.csv",
+      "sha256": "49b34d7854c3589ab1e8bd362212ff06e4f2814e36bb1d5e2d2dba45ea465968",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_hallmark_GSE135893_macrophages.csv",
+      "sha256": "89f2444729e9a9160e7931fa0e00d9748ef26943394e6bfa70b9a840719a10dc",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_hallmark_GSE136831_AT2.csv",
+      "sha256": "8591cb63762e50cab7b8cf914cb2fd8f62c455f1354eaaf2b207654c71b8fd1c",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_hallmark_GSE136831_fibroblasts.csv",
+      "sha256": "8e151f5380fd82a1368b44cd51e0a91d1c7145244fdde2f189a22095078329ca",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_hallmark_GSE136831_macrophages.csv",
+      "sha256": "44b23234295bfd68b4626a72e81364dc2cadd3b01f00d515a952ff9e7d1f4aa6",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_replication.csv",
+      "sha256": "b4a935cd14ef5c765bf2cb3ab572598814ba3f042072c5efe4aa9a6cf1bfc18a",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate1_01_niethamer_2025/trials/g2_gsea_ipf/g2_summary.md",
+      "sha256": "fc141bce63332e2b3744a8886b5e70712aa3204b0eb7228fe03b376a2e1a8c05",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate1_04_sikkema_2023_hlca/README.md",
+      "sha256": "b2bd3460eb974a2d5704af40070631235cb6dae7e2038a758da45f27382731c7",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_05_cardoso_2026/cardoso_2026_extracts.json",
+      "sha256": "16eee8a9084f527c7a64151f8fece67485218e321d94f6e0cd0077378d5a2683",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": true
+    },
+    {
+      "file": "Research Article/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling.py",
+      "sha256": "bf700c06f97dbe475bbbc601ce163f3db52eaf96123c1ed092d92487f9275983",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling/e6_per_donor.csv",
+      "sha256": "dd558fdd64da1a8ab67b51bc35c9622acee5ee3c8e82d6aac8f109d79cd59fc7",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_05_cardoso_2026/trials/e6_donor_level_axis_coupling/e6_run_record.json",
+      "sha256": "c880d4175e849a9a15f1fc2b56a19a0e0f05474ed7b29d8ac5f3725553b2d133",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u4_mouse_niche/camera.csv",
+      "sha256": "be3cfe9796bfdf66119f6e58f7d457a65901c601166db1f2e40d89e593824c54",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u4_resources/compartment_sets.tsv",
+      "sha256": "5a17b804db707ca6e0ddb43029450ce2db4177cc1fb94ff813ed85f3947dcd25",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u4_resources/pathway_genes.tsv",
+      "sha256": "d1c97287becf99820e6013bf7485ec2b93d465ebe874f8ff508f4b78383a15fe",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u4_resources/strict_one_to_one_orthologs.csv",
+      "sha256": "d2a5bc6e2a11f685afeeb214dc7fade9f7aaafa0036cc364d2c28a89ca83df87",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_freeze_ipf_spec.py",
+      "sha256": "7e7eedddc064ff46ed52bc40e052361fccf04a4ac89dcec0f65db95f81938027",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_ligand_targets/full_fit_mapped_targets.csv",
+      "sha256": "50a807ec74cf07e1a50a140946bf421943d8ba85c665c985f93f41084b0ebe49",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_ligand_targets/prior_ligand_receptor.csv",
+      "sha256": "2e37c9a879227fd3c600dc21a3efc4fa1c7c6eb1e345e96bd8955dd99dcbbd20",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_niche/camera.csv",
+      "sha256": "067388109a7839e63cb191935ebb18742099d292058c6aef3e96ad7a8d7e7ad0",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_niche/pathway_assay_coverage.csv",
+      "sha256": "753650dc5486d67ec866700688b744094e2ecb2cd6d7529b7e6439837d70c789",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_pilot/input_specification.json",
+      "sha256": "56926e6529f21d553305f4e3b43a9bab1abf6fd262c84fd3dd46a6d3a8027dad",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_human_pilot/panel_assay_coverage.csv",
+      "sha256": "3d6862c9681968d1e4ed61d3505cf1965ab24f58f2e6b3b98e8d392602071d62",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE135893_camera.csv",
+      "sha256": "7993843239706db80ef0227b742b74d08dbaf84fd6f90f17be8af1fb2dea3ba8",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_pathways/GSE136831_camera.csv",
+      "sha256": "7a85c5791bbeaae8e2466c82b535bd4636fde40db38e7dd7849fde6291ac56f9",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_spec/compartment_sets.tsv",
+      "sha256": "85d670e72f4681167fc208b7101d44da4813951e47b914442b9430003ca507fc",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_spec/pathway_genes.tsv",
+      "sha256": "46d7db90ff87a6c9c68913575ab5935c7b26dc515c2b5d8e907ea838bb7db869",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_ipf_spec/specification.json",
+      "sha256": "2a2f123513a9a169e681c9ee8eef6b7b53ec45d8229edbd7323d67e224c00e5a",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_ligand_targets/GSE135893/prior_ligand_receptor.csv",
+      "sha256": "2e37c9a879227fd3c600dc21a3efc4fa1c7c6eb1e345e96bd8955dd99dcbbd20",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_ligand_targets/GSE136831/full_fit_mapped_targets.csv",
+      "sha256": "d5c6ee259c2c597d0f981bdbe23e88d61094e44210e3d3ff3ebe0ec4dbf40115",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_ligand_targets/GSE136831/prior_ligand_receptor.csv",
+      "sha256": "2e37c9a879227fd3c600dc21a3efc4fa1c7c6eb1e345e96bd8955dd99dcbbd20",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_spatial_context/paired_patient_values.csv",
+      "sha256": "9d6bb04b25af8caf4bbd87fb0ee549db21afb1e753fa7310055b23dd557aebd5",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_spatial_context/paired_section_summary.csv",
+      "sha256": "8326e048ae621bd64eba8e79c0dba7346c0cb9f1652a4100624ddaff853239aa",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_spatial_context/patient_histology_programs.csv",
+      "sha256": "cfeb8c039ed9036ff02fe350cd204115566f2770f378b0f716018dbf7e2c2ccb",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_spatial_context/postviral_descriptive_contrasts.csv",
+      "sha256": "2d0e4f7a8206f8c6b8be60f4205b4629db863f2884e21e4b0ae1969cd2da25df",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_spatial_context/postviral_individual_sample_programs.csv",
+      "sha256": "a63853a76f64695056fec8ff7bdad02ecdc747c1759f076a3dfe13e438e9288b",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_spatial_context/program_coverage.csv",
+      "sha256": "bdce9acbf60f2593ced9ffb1318e6abf3ad0d99c0b6ffa90dbc8d373b6b28613",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u5_spatial_context/whole_section_programs.csv",
+      "sha256": "41192c5f670ecb548a3aae30211a7ab6cf2e952ff766436be776fac3eb630775",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/gate2_C3_yu_lee_choi_min_2026/trials/u6_completion/pathway_assay_fraction_sensitivity.csv",
+      "sha256": "ca576b93bcbdaede92f9bca241852b0e92f35e0b991e5470067f2725d9c0945c",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/ungated_murthy_2022/GSE178360/epithelial_subanalysis/figures/reference_aligned/reference_alignment_metadata.json",
+      "sha256": "021b578ebc3f5c6d558f21d8d13db93bac415e7a70ce7c60570444a231fbb9d8",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/ungated_murthy_2022/GSE178360/epithelial_subanalysis/tables/canonical_marker_fraction_expressing_by_cluster.csv",
+      "sha256": "01d3375cbca993355a4ef47139e304b214f55d32e7a6d13e8e17f6e8a3457535",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/ungated_murthy_2022/GSE178360/epithelial_subanalysis/tables/canonical_marker_mean_expression_by_cluster.csv",
+      "sha256": "1a6aaa2b5cf071fb1b259997028b650552980d6922ac56d604005580dc3c7e9e",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/ungated_murthy_2022/GSE178360/tables/canonical_marker_fraction_expressing_by_cluster.csv",
+      "sha256": "eab596af2afef15644c1c388b6e6d573fc7bafa9cd14d09aa2bfb09dccde849d",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "Research Article/ungated_murthy_2022/GSE178360/tables/canonical_marker_mean_expression_by_cluster.csv",
+      "sha256": "956cf0950c836db604d9ce8a86b10e7c565097d0afb66f1885bb4684f4c0dfac",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/corrections/ligand/results/lr/connectomedb2020_donor_pair_winners.csv",
+      "sha256": "a0aca92f12450d636ac60a472f796a301c41a60acbb2c851673b0c73c1ef1f2a",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": true
+    },
+    {
+      "file": "analysis/corrections/ligand/results/lr/consensus_donor_pair_winners.csv",
+      "sha256": "fb57032881fcd51a3db55b907efae7ad9f60944b9a49f1e9a08a4677c6ecab65",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": true
+    },
+    {
+      "file": "analysis/corrections/ligand/results/lr/italk_donor_pair_winners.csv",
+      "sha256": "e4fd49ee05a5abce4879ad4efb3fde71125c567bfb9ad2678acf1ef746fbdbcd",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": true
+    },
+    {
+      "file": "analysis/corrections/ligand/results/lr/resource_connectomedb2020.csv",
+      "sha256": "2ea6cf6ebb3b9038e8de413bfc19ec05279bc797c391877dd3218cdd90ff36c4",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/corrections/ligand/results/lr/resource_consensus.csv",
+      "sha256": "8ed134f6de7d2880a12a849ed5aec3f4d538ad6264f4b6178a1431f4c5df3a11",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/corrections/ligand/results/lr/resource_italk.csv",
+      "sha256": "10495a16dcc23722910273d37a030840f895e8de981214fe81d656a33cf49a17",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/corrections/statistics/tables/GSE135893_camera_candidates.csv",
+      "sha256": "87d2bd93091ebfabbff2923f75ce99f5477b74eba221f707a38cfb8d9a8c6443",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/corrections/statistics/tables/GSE135893_fixed001_camera_candidates.csv",
+      "sha256": "879fb3db5c48f50c1297d5f0cf636ffdd358638eaf2130b3694f4f6f9f380f78",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/corrections/statistics/tables/GSE135893_lodo_summary.csv",
+      "sha256": "13aa1cda5b55f8ceab345f1f764730009eacb493429d72a976ac06180aaa7e66",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/corrections/statistics/tables/GSE135893_subtype_camera.csv",
+      "sha256": "8180f2bb18caa18b2ff0a72b2eb459fcece7d2f6fad448d8797660b293d3963d",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/corrections/statistics/tables/GSE136831_camera_candidates.csv",
+      "sha256": "22797a4a2a3bb3f5b225e74e56959d732671acb502e7189e862b4015c8eea820",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/corrections/statistics/tables/GSE136831_fixed001_camera_candidates.csv",
+      "sha256": "3371155747fa49b961d7d2670aafb32926c818a0844cf29337b307f19d586c88",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/corrections/statistics/tables/GSE136831_lodo_summary.csv",
+      "sha256": "c95392fdf418f9b31d3cb0fe53a6405fb005553d77062e2c362e11c8f712df34",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/corrections/statistics/tables/GSE136831_subtype_camera.csv",
+      "sha256": "fdba9eb43821ebd8d9afb18e289c8e4cc893c8dfe490a672bb70e4ac57fa6ee6",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/corrections/statistics/tables/g2_corrected_replication.csv",
+      "sha256": "778d3d631411f0304b5619b1fbb9d56ed15ea0fd8ec3f1fb0e6987eb2e72392c",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/corrections/statistics/tables/subtype_transcript_contributions.csv",
+      "sha256": "5dff0f07f00437b905732d52c4491fb59007d9c3393329c280e42616f0d6e835",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/figures/rq/il1b_context/AT2_PCA_features.csv",
+      "sha256": "d1b46734d88a7d6b770e6084950e6ddc879d025d4a53b339e4ed716e2c9683a2",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/figures/rq/il1b_context/D2_pathway_values.csv",
+      "sha256": "5b59c5ea752c076e117fab377de902c0c5ec810ce05e02bcf5a96a34c5a8c359",
+      "mentions_primary_set": true,
+      "mentions_activation_gene": false,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/scripts/08_reference_aligned_epithelial_umap.py",
+      "sha256": "ab5689261e9c834fa4df494816bb400853a8662f4e0561a14d48f56fb203f70a",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "analysis/scripts/markers.py",
+      "sha256": "37d6daa07ce89c9e7f4b3bcfbe36cd7d313c477794084a552bca5ebf52e33811",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "docs/migrations/2026-09-25-research-layout/manifest.json",
+      "sha256": "f3c8ee11cf83e6b8a3867979efe4998634de9a8481bf8f5826cb4d52066f98fa",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    },
+    {
+      "file": "docs/migrations/2026-09-25-rq-reframing/preservation_manifest.json",
+      "sha256": "181273882bb49c3f9f716dd74ceadbd98ee90c6854ec00e9d564e0de4a3e9335",
+      "mentions_primary_set": false,
+      "mentions_activation_gene": true,
+      "has_per_library_or_per_target_rows": false
+    }
+  ],
+  "a10_module_scores_fibroblast_columns": [
+    "fib__shared_remodelling",
+    "fib__development_specific",
+    "fib__lesion_specific",
+    "fib__injury_residual",
+    "fib__shared_D_and_I",
+    "fib__shared_I_and_L",
+    "fib__AT1_published_400",
+    "fib__AT2_published_400",
+    "fib__HALLMARK_P53_PATHWAY",
+    "fib__HALLMARK_HYPOXIA",
+    "fib__HALLMARK_INFLAMMATORY_RESPONSE"
+  ],
+  "a10_module_scores_contains_the_primary_endpoint": false,
+  "verdict": "blind: no tracked table pairs the declared endpoint with per-target rows",
+  "files_with_both_the_endpoint_and_per_row_structure": []
+}
