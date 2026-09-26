@@ -944,3 +944,22 @@ independent numerical/provenance checks passed; the figure was inspected. A
 matrix-orientation assertion and cross-language boolean parsing stopped two
 technical attempts before scientific outputs; their corrections are documented
 in the result report. Scientific acceptance remains for owner review.
+
+## Status synchronization and logical review, 26 September 2026
+
+| Date | Item | Proposed by | Decided by | Decision | Reason |
+|---|---|---|---|---|---|
+| 2026-09-26 | Synchronize merged status, then check the analysis rationale | Codex status review | Owner explicitly requested synchronization and rationale checking | Update current entry points and record an evidence-grounded logic review; no new scientific fit | A5/A11 and A10 results were merged while handoff/index text still queued their execution |
+
+| Date | Rejected or reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-26 | A10 cell-autonomous/niche separation, unique outcome novelty and total-tissue wording | Species separation identifies RNA origin, A1 already includes non-RNA outcomes, and the primary is mean organoid area | Codex corrected rationale under owner-authorized review; scientific acceptance not inferred |
+| 2026-09-26 | A10 conservative cross-scale margin and complete assay-validation language | Outcome centring changes SST; targeted-transcript reductions do not verify every edit or a prespecified imaging control | Codex code/evidence review; original specifications and numbers preserved |
+| 2026-09-26 | A10 implied protocol completeness and exhaustive metadata exclusion | Secondary BH inference and retained-model comparisons were not fully implemented; one sample record cannot exclude metadata elsewhere | Codex recorded limitations and a diagnostic-first follow-up order; no retrospective test invented |
+| 2026-09-26 | Shared-contract README's universal shared component and unchanged A5 input claim | The partition has two pairwise overlaps; revised A5 tests use additional external Guo modules | Codex aligned the entry point with the existing biological logic and completed results |
+
+The [review](docs/LOGICAL_RATIONALE_REVIEW.md) names the supporting reports,
+specifications, code and output tables. It retains the A5/A11 association results,
+qualifies the small A1 regional comparison and narrows A10's descriptive claim.
+No historical claim grade or numerical artifact was changed. Notion and source
+paper notes were not expanded; no author request was sent.

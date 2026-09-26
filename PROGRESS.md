@@ -3,9 +3,58 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-## Current: A5/A11 revised tests complete, 25 September 2026
+## Current: merged analyses and documentation review, 26 September 2026
 
-Branch `codex/a5-a11-biological-tests`; [PR #77](https://github.com/xorca0711/scRNA_seq/pull/77) is open for review. The owner authorized review revisions,
+Scientific baseline: main `32ded9b`, including merged A1 PR #74, A5/A11 PR #77
+and A10 PRs #76/#78. The latest A10 interpretation is the revised specification
+in #78. Repository CI passed on that baseline; it does not validate biological
+causation or recompute every analysis.
+
+- A1's feasible regulatory/outcome batch is complete; matched, replicated
+  regulation-to-fate evidence is still missing.
+- A5 supports partial external developmental-signature recruitment in 24 mice;
+  A11 lesion association replicates in eight patients, but its beyond-shared
+  criterion remains unresolved (BH q=0.0547).
+- A10's revised epithelial growth block adds 0.0426 under the within-unit metric
+  and clears the declared 0.02 margin in all four sensitivity settings. The
+  fibroblast block does not improve that model. Results are heterogeneous across
+  plates; preparation identities and independent generalization are unresolved.
+  Start with the [stage 4 report](RQ_Specified/A10_organoid_growth_outcome/reports/STAGE4_REVISED_REPORT.md).
+- Current delivery: `codex/sync-status-rationale`, reusing the clean A5/A11
+  worktree. The owner requested status synchronization followed by a logical
+  rationale check. Numerical outputs, frozen specifications and historical claim
+  grades are preserved. No new biological fit or author contact is part of this
+  documentation review; Notion remains concise and unchanged.
+- Next scientific work must address the explicit design and interpretation gaps,
+  rather than rerun completed joins or scores. A10 plate/design diagnostics and
+  simpler growth-block comparisons need a separate prospective specification.
+- Synchronization and [logical review](docs/LOGICAL_RATIONALE_REVIEW.md) are complete.
+  Current root/RQ entry points reflect the merged results; historical handoffs
+  are marked. A10 rationale now distinguishes RNA compartment from causal route,
+  mean size from repair, and same-screen adaptive association from confirmation.
+  The review records the unimplemented secondary BH and retained-model comparisons,
+  limited target-transcript diagnostic and incomplete preparation-metadata search.
+  These qualify interpretation without changing the recorded primary result.
+- Follow-up order: inspect plate/target/preparation structure; declare an amended
+  estimand, margin and model sequence; only then run an eligible plate holdout and
+  simpler growth-block comparison. No new fit was launched in this review.
+- Validation: repository documentation/artifact checks passed (2,388 checks);
+  the A10 numbers and diagnostic counts cited by the review match tracked tables.
+  The diff is Markdown-only and passes whitespace checks. Full repository CI
+  remains the delivery check on the review branch.
+
+The primary local checkout remains at `e9d79e0` with untracked local data;
+it was not switched or cleaned. Ignored caches also remain in the two worktrees.
+Do not archive a checkout without preserving the required inputs.
+
+## Historical handoffs
+
+The entries below describe earlier sessions. Their then-current task, authorization
+and branch wording is superseded by the current section and linked final reports.
+
+### A5/A11 revised tests complete, 25 September 2026
+
+Branch `codex/a5-a11-biological-tests`; [PR #77](https://github.com/xorca0711/scRNA_seq/pull/77) is merged. The owner authorized review revisions,
 execution and biological rationale. Start with
 [biological logic](RQ_Specified/A5_A11_shared_component_contract/BIOLOGICAL_LOGIC.md)
 and [results](RQ_Specified/A5_A11_shared_component_contract/reports/REVISED_TEST_RESULTS.md).

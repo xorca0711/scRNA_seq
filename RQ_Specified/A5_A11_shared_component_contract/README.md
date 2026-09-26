@@ -1,12 +1,12 @@
 # Shared epithelial component contract (A5 and A11)
 
-**Status: complete. The owner retained the frozen modules on 25 September 2026**
-(DEVELOPMENT decision 37). They are now the fixed inputs for A5 and A11, whose own
-work continues in [A5's folder](../A5_developmental_programme_reuse/README.md) and
-[A11's folder](../A11_lesion_programme_addition/README.md). Start with the
-[stages 2 and 3 report](reports/STAGE2_3_REPORT.md), then the
-[stage 1 source audit](reports/STAGE1_SOURCE_AUDIT.md). No expression score was
-computed here and no claim grade changes.
+**Status: contract and revised A5/A11 tests complete; PR #77 merged.** The owner
+retained the original partition on 25 September 2026 (DEVELOPMENT decision 37).
+It remains a provenance reference. The revised A5 primary instead uses additional
+external Guo modules because the original Strunz-filtered variants are descriptive.
+Results live in [A5's folder](../A5_developmental_programme_reuse/README.md) and
+[A11's folder](../A11_lesion_programme_addition/README.md); their interpretation and
+verification are collected here. Historical claim grades are unchanged.
 
 Start with [the biological logic and revised analysis sequence](BIOLOGICAL_LOGIC.md)
 and [the completed results](reports/REVISED_TEST_RESULTS.md). A5 supports partial
@@ -23,11 +23,12 @@ association, while its beyond-shared comparison remains unresolved.
 ## What this is
 
 Enabling work owned jointly by [A5](../../RESEARCH_QUESTIONS.md#a5) and
-[A11](../../RESEARCH_QUESTIONS.md#a11). Both hypotheses need the same object, a
-frozen shared epithelial remodelling component. Defined separately, their two
-results describe different baselines and neither constrains the other. Defined
-once, a three-way partition becomes statable: shared, development-specific and
-lesion-specific.
+[A11](../../RESEARCH_QUESTIONS.md#a11). One source-list partition makes overlap and
+exclusions traceable across both questions. It contains two disjoint pairwise
+overlaps, not a common programme demonstrated across all three contexts. Each
+question retains its own biological reference and test. The labels
+`development_specific` and `lesion_specific` mean exclusive within these selected
+lists; they do not establish specificity in biology.
 
 ## What this is not
 

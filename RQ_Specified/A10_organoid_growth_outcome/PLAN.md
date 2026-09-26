@@ -1,6 +1,13 @@
 # A10 analysis plan: epithelial and niche programmes against measured organoid growth
 
-25 September 2026. **Stage 1 only is authorized to run. Nothing is fitted.** The
+**Execution update, 26 September 2026:** the identity audit and both model
+specifications have run and merged in PRs #76/#78. Read the
+[stage 3](reports/STAGE3_FIT_REPORT.md) and [stage 4](reports/STAGE4_REVISED_REPORT.md)
+reports. The dated plan below preserves the original sequence and authorization
+state; its prospective wording is not the current task list. Frozen machine
+contracts are retained unchanged so their recorded hashes remain valid.
+
+Original plan, 25 September 2026: **Stage 1 only was authorized at declaration.** The
 biology and the argument are in [RATIONALE.md](RATIONALE.md); the machine-readable
 decisions in [`config/a10_outcome_contract.json`](config/a10_outcome_contract.json).
 This plan follows the register's [A10 card](../../RESEARCH_QUESTIONS.md#a10) and the
