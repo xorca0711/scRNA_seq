@@ -1,0 +1,346 @@
+[
+  {
+    "requested_url": "https://raw.githubusercontent.com/chanzuckerberg/cellxgene/1.1.1/server/app/app.py",
+    "resolved_url": "https://raw.githubusercontent.com/chanzuckerberg/cellxgene/1.1.1/server/app/app.py",
+    "retrieved_at_utc": "2026-09-25T13:37:03.914462+00:00",
+    "bytes": 8328,
+    "sha256": "e9507f1a1804beb746b5cb781be15e56380d04c5e3207fa95107add0b137651c",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "cellxgene_app.py"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/chanzuckerberg/cellxgene/1.1.1/fbs/matrix.fbs",
+    "resolved_url": "https://raw.githubusercontent.com/chanzuckerberg/cellxgene/1.1.1/fbs/matrix.fbs",
+    "retrieved_at_utc": "2026-09-25T13:39:02.103008+00:00",
+    "bytes": 1603,
+    "sha256": "07b2edc81e3172b88dc434498ada4131fd499b23f461945ac8209a56e90a6e95",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "cellxgene_matrix.fbs"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/chanzuckerberg/cellxgene/1.1.1/server/common/rest.py",
+    "resolved_url": "https://raw.githubusercontent.com/chanzuckerberg/cellxgene/1.1.1/server/common/rest.py",
+    "retrieved_at_utc": "2026-09-25T13:37:03.246388+00:00",
+    "bytes": 15782,
+    "sha256": "9f99b66082c710bba1f0fb5b0a31e58cb88eeaa9c81c9ced7033d4d061cdc4cf",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "cellxgene_rest.py"
+  },
+  {
+    "requested_url": "https://api.github.com/repos/chanzuckerberg/cellxgene/git/trees/1.1.1?recursive=1",
+    "resolved_url": "https://api.github.com/repos/chanzuckerberg/cellxgene/git/trees/1.1.1?recursive=1",
+    "retrieved_at_utc": "2026-09-25T13:38:26.612816+00:00",
+    "bytes": 155143,
+    "sha256": "c70f0d5ccd6165a572298ef724c4f35f880217a3313a1042a3d76d9588ebc90e",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "cellxgene_tree.json"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/soft/GSE141259_family.soft.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/soft/GSE141259_family.soft.gz",
+    "retrieved_at_utc": "2026-09-25T13:12:11.866985+00:00",
+    "bytes": 7438,
+    "sha256": "a90117b781e1803b30c3e42755e1184e8ae866054047c48f2e5d6284ae27c527",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "GSE141259_family.soft.gz"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_HighResolution_cellinfo.csv.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_HighResolution_cellinfo.csv.gz",
+    "retrieved_at_utc": "2026-09-25T13:13:50.088056+00:00",
+    "bytes": 1424472,
+    "sha256": "fe82e4a9c86720186c03c602148ea52118458e50a0847b869ce375b50a284da8",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "GSE141259_HighResolution_cellinfo.csv.gz"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_WholeLung_cellinfo.csv.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141259/suppl/GSE141259_WholeLung_cellinfo.csv.gz",
+    "retrieved_at_utc": "2026-09-25T13:13:47.550538+00:00",
+    "bytes": 383214,
+    "sha256": "80fcf055a4a1447cafca60c2c6978b209359137fdc4ddf62ec38aac3f9facd31",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "GSE141259_WholeLung_cellinfo.csv.gz"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE149nnn/GSE149563/soft/GSE149563_family.soft.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE149nnn/GSE149563/soft/GSE149563_family.soft.gz",
+    "retrieved_at_utc": "2026-09-25T13:12:10.792686+00:00",
+    "bytes": 3459,
+    "sha256": "8530191ae39bf673653e354a4d5b3caa418961dee17602347b6a937f686f3257",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "GSE149563_family.soft.gz"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE160nnn/GSE160876/soft/GSE160876_family.soft.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE160nnn/GSE160876/soft/GSE160876_family.soft.gz",
+    "retrieved_at_utc": "2026-09-25T13:12:13.029068+00:00",
+    "bytes": 4052,
+    "sha256": "9d78b8c12df4a7dfe6dc8727a46b184df24d36ea1e3ee7ca36ccd13e933708cc",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "GSE160876_family.soft.gz"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE165nnn/GSE165063/soft/GSE165063_family.soft.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE165nnn/GSE165063/soft/GSE165063_family.soft.gz",
+    "retrieved_at_utc": "2026-09-25T13:10:04.949409+00:00",
+    "bytes": 3740,
+    "sha256": "5ad6e5e3966aa00ae98314074b1093edde32573a166d3883cbaf7f3553818d80",
+    "cached_file": "GSE165063_family.soft.gz"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE254nnn/GSE254356/soft/GSE254356_family.soft.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE254nnn/GSE254356/soft/GSE254356_family.soft.gz",
+    "retrieved_at_utc": "2026-09-25T13:10:03.725774+00:00",
+    "bytes": 2450,
+    "sha256": "aac9c423e155f22422aa6b5a8848c1e53565464704737cb6fe9bb26f51070a2a",
+    "cached_file": "GSE254356_family.soft.gz"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE67nnn/GSE67602/soft/GSE67602_family.soft.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE67nnn/GSE67602/soft/GSE67602_family.soft.gz",
+    "retrieved_at_utc": "2026-09-25T13:42:28.370181+00:00",
+    "bytes": 99779,
+    "sha256": "4633d287dc5e6f48d94f7f385190117500af64d249777668b43cfe1dfe4dfa99",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "GSE67602_family.soft.gz"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_atlas_UMIcounts.txt.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_atlas_UMIcounts.txt.gz",
+    "retrieved_at_utc": "2026-09-25T13:12:14.627847+00:00",
+    "bytes": 242863,
+    "sha256": "2b08e7aa2482e99868dff7009a3bfa79e2821f9c363c72b5f78eedf3fcd00e6b",
+    "retrieval_mode": "decompressed_first_line_only",
+    "hash_scope": "saved_bytes",
+    "cached_file": "GSE92332_atlas_header.tsv"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/soft/GSE92332_family.soft.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/soft/GSE92332_family.soft.gz",
+    "retrieved_at_utc": "2026-09-25T13:10:06.370025+00:00",
+    "bytes": 70332,
+    "sha256": "72f48bdaabe304bf5e385159b16bb83e1ca41b6d3982422b4200f8e2e1633043",
+    "cached_file": "GSE92332_family.soft.gz"
+  },
+  {
+    "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_Supplementary_files_format_and_content_readme.txt.gz",
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92332/suppl/GSE92332_Supplementary_files_format_and_content_readme.txt.gz",
+    "retrieved_at_utc": "2026-09-25T13:13:51.301785+00:00",
+    "bytes": 695,
+    "sha256": "2cc1641f244fa60b519ae5b8b13926eeec09fb44e480bc300cc1e989212b1ebe",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "GSE92332_Supplementary_files_format_and_content_readme.txt.gz"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/adamh-broad/single_cell_intestine/master/Analysis.Rmd",
+    "resolved_url": "https://raw.githubusercontent.com/adamh-broad/single_cell_intestine/master/Analysis.Rmd",
+    "retrieved_at_utc": "2026-09-25T13:12:15.379277+00:00",
+    "bytes": 4823,
+    "sha256": "fed7768627931db9ceb8716e56ce3d8249a465f4f9a6556612c3e363ce5c1088",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Haber_Analysis.Rmd"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/adamh-broad/single_cell_intestine/master/README.md",
+    "resolved_url": "https://raw.githubusercontent.com/adamh-broad/single_cell_intestine/master/README.md",
+    "retrieved_at_utc": "2026-09-25T13:37:59.530602+00:00",
+    "bytes": 2946,
+    "sha256": "8e88bd1dff35f3810fbf845f28f221b5737e0f260633706f745782806c173bb1",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Haber_author_readme.md"
+  },
+  {
+    "requested_url": "https://api.github.com/repos/adamh-broad/single_cell_intestine/git/trees/HEAD?recursive=1",
+    "resolved_url": "https://api.github.com/repos/adamh-broad/single_cell_intestine/git/trees/HEAD?recursive=1",
+    "retrieved_at_utc": "2026-09-25T13:37:05.849462+00:00",
+    "bytes": 3908,
+    "sha256": "85559af346cbba782a2ccd76710021c00a630e1d8e8ef18444422a359d989e06",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Haber_github_tree.json"
+  },
+  {
+    "requested_url": "https://rcastoragev2.blob.core.windows.net/81daa2a94cd9b30216f22f26ab72a5fb/PMC6022292.pdf",
+    "resolved_url": "https://rcastoragev2.blob.core.windows.net/81daa2a94cd9b30216f22f26ab72a5fb/PMC6022292.pdf",
+    "retrieved_at_utc": "2026-09-25T13:45:28.548671+00:00",
+    "bytes": 6037641,
+    "sha256": "dfc47c9dcd2d8baa3767904ef1f055735c789fb3d593be299f786c883ff26b82",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Haber_manuscript.pdf"
+  },
+  {
+    "requested_url": "https://singlecell.broadinstitute.org/single_cell/study/SCP44/small-intestinal-epithelium",
+    "resolved_url": "https://singlecell.broadinstitute.org/single_cell/study/SCP44/small-intestinal-epithelium",
+    "retrieved_at_utc": "2026-09-25T13:39:03.204189+00:00",
+    "bytes": 25335,
+    "sha256": "d7287f34e7f04c50cb328c3a8e9a894fc83963003ba2187dc577ce63787ba48a",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Haber_portal.html"
+  },
+  {
+    "requested_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature24489/MediaObjects/41586_2017_BFnature24489_MOESM2_ESM.xlsx",
+    "resolved_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnature24489/MediaObjects/41586_2017_BFnature24489_MOESM2_ESM.xlsx",
+    "retrieved_at_utc": "2026-09-25T13:35:01.764730+00:00",
+    "bytes": 32333,
+    "sha256": "f97870f8f7fbab60d7104909e47cfa8d21519c935a1496c047f0fa862dead287",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Haber_Supplementary_Table1.xlsx"
+  },
+  {
+    "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5052454/fullTextXML",
+    "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5052454/fullTextXML",
+    "retrieved_at_utc": "2026-09-25T13:44:02.166984+00:00",
+    "bytes": 238512,
+    "sha256": "2cc9462da9032768ebac3c270e040e5c0aece3ac50bdc718a2d15e6042006a7a",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Joost_fulltext.xml"
+  },
+  {
+    "requested_url": "https://ars.els-cdn.com/content/image/1-s2.0-S2405471216302654-mmc1.pdf",
+    "resolved_url": "https://ars.els-cdn.com/content/image/1-s2.0-S2405471216302654-mmc1.pdf",
+    "retrieved_at_utc": "2026-09-25T13:45:31.067592+00:00",
+    "bytes": 12946427,
+    "sha256": "c40caf63d1ccb079f8fb6f834dec3e879e2a8572601b8c590e18649635cae88d",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Joost_supplement.pdf"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/SucreLab/LungDevelopment/master/all_cells/6_cellxgene_files.rmd",
+    "resolved_url": "https://raw.githubusercontent.com/SucreLab/LungDevelopment/master/all_cells/6_cellxgene_files.rmd",
+    "retrieved_at_utc": "2026-09-25T13:35:55.308399+00:00",
+    "bytes": 6828,
+    "sha256": "84125deabe32639e65f2139f499ba4c826e1d1dce39b6e45dea3bdb5d5174a4b",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Negretti_cellxgene.rmd"
+  },
+  {
+    "requested_url": "https://lungcells.app.vumc.org/",
+    "resolved_url": "https://lungcells.app.vumc.org/",
+    "retrieved_at_utc": "2026-09-25T13:35:09.371419+00:00",
+    "bytes": 3805,
+    "sha256": "f9ea620cabe41b6f59d0baea6c39ed84cccc845f6570b4770f8b5d026de5538b",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Negretti_cellxgene_landing.html"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/SucreLab/LungDevelopment/master/epithelium/1_epithelium.rmd",
+    "resolved_url": "https://raw.githubusercontent.com/SucreLab/LungDevelopment/master/epithelium/1_epithelium.rmd",
+    "retrieved_at_utc": "2026-09-25T13:39:58.954031+00:00",
+    "bytes": 12027,
+    "sha256": "dca31b2c2ef8c04749aa02e254fc7d685ddc50d9c290eb480687d8e080330d83",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Negretti_epi.rmd"
+  },
+  {
+    "requested_url": "https://lungcells.app.vumc.org/public/sucre/mouse_development_epithelium_revision/api/v0.2/config",
+    "resolved_url": "https://lungcells.app.vumc.org/public/sucre/mouse_development_epithelium_revision/api/v0.2/config",
+    "retrieved_at_utc": "2026-09-25T13:35:52.857044+00:00",
+    "bytes": 926,
+    "sha256": "222742485a83f3cf87fd614bd704b01fcfe184f0bfbdeae7b9e02dd91b5a82b9",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Negretti_epi_config.json"
+  },
+  {
+    "requested_url": "https://lungcells.app.vumc.org/public/sucre/mouse_development_epithelium_revision/api/v0.2/schema",
+    "resolved_url": "https://lungcells.app.vumc.org/public/sucre/mouse_development_epithelium_revision/api/v0.2/schema",
+    "retrieved_at_utc": "2026-09-25T13:35:53.879877+00:00",
+    "bytes": 687,
+    "sha256": "77362e8bf65245110225effc3ded816aa116d610683c9b438f5dffa810222ec4",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Negretti_epi_schema.json"
+  },
+  {
+    "requested_url": "https://api.github.com/repos/SucreLab/LungDevelopment/git/trees/HEAD?recursive=1",
+    "resolved_url": "https://api.github.com/repos/SucreLab/LungDevelopment/git/trees/HEAD?recursive=1",
+    "retrieved_at_utc": "2026-09-25T13:35:02.574391+00:00",
+    "bytes": 13488,
+    "sha256": "36db8fcfabe83ac324f54b73ee765efa866dcbc4f179ac6e98d4250191acd098",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Negretti_github_tree.json"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/SucreLab/LungDevelopment/master/1_load_and_transform/1_load_all_data.rmd",
+    "resolved_url": "https://raw.githubusercontent.com/SucreLab/LungDevelopment/master/1_load_and_transform/1_load_all_data.rmd",
+    "retrieved_at_utc": "2026-09-25T13:35:54.625807+00:00",
+    "bytes": 15933,
+    "sha256": "72bcc5a3b69cf2dd15d0fa37528629adcb71a5ea6b110cb66d589e4dc970765e",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Negretti_load.rmd"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/SucreLab/LungDevelopment/master/all_cells/1_merge_all_cells.rmd",
+    "resolved_url": "https://raw.githubusercontent.com/SucreLab/LungDevelopment/master/all_cells/1_merge_all_cells.rmd",
+    "retrieved_at_utc": "2026-09-25T13:39:58.277431+00:00",
+    "bytes": 27711,
+    "sha256": "274bd2b527c932b495cc6ad4146d52595c058f06586ef77e66077d17fcea60d6",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Negretti_merge.rmd"
+  },
+  {
+    "requested_url": "https://lungcells.app.vumc.org/public/sucre/mouse_development_epithelium_revision/api/v0.2/annotations/obs",
+    "resolved_url": "https://lungcells.app.vumc.org/public/sucre/mouse_development_epithelium_revision/api/v0.2/annotations/obs",
+    "retrieved_at_utc": "2026-09-25T13:37:58.190414+00:00",
+    "bytes": 444836,
+    "sha256": "86a93c1d431d132b53798114d9a814cbab281e9ffed40e8d9e2d36f86f724720",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Negretti_obs.bin"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/SucreLab/LungDevelopment/master/1_load_and_transform/2_remove_doublets.rmd",
+    "resolved_url": "https://raw.githubusercontent.com/SucreLab/LungDevelopment/master/1_load_and_transform/2_remove_doublets.rmd",
+    "retrieved_at_utc": "2026-09-25T13:42:25.383075+00:00",
+    "bytes": 4324,
+    "sha256": "e23b1da8637f33ef1b19dc9d980a99fa31fbf6e7987ac8708de93b79567bcbaf",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Negretti_remove_doublets.rmd"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/SucreLab/LungDevelopment/master/1_load_and_transform/3_sct_on_merge.rmd",
+    "resolved_url": "https://raw.githubusercontent.com/SucreLab/LungDevelopment/master/1_load_and_transform/3_sct_on_merge.rmd",
+    "retrieved_at_utc": "2026-09-25T13:41:18.076864+00:00",
+    "bytes": 2247,
+    "sha256": "43648e9d7fd83213a50b4553f909dcb0a023cde35c09afd68a3c395093512270",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Negretti_sct.rmd"
+  },
+  {
+    "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7366678/fullTextXML",
+    "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7366678/fullTextXML",
+    "retrieved_at_utc": "2026-09-25T13:35:07.526093+00:00",
+    "bytes": 201452,
+    "sha256": "9e83f2f631bfa19dfdc0cc9665e85eeb48e11bd5cf01dd23ae34fa440063fb28",
+    "retrieval_mode": "complete_file",
+    "hash_scope": "saved_bytes",
+    "cached_file": "Strunz_fulltext.xml"
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "stage": "P0",
+  "generated_at_utc": "2026-09-25T14:00:42.961358+00:00",
+  "script_sha256": "074b31223d52faafc1510c8d57bf38af9d42b4ff35845e1b288b09f58c0e8855",
+  "program_scoring_performed": false,
+  "strunz_high_resolution": {
+    "cells": 32559,
+    "samples": 32,
+    "triplet_units_all_times": 10,
+    "start_intermediate_units_all_times": 26,
+    "intermediate_destination_units_all_times": 10,
+    "max_triplet_units_same_time": 2
+  },
+  "strunz_whole_lung": {
+    "cells": 29297,
+    "samples": 28,
+    "AT1_cells_total": 38,
+    "triplet_units": 0
+  },
+  "haber_atlas": {
+    "header_cells": 7216,
+    "batches": 10,
+    "source_explicit_control_mice": 4,
+    "verified_mouse_cells": 3240,
+    "candidate_branch": [
+      "Stem",
+      "Enterocyte.Immature.Proximal",
+      "Enterocyte.Mature.Proximal"
+    ],
+    "triplet_units": 2,
+    "triplet_mouse_ids": [
+      "Control-Mouse1",
+      "Control-Mouse3"
+    ],
+    "unmapped_batches": [
+      "B1",
+      "B10",
+      "B2",
+      "B5",
+      "B6",
+      "B9"
+    ],
+    "transition_evidence_gate": "unresolved; author state labels alone are insufficient"
+  },
+  "design_note": "Across-time unit counts are not same-time replication; no cohort selected by this script."
+}

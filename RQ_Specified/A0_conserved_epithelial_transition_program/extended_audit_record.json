@@ -1,0 +1,42 @@
+{
+  "stage": "P0_extended_feasibility",
+  "expression_values_read": false,
+  "cell_floor": 30,
+  "minimum_independent_units": 3,
+  "negretti": {
+    "cells": 10918,
+    "encoded_library_groups": 14,
+    "complete_encoded_groups": 1,
+    "complete_pooled_ages": 3,
+    "biological_replicates_recovered": false,
+    "complete_group_ids": [
+      "P14:2"
+    ],
+    "export_expression_type": "SCT data slot according to author export code; raw counts not obtained"
+  },
+  "strunz": {
+    "available_libraries": 32,
+    "complete_triplets_all_times": 10,
+    "complete_triplets_proposed_day10_15": 9,
+    "paper_high_resolution_mice": 36,
+    "available_annotation_mice_assumption": "one available enriched library per source mouse; paper reports two mice per sampled time",
+    "version_difference": "paper 34575 cells/36 mice; cached annotation 32559 cells/32 libraries; excluded material not reconstructed",
+    "window_status": "candidate design based on repair interval and annotation coverage; no P1 freeze"
+  },
+  "joost": {
+    "cells": 1422,
+    "capture_batches": 34,
+    "paper_mice": 19,
+    "max_cells_per_capture_batch": 60,
+    "mouse_mapping_recovered": false
+  },
+  "sources": {
+    "Negretti_obs.bin": "86a93c1d431d132b53798114d9a814cbab281e9ffed40e8d9e2d36f86f724720",
+    "Negretti_epi_schema.json": "77362e8bf65245110225effc3ded816aa116d610683c9b438f5dffa810222ec4",
+    "Negretti_cellxgene.rmd": "84125deabe32639e65f2139f499ba4c826e1d1dce39b6e45dea3bdb5d5174a4b",
+    "GSE67602_family.soft.gz": "4633d287dc5e6f48d94f7f385190117500af64d249777668b43cfe1dfe4dfa99",
+    "Joost_fulltext.xml": "2cc9462da9032768ebac3c270e040e5c0aece3ac50bdc718a2d15e6042006a7a",
+    "Strunz_fulltext.xml": "9e83f2f631bfa19dfdc0cc9665e85eeb48e11bd5cf01dd23ae34fa440063fb28",
+    "Haber_Supplementary_Table1.xlsx": "f97870f8f7fbab60d7104909e47cfa8d21519c935a1496c047f0fa862dead287"
+  }
+}

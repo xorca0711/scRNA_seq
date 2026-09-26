@@ -1,0 +1,18 @@
+{
+  "stage": "extended_feasibility",
+  "result": "PASS",
+  "python_syntax": true,
+  "json_parse": true,
+  "source_hashes_verified": 35,
+  "local_links_verified": 44,
+  "developmental_annotation_totals_reconciled": 10918,
+  "complete_developmental_encoded_groups": 1,
+  "complete_repair_triplets_days10_15": 9,
+  "complete_verified_intestinal_mice": 2,
+  "skin_batch_totals_reconciled": 1422,
+  "capture_targets_minimal_under_stated_bound": true,
+  "normal_control_exclusion_verified": true,
+  "figures_visually_checked": 2,
+  "downstream_status_honest_and_blocked": true,
+  "initial_local_audit": "Previously validated; unchanged local source and local audit outputs were reused."
+}
