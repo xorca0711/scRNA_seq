@@ -1137,3 +1137,47 @@ records all unit effects, freezes, limits and verification. The owner authorized
 work and PR creation; final scientific acceptance is not invented. Historical
 claim grades, original feasibility tables and unrelated primary-checkout work
 remain unchanged.
+
+
+## A15 proposed from A2's integrin lead, 27 September 2026
+
+A2 closed with one measured lead that was outside its own scope: epithelial Itgb6
+knockout lowered the frozen fibroblast activation score while the ligand arm did not.
+The owner asked whether that deserves its own register question and, if so, for it to
+be structured the way this repository structures questions. **Everything below is
+assistant-proposed and pending the owner's retain or reject.** No claim row was added,
+no grade changed, and the register still ends at C168.
+
+| Date | Item | Proposed by | Decided by | Decision | Reason |
+|---|---|---|---|---|---|
+| 2026-09-27 | Whether the Itgb6 lead becomes a register question | Assistant, in answer to the owner's question | Pending owner retain or reject | Recommend a new identifier, A15, with three alternatives rejected on the record | It carries its own biological proposition and its own decision, which is this register's own test for a full identifier |
+| 2026-09-27 | The scope of the question | Assistant | Pending owner retain or reject | The partition of the epithelial output, not whether the integrin activates TGF-beta | The mechanism is established since 1999 and has been through two clinical programmes; a register question that re-asks it adds nothing |
+| 2026-09-27 | Readiness | Assistant | Pending owner retain or reject | Blocked, with the blocking constraint named as the absence of any deposited measurement of activated TGF-beta under an integrin perturbation | A blocked question that names its missing measurement is more useful than one that says more data are needed |
+| 2026-09-27 | The stage 1 eligibility gate | Assistant | Pending owner retain or reject | Six conditions frozen before any candidate dataset is opened, with a transcript score explicitly excluded as the activation readout and no pre-declared alternative | A later session must not be able to relax the readout in order to get a run; the A2 first-freeze withdrawal is the precedent |
+| 2026-09-27 | Ownership of the founding observation | Assistant | Pending owner retain or reject | It stays A2's; A15 opens with no evidence of its own and has no `tables/` directory | The register's own rule is that a new biological interpretation does not inherit a historical claim's status |
+| 2026-09-27 | GSE190821, the only runnable deposit | Assistant | Pending owner authorization | Named as a side-branch that bounds one rival, explicitly outside the staged test | It blocks integrin beta6 in vivo with four treated against seven control mice, but has no activation readout and no separated fibroblast compartment |
+| 2026-09-27 | Branch and pull request base | Assistant | Assistant, under the owner's branch and PR rule | Branched from `Claude/a2-delivery-hypothesis` and based the pull request on it rather than on main | The workspace cross-links A2's stage 3 and stage 5 reports, which exist only on that branch while PR #85 is open; if #85 is rejected, this work needs rebasing |
+
+| Date | Rejected or reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-27 | Keeping the lead as a third leg of A2 | It is not an amphiregulin question, and A2's second freeze forbids adding an arm after the endpoint has been read; that would put a post hoc arm inside a closed pre-registration | Assistant, before the workspace was written |
+| 2026-09-27 | Folding the lead into A9 | A9 owns the fibroblast EGFR; A15's receptor is the recipient's TGF-beta receptor and its perturbation is on the epithelium. The two share a compartment, not an estimand | Assistant |
+| 2026-09-27 | Recording it as an enabling entry like A12-S1 | An enabling entry supplies a shared input to questions that keep their own decisions; this one has a proposition and a decision of its own | Assistant |
+| 2026-09-27 | Recording it only as a FINDINGS lead with no card | A lead with no card has no prohibitions attached, and the two specific risks here are naming a transcript score as a TGF-beta activation measurement and reading an unrandomized single-well contrast as a mechanism | Assistant |
+| 2026-09-27 | The assistant's first framing, "does epithelial integrin-mediated TGF-beta activation drive fibroblast activation" | Established outside this repository since Munger 1999, with a blocking antibody shown to prevent murine bleomycin fibrosis in 2008; the register would have been re-asking a settled mechanism | Assistant corrected it from the primary literature before the card was written |
+| 2026-09-27 | Using the GSE307128 series summary | The sibling deposit's summary states the source paper's conclusions, and roadmap paper 14 is recorded as unread by the owner; only structural facts were retained, and the summary text is not quoted or relied on anywhere | Assistant, under DEVELOPMENT decision 21 |
+| 2026-09-27 | Proposing GSE190821 as a test of the hypothesis | It fails gate conditions 3, 4 and 5: no activation readout, no separated fibroblast compartment, no ligand arm. Kept only as a rival-bounding side-branch | Assistant, applying the gate it had just frozen |
+| 2026-09-27 | A whole-lung activation-signature run in GSE190821 | Whole lung confounds the fibroblast compartment with fibrosis extent, and reduced collagen under this antibody is already published, so the run would re-measure a known result | Assistant; recorded as feasible but non-discriminating and not recommended |
+| 2026-09-27 | Editing any file under `RQ_Specified/A2_areg_source_delivery/` to add a cross-reference | Those files are under the owner's review in PR #85, and adding to a document under review changes what is being reviewed. A15 is discoverable from the register table and the `RQ_Specified` index instead | Assistant |
+| 2026-09-27 | Asserting cross-species conservation of the activating motif from equal sequence lengths | Human and mouse TGF-beta1 proproteins are both 390 residues and integrin beta-6 is 788 and 787, but no alignment was performed; equal length is not conservation | Assistant narrowed its own wording; recorded as a carried assumption and as an open, small, feasible layer item |
+| 2026-09-27 | A multi-agent workflow for this task | The reading, the repository searches and the drafting were deterministic, and the judgement calls were few enough to make in the open | Assistant, under the owner's cost rule |
+
+The [registration argument](RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/REGISTER_DECISION.md)
+states the case against the identifier as well as the case for it, including that nothing
+can be run, that the mechanism is old, that the founding observation rests on three
+readable units at one fixed well position, and that the headline contrast sets one
+measured decrease against one unbounded null. The
+[search report](RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/PUBLIC_DATA_SEARCH.md)
+records every query with its hit count and states that keyword search over indexed
+metadata cannot prove absence. The owner is being asked for three decisions: the
+registration itself, the scope wording, and whether to spend a run on the side-branch.

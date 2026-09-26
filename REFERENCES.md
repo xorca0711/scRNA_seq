@@ -232,6 +232,26 @@ Metadata verified against PubMed on 2026-09-26. Zaiss 2015 stays as M4 above.
 | A2-3 | Arpaia N, et al. A distinct function of regulatory T cells in tissue protection. *Cell* 2015 | [10.1016/j.cell.2015.08.021](https://doi.org/10.1016/j.cell.2015.08.021) | 26317471 | leukocyte amphiregulin is non-redundant for lung protection in one lineage, independent of suppressor function and viral load; the C45 constraint remains attributed to Zaiss 2015 as M4 |
 | A2-4 | Sorkhdini P, et al. Type 2 innate immunity promotes the development of pulmonary fibrosis in Hermansky-Pudlak syndrome. *JCI Insight* 2024 | [10.1172/jci.insight.178381](https://doi.org/10.1172/jci.insight.178381) | 39405112 | in a Hermansky-Pudlak syndrome model, innate lymphoid cells may stimulate lung fibroblast proliferation and differentiation partly through amphiregulin and EGFR, hedged by the authors |
 
+### Mechanism and clinical references for A15, the epithelial integrin arm (added 2026-09-27)
+
+Read for the [proposed A15 card](RESEARCH_QUESTIONS.md#a15). Metadata retrieved from
+PubMed on 2026-09-27. Greek letters in titles are transliterated, following this
+repository's style. These establish that the mechanism is **not** this repository's to
+discover, and they supply A15's strongest rival and the clinical record that bounds any
+answer. None of them is a result of this repository.
+
+| Ref | Paper | DOI | PMID | Role in A15 |
+|---|---|---|---|---|
+| A15-1 | Munger JS, et al. The integrin alpha v beta 6 binds and activates latent TGF beta 1: a mechanism for regulating pulmonary inflammation and fibrosis. *Cell* 1999 | [10.1016/s0092-8674(00)80545-0](https://doi.org/10.1016/s0092-8674(00)80545-0) | 10025398 | the mechanism itself, and its spatial restriction: integrin-expressing cells activate TGF-beta1 locally, and mice lacking the integrin are protected from pulmonary fibrosis |
+| A15-2 | Sheppard D. Integrin-mediated activation of latent transforming growth factor beta (review). *Cancer Metastasis Reviews* 2005 | [10.1007/s10555-005-5131-6](https://doi.org/10.1007/s10555-005-5131-6) | 16258727 | states the short-range logic in general form: integrins on one cell activate signals on adjacent or nearby cells |
+| A15-3 | Morris DG, et al. Loss of integrin alpha(v)beta6-mediated TGF-beta activation causes Mmp12-dependent emphysema. *Nature* 2003 | [10.1038/nature01413](https://doi.org/10.1038/nature01413) | 12634787 | rival 2: removing the integrin changes the epithelium and the lung, not only the fibroblast |
+| A15-4 | Koth LL, et al. Integrin beta6 mediates phospholipid and collectin homeostasis by activation of latent TGF-beta1. *Am J Respir Cell Mol Biol* 2007 | [10.1165/rcmb.2006-0428OC](https://doi.org/10.1165/rcmb.2006-0428OC) | 17641300 | rival 2, second line: Itgb6-null lungs alter surfactant and collectin homeostasis |
+| A15-5 | Horan GS, et al. Partial inhibition of integrin alpha(v)beta6 prevents pulmonary fibrosis without exacerbating inflammation. *Am J Respir Crit Care Med* 2008 | [10.1164/rccm.200706-805OC](https://doi.org/10.1164/rccm.200706-805OC) | 17916809 | the integrin is overexpressed on pneumocytes in human pulmonary fibrosis, and a blocking antibody prevents murine bleomycin fibrosis; also why a whole-lung collagen readout would re-measure a known result |
+| A15-6 | Xu MY, et al. Lysophosphatidic acid induces alphavbeta6 integrin-mediated TGF-beta activation via the LPA2 receptor and the small G protein G alpha(q). *Am J Pathol* 2009 | [10.2353/ajpath.2009.080160](https://doi.org/10.2353/ajpath.2009.080160) | 19147812 | the epithelial activation step is a regulated node, not a constitutive one |
+| A15-7 | Sheppard D. Epithelial-mesenchymal interactions in fibrosis and repair: transforming growth factor-beta activation by epithelial cells and fibroblasts (review). *Annals of the American Thoracic Society* 2015 | [10.1513/AnnalsATS.201406-245MG](https://doi.org/10.1513/AnnalsATS.201406-245MG) | 25830829 | rival 1, the strongest: a two-source model in which an alphaV integrin on the activated fibroblast amplifies activation, with fibroblast alphaV deletion protective despite intact epithelial alphaVbeta6 |
+| A15-8 | Raghu G, et al. A phase IIb randomized clinical study of an anti-alphaVbeta6 monoclonal antibody in idiopathic pulmonary fibrosis. *Am J Respir Crit Care Med* 2022 | [10.1164/rccm.202112-2824OC](https://doi.org/10.1164/rccm.202112-2824OC) | 35771569 | BG00011 terminated early without benefit and with more serious adverse events; the reason a positive A15 result would not license a therapeutic reading |
+| A15-9 | Lancaster L, et al. Bexotegrast in patients with idiopathic pulmonary fibrosis: the INTEGRIS-IPF clinical trial. *Am J Respir Crit Care Med* 2024 | [10.1164/rccm.202403-0636OC](https://doi.org/10.1164/rccm.202403-0636OC) | 38843105 | a dual alphaVbeta6 and alphaVbeta1 inhibitor, better tolerated over 12 weeks with exploratory antifibrotic signals; the counterweight to A15-8 |
+
 
 ---
 

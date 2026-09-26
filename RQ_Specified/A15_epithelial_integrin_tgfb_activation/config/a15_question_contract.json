@@ -1,0 +1,134 @@
+{
+  "schema": "a15-epithelial-integrin-activation/v1",
+  "drafted": "2026-09-27",
+  "status": "proposed_registration_stage_0_only_nothing_computed",
+  "registration": {
+    "decided_by": "owner",
+    "decision_state": "pending retain or reject",
+    "argument": "RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/REGISTER_DECISION.md",
+    "if_rejected": "the folder is removed and the lead is recorded as a FINDINGS entry under A2 with the same limits"
+  },
+  "question": {
+    "register": "RESEARCH_QUESTIONS.md#a15",
+    "proposition": "Where an epithelium and a fibroblast share a matrix, the epithelial contribution to the fibroblast myofibroblast and collagen programme is carried by epithelial integrin alphaVbeta6 converting latent TGF-beta that is already present, rather than by epithelial supply of an EGFR ligand.",
+    "what_is_not_being_asked": "whether integrin alphaVbeta6 activates latent TGF-beta. That is established outside this repository and is not re-asked here.",
+    "what_is_being_asked": "the partition of the epithelial output: in one system, with the recipient's own ligand removed so the ligand arm is bounded, and with activated TGF-beta measured, does the integrin arm carry the epithelial input while the ligand arm does not.",
+    "rationale": "RATIONALE.md",
+    "plan": "PLAN.md"
+  },
+  "predictions": {
+    "1_direction_and_specificity": "removing epithelial ITGB6 lowers the fibroblast activation programme; removing epithelial ligand supply does not, in a system where the recipient's own ligand has also been removed",
+    "2_readout": "the same removal lowers activated TGF-beta at the recipient, as protein or receptor-proximal signalling, not as a transcript score",
+    "3_mediation": "blocking TGF-beta receptor signalling in the recipient abolishes the epithelial ITGB6 effect",
+    "each_can_fail_alone": true
+  },
+  "founding_observation": {
+    "owned_by": "A2, not A15",
+    "is_evidence_for_a15": false,
+    "why_not": "A15 opens with no evidence of its own; the register's own rule is that a new biological interpretation does not inherit a historical claim's status",
+    "dataset": "GSE307112",
+    "endpoint": "frozen five-gene fibroblast activation score: COL1A1, ACTA2, POSTN, CTHRC1, TNC, as mean log2 CPM on the well's human total",
+    "effect": {
+      "target": "Itgb6",
+      "median_depth_matched_effect_log2cpm": -0.938,
+      "per_unit_effects": [-0.938, -1.575, -0.680],
+      "units_in_predicted_direction": "3 of 3 readable",
+      "fourth_unit": "ineligible at 4,865 fibroblast counts",
+      "endpoint_sd_over_168_eligible_wells": 0.482,
+      "after_epithelial_fraction_adjustment": -0.992,
+      "post_hoc_culture_check": {
+        "day14_log_area_minus_control": 0.022,
+        "fibroblast_count_ratio_to_control": 0.93
+      }
+    },
+    "comparator_arms": {
+      "Areg": {"median_effect": 0.036, "units_in_predicted_direction": "2 of 4", "status": "bounded null, not absence"},
+      "Erbb3": {"median_effect": -0.187, "day14_log_area_minus_control": -0.605, "fibroblast_count_ratio_to_control": 2.31, "status": "fails the culture check; composition or viability shift"},
+      "Egfr": {"median_effect": 0.247, "units_in_predicted_direction": "0 of 3"},
+      "Erbb4": {"median_effect": 0.503, "units_in_predicted_direction": "0 of 3"},
+      "Erbb2": {"median_effect": -0.169, "units_in_predicted_direction": "1 of 1 readable"}
+    },
+    "sources": {
+      "RQ_Specified/A2_areg_source_delivery/reports/STAGE3_LEG1_RESULTS.md": "ba503625de23c643887f2c4ebfed26dd4cae5619671073874581b1afeaea8d05",
+      "RQ_Specified/A2_areg_source_delivery/reports/STAGE5_SYNTHESIS.md": "96ee088c54716774c3791bd9561fc0aeac8607a50a353cea093f9fbb72c6d955",
+      "RQ_Specified/A2_areg_source_delivery/config/a2_stage2_freeze_v2.json": "81f9d6b119b8f616df13c3d7c2d534b9523f2ed9b5be5ef9c9a35beb120f574f"
+    },
+    "limits": [
+      "Fifty of the 53 plate-3 targets occupy one fixed well position in all four units; the four ITGB6 libraries are plate3-1 to plate3-4 at well C02, from the deposit's own sample titles GSM9216275, GSM9216335, GSM9216395 and GSM9216455. Target is confounded with plate position and guide pool and no randomization-based inference is available.",
+      "The ligand arm is a bounded null: the recipient fibroblasts transcribe AREG at 9.846 mean log2 CPM in 99.2 per cent of plate-3 wells, above the 7.267 the epithelial knockout removes, and the knockout is partial.",
+      "Preparation independence in this screen is unresolved, per A10 stage 1, so everything from it is a within-screen association.",
+      "The mouse Itgb6 transcript reduction is 1.138 log2 CPM, so the perturbation is partial and no arm can support absence.",
+      "The endpoint is a transcript score; TGF-beta activation was never measured.",
+      "The culture medium and matrix are not in the deposit.",
+      "The integrin is mouse and the recipient is human; cross-species activation is carried and unverified."
+    ]
+  },
+  "rivals": [
+    "fibroblast-side amplification through the recipient's own alphaV integrins carries the effect",
+    "the epithelial state changes, not the activation step, since Itgb6 loss changes the epithelium in vivo",
+    "generic perturbation effects, since Erbb3 also fell",
+    "plate position or guide pool at well C02 carries the effect",
+    "well composition or read depth moves the fibroblast profile",
+    "the latent pool or the TGF-beta isoform, not the activator; the medium is not in the deposit",
+    "cross-species activation is assumed and unverified"
+  ],
+  "stage_1_eligibility_gate": {
+    "purpose": "a later session cannot relax the readout requirement in order to get a run",
+    "frozen_before_any_candidate_is_opened": true,
+    "conditions": {
+      "1_activator_perturbed_on_the_source_cell": "epithelial ITGB6 or ITGAV removed, blocked or induced, with recorded validation. An antibody dose arm is labelled as a protein perturbation and not as a genetic one.",
+      "2_more_than_one_independent_unit_and_varying_positions": "at least three units per arm, where a unit is an animal, a donor or an independent preparation. A target at one fixed position in every replicate fails this condition.",
+      "3_activated_tgf_beta_measured": "reporter bioassay, immunoassay specific to the active dimer, or receptor-proximal signalling in the recipient. A transcript score of TGF-beta target genes does not satisfy this condition and no pre-declared alternative exists.",
+      "4_recipient_readout_separated_from_the_source": "fibroblast compartment measured on its own. A whole-tissue homogenate fails this condition.",
+      "5_ligand_arm_can_be_bounded": "the recipient's own EGFR ligand is also removed, or the recipient is shown not to supply it.",
+      "6_units_established_not_assumed": "if the deposit cannot say what its units are, anything computed is a within-dataset association with no claim of independent replication."
+    },
+    "stop_rules": {
+      "any_of_1_to_5_fails": "the candidate does not carry the test; report the condition it failed and stop for that candidate",
+      "only_6_fails": "stages 2 and 3 may proceed and every result is labelled descriptive"
+    },
+    "state_on_2026_09_27": "no public candidate clears conditions 3, 4 and 5 simultaneously"
+  },
+  "stage_2_freeze_invariants": {
+    "unit": "the animal, the donor or the independent preparation; never the well, the guide or the organoid",
+    "primary_endpoint": "activated TGF-beta at the recipient, as condition 3 defines it",
+    "secondary_endpoint": "the fibroblast activation programme, not a substitute for the primary, reused only as frozen elsewhere and without re-weighting",
+    "mediation_arm_required": "a freeze must include the recipient-side TGF-beta receptor blockade of prediction 3, or state that it does not test prediction 3",
+    "direction_declared_in_advance": "lower activated TGF-beta and a lower fibroblast programme when the epithelial activator is removed",
+    "precise_absence": "unavailable unless the perturbation is shown to be complete",
+    "multiplicity_family": "two endpoints and one mediation arm"
+  },
+  "public_data_search": {
+    "report": "reports/PUBLIC_DATA_SEARCH.md",
+    "date": "2026-09-27",
+    "repositories": ["GEO DataSets", "PRIDE", "Image Data Resource", "BioImage Archive via BioStudies"],
+    "conclusion": "no public dataset can test the proposal; the binding gap is the absence of any deposited measurement of activated TGF-beta under an integrin perturbation",
+    "nearest_candidate": {
+      "accession": "GSE190821",
+      "what_it_is": "lung epithelial RiboTag translatome and whole lung under bleomycin, with the 3G9 anti-integrin-beta6 antibody in 4 mice against the inert antibody Axum8 in 7 mice, 48 libraries from 24 mice, day 7",
+      "fails_conditions": [3, 4, 5],
+      "bounded_use": "can bound rival 2 only, by asking whether the epithelium's own programme moves under integrin beta6 blockade; not part of the staged test and never reported as one"
+    },
+    "caveat": "keyword searches over indexed metadata; a deposit describing the same assay in different words could have been missed"
+  },
+  "prohibitions": [
+    "no transcript score is called a TGF-beta activation measurement",
+    "no second endpoint on GSE307112's plate-3 wells counts as a second experiment",
+    "no claim row is added and no existing row is re-graded; the register ends at C168",
+    "no wells, guides or organoids as biological replicates",
+    "no reading of an epithelial perturbation as fibroblast causation, which is A10's prohibition in A10's words",
+    "no study note on roadmap paper 14, DOI 10.1073/pnas.2606113123, whose reading by the owner is recorded as not started, and no use of the GSE307128 series summary",
+    "no therapeutic reading in either direction",
+    "no re-asking of the established mechanism"
+  ],
+  "boundaries": {
+    "A2": "owns amphiregulin, delivery against abundance, and the grading of the founding observation",
+    "A9": "owns the fibroblast EGFR; A15's receptor is the recipient's TGF-beta receptor",
+    "A10": "owns the organoid growth outcome and its modules; no A10 result is evidence here",
+    "A12_A13": "untouched"
+  },
+  "claim_rows_added": 0,
+  "claim_rows_regraded": 0,
+  "endpoint_scored": false,
+  "datasets_opened": 0
+}

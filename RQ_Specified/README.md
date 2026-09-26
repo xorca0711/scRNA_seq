@@ -12,6 +12,7 @@ tables and galleries. Source-paper analyses belong in `Research Article/`.
 | A5 | [Developmental programme reuse](A5_developmental_programme_reuse/README.md) | External signature enrichment positive in 24 primary mice and after identity/control exclusions; partial recruitment, with lineage/function untested |
 | A10 | [Organoid growth outcome](A10_organoid_growth_outcome/README.md) | Follow-up complete: growth scores add beyond E2F/G2M and lower error on all four plate holdouts, but absolute R-squared remains negative on 3/4 plates; target mix and plate are entangled; preparations unresolved; descriptive only |
 | A11 | [Lesion programme beyond shared plasticity](A11_lesion_programme_addition/README.md) | Lesion association replicates in 8 patients; beyond-shared criterion unresolved (BH q=0.0547); cancer specificity unestablished |
+| A15 | [Epithelial integrin TGF-beta activation](A15_epithelial_integrin_tgfb_activation/README.md) | Proposed, pending the owner's retain or reject; nothing scored and no claim row added. The founding observation is A2's Itgb6 lead and stays A2's. Blocked: no public deposit measures activated TGF-beta under an integrin perturbation |
 | A5 and A11 | [Shared epithelial component contract](A5_A11_shared_component_contract/README.md) | Contract and revised tests complete; original partition preserved; A5 uses additional independent Guo modules because the original Strunz-filtered variants are descriptive |
 
 Question numbers are stable identifiers, not evidence grades. A plan or a

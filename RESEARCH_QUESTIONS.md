@@ -12,6 +12,8 @@ of markers or analysis tools.
 
 **Rewritten 25 September 2026; A0 registered 26 September.** All A1–A14 identifiers remain; A12-S1 remains an
 enabling source-identity question. There is no fixed number of “surviving” RQs.
+**A15 is proposed on 27 September 2026 and pending the owner's retain or reject**;
+until that decision it grades nothing and adds no claim row.
 Related questions share evidence but retain separate tests and decisions.
 
 The [claim register](CLAIMS.md) grades the original measurements. A new biological
@@ -52,6 +54,7 @@ recovery endpoint, and population persistence does not trace the same cells.
 | [A12](#a12) | Recipient context explains responses beyond ligand RNA | Cohort/recipient heterogeneity | Conditional component model; activation unmeasured |
 | [A13](#a13) | Fibroblast programmes add information beyond macrophage IL1B | Niche heterogeneity motivates joint association | Audit complete triads; current IPF arms below joint-model floor |
 | [A14](#a14) | Exposure duration and fibroblast reception separately affect recovery | Mechanistic follow-up to the repair/persistence question | Two decisions; withdrawal and recipient-specific data needed |
+| [A15](#a15) | The epithelial input to fibroblast activation runs through integrin-mediated TGF-beta activation rather than through ligand supply | A2's unplanned lead: epithelial Itgb6 knockout lowers the frozen fibroblast activation score by -0.938 log2 CPM in three of three readable units, while the ligand arm does not move | **Proposed, pending the owner's retain or reject.** Blocked: no public deposit measures activated TGF-beta under an integrin perturbation; the decisive test is a bench design |
 
 A0 completed its bounded pilot: the frozen programme fails the mature intestinal
 endpoint, and its conditional specificity work is pruned. The A1 continuation,
@@ -664,6 +667,82 @@ future primary panels: replicate-level recovery, mature-cell yield and
 recipient-specific contrasts with exposure/engagement controls. No anticipated
 response curve is a result. [MC1](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1),
 [MC3–MC4](docs/RQ_MEASUREMENT_CONTRACTS.md#mc3).
+
+<a id="a15"></a>
+
+### A15. Does the epithelial input to fibroblast activation run through the integrin or through the ligand?
+
+**Proposed 27 September 2026, and pending the owner's retain or reject.** This card is
+assistant-proposed wording. It grades nothing, adds no claim row, and carries no result of
+its own. The argument for and against the identifier, with three rejected alternatives,
+is in [reports/REGISTER_DECISION.md](RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/REGISTER_DECISION.md).
+
+**Hypothesis.** Where an epithelium and a fibroblast share a matrix, the epithelial
+contribution to the fibroblast myofibroblast and collagen programme is carried by
+epithelial integrin alphaVbeta6 converting latent TGF-beta that is already present, rather
+than by epithelial supply of an EGFR ligand. Three predictions can each fail alone:
+removing epithelial ITGB6 lowers the fibroblast programme while removing epithelial ligand
+supply does not, in a system where the recipient's own ligand is also removed; the same
+removal lowers **activated** TGF-beta at the recipient; and blocking TGF-beta receptor
+signalling in the recipient abolishes the effect.
+
+**What is not being asked.** That integrin alphaVbeta6 binds the TGF-beta1
+latency-associated peptide and activates latent TGF-beta in a spatially restricted way is
+established ([Munger 1999](https://doi.org/10.1016/s0092-8674(00)80545-0)), the integrin is
+overexpressed on pneumocytes in human pulmonary fibrosis and a blocking antibody prevents
+murine bleomycin fibrosis ([Horan 2008](https://doi.org/10.1164/rccm.200706-805OC)), and
+two sources of active TGF-beta are already proposed, the epithelial integrin and an
+amplifying alphaV integrin on the activated fibroblast itself
+([Sheppard 2015](https://doi.org/10.1513/AnnalsATS.201406-245MG)). This repository does not
+re-ask any of that. What it owns is the **partition of the epithelial output**, which the
+cited work does not test: epithelial ligand supply against epithelial integrin activation
+in one system with an autocrine-competent recipient.
+
+**Observation.** A2's leg 1 produced the lead as an unplanned result. In the GSE307112
+alveolosphere screen, epithelial **Itgb6** knockout wells sit a median of -0.938 log2 CPM
+below their unit's depth-matched controls on the frozen five-gene fibroblast activation
+score, in three of three readable units, against an endpoint standard deviation of 0.482;
+it survives the epithelial-fraction adjustment at -0.992, with organoid size within 0.022
+log units of controls and fibroblast content at 0.93 of theirs, while the Erbb3 decrease
+fails that same check. The ligand arm gives +0.036 in two of four units. Read
+[A2 stage 3](RQ_Specified/A2_areg_source_delivery/reports/STAGE3_LEG1_RESULTS.md) and
+[A2 stage 5](RQ_Specified/A2_areg_source_delivery/reports/STAGE5_SYNTHESIS.md). **That
+observation belongs to A2 and is not evidence for A15**, following this register's own rule
+that a new biological interpretation does not inherit a historical claim's status.
+
+**Rivals and test.** The strongest rival is fibroblast-side amplification: if the
+recipient's own alphaV integrins do most of the activating, the epithelial step is not the
+rate-limiting input. Next is the epithelial state itself, since Itgb6 loss changes the
+epithelium in vivo, producing Mmp12-dependent emphysema
+([Morris 2003](https://doi.org/10.1038/nature01413)) and altered surfactant and collectin
+homeostasis ([Koth 2007](https://doi.org/10.1165/rcmb.2006-0428OC)). Then generic
+perturbation effects, plate position and guide pool, well composition and depth, the latent
+pool and TGF-beta isoform, and the unverified assumption that a mouse integrin activates a
+latent complex read by a human recipient. The test needs an epithelial integrin
+perturbation with at least three independent units per arm, positions that vary, a
+separated fibroblast readout, a bounded ligand arm, and **activated TGF-beta measured as
+protein or receptor-proximal signalling**. The
+[eligibility gate](RQ_Specified/A15_epithelial_integrin_tgfb_activation/PLAN.md) is frozen
+before any candidate is opened.
+
+**Decision / readiness.** **Blocked, and the blocking constraint is nameable.** A search of
+GEO, PRIDE, the Image Data Resource and the BioImage Archive found no deposit pairing an
+epithelial integrin perturbation with a measurement of activated TGF-beta
+([search report](RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/PUBLIC_DATA_SEARCH.md)).
+The nearest, GSE190821, blocks integrin beta6 in vivo with four treated against seven
+antibody-control mice but reads whole lung and epithelium only, so it fails the separated
+recipient and the activation readout, and it has no ligand arm. One bounded side-branch is
+runnable and addresses a rival rather than the hypothesis: whether integrin beta6 blockade
+moves the epithelium's own programme in that deposit. The clinical record bounds any answer
+in advance, because an anti-alphaVbeta6 antibody trial in idiopathic pulmonary fibrosis
+terminated early without benefit and with more serious adverse events
+([Raghu 2022](https://doi.org/10.1164/rccm.202112-2824OC)), while a dual alphaVbeta6 and
+alphaVbeta1 inhibitor was better tolerated with exploratory signals
+([Lancaster 2024](https://doi.org/10.1164/rccm.202403-0636OC)); a positive answer here would
+be a statement about which epithelial output moves a fibroblast programme, not about
+whether blocking it helps a patient.
+[MC1](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1),
+[MC2 to MC4](docs/RQ_MEASUREMENT_CONTRACTS.md#mc2).
 
 ## Execution and interpretation rules
 

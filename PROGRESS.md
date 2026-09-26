@@ -209,6 +209,64 @@ Branch `Claude/a2-delivery-hypothesis`, based on main `f1b2c4f`. Start with the
   first evidence here that the receiver is equipped: fibroblast ITGAV 5.835, ITGB1
   9.487, ITGB8 5.254, LTBP1 9.757 and EGFR 5.389 mean log2 CPM.
 
+## Parallel work stream: A15 proposed from A2's integrin lead, 27 September 2026
+
+Branch `Claude/a15-epithelial-integrin-tgfb`, branched from
+`Claude/a2-delivery-hypothesis` at `286f425` and with its pull request based on that
+branch rather than on main, because the workspace cross-links A2's stage 3 and stage 5
+reports and those exist only there while PR #85 is open. Start with the
+[A15 workspace README](RQ_Specified/A15_epithelial_integrin_tgfb_activation/README.md).
+**This supersedes the sentence in the A2 section above that the Itgb6 lead is not a
+question yet: it is now a proposed question, and the owner decides.**
+
+- The owner asked whether A2's unplanned Itgb6 lead deserves its own register question
+  and, if so, for it to be structured the way this repository structures questions.
+  **Nothing was computed. No dataset was opened, no endpoint was scored, no claim row
+  was added and no grade changed.** The register still ends at C168.
+- **Recommendation: register it as A15**, scoped to the partition of the epithelial
+  output rather than to the mechanism. The
+  [registration argument](RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/REGISTER_DECISION.md)
+  states the case against as well as the case for, and rejects three alternatives on the
+  record: a third leg of A2, a fold into A9, and an enabling entry like A12-S1.
+- **The scope matters.** That integrin alphaVbeta6 activates latent TGF-beta has been
+  established since 1999, a blocking antibody prevented murine bleomycin fibrosis in
+  2008, and two clinical programmes have tested the axis. The repository does not
+  re-ask any of that. What is open is the partition: epithelial ligand supply against
+  epithelial integrin activation, in one system, with the recipient's own ligand removed
+  so the ligand arm is bounded, and with activated TGF-beta measured.
+- **The founding observation stays A2's.** A15 opens with no evidence of its own and has
+  no `tables/` directory. Its four recorded limits are the fixed well position (the four
+  ITGB6 libraries are plate3-1 to plate3-4 at well C02, from the deposit's own sample
+  titles), the bounded rather than absent ligand null, unresolved preparation
+  independence, and a transcript readout where the proposition names a protein event.
+- **Readiness is blocked, and the blocking constraint is named.** A search of GEO, PRIDE,
+  the Image Data Resource and the BioImage Archive found no deposit pairing an epithelial
+  integrin perturbation with a measurement of activated TGF-beta. Fifteen GEO queries with
+  their hit counts, the three other repositories and the six nearest candidates are in the
+  [search report](RQ_Specified/A15_epithelial_integrin_tgfb_activation/reports/PUBLIC_DATA_SEARCH.md),
+  which also states that keyword search over indexed metadata cannot prove absence.
+- **A stage 1 eligibility gate is frozen before any candidate dataset is opened**, with
+  six conditions. A transcript score of TGF-beta target genes is explicitly excluded as
+  the activation readout and no pre-declared alternative exists, so a later session
+  cannot relax the readout in order to get a run.
+- **One thing is runnable and it bounds a rival, not the hypothesis.** GSE190821 blocks
+  integrin beta6 in vivo with the 3G9 antibody, four treated against seven
+  antibody-control mice, and reads an epithelial RiboTag translatome alongside whole
+  lung. It fails gate conditions 3, 4 and 5, so it cannot test A15; its epithelial arm
+  can ask whether the integrin blockade moves the epithelium's own programme, which is
+  the "changed epithelium, not the integrin" rival. It is declared outside the staged
+  test and needs its own pre-declared endpoint before any count is opened.
+- Next: the owner makes three decisions, recorded in DEVELOPMENT.md as pending. Retain or
+  reject the registration; retain or revise the scope wording; and authorize or decline
+  the GSE190821 side-branch. If the registration is rejected, the honest alternative is a
+  FINDINGS entry under A2 with the same limits stated, and the folder is removed.
+- Constraints honoured and worth restating for the next session: no file under
+  `RQ_Specified/A2_areg_source_delivery/` was edited, because those are under review in
+  PR #85; no study note was written on roadmap paper 14 (doi 10.1073/pnas.2606113123),
+  whose reading is recorded as not started; and the sibling deposit GSE307128's series
+  summary, which restates that paper's conclusions, was read while searching GEO and is
+  deliberately not used.
+
 ## Historical handoffs
 
 The entries below describe earlier sessions. Their then-current task, authorization
