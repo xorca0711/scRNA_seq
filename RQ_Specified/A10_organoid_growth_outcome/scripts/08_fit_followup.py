@@ -211,7 +211,9 @@ def main():
         assert len(within) == len(plates) == 4
         verdicts[item['name']] = {
             'within_group_margin_met': bool(within.relative_error_reduction.ge(margin).all()),
-            'consistent_plate_shift_gain': bool(plates.relative_error_reduction.ge(margin).all() and plates.minimum_fold_reduction.gt(0).all())}
+            'consistent_plate_shift_gain': bool(within.relative_error_reduction.ge(margin).all()
+                                               and plates.relative_error_reduction.ge(margin).all()
+                                               and plates.minimum_fold_reduction.gt(0).all())}
     frames = {'model_scores.tsv': scores, 'model_predictions.tsv': pd.concat(predictions, ignore_index=True),
               'model_fold_errors.tsv': pd.DataFrame(errors), 'model_comparisons.tsv': summaries,
               'model_fold_comparisons.tsv': pd.DataFrame(fold_comparisons)}
