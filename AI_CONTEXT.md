@@ -7,6 +7,27 @@ violated. Human-readable counterparts: [`README.md`](README.md) (overview),
 (AI-assisted development disclosure and scientific ownership),
 [`PROGRESS.md`](PROGRESS.md) (session state).
 
+## Repository status and operating warnings, 26 September 2026
+
+All pull requests through #81 are merged and none is open. Read PROGRESS
+"Repository status" for the per-question summary. Rules for the next session:
+
+- **Do not pull or clean the main checkout blindly.** `X:/GitHub/scRNA_seq` sits on a
+  local `main` 79 commits behind origin, and git sees `RQ_Specified/` and
+  `Research Article/` there as untracked. A pull refuses to overwrite them. The same
+  directories hold ignored data caches that scripts read through `--data-root`, so a
+  clean would destroy inputs. Reconciling it is the owner's decision.
+- **Work from a fresh branch or worktree off `origin/main`.** Other sessions work in
+  parallel; the handoff documents and register are edited by several of them, so expect
+  merge conflicts in PROGRESS, AI_CONTEXT and the register, and resolve by keeping both.
+- **The claim register does not yet cover question-level results.** It ends at C168.
+  Do not add rows for A0, A5, A10 or A11 results without the owner; grading is theirs.
+  Until rows exist, the generated negative-results page omits A0's failed transfer.
+- **Two local branches hold unmerged commits and must not be deleted unasked:**
+  `codex/linkedin-media-selection` and the local-only `rq-framing-proposal`.
+- **The A10 source paper is unread by the owner.** Use the deposit, never write a study
+  note on roadmap paper 14; the precedent is DEVELOPMENT decision 21.
+
 ## Current task complete: A0 scientific pilot, 26 September 2026
 
 Branch `codex/a0-scientific-pilot` on merged main `f4d98e3`. The owner requested

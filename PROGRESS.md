@@ -3,7 +3,54 @@
 Living record of what is done, what is pending, and what a future session needs
 to know to continue. Update this before stopping.
 
-## Current: A0 scientific pilot complete, 26 September 2026
+## Repository status, 26 September 2026
+
+A scan after every open pull request had merged, through PR #81. Nothing is open, and
+the repository checks pass on main: 2,522 validation checks, the claim contract and the
+unit tests.
+
+**Question state.** The register, the `RQ_Specified` index and the handoff sections
+below were already current; each session maintained its own.
+
+| Question | Where it stands |
+|---|---|
+| A0 | Pilot complete; the frozen lung programme fails the mature intestinal transfer |
+| A1 | Regulatory and outcome continuation complete; replicated regulation-to-fate linkage open |
+| A5 | External-signature enrichment positive in all 24 primary mice; lineage and function untested |
+| A10 | Growth block adds within unit; absolute plate transfer fails on 3 of 4 plates; preparations unresolved |
+| A11 | Lesion association replicates in all 8 held-out patients; beyond-shared criterion unresolved |
+
+**What this scan changed.** The README dataset table now lists the deposits read by
+question workflows, which it had omitted: the Strunz time course, the Haber intestinal
+atlas, the organoid screen and the precursor-lesion cohort, plus A11's use of the Kim
+cohort. Two history headings here that still said current were relabelled.
+
+**Pending owner decisions.**
+
+1. **The claim register has no row for any question-specific result.** It ends at
+   C168. So A0's failed transfer, a negative result, is absent from the generated
+   negative-results page, and A5, A10 and A11 findings are absent from the ledger.
+   Grading is the owner's call, so no row was added. Candidates: A5 enrichment in 24 of
+   24 mice; A11 replication in 8 of 8 patients with the beyond-shared test unresolved;
+   the A10 first specification as inconclusive and its fibroblast increment as a
+   specification artefact; the A10 revised within-unit gain and its plate-transfer
+   limit; A0's failed intestinal transfer.
+2. **Two local branches hold unmerged commits.** `codex/linkedin-media-selection` has
+   one LinkedIn-document commit whose remote was deleted unmerged.
+   `rq-framing-proposal` is local only and holds the 216-line framing proposal that the
+   research-question rewrite superseded; repository convention would land it as a
+   superseded document rather than delete it.
+3. **The main checkout is 79 commits behind origin.** Git also reports `RQ_Specified/`
+   and `Research Article/` as untracked there, because local main predates both paths.
+   A plain pull will refuse to overwrite them. That checkout also holds the ignored data
+   caches other runs read, so reconcile it deliberately rather than by cleaning.
+
+**Branch housekeeping done at the owner's request.** Twenty merged local branches and
+nine merged remote branches were deleted; every one was fully contained in main. The
+remaining remote branches are `main` and the merged `codex/a5-a11-biological-tests`,
+whose local worktree now holds `codex/a0-scientific-pilot`.
+
+## Latest analysis: A0 scientific pilot complete, 26 September 2026
 
 Branch `codex/a0-scientific-pilot`, based on main `f4d98e3` (merged A10 PR #80).
 Start with the [A0 result](RQ_Specified/A0_conserved_epithelial_transition_program/reports/PILOT_V1_RESULTS.md)
@@ -210,7 +257,7 @@ changed. Start with the
 
 Those four stage 4 decisions were made the same day; see the section above.
 
-## Current status, 25 September 2026
+## Earlier status, 25 September 2026
 
 **Current task: A1 three-avenue continuation.** The
 [regulatory and outcome report](RQ_Specified/A1_transitional_epithelial_state_distinction/reports/REGULATORY_FATE_REPORT.md)
