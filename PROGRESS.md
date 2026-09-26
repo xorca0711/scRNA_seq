@@ -130,6 +130,39 @@ The primary local checkout remains at `e9d79e0` with untracked local data;
 it was not switched or cleaned. Ignored caches also remain in the two worktrees.
 Do not archive a checkout without preserving the required inputs.
 
+## Parallel work stream: A2 reframed around delivery, 26 September 2026
+
+Branch `Claude/a2-delivery-hypothesis`, based on main `f1b2c4f`. Start with the
+[A2 analysis README](RQ_Specified/A2_areg_source_delivery/README.md).
+
+- The owner asked what A2's real hypothesis was, then asked for the card to be
+  rewritten around it and for the analysis to be structured stepwise. Nothing was
+  computed: no endpoint was scored in either dataset and no claim row changed.
+- A2 no longer asks which compartment is the dominant AREG source. Seven register
+  rows close that question (C37, C39, C40, C45, C48, C49, C50) and C51 records
+  why a seventh correlation would be unreadable. The card now asks whether the
+  fibroblast response depends on delivery to a competent recipient rather than on
+  abundance.
+- The mechanism behind the reframing is that amphiregulin activates integrin
+  alphaV on mesenchymal cells and releases bioactive TGF-beta from latent
+  complexes (Minutti et al. 2019, doi:10.1016/j.immuni.2019.01.008). Four
+  mechanism references were added to REFERENCES.md with PubMed-verified metadata.
+- The plan has six stages and **only stage 1 is authorized**. Leg 1 is the
+  within-plate knockout contrast in GSE307112; leg 2 is a recipient-licensing
+  correlation in GSE136831 that reuses the trial E6 instrument unchanged and
+  changes only the predictor.
+- Design facts that shape the test: plate 3 carries Areg, Egfr, Erbb2, Erbb3,
+  Erbb4 and Itgb6 at one well per target in each of its four replicate units,
+  with two control wells per unit. Hbegf sits on plate 4, so the ligand
+  specificity contrast crosses plates and is secondary and weaker.
+- Limits declared before any test: the Areg knockout is partial, so precise
+  absence is unavailable; preparation independence is unresolved, so leg 1 is a
+  within-screen association; leg 2 may be refused by its own depth control, and
+  that refusal is a result.
+- Next: run stage 1 on the cached screen metadata, the existing A10 tables and
+  the Erbb2 and Erbb4 gene rows that A10 never validated. Do not compute either
+  endpoint by target before stage 2 is committed.
+
 ## Historical handoffs
 
 The entries below describe earlier sessions. Their then-current task, authorization

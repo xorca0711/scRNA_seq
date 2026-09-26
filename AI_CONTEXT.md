@@ -287,6 +287,35 @@ run records or promote a new figure without checking its source tables/captions.
 Script 18 owns the current A2. Historical sources are retained in the migration
 archive; do not execute them to bypass the ownership boundary.
 
+## A2 reframed around delivery, 26 September 2026
+
+Branch `Claude/a2-delivery-hypothesis`, based on main `f1b2c4f`. Documents only:
+no endpoint scored, no claim row added, no grade changed.
+
+- The A2 card now asks whether the fibroblast response to AREG depends on
+  delivery to a competent recipient rather than on source abundance. The
+  abundance version is closed by C37, C39, C40, C45, C48, C49 and C50, with C51
+  as the reason a further donor-level correlation on those variables would be
+  unreadable.
+- Entry points: `RQ_Specified/A2_areg_source_delivery/README.md`, `RATIONALE.md`,
+  `PLAN.md` and `config/a2_delivery_contract.json`. The contract is the authority
+  on endpoints, adjustment, statistic, thresholds and prohibitions.
+- Stage 1 is the only authorized stage and it computes no endpoint. Its stop
+  rules are the plate-3 layout, the knockout validation, the endpoint gene
+  coverage floors, the depth profile, a precedent check and the attainable power.
+- Two endpoints are frozen and must not change after any value is seen: the human
+  Hallmark TGF-beta signalling set as primary, and the repository's five-gene
+  fibroblast activation score (COL1A1, ACTA2, POSTN, CTHRC1, TNC) as co-primary.
+  Both were defined outside this screen.
+- Precise absence is declared unavailable for leg 1 before any test, because the
+  Areg knockout is partial and there are four units. Leg 1 stays a within-screen
+  association while A10's preparation identity is unresolved.
+- Leg 2 reuses the trial E6 instrument in GSE136831 unchanged. The C51 depth rule
+  and a shared-detection control may refuse the pair, and a refusal is reported
+  as the result rather than as a missing analysis.
+- The screen's source paper (roadmap 14, doi:10.1073/pnas.2606113123) remains
+  unread by the owner and gets no study note, following DEVELOPMENT decision 21.
+
 ## Current repository layout
 
 Paper studies: `Research Article/` (renamed from `Thesis/` on 2026-09-25).

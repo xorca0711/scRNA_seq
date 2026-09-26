@@ -39,7 +39,7 @@ recovery endpoint, and population persistence does not trace the same cells.
 |---|---|---|---|
 | [A0](#a0) | A conserved transition-associated programme may contribute to epithelial fate modulation | Related transitional RNA states across repair and development; shared fate control remains a hypothesis | [Pilot complete](RQ_Specified/A0_conserved_epithelial_transition_program/reports/PILOT_V1_RESULTS.md): 50-gene lung signature fails the mature intestinal endpoint; P4 pruned; universal/causal fate claims unresolved |
 | [A1](#a1) | Regulatory features distinguish RNA-similar transitional states and responses | Direct marks, lineage, perturbation and paired CD44 context contrasts | Adaptive batch complete; matched replicated regulatory/fate linkage remains missing |
-| [A2](#a2) | Functional AREG source contributions vary with context | Source RNA distributions; dominance unresolved | Conditional; source perturbation with receiver endpoint needed |
+| [A2](#a2) | AREG changes a fibroblast response through delivery to a competent recipient, not through source abundance | Seven register rows close the abundance version (C37, C39, C40, C45, C48, C49, C50); the mechanism places the rate-limiting step in the recipient | [Framing declared and contract frozen](RQ_Specified/A2_areg_source_delivery/README.md); stage 1 authorized, nothing scored |
 | [A3](#a3) | Injury leaves a macrophage programme beyond normal aging | Late population composition | Age-matched controls and comparable sampling needed |
 | [A4](#a4) | Wnt maintenance and IL-1 response occur sequentially in an AT2 lineage | Transcript/source observations; sequence untested | Measured activity/history and lineage-linked response needed |
 | [A5](#a5) | Adult repair reuses a developmental epithelial component | Neonatal coexpression and label-excluded ADI enrichment; outside developmental list now sourced | Revised external-signature test positive in 24 mice and after identity/control exclusions; lineage/function untested |
@@ -181,32 +181,62 @@ replicated regulatory/endpoint tests remain future work. [Depth panels](analysis
 supporting diagnostics. [MC1–MC2](docs/RQ_MEASUREMENT_CONTRACTS.md#mc1).
 
 <a id="a2-which-cells-express-areg-and-how-sensitive-are-candidate-rankings-to-the-resource"></a>
+<a id="a2-does-the-functional-contribution-of-areg-sources-depend-on-tissue-context"></a>
 <a id="a2"></a>
 
-### A2. Does the functional contribution of AREG sources depend on tissue context?
+### A2. Does the fibroblast response to AREG depend on delivery or on abundance?
 
-**Hypothesis.** Epithelial and myeloid sources contribute differently to
-AREG-dependent fibroblast responses across defined contexts; no universally
-dominant source is assumed.
+**Hypothesis.** AREG's contribution to a fibroblast response is set by where the
+ligand is released relative to a competent recipient, not by which compartment
+transcribes the most of it. Where an epithelial source and a fibroblast are in
+contact, removing the epithelial ligand lowers a frozen fibroblast TGF-beta
+response programme, and the size of that shift does not follow the epithelial
+share of total AREG transcript.
 
-**Our observation.** AREG RNA occurs across sources. The epithelial–myeloid
-contrast is epithelial-higher in all ten donors before depth standardization
-but only six at the primary 1,000-UMI budget (C37). This nominates sources without
-establishing epithelial control of ligand availability. See the
-[source analysis](analysis/corrections/ligand/README.md).
+**Why the abundance question is closed.** This card previously asked which source
+dominates. Seven register rows answer that question and none supports a
+hierarchy: the epithelial over myeloid contrast survives deposited labels and
+fails molecule matching (C37), an epithelial source in adenocarcinoma is not
+established because dendritic cells sit above both tumour states (C39), those
+cells are a major source in their own right (C45), tumour enrichment is refuted
+and fibrosis enrichment is not established (C40, C48), and donor-level epithelial
+AREG tracks neither fibroblast EGFR nor fibroblast activation (C49, C50). C51
+records why a further correlation on those variables would be unreadable: the one
+significant pair in that trial tracked sequencing depth, and a frozen rule
+refused it.
 
-**Rivals and test.** Source abundance, secretion/processing, other ligands and
-recipient competence may determine response. Compare source-specific AREG
-suppression and rescue, measured extracellular ligand and a frozen fibroblast
-activation/trophic endpoint across independent animals or culture preparations.
-A matched RNA-only source comparison is an initial screen.
+**Mechanism.** Amphiregulin activates integrin alphaV on mesenchymal stromal
+cells and releases bioactive TGF-beta from latent complexes, driving myofibroblast
+differentiation, with macrophages a critical source
+([Minutti 2019](https://doi.org/10.1016/j.immuni.2019.01.008)). Silencing
+amphiregulin or inhibiting EGFR reduces TGF-beta1-driven fibroblast proliferation,
+smooth-muscle actin and collagen
+([Zhou 2012](https://doi.org/10.1074/jbc.M112.356824)). A short-range ligand that
+converts a store the recipient already holds predicts the nulls C49 and C50
+recorded, because tissue-level ligand is not the rate-limiting quantity. Leukocyte
+AREG is non-redundant for lung repair
+([Arpaia 2015](https://doi.org/10.1016/j.cell.2015.08.021)), so C45 constrains an
+epithelium-only reading rather than refuting the axis.
 
-**Decision / readiness.** With verified suppression and responsive controls,
-a precise absence of the proposed endpoint change weakens that source's
-contribution. Unmeasured secretion or failed engagement is inconclusive.
-Functional testing needs additional data. [Current figures](analysis/figures/rq/README.md#a2)
-are diagnostics; future primary panels pair source intervention and receiver
-response. [MC2–MC4](docs/RQ_MEASUREMENT_CONTRACTS.md#mc2).
+**Rivals and test.** [Analysis A2](RQ_Specified/A2_areg_source_delivery/README.md)
+holds the plan and its frozen contract. Rivals: the epithelial state rather than
+its ligand changes the fibroblast; the epithelium activates TGF-beta through its
+own integrin; another ligand carries the response; the fibroblast profile moves
+with well composition or read depth. The organoid knockout screen separates these
+because it perturbs the mouse epithelium only and leaves the human fibroblasts
+unedited. Removing the ligand removes what the fibroblast can receive, removing
+epithelial EGFR, ERBB2, ERBB3 or ERBB4 removes only epithelial reception, and
+removing epithelial ITGB6 removes epithelial TGF-beta activation. A second leg
+tests recipient licensing at donor level in an existing cohort.
+
+**Decision / readiness.** Conditional, and descriptive in both legs. Four matched
+replicate wells per target on one plate give an effect size and a consistency
+count, not a significance test; the Areg knockout is partial, so the contract
+declares precise absence unavailable before any test; and preparation independence
+in that screen is unresolved (A10), so a positive result is a within-screen
+association. Secreted ligand, receptor engagement (C36) and proximity remain
+outside the repository. [Current figures](analysis/figures/rq/README.md#a2) are
+diagnostics. [MC2 to MC4](docs/RQ_MEASUREMENT_CONTRACTS.md#mc2).
 
 <a id="a3-which-macrophage-programmes-vary-with-phase-and-what-explains-the-differences"></a>
 <a id="a3"></a>
@@ -548,7 +578,7 @@ within-state effects and independent recipient responses.
 
 <a id="a12-s1"></a>
 
-**A12-S1 — enabling source-identity question.** Unassigned cells carry median
+**A12-S1, an enabling source-identity question.** Unassigned cells carry median
 52–72% of recovered IL1B counts across human histologies. Resolving their identity
 can change source attribution; an unknown label does not define a new macrophage
 state. Retain this question in the [annotation contract](docs/RQ_MEASUREMENT_CONTRACTS.md#a12-s1)
