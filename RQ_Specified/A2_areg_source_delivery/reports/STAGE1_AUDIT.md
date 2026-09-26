@@ -5,6 +5,15 @@
 computed **no endpoint**: the human pass collected gene symbols only and read no
 count, and the mouse pass read library totals and seven named gene rows.
 
+**Corrected 26 September 2026 after review.** Three statements below are amended in
+[STAGE2_WITHDRAWN.md](STAGE2_WITHDRAWN.md) and repeated here: the four declared stop
+rules pass and all seven audit items are reported, item 7 returning a carried
+assumption rather than a pass; at the 100,000-count floor six axis wells are
+sub-threshold, not three, namely Erbb2 in 3-1, 3-2 and 3-3, Erbb4 in 3-1, Egfr in 3-2
+and Itgb6 in 3-3; and by readability Erbb2 is the weakest contrast, clearing the floor
+in one unit of four against three for Egfr and four for Erbb3. The numbers in the
+tables are unchanged.
+
 ## Verdict
 
 **The design can carry the declared test, with three qualifications that stage 2

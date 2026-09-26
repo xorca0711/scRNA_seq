@@ -1,12 +1,21 @@
 # A2: does the fibroblast response to AREG depend on delivery or on abundance
 
-**Status, 26 September 2026: stages 1 and 2 complete, the test is frozen, nothing
-scored.** No endpoint has been computed in either dataset named below, and no claim
-row has changed. Read the [stage 1 audit](reports/STAGE1_AUDIT.md) and the
-[stage 2 freeze](reports/STAGE2_FREEZE.md); the freeze in
-[`config/a2_stage2_freeze.json`](config/a2_stage2_freeze.json) is now the authority on
-what stage 3 may do, and the original contract is preserved unedited so its recorded
-hash stays verifiable. Stage 3 is not authorized.
+**Status, 26 September 2026: audited, then narrowed by its own audit. Nothing
+scored.** No endpoint has been computed in either dataset named below, and no claim row
+has changed. A three-lens review and the covariate pass it prompted showed that the
+first freeze declared an inference this design cannot support, so **it is withdrawn and
+preserved**: read [STAGE2_WITHDRAWN.md](reports/STAGE2_WITHDRAWN.md) first, then
+[`config/a2_stage2_freeze_v2.json`](config/a2_stage2_freeze_v2.json), which is the
+authority on what stage 3 may do. The [stage 1 audit](reports/STAGE1_AUDIT.md), the
+[first freeze](reports/STAGE2_FREEZE.md) and the original contract are all preserved
+unedited. The second freeze is provisional pending owner review, and stage 3 is not
+authorized.
+
+**The decisive finding.** These fibroblasts transcribe AREG at 9.846 mean log2 CPM in
+99.2 per cent of plate-3 wells, above the mouse epithelial Areg the knockout removes
+within its own compartment. The recipient supplies the ligand, so removing the
+epithelial source cannot establish necessity, and the screen can at most bound an
+increment.
 
 This analysis replaces A2's abundance question with a delivery question. The
 register card is [A2](../../RESEARCH_QUESTIONS.md#a2); the biology and the closed
@@ -22,40 +31,49 @@ the most of it.
 
 ## Why the previous question is closed
 
-Seven register rows answer the abundance version, and none supports a source
-hierarchy: C37, C39, C45, C40, C48, C49 and C50. C51 records why, in this
-repository, a donor-level correlation on these variables is hard to read at all:
-the one significant pair in that trial tracked sequencing depth and a frozen rule
-refused it. The rationale lists each row with its status. None of them is
-re-graded here.
+Seven register rows answer the abundance version, and none establishes a
+depth-independent epithelial hierarchy: C37, C39, C45, C40, C48, C49 and C50. C45
+records a ranking in the opposite direction, with dendritic cells and monocytes at or
+above the epithelial states. C51 records why a donor-level correlation on these
+variables is hard to read at all: the one significant pair in that trial tracked
+sequencing depth and a frozen rule refused it. The rationale lists each row with the
+register's own wording and its status. None of them is re-graded here.
 
 ## What makes the question testable now
 
 The mechanism is short-range and recipient-licensed. Amphiregulin activates
 integrin alphaV on mesenchymal stromal cells and releases bioactive TGF-beta from
 latent complexes, driving myofibroblast differentiation
-([Minutti 2019](https://doi.org/10.1016/j.immuni.2019.01.008)), and the
-fibroblast arm of TGF-beta signalling needs amphiregulin
-([Zhou 2012](https://doi.org/10.1074/jbc.M112.356824)). A ligand that converts a
-store the recipient already holds predicts that tissue-level ligand abundance
-will not track the response, which is what C49 and C50 found.
+([Minutti 2019](https://doi.org/10.1016/j.immuni.2019.01.008)), downstream of the
+recipient's own EGFR, and the fibroblast arm of TGF-beta signalling needs amphiregulin
+([Zhou 2012](https://doi.org/10.1074/jbc.M112.356824)). A ligand that converts a store
+the recipient already holds does not require tissue-level abundance to be
+rate-limiting, which is consistent with the nulls C49 and C50 recorded without being
+evidence for this framing.
 
 Two legs follow, each able to fail alone:
 
 | Leg | Prediction | Data | Unit |
 |---|---|---|---|
-| 1 | Removing the epithelial ligand lowers a frozen fibroblast TGF-beta programme; removing epithelial receptors does not | GSE307112 organoid knockout screen | 4 plate-replicate units on one plate |
-| 2 | The fibroblast response tracks the recipient's own TGF-beta activation machinery better than it tracks epithelial ligand | GSE136831, the trial E6 instrument reused | donor |
+| 1 | Removing the epithelial source lowers a frozen fibroblast activation programme; removing epithelial reception does not | GSE307112 organoid knockout screen | 4 units of one repeated plate layout |
+| 2 | The fibroblast response tracks the recipient's post-receptor integrin and latent-complex genes better than it tracks epithelial ligand; now exploratory | GSE136831, the trial E6 instrument reused | donor |
 
-## Why the screen can separate the rivals
+## What the screen can and cannot separate
 
 The screen perturbs the mouse epithelium only and leaves the human fibroblasts
-unedited, with reads assigned by species. Removing the ligand removes what the
-fibroblast can receive. Removing epithelial EGFR, ERBB2, ERBB3 or ERBB4 removes
-only epithelial reception. Removing epithelial ITGB6 removes epithelial TGF-beta
-activation. Those three contrasts distinguish the delivery hypothesis from the
-autocrine rival and from the epithelial-activation rival, and all six targets sit
-on one plate with one well per target in each of its four replicate units.
+unedited, with reads assigned by species. Removing mouse Areg removes the **epithelial
+source** of AREG, while the fibroblasts' own AREG remains. Removing epithelial EGFR
+removes epithelial reception, with ERBB2 as its heterodimer partner; ERBB3 and ERBB4
+bind neuregulins rather than AREG, so they are perturbation controls and not tests of
+AREG reception, and Erbb4 has no receptor to remove in this compartment at all.
+Removing epithelial ITGB6 removes epithelial TGF-beta activation.
+
+Those contrasts separate an epithelial source contribution from epithelial reception
+and from epithelial TGF-beta activation. They do **not** separate delivery from
+abundance, because a single well holds one source compartment and no spatial variation.
+A positive result is equally consistent with the abundance version. The five remaining
+axis targets sit on plate 3 with one well per target in each of its four units, which
+is forced by the design rather than chosen.
 
 ## What the gate found
 
@@ -79,10 +97,11 @@ all four units does not reach it.
 | `RATIONALE.md` | the biological argument, the closed abundance record, the other-layer verdicts |
 | `PLAN.md` | six stages, their stop rules and the order of work |
 | `config/a2_delivery_contract.json` | endpoints, adjustment, statistic, thresholds, prohibitions |
-| `config/a2_stage2_freeze.json` | the frozen test: reference sets, exact critical values, sensitivities, the changes stage 1 forced |
+| `config/a2_stage2_freeze.json` | the first freeze, withdrawn and preserved unchanged |
+| `config/a2_stage2_freeze_v2.json` | the current freeze: effect size against the screen's controls, eligibility floor, no p-value |
 | `scripts/` | `01_stage1_audit.py` and `02_stage2_freeze.py`, standard library only, hash-verified inputs, refusing to overwrite |
 | `tables/` | stage 1 outputs and their run record |
-| `reports/` | [stage 1 audit](reports/STAGE1_AUDIT.md) and [stage 2 freeze](reports/STAGE2_FREEZE.md) |
+| `reports/` | [stage 1 audit](reports/STAGE1_AUDIT.md), the [first freeze](reports/STAGE2_FREEZE.md) and its [withdrawal](reports/STAGE2_WITHDRAWN.md) |
 
 ## Three things a later session must not do
 

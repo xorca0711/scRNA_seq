@@ -1,5 +1,14 @@
 # A2 analysis plan: does removing the epithelial ligand move the fibroblast
 
+**Superseded in substance, 26 September 2026.** The staging below stands, but
+[`config/a2_stage2_freeze_v2.json`](config/a2_stage2_freeze_v2.json) and
+[reports/STAGE2_WITHDRAWN.md](reports/STAGE2_WITHDRAWN.md) are the authority on the
+statistic, the reference set, the control wells, the endpoint order and the
+discriminating set. In particular: there is no p-value and no alpha, the primary
+endpoint is the five-gene activation score rather than the Hallmark set, the control
+set is TIGIT plus TDTOMATO, Erbb4 is dropped, and leg 2 is exploratory. The text below
+is preserved as declared.
+
 Declared 26 September 2026. **Stage 1 only is authorized at declaration.** The
 biology is in [RATIONALE.md](RATIONALE.md), the machine-readable decisions in
 [`config/a2_delivery_contract.json`](config/a2_delivery_contract.json), and the
@@ -73,7 +82,8 @@ from files, not from label structure or from this plan's own assertions.
    local resources, record the assumption as carried and unverified rather than
    silently assumed.
 
-**Stop rules.** If the plate-3 layout differs from the record, stop and
+**Stop rules.** Four conditions can stop the work, and the seven items above are
+reported whatever they show. If the plate-3 layout differs from the record, stop and
 re-specify. If endpoint coverage fails its floor, the endpoint is not replaced by
 an unfrozen alternative; either a pre-declared alternative applies or the work
 stops. If the Areg transcript reduction is absent or positive, leg 1 is not run,

@@ -882,7 +882,7 @@ rescue of the old one.
 
 | Date | Item | Proposed by | Decided by | Decision | Reason |
 |---|---|---|---|---|---|
-| 2026-09-26 | A2 framing | Assistant, in answer to the owner's question | Owner asked for the rewrite | Card rewritten around delivery; the abundance record is preserved in the rationale with its claim identifiers | Six results close the abundance question; the mechanism names a different observable |
+| 2026-09-26 | A2 framing | Assistant, in answer to the owner's question | Owner asked for the rewrite | Card rewritten around delivery; the abundance record is preserved in the rationale with its claim identifiers | Seven register rows close the abundance question; the mechanism names a different observable |
 | 2026-09-26 | Analysis folder `RQ_Specified/A2_areg_source_delivery/` | Assistant | Owner requested the structure | Six stages declared, stage 1 authorized, nothing scored | The test is readable only if its endpoint and rule are frozen first |
 | 2026-09-26 | Primary endpoint | Assistant | Pending owner retain or reject | Human Hallmark TGF-beta signalling, with the repository's five-gene fibroblast activation score as the co-primary | Both were defined outside this screen; the second carries the C50 and C51 precedent |
 | 2026-09-26 | Precise absence | Assistant | Pending owner retain or reject | Declared unavailable at this design, before any test | Four units and a partial knockout, with the Areg transcript falling 1.042 log2 CPM and remaining at 6.226 |
@@ -924,6 +924,43 @@ The depth asymmetry is recorded as making the declared one-sided test conservati
 rather than permissive, because a depth artefact on a mean log2 CPM score is expected
 to push it upward while the prediction is downward. That is an expectation, so the
 freeze requires stage 3 to report the observed depth association next to the result.
+
+### A2 first freeze withdrawn after review, 26 September 2026
+
+Three independent review lenses were run over the A2 documents, on biological and
+literature accuracy, on statistical validity and pre-registration integrity, and on
+internal consistency. They returned 17, 21 and 17 findings, six blocking, and converged
+on two. In response the assistant ran a fibroblast-side covariate pass, which supplied
+the decisive number, and then verified every accepted claim against the deposit or this
+repository's own tables. No endpoint was scored under either freeze.
+
+The first freeze is withdrawn, preserved unchanged, and replaced. The full argument is
+in `RQ_Specified/A2_areg_source_delivery/reports/STAGE2_WITHDRAWN.md`.
+
+| Date | Rejected or reworked output | Reason | Authority |
+|---|---|---|---|
+| 2026-09-26 | The first stage 2 freeze, its rank statistic, its exact null, its critical rank sum of 64 and its alpha | The four replicate units are copies of one plate layout with Areg always at well F07, so there is no randomization behind a uniform-rank null; 50 of 53 plate-3 targets sit at one fixed position | Assistant withdrew it on the statistics lens finding, verified against the deposit, before any score |
+| 2026-09-26 | The claim that removing mouse Areg removes what the fibroblast can receive | The unedited human fibroblasts transcribe AREG at 9.846 mean log2 CPM in 99.2 per cent of plate-3 wells, above the mouse epithelial Areg removed; the repository's own cited paper (Zhou 2012) shows fibroblasts make it | Assistant measured it in a stage 1 addendum prompted by the biology lens, and withdrew the necessity claim |
+| 2026-09-26 | The claim that leg 1 distinguishes delivery from abundance | One source compartment and no spatial variation in a well, so the distinguishing clause has no variance to test; the contrast moves to the spatial layer | Assistant restated leg 1 as a source-contribution contrast |
+| 2026-09-26 | The Hallmark TGF-beta set as primary endpoint | It is a pathway-membership set with 16 negative regulators among 54 members and none of the five activation genes, and it is not what either cited paper measured; the five-gene activation score is | Assistant promoted the activation score and demoted the Hallmark set |
+| 2026-09-26 | TDTOMATO alone as the control set | TIGIT is the article's own in-plate control at six wells per unit, already recorded in A10's source design check | Assistant adopted TIGIT plus TDTOMATO, eight control wells per unit |
+| 2026-09-26 | Epithelial fraction as a primary covariate | Epithelial abundance plausibly lies on the causal path from the knockout to the fibroblast read, and about a fifth of reads are unassigned to either species | Assistant demoted it to a two-sided sensitivity with a mediation-ambiguous reading declared |
+| 2026-09-26 | The consistency requirement presented as added stringency | Its exact size equalled the rank-sum size, 0.04903, so it added none | Assistant recorded the arithmetic and dropped the claim |
+| 2026-09-26 | ERBB3 and ERBB4 as tests of AREG reception | Neither binds AREG; they bind neuregulins, and ERBB4 also has no receptor to remove here | Assistant reclassified them as non-AREG-receptor perturbation controls |
+| 2026-09-26 | Leg 2 as a declared test | The logged trial E6 table already records the activation score against fibroblast depth at rho 0.4116 and fibroblast EGFR at 0.4918, so the inherited gate is likely to refuse it, and the machinery genes are themselves TGF-beta inducible | Assistant reclassified leg 2 as exploratory and required a co-regulation control |
+| 2026-09-26 | The stage 1 report's "all seven stop rules", its count of three sub-threshold wells, and its ranking of Egfr as the weakest contrast | The plan declares four stop rules and seven audit items; six axis wells fall below the adopted floor; Erbb2 clears it in one unit of four | Assistant corrected the report in place, leaving its tables unchanged |
+| 2026-09-26 | The C37 row's proposition, and "none supports a source hierarchy" | The row stated the inverse of the registered proposition and carried its grade; C45 records a ranking in the opposite direction, so the closing statement is about a depth-independent epithelial hierarchy | Assistant restored the register's wording |
+
+The owner retain step the plan placed between stages 1 and 2 was not exercised against
+stage 1's findings, because both stages were authorized in one instruction that
+predates them. The second freeze is therefore recorded as provisional, and stage 3 is
+not authorized.
+
+What survives is narrower and still worth running: a descriptive effect size against
+the screen's own controls, with a direction count and no p-value, which is what the
+register card promised before the first freeze overreached. A2's decisive experiment
+moves to the spatial layer, and the audit also produced the first evidence in this
+repository that the receiver carries the machinery the mechanism needs.
 
 ## How outputs were reviewed
 
